@@ -2,7 +2,7 @@
 
 > Roadmap to becoming a web developer in 2017
 
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to learn in order to become a frontend, backend or a devops guy. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective.
+Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops guy. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective.
 
 If you think that these can be improved in anyway, please do suggest.
 
