@@ -22,4 +22,25 @@ For the backend, personally I would prefer Node JS and PHP-7 for the full time p
 
 ## DevOps Roadmap
 
-![](http://i.imgur.com/vhkh8Od.png)
+>Will be added any minute now.
+
+<br>
+
+## 🚦 Wrap Up
+
+If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
+
+## TODO
+
+[] Add DevOps Roadmap (in progress)
+[] Add relevant resources for each
+
+## 👬 Contribution
+
+- Report issues
+- Open pull request with improvements
+- Spread the word
+- Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](http://twitter.com/kamranahmedse)
+
+## License
+MIT © [Kamran Ahmed](http://kamranahmed.info)
