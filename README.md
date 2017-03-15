@@ -8,7 +8,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## Introduction
 
-![](http://i.imgur.com/xxWa9CT.png)
+![](http://i.imgur.com/bHXFInv.png)
 
 ## Frontend Roadmap
 
@@ -19,3 +19,7 @@ If you think that these can be improved in anyway, please do suggest.
 For the backend, personally I would prefer Node JS and PHP-7 for the full time plus I have been experimenting lately with Go and I quite like it. Apart from these, if I have to choose another one, I would go for Ruby. However this is just my personal preference, you can choose any of the shown languages and you will be good.
 
 ![](http://i.imgur.com/iHaVxEx.png)
+
+## DevOps Roadmap
+
+> Will be here soon
