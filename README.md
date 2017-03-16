@@ -42,9 +42,10 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/). Project file can be found at `/ROADMAPS.bmpr`, open it in balsamiq, do the necessary modifications and create a PR.
 
 - Open pull request with improvements
-- Report issues
+- Discuss ideas in issues
 - Spread the word
 - Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](http://twitter.com/kamranahmedse)
 
-## License
-MIT © [Kamran Ahmed](http://kamranahmed.info)
+## Licence
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
