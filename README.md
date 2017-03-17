@@ -1,4 +1,4 @@
-![Web Developer Roadmap](http://i.imgur.com/GyvcunJ.png)
+![Web Developer Roadmap](https://i.imgur.com/GyvcunJ.png)
 
 > Roadmap to becoming a web developer in 2017
 
@@ -8,11 +8,11 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🚀 Introduction
 
-![](http://i.imgur.com/xsNYv9C.png)
+![](https://i.imgur.com/xsNYv9C.png)
 
 ## 🎨 Frontend Roadmap
 
-![](http://i.imgur.com/ppkDVJp.png)
+![](https://i.imgur.com/ppkDVJp.png)
 
 ## 👽 Backend Roadmap
 
@@ -44,8 +44,8 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 - Open pull request with improvements
 - Discuss ideas in issues
 - Spread the word
-- Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](http://twitter.com/kamranahmedse)
+- Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](https://twitter.com/kamranahmedse)
 
 ## Licence
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
