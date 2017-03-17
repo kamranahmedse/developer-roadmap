@@ -1,4 +1,4 @@
-![Web Developer Roadmap](http://i.imgur.com/GyvcunJ.png)
+![Web Developer Roadmap](https://i.imgur.com/GyvcunJ.png)
 
 > Roadmap to becoming a web developer in 2017
 
@@ -8,17 +8,17 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🚀 Introduction
 
-![](http://i.imgur.com/xsNYv9C.png)
+![](https://i.imgur.com/xsNYv9C.png)
 
 ## 🎨 Frontend Roadmap
 
-![](http://i.imgur.com/ppkDVJp.png)
+![](https://i.imgur.com/ppkDVJp.png)
 
 ## 👽 Backend Roadmap
 
 For the backend, personally I would prefer Node JS and PHP-7 for the full time plus I have been experimenting lately with Go and I quite like it. Apart from these, if I have to choose another one, I would go for Ruby. However this is just my personal preference, you can choose any of the shown languages and you will be good.
 
-![](http://i.imgur.com/64Ibv6E.png)
+![](https://i.imgur.com/9RVh969.png)
 
 ## 👷 DevOps Roadmap
 
@@ -44,8 +44,8 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 - Open pull request with improvements
 - Discuss ideas in issues
 - Spread the word
-- Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](http://twitter.com/kamranahmedse)
+- Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](https://twitter.com/kamranahmedse)
 
 ## Licence
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
