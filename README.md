@@ -22,7 +22,9 @@ For the backend, personally I would prefer Node JS and PHP-7 for the full time p
 
 ## 👷 DevOps Roadmap
 
->Will be added any minute now.
+> Need someone to review this, please!
+
+![](https://i.imgur.com/s8G9E6W.png)
 
 <br>
 
@@ -34,7 +36,7 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 
 - [X] Add Frontend Roadmap
 - [X] Add Backend Roadmap
-- [ ] Add DevOps Roadmap (in progress)
+- [X] Add DevOps Roadmap
 - [ ] Add relevant resources for each
 
 ## 👬 Contribution
