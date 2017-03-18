@@ -8,7 +8,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🚀 Introduction
 
-![](http://i.imgur.com/bHXFInv.png)
+![](http://i.imgur.com/xsNYv9C.png)
 
 ## 🎨 Frontend Roadmap
 
