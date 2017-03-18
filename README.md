@@ -8,21 +8,21 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🚀 Introduction
 
-![](http://i.imgur.com/xsNYv9C.png)
+![](https://i.imgur.com/KxH9c5S.png)
 
 ## 🎨 Frontend Roadmap
 
-![](http://i.imgur.com/ppkDVJp.png)
+![](https://i.imgur.com/RsttkRo.png)
 
 ## 👽 Backend Roadmap
 
 For the backend, personally I would prefer Node JS and PHP-7 for the full time plus I have been experimenting lately with Go and I quite like it. Apart from these, if I have to choose another one, I would go for Ruby. However this is just my personal preference, you can choose any of the shown languages and you will be good.
 
-![](http://i.imgur.com/64Ibv6E.png)
+![](https://i.imgur.com/7T2qJj0.png)
 
 ## 👷 DevOps Roadmap
 
-![](http://i.imgur.com/JZpfMOk.png)
+![](https://i.imgur.com/q7JPA6y.png)
 
 <br>
 
@@ -48,4 +48,4 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 
 ## Licence
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](http://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
