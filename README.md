@@ -12,7 +12,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🎨 Frontend Roadmap
 
-![](https://i.imgur.com/RsttkRo.png)
+![](http://i.imgur.com/colBlUB.png)
 
 ## 👽 Backend Roadmap
 
