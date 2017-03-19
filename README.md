@@ -22,7 +22,7 @@ For the backend, personally I would prefer Node JS and PHP-7 for the full time p
 
 ## 👷 DevOps Roadmap
 
-![](https://i.imgur.com/q7JPA6y.png)
+![](https://i.imgur.com/l2KNHYI.png)
 
 <br>
 
