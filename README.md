@@ -9,7 +9,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ***
 
-<p align="center"><b> Want to learn something new?</b><br>Visit the sponsor <a href="http://hugobots.com">Hugobots</a> where I teach people</p>
+<p align="center"><b> Want to learn something new?</b><br>Visit <a href="http://hugobots.com">Hugobots</a> where I teach people</p>
 
 ***
 
