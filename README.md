@@ -19,7 +19,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🎨 Frontend Roadmap
 
-![](http://imgur.com/J6SrODt.png)
+![](https://i.imgur.com/RsttkRo.png)
 
 ## 👽 Backend Roadmap
 
@@ -29,7 +29,7 @@ For the backend, personally I would prefer Node JS and PHP-7 for the full time p
 
 ## 👷 DevOps Roadmap
 
-![](https://i.imgur.com/l2KNHYI.png)
+![](http://imgur.com/J6SrODt.png)
 
 <br>
 
