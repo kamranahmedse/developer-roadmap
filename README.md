@@ -57,8 +57,6 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 
 [FancyGrid - JavaScript grid library with charts integration and server communication.](http://fancygrid.com)
 
-If you would like to sponsor my efforts, please do reach out.
-
 ## License
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
