@@ -53,6 +53,12 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 - Spread the word
 - Reach out to me directly at kamranahmed.se@gmail.com or on twitter [@kamranahmedse](http://twitter.com/kamranahmedse)
 
-## Licence
+## Sponsored By
+
+[FancyGrid - JavaScript grid library with charts integration and server communication.](http://fancygrid.com)
+
+If you would like to sponsor my efforts, please do reach out.
+
+## License
 
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
