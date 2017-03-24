@@ -32,9 +32,12 @@ For the backend, personally I would prefer Node JS and PHP-7 for the full time p
 ![](https://i.imgur.com/eP0V4jY.png)
 
 <br>
-## Detailed Full Stack Developer Roadmap 
-The following video is a useful guide.All the topics relevant to web-developer are covered with current trends and future prospects.It also contains most of the topics mentioned in above charts weighing pros and cons of these technologies on different aspects.
-https://www.youtube.com/watch?v=sBzRwzY7G-k
+
+## Web-Development 2017 Complete Roadmap
+The following video is a useful guide.All the topics relevant to web-developement are covered with current trends and future prospects.It also contains most of the topics mentioned in above charts weighing pros and cons of these technologies on different aspects.
+
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/sBzRwzY7G-k/0.jpg)](https://www.youtube.com/watch?v=sBzRwzY7G-k)
+
 
 ## 🚦 Wrap Up
 
