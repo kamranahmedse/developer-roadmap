@@ -6,12 +6,12 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 If you think that these can be improved in anyway, please do suggest.
 
+***
+
+<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>We are releasing <a href="http://hugobots.com">Hugobots</a> soon. Make sure to subscribe!</p>
 
 ***
 
-<p align="center"><b> Do you like startups or aspire to be a founder?</b><br>We are releasing <a href="http://hugobots.com">Hugobots</a> soon. Make sure to subscribe!</p>
-
-***
 
 ## 🚀 Introduction
 
