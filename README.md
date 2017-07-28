@@ -15,7 +15,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🚀 Introduction
 
-![](https://i.imgur.com/qBlT67N.png)
+![](https://i.imgur.com/KkPK23l.png)
 
 ## 🎨 Front-end Roadmap
 
