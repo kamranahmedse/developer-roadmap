@@ -19,7 +19,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🎨 Front-end Roadmap
 
-![](https://i.imgur.com/5vFTWcO.png)
+![](https://i.imgur.com/BvuRoSW.png)
 
 ## 👽 Back-end Roadmap
 
