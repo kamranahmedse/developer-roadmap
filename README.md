@@ -35,7 +35,7 @@
 
 ## 🚦 结语
 
-如果您觉得路线图存在可以改进的地方，请**修改内容**后**创建 Issue**，并**提交合并请求(PR，Pull Request)**。与此同时，我也在持续改进本项目，因此您可能要对本仓库(Repository)进行**持续关注(Watch)**或打上**星标标记(Star)**。
+如果您觉得路线图存在可以改进的地方，请**修改内容**后**创建 Issue**，并**提交合并请求(Pull Request)**。与此同时，我也在持续改进本项目，因此您可能要对本仓库(Repository)进行**持续关注(Watch)**或打上**星标标记(Star)**。
 
 ## ☑ 待办事项
 
@@ -46,7 +46,7 @@
 
 ## 👬 投稿/协作
 
-本项目路线图基于 [Balsamiq](https://balsamiq.com/products/mockups/) 生成，路线图文件位于** `/project-files` **目录下。若需修改路线图，请运行 Balsamiq 后，点选 **Project > Import > Mockup JSON**，程序会为您载入对应的路线图。接下来，您应依次进行内容修正、文档上传，并更新README文件中的图片超链接，最后提交合并请求(PR，Pull Request)。	
+本项目路线图基于 [Balsamiq](https://balsamiq.com/products/mockups/) 生成，路线图文件位于 `/project-files` 目录下。若需修改路线图，请运行 Balsamiq 后，点选 **Project > Import > Mockup JSON**，程序会为您载入对应的路线图。接下来，您应依次进行内容修正、文档上传，并更新README文件中的图片超链接，最后提交合并请求(Pull Request)。	
 
 - 附上改进内容，发送 Pull Request
 - 创建 Issue、讨论交流
