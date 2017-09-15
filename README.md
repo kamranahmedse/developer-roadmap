@@ -48,7 +48,7 @@
 
 本项目路线图基于 [Balsamiq](https://balsamiq.com/products/mockups/) 生成，路线图文件位于 `/project-files` 目录下。若需修改路线图，请运行 Balsamiq 后，点选 **Project > Import > Mockup JSON**，程序会为您载入对应的路线图。接下来，您应依次进行内容修正、文档上传，并更新README文件中的图片超链接，最后提交合并请求(Pull Request)。	
 
-- 附上改进内容，发送 Pull Request
+- 附上改进内容，提交合并请求(Pull Request)
 - 创建 Issue、讨论交流
 - 相互转告
 - 直接联系 kamranahmed.se@gmail.com 或访问 [![推特主页](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20@kamranahmedse)](https://twitter.com/kamranahmedse)
