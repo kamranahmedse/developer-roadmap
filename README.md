@@ -1,63 +1,63 @@
-![Web Developer Roadmap](http://i.imgur.com/GyvcunJ.png)
+![Web开发者路线图](http://i.imgur.com/16BbwYk.png)
 
-> Roadmap to becoming a web developer in 2017
+> Web开发者学习路线图 (2017.07版)
 
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective.
+以下路线图主要展示了成为前端开发者、后端开发者或DevOps的技术学习路线。本项目源于我为一位老教授制作的、用于跟学生们分享和交流观点的学习路线图。
 
-If you think that these can be improved in anyway, please do suggest.
-
-***
-
-<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>We are releasing <a href="http://hugobots.com">Hugobots</a> soon. Make sure to subscribe!</p>
+如果您认为本项目还有可以改进的地方，还请多多指教、献计献策。
 
 ***
 
+<p align="center"><b> 喜欢本篇指南、还想获取更多类似资讯吗？ </b><br>很快我们就会上线 <a href="http://hugobots.com">Hugobots</a> 了，请记得订阅！</p>
 
-## 🚀 Introduction
+***
 
-![](https://i.imgur.com/MWkeM18.png)
 
-## 🎨 Front-end Roadmap
+## 🚀 导图
 
-![](https://i.imgur.com/qx54HvK.png)
+![](https://i.imgur.com/gbojuvT.png)
 
-## 👽 Back-end Roadmap
+## 🎨 前端学习路线图
 
-For the backend, personally I would prefer Node.js and PHP 7 for the full time. Plus, I have been experimenting lately with Go and I quite like it. Apart from these, if I have to choose another one, I would go for Ruby. However this is just my personal preference, you can choose any of the shown languages and you will be good.
+![](https://i.imgur.com/9HPOvxx.png)
 
-![](https://i.imgur.com/jz4xrlQ.png)
+## 👽 后端学习路线图
 
-## 👷 DevOps Roadmap
+对于后端方向，我个人更青睐于将 Node.js 和 PHP 7 作为技术栈。最近我还尝试了 Go 语言，很是喜欢。若要除去这些，再选一门语言，我会给 Ruby 投上一票。不过这只是本人的一家之辞，您大可以选用图中的任意一种语言，同样能够做得很好。
 
-![](https://i.imgur.com/z23zTH3.png)
+![](https://i.imgur.com/Ej2BVMi.png)
+
+## 👷 运维开发学习路线图
+
+![](https://i.imgur.com/uED4MAC.png)
 
 <br>
 
-## 🚦 Wrap Up
+## 🚦 结语
 
-If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
+如果您觉得路线图存在可以改进的地方，请**修改内容**后**创建 Issue**，并**提交合并请求(Pull Request)**。与此同时，我也在持续改进本项目，因此您可能要对本仓库(Repository)进行**持续关注(Watch)**或打上**星标标记(Star)**。
 
-## ☑ TODO
+## ☑ 待办事项
 
-- [X] Add Frontend Roadmap
-- [X] Add Backend Roadmap
-- [X] Add DevOps Roadmap
-- [ ] Add relevant resources for each
+- [x] 添加前端学习路线图
+- [x] 添加后端学习路线图
+- [x] 添加运维开发学习路线图
+- [ ] 添加路线图相关资源
 
-## 👬 Contribution
+## 👬 投稿/协作
 
-The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/). Project file can be found at `/project-files` directory. To modify any of the roadmaps, open Balsamiq, click **Project > Import > Mockup JSON**, it will open the roadmap for you, update it, upload and update the images in readme and create a PR.		
+本项目路线图基于 [Balsamiq](https://balsamiq.com/products/mockups/) 生成，路线图文件位于 `/project-files` 目录下。若需修改路线图，请运行 Balsamiq 后，点选 **Project > Import > Mockup JSON**，程序会为您载入对应的路线图。接下来，您应依次进行内容修正、文档上传，并更新README文件中的图片超链接，最后提交合并请求(Pull Request)。	
 
-- Open pull request with improvements
-- Discuss ideas in issues
-- Spread the word
-- Reach out to me directly at kamranahmed.se@gmail.com or [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+- 附上改进内容，提交合并请求(Pull Request)
+- 创建 Issue、讨论交流
+- 相互转告
+- 直接联系 kamranahmed.se@gmail.com 或访问 [![推特主页](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20@kamranahmedse)](https://twitter.com/kamranahmedse)
 
-## Sponsored By
+## 赞助方
 
-- [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
-- [FancyGrid - JavaScript grid library with charts integration and server communication.](http://fancygrid.com)
+- [Hackr.IO - 探索、分享线上最佳的编程教学课程](https://hackr.io)
+- [FancyGrid - 支持图标交互和服务器通讯的 JavaScript 数据网格库](http://fancygrid.com)
 
-## License
+## 许可协议
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![许可协议: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
