@@ -15,7 +15,7 @@
 
 ## 🚀 导图
 
-![](https://i.imgur.com/g5KVpAE.png)
+![](https://i.imgur.com/gbojuvT.png)
 
 ## 🎨 前端学习路线图
 
@@ -27,9 +27,9 @@
 
 ![](https://i.imgur.com/Ej2BVMi.png)
 
-## 👷 DevOps学习路线图
+## 👷 运维开发学习路线图
 
-![](https://i.imgur.com/1yGwZYH.png)
+![](https://i.imgur.com/uED4MAC.png)
 
 <br>
 
