@@ -1,4 +1,4 @@
-![Web开发者路线图](http://i.imgur.com/Wz7vdm3.png)
+![Web开发者路线图](http://i.imgur.com/16BbwYk.png)
 
 > Web开发者学习路线图 (2017.07版)
 
