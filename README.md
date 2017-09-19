@@ -35,7 +35,7 @@
 
 ## 🚦 结语
 
-如果您觉得路线图存在可以改进的地方，请**修改内容**后**创建 Issue**，并**提交合并请求(Pull Request)**。与此同时，我也在持续改进本项目，因此您可能要对本仓库(Repository)进行**持续关注(Watch)**或打上**星标标记(Star)**。
+如果您觉得路线图存在可以改进的地方，请**修改内容**后**创建 Issue**，并**提交合并请求**(Pull Request)。与此同时，我也在持续改进本项目，因此您可能要对本仓库(Repository)进行**持续关注**(Watch)或打上**星标标记**(Star)。
 
 ## ☑ 待办事项
 
@@ -51,7 +51,6 @@
 - 附上改进内容，提交合并请求(Pull Request)
 - 创建 Issue、讨论交流
 - 相互转告
-- 直接联系 kamranahmed.se@gmail.com 或访问 [![推特主页](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20@kamranahmedse)](https://twitter.com/kamranahmedse)
 
 ## 赞助方
 
@@ -61,3 +60,5 @@
 ## 许可协议
 
 [![许可协议: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![捐赠](https://img.shields.io/badge/Donate-PayPal-green.svg)](http://paypal.me/kamranahmedse)
+[![推特主页](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20@kamranahmedse)](https://twitter.com/kamranahmedse)
