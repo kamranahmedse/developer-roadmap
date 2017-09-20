@@ -8,7 +8,7 @@
 
 ***
 
-<p align="center"><b> 喜欢本篇指南、还想获取更多类似资讯吗？ </b><br>很快我们就会上线 <a href="http://hugobots.com">Hugobots</a> 了，请记得订阅！</p>
+<p align="center"><b> 喜欢本篇指南、还想获取更多类似资讯吗？ </b><br>我们的网站 <a href="http://hugobots.com">Hugobots</a> 已经上线了，欢迎订阅！</p>
 
 ***
 
