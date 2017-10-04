@@ -8,7 +8,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ***
 
-<p align="center"><b> Did you like this guide and want more of the similar content? </b><br><a href="http://paypal.me/kamranahmedse">Buy me a coffee</a> and subscribe to <a href="http://hugobots.com">Hugobots</a>!</p>
+<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>We are launching <a href="http://hugobots.com">Hugobots</a> soon. Make sure to subscribe!</p>
 
 ***
 
