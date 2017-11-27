@@ -8,7 +8,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ***
 
-<p align="center"><b> Did you like this guide and want more of the similar content? </b><br><a href="http://paypal.me/kamranahmedse">Buy me a coffee</a> and subscribe to <a href="http://hugobots.com">Hugobots</a>!</p>
+<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>Subscribe for the launch of <a href="http://hugobots.com">Hugobots</a> or <a href="http://twitter.com/kamranahmedse">follow me on twitter</a>!</p>
 
 ***
 
@@ -56,7 +56,7 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 ## Sponsored By
 
 - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
-- [FancyGrid - JavaScript grid library with charts integration and server communication.](http://fancygrid.com)
+- [Highig - Think and its done](http://highig.com/)
 
 ## License
 
