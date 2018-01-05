@@ -1,1 +1,3616 @@
-{"mockup":{"controls":{"control":[{"ID":"194","measuredH":"40","measuredW":"119","properties":{"bold":"true","size":"32","text":"DevOps"},"typeID":"Label","x":"652","y":"124","zOrder":"0"},{"ID":"195","h":"105","measuredH":"104","measuredW":"12","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"false","p0":{"length":2,"x":2,"y":0},"p1":{"length":0.47809989329107294,"x":0.46601941747572806,"y":0.10679611650485436},"p2":{"length":104,"x":0,"y":104},"rightArrow":"false","shape":"bezier","stroke":"dotted"},"typeID":"Arrow","w":"13","x":"731","y":"16","zOrder":"1"},{"ID":"196","h":"147","measuredH":"146","measuredW":"10","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"false","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.4301356220719697,"x":0.4251067223342871,"y":0.06558146080592954},"p2":{"length":146.00342461736986,"x":1,"y":146},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"11","x":"715","y":"180","zOrder":"2"},{"ID":"197","h":"475","measuredH":"474","measuredW":"57","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"false","p0":{"length":1,"x":1,"y":0},"p1":{"length":0.5515933856670949,"x":0.5501641704563411,"y":-0.03968184292311207},"p2":{"length":477.4149138851865,"x":57,"y":474},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"58","x":"715","y":"336","zOrder":"3"},{"ID":"198","measuredH":"48","measuredW":"48","properties":{"color":"2848996","icon":{"ID":"circle","size":"large"}},"typeID":"Icon","x":"691","y":"312","zOrder":"4"},{"ID":"203","h":"44","measuredH":"43","measuredW":"157","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.4934050443495624,"x":0.4809722749715154,"y":-0.1100645651348272},"p2":{"length":162.265215003093,"x":157,"y":41},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"158","x":"558","y":"299","zOrder":"5"},{"ID":"204","measuredH":"32","measuredW":"50","properties":{"align":"center","color":"16770457","size":"18","text":"Unix"},"typeID":"TextInput","w":"123","x":"391","y":"163","zOrder":"6"},{"ID":"205","measuredH":"32","measuredW":"57","properties":{"align":"center","color":"16770457","size":"18","text":"Linux"},"typeID":"TextInput","w":"106","x":"269","y":"164","zOrder":"7"},{"ID":"206","h":"68","measuredH":"67","measuredW":"41","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":1,"x":1,"y":0},"p1":{"length":0.4869902582973339,"x":0.4570883894856472,"y":-0.16801701066832864},"p2":{"length":78.54934754662193,"x":41,"y":67},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"42","x":"426","y":"205","zOrder":"8"},{"ID":"207","measuredH":"32","measuredW":"164","properties":{"align":"center","color":"16776960","size":"18","text":"Operating System"},"typeID":"TextInput","w":"168","x":"468","y":"264","zOrder":"9"},{"ID":"208","h":"79","measuredH":"78","measuredW":"137","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.4869902582973339,"x":0.4570883894856472,"y":-0.1680170106683286},"p2":{"length":157.64834283937145,"x":137,"y":78},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"138","x":"331","y":"203","zOrder":"10"},{"ID":"209","h":"68","measuredH":"67","measuredW":"177","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":180.6239186818844,"x":177,"y":36},"p1":{"length":0.4940024311499264,"x":0.4168473211520594,"y":-0.2650975534221121},"p2":{"length":67,"x":0,"y":67},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"178","x":"719","y":"269","zOrder":"11"},{"ID":"210","measuredH":"32","measuredW":"61","properties":{"align":"center","color":"16776960","size":"18","text":"Cloud"},"typeID":"TextInput","w":"168","x":"862","y":"309","zOrder":"12"},{"ID":"211","h":"50","measuredH":"49","measuredW":"82","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":93.05912099305472,"x":82,"y":44},"p1":{"length":0.6782899599731566,"x":0.5978750804893754,"y":0.32034771410173857},"p2":{"length":1,"x":1,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"83","x":"971","y":"340","zOrder":"13"},{"ID":"212","measuredH":"32","measuredW":"107","properties":{"align":"center","color":"15658734","size":"18","text":"Rackspace"},"typeID":"TextInput","w":"182","x":"1055","y":"368","zOrder":"14"},{"ID":"213","h":"88","measuredH":"87","measuredW":"98","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":126.50691680694776,"x":98,"y":80},"p1":{"length":0.5769423312009603,"x":0.4653531598513011,"y":0.3410408921933086},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"99","x":"954","y":"343","zOrder":"15"},{"ID":"214","measuredH":"32","measuredW":"54","properties":{"align":"center","color":"16776960","size":"18","text":"AWS"},"typeID":"TextInput","w":"182","x":"1055","y":"407","zOrder":"16"},{"ID":"215","h":"120","measuredH":"119","measuredW":"123","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":169.7586522095413,"x":123,"y":117},"p1":{"length":0.5859147708613179,"x":0.4960627165505897,"y":0.3117978511181885},"p2":{"length":1,"x":1,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"124","x":"928","y":"342","zOrder":"17"},{"ID":"216","measuredH":"32","measuredW":"72","properties":{"align":"center","color":"15658734","size":"18","text":"Heroku"},"typeID":"TextInput","w":"182","x":"1055","y":"444","zOrder":"18"},{"ID":"217","measuredH":"32","measuredW":"63","properties":{"align":"center","color":"15658734","size":"18","text":"Azure"},"typeID":"TextInput","w":"184","x":"1053","y":"482","zOrder":"19"},{"ID":"218","h":"156","measuredH":"155","measuredW":"146","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":212.93426215618751,"x":146,"y":155},"p1":{"length":0.5859147708613179,"x":0.4960627165505897,"y":0.3117978511181885},"p2":{"length":4,"x":4,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"147","x":"903","y":"342","zOrder":"20"},{"ID":"219","measuredH":"29","measuredW":"166","properties":{"align":"center","color":"15658734","size":"15","text":"Google Cloud Platform"},"typeID":"TextInput","w":"182","x":"1054","y":"519","zOrder":"21"},{"ID":"220","h":"193","measuredH":"192","measuredW":"165","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":253.15805339747735,"x":165,"y":192},"p1":{"length":0.5859147708613179,"x":0.4960627165505896,"y":0.3117978511181884},"p2":{"length":7,"x":7,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"166","x":"884","y":"343","zOrder":"22"},{"ID":"221","measuredH":"32","measuredW":"105","properties":{"align":"center","color":"16776960","size":"18","text":"Automation"},"typeID":"TextInput","w":"168","x":"421","y":"423","zOrder":"23"},{"ID":"222","h":"103","measuredH":"102","measuredW":"122","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":102,"x":0,"y":102},"p1":{"length":0.3843433494783224,"x":0.36800437796424645,"y":-0.11087194454578624},"p2":{"length":122,"x":122,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"123","x":"592","y":"336","zOrder":"24"},{"ID":"223","measuredH":"32","measuredW":"54","properties":{"align":"center","color":"15658734","size":"18","text":"Chef"},"typeID":"TextInput","w":"116","x":"239","y":"514","zOrder":"25"},{"ID":"224","measuredH":"32","measuredW":"74","properties":{"align":"center","color":"16770457","size":"18","text":"Ansible"},"typeID":"TextInput","w":"116","x":"361","y":"514","zOrder":"26"},{"ID":"225","measuredH":"32","measuredW":"73","properties":{"align":"center","color":"16770457","size":"18","text":"Puppet"},"typeID":"TextInput","w":"101","x":"483","y":"514","zOrder":"27"},{"ID":"226","h":"66","measuredH":"65","measuredW":"127","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"length":65,"x":0,"y":65},"p1":{"length":0.47567843814048066,"x":0.4645604016027265,"y":0.1022428959609447},"p2":{"length":127,"x":127,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"128","x":"292","y":"444","zOrder":"28"},{"ID":"227","h":"58","measuredH":"57","measuredW":"13","properties":{"color":"2848996","curvature":"0","direction":"bottom","leftArrow":"true","p0":{"length":57,"x":0,"y":57},"p1":{"length":0.5269229044372591,"x":0.526916325336454,"y":-0.0026331187829139848},"p2":{"length":13,"x":13,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"14","x":"439","y":"458","zOrder":"29"},{"ID":"228","h":"60","measuredH":"59","measuredW":"1","properties":{"color":"2848996","curvature":"0","direction":"top","leftArrow":"true","p0":{"length":59.00847396772772,"x":1,"y":59},"p1":{"length":0.5084015562986306,"x":0.5083285468121769,"y":-0.00861573808156232},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"2","x":"518","y":"455","zOrder":"30"},{"ID":"229","measuredH":"32","measuredW":"78","properties":{"align":"center","color":"16776960","size":"18","text":"CI / CD"},"typeID":"TextInput","w":"168","x":"803","y":"586","zOrder":"31"},{"ID":"230","h":"237","measuredH":"236","measuredW":"120","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":264.7564918939666,"x":120,"y":236},"p1":{"length":0.4041626025095476,"x":0.3964277562200411,"y":-0.0786920794339192},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier","text":""},"typeID":"Arrow","w":"121","x":"724","y":"346","zOrder":"32"},{"ID":"231","h":"20","measuredH":"19","measuredW":"89","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":90.4267659490264,"x":89,"y":16},"p1":{"length":0.6859943405700353,"x":0.670906200317965,"y":0.14308426073131955},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"90","x":"939","y":"620","zOrder":"33"},{"ID":"232","measuredH":"32","measuredW":"77","properties":{"align":"center","color":"16770457","size":"18","text":"Jenkins"},"typeID":"TextInput","w":"182","x":"1032","y":"618","zOrder":"34"},{"ID":"233","measuredH":"32","measuredW":"63","properties":{"align":"center","color":"16770457","size":"18","text":"Travis"},"typeID":"TextInput","w":"184","x":"1030","y":"656","zOrder":"35"},{"ID":"234","measuredH":"32","measuredW":"93","properties":{"align":"center","color":"16770457","size":"18","text":"TeamCity"},"typeID":"TextInput","w":"182","x":"1031","y":"693","zOrder":"36"},{"ID":"235","h":"54","measuredH":"53","measuredW":"124","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":133.70115930686617,"x":124,"y":50},"p1":{"length":0.6812795800472109,"x":0.6424255985679123,"y":0.22678451555157753},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"125","x":"903","y":"618","zOrder":"37"},{"ID":"236","h":"92","measuredH":"91","measuredW":"145","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":170.66048165876012,"x":145,"y":90},"p1":{"length":0.6458020485348883,"x":0.590366687383468,"y":0.2617775015537601},"p2":{"length":1,"x":1,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"146","x":"884","y":"619","zOrder":"38"},{"ID":"237","measuredH":"32","measuredW":"63","properties":{"align":"center","color":"15658734","size":"18","text":"Drone"},"typeID":"TextInput","w":"182","x":"1032","y":"732","zOrder":"39"},{"ID":"238","measuredH":"32","measuredW":"80","properties":{"align":"center","color":"15658734","size":"18","text":"Bamboo"},"typeID":"TextInput","w":"182","x":"1033","y":"769","zOrder":"40"},{"ID":"239","h":"129","measuredH":"128","measuredW":"167","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":210.41150158677164,"x":167,"y":128},"p1":{"length":0.6458020485348883,"x":0.590366687383468,"y":0.2617775015537601},"p2":{"length":2,"x":2,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"168","x":"861","y":"619","zOrder":"41"},{"ID":"240","h":"165","measuredH":"164","measuredW":"200","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":258.6426105652354,"x":200,"y":164},"p1":{"length":0.6458020485348882,"x":0.5903666873834679,"y":0.2617775015537602},"p2":{"length":3,"x":3,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"201","x":"831","y":"619","zOrder":"42"},{"ID":"241","measuredH":"48","measuredW":"48","properties":{"color":"2848996","icon":{"ID":"circle","size":"large"}},"typeID":"Icon","x":"749","y":"795","zOrder":"43"},{"ID":"242","h":"29","measuredH":"28","measuredW":"178","properties":{"color":"2848996","curvature":"0","direction":"top","leftArrow":"true","p0":{"x":0,"y":0},"p1":{"x":0.3805593199457928,"y":0.009301466058888753},"p2":{"x":178,"y":28},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"179","x":"590","y":"794","zOrder":"44"},{"ID":"243","measuredH":"32","measuredW":"206","properties":{"align":"center","color":"16776960","size":"18","text":"Monitoring and Alerting"},"typeID":"TextInput","w":"230","x":"355","y":"775","zOrder":"45"},{"ID":"244","measuredH":"32","measuredW":"69","properties":{"align":"center","color":"16770457","size":"18","text":"Nagios"},"typeID":"TextInput","w":"101","x":"154","y":"709","zOrder":"46"},{"ID":"245","measuredH":"32","measuredW":"100","properties":{"align":"center","color":"16770457","size":"18","text":"PagerDuty"},"typeID":"TextInput","w":"101","x":"231","y":"576","zOrder":"47"},{"ID":"246","measuredH":"32","measuredW":"82","properties":{"align":"center","color":"15658734","size":"18","text":"Graphite"},"typeID":"TextInput","w":"101","x":"460","y":"576","zOrder":"48"},{"ID":"247","measuredH":"32","measuredW":"112","properties":{"align":"center","color":"15658734","size":"18","text":"Prometheus"},"typeID":"TextInput","w":"115","x":"531","y":"638","zOrder":"49"},{"ID":"248","measuredH":"32","measuredW":"127","properties":{"align":"center","color":"16770457","size":"18","text":"AppDynamics"},"typeID":"TextInput","w":"141","x":"114","y":"759","zOrder":"50"},{"ID":"249","h":"22","measuredH":"21","measuredW":"90","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"x":0,"y":0},"p1":{"x":0.47438524590163944,"y":0.03176229508196722},"p2":{"x":90,"y":21},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"91","x":"262","y":"776","zOrder":"51"},{"ID":"250","h":"43","measuredH":"42","measuredW":"91","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.4967064277201685,"x":0.49507591300779646,"y":0.04021337710299548},"p2":{"length":100.22474744293449,"x":91,"y":42},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"92","x":"263","y":"740","zOrder":"52"},{"ID":"251","h":"163","measuredH":"162","measuredW":"38","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.5520035911131103,"x":0.5482477876106194,"y":-0.06428318584070783},"p2":{"length":166.39711535961192,"x":38,"y":162},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"39","x":"400","y":"610","zOrder":"53"},{"ID":"252","h":"159","measuredH":"158","measuredW":"29","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":1,"x":1,"y":0},"p1":{"length":0.5520035911131101,"x":0.5482477876106193,"y":-0.06428318584070793},"p2":{"length":160.63934760823702,"x":29,"y":158},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"30","x":"502","y":"615","zOrder":"54"},{"ID":"253","h":"103","measuredH":"102","measuredW":"7","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":1,"x":1,"y":0},"p1":{"length":0.5944851299924161,"x":0.5934629929767694,"y":-0.03484602917341978},"p2":{"length":102.23991392797627,"x":7,"y":102},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"8","x":"563","y":"674","zOrder":"55"},{"ID":"254","h":"79","measuredH":"78","measuredW":"165","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":182.50753409106156,"x":165,"y":78},"p1":{"length":0.5387969581467017,"x":0.49148815671119694,"y":-0.22077489422660493},"p2":{"length":10,"x":0,"y":10},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"166","x":"778","y":"811","zOrder":"56"},{"ID":"255","measuredH":"32","measuredW":"100","properties":{"align":"center","color":"15658734","size":"18","text":"Salt Stack"},"typeID":"TextInput","w":"116","x":"176","y":"444","zOrder":"57"},{"ID":"256","h":"37","measuredH":"36","measuredW":"153","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"length":36,"x":0,"y":36},"p1":{"length":0.41049609004336346,"x":0.3467837937687287,"y":0.2196543655843357},"p2":{"length":155.9134375222354,"x":153,"y":30},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"154","x":"269","y":"402","zOrder":"58"},{"ID":"257","measuredH":"32","measuredW":"98","properties":{"align":"center","color":"15658734","size":"18","text":"CF Engine"},"typeID":"TextInput","w":"116","x":"176","y":"349","zOrder":"59"},{"ID":"258","h":"74","measuredH":"73","measuredW":"149","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":19,"x":0,"y":19},"p1":{"length":0.41049609004336374,"x":0.346783793768729,"y":0.2196543655843358},"p2":{"length":165.92166826548,"x":149,"y":73},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"150","x":"297","y":"349","zOrder":"60"},{"ID":"259","measuredH":"32","measuredW":"104","properties":{"align":"center","color":"16776960","size":"18","text":"Containers"},"typeID":"TextInput","w":"168","x":"919","y":"892","zOrder":"61"},{"ID":"260","measuredH":"32","measuredW":"72","properties":{"align":"center","color":"16776960","size":"18","text":"Docker"},"typeID":"TextInput","w":"182","x":"1124","y":"822","zOrder":"62"},{"ID":"261","h":"55","measuredH":"54","measuredW":"103","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":103.0194156457898,"x":103,"y":2},"p1":{"length":0.5074373619782105,"x":0.4799819725080749,"y":-0.16465109291669797},"p2":{"length":54,"x":0,"y":54},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"104","x":"1014","y":"836","zOrder":"63"},{"ID":"262","measuredH":"32","measuredW":"115","properties":{"align":"center","color":"15658734","size":"18","text":"Digitalocean"},"typeID":"TextInput","w":"182","x":"1054","y":"555","zOrder":"64"},{"ID":"263","h":"229","measuredH":"228","measuredW":"189","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":296.150299679065,"x":189,"y":228},"p1":{"length":0.5604738542395299,"x":0.4815004659832246,"y":0.28685927306616965},"p2":{"length":5,"x":5,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"190","x":"865","y":"343","zOrder":"65"},{"ID":"264","h":"842","measuredH":"841","measuredW":"89","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":841.770158653774,"x":36,"y":841},"p1":{"length":0.40416260250954766,"x":0.3964277562200411,"y":-0.07869207943391922},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier","text":""},"typeID":"Arrow","w":"90","x":"774","y":"821","zOrder":"66"},{"ID":"265","measuredH":"48","measuredW":"48","properties":{"color":"2848996","icon":{"ID":"flag-checkered","size":"large"}},"typeID":"Icon","x":"782","y":"1683","zOrder":"67"},{"ID":"267","measuredH":"32","measuredW":"37","properties":{"align":"center","color":"16770457","size":"18","text":"rkt"},"typeID":"TextInput","w":"182","x":"1124","y":"859","zOrder":"68"},{"ID":"268","h":"17","measuredH":"16","measuredW":"81","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":81.00617260431454,"x":81,"y":1},"p1":{"length":0.6565321642986127,"x":0.6511936339522546,"y":-0.08355437665782496},"p2":{"length":16,"x":0,"y":16},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"82","x":"1041","y":"875","zOrder":"69"},{"ID":"269","measuredH":"32","measuredW":"161","properties":{"align":"center","color":"16776960","size":"18","text":"Cluster Managers"},"typeID":"TextInput","w":"168","x":"442","y":"961","zOrder":"70"},{"ID":"270","h":"153","measuredH":"152","measuredW":"155","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":152,"x":0,"y":152},"p1":{"length":0.3730354812206476,"x":0.34836852207293667,"y":-0.13339731285988485},"p2":{"length":155,"x":155,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"156","x":"613","y":"821","zOrder":"71"},{"ID":"271","h":"12","measuredH":"11","measuredW":"105","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":11},"p1":{"x":0.5613096317794304,"y":0.0624886631598041},"p2":{"x":105,"y":5},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"106","x":"338","y":"967","zOrder":"72"},{"ID":"272","measuredH":"32","measuredW":"109","properties":{"align":"center","color":"16770457","size":"18","text":"Kubernetes"},"typeID":"TextInput","w":"182","x":"152","y":"964","zOrder":"73"},{"ID":"273","h":"29","measuredH":"28","measuredW":"104","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":28},"p1":{"x":0.5482477876106191,"y":-0.0642831858407078},"p2":{"x":104,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"105","x":"341","y":"991","zOrder":"74"},{"ID":"274","measuredH":"32","measuredW":"114","properties":{"align":"center","color":"16770457","size":"18","text":"Mesosphere"},"typeID":"TextInput","w":"182","x":"152","y":"1004","zOrder":"75"},{"ID":"275","measuredH":"32","measuredW":"68","properties":{"align":"center","color":"16770457","size":"18","text":"Mesos"},"typeID":"TextInput","w":"182","x":"152","y":"1043","zOrder":"76"},{"ID":"276","h":"59","measuredH":"58","measuredW":"127","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":58,"x":0,"y":58},"p1":{"length":0.55200359111311,"x":0.5482477876106192,"y":-0.06428318584070777},"p2":{"length":127,"x":127,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"128","x":"337","y":"994","zOrder":"77"},{"ID":"277","measuredH":"32","measuredW":"133","properties":{"align":"center","color":"16770457","size":"18","text":"Docker Swarm"},"typeID":"TextInput","w":"182","x":"244","y":"1083","zOrder":"78"},{"ID":"278","h":"89","measuredH":"88","measuredW":"65","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":88,"x":0,"y":88},"p1":{"length":0.6545112618155575,"x":0.6482871125611747,"y":-0.09004893964110934},"p2":{"length":65,"x":65,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"66","x":"421","y":"996","zOrder":"79"},{"ID":"279","measuredH":"32","measuredW":"72","properties":{"align":"center","color":"16770457","size":"18","text":"Nomad"},"typeID":"TextInput","w":"182","x":"453","y":"1083","zOrder":"80"},{"ID":"280","h":"86","measuredH":"85","measuredW":"10","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":85.00588214941364,"x":1,"y":85},"p1":{"length":0.6526170293253694,"x":0.6420077749828493,"y":-0.11719643265492792},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"11","x":"522","y":"996","zOrder":"81"},{"ID":"281","h":"119","measuredH":"118","measuredW":"165","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":1,"x":0,"y":1},"p1":{"length":0.5147451733782548,"x":0.4837905236907732,"y":0.17581047381546133},"p2":{"length":202.85216291674092,"x":165,"y":118},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"166","x":"303","y":"302","zOrder":"82"},{"ID":"282","measuredH":"32","measuredW":"93","properties":{"align":"center","color":"16770457","size":"18","text":"Terraform"},"typeID":"TextInput","w":"116","x":"185","y":"287","zOrder":"83"},{"ID":"283","measuredH":"29","measuredW":"161","properties":{"align":"center","color":"16770457","size":"15","text":"AWS Cloud Formation"},"typeID":"TextInput","w":"163","x":"475","y":"359","zOrder":"84"},{"ID":"284","h":"33","measuredH":"32","measuredW":"4","properties":{"color":"2848996","curvature":"0","direction":"bottom","leftArrow":"false","p0":{"length":32,"x":0,"y":32},"p1":{"length":0.5084015562986307,"x":0.508328546812177,"y":-0.008615738081562331},"p2":{"length":4,"x":4,"y":0},"rightArrow":"true","shape":"bezier"},"typeID":"Arrow","w":"5","x":"526","y":"390","zOrder":"85"},{"ID":"285","h":"399","measuredH":"398","measuredW":"73","properties":{"color":"2848996","curvature":"0","direction":"bottom","leftArrow":"true","p0":{"length":398,"x":0,"y":398},"p1":{"length":0.3436579847258308,"x":0.34351657882039666,"y":-0.009857511924902128},"p2":{"length":73,"x":73,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"74","x":"699","y":"821","zOrder":"86"},{"ID":"286","measuredH":"32","measuredW":"156","properties":{"align":"center","color":"16776960","size":"18","text":"Love for Terminal"},"typeID":"TextInput","w":"159","x":"567","y":"1223","zOrder":"87"},{"ID":"287","h":"40","measuredH":"39","measuredW":"90","properties":{"color":"2848996","curvature":"0","direction":"bottom","leftArrow":"true","p0":{"length":39,"x":0,"y":39},"p1":{"length":0.5248229639985018,"x":0.5247895229186157,"y":0.005924540068599915},"p2":{"length":90,"x":90,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"91","x":"476","y":"1240","zOrder":"88"},{"ID":"288","measuredH":"32","measuredW":"118","properties":{"align":"center","color":"16776960","size":"18","text":"Bash Scripts"},"typeID":"TextInput","w":"136","x":"338","y":"1261","zOrder":"89"},{"ID":"289","h":"66","measuredH":"65","measuredW":"105","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":65,"x":0,"y":65},"p1":{"length":0.5346528392673001,"x":0.5287804878048781,"y":-0.07902439024390241},"p2":{"length":105,"x":105,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"106","x":"476","y":"1255","zOrder":"90"},{"ID":"290","measuredH":"32","measuredW":"105","properties":{"align":"center","color":"16776960","size":"18","text":"Vim / Nano"},"typeID":"TextInput","w":"136","x":"337","y":"1304","zOrder":"91"},{"ID":"291","h":"110","measuredH":"109","measuredW":"131","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":109,"x":0,"y":109},"p1":{"length":0.5346528392673001,"x":0.5287804878048781,"y":-0.0790243902439025},"p2":{"length":131,"x":131,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"132","x":"483","y":"1256","zOrder":"92"},{"ID":"292","measuredH":"32","measuredW":"120","properties":{"align":"center","color":"16776960","size":"18","text":"Web Servers"},"typeID":"TextInput","w":"138","x":"909","y":"961","zOrder":"93"},{"ID":"293","h":"138","measuredH":"137","measuredW":"127","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":186.81006396872735,"x":127,"y":137},"p1":{"length":0.4961462141111039,"x":0.48035560653857184,"y":-0.1241755090335533},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"128","x":"787","y":"823","zOrder":"94"},{"ID":"294","measuredH":"32","measuredW":"76","properties":{"align":"center","color":"16776960","size":"18","text":"Apache"},"typeID":"TextInput","w":"182","x":"1105","y":"946","zOrder":"95"},{"ID":"295","h":"11","measuredH":"10","measuredW":"57","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":57.0350769263968,"x":57,"y":2},"p1":{"length":0.5041332333156514,"x":0.4965288258376094,"y":-0.08723211590703289},"p2":{"length":10,"x":0,"y":10},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"58","x":"1047","y":"962","zOrder":"96"},{"ID":"296","measuredH":"32","measuredW":"60","properties":{"align":"center","color":"16776960","size":"18","text":"Nginx"},"typeID":"TextInput","w":"182","x":"1106","y":"982","zOrder":"97"},{"ID":"297","h":"21","measuredH":"20","measuredW":"58","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":61.35144660071187,"x":58,"y":20},"p1":{"length":0.4074883541492552,"x":0.4070138150903294,"y":0.019659936238044632},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"59","x":"1047","y":"981","zOrder":"98"},{"ID":"298","h":"185","measuredH":"140","measuredW":"180","properties":{"text":"Differences and when to use what"},"typeID":"VCurly","w":"180","x":"1294","y":"940","zOrder":"99"},{"ID":"299","measuredH":"32","measuredW":"317","properties":{"align":"center","color":"16776960","size":"18","text":"Setting up a Reverse Proxy (Nginx ..)"},"typeID":"TextInput","w":"447","x":"993","y":"1236","zOrder":"100"},{"ID":"300","measuredH":"32","measuredW":"74","properties":{"align":"center","color":"16770457","size":"18","text":"Tomcat"},"typeID":"TextInput","w":"182","x":"1105","y":"1020","zOrder":"101"},{"ID":"301","h":"48","measuredH":"47","measuredW":"61","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":77.00649323271382,"x":61,"y":47},"p1":{"length":0.5585454489562574,"x":0.5247892074198989,"y":0.19123102866779093},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"62","x":"1045","y":"991","zOrder":"102"},{"ID":"302","measuredH":"32","measuredW":"39","properties":{"align":"center","color":"16770457","size":"18","text":"IIS"},"typeID":"TextInput","w":"182","x":"1106","y":"1058","zOrder":"103"},{"ID":"303","h":"79","measuredH":"78","measuredW":"78","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":110.3086578651014,"x":78,"y":78},"p1":{"length":0.4797853179785701,"x":0.44230769230769235,"y":0.1858974358974359},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"79","x":"1028","y":"995","zOrder":"104"},{"ID":"304","measuredH":"48","measuredW":"48","properties":{"color":"2848996","icon":{"ID":"circle","size":"large"}},"typeID":"Icon","x":"831","y":"1220","zOrder":"105"},{"ID":"305","h":"10","measuredH":"8","measuredW":"138","properties":{"color":"2848996","curvature":"0","direction":"top","leftArrow":"true","p0":{"length":138.2316895650198,"x":138,"y":8},"p1":{"length":0.5,"x":0.5,"y":0},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"140","x":"857","y":"1244","zOrder":"106"},{"ID":"306","measuredH":"32","measuredW":"365","properties":{"align":"center","color":"16776960","size":"18","text":"Setting up caching Server (Squid, Nginx ..)"},"typeID":"TextInput","w":"446","x":"993","y":"1272","zOrder":"107"},{"ID":"307","h":"36","measuredH":"35","measuredW":"127","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":131.73458164050928,"x":127,"y":35},"p1":{"length":0.5754174316949375,"x":0.5710499020398756,"y":0.07076178402673736},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"128","x":"867","y":"1254","zOrder":"108"},{"ID":"308","measuredH":"32","measuredW":"387","properties":{"align":"center","color":"16776960","size":"18","text":"Setting up a load balancer (HAProxy, Nginx ..)"},"typeID":"TextInput","w":"444","x":"994","y":"1310","zOrder":"109"},{"ID":"309","h":"72","measuredH":"71","measuredW":"126","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":144.62710672622887,"x":126,"y":71},"p1":{"length":0.5556548491193326,"x":0.5375099057849784,"y":0.14083824953773005},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"127","x":"866","y":"1255","zOrder":"110"},{"ID":"310","measuredH":"32","measuredW":"535","properties":{"align":"center","color":"16776960","size":"18","text":"Compiling apps from source (gcc, make and other related stuff)"},"typeID":"TextInput","w":"550","x":"140","y":"1145","zOrder":"111"},{"ID":"311","h":"112","measuredH":"111","measuredW":"135","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":174.7741399635541,"x":135,"y":111},"p1":{"length":0.5556548491193327,"x":0.5375099057849785,"y":0.14083824953773005},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"136","x":"859","y":"1256","zOrder":"112"},{"ID":"312","measuredH":"32","measuredW":"333","properties":{"align":"center","color":"16776960","size":"18","text":"Knowledge about different file systems"},"typeID":"TextInput","w":"447","x":"993","y":"1199","zOrder":"113"},{"ID":"313","measuredH":"32","measuredW":"340","properties":{"align":"center","color":"16776960","size":"18","text":"OSI Model. TCP/IP/UDP Common ports"},"typeID":"TextInput","w":"447","x":"993","y":"1164","zOrder":"114"},{"ID":"314","h":"27","measuredH":"26","measuredW":"129","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":129.00387591076478,"x":129,"y":1},"p1":{"length":0.5534965054116332,"x":0.5491329479768786,"y":-0.06936416184971098},"p2":{"length":26,"x":0,"y":26},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"130","x":"864","y":"1214","zOrder":"115"},{"ID":"315","h":"57","measuredH":"56","measuredW":"129","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"length":129,"x":129,"y":0},"p1":{"length":0.5534965054116332,"x":0.5491329479768786,"y":-0.06936416184971089},"p2":{"length":56,"x":0,"y":56},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"130","x":"860","y":"1178","zOrder":"116"},{"ID":"316","h":"56","measuredH":"55","measuredW":"157","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.432857006945666,"x":0.3992980660256645,"y":-0.16711146857748693},"p2":{"length":165.38742394752995,"x":157,"y":52},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"158","x":"407","y":"1176","zOrder":"117"},{"ID":"317","measuredH":"32","measuredW":"177","properties":{"align":"center","color":"16776960","size":"18","text":"Setting up a firewall"},"typeID":"TextInput","w":"439","x":"999","y":"1345","zOrder":"118"},{"ID":"318","measuredH":"32","measuredW":"157","properties":{"align":"center","color":"16776960","size":"18","text":"Commands/Tools"},"typeID":"TextInput","w":"166","x":"315","y":"1348","zOrder":"119"},{"ID":"319","h":"87","measuredH":"86","measuredW":"92","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"length":86.00581375697809,"x":1,"y":86},"p1":{"length":0.5625961582184792,"x":0.4916028285209192,"y":0.27357100766057746},"p2":{"length":92.00543462209176,"x":92,"y":1},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"93","x":"222","y":"1365","zOrder":"120"},{"ID":"320","h":"132","measuredH":"140","measuredW":"200","properties":{"size":"17","text":"awk, sed, grep, sort, uniq, cat, cut, echo, fmt, tr, nl, egrep, fgrep, wc ..etc"},"typeID":"TextArea","w":"185","x":"143","y":"1482","zOrder":"121"},{"ID":"321","measuredH":"32","measuredW":"157","properties":{"align":"center","color":"16776960","size":"18","text":"Text Manipulation"},"typeID":"TextInput","w":"184","x":"144","y":"1455","zOrder":"122"},{"ID":"322","h":"47","measuredH":"140","measuredW":"200","properties":{"size":"17","text":"ps, top, htop, atop ..etc"},"typeID":"TextArea","w":"194","x":"337","y":"1479","zOrder":"123"},{"ID":"323","measuredH":"32","measuredW":"172","properties":{"align":"center","color":"16776960","size":"18","text":"Process Monitoring"},"typeID":"TextInput","w":"194","x":"338","y":"1452","zOrder":"124"},{"ID":"324","h":"55","measuredH":"140","measuredW":"200","properties":{"size":"17","text":"nmon, iostat, sar, vmstat ..etc"},"typeID":"TextArea","w":"196","x":"337","y":"1559","zOrder":"125"},{"ID":"325","measuredH":"32","measuredW":"187","properties":{"align":"center","color":"16776960","size":"18","text":"System Performance"},"typeID":"TextInput","w":"194","x":"338","y":"1532","zOrder":"126"},{"ID":"326","h":"135","measuredH":"140","measuredW":"200","properties":{"size":"17","text":"nmap, tcpdump, ping, traceroute, airmon, airodump ..etc"},"typeID":"TextArea","w":"194","x":"540","y":"1479","zOrder":"127"},{"ID":"327","measuredH":"32","measuredW":"82","properties":{"align":"center","color":"16776960","size":"18","text":"Network"},"typeID":"TextInput","w":"194","x":"541","y":"1452","zOrder":"128"},{"ID":"328","h":"72","measuredH":"71","measuredW":"11","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":71.449282711585,"x":8,"y":71},"p1":{"length":0.5195492659651598,"x":0.5098922624877571,"y":-0.09970617042115572},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"12","x":"384","y":"1380","zOrder":"129"},{"ID":"329","h":"72","measuredH":"71","measuredW":"97","properties":{"color":"2848996","curvature":"-1","direction":"top","leftArrow":"true","p0":{"length":120.20815280171308,"x":97,"y":71},"p1":{"length":0.4352941176470589,"x":0.43017301038062294,"y":-0.0665743944636678},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"98","x":"444","y":"1382","zOrder":"130"},{"ID":"330","measuredH":"32","measuredW":"473","properties":{"align":"center","color":"16776960","size":"18","text":"TLS, STARTTLS, SSL, HTTPS, SCP, SSH, SFTP, FTPS .."},"typeID":"TextInput","w":"438","x":"1002","y":"1380","zOrder":"131"},{"ID":"331","measuredH":"32","measuredW":"433","properties":{"align":"center","color":"16776960","size":"18","text":"Postmortem analysis when something bad happens"},"typeID":"TextInput","w":"439","x":"1002","y":"1415","zOrder":"132"},{"ID":"332","h":"141","measuredH":"140","measuredW":"146","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":202.27703774773843,"x":146,"y":140},"p1":{"length":0.525498727469184,"x":0.4908858561990645,"y":0.18756329266528424},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"147","x":"857","y":"1255","zOrder":"133"},{"ID":"333","h":"179","measuredH":"178","measuredW":"148","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":231.49082055234933,"x":148,"y":178},"p1":{"length":0.5254987274691845,"x":0.4908858561990649,"y":0.18756329266528457},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"149","x":"855","y":"1255","zOrder":"134"},{"ID":"334","measuredH":"32","measuredW":"67","properties":{"align":"center","color":"16770457","size":"18","text":"Caddy"},"typeID":"TextInput","w":"182","x":"1106","y":"1093","zOrder":"135"},{"ID":"335","h":"115","measuredH":"114","measuredW":"94","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":147.75655653811103,"x":94,"y":114},"p1":{"length":0.4797853179785701,"x":0.44230769230769235,"y":0.1858974358974359},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"95","x":"1010","y":"995","zOrder":"136"},{"ID":"336","measuredH":"32","measuredW":"50","properties":{"align":"center","color":"15658734","size":"18","text":"LXC"},"typeID":"TextInput","w":"182","x":"1124","y":"894","zOrder":"137"},{"ID":"337","h":"2","measuredH":"1","measuredW":"37","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":37.013511046643494,"x":37,"y":1},"p1":{"length":0.5787470059411219,"x":0.578546712802768,"y":0.015224913494809686},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"38","x":"1087","y":"909","zOrder":"138"},{"ID":"338","measuredH":"32","measuredW":"132","properties":{"align":"center","color":"15658734","size":"18","text":"Cloud Foundry"},"typeID":"TextInput","w":"182","x":"1055","y":"331","zOrder":"139"},{"ID":"339","h":"18","measuredH":"17","measuredW":"61","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":61.1310068623117,"x":61,"y":4},"p1":{"length":0.6415294809487804,"x":0.59004549103559,"y":0.2518062617072518},"p2":{"length":0,"x":0,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"62","x":"995","y":"339","zOrder":"140"},{"ID":"340","measuredH":"32","measuredW":"70","properties":{"align":"center","color":"15658734","size":"18","text":"Zabbix"},"typeID":"TextInput","w":"103","x":"606","y":"683","zOrder":"141"},{"ID":"341","h":"61","measuredH":"60","measuredW":"45","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"length":45,"x":45,"y":0},"p1":{"length":0.5584104424365847,"x":0.5573333333333333,"y":0.034666666666666665},"p2":{"length":60,"x":0,"y":60},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"46","x":"582","y":"718","zOrder":"142"},{"ID":"342","measuredH":"32","measuredW":"62","properties":{"align":"center","color":"16770457","size":"18","text":"Munin"},"typeID":"TextInput","w":"101","x":"348","y":"576","zOrder":"143"},{"ID":"343","h":"163","measuredH":"162","measuredW":"114","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"x":0,"y":0},"p1":{"x":0.5402140672782875,"y":0.039602446483180426},"p2":{"x":114,"y":162},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"115","x":"280","y":"613","zOrder":"144"},{"ID":"344","measuredH":"32","measuredW":"95","properties":{"align":"center","color":"16770457","size":"18","text":"New Relic"},"typeID":"TextInput","w":"101","x":"154","y":"650","zOrder":"145"},{"ID":"345","h":"87","measuredH":"86","measuredW":"105","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"x":0,"y":0},"p1":{"x":0.4950759130077962,"y":0.040213377102995426},"p2":{"x":105,"y":86},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"106","x":"262","y":"687","zOrder":"146"},{"ID":"346","measuredH":"32","measuredW":"248","properties":{"align":"center","color":"16776960","size":"18","text":"Log Management & Analysis"},"typeID":"TextInput","w":"255","x":"355","y":"847","zOrder":"147"},{"ID":"347","h":"41","measuredH":"40","measuredW":"156","properties":{"color":"2848996","curvature":"0","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":40},"p1":{"x":0.3805593199457928,"y":0.009301466058888753},"p2":{"x":156,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"157","x":"615","y":"824","zOrder":"148"},{"ID":"348","measuredH":"32","measuredW":"91","properties":{"align":"center","color":"15658734","size":"18","text":"Papertrail"},"typeID":"TextInput","w":"115","x":"147","y":"809","zOrder":"149"},{"ID":"349","measuredH":"32","measuredW":"48","properties":{"align":"center","color":"16776960","size":"18","text":"ELK"},"typeID":"TextInput","w":"115","x":"147","y":"846","zOrder":"150"},{"ID":"350","measuredH":"32","measuredW":"77","properties":{"align":"center","color":"15658734","size":"18","text":"Graylog"},"typeID":"TextInput","w":"115","x":"148","y":"883","zOrder":"151"},{"ID":"351","measuredH":"32","measuredW":"70","properties":{"align":"center","color":"15658734","size":"18","text":"Splunk"},"typeID":"TextInput","w":"115","x":"148","y":"919","zOrder":"152"},{"ID":"352","h":"22","measuredH":"21","measuredW":"90","properties":{"color":"2848996","curvature":"1","direction":"top","leftArrow":"true","p0":{"length":0,"x":0,"y":0},"p1":{"length":0.4754473734474015,"x":0.47438524590163944,"y":0.031762295081967214},"p2":{"length":92.41753080449618,"x":90,"y":21},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"91","x":"269","y":"827","zOrder":"153"},{"ID":"353","h":"9","measuredH":"8","measuredW":"86","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":8},"p1":{"x":0.47438524590163944,"y":0.031762295081967214},"p2":{"x":86,"y":1},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"87","x":"267","y":"857","zOrder":"154"},{"ID":"354","h":"24","measuredH":"23","measuredW":"84","properties":{"color":"2848996","curvature":"-1","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":23},"p1":{"x":0.47438524590163944,"y":0.03176229508196722},"p2":{"x":84,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"85","x":"266","y":"875","zOrder":"155"},{"ID":"355","h":"54","measuredH":"53","measuredW":"96","properties":{"color":"2848996","curvature":"1","direction":"bottom","leftArrow":"true","p0":{"x":0,"y":53},"p1":{"x":0.5139593094153135,"y":-0.07566908414094088},"p2":{"x":96,"y":0},"rightArrow":"false","shape":"bezier"},"typeID":"Arrow","w":"97","x":"267","y":"884","zOrder":"156"}]},"measuredH":"1731","measuredW":"1474","mockupH":"1715","mockupW":"1360","version":"1.0"}}
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "0",
+                    "typeID": "Label",
+                    "zOrder": "0",
+                    "measuredW": "118",
+                    "measuredH": "40",
+                    "x": "652",
+                    "y": "124",
+                    "properties": {
+                        "bold": "true",
+                        "size": "32",
+                        "text": "DevOps"
+                    }
+                },
+                {
+                    "ID": "1",
+                    "typeID": "Arrow",
+                    "zOrder": "1",
+                    "w": "13",
+                    "h": "105",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "731",
+                    "y": "16",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 2,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.46601941747572806,
+                            "y": 0.10679611650485436
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 104
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Arrow",
+                    "zOrder": "2",
+                    "w": "11",
+                    "h": "147",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "715",
+                    "y": "180",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4251067223342871,
+                            "y": 0.06558146080592954
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 146
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "Arrow",
+                    "zOrder": "3",
+                    "w": "58",
+                    "h": "475",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "715",
+                    "y": "336",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5501641704563411,
+                            "y": -0.03968184292311207
+                        },
+                        "p2": {
+                            "x": 57,
+                            "y": 474
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "4",
+                    "typeID": "Icon",
+                    "zOrder": "4",
+                    "measuredW": "48",
+                    "measuredH": "48",
+                    "x": "691",
+                    "y": "312",
+                    "properties": {
+                        "color": "2848996",
+                        "icon": {
+                            "ID": "circle",
+                            "size": "large"
+                        }
+                    }
+                },
+                {
+                    "ID": "5",
+                    "typeID": "Arrow",
+                    "zOrder": "5",
+                    "w": "158",
+                    "h": "44",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "558",
+                    "y": "299",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4809722749715154,
+                            "y": -0.1100645651348272
+                        },
+                        "p2": {
+                            "x": 157,
+                            "y": 41
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "typeID": "TextInput",
+                    "zOrder": "6",
+                    "w": "123",
+                    "measuredW": "50",
+                    "measuredH": "32",
+                    "x": "391",
+                    "y": "163",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Unix"
+                    }
+                },
+                {
+                    "ID": "7",
+                    "typeID": "TextInput",
+                    "zOrder": "7",
+                    "w": "106",
+                    "measuredW": "57",
+                    "measuredH": "32",
+                    "x": "269",
+                    "y": "164",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Linux"
+                    }
+                },
+                {
+                    "ID": "8",
+                    "typeID": "Arrow",
+                    "zOrder": "8",
+                    "w": "42",
+                    "h": "68",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "426",
+                    "y": "205",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4570883894856472,
+                            "y": -0.16801701066832864
+                        },
+                        "p2": {
+                            "x": 41,
+                            "y": 67
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "9",
+                    "typeID": "TextInput",
+                    "zOrder": "9",
+                    "w": "168",
+                    "measuredW": "163",
+                    "measuredH": "32",
+                    "x": "468",
+                    "y": "264",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Operating System"
+                    }
+                },
+                {
+                    "ID": "10",
+                    "typeID": "Arrow",
+                    "zOrder": "10",
+                    "w": "138",
+                    "h": "79",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "331",
+                    "y": "203",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4570883894856472,
+                            "y": -0.1680170106683286
+                        },
+                        "p2": {
+                            "x": 137,
+                            "y": 78
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "11",
+                    "typeID": "Arrow",
+                    "zOrder": "11",
+                    "w": "178",
+                    "h": "68",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "719",
+                    "y": "269",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 177,
+                            "y": 36
+                        },
+                        "p1": {
+                            "x": 0.4168473211520594,
+                            "y": -0.2650975534221121
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 67
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "12",
+                    "typeID": "TextInput",
+                    "zOrder": "12",
+                    "w": "168",
+                    "measuredW": "61",
+                    "measuredH": "32",
+                    "x": "862",
+                    "y": "309",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Cloud"
+                    }
+                },
+                {
+                    "ID": "13",
+                    "typeID": "Arrow",
+                    "zOrder": "13",
+                    "w": "83",
+                    "h": "50",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "971",
+                    "y": "340",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 82,
+                            "y": 44
+                        },
+                        "p1": {
+                            "x": 0.5978750804893754,
+                            "y": 0.32034771410173857
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "14",
+                    "typeID": "TextInput",
+                    "zOrder": "14",
+                    "w": "182",
+                    "measuredW": "106",
+                    "measuredH": "32",
+                    "x": "1055",
+                    "y": "368",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Rackspace"
+                    }
+                },
+                {
+                    "ID": "15",
+                    "typeID": "Arrow",
+                    "zOrder": "15",
+                    "w": "99",
+                    "h": "88",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "954",
+                    "y": "343",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 98,
+                            "y": 80
+                        },
+                        "p1": {
+                            "x": 0.4653531598513011,
+                            "y": 0.3410408921933086
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "16",
+                    "typeID": "TextInput",
+                    "zOrder": "16",
+                    "w": "182",
+                    "measuredW": "53",
+                    "measuredH": "32",
+                    "x": "1055",
+                    "y": "407",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "AWS"
+                    }
+                },
+                {
+                    "ID": "17",
+                    "typeID": "Arrow",
+                    "zOrder": "17",
+                    "w": "124",
+                    "h": "120",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "928",
+                    "y": "342",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 123,
+                            "y": 117
+                        },
+                        "p1": {
+                            "x": 0.4960627165505897,
+                            "y": 0.3117978511181885
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "18",
+                    "typeID": "TextInput",
+                    "zOrder": "18",
+                    "w": "182",
+                    "measuredW": "71",
+                    "measuredH": "32",
+                    "x": "1055",
+                    "y": "444",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Heroku"
+                    }
+                },
+                {
+                    "ID": "19",
+                    "typeID": "TextInput",
+                    "zOrder": "19",
+                    "w": "184",
+                    "measuredW": "63",
+                    "measuredH": "32",
+                    "x": "1053",
+                    "y": "482",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Azure"
+                    }
+                },
+                {
+                    "ID": "20",
+                    "typeID": "Arrow",
+                    "zOrder": "20",
+                    "w": "147",
+                    "h": "156",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "903",
+                    "y": "342",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 146,
+                            "y": 155
+                        },
+                        "p1": {
+                            "x": 0.4960627165505897,
+                            "y": 0.3117978511181885
+                        },
+                        "p2": {
+                            "x": 4,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "21",
+                    "typeID": "TextInput",
+                    "zOrder": "21",
+                    "w": "182",
+                    "measuredW": "166",
+                    "measuredH": "29",
+                    "x": "1054",
+                    "y": "519",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "15",
+                        "text": "Google Cloud Platform"
+                    }
+                },
+                {
+                    "ID": "22",
+                    "typeID": "Arrow",
+                    "zOrder": "22",
+                    "w": "166",
+                    "h": "193",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "884",
+                    "y": "343",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 165,
+                            "y": 192
+                        },
+                        "p1": {
+                            "x": 0.4960627165505896,
+                            "y": 0.3117978511181884
+                        },
+                        "p2": {
+                            "x": 7,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "23",
+                    "typeID": "TextInput",
+                    "zOrder": "23",
+                    "w": "168",
+                    "measuredW": "104",
+                    "measuredH": "32",
+                    "x": "421",
+                    "y": "423",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Automation"
+                    }
+                },
+                {
+                    "ID": "24",
+                    "typeID": "Arrow",
+                    "zOrder": "24",
+                    "w": "123",
+                    "h": "103",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "592",
+                    "y": "336",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 102
+                        },
+                        "p1": {
+                            "x": 0.36800437796424645,
+                            "y": -0.11087194454578624
+                        },
+                        "p2": {
+                            "x": 122,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "25",
+                    "typeID": "TextInput",
+                    "zOrder": "25",
+                    "w": "116",
+                    "measuredW": "53",
+                    "measuredH": "32",
+                    "x": "239",
+                    "y": "514",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Chef"
+                    }
+                },
+                {
+                    "ID": "26",
+                    "typeID": "TextInput",
+                    "zOrder": "26",
+                    "w": "116",
+                    "measuredW": "73",
+                    "measuredH": "32",
+                    "x": "361",
+                    "y": "514",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Ansible"
+                    }
+                },
+                {
+                    "ID": "27",
+                    "typeID": "TextInput",
+                    "zOrder": "27",
+                    "w": "101",
+                    "measuredW": "72",
+                    "measuredH": "32",
+                    "x": "483",
+                    "y": "514",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Puppet"
+                    }
+                },
+                {
+                    "ID": "28",
+                    "typeID": "Arrow",
+                    "zOrder": "28",
+                    "w": "128",
+                    "h": "66",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "292",
+                    "y": "444",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 65
+                        },
+                        "p1": {
+                            "x": 0.4645604016027265,
+                            "y": 0.1022428959609447
+                        },
+                        "p2": {
+                            "x": 127,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "29",
+                    "typeID": "Arrow",
+                    "zOrder": "29",
+                    "w": "14",
+                    "h": "58",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "439",
+                    "y": "458",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 57
+                        },
+                        "p1": {
+                            "x": 0.526916325336454,
+                            "y": -0.0026331187829139848
+                        },
+                        "p2": {
+                            "x": 13,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "30",
+                    "typeID": "Arrow",
+                    "zOrder": "30",
+                    "w": "2",
+                    "h": "60",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "518",
+                    "y": "455",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 59
+                        },
+                        "p1": {
+                            "x": 0.5083285468121769,
+                            "y": -0.00861573808156232
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "31",
+                    "typeID": "TextInput",
+                    "zOrder": "31",
+                    "w": "168",
+                    "measuredW": "78",
+                    "measuredH": "32",
+                    "x": "803",
+                    "y": "586",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "CI / CD"
+                    }
+                },
+                {
+                    "ID": "32",
+                    "typeID": "Arrow",
+                    "zOrder": "32",
+                    "w": "121",
+                    "h": "237",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "724",
+                    "y": "346",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 120,
+                            "y": 236
+                        },
+                        "p1": {
+                            "x": 0.3964277562200411,
+                            "y": -0.0786920794339192
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier",
+                        "text": ""
+                    }
+                },
+                {
+                    "ID": "33",
+                    "typeID": "Arrow",
+                    "zOrder": "33",
+                    "w": "90",
+                    "h": "20",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "939",
+                    "y": "620",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 89,
+                            "y": 16
+                        },
+                        "p1": {
+                            "x": 0.670906200317965,
+                            "y": 0.14308426073131955
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "34",
+                    "typeID": "TextInput",
+                    "zOrder": "34",
+                    "w": "182",
+                    "measuredW": "77",
+                    "measuredH": "32",
+                    "x": "1032",
+                    "y": "618",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Jenkins"
+                    }
+                },
+                {
+                    "ID": "35",
+                    "typeID": "TextInput",
+                    "zOrder": "35",
+                    "w": "184",
+                    "measuredW": "63",
+                    "measuredH": "32",
+                    "x": "1030",
+                    "y": "656",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Travis"
+                    }
+                },
+                {
+                    "ID": "36",
+                    "typeID": "TextInput",
+                    "zOrder": "36",
+                    "w": "182",
+                    "measuredW": "79",
+                    "measuredH": "32",
+                    "x": "1031",
+                    "y": "693",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "CircleCI"
+                    }
+                },
+                {
+                    "ID": "37",
+                    "typeID": "Arrow",
+                    "zOrder": "37",
+                    "w": "125",
+                    "h": "54",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "903",
+                    "y": "618",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 124,
+                            "y": 50
+                        },
+                        "p1": {
+                            "x": 0.6424255985679123,
+                            "y": 0.22678451555157753
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "38",
+                    "typeID": "Arrow",
+                    "zOrder": "38",
+                    "w": "146",
+                    "h": "92",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "884",
+                    "y": "619",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 145,
+                            "y": 90
+                        },
+                        "p1": {
+                            "x": 0.590366687383468,
+                            "y": 0.2617775015537601
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "39",
+                    "typeID": "TextInput",
+                    "zOrder": "39",
+                    "w": "182",
+                    "measuredW": "62",
+                    "measuredH": "32",
+                    "x": "1032",
+                    "y": "732",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Drone"
+                    }
+                },
+                {
+                    "ID": "40",
+                    "typeID": "TextInput",
+                    "zOrder": "40",
+                    "w": "182",
+                    "measuredW": "79",
+                    "measuredH": "32",
+                    "x": "1033",
+                    "y": "769",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Bamboo"
+                    }
+                },
+                {
+                    "ID": "41",
+                    "typeID": "Arrow",
+                    "zOrder": "41",
+                    "w": "168",
+                    "h": "129",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "861",
+                    "y": "619",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 167,
+                            "y": 128
+                        },
+                        "p1": {
+                            "x": 0.590366687383468,
+                            "y": 0.2617775015537601
+                        },
+                        "p2": {
+                            "x": 2,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "42",
+                    "typeID": "Arrow",
+                    "zOrder": "42",
+                    "w": "201",
+                    "h": "165",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "831",
+                    "y": "619",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 200,
+                            "y": 164
+                        },
+                        "p1": {
+                            "x": 0.5903666873834679,
+                            "y": 0.2617775015537602
+                        },
+                        "p2": {
+                            "x": 3,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "43",
+                    "typeID": "Icon",
+                    "zOrder": "43",
+                    "measuredW": "48",
+                    "measuredH": "48",
+                    "x": "749",
+                    "y": "795",
+                    "properties": {
+                        "color": "2848996",
+                        "icon": {
+                            "ID": "circle",
+                            "size": "large"
+                        }
+                    }
+                },
+                {
+                    "ID": "44",
+                    "typeID": "Arrow",
+                    "zOrder": "44",
+                    "w": "179",
+                    "h": "29",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "590",
+                    "y": "794",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.3805593199457928,
+                            "y": 0.009301466058888753
+                        },
+                        "p2": {
+                            "x": 178,
+                            "y": 28
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "45",
+                    "typeID": "TextInput",
+                    "zOrder": "45",
+                    "w": "230",
+                    "measuredW": "206",
+                    "measuredH": "32",
+                    "x": "355",
+                    "y": "775",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Monitoring and Alerting"
+                    }
+                },
+                {
+                    "ID": "46",
+                    "typeID": "TextInput",
+                    "zOrder": "46",
+                    "w": "101",
+                    "measuredW": "69",
+                    "measuredH": "32",
+                    "x": "154",
+                    "y": "709",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Nagios"
+                    }
+                },
+                {
+                    "ID": "47",
+                    "typeID": "TextInput",
+                    "zOrder": "47",
+                    "w": "101",
+                    "measuredW": "100",
+                    "measuredH": "32",
+                    "x": "231",
+                    "y": "576",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "PagerDuty"
+                    }
+                },
+                {
+                    "ID": "48",
+                    "typeID": "TextInput",
+                    "zOrder": "48",
+                    "w": "101",
+                    "measuredW": "82",
+                    "measuredH": "32",
+                    "x": "460",
+                    "y": "576",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Graphite"
+                    }
+                },
+                {
+                    "ID": "49",
+                    "typeID": "TextInput",
+                    "zOrder": "49",
+                    "w": "115",
+                    "measuredW": "111",
+                    "measuredH": "32",
+                    "x": "531",
+                    "y": "638",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Prometheus"
+                    }
+                },
+                {
+                    "ID": "50",
+                    "typeID": "TextInput",
+                    "zOrder": "50",
+                    "w": "141",
+                    "measuredW": "127",
+                    "measuredH": "32",
+                    "x": "114",
+                    "y": "759",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "AppDynamics"
+                    }
+                },
+                {
+                    "ID": "51",
+                    "typeID": "Arrow",
+                    "zOrder": "51",
+                    "w": "91",
+                    "h": "22",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "262",
+                    "y": "776",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.47438524590163944,
+                            "y": 0.03176229508196722
+                        },
+                        "p2": {
+                            "x": 90,
+                            "y": 21
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "52",
+                    "typeID": "Arrow",
+                    "zOrder": "52",
+                    "w": "92",
+                    "h": "43",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "263",
+                    "y": "740",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.49507591300779646,
+                            "y": 0.04021337710299548
+                        },
+                        "p2": {
+                            "x": 91,
+                            "y": 42
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "53",
+                    "typeID": "Arrow",
+                    "zOrder": "53",
+                    "w": "39",
+                    "h": "163",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "400",
+                    "y": "610",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5482477876106194,
+                            "y": -0.06428318584070783
+                        },
+                        "p2": {
+                            "x": 38,
+                            "y": 162
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "54",
+                    "typeID": "Arrow",
+                    "zOrder": "54",
+                    "w": "30",
+                    "h": "159",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "502",
+                    "y": "615",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5482477876106193,
+                            "y": -0.06428318584070793
+                        },
+                        "p2": {
+                            "x": 29,
+                            "y": 158
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "55",
+                    "typeID": "Arrow",
+                    "zOrder": "55",
+                    "w": "8",
+                    "h": "103",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "563",
+                    "y": "674",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5934629929767694,
+                            "y": -0.03484602917341978
+                        },
+                        "p2": {
+                            "x": 7,
+                            "y": 102
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "56",
+                    "typeID": "Arrow",
+                    "zOrder": "56",
+                    "w": "166",
+                    "h": "79",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "778",
+                    "y": "811",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 165,
+                            "y": 78
+                        },
+                        "p1": {
+                            "x": 0.49148815671119694,
+                            "y": -0.22077489422660493
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 10
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "57",
+                    "typeID": "TextInput",
+                    "zOrder": "57",
+                    "w": "116",
+                    "measuredW": "94",
+                    "measuredH": "32",
+                    "x": "148",
+                    "y": "449",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "SaltStack"
+                    }
+                },
+                {
+                    "ID": "58",
+                    "typeID": "Arrow",
+                    "zOrder": "58",
+                    "w": "146",
+                    "h": "29",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "276",
+                    "y": "433",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 28.51103198528034
+                        },
+                        "p1": {
+                            "x": 0.4009012805068381,
+                            "y": 0.023332046153599174
+                        },
+                        "p2": {
+                            "x": 146.33333333333331,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "59",
+                    "typeID": "TextInput",
+                    "zOrder": "59",
+                    "w": "116",
+                    "measuredW": "69",
+                    "measuredH": "32",
+                    "x": "185",
+                    "y": "368",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Packer"
+                    }
+                },
+                {
+                    "ID": "60",
+                    "typeID": "Arrow",
+                    "zOrder": "60",
+                    "w": "145",
+                    "h": "68",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "302",
+                    "y": "346",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0.19283790167659495
+                        },
+                        "p1": {
+                            "x": 0.4235225542717401,
+                            "y": 0.09456679102949925
+                        },
+                        "p2": {
+                            "x": 145.33333333333326,
+                            "y": 68.37803669761603
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "61",
+                    "typeID": "TextInput",
+                    "zOrder": "61",
+                    "w": "168",
+                    "measuredW": "103",
+                    "measuredH": "32",
+                    "x": "919",
+                    "y": "892",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Containers"
+                    }
+                },
+                {
+                    "ID": "62",
+                    "typeID": "TextInput",
+                    "zOrder": "62",
+                    "w": "182",
+                    "measuredW": "71",
+                    "measuredH": "32",
+                    "x": "1124",
+                    "y": "822",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Docker"
+                    }
+                },
+                {
+                    "ID": "63",
+                    "typeID": "Arrow",
+                    "zOrder": "63",
+                    "w": "104",
+                    "h": "55",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1014",
+                    "y": "836",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 103,
+                            "y": 2
+                        },
+                        "p1": {
+                            "x": 0.4799819725080749,
+                            "y": -0.16465109291669797
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 54
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "64",
+                    "typeID": "TextInput",
+                    "zOrder": "64",
+                    "w": "182",
+                    "measuredW": "115",
+                    "measuredH": "32",
+                    "x": "1054",
+                    "y": "555",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Digitalocean"
+                    }
+                },
+                {
+                    "ID": "65",
+                    "typeID": "Arrow",
+                    "zOrder": "65",
+                    "w": "190",
+                    "h": "229",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "865",
+                    "y": "343",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 189,
+                            "y": 228
+                        },
+                        "p1": {
+                            "x": 0.4815004659832246,
+                            "y": 0.28685927306616965
+                        },
+                        "p2": {
+                            "x": 5,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "66",
+                    "typeID": "Arrow",
+                    "zOrder": "66",
+                    "w": "90",
+                    "h": "842",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "774",
+                    "y": "821",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 36,
+                            "y": 841
+                        },
+                        "p1": {
+                            "x": 0.3964277562200411,
+                            "y": -0.07869207943391922
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier",
+                        "text": ""
+                    }
+                },
+                {
+                    "ID": "67",
+                    "typeID": "Icon",
+                    "zOrder": "67",
+                    "measuredW": "48",
+                    "measuredH": "48",
+                    "x": "782",
+                    "y": "1683",
+                    "properties": {
+                        "color": "2848996",
+                        "icon": {
+                            "ID": "flag-checkered",
+                            "size": "large"
+                        }
+                    }
+                },
+                {
+                    "ID": "68",
+                    "typeID": "TextInput",
+                    "zOrder": "68",
+                    "w": "182",
+                    "measuredW": "37",
+                    "measuredH": "32",
+                    "x": "1124",
+                    "y": "859",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "rkt"
+                    }
+                },
+                {
+                    "ID": "69",
+                    "typeID": "Arrow",
+                    "zOrder": "69",
+                    "w": "82",
+                    "h": "17",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1041",
+                    "y": "875",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 81,
+                            "y": 1
+                        },
+                        "p1": {
+                            "x": 0.6511936339522546,
+                            "y": -0.08355437665782496
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 16
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "70",
+                    "typeID": "TextInput",
+                    "zOrder": "70",
+                    "w": "168",
+                    "measuredW": "161",
+                    "measuredH": "32",
+                    "x": "442",
+                    "y": "961",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Cluster Managers"
+                    }
+                },
+                {
+                    "ID": "71",
+                    "typeID": "Arrow",
+                    "zOrder": "71",
+                    "w": "156",
+                    "h": "153",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "613",
+                    "y": "821",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 152
+                        },
+                        "p1": {
+                            "x": 0.34836852207293667,
+                            "y": -0.13339731285988485
+                        },
+                        "p2": {
+                            "x": 155,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "72",
+                    "typeID": "Arrow",
+                    "zOrder": "72",
+                    "w": "106",
+                    "h": "12",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "338",
+                    "y": "967",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 11
+                        },
+                        "p1": {
+                            "x": 0.5613096317794304,
+                            "y": 0.0624886631598041
+                        },
+                        "p2": {
+                            "x": 105,
+                            "y": 5
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "73",
+                    "typeID": "TextInput",
+                    "zOrder": "73",
+                    "w": "182",
+                    "measuredW": "108",
+                    "measuredH": "32",
+                    "x": "152",
+                    "y": "964",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Kubernetes"
+                    }
+                },
+                {
+                    "ID": "74",
+                    "typeID": "Arrow",
+                    "zOrder": "74",
+                    "w": "105",
+                    "h": "29",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "341",
+                    "y": "991",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 28
+                        },
+                        "p1": {
+                            "x": 0.5482477876106191,
+                            "y": -0.0642831858407078
+                        },
+                        "p2": {
+                            "x": 104,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "75",
+                    "typeID": "TextInput",
+                    "zOrder": "75",
+                    "w": "182",
+                    "measuredW": "113",
+                    "measuredH": "32",
+                    "x": "152",
+                    "y": "1004",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Mesosphere"
+                    }
+                },
+                {
+                    "ID": "76",
+                    "typeID": "TextInput",
+                    "zOrder": "76",
+                    "w": "182",
+                    "measuredW": "67",
+                    "measuredH": "32",
+                    "x": "152",
+                    "y": "1043",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Mesos"
+                    }
+                },
+                {
+                    "ID": "77",
+                    "typeID": "Arrow",
+                    "zOrder": "77",
+                    "w": "128",
+                    "h": "59",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "337",
+                    "y": "994",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 58
+                        },
+                        "p1": {
+                            "x": 0.5482477876106192,
+                            "y": -0.06428318584070777
+                        },
+                        "p2": {
+                            "x": 127,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "78",
+                    "typeID": "TextInput",
+                    "zOrder": "78",
+                    "w": "182",
+                    "measuredW": "133",
+                    "measuredH": "32",
+                    "x": "244",
+                    "y": "1083",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Docker Swarm"
+                    }
+                },
+                {
+                    "ID": "79",
+                    "typeID": "Arrow",
+                    "zOrder": "79",
+                    "w": "66",
+                    "h": "89",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "421",
+                    "y": "996",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 88
+                        },
+                        "p1": {
+                            "x": 0.6482871125611747,
+                            "y": -0.09004893964110934
+                        },
+                        "p2": {
+                            "x": 65,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "80",
+                    "typeID": "TextInput",
+                    "zOrder": "80",
+                    "w": "182",
+                    "measuredW": "71",
+                    "measuredH": "32",
+                    "x": "453",
+                    "y": "1083",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Nomad"
+                    }
+                },
+                {
+                    "ID": "81",
+                    "typeID": "Arrow",
+                    "zOrder": "81",
+                    "w": "11",
+                    "h": "86",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "522",
+                    "y": "996",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 85
+                        },
+                        "p1": {
+                            "x": 0.6420077749828493,
+                            "y": -0.11719643265492792
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "82",
+                    "typeID": "Arrow",
+                    "zOrder": "82",
+                    "w": "166",
+                    "h": "119",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "303",
+                    "y": "302",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 1
+                        },
+                        "p1": {
+                            "x": 0.4837905236907732,
+                            "y": 0.17581047381546133
+                        },
+                        "p2": {
+                            "x": 165,
+                            "y": 118
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "83",
+                    "typeID": "TextInput",
+                    "zOrder": "83",
+                    "w": "116",
+                    "measuredW": "93",
+                    "measuredH": "32",
+                    "x": "185",
+                    "y": "287",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Terraform"
+                    }
+                },
+                {
+                    "ID": "84",
+                    "typeID": "TextInput",
+                    "zOrder": "84",
+                    "w": "163",
+                    "measuredW": "161",
+                    "measuredH": "29",
+                    "x": "475",
+                    "y": "359",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "15",
+                        "text": "AWS Cloud Formation"
+                    }
+                },
+                {
+                    "ID": "85",
+                    "typeID": "Arrow",
+                    "zOrder": "85",
+                    "w": "5",
+                    "h": "33",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "526",
+                    "y": "390",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 32
+                        },
+                        "p1": {
+                            "x": 0.508328546812177,
+                            "y": -0.008615738081562331
+                        },
+                        "p2": {
+                            "x": 4,
+                            "y": 0
+                        },
+                        "rightArrow": "true",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "86",
+                    "typeID": "Arrow",
+                    "zOrder": "86",
+                    "w": "74",
+                    "h": "399",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "699",
+                    "y": "821",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 398
+                        },
+                        "p1": {
+                            "x": 0.34351657882039666,
+                            "y": -0.009857511924902128
+                        },
+                        "p2": {
+                            "x": 73,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "87",
+                    "typeID": "TextInput",
+                    "zOrder": "87",
+                    "w": "159",
+                    "measuredW": "155",
+                    "measuredH": "32",
+                    "x": "567",
+                    "y": "1223",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Love for Terminal"
+                    }
+                },
+                {
+                    "ID": "88",
+                    "typeID": "Arrow",
+                    "zOrder": "88",
+                    "w": "91",
+                    "h": "40",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "476",
+                    "y": "1240",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 39
+                        },
+                        "p1": {
+                            "x": 0.5247895229186157,
+                            "y": 0.005924540068599915
+                        },
+                        "p2": {
+                            "x": 90,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "89",
+                    "typeID": "TextInput",
+                    "zOrder": "89",
+                    "w": "136",
+                    "measuredW": "118",
+                    "measuredH": "32",
+                    "x": "338",
+                    "y": "1261",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Bash Scripts"
+                    }
+                },
+                {
+                    "ID": "90",
+                    "typeID": "Arrow",
+                    "zOrder": "90",
+                    "w": "106",
+                    "h": "66",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "476",
+                    "y": "1255",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 65
+                        },
+                        "p1": {
+                            "x": 0.5287804878048781,
+                            "y": -0.07902439024390241
+                        },
+                        "p2": {
+                            "x": 105,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "91",
+                    "typeID": "TextInput",
+                    "zOrder": "91",
+                    "w": "136",
+                    "measuredW": "105",
+                    "measuredH": "32",
+                    "x": "337",
+                    "y": "1304",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Vim / Nano"
+                    }
+                },
+                {
+                    "ID": "92",
+                    "typeID": "Arrow",
+                    "zOrder": "92",
+                    "w": "132",
+                    "h": "110",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "483",
+                    "y": "1256",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 109
+                        },
+                        "p1": {
+                            "x": 0.5287804878048781,
+                            "y": -0.0790243902439025
+                        },
+                        "p2": {
+                            "x": 131,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "93",
+                    "typeID": "TextInput",
+                    "zOrder": "93",
+                    "w": "138",
+                    "measuredW": "120",
+                    "measuredH": "32",
+                    "x": "909",
+                    "y": "961",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Web Servers"
+                    }
+                },
+                {
+                    "ID": "94",
+                    "typeID": "Arrow",
+                    "zOrder": "94",
+                    "w": "128",
+                    "h": "138",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "787",
+                    "y": "823",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 127,
+                            "y": 137
+                        },
+                        "p1": {
+                            "x": 0.48035560653857184,
+                            "y": -0.1241755090335533
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "95",
+                    "typeID": "TextInput",
+                    "zOrder": "95",
+                    "w": "182",
+                    "measuredW": "75",
+                    "measuredH": "32",
+                    "x": "1105",
+                    "y": "946",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Apache"
+                    }
+                },
+                {
+                    "ID": "96",
+                    "typeID": "Arrow",
+                    "zOrder": "96",
+                    "w": "58",
+                    "h": "11",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1047",
+                    "y": "962",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 57,
+                            "y": 2
+                        },
+                        "p1": {
+                            "x": 0.4965288258376094,
+                            "y": -0.08723211590703289
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 10
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "97",
+                    "typeID": "TextInput",
+                    "zOrder": "97",
+                    "w": "182",
+                    "measuredW": "60",
+                    "measuredH": "32",
+                    "x": "1106",
+                    "y": "982",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Nginx"
+                    }
+                },
+                {
+                    "ID": "98",
+                    "typeID": "Arrow",
+                    "zOrder": "98",
+                    "w": "59",
+                    "h": "21",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1047",
+                    "y": "981",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 58,
+                            "y": 20
+                        },
+                        "p1": {
+                            "x": 0.4070138150903294,
+                            "y": 0.019659936238044632
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "99",
+                    "typeID": "VCurly",
+                    "zOrder": "99",
+                    "w": "180",
+                    "h": "185",
+                    "measuredW": "180",
+                    "measuredH": "140",
+                    "x": "1294",
+                    "y": "940",
+                    "properties": {
+                        "text": "Differences and when to use what"
+                    }
+                },
+                {
+                    "ID": "100",
+                    "typeID": "TextInput",
+                    "zOrder": "100",
+                    "w": "447",
+                    "measuredW": "317",
+                    "measuredH": "32",
+                    "x": "993",
+                    "y": "1236",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Setting up a Reverse Proxy (Nginx ..)"
+                    }
+                },
+                {
+                    "ID": "101",
+                    "typeID": "TextInput",
+                    "zOrder": "101",
+                    "w": "182",
+                    "measuredW": "74",
+                    "measuredH": "32",
+                    "x": "1105",
+                    "y": "1020",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Tomcat"
+                    }
+                },
+                {
+                    "ID": "102",
+                    "typeID": "Arrow",
+                    "zOrder": "102",
+                    "w": "62",
+                    "h": "48",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1045",
+                    "y": "991",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 61,
+                            "y": 47
+                        },
+                        "p1": {
+                            "x": 0.5247892074198989,
+                            "y": 0.19123102866779093
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "103",
+                    "typeID": "TextInput",
+                    "zOrder": "103",
+                    "w": "182",
+                    "measuredW": "38",
+                    "measuredH": "32",
+                    "x": "1106",
+                    "y": "1058",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "IIS"
+                    }
+                },
+                {
+                    "ID": "104",
+                    "typeID": "Arrow",
+                    "zOrder": "104",
+                    "w": "79",
+                    "h": "79",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1028",
+                    "y": "995",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 78,
+                            "y": 78
+                        },
+                        "p1": {
+                            "x": 0.44230769230769235,
+                            "y": 0.1858974358974359
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "105",
+                    "typeID": "Icon",
+                    "zOrder": "105",
+                    "measuredW": "48",
+                    "measuredH": "48",
+                    "x": "831",
+                    "y": "1220",
+                    "properties": {
+                        "color": "2848996",
+                        "icon": {
+                            "ID": "circle",
+                            "size": "large"
+                        }
+                    }
+                },
+                {
+                    "ID": "106",
+                    "typeID": "Arrow",
+                    "zOrder": "106",
+                    "w": "140",
+                    "h": "10",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "857",
+                    "y": "1244",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 138,
+                            "y": 8
+                        },
+                        "p1": {
+                            "x": 0.5,
+                            "y": 0
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "107",
+                    "typeID": "TextInput",
+                    "zOrder": "107",
+                    "w": "446",
+                    "measuredW": "364",
+                    "measuredH": "32",
+                    "x": "993",
+                    "y": "1272",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Setting up caching Server (Squid, Nginx ..)"
+                    }
+                },
+                {
+                    "ID": "108",
+                    "typeID": "Arrow",
+                    "zOrder": "108",
+                    "w": "128",
+                    "h": "36",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "867",
+                    "y": "1254",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 127,
+                            "y": 35
+                        },
+                        "p1": {
+                            "x": 0.5710499020398756,
+                            "y": 0.07076178402673736
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "109",
+                    "typeID": "TextInput",
+                    "zOrder": "109",
+                    "w": "444",
+                    "measuredW": "386",
+                    "measuredH": "32",
+                    "x": "994",
+                    "y": "1310",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Setting up a load balancer (HAProxy, Nginx ..)"
+                    }
+                },
+                {
+                    "ID": "110",
+                    "typeID": "Arrow",
+                    "zOrder": "110",
+                    "w": "127",
+                    "h": "72",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "866",
+                    "y": "1255",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 126,
+                            "y": 71
+                        },
+                        "p1": {
+                            "x": 0.5375099057849784,
+                            "y": 0.14083824953773005
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "111",
+                    "typeID": "TextInput",
+                    "zOrder": "111",
+                    "w": "550",
+                    "measuredW": "535",
+                    "measuredH": "32",
+                    "x": "140",
+                    "y": "1145",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Compiling apps from source (gcc, make and other related stuff)"
+                    }
+                },
+                {
+                    "ID": "112",
+                    "typeID": "Arrow",
+                    "zOrder": "112",
+                    "w": "136",
+                    "h": "112",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "859",
+                    "y": "1256",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 135,
+                            "y": 111
+                        },
+                        "p1": {
+                            "x": 0.5375099057849785,
+                            "y": 0.14083824953773005
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "113",
+                    "typeID": "TextInput",
+                    "zOrder": "113",
+                    "w": "447",
+                    "measuredW": "333",
+                    "measuredH": "32",
+                    "x": "993",
+                    "y": "1199",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Knowledge about different file systems"
+                    }
+                },
+                {
+                    "ID": "114",
+                    "typeID": "TextInput",
+                    "zOrder": "114",
+                    "w": "447",
+                    "measuredW": "339",
+                    "measuredH": "32",
+                    "x": "993",
+                    "y": "1164",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "OSI Model. TCP/IP/UDP Common ports"
+                    }
+                },
+                {
+                    "ID": "115",
+                    "typeID": "Arrow",
+                    "zOrder": "115",
+                    "w": "130",
+                    "h": "27",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "864",
+                    "y": "1214",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 129,
+                            "y": 1
+                        },
+                        "p1": {
+                            "x": 0.5491329479768786,
+                            "y": -0.06936416184971098
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 26
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "116",
+                    "typeID": "Arrow",
+                    "zOrder": "116",
+                    "w": "130",
+                    "h": "57",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "860",
+                    "y": "1178",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 129,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5491329479768786,
+                            "y": -0.06936416184971089
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 56
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "117",
+                    "typeID": "Arrow",
+                    "zOrder": "117",
+                    "w": "158",
+                    "h": "56",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "407",
+                    "y": "1176",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.3992980660256645,
+                            "y": -0.16711146857748693
+                        },
+                        "p2": {
+                            "x": 157,
+                            "y": 52
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "118",
+                    "typeID": "TextInput",
+                    "zOrder": "118",
+                    "w": "439",
+                    "measuredW": "177",
+                    "measuredH": "32",
+                    "x": "999",
+                    "y": "1345",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Setting up a firewall"
+                    }
+                },
+                {
+                    "ID": "119",
+                    "typeID": "TextInput",
+                    "zOrder": "119",
+                    "w": "166",
+                    "measuredW": "156",
+                    "measuredH": "32",
+                    "x": "315",
+                    "y": "1348",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Commands/Tools"
+                    }
+                },
+                {
+                    "ID": "120",
+                    "typeID": "Arrow",
+                    "zOrder": "120",
+                    "w": "93",
+                    "h": "87",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "222",
+                    "y": "1365",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 1,
+                            "y": 86
+                        },
+                        "p1": {
+                            "x": 0.4916028285209192,
+                            "y": 0.27357100766057746
+                        },
+                        "p2": {
+                            "x": 92,
+                            "y": 1
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "121",
+                    "typeID": "TextArea",
+                    "zOrder": "121",
+                    "w": "185",
+                    "h": "132",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "143",
+                    "y": "1482",
+                    "properties": {
+                        "size": "17",
+                        "text": "awk, sed, grep, sort, uniq, cat, cut, echo, fmt, tr, nl, egrep, fgrep, wc ..etc"
+                    }
+                },
+                {
+                    "ID": "122",
+                    "typeID": "TextInput",
+                    "zOrder": "122",
+                    "w": "184",
+                    "measuredW": "156",
+                    "measuredH": "32",
+                    "x": "144",
+                    "y": "1455",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Text Manipulation"
+                    }
+                },
+                {
+                    "ID": "123",
+                    "typeID": "TextArea",
+                    "zOrder": "123",
+                    "w": "194",
+                    "h": "47",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "337",
+                    "y": "1479",
+                    "properties": {
+                        "size": "17",
+                        "text": "ps, top, htop, atop ..etc"
+                    }
+                },
+                {
+                    "ID": "124",
+                    "typeID": "TextInput",
+                    "zOrder": "124",
+                    "w": "194",
+                    "measuredW": "171",
+                    "measuredH": "32",
+                    "x": "338",
+                    "y": "1452",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Process Monitoring"
+                    }
+                },
+                {
+                    "ID": "125",
+                    "typeID": "TextArea",
+                    "zOrder": "125",
+                    "w": "196",
+                    "h": "55",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "337",
+                    "y": "1559",
+                    "properties": {
+                        "size": "17",
+                        "text": "nmon, iostat, sar, vmstat ..etc"
+                    }
+                },
+                {
+                    "ID": "126",
+                    "typeID": "TextInput",
+                    "zOrder": "126",
+                    "w": "194",
+                    "measuredW": "187",
+                    "measuredH": "32",
+                    "x": "338",
+                    "y": "1532",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "System Performance"
+                    }
+                },
+                {
+                    "ID": "127",
+                    "typeID": "TextArea",
+                    "zOrder": "127",
+                    "w": "194",
+                    "h": "135",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "540",
+                    "y": "1479",
+                    "properties": {
+                        "size": "17",
+                        "text": "nmap, tcpdump, ping, mtr, traceroute, airmon, airodump ..etc"
+                    }
+                },
+                {
+                    "ID": "128",
+                    "typeID": "TextInput",
+                    "zOrder": "128",
+                    "w": "194",
+                    "measuredW": "81",
+                    "measuredH": "32",
+                    "x": "541",
+                    "y": "1452",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Network"
+                    }
+                },
+                {
+                    "ID": "129",
+                    "typeID": "Arrow",
+                    "zOrder": "129",
+                    "w": "12",
+                    "h": "72",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "384",
+                    "y": "1380",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 8,
+                            "y": 71
+                        },
+                        "p1": {
+                            "x": 0.5098922624877571,
+                            "y": -0.09970617042115572
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "130",
+                    "typeID": "Arrow",
+                    "zOrder": "130",
+                    "w": "98",
+                    "h": "72",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "444",
+                    "y": "1382",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 97,
+                            "y": 71
+                        },
+                        "p1": {
+                            "x": 0.43017301038062294,
+                            "y": -0.0665743944636678
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "131",
+                    "typeID": "TextInput",
+                    "zOrder": "131",
+                    "w": "438",
+                    "measuredW": "472",
+                    "measuredH": "32",
+                    "x": "1002",
+                    "y": "1380",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "TLS, STARTTLS, SSL, HTTPS, SCP, SSH, SFTP, FTPS .."
+                    }
+                },
+                {
+                    "ID": "132",
+                    "typeID": "TextInput",
+                    "zOrder": "132",
+                    "w": "439",
+                    "measuredW": "432",
+                    "measuredH": "32",
+                    "x": "1002",
+                    "y": "1415",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Postmortem analysis when something bad happens"
+                    }
+                },
+                {
+                    "ID": "133",
+                    "typeID": "Arrow",
+                    "zOrder": "133",
+                    "w": "147",
+                    "h": "141",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "857",
+                    "y": "1255",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 146,
+                            "y": 140
+                        },
+                        "p1": {
+                            "x": 0.4908858561990645,
+                            "y": 0.18756329266528424
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "134",
+                    "typeID": "Arrow",
+                    "zOrder": "134",
+                    "w": "149",
+                    "h": "179",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "855",
+                    "y": "1255",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 148,
+                            "y": 178
+                        },
+                        "p1": {
+                            "x": 0.4908858561990649,
+                            "y": 0.18756329266528457
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "135",
+                    "typeID": "TextInput",
+                    "zOrder": "135",
+                    "w": "182",
+                    "measuredW": "66",
+                    "measuredH": "32",
+                    "x": "1106",
+                    "y": "1093",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Caddy"
+                    }
+                },
+                {
+                    "ID": "136",
+                    "typeID": "Arrow",
+                    "zOrder": "136",
+                    "w": "95",
+                    "h": "115",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1010",
+                    "y": "995",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 94,
+                            "y": 114
+                        },
+                        "p1": {
+                            "x": 0.44230769230769235,
+                            "y": 0.1858974358974359
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "137",
+                    "typeID": "TextInput",
+                    "zOrder": "137",
+                    "w": "182",
+                    "measuredW": "50",
+                    "measuredH": "32",
+                    "x": "1124",
+                    "y": "894",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "LXC"
+                    }
+                },
+                {
+                    "ID": "138",
+                    "typeID": "Arrow",
+                    "zOrder": "138",
+                    "w": "38",
+                    "h": "2",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1087",
+                    "y": "909",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 37,
+                            "y": 1
+                        },
+                        "p1": {
+                            "x": 0.578546712802768,
+                            "y": 0.015224913494809686
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "139",
+                    "typeID": "TextInput",
+                    "zOrder": "139",
+                    "w": "182",
+                    "measuredW": "132",
+                    "measuredH": "32",
+                    "x": "1055",
+                    "y": "331",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Cloud Foundry"
+                    }
+                },
+                {
+                    "ID": "140",
+                    "typeID": "Arrow",
+                    "zOrder": "140",
+                    "w": "62",
+                    "h": "18",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "995",
+                    "y": "339",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 61,
+                            "y": 4
+                        },
+                        "p1": {
+                            "x": 0.59004549103559,
+                            "y": 0.2518062617072518
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "141",
+                    "typeID": "TextInput",
+                    "zOrder": "141",
+                    "w": "103",
+                    "measuredW": "69",
+                    "measuredH": "32",
+                    "x": "606",
+                    "y": "683",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Zabbix"
+                    }
+                },
+                {
+                    "ID": "142",
+                    "typeID": "Arrow",
+                    "zOrder": "142",
+                    "w": "46",
+                    "h": "61",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "582",
+                    "y": "718",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 45,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5573333333333333,
+                            "y": 0.034666666666666665
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 60
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "143",
+                    "typeID": "TextInput",
+                    "zOrder": "143",
+                    "w": "101",
+                    "measuredW": "62",
+                    "measuredH": "32",
+                    "x": "348",
+                    "y": "576",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "Munin"
+                    }
+                },
+                {
+                    "ID": "144",
+                    "typeID": "Arrow",
+                    "zOrder": "144",
+                    "w": "115",
+                    "h": "163",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "280",
+                    "y": "613",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5402140672782875,
+                            "y": 0.039602446483180426
+                        },
+                        "p2": {
+                            "x": 114,
+                            "y": 162
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "145",
+                    "typeID": "TextInput",
+                    "zOrder": "145",
+                    "w": "101",
+                    "measuredW": "95",
+                    "measuredH": "32",
+                    "x": "154",
+                    "y": "650",
+                    "properties": {
+                        "align": "center",
+                        "color": "16770457",
+                        "size": "18",
+                        "text": "New Relic"
+                    }
+                },
+                {
+                    "ID": "146",
+                    "typeID": "Arrow",
+                    "zOrder": "146",
+                    "w": "106",
+                    "h": "87",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "262",
+                    "y": "687",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4950759130077962,
+                            "y": 0.040213377102995426
+                        },
+                        "p2": {
+                            "x": 105,
+                            "y": 86
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "147",
+                    "typeID": "TextInput",
+                    "zOrder": "147",
+                    "w": "255",
+                    "measuredW": "248",
+                    "measuredH": "32",
+                    "x": "355",
+                    "y": "847",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Log Management & Analysis"
+                    }
+                },
+                {
+                    "ID": "148",
+                    "typeID": "Arrow",
+                    "zOrder": "148",
+                    "w": "157",
+                    "h": "41",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "615",
+                    "y": "824",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 40
+                        },
+                        "p1": {
+                            "x": 0.3805593199457928,
+                            "y": 0.009301466058888753
+                        },
+                        "p2": {
+                            "x": 156,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "149",
+                    "typeID": "TextInput",
+                    "zOrder": "149",
+                    "w": "115",
+                    "measuredW": "90",
+                    "measuredH": "32",
+                    "x": "147",
+                    "y": "809",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Papertrail"
+                    }
+                },
+                {
+                    "ID": "150",
+                    "typeID": "TextInput",
+                    "zOrder": "150",
+                    "w": "115",
+                    "measuredW": "48",
+                    "measuredH": "32",
+                    "x": "147",
+                    "y": "846",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "ELK"
+                    }
+                },
+                {
+                    "ID": "151",
+                    "typeID": "TextInput",
+                    "zOrder": "151",
+                    "w": "115",
+                    "measuredW": "76",
+                    "measuredH": "32",
+                    "x": "148",
+                    "y": "883",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Graylog"
+                    }
+                },
+                {
+                    "ID": "152",
+                    "typeID": "TextInput",
+                    "zOrder": "152",
+                    "w": "115",
+                    "measuredW": "69",
+                    "measuredH": "32",
+                    "x": "148",
+                    "y": "919",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "Splunk"
+                    }
+                },
+                {
+                    "ID": "153",
+                    "typeID": "Arrow",
+                    "zOrder": "153",
+                    "w": "91",
+                    "h": "22",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "269",
+                    "y": "827",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.47438524590163944,
+                            "y": 0.031762295081967214
+                        },
+                        "p2": {
+                            "x": 90,
+                            "y": 21
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "154",
+                    "typeID": "Arrow",
+                    "zOrder": "154",
+                    "w": "87",
+                    "h": "9",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "267",
+                    "y": "857",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 8
+                        },
+                        "p1": {
+                            "x": 0.47438524590163944,
+                            "y": 0.031762295081967214
+                        },
+                        "p2": {
+                            "x": 86,
+                            "y": 1
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "155",
+                    "typeID": "Arrow",
+                    "zOrder": "155",
+                    "w": "85",
+                    "h": "24",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "266",
+                    "y": "875",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 23
+                        },
+                        "p1": {
+                            "x": 0.47438524590163944,
+                            "y": 0.03176229508196722
+                        },
+                        "p2": {
+                            "x": 84,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "156",
+                    "typeID": "Arrow",
+                    "zOrder": "156",
+                    "w": "97",
+                    "h": "54",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "267",
+                    "y": "884",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 53
+                        },
+                        "p1": {
+                            "x": 0.5139593094153135,
+                            "y": -0.07566908414094088
+                        },
+                        "p2": {
+                            "x": 96,
+                            "y": 0
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "157",
+                    "typeID": "TextInput",
+                    "zOrder": "157",
+                    "w": "116",
+                    "measuredW": "98",
+                    "measuredH": "32",
+                    "x": "185",
+                    "y": "327",
+                    "properties": {
+                        "align": "center",
+                        "color": "15658734",
+                        "size": "18",
+                        "text": "CF Engine"
+                    }
+                },
+                {
+                    "ID": "158",
+                    "typeID": "Arrow",
+                    "zOrder": "158",
+                    "w": "120",
+                    "h": "39",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "303",
+                    "y": "385",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "top",
+                        "leftArrow": "true",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4316714619247889,
+                            "y": 0.05426183807392579
+                        },
+                        "p2": {
+                            "x": 119.99999999999983,
+                            "y": 39.18789348884052
+                        },
+                        "rightArrow": "false",
+                        "shape": "bezier"
+                    }
+                }
+            ]
+        },
+        "mockupH": "1715",
+        "mockupW": "1360",
+        "measuredW": "1474",
+        "measuredH": "1731",
+        "version": "1.0"
+    }
+}
