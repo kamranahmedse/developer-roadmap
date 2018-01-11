@@ -41,7 +41,8 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 ### Html Resources
   - [Html CheatSheet](https://github.com/gendx/html-cheat-sheet)
   - [Html Tutorial MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML) 
-  <br>
+
+
 ## ☑ TODO
 
 - [X] Add Frontend Roadmap
