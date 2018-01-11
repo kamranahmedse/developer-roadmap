@@ -32,11 +32,16 @@ For the backend, personally I would prefer Node.js and PHP 7 for the full time. 
 ![](https://i.imgur.com/wpj5pqk.png)
 
 <br>
-
 ## 🚦 Wrap Up
 
 If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
 
+## Resources
+
+### Html Resources
+  - [Html CheatSheet](https://github.com/gendx/html-cheat-sheet)
+  - [Html Tutorial MDN](https://developer.mozilla.org/en-US/docs/Learn/HTML) 
+  <br>
 ## ☑ TODO
 
 - [X] Add Frontend Roadmap
