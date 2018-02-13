@@ -1,48 +1,54 @@
-![Web Developer Roadmap](https://i.imgur.com/oxsayps.png)
-
-> Roadmap to becoming a web developer in 2018
-
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective.
-
-If you think that these can be improved in anyway, please do suggest.
+Hey guys, this is a fork from [kamranahmedse](https://github.com/kamranahmedse/developer-roadmap)
 
 ***
 
-<p align="center"><b> Did you like this guide and want more of the similar content? </b><br>Subscribe for the launch of <a href="http://hugobots.com">Hugobots</a> or <a href="http://twitter.com/kamranahmedse">follow me on twitter</a>!</p>
+I have made some changes and add some small stuff which I will show for the different sections seperatly.
 
 ***
 
 
 ## 🚀 Introduction
 
+I leave the introduction as it is, but I need to say I have some major concerns about this Back-end -> DevOps step. In my opinion you also need an additional part about "Ops", as there is much more than just run an operating system. You are also required to understand and manage things like backups, storage technologies, networking etc. I know this picture is getting quite complex then and it also doesnt't fit fully to the title but at least it would show the full picture.
+
 ![](https://i.imgur.com/OZUOUtI.png)
 
 ## 🎨 Front-end Roadmap
 
-![](https://i.imgur.com/WrfLESm.png)
+I add here only the CSS -> "Mobile First" part. Maybe it is on the wrong place. However, I think nowerdays it is even more important to optimize a website for mobile use and then focus on everything else. Responsive Web maybe include the mobile first thing, but again I think the importance of it should be also pointed clear.
+
+![](./project-files/frontend.png)
 
 ## 👽 Back-end Roadmap
 
-For the backend, personally I would prefer Node.js and PHP 7 for the full time. Plus, I have been experimenting lately with Go and I quite like it. Apart from these, if I have to choose another one, I would go for Ruby. However this is just my personal preference, you can choose any of the shown languages and you will be good.
+I think whomever you will ask about what is the best or valuable programming language you will have in the ende every language as an answer. So just take GO it's the best for many cases! :P Kidding, but <3 for Gophers.
 
-![](https://i.imgur.com/Ihg4YAb.png)
+Now to the changes:
+- take Docker out, I think this hasn't something common with back-end development, otherwise you need to add cloud stuff like AWS or Google Cloud Platform as you can build with easy your back-end on it too
+- added gRPC respective Protocol Buffer, this things will have an interesting future as you can define in a protocol buffer ones how the interface will looks like and you can generate the code for many programming languages. Additionalay the protocol buffer is also the documentation of the interfaces.
+- get Redis out of the NoSQL, yes it is a kind of, but basically you can throw in every non RDBS in a NoSQL category
+- Make some recommendation changes the RDBS, Oracle/MSSQL imho no needs today to lear it, but good to know them. If Maria or MySQL is no big difference, so I would set my coin on the current market giant MySQL and keep MariaDB in mind.
+- A comment to Apache Kafka: I basically love this thing as you can make really cool stuff with it (query stream data, or plug a ML on top of the stream), not only Pub/Sub. But for smaller or medium projects it's is not valuable to have a Kafka as the cluster will have a unecassary overhead. BUT, take a look at it, just can recommend it!!!
+
+![](./project-files/backend.png)
 
 ## 👷 DevOps Roadmap
 
-![](https://i.imgur.com/wpj5pqk.png)
+- throw unix out and add Windows Server 2016, no I'm not crazy, ok maybe but you can run Docker on the Windows Server 2016 to run within Docker Windows applications. (Not a big fan of it)
+- Also add some linux distributions
+- Cloud: Marked Azure and GCP also as recommended as Azure is in big companies quite relevant (thx to really awesome deals...) and GCP is up an in the hunt to AWS and imho much more easier and partly cheaper as AWS. Heroku and DO are quite relevant for fast hosting and test something.
+- CI/CD, added Gitlab CI, easy to use, directly at your code base, free, and it is basically made to build pipes in context of docker!
+- Monitoring: Marked Prometheus as to choose, I think it is the tool for monitoring at the moment, fast, robust, reliable. Took New Relic and AppDynamics just as additional, they are commercial and not for everyone relevant. Added Incinga as it is not anymore a fork of Nagios and really lightweight it should be considered.
+- Restructured the part of containers and love for terminal to make more space
+- Cluster Manager CaaS: Marked Kubernetes and Swarm as required. Swarm comes natively with Docker and is for a small setup good. Kubernetes is going to be a standard, but it has some trade offs as you need to build a lot of stuff arroung it to make it fully usable for companies (maybe should be added)
+- Added Application Platforms PaaS: Well CaaS is already a old peace of cake. If you just want to get your docker clusters up and running and dont build some monthes your infrastructure, then choos one of the PaaS. A Rancher or Kontena are really easy for the beginning. Want to go big? OpenShift, Tectonic and DC/OS are waiting. 
+- Container could have some additional topics like, Container OSs, container security & scanning, container monitoring and management etc. 
+
+
+![](./project-files/devops.png)
 
 <br>
 
-## 🚦 Wrap Up
-
-If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
-
-## ☑ TODO
-
-- [X] Add Frontend Roadmap
-- [X] Add Backend Roadmap
-- [X] Add DevOps Roadmap
-- [ ] Add relevant resources for each
 
 ## 👬 Contribution
 
@@ -51,12 +57,6 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 - Open pull request with improvements
 - Discuss ideas in issues
 - Spread the word
-- Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
-
-## Sponsored By
-
-- [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
-- [Highig - Think and its done](http://highig.com/)
 
 ## License
 
