@@ -1,7 +1,7 @@
 lisp-hacker-roadmap
 ===================
 
-![Lisp Hacker Roadmap](./project-files/banner.png)
+![Lisp Hacker Roadmap](./files/banner.png)
 
 -------------------------------------------------------------------------------
 
@@ -14,8 +14,9 @@ lisp-hacker-roadmap
 -------------------------------------------------------------------------------
 
 Below are charts that show possible paths to be a practical yet bleeding edge Lisp hacker.
-The specified technologies were carefully chosen to be as minimal as possible yet able to work completely harmonious with each other; from front to back.
-The polyglot aspect can be optional but the rewards will be great and surely will make you a better hacker, not just in Lisp, for the rest of your days.
+The specified technologies were carefully chosen to be as minimal as possible yet able to work completely harmonious with one another; from front to back.
+
+The polyglot offers vast amounts of enlightenment. The experience will make you a better hacker for the rest of your days.
 
 Suggestions are always welcome.
 
@@ -24,27 +25,90 @@ Suggestions are always welcome.
 🚀 Introduction
 ---------------
 
-![](./project-files/intro-map.png)
+![](./files/intro-map.png)
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Para(digm)                         | Functional (Programming)    |
+| Lang(uage)                         | Lisp                        |
+| Dial(ect)                          | Clojure                     |
+| (Text) Editor                      | Emacs                       |
+| Dist(ribution)                     | Spacemacs                   |
+| Integrated Development Environment | CIDER                       |
+| Distributed Version Control System | Git                         |
+| I(nter)face                        | Magit                       |
+| Repo(sitory)                       | GitHub                      |
+| Operating System                   | Linux                       |
+| Dist(ribution)                     | Arch (Linux)                |
+| Desktop Environment                | GNOME                       |
+| Sh(ell)                            | BASH                        |
+| Design                             | Information Architecture    |
+| Security                           | Social Engineering          |
 
 -------------------------------------------------------------------------------
 
-🎨 Front-end Roadmap
---------------------
+🎨 Front-end
+------------
 
-![](./project-files/front-end.png)
+![](./files/front-end.png)
+
+### HTML ###
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Markup (Writing)                   | Markdown                    |
+| Preprocessor (React, Publishing)   | Reagent                     |
+
+### CSS ###
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Preprocessor                       | Garden                      |
+| Framework                          | re-com                      |
+
+### JavaScript ###
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Compiler                           | ClojureScript               |
+| Management                         | Leiningen                   |
+| Framework (SPA)                    | re-frame                    |
+| Testing                            | clojure.spec                |
 
 -------------------------------------------------------------------------------
 
-👽 Back-end Roadmap
--------------------
+👽 Back-end
+-----------
 
-![](./project-files/back-end.png)
+![](./files/back-end.png)
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Language                           | Clojure                     |
+| Management                         | Leiningen                   |
+| Testing                            | clojure.spec                |
+| Framework (GraphQL)                | Lacinia                     |
+| Web Server                         | Nginx                       |
+| Transactor (Datalog)               | Datomic                     |
+| Database (SQL)                     | PostgreSQL                  |
 
 -------------------------------------------------------------------------------
 
-## 👷 Polyglot Roadmap
+👷 Polyglot
+-----------
 
-![](./project-files/polyglot.png)
+![](./files/polyglot.png)
+
+| Categories                         | Technologies                |
+| :--------------------------------- | :-------------------------- |
+| Functional (Impure)                | Scheme (CHICKEN)            |
+| Functional (Pure)                  | Haskell                     |
+| Object-oriented (Class)            | Smalltalk                   |
+| Object-oriented (Prototype)        | Self                        |
+| Regular Expression                 | Perl                        |
+| Multi-paradigm                     | Oz                          |
+| Procedural                         | C                           |
+| Machine Code                       | ASM                         |
 
 -------------------------------------------------------------------------------
 
