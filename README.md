@@ -52,6 +52,7 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 - Discuss ideas in issues
 - Spread the word
 - Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+[![Open Source Helpers](https://www.codetriage.com/kamranahmedse/developer-roadmap/badges/users.svg)](https://www.codetriage.com/kamranahmedse/developer-roadmap)
 
 ## Sponsored By
 
