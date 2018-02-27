@@ -9,13 +9,11 @@ If you think that these can be improved in anyway, please do suggest.
 ---
 
 <p align="center">
-🎉 I am preparing a <b>FREE project based video series on Fullstack Development</b> 🎉<br>
-  <b><a href="http://youtube.com/c/kamranahmed_se">Subscribe to my youtube channel</a></b> if you are interested in learning that<br> 
-  <sub>Few keywords – ES6, Tooling, React, Redux, Jest and Enzyme, NodeJS, Mocha and Chai<br></sub>
+<b>🎉 I am preparing a FREE series on Fullstack Development  🎉</b><br><a href="http://hugobots.com">Subscribe to my youtube channel</a> if you are interested!
+  <p align="center">Few keywords – ES6, Tooling, React, Redux, Jest and Enzyme, NodeJS, Mocha and Chai<br>Everything is going to be <b>project based with real world usage</b></p>
 </p>
 
 ---
-
 
 <sub>Check out my [blog](https://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
 
