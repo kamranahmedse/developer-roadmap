@@ -6,17 +6,19 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 If you think that these can be improved in anyway, please do suggest.
 
-***
+---
 
 <p align="center">
-  🎉 <b>I am working on a FREE project based video series on Fullstack Development!</b> 🎉<br>
-  Few keywords – ES6, Tooling, React, Redux, Jest and Enzyme, NodeJS, Mocha and Chai
-</p>
-<p align="center">
-Make sure to subscribe to my <a href="http://youtube.com/c/kamranahmed_se">youtube channel</a> if it is something that you will be interested in <br> <b>Starts this Saturday!</b>
+I am working on a <b>FREE</b> project based video series on Fullstack Development!<br>
+  <b><a href="http://youtube.com/c/kamranahmed_se">Subscribe to my youtube channel</a> if you are interested in learning that</b><br> 
+  Few keywords – ES6, Tooling, React, Redux, Jest and Enzyme, NodeJS, Mocha and Chai<br>
 </p>
 
-***
+---
+
+
+<sub>Check out my [blog](https://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
+
 
 
 ## 🚀 Introduction
