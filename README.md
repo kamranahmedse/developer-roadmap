@@ -15,7 +15,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ---
 
-<sub>Check out my [blog](https://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
+<sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
 
 
 
