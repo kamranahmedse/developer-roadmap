@@ -9,7 +9,7 @@ If you think that these can be improved in anyway, please do suggest.
 ---
 
 <p align="center">
-<b>🎉 I am preparing a FREE series on Fullstack Development  🎉</b><br><a href="http://hugobots.com">Subscribe to my youtube channel</a> if you are interested!
+<b>🎉 I am preparing a FREE series on Fullstack Development  🎉</b><br><a href="http://youtube.com/c/kamranahmed_se">Subscribe to my youtube channel</a> if you are interested!
   <p align="center">Few keywords – ES6, Tooling, React, Redux, Jest and Enzyme, NodeJS, Mocha and Chai<br>Everything is going to be <b>project based with real world usage</b></p>
 </p>
 
