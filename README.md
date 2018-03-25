@@ -20,7 +20,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🎨 Front-end Roadmap
 
-![](./images/frontend.png)
+![](./images/frontend-v2.png)
 
 ## 👽 Back-end Roadmap
 
