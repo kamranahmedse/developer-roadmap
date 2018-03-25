@@ -6,14 +6,10 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 If you think that these can be improved in anyway, please do suggest.
 
-![split](https://i.imgur.com/QgVXt8U.png)
 
 ![](https://i.imgur.com/KtQyIvc.png)
 
-![split](https://i.imgur.com/QgVXt8U.png)
-
 <sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
-
 
 
 ## 🚀 Introduction
