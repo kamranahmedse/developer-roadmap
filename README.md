@@ -6,15 +6,13 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 If you think that these can be improved in anyway, please do suggest.
 
-
 <br>
 <p align="center">
-  <img src="https://i.imgur.com/KtQyIvc.png" width="750">
+  <img src="./images/disclaimer.png" width="750">
 </p>
 <br>
 
 <sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
-
 
 ## 🚀 Introduction
 
@@ -22,7 +20,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## 🎨 Front-end Roadmap
 
-![](https://i.imgur.com/HwRpFz7.jpg)
+![](./images/frontend.png)
 
 ## 👽 Back-end Roadmap
 
