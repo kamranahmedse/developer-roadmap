@@ -1,3 +1,5 @@
+> Textual form of the roadmap, feel free to fork and track as you learn
+
 ## Frontend Developer Roadmap – 2018
 
 This file contains the frontend roadmap translated in the checklist form to make it easier for others to contribute and to fork and keep a check on their progress. You can read the commentary on the frontend roadmap [in this medium article](https://medium.com/@kamranahmedse/modern-frontend-developer-in-2018-4c2072fa2b9c)
