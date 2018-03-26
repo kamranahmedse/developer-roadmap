@@ -18,9 +18,9 @@ If you think that these can be improved in anyway, please do suggest.
 
 ![](https://i.imgur.com/OZUOUtI.png)
 
-## 🎨 Front-end Roadmap
+## 🎨 Frontend Roadmap
 
-![](./images/frontend-v2.png)
+![](./images/frontend.png)
 
 ## 👽 Back-end Roadmap
 
