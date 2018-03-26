@@ -62,7 +62,25 @@ Preprocessors enrich CSS with the functionality that it isn’t capable of by de
   - [ ] **PostCSS (do this later)**
   - [ ] Stylus
 
-## Step 6 – Learn the Build tools
+## Step 6 – Learn any CSS Framework
+
+This used to be way up in the chart, but I moved it down below as they aren't really needed any more and can be mastered without much effort. If you would want to pick any, there is one under every rock. The ones that I liked the most among the ones that I tried are Bootstrap, Materialize and Bulma. But if you look at their demand in market I would pick Bootstrap if I was starting today.
+
+- [ ] **Bootstrap (Recommended)**
+- [ ] Materialize CSS
+- [ ] Bulma
+
+## Step 7 – Learn how to organize CSS
+
+As your applications grow, CSS start to become messy and unmaintainable. There are multiple ways to structure your CSS better for scalability
+
+- [ ] **BEM – Recommended**
+- [ ] OOCSS
+- [ ] SMACSS
+- [ ] SUITCSS
+- [ ] Atomic
+
+## Step 8 – Learn the Build tools
 
 These are the tools that help you in bundling, building and development of your frontend applications
 
@@ -84,7 +102,7 @@ There are several linters, but I would go for ESLint. Feel free to have a look a
 - [ ] Rollup
 - [ ] Parcel
 
-## Step 7 – Create something – Maybe a library
+## Step 9 – Create something – Maybe a library
 
 Go to Github and Have a look at the source code of libraries that people have made, pick an idea and make some library with the below listed requirements
 
@@ -93,7 +111,7 @@ Go to Github and Have a look at the source code of libraries that people have ma
 - [ ] It should be a UMD library
 - [ ] It should be using Babel to allow usage in older browsers
 
-## Step 8 – Learn any Framework
+## Step 10 – Learn any Framework
 
 There are several options, when it comes to frameworks. However, below listed frameworks are the ones that I would recommend. You can pick any of them, however if you ask me for the personal picks I would choose React or Angular. However, have a look at any of them and see what you like
 
@@ -106,15 +124,15 @@ There are several options, when it comes to frameworks. However, below listed fr
 - [ ] Vue.js
   - [ ] Vuex - Similar to redux but for Vue 
 
-## Step 9 – Practical Time
+## Step 11 – Practical Time
 
 Now you know *everything* that one might need to build a modern JavaScript application. Go ahead and make some application with whatever framework you picked. You can find some of the ideas in the `ideas` directory in the repository; pick anything and start!
 
-## Step 10 – Learn about Performance
+## Step 12 – Learn about Performance
 
 Once you are done making the application from Step 9, read about how to **measure and improve performance**. For example look at **Interactivity Time**, **Page Speed Index**, and **Lighthouse Score** etc.
 
-## Step 11 – Testing your Apps
+## Step 13 – Testing your Apps
 
 There are lots and lots of different tools for different purposes. I mostly find myself using a combination of Jest, Mocha, Karma and Enzyme. However, before you jump and pick any, it would be better if you **first understand the different testing types**, look at all the options available and use the ones most suitable for your needs.
 
@@ -126,32 +144,18 @@ Here is a really nice summary to get you started – [An Overview of JavaScript 
 - [ ] **Karma**
 - [ ] **Enzyme**
 
-## Step 12 – Static Type Checkers
+## Step 14 – Progressive Webapps
+
+Learn about Service Workers and how to make Progressive Webapps
+
+## Step 15 – Static Type Checkers
 
 Static type checkers help you to add type checking to JavaScript. You don’t need to learn these but they really give you superpowers and can be learnt in a few hours and then you can keep . There is mainly TypeScript and Flow. I love TypeScript and would pick it but feel free to check both and pick one of your liking.
 
 - [ ] **TypeScript (Recommended)**
 - [ ] Flow
 
-## Step 13 – Learn any CSS Framework
-
-This used to be way up in the chart, but I moved it down below as they aren't really needed any more and can be mastered without much effort. If you would want to pick any, there is one under every rock. The ones that I liked the most among the ones that I tried are Bootstrap, Materialize and Bulma. But if you look at their demand in market I would pick Bootstrap if I was starting today.
-
-- [ ] **Bootstrap (Recommended)**
-- [ ] Materialize CSS
-- [ ] Bulma
-
-## Step 14 – Learn how to organize CSS
-
-As your applications grow, CSS start to become messy and unmaintainable. There are multiple ways to structure your CSS better for scalability
-
-- [ ] **BEM – Recommended**
-- [ ] OOCSS
-- [ ] SMACSS
-- [ ] SUITCSS
-- [ ] Atomic
-
-## Step 15 – Learn about Server Side Rendering
+## Step 16 – Learn about Server Side Rendering
 
 There are different options, depending on what framework you are using
 
@@ -163,9 +167,9 @@ There are different options, depending on what framework you are using
 - [ ] Vue.js
   - [ ] Nuxt.js
 
-## Step 16 – Progressive Webapps
+## Step 17 – All the things not mentioned
 
-Learn about Service Workers and how to make Progressive Webapps
+Canvas, HTML-5 APIs, SVG, sourcemaps, functional programming, TC39, Progressive enhancement, graceful degradation etc. Go Figure!
 
 ## Journey Never Ends
 
