@@ -4,7 +4,7 @@ This file contains the frontend roadmap translated in the checklist form to make
 
 ## Step 1 – Learn the Basics
 
-> First thing that you would want to do is learn the basics which includes learning the basics of HTML, CSS and some familiarization with JavaScript syntax. 
+First thing that you would want to do is learn the basics which includes learning the basics of HTML, CSS and some familiarization with JavaScript syntax. 
 
 - [ ] Learn the basics of HTML
   - [ ] Learn the basics and how to write semantic HTML
@@ -24,13 +24,13 @@ This file contains the frontend roadmap translated in the checklist form to make
   - [ ] Learn new features in ES6+ and how to write modular JavaScript
 - [ ] Learn jQuery – **Optional (you can leave it for now and revisit later)**
 
-#### Step 2 – Practice what you have learnt!
+## Step 2 – Practice what you have learnt!
 
 I say this a lot and I will say it here again, you don’t learn anything without practice. You might have a momentary feeling that you understand something but it would soon go away if you don’t practice. Make sure that you practice as much as you can, while you are following this roadmap.
 
 Go ahead and make some responsive website and add interactivity with JavaScript. You can copy any existing webpage that you might find interesting but **remember to use everything that you have learnt till this point**.
 
-#### Step 3 – Optional but Highly Recommended
+## Step 3 – Optional but Highly Recommended
 
 Before you go any further, I would recommend you to go and learn some [git](https://git-scm.com/) if you haven't learnt already. it is really going to help you as you go further. You don't have to learn everything about it, just learn the below listed and keep learning as you continue and face any issues.
 
@@ -39,13 +39,13 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 - Look at any of the open issues that you can solve
 - Refactor any of the code that you think can be improved
 
-> Link this repo and tell them you are learning and ask for feedback on your PR and how you can improve.
+Link this repo and tell them you are learning and ask for feedback on your PR and how you can improve.
 
 ![](./images/split.png)
 
 ## Step 4 – Learn about Package Managers
 
-> NPM and Yarn both are almost same in usage; you can learn one of them and you automatically learn the other.
+NPM and Yarn both are almost same in usage; you can learn one of them and you automatically learn the other.
 
 - [ ] Learn how to use NPM
 - [ ] Learn how to use Yarn
@@ -56,7 +56,7 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 
 ## Step 5 – Learn CSS Preprocessors
 
-> Preprocessors enrich CSS with the functionality that it isn’t capable of by default. There are different many options Sass, Less, Stylus etc. If I were to pick one, I would go for Sass. However, PostCSS has been gaining a lot of traction lately, it is a nice-to-have and is sort of “Babel” for CSS. You can use it stand-alone or on top of Sass also. I would recommend you to learn Sass for now and revisit PostCSS later when you have time.
+Preprocessors enrich CSS with the functionality that it isn’t capable of by default. There are different many options Sass, Less, Stylus etc. If I were to pick one, I would go for Sass. However, PostCSS has been gaining a lot of traction lately, it is a nice-to-have and is sort of “Babel” for CSS. You can use it stand-alone or on top of Sass also. I would recommend you to learn Sass for now and revisit PostCSS later when you have time.
 
 - [ ] Pick one of these
   - [ ] **Sass (Recommended)**
@@ -68,21 +68,21 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 
 ## Step 6 – Learn the Build tools
 
-> These are the tools that help you in bundling, building and development of your frontend applications
+These are the tools that help you in bundling, building and development of your frontend applications
 
-> There used to be alot of stuff in the task runners but today I would just pick NPM scripts, however if you want to pick something else, have a look at gulp
+There used to be alot of stuff in the task runners but today I would just pick NPM scripts, however if you want to pick something else, have a look at gulp
 
 - [ ] **NPM Scripts (Recommended)**
 - [ ] Gulp
 
-> There are several linters, but I would go for ESLint. Feel free to have a look at others and see why one over the other
+There are several linters, but I would go for ESLint. Feel free to have a look at others and see why one over the other
 
 - [ ] **ESLint (Recommended)**
 - [ ] JSLint
 - [ ] JSHint
 - [ ] JSCS
 
-> **Use Webpack for apps and Rollup for libraries**. However, you don't need rollup for now; everything that it does, you can do it with Webpack also, so go for Webpack and look into Rollup later
+**Use Webpack for apps and Rollup for libraries**. However, you don't need rollup for now; everything that it does, you can do it with Webpack also, so go for Webpack and look into Rollup later
 
 - [ ] **Webpack (Recommended)**
 - [ ] Rollup
@@ -92,7 +92,7 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 
 ## Step 7 – Create something – Maybe a library
 
-> Go to Github and Have a look at the source code of libraries that people have made, pick an idea and make some library with the below listed requirements
+Go to Github and Have a look at the source code of libraries that people have made, pick an idea and make some library with the below listed requirements
 
 - [ ] It should use Sass for styling
 - [ ] It should be written in ES6
@@ -103,7 +103,7 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 
 ## Step 8 – Learn any Framework
 
-> There are several options, when it comes to frameworks. However, below listed frameworks are the ones that I would recommend. You can pick any of them, however if you ask me for the personal picks I would choose React or Angular. However, have a look at any of them and see what you like
+There are several options, when it comes to frameworks. However, below listed frameworks are the ones that I would recommend. You can pick any of them, however if you ask me for the personal picks I would choose React or Angular. However, have a look at any of them and see what you like
 
 - [ ] **React**
   - [ ] Redux - For large scale apps and can be used outside react also
@@ -163,7 +163,7 @@ This used to be way up in the chart, but I moved it down below as they aren't re
 
 ## Step 14 – Learn how to organize CSS
 
-> As your applications grow, CSS start to become messy and unmaintainable. There are multiple ways to structure your CSS better for scalability
+As your applications grow, CSS start to become messy and unmaintainable. There are multiple ways to structure your CSS better for scalability
 
 - [ ] **BEM – Recommended**
 - [ ] OOCSS
@@ -175,7 +175,7 @@ This used to be way up in the chart, but I moved it down below as they aren't re
 
 ## Step 15 – Learn about Server Side Rendering
 
-> There are different options, depending on what framework you are using
+There are different options, depending on what framework you are using
 
 - [ ] React
   - [ ] Next.js
