@@ -41,8 +41,6 @@ Its time to get into the real business now. Open [Github](https://github.com) an
 
 Link this repo and tell them you are learning and ask for feedback on your PR and how you can improve.
 
-![](./images/split.png)
-
 ## Step 4 – Learn about Package Managers
 
 NPM and Yarn both are almost same in usage; you can learn one of them and you automatically learn the other.
@@ -51,8 +49,6 @@ NPM and Yarn both are almost same in usage; you can learn one of them and you au
 - [ ] Learn how to use Yarn
 - [ ] Understand Semantic Versioning
 - [ ] **Task** Install some external library using yarn or npm into the webpages that you made previously
-
-![](./images/split.png)
 
 ## Step 5 – Learn CSS Preprocessors
 
@@ -63,8 +59,6 @@ Preprocessors enrich CSS with the functionality that it isn’t capable of by de
   - [ ] Less
   - [ ] **PostCSS (do this later)**
   - [ ] Stylus
-
-![](./images/split.png)
 
 ## Step 6 – Learn the Build tools
 
@@ -88,8 +82,6 @@ There are several linters, but I would go for ESLint. Feel free to have a look a
 - [ ] Rollup
 - [ ] Parcel
 
-![](./images/split.png)
-
 ## Step 7 – Create something – Maybe a library
 
 Go to Github and Have a look at the source code of libraries that people have made, pick an idea and make some library with the below listed requirements
@@ -98,8 +90,6 @@ Go to Github and Have a look at the source code of libraries that people have ma
 - [ ] It should be written in ES6
 - [ ] It should be a UMD library
 - [ ] It should be using Babel to allow usage in older browsers
-
-![](./images/split.png)
 
 ## Step 8 – Learn any Framework
 
@@ -114,19 +104,13 @@ There are several options, when it comes to frameworks. However, below listed fr
 - [ ] Vue.js
   - [ ] Vuex - Similar to redux but for Vue 
 
-![](./images/split.png)
-
 ## Step 9 – Practical Time
 
 Now you know *everything* that one might need to build a modern JavaScript application. Go ahead and make some application with whatever framework you picked. You can find some of the ideas in the `ideas` directory in the repository; pick anything and start!
 
-![](./images/split.png)
-
 ## Step 10 – Learn about Performance
 
 Once you are done making the application from Step 9, read about how to **measure and improve performance**. For example look at **Interactivity Time**, **Page Speed Index**, and **Lighthouse Score** etc.
-
-![](./images/split.png)
 
 ## Step 11 – Testing your Apps
 
@@ -140,16 +124,12 @@ Here is a really nice summary to get you started – [An Overview of JavaScript 
 - [ ] **Karma**
 - [ ] **Enzyme**
 
-![](./images/split.png)
-
 ## Step 12 – Static Type Checkers
 
 Static type checkers help you to add type checking to JavaScript. You don’t need to learn these but they really give you superpowers and can be learnt in a few hours and then you can keep . There is mainly TypeScript and Flow. I love TypeScript and would pick it but feel free to check both and pick one of your liking.
 
 - [ ] **TypeScript (Recommended)**
 - [ ] Flow
-
-![](./images/split.png)
 
 ## Step 13 – Learn any CSS Framework
 
@@ -158,8 +138,6 @@ This used to be way up in the chart, but I moved it down below as they aren't re
 - [ ] **Bootstrap (Recommended)**
 - [ ] Materialize CSS
 - [ ] Bulma
-
-![](./images/split.png)
 
 ## Step 14 – Learn how to organize CSS
 
@@ -170,8 +148,6 @@ As your applications grow, CSS start to become messy and unmaintainable. There a
 - [ ] SMACSS
 - [ ] SUITCSS
 - [ ] Atomic
-
-![](./images/split.png)
 
 ## Step 15 – Learn about Server Side Rendering
 
@@ -185,13 +161,9 @@ There are different options, depending on what framework you are using
 - [ ] Vue.js
   - [ ] Nuxt.js
 
-![](./images/split.png)
-
 ## Step 16 – Progressive Webapps
 
 Learn about Service Workers and how to make Progressive Webapps
-
-![](./images/split.png)
 
 ## Journey Never Ends
 
