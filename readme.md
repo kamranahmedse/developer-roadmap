@@ -6,29 +6,30 @@
 
 이 로드맵을 개선할 수 있다고 생각한다면 제안을 해주세요.
 
-***
+<br>
+<p align="center">
+  <img src="./images/disclaimer.png" width="750">
+</p>
+<br>
 
-<p align="center"><b> 이 가이드가 마음에 들고 비슷한 내용을 더 원하십니까? </b><br><a href="http://hugobots.com">Hugobots</a>을 구독하거나 <a href="http://twitter.com/kamranahmedse">트위터</a>를 팔로우하세요!</p>
-
-***
-
+<sub>저의 [블로그](http://kamranahmed.info)를 확인하고 [트위터](https://twitter.com/kamranahmedse)에 "안녕"이라고 말해주세요.</sub>
 
 ## 🚀 소개
 
-![](./intro-map.png)
+![](./images/intro.png)
 
 ## 🎨 프론트엔드 로드맵
-![](./frontend-map.png)
+![](./images/frontend-v2.png)
 
 ## 👽 백엔드 로드맵
 
 백엔드의 경우 개인적으로 Node.js와 PHP7을 선호합니다. 최근에는 Go를 사용해봤고 아주 맘에 들었습니다. 이 외에도 다른 것을 고려해야 한다면 Ruby로 갈 것입니다. 그러나 이것은 단지 제  개인 취향입니다. 여러분은 표시된 언어 중 어떤 것이든 선택할 수 있고 여러분은 잘할 것입니다.
 
-![](./backend-map.png)
+![](./images/backend.png)
 
 ## 👷 데브옵스 로드맵
 
-![](./devops-map.png)
+![](./images/devops.png)
 
 <br>
   
@@ -48,9 +49,9 @@
 프로젝트 파일은 `/project-files` 디렉토리에 있습니다. 로드맵을 수정하려면 발사믹을 열고  **Project > Import > Mockup JSON** 클릭하여 로드맵을 열고 수정한 후 이미지를 readme에 업로드한 후 `Pull Request`를 작성합니다.
 
 - 개선사항은 pull request
-- 논의는 issues
-- 퍼트리세요
-- 어떠한 의견이든 내밀어주세요 [![트위터 URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+- 논의사항은 issues
+- 널리 알려주세요
+- 어떠한 의견이든 제시해주세요 [![트위터 URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
 
 ## 스폰서
 
@@ -59,4 +60,5 @@
 
 ## 라이센스
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC0%201.0-brightgreen.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
