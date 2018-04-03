@@ -30,6 +30,11 @@ If you think that these can be improved in anyway, please do suggest.
 
 ![](https://i.imgur.com/pyg9mH1.png)
 
+## :clipboard: Tools & Resources
+
+![](https://imgur.com/rzfO3ka.png)
+> Click Image to zoom.
+
 ## 🚦 Wrap Up
 
 If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
