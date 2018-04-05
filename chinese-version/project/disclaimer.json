@@ -1,0 +1,106 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "0",
+                    "typeID": "TextArea",
+                    "zOrder": "0",
+                    "w": "911",
+                    "h": "274",
+                    "measuredW": "200",
+                    "measuredH": "140",
+                    "x": "223",
+                    "y": "170",
+                    "properties": {
+                        "color": "16777215"
+                    }
+                },
+                {
+                    "ID": "1",
+                    "typeID": "Label",
+                    "zOrder": "1",
+                    "measuredW": "160",
+                    "measuredH": "40",
+                    "x": "245",
+                    "y": "190",
+                    "properties": {
+                        "bold": "true",
+                        "size": "32",
+                        "text": "免責聲明！"
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Label",
+                    "zOrder": "2",
+                    "measuredW": "384",
+                    "measuredH": "32",
+                    "x": "245",
+                    "y": "246",
+                    "properties": {
+                        "size": "24",
+                        "text": "這個路線圖的目的是給你一個輪廓，"
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "Label",
+                    "zOrder": "3",
+                    "measuredW": "456",
+                    "measuredH": "32",
+                    "x": "245",
+                    "y": "282",
+                    "properties": {
+                        "size": "24",
+                        "text": "並在你困惑接下來該學什麼的時候指導你。"
+                    }
+                },
+                {
+                    "ID": "4",
+                    "typeID": "Label",
+                    "zOrder": "4",
+                    "measuredW": "408",
+                    "measuredH": "32",
+                    "x": "245",
+                    "y": "317",
+                    "properties": {
+                        "size": "24",
+                        "text": "而不是鼓勵你學習很潮很流行的東西。"
+                    }
+                },
+                {
+                    "ID": "5",
+                    "typeID": "Label",
+                    "zOrder": "5",
+                    "measuredW": "799",
+                    "measuredH": "32",
+                    "x": "245",
+                    "y": "353",
+                    "properties": {
+                        "size": "24",
+                        "text": "你應該要 *更加了解，為什麼某個工具會比其他的工具更適合用在一些情況*，"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "typeID": "Label",
+                    "zOrder": "6",
+                    "measuredW": "648",
+                    "measuredH": "32",
+                    "x": "245",
+                    "y": "389",
+                    "properties": {
+                        "size": "24",
+                        "text": "*並記住潮和流行，從來就不代表它是最適合完成任務的工具*。"
+                    }
+                }
+            ]
+        },
+        "mockupH": "274",
+        "mockupW": "911",
+        "measuredW": "1134",
+        "measuredH": "444",
+        "version": "1.0"
+    }
+}
