@@ -29,9 +29,8 @@
 ![](./chinese-version/images/backend.png)
 
 ## 👷 DevOps 路線圖
-> 譯註：尚未翻譯完成...
 
-![](https://i.imgur.com/pyg9mH1.png)
+![](./chinese-version/images/devops.png)
 
 ## 🚦 總結
 
