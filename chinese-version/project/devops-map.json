@@ -3686,10 +3686,10 @@
                     "ID": "162",
                     "typeID": "TextInput",
                     "zOrder": "162",
-                    "w": "262",
+                    "w": "259",
                     "measuredW": "71",
                     "measuredH": "32",
-                    "x": "0",
+                    "x": "3",
                     "y": "53",
                     "properties": {
                         "align": "center",
@@ -3702,10 +3702,10 @@
                     "ID": "163",
                     "typeID": "TextInput",
                     "zOrder": "163",
-                    "w": "262",
+                    "w": "259",
                     "measuredW": "60",
                     "measuredH": "32",
-                    "x": "0",
+                    "x": "3",
                     "y": "92",
                     "properties": {
                         "align": "center",
@@ -3718,10 +3718,10 @@
                     "ID": "164",
                     "typeID": "TextInput",
                     "zOrder": "164",
-                    "w": "262",
+                    "w": "259",
                     "measuredW": "72",
                     "measuredH": "32",
-                    "x": "0",
+                    "x": "3",
                     "y": "16",
                     "properties": {
                         "align": "center",
@@ -3734,10 +3734,10 @@
                     "ID": "165",
                     "typeID": "TextInput",
                     "zOrder": "165",
-                    "w": "262",
+                    "w": "259",
                     "measuredW": "69",
                     "measuredH": "32",
-                    "x": "0",
+                    "x": "3",
                     "y": "169",
                     "properties": {
                         "align": "center",
@@ -3766,10 +3766,10 @@
                     "ID": "167",
                     "typeID": "TextInput",
                     "zOrder": "167",
-                    "w": "262",
+                    "w": "259",
                     "measuredW": "80",
                     "measuredH": "32",
-                    "x": "0",
+                    "x": "3",
                     "y": "132",
                     "properties": {
                         "align": "center",
@@ -4064,6 +4064,98 @@
                         },
                         "rightArrow": "true",
                         "shape": "bezier"
+                    }
+                },
+                {
+                    "ID": "185",
+                    "typeID": "Icon",
+                    "zOrder": "179",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "955",
+                    "y": "55",
+                    "properties": {
+                        "color": "10027263",
+                        "icon": {
+                            "ID": "github",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "186",
+                    "typeID": "Label",
+                    "zOrder": "180",
+                    "measuredW": "294",
+                    "measuredH": "25",
+                    "x": "994",
+                    "y": "49",
+                    "properties": {
+                        "bold": "true",
+                        "color": "10027263",
+                        "size": "17",
+                        "text": "kamranahmedse/developer-roadmap"
+                    }
+                },
+                {
+                    "ID": "187",
+                    "typeID": "Icon",
+                    "zOrder": "181",
+                    "measuredW": "32",
+                    "measuredH": "32",
+                    "x": "955",
+                    "y": "109",
+                    "properties": {
+                        "color": "10027263",
+                        "icon": {
+                            "ID": "twitter",
+                            "size": "medium"
+                        }
+                    }
+                },
+                {
+                    "ID": "188",
+                    "typeID": "Label",
+                    "zOrder": "182",
+                    "measuredW": "133",
+                    "measuredH": "25",
+                    "x": "995",
+                    "y": "101",
+                    "properties": {
+                        "bold": "true",
+                        "color": "10027263",
+                        "size": "17",
+                        "text": "kamranahmedse"
+                    }
+                },
+                {
+                    "ID": "189",
+                    "typeID": "Label",
+                    "zOrder": "183",
+                    "measuredW": "440",
+                    "measuredH": "25",
+                    "x": "994",
+                    "y": "70",
+                    "properties": {
+                        "bold": "true",
+                        "color": "10027263",
+                        "size": "17",
+                        "text": "goodjack/developer-roadmap-chinese（台灣正體中文）"
+                    }
+                },
+                {
+                    "ID": "190",
+                    "typeID": "Label",
+                    "zOrder": "184",
+                    "measuredW": "246",
+                    "measuredH": "25",
+                    "x": "995",
+                    "y": "122",
+                    "properties": {
+                        "bold": "true",
+                        "color": "10027263",
+                        "size": "17",
+                        "text": "littlegoodjack（台灣正體中文）"
                     }
                 }
             ]
