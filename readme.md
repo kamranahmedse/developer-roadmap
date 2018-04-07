@@ -6,7 +6,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ***
 
-<p align="center"><b> I recently started a weekly booklet on Modern Frontend Development</b><br> <a href="http://hugobots.com">Check that out</a> if it may interest you</a>.</p>
+<p align="center"><b> I recently started a weekly booklet on Modern Frontend Development</b><br> <a href="http://esguy.com">ES Guy – Weekly delight to cure your JS fatigue</a></p>
 
 ***
 <sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
