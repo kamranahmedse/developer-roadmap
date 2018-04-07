@@ -6,6 +6,21 @@
 
 如果你認為這些內容有任何方式可以改進，請提供建議。
 
+## 🌏 台灣正體中文翻譯前言
+嗨大家好我是小克 👋，從 2017 年開始注意到這個 repo 覺得獲益良多，所以就試著翻譯看看，分享給更多需要的人。<br>
+由於這裡是翻譯 repo，關於內容的任何建議，推薦你直接回饋給 [kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)，<br>
+當然需要我協助也是可以的 :D
+
+這裡的中文都盡量使用 **台灣用語及術語**，資訊相關的術語都會在翻譯旁保留原文供參考。<br>
+中文排版皆盡可能地依循 [**中文文案排版指北**](https://github.com/sparanoid/chinese-copywriting-guidelines)（若有不符的地方請跟我說）。
+
+這是我第一次翻譯，難免有疏漏、語意不順、用詞不精準及翻譯錯誤的地方，<br>
+如果有任何可以改進之處，都非常歡迎開 issue 或 PR！
+
+當然，若原作有更新，也歡迎開 issue 或 PR 協助翻譯，謝謝！
+
+接受任何意見回饋 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/littlegoodjack.svg?style=social&label=Follow%20@littlegoodjack)](https://twitter.com/littlegoodjack)
+
 <br>
 <p align="center">
   <img src="./chinese-version/images/disclaimer.png" width="750">
@@ -13,7 +28,7 @@
 <br>
 
 <sub>看看我的[部落格](http://kamranahmed.info)，然後來 [Twitter](https://twitter.com/kamranahmedse) 說聲 "hi"。</sub>
-<sub>（譯註：也歡迎來逛逛我的[部落格](http://goodjack.blogspot.com/)，然後來 [Twitter](https://twitter.com/littlegoodjack) 打個招呼 :P）</sub>
+<sub>（譯註：也歡迎來逛逛譯者的[部落格](http://goodjack.blogspot.com/)，然後來 [Twitter](https://twitter.com/littlegoodjack) 打個招呼 :P）</sub>
 
 ## 🚀 介紹
 
