@@ -20,9 +20,8 @@
 ![](./chinese-version/images/intro.png)
 
 ## 🎨 前端 Frontend 路線圖
-> 譯註：尚未翻譯完成...
 
-![](./images/frontend-v2.png)
+![](./chinese-version/images/frontend.png)
 
 ## 👽 後端 Back-end 路線圖
 
