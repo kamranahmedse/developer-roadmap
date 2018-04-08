@@ -6,7 +6,7 @@
 
 ***
 
-<p align="center"><b>最近我開始了一個關於現代前端開發的週報</b><br> <a href="http://esguy.com">ES Guy – 很高興每週可以治癒你的 JS 疲勞</a></p>
+<p align="center"><b>👋 你可能會有興趣：ES Guy – 前端開發週報</b><br> <a href="http://esguy.com">在這裡閱讀更多並訂閱</a></p>
 
 ***
 <sub>看看我的[部落格](http://kamranahmed.info)，然後來 [Twitter](https://twitter.com/kamranahmedse) 說聲 "hi"。</sub><br>
@@ -19,7 +19,7 @@
 
 這是我第一次翻譯，難免有疏漏、語意不順、用詞不精準及翻譯錯誤的地方，如果有任何可以改進之處，都非常歡迎開 issue 或 PR！
 
-當然，若原作有更新，也歡迎開 issuu 告知，或 PR 協助翻譯，謝謝！
+當然，若原作有更新，也歡迎開 issue 告知，或 PR 協助翻譯，謝謝！
 
 接受任何意見回饋 [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/littlegoodjack.svg?style=social&label=Follow%20@littlegoodjack)](https://twitter.com/littlegoodjack)
 
