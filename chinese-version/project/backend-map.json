@@ -2815,13 +2815,13 @@
                     "ID": "128",
                     "typeID": "Label",
                     "zOrder": "128",
-                    "measuredW": "384",
+                    "measuredW": "401",
                     "measuredH": "25",
                     "x": "813",
                     "y": "852",
                     "properties": {
                         "size": "17",
-                        "text": "像是 *PHP 的 composer、Node.js 的 NPM 和 yarn*"
+                        "text": "像是 *PHP 的 composer、Node.js 的 NPM 和 yarn、*"
                     }
                 },
                 {
