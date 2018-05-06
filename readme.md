@@ -6,7 +6,7 @@
 
 ***
 
-<p align="center"><b>👋 你可能會有興趣：ES Guy – 前端開發週報</b><br> <a href="http://esguy.com">在這裡閱讀更多並訂閱</a></p>
+<p align="center"><b>👋 你可能會有興趣：ES Guy – 全端開發週報</b><br> <a href="http://esguy.com">在這裡閱讀更多並訂閱</a></p>
 
 ***
 <sub>看看我的[部落格](http://kamranahmed.info)，然後來 [Twitter](https://twitter.com/kamranahmedse) 說聲 "hi"。</sub><br>
@@ -57,7 +57,7 @@
 
 ## 👬 貢獻
 
-這些路線圖是用 [Balsamiq](https://balsamiq.com/products/mockups/) 建構的。專案文件可以在 `/project` 目錄中找到。要修改任何路線圖, 請打開 Balsamiq，點選 **Project > Import > Mockup JSON**，它就會幫你開啟路線圖，更新他，在 readme 中上傳和更新這些圖片，並開啟一個 PR。
+這些路線圖是用 [Balsamiq](https://balsamiq.com/products/mockups/) 建構的。專案文件可以在 `/project` 目錄中找到。要修改任何路線圖，請打開 Balsamiq，點選 **Project > Import > Mockup JSON**，它就會幫你開啟路線圖，更新他，在 readme 中上傳和更新這些圖片，並開啟一個 PR。
 
 - 改進並開啟 Pull Request
 - 在 Issue 中討論想法
