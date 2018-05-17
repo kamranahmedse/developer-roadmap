@@ -16,7 +16,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 🚀 Introduction
 
-![](https://i.imgur.com/OZUOUtI.png)
+![](./images/intro.png)
 
 ## 🎨 Frontend Roadmap
 
@@ -30,6 +30,10 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ![](https://i.imgur.com/pyg9mH1.png)
 
+## 💡 Solution Design Roadmap
+
+![](./images/solution-design.png)
+
 ## 🚦 Wrap Up
 
 If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
@@ -39,6 +43,7 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 - [X] Add Frontend Roadmap
 - [X] Add Backend Roadmap
 - [X] Add DevOps Roadmap
+- [X] Add Solution Design Roadmap
 - [ ] Add relevant resources for each
 
 ## 👬 Contribution
