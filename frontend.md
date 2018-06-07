@@ -36,7 +36,9 @@ Go ahead and make some responsive website and add interactivity with JavaScript.
 
 Before you go any further, I would recommend you to go and learn some [git](https://git-scm.com/) if you haven't learnt already. it is really going to help you as you go further. You don't have to learn everything about it, just learn the below listed and keep learning as you continue and face any issues.
 
-Its time to get into the real business now. Open [Github](https://github.com) and search for some projects and try to open some pull requests in some open-source projects. Some of the ideas for pull requested are listed below:
+Its time to get into the real business now. Open [Github](https://github.com) and search for some projects and try to open some pull requests in some open-source projects. Some of the 
+
+for pull requested are listed below:
 - Enhance the UI, make any demo pages responsive or improve the design
 - Look at any of the open issues that you can solve
 - Refactor any of the code that you think can be improved
@@ -126,7 +128,7 @@ There are several options, when it comes to frameworks. However, below listed fr
 
 ## Step 11 – Practical Time
 
-Now you know *everything* that one might need to build a modern JavaScript application. Go ahead and make some application with whatever framework you picked. You can find some of the ideas in the `ideas` directory in the repository; pick anything and start!
+Now you know *everything* that one might need to build a modern JavaScript application. Go ahead and make some application with whatever framework you picked. You can find some of the ideas in the [`ideas`](https://github.com/kamranahmedse/developer-roadmap/ideas) directory in the repository; pick anything and start!
 
 ## Step 12 – Learn about Performance
 
