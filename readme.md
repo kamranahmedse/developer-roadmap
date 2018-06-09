@@ -23,7 +23,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 👷 DevOps Roadmap
 
-![](https://i.imgur.com/pyg9mH1.png)
+![](./images/devops.png)
 
 ## 🚦 Wrap Up
 
@@ -52,5 +52,4 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 
 ## License
 
-
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC0%201.0-brightgreen.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
