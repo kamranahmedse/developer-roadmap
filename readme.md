@@ -4,11 +4,6 @@
 
 在下方，你會看到一系列的圖表，展示為了成為前端、後端或 DevOps 開發人員，你可以採取的路徑和你會想採用的技術。我為我的一位老教授做了這些圖表，他想和大學生分享一些東西，給他們一個觀點。
 
-***
-
-<p align="center"><b>👋 你可能會有興趣：ES Guy – 全端開發週報</b><br> <a href="http://esguy.com">在這裡閱讀更多並訂閱</a></p>
-
-***
 <sub>看看我的[部落格](http://kamranahmed.info)，然後來 [Twitter](https://twitter.com/kamranahmedse) 說聲 "hi"。</sub><br>
 <sub>（譯註：也歡迎來逛逛譯者的[部落格](http://goodjack.blogspot.com/)，然後來 [Twitter](https://twitter.com/littlegoodjack) 打個招呼 :P）</sub>
 
@@ -73,4 +68,4 @@
 ## 授權條款
 
 
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC0%201.0-brightgreen.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)

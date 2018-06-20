@@ -4,11 +4,6 @@
 
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective.
 
-***
-
-<p align="center"><b>👋 You might be interested in ES Guy – Weekly booklet on Full-Stack Development </b><br> <a href="http://esguy.com">Read the details and Subscribe here</a></p>
-
-***
 <sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
 
 ## Disclaimer
@@ -28,7 +23,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 👷 DevOps Roadmap
 
-![](https://i.imgur.com/pyg9mH1.png)
+![](./images/devops.png)
 
 ## 🚦 Wrap Up
 
@@ -57,5 +52,4 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 
 ## License
 
-
-[![License: CC BY 4.0](https://img.shields.io/badge/License-CC0%201.0-brightgreen.svg?style=flat-square)](https://creativecommons.org/licenses/by/4.0/)
+[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
