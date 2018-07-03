@@ -63,7 +63,6 @@
 ## Sponsored By
 
 - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
-- [Highig - Think and its done](http://highig.com/)
 
 ## 授權條款
 

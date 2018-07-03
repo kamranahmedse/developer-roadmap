@@ -48,7 +48,6 @@ The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/).
 ## Sponsored By
 
 - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
-- [Highig - Think and its done](http://highig.com/)
 
 ## License
 
