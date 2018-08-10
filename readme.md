@@ -1,4 +1,4 @@
-![Web Developer Roadmap](https://i.imgur.com/oxsayps.png)
+![Web Developer Roadmap](./chinese-version/images/banner.png)
 
 > 2018 年成為 Web 開發人員的路線圖
 
