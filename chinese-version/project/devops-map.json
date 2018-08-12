@@ -3940,7 +3940,7 @@
                     "ID": "196",
                     "typeID": "TextArea",
                     "zOrder": "196",
-                    "w": "253",
+                    "w": "267",
                     "h": "40",
                     "measuredW": "200",
                     "measuredH": "140",
@@ -4171,7 +4171,7 @@
                     "ID": "212",
                     "typeID": "TextArea",
                     "zOrder": "212",
-                    "w": "311",
+                    "w": "323",
                     "h": "49",
                     "measuredW": "200",
                     "measuredH": "140",
@@ -5300,7 +5300,7 @@
                     "zOrder": "287",
                     "measuredW": "160",
                     "measuredH": "19",
-                    "x": "708",
+                    "x": "705",
                     "y": "1457",
                     "properties": {
                         "bold": "false",
@@ -5326,6 +5326,7 @@
                     "ID": "290",
                     "typeID": "Label",
                     "zOrder": "289",
+                    "w": "155",
                     "measuredW": "155",
                     "measuredH": "19",
                     "x": "986",
@@ -5419,7 +5420,8 @@
                     "properties": {
                         "bold": "false",
                         "size": "11",
-                        "text": "（持續整合/持續交付）"
+                        "text": "（持續整合/持續交付）",
+                        "align": "left"
                     }
                 },
                 {
