@@ -19,7 +19,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 👽 Back-end Roadmap
 
-![](./images/backend.png)
+![Back-end Roadmap](./images/backend.png)
 
 ## 👷 DevOps Roadmap
 
