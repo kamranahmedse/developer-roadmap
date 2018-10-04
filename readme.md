@@ -11,7 +11,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 🚀 Introduction
 
-![](https://i.imgur.com/OZUOUtI.png)
+![Web Developer Roadmap Introduction](https://i.imgur.com/OZUOUtI.png)
 
 ## 🎨 Frontend Roadmap
 
