@@ -23,7 +23,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 👷 DevOps Roadmap
 
-![](./images/devops.png)
+![DevOps Roadmap](./images/devops.png)
 
 ## 🚦 Wrap Up
 
