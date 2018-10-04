@@ -15,7 +15,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 🎨 Frontend Roadmap
 
-![](./images/frontend-v2.png)
+![Frontend Roadmap](./images/frontend-v2.png)
 
 ## 👽 Back-end Roadmap
 
