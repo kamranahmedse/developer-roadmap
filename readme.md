@@ -36,7 +36,7 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 - [X] Add DevOps Roadmap
 - [ ] Add relevant resources for each
 
-## 👬 Contribution
+## 👫 Contribution
 
 The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/). Project file can be found at `/project` directory. To modify any of the roadmaps, open Balsamiq, click **Project > Import > Mockup JSON**, it will open the roadmap for you, update it, upload and update the images in readme and create a PR.		
 
