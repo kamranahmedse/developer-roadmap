@@ -11,19 +11,19 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 🚀 Introduction
 
-![](https://i.imgur.com/OZUOUtI.png)
+![Web Developer Roadmap Introduction](https://i.imgur.com/OZUOUtI.png)
 
 ## 🎨 Frontend Roadmap
 
-![](./images/frontend-v2.png)
+![Frontend Roadmap](./images/frontend-v2.png)
 
 ## 👽 Back-end Roadmap
 
-![](./images/backend.png)
+![Back-end Roadmap](./images/backend.png)
 
 ## 👷 DevOps Roadmap
 
-![](./images/devops.png)
+![DevOps Roadmap](./images/devops.png)
 
 ## 🚦 Wrap Up
 
@@ -38,7 +38,15 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 
 ## 👫 Contribution
 
-The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/). Project file can be found at `/project` directory. To modify any of the roadmaps, open Balsamiq, click **Project > Import > Mockup JSON**, it will open the roadmap for you, update it, upload and update the images in readme and create a PR.		
+> _**PRE-REQUISITE**: The roadmaps are built using [Balsamiq →](https://balsamiq.com/products/mockups/)_
+
+1. 🤔 **WHERE**: Project file can be found at [`/project`](./project) directory
+2. ⬇️ **IMPORT**: To modify any of the roadmaps, open Balsamiq, click <kbd>Project</kbd> ❯ <kbd>Import</kbd> ❯ <kbd>Mockup JSON</kbd>, put the relevant JSON file data from any roadmap in the [`/project`](./project) directory in Balsamiq
+3. 😮 **WHAT**: This will open the relevant roadmap for you. Now update it (double-click to edit text) and make all the changes
+4. ⬆️ **EXPORT**:
+    1. 🖨 **JSON**: Export Mockup to JSON, click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>Mockup to JSON</kbd> and update it in the [`/project`](./project) directory
+    2. 🖼 **IMAGES**: Before exporting images, make the background transparent (click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>Use Transparent Background</kbd>). Now export the images (click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>All Mockups to PNG</kbd>). Update the relevant images (keep the same name so you don't have to edit the `README.md` file) in the [`/images`](./images) directory
+5. 🚀 **PR**: Create a Pull Request for this repository (make sure to explain what you changed in the description)
 
 - Open pull request with improvements
 - Discuss ideas in issues
