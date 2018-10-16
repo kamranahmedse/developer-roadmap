@@ -29,24 +29,9 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
 
-## ☑ TODO
+## 🙌 Contribution
 
-- [X] Add Frontend Roadmap
-- [X] Add Backend Roadmap
-- [X] Add DevOps Roadmap
-- [ ] Add relevant resources for each
-
-## 👫 Contribution
-
-> _**PRE-REQUISITE**: The roadmaps are built using [Balsamiq →](https://balsamiq.com/products/mockups/)_
-
-1. 🤔 **WHERE**: Project file can be found at [`/project`](./project) directory
-2. ⬇️ **IMPORT**: To modify any of the roadmaps, open Balsamiq, click <kbd>Project</kbd> ❯ <kbd>Import</kbd> ❯ <kbd>Mockup JSON</kbd>, put the relevant JSON file data from any roadmap in the [`/project`](./project) directory in Balsamiq
-3. 😮 **WHAT**: This will open the relevant roadmap for you. Now update it (double-click to edit text) and make all the changes
-4. ⬆️ **EXPORT**:
-    1. 🖨 **JSON**: Export Mockup to JSON, click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>Mockup to JSON</kbd> and update it in the [`/project`](./project) directory
-    2. 🖼 **IMAGES**: Before exporting images, make the background transparent (click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>Use Transparent Background</kbd>). Now export the images (click <kbd>Project</kbd> ❯ <kbd>Export</kbd> ❯ <kbd>All Mockups to PNG</kbd>). Update the relevant images (keep the same name so you don't have to edit the `README.md` file) in the [`/images`](./images) directory
-5. 🚀 **PR**: Create a Pull Request for this repository (make sure to explain what you changed in the description)
+> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
 
 - Open pull request with improvements
 - Discuss ideas in issues
