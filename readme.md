@@ -11,34 +11,27 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## 🚀 Introduction
 
-![](https://i.imgur.com/OZUOUtI.png)
+![Web Developer Roadmap Introduction](https://i.imgur.com/OZUOUtI.png)
 
 ## 🎨 Frontend Roadmap
 
-![](./images/frontend-v2.png)
+![Frontend Roadmap](./images/frontend.png)
 
 ## 👽 Back-end Roadmap
 
-![](./images/backend.png)
+![Back-end Roadmap](./images/backend.png)
 
 ## 👷 DevOps Roadmap
 
-![](./images/devops.png)
+![DevOps Roadmap](./images/devops.png)
 
 ## 🚦 Wrap Up
 
 If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
 
-## ☑ TODO
+## 🙌 Contribution
 
-- [X] Add Frontend Roadmap
-- [X] Add Backend Roadmap
-- [X] Add DevOps Roadmap
-- [ ] Add relevant resources for each
-
-## 👬 Contribution
-
-The roadmaps are built using [Balsamiq](https://balsamiq.com/products/mockups/). Project file can be found at `/project` directory. To modify any of the roadmaps, open Balsamiq, click **Project > Import > Mockup JSON**, it will open the roadmap for you, update it, upload and update the images in readme and create a PR.		
+> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
 
 - Open pull request with improvements
 - Discuss ideas in issues
