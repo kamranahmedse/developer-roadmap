@@ -20,19 +20,19 @@ Below you find a set of charts demonstrating the paths that you can take and the
 ## Disclaimer
 > The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job
 
-## 🚀 Introduction
+## Introduction
 
 ![Web Developer Roadmap Introduction](./images/intro.png)
 
-## 🎨 Frontend Roadmap
+## Frontend Roadmap
 
 ![Frontend Roadmap](./images/frontend.png)
 
-## 👽 Back-end Roadmap
+## Back-end Roadmap
 
 ![Back-end Roadmap](./images/backend.png)
 
-## 👷 DevOps Roadmap
+## DevOps Roadmap
 
 ![DevOps Roadmap](./images/devops.png)
 
