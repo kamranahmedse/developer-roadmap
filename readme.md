@@ -7,7 +7,7 @@
   <p align="center">
     <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmaps-Frontend%20%7C%20Backend%20%7C%20DevOps-yellowgreen.svg"/></a>
       <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
-<a href="https://spectrum.chat/developer-roadmap"><img alt="Join the community on Spectrum" src="https://withspectrum.github.io/badge/badge.svg" /></a>
+<a href="https://spectrum.chat/developer-roadmap"><img alt="Join the community on Spectrum" src="https://img.shields.io/badge/community-spectrum-blue.svg" /></a>
   </p>
   <br>
 </p>
