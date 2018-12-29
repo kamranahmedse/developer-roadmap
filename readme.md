@@ -5,10 +5,10 @@
   <h2 align="center">Developer Roadmap</h2>
   <p align="center">Roadmap to becoming a Web Developer in 2019</p>
   <p align="center">
-      <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-red.svg"/></a>
     <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmap-2019-yellowgreen.svg"/></a>
       <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
 <a href="https://spectrum.chat/developer-roadmap"><img alt="Join the community on Spectrum" src="https://img.shields.io/badge/chat-on%20spectrum-yellowgreen.svg" /></a>
+        <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
   </p>
   <br>
 </p>
