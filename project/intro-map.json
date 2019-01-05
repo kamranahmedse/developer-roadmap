@@ -3,13 +3,13 @@
     "controls": {
       "control": [
         {
-          "ID": "321",
-          "measuredH": "40",
-          "measuredW": "347",
+          "ID": "0",
+          "measuredH": "47",
+          "measuredW": "275",
           "properties": {
             "bold": "true",
             "size": "32",
-            "text": "Web Developer in 2019"
+            "text": "웹 개발자 (2019년)"
           },
           "typeID": "Label",
           "x": "491",
@@ -17,10 +17,10 @@
           "zOrder": "0"
         },
         {
-          "ID": "322",
+          "ID": "1",
           "h": "129",
-          "measuredH": "127",
-          "measuredW": "54",
+          "measuredH": "128",
+          "measuredW": "74",
           "properties": {
             "color": "2848996",
             "curvature": "1",
@@ -47,7 +47,7 @@
           "zOrder": "1"
         },
         {
-          "ID": "323",
+          "ID": "2",
           "h": "131",
           "measuredH": "129",
           "measuredW": "131",
@@ -57,19 +57,19 @@
             "direction": "bottom",
             "leftArrow": "false",
             "p0": {
+              "length": 131,
               "x": 131,
-              "y": 0,
-              "length": 131
+              "y": 0
             },
             "p1": {
+              "length": 0.6087375480965977,
               "x": 0.5684088130944218,
-              "y": -0.21788259145523384,
-              "length": 0.6087375480965977
+              "y": -0.21788259145523384
             },
             "p2": {
+              "length": 129.00387591076478,
               "x": 1,
-              "y": 129,
-              "length": 129.00387591076478
+              "y": 129
             },
             "shape": "bezier"
           },
@@ -80,14 +80,14 @@
           "zOrder": "2"
         },
         {
-          "ID": "324",
-          "measuredH": "32",
-          "measuredW": "93",
+          "ID": "3",
+          "measuredH": "36",
+          "measuredW": "104",
           "properties": {
             "align": "center",
             "color": "16767334",
             "size": "18",
-            "text": "Front-end"
+            "text": "프론트엔드"
           },
           "typeID": "TextInput",
           "w": "132",
@@ -96,13 +96,13 @@
           "zOrder": "3"
         },
         {
-          "ID": "325",
-          "measuredH": "28",
-          "measuredW": "167",
+          "ID": "4",
+          "measuredH": "33",
+          "measuredW": "166",
           "properties": {
             "bold": "true",
             "size": "20",
-            "text": "Choose your path"
+            "text": "길을 선택해보세요"
           },
           "typeID": "Label",
           "x": "589",
@@ -110,14 +110,14 @@
           "zOrder": "4"
         },
         {
-          "ID": "326",
+          "ID": "5",
           "measuredH": "32",
-          "measuredW": "179",
+          "measuredW": "133",
           "properties": {
             "align": "center",
             "color": "16776960",
             "size": "18",
-            "text": "Git - Version Control"
+            "text": "Git - 버전 관리"
           },
           "typeID": "TextInput",
           "w": "288",
@@ -126,7 +126,7 @@
           "zOrder": "5"
         },
         {
-          "ID": "327",
+          "ID": "6",
           "measuredH": "32",
           "measuredW": "50",
           "properties": {
@@ -142,14 +142,14 @@
           "zOrder": "6"
         },
         {
-          "ID": "328",
+          "ID": "7",
           "measuredH": "32",
-          "measuredW": "209",
+          "measuredW": "191",
           "properties": {
             "align": "center",
             "color": "16776960",
             "size": "18",
-            "text": "HTTP/HTTPS and APIs"
+            "text": "HTTP/HTTPS와 APIs"
           },
           "typeID": "TextInput",
           "w": "289",
@@ -158,13 +158,13 @@
           "zOrder": "7"
         },
         {
-          "ID": "329",
-          "measuredH": "25",
-          "measuredW": "175",
+          "ID": "8",
+          "measuredH": "29",
+          "measuredW": "198",
           "properties": {
             "bold": "true",
             "size": "17",
-            "text": "Required for any path"
+            "text": "필수 사항 (어떠한 길이든)"
           },
           "typeID": "Label",
           "x": "67",
@@ -172,14 +172,14 @@
           "zOrder": "8"
         },
         {
-          "ID": "330",
-          "measuredH": "32",
-          "measuredW": "192",
+          "ID": "9",
+          "measuredH": "36",
+          "measuredW": "205",
           "properties": {
             "align": "center",
             "color": "16776960",
             "size": "18",
-            "text": "Basic Terminal Usage"
+            "text": "기본적인 터미널 사용법"
           },
           "typeID": "TextInput",
           "w": "289",
@@ -188,13 +188,13 @@
           "zOrder": "9"
         },
         {
-          "ID": "331",
-          "measuredH": "25",
-          "measuredW": "69",
+          "ID": "10",
+          "measuredH": "29",
+          "measuredW": "34",
           "properties": {
             "bold": "true",
             "size": "17",
-            "text": "Legends"
+            "text": "설명"
           },
           "typeID": "Label",
           "x": "976",
@@ -202,14 +202,14 @@
           "zOrder": "10"
         },
         {
-          "ID": "332",
-          "measuredH": "32",
-          "measuredW": "234",
+          "ID": "11",
+          "measuredH": "36",
+          "measuredW": "128",
           "properties": {
             "align": "center",
             "color": "16776960",
             "size": "18",
-            "text": "Personal Recommendation!"
+            "text": "개인적인 추천"
           },
           "typeID": "TextInput",
           "w": "240",
@@ -218,14 +218,14 @@
           "zOrder": "11"
         },
         {
-          "ID": "334",
-          "measuredH": "32",
-          "measuredW": "153",
+          "ID": "12",
+          "measuredH": "36",
+          "measuredW": "151",
           "properties": {
             "align": "center",
             "color": "16770457",
             "size": "18",
-            "text": "Available Options"
+            "text": "선택 가능한 옵션"
           },
           "typeID": "TextInput",
           "w": "240",
@@ -234,7 +234,7 @@
           "zOrder": "12"
         },
         {
-          "ID": "335",
+          "ID": "13",
           "h": "47",
           "measuredH": "46",
           "measuredW": "0",
@@ -244,19 +244,19 @@
             "direction": "top",
             "leftArrow": "false",
             "p0": {
+              "length": 0,
               "x": 0,
-              "y": 0,
-              "length": 0
+              "y": 0
             },
             "p1": {
+              "length": 0.5,
               "x": 0.5,
-              "y": 0,
-              "length": 0.5
+              "y": 0
             },
             "p2": {
+              "length": 46,
               "x": 0,
-              "y": 46,
-              "length": 46
+              "y": 46
             },
             "rightArrow": "false",
             "shape": "bezier"
@@ -268,14 +268,14 @@
           "zOrder": "13"
         },
         {
-          "ID": "336",
-          "measuredH": "32",
-          "measuredW": "92",
+          "ID": "14",
+          "measuredH": "36",
+          "measuredW": "68",
           "properties": {
             "align": "center",
             "color": "16767334",
             "size": "18",
-            "text": "Back-end"
+            "text": "백엔드"
           },
           "typeID": "TextInput",
           "w": "121",
@@ -284,7 +284,7 @@
           "zOrder": "14"
         },
         {
-          "ID": "337",
+          "ID": "15",
           "h": "71",
           "measuredH": "69",
           "measuredW": "0",
@@ -316,7 +316,7 @@
           "zOrder": "15"
         },
         {
-          "ID": "338",
+          "ID": "16",
           "h": "12",
           "measuredH": "11",
           "measuredW": "122",
@@ -326,19 +326,19 @@
             "direction": "bottom",
             "leftArrow": "false",
             "p0": {
+              "length": 11,
               "x": 0,
-              "y": 11,
-              "length": 11
+              "y": 11
             },
             "p1": {
+              "length": 0.4574898035968877,
               "x": 0.45357350377687367,
-              "y": 0.059732713538640264,
-              "length": 0.4574898035968877
+              "y": 0.059732713538640264
             },
             "p2": {
+              "length": 122.06555615733704,
               "x": 122,
-              "y": 4,
-              "length": 122.06555615733703
+              "y": 4
             },
             "shape": "bezier",
             "stroke": "solid"
@@ -350,14 +350,14 @@
           "zOrder": "16"
         },
         {
-          "ID": "339",
-          "measuredH": "32",
-          "measuredW": "81",
+          "ID": "17",
+          "measuredH": "36",
+          "measuredW": "86",
           "properties": {
             "align": "center",
             "color": "16767334",
             "size": "18",
-            "text": "DevOps"
+            "text": "데브옵스"
           },
           "typeID": "TextInput",
           "w": "112",
@@ -366,7 +366,7 @@
           "zOrder": "17"
         },
         {
-          "ID": "340",
+          "ID": "18",
           "h": "71",
           "measuredH": "69",
           "measuredW": "0",
@@ -398,7 +398,7 @@
           "zOrder": "18"
         },
         {
-          "ID": "341",
+          "ID": "19",
           "h": "77",
           "measuredH": "76",
           "measuredW": "0",
@@ -408,19 +408,19 @@
             "direction": "top",
             "leftArrow": "false",
             "p0": {
+              "length": 0,
               "x": 0,
-              "y": 0,
-              "length": 0
+              "y": 0
             },
             "p1": {
+              "length": 0.4539180376844135,
               "x": 0.4537465672812867,
-              "y": 0.01247548058061985,
-              "length": 0.4539180376844135
+              "y": 0.01247548058061985
             },
             "p2": {
+              "length": 76,
               "x": 0,
-              "y": 76,
-              "length": 76
+              "y": 76
             },
             "rightArrow": "false",
             "shape": "bezier",
@@ -433,71 +433,7 @@
           "zOrder": "19"
         },
         {
-          "ID": "345",
-          "measuredH": "32",
-          "measuredW": "255",
-          "properties": {
-            "align": "center",
-            "color": "16776960",
-            "size": "18",
-            "text": "Data Structures & Algorithms"
-          },
-          "typeID": "TextInput",
-          "w": "288",
-          "x": "68",
-          "y": "159",
-          "zOrder": "21"
-        },
-        {
-          "ID": "346",
-          "measuredH": "32",
-          "measuredW": "188",
-          "properties": {
-            "align": "center",
-            "color": "16776960",
-            "size": "18",
-            "text": "Character Encodings"
-          },
-          "typeID": "TextInput",
-          "w": "288",
-          "x": "68",
-          "y": "469",
-          "zOrder": "22"
-        },
-        {
-          "ID": "349",
-          "measuredH": "32",
-          "measuredW": "146",
-          "properties": {
-            "align": "center",
-            "color": "16776960",
-            "size": "18",
-            "text": "Design Patterns"
-          },
-          "typeID": "TextInput",
-          "w": "288",
-          "x": "68",
-          "y": "430",
-          "zOrder": "23"
-        },
-        {
-          "ID": "350",
-          "measuredH": "32",
-          "measuredW": "177",
-          "properties": {
-            "align": "center",
-            "color": "16776960",
-            "size": "18",
-            "text": "SOLID, KISS, YAGNI"
-          },
-          "typeID": "TextInput",
-          "w": "288",
-          "x": "68",
-          "y": "197",
-          "zOrder": "24"
-        },
-        {
-          "ID": "354",
+          "ID": "20",
           "measuredH": "32",
           "measuredW": "70",
           "properties": {
@@ -514,7 +450,71 @@
           "zOrder": "20"
         },
         {
-          "ID": "355",
+          "ID": "21",
+          "measuredH": "36",
+          "measuredW": "181",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "자료구조 & 알고리즘"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "159",
+          "zOrder": "21"
+        },
+        {
+          "ID": "22",
+          "measuredH": "36",
+          "measuredW": "110",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "문자 인코딩"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "469",
+          "zOrder": "22"
+        },
+        {
+          "ID": "23",
+          "measuredH": "36",
+          "measuredW": "110",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "디자인 패턴"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "430",
+          "zOrder": "23"
+        },
+        {
+          "ID": "24",
+          "measuredH": "32",
+          "measuredW": "177",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "SOLID, KISS, YAGNI"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "197",
+          "zOrder": "24"
+        },
+        {
+          "ID": "25",
           "measuredH": "32",
           "measuredW": "88",
           "properties": {
@@ -531,7 +531,7 @@
           "zOrder": "25"
         },
         {
-          "ID": "356",
+          "ID": "26",
           "measuredH": "32",
           "measuredW": "182",
           "properties": {
@@ -549,9 +549,9 @@
         }
       ]
     },
-    "measuredH": "501",
+    "measuredH": "505",
     "measuredW": "1216",
-    "mockupH": "460",
+    "mockupH": "464",
     "mockupW": "1149",
     "version": "1.0"
   }
