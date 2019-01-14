@@ -2,8 +2,8 @@
   <a href="http://github.com/kamranahmedse/developer-roadmap">
     <img src="https://i.imgur.com/Uid1O3A.png" alt="Developer Roadmap" width="96" height="96">
   </a>
-  <h2 align="center">Developer Roadmap</h2>
-  <p align="center">Roadmap to becoming a Web Developer in 2019</p>
+  <h2 align="center">Roteiro do Desenvolvedor</h2>
+  <p align="center">Roteiro para se tornar um Desenvolvedor Web em 2019</p>
   <p align="center">
     <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmap-2019-yellowgreen.svg"/></a>
           <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
@@ -13,14 +13,14 @@
   <br>
 </p>
 
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
+Abaixo você encontra um conjunto de infográficos demonstrando os caminhos que você pode seguir e as tecnologias que você gostaria de adotar para se tornar um frontend, backend ou devops. Fiz esses diagramas para um antigo professor meu que queria algo para compartilhar com seus estudantes universitários para lhes dar uma perspectiva; compartilhando-os aqui para ajudar a comunidade.
 
-<sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
+<sub>Confira meu [blog](http://kamranahmed.info) e diga "oi" no [Twitter](https://twitter.com/kamranahmedse).</sub>
 
-## Disclaimer
-> The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job
+## Aviso
+> O objetivo desses roteiros é dar uma idéia sobre o panorama de Desenvolvimento Web atual e guiá-lo se você estiver confuso sobre o que aprender e não para incentivá-lo a escolher o que é moderno e atual. Você deve entender melhor por que uma ferramenta seria mais adequada para alguns casos do que a outra e lembrar que, moda é a moda. As ferramentas da modas nunca são as mais adequadas para o trabalho.
 
-## Introduction
+## Introdução
 
 ![Web Developer Roadmap Introduction](./images/intro.png)
 
