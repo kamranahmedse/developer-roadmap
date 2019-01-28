@@ -6,9 +6,12 @@
   <p align="center">Roadmap to becoming a Web Developer in 2019</p>
   <p align="center">
     <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmap-2019-yellowgreen.svg"/></a>
-          <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
-      <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse/developer-roadmap"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
-<a href="https://twitter.com/kamranahmedse"><img src="https://img.shields.io/badge/feedback-@kamranahmedse-blue.svg" /></a>
+    <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
+    <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse/developer-roadmap"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
+    <a href="https://twitter.com/kamranahmedse"><img src="https://img.shields.io/badge/feedback-@kamranahmedse-blue.svg" /></a>
+    <br>
+    <span>English</span> |
+    <a href="https://github.com/hideraldus13/roadmap-do-desenvolvedor-web">Português</a>
   </p>
   <br>
 </p>
