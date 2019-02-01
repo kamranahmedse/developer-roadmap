@@ -22,37 +22,43 @@ Abaixo você encontra um conjunto de infográficos demonstrando os caminhos que 
 
 ## Introdução
 
-![Web Developer Roadmap Introduction](./images/intro.png)
+![Web Developer Roadmap Introduction](./images/pt-br/intro.png)
 
 ## Frontend Roadmap
 
-![Frontend Roadmap](./images/frontend.png)
+![Frontend Roadmap](./images/pt-br/frontend.png)
 
 ## Back-end Roadmap
 
-![Back-end Roadmap](./images/backend.png)
+![Back-end Roadmap](./images/pt-br/backend.png)
 
 ## DevOps Roadmap
 
-![DevOps Roadmap](./images/devops.png)
+![DevOps Roadmap](./images/pt-br/devops.png)
 
-## 🚦 Wrap Up
+## 🚦 Pra encerrar
 
-If you think any of the roadmaps can be improved, please do open a PR with any updates and submit any issues. Also, I will continue to improve this, so you might want to watch/star this repository to revisit.
+Se você acha que algum dos roteiros pode ser melhorado, por favor, abra um PR com quaisquer atualizações e envie quaisquer problemas. Além disso, vou continuar melhorando isso, então você pode querer observar (watch)/favoritar (star) este repositório para revisitar.
 
 ## 🙌 Contribution
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+> Dê uma olhada em [contribution docs](./contributing.md) para saber como atualizar qualquer um dos roteiros
 
-- Open pull request with improvements
-- Discuss ideas in issues
-- Spread the word
-- Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+- Abra um pull request com melhorias
+- Discuta ideias nas issues
+- Espalhe a palavra
+- Dê um feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
 
-## Sponsored By	
+## Patrocinado por
 
  - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
+
+## Versão brasileira
+
+ - [Herbert Richers](https://www.youtube.com/watch?v=At1BlQ0EGEU)
+ - [Jorge Andrade Neto](https://github.com/JorgeSegtowich)
  
+
 ## License
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
