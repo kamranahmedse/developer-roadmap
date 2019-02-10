@@ -51,13 +51,13 @@ Se você acha que algum dos roteiros pode ser melhorado, por favor, abra um PR c
 
 ## Patrocinado por
 
- - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
+ - [**Hackr.io** - Best Online Programming Courses & Tutorials Recommended by the Programming Community](https://hackr.io)
+ - [**Educative.io**: Become an employable Web Developer from scratch with this interactive learning track. Try a free preview today!](https://www.educative.io/track/beginning-front-end-developer)
 
 ## Versão brasileira
 
  - [Herbert Richers](https://www.youtube.com/watch?v=At1BlQ0EGEU)
  - [Jorge Andrade Neto](https://github.com/JorgeSegtowich)
- 
 
 ## License
 
