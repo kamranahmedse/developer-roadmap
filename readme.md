@@ -52,7 +52,6 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 ## Sponsored By	
 
  - [**Hackr.io** - Best Online Programming Courses & Tutorials Recommended by the Programming Community](https://hackr.io)
- - [**Educative.io**: Become an employable Web Developer from scratch with this interactive learning track. Try a free preview today!](https://www.educative.io/track/beginning-front-end-developer)
  
 ## License
 
