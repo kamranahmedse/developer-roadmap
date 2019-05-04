@@ -1,17 +1,6 @@
-<p align="center">
-  <a href="http://github.com/kamranahmedse/developer-roadmap">
-    <img src="https://i.imgur.com/Uid1O3A.png" alt="Developer Roadmap" width="96" height="96">
-  </a>
-  <h2 align="center">Developer Roadmap</h2>
-  <p align="center">Roadmap to becoming a Web Developer in 2019</p>
-  <p align="center">
-    <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmap-2019-yellowgreen.svg"/></a>
-          <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
-      <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse/developer-roadmap"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
-<a href="https://twitter.com/kamranahmedse"><img src="https://img.shields.io/badge/feedback-@kamranahmedse-blue.svg" /></a>
-  </p>
-  <br>
-</p>
+![Web Developer Roadmap](https://i.imgur.com/mQcbjjF.png)
+
+> Roadmap to becoming a web developer in 2019
 
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
 
