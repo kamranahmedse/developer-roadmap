@@ -19,7 +19,7 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## Frontend Roadmap
 
-![Frontend Roadmap](./images/frontend.png)
+![Frontend Roadmap](./images/frontend.png?fix=531)
 
 ## Back-end Roadmap
 
