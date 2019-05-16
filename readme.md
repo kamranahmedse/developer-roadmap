@@ -1,23 +1,16 @@
-<p align="center">
-  <a href="http://github.com/kamranahmedse/developer-roadmap">
-    <img src="https://i.imgur.com/Uid1O3A.png" alt="Developer Roadmap" width="96" height="96">
-  </a>
-  <h2 align="center">Developer Roadmap</h2>
-  <p align="center">Roadmap to becoming a Web Developer in 2019</p>
-  <p align="center">
-    <a href="https://github.com/kamranahmedse/developer-roadmap#-introduction"><img src="https://img.shields.io/badge/Roadmap-2019-yellowgreen.svg"/></a>
-          <a href="https://github.com/kamranahmedse/developer-roadmap/releases"><img src="https://img.shields.io/badge/Roadmaps-Past-yellow.svg"/></a>
-      <a href="https://twitter.com/home?status=Developer%20Roadmap%20by%20%40kamranahmedse%20http%3A//github.com/kamranahmedse/developer-roadmap"><img src="https://img.shields.io/badge/twitter-tweet-blue.svg"/></a>
-<a href="https://twitter.com/kamranahmedse"><img src="https://img.shields.io/badge/feedback-@kamranahmedse-blue.svg" /></a>
-  </p>
-  <br>
-</p>
+![Web Developer Roadmap - 2019](https://i.imgur.com/s5cCV9q.png)
+
+> Roadmap to becoming a web developer in 2019
 
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
 
-<sub>Check out my [blog](http://kamranahmed.info) and say "hi" on [Twitter](https://twitter.com/kamranahmedse).</sub>
+If you think that these can be improved in anyway, please do suggest.
 
-## Disclaimer
+***
+<p align="center"><b> 🎉 We are working on a more concise version of these roadmaps 🎉 </b><br>Keep your eyes on <a href="http://roadmap.sh">roadmap.sh</a> for the details!</p>
+
+***
+
 > The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job
 
 ## Introduction
@@ -26,7 +19,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ## Frontend Roadmap
 
-![Frontend Roadmap](./images/frontend.png)
+![Frontend Roadmap](./images/frontend.png?fix=531)
 
 ## Back-end Roadmap
 
@@ -51,8 +44,9 @@ If you think any of the roadmaps can be improved, please do open a PR with any u
 
 ## Sponsored By	
 
- - [Hackr.io - Find & Share the Best Online Programming Courses & Tutorials](https://hackr.io)
+ - [**Hackr.io** - Best Online Programming Courses & Tutorials Recommended by the Programming Community](https://hackr.io)
+ - [**Noon** – Develop, Document, Test and Monitor your APIs](https://noon.sh/)
  
 ## License
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
