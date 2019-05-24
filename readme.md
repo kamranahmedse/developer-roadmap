@@ -20,6 +20,14 @@ Abaixo você encontra um conjunto de infográficos demonstrando os caminhos que 
 ## Aviso
 > O objetivo desses roteiros é dar uma idéia sobre o panorama de Desenvolvimento Web atual e guiá-lo se você estiver confuso sobre o que aprender e não para incentivá-lo a escolher o que é moderno e atual. Você deve entender melhor por que uma ferramenta seria mais adequada para alguns casos do que a outra e lembrar que, moda é a moda. As ferramentas da modas nunca são as mais adequadas para o trabalho.
 
+Se você acha que isso pode ser melhorado de qualquer maneira, por favor sugira.
+
+***
+<p align="center"><b> 🎉 Estamos trabalhando em uma versão mais concisa desses roteiros 🎉 </b><br>Mantenha os olhos no <a href="http://roadmap.sh">roadmap.sh</a> para os detalhes!</p>
+
+***
+
+
 ## Introdução
 
 ![Web Developer Roadmap Introduction](./images/pt-br/intro.png)
@@ -53,12 +61,13 @@ Se você acha que algum dos roteiros pode ser melhorado, por favor, abra um PR c
 
  - [**Hackr.io** - Best Online Programming Courses & Tutorials Recommended by the Programming Community](https://hackr.io)
  - [**Educative.io**: Become an employable Web Developer from scratch with this interactive learning track. Try a free preview today!](https://www.educative.io/track/beginning-front-end-developer)
-
+ - [**Noon** – Develop, Document, Test and Monitor your APIs](https://noon.sh/)
+ 
 ## Versão brasileira
 
  - [Herbert Richers](https://www.youtube.com/watch?v=At1BlQ0EGEU)
  - [Jorge Andrade Neto](https://github.com/JorgeSegtowich)
-
+ 
 ## License
 
-[![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
