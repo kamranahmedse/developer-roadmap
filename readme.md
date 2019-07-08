@@ -1,47 +1,61 @@
-![Web Developer Roadmap - 2019](https://i.imgur.com/s5cCV9q.png)
+<div style="direction: rtl; text-laign: right;">
 
-> Roadmap to becoming a web developer in 2019
+# دليلك لتطوير الوب 2019
 
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
+مسار التعلم والتقنيات اللازمة لتصير مطور واجهات frontend او مبرمج وب backend او تقني تطوير devops
 
-If you think that these can be improved in anyway, please do suggest.
-
-***
-<p align="center"><b> 🎉 We are working on a more concise version of these roadmaps 🎉 </b><br>Keep your eyes on <a href="http://roadmap.sh">roadmap.sh</a> for the details!</p>
+منرحب بأي اقتراحات او ملاحظات بتساهم بتطوير الدليل
 
 ***
+<p align="center"><b> 🎉 العمل مستمر على تحديث الدليل 🎉 </b><br>
+لتبقى على اطلاع <a href="http://roadmap.sh">roadmap.sh</a></p>
 
-> The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job.
+***
 
-## Introduction
+> هدف الدليل اعطاء صورة عامة عن مجال تطوير الوب  لنساعدك تفهم وتبقى على اطلاع على اخر المجريات والتقنيات   الحديثة  
+بس دائما تذكر التقنية الدارجة والاحدث لا تعني بالضرورة التقنية الافضل لمشروعك
 
-![Web Developer Roadmap Introduction](./images/intro.png)
+## الترجمة
 
-## Frontend Roadmap
+تمت الترجمة الى اللغة العربية بواسطة @shu3aybbadran  
+لم تتم ترجمة المصطلحات واسماء التقنيات والمكتبات وغيرها من اللغة الانكليزية للاسباب التالية:
 
-![Frontend Roadmap](./images/frontend.png?fix=531)
+- ضرورة معرفة المتعلم للمصطلحات باللغة الانكليزية
+- اغلب المصادر العربية والدورات لا تترجم المصطلح وتستعمله باللغة الانكليزية
+- لا وجود لترجمة عربية متفق عليها
 
-## Back-end Roadmap
+## مقدمة
 
-![Back-end Roadmap](./images/backend.png)
+![Web Developer Roadmap Introduction](./images/ar/intro.png)
 
-## DevOps Roadmap
+## Frontend دليل مطور الواجهات
 
-![DevOps Roadmap](./images/devops.png)
+![Frontend Roadmap](./images/ar/frontend.png?fix=531)
 
-## 🚦 Wrap Up
+## Back-end دليل مبرمج الوب
 
-If you think any of the roadmaps can be improved, feel free to discuss it in the issues. Also, I will continue to improve this, so you might want to watch this repository or subscribe at [roadmap.sh](http://roadmap.sh) to revisit.
+![Back-end Roadmap](./images/ar/backend.png)
 
-## 🙌 Contribution
+## DevOps دليل تقني التطوير
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+![DevOps Roadmap](./images/ar/devops.png)
 
-- Open pull request with improvements
-- Discuss ideas in issues
-- Spread the word
-- Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
- 
-## License
+## 🚦 ملخص
+
+المشروع مستمر بالتطور لتلاقي احدث نسخة من الدليل تابع [roadmap.sh](http://roadmap.sh)  
+اي اقتراحات او افكار لتطوير المشروع راجع دليل المساهمة او انشئ issues وناقش مع المساهمين
+
+## 🙌 المساهمة
+
+> اطلع على [دليل المساهمة](./contributing.md) لتفاصيل التعديل او المساهمة
+
+- انشئ pull request مع التعديلات المقترحة
+- لمناقشة اي افكار او اسئلة انشئ issues
+- انشر الدليل
+- لابداء اي ملاحظات [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+
+## رخصة الاستخدام
 
 [![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
+
+</div>
