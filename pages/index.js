@@ -1,12 +1,9 @@
 import React from 'react';
-import Link from 'next/link';
+import Home from './home';
 
 const Index = () => (
   <div>
-    <Link href="/about">
-      <a title="About Page">About Page</a>
-    </Link>
-    <p>Hello Next.js</p>
+    <Home />
   </div>
 );
 
