@@ -1,0 +1,16 @@
+{
+  "name": "roadmap-next",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "proprietary",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^9.0.4",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
