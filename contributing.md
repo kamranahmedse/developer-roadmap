@@ -21,7 +21,7 @@ Your opinion on value of any resource may not match the opinion of curator.
 * Export the JSON file <kbd>Project > Export > Mockup to JSON</kbd> and put it in the <kbd>project</kbd> directory
 * Export the image <kbd>Project > Export > Current Mockup to PNG</kbd> and put it in the <kbd>images</kbd> directory
 * Commits your changes and open a PR
-
+* And Wait For Approval!
 ## Guidelines
 
 - <p><strong>Adding everything available out there is not the goal!</strong><br> 
