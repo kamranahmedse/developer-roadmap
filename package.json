@@ -9,11 +9,15 @@
     "start": "next start"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-free": "^5.10.2",
+    "@fortawesome/fontawesome-svg-core": "^1.2.22",
+    "@fortawesome/free-brands-svg-icons": "^5.10.2",
+    "@fortawesome/free-solid-svg-icons": "^5.10.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
     "@zeit/next-css": "latest",
     "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
+    "font-awesome": "^4.7.0",
     "next": "^9.0.4",
     "node-sass": "^4.12.0",
     "postcss-css-variables": "^0.13.0",

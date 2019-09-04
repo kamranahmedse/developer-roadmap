@@ -1,3 +1,4 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './style.scss';
 
 const HeroSection = () => (
@@ -8,7 +9,8 @@ const HeroSection = () => (
     <div className="register-form">
       <input type="text" className='email-input' placeholder='Enter Email Address' />
       <a href="#" className="btn btn-dark">Register</a>
-
+      <a href="#" className='icon-link'><FontAwesomeIcon icon={ ["fab", "github"] } /></a>
+      <a href="#" className='icon-link'><FontAwesomeIcon icon={ ["fab", "twitter"] } /></a>
     </div>
   </div>
 );
