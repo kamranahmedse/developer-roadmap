@@ -2,12 +2,12 @@ import './style.scss';
 
 const HeroSection = () => (
   <div className='hero-section'>
-    <h1>Roadmaps for Developers</h1>
+    <h1>Developer Roadmaps</h1>
     <p>Community driven, roadmaps, articles and resources for developers</p>
 
-    <div className="register-form d-flex">
-      <input type="text" />
-      <a href="#" className="btn btn-primary">Register</a>
+    <div className="register-form">
+      <input type="text" className='email-input' placeholder='Enter Email Address' />
+      <a href="#" className="btn btn-dark">Register</a>
 
     </div>
   </div>

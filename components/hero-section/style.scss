@@ -10,5 +10,32 @@
 
   p {
     color: #333;
+    margin-bottom: 25px;
+  }
+
+  .register-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 42px;
+
+    .email-input {
+      border: 3px solid #000000;
+      border-radius: 3px;
+      outline: none;
+      padding: 5px 13px;
+      min-width: 300px;
+    }
+
+    input, .btn {
+      height: 100%;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      margin-left: 15px;
+      padding: 5px 15px;
+    }
   }
 }
