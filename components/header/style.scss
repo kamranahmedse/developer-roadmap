@@ -1,0 +1,32 @@
+.page-header {
+  padding-top: 25px;
+  font-size: 18px;
+
+  .brand a {
+    background: #101010;
+    color: white;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 2px;
+  }
+
+  .nav-links {
+    a {
+      padding: 0 10px;
+      text-decoration: none;
+      font-size: 16px;
+      color: #101010;
+    }
+
+    .signup {
+      background: #101010;
+      color: #ffffff;
+      padding: 7px 10px;
+      margin-left: 15px;
+
+      &:hover {
+        background: #2d2d2d;
+      }
+    }
+  }
+}
