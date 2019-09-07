@@ -9,7 +9,7 @@ const FeaturedContent = (props) => (
           <p className="border-through  featured-separator">
             <span>
               List of roadmaps mostly visited by the community&nbsp;
-              <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps</a>
+              <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps &rarr;</a>
             </span>
           </p>
         </div>
@@ -40,7 +40,7 @@ const FeaturedContent = (props) => (
         <p className='border-through featured-separator'>
           <span>
             List of most visited guides&nbsp;
-            <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides</a>
+            <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a>
           </span>
         </p>
         <div className="swim-lane row">
