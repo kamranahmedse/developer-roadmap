@@ -2,6 +2,10 @@ import './style.scss';
 
 const SwimLane = (props) => (
   <>
+    <div className="lane-head">
+      <h3>Featured Roadmaps</h3>
+      <p>List of roadmaps mostly visited by the community. There are <a href="#">more roadmaps also</a>.</p>
+    </div>
     <div className={ `swim-lane ${props.className}` }>
       <a className="lane-item" href='#'>
         <h4>Frontend Developer</h4>

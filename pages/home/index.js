@@ -7,8 +7,8 @@ export const Home = (props) => (
   <div className='home-container'>
     <Header />
     <HeroSection />
-    <div className="container">
-      <div className="swim-lanes">
+    <div className="swim-lanes bg-light">
+      <div className="container">
         <SwimLane />
       </div>
     </div>
