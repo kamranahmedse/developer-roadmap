@@ -7,7 +7,10 @@ const FeaturedContent = (props) => (
         <div className="featured-head">
           <h3>Featured Content</h3>
           <p className="border-through  featured-separator">
-            <span>List of roadmaps mostly visited by the community <a href="#" className="dark-link">View all Roadmaps</a></span>
+            <span>
+              List of roadmaps mostly visited by the community&nbsp;
+              <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps</a>
+            </span>
           </p>
         </div>
         <div className="swim-lane row">
@@ -34,7 +37,12 @@ const FeaturedContent = (props) => (
     </div>
     <div className="featured-content-wrap">
       <div className="container">
-        <p className='border-through featured-separator'><span>List of most visited guides <a href="#" className="dark-link">View all Guides</a></span></p>
+        <p className='border-through featured-separator'>
+          <span>
+            List of most visited guides&nbsp;
+            <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides</a>
+          </span>
+        </p>
         <div className="swim-lane row">
           <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container">
             <a className="featured-block" href='#'>
