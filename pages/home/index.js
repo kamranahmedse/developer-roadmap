@@ -7,7 +7,7 @@ export const Home = (props) => (
   <div className='home-container'>
     <Header />
     <HeroSection />
-    <div className="swim-lanes border-top border-bottom">
+    <div className="featured-content border-top border-bottom bg-light">
       <FeaturedContent />
     </div>
   </div>
