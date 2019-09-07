@@ -1,54 +1,28 @@
 .hero-section {
   text-align: center;
-  padding: 80px 20px;
+  padding: 70px 20px;
+  margin: 0 auto;
+
+  .container {
+    max-width: 800px;
+  }
 
   h1 {
-    font-size: 35px;
+    font-size: 70px;
     font-weight: 700;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
 
   p {
+    font-size: 20px;
     color: #333;
-    font-weight: 500;
-    margin-bottom: 35px;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 35px;
   }
 
-  .register-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 42px;
-
-    .email-input {
-      border: 3px solid #000000;
-      outline: none;
-      padding: 5px 13px;
-      min-width: 320px;
-    }
-
-    input, .btn {
-      border-radius: 0;
-      height: 100%;
-    }
-
-    .icon-link {
-      color: #000000;
-      margin-left: 15px;
-    }
-
-    .btn {
-      display: flex;
-      align-items: center;
-      margin-left: 15px;
-      margin-right: 8px;
-      padding: 5px 15px;
-    }
-
-    svg {
-      display: flex;
-      width: 30px;
-      height: 30px;
-    }
+  a {
+    font-weight: 700;
+    color: #000;
   }
 }

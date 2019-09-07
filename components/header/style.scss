@@ -1,11 +1,15 @@
 .page-header {
-  padding-top: 25px;
+  padding: 15px 0;
   font-size: 18px;
 
-  .brand a {
-    background: #101010;
-    color: white;
+  .top-row {
+    display: flex;
+    align-items: center;
+  }
+
+  .brand img {
     padding: 5px 10px;
+    height: 50px;
     text-decoration: none;
     border-radius: 2px;
   }
@@ -15,11 +19,12 @@
       padding: 0 10px;
       text-decoration: none;
       font-size: 16px;
-      color: #101010;
+      color: #666;
     }
 
     .signup {
       background: #101010;
+      border-radius: 5px;
       color: #ffffff;
       padding: 7px 10px;
       margin-left: 15px;

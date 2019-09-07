@@ -2,9 +2,11 @@ import './style.scss';
 
 const Header = () => (
   <div className='page-header'>
-    <div className="d-flex">
+    <div className="top-row container">
       <div className="flex-grow-1 brand">
-        <a href="#">roadmap.sh</a>
+        <a href="#">
+          <img src="/static/brand.png" alt="" />
+        </a>
       </div>
       <div className="nav-links">
         <a href="#">Roadmaps</a>
