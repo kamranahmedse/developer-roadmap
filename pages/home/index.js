@@ -1,5 +1,5 @@
 import Header from '../../components/header/index';
-import SwimLane from '../../components/swim-lane';
+import FeaturedContent from '../../components/featured-content';
 import './style.scss';
 import HeroSection from '../../components/hero-section';
 
@@ -8,7 +8,7 @@ export const Home = (props) => (
     <Header />
     <HeroSection />
     <div className="swim-lanes border-top border-bottom">
-      <SwimLane />
+      <FeaturedContent />
     </div>
   </div>
 );

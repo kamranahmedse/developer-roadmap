@@ -1,5 +1,5 @@
-.lane-wrap {
-  .lane-head {
+.featured-content-wrap {
+  .featured-head {
     text-align: center;
     display: block;
 
@@ -15,10 +15,20 @@
     font-size: 18px;
     margin-bottom: 40px;
     margin-top: 25px;
+
+    a {
+      background: black;
+      color: white;
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-decoration: none;
+      margin-left: 5px;
+    }
   }
 
   .swim-lane {
-    .lane-item {
+    .featured-block {
       border: 1px solid #f7f7f7;
       display: block;
       text-decoration: none;
