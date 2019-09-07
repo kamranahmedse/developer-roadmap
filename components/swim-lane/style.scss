@@ -1,58 +1,64 @@
-.lane-head {
-  text-align: left;
-  margin: 0 0 40px 0;
-  display: block;
+.lane-wrap {
+  padding: 50px 0;
+  border-top: 1px solid #eaeaea;
+  border-bottom: 1px solid #eaeaea;
 
-  h3 {
-    font-weight: 700;
-    font-size: 35px;
-    margin-bottom: 14px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 18px;
-    margin-bottom: 0;
-  }
-}
-
-.swim-lane {
-  display: flex;
-  flex-direction: row;
-
-  .lane-item + .lane-item {
-    margin-left: 35px;
-  }
-
-  .lane-item {
-    border: 1px solid #f7f7f7;
+  .lane-head {
+    text-align: left;
+    margin: 0 0 40px 0;
     display: block;
-    margin-bottom: 1px;
-    text-decoration: none;
-    color: #000000;
-    background: #ffffff;
-    padding: 28px 25px 25px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.12) 0 5px 10px;
-    transition: box-shadow 0.2s ease 0s;
-    cursor: pointer;
 
-    &:hover {
-      box-shadow: rgba(0, 0, 0, 0.12) 0 30px 60px;
-    }
-
-    h4 {
-      font-size: 24px;
-      line-height: 22px;
+    h3 {
       font-weight: 700;
-      margin-bottom: 16px;
+      font-size: 35px;
+      margin-bottom: 14px;
     }
 
     p {
-      font-size: 15px;
-      line-height: 25px;
-      color: #999999;
+      font-weight: 400;
+      font-size: 18px;
       margin-bottom: 0;
+    }
+  }
+
+  .swim-lane {
+    display: flex;
+    flex-direction: row;
+
+    .lane-item + .lane-item {
+      margin-left: 35px;
+    }
+
+    .lane-item {
+      border: 1px solid #f7f7f7;
+      display: block;
+      margin-bottom: 1px;
+      text-decoration: none;
+      color: #000000;
+      background: #ffffff;
+      padding: 28px 25px 25px;
+      border-radius: 10px;
+      box-shadow: rgba(0, 0, 0, 0.12) 0 5px 10px;
+      transition: box-shadow 0.2s ease 0s;
+      cursor: pointer;
+
+      &:hover {
+        box-shadow: rgba(0, 0, 0, 0.12) 0 30px 60px;
+      }
+
+      h4 {
+        font-size: 24px;
+        line-height: 22px;
+        font-weight: 700;
+        margin-bottom: 16px;
+      }
+
+      p {
+        font-size: 15px;
+        line-height: 25px;
+        color: #999999;
+        margin-bottom: 0;
+      }
     }
   }
 }
