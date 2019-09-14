@@ -18,7 +18,7 @@ const Footer = () => (
               &copy; roadmap.sh &middot;
               &nbsp; <a href="#">FAQ</a> &middot;
               &nbsp; <a href="/terms">Terms</a> &middot;
-              &nbsp; <a href="#">Privacy</a>
+              &nbsp; <a href="/privacy">Privacy</a>
             </p>
           </div>
         </div>
