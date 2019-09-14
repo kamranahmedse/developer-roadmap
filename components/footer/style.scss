@@ -2,6 +2,7 @@
   padding: 65px 10px;
 
   .site-meta {
+    margin-bottom: 30px;
     width: 350px;
 
     .brand-detail {
@@ -55,12 +56,37 @@
     }
 
     .meta-links {
-        color: #a3a3a3;
+      color: #a3a3a3;
       font-size: 15px;
 
       a {
         color: #000;
         text-decoration: none;
+      }
+    }
+  }
+
+  .foot-col {
+    max-width: 190px;
+
+    a {
+      color: #999;
+    }
+
+    .foot-header {
+      font-weight: 500;
+      margin-bottom: 7px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        margin-bottom: 2px;
+        font-size: 15px;
+        list-style: none;
+        margin-left: 0;
       }
     }
   }
