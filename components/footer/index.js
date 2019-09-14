@@ -22,7 +22,7 @@ const Footer = () => (
             </p>
           </div>
         </div>
-        <div className="site-contribute foot-col col">
+        <div className="site-contribute foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className='foot-header'>Contribute</li>
             <li><a href="#">Write an Article</a></li>
@@ -31,7 +31,7 @@ const Footer = () => (
             <li><a href="#">Codebase</a></li>
           </ul>
         </div>
-        <div className="site-learn foot-col col">
+        <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className="foot-header">Learn</li>
             <li><a href="#">Read Articles</a></li>
@@ -40,7 +40,7 @@ const Footer = () => (
             <li><a href="#">Contribute</a></li>
           </ul>
         </div>
-        <div className="site-learn foot-col col">
+        <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className="foot-header">Most Visited</li>
             <li><a href="#">Frontend Roadmap</a></li>
