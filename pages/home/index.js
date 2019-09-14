@@ -4,7 +4,7 @@ import './style.scss';
 import HeroSection from '../../components/hero-section';
 import Footer from '../../components/footer';
 
-export const Home = (props) => (
+const Home = (props) => (
   <div className='home-container'>
     <Header />
     <HeroSection />

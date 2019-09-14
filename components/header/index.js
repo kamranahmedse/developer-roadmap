@@ -4,7 +4,7 @@ const Header = () => (
   <div className='page-header'>
     <div className="top-row container">
       <div className="flex-grow-1 brand">
-        <a href="#">
+        <a href="/">
           <img src="/static/brand.png" alt="" />
         </a>
       </div>

@@ -17,7 +17,7 @@ const Footer = () => (
             <p className='meta-links'>
               &copy; roadmap.sh &middot;
               &nbsp; <a href="#">FAQ</a> &middot;
-              &nbsp; <a href="#">Terms</a> &middot;
+              &nbsp; <a href="/terms">Terms</a> &middot;
               &nbsp; <a href="#">Privacy</a>
             </p>
           </div>
