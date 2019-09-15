@@ -1,0 +1,35 @@
+.about-header {
+  text-align: center;
+  padding: 70px 20px;
+  margin: 0 auto;
+
+  .container {
+    max-width: 800px;
+  }
+
+  h2 {
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    margin-bottom: 0;
+    line-height: 35px;
+  }
+
+  a {
+    font-weight: 700;
+    color: #000;
+  }
+
+  .author-img {
+    height: 145px;
+    border-radius: 100%;
+    margin-top: 25px;
+    margin-bottom: -125px;
+    border: 10px solid white;
+    box-shadow: 0 1px 0 0 #dee2e6;
+  }
+}
