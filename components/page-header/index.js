@@ -1,6 +1,6 @@
 import './style.scss';
 
-const Header = () => (
+const PageHeader = () => (
   <div className='page-header'>
     <div className="top-row container">
       <div className="flex-grow-1 brand">
@@ -19,4 +19,4 @@ const Header = () => (
   </div>
 );
 
-export default Header;
+export default PageHeader;

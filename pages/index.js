@@ -1,10 +1,10 @@
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, fab } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, fab, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './global.scss';
+import 'bootstrap/scss/bootstrap.scss';
 import Home from './home/index';
+import './global.scss';
 
 library.add(fab, faGithub, faArrowRight);
 

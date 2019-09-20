@@ -1,10 +1,12 @@
 .about-header {
-  text-align: center;
+  text-align: left;
   padding: 70px 20px;
   margin: 0 auto;
 
-  .container {
-    max-width: 800px;
+  .author-info {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
   }
 
   h2 {
@@ -25,11 +27,21 @@
   }
 
   .author-img {
-    height: 145px;
-    border-radius: 100%;
-    margin-top: 25px;
-    margin-bottom: -125px;
-    border: 10px solid white;
-    box-shadow: 0 1px 0 0 #dee2e6;
+    height: 160px;
+    margin-right: 25px;
+    margin-top: 8px;
+    border-radius: 9px;
+  }
+
+  .author-links a {
+    display: inline-block;
+    margin-right: 5px;
+    background: #2d2d2d;
+    color: white;
+    padding: 5px 10px;
+    font-weight: 500;
+    margin-top: 12px;
+    border-radius: 5px;
+    text-decoration: none;
   }
 }

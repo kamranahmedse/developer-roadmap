@@ -1,6 +1,6 @@
 import './style.scss';
 
-const Footer = () => (
+const PageFooter = () => (
   <div className="page-footer">
     <div className="container">
       <div className="foot-cols-wrap row">
@@ -54,4 +54,4 @@ const Footer = () => (
   </div>
 );
 
-export default Footer;
+export default PageFooter;

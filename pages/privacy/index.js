@@ -1,10 +1,10 @@
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import PageHeader from '../../components/page-header';
+import PageFooter from '../../components/page-footer';
 import './style.scss';
 
 const Privacy = () => (
   <div className='terms-container'>
-    <Header />
+    <PageHeader />
     <div className="bg-light border-top border-bottom privacy-wrap">
       <div className="container pt-5 pb-5">
         <h2 className='font-weight-bold mb-3'>Privacy Policy</h2>
@@ -59,7 +59,7 @@ const Privacy = () => (
         <p>If you have any questions or concerns regarding our privacy policies, please send us a detailed message to <a href="mailto:contact@roadmap.sh">contact@roadmap.sh</a>, and we will try to resolve your concerns.</p>
       </div>
     </div>
-    <Footer />
+    <PageFooter />
   </div>
 );
 

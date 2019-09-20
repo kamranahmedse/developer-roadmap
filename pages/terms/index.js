@@ -1,10 +1,10 @@
-import Header from '../../components/header';
-import Footer from '../../components/footer';
+import PageFooter from '../../components/page-footer';
+import PageHeader from '../../components/page-header';
 import './style.scss';
 
 const Terms = () => (
   <div className='terms-container'>
-    <Header />
+    <PageHeader />
     <div className="bg-light border-top border-bottom tos-wrap">
       <div className="container pt-5 pb-5">
         <h2 className='font-weight-bold mb-3'>Terms of Service</h2>
@@ -140,10 +140,11 @@ const Terms = () => (
         <p>Miscellaneous. You will be responsible for paying, withholding, filing, and reporting all taxes, duties, and other governmental assessments associated with your activity in connection with the Services, provided that roadmap.sh may, in its sole discretion, do any of the foregoing on your behalf or for itself as it sees fit.
           The failure of either you or us to exercise, in any way, any right herein shall not be deemed a waiver of any further rights hereunder. If any provision of these Terms is found to be unenforceable or invalid, that provision will be limited or eliminated, to the minimum extent necessary, so that these Terms shall otherwise remain
           in full force and effect and enforceable. You and roadmap.sh agree that these Terms are the complete and exclusive statement of the mutual understanding between you and roadmap.sh, and that it supersedes and cancels all previous written and oral agreements, communications and other understandings relating to the subject
-          matter of these Terms. You hereby acknowledge and agree that you are not an employee, agent, partner, or joint venture of roadmap.sh, and you do not have any authority of any kind to bind roadmap.sh in any respect whatsoever. Except as expressly set forth in the section above regarding the Apple Application, you and roadmap.sh agree there are no third party beneficiaries intended under these Terms.</p>
+          matter of these Terms. You hereby acknowledge and agree that you are not an employee, agent, partner, or joint venture of roadmap.sh, and you do not have any authority of any kind to bind roadmap.sh in any respect whatsoever. Except as expressly set forth in the section above regarding the Apple Application, you and roadmap.sh
+          agree there are no third party beneficiaries intended under these Terms.</p>
       </div>
     </div>
-    <Footer />
+    <PageFooter />
   </div>
 );
 

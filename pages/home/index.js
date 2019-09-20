@@ -1,17 +1,17 @@
-import Header from '../../components/header/index';
 import FeaturedContent from '../../components/featured-content';
-import './style.scss';
 import HeroSection from '../../components/hero-section';
-import Footer from '../../components/footer';
+import PageFooter from '../../components/page-footer';
+import PageHeader from '../../components/page-header';
+import './style.scss';
 
 const Home = (props) => (
   <div className='home-container'>
-    <Header />
+    <PageHeader />
     <HeroSection />
     <div className="featured-content border-top border-bottom bg-light">
       <FeaturedContent />
     </div>
-    <Footer />
+    <PageFooter />
   </div>
 );
 
