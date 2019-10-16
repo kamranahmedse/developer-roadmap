@@ -13,6 +13,8 @@ Your opinion on value of any resource may not match the opinion of curator.
 ## How are these roadmaps made?
 
 > Roadmaps are made using [Balsamiq](https://balsamiq.com/download/){target=_blank}
+[Relative Link With New Tab](../index.md "Opens new tab for relative home page"){target=_blank}  
+[Reference Link With New Tab](https://github.com/fire1ce/3os.org/ "Opens new tab for reference link"){target=_blank}
 
 * Clone the repository
 * Open Balsamiq, click <kbd>Project > Import > Mockup JSON</kbd>,
