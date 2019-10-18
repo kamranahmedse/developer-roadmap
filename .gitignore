@@ -1,5 +1,7 @@
 .next
 .idea
 .DS_Store
+out
+build
 node_modules
 yarn-error.log

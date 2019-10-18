@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "html": "next export"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
