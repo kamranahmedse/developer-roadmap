@@ -1,4 +1,4 @@
-import Home from './home/index';
+import Home from './home';
 import DefaultLayout from '../layouts/default';
 
 const Index = () => (

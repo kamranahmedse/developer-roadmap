@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 
+export const FeaturedWrap = styled.div`
+  padding: 50px 0;
+`;
+
 export const FeaturedContentWrap = styled.div`
   .featured-head {
     text-align: center;

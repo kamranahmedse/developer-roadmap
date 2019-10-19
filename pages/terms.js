@@ -1,15 +1,15 @@
-import PageFooter from '../../components/page-footer';
-import PageHeader from '../../components/page-header';
-import DefaultLayout from '../../layouts/default';
-import { TermsWrap } from './style';
+import PageFooter from '../components/page-footer/index';
+import PageHeader from '../components/page-header/index';
+import { TosPage } from '../components/tos-page/index';
+import DefaultLayout from '../layouts/default/index';
 
 const Terms = () => (
   <DefaultLayout>
-    <TermsWrap>
+    <TosPage>
       <PageHeader />
       <div className="bg-light border-top border-bottom tos-wrap">
         <div className="container pt-5 pb-5">
-          <h2 className='font-weight-bold mb-3'>Terms of Service</h2>
+          <h2>Terms of Service</h2>
 
           <p className='text-uppercase'>Please note that your use of and access to our services (defined below) are subject to the following terms; if you do not agree to all of the following, you may not use or access the services in any manner.</p>
 
@@ -158,7 +158,7 @@ const Terms = () => (
         </div>
       </div>
       <PageFooter />
-    </TermsWrap>
+    </TosPage>
   </DefaultLayout>
 );
 

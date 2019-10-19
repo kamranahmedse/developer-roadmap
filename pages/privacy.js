@@ -1,11 +1,11 @@
-import PageHeader from '../../components/page-header';
-import PageFooter from '../../components/page-footer';
-import DefaultLayout from '../../layouts/default';
-import { PrivacyWrap } from './style';
+import PageHeader from '../components/page-header/index';
+import PageFooter from '../components/page-footer/index';
+import { TosPage } from '../components/tos-page/index';
+import DefaultLayout from '../layouts/default/index';
 
 const Privacy = () => (
   <DefaultLayout>
-    <PrivacyWrap>
+    <TosPage>
       <PageHeader />
       <div className="bg-light border-top border-bottom privacy-wrap">
         <div className="container pt-5 pb-5">
@@ -105,7 +105,7 @@ const Privacy = () => (
         </div>
       </div>
       <PageFooter />
-    </PrivacyWrap>
+    </TosPage>
   </DefaultLayout>
 );
 

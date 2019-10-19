@@ -1,7 +1,7 @@
-import { FeaturedContentWrap } from './style';
+import { FeaturedContentWrap, FeaturedWrap } from './style';
 
 const FeaturedContent = (props) => (
-  <>
+  <FeaturedWrap className="border-top border-bottom bg-light">
     <FeaturedContentWrap className="featured-content-wrap">
       <div className="container">
         <div className="featured-head">
@@ -131,7 +131,7 @@ const FeaturedContent = (props) => (
         </div>
       </div>
     </FeaturedContentWrap>
-  </>
+  </FeaturedWrap>
 );
 
 FeaturedContent.defaultProps = {
