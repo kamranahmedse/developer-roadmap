@@ -1,4 +1,6 @@
-.page-footer {
+import styled from 'styled-components';
+
+export const FooterWrap = styled.div`
   padding: 65px 10px;
 
   .site-meta {
@@ -89,4 +91,4 @@
       }
     }
   }
-}
+`;

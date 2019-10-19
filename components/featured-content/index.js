@@ -1,8 +1,8 @@
-import './style.scss';
+import { FeaturedContentWrap } from './style';
 
 const FeaturedContent = (props) => (
   <>
-    <div className="featured-content-wrap">
+    <FeaturedContentWrap className="featured-content-wrap">
       <div className="container">
         <div className="featured-head">
           <h3>Featured Content</h3>
@@ -34,8 +34,8 @@ const FeaturedContent = (props) => (
           </div>
         </div>
       </div>
-    </div>
-    <div className="featured-content-wrap">
+    </FeaturedContentWrap>
+    <FeaturedContentWrap className="featured-content-wrap">
       <div className="container">
         <p className='border-through featured-separator'>
           <span>
@@ -82,8 +82,8 @@ const FeaturedContent = (props) => (
           </div>
         </div>
       </div>
-    </div>
-    <div className="featured-content-wrap">
+    </FeaturedContentWrap>
+    <FeaturedContentWrap className="featured-content-wrap">
       <div className="container">
         <p className='border-through featured-separator'>
           <span>
@@ -130,7 +130,7 @@ const FeaturedContent = (props) => (
           </div>
         </div>
       </div>
-    </div>
+    </FeaturedContentWrap>
   </>
 );
 

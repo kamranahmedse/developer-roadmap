@@ -1,7 +1,7 @@
-import './style.scss';
+import { FooterWrap } from './style.js'
 
 const PageFooter = () => (
-  <div className="page-footer">
+  <FooterWrap>
     <div className="container">
       <div className="foot-cols-wrap row">
         <div className="site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12">
@@ -51,7 +51,7 @@ const PageFooter = () => (
         </div>
       </div>
     </div>
-  </div>
+  </FooterWrap>
 );
 
 export default PageFooter;

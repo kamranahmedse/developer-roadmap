@@ -1,4 +1,6 @@
-.page-header {
+import styled from 'styled-components';
+
+export const HeaderWrap = styled.div`
   padding: 15px 0;
   font-size: 18px;
 
@@ -34,4 +36,4 @@
       }
     }
   }
-}
+`;

@@ -1,7 +1,7 @@
-import './style.scss';
+import { HeaderWrap } from './style';
 
 const PageHeader = () => (
-  <div className='page-header'>
+  <HeaderWrap>
     <div className="top-row container">
       <div className="flex-grow-1 brand">
         <a href="/">
@@ -16,7 +16,7 @@ const PageHeader = () => (
         <a href="#" className='signup'>Sign Up</a>
       </div>
     </div>
-  </div>
+  </HeaderWrap>
 );
 
 export default PageHeader;

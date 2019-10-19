@@ -1,13 +1,14 @@
 import AboutHeader from '../../components/about-header';
 import PageFooter from '../../components/page-footer';
 import PageHeader from '../../components/page-header';
-import './style.scss';
+import { FaqContainer } from './style';
+import DefaultLayout from '../../layouts/default';
 
 const About = () => (
-  <div className='home-container'>
+  <DefaultLayout>
     <PageHeader />
     <AboutHeader />
-    <div className="faqs-container border-top border-bottom bg-light">
+    <FaqContainer className='border-top border-bottom bg-light'>
       <div className="faq-item">
         <div className="container container-small">
           <h4 className='font-weight-bolder'>What is roadmap.sh?</h4>
@@ -33,9 +34,9 @@ const About = () => (
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi consequuntur, harum impedit numquam porro quod unde! Aperiam dolorum ducimus expedita fugiat, impedit nesciunt, quaerat qui recusandae repellendus tenetur ut voluptatibus!</p>
         </div>
       </div>
-    </div>
+    </FaqContainer>
     <PageFooter />
-  </div>
+  </DefaultLayout>
 );
 
 export default About;

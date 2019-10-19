@@ -1,4 +1,6 @@
-.hero-section {
+import styled from 'styled-components';
+
+export const HeroSectionWrap = styled.div`
   text-align: center;
   padding: 70px 20px;
   margin: 0 auto;
@@ -25,4 +27,4 @@
     font-weight: 700;
     color: #000;
   }
-}
+`;

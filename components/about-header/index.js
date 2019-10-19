@@ -1,7 +1,7 @@
-import './style.scss';
+import { AboutHeaderWrap } from './style';
 
 const AboutHeader = () => (
-  <div className='about-header'>
+  <AboutHeaderWrap>
     <div className="container container-small">
       <div className="author-info">
         <img className='author-img d-none d-sm-none d-md-block d-lg-block d-xl-block' src="/static/kamran.jpeg" />
@@ -15,7 +15,7 @@ const AboutHeader = () => (
         </div>
       </div>
     </div>
-  </div>
+  </AboutHeaderWrap>
 );
 
 export default AboutHeader;

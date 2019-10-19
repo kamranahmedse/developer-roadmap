@@ -1,4 +1,6 @@
-.featured-content-wrap {
+import styled from 'styled-components';
+
+export const FeaturedContentWrap = styled.div`
   .featured-head {
     text-align: center;
     display: block;
@@ -133,4 +135,4 @@
       border-radius: 10px 10px 0 0;
     }
   }
-}
+`;

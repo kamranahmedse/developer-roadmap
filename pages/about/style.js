@@ -1,9 +1,11 @@
-.faqs-container {
-  padding: 40px 0;
+import styled from 'styled-components';
 
+export const FaqContainer = styled.div`
+  padding: 40px 0;
+  
   .faq-item {
     padding: 20px 20px;
-
+  
     p {
       color: #333;
     }
@@ -11,6 +13,4 @@
       margin-bottom: 0;
     }
   }
-}
-
-
+`;

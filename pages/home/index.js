@@ -2,17 +2,19 @@ import FeaturedContent from '../../components/featured-content';
 import HeroSection from '../../components/hero-section';
 import PageFooter from '../../components/page-footer';
 import PageHeader from '../../components/page-header';
-import './style.scss';
+import DefaultLayout from '../../layouts/default';
+import { FeaturedWrap } from './style';
+
 
 const Home = (props) => (
-  <div className='home-container'>
+  <DefaultLayout>
     <PageHeader />
     <HeroSection />
-    <div className="featured-content border-top border-bottom bg-light">
+    <FeaturedWrap className="border-top border-bottom bg-light">
       <FeaturedContent />
-    </div>
+    </FeaturedWrap>
     <PageFooter />
-  </div>
+  </DefaultLayout>
 );
 
 export default Home;

@@ -1,17 +1,10 @@
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faGithub, fab, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
-
-import 'bootstrap/scss/bootstrap.scss';
 import Home from './home/index';
-import './global.scss';
-
-library.add(fab, faGithub, faArrowRight);
+import DefaultLayout from '../layouts/default';
 
 const Index = () => (
-  <div>
+  <DefaultLayout>
     <Home />
-  </div>
+  </DefaultLayout>
 );
 
 export default Index;

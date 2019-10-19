@@ -23,6 +23,10 @@
     "node-sass": "^4.12.0",
     "postcss-css-variables": "^0.13.0",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "styled-components": "^4.4.0"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.10.6"
   }
 }

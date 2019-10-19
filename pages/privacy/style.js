@@ -1,4 +1,6 @@
-.tos-wrap {
+import styled from 'styled-components';
+
+export const PrivacyWrap = styled.div`
   h4 {
     margin-top: 25px;
     margin-bottom: 10px;
@@ -12,4 +14,4 @@
   a {
     color: #333;
   }
-}
+`;
