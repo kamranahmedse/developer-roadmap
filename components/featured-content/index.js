@@ -7,7 +7,6 @@ const FeaturedContent = (props) => (
   <FeaturedWrap className="border-top border-bottom bg-light">
     <FeaturedRoadmaps />
     <FeaturedGuides />
-    { /*<FeaturedJourneys />*/ }
   </FeaturedWrap>
 );
 

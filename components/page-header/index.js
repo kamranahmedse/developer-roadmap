@@ -11,7 +11,6 @@ const PageHeader = () => (
       <div className="nav-links">
         <a href="#">Roadmaps</a>
         <a href="#">Guides</a>
-        <a href="#">Journeys</a>
         <a href="#">FAQs</a>
         <a href="#" className='signup'>Sign Up</a>
       </div>

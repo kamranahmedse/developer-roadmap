@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Frontend Developer",
+    "description": "Roadmap to becoming a frontend developer",
+    "slug": "frontend"
+  },
+  {
+    "title": "Backend Developer",
+    "description": "Roadmap to becoming a backend developer",
+    "slug": "backend"
+  },
+  {
+    "title": "DevOps",
+    "description": "Roadmap for DevOps or any other Operations Role",
+    "slug": "devops"
+  }
+]
