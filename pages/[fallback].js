@@ -1,19 +1,21 @@
-import { useRouter } from 'next/router';
 import Roadmap from './roadmaps/[roadmap]';
 import roadmapsList from "../data/roadmaps.json";
+import { serverOnlyProps } from '../lib/server';
 
 // Fallback page to handle the old roadmap pages implementation
-const OldRoadmap = () => {
-  const router = useRouter();
-  const { fallback } = router.query;
-
-  // Render the roadmap if it exists, otherwise 404
-  const roadmapExists = !!roadmapsList.find(roadmap => roadmap.slug === fallback);
-  if (roadmapExists) {
-    return <Roadmap roadmap={ fallback } />
+const OldRoadmap = ({ roadmap }) => {
+  if (roadmap) {
+    return <Roadmap roadmap={ roadmap } />
   }
 
-  return <h1>404</h1>;
+  return <h1>404</h1>
 };
+
+OldRoadmap.getInitialProps = serverOnlyProps(({ req }) => {
+  return {
+    roadmap: roadmapsList.find(roadmap => roadmap.slug === req.url),
+  };
+});
+
 
 export default OldRoadmap;

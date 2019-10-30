@@ -1,27 +1,24 @@
-import { useRouter } from 'next/router';
+import roadmaps from "../../data/roadmaps";
 import DefaultLayout from '../../layouts/default/index';
 import PageHeader from '../../components/page-header/index';
-// import roadmaps from "../../data/roadmaps";
+import { serverOnlyProps } from '../../lib/server';
 
-const Roadmap = (props) => {
-  const router = useRouter();
-  const {
-    roadmap: slug,
-  } = router.query;
-
-  console.log(router);
-
-  // @todo handle 404
-  // const roadmap = roadmaps.find(roadmap => roadmap.slug === slug);
-
+const Roadmap = ({ roadmap }) => {
   return (
     <DefaultLayout>
       <PageHeader />
       <div className="container">
-        {/*<img src={ roadmap.picture } alt="" />*/}
+        <img src={ roadmap.picture } alt="" />
       </div>
     </DefaultLayout>
   );
 };
+
+Roadmap.getInitialProps = serverOnlyProps(({ req }) => {
+  const normalizedUrl = req.url.replace('roadmaps/', '');
+  return {
+    roadmap: roadmaps.find(roadmap => roadmap.slug === normalizedUrl),
+  };
+});
 
 export default Roadmap;
