@@ -30,7 +30,7 @@ const FeaturedJourneys = () => (
         </div>
         <div className="col-xl-3 col-lg-3 col-md-4 col-sm-12 col-12 grid-item-container journey-block">
           <a href="#">
-            <img src="/static/dan-abramove.jpeg" alt="" />
+            <img src="/static/dan-abramov.jpeg" alt="" />
             <div className="journey-meta">
               <h4>Dan Abramov</h4>
               <p>Co-founder and CTO at Blink</p>

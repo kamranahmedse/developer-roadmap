@@ -8,6 +8,12 @@ module.exports = withCSS(withSass({
       '/about': { page: '/about' },
       '/privacy': { page: '/privacy' },
       '/terms': { page: '/terms' },
+      '/frontend': { page: '/frontend' },
+      '/backend': { page: '/backend' },
+      '/devops': { page: '/devops' },
+      '/roadmaps/frontend': { page: '/roadmaps/frontend' },
+      '/roadmaps/backend': { page: '/roadmaps/backend' },
+      '/roadmaps/devops': { page: '/roadmaps/devops' },
     };
   },
 
