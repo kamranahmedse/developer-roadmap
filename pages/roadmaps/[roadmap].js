@@ -2,14 +2,15 @@ import roadmaps from "../../data/roadmaps";
 import DefaultLayout from '../../layouts/default/index';
 import PageHeader from '../../components/page-header/index';
 import { serverOnlyProps } from '../../lib/server';
+import RoadmapSummary from '../../components/roadmap-summary';
+import PageFooter from '../../components/page-footer';
 
 const Roadmap = ({ roadmap }) => {
   return (
     <DefaultLayout>
       <PageHeader />
-      <div className="container">
-        <img src={ roadmap.picture } alt="" />
-      </div>
+      <RoadmapSummary roadmap={ roadmap } />
+      <PageFooter />
     </DefaultLayout>
   );
 };
