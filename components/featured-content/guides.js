@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FeaturedContentWrap } from './style';
 
 const FeaturedGuides = () => (
@@ -6,7 +7,7 @@ const FeaturedGuides = () => (
       <p className='border-through featured-separator'>
           <span>
             List of most visited guides&nbsp;
-            <a href="#" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a>
+            <Link href="/guides"><a className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a></Link>
           </span>
       </p>
       <div className="swim-lane row">

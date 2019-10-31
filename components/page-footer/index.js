@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { FooterWrap } from './style.js'
 
 const PageFooter = () => (
@@ -7,9 +8,11 @@ const PageFooter = () => (
         <div className="site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12">
           <div className="site-meta">
             <div className="brand-detail">
-              <a href="#" className='brand'><img src="/static/brand.png" alt="" /> roadmap.sh</a>
+              <Link href="/"><a className='brand'><img src="/static/brand.png" alt="" /> roadmap.sh</a></Link>
               <span className="preposition">by</span>
-              <a href="#" className='follow-author'>@kamranahmedse</a>
+              <Link href="https://twitter.com/kamranahmedse">
+                <a target="_blank" className='follow-author'>@kamranahmedse</a>
+              </Link>
             </div>
             <div className="brand-explanation">
               <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>

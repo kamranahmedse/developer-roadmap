@@ -12,8 +12,8 @@ const PageHeader = () => (
       <div className="nav-links">
         <Link href="/roadmaps"><a>Roadmaps</a></Link>
         <Link href="/guides"><a>Guides</a></Link>
-        <Link href="/faq"><a>FAQs</a></Link>
-        <Link href="/signup"><a>Sign Up</a></Link>
+        <Link href="/about"><a>FAQs</a></Link>
+        <Link href="/signup"><a className="signup">Sign Up</a></Link>
       </div>
     </div>
   </HeaderWrap>
