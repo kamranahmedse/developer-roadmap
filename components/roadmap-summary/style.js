@@ -9,7 +9,7 @@ export const Header = styled.div`
 
 export const Summary = styled.div`
   text-align: center;
-  padding: 50px 0;
+  padding: 0 0 50px;
 `;
 
 export const Title = styled.h1`
@@ -17,10 +17,46 @@ export const Title = styled.h1`
   margin-bottom: 12px;
   font-size: 42px;
 `;
+
 export const Description = styled.p`
   font-size: 19px;
-  margin-bottom: 0;
 `;
+
 export const Image = styled.img`
   width: 100%;
+`;
+
+export const VersionList = styled.div`
+  margin: 35px 0 15px;
+`;
+
+export const VersionLink = styled.a`
+  display: inline-block;
+  position: relative;
+  padding: 5px 10px 8px;
+  text-decoration: none;
+  color: rgb(102, 102, 102);
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: capitalize;
+
+  &.active, &.active:hover {
+    color: #2d2d2d;
+    
+    &:after {
+      position: absolute;
+      content: "";
+      display: block;
+      height: 0;
+      left: 9px;
+      right: 9px;
+      bottom: -1px;
+      border-bottom: 2px solid currentColor;
+    }
+  }
+  
+  &:hover {
+    text-decoration: none;
+    color: #111111;
+  }
 `;

@@ -1,6 +1,7 @@
-import Roadmap from './roadmaps/[roadmap]';
-import roadmapsList from "../data/roadmaps.json";
-import { serverOnlyProps } from '../lib/server';
+import Error from 'next/error';
+import Roadmap from '../roadmaps/[roadmap]/index';
+import { serverOnlyProps } from '../../lib/server';
+import { getRequestedRoadmap } from '../../lib/roadmap';
 
 // Fallback page to handle the old roadmap pages implementation
 const OldRoadmap = ({ roadmap }) => {
@@ -8,12 +9,12 @@ const OldRoadmap = ({ roadmap }) => {
     return <Roadmap roadmap={ roadmap } />
   }
 
-  return <h1>404</h1>
+  return <Error status={ 404 } />;
 };
 
 OldRoadmap.getInitialProps = serverOnlyProps(({ req }) => {
   return {
-    roadmap: roadmapsList.find(roadmap => roadmap.slug === req.url),
+    roadmap: getRequestedRoadmap(req),
   };
 });
 

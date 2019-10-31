@@ -20,7 +20,7 @@ const FeaturedRoadmaps = () => (
         { roadmaps
           .filter(({ featured }) => featured)
           .map(roadmap => (
-            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container">
+            <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container" key={roadmap.slug}>
               <Link href={ roadmap.slug }>
                 <a className="featured-block">
                   <h4>{ roadmap.title }</h4>

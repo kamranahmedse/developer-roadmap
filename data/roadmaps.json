@@ -3,24 +3,39 @@
     "title": "Frontend Developer",
     "description": "Step by step guide to becoming a modern frontend developer",
     "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2019",
-    "slug": "/frontend",
+    "slug": "/roadmaps/frontend",
     "picture": "/static/roadmaps/frontend.png",
-    "featured": true
+    "featured": true,
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ]
   },
   {
     "title": "Backend Developer",
-    "description": "Roadmap to becoming a backend developer",
+    "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2019",
-    "slug": "/backend",
+    "slug": "/roadmaps/backend",
     "picture": "/static/roadmaps/backend.png",
-    "featured": true
+    "featured": true,
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ]
   },
   {
     "title": "DevOps Roadmap",
-    "description": "Roadmap for DevOps or any other Operations Role",
+    "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2019",
-    "slug": "/devops",
+    "slug": "/roadmaps/devops",
     "picture": "/static/roadmaps/devops.png",
-    "featured": true
+    "featured": true,
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ]
   }
 ]

@@ -18,6 +18,7 @@
     "@zeit/next-sass": "^1.0.1",
     "autoprefixer": "^9.6.1",
     "bootstrap": "^4.3.1",
+    "classnames": "^2.2.6",
     "font-awesome": "^4.7.0",
     "next": "^9.0.4",
     "node-sass": "^4.12.0",
