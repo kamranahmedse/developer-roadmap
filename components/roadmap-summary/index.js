@@ -12,6 +12,11 @@ import {
   VersionList,
 } from './style';
 
+const isActiveRoadmap = (loadedVersion, roadmapVersion) => (
+  (loadedVersion === roadmapVersion) ||
+  (loadedVersion === 'latest' && parseInt(roadmapVersion, 10) === (new Date()).getFullYear())
+);
+
 const RoadmapSummary = ({ roadmap }) => (
   <SummaryContainer>
     <Header>
@@ -21,7 +26,7 @@ const RoadmapSummary = ({ roadmap }) => (
         { (roadmap.versions || []).map(versionItem => (
           <Link href={ `${roadmap.slug}/${versionItem}` } passHref key={ versionItem }>
             <VersionLink className={ classNames({
-              active: versionItem === roadmap.version,
+              active: isActiveRoadmap(versionItem, roadmap.version),
             }) }>{ versionItem } Version</VersionLink>
           </Link>
         )) }

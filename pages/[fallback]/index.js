@@ -9,7 +9,7 @@ const OldRoadmap = ({ roadmap }) => {
     return <Roadmap roadmap={ roadmap } />
   }
 
-  return <Error status={ 404 } />;
+  return <Error statusCode={ 404 } />;
 };
 
 OldRoadmap.getInitialProps = serverOnlyProps(({ req }) => {
