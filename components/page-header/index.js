@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { HeaderWrap } from './style';
 
 const PageHeader = () => (
@@ -9,10 +10,10 @@ const PageHeader = () => (
         </a>
       </div>
       <div className="nav-links">
-        <a href="#">Roadmaps</a>
-        <a href="#">Guides</a>
-        <a href="#">FAQs</a>
-        <a href="#" className='signup'>Sign Up</a>
+        <Link href="/roadmaps"><a>Roadmaps</a></Link>
+        <Link href="/guides"><a>Guides</a></Link>
+        <Link href="/faq"><a>FAQs</a></Link>
+        <Link href="/signup"><a>Sign Up</a></Link>
       </div>
     </div>
   </HeaderWrap>
