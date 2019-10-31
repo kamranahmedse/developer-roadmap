@@ -11,6 +11,8 @@ const Head = (props) => (
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <meta property='og:url' content={ props.url || defaultOgUrl } />
     <meta property='og:title' content={ props.title || '' } />
+    <link rel="shortcut icon" href="/static/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/static/favicon.ico" type="image/x-icon" />
   </NextHead>
 );
 
