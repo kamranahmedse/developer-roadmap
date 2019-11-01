@@ -5,7 +5,7 @@ const Roadmap = () => (
   <DefaultLayout>
     <PageHeader />
     <div className="container">
-      <p>Show all roadmaps here</p>
+      <p>Show all guides here</p>
     </div>
   </DefaultLayout>
 );

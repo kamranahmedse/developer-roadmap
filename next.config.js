@@ -1,14 +1,24 @@
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
+const rehypePrism = require('@mapbox/rehype-prism')
 
-module.exports = withCSS(withSass({
+const withMDX = require('@next/mdx')({
+  extension: /\.(md|mdx)?$/,
+  options: {
+    rehypePlugins: [rehypePrism],
+  },
+});
+
+const options = {
   exportPathMap: () => {
+    // @todo make it dynamic for pages, authors and guides
     return {
       '/': { page: '/' },
       '/about': { page: '/about' },
       '/privacy': { page: '/privacy' },
       '/terms': { page: '/terms' },
       '/roadmaps': { page: '/roadmaps' },
+      '/guides': { page: '/guides' },
       '/frontend': { page: '/[fallback]', query: "frontend" },
       '/backend': { page: '/[fallback]', query: "backend" },
       '/devops': { page: '/[fallback]', query: "devops" },
@@ -17,6 +27,9 @@ module.exports = withCSS(withSass({
       '/roadmaps/devops': { page: '/roadmaps/[roadmap]', query: "devops" },
     };
   },
+
+  // Allow mdx and md files to be pages
+  pageExtensions: ['jsx', 'js', 'mdx', 'md'],
 
   webpack(config, options) {
     config.module.rules.push({
@@ -31,4 +44,11 @@ module.exports = withCSS(withSass({
 
     return config
   },
-}));
+};
+
+//
+let nextConfig = withSass(options);
+nextConfig = withCSS(nextConfig);
+nextConfig = withMDX(nextConfig);
+
+module.exports = nextConfig;
