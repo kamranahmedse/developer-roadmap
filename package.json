@@ -16,6 +16,7 @@
     "@fortawesome/react-fontawesome": "^0.1.4",
     "@mapbox/rehype-prism": "^0.3.1",
     "@mdx-js/loader": "^1.5.1",
+    "@mdx-js/react": "^1.5.1",
     "@next/mdx": "^9.1.2",
     "@zeit/next-css": "latest",
     "@zeit/next-sass": "^1.0.1",

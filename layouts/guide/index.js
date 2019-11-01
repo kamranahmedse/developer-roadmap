@@ -1,4 +1,5 @@
 import React from 'react';
+import { MDXProvider } from '@mdx-js/react'
 import DefaultLayout from '../default';
 import PageHeader from '../../components/page-header';
 import PageFooter from '../../components/page-footer';
@@ -8,13 +9,13 @@ class GuideLayout extends React.Component {
     const { children } = this.props;
 
     return (
-      <DefaultLayout>
-        <PageHeader />
-        <div className="container">
+      <MDXProvider>
+        <DefaultLayout>
+          <PageHeader />
           { children }
-        </div>
-        <PageFooter />
-      </DefaultLayout>
+          <PageFooter />
+        </DefaultLayout>
+      </MDXProvider>
     );
   }
 }

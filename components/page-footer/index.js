@@ -10,9 +10,7 @@ const PageFooter = () => (
             <div className="brand-detail">
               <Link href="/"><a className='brand'><img src="/static/brand.png" alt="" /> roadmap.sh</a></Link>
               <span className="preposition">by</span>
-              <Link href="https://twitter.com/kamranahmedse">
-                <a target="_blank" className='follow-author'>@kamranahmedse</a>
-              </Link>
+              <a href="https://twitter.com/kamranahmedse" target="_blank" className='follow-author'>@kamranahmedse</a>
             </div>
             <div className="brand-explanation">
               <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
