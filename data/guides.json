@@ -1,0 +1,56 @@
+[
+  {
+    "title": "Design Patterns for Humans",
+    "description": "A language agnostic, ultra-simplified explanation to design patterns",
+    "slug": "/guides/design-patterns-for-humans",
+    "featured": true,
+    "author": "kamranahmedse",
+    "createdAt": "June 12, 2019",
+    "updatedAt": "June 12, 2019"
+  },
+  {
+    "title": "Learn Regex",
+    "description": "An easy to understand guide on regular expressions with real world examples",
+    "slug": "/guides/learn-regex",
+    "featured": true,
+    "author": "ziishaned",
+    "createdDate": "June 19, 2019",
+    "updatedAt": "June 19, 2019"
+  },
+  {
+    "title": "Bash Guide",
+    "description": "Easy to understand guide for bash with real world usage examples.",
+    "slug": "/guides/bash-guide",
+    "featured": true,
+    "author": "idnan",
+    "createdAt": "May 18, 2018",
+    "updatedAt": "May 18, 2018"
+  },
+  {
+    "title": "DNS in One Picture",
+    "description": "Quick illustrative guide on how a website is found on the internet.",
+    "slug": "/guides/dns-in-one-picture",
+    "featured": true,
+    "author": "kamranahmedse",
+    "createdAt": "May 11, 2018",
+    "updatedAt": "May 11, 2018"
+  },
+  {
+    "title": "Using React Hooks",
+    "description": "Start using React hooks in your react applications today with this guide.",
+    "slug": "/guides/using-react-hooks",
+    "featured": true,
+    "author": "kamranahmedse",
+    "createdAt": "October 22, 2019",
+    "updatedAt": "October 22, 2019"
+  },
+  {
+    "title": "HTTP Caching",
+    "description": "Everything you need to know about web caching",
+    "slug": "/guides/http-caching",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "November 01, 2019",
+    "createdAt": "November 01, 2019"
+  }
+]

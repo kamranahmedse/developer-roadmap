@@ -1,0 +1,17 @@
+[
+  {
+    "username": "kamranahmedse",
+    "name": "Kamran Ahmed",
+    "picture": "/static/authors/kamranahmedse.jpeg"
+  },
+  {
+    "username": "ziishaned",
+    "name": "Zeeshan Ahmed",
+    "picture": "/static/authors/ziishaned.png"
+  },
+  {
+    "username": "idnan",
+    "name": "Adnan Ahmed",
+    "picture": "/static/authors/idnan.jpeg"
+  }
+]
