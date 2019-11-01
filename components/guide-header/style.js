@@ -3,6 +3,7 @@ import styled from 'styled-components';
 export const HeaderWrap = styled.div`
   padding: 80px 15px 45px;
   text-align: center;
+  margin-bottom: 50px;
 `;
 
 export const GuideTitle = styled.h1`
@@ -26,7 +27,9 @@ export const GuideMeta = styled.p`
 
 export const GuideDate = styled.span`
   margin-left: 7px;
+  margin-right: 7px;
 `;
+
 export const GuideAuthor = styled.a`
   margin-right: 7px;
   font-weight: 500;
@@ -36,9 +39,16 @@ export const GuideAuthor = styled.a`
     color: #101010;
   }
 `;
+
 export const AuthorImage = styled.img`
   width: 22px;
   height: 22px;
   border-radius: 100%;
   margin-right: 10px;
 `;
+
+export const EditGuide = styled.a`
+  margin-left: 7px;
+`;
+
+export const ActionItems = styled.div``;
