@@ -5,6 +5,7 @@ import GuideHeader from '../../components/guide-header';
 import GuideContent from '../../data/guides/keep-it-clean.md';
 import GuideBody from '../../components/guide-body';
 import ShareGuide from '../../components/share-guide';
+import GuideFooter from '../../components/guide-footer';
 
 const Guide = ({ guide }) => {
   return (
@@ -13,6 +14,7 @@ const Guide = ({ guide }) => {
       <GuideBody>
         <GuideContent />
         <ShareGuide />
+        <GuideFooter />
       </GuideBody>
     </GuideLayout>
   );

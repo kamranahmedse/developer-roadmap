@@ -1,11 +1,8 @@
-import { faGithub, fab } from '@fortawesome/free-brands-svg-icons';
-import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
 
 import Head from './head';
 import './global.scss';
-
-library.add(fab, faGithub, faArrowRight);
 
 const DefaultLayout = (props) => (
   <div>
