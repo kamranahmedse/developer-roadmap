@@ -1,16 +1,33 @@
 ## Markdown UI Check
-> This page is used to test the common UI components of a guide
 
-## Headers
-Here is the list of headings
-```markdown
-# H1
-## H2
-### H3
-#### H4
-##### H5
-###### H6
+Smart people who use advanced applications and are experts in finance or mechanical engineering, but who have never tried development, look over my shoulder when I’m coding and go to pieces. In their heads, coding is a mystical art, and to misquote Arthur C. Clarke’s famous adage, it is sufficiently advanced to be indistinguishable from magic. I type incantations into this black screen (if, then, while, do, else, class, border) and a website appears. I’ve summoned it with those magic words. I might as well be Harry Potter saying “NPMicus Compilate!” and waving around a wand.
+
+Recently, a colleague came across some garbled nonsense output on a computer screen. I forget what it was now. Maybe a base64 encoded string, a load of hex, or a memory address to an error somewhere. Whatever it was, it was a page full of nonsense characters.   
+
+> In software engineering, a software design pattern is a general reusable solution to a commonly occurring problem within a given context in software design. It is not a finished design that can be transformed directly into source or machine code. It is a description or template for how to solve a problem that can be used in many different situations.
+
+This was a short summary of this item to see how does it fit into the UI.
+
+## Let's add some code
+
+Now we need to format the code and see how it shows up in the UI when we have it.
+
+One of the coolest [things](https://google.com) about React Native is that if you use it together with tools like CodePush or AppHub you can update your app instantly and avoid those painful 1-week app store submissions. That also means that you can push a hotfix on the fly, but the question is: how do you know if your app is crashing? (Unfortunately not all projects have a QA team)
+
+```php
+// Make me a door of 100x200
+$door = DoorFactory::makeDoor(100, 200);
+
+echo 'Width: ' . $door->getWidth();
+echo 'Height: ' . $door->getHeight();
+
+// Make me a door of 50x100
+$door2 = DoorFactory::makeDoor(50, 100);
 ```
+
+Serverful apps need to run consistently, watching for requests. Then, when requested, the app handles the request itself. In serverful monolith style apps, routing is commonly handled by a single file. Let's look at an Express.js example to illustrate this:
+                                                                                                                          
+
 # H1
 ## H2
 ### H3
@@ -303,7 +320,7 @@ Underscores
 
 ## Line Breaks
 
-My basic recommendation for learning how line breaks work is to experiment and discover -- hit <Enter /> once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
+My basic recommendation for learning how line breaks work is to experiment and discover -- hit `<Enter />` once (i.e., insert one newline), then hit it twice (i.e., insert two newlines), see what happens. You'll soon learn to get what you want. "Markdown Toggle" is your friend.
 
 Here are some things to try out:
 

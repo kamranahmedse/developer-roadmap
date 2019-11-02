@@ -32,8 +32,15 @@ const options = {
   pageExtensions: ['jsx', 'js', 'mdx', 'md'],
 
   webpack(config, options) {
+    // // Transforms SVGs to components
     config.module.rules.push({
-      test: /\.(png|jpg|gif|svg|eot|ttf|woff|woff2)$/,
+      test: /\.svg$/,
+      use: ['@svgr/webpack'],
+    });
+
+    // Allow loading images
+    config.module.rules.push({
+      test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
       use: {
         loader: 'url-loader',
         options: {
