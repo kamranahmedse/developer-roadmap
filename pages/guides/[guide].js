@@ -2,8 +2,9 @@ import GuideLayout from '../../layouts/guide';
 import { serverOnlyProps } from '../../lib/server';
 
 import GuideHeader from '../../components/guide-header';
-import GuideContent from '../../data/guides/design-patterns-for-humans.md';
+import GuideContent from '../../data/guides/keep-it-clean.md';
 import GuideBody from '../../components/guide-body';
+import ShareGuide from '../../components/share-guide';
 
 const Guide = ({ guide }) => {
   return (
@@ -11,6 +12,7 @@ const Guide = ({ guide }) => {
       <GuideHeader />
       <GuideBody>
         <GuideContent />
+        <ShareGuide />
       </GuideBody>
     </GuideLayout>
   );

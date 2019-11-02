@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const HeaderWrap = styled.div`
   padding: 80px 15px 45px;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 `;
 
 export const GuideTitle = styled.h1`
