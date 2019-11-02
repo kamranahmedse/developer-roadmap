@@ -1,10 +1,43 @@
 import styled from 'styled-components';
 
 export const FooterWrap = styled.div`
+  display: block;
+  margin-top: 40px;
+`;
+
+export const ShareWrap = styled.div`
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+
+  a {
+    display: flex;  
+    align-items: center;
+    color: #101010;
+  }
+
+  svg {
+    height: 22px;
+    color: #101010;
+    margin-left: 7px;
+  }
+`;
+
+export const ContributeIcon = styled.div`
   display: flex;
   align-items: center;
-  padding: 20px 0 70px;
-  margin-top: 70px;
+  justify-content: center;
+`;
+
+export const ShareIcons = styled.div`
+  display: flex;
+`;
+
+export const AuthorInfoWrap = styled.div`
+  display: flex;
+  align-items: center;
+  padding: 30px 0 70px;
 
   h4 {
     position: relative;
@@ -74,7 +107,8 @@ export const WrittenBy = styled.p`
   display: block;
   margin-bottom: 0;
 `;
-export const AuthorInfoWrap = styled.div`
+
+export const AuthorMeta = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;

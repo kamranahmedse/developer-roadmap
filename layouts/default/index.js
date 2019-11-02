@@ -1,6 +1,3 @@
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { library } from '@fortawesome/fontawesome-svg-core';
-
 import Head from './head';
 import './global.scss';
 
