@@ -43,3 +43,13 @@
     padding: 0 10px
   }
 }
+
+code:not([class]) {
+  background: #fafafa;
+  border-radius: 6px;
+  display: inline-block;
+  font-size: 16px;
+  padding: 0 5px;
+  word-wrap: normal;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.125)
+}

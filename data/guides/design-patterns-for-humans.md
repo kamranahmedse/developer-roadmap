@@ -26,7 +26,28 @@ $door2 = DoorFactory::makeDoor(50, 100);
 ```
 
 Serverful apps need to run consistently, watching for requests. Then, when requested, the app handles the request itself. In serverful monolith style apps, routing is commonly handled by a single file. Let's look at an Express.js example to illustrate this:
-                                                                                                                          
+
+<iframe src="https://player.vimeo.com/video/302964043?byline=0&portrait=0" width="640" height="267" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+Serverful apps need to run consistently, watching for requests. Then, when requested, the app handles the request itself. In serverful monolith style apps, routing is commonly handled by a single file. Let's look at an Express.js example to illustrate this:
+
+![](https://endler.dev/2019/tinysearch/bloomfilter.svg)
+
+Our team runs a number of typical services for monitoring and performance analysis: API endpoints for metrics written in Go, Prometheus exporters, log parsers like Logstash or Gollum, and databases like InfluxDB or Elasticsearch. Each of these services run in their own container. We needed a simple system to keep those jobs running.
+
+We started with a list of requirements for container orchestration:
+
+* Run a fleet of services across many machines.
+* Provide an overview of running services.
+* Allow for communication between services.
+* Restart them automatically when they die.
+* Be manageable by a small team.
+
+## Credits
+
+Thanks to my awesome colleagues Esteban Barrios, Jorge-Luis Betancourt, Simon Brüggen, Arne Claus, Inga Feick, Wolfgang Gassler, Barnabas Kutassy, Perry Manuk, Patrick Pokatilo, and Jakub Sacha for reviewing drafts of this article.
+
+
 
 # H1
 ## H2
