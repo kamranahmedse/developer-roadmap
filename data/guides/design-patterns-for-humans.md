@@ -32,8 +32,10 @@ Serverful apps need to run consistently, watching for requests. Then, when reque
 Serverful apps need to run consistently, watching for requests. Then, when requested, the app handles the request itself. In serverful monolith style apps, routing is commonly handled by a single file. Let's look at an Express.js example to illustrate this:
 
 ![](https://endler.dev/2019/tinysearch/bloomfilter.svg)
+*A picture taken from endler.dev*
 
 Our team runs a number of typical services for monitoring and performance analysis: API endpoints for metrics written in Go, Prometheus exporters, log parsers like Logstash or Gollum, and databases like InfluxDB or Elasticsearch. Each of these services run in their own container. We needed a simple system to keep those jobs running.
+
 
 We started with a list of requirements for container orchestration:
 

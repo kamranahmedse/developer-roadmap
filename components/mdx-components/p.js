@@ -6,6 +6,16 @@ const P = styled.p`
   font-weight: 400;
   line-height: 1.6;
   margin: 16px 0;
+  
+  img + em { 
+    display: block; 
+    text-align: center;
+    color: #666666;
+    font-style: normal;
+    font-size: 14px;
+    margin: 5px 0 10px;
+    display: block;
+  } 
 `;
 
 export default P;
