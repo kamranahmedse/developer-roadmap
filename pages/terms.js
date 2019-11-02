@@ -7,7 +7,7 @@ const Terms = () => (
   <DefaultLayout>
     <TosPage>
       <PageHeader />
-      <div className="bg-light border-top border-bottom tos-wrap">
+      <div className="bg-light border-top tos-wrap">
         <div className="container pt-5 pb-5">
           <h2>Terms of Service</h2>
 

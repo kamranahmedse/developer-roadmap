@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { FooterWrap } from './style.js'
 
 const PageFooter = () => (
-  <FooterWrap>
+  <FooterWrap className="border-top">
     <div className="container">
       <div className="foot-cols-wrap row">
         <div className="site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12">

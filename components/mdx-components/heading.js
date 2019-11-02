@@ -6,7 +6,8 @@ const linkify = (Component) => {
     const text = props.children;
     const id = text.toLowerCase && text
       .toLowerCase()
-      .replace(/\s/g, '-')
+      .replace(/[^\x00-\x7F]/g, '')
+      .replace(/\s+/g, '-')
       .replace(/[?!]/g, '');
 
     return (

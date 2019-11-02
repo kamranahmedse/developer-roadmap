@@ -1,7 +1,7 @@
 import { FaqContainer, FaqItem } from './style';
 
 const FaqList = () => (
-  <FaqContainer className='border-top border-bottom bg-light'>
+  <FaqContainer className='border-top bg-light'>
     <FaqItem>
       <div className="container container-small">
         <h4 className='font-weight-bolder'>What is roadmap.sh?</h4>

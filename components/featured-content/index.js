@@ -4,7 +4,7 @@ import FeaturedGuides from './guides';
 import FeaturedRoadmaps from './roadmaps';
 
 const FeaturedContent = (props) => (
-  <FeaturedWrap className="border-top border-bottom bg-light">
+  <FeaturedWrap className="border-top bg-light">
     <FeaturedRoadmaps />
     <FeaturedGuides />
   </FeaturedWrap>

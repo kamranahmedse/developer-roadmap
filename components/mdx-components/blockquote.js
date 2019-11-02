@@ -1,12 +1,14 @@
 import styled from 'styled-components';
 
-export const BlockQuote = styled.blockquote`
-  background: transparent;
+const BlockQuote = styled.blockquote`
   padding: 16px 20px;
-  border-left: 5px solid currentColor;
   position: relative;
+  background: #e8e8e8;
+  border-radius: 5px;
 
   p {
     margin: 0;
   }
 `;
+
+export default BlockQuote;

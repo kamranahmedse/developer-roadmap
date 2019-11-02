@@ -18,7 +18,9 @@ const Guide = ({ guide }) => {
 
 Guide.getInitialProps = serverOnlyProps(({ req }) => {
   // Remove URL chunk to make it a slug e.g. /guides/some-guide-item to become `some-guide-item
-  const slug = req.url.replace(/^\/*?guides\/*?/, '/').replace(/\/*$/, '');
+  const slug = req.url
+    .replace(/^\/*?guides\/*?/, '/')
+    .replace(/\/*$/, '');
 
   return {
     slug,

@@ -7,7 +7,7 @@ const Privacy = () => (
   <DefaultLayout>
     <TosPage>
       <PageHeader />
-      <div className="bg-light border-top border-bottom privacy-wrap">
+      <div className="bg-light border-top privacy-wrap">
         <div className="container pt-5 pb-5">
           <h2 className='font-weight-bold mb-3'>Privacy Policy</h2>
           <p>By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways. Remember that your use of roadmap.sh’s Services is at all times subject to the <a
