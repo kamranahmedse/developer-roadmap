@@ -15,15 +15,21 @@ export const ShareWrap = styled.div`
   flex-direction: column;
   position: absolute;
   padding: 0 0;
-  top: 0;
+  top: 2px;
   left: -50px;
   height: 100%;
 `;
 
 export const ShareIcon = styled.span`
-  margin-bottom: 7px;
+  margin-bottom: 8px;
+
   svg {
-    height: 26px;
-    color: #101010;
+    height: 22px;
+    color: #757575;
+    transition: all 0.2s;
+  }
+  
+  &:hover svg {
+    color: #000000
   }
 `;
