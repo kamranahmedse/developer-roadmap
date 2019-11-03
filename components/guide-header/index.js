@@ -20,7 +20,7 @@ const GuideHeader = (props) => (
       &middot;
       <GuideDate>Wednesday, October 9th 2019</GuideDate>
       &middot;
-      <EditGuide href="#">Edit this Guide</EditGuide>
+      <EditGuide href="#">Improve this Guide</EditGuide>
     </GuideMeta>
     <GuideTitle>Design Patterns for Humans</GuideTitle>
     <GuideSubtitle>An ultra-simplified explanation to design patterns</GuideSubtitle>
