@@ -24,14 +24,22 @@ export const ShareWrap = styled.div`
     display: flex;  
     align-items: center;
     color: #101010;
-  }
 
-  svg {
-    height: 18px;
-    color: #757575;
-    margin-left: 7px;
+    svg {
+      height: 18px;
+      color: #757575;
+      margin-left: 7px;
+      transition: all 0.2s ease;
+    }
+
+    &:hover {
+      svg {
+        color: #101010;
+      }
+    }
   }
 `;
+
 
 export const ContributeIcon = styled.div`
   display: flex;
@@ -46,6 +54,11 @@ export const ContributeIcon = styled.div`
   a {
     color: #757575;
     font-size: 14px;
+    transition: all 0.2s ease;
+      
+    &:hover {
+      color: #101010;
+    }
   }
 `;
 
@@ -75,29 +88,6 @@ export const AuthorInfoWrap = styled.div`
       font-weight: 700;
       color: #101010;
     }
-  }
-
-  .social-links {
-    margin: 5px 0 0;
-
-    a {
-      background: transparent;
-      color: #101010;
-      margin-right: 10px;
-      text-transform: uppercase;
-      text-decoration: none;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      
-      &:hover {
-        border-color: #757575;
-      }
-
-      svg {
-        height: 18px;
-      }
-    }  
   }
   
   .author-description {
