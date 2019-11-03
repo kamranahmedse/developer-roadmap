@@ -1,0 +1,23 @@
+# EditorConfig for the node-soap library - head over to editorconfig.org to see if you editor supports this file.
+
+# this is the topmost .editorconfig file
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.xml]
+insert_final_newline = false
+
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.json]
+indent_style = space
+indent_size = 2
+
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2

@@ -10,12 +10,12 @@ import GuideFooter from '../../components/guide-footer';
 const Guide = ({ guide }) => {
   return (
     <GuideLayout>
-      <GuideHeader />
+      <GuideHeader/>
       <GuideBody>
-        <GuideContent />
-        <ShareGuide />
-        <GuideFooter />
+        <GuideContent/>
+        <ShareGuide/>
       </GuideBody>
+      <GuideFooter/>
     </GuideLayout>
   );
 };

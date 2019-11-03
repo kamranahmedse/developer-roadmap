@@ -2,14 +2,23 @@ import styled from 'styled-components';
 
 export const FooterWrap = styled.div`
   display: block;
-  margin-top: 40px;
+  margin-top: 50px;
+`;
+
+export const FooterContainer = styled.div`
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 20px;
+`;
+
+export const FooterBg = styled.div`
 `;
 
 export const ShareWrap = styled.div`
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  padding: 17px 0px;
   align-items: center;
+  justify-content: center;
+  display: flex;
 
   a {
     display: flex;  
@@ -18,8 +27,8 @@ export const ShareWrap = styled.div`
   }
 
   svg {
-    height: 22px;
-    color: #101010;
+    height: 18px;
+    color: #757575;
     margin-left: 7px;
   }
 `;
@@ -28,21 +37,38 @@ export const ContributeIcon = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: ${props => props.hasMargins ? '0 30px' : '0'};
+  
+  span {
+    margin-right: 4px;
+  }
+  
+  a {
+    color: #757575;
+    font-size: 14px;
+  }
 `;
 
 export const ShareIcons = styled.div`
   display: flex;
+  align-items: center;
+  color: #757575;
+  font-size: 14px;
+
+  span {
+    margin-right: 4px;
+  }
 `;
 
 export const AuthorInfoWrap = styled.div`
   display: flex;
   align-items: center;
-  padding: 30px 0 70px;
+  padding: 40px 0;
 
   h4 {
     position: relative;
     font-size: 22px;
-    margin: 8px 0;
+    margin: 10px 0;
     line-height: 17px;
 
     a {
@@ -55,13 +81,9 @@ export const AuthorInfoWrap = styled.div`
     margin: 5px 0 0;
 
     a {
-      border: 1px solid #757575;
       background: transparent;
-      color: #757575;
-      padding: 4px 10px;
+      color: #101010;
       margin-right: 10px;
-      border-radius: 5px;
-      font-size: 10px;
       text-transform: uppercase;
       text-decoration: none;
       display: inline-flex;
@@ -73,9 +95,7 @@ export const AuthorInfoWrap = styled.div`
       }
 
       svg {
-        height: 16px;
-        margin-right: 8px;
-        fill: #757575;
+        height: 18px;
       }
     }  
   }
@@ -87,9 +107,13 @@ export const AuthorInfoWrap = styled.div`
 
 export const AuthorBio = styled.p`
   font-size: 15px;
-  line-height: 20px;
+  line-height: 24px;
   color: #757575;
-  margin-bottom: 7px;
+  margin-bottom: 0;
+  
+  a {
+    font-weight: 500;
+  }
 `;
 
 export const AuthorImg = styled.img`
@@ -98,14 +122,6 @@ export const AuthorImg = styled.img`
   width: 100px;
   border-radius: 100%;
   margin-right: 22px;
-`;
-
-export const WrittenBy = styled.p`
-  font-size: 11px;
-  text-transform: uppercase;
-  color: #757575;
-  display: block;
-  margin-bottom: 0;
 `;
 
 export const AuthorMeta = styled.div`
