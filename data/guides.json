@@ -5,7 +5,7 @@
     "url": "/guides/design-patterns-for-humans",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "June 12, 2019",
+    "createdAt": "Wednesday, June 12, 2019",
     "updatedAt": "June 12, 2019"
   },
   {
@@ -14,7 +14,7 @@
     "url": "/guides/learn-regex",
     "featured": true,
     "author": "ziishaned",
-    "createdDate": "June 19, 2019",
+    "createdAt": "Wednesday, June 19, 2019",
     "updatedAt": "June 19, 2019"
   },
   {
@@ -23,7 +23,7 @@
     "url": "/guides/bash-guide",
     "featured": true,
     "author": "idnan",
-    "createdAt": "May 18, 2018",
+    "createdAt": "Wednesday, May 18, 2018",
     "updatedAt": "May 18, 2018"
   },
   {
@@ -32,7 +32,7 @@
     "url": "/guides/dns-in-one-picture",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "May 11, 2018",
+    "createdAt": "Wednesday, May 11, 2018",
     "updatedAt": "May 11, 2018"
   },
   {
@@ -41,7 +41,7 @@
     "url": "/guides/using-react-hooks",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "October 22, 2019",
+    "createdAt": "Wednesday, October 22, 2019",
     "updatedAt": "October 22, 2019"
   },
   {
@@ -51,6 +51,6 @@
     "featured": true,
     "author": "kamranahmedse",
     "updatedAt": "November 01, 2019",
-    "createdAt": "November 01, 2019"
+    "createdAt": "Wednesday, November 01, 2019"
   }
 ]

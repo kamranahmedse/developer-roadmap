@@ -9,21 +9,27 @@ import {
   GuideTitle,
   HeaderWrap,
 } from './style';
+import { getContributionUrl } from "lib/guide";
 
-const GuideHeader = (props) => (
+const GuideHeader = ({
+ guide,
+ guide: {
+   author = {}
+ } = {}
+}) => (
   <HeaderWrap className="border-bottom">
     <GuideMeta>
-      <GuideAuthor href="https://github.com/kamranahmedse" target="_blank">
-        <AuthorImage src="/static/authors/kamranahmedse.jpeg" />
-        Kamran Ahmed
+      <GuideAuthor href={ author.twitter } target="_blank">
+        <AuthorImage src={ author.picture } />
+        { author.name }
       </GuideAuthor>
       &middot;
-      <GuideDate>Wednesday, October 9th 2019</GuideDate>
+      <GuideDate>{ guide.createdAt }</GuideDate>
       &middot;
-      <EditGuide href="#">Improve this Guide</EditGuide>
+      <EditGuide href={ getContributionUrl(guide) } target="_blank">Improve this Guide</EditGuide>
     </GuideMeta>
-    <GuideTitle>Design Patterns for Humans</GuideTitle>
-    <GuideSubtitle>An ultra-simplified explanation to design patterns</GuideSubtitle>
+    <GuideTitle>{ guide.title }</GuideTitle>
+    <GuideSubtitle>{ guide.description }</GuideSubtitle>
     <ActionItems>
     </ActionItems>
   </HeaderWrap>

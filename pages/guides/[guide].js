@@ -14,12 +14,12 @@ const Guide = ({ guide }) => {
 
   return (
     <GuideLayout>
-      <GuideHeader/>
+      <GuideHeader guide={guide} />
       <GuideBody>
         <guide.component />
         <ShareGuide/>
       </GuideBody>
-      <GuideFooter/>
+      <GuideFooter guide={guide} />
     </GuideLayout>
   );
 };
