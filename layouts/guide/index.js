@@ -1,7 +1,7 @@
 import React from 'react';
-import DefaultLayout from '../default';
-import PageHeader from '../../components/page-header';
-import PageFooter from '../../components/page-footer';
+import DefaultLayout from 'layouts/default';
+import PageHeader from 'components/page-header';
+import PageFooter from 'components/page-footer';
 
 class GuideLayout extends React.Component {
   render() {

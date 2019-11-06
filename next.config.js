@@ -1,6 +1,7 @@
+const path = require('path');
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
-const rehypePrism = require('@mapbox/rehype-prism')
+const rehypePrism = require('@mapbox/rehype-prism');
 
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
@@ -19,6 +20,7 @@ const options = {
       '/terms': { page: '/terms' },
       '/roadmaps': { page: '/roadmaps' },
       '/guides': { page: '/guides' },
+      '/guides/design-patterns-for-humans': { page: '/guides/[guide]', query: "design-patterns-for-humans" },
       '/frontend': { page: '/[fallback]', query: "frontend" },
       '/backend': { page: '/[fallback]', query: "backend" },
       '/devops': { page: '/[fallback]', query: "devops" },
@@ -37,6 +39,8 @@ const options = {
       test: /\.svg$/,
       use: ['@svgr/webpack'],
     });
+
+  config.resolve.modules.push(path.resolve('./'));
 
     // Allow loading images
     config.module.rules.push({

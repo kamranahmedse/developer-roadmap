@@ -1,5 +1,4 @@
 import { FeaturedWrap } from './style';
-import FeaturedJourneys from './journeys';
 import FeaturedGuides from './guides';
 import FeaturedRoadmaps from './roadmaps';
 

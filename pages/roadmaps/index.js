@@ -1,5 +1,5 @@
-import DefaultLayout from '../../layouts/default/index';
-import PageHeader from '../../components/page-header/index';
+import DefaultLayout from 'layouts/default/index';
+import PageHeader from 'components/page-header/index';
 
 const Roadmap = () => (
   <DefaultLayout>

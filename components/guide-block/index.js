@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Author, AuthorImage, AuthorName, BlockLink, BlockMeta, BlockSubtitle, BlockTitle, PublishDate } from './style';
-import { findByUsername } from '../../lib/author';
+import { findByUsername } from 'lib/author';
 
 const GuideBlock = ({ guide }) => {
   const author = findByUsername(guide.author) || {};

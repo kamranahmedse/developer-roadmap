@@ -1,7 +1,7 @@
 import Error from 'next/error';
-import Roadmap from '../roadmaps/[roadmap]/index';
-import { serverOnlyProps } from '../../lib/server';
-import { getRequestedRoadmap } from '../../lib/roadmap';
+import Roadmap from 'pages/roadmaps/[roadmap]/index';
+import { serverOnlyProps } from 'lib/server';
+import { getRequestedRoadmap } from 'lib/roadmap';
 
 // Fallback page to handle the old roadmap pages implementation
 const OldRoadmap = ({ roadmap }) => {
