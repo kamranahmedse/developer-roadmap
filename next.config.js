@@ -20,6 +20,7 @@ const options = {
       '/terms': { page: '/terms' },
       '/roadmaps': { page: '/roadmaps' },
       '/guides': { page: '/guides' },
+
       '/guides/design-patterns-for-humans': { page: '/guides/[guide]', query: "design-patterns-for-humans" },
       '/frontend': { page: '/[fallback]', query: "frontend" },
       '/backend': { page: '/[fallback]', query: "backend" },

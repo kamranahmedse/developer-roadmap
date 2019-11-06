@@ -34,6 +34,7 @@
     "styled-components": "^4.4.0"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^1.10.6"
+    "babel-plugin-styled-components": "^1.10.6",
+    "glob": "^7.1.5"
   }
 }

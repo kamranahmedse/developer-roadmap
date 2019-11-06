@@ -1,10 +1,16 @@
-import Home from './home';
-import DefaultLayout from 'layouts/default';
+import FeaturedContent from 'components/featured-content/index';
+import HeroSection from 'components/hero-section/index';
+import PageFooter from 'components/page-footer/index';
+import PageHeader from 'components/page-header/index';
+import DefaultLayout from 'layouts/default/index';
 
-const Index = () => (
+const Home = (props) => (
   <DefaultLayout>
-    <Home />
+    <PageHeader />
+    <HeroSection />
+    <FeaturedContent />
+    <PageFooter />
   </DefaultLayout>
 );
 
-export default Index;
+export default Home;
