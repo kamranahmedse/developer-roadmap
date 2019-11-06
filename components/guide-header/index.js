@@ -10,6 +10,7 @@ import {
   HeaderWrap,
 } from './style';
 import { getContributionUrl } from "lib/guide";
+import { getTwitterUrl } from "lib/url";
 
 const GuideHeader = ({
  guide,
@@ -19,7 +20,7 @@ const GuideHeader = ({
 }) => (
   <HeaderWrap className="border-bottom">
     <GuideMeta>
-      <GuideAuthor href={ author.twitter } target="_blank">
+      <GuideAuthor href={ getTwitterUrl(author.twitter) } target="_blank">
         <AuthorImage src={ author.picture } />
         { author.name }
       </GuideAuthor>
