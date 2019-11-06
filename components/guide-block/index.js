@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import formatDate from 'date-fns/format'
+
 import { Author, AuthorImage, AuthorName, BlockLink, BlockMeta, BlockSubtitle, BlockTitle, PublishDate } from './style';
 import { findByUsername } from 'lib/author';
 
@@ -15,7 +17,7 @@ const GuideBlock = ({ guide }) => {
               <AuthorImage src={ author.picture } />
               <AuthorName>{ author.name }</AuthorName>
             </Author>
-            <PublishDate>{ guide.updatedAt }</PublishDate>
+            <PublishDate>{ formatDate(new Date(guide.createdAt), 'MMMM d, yyyy') }</PublishDate>
           </BlockMeta>
         </BlockLink>
       </Link>

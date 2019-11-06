@@ -1,3 +1,4 @@
+import formatDate from 'date-fns/format'
 import {
   ActionItems,
   AuthorImage,
@@ -25,7 +26,7 @@ const GuideHeader = ({
         { author.name }
       </GuideAuthor>
       &middot;
-      <GuideDate>{ guide.createdAt }</GuideDate>
+      <GuideDate>{ formatDate(new Date(guide.createdAt), 'EEEE, MMMM d yyyy') }</GuideDate>
       &middot;
       <EditGuide href={ getContributionUrl(guide) } target="_blank">Improve this Guide</EditGuide>
     </GuideMeta>
