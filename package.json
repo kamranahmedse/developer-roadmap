@@ -7,7 +7,9 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "html": "next export"
+    "html": "next export",
+    "test": "jest",
+    "test:watch": "jest --watch"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.22",
@@ -35,6 +37,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "glob": "^7.1.5"
+    "glob": "^7.1.5",
+    "jest": "^24.9.0"
   }
 }

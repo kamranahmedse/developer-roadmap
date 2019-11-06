@@ -24,7 +24,7 @@ const RoadmapSummary = ({ roadmap }) => (
       <Description>{ roadmap.description }</Description>
       <VersionList className="border-bottom">
         { (roadmap.versions || []).map(versionItem => (
-          <Link href={ `${roadmap.slug}/${versionItem}` } passHref key={ versionItem }>
+          <Link href={ `${roadmap.url}/${versionItem}` } passHref key={ versionItem }>
             <VersionLink className={ classNames({
               active: isActiveRoadmap(versionItem, roadmap.version),
             }) }>{ versionItem } Version</VersionLink>

@@ -21,7 +21,7 @@ const FeaturedRoadmaps = () => (
         { roadmaps
           .filter(({ featured }) => featured)
           .map(roadmap => (
-            <RoadmapBlock roadmap={ roadmap } key={ roadmap.slug } />
+            <RoadmapBlock roadmap={ roadmap } key={ roadmap.url } />
           )) }
       </div>
     </div>

@@ -1,7 +1,7 @@
 import DefaultLayout from 'layouts/default/index';
 import PageHeader from 'components/page-header/index';
 
-const Roadmap = () => (
+const RoadmapsList = () => (
   <DefaultLayout>
     <PageHeader />
     <div className="container">
@@ -10,4 +10,4 @@ const Roadmap = () => (
   </DefaultLayout>
 );
 
-export default Roadmap;
+export default RoadmapsList;

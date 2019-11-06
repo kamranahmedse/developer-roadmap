@@ -2,6 +2,11 @@ const path = require('path');
 const withSass = require('@zeit/next-sass');
 const withCSS = require('@zeit/next-css');
 const rehypePrism = require('@mapbox/rehype-prism');
+const {
+  getPageRoutes,
+  getGuideRoutes,
+  getRoadmapRoutes,
+} = require("./path-map");
 
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
@@ -12,22 +17,10 @@ const withMDX = require('@next/mdx')({
 
 const options = {
   exportPathMap: () => {
-    // @todo make it dynamic for pages, authors and guides
     return {
-      '/': { page: '/' },
-      '/about': { page: '/about' },
-      '/privacy': { page: '/privacy' },
-      '/terms': { page: '/terms' },
-      '/roadmaps': { page: '/roadmaps' },
-      '/guides': { page: '/guides' },
-
-      '/guides/design-patterns-for-humans': { page: '/guides/[guide]', query: "design-patterns-for-humans" },
-      '/frontend': { page: '/[fallback]', query: "frontend" },
-      '/backend': { page: '/[fallback]', query: "backend" },
-      '/devops': { page: '/[fallback]', query: "devops" },
-      '/roadmaps/frontend': { page: '/roadmaps/[roadmap]', query: "frontend" },
-      '/roadmaps/backend': { page: '/roadmaps/[roadmap]', query: "backend" },
-      '/roadmaps/devops': { page: '/roadmaps/[roadmap]', query: "devops" },
+      ...getPageRoutes(),
+      ...getGuideRoutes(),
+      ...getRoadmapRoutes(),
     };
   },
 

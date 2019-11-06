@@ -16,7 +16,7 @@ const FeaturedGuides = () => (
         { guides
           .filter(({ featured }) => featured)
           .map(guide => (
-            <GuideBlock guide={ guide } key={ guide.slug } />
+            <GuideBlock guide={ guide } key={ guide.url } />
           )) }
       </div>
     </div>

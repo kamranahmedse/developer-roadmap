@@ -6,7 +6,7 @@ const GuideBlock = ({ guide }) => {
   const author = findByUsername(guide.author) || {};
   return (
     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container">
-      <Link href={ guide.slug } passHref>
+      <Link href={ guide.url } passHref>
         <BlockLink>
           <BlockTitle>{ guide.title }</BlockTitle>
           <BlockSubtitle>{ guide.featuredDescription || guide.description }</BlockSubtitle>

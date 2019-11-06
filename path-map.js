@@ -1,6 +1,8 @@
 const path = require('path');
-const fs = require('fs');
 const glob = require('glob');
+
+const guides = require('./data/guides.json');
+const roadmaps = require('./data/roadmaps');
 
 const PAGES_PATH = path.join(__dirname, 'pages');
 
@@ -21,7 +23,6 @@ const getPageRoutes = () => {
   });
 
   const pageRoutes = {};
-
   files.forEach(file => {
     const pageName = file.replace(PAGES_PATH, '').replace('.js', '');
     const pagePath = pageName.replace('/index', '') || '/';
@@ -32,4 +33,55 @@ const getPageRoutes = () => {
   return pageRoutes;
 };
 
-console.log(getPageRoutes());
+/**
+ * Generates routes for guide pages
+ * @returns {*}
+ */
+const getGuideRoutes = () => {
+  return guides.reduce((acc, guide) => {
+    const [, , slug] = guide.url.split('/');
+    return {
+      ...acc,
+      [guide.url]: {
+        page: '/guides/[guide]',
+        query: slug,
+      }
+    };
+  }, {});
+};
+
+/**
+ * Generates routes for each of the roadmap and it's respective versions
+ * @returns {*}
+ */
+const getRoadmapRoutes = () => {
+  return roadmaps.reduce((roadmapRoutes, roadmap) => {
+    const [, slug] = roadmap.url.split('/');
+
+    return {
+      ...roadmapRoutes,
+      // Default roadmap path i.e. `{ '/frontend': { page: '/[roadmap]/index', query: 'frontend' }`
+      [roadmap.url]: {
+        page: '/[roadmap]/index',
+        query: slug
+      },
+      // Route for each of the versions of this roadmap i.e.
+      // `{ '/frontend/2019': { page: '/[roadmap]/[version]', query: 'frontend/2019' } }`
+      ...(roadmap.versions.reduce((versionRoutes, version) => {
+        return {
+          ...versionRoutes,
+          [`${roadmap.url}/${version}`]: {
+            page: '/[roadmap]/[version]',
+            query: `${slug}/${version}`
+          }
+        };
+      }, {})),
+    };
+  }, {});
+};
+
+module.exports = {
+  getPageRoutes,
+  getGuideRoutes,
+  getRoadmapRoutes,
+};
