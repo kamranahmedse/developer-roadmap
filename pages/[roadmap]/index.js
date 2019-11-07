@@ -5,6 +5,7 @@ import PageFooter from 'components/page-footer';
 import RoadmapSummary from 'components/roadmap-summary';
 import { serverOnlyProps } from 'lib/server';
 import { getRequestedRoadmap } from 'lib/roadmap';
+import Helmet from '../../components/helmet';
 
 const Roadmap = ({ roadmap }) => {
   if (!roadmap) {
@@ -13,6 +14,7 @@ const Roadmap = ({ roadmap }) => {
 
   return (
     <DefaultLayout>
+      <Helmet title={ roadmap.title } description={ roadmap.description } />
       <PageHeader />
       <RoadmapSummary roadmap={ roadmap } />
       <PageFooter />
