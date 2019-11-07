@@ -2,16 +2,22 @@
   {
     "username": "kamranahmedse",
     "name": "Kamran Ahmed",
-    "picture": "/static/authors/kamranahmedse.jpeg"
+    "twitter": "kamranahmedse",
+    "picture": "/static/authors/kamranahmedse.jpeg",
+    "bio": "Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones."
   },
   {
     "username": "ziishaned",
     "name": "Zeeshan Ahmed",
-    "picture": "/static/authors/ziishaned.png"
+    "twitter": "ziishaned",
+    "picture": "/static/authors/ziishaned.png",
+    "bio": "Playing with computers ever since I started walking. Loves hiking, cycling, JavaScript, OpenSource, challenging myself and communities."
   },
   {
     "username": "idnan",
     "name": "Adnan Ahmed",
-    "picture": "/static/authors/idnan.jpeg"
+    "twitter": "idnan_se",
+    "picture": "/static/authors/idnan.jpeg",
+    "bio": "Playing with computers ever since I started walking. Loves hiking, cycling, JavaScript, OpenSource, challenging myself and communities."
   }
 ]

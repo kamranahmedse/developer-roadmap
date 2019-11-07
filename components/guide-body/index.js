@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react';
-import MdxComponents from '../mdx-components';
+import MdxComponents from 'components/mdx-components';
 import { GuideBodyWrap } from './style';
 
 const GuideBody = (props) => (

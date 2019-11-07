@@ -1,13 +1,13 @@
 import DefaultLayout from 'layouts/default/index';
 import PageHeader from 'components/page-header/index';
 
-const Roadmap = () => (
+const RoadmapsList = () => (
   <DefaultLayout>
     <PageHeader />
     <div className="container">
-      <p>Show all guides here</p>
+      <p>Show all roadmaps here</p>
     </div>
   </DefaultLayout>
 );
 
-export default Roadmap;
+export default RoadmapsList;

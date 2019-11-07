@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FeaturedContentWrap } from './style';
-import guides from '../../data/guides';
-import GuideBlock from '../guide-block';
+import guides from 'data/guides';
+import GuideBlock from 'components/guide-block';
 
 const FeaturedGuides = () => (
   <FeaturedContentWrap className="featured-content-wrap">
@@ -16,7 +16,7 @@ const FeaturedGuides = () => (
         { guides
           .filter(({ featured }) => featured)
           .map(guide => (
-            <GuideBlock guide={ guide } key={ guide.slug } />
+            <GuideBlock guide={ guide } key={ guide.url } />
           )) }
       </div>
     </div>

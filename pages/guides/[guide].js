@@ -1,33 +1,32 @@
-import GuideLayout from '../../layouts/guide';
-import { serverOnlyProps } from '../../lib/server';
-
-import GuideHeader from '../../components/guide-header';
-import GuideContent from '../../data/guides/keep-it-clean.md';
-import GuideBody from '../../components/guide-body';
-import ShareGuide from '../../components/share-guide';
-import GuideFooter from '../../components/guide-footer';
+import Error from "next/error";
+import GuideLayout from 'layouts/guide';
+import { serverOnlyProps } from 'lib/server';
+import GuideHeader from 'components/guide-header';
+import GuideBody from 'components/guide-body';
+import ShareGuide from 'components/share-guide';
+import GuideFooter from 'components/guide-footer';
+import { getRequestedGuide } from "lib/guide";
 
 const Guide = ({ guide }) => {
+  if (!guide) {
+    return <Error statusCode={404} />
+  }
+
   return (
     <GuideLayout>
-      <GuideHeader/>
+      <GuideHeader guide={ guide } />
       <GuideBody>
-        <GuideContent/>
-        <ShareGuide/>
+        <guide.component />
+        <ShareGuide guide={ guide }/>
       </GuideBody>
-      <GuideFooter/>
+      <GuideFooter guide={ guide } />
     </GuideLayout>
   );
 };
 
 Guide.getInitialProps = serverOnlyProps(({ req }) => {
-  // Remove URL chunk to make it a slug e.g. /guides/some-guide-item to become `some-guide-item
-  const slug = req.url
-    .replace(/^\/*?guides\/*?/, '/')
-    .replace(/\/*$/, '');
-
   return {
-    slug,
+    guide: getRequestedGuide(req)
   };
 });
 
