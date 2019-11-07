@@ -12,20 +12,14 @@ const ShareGuide = ({
 }) => (
   <ShareWrap>
     <ShareIconsList className="d-sm-none d-md-none d-lg-flex d-xl-flex">
-      <ShareIcon>
-        <a href={ getTwitterShareUrl({ text: `${guide.title} by @${author.twitter}`, url: guide.url })} target="_blank">
+      <ShareIcon href={ getTwitterShareUrl({ text: `${guide.title} by @${author.twitter}`, url: guide.url })} target="_blank">
           <FontAwesomeIcon icon={ faTwitterSquare } />
-        </a>
       </ShareIcon>
-      <ShareIcon>
-        <a href={ getFacebookShareUrl({ text: guide.title, url: guide.url }) } target="_blank">
-          <FontAwesomeIcon icon={ faFacebookSquare } />
-        </a>
+      <ShareIcon href={ getFacebookShareUrl({ text: guide.title, url: guide.url }) } target="_blank">
+        <FontAwesomeIcon icon={ faFacebookSquare } />
       </ShareIcon>
-      <ShareIcon>
-        <a href={ getRedditShareUrl({ text: guide.title, url: guide.url })} target="_blank">
-          <FontAwesomeIcon icon={ faRedditSquare } />
-        </a>
+      <ShareIcon href={ getRedditShareUrl({ text: guide.title, url: guide.url })} target="_blank">
+        <FontAwesomeIcon icon={ faRedditSquare } />
       </ShareIcon>
     </ShareIconsList>
   </ShareWrap>

@@ -1,5 +1,6 @@
 import NextHead from 'next/head';
 import siteConfig from 'data/site';
+import { GA_TRACKING_ID } from 'lib/gtag';
 
 const prepareTitle = (givenTitle) => {
   givenTitle = givenTitle || siteConfig.title;
@@ -52,6 +53,17 @@ const Helmet = (props) => (
     <link rel="icon" type="image/png" sizes="16x16" href="/static/manifest/icon16.png" />
     <link rel="shortcut icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
+
+    { /* Global Site Tag (gtag.js) - Google Analytics */ }
+    <script async src={ `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}` } />
+    <script dangerouslySetInnerHTML={{
+      __html: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${GA_TRACKING_ID}');
+      `,
+    }} />
   </NextHead>
 );
 

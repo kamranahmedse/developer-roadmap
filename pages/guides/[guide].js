@@ -5,20 +5,22 @@ import GuideHeader from 'components/guide-header';
 import GuideBody from 'components/guide-body';
 import ShareGuide from 'components/share-guide';
 import GuideFooter from 'components/guide-footer';
-import { getRequestedGuide } from "lib/guide";
-import Helmet from '../../components/helmet';
+import { getRequestedGuide } from 'lib/guide';
+import Helmet from 'components/helmet';
 
 const Guide = ({ guide }) => {
   if (!guide) {
     return <Error statusCode={ 404 } />
   }
 
+  const GuideContent = require(`../../data/guides/${guide.fileName}.md`).default;
+
   return (
     <GuideLayout>
       <Helmet title={ guide.title } description={ guide.description } />
       <GuideHeader guide={ guide } />
       <GuideBody>
-        <guide.component />
+        <GuideContent />
         <ShareGuide guide={ guide } />
       </GuideBody>
       <GuideFooter guide={ guide } />
@@ -26,9 +28,9 @@ const Guide = ({ guide }) => {
   );
 };
 
-Guide.getInitialProps = serverOnlyProps(({ req }) => {
+Guide.getInitialProps = serverOnlyProps(async ({ req }) => {
   return {
-    guide: getRequestedGuide(req),
+    guide: await getRequestedGuide(req),
   };
 });
 

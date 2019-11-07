@@ -26,7 +26,8 @@ export const ShareWrap = styled.div`
     color: #101010;
 
     svg {
-      height: 18px;
+      height: 18px !important;
+      width: 18px !important;
       color: #757575;
       margin-left: 7px;
       transition: all 0.2s ease;
@@ -108,9 +109,8 @@ export const AuthorBio = styled.p`
 
 export const AuthorImg = styled.img`
   border-radius: 100%;
-  height: 100px;
-  width: 100px;
-  border-radius: 100%;
+  height: 100px !important;
+  width: 100px !important;
   margin-right: 22px;
 `;
 

@@ -36,7 +36,7 @@ const options = {
 
   config.resolve.modules.push(path.resolve('./'));
 
-    // Allow loading images
+    // Allow loading images and fonts
     config.module.rules.push({
       test: /\.(png|jpg|gif|eot|ttf|woff|woff2)$/,
       use: {
