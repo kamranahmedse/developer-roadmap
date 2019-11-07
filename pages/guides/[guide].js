@@ -6,18 +6,20 @@ import GuideBody from 'components/guide-body';
 import ShareGuide from 'components/share-guide';
 import GuideFooter from 'components/guide-footer';
 import { getRequestedGuide } from "lib/guide";
+import Helmet from '../../components/helmet';
 
 const Guide = ({ guide }) => {
   if (!guide) {
-    return <Error statusCode={404} />
+    return <Error statusCode={ 404 } />
   }
 
   return (
     <GuideLayout>
+      <Helmet title={ guide.title } description={ guide.description } />
       <GuideHeader guide={ guide } />
       <GuideBody>
         <guide.component />
-        <ShareGuide guide={ guide }/>
+        <ShareGuide guide={ guide } />
       </GuideBody>
       <GuideFooter guide={ guide } />
     </GuideLayout>
@@ -26,7 +28,7 @@ const Guide = ({ guide }) => {
 
 Guide.getInitialProps = serverOnlyProps(({ req }) => {
   return {
-    guide: getRequestedGuide(req)
+    guide: getRequestedGuide(req),
   };
 });
 

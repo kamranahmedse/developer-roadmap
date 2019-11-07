@@ -1,9 +1,9 @@
-import Head from './head';
+import Helmet from 'components/helmet';
 import './global.scss';
 
 const DefaultLayout = (props) => (
   <div>
-    <Head />
+    <Helmet />
     { props.children }
   </div>
 );
