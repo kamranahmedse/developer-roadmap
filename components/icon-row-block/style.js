@@ -9,7 +9,7 @@ export const SubmitWrap = styled.div`
 
   svg {
     height: 25px;
-    color: dimgrey;
+    color: #d6d6d6;
   }
 `;
 

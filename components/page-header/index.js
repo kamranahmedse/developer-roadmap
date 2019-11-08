@@ -1,10 +1,27 @@
-import { HeaderWrap, Subtitle, Title } from './style';
+import { HeaderWrap, HeaderButtons, HeaderButton, Subtitle, Title } from './style';
 
-const PageHeader = (props) => (
+const PageHeader = ({
+  title,
+  subtitle,
+  children,
+  primaryButtonText,
+  primaryButtonUrl,
+  secondaryButtonText,
+  secondaryButtonUrl,
+}) => (
   <HeaderWrap>
-    <Title>Developer Roadmaps</Title>
-    <Subtitle>We continue to improve these roadmaps and add new ones, subscribe to get occasional updates</Subtitle>
-    { props.children }
+    <Title>{ title }</Title>
+    <Subtitle dangerouslySetInnerHTML={{ __html: subtitle }} />
+
+    {
+      (primaryButtonText || secondaryButtonText) &&
+      <HeaderButtons>
+        { primaryButtonText && <HeaderButton primary href={primaryButtonUrl}>{ primaryButtonText }</HeaderButton> }
+        { secondaryButtonText && <HeaderButton href={secondaryButtonUrl}>{ secondaryButtonText }</HeaderButton> }
+      </HeaderButtons>
+    }
+
+    { children }
   </HeaderWrap>
 );
 
