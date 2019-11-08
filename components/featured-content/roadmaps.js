@@ -7,10 +7,9 @@ const FeaturedRoadmaps = () => (
   <FeaturedContentWrap className="featured-content-wrap">
     <div className="container">
       <div className="featured-head">
-        <h3>Featured Content</h3>
         <p className="border-through featured-separator">
             <span>
-              List of roadmaps mostly visited by the community&nbsp;
+              Roadmaps mostly visited by the community&nbsp;
               <Link href='/roadmaps'>
                 <a className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps &rarr;</a>
               </Link>

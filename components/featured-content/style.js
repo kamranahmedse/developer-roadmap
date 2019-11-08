@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FeaturedWrap = styled.div`
-  padding: 50px 0;
+  padding: 30px 0 50px;
 `;
 
 export const FeaturedContentWrap = styled.div`
@@ -17,10 +17,10 @@ export const FeaturedContentWrap = styled.div`
   }
 
   .featured-separator {
-    font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     margin-bottom: 40px;
     margin-top: 25px;
+    color: #999;
 
     span {
       background: #f8f9fa;

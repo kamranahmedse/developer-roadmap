@@ -8,7 +8,7 @@ const FeaturedGuides = () => (
     <div className="container">
       <p className='border-through featured-separator'>
           <span>
-            List of most visited guides&nbsp;
+            Guides mostly visited by the community&nbsp;
             <Link href="/guides"><a className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a></Link>
           </span>
       </p>
