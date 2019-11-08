@@ -1,6 +1,6 @@
 import Error from 'next/error';
 import DefaultLayout from 'layouts/default';
-import TopNav from 'components/top-nav';
+import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
 import RoadmapSummary from 'components/roadmap-summary';
 import { serverOnlyProps } from 'lib/server';
@@ -15,7 +15,7 @@ const Roadmap = ({ roadmap }) => {
   return (
     <DefaultLayout>
       <Helmet title={ roadmap.title } description={ roadmap.description } />
-      <TopNav />
+      <SiteNav />
       <RoadmapSummary roadmap={ roadmap } />
       <PageFooter />
     </DefaultLayout>

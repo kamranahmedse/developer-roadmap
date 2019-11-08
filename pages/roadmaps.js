@@ -1,11 +1,11 @@
 import roadmaps from 'data/roadmaps';
 import DefaultLayout from 'layouts/default/index';
-import TopNav from 'components/top-nav';
+import SiteNav from 'components/site-nav';
 import RoadmapBlock from 'components/roadmap-block';
 
 const RoadmapsList = () => (
   <DefaultLayout>
-    <TopNav />
+    <SiteNav />
     <div className="container">
       <div className="row">
         { roadmaps

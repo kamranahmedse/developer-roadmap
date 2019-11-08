@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { HeaderWrap } from './style';
 
-const TopNav = () => (
+const SiteNav = () => (
   <HeaderWrap>
     <div className="top-row container">
       <div className="flex-grow-1 brand">
@@ -19,4 +19,4 @@ const TopNav = () => (
   </HeaderWrap>
 );
 
-export default TopNav;
+export default SiteNav;

@@ -1,9 +1,9 @@
 import DefaultLayout from 'layouts/default/index';
-import TopNav from 'components/top-nav';
+import SiteNav from 'components/site-nav';
 
 const Roadmap = () => (
   <DefaultLayout>
-    <TopNav />
+    <SiteNav />
     <div className="container">
       <p>Show all guides here</p>
     </div>
