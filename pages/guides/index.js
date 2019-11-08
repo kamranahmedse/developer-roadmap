@@ -1,9 +1,9 @@
 import DefaultLayout from 'layouts/default/index';
-import PageHeader from 'components/page-header/index';
+import TopNav from 'components/top-nav';
 
 const Roadmap = () => (
   <DefaultLayout>
-    <PageHeader />
+    <TopNav />
     <div className="container">
       <p>Show all guides here</p>
     </div>

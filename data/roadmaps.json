@@ -37,5 +37,16 @@
       "2018",
       "2017"
     ]
+  },
+  {
+    "title": "React Developer Roadmap",
+    "description": "Step by step guide for DevOps or any other Operations Role",
+    "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2019",
+    "url": "/signup",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ]
   }
 ]

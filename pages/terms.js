@@ -1,12 +1,12 @@
 import PageFooter from 'components/page-footer/index';
-import PageHeader from 'components/page-header/index';
+import TopNav from 'components/top-nav';
 import { TosPage } from 'components/tos-page/index';
 import DefaultLayout from 'layouts/default/index';
 
 const Terms = () => (
   <DefaultLayout>
     <TosPage>
-      <PageHeader />
+      <TopNav />
       <div className="bg-light border-top tos-wrap">
         <div className="container pt-5 pb-5">
           <h2>Terms of Service</h2>
