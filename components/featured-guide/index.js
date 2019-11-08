@@ -4,7 +4,7 @@ import formatDate from 'date-fns/format'
 import { Author, AuthorImage, AuthorName, BlockLink, BlockMeta, BlockSubtitle, BlockTitle, PublishDate } from './style';
 import { findByUsername } from 'lib/author';
 
-const GuideBlock = ({ guide }) => {
+const FeaturedGuide = ({ guide }) => {
   const author = findByUsername(guide.author) || {};
   return (
     <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container">
@@ -25,4 +25,4 @@ const GuideBlock = ({ guide }) => {
   )
 };
 
-export default GuideBlock;
+export default FeaturedGuide;

@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import { FeaturedContentWrap } from './style';
 import roadmaps from 'data/roadmaps';
-import RoadmapBlock from 'components/roadmap-block';
+import FeaturedRoadmap from 'components/featured-roadmap';
 
 const FeaturedRoadmaps = () => (
   <FeaturedContentWrap className="featured-content-wrap">
@@ -21,7 +21,7 @@ const FeaturedRoadmaps = () => (
         { roadmaps
           .filter(({ featured }) => featured)
           .map(roadmap => (
-            <RoadmapBlock roadmap={ roadmap } key={ roadmap.url } />
+            <FeaturedRoadmap roadmap={ roadmap } key={ roadmap.url } />
           )) }
       </div>
     </div>
