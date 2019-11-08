@@ -10,6 +10,10 @@ export const Header = styled.div`
 export const Summary = styled.div`
   text-align: center;
   padding: 0 0 50px;
+  
+  .container {
+    position: relative;
+  }
 `;
 
 export const Title = styled.h1`

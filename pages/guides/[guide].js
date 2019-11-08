@@ -3,7 +3,7 @@ import GuideLayout from 'layouts/guide';
 import { serverOnlyProps } from 'lib/server';
 import GuideHeader from 'components/guide-header';
 import GuideBody from 'components/guide-body';
-import ShareGuide from 'components/share-guide';
+import SharePage from 'components/share-page';
 import GuideFooter from 'components/guide-footer';
 import { getRequestedGuide } from 'lib/guide';
 import Helmet from 'components/helmet';
@@ -21,7 +21,7 @@ const Guide = ({ guide }) => {
       <GuideHeader guide={ guide } />
       <GuideBody>
         <GuideContent />
-        <ShareGuide guide={ guide } />
+        <SharePage title={ guide.title } url={ guide.url } twitterUsername={ guide.author.twitter } />
       </GuideBody>
       <GuideFooter guide={ guide } />
     </GuideLayout>

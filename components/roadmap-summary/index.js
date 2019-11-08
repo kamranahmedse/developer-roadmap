@@ -1,6 +1,5 @@
 import Link from 'next/link';
 import classNames from 'classnames';
-
 import {
   SummaryContainer,
   Title,
@@ -11,6 +10,7 @@ import {
   VersionLink,
   VersionList,
 } from './style';
+import SharePage from '../share-page';
 
 const isActiveRoadmap = (loadedVersion, roadmapVersion) => (
   (loadedVersion === roadmapVersion) ||
@@ -35,6 +35,7 @@ const RoadmapSummary = ({ roadmap }) => (
     <Summary className="border-bottom">
       <div className="container">
         <Image src={ roadmap.picture } />
+        <SharePage title={ roadmap.description } url={ roadmap.url } />
       </div>
     </Summary>
   </SummaryContainer>
