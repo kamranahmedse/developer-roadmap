@@ -32,7 +32,7 @@ const RoadmapSummary = ({ roadmap }) => (
         )) }
       </VersionList>
     </Header>
-    <Summary className="border-bottom">
+    <Summary>
       <div className="container">
         <Image src={ roadmap.picture } />
         <SharePage title={ roadmap.description } url={ roadmap.url } />

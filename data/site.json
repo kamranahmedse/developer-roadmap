@@ -5,10 +5,14 @@
   "description": "Roadmaps, articles and resources to help you choose your path, learn and improve.",
   "twitter": "kamranahmedse",
   "facebook": "kamranahmedse",
-  "url": "https://roadmap.sh",
   "logo": "/static/brand.png",
-  "repoUrl": "https://github.com/kamranahmedse/roadmap-next",
-  "dataUrl": "/tree/master/data",
+  "url": {
+    "web": "https://roadmap.sh",
+    "repo": "https://github.com/kamranahmedse/roadmap-next",
+    "repoData": "https://github.com/kamranahmedse/roadmap-next/tree/master/data",
+    "addGuide": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing/guide.md",
+    "addRoadmap": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing/roadmap.md"
+  },
   "keywords": [
     "roadmap",
     "developer roadmaps",
