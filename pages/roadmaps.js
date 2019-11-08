@@ -14,8 +14,8 @@ const RoadmapsList = () => (
     <SiteNav />
     <div className="container">
       <PageHeader
-        title="Developer Roadmaps"
-        subtitle="We continue to improve these roadmaps and add new ones, <a href='/signup'>subscribe to get occasional updates</a>"
+        title="Roadmaps"
+        subtitle="Step by step guides and paths to learn different tools or technologies"
       />
     </div>
     <div className="pt-5 pb-5 bg-light border-top">
