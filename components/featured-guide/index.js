@@ -7,7 +7,7 @@ import { findByUsername } from 'lib/author';
 const FeaturedGuide = ({ guide }) => {
   const author = findByUsername(guide.author) || {};
   return (
-    <div className="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-12 grid-item-container">
+    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 grid-item-container">
       <Link href={ guide.url } passHref>
         <BlockLink>
           <BlockTitle>{ guide.title }</BlockTitle>

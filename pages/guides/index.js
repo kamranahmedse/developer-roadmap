@@ -2,18 +2,23 @@ import DefaultLayout from 'layouts/default/index';
 import SiteNav from 'components/site-nav';
 import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
+import { getAllGuides } from 'lib/guide';
+import FeaturedGuide from '../../components/featured-guide';
 
 const Roadmap = () => (
   <DefaultLayout>
     <SiteNav />
     <PageHeader
-      title="Guides"
-      subtitle="Community written guides, <a href='/signup'>subscribe to get new guides</a>"
+      title="Programming Guides"
+      subtitle="Easy to follow guides on complex topics written and maintained by the community"
     />
-    <div className="border-top bg-light">
+    <div className="pt-5 pb-5 bg-light border-top">
       <div className="container">
-        <p>Show all guides here</p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis eaque mollitia nobis perferendis perspiciatis, quas sed vitae. Ad commodi culpa dolorum id iusto natus nesciunt quam ratione repudiandae sed? Ab!
+        <div className="row">
+          { getAllGuides().map(guide => (
+            <FeaturedGuide guide={guide} key={ guide.url } />
+          )) }
+        </div>
       </div>
     </div>
     <PageFooter />

@@ -5,7 +5,7 @@ export const ItemWrap = styled.div`
 `;
 
 export const BlockItem = styled.a`
-  height: 114px;
+  min-height: 114px;
   box-shadow: rgba(0, 0, 0, 0.12) 0 5px 10px;
   transition: box-shadow 0.2s ease 0s;
   align-items: stretch;

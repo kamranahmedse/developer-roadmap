@@ -58,5 +58,15 @@
     "author": "kamranahmedse",
     "updatedAt": "2019-10-09T12:00:00.860Z",
     "createdAt": "2019-01-23T17:00:00.860Z"
+  },
+  {
+    "title": "Journey to HTTP/2",
+    "description": "The evolution of HTTP. How it all started and where we stand today",
+    "url": "/guides/journey-to-http2",
+    "fileName": "http-caching",
+    "featured": false,
+    "author": "kamranahmedse",
+    "updatedAt": "2019-10-09T12:00:00.860Z",
+    "createdAt": "2019-01-23T17:00:00.860Z"
   }
 ]
