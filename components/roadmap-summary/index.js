@@ -13,7 +13,7 @@ import {
 import SharePage from 'components/share-page';
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faClock, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import GuideBody from 'components/guide-body';
 import siteConfig from "data/site";
 
@@ -31,10 +31,18 @@ const RoadmapSummary = ({ roadmap }) => (
       <Description>{ roadmap.description }</Description>
 
       <BadgesList className="mt-4">
-        { roadmap.upcoming && <SecondaryBadge>Upcoming Roadmap</SecondaryBadge> }
+        { roadmap.upcoming && (
+          <SecondaryBadge>
+            <FontAwesomeIcon icon={faClock}/>
+            Upcoming Roadmap
+          </SecondaryBadge>
+        ) }
         { !roadmap.upcoming && (
           <BadgeLink href={`${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here`} target="_blank">
-            <SecondaryBadge>Suggest Improvements</SecondaryBadge>
+            <SecondaryBadge>
+              <FontAwesomeIcon icon={faHandshake}/>
+              Suggest Improvements
+            </SecondaryBadge>
           </BadgeLink>
         ) }
 

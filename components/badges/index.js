@@ -21,9 +21,12 @@ export const PrimaryBadge = styled.span`
   margin-left: 10px;
   
   svg {
-    height: 11px;
-    width: 11px;
+    height: 11px !important;
     margin-right: 5px;
+    
+    &.fa-clock {
+      height: 10px !important;
+    }
   }
 `;
 
