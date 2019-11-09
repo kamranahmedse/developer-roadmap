@@ -31,3 +31,16 @@ export const SecondaryBadge = styled(PrimaryBadge)`
   background: #696969;
   color: white;
 `;
+
+export const InfoBadge = styled(PrimaryBadge)`
+  background: #039640;
+  color: white;
+`;
+
+export const BadgeLink = styled.a`
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration:none;
+  }
+`;

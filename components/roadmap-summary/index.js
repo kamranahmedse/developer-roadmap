@@ -10,16 +10,19 @@ import {
   VersionLink,
   VersionList,
 } from './style';
-import SharePage from '../share-page';
-
-import { BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
+import SharePage from 'components/share-page';
+import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import GuideBody from 'components/guide-body';
+import siteConfig from "data/site";
 
 const isActiveRoadmap = (loadedVersion, roadmapVersion) => (
   (loadedVersion === roadmapVersion) ||
   (loadedVersion === 'latest' && parseInt(roadmapVersion, 10) === (new Date()).getFullYear())
 );
+
+const UpcomingGuide = require(`../../data/roadmaps/upcoming.md`).default;
 
 const RoadmapSummary = ({ roadmap }) => (
   <SummaryContainer>
@@ -29,14 +32,18 @@ const RoadmapSummary = ({ roadmap }) => (
 
       <BadgesList className="mt-4">
         { roadmap.upcoming && <SecondaryBadge>Upcoming Roadmap</SecondaryBadge> }
-        { roadmap.featured && <SecondaryBadge>Featured Roadmap</SecondaryBadge> }
+        { !roadmap.upcoming && (
+          <BadgeLink href={`${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here`} target="_blank">
+            <SecondaryBadge>Suggest Improvements</SecondaryBadge>
+          </BadgeLink>
+        ) }
 
-        <a href="/signup">
+        <BadgeLink href="/signup">
           <PrimaryBadge>
             <FontAwesomeIcon icon={faEnvelope}/>
             Send me Updates
           </PrimaryBadge>
-        </a>
+        </BadgeLink>
       </BadgesList>
 
       <VersionList className="border-bottom">
@@ -50,10 +57,21 @@ const RoadmapSummary = ({ roadmap }) => (
       </VersionList>
     </Header>
     <Summary>
-      <div className="container">
-        <Image src={ roadmap.picture } />
-        <SharePage title={ roadmap.description } url={ roadmap.url } />
-      </div>
+      {
+        roadmap.upcoming && (
+          <GuideBody>
+            <UpcomingGuide />
+          </GuideBody>
+        )
+      }
+      {
+        !roadmap.upcoming && (
+          <div className="container">
+            <Image src={ roadmap.picture } />
+            <SharePage title={ roadmap.description } url={ roadmap.url } />
+          </div>
+        )
+      }
     </Summary>
   </SummaryContainer>
 );
