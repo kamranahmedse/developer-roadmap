@@ -30,10 +30,11 @@ const RoadmapSummary = ({ roadmap }) => (
       <BadgesList className="mt-4">
         { roadmap.upcoming && <SecondaryBadge>Upcoming Roadmap</SecondaryBadge> }
         { roadmap.featured && <SecondaryBadge>Featured Roadmap</SecondaryBadge> }
+
         <a href="/signup">
           <PrimaryBadge>
             <FontAwesomeIcon icon={faEnvelope}/>
-            Notify Me
+            Send me Updates
           </PrimaryBadge>
         </a>
       </BadgesList>
