@@ -40,6 +40,11 @@ export const InfoBadge = styled(PrimaryBadge)`
   color: white;
 `;
 
+export const DarkBadge = styled(PrimaryBadge)`
+  background: #101010;
+  color: white;
+`;
+
 export const BadgeLink = styled.a`
   text-decoration: none;
   

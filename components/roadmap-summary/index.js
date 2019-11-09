@@ -11,9 +11,9 @@ import {
   VersionList,
 } from './style';
 import SharePage from 'components/share-page';
-import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
+import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge, DarkBadge } from 'components/badges';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faClock, faHandshake } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faClock, faHandshake, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import GuideBody from 'components/guide-body';
 import siteConfig from "data/site";
 
@@ -41,7 +41,7 @@ const RoadmapSummary = ({ roadmap }) => (
           <BadgeLink href={`${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here`} target="_blank">
             <SecondaryBadge>
               <FontAwesomeIcon icon={faHandshake}/>
-              Suggest Improvements
+              Suggest Changes
             </SecondaryBadge>
           </BadgeLink>
         ) }
