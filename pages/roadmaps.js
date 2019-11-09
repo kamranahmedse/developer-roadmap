@@ -23,6 +23,7 @@ const RoadmapsList = () => (
         <div className="row">
           { roadmaps.map(roadmap => (
             <RowBlock
+              key={ roadmap.url }
               title={ roadmap.title.replace(/roadmap|developer/i, '') }
               subtitle={ roadmap.featuredDescription || roadmap.description }
               url={ roadmap.url }
