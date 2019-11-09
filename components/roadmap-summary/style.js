@@ -4,7 +4,7 @@ export const SummaryContainer = styled.div``;
 
 export const Header = styled.div`
   text-align: center;
-  padding: 60px 0 55px;
+  padding: 45px 30px 55px;
 `;
 
 export const Summary = styled.div`
@@ -19,7 +19,7 @@ export const Summary = styled.div`
 export const Title = styled.h1`
   font-weight: 700;
   margin-bottom: 12px;
-  font-size: 46px;
+  font-size: 48px;
 `;
 
 export const Description = styled.p`
