@@ -12,6 +12,9 @@ import {
 } from './style';
 import { getContributionUrl } from "lib/guide";
 import { getTwitterUrl } from "lib/url";
+import { faClock, faEnvelope, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge, DarkBadge } from 'components/badges';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 const GuideHeader = ({
  guide,
@@ -33,6 +36,20 @@ const GuideHeader = ({
     <GuideTitle>{ guide.title }</GuideTitle>
     <GuideSubtitle>{ guide.description }</GuideSubtitle>
     <ActionItems>
+      <BadgesList className="mt-4">
+        <BadgeLink href="/guides">
+          <SecondaryBadge>
+            <FontAwesomeIcon icon={faArrowLeft}/>
+            Other Guides
+          </SecondaryBadge>
+        </BadgeLink>
+        <BadgeLink href="/signup">
+          <PrimaryBadge>
+            <FontAwesomeIcon icon={faEnvelope}/>
+            Send me Updates
+          </PrimaryBadge>
+        </BadgeLink>
+      </BadgesList>
     </ActionItems>
   </HeaderWrap>
 );

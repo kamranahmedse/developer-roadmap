@@ -31,6 +31,12 @@ const RoadmapSummary = ({ roadmap }) => (
       <Description>{ roadmap.description }</Description>
 
       <BadgesList className="mt-4">
+        <BadgeLink href="/roadmaps">
+          <DarkBadge>
+            <FontAwesomeIcon icon={faArrowLeft}/>
+            Other Roadmaps
+          </DarkBadge>
+        </BadgeLink>
         { roadmap.upcoming && (
           <SecondaryBadge>
             <FontAwesomeIcon icon={faClock}/>

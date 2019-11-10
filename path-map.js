@@ -67,7 +67,7 @@ const getRoadmapRoutes = () => {
       },
       // Route for each of the versions of this roadmap i.e.
       // `{ '/frontend/2019': { page: '/[roadmap]/[version]', query: 'frontend/2019' } }`
-      ...(roadmap.versions.reduce((versionRoutes, version) => {
+      ...((roadmap.versions || []).reduce((versionRoutes, version) => {
         return {
           ...versionRoutes,
           [`${roadmap.url}/${version}`]: {

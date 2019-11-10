@@ -40,16 +40,6 @@
     "updatedAt": "2019-11-01T12:00:00.860Z"
   },
   {
-    "title": "Using React Hooks",
-    "description": "Start using React hooks in your react applications today with this guide.",
-    "url": "/guides/using-react-hooks",
-    "fileName": "using-react-hooks",
-    "featured": true,
-    "author": "kamranahmedse",
-    "createdAt": "2019-01-23T17:00:00.860Z",
-    "updatedAt": "2019-01-23T17:00:00.860Z"
-  },
-  {
     "title": "HTTP Caching",
     "description": "Everything you need to know about web caching",
     "url": "/guides/http-caching",
