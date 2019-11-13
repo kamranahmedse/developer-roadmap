@@ -49,7 +49,9 @@ export const Button = styled.button`
   color: white;
   border-radius: 5px;
   
-  &:hover {
+  &:hover, &:active, &:focus {
     background: #000000;
+    box-shadow: none;
+    outline: none;
   }
 `;
