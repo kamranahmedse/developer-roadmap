@@ -1,5 +1,3 @@
-In one of the previous posts, I discussed about [HTTP and where it stands at this point](/guides/journey-to-http2). This is one is going to be specifically about the caching.
-
 As users, we easily get frustrated by the buffering videos, the images that take seconds to load, pages that got stuck because the content is being loaded. Loading the resources from some cache is much faster than fetching the same from the originating server. It reduces latency, speeds up the loading of resources, decreases the load on server, cuts down the bandwidth costs etc. 
 
 ### Introduction
@@ -23,7 +21,11 @@ Before we get into further details, let me give you an overview of the terms tha
 
 ### Caching Locations
 
-Web cache can be shared or private depending upon the location where it exists. Below is the list of caching locations
+Web cache can be shared or private depending upon the location where it exists. Here is the list of different caching locations
+
+- [Browser Cache](#browser-cache)
+- [Proxy Cache](#proxy-cache)
+- [Reverse Proxy Cache](#reverse-proxy-cache)
 
 #### Browser Cache
 
@@ -50,6 +52,22 @@ Although you can control the reverse proxy caches (since it is implemented by yo
 ### Caching Headers
 
 So, how do we control the web cache? Whenever the server emits some response, it is accompanied with some HTTP headers to guide the caches whether and how to cache this response. Content provider is the one that has to make sure to return proper HTTP headers to force the caches on how to cache the content.
+
+- [Expires](#expires)
+- [Pragma](#pragma)
+- [Cache-Control](#cache-control)
+  - [private](#private)
+  - [public](#public)
+  - [no-store](#no-store)
+  - [no-cache](#no-cache)
+  - [max-age: seconds](#max-age)
+  - [s-maxage: seconds](#s-maxage)
+  - [must-revalidate](#must-revalidate)
+  - [proxy-revalidate](#proxy-revalidate)
+  - [Mixing Values](#mixing-values)
+- [Validators](#validators)
+  - [ETag](#etag)
+  - [Last-Modified](#last-modified)
 
 #### Expires
 
@@ -104,7 +122,7 @@ Cache-Control: no-store
 Cache-Control: max-age=3600, no-cache, public
 ```
 
-#### max-age: seconds
+##### max-age: seconds
 **`max-age`** specifies the number of seconds for which the content will be cached. For example, if the `cache-control` looks like below:
 
 ```html
