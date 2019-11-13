@@ -27,7 +27,7 @@ const PageFooter = () => (
         <div className="site-contribute foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className='foot-header'>Contribute</li>
-            <li><a href={ siteConfig.url.addGuide } target="_blank">Write an Article</a></li>
+            <li><a href={ siteConfig.url.addGuide } target="_blank">Write a Guide</a></li>
             <li><a href={ siteConfig.url.addRoadmap } target="_blank">Submit a Roadmap</a></li>
             <li><a href={ siteConfig.url.addResources } target="_blank">Add resources</a></li>
             <li><a href={ siteConfig.url.repo } target="_blank">Codebase</a></li>
@@ -37,8 +37,7 @@ const PageFooter = () => (
           <ul>
             <li className="foot-header">Learn</li>
             <li><a href="/guides">Read Guides</a></li>
-            <li><a href="/roadmaps">Follow Roadmap</a></li>
-            <li><a href="#">Review Projects</a></li>
+            <li><a href="/roadmaps">View Roadmaps</a></li>
             <li><a href={ siteConfig.url.contribute } target="_blank">Contribute</a></li>
           </ul>
         </div>
