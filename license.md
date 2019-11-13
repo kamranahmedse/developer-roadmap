@@ -1,5 +1,6 @@
-Copyright (c) 2019, Kamran Ahmed
+BSD 4-Clause License
 
+Copyright (c) Kamran Ahmed
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
