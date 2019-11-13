@@ -1,7 +1,11 @@
-.next
-.idea
+_*
+Thumbs.db
 .DS_Store
+.idea
+.next
 out
 build
 node_modules
 yarn-error.log
+*.sublime-project
+*.sublime-workspace
