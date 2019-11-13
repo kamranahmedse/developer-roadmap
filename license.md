@@ -1,4 +1,5 @@
-Copyright (c) <2019>, <Kamran Ahmed>
+Copyright (c) 2019, Kamran Ahmed
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without
