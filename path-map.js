@@ -1,8 +1,8 @@
 const path = require('path');
 const glob = require('glob');
 
-const guides = require('./data/guides.json');
-const roadmaps = require('./data/roadmaps');
+const guides = require('./storage/guides.json');
+const roadmaps = require('./storage/roadmaps');
 
 const PAGES_PATH = path.join(__dirname, 'pages');
 

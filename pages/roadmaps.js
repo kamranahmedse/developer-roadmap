@@ -4,11 +4,11 @@ import DefaultLayout from 'layouts/default/index';
 import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
 import PageHeader from 'components/page-header';
-import roadmaps from "data/roadmaps";
+import roadmaps from "storage/roadmaps";
 import RowBlock from 'components/row-block';
 import IconRowBlock from 'components/icon-row-block';
-import siteConfig from "data/site";
-import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from '../components/badges';
+import siteConfig from "storage/site";
+import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 

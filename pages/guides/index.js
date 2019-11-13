@@ -1,13 +1,13 @@
+import { faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons/index';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
+import FeaturedGuide from 'components/featured-guide';
 import DefaultLayout from 'layouts/default/index';
-import SiteNav from 'components/site-nav';
 import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
+import SiteNav from 'components/site-nav';
 import { getAllGuides } from 'lib/guide';
-import FeaturedGuide from '../../components/featured-guide';
-import { faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons/index';
-import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import siteConfig from "data/site";
+import siteConfig from 'storage/site';
 
 const Roadmap = () => (
   <DefaultLayout>

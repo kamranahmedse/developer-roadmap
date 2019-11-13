@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { FeaturedContentWrap } from './style';
-import roadmaps from 'data/roadmaps';
+import roadmaps from 'storage/roadmaps';
 import FeaturedRoadmap from 'components/featured-roadmap';
 
 const FeaturedRoadmaps = () => (

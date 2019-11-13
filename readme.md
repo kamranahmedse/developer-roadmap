@@ -21,9 +21,9 @@ If you think that these can be improved in anyway, please do suggest.
 
 ![Frontend Roadmap](./static/roadmaps/latest/frontend.png)
 
-## Back-end Roadmap
+## Backend Roadmap
 
-![Back-end Roadmap](./static/roadmaps/latest/backend.png)
+![Backend Roadmap](./static/roadmaps/latest/backend.png)
 
 ## DevOps Roadmap
 
