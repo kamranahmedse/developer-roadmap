@@ -14,7 +14,7 @@ const Terms = () => (
           <p className='text-uppercase'>Please note that your use of and access to our services (defined below) are subject to the following terms; if you do not agree to all of the following, you may not use or access the services in any manner.</p>
 
           <p>Welcome to roadmap.sh. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services and applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at <a
-            href="mailto:contact@roadmap.sh">contact@roadmap.sh</a>.</p>
+            href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>.</p>
           <p>These Terms of Use (the “Terms”) are a binding contract between you and roadmap.sh (“roadmap.sh,” “we”, and “us”). You must agree to and accept all of the Terms, or you don’t have the right to use the Services. Your using the Services in any way means that you agree to all of these Terms, and these Terms will remain in
             effect while you use the Services. These Terms include the provisions in this document, as well as those in the Privacy Policy and Copyright Dispute Policy.</p>
 
@@ -28,7 +28,7 @@ const Terms = () => (
           <p>The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under 13. We do not knowingly collect or solicit personally identifiable information from children under 13. If
             you
             are a child under 13, please do not attempt to register for the Services or send any personal information about yourself to us. If we learn we have collected personal information from a child under 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal
-            information, please contact us at <a href="mailto:contact@roadmap.sh">contact@roadmap.sh.</a></p>
+            information, please contact us at <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh.</a></p>
 
           <h4>What are the basics of using roadmap.sh?</h4>
           <p>You may be required to sign up for an account, and select a password and username. You agree to provide us with accurate, complete, and up-to-date registration information about yourself. You may not select as your username a name that you don’t have the right to use, or another person’s name with the intent to impersonate
@@ -107,7 +107,7 @@ const Terms = () => (
           <p>The roadmap.sh Services are currently free, but we reserve the right to charge for certain or all Services in the future. We will notify you before any Services you are then using begin carrying a fee, and if you wish to continue using such Services, you must pay all applicable fees for such Services.</p>
 
           <h4>What if I want to stop using roadmap.sh?</h4>
-          <p>You’re free to do that at any time, by contacting us at <a href="mailto:contact@roadmap.sh">contact@roadmap.sh</a>; please refer to our Privacy Policy, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services. roadmap.sh is also free to
+          <p>You’re free to do that at any time, by contacting us at <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>; please refer to our Privacy Policy, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services. roadmap.sh is also free to
             terminate (or suspend access to) your use of the Services or your account, for any reason in our discretion, including your breach of these Terms. roadmap.sh has the sole right to decide whether you are in violation of any of the restrictions set forth in these Terms.</p>
           <p>Account termination may result in destruction of any Content associated with your account, so keep that in mind before you decide to terminate your account. We will try to provide advance notice to you prior to our terminating your account so that you are able to retrieve any important User Submissions you may have stored in
             your account (to the extent allowed by law and these Terms), but we may not do so if we determine it would be impractical, illegal, not in the interest of someone’s safety or security, or otherwise harmful to the rights or property of roadmap.sh.</p>
