@@ -2,7 +2,7 @@
   "name": "roadmap-next",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "proprietary",
+  "license": "BSD-4-Clause",
   "scripts": {
     "dev": "next",
     "build": "next build",
