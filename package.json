@@ -7,7 +7,8 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "html": "next build && next export",
+    "html": "next build && next export && echo 'roadmap.sh' > out/CNAME && touch out/.nojekyll",
+    "serve:out": "serve out",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d out",
     "test": "jest",
     "test:watch": "jest --watch"
@@ -42,6 +43,7 @@
     "babel-plugin-styled-components": "^1.10.6",
     "gh-pages": "^2.1.1",
     "glob": "^7.1.5",
-    "jest": "^24.9.0"
+    "jest": "^24.9.0",
+    "serve": "^11.2.0"
   }
 }
