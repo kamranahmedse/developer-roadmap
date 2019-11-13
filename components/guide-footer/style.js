@@ -112,10 +112,12 @@ export const AuthorImg = styled.img`
   height: 100px !important;
   width: 100px !important;
   margin-right: 22px;
+  display: block;
 `;
 
 export const AuthorMeta = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex: 1;
 `;

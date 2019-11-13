@@ -6,28 +6,18 @@
     "fileName": "design-patterns-for-humans",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "2019-01-23T17:00:00.860Z",
-    "updatedAt": "2019-01-23T17:00:00.860Z"
+    "createdAt": "2018-11-29T17:00:00.860Z",
+    "updatedAt": "2018-11-29T17:00:00.860Z"
   },
   {
-    "title": "Learn Regex",
-    "description": "An easy to understand guide on regular expressions with real world examples",
-    "url": "/guides/learn-regex",
-    "fileName": "learn-regex",
+    "title": "Journey to HTTP/2",
+    "description": "The evolution of HTTP. How it all started and where we stand today",
+    "url": "/guides/journey-to-http2",
+    "fileName": "journey-to-http2",
     "featured": true,
-    "author": "ziishaned",
-    "createdAt": "2019-01-23T17:00:00.860Z",
-    "updatedAt": "2019-01-23T17:00:00.860Z"
-  },
-  {
-    "title": "Bash Guide",
-    "description": "Easy to understand guide for bash with real world usage examples.",
-    "url": "/guides/bash-guide",
-    "fileName": "bash-guide",
-    "featured": true,
-    "author": "idnan",
-    "createdAt": "2019-01-23T17:00:00.860Z",
-    "updatedAt": "2019-01-23T17:00:00.860Z"
+    "author": "kamranahmedse",
+    "createdAt": "2018-12-04T12:00:00.860Z",
+    "updatedAt": "2018-12-04T12:00:00.860Z"
   },
   {
     "title": "DNS in One Picture",
@@ -36,23 +26,13 @@
     "fileName": "dns-in-one-picture",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "2019-11-01T12:00:00.860Z",
-    "updatedAt": "2019-11-01T12:00:00.860Z"
+    "updatedAt": "2019-10-09T12:00:00.860Z",
+    "createdAt": "2019-01-23T17:00:00.860Z"
   },
   {
     "title": "HTTP Caching",
     "description": "Everything you need to know about web caching",
     "url": "/guides/http-caching",
-    "fileName": "http-caching",
-    "featured": true,
-    "author": "kamranahmedse",
-    "updatedAt": "2019-10-09T12:00:00.860Z",
-    "createdAt": "2019-01-23T17:00:00.860Z"
-  },
-  {
-    "title": "Journey to HTTP/2",
-    "description": "The evolution of HTTP. How it all started and where we stand today",
-    "url": "/guides/journey-to-http2",
     "fileName": "http-caching",
     "featured": true,
     "author": "kamranahmedse",
