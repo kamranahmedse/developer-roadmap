@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import siteConfig from "data/site";
 import { FooterWrap } from './style.js'
 
 const PageFooter = () => (
@@ -26,28 +27,28 @@ const PageFooter = () => (
         <div className="site-contribute foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className='foot-header'>Contribute</li>
-            <li><a href="#">Write an Article</a></li>
-            <li><a href="#">Submit a Roadmap</a></li>
-            <li><a href="#">Add resources</a></li>
-            <li><a href="#">Codebase</a></li>
+            <li><a href={ siteConfig.url.addGuide } target="_blank">Write an Article</a></li>
+            <li><a href={ siteConfig.url.addRoadmap } target="_blank">Submit a Roadmap</a></li>
+            <li><a href={ siteConfig.url.addResources } target="_blank">Add resources</a></li>
+            <li><a href={ siteConfig.url.repo } target="_blank">Codebase</a></li>
           </ul>
         </div>
         <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className="foot-header">Learn</li>
-            <li><a href="#">Read Articles</a></li>
-            <li><a href="#">Follow Roadmap</a></li>
+            <li><a href="/guides">Read Guides</a></li>
+            <li><a href="/roadmaps">Follow Roadmap</a></li>
             <li><a href="#">Review Projects</a></li>
-            <li><a href="#">Contribute</a></li>
+            <li><a href={ siteConfig.url.contribute } target="_blank">Contribute</a></li>
           </ul>
         </div>
         <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className="foot-header">Most Visited</li>
-            <li><a href="#">Frontend Roadmap</a></li>
-            <li><a href="#">Backend Roadmap</a></li>
-            <li><a href="#">DevOps Roadmap</a></li>
-            <li><a href="#">One for All</a></li>
+            <li><a href="/frontend">Frontend Roadmap</a></li>
+            <li><a href="/backend">Backend Roadmap</a></li>
+            <li><a href="/devops">DevOps Roadmap</a></li>
+            <li><a href="/roadmaps">Upcoming</a></li>
           </ul>
         </div>
       </div>

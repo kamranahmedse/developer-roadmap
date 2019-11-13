@@ -12,6 +12,8 @@
     "repoData": "https://github.com/kamranahmedse/roadmap-next/tree/master/data",
     "addGuide": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing/guide.md",
     "addRoadmap": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing/roadmap.md",
+    "addResources": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing/resources.md",
+    "contribute": "https://github.com/kamranahmedse/roadmap-next/tree/master/contributing",
     "issue": "https://github.com/kamranahmedse/roadmap-next/issues/new"
   },
   "keywords": [
