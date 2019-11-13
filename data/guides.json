@@ -6,8 +6,8 @@
     "fileName": "design-patterns-for-humans",
     "featured": true,
     "author": "kamranahmedse",
-    "createdAt": "2018-11-29T17:00:00.860Z",
-    "updatedAt": "2018-11-29T17:00:00.860Z"
+    "updatedAt": "2019-10-09T12:00:00.860Z",
+    "createdAt": "2019-01-23T17:00:00.860Z"
   },
   {
     "title": "Journey to HTTP/2",
@@ -17,7 +17,8 @@
     "featured": true,
     "author": "kamranahmedse",
     "createdAt": "2018-12-04T12:00:00.860Z",
-    "updatedAt": "2018-12-04T12:00:00.860Z"
+    "updatedAt": "2018-12-04T12:00:00.860Z",
+    "draft": true
   },
   {
     "title": "DNS in One Picture",
@@ -26,8 +27,8 @@
     "fileName": "dns-in-one-picture",
     "featured": true,
     "author": "kamranahmedse",
-    "updatedAt": "2019-10-09T12:00:00.860Z",
-    "createdAt": "2019-01-23T17:00:00.860Z"
+    "updatedAt": "2018-12-04T12:00:00.860Z",
+    "createdAt": "2018-12-04T17:00:00.860Z"
   },
   {
     "title": "HTTP Caching",
@@ -36,7 +37,7 @@
     "fileName": "http-caching",
     "featured": true,
     "author": "kamranahmedse",
-    "updatedAt": "2019-10-09T12:00:00.860Z",
-    "createdAt": "2019-01-23T17:00:00.860Z"
+    "createdAt": "2018-11-29T17:00:00.860Z",
+    "updatedAt": "2018-11-29T17:00:00.860Z"
   }
 ]
