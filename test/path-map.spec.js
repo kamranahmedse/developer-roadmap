@@ -20,6 +20,7 @@ describe("Build scripts tests", () => {
       '/terms': { page: '/terms' },
       '/guides': { page: '/guides/index' },
       '/roadmaps': { page: '/roadmaps' },
+      '/signup': { page: '/signup' },
     });
   });
 
@@ -59,7 +60,7 @@ describe("Build scripts tests", () => {
   test('it should generate valid roadmap routes', () => {
     const expectedPathMap = roadmaps.reduce((roadmapAcc, roadmap) => {
       // Routes for each of the versions of this roadmap
-      const versionRoutes = roadmap.versions.reduce((versionAcc, version) => ({
+      const versionRoutes = (roadmap.versions || []).reduce((versionAcc, version) => ({
         ...versionAcc,
         [`${roadmap.url}/${version}`]: {
           page: '/[roadmap]/[version]',
