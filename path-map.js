@@ -62,7 +62,7 @@ const getRoadmapRoutes = () => {
       ...roadmapRoutes,
       // Default roadmap path i.e. `{ '/frontend': { page: '/[roadmap]/index', query: 'frontend' }`
       [roadmap.url]: {
-        page: '/[roadmap]/index',
+        page: '/[roadmap]',
         query: slug
       },
       // Route for each of the versions of this roadmap i.e.

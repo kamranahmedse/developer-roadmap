@@ -72,7 +72,7 @@ describe("Build scripts tests", () => {
       return {
         ...roadmapAcc,
         [roadmap.url]: {
-          page: '/[roadmap]/index',
+          page: '/[roadmap]',
           query: roadmap.url.split('/')[1]
         },
         // Expected roadmap for versions
