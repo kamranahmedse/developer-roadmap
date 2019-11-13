@@ -15,19 +15,19 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## Introduction
 
-![Web Developer Roadmap Introduction](./images/intro.png)
+![Web Developer Roadmap Introduction](./static/roadmaps/intro.png)
 
 ## Frontend Roadmap
 
-![Frontend Roadmap](./images/frontend.png?fix=531)
+![Frontend Roadmap](./static/roadmaps/latest/frontend.png)
 
 ## Back-end Roadmap
 
-![Back-end Roadmap](./images/backend.png)
+![Back-end Roadmap](./static/roadmaps/latest/backend.png)
 
 ## DevOps Roadmap
 
-![DevOps Roadmap](./images/devops.png)
+![DevOps Roadmap](./static/roadmaps/latest/devops.png)
 
 ## 🚦 Wrap Up
 
@@ -35,7 +35,7 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
 
 ## 🙌 Contribution
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+> Have a look at [contribution docs](./contributing) for how to update any of the roadmaps
 
 - Open pull request with improvements
 - Discuss ideas in issues
