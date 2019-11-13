@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Link from '../icons/link.svg';
+import Link from 'components/icons/link.svg';
 
 const linkify = (Component) => {
   return (props) => {

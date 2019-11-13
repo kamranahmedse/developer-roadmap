@@ -13,7 +13,7 @@ const Guide = ({ guide }) => {
     return <Error statusCode={ 404 } />
   }
 
-  const GuideContent = require(`../../data/guides/${guide.fileName}.md`).default;
+  const GuideContent = require(`../../storage/guides/${guide.fileName}.md`).default;
 
   return (
     <GuideLayout>

@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import classNames from 'classnames';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faClock, faHandshake, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import {
   SummaryContainer,
   Title,
@@ -12,17 +14,15 @@ import {
 } from './style';
 import SharePage from 'components/share-page';
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge, DarkBadge } from 'components/badges';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faClock, faHandshake, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import GuideBody from 'components/guide-body';
-import siteConfig from "data/site";
+import siteConfig from "storage/site";
 
 const isActiveRoadmap = (loadedVersion, roadmapVersion) => (
   (loadedVersion === roadmapVersion) ||
   (loadedVersion === 'latest' && parseInt(roadmapVersion, 10) === (new Date()).getFullYear())
 );
 
-const UpcomingGuide = require(`../../data/roadmaps/upcoming.md`).default;
+const UpcomingGuide = require(`../../storage/roadmaps/upcoming.md`).default;
 
 const RoadmapSummary = ({ roadmap }) => (
   <SummaryContainer>

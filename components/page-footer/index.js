@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import siteConfig from "data/site";
+import siteConfig from "storage/site";
 import { FooterWrap } from './style.js'
 
 const PageFooter = () => (

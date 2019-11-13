@@ -1,5 +1,5 @@
 import NextHead from 'next/head';
-import siteConfig from 'data/site';
+import siteConfig from 'storage/site';
 import { GA_TRACKING_ID } from 'lib/gtag';
 
 const prepareTitle = (givenTitle) => {
