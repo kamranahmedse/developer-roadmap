@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+              <loc>https://roadmap.sh/frontend</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/frontend/latest</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/frontend/2018</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/frontend/2017</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/backend</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/backend/latest</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/backend/2018</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/backend/2017</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/devops</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/devops/latest</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/devops/2018</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/devops/2017</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/fullstack</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T17:21:23.153Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/qa-engineer</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T17:21:23.153Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/design-patterns-for-humans</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-10-09T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/journey-to-http2</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-12-04T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/dns-in-one-picture</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-12-04T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/http-caching</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-11-29T17:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/about</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>0.8</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/roadmaps</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/signup</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-11-14T08:22:01.000Z</lastmod>
+              <priority>0.9</priority>
+          </url>
+</urlset>

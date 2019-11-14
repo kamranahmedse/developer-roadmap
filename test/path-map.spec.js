@@ -7,7 +7,7 @@ const {
   getPageRoutes,
   getGuideRoutes,
   getRoadmapRoutes
-} = require("../path-map");
+} = require("../scripts/path-map");
 
 describe("Build scripts tests", () => {
   test('it should generate valid pathmap for pages', () => {

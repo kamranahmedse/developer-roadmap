@@ -6,7 +6,7 @@ const {
   getPageRoutes,
   getGuideRoutes,
   getRoadmapRoutes,
-} = require("./path-map");
+} = require("./scripts/path-map");
 
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
