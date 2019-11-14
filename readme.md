@@ -15,10 +15,13 @@
   </p>
 </p>
 
-[roadmap.sh](https://roadmap.sh) is the community effort to create knowledge that is approachable for the developers.
+roadmap.sh is the community effort to create knowledge that is approachable for the developers. 
 
+The website is built with Next.js, contains roadmaps which are the step by step guides for developers, guides which are the easier to understand explanations on the complex topics. Anyone can contribute to the website by suggesting changes to existing paths, adding learning resources, becoming an author by adding new guides, updating the existing guides.
 
-## How to Setup?
+## Development
+
+> Clone the repository, install the dependencies and start the application
 
 ```bash
 git clone https://github.com/kamranahmedse/roadmap.sh
@@ -26,4 +29,11 @@ yarn install
 yarn dev
 ```
 
-![](https://i.imgur.com/m7MeL9Q.png)
+## Contributions
+
+* Add new Roadmap
+* Suggest changes to existing roadmap
+* Write an article
+* Improve the site's codebase
+* Write tests
+
