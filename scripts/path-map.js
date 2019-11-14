@@ -1,10 +1,10 @@
 const path = require('path');
 const glob = require('glob');
 
-const guides = require('./storage/guides.json');
-const roadmaps = require('./storage/roadmaps');
+const guides = require('../storage/guides.json');
+const roadmaps = require('../storage/roadmaps');
 
-const PAGES_PATH = path.join(__dirname, 'pages');
+const PAGES_PATH = path.join(__dirname, '../pages');
 
 /**
  * Generate the page routes from the page files inside `/pages`

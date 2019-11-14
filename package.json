@@ -5,10 +5,9 @@
   "license": "BSD-4-Clause",
   "scripts": {
     "dev": "next",
-    "build": "next build",
-    "start": "next start",
-    "html": "next build && next export && echo 'roadmap.sh' > out/CNAME && touch out/.nojekyll",
+    "html": "next build && next export && echo 'roadmap.sh' > out/CNAME && '' > out/.nojekyll",
     "serve:out": "serve out",
+    "sitemap": "node scripts/sitemap.js",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d out",
     "test": "jest",
     "test:watch": "jest --watch"
