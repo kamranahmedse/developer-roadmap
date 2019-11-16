@@ -11,4 +11,4 @@ yarn-error.log
 *.sublime-project
 *.sublime-workspace
 config/*.json
-!config/template.json
+!config/dev.json
