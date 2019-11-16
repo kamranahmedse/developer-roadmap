@@ -1,4 +1,5 @@
 import { AboutHeaderWrap } from './style';
+import siteConfig from "storage/site";
 
 const AboutHeader = () => (
   <AboutHeaderWrap>
@@ -9,7 +10,7 @@ const AboutHeader = () => (
           <h2>Hello, I'm Kamran Ahmed.</h2>
           <p>I created <span className='flow-black'>roadmap.sh</span> to help developers find their path if they are confused and help them grow in their career.</p>
           <div className="author-links">
-            <a href="mailto:kamran@roadmap.sh">@kamranahmedse</a>
+            <a href={`https://twitter.com/${siteConfig.twitter}`} target="_blank">@kamranahmedse</a>
             <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>
           </div>
         </div>

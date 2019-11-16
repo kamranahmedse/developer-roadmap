@@ -2,10 +2,15 @@ import styled from 'styled-components';
 
 export const FaqContainer = styled.div`
   padding: 40px 0;
-`;
-
-export const FaqItem = styled.div`
-  padding: 20px 20px;
+  
+  h4 {
+    margin-top: 30px;
+    font-weight: 700;
+  }
+  
+  h4:first-child {
+    margin-top: 0;  
+  }
 
   p {
     color: #333;
@@ -13,5 +18,8 @@ export const FaqItem = styled.div`
 
   p:last-child {
     margin-bottom: 0;
+  }
+
+  .container {
   }
 `;
