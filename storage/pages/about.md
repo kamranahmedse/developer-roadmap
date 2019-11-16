@@ -31,5 +31,9 @@ You definitely can, infact you are encouraged to do that. Even your minor contri
 
 Just make sure to [follow the contribution guidelines](https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing) when you decide to contribute. 
 
+#### Can I redistribute the content?
+No, the license of the content on this website does not allow you to redistribute any of the content on this website anywhere. You can use it for personal use or share the link to the content if you have to but redistribution is not allowed.
+
 #### What is the best way to contact you?
 Tweet or send me a message [@kamranahmedse](https://twitter.com/kamranahmedse) or email me at [kamran@roadmap.sh](kamran@roadmap.sh). I get lots of messages so apologies in advance if you don't hear back from me soon but I do reply to everyone.
+
