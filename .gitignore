@@ -10,3 +10,5 @@ node_modules
 yarn-error.log
 *.sublime-project
 *.sublime-workspace
+config/*.json
+!config/template.json
