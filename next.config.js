@@ -8,6 +8,8 @@ const {
   getRoadmapRoutes,
 } = require("./scripts/path-map");
 
+require('dotenv').config();
+
 const withMDX = require('@next/mdx')({
   extension: /\.(md|mdx)?$/,
   options: {
@@ -22,6 +24,11 @@ const options = {
       ...getGuideRoutes(),
       ...getRoadmapRoutes(),
     };
+  },
+
+  // @todo read these from `process.env` and inject without having to write the vars here
+  env: {
+    GA_SECRET: process.env.GA_SECRET
   },
 
   // Allow mdx and md files to be pages
