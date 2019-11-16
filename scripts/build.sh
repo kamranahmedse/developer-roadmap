@@ -8,7 +8,7 @@ if [ ! -f "$ENV_FILE" ]; then
   exit 1
 fi
 
-next build
+NODE_ENV=prod next build
 next export
 echo 'roadmap.sh' > out/CNAME
 touch out/.nojekyll

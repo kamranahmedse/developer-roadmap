@@ -4,7 +4,7 @@
   "main": "index.js",
   "license": "BSD-4-Clause",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_ENV=dev next",
     "html": "./scripts/build.sh",
     "serve:out": "serve out",
     "sitemap": "node scripts/sitemap.js",
@@ -28,7 +28,6 @@
     "bootstrap": "^4.3.1",
     "classnames": "^2.2.6",
     "date-fns": "^2.6.0",
-    "dotenv": "^8.2.0",
     "font-awesome": "^4.7.0",
     "next": "^9.0.4",
     "node-sass": "^4.12.0",

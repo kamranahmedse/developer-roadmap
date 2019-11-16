@@ -80,8 +80,19 @@ const getRoadmapRoutes = () => {
   }, {});
 };
 
+/**
+ * Generates the path-map understood by next.js
+ * @returns {{}}
+ */
+const getPathMap = () => () => ({
+  ...getPageRoutes(),
+  ...getGuideRoutes(),
+  ...getRoadmapRoutes(),
+});
+
 module.exports = {
   getPageRoutes,
   getGuideRoutes,
   getRoadmapRoutes,
+  getPathMap,
 };
