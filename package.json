@@ -5,9 +5,9 @@
   "license": "BSD-4-Clause",
   "scripts": {
     "dev": "NODE_ENV=dev next",
-    "html": "./scripts/build.sh",
     "serve:out": "serve out",
     "sitemap": "node scripts/sitemap.js",
+    "build": "./scripts/build.sh",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",
     "test": "jest",
     "test:watch": "jest --watch"
