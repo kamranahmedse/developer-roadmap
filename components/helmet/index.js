@@ -1,7 +1,5 @@
-const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 import NextHead from 'next/head';
 import siteConfig from 'storage/site';
-import { GA_TRACKING_ID } from 'lib/gtag';
 
 const prepareTitle = (givenTitle) => {
   givenTitle = givenTitle || siteConfig.title;
@@ -56,15 +54,19 @@ const Helmet = (props) => (
     <link rel="icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
 
     { /* Global Site Tag (gtag.js) - Google Analytics */ }
-    <script async src={ `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}` } />
-    <script dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-      `,
-    }} />
+    { process.env.GA_SECRET && (
+      <>
+        <script async src={ `https://www.googletagmanager.com/gtag/js?id=${process.env.GA_SECRET}` } />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${process.env.GA_SECRET}');
+          `,
+        }} />
+      </>
+    )}
   </NextHead>
 );
 
