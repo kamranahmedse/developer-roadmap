@@ -1,3 +1,4 @@
+const { PHASE_DEVELOPMENT_SERVER } = require('next/constants');
 import NextHead from 'next/head';
 import siteConfig from 'storage/site';
 import { GA_TRACKING_ID } from 'lib/gtag';
@@ -22,13 +23,13 @@ const Helmet = (props) => (
     <meta name="keywords" content={ siteConfig.keywords.join(',') } />
 
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
-    <link rel="canonical" href={ siteConfig.url.web } />
+    <link rel="canonical" href={ siteConfig.url } />
     <meta httpEquiv="Content-Language" content="en" />
 
     <meta property="og:title" content={ prepareTitle(props.title) } />
     <meta property="og:description" content={ prepareDescription(props.description) } />
     <meta property="og:image" content={ siteConfig.logo } />
-    <meta property="og:url" content={ siteConfig.url.web } />
+    <meta property="og:url" content={ siteConfig.url } />
     <meta property="og:type" content="website" />
     <meta property="article:publisher" content={ `https://facebook.com/${siteConfig.facebook}` } />
     <meta property="og:site_name" content={ siteConfig.name } />
@@ -55,15 +56,19 @@ const Helmet = (props) => (
     <link rel="icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
 
     { /* Global Site Tag (gtag.js) - Google Analytics */ }
-    <script async src={ `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}` } />
-    <script dangerouslySetInnerHTML={{
-      __html: `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', '${GA_TRACKING_ID}');
-      `,
-    }} />
+    { !PHASE_DEVELOPMENT_SERVER && (
+      <>
+        <script async src={ `https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}` } />
+        <script dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_TRACKING_ID}');
+          `,
+        }} />
+      </>
+    )}
   </NextHead>
 );
 
