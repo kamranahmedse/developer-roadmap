@@ -5,10 +5,10 @@
   "license": "BSD-4-Clause",
   "scripts": {
     "dev": "next",
-    "html": "next build && next export && echo 'roadmap.sh' > out/CNAME && echo '' > out/.nojekyll",
+    "html": "./scripts/build.sh",
     "serve:out": "serve out",
     "sitemap": "node scripts/sitemap.js",
-    "deploy": "NODE_DEBUG=gh-pages gh-pages -d out",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",
     "test": "jest",
     "test:watch": "jest --watch"
   },
