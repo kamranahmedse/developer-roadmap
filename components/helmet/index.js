@@ -21,13 +21,13 @@ const Helmet = (props) => (
     <meta name="keywords" content={ siteConfig.keywords.join(',') } />
 
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
-    <link rel="canonical" href={ siteConfig.url } />
+    <link rel="canonical" href={ siteConfig.url.web } />
     <meta httpEquiv="Content-Language" content="en" />
 
     <meta property="og:title" content={ prepareTitle(props.title) } />
     <meta property="og:description" content={ prepareDescription(props.description) } />
     <meta property="og:image" content={ siteConfig.logo } />
-    <meta property="og:url" content={ siteConfig.url } />
+    <meta property="og:url" content={ siteConfig.url.web } />
     <meta property="og:type" content="website" />
     <meta property="article:publisher" content={ `https://facebook.com/${siteConfig.facebook}` } />
     <meta property="og:site_name" content={ siteConfig.name } />
