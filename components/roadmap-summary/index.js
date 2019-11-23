@@ -22,7 +22,7 @@ const isActiveRoadmap = (loadedVersion, roadmapVersion) => (
   (loadedVersion === 'latest' && parseInt(roadmapVersion, 10) === (new Date()).getFullYear())
 );
 
-const UpcomingGuide = require(`../../storage/roadmaps/upcoming.md`).default;
+const UpcomingGuide = require(`../../storage/guides/upcoming.md`).default;
 
 const RoadmapSummary = ({ roadmap }) => (
   <SummaryContainer>
