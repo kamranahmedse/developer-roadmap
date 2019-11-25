@@ -1,10 +1,12 @@
 const path = require('path');
 const glob = require('glob');
+const fs = require('fs');
 
 const guides = require('../storage/guides.json');
 const roadmaps = require('../storage/roadmaps');
 
 const PAGES_PATH = path.join(__dirname, '../pages');
+const ROADMAPS_PATH =  path.join(__dirname, '../storage/roadmaps');
 
 /**
  * Generate the page routes from the page files inside `/pages`
@@ -19,7 +21,7 @@ const getPageRoutes = () => {
       '**/_*.js',        // private non-page files e.g. _document.js
       '**/[[]*[]].js',   // Ignore dynamic pages i.e. `page/[something].js` files
       '**/[[]*[]]/*.js', // Ignore files inside dynamic pages i.e. `[something]/abc.js`
-    ]
+    ],
   });
 
   const pageRoutes = {};
@@ -45,7 +47,7 @@ const getGuideRoutes = () => {
       [guide.url]: {
         page: '/guides/[guide]',
         query: slug,
-      }
+      },
     };
   }, {});
 };
@@ -55,30 +57,37 @@ const getGuideRoutes = () => {
  * @returns {*}
  */
 const getRoadmapRoutes = () => {
-  return roadmaps.reduce((roadmapRoutes, roadmap) => {
-    const [, slug] = roadmap.url.split('/');
+  const roadmaps = fs.readdirSync(ROADMAPS_PATH);
+  return roadmaps.reduce((roadmapRoutes, dirName) => {
+    const roadmapUrl = `/${dirName}`;
+    const roadmapDir = path.join(ROADMAPS_PATH, dirName);
+    const pageFilePaths = glob.sync(`${roadmapDir}/**/*.md`);
 
     return {
       ...roadmapRoutes,
-      // Default roadmap path i.e. `{ '/frontend': { page: '/[roadmap]/index', query: 'frontend' }`
-      [roadmap.url]: {
+      // Default roadmap path i.e. `{ '/frontend': { page: '/[roadmap]', query: 'frontend' }`
+      [roadmapUrl]: {
         page: '/[roadmap]',
-        query: slug
+        query: dirName,
       },
-      // Route for each of the versions of this roadmap i.e.
-      // `{ '/frontend/2019': { page: '/[roadmap]/[version]', query: 'frontend/2019' } }`
-      ...((roadmap.versions || []).reduce((versionRoutes, version) => {
+      // Routes for all the pages inside this directory
+      ...pageFilePaths.reduce((pageRoutes, pageFilePath) => {
+        const pageFileName = path.basename(pageFilePath, '.md');
+        const pageSlug = pageFileName.replace(/^\d+-/, '').toLowerCase();
+
         return {
-          ...versionRoutes,
-          [`${roadmap.url}/${version}`]: {
-            page: '/[roadmap]/[version]',
-            query: `${slug}/${version}`
+          ...pageRoutes,
+          [`${roadmapUrl}/${pageSlug}`]: {
+            page: '/[roadmap]/[page]',
+            query: `${roadmapUrl}/${pageSlug}`
           }
         };
-      }, {})),
+      }, {})
     };
   }, {});
 };
+
+console.log(getRoadmapRoutes());
 
 /**
  * Generates the path-map understood by next.js
