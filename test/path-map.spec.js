@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const glob = require('glob');
 const guides = require('../storage/guides');
 const roadmaps = require('../storage/roadmaps');
 
@@ -57,29 +58,5 @@ describe("Build scripts tests", () => {
     })
   });
 
-  test('it should generate valid roadmap routes', () => {
-    const expectedPathMap = roadmaps.reduce((roadmapAcc, roadmap) => {
-      // Routes for each of the versions of this roadmap
-      const versionRoutes = (roadmap.versions || []).reduce((versionAcc, version) => ({
-        ...versionAcc,
-        [`${roadmap.url}/${version}`]: {
-          page: '/[roadmap]/[version]',
-          query: `${roadmap.url.split('/')[1]}/${version}`,
-        }
-      }), {});
-
-      // Route for the route roadmap itself
-      return {
-        ...roadmapAcc,
-        [roadmap.url]: {
-          page: '/[roadmap]',
-          query: roadmap.url.split('/')[1]
-        },
-        // Expected roadmap for versions
-        ...versionRoutes
-      };
-    }, {});
-
-    expect(getRoadmapRoutes()).toEqual(expectedPathMap);
-  })
+  // @todo add tests for roadmap pathmap
 });
