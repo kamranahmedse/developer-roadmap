@@ -3,51 +3,187 @@
     "title": "Frontend Developer",
     "description": "Step by step guide to becoming a modern frontend developer",
     "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2019",
-    "url": "/frontend",
-    "picture": "/static/roadmaps/{version}/frontend.png",
     "featured": true,
     "versions": [
       "latest",
       "2018",
       "2017"
-    ]
+    ],
+    "url": "/frontend",
+    "path": "/roadmaps/1-frontend/summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/frontend/junior",
+          "title": "Junior",
+          "path": "/roadmaps/1-frontend/landscape/1-Junior.md"
+        },
+        {
+          "url": "/frontend/intermediate",
+          "title": "Intermediate",
+          "path": "/roadmaps/1-frontend/landscape/2-Intermediate.md"
+        },
+        {
+          "url": "/frontend/senior",
+          "title": "Senior",
+          "path": "/roadmaps/1-frontend/landscape/3-Senior.md"
+        }
+      ],
+      "learn": [
+        {
+          "url": "/frontend/job-ready",
+          "title": "Job Ready",
+          "path": "/roadmaps/1-frontend/learn/1-Job-Ready.md"
+        },
+        {
+          "url": "/frontend/write-better-css",
+          "title": "Write Better CSS",
+          "path": "/roadmaps/1-frontend/learn/2-Write-Better-CSS.md"
+        },
+        {
+          "url": "/frontend/build-tools",
+          "title": "Build Tools",
+          "path": "/roadmaps/1-frontend/learn/3-Build-Tools.md"
+        },
+        {
+          "url": "/frontend/modern-frontend-applications",
+          "title": "Modern Frontend Applications",
+          "path": "/roadmaps/1-frontend/learn/4-Modern-Frontend-Applications.md"
+        },
+        {
+          "url": "/frontend/automated-testing",
+          "title": "Automated Testing",
+          "path": "/roadmaps/1-frontend/learn/5-Automated-Testing.md"
+        },
+        {
+          "url": "/frontend/static-type-checkers",
+          "title": "Static Type Checkers",
+          "path": "/roadmaps/1-frontend/learn/6-Static-Type-Checkers.md"
+        },
+        {
+          "url": "/frontend/server-side-rendering",
+          "title": "Server Side Rendering",
+          "path": "/roadmaps/1-frontend/learn/7-Server-Side-Rendering.md"
+        },
+        {
+          "url": "/frontend/go-beyond",
+          "title": "Go Beyond",
+          "path": "/roadmaps/1-frontend/learn/8-Go-Beyond.md"
+        }
+      ]
+    }
   },
   {
     "title": "Backend Developer",
     "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2019",
-    "url": "/backend",
-    "picture": "/static/roadmaps/{version}/backend.png",
     "featured": true,
-    "versions": [
-      "latest",
-      "2018",
-      "2017"
-    ]
+    "url": "/backend",
+    "path": "/roadmaps/2-backend/summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/backend/junior",
+          "title": "Junior",
+          "path": "/roadmaps/2-backend/landscape/1-Junior.md"
+        },
+        {
+          "url": "/backend/intermediate",
+          "title": "Intermediate",
+          "path": "/roadmaps/2-backend/landscape/2-Intermediate.md"
+        },
+        {
+          "url": "/backend/senior",
+          "title": "Senior",
+          "path": "/roadmaps/2-backend/landscape/3-Senior.md"
+        }
+      ]
+    }
   },
   {
     "title": "DevOps Roadmap",
     "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2019",
-    "url": "/devops",
-    "picture": "/static/roadmaps/{version}/devops.png",
     "featured": true,
     "versions": [
       "latest",
       "2018",
       "2017"
-    ]
+    ],
+    "url": "/devops",
+    "path": "/roadmaps/3-devops/summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/devops/junior",
+          "title": "Junior",
+          "path": "/roadmaps/3-devops/landscape/1-Junior.md"
+        },
+        {
+          "url": "/devops/intermediate",
+          "title": "Intermediate",
+          "path": "/roadmaps/3-devops/landscape/2-Intermediate.md"
+        },
+        {
+          "url": "/devops/senior",
+          "title": "Senior",
+          "path": "/roadmaps/3-devops/landscape/3-Senior.md"
+        }
+      ]
+    }
   },
   {
     "title": "Full Stack Developer",
-    "description": "Step by step guide to becoming a modern full stack developer in 2019",
+    "description": "Step by step guide to becoming a modern fullstack developer in 2019",
+    "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2019",
+    "upcoming": true,
     "url": "/fullstack",
-    "upcoming": true
+    "path": "/roadmaps/4-fullstack/summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/fullstack/junior",
+          "title": "Junior",
+          "path": "/roadmaps/4-fullstack/landscape/1-Junior.md"
+        },
+        {
+          "url": "/fullstack/intermediate",
+          "title": "Intermediate",
+          "path": "/roadmaps/4-fullstack/landscape/2-Intermediate.md"
+        },
+        {
+          "url": "/fullstack/senior",
+          "title": "Senior",
+          "path": "/roadmaps/4-fullstack/landscape/3-Senior.md"
+        }
+      ]
+    }
   },
   {
     "title": "QA Engineer",
     "description": "Steps to follow in order to become a modern QA Engineer in 2019",
-    "url": "/qa-engineer",
-    "upcoming": true
+    "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2019",
+    "upcoming": true,
+    "url": "/qa",
+    "path": "/roadmaps/5-qa/summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/qa/junior",
+          "title": "Junior",
+          "path": "/roadmaps/5-qa/landscape/1-Junior.md"
+        },
+        {
+          "url": "/qa/intermediate",
+          "title": "Intermediate",
+          "path": "/roadmaps/5-qa/landscape/2-Intermediate.md"
+        },
+        {
+          "url": "/qa/senior",
+          "title": "Senior",
+          "path": "/roadmaps/5-qa/landscape/3-Senior.md"
+        }
+      ]
+    }
   }
 ]
