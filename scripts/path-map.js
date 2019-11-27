@@ -87,8 +87,6 @@ const getRoadmapRoutes = () => {
   }, {});
 };
 
-console.log(getRoadmapRoutes());
-
 /**
  * Generates the path-map understood by next.js
  * @returns {{}}
