@@ -2,7 +2,6 @@
   "title": "Frontend Developer",
   "description": "Step by step guide to becoming a modern frontend developer",
   "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2019",
-  "picture": "/static/roadmaps/{version}/frontend.png",
   "featured": true,
   "versions": [
     "latest",

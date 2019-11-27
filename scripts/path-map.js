@@ -3,7 +3,6 @@ const glob = require('glob');
 const fs = require('fs');
 
 const guides = require('../storage/guides.json');
-const roadmaps = require('../storage/roadmaps');
 
 const PAGES_PATH = path.join(__dirname, '../pages');
 const ROADMAPS_PATH =  path.join(__dirname, '../storage/roadmaps');
