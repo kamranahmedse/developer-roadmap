@@ -1,14 +1,14 @@
 import { FaqContainer } from './style';
-import GuideBody from 'components/guide-body';
+import MdRenderer from 'components/md-renderer';
 
 const AboutPage = require(`../../storage/pages/about.md`).default;
 
 const FaqList = () => (
   <FaqContainer className='border-top bg-light'>
     <div className="container container-small">
-      <GuideBody>
+      <MdRenderer>
         <AboutPage />
-      </GuideBody>
+      </MdRenderer>
     </div>
   </FaqContainer>
 );
