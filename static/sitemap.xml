@@ -127,45 +127,9 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/fullstack/junior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/fullstack/intermediate</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/fullstack/senior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2019-11-27T20:14:50.558Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/qa/junior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/qa/intermediate</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/qa/senior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.000Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>

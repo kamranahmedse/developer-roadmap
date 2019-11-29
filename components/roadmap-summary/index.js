@@ -3,7 +3,6 @@ import { faArrowLeft, faClock, faEnvelope, faHandshake } from '@fortawesome/free
 import { Description, Header, Summary, SummaryContainer, Title, VersionList } from './style';
 import SharePage from 'components/share-page';
 import { BadgeLink, BadgesList, DarkBadge, PrimaryBadge, SecondaryBadge } from 'components/badges';
-import GuideBody from 'components/guide-body';
 import siteConfig from "storage/site";
 import MdRenderer from '../md-renderer';
 
@@ -15,7 +14,6 @@ const RoadmapSummary = ({ roadmap }) => {
       <Header>
         <Title>{ roadmap.title }</Title>
         <Description>{ roadmap.description }</Description>
-
         <BadgesList className="mt-4">
           <BadgeLink href="/roadmaps">
             <DarkBadge>
@@ -60,7 +58,7 @@ const RoadmapSummary = ({ roadmap }) => {
         }
         {
           !roadmap.upcoming && (
-            <div className="container">
+            <div className="container text-left">
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae blanditiis commodi, consequatur, dicta distinctio esse et id, ipsa labore libero nisi odit placeat possimus saepe sed vel vitae voluptate?</p>
               <SharePage title={ roadmap.description } url={ roadmap.url } />
             </div>
