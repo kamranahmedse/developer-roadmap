@@ -139,25 +139,7 @@
     "upcoming": true,
     "url": "/fullstack",
     "path": "/roadmaps/4-fullstack/summary.md",
-    "sidebar": {
-      "landscape": [
-        {
-          "url": "/fullstack/junior",
-          "title": "Junior",
-          "path": "/roadmaps/4-fullstack/landscape/1-Junior.md"
-        },
-        {
-          "url": "/fullstack/intermediate",
-          "title": "Intermediate",
-          "path": "/roadmaps/4-fullstack/landscape/2-Intermediate.md"
-        },
-        {
-          "url": "/fullstack/senior",
-          "title": "Senior",
-          "path": "/roadmaps/4-fullstack/landscape/3-Senior.md"
-        }
-      ]
-    }
+    "sidebar": {}
   },
   {
     "title": "QA Engineer",
@@ -166,24 +148,6 @@
     "upcoming": true,
     "url": "/qa",
     "path": "/roadmaps/5-qa/summary.md",
-    "sidebar": {
-      "landscape": [
-        {
-          "url": "/qa/junior",
-          "title": "Junior",
-          "path": "/roadmaps/5-qa/landscape/1-Junior.md"
-        },
-        {
-          "url": "/qa/intermediate",
-          "title": "Intermediate",
-          "path": "/roadmaps/5-qa/landscape/2-Intermediate.md"
-        },
-        {
-          "url": "/qa/senior",
-          "title": "Senior",
-          "path": "/roadmaps/5-qa/landscape/3-Senior.md"
-        }
-      ]
-    }
+    "sidebar": {}
   }
 ]
