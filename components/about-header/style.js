@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const AboutHeaderWrap = styled.div`
   text-align: left;
-  padding: 70px 20px;
+  padding: 70px 0;
   margin: 0 auto;
   
   .author-info {
