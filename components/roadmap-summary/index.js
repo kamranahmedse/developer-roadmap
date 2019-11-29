@@ -51,9 +51,11 @@ const RoadmapSummary = ({ roadmap }) => {
       <Summary>
         {
           roadmap.upcoming && (
-            <MdRenderer>
-              <UpcomingGuide />
-            </MdRenderer>
+            <div className="container container-small">
+              <MdRenderer>
+                <UpcomingGuide />
+              </MdRenderer>
+            </div>
           )
         }
         {
