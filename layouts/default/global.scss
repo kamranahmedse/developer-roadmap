@@ -1,6 +1,11 @@
 @import '~bootstrap/dist/css/bootstrap.min.css';
 @import '~prism-themes/themes/prism-vs.css';
 
+.container {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 .container-small {
   max-width: 800px;
 }
