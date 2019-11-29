@@ -9,7 +9,6 @@ const DOMAIN = 'https://roadmap.sh';
 const PAGES_DIR = path.join(__dirname, '../pages');
 const STORAGE_PATH = path.join(__dirname, '../storage');
 const SITEMAP_PATH = 'static/sitemap.xml';
-const STATIC_PATH = path.join(__dirname, '../static');
 
 // Set the header
 const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>
