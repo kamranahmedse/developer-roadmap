@@ -2,7 +2,8 @@
 const fs = require('fs');
 const path = require('path');
 const guides = require('../storage/guides');
-const { getPageRoutes, getGuideRoutes, getRoadmapRoutes } = require('./path-map');
+const roadmaps = require('../storage/roadmaps');
+const { getPageRoutes, getGuideRoutes } = require('./path-map');
 
 const DOMAIN = 'https://roadmap.sh';
 const PAGES_DIR = path.join(__dirname, '../pages');
@@ -31,7 +32,7 @@ const getSlugPriority = (pageSlug) => {
   ];
 
   const foundIndex = slugPriorities.findIndex(
-    routes => routes.some(route => pageSlug.startsWith(route))
+    routes => routes.some(route => pageSlug.startsWith(route)),
   );
 
   if (foundIndex !== -1) {
@@ -48,13 +49,13 @@ function generateNode({
   fileName,
   priority = null,
   date = null,
-  frequency = 'monthly'
+  frequency = 'monthly',
 }) {
   const pagePath = path.join(basePath, fileName);
   let pageStats = {};
   try {
     pageStats = fs.lstatSync(pagePath);
-  } catch(e) {
+  } catch (e) {
     console.log(`File not found: ${pagePath}`);
     pageStats = { mtime: (new Date()) }
   }
@@ -72,7 +73,7 @@ function generateSiteMap() {
   const pageSlugs = Object.keys(pageRoutes)
     .filter(route => ![
       '/privacy',
-      '/terms'
+      '/terms',
     ].includes(route));
 
   const pagesChunk = pageSlugs.map(pageSlug => {
@@ -85,7 +86,7 @@ function generateSiteMap() {
 
   // Chunks for each of the guides
   const guideRoutes = getGuideRoutes();
-  const guideSlugs  = Object.keys(guideRoutes);
+  const guideSlugs = Object.keys(guideRoutes);
   const guidesChunk = guideSlugs.map(guideSlug => {
     const foundGuide = guides.find(guide => guide.url === guideSlug) || {};
     return generateNode({
@@ -98,17 +99,32 @@ function generateSiteMap() {
   });
 
   // Chunks for each of the roadmaps
-  const roadmapRoutes = getRoadmapRoutes();
-  const roadmapSlugs = Object.keys(roadmapRoutes);
-  const roadmapsChunk = roadmapSlugs.map(roadmapSlug => {
-    const [, role, year = 'latest'] = roadmapSlug.split('/');
-    return generateNode({
-      basePath: STATIC_PATH,
-      fileName: `/roadmaps/${year}/${role}.png`,
-      slug: roadmapSlug,
-      priority: '1.0',
-    });
-  });
+  const roadmapsChunk = roadmaps.reduce((roadmapsNodes, roadmap) => {
+    return [
+      ...roadmapsNodes,
+      generateNode({
+        basePath: STORAGE_PATH,
+        fileName: roadmap.path,
+        slug: roadmap.url,
+        priority: '1.0',
+      }),
+      ...Object
+        .values(roadmap.sidebar || {})
+        .reduce((pageNodes, menuPages) => {
+          return [
+            ...pageNodes,
+            ...menuPages.map(menuPage => {
+              return generateNode({
+                basePath: STORAGE_PATH,
+                fileName: menuPage.path,
+                slug: menuPage.url,
+                priority: '1.0',
+              })
+            })
+          ];
+        }, [])
+    ]
+  }, []);
 
   const nodes = [
     ...roadmapsChunk,
