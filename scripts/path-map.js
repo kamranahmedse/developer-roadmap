@@ -2,6 +2,7 @@ const path = require('path');
 const glob = require('glob');
 const fs = require('fs');
 
+const roadmaps = require('../storage/roadmaps.json');
 const guides = require('../storage/guides.json');
 
 const PAGES_PATH = path.join(__dirname, '../pages');
@@ -56,29 +57,29 @@ const getGuideRoutes = () => {
  * @returns {*}
  */
 const getRoadmapRoutes = () => {
-  const roadmaps = fs.readdirSync(ROADMAPS_PATH);
-  return roadmaps.reduce((roadmapRoutes, dirName) => {
-    const roadmapUrl = `/${dirName}`;
-    const roadmapDir = path.join(ROADMAPS_PATH, dirName);
-    const pageFilePaths = glob.sync(`${roadmapDir}/**/*.md`);
+  return roadmaps.reduce((roadmapRoutes, roadmap) => {
+    const pages = Object.values(roadmap.sidebar || {})
+      .reduce((acc, menuPages) => {
+        return [
+          ...acc,
+          ...menuPages
+        ]
+      }, []);
 
     return {
       ...roadmapRoutes,
       // Default roadmap path i.e. `{ '/frontend': { page: '/[roadmap]', query: 'frontend' }`
-      [roadmapUrl]: {
+      [roadmap.url]: {
         page: '/[roadmap]',
-        query: dirName,
+        query: roadmap.url.replace(/\/+/, ''),
       },
       // Routes for all the pages inside this directory
-      ...pageFilePaths.reduce((pageRoutes, pageFilePath) => {
-        const pageFileName = path.basename(pageFilePath, '.md');
-        const pageSlug = pageFileName.replace(/^\d+-/, '').toLowerCase();
-
+      ...pages.reduce((pageRoutes, page) => {
         return {
           ...pageRoutes,
-          [`${roadmapUrl}/${pageSlug}`]: {
+          [page.url]: {
             page: '/[roadmap]/[page]',
-            query: `${roadmapUrl}/${pageSlug}`
+            query: page.url.replace(/^\//, '')
           }
         };
       }, {})
