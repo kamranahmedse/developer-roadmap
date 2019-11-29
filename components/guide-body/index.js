@@ -1,13 +1,21 @@
-import { MDXProvider } from '@mdx-js/react';
-import MdxComponents from 'components/mdx-components';
+import MdRenderer from 'components/md-renderer'
+import SharePage from 'components/share-page';
 import { GuideBodyWrap } from './style';
 
-const GuideBody = (props) => (
-  <MDXProvider components={ MdxComponents }>
+const GuideBody = ({ guide }) => {
+  const GuideContent = require(`../../storage/guides/${guide.fileName}.md`).default;
+  return (
     <GuideBodyWrap>
-      { props.children }
+      <MdRenderer>
+        <GuideContent />
+        <SharePage
+          title={ guide.title }
+          url={ guide.url }
+          twitterUsername={ guide.author.twitter }
+        />
+      </MdRenderer>
     </GuideBodyWrap>
-  </MDXProvider>
-);
+  );
+};
 
 export default GuideBody;
