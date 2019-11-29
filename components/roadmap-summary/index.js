@@ -5,6 +5,7 @@ import SharePage from 'components/share-page';
 import { BadgeLink, BadgesList, DarkBadge, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import GuideBody from 'components/guide-body';
 import siteConfig from "storage/site";
+import MdRenderer from '../md-renderer';
 
 const UpcomingGuide = require(`../../storage/guides/upcoming.md`).default;
 
@@ -50,9 +51,9 @@ const RoadmapSummary = ({ roadmap }) => {
       <Summary>
         {
           roadmap.upcoming && (
-            <GuideBody>
+            <MdRenderer>
               <UpcomingGuide />
-            </GuideBody>
+            </MdRenderer>
           )
         }
         {

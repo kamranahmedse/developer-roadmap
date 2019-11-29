@@ -1,5 +1,5 @@
 import { MDXProvider } from '@mdx-js/react';
-import MdxComponents from 'components/mdx-components';
+import MdxComponents from './mdx-components';
 
 const MdRenderer = (props) => (
   <MDXProvider components={ MdxComponents }>
