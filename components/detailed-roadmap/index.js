@@ -1,9 +1,10 @@
 import { PageHeader, RoadmapMeta, ShareRoadmap, Sidebar, Summary, SummaryContainer } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faTwitterSquare, faRedditSquare } from '@fortawesome/free-brands-svg-icons'
+import { faFacebookSquare, faTwitterSquare, faRedditSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
-import { getRedditShareUrl, getTwitterShareUrl } from '../../lib/url';
+import { getRedditShareUrl, getTwitterShareUrl } from 'lib/url';
+import siteConfig from "storage/site";
 
 const DetailedRoadmap = ({ roadmap }) => {
   const roadmapPages = Object.keys(roadmap.sidebar || {}).map(groupTitle => {
@@ -35,6 +36,9 @@ const DetailedRoadmap = ({ roadmap }) => {
             <p>Roadmap contributed by <a href="#">Kamran Ahmed</a> and <a href="#">5 others</a></p>
           </RoadmapMeta>
           <ShareRoadmap className="mt-2 mt-md-0">
+            <ShareIcon href={ siteConfig.url.repo } target="_blank">
+              <FontAwesomeIcon icon={ faGithubSquare } />
+            </ShareIcon>
             <ShareIcon href={ getFacebookShareUrl({ text: roadmap.title, url: roadmap.url }) } target="_blank">
               <FontAwesomeIcon icon={ faFacebookSquare } />
             </ShareIcon>
