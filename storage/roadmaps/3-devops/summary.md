@@ -1,2 +1,1 @@
-## DevOps Roadmap
-Roadmap for any operations role
+![](/static/roadmaps/devops.png)
