@@ -10,7 +10,7 @@ const SharePage = ({
   twitterUsername,
 }) => (
   <ShareWrap>
-    <ShareIconsList className="d-sm-none d-md-none d-lg-flex d-xl-flex">
+    <ShareIconsList className="d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex">
       <ShareIcon
         href={ getTwitterShareUrl({
           text: `${title} ${twitterUsername ? `by @${twitterUsername}` : ''}`,
