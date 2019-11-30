@@ -6,4 +6,8 @@ export const GuideBodyWrap = styled.div`
   margin: 0 auto;
   padding: 0 20px;
   min-height: 300px;
+  
+  p:first-child, h1, h2, h3, h4, h5, h6, img, blockquote {
+    margin-top: 0;
+  }
 `;
