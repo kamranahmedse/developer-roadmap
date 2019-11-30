@@ -6,7 +6,7 @@ import { serverOnlyProps } from 'lib/server';
 import { getRequestedRoadmap } from 'lib/roadmap';
 import Helmet from 'components/helmet';
 import RoadmapSummary from 'components/roadmap-summary';
-import RoadmapBody from '../../components/roadmap-body';
+import DetailedRoadmap from '../../components/detailed-roadmap';
 
 const Roadmap = ({ roadmap }) => {
   if (!roadmap) {
@@ -18,7 +18,7 @@ const Roadmap = ({ roadmap }) => {
     <DefaultLayout>
       <Helmet title={ roadmap.title } description={ roadmap.description } />
       <SiteNav />
-      { showSummary ? <RoadmapSummary roadmap={roadmap} /> : <RoadmapBody roadmap={roadmap} /> }
+      { showSummary ? <RoadmapSummary roadmap={roadmap} /> : <DetailedRoadmap roadmap={roadmap} /> }
       <PageFooter />
     </DefaultLayout>
   );
