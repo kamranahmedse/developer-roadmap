@@ -4,10 +4,10 @@
   <p align="center">Community driven roadmaps, articles and resources for developers<p>
   <p align="center">
     <a href="https://roadmap.sh/guides">
-      <img src="https://img.shields.io/badge/view-guides-informational.svg" />
+    	<img src="https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
     <a href="https://roadmap.sh/roadmaps">
-    	<img src="https://img.shields.io/badge/view-roadmaps-blue.svg" alt="roadmaps" />
+    	<img src="https://img.shields.io/badge/-Roadmaps-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
     <a href="https://discord.gg/Yhm4EsE">
     	<img src="https://img.shields.io/badge/-Join%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
