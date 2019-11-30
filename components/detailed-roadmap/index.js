@@ -1,15 +1,6 @@
-import { Sidebar, Summary, SummaryContainer, UpcomingContainer } from './style';
-import GuideBody from 'components/guide-body';
+import { Sidebar, Summary, SummaryContainer } from './style';
 
-const RoadmapBody = ({ roadmap }) => {
-  if (roadmap.upcoming) {
-    return (
-      <UpcomingContainer>
-        <GuideBody guide={{ fileName: 'upcoming' }} />
-      </UpcomingContainer>
-    );
-  }
-
+const DetailedRoadmap = ({ roadmap }) => {
   const RoadmapPages = Object.keys(roadmap.sidebar || {}).map(groupTitle => {
     return (
       <div className='links-group'>
@@ -31,7 +22,7 @@ const RoadmapBody = ({ roadmap }) => {
   });
 
   return (
-    <SummaryContainer>
+    <SummaryContainer className="border-top">
       <Summary className="container text-left">
         <Sidebar className="sidebar">
           { RoadmapPages }
@@ -44,4 +35,4 @@ const RoadmapBody = ({ roadmap }) => {
   )
 };
 
-export default RoadmapBody;
+export default DetailedRoadmap;
