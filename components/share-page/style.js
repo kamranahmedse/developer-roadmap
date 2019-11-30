@@ -16,8 +16,7 @@ export const ShareWrap = styled.div`
   position: absolute;
   padding: 0 0;
   top: 6px;
-  left: -50px;
-  height: 100%;
+  left: -40px;
 `;
 
 export const ShareIcon = styled.a`
