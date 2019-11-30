@@ -1,5 +1,4 @@
-import { Summary, SummaryContainer, UpcomingContainer } from './style';
-import SharePage from 'components/share-page';
+import { Sidebar, Summary, SummaryContainer, UpcomingContainer } from './style';
 import GuideBody from 'components/guide-body';
 
 const RoadmapBody = ({ roadmap }) => {
@@ -11,15 +10,35 @@ const RoadmapBody = ({ roadmap }) => {
     );
   }
 
+  const RoadmapPages = Object.keys(roadmap.sidebar || {}).map(groupTitle => {
+    return (
+      <div className='links-group'>
+        <h3>{ groupTitle }</h3>
+        <ul>
+          { roadmap.sidebar[groupTitle].map(page => {
+            return (
+              <li>
+                <a href={ page.url }>
+                  <span className="bullet"></span>
+                  { page.title }
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    );
+  });
+
   return (
     <SummaryContainer>
-      <Summary>
-        {
-            <div className="container container-small text-left">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae blanditiis commodi, consequatur, dicta distinctio esse et id, ipsa labore libero nisi odit placeat possimus saepe sed vel vitae voluptate?</p>
-              <SharePage title={ roadmap.description } url={ roadmap.url } />
-            </div>
-        }
+      <Summary className="container text-left">
+        <Sidebar className="sidebar">
+          { RoadmapPages }
+        </Sidebar>
+        <div>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae blanditiis commodi, consequatur, dicta distinctio esse et id, ipsa labore libero nisi odit placeat possimus saepe sed vel vitae voluptate?</p>
+        </div>
       </Summary>
     </SummaryContainer>
   )

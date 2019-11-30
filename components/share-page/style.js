@@ -15,8 +15,9 @@ export const ShareWrap = styled.div`
   flex-direction: column;
   position: absolute;
   padding: 0 0;
-  top: 6px;
+  top: 0;
   left: -40px;
+  min-height: 100%;
 `;
 
 export const ShareIcon = styled.a`
