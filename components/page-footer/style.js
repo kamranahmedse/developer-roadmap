@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterWrap = styled.div`
-  padding: 65px 10px;
+  padding: 65px 0;
 
   .site-meta {
     margin-bottom: 30px;
