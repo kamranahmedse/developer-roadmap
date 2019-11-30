@@ -16,10 +16,12 @@ const RoadmapHeader = ({ roadmap }) => (
         </DarkBadge>
       </BadgeLink>
       { roadmap.upcoming && (
-        <SecondaryBadge>
-          <FontAwesomeIcon icon={ faClock } />
-          Upcoming Roadmap
-        </SecondaryBadge>
+        <BadgeLink href="/signup">
+          <SecondaryBadge>
+            <FontAwesomeIcon icon={ faClock } />
+            Upcoming Roadmap
+          </SecondaryBadge>
+        </BadgeLink>
       ) }
       { !roadmap.upcoming && (
         <BadgeLink href={ `${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here` } target="_blank">
