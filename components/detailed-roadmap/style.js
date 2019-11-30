@@ -49,6 +49,27 @@ export const ShareRoadmap = styled.div`
   }
 `;
 
+export const MobileNavHeader = styled.div`
+  padding: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+`;
+
+export const SidebarButton = styled.button`
+  background: transparent;
+  border: none !important;
+  box-shadow: none !important;
+  outline: none !important;
+  -webkit-appearance: none;
+  display: flex;
+  align-items: center;
+  
+  svg {
+    margin-right: 10px;
+  }
+`;
+
 export const Sidebar = styled.div`
   border-left: 1px solid #efefef;
   padding-bottom: 150px;
@@ -105,5 +126,31 @@ export const Sidebar = styled.div`
       transform: translateX(-4px);
       transition: background 0.5s ease;
     }
+  }
+`;
+
+export const MobileSidebarWrap = styled.div`
+  position: absolute;
+  z-index: 999;
+  background: white;
+  width: 100%;
+  left: 0;
+  bottom: 100%;
+  overflow-y: scroll;
+  box-shadow: rgba(0, 0, 0, 0.1) 0 10px 20px;
+  top: calc(100% + 1px);
+  transition: bottom 0.5s ease 0s;
+
+  &.visible {
+    bottom: -50vh;
+  }
+`;
+
+export const MobileSidebar = styled(Sidebar)`
+  margin-left: 12px;
+  padding-bottom: 20px;
+
+  .links-group {
+    width: auto;  
   }
 `;
