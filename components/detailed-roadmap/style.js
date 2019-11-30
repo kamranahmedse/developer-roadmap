@@ -3,12 +3,49 @@ import styled from 'styled-components';
 export const SummaryContainer = styled.div``;
 
 export const Summary = styled.div`
-  text-align: center;
+  text-align: left;
   min-height: 400px;
   display: flex;
 
   .container {
     position: relative;
+  }
+`;
+
+export const PageHeader = styled.div`
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  h3 {
+    margin-bottom: 4px;
+    font-weight: 600;
+    font-size: 21px;
+  }
+
+  p {
+    margin-bottom: 0;
+    font-size: 14px;
+    color: #696969;
+    
+    a {
+      color: #101010;
+    }
+  }
+`;
+
+export const RoadmapMeta = styled.div`
+  flex: 1;
+`;
+
+export const ShareRoadmap = styled.div`
+  display: flex;
+  align-items: center;
+
+  a {
+    margin-bottom: 0;
+    & + a {
+      margin-left: 5px;
+    }
   }
 `;
 

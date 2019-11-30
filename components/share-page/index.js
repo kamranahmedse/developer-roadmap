@@ -2,7 +2,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faRedditSquare, faTwitterSquare } from '@fortawesome/free-brands-svg-icons'
 
 import { getFacebookShareUrl, getRedditShareUrl, getTwitterShareUrl } from "lib/url";
-import { ShareIcon, ShareIconsList, ShareWrap } from './style';
+import { ShareIconsList, ShareWrap } from './style';
+import { ShareIcon } from 'components/share-icon';
 
 const SharePage = ({
   url,
@@ -10,7 +11,7 @@ const SharePage = ({
   twitterUsername,
 }) => (
   <ShareWrap>
-    <ShareIconsList className="d-none d-sm-flex d-md-flex d-lg-flex d-xl-flex">
+    <ShareIconsList className="d-none d-sm-flex">
       <ShareIcon
         href={ getTwitterShareUrl({
           text: `${title} ${twitterUsername ? `by @${twitterUsername}` : ''}`,
@@ -18,7 +19,7 @@ const SharePage = ({
         })}
         target="_blank"
       >
-          <FontAwesomeIcon icon={ faTwitterSquare } />
+        <FontAwesomeIcon icon={ faTwitterSquare } />
       </ShareIcon>
       <ShareIcon href={ getFacebookShareUrl({ text: title, url: url }) } target="_blank">
         <FontAwesomeIcon icon={ faFacebookSquare } />
