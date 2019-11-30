@@ -1,12 +1,17 @@
-import { PageHeader, RoadmapMeta, ShareRoadmap, Sidebar, Summary, SummaryContainer } from './style';
+import { useState } from 'react';
+import classNames from 'classnames';
+import { PageHeader, RoadmapMeta, ShareRoadmap, Sidebar, Summary, SummaryContainer, MobileNavHeader, SidebarButton, MobileSidebar, MobileSidebarWrap } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faTwitterSquare, faRedditSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
 import { getRedditShareUrl, getTwitterShareUrl } from 'lib/url';
 import siteConfig from "storage/site";
 
 const DetailedRoadmap = ({ roadmap }) => {
+  const [menuActive, setMenuState] = useState(false);
+
   const roadmapPages = Object.keys(roadmap.sidebar || {}).map(groupTitle => {
     return (
       <div className='links-group'>
@@ -51,8 +56,25 @@ const DetailedRoadmap = ({ roadmap }) => {
           </ShareRoadmap>
         </div>
       </PageHeader>
+
+      <MobileNavHeader className="border-bottom d-block d-md-none">
+        <div className="container">
+          <SidebarButton onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
+            <FontAwesomeIcon icon={ faBars } />
+            Getting Job Ready
+          </SidebarButton>
+        </div>
+        <MobileSidebarWrap className={classNames({ visible: menuActive })}>
+          <div className="container">
+            <MobileSidebar>
+              { roadmapPages }
+            </MobileSidebar>
+          </div>
+        </MobileSidebarWrap>
+      </MobileNavHeader>
+
       <Summary className="container">
-        <Sidebar className="sidebar">
+        <Sidebar className="sidebar d-none d-md-block">
           { roadmapPages }
         </Sidebar>
         <div>
