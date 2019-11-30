@@ -9,8 +9,11 @@
     <a href="https://roadmap.sh/roadmaps">
     	<img src="https://img.shields.io/badge/view-roadmaps-blue.svg" alt="roadmaps" />
     </a>
-    <a href="https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing">
-    	<img src="https://img.shields.io/badge/contributions-welcome-orange.svg" alt="contribute" />
+    <a href="https://discord.gg/Yhm4EsE">
+    	<img src="https://img.shields.io/badge/-Join%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
+    </a>
+    <a href="https://roadmap.sh/about#how-does-it-make-money">
+    	<img src="https://img.shields.io/badge/%E2%9D%A4-Support-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
   </p>
 </p>
