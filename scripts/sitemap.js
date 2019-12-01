@@ -117,7 +117,7 @@ function generateSiteMap() {
                 basePath: STORAGE_PATH,
                 fileName: menuPage.path,
                 slug: menuPage.url,
-                priority: '1.0',
+                priority: menuPage.path.includes('_others') ? '0.5' : '1.0',
               })
             })
           ];
