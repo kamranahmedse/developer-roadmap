@@ -18,6 +18,10 @@ const DetailedRoadmap = ({ roadmap }) => {
   } = roadmap;
 
   const roadmapPages = Object.keys(sidebar || {}).map(groupTitle => {
+    if (groupTitle.startsWith('_')) {
+      return;
+    }
+
     return (
       <div className='links-group'>
         <h3>{ groupTitle }</h3>
