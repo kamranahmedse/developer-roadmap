@@ -11,15 +11,19 @@ import siteConfig from "storage/site";
 
 const DetailedRoadmap = ({ roadmap }) => {
   const [menuActive, setMenuState] = useState(false);
+  const {
+    sidebar = {},
+    page: currentPage = {}
+  } = roadmap;
 
-  const roadmapPages = Object.keys(roadmap.sidebar || {}).map(groupTitle => {
+  const roadmapPages = Object.keys(sidebar || {}).map(groupTitle => {
     return (
       <div className='links-group'>
         <h3>{ groupTitle }</h3>
         <ul>
-          { roadmap.sidebar[groupTitle].map(page => {
+          { sidebar[groupTitle].map(page => {
             return (
-              <li>
+              <li className={classNames({ active: page.url === currentPage.url })}>
                 <a href={ page.url }>
                   <span className="bullet"></span>
                   { page.title }
@@ -61,7 +65,7 @@ const DetailedRoadmap = ({ roadmap }) => {
         <div className="container">
           <SidebarButton onClick={() => setMenuState((prevMenuActive) => !prevMenuActive)}>
             <FontAwesomeIcon icon={ faBars } />
-            Getting Job Ready
+            { currentPage.title }
           </SidebarButton>
         </div>
         <MobileSidebarWrap className={classNames({ visible: menuActive })}>
