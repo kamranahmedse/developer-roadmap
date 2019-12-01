@@ -3,7 +3,7 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-12-01T20:26:10.546Z</lastmod>
+              <lastmod>2019-12-01T21:54:34.830Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -15,13 +15,13 @@
 <url>
               <loc>https://roadmap.sh/frontend/summary</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-12-01T20:26:10.546Z</lastmod>
+              <lastmod>2019-12-01T21:54:34.830Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/junior-developer</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-11-25T16:18:18.890Z</lastmod>
+              <lastmod>2019-12-01T21:30:13.428Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -55,7 +55,7 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/modern-frontend-applications</loc>
+              <loc>https://roadmap.sh/frontend/modern-applications</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2019-11-25T16:18:18.890Z</lastmod>
               <priority>1.0</priority>
