@@ -10,10 +10,7 @@
     	<img src="https://img.shields.io/badge/-Roadmaps-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
     <a href="https://discord.gg/Yhm4EsE">
-    	<img src="https://img.shields.io/badge/-Join%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
-    </a>
-    <a href="https://roadmap.sh/about#how-does-it-make-money">
-    	<img src="https://img.shields.io/badge/%E2%9D%A4-Support-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
+    	<img src="https://img.shields.io/badge/%E2%9D%A4-Join%20the%20Chat%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
   </p>
 </p>
