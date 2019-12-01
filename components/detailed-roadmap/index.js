@@ -1,8 +1,21 @@
 import { useState } from 'react';
 import classNames from 'classnames';
-import { PageHeader, RoadmapMeta, ShareRoadmap, Sidebar, Summary, SummaryContainer, MobileNavHeader, SidebarButton, MobileSidebar, MobileSidebarWrap } from './style';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faTwitterSquare, faRedditSquare, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
+import {
+  PageHeader,
+  RoadmapMeta,
+  ShareRoadmap,
+  Sidebar,
+  Summary,
+  SummaryContainer,
+  MobileNavHeader,
+  SidebarButton,
+  MobileSidebar,
+  MobileSidebarWrap,
+  PageTitle,
+  PageDetail
+} from './style';
 import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
@@ -96,11 +109,12 @@ const DetailedRoadmap = ({ roadmap }) => {
         <Sidebar className="sidebar d-none d-md-block">
           { roadmapPages }
         </Sidebar>
-        <div>
+        <PageDetail>
+          <PageTitle>{ currentPage.title }</PageTitle>
           <MdRenderer>
             <RoadmapContent />
           </MdRenderer>
-        </div>
+        </PageDetail>
       </Summary>
     </SummaryContainer>
   )

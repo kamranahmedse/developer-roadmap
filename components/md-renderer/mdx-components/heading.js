@@ -36,7 +36,7 @@ const H1 = styled.h1`
   position: relative;
   font-size: 42px;
   font-weight: 700;
-  margin: 30px 0 8px;
+  margin: 32px 0 10px !important;
   
   &:hover ${HeaderLink} {
     display: flex;
@@ -44,7 +44,7 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled(H1).attrs({ as: 'h2' })`
-  font-size: 36px;
+  font-size: 32px;
 `;
 
 const H3 = styled(H1).attrs({ as: 'h3' })`

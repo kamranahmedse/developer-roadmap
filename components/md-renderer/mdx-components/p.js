@@ -4,8 +4,8 @@ const P = styled.p`
   color: inherit;
   font-size: 16px;
   font-weight: 400;
-  line-height: 27px;
-  margin: 16px 0;
+  line-height: 26px;
+  margin: 0 0 12px;
   
   img + em { 
     text-align: center;
