@@ -80,7 +80,6 @@ export const PageTitle = styled.h1`
 `;
 
 export const Sidebar = styled.div`
-  border-left: 1px solid #efefef;
   padding-bottom: 150px;
 
   ul {
@@ -146,6 +145,16 @@ export const Sidebar = styled.div`
   }
 `;
 
+export const DesktopSidebarWrap = styled.div`
+  border-left: 1px solid #efefef;
+  
+  ${Sidebar} {
+    position: sticky;
+    top: 0;
+    background: white;
+  }
+`;
+
 export const MobileSidebarWrap = styled.div`
   position: absolute;
   z-index: 999;
@@ -164,6 +173,7 @@ export const MobileSidebarWrap = styled.div`
 `;
 
 export const MobileSidebar = styled(Sidebar)`
+  border-left: 1px solid #efefef;
   margin-left: 12px;
   padding-bottom: 20px;
 

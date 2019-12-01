@@ -13,6 +13,7 @@ import {
   SidebarButton,
   MobileSidebar,
   MobileSidebarWrap,
+  DesktopSidebarWrap,
   PageTitle,
   PageDetail
 } from './style';
@@ -106,9 +107,11 @@ const DetailedRoadmap = ({ roadmap }) => {
       </MobileNavHeader>
 
       <Summary className="container">
-        <Sidebar className="sidebar d-none d-md-block">
-          { roadmapPages }
-        </Sidebar>
+        <DesktopSidebarWrap className="d-none d-md-block">
+          <Sidebar>
+            { roadmapPages }
+          </Sidebar>
+        </DesktopSidebarWrap>
         <PageDetail>
           <PageTitle>{ currentPage.title }</PageTitle>
           <MdRenderer>
