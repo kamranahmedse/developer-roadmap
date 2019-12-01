@@ -17,7 +17,7 @@
     "contributorsCount": 1,
     "contributorsUrl": "/frontend/contributors",
     "url": "/frontend",
-    "path": "/roadmaps/1-frontend/summary.md",
+    "path": "/roadmaps/1-frontend/landscape/0-Summary.md",
     "sidebar": {
       "_others": [
         {
@@ -27,6 +27,11 @@
         }
       ],
       "landscape": [
+        {
+          "url": "/frontend/summary",
+          "title": "Summary",
+          "path": "/roadmaps/1-frontend/landscape/0-Summary.md"
+        },
         {
           "url": "/frontend/junior",
           "title": "Junior",
@@ -99,9 +104,14 @@
     "contributorsCount": 1,
     "contributorsUrl": "/backend/contributors",
     "url": "/backend",
-    "path": "/roadmaps/2-backend/summary.md",
+    "path": "/roadmaps/2-backend/landscape/0-Summary.md",
     "sidebar": {
       "landscape": [
+        {
+          "url": "/backend/summary",
+          "title": "Summary",
+          "path": "/roadmaps/2-backend/landscape/0-Summary.md"
+        },
         {
           "url": "/backend/junior",
           "title": "Junior",
@@ -137,9 +147,14 @@
     "contributorsCount": 1,
     "contributorsUrl": "/devops/contributors",
     "url": "/devops",
-    "path": "/roadmaps/3-devops/summary.md",
+    "path": "/roadmaps/3-devops/landscape/0-Summary.md",
     "sidebar": {
       "landscape": [
+        {
+          "url": "/devops/summary",
+          "title": "Summary",
+          "path": "/roadmaps/3-devops/landscape/0-Summary.md"
+        },
         {
           "url": "/devops/junior",
           "title": "Junior",
@@ -170,8 +185,16 @@
     "contributorsCount": 1,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
-    "path": "/roadmaps/4-fullstack/summary.md",
-    "sidebar": {}
+    "path": "/roadmaps/4-fullstack/landscape/0-Summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/fullstack/summary",
+          "title": "Summary",
+          "path": "/roadmaps/4-fullstack/landscape/0-Summary.md"
+        }
+      ]
+    }
   },
   {
     "title": "QA Engineer",
@@ -185,7 +208,15 @@
     "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
-    "path": "/roadmaps/5-qa/summary.md",
-    "sidebar": {}
+    "path": "/roadmaps/5-qa/landscape/0-Summary.md",
+    "sidebar": {
+      "landscape": [
+        {
+          "url": "/qa/summary",
+          "title": "Summary",
+          "path": "/roadmaps/5-qa/landscape/0-Summary.md"
+        }
+      ]
+    }
   }
 ]
