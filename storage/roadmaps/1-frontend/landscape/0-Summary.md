@@ -1,7 +1,11 @@
 #### What is a Frontend Developer?
 A frontend developer is someone who works on the side of the websites that the user interacts with i.e. front or the client side of the website. Whenever you visit a website, everything that you see is mainly developed by the frontend developers. 
 
-They work with designers or UX teams to convert their mockups or wireframes to the actual website that the users can interact with. Also they work with [backend developers](/backend) who work with database and servers to get the data from and to display on the website.
+They work with designers or UX teams to convert their mockups or wireframes to the actual website that the users can interact with. Also they work with [backend developers](/backend) who work with database and servers to get the data from and to display on the website. Wikipedia describes frontend development as follows
+
+> [According to Wikipedia](https://en.wikipedia.org/wiki/Front-end_web_development):
+>
+> Front-end web development is the practice of converting data to a graphical interface, through the use of HTML, CSS, and JavaScript, so that users can view and interact with that data.
 
 #### Key Components of a Website
 If we talk about the frontend, all the websites are mainly built with three key technologies – **HTML**, **CSS** and **JavaScript**. If you know just these three, you can start building websites and be employable. 
