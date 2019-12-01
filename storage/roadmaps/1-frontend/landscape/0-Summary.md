@@ -42,7 +42,7 @@ Frontend development is broad and there are further skills that are in play but 
 #### Before you Start
 Before we start with the skills, there are few things that you should keep in mind which are going to help you a great deal when you are learning. They don't just apply to frontend development but to any other field as well
 
-* Since you are just starting, don't feel overwhelmed by looking at the "experts" in the field. They started at the same level as you are – with consistency, time and practice there is nothing stopping you to get there.
+* Don't feel overwhelmed by looking at the "experts" in the field. They started at the same level as you are – with consistency, time and practice there is nothing stopping you to get there.
 * Do lots of projects, lots and lots of projects. Without practice, you will just be stuck in the tutorial hell, you will start to feel that the things you are doing aren't sticking. Only projects can help you escape that.
 * Even when you are learning, polish your experiments, publish them, share it with people. You will be surprised by the support you will be able to get.
 
