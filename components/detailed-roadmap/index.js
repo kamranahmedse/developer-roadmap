@@ -21,7 +21,7 @@ import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
 import { getRedditShareUrl, getTwitterShareUrl } from 'lib/url';
 import siteConfig from "storage/site";
-import MdRenderer from '../md-renderer';
+import MdRenderer from 'components/md-renderer';
 
 const DetailedRoadmap = ({ roadmap }) => {
   const [menuActive, setMenuState] = useState(false);

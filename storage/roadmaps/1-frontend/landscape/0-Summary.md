@@ -33,8 +33,17 @@ In order to be a frontend developer, all you need is to learn HTML, CSS and Java
 * CSS
 * JavaScript 
 
-Frontend development is broad and there are further skills that are in play but those can be gained over time. All you need is to learn the above three and start making projects ...lots of them. This is how you will hone your skillset and continue to grow. Having said that, the skills and the relevant expertise in those skills varies from the job level - follow the links below
+Frontend development is broad and there are further skills that are in play but those can be gained over time. All you need is to learn the above three and start making projects ...lots of them. This is how you will hone your skillset and continue to grow. Having said that, the skills and the relevant expertise in those skills varies from the job level, follow the links below to get an idea of the skills required for each of the role levels.
 
 * [Entry Level Developer](/frontend/junior-developer)
 * [Mid Level Developer](/frontend/mid-level-developer)
 * [Senior Developer](/frontend/senior-developer)
+
+#### Before you Start
+Before we start with the skills, there are few things that you should keep in mind which are going to help you a great deal when you are learning. They don't just apply to frontend development but to any other field as well
+
+* Since you are just starting, don't feel overwhelmed by looking at the "experts" in the field. They started at the same level as you are – with consistency, time and practice there is nothing stopping you to get there.
+* Do lots of projects, lots and lots of projects. Without practice, you will just be stuck in the tutorial hell, you will start to feel that the things you are doing aren't sticking. Only projects can help you escape that.
+* Even when you are learning, polish your experiments, publish them, share it with people. You will be surprised by the support you will be able to get.
+
+And with that said, head on to the [next section](/frontend/junior-developer)  
