@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const exec = require('child_process').execSync;
 
 const STORAGE_PATH = path.join(__dirname, '../storage');
 const ROADMAPS_PATH = path.join(__dirname, '../storage/roadmaps');
@@ -12,6 +13,13 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
   const roadmapSlug = roadmapDirName.replace(/^\d+-/, '');
   const roadmapDir = path.join(ROADMAPS_PATH, roadmapDirName);
   const roadmapMeta = require(path.join(roadmapDir, 'meta.json'));
+
+  const contributors = exec(`git log --pretty=format:"%an%x09" ${roadmapDir} | uniq`)
+    .toString()
+    .split('\n')
+    .map(contributor => contributor.replace(/[\s\t]/g, ' ').trim()) || [];
+  const contributorNames = contributors.filter(contributor => !!contributor);
+
 
   console.log(`----------------------------`);
   console.log(`[#] Roadmap: ${roadmapMeta.title}`);
@@ -61,6 +69,8 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
     ...metaAcc,
     {
       ...roadmapMeta,
+      contributorsCount: contributorNames.length,
+      contributorsUrl: `/${roadmapSlug}/contributors`,
       url: `/${roadmapSlug}`,
       path: path.join(roadmapDir.replace(STORAGE_PATH, ''), '/summary.md'),
       sidebar,
