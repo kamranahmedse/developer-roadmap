@@ -26,3 +26,15 @@ If you know frontend development, there are jobs with different titles that you 
 * FullStack Developer
 
 Having Web Developer or FullStack developer in the title would normally mean that you need to have some backend skills as well. Most of the small or service based companies require you to have backend and some UI designing skills as well so it is better to look at the job description also once you have shortlisted the jobs to apply to.  
+
+#### Skills Required
+In order to be a frontend developer, all you need is to learn HTML, CSS and JavaScript. Just learn these and you should be employable. I know a lot of developers who just know these and are working as frontend developers and are making decent money
+* HTML
+* CSS
+* JavaScript 
+
+Frontend development is broad and there are further skills that are in play but those can be gained over time. All you need is to learn the above three and start making projects ...lots of them. This is how you will hone your skillset and continue to grow. Having said that, the skills and the relevant expertise in those skills varies from the job level - follow the links below
+
+* [Entry Level Developer](/frontend/junior-developer)
+* [Mid Level Developer](/frontend/mid-level-developer)
+* [Senior Developer](/frontend/senior-developer)

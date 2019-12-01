@@ -33,19 +33,19 @@
           "path": "/roadmaps/1-frontend/landscape/0-Summary.md"
         },
         {
-          "url": "/frontend/junior",
-          "title": "Junior",
-          "path": "/roadmaps/1-frontend/landscape/1-Junior.md"
+          "url": "/frontend/junior-developer",
+          "title": "Junior Developer",
+          "path": "/roadmaps/1-frontend/landscape/1-Junior-Developer.md"
         },
         {
-          "url": "/frontend/intermediate",
-          "title": "Intermediate",
-          "path": "/roadmaps/1-frontend/landscape/2-Intermediate.md"
+          "url": "/frontend/mid-level-developer",
+          "title": "Mid Level Developer",
+          "path": "/roadmaps/1-frontend/landscape/2-Mid-Level-Developer.md"
         },
         {
-          "url": "/frontend/senior",
-          "title": "Senior",
-          "path": "/roadmaps/1-frontend/landscape/3-Senior.md"
+          "url": "/frontend/senior-developer",
+          "title": "Senior Developer",
+          "path": "/roadmaps/1-frontend/landscape/3-Senior-Developer.md"
         }
       ],
       "learn": [

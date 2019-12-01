@@ -3,35 +3,35 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-11-30T10:14:37.750Z</lastmod>
+              <lastmod>2019-12-01T20:26:10.546Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/contributors</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-12-01T11:38:19.737Z</lastmod>
+              <lastmod>2019-12-01T13:03:35.218Z</lastmod>
               <priority>0.5</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/summary</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2019-11-30T10:14:37.750Z</lastmod>
+              <lastmod>2019-12-01T20:26:10.546Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/junior</loc>
+              <loc>https://roadmap.sh/frontend/junior-developer</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2019-11-25T16:18:18.890Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/intermediate</loc>
+              <loc>https://roadmap.sh/frontend/mid-level-developer</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2019-11-25T16:18:18.890Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/senior</loc>
+              <loc>https://roadmap.sh/frontend/senior-developer</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2019-11-25T16:18:18.890Z</lastmod>
               <priority>1.0</priority>
