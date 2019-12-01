@@ -6,7 +6,7 @@ import { serverOnlyProps } from 'lib/server';
 import { getRequestedRoadmap } from 'lib/roadmap';
 import Helmet from 'components/helmet';
 import RoadmapSummary from 'components/roadmap-summary';
-import DetailedRoadmap from '../../components/detailed-roadmap';
+import DetailedRoadmap from 'components/detailed-roadmap';
 
 const Roadmap = ({ roadmap }) => {
   if (!roadmap) {

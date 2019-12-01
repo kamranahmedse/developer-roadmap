@@ -126,6 +126,14 @@ export const Sidebar = styled.div`
       transform: translateX(-4px);
       transition: background 0.5s ease;
     }
+    
+    &.active a {
+      color: #101010;
+    }
+    
+    &.active .bullet {
+      background: #101010;
+    }
   }
 `;
 
