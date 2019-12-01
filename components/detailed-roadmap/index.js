@@ -8,6 +8,7 @@ import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
 import { getRedditShareUrl, getTwitterShareUrl } from 'lib/url';
 import siteConfig from "storage/site";
+import MdRenderer from '../md-renderer';
 
 const DetailedRoadmap = ({ roadmap }) => {
   const [menuActive, setMenuState] = useState(false);
@@ -44,6 +45,9 @@ const DetailedRoadmap = ({ roadmap }) => {
       </div>
     );
   });
+
+  const filePath = currentPage.path.replace(/^\//, '');
+  const RoadmapContent = require(`../../storage/${filePath}`).default;
 
   return (
     <SummaryContainer>
@@ -93,7 +97,9 @@ const DetailedRoadmap = ({ roadmap }) => {
           { roadmapPages }
         </Sidebar>
         <div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut beatae blanditiis commodi, consequatur, dicta distinctio esse et id, ipsa labore libero nisi odit placeat possimus saepe sed vel vitae voluptate?</p>
+          <MdRenderer>
+            <RoadmapContent />
+          </MdRenderer>
         </div>
       </Summary>
     </SummaryContainer>
