@@ -14,6 +14,10 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
   const roadmapDir = path.join(ROADMAPS_PATH, roadmapDirName);
   const roadmapMeta = require(path.join(roadmapDir, 'meta.json'));
 
+  // We can't use the absolute path in the build e.g. ~/Users/user/where-build-is-running/storage
+  // So, we remove it and use the path relative to storage directory
+  const summaryFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), '/landscape/0-Summary.md')
+
   const contributors = exec(`git log --pretty=format:"%an%x09" ${roadmapDir} | uniq`)
     .toString()
     .split('\n')
@@ -72,7 +76,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
       contributorsCount: contributorNames.length,
       contributorsUrl: `/${roadmapSlug}/contributors`,
       url: `/${roadmapSlug}`,
-      path: path.join(roadmapDir.replace(STORAGE_PATH, ''), '/summary.md'),
+      path: summaryFilePath,
       sidebar,
     },
   ];
