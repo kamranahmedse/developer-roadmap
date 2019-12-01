@@ -13,7 +13,8 @@ const DetailedRoadmap = ({ roadmap }) => {
   const [menuActive, setMenuState] = useState(false);
   const {
     sidebar = {},
-    page: currentPage = {}
+    page: currentPage = {},
+    author = {}
   } = roadmap;
 
   const roadmapPages = Object.keys(sidebar || {}).map(groupTitle => {
@@ -42,7 +43,9 @@ const DetailedRoadmap = ({ roadmap }) => {
         <div className="container d-flex align-items-center flex-column flex-md-row">
           <RoadmapMeta>
             <h3>{ roadmap.title }</h3>
-            <p>Roadmap contributed by <a href="#">Kamran Ahmed</a> and <a href="#">5 others</a></p>
+            <p>
+              Roadmap contributed by <a href={ author.url } target="_blank">{ author.name }</a>
+              { roadmap.contributorsCount > 1 && ` and <a href="${roadmap.contributorsUrl}">${roadmap.contributorsCount} others</a>`}</p>
           </RoadmapMeta>
           <ShareRoadmap className="mt-2 mt-md-0">
             <ShareIcon href={ siteConfig.url.repo } target="_blank">
