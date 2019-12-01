@@ -70,6 +70,15 @@ export const SidebarButton = styled.button`
   }
 `;
 
+export const PageDetail = styled.div`
+  padding: 25px 0 100px;
+`;
+
+export const PageTitle = styled.h1`
+  font-size: 40px;
+  font-weight: 700;
+`;
+
 export const Sidebar = styled.div`
   border-left: 1px solid #efefef;
   padding-bottom: 150px;
