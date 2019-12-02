@@ -39,5 +39,15 @@
     "author": "kamranahmedse",
     "createdAt": "2018-11-29T17:00:00.860Z",
     "updatedAt": "2018-11-29T17:00:00.860Z"
+  },
+  {
+    "title": "Brief History of JavaScript",
+    "description": "How JavaScript was introduced and evolved over the years",
+    "url": "/guides/history-of-javascript",
+    "fileName": "history-of-javascript",
+    "featured": true,
+    "author": "kamranahmedse",
+    "createdAt": "2017-10-28T17:00:00.860Z",
+    "updatedAt": "2017-10-28T17:00:00.860Z"
   }
 ]
