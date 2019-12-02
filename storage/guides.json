@@ -1,5 +1,15 @@
 [
   {
+    "title": "Developer Seniority Levels",
+    "description": "What makes you a Junior, Mid Level or a Senior Developer",
+    "url": "/guides/junior-vs-mid-vs-senior-developer",
+    "fileName": "developer-seniority",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2019-12-02T12:13:00.860Z",
+    "createdAt": "2019-12-02T12:13:00.860Z"
+  },
+  {
     "title": "Design Patterns for Humans",
     "description": "A language agnostic, ultra-simplified explanation to design patterns",
     "url": "/guides/design-patterns-for-humans",
