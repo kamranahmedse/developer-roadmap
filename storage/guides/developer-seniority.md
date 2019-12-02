@@ -20,15 +20,23 @@ Junior developers are normally fresh graduates and either they don't have or the
 * Most of the Junior developers just try to live up to the role and might leave work for a senior developer instead of at-least trying to take a stab at something.
 * They don't try to learn about the business side of the company and don't realize how management / sales / marketing / etc think and they don't realize how much rework, wasted effort, and end-user aggravation could be saved by getting to know the business domain.
 * They might be afraid to work on an unfamiliar codebase. 
-* They don't take or are afraid to take initiatives.
-* They don't participate in the discussions.
+* They are afraid to take initiatives.
+* They don't participate in the team discussions.
 
 Being a Junior developer in the team is not necessarily a bad thing; since you are just starting, you are not expected to be a know-it-all person, however it is your responsibility to learn, gain experience, not get stuck with the "Junior" title and improve yourself. Here are a few tips for Junior developers to help move up the ladder of seniority:
 
-* All sorts of problems can be solved, if you work on them long enough. Do not give up if Stack Overflow doesn't have an answer.
-* When given a problem to solve, try to identify the root cause and fix that instead of fixing the symptoms. And remember, not being able to reproduce means not solved.
-* Understand that code is often ugly and weird for a reason other than incompetence. Learning to live with and thrive with legacy code is a great skill. Never assume anybody is stupid. Instead, figure out how these intelligent, well-intentioned and experienced people have come to a decision which is stupid now.
+* Read a lot of code, not just code in the projects you work on, but reference / framework source code, open source. Perhaps even ask a subreddit for the language / tool about good examples to learn from. 
+* Do the personal side-projects, share them with people, contribute to the opensource. Reach out to people for help - you will be surprised how much support you can get from the community. I still remember my first opensource project on GitHub from around 6 years ago which was a small PHP script (a library) that fetched details for a given address from Google's Geocoding API – the codebase was super messy, it did not have any tests, did not have any linters or sniffers, and it did not have any CI because I didn't know about any of this at that time. I am not sure how but one kind soul somehow found the project, forked it, refactored it, "modernized" it, added linting, code sniffing, added CI and opened the pull request. This one pull request taught me so many things that I might have never learned that fast on my own because I was still at college, working for a small service based company and doing just small websites all on my own without knowing what is right and what is not. This one PR on GitHub was my introduction to opensource and I owe everything to that. 
 * Try to turn any feelings of inadequacy or imposter syndrome into energy to push yourself forward and increase your skills and knowledge.
+* All sorts of problems can be solved, if you work on them long enough. Do not give up if Stack Overflow or an issue on GitHub doesn't have an answer.
+* When given a problem to solve, try to identify the root cause and fix that instead of fixing the symptoms. And remember, not being able to reproduce means not solved. It is solved when you understand why it occurred and why it no longer does.
+* Have respect for the code that was written before you. Be generous when passing judgement on the architecture or the design decisions made in the codebase. Understand that code is often ugly and weird for a reason other than incompetence. Learning to live with and thrive with legacy code is a great skill. Never assume anybody is stupid. Instead, figure out how these intelligent, well-intentioned and experienced people have come to a decision which is stupid now. Approach inheriting legacy code with an "opportunity mindset" rather than a complaining one.
 * It's okay to not know things. You don't need to be ashamed of not knowing things already. Ask however many questions that would allow you to work effectively.
-* Read a lot of code, not just code in the projects you work on, but reference/framework source code, open source. Perhaps even ask a subreddit for the language/tool about good examples to learn from.
-  
+* Don't let yourself be limited by the job title that you have, keep working on your self improvement.
+* Do your homework, predict what’s coming down the pipe. Be involved in the team discussions, even if you are wrong you will learn something.
+* Learn about the domain that you are working with. Understand the product end-to-end as an end-user. Do not assume things, ask questins and get things cleared when in doubt.
+* Learn to communicate effectively - soft skills matter. Learn how to write good emails, how to present your work, how to phrase your questions in a thoughtful manner.
+* Sit with the senior developers, watch them work, find a mentor. Get a hold of your ego and be humble enough to take lessons from experienced people.
+* Don't just blindly follow the advice of "experts", take it with a grain of salt.
+* Take some time to learn how to use a debugger. Debuggers areb quite beneficial when navigating new, undocumented or poorly documented codebase, or to debug weird issues. 
+* Avoid saying "it works on my machine" -- yes, I have heard that a lot.
