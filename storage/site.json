@@ -6,6 +6,7 @@
   "twitter": "kamranahmedse",
   "facebook": "kamranahmedse",
   "logo": "/static/brand.png",
+  "logoSquare": "/static/brand-square.png",
   "url": {
     "web": "https://roadmap.sh",
     "repo": "https://github.com/kamranahmedse/roadmap.sh",
