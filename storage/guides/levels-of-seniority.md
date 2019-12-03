@@ -1,6 +1,6 @@
 I have been working on redoing the roadmaps – splitting the skillset based on the seniority levels to make them easier to follow and not scare the new developers away. Since the roadmaps are going to be just about the technical knowledge, I thought it would be a good idea to reiterate and have a separate article on what I think of different seniority roles.
 
-I have seen many organizations decide the seniority of developers by giving more significance to the years of experience than they should. I have seen developers labeled "Junior" doing the work of Senior Developers and I have seen "Lead" developers who weren't even qualified to be called "Senior". Seniority of a developer cannot just be decided by their age, years of experience or technical knowledge that they have got. There are other factors in play here e.g. their perception of work, how they interact with the peers and how they approach problems. We discuss these three key factors in detail for each of the seniority levels below. 
+I have seen many organizations decide the seniority of developers by giving more significance to the years of experience than they should. I have seen developers labeled "Junior" doing the work of Senior Developers and I have seen "Lead" developers who weren't even qualified to be called "Senior". The seniority of a developer cannot just be decided by their age, years of experience or technical knowledge that they have got. There are other factors in play here e.g. their perception of work, how they interact with the peers and how they approach problems. We discuss these three key factors in detail for each of the seniority levels below. 
 
 ### Different Seniority Titles
 Different organizations might have different seniority titles but they mainly fall into three categories
@@ -10,7 +10,7 @@ Different organizations might have different seniority titles but they mainly fa
 * Senior Developer
 
 ### Junior Developer
-Junior developers are normally fresh graduates and either they don't have or they have a minimal industry experience. Not only they have weak coding skills but also there are a few other things that give Junior developers away: 
+Junior developers are normally fresh graduates and either they don't have or they have minimal industry experience. Not only they have weak coding skills but also there are a few other things that give Junior developers away: 
 
 * Their main mantra is "making it work" without giving much attention to how the solution is achieved. To them, a working software and good software are equivalent. 
 * They usually require very specific and structured directions to achieve something. They suffer from tunnel vision, need supervision and continuous guidance to be an effective team member.
@@ -46,12 +46,12 @@ Being a Junior developer in the team is not necessarily a bad thing; since you a
 ### Mid Level Developers
 Next level after the Junior developers is Mid Level developers. They are technically stronger than the Junior developers and can work with minimal supervision they still have some of the issues to address in order to jump to the Senior level.
 
-Intermediate developers are more competent than the Junior developer, they start to see the flaws in their old codebase, they gain the knowledge but they get trapped into the next chain i.e. messing things up while trying to do them "the right way" e.g. hasty abstractions, overuse or un-necessary usage of Design Patterns -- they may be able to provide solution faster than the Junior developers but the solution might put you into another rabbit-hole in the long run. Without supervision, they might delay the execution while trying to "do things properly". They don't know when to make tradeoffs and they still don't know when to be dogmatic and when to be pragmatic. They can easily become attached to their solution, become myopic, and be unable to take feedback.
+Intermediate developers are more competent than the Junior developer, they start to see the flaws in their old codebase, they gain the knowledge but they get trapped into the next chain i.e. messing things up while trying to do them "the right way" e.g. hasty abstractions, overuse or unnecessary usage of Design Patterns -- they may be able to provide solution faster than the Junior developers but the solution might put you into another rabbit-hole in the long run. Without supervision, they might delay the execution while trying to "do things properly". They don't know when to make tradeoffs and they still don't know when to be dogmatic and when to be pragmatic. They can easily become attached to their solution, become myopic, and be unable to take feedback.
 
-Mid level developers are quite common, most of the organizations wrongly label them as "Senior Developers". However they need further mentoring in order to become Senior Developers. Next section describes the responsibilities of a senior developer and how you can become one.
+Mid-level developers are quite common, most of the organizations wrongly label them as "Senior Developers". However they need further mentoring in order to become Senior Developers. Next section describes the responsibilities of a senior developer and how you can become one.
 
 ### Senior Developers
-Senior developers are the next level after the Mid level developers. They are the people who can get things done on their own without any supervision and without creating any issues down the road. They are more mature, have gained experience by delivering both good and bad software in the past and have learned from it - they know how to be pragmatic. Here is the list of things that are normally expected of a Senior Developer:
+Senior developers are the next level after the Mid-level developers. They are the people who can get things done on their own without any supervision and without creating any issues down the road. They are more mature, have gained experience by delivering both good and bad software in the past and have learned from it - they know how to be pragmatic. Here is the list of things that are normally expected of a Senior Developer:
 
 * With their past experiences, mistakes made, issues faced from over-designed or under-designed softwares, they can foresee the problems and persuade the direction of the codebase or the architecture. 
 * They don't have a "Shiny-Toy" syndrome. They are pragmatic in the execution. They can make the tradeoffs when required, and they know why. They know where to be dogmatic and where to be pragmatic.
