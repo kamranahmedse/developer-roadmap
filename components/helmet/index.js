@@ -26,7 +26,7 @@ const Helmet = (props) => (
 
     <meta property="og:title" content={ prepareTitle(props.title) } />
     <meta property="og:description" content={ prepareDescription(props.description) } />
-    <meta property="og:image" content={ siteConfig.logo } />
+    <meta property="og:image" content={ `${siteConfig.url.web}${siteConfig.logoSquare}` } />
     <meta property="og:url" content={ siteConfig.url.web } />
     <meta property="og:type" content="website" />
     <meta property="article:publisher" content={ `https://facebook.com/${siteConfig.facebook}` } />
