@@ -3,9 +3,11 @@ import PageFooter from 'components/page-footer/index';
 import SiteNav from 'components/site-nav';
 import DefaultLayout from 'layouts/default/index';
 import FaqList from 'components/faq-list/index';
+import Helmet from 'components/helmet';
 
 const About = () => (
   <DefaultLayout>
+    <Helmet />
     <SiteNav />
     <AboutHeader />
     <FaqList />

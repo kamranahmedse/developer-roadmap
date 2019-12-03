@@ -1,11 +1,13 @@
-import PageFooter from 'components/page-footer/index';
+import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
-import { TosPage } from 'components/tos-page/index';
+import { TosPage } from 'components/tos-page';
+import Helmet from 'components/helmet';
 import DefaultLayout from 'layouts/default/index';
 
 const Terms = () => (
   <DefaultLayout>
     <TosPage>
+      <Helmet />
       <SiteNav />
       <div className="bg-light border-top tos-wrap">
         <div className="container pt-5 pb-5">

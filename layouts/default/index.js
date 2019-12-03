@@ -11,7 +11,6 @@ class DefaultLayout extends React.Component {
   render() {
     return (
       <div>
-        <Helmet />
         { this.props.children }
       </div>
     );

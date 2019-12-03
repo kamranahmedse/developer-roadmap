@@ -1,5 +1,6 @@
 import { faPlus } from '@fortawesome/free-solid-svg-icons';
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import DefaultLayout from 'layouts/default/index';
 import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
@@ -9,16 +10,19 @@ import RowBlock from 'components/row-block';
 import IconRowBlock from 'components/icon-row-block';
 import siteConfig from "storage/site";
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
+import Helmet from 'components/helmet';
+
+const PageTitle = "Developer Roadmaps";
+const PageDescription = "Step by step guides and paths to learn different tools or technologies";
 
 const RoadmapsList = () => (
   <DefaultLayout>
+    <Helmet title={PageTitle} desciption={PageDescription} />
     <SiteNav />
     <div className="container">
       <PageHeader
-        title="Developer Roadmaps"
-        subtitle="Step by step guides and paths to learn different tools or technologies">
+        title={PageTitle}
+        subtitle={PageDescription}>
         <BadgesList className="mt-4">
           <BadgeLink href={`${siteConfig.url.issue}?title=[RequestRoadmap] - Title Here`} target="_blank">
             <SecondaryBadge>
