@@ -1,6 +1,6 @@
-import PageFooter from 'components/page-footer';
+import PageFooter from 'components/page-footer/index';
 import SiteNav from 'components/site-nav';
-import { TosPage } from 'components/tos-page';
+import { TosPage } from 'components/tos-page/index';
 import Helmet from 'components/helmet';
 import DefaultLayout from 'layouts/default/index';
 

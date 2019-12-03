@@ -3,7 +3,7 @@ import HeroSection from 'components/hero-section/index';
 import PageFooter from 'components/page-footer/index';
 import SiteNav from 'components/site-nav';
 import Helmet from 'components/helmet';
-import DefaultLayout from 'layouts/default';
+import DefaultLayout from 'layouts/default/index';
 
 const Home = (props) => (
   <DefaultLayout>
