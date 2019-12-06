@@ -17,77 +17,89 @@
     "contributorsCount": 1,
     "contributorsUrl": "/frontend/contributors",
     "url": "/frontend",
-    "path": "/roadmaps/1-frontend/landscape/0-Summary.md",
+    "path": "/roadmaps/1-frontend/0-About/0-Summary.md",
     "sidebar": {
+      "About": [
+        {
+          "url": "/frontend/summary",
+          "title": "Summary",
+          "path": "/roadmaps/1-frontend/0-About/0-Summary.md"
+        },
+        {
+          "url": "/frontend/skill-summary",
+          "title": "Skill Summary",
+          "path": "/roadmaps/1-frontend/0-About/1-Skill-Summary.md"
+        },
+        {
+          "url": "/frontend/job-titles",
+          "title": "Job Titles",
+          "path": "/roadmaps/1-frontend/0-About/2-Job-Titles.md"
+        }
+      ],
+      "Landscape": [
+        {
+          "url": "/frontend/junior-developer",
+          "title": "Junior Developer",
+          "path": "/roadmaps/1-frontend/1-Landscape/1-Junior-Developer.md"
+        },
+        {
+          "url": "/frontend/mid-level-developer",
+          "title": "Mid Level Developer",
+          "path": "/roadmaps/1-frontend/1-Landscape/2-Mid-Level-Developer.md"
+        },
+        {
+          "url": "/frontend/senior-developer",
+          "title": "Senior Developer",
+          "path": "/roadmaps/1-frontend/1-Landscape/3-Senior-Developer.md"
+        }
+      ],
+      "Learn": [
+        {
+          "url": "/frontend/job-ready",
+          "title": "Job Ready",
+          "path": "/roadmaps/1-frontend/2-Learn/1-Job-Ready.md"
+        },
+        {
+          "url": "/frontend/write-better-css",
+          "title": "Write Better CSS",
+          "path": "/roadmaps/1-frontend/2-Learn/2-Write-Better-CSS.md"
+        },
+        {
+          "url": "/frontend/build-tools",
+          "title": "Build Tools",
+          "path": "/roadmaps/1-frontend/2-Learn/3-Build-Tools.md"
+        },
+        {
+          "url": "/frontend/modern-applications",
+          "title": "Modern Applications",
+          "path": "/roadmaps/1-frontend/2-Learn/4-Modern-Applications.md"
+        },
+        {
+          "url": "/frontend/automated-testing",
+          "title": "Automated Testing",
+          "path": "/roadmaps/1-frontend/2-Learn/5-Automated-Testing.md"
+        },
+        {
+          "url": "/frontend/static-type-checkers",
+          "title": "Static Type Checkers",
+          "path": "/roadmaps/1-frontend/2-Learn/6-Static-Type-Checkers.md"
+        },
+        {
+          "url": "/frontend/server-side-rendering",
+          "title": "Server Side Rendering",
+          "path": "/roadmaps/1-frontend/2-Learn/7-Server-Side-Rendering.md"
+        },
+        {
+          "url": "/frontend/go-beyond",
+          "title": "Go Beyond",
+          "path": "/roadmaps/1-frontend/2-Learn/8-Go-Beyond.md"
+        }
+      ],
       "_others": [
         {
           "url": "/frontend/contributors",
           "title": "contributors",
           "path": "/roadmaps/1-frontend/_others/contributors.md"
-        }
-      ],
-      "landscape": [
-        {
-          "url": "/frontend/summary",
-          "title": "Summary",
-          "path": "/roadmaps/1-frontend/landscape/0-Summary.md"
-        },
-        {
-          "url": "/frontend/junior-developer",
-          "title": "Junior Developer",
-          "path": "/roadmaps/1-frontend/landscape/1-Junior-Developer.md"
-        },
-        {
-          "url": "/frontend/mid-level-developer",
-          "title": "Mid Level Developer",
-          "path": "/roadmaps/1-frontend/landscape/2-Mid-Level-Developer.md"
-        },
-        {
-          "url": "/frontend/senior-developer",
-          "title": "Senior Developer",
-          "path": "/roadmaps/1-frontend/landscape/3-Senior-Developer.md"
-        }
-      ],
-      "learn": [
-        {
-          "url": "/frontend/job-ready",
-          "title": "Job Ready",
-          "path": "/roadmaps/1-frontend/learn/1-Job-Ready.md"
-        },
-        {
-          "url": "/frontend/write-better-css",
-          "title": "Write Better CSS",
-          "path": "/roadmaps/1-frontend/learn/2-Write-Better-CSS.md"
-        },
-        {
-          "url": "/frontend/build-tools",
-          "title": "Build Tools",
-          "path": "/roadmaps/1-frontend/learn/3-Build-Tools.md"
-        },
-        {
-          "url": "/frontend/modern-applications",
-          "title": "Modern Applications",
-          "path": "/roadmaps/1-frontend/learn/4-Modern-Applications.md"
-        },
-        {
-          "url": "/frontend/automated-testing",
-          "title": "Automated Testing",
-          "path": "/roadmaps/1-frontend/learn/5-Automated-Testing.md"
-        },
-        {
-          "url": "/frontend/static-type-checkers",
-          "title": "Static Type Checkers",
-          "path": "/roadmaps/1-frontend/learn/6-Static-Type-Checkers.md"
-        },
-        {
-          "url": "/frontend/server-side-rendering",
-          "title": "Server Side Rendering",
-          "path": "/roadmaps/1-frontend/learn/7-Server-Side-Rendering.md"
-        },
-        {
-          "url": "/frontend/go-beyond",
-          "title": "Go Beyond",
-          "path": "/roadmaps/1-frontend/learn/8-Go-Beyond.md"
         }
       ]
     }
@@ -104,28 +116,35 @@
     "contributorsCount": 1,
     "contributorsUrl": "/backend/contributors",
     "url": "/backend",
-    "path": "/roadmaps/2-backend/landscape/0-Summary.md",
+    "path": "/roadmaps/2-backend/0-About/0-Summary.md",
     "sidebar": {
-      "landscape": [
+      "About": [
         {
           "url": "/backend/summary",
           "title": "Summary",
-          "path": "/roadmaps/2-backend/landscape/0-Summary.md"
+          "path": "/roadmaps/2-backend/0-About/0-Summary.md"
+        }
+      ],
+      "Landscape": [
+        {
+          "url": "/backend/summary",
+          "title": "Summary",
+          "path": "/roadmaps/2-backend/1-Landscape/0-Summary.md"
         },
         {
           "url": "/backend/junior",
           "title": "Junior",
-          "path": "/roadmaps/2-backend/landscape/1-Junior.md"
+          "path": "/roadmaps/2-backend/1-Landscape/1-Junior.md"
         },
         {
           "url": "/backend/intermediate",
           "title": "Intermediate",
-          "path": "/roadmaps/2-backend/landscape/2-Intermediate.md"
+          "path": "/roadmaps/2-backend/1-Landscape/2-Intermediate.md"
         },
         {
           "url": "/backend/senior",
           "title": "Senior",
-          "path": "/roadmaps/2-backend/landscape/3-Senior.md"
+          "path": "/roadmaps/2-backend/1-Landscape/3-Senior.md"
         }
       ]
     }
@@ -147,28 +166,30 @@
     "contributorsCount": 1,
     "contributorsUrl": "/devops/contributors",
     "url": "/devops",
-    "path": "/roadmaps/3-devops/landscape/0-Summary.md",
+    "path": "/roadmaps/3-devops/0-About/0-Summary.md",
     "sidebar": {
-      "landscape": [
+      "About": [
         {
           "url": "/devops/summary",
           "title": "Summary",
-          "path": "/roadmaps/3-devops/landscape/0-Summary.md"
-        },
+          "path": "/roadmaps/3-devops/0-About/0-Summary.md"
+        }
+      ],
+      "Landscape": [
         {
           "url": "/devops/junior",
           "title": "Junior",
-          "path": "/roadmaps/3-devops/landscape/1-Junior.md"
+          "path": "/roadmaps/3-devops/1-Landscape/1-Junior.md"
         },
         {
           "url": "/devops/intermediate",
           "title": "Intermediate",
-          "path": "/roadmaps/3-devops/landscape/2-Intermediate.md"
+          "path": "/roadmaps/3-devops/1-Landscape/2-Intermediate.md"
         },
         {
           "url": "/devops/senior",
           "title": "Senior",
-          "path": "/roadmaps/3-devops/landscape/3-Senior.md"
+          "path": "/roadmaps/3-devops/1-Landscape/3-Senior.md"
         }
       ]
     }
@@ -185,13 +206,13 @@
     "contributorsCount": 1,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
-    "path": "/roadmaps/4-fullstack/landscape/0-Summary.md",
+    "path": "/roadmaps/4-fullstack/0-About/0-Summary.md",
     "sidebar": {
-      "landscape": [
+      "About": [
         {
           "url": "/fullstack/summary",
           "title": "Summary",
-          "path": "/roadmaps/4-fullstack/landscape/0-Summary.md"
+          "path": "/roadmaps/4-fullstack/0-About/0-Summary.md"
         }
       ]
     }
@@ -208,13 +229,13 @@
     "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
-    "path": "/roadmaps/5-qa/landscape/0-Summary.md",
+    "path": "/roadmaps/5-qa/0-About/0-Summary.md",
     "sidebar": {
-      "landscape": [
+      "About": [
         {
           "url": "/qa/summary",
           "title": "Summary",
-          "path": "/roadmaps/5-qa/landscape/0-Summary.md"
+          "path": "/roadmaps/5-qa/0-About/0-Summary.md"
         }
       ]
     }
