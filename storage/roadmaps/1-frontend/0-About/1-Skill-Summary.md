@@ -1,4 +1,4 @@
-#### Soft Skills required
+#### Soft Skills
 Before we jump on to the technical skills there are few non-technical or soft skills that every employer is going to demand, so make sure to work on that side of the things as well when you are preparing yourself technically
 
 * **Communication skills** — Talking to your colleagues, writing emails, use of language
@@ -9,20 +9,13 @@ Before we jump on to the technical skills there are few non-technical or soft sk
 * **Be Curious** — Your curiosity is going to help you a great deal in evolving yourself. Don't just take things as they are, look at the reasoning behind the things. Look at the things that others are building, learn from them. Look at what community is most excited about these days.
 
 #### Technical Skills
-The sections below describe different steps required to become a frontend developer
+In order to be a frontend developer, all you need is to learn HTML, CSS and JavaScript. Just learn these and you should be employable. I know a lot of developers who just know these and are working as frontend developers and are making decent money
+* HTML
+* CSS
+* JavaScript 
 
-#### Learning How Things Work
-As a web developer, frontend, backend or fullstack, you should have a good understanding of how the internet works 
+Frontend development is broad and there are further skills that are in play but those can be gained over time. All you need is to learn the above three and start making projects ...lots of them. This is how you will hone your skillset and continue to grow. Having said that, the skills and the relevant expertise in those skills varies from the job level, follow the links below to get an idea of the skills required for each of the role levels.
 
-![](/static/roadmaps/frontend/beginner-1.png)
-
-Learn the below listed in the order given below
-* What is Internet and how does it work?
-* What is HTTP, how it evolved and where is it now?
-* How do the browsers work? Engines behind different browsers
-* What is DNS? How a website is found on the internet?
-* What's in a domain name? What is an IP Address?
-* What is Web Hosting?
-
-#### Writing Some Code
-Now that you understand how things work, next step is getting your hands dirty and start actual coding
+* [Entry Level Developer](/frontend/junior-developer)
+* [Mid Level Developer](/frontend/mid-level-developer)
+* [Senior Developer](/frontend/senior-developer)

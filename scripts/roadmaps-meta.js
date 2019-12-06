@@ -16,7 +16,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
 
   // We can't use the absolute path in the build e.g. ~/Users/user/where-build-is-running/storage
   // So, we remove it and use the path relative to storage directory
-  const summaryFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), '/landscape/0-Summary.md')
+  const summaryFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), '/0-About/0-Summary.md');
 
   const contributors = exec(`git log --pretty=format:"%an%x09" ${roadmapDir} | uniq`)
     .toString()
@@ -42,7 +42,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
   //    learn: [{ title: "Job Ready", path: "/path/to/file.md"}, ...],
   // }
   const sidebar = menuDirs.reduce((menus, menuDir) => {
-    const menuItemName = path.basename(menuDir);
+    const menuItemName = path.basename(menuDir).replace(/\d+-/, '').replace('-', ' ');
     const pageFiles = fs.readdirSync(menuDir)
       .filter(pageFileName => pageFileName.endsWith('.md'))
       // Sort by the titles `1-something.md, 2-another.md`
