@@ -7,7 +7,7 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "featured": true,
-  "detailed": true,
+  "detailed": false,
   "versions": [
     "latest",
     "2018",

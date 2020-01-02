@@ -38,7 +38,7 @@ const DetailedRoadmap = ({ roadmap }) => {
     }
 
     return (
-      <div className='links-group'>
+      <div className='links-group' key={groupTitle}>
         <h3>{ groupTitle }</h3>
         <ul>
           { sidebar[groupTitle].map(page => {
@@ -47,7 +47,7 @@ const DetailedRoadmap = ({ roadmap }) => {
             const isSummaryPage = page.url === `${currentPage.url}/summary`;
 
             return (
-              <li className={classNames({ active: isActivePage || isSummaryPage })}>
+              <li className={classNames({ active: isActivePage || isSummaryPage })} key={page.url}>
                 <a href={ page.url }>
                   <span className="bullet"></span>
                   { page.title }
