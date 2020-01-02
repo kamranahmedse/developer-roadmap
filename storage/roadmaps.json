@@ -8,7 +8,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "detailed": true,
+    "detailed": false,
     "versions": [
       "latest",
       "2018",
@@ -93,13 +93,6 @@
           "url": "/frontend/go-beyond",
           "title": "Go Beyond",
           "path": "/roadmaps/1-frontend/2-Learn/8-Go-Beyond.md"
-        }
-      ],
-      "_others": [
-        {
-          "url": "/frontend/contributors",
-          "title": "contributors",
-          "path": "/roadmaps/1-frontend/_others/contributors.md"
         }
       ]
     }
