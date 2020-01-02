@@ -21,6 +21,11 @@
     "sidebar": {
       "About": [
         {
+          "url": "/frontend/summary-detailed",
+          "title": "Summary detailed",
+          "path": "/roadmaps/1-frontend/0-About/0-Summary-detailed.md"
+        },
+        {
           "url": "/frontend/summary",
           "title": "Summary",
           "path": "/roadmaps/1-frontend/0-About/0-Summary.md"
