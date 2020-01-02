@@ -128,7 +128,7 @@ Cache-Control: max-age=3600, no-cache, public
 ```html
 Cache-Control: max-age=3600, public
 ```
-it would mean that the content is publicly cacheable and will be considered stale after 60 seconds
+it would mean that the content is publicly cacheable and will be considered stale after 60 minutes
 
 ##### s-maxage: seconds
 **`s-maxage`** here `s-` prefix stands for shared. This directive specifically targets the shared caches. Like `max-age` it also gets the number of seconds for which something is to be cached. If present, it will override `max-age` and `expires` headers for shared caching.

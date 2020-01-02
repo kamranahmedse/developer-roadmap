@@ -1257,7 +1257,7 @@ In plain words
 Wikipedia says
 > In software engineering, behavioral design patterns are design patterns that identify common communication patterns between objects and realize these patterns. By doing so, these patterns increase flexibility in carrying out this communication.
 
-There are 7 types of 10 types of behavioral design patterns
+There are 10 types of behavioral design patterns
 
 * [Chain of Responsibility](#-chain-of-responsibility)
 * [Command](#-command)

@@ -1,5 +1,15 @@
 [
   {
+    "title": "Levels of Seniority",
+    "description": "How to Step Up as a Junior, Mid Level or a Senior Developer?",
+    "url": "/guides/levels-of-seniority",
+    "fileName": "levels-of-seniority",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2019-12-03T12:13:00.860Z",
+    "createdAt": "2019-12-03T12:13:00.860Z"
+  },
+  {
     "title": "Design Patterns for Humans",
     "description": "A language agnostic, ultra-simplified explanation to design patterns",
     "url": "/guides/design-patterns-for-humans",
@@ -39,5 +49,15 @@
     "author": "kamranahmedse",
     "createdAt": "2018-11-29T17:00:00.860Z",
     "updatedAt": "2018-11-29T17:00:00.860Z"
+  },
+  {
+    "title": "Brief History of JavaScript",
+    "description": "How JavaScript was introduced and evolved over the years",
+    "url": "/guides/history-of-javascript",
+    "fileName": "history-of-javascript",
+    "featured": true,
+    "author": "kamranahmedse",
+    "createdAt": "2017-10-28T17:00:00.860Z",
+    "updatedAt": "2017-10-28T17:00:00.860Z"
   }
 ]

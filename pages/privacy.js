@@ -2,9 +2,11 @@ import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer/index';
 import { TosPage } from 'components/tos-page/index';
 import DefaultLayout from 'layouts/default/index';
+import Helmet from 'components/helmet';
 
 const Privacy = () => (
   <DefaultLayout>
+    <Helmet />
     <TosPage>
       <SiteNav />
       <div className="bg-light border-top privacy-wrap">
