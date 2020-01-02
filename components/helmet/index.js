@@ -26,7 +26,7 @@ const Helmet = (props) => (
 
     <meta property="og:title" content={ prepareTitle(props.title) } />
     <meta property="og:description" content={ prepareDescription(props.description) } />
-    <meta property="og:image" content={ siteConfig.logo } />
+    <meta property="og:image" content={ `${siteConfig.url.web}${siteConfig.logoSquare}` } />
     <meta property="og:url" content={ siteConfig.url.web } />
     <meta property="og:type" content="website" />
     <meta property="article:publisher" content={ `https://facebook.com/${siteConfig.facebook}` } />
@@ -37,7 +37,7 @@ const Helmet = (props) => (
     <meta name="twitter:site" content={ `@${siteConfig.twitter}` } />
     <meta name="twitter:title" content={ prepareTitle(props.title) } />
     <meta name="twitter:description" content={ prepareDescription(props.description) } />
-    <meta name="twitter:image" content={ siteConfig.logo } />
+    <meta name="twitter:image" content={ `${siteConfig.url.web}${siteConfig.logoSquare}` } />
     <meta name="twitter:image:alt" content="roadmap.sh" />
 
     <meta name="mobile-web-app-capable" content="yes" />

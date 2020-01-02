@@ -8,13 +8,16 @@ import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
 import { getAllGuides } from 'lib/guide';
 import siteConfig from 'storage/site';
+import Helmet from 'components/helmet';
+
+const PageTitle = "Programming Guides";
+const PageDescription = "Easy to follow guides on complex topics written and maintained by the community";
 
 const Roadmap = () => (
   <DefaultLayout>
+    <Helmet title={PageTitle} desciption={PageDescription} />
     <SiteNav />
-    <PageHeader
-      title="Programming Guides"
-      subtitle="Easy to follow guides on complex topics written and maintained by the community">
+    <PageHeader title={PageTitle} subtitle={PageDescription}>
       <BadgesList className="mt-4">
         <BadgeLink href={siteConfig.url.addGuide} target="_blank">
           <SecondaryBadge>
