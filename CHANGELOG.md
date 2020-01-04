@@ -12,7 +12,7 @@
 - Recommended knowledge of the internet has been added
 - Added section for VCS in the roadmap
 - Mentioned the knowledge of web security
-- Deprioritized the CSS Preprocessors knowledge (use of CSS-in-JS)
+- Deprioritized the CSS Preprocessors knowledge (priortized the use of CSS-in-JS)
 - Moved "SMACSS/OOCSS" out of recommendation and optional knowledge of BEM
 - Task runners - Gulp has been marked grey and removed from the "possible options"
 - Linters and formatters - removed JSHint and JSLint. Only Knowledge of ESLint and Prettier has been recommended.
@@ -29,10 +29,10 @@
 - Carlo and proton-native have been grayed out from the "Desktop applications"
 
 ### Backend Developer Roadmap
-> Expected release date 12-01-2019
+> Expected release date 12-01-2020
 
 ### DevOps Roadmap
-> Expected release date 19-01-2019
+> Expected release date 19-01-2020
 
 ## Roadmap 2019
 * [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#frontend-roadmap)
