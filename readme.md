@@ -1,6 +1,6 @@
-![Web Developer Roadmap - 2019](https://i.imgur.com/s5cCV9q.png)
+![Web Developer Roadmap - 2020](https://i.imgur.com/s5cCV9q.png)
 
-> Roadmap to becoming a web developer in 2019
+> Roadmap to becoming a web developer in 2020
 
 [![](https://img.shields.io/badge/%E2%9D%A4-Detailed%20Content%20on%20the%20Website%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 
@@ -17,19 +17,19 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## Introduction
 
-![Web Developer Roadmap Introduction](./images/intro.png)
+![Web Developer Roadmap Introduction](./img/intro.png)
 
 ## Frontend Roadmap
 
-![Frontend Roadmap](./images/frontend.png?fix=531)
+![Frontend Roadmap](./img/frontend.png?year-2020)
 
 ## Back-end Roadmap
 
-![Back-end Roadmap](./images/backend.png)
+![Back-end Roadmap](./img/backend.png)
 
 ## DevOps Roadmap
 
-![DevOps Roadmap](./images/devops.png)
+![DevOps Roadmap](./img/devops.png)
 
 ## 🚦 Wrap Up
 
