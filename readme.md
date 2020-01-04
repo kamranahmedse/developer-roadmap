@@ -1,4 +1,4 @@
-![Web Developer Roadmap - 2020](https://i.imgur.com/s5cCV9q.png)
+![Web Developer Roadmap - 2020](https://i.imgur.com/ScBCaFE.png)
 
 > Roadmap to becoming a web developer in 2020
 
