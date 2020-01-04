@@ -46,4 +46,4 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
  
 ## License
 
-[![License: CC BY-NC-ND 3.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%203.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/3.0/)
+Have a look at the [license file](./license.md) for details
