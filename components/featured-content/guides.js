@@ -9,7 +9,7 @@ const FeaturedGuides = () => (
       <p className='border-through featured-separator'>
           <span>
             Guides mostly visited by the community&nbsp;
-            <Link href="/guides"><a className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a></Link>
+            <a href="/guides" className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Guides &rarr;</a>
           </span>
       </p>
       <div className="swim-lane row">
