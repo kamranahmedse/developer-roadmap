@@ -11,14 +11,14 @@ const RoadmapHeader = ({ roadmap }) => (
     <BadgesList className="mt-4">
       <BadgeLink href="/roadmaps">
         <DarkBadge>
-          <FontAwesomeIcon icon={ faArrowLeft } />
+          <FontAwesomeIcon className='d-none d-md-block' icon={ faArrowLeft } />
           Other Roadmaps
         </DarkBadge>
       </BadgeLink>
       { roadmap.upcoming && (
         <BadgeLink href="/signup">
           <SecondaryBadge>
-            <FontAwesomeIcon icon={ faClock } />
+            <FontAwesomeIcon className='d-none d-md-block' icon={ faClock } />
             Upcoming Roadmap
           </SecondaryBadge>
         </BadgeLink>
@@ -26,7 +26,7 @@ const RoadmapHeader = ({ roadmap }) => (
       { !roadmap.upcoming && (
         <BadgeLink href={ `${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here` } target="_blank">
           <SecondaryBadge>
-            <FontAwesomeIcon icon={ faHandshake } />
+            <FontAwesomeIcon className='d-none d-md-block' icon={ faHandshake } />
             Suggest Changes
           </SecondaryBadge>
         </BadgeLink>
@@ -34,7 +34,7 @@ const RoadmapHeader = ({ roadmap }) => (
 
       <BadgeLink href="/signup">
         <PrimaryBadge>
-          <FontAwesomeIcon icon={ faEnvelope } />
+          <FontAwesomeIcon className='d-none d-md-block' icon={ faEnvelope } />
           Send me Updates
         </PrimaryBadge>
       </BadgeLink>
