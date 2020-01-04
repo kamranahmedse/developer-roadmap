@@ -24,9 +24,9 @@ const RoadmapHeader = ({ roadmap }) => (
         </BadgeLink>
       ) }
       { !roadmap.upcoming && (
-        <BadgeLink href={ `${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here` } target="_blank">
+        <BadgeLink href={ `${siteConfig.url.issue}?title=[${roadmap.title}] - Title Here` } target="_blank" className='d-none d-md-block' >
           <SecondaryBadge>
-            <FontAwesomeIcon className='d-none d-md-block' icon={ faHandshake } />
+            <FontAwesomeIcon icon={ faHandshake } />
             Suggest Changes
           </SecondaryBadge>
         </BadgeLink>
