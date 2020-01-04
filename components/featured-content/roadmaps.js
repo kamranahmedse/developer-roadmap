@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { FeaturedContentWrap } from './style';
 import roadmaps from 'storage/roadmaps';
 import FeaturedRoadmap from 'components/featured-roadmap';
@@ -10,9 +9,7 @@ const FeaturedRoadmaps = () => (
         <p className="border-through featured-separator">
             <span>
               Roadmaps mostly visited by the community&nbsp;
-              <Link href='/roadmaps'>
-                <a className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps &rarr;</a>
-              </Link>
+              <a href='/roadmaps' className="dark-link d-none d-sm-none d-md-inline d-xl-inline">View all Roadmaps &rarr;</a>
             </span>
         </p>
       </div>

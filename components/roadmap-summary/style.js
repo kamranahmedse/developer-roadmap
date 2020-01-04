@@ -14,6 +14,7 @@ export const UpcomingContainer = styled.div`
 export const Summary = styled.div`
   margin-top: 35px;
   min-height: 400px;
+  max-width: 1000px;
   display: block;
   position: relative;
   text-align: left;
