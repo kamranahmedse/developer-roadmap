@@ -29,13 +29,19 @@ If you think that these can be improved in anyway, please do suggest.
 
 ## Frontend Roadmap
 
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
+
 ![Frontend Roadmap](./img/frontend.png?year-2020-1)
 
 ## Back-end Roadmap 
 
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/backend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
+
 ![Back-end Roadmap](./img/backend.png)
 
 ## DevOps Roadmap
+
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/devops.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/devops)
 
 ![DevOps Roadmap](./img/devops.png)
 
