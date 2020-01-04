@@ -2,7 +2,7 @@
 
 > Roadmap to becoming a web developer in 2019
 
-[![](https://img.shields.io/badge/%E2%9D%A4-Join%20the%20Chat%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://discord.gg/Yhm4EsE)
+[![](https://img.shields.io/badge/%E2%9D%A4-Detailed%20Content%20on%20the%20Website%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
 
