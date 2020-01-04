@@ -1,4 +1,4 @@
-## [Roadmap 2020]()
+## Roadmap 2020
 
 ### Frontend Developer Roadmap
 
@@ -26,3 +26,18 @@
 
 ### DevOps Roadmap
 > Expected release date 19-01-2019
+
+## Roadmap 2019
+* [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#frontend-roadmap)
+* [Backend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#back-end-roadmap)
+* [DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#devops-roadmap)
+
+## Roadmap 2018
+* [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/67a72aab113e79c11e292ada394606f079f6a263#-frontend-roadmap)
+* [Backend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/67a72aab113e79c11e292ada394606f079f6a263#-back-end-roadmap)
+* [DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/67a72aab113e79c11e292ada394606f079f6a263#-devops-roadmap)
+
+## Roadmap 2017
+* [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/ee2b3e5de0e2a9ccccf3f2bbe4687f150df976f4#-front-end-roadmap)
+* [Backend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/ee2b3e5de0e2a9ccccf3f2bbe4687f150df976f4#-back-end-roadmap)
+* [DevOps Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/ee2b3e5de0e2a9ccccf3f2bbe4687f150df976f4#-devops-roadmap)
