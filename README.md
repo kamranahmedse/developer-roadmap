@@ -51,7 +51,7 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
 
 ## 🙌 Contribution
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+> Have a look at [contribution docs](./CONTRIBUTING.md) for how to update any of the roadmaps
 
 - Open pull request with improvements
 - Discuss ideas in issues
@@ -60,4 +60,4 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
  
 ## License
 
-Have a look at the [license file](./license.md) for details
+Have a look at the [license file](./LICENSE) for details
