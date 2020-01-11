@@ -8,7 +8,7 @@ Your contributions to this repo are always welcome!
 Bear in mind, that this repo is *highly opinionated*, *unbiased* and *curated*.
 Your opinion on value of any resource may not match the opinion of curator.
 
-**No PR will be discarded without explanations!**
+**Please make sure to open an issue to discuss before you open a PR!**
 
 ## How are these roadmaps made?
 
