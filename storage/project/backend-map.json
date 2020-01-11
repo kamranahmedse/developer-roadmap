@@ -7673,14 +7673,14 @@
                     "ID": "1369",
                     "typeID": "Label",
                     "zOrder": "84",
-                    "w": "61",
-                    "measuredW": "60",
+                    "w": "55",
+                    "measuredW": "54",
                     "measuredH": "25",
-                    "x": "1064",
+                    "x": "1072",
                     "y": "2788",
                     "properties": {
                         "size": "17",
-                        "text": "MS ISS"
+                        "text": "MS IIS"
                     }
                 },
                 {
