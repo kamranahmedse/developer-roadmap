@@ -37,7 +37,7 @@
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](./pdf/frontend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
 
-![Frontend Roadmap](./img/frontend.png?year-2020-1)
+![Frontend Roadmap](./img/frontend.png)
 
 ## 백엔드 로드맵
 
