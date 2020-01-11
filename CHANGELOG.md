@@ -29,7 +29,7 @@
 - Carlo and proton-native have been grayed out from the "Desktop applications"
 
 ### Backend Developer Roadmap
-- Turned it into a skill tree than textual/detailed guide. Beginner guide will be rewritten and [added to the website](https://roadmap.sh)
+- The [old textual look](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#back-end-roadmap) has been gone and the tree has been made thorough. Beginner friendly textual format will be added soon [to the website](https://roadmap.sh)
 - Recommended knowledge of the internet has been added
 - Added basic frontend knowledge
 - Mentioned Web Security
