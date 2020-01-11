@@ -29,7 +29,20 @@
 - Carlo and proton-native have been grayed out from the "Desktop applications"
 
 ### Backend Developer Roadmap
-> Expected release date 12-01-2020
+- Turned it into a skill tree than textual/detailed guide. Beginner guide will be rewritten and [added to the website](https://roadmap.sh)
+- Recommended knowledge of the internet has been added
+- Added basic frontend knowledge
+- Mentioned Web Security
+- Recommends OS knowledge, POSIX basics, and some basic terminal usage details
+- Languages part has been changed. JavaScript has been made the "Personal recommendation" and others as options available.
+- Adds VCS/Git section
+- Recommends additional database knowledge (i.e. OMRs, ACID, Transactions, N+1, Normalization, Indexes)
+- APIs section has been expanded with REST, JSON, SOAP, HATEOAS, Open API Spec
+- More authentication strategies have been added to the API authentication
+- Caching section now has CDN and client Side caching sections
+- Architectural patterns have been added
+- GraphQL has been added
+- New section has been added "Building for Scale"
 
 ### DevOps Roadmap
 > Expected release date 19-01-2020
