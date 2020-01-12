@@ -36,7 +36,7 @@
 - Recommends OS knowledge, POSIX basics, and some basic terminal usage details
 - Languages part has been changed. JavaScript has been made the "Personal recommendation" and others as options available.
 - Adds VCS/Git section
-- Recommends additional database knowledge (i.e. OMRs, ACID, Transactions, N+1, Normalization, Indexes)
+- Recommends additional database knowledge (i.e. ORMs, ACID, Transactions, N+1, Normalization, Indexes)
 - APIs section has been expanded with REST, JSON, SOAP, HATEOAS, Open API Spec
 - More authentication strategies have been added to the API authentication
 - Caching section now has CDN and client Side caching sections
