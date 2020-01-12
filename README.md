@@ -13,7 +13,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 <h3 align="center"><strong>Purpose of these Roadmaps</strong></h3>
 
-> The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would better suited for some cases than the other and remember hip and trendy never means best suited for the job.
+> The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.
 
 <h3 align="center"><strong>Note to Beginners</strong></h3>
 
@@ -21,7 +21,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 ***
 
-If you think that these can be improved in anyway, please do suggest.
+If you think that these can be improved in any way, please do suggest.
 
 ## Introduction
 
@@ -31,13 +31,13 @@ If you think that these can be improved in anyway, please do suggest.
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
 
-![Frontend Roadmap](./img/frontend.png?year-2020-1)
+![Frontend Roadmap](./img/frontend.png?year-2020-2)
 
 ## Back-end Roadmap 
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/backend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
 
-![Back-end Roadmap](./img/backend.png)
+![Back-end Roadmap](./img/backend.png?year-2020-1)
 
 ## DevOps Roadmap
 
