@@ -1,6 +1,6 @@
 BitTorrent is a protocol for downloading and distributing files across the Internet. In contrast with the traditional client/server relationship, in which downloaders connect to a central server (for example: watching a movie on Netflix, or loading the web page you're reading now), participants in the BitTorrent network, called **peers**, download pieces of files from *each other*—this is what makes it a **peer-to-peer** protocol. In this article we will investigate how this works, and build our own client that can find peers and exchange data between them.
 
-![diagram showing the difference between client/server (all clients connecting to one server) and peer-to-peer (peers connecting to each other) relationships](/static/guides/torrent-client/client-server-p2p.png)
+![diagram showing the difference between client/server (all clients connecting to one server) and peer-to-peer (peers connecting to each other) relationships](/guides/torrent-client/client-server-p2p.png)
 
 The protocol evolved organically over the past 20 years, and various people and organizations added extensions for features like encryption, private torrents, and new ways of finding peers. We'll be implementing the [original spec](https://www.bittorrent.org/beps/bep_0003.html) from 2001 to keep this a weekend-sized project.
 
@@ -9,7 +9,7 @@ I'll be using a [Debian ISO](https://cdimage.debian.org/debian-cd/current/amd64/
 # Finding peers
 Here’s a problem: we want to download a file with BitTorrent, but it’s a peer-to-peer protocol and we have no idea where to find peers to download it from. This is a lot like moving to a new city and trying to make friends—maybe we’ll hit up a local pub or a meetup group! Centralized locations like these are the big idea behind trackers, which are central servers that introduce peers to each other. They’re just web servers running over HTTP, and you can find Debian’s at http://bttracker.debian.org:6969/
 
-![illustration of a desktop computer and laptop sitting at a pub](/static/guides/torrent-client/trackers.png)
+![illustration of a desktop computer and laptop sitting at a pub](/guides/torrent-client/trackers.png)
 
 Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and KickassTorrents getting seized and shut down. New methods cut out the middleman by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
 
@@ -51,7 +51,7 @@ e
 
 In this file, we can spot the URL of the tracker, the creation date (as a Unix timestamp), the name and size of the file, and a big binary blob containing the SHA-1 hashes of each **piece**, which are equally-sized parts of the file we want to download. The exact size of a piece varies between torrents, but they are usually somewhere between 256KB and 1MB. This means that a large file might be made up of *thousands* of pieces. We'll download these pieces from our peers, check them against the hashes from our torrent file, assemble them together, and boom, we've got a file!
 
-!["illustration of a file being cut with scissors into multiple pieces, starting with piece 0](/static/guides/torrent-client/pieces.png)
+!["illustration of a file being cut with scissors into multiple pieces, starting with piece 0](/guides/torrent-client/pieces.png)
 
 This mechanism allows us to verify the integrity of each piece as we go. It makes BitTorrent resistant to accidental corruption or intentional **torrent poisoning**. Unless an attacker is capable of breaking SHA-1 with a preimage attack, we will get exactly the content we asked for.
 
@@ -89,7 +89,7 @@ Because I like to keep my structures relatively flat, and I like to keep my appl
 
 Notably, I split `pieces` (previously a string) into a slice of hashes (each `[20]byte`) so that I can easily access individual hashes later. I also computed the SHA-1 hash of the entire bencoded `info` dict (the one which contained the name, size, and piece hashes). We know this as the **infohash** and it uniquely identifies files when we talk to trackers and peers. More on this later.
 
-![a name tag saying 'Hello my name is 86d4c80024a469be4c50bc5a102cf71780310074'](/static/guides/torrent-client/info-hash.png)
+![a name tag saying 'Hello my name is 86d4c80024a469be4c50bc5a102cf71780310074'](/guides/torrent-client/info-hash.png)
 
 ```go
 type TorrentFile struct {
@@ -134,7 +134,7 @@ The important ones:
 * **info_hash**: Identifies the *file* we're trying to download. It's the infohash we calculated earlier from the bencoded `info` dict. The tracker will use this to figure out which peers to show us.
 * **peer_id**: A 20 byte name to identify *ourselves* to trackers and peers. We'll just generate 20 random bytes for this. Real BitTorrent clients have IDs like `-TR2940-k8hj0wgej6ch` which identify the client software and version—in this case, TR2940 stands for Transmission client 2.94.
 
-![a file with a name tag saying 'info_hash' and a person with a name tag 'peer_id'](/static/guides/torrent-client/info-hash-peer-id.png)
+![a file with a name tag saying 'info_hash' and a person with a name tag 'peer_id'](/guides/torrent-client/info-hash-peer-id.png)
 
 ## Parsing the tracker response
 We get back a bencoded response:
@@ -152,7 +152,7 @@ e
 
 `Peers` is another long binary blob containing the IP addresses of each peer. It's made out of **groups of six bytes**. The first four bytes in each group represent the peer's IP address—each byte represents a number in the IP. The last two bytes represent the port, as a big-endian `uint16`. **Big-endian**, or **network order**, means that we can interpret a group of bytes as an integer by just squishing them together left to right. For example, the bytes `0x1A`, `0xE1` make `0x1AE1`, or 6881 in decimal.
 
-![diagram showing how 192, 0, 2, 123, 0x1A, 0xE1 can be interpreted as 192.0.1.123:6881](/static/guides/torrent-client/address.png)
+![diagram showing how 192, 0, 2, 123, 0x1A, 0xE1 can be interpreted as 192.0.1.123:6881](/guides/torrent-client/address.png)
 
 ```go
 // Peer encodes connection information for a peer
@@ -203,7 +203,7 @@ We've just set up a connection with a peer, but we want do a handshake to valida
 * is able to understand and respond to our messages
 * has the file that we want, or at least knows what we're talking about
 
-![Two computers communicating. One asks 'do you speak BitTorrent and have this file?' and the other replies 'I speak BitTorrent and have that file'](/static/guides/torrent-client/handshake.png)
+![Two computers communicating. One asks 'do you speak BitTorrent and have this file?' and the other replies 'I speak BitTorrent and have that file'](/guides/torrent-client/handshake.png)
 
 My father told me that the secret to a good handshake is a firm grip and eye contact. The secret to a good BitTorrent handshake is that it's made up of five parts:
 
@@ -255,12 +255,12 @@ Once we've completed the initial handshake, we can send and receive **messages**
 
 Once we've been unchoked, we can then begin sending **requests** for pieces, and they can send us messages back containing pieces.
 
-!["A cartoon in which person 1 says 'hello I would like piece number—' and person 2 grabs him by the neck and says '00 00 00 01 00 (choke)'](/static/guides/torrent-client/choke.png)
+!["A cartoon in which person 1 says 'hello I would like piece number—' and person 2 grabs him by the neck and says '00 00 00 01 00 (choke)'](/guides/torrent-client/choke.png)
 
 ### Interpreting messages
 A message has a length, an **ID** and a **payload**. On the wire, it looks like:
 
-![A message with 4 byte for the length, 1 byte for ID, and an optional payload](/static/guides/torrent-client/message.png)
+![A message with 4 byte for the length, 1 byte for ID, and an optional payload](/guides/torrent-client/message.png)
 
 A message starts with a length indicator which tells us how many bytes long the message will be. It's a 32-bit integer, meaning it's made out of four bytes smooshed together in big-endian order. The next byte, the **ID**, tells us which type of message we're receiving—for example, a `2` byte means "interested." Finally, the optional **payload** fills out the remaining length of the message.
 
@@ -336,7 +336,7 @@ func Read(r io.Reader) (*Message, error) {
 ### Bitfields
 One of the most interesting types of message is the **bitfield**, which is a data structure that peers use to efficiently encode which pieces they are able to send us. A bitfield looks like a byte array, and to check which pieces they have, we just need to look at the positions of the *bits* set to 1. You can think of it like the digital equivalent of a coffee shop loyalty card. We start with a blank card of all `0`, and flip bits to `1` to mark their positions as "stamped."
 
-![a coffee shop loyalty card with eight slots, with stamps on the first four slots and a stamp on the second to last slot, represented as 11110010](/static/guides/torrent-client/bitfield.png)
+![a coffee shop loyalty card with eight slots, with stamps on the first four slots and a stamp on the second to last slot, represented as 11110010](/guides/torrent-client/bitfield.png)
 
 By working with *bits* instead of *bytes*, this data structure is super compact. We can stuff information about eight pieces in the space of a single byte—the size of a `bool`. The tradeoff is that accessing values becomes a little more tricky. The smallest unit of memory that computers can address are bytes, so to get to our bits, we have to do some bitwise manipulation:
 
@@ -395,7 +395,7 @@ close(workQueue)
 
 We'll spawn a worker goroutine for each peer we've received from the tracker. It'll connect and handshake with the peer, and then start retrieving work from the `workQueue`, attempting to download it, and sending downloaded pieces back through the `results` channel.
 
-![a flow chart of the download strategy](/static/guides/torrent-client/download.png)
+![a flow chart of the download strategy](/guides/torrent-client/download.png)
 
 ```go
 func (t *Torrent) startDownloadWorker(peer peers.Peer, workQueue chan *pieceWork, results chan *pieceResult) {
@@ -477,7 +477,7 @@ A peer is supposed to sever the connection if they receive a request for a block
 ### Pipelining
 Network round-trips are expensive, and requesting each block one by one will absolutely tank the performance of our download. Therefore, it's important to **pipeline** our requests such that we keep up a constant pressure of some number of unfulfilled requests. This can increase the throughput of our connection by an order of magnitude.
 
-![Two email threads simulating peer connections. The thread on the left shows a request followed by a reply, repeated three times. The thread on the left sends three requests, and receives three replies in quick succession.](/static/guides/torrent-client/pipelining.png)
+![Two email threads simulating peer connections. The thread on the left shows a request followed by a reply, repeated three times. The thread on the left sends three requests, and receives three replies in quick succession.](/guides/torrent-client/pipelining.png)
 
 Classically, BitTorrent clients kept a queue of five pipelined requests, and that's the value I'll be using. I found that increasing it can up to double the speed of a download. Newer clients use an [adaptive](https://luminarys.com/posts/writing-a-bittorrent-client.html) queue size to better accommodate modern network speeds and conditions. This is definitely a parameter worth tweaking, and it's pretty low hanging fruit for future performance optimization.
 

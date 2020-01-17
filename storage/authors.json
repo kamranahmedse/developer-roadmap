@@ -3,14 +3,14 @@
     "username": "kamranahmedse",
     "name": "Kamran Ahmed",
     "twitter": "kamranahmedse",
-    "picture": "/static/authors/kamranahmedse.jpeg",
+    "picture": "/authors/kamranahmedse.jpeg",
     "bio": "Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones."
   },
   {
     "username": "jesse",
     "name": "Jesse Li",
     "twitter": "__jesse_li",
-    "picture": "/static/authors/jesse.png",
+    "picture": "/authors/jesse.png",
     "bio": "Software engineer."
   }
 ]

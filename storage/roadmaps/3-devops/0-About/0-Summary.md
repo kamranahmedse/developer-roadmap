@@ -1,1 +1,1 @@
-![](/static/roadmaps/devops.png)
+![](/roadmaps/devops.png)

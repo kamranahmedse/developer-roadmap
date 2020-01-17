@@ -5,7 +5,7 @@ const SiteNav = () => (
     <div className='top-row container'>
       <div className='flex-grow-1 brand'>
         <a href='/'>
-          <img src='/static/brand.png' alt='' />
+          <img src='/brand.png' alt='' />
         </a>
       </div>
       <div className='nav-links'>

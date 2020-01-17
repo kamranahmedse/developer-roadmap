@@ -9,7 +9,7 @@ const PageFooter = () => (
         <div className="site-meta-wrap col-12 col-sm-12 col-lg col-xl col-md-12">
           <div className="site-meta">
             <div className="brand-detail">
-              <a href="/" className='brand'><img src="/static/brand.png" alt="" /> roadmap.sh</a>
+              <a href="/" className='brand'><img src="/brand.png" alt="" /> roadmap.sh</a>
               <span className="preposition">by</span>
               <a href="https://twitter.com/kamranahmedse" target="_blank" className='follow-author'>@kamranahmedse</a>
             </div>
