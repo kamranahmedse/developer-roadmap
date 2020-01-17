@@ -1,5 +1,4 @@
 import React from 'react';
-import Helmet from 'components/helmet';
 import './global.scss';
 import { firePageView } from 'lib/gtag';
 
