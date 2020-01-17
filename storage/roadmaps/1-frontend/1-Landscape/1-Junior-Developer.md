@@ -4,7 +4,7 @@ The sections below describe different steps required to become a frontend develo
 #### Learning How Things Work
 As a web developer, frontend, backend or fullstack, you should have a good understanding of how the internet works 
 
-![](/static/roadmaps/frontend/beginner-1.png)
+![](/roadmaps/frontend/beginner-1.png)
 
 Learn the below listed in the order given below
 * What is Internet and how does it work?

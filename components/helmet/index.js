@@ -43,15 +43,15 @@ const Helmet = (props) => (
     <meta name="mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-    <link rel="apple-touch-icon" sizes="180x180" href="/static/manifest/apple-touch-icon.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/manifest/apple-touch-icon.png" />
     <meta name="msapplication-TileColor" content="#101010" />
     <meta name="theme-color" content="#848a9a" />
 
-    <link rel="manifest" href="/static/manifest/manifest.json" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/static/manifest/icon32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/static/manifest/icon16.png" />
-    <link rel="shortcut icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="/static/manifest/favicon.ico" type="image/x-icon" />
+    <link rel="manifest" href="/manifest/manifest.json" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/manifest/icon32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/manifest/icon16.png" />
+    <link rel="shortcut icon" href="/manifest/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="/manifest/favicon.ico" type="image/x-icon" />
 
     { /* Global Site Tag (gtag.js) - Google Analytics */ }
     { process.env.GA_SECRET && (

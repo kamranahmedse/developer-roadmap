@@ -8,7 +8,7 @@ First of all thank you for considering to contribute to this project. It wouldn'
 * If you haven't contributed to this project before then create your author profile
   * Open the file [authors.json](../storage/authors.json)
   * Put your preferred `username`
-  * Put a profile picture in [authors directory](../static/authors) with the username  
+  * Put a profile picture in [authors directory](../public/authors) with the username  
 * Create a new markdown file in the [guides directory](../storage/guides).
 * Add the meta data for this guide in [guides.json](../storage/guides.json). Please note that `fileName` and `slug` must match.
 * Open a pull request 

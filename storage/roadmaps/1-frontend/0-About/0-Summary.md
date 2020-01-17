@@ -1,1 +1,1 @@
-![](/static/roadmaps/frontend.png)
+![](/roadmaps/frontend.png)
