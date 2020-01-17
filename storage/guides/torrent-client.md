@@ -1,4 +1,4 @@
-BitTorrent is a protocol for downloading and distributing files across the Internet. In contrast with the traditional client/server relationship, in which downloaders connect to a central server (for example: watching a movie on Netflix, or loading the web page you're reading now), participants in the BitTorrent network, called **peers**, download pieces of files from *each other*—this is what makes it a **peer-to-peer** protocol. We'll investigate how this works, and build our own client that can find peers and exchange data between them.
+BitTorrent is a protocol for downloading and distributing files across the Internet. In contrast with the traditional client/server relationship, in which downloaders connect to a central server (for example: watching a movie on Netflix, or loading the web page you're reading now), participants in the BitTorrent network, called **peers**, download pieces of files from *each other*—this is what makes it a **peer-to-peer** protocol. In this article we will investigate how this works, and build our own client that can find peers and exchange data between them.
 
 ![diagram showing the difference between client/server (all clients connecting to one server) and peer-to-peer (peers connecting to each other) relationships](/static/guides/torrent-client/client-server-p2p.png)
 
@@ -16,7 +16,7 @@ Of course, these central servers are liable to get raided by the feds if they fa
 ## Parsing a .torrent file
 A .torrent file describes the contents of a torrentable file and information for connecting to a tracker. It's all we need in order to kickstart the process of downloading a torrent. Debian's .torrent file looks like this:
 
-```
+```markdown
 d8:announce41:http://bttracker.debian.org:6969/announce7:comment35:"Debian CD from cdimage.debian.org"13:creation datei1573903810e9:httpseedsl145:https://cdimage.debian.org/cdimage/release/10.2.0//srv/cdbuilder.debian.org/dst/deb-cd/weekly-builds/amd64/iso-cd/debian-10.2.0-amd64-netinst.iso145:https://cdimage.debian.org/cdimage/archive/10.2.0//srv/cdbuilder.debian.org/dst/deb-cd/weekly-builds/amd64/iso-cd/debian-10.2.0-amd64-netinst.isoe4:infod6:lengthi351272960e4:name31:debian-10.2.0-amd64-netinst.iso12:piece lengthi262144e6:pieces26800:�����PS�^�� (binary blob of the hashes of each piece)ee
 ```
 
@@ -27,7 +27,7 @@ Bencode can encode roughly the same types of structures as JSON—strings, integ
 
 In a prettier format, our .torrent file looks like this:
 
-```
+```markdown
 d
   8:announce
     41:http://bttracker.debian.org:6969/announce
@@ -139,7 +139,7 @@ The important ones:
 ## Parsing the tracker response
 We get back a bencoded response:
 
-```
+```markdown
 d
   8:interval
     i900e
@@ -215,7 +215,7 @@ My father told me that the secret to a good handshake is a firm grip and eye con
 
 Put together, a handshake string might look like this:
 
-```
+```markdown
 \x13BitTorrent protocol\x00\x00\x00\x00\x00\x00\x00\x00\x86\xd4\xc8\x00\x24\xa4\x69\xbe\x4c\x50\xbc\x5a\x10\x2c\xf7\x17\x80\x31\x00\x74-TR2940-k8hj0wgej6ch
 ```
 
