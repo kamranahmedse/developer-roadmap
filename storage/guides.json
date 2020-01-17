@@ -1,7 +1,7 @@
 [
   {
-    "title": "Building a BitTorrent client from the ground up in Go",
-    "description": "What is the complete path between visiting thepiratebay and sublimating an mp3 file from thin air?",
+    "title": "Building a BitTorrent Client",
+    "description": "Learn everything you need to know about BitTorrent by writing a client in Go",
     "url": "/guides/torrent-client",
     "fileName": "torrent-client",
     "featured": true,
