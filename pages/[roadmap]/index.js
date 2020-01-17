@@ -4,11 +4,12 @@ import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
 import { serverOnlyProps } from 'lib/server';
 import { getRequestedRoadmap } from 'lib/roadmap';
+import siteConfig from 'storage/site';
 import Helmet from 'components/helmet';
 import RoadmapSummary from 'components/roadmap-summary';
 import DetailedRoadmap from 'components/detailed-roadmap';
 
-const Roadmap = ({ roadmap }) => {
+const Roadmap = ({ roadmap, canonical }) => {
   if (!roadmap) {
     return <Error statusCode={ 404 } />
   }
@@ -16,7 +17,11 @@ const Roadmap = ({ roadmap }) => {
   const showSummary = roadmap.upcoming || !roadmap.detailed;
   return (
     <DefaultLayout>
-      <Helmet title={ roadmap.title } description={ roadmap.description } />
+      <Helmet
+        canonical={canonical}
+        title={ roadmap.title }
+        description={ roadmap.description }
+      />
       <SiteNav />
       { showSummary ? <RoadmapSummary roadmap={roadmap} /> : <DetailedRoadmap roadmap={roadmap} /> }
       <PageFooter />
@@ -26,6 +31,7 @@ const Roadmap = ({ roadmap }) => {
 
 Roadmap.getInitialProps = serverOnlyProps(({ req }) => {
   return {
+    canonical: `${siteConfig.url.web}${req.url}`,
     roadmap: getRequestedRoadmap(req),
   };
 });
