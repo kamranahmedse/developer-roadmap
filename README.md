@@ -17,7 +17,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 <h3 align="center"><strong>Note to Beginners</strong></h3>
 
-> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will release it soon after we are done with the 2020 release of the Backend and DevOps roadmaps.
+> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will [release it soon](https://roadmap.sh) after we are done with the 2020 release of the Backend and DevOps roadmaps.
 
 ***
 
