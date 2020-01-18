@@ -21,7 +21,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import { getFacebookShareUrl } from 'lib/url';
 import { ShareIcon } from 'components/share-icon';
 import { getRedditShareUrl, getTwitterShareUrl } from 'lib/url';
-import siteConfig from "storage/site";
+import siteConfig from "content/site";
 import MdRenderer from 'components/md-renderer';
 
 const DetailedRoadmap = ({ roadmap }) => {
@@ -61,7 +61,7 @@ const DetailedRoadmap = ({ roadmap }) => {
   });
 
   const filePath = currentPage.path.replace(/^\//, '');
-  const RoadmapContent = require(`../../storage/${filePath}`).default;
+  const RoadmapContent = require(`../../content/${filePath}`).default;
 
   return (
     <SummaryContainer>

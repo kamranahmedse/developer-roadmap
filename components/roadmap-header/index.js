@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faClock, faEnvelope, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { BadgeLink, BadgesList, DarkBadge, PrimaryBadge, SecondaryBadge } from 'components/badges';
-import siteConfig from "storage/site";
+import siteConfig from "content/site";
 import { Description, Header, Title, VersionList } from './style';
 
 const RoadmapHeader = ({ roadmap }) => (

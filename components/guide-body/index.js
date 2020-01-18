@@ -3,7 +3,7 @@ import SharePage from 'components/share-page';
 import { GuideBodyWrap } from './style';
 
 const GuideBody = ({ guide }) => {
-  const GuideContent = require(`../../storage/guides/${guide.fileName}.md`).default;
+  const GuideContent = require(`../../content/guides/${guide.fileName}.md`).default;
   return (
     <GuideBodyWrap>
       <MdRenderer>

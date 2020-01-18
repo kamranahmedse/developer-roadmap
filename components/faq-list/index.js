@@ -1,7 +1,7 @@
 import { FaqContainer } from './style';
 import MdRenderer from 'components/md-renderer';
 
-const AboutPage = require(`../../storage/pages/about.md`).default;
+const AboutPage = require(`../../content/pages/about.md`).default;
 
 const FaqList = () => (
   <FaqContainer className='border-top bg-light'>

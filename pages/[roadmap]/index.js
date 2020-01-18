@@ -4,7 +4,7 @@ import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
 import { serverOnlyProps } from 'lib/server';
 import { getRequestedRoadmap } from 'lib/roadmap';
-import siteConfig from 'storage/site';
+import siteConfig from 'content/site';
 import Helmet from 'components/helmet';
 import RoadmapSummary from 'components/roadmap-summary';
 import DetailedRoadmap from 'components/detailed-roadmap';

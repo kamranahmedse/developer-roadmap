@@ -1,5 +1,5 @@
 import { FeaturedContentWrap } from './style';
-import roadmaps from 'storage/roadmaps';
+import roadmaps from 'content/roadmaps';
 import FeaturedRoadmap from 'components/featured-roadmap';
 
 const FeaturedRoadmaps = () => (
