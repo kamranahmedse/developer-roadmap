@@ -36,7 +36,7 @@
 - Recommends OS knowledge, POSIX basics, and some basic terminal usage details
 - Languages part has been changed. JavaScript has been made the "Personal recommendation" and others as options available.
 - Adds VCS/Git section
-- Recommends additional database knowledge (i.e. OMRs, ACID, Transactions, N+1, Normalization, Indexes)
+- Recommends additional database knowledge (i.e. ORMs, ACID, Transactions, N+1, Normalization, Indexes)
 - APIs section has been expanded with REST, JSON, SOAP, HATEOAS, Open API Spec
 - More authentication strategies have been added to the API authentication
 - Caching section now has CDN and client Side caching sections
@@ -45,7 +45,22 @@
 - New section has been added "Building for Scale"
 
 ### DevOps Roadmap
-> Expected release date 19-01-2020
+
+- Adds Networking Concepts and POSIX Basics in OS Concepts
+- Expands the Operating Systems
+- Adds `netstat` in the "Learn to Live in Terminal" section
+- Adds terminal multiplexers (screen, tmux)
+- Adds SSH + Port Forwarding into Network and Security section
+- Adds startup and service management (initd, systemd) knowledge under OS concepts
+- Renames ELK Stack to Elastic Stack
+- Adds Linode, Vultr and Alibaba Cloud to "Service Providers"
+- Renames ELK Stack to "Elastic Stack"
+- CI/CD - Adds Gitlab CI, GitHub Actions, Bamboo and Azure DevOps Services
+- Adds prometheus and Grafana under infra monitoring
+- Adds OpenTracing, Jaegar and Instana in app monitoring
+- Adds Pulumi under Infrastructure Provisioning
+- Adds optional knowledge about Emails
+- Fixes typos
 
 ## Roadmap 2019
 * [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#frontend-roadmap)

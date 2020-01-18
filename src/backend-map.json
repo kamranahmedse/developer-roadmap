@@ -6857,7 +6857,7 @@
                     "ID": "1329",
                     "typeID": "TextArea",
                     "zOrder": "45",
-                    "w": "144",
+                    "w": "160",
                     "h": "40",
                     "measuredW": "200",
                     "measuredH": "140",
@@ -6871,21 +6871,21 @@
                     "ID": "1330",
                     "typeID": "Label",
                     "zOrder": "46",
-                    "w": "79",
-                    "measuredW": "78",
+                    "w": "106",
+                    "measuredW": "105",
                     "measuredH": "25",
                     "x": "516",
                     "y": "2268",
                     "properties": {
                         "size": "17",
-                        "text": "RabbitMQ"
+                        "text": "Elasticsearch"
                     }
                 },
                 {
                     "ID": "1331",
                     "typeID": "TextArea",
                     "zOrder": "47",
-                    "w": "144",
+                    "w": "157",
                     "h": "40",
                     "measuredW": "200",
                     "measuredH": "140",
@@ -6899,14 +6899,14 @@
                     "ID": "1332",
                     "typeID": "Label",
                     "zOrder": "48",
-                    "w": "51",
-                    "measuredW": "48",
+                    "w": "36",
+                    "measuredW": "32",
                     "measuredH": "25",
-                    "x": "530",
+                    "x": "545",
                     "y": "2312",
                     "properties": {
                         "size": "17",
-                        "text": "Kafka"
+                        "text": "Solr"
                     }
                 },
                 {

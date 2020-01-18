@@ -17,7 +17,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 
 <h3 align="center"><strong>Note to Beginners</strong></h3>
 
-> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will release it soon after we are done with the 2020 release of the Backend and DevOps roadmaps.
+> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will [release it soon](https://roadmap.sh) after we are done with the 2020 release of the Backend and DevOps roadmaps.
 
 ***
 
@@ -29,19 +29,19 @@ If you think that these can be improved in any way, please do suggest.
 
 ## Frontend Roadmap
 
-[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/frontend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
 
 ![Frontend Roadmap](./img/frontend.png?year-2020-2)
 
 ## Back-end Roadmap 
 
-[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/backend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/backend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
 
 ![Back-end Roadmap](./img/backend.png?year-2020-1)
 
 ## DevOps Roadmap
 
-[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/devops.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/devops)
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/devops-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/devops)
 
 ![DevOps Roadmap](./img/devops.png)
 

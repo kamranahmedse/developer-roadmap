@@ -5821,10 +5821,10 @@
                     "ID": "1247",
                     "typeID": "Label",
                     "zOrder": "408",
-                    "w": "64",
+                    "w": "69",
                     "measuredW": "65",
                     "measuredH": "25",
-                    "x": "817",
+                    "x": "818",
                     "y": "3111",
                     "properties": {
                         "size": "17",
@@ -9920,7 +9920,7 @@
                     "x": "1316",
                     "y": "1918",
                     "properties": {
-                        "color": "13576743",
+                        "color": "40463",
                         "icon": {
                             "ID": "check-circle",
                             "size": "small"
