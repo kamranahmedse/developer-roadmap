@@ -10,7 +10,7 @@
   "url": {
     "web": "https://roadmap.sh",
     "repo": "https://github.com/kamranahmedse/roadmap.sh",
-    "repoData": "https://github.com/kamranahmedse/roadmap.sh/tree/master/storage",
+    "repoData": "https://github.com/kamranahmedse/roadmap.sh/tree/master/content",
     "addGuide": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/guide.md",
     "addRoadmap": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/roadmap.md",
     "addResources": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/resources.md",

@@ -1,13 +1,10 @@
 const path = require('path');
 const fs = require('fs');
-const glob = require('glob');
-const guides = require('../storage/guides');
-const roadmaps = require('../storage/roadmaps');
+const guides = require('../content/guides');
 
 const {
   getPageRoutes,
   getGuideRoutes,
-  getRoadmapRoutes
 } = require("../scripts/path-map");
 
 describe("Build scripts tests", () => {
@@ -51,7 +48,7 @@ describe("Build scripts tests", () => {
     guides.forEach(guide => {
       const [,, slug] = guide.url.split('/');
 
-      const expectedFile = path.join(__dirname, `../storage/guides/${slug}.md`);
+      const expectedFile = path.join(__dirname, `../content/guides/${slug}.md`);
       const foundFile = fs.existsSync(expectedFile) ? expectedFile : '';
 
       expect(foundFile).toEqual(expectedFile);

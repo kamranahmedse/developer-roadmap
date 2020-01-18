@@ -7,7 +7,7 @@ import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
 import { getAllGuides } from 'lib/guide';
-import siteConfig from 'storage/site';
+import siteConfig from 'content/site';
 import Helmet from 'components/helmet';
 
 const PageTitle = "Programming Guides";

@@ -6,7 +6,7 @@ import GuideBody from 'components/guide-body';
 import GuideFooter from 'components/guide-footer';
 import { getRequestedGuide } from 'lib/guide';
 import Helmet from 'components/helmet';
-import siteConfig from 'storage/site';
+import siteConfig from 'content/site';
 
 const Guide = ({ guide, canonical }) => {
   if (!guide) {

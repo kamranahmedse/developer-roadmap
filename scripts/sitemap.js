@@ -1,13 +1,13 @@
 // This is a development script executed in the build step of pages
 const fs = require('fs');
 const path = require('path');
-const guides = require('../storage/guides');
-const roadmaps = require('../storage/roadmaps');
+const guides = require('../content/guides');
+const roadmaps = require('../content/roadmaps');
 const { getPageRoutes, getGuideRoutes } = require('./path-map');
 
 const DOMAIN = 'https://roadmap.sh';
 const PAGES_DIR = path.join(__dirname, '../pages');
-const STORAGE_PATH = path.join(__dirname, '../storage');
+const STORAGE_PATH = path.join(__dirname, '../content');
 const SITEMAP_PATH = 'static/sitemap.xml';
 
 // Set the header

@@ -17,7 +17,7 @@ const RoadmapSummary = ({ roadmap }) => {
   }
 
   const filePath = roadmap.path.replace(/^\//, '');
-  const RoadmapContent = require(`../../storage/${filePath}`).default;
+  const RoadmapContent = require(`../../content/${filePath}`).default;
 
   return (
     <SummaryContainer>

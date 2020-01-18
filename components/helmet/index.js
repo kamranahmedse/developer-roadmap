@@ -1,5 +1,5 @@
 import NextHead from 'next/head';
-import siteConfig from 'storage/site';
+import siteConfig from 'content/site';
 
 const prepareTitle = (givenTitle) => {
   givenTitle = givenTitle || siteConfig.title;
