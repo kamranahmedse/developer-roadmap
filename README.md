@@ -29,7 +29,7 @@ If you think that these can be improved in any way, please do suggest.
 
 ## Frontend Roadmap
 
-[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
+[![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/frontend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
 
 ![Frontend Roadmap](./img/frontend.png?year-2020-2)
 
