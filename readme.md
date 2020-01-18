@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="static/brand.png" height="128">
+  <img src="public/brand.png" height="128">
   <h2 align="center">roadmap.sh</h2>
   <p align="center">Community driven roadmaps, articles and resources for developers<p>
   <p align="center">
@@ -9,8 +9,8 @@
     <a href="https://roadmap.sh/roadmaps">
     	<img src="https://img.shields.io/badge/-Roadmaps-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
-    <a href="https://discord.gg/Yhm4EsE">
-    	<img src="https://img.shields.io/badge/%E2%9D%A4-Join%20the%20Chat%20on%20Discord-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
+    <a href="./contributing/guide.md">
+    	<img src="https://img.shields.io/badge/%E2%9D%A4-Contribute-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
     </a>
   </p>
 </p>
