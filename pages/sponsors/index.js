@@ -53,12 +53,15 @@ const Sponsors = () => (
             <h2><StrongLink href='mailto:kamran@roadmap.sh?subject=Sponsoring Roadmap.sh'>Partner Package</StrongLink></h2>
             <p>High continuous traffic for a month</p>
             <ul>
+              <li>A banner will be added to the top of the website</li>
               <li>Sponsor reference will be added to the roadmap images and PDFs for the sponsorship period. It will stay with people who download/print them for that period</li>
               <li>You will be added as a sponsor to the header of <StrongLink href="https://github.com/kamranahmedse/developer-roadmap">the repository</StrongLink></li>
               <li>You will be mentioned in the monthly email sent to <strong>13000+ subscribers</strong></li>
-              <li>A banner will be added to the top of the website</li>
               <li>Costs <Mark>4000$ per month</Mark></li>
             </ul>
+
+            <p>High volume (monthly or quarterly) discounts are available for all packages, and I can do customized advertising packages as well.</p>
+            <p>— Kamran (<StrongLink href='mailto:kamran@roadmap.sh?subject=Sponsoring Roadmap.sh'>kamran@roadmap.sh</StrongLink>)</p>
           </div>
         </div>
       </div>
