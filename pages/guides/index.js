@@ -13,7 +13,7 @@ import Helmet from 'components/helmet';
 const PageTitle = "Programming Guides";
 const PageDescription = "Easy to follow guides on complex topics written and maintained by the community";
 
-const Roadmap = () => (
+const GuidesList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
     <SiteNav />
@@ -46,4 +46,4 @@ const Roadmap = () => (
   </DefaultLayout>
 );
 
-export default Roadmap;
+export default GuidesList;
