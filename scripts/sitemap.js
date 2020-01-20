@@ -8,7 +8,7 @@ const { getPageRoutes, getGuideRoutes } = require('./path-map');
 const DOMAIN = 'https://roadmap.sh';
 const PAGES_DIR = path.join(__dirname, '../pages');
 const STORAGE_PATH = path.join(__dirname, '../content');
-const SITEMAP_PATH = 'static/sitemap.xml';
+const SITEMAP_PATH = 'public/sitemap.xml';
 
 // Set the header
 const xmlHeader = `<?xml version="1.0" encoding="UTF-8"?>
