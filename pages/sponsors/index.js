@@ -57,7 +57,7 @@ const Sponsors = () => (
               <li>Sponsor reference will be added to the roadmap images and PDFs for the sponsorship period. It will stay with people who download/print them for that period</li>
               <li>You will be added as a sponsor to the header of <StrongLink href="https://github.com/kamranahmedse/developer-roadmap">the repository</StrongLink></li>
               <li>You will be mentioned in the monthly email sent to <strong>13000+ subscribers</strong></li>
-              <li>Costs <Mark>4000$ per month</Mark></li>
+              <li>Costs <Mark>3000$ per month</Mark></li>
             </ul>
 
             <p>High volume (monthly or quarterly) discounts are available for all packages, and I can do customized advertising packages as well.</p>
