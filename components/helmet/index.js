@@ -66,11 +66,6 @@ const Helmet = (props) => (
             gtag('config', '${process.env.GA_SECRET}');
           `,
         }} />
-        <script
-          data-ad-client="ca-pub-7480420865005146"
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-        />
       </>
     )}
 
