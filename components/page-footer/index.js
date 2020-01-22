@@ -52,6 +52,14 @@ const PageFooter = () => (
         </div>
       </div>
     </div>
+
+    {/* Do not show on local */}
+    { process.env.GA_SECRET && (
+      <>
+        <div id="codefund"></div>
+        <script src="https://app.codefund.io/properties/681/funder.js" async></script>
+      </>
+    ) }
   </FooterWrap>
 );
 
