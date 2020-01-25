@@ -1,7 +1,7 @@
 ## Roadmap 2020
 
 ### General Updates
-- Added printable PDFs for the roadmaps: [Frontend Roadmap](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf), [Backend Roadmap](https://roadmap.sh/static/roadmaps/pdf/backend.pdf), [DevOps Roadmap](https://roadmap.sh/static/roadmaps/pdf/devops.pdf)
+- Added printable PDFs for the roadmaps: [Frontend Roadmap](https://roadmap.sh/roadmaps/pdf/frontend.pdf), [Backend Roadmap](https://roadmap.sh/roadmaps/pdf/backend.pdf), [DevOps Roadmap](https://roadmap.sh/roadmaps/pdf/devops.pdf)
 - Updated [the license](https://github.com/kamranahmedse/developer-roadmap/blob/master/LICENSE) with some additional details
 - Added the missing code-of-conduct, issue/pr templates.
 - Better legends in roadmaps.
