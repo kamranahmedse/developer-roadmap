@@ -24,10 +24,10 @@ const RoadmapsList = () => (
         title={PageTitle}
         subtitle={PageDescription}>
         <BadgesList className="mt-4">
-          <BadgeLink href={`${siteConfig.url.issue}?title=[RequestRoadmap] - Title Here`} target="_blank">
+          <BadgeLink href={siteConfig.url.addRoadmap} target="_blank">
             <SecondaryBadge>
               <FontAwesomeIcon icon={faCodeBranch}/>
-              Request a Roadmap
+              Write a Roadmap
             </SecondaryBadge>
           </BadgeLink>
           <BadgeLink href="/signup">
