@@ -11,13 +11,13 @@ First of all thank you for considering to contribute to this project. It wouldn'
   * Put a profile picture in [authors directory](../public/authors) with the username  
 * Create a new directory for the roadmap inside the [roadmaps directory](../content/roadmaps) by following the below steps:
   * Directory name must be `kebab-cased` and prefixed with the incremental number e.g. `6-java-developer`
-  * Create a markdown file `6-java-developer/0-About/0-Summary.md` inside this directory and write the article detailing the steps required for this path. It doesn't have to be graphic like the other roadmaps; just focus on writing a detailed but approachable textual guide. 
+  * Create a markdown file `6-roadmap-name/0-About/0-Summary.md` inside this directory and write the article detailing the steps required for this path. It doesn't have to be graphic like the other roadmaps; just focus on writing a detailed but approachable textual guide. 
   * Create a file `meta.json` inside the roadmap directory with the content below:
   ```json
   {
-    "title": "Java Developer",
-    "description": "Step by step guide to becoming a modern Java Developer",
-    "featuredDescription": "Step by step guide to becoming a modern Java Developer in 2020",
+    "title": "Roadmap Name",
+    "description": "Step by step guide to becoming a modern ***",
+    "featuredDescription": "Step by step guide to becoming a modern ** in 2020",
     "author": {
       "name": "Your Name",
       "url": "https://twitter.com/twitter"
