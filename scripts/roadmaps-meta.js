@@ -16,7 +16,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
 
   // We can't use the absolute path in the build e.g. ~/Users/user/where-build-is-running/content
   // So, we remove it and use the path relative to content directory
-  const summaryFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), '/0-About/0-Summary.md');
+  const roadmapLandingFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.path);
 
   const contributors = exec(`git log --pretty=format:"%an%x09" ${roadmapDir} | uniq`)
     .toString()
@@ -76,7 +76,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
       contributorsCount: contributorNames.length,
       contributorsUrl: `/${roadmapSlug}/contributors`,
       url: `/${roadmapSlug}`,
-      path: summaryFilePath,
+      path: roadmapLandingFilePath,
       sidebar,
     },
   ];

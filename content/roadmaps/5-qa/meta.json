@@ -3,6 +3,7 @@
   "description": "Steps to follow in order to become a modern QA Engineer in 2020",
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
   "upcoming": true,
+  "path": "./0-About/0-Summary.md",
   "author": {
     "name": "Anas Fitiani",
     "url": "https://github.com/anas-qa"
