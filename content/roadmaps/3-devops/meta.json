@@ -3,6 +3,7 @@
   "description": "Step by step guide for DevOps or any other Operations Role",
   "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",
   "featured": true,
+  "path": "./0-About/0-Summary.md",
   "versions": [
     "latest",
     "2018",

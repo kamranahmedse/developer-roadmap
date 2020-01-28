@@ -3,6 +3,7 @@
   "description": "Step by step guide to becoming a modern backend developer",
   "featuredDescription": "Step by step guide to becoming a modern backend developer in 2020",
   "featured": true,
+  "path": "./0-About/0-Summary.md",
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"

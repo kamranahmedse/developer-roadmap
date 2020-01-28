@@ -7,7 +7,8 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "featured": true,
-  "detailed": false,
+  "path": "./0-About/0-Landscape.md",
+  "detailed": true,
   "versions": [
     "latest",
     "2018",

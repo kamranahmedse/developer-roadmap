@@ -8,7 +8,8 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "detailed": false,
+    "path": "/roadmaps/1-frontend/0-About/0-Landscape.md",
+    "detailed": true,
     "versions": [
       "latest",
       "2018",
@@ -17,45 +18,27 @@
     "contributorsCount": 1,
     "contributorsUrl": "/frontend/contributors",
     "url": "/frontend",
-    "path": "/roadmaps/1-frontend/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
-          "url": "/frontend/summary-detailed",
-          "title": "Summary detailed",
-          "path": "/roadmaps/1-frontend/0-About/0-Summary-detailed.md"
+          "url": "/frontend/landscape",
+          "title": "Landscape",
+          "path": "/roadmaps/1-frontend/0-About/0-Landscape.md"
         },
         {
           "url": "/frontend/summary",
           "title": "Summary",
-          "path": "/roadmaps/1-frontend/0-About/0-Summary.md"
+          "path": "/roadmaps/1-frontend/0-About/1-Summary.md"
         },
         {
-          "url": "/frontend/skill-summary",
-          "title": "Skill Summary",
-          "path": "/roadmaps/1-frontend/0-About/1-Skill-Summary.md"
+          "url": "/frontend/basic-skills",
+          "title": "Basic Skills",
+          "path": "/roadmaps/1-frontend/0-About/2-Basic-Skills.md"
         },
         {
           "url": "/frontend/job-titles",
           "title": "Job Titles",
-          "path": "/roadmaps/1-frontend/0-About/2-Job-Titles.md"
-        }
-      ],
-      "Landscape": [
-        {
-          "url": "/frontend/junior-developer",
-          "title": "Junior Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/1-Junior-Developer.md"
-        },
-        {
-          "url": "/frontend/mid-level-developer",
-          "title": "Mid Level Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/2-Mid-Level-Developer.md"
-        },
-        {
-          "url": "/frontend/senior-developer",
-          "title": "Senior Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/3-Senior-Developer.md"
+          "path": "/roadmaps/1-frontend/0-About/3-Job-Titles.md"
         }
       ],
       "Learn": [
@@ -107,6 +90,7 @@
     "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2020",
     "featured": true,
+    "path": "/roadmaps/2-backend/0-About/0-Summary.md",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -114,7 +98,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/backend/contributors",
     "url": "/backend",
-    "path": "/roadmaps/2-backend/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -152,6 +135,7 @@
     "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",
     "featured": true,
+    "path": "/roadmaps/3-devops/0-About/0-Summary.md",
     "versions": [
       "latest",
       "2018",
@@ -164,7 +148,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/devops/contributors",
     "url": "/devops",
-    "path": "/roadmaps/3-devops/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -196,6 +179,7 @@
     "title": "Full Stack Developer",
     "description": "Step by step guide to becoming a modern fullstack developer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
+    "path": "/roadmaps/4-fullstack/0-About/0-Summary.md",
     "upcoming": true,
     "author": {
       "name": "Kamran Ahmed",
@@ -204,7 +188,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
-    "path": "/roadmaps/4-fullstack/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -220,6 +203,7 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
     "upcoming": true,
+    "path": "/roadmaps/5-qa/0-About/0-Summary.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
@@ -227,7 +211,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
-    "path": "/roadmaps/5-qa/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {

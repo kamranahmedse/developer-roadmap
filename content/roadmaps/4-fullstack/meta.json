@@ -2,6 +2,7 @@
   "title": "Full Stack Developer",
   "description": "Step by step guide to becoming a modern fullstack developer in 2020",
   "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
+  "path": "./0-About/0-Summary.md",
   "upcoming": true,
   "author": {
     "name": "Kamran Ahmed",
