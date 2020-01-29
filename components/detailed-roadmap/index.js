@@ -32,19 +32,25 @@ const DetailedRoadmap = ({ roadmap }) => {
     author = {}
   } = roadmap;
 
-  const roadmapPages = Object.keys(sidebar || {}).map(groupTitle => {
+  const roadmapPages = Object.keys(sidebar || {}).map((groupTitle, groupCounter) => {
     if (groupTitle.startsWith('_')) {
       return;
     }
 
+    // @todo remove it after completing the frontend roadmap
+    const isInProgress = groupCounter !== 0;
+
     return (
-      <div className='links-group' key={groupTitle}>
-        <h3>{ groupTitle }</h3>
+      <div className={`links-group ${isInProgress ? 'in-progress' : ''}`} key={groupTitle}>
+        <h3>
+          { groupTitle }
+          { isInProgress && <span className='badge badge-warning progress-badge'>In Progress</span> }
+        </h3>
         <ul>
           { sidebar[groupTitle].map(page => {
             const isActivePage = page.url === currentPage.url;
             // e.g. /frontend should mark `/frontend/landscape` as active
-            const isSummaryPage = page.url === `${currentPage.url}/landscape`;
+            const isSummaryPage = page.url === `${currentPage.url}/summary`;
 
             return (
               <li className={classNames({ active: isActivePage || isSummaryPage })} key={page.url}>
@@ -71,7 +77,8 @@ const DetailedRoadmap = ({ roadmap }) => {
             <h3>{ roadmap.title }</h3>
             <p>
               Roadmap contributed by <a href={ author.url } target="_blank">{ author.name }</a>
-              { roadmap.contributorsCount > 1 && ` and <a href="${roadmap.contributorsUrl}">${roadmap.contributorsCount} others</a>`}</p>
+              { roadmap.contributorsCount > 1 && ` and <a href="${roadmap.contributorsUrl}">${roadmap.contributorsCount} others</a>`}
+            </p>
           </RoadmapMeta>
           <ShareRoadmap className="mt-2 mt-md-0">
             <ShareIcon href={ siteConfig.url.repo } target="_blank">

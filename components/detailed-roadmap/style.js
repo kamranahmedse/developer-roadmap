@@ -113,6 +113,16 @@ export const Sidebar = styled.div`
     }
   }
   
+  .progress-badge {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+  }
+  
+  .links-group.in-progress {
+    opacity: 0.3;  
+  }
+
   .links-group li {
     list-style: none;
     margin: 7px 0;
@@ -179,5 +189,11 @@ export const MobileSidebar = styled(Sidebar)`
 
   .links-group {
     width: auto;  
+  }
+  
+  .progress-badge {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
   }
 `;

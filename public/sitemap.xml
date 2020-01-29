@@ -3,7 +3,19 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.852Z</lastmod>
+              <lastmod>2020-01-29T06:08:22.238Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/frontend/summary</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-01-29T06:08:22.238Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/frontend/basic-skills</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-01-29T07:33:57.619Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -13,69 +25,57 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/summary</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.852Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/basic-skills</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.852Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
               <loc>https://roadmap.sh/frontend/job-titles</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.852Z</lastmod>
+              <lastmod>2020-01-29T07:30:19.876Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/job-ready</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-28T12:31:18.160Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/write-better-css</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/build-tools</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/modern-applications</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/automated-testing</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/static-type-checkers</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/server-side-rendering</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.853Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/frontend/go-beyond</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-20T07:22:49.854Z</lastmod>
+              <lastmod>2020-01-29T07:27:26.467Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -231,7 +231,7 @@
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-28T12:48:07.715Z</lastmod>
+              <lastmod>2020-01-29T07:15:48.617Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
