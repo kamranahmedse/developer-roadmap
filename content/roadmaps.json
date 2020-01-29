@@ -35,8 +35,8 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "path": "/roadmaps/1-frontend/0-About/0-Summary.md",
-    "detailed": true,
+    "path": "/roadmaps/1-frontend/0-About/2-Landscape.md",
+    "detailed": false,
     "versions": [
       "latest",
       "2018",
