@@ -11,7 +11,7 @@ export const AboutHeaderWrap = styled.div`
     flex-direction: row;
   }
   
-  h2 {
+  h1 {
     font-weight: 700;
   }
   

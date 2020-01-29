@@ -2,8 +2,7 @@ import NextHead from 'next/head';
 import siteConfig from 'content/site';
 
 const prepareTitle = (givenTitle) => {
-  givenTitle = givenTitle || siteConfig.title;
-  return `${givenTitle} - ${siteConfig.name}`;
+  return givenTitle || siteConfig.title;
 };
 
 const prepareDescription = (givenDescription) => {

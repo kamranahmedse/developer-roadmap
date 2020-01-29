@@ -1,4 +1,4 @@
-#### Soft Skills
+## Soft Skills
 Before we jump on to the technical skills there are few non-technical or soft skills that every employer is going to demand, so make sure to work on that side of the things as well when you are preparing yourself technically
 
 * **Communication skills** — Talking to your colleagues, writing emails, use of language
@@ -8,7 +8,7 @@ Before we jump on to the technical skills there are few non-technical or soft sk
 * **Work Ethics and Integrity** — Being able to follow through on your duties in timely and quality manner.
 * **Be Curious** — Your curiosity is going to help you a great deal in evolving yourself. Don't just take things as they are, look at the reasoning behind the things. Look at the things that others are building, learn from them. Look at what community is most excited about these days.
 
-#### Technical Skills
+## Technical Skills
 In order to be a frontend developer, all you need is to learn HTML, CSS and JavaScript. Just learn these and you should be employable. I know a lot of developers who just know these and are working as frontend developers and are making decent money
 * HTML
 * CSS

@@ -1,7 +1,7 @@
-#### Technical Skills
+## Technical Skills
 The sections below describe different steps required to become a frontend developer
 
-#### Learning How Things Work
+## Learning How Things Work
 As a web developer, frontend, backend or fullstack, you should have a good understanding of how the internet works 
 
 ![](/roadmaps/frontend/beginner-1.png)
@@ -14,5 +14,5 @@ Learn the below listed in the order given below
 * What's in a domain name? What is an IP Address?
 * What is Web Hosting?
 
-#### Writing Some Code
+## Writing Some Code
 Now that you understand how things work, next step is getting your hands dirty and start actual coding
