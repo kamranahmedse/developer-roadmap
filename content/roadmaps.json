@@ -1,5 +1,32 @@
 [
   {
+    "seo": {
+      "title": "Frontend Roadmap: Learn to become a modern frontend developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development. Learn to become a modern frontend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a frontend developer",
+        "frontend developer",
+        "frontend engineer",
+        "frontend skills",
+        "frontend development",
+        "javascript developer",
+        "frontend development skills",
+        "frontend development skills test",
+        "frontend engineer roadmap",
+        "frontend developer roadmap",
+        "become a frontend developer",
+        "frontend developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for frontend development",
+        "learn frontend development",
+        "what is frontend development",
+        "frontend developer quiz",
+        "frontend developer interview questions"
+      ]
+    },
     "title": "Frontend Developer",
     "description": "Step by step guide to becoming a modern frontend developer",
     "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2020",
@@ -86,6 +113,33 @@
     }
   },
   {
+    "seo": {
+      "title": "Backend Roadmap: Learn to become a modern backend developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern backend development. Learn to become a modern backend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a backend developer",
+        "backend developer",
+        "backend engineer",
+        "backend skills",
+        "backend development",
+        "javascript developer",
+        "backend development skills",
+        "backend development skills test",
+        "backend engineer roadmap",
+        "backend developer roadmap",
+        "become a backend developer",
+        "backend developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for backend development",
+        "learn backend development",
+        "what is backend development",
+        "backend developer quiz",
+        "backend developer interview questions"
+      ]
+    },
     "title": "Backend Developer",
     "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2020",
@@ -131,6 +185,27 @@
     }
   },
   {
+    "seo": {
+      "title": "DevOps Roadmap: Learn to become an SRE or for any other operations role",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a devops enginer",
+        "devops roadmap",
+        "sre roadmap",
+        "site reliability engineer roadmap",
+        "operations roles",
+        "become devops",
+        "devops skills",
+        "modern devops skills",
+        "devops skills test",
+        "skills for devops",
+        "learn devops",
+        "what is devops",
+        "what is sre",
+        "devops quiz",
+        "devops interview questions"
+      ]
+    },
     "title": "DevOps Roadmap",
     "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",
@@ -176,6 +251,33 @@
     }
   },
   {
+    "seo": {
+      "title": "Fullstack Roadmap: Learn to become a modern fullstack developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern fullstack development. Learn to become a modern fullstack developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a fullstack developer",
+        "fullstack developer",
+        "fullstack engineer",
+        "fullstack skills",
+        "fullstack development",
+        "javascript developer",
+        "fullstack development skills",
+        "fullstack development skills test",
+        "fullstack engineer roadmap",
+        "fullstack developer roadmap",
+        "become a fullstack developer",
+        "fullstack developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for fullstack development",
+        "learn fullstack development",
+        "what is fullstack development",
+        "fullstack developer quiz",
+        "fullstack developer interview questions"
+      ]
+    },
     "title": "Full Stack Developer",
     "description": "Step by step guide to becoming a modern fullstack developer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
@@ -199,6 +301,24 @@
     }
   },
   {
+    "seo": {
+      "title": "QA Engineer Roadmap: Learn to become a modern QA engineer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a QA engineer",
+        "QA engineer",
+        "QA skills",
+        "QA development skills",
+        "QA development skills test",
+        "QA engineer roadmap",
+        "become a QA engineer",
+        "QA engineer career path",
+        "skills for QA development",
+        "what is QA engineer",
+        "QA engineer quiz",
+        "QA engineer interview questions"
+      ]
+    },
     "title": "QA Engineer",
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",

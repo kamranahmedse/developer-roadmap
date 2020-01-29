@@ -1,4 +1,25 @@
 {
+  "seo": {
+    "title": "DevOps Roadmap: Learn to become an SRE or for any other operations role",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a devops enginer",
+      "devops roadmap",
+      "sre roadmap",
+      "site reliability engineer roadmap",
+      "operations roles",
+      "become devops",
+      "devops skills",
+      "modern devops skills",
+      "devops skills test",
+      "skills for devops",
+      "learn devops",
+      "what is devops",
+      "what is sre",
+      "devops quiz",
+      "devops interview questions"
+    ]
+  },
   "title": "DevOps Roadmap",
   "description": "Step by step guide for DevOps or any other Operations Role",
   "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",

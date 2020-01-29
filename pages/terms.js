@@ -7,7 +7,7 @@ import DefaultLayout from 'layouts/default/index';
 const Terms = () => (
   <DefaultLayout>
     <TosPage>
-      <Helmet />
+      <Helmet title={'Terms – roadmap.sh'} />
       <SiteNav />
       <div className="bg-light border-top tos-wrap">
         <div className="container pt-5 pb-5">
