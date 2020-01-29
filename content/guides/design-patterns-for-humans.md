@@ -1595,7 +1595,7 @@ $stationList->removeStation(new RadioStation(89)); // Will remove station 89
 ```
 
 👽 Mediator
-========
+--------
 
 Real world example
 > A general example would be when you talk to someone on your mobile phone, there is a network provider sitting between you and them and your conversation goes through it instead of being directly sent. In this case network provider is mediator.
