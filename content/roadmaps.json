@@ -1,5 +1,32 @@
 [
   {
+    "seo": {
+      "title": "Learn to become a modern frontend developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development. Learn to become a modern frontend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a frontend developer",
+        "frontend developer",
+        "frontend engineer",
+        "frontend skills",
+        "frontend development",
+        "javascript developer",
+        "frontend development skills",
+        "frontend development skills test",
+        "frontend engineer roadmap",
+        "frontend developer roadmap",
+        "become a frontend developer",
+        "frontend developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for frontend development",
+        "learn frontend development",
+        "what is frontend development",
+        "frontend developer quiz",
+        "frontend developer interview questions"
+      ]
+    },
     "title": "Frontend Developer",
     "description": "Step by step guide to becoming a modern frontend developer",
     "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2020",
@@ -8,7 +35,8 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "detailed": false,
+    "path": "/roadmaps/1-frontend/0-About/0-Summary.md",
+    "detailed": true,
     "versions": [
       "latest",
       "2018",
@@ -17,96 +45,106 @@
     "contributorsCount": 1,
     "contributorsUrl": "/frontend/contributors",
     "url": "/frontend",
-    "path": "/roadmaps/1-frontend/0-About/0-Summary.md",
     "sidebar": {
       "About": [
-        {
-          "url": "/frontend/summary-detailed",
-          "title": "Summary detailed",
-          "path": "/roadmaps/1-frontend/0-About/0-Summary-detailed.md"
-        },
         {
           "url": "/frontend/summary",
           "title": "Summary",
           "path": "/roadmaps/1-frontend/0-About/0-Summary.md"
         },
         {
-          "url": "/frontend/skill-summary",
-          "title": "Skill Summary",
-          "path": "/roadmaps/1-frontend/0-About/1-Skill-Summary.md"
+          "url": "/frontend/basic-skills",
+          "title": "Basic Skills",
+          "path": "/roadmaps/1-frontend/0-About/1-Basic-Skills.md"
+        },
+        {
+          "url": "/frontend/landscape",
+          "title": "Landscape",
+          "path": "/roadmaps/1-frontend/0-About/2-Landscape.md"
         },
         {
           "url": "/frontend/job-titles",
           "title": "Job Titles",
-          "path": "/roadmaps/1-frontend/0-About/2-Job-Titles.md"
-        }
-      ],
-      "Landscape": [
-        {
-          "url": "/frontend/junior-developer",
-          "title": "Junior Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/1-Junior-Developer.md"
-        },
-        {
-          "url": "/frontend/mid-level-developer",
-          "title": "Mid Level Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/2-Mid-Level-Developer.md"
-        },
-        {
-          "url": "/frontend/senior-developer",
-          "title": "Senior Developer",
-          "path": "/roadmaps/1-frontend/1-Landscape/3-Senior-Developer.md"
+          "path": "/roadmaps/1-frontend/0-About/3-Job-Titles.md"
         }
       ],
       "Learn": [
         {
           "url": "/frontend/job-ready",
           "title": "Job Ready",
-          "path": "/roadmaps/1-frontend/2-Learn/1-Job-Ready.md"
+          "path": "/roadmaps/1-frontend/1-Learn/1-Job-Ready.md"
         },
         {
           "url": "/frontend/write-better-css",
           "title": "Write Better CSS",
-          "path": "/roadmaps/1-frontend/2-Learn/2-Write-Better-CSS.md"
+          "path": "/roadmaps/1-frontend/1-Learn/2-Write-Better-CSS.md"
         },
         {
           "url": "/frontend/build-tools",
           "title": "Build Tools",
-          "path": "/roadmaps/1-frontend/2-Learn/3-Build-Tools.md"
+          "path": "/roadmaps/1-frontend/1-Learn/3-Build-Tools.md"
         },
         {
           "url": "/frontend/modern-applications",
           "title": "Modern Applications",
-          "path": "/roadmaps/1-frontend/2-Learn/4-Modern-Applications.md"
+          "path": "/roadmaps/1-frontend/1-Learn/4-Modern-Applications.md"
         },
         {
           "url": "/frontend/automated-testing",
           "title": "Automated Testing",
-          "path": "/roadmaps/1-frontend/2-Learn/5-Automated-Testing.md"
+          "path": "/roadmaps/1-frontend/1-Learn/5-Automated-Testing.md"
         },
         {
           "url": "/frontend/static-type-checkers",
           "title": "Static Type Checkers",
-          "path": "/roadmaps/1-frontend/2-Learn/6-Static-Type-Checkers.md"
+          "path": "/roadmaps/1-frontend/1-Learn/6-Static-Type-Checkers.md"
         },
         {
           "url": "/frontend/server-side-rendering",
           "title": "Server Side Rendering",
-          "path": "/roadmaps/1-frontend/2-Learn/7-Server-Side-Rendering.md"
+          "path": "/roadmaps/1-frontend/1-Learn/7-Server-Side-Rendering.md"
         },
         {
           "url": "/frontend/go-beyond",
           "title": "Go Beyond",
-          "path": "/roadmaps/1-frontend/2-Learn/8-Go-Beyond.md"
+          "path": "/roadmaps/1-frontend/1-Learn/8-Go-Beyond.md"
         }
       ]
     }
   },
   {
+    "seo": {
+      "title": "Learn to become a modern backend developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern backend development. Learn to become a modern backend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a backend developer",
+        "backend developer",
+        "backend engineer",
+        "backend skills",
+        "backend development",
+        "javascript developer",
+        "backend development skills",
+        "backend development skills test",
+        "backend engineer roadmap",
+        "backend developer roadmap",
+        "become a backend developer",
+        "backend developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for backend development",
+        "learn backend development",
+        "what is backend development",
+        "backend developer quiz",
+        "backend developer interview questions"
+      ]
+    },
     "title": "Backend Developer",
     "description": "Step by step guide to becoming a modern backend developer",
     "featuredDescription": "Step by step guide to becoming a modern backend developer in 2020",
     "featured": true,
+    "path": "/roadmaps/2-backend/0-About/0-Summary.md",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -114,7 +152,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/backend/contributors",
     "url": "/backend",
-    "path": "/roadmaps/2-backend/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -148,10 +185,32 @@
     }
   },
   {
+    "seo": {
+      "title": "DevOps Roadmap: Learn to become a DevOps Engineer or SRE",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a devops enginer",
+        "devops roadmap",
+        "sre roadmap",
+        "site reliability engineer roadmap",
+        "operations roles",
+        "become devops",
+        "devops skills",
+        "modern devops skills",
+        "devops skills test",
+        "skills for devops",
+        "learn devops",
+        "what is devops",
+        "what is sre",
+        "devops quiz",
+        "devops interview questions"
+      ]
+    },
     "title": "DevOps Roadmap",
     "description": "Step by step guide for DevOps or any other Operations Role",
     "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2020",
     "featured": true,
+    "path": "/roadmaps/3-devops/0-About/0-Summary.md",
     "versions": [
       "latest",
       "2018",
@@ -164,7 +223,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/devops/contributors",
     "url": "/devops",
-    "path": "/roadmaps/3-devops/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -193,9 +251,37 @@
     }
   },
   {
+    "seo": {
+      "title": "Fullstack Roadmap: Learn to become a fullstack developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern fullstack development. Learn to become a modern fullstack developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer",
+        "guide to becoming a fullstack developer",
+        "fullstack developer",
+        "fullstack engineer",
+        "fullstack skills",
+        "fullstack development",
+        "javascript developer",
+        "fullstack development skills",
+        "fullstack development skills test",
+        "fullstack engineer roadmap",
+        "fullstack developer roadmap",
+        "become a fullstack developer",
+        "fullstack developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for fullstack development",
+        "learn fullstack development",
+        "what is fullstack development",
+        "fullstack developer quiz",
+        "fullstack developer interview questions"
+      ]
+    },
     "title": "Full Stack Developer",
     "description": "Step by step guide to becoming a modern fullstack developer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
+    "path": "/roadmaps/4-fullstack/0-About/0-Summary.md",
     "upcoming": true,
     "author": {
       "name": "Kamran Ahmed",
@@ -204,7 +290,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
-    "path": "/roadmaps/4-fullstack/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {
@@ -216,10 +301,29 @@
     }
   },
   {
+    "seo": {
+      "title": "QA Roadmap: Learn to become a modern QA engineer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a QA engineer",
+        "QA engineer",
+        "QA skills",
+        "QA development skills",
+        "QA development skills test",
+        "QA engineer roadmap",
+        "become a QA engineer",
+        "QA engineer career path",
+        "skills for QA development",
+        "what is QA engineer",
+        "QA engineer quiz",
+        "QA engineer interview questions"
+      ]
+    },
     "title": "QA Engineer",
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
     "upcoming": true,
+    "path": "/roadmaps/5-qa/0-About/0-Summary.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
@@ -227,7 +331,6 @@
     "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
-    "path": "/roadmaps/5-qa/0-About/0-Summary.md",
     "sidebar": {
       "About": [
         {

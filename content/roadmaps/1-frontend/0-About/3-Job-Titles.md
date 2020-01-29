@@ -1,4 +1,4 @@
-#### Common Job Titles
+## Common Job Titles
 If you know frontend development, there are jobs with different titles that you can apply to. Here is the list of different job titles with almost same responsibilities
 
 * Frontend Developer / Engineer

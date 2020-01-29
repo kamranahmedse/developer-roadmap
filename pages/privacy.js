@@ -6,16 +6,16 @@ import Helmet from 'components/helmet';
 
 const Privacy = () => (
   <DefaultLayout>
-    <Helmet />
+    <Helmet  title={'Privacy Policy - roadmap.sh'} />
     <TosPage>
       <SiteNav />
       <div className="bg-light border-top privacy-wrap">
         <div className="container pt-5 pb-5">
-          <h2 className='font-weight-bold mb-3'>Privacy Policy</h2>
+          <h1 className='font-weight-bold mb-3'>Privacy Policy</h1>
           <p>By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways. Remember that your use of roadmap.sh’s Services is at all times subject to the <a
             href="/terms">Terms of Use</a>, which incorporates this Privacy Policy. Any terms we use in this Policy without defining them have the definitions given to them in the Terms of Use.</p>
 
-          <h4>What does this Privacy Policy cover?</h4>
+          <h2>What does this Privacy Policy cover?</h2>
           <p>This Privacy Policy covers our treatment of personally identifiable information ("Personal Information") that we gather when you are accessing or using our Services, but not to the practices of companies we don’t own or control, or people that we don’t manage. We gather various types of Personal Information from our users, as
             explained in more detail below, and we use this Personal Information internally in connection with our Services, including to personalize, provide, and improve our services, to allow you to set up a user account and profile, to contact you and allow other users to contact you, to fulfill your requests for certain products and
             services, and to analyze how you use the Services. In certain cases, we may also share some Personal Information with third parties, but only as described below.</p>
@@ -23,13 +23,13 @@ const Privacy = () => (
             age
             13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal information, please contact us at <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>.</p>
 
-          <h4>Will roadmap.sh ever change this Privacy Policy?</h4>
+          <h2>Will roadmap.sh ever change this Privacy Policy?</h2>
           <p>We’re constantly trying to improve our Services, so we may need to change this Privacy Policy from time to time as well, but we will alert you to changes by updating the services on the website, placing a notice on the Services, by sending you an email, and/or by some other means. Please note that if you’ve opted not to
             receive
             legal notice emails from us (or you haven’t provided us with your email address), those legal notices will still govern your use of the Services, and you are still responsible for reading and understanding them. If you use the Services after any changes to the Privacy Policy have been posted, that means you agree to all of the
             changes. Use of information we collect now is subject to the Privacy Policy in effect at the time such information is used or collected.</p>
 
-          <h4>What Information does roadmap.sh Collect?</h4>
+          <h2>What Information does roadmap.sh Collect?</h2>
           <p>Information You Provide to Us:</p>
           <p>We receive and store any information you knowingly provide to us. For example, through the registration process and/or through your account settings, we may collect Personal Information such as your name, title, email address, phone number, and third-party account credentials (for example, your log-in credentials for Twitter
             or
@@ -38,7 +38,7 @@ const Privacy = () => (
           <p>We may communicate with you if you’ve provided us the means to do so. For example, if you’ve given us your email address, we may send you promotional email offers on behalf of other businesses, or email you about your use of the Services. Also, we may receive a confirmation when you open an email from us. This confirmation
             helps us make our communications with you more interesting and improve our services. If you do not want to receive communications from us, please email us at <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>.</p>
 
-          <h4>Information Collected Automatically</h4>
+          <h2>Information Collected Automatically</h2>
           <p>Whenever you interact with our Services, we automatically receive and record information on our server logs from your browser or device, which may include your IP address, geolocation data, device identification, “cookie” information, the type of browser and/or device you’re using to access our Services, and the page or
             feature
             you requested. “Cookies” are identifiers we transfer to your browser or device that allow us to recognize your browser or device and tell us how and when pages and features in our Services are visited and by how many people. You may be able to change the preferences on your browser or device to prevent or limit your device’s
@@ -48,7 +48,7 @@ const Privacy = () => (
             many
             users as possible.</p>
 
-          <h4>Will roadmap.sh Share Any of the Personal Information it Receives?</h4>
+          <h2>Will roadmap.sh Share Any of the Personal Information it Receives?</h2>
           <p>We may share your Personal Information with third parties as described in this section:</p>
           <p>Information that’s no longer personally identifiable. We may anonymize your Personal Information so that you are not individually identified, and provide that information to our partners. We may also provide aggregate usage information to our partners, who may use such information to understand how often and in what ways
             people
@@ -77,12 +77,12 @@ const Privacy = () => (
             users,
             or others.</p>
 
-          <h4>Is Personal Information about me secure?</h4>
+          <h2>Is Personal Information about me secure?</h2>
           <p>Your account is protected by a password for your privacy and security. If you access your account via a third party site or service, you may have additional or different sign-on protections via that third party site or service. You must prevent unauthorized access to your account and Personal Information by selecting and
             protecting your password and/or other sign-on mechanism appropriately and limiting access to your computer or device and browser by signing off after you have finished accessing your account. We endeavor to protect the privacy of your account and other Personal Information we hold in our records, but unfortunately, we cannot
             guarantee complete security. Unauthorized entry or use, hardware or software failure, and other factors, may compromise the security of user information at any time.</p>
 
-          <h4>What Personal Information can I access?</h4>
+          <h2>What Personal Information can I access?</h2>
           <p>Through your account settings, you may access, and, in some cases, edit or delete the following information you’ve provided to us:</p>
           <ul>
             <li>first and last name</li>
@@ -95,14 +95,14 @@ const Privacy = () => (
             are
             a California resident and would like a copy of this notice, please submit a written request to: <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>.</p>
 
-          <h4>What choices do I have?</h4>
+          <h2>What choices do I have?</h2>
           <p>You can always opt not to disclose information to us, but keep in mind some information may be needed to register with us or to take advantage of some of our features.</p>
           <p>You may be able to add, update, or delete information as explained above. When you update information, however, we may maintain a copy of the unrevised information in our records. You may request deletion of your account by contacting us at <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a> and we will disassociate
             our
             email address and Twitter account from any content or other information provided to us. Some information may remain in our records after your deletion of such information from your account. We may use any aggregated data derived from or incorporating your Personal Information after you update or delete it, but not in a manner
             that would identify you personally.</p>
 
-          <h4>What if I have questions about this policy?</h4>
+          <h2>What if I have questions about this policy?</h2>
           <p>If you have any questions or concerns regarding our privacy policies, please send us a detailed message to <a href="mailto:kamran@roadmap.sh">kamran@roadmap.sh</a>, and we will try to resolve your concerns.</p>
         </div>
       </div>

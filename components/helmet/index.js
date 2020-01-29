@@ -2,8 +2,7 @@ import NextHead from 'next/head';
 import siteConfig from 'content/site';
 
 const prepareTitle = (givenTitle) => {
-  givenTitle = givenTitle || siteConfig.title;
-  return `${givenTitle} - ${siteConfig.name}`;
+  return givenTitle || siteConfig.title;
 };
 
 const prepareDescription = (givenDescription) => {
@@ -19,7 +18,7 @@ const Helmet = (props) => (
     <meta name='description' content={ prepareDescription(props.description) } />
 
     <meta name="author" content={ siteConfig.author } />
-    <meta name="keywords" content={ siteConfig.keywords.join(',') } />
+    <meta name="keywords" content={ props.keywords ? props.keywords.join(',') : siteConfig.keywords.join(',') } />
 
     <meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0" />
     { props.canonical && <link rel="canonical" href={ props.canonical } /> }

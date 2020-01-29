@@ -6,14 +6,14 @@ The protocol evolved organically over the past 20 years, and various people and 
 
 I'll be using a [Debian ISO](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/#indexlist) file as my guinea pig because it's big, but not huge, at 350MB. As a popular Linux distribution, there will be lots of fast and cooperative peers for us to connect to. And we'll avoid the legal and ethical issues related to downloading pirated content.
 
-# Finding peers
+## Finding peers
 Here’s a problem: we want to download a file with BitTorrent, but it’s a peer-to-peer protocol and we have no idea where to find peers to download it from. This is a lot like moving to a new city and trying to make friends—maybe we’ll hit up a local pub or a meetup group! Centralized locations like these are the big idea behind trackers, which are central servers that introduce peers to each other. They’re just web servers running over HTTP, and you can find Debian’s at http://bttracker.debian.org:6969/
 
 ![illustration of a desktop computer and laptop sitting at a pub](/guides/torrent-client/trackers.png)
 
 Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and KickassTorrents getting seized and shut down. New methods cut out the middleman by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
 
-## Parsing a .torrent file
+### Parsing a .torrent file
 A .torrent file describes the contents of a torrentable file and information for connecting to a tracker. It's all we need in order to kickstart the process of downloading a torrent. Debian's .torrent file looks like this:
 
 ```markdown
@@ -106,7 +106,7 @@ func (bto *bencodeTorrent) toTorrentFile() (*TorrentFile, error) {
 }
 ```
 
-## Retrieving peers from the tracker
+### Retrieving peers from the tracker
 Now that we have information about the file and its tracker, let's talk to the tracker to **announce** our presence as a peer and to retrieve a list of other peers. We just need to make a GET request to the `announce` URL supplied in the .torrent file, with a few query parameters:
 
 ```go
@@ -136,7 +136,7 @@ The important ones:
 
 ![a file with a name tag saying 'info_hash' and a person with a name tag 'peer_id'](/guides/torrent-client/info-hash-peer-id.png)
 
-## Parsing the tracker response
+### Parsing the tracker response
 We get back a bencoded response:
 
 ```markdown
@@ -179,7 +179,7 @@ func Unmarshal(peersBin []byte) ([]Peer, error) {
 }
 ```
 
-# Downloading from peers
+## Downloading from peers
 Now that we have a list of peers, it's time to connect with them and start downloading pieces! We can break down the process into a few steps. For each peer, we want to:
 
 1. Start a TCP connection with the peer. This is like starting a phone call.
@@ -196,7 +196,7 @@ if err != nil {
 
 I set a timeout so that I don't waste too much time on peers that aren't going to let me connect. For the most part, it's a pretty standard TCP connection.
 
-## Complete the handshake
+### Complete the handshake
 We've just set up a connection with a peer, but we want do a handshake to validate our assumptions that the peer
 
 * can communicate using the BitTorrent protocol
@@ -250,14 +250,14 @@ func Read(r io.Reader) (*Handshake, error) {
 }
 ```
 
-## Send and receive messages
+### Send and receive messages
 Once we've completed the initial handshake, we can send and receive **messages**. Well, not quite—if the other peer isn't ready to accept messages, we can't send any until they tell us they're ready. In this state, we're considered **choked** by the other peer. They'll send us an **unchoke** message to let us know that we can begin asking them for data. By default, we assume that we're choked until proven otherwise.
 
 Once we've been unchoked, we can then begin sending **requests** for pieces, and they can send us messages back containing pieces.
 
 !["A cartoon in which person 1 says 'hello I would like piece number—' and person 2 grabs him by the neck and says '00 00 00 01 00 (choke)'](/guides/torrent-client/choke.png)
 
-### Interpreting messages
+#### Interpreting messages
 A message has a length, an **ID** and a **payload**. On the wire, it looks like:
 
 ![A message with 4 byte for the length, 1 byte for ID, and an optional payload](/guides/torrent-client/message.png)
@@ -333,7 +333,7 @@ func Read(r io.Reader) (*Message, error) {
 }
 ```
 
-### Bitfields
+#### Bitfields
 One of the most interesting types of message is the **bitfield**, which is a data structure that peers use to efficiently encode which pieces they are able to send us. A bitfield looks like a byte array, and to check which pieces they have, we just need to look at the positions of the *bits* set to 1. You can think of it like the digital equivalent of a coffee shop loyalty card. We start with a blank card of all `0`, and flip bits to `1` to mark their positions as "stamped."
 
 ![a coffee shop loyalty card with eight slots, with stamps on the first four slots and a stamp on the second to last slot, represented as 11110010](/guides/torrent-client/bitfield.png)
@@ -359,10 +359,10 @@ func (bf Bitfield) SetPiece(index int) {
 }
 ```
 
-## Putting it all together
+### Putting it all together
 We now have all the tools we need to download a torrent: we have a list of peers obtained from the tracker, and we can communicate with them by dialing a TCP connection, initiating a handshake, and sending and receiving messages. Our last big problems are handling the **concurrency** involved in talking to multiple peers at once, and managing the **state** of our peers as we interact with them. These are both classically Hard problems.
 
-### Managing concurrency: channels as queues
+#### Managing concurrency: channels as queues
 In Go, we [share memory by communicating](https://blog.golang.org/share-memory-by-communicating), and we can think of a Go channel as a cheap thread-safe queue.
 
 We'll set up two channels to synchronize our concurrent workers: one for dishing out work (pieces to download) between peers, and another for collecting downloaded pieces. As downloaded pieces come in through the results channel, we can copy them into a buffer to start assembling our complete file.
@@ -437,7 +437,7 @@ func (t *Torrent) startDownloadWorker(peer peers.Peer, workQueue chan *pieceWork
 }
 ```
 
-### Managing state
+#### Managing state
 We'll keep track of each peer in a struct, and modify that struct as we read messages. It'll include data like how much we've downloaded from the peer, how much we've requested from them, and whether we're choked. If we wanted to scale this further, we could formalize this as a finite state machine. But a struct and a switch are good enough for now.
 
 ```go
@@ -469,12 +469,12 @@ func (state *pieceProgress) readMessage() error {
 }
 ```
 
-### Time to make requests!
+#### Time to make requests!
 Files, pieces, and piece hashes aren't the full story—we can go further by breaking down pieces into **blocks**. A block is a part of a piece, and we can fully define a block by the **index** of the piece it's part of, its byte **offset** within the piece, and its **length**. When we make requests for data from peers, we are actually requesting *blocks*. A block is usually 16KB large, meaning that a single 256 KB piece might actually require 16 requests.
 
 A peer is supposed to sever the connection if they receive a request for a block larger than 16KB. However, based on my experience, they're often perfectly happy to satisfy requests up to 128KB. I only got moderate gains in overall speed with larger block sizes, so it's probably better to stick with the spec.
 
-### Pipelining
+#### Pipelining
 Network round-trips are expensive, and requesting each block one by one will absolutely tank the performance of our download. Therefore, it's important to **pipeline** our requests such that we keep up a constant pressure of some number of unfulfilled requests. This can increase the throughput of our connection by an order of magnitude.
 
 ![Two email threads simulating peer connections. The thread on the left shows a request followed by a reply, repeated three times. The thread on the left sends three requests, and receives three replies in quick succession.](/guides/torrent-client/pipelining.png)
@@ -529,7 +529,7 @@ func attemptDownloadPiece(c *client.Client, pw *pieceWork) ([]byte, error) {
 }
 ```
 
-### main.go
+#### main.go
 This is a short one. We're almost there.
 
 ```go
@@ -560,5 +560,5 @@ func main() {
 
 <script id="asciicast-xqRSB0Jec8RN91Zt89rbb9PcL" src="https://asciinema.org/a/xqRSB0Jec8RN91Zt89rbb9PcL.js" async></script>
 
-# This isn't the full story
+## This isn't the full story
 For brevity, I included only a few of the important snippets of code. Notably, I left out all the glue code, parsing, unit tests, and the boring parts that build character. View my [full implementation](https://github.com/veggiedefender/torrent-client) if you're interested.
