@@ -8,7 +8,7 @@ const Privacy = () => (
   <DefaultLayout>
     <Helmet />
     <TosPage>
-      <SiteNav />
+      <SiteNav title={'Privacy Policy - roadmap.sh'} />
       <div className="bg-light border-top privacy-wrap">
         <div className="container pt-5 pb-5">
           <h2 className='font-weight-bold mb-3'>Privacy Policy</h2>

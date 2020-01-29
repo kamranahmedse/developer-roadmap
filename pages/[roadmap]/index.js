@@ -19,8 +19,9 @@ const Roadmap = ({ roadmap, canonical }) => {
     <DefaultLayout>
       <Helmet
         canonical={canonical}
-        title={ roadmap.title }
-        description={ roadmap.description }
+        title={ roadmap?.seo?.title || roadmap.title }
+        description={ roadmap?.seo?.description || roadmap.description }
+        keywords={ roadmap?.keywords || [] }
       />
       <SiteNav />
       { showSummary ? <RoadmapSummary roadmap={roadmap} /> : <DetailedRoadmap roadmap={roadmap} /> }

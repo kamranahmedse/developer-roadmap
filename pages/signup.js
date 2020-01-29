@@ -6,7 +6,7 @@ import Helmet from 'components/helmet';
 
 const SignUp = () => (
   <DefaultLayout>
-    <Helmet />
+    <Helmet title={'Sign Up: Be a part of the community'} />
     <SiteNav />
     <SignUpForm />
     <PageFooter />
