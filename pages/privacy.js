@@ -6,12 +6,12 @@ import Helmet from 'components/helmet';
 
 const Privacy = () => (
   <DefaultLayout>
-    <Helmet />
+    <Helmet  title={'Privacy Policy - roadmap.sh'} />
     <TosPage>
-      <SiteNav title={'Privacy Policy - roadmap.sh'} />
+      <SiteNav />
       <div className="bg-light border-top privacy-wrap">
         <div className="container pt-5 pb-5">
-          <h2 className='font-weight-bold mb-3'>Privacy Policy</h2>
+          <h1 className='font-weight-bold mb-3'>Privacy Policy</h1>
           <p>By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways. Remember that your use of roadmap.sh’s Services is at all times subject to the <a
             href="/terms">Terms of Use</a>, which incorporates this Privacy Policy. Any terms we use in this Policy without defining them have the definitions given to them in the Terms of Use.</p>
 

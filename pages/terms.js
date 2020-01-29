@@ -11,7 +11,7 @@ const Terms = () => (
       <SiteNav />
       <div className="bg-light border-top tos-wrap">
         <div className="container pt-5 pb-5">
-          <h2>Terms of Service</h2>
+          <h1>Terms of Service</h1>
 
           <p className='text-uppercase'>Please note that your use of and access to our services (defined below) are subject to the following terms; if you do not agree to all of the following, you may not use or access the services in any manner.</p>
 
