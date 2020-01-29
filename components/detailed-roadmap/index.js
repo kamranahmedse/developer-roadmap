@@ -43,7 +43,7 @@ const DetailedRoadmap = ({ roadmap }) => {
         <ul>
           { sidebar[groupTitle].map(page => {
             const isActivePage = page.url === currentPage.url;
-            // e.g. /frontend should mark `/frontend/summary` as active
+            // e.g. /frontend should mark `/frontend/landscape` as active
             const isSummaryPage = page.url === `${currentPage.url}/landscape`;
 
             return (
