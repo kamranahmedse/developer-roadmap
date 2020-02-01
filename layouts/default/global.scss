@@ -62,3 +62,15 @@ code:not([class]) {
   word-wrap: normal;
   box-shadow: none;
 }
+
+.banner-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.body-wrap.sponsor-banner-visible {
+  margin-top: 44px;
+}
