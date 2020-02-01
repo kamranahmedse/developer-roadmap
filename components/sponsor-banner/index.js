@@ -1,13 +1,18 @@
 import React from 'react';
-import { BannerWrap, CloseSponsor, EmojiWrap } from './style';
+import { BannerWrap, CloseSponsor, EmojiWrap, SponsorLogo } from './style';
 
 export function SponsorBanner({ onCloseBanner = () => null }){
   return (
     <div className='row'>
       <div className='col p-0'>
-        <BannerWrap href='https://google.com' target='_blank' className='alert alert-info'>
+        <BannerWrap
+            href={`https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships`}
+            target='_blank'
+            className='alert alert-info'
+        >
+            <SponsorLogo src='/sponsors/do.svg' />
             Sponsored by DigitalOcean
-            <EmojiWrap>😍</EmojiWrap>
+            <EmojiWrap src={'/sponsors/heart-eyes.svg'} />
             Check them out!
 
             <CloseSponsor
