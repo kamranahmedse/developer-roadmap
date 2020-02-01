@@ -13,7 +13,7 @@ export function SponsorBanner({ onCloseBanner = () => null }){
             <SponsorLogo src='/sponsors/do.svg' />
             Sponsored by DigitalOcean
             <EmojiWrap src={'/sponsors/heart-eyes.svg'} />
-            Check them out!
+            <span className='d-none d-md-inline-block'>Check them out!</span>
 
             <CloseSponsor
               onClick={(e) => {
