@@ -10,7 +10,22 @@
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
 
 ***
-<p align="center"><b> 🎉 We are working on an extended version of these roadmaps 🎉 </b><br>Keep your eyes on <a href="http://roadmap.sh">roadmap.sh</a> for the updates!</p>
+
+<p align="center">
+		<sup>Special thanks to:</sup>
+		<br>
+		<br>
+		<a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">
+			<img src="https://roadmap.sh/sponsors/do-brand.svg" width="250" alt="DigitalOcean">
+		</a>
+		<br>
+		<sub><b>Special thanks to DigitalOcean for sponsoring the project</b></sub>
+		<br>
+		<sub>I would personally recommend using DigitalOcean for your projects<br>Give it a try with this <a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">free 100$ credit</a>.</sub>
+		<br>
+		<br>
+		<br>
+</p>
 
 ***
 
