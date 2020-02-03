@@ -14,7 +14,6 @@ Below you find a set of charts demonstrating the paths that you can take and the
 <p align="center">
 		<sup>Special thanks to:</sup>
 		<br>
-		<br>
 		<a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">
 			<img src="https://roadmap.sh/sponsors/do-brand.svg" width="250" alt="DigitalOcean">
 		</a>
@@ -22,9 +21,6 @@ Below you find a set of charts demonstrating the paths that you can take and the
 		<sub><b>Special thanks to DigitalOcean for sponsoring the project</b></sub>
 		<br>
 		<sub>I would personally recommend using DigitalOcean for your projects<br>Give it a try with this <a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">free 100$ credit</a>.</sub>
-		<br>
-		<br>
-		<br>
 </p>
 
 ***
