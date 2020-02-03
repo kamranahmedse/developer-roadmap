@@ -1,8 +1,11 @@
+
 ![Web Developer Roadmap - 2020](https://i.imgur.com/NNyc9QM.png)
 
 > Roadmap to becoming a web developer in 2020
 
-[![](https://img.shields.io/badge/-Detailed%20Content%20on%20the%20Website%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
+[![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
+[![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
+[![](https://img.shields.io/badge/%E2%9D%A4-Contribute-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing)
 
 Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
 
