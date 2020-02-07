@@ -19,7 +19,7 @@ Junior developers are normally fresh graduates and it's either they don't have o
 * Over-engineering is a major problem, often leading to fragility and bugs.
 * When given a problem, they often try to fix just the current problem a.k.a. fixing the symptoms instead of fixing the root problem.
 * You might notice the "[Somebody Else's Problem](https://en.wikipedia.org/wiki/Somebody_else%27s_problem)" behavior from them.
-* They don't know what or how much they don't know, thanks to [Dunning Kruger Effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect).
+* They don't know what or how much they don't know, thanks to the [Dunning–Kruger effect](https://en.wikipedia.org/wiki/Dunning%E2%80%93Kruger_effect).
 * They don't take initiatives and they might be afraid to work on an unfamiliar codebase.
 * They don't participate in team discussions.
 
