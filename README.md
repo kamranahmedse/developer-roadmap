@@ -8,9 +8,6 @@
 저는 제자들의 시야를 넓히고자 하는 옛 교수님을 위해 이 로드맵을 만들었습니다. 누구나 커뮤니티를 돕기 위해 이곳에 공유해주세요.
 
 ***
-<p align="center"><b> 🎉 로드맵 확장 버전을 만드는 중입니다. 🎉 </b><br>업데이트를 위해 <a href="http://roadmap.sh">roadmap.sh</a> 를 지켜봐주세요!</p>
-
-***
 
 <h3 align="center"><strong>로드맵의 목적</strong></h3>
 
