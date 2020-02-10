@@ -65,7 +65,7 @@ One of the major drawbacks of `HTTP/1.0` were you couldn't have multiple request
 
 #### Three-way Handshake 
 
-Three-way handshake in it's simples form is that all the `TCP` connections begin with a three-way handshake in which the client and the server share a series of packets before starting to share the application data. 
+Three-way handshake in its simplest form is that all the `TCP` connections begin with a three-way handshake in which the client and the server share a series of packets before starting to share the application data. 
 
 - `SYN` - Client picks up a random number, let's say `x`, and sends it to the server.
 - `SYN ACK` - Server acknowledges the request by sending an `ACK` packet back to the client which is made up of a random number, let's say `y` picked up by server and the number `x+1` where `x` is the number that was sent by the client
