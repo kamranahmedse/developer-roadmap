@@ -53,7 +53,7 @@ const getGuideRoutes = () => {
 };
 
 /**
- * Generates routes for each of the roadmap and it's respective versions
+ * Generates routes for each of the roadmap and its respective versions
  * @returns {*}
  */
 const getRoadmapRoutes = () => {
