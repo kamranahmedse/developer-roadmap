@@ -6527,8 +6527,8 @@
                     "ID": "1396",
                     "typeID": "Label",
                     "zOrder": "159",
-                    "w": "52",
-                    "measuredW": "50",
+                    "w": "58",
+                    "measuredW": "56",
                     "measuredH": "25",
                     "x": "1093",
                     "y": "1051",
@@ -6536,7 +6536,7 @@
                         "bold": "true",
                         "color": "3355443",
                         "size": "17",
-                        "text": "Gitlab"
+                        "text": "GitLab"
                     }
                 },
                 {
