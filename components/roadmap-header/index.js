@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faClock, faEnvelope, faHandshake } from '@fortawesome/free-solid-svg-icons';
 import { BadgeLink, BadgesList, DarkBadge, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import siteConfig from "content/site";
-import { Description, Header, Title, VersionList } from './style';
+import { Description, Header, Title, MenuItemLink, MenuItems } from './style';
+import Link from 'next/link';
+import classNames from 'classnames';
 
 const RoadmapHeader = ({ roadmap }) => (
-  <Header className="border-bottom">
+  <Header>
     <Title>{ roadmap.title }</Title>
     <Description>{ roadmap.description }</Description>
     <BadgesList className="mt-4">
@@ -39,6 +41,19 @@ const RoadmapHeader = ({ roadmap }) => (
         </PrimaryBadge>
       </BadgeLink>
     </BadgesList>
+
+    <MenuItems className="border-bottom">
+      <Link href={ `${roadmap.url}` } passHref>
+        <MenuItemLink className={ classNames({ active: true, }) }>Landscape</MenuItemLink>
+      </Link>
+      <Link href={ `${roadmap.url}/resources` } passHref>
+        <MenuItemLink className={ classNames({ active: false, }) }>Resources</MenuItemLink>
+      </Link>
+      <Link href={ `${roadmap.url}/resources` } passHref>
+        <MenuItemLink className={ classNames({ active: false, }) }>Project Ideas</MenuItemLink>
+      </Link>
+    </MenuItems>
+
   </Header>
 );
 
