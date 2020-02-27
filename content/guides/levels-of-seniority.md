@@ -59,7 +59,7 @@ Senior developers are the next level after the Mid-level developers. They are th
 * They are aware they're on a team. They view it as a part of their responsibility to mentor others. This can range from pair programming with junior devs to taking un-glorious tasks of writing docs or tests or whatever else needs to be done.
 * They have a deep understanding of the domain - they know about the business side of the company and realize how management/sales/marketing/etc think and benefit from their knowledge of the business domain during the development.
 * They don't make empty complaints, they make judgments based on the empirical evidence and they have suggestions for solutions.
-* They think much more than they code - they know that their job is to provide solutions to the problems and not just to write code.
+* They think much more than just code - they know that their job is to provide solutions to the problems and not just to write code.
 * They have the ability to take on large ill-defined problems, define them, break them up, and execute the pieces. A senior developer can take something big and abstract, and run with it. They will come up with a few options, discuss them with the team and implement them.
 * They have respect for the code that was written before them. They are generous when passing judgment on the architecture or the design decisions made in the codebase. They approach inheriting legacy code with an "opportunity mindset" rather than a complaining one.
 * They know how to give feedback without hurting anyone.
