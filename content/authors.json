@@ -12,5 +12,12 @@
     "twitter": "__jesse_li",
     "picture": "/authors/jesse.png",
     "bio": "Software engineer."
+  },
+  {
+    "username": "dmytrobol",
+    "name": "Dmytro Bolkachov",
+    "twitter": "dmytrobol",
+    "picture": "/authors/dmytrobol.png",
+    "bio": "JavaScript Lad, Movie buff and coder interested in everything web related"
   }
 ]

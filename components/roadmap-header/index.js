@@ -6,7 +6,7 @@ import { Description, Header, Title, MenuItemLink, MenuItems } from './style';
 import Link from 'next/link';
 import classNames from 'classnames';
 
-const RoadmapHeader = ({ roadmap }) => (
+const RoadmapHeader = ({ roadmap, page = 'landscape' }) => (
   <Header>
     <Title>{ roadmap.title }</Title>
     <Description>{ roadmap.description }</Description>
@@ -43,15 +43,17 @@ const RoadmapHeader = ({ roadmap }) => (
     </BadgesList>
 
     <MenuItems className="border-bottom">
+      <div className='d-none'>
       <Link href={ `${roadmap.url}` } passHref>
-        <MenuItemLink className={ classNames({ active: true, }) }>Landscape</MenuItemLink>
+        <MenuItemLink className={ classNames({ active: page === 'landscape', }) }>Landscape</MenuItemLink>
       </Link>
       <Link href={ `${roadmap.url}/resources` } passHref>
-        <MenuItemLink className={ classNames({ active: false, }) }>Resources</MenuItemLink>
+        <MenuItemLink className={ classNames({ active: page === 'resources', }) }>Resources</MenuItemLink>
       </Link>
-      <Link href={ `${roadmap.url}/resources` } passHref>
-        <MenuItemLink className={ classNames({ active: false, }) }>Project Ideas</MenuItemLink>
-      </Link>
+      {/*<Link href={ `${roadmap.url}/resources` } passHref>*/}
+      {/*  <MenuItemLink className={ classNames({ active: false, }) }>Project Ideas</MenuItemLink>*/}
+      {/*</Link>*/}
+      </div>
     </MenuItems>
 
   </Header>
