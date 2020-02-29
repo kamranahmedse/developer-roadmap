@@ -7,109 +7,7 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/frontend/summary</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.087Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/basic-skills</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.100Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/landscape</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.087Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/job-titles</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.100Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/job-ready</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.099Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/write-better-css</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/build-tools</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/modern-applications</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/automated-testing</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/static-type-checkers</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/server-side-rendering</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/frontend/go-beyond</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.088Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
               <loc>https://roadmap.sh/backend</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/backend/summary</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/backend/summary</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/backend/junior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/backend/intermediate</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.705Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/backend/senior</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-01-29T07:49:29.705Z</lastmod>
               <priority>1.0</priority>
@@ -121,37 +19,7 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/devops/summary</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/devops/junior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/devops/intermediate</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/devops/senior</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
               <loc>https://roadmap.sh/fullstack</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/fullstack/summary</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-01-29T07:49:29.706Z</lastmod>
               <priority>1.0</priority>
@@ -163,9 +31,9 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/qa/summary</loc>
+              <loc>https://roadmap.sh/guides/what-is-internet</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <lastmod>2020-02-29T15:48:21.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -231,7 +99,7 @@
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.711Z</lastmod>
+              <lastmod>2020-02-23T07:24:00.532Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -243,7 +111,7 @@
 <url>
               <loc>https://roadmap.sh/sponsors</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.711Z</lastmod>
+              <lastmod>2020-02-23T07:24:00.533Z</lastmod>
               <priority>0.5</priority>
           </url>
 </urlset>

@@ -34,7 +34,8 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "featured": true,
-  "path": "./0-About/2-Landscape.md",
+  "path": "./landscape.md",
+  "resources": "./resources.md",
   "detailed": false,
   "versions": [
     "latest",

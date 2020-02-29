@@ -1,5 +1,15 @@
 [
   {
+    "title": "How does the internet work?",
+    "description": "Learn the basics of internet and everything involved with this short video series",
+    "url": "/guides/what-is-internet",
+    "fileName": "what-is-internet",
+    "featured": true,
+    "author": "dmytrobol",
+    "updatedAt": "2020-02-29T15:48:21.191Z",
+    "createdAt": "2020-02-29T15:48:21.191Z"
+  },
+  {
     "title": "Building a BitTorrent Client",
     "description": "Learn everything you need to know about BitTorrent by writing a client in Go",
     "url": "/guides/torrent-client",
