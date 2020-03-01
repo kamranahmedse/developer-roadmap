@@ -43,7 +43,6 @@ const RoadmapHeader = ({ roadmap, page = 'landscape' }) => (
     </BadgesList>
 
     <MenuItems className="border-bottom">
-      <div className='d-none'>
       <Link href={ `${roadmap.url}` } passHref>
         <MenuItemLink className={ classNames({ active: page === 'landscape', }) }>Landscape</MenuItemLink>
       </Link>
@@ -53,7 +52,6 @@ const RoadmapHeader = ({ roadmap, page = 'landscape' }) => (
       {/*<Link href={ `${roadmap.url}/resources` } passHref>*/}
       {/*  <MenuItemLink className={ classNames({ active: false, }) }>Project Ideas</MenuItemLink>*/}
       {/*</Link>*/}
-      </div>
     </MenuItems>
 
   </Header>

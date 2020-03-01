@@ -5,12 +5,13 @@ Before I go ahead and list down the resources, please know that the roadmap and 
 
 Get the basic understanding of internet, browsers, networks and other relevant knowledge. 
 
-* [How the internet works in 5 minutes](https://www.youtube.com/watch?v=7_LPdttKXPc) 👀
-* [What is the Internet](https://www.youtube.com/watch?v=Dxcc6ycZ73M)
-* [The Internet: IP Addresses & DNS](https://www.youtube.com/watch?v=5o8CwafCxnU)
-* [The Internet: Packets, Routing & Reliability](https://www.youtube.com/watch?v=AYdF7b3nMto)
+* <BadgeLink badgeText='Read' href='/guides/what-is-internet'>What is Internet?</BadgeLink>
+* <BadgeLink variant='success' badgeText='Watch' href='https://www.youtube.com/watch?v=7_LPdttKXPc'>How the internet works in 5 minutes</BadgeLink>
 * What is HTTP, how it evolved and where is it now?
 * How do the browsers work? Engines behind different browsers
 * What is DNS? How a website is found on the internet?
 * What's in a domain name? What is an IP Address?
 * What is Web Hosting?
+
+## Learn HTML
+HTML helps you build the pages
