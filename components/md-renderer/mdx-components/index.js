@@ -6,6 +6,7 @@ import { Table } from './table';
 import { IFrame } from './iframe';
 import { Img } from './img';
 import EnrichedLink from './a';
+import { BadgeLink } from '../../link/badge-link';
 
 const MdxComponents = {
   p: P,
@@ -16,6 +17,7 @@ const MdxComponents = {
   table: Table,
   iframe: IFrame,
   img: Img,
+  BadgeLink: BadgeLink
 };
 
 export default MdxComponents;
