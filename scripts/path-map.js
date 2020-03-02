@@ -73,6 +73,10 @@ const getRoadmapRoutes = () => {
         page: '/[roadmap]',
         query: roadmap.url.replace(/\/+/, ''),
       },
+      [`${roadmap.url}/resources`]: {
+        page: '/[roadmap]/resources',
+        query: roadmap.url.replace(/\/+/, ''),
+      },
       // Routes for all the pages inside this directory
       ...pages.reduce((pageRoutes, page) => {
         return {
