@@ -1,4 +1,4 @@
-export function BadgeLink({ target='_blank', variant ='primary', badgeText, href, children }) {
+export function BadgeLink({ target='_blank', variant ='success', badgeText, href, children }) {
   return (
     <p className='mb-0'>
       <a href={href} target={ target }>
