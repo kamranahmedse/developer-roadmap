@@ -28,7 +28,6 @@ export const MenuItemLink = styled.a`
   color: rgb(102, 102, 102);
   font-size: 14px;
   font-weight: 400;
-  text-transform: capitalize;
   &.active, &.active:hover {
     color: #2d2d2d;
     
