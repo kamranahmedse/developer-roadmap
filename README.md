@@ -12,15 +12,15 @@ Below you find a set of charts demonstrating the paths that you can take and the
 ***
 
 <p align="center">
-		<sup>Special thanks to:</sup>
+		<sup>Special Announcement:</sup>
 		<br>
-		<a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">
-			<img src="https://roadmap.sh/sponsors/do-brand.svg" width="250" alt="DigitalOcean">
+		<a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists">
+			<img width="70px" src="https://roadmap.sh/sponsors/youtube.svg">
 		</a>
 		<br>
-		<sub><b>Special thanks to DigitalOcean for sponsoring the project</b></sub>
+		<sub><b>We now have a YouTube Channel</b></sub>
 		<br>
-		<sub>I would personally recommend using DigitalOcean for your projects<br>Give it a try with this <a href="https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships">free 100$ credit</a>.</sub>
+		<sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists">Subscribe to the channel</a>.</sub>
 </p>
 
 ***
@@ -51,7 +51,7 @@ If you think that these can be improved in any way, please do suggest.
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/backend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
 
-![Back-end Roadmap](./img/backend.png?year-2020-1)
+![Back-end Roadmap](./img/backend.png?year-2020-2)
 
 ## DevOps Roadmap
 
