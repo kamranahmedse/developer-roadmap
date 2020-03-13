@@ -13,7 +13,7 @@ export function SponsorBanner({ onCloseBanner = () => null }){
             <SponsorLogo src='/sponsors/youtube.svg' />
             We now have a youtube channel
             <EmojiWrap src={'/sponsors/heart-eyes.svg'} />
-            <span className='d-none d-sm-inline-block'>Subscribe for the awesome content!</span>
+            <span className='d-none d-sm-inline-block'>Subscribe it for the video content.</span>
 
             <CloseSponsor
               onClick={(e) => {
