@@ -6,7 +6,7 @@ export function SponsorBanner({ onCloseBanner = () => null }){
     <div className='row'>
       <div className='col p-0'>
         <BannerWrap
-            href={`https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists?view_as=subscriber`}
+            href={`https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists`}
             target='_blank'
             className='alert alert-info'
         >
