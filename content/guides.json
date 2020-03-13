@@ -1,5 +1,15 @@
 [
   {
+    "title": "Big-O Notation",
+    "description": "Easy to understand explanation of Big-O notation without any fancy terms",
+    "url": "/guides/big-o-notation",
+    "fileName": "big-o-notation",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-03-14T15:48:21.191Z",
+    "createdAt": "2020-03-14T15:48:21.191Z"
+  },
+  {
     "title": "How does the internet work?",
     "description": "Learn the basics of internet and everything involved with this short video series",
     "url": "/guides/what-is-internet",
