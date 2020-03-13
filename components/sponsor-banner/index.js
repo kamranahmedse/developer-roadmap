@@ -6,14 +6,14 @@ export function SponsorBanner({ onCloseBanner = () => null }){
     <div className='row'>
       <div className='col p-0'>
         <BannerWrap
-            href={`https://try.digitalocean.com/developer-cloud/?utm_source=roadmapsh&utm_medium=partnerships`}
+            href={`https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists?view_as=subscriber`}
             target='_blank'
             className='alert alert-info'
         >
-            <SponsorLogo src='/sponsors/do.svg' />
-            Sponsored by DigitalOcean
+            <SponsorLogo src='/sponsors/youtube.svg' />
+            We now have a youtube channel
             <EmojiWrap src={'/sponsors/heart-eyes.svg'} />
-            <span className='d-none d-sm-inline-block'>Try them out with this 100$ credit!</span>
+            <span className='d-none d-sm-inline-block'>Subscribe for the awesome content!</span>
 
             <CloseSponsor
               onClick={(e) => {
