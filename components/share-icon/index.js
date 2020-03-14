@@ -5,6 +5,7 @@ export const ShareIcon = styled.a`
   width: 22px;
   height: 22px;
   margin-bottom: 8px;
+  text-align: center;
 
   svg {
     height: 22px !important;
