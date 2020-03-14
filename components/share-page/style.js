@@ -6,7 +6,7 @@ export const ShareIconsList = styled.div`
   align-items: center;
   justify-content: center;
   position: sticky;
-  top: 50px;
+  top: 65px;
 `;
 
 export const ShareWrap = styled.div`
