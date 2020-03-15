@@ -14,7 +14,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 <p align="center">
 		<sup>Special Announcement:</sup>
 		<br>
-		<a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists">
+		<a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now">
 			<img width="70px" src="https://roadmap.sh/sponsors/youtube.svg">
 		</a>
 		<br>
