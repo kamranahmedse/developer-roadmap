@@ -20,7 +20,7 @@ Below you find a set of charts demonstrating the paths that you can take and the
 		<br>
 		<sub><b>We now have a YouTube Channel</b></sub>
 		<br>
-		<sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now/playlists">Subscribe to the channel</a>.</sub>
+		<sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now">Subscribe to the channel</a>.</sub>
 </p>
 
 ***
