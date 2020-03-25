@@ -44,7 +44,7 @@ With the help of HTML, you create structure for your pages. CSS allows you to st
 ## Basics of JavaScript
 JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. In this section, you will learn the basics of JavaScript.
 
-* <BadgeLink badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools – JavaScript Tutorial</BadgeLink>
+* <BadgeLink badgeText='Read' href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>
 * <BadgeLink variant='primary' badgeText='Watch' href='https://youtu.be/hdI2bqOjy3c?t=2'>JavaScript Crash Course for Beginners</BadgeLink>
 * <BadgeLink variant='primary' badgeText='Watch' href='https://youtu.be/P7t13SGytRk?t=22'>Build a Netflix Landing Page Clone with HTML, CSS & JS</BadgeLink>
 
