@@ -53,8 +53,6 @@ const PageFooter = () => (
       </div>
     </div>
 
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-
     {/* Do not show on local */}
     { process.env.GA_SECRET && (
       <>
