@@ -7,6 +7,17 @@ export const HeaderWrap = styled.div`
   .top-row {
     display: flex;
     align-items: center;
+    
+    > span {
+      display: flex;
+      margin-left: 12px;
+    }
+    
+    .github-button {
+      font-size: 16px;
+      color: #666;
+      padding-left: 10px;
+    }
   }
 
   .brand img {

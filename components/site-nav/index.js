@@ -13,8 +13,9 @@ const SiteNav = () => (
         <a href='/guides'>Guides</a>
         <a href='/sponsors' className='d-none d-md-inline-block'>Sponsors</a>
         <a href='/about' className='d-none d-md-inline-block'>FAQ</a>
-        <a href='/signup' className='signup'>Subscribe</a>
+        <a href='/signup' className='d-none d-md-inline-block'>Subscribe</a>
       </div>
+      <a className="github-button" href="https://github.com/kamranahmedse/developer-roadmap" data-size="large" data-show-count="true" aria-label="Star kamranahmedse/developer-roadmap on GitHub">GitHub</a>
     </div>
   </HeaderWrap>
 );
