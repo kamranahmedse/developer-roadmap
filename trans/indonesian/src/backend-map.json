@@ -5285,22 +5285,24 @@
                     "x": "497",
                     "y": "1915",
                     "properties": {
-                        "color": "16776960"
+                        "color": "16776960",
+                        "align": "center"
                     }
                 },
                 {
                     "ID": "268",
                     "typeID": "Label",
                     "zOrder": "268",
-                    "w": "63",
-                    "measuredW": "60",
+                    "w": "77",
+                    "measuredW": "68",
                     "measuredH": "25",
-                    "x": "545",
+                    "x": "538",
                     "y": "1928",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Testing"
+                        "text": "Uji coba",
+                        "align": "center"
                     }
                 },
                 {
@@ -7027,7 +7029,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Internet"
+                        "text": "Internet",
+                        "align": "center"
                     }
                 },
                 {
@@ -7048,14 +7051,15 @@
                     "ID": "364",
                     "typeID": "Label",
                     "zOrder": "364",
-                    "w": "223",
-                    "measuredW": "223",
+                    "w": "246",
+                    "measuredW": "243",
                     "measuredH": "25",
-                    "x": "204",
+                    "x": "193",
                     "y": "355",
                     "properties": {
                         "size": "17",
-                        "text": "Bagaimana internet bekerja?"
+                        "text": "Bagaimana cara kerja internet?",
+                        "align": "center"
                     }
                 },
                 {
@@ -7083,7 +7087,8 @@
                     "y": "403",
                     "properties": {
                         "size": "17",
-                        "text": "Apa itu HTTP?"
+                        "text": "Apa itu HTTP?",
+                        "align": "center"
                     }
                 },
                 {
@@ -7107,11 +7112,12 @@
                     "w": "230",
                     "measuredW": "229",
                     "measuredH": "25",
-                    "x": "200",
+                    "x": "201",
                     "y": "449",
                     "properties": {
                         "size": "17",
-                        "text": "Peramban dan cara kerjanya?"
+                        "text": "Peramban dan cara kerjanya?",
+                        "align": "center"
                     }
                 },
                 {
@@ -7132,14 +7138,15 @@
                     "ID": "370",
                     "typeID": "Label",
                     "zOrder": "370",
-                    "w": "179",
+                    "w": "192",
                     "measuredW": "187",
                     "measuredH": "25",
-                    "x": "1010",
+                    "x": "1003",
                     "y": "348",
                     "properties": {
                         "size": "17",
-                        "text": "DNS dan cara kerjanya?"
+                        "text": "DNS dan cara kerjanya?",
+                        "align": "center"
                     }
                 },
                 {
@@ -7163,11 +7170,12 @@
                     "w": "179",
                     "measuredW": "177",
                     "measuredH": "25",
-                    "x": "1009",
+                    "x": "1008",
                     "y": "394",
                     "properties": {
                         "size": "17",
-                        "text": "Apa itu Nama Domain?"
+                        "text": "Apa itu Nama Domain?",
+                        "align": "center"
                     }
                 },
                 {
@@ -7191,11 +7199,12 @@
                     "w": "133",
                     "measuredW": "126",
                     "measuredH": "25",
-                    "x": "1033",
+                    "x": "1032",
                     "y": "440",
                     "properties": {
                         "size": "17",
-                        "text": "Apa itu hosting?"
+                        "text": "Apa itu hosting?",
+                        "align": "center"
                     }
                 },
                 {
@@ -8414,13 +8423,13 @@
                     "typeID": "Label",
                     "zOrder": "443",
                     "w": "305",
-                    "measuredW": "293",
+                    "measuredW": "302",
                     "measuredH": "23",
                     "x": "810",
                     "y": "1090",
                     "properties": {
                         "size": "15",
-                        "text": "Buat akun dan pelajari penggunaan GitHub",
+                        "text": "Buat akun dan belajar menggunakan GitHub",
                         "align": "center"
                     }
                 },
