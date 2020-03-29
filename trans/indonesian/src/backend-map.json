@@ -5676,13 +5676,13 @@
                     "ID": "292",
                     "typeID": "Label",
                     "zOrder": "292",
-                    "measuredW": "222",
+                    "measuredW": "262",
                     "measuredH": "24",
                     "x": "166",
                     "y": "247",
                     "properties": {
                         "size": "16",
-                        "text": "Saya tidak merekomendasikan"
+                        "text": "Saya tidak akan merekomendasikan"
                     }
                 },
                 {
