@@ -7085,14 +7085,14 @@
                     "ID": "336",
                     "typeID": "Label",
                     "zOrder": "336",
-                    "measuredW": "189",
+                    "measuredW": "193",
                     "measuredH": "23",
-                    "x": "641",
+                    "x": "639",
                     "y": "491",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Manajemen Startup (intid)",
+                        "text": "Manajemen Startup (init.d)",
                         "align": "center"
                     }
                 },
