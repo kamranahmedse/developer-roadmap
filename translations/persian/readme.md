@@ -7,7 +7,7 @@
 
 ## Frontend Roadmap
 
-![](./img/front-end.png)
+![](./img/frontend-map.png)
 
 ## Backend Roadmap
 
