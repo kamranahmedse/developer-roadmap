@@ -3814,7 +3814,7 @@
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Aprende infraestructura como código"
+                        "text": "Aprende infraestructura cómo código"
                     }
                 },
                 {
@@ -14204,7 +14204,7 @@
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Aprende como monitorear el software y la infraestructura",
+                        "text": "Aprende cómo monitorear el software y la infraestructura",
                         "align": "center"
                     }
                 }

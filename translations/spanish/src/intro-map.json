@@ -108,7 +108,7 @@
                     "w": "319",
                     "measuredW": "224",
                     "measuredH": "32",
-                    "x": "68",
+                    "x": "66",
                     "y": "81",
                     "properties": {
                         "align": "center",
@@ -124,8 +124,8 @@
                     "w": "320",
                     "measuredW": "50",
                     "measuredH": "32",
-                    "x": "67",
-                    "y": "318",
+                    "x": "66",
+                    "y": "316",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -140,8 +140,8 @@
                     "w": "320",
                     "measuredW": "189",
                     "measuredH": "32",
-                    "x": "67",
-                    "y": "356",
+                    "x": "66",
+                    "y": "355",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -170,7 +170,7 @@
                     "w": "320",
                     "measuredW": "211",
                     "measuredH": "32",
-                    "x": "67",
+                    "x": "66",
                     "y": "120",
                     "properties": {
                         "align": "center",
@@ -364,8 +364,8 @@
                     "w": "319",
                     "measuredW": "70",
                     "measuredH": "32",
-                    "x": "68",
-                    "y": "201",
+                    "x": "66",
+                    "y": "198",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -380,7 +380,7 @@
                     "w": "319",
                     "measuredW": "293",
                     "measuredH": "32",
-                    "x": "68",
+                    "x": "66",
                     "y": "159",
                     "properties": {
                         "align": "center",
@@ -396,7 +396,7 @@
                     "w": "319",
                     "measuredW": "235",
                     "measuredH": "32",
-                    "x": "68",
+                    "x": "66",
                     "y": "434",
                     "properties": {
                         "align": "center",
@@ -412,8 +412,8 @@
                     "w": "319",
                     "measuredW": "170",
                     "measuredH": "32",
-                    "x": "68",
-                    "y": "395",
+                    "x": "66",
+                    "y": "394",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -428,8 +428,8 @@
                     "w": "319",
                     "measuredW": "93",
                     "measuredH": "32",
-                    "x": "68",
-                    "y": "240",
+                    "x": "66",
+                    "y": "237",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -444,8 +444,8 @@
                     "w": "319",
                     "measuredW": "207",
                     "measuredH": "32",
-                    "x": "68",
-                    "y": "279",
+                    "x": "66",
+                    "y": "277",
                     "properties": {
                         "align": "center",
                         "color": "16776960",
@@ -454,173 +454,89 @@
                     }
                 },
                 {
-                    "ID": "23",
-                    "typeID": "__group__",
+                    "ID": "707",
+                    "typeID": "Canvas",
                     "zOrder": "23",
-                    "measuredW": "392",
-                    "measuredH": "133",
                     "w": "392",
                     "h": "133",
-                    "x": "924",
-                    "y": "81",
+                    "measuredW": "100",
+                    "measuredH": "70",
+                    "x": "930",
+                    "y": "81"
+                },
+                {
+                    "ID": "710",
+                    "typeID": "Canvas",
+                    "zOrder": "25",
+                    "w": "362",
+                    "h": "45",
+                    "measuredW": "100",
+                    "measuredH": "70",
+                    "x": "945",
+                    "y": "154",
+                    "properties": {
+                        "borderColor": "4273622",
+                        "color": "4273622"
+                    }
+                },
+                {
+                    "ID": "711",
+                    "typeID": "__group__",
+                    "zOrder": "26",
+                    "measuredW": "170",
+                    "measuredH": "28",
+                    "w": "170",
+                    "h": "28",
+                    "x": "1041",
+                    "y": "163",
                     "children": {
                         "controls": {
                             "control": [
                                 {
                                     "ID": "0",
-                                    "typeID": "Canvas",
+                                    "typeID": "Label",
                                     "zOrder": "0",
-                                    "w": "392",
-                                    "h": "133",
-                                    "measuredW": "100",
-                                    "measuredH": "70",
+                                    "measuredW": "170",
+                                    "measuredH": "28",
                                     "x": "0",
-                                    "y": "0"
-                                },
-                                {
-                                    "ID": "1",
-                                    "typeID": "Label",
-                                    "zOrder": "1",
-                                    "measuredW": "363",
-                                    "measuredH": "25",
-                                    "x": "14",
-                                    "y": "17",
+                                    "y": "0",
                                     "properties": {
-                                        "size": "17",
-                                        "text": "Encuentra una versión detallada de este mapa"
-                                    }
-                                },
-                                {
-                                    "ID": "2",
-                                    "typeID": "Label",
-                                    "zOrder": "2",
-                                    "measuredW": "295",
-                                    "measuredH": "25",
-                                    "x": "48",
-                                    "y": "42",
-                                    "properties": {
-                                        "size": "17",
-                                        "text": "así como más recursos y otros mapas"
-                                    }
-                                },
-                                {
-                                    "ID": "3",
-                                    "typeID": "Canvas",
-                                    "zOrder": "3",
-                                    "w": "362",
-                                    "h": "45",
-                                    "measuredW": "100",
-                                    "measuredH": "70",
-                                    "x": "15",
-                                    "y": "73",
-                                    "properties": {
-                                        "borderColor": "4273622",
-                                        "color": "4273622"
-                                    }
-                                },
-                                {
-                                    "ID": "4",
-                                    "typeID": "__group__",
-                                    "zOrder": "4",
-                                    "measuredW": "167",
-                                    "measuredH": "29",
-                                    "w": "167",
-                                    "h": "29",
-                                    "x": "91",
-                                    "y": "81",
-                                    "children": {
-                                        "controls": {
-                                            "control": [
-                                                {
-                                                    "ID": "0",
-                                                    "typeID": "Label",
-                                                    "zOrder": "0",
-                                                    "measuredW": "102",
-                                                    "measuredH": "28",
-                                                    "x": "65",
-                                                    "y": "0",
-                                                    "properties": {
-                                                        "color": "16777215",
-                                                        "size": "20",
-                                                        "text": "roadmap.sh"
-                                                    }
-                                                },
-                                                {
-                                                    "ID": "1",
-                                                    "typeID": "Label",
-                                                    "zOrder": "1",
-                                                    "measuredW": "36",
-                                                    "measuredH": "28",
-                                                    "x": "0",
-                                                    "y": "0",
-                                                    "properties": {
-                                                        "color": "16777215",
-                                                        "size": "20",
-                                                        "text": "http"
-                                                    }
-                                                },
-                                                {
-                                                    "ID": "2",
-                                                    "typeID": "Label",
-                                                    "zOrder": "2",
-                                                    "measuredW": "5",
-                                                    "measuredH": "28",
-                                                    "x": "37",
-                                                    "y": "0",
-                                                    "properties": {
-                                                        "bold": "true",
-                                                        "color": "16777215",
-                                                        "size": "20",
-                                                        "text": ":"
-                                                    }
-                                                },
-                                                {
-                                                    "ID": "3",
-                                                    "typeID": "Label",
-                                                    "zOrder": "3",
-                                                    "measuredW": "9",
-                                                    "measuredH": "28",
-                                                    "x": "44",
-                                                    "y": "1",
-                                                    "properties": {
-                                                        "color": "16777215",
-                                                        "size": "20",
-                                                        "text": "/"
-                                                    }
-                                                },
-                                                {
-                                                    "ID": "4",
-                                                    "typeID": "Label",
-                                                    "zOrder": "4",
-                                                    "measuredW": "9",
-                                                    "measuredH": "28",
-                                                    "x": "52",
-                                                    "y": "1",
-                                                    "properties": {
-                                                        "color": "16777215",
-                                                        "size": "20",
-                                                        "text": "/"
-                                                    }
-                                                }
-                                            ]
-                                        }
+                                        "color": "16777215",
+                                        "size": "20",
+                                        "text": "https://roadmap.sh"
                                     }
                                 }
                             ]
                         }
                     }
+                },
+                {
+                    "ID": "712",
+                    "typeID": "Paragraph",
+                    "zOrder": "24",
+                    "w": "363",
+                    "h": "49",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "944",
+                    "y": "98",
+                    "properties": {
+                        "size": "17",
+                        "text": "Encuentra una versión detallada de este mapa así como más recursos y otros mapas",
+                        "align": "center"
+                    }
                 }
             ]
         },
         "attributes": {
-            "name": "Introducción",
+            "name": "intro-map",
             "order": 1000000,
             "parentID": null
         },
         "resourceID": "22A18E7E-FD87-44EF-9864-6CAEEE79F3DF",
         "mockupH": "436",
-        "mockupW": "1249",
-        "measuredW": "1316",
+        "mockupW": "1256",
+        "measuredW": "1322",
         "measuredH": "481",
         "version": "1.0"
     }
