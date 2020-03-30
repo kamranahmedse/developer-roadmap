@@ -2883,14 +2883,13 @@
                     "ID": "142",
                     "typeID": "Label",
                     "zOrder": "131",
-                    "w": "292",
-                    "measuredW": "275",
+                    "measuredW": "270",
                     "measuredH": "23",
-                    "x": "552",
+                    "x": "563",
                     "y": "922",
                     "properties": {
                         "size": "15",
-                        "text": "¿Qué son y por qué deberías usar uno?"
+                        "text": "¿Qué son y porqué deberías usar uno?"
                     }
                 },
                 {
