@@ -11773,7 +11773,7 @@
                     "y": "786",
                     "properties": {
                         "size": "17",
-                        "text": "Comandos básicos de terminal\ngrep, awk, sed, lsof, curl, wget, tail, head, less, find, ssh, kill",
+                        "text": "Comandos básicos de terminal",
                         "bold": "true",
                         "align": "center"
                     }
@@ -11895,6 +11895,22 @@
                         "size": "17",
                         "text": "Degradación\ngradual",
                         "align": "right"
+                    }
+                },
+                {
+                    "ID": "715",
+                    "typeID": "Paragraph",
+                    "zOrder": "667",
+                    "w": "256",
+                    "h": "44",
+                    "measuredW": "275",
+                    "measuredH": "80",
+                    "x": "205",
+                    "y": "806",
+                    "properties": {
+                        "size": "17",
+                        "text": "grep, awk, sed, lsof, curl, wget, tail, head, less, find, ssh, kill",
+                        "align": "center"
                     }
                 }
             ]
