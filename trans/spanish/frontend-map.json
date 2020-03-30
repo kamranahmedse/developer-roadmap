@@ -1,7 +1,8 @@
 {
     "mockup": {
         "controls": {
-            "control": [{
+            "control": [
+                {
                     "ID": "0",
                     "typeID": "Arrow",
                     "zOrder": "0",
@@ -2553,7 +2554,7 @@
                     "y": "409",
                     "properties": {
                         "size": "17",
-                        "text": "¿Cómo funciona el internet?"
+                        "text": "¿Cómo funciona la internet?"
                     }
                 },
                 {
@@ -2602,10 +2603,9 @@
                     "ID": "122",
                     "typeID": "Label",
                     "zOrder": "111",
-                    "w": "243",
                     "measuredW": "250",
                     "measuredH": "25",
-                    "x": "188",
+                    "x": "185",
                     "y": "503",
                     "properties": {
                         "size": "17",
@@ -2630,10 +2630,9 @@
                     "ID": "124",
                     "typeID": "Label",
                     "zOrder": "113",
-                    "w": "179",
                     "measuredW": "187",
                     "measuredH": "25",
-                    "x": "925",
+                    "x": "921",
                     "y": "404",
                     "properties": {
                         "size": "17",
@@ -11252,20 +11251,22 @@
                     "y": "285",
                     "children": {
                         "controls": {
-                            "control": [{
-                                "ID": "0",
-                                "typeID": "Label",
-                                "zOrder": "0",
-                                "measuredW": "170",
-                                "measuredH": "28",
-                                "x": "0",
-                                "y": "0",
-                                "properties": {
-                                    "color": "16777215",
-                                    "size": "20",
-                                    "text": "https://roadmap.sh"
+                            "control": [
+                                {
+                                    "ID": "0",
+                                    "typeID": "Label",
+                                    "zOrder": "0",
+                                    "measuredW": "170",
+                                    "measuredH": "28",
+                                    "x": "0",
+                                    "y": "0",
+                                    "properties": {
+                                        "color": "16777215",
+                                        "size": "20",
+                                        "text": "https://roadmap.sh"
+                                    }
                                 }
-                            }]
+                            ]
                         }
                     }
                 },
@@ -11462,7 +11463,7 @@
             ]
         },
         "attributes": {
-            "name": "Front-end",
+            "name": "frontend-map",
             "order": 1000011.3008971654,
             "parentID": null
         },
