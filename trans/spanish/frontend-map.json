@@ -3300,11 +3300,11 @@
                     "ID": "174",
                     "typeID": "TextArea",
                     "zOrder": "161",
-                    "w": "257",
+                    "w": "305",
                     "h": "49",
                     "measuredW": "200",
                     "measuredH": "140",
-                    "x": "1053",
+                    "x": "1025",
                     "y": "1266",
                     "properties": {
                         "color": "16770457"
@@ -3314,10 +3314,9 @@
                     "ID": "175",
                     "typeID": "Label",
                     "zOrder": "162",
-                    "w": "187",
                     "measuredW": "292",
                     "measuredH": "25",
-                    "x": "1088",
+                    "x": "1032",
                     "y": "1278",
                     "properties": {
                         "bold": "true",
