@@ -30,6 +30,16 @@
     "createdAt": "2020-03-14T15:48:21.191Z"
   },
   {
+    "title": "Scaling Databases",
+    "description": "Learn the ups and downs of different database scaling strategies",
+    "url": "/guides/scaling-databases",
+    "fileName": "scaling-databases",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-02-18T15:48:21.191Z",
+    "createdAt": "2020-02-18T15:48:21.191Z"
+  },
+  {
     "title": "How does the internet work?",
     "description": "Learn the basics of internet and everything involved with this short video series",
     "url": "/guides/what-is-internet",
