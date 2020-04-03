@@ -1,19 +1,29 @@
 [
   {
-    "title": "Random Numbers: Are they?",
-    "description": "Learn how they are generated and why they may not be truly random.",
-    "url": "/guides/random-numbers",
-    "fileName": "random-numbers",
+    "title": "Asymptotic Notation",
+    "description": "Learn the basics of measuring the time and space complexity of algorithms",
+    "url": "/guides/asymptotic-notation",
+    "fileName": "asymptotic-notation",
     "featured": true,
     "author": "kamranahmedse",
-    "updatedAt": "2020-03-15T15:48:21.191Z",
-    "createdAt": "2020-03-15T15:48:21.191Z"
+    "updatedAt": "2020-04-03T15:48:21.191Z",
+    "createdAt": "2020-04-03T15:48:21.191Z"
   },
   {
     "title": "Big-O Notation",
     "description": "Easy to understand explanation of Big-O notation without any fancy terms",
     "url": "/guides/big-o-notation",
     "fileName": "big-o-notation",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-03-15T15:48:21.191Z",
+    "createdAt": "2020-03-15T15:48:21.191Z"
+  },
+  {
+    "title": "Random Numbers: Are they?",
+    "description": "Learn how they are generated and why they may not be truly random.",
+    "url": "/guides/random-numbers",
+    "fileName": "random-numbers",
     "featured": true,
     "author": "kamranahmedse",
     "updatedAt": "2020-03-14T15:48:21.191Z",

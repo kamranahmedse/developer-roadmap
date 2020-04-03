@@ -31,13 +31,19 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/guides/random-numbers</loc>
+              <loc>https://roadmap.sh/guides/asymptotic-notation</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-04-03T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/big-o-notation</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-03-15T15:48:21.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/guides/big-o-notation</loc>
+              <loc>https://roadmap.sh/guides/random-numbers</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-03-14T15:48:21.191Z</lastmod>
               <priority>1.0</priority>
