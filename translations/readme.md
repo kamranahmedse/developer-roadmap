@@ -14,6 +14,7 @@ Thanks to all the contributors for helping us translate the roadmaps.
 * [Indonesian](./indonesian)
 * [Korean](./korean)
 * [Persian](./persian)
+* [Russian](./russian)
 * [Spanish](./spanish)
 
 If you would like to help us translate or improve any of the translations, please [have a look at this issue for guidelines](https://github.com/kamranahmedse/developer-roadmap/issues/669)
