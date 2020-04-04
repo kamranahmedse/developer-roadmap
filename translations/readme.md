@@ -7,6 +7,7 @@
 
 Thanks to all the contributors for helping us translate the roadmaps.
 
+* [Arabic](./arabic)
 * [Brazilian Portuguese](./portuguese)
 * [Chinese](./chinese)
 * [German](./german)
