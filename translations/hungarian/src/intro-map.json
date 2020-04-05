@@ -1,0 +1,627 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "0",
+                    "typeID": "Label",
+                    "zOrder": "0",
+                    "measuredW": "364",
+                    "measuredH": "40",
+                    "x": "491",
+                    "y": "74",
+                    "properties": {
+                        "bold": "true",
+                        "size": "32",
+                        "text": "Webfejlesztő 2020-ban"
+                    }
+                },
+                {
+                    "ID": "1",
+                    "typeID": "Arrow",
+                    "zOrder": "1",
+                    "w": "75",
+                    "h": "129",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "683",
+                    "y": "230",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4787915073918851,
+                            "y": 0.19568921844056555
+                        },
+                        "p2": {
+                            "x": 73,
+                            "y": 128
+                        }
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Arrow",
+                    "zOrder": "2",
+                    "w": "133",
+                    "h": "131",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "518",
+                    "y": "229",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 131,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5684088130944218,
+                            "y": -0.21788259145523384
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 129
+                        }
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "TextInput",
+                    "zOrder": "3",
+                    "w": "132",
+                    "measuredW": "93",
+                    "measuredH": "32",
+                    "x": "441",
+                    "y": "367",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "Front-end"
+                    }
+                },
+                {
+                    "ID": "4",
+                    "typeID": "Label",
+                    "zOrder": "4",
+                    "measuredW": "289",
+                    "measuredH": "28",
+                    "x": "519",
+                    "y": "189",
+                    "properties": {
+                        "bold": "true",
+                        "size": "20",
+                        "text": "Válassz a szakterületek közül"
+                    }
+                },
+                {
+                    "ID": "5",
+                    "typeID": "TextInput",
+                    "zOrder": "5",
+                    "w": "288",
+                    "measuredW": "161",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "81",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Git - Verziókezelő"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "typeID": "TextInput",
+                    "zOrder": "6",
+                    "w": "289",
+                    "measuredW": "50",
+                    "measuredH": "32",
+                    "x": "67",
+                    "y": "318",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "SSH"
+                    }
+                },
+                {
+                    "ID": "7",
+                    "typeID": "TextInput",
+                    "zOrder": "7",
+                    "w": "289",
+                    "measuredW": "206",
+                    "measuredH": "32",
+                    "x": "67",
+                    "y": "356",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "HTTP/HTTPS és API-k"
+                    }
+                },
+                {
+                    "ID": "8",
+                    "typeID": "Label",
+                    "zOrder": "8",
+                    "measuredW": "277",
+                    "measuredH": "25",
+                    "x": "67",
+                    "y": "45",
+                    "properties": {
+                        "bold": "true",
+                        "size": "17",
+                        "text": "Minden szakterülethez szükséges"
+                    }
+                },
+                {
+                    "ID": "9",
+                    "typeID": "TextInput",
+                    "zOrder": "9",
+                    "w": "289",
+                    "measuredW": "241",
+                    "measuredH": "32",
+                    "x": "67",
+                    "y": "120",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Alapszintű terminál kezelés"
+                    }
+                },
+                {
+                    "ID": "10",
+                    "typeID": "Arrow",
+                    "zOrder": "10",
+                    "w": "1",
+                    "h": "47",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "664",
+                    "y": "135",
+                    "properties": {
+                        "color": "6710886",
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5,
+                            "y": 0
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 46
+                        },
+                        "rightArrow": "false"
+                    }
+                },
+                {
+                    "ID": "11",
+                    "typeID": "TextInput",
+                    "zOrder": "11",
+                    "w": "121",
+                    "measuredW": "92",
+                    "measuredH": "32",
+                    "x": "679",
+                    "y": "368",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "Back-end"
+                    }
+                },
+                {
+                    "ID": "12",
+                    "typeID": "Arrow",
+                    "zOrder": "12",
+                    "w": "2",
+                    "h": "71",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "509",
+                    "y": "407",
+                    "properties": {
+                        "color": "2848996",
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5621504039776257,
+                            "y": 0.004661280298321849
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 69
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "13",
+                    "typeID": "Arrow",
+                    "zOrder": "13",
+                    "w": "123",
+                    "h": "12",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "811",
+                    "y": "373",
+                    "properties": {
+                        "color": "2848996",
+                        "curvature": "-1",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 11
+                        },
+                        "p1": {
+                            "x": 0.45357350377687367,
+                            "y": 0.059732713538640264
+                        },
+                        "p2": {
+                            "x": 122,
+                            "y": 4
+                        }
+                    }
+                },
+                {
+                    "ID": "14",
+                    "typeID": "TextInput",
+                    "zOrder": "14",
+                    "w": "112",
+                    "measuredW": "81",
+                    "measuredH": "32",
+                    "x": "946",
+                    "y": "361",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "DevOps"
+                    }
+                },
+                {
+                    "ID": "15",
+                    "typeID": "Arrow",
+                    "zOrder": "15",
+                    "w": "2",
+                    "h": "71",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "729",
+                    "y": "410",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4608695652173913,
+                            "y": 0.01304347826086956
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 69
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "16",
+                    "typeID": "Arrow",
+                    "zOrder": "16",
+                    "w": "1",
+                    "h": "77",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "997",
+                    "y": "403",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4537465672812867,
+                            "y": 0.01247548058061985
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 76
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "17",
+                    "typeID": "TextInput",
+                    "zOrder": "17",
+                    "w": "288",
+                    "measuredW": "70",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "201",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "GitHub"
+                    }
+                },
+                {
+                    "ID": "18",
+                    "typeID": "TextInput",
+                    "zOrder": "18",
+                    "w": "288",
+                    "measuredW": "274",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "159",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Adatstruktúrák és Algoritmusok"
+                    }
+                },
+                {
+                    "ID": "19",
+                    "typeID": "TextInput",
+                    "zOrder": "19",
+                    "w": "288",
+                    "measuredW": "168",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "434",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Karakterkódolások"
+                    }
+                },
+                {
+                    "ID": "20",
+                    "typeID": "TextInput",
+                    "zOrder": "20",
+                    "w": "288",
+                    "measuredW": "220",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "395",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Programtervezési minták"
+                    }
+                },
+                {
+                    "ID": "21",
+                    "typeID": "TextInput",
+                    "zOrder": "21",
+                    "w": "288",
+                    "measuredW": "98",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "240",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Licenszek"
+                    }
+                },
+                {
+                    "ID": "22",
+                    "typeID": "TextInput",
+                    "zOrder": "22",
+                    "w": "288",
+                    "measuredW": "263",
+                    "measuredH": "32",
+                    "x": "68",
+                    "y": "279",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Szemantikus verziószámozás"
+                    }
+                },
+                {
+                    "ID": "23",
+                    "typeID": "__group__",
+                    "zOrder": "23",
+                    "measuredW": "350",
+                    "measuredH": "141",
+                    "w": "350",
+                    "h": "141",
+                    "x": "924",
+                    "y": "81",
+                    "children": {
+                        "controls": {
+                            "control": [
+                                {
+                                    "ID": "0",
+                                    "typeID": "Canvas",
+                                    "zOrder": "0",
+                                    "w": "350",
+                                    "h": "141",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "0",
+                                    "y": "0"
+                                },
+                                {
+                                    "ID": "1",
+                                    "typeID": "Label",
+                                    "zOrder": "1",
+                                    "measuredW": "295",
+                                    "measuredH": "25",
+                                    "x": "25",
+                                    "y": "17",
+                                    "properties": {
+                                        "size": "17",
+                                        "text": "A részletes ütemtervekért és további"
+                                    }
+                                },
+                                {
+                                    "ID": "2",
+                                    "typeID": "Label",
+                                    "zOrder": "2",
+                                    "measuredW": "285",
+                                    "measuredH": "25",
+                                    "x": "32",
+                                    "y": "45",
+                                    "properties": {
+                                        "size": "17",
+                                        "text": "hasznos információkért látogass ide:"
+                                    }
+                                },
+                                {
+                                    "ID": "3",
+                                    "typeID": "Canvas",
+                                    "zOrder": "3",
+                                    "w": "320",
+                                    "h": "45",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "15",
+                                    "y": "81",
+                                    "properties": {
+                                        "borderColor": "4273622",
+                                        "color": "4273622"
+                                    }
+                                },
+                                {
+                                    "ID": "4",
+                                    "typeID": "__group__",
+                                    "zOrder": "4",
+                                    "measuredW": "167",
+                                    "measuredH": "29",
+                                    "w": "167",
+                                    "h": "29",
+                                    "x": "91",
+                                    "y": "89",
+                                    "children": {
+                                        "controls": {
+                                            "control": [
+                                                {
+                                                    "ID": "0",
+                                                    "typeID": "Label",
+                                                    "zOrder": "0",
+                                                    "measuredW": "102",
+                                                    "measuredH": "28",
+                                                    "x": "65",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "roadmap.sh"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "1",
+                                                    "typeID": "Label",
+                                                    "zOrder": "1",
+                                                    "measuredW": "36",
+                                                    "measuredH": "28",
+                                                    "x": "0",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "http"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "2",
+                                                    "typeID": "Label",
+                                                    "zOrder": "2",
+                                                    "measuredW": "5",
+                                                    "measuredH": "28",
+                                                    "x": "37",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "bold": "true",
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": ":"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "3",
+                                                    "typeID": "Label",
+                                                    "zOrder": "3",
+                                                    "measuredW": "9",
+                                                    "measuredH": "28",
+                                                    "x": "44",
+                                                    "y": "1",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "/"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "4",
+                                                    "typeID": "Label",
+                                                    "zOrder": "4",
+                                                    "measuredW": "9",
+                                                    "measuredH": "28",
+                                                    "x": "52",
+                                                    "y": "1",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "/"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "attributes": {
+            "name": "New Wireframe 1",
+            "order": 1000000,
+            "parentID": null
+        },
+        "resourceID": "BFEAC859-5D8A-4646-9098-83CB4DB69FF6",
+        "mockupH": "436",
+        "mockupW": "1207",
+        "measuredW": "1274",
+        "measuredH": "481",
+        "version": "1.0"
+    }
+}
