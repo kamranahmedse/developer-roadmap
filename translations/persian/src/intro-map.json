@@ -1,0 +1,601 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "0",
+          "measuredH": "58",
+          "measuredW": "327",
+          "properties": {
+            "bold": "true",
+            "size": "32",
+            "text": "توسعه دهنده وب در 2020"
+          },
+          "typeID": "Label",
+          "x": "503",
+          "y": "73",
+          "zOrder": "0"
+        },
+        {
+          "ID": "1",
+          "h": "129",
+          "measuredH": "128",
+          "measuredW": "74",
+          "properties": {
+            "color": "2848996",
+            "curvature": "1",
+            "direction": "top",
+            "leftArrow": "false",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.4787915073918851, "y": 0.19568921844056555 },
+            "p2": { "x": 73, "y": 128 },
+            "shape": "bezier"
+          },
+          "typeID": "Arrow",
+          "w": "75",
+          "x": "683",
+          "y": "230",
+          "zOrder": "1"
+        },
+        {
+          "ID": "2",
+          "h": "131",
+          "measuredH": "129",
+          "measuredW": "131",
+          "properties": {
+            "color": "2848996",
+            "curvature": "1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "p0": { "length": 131, "x": 131, "y": 0 },
+            "p1": {
+              "length": 0.6087375480965977,
+              "x": 0.5684088130944218,
+              "y": -0.21788259145523384
+            },
+            "p2": { "length": 129.00387591076478, "x": 1, "y": 129 },
+            "shape": "bezier"
+          },
+          "typeID": "Arrow",
+          "w": "133",
+          "x": "518",
+          "y": "229",
+          "zOrder": "2"
+        },
+        {
+          "ID": "3",
+          "measuredH": "43",
+          "measuredW": "91",
+          "properties": {
+            "align": "center",
+            "color": "16767334",
+            "size": "18",
+            "text": "Front-end"
+          },
+          "typeID": "TextInput",
+          "w": "132",
+          "x": "441",
+          "y": "367",
+          "zOrder": "3"
+        },
+        {
+          "ID": "4",
+          "measuredH": "40",
+          "measuredW": "190",
+          "properties": {
+            "bold": "true",
+            "size": "20",
+            "text": "مسیر خود را انتخاب کنید"
+          },
+          "typeID": "Label",
+          "x": "571",
+          "y": "186",
+          "zOrder": "4"
+        },
+        {
+          "ID": "5",
+          "measuredH": "43",
+          "measuredW": "141",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "گیت - ورژن کنترل"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "81",
+          "zOrder": "5"
+        },
+        {
+          "ID": "6",
+          "measuredH": "43",
+          "measuredW": "50",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "SSH"
+          },
+          "typeID": "TextInput",
+          "w": "289",
+          "x": "67",
+          "y": "318",
+          "zOrder": "6"
+        },
+        {
+          "ID": "7",
+          "measuredH": "43",
+          "measuredW": "201",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "HTTP/HTTPS and APIs"
+          },
+          "typeID": "TextInput",
+          "w": "289",
+          "x": "67",
+          "y": "356",
+          "zOrder": "7"
+        },
+        {
+          "ID": "8",
+          "measuredH": "35",
+          "measuredW": "163",
+          "properties": {
+            "bold": "true",
+            "size": "17",
+            "text": "مورد نیاز برای هر مسیری"
+          },
+          "typeID": "Label",
+          "x": "125",
+          "y": "44",
+          "zOrder": "8"
+        },
+        {
+          "ID": "9",
+          "measuredH": "43",
+          "measuredW": "180",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "مهارت مقدماتی ترمینال"
+          },
+          "typeID": "TextInput",
+          "w": "289",
+          "x": "67",
+          "y": "120",
+          "zOrder": "9"
+        },
+        {
+          "ID": "10",
+          "h": "47",
+          "measuredH": "46",
+          "measuredW": "0",
+          "properties": {
+            "color": "6710886",
+            "curvature": "0",
+            "direction": "top",
+            "leftArrow": "false",
+            "p0": { "length": 0, "x": 0, "y": 0 },
+            "p1": { "length": 0.5, "x": 0.5, "y": 0 },
+            "p2": { "length": 46, "x": 0, "y": 46 },
+            "rightArrow": "false",
+            "shape": "bezier"
+          },
+          "typeID": "Arrow",
+          "w": "1",
+          "x": "664",
+          "y": "135",
+          "zOrder": "10"
+        },
+        {
+          "ID": "11",
+          "measuredH": "43",
+          "measuredW": "89",
+          "properties": {
+            "align": "center",
+            "color": "16767334",
+            "size": "18",
+            "text": "Back-end"
+          },
+          "typeID": "TextInput",
+          "w": "121",
+          "x": "679",
+          "y": "368",
+          "zOrder": "11"
+        },
+        {
+          "ID": "12",
+          "h": "71",
+          "measuredH": "69",
+          "measuredW": "0",
+          "properties": {
+            "color": "2848996",
+            "curvature": "0",
+            "direction": "top",
+            "leftArrow": "false",
+            "p0": { "length": 0, "x": 0, "y": 0 },
+            "p1": {
+              "length": 0.5621697290198284,
+              "x": 0.5621504039776257,
+              "y": 0.004661280298321849
+            },
+            "p2": { "length": 69, "x": 0, "y": 69 },
+            "rightArrow": "false",
+            "shape": "bezier",
+            "stroke": "dotted"
+          },
+          "typeID": "Arrow",
+          "w": "2",
+          "x": "509",
+          "y": "418",
+          "zOrder": "12"
+        },
+        {
+          "ID": "13",
+          "h": "12",
+          "measuredH": "11",
+          "measuredW": "122",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "p0": { "length": 11, "x": 0, "y": 11 },
+            "p1": {
+              "length": 0.4574898035968877,
+              "x": 0.45357350377687367,
+              "y": 0.059732713538640264
+            },
+            "p2": { "length": 122.06555615733704, "x": 122, "y": 4 },
+            "shape": "bezier",
+            "stroke": "solid"
+          },
+          "typeID": "Arrow",
+          "w": "123",
+          "x": "811",
+          "y": "373",
+          "zOrder": "13"
+        },
+        {
+          "ID": "14",
+          "measuredH": "43",
+          "measuredW": "76",
+          "properties": {
+            "align": "center",
+            "color": "16767334",
+            "size": "18",
+            "text": "DevOps"
+          },
+          "typeID": "TextInput",
+          "w": "112",
+          "x": "946",
+          "y": "361",
+          "zOrder": "14"
+        },
+        {
+          "ID": "15",
+          "h": "71",
+          "measuredH": "69",
+          "measuredW": "0",
+          "properties": {
+            "color": "2848996",
+            "curvature": "1",
+            "direction": "top",
+            "leftArrow": "false",
+            "p0": { "length": 0, "x": 0, "y": 0 },
+            "p1": {
+              "length": 0.46105410579324535,
+              "x": 0.4608695652173913,
+              "y": 0.01304347826086956
+            },
+            "p2": { "length": 69, "x": 0, "y": 69 },
+            "rightArrow": "false",
+            "shape": "bezier",
+            "stroke": "dotted"
+          },
+          "typeID": "Arrow",
+          "w": "2",
+          "x": "729",
+          "y": "418",
+          "zOrder": "15"
+        },
+        {
+          "ID": "16",
+          "h": "77",
+          "measuredH": "76",
+          "measuredW": "0",
+          "properties": {
+            "color": "2848996",
+            "curvature": "1",
+            "direction": "top",
+            "leftArrow": "false",
+            "p0": { "length": 0, "x": 0, "y": 0 },
+            "p1": {
+              "length": 0.4539180376844135,
+              "x": 0.4537465672812867,
+              "y": 0.01247548058061985
+            },
+            "p2": { "length": 76, "x": 0, "y": 76 },
+            "rightArrow": "false",
+            "shape": "bezier",
+            "stroke": "dotted"
+          },
+          "typeID": "Arrow",
+          "w": "1",
+          "x": "997",
+          "y": "410",
+          "zOrder": "16"
+        },
+        {
+          "ID": "17",
+          "measuredH": "43",
+          "measuredW": "70",
+          "properties": {
+            "align": "center",
+            "borderStyle": "rectangle",
+            "color": "16776960",
+            "size": "18",
+            "text": "GitHub"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "201",
+          "zOrder": "17"
+        },
+        {
+          "ID": "18",
+          "measuredH": "43",
+          "measuredW": "173",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "ساختار داده و الگوریتم"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "159",
+          "zOrder": "18"
+        },
+        {
+          "ID": "19",
+          "measuredH": "43",
+          "measuredW": "142",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "رمزگذاری کاراکترها"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "434",
+          "zOrder": "19"
+        },
+        {
+          "ID": "20",
+          "measuredH": "43",
+          "measuredW": "122",
+          "properties": {
+            "align": "center",
+            "color": "16776960",
+            "size": "18",
+            "text": "الگوهای طراحی"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "395",
+          "zOrder": "20"
+        },
+        {
+          "ID": "21",
+          "measuredH": "43",
+          "measuredW": "97",
+          "properties": {
+            "align": "center",
+            "borderStyle": "rectangle",
+            "color": "16776960",
+            "size": "18",
+            "text": "لایسنس ها"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "240",
+          "zOrder": "21"
+        },
+        {
+          "ID": "22",
+          "measuredH": "43",
+          "measuredW": "140",
+          "properties": {
+            "align": "center",
+            "borderStyle": "rectangle",
+            "color": "16776960",
+            "size": "18",
+            "text": "سمانتیک ورژنینگ"
+          },
+          "typeID": "TextInput",
+          "w": "288",
+          "x": "68",
+          "y": "279",
+          "zOrder": "22"
+        },
+        {
+          "ID": "23",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "h": "141",
+                  "measuredH": "70",
+                  "measuredW": "100",
+                  "properties": {},
+                  "typeID": "Canvas",
+                  "w": "350",
+                  "x": "0",
+                  "y": "0",
+                  "zOrder": "0"
+                },
+                {
+                  "ID": "1",
+                  "measuredH": "32",
+                  "measuredW": "290",
+                  "properties": {
+                    "color": "0",
+                    "size": "15",
+                    "text": "برای مشاهده نسخه همراه با جزئیات این نقشه راه "
+                  },
+                  "typeID": "Label",
+                  "x": "35",
+                  "y": "14",
+                  "zOrder": "1"
+                },
+                {
+                  "ID": "2",
+                  "measuredH": "32",
+                  "measuredW": "294",
+                  "properties": {
+                    "color": "0",
+                    "size": "15",
+                    "text": "منابع و سایر نقشه راه ها به سایت زیر مراجعه کنید"
+                  },
+                  "typeID": "Label",
+                  "x": "29",
+                  "y": "46",
+                  "zOrder": "2"
+                },
+                {
+                  "ID": "3",
+                  "h": "45",
+                  "measuredH": "70",
+                  "measuredW": "100",
+                  "properties": {
+                    "borderColor": "4273622",
+                    "color": "4273622"
+                  },
+                  "typeID": "Canvas",
+                  "w": "320",
+                  "x": "15",
+                  "y": "81",
+                  "zOrder": "3"
+                },
+                {
+                  "ID": "4",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "measuredH": "40",
+                          "measuredW": "107",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          },
+                          "typeID": "Label",
+                          "x": "65",
+                          "y": "0",
+                          "zOrder": "0"
+                        },
+                        {
+                          "ID": "1",
+                          "measuredH": "40",
+                          "measuredW": "36",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "http"
+                          },
+                          "typeID": "Label",
+                          "x": "0",
+                          "y": "0",
+                          "zOrder": "1"
+                        },
+                        {
+                          "ID": "2",
+                          "measuredH": "40",
+                          "measuredW": "10",
+                          "properties": {
+                            "bold": "true",
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          },
+                          "typeID": "Label",
+                          "x": "37",
+                          "y": "0",
+                          "zOrder": "2"
+                        },
+                        {
+                          "ID": "3",
+                          "measuredH": "40",
+                          "measuredW": "10",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          },
+                          "typeID": "Label",
+                          "x": "44",
+                          "y": "1",
+                          "zOrder": "3"
+                        },
+                        {
+                          "ID": "4",
+                          "measuredH": "40",
+                          "measuredW": "10",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          },
+                          "typeID": "Label",
+                          "x": "52",
+                          "y": "1",
+                          "zOrder": "4"
+                        }
+                      ]
+                    }
+                  },
+                  "h": "41",
+                  "measuredH": "41",
+                  "measuredW": "172",
+                  "typeID": "__group__",
+                  "w": "172",
+                  "x": "89",
+                  "y": "83",
+                  "zOrder": "4"
+                }
+              ]
+            }
+          },
+          "h": "141",
+          "measuredH": "141",
+          "measuredW": "350",
+          "typeID": "__group__",
+          "w": "350",
+          "x": "924",
+          "y": "81",
+          "zOrder": "23"
+        }
+      ]
+    },
+    "measuredH": "489",
+    "measuredW": "1274",
+    "mockupH": "445",
+    "mockupW": "1207",
+    "version": "1.0"
+  }
+}
