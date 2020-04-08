@@ -20,3 +20,6 @@
 ## DevOps Roadmap
 
 ![](./img/devops-map.png)
+
+## Contributors
+* [@LeratClarisse](https://github.com/LeratClarisse)
