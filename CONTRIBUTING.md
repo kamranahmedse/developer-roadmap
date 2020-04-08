@@ -30,3 +30,6 @@ Your opinion on value of any resource may not match the opinion of curator.
   There may be a discussion related to an item you want to add. Adding just a single item per pull request makes it much easier for everyone involved.</p>
 - Write meaningful commit messages
 - Look at the existing issues/pull requests before opening new ones
+
+## Note
+By contributing to this project, you agree to the terms listed in the [LICENSE](https://github.com/kamranahmedse/developer-roadmap/blob/master/LICENSE)
