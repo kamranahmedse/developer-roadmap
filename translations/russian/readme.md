@@ -11,8 +11,8 @@
 
 ## "Дорожная карта" Backend разработчика
 
-> [Help us translate](https://github.com/kamranahmedse/developer-roadmap/issues/669)
+![](./img/backend-map.png)
 
 ## "Дорожная карта" DevOps'а
 
-> [Help us translate](https://github.com/kamranahmedse/developer-roadmap/issues/669)
+![](./img/devops-map.png)
