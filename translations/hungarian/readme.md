@@ -7,7 +7,8 @@
 
 ## Introduction
 
-![Web Developer Roadmap Introduction](./img/intro.png)
+![Web Developer Roadmap Introduction](./img/intro-map.png)
+
 ## Frontend Roadmap
 
 ![](./img/frontend-map.png)
