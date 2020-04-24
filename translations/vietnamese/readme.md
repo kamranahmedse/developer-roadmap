@@ -9,9 +9,9 @@
 
 ![](./img/intro-map.png)
 
-<!-- ## Frontend Roadmap
+## Frontend Roadmap
 
-![](./img/frontend-map.png) -->
+![](./img/frontend-map.png)
 
 ## Backend Roadmap
 
