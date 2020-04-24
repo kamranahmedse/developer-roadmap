@@ -1,0 +1,637 @@
+{
+    "mockup": {
+        "controls": {
+            "control": [
+                {
+                    "ID": "0",
+                    "typeID": "Label",
+                    "zOrder": "0",
+                    "w": "365",
+                    "measuredW": "356",
+                    "measuredH": "40",
+                    "x": "512",
+                    "y": "111",
+                    "properties": {
+                        "bold": "true",
+                        "size": "32",
+                        "text": "Web Developer in 2020"
+                    }
+                },
+                {
+                    "ID": "1",
+                    "typeID": "Arrow",
+                    "zOrder": "1",
+                    "w": "76",
+                    "h": "131",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "704",
+                    "y": "269",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.4784110605770858,
+                            "y": 0.1954172937227873
+                        },
+                        "p2": {
+                            "x": 74,
+                            "y": 130
+                        }
+                    }
+                },
+                {
+                    "ID": "2",
+                    "typeID": "Arrow",
+                    "zOrder": "2",
+                    "w": "133",
+                    "h": "133",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "539",
+                    "y": "268",
+                    "properties": {
+                        "color": "2848996",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 131,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5650450662047508,
+                            "y": -0.21789420910978924
+                        },
+                        "p2": {
+                            "x": 1,
+                            "y": 131
+                        }
+                    }
+                },
+                {
+                    "ID": "3",
+                    "typeID": "TextInput",
+                    "zOrder": "3",
+                    "w": "132",
+                    "measuredW": "93",
+                    "measuredH": "32",
+                    "x": "462",
+                    "y": "409",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "Front-end"
+                    }
+                },
+                {
+                    "ID": "4",
+                    "typeID": "Label",
+                    "zOrder": "4",
+                    "w": "299",
+                    "measuredW": "295",
+                    "measuredH": "28",
+                    "x": "539",
+                    "y": "228",
+                    "properties": {
+                        "bold": "true",
+                        "size": "20",
+                        "text": "Chọn một lộ trình cho bản thân"
+                    }
+                },
+                {
+                    "ID": "5",
+                    "typeID": "TextInput",
+                    "zOrder": "5",
+                    "w": "289",
+                    "measuredW": "272",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "118",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Git - Hệ thống quản lí phiên bản"
+                    }
+                },
+                {
+                    "ID": "6",
+                    "typeID": "TextInput",
+                    "zOrder": "6",
+                    "w": "290",
+                    "measuredW": "50",
+                    "measuredH": "32",
+                    "x": "85",
+                    "y": "359",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "SSH"
+                    }
+                },
+                {
+                    "ID": "7",
+                    "typeID": "TextInput",
+                    "zOrder": "7",
+                    "w": "290",
+                    "measuredW": "200",
+                    "measuredH": "32",
+                    "x": "85",
+                    "y": "398",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "HTTP/HTTPS và APIs"
+                    }
+                },
+                {
+                    "ID": "8",
+                    "typeID": "Label",
+                    "zOrder": "8",
+                    "w": "274",
+                    "measuredW": "263",
+                    "measuredH": "25",
+                    "x": "85",
+                    "y": "81",
+                    "properties": {
+                        "bold": "true",
+                        "size": "17",
+                        "text": "Bất kì lộ trình nào cũng đều cần:"
+                    }
+                },
+                {
+                    "ID": "9",
+                    "typeID": "TextInput",
+                    "zOrder": "9",
+                    "w": "290",
+                    "measuredW": "175",
+                    "measuredH": "32",
+                    "x": "85",
+                    "y": "157",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Cơ bản về Terminal"
+                    }
+                },
+                {
+                    "ID": "10",
+                    "typeID": "Arrow",
+                    "zOrder": "10",
+                    "w": "1",
+                    "h": "48",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "686",
+                    "y": "173",
+                    "properties": {
+                        "color": "6710886",
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.49988682661837924,
+                            "y": 0
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 47
+                        },
+                        "rightArrow": "false"
+                    }
+                },
+                {
+                    "ID": "11",
+                    "typeID": "TextInput",
+                    "zOrder": "11",
+                    "w": "121",
+                    "measuredW": "92",
+                    "measuredH": "32",
+                    "x": "700",
+                    "y": "410",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "Back-end"
+                    }
+                },
+                {
+                    "ID": "12",
+                    "typeID": "Arrow",
+                    "zOrder": "12",
+                    "w": "2",
+                    "h": "72",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "529",
+                    "y": "450",
+                    "properties": {
+                        "color": "2848996",
+                        "curvature": "0",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.5620247901329669,
+                            "y": 0.004594690579774392
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 70
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "13",
+                    "typeID": "Arrow",
+                    "zOrder": "13",
+                    "w": "123",
+                    "h": "12",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "833",
+                    "y": "415",
+                    "properties": {
+                        "color": "2848996",
+                        "curvature": "-1",
+                        "direction": "bottom",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 11
+                        },
+                        "p1": {
+                            "x": 0.453573503776873,
+                            "y": 0.05973271353864025
+                        },
+                        "p2": {
+                            "x": 122,
+                            "y": 4
+                        }
+                    }
+                },
+                {
+                    "ID": "14",
+                    "typeID": "TextInput",
+                    "zOrder": "14",
+                    "w": "112",
+                    "measuredW": "81",
+                    "measuredH": "32",
+                    "x": "969",
+                    "y": "403",
+                    "properties": {
+                        "align": "center",
+                        "color": "16767334",
+                        "size": "18",
+                        "text": "DevOps"
+                    }
+                },
+                {
+                    "ID": "15",
+                    "typeID": "Arrow",
+                    "zOrder": "15",
+                    "w": "2",
+                    "h": "72",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "751",
+                    "y": "453",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.46078470824949697,
+                            "y": 0.012857142857142852
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 70
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "16",
+                    "typeID": "Arrow",
+                    "zOrder": "16",
+                    "w": "1",
+                    "h": "78",
+                    "measuredW": "150",
+                    "measuredH": "100",
+                    "x": "1021",
+                    "y": "446",
+                    "properties": {
+                        "color": "2848996",
+                        "leftArrow": "false",
+                        "p0": {
+                            "x": 0,
+                            "y": 0
+                        },
+                        "p1": {
+                            "x": 0.45371220287459335,
+                            "y": 0.01231346135230011
+                        },
+                        "p2": {
+                            "x": 0,
+                            "y": 77
+                        },
+                        "rightArrow": "false",
+                        "stroke": "dotted"
+                    }
+                },
+                {
+                    "ID": "17",
+                    "typeID": "TextInput",
+                    "zOrder": "17",
+                    "w": "289",
+                    "measuredW": "70",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "240",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "GitHub"
+                    }
+                },
+                {
+                    "ID": "18",
+                    "typeID": "TextInput",
+                    "zOrder": "18",
+                    "w": "289",
+                    "measuredW": "249",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "197",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Cấu trúc dữ liệu và giải thuật"
+                    }
+                },
+                {
+                    "ID": "19",
+                    "typeID": "TextInput",
+                    "zOrder": "19",
+                    "w": "305",
+                    "measuredW": "298",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "477",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Mã hóa kí tự (Character Encoding)"
+                    }
+                },
+                {
+                    "ID": "20",
+                    "typeID": "TextInput",
+                    "zOrder": "20",
+                    "w": "289",
+                    "measuredW": "268",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "437",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": " Mẫu thiết kế (Design Patterns)"
+                    }
+                },
+                {
+                    "ID": "21",
+                    "typeID": "TextInput",
+                    "zOrder": "21",
+                    "w": "289",
+                    "measuredW": "257",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "280",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Các loại giấy phép (Licenses)"
+                    }
+                },
+                {
+                    "ID": "22",
+                    "typeID": "TextInput",
+                    "zOrder": "22",
+                    "w": "289",
+                    "measuredW": "182",
+                    "measuredH": "32",
+                    "x": "86",
+                    "y": "319",
+                    "properties": {
+                        "align": "center",
+                        "color": "16776960",
+                        "size": "18",
+                        "text": "Semantic Versioning"
+                    }
+                },
+                {
+                    "ID": "23",
+                    "typeID": "__group__",
+                    "zOrder": "23",
+                    "measuredW": "386",
+                    "measuredH": "144",
+                    "w": "386",
+                    "h": "144",
+                    "x": "930",
+                    "y": "118",
+                    "children": {
+                        "controls": {
+                            "control": [
+                                {
+                                    "ID": "0",
+                                    "typeID": "Canvas",
+                                    "zOrder": "0",
+                                    "w": "386",
+                                    "h": "144",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "0",
+                                    "y": "0"
+                                },
+                                {
+                                    "ID": "1",
+                                    "typeID": "Label",
+                                    "zOrder": "1",
+                                    "w": "345",
+                                    "measuredW": "296",
+                                    "measuredH": "25",
+                                    "x": "15",
+                                    "y": "17",
+                                    "properties": {
+                                        "size": "17",
+                                        "text": "Tìm phiên bản chi tiết của lộ trình này "
+                                    }
+                                },
+                                {
+                                    "ID": "2",
+                                    "typeID": "Label",
+                                    "zOrder": "2",
+                                    "w": "353",
+                                    "measuredW": "343",
+                                    "measuredH": "25",
+                                    "x": "17",
+                                    "y": "45",
+                                    "properties": {
+                                        "size": "17",
+                                        "text": "cùng với tài nguyên và các lộ trình khác tại:"
+                                    }
+                                },
+                                {
+                                    "ID": "3",
+                                    "typeID": "Canvas",
+                                    "zOrder": "3",
+                                    "w": "322",
+                                    "h": "46",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "32",
+                                    "y": "82",
+                                    "properties": {
+                                        "borderColor": "4273622",
+                                        "color": "4273622"
+                                    }
+                                },
+                                {
+                                    "ID": "4",
+                                    "typeID": "__group__",
+                                    "zOrder": "4",
+                                    "measuredW": "168",
+                                    "measuredH": "30",
+                                    "w": "168",
+                                    "h": "30",
+                                    "x": "108",
+                                    "y": "90",
+                                    "children": {
+                                        "controls": {
+                                            "control": [
+                                                {
+                                                    "ID": "0",
+                                                    "typeID": "Label",
+                                                    "zOrder": "0",
+                                                    "w": "102",
+                                                    "measuredW": "102",
+                                                    "measuredH": "28",
+                                                    "x": "66",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "roadmap.sh"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "1",
+                                                    "typeID": "Label",
+                                                    "zOrder": "1",
+                                                    "w": "36",
+                                                    "measuredW": "36",
+                                                    "measuredH": "28",
+                                                    "x": "0",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "http"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "2",
+                                                    "typeID": "Label",
+                                                    "zOrder": "2",
+                                                    "w": "10",
+                                                    "measuredW": "5",
+                                                    "measuredH": "28",
+                                                    "x": "38",
+                                                    "y": "0",
+                                                    "properties": {
+                                                        "bold": "true",
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": ":"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "3",
+                                                    "typeID": "Label",
+                                                    "zOrder": "3",
+                                                    "w": "10",
+                                                    "measuredW": "9",
+                                                    "measuredH": "28",
+                                                    "x": "45",
+                                                    "y": "2",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "/"
+                                                    }
+                                                },
+                                                {
+                                                    "ID": "4",
+                                                    "typeID": "Label",
+                                                    "zOrder": "4",
+                                                    "w": "10",
+                                                    "measuredW": "9",
+                                                    "measuredH": "28",
+                                                    "x": "53",
+                                                    "y": "2",
+                                                    "properties": {
+                                                        "color": "16777215",
+                                                        "size": "20",
+                                                        "text": "/"
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        },
+        "attributes": {
+            "name": "intro-map",
+            "order": 1000011.4373356935,
+            "parentID": null
+        },
+        "resourceID": "C4496D95-A41F-48B1-8D31-450BB741FB6C",
+        "mockupH": "444",
+        "mockupW": "1231",
+        "measuredW": "1316",
+        "measuredH": "525",
+        "version": "1.0"
+    }
+}
