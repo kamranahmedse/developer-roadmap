@@ -1,6 +1,6 @@
-import Link from 'next/link';
-import siteConfig from "content/site";
-import { FooterWrap } from './style.js'
+import siteConfig from 'content/site';
+import { FooterWrap } from './style.js';
+import './carbon.scss';
 
 const PageFooter = () => (
   <FooterWrap className="border-top">
@@ -53,11 +53,13 @@ const PageFooter = () => (
       </div>
     </div>
 
+
     {/* Do not show on local */}
     { process.env.GA_SECRET && (
       <>
-        <div id="codefund"></div>
-        <script src="https://app.codefund.io/properties/681/funder.js" async></script>
+        <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7DLK3Y&placement=roadmapsh" id="_carbonads_js"></script>
+        {/*<div id="codefund"></div>*/}
+        {/*<script src="https://app.codefund.io/properties/681/funder.js" async></script>*/}
       </>
     ) }
   </FooterWrap>

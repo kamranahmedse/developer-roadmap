@@ -1,14 +1,14 @@
 import { faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons/index';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
-import FeaturedGuide from 'components/featured-guide';
 import DefaultLayout from 'layouts/default/index';
 import PageHeader from 'components/page-header';
 import PageFooter from 'components/page-footer';
 import SiteNav from 'components/site-nav';
-import { getAllGuides } from 'lib/guide';
 import siteConfig from 'content/site';
 import Helmet from 'components/helmet';
+import { getAllGuides } from '../../lib/guide';
+import FeaturedGuide from '../../components/featured-guide';
 
 const PageTitle = "Programming Guides";
 const PageDescription = "Easy to follow guides on complex topics written and maintained by the community";
