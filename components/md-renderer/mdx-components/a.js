@@ -5,8 +5,11 @@ const Link = styled.a`
 `;
 
 const EnrichedLink = props => {
+  // Is external URL or is a media URL
+  const isExternalUrl = /(^http(s)?:\/\/)|(\.(png|svg|jpeg|jpg)$)/.test(props.href);
+
   return (
-    <Link href={ props.href } target={ /^http(s)?:\/\//.test(props.href) ? '_blank' : '_self' }>
+    <Link href={ props.href } target={ isExternalUrl ? '_blank' : '_self' }>
       { props.children }
     </Link>
   );
