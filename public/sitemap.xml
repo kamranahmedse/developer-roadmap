@@ -31,6 +31,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/guides/dhcp-in-one-picture</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-04-28T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/guides/ssl-tls-https-ssh</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-04-22T15:48:21.191Z</lastmod>
@@ -117,7 +123,7 @@
 <url>
               <loc>https://roadmap.sh/guides</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:29.711Z</lastmod>
+              <lastmod>2020-04-24T18:38:33.437Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
