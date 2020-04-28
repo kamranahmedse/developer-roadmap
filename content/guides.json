@@ -1,5 +1,15 @@
 [
   {
+    "title": "DHCP in One Picture",
+    "description": "Here is what happens when a new device joins the network.",
+    "url": "/guides/dhcp-in-one-picture",
+    "fileName": "dhcp-in-one-picture",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-04-28T15:48:21.191Z",
+    "createdAt": "2020-04-28T15:48:21.191Z"
+  },
+  {
     "title": "SSL vs TLS vs SSH",
     "description": "Quick tidbit on the differences between SSL, TLS, HTTPS and SSH",
     "url": "/guides/ssl-tls-https-ssh",
