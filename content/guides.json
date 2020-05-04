@@ -1,13 +1,23 @@
 [
   {
+    "title": "Unfamiliar Codebase",
+    "description": "Tips on getting getting familiar with an unfamiliar codebase",
+    "url": "/guides/why-build-it-and-they-will-come-wont-work-anymore",
+    "fileName": "unfamiliar-codebase",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-05-04T20:59:14.191Z",
+    "createdAt": "2020-05-04T20:59:14.191Z"
+  },
+  {
     "title": "Build it and they will come?",
     "description": "Why “build it and they will come” alone won’t work anymore",
     "url": "/guides/why-build-it-and-they-will-come-wont-work-anymore",
     "fileName": "why-build-it-and-they-will-come-wont-work-anymore",
     "featured": true,
     "author": "spekulatius",
-    "updatedAt": "2020-05-04T20:59:14.191Z",
-    "createdAt": "2020-05-04T20:59:14.191Z"
+    "updatedAt": "2020-05-04T12:59:14.191Z",
+    "createdAt": "2020-05-04T12:59:14.191Z"
   },
   {
     "title": "DHCP in One Picture",
