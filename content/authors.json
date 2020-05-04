@@ -19,5 +19,12 @@
     "twitter": "dmytrobol",
     "picture": "/authors/dmytrobol.png",
     "bio": "JavaScript Lad, Movie buff and coder interested in everything web related"
+  },
+  {
+    "username": "spekulatius",
+    "name": "Peter Thaleikis",
+    "twitter": "spekulatius1984",
+    "picture": "/authors/spekulatius.jpg",
+    "bio": "Developer building side-projects for fun, lover of the web and open source"
   }
 ]

@@ -1,5 +1,15 @@
 [
   {
+    "title": "Build it and they will come?",
+    "description": "Why “build it and they will come” alone won’t work anymore",
+    "url": "/guides/why-build-it-and-they-will-come-wont-work-anymore",
+    "fileName": "why-build-it-and-they-will-come-wont-work-anymore",
+    "featured": true,
+    "author": "spekulatius",
+    "updatedAt": "2020-05-04T20:59:14.191Z",
+    "createdAt": "2020-05-04T20:59:14.191Z"
+  },
+  {
     "title": "DHCP in One Picture",
     "description": "Here is what happens when a new device joins the network.",
     "url": "/guides/dhcp-in-one-picture",
