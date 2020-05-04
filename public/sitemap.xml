@@ -3,7 +3,7 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-29T07:49:37.087Z</lastmod>
+              <lastmod>2020-05-01T11:22:37.592Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -28,6 +28,12 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/why-build-it-and-they-will-come-wont-work-anymore</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-04T20:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
