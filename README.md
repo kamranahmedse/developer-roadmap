@@ -60,9 +60,9 @@ Jeśli uważasz, że można je poprawić w jakikolwiek sposób, proszę zasugeru
 
 ![DevOps Roadmap](./img/devops.png)
 
-## 🚦 Wrap Up
+## 🚦 Obserwuj
 
-Jeśli uważasz, że któryś z planów może zostać ulepszony, nie krępuj się omówić go w issues. Nadal będę to poprawiać, więc możesz kliknąć 'watch' dla tego repozytorium lub subskrybować [roadmap.sh](http://roadmap.sh), aby odwiedzić ponownie.
+Jeśli uważasz, że któryś z planów może zostać ulepszony, nie krępuj się omówić go w issues. Nadal będę to poprawiać, więc możesz kliknąć 'watch' dla tego repozytorium lub subskrybować [roadmap.sh](http://roadmap.sh), aby odwiedzić ponownie i być na bieżąco.
 
 ## 🙌 Współtworzenie
 
