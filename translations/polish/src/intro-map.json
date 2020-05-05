@@ -91,14 +91,14 @@
                     "ID": "4",
                     "typeID": "Label",
                     "zOrder": "4",
-                    "measuredW": "167",
+                    "measuredW": "221",
                     "measuredH": "28",
-                    "x": "589",
-                    "y": "189",
+                    "x": "566",
+                    "y": "191",
                     "properties": {
                         "bold": "true",
                         "size": "20",
-                        "text": "Choose your path"
+                        "text": "Wybierz swoją ścieżkę"
                     }
                 },
                 {
