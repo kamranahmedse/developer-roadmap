@@ -40,7 +40,7 @@ Jeśli uważasz, że można je poprawić w jakikolwiek sposób, proszę zasugeru
 
 ## Wprowadzenie
 
-![Web Developer Roadmap Introduction](./img/intro.png)
+![Web Developer Roadmap Introduction](https://github.com/mbiesiad/developer-roadmap/blob/master/translations/polish/img/intro-map.png)
 
 ## Plan działania dla Frontend
 
