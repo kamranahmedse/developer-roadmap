@@ -52,7 +52,7 @@ Jeśli uważasz, że można je poprawić w jakikolwiek sposób, proszę zasugeru
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/backend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
 
-![Back-end Roadmap](./img/backend.png?year-2020-2)
+![Back-end Roadmap](https://github.com/mbiesiad/developer-roadmap/blob/master/translations/polish/img/backend-map.png)
 
 ## Plan działania dla DevOps
 
@@ -76,3 +76,7 @@ Jeśli uważasz, że któryś z planów może zostać ulepszony, nie krępuj si�
 ## Licencja
 
 Zapoznaj się z plikiem [license](./LICENSE), aby uzyskać więcej szczegółów
+
+___________________________________________
+
+Stworzone przez @[kamranahmedse](https://github.com/kamranahmedse) polska wersja od @[mbiesiad](https://github.com/mbiesiad/)
