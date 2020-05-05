@@ -1,60 +1,60 @@
 
 ![Web Developer Roadmap - 2020](https://i.imgur.com/NNyc9QM.png)
 
-> Roadmap to becoming a web developer in 2020
+> Plan działania, aby zostać web developerem w 2020 r.
 
 [![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 [![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
 [![](https://img.shields.io/badge/-Translations-0a0a0a.svg?style=flat&colorA=0a0a0a)](./translations)
 [![](https://img.shields.io/badge/%E2%9D%A4-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1)
 
-Below you find a set of charts demonstrating the paths that you can take and the technologies that you would want to adopt in order to become a frontend, backend or a devops. I made these charts for an old professor of mine who wanted something to share with his college students to give them a perspective; sharing them here to help the community.
+Poniżej znajduje się zestaw wykresów pokazujących ścieżki, którymi możesz podążać, a także technologie, które warto abyś poznał, aby stać się programistą frontend, backend lub DevOps'em. Zrobiłem te wykresy dla mojego dawnego profesora, który chciał się czymś podzielić ze swoimi studentami, aby dać im perspektywę przyszłości; udostępniajam je tutaj, aby pomóc społeczności.
 
 ***
 
 <p align="center">
-		<sup>Special Announcement:</sup>
+		<sup>Ogłoszenie specjalne:</sup>
 		<br>
 		<a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">
 			<img width="70px" src="https://roadmap.sh/sponsors/youtube.svg">
 		</a>
 		<br>
-		<sub><b>We now have a YouTube Channel</b></sub>
+		<sub><b>Mamy kanał na YouTube</b></sub>
 		<br>
-		<sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">Subscribe to the channel</a>.</sub>
+		<sub>Planuję opisać plany działania i umieścić tam więcej treści<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">Subskrybuj kanał</a>.</sub>
 </p>
 
 ***
 
-<h3 align="center"><strong>Purpose of these Roadmaps</strong></h3>
+<h3 align="center"><strong>Cel tych planów działania</strong></h3>
 
-> The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.
+> Przedstawione plany działania mają na celu dać ci wyobrażenie o tej dziedzinie i poprowadzić cię, jeśli nie wiesz, czego się uczyć, i nie zachęcać do wybierania tylko tego co jest modne i na topie. Powinieneś lepiej zrozumieć, dlaczego jedno narzędzie lepiej pasuje do niektórych przypadków niż rozwiązanie drugie, pamiętaj też, że modne i na topie nigdy nie oznacza najlepiej dopasowanego do pracy.
 
-<h3 align="center"><strong>Note to Beginners</strong></h3>
+<h3 align="center"><strong>Uwaga dla początkujących</strong></h3>
 
-> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will [release it soon](https://roadmap.sh) after we are done with the 2020 release of the Backend and DevOps roadmaps.
+> Te plany działania obejmują wszystko, czego można się nauczyć na wymienionych poniżej ścieżkach. Nie czuj się przytłoczony, nie musisz uczyć się wszystkiego na początku, jeśli dopiero zaczynasz. Pracujemy nad ich początkowymi wersjami i będziemy [wydawać je wkrótce](https://roadmap.sh) po zakończeniu prac nad wydaniem 'Backend and DevOps roadmaps' w 2020 r.
 
 ***
 
-If you think that these can be improved in any way, please do suggest.
+Jeśli uważasz, że można je poprawić w jakikolwiek sposób, proszę zasugeruj co ulepszyć.
 
-## Introduction
+## Wprowadzenie
 
 ![Web Developer Roadmap Introduction](./img/intro.png)
 
-## Frontend Roadmap
+## Plan działania dla Frontend
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/frontend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/frontend)
 
 ![Frontend Roadmap](./img/frontend.png?year-2020-2)
 
-## Back-end Roadmap 
+## Plan działania dla Backend
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/backend-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/backend)
 
 ![Back-end Roadmap](./img/backend.png?year-2020-2)
 
-## DevOps Roadmap
+## Plan działania dla DevOps
 
 [![](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/devops-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/devops)
 
@@ -62,17 +62,17 @@ If you think that these can be improved in any way, please do suggest.
 
 ## 🚦 Wrap Up
 
-If you think any of the roadmaps can be improved, feel free to discuss it in the issues. Also, I will continue to improve this, so you might want to watch this repository or subscribe at [roadmap.sh](http://roadmap.sh) to revisit.
+Jeśli uważasz, że któryś z planów może zostać ulepszony, nie krępuj się omówić go w issues. Nadal będę to poprawiać, więc możesz kliknąć 'watch' dla tego repozytorium lub subskrybować [roadmap.sh](http://roadmap.sh), aby odwiedzić ponownie.
 
-## 🙌 Contribution
+## 🙌 Współtworzenie
 
-> Have a look at [contribution docs](./CONTRIBUTING.md) for how to update any of the roadmaps
+> Rzuć okiem na [contribution docs](./CONTRIBUTING.md), aby dowiedzieć się jak zaktualizować plany działania
 
-- Open pull request with improvements
-- Discuss ideas in issues
-- Spread the word
-- Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
+- Otwórz pull request z ulepszeniami
+- Omów pomysły w issues
+- Podaj dalej
+- Podziel się dowolnym feedbackiem [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
  
-## License
+## Licencja
 
-Have a look at the [license file](./LICENSE) for details
+Zapoznaj się z plikiem [license](./LICENSE), aby uzyskać więcej szczegółów
