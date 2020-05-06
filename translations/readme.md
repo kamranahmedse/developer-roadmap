@@ -18,6 +18,7 @@ Thanks to all the contributors for helping us translate the roadmaps.
 * [Japanese](./japanese)
 * [Korean](./korean)
 * [Persian](./persian)
+* [Polish](./polish)
 * [Russian](./russian)
 * [Spanish](./spanish)
 * [French](./french)
