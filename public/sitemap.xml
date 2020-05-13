@@ -31,9 +31,21 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/guides/why-build-it-and-they-will-come-wont-work-anymore</loc>
+              <loc>https://roadmap.sh/guides/character-encodings</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-14T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/unfamiliar-codebase</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-05-04T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/why-build-it-and-they-will-come-wont-work-anymore</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-04T12:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
