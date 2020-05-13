@@ -1,5 +1,15 @@
 [
   {
+    "title": "Character Encodings",
+    "description": "Covers the basics of character encodings and explains ASCII vs Unicode",
+    "url": "/guides/character-encodings",
+    "fileName": "character-encodings",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-05-14T20:59:14.191Z",
+    "createdAt": "2020-05-14T20:59:14.191Z"
+  },
+  {
     "title": "Unfamiliar Codebase",
     "description": "Tips on getting getting familiar with an unfamiliar codebase",
     "url": "/guides/unfamiliar-codebase",
