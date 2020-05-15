@@ -1712,7 +1712,7 @@
 					"align": "center",
 					"bold": "true",
 					"size": "17",
-					"text": "消息破坏"
+					"text": "消息代理"
 				},
 				"typeID": "Label",
 				"w": "141",
