@@ -1,5 +1,15 @@
 [
   {
+    "title": "Basic Authentication",
+    "description": "Understand what is basic authentication and how it is implemented",
+    "url": "/guides/basic-authentication",
+    "fileName": "basic-authentication",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-05-19T20:59:14.191Z",
+    "createdAt": "2020-05-19T20:59:14.191Z"
+  },
+  {
     "title": "Character Encodings",
     "description": "Covers the basics of character encodings and explains ASCII vs Unicode",
     "url": "/guides/character-encodings",

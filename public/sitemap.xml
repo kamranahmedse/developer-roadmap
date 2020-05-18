@@ -31,6 +31,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/guides/basic-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-19T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/guides/character-encodings</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-05-14T20:59:14.191Z</lastmod>
