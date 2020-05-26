@@ -15,6 +15,18 @@ import Helmet from 'components/helmet';
 const PageTitle = "Developer Roadmaps";
 const PageDescription = "Step by step guides and paths to learn different tools or technologies";
 
+function getBadgeText(roadmap) {
+  if (roadmap.upcoming) {
+    return 'Upcoming';
+  }
+  
+  if (roadmap.communityResource) {
+    return 'Community';
+  }
+  
+  return '';
+}
+
 const RoadmapsList = () => (
   <DefaultLayout>
     <Helmet title={PageTitle} desciption={PageDescription} />
@@ -49,7 +61,7 @@ const RoadmapsList = () => (
               subtitle={ roadmap.featuredDescription || roadmap.description }
               url={ roadmap.url }
               disabled={ roadmap.upcoming }
-              badge={ roadmap.upcoming ? 'upcoming' : '' }
+              badge={ getBadgeText(roadmap) }
             />
           )) }
 
