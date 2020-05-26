@@ -11,7 +11,11 @@ const PageFooter = () => (
             <div className="brand-detail">
               <a href="/" className='brand'><img src="/brand.png" alt="" /> roadmap.sh</a>
               <span className="preposition">by</span>
-              <a href="https://twitter.com/kamranahmedse" target="_blank" className='follow-author'>@kamranahmedse</a>
+              <a href="https://twitter.com/kamranahmedse" target="_blank" onClick={(e) => {
+                e.preventDefault();
+                window.open("https://twitter.com/intent/follow?original_referer=https://roadmap.sh&screen_name=kamranahmedse", "_blank", "toolbar=yes,scrollbars=yes,resizable=yes,top=0,left=0,width=550,height=600");
+  
+              }} className='follow-author'>@kamranahmedse</a>
             </div>
             <div className="brand-explanation">
               <p>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</p>
