@@ -20,6 +20,7 @@
   "description": "Step by step guide to becoming an Android developer",
   "featuredDescription": "Step by step guide to becoming a modern Android Developer in 2020",
   "isTextHeavy": true,
+  "communityResource": true,
   "featured": true,
   "path": "./landscape.md",
   "resources": "./resources.md",

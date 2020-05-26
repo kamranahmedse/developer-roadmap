@@ -155,6 +155,7 @@
     "description": "Step by step guide to becoming an Android developer",
     "featuredDescription": "Step by step guide to becoming a modern Android Developer in 2020",
     "isTextHeavy": true,
+    "communityResource": true,
     "featured": true,
     "path": "/roadmaps/4-android/landscape.md",
     "resources": "/roadmaps/4-android/resources.md",
@@ -167,7 +168,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/android/contributors",
     "url": "/android",
     "sidebar": {}
@@ -210,7 +211,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
     "sidebar": {}
@@ -244,7 +245,7 @@
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
     "sidebar": {}

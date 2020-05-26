@@ -41,7 +41,7 @@ export const ItemTitle = styled.h3`
 export const Badge = styled.span`
   font-size: 10px;
   font-weight: 600;
-  background: #696969;
+  background: #8a8a8a;
   color: white;
   padding: 0 8px;
   border-radius: 4px;
