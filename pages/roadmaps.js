@@ -53,12 +53,12 @@ const RoadmapsList = () => (
             />
           )) }
 
-          <IconRowBlock
-            url={ siteConfig.url.addRoadmap }
-            icon={ faPlus }
-            openExternal={true}
-            text="Submit a Roadmap"
-          />
+          {/*<IconRowBlock*/}
+          {/*  url={ siteConfig.url.addRoadmap }*/}
+          {/*  icon={ faPlus }*/}
+          {/*  openExternal={true}*/}
+          {/*  text="Submit a Roadmap"*/}
+          {/*/>*/}
         </div>
       </div>
     </div>
