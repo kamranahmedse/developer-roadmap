@@ -135,6 +135,45 @@
   },
   {
     "seo": {
+      "title": "Android Developer Roadmap: Learn to become an Android developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming an android developer",
+        "android developer roadmap",
+        "android roadmap",
+        "become android developer",
+        "android developer skills",
+        "android skills test",
+        "skills for android development",
+        "learn android development",
+        "what is android",
+        "android quiz",
+        "android interview questions"
+      ]
+    },
+    "title": "Android Developer",
+    "description": "Step by step guide to becoming an Android developer",
+    "featuredDescription": "Step by step guide to becoming a modern Android Developer in 2020",
+    "isTextHeavy": true,
+    "featured": true,
+    "path": "/roadmaps/4-android/landscape.md",
+    "resources": "/roadmaps/4-android/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "contributorsCount": 0,
+    "contributorsUrl": "/android/contributors",
+    "url": "/android",
+    "sidebar": {}
+  },
+  {
+    "seo": {
       "title": "Fullstack Roadmap: Learn to become a fullstack developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern fullstack development. Learn to become a modern fullstack developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -164,14 +203,14 @@
     "title": "Full Stack Developer",
     "description": "Step by step guide to becoming a modern fullstack developer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
-    "path": "/roadmaps/4-fullstack/landscape.md",
-    "resources": "/roadmaps/4-fullstack/resources.md",
+    "path": "/roadmaps/5-fullstack/landscape.md",
+    "resources": "/roadmaps/5-fullstack/resources.md",
     "upcoming": true,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 1,
+    "contributorsCount": 0,
     "contributorsUrl": "/fullstack/contributors",
     "url": "/fullstack",
     "sidebar": {}
@@ -199,13 +238,13 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
     "upcoming": true,
-    "path": "/roadmaps/5-qa/landscape.md",
-    "resources": "/roadmaps/5-qa/resources.md",
+    "path": "/roadmaps/6-qa/landscape.md",
+    "resources": "/roadmaps/6-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "contributorsCount": 1,
+    "contributorsCount": 0,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
     "sidebar": {}

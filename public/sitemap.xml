@@ -19,6 +19,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/android</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-26T00:11:12.565Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/fullstack</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-01-29T07:49:29.706Z</lastmod>
@@ -28,6 +34,12 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2020-01-29T07:49:29.706Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/session-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-19T20:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -153,13 +165,13 @@
 <url>
               <loc>https://roadmap.sh/</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-01-02T05:41:16.178Z</lastmod>
+              <lastmod>2020-05-25T18:33:29.749Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-02-23T07:24:00.532Z</lastmod>
+              <lastmod>2020-05-25T19:25:25.060Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>

@@ -1,4 +1,5 @@
 import { Summary, SummaryContainer, UpcomingContainer } from './style';
+import classNames from 'classnames';
 import GuideBody from 'components/guide-body';
 import RoadmapHeader from 'components/roadmap-header';
 import SharePage from 'components/share-page';
@@ -22,7 +23,7 @@ const RoadmapSummary = ({ roadmap }) => {
   return (
     <SummaryContainer>
       <RoadmapHeader roadmap={ roadmap } />
-      <Summary className="container">
+      <Summary className={classNames("container", { "container-small": roadmap.isTextHeavy })}>
         <MdRenderer>
           <RoadmapContent />
         </MdRenderer>
