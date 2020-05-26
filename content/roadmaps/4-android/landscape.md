@@ -14,7 +14,7 @@ Below is the broken down version of the roadmap with links and resources to lear
 ## Pick a Language
 For the languages, you can develop android apps either by using Kotlin or Java.
 
-[![](/roadmaps/android/pick-language.png)](/roadmaps/android/pick-language.png)
+[![](/roadmaps/android/pick-language.svg)](/roadmaps/android/pick-language.svg)
 
 Although, you can use both [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) and [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) to develop native android apps, [Google announced in 2019](https://android-developers.googleblog.com/2019/05/google-io-2019-empowering-developers-to-build-experiences-on-Android-Play.html) to make Kotlin the preferred way of developing android applications. If you were to start learning android development today, Kotlin should be your language of choice.
 
