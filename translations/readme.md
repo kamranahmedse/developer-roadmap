@@ -21,6 +21,7 @@ Thanks to all the contributors for helping us translate the roadmaps.
 * [Polish](./polish)
 * [Russian](./russian)
 * [Spanish](./spanish)
+* [Turkish](./turkish)
 * [French](./french)
 * [Vietnamese](./vietnamese)
 
