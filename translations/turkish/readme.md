@@ -1,7 +1,6 @@
 ![Web Developer Roadmap - 2020](./img/banner.png)
 
 > 2020'de Web geliştirici olmanın yol haritası
-> [Orijinal Doküman için tıklayın.](https://github.com/kamranahmedse/developer-roadmap)
 
 Aşağıda Ön Uç (Front-end), Arka Uç (Back-end) ve Devops geliştirici olmak için öğrenmeniz gereken teknolojileri açıklayan tablolar göreceksiniz. Bu tablolar Kamran Ahmed'in "Web Developer Roadmap" dokümanından birebir çevirilmiştir.
 
