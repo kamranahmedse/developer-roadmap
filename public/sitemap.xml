@@ -37,9 +37,15 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/guides/token-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-06-02T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/guides/session-authentication</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-19T20:59:14.191Z</lastmod>
+              <lastmod>2020-05-26T20:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -171,7 +177,7 @@
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-05-26T18:35:55.812Z</lastmod>
+              <lastmod>2020-05-26T18:36:53.372Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>

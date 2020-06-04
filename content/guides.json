@@ -1,13 +1,23 @@
 [
   {
+    "title": "Token Based Authentication",
+    "description": "Understand what is token based authentication and how it is implemented",
+    "url": "/guides/token-authentication",
+    "fileName": "token-authentication",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-06-02T20:59:14.191Z",
+    "createdAt": "2020-06-02T20:59:14.191Z"
+  },
+  {
     "title": "Session Based Authentication",
     "description": "Understand what is session based authentication and how it is implemented",
     "url": "/guides/session-authentication",
     "fileName": "session-authentication",
     "featured": true,
     "author": "kamranahmedse",
-    "updatedAt": "2020-05-19T20:59:14.191Z",
-    "createdAt": "2020-05-19T20:59:14.191Z"
+    "updatedAt": "2020-05-26T20:59:14.191Z",
+    "createdAt": "2020-05-26T20:59:14.191Z"
   },
   {
     "title": "Basic Authentication",
