@@ -6,7 +6,7 @@ There are multiple ways to develop applications for the android; you can go down
 
 Here is the full version of the roadmap in a single image and after that we have the broken down version with the resources and links to learn more about each of the boxes.
 
-[![](/roadmaps/android/roadmap.svg)](/roadmaps/android/roadmap.svg)
+[![](/roadmaps/android/roadmap.svg)](/roadmaps/android/roadmap.png)
 
 ## Broken Down Version
 Below is the broken down version of the roadmap with links and resources to learn more about each of the items listed in the complete roadmap above.
