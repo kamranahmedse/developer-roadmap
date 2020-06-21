@@ -2,6 +2,11 @@ name: Deployment to GitHub Pages
 on:
   push:
     branches: [ master ]
+env:
+  ROADMAP_GA_SECRET: ${{ secrets.GA_SECRET }}
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CI: true
+  NEXT_TELEMETRY_DISABLED: 1
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,11 +23,7 @@ jobs:
       run: |
         yarn meta
         yarn build
-      env:
-        ROADMAP_GH_SECRET: ${{ secrets.GA_SECRET }}
     - name: Deploy to GitHub Pages
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config user.email "kamranahmed.se@gmail.com"
         git config user.name "Kamran Ahmed"
