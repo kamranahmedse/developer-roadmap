@@ -10,11 +10,18 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 12
-    - run: npm install -g yarn
-    - run: |
+    - name: Setup Environment
+      run: |
+        npm install -g yarn
         yarn install
+    - name: Generate meta and builld
+      run: |
         yarn meta
         yarn build
       env:
         ROADMAP_GH_SECRET: ${{ secrets.GA_SECRET }}
-    - run: npm run deploy
+    - name: Deploy to GitHub Pages
+      run: |
+        git config user.email "kamranahmed.se@gmail.com"
+        git config user.name "Kamran Ahmed"
+        npm run deploy
