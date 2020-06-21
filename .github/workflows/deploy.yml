@@ -1,0 +1,20 @@
+name: Deployment to GitHub Pages
+on:
+  push:
+    branches: [ master ]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 12
+    - run: npm install -g yarn
+    - run: |
+        yarn install
+        yarn meta
+        yarn build
+      env:
+        ROADMAP_GH_SECRET: ${{ secrets.GA_SECRET }}
+    - run: npm run deploy
