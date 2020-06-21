@@ -21,7 +21,10 @@ jobs:
       env:
         ROADMAP_GH_SECRET: ${{ secrets.GA_SECRET }}
     - name: Deploy to GitHub Pages
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       run: |
         git config user.email "kamranahmed.se@gmail.com"
         git config user.name "Kamran Ahmed"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
         npm run deploy
