@@ -11,10 +11,13 @@ const SiteNav = () => (
       <div className='nav-links'>
         <a href='/roadmaps'>Roadmaps</a>
         <a href='/guides'>Guides</a>
-        <a href='/podcasts'>Podcasts</a>
+        <a href='/podcasts'>
+          Podcasts
+          <span className='new-item' />
+        </a>
       </div>
 
-      <div className='ml-3 align-items-center d-flex'>
+      <div className='ml-3 align-items-center d-none d-md-flex'>
         <iframe src="https://ghbtns.com/github-btn.html?user=kamranahmedse&repo=developer-roadmap&type=star&count=true&size=large" frameBorder="0" scrolling="0" width="190px" height="30px"></iframe>
       </div>
     </div>
