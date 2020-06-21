@@ -20,14 +20,20 @@ const { getPathMap } = require("./scripts/path-map");
 const loadConfig = (env = 'dev') => {
   const configPath = `./config/${env}.json`;
   if (!fs.existsSync(configPath)) {
-    console.log(`Config file not found: ${configPath}`);
-    process.exit(1);
+    console.warn(`Config file not found: ${configPath}. Using environment variables only.`);
+  }
+  
+  const appConfig = {};
+
+  for (let key in process.env) {
+    if (!key.startsWith('ROADMAP_')) {
+      continue;
+    }
+    
+    appConfig[key.replace('ROADMAP_', '')] = process.env[key];
   }
 
-  console.log(`Config file found: ${configPath}`);
-
-  // @todo stringify the values for webpack - it doesn't understand objects
-  return require(configPath);
+  return appConfig;
 };
 
 const options = {
