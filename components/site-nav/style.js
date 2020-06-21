@@ -29,6 +29,7 @@ export const HeaderWrap = styled.div`
 
   .nav-links {
     a {
+      position: relative;
       padding: 0 10px;
       text-decoration: none;
       font-size: 16px;
@@ -45,6 +46,16 @@ export const HeaderWrap = styled.div`
       &:hover {
         background: #2d2d2d;
       }
+    }
+
+    .new-item {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: inline-block;
+      padding: 3px;
+      background: #e25712;
+      border-radius: 100%;
     }
   }
 `;
