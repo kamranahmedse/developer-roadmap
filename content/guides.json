@@ -1,5 +1,15 @@
 [
   {
+    "title": "OAuth — Open Authorization",
+    "description": "Learn and understand what is OAuth and how it works",
+    "url": "/guides/oauth",
+    "fileName": "oauth",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-06-28T19:59:14.191Z",
+    "createdAt": "2020-06-28T19:59:14.191Z"
+  },
+  {
     "title": "JWT Authentication",
     "description": "Understand what is JWT authentication and how is it implemented",
     "url": "/guides/jwt-authentication",
