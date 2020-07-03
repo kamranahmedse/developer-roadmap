@@ -2360,14 +2360,14 @@
         {
           "ID": "2142",
           "measuredH": "22",
-          "measuredW": "255",
+          "measuredW": "228",
           "properties": {
             "bold": "true",
             "size": "14",
-            "text": "airmon, airodump, dig, iptables, netstat"
+            "text": "airmon, airodump, iptables, netstat"
           },
           "typeID": "Label",
-          "x": "659",
+          "x": "664",
           "y": "1119",
           "zOrder": "95"
         },
