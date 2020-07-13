@@ -50,7 +50,7 @@ JavaScript allows you to add interactivity to your pages. Common examples that y
 
 ## Version Control Systems and Git
 
-Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code – if you’ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control ssytems allow you to get rid of this issue.
+Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code – if you’ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control systems allow you to get rid of this issue.
 
 In this section, you will learn what version control systems are and understand how to use Git which is the de facto VCS.  
 
