@@ -11,8 +11,8 @@ const SiteNav = () => (
       <div className='nav-links'>
         <a href='/roadmaps'>Roadmaps</a>
         <a href='/guides'>Guides</a>
-        <a href='/podcasts'>
-          Podcasts
+        <a href='/watch'>
+          Watch
           <span className='new-item' />
         </a>
       </div>

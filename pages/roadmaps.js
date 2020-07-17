@@ -1,14 +1,12 @@
-import { faPlus } from '@fortawesome/free-solid-svg-icons';
+import { faCodeBranch, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faCodeBranch } from '@fortawesome/free-solid-svg-icons';
 import DefaultLayout from 'layouts/default/index';
 import SiteNav from 'components/site-nav';
 import PageFooter from 'components/page-footer';
 import PageHeader from 'components/page-header';
-import roadmaps from "content/roadmaps";
+import roadmaps from 'content/roadmaps';
 import RowBlock from 'components/row-block';
-import IconRowBlock from 'components/icon-row-block';
-import siteConfig from "content/site";
+import siteConfig from 'content/site';
 import { BadgeLink, BadgesList, PrimaryBadge, SecondaryBadge } from 'components/badges';
 import Helmet from 'components/helmet';
 
