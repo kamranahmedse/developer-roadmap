@@ -10,6 +10,16 @@
     "createdAt": "2020-07-16T19:59:14.191Z"
   },
   {
+    "title": "CI and CD",
+    "description": "Learn the basics of CI/CD and how to implement that with GitHub Actions.",
+    "url": "/guides/ci-cd",
+    "fileName": "ci-cd",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-07-09T19:59:14.191Z",
+    "createdAt": "2020-07-09T19:59:14.191Z"
+  },
+  {
     "title": "SSO — Single Sign On",
     "description": "Learn the basics of SAML and understand how does Single Sign On work.",
     "url": "/guides/sso",
