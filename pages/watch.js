@@ -47,19 +47,19 @@ const WatchList = () => (
               openExternal
               title={ 'Dependency Injection' }
               subtitle='Learn how to write testable and maintainable code with Dependency Injection.'
-              url='https://www.youtube.com/watch?v=nyKZTKQS_EQ'
+              url='https://www.youtube.com/watch?v=0yc2UANSDiw'
             />
             <RowBlock
               openExternal
               title={ 'CSS Variables' }
               subtitle='Learn how to write maintainable CSS using CSS Variables with a simple project based lesson.'
-              url='https://www.youtube.com/watch?v=nyKZTKQS_EQ'
+              url='https://www.youtube.com/watch?v=lgaxU7CRmxU'
             />
             <RowBlock
               openExternal
               title={ 'All about DOM' }
               subtitle='Learn and understand the differences between the DOM, Shadow DOM and the Virtual DOM.'
-              url='https://www.youtube.com/watch?v=nyKZTKQS_EQ'
+              url='https://www.youtube.com/watch?v=7Tok22qxPzQ'
             />
             <RowBlock
               openExternal
