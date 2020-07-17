@@ -1,5 +1,15 @@
 [
   {
+    "title": "SSO — Single Sign On",
+    "description": "Learn the basics of SAML and understand how does Single Sign On work.",
+    "url": "/guides/sso",
+    "fileName": "sso",
+    "featured": true,
+    "author": "kamranahmedse",
+    "updatedAt": "2020-07-01T19:59:14.191Z",
+    "createdAt": "2020-07-01T19:59:14.191Z"
+  },
+  {
     "title": "OAuth — Open Authorization",
     "description": "Learn and understand what is OAuth and how it works",
     "url": "/guides/oauth",
