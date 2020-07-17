@@ -36,7 +36,8 @@ const PageFooter = () => (
           <ul>
             <li className="foot-header">Learn</li>
             <li><a href="/guides">Read Guides</a></li>
-            <li><a href="/roadmaps">View Roadmaps</a></li>
+            <li><a href="/watch">Watch Videos</a></li>
+            <li><a href="/podcasts">Podcasts</a></li>
             <li><a href={ siteConfig.url.contribute } target="_blank">Contribute</a></li>
           </ul>
         </div>

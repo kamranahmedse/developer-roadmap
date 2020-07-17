@@ -10,7 +10,7 @@ const SiteNav = () => (
       </div>
       <div className='nav-links'>
         <a href='/roadmaps'>Roadmaps</a>
-        <a href='/guides'>Guides</a>
+        <a href='/guides'>Read</a>
         <a href='/watch'>
           Watch
           <span className='new-item' />
