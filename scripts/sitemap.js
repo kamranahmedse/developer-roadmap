@@ -25,9 +25,14 @@ const getSlugPriority = (pageSlug) => {
   }
 
   const slugPriorities = [
-    ['/roadmaps', '/guides', '/podcasts'],      // 1.0
-    ['/signup'],                   // 0.9
-    ['/about'],                    // 0.8
+    [
+      '/roadmaps',
+      '/guides',
+      '/watch',
+      '/podcasts'
+    ], // 1.0
+    ['/signup'], // 0.9
+    ['/about'], // 0.8
   ];
 
   const foundIndex = slugPriorities.findIndex(
