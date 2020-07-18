@@ -135,6 +135,46 @@
   },
   {
     "seo": {
+      "title": "React Developer Roadmap: Learn to become a React developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a react developer",
+        "react developer roadmap",
+        "react roadmap",
+        "become react developer",
+        "react developer skills",
+        "react skills test",
+        "skills for react development",
+        "learn react development",
+        "what is react",
+        "react quiz",
+        "react interview questions"
+      ]
+    },
+    "title": "React Developer",
+    "description": "Everything that is there to learn about React and the ecosystem in 2020.",
+    "featuredDescription": "Everything that is there to learn about React and the ecosystem in 2020.",
+    "isTextHeavy": false,
+    "communityResource": false,
+    "featured": true,
+    "path": "/roadmaps/4-react/landscape.md",
+    "resources": "/roadmaps/4-react/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "contributorsCount": 0,
+    "contributorsUrl": "/react/contributors",
+    "url": "/react",
+    "sidebar": {}
+  },
+  {
+    "seo": {
       "title": "Android Developer Roadmap: Learn to become an Android developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -157,8 +197,8 @@
     "isTextHeavy": true,
     "communityResource": true,
     "featured": true,
-    "path": "/roadmaps/4-android/landscape.md",
-    "resources": "/roadmaps/4-android/resources.md",
+    "path": "/roadmaps/5-android/landscape.md",
+    "resources": "/roadmaps/5-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -168,52 +208,9 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 1,
+    "contributorsCount": 0,
     "contributorsUrl": "/android/contributors",
     "url": "/android",
-    "sidebar": {}
-  },
-  {
-    "seo": {
-      "title": "Fullstack Roadmap: Learn to become a fullstack developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern fullstack development. Learn to become a modern fullstack developer by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to becoming a developer",
-        "guide to becoming a fullstack developer",
-        "fullstack developer",
-        "fullstack engineer",
-        "fullstack skills",
-        "fullstack development",
-        "javascript developer",
-        "fullstack development skills",
-        "fullstack development skills test",
-        "fullstack engineer roadmap",
-        "fullstack developer roadmap",
-        "become a fullstack developer",
-        "fullstack developer career path",
-        "javascript developer",
-        "modern javascript developer",
-        "node developer",
-        "skills for fullstack development",
-        "learn fullstack development",
-        "what is fullstack development",
-        "fullstack developer quiz",
-        "fullstack developer interview questions"
-      ]
-    },
-    "title": "Full Stack Developer",
-    "description": "Step by step guide to becoming a modern fullstack developer in 2020",
-    "featuredDescription": "Step by step guide to becoming a modern fullstack developer in 2020",
-    "path": "/roadmaps/5-fullstack/landscape.md",
-    "resources": "/roadmaps/5-fullstack/resources.md",
-    "upcoming": true,
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
-    },
-    "contributorsCount": 1,
-    "contributorsUrl": "/fullstack/contributors",
-    "url": "/fullstack",
     "sidebar": {}
   },
   {
