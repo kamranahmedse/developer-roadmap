@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "React Developer Roadmap: Learn to become a React developer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a react developer",
+      "react developer roadmap",
+      "react roadmap",
+      "become react developer",
+      "react developer skills",
+      "react skills test",
+      "skills for react development",
+      "learn react development",
+      "what is react",
+      "react quiz",
+      "react interview questions"
+    ]
+  },
+  "title": "React Developer",
+  "description": "Everything that is there to learn about React and the ecosystem in 2020.",
+  "featuredDescription": "Everything that is there to learn about React and the ecosystem in 2020.",
+  "isTextHeavy": false,
+  "communityResource": false,
+  "featured": true,
+  "path": "./landscape.md",
+  "resources": "./resources.md",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  }
+}
