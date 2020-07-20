@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className="row">
             <RowBlock
               openExternal
+              title={ 'All about Promises in JavaScript' }
+              subtitle='Everything you need to know to about writing asynchronous code with Promises.'
+              url='https://www.youtube.com/watch?v=BvrkobaCVVE'
+            />
+            <RowBlock
+              openExternal
               title={ 'GitHub Actions' }
               subtitle='Learn what is CI/CD and how to automate your workflows with GitHub actions.'
               url='https://www.youtube.com/watch?v=nyKZTKQS_EQ'
