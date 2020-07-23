@@ -9,9 +9,9 @@
 
 ![웹 개발자 로드맵 안내](./img/intro.png)
 
-## Frontend Roadmap
+## 프론트엔드 로드맵
 
-![](./img/frontend-map.png)
+![프론트엔드 로드맵](./img/frontend.png)
 
 ## Backend Roadmap
 
