@@ -13,9 +13,9 @@
 
 ![프론트엔드 로드맵](./img/frontend.png)
 
-## Backend Roadmap
+## 백엔드 로드맵
 
-> [Help us translate](https://github.com/kamranahmedse/developer-roadmap/issues/669)
+![백엔드 로드맵](./img/backend.png)
 
 ## DevOps Roadmap
 
