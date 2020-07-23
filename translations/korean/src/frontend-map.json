@@ -2131,13 +2131,13 @@
                     "typeID": "Label",
                     "zOrder": "75",
                     "w": "134",
-                    "measuredW": "93",
+                    "measuredW": "79",
                     "measuredH": "25",
                     "x": "242",
                     "y": "567",
                     "properties": {
                         "size": "17",
-                        "text": "기본기 다지기",
+                        "text": "기초 다지기",
                         "align": "center"
                     }
                 },
@@ -2260,13 +2260,13 @@
                     "typeID": "Label",
                     "zOrder": "84",
                     "w": "140",
-                    "measuredW": "93",
+                    "measuredW": "79",
                     "measuredH": "25",
                     "x": "945",
                     "y": "692",
                     "properties": {
                         "size": "17",
-                        "text": "기본기 다지기",
+                        "text": "기초 다지기",
                         "align": "center"
                     }
                 },
@@ -3220,14 +3220,14 @@
                     "ID": "151",
                     "typeID": "Label",
                     "zOrder": "151",
-                    "measuredW": "182",
+                    "measuredW": "82",
                     "measuredH": "25",
-                    "x": "575",
+                    "x": "625",
                     "y": "751",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "자바스크립트(JavaScript)",
+                        "text": "JavaScript",
                         "align": "center"
                     }
                 },
@@ -3486,13 +3486,13 @@
                     "ID": "169",
                     "typeID": "Label",
                     "zOrder": "169",
-                    "measuredW": "72",
+                    "measuredW": "131",
                     "measuredH": "24",
                     "x": "210",
                     "y": "204",
                     "properties": {
                         "size": "16",
-                        "text": "추천 / 의견"
+                        "text": "추천 / 개인적인 의견"
                     }
                 },
                 {
@@ -5994,13 +5994,13 @@
                     "typeID": "Label",
                     "zOrder": "315",
                     "w": "206",
-                    "measuredW": "157",
+                    "measuredW": "149",
                     "measuredH": "24",
                     "x": "1104",
                     "y": "2342",
                     "properties": {
                         "size": "16",
-                        "text": "기본적으로 자바스크립트"
+                        "text": "기본적으로 JavaScript"
                     }
                 },
                 {
@@ -6173,13 +6173,13 @@
                     "typeID": "Label",
                     "zOrder": "328",
                     "w": "201",
-                    "measuredW": "185",
+                    "measuredW": "177",
                     "measuredH": "24",
                     "x": "852",
                     "y": "2368",
                     "properties": {
                         "size": "16",
-                        "text": "자바스크립트 애플리케이션과"
+                        "text": "JavaScript 애플리케이션과"
                     }
                 },
                 {
@@ -6864,7 +6864,7 @@
                     "typeID": "TextInput",
                     "zOrder": "373",
                     "w": "177",
-                    "measuredW": "46",
+                    "measuredW": "82",
                     "measuredH": "32",
                     "x": "169",
                     "y": "2802",
@@ -6872,7 +6872,7 @@
                         "align": "center",
                         "color": "16770457",
                         "size": "18",
-                        "text": "인증"
+                        "text": "자격 증명"
                     }
                 },
                 {
@@ -6880,7 +6880,7 @@
                     "typeID": "TextInput",
                     "zOrder": "374",
                     "w": "177",
-                    "measuredW": "66",
+                    "measuredW": "61",
                     "measuredH": "32",
                     "x": "169",
                     "y": "2579",
@@ -6888,7 +6888,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "웹 소켓"
+                        "text": "웹소켓"
                     }
                 },
                 {
@@ -8006,14 +8006,15 @@
                     "ID": "439",
                     "typeID": "Label",
                     "zOrder": "439",
-                    "measuredW": "114",
+                    "measuredW": "79",
                     "measuredH": "25",
-                    "x": "246",
+                    "x": "264",
                     "y": "3513",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Keep Learning"
+                        "text": "계속 배우기",
+                        "align": "center"
                     }
                 },
                 {
@@ -11971,7 +11972,7 @@
             "order": 1000000,
             "parentID": null
         },
-        "resourceID": "E87BDF04-BA46-4297-A4A0-9049B248E93E",
+        "resourceID": "5F39586A-6112-476D-A2A2-EFE92A2AED03",
         "mockupH": "3449",
         "mockupW": "1217",
         "measuredW": "1342",
