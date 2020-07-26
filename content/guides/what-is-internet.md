@@ -10,7 +10,7 @@ Knowing the basics of internet and how it works is the key knowledge that every 
 
 ## What is internet?
 
-Internet, at its simplest, is a global network of computers connected to each other which communicate through a standardized set of protocols. 
+Internet is a global network of computers connected to each other which communicate through a standardized set of protocols. 
 
 In the video below Vint Cerf, one of the "fathers of the internet" explains the history of how the internet works and how no one person or organization is really in charge of it.  
 
