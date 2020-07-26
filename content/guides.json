@@ -252,10 +252,10 @@
     "updatedAt": "2017-10-28T17:00:00.860Z"
   },
   {
-    "title": "Forward and Reverse Proxy Servers",
-    "description": "How do proxy servers work and what are forward & reverse proxies",
-    "url": "/guides/forward&reverse_proxy",
-    "fileName": "forward&reverse_proxy",
+    "title": "Proxy Servers",
+    "description": "How do proxy servers work and what are forward and reverse proxies?",
+    "url": "/guides/proxy-servers",
+    "fileName": "proxy-servers",
     "featured": true,
     "author": "ebrahimbharmal007",
     "createdAt": "2020-07-24T12:40:18",
