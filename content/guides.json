@@ -250,5 +250,15 @@
     "author": "kamranahmedse",
     "createdAt": "2017-10-28T17:00:00.860Z",
     "updatedAt": "2017-10-28T17:00:00.860Z"
+  },
+  {
+    "title": "Forward and Reverse Proxy Servers",
+    "description": "How do proxy servers work and what are forward & reverse proxies",
+    "url": "/guides/forward&reverse_proxy",
+    "fileName": "forward&reverse_proxy",
+    "featured": true,
+    "author": "ebrahimbharmal007",
+    "createdAt": "2020-07-24T12:40:18",
+    "updatedAt": "2020-07-24T12:40:18"
   }
 ]

@@ -26,5 +26,12 @@
     "twitter": "spekulatius1984",
     "picture": "/authors/spekulatius.jpg",
     "bio": "Developer building side-projects for fun, lover of the web and open source"
+  },
+  {
+    "username": "ebrahimbharmal007",
+    "name": "Ebrahim Bharmal",
+    "twitter": "BharmalEbrahim",
+    "picture": "/authors/ebrahimbharmal007.png",
+    "bio": "Love building projects using tools completely new to me. Python forever. Senior at University of Texas at Arlington (2021)"
   }
 ]
