@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className="row">
             <RowBlock
               openExternal
+              title={ 'Scaling an Application' }
+              subtitle='Learn how to scale an unscalable application and how to tackle the issues in production.'
+              url='https://www.youtube.com/watch?v=a2rcgzludDU'
+            />
+            <RowBlock
+              openExternal
               title={ 'All about Promises in JavaScript' }
               subtitle='Everything you need to know to about writing asynchronous code with Promises.'
               url='https://www.youtube.com/watch?v=BvrkobaCVVE'
