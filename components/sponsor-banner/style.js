@@ -2,8 +2,11 @@ import styled from 'styled-components';
 
 export const BannerWrap = styled.a`
   margin-bottom: 0;
-  background: #101010;
-  color: white;
+  //background: #101010;
+  //color: white;
+  background: #ffe0b2;
+  color: #d8362a;
+  font-weight: 600;
   border: 0;
   border-radius: 0;
   padding: 10px 15px;
@@ -12,7 +15,8 @@ export const BannerWrap = styled.a`
   transition: all 200ms;
   
   &:hover {
-    color: white;
+    background: #ffd698;
+    color: #bd2015;
     text-decoration: none;
   }
 `;
@@ -32,14 +36,14 @@ export const EmojiWrap = styled.img`
 `;
 
 export const CloseSponsor = styled.span`
-  color: white;
   text-shadow: none;
   margin-right: 15px;
   position: relative;
   top: -2px;
+  color: #101010;
   
   &:hover {
     opacity: 1;
-    color: white;
+    color: #101010;
   }
 `;
