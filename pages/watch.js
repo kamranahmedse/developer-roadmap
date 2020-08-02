@@ -41,7 +41,7 @@ const WatchList = () => (
             openExternal
             title={'JavaScript Fetch API'}
             subtitle="Learn how to make API calls with vanilla JavaScript using browser's builtin Fetch API."
-            url='https://www.youtube.com/watch?v=a2rcgzludDU'
+            url='https://www.youtube.com/watch?v=-ZI0ea5O2oA'
           />
           <RowBlock
             openExternal
