@@ -55,7 +55,7 @@
 - Renames ELK Stack to Elastic Stack
 - Adds Linode, Vultr and Alibaba Cloud to "Service Providers"
 - Renames ELK Stack to "Elastic Stack"
-- CI/CD - Adds Gitlab CI, GitHub Actions, Bamboo and Azure DevOps Services
+- CI/CD - Adds GitLab CI, GitHub Actions, Bamboo and Azure DevOps Services
 - Adds prometheus and Grafana under infra monitoring
 - Adds OpenTracing, Jaegar and Instana in app monitoring
 - Adds Pulumi under Infrastructure Provisioning
