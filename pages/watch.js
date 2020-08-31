@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'DNS Records'}
+            subtitle="Learn what the DNS records and some of the common types of DNS Records."
+            url='https://www.youtube.com/watch?v=7lxgpKh_fRY'
+          />
+          <RowBlock
+            openExternal
             title={'DNS and how does it work?'}
             subtitle="Learn about the internet, DNS, and how a website is found on the internet."
             url='https://www.youtube.com/watch?v=Wj0od2ag5sk'
