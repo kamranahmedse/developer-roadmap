@@ -168,7 +168,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/react/contributors",
     "url": "/react",
     "sidebar": {}
@@ -208,7 +208,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/android/contributors",
     "url": "/android",
     "sidebar": {}
@@ -246,5 +246,31 @@
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
     "sidebar": {}
+  },
+  {
+    "title": "PostgreSQL DBA Roadmap",
+    "description": "Step by step guide to becoming a modern PostgreSQL DBA",
+    "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2020",
+    "path": "/roadmaps/7-postgresql-dba/landscape.md",
+    "resources": "/roadmaps/7-postgresql-dba/resources.md",
+    "author": {
+      "name": "Alexey Lesovsky",
+      "url": "https://github.com/lesovsky"
+    },
+    "featured": false,
+    "detailed": false,
+    "versions": [],
+    "contributorsCount": 0,
+    "contributorsUrl": "/postgresql-dba/contributors",
+    "url": "/postgresql-dba",
+    "sidebar": {
+      "About": [
+        {
+          "url": "/postgresql-dba/summary",
+          "title": "Summary",
+          "path": "/roadmaps/7-postgresql-dba/0-About/0-Summary.md"
+        }
+      ]
+    }
   }
 ]

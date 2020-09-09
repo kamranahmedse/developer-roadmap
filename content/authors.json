@@ -33,5 +33,10 @@
     "twitter": "BharmalEbrahim",
     "picture": "/authors/ebrahimbharmal007.png",
     "bio": "Love building projects using tools completely new to me. Python forever. Senior at University of Texas at Arlington (2021)"
+  },
+  {
+    "username": "lesovsky",
+    "name": "Alexey Lesovsky",
+    "bio": "Linux system administrator and PostgreSQL DBA at DataEgret."
   }
 ]
