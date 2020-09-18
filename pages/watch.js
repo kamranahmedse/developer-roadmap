@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'Load Balancers 101'}
+            subtitle="Learn what the load balancers are, how do they work and different Load Balancing Algorithms."
+            url='https://www.youtube.com/watch?v=galcDRNd5Ow'
+          />
+          <RowBlock
+            openExternal
             title={'DNS Records'}
             subtitle="Learn what the DNS records and some of the common types of DNS Records."
             url='https://www.youtube.com/watch?v=7lxgpKh_fRY'
