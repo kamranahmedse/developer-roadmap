@@ -135,46 +135,6 @@
   },
   {
     "seo": {
-      "title": "React Developer Roadmap: Learn to become a React developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to becoming a react developer",
-        "react developer roadmap",
-        "react roadmap",
-        "become react developer",
-        "react developer skills",
-        "react skills test",
-        "skills for react development",
-        "learn react development",
-        "what is react",
-        "react quiz",
-        "react interview questions"
-      ]
-    },
-    "title": "React Developer",
-    "description": "Everything that is there to learn about React and the ecosystem in 2020.",
-    "featuredDescription": "Everything that is there to learn about React and the ecosystem in 2020.",
-    "isTextHeavy": false,
-    "communityResource": false,
-    "featured": true,
-    "path": "/roadmaps/4-react/landscape.md",
-    "resources": "/roadmaps/4-react/resources.md",
-    "versions": [
-      "latest",
-      "2018",
-      "2017"
-    ],
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
-    },
-    "contributorsCount": 1,
-    "contributorsUrl": "/react/contributors",
-    "url": "/react",
-    "sidebar": {}
-  },
-  {
-    "seo": {
       "title": "Android Developer Roadmap: Learn to become an Android developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -197,8 +157,8 @@
     "isTextHeavy": true,
     "communityResource": true,
     "featured": true,
-    "path": "/roadmaps/5-android/landscape.md",
-    "resources": "/roadmaps/5-android/resources.md",
+    "path": "/roadmaps/4-android/landscape.md",
+    "resources": "/roadmaps/4-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -211,6 +171,90 @@
     "contributorsCount": 1,
     "contributorsUrl": "/android/contributors",
     "url": "/android",
+    "sidebar": {}
+  },
+  {
+    "seo": {
+      "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a database administrator",
+        "guide to becoming a DBA",
+        "dba roadmap",
+        "db administrator roadmap",
+        "database administrator roadmap",
+        "postgresql roadmap",
+        "dba skills",
+        "db administrator skills",
+        "become dba",
+        "postgresql skills",
+        "modern dba skills",
+        "dba skills test",
+        "skills for dba",
+        "skills for database administrator",
+        "learn dba",
+        "what is dba",
+        "database administrator quiz",
+        "dba interview questions"
+      ]
+    },
+    "title": "DB Administrator",
+    "description": "Step by step guide to becoming a modern PostgreSQL DBA",
+    "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2020",
+    "path": "/roadmaps/5-postgresql-dba/landscape.md",
+    "resources": "/roadmaps/5-postgresql-dba/resources.md",
+    "author": {
+      "name": "Alexey Lesovsky",
+      "url": "https://github.com/lesovsky"
+    },
+    "communityResource": true,
+    "isTextHeavy": true,
+    "featured": false,
+    "detailed": false,
+    "versions": [],
+    "contributorsCount": 0,
+    "contributorsUrl": "/postgresql-dba/contributors",
+    "url": "/postgresql-dba",
+    "sidebar": {}
+  },
+  {
+    "seo": {
+      "title": "React Developer Roadmap: Learn to become a React developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a react developer",
+        "react developer roadmap",
+        "react roadmap",
+        "become react developer",
+        "react developer skills",
+        "react skills test",
+        "skills for react development",
+        "learn react development",
+        "what is react",
+        "react quiz",
+        "react interview questions"
+      ]
+    },
+    "title": "React Developer",
+    "description": "Everything that is there to learn about React and the ecosystem in 2020.",
+    "featuredDescription": "Everything that is there to learn about React and the ecosystem in 2020.",
+    "isTextHeavy": false,
+    "communityResource": false,
+    "featured": true,
+    "path": "/roadmaps/6-react/landscape.md",
+    "resources": "/roadmaps/6-react/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "contributorsCount": 0,
+    "contributorsUrl": "/react/contributors",
+    "url": "/react",
     "sidebar": {}
   },
   {
@@ -236,41 +280,15 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2020",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2020",
     "upcoming": true,
-    "path": "/roadmaps/6-qa/landscape.md",
-    "resources": "/roadmaps/6-qa/resources.md",
+    "path": "/roadmaps/7-qa/landscape.md",
+    "resources": "/roadmaps/7-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "contributorsCount": 1,
+    "contributorsCount": 0,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
     "sidebar": {}
-  },
-  {
-    "title": "PostgreSQL DBA Roadmap",
-    "description": "Step by step guide to becoming a modern PostgreSQL DBA",
-    "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2020",
-    "path": "/roadmaps/7-postgresql-dba/landscape.md",
-    "resources": "/roadmaps/7-postgresql-dba/resources.md",
-    "author": {
-      "name": "Alexey Lesovsky",
-      "url": "https://github.com/lesovsky"
-    },
-    "featured": false,
-    "detailed": false,
-    "versions": [],
-    "contributorsCount": 0,
-    "contributorsUrl": "/postgresql-dba/contributors",
-    "url": "/postgresql-dba",
-    "sidebar": {
-      "About": [
-        {
-          "url": "/postgresql-dba/summary",
-          "title": "Summary",
-          "path": "/roadmaps/7-postgresql-dba/0-About/0-Summary.md"
-        }
-      ]
-    }
   }
 ]
