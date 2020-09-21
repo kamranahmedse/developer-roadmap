@@ -198,7 +198,7 @@
         "dba interview questions"
       ]
     },
-    "title": "DB Administrator",
+    "title": "PostgreSQL DBA",
     "description": "Step by step guide to becoming a modern PostgreSQL DBA",
     "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2020",
     "path": "/roadmaps/5-postgresql-dba/landscape.md",
@@ -212,7 +212,7 @@
     "featured": false,
     "detailed": false,
     "versions": [],
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/postgresql-dba/contributors",
     "url": "/postgresql-dba",
     "sidebar": {}
@@ -252,7 +252,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/react/contributors",
     "url": "/react",
     "sidebar": {}
@@ -286,7 +286,7 @@
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "contributorsCount": 0,
+    "contributorsCount": 1,
     "contributorsUrl": "/qa/contributors",
     "url": "/qa",
     "sidebar": {}
