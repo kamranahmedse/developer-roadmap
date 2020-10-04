@@ -26,7 +26,7 @@ const Terms = () => (
           <p>Except for changes by us as described here, no other amendment or modification of these Terms will be effective unless in writing and signed by both you and us.</p>
 
           <h4>Do these terms cover privacy?</h4>
-          <p>You can view the current roadmap.sh Privacy Policy <a href="/policy">here</a>.</p>
+          <p>You can view the current roadmap.sh Privacy Policy <a href="/privacy">here</a>.</p>
           <p>The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under 13. We do not knowingly collect or solicit personally identifiable information from children under 13. If
             you
             are a child under 13, please do not attempt to register for the Services or send any personal information about yourself to us. If we learn we have collected personal information from a child under 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal
