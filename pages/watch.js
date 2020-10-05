@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'HTTP Caching Headers'}
+            subtitle="Learn everything you need to know about HTTP caching."
+            url='https://www.youtube.com/watch?v=HiBDZgTNpXY'
+          />
+          <RowBlock
+            openExternal
             title={'Content Delivery Networks'}
             subtitle="Learn what the CDNs are, how they work and why you might use them."
             url='https://www.youtube.com/watch?v=6DXEPcXKQNY'
