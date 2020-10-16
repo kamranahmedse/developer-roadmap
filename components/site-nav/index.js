@@ -9,7 +9,6 @@ const SiteNav = () => (
         </a>
       </div>
       <div className='nav-links'>
-        <a href='/roadmaps'>Roadmaps</a>
         <a href='/guides'>Read</a>
         <a href='/watch'>
           Watch
