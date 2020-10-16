@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'Freeze and Seal Objects in JavaScript'}
+            subtitle="Learn how to use Object.freeze, Object.seal and Object.preventExtensions."
+            url='https://www.youtube.com/watch?v=O3uT2l6vgZ8'
+          />
+          <RowBlock
+            openExternal
             title={'HTTP Caching Headers'}
             subtitle="Learn everything you need to know about HTTP caching."
             url='https://www.youtube.com/watch?v=HiBDZgTNpXY'
