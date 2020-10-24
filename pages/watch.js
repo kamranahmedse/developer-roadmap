@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'OSI Model — Visual Explanation'}
+            subtitle="What is OSI Model, different layers involved, explained visually with examples."
+            url='https://www.youtube.com/watch?v=dV8mjZd1OtU'
+          />
+          <RowBlock
+            openExternal
             title={'Freeze and Seal Objects in JavaScript'}
             subtitle="Learn how to use Object.freeze, Object.seal and Object.preventExtensions."
             url='https://www.youtube.com/watch?v=O3uT2l6vgZ8'
