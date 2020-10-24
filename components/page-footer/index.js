@@ -27,6 +27,7 @@ const PageFooter = () => (
         <div className="site-contribute foot-col col-12 col-sm-4 col-lg-2">
           <ul>
             <li className='foot-header'>Contribute</li>
+            <li><a href='https://gum.co/roadmap-sh'  target="_blank">Sponsor us</a></li>
             <li><a href={ siteConfig.url.addGuide } target="_blank">Write a Guide</a></li>
             <li><a href={ siteConfig.url.addRoadmap } target="_blank">Submit a Roadmap</a></li>
             <li><a href='/about'>About this Site</a></li>
@@ -38,7 +39,7 @@ const PageFooter = () => (
             <li><a href="/guides">Read Guides</a></li>
             <li><a href="/watch">Watch Videos</a></li>
             <li><a href="/podcasts">Podcasts</a></li>
-            <li><a href={ siteConfig.url.contribute } target="_blank">Contribute</a></li>
+            <li><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1" target="_blank">YouTube</a></li>
           </ul>
         </div>
         <div className="site-learn foot-col col-12 col-sm-4 col-lg-2">
