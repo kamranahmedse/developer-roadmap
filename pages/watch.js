@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'TCP/IP Model Explained'}
+            subtitle="What is TCP/IP Model, different layers, explained visually with examples."
+            url='https://www.youtube.com/watch?v=F5rni9fr1yE'
+          />
+          <RowBlock
+            openExternal
             title={'OSI Model — Visual Explanation'}
             subtitle="What is OSI Model, different layers involved, explained visually with examples."
             url='https://www.youtube.com/watch?v=dV8mjZd1OtU'
