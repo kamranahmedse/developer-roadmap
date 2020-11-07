@@ -1,23 +1,23 @@
-## developer-roadmap
-> Roadmap to becoming a web developer in 2020
+## Peta Perjalanan-pengembang
+> Peta perjalanan untuk menjadi seorang pengembang web di tahun 2020
 
-[![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
-[![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
-[![](https://img.shields.io/badge/%E2%9D%A4-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1)
+[![](https://img.shields.io/badge/-Peta%20Perjalanan%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
+[![](https://img.shields.io/badge/-Panduan-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
+[![](https://img.shields.io/badge/%E2%9D%A4-Kanal%20YouTube-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1)
 
 
-## Introduction
+## Pengantar
 
 ![](./img/intro-map.png)
 
-## Frontend Roadmap
+## Peta Perjalanan Frontend
 
 ![](./img/frontend-map.png)
 
-## Backend Roadmap
+## Peta Perjalanan Backend
 
 ![](./img/backend-map.png)
 
-## DevOps Roadmap
+## Peta Perjalanan DevOps
 
 ![](./img/devops-map.png)
