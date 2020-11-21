@@ -39,6 +39,12 @@ const WatchList = () => (
         <div className='row'>
           <RowBlock
             openExternal
+            title={'Transport Protocols: TCP and UDP'}
+            subtitle="Learn what TCP and UDP are, the differences and when to prefer which one."
+            url='https://www.youtube.com/watch?v=37AFBZv4_6Y'
+          />
+          <RowBlock
+            openExternal
             title={'TCP/IP Model Explained'}
             subtitle="What is TCP/IP Model, different layers, explained visually with examples."
             url='https://www.youtube.com/watch?v=F5rni9fr1yE'
