@@ -17,7 +17,7 @@ First of all thank you for considering to contribute to this project. It wouldn'
   {
     "title": "Roadmap Name",
     "description": "Step by step guide to becoming a modern ***",
-    "featuredDescription": "Step by step guide to becoming a modern ** in 2020",
+    "featuredDescription": "Step by step guide to becoming a modern ** in 2021",
     "author": {
       "name": "Your Name",
       "url": "https://twitter.com/twitter"
