@@ -40,7 +40,7 @@ If you think that these can be improved in any way, please do suggest.
 
 ## Introduction
 
-![Web Developer Roadmap Introduction](./img/intro.png)
+![Web Developer Roadmap Introduction](./img/intro.png?v=2021)
 
 ## Frontend Roadmap
 
