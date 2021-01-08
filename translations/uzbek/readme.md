@@ -1,5 +1,5 @@
 ## developer-roadmap
-> 2020-yilda Web dasturchi "yo'l xaritasi"
+> 2021-yilda Web dasturchi "yo'l xaritasi"
 
 [![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 [![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)

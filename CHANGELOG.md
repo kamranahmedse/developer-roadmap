@@ -1,4 +1,4 @@
-## Roadmap 2020
+## Roadmap 2021
 
 ### General Updates
 - Added printable PDFs for the roadmaps: [Frontend Roadmap](https://roadmap.sh/roadmaps/pdf/frontend.pdf), [Backend Roadmap](https://roadmap.sh/roadmaps/pdf/backend.pdf), [DevOps Roadmap](https://roadmap.sh/roadmaps/pdf/devops.pdf)

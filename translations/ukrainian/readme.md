@@ -1,7 +1,7 @@
-![Web Developer Roadmap - 2020](https://i.imgur.com/NNyc9QM.png)
+![Web Developer Roadmap - 2021](https://i.imgur.com/NNyc9QM.png)
 
 ## developer-roadmap
-> "Дорожна мапа" разробника у 2020 році
+> "Дорожна мапа" разробника у 2021 році
 
 [![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 [![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
