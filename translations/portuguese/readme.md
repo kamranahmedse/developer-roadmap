@@ -26,7 +26,7 @@ Abaixo você encontra um conjunto de gráficos demonstrando os caminhos que voc�
 
 <h3 align="center"><strong>Propósito desses Roteiros</strong></h3>
 
-> O propósito desses Roteiros é dar a você uma ideia sobre o panorama e te guiarse você está confuso sobre o que aprender depois e não te encorajar a escolher o que está na moda. Você deve começar a entender o porquê de uma ferramenta seria melhor em alguns casos que outra e se lembrar de na moda nunca significa melhor adequada para o trabalho.
+> O propósito desses Roteiros é dar a você uma ideia sobre o panorama e te guiar se você está confuso sobre o que aprender depois e não te encorajar a escolher o que está na moda. Você deve começar a entender o porquê de uma ferramenta seria melhor em alguns casos que outra e se lembrar de na moda nunca significa melhor adequada para o trabalho.
 
 <h3 align="center"><strong>Observação a Iniciantes</strong></h3>
 
@@ -34,7 +34,7 @@ Abaixo você encontra um conjunto de gráficos demonstrando os caminhos que voc�
 
 ***
 
-Se você acha que estas podem ser melhoradas de qualquer jeito, por favor sugira como.
+Se você acha que estes podem ser melhorados de qualquer jeito, por favor sugira como.
 
 ## Introdução
 
@@ -54,7 +54,7 @@ Se você acha que estas podem ser melhoradas de qualquer jeito, por favor sugira
 
 ## 🚦 Para Finalizar
 
-Se você acredita que os roteiros podem ser melhorados, sinta-se livre para discutir sobre nas issues. Além disso, eu vou continuar a melhorar isto,então você talvez queira clicar em watch ali em cima ou se inscrever em [roadmap.sh](http://roadmap.sh) para revisitar.
+Se você acredita que os roteiros podem ser melhorados, sinta-se livre para discutir sobre nas issues. Além disso, eu vou continuar a melhorar isto, então você talvez queira clicar em watch ali em cima ou se inscrever em [roadmap.sh](http://roadmap.sh) para revisitar.
 
 ## 🙌 Contribuição
 
