@@ -1,6 +1,6 @@
-![웹 개발자 로드맵 - 2020](https://i.imgur.com/NNyc9QM.png)
+![웹 개발자 로드맵 - 2021](https://i.imgur.com/NNyc9QM.png)
 
-> 2020년, 웹 개발자가 되기 위한 로드맵
+> 2021년, 웹 개발자가 되기 위한 로드맵
 
 [![](https://img.shields.io/badge/-%EB%A1%9C%EB%93%9C%EB%A7%B5%28%EC%98%81%EC%96%B4%29%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 [![](https://img.shields.io/badge/-%EA%B0%80%EC%9D%B4%EB%93%9C%28%EC%98%81%EC%96%B4%29-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
@@ -16,7 +16,7 @@
 
 <h3 align="center"><strong>초보자를 위한 안내</strong></h3>
 
-> 이 로드맵은 아래 나열된 경로에 대해 학습할 수 있는 모든 것을 담고 있습니다. 그렇다고 부담스러워 하지 마세요. 시작이 반이고 처음부터 전부 배울 필요는 없습니다. 현재 초보자용 로드맵을 제작 중이며 2020년 백엔드와 데브옵스 로드맵 공개 이후에 [곧이어 보여드릴 예정입니다](https://roadmap.sh).
+> 이 로드맵은 아래 나열된 경로에 대해 학습할 수 있는 모든 것을 담고 있습니다. 그렇다고 부담스러워 하지 마세요. 시작이 반이고 처음부터 전부 배울 필요는 없습니다. 현재 초보자용 로드맵을 제작 중이며 2021년 백엔드와 데브옵스 로드맵 공개 이후에 [곧이어 보여드릴 예정입니다](https://roadmap.sh).
 
 ***
 

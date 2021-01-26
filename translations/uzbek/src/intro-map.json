@@ -6,14 +6,14 @@
                     "ID": "0",
                     "typeID": "Label",
                     "zOrder": "0",
-                    "measuredW": "297",
+                    "measuredW": "398",
                     "measuredH": "40",
                     "x": "491",
                     "y": "74",
                     "properties": {
                         "bold": "true",
                         "size": "32",
-                        "text": "مطور ويب في  2021"
+                        "text": "2021-yilda Web Dasturlash"
                     }
                 },
                 {
@@ -76,7 +76,7 @@
                     "typeID": "TextInput",
                     "zOrder": "3",
                     "w": "132",
-                    "measuredW": "93",
+                    "measuredW": "95",
                     "measuredH": "32",
                     "x": "441",
                     "y": "367",
@@ -91,14 +91,14 @@
                     "ID": "4",
                     "typeID": "Label",
                     "zOrder": "4",
-                    "measuredW": "95",
+                    "measuredW": "163",
                     "measuredH": "28",
-                    "x": "609",
+                    "x": "589",
                     "y": "189",
                     "properties": {
                         "bold": "true",
                         "size": "20",
-                        "text": "اختر مسارك"
+                        "text": "Yo'lingizni tanlang"
                     }
                 },
                 {
@@ -106,7 +106,7 @@
                     "typeID": "TextInput",
                     "zOrder": "5",
                     "w": "288",
-                    "measuredW": "194",
+                    "measuredW": "254",
                     "measuredH": "32",
                     "x": "68",
                     "y": "81",
@@ -114,8 +114,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Git - التحكم في الإصدار",
-                        "bold": "true"
+                        "text": "Git - Versiya Boshqaruv Tizimi"
                     }
                 },
                 {
@@ -123,7 +122,7 @@
                     "typeID": "TextInput",
                     "zOrder": "6",
                     "w": "289",
-                    "measuredW": "50",
+                    "measuredW": "49",
                     "measuredH": "32",
                     "x": "67",
                     "y": "318",
@@ -139,7 +138,7 @@
                     "typeID": "TextInput",
                     "zOrder": "7",
                     "w": "289",
-                    "measuredW": "209",
+                    "measuredW": "203",
                     "measuredH": "32",
                     "x": "67",
                     "y": "356",
@@ -154,14 +153,14 @@
                     "ID": "8",
                     "typeID": "Label",
                     "zOrder": "8",
-                    "measuredW": "123",
+                    "measuredW": "204",
                     "measuredH": "25",
-                    "x": "227",
+                    "x": "67",
                     "y": "45",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "مطلوب لأي مسار"
+                        "text": "Barcha yo'llar uchun zarur"
                     }
                 },
                 {
@@ -169,7 +168,7 @@
                     "typeID": "TextInput",
                     "zOrder": "9",
                     "w": "289",
-                    "measuredW": "225",
+                    "measuredW": "237",
                     "measuredH": "32",
                     "x": "67",
                     "y": "120",
@@ -177,8 +176,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Terminal استخدام أساسي ل",
-                        "bold": "true"
+                        "text": "Terminal'da ishlash asoslari"
                     }
                 },
                 {
@@ -215,7 +213,7 @@
                     "typeID": "TextInput",
                     "zOrder": "11",
                     "w": "121",
-                    "measuredW": "92",
+                    "measuredW": "93",
                     "measuredH": "32",
                     "x": "679",
                     "y": "368",
@@ -290,7 +288,7 @@
                     "typeID": "TextInput",
                     "zOrder": "14",
                     "w": "112",
-                    "measuredW": "81",
+                    "measuredW": "80",
                     "measuredH": "32",
                     "x": "946",
                     "y": "361",
@@ -364,7 +362,7 @@
                     "typeID": "TextInput",
                     "zOrder": "17",
                     "w": "288",
-                    "measuredW": "70",
+                    "measuredW": "71",
                     "measuredH": "32",
                     "x": "68",
                     "y": "201",
@@ -380,7 +378,7 @@
                     "typeID": "TextInput",
                     "zOrder": "18",
                     "w": "288",
-                    "measuredW": "273",
+                    "measuredW": "267",
                     "measuredH": "32",
                     "x": "68",
                     "y": "159",
@@ -388,7 +386,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Data Structures and Algorithms"
+                        "text": "Data Strukturalar va Algoritmlar"
                     }
                 },
                 {
@@ -396,7 +394,7 @@
                     "typeID": "TextInput",
                     "zOrder": "19",
                     "w": "288",
-                    "measuredW": "188",
+                    "measuredW": "158",
                     "measuredH": "32",
                     "x": "68",
                     "y": "434",
@@ -404,7 +402,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Character Encodings"
+                        "text": "Belgilarni kodlash"
                     }
                 },
                 {
@@ -412,7 +410,7 @@
                     "typeID": "TextInput",
                     "zOrder": "20",
                     "w": "288",
-                    "measuredW": "146",
+                    "measuredW": "144",
                     "measuredH": "32",
                     "x": "68",
                     "y": "395",
@@ -428,7 +426,7 @@
                     "typeID": "TextInput",
                     "zOrder": "21",
                     "w": "288",
-                    "measuredW": "82",
+                    "measuredW": "259",
                     "measuredH": "32",
                     "x": "68",
                     "y": "240",
@@ -436,7 +434,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "licenses"
+                        "text": "Litsenziyalar (Open sourceda)"
                     }
                 },
                 {
@@ -444,7 +442,7 @@
                     "typeID": "TextInput",
                     "zOrder": "22",
                     "w": "288",
-                    "measuredW": "182",
+                    "measuredW": "180",
                     "measuredH": "32",
                     "x": "68",
                     "y": "279",
@@ -483,28 +481,26 @@
                                     "ID": "1",
                                     "typeID": "Label",
                                     "zOrder": "1",
-                                    "measuredW": "299",
+                                    "measuredW": "240",
                                     "measuredH": "25",
                                     "x": "14",
                                     "y": "17",
                                     "properties": {
                                         "size": "17",
-                                        "text": "اعثر على النسخة المفصلة لخريطة الطريق ",
-                                        "bold": "true"
+                                        "text": "Ushbu va boshqa yo'l xaritalarni"
                                     }
                                 },
                                 {
                                     "ID": "2",
                                     "typeID": "Label",
                                     "zOrder": "2",
-                                    "measuredW": "245",
+                                    "measuredW": "279",
                                     "measuredH": "25",
-                                    "x": "63",
-                                    "y": "42",
+                                    "x": "14",
+                                    "y": "45",
                                     "properties": {
                                         "size": "17",
-                                        "text": "جنبا  مع الموارد وخرائط طريق أخرى",
-                                        "bold": "true"
+                                        "text": "quyidagi saytdan topishingiz mumkin"
                                     }
                                 },
                                 {
@@ -526,9 +522,9 @@
                                     "ID": "4",
                                     "typeID": "__group__",
                                     "zOrder": "4",
-                                    "measuredW": "167",
+                                    "measuredW": "170",
                                     "measuredH": "29",
-                                    "w": "167",
+                                    "w": "170",
                                     "h": "29",
                                     "x": "91",
                                     "y": "89",
@@ -539,7 +535,7 @@
                                                     "ID": "0",
                                                     "typeID": "Label",
                                                     "zOrder": "0",
-                                                    "measuredW": "102",
+                                                    "measuredW": "105",
                                                     "measuredH": "28",
                                                     "x": "65",
                                                     "y": "0",
@@ -553,7 +549,7 @@
                                                     "ID": "1",
                                                     "typeID": "Label",
                                                     "zOrder": "1",
-                                                    "measuredW": "36",
+                                                    "measuredW": "35",
                                                     "measuredH": "28",
                                                     "x": "0",
                                                     "y": "0",
@@ -582,7 +578,7 @@
                                                     "ID": "3",
                                                     "typeID": "Label",
                                                     "zOrder": "3",
-                                                    "measuredW": "9",
+                                                    "measuredW": "10",
                                                     "measuredH": "28",
                                                     "x": "44",
                                                     "y": "1",
@@ -596,7 +592,7 @@
                                                     "ID": "4",
                                                     "typeID": "Label",
                                                     "zOrder": "4",
-                                                    "measuredW": "9",
+                                                    "measuredW": "10",
                                                     "measuredH": "28",
                                                     "x": "52",
                                                     "y": "1",
@@ -621,7 +617,7 @@
             "order": 1000000,
             "parentID": null
         },
-        "resourceID": "BC9F7F05-3643-436B-B54D-412D6F757012",
+        "resourceID": "C614FABD-BF32-487E-B980-8080272FC9FD",
         "mockupH": "436",
         "mockupW": "1207",
         "measuredW": "1274",

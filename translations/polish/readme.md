@@ -1,7 +1,7 @@
 
-![Web Developer Roadmap - 2020](https://i.imgur.com/NNyc9QM.png)
+![Web Developer Roadmap - 2021](https://i.imgur.com/NNyc9QM.png)
 
-> Plan działania, aby zostać web developerem w 2020 r.
+> Plan działania, aby zostać web developerem w 2021 r.
 
 [![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
 [![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
@@ -32,7 +32,7 @@ Poniżej znajduje się zestaw wykresów pokazujących ścieżki, którymi możes
 
 <h3 align="center"><strong>Uwaga dla początkujących</strong></h3>
 
-> Te plany działania obejmują wszystko, czego można się nauczyć na wymienionych poniżej ścieżkach. Nie czuj się przytłoczony, nie musisz uczyć się wszystkiego na początku, jeśli dopiero zaczynasz. Pracujemy nad ich początkowymi wersjami i będziemy [wydawać je wkrótce](https://roadmap.sh) po zakończeniu prac nad wydaniem 'Backend and DevOps roadmaps' w 2020 r.
+> Te plany działania obejmują wszystko, czego można się nauczyć na wymienionych poniżej ścieżkach. Nie czuj się przytłoczony, nie musisz uczyć się wszystkiego na początku, jeśli dopiero zaczynasz. Pracujemy nad ich początkowymi wersjami i będziemy [wydawać je wkrótce](https://roadmap.sh) po zakończeniu prac nad wydaniem 'Backend and DevOps roadmaps' w 2021 r.
 
 ***
 

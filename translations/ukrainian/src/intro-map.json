@@ -6,14 +6,14 @@
                     "ID": "0",
                     "typeID": "Label",
                     "zOrder": "0",
-                    "measuredW": "297",
+                    "measuredW": "437",
                     "measuredH": "40",
-                    "x": "491",
+                    "x": "477",
                     "y": "74",
                     "properties": {
                         "bold": "true",
                         "size": "32",
-                        "text": "مطور ويب في  2021"
+                        "text": "Веб Розробник у 2021 році"
                     }
                 },
                 {
@@ -91,14 +91,14 @@
                     "ID": "4",
                     "typeID": "Label",
                     "zOrder": "4",
-                    "measuredW": "95",
+                    "measuredW": "190",
                     "measuredH": "28",
-                    "x": "609",
+                    "x": "589",
                     "y": "189",
                     "properties": {
                         "bold": "true",
                         "size": "20",
-                        "text": "اختر مسارك"
+                        "text": "Обери напрямок"
                     }
                 },
                 {
@@ -106,7 +106,7 @@
                     "typeID": "TextInput",
                     "zOrder": "5",
                     "w": "288",
-                    "measuredW": "194",
+                    "measuredW": "190",
                     "measuredH": "32",
                     "x": "68",
                     "y": "81",
@@ -114,8 +114,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Git - التحكم في الإصدار",
-                        "bold": "true"
+                        "text": "Git - Контроль версій"
                     }
                 },
                 {
@@ -139,7 +138,7 @@
                     "typeID": "TextInput",
                     "zOrder": "7",
                     "w": "289",
-                    "measuredW": "209",
+                    "measuredW": "178",
                     "measuredH": "32",
                     "x": "67",
                     "y": "356",
@@ -147,21 +146,21 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "HTTP/HTTPS and APIs"
+                        "text": "HTTP/HTTPS та API"
                     }
                 },
                 {
                     "ID": "8",
                     "typeID": "Label",
                     "zOrder": "8",
-                    "measuredW": "123",
+                    "measuredW": "297",
                     "measuredH": "25",
-                    "x": "227",
+                    "x": "67",
                     "y": "45",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "مطلوب لأي مسار"
+                        "text": "Вимоги для кожного напрямку"
                     }
                 },
                 {
@@ -169,7 +168,7 @@
                     "typeID": "TextInput",
                     "zOrder": "9",
                     "w": "289",
-                    "measuredW": "225",
+                    "measuredW": "190",
                     "measuredH": "32",
                     "x": "67",
                     "y": "120",
@@ -177,8 +176,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Terminal استخدام أساسي ل",
-                        "bold": "true"
+                        "text": "Робота з терміналом"
                     }
                 },
                 {
@@ -380,7 +378,7 @@
                     "typeID": "TextInput",
                     "zOrder": "18",
                     "w": "288",
-                    "measuredW": "273",
+                    "measuredW": "270",
                     "measuredH": "32",
                     "x": "68",
                     "y": "159",
@@ -388,7 +386,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Data Structures and Algorithms"
+                        "text": "Структури даних і алгоритми"
                     }
                 },
                 {
@@ -396,7 +394,7 @@
                     "typeID": "TextInput",
                     "zOrder": "19",
                     "w": "288",
-                    "measuredW": "188",
+                    "measuredW": "179",
                     "measuredH": "32",
                     "x": "68",
                     "y": "434",
@@ -404,7 +402,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Character Encodings"
+                        "text": "Кодування символів"
                     }
                 },
                 {
@@ -412,7 +410,7 @@
                     "typeID": "TextInput",
                     "zOrder": "20",
                     "w": "288",
-                    "measuredW": "146",
+                    "measuredW": "225",
                     "measuredH": "32",
                     "x": "68",
                     "y": "395",
@@ -420,7 +418,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Design Patterns"
+                        "text": "Шаблони проектування"
                     }
                 },
                 {
@@ -428,7 +426,7 @@
                     "typeID": "TextInput",
                     "zOrder": "21",
                     "w": "288",
-                    "measuredW": "82",
+                    "measuredW": "133",
                     "measuredH": "32",
                     "x": "68",
                     "y": "240",
@@ -436,7 +434,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "licenses"
+                        "text": "Типи ліцензій"
                     }
                 },
                 {
@@ -444,7 +442,7 @@
                     "typeID": "TextInput",
                     "zOrder": "22",
                     "w": "288",
-                    "measuredW": "182",
+                    "measuredW": "285",
                     "measuredH": "32",
                     "x": "68",
                     "y": "279",
@@ -452,7 +450,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "Semantic Versioning"
+                        "text": "Семантичне Версіонування"
                     }
                 },
                 {
@@ -483,28 +481,26 @@
                                     "ID": "1",
                                     "typeID": "Label",
                                     "zOrder": "1",
-                                    "measuredW": "299",
+                                    "measuredW": "291",
                                     "measuredH": "25",
                                     "x": "14",
                                     "y": "17",
                                     "properties": {
                                         "size": "17",
-                                        "text": "اعثر على النسخة المفصلة لخريطة الطريق ",
-                                        "bold": "true"
+                                        "text": "Детальна версія \"дорожної мапи\","
                                     }
                                 },
                                 {
                                     "ID": "2",
                                     "typeID": "Label",
                                     "zOrder": "2",
-                                    "measuredW": "245",
+                                    "measuredW": "266",
                                     "measuredH": "25",
-                                    "x": "63",
-                                    "y": "42",
+                                    "x": "14",
+                                    "y": "45",
                                     "properties": {
                                         "size": "17",
-                                        "text": "جنبا  مع الموارد وخرائط طريق أخرى",
-                                        "bold": "true"
+                                        "text": "а також інші ресурси на сайті"
                                     }
                                 },
                                 {
@@ -621,7 +617,7 @@
             "order": 1000000,
             "parentID": null
         },
-        "resourceID": "BC9F7F05-3643-436B-B54D-412D6F757012",
+        "resourceID": "B0FF9C21-3923-40E1-80CB-DCF0BA475E90",
         "mockupH": "436",
         "mockupW": "1207",
         "measuredW": "1274",
