@@ -60,6 +60,12 @@ If you think that these can be improved in any way, please do suggest.
 
 ![DevOps Roadmap](./img/devops.png)
 
+## QA Roadmap
+
+[![QA Roadmap](https://img.shields.io/badge/-Download%20PDF%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://gum.co/qa-roadmap) [![](https://img.shields.io/badge/-Shareable%20Link%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://roadmap.sh/qa)
+
+![QA](./img/qa.png)
+
 ## 🚦 Wrap Up
 
 If you think any of the roadmaps can be improved, feel free to discuss it in the issues. Also, I will continue to improve this, so you might want to watch this repository or subscribe at [roadmap.sh](http://roadmap.sh) to revisit.
