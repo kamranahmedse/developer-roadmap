@@ -1,7 +1,7 @@
-## Roadmap 2020
+## Roadmap 2021
 
 ### General Updates
-- Added printable PDFs for the roadmaps: [Frontend Roadmap](https://roadmap.sh/static/roadmaps/pdf/frontend.pdf), [Backend Roadmap](https://roadmap.sh/static/roadmaps/pdf/backend.pdf), [DevOps Roadmap](https://roadmap.sh/static/roadmaps/pdf/devops.pdf)
+- Added printable PDFs for the roadmaps: [Frontend Roadmap](https://roadmap.sh/roadmaps/pdf/frontend.pdf), [Backend Roadmap](https://roadmap.sh/roadmaps/pdf/backend.pdf), [DevOps Roadmap](https://roadmap.sh/roadmaps/pdf/devops.pdf)
 - Updated [the license](https://github.com/kamranahmedse/developer-roadmap/blob/master/LICENSE) with some additional details
 - Added the missing code-of-conduct, issue/pr templates.
 - Better legends in roadmaps.
@@ -29,10 +29,38 @@
 - Carlo and proton-native have been grayed out from the "Desktop applications"
 
 ### Backend Developer Roadmap
-> Expected release date 12-01-2020
+- The [old textual look](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#back-end-roadmap) has been gone and the tree has been made thorough. Beginner friendly textual format will be added soon [to the website](https://roadmap.sh)
+- Recommended knowledge of the internet has been added
+- Added basic frontend knowledge
+- Mentioned Web Security
+- Recommends OS knowledge, POSIX basics, and some basic terminal usage details
+- Languages part has been changed. JavaScript has been made the "Personal recommendation" and others as options available.
+- Adds VCS/Git section
+- Recommends additional database knowledge (i.e. ORMs, ACID, Transactions, N+1, Normalization, Indexes)
+- APIs section has been expanded with REST, JSON, SOAP, HATEOAS, Open API Spec
+- More authentication strategies have been added to the API authentication
+- Caching section now has CDN and client Side caching sections
+- Architectural patterns have been added
+- GraphQL has been added
+- New section has been added "Building for Scale"
 
 ### DevOps Roadmap
-> Expected release date 19-01-2020
+
+- Adds Networking Concepts and POSIX Basics in OS Concepts
+- Expands the Operating Systems
+- Adds `netstat` in the "Learn to Live in Terminal" section
+- Adds terminal multiplexers (screen, tmux)
+- Adds SSH + Port Forwarding into Network and Security section
+- Adds startup and service management (initd, systemd) knowledge under OS concepts
+- Renames ELK Stack to Elastic Stack
+- Adds Linode, Vultr and Alibaba Cloud to "Service Providers"
+- Renames ELK Stack to "Elastic Stack"
+- CI/CD - Adds Gitlab CI, GitHub Actions, Bamboo and Azure DevOps Services
+- Adds prometheus and Grafana under infra monitoring
+- Adds OpenTracing, Jaegar and Instana in app monitoring
+- Adds Pulumi under Infrastructure Provisioning
+- Adds optional knowledge about Emails
+- Fixes typos
 
 ## Roadmap 2019
 * [Frontend Developer Roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/347831feaed227f42525e829ccc8d84a22386952#frontend-roadmap)
