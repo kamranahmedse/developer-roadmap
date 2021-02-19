@@ -2130,7 +2130,7 @@
                     "ID": "75",
                     "typeID": "Label",
                     "zOrder": "75",
-                    "w": "134",
+                    "w": "143",
                     "measuredW": "120",
                     "measuredH": "25",
                     "x": "242",
@@ -2257,13 +2257,13 @@
                     "typeID": "Label",
                     "zOrder": "84",
                     "w": "140",
-                    "measuredW": "128",
+                    "measuredW": "120",
                     "measuredH": "25",
                     "x": "945",
                     "y": "692",
                     "properties": {
                         "size": "17",
-                        "text": "Learn the basics"
+                        "text": "Naučite osnove"
                     }
                 },
                 {
@@ -2285,13 +2285,13 @@
                     "typeID": "Label",
                     "zOrder": "86",
                     "w": "130",
-                    "measuredW": "120",
+                    "measuredW": "108",
                     "measuredH": "25",
                     "x": "950",
                     "y": "743",
                     "properties": {
                         "size": "17",
-                        "text": "Making Layouts"
+                        "text": "Izrada layouta"
                     }
                 },
                 {
@@ -2326,13 +2326,13 @@
                     "typeID": "Label",
                     "zOrder": "89",
                     "w": "248",
-                    "measuredW": "246",
+                    "measuredW": "219",
                     "measuredH": "22",
                     "x": "893",
                     "y": "795",
                     "properties": {
                         "size": "14",
-                        "text": "Responsive design and Media Queries"
+                        "text": "Responzivni dizajn i media queries"
                     }
                 },
                 {
@@ -2461,7 +2461,7 @@
                     "ID": "99",
                     "typeID": "Label",
                     "zOrder": "99",
-                    "w": "197",
+                    "w": "226",
                     "measuredW": "207",
                     "measuredH": "25",
                     "x": "211",
@@ -2545,7 +2545,7 @@
                     "ID": "105",
                     "typeID": "Label",
                     "zOrder": "105",
-                    "w": "234",
+                    "w": "253",
                     "measuredW": "239",
                     "measuredH": "25",
                     "x": "192",
@@ -2851,14 +2851,14 @@
                     "ID": "127",
                     "typeID": "Label",
                     "zOrder": "127",
-                    "w": "179",
-                    "measuredW": "175",
+                    "w": "197",
+                    "measuredW": "181",
                     "measuredH": "25",
                     "x": "926",
                     "y": "405",
                     "properties": {
                         "size": "17",
-                        "text": "DNS and how it works?"
+                        "text": "DNS i kako funkcionira?"
                     }
                 },
                 {
@@ -2880,13 +2880,13 @@
                     "typeID": "Label",
                     "zOrder": "129",
                     "w": "189",
-                    "measuredW": "180",
+                    "measuredW": "169",
                     "measuredH": "25",
                     "x": "925",
                     "y": "451",
                     "properties": {
                         "size": "17",
-                        "text": "What is Domain Name?"
+                        "text": "Što je Domain Name?"
                     }
                 },
                 {
@@ -2908,13 +2908,13 @@
                     "typeID": "Label",
                     "zOrder": "131",
                     "w": "133",
-                    "measuredW": "126",
+                    "measuredW": "115",
                     "measuredH": "25",
                     "x": "949",
                     "y": "497",
                     "properties": {
                         "size": "17",
-                        "text": "What is hosting?"
+                        "text": "Što je hosting?"
                     }
                 },
                 {
@@ -2935,14 +2935,14 @@
                     "ID": "133",
                     "typeID": "Label",
                     "zOrder": "133",
-                    "w": "101",
-                    "measuredW": "94",
+                    "w": "121",
+                    "measuredW": "106",
                     "measuredH": "25",
                     "x": "964",
                     "y": "597",
                     "properties": {
                         "size": "17",
-                        "text": "Accessibility"
+                        "text": "Pristupačnost"
                     }
                 },
                 {
@@ -2963,14 +2963,14 @@
                     "ID": "135",
                     "typeID": "Label",
                     "zOrder": "135",
-                    "w": "94",
-                    "measuredW": "90",
+                    "w": "117",
+                    "measuredW": "113",
                     "measuredH": "25",
                     "x": "968",
                     "y": "644",
                     "properties": {
                         "size": "17",
-                        "text": "SEO Basics"
+                        "text": "Osnove SEO-a"
                     }
                 },
                 {
@@ -4680,10 +4680,10 @@
                     "ID": "253",
                     "typeID": "Label",
                     "zOrder": "253",
-                    "w": "151",
+                    "w": "184",
                     "measuredW": "175",
                     "measuredH": "25",
-                    "x": "184",
+                    "x": "176",
                     "y": "1872",
                     "properties": {
                         "size": "17",
