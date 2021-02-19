@@ -1,4 +1,4 @@
-![Web Developer Roadmap - 2021](https://i.imgur.com/NNyc9QM.png)
+![Web Developer Roadmap - 2021](https://i.imgur.com/4u3LK4j.png)
 
 ## developer-roadmap
 > Smjerokaz za postati web developer u 2021.
@@ -11,7 +11,7 @@
 
 ![](./img/intro-map.png)
 
-## Frontend smjerokaz
+## Front-end smjerokaz
 
 ![](./img/frontend-map.png)
 <!--- 
@@ -24,5 +24,5 @@
 ![](./img/devops-map.png)
 -->
 
-## Contributors
-* [@fpehar](https://github.com/fpehar)
+## Contributors by
+* [Franjo Pehar](https://github.com/fpehar)
