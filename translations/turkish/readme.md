@@ -2,7 +2,7 @@
 
 > 2021'de Web geliştirici olmanın yol haritası
 
-Aşağıda Ön Uç (Front-end), Arka Uç (Back-end) ve Devops geliştirici olmak için öğrenmeniz gereken teknolojileri açıklayan tablolar göreceksiniz. Bu tablolar Kamran Ahmed'in "Web Developer Roadmap" dokümanından birebir çevirilmiştir.
+Aşağıda Front-end, Back-end ve Devops geliştirici olmak için öğrenmeniz gereken teknolojileri açıklayan tablolar göreceksiniz. Bu tablolar Kamran Ahmed'in "Web Developer Roadmap" dokümanından birebir çevirilmiştir.
 
 ***
 
@@ -20,13 +20,13 @@ Aşağıda Ön Uç (Front-end), Arka Uç (Back-end) ve Devops geliştirici olmak
 
 ![Web Geliştirici Yol Haritası - Giriş](./img/intro.png)
 
-## Ön Uç (Front-end) Yol Haritası
+## Front-end Yol Haritası
 
-![Web Geliştirici Yol Haritası - Ön Uç (Front-end)](./img/frontend.png)
+![Web Geliştirici Yol Haritası - Front-end](./img/frontend.png)
 
-## Arka Uç (Back-end) Yol Haritası
+## Back-end) Yol Haritası
 
-![Web Geliştirici Yol Haritası - Arka Uç (Back-end)](./img/backend.png)
+![Web Geliştirici Yol Haritası - Back-end](./img/backend.png)
 
 ## DevOps Yol Haritası
 
