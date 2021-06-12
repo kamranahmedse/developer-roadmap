@@ -74,7 +74,7 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
 
 ##  Sponsors
 
-<img width='150px' src='./.github/sponsors/oss-logo.png' />
+<img width='150px' src='./.github/sponsors/oss-logo.svg' />
 
 Founded in 2018, OSS Capital is the first and only venture capital platform focused exclusively on supporting early-stage COSS (commercial open source) startup founders
 
