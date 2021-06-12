@@ -1,4 +1,3 @@
-
 ![Web Developer Roadmap - 2021](https://i.imgur.com/4u3LK4j.png)
 
 > Roadmap to becoming a web developer in 2021
@@ -60,11 +59,11 @@ If you think that these can be improved in any way, please do suggest.
 
 ![DevOps Roadmap](./img/devops.png)
 
-## 🚦 Wrap Up
+## Wrap Up
 
 If you think any of the roadmaps can be improved, feel free to discuss it in the issues. Also, I will continue to improve this, so you might want to watch this repository or subscribe at [roadmap.sh](http://roadmap.sh) to revisit.
 
-## 🙌 Contribution
+## Contribution
 
 > Have a look at [contribution docs](./CONTRIBUTING.md) for how to update any of the roadmaps
 
@@ -72,7 +71,14 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
 - Discuss ideas in issues
 - Spread the word
 - Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
- 
+
+##  Sponsors
+
+<img width='150px' src='./.github/sponsors/oss-logo.png' />
+
+Founded in 2018, OSS Capital is the first and only venture capital platform focused exclusively on supporting early-stage COSS (commercial open source) startup founders
+
+
 ## License
 
 Have a look at the [license file](./LICENSE) for details
