@@ -72,11 +72,31 @@ If you think any of the roadmaps can be improved, feel free to discuss it in the
 - Spread the word
 - Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
 
-##  Sponsors
+<br>
+<hr>
+<br>
 
-<img width='150px' src='./.github/sponsors/oss-logo.svg' />
+<div align="center">
+	<p>
+		<sup>
+			<a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
+		</sup>
+	</p>
+	<sup>Special thanks to:</sup>
+	<br>
+	<p>
+	<a href="https://oss.capital">
+		<div>
+			<img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
+		</div>
+		<div>
+			<sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
+		</div>
+	</a>
+	</p>
+</div>
 
-Founded in 2018, OSS Capital is the first and only venture capital platform focused exclusively on supporting early-stage COSS (commercial open source) startup founders
+<br>
 
 
 ## License
