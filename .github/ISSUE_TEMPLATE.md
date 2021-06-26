@@ -27,7 +27,7 @@ if yours is closed reopen with everything filled in.
 
 - [ ] This is not a duplicate issue. I have searched and there is no existing issue for this.
 - [ ] I understand that these roadmaps are highly opinionated. The purpose is to not to include everything out there in these roadmaps but to have everything that is most relevant today comparing to the other options listed.
-- [ ] I have read the [contribution docs](../contributing.md) before opening this issue.
+- [ ] I have read the [contribution docs](https://github.com/kamranahmedse/developer-roadmap/blob/master/CONTRIBUTING.md) before opening this issue.
 
 
 #### Enter the details about the issue here
