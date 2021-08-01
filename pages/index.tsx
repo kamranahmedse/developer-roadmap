@@ -3,7 +3,7 @@ import { InfoIcon } from '@chakra-ui/icons';
 
 export default function Home() {
   return (
-    <Box bg='teal.50' minH='100vh'>
+    <Box bg='teal.50' minH='100vh' pb='100px'>
       <Box bg='gray.900' p='20px 30px'>
         <Container maxW='container.md'>
           <Flex justifyContent='space-between'>
@@ -94,8 +94,8 @@ export default function Home() {
       <Box>
         <Container maxW='container.md'>
           <Box pt='40px' mb='20px'>
-            <Heading fontSize='25px' mb='5px'>Visual Guides</Heading>
-            <Text>Programming topics explained succinctly through visuals.</Text>
+            <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
+            {/*<Text>Programming topics explained succinctly through visuals.</Text>*/}
           </Box>
 
           <Stack>
@@ -137,6 +137,32 @@ export default function Home() {
                   py='5px' color='gray.600'>
               <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Token Based Authentication</Text>
               <Text fontSize='14px' color='gray.500' as='span'>May 15, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Character Encodings</Text>
+              <Text fontSize='14px' color='gray.500' as='span'>March 06, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>SSL vs TLS vs HTTPs vs SSH</Text>
+              <Text fontSize='14px' color='gray.500' as='span'>February 15, 2021</Text>
             </Link>
           </Stack>
         </Container>
