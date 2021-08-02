@@ -1,5 +1,7 @@
 import { Badge, Box, Container, Flex, Heading, Image, Link, SimpleGrid, Stack, Text, Tooltip } from '@chakra-ui/react';
-import { ArrowForwardIcon, InfoIcon } from '@chakra-ui/icons';
+import { InfoIcon } from '@chakra-ui/icons';
+import { TextIcon } from './icons/text-icon';
+import { VideoIcon } from './icons/video-icon';
 
 export default function Home() {
   return (
@@ -95,7 +97,6 @@ export default function Home() {
         <Container maxW='container.md'>
           <Box pt='40px' mb='20px'>
             <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
-            {/*<Text>Programming topics explained succinctly through visuals.</Text>*/}
           </Box>
 
           <Stack>
@@ -108,8 +109,10 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Session based
-                Authentication</Text>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
+                Session based Authentication
+              </Text>
               <Text fontSize='13px' color='gray.500' as='span'>June 12, 2021</Text>
             </Link>
 
@@ -122,7 +125,8 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
                 JSON Web Tokens
               </Text>
               <Text fontSize='13px' color='gray.500' as='span'>June 05, 2021</Text>
@@ -137,7 +141,8 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
                 Token Based Authentication
                 <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
               </Text>
@@ -153,7 +158,9 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Character Encodings</Text>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
+                Encodings</Text>
               <Text fontSize='13px' color='gray.500' as='span'>March 06, 2021</Text>
             </Link>
 
@@ -166,8 +173,10 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>SSL vs TLS vs HTTPs vs
-                SSH</Text>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
+                SSL vs TLS vs HTTPs vs SSH
+              </Text>
               <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
             </Link>
 
@@ -180,7 +189,9 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Continuous Integration and
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
+                Integration and
                 Deployment</Text>
               <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
             </Link>
@@ -194,7 +205,9 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Basic Authentication</Text>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
+                Authentication</Text>
               <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
             </Link>
 
@@ -207,7 +220,8 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
                 Character Encodings
                 <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
               </Text>
@@ -223,7 +237,8 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
                 DHCP in One Picture
               </Text>
               <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
@@ -238,7 +253,8 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
+                    as='span'>
                 Session Based Authentication
               </Text>
               <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
@@ -252,7 +268,8 @@ export default function Home() {
                       transform: 'translateX(3px)'
                     }
                   }}>
-              View all Guides <Text d='inline-block' as='span' transition='200ms' className='forward-arrow'>&rarr;</Text>
+              View all Guides <Text d='inline-block' as='span' transition='200ms'
+                                    className='forward-arrow'>&rarr;</Text>
             </Link>
           </Stack>
         </Container>
