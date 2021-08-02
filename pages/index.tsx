@@ -1,5 +1,5 @@
-import { Box, Container, Flex, Heading, Image, Link, SimpleGrid, Stack, Text, Tooltip } from '@chakra-ui/react';
-import { InfoIcon } from '@chakra-ui/icons';
+import { Badge, Box, Container, Flex, Heading, Image, Link, SimpleGrid, Stack, Text, Tooltip } from '@chakra-ui/react';
+import { ArrowForwardIcon, InfoIcon } from '@chakra-ui/icons';
 
 export default function Home() {
   return (
@@ -99,7 +99,7 @@ export default function Home() {
           </Box>
 
           <Stack>
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
                   _hover={{
                     textDecoration: 'none',
                     color: 'blue.400',
@@ -110,10 +110,10 @@ export default function Home() {
                   py='5px' color='gray.600'>
               <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Session based
                 Authentication</Text>
-              <Text fontSize='14px' color='gray.500' as='span'>June 12, 2021</Text>
+              <Text fontSize='13px' color='gray.500' as='span'>June 12, 2021</Text>
             </Link>
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
                   _hover={{
                     textDecoration: 'none',
                     color: 'blue.400',
@@ -122,11 +122,13 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>JSON Web Tokens</Text>
-              <Text fontSize='14px' color='gray.500' as='span'>June 05, 2021</Text>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+                JSON Web Tokens
+              </Text>
+              <Text fontSize='13px' color='gray.500' as='span'>June 05, 2021</Text>
             </Link>
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
                   _hover={{
                     textDecoration: 'none',
                     color: 'blue.400',
@@ -135,11 +137,14 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Token Based Authentication</Text>
-              <Text fontSize='14px' color='gray.500' as='span'>May 15, 2021</Text>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+                Token Based Authentication
+                <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
+              </Text>
+              <Text fontSize='13px' color='gray.500' as='span'>May 15, 2021</Text>
             </Link>
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
                   _hover={{
                     textDecoration: 'none',
                     color: 'blue.400',
@@ -149,10 +154,10 @@ export default function Home() {
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
               <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Character Encodings</Text>
-              <Text fontSize='14px' color='gray.500' as='span'>March 06, 2021</Text>
+              <Text fontSize='13px' color='gray.500' as='span'>March 06, 2021</Text>
             </Link>
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='17px'
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
                   _hover={{
                     textDecoration: 'none',
                     color: 'blue.400',
@@ -161,8 +166,93 @@ export default function Home() {
                     }
                   }} borderBottomWidth={1}
                   py='5px' color='gray.600'>
-              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>SSL vs TLS vs HTTPs vs SSH</Text>
-              <Text fontSize='14px' color='gray.500' as='span'>February 15, 2021</Text>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>SSL vs TLS vs HTTPs vs
+                SSH</Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Continuous Integration and
+                Deployment</Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>Basic Authentication</Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+                Character Encodings
+                <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
+              </Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+                DHCP in One Picture
+              </Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
+            </Link>
+
+            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
+                  _hover={{
+                    textDecoration: 'none',
+                    color: 'blue.400',
+                    '& .guide-title': {
+                      transform: 'translateX(10px)'
+                    }
+                  }} borderBottomWidth={1}
+                  py='5px' color='gray.600'>
+              <Text transition='200ms' className={'guide-title'} fontWeight={500} as='span'>
+                Session Based Authentication
+              </Text>
+              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
+            </Link>
+
+            <Text as='span' />
+            <Link href={'#'} fontWeight={700} color='blue.500' my='25px'
+                  _hover={{
+                    textDecoration: 'underline',
+                    '& .forward-arrow': {
+                      transform: 'translateX(3px)'
+                    }
+                  }}>
+              View all Guides <Text d='inline-block' as='span' transition='200ms' className='forward-arrow'>&rarr;</Text>
             </Link>
           </Stack>
         </Container>
