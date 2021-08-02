@@ -1,4 +1,17 @@
-import { Badge, Box, Container, Flex, Heading, Image, Link, SimpleGrid, Stack, Text, Tooltip } from '@chakra-ui/react';
+import {
+  Badge,
+  Box,
+  Container,
+  Divider,
+  Flex,
+  Heading,
+  Image,
+  Link,
+  SimpleGrid,
+  Stack,
+  Text,
+  Tooltip
+} from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
 import { TextIcon } from './icons/text-icon';
 import { VideoIcon } from './icons/video-icon';
@@ -94,8 +107,8 @@ export default function Home() {
       </Box>
 
       <Box>
-        <Container maxW='container.md'>
-          <Box pt='40px' mb='20px'>
+        <Container maxW='container.md' position='relative'>
+          <Box pt='60px' mb='20px'>
             <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
           </Box>
 
@@ -244,15 +257,21 @@ export default function Home() {
               <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
             </Link>
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
+            <Link
+              d='flex'
+              justifyContent='space-between'
+              href='#'
+              fontSize='15px'
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .guide-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+              py='5px'
+              color='gray.600'
+            >
               <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
                     as='span'>
                 Session Based Authentication
@@ -260,18 +279,48 @@ export default function Home() {
               <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
             </Link>
 
-            <Text as='span' />
-            <Link href={'#'} fontWeight={700} color='blue.500' my='25px'
-                  _hover={{
-                    textDecoration: 'underline',
-                    '& .forward-arrow': {
-                      transform: 'translateX(3px)'
-                    }
-                  }}>
-              View all Guides <Text d='inline-block' as='span' transition='200ms'
-                                    className='forward-arrow'>&rarr;</Text>
-            </Link>
+            <Box position='relative' textAlign='center' bottom='20px'>
+              <Box
+                opacity={1}
+                pointerEvents='none'
+                position='absolute'
+                bottom={0}
+                height='200px'
+                width='100%'
+                background='linear-gradient(180deg, transparent, #e6fffa)'
+              />
+
+              <Link
+                rounded='20px'
+                display='inline'
+                bg='green.600'
+                color='white'
+                p='7px 20px'
+                href={'#'}
+                fontWeight={800}
+                fontSize='11px'
+                textTransform='uppercase'
+                my='25px'
+                position='relative'
+                _hover={{
+                  textDecoration: 'none',
+                  '& .forward-arrow': {
+                    transform: 'translateX(3px)'
+                  }
+                }}>
+                View all guides
+                <Text d='inline-block' as='span' transition='200ms' ml='4px' className='forward-arrow'>&rarr;</Text>
+              </Link>
+            </Box>
           </Stack>
+        </Container>
+      </Box>
+
+      <Box>
+        <Container maxW='container.md'>
+          <Box pt='40px' mb='20px'>
+            <Heading color='green.500' fontSize='25px' mb='5px'>Video Explanations</Heading>
+          </Box>
         </Container>
       </Box>
     </Box>
