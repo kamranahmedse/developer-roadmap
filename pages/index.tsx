@@ -415,6 +415,7 @@ export default function Home() {
               <Flex alignItems='center' className='video-title' transition={'200ms'}>
                 <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
                 <Text as='span' ml='7px'>Creating a React App</Text>
+                <Badge variant='subtle' colorScheme='purple' ml='10px'>Pro</Badge>
               </Flex>
               <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
             </Link>
@@ -462,6 +463,128 @@ export default function Home() {
               </Flex>
               <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
             </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Content Delivery Networks</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Load Balancers in Depth</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>DNS and How does it Work?</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>JavaScript Fetch API</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+
+            <Box position='relative' textAlign='center' bottom='10px'>
+              <Box
+                opacity={1}
+                pointerEvents='none'
+                position='absolute'
+                bottom={0}
+                height='200px'
+                width='100%'
+                background='linear-gradient(180deg, transparent, #e6fffa)'
+              />
+
+              <Link
+                rounded='20px'
+                display='inline'
+                bg='green.600'
+                color='white'
+                p='7px 20px'
+                href={'#'}
+                fontWeight={800}
+                fontSize='11px'
+                textTransform='uppercase'
+                my='25px'
+                position='relative'
+                _hover={{
+                  textDecoration: 'none',
+                  '& .forward-arrow': {
+                    transform: 'translateX(3px)'
+                  }
+                }}>
+                View all Videos
+                <Text d='inline-block' as='span' transition='200ms' ml='4px' className='forward-arrow'>&rarr;</Text>
+              </Link>
+            </Box>
           </VStack>
         </Container>
       </Box>
