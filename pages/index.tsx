@@ -8,9 +8,9 @@ import {
   Image,
   Link,
   SimpleGrid,
-  Stack,
+  Stack, StackDivider,
   Text,
-  Tooltip
+  Tooltip, VStack
 } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
 import { TextIcon } from './icons/text-icon';
@@ -321,6 +321,148 @@ export default function Home() {
           <Box pt='40px' mb='20px'>
             <Heading color='green.500' fontSize='25px' mb='5px'>Video Explanations</Heading>
           </Box>
+
+          <VStack
+            // bg={'white'}
+            // borderWidth={1}
+            rounded='5px'
+            divider={<StackDivider borderColor='gray.200' />}
+            spacing={0}
+            align='stretch'
+          >
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Scaling the Unscalable — System Design 101</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Tranpsort Protocols: TCP vs UDP</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>OSI Model Explained</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Creating a React App</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>DOM vs Shadow DOM vs Virtual DOM</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+            <Link
+              fontSize='15px'
+              p='10px'
+              d='flex'
+              fontWeight={500}
+              color='gray.600'
+              alignItems='center'
+              justifyContent={'space-between'}
+              _hover={{
+                textDecoration: 'none',
+                color: 'blue.400',
+                '& .video-title': {
+                  transform: 'translateX(10px)'
+                }
+              }}
+            >
+              <Flex alignItems='center' className='video-title' transition={'200ms'}>
+                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
+                <Text as='span' ml='7px'>Everything you need to know about HTTP caching</Text>
+              </Flex>
+              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
+            </Link>
+          </VStack>
         </Container>
       </Box>
     </Box>
