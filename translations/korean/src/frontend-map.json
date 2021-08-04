@@ -2073,7 +2073,7 @@
                     "zOrder": "72",
                     "measuredW": "139",
                     "measuredH": "40",
-                    "x": "627",
+                    "x": "620",
                     "y": "273",
                     "properties": {
                         "bold": "true",
@@ -2134,7 +2134,7 @@
                     "measuredW": "79",
                     "measuredH": "25",
                     "x": "242",
-                    "y": "567",
+                    "y": "566",
                     "properties": {
                         "size": "17",
                         "text": "기초 다지기",
@@ -2159,14 +2159,14 @@
                     "ID": "77",
                     "typeID": "Label",
                     "zOrder": "77",
-                    "w": "195",
-                    "measuredW": "194",
+                    "w": "268",
+                    "measuredW": "259",
                     "measuredH": "25",
-                    "x": "210",
-                    "y": "614",
+                    "x": "176",
+                    "y": "613",
                     "properties": {
                         "size": "17",
-                        "text": "시맨틱 하게 HTML 작성하기",
+                        "text": "의미있는(Semantic) HTML 작성하기",
                         "align": "center"
                     }
                 },
@@ -2202,14 +2202,14 @@
                     "ID": "80",
                     "typeID": "Label",
                     "zOrder": "80",
-                    "w": "261",
-                    "measuredW": "252",
+                    "w": "260",
+                    "measuredW": "255",
                     "measuredH": "25",
-                    "x": "176",
-                    "y": "707",
+                    "x": "181",
+                    "y": "706",
                     "properties": {
                         "size": "17",
-                        "text": "작성 규칙(conventions)과 모범 사례",
+                        "text": "작성 규칙(Conventions)과 모범 사례",
                         "align": "center"
                     }
                 },
@@ -2303,13 +2303,13 @@
                     "ID": "87",
                     "typeID": "Label",
                     "zOrder": "87",
-                    "measuredW": "69",
-                    "measuredH": "21",
-                    "x": "1207",
+                    "measuredW": "95",
+                    "measuredH": "25",
+                    "x": "1196",
                     "y": "673",
                     "properties": {
-                        "text": "플로트(float)",
-                        "align": "center"
+                        "size": "17",
+                        "text": "플로트(Float)"
                     }
                 },
                 {
@@ -2334,7 +2334,7 @@
                     "measuredW": "191",
                     "measuredH": "25",
                     "x": "893",
-                    "y": "795",
+                    "y": "794",
                     "properties": {
                         "size": "17",
                         "text": "반응형 디자인과 미디어 쿼리",
@@ -2345,12 +2345,13 @@
                     "ID": "90",
                     "typeID": "Label",
                     "zOrder": "90",
-                    "measuredW": "90",
-                    "measuredH": "21",
-                    "x": "1196",
+                    "measuredW": "59",
+                    "measuredH": "25",
+                    "x": "1211",
                     "y": "700",
                     "properties": {
-                        "text": "포지션(position)",
+                        "size": "17",
+                        "text": "포지셔닝",
                         "align": "center"
                     }
                 },
@@ -2358,12 +2359,13 @@
                     "ID": "91",
                     "typeID": "Label",
                     "zOrder": "91",
-                    "measuredW": "107",
-                    "measuredH": "21",
-                    "x": "1188",
+                    "measuredW": "74",
+                    "measuredH": "25",
+                    "x": "1207",
                     "y": "727",
                     "properties": {
-                        "text": "디스플레이(display)",
+                        "size": "17",
+                        "text": "디스플레이",
                         "align": "center"
                     }
                 },
@@ -2371,11 +2373,12 @@
                     "ID": "92",
                     "typeID": "Label",
                     "zOrder": "92",
-                    "measuredW": "49",
-                    "measuredH": "21",
-                    "x": "1219",
+                    "measuredW": "64",
+                    "measuredH": "25",
+                    "x": "1209",
                     "y": "754",
                     "properties": {
+                        "size": "17",
                         "text": "박스 모델",
                         "align": "center"
                     }
@@ -2384,12 +2387,12 @@
                     "ID": "93",
                     "typeID": "Label",
                     "zOrder": "93",
-                    "measuredW": "63",
-                    "measuredH": "21",
-                    "x": "1209",
+                    "measuredW": "82",
+                    "measuredH": "25",
+                    "x": "1200",
                     "y": "781",
                     "properties": {
-                        "align": "center",
+                        "size": "17",
                         "text": "CSS 그리드"
                     }
                 },
@@ -2397,13 +2400,14 @@
                     "ID": "94",
                     "typeID": "Label",
                     "zOrder": "94",
-                    "measuredW": "57",
-                    "measuredH": "21",
-                    "x": "1213",
+                    "measuredW": "79",
+                    "measuredH": "25",
+                    "x": "1204",
                     "y": "808",
                     "properties": {
-                        "align": "center",
-                        "text": "플렉스박스"
+                        "size": "17",
+                        "text": "플렉스 박스",
+                        "align": "center"
                     }
                 },
                 {
@@ -2442,7 +2446,7 @@
                     "measuredW": "113",
                     "measuredH": "25",
                     "x": "195",
-                    "y": "769",
+                    "y": "768",
                     "properties": {
                         "size": "17",
                         "text": "문법과 기본 구조",
@@ -2471,7 +2475,7 @@
                     "measuredW": "157",
                     "measuredH": "25",
                     "x": "211",
-                    "y": "815",
+                    "y": "814",
                     "properties": {
                         "size": "17",
                         "text": "DOM 조작 방법 배우기",
@@ -2499,7 +2503,7 @@
                     "w": "247",
                     "measuredW": "215",
                     "measuredH": "25",
-                    "x": "185",
+                    "x": "184",
                     "y": "996",
                     "properties": {
                         "size": "17",
@@ -2514,7 +2518,7 @@
                     "w": "245",
                     "measuredW": "201",
                     "measuredH": "25",
-                    "x": "187",
+                    "x": "188",
                     "y": "1025",
                     "properties": {
                         "size": "17",
@@ -2529,7 +2533,7 @@
                     "w": "202",
                     "measuredW": "93",
                     "measuredH": "25",
-                    "x": "208",
+                    "x": "207",
                     "y": "966",
                     "properties": {
                         "size": "17",
@@ -2559,7 +2563,7 @@
                     "measuredW": "223",
                     "measuredH": "25",
                     "x": "192",
-                    "y": "862",
+                    "y": "861",
                     "properties": {
                         "size": "17",
                         "text": "Fetch API / Ajax (XHR) 배우기",
@@ -2585,13 +2589,13 @@
                     "typeID": "Label",
                     "zOrder": "107",
                     "w": "234",
-                    "measuredW": "200",
+                    "measuredW": "205",
                     "measuredH": "25",
                     "x": "192",
-                    "y": "910",
+                    "y": "909",
                     "properties": {
                         "size": "17",
-                        "text": "ES6+와 모듈러 자바스크립트",
+                        "text": "ES6+ 와 모듈러 자바스크립트",
                         "align": "center"
                     }
                 },
@@ -2612,11 +2616,12 @@
                     "zOrder": "109",
                     "measuredW": "288",
                     "measuredH": "25",
-                    "x": "960",
+                    "x": "963",
                     "y": "186",
                     "properties": {
                         "size": "17",
-                        "text": "아래 웹사이트에서 이 로드맵의 상세와 함께"
+                        "text": "아래 웹사이트에서 이 로드맵의 상세와 함께",
+                        "align": "center"
                     }
                 },
                 {
@@ -2726,7 +2731,7 @@
                     "measuredW": "98",
                     "measuredH": "25",
                     "x": "223",
-                    "y": "660",
+                    "y": "659",
                     "properties": {
                         "size": "17",
                         "text": "폼과 입력 검증",
@@ -2751,10 +2756,10 @@
                     "ID": "119",
                     "typeID": "Label",
                     "zOrder": "119",
-                    "w": "57",
+                    "w": "75",
                     "measuredW": "45",
                     "measuredH": "25",
-                    "x": "633",
+                    "x": "628",
                     "y": "462",
                     "properties": {
                         "bold": "true",
@@ -2784,8 +2789,8 @@
                     "w": "223",
                     "measuredW": "127",
                     "measuredH": "25",
-                    "x": "198",
-                    "y": "410",
+                    "x": "199",
+                    "y": "409",
                     "properties": {
                         "size": "17",
                         "text": "인터넷의 작동 원리",
@@ -2813,8 +2818,8 @@
                     "w": "119",
                     "measuredW": "67",
                     "measuredH": "25",
-                    "x": "250",
-                    "y": "458",
+                    "x": "249",
+                    "y": "457",
                     "properties": {
                         "size": "17",
                         "text": "HTTP란?",
@@ -2842,8 +2847,8 @@
                     "w": "230",
                     "measuredW": "161",
                     "measuredH": "25",
-                    "x": "194",
-                    "y": "504",
+                    "x": "193",
+                    "y": "503",
                     "properties": {
                         "size": "17",
                         "text": "브라우저와 그 작동 원리",
@@ -2871,8 +2876,8 @@
                     "w": "179",
                     "measuredW": "138",
                     "measuredH": "25",
-                    "x": "926",
-                    "y": "405",
+                    "x": "927",
+                    "y": "404",
                     "properties": {
                         "size": "17",
                         "text": "DNS와 그 작동 원리",
@@ -2900,8 +2905,8 @@
                     "w": "189",
                     "measuredW": "117",
                     "measuredH": "25",
-                    "x": "925",
-                    "y": "451",
+                    "x": "930",
+                    "y": "450",
                     "properties": {
                         "size": "17",
                         "text": "도메인 이름이란?",
@@ -2929,8 +2934,8 @@
                     "w": "133",
                     "measuredW": "83",
                     "measuredH": "25",
-                    "x": "949",
-                    "y": "497",
+                    "x": "950",
+                    "y": "496",
                     "properties": {
                         "size": "17",
                         "text": "호스팅이란?",
@@ -2959,7 +2964,7 @@
                     "measuredW": "45",
                     "measuredH": "25",
                     "x": "964",
-                    "y": "597",
+                    "y": "596",
                     "properties": {
                         "size": "17",
                         "text": "접근성",
@@ -2988,7 +2993,7 @@
                     "measuredW": "69",
                     "measuredH": "25",
                     "x": "968",
-                    "y": "644",
+                    "y": "643",
                     "properties": {
                         "size": "17",
                         "text": "SEO 기초",
@@ -3016,12 +3021,12 @@
                     "w": "155",
                     "measuredW": "106",
                     "measuredH": "25",
-                    "x": "553",
+                    "x": "552",
                     "y": "995",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "Git 기본 사용법",
+                        "text": "Git 기초 사용법",
                         "align": "center"
                     }
                 },
@@ -3075,7 +3080,7 @@
                     "w": "189",
                     "measuredW": "142",
                     "measuredH": "25",
-                    "x": "962",
+                    "x": "964",
                     "y": "897",
                     "properties": {
                         "bold": "true",
@@ -3091,7 +3096,7 @@
                     "w": "279",
                     "measuredW": "211",
                     "measuredH": "23",
-                    "x": "917",
+                    "x": "919",
                     "y": "923",
                     "properties": {
                         "size": "15",
@@ -3120,8 +3125,8 @@
                     "w": "201",
                     "measuredW": "113",
                     "measuredH": "25",
-                    "x": "587",
-                    "y": "897",
+                    "x": "589",
+                    "y": "896",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -3136,7 +3141,7 @@
                     "w": "292",
                     "measuredW": "271",
                     "measuredH": "23",
-                    "x": "541",
+                    "x": "544",
                     "y": "922",
                     "properties": {
                         "size": "15",
@@ -3227,8 +3232,7 @@
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "JavaScript",
-                        "align": "center"
+                        "text": "JavaScript"
                     }
                 },
                 {
@@ -3277,13 +3281,13 @@
                     "typeID": "Label",
                     "zOrder": "155",
                     "w": "261",
-                    "measuredW": "205",
+                    "measuredW": "202",
                     "measuredH": "25",
                     "x": "176",
                     "y": "1122",
                     "properties": {
                         "size": "17",
-                        "text": "npm과 yarn 둘 다 괜찮습니다."
+                        "text": "npm과 yarn 둘 다 괜찮습니다"
                     }
                 },
                 {
@@ -3430,8 +3434,8 @@
                     "w": "203",
                     "measuredW": "83",
                     "measuredH": "25",
-                    "x": "658",
-                    "y": "1088",
+                    "x": "661",
+                    "y": "1087",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -3524,11 +3528,11 @@
                     "ID": "172",
                     "typeID": "Label",
                     "zOrder": "172",
-                    "w": "56",
+                    "w": "51",
                     "measuredW": "47",
                     "measuredH": "25",
-                    "x": "904",
-                    "y": "1279",
+                    "x": "906",
+                    "y": "1278",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -3557,12 +3561,13 @@
                     "w": "63",
                     "measuredW": "53",
                     "measuredH": "25",
-                    "x": "905",
+                    "x": "902",
                     "y": "1224",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "HTTPS"
+                        "text": "HTTPS",
+                        "align": "center"
                     }
                 },
                 {
@@ -3583,15 +3588,15 @@
                     "ID": "176",
                     "typeID": "Label",
                     "zOrder": "176",
-                    "w": "182",
+                    "w": "196",
                     "measuredW": "158",
                     "measuredH": "25",
-                    "x": "1061",
+                    "x": "1053",
                     "y": "1224",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "콘텐츠 보안 정책(SCP)",
+                        "text": "콘텐츠 보안 정책(CSP)",
                         "align": "center"
                     }
                 },
@@ -3613,10 +3618,10 @@
                     "ID": "178",
                     "typeID": "Label",
                     "zOrder": "178",
-                    "w": "172",
+                    "w": "187",
                     "measuredW": "142",
                     "measuredH": "25",
-                    "x": "1065",
+                    "x": "1058",
                     "y": "1278",
                     "properties": {
                         "bold": "true",
@@ -3657,15 +3662,15 @@
                     "ID": "181",
                     "typeID": "Label",
                     "zOrder": "181",
-                    "w": "221",
+                    "w": "215",
                     "measuredW": "213",
                     "measuredH": "25",
-                    "x": "804",
+                    "x": "815",
                     "y": "1398",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "CSS 선처리기(preprocessor)",
+                        "text": "CSS 전처리기(Preprocessor)",
                         "align": "center"
                     }
                 },
@@ -3676,7 +3681,7 @@
                     "w": "350",
                     "measuredW": "289",
                     "measuredH": "23",
-                    "x": "741",
+                    "x": "742",
                     "y": "1430",
                     "properties": {
                         "size": "15",
@@ -3691,11 +3696,11 @@
                     "w": "356",
                     "measuredW": "287",
                     "measuredH": "23",
-                    "x": "741",
+                    "x": "745",
                     "y": "1457",
                     "properties": {
                         "size": "15",
-                        "text": "CSS 선처리기는 더이상 필요하지 않을 수 있지만",
+                        "text": "CSS 전처리기는 더이상 필요하지 않을 수 있지만",
                         "align": "center"
                     }
                 },
@@ -3706,7 +3711,7 @@
                     "w": "350",
                     "measuredW": "237",
                     "measuredH": "23",
-                    "x": "741",
+                    "x": "742",
                     "y": "1483",
                     "properties": {
                         "size": "15",
@@ -3735,7 +3740,7 @@
                     "w": "148",
                     "measuredW": "97",
                     "measuredH": "25",
-                    "x": "434",
+                    "x": "433",
                     "y": "1396",
                     "properties": {
                         "bold": "true",
@@ -3748,10 +3753,10 @@
                     "ID": "187",
                     "typeID": "Label",
                     "zOrder": "187",
-                    "w": "348",
+                    "w": "351",
                     "measuredW": "276",
                     "measuredH": "23",
-                    "x": "336",
+                    "x": "331",
                     "y": "1430",
                     "properties": {
                         "size": "15",
@@ -3763,11 +3768,11 @@
                     "ID": "188",
                     "typeID": "Label",
                     "zOrder": "188",
-                    "w": "347",
+                    "w": "359",
                     "measuredW": "300",
                     "measuredH": "23",
-                    "x": "334",
-                    "y": "1456",
+                    "x": "331",
+                    "y": "1454",
                     "properties": {
                         "size": "15",
                         "text": "CSS 아키텍처에 대해 더이상 걱정할 필요는 없지만",
@@ -3902,10 +3907,10 @@
                     "ID": "197",
                     "typeID": "Label",
                     "zOrder": "197",
-                    "w": "355",
+                    "w": "359",
                     "measuredW": "257",
                     "measuredH": "23",
-                    "x": "336",
+                    "x": "331",
                     "y": "1482",
                     "properties": {
                         "size": "15",
@@ -3933,7 +3938,7 @@
                     "zOrder": "199",
                     "measuredW": "64",
                     "measuredH": "25",
-                    "x": "668",
+                    "x": "674",
                     "y": "1616",
                     "properties": {
                         "bold": "true",
@@ -3962,8 +3967,8 @@
                     "zOrder": "201",
                     "measuredW": "79",
                     "measuredH": "25",
-                    "x": "415",
-                    "y": "1619",
+                    "x": "414",
+                    "y": "1618",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -4065,10 +4070,9 @@
                     "ID": "208",
                     "typeID": "Label",
                     "zOrder": "208",
-                    "w": "187",
                     "measuredW": "93",
                     "measuredH": "25",
-                    "x": "887",
+                    "x": "946",
                     "y": "1617",
                     "properties": {
                         "bold": "true",
@@ -4282,14 +4286,14 @@
                     "ID": "222",
                     "typeID": "Label",
                     "zOrder": "222",
-                    "measuredW": "79",
+                    "measuredW": "74",
                     "measuredH": "25",
-                    "x": "461",
-                    "y": "1736",
+                    "x": "463",
+                    "y": "1735",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "모듈 번들러",
+                        "text": "모듈번들러",
                         "align": "center"
                     }
                 },
@@ -4395,11 +4399,11 @@
                     "ID": "230",
                     "typeID": "Label",
                     "zOrder": "230",
-                    "w": "171",
+                    "w": "183",
                     "measuredW": "167",
                     "measuredH": "25",
-                    "x": "673",
-                    "y": "1854",
+                    "x": "664",
+                    "y": "1855",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -4567,8 +4571,8 @@
                     "zOrder": "242",
                     "measuredW": "101",
                     "measuredH": "25",
-                    "x": "535",
-                    "y": "1955",
+                    "x": "534",
+                    "y": "1954",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -5333,8 +5337,8 @@
                     "zOrder": "282",
                     "measuredW": "127",
                     "measuredH": "25",
-                    "x": "848",
-                    "y": "3028",
+                    "x": "859",
+                    "y": "3027",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -5363,11 +5367,12 @@
                     "w": "78",
                     "measuredW": "73",
                     "measuredH": "25",
-                    "x": "1218",
+                    "x": "1221",
                     "y": "3007",
                     "properties": {
                         "size": "17",
-                        "text": "GatsbyJS"
+                        "text": "GatsbyJS",
+                        "align": "center"
                     }
                 },
                 {
@@ -5391,11 +5396,12 @@
                     "w": "58",
                     "measuredW": "52",
                     "measuredH": "25",
-                    "x": "1228",
+                    "x": "1231",
                     "y": "2961",
                     "properties": {
                         "size": "17",
-                        "text": "Next.js"
+                        "text": "Next.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -5419,11 +5425,12 @@
                     "w": "56",
                     "measuredW": "52",
                     "measuredH": "25",
-                    "x": "1229",
+                    "x": "1233",
                     "y": "3053",
                     "properties": {
                         "size": "17",
-                        "text": "Nuxt.js"
+                        "text": "Nuxt.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -5447,11 +5454,12 @@
                     "w": "76",
                     "measuredW": "72",
                     "measuredH": "25",
-                    "x": "1223",
+                    "x": "1222",
                     "y": "3098",
                     "properties": {
                         "size": "17",
-                        "text": "Vuepress"
+                        "text": "Vuepress",
+                        "align": "center"
                     }
                 },
                 {
@@ -5475,11 +5483,12 @@
                     "w": "49",
                     "measuredW": "43",
                     "measuredH": "25",
-                    "x": "1235",
+                    "x": "1236",
                     "y": "3144",
                     "properties": {
                         "size": "17",
-                        "text": "Jekyll"
+                        "text": "Jekyll",
+                        "align": "center"
                     }
                 },
                 {
@@ -5885,8 +5894,8 @@
                     "zOrder": "307",
                     "measuredW": "111",
                     "measuredH": "25",
-                    "x": "530",
-                    "y": "2186",
+                    "x": "531",
+                    "y": "2185",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -6063,11 +6072,12 @@
                     "w": "98",
                     "measuredW": "86",
                     "measuredH": "25",
-                    "x": "913",
-                    "y": "2217",
+                    "x": "908",
+                    "y": "2216",
                     "properties": {
                         "size": "17",
-                        "text": "Material UI"
+                        "text": "Material UI",
+                        "align": "center"
                     }
                 },
                 {
@@ -6091,11 +6101,12 @@
                     "w": "94",
                     "measuredW": "78",
                     "measuredH": "25",
-                    "x": "926",
-                    "y": "2304",
+                    "x": "909",
+                    "y": "2303",
                     "properties": {
                         "size": "17",
-                        "text": "Chakra UI"
+                        "text": "Chakra UI",
+                        "align": "center"
                     }
                 },
                 {
@@ -6119,11 +6130,12 @@
                     "w": "99",
                     "measuredW": "85",
                     "measuredH": "25",
-                    "x": "912",
-                    "y": "2172",
+                    "x": "907",
+                    "y": "2171",
                     "properties": {
                         "size": "17",
-                        "text": "Reactstrap"
+                        "text": "Reactstrap",
+                        "align": "center"
                     }
                 },
                 {
@@ -6147,11 +6159,12 @@
                     "w": "115",
                     "measuredW": "98",
                     "measuredH": "25",
-                    "x": "905",
-                    "y": "2261",
+                    "x": "899",
+                    "y": "2260",
                     "properties": {
                         "size": "17",
-                        "text": "Tailwind CSS"
+                        "text": "Tailwind CSS",
+                        "align": "center"
                     }
                 },
                 {
@@ -6187,13 +6200,13 @@
                     "typeID": "Label",
                     "zOrder": "329",
                     "w": "205",
-                    "measuredW": "180",
+                    "measuredW": "183",
                     "measuredH": "24",
                     "x": "852",
                     "y": "2392",
                     "properties": {
                         "size": "16",
-                        "text": "함께 사용하는 것이 좋습니다"
+                        "text": "함께 사용하는 것이 좋습니다."
                     }
                 },
                 {
@@ -6229,10 +6242,11 @@
                     "measuredW": "152",
                     "measuredH": "25",
                     "x": "167",
-                    "y": "2302",
+                    "y": "2301",
                     "properties": {
                         "size": "17",
-                        "text": "react-testing-library"
+                        "text": "react-testing-library",
+                        "align": "center"
                     }
                 },
                 {
@@ -6256,11 +6270,12 @@
                     "w": "68",
                     "measuredW": "61",
                     "measuredH": "25",
-                    "x": "216",
+                    "x": "215",
                     "y": "2388",
                     "properties": {
                         "size": "17",
-                        "text": "Enzyme"
+                        "text": "Enzyme",
+                        "align": "center"
                     }
                 },
                 {
@@ -6285,10 +6300,11 @@
                     "measuredW": "33",
                     "measuredH": "25",
                     "x": "230",
-                    "y": "2257",
+                    "y": "2256",
                     "properties": {
                         "size": "17",
-                        "text": "Jest"
+                        "text": "Jest",
+                        "align": "center"
                     }
                 },
                 {
@@ -6316,7 +6332,8 @@
                     "y": "2345",
                     "properties": {
                         "size": "17",
-                        "text": "Cypress"
+                        "text": "Cypress",
+                        "align": "center"
                     }
                 },
                 {
@@ -6367,8 +6384,8 @@
                     "zOrder": "342",
                     "measuredW": "68",
                     "measuredH": "26",
-                    "x": "558",
-                    "y": "2278",
+                    "x": "553",
+                    "y": "2277",
                     "properties": {
                         "bold": "true",
                         "size": "18",
@@ -6381,13 +6398,13 @@
                     "typeID": "Label",
                     "zOrder": "343",
                     "w": "349",
-                    "measuredW": "278",
+                    "measuredW": "283",
                     "measuredH": "25",
-                    "x": "417",
+                    "x": "423",
                     "y": "2345",
                     "properties": {
                         "size": "17",
-                        "text": "{color:blue}기능(functional) 테스트{color}의 차이를 익히고",
+                        "text": "{color:blue}기능(Functional) 테스트{color}의 차이를 익히고",
                         "align": "center"
                     }
                 },
@@ -6395,10 +6412,10 @@
                     "ID": "344",
                     "typeID": "Label",
                     "zOrder": "344",
-                    "w": "371",
+                    "w": "374",
                     "measuredW": "366",
                     "measuredH": "25",
-                    "x": "412",
+                    "x": "411",
                     "y": "2374",
                     "properties": {
                         "size": "17",
@@ -6411,13 +6428,13 @@
                     "typeID": "Label",
                     "zOrder": "345",
                     "w": "362",
-                    "measuredW": "303",
+                    "measuredW": "307",
                     "measuredH": "25",
-                    "x": "416",
+                    "x": "411",
                     "y": "2315",
                     "properties": {
                         "size": "17",
-                        "text": "{color:blue}단위(unit) 테스트{color}, {color:blue}통합(integration) 테스트{color},",
+                        "text": "{color:blue}단위(Unit) 테스트{color}, {color:blue}통합(Integration) 테스트{color},",
                         "align": "center"
                     }
                 },
@@ -6686,7 +6703,7 @@
                     "zOrder": "361",
                     "measuredW": "64",
                     "measuredH": "25",
-                    "x": "897",
+                    "x": "902",
                     "y": "2540",
                     "properties": {
                         "bold": "true",
@@ -6743,8 +6760,8 @@
                     "zOrder": "365",
                     "measuredW": "175",
                     "measuredH": "25",
-                    "x": "532",
-                    "y": "2540",
+                    "x": "535",
+                    "y": "2539",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -6880,7 +6897,7 @@
                     "typeID": "TextInput",
                     "zOrder": "374",
                     "w": "177",
-                    "measuredW": "61",
+                    "measuredW": "66",
                     "measuredH": "32",
                     "x": "169",
                     "y": "2579",
@@ -6888,17 +6905,17 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "웹소켓"
+                        "text": "웹 소켓"
                     }
                 },
                 {
                     "ID": "375",
                     "typeID": "Label",
                     "zOrder": "375",
-                    "w": "167",
+                    "w": "172",
                     "measuredW": "163",
                     "measuredH": "25",
-                    "x": "176",
+                    "x": "171",
                     "y": "2847",
                     "properties": {
                         "size": "17",
@@ -6913,12 +6930,12 @@
                     "w": "148",
                     "measuredW": "95",
                     "measuredH": "25",
-                    "x": "184",
+                    "x": "185",
                     "y": "2873",
                     "properties": {
                         "size": "17",
-                        "align": "center",
-                        "text": "웹 API 배우기"
+                        "text": "웹 API 배우기",
+                        "align": "center"
                     }
                 },
                 {
@@ -6969,7 +6986,7 @@
                     "typeID": "TextInput",
                     "zOrder": "380",
                     "w": "225",
-                    "measuredW": "97",
+                    "measuredW": "113",
                     "measuredH": "32",
                     "x": "415",
                     "y": "2730",
@@ -6977,7 +6994,7 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "성능 메트릭"
+                        "text": "성능 메트릭스"
                     }
                 },
                 {
@@ -7034,8 +7051,8 @@
                     "w": "224",
                     "measuredW": "120",
                     "measuredH": "25",
-                    "x": "415",
-                    "y": "2877",
+                    "x": "416",
+                    "y": "2876",
                     "properties": {
                         "size": "17",
                         "text": "계산, 측정 및 개선",
@@ -7060,14 +7077,14 @@
                     "ID": "386",
                     "typeID": "Label",
                     "zOrder": "386",
-                    "measuredW": "172",
+                    "measuredW": "176",
                     "measuredH": "25",
-                    "x": "788",
+                    "x": "791",
                     "y": "2663",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "서버 사이드 렌더링(SSR)",
+                        "text": "서버 사이드 렌더링 (SSR)",
                         "align": "center"
                     }
                 },
@@ -7153,11 +7170,12 @@
                     "w": "69",
                     "measuredW": "62",
                     "measuredH": "25",
-                    "x": "1085",
+                    "x": "1086",
                     "y": "2663",
                     "properties": {
                         "size": "17",
-                        "text": "React.js"
+                        "text": "React.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -7181,11 +7199,12 @@
                     "w": "61",
                     "measuredW": "52",
                     "measuredH": "25",
-                    "x": "1255",
+                    "x": "1251",
                     "y": "2643",
                     "properties": {
                         "size": "17",
-                        "text": "Next.js"
+                        "text": "Next.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -7210,12 +7229,13 @@
                     "w": "60",
                     "measuredW": "52",
                     "measuredH": "25",
-                    "x": "1256",
+                    "x": "1252",
                     "y": "2690",
                     "properties": {
                         "color": "3355443",
                         "size": "17",
-                        "text": "After.js"
+                        "text": "After.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -7269,11 +7289,12 @@
                     "w": "69",
                     "measuredW": "59",
                     "measuredH": "25",
-                    "x": "1097",
+                    "x": "1088",
                     "y": "2754",
                     "properties": {
                         "size": "17",
-                        "text": "Angular"
+                        "text": "Angular",
+                        "align": "center"
                     }
                 },
                 {
@@ -7301,7 +7322,8 @@
                     "y": "2754",
                     "properties": {
                         "size": "17",
-                        "text": "Universal"
+                        "text": "Universal",
+                        "align": "center"
                     }
                 },
                 {
@@ -7355,11 +7377,12 @@
                     "w": "48",
                     "measuredW": "45",
                     "measuredH": "25",
-                    "x": "1100",
+                    "x": "1101",
                     "y": "2807",
                     "properties": {
                         "size": "17",
-                        "text": "Vue.js"
+                        "text": "Vue.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -7387,7 +7410,8 @@
                     "y": "2807",
                     "properties": {
                         "size": "17",
-                        "text": "Nuxt.js"
+                        "text": "Nuxt.js",
+                        "align": "center"
                     }
                 },
                 {
@@ -7501,8 +7525,8 @@
                     "zOrder": "409",
                     "measuredW": "152",
                     "measuredH": "25",
-                    "x": "489",
-                    "y": "3153",
+                    "x": "486",
+                    "y": "3152",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -7531,11 +7555,12 @@
                     "w": "69",
                     "measuredW": "65",
                     "measuredH": "25",
-                    "x": "818",
+                    "x": "815",
                     "y": "3111",
                     "properties": {
                         "size": "17",
-                        "text": "Electron"
+                        "text": "Electron",
+                        "align": "center"
                     }
                 },
                 {
@@ -7649,11 +7674,11 @@
                     "ID": "417",
                     "typeID": "Label",
                     "zOrder": "417",
-                    "w": "156",
+                    "w": "169",
                     "measuredW": "137",
                     "measuredH": "25",
-                    "x": "464",
-                    "y": "3031",
+                    "x": "457",
+                    "y": "3030",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -7686,7 +7711,8 @@
                     "y": "2946",
                     "properties": {
                         "size": "17",
-                        "text": "React Native"
+                        "text": "React Native",
+                        "align": "center"
                     }
                 },
                 {
@@ -7714,7 +7740,8 @@
                     "y": "2991",
                     "properties": {
                         "size": "17",
-                        "text": "NativeScript"
+                        "text": "NativeScript",
+                        "align": "center"
                     }
                 },
                 {
@@ -7742,7 +7769,8 @@
                     "y": "3037",
                     "properties": {
                         "size": "17",
-                        "text": "Flutter"
+                        "text": "Flutter",
+                        "align": "center"
                     }
                 },
                 {
@@ -7766,11 +7794,12 @@
                     "w": "43",
                     "measuredW": "42",
                     "measuredH": "25",
-                    "x": "1235",
+                    "x": "1238",
                     "y": "3190",
                     "properties": {
                         "size": "17",
-                        "text": "Hugo"
+                        "text": "Hugo",
+                        "align": "center"
                     }
                 },
                 {
@@ -7798,7 +7827,8 @@
                     "y": "3084",
                     "properties": {
                         "size": "17",
-                        "text": "Ionic"
+                        "text": "Ionic",
+                        "align": "center"
                     }
                 },
                 {
@@ -7977,14 +8007,14 @@
                     "ID": "437",
                     "typeID": "Label",
                     "zOrder": "437",
-                    "measuredW": "193",
-                    "measuredH": "25",
-                    "x": "195",
+                    "measuredW": "190",
+                    "measuredH": "24",
+                    "x": "197",
                     "y": "3337",
                     "properties": {
                         "bold": "true",
-                        "size": "17",
-                        "text": "웹어셈블리(WebAssembly)",
+                        "size": "16",
+                        "text": "웹 어셈블리(Web Assembly)",
                         "align": "center"
                     }
                 },
@@ -8008,8 +8038,8 @@
                     "zOrder": "439",
                     "measuredW": "79",
                     "measuredH": "25",
-                    "x": "264",
-                    "y": "3513",
+                    "x": "268",
+                    "y": "3512",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -8033,13 +8063,13 @@
                     "typeID": "Label",
                     "zOrder": "441",
                     "w": "536",
-                    "measuredW": "470",
+                    "measuredW": "480",
                     "measuredH": "25",
                     "x": "484",
                     "y": "3316",
                     "properties": {
                         "size": "17",
-                        "text": "웹어셈블리(WebAssembly 또는 Wasm)는 Go, C, C++, Rust와 같은"
+                        "text": "웹 어셈블리(Web Assembly 또는 Wasm)는 Go, C, C++, Rust와 같은"
                     }
                 },
                 {
@@ -8118,8 +8148,8 @@
                     "zOrder": "447",
                     "measuredW": "79",
                     "measuredH": "25",
-                    "x": "796",
-                    "y": "2051",
+                    "x": "807",
+                    "y": "2050",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -8148,8 +8178,8 @@
                     "w": "132",
                     "measuredW": "96",
                     "measuredH": "25",
-                    "x": "1077",
-                    "y": "2005",
+                    "x": "1076",
+                    "y": "2004",
                     "properties": {
                         "size": "17",
                         "text": "HTML 템플릿",
@@ -8177,8 +8207,8 @@
                     "w": "139",
                     "measuredW": "108",
                     "measuredH": "25",
-                    "x": "1077",
-                    "y": "2050",
+                    "x": "1072",
+                    "y": "2049",
                     "properties": {
                         "size": "17",
                         "text": "커스텀 엘리먼트",
@@ -8206,8 +8236,8 @@
                     "w": "105",
                     "measuredW": "74",
                     "measuredH": "25",
-                    "x": "1090",
-                    "y": "2094",
+                    "x": "1087",
+                    "y": "2093",
                     "properties": {
                         "size": "17",
                         "text": "섀도 DOM",
@@ -11929,11 +11959,12 @@
                     "w": "87",
                     "measuredW": "75",
                     "measuredH": "25",
-                    "x": "1224",
-                    "y": "3237",
+                    "x": "1217",
+                    "y": "3236",
                     "properties": {
                         "text": "Gridsome",
-                        "size": "17"
+                        "size": "17",
+                        "align": "center"
                     }
                 },
                 {
@@ -11968,11 +11999,13 @@
             ]
         },
         "attributes": {
-            "name": "New Wireframe 1",
-            "order": 1000000,
-            "parentID": null
+            "name": "Frontend-map-2021-korean",
+            "order": 1000043.1984368989,
+            "parentID": null,
+            "notes": null
         },
-        "resourceID": "5F39586A-6112-476D-A2A2-EFE92A2AED03",
+        "branchID": "Master",
+        "resourceID": "311A52FB-DA18-4C06-92FD-CB156DADE215",
         "mockupH": "3449",
         "mockupW": "1217",
         "measuredW": "1342",
