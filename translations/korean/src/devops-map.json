@@ -1059,7 +1059,7 @@
                     "measuredW": "82",
                     "measuredH": "23",
                     "x": "226",
-                    "y": "460",
+                    "y": "459",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -1118,8 +1118,8 @@
                     "w": "66",
                     "measuredW": "26",
                     "measuredH": "23",
-                    "x": "271",
-                    "y": "553",
+                    "x": "268",
+                    "y": "552",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -1158,14 +1158,14 @@
                                     "typeID": "Label",
                                     "zOrder": "1",
                                     "w": "123",
-                                    "measuredW": "98",
+                                    "measuredW": "86",
                                     "measuredH": "23",
                                     "x": "38",
                                     "y": "8",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
-                                        "text": "메모리/스토리지",
+                                        "text": "메모리/저장소",
                                         "align": "center"
                                     }
                                 }
@@ -1206,8 +1206,8 @@
                                     "w": "123",
                                     "measuredW": "103",
                                     "measuredH": "23",
-                                    "x": "39",
-                                    "y": "9",
+                                    "x": "38",
+                                    "y": "8",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -1253,7 +1253,7 @@
                                     "measuredW": "39",
                                     "measuredH": "23",
                                     "x": "49",
-                                    "y": "9",
+                                    "y": "8",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -1332,13 +1332,13 @@
                     "w": "156",
                     "measuredW": "82",
                     "measuredH": "23",
-                    "x": "226",
+                    "x": "224",
                     "y": "649",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "align": "center",
-                        "text": "네트워크 개념"
+                        "text": "네트워크 개념",
+                        "align": "center"
                     }
                 },
                 {
@@ -1362,7 +1362,7 @@
                     "w": "102",
                     "measuredW": "74",
                     "measuredH": "23",
-                    "x": "253",
+                    "x": "251",
                     "y": "599",
                     "properties": {
                         "bold": "true",
@@ -2075,14 +2075,14 @@
                     "typeID": "Label",
                     "zOrder": "74",
                     "w": "153",
-                    "measuredW": "91",
+                    "measuredW": "134",
                     "measuredH": "23",
-                    "x": "961",
+                    "x": "960",
                     "y": "854",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Bash 스크립트",
+                        "text": "Bash 스크립트 배우기",
                         "align": "center"
                     }
                 },
@@ -2091,14 +2091,14 @@
                     "typeID": "Label",
                     "zOrder": "75",
                     "w": "255",
-                    "measuredW": "200",
+                    "measuredW": "204",
                     "measuredH": "23",
                     "x": "959",
                     "y": "961",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "(gcc, make, 그밖에 관련있는 것)",
+                        "text": "(gcc, make, 그 밖에 관련있는 것)",
                         "align": "center"
                     }
                 },
@@ -2128,7 +2128,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Vim/Nano/PowerShell/Emacs"
+                        "text": "Vim/Nano/PowerShell/Emacs",
+                        "align": "center"
                     }
                 },
                 {
@@ -2165,7 +2166,7 @@
                     "measuredW": "69",
                     "measuredH": "23",
                     "x": "723",
-                    "y": "861",
+                    "y": "860",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -2236,8 +2237,8 @@
                     "w": "169",
                     "measuredW": "108",
                     "measuredH": "23",
-                    "x": "727",
-                    "y": "966",
+                    "x": "728",
+                    "y": "965",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -2294,7 +2295,7 @@
                     "measuredW": "69",
                     "measuredH": "23",
                     "x": "1002",
-                    "y": "1014",
+                    "y": "1012",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -2924,11 +2925,12 @@
                                     "measuredW": "38",
                                     "measuredH": "23",
                                     "x": "53",
-                                    "y": "47",
+                                    "y": "46",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
-                                        "text": "HTTP"
+                                        "text": "HTTP",
+                                        "align": "center"
                                     }
                                 },
                                 {
@@ -2953,7 +2955,7 @@
                                     "measuredW": "47",
                                     "measuredH": "23",
                                     "x": "50",
-                                    "y": "91",
+                                    "y": "90",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -2982,7 +2984,7 @@
                                     "measuredW": "27",
                                     "measuredH": "23",
                                     "x": "61",
-                                    "y": "135",
+                                    "y": "134",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -3011,7 +3013,7 @@
                                     "measuredW": "69",
                                     "measuredH": "23",
                                     "x": "39",
-                                    "y": "179",
+                                    "y": "178",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -3040,7 +3042,7 @@
                                     "measuredW": "30",
                                     "measuredH": "23",
                                     "x": "59",
-                                    "y": "223",
+                                    "y": "222",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -3069,7 +3071,7 @@
                                     "measuredW": "69",
                                     "measuredH": "23",
                                     "x": "19",
-                                    "y": "267",
+                                    "y": "266",
                                     "properties": {
                                         "bold": "true",
                                         "size": "15",
@@ -3395,7 +3397,7 @@
                     "zOrder": "124",
                     "measuredW": "113",
                     "measuredH": "25",
-                    "x": "613",
+                    "x": "620",
                     "y": "701",
                     "properties": {
                         "bold": "true",
@@ -3408,9 +3410,10 @@
                     "ID": "125",
                     "typeID": "Label",
                     "zOrder": "125",
+                    "w": "274",
                     "measuredW": "239",
                     "measuredH": "23",
-                    "x": "554",
+                    "x": "540",
                     "y": "728",
                     "properties": {
                         "size": "15",
@@ -3423,24 +3426,24 @@
                     "typeID": "Label",
                     "zOrder": "126",
                     "w": "352",
-                    "measuredW": "234",
+                    "measuredW": "237",
                     "measuredH": "23",
-                    "x": "498",
+                    "x": "497",
                     "y": "752",
                     "properties": {
                         "size": "15",
-                        "align": "center",
-                        "text": "Linux는 어떤 배포판이라도 경험해 보되"
+                        "text": "Linux는 어떤 배포판이라도 경험해 보되,",
+                        "align": "center"
                     }
                 },
                 {
                     "ID": "127",
                     "typeID": "Label",
                     "zOrder": "127",
-                    "w": "262",
+                    "w": "270",
                     "measuredW": "260",
                     "measuredH": "23",
-                    "x": "542",
+                    "x": "552",
                     "y": "777",
                     "properties": {
                         "size": "15",
@@ -3555,7 +3558,7 @@
                     "zOrder": "135",
                     "measuredW": "164",
                     "measuredH": "25",
-                    "x": "186",
+                    "x": "201",
                     "y": "1043",
                     "properties": {
                         "bold": "true",
@@ -3585,7 +3588,7 @@
                     "w": "337",
                     "measuredW": "248",
                     "measuredH": "25",
-                    "x": "426",
+                    "x": "424",
                     "y": "1206",
                     "properties": {
                         "bold": "true",
@@ -3614,7 +3617,7 @@
                     "zOrder": "139",
                     "measuredW": "43",
                     "measuredH": "23",
-                    "x": "913",
+                    "x": "921",
                     "y": "1267",
                     "properties": {
                         "bold": "true",
@@ -3644,7 +3647,7 @@
                     "w": "108",
                     "measuredW": "82",
                     "measuredH": "23",
-                    "x": "423",
+                    "x": "421",
                     "y": "1329",
                     "properties": {
                         "bold": "true",
@@ -3675,7 +3678,7 @@
                     "measuredW": "56",
                     "measuredH": "23",
                     "x": "578",
-                    "y": "1286",
+                    "y": "1285",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -3849,7 +3852,7 @@
                     "w": "119",
                     "measuredW": "82",
                     "measuredH": "23",
-                    "x": "416",
+                    "x": "415",
                     "y": "1285",
                     "properties": {
                         "bold": "true",
@@ -3910,7 +3913,7 @@
                     "measuredW": "39",
                     "measuredH": "23",
                     "x": "528",
-                    "y": "1374",
+                    "y": "1373",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -3965,14 +3968,14 @@
                     "typeID": "Label",
                     "zOrder": "163",
                     "w": "130",
-                    "measuredW": "56",
+                    "measuredW": "87",
                     "measuredH": "23",
                     "x": "250",
                     "y": "713",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "운영 체제",
+                        "text": "운영 체제(OS)",
                         "align": "center"
                     }
                 },
@@ -3996,7 +3999,7 @@
                     "zOrder": "165",
                     "measuredW": "108",
                     "measuredH": "23",
-                    "x": "1057",
+                    "x": "1062",
                     "y": "770",
                     "properties": {
                         "bold": "true",
@@ -4025,8 +4028,8 @@
                     "zOrder": "167",
                     "measuredW": "182",
                     "measuredH": "25",
-                    "x": "1093",
-                    "y": "1524",
+                    "x": "1090",
+                    "y": "1523",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -4055,12 +4058,13 @@
                     "w": "75",
                     "measuredW": "69",
                     "measuredH": "23",
-                    "x": "1141",
-                    "y": "1586",
+                    "x": "1140",
+                    "y": "1585",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Terraform"
+                        "text": "Terraform",
+                        "align": "center"
                     }
                 },
                 {
@@ -4084,11 +4088,12 @@
                     "measuredW": "111",
                     "measuredH": "23",
                     "x": "1122",
-                    "y": "1630",
+                    "y": "1629",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "CloudFormation"
+                        "text": "CloudFormation",
+                        "align": "center"
                     }
                 },
                 {
@@ -4111,7 +4116,7 @@
                     "zOrder": "173",
                     "measuredW": "139",
                     "measuredH": "25",
-                    "x": "627",
+                    "x": "628",
                     "y": "1523",
                     "properties": {
                         "bold": "true",
@@ -4141,12 +4146,13 @@
                     "w": "59",
                     "measuredW": "50",
                     "measuredH": "23",
-                    "x": "606",
+                    "x": "605",
                     "y": "1604",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Ansible"
+                        "text": "Ansible",
+                        "align": "center"
                     }
                 },
                 {
@@ -4171,11 +4177,12 @@
                     "measuredW": "34",
                     "measuredH": "23",
                     "x": "611",
-                    "y": "1648",
+                    "y": "1647",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Chef"
+                        "text": "Chef",
+                        "align": "center"
                     }
                 },
                 {
@@ -4199,11 +4206,12 @@
                     "measuredW": "49",
                     "measuredH": "23",
                     "x": "726",
-                    "y": "1647",
+                    "y": "1646",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Puppet"
+                        "text": "Puppet",
+                        "align": "center"
                     }
                 },
                 {
@@ -4232,7 +4240,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Salt"
+                        "text": "Salt",
+                        "align": "center"
                     }
                 },
                 {
@@ -4255,7 +4264,7 @@
                     "zOrder": "183",
                     "measuredW": "133",
                     "measuredH": "25",
-                    "x": "151",
+                    "x": "149",
                     "y": "1541",
                     "properties": {
                         "bold": "true",
@@ -4286,11 +4295,12 @@
                     "measuredW": "52",
                     "measuredH": "23",
                     "x": "235",
-                    "y": "1609",
+                    "y": "1608",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Jenkins"
+                        "text": "Jenkins",
+                        "align": "center"
                     }
                 },
                 {
@@ -4315,11 +4325,12 @@
                     "measuredW": "60",
                     "measuredH": "23",
                     "x": "232",
-                    "y": "1652",
+                    "y": "1651",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Travis CI"
+                        "text": "Travis CI",
+                        "align": "center"
                     }
                 },
                 {
@@ -4372,13 +4383,13 @@
                     "zOrder": "190",
                     "measuredW": "59",
                     "measuredH": "25",
-                    "x": "463",
+                    "x": "465",
                     "y": "1523",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "align": "center",
-                        "text": "컨테이너"
+                        "text": "컨테이너",
+                        "align": "center"
                     }
                 },
                 {
@@ -4402,12 +4413,13 @@
                     "w": "59",
                     "measuredW": "50",
                     "measuredH": "23",
-                    "x": "454",
+                    "x": "458",
                     "y": "1604",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Docker"
+                        "text": "Docker",
+                        "align": "center"
                     }
                 },
                 {
@@ -4432,11 +4444,12 @@
                     "measuredW": "29",
                     "measuredH": "23",
                     "x": "469",
-                    "y": "1648",
+                    "y": "1647",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "LXC"
+                        "text": "LXC",
+                        "align": "center"
                     }
                 },
                 {
@@ -4459,12 +4472,13 @@
                     "zOrder": "196",
                     "measuredW": "64",
                     "measuredH": "23",
-                    "x": "229",
-                    "y": "1696",
+                    "x": "230",
+                    "y": "1695",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "TeamCity"
+                        "text": "TeamCity",
+                        "align": "center"
                     }
                 },
                 {
@@ -4493,7 +4507,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Circle CI"
+                        "text": "Circle CI",
+                        "align": "center"
                     }
                 },
                 {
@@ -4516,7 +4531,7 @@
                     "zOrder": "200",
                     "measuredW": "342",
                     "measuredH": "25",
-                    "x": "366",
+                    "x": "375",
                     "y": "1798",
                     "properties": {
                         "bold": "true",
@@ -4546,8 +4561,8 @@
                     "w": "185",
                     "measuredW": "147",
                     "measuredH": "23",
-                    "x": "873",
-                    "y": "1783",
+                    "x": "874",
+                    "y": "1782",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -4576,11 +4591,12 @@
                     "measuredW": "48",
                     "measuredH": "23",
                     "x": "1201",
-                    "y": "1782",
+                    "y": "1781",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Nagios"
+                        "text": "Nagios",
+                        "align": "center"
                     }
                 },
                 {
@@ -4604,11 +4620,12 @@
                     "measuredW": "57",
                     "measuredH": "23",
                     "x": "1197",
-                    "y": "1826",
+                    "y": "1825",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Grafana"
+                        "text": "Grafana",
+                        "align": "center"
                     }
                 },
                 {
@@ -4632,11 +4649,12 @@
                     "measuredW": "59",
                     "measuredH": "23",
                     "x": "1194",
-                    "y": "1957",
+                    "y": "1956",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Datadog"
+                        "text": "Datadog",
+                        "align": "center"
                     }
                 },
                 {
@@ -4660,11 +4678,12 @@
                     "measuredW": "46",
                     "measuredH": "23",
                     "x": "1201",
-                    "y": "1870",
+                    "y": "1869",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Zabbix"
+                        "text": "Zabbix",
+                        "align": "center"
                     }
                 },
                 {
@@ -4689,7 +4708,7 @@
                     "measuredW": "134",
                     "measuredH": "23",
                     "x": "868",
-                    "y": "1849",
+                    "y": "1848",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -4719,11 +4738,12 @@
                     "measuredW": "39",
                     "measuredH": "23",
                     "x": "1205",
-                    "y": "1913",
+                    "y": "1912",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Monit"
+                        "text": "Monit",
+                        "align": "center"
                     }
                 },
                 {
@@ -4746,12 +4766,13 @@
                     "zOrder": "216",
                     "measuredW": "48",
                     "measuredH": "23",
-                    "x": "930",
+                    "x": "932",
                     "y": "1933",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Jaeger"
+                        "text": "Jaeger",
+                        "align": "center"
                     }
                 },
                 {
@@ -4775,11 +4796,12 @@
                     "measuredW": "69",
                     "measuredH": "23",
                     "x": "1036",
-                    "y": "1933",
+                    "y": "1932",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "New Relic"
+                        "text": "New Relic",
+                        "align": "center"
                     }
                 },
                 {
@@ -4831,12 +4853,13 @@
                     "zOrder": "222",
                     "measuredW": "90",
                     "measuredH": "23",
-                    "x": "536",
-                    "y": "1880",
+                    "x": "539",
+                    "y": "1879",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Elastic Stack"
+                        "text": "Elastic Stack",
+                        "align": "center"
                     }
                 },
                 {
@@ -4861,11 +4884,12 @@
                     "measuredW": "53",
                     "measuredH": "23",
                     "x": "550",
-                    "y": "1924",
+                    "y": "1923",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Graylog"
+                        "text": "Graylog",
+                        "align": "center"
                     }
                 },
                 {
@@ -4894,7 +4918,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Splunk"
+                        "text": "Splunk",
+                        "align": "center"
                     }
                 },
                 {
@@ -4918,12 +4943,13 @@
                     "w": "79",
                     "measuredW": "68",
                     "measuredH": "23",
-                    "x": "549",
+                    "x": "545",
                     "y": "2011",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Papertrail"
+                        "text": "Papertrail",
+                        "align": "center"
                     }
                 },
                 {
@@ -4946,7 +4972,7 @@
                     "zOrder": "230",
                     "measuredW": "157",
                     "measuredH": "25",
-                    "x": "317",
+                    "x": "318",
                     "y": "2099",
                     "properties": {
                         "bold": "true",
@@ -4977,11 +5003,12 @@
                     "measuredW": "32",
                     "measuredH": "23",
                     "x": "182",
-                    "y": "1857",
+                    "y": "1856",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "AWS"
+                        "text": "AWS",
+                        "align": "center"
                     }
                 },
                 {
@@ -5006,11 +5033,12 @@
                     "measuredW": "94",
                     "measuredH": "23",
                     "x": "154",
-                    "y": "1901",
+                    "y": "1900",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Google Cloud"
+                        "text": "Google Cloud",
+                        "align": "center"
                     }
                 },
                 {
@@ -5035,11 +5063,12 @@
                     "measuredW": "40",
                     "measuredH": "23",
                     "x": "180",
-                    "y": "1945",
+                    "y": "1944",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Azure"
+                        "text": "Azure",
+                        "align": "center"
                     }
                 },
                 {
@@ -5063,12 +5092,13 @@
                     "w": "99",
                     "measuredW": "93",
                     "measuredH": "23",
-                    "x": "154",
-                    "y": "2175",
+                    "x": "151",
+                    "y": "2174",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Digital Ocean"
+                        "text": "Digital Ocean",
+                        "align": "center"
                     }
                 },
                 {
@@ -5097,7 +5127,8 @@
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Heroku"
+                        "text": "Heroku",
+                        "align": "center"
                     }
                 },
                 {
@@ -5106,8 +5137,8 @@
                     "zOrder": "241",
                     "measuredW": "111",
                     "measuredH": "32",
-                    "x": "707",
-                    "y": "2271",
+                    "x": "706",
+                    "y": "2277",
                     "properties": {
                         "bold": "true",
                         "size": "24",
@@ -5135,7 +5166,7 @@
                     "zOrder": "243",
                     "measuredW": "167",
                     "measuredH": "25",
-                    "x": "856",
+                    "x": "855",
                     "y": "1523",
                     "properties": {
                         "bold": "true",
@@ -5166,11 +5197,12 @@
                     "measuredW": "80",
                     "measuredH": "23",
                     "x": "851",
-                    "y": "1605",
+                    "y": "1604",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Kubernetes"
+                        "text": "Kubernetes",
+                        "align": "center"
                     }
                 },
                 {
@@ -5195,11 +5227,12 @@
                     "measuredW": "45",
                     "measuredH": "23",
                     "x": "984",
-                    "y": "1606",
+                    "y": "1605",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Mesos"
+                        "text": "Mesos",
+                        "align": "center"
                     }
                 },
                 {
@@ -5223,11 +5256,12 @@
                     "measuredW": "100",
                     "measuredH": "23",
                     "x": "843",
-                    "y": "1648",
+                    "y": "1647",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Docker Swarm"
+                        "text": "Docker Swarm",
+                        "align": "center"
                     }
                 },
                 {
@@ -5252,11 +5286,12 @@
                     "measuredW": "50",
                     "measuredH": "23",
                     "x": "984",
-                    "y": "1649",
+                    "y": "1648",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Nomad"
+                        "text": "Nomad",
+                        "align": "center"
                     }
                 },
                 {
@@ -5486,7 +5521,7 @@
                     "zOrder": "260",
                     "measuredW": "111",
                     "measuredH": "40",
-                    "x": "615",
+                    "x": "612",
                     "y": "139",
                     "properties": {
                         "bold": "true",
@@ -5575,8 +5610,8 @@
                     "zOrder": "264",
                     "measuredW": "157",
                     "measuredH": "25",
-                    "x": "572",
-                    "y": "326",
+                    "x": "574",
+                    "y": "325",
                     "properties": {
                         "bold": "true",
                         "size": "17",
@@ -5833,12 +5868,12 @@
                     "zOrder": "274",
                     "measuredW": "171",
                     "measuredH": "25",
-                    "x": "566",
+                    "x": "572",
                     "y": "380",
                     "properties": {
                         "size": "17",
-                        "align": "center",
-                        "text": "무슨 언어를 선택할지보다"
+                        "text": "무슨 언어를 선택할지보다",
+                        "align": "center"
                     }
                 },
                 {
@@ -5847,12 +5882,12 @@
                     "zOrder": "275",
                     "measuredW": "254",
                     "measuredH": "25",
-                    "x": "525",
+                    "x": "526",
                     "y": "406",
                     "properties": {
                         "size": "17",
-                        "align": "center",
-                        "text": "운영 자동화를 위해 프로그래밍 지식을"
+                        "text": "운영 자동화를 위해 프로그래밍 지식을",
+                        "align": "center"
                     }
                 },
                 {
@@ -5861,7 +5896,7 @@
                     "zOrder": "276",
                     "measuredW": "171",
                     "measuredH": "25",
-                    "x": "566",
+                    "x": "567",
                     "y": "432",
                     "properties": {
                         "size": "17",
@@ -5886,7 +5921,7 @@
                     "zOrder": "278",
                     "measuredW": "288",
                     "measuredH": "25",
-                    "x": "910",
+                    "x": "909",
                     "y": "68",
                     "properties": {
                         "size": "17",
@@ -5900,12 +5935,11 @@
                     "zOrder": "279",
                     "measuredW": "243",
                     "measuredH": "25",
-                    "x": "935",
+                    "x": "939",
                     "y": "96",
                     "properties": {
                         "size": "17",
-                        "text": "관련 자료, 다른 로드맵도 찾아보세요",
-                        "align": "center"
+                        "text": "관련 자료, 다른 로드맵도 찾아보세요"
                     }
                 },
                 {
@@ -6272,14 +6306,14 @@
                     "ID": "292",
                     "typeID": "Label",
                     "zOrder": "292",
-                    "measuredW": "184",
+                    "measuredW": "255",
                     "measuredH": "25",
-                    "x": "570",
-                    "y": "558",
+                    "x": "540",
+                    "y": "557",
                     "properties": {
                         "bold": "true",
                         "size": "17",
-                        "text": "OS의 다양한 개념 이해하기",
+                        "text": "운영체제(OS)의 다양한 개념 이해하기",
                         "align": "center"
                     }
                 },
@@ -6722,7 +6756,7 @@
                     "zOrder": "310",
                     "measuredW": "108",
                     "measuredH": "23",
-                    "x": "1133",
+                    "x": "1136",
                     "y": "713",
                     "properties": {
                         "bold": "true",
@@ -6751,13 +6785,14 @@
                     "zOrder": "312",
                     "measuredW": "96",
                     "measuredH": "23",
-                    "x": "154",
+                    "x": "156",
                     "y": "2032",
                     "properties": {
                         "bold": "true",
                         "color": "6710886",
                         "size": "15",
-                        "text": "Alibaba Cloud"
+                        "text": "Alibaba Cloud",
+                        "align": "center"
                     }
                 },
                 {
@@ -6780,12 +6815,13 @@
                     "zOrder": "314",
                     "measuredW": "47",
                     "measuredH": "23",
-                    "x": "176",
-                    "y": "2218",
+                    "x": "175",
+                    "y": "2217",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Linode"
+                        "text": "Linode",
+                        "align": "center"
                     }
                 },
                 {
@@ -6809,11 +6845,12 @@
                     "measuredW": "32",
                     "measuredH": "23",
                     "x": "183",
-                    "y": "2261",
+                    "y": "2260",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Vultr"
+                        "text": "Vultr",
+                        "align": "center"
                     }
                 },
                 {
@@ -6836,12 +6873,13 @@
                     "zOrder": "318",
                     "measuredW": "61",
                     "measuredH": "23",
-                    "x": "101",
+                    "x": "102",
                     "y": "1608",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Gitlab CI"
+                        "text": "Gitlab CI",
+                        "align": "center"
                     }
                 },
                 {
@@ -6864,12 +6902,13 @@
                     "zOrder": "320",
                     "measuredW": "103",
                     "measuredH": "23",
-                    "x": "79",
-                    "y": "1653",
+                    "x": "82",
+                    "y": "1652",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "GitHub Actions"
+                        "text": "GitHub Actions",
+                        "align": "center"
                     }
                 },
                 {
@@ -6893,11 +6932,12 @@
                     "measuredW": "58",
                     "measuredH": "23",
                     "x": "104",
-                    "y": "1696",
+                    "y": "1695",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Bamboo"
+                        "text": "Bamboo",
+                        "align": "center"
                     }
                 },
                 {
@@ -6922,11 +6962,12 @@
                     "measuredW": "160",
                     "measuredH": "23",
                     "x": "81",
-                    "y": "1741",
+                    "y": "1740",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Azure DevOps Services"
+                        "text": "Azure DevOps Services",
+                        "align": "center"
                     }
                 },
                 {
@@ -6950,11 +6991,12 @@
                     "measuredW": "83",
                     "measuredH": "23",
                     "x": "1182",
-                    "y": "1738",
+                    "y": "1737",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Prometheus"
+                        "text": "Prometheus",
+                        "align": "center"
                     }
                 },
                 {
@@ -6978,12 +7020,13 @@
                     "w": "103",
                     "measuredW": "93",
                     "measuredH": "23",
-                    "x": "908",
-                    "y": "1977",
+                    "x": "909",
+                    "y": "1976",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "AppDynamics"
+                        "text": "AppDynamics",
+                        "align": "center"
                     }
                 },
                 {
@@ -7007,11 +7050,12 @@
                     "measuredW": "52",
                     "measuredH": "23",
                     "x": "1045",
-                    "y": "1977",
+                    "y": "1976",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Instana"
+                        "text": "Instana",
+                        "align": "center"
                     }
                 },
                 {
@@ -7034,12 +7078,13 @@
                     "zOrder": "332",
                     "measuredW": "88",
                     "measuredH": "23",
-                    "x": "960",
-                    "y": "2021",
+                    "x": "962",
+                    "y": "2020",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "OpenTracing"
+                        "text": "OpenTracing",
+                        "align": "center"
                     }
                 },
                 {
@@ -7063,11 +7108,12 @@
                     "measuredW": "47",
                     "measuredH": "23",
                     "x": "1155",
-                    "y": "1673",
+                    "y": "1672",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "Pulumi"
+                        "text": "Pulumi",
+                        "align": "center"
                     }
                 },
                 {
@@ -7088,14 +7134,14 @@
                     "ID": "336",
                     "typeID": "Label",
                     "zOrder": "336",
-                    "measuredW": "169",
+                    "measuredW": "188",
                     "measuredH": "23",
-                    "x": "647",
-                    "y": "491",
+                    "x": "642",
+                    "y": "490",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "시스템 스타트업 관리 (intid)",
+                        "text": "스타트업(Startup) 관리 (intid)",
                         "align": "center"
                     }
                 },
@@ -7119,8 +7165,8 @@
                     "zOrder": "338",
                     "measuredW": "141",
                     "measuredH": "23",
-                    "x": "662",
-                    "y": "624",
+                    "x": "665",
+                    "y": "623",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7278,7 +7324,7 @@
                     "measuredW": "69",
                     "measuredH": "23",
                     "x": "1199",
-                    "y": "1441",
+                    "y": "1440",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7335,8 +7381,8 @@
                     "zOrder": "345",
                     "measuredW": "39",
                     "measuredH": "23",
-                    "x": "1150",
-                    "y": "2080",
+                    "x": "1151",
+                    "y": "2081",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7364,8 +7410,8 @@
                     "zOrder": "347",
                     "measuredW": "69",
                     "measuredH": "23",
-                    "x": "1134",
-                    "y": "2124",
+                    "x": "1133",
+                    "y": "2123",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7393,8 +7439,8 @@
                     "zOrder": "349",
                     "measuredW": "69",
                     "measuredH": "23",
-                    "x": "1133",
-                    "y": "2167",
+                    "x": "1136",
+                    "y": "2166",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7423,7 +7469,7 @@
                     "measuredW": "95",
                     "measuredH": "23",
                     "x": "1123",
-                    "y": "2211",
+                    "y": "2210",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7437,11 +7483,12 @@
                     "zOrder": "352",
                     "measuredW": "213",
                     "measuredH": "23",
-                    "x": "650",
+                    "x": "655",
                     "y": "2108",
                     "properties": {
                         "size": "15",
-                        "text": "http://bit.ly/cloud-arch-patterns"
+                        "text": "http://bit.ly/cloud-arch-patterns",
+                        "align": "center"
                     }
                 },
                 {
@@ -7493,8 +7540,8 @@
                     "zOrder": "355",
                     "measuredW": "39",
                     "measuredH": "23",
-                    "x": "128",
-                    "y": "1117",
+                    "x": "124",
+                    "y": "1116",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -7522,12 +7569,13 @@
                     "zOrder": "357",
                     "measuredW": "40",
                     "measuredH": "23",
-                    "x": "114",
-                    "y": "1180",
+                    "x": "115",
+                    "y": "1179",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "SMTP"
+                        "text": "SMTP",
+                        "align": "center"
                     }
                 },
                 {
@@ -7550,12 +7598,13 @@
                     "zOrder": "359",
                     "measuredW": "46",
                     "measuredH": "23",
-                    "x": "111",
+                    "x": "112",
                     "y": "1223",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "IMAPS"
+                        "text": "IMAPS",
+                        "align": "center"
                     }
                 },
                 {
@@ -7578,12 +7627,13 @@
                     "zOrder": "361",
                     "measuredW": "48",
                     "measuredH": "23",
-                    "x": "110",
+                    "x": "112",
                     "y": "1267",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "POP3S"
+                        "text": "POP3S",
+                        "align": "center"
                     }
                 },
                 {
@@ -7607,11 +7657,12 @@
                     "measuredW": "54",
                     "measuredH": "23",
                     "x": "133",
-                    "y": "1319",
+                    "y": "1318",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "DMARC"
+                        "text": "DMARC",
+                        "align": "center"
                     }
                 },
                 {
@@ -7634,12 +7685,13 @@
                     "zOrder": "365",
                     "measuredW": "28",
                     "measuredH": "23",
-                    "x": "146",
-                    "y": "1363",
+                    "x": "147",
+                    "y": "1362",
                     "properties": {
                         "bold": "true",
                         "size": "15",
-                        "text": "SPF"
+                        "text": "SPF",
+                        "align": "center"
                     }
                 },
                 {
@@ -7662,8 +7714,8 @@
                     "zOrder": "367",
                     "measuredW": "56",
                     "measuredH": "23",
-                    "x": "131",
-                    "y": "1407",
+                    "x": "132",
+                    "y": "1406",
                     "properties": {
                         "bold": "true",
                         "size": "15",
@@ -14445,11 +14497,13 @@
             ]
         },
         "attributes": {
-            "name": "New Wireframe 1",
-            "order": 1000000,
-            "parentID": null
+            "name": "DevOps-map-2021-korean",
+            "order": 1000066.7451631766,
+            "parentID": null,
+            "notes": null
         },
-        "resourceID": "75CF4156-A5C1-4847-AD77-BB35A0E3BE3F",
+        "branchID": "Master",
+        "resourceID": "94F584FD-C407-475D-85FA-624E87A973CC",
         "mockupH": "2356",
         "mockupW": "1263",
         "measuredW": "1321",
