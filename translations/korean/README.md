@@ -1,4 +1,4 @@
-![웹 개발자 로드맵 - 2021](https://i.imgur.com/NNyc9QM.png)
+![웹 개발자 로드맵 - 2021](https://i.imgur.com/4u3LK4j.png)
 
 > 2021년, 웹 개발자가 되기 위한 로드맵
 
