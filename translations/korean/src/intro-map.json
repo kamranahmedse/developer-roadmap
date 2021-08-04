@@ -3,21 +3,21 @@
         "controls": {
             "control": [
                 {
-                    "ID": "0",
+                    "ID": "24",
                     "typeID": "Label",
                     "zOrder": "0",
-                    "measuredW": "219",
+                    "measuredW": "199",
                     "measuredH": "40",
-                    "x": "554",
+                    "x": "565",
                     "y": "74",
                     "properties": {
                         "bold": "true",
                         "size": "32",
-                        "text": "웹 개발자(2021)"
+                        "text": "2021 웹 개발자"
                     }
                 },
                 {
-                    "ID": "1",
+                    "ID": "25",
                     "typeID": "Arrow",
                     "zOrder": "1",
                     "w": "75",
@@ -44,7 +44,7 @@
                     }
                 },
                 {
-                    "ID": "2",
+                    "ID": "26",
                     "typeID": "Arrow",
                     "zOrder": "2",
                     "w": "133",
@@ -72,7 +72,7 @@
                     }
                 },
                 {
-                    "ID": "3",
+                    "ID": "27",
                     "typeID": "TextInput",
                     "zOrder": "3",
                     "w": "132",
@@ -88,21 +88,22 @@
                     }
                 },
                 {
-                    "ID": "4",
+                    "ID": "28",
                     "typeID": "Label",
                     "zOrder": "4",
                     "measuredW": "144",
                     "measuredH": "28",
-                    "x": "597",
-                    "y": "189",
+                    "x": "593",
+                    "y": "191",
                     "properties": {
                         "bold": "true",
                         "size": "20",
-                        "text": "과정을 선택하세요"
+                        "text": "경로를 선택하세요",
+                        "align": "center"
                     }
                 },
                 {
-                    "ID": "5",
+                    "ID": "29",
                     "typeID": "TextInput",
                     "zOrder": "5",
                     "w": "288",
@@ -118,7 +119,7 @@
                     }
                 },
                 {
-                    "ID": "6",
+                    "ID": "30",
                     "typeID": "TextInput",
                     "zOrder": "6",
                     "w": "289",
@@ -134,11 +135,11 @@
                     }
                 },
                 {
-                    "ID": "7",
+                    "ID": "31",
                     "typeID": "TextInput",
                     "zOrder": "7",
                     "w": "289",
-                    "measuredW": "174",
+                    "measuredW": "179",
                     "measuredH": "32",
                     "x": "67",
                     "y": "356",
@@ -146,11 +147,11 @@
                         "align": "center",
                         "color": "16776960",
                         "size": "18",
-                        "text": "HTTP/HTTPS와 API"
+                        "text": "HTTP/HTTPS 와 API"
                     }
                 },
                 {
-                    "ID": "8",
+                    "ID": "32",
                     "typeID": "Label",
                     "zOrder": "8",
                     "measuredW": "157",
@@ -164,7 +165,7 @@
                     }
                 },
                 {
-                    "ID": "9",
+                    "ID": "33",
                     "typeID": "TextInput",
                     "zOrder": "9",
                     "w": "289",
@@ -180,7 +181,7 @@
                     }
                 },
                 {
-                    "ID": "10",
+                    "ID": "34",
                     "typeID": "Arrow",
                     "zOrder": "10",
                     "w": "1",
@@ -209,7 +210,7 @@
                     }
                 },
                 {
-                    "ID": "11",
+                    "ID": "35",
                     "typeID": "TextInput",
                     "zOrder": "11",
                     "w": "121",
@@ -225,7 +226,7 @@
                     }
                 },
                 {
-                    "ID": "12",
+                    "ID": "36",
                     "typeID": "Arrow",
                     "zOrder": "12",
                     "w": "2",
@@ -255,7 +256,7 @@
                     }
                 },
                 {
-                    "ID": "13",
+                    "ID": "37",
                     "typeID": "Arrow",
                     "zOrder": "13",
                     "w": "123",
@@ -284,7 +285,7 @@
                     }
                 },
                 {
-                    "ID": "14",
+                    "ID": "38",
                     "typeID": "TextInput",
                     "zOrder": "14",
                     "w": "112",
@@ -300,7 +301,7 @@
                     }
                 },
                 {
-                    "ID": "15",
+                    "ID": "39",
                     "typeID": "Arrow",
                     "zOrder": "15",
                     "w": "2",
@@ -329,7 +330,7 @@
                     }
                 },
                 {
-                    "ID": "16",
+                    "ID": "40",
                     "typeID": "Arrow",
                     "zOrder": "16",
                     "w": "1",
@@ -358,7 +359,7 @@
                     }
                 },
                 {
-                    "ID": "17",
+                    "ID": "41",
                     "typeID": "TextInput",
                     "zOrder": "17",
                     "w": "288",
@@ -374,7 +375,7 @@
                     }
                 },
                 {
-                    "ID": "18",
+                    "ID": "42",
                     "typeID": "TextInput",
                     "zOrder": "18",
                     "w": "288",
@@ -390,7 +391,7 @@
                     }
                 },
                 {
-                    "ID": "19",
+                    "ID": "43",
                     "typeID": "TextInput",
                     "zOrder": "19",
                     "w": "288",
@@ -406,7 +407,7 @@
                     }
                 },
                 {
-                    "ID": "20",
+                    "ID": "44",
                     "typeID": "TextInput",
                     "zOrder": "20",
                     "w": "288",
@@ -422,7 +423,7 @@
                     }
                 },
                 {
-                    "ID": "21",
+                    "ID": "45",
                     "typeID": "TextInput",
                     "zOrder": "21",
                     "w": "288",
@@ -438,7 +439,7 @@
                     }
                 },
                 {
-                    "ID": "22",
+                    "ID": "46",
                     "typeID": "TextInput",
                     "zOrder": "22",
                     "w": "288",
@@ -454,7 +455,7 @@
                     }
                 },
                 {
-                    "ID": "23",
+                    "ID": "47",
                     "typeID": "__group__",
                     "zOrder": "23",
                     "measuredW": "350",
@@ -483,7 +484,7 @@
                                     "zOrder": "1",
                                     "measuredW": "288",
                                     "measuredH": "25",
-                                    "x": "27",
+                                    "x": "31",
                                     "y": "17",
                                     "properties": {
                                         "size": "17",
@@ -497,12 +498,11 @@
                                     "zOrder": "2",
                                     "measuredW": "243",
                                     "measuredH": "25",
-                                    "x": "52",
+                                    "x": "53",
                                     "y": "45",
                                     "properties": {
                                         "size": "17",
-                                        "text": "관련 자료, 다른 로드맵도 찾아보세요",
-                                        "align": "center"
+                                        "text": "관련 자료, 다른 로드맵도 찾아보세요"
                                     }
                                 },
                                 {
@@ -615,11 +615,13 @@
             ]
         },
         "attributes": {
-            "name": "New Wireframe 1",
-            "order": 1000000,
-            "parentID": null
+            "name": "Intro-map-2021-korean",
+            "order": 1000023.9035979031,
+            "parentID": null,
+            "notes": null
         },
-        "resourceID": "F758498C-3526-4F1B-A59E-5CA38EA6D6B2",
+        "branchID": "Master",
+        "resourceID": "B954AF4F-D4E9-462D-96F0-0545C8B2F829",
         "mockupH": "436",
         "mockupW": "1207",
         "measuredW": "1274",
