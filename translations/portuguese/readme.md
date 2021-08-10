@@ -6,7 +6,7 @@
 [![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
 [![](https://img.shields.io/badge/%E2%9D%A4-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1)
 
-Abaixo você encontra um conjunto de gráficos demonstrando os caminhos que você pode que você pode tomar e as tecnologias que você pode querer adotar a fim de se tornar um(a) desenvolvedor(a) frontend, backend ou um(a) DevOps. Eu ([kamranahmeds](https://github.com/kamranahmedse)) fiz esses gráficos para um velho professor meu que queria algo para compartilhar com seus alunos da faculdade para dar a eles uma perspectiva; os compartilho aqui para ajudar a comunidade.
+Abaixo você encontra um conjunto de gráficos demonstrando os caminhos que tomar e as tecnologias que você pode querer adotar a fim de se tornar um(a) desenvolvedor(a) frontend, backend ou um(a) DevOps. Eu ([kamranahmeds](https://github.com/kamranahmedse)) fiz esses gráficos para um antigo professor meu que queria algo para compartilhar com seus alunos da faculdade para dar-lhes uma perspectiva; os compartilho aqui para ajudar a comunidade.
 
 ***
 
@@ -26,15 +26,15 @@ Abaixo você encontra um conjunto de gráficos demonstrando os caminhos que voc�
 
 <h3 align="center"><strong>Propósito desses Roteiros</strong></h3>
 
-> O propósito desses Roteiros é dar a você uma ideia sobre o panorama e te guiar se você está confuso sobre o que aprender depois e não te encorajar a escolher o que está na moda. Você deve começar a entender o porquê de uma ferramenta seria melhor em alguns casos que outra e se lembrar de na moda nunca significa melhor adequada para o trabalho.
+> O propósito desses Roteiros é dar a você uma ideia sobre o panorama e te guiar caso você esteja confuso sobre o que aprender em seguida e não te encorajar a escolher o que está na moda. Você deve começar a entender porque uma ferramenta seria melhor que outra em alguns casos e, também, se lembrar que estar na moda nem sempre significa ser a mais adequada para o trabalho.
 
-<h3 align="center"><strong>Observação a Iniciantes</strong></h3>
+<h3 align="center"><strong>Observação aos Iniciantes</strong></h3>
 
-> Estes roteiros cobrem tudo que tem para aprender para os caminhos listados abaixo. Não se sinta sobrecarregado(a), você não precisa aprender tudo no começo se você está apenas começando. Nós estamos trabalhando nas versões iniciantes dessas e [serão lançadas em breve](https://roadmap.sh) depois que nós tivermos terminado com o lançamento dos roteiros de Backend e DevOps de 2021.
+> Estes roteiros cobrem tudo que há para aprender nos caminhos listados abaixo. Não se sinta sobrecarregado(a), você não precisa aprender tudo no começo se você está apenas começando. Nós estamos trabalhando nas versões iniciantes dessas e [serão lançadas em breve](https://roadmap.sh) depois que nós tivermos terminado com o lançamento dos roteiros de Backend e DevOps de 2021.
 
 ***
 
-Se você acha que estes podem ser melhorados de qualquer jeito, por favor sugira como.
+Se você acha que estes podem ser melhorados de alguma forma, por favor sugira como.
 
 ## Introdução
 
