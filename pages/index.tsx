@@ -39,7 +39,7 @@ export default function Home() {
                     href='#'>Watch</Link>
               <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
                     _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
-                    fontWeight={500} href={'#'}>Become a Member</Link>
+                    fontWeight={500} href={'#'}>Get Updates</Link>
             </Stack>
           </Flex>
         </Container>
@@ -614,7 +614,8 @@ export default function Home() {
 
           <Text lineHeight='26px' fontSize='16px' mb='15px'>A considerable amount of my time is spent doing unpaid
             community work on things that I hope will help humanity in some way. Your sponsorship helps me continue to
-            produce more open-source and free educational material consumed by hundreds of thousands of developers every month.</Text>
+            produce more open-source and free educational material consumed by hundreds of thousands of developers every
+            month.</Text>
 
           <Box>
             <iframe
@@ -630,14 +631,61 @@ export default function Home() {
         </Container>
       </Box>
 
+      <Box borderTopWidth={1} mt='60px' pt='70px' pb='80px' textAlign='left' bg='gray.800'>
+        <Container maxW='container.md'>
+          <Heading color={'gray.100'} fontSize='35px' mb='15px'>Stay Informed</Heading>
+          <Text color='gray.400' lineHeight='26px' fontSize='16px' mb='20px'>Subscribe yourself to get updates, new
+            guides, videos and roadmaps in your inbox.</Text>
+
+          <Stack isInline spacing='15px'>
+            <Box>
+              <Button variant='outline' borderWidth={2} colorScheme='green' _hover={{ color: 'green.200' }}>
+                Subscribe to Updates
+              </Button>
+              <Text color='gray.500' fontSize='13px' mt='5px'>Free subscription for updates</Text>
+            </Box>
+            <Box>
+              <Button colorScheme='yellow'>Updates & Paid Content</Button>
+              <Text color='gray.500' fontSize='13px' mt='5px'>Support the project by paying as little as <Text as='span'
+                                                                                                               fontWeight={600}>5$
+                per month</Text></Text>
+            </Box>
+          </Stack>
+        </Container>
+      </Box>
+
       <Box bg='gray.900' p='40px 30px'>
         <Container maxW='container.md'>
-          <Stack isInline color='white' fontWeight={600} spacing='30px'>
-            <Link href='#'>Home</Link>
-            <Link href='#'>Roadmaps</Link>
-            <Link href='#'>Guides</Link>
-            <Link href='#'>Videos</Link>
+          <Stack isInline color='gray.400' fontWeight={600} spacing='30px'>
+            <Link _hover={{ color: 'white' }} href='#'>Roadmaps</Link>
+            <Link _hover={{ color: 'white' }} href='#'>Guides</Link>
+            <Link _hover={{ color: 'white' }} href='#'>Videos</Link>
+            <Link _hover={{ color: 'white' }} href='#'>Podcasts</Link>
+            <Link _hover={{ color: 'white' }} href='#'>About</Link>
+            <Link _hover={{ color: 'white' }} href='#'>YouTube</Link>
           </Stack>
+
+          <Box my='50px' maxW='500px'>
+            <Flex spacing={0} alignItems='center' color='gray.400' mb='10px'>
+              <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
+                    href='/'>
+                <Image h='25px' w='25px' src='/logo.svg' mr='6px' />
+                roadmap.sh
+              </Link>
+              <Text as='span' mx='7px'>by</Text>
+              <Link bg='blue.500' px='6px' py='2px' rounded='4px' color='white' fontWeight={600} fontSize='13px'
+                    _hover={{ textDecoration: 'none', bg: 'blue.600' }} href='/'>@kamranahmedse</Link>
+            </Flex>
+
+            <Text mb='10px' fontSize='14px' color='gray.500'>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</Text>
+
+            <Text fontSize='14px' color='gray.500'>
+              <Text as='span' mr='10px'>&copy; roadmap.sh</Text>&middot;
+              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>FAQs</Link>&middot;
+              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>Terms</Link>&middot;
+              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>Privacy</Link>
+            </Text>
+          </Box>
         </Container>
       </Box>
     </Box>
