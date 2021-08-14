@@ -19,6 +19,9 @@ import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { UpdatesBanner } from '../components/updates-banner';
 import { OpensourceBanner } from '../components/opensource-banner';
+import { GuideListItem } from './guides/components/guide-list-item';
+import { DimmedMore } from '../components/dimmed-more';
+import { VideoListItem } from './watch/components/video-list-item';
 
 export default function Home() {
   return (
@@ -89,208 +92,24 @@ export default function Home() {
             <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
           </Box>
 
-          <Stack>
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  pos='relative'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Session based Authentication
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>June 12, 2021</Text>
-            </Link>
+          <VStack
+            rounded='5px'
+            divider={<StackDivider borderColor='gray.200' />}
+            spacing={0}
+            align='stretch'
+          >
+            <GuideListItem title='Session based Authentication' date='June 12, 2021' />
+            <GuideListItem title='JSON Web Tokens' date='June 05, 2021' />
+            <GuideListItem title='Token Based Authentication' date='May 15, 2021' />
+            <GuideListItem isPro title='Character Encodings' date='March 06, 2021' />
+            <GuideListItem title='SSL vs TLS vs HTTPs vs SSH' date='February 15, 2021' />
+            <GuideListItem title='Continuous Integration and Deployment' date='February 15, 2021' />
+            <GuideListItem title='Authentication' date='February 01, 2021' />
+            <GuideListItem title='DHCP in One Picture' date='February 01, 2021' />
+            <GuideListItem title='Session Based Authentication' date='February 01, 2021' />
 
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                JSON Web Tokens
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>June 05, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Token Based Authentication
-                <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>May 15, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Encodings</Text>
-              <Text fontSize='13px' color='gray.500' as='span'>March 06, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                SSL vs TLS vs HTTPs vs SSH
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Integration and
-                Deployment</Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Authentication</Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 15, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Character Encodings
-                <Badge variant='subtle' colorScheme='purple' ml='5px'>Pro</Badge>
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
-            </Link>
-
-            <Link d='flex' justifyContent='space-between' href='#' fontSize='15px'
-                  _hover={{
-                    textDecoration: 'none',
-                    color: 'blue.400',
-                    '& .guide-title': {
-                      transform: 'translateX(10px)'
-                    }
-                  }} borderBottomWidth={1}
-                  py='5px' color='gray.600'>
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                DHCP in One Picture
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
-            </Link>
-
-            <Link
-              d='flex'
-              justifyContent='space-between'
-              href='#'
-              fontSize='15px'
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .guide-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-              py='5px'
-              color='gray.600'
-            >
-              <Text d='flex' alignItems='center' transition='200ms' className={'guide-title'} fontWeight={500}
-                    as='span'>
-                Session Based Authentication
-              </Text>
-              <Text fontSize='13px' color='gray.500' as='span'>February 01, 2021</Text>
-            </Link>
-
-            <Box position='relative' textAlign='center' bottom='20px'>
-              <Box
-                opacity={1}
-                pointerEvents='none'
-                position='absolute'
-                bottom={0}
-                height='200px'
-                width='100%'
-                background='linear-gradient(180deg, transparent, #e6fffa)'
-              />
-
-              <Link
-                rounded='20px'
-                display='inline'
-                bg='green.600'
-                color='white'
-                p='7px 20px'
-                href={'#'}
-                fontWeight={800}
-                fontSize='11px'
-                textTransform='uppercase'
-                my='25px'
-                position='relative'
-                _hover={{
-                  textDecoration: 'none',
-                  '& .forward-arrow': {
-                    transform: 'translateX(3px)'
-                  }
-                }}>
-                View all guides
-                <Text d='inline-block' as='span' transition='200ms' ml='4px' className='forward-arrow'>&rarr;</Text>
-              </Link>
-            </Box>
-          </Stack>
+            <DimmedMore text='View all Guides' />
+          </VStack>
         </Container>
       </Box>
 
@@ -301,268 +120,22 @@ export default function Home() {
           </Box>
 
           <VStack
-            // bg={'white'}
-            // borderWidth={1}
             rounded='5px'
             divider={<StackDivider borderColor='gray.200' />}
             spacing={0}
             align='stretch'
           >
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Scaling the Unscalable — System Design 101</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Tranpsort Protocols: TCP vs UDP</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>OSI Model Explained</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Creating a React App</Text>
-                <Badge variant='subtle' colorScheme='purple' ml='10px'>Pro</Badge>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>DOM vs Shadow DOM vs Virtual DOM</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Everything you need to know about HTTP caching</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Content Delivery Networks</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>Load Balancers in Depth</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>DNS and How does it Work?</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
-            <Link
-              fontSize='15px'
-              p='10px'
-              d='flex'
-              fontWeight={500}
-              color='gray.600'
-              alignItems='center'
-              justifyContent={'space-between'}
-              _hover={{
-                textDecoration: 'none',
-                color: 'blue.400',
-                '& .video-title': {
-                  transform: 'translateX(10px)'
-                }
-              }}
-            >
-              <Flex alignItems='center' className='video-title' transition={'200ms'}>
-                <VideoIcon style={{ width: '18px', height: '18px', color: '#9c9c9c' }} />
-                <Text as='span' ml='7px'>JavaScript Fetch API</Text>
-              </Flex>
-              <Text as='span' fontWeight={500} color='gray.400' fontSize='12px' ml='10px'>15 minutes</Text>
-            </Link>
+            <VideoListItem title='Transport Protocols: TCP vs UDP' duration='15 minutes' />
+            <VideoListItem title='OSI Model Explained' duration='10 minutes' />
+            <VideoListItem title='Creating a React App' isPro duration='15 minutes' />
+            <VideoListItem title='DOM vs Shadow DOM vs Virtual DOM' isPro duration='15 minutes' />
+            <VideoListItem title='Everything you need to know about HTTP caching' isPro duration='10 minutes' />
+            <VideoListItem title='Content Delivery Networks' duration='5 minutes' />
+            <VideoListItem title='Load Balancers in Depth' duration='15 minutes' />
+            <VideoListItem title='DNS and how does it work?' duration='2 minutes' />
+            <VideoListItem title='JavaScript Fetch API' duration='22 minutes' />
 
-            <Box position='relative' textAlign='center' bottom='10px'>
-              <Box
-                opacity={1}
-                pointerEvents='none'
-                position='absolute'
-                bottom={0}
-                height='200px'
-                width='100%'
-                background='linear-gradient(180deg, transparent, #e6fffa)'
-              />
-
-              <Link
-                rounded='20px'
-                display='inline'
-                bg='green.600'
-                color='white'
-                p='7px 20px'
-                href={'#'}
-                fontWeight={800}
-                fontSize='11px'
-                textTransform='uppercase'
-                my='25px'
-                position='relative'
-                _hover={{
-                  textDecoration: 'none',
-                  '& .forward-arrow': {
-                    transform: 'translateX(3px)'
-                  }
-                }}>
-                View all Videos
-                <Text d='inline-block' as='span' transition='200ms' ml='4px' className='forward-arrow'>&rarr;</Text>
-              </Link>
-            </Box>
+            <DimmedMore text={'View all Videos'} />
           </VStack>
         </Container>
       </Box>
