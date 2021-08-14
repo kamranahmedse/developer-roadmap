@@ -7,6 +7,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { GuideListItem } from './guides/components/guide-list-item';
 import { DimmedMore } from '../components/dimmed-more';
 import { VideoListItem } from './watch/components/video-list-item';
+import { RoadmapGridItem } from './roadmaps/components/roadmap-grid-item';
 
 export default function Home() {
   return (
@@ -27,45 +28,12 @@ export default function Home() {
               guides</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
-            <Link as={Box} href={'#'} _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
-                  bg='blue.900' color='white' p='15px' rounded='10px'>
-              <Heading fontSize='22px' mb='5px'>Frontend</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide to becoming a frontend developer in 2021</Text>
-            </Link>
-
-            <Link as={Box} href='#' _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
-                  bg='red.800' color='white' p='15px' rounded='10px'>
-              <Heading fontSize='22px' mb='5px'>Backend</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide to becoming a backend developer in 2021</Text>
-            </Link>
-
-            <Link as={Box} href='#' _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
-                  bg='green.800' color='white' p='15px' rounded='10px'>
-              <Heading fontSize='22px' mb='5px'>DevOps</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide for DevOps or Operations role in 2021</Text>
-            </Link>
-
-            <Link as={Box} href='#' _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
-                  bg='teal.800' color='white' p='15px' rounded='10px'>
-              <Heading fontSize='22px' mb='5px'>React</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide for DevOps or Operations role in 2021</Text>
-            </Link>
-
-            <Link as={Box} href='#' _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
-                  bg='gray.800' color='white' p='15px' rounded='10px'>
-              <Heading fontSize='22px' mb='5px'>DBA</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide for DevOps or Operations role in 2021</Text>
-            </Link>
-
-            <Link as={Box} href={'#'} _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1}
-                  shadow='2xl'
-                  bg='red.900' color='white' p='15px' rounded='10px' position='relative'>
-              <Tooltip label={'Community contribution'} hasArrow placement='top'>
-                <InfoIcon opacity={0.5} position='absolute' top='10px' right='10px' />
-              </Tooltip>
-              <Heading fontSize='22px' mb='5px'>Android</Heading>
-              <Text color='gray.200' fontSize='13px'>Step by step guide for DevOps or Operations role in 2021</Text>
-            </Link>
+            <RoadmapGridItem colorIndex={0} title={'Frontend'} subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
+            <RoadmapGridItem colorIndex={1} title={'Backend'} subtitle={'Step by step guide to becoming a backend developer in 2021'} />
+            <RoadmapGridItem colorIndex={2} title={'DevOps'} subtitle={'Step by step guide for DevOps or Operations role in 2021'} />
+            <RoadmapGridItem colorIndex={3} title={'React'} subtitle={'Step by step guide to become a React Developer in 2021'} />
+            <RoadmapGridItem colorIndex={4} title={'DBA'} subtitle={'Step by step guide to become a PostgreSQL DBA in 2021'} isCommunity />
+            <RoadmapGridItem colorIndex={5} title={'Android'} subtitle={'Step by step guide to become an Android Developer in 2021'} isCommunity />
           </SimpleGrid>
         </Container>
       </Box>
