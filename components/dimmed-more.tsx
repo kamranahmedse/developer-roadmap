@@ -16,7 +16,7 @@ export function DimmedMore(props: DimmedMoreProps) {
         bottom={0}
         height='200px'
         width='100%'
-        background='linear-gradient(180deg, transparent, #e6fffa)'
+        background='linear-gradient(180deg, transparent, white)'
       />
 
       <Link

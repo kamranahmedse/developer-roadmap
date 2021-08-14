@@ -11,11 +11,11 @@ import { LinksList } from '../components/links-list';
 
 export default function Home() {
   return (
-    <Box bg='teal.50' minH='100vh'>
+    <Box bg='white' minH='100vh'>
       <Header />
       <Box>
         <Container maxW='container.md'>
-          <Box py='30px'>
+          <Box py='35px'>
             <Heading fontSize='28px' mb='15px'>Hey there! 👋</Heading>
             <Text fontSize='16px' mb='10px'>
               <Text fontWeight={500} as='span'>roadmap.sh</Text> is a community effort to create roadmaps, guides and
