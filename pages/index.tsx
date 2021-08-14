@@ -1,20 +1,5 @@
-import {
-  Badge,
-  Box, Button,
-  Container,
-  Flex,
-  Heading,
-  Image,
-  Link,
-  SimpleGrid,
-  Stack,
-  StackDivider,
-  Text,
-  Tooltip,
-  VStack
-} from '@chakra-ui/react';
+import { Box, Container, Heading, Link, SimpleGrid, StackDivider, Text, Tooltip, VStack } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
-import { VideoIcon } from '../icons/video-icon';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { UpdatesBanner } from '../components/updates-banner';
@@ -42,8 +27,7 @@ export default function Home() {
               guides</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
-            <Link as={Box} href={'#'} _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1}
-                  shadow='2xl'
+            <Link as={Box} href={'#'} _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} flex={1} shadow='2xl'
                   bg='blue.900' color='white' p='15px' rounded='10px'>
               <Heading fontSize='22px' mb='5px'>Frontend</Heading>
               <Text color='gray.200' fontSize='13px'>Step by step guide to becoming a frontend developer in 2021</Text>

@@ -30,7 +30,7 @@ export function GuideListItem(props: GuideListItemProps) {
 
       <Flex alignItems='center' className='guide-title' transition={'200ms'}>
         <Text as='span' ml='7px'>{title}</Text>
-        {isPro && <Badge variant='subtle' colorScheme='purple' ml='10px'>Pro</Badge>}
+        {isPro && <Badge pos='relative' top='1px' variant='subtle' colorScheme='purple' ml='10px'>Pro</Badge>}
       </Flex>
       <Text fontSize='13px' color='gray.500' as='span'>{date}</Text>
     </Link>
