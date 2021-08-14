@@ -14,36 +14,16 @@ import {
   VStack
 } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
-import { VideoIcon } from './icons/video-icon';
+import { VideoIcon } from '../icons/video-icon';
+import { Header } from '../components/header';
+import { Footer } from '../components/footer';
+import { UpdatesBanner } from '../components/updates-banner';
+import { OpensourceBanner } from '../components/opensource-banner';
 
 export default function Home() {
   return (
     <Box bg='teal.50' minH='100vh'>
-      <Box bg='gray.900' p='20px 30px'>
-        <Container maxW='container.md'>
-          <Flex justifyContent='space-between'>
-            <Link d='flex' href='/' alignItems='center' color='white' fontWeight={600}
-                  _hover={{ textDecoration: 'none' }} fontSize='18px'>
-              <Image h='30px' w='30px' src='/logo.svg' mr='10px' />
-              roadmap.sh
-            </Link>
-            {/*<Link d='flex' href='/' color='white' fontWeight={600} fontSize='20px'>*/}
-            {/*  roadmap.sh*/}
-            {/*</Link>*/}
-            <Stack shouldWrapChildren isInline spacing='15px' alignItems='center' color='gray.50' fontSize='15px'>
-              <Link borderBottomWidth={0} borderBottomColor='gray.500'
-                    _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
-                    href='#'>Read</Link>
-              <Link borderBottomWidth={0} borderBottomColor='gray.500'
-                    _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
-                    href='#'>Watch</Link>
-              <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
-                    _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
-                    fontWeight={500} href={'#'}>Get Updates</Link>
-            </Stack>
-          </Flex>
-        </Container>
-      </Box>
+      <Header />
       <Box>
         <Container maxW='container.md'>
           <Box py='30px'>
@@ -98,9 +78,6 @@ export default function Home() {
               </Tooltip>
               <Heading fontSize='22px' mb='5px'>Android</Heading>
               <Text color='gray.200' fontSize='13px'>Step by step guide for DevOps or Operations role in 2021</Text>
-              {/*<Badge mt='10px' variant="subtle" colorScheme="green">*/}
-              {/*  Community*/}
-              {/*</Badge>*/}
             </Link>
           </SimpleGrid>
         </Container>
@@ -590,104 +567,9 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box borderTopWidth={1} mt='60px' pt='70px' pb='80px' textAlign='center'>
-        <Container maxW='container.md'>
-          <Heading fontSize='35px' mb='20px'>Open Source</Heading>
-          <Text lineHeight='26px' fontSize='16px' mb='20px'>The project is OpenSource,&nbsp;
-            <Link
-              _hover={{ textDecoration: 'none' }}
-              href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
-              target='_blank'
-              borderBottomWidth={1}
-              fontWeight={600}
-            >7th most starred project on GitHub</Link> and is visited by hundreds of thousands of
-            developers every month.</Text>
-          <iframe
-            src='https://ghbtns.com/github-btn.html?user=kamranahmedse&repo=developer-roadmap&type=star&count=true&size=large'
-            frameBorder='0'
-            scrolling='0'
-            width='170'
-            height='30'
-            style={{ margin: 'auto', marginBottom: '30px' }}
-            title='GitHub'
-          />
-
-          <Text lineHeight='26px' fontSize='16px' mb='15px'>A considerable amount of my time is spent doing unpaid
-            community work on things that I hope will help humanity in some way. Your sponsorship helps me continue to
-            produce more open-source and free educational material consumed by hundreds of thousands of developers every
-            month.</Text>
-
-          <Box>
-            <iframe
-              src='https://ghbtns.com/github-btn.html?user=kamranahmedse&type=sponsor&size=large'
-              frameBorder='0'
-              scrolling='0'
-              width='260'
-              height='30'
-              title='GitHub'
-              style={{ margin: 'auto' }}
-            />
-          </Box>
-        </Container>
-      </Box>
-
-      <Box borderTopWidth={1} mt='60px' pt='70px' pb='80px' textAlign='left' bg='gray.800'>
-        <Container maxW='container.md'>
-          <Heading color={'gray.100'} fontSize='35px' mb='15px'>Stay Informed</Heading>
-          <Text color='gray.400' lineHeight='26px' fontSize='16px' mb='20px'>Subscribe yourself to get updates, new
-            guides, videos and roadmaps in your inbox.</Text>
-
-          <Stack isInline spacing='15px'>
-            <Box>
-              <Button variant='outline' borderWidth={2} colorScheme='green' _hover={{ color: 'green.200' }}>
-                Subscribe to Updates
-              </Button>
-              <Text color='gray.500' fontSize='13px' mt='5px'>Free subscription for updates</Text>
-            </Box>
-            <Box>
-              <Button colorScheme='yellow'>Updates & Paid Content</Button>
-              <Text color='gray.500' fontSize='13px' mt='5px'>Support the project by paying as little as <Text as='span'
-                                                                                                               fontWeight={600}>5$
-                per month</Text></Text>
-            </Box>
-          </Stack>
-        </Container>
-      </Box>
-
-      <Box bg='gray.900' p='40px 30px'>
-        <Container maxW='container.md'>
-          <Stack isInline color='gray.400' fontWeight={600} spacing='30px'>
-            <Link _hover={{ color: 'white' }} href='#'>Roadmaps</Link>
-            <Link _hover={{ color: 'white' }} href='#'>Guides</Link>
-            <Link _hover={{ color: 'white' }} href='#'>Videos</Link>
-            <Link _hover={{ color: 'white' }} href='#'>Podcasts</Link>
-            <Link _hover={{ color: 'white' }} href='#'>About</Link>
-            <Link _hover={{ color: 'white' }} href='#'>YouTube</Link>
-          </Stack>
-
-          <Box my='50px' maxW='500px'>
-            <Flex spacing={0} alignItems='center' color='gray.400' mb='10px'>
-              <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
-                    href='/'>
-                <Image h='25px' w='25px' src='/logo.svg' mr='6px' />
-                roadmap.sh
-              </Link>
-              <Text as='span' mx='7px'>by</Text>
-              <Link bg='blue.500' px='6px' py='2px' rounded='4px' color='white' fontWeight={600} fontSize='13px'
-                    _hover={{ textDecoration: 'none', bg: 'blue.600' }} href='/'>@kamranahmedse</Link>
-            </Flex>
-
-            <Text mb='10px' fontSize='14px' color='gray.500'>Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.</Text>
-
-            <Text fontSize='14px' color='gray.500'>
-              <Text as='span' mr='10px'>&copy; roadmap.sh</Text>&middot;
-              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>FAQs</Link>&middot;
-              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>Terms</Link>&middot;
-              <Link _hover={{ textDecoration: 'none', color: 'white'}} color='gray.400' mx='10px'>Privacy</Link>
-            </Text>
-          </Box>
-        </Container>
-      </Box>
+      <OpensourceBanner />
+      <UpdatesBanner />
+      <Footer />
     </Box>
   );
 }
