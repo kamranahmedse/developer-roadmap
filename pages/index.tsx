@@ -24,8 +24,7 @@ export default function Home() {
             </Text>
 
             <Text fontSize='16px'>We also have a <Link textDecoration={'underline'} href={'#'} fontWeight={600}>YouTube
-              channel</Link> and <Link textDecoration='underline' href={'#'} fontWeight={600}>graphical
-              guides</Link> which we hope you are going to love.</Text>
+              channel</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
             <RoadmapGridItem colorIndex={0} title={'Frontend'}
