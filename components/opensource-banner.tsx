@@ -2,7 +2,7 @@ import { Box, Container, Heading, Link, Text } from '@chakra-ui/react';
 
 export function OpensourceBanner() {
   return (
-    <Box borderTopWidth={1} mt='60px' pt='70px' pb='80px' textAlign='center'>
+    <Box borderTopWidth={1} mt='60px' pt='70px' pb='30px' textAlign='center'>
       <Container maxW='container.md'>
         <Heading fontSize='35px' mb='20px'>Open Source</Heading>
         <Text lineHeight='26px' fontSize='16px' mb='20px'>The project is OpenSource,&nbsp;

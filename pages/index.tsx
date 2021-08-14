@@ -1,13 +1,13 @@
-import { Box, Container, Heading, Link, SimpleGrid, StackDivider, Text, Tooltip, VStack } from '@chakra-ui/react';
-import { InfoIcon } from '@chakra-ui/icons';
+import { Box, Container, Heading, Link, SimpleGrid, Text } from '@chakra-ui/react';
 import { Header } from '../components/header';
 import { Footer } from '../components/footer';
 import { UpdatesBanner } from '../components/updates-banner';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { GuideListItem } from './guides/components/guide-list-item';
 import { DimmedMore } from '../components/dimmed-more';
-import { VideoListItem } from './watch/components/video-list-item';
 import { RoadmapGridItem } from './roadmaps/components/roadmap-grid-item';
+import { LinksListItem } from '../components/links-list-item';
+import { VideoIcon } from '../icons/video-icon';
+import { LinksList } from '../components/links-list';
 
 export default function Home() {
   return (
@@ -28,12 +28,18 @@ export default function Home() {
               guides</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
-            <RoadmapGridItem colorIndex={0} title={'Frontend'} subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
-            <RoadmapGridItem colorIndex={1} title={'Backend'} subtitle={'Step by step guide to becoming a backend developer in 2021'} />
-            <RoadmapGridItem colorIndex={2} title={'DevOps'} subtitle={'Step by step guide for DevOps or Operations role in 2021'} />
-            <RoadmapGridItem colorIndex={3} title={'React'} subtitle={'Step by step guide to become a React Developer in 2021'} />
-            <RoadmapGridItem colorIndex={4} title={'DBA'} subtitle={'Step by step guide to become a PostgreSQL DBA in 2021'} isCommunity />
-            <RoadmapGridItem colorIndex={5} title={'Android'} subtitle={'Step by step guide to become an Android Developer in 2021'} isCommunity />
+            <RoadmapGridItem colorIndex={0} title={'Frontend'}
+                             subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
+            <RoadmapGridItem colorIndex={1} title={'Backend'}
+                             subtitle={'Step by step guide to becoming a backend developer in 2021'} />
+            <RoadmapGridItem colorIndex={2} title={'DevOps'}
+                             subtitle={'Step by step guide for DevOps or Operations role in 2021'} />
+            <RoadmapGridItem colorIndex={3} title={'React'}
+                             subtitle={'Step by step guide to become a React Developer in 2021'} />
+            <RoadmapGridItem colorIndex={4} title={'DBA'}
+                             subtitle={'Step by step guide to become a PostgreSQL DBA in 2021'} isCommunity />
+            <RoadmapGridItem colorIndex={5} title={'Android'}
+                             subtitle={'Step by step guide to become an Android Developer in 2021'} isCommunity />
           </SimpleGrid>
         </Container>
       </Box>
@@ -44,24 +50,20 @@ export default function Home() {
             <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
           </Box>
 
-          <VStack
-            rounded='5px'
-            divider={<StackDivider borderColor='gray.200' />}
-            spacing={0}
-            align='stretch'
-          >
-            <GuideListItem title='Session based Authentication' date='June 12, 2021' />
-            <GuideListItem title='JSON Web Tokens' date='June 05, 2021' />
-            <GuideListItem title='Token Based Authentication' date='May 15, 2021' />
-            <GuideListItem isPro title='Character Encodings' date='March 06, 2021' />
-            <GuideListItem title='SSL vs TLS vs HTTPs vs SSH' date='February 15, 2021' />
-            <GuideListItem title='Continuous Integration and Deployment' date='February 15, 2021' />
-            <GuideListItem title='Authentication' date='February 01, 2021' />
-            <GuideListItem title='DHCP in One Picture' date='February 01, 2021' />
-            <GuideListItem title='Session Based Authentication' date='February 01, 2021' />
+          <LinksList>
+            <LinksListItem title='Session based Authentication' badgeText='pro' subtitle='June 12, 2021' />
+            <LinksListItem title='Session based Authentication' subtitle='June 12, 2021' />
+            <LinksListItem title='JSON Web Tokens' subtitle='June 05, 2021' />
+            <LinksListItem title='Token Based Authentication' subtitle='May 15, 2021' />
+            <LinksListItem title='Character Encodings' badgeText='pro' subtitle='March 06, 2021' />
+            <LinksListItem title='SSL vs TLS vs HTTPs vs SSH' subtitle='February 15, 2021' />
+            <LinksListItem title='Continuous Integration and Deployment' subtitle='February 15, 2021' />
+            <LinksListItem title='Authentication' subtitle='February 01, 2021' />
+            <LinksListItem title='DHCP in One Picture' subtitle='February 01, 2021' />
+            <LinksListItem title='Session Based Authentication' subtitle='February 01, 2021' />
 
             <DimmedMore text='View all Guides' />
-          </VStack>
+          </LinksList>
         </Container>
       </Box>
 
@@ -71,24 +73,30 @@ export default function Home() {
             <Heading color='green.500' fontSize='25px' mb='5px'>Video Explanations</Heading>
           </Box>
 
-          <VStack
-            rounded='5px'
-            divider={<StackDivider borderColor='gray.200' />}
-            spacing={0}
-            align='stretch'
-          >
-            <VideoListItem title='Transport Protocols: TCP vs UDP' duration='15 minutes' />
-            <VideoListItem title='OSI Model Explained' duration='10 minutes' />
-            <VideoListItem title='Creating a React App' isPro duration='15 minutes' />
-            <VideoListItem title='DOM vs Shadow DOM vs Virtual DOM' isPro duration='15 minutes' />
-            <VideoListItem title='Everything you need to know about HTTP caching' isPro duration='10 minutes' />
-            <VideoListItem title='Content Delivery Networks' duration='5 minutes' />
-            <VideoListItem title='Load Balancers in Depth' duration='15 minutes' />
-            <VideoListItem title='DNS and how does it work?' duration='2 minutes' />
-            <VideoListItem title='JavaScript Fetch API' duration='22 minutes' />
+          <LinksList>
+            <LinksListItem title='Transport Protocols: TCP vs UDP' subtitle='15 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='OSI Model Explained' subtitle='10 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='Creating a React App' badgeText='pro' subtitle='15 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='DOM vs Shadow DOM vs Virtual DOM' badgeText='pro' subtitle='15 minutes'
+                           icon={<VideoIcon
+                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='Everything you need to know about HTTP caching' badgeText='pro' subtitle='10 minutes'
+                           icon={<VideoIcon
+                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='Content Delivery Networks' subtitle='5 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='Load Balancers in Depth' subtitle='15 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='DNS and how does it work?' subtitle='2 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem title='JavaScript Fetch API' subtitle='22 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
 
             <DimmedMore text={'View all Videos'} />
-          </VStack>
+          </LinksList>
         </Container>
       </Box>
 
