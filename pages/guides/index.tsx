@@ -6,19 +6,18 @@ import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { GuideGridItem } from './components/guide-grid-item';
+import { PageHeader } from '../../components/page-header';
 
 export default function Guides() {
   return (
     <Box bg='white' minH='100vh'>
       <Header />
       <Box mb='60px'>
-        <Box pt='45px' pb='30px' borderBottomWidth={1}>
-          <Container maxW='container.md' position='relative'>
-            <Heading as='h1' color='black' fontSize='35px' fontWeight={700} mb='5px'>Visual Guides</Heading>
-            <Text fontSize='15px'>Succinct graphical explanations to development related topics.</Text>
-          </Container>
-        </Box>
-        <Container maxW='container.md' position='relative' mt='30px'>
+        <PageHeader
+          title={'Visual Guides'}
+          subtitle={'Succinct graphical explanations to development related topics.'}
+        />
+        <Container maxW='container.md' position='relative'>
           <Stack isInline mb='30px' spacing='15px'>
             <GuideGridItem
               title='Session Based Authentication'
