@@ -11,10 +11,10 @@ export default function Guides() {
     <Box bg='white' minH='100vh'>
       <Header />
       <Box mb='60px'>
-        <Box pt='50px' pb='30px' borderBottomWidth={1}>
+        <Box pt='45px' pb='30px' borderBottomWidth={1}>
           <Container maxW='container.md' position='relative'>
-            <Heading as='h1' color='black' fontSize='40px' fontWeight={700} mb='5px'>Visual Guides</Heading>
-            <Text>Succinct graphical explanations to development related topics.</Text>
+            <Heading as='h1' color='black' fontSize='35px' fontWeight={700} mb='5px'>Visual Guides</Heading>
+            <Text fontSize='15px'>Succinct graphical explanations to development related topics.</Text>
           </Container>
         </Box>
         <Container maxW='container.md' position='relative'>
