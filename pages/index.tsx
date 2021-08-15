@@ -66,7 +66,7 @@ export default function Home() {
         </Container>
       </Box>
 
-      <Box>
+      <Box mb='60px'>
         <Container maxW='container.md'>
           <Box pt='40px' mb='20px'>
             <Heading color='green.500' fontSize='25px' mb='5px'>Video Explanations</Heading>
