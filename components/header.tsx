@@ -13,6 +13,9 @@ export function Header() {
           <Stack shouldWrapChildren isInline spacing='15px' alignItems='center' color='gray.50' fontSize='15px'>
             <Link borderBottomWidth={0} borderBottomColor='gray.500'
                   _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
+                  href='/roadmaps'>Roadmaps</Link>
+            <Link borderBottomWidth={0} borderBottomColor='gray.500'
+                  _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
                   href='/guides'>Guides</Link>
             <Link borderBottomWidth={0} borderBottomColor='gray.500'
                   _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
