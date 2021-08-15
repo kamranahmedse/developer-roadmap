@@ -4,10 +4,10 @@ import { Footer } from '../components/footer';
 import { UpdatesBanner } from '../components/updates-banner';
 import { OpensourceBanner } from '../components/opensource-banner';
 import { DimmedMore } from '../components/dimmed-more';
-import { RoadmapGridItem } from './roadmaps/components/roadmap-grid-item';
 import { LinksListItem } from '../components/links-list-item';
 import { VideoIcon } from '../icons/video-icon';
 import { LinksList } from '../components/links-list';
+import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
 
 export default function Home() {
   return (
@@ -27,17 +27,17 @@ export default function Home() {
               channel</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
-            <RoadmapGridItem colorIndex={0} title={'Frontend'}
+            <HomeRoadmapItem colorIndex={0} title={'Frontend'}
                              subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
-            <RoadmapGridItem colorIndex={1} title={'Backend'}
+            <HomeRoadmapItem colorIndex={1} title={'Backend'}
                              subtitle={'Step by step guide to becoming a backend developer in 2021'} />
-            <RoadmapGridItem colorIndex={2} title={'DevOps'}
+            <HomeRoadmapItem colorIndex={2} title={'DevOps'}
                              subtitle={'Step by step guide for DevOps or Operations role in 2021'} />
-            <RoadmapGridItem colorIndex={3} title={'React'}
+            <HomeRoadmapItem colorIndex={3} title={'React'}
                              subtitle={'Step by step guide to become a React Developer in 2021'} />
-            <RoadmapGridItem colorIndex={4} title={'DBA'}
+            <HomeRoadmapItem colorIndex={4} title={'DBA'}
                              subtitle={'Step by step guide to become a PostgreSQL DBA in 2021'} isCommunity />
-            <RoadmapGridItem colorIndex={5} title={'Android'}
+            <HomeRoadmapItem colorIndex={5} title={'Android'}
                              subtitle={'Step by step guide to become an Android Developer in 2021'} isCommunity />
           </SimpleGrid>
         </Container>
