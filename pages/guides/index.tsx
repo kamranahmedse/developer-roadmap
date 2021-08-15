@@ -1,4 +1,4 @@
-import { Badge, Box, Button, Container, Heading, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, Container, Stack } from '@chakra-ui/react';
 import { Header } from '../../components/header';
 import { LinksList } from '../../components/links-list';
 import { LinksListItem } from '../../components/links-list-item';

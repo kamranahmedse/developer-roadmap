@@ -16,7 +16,7 @@ export function Header() {
                   href='/guides'>Guides</Link>
             <Link borderBottomWidth={0} borderBottomColor='gray.500'
                   _hover={{ textDecoration: 'none', borderBottomColor: 'white' }} fontWeight={500}
-                  href='#'>Videos</Link>
+                  href='/watch'>Videos</Link>
             <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
                   _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
                   fontWeight={500} href={'#'}>Get Updates</Link>
