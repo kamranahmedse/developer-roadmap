@@ -4,7 +4,6 @@ import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { PageHeader } from '../../components/page-header';
-import { HomeRoadmapItem } from './components/home-roadmap-item';
 import { RoadmapGridItem } from './components/roadmap-grid-item';
 
 export default function Roadmaps() {
