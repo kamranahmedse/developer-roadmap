@@ -1,6 +1,7 @@
 import { Box, Button, Container, SimpleGrid, Stack } from '@chakra-ui/react';
 import { DownloadIcon, EmailIcon } from '@chakra-ui/icons';
 import styled from 'styled-components';
+import Image from 'next/image';
 import { Header } from '../../components/header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
@@ -25,12 +26,18 @@ const RoadmapBody = styled.div`
     margin: 0 0 20px 40px;
 
     li + li {
-      margin-top: 11px;
+      margin-top: 7px;
     }
+  }
+
+  img {
+    max-width: 100%;
   }
 `;
 
 export default function Roadmap() {
+  const isImageOnly = true;
+
   return (
     <Box bg='white' minH='100vh'>
       <Header />
@@ -48,22 +55,9 @@ export default function Roadmap() {
             </Button>
           </Stack>
         </PageHeader>
-        <Container maxW='container.md' position='relative'>
+        <Container maxW={ isImageOnly ? '900px': 'container.md'} position='relative'>
           <RoadmapBody>
-            <p>Frontend web developers work on the frontend of the websites producing HTML, CSS and JavaScript i.e. to
-              produce the part of the website that users normally interact with. Alternative Job titles for a frontend
-              developer include:</p>
-            <ul>
-              <li>Frontend Developer or Engineer</li>
-              <li>Frontend Web Developer</li>
-              <li>Frontend HTML/CSS Developer</li>
-              <li>JavaScript Developer</li>
-              <li>React Developer</li>
-              <li>Vue.js Developer</li>
-              <li>Angular Developer</li>
-            </ul>
-
-            <p>The diagram below shows the landscape of all the tools, technologies available for the frontend developers as well as the recommended order in which you should be learning the.</p>
+            <img alt='Frontend Roadmap' src='/roadmaps/frontend.png' />
           </RoadmapBody>
         </Container>
       </Box>
