@@ -1,5 +1,5 @@
 import { Box, Container, Heading, Link, SimpleGrid, Text } from '@chakra-ui/react';
-import { Header } from '../components/header';
+import { GlobalHeader } from '../components/global-header';
 import { Footer } from '../components/footer';
 import { UpdatesBanner } from '../components/updates-banner';
 import { OpensourceBanner } from '../components/opensource-banner';
@@ -12,7 +12,7 @@ import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
 export default function Home() {
   return (
     <Box bg='white' minH='100vh'>
-      <Header />
+      <GlobalHeader />
       <Box>
         <Container maxW='container.md'>
           <Box py='35px'>

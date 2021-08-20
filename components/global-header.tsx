@@ -1,6 +1,6 @@
 import { Box, Container, Flex, Image, Link, Stack } from '@chakra-ui/react';
 
-export function Header() {
+export function GlobalHeader() {
   return (
     <Box bg='gray.900' p='20px 30px'>
       <Container maxW='container.md'>

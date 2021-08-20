@@ -1,5 +1,5 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
-import { Header } from '../../components/header';
+import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
@@ -9,7 +9,7 @@ import { RoadmapGridItem } from './components/roadmap-grid-item';
 export default function Roadmaps() {
   return (
     <Box bg='white' minH='100vh'>
-      <Header />
+      <GlobalHeader />
       <Box mb='60px'>
         <PageHeader
           title={'Developer Roadmaps'}

@@ -15,6 +15,12 @@ let nextConfig = {
   webpack(config, options) {
     config.resolve.modules.push(path.resolve('./'));
 
+    // Transforms SVGs to components
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ['@svgr/webpack']
+    });
+
     return config;
   }
 };
