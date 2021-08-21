@@ -36,6 +36,7 @@ const HeaderLink = styled.a`
 const H1 = styled.h1`
   position: relative;
   font-size: 42px;
+  line-height: 40px;
   font-weight: 700;
   margin: 32px 0 10px !important;
 
