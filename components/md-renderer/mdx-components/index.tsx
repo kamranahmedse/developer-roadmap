@@ -9,6 +9,7 @@ import EnrichedLink from './a';
 import { BadgeLink } from './badge-link';
 import Ul from './ul';
 import Li from './li';
+import PremiumBlock from './premium-block';
 
 const MdxComponents = {
   p: P,
@@ -20,6 +21,7 @@ const MdxComponents = {
   iframe: IFrame,
   img: Img,
   BadgeLink: BadgeLink,
+  PremiumBlock: PremiumBlock,
   ul: Ul,
   li: Li
 };
