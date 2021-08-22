@@ -6,7 +6,7 @@ type GuideHeaderProps = {
   subtitle: string;
 };
 
-export function GuideHeader(props: GuideHeaderProps) {
+export function ContentPageHeader(props: GuideHeaderProps) {
   const { title, subtitle } = props;
 
   return (

@@ -3,7 +3,7 @@ import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { GuideHeader } from '../../components/guide-header';
+import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
 
 export default function Video() {
@@ -13,7 +13,7 @@ export default function Video() {
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
       <Box mb='60px'>
-        <GuideHeader
+        <ContentPageHeader
           title={'Build it and they will come?'}
           subtitle={'Why “build it and they will come” alone won’t work anymore'}
         />
