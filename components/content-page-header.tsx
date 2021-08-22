@@ -10,7 +10,7 @@ export function ContentPageHeader(props: GuideHeaderProps) {
   const { title, subtitle } = props;
 
   return (
-    <Box pt='70px' pb='55px' borderBottomWidth={1} mb='30px' textAlign='center' position='static' top='10px'>
+    <Box pt='70px' pb='55px' borderBottomWidth={1} mb='30px' textAlign='center'>
       <Container maxW='container.md' position='relative' textAlign='center'>
         <Flex alignItems='center' justifyContent='center' fontSize='14px'>
           <Link href='#' d='flex' alignItems='center' fontWeight={600} color='gray.500'>
