@@ -11,7 +11,7 @@ export default function EnrichedLink(props: EnrichedLinkProps) {
   const isExternalUrl = /(^http(s)?:\/\/)|(\.(png|svg|jpeg|jpg)$)/.test(props.href);
 
   return (
-    <Link fontWeight={600} href={props.href} target={isExternalUrl ? '_blank' : '_self'}>
+    <Link fontWeight={600} href={props.href} target={isExternalUrl ? '_blank' : '_self'} textDecoration='underline'>
       {props.children}
     </Link>
   );

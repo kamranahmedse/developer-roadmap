@@ -3,10 +3,12 @@ import Headings from './heading';
 import { Pre } from './pre';
 import BlockQuote from './blockquote';
 import { Table } from './table';
-import { IFrame } from './iframe';
+import IFrame from './iframe';
 import { Img } from './img';
 import EnrichedLink from './a';
 import { BadgeLink } from './badge-link';
+import Ul from './ul';
+import Li from './li';
 
 const MdxComponents = {
   p: P,
@@ -17,7 +19,9 @@ const MdxComponents = {
   table: Table,
   iframe: IFrame,
   img: Img,
-  BadgeLink: BadgeLink
+  BadgeLink: BadgeLink,
+  ul: Ul,
+  li: Li
 };
 
 export default MdxComponents;
