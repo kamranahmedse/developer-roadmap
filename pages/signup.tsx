@@ -30,7 +30,7 @@ export default function SignUp() {
                 <Heading mb='10px' fontSize='23px' fontWeight={700}>Monthly Updates</Heading>
                 <Text mb='14px' fontSize='14px' lineHeight='20px'>Enter your email below to get notified about the new
                   roadmaps, guides and updates</Text>
-                <Input size='sm' fontSize='15px' mb='5px' py='18px' rounded='4px' placeholder='Your email'
+                <Input size='sm' fontSize='15px' py='18px' rounded='4px' placeholder='Your email'
                        borderWidth={2} mb={'10px'} />
                 <Button bg='gray.700' _hover={{ bg: 'black' }} fontWeight={500} color={'white'}
                         w='100%'>Subscribe</Button>
@@ -41,7 +41,7 @@ export default function SignUp() {
                 </Text>
               </Box>
             </Box>
-            <Box p='20px' rounded='5px' borderColor='gray.900' borderWidth={2}>
+            <Box p='20px' rounded='5px' borderWidth={2} bg='yellow.100' borderColor='yellow.200'>
               <Heading mb='10px' fontSize='23px' fontWeight={700}>Updates and Paid Content</Heading>
               <Text mb='20px' fontSize='14px' lineHeight='20px'>People sponsoring me on GitHub get access to the updates
                 as well as paid content.</Text>
