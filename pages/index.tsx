@@ -26,7 +26,7 @@ export default function Home() {
             <Text fontSize='16px'>We also have a <Link textDecoration={'underline'} href={'#'} fontWeight={600}>YouTube
               channel</Link> which we hope you are going to love.</Text>
           </Box>
-          <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing='20px'>
+          <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing={['10px', '10px', '15px']}>
             <HomeRoadmapItem colorIndex={0} title={'Frontend'}
                              subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
             <HomeRoadmapItem colorIndex={1} title={'Backend'}
