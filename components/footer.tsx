@@ -1,17 +1,35 @@
 import { Box, Container, Flex, Image, Link, Stack, Text } from '@chakra-ui/react';
 
+function NavigationLinks() {
+  return (
+    <>
+      <Stack isInline d={['none', 'none', 'flex']} color='gray.400' fontWeight={600} spacing='30px'>
+        <Link _hover={{ color: 'white' }} href='#'>Roadmaps</Link>
+        <Link _hover={{ color: 'white' }} href='#'>Guides</Link>
+        <Link _hover={{ color: 'white' }} href='#'>Videos</Link>
+        <Link _hover={{ color: 'white' }} href='#'>Podcasts</Link>
+        <Link _hover={{ color: 'white' }} href='#'>About</Link>
+        <Link _hover={{ color: 'white' }} href='#'>YouTube</Link>
+      </Stack>
+
+      <Stack d={['flex', 'flex', 'none']} color='gray.400' fontWeight={600} spacing={0}>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>Roadmaps</Link>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>Guides</Link>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>Videos</Link>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>Podcasts</Link>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>Thanks</Link>
+        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }} href='#'>About</Link>
+        <Link py='7px' _hover={{ color: 'white' }} href='#'>YouTube</Link>
+      </Stack>
+    </>
+  );
+}
+
 export function Footer() {
   return (
-    <Box bg='gray.900' p='40px 30px'>
+    <Box bg='gray.900' p='40px 0'>
       <Container maxW='container.md'>
-        <Stack isInline color='gray.400' fontWeight={600} spacing='30px'>
-          <Link _hover={{ color: 'white' }} href='#'>Roadmaps</Link>
-          <Link _hover={{ color: 'white' }} href='#'>Guides</Link>
-          <Link _hover={{ color: 'white' }} href='#'>Videos</Link>
-          <Link _hover={{ color: 'white' }} href='#'>Podcasts</Link>
-          <Link _hover={{ color: 'white' }} href='#'>About</Link>
-          <Link _hover={{ color: 'white' }} href='#'>YouTube</Link>
-        </Stack>
+        <NavigationLinks />
 
         <Box my='50px' maxW='500px'>
           <Flex spacing={0} alignItems='center' color='gray.400'>
