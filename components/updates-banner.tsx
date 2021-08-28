@@ -2,7 +2,7 @@ import { Box, Button, Container, Flex, Heading, Stack, Text } from '@chakra-ui/r
 
 export function UpdatesBanner() {
   return (
-    <Box borderTopWidth={1} mt='60px' pt={['35px', '40px', '70px']} pb={['45px', '45px', '80px']} textAlign='left' bg='gray.800'>
+    <Box borderTopWidth={1} mt='60px' pt={['40px', '40px', '70px']} pb={['40px', '45px', '80px']} textAlign='left' bg='gray.800'>
       <Container maxW='container.md'>
         <Heading color={'gray.100'} fontSize={['25px', '25px', '35px']} mb={['5px', '5px', '15px']}>Stay
           Informed</Heading>

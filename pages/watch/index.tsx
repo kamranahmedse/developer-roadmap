@@ -16,7 +16,7 @@ export default function Watch() {
           subtitle={'Graphical video demonstrations on development topics'}
         />
         <Container maxW='container.md' position='relative'>
-          <SimpleGrid columns={{ md: 2 }} mb='30px' spacing='15px'>
+          <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             <VideoGridItem
               title='Session Based Authentication'
               subtitle='Learn what the Session Based Authentication is, the pros and cons.'

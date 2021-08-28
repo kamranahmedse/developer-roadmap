@@ -8,19 +8,23 @@ import MdRenderer from '../components/md-renderer';
 
 function AboutHeader() {
   return (
-    <Box pt='70px' pb='55px' borderBottomWidth={1} mb='30px' textAlign='left' position='static' top='10px'>
+    <Box pt={['45px', '45px', '70px']} pb={['45px', '45px', '55px']} borderBottomWidth={1} mb='30px' textAlign='left' position='static'
+         top='10px'>
       <Container maxW='container.md' position='relative' textAlign='left'>
         <Flex alignItems='center'>
-          <Image src='/kamran.jpeg' h='170px' rounded='10px' mr='25px' />
+          <Image d={['none', 'none', 'block']} src='/kamran.jpeg' h='170px' rounded='10px' mr='25px' />
           <Box>
-            <Heading as='h1' color='black' fontSize='40px' fontWeight={700} mb='10px'>Hello, I am Kamran
-              Ahmed</Heading>
-            <Text fontSize='17px' color='gray.700' mb='10px'>
+            <Heading as='h1' color='black' fontSize={['35px', '35px', '40px']} fontWeight={700} mb='10px'>Hello, I am
+              Kamran Ahmed
+            </Heading>
+            <Text fontSize={['15px', '15px', '17px']} color='gray.700' mb='15px'>
               I created roadmap.sh to help developers find their path if they are confused and help them grow in
               their career.</Text>
 
-            <Stack isInline>
+            <Stack isInline flexDirection={['column', 'column', 'row']} spacing={0} shouldWrapChildren>
               <Button as={Link} bg='blue.500' color='white' size='sm'
+                      mr='10px'
+                      mb={['7px', '7px', 0]}
                       _hover={{ textDecoration: 'none', bg: 'blue.700' }} href='https://twitter.com/kamranahmedse'
                       arget='_blank'>
                 @kamranahmedse

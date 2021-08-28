@@ -1,4 +1,4 @@
-import { Box, Container, Stack } from '@chakra-ui/react';
+import { Box, Container, SimpleGrid, Stack } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { LinksList } from '../../components/links-list';
 import { LinksListItem } from '../../components/links-list-item';
@@ -18,7 +18,7 @@ export default function Guides() {
           subtitle={'Succinct graphical explanations to development related topics.'}
         />
         <Container maxW='container.md' position='relative'>
-          <Stack isInline mb='30px' spacing='15px'>
+          <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             <GuideGridItem
               title='Session Based Authentication'
               subtitle='Learn what the Session Based Authentication is, the pros and cons.'
@@ -31,7 +31,7 @@ export default function Guides() {
               date='June 25, 2021'
               colorIndex={1}
             />
-          </Stack>
+          </SimpleGrid>
 
           <LinksList>
             <LinksListItem title='Session based Authentication' badgeText='pro' subtitle='June 12, 2021' />

@@ -36,6 +36,7 @@ export default function Thanks() {
                      rounded='100%'
                      src='https://media.giphy.com/media/l0HUgXEoxsNZjZNq8/giphy.gif?cid=790b76114c74e11ed7ce8d65995b6893524407ed7b7748bc&rid=giphy.gif&ct=g'
                      ml='50px'
+                     d={['none', 'block']}
               />
             </Flex>
 

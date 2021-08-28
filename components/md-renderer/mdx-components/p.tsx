@@ -6,5 +6,5 @@ type EnrichedTextType = {
 }
 
 export default function EnrichedText(props: EnrichedTextType) {
-  return <Text lineHeight='27px' color='black' mb='18px'>{props.children}</Text>;
+  return <Text lineHeight='27px' fontSize='16px' color='black' mb='18px'>{props.children}</Text>;
 }

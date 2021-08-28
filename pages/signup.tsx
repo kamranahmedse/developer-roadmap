@@ -24,7 +24,7 @@ export default function SignUp() {
       <GlobalHeader />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
-          <SimpleGrid columns={2} spacing='15px' my='80px'>
+          <SimpleGrid columns={[1, 1, 2]} spacing='15px' my={['30px', '30px', '80px']}>
             <Box p='20px' rounded='5px' borderWidth={2}>
               <Box textAlign='left'>
                 <Heading mb='10px' fontSize='23px' fontWeight={700}>Monthly Updates</Heading>

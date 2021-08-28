@@ -27,11 +27,11 @@ function NavigationLinks() {
 
 export function Footer() {
   return (
-    <Box bg='gray.900' p='40px 0'>
+    <Box bg='gray.900' p={['25px 0', '25px 0', '40px 0']}>
       <Container maxW='container.md'>
         <NavigationLinks />
 
-        <Box my='50px' maxW='500px'>
+        <Box mt={['40px', '40px', '50px']} mb='40px' maxW='500px'>
           <Flex spacing={0} alignItems='center' color='gray.400'>
             <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
                   href='/'>
