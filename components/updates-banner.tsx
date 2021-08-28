@@ -1,4 +1,4 @@
-import { Box, Button, Container, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, Stack, Text } from '@chakra-ui/react';
 
 export function UpdatesBanner() {
   return (
@@ -8,8 +8,8 @@ export function UpdatesBanner() {
         <Text color='gray.400' lineHeight='26px' fontSize='16px' mb='20px'>Subscribe yourself to get updates, new
           guides, videos and roadmaps in your inbox.</Text>
 
-        <Stack isInline spacing='15px'>
-          <Box>
+        <Flex flexDirection={['column', 'column', 'row']}>
+          <Box mr='20px' mb={['15px', '15px', 0]}>
             <Button variant='outline' borderWidth={2} colorScheme='green' _hover={{ color: 'green.200' }}>
               Subscribe to Updates
             </Button>
@@ -21,7 +21,7 @@ export function UpdatesBanner() {
                                                                                                              fontWeight={600}>5$
               per month</Text></Text>
           </Box>
-        </Stack>
+        </Flex>
       </Container>
     </Box>
   );

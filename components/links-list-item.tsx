@@ -16,9 +16,10 @@ export function LinksListItem(props: LinksListItemProps) {
       fontSize='15px'
       py='9px'
       d='flex'
+      flexDirection={['column', 'row', 'row']}
       fontWeight={500}
       color='gray.600'
-      alignItems='center'
+      alignItems={['flex-start', 'center']}
       justifyContent={'space-between'}
       _hover={{
         textDecoration: 'none',
@@ -27,14 +28,16 @@ export function LinksListItem(props: LinksListItemProps) {
           transform: 'translateX(10px)'
         }
       }}
+      isTruncated
+      maxWidth='100%'
     >
       <Flex alignItems='center' className='list-item-title' transition={'200ms'}>
         {icon}
-        <Text as='span'>{title}</Text>
+        <Text maxWidth={'345px'} isTruncated as='span'>{title}</Text>
         {badgeText &&
         <Badge pos='relative' top='1px' variant='subtle' colorScheme='purple' ml='10px'>{badgeText}</Badge>}
       </Flex>
-      <Text as='span' fontSize='13px' color='gray.500'>{subtitle}</Text>
+      <Text mt={['4px', 0]} as='span' fontSize='12px' color='gray.500'>{subtitle}</Text>
     </Link>
   );
 }

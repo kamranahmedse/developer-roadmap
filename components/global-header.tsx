@@ -49,7 +49,7 @@ function DesktopMenuLinks() {
 
 function MobileMenuLinks() {
   return (
-    <Menu>
+    <Menu autoSelect={false}>
       <MenuButton
         d={['block', 'none', 'none']}
         as={HamburgerIcon}
@@ -59,9 +59,12 @@ function MobileMenuLinks() {
         cursor='pointer'
       />
       <MenuList py={'4px'} rounded='3px' minWidth='150px'>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px' color='gray.600'>Roadmaps</MenuItem>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px' color='gray.600'>Guides</MenuItem>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px' color='gray.600'>Videos</MenuItem>
+        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+                  color='gray.600'>Roadmaps</MenuItem>
+        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+                  color='gray.600'>Guides</MenuItem>
+        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+                  color='gray.600'>Videos</MenuItem>
         <MenuItem py='4px' borderColor='gray.100' fontSize='13px' color='gray.600'>Subscribe</MenuItem>
       </MenuList>
     </Menu>
@@ -73,17 +76,19 @@ export function GlobalHeader() {
     <Box bg='gray.900' p='20px 0'>
       <Container maxW='container.md'>
         <Flex justifyContent='space-between' alignItems='center'>
-          <Link w='100%'
-                d='flex'
-                href='/'
-                alignItems='center'
-                color='white'
-                fontWeight={600}
-                _hover={{ textDecoration: 'none' }}
-                fontSize='18px'>
-            <Image h='30px' w='30px' src='/logo.svg' mr='10px' />
-            <Text d={['none', 'none', 'block']} as='span'>roadmap.sh</Text>
-          </Link>
+          <Box>
+            <Link w='100%'
+                  d='flex'
+                  href='/'
+                  alignItems='center'
+                  color='white'
+                  fontWeight={600}
+                  _hover={{ textDecoration: 'none' }}
+                  fontSize='18px'>
+              <Image h='30px' w='30px' src='/logo.svg' mr='10px' />
+              <Text d={['none', 'none', 'block']} as='span'>roadmap.sh</Text>
+            </Link>
+          </Box>
           <DesktopMenuLinks />
           <MobileMenuLinks />
         </Flex>
