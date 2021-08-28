@@ -15,18 +15,19 @@ export default function Home() {
       <GlobalHeader />
       <Box>
         <Container maxW='container.md'>
-          <Box py='35px'>
-            <Heading fontSize='28px' mb='15px'>Hey there! 👋</Heading>
-            <Text fontSize='16px' mb='10px'>
+          <Box py={['23px', '23px', '35px']}>
+            <Heading fontSize={['22px', '22px', '28px']} mb={['8px', '8px', '15px']}>Hey there! 👋</Heading>
+            <Text fontSize={['14px', '14px', '16px']} mb='10px'>
               <Text fontWeight={500} as='span'>roadmap.sh</Text> is a community effort to create roadmaps, guides and
               other educational content
               to help guide the developers in picking up the path and guide their learnings.
             </Text>
 
-            <Text fontSize='16px'>We also have a <Link textDecoration={'underline'} href={'#'} fontWeight={600}>YouTube
+            <Text fontSize={['14px', '14px', '16px']}>We also have a <Link textDecoration={'underline'} href={'#'}
+                                                                           fontWeight={600}>YouTube
               channel</Link> which we hope you are going to love.</Text>
           </Box>
-          <SimpleGrid columns={{ xl: 3, md: 3, sm: 2, base: 1 }} spacing={['10px', '10px', '15px']}>
+          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']}>
             <HomeRoadmapItem colorIndex={0} title={'Frontend'}
                              subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
             <HomeRoadmapItem colorIndex={1} title={'Backend'}
@@ -45,8 +46,8 @@ export default function Home() {
 
       <Box>
         <Container maxW='container.md' position='relative'>
-          <Box pt='60px' mb='20px'>
-            <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
+          <Box pt='60px' mb={['10px', '15px', '20px']}>
+            <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Visual Guides</Heading>
           </Box>
 
           <LinksList>
@@ -73,25 +74,29 @@ export default function Home() {
           </Box>
 
           <LinksList>
-            <LinksListItem title='Transport Protocols: TCP vs UDP' subtitle='15 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='OSI Model Explained' subtitle='10 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='Creating a React App' badgeText='pro' subtitle='15 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='DOM vs Shadow DOM vs Virtual DOM' badgeText='pro' subtitle='15 minutes'
+            <LinksListItem hideSubtitleOnMobile title='Transport Protocols: TCP vs UDP' subtitle='15 minutes'
                            icon={<VideoIcon
                              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='Everything you need to know about HTTP caching' badgeText='pro' subtitle='10 minutes'
+            <LinksListItem hideSubtitleOnMobile title='OSI Model Explained' subtitle='10 minutes' icon={<VideoIcon
+              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem hideSubtitleOnMobile title='Creating a React App' badgeText='pro' subtitle='15 minutes'
                            icon={<VideoIcon
                              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='Content Delivery Networks' subtitle='5 minutes' icon={<VideoIcon
+            <LinksListItem hideSubtitleOnMobile title='DOM vs Shadow DOM vs Virtual DOM' badgeText='pro'
+                           subtitle='15 minutes'
+                           icon={<VideoIcon
+                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem hideSubtitleOnMobile title='Everything you need to know about HTTP caching' badgeText='pro'
+                           subtitle='10 minutes'
+                           icon={<VideoIcon
+                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
+            <LinksListItem hideSubtitleOnMobile title='Content Delivery Networks' subtitle='5 minutes' icon={<VideoIcon
               style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='Load Balancers in Depth' subtitle='15 minutes' icon={<VideoIcon
+            <LinksListItem hideSubtitleOnMobile title='Load Balancers in Depth' subtitle='15 minutes' icon={<VideoIcon
               style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='DNS and how does it work?' subtitle='2 minutes' icon={<VideoIcon
+            <LinksListItem hideSubtitleOnMobile title='DNS and how does it work?' subtitle='2 minutes' icon={<VideoIcon
               style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem title='JavaScript Fetch API' subtitle='22 minutes' icon={<VideoIcon
+            <LinksListItem hideSubtitleOnMobile title='JavaScript Fetch API' subtitle='22 minutes' icon={<VideoIcon
               style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
 
             <DimmedMore text={'View all Videos'} />

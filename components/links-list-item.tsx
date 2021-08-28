@@ -5,15 +5,16 @@ type LinksListItemProps = {
   title: string;
   subtitle: string;
   badgeText?: string;
-  icon?: React.ReactChild
+  icon?: React.ReactChild;
+  hideSubtitleOnMobile?: boolean;
 };
 
 export function LinksListItem(props: LinksListItemProps) {
-  const { title, subtitle, badgeText, icon } = props;
+  const { title, subtitle, badgeText, icon, hideSubtitleOnMobile = false } = props;
 
   return (
     <Link
-      fontSize='15px'
+      fontSize={['14px', '14px', '15px']}
       py='9px'
       d='flex'
       flexDirection={['column', 'row', 'row']}
@@ -37,7 +38,8 @@ export function LinksListItem(props: LinksListItemProps) {
         {badgeText &&
         <Badge pos='relative' top='1px' variant='subtle' colorScheme='purple' ml='10px'>{badgeText}</Badge>}
       </Flex>
-      <Text mt={['4px', 0]} as='span' fontSize='12px' color='gray.500'>{subtitle}</Text>
+      <Text d={[hideSubtitleOnMobile ? 'none' : 'inline', 'inline']} mt={['3px', 0]} as='span'
+            fontSize={['11px', '11px', '12px']} color='gray.500'>{subtitle}</Text>
     </Link>
   );
 }

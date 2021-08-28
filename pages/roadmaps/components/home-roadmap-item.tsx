@@ -39,8 +39,8 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
         </Tooltip>
       )}
 
-      <Heading fontSize='22px' mb='5px'>{title}</Heading>
-      <Text color='gray.200' fontSize='13px'>{subtitle}</Text>
+      <Heading fontSize={['17px', '17px', '22px']} mb='5px'>{title}</Heading>
+      <Text color='gray.200' fontSize={[ '13px']}>{subtitle}</Text>
     </Link>
   );
 }
