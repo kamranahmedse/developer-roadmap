@@ -16,7 +16,7 @@ export default function Roadmaps() {
           subtitle={'Step by step guides and paths to learn different tools or technologies'}
         />
         <Container maxW='container.md' position='relative'>
-          <SimpleGrid columns={{ md: 2 }} mb='30px' spacing='15px'>
+          <SimpleGrid columns={[1, 1, 2, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             <RoadmapGridItem
               colorIndex={0} title={'Frontend'}
               subtitle={'Step by step guide to becoming a frontend developer in 2021'}
