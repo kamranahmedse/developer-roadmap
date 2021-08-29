@@ -5,7 +5,8 @@ type RoadmapGridItemProps = {
   title: string;
   subtitle: string;
   isCommunity?: boolean;
-  colorIndex?: number
+  colorIndex?: number;
+  url: string;
 };
 
 const bgColorList = [
@@ -18,12 +19,12 @@ const bgColorList = [
 ];
 
 export function HomeRoadmapItem(props: RoadmapGridItemProps) {
-  const { title, subtitle, isCommunity, colorIndex = 0 } = props;
+  const { title, subtitle, isCommunity, colorIndex = 0, url } = props;
 
   return (
-    <Link
-      as={Box}
-      href={'#'}
+    <Box
+      as={Link}
+      href={url}
       _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }}
       flex={1}
       shadow='2xl'
@@ -40,7 +41,7 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
       )}
 
       <Heading fontSize={['17px', '17px', '22px']} mb='5px'>{title}</Heading>
-      <Text color='gray.200' fontSize={[ '13px']}>{subtitle}</Text>
-    </Link>
+      <Text color='gray.200' fontSize={['13px']}>{subtitle}</Text>
+    </Box>
   );
 }
