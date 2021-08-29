@@ -1,50 +1,61 @@
-import { Box, Button, Container, SimpleGrid, Stack } from '@chakra-ui/react';
+import { Box, Button, Container, Stack } from '@chakra-ui/react';
 import { DownloadIcon, EmailIcon } from '@chakra-ui/icons';
-import styled from 'styled-components';
-import Image from 'next/image';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { PageHeader } from '../../components/page-header';
+import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
+import MdRenderer from '../../components/md-renderer';
 
-const RoadmapBody = styled.div`
-  margin-bottom: 30px;
-  font-size: 15px;
+type RoadmapProps = {
+  roadmap: RoadmapType;
+};
 
-  h1 {
-    font-size: 32px;
-    font-weight: 700;
+function ImageRoadmap(props: RoadmapProps) {
+  const { roadmap } = props;
+  if (!roadmap.imagePath) {
+    return null;
   }
 
-  p {
-    line-height: 25px;
-    margin-bottom: 20px
+  return (
+    <Container maxW={'900px'} position='relative'>
+      <Box mb='30px'>
+        <img alt='Frontend Roadmap' src={roadmap.imagePath} />
+      </Box>
+    </Container>
+  );
+}
+
+function TextualRoadmap(props: RoadmapProps) {
+  const { roadmap } = props;
+  if (!roadmap.contentPath) {
+    return null;
   }
 
-  ul, ol {
-    margin: 0 0 20px 40px;
+  // Remove trailing slashes
+  const normalizedPath = roadmap.contentPath.replace(/^\//, '');
+  const RoadmapContent = require(`../../content/${normalizedPath}`).default;
 
-    li + li {
-      margin-top: 7px;
-    }
-  }
+  return (
+    <Container maxW={'container.md'} position='relative'>
+      <MdRenderer>
+        <RoadmapContent />
+      </MdRenderer>
+    </Container>
+  );
+}
 
-  img {
-    max-width: 100%;
-  }
-`;
-
-export default function Roadmap() {
-  const isImageOnly = true;
+export default function Roadmap(props: RoadmapProps) {
+  const { roadmap } = props;
 
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
       <Box mb='60px'>
         <PageHeader
-          title={'Frontend Developer'}
-          subtitle={'Step by step guide to becoming a modern frontend developer'}
+          title={ roadmap.title }
+          subtitle={ roadmap.description }
         >
           <Stack mt='20px' isInline>
             <Button size='xs' py='14px' px='10px' leftIcon={<DownloadIcon />} colorScheme='yellow' variant='solid'>
@@ -55,11 +66,9 @@ export default function Roadmap() {
             </Button>
           </Stack>
         </PageHeader>
-        <Container maxW={ isImageOnly ? '900px': 'container.md'} position='relative'>
-          <RoadmapBody>
-            <img alt='Frontend Roadmap' src='/roadmaps/frontend.png' />
-          </RoadmapBody>
-        </Container>
+
+        <ImageRoadmap roadmap={roadmap} />
+        <TextualRoadmap roadmap={roadmap} />
       </Box>
 
       <OpensourceBanner />
@@ -67,4 +76,38 @@ export default function Roadmap() {
       <Footer />
     </Box>
   );
+}
+
+type StaticPathItem = {
+  params: {
+    roadmap: string
+  }
+};
+
+export async function getStaticPaths() {
+  const roadmaps = getAllRoadmaps();
+  const paramsList: StaticPathItem[] = roadmaps.map(roadmap => ({
+    params: { 'roadmap': roadmap.id }
+  }));
+
+  return {
+    paths: paramsList,
+    fallback: false
+  };
+}
+
+type ContextType = {
+  params: {
+    roadmap: string
+  }
+};
+
+export async function getStaticProps(context: ContextType) {
+  const roadmapId: string = context?.params?.roadmap;
+
+  return {
+    props: {
+      roadmap: getRoadmapById(roadmapId)
+    }
+  };
 }

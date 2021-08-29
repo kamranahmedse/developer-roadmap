@@ -33,6 +33,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
     ...metaAcc,
     {
       ...roadmapMeta,
+      id: roadmapSlug,
       url: `/${roadmapSlug}`,
       contentPath: contentPath,
       resourcesPath: resourcesPath

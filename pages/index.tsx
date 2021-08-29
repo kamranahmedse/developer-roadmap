@@ -82,6 +82,7 @@ export default function Home(props: HomeProps) {
             {videos.map(video => (
               <LinksListItem
                 key={video.url}
+                badgeText={video.isPro ? 'PRO' : ''}
                 hideSubtitleOnMobile
                 title={video.title}
                 subtitle={video.duration}

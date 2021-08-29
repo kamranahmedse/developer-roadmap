@@ -16,7 +16,7 @@ export function PageHeader(props: PageHeaderProps) {
         <Heading
           as='h1'
           color='black'
-          fontSize={['25px', '25px', '35px']}
+          fontSize={['25px', '25px', '40px']}
           fontWeight={700}
           mb={['2px', '2px', '5px']}
         >

@@ -10,6 +10,7 @@ import { BadgeLink } from './badge-link';
 import Ul from './ul';
 import Li from './li';
 import PremiumBlock from './premium-block';
+import { Code } from '@chakra-ui/react';
 
 const MdxComponents = {
   p: P,
@@ -20,6 +21,7 @@ const MdxComponents = {
   table: Table,
   iframe: IFrame,
   img: Img,
+  code: Code,
   BadgeLink: BadgeLink,
   PremiumBlock: PremiumBlock,
   ul: Ul,

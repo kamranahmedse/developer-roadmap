@@ -21,6 +21,7 @@
     "date-fns": "^2.23.0",
     "framer-motion": "^4.1.17",
     "next": "^11.1.0",
+    "prism-themes": "^1.8.0",
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "styled-components": "^5.3.0"

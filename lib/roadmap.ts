@@ -20,14 +20,12 @@ export type RoadmapType = {
   contentPath?: string;
   resourcesPath: string;
   isCommunity: boolean;
+  id: string;
   url: string;
 };
 
-export function getRequestedRoadmap(req: NextApiRequest): RoadmapType | undefined {
-  // remove trailing slashes
-  const normalizedUrl = req.url?.replace(/\/$/, '') || '';
-
-  return (roadmaps as RoadmapType[]).find(roadmap => normalizedUrl.startsWith(roadmap.url));
+export function getRoadmapById(id: string): RoadmapType | undefined {
+  return (roadmaps as RoadmapType[]).find(roadmap => roadmap.id === id);
 }
 
 export function getAllRoadmaps(): RoadmapType[] {
