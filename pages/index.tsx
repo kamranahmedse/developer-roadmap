@@ -10,14 +10,16 @@ import { LinksList } from '../components/links-list';
 import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
 import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';
 import { getAllGuides, GuideType } from '../lib/guide';
+import { getAllVideos, VideoType } from '../lib/video';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
   guides: GuideType[];
+  videos: VideoType[];
 }
 
 export default function Home(props: HomeProps) {
-  const { roadmaps, guides } = props;
+  const { roadmaps, guides, videos } = props;
 
   return (
     <Box bg='white' minH='100vh'>
@@ -77,31 +79,24 @@ export default function Home(props: HomeProps) {
           </Box>
 
           <LinksList>
-            <LinksListItem hideSubtitleOnMobile title='Transport Protocols: TCP vs UDP' subtitle='15 minutes'
-                           icon={<VideoIcon
-                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='OSI Model Explained' subtitle='10 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='Creating a React App' badgeText='pro' subtitle='15 minutes'
-                           icon={<VideoIcon
-                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='DOM vs Shadow DOM vs Virtual DOM' badgeText='pro'
-                           subtitle='15 minutes'
-                           icon={<VideoIcon
-                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='Everything you need to know about HTTP caching' badgeText='pro'
-                           subtitle='10 minutes'
-                           icon={<VideoIcon
-                             style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='Content Delivery Networks' subtitle='5 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='Load Balancers in Depth' subtitle='15 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='DNS and how does it work?' subtitle='2 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-            <LinksListItem hideSubtitleOnMobile title='JavaScript Fetch API' subtitle='22 minutes' icon={<VideoIcon
-              style={{ marginRight: '7px', width: '18px', height: '18px', color: '#9c9c9c' }} />} />
-
+            {videos.map(video => (
+              <LinksListItem
+                key={video.url}
+                hideSubtitleOnMobile
+                title={video.title}
+                subtitle={video.duration}
+                icon={
+                  <VideoIcon
+                    style={{
+                      marginRight: '7px',
+                      width: '18px',
+                      height: '18px',
+                      color: '#9c9c9c'
+                    }}
+                  />
+                }
+              />
+            ))}
             <DimmedMore text={'View all Videos'} />
           </LinksList>
         </Container>
@@ -118,7 +113,8 @@ export async function getStaticProps() {
   return {
     props: {
       roadmaps: getFeaturedRoadmaps(),
-      guides: getAllGuides(10)
+      guides: getAllGuides(10),
+      videos: getAllVideos(10)
     }
   };
 }

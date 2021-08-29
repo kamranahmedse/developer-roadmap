@@ -5,7 +5,7 @@
     "url": "/guides/ci-cd",
     "fileName": "ci-cd",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-07-09T19:59:14.191Z",
     "createdAt": "2020-07-09T19:59:14.191Z"
   },
@@ -15,7 +15,7 @@
     "url": "/guides/sso",
     "fileName": "sso",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-07-01T19:59:14.191Z",
     "createdAt": "2020-07-01T19:59:14.191Z"
   },
@@ -25,7 +25,7 @@
     "url": "/guides/oauth",
     "fileName": "oauth",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-06-28T19:59:14.191Z",
     "createdAt": "2020-06-28T19:59:14.191Z"
   },
@@ -35,7 +35,7 @@
     "url": "/guides/jwt-authentication",
     "fileName": "jwt-authentication",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-06-20T19:59:14.191Z",
     "createdAt": "2020-06-20T19:59:14.191Z"
   },
@@ -45,7 +45,7 @@
     "url": "/guides/token-authentication",
     "fileName": "token-authentication",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-06-02T20:59:14.191Z",
     "createdAt": "2020-06-02T20:59:14.191Z"
   },
@@ -55,7 +55,7 @@
     "url": "/guides/session-authentication",
     "fileName": "session-authentication",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-05-26T20:59:14.191Z",
     "createdAt": "2020-05-26T20:59:14.191Z"
   },
@@ -65,7 +65,7 @@
     "url": "/guides/basic-authentication",
     "fileName": "basic-authentication",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-05-19T20:59:14.191Z",
     "createdAt": "2020-05-19T20:59:14.191Z"
   },
@@ -75,7 +75,7 @@
     "url": "/guides/character-encodings",
     "fileName": "character-encodings",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-05-14T20:59:14.191Z",
     "createdAt": "2020-05-14T20:59:14.191Z"
   },
@@ -85,7 +85,7 @@
     "url": "/guides/unfamiliar-codebase",
     "fileName": "unfamiliar-codebase",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-05-04T20:59:14.191Z",
     "createdAt": "2020-05-04T20:59:14.191Z"
   },
@@ -95,7 +95,7 @@
     "url": "/guides/why-build-it-and-they-will-come-wont-work-anymore",
     "fileName": "why-build-it-and-they-will-come-wont-work-anymore",
     "isPro": false,
-    "author": "spekulatius",
+    "authorUsername": "spekulatius",
     "updatedAt": "2020-05-04T12:59:14.191Z",
     "createdAt": "2020-05-04T12:59:14.191Z"
   },
@@ -105,7 +105,7 @@
     "url": "/guides/dhcp-in-one-picture",
     "fileName": "dhcp-in-one-picture",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-04-28T15:48:21.191Z",
     "createdAt": "2020-04-28T15:48:21.191Z"
   },
@@ -115,7 +115,7 @@
     "url": "/guides/ssl-tls-https-ssh",
     "fileName": "ssl-tls-https-ssh",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-04-22T15:48:21.191Z",
     "createdAt": "2020-04-22T15:48:21.191Z"
   },
@@ -125,7 +125,7 @@
     "url": "/guides/asymptotic-notation",
     "fileName": "asymptotic-notation",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-04-03T15:48:21.191Z",
     "createdAt": "2020-04-03T15:48:21.191Z"
   },
@@ -135,7 +135,7 @@
     "url": "/guides/big-o-notation",
     "fileName": "big-o-notation",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-03-15T15:48:21.191Z",
     "createdAt": "2020-03-15T15:48:21.191Z"
   },
@@ -145,7 +145,7 @@
     "url": "/guides/random-numbers",
     "fileName": "random-numbers",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-03-14T15:48:21.191Z",
     "createdAt": "2020-03-14T15:48:21.191Z"
   },
@@ -155,7 +155,7 @@
     "url": "/guides/scaling-databases",
     "fileName": "scaling-databases",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2020-02-18T15:48:21.191Z",
     "createdAt": "2020-02-18T15:48:21.191Z"
   },
@@ -165,7 +165,7 @@
     "url": "/guides/what-is-internet",
     "fileName": "what-is-internet",
     "isPro": false,
-    "author": "dmytrobol",
+    "authorUsername": "dmytrobol",
     "updatedAt": "2020-02-29T15:48:21.191Z",
     "createdAt": "2020-02-29T15:48:21.191Z"
   },
@@ -175,7 +175,7 @@
     "url": "/guides/torrent-client",
     "fileName": "torrent-client",
     "isPro": false,
-    "author": "jesse",
+    "authorUsername": "jesse",
     "updatedAt": "2020-01-17T15:48:21.191Z",
     "createdAt": "2020-01-17T15:48:21.191Z",
     "canonical": "https://blog.jse.li/posts/torrent/"
@@ -186,7 +186,7 @@
     "url": "/guides/levels-of-seniority",
     "fileName": "levels-of-seniority",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2019-12-03T12:13:00.860Z",
     "createdAt": "2019-12-03T12:13:00.860Z"
   },
@@ -196,7 +196,7 @@
     "url": "/guides/design-patterns-for-humans",
     "fileName": "design-patterns-for-humans",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2019-10-09T12:00:00.860Z",
     "createdAt": "2019-01-23T17:00:00.860Z"
   },
@@ -206,7 +206,7 @@
     "url": "/guides/journey-to-http2",
     "fileName": "journey-to-http2",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "createdAt": "2018-12-04T12:00:00.860Z",
     "updatedAt": "2018-12-04T12:00:00.860Z",
     "isDraft": true
@@ -217,7 +217,7 @@
     "url": "/guides/dns-in-one-picture",
     "fileName": "dns-in-one-picture",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "updatedAt": "2018-12-04T12:00:00.860Z",
     "createdAt": "2018-12-04T17:00:00.860Z"
   },
@@ -227,7 +227,7 @@
     "url": "/guides/http-caching",
     "fileName": "http-caching",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "createdAt": "2018-11-29T17:00:00.860Z",
     "updatedAt": "2018-11-29T17:00:00.860Z"
   },
@@ -237,7 +237,7 @@
     "url": "/guides/history-of-javascript",
     "fileName": "history-of-javascript",
     "isPro": false,
-    "author": "kamranahmedse",
+    "authorUsername": "kamranahmedse",
     "createdAt": "2017-10-28T17:00:00.860Z",
     "updatedAt": "2017-10-28T17:00:00.860Z"
   },
@@ -247,7 +247,7 @@
     "url": "/guides/proxy-servers",
     "fileName": "proxy-servers",
     "isPro": false,
-    "author": "ebrahimbharmal007",
+    "authorUsername": "ebrahimbharmal007",
     "createdAt": "2020-07-24T12:40:18",
     "updatedAt": "2020-07-24T12:40:18"
   }
