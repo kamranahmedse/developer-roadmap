@@ -18,6 +18,7 @@
     "@mdx-js/loader": "^1.6.22",
     "@next/mdx": "^11.1.0",
     "@svgr/webpack": "^5.5.0",
+    "date-fns": "^2.23.0",
     "framer-motion": "^4.1.17",
     "next": "^11.1.0",
     "react": "17.0.2",

@@ -9,13 +9,15 @@ import { VideoIcon } from '../icons/video-icon';
 import { LinksList } from '../components/links-list';
 import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
 import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';
+import { getAllGuides, GuideType } from '../lib/guide';
 
 type HomeProps = {
-  roadmaps: RoadmapType[]
+  roadmaps: RoadmapType[];
+  guides: GuideType[];
 }
 
 export default function Home(props: HomeProps) {
-  const { roadmaps } = props;
+  const { roadmaps, guides } = props;
 
   return (
     <Box bg='white' minH='100vh'>
@@ -55,17 +57,14 @@ export default function Home(props: HomeProps) {
           </Box>
 
           <LinksList>
-            <LinksListItem title='Session based Authentication' badgeText='pro' subtitle='June 12, 2021' />
-            <LinksListItem title='Session based Authentication' subtitle='June 12, 2021' />
-            <LinksListItem title='JSON Web Tokens' subtitle='June 05, 2021' />
-            <LinksListItem title='Token Based Authentication' subtitle='May 15, 2021' />
-            <LinksListItem title='Character Encodings' badgeText='pro' subtitle='March 06, 2021' />
-            <LinksListItem title='SSL vs TLS vs HTTPs vs SSH' subtitle='February 15, 2021' />
-            <LinksListItem title='Continuous Integration and Deployment' subtitle='February 15, 2021' />
-            <LinksListItem title='Authentication' subtitle='February 01, 2021' />
-            <LinksListItem title='DHCP in One Picture' subtitle='February 01, 2021' />
-            <LinksListItem title='Session Based Authentication' subtitle='February 01, 2021' />
-
+            {guides.map(guide => (
+              <LinksListItem
+                key={guide.url}
+                title={guide.title}
+                badgeText={guide.isPro ? 'PRO' : ''}
+                subtitle={guide.formattedUpdatedAt}
+              />
+            ))}
             <DimmedMore text='View all Guides' />
           </LinksList>
         </Container>
@@ -118,7 +117,8 @@ export default function Home(props: HomeProps) {
 export async function getStaticProps() {
   return {
     props: {
-      roadmaps: getFeaturedRoadmaps()
+      roadmaps: getFeaturedRoadmaps(),
+      guides: getAllGuides(10)
     }
   };
 }

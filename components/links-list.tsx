@@ -2,7 +2,7 @@ import React from 'react';
 import { StackDivider, VStack } from '@chakra-ui/react';
 
 type LinksListProps = {
-  children: React.ReactChild[]
+  children: React.ReactNode
 };
 
 export function LinksList(props: LinksListProps) {
