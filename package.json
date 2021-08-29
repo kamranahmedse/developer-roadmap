@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "meta:roadmaps": "node ./scripts/roadmaps-meta.js"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",

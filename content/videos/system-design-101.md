@@ -2,7 +2,7 @@ System Design is a broad topic. In this video, we discuss all the bits and piece
 in depth of each of the topic but this is to give you a high level overview of all the pieces involved. The topics
 covered in this video include:
 
-<PremiumBlock 
+<PremiumBlock
     title='Premium Video' 
     description='This content is available only for the paid members.' 
 />

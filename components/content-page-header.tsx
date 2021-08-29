@@ -13,11 +13,13 @@ export function ContentPageHeader(props: GuideHeaderProps) {
     <Box pt={['35px', '35px', '70px']} pb={['35px', '35px', '55px']} borderBottomWidth={1} mb='30px'>
       <Container maxW='container.md' position='relative' textAlign={['left', 'left', 'center']}>
         <Flex alignItems='center' justifyContent={['flex-start', 'flex-start', 'center']} fontSize={['12px', '12px', '14px']}>
-          <Link href='#' d='flex' alignItems='center' fontWeight={600} color='gray.500'>
+
+          <Link d={['none', 'flex', 'flex']} href='#' alignItems='center' fontWeight={600} color='gray.500'>
             <Image mr='7px' w='22px' src='https://github.com/kamranahmedse.png' />
             Kamran Ahmed
           </Link>
-          <Text mx='7px' color='gray.500' as='span'>&middot;</Text>
+          <Text d={['none', 'inline', 'inline']} mx='7px' color='gray.500' as='span'>&middot;</Text>
+
           <Text color='gray.500' as='span'>Monday, May 4, 2021</Text>
           <Text d={['none', 'none', 'inline']} mx='7px' color='gray.500' as='span'>&middot;</Text>
           <Link d={['none', 'none', 'inline']} color='blue.500' fontWeight={500} href='#'>Improve this Guide</Link>
