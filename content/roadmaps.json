@@ -29,7 +29,8 @@
     },
     "title": "Frontend Developer",
     "description": "Step by step guide to becoming a modern frontend developer",
-    "featuredDescription": "Step by step guide to becoming a modern frontend developer in 2021",
+    "featuredTitle": "Frontend",
+    "featuredDescription": "Step by step guide to becoming a frontend developer in 2021",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -69,7 +70,8 @@
     },
     "title": "Backend Developer",
     "description": "Step by step guide to becoming a modern backend developer",
-    "featuredDescription": "Step by step guide to becoming a modern backend developer in 2021",
+    "featuredTitle": "Backend",
+    "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
     "featured": true,
     "imagePath": "/roadmaps/backend.png",
     "resourcesPath": "/roadmaps/2-backend/resources.md",
@@ -103,7 +105,8 @@
     },
     "title": "DevOps Roadmap",
     "description": "Step by step guide for DevOps or any other Operations Role",
-    "featuredDescription": "Step by step guide to become an SRE or for any operations role in 2021",
+    "featuredTitle": "DevOps",
+    "featuredDescription": "Step by step guide for DevOps or operations role in 2021",
     "featured": true,
     "imagePath": "/roadmaps/devops.png",
     "resourcesPath": "/roadmaps/3-devops/resources.md",
@@ -120,30 +123,31 @@
   },
   {
     "seo": {
-      "title": "Android Developer Roadmap: Learn to become an Android developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "title": "React Developer Roadmap: Learn to become a React developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
-        "guide to becoming an android developer",
-        "android developer roadmap",
-        "android roadmap",
-        "become android developer",
-        "android developer skills",
-        "android skills test",
-        "skills for android development",
-        "learn android development",
-        "what is android",
-        "android quiz",
-        "android interview questions"
+        "guide to becoming a react developer",
+        "react developer roadmap",
+        "react roadmap",
+        "become react developer",
+        "react developer skills",
+        "react skills test",
+        "skills for react development",
+        "learn react development",
+        "what is react",
+        "react quiz",
+        "react interview questions"
       ]
     },
-    "title": "Android Developer",
-    "description": "Step by step guide to becoming an Android developer",
-    "featuredDescription": "Step by step guide to becoming a modern Android Developer in 2021",
-    "isTextHeavy": true,
-    "communityResource": true,
+    "title": "React Developer",
+    "description": "Everything that is there to learn about React and the ecosystem in 2021.",
+    "featuredTitle": "React",
+    "featuredDescription": "Step by step guide to become a React Developer in 2021",
+    "isTextHeavy": false,
+    "isCommunity": false,
     "featured": true,
-    "contentPath": "/roadmaps/4-android/landscape.md",
-    "resourcesPath": "/roadmaps/4-android/resources.md",
+    "contentPath": "/roadmaps/4-react/landscape.md",
+    "resourcesPath": "/roadmaps/4-react/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -153,7 +157,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "url": "/android"
+    "url": "/react"
   },
   {
     "seo": {
@@ -182,46 +186,48 @@
     },
     "title": "PostgreSQL DBA",
     "description": "Step by step guide to becoming a modern PostgreSQL DBA",
-    "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2021",
+    "featuredTitle": "DBA",
+    "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
     "contentPath": "/roadmaps/5-postgresql-dba/landscape.md",
     "resourcesPath": "/roadmaps/5-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
     },
-    "communityResource": true,
+    "isCommunity": true,
     "isTextHeavy": true,
-    "featured": false,
+    "featured": true,
     "detailed": false,
     "versions": [],
     "url": "/postgresql-dba"
   },
   {
     "seo": {
-      "title": "React Developer Roadmap: Learn to become a React developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "title": "Android Developer Roadmap: Learn to become an Android developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
-        "guide to becoming a react developer",
-        "react developer roadmap",
-        "react roadmap",
-        "become react developer",
-        "react developer skills",
-        "react skills test",
-        "skills for react development",
-        "learn react development",
-        "what is react",
-        "react quiz",
-        "react interview questions"
+        "guide to becoming an android developer",
+        "android developer roadmap",
+        "android roadmap",
+        "become android developer",
+        "android developer skills",
+        "android skills test",
+        "skills for android development",
+        "learn android development",
+        "what is android",
+        "android quiz",
+        "android interview questions"
       ]
     },
-    "title": "React Developer",
-    "description": "Everything that is there to learn about React and the ecosystem in 2021.",
-    "featuredDescription": "Everything that is there to learn about React and the ecosystem in 2021.",
-    "isTextHeavy": false,
-    "communityResource": false,
+    "title": "Android Developer",
+    "description": "Step by step guide to becoming an Android developer",
+    "featuredTitle": "Android",
+    "featuredDescription": "Step by step guide to becoming an Android Developer in 2021",
+    "isTextHeavy": true,
+    "isCommunity": true,
     "featured": true,
-    "contentPath": "/roadmaps/6-react/landscape.md",
-    "resourcesPath": "/roadmaps/6-react/resources.md",
+    "contentPath": "/roadmaps/6-android/landscape.md",
+    "resourcesPath": "/roadmaps/6-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -231,7 +237,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "url": "/react"
+    "url": "/android"
   },
   {
     "seo": {
@@ -254,6 +260,7 @@
     },
     "title": "QA Engineer",
     "description": "Steps to follow in order to become a modern QA Engineer in 2021",
+    "featuredTitle": "QA",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
     "upcoming": true,
     "contentPath": "/roadmaps/7-qa/landscape.md",

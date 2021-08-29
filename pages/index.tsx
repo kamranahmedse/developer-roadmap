@@ -8,8 +8,15 @@ import { LinksListItem } from '../components/links-list-item';
 import { VideoIcon } from '../icons/video-icon';
 import { LinksList } from '../components/links-list';
 import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
+import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';
 
-export default function Home() {
+type HomeProps = {
+  roadmaps: RoadmapType[]
+}
+
+export default function Home(props: HomeProps) {
+  const { roadmaps } = props;
+
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
@@ -28,18 +35,15 @@ export default function Home() {
               channel</Link> which we hope you are going to love.</Text>
           </Box>
           <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']}>
-            <HomeRoadmapItem colorIndex={0} title={'Frontend'}
-                             subtitle={'Step by step guide to becoming a frontend developer in 2021'} />
-            <HomeRoadmapItem colorIndex={1} title={'Backend'}
-                             subtitle={'Step by step guide to becoming a backend developer in 2021'} />
-            <HomeRoadmapItem colorIndex={2} title={'DevOps'}
-                             subtitle={'Step by step guide for DevOps or Operations role in 2021'} />
-            <HomeRoadmapItem colorIndex={3} title={'React'}
-                             subtitle={'Step by step guide to become a React Developer in 2021'} />
-            <HomeRoadmapItem colorIndex={4} title={'DBA'}
-                             subtitle={'Step by step guide to become a PostgreSQL DBA in 2021'} isCommunity />
-            <HomeRoadmapItem colorIndex={5} title={'Android'}
-                             subtitle={'Step by step guide to become an Android Developer in 2021'} isCommunity />
+            {roadmaps.map((roadmap: RoadmapType, counter: number) => (
+              <HomeRoadmapItem
+                key={roadmap.url}
+                colorIndex={counter}
+                title={roadmap.featuredTitle}
+                isCommunity={roadmap.isCommunity}
+                subtitle={roadmap.featuredDescription}
+              />
+            ))}
           </SimpleGrid>
         </Container>
       </Box>
@@ -109,4 +113,12 @@ export default function Home() {
       <Footer />
     </Box>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      roadmaps: getFeaturedRoadmaps()
+    }
+  };
 }

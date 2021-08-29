@@ -25,16 +25,17 @@
   },
   "title": "PostgreSQL DBA",
   "description": "Step by step guide to becoming a modern PostgreSQL DBA",
-  "featuredDescription": "Step by step guide to becoming a modern PostgreSQL DBA in 2021",
+  "featuredTitle": "DBA",
+  "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Alexey Lesovsky",
     "url": "https://github.com/lesovsky"
   },
-  "communityResource": true,
+  "isCommunity": true,
   "isTextHeavy": true,
-  "featured": false,
+  "featured": true,
   "detailed": false,
   "versions": []
 }
