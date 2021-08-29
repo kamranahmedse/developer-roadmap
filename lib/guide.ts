@@ -16,7 +16,7 @@ export type GuideType = {
   formattedUpdatedAt: string;
 };
 
-export function getAllGuides(limit: number = undefined): GuideType[] {
+export function getAllGuides(limit: number = 0): GuideType[] {
   return (guides as GuideType[])
     .filter(guide => !guide.isDraft)
     .sort((a, b) => (new Date(b.updatedAt) as any) - (new Date(a.updatedAt) as any))

@@ -1,16 +1,6 @@
 [
   {
-    "title": "WebStorm — Project History",
-    "description": "Learn how to peek through the history of any git repository to learn how it grew.",
-    "url": "/guides/project-history",
-    "fileName": "project-history",
-    "isPro": false,
-    "author": "kamranahmedse",
-    "updatedAt": "2020-07-16T19:59:14.191Z",
-    "createdAt": "2020-07-16T19:59:14.191Z"
-  },
-  {
-    "title": "CI and CD",
+    "title": "What is CI and CD?",
     "description": "Learn the basics of CI/CD and how to implement that with GitHub Actions.",
     "url": "/guides/ci-cd",
     "fileName": "ci-cd",
