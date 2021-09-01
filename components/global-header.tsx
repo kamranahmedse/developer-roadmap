@@ -42,7 +42,7 @@ function DesktopMenuLinks() {
 
       <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
             _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
-            fontWeight={500} href={'#'}>Subscribe</Link>
+            fontWeight={500} href={'/signup'}>Subscribe</Link>
     </Stack>
   );
 }
@@ -59,13 +59,14 @@ function MobileMenuLinks() {
         cursor='pointer'
       />
       <MenuList py={'4px'} rounded='3px' minWidth='150px'>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+        <MenuItem href={'/roadmaps'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
                   color='gray.600'>Roadmaps</MenuItem>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+        <MenuItem href={'/guides'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
                   color='gray.600'>Guides</MenuItem>
-        <MenuItem py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
+        <MenuItem href={'/watch'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
                   color='gray.600'>Videos</MenuItem>
-        <MenuItem py='4px' borderColor='gray.100' fontSize='13px' color='gray.600'>Subscribe</MenuItem>
+        <MenuItem href='/signup' as={Link} py='4px' borderColor='gray.100' fontSize='13px'
+                  color='gray.600'>Subscribe</MenuItem>
       </MenuList>
     </Menu>
   );

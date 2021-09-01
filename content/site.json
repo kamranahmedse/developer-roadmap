@@ -9,7 +9,10 @@
   "logoSquare": "/brand-square.png",
   "url": {
     "web": "https://roadmap.sh",
+    "twitter": "https://twitter.com/kamranahmedse",
+    "youtube": "https://youtube.com/theroadmap?sub_confirmation=1",
     "repo": "https://github.com/kamranahmedse/roadmap.sh",
+    "sponsor": "https://github.com/sponsors/kamranahmedse",
     "repoData": "https://github.com/kamranahmedse/roadmap.sh/tree/master/content",
     "addGuide": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/guide.md",
     "addRoadmap": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/roadmap.md",

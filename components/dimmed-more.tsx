@@ -2,10 +2,11 @@ import { Box, Link, Text } from '@chakra-ui/react';
 
 type DimmedMoreProps = {
   text: string;
+  href: string;
 };
 
 export function DimmedMore(props: DimmedMoreProps) {
-  const { text } = props;
+  const { text, href } = props;
 
   return (
     <Box position='relative' textAlign='center' bottom='20px'>
@@ -25,7 +26,7 @@ export function DimmedMore(props: DimmedMoreProps) {
         bg='green.600'
         color='white'
         p='7px 20px'
-        href={'#'}
+        href={href}
         fontWeight={800}
         fontSize='11px'
         textTransform='uppercase'

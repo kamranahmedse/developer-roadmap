@@ -11,6 +11,7 @@ import { HomeRoadmapItem } from './roadmaps/components/home-roadmap-item';
 import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';
 import { getAllGuides, GuideType } from '../lib/guide';
 import { getAllVideos, VideoType } from '../lib/video';
+import siteConfig from '../content/site.json';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -34,7 +35,9 @@ export default function Home(props: HomeProps) {
               to help guide the developers in picking up the path and guide their learnings.
             </Text>
 
-            <Text fontSize={['14px', '14px', '16px']}>We also have a <Link textDecoration={'underline'} href={'#'}
+            <Text fontSize={['14px', '14px', '16px']}>We also have a <Link textDecoration={'underline'}
+                                                                           href={siteConfig.url.youtube}
+                                                                           target='_blank'
                                                                            fontWeight={600}>YouTube
               channel</Link> which we hope you are going to love.</Text>
           </Box>
@@ -68,7 +71,7 @@ export default function Home(props: HomeProps) {
                 subtitle={guide.formattedUpdatedAt}
               />
             ))}
-            <DimmedMore text='View all Guides' />
+            <DimmedMore href={'/guides'} text='View all Guides' />
           </LinksList>
         </Container>
       </Box>
@@ -99,7 +102,7 @@ export default function Home(props: HomeProps) {
                 }
               />
             ))}
-            <DimmedMore text={'View all Videos'} />
+            <DimmedMore href='/watch' text={'View all Videos'} />
           </LinksList>
         </Container>
       </Box>
