@@ -1,6 +1,7 @@
 import siteConfig from 'content/site';
 import { FooterWrap } from './style.js';
 import './carbon.scss';
+import { CustomAd } from "./custom-ad";
 
 const PageFooter = () => (
   <FooterWrap className="border-top">
@@ -54,9 +55,10 @@ const PageFooter = () => (
       </div>
     </div>
 
+    <CustomAd />
 
     {/* Do not show on local */}
-    { process.env.GA_SECRET && (
+    { process.env.GA_SECRET && false && (
       <>
         <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CE7DLK3Y&placement=roadmapsh" id="_carbonads_js"></script>
         {/*<div id="codefund"></div>*/}
