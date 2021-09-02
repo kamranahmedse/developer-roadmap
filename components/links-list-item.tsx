@@ -2,6 +2,7 @@ import React from 'react';
 import { Badge, Flex, Link, Text } from '@chakra-ui/react';
 
 type LinksListItemProps = {
+  href: string;
   title: string;
   subtitle: string;
   badgeText?: string;
@@ -10,10 +11,11 @@ type LinksListItemProps = {
 };
 
 export function LinksListItem(props: LinksListItemProps) {
-  const { title, subtitle, badgeText, icon, hideSubtitleOnMobile = false } = props;
+  const { title, subtitle, badgeText, icon, hideSubtitleOnMobile = false, href } = props;
 
   return (
     <Link
+      href={href}
       fontSize={['14px', '14px', '15px']}
       py='9px'
       d='flex'

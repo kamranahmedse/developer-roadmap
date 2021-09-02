@@ -66,6 +66,7 @@ export default function Home(props: HomeProps) {
             {guides.map(guide => (
               <LinksListItem
                 key={guide.url}
+                href={guide.url}
                 title={guide.title}
                 badgeText={guide.isPro ? 'PRO' : ''}
                 subtitle={guide.formattedUpdatedAt}
