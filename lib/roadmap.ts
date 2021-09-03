@@ -1,4 +1,3 @@
-import { NextApiRequest } from 'next';
 import roadmaps from '../content/roadmaps.json';
 
 export type RoadmapType = {

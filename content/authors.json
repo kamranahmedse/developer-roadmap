@@ -37,6 +37,7 @@
   {
     "username": "lesovsky",
     "name": "Alexey Lesovsky",
-    "bio": "Linux system administrator and PostgreSQL DBA at DataEgret."
+    "bio": "Linux system administrator and PostgreSQL DBA at DataEgret.",
+    "picture": "/authors/lesovsky.jpeg"
   }
 ]

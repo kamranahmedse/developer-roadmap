@@ -5,17 +5,34 @@ import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
+import { getAllGuides, getGuideById, GuideType } from '../../lib/guide';
+import siteConfig from '../../content/site.json';
 
-export default function Guide() {
-  const GuideContent = require(`../../content/guides/build-it.md`).default;
+type GuideProps = {
+  guide: GuideType;
+};
+
+export default function Guide(props: GuideProps) {
+  const { guide } = props;
+  const GuideContent = require(`../../content/guides/${guide.fileName}`).default;
 
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
       <Box mb='60px'>
         <ContentPageHeader
-          title={'Build it and they will come?'}
-          subtitle={'Why “build it and they will come” alone won’t work anymore'}
+          title={guide.title}
+          subtitle={guide.description}
+          formattedDate={guide.formattedUpdatedAt}
+          author={{
+            twitter: guide?.author?.twitter!,
+            picture: guide?.author?.picture!,
+            name: guide?.author?.name!
+          }}
+          subLink={{
+            text: 'Improve this Guide',
+            url: `${siteConfig.url.repo}/tree/master/content/guides/${guide.fileName}`
+          }}
         />
         <Container maxW={'container.md'} position='relative'>
           <MdRenderer>
@@ -29,4 +46,38 @@ export default function Guide() {
       <Footer />
     </Box>
   );
+}
+
+type StaticPathItem = {
+  params: {
+    guide: string
+  }
+};
+
+export async function getStaticPaths() {
+  const guides = getAllGuides();
+  const paramsList: StaticPathItem[] = guides.map(guide => ({
+    params: { 'guide': guide.id }
+  }));
+
+  return {
+    paths: paramsList,
+    fallback: false
+  };
+}
+
+type ContextType = {
+  params: {
+    guide: string
+  }
+};
+
+export async function getStaticProps(context: ContextType) {
+  const guideId: string = context?.params?.guide;
+
+  return {
+    props: {
+      guide: getGuideById(guideId)
+    }
+  };
 }
