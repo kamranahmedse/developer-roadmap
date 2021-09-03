@@ -37,7 +37,7 @@
   },
   {
     "id": "freeze-seal-js",
-    "title": "Freeze and Seal Objects in JavaScript",
+    "title": "Freeze and Seal in JavaScript",
     "description": "Learn what is OSI Model and the different layers involved.",
     "url": "/watch/freeze-and-seal-objects-in-javascript",
     "fileName": "freeze-seal-js.md",
@@ -49,7 +49,7 @@
   },
   {
     "id": "http-caching",
-    "title": "Everything you need to know about HTTP Caching",
+    "title": "All about HTTP Caching",
     "description": "Learn what is HTTP caching, places for caching and different caching headers.",
     "url": "/watch/all-about-http-caching",
     "fileName": "http-caching.md",
@@ -157,7 +157,7 @@
   },
   {
     "id": "how-to-use-github-actions",
-    "title": "Automate your workflows with GitHub Actions",
+    "title": "Automate with GitHub Actions",
     "description": "Learn how to implement CI/CD with GitHub Actions",
     "url": "/watch/how-to-use-github-actions",
     "fileName": "how-to-use-github-actions.md",
@@ -193,7 +193,7 @@
   },
   {
     "id": "what-is-dom-shadow-dom-virtual-dom",
-    "title": "What is DOM, Shadow DOM and Virtual DOM?",
+    "title": "DOM, Shadow DOM, Virtual DOM",
     "description": "Learn what is DOM, Shadow DOM and Virtual DOM and how they work.",
     "url": "/watch/what-is-dom-shadow-dom-virtual-dom",
     "fileName": "what-is-dom-shadow-dom-virtual-dom.md",
@@ -217,7 +217,7 @@
   },
   {
     "id": "arrays-and-objects-in-javascript",
-    "title": "Built-in Methods for Arrays and Objects in JavaScript",
+    "title": "Arrays and Objects in JavaScript",
     "description": "Learn how to manipulate arrays and objects in JavaScript.",
     "url": "/watch/arrays-and-objects-in-javascript",
     "fileName": "arrays-and-objects-in-javascript.md",
