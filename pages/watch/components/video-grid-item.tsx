@@ -1,6 +1,7 @@
 import { Badge, Box, Heading, Link, Text } from '@chakra-ui/react';
 
 type VideoGridItemProps = {
+  href: string;
   title: string;
   subtitle: string;
   date: string;
@@ -52,10 +53,10 @@ const bgColorList = [
 ];
 
 export function VideoGridItem(props: VideoGridItemProps) {
-  const { title, subtitle, date, isNew = false, isPro = false, colorIndex = 0 } = props;
+  const { title, subtitle, date, isNew = false, isPro = false, colorIndex = 0, href } = props;
 
   return (
-    <Link _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Box} href='#' shadow='xl' p='20px'
+    <Box _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Link} href={ href } shadow='xl' p='20px'
           rounded='10px' bg={bgColorList[colorIndex] ?? bgColorList[0]} flex={1}>
       <Text mb='7px' fontSize='12px' color='gray.400'>
         {isNew && <Badge colorScheme={'yellow'} mr='10px'>New</Badge>}
@@ -64,6 +65,6 @@ export function VideoGridItem(props: VideoGridItemProps) {
       </Text>
       <Heading color='white' mb={'6px'} fontSize='20px' lineHeight={'28px'}>{title}</Heading>
       <Text color='gray.300' fontSize='14px'>{subtitle}</Text>
-    </Link>
+    </Box>
   );
 }
