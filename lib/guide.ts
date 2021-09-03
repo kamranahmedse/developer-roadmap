@@ -6,8 +6,6 @@ export type GuideType = {
   id: string;
   title: string;
   description: string;
-  url: string;
-  fileName: string;
   isPro: boolean;
   isDraft: boolean;
   createdAt: string;

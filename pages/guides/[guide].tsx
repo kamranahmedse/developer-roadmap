@@ -14,7 +14,7 @@ type GuideProps = {
 
 export default function Guide(props: GuideProps) {
   const { guide } = props;
-  const GuideContent = require(`../../content/guides/${guide.fileName}`).default;
+  const GuideContent = require(`../../content/guides/${guide.id}.md`).default;
 
   return (
     <Box bg='white' minH='100vh'>
@@ -31,7 +31,7 @@ export default function Guide(props: GuideProps) {
           }}
           subLink={{
             text: 'Improve this Guide',
-            url: `${siteConfig.url.repo}/tree/master/content/guides/${guide.fileName}`
+            url: `${siteConfig.url.repo}/tree/master/content/guides/${guide.id}.md`
           }}
         />
         <Container maxW={'container.md'} position='relative'>

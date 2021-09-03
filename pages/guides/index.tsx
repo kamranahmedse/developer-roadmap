@@ -31,8 +31,8 @@ export default function Guides(props: GuidesProps) {
           <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             {recentGuides.map((recentGuide, counter) => (
               <GuideGridItem
-                href={recentGuide.url}
                 key={recentGuide.id}
+                href={`/guides/${recentGuide.id}`}
                 title={recentGuide.title}
                 subtitle={recentGuide.description}
                 date={recentGuide.formattedUpdatedAt!}
@@ -45,7 +45,7 @@ export default function Guides(props: GuidesProps) {
           <LinksList>
             {oldGuides.map(oldGuide => (
               <LinksListItem
-                href={oldGuide.url}
+                href={`/guides/${oldGuide.id}`}
                 key={oldGuide.id}
                 title={oldGuide.title}
                 badgeText={oldGuide.isPro ? 'PRO' : ''}
