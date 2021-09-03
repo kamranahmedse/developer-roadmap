@@ -25,12 +25,13 @@ export default function Guides(props: GuidesProps) {
       <Box mb='60px'>
         <PageHeader
           title={'Visual Guides'}
-          subtitle={'Succinct graphical explanations to development related topics.'}
+          subtitle={'Succinct graphical explanations to engineering topics.'}
         />
         <Container maxW='container.md' position='relative'>
           <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             {recentGuides.map((recentGuide, counter) => (
               <GuideGridItem
+                href={recentGuide.url}
                 key={recentGuide.id}
                 title={recentGuide.title}
                 subtitle={recentGuide.description}

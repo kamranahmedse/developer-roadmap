@@ -11,12 +11,12 @@ export function PageHeader(props: PageHeaderProps) {
   const { title, subtitle, children } = props;
 
   return (
-    <Box pt={['20px', '20px', '45px']} pb={['15px', '15px', '30px']} borderBottomWidth={1} mb='30px'>
+    <Box pt={['25px', '20px', '45px']} pb={['20px', '15px', '30px']} borderBottomWidth={1} mb='30px'>
       <Container maxW='container.md' position='relative'>
         <Heading
           as='h1'
           color='black'
-          fontSize={['25px', '25px', '40px']}
+          fontSize={['33px', '33px', '40px']}
           fontWeight={700}
           mb={['2px', '2px', '5px']}
         >

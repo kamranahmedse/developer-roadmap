@@ -1,17 +1,7 @@
-import {
-  Box,
-  Container,
-  Flex,
-  IconButton,
-  Image,
-  Link,
-  Menu,
-  MenuButton, MenuItem,
-  MenuList,
-  Stack,
-  Text
-} from '@chakra-ui/react';
+import { Box, CloseButton, Container, Flex, IconButton, Image, Link, Stack, Text } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
+import { useState } from 'react';
+import siteConfig from '../content/site.json';
 
 type MenuLinkProps = {
   text: string;
@@ -48,27 +38,49 @@ function DesktopMenuLinks() {
 }
 
 function MobileMenuLinks() {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <Menu autoSelect={false}>
-      <MenuButton
+    <>
+      <IconButton
+        rounded='5px'
+        padding={0}
+        aria-label={'Menu'}
         d={['block', 'none', 'none']}
-        as={HamburgerIcon}
-        aria-label='Options'
-        variant='outline'
-        color='white' w='22px' height='22px'
+        icon={<HamburgerIcon color='white' w='25px' height='25px' />}
+        color='white'
         cursor='pointer'
+        h='auto'
+        bg='transparent'
+        _hover={{ bg: 'transparent' }}
+        _active={{ bg: 'transparent' }}
+        _focus={{ bg: 'transparent' }}
+        onClick={() => setIsOpen(true)}
       />
-      <MenuList py={'4px'} rounded='3px' minWidth='150px'>
-        <MenuItem href={'/roadmaps'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
-                  color='gray.600'>Roadmaps</MenuItem>
-        <MenuItem href={'/guides'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
-                  color='gray.600'>Guides</MenuItem>
-        <MenuItem href={'/watch'} as={Link} py='4px' borderColor='gray.100' borderBottomWidth={1} fontSize='13px'
-                  color='gray.600'>Videos</MenuItem>
-        <MenuItem href='/signup' as={Link} py='4px' borderColor='gray.100' fontSize='13px'
-                  color='gray.600'>Subscribe</MenuItem>
-      </MenuList>
-    </Menu>
+
+      {isOpen && (
+        <Stack color='gray.100'
+               fontSize={['22px', '22px', '22px', '32px']}
+               alignItems='center'
+               justifyContent='center'
+               pos='fixed'
+               left={0}
+               right={0}
+               bottom={0}
+               top={0}
+               bg='gray.900'
+               spacing='12px'
+               zIndex={1}
+        >
+          <Link href='/roadmaps'>Roadmaps</Link>
+          <Link href='/guides'>Guides</Link>
+          <Link href='/watch'>Videos</Link>
+          <Link target='_blank' href={siteConfig.url.youtube}>YouTube</Link>
+          <Link href='/signup'>Subscribe</Link>
+          <CloseButton onClick={() => setIsOpen(false)} pos='fixed' top='3px' right='15px' size='lg' />
+        </Stack>
+      )}
+    </>
   );
 }
 
