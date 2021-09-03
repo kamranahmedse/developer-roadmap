@@ -69,7 +69,7 @@ export default function Home(props: HomeProps) {
                 href={guide.url}
                 title={guide.title}
                 badgeText={guide.isPro ? 'PRO' : ''}
-                subtitle={guide.formattedUpdatedAt}
+                subtitle={guide.formattedUpdatedAt!}
               />
             ))}
             <DimmedMore href={'/guides'} text='View all Guides' />
@@ -87,7 +87,7 @@ export default function Home(props: HomeProps) {
             {videos.map(video => (
               <LinksListItem
                 key={video.id}
-                href={video.url}
+                href={`/watch/${video.id}`}
                 badgeText={video.isPro ? 'PRO' : ''}
                 hideSubtitleOnMobile
                 title={video.title}

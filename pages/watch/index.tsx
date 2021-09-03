@@ -26,7 +26,7 @@ export default function Watch(props: VideosProps) {
           <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
             {videos.map((video, counter) => (
               <VideoGridItem
-                href={video.url}
+                href={`/watch/${video.id}`}
                 key={video.id}
                 title={video.title}
                 subtitle={video.description}

@@ -6,8 +6,6 @@ export type VideoType = {
   id: string;
   title: string;
   description: string;
-  url: string;
-  fileName: string;
   isPro: boolean;
   duration: string;
   createdAt: string;
