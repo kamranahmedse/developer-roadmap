@@ -23,10 +23,10 @@ export default function Video(props: VideoProps) {
           title={video.title}
           subtitle={video.description}
           formattedDate={video.formattedUpdatedAt!}
-          subLink={{
+          subLink={video.youtubeLink ? {
             text: 'Watch on YouTube',
-            url: 'https://youtube.com'
-          }}
+            url: video.youtubeLink
+          } : undefined}
           author={{
             twitter: video.author?.twitter!,
             name: video.author?.name!,
@@ -74,7 +74,6 @@ type ContextType = {
 export async function getStaticProps(context: ContextType) {
   const videoId: string = context?.params?.video;
 
-  console.log(getVideoById(videoId));
   return {
     props: {
       video: getVideoById(videoId)
