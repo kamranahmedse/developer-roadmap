@@ -7,8 +7,18 @@ import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { GuideGridItem } from './components/guide-grid-item';
 import { PageHeader } from '../../components/page-header';
+import { getAllGuides, getGuideById, GuideType } from '../../lib/guide';
 
-export default function Guides() {
+type GuidesProps = {
+  guides: GuideType[]
+}
+
+export default function Guides(props: GuidesProps) {
+  const { guides = [] } = props;
+
+  const recentGuides = guides.slice(0, 2);
+  const oldGuides = guides.slice(2);
+
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
@@ -19,41 +29,28 @@ export default function Guides() {
         />
         <Container maxW='container.md' position='relative'>
           <SimpleGrid columns={[1, 1, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
-            <GuideGridItem
-              title='Session Based Authentication'
-              subtitle='Learn what the Session Based Authentication is, the pros and cons.'
-              date='June 25, 2021'
-              isNew
-            />
-            <GuideGridItem
-              title='JSON Web Tokens'
-              subtitle='Learn what the Session Based Authentication is, the pros and cons and how you can implement it in your apps.'
-              date='June 25, 2021'
-              colorIndex={1}
-            />
+            {recentGuides.map((recentGuide, counter) => (
+              <GuideGridItem
+                key={recentGuide.id}
+                title={recentGuide.title}
+                subtitle={recentGuide.description}
+                date={recentGuide.formattedUpdatedAt}
+                isNew
+                colorIndex={counter}
+              />
+            ))}
           </SimpleGrid>
 
           <LinksList>
-            <LinksListItem title='Session based Authentication' badgeText='pro' subtitle='June 12, 2021' />
-            <LinksListItem title='Session based Authentication' subtitle='June 12, 2021' />
-            <LinksListItem title='JSON Web Tokens' subtitle='June 05, 2021' />
-            <LinksListItem title='Token Based Authentication' subtitle='May 15, 2021' />
-            <LinksListItem title='Character Encodings' badgeText='pro' subtitle='March 06, 2021' />
-            <LinksListItem title='SSL vs TLS vs HTTPs vs SSH' subtitle='February 15, 2021' />
-            <LinksListItem title='Continuous Integration and Deployment' subtitle='February 15, 2021' />
-            <LinksListItem title='Authentication' subtitle='February 01, 2021' />
-            <LinksListItem title='DHCP in One Picture' subtitle='February 01, 2021' />
-            <LinksListItem title='Session Based Authentication' subtitle='February 01, 2021' />
-            <LinksListItem title='Session based Authentication' badgeText='pro' subtitle='June 12, 2021' />
-            <LinksListItem title='Session based Authentication' subtitle='June 12, 2021' />
-            <LinksListItem title='JSON Web Tokens' subtitle='June 05, 2021' />
-            <LinksListItem title='Token Based Authentication' subtitle='May 15, 2021' />
-            <LinksListItem title='Character Encodings' badgeText='pro' subtitle='March 06, 2021' />
-            <LinksListItem title='SSL vs TLS vs HTTPs vs SSH' subtitle='February 15, 2021' />
-            <LinksListItem title='Continuous Integration and Deployment' subtitle='February 15, 2021' />
-            <LinksListItem title='Authentication' subtitle='February 01, 2021' />
-            <LinksListItem title='DHCP in One Picture' subtitle='February 01, 2021' />
-            <LinksListItem title='Session Based Authentication' subtitle='February 01, 2021' />
+            {oldGuides.map(oldGuide => (
+              <LinksListItem
+                href={oldGuide.url}
+                key={oldGuide.id}
+                title={oldGuide.title}
+                badgeText={oldGuide.isPro ? 'PRO' : ''}
+                subtitle={oldGuide.formattedUpdatedAt}
+              />
+            ))}
           </LinksList>
         </Container>
       </Box>
@@ -64,3 +61,12 @@ export default function Guides() {
     </Box>
   );
 }
+
+export async function getStaticProps() {
+  return {
+    props: {
+      guides: getAllGuides()
+    }
+  };
+}
+
