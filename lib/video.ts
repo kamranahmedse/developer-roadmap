@@ -1,8 +1,9 @@
 import videos from '../content/videos.json';
 import formatDate from 'date-fns/format';
-import { NextApiRequest } from 'next';
+import { AuthorType, findAuthorByUsername } from './author';
 
 export type VideoType = {
+  id: string;
   title: string;
   description: string;
   url: string;
@@ -11,8 +12,10 @@ export type VideoType = {
   duration: string;
   createdAt: string;
   updatedAt: string;
-  formattedCreatedAt: string;
-  formattedUpdatedAt: string;
+  formattedCreatedAt?: string;
+  formattedUpdatedAt?: string;
+  authorUsername: string;
+  author?: AuthorType;
 };
 
 export function getAllVideos(limit: number = 0): VideoType[] {
@@ -21,24 +24,14 @@ export function getAllVideos(limit: number = 0): VideoType[] {
     .map(video => ({
       ...video,
       formattedCreatedAt: formatDate(new Date(video.createdAt), 'MMMM d, yyyy'),
-      formattedUpdatedAt: formatDate(new Date(video.updatedAt), 'MMMM d, yyyy')
+      formattedUpdatedAt: formatDate(new Date(video.updatedAt), 'MMMM d, yyyy'),
+      author: findAuthorByUsername(video.authorUsername)
     }))
     .slice(0, limit ? limit : videos.length);
 }
 
-
-export function getRequestedGuide(req: NextApiRequest): VideoType | undefined {
+export function getVideoById(id: string): VideoType | undefined {
   const allVideos = getAllVideos();
-  const video = allVideos.find(video => video.url === req.url);
-  if (!video) {
-    return undefined;
-  }
 
-  try {
-    return video;
-  } catch (e) {
-    console.log(e);
-  }
-
-  return undefined;
+  return allVideos.find(guide => guide.id === id);
 }

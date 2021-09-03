@@ -1,6 +1,5 @@
 import guides from '../content/guides.json';
 import formatDate from 'date-fns/format';
-import { NextApiRequest } from 'next';
 import { AuthorType, findAuthorByUsername } from './author';
 
 export type GuideType = {
@@ -13,23 +12,16 @@ export type GuideType = {
   isDraft: boolean;
   createdAt: string;
   updatedAt: string;
-  formattedCreatedAt: string;
-  formattedUpdatedAt: string;
+  formattedCreatedAt?: string;
+  formattedUpdatedAt?: string;
   authorUsername: string;
   author?: AuthorType;
 };
 
 export function getGuideById(id: string): GuideType | undefined {
   const allGuides = getAllGuides();
-  const foundGuide = allGuides.find(guide => guide.id === id);
-  if (!foundGuide) {
-    return undefined;
-  }
 
-  return {
-    ...foundGuide,
-    author: findAuthorByUsername(foundGuide.authorUsername)
-  };
+  return allGuides.find(guide => guide.id === id);
 }
 
 export function getAllGuides(limit: number = 0): GuideType[] {
@@ -39,7 +31,8 @@ export function getAllGuides(limit: number = 0): GuideType[] {
     .map(guide => ({
       ...guide,
       formattedCreatedAt: formatDate(new Date(guide.createdAt), 'MMMM d, yyyy'),
-      formattedUpdatedAt: formatDate(new Date(guide.updatedAt), 'MMMM d, yyyy')
+      formattedUpdatedAt: formatDate(new Date(guide.updatedAt), 'MMMM d, yyyy'),
+      author: findAuthorByUsername(guide.authorUsername)
     }))
     .slice(0, limit ? limit : guides.length);
 }

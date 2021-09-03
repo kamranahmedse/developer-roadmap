@@ -1,4 +1,4 @@
-import { Box, Container, SimpleGrid, Stack } from '@chakra-ui/react';
+import { Box, Container, SimpleGrid } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { LinksList } from '../../components/links-list';
 import { LinksListItem } from '../../components/links-list-item';
@@ -7,7 +7,7 @@ import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { GuideGridItem } from './components/guide-grid-item';
 import { PageHeader } from '../../components/page-header';
-import { getAllGuides, getGuideById, GuideType } from '../../lib/guide';
+import { getAllGuides, GuideType } from '../../lib/guide';
 
 type GuidesProps = {
   guides: GuideType[]
@@ -35,7 +35,7 @@ export default function Guides(props: GuidesProps) {
                 key={recentGuide.id}
                 title={recentGuide.title}
                 subtitle={recentGuide.description}
-                date={recentGuide.formattedUpdatedAt}
+                date={recentGuide.formattedUpdatedAt!}
                 isNew
                 colorIndex={counter}
               />
@@ -49,7 +49,7 @@ export default function Guides(props: GuidesProps) {
                 key={oldGuide.id}
                 title={oldGuide.title}
                 badgeText={oldGuide.isPro ? 'PRO' : ''}
-                subtitle={oldGuide.formattedUpdatedAt}
+                subtitle={oldGuide.formattedUpdatedAt!}
               />
             ))}
           </LinksList>

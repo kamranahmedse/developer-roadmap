@@ -57,12 +57,12 @@ export function VideoGridItem(props: VideoGridItemProps) {
   return (
     <Link _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Box} href='#' shadow='xl' p='20px'
           rounded='10px' bg={bgColorList[colorIndex] ?? bgColorList[0]} flex={1}>
-      <Text mb='10px' fontSize='13px' color='gray.400'>
+      <Text mb='7px' fontSize='12px' color='gray.400'>
         {isNew && <Badge colorScheme={'yellow'} mr='10px'>New</Badge>}
         {isPro && <Badge colorScheme={'blue'} mr='10px'>PRO</Badge>}
         {date}
       </Text>
-      <Heading color='white' mb={'6px'} fontSize='20px'>{title}</Heading>
+      <Heading color='white' mb={'6px'} fontSize='20px' lineHeight={'28px'}>{title}</Heading>
       <Text color='gray.300' fontSize='14px'>{subtitle}</Text>
     </Link>
   );
