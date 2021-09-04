@@ -99,7 +99,7 @@ export function GlobalHeader() {
                   _hover={{ textDecoration: 'none' }}
                   fontSize='18px'>
               <Image h='30px' w='30px' src='/logo.svg' mr='10px' />
-              <Text d={['block', 'block', 'block']} as='span'>roadmap.sh</Text>
+              <Text d={['block', 'none', 'block']} as='span'>roadmap.sh</Text>
             </Link>
           </Box>
           <DesktopMenuLinks />

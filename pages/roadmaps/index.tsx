@@ -5,8 +5,15 @@ import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { PageHeader } from '../../components/page-header';
 import { RoadmapGridItem } from './components/roadmap-grid-item';
+import { getAllRoadmaps, RoadmapType } from '../../lib/roadmap';
 
-export default function Roadmaps() {
+type RoadmapsProps = {
+  roadmaps: RoadmapType[];
+};
+
+export default function Roadmaps(props: RoadmapsProps) {
+  const { roadmaps } = props;
+
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
@@ -17,79 +24,17 @@ export default function Roadmaps() {
         />
         <Container maxW='container.md' position='relative'>
           <SimpleGrid columns={[1, 1, 2, 2]} mb='30px' spacing={['10px', '10px', '15px']}>
-            <RoadmapGridItem
-              colorIndex={0} title={'Frontend'}
-              subtitle={'Step by step guide to becoming a frontend developer in 2021'}
-              date={'June 12, 2021'}
-            />
-            <RoadmapGridItem
-              colorIndex={1}
-              title={'Backend'}
-              subtitle={'Step by step guide to becoming a backend developer in 2021'}
-              date='June 15, 2021'
-            />
-
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={2}
-              title={'DevOps'}
-              subtitle={'Step by step guide for DevOps or Operations role in 2021'}
-            />
-
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={3}
-              title={'React'}
-              subtitle={'Step by step guide to become a React Developer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={4}
-              title={'DBA'}
-              subtitle={'Step by step guide to becoming a PostgreSQL Database Administrator in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={5}
-              title={'Android'}
-              subtitle={'Step by step guide to become an Android Developer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={6}
-              title={'QA Engineer'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={7}
-              title={'AI Engineer'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={8}
-              title={'iOS Engineer'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={9}
-              title={'Golang'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={10}
-              title={'Java'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
-            <RoadmapGridItem
-              date={'August 25, 2021'}
-              colorIndex={10}
-              title={'Angular'}
-              subtitle={'Step by step guide to become a Quality Assurance Engineer in 2021'}
-            />
+            {roadmaps.map((roadmap, counter) => (
+              <RoadmapGridItem
+                key={roadmap.id}
+                href={`/${roadmap.id}`}
+                colorIndex={counter}
+                title={roadmap.featuredTitle}
+                subtitle={roadmap.description}
+                isCommunity={roadmap.isCommunity}
+                isUpcoming={roadmap.isUpcoming}
+              />
+            ))}
           </SimpleGrid>
         </Container>
       </Box>
@@ -99,4 +44,12 @@ export default function Roadmaps() {
       <Footer />
     </Box>
   );
+}
+
+export async function getStaticProps() {
+  return {
+    props: {
+      roadmaps: getAllRoadmaps()
+    }
+  };
 }

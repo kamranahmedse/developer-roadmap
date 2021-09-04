@@ -28,9 +28,10 @@
       ]
     },
     "title": "Frontend Developer",
-    "description": "Step by step guide to becoming a modern frontend developer",
+    "description": "Step by step guide to becoming a modern frontend developer in 2021",
     "featuredTitle": "Frontend",
     "featuredDescription": "Step by step guide to becoming a frontend developer in 2021",
+    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -70,12 +71,13 @@
       ]
     },
     "title": "Backend Developer",
-    "description": "Step by step guide to becoming a modern backend developer",
+    "description": "Step by step guide to becoming a modern backend developer in 2021",
     "featuredTitle": "Backend",
     "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
     "featured": true,
     "imagePath": "/roadmaps/backend.png",
     "resourcesPath": "/roadmaps/2-backend/resources.md",
+    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -106,7 +108,7 @@
       ]
     },
     "title": "DevOps Roadmap",
-    "description": "Step by step guide for DevOps or any other Operations Role",
+    "description": "Step by step guide for DevOps, SRE or any other Operations Role in 2021",
     "featuredTitle": "DevOps",
     "featuredDescription": "Step by step guide for DevOps or operations role in 2021",
     "featured": true,
@@ -117,6 +119,7 @@
       "2018",
       "2017"
     ],
+    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -156,6 +159,7 @@
       "2018",
       "2017"
     ],
+    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -189,11 +193,12 @@
       ]
     },
     "title": "PostgreSQL DBA",
-    "description": "Step by step guide to becoming a modern PostgreSQL DBA",
+    "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
     "featuredTitle": "DBA",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
     "contentPath": "/roadmaps/5-postgresql-dba/landscape.md",
     "resourcesPath": "/roadmaps/5-postgresql-dba/resources.md",
+    "isUpcoming": false,
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -225,7 +230,7 @@
       ]
     },
     "title": "Android Developer",
-    "description": "Step by step guide to becoming an Android developer",
+    "description": "Step by step guide to becoming an Android developer in 2021",
     "featuredTitle": "Android",
     "featuredDescription": "Step by step guide to becoming an Android Developer in 2021",
     "isTextHeavy": true,
@@ -238,6 +243,7 @@
       "2018",
       "2017"
     ],
+    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -268,9 +274,9 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2021",
     "featuredTitle": "QA",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
-    "upcoming": true,
     "contentPath": "/roadmaps/7-qa/landscape.md",
     "resourcesPath": "/roadmaps/7-qa/resources.md",
+    "isUpcoming": true,
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
