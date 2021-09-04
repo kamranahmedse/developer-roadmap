@@ -18,6 +18,7 @@ import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import siteConfig from '../content/site.json';
+import Helmet from '../components/helmet';
 
 function FreeSignUp() {
   return (
@@ -87,6 +88,7 @@ export default function SignUp() {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet title={'Sign Up: Be a part of the community'} />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
           <SimpleGrid columns={[1, 1, 2]} spacing='15px' my={['30px', '30px', '80px']}>

@@ -7,6 +7,7 @@ import { Footer } from '../../components/footer';
 import { PageHeader } from '../../components/page-header';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
+import Helmet from '../../components/helmet';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -52,6 +53,11 @@ export default function Roadmap(props: RoadmapProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet
+        title={roadmap?.seo?.title || roadmap.title}
+        description={roadmap?.seo?.description || roadmap.description}
+        keywords={roadmap?.seo.keywords || []}
+      />
       <Box mb='60px'>
         <PageHeader
           title={roadmap.title}

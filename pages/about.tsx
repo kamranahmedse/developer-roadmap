@@ -5,11 +5,16 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
+import Helmet from '../components/helmet';
 
 function AboutHeader() {
   return (
-    <Box pt={['45px', '45px', '70px']} pb={['45px', '45px', '55px']} borderBottomWidth={1} mb='30px' textAlign='left' position='static'
+    <Box pt={['45px', '45px', '70px']} pb={['45px', '45px', '55px']} borderBottomWidth={1} mb='30px' textAlign='left'
+         position='static'
          top='10px'>
+      <Helmet
+        title={'About roadmap.sh'}
+      />
       <Container maxW='container.md' position='relative' textAlign='left'>
         <Flex alignItems='center'>
           <Image d={['none', 'none', 'block']} src='/kamran.jpeg' h='170px' rounded='10px' mr='25px' />

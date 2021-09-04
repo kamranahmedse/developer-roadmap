@@ -5,6 +5,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
+import Helmet from '../components/helmet';
 
 export default function Terms() {
   const TermsContent = require(`../content/pages/terms.md`).default;
@@ -12,6 +13,7 @@ export default function Terms() {
   return (
     <Box bg='gray.50' minH='100vh'>
       <GlobalHeader />
+      <Helmet title={'Terms – roadmap.sh'} />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
           <MdRenderer>

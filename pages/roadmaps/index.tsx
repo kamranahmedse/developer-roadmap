@@ -6,6 +6,7 @@ import { Footer } from '../../components/footer';
 import { PageHeader } from '../../components/page-header';
 import { RoadmapGridItem } from './components/roadmap-grid-item';
 import { getAllRoadmaps, RoadmapType } from '../../lib/roadmap';
+import Helmet from '../../components/helmet';
 
 type RoadmapsProps = {
   roadmaps: RoadmapType[];
@@ -17,6 +18,10 @@ export default function Roadmaps(props: RoadmapsProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet
+        title={'Developer Roadmaps'}
+        description={'Step by step guides and paths to learn different tools or technologies'}
+      />
       <Box mb='60px'>
         <PageHeader
           title={'Developer Roadmaps'}

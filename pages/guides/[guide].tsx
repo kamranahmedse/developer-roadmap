@@ -7,6 +7,7 @@ import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
 import { getAllGuides, getGuideById, GuideType } from '../../lib/guide';
 import siteConfig from '../../content/site.json';
+import Helmet from '../../components/helmet';
 
 type GuideProps = {
   guide: GuideType;
@@ -19,6 +20,10 @@ export default function Guide(props: GuideProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet
+        title={guide.title}
+        description={guide.description}
+      />
       <Box mb='60px'>
         <ContentPageHeader
           title={guide.title}

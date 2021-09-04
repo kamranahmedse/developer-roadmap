@@ -12,6 +12,7 @@ import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';
 import { getAllGuides, GuideType } from '../lib/guide';
 import { getAllVideos, VideoType } from '../lib/video';
 import siteConfig from '../content/site.json';
+import Helmet from '../components/helmet';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -25,6 +26,7 @@ export default function Home(props: HomeProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet title='Developer Roadmaps' />
       <Box>
         <Container maxW='container.md'>
           <Box py={['23px', '23px', '35px']}>

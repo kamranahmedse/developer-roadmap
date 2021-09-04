@@ -8,6 +8,7 @@ import { Footer } from '../../components/footer';
 import { GuideGridItem } from './components/guide-grid-item';
 import { PageHeader } from '../../components/page-header';
 import { getAllGuides, GuideType } from '../../lib/guide';
+import Helmet from '../../components/helmet';
 
 type GuidesProps = {
   guides: GuideType[]
@@ -22,6 +23,10 @@ export default function Guides(props: GuidesProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet
+        title={'Visual Guides'}
+        description={'Succinct graphical explanations to engineering topics.'}
+      />
       <Box mb='60px'>
         <PageHeader
           title={'Visual Guides'}

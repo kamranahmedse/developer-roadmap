@@ -6,6 +6,7 @@ import { Footer } from '../../components/footer';
 import { VideoGridItem } from './components/video-grid-item';
 import { PageHeader } from '../../components/page-header';
 import { getAllVideos, VideoType } from '../../lib/video';
+import Helmet from '../../components/helmet';
 
 type VideosProps = {
   videos: VideoType[]
@@ -17,6 +18,7 @@ export default function Watch(props: VideosProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet title='Watch' description='Graphical video demonstrations on development topics' />
       <Box mb='60px'>
         <PageHeader
           title={'Watch'}
