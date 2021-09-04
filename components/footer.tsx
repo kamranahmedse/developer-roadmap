@@ -8,7 +8,6 @@ function NavigationLinks() {
         <Link _hover={{ color: 'white' }} href='/roadmaps'>Roadmaps</Link>
         <Link _hover={{ color: 'white' }} href='/guides'>Guides</Link>
         <Link _hover={{ color: 'white' }} href='/watch'>Videos</Link>
-        <Link _hover={{ color: 'white' }} href='/podcasts'>Podcasts</Link>
         <Link _hover={{ color: 'white' }} href='/about'>About</Link>
         <Link _hover={{ color: 'white' }} href={siteConfig.url.youtube} target='_blank'>YouTube</Link>
       </Stack>
@@ -20,8 +19,6 @@ function NavigationLinks() {
               href='/guides'>Guides</Link>
         <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
               href='/watch'>Videos</Link>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/podcasts'>Podcasts</Link>
         <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
               href='/thanks'>Thanks</Link>
         <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
