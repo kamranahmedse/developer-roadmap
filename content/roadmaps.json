@@ -39,8 +39,7 @@
     "featured": true,
     "imagePath": "/roadmaps/frontend.png",
     "resourcesPath": "/roadmaps/1-frontend/resources.md",
-    "id": "frontend",
-    "url": "/frontend"
+    "id": "frontend"
   },
   {
     "seo": {
@@ -82,8 +81,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "backend",
-    "url": "/backend"
+    "id": "backend"
   },
   {
     "seo": {
@@ -124,8 +122,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "devops",
-    "url": "/devops"
+    "id": "devops"
   },
   {
     "seo": {
@@ -164,8 +161,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "react",
-    "url": "/react"
+    "id": "react"
   },
   {
     "seo": {
@@ -208,8 +204,7 @@
     "featured": true,
     "detailed": false,
     "versions": [],
-    "id": "postgresql-dba",
-    "url": "/postgresql-dba"
+    "id": "postgresql-dba"
   },
   {
     "seo": {
@@ -248,8 +243,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "android",
-    "url": "/android"
+    "id": "android"
   },
   {
     "seo": {
@@ -281,7 +275,6 @@
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "id": "qa",
-    "url": "/qa"
+    "id": "qa"
   }
 ]
