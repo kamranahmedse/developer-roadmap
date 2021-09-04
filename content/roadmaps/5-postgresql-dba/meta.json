@@ -24,7 +24,7 @@
     ]
   },
   "title": "PostgreSQL DBA",
-  "description": "Step by step guide to becoming a modern PostgreSQL DBA",
+  "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
   "featuredTitle": "DBA",
   "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
   "contentPath": "./landscape.md",

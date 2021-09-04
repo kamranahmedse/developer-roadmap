@@ -1,4 +1,4 @@
-import { Box, Button, Container, Stack } from '@chakra-ui/react';
+import { Box, Button, Container, Link, Stack } from '@chakra-ui/react';
 import { DownloadIcon, EmailIcon } from '@chakra-ui/icons';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
@@ -54,14 +54,26 @@ export default function Roadmap(props: RoadmapProps) {
       <GlobalHeader />
       <Box mb='60px'>
         <PageHeader
-          title={ roadmap.title }
-          subtitle={ roadmap.description }
+          title={roadmap.title}
+          subtitle={roadmap.description}
         >
           <Stack mt='20px' isInline>
-            <Button size='xs' py='14px' px='10px' leftIcon={<DownloadIcon />} colorScheme='yellow' variant='solid'>
-              Download PDF
-            </Button>
-            <Button size='xs' py='14px' px='10px' leftIcon={<EmailIcon />} colorScheme='yellow' variant='solid'>
+            {roadmap.pdfUrl && (
+              <Button as={Link}
+                      href={roadmap.pdfUrl}
+                      target='_blank'
+                      size='xs'
+                      py='14px'
+                      px='10px'
+                      leftIcon={<DownloadIcon />}
+                      colorScheme='yellow'
+                      variant='solid'
+                      _hover={{ textDecoration: 'none' }}>
+                Download PDF
+              </Button>
+            )}
+            <Button as={Link} href={'/signup'} size='xs' py='14px' px='10px' leftIcon={<EmailIcon />}
+                    colorScheme='yellow' variant='solid' _hover={{ textDecoration: 'none' }}>
               Subscribe
             </Button>
           </Stack>

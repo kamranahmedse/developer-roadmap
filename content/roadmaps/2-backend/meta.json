@@ -27,7 +27,7 @@
     ]
   },
   "title": "Backend Developer",
-  "description": "Step by step guide to becoming a modern backend developer",
+  "description": "Step by step guide to becoming a modern backend developer in 2021",
   "featuredTitle": "Backend",
   "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
   "featured": true,
@@ -36,5 +36,6 @@
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
-  }
+  },
+  "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap"
 }

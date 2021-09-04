@@ -31,7 +31,6 @@
     "description": "Step by step guide to becoming a modern frontend developer in 2021",
     "featuredTitle": "Frontend",
     "featuredDescription": "Step by step guide to becoming a frontend developer in 2021",
-    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -39,7 +38,9 @@
     "featured": true,
     "imagePath": "/roadmaps/frontend.png",
     "resourcesPath": "/roadmaps/1-frontend/resources.md",
-    "id": "frontend"
+    "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    "id": "frontend",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -76,12 +77,13 @@
     "featured": true,
     "imagePath": "/roadmaps/backend.png",
     "resourcesPath": "/roadmaps/2-backend/resources.md",
-    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "backend"
+    "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    "id": "backend",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -117,12 +119,13 @@
       "2018",
       "2017"
     ],
-    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "devops"
+    "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap",
+    "id": "devops",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -156,12 +159,13 @@
       "2018",
       "2017"
     ],
-    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "react"
+    "pdfUrl": "https://kamranahmedse.gumroad.com/l/react-roadmap",
+    "id": "react",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -194,7 +198,6 @@
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
     "contentPath": "/roadmaps/5-postgresql-dba/landscape.md",
     "resourcesPath": "/roadmaps/5-postgresql-dba/resources.md",
-    "isUpcoming": false,
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -204,7 +207,8 @@
     "featured": true,
     "detailed": false,
     "versions": [],
-    "id": "postgresql-dba"
+    "id": "postgresql-dba",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -238,12 +242,12 @@
       "2018",
       "2017"
     ],
-    "isUpcoming": false,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "android"
+    "id": "android",
+    "isUpcoming": false
   },
   {
     "seo": {
@@ -268,9 +272,9 @@
     "description": "Steps to follow in order to become a modern QA Engineer in 2021",
     "featuredTitle": "QA",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
+    "isUpcoming": true,
     "contentPath": "/roadmaps/7-qa/landscape.md",
     "resourcesPath": "/roadmaps/7-qa/resources.md",
-    "isUpcoming": true,
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"

@@ -34,9 +34,9 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
     {
       ...roadmapMeta,
       id: roadmapSlug,
-      url: `/${roadmapSlug}`,
       contentPath: contentPath,
-      resourcesPath: resourcesPath
+      resourcesPath: resourcesPath,
+      isUpcoming: roadmapMeta.isUpcoming || false
     }
   ];
 }, []);

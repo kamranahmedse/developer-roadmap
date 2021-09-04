@@ -21,7 +21,7 @@
   "description": "Steps to follow in order to become a modern QA Engineer in 2021",
   "featuredTitle": "QA",
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
-  "upcoming": true,
+  "isUpcoming": true,
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {

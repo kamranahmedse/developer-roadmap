@@ -21,6 +21,7 @@ export type RoadmapType = {
   isCommunity: boolean;
   isUpcoming: boolean;
   id: string;
+  pdfUrl?: string;
 };
 
 export function getRoadmapById(id: string): RoadmapType | undefined {
