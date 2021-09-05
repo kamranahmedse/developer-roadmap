@@ -1,22 +1,21 @@
 import React from 'react';
+import { Link, Text, Badge } from '@chakra-ui/react';
 
 type BadgeLinkType = {
   target: string;
-  variant: string;
   badgeText: string;
   href: string;
   children: React.ReactNode
 };
 
 export function BadgeLink(props: BadgeLinkType) {
-  const { target = '_blank', variant = 'success', badgeText, href, children } = props;
+  const { target = '_blank', badgeText, href, children } = props;
 
   return (
-    <p className='mb-0'>
-      <a href={href} target={target}>
-        <span style={{ position: 'relative', top: '-2px' }}
-              className={`badge badge-${variant}`}>{badgeText}</span> {children}
-      </a>
-    </p>
+    <Text mb={0}>
+      <Link fontWeight={500} textDecoration='underline' href={href} target={target}>
+        <Badge colorScheme={'purple'} style={{ position: 'relative', top: '-2px' }}>{badgeText}</Badge> {children}
+      </Link>
+    </Text>
   );
 }
