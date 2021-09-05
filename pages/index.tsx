@@ -5,7 +5,7 @@ import { UpdatesBanner } from '../components/updates-banner';
 import { OpensourceBanner } from '../components/opensource-banner';
 import { DimmedMore } from '../components/dimmed-more';
 import { LinksListItem } from '../components/links-list-item';
-import { VideoIcon } from '../icons/video-icon';
+import { VideoIcon } from '../components/icons/video-icon';
 import { LinksList } from '../components/links-list';
 import { HomeRoadmapItem } from '../components/roadmap/home-roadmap-item';
 import { getFeaturedRoadmaps, RoadmapType } from '../lib/roadmap';

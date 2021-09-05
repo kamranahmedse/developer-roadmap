@@ -3,7 +3,7 @@ import React from 'react';
 import { MDXProvider } from '@mdx-js/react';
 import { ChakraProvider } from '@chakra-ui/react';
 import MdxComponents from './mdx-components';
-import { roadmapTheme } from '../../lib/theme';
+import { roadmapTheme } from '../../styles/theme';
 
 type MdRendererType = {
   children: React.ReactNode

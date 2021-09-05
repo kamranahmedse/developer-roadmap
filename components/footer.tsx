@@ -63,6 +63,15 @@ export function Footer() {
           </Text>
         </Box>
       </Container>
+
+      {process.env.GA_SECRET && false && (
+        <script
+          async
+          type='text/javascript'
+          src='//cdn.carbonads.com/carbon.js?serve=CE7DLK3Y&placement=roadmapsh'
+          id='_carbonads_js'
+        />
+      )}
     </Box>
   );
 }
