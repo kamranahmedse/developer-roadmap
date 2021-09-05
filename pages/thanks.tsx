@@ -110,7 +110,8 @@ export default function Thanks() {
             <Box mt='40px' borderWidth={1} padding='20px' rounded='5px'>
               <Heading as='h2' mb='10px'>Support the Project</Heading>
               <Text mb='15px'>Sponsor me on GitHub to help ensure the continuity of the project.</Text>
-              <Button as={Link} href={siteConfig.url.sponsor} colorScheme='green'>Sponsor me on GitHub</Button>
+              <Button _hover={{ textDecoration: 'none' }} as={Link} href={siteConfig.url.sponsor} colorScheme='green'>Sponsor
+                me on GitHub</Button>
             </Box>
           </Box>
         </Container>
