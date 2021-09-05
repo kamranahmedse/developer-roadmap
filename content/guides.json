@@ -1,5 +1,14 @@
 [
   {
+    "id": "what-are-web-vitals",
+    "title": "What are Web Vitals?",
+    "description": "Learn what are the core web vitals and how to measure them.",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "updatedAt": "2020-09-05T19:59:14.191Z",
+    "createdAt": "2020-09-05T19:59:14.191Z"
+  },
+  {
     "id": "ci-cd",
     "title": "What is CI and CD?",
     "description": "Learn the basics of CI/CD and how to implement that with GitHub Actions.",
