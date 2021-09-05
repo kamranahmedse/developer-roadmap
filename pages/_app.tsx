@@ -5,6 +5,7 @@ import 'prism-themes/themes/prism-shades-of-purple.css';
 import { roadmapTheme } from '../styles/theme';
 import { firePageView } from '../lib/gtag';
 import '../styles/carbon.css';
+import { StickyBanner } from '../components/sticky-banner';
 
 function MyApp({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -13,6 +14,7 @@ function MyApp({ Component, pageProps }: AppProps) {
 
   return (
     <ChakraProvider theme={roadmapTheme}>
+      <StickyBanner />
       <Component {...pageProps} />
     </ChakraProvider>
   );
