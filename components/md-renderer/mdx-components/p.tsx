@@ -1,10 +1,14 @@
 import React from 'react';
 import { Text } from '@chakra-ui/react';
+import styled from 'styled-components';
 
 type EnrichedTextType = {
   children: React.ReactNode;
 }
 
-export default function EnrichedText(props: EnrichedTextType) {
-  return <Text lineHeight='27px' fontSize='16px' color='black' mb='18px'>{props.children}</Text>;
-}
+export const P = styled.p`
+  line-height: 27px;
+  font-size: 16px;
+  color: black;
+  margin-bottom: 18px;
+`;

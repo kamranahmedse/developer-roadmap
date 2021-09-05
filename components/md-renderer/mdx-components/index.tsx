@@ -1,4 +1,5 @@
-import P from './p';
+import { Code } from '@chakra-ui/react';
+import { P } from './p';
 import Headings from './heading';
 import { Pre } from './pre';
 import BlockQuote from './blockquote';
@@ -7,10 +8,8 @@ import IFrame from './iframe';
 import { Img } from './img';
 import EnrichedLink from './a';
 import { BadgeLink } from './badge-link';
-import Ul from './ul';
-import Li from './li';
+import { Li, Ul } from './ul';
 import PremiumBlock from './premium-block';
-import { Code } from '@chakra-ui/react';
 
 const MdxComponents = {
   p: P,

@@ -1,14 +1,12 @@
 import React from 'react';
 import { UnorderedList } from '@chakra-ui/react';
+import styled from 'styled-components';
 
-type OlProps = {
-  children: React.ReactNode;
-};
+export const Ul = styled.ul`
+  margin-left: 40px;
+  margin-bottom: 18px;
+`;
 
-export default function Ul(props: OlProps) {
-  return (
-    <UnorderedList ml='40px' mb='18px'>
-      {props.children}
-    </UnorderedList>
-  );
-}
+export const Li = styled.li`
+  margin-bottom: 7px;
+`;
