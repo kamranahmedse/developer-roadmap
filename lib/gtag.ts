@@ -5,7 +5,7 @@ declare global {
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/pages
-export const firePageView = (url: string) => {
+export function firePageView(url: string) {
   if (!window.gtag) {
     console.warn('Missing GTAG – Analytics disabled');
     return;
@@ -14,10 +14,10 @@ export const firePageView = (url: string) => {
   window.gtag('config', process.env.GA_SECRET, {
     page_path: url
   });
-};
+}
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
-export const event = (props: { action: string; category: string; label: string; value: string; }) => {
+export function event(props: { action: string; category: string; label: string; value: string; }) {
   const { action, category, label, value } = props;
   if (!window.gtag) {
     console.warn('Missing GTAG – Analytics disabled');
@@ -33,4 +33,4 @@ export const event = (props: { action: string; category: string; label: string; 
       value: value
     }
   );
-};
+}
