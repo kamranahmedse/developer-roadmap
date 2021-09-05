@@ -14,15 +14,14 @@ jobs:
     - uses: actions/checkout@v2
     - uses: actions/setup-node@v1
       with:
-        node-version: 12
+        node-version: 14
     - name: Setup Environment
       run: |
-        npm install -g yarn
-        yarn install
+        npm install
     - name: Generate meta and builld
       run: |
-        yarn meta
-        yarn build
+        npm run meta
+        npm run build
     - name: Deploy to GitHub Pages
       run: |
         git config user.email "kamranahmed.se@gmail.com"
