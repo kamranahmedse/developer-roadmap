@@ -1,0 +1,55 @@
+{
+  "name": "roadmap-next",
+  "version": "0.1.0",
+  "private": true,
+  "license": "BSD-4-Clause",
+  "scripts": {
+    "dev": "next",
+    "serve:out": "serve out",
+    "build": "./scripts/build.sh",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",
+    "start": "next start",
+    "lint": "next lint",
+    "meta:sitemap": "node scripts/sitemap.js",
+    "meta:roadmaps": "node ./scripts/roadmaps-meta.js",
+    "meta": "npm run meta:roadmaps && npm run meta:sitemap",
+    "postinstall": "husky install"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^1.0.14",
+    "@chakra-ui/react": "^1.6.5",
+    "@emotion/react": "^11.4.1",
+    "@emotion/styled": "^11.3.0",
+    "@mapbox/rehype-prism": "^0.7.0",
+    "@mdx-js/loader": "^1.6.22",
+    "@next/mdx": "^11.1.0",
+    "@svgr/webpack": "^5.5.0",
+    "date-fns": "^2.23.0",
+    "framer-motion": "^4.1.17",
+    "next": "^11.1.0",
+    "prism-themes": "^1.8.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "^5.3.0"
+  },
+  "devDependencies": {
+    "@types/eslint": "7.28.0",
+    "@types/react": "17.0.16",
+    "@types/react-dom": "17.0.2",
+    "@types/styled-components": "^5.1.12",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.0.1",
+    "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3",
+    "glob": "^7.1.7",
+    "husky": "^7.0.1",
+    "pretty-quick": "^3.1.1",
+    "serve": "^12.0.0",
+    "typescript": "4.3.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged && npm run lint"
+    }
+  }
+}
