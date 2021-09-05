@@ -1,6 +1,7 @@
-import { Box, CloseButton, Container, Flex, IconButton, Image, Link, Stack, Text } from '@chakra-ui/react';
-import { HamburgerIcon } from '@chakra-ui/icons';
 import { useState } from 'react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import { Box, CloseButton, Container, Flex, IconButton, Image, Link, Stack, Text } from '@chakra-ui/react';
+import RoadmapLogo from '../components/icons/roadmap.svg';
 import siteConfig from '../content/site.json';
 
 type MenuLinkProps = {
@@ -98,7 +99,7 @@ export function GlobalHeader() {
                   fontWeight={600}
                   _hover={{ textDecoration: 'none' }}
                   fontSize='18px'>
-              <Image alt='' h='30px' w='30px' src='/logo.svg' mr='10px' />
+              <RoadmapLogo style={{ height: '30px', width: '30px', marginRight: '10px' }} />
               <Text d={['block', 'none', 'block']} as='span'>roadmap.sh</Text>
             </Link>
           </Box>
