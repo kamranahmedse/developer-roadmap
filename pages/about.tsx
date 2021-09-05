@@ -17,7 +17,7 @@ function AboutHeader() {
       />
       <Container maxW='container.md' position='relative' textAlign='left'>
         <Flex alignItems='center'>
-          <Image d={['none', 'none', 'block']} src='/kamran.jpeg' h='170px' rounded='10px' mr='25px' />
+          <Image alt={'Kamran'} d={['none', 'none', 'block']} src='/kamran.jpeg' h='170px' rounded='10px' mr='25px' />
           <Box>
             <Heading as='h1' color='black' fontSize={['35px', '35px', '40px']} fontWeight={700} mb='10px'>Hello, I am
               Kamran Ahmed

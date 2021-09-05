@@ -2,9 +2,12 @@
   "name": "roadmap-next",
   "version": "0.1.0",
   "private": true,
+  "license": "BSD-4-Clause",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "NODE_ENV=dev next",
+    "serve:out": "serve out",
+    "build": "./scripts/build.sh",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",
     "start": "next start",
     "lint": "next lint",
     "meta:sitemap": "node scripts/sitemap.js",
@@ -36,9 +39,11 @@
     "eslint": "7.32.0",
     "eslint-config-next": "11.0.1",
     "eslint-config-prettier": "^8.3.0",
+    "gh-pages": "^3.2.3",
     "glob": "^7.1.7",
     "husky": "^7.0.1",
     "pretty-quick": "^3.1.1",
+    "serve": "^12.0.0",
     "typescript": "4.3.5"
   },
   "husky": {

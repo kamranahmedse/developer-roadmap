@@ -35,6 +35,7 @@ export default function Thanks() {
                   grateful for that.</Text>
               </Box>
               <Image width='190px'
+                     alt={''}
                      rounded='100%'
                      src='https://media.giphy.com/media/l0HUgXEoxsNZjZNq8/giphy.gif?cid=790b76114c74e11ed7ce8d65995b6893524407ed7b7748bc&rid=giphy.gif&ct=g'
                      ml='50px'
@@ -48,18 +49,21 @@ export default function Thanks() {
               <Stack spacing='10px'>
                 <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
                   <Image
+                    alt='OSS Capital'
                     w='400px'
                     src='/sponsors/oss-capital-logo.svg'
                   />
                 </Box>
                 <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
                   <Image
+                    alt='Forbes'
                     w='250px'
                     src='/sponsors/forbes-logo.png'
                   />
                 </Box>
                 <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
                   <Image
+                    alt='Zalando'
                     w='300px'
                     src='/sponsors/zalando-logo.svg'
                   />

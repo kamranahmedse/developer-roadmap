@@ -98,7 +98,7 @@ export function GlobalHeader() {
                   fontWeight={600}
                   _hover={{ textDecoration: 'none' }}
                   fontSize='18px'>
-              <Image h='30px' w='30px' src='/logo.svg' mr='10px' />
+              <Image alt='' h='30px' w='30px' src='/logo.svg' mr='10px' />
               <Text d={['block', 'none', 'block']} as='span'>roadmap.sh</Text>
             </Link>
           </Box>

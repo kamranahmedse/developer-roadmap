@@ -40,7 +40,7 @@ export function Footer() {
           <Flex spacing={0} alignItems='center' color='gray.400'>
             <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
                   href='/'>
-              <Image h='25px' w='25px' src='/logo.svg' mr='6px' />
+              <Image alt='' h='25px' w='25px' src='/logo.svg' mr='6px' />
               roadmap.sh
             </Link>
             <Text as='span' mx='7px'>by</Text>
