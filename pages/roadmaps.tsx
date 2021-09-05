@@ -1,12 +1,12 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
-import { GlobalHeader } from '../../components/global-header';
-import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
-import { Footer } from '../../components/footer';
-import { PageHeader } from '../../components/page-header';
-import { RoadmapGridItem } from './components/roadmap-grid-item';
-import { getAllRoadmaps, RoadmapType } from '../../lib/roadmap';
-import Helmet from '../../components/helmet';
+import { GlobalHeader } from '../components/global-header';
+import { OpensourceBanner } from '../components/opensource-banner';
+import { UpdatesBanner } from '../components/updates-banner';
+import { Footer } from '../components/footer';
+import { PageHeader } from '../components/page-header';
+import { RoadmapGridItem } from '../components/roadmap/roadmap-grid-item';
+import { getAllRoadmaps, RoadmapType } from '../lib/roadmap';
+import Helmet from '../components/helmet';
 
 type RoadmapsProps = {
   roadmaps: RoadmapType[];

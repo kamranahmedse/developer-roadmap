@@ -1,13 +1,13 @@
 import { Box, Button, Container, Link, Stack } from '@chakra-ui/react';
 import { DownloadIcon, EmailIcon } from '@chakra-ui/icons';
-import { GlobalHeader } from '../../components/global-header';
-import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
-import { Footer } from '../../components/footer';
-import { PageHeader } from '../../components/page-header';
-import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
-import MdRenderer from '../../components/md-renderer';
-import Helmet from '../../components/helmet';
+import { GlobalHeader } from '../components/global-header';
+import { OpensourceBanner } from '../components/opensource-banner';
+import { UpdatesBanner } from '../components/updates-banner';
+import { Footer } from '../components/footer';
+import { PageHeader } from '../components/page-header';
+import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../lib/roadmap';
+import MdRenderer from '../components/md-renderer';
+import Helmet from '../components/helmet';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -36,7 +36,7 @@ function TextualRoadmap(props: RoadmapProps) {
 
   // Remove trailing slashes
   const normalizedPath = roadmap.contentPath.replace(/^\//, '');
-  const RoadmapContent = require(`../../content/${normalizedPath}`).default;
+  const RoadmapContent = require(`../content/${normalizedPath}`).default;
 
   return (
     <Container maxW={'container.md'} position='relative'>

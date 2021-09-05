@@ -4,7 +4,7 @@
   "private": true,
   "license": "BSD-4-Clause",
   "scripts": {
-    "dev": "NODE_ENV=dev next",
+    "dev": "next",
     "serve:out": "serve out",
     "build": "./scripts/build.sh",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d out -t",

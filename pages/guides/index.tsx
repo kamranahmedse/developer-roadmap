@@ -5,7 +5,7 @@ import { LinksListItem } from '../../components/links-list-item';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { GuideGridItem } from './components/guide-grid-item';
+import { GuideGridItem } from '../../components/guide/guide-grid-item';
 import { PageHeader } from '../../components/page-header';
 import { getAllGuides, GuideType } from '../../lib/guide';
 import Helmet from '../../components/helmet';

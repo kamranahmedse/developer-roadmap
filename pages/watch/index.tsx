@@ -3,7 +3,7 @@ import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { VideoGridItem } from './components/video-grid-item';
+import { VideoGridItem } from '../../components/watch/video-grid-item';
 import { PageHeader } from '../../components/page-header';
 import { getAllVideos, VideoType } from '../../lib/video';
 import Helmet from '../../components/helmet';
