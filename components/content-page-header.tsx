@@ -35,7 +35,7 @@ export function ContentPageHeader(props: ContentPageHeaderProps) {
                 fontWeight={600}
                 color='gray.500'
               >
-                <Image alt={author.name} rounded={'full'} mr='7px' w='22px' src={author.picture} />
+                <Image alt={''} rounded={'full'} mr='7px' w='22px' src={author.picture} />
                 {author.name}
               </Link>
               <Text d={['none', 'inline', 'inline']} mx='7px' color='gray.500' as='span'>&middot;</Text>
