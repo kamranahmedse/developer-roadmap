@@ -5,8 +5,17 @@
     "description": "Learn what are the core web vitals and how to measure them.",
     "isPro": false,
     "authorUsername": "kamranahmedse",
-    "updatedAt": "2020-09-05T19:59:14.191Z",
-    "createdAt": "2020-09-05T19:59:14.191Z"
+    "updatedAt": "2021-09-05T19:59:14.191Z",
+    "createdAt": "2021-09-05T19:59:14.191Z"
+  },
+  {
+    "id": "what-is-sli-slo-sla",
+    "title": "SLIs, SLOs and SLAs",
+    "description": "Learn what are different indicators for performance identification of any service.",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "updatedAt": "2021-08-31T19:59:14.191Z",
+    "createdAt": "2021-08-31T19:59:14.191Z"
   },
   {
     "id": "ci-cd",
