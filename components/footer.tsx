@@ -1,5 +1,6 @@
 import { Box, Container, Flex, Image, Link, Stack, Text } from '@chakra-ui/react';
 import siteConfig from '../content/site.json';
+import { CustomAd } from './custom-ad';
 
 function NavigationLinks() {
   return (
@@ -64,6 +65,7 @@ export function Footer() {
         </Box>
       </Container>
 
+      <CustomAd />
       {process.env.GA_SECRET && false && (
         <script
           async
