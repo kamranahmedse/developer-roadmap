@@ -1,1 +1,0 @@
-![](/roadmaps/devops.png)
