@@ -6,6 +6,7 @@ import { Footer } from '../../components/footer';
 import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
 import { getAllVideos, getVideoById, VideoType } from '../../lib/video';
+import Helmet from '../../components/helmet';
 
 type VideoProps = {
   video: VideoType;
@@ -18,6 +19,7 @@ export default function Video(props: VideoProps) {
   return (
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
+      <Helmet title={video.title} description={video.description} />
       <Box mb='60px'>
         <ContentPageHeader
           title={video.title}
