@@ -1,0 +1,43 @@
+[
+  {
+    "username": "kamranahmedse",
+    "name": "Kamran Ahmed",
+    "twitter": "kamranahmedse",
+    "picture": "/authors/kamranahmedse.jpeg",
+    "bio": "Lead engineer at Tajawal. Lover of all things web and opensource. Created roadmap.sh to help the confused ones."
+  },
+  {
+    "username": "jesse",
+    "name": "Jesse Li",
+    "twitter": "__jesse_li",
+    "picture": "/authors/jesse.png",
+    "bio": "Software engineer."
+  },
+  {
+    "username": "dmytrobol",
+    "name": "Dmytro Bolkachov",
+    "twitter": "dmytrobol",
+    "picture": "/authors/dmytrobol.png",
+    "bio": "JavaScript Lad, Movie buff and coder interested in everything web related"
+  },
+  {
+    "username": "spekulatius",
+    "name": "Peter Thaleikis",
+    "twitter": "spekulatius1984",
+    "picture": "/authors/spekulatius.jpg",
+    "bio": "Developer building side-projects for fun, lover of the web and open source"
+  },
+  {
+    "username": "ebrahimbharmal007",
+    "name": "Ebrahim Bharmal",
+    "twitter": "BharmalEbrahim",
+    "picture": "/authors/ebrahimbharmal007.png",
+    "bio": "Love building projects using tools completely new to me. Python forever. Senior at University of Texas at Arlington (2021)"
+  },
+  {
+    "username": "lesovsky",
+    "name": "Alexey Lesovsky",
+    "bio": "Linux system administrator and PostgreSQL DBA at DataEgret.",
+    "picture": "/authors/lesovsky.jpeg"
+  }
+]

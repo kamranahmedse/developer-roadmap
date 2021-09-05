@@ -1,0 +1,211 @@
+[
+  {
+    "id": "transport-protocols-tcp-vs-udp",
+    "title": "Transport Protocols: TCP vs UDP",
+    "description": "Learn about the Transport Layer of the TCP/IP model and different transport protocols.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=37AFBZv4_6Y",
+    "authorUsername": "kamranahmedse",
+    "duration": "10 minutes",
+    "updatedAt": "2020-11-21T19:59:14.191Z",
+    "createdAt": "2020-11-21T19:59:14.191Z"
+  },
+  {
+    "id": "tcp-ip-model",
+    "title": "TCP/IP Model Explained",
+    "description": "Learn what is TCP/IP Model and the different layers involved.",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "youtubeLink": "https://www.youtube.com/watch?v=F5rni9fr1yE",
+    "duration": "5 minutes",
+    "updatedAt": "2020-11-06T19:59:14.191Z",
+    "createdAt": "2020-11-06T19:59:14.191Z"
+  },
+  {
+    "id": "osi-model",
+    "title": "OSI Model Explained",
+    "description": "Learn what is OSI Model and the different layers involved.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=dV8mjZd1OtU",
+    "authorUsername": "kamranahmedse",
+    "duration": "7 minutes",
+    "updatedAt": "2020-10-24T19:59:14.191Z",
+    "createdAt": "2020-10-24T19:59:14.191Z"
+  },
+  {
+    "id": "freeze-and-seal-objects-in-javascript",
+    "title": "Freeze and Seal in JavaScript",
+    "description": "Learn what is OSI Model and the different layers involved.",
+    "youtubeLink": "https://www.youtube.com/watch?v=O3uT2l6vgZ8",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "6 minutes",
+    "updatedAt": "2020-10-16T19:59:14.191Z",
+    "createdAt": "2020-10-16T19:59:14.191Z"
+  },
+  {
+    "id": "all-about-http-caching",
+    "title": "All about HTTP Caching",
+    "description": "Learn what is HTTP caching, places for caching and different caching headers.",
+    "youtubeLink": "https://www.youtube.com/watch?v=HiBDZgTNpXY",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "13 minutes",
+    "updatedAt": "2020-10-04T19:59:14.191Z",
+    "createdAt": "2020-10-04T19:59:14.191Z"
+  },
+  {
+    "id": "content-delivery-networks",
+    "title": "Content Delivery Networks",
+    "description": "Learn what the CDNs are and the difference between push CDN vs pull CDN.",
+    "youtubeLink": "https://www.youtube.com/watch?v=6DXEPcXKQNY",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "4 minutes",
+    "updatedAt": "2020-09-26T19:59:14.191Z",
+    "createdAt": "2020-09-26T19:59:14.191Z"
+  },
+  {
+    "id": "load-balancers-101",
+    "title": "Load Balancers 101",
+    "description": "Learn the basics of load balancers, types and different algorithms.",
+    "youtubeLink": "https://www.youtube.com/watch?v=galcDRNd5Ow",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "9 minutes",
+    "updatedAt": "2020-09-18T19:59:14.191Z",
+    "createdAt": "2020-09-18T19:59:14.191Z"
+  },
+  {
+    "id": "dns-records",
+    "title": "DNS Records",
+    "description": "Learn what the DNS is and how a website is found on the internet.",
+    "youtubeLink": "https://www.youtube.com/watch?v=7lxgpKh_fRY",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "6 minutes",
+    "updatedAt": "2020-08-31T19:59:14.191Z",
+    "createdAt": "2020-08-31T19:59:14.191Z"
+  },
+  {
+    "id": "dns-explained",
+    "title": "DNS and how does it work?",
+    "description": "Learn what the DNS is and how a website is found on the internet.",
+    "youtubeLink": "https://www.youtube.com/watch?v=Wj0od2ag5sk",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2020-08-17T19:59:14.191Z",
+    "createdAt": "2020-08-17T19:59:14.191Z"
+  },
+  {
+    "id": "system-design-101",
+    "title": "System Design 101",
+    "description": "Learn about all the bits and pieces of system design.",
+    "youtubeLink": "https://www.youtube.com/watch?v=Y-Gl4HEyeUQ",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "7 minutes",
+    "updatedAt": "2020-08-08T19:59:14.191Z",
+    "createdAt": "2020-08-08T19:59:14.191Z"
+  },
+  {
+    "id": "javascript-fetch-api",
+    "title": "JavaScript Fetch API",
+    "description": "Learn how to use JavaScript's Fetch API to interact with remote API.",
+    "youtubeLink": "https://www.youtube.com/watch?v=-ZI0ea5O2oA",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "3 minutes",
+    "updatedAt": "2020-08-02T19:59:14.191Z",
+    "createdAt": "2020-08-02T19:59:14.191Z"
+  },
+  {
+    "id": "scaling-the-unscalable",
+    "title": "Scaling the Unscalable",
+    "description": "Learn the basics of System Design and understand how to build a scalable application.",
+    "youtubeLink": "https://www.youtube.com/watch?v=a2rcgzludDU",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "10 minutes",
+    "updatedAt": "2020-07-26T19:59:14.191Z",
+    "createdAt": "2020-07-26T19:59:14.191Z"
+  },
+  {
+    "id": "promises-in-javascript",
+    "title": "All about Promises in JavaScript",
+    "youtubeLink": "https://www.youtube.com/watch?v=BvrkobaCVVE",
+    "description": "Learn how to write asynchronous code in JavaScript using promises.",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2020-07-20T19:59:14.191Z",
+    "createdAt": "2020-07-20T19:59:14.191Z"
+  },
+  {
+    "id": "how-to-use-github-actions",
+    "title": "Automate with GitHub Actions",
+    "description": "Learn how to implement CI/CD with GitHub Actions",
+    "youtubeLink": "https://www.youtube.com/watch?v=nyKZTKQS_EQ",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "6 minutes",
+    "updatedAt": "2020-07-13T19:59:14.191Z",
+    "createdAt": "2020-07-13T19:59:14.191Z"
+  },
+  {
+    "id": "what-is-dependency-injection",
+    "title": "What is Dependency Injection?",
+    "description": "Learn what is dependency injection and how to write better code with the help of it.",
+    "youtubeLink": "https://www.youtube.com/watch?v=0yc2UANSDiw",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "3 minutes",
+    "updatedAt": "2020-07-04T19:59:14.191Z",
+    "createdAt": "2020-07-04T19:59:14.191Z"
+  },
+  {
+    "id": "how-to-use-css-variables",
+    "title": "How to use CSS Variables?",
+    "description": "Learn how to write scalable CSS using CSS Variables.",
+    "youtubeLink": "https://www.youtube.com/watch?v=lgaxU7CRmxU",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2020-07-03T19:59:14.191Z",
+    "createdAt": "2020-07-03T19:59:14.191Z"
+  },
+  {
+    "id": "what-is-dom-shadow-dom-virtual-dom",
+    "title": "DOM, Shadow DOM, Virtual DOM",
+    "description": "Learn what is DOM, Shadow DOM and Virtual DOM and how they work.",
+    "youtubeLink": "https://www.youtube.com/watch?v=7Tok22qxPzQ",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "6 minutes",
+    "updatedAt": "2020-07-20T19:59:14.191Z",
+    "createdAt": "2020-07-20T19:59:14.191Z"
+  },
+  {
+    "id": "practical-intro-to-react",
+    "title": "Practical Introduction to React",
+    "description": "Learn how to create a React Application with practical example.",
+    "youtubeLink": "https://www.youtube.com/watch?v=NyG7YJWJd6s&list=PLkZYeFmDuaN3NDLnBG01-sH2-nwn43mYu",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "40 minutes",
+    "updatedAt": "2020-07-09T19:59:14.191Z",
+    "createdAt": "2020-07-09T19:59:14.191Z"
+  },
+  {
+    "id": "arrays-and-objects-in-javascript",
+    "title": "Arrays and Objects in JavaScript",
+    "description": "Learn how to manipulate arrays and objects in JavaScript.",
+    "youtubeLink": "https://www.youtube.com/watch?v=n3NKGsM3iEw",
+    "isPro": false,
+    "authorUsername": "kamranahmedse",
+    "duration": "12 minutes",
+    "updatedAt": "2020-05-09T19:59:14.191Z",
+    "createdAt": "2020-05-09T19:59:14.191Z"
+  }
+]
