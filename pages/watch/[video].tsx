@@ -1,4 +1,4 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, Link, Text } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
@@ -34,6 +34,12 @@ export default function Video(props: VideoProps) {
           }}
         />
         <Container maxW={'container.md'} position='relative'>
+          {video.youtubeLink && (
+            <Text mb='18px'>We are working on a better watch page — for now this <Link fontWeight={600}
+                                                                                       textDecoration={'underline'}
+                                                                                       href={video.youtubeLink}
+                                                                                       target='_blank'>video is best
+              viewed on YouTube</Link>.</Text>)}
           <MdRenderer>
             <VideoContent />
           </MdRenderer>
