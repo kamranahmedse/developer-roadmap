@@ -12,7 +12,8 @@
     "lint": "next lint",
     "meta:sitemap": "node scripts/sitemap.js",
     "meta:roadmaps": "node ./scripts/roadmaps-meta.js",
-    "meta": "npm run meta:roadmaps && npm run meta:sitemap"
+    "meta": "npm run meta:roadmaps && npm run meta:sitemap",
+    "postinstall": "husky install"
   },
   "dependencies": {
     "@chakra-ui/icons": "^1.0.14",
