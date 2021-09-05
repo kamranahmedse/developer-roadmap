@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<url>
+              <loc>https://roadmap.sh/frontend</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:09:59.269Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/backend</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:10:19.270Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/devops</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:10:44.437Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/react</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:11:05.241Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/postgresql-dba</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:04:01.161Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/android</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:04:18.383Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/qa</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:01:41.946Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/ci-cd</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-07-09T19:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/sso</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-07-01T19:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/oauth</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-06-28T19:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/jwt-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-06-20T19:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/token-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-06-02T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/session-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-26T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/basic-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-19T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/character-encodings</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-14T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/unfamiliar-codebase</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-04T20:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/why-build-it-and-they-will-come-wont-work-anymore</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-05-04T12:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/dhcp-in-one-picture</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-04-28T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/ssl-tls-https-ssh</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-04-22T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/asymptotic-notation</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-04-03T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/big-o-notation</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-03-15T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/random-numbers</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-03-14T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/scaling-databases</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-02-18T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/what-is-internet</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-02-29T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/torrent-client</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-01-17T15:48:21.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/levels-of-seniority</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-12-03T12:13:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/design-patterns-for-humans</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2019-10-09T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/journey-to-http2</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-12-04T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/dns-in-one-picture</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-12-04T12:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/http-caching</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2018-11-29T17:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/history-of-javascript</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2017-10-28T17:00:00.860Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/proxy-servers</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2020-07-24T12:40:18</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/about</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T18:03:52.068Z</lastmod>
+              <priority>0.8</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T20:56:05.377Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T20:58:19.326Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/roadmaps</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T18:05:27.986Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/signup</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T18:05:54.681Z</lastmod>
+              <priority>0.9</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/thanks</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T17:38:08.556Z</lastmod>
+              <priority>0.5</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/watch</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-04T18:06:47.417Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+</urlset>
