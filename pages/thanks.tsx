@@ -92,17 +92,24 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500}
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/mian-muhammad'>Mian Muhammad</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://digitalocean.com'>DigitalOcean</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/gabcvit'>Gabriel
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/gabcvit'>Gabriel
                   Checchia</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/hadasbro'>Slawomir
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/hadasbro'>Slawomir
                   Hadas</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/tugotron'>Victor
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/tugotron'>Victor
                   Sevelev</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/matheusfelipeog'>Matheus
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/matheusfelipeog'>Matheus
                   Felipe</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/emretanriverdi'>Emre
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/emretanriverdi'>Emre
                   Tanriverdi</Link></ListItem>
               </UnorderedList>
             </Box>
