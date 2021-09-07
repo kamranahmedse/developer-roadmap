@@ -11280,7 +11280,7 @@
                     "y": "1430",
                     "properties": {
                         "size": "15",
-                        "text": "Con los frameworks actuales y CSS-en-JS no tienes que preocuparte por ello pero aún así sería buena idea familiaririzarte con BEM por lo menos.",
+                        "text": "Con los frameworks actuales y CSS-en-JS no tienes que preocuparte por ello pero aún así sería buena idea familiarizarte con BEM por lo menos.",
                         "align": "center"
                     }
                 },
