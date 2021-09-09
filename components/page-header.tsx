@@ -16,13 +16,13 @@ export function PageHeader(props: PageHeaderProps) {
         <Heading
           as='h1'
           color='black'
-          fontSize={['33px', '33px', '40px']}
+          fontSize={['28px', '33px', '40px']}
           fontWeight={700}
           mb={['2px', '2px', '5px']}
         >
           {title}
         </Heading>
-        <Text fontSize={['14px', '14px', '15px']}>{subtitle}</Text>
+        <Text fontSize={['13px', '14px', '15px']}>{subtitle}</Text>
       </Container>
 
       {children && (
