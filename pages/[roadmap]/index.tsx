@@ -1,4 +1,4 @@
-import { Box, Button, Container, Link, Stack } from '@chakra-ui/react';
+import { Box, Button,  Text, Container, Link, Stack } from '@chakra-ui/react';
 import { ArrowBackIcon, AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
@@ -64,10 +64,9 @@ export default function Roadmap(props: RoadmapProps) {
           subtitle={roadmap.description}
         >
           <Stack mt='20px' isInline>
-            <Button d={['none', 'flex']} as={Link} href={'/roadmaps'} size='xs' py='14px' px='10px'
-                    leftIcon={<ArrowBackIcon />}
+            <Button d={['flex', 'flex']} as={Link} href={'/roadmaps'} size='xs' py='14px' px='10px'
                     colorScheme='teal' variant='solid' _hover={{ textDecoration: 'none' }}>
-              All Roadmaps
+              &larr; <Text as='span' d={['none', 'inline']} ml='5px'>All Roadmaps</Text>
             </Button>
 
             {roadmap.pdfUrl && (
@@ -81,7 +80,7 @@ export default function Roadmap(props: RoadmapProps) {
                       colorScheme='yellow'
                       variant='solid'
                       _hover={{ textDecoration: 'none' }}>
-                Download PDF
+                Download
               </Button>
             )}
             <Button as={Link} href={'/signup'} size='xs' py='14px' px='10px' leftIcon={<AtSignIcon />}

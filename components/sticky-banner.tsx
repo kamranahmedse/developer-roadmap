@@ -8,10 +8,17 @@ export function StickyBanner() {
           href={siteConfig.url.youtube}
           bg={'yellow.300'}
           color='gray.900'
+      // bg={'teal.900'}
+      // color='gray.300'
           alignItems='center'
+          position='fixed'
+          left={0}
+          right={0}
+          zIndex={999}
           justifyContent='center'
-          py='7px'
-          _hover={{ textDecoration: 'none', bg: 'yellow.400', }}
+          py='8px'
+          _hover={{ textDecoration: 'none', bg: 'yellow.400' }}
+      // _hover={{ textDecoration: 'none', bg: 'teal.800', color: 'gray.100' }}
           target='_blank'
     >
       <YouTubeLogo style={{ height: '20px', display: 'inline-block', marginRight: '7px' }} />
