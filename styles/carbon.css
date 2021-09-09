@@ -2,8 +2,8 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
   Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
-  bottom: 150px;
-  right: 20px;
+  left: 20px;
+  bottom: 15px;
 }
 
 @media (max-width: 700px) {
