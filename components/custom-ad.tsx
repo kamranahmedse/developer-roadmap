@@ -1,8 +1,6 @@
-import { Box } from '@chakra-ui/react';
-
 export const CustomAd = () => {
   return (
-    <Box className='custom-ad' d={['none !important', 'flex !important']}>
+    <div id='carbonads'>
       <span>
         <span className='carbon-wrap'>
           <a
@@ -34,6 +32,6 @@ export const CustomAd = () => {
           Sponsored by
         </a>
       </span>
-    </Box>
+    </div>
   );
 };

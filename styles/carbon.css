@@ -1,4 +1,4 @@
-#carbonads, .custom-ad {
+#carbonads {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
   Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
@@ -6,34 +6,29 @@
   right: 20px;
 }
 
-.custom-ad {
-  left: 20px !important;
-  right: auto !important;
-}
-
-#carbonads, .custom-ad {
+#carbonads {
   display: flex;
   max-width: 330px;
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, .1);
 }
 
-#carbonads a, .custom-ad a {
+#carbonads a {
   color: inherit;
   text-decoration: none;
 }
 
-#carbonads a:hover, .custom-ad a:hover {
+#carbonads a:hover {
   color: inherit;
 }
 
-#carbonads span, .custom-ad span {
+#carbonads span {
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-#carbonads .carbon-wrap, .custom-ad .carbon-wrap  {
+#carbonads .carbon-wrap {
   display: flex;
 }
 
