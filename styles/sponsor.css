@@ -1,61 +1,59 @@
-#carbonads {
+#sponsorads {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu,
   Cantarell, "Helvetica Neue", Helvetica, Arial, sans-serif;
   position: fixed;
-  bottom: 150px;
+  bottom: 15px;
   right: 20px;
 }
 
-@media (max-width: 700px) {
-  #carbonads {
-    display: none !important;
-  }
-}
-
-#carbonads {
+#sponsorads {
   display: flex;
   max-width: 330px;
   background-color: hsl(0, 0%, 98%);
   box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, .1);
 }
 
-#carbonads a {
+#sponsorads:hover {
+  z-index: 999;
+}
+
+#sponsorads a {
   color: inherit;
   text-decoration: none;
 }
 
-#carbonads a:hover {
+#sponsorads a:hover {
   color: inherit;
 }
 
-#carbonads span {
+#sponsorads span {
   position: relative;
   display: block;
   overflow: hidden;
 }
 
-#carbonads .carbon-wrap {
+#sponsorads .sponsor-wrap {
   display: flex;
 }
 
-.carbon-img {
+.sponsor-img {
   display: block;
   margin: 0;
   line-height: 1;
 }
 
-.carbon-img img {
+.sponsor-img img {
   display: block;
 }
 
-.carbon-text {
+.sponsor-text {
   font-size: 13px;
   padding: 10px;
   line-height: 1.5;
   text-align: left;
 }
 
-.carbon-poweredby {
+.sponsor-poweredby {
   display: block;
   padding: 8px 10px;
   background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
