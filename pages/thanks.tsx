@@ -74,17 +74,18 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Monthly Sponsors</Heading>
               <UnorderedList>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/MelnikovAG'>Alexander
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/Stuart-cmd'>Stuart Bowles</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/MelnikovAG'>Alexander
                   Blake</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/josephjacks'>Joseph
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/josephjacks'>Joseph
                   Jacks</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/MustafaMagdi'>Mustafa
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/MustafaMagdi'>Mustafa
                   Magdi</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/dmytbolko'>Dmytro
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/dmytbolko'>Dmytro
                   Bolkachov</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500}
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/liquidaty'>Liquidaty</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' fontWeight={500} href='https://github.com/Lazy-AL'>Anri
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500} href='https://github.com/Lazy-AL'>Anri
                   Lazash</Link></ListItem>
               </UnorderedList>
             </Box>

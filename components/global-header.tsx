@@ -30,6 +30,7 @@ function DesktopMenuLinks() {
       <MenuLink text={'Roadmaps'} link={'/roadmaps'} />
       <MenuLink text={'Guides'} link={'/guides'} />
       <MenuLink text={'Videos'} link={'/watch'} />
+      <MenuLink text={'Thanks'} link={'/thanks'} />
 
       <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
             _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
@@ -76,9 +77,9 @@ function MobileMenuLinks() {
           <Link href='/roadmaps'>Roadmaps</Link>
           <Link href='/guides'>Guides</Link>
           <Link href='/watch'>Videos</Link>
-          <Link target='_blank' href={siteConfig.url.youtube}>YouTube</Link>
+          <Link href='/thanks'>Thanks</Link>
           <Link href='/signup'>Subscribe</Link>
-          <CloseButton onClick={() => setIsOpen(false)} pos='fixed' top='3px' right='15px' size='lg' />
+          <CloseButton onClick={() => setIsOpen(false)} pos='fixed' top='40px' right='15px' size='lg' />
         </Stack>
       )}
     </>
