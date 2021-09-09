@@ -1,23 +1,24 @@
 export const CustomAd = () => {
   return (
-    <div id='sponsorads'>
+    <div id='carbonads'>
       <span>
-        <span className='sponsor-wrap'>
+        <span className='carbon-wrap'>
           <a
             href='https://freemote.com/strategy?sl=roadmap'
-            className='sponsor-img'
+            className='carbon-img'
             target='_blank'
           >
             <img
               src='/fm-img.png'
               alt='FM Logo'
-              width='112'
-              style={{ maxWidth: '112px', border: 'none' }}
+              height='100'
+              width='130'
+              style={{ maxWidth: '130px', border: 'none' }}
             />
           </a>
           <a
             href='https://freemote.com/strategy?sl=roadmap'
-            className='sponsor-text'
+            className='carbon-text'
             target='_blank'
           >
             He Went from ZERO TO $74,000 as a Full Time Developer in 7 Weeks
@@ -25,7 +26,7 @@ export const CustomAd = () => {
         </span>
         <a
           href='https://github.com/sponsors/kamranahmedse'
-          className='sponsor-poweredby'
+          className='carbon-poweredby'
           target='_blank'
         >
           Sponsored by

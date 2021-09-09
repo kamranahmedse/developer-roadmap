@@ -5,7 +5,6 @@ import 'prism-themes/themes/prism-shades-of-purple.css';
 import { roadmapTheme } from '../styles/theme';
 import { firePageView } from '../lib/gtag';
 import '../styles/carbon.css';
-import '../styles/sponsor.css';
 import { StickyBanner } from '../components/sticky-banner';
 
 function MyApp({ Component, pageProps }: AppProps) {
