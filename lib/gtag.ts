@@ -17,7 +17,7 @@ export function firePageView(url: string) {
 }
 
 // https://developers.google.com/analytics/devguides/collection/gtagjs/events
-export function event(props: { action: string; category: string; label: string; value: string; }) {
+export function event(props: { action: string; category: string; label?: string; value?: string; }) {
   const { action, category, label, value } = props;
   if (!window.gtag) {
     console.warn('Missing GTAG – Analytics disabled');
