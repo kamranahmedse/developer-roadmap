@@ -13,6 +13,7 @@ import { getAllGuides, GuideType } from '../lib/guide';
 import { getAllVideos, VideoType } from '../lib/video';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
+import { event } from '../lib/gtag';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -39,6 +40,11 @@ export default function Home(props: HomeProps) {
 
             <Text fontSize={['14px', '14px', '16px']}>We also have a <Link textDecoration={'underline'}
                                                                            href={siteConfig.url.youtube}
+                                                                           onClick={() => event({
+                                                                             category: 'Subscription',
+                                                                             action: 'Clicked the YouTube link',
+                                                                             label: 'YouTube link on home'
+                                                                           })}
                                                                            target='_blank'
                                                                            fontWeight={600}>YouTube
               channel</Link> which we hope you are going to love.</Text>
