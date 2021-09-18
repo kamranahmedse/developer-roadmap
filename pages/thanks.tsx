@@ -49,21 +49,30 @@ export default function Thanks() {
               <Heading mb='15px' fontSize='25px' as='h2'>Companies</Heading>
 
               <Stack spacing='10px'>
-                <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
+                <Box as={Link} href='https://oss.capital/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                     bg='teal.50'>
                   <Image
                     alt='OSS Capital'
                     w='400px'
                     src='/sponsors/oss-capital-logo.svg'
                   />
                 </Box>
-                <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
+                <Box as={Link} href='https://park.io' _hover={{ textDecoration: 'none' }} target='_blank'
+                     borderWidth={1}
+                     borderRadius='5px' p='10px 25px' bg='#3d157a' color='white'>
+                  <Text fontWeight={700} fontSize='55px'>park.io</Text>
+                </Box>
+                <Box as={Link} href={'https://forbes.com'} _hover={{ textDecoration: 'none' }} target='_blank'
+                     borderWidth={1}
+                     borderRadius='5px' p='20px' bg='#231f20'>
                   <Image
                     alt='Forbes'
                     w='250px'
                     src='/sponsors/forbes-logo.png'
                   />
                 </Box>
-                <Box borderWidth={1} borderRadius='5px' p='20px' bg='teal.50'>
+                <Box as={Link} href='https://zalando.de' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                     bg='teal.50'>
                   <Image
                     alt='Zalando'
                     w='300px'
