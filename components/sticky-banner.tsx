@@ -10,9 +10,8 @@ export function StickyBanner() {
           bg={'yellow.300'}
           color='gray.900'
           alignItems='center'
-          position='fixed'
-          left={0}
-          right={0}
+          position='sticky'
+          top={0}
           zIndex={999}
           justifyContent='center'
           py='8px'
