@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "AWS Roadmap: Learn to use AWS",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to aws",
+      "aws roadmap",
+      "aws skills",
+      "aws skills test",
+      "skills for aws",
+      "cloud development",
+      "what is aws",
+      "aws quiz",
+      "aws interview questions"
+    ]
+  },
+  "title": "AWS",
+  "description": "Everything that is there to learn about AWS and the ecosystem in 2021.",
+  "featuredTitle": "AWS",
+  "featuredDescription": "Step by step guide to learn AWS in 2021",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isUpcoming": true,
+  "featured": true,
+  "contentPath": "./landscape.md",
+  "resourcesPath": "./resources.md",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  }
+}
