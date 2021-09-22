@@ -4,10 +4,6 @@
       "title": "Learn to become a modern frontend developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development. Learn to become a modern frontend developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
-        "frontend roadmap",
-        "javascript roadmap",
-        "frontend roadmap 2021",
-        "javascript roadmap 2021",
         "guide to becoming a developer",
         "guide to becoming a frontend developer",
         "frontend developer",
@@ -173,45 +169,47 @@
   },
   {
     "seo": {
-      "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "title": "System Administrator: Learn to become a linux system administrator in 2021",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for system administrators. Learn to become a modern system administrator by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
-        "guide to becoming a database administrator",
-        "guide to becoming a DBA",
-        "dba roadmap",
-        "db administrator roadmap",
-        "database administrator roadmap",
-        "postgresql roadmap",
-        "dba skills",
-        "db administrator skills",
-        "become dba",
-        "postgresql skills",
-        "modern dba skills",
-        "dba skills test",
-        "skills for dba",
-        "skills for database administrator",
-        "learn dba",
-        "what is dba",
-        "database administrator quiz",
-        "dba interview questions"
+        "guide to becoming a system administrator",
+        "guide to becoming a sysadmin",
+        "system administrator roadmap",
+        "linux system administrator roadmap",
+        "linux sysadmin roadmap",
+        "system administrator roadmap",
+        "linux roadmap",
+        "system administrator skills",
+        "sysadmin skills",
+        "system admin skills",
+        "become system administrator",
+        "sysadmin skills",
+        "modern system administrator skills",
+        "system administrator skills test",
+        "how to become a system administrator",
+        "skills for system administrator",
+        "learn sysadmin",
+        "what is system administrator",
+        "system administrator quiz",
+        "sysadmin interview questions"
       ]
     },
-    "title": "PostgreSQL DBA",
-    "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
-    "featuredTitle": "DBA",
-    "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-    "contentPath": "/roadmaps/5-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/5-postgresql-dba/resources.md",
+    "title": "System Administrator",
+    "description": "Step by step guide to becoming a modern system administrator in 2021",
+    "featuredTitle": "SysAdmin",
+    "featuredDescription": "Step by step guide to become a system administrator in 2021",
+    "contentPath": "/roadmaps/5-sysadmin/landscape.md",
+    "resourcesPath": "/roadmaps/5-sysadmin/resources.md",
     "author": {
-      "name": "Alexey Lesovsky",
-      "url": "https://github.com/lesovsky"
+      "name": "Kamran Ahmed",
+      "url": "https://github.com/kamranahmedse"
     },
     "isCommunity": true,
     "isTextHeavy": true,
     "featured": true,
     "detailed": false,
     "versions": [],
-    "id": "postgresql-dba",
+    "id": "sysadmin",
     "isUpcoming": false
   },
   {
@@ -255,6 +253,86 @@
   },
   {
     "seo": {
+      "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a database administrator",
+        "guide to becoming a DBA",
+        "dba roadmap",
+        "db administrator roadmap",
+        "database administrator roadmap",
+        "postgresql roadmap",
+        "dba skills",
+        "db administrator skills",
+        "become dba",
+        "postgresql skills",
+        "modern dba skills",
+        "dba skills test",
+        "skills for dba",
+        "skills for database administrator",
+        "learn dba",
+        "what is dba",
+        "database administrator quiz",
+        "dba interview questions"
+      ]
+    },
+    "title": "PostgreSQL DBA",
+    "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
+    "featuredTitle": "DBA",
+    "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
+    "contentPath": "/roadmaps/7-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/7-postgresql-dba/resources.md",
+    "author": {
+      "name": "Alexey Lesovsky",
+      "url": "https://github.com/lesovsky"
+    },
+    "isCommunity": true,
+    "isTextHeavy": true,
+    "featured": true,
+    "detailed": false,
+    "versions": [],
+    "id": "postgresql-dba",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
+      "title": "AWS Roadmap: Learn to use AWS",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to aws",
+        "aws roadmap",
+        "aws skills",
+        "aws skills test",
+        "skills for aws",
+        "cloud development",
+        "what is aws",
+        "aws quiz",
+        "aws interview questions"
+      ]
+    },
+    "title": "AWS",
+    "description": "Everything that is there to learn about AWS and the ecosystem in 2021.",
+    "featuredTitle": "AWS",
+    "featuredDescription": "Step by step guide to learn AWS in 2021",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isUpcoming": true,
+    "featured": true,
+    "contentPath": "/roadmaps/8-aws/landscape.md",
+    "resourcesPath": "/roadmaps/8-aws/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "id": "aws"
+  },
+  {
+    "seo": {
       "title": "QA Roadmap: Learn to become a modern QA engineer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -277,8 +355,9 @@
     "featuredTitle": "QA",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
     "isUpcoming": true,
-    "contentPath": "/roadmaps/7-qa/landscape.md",
-    "resourcesPath": "/roadmaps/7-qa/resources.md",
+    "featured": true,
+    "contentPath": "/roadmaps/9-qa/landscape.md",
+    "resourcesPath": "/roadmaps/9-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"

@@ -52,6 +52,7 @@ export default function Home(props: HomeProps) {
           <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']}>
             {roadmaps.map((roadmap: RoadmapType, counter: number) => (
               <HomeRoadmapItem
+                isUpcoming={roadmap.isUpcoming}
                 url={`/${roadmap.id}`}
                 key={roadmap.id}
                 colorIndex={counter}
