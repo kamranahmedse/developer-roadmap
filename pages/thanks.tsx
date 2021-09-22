@@ -52,9 +52,17 @@ export default function Thanks() {
                 <Box as={Link} href='https://oss.capital/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
-                    alt='OSS Capital'
+                    alt=''
                     w='400px'
                     src='/sponsors/oss-capital-logo.svg'
+                  />
+                </Box>
+                <Box as={Link} href='https://studio3t.com/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                     bg='teal.50'>
+                  <Image
+                    alt=''
+                    w='300px'
+                    src='/sponsors/studio3t.png'
                   />
                 </Box>
                 <Box as={Link} href='https://park.io' _hover={{ textDecoration: 'none' }} target='_blank'
@@ -66,7 +74,7 @@ export default function Thanks() {
                      borderWidth={1}
                      borderRadius='5px' p='20px' bg='#231f20'>
                   <Image
-                    alt='Forbes'
+                    alt=''
                     w='250px'
                     src='/sponsors/forbes-logo.png'
                   />
@@ -74,7 +82,7 @@ export default function Thanks() {
                 <Box as={Link} href='https://zalando.de' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
-                    alt='Zalando'
+                    alt=''
                     w='300px'
                     src='/sponsors/zalando-logo.svg'
                   />
