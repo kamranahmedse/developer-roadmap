@@ -25,6 +25,7 @@
     "@next/mdx": "^11.1.0",
     "@svgr/webpack": "^5.5.0",
     "date-fns": "^2.23.0",
+    "focus-visible": "^5.2.0",
     "framer-motion": "^4.1.17",
     "next": "^11.1.0",
     "prism-themes": "^1.8.0",
@@ -34,6 +35,8 @@
   },
   "devDependencies": {
     "@types/eslint": "7.28.0",
+    "@types/gh-pages": "^3.2.0",
+    "@types/glob": "^7.1.4",
     "@types/react": "17.0.16",
     "@types/react-dom": "17.0.2",
     "@types/styled-components": "^5.1.12",

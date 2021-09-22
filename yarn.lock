@@ -3879,6 +3879,11 @@
   dependencies:
     "tslib" "^1.9.3"
 
+"focus-visible@^5.2.0":
+  "integrity" "sha512-Rwix9pBtC1Nuy5wysTmKy+UjbDJpIfg8eHjw0rjZ1mX4GNLz1Bmd16uDpI3Gk1i70Fgcs8Csg2lPm8HULFg9DQ=="
+  "resolved" "https://registry.npmjs.org/focus-visible/-/focus-visible-5.2.0.tgz"
+  "version" "5.2.0"
+
 "foreach@^2.0.5":
   "integrity" "sha1-C+4AUBiusmDQo6865ljdATbsG5k="
   "resolved" "https://registry.npmjs.org/foreach/-/foreach-2.0.5.tgz"
