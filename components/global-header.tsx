@@ -88,7 +88,7 @@ function MobileMenuLinks() {
 
 export function GlobalHeader() {
   return (
-    <Box bg='gray.900' p='58px 0 20px'>
+    <Box bg='gray.900' p='20px 0'>
       <Container maxW='container.md'>
         <Flex justifyContent='space-between' alignItems='center'>
           <Box>
