@@ -1,4 +1,4 @@
-The roadmap below is the list of steps that one might take in order to become a linux system administrator. It is an exhaustive list meant to expose you at least once to important elements of the trade. If you did every last item on this list then you would be eminently qualified to work any Linux admin posting you might ever encounter. The roadmap and all the steps listed below were derived [from a really interesting thread on reddit](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) which I would recommend you to check out.
+The roadmap below is the list of steps that one might take in order to become a linux system administrator. It is an exhaustive list meant to expose you at least once to important elements of the trade. If you did every last item on this list then you would be eminently qualified to work any Linux admin posting you might ever encounter.
 
 * Set up a KVM hypervisor.
 * Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information.)
@@ -22,5 +22,7 @@ The roadmap below is the list of steps that one might take in order to become a 
 * Bonus exercise: create three more VMs. A CentOS 5, 6, and 7 machine. On each of these machines, set them up to allow you to create custom RPMs and import them into the Spacewalk server instance. Ensure your Puppet configurations work for all three and produce like-for-like behaviors.
 
 Do these things, and you will be fully exposed to every aspect of Linux Enterprise systems administration. Do them well and you will have the technical expertise required to seek "Senior" roles. If you go whole-hog crash-course full-time it with no other means of income, I would expect it would take between 3 and 6 months to go from "I think I'm good with computers" to achieving all of these -- assuming you're not afraid of IRC and google.
+
+The roadmap and all the steps listed above were derived [from a really interesting thread on reddit](https://www.reddit.com/r/linuxadmin/comments/2s924h/how_did_you_get_your_start/cnnw1ma/) which I would recommend you to check out.
 
 
