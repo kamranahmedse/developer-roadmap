@@ -1,4 +1,4 @@
-The roadmap below is the list of steps that one might take in order to become a linux system administrator. It is an exhaustive list meant to expose you at least once to important elements of the trade. If you did every last item on this list then you would be eminently qualified to work any Linux admin posting you might ever encounter.
+The roadmap below is the list of practical exercises that one might take in order to become a linux system administrator. It is an exhaustive list meant to expose you at least once to important elements of the trade. If you did every last item on this list then you would be eminently qualified to work any Linux admin posting you might ever encounter.
 
 * Set up a KVM hypervisor.
 * Inside of that KVM hypervisor, install a Spacewalk server. Use CentOS 6 as the distro for all work below. (For bonus points, set up errata importation on the CentOS channels, so you can properly see security update advisory information.)
