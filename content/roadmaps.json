@@ -169,51 +169,6 @@
   },
   {
     "seo": {
-      "title": "System Administrator: Learn to become a linux system administrator in 2021",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for system administrators. Learn to become a modern system administrator by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to becoming a system administrator",
-        "guide to becoming a sysadmin",
-        "system administrator roadmap",
-        "linux system administrator roadmap",
-        "linux sysadmin roadmap",
-        "system administrator roadmap",
-        "linux roadmap",
-        "system administrator skills",
-        "sysadmin skills",
-        "system admin skills",
-        "become system administrator",
-        "sysadmin skills",
-        "modern system administrator skills",
-        "system administrator skills test",
-        "how to become a system administrator",
-        "skills for system administrator",
-        "learn sysadmin",
-        "what is system administrator",
-        "system administrator quiz",
-        "sysadmin interview questions"
-      ]
-    },
-    "title": "System Administrator",
-    "description": "Step by step guide to becoming a modern system administrator in 2021",
-    "featuredTitle": "SysAdmin",
-    "featuredDescription": "Step by step guide to become a system administrator in 2021",
-    "contentPath": "/roadmaps/5-sysadmin/landscape.md",
-    "resourcesPath": "/roadmaps/5-sysadmin/resources.md",
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://github.com/kamranahmedse"
-    },
-    "isCommunity": true,
-    "isTextHeavy": true,
-    "featured": true,
-    "detailed": false,
-    "versions": [],
-    "id": "sysadmin",
-    "isUpcoming": false
-  },
-  {
-    "seo": {
       "title": "Android Developer Roadmap: Learn to become an Android developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
