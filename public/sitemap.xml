@@ -25,33 +25,27 @@
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/sysadmin</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2021-09-22T12:47:28.819Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-05T18:22:27.710Z</lastmod>
+              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-05T18:22:27.710Z</lastmod>
+              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/aws</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-22T12:34:39.639Z</lastmod>
+              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-22T12:27:37.565Z</lastmod>
+              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -255,7 +249,7 @@
 <url>
               <loc>https://roadmap.sh/thanks</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-18T09:42:25.872Z</lastmod>
+              <lastmod>2021-09-22T12:55:54.360Z</lastmod>
               <priority>0.5</priority>
           </url>
 <url>
