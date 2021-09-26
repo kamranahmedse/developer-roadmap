@@ -37,9 +37,10 @@
     },
     "featured": true,
     "imagePath": "/roadmaps/frontend.png",
-    "resourcesPath": "/roadmaps/1-frontend/resources.md",
+    "resourcesPath": "/roadmaps/100-frontend/resources.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
     "id": "frontend",
+    "metaPath": "/roadmaps/100-frontend/meta.json",
     "isUpcoming": false
   },
   {
@@ -76,13 +77,14 @@
     "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
     "featured": true,
     "imagePath": "/roadmaps/backend.png",
-    "resourcesPath": "/roadmaps/2-backend/resources.md",
+    "resourcesPath": "/roadmaps/101-backend/resources.md",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
     "id": "backend",
+    "metaPath": "/roadmaps/101-backend/meta.json",
     "isUpcoming": false
   },
   {
@@ -113,7 +115,7 @@
     "featuredDescription": "Step by step guide for DevOps or operations role in 2021",
     "featured": true,
     "imagePath": "/roadmaps/devops.png",
-    "resourcesPath": "/roadmaps/3-devops/resources.md",
+    "resourcesPath": "/roadmaps/102-devops/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -125,6 +127,7 @@
     },
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap",
     "id": "devops",
+    "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
   },
   {
@@ -152,8 +155,8 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "contentPath": "/roadmaps/4-react/landscape.md",
-    "resourcesPath": "/roadmaps/4-react/resources.md",
+    "contentPath": "/roadmaps/103-react/landscape.md",
+    "resourcesPath": "/roadmaps/103-react/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -165,6 +168,7 @@
     },
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/react-roadmap",
     "id": "react",
+    "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
   },
   {
@@ -192,8 +196,8 @@
     "isTextHeavy": true,
     "isCommunity": true,
     "featured": true,
-    "contentPath": "/roadmaps/6-android/landscape.md",
-    "resourcesPath": "/roadmaps/6-android/resources.md",
+    "contentPath": "/roadmaps/104-android/landscape.md",
+    "resourcesPath": "/roadmaps/104-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -204,6 +208,45 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "android",
+    "metaPath": "/roadmaps/104-android/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
+      "title": "Python Developer Roadmap: Learn to become a Python developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming an python developer",
+        "python developer roadmap",
+        "python roadmap",
+        "become python developer",
+        "python developer skills",
+        "python skills test",
+        "skills for python development",
+        "learn python development",
+        "what is python",
+        "python quiz",
+        "python interview questions"
+      ]
+    },
+    "title": "Python Developer",
+    "description": "Step by step guide to becoming a Python developer in 2021",
+    "featuredTitle": "Python",
+    "featuredDescription": "Step by step guide to becoming a Python Developer in 2021",
+    "isTextHeavy": true,
+    "isCommunity": true,
+    "featured": true,
+    "resourcesPath": "/roadmaps/105-python/resources.md",
+    "contentPath": "/roadmaps/105-python/landscape.md",
+    "versions": [
+      "latest"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "id": "python",
+    "metaPath": "/roadmaps/105-python/meta.json",
     "isUpcoming": false
   },
   {
@@ -235,8 +278,8 @@
     "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
     "featuredTitle": "DBA",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-    "contentPath": "/roadmaps/7-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/7-postgresql-dba/resources.md",
+    "contentPath": "/roadmaps/106-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/106-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -247,6 +290,7 @@
     "detailed": false,
     "versions": [],
     "id": "postgresql-dba",
+    "metaPath": "/roadmaps/106-postgresql-dba/meta.json",
     "isUpcoming": false
   },
   {
@@ -273,8 +317,8 @@
     "isCommunity": false,
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/8-aws/landscape.md",
-    "resourcesPath": "/roadmaps/8-aws/resources.md",
+    "contentPath": "/roadmaps/107-aws/landscape.md",
+    "resourcesPath": "/roadmaps/107-aws/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -284,7 +328,8 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "id": "aws"
+    "id": "aws",
+    "metaPath": "/roadmaps/107-aws/meta.json"
   },
   {
     "seo": {
@@ -311,12 +356,13 @@
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/9-qa/landscape.md",
-    "resourcesPath": "/roadmaps/9-qa/resources.md",
+    "contentPath": "/roadmaps/108-qa/landscape.md",
+    "resourcesPath": "/roadmaps/108-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
-    "id": "qa"
+    "id": "qa",
+    "metaPath": "/roadmaps/108-qa/meta.json"
   }
 ]

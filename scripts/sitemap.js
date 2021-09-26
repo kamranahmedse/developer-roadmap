@@ -72,14 +72,16 @@ function getPageRoutes() {
   return pageRoutes;
 }
 
-function generateNode({
-  slug,
-  basePath,
-  fileName,
-  priority = null,
-  date = null,
-  frequency = 'monthly'
-}) {
+function generateNode(nodeProps) {
+  const {
+    slug,
+    basePath,
+    fileName,
+    priority = null,
+    date = null,
+    frequency = 'monthly'
+  } = nodeProps;
+
   const pagePath = path.join(basePath, fileName);
   let pageStats = {};
   try {
@@ -126,7 +128,7 @@ function generateSiteMap() {
   const roadmapsChunk = roadmaps.map((roadmap, roadmapCounter) => {
     return generateNode({
       basePath: ROADMAPS_PATH,
-      fileName: `${roadmapCounter + 1}-${roadmap.id}/meta.json`,
+      fileName: roadmap.metaPath.replace('/roadmaps', ''),
       slug: `/${roadmap.id}`,
       date: roadmap.updatedAt,
       priority: '1.0'

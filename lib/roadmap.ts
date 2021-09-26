@@ -18,6 +18,7 @@ export type RoadmapType = {
   imagePath?: string,
   contentPath?: string;
   resourcesPath: string;
+  metaPath: string;
   isCommunity: boolean;
   isUpcoming: boolean;
   id: string;
