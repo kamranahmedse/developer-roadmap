@@ -1,5 +1,16 @@
 [
   {
+    "id": "acid-explained",
+    "title": "ACID Explained: Atomic, Consistent, Isolated Durable",
+    "description": "Learn what it means for a database to be ACID compliant with examples.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=yaQ5YMWkxq4",
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2021-09-26T19:59:14.191Z",
+    "createdAt": "2021-09-26T19:59:14.191Z"
+  },
+  {
     "id": "transport-protocols-tcp-vs-udp",
     "title": "Transport Protocols: TCP vs UDP",
     "description": "Learn about the Transport Layer of the TCP/IP model and different transport protocols.",
