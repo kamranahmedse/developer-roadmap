@@ -13,4 +13,3 @@ Asymptotic notation is the standard way of measuring the time and space that an 
 
 [![](/guides/asymptotic-notation.png)](/guides/asymptotic-notation.png)
 
-Here is the [original tweet](https://twitter.com/kamranahmedse/status/1243861514907418624) where this image was posted.
