@@ -2,4 +2,3 @@ Big-O notation is the mathematical notation that helps analyse the algorithms to
 
 [![](/guides/big-o-notation.png)](/guides/big-o-notation.png)
 
-Here is the [original tweet](https://twitter.com/kamranahmedse/status/1235708842610212864) where this image was posted.

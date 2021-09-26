@@ -2,4 +2,3 @@ Random numbers are everywhere from computer games to lottery systems, graphics s
 
 [![](/guides/random-numbers.png)](/guides/random-numbers.png)
 
-Here is the [original tweet](https://twitter.com/kamranahmedse/status/1237851549302312962) where this image was posted.

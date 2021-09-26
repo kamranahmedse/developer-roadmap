@@ -2,4 +2,3 @@ The image below details the differences between the continuous integration and c
 
 [![](/guides/ci-cd.png)](/guides/ci-cd.png)
 
-Here is the [original tweet](https://twitter.com/kamranahmedse/status/1282806173939511298) where this image was posted.
