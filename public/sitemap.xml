@@ -27,25 +27,31 @@
 <url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
+              <lastmod>2021-09-05T18:22:27.710Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/python</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-26T19:59:45.842Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
+              <lastmod>2021-09-05T18:22:27.710Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/aws</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
+              <lastmod>2021-09-22T12:34:39.639Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-25T21:04:08.144Z</lastmod>
+              <lastmod>2021-09-22T12:27:37.565Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>

@@ -25,6 +25,8 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
     resourcesPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.resourcesPath);
   }
 
+  let metaPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), 'meta.json');
+
   console.log(`----------------------------`);
   console.log(`[#] Roadmap: ${roadmapMeta.title}`);
   console.log(`[x] Generating sidebar`);
@@ -36,6 +38,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
       id: roadmapSlug,
       contentPath: contentPath,
       resourcesPath: resourcesPath,
+      metaPath: metaPath,
       isUpcoming: roadmapMeta.isUpcoming || false
     }
   ];
