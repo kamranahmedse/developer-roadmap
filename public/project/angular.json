@@ -1,0 +1,3065 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "1411",
+          "typeID": "Arrow",
+          "zOrder": "39",
+          "w": "16",
+          "h": "68",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "474",
+          "y": "242",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4869331283627979,
+              "y": 0.16641045349730976
+            },
+            "p2": {
+              "x": 8,
+              "y": 68
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1412",
+          "typeID": "Canvas",
+          "zOrder": "40",
+          "w": "454",
+          "h": "90",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "108",
+          "y": "183"
+        },
+        {
+          "ID": "1413",
+          "typeID": "Label",
+          "zOrder": "41",
+          "measuredW": "97",
+          "measuredH": "36",
+          "x": "421",
+          "y": "318",
+          "properties": {
+            "size": "28",
+            "text": "Angular"
+          }
+        },
+        {
+          "ID": "1414",
+          "typeID": "Arrow",
+          "zOrder": "42",
+          "w": "19",
+          "h": "81",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "432",
+          "y": "364",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 19,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5567523389124819,
+              "y": -0.13813347062029335
+            },
+            "p2": {
+              "x": 6.934965300090653,
+              "y": 81.42459516339846
+            }
+          }
+        },
+        {
+          "ID": "1415",
+          "typeID": "Label",
+          "zOrder": "43",
+          "measuredW": "396",
+          "measuredH": "28",
+          "x": "137",
+          "y": "202",
+          "properties": {
+            "size": "20",
+            "text": "Frontend Roadmap till Framework Selection"
+          }
+        },
+        {
+          "ID": "1416",
+          "typeID": "Label",
+          "zOrder": "44",
+          "measuredW": "152",
+          "measuredH": "24",
+          "x": "258",
+          "y": "232",
+          "properties": {
+            "size": "16",
+            "color": "10027263",
+            "text": "roadmap.sh/frontend"
+          }
+        },
+        {
+          "ID": "1426",
+          "typeID": "Arrow",
+          "zOrder": "38",
+          "w": "33",
+          "h": "73",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "428",
+          "y": "129",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": {
+              "x": 6,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4744027303754264,
+              "y": -0.21757679180887365
+            },
+            "p2": {
+              "x": 33,
+              "y": 72.5
+            }
+          }
+        },
+        {
+          "ID": "1427",
+          "typeID": "Canvas",
+          "zOrder": "46",
+          "w": "262",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "354",
+          "y": "437",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1428",
+          "typeID": "Label",
+          "zOrder": "47",
+          "measuredW": "175",
+          "measuredH": "24",
+          "x": "397",
+          "y": "447",
+          "properties": {
+            "size": "16",
+            "text": "Learn TypeScript Basics"
+          }
+        },
+        {
+          "ID": "1429",
+          "typeID": "Arrow",
+          "zOrder": "32",
+          "w": "107",
+          "h": "51",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "276",
+          "y": "405",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 107,
+              "y": 51
+            },
+            "p1": {
+              "x": 0.5245584633234497,
+              "y": 0.05852778135877272
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1430",
+          "typeID": "Arrow",
+          "zOrder": "33",
+          "w": "102",
+          "h": "51",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "282",
+          "y": "462",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 102,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5656811947576955,
+              "y": -0.05547089302042049
+            },
+            "p2": {
+              "x": 0.00391587828403317,
+              "y": 50.680759201315595
+            }
+          }
+        },
+        {
+          "ID": "1431",
+          "typeID": "Arrow",
+          "zOrder": "34",
+          "w": "115",
+          "h": "5",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "274",
+          "y": "457",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 115,
+              "y": 1
+            },
+            "p1": {
+              "x": 0.5205160087037612,
+              "y": 0.03901150139881877
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1442",
+          "typeID": "Arrow",
+          "zOrder": "31",
+          "w": "88",
+          "h": "88",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "284",
+          "y": "468",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 88.85873396459311,
+              "y": -0.1566834906291774
+            },
+            "p1": {
+              "x": 0.5656811947576954,
+              "y": -0.05547089302042051
+            },
+            "p2": {
+              "x": 0.3637812831232736,
+              "y": 88.33826919084072
+            }
+          }
+        },
+        {
+          "ID": "1445",
+          "typeID": "Arrow",
+          "zOrder": "30",
+          "w": "117",
+          "h": "50",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "598",
+          "y": "401",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 117.03921766627673,
+              "y": -0.41284752854630824
+            },
+            "p1": {
+              "x": 0.5198780554566917,
+              "y": 0.06964721983543032
+            },
+            "p2": {
+              "x": 0.22588012673645608,
+              "y": 49.14432597307683
+            }
+          }
+        },
+        {
+          "ID": "1448",
+          "typeID": "Arrow",
+          "zOrder": "29",
+          "w": "109",
+          "h": "5",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "608",
+          "y": "453",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 108.21915036869632,
+              "y": -0.4958086220839846
+            },
+            "p1": {
+              "x": 0.5209787928221856,
+              "y": 0.005742251223491233
+            },
+            "p2": {
+              "x": -0.3346582539068095,
+              "y": 4.2239221875944395
+            }
+          }
+        },
+        {
+          "ID": "1451",
+          "typeID": "Arrow",
+          "zOrder": "28",
+          "w": "131",
+          "h": "37",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "594",
+          "y": "465",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 130.47867928563346,
+              "y": 37.061364879539155
+            },
+            "p1": {
+              "x": 0.54496644295302,
+              "y": -0.04519015659955236
+            },
+            "p2": {
+              "x": -0.49385068294191115,
+              "y": 0.483451104531639
+            }
+          }
+        },
+        {
+          "ID": "1452",
+          "typeID": "__group__",
+          "zOrder": "36",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "486",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "121",
+                  "measuredH": "24",
+                  "x": "50",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Structural Typing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1453",
+          "typeID": "__group__",
+          "zOrder": "37",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "533",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "109",
+                  "measuredH": "24",
+                  "x": "65",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Type Inference"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1454",
+          "typeID": "__group__",
+          "zOrder": "48",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "439",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "148",
+                  "measuredH": "24",
+                  "x": "37",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Why use TypeScript?"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1455",
+          "typeID": "__group__",
+          "zOrder": "35",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "392",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "141",
+                  "measuredH": "24",
+                  "x": "44",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "What is TypeScript?"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1456",
+          "typeID": "__group__",
+          "zOrder": "51",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "706",
+          "y": "477",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "94",
+                  "measuredW": "92",
+                  "measuredH": "24",
+                  "x": "64",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Type Guards"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1457",
+          "typeID": "__group__",
+          "zOrder": "50",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "706",
+          "y": "429",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "94",
+                  "measuredH": "24",
+                  "x": "64",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Built-in types"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1458",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "707",
+          "y": "382",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "89",
+                  "measuredH": "24",
+                  "x": "65",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Union Types"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1460",
+          "typeID": "Canvas",
+          "zOrder": "52",
+          "w": "262",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "354",
+          "y": "485",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1461",
+          "typeID": "Label",
+          "zOrder": "53",
+          "measuredW": "136",
+          "measuredH": "24",
+          "x": "417",
+          "y": "495",
+          "properties": {
+            "size": "16",
+            "text": "Learn RxJS Basics"
+          }
+        },
+        {
+          "ID": "1463",
+          "typeID": "Arrow",
+          "zOrder": "27",
+          "w": "95",
+          "h": "112",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "287",
+          "y": "511",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.27635331203754276,
+              "y": 109.64460147270881
+            },
+            "p1": {
+              "x": 0.4337829756129974,
+              "y": -0.30427270915010957
+            },
+            "p2": {
+              "x": 94.11826288153031,
+              "y": -0.08913985231384913
+            }
+          }
+        },
+        {
+          "ID": "1465",
+          "typeID": "Canvas",
+          "zOrder": "54",
+          "w": "238",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "69",
+          "y": "599",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1466",
+          "typeID": "Label",
+          "zOrder": "55",
+          "measuredW": "197",
+          "measuredH": "24",
+          "x": "89",
+          "y": "608",
+          "properties": {
+            "size": "16",
+            "text": "What is Observable Pattern"
+          }
+        },
+        {
+          "ID": "1467",
+          "typeID": "Canvas",
+          "zOrder": "56",
+          "w": "238",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "69",
+          "y": "646",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1468",
+          "typeID": "Label",
+          "zOrder": "57",
+          "measuredW": "151",
+          "measuredH": "24",
+          "x": "112",
+          "y": "655",
+          "properties": {
+            "size": "16",
+            "text": "Observable Lifecycle"
+          }
+        },
+        {
+          "ID": "1469",
+          "typeID": "Arrow",
+          "zOrder": "26",
+          "w": "112",
+          "h": "156",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "282",
+          "y": "509",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.00391587828403317,
+              "y": 155.30211146223394
+            },
+            "p1": {
+              "x": 0.4337829756128934,
+              "y": -0.304272709150173
+            },
+            "p2": {
+              "x": 107.37779179846751,
+              "y": -0.44900525715303274
+            }
+          }
+        },
+        {
+          "ID": "1470",
+          "typeID": "Canvas",
+          "zOrder": "58",
+          "w": "238",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "69",
+          "y": "693",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1471",
+          "typeID": "Label",
+          "zOrder": "59",
+          "measuredW": "125",
+          "measuredH": "24",
+          "x": "112",
+          "y": "702",
+          "properties": {
+            "size": "16",
+            "text": "Marble Diagrams"
+          }
+        },
+        {
+          "ID": "1472",
+          "typeID": "Arrow",
+          "zOrder": "25",
+          "w": "115",
+          "h": "196",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "291",
+          "y": "517",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.44337749764082446,
+              "y": 196.26931861264734
+            },
+            "p1": {
+              "x": 0.4101610216546365,
+              "y": -0.2726818434203219
+            },
+            "p2": {
+              "x": 108.9971861202439,
+              "y": 0.40049001099396264
+            }
+          }
+        },
+        {
+          "ID": "1473",
+          "typeID": "Canvas",
+          "zOrder": "60",
+          "w": "250",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "69",
+          "y": "741",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1474",
+          "typeID": "Label",
+          "zOrder": "61",
+          "measuredW": "74",
+          "measuredH": "24",
+          "x": "151",
+          "y": "750",
+          "properties": {
+            "size": "16",
+            "text": "Operators"
+          }
+        },
+        {
+          "ID": "1476",
+          "typeID": "Arrow",
+          "zOrder": "24",
+          "w": "131",
+          "h": "245",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "290",
+          "y": "516",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.26344479522123265,
+              "y": 245.64655941185083
+            },
+            "p1": {
+              "x": 0.41016102165463675,
+              "y": -0.2726818434203223
+            },
+            "p2": {
+              "x": 118.2567150371811,
+              "y": 0.22055730857437084
+            }
+          }
+        },
+        {
+          "ID": "1479",
+          "typeID": "Canvas",
+          "zOrder": "62",
+          "w": "94",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "69",
+          "y": "810",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1480",
+          "typeID": "Label",
+          "zOrder": "63",
+          "measuredW": "59",
+          "measuredH": "24",
+          "x": "86",
+          "y": "819",
+          "properties": {
+            "size": "16",
+            "text": "Filtering"
+          }
+        },
+        {
+          "ID": "1481",
+          "typeID": "Canvas",
+          "zOrder": "64",
+          "w": "148",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "171",
+          "y": "810",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1482",
+          "typeID": "Label",
+          "zOrder": "65",
+          "measuredW": "96",
+          "measuredH": "24",
+          "x": "197",
+          "y": "819",
+          "properties": {
+            "size": "16",
+            "text": "Rate Limiting"
+          }
+        },
+        {
+          "ID": "1483",
+          "typeID": "Canvas",
+          "zOrder": "66",
+          "w": "129",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "70",
+          "y": "858",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1484",
+          "typeID": "Label",
+          "zOrder": "67",
+          "measuredW": "109",
+          "measuredH": "24",
+          "x": "80",
+          "y": "867",
+          "properties": {
+            "size": "16",
+            "text": "Transformation"
+          }
+        },
+        {
+          "ID": "1487",
+          "typeID": "Canvas",
+          "zOrder": "68",
+          "w": "112",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "207",
+          "y": "858",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1488",
+          "typeID": "Label",
+          "zOrder": "69",
+          "measuredW": "92",
+          "measuredH": "24",
+          "x": "217",
+          "y": "867",
+          "properties": {
+            "size": "16",
+            "text": "Combination"
+          }
+        },
+        {
+          "ID": "1489",
+          "typeID": "Arrow",
+          "zOrder": "23",
+          "w": "2",
+          "h": "63",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "121",
+          "y": "763",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.08632597255774499,
+              "y": 0.41645846548021836
+            },
+            "p1": {
+              "x": 0.5516778523489941,
+              "y": 0.02617449664429551
+            },
+            "p2": {
+              "x": -0.08632597255774499,
+              "y": 62.952891693718925
+            }
+          }
+        },
+        {
+          "ID": "1490",
+          "typeID": "Arrow",
+          "zOrder": "22",
+          "w": "2",
+          "h": "63",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "241",
+          "y": "763",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.08632597255774499,
+              "y": 0.41645846548021836
+            },
+            "p1": {
+              "x": 0.5516778523489941,
+              "y": 0.02617449664429551
+            },
+            "p2": {
+              "x": -0.08632597255774499,
+              "y": 62.952891693718925
+            }
+          }
+        },
+        {
+          "ID": "1491",
+          "typeID": "Arrow",
+          "zOrder": "21",
+          "w": "135",
+          "h": "58",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "588",
+          "y": "511",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 135.29874658321387,
+              "y": 58.31752891745634
+            },
+            "p1": {
+              "x": 0.5639435268094195,
+              "y": 0.13721829941668096
+            },
+            "p2": {
+              "x": 0.25671503718109534,
+              "y": 0.22055730857437084
+            }
+          }
+        },
+        {
+          "ID": "1493",
+          "typeID": "Canvas",
+          "zOrder": "70",
+          "w": "222",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "706",
+          "y": "546",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1494",
+          "typeID": "Label",
+          "zOrder": "71",
+          "measuredW": "129",
+          "measuredH": "24",
+          "x": "752",
+          "y": "555",
+          "properties": {
+            "size": "16",
+            "text": "RxJS vs Promises"
+          }
+        },
+        {
+          "ID": "1495",
+          "typeID": "Arrow",
+          "zOrder": "20",
+          "w": "77",
+          "h": "126",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "488",
+          "y": "514",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0.4921388017137929,
+              "y": -0.13930809626481278
+            },
+            "p1": {
+              "x": 0.5172259793288243,
+              "y": 0.14374122751052712
+            },
+            "p2": {
+              "x": 77.18776445898766,
+              "y": 126.11349106263219
+            }
+          }
+        },
+        {
+          "ID": "1496",
+          "typeID": "Canvas",
+          "zOrder": "72",
+          "w": "198",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "617",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1497",
+          "typeID": "Label",
+          "zOrder": "73",
+          "measuredW": "108",
+          "measuredH": "24",
+          "x": "482",
+          "y": "627",
+          "properties": {
+            "size": "16",
+            "text": "Angular Basics"
+          }
+        },
+        {
+          "ID": "1498",
+          "typeID": "Arrow",
+          "zOrder": "19",
+          "w": "96",
+          "h": "10",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "620",
+          "y": "624",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 96.21915036869632,
+              "y": 1.9542986335969772
+            },
+            "p1": {
+              "x": 0.5330762632088566,
+              "y": -0.057856824198413107
+            },
+            "p2": {
+              "x": -0.2758023127736351,
+              "y": 10.213827550534234
+            }
+          }
+        },
+        {
+          "ID": "1499",
+          "typeID": "Canvas",
+          "zOrder": "74",
+          "w": "221",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "699",
+          "y": "606",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1500",
+          "typeID": "Label",
+          "zOrder": "75",
+          "measuredW": "149",
+          "measuredH": "24",
+          "x": "735",
+          "y": "615",
+          "properties": {
+            "size": "16",
+            "text": "Angular.js vs Angular"
+          }
+        },
+        {
+          "ID": "1501",
+          "typeID": "Canvas",
+          "zOrder": "76",
+          "w": "221",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "699",
+          "y": "654",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1502",
+          "typeID": "Label",
+          "zOrder": "77",
+          "measuredW": "162",
+          "measuredH": "24",
+          "x": "729",
+          "y": "663",
+          "properties": {
+            "size": "16",
+            "text": "Architectural Overview"
+          }
+        },
+        {
+          "ID": "1503",
+          "typeID": "Arrow",
+          "zOrder": "18",
+          "w": "91",
+          "h": "28",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "620",
+          "y": "646",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 90.31948685659836,
+              "y": 28.331539432800582
+            },
+            "p1": {
+              "x": 0.48745256552117705,
+              "y": 0.07265743813183477
+            },
+            "p2": {
+              "x": -0.2758023127736351,
+              "y": 0.01315457473015158
+            }
+          }
+        },
+        {
+          "ID": "1504",
+          "typeID": "Canvas",
+          "zOrder": "78",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "665",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1505",
+          "typeID": "Label",
+          "zOrder": "79",
+          "measuredW": "75",
+          "measuredH": "24",
+          "x": "498",
+          "y": "674",
+          "properties": {
+            "size": "16",
+            "text": "Templates"
+          }
+        },
+        {
+          "ID": "1524",
+          "typeID": "Arrow",
+          "zOrder": "17",
+          "w": "95",
+          "h": "62",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "620",
+          "y": "685",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 95.03921766627673,
+              "y": 62.487366982815615
+            },
+            "p1": {
+              "x": 0.5564186379541387,
+              "y": -0.13163875019958368
+            },
+            "p2": {
+              "x": -0.2758023127736351,
+              "y": 0.21382755053423352
+            }
+          }
+        },
+        {
+          "ID": "1526",
+          "typeID": "Canvas",
+          "zOrder": "84",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "712",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1527",
+          "typeID": "Label",
+          "zOrder": "85",
+          "measuredW": "127",
+          "measuredH": "24",
+          "x": "472",
+          "y": "721",
+          "properties": {
+            "size": "16",
+            "text": "Rendering Topics"
+          }
+        },
+        {
+          "ID": "1528",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "149",
+          "measuredH": "42",
+          "w": "149",
+          "h": "42",
+          "x": "831",
+          "y": "709",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "149",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "120",
+                  "measuredH": "24",
+                  "x": "13",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Property Binding"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1529",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "127",
+          "measuredH": "42",
+          "w": "127",
+          "h": "42",
+          "x": "699",
+          "y": "709",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "127",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "92",
+                  "measuredH": "24",
+                  "x": "18",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Interpolation"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1530",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "127",
+          "measuredH": "42",
+          "w": "127",
+          "h": "42",
+          "x": "700",
+          "y": "756",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "127",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "101",
+                  "measuredH": "24",
+                  "x": "15",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Event Binding"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1531",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "149",
+          "measuredH": "42",
+          "w": "149",
+          "h": "42",
+          "x": "831",
+          "y": "757",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "149",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "100",
+                  "measuredH": "24",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "#ref variables"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1532",
+          "typeID": "__group__",
+          "zOrder": "45",
+          "measuredW": "350",
+          "measuredH": "141",
+          "w": "350",
+          "h": "141",
+          "x": "626",
+          "y": "169",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "350",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "314",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "Find the detailed version of this roadmap"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "319",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "size": "17",
+                    "text": "along with resources and other roadmaps"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Canvas",
+                  "zOrder": "3",
+                  "w": "320",
+                  "h": "45",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "borderColor": "4273622",
+                    "color": "4273622"
+                  }
+                },
+                {
+                  "ID": "4",
+                  "typeID": "Label",
+                  "zOrder": "4",
+                  "measuredW": "105",
+                  "measuredH": "28",
+                  "x": "156",
+                  "y": "89",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": "roadmap.sh"
+                  }
+                },
+                {
+                  "ID": "5",
+                  "typeID": "Label",
+                  "zOrder": "5",
+                  "measuredW": "35",
+                  "measuredH": "28",
+                  "x": "91",
+                  "y": "89",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": "http"
+                  }
+                },
+                {
+                  "ID": "6",
+                  "typeID": "Label",
+                  "zOrder": "6",
+                  "measuredW": "5",
+                  "measuredH": "28",
+                  "x": "128",
+                  "y": "89",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": ":"
+                  }
+                },
+                {
+                  "ID": "7",
+                  "typeID": "Label",
+                  "zOrder": "7",
+                  "measuredW": "10",
+                  "measuredH": "28",
+                  "x": "135",
+                  "y": "90",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": "/"
+                  }
+                },
+                {
+                  "ID": "8",
+                  "typeID": "Label",
+                  "zOrder": "8",
+                  "measuredW": "10",
+                  "measuredH": "28",
+                  "x": "143",
+                  "y": "90",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": "/"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1533",
+          "typeID": "Arrow",
+          "zOrder": "16",
+          "w": "84",
+          "h": "99",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "627",
+          "y": "731",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 83.31948685659836,
+              "y": 99.08265615218761
+            },
+            "p1": {
+              "x": 0.6853310980720871,
+              "y": -0.12841575859178522
+            },
+            "p2": {
+              "x": -0.4557350151932269,
+              "y": 1.1482418513609218
+            }
+          }
+        },
+        {
+          "ID": "1535",
+          "typeID": "Canvas",
+          "zOrder": "86",
+          "w": "172",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "700",
+          "y": "810",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1536",
+          "typeID": "Label",
+          "zOrder": "87",
+          "measuredW": "147",
+          "measuredH": "24",
+          "x": "715",
+          "y": "819",
+          "properties": {
+            "size": "16",
+            "text": "ngIf, <ng-template>"
+          }
+        },
+        {
+          "ID": "1537",
+          "typeID": "Canvas",
+          "zOrder": "88",
+          "w": "99",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "881",
+          "y": "810",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1538",
+          "typeID": "Label",
+          "zOrder": "89",
+          "measuredW": "43",
+          "measuredH": "24",
+          "x": "909",
+          "y": "819",
+          "properties": {
+            "size": "16",
+            "text": "ngFor"
+          }
+        },
+        {
+          "ID": "1539",
+          "typeID": "Canvas",
+          "zOrder": "90",
+          "w": "89",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "702",
+          "y": "858",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1540",
+          "typeID": "Label",
+          "zOrder": "91",
+          "measuredW": "58",
+          "measuredH": "24",
+          "x": "717",
+          "y": "867",
+          "properties": {
+            "size": "16",
+            "text": "ngClass"
+          }
+        },
+        {
+          "ID": "1541",
+          "typeID": "Canvas",
+          "zOrder": "92",
+          "w": "89",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "800",
+          "y": "858",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1542",
+          "typeID": "Label",
+          "zOrder": "93",
+          "measuredW": "54",
+          "measuredH": "24",
+          "x": "818",
+          "y": "867",
+          "properties": {
+            "size": "16",
+            "text": "ngStyle"
+          }
+        },
+        {
+          "ID": "1543",
+          "typeID": "Canvas",
+          "zOrder": "94",
+          "w": "83",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "897",
+          "y": "858",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1544",
+          "typeID": "Label",
+          "zOrder": "95",
+          "measuredW": "41",
+          "measuredH": "24",
+          "x": "918",
+          "y": "867",
+          "properties": {
+            "size": "16",
+            "text": "Pipes"
+          }
+        },
+        {
+          "ID": "1545",
+          "typeID": "Canvas",
+          "zOrder": "96",
+          "w": "198",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "230",
+          "y": "969",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1546",
+          "typeID": "Label",
+          "zOrder": "97",
+          "measuredW": "139",
+          "measuredH": "24",
+          "x": "259",
+          "y": "979",
+          "properties": {
+            "size": "16",
+            "text": "State Management"
+          }
+        },
+        {
+          "ID": "1547",
+          "typeID": "Canvas",
+          "zOrder": "98",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "758",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1548",
+          "typeID": "Label",
+          "zOrder": "99",
+          "measuredW": "174",
+          "measuredH": "24",
+          "x": "449",
+          "y": "767",
+          "properties": {
+            "size": "16",
+            "text": "Forms, Inputs, Validation"
+          }
+        },
+        {
+          "ID": "1549",
+          "typeID": "Canvas",
+          "zOrder": "100",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "804",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1550",
+          "typeID": "Label",
+          "zOrder": "101",
+          "measuredW": "140",
+          "measuredH": "24",
+          "x": "466",
+          "y": "813",
+          "properties": {
+            "size": "16",
+            "text": "Services and HTTP"
+          }
+        },
+        {
+          "ID": "1551",
+          "typeID": "Canvas",
+          "zOrder": "102",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "850",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1552",
+          "typeID": "Label",
+          "zOrder": "103",
+          "measuredW": "114",
+          "measuredH": "24",
+          "x": "479",
+          "y": "859",
+          "properties": {
+            "size": "16",
+            "text": "Lifecycle Hooks"
+          }
+        },
+        {
+          "ID": "1553",
+          "typeID": "Canvas",
+          "zOrder": "104",
+          "w": "198",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "437",
+          "y": "896",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1554",
+          "typeID": "Label",
+          "zOrder": "105",
+          "measuredW": "145",
+          "measuredH": "24",
+          "x": "463",
+          "y": "905",
+          "properties": {
+            "size": "16",
+            "text": "Routing and Guards"
+          }
+        },
+        {
+          "ID": "1555",
+          "typeID": "Arrow",
+          "zOrder": "15",
+          "w": "114",
+          "h": "77",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "411",
+          "y": "912",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 113.49213880171379,
+              "y": -0.13930809626481278
+            },
+            "p1": {
+              "x": 0.48035332213415083,
+              "y": 0.1877545196165364
+            },
+            "p2": {
+              "x": -0.38341955797972105,
+              "y": 76.78360462762362
+            }
+          }
+        },
+        {
+          "ID": "1556",
+          "typeID": "Canvas",
+          "zOrder": "106",
+          "w": "112",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "66",
+          "y": "945",
+          "properties": {
+            "color": "14540253"
+          }
+        },
+        {
+          "ID": "1557",
+          "typeID": "Label",
+          "zOrder": "107",
+          "measuredW": "43",
+          "measuredH": "24",
+          "x": "100",
+          "y": "954",
+          "properties": {
+            "size": "16",
+            "text": "NGXS"
+          }
+        },
+        {
+          "ID": "1558",
+          "typeID": "Canvas",
+          "zOrder": "108",
+          "w": "112",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "66",
+          "y": "994",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1559",
+          "typeID": "Label",
+          "zOrder": "109",
+          "measuredW": "47",
+          "measuredH": "24",
+          "x": "98",
+          "y": "1003",
+          "properties": {
+            "size": "16",
+            "text": "@ngrx"
+          }
+        },
+        {
+          "ID": "1560",
+          "typeID": "Arrow",
+          "zOrder": "14",
+          "w": "87",
+          "h": "21",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "162",
+          "y": "995",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.29036382738183875,
+              "y": 21.570879075617313
+            },
+            "p1": {
+              "x": 0.41689655172413825,
+              "y": 0.047241379310345236
+            },
+            "p2": {
+              "x": 87.02465615166847,
+              "y": 0.3320904320645468
+            }
+          }
+        },
+        {
+          "ID": "1561",
+          "typeID": "Arrow",
+          "zOrder": "13",
+          "w": "91",
+          "h": "26",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "161",
+          "y": "962",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.47029652980143055,
+              "y": 0.29397476431574887
+            },
+            "p1": {
+              "x": 0.3722126929674102,
+              "y": -0.07547169811320738
+            },
+            "p2": {
+              "x": 90.38452155650765,
+              "y": 26.252494217546996
+            }
+          }
+        },
+        {
+          "ID": "1562",
+          "typeID": "Arrow",
+          "zOrder": "12",
+          "w": "163",
+          "h": "4",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "382",
+          "y": "996",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 162.56837013721133,
+              "y": 0.4531671933509642
+            },
+            "p1": {
+              "x": 0.5713380847918264,
+              "y": 0.00009045798840656983
+            },
+            "p2": {
+              "x": -0.38341955797972105,
+              "y": 4.7836046276236175
+            }
+          }
+        },
+        {
+          "ID": "1563",
+          "typeID": "Canvas",
+          "zOrder": "110",
+          "w": "176",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "508",
+          "y": "973",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1564",
+          "typeID": "Label",
+          "zOrder": "111",
+          "measuredW": "122",
+          "measuredH": "24",
+          "x": "535",
+          "y": "983",
+          "properties": {
+            "size": "16",
+            "text": "Advanced Topics"
+          }
+        },
+        {
+          "ID": "1575",
+          "typeID": "Arrow",
+          "zOrder": "11",
+          "w": "64",
+          "h": "43",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "669",
+          "y": "951",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.13983554215440108,
+              "y": 42.82783099986625
+            },
+            "p1": {
+              "x": 0.45957640430083985,
+              "y": -0.04513426163109045
+            },
+            "p2": {
+              "x": 63.92699743495791,
+              "y": -0.44621493077136165
+            }
+          }
+        },
+        {
+          "ID": "1576",
+          "typeID": "__group__",
+          "zOrder": "112",
+          "measuredW": "250",
+          "measuredH": "42",
+          "w": "250",
+          "h": "42",
+          "x": "729",
+          "y": "929",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "250",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "199",
+                  "measuredH": "24",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Creating Custom Directives"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1577",
+          "typeID": "__group__",
+          "zOrder": "113",
+          "measuredW": "250",
+          "measuredH": "42",
+          "w": "250",
+          "h": "42",
+          "x": "729",
+          "y": "974",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "250",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "167",
+                  "measuredH": "24",
+                  "x": "41",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Creating Custom Pipes"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1578",
+          "typeID": "__group__",
+          "zOrder": "114",
+          "measuredW": "250",
+          "measuredH": "42",
+          "w": "250",
+          "h": "42",
+          "x": "729",
+          "y": "1020",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "250",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "113",
+                  "measuredH": "24",
+                  "x": "68",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Reactive Forms"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1579",
+          "typeID": "__group__",
+          "zOrder": "115",
+          "measuredW": "250",
+          "measuredH": "42",
+          "w": "250",
+          "h": "42",
+          "x": "729",
+          "y": "1066",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "250",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "192",
+                  "measuredH": "24",
+                  "x": "29",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Modules and Lazy Loading"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1580",
+          "typeID": "__group__",
+          "zOrder": "116",
+          "measuredW": "250",
+          "measuredH": "42",
+          "w": "250",
+          "h": "42",
+          "x": "729",
+          "y": "1112",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "250",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "223",
+                  "measuredH": "24",
+                  "x": "13",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Dependency Injection & Zones"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1581",
+          "typeID": "Arrow",
+          "zOrder": "9",
+          "w": "73",
+          "h": "3",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "672",
+          "y": "994",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.3587071287161052,
+              "y": 2.830745658125352
+            },
+            "p1": {
+              "x": 0.5510688836104509,
+              "y": -0.019002375296912517
+            },
+            "p2": {
+              "x": 72.18355541604092,
+              "y": 0.32928832899574445
+            }
+          }
+        },
+        {
+          "ID": "1582",
+          "typeID": "Arrow",
+          "zOrder": "10",
+          "w": "76",
+          "h": "44",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "665",
+          "y": "999",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.3876495484601037,
+              "y": 0.33220298725484554
+            },
+            "p1": {
+              "x": 0.6014961585119298,
+              "y": -0.048321876263648623
+            },
+            "p2": {
+              "x": 76.68209808691131,
+              "y": 44.10770624702195
+            }
+          }
+        },
+        {
+          "ID": "1583",
+          "typeID": "Arrow",
+          "zOrder": "8",
+          "w": "71",
+          "h": "88",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "669",
+          "y": "1001",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.13983554215440108,
+              "y": -0.41706834818035077
+            },
+            "p1": {
+              "x": 0.6103816419192543,
+              "y": -0.039882194134249226
+            },
+            "p2": {
+              "x": 71.4313694223465,
+              "y": 87.13393817135398
+            }
+          }
+        },
+        {
+          "ID": "1584",
+          "typeID": "Arrow",
+          "zOrder": "7",
+          "w": "76",
+          "h": "131",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "662",
+          "y": "999",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": -0.3645364452341937,
+              "y": 0.33220298725484554
+            },
+            "p1": {
+              "x": 0.6281168248802743,
+              "y": -0.05749468283743387
+            },
+            "p2": {
+              "x": 75.92991209321701,
+              "y": 131.65871276655616
+            }
+          }
+        },
+        {
+          "ID": "1585",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "w": "102",
+          "h": "130",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "489",
+          "y": "1003",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0.03490784482687559,
+              "y": 129.53480576340348
+            },
+            "p1": {
+              "x": 0.45483345114655443,
+              "y": -0.26083682860175045
+            },
+            "p2": {
+              "x": 101.61658044202028,
+              "y": -0.2163953723763825
+            }
+          }
+        },
+        {
+          "ID": "1586",
+          "typeID": "Canvas",
+          "zOrder": "117",
+          "w": "205",
+          "h": "43",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "305",
+          "y": "1111",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1587",
+          "typeID": "Label",
+          "zOrder": "118",
+          "measuredW": "153",
+          "measuredH": "24",
+          "x": "331",
+          "y": "1121",
+          "properties": {
+            "size": "16",
+            "text": "Testing Angular Apps"
+          }
+        },
+        {
+          "ID": "1589",
+          "typeID": "Canvas",
+          "zOrder": "119",
+          "w": "187",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "50",
+          "y": "1062",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1590",
+          "typeID": "Label",
+          "zOrder": "120",
+          "measuredW": "98",
+          "measuredH": "24",
+          "x": "95",
+          "y": "1071",
+          "properties": {
+            "size": "16",
+            "text": "Testing Pipes"
+          }
+        },
+        {
+          "ID": "1591",
+          "typeID": "Canvas",
+          "zOrder": "121",
+          "w": "187",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "50",
+          "y": "1109",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1592",
+          "typeID": "Label",
+          "zOrder": "122",
+          "measuredW": "138",
+          "measuredH": "24",
+          "x": "75",
+          "y": "1118",
+          "properties": {
+            "size": "16",
+            "text": "Services with Deps"
+          }
+        },
+        {
+          "ID": "1593",
+          "typeID": "Canvas",
+          "zOrder": "123",
+          "w": "187",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "50",
+          "y": "1156",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1594",
+          "typeID": "Label",
+          "zOrder": "124",
+          "measuredW": "152",
+          "measuredH": "24",
+          "x": "68",
+          "y": "1165",
+          "properties": {
+            "size": "16",
+            "text": "Component Bindings"
+          }
+        },
+        {
+          "ID": "1595",
+          "typeID": "Canvas",
+          "zOrder": "125",
+          "w": "186",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "51",
+          "y": "1201",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1596",
+          "typeID": "Label",
+          "zOrder": "126",
+          "measuredW": "129",
+          "measuredH": "24",
+          "x": "79",
+          "y": "1210",
+          "properties": {
+            "size": "16",
+            "text": "Testing Directives"
+          }
+        },
+        {
+          "ID": "1597",
+          "typeID": "Canvas",
+          "zOrder": "127",
+          "w": "186",
+          "h": "42",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "51",
+          "y": "1247",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1598",
+          "typeID": "Label",
+          "zOrder": "128",
+          "measuredW": "163",
+          "measuredH": "24",
+          "x": "62",
+          "y": "1256",
+          "properties": {
+            "size": "16",
+            "text": "Component Templates"
+          }
+        },
+        {
+          "ID": "1599",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "93",
+          "h": "131",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "226",
+          "y": "1139",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.38188828622421056,
+              "y": 131.740323197811
+            },
+            "p1": {
+              "x": 0.34713047694079135,
+              "y": -0.060117568632204146
+            },
+            "p2": {
+              "x": 92.9358094640175,
+              "y": 0.4138134185095623
+            }
+          }
+        },
+        {
+          "ID": "1600",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "93",
+          "h": "83",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "221",
+          "y": "1136",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.37897362796510947,
+              "y": 82.20971928609038
+            },
+            "p1": {
+              "x": 0.34713047694079147,
+              "y": -0.06011756863220413
+            },
+            "p2": {
+              "x": 92.9328948057584,
+              "y": -0.3383725751846214
+            }
+          }
+        },
+        {
+          "ID": "1601",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "94",
+          "h": "45",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "221",
+          "y": "1132",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.37897362796510947,
+              "y": 44.93567335545299
+            },
+            "p1": {
+              "x": 0.34713047694079147,
+              "y": -0.060117568632204355
+            },
+            "p2": {
+              "x": 94.1836234703232,
+              "y": -0.09055856887903246
+            }
+          }
+        },
+        {
+          "ID": "1602",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "90",
+          "h": "4",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "221",
+          "y": "1129",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.37897362796510947,
+              "y": 0.40798410199136015
+            },
+            "p1": {
+              "x": 0.38516298239040825,
+              "y": -0.038965904833270275
+            },
+            "p2": {
+              "x": 90.43143747662884,
+              "y": 1.6587127665561638
+            }
+          }
+        },
+        {
+          "ID": "1603",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "93",
+          "h": "44",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "220",
+          "y": "1078",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.1282449634003342,
+              "y": 0.12810885483577295
+            },
+            "p1": {
+              "x": 0.385162982390408,
+              "y": -0.038965904833270296
+            },
+            "p2": {
+              "x": 92.68216614119365,
+              "y": 43.903612114602765
+            }
+          }
+        },
+        {
+          "ID": "1604",
+          "typeID": "Arrow",
+          "zOrder": "129",
+          "w": "4",
+          "h": "89",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "548",
+          "y": "1412",
+          "properties": {
+            "color": "2848996",
+            "curvature": "0",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "p0": {
+              "length": 3,
+              "x": 3,
+              "y": 0
+            },
+            "p1": {
+              "length": 0.5327426604018495,
+              "x": 0.5326751848090503,
+              "y": 0.008478779433645868
+            },
+            "p2": {
+              "length": 88,
+              "x": 0,
+              "y": 88
+            },
+            "rightArrow": "false"
+          }
+        },
+        {
+          "ID": "1605",
+          "typeID": "Canvas",
+          "zOrder": "130",
+          "w": "576",
+          "h": "105",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "229",
+          "y": "1342"
+        },
+        {
+          "ID": "1606",
+          "typeID": "Label",
+          "zOrder": "131",
+          "measuredW": "502",
+          "measuredH": "32",
+          "x": "269",
+          "y": "1364",
+          "properties": {
+            "size": "24",
+            "text": "Frontend Roadmap after Framework Selection"
+          }
+        },
+        {
+          "ID": "1607",
+          "typeID": "Label",
+          "zOrder": "132",
+          "measuredW": "171",
+          "measuredH": "26",
+          "x": "434",
+          "y": "1400",
+          "properties": {
+            "text": "roadmap.sh/frontend",
+            "size": "18",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1608",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "113",
+          "h": "230",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "437",
+          "y": "1133",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": -0.47237880082087713,
+              "y": 0.16017009568577123
+            },
+            "p1": {
+              "x": 0.6283070838905471,
+              "y": 0.08759531380403048
+            },
+            "p2": {
+              "x": 110.81915507937128,
+              "y": 229.6688800433219
+            }
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 4",
+      "order": 1000032.3806938329,
+      "parentID": null,
+      "notes": null
+    },
+    "branchID": "Master",
+    "resourceID": "AA71F98D-882E-4299-BD98-5490AABB3AAE",
+    "mockupH": "1372",
+    "mockupW": "930",
+    "measuredW": "980",
+    "measuredH": "1501",
+    "version": "1.0"
+  }
+}

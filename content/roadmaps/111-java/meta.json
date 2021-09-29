@@ -1,0 +1,36 @@
+{
+  "seo": {
+    "title": "Java Roadmap: Learn to use Java",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to java",
+      "java roadmap",
+      "java skills",
+      "java skills test",
+      "skills for java",
+      "cloud development",
+      "what is java",
+      "java quiz",
+      "java interview questions"
+    ]
+  },
+  "title": "Java",
+  "description": "Everything that is there to learn about Java and the ecosystem in 2021.",
+  "featuredTitle": "Java",
+  "featuredDescription": "Step by step guide to learn Java in 2021",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isUpcoming": true,
+  "featured": true,
+  "contentPath": "./landscape.md",
+  "resourcesPath": "./resources.md",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  }
+}

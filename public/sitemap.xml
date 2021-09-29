@@ -25,6 +25,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/angular</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-29T15:27:47.590Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2021-09-05T18:22:27.710Z</lastmod>
@@ -33,7 +39,7 @@
 <url>
               <loc>https://roadmap.sh/python</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-26T19:59:45.842Z</lastmod>
+              <lastmod>2021-09-29T12:51:40.385Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -52,6 +58,18 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2021-09-22T12:27:37.565Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/golang</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-29T15:35:53.651Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/java</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-29T15:35:23.253Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -219,7 +237,7 @@
 <url>
               <loc>https://roadmap.sh/guides/proxy-servers</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2020-07-24T12:40:18</lastmod>
+              <lastmod>2017-10-24T17:00:00.860Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
