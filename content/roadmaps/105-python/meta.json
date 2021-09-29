@@ -25,6 +25,7 @@
   "featured": true,
   "resourcesPath": "./resources.md",
   "contentPath": "./landscape.md",
+  "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
   "versions": [
     "latest"
   ],
