@@ -2822,7 +2822,8 @@
           "y": "1262",
           "properties": {
             "size": "16",
-            "text": "roadmap.sh/backend"
+            "text": "roadmap.sh/backend",
+            "color": "10027263"
           }
         },
         {
@@ -2874,7 +2875,7 @@
           "h": "90",
           "measuredW": "100",
           "measuredH": "70",
-          "x": "238",
+          "x": "108",
           "y": "183"
         },
         {
@@ -2913,7 +2914,7 @@
           "zOrder": "134",
           "measuredW": "384",
           "measuredH": "28",
-          "x": "273",
+          "x": "143",
           "y": "201",
           "properties": {
             "size": "20",
@@ -2926,11 +2927,134 @@
           "zOrder": "135",
           "measuredW": "153",
           "measuredH": "24",
-          "x": "388",
+          "x": "258",
           "y": "230",
           "properties": {
             "size": "16",
-            "text": "roadmap.sh/backend"
+            "text": "roadmap.sh/backend",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "735",
+          "typeID": "Canvas",
+          "zOrder": "136",
+          "w": "350",
+          "h": "141",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "594",
+          "y": "171"
+        },
+        {
+          "ID": "736",
+          "typeID": "Label",
+          "zOrder": "137",
+          "measuredW": "314",
+          "measuredH": "25",
+          "x": "608",
+          "y": "188",
+          "properties": {
+            "size": "17",
+            "text": "Find the detailed version of this roadmap"
+          }
+        },
+        {
+          "ID": "737",
+          "typeID": "Label",
+          "zOrder": "138",
+          "measuredW": "319",
+          "measuredH": "25",
+          "x": "608",
+          "y": "216",
+          "properties": {
+            "size": "17",
+            "text": "along with resources and other roadmaps"
+          }
+        },
+        {
+          "ID": "738",
+          "typeID": "Canvas",
+          "zOrder": "139",
+          "w": "320",
+          "h": "45",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "609",
+          "y": "252",
+          "properties": {
+            "borderColor": "4273622",
+            "color": "4273622"
+          }
+        },
+        {
+          "ID": "739",
+          "typeID": "Label",
+          "zOrder": "140",
+          "measuredW": "105",
+          "measuredH": "28",
+          "x": "750",
+          "y": "260",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "roadmap.sh"
+          }
+        },
+        {
+          "ID": "740",
+          "typeID": "Label",
+          "zOrder": "141",
+          "measuredW": "35",
+          "measuredH": "28",
+          "x": "685",
+          "y": "260",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "http"
+          }
+        },
+        {
+          "ID": "741",
+          "typeID": "Label",
+          "zOrder": "142",
+          "measuredW": "5",
+          "measuredH": "28",
+          "x": "722",
+          "y": "260",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": ":"
+          }
+        },
+        {
+          "ID": "742",
+          "typeID": "Label",
+          "zOrder": "143",
+          "measuredW": "10",
+          "measuredH": "28",
+          "x": "729",
+          "y": "261",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "/"
+          }
+        },
+        {
+          "ID": "743",
+          "typeID": "Label",
+          "zOrder": "144",
+          "measuredW": "10",
+          "measuredH": "28",
+          "x": "737",
+          "y": "261",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "/"
           }
         }
       ]
