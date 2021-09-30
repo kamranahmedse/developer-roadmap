@@ -18,7 +18,7 @@ const bgColorList = [
   'blue.800',
   'red.900',
   'gray.900',
-  'orange.900',
+  'teal.800',
   'yellow.900',
   'green.900',
   'red.900'
