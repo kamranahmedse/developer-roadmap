@@ -254,7 +254,7 @@
   },
   {
     "seo": {
-      "title": "Python Developer Roadmap: Learn to become a Python developer",
+      "title": "Learn to become a modern Python developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
         "guide to becoming an python developer",
@@ -293,6 +293,56 @@
   },
   {
     "seo": {
+      "title": "Learn to become a Go developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a golang developer",
+        "guide to becoming a go developer",
+        "golang developer",
+        "go developer",
+        "guide to golang",
+        "guide to go",
+        "golang roadmap",
+        "go roadmap",
+        "golang skills",
+        "go skills",
+        "golang skills test",
+        "go skills test",
+        "skills for golang",
+        "skills for go",
+        "cloud development",
+        "what is golang",
+        "what is go",
+        "golang quiz",
+        "go quiz",
+        "golang interview questions",
+        "go interview questions"
+      ]
+    },
+    "title": "Go",
+    "description": "Step by step guide to become a Go developer in 2021",
+    "featuredTitle": "Go",
+    "featuredDescription": "Step by step guide to become a Go developer in 2021",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isUpcoming": false,
+    "featured": true,
+    "contentPath": "/roadmaps/107-golang/landscape.md",
+    "resourcesPath": "/roadmaps/107-golang/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "id": "golang",
+    "metaPath": "/roadmaps/107-golang/meta.json"
+  },
+  {
+    "seo": {
       "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -320,8 +370,8 @@
     "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
     "featuredTitle": "DBA",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-    "contentPath": "/roadmaps/107-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/107-postgresql-dba/resources.md",
+    "contentPath": "/roadmaps/108-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/108-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -332,7 +382,7 @@
     "detailed": false,
     "versions": [],
     "id": "postgresql-dba",
-    "metaPath": "/roadmaps/107-postgresql-dba/meta.json",
+    "metaPath": "/roadmaps/108-postgresql-dba/meta.json",
     "isUpcoming": false
   },
   {
@@ -359,8 +409,8 @@
     "isCommunity": false,
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/108-aws/landscape.md",
-    "resourcesPath": "/roadmaps/108-aws/resources.md",
+    "contentPath": "/roadmaps/109-aws/landscape.md",
+    "resourcesPath": "/roadmaps/109-aws/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -371,7 +421,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "aws",
-    "metaPath": "/roadmaps/108-aws/meta.json"
+    "metaPath": "/roadmaps/109-aws/meta.json"
   },
   {
     "seo": {
@@ -406,52 +456,6 @@
     },
     "id": "qa",
     "metaPath": "/roadmaps/109-qa/meta.json"
-  },
-  {
-    "seo": {
-      "title": "Golang Roadmap: Learn to use Golang",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to golang",
-        "guide to go",
-        "golang roadmap",
-        "go roadmap",
-        "golang skills",
-        "go skills",
-        "golang skills test",
-        "go skills test",
-        "skills for golang",
-        "skills for go",
-        "cloud development",
-        "what is golang",
-        "what is go",
-        "golang quiz",
-        "go quiz",
-        "golang interview questions",
-        "go interview questions"
-      ]
-    },
-    "title": "Go",
-    "description": "Everything that is there to learn about Golang and the ecosystem in 2021.",
-    "featuredTitle": "Go",
-    "featuredDescription": "Step by step guide to learn Go in 2021",
-    "isTextHeavy": false,
-    "isCommunity": false,
-    "isUpcoming": true,
-    "featured": true,
-    "contentPath": "/roadmaps/110-golang/landscape.md",
-    "resourcesPath": "/roadmaps/110-golang/resources.md",
-    "versions": [
-      "latest",
-      "2018",
-      "2017"
-    ],
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
-    },
-    "id": "golang",
-    "metaPath": "/roadmaps/110-golang/meta.json"
   },
   {
     "seo": {

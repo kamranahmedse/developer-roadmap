@@ -1,8 +1,12 @@
 {
   "seo": {
-    "title": "Golang Roadmap: Learn to use Golang",
+    "title": "Learn to become a Go developer",
     "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
     "keywords": [
+      "guide to becoming a golang developer",
+      "guide to becoming a go developer",
+      "golang developer",
+      "go developer",
       "guide to golang",
       "guide to go",
       "golang roadmap",
@@ -23,12 +27,12 @@
     ]
   },
   "title": "Go",
-  "description": "Everything that is there to learn about Golang and the ecosystem in 2021.",
+  "description": "Step by step guide to becoming a Go developer in 2021",
   "featuredTitle": "Go",
-  "featuredDescription": "Step by step guide to learn Go in 2021",
+  "featuredDescription": "Step by step guide to becoming a Go developer in 2021",
   "isTextHeavy": false,
   "isCommunity": false,
-  "isUpcoming": true,
+  "isUpcoming": false,
   "featured": true,
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",

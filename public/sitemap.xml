@@ -39,7 +39,13 @@
 <url>
               <loc>https://roadmap.sh/python</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-29T12:51:40.385Z</lastmod>
+              <lastmod>2021-09-30T21:09:18.633Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/golang</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-09-30T21:08:37.993Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -58,12 +64,6 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2021-09-22T12:27:37.565Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/golang</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2021-09-29T15:35:53.651Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -273,7 +273,7 @@
 <url>
               <loc>https://roadmap.sh/thanks</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-22T12:55:54.360Z</lastmod>
+              <lastmod>2021-09-29T15:47:23.035Z</lastmod>
               <priority>0.5</priority>
           </url>
 <url>
