@@ -21,7 +21,7 @@
   "featuredTitle": "Android",
   "featuredDescription": "Step by step guide to becoming an Android Developer in 2021",
   "isTextHeavy": true,
-  "isCommunity": true,
+  "isCommunity": false,
   "featured": true,
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",

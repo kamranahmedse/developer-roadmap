@@ -36,6 +36,7 @@
   "featured": true,
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",
+  "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
   "versions": [
     "latest",
     "2018",
