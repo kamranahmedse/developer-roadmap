@@ -95,8 +95,9 @@ export default function Home(props: HomeProps) {
           <LinksList>
             {videos.map(video => (
               <LinksListItem
+                target={'_blank'}
                 key={video.id}
-                href={`/watch/${video.id}`}
+                href={video.youtubeLink!}
                 badgeText={video.isPro ? 'PRO' : ''}
                 hideSubtitleOnMobile
                 title={video.title}
