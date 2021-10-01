@@ -6,15 +6,17 @@ type LinksListItemProps = {
   title: string;
   subtitle: string;
   badgeText?: string;
+  target?: string;
   icon?: React.ReactChild;
   hideSubtitleOnMobile?: boolean;
 };
 
 export function LinksListItem(props: LinksListItemProps) {
-  const { title, subtitle, badgeText, icon, hideSubtitleOnMobile = false, href } = props;
+  const { title, subtitle, badgeText, icon, hideSubtitleOnMobile = false, href, target } = props;
 
   return (
     <Link
+      target={target || '_self'}
       href={href}
       fontSize={['14px', '14px', '15px']}
       py='9px'

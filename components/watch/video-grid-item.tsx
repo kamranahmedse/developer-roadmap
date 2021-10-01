@@ -5,6 +5,7 @@ type VideoGridItemProps = {
   title: string;
   subtitle: string;
   date: string;
+  target?: string;
   isNew?: boolean;
   isPro?: boolean;
   colorIndex?: number;
@@ -53,10 +54,10 @@ const bgColorList = [
 ];
 
 export function VideoGridItem(props: VideoGridItemProps) {
-  const { title, subtitle, date, isNew = false, isPro = false, colorIndex = 0, href } = props;
+  const { title, subtitle, date, isNew = false, isPro = false, colorIndex = 0, href, target } = props;
 
   return (
-    <Box _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Link} href={ href } shadow='xl' p='20px'
+    <Box _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Link} href={ href } target={target || '_self'} shadow='xl' p='20px'
           rounded='10px' bg={bgColorList[colorIndex] ?? bgColorList[0]} flex={1}>
       <Text mb='7px' fontSize='12px' color='gray.400'>
         {isNew && <Badge colorScheme={'yellow'} mr='10px'>New</Badge>}
