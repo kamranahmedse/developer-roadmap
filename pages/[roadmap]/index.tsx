@@ -50,7 +50,7 @@ function TextualRoadmap(props: RoadmapProps) {
   );
 }
 
-function NewBanner() {
+export function NewBanner() {
   return (
     <Text _hover={{ textDecoration: 'none', color: 'blue.700', '& .new-badge': { bg: 'blue.700' } }}
           as={Link}
