@@ -1,18 +1,21 @@
-import { Box, Container, Heading, Text } from '@chakra-ui/react';
+import { Badge, Box, Container, Heading, Link, Text } from '@chakra-ui/react';
 import React from 'react';
+import siteConfig from '../content/site.json';
 
 type PageHeaderProps = {
   title: string;
   subtitle: string;
   children?: React.ReactNode;
+  beforeTitle?: React.ReactNode;
 };
 
 export function PageHeader(props: PageHeaderProps) {
-  const { title, subtitle, children } = props;
+  const { title, subtitle, children, beforeTitle = null } = props;
 
   return (
     <Box pt={['25px', '20px', '45px']} pb={['20px', '15px', '30px']} borderBottomWidth={1} mb='30px'>
       <Container maxW='container.md' position='relative'>
+        {beforeTitle}
         <Heading
           as='h1'
           color='black'
