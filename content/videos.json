@@ -1,5 +1,16 @@
 [
   {
+    "id": "what-is-cap-theorem",
+    "title": "What is CAP Theorem?",
+    "description": "An illustrated explanation to CAP theorem with examples and proof.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=_RbsFXWRZ10",
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2021-10-05T19:59:14.191Z",
+    "createdAt": "2021-10-05T19:59:14.191Z"
+  },
+  {
     "id": "acid-explained",
     "title": "ACID Explained: Atomic, Consistent, Isolated Durable",
     "description": "Learn what it means for a database to be ACID compliant with examples.",

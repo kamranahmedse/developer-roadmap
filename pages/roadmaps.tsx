@@ -7,6 +7,7 @@ import { PageHeader } from '../components/page-header';
 import { RoadmapGridItem } from '../components/roadmap/roadmap-grid-item';
 import { getAllRoadmaps, RoadmapType } from '../lib/roadmap';
 import Helmet from '../components/helmet';
+import { NewBanner } from './[roadmap]';
 
 type RoadmapsProps = {
   roadmaps: RoadmapType[];
@@ -24,6 +25,7 @@ export default function Roadmaps(props: RoadmapsProps) {
       />
       <Box mb='60px'>
         <PageHeader
+          beforeTitle={<NewBanner />}
           title={'Developer Roadmaps'}
           subtitle={'Step by step guides and paths to learn different tools or technologies'}
         />
