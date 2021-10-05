@@ -1,5 +1,5 @@
-import { Box, Button,  Text, Container, Link, Stack } from '@chakra-ui/react';
-import { ArrowBackIcon, AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
+import { Box, Button, Text, Container, Link, Stack, Badge } from '@chakra-ui/react';
+import { ArrowBackIcon, AtSignIcon, DownloadIcon, ViewIcon } from '@chakra-ui/icons';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
@@ -8,6 +8,9 @@ import { PageHeader } from '../../components/page-header';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
+import siteConfig from '../../content/site.json';
+import React from 'react';
+import { event } from '../../lib/gtag';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -47,6 +50,31 @@ function TextualRoadmap(props: RoadmapProps) {
   );
 }
 
+function NewBanner() {
+  return (
+    <Text _hover={{ textDecoration: 'none', color: 'blue.700', '& .new-badge': { bg: 'blue.700' } }}
+          as={Link}
+          href={siteConfig.url.youtube}
+          d='block'
+          target='_blank'
+          color='red.700'
+          fontSize='sm'
+          mb='10px'
+          fontWeight={500}
+          onClick={() => event({
+            category: 'Subscription',
+            action: 'Clicked the YouTube banner',
+            label: 'YouTube Alert on Roadmap'
+          })}>
+      <Badge transition={'all 300ms'} className='new-badge' mr='7px' colorScheme='red' variant='solid'>New</Badge>
+      <Text textDecoration='underline' as='span' d={['none', 'inline']}>Roadmap topics to be covered on our YouTube
+        Channel</Text>
+      <Text textDecoration='underline' as='span' d={['inline', 'none']}>Topic videos being made on YouTube</Text>
+      <Text as='span' ml='5px'>&raquo;</Text>
+    </Text>
+  );
+}
+
 export default function Roadmap(props: RoadmapProps) {
   const { roadmap } = props;
 
@@ -60,6 +88,7 @@ export default function Roadmap(props: RoadmapProps) {
       />
       <Box mb='60px'>
         <PageHeader
+          beforeTitle={<NewBanner />}
           title={roadmap.title}
           subtitle={roadmap.description}
         >
