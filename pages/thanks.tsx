@@ -98,28 +98,28 @@ export default function Thanks() {
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/Stuart-cmd'>Stuart Bowles</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/MelnikovAG'>Alexander
-                  Blake</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/josephjacks'>Joseph
                   Jacks</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/MustafaMagdi'>Mustafa
                   Magdi</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/dmytbolko'>Dmytro
-                  Bolkachov</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/liquidaty'>Liquidaty</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/Lazy-AL'>Anri
-                  Lazash</Link></ListItem>
               </UnorderedList>
             </Box>
 
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/Lazy-AL'>Anri
+                  Lazash</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/liquidaty'>Liquidaty</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/dmytbolko'>Dmytro
+                  Bolkachov</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/MelnikovAG'>Alexander
+                  Blake</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/falizhar'>Falah Sultan Alizhar</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
