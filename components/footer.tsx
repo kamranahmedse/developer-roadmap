@@ -65,8 +65,8 @@ export function Footer() {
         </Box>
       </Container>
 
-      <CustomAd />
-      {process.env.GA_SECRET && false && (
+      {/*<CustomAd />*/}
+      {process.env.GA_SECRET && (
         <script
           async
           type='text/javascript'
