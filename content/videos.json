@@ -1,5 +1,16 @@
 [
   {
+    "id": "floating-point-arithmetic",
+    "title": "Floating Point Arithmetic: Why won't the numbers add up?",
+    "description": "Learn how ow the arithmetic operations work on floating-point numbers and why the results might be different from what you may expect.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=RIiq4tTt6rI",
+    "authorUsername": "kamranahmedse",
+    "duration": "4 minutes",
+    "updatedAt": "2021-10-10T19:59:14.191Z",
+    "createdAt": "2021-10-10T19:59:14.191Z"
+  },
+  {
     "id": "what-is-cap-theorem",
     "title": "What is CAP Theorem?",
     "description": "An illustrated explanation to CAP theorem with examples and proof.",
