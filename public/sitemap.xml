@@ -49,6 +49,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/java</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2021-10-22T23:23:27.847Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2021-09-30T21:14:34.272Z</lastmod>
@@ -64,12 +70,6 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2021-09-22T12:27:37.565Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/java</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2021-09-29T15:35:23.253Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -255,31 +255,31 @@
 <url>
               <loc>https://roadmap.sh/</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-22T12:31:40.612Z</lastmod>
+              <lastmod>2021-10-02T04:22:06.534Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-05T18:22:27.725Z</lastmod>
+              <lastmod>2021-10-05T06:02:31.079Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/signup</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-05T18:22:27.725Z</lastmod>
+              <lastmod>2021-10-02T04:22:03.972Z</lastmod>
               <priority>0.9</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/thanks</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-29T15:47:23.035Z</lastmod>
+              <lastmod>2021-10-10T18:02:01.145Z</lastmod>
               <priority>0.5</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/watch</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2021-09-05T18:22:27.726Z</lastmod>
+              <lastmod>2021-10-01T08:59:16.896Z</lastmod>
               <priority>1.0</priority>
           </url>
 </urlset>

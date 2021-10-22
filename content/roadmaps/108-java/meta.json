@@ -14,13 +14,13 @@
       "java interview questions"
     ]
   },
-  "title": "Java",
-  "description": "Everything that is there to learn about Java and the ecosystem in 2021.",
+  "title": "Java Developer",
+  "description": "Step by step guide to becoming a Java developer in 2021",
   "featuredTitle": "Java",
-  "featuredDescription": "Step by step guide to learn Java in 2021",
+  "featuredDescription": "Step by step guide to becoming a Java Developer in 2021",
   "isTextHeavy": false,
   "isCommunity": false,
-  "isUpcoming": true,
+  "isUpcoming": false,
   "featured": true,
   "contentPath": "./landscape.md",
   "resourcesPath": "./resources.md",
