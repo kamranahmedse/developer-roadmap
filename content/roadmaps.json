@@ -344,6 +344,44 @@
   },
   {
     "seo": {
+      "title": "Java Roadmap: Learn to use Java",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to java",
+        "java roadmap",
+        "java skills",
+        "java skills test",
+        "skills for java",
+        "cloud development",
+        "what is java",
+        "java quiz",
+        "java interview questions"
+      ]
+    },
+    "title": "Java Developer",
+    "description": "Step by step guide to becoming a Java developer in 2021",
+    "featuredTitle": "Java",
+    "featuredDescription": "Step by step guide to becoming a Java Developer in 2021",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isUpcoming": false,
+    "featured": true,
+    "contentPath": "/roadmaps/108-java/landscape.md",
+    "resourcesPath": "/roadmaps/108-java/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "id": "java",
+    "metaPath": "/roadmaps/108-java/meta.json"
+  },
+  {
+    "seo": {
       "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -371,8 +409,8 @@
     "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
     "featuredTitle": "DBA",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-    "contentPath": "/roadmaps/108-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/108-postgresql-dba/resources.md",
+    "contentPath": "/roadmaps/109-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/109-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -383,7 +421,7 @@
     "detailed": false,
     "versions": [],
     "id": "postgresql-dba",
-    "metaPath": "/roadmaps/108-postgresql-dba/meta.json",
+    "metaPath": "/roadmaps/109-postgresql-dba/meta.json",
     "isUpcoming": false
   },
   {
@@ -410,8 +448,8 @@
     "isCommunity": false,
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/109-aws/landscape.md",
-    "resourcesPath": "/roadmaps/109-aws/resources.md",
+    "contentPath": "/roadmaps/110-aws/landscape.md",
+    "resourcesPath": "/roadmaps/110-aws/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -422,7 +460,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "aws",
-    "metaPath": "/roadmaps/109-aws/meta.json"
+    "metaPath": "/roadmaps/110-aws/meta.json"
   },
   {
     "seo": {
@@ -449,51 +487,13 @@
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/109-qa/landscape.md",
-    "resourcesPath": "/roadmaps/109-qa/resources.md",
+    "contentPath": "/roadmaps/111-qa/landscape.md",
+    "resourcesPath": "/roadmaps/111-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
     "id": "qa",
-    "metaPath": "/roadmaps/109-qa/meta.json"
-  },
-  {
-    "seo": {
-      "title": "Java Roadmap: Learn to use Java",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to java",
-        "java roadmap",
-        "java skills",
-        "java skills test",
-        "skills for java",
-        "cloud development",
-        "what is java",
-        "java quiz",
-        "java interview questions"
-      ]
-    },
-    "title": "Java",
-    "description": "Everything that is there to learn about Java and the ecosystem in 2021.",
-    "featuredTitle": "Java",
-    "featuredDescription": "Step by step guide to learn Java in 2021",
-    "isTextHeavy": false,
-    "isCommunity": false,
-    "isUpcoming": true,
-    "featured": true,
-    "contentPath": "/roadmaps/111-java/landscape.md",
-    "resourcesPath": "/roadmaps/111-java/resources.md",
-    "versions": [
-      "latest",
-      "2018",
-      "2017"
-    ],
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
-    },
-    "id": "java",
-    "metaPath": "/roadmaps/111-java/meta.json"
+    "metaPath": "/roadmaps/111-qa/meta.json"
   }
 ]
