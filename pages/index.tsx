@@ -66,30 +66,9 @@ export default function Home(props: HomeProps) {
       </Box>
 
       <Box>
-        <Container maxW='container.md' position='relative'>
-          <Box pt='60px' mb={['10px', '15px', '20px']}>
-            <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Visual Guides</Heading>
-          </Box>
-
-          <LinksList>
-            {guides.map(guide => (
-              <LinksListItem
-                key={guide.id}
-                href={`/guides/${guide.id}`}
-                title={guide.title}
-                badgeText={guide.isPro ? 'PRO' : ''}
-                subtitle={guide.formattedUpdatedAt!}
-              />
-            ))}
-            <DimmedMore href={'/guides'} text='View all Guides' />
-          </LinksList>
-        </Container>
-      </Box>
-
-      <Box mb='60px'>
         <Container maxW='container.md'>
-          <Box pt='40px' mb='20px'>
-            <Heading color='green.500' fontSize='25px' mb='5px'>Video Explanations</Heading>
+          <Box pt='60px' mb={['10px', '15px', '20px']}>
+            <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Video Explanatiosn</Heading>
           </Box>
 
           <LinksList>
@@ -115,6 +94,27 @@ export default function Home(props: HomeProps) {
               />
             ))}
             <DimmedMore href='/watch' text={'View all Videos'} />
+          </LinksList>
+        </Container>
+      </Box>
+
+      <Box mb='80px'>
+        <Container maxW='container.md' position='relative'>
+          <Box pt='40px' mb='20px'>
+            <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
+          </Box>
+
+          <LinksList>
+            {guides.map(guide => (
+              <LinksListItem
+                key={guide.id}
+                href={`/guides/${guide.id}`}
+                title={guide.title}
+                badgeText={guide.isPro ? 'PRO' : ''}
+                subtitle={guide.formattedUpdatedAt!}
+              />
+            ))}
+            <DimmedMore href={'/guides'} text='View all Guides' />
           </LinksList>
         </Container>
       </Box>
