@@ -1,5 +1,16 @@
 [
   {
+    "id": "big-o-notation",
+    "title": "Big O Notation — Calculating Time Complexity",
+    "description": "Learn what the Big-O notation is and how to calculate the time complexity of an algorithm.",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2021-10-25T19:59:14.191Z",
+    "createdAt": "2021-10-25T19:59:14.191Z"
+  },
+  {
     "id": "yaml-in-depth",
     "title": "YAML in Depth",
     "description": "Everything you need to know about YAML",
