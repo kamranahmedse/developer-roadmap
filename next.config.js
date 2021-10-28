@@ -37,6 +37,9 @@ let nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   env: loadConfig(process.env.NODE_ENV),
+  experimental: {
+    esmExternals: false
+  },
 
   webpack(config, options) {
     config.resolve.modules.push(path.resolve('./'));
