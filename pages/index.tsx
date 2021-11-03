@@ -68,7 +68,7 @@ export default function Home(props: HomeProps) {
       <Box>
         <Container maxW='container.md'>
           <Box pt='60px' mb={['10px', '15px', '20px']}>
-            <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Video Explanatiosn</Heading>
+            <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Video Explanations</Heading>
           </Box>
 
           <LinksList>
