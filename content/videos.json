@@ -1,5 +1,27 @@
 [
   {
+    "id": "async-javascript",
+    "title": "All about Asynchronous JavaScript",
+    "description": "Learn how to write asynchronous JavaScript using Async/Await",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=VyIK6SV5f7o",
+    "authorUsername": "kamranahmedse",
+    "duration": "15 minutes",
+    "updatedAt": "2021-11-14T19:59:14.191Z",
+    "createdAt": "2021-11-14T19:59:14.191Z"
+  },
+  {
+    "id": "random-number-generators",
+    "title": "Random Number Generators",
+    "description": "How do random number generators work?",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=nDv3yXdD0rk",
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2021-11-03T19:59:14.191Z",
+    "createdAt": "2021-11-03T19:59:14.191Z"
+  },
+  {
     "id": "big-o-notation",
     "title": "Big O Notation — Calculating Time Complexity",
     "description": "Learn what the Big-O notation is and how to calculate the time complexity of an algorithm.",
