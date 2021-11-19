@@ -94,6 +94,8 @@ export default function Thanks() {
               <Heading mb='15px' fontSize='25px' as='h2'>Monthly Sponsors</Heading>
               <UnorderedList>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/werber'>Myroslav</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/gmzabos'>Gerald-Markus Zabos</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/abebars'>Ahmed Bebars</Link></ListItem>
