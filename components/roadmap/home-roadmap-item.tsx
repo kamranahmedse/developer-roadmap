@@ -61,9 +61,9 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
           bottom={0}
           rounded='10px'
         >
-          <Text color='white' bg='purple.700' zIndex={1} fontWeight={600} p={'5px 10px'}
+          <Text color='white' bg='gray.600' zIndex={1} fontWeight={600} p={'5px 10px'}
                 rounded='10px'>Upcoming</Text>
-          <Box bg={'black'} pos='absolute' top={0} left={0} right={0} bottom={0} rounded={'10px'} opacity={0.3} />
+          <Box bg={'black'} pos='absolute' top={0} left={0} right={0} bottom={0} rounded={'10px'} opacity={0.5} />
         </Flex>
       )}
     </Box>
