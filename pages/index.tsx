@@ -14,6 +14,7 @@ import { getAllVideos, VideoType } from '../lib/video';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
 import { event } from '../lib/gtag';
+import { PageWrapper } from '../components/page-wrapper';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -25,13 +26,13 @@ export default function Home(props: HomeProps) {
   const { roadmaps, guides, videos } = props;
 
   return (
-    <Box bg='white' minH='100vh'>
-      <GlobalHeader />
+    <PageWrapper>
+      <GlobalHeader variant={'transparent'} />
       <Helmet title='Developer Roadmaps' />
       <Box>
-        <Container maxW='container.md'>
-          <Box py={['23px', '23px', '35px']}>
-            <Heading fontSize={['22px', '22px', '28px']} mb={['8px', '8px', '15px']}>Hey there! 👋</Heading>
+        <Container maxW='container.md' pb='90px'>
+          <Box py={['23px', '23px', '35px']} color='gray.200' >
+            <Heading color='gray.50' fontSize={['22px', '22px', '28px']} mb={['8px', '8px', '15px']}>Hey there! 👋</Heading>
             <Text fontSize={['14px', '14px', '16px']} mb='10px'>
               <Text fontWeight={500} as='span'>roadmap.sh</Text> is a community effort to create roadmaps, guides and
               other educational content
@@ -49,7 +50,11 @@ export default function Home(props: HomeProps) {
                                                                            fontWeight={600}>YouTube
               channel</Link> which we hope you are going to love.</Text>
           </Box>
-          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']}>
+          <SimpleGrid
+            columns={[1, 2, 3]}
+            spacing={['10px', '10px', '15px']}
+            _hover={{ '& .home-roadmap-item': { opacity: '0.5'} }}
+          >
             {roadmaps.map((roadmap: RoadmapType, counter: number) => (
               <HomeRoadmapItem
                 isUpcoming={roadmap.isUpcoming}
@@ -65,9 +70,9 @@ export default function Home(props: HomeProps) {
         </Container>
       </Box>
 
-      <Box>
+      <Box bg='white'>
         <Container maxW='container.md'>
-          <Box pt='60px' mb={['10px', '15px', '20px']}>
+          <Box  pt='60px' mb={['10px', '15px', '20px']}>
             <Heading color='green.500' fontSize={['20px', '20px', '25px']} mb='5px'>Video Explanations</Heading>
           </Box>
 
@@ -98,7 +103,7 @@ export default function Home(props: HomeProps) {
         </Container>
       </Box>
 
-      <Box mb='80px'>
+      <Box pb='80px' bg='white'>
         <Container maxW='container.md' position='relative'>
           <Box pt='40px' mb='20px'>
             <Heading color='green.500' fontSize='25px' mb='5px'>Visual Guides</Heading>
@@ -122,7 +127,7 @@ export default function Home(props: HomeProps) {
       <OpensourceBanner />
       <UpdatesBanner />
       <Footer />
-    </Box>
+    </PageWrapper>
   );
 }
 
