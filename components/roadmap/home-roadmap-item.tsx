@@ -31,10 +31,11 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
     <Box
       as={Link}
       href={url}
-      _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }}
+      _hover={{ textDecoration: 'none', transform: 'scale(1.02)', opacity: '1 !important' }}
       flex={1}
       shadow='2xl'
-      bg={bgColorList[colorIndex] ?? bgColorList[0]}
+      className={'home-roadmap-item'}
+      bg={'rgba(255,255,255,.05)'}
       color='white'
       p='15px'
       rounded='10px'
@@ -60,9 +61,9 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
           bottom={0}
           rounded='10px'
         >
-          <Text color='white' bg='yellow.900' zIndex={1} fontWeight={600} p={'5px 10px'}
+          <Text color='white' bg='purple.700' zIndex={1} fontWeight={600} p={'5px 10px'}
                 rounded='10px'>Upcoming</Text>
-          <Box bg={'black'} pos='absolute' top={0} left={0} right={0} bottom={0} rounded={'10px'} opacity={0.5} />
+          <Box bg={'black'} pos='absolute' top={0} left={0} right={0} bottom={0} rounded={'10px'} opacity={0.3} />
         </Flex>
       )}
     </Box>

@@ -33,7 +33,7 @@ function NavigationLinks() {
 
 export function Footer() {
   return (
-    <Box bg='gray.900' p={['25px 0', '25px 0', '40px 0']}>
+    <Box bg='brand.hero' p={['25px 0', '25px 0', '40px 0']}>
       <Container maxW='container.md'>
         <NavigationLinks />
 

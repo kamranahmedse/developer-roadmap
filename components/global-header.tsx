@@ -72,7 +72,7 @@ function MobileMenuLinks() {
                top={0}
                bg='gray.900'
                spacing='12px'
-               zIndex={1}
+               zIndex={999}
         >
           <Link href='/roadmaps'>Roadmaps</Link>
           <Link href='/guides'>Guides</Link>
@@ -86,9 +86,15 @@ function MobileMenuLinks() {
   );
 }
 
-export function GlobalHeader() {
+type GlobalHeaderProps = {
+  variant?: 'transparent' | 'solid'
+};
+
+export function GlobalHeader(props: GlobalHeaderProps) {
+  const { variant = 'solid' } = props;
+
   return (
-    <Box bg='gray.900' p='20px 0'>
+    <Box bg={variant === 'solid' ? 'gray.900' : 'transparent'} p='20px 0'>
       <Container maxW='container.md'>
         <Flex justifyContent='space-between' alignItems='center'>
           <Box>
