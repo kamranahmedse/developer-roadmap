@@ -7,7 +7,7 @@ export function StickyBanner() {
   return (
     <Flex as={Link}
           href={siteConfig.url.youtube}
-          bg={'yellow.300'}
+          bg={'yellow.200'}
           color='gray.900'
           alignItems='center'
           position='sticky'
