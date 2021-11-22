@@ -11,17 +11,17 @@ type RoadmapGridItemProps = {
 };
 
 const bgColorList = [
-  'blue.900',
-  'red.800',
-  'green.800',
-  'teal.800',
-  'blue.800',
-  'red.900',
-  'gray.900',
-  'teal.800',
-  'yellow.900',
-  'green.900',
-  'red.900'
+  'red.100',
+  'yellow.100',
+  'green.200',
+  'teal.200',
+  'blue.200',
+  'red.200',
+  'gray.200',
+  'teal.200',
+  'yellow.100',
+  'green.200',
+  'red.200'
 ];
 
 export function HomeRoadmapItem(props: RoadmapGridItemProps) {
@@ -47,7 +47,7 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
         </Tooltip>
       )}
 
-      <Heading fontSize={['17px', '17px', '22px']} mb='5px'>{title}</Heading>
+      <Heading fontSize={['17px', '17px', '22px']} color={bgColorList[colorIndex]} mb='5px'>{title}</Heading>
       <Text color='gray.200' fontSize={['13px']}>{subtitle}</Text>
 
       {isUpcoming && (
