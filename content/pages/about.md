@@ -20,7 +20,7 @@ learnings, get feedbacks on their projects etc.
 
 The basic version of the website has been built with [Next.js](https://github.com/zeit/next.js/), is opensource and can
 be found on [github](https://github.com/kamranahmedse/roadmap.sh). It was hastily done to get it out in front of the
-people and get people to start contributing so it might be rough on the edges, but that is where we need your help.
+people and get people to start contributing, so it might be rough on the edges, but that is where we need your help.
 
 ## How does it make money?
 
