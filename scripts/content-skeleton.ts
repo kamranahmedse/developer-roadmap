@@ -62,6 +62,7 @@ if (!roadmapDirName) {
 }
 
 const roadmapContentPath = path.join(CONTENT_DIR, roadmapDirName, 'content');
+
 // If roadmap content already exists do not proceed as it would override the files
 if (fs.existsSync(roadmapContentPath)) {
   console.error(`Roadmap content already exists @ ${roadmapContentPath}`);
@@ -149,9 +150,24 @@ controls.forEach((control) => {
   prepareDirTree(control, dirTree, dirSortOrders);
 });
 
-function createDirTree(parentDir: string, dirTree: DirTreeType) {
+function createDirTree(parentDir: string, dirTree: DirTreeType, sortOrders: DirSortOrdersType) {
   const childrenDirNames = Object.keys(dirTree);
   const hasChildren = childrenDirNames.length !== 0;
+
+  const groupName = parentDir
+    .replace(roadmapContentPath, '') // Remove base dir path
+    .replace(/(^\/)|(\/$)/g, '') // Remove trailing slashes
+    .replace(/(^\d+?-)/g, '') // Remove sorting information
+    .replace('/', ':'); // Replace slashes with `:`
+
+  const sortOrder = sortOrders[groupName] || '';
+
+  // Attach sorting information to dirname
+  // e.g. /roadmaps/100-frontend/content/internet
+  // ———> /roadmaps/100-frontend/content/103-internet
+  if (sortOrder) {
+    parentDir = parentDir.replace(/(.+?)([^\/]+)?$/, `$1${sortOrder}-$2`);
+  }
 
   // If no children, create a file for this under the parent directory
   if (!hasChildren) {
@@ -167,10 +183,12 @@ function createDirTree(parentDir: string, dirTree: DirTreeType) {
   // For each of the directory names, create a
   // directory inside the given directory
   childrenDirNames.forEach((dirName) => {
-    createDirTree(dirName, dirTree[dirName]);
+    createDirTree(
+      path.join(parentDir, dirName),
+      dirTree[dirName],
+      dirSortOrders
+    );
   });
 }
 
-createDirTree(roadmapContentPath, dirTree);
-
-console.log(JSON.stringify(dirTree, null, 2));
+createDirTree(roadmapContentPath, dirTree, dirSortOrders);
