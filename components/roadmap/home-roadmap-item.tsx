@@ -31,7 +31,19 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
     <Box
       as={Link}
       href={url}
-      _hover={{ textDecoration: 'none', transform: 'scale(1.02)', opacity: '1 !important' }}
+      _hover={{
+        textDecoration: 'none',
+        transform: 'scale(1.02)',
+        opacity: '1 !important'
+      }}
+      sx={{
+        // On mobile devices, don't change the scale
+        '@media (hover: none)': {
+          '&:hover': {
+            transform: 'scale(1)'
+          }
+        }
+      }}
       flex={1}
       shadow='2xl'
       className={'home-roadmap-item'}
