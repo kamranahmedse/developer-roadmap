@@ -7,7 +7,6 @@ const roadmaps = require('../content/roadmaps.json');
 
 const DOMAIN = 'https://roadmap.sh';
 const PAGES_DIR = path.join(__dirname, '../pages');
-const STORAGE_PATH = path.join(__dirname, '../content');
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 
 const PAGES_PATH = path.join(__dirname, '../pages');
