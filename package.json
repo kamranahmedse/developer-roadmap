@@ -13,6 +13,7 @@
     "meta:sitemap": "node scripts/sitemap.js",
     "meta:roadmaps": "node ./scripts/roadmaps-meta.js",
     "meta": "npm run meta:roadmaps && npm run meta:sitemap",
+    "roadmap-content": "ts-node scripts/content-skeleton.ts",
     "postinstall": "husky install"
   },
   "dependencies": {
@@ -47,6 +48,7 @@
     "husky": "^7.0.4",
     "pretty-quick": "^3.1.2",
     "serve": "^13.0.2",
+    "ts-node": "^10.4.0",
     "typescript": "4.5.2"
   },
   "husky": {
