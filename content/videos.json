@@ -12,7 +12,7 @@
   },
   {
     "id": "async-javascript",
-    "title": "All about Asynchronous JavaScript",
+    "title": "Asynchronous JavaScript",
     "description": "Learn how to write asynchronous JavaScript using Async/Await",
     "isPro": false,
     "youtubeLink": "https://www.youtube.com/watch?v=VyIK6SV5f7o",
@@ -34,7 +34,7 @@
   },
   {
     "id": "big-o-notation",
-    "title": "Big O Notation — Calculating Time Complexity",
+    "title": "Big O Notation",
     "description": "Learn what the Big-O notation is and how to calculate the time complexity of an algorithm.",
     "isPro": false,
     "youtubeLink": "https://www.youtube.com/watch?v=Z0bH0cMY0E8",
@@ -56,7 +56,7 @@
   },
   {
     "id": "floating-point-arithmetic",
-    "title": "Floating Point Arithmetic: Why won't the numbers add up?",
+    "title": "Floating Point Arithmetic",
     "description": "Learn how ow the arithmetic operations work on floating-point numbers and why the results might be different from what you may expect.",
     "isPro": false,
     "youtubeLink": "https://www.youtube.com/watch?v=RIiq4tTt6rI",
@@ -78,7 +78,7 @@
   },
   {
     "id": "acid-explained",
-    "title": "ACID Explained: Atomic, Consistent, Isolated Durable",
+    "title": "ACID Explained",
     "description": "Learn what it means for a database to be ACID compliant with examples.",
     "isPro": false,
     "youtubeLink": "https://www.youtube.com/watch?v=yaQ5YMWkxq4",
