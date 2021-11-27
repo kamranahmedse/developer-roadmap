@@ -3557,9 +3557,9 @@
                   "x": "0",
                   "y": "0",
                   "properties": {
-                    "bold": "true",
                     "size": "32",
-                    "text": "Front-end"
+                    "text": "Front-end",
+                    "bold": "true"
                   }
                 }
               ]
@@ -3686,9 +3686,9 @@
                   "x": "64",
                   "y": "23",
                   "properties": {
-                    "bold": "true",
                     "size": "17",
-                    "text": "Internet"
+                    "text": "Internet",
+                    "bold": "true"
                   }
                 },
                 {
@@ -11379,8 +11379,8 @@
                   "y": "23",
                   "properties": {
                     "size": "17",
-                    "text": "Type Checkers",
-                    "bold": "true"
+                    "bold": "true",
+                    "text": "Type Checkers"
                   }
                 },
                 {
@@ -14909,7 +14909,7 @@
       ]
     },
     "attributes": {
-      "name": "Frontend Roadmap",
+      "name": "frontend",
       "order": 1000076.8179159599,
       "parentID": null,
       "notes": null
