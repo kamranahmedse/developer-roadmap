@@ -1,5 +1,16 @@
 [
   {
+    "id": "what-is-eventual-consistency",
+    "title": "What is Eventual Consistency?",
+    "description": "Learn about the different consistency models in distributed systems",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=rpqsSkTIdAw",
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2021-11-30T19:59:14.191Z",
+    "createdAt": "2021-11-30T19:59:14.191Z"
+  },
+  {
     "id": "ssh-ssl-tls",
     "title": "SSH vs TLS vs SSL",
     "description": "Learn the difference between SSH, TLS and SSL",
