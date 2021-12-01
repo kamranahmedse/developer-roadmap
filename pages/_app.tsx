@@ -19,6 +19,22 @@ const GlobalStyles = css`
     outline: none;
     box-shadow: none;
   }
+  
+  svg text tspan {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeSpeed;
+  }
+  
+  svg .clickable-group {
+    cursor: pointer;
+    
+    &:hover > [fill="rgb(65,53,214)"] { fill: #232381; stroke: #232381; }
+    &:hover > [fill="rgb(255,255,0)"] { fill: #d6d700; }
+    &:hover > [fill="rgb(255,229,153)"] { fill: #f3c950; }
+    &:hover > [fill="rgb(153,153,153)"] { fill: #646464; }
+    &:hover > [fill="rgb(255,255,255)"] { fill: #d7d7d7; }
+  }
 `;
 
 
