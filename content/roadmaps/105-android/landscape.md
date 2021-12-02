@@ -1,4 +1,4 @@
-The intent of this guide is to give you an idea about the Android development landscape and to help guide your learning if you are confused. Before we start, please note that the roadmap is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/roadmap.sh/issues/new) and incorporate them in the roadmap if suitable.
+The intent of this guide is to give you an idea about the Android development landscape and to help guide your learning if you are confused. Before we start, please note that the roadmap is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/developer-roadmap/issues/new) and incorporate them in the roadmap if suitable.
 
 There are multiple ways to develop applications for the android; you can go down the path of hybrid application development where [flutter](https://flutter.dev/), [react-native](https://reactnative.dev/), or [NativeScript](https://www.nativescript.org/) are the most common contenders. Flutter uses Dart, whereas React Native and Native Script rely on JavaScript. Answering the question of hybrid vs native is out of the scope of this roadmap. This roadmap is focused on the native Android apps development but if you are interested in learning any hybrid framework, my personal preference is [react-native](https://reactnative.dev) and I would recommend you to checkout the [Frontend Developer Roadmap](/frontend).
 
@@ -76,7 +76,7 @@ I would highly recommend watching [this free course](https://www.udacity.com/cou
 
 That wraps it up for the android developer roadmap. Again, remember to not be exhausted by the list; just learn the basics and start working on some project, rest of the learnings will come along the way. Good luck!
  
-For any suggestions, improvements and feedback, feel free to [submit an issue](https://github.com/kamranahmedse/roadmap.sh) or reach out to me on twitter [@kamranahmedse](https://twitter.com/kamranahmedse).
+For any suggestions, improvements and feedback, feel free to [submit an issue](https://github.com/kamranahmedse/developer-roadmap) or reach out to me on twitter [@kamranahmedse](https://twitter.com/kamranahmedse).
 
 <!-- @fixme add padding to the container -->
 <br /><br /><br />

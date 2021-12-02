@@ -4,4 +4,4 @@ Also, please note that the list below is exhaustive, and the items are listed in
 
 ![](/roadmaps/angular.png)
 
-Please note that the list is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/roadmap.sh/issues/new) and incorporate them in the picture if suitable.
+Please note that the list is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/developer-roadmap/issues/new) and incorporate them in the picture if suitable.

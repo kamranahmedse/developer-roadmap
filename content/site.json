@@ -11,14 +11,14 @@
     "web": "https://roadmap.sh",
     "twitter": "https://twitter.com/kamranahmedse",
     "youtube": "https://youtube.com/theroadmap?sub_confirmation=1",
-    "repo": "https://github.com/kamranahmedse/roadmap.sh",
+    "repo": "https://github.com/kamranahmedse/developer-roadmap",
     "sponsor": "https://github.com/sponsors/kamranahmedse",
-    "repoData": "https://github.com/kamranahmedse/roadmap.sh/tree/master/content",
-    "addGuide": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/guide.md",
-    "addRoadmap": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/roadmap.md",
-    "addResources": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing/resources.md",
-    "contribute": "https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing",
-    "issue": "https://github.com/kamranahmedse/roadmap.sh/issues/new"
+    "repoData": "https://github.com/kamranahmedse/developer-roadmap/tree/master/content",
+    "addGuide": "https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing/guide.md",
+    "addRoadmap": "https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing/roadmap.md",
+    "addResources": "https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing/resources.md",
+    "contribute": "https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing",
+    "issue": "https://github.com/kamranahmedse/developer-roadmap/issues/new"
   },
   "keywords": [
     "roadmap",
