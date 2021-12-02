@@ -13,15 +13,15 @@
 ***
 
 <p align="center">
-		<sup>Special Announcement:</sup>
-		<br>
-		<a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">
-			<img width="70px" src="https://roadmap.sh/sponsors/youtube.svg">
-		</a>
-		<br>
-		<sub><b>We now have a YouTube Channel</b></sub>
-		<br>
-		<sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">Subscribe to the channel</a>.</sub>
+    <sup>Special Announcement:</sup>
+    <br>
+    <a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">
+        <img width="70px" src="https://roadmap.sh/sponsors/youtube.svg">
+    </a>
+    <br>
+    <sub><b>We now have a YouTube Channel</b></sub>
+    <br>
+    <sub>I plan on covering the roadmaps and put more content there<br><a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">Subscribe to the channel</a>.</sub>
 </p>
 
 ***
@@ -46,23 +46,21 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Java Roadmap](https://roadmap.sh/java)
 - [DBA Roadmap](https://roadmap.sh/dba)
 
-If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@kamranahmed](https://twitter.com/kamranahmedse).
+If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@kamranahmedse](https://twitter.com/kamranahmedse).
 
 ## Development
-
-The website is built with Next.js, contains roadmaps which are the step by step guides for developers, guides which are the easier to understand explanations on the complex topics. Anyone can contribute to the website by suggesting changes to existing paths, adding learning resources, becoming an author by adding new guides, updating the existing guides.
 
 Clone the repository, install the dependencies and start the application
 
 ```bash
-git clone https://github.com/kamranahmedse/roadmap.sh
+git clone git@github.com:kamranahmedse/developer-roadmap.git
 npm install
 npm run dev
 ```
 
 ## Contribution
 
-> Have a look at [contribution docs](./CONTRIBUTING.md) for how to update any of the roadmaps
+> Have a look at [contribution docs](./contributing) for how to update any of the roadmaps
 
 - Add new Roadmap
 - Suggest changes to existing roadmap
