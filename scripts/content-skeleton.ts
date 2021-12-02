@@ -61,11 +61,12 @@ if (!roadmapDirName) {
   process.exit(1);
 }
 
-const roadmapContentPath = path.join(CONTENT_DIR, roadmapDirName, 'content');
+const roadmapDirPath = path.join(CONTENT_DIR, roadmapDirName);
+const roadmapContentDirPath = path.join(CONTENT_DIR, roadmapDirName, 'content');
 
 // If roadmap content already exists do not proceed as it would override the files
-if (fs.existsSync(roadmapContentPath)) {
-  console.error(`Roadmap content already exists @ ${roadmapContentPath}`);
+if (fs.existsSync(roadmapContentDirPath)) {
+  console.error(`Roadmap content already exists @ ${roadmapContentDirPath}`);
   process.exit(1);
 }
 
@@ -150,12 +151,23 @@ controls.forEach((control) => {
   prepareDirTree(control, dirTree, dirSortOrders);
 });
 
-function createDirTree(parentDir: string, dirTree: DirTreeType, sortOrders: DirSortOrdersType) {
+/**
+ * @param parentDir Parent directory in which directory is to be created
+ * @param dirTree Nested dir tree to be created
+ * @param sortOrders Mapping from groupName to sort order
+ * @param filePaths The mapping from groupName to file path
+ */
+function createDirTree(
+  parentDir: string,
+  dirTree: DirTreeType,
+  sortOrders: DirSortOrdersType,
+  filePaths: Record<string, string> = {}
+) {
   const childrenDirNames = Object.keys(dirTree);
   const hasChildren = childrenDirNames.length !== 0;
 
   const groupName = parentDir
-    .replace(roadmapContentPath, '') // Remove base dir path
+    .replace(roadmapContentDirPath, '') // Remove base dir path
     .replace(/(^\/)|(\/$)/g, '') // Remove trailing slashes
     .replace(/(^\d+?-)/g, '') // Remove sorting information
     .replace('/', ':'); // Replace slashes with `:`
@@ -171,14 +183,21 @@ function createDirTree(parentDir: string, dirTree: DirTreeType, sortOrders: DirS
 
   // If no children, create a file for this under the parent directory
   if (!hasChildren) {
-    fs.writeFileSync(`${parentDir}.md`, '');
-    return;
+    let fileName = `${parentDir}.md`;
+    fs.writeFileSync(fileName, '');
+
+    filePaths[groupName || 'home'] = fileName.replace(CONTENT_DIR, '');
+    return filePaths;
   }
 
   // There *are* children, so create the parent as a directory
   // and create `readme.md` as the content file for this
   fs.mkdirSync(parentDir);
-  fs.writeFileSync(path.join(parentDir, 'readme.md'), '');
+
+  let readmeFilePath = path.join(parentDir, 'readme.md');
+  fs.writeFileSync(readmeFilePath, '');
+
+  filePaths[groupName || 'home'] = readmeFilePath.replace(CONTENT_DIR, '');
 
   // For each of the directory names, create a
   // directory inside the given directory
@@ -186,9 +205,14 @@ function createDirTree(parentDir: string, dirTree: DirTreeType, sortOrders: DirS
     createDirTree(
       path.join(parentDir, dirName),
       dirTree[dirName],
-      dirSortOrders
+      dirSortOrders,
+      filePaths
     );
   });
+
+  return filePaths;
 }
 
-createDirTree(roadmapContentPath, dirTree, dirSortOrders);
+const filePaths = createDirTree(roadmapContentDirPath, dirTree, dirSortOrders);
+
+fs.writeFileSync(path.join(roadmapDirPath, 'content-paths.json'), JSON.stringify(filePaths, null, 2));
