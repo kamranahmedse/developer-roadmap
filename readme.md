@@ -65,7 +65,7 @@ npm run dev
 - Spread the word
 
 <br>
-<hr>
+<br>
 <br>
 
 <div align="center">
@@ -88,6 +88,7 @@ npm run dev
 	</p>
 </div>
 
+<br>
 <br>
 
 ## License
