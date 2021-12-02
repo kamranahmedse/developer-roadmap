@@ -1,4 +1,4 @@
-name: Deployment to GitHub Pages
+name: Deployment to GH Pages
 on:
   push:
     branches: [ master ]
@@ -22,7 +22,7 @@ jobs:
       run: |
         npm run meta
         npm run build
-    - name: Deploy to GitHub Pages
+    - name: Deploy to GH Pages
       run: |
         git config user.email "kamranahmed.se@gmail.com"
         git config user.name "Kamran Ahmed"
