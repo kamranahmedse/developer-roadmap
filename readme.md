@@ -62,13 +62,12 @@ npm run dev
 
 > Have a look at [contribution docs](./contributing) for how to update any of the roadmaps
 
-- Add new Roadmap
-- Suggest changes to existing roadmap
+- Suggest changes to existing roadmaps
 - Improve the site's codebase
+- Add new Roadmap
 - Write tests
 - Discuss ideas in issues
 - Spread the word
-- Reach out with any feedback [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/kamranahmedse.svg?style=social&label=Follow%20%40kamranahmedse)](https://twitter.com/kamranahmedse)
 
 <br>
 <hr>
