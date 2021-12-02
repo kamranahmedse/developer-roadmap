@@ -13,7 +13,7 @@ type RoadmapProps = {
   roadmap: RoadmapType;
 };
 
-function TextualRoadmap(props: RoadmapProps) {
+function RoadmapResources(props: RoadmapProps) {
   const { roadmap } = props;
   if (!roadmap.resourcesPath) {
     return null;
@@ -76,7 +76,7 @@ export default function Roadmap(props: RoadmapProps) {
           </Stack>
         </PageHeader>
 
-        <TextualRoadmap roadmap={roadmap} />
+        <RoadmapResources roadmap={roadmap} />
       </Box>
 
       <OpensourceBanner />
