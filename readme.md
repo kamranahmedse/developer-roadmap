@@ -29,10 +29,6 @@
 
 > The purpose of these roadmaps is to give you an idea about the landscape and to guide you if you are confused about what to learn next and not to encourage you to pick what is hip and trendy. You should grow some understanding of why one tool would be better suited for some cases than the other and remember hip and trendy never means best suited for the job.
 
-<h3 align="center"><strong>Note to Beginners</strong></h3>
-
-> These roadmaps cover everything that is there to learn for the paths listed below. Don't feel overwhelmed, you don't need to learn it all in the beginning if you are just getting started. We are working on the beginner versions of these and will [release it soon](https://roadmap.sh) after we are done with the 2021 release of the Backend and DevOps roadmaps.
-
 ***
 
 ## Available Roadmaps
@@ -68,9 +64,9 @@ npm run dev
 
 > Have a look at [contribution docs](./CONTRIBUTING.md) for how to update any of the roadmaps
 
-* Add new Roadmap
-* Suggest changes to existing roadmap
-* Improve the site's codebase
+- Add new Roadmap
+- Suggest changes to existing roadmap
+- Improve the site's codebase
 - Write tests
 - Discuss ideas in issues
 - Spread the word
