@@ -19,7 +19,7 @@ learnings, get feedbacks on their projects etc.
 ## How did you build roadmap.sh?
 
 The basic version of the website has been built with [Next.js](https://github.com/zeit/next.js/), is opensource and can
-be found on [github](https://github.com/kamranahmedse/roadmap.sh). It was hastily done to get it out in front of the
+be found on [github](https://github.com/kamranahmedse/developer-roadmap). It was hastily done to get it out in front of the
 people and get people to start contributing, so it might be rough on the edges, but that is where we need your help.
 
 ## How does it make money?
@@ -37,7 +37,7 @@ creates value for the people.
 ## Can I contribute?
 
 You definitely can, infact you are encouraged to do that. Even your minor contributions such as typo fixes count. The
-source code of the website can be [found on Github](https://github.com/kamranahmedse/roadmap.sh). Your contributions can
+source code of the website can be [found on Github](https://github.com/kamranahmedse/developer-roadmap). Your contributions can
 be:
 
 * Adding a new roadmap
@@ -51,7 +51,7 @@ be:
 * Becoming a sponsor
 
 Just make sure
-to [follow the contribution guidelines](https://github.com/kamranahmedse/roadmap.sh/tree/master/contributing) when you
+to [follow the contribution guidelines](https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing) when you
 decide to contribute.
 
 ## Can I redistribute the content?
