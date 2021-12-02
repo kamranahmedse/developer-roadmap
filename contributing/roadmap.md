@@ -1,34 +1,11 @@
-# Submitting a new roadmap
+## New Roadmap
 
-First of all thank you for considering to contribute to this project. It wouldn't have been possible for us to keep it live without your contributions 🙏
+Please provide a rough textual roadmap with what you have in mind with an issue and we can take it from there.
 
-> This process will be automated soon. Follow the steps listed below in order to add a new roadmap for now
-  
-* Fork this repository
-* If you haven't contributed to this project before then create your author profile
-  * Open the file [authors.json](../content/authors.json)
-  * Put your preferred `username`
-  * Put a profile picture in [authors directory](../public/authors) with the username  
-* Create a new directory for the roadmap inside the [roadmaps directory](../content/roadmaps) by following the below steps:
-  * Directory name must be `kebab-cased` and prefixed with the incremental number e.g. `6-java-developer`
-  * Create a markdown file `6-roadmap-name/0-About/0-Summary.md` inside this directory and write the article detailing the steps required for this path. It doesn't have to be graphic like the other roadmaps; just focus on writing a detailed but approachable textual guide. 
-  * Create a file `meta.json` inside the roadmap directory with the content below:
-  ```json
-  {
-    "title": "Roadmap Name",
-    "description": "Step by step guide to becoming a modern ***",
-    "featuredDescription": "Step by step guide to becoming a modern ** in 2021",
-    "author": {
-      "name": "Your Name",
-      "url": "https://twitter.com/twitter"
-    },
-    "featured": false,
-    "detailed": false,
-    "versions": []
-  }
-  ```
-* Once done, run the below command:
-  ```shell
-  yarn meta:roadmaps
-  ```
-* Commit, push and open a pull request 
+##  Existing Roadmaps
+
+For the existing roadmaps, please follow the details listed for the nature of contribution:
+
+* **Fixing Typos** — Make your changes in [the roadmap JSON file](/public/project)
+* **Adding or Removing Nodes** — Please open an issue with your suggestion.
+* **Adding Content to Nodes** — Add your content in [the content directory inside the relevant roadmap](/content/roadmaps).
