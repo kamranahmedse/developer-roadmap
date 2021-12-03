@@ -37,5 +37,6 @@
   "featured": true,
   "imagePath": "/roadmaps/frontend.png",
   "resourcesPath": "./resources.md",
-  "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap"
+  "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+  "contentPathsFilePath": "/100-frontend/content-paths.json"
 }

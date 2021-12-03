@@ -213,6 +213,16 @@ function createDirTree(
   return filePaths;
 }
 
+// Create directories and get back the paths for created directories
 const filePaths = createDirTree(roadmapContentDirPath, dirTree, dirSortOrders);
+const contentPathsFilePath = path.join(roadmapDirPath, 'content-paths.json');
 
-fs.writeFileSync(path.join(roadmapDirPath, 'content-paths.json'), JSON.stringify(filePaths, null, 2));
+fs.writeFileSync(contentPathsFilePath, JSON.stringify(filePaths, null, 2));
+
+const roadmapMetaFilePath = path.join(roadmapDirPath, 'meta.json');
+const roadmapMeta = require(roadmapMetaFilePath);
+
+// Put the content paths file path in the roadmap meta
+roadmapMeta.contentPathsFilePath = contentPathsFilePath.replace(CONTENT_DIR, '');
+
+fs.writeFileSync(roadmapMetaFilePath, JSON.stringify(roadmapMeta, null, 2));
