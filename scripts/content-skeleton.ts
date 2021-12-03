@@ -1,8 +1,9 @@
 import fs from 'fs';
 import path from 'path';
 
+const CONTENT_DIR = path.join(__dirname, '../content');
 // Directory containing the roadmaps
-const CONTENT_DIR = path.join(__dirname, '../content/roadmaps');
+const ROADMAP_CONTENT_DIR = path.join(__dirname, '../content/roadmaps');
 const roadmapKey = process.argv[2];
 
 type ControlType = {
@@ -53,7 +54,7 @@ if (!roadmapKey || !roadmaps[roadmapKey]) {
 
 // Directory holding the roadmap content files
 const roadmapDirName = fs
-  .readdirSync(CONTENT_DIR)
+  .readdirSync(ROADMAP_CONTENT_DIR)
   .find((dirName: string) => dirName.replace(/\d+-/, '') === roadmapKey);
 
 if (!roadmapDirName) {
@@ -61,8 +62,8 @@ if (!roadmapDirName) {
   process.exit(1);
 }
 
-const roadmapDirPath = path.join(CONTENT_DIR, roadmapDirName);
-const roadmapContentDirPath = path.join(CONTENT_DIR, roadmapDirName, 'content');
+const roadmapDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName);
+const roadmapContentDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName, 'content');
 
 // If roadmap content already exists do not proceed as it would override the files
 if (fs.existsSync(roadmapContentDirPath)) {
