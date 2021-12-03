@@ -14,6 +14,7 @@
     "meta:roadmaps": "node ./scripts/roadmaps-meta.js",
     "meta": "npm run meta:roadmaps && npm run meta:sitemap",
     "roadmap-content": "ts-node scripts/content-skeleton.ts",
+    "postroadmap-content": "npm run meta",
     "postinstall": "husky install"
   },
   "dependencies": {
