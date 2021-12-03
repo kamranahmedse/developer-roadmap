@@ -15,9 +15,9 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
 
   // We can't use the absolute path in the build e.g. ~/Users/user/where-build-is-running/content
   // So, we remove it and use the path relative to content directory
-  let contentPath = roadmapMeta.contentPath;
-  if (contentPath) {
-    contentPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.contentPath);
+  let landingPath = roadmapMeta.landingPath;
+  if (landingPath) {
+    landingPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.landingPath);
   }
 
   let resourcesPath = roadmapMeta.resourcesPath;
@@ -36,7 +36,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
     {
       ...roadmapMeta,
       id: roadmapSlug,
-      contentPath: contentPath,
+      landingPath: landingPath,
       resourcesPath: resourcesPath,
       metaPath: metaPath,
       isUpcoming: roadmapMeta.isUpcoming || false

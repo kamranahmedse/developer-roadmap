@@ -33,18 +33,18 @@ function ImageRoadmap(props: RoadmapProps) {
 
 function TextualRoadmap(props: RoadmapProps) {
   const { roadmap } = props;
-  if (!roadmap.contentPath) {
+  if (!roadmap.landingPath) {
     return null;
   }
 
   // Remove trailing slashes
-  const normalizedPath = roadmap.contentPath.replace(/^\//, '');
-  const RoadmapContent = require(`../../content/${normalizedPath}`).default;
+  const normalizedPath = roadmap.landingPath.replace(/^\//, '');
+  const LandingContent = require(`../../content/${normalizedPath}`).default;
 
   return (
     <Container maxW={'container.md'} position='relative'>
       <MdRenderer>
-        <RoadmapContent />
+        <LandingContent />
       </MdRenderer>
     </Container>
   );

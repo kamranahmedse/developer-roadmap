@@ -155,7 +155,7 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "contentPath": "/roadmaps/103-react/landscape.md",
+    "landingPath": "/roadmaps/103-react/landscape.md",
     "resourcesPath": "/roadmaps/103-react/resources.md",
     "versions": [
       "latest",
@@ -196,7 +196,7 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "contentPath": "/roadmaps/104-angular/landscape.md",
+    "landingPath": "/roadmaps/104-angular/landscape.md",
     "resourcesPath": "/roadmaps/104-angular/resources.md",
     "versions": [
       "latest",
@@ -237,7 +237,7 @@
     "isTextHeavy": true,
     "isCommunity": false,
     "featured": true,
-    "contentPath": "/roadmaps/105-android/landscape.md",
+    "landingPath": "/roadmaps/105-android/landscape.md",
     "resourcesPath": "/roadmaps/105-android/resources.md",
     "versions": [
       "latest",
@@ -278,7 +278,7 @@
     "isCommunity": false,
     "featured": true,
     "resourcesPath": "/roadmaps/106-python/resources.md",
-    "contentPath": "/roadmaps/106-python/landscape.md",
+    "landingPath": "/roadmaps/106-python/landscape.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
     "versions": [
       "latest"
@@ -327,7 +327,7 @@
     "isCommunity": false,
     "isUpcoming": false,
     "featured": true,
-    "contentPath": "/roadmaps/107-golang/landscape.md",
+    "landingPath": "/roadmaps/107-golang/landscape.md",
     "resourcesPath": "/roadmaps/107-golang/resources.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
     "versions": [
@@ -377,7 +377,7 @@
     "isCommunity": false,
     "isUpcoming": false,
     "featured": true,
-    "contentPath": "/roadmaps/108-java/landscape.md",
+    "landingPath": "/roadmaps/108-java/landscape.md",
     "resourcesPath": "/roadmaps/108-java/resources.md",
     "versions": [
       "latest",
@@ -421,7 +421,7 @@
     "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
     "featuredTitle": "DBA",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-    "contentPath": "/roadmaps/109-postgresql-dba/landscape.md",
+    "landingPath": "/roadmaps/109-postgresql-dba/landscape.md",
     "resourcesPath": "/roadmaps/109-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
@@ -460,7 +460,7 @@
     "isCommunity": false,
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/110-aws/landscape.md",
+    "landingPath": "/roadmaps/110-aws/landscape.md",
     "resourcesPath": "/roadmaps/110-aws/resources.md",
     "versions": [
       "latest",
@@ -499,7 +499,7 @@
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
     "isUpcoming": true,
     "featured": true,
-    "contentPath": "/roadmaps/111-qa/landscape.md",
+    "landingPath": "/roadmaps/111-qa/landscape.md",
     "resourcesPath": "/roadmaps/111-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",

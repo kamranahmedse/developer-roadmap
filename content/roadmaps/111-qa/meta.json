@@ -23,7 +23,7 @@
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2021",
   "isUpcoming": true,
   "featured": true,
-  "contentPath": "./landscape.md",
+  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Anas Fitiani",

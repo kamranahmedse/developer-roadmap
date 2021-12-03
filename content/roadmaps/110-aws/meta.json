@@ -22,7 +22,7 @@
   "isCommunity": false,
   "isUpcoming": true,
   "featured": true,
-  "contentPath": "./landscape.md",
+  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "versions": [
     "latest",
