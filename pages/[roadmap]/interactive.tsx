@@ -1,14 +1,13 @@
-import { Box, Button, Container, Link, Stack } from '@chakra-ui/react';
-import { ArrowBackIcon, AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
+import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { PageHeader } from '../../components/page-header';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
 import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from '../../lib/renderer';
+import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -71,55 +70,7 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
         keywords={roadmap?.seo.keywords || []}
       />
       <Box mb="60px">
-        <PageHeader title={roadmap.title} subtitle={roadmap.description}>
-          <Stack mt="20px" isInline>
-            <Button
-              d={['none', 'flex']}
-              as={Link}
-              href={'/roadmaps'}
-              size="xs"
-              py="14px"
-              px="10px"
-              leftIcon={<ArrowBackIcon />}
-              colorScheme="teal"
-              variant="solid"
-              _hover={{ textDecoration: 'none' }}
-            >
-              All Roadmaps
-            </Button>
-
-            {roadmap.pdfUrl && (
-              <Button
-                as={Link}
-                href={roadmap.pdfUrl}
-                target="_blank"
-                size="xs"
-                py="14px"
-                px="10px"
-                leftIcon={<DownloadIcon />}
-                colorScheme="yellow"
-                variant="solid"
-                _hover={{ textDecoration: 'none' }}
-              >
-                Download PDF
-              </Button>
-            )}
-            <Button
-              as={Link}
-              href={'/signup'}
-              size="xs"
-              py="14px"
-              px="10px"
-              leftIcon={<AtSignIcon />}
-              colorScheme="yellow"
-              variant="solid"
-              _hover={{ textDecoration: 'none' }}
-            >
-              Subscribe
-            </Button>
-          </Stack>
-        </PageHeader>
-
+        <RoadmapPageHeader roadmap={roadmap} />
         <RoadmapRenderer json={json} roadmap={roadmap} />
       </Box>
 
