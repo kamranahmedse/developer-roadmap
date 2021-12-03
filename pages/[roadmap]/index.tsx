@@ -1,30 +1,12 @@
-import {
-  Box,
-  Button,
-  Text,
-  Container,
-  Link,
-  Stack,
-  Badge,
-} from '@chakra-ui/react';
-import {
-  ArrowBackIcon,
-  AtSignIcon,
-  DownloadIcon,
-  ViewIcon,
-} from '@chakra-ui/icons';
+import React from 'react';
+import { Box, Container, Image } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { PageHeader } from '../../components/page-header';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
-import siteConfig from '../../content/site.json';
-import React from 'react';
-import { event } from '../../lib/gtag';
-import { NewAlertBanner } from '../../components/roadmap/new-alert-banner';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 
 type RoadmapProps = {
@@ -40,7 +22,7 @@ function ImageRoadmap(props: RoadmapProps) {
   return (
     <Container maxW={'900px'} position="relative">
       <Box mb="30px">
-        <img alt="Frontend Roadmap" src={roadmap.imagePath} />
+        <Image alt={roadmap.title} src={roadmap.imagePath} />
       </Box>
     </Container>
   );
