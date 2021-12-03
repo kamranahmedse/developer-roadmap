@@ -17,12 +17,17 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
   // So, we remove it and use the path relative to content directory
   let landingPath = roadmapMeta.landingPath;
   if (landingPath) {
-    landingPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.landingPath);
+    landingPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), landingPath);
   }
 
   let resourcesPath = roadmapMeta.resourcesPath;
   if (resourcesPath) {
-    resourcesPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), roadmapMeta.resourcesPath);
+    resourcesPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), resourcesPath);
+  }
+
+  let contentPathsFilePath = roadmapMeta.contentPathsFilePath;
+  if (contentPathsFilePath) {
+    contentPathsFilePath = path.join(roadmapDir.replace(STORAGE_PATH, ''), contentPathsFilePath);
   }
 
   let metaPath = path.join(roadmapDir.replace(STORAGE_PATH, ''), 'meta.json');
@@ -38,6 +43,7 @@ const roadmapsMeta = roadmapDirs.reduce((metaAcc, roadmapDirName) => {
       id: roadmapSlug,
       landingPath: landingPath,
       resourcesPath: resourcesPath,
+      contentPathsFilePath: contentPathsFilePath,
       metaPath: metaPath,
       isUpcoming: roadmapMeta.isUpcoming || false
     }
