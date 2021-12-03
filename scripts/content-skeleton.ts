@@ -223,6 +223,6 @@ const roadmapMetaFilePath = path.join(roadmapDirPath, 'meta.json');
 const roadmapMeta = require(roadmapMetaFilePath);
 
 // Put the content paths file path in the roadmap meta
-roadmapMeta.contentPathsFilePath = contentPathsFilePath.replace(CONTENT_DIR, '');
+roadmapMeta.contentPathsFilePath = contentPathsFilePath.replace(roadmapDirPath, '.');
 
 fs.writeFileSync(roadmapMetaFilePath, JSON.stringify(roadmapMeta, null, 2));
