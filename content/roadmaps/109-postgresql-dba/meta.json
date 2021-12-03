@@ -27,7 +27,7 @@
   "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2021",
   "featuredTitle": "DBA",
   "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2021",
-  "contentPath": "./landscape.md",
+  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Alexey Lesovsky",
