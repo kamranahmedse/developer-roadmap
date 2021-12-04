@@ -167,11 +167,13 @@ function createDirTree(
   const childrenDirNames = Object.keys(dirTree);
   const hasChildren = childrenDirNames.length !== 0;
 
+  // @todo write test for this, yolo for now
   const groupName = parentDir
     .replace(roadmapContentDirPath, '') // Remove base dir path
     .replace(/(^\/)|(\/$)/g, '') // Remove trailing slashes
     .replace(/(^\d+?-)/g, '') // Remove sorting information
-    .replace('/', ':'); // Replace slashes with `:`
+    .replaceAll('/', ':') // Replace slashes with `:`
+    .replace(/:\d+-/, ':');
 
   const sortOrder = sortOrders[groupName] || '';
 
