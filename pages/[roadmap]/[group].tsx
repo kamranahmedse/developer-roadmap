@@ -54,7 +54,6 @@ function RoadmapBreadcrumb(props: RoadmapProps) {
     <Breadcrumb
       fontWeight="medium"
       fontSize="sm"
-      mb="20px"
       separator={<ChevronRightIcon color="gray.500" />}
     >
       <BreadcrumbItem>
