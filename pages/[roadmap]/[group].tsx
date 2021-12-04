@@ -53,8 +53,13 @@ function TextualRoadmap(props: RoadmapProps) {
           </BreadcrumbItem>
 
           {groupParts.map((groupPart: string, counter: number) => (
-            <BreadcrumbItem key={groupPart}>
-              <BreadcrumbLink color="blue.500" href={`/${roadmap.id}/${groupPart}`}>
+            <BreadcrumbItem key={groupPart} isCurrentPage={counter === groupParts.length - 1}>
+              <BreadcrumbLink
+                color="blue.500"
+                href={`/${roadmap.id}/${groupParts
+                  .slice(0, counter + 1)
+                  .join(':')}`}
+              >
                 {groupPart.split('-').join(' ')}
               </BreadcrumbLink>
             </BreadcrumbItem>
