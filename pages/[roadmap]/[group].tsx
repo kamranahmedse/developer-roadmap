@@ -20,6 +20,7 @@ type RoadmapProps = {
   group: string;
 };
 
+// @todo error handling
 function TextualRoadmap(props: RoadmapProps) {
   const { roadmap, group } = props;
   if (!roadmap.contentPathsFilePath) {
@@ -33,7 +34,9 @@ function TextualRoadmap(props: RoadmapProps) {
   const contentFilePath = contentPathMapping[group] || '';
   const normalizedContentFilePath = contentFilePath.replace(/^\//, '');
 
-  const GroupContent = require(`../../content/${normalizedContentFilePath}`).default;
+  const GroupContent =
+    require(`../../content/${normalizedContentFilePath}`).default;
+  const groupParts = group.split(':');
 
   return (
     <Container maxW={'container.md'} position="relative">
@@ -44,25 +47,18 @@ function TextualRoadmap(props: RoadmapProps) {
           separator={<ChevronRightIcon color="gray.500" />}
         >
           <BreadcrumbItem>
-            <BreadcrumbLink color="blue.500" href="/frontend">
-              Frontend
+            <BreadcrumbLink color="blue.500" href={`/${roadmap.id}`}>
+              {roadmap.featuredTitle}
             </BreadcrumbLink>
           </BreadcrumbItem>
 
-          <BreadcrumbItem>
-            <BreadcrumbLink color="blue.500" href="/frontend/internet">
-              Internet
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-
-          <BreadcrumbItem isCurrentPage>
-            <BreadcrumbLink
-              color="blue.500"
-              href="/frontend/internet:what-is-internet"
-            >
-              What is Internet
-            </BreadcrumbLink>
-          </BreadcrumbItem>
+          {groupParts.map((groupPart: string, counter: number) => (
+            <BreadcrumbItem key={groupPart}>
+              <BreadcrumbLink color="blue.500" href={`/${roadmap.id}/${groupPart}`}>
+                {groupPart.split('-').join(' ')}
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+          ))}
         </Breadcrumb>
       </Box>
       <MdRenderer>
