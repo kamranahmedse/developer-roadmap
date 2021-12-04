@@ -1,0 +1,1 @@
+modern-css:css-modules

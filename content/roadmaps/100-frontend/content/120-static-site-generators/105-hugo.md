@@ -1,0 +1,1 @@
+static-site-generators:hugo

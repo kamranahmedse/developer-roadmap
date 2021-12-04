@@ -1,1 +1,1 @@
-Here is how the internet work
+internet:how-does-the-internet-work
