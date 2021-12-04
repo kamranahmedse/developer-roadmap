@@ -31,7 +31,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
         <Box
           p="0px 30px 30px"
           position="fixed"
-          w={['100%', '70%', '50%']}
+          w={['100%', '60%', '40%']}
           bg="white"
           top={0}
           right={0}
