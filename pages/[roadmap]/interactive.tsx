@@ -8,21 +8,35 @@ import Helmet from '../../components/helmet';
 import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
-import RoadmapGroup from './[group]';
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
+import { useFetch } from 'use-http';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
-  json: any;
 };
 
 function RoadmapRenderer(props: RoadmapProps) {
-  const { json, roadmap } = props;
+  const { roadmap } = props;
+
+  const { loading, error, get } = useFetch();
 
   const roadmapRef = useRef(null);
+  const [roadmapJson, setRoadmapJson] = useState(null);
   const [groupId, setGroupId] = useState('');
   const [hasError, setHasError] = useState(false);
 
+  useEffect(() => {
+    get(`/project/${roadmap.id}.json`)
+      .then((roadmapJson) => {
+        setRoadmapJson(roadmapJson);
+      })
+      .catch((err) => {
+        console.error(err);
+        setHasError(true);
+      });
+  }, []);
+
+  // Event bindings for the roadmap interactivity
   useEffect(() => {
     window.addEventListener('keydown', (event: KeyboardEvent) => {
       if (event.key.toLowerCase() === 'escape') {
@@ -41,10 +55,14 @@ function RoadmapRenderer(props: RoadmapProps) {
       // will be translated to `internet:how-does-the-internet-work`
       setGroupId(groupId.replace(/^\d+-/, ''));
     });
-  });
+  }, []);
 
   useEffect(() => {
-    wireframeJSONToSVG(json)
+    if (!roadmapJson) {
+      return;
+    }
+
+    wireframeJSONToSVG(roadmapJson)
       .then((svgElement) => {
         const container: HTMLElement = roadmapRef.current!;
         if (!container) {
@@ -60,7 +78,7 @@ function RoadmapRenderer(props: RoadmapProps) {
       .catch((err) => {
         setHasError(true);
       });
-  }, [json]);
+  }, [roadmapJson]);
 
   return (
     <Container maxW={'container.lg'} position="relative">
@@ -76,7 +94,7 @@ function RoadmapRenderer(props: RoadmapProps) {
 }
 
 export default function InteractiveRoadmap(props: RoadmapProps) {
-  const { roadmap, json } = props;
+  const { roadmap } = props;
 
   return (
     <Box bg="white" minH="100vh">
@@ -88,7 +106,7 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       />
       <Box mb="60px">
         <RoadmapPageHeader roadmap={roadmap} />
-        <RoadmapRenderer json={json} roadmap={roadmap} />
+        <RoadmapRenderer roadmap={roadmap} />
       </Box>
 
       <OpensourceBanner />
@@ -125,15 +143,9 @@ type ContextType = {
 export async function getStaticProps(context: ContextType) {
   const roadmapId: string = context?.params?.roadmap;
 
-  let roadmapJson = {};
-  try {
-    roadmapJson = require(`../../public/project/${roadmapId}.json`);
-  } catch (e) {}
-
   return {
     props: {
       roadmap: getRoadmapById(roadmapId),
-      json: roadmapJson,
     },
   };
 }
