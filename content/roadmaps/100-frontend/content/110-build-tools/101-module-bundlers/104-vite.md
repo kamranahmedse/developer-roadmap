@@ -1,0 +1,1 @@
+build-tools:module-bundlers:vite

@@ -1,0 +1,1 @@
+graphql:relay-modern
