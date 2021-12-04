@@ -119,7 +119,7 @@ export async function getStaticPaths() {
     return {
       params: {
         roadmap: roadmap.id,
-        group: '',
+        group: roadmap.id,
       },
     };
   });
