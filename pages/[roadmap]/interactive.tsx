@@ -8,6 +8,7 @@ import Helmet from '../../components/helmet';
 import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
+import RoadmapGroup from './[group]';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -18,6 +19,7 @@ function RoadmapRenderer(props: RoadmapProps) {
   const { json, roadmap } = props;
 
   const roadmapRef = useRef(null);
+  const [group, setGroup] = useState('');
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
@@ -28,7 +30,7 @@ function RoadmapRenderer(props: RoadmapProps) {
         return;
       }
 
-      alert(groupName);
+      setGroup(groupName.replace(/^\d+-/, ''));
     });
   });
 
@@ -53,6 +55,8 @@ function RoadmapRenderer(props: RoadmapProps) {
 
   return (
     <Container maxW={'container.lg'} position="relative">
+      {group && <RoadmapGroup isOutlet roadmap={roadmap} group={group} />}
+
       <div ref={roadmapRef} />
     </Container>
   );
@@ -111,8 +115,7 @@ export async function getStaticProps(context: ContextType) {
   let roadmapJson = {};
   try {
     roadmapJson = require(`../../public/project/${roadmapId}.json`);
-  } catch (e) {
-  }
+  } catch (e) {}
 
   return {
     props: {

@@ -18,6 +18,7 @@ import { ChevronRightIcon } from '@chakra-ui/icons';
 type RoadmapProps = {
   roadmap: RoadmapType;
   group: string;
+  isOutlet?: boolean;
 };
 
 // @todo error handling
@@ -36,45 +37,58 @@ function TextualRoadmap(props: RoadmapProps) {
 
   const GroupContent =
     require(`../../content/${normalizedContentFilePath}`).default;
-  const groupParts = group.split(':');
 
   return (
-    <Container maxW={'container.md'} position="relative">
-      <Box d="block" m="60px 0 20px">
-        <Breadcrumb
-          fontWeight="medium"
-          fontSize="sm"
-          separator={<ChevronRightIcon color="gray.500" />}
-        >
-          <BreadcrumbItem>
-            <BreadcrumbLink color="blue.500" href={`/${roadmap.id}`}>
-              {roadmap.featuredTitle}
-            </BreadcrumbLink>
-          </BreadcrumbItem>
-
-          {groupParts.map((groupPart: string, counter: number) => (
-            <BreadcrumbItem key={groupPart} isCurrentPage={counter === groupParts.length - 1}>
-              <BreadcrumbLink
-                color="blue.500"
-                href={`/${roadmap.id}/${groupParts
-                  .slice(0, counter + 1)
-                  .join(':')}`}
-              >
-                {groupPart.split('-').join(' ')}
-              </BreadcrumbLink>
-            </BreadcrumbItem>
-          ))}
-        </Breadcrumb>
-      </Box>
-      <MdRenderer>
-        <GroupContent />
-      </MdRenderer>
-    </Container>
+    <MdRenderer>
+      <GroupContent />
+    </MdRenderer>
   );
 }
 
-export default function Roadmap(props: RoadmapProps) {
+function RoadmapBreadcrumb(props: RoadmapProps) {
   const { roadmap, group } = props;
+
+  const groupParts = group.split(':');
+
+  return (
+    <Breadcrumb
+      fontWeight="medium"
+      fontSize="sm"
+      mb="20px"
+      separator={<ChevronRightIcon color="gray.500" />}
+    >
+      <BreadcrumbItem>
+        <BreadcrumbLink color="blue.500" href={`/${roadmap.id}`}>
+          {roadmap.featuredTitle}
+        </BreadcrumbLink>
+      </BreadcrumbItem>
+
+      {groupParts.map((groupPart: string, counter: number) => (
+        <BreadcrumbItem
+          key={groupPart}
+          isCurrentPage={counter === groupParts.length - 1}
+        >
+          <BreadcrumbLink
+            textTransform="capitalize"
+            color="blue.500"
+            href={`/${roadmap.id}/${groupParts
+              .slice(0, counter + 1)
+              .join(':')}`}
+          >
+            {groupPart.split('-').join(' ')}
+          </BreadcrumbLink>
+        </BreadcrumbItem>
+      ))}
+    </Breadcrumb>
+  );
+}
+
+export default function RoadmapGroup(props: RoadmapProps) {
+  const { roadmap, group, isOutlet = false } = props;
+
+  if (isOutlet) {
+    return <TextualRoadmap roadmap={roadmap} group={group} />;
+  }
 
   return (
     <Box bg="white" minH="100vh">
@@ -84,9 +98,10 @@ export default function Roadmap(props: RoadmapProps) {
         description={roadmap?.seo?.description || roadmap.description}
         keywords={roadmap?.seo.keywords || []}
       />
-      <Box mb="60px">
+      <Container my={'60px'} maxW={'container.md'} position="relative">
+        <RoadmapBreadcrumb roadmap={roadmap} group={group} />
         <TextualRoadmap roadmap={roadmap} group={group} />
-      </Box>
+      </Container>
 
       <OpensourceBanner />
       <UpdatesBanner />
