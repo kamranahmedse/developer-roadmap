@@ -9,6 +9,7 @@ import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import RoadmapGroup from './[group]';
+import { ContentDrawer } from '../../components/roadmap/content-drawer';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -19,18 +20,26 @@ function RoadmapRenderer(props: RoadmapProps) {
   const { json, roadmap } = props;
 
   const roadmapRef = useRef(null);
-  const [group, setGroup] = useState('');
+  const [groupId, setGroupId] = useState('');
   const [hasError, setHasError] = useState(false);
 
   useEffect(() => {
+    window.addEventListener('keydown', (event: KeyboardEvent) => {
+      if (event.key.toLowerCase() === 'escape') {
+        setGroupId('');
+      }
+    });
+
     window.addEventListener('click', (event: MouseEvent) => {
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
-      const groupName = targetGroup?.dataset?.groupName;
-      if (!targetGroup || !groupName) {
+      const groupId = targetGroup?.dataset?.groupId;
+      if (!targetGroup || !groupId) {
         return;
       }
 
-      setGroup(groupName.replace(/^\d+-/, ''));
+      // e.g. 100-internet:how-does-the-internet-work
+      // will be translated to `internet:how-does-the-internet-work`
+      setGroupId(groupId.replace(/^\d+-/, ''));
     });
   });
 
@@ -55,7 +64,11 @@ function RoadmapRenderer(props: RoadmapProps) {
 
   return (
     <Container maxW={'container.lg'} position="relative">
-      {group && <RoadmapGroup isOutlet roadmap={roadmap} group={group} />}
+      <ContentDrawer
+        roadmap={roadmap}
+        groupId={groupId}
+        onClose={() => setGroupId('')}
+      />
 
       <div ref={roadmapRef} />
     </Container>

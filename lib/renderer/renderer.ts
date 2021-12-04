@@ -262,7 +262,7 @@ export class Renderer {
       'g',
       {
         ...(controlName
-          ? { class: 'clickable-group', 'data-group-name': controlName }
+          ? { class: 'clickable-group', 'data-group-id': controlName }
           : {}),
       },
       container

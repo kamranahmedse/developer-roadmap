@@ -35,10 +35,10 @@ const HeaderLink = styled.a`
 
 const H1 = styled.h1`
   position: relative;
-  font-size: 42px;
+  font-size: 32px;
   line-height: 40px;
   font-weight: 700;
-  margin: 32px 0 10px !important;
+  margin: 20px 0 10px !important;
 
   &:hover ${HeaderLink} {
     display: flex;
@@ -46,12 +46,12 @@ const H1 = styled.h1`
 `;
 
 const H2 = styled(H1).attrs({ as: 'h2' })`
-  font-size: 32px;
+  font-size: 30px;
 `;
 
 const H3 = styled(H1).attrs({ as: 'h3' })`
   margin: 22px 0 8px;
-  font-size: 30px;
+  font-size: 28px;
 `;
 
 const H4 = styled(H1).attrs({ as: 'h4' })`
