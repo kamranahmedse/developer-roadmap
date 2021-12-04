@@ -24,7 +24,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Android Roadmap](https://roadmap.sh/android)
 - [Python Roadmap](https://roadmap.sh/python)
-- [Go Roadmap](https://roadmap.sh/go)
+- [Go Roadmap](https://roadmap.sh/golang)
 - [Java Roadmap](https://roadmap.sh/java)
 - [DBA Roadmap](https://roadmap.sh/dba)
 
