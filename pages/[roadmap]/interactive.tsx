@@ -34,7 +34,7 @@ function RoadmapRenderer(props: RoadmapProps) {
         console.error(err);
         setHasError(true);
       });
-  }, []);
+  }, [get, roadmap.id]);
 
   // Event bindings for the roadmap interactivity
   useEffect(() => {

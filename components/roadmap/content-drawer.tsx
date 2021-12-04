@@ -27,7 +27,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
         bg="black"
         opacity={0.4}
       />
-      <RemoveScroll>
+      <RemoveScroll allowPinchZoom>
         <Box
           p="0px 30px 30px"
           position="fixed"
