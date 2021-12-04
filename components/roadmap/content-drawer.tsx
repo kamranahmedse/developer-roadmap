@@ -16,7 +16,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
   }
 
   return (
-    <Box zIndex={999} pos="relative">
+    <Box zIndex={99999} pos="relative">
       <Box
         onClick={onClose}
         pos="fixed"
@@ -31,7 +31,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
         <Box
           p="0px 30px 30px"
           position="fixed"
-          w={['100%', '70%', '40%']}
+          w={['100%', '70%', '50%']}
           bg="white"
           top={0}
           right={0}
