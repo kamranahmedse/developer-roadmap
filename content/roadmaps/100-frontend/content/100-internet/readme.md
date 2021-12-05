@@ -2,6 +2,7 @@
 
 The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
 
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Watch' href='/guides/what-is-internet'>Introduction to Internet</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=x3c1ih2NJEg'>How does the Internet work?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.vox.com/2014/6/16/18076282/the-internet'>The Internet Explained</BadgeLink>
