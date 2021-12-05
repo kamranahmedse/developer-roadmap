@@ -10,6 +10,7 @@ import EnrichedLink from './a';
 import { BadgeLink } from './badge-link';
 import { Li, Ul } from './ul';
 import PremiumBlock from './premium-block';
+import { ResourceGroupTitle } from './resource-group-title';
 
 const MdxComponents = {
   p: P,
@@ -22,6 +23,7 @@ const MdxComponents = {
   img: Img,
   code: Code,
   BadgeLink: BadgeLink,
+  ResourceGroupTitle: ResourceGroupTitle,
   PremiumBlock: PremiumBlock,
   ul: Ul,
   li: Li
