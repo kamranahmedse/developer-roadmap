@@ -7,3 +7,4 @@ The Internet is a global network of computers connected to each other which comm
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=x3c1ih2NJEg'>How does the Internet work?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.vox.com/2014/6/16/18076282/the-internet'>The Internet Explained</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm'>How Does the Internet Work?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=7_LPdttKXPc'>How the Internet Works in 5 Minutes</BadgeLink>
