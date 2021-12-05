@@ -8,5 +8,5 @@ type ResourceGroupTitleProps = {
 export function ResourceGroupTitle(props: ResourceGroupTitleProps) {
   const { children } = props;
 
-  return <Heading fontSize='22px' as="h2" mb={'10px'}>{children}</Heading>;
+  return <Heading mt='20px' color='gray.800' fontSize='14px' pb='5px' borderBottomWidth={1} textTransform='uppercase' as="h2" mb={'10px'}>{children}</Heading>;
 }
