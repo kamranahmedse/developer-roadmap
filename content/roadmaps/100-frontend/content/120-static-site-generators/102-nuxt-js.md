@@ -1,1 +1,1 @@
-static-site-generators:nuxt-js
+# Nuxt js

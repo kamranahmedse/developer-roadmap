@@ -1,6 +1,8 @@
 # Internet
 
-Since the explosive growth of web-based applications, every developer could stand to benefit from understanding how the Internet works. In this article, accompanied with an introductory series of short videos about the Internet from code.org, you will learn the basics of the Internet and how it works. After going through this article, you will be able to answer the below questions:
+The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
 
-- [Browsers](/frontend/internet:how-does-the-internet-work)
-- [DNS and how it Works?](/frontend/internet:how-does-the-internet-work)
+<BadgeLink badgeText='Watch' href='/guides/what-is-internet'>Introduction to Internet</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=x3c1ih2NJEg'>How does the Internet work?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.vox.com/2014/6/16/18076282/the-internet'>The Internet Explained</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm'>How Does the Internet Work?</BadgeLink>

@@ -3,7 +3,11 @@ import {
   Breadcrumb,
   BreadcrumbItem,
   BreadcrumbLink,
+  Button,
   Container,
+  Divider,
+  Link,
+  Text,
 } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
@@ -14,6 +18,8 @@ import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
 import React from 'react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
+import siteConfig from '../../content/site.json';
+import { EditContentPageLink } from '../../components/roadmap/edit-content-page-link';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -22,7 +28,7 @@ type RoadmapProps = {
 };
 
 // @todo error handling
-function TextualRoadmap(props: RoadmapProps) {
+function TextualContent(props: RoadmapProps) {
   const { roadmap, group } = props;
   if (!roadmap.contentPathsFilePath) {
     return null;
@@ -39,9 +45,14 @@ function TextualRoadmap(props: RoadmapProps) {
     require(`../../content/${normalizedContentFilePath}`).default;
 
   return (
-    <MdRenderer>
-      <GroupContent />
-    </MdRenderer>
+    <Box>
+      <MdRenderer>
+        <GroupContent />
+        <EditContentPageLink
+          href={`${siteConfig.url.repoData}/${normalizedContentFilePath}`}
+        />
+      </MdRenderer>
+    </Box>
   );
 }
 
@@ -86,7 +97,7 @@ export default function RoadmapGroup(props: RoadmapProps) {
   const { roadmap, group, isOutlet = false } = props;
 
   if (isOutlet) {
-    return <TextualRoadmap roadmap={roadmap} group={group} />;
+    return <TextualContent roadmap={roadmap} group={group} />;
   }
 
   return (
@@ -99,7 +110,7 @@ export default function RoadmapGroup(props: RoadmapProps) {
       />
       <Container my={'60px'} maxW={'container.md'} position="relative">
         <RoadmapBreadcrumb roadmap={roadmap} group={group} />
-        <TextualRoadmap roadmap={roadmap} group={group} />
+        <TextualContent roadmap={roadmap} group={group} />
       </Container>
 
       <OpensourceBanner />

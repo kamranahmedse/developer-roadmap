@@ -63,7 +63,11 @@ if (!roadmapDirName) {
 }
 
 const roadmapDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName);
-const roadmapContentDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName, 'content');
+const roadmapContentDirPath = path.join(
+  ROADMAP_CONTENT_DIR,
+  roadmapDirName,
+  'content'
+);
 
 // If roadmap content already exists do not proceed as it would override the files
 if (fs.existsSync(roadmapContentDirPath)) {
@@ -175,6 +179,12 @@ function createDirTree(
     .replaceAll('/', ':') // Replace slashes with `:`
     .replace(/:\d+-/, ':');
 
+  const humanizedGroupName = groupName
+    .split(':')
+    .pop()
+    ?.replaceAll('-', ' ')
+    .replace(/^\w/, ($0) => $0.toUpperCase());
+
   const sortOrder = sortOrders[groupName] || '';
 
   // Attach sorting information to dirname
@@ -187,7 +197,7 @@ function createDirTree(
   // If no children, create a file for this under the parent directory
   if (!hasChildren) {
     let fileName = `${parentDir}.md`;
-    fs.writeFileSync(fileName, '');
+    fs.writeFileSync(fileName, `# ${humanizedGroupName}`);
 
     filePaths[groupName || 'home'] = fileName.replace(CONTENT_DIR, '');
     return filePaths;
@@ -198,7 +208,7 @@ function createDirTree(
   fs.mkdirSync(parentDir);
 
   let readmeFilePath = path.join(parentDir, 'readme.md');
-  fs.writeFileSync(readmeFilePath, '');
+  fs.writeFileSync(readmeFilePath, `# ${humanizedGroupName}`);
 
   filePaths[groupName || 'home'] = readmeFilePath.replace(CONTENT_DIR, '');
 
@@ -226,6 +236,9 @@ const roadmapMetaFilePath = path.join(roadmapDirPath, 'meta.json');
 const roadmapMeta = require(roadmapMetaFilePath);
 
 // Put the content paths file path in the roadmap meta
-roadmapMeta.contentPathsFilePath = contentPathsFilePath.replace(roadmapDirPath, '.');
+roadmapMeta.contentPathsFilePath = contentPathsFilePath.replace(
+  roadmapDirPath,
+  '.'
+);
 
 fs.writeFileSync(roadmapMetaFilePath, JSON.stringify(roadmapMeta, null, 2));

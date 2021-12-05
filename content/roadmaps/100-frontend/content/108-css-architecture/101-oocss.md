@@ -1,1 +1,1 @@
-css-architecture:oocss
+# Oocss

@@ -1,1 +1,1 @@
-mobile-applications:nativescript
+# Nativescript

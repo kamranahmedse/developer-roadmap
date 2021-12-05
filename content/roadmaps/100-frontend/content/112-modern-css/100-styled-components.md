@@ -1,1 +1,1 @@
-modern-css:styled-components
+# Styled components
