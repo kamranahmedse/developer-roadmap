@@ -38,13 +38,13 @@ function RoadmapRenderer(props: RoadmapProps) {
 
   // Event bindings for the roadmap interactivity
   useEffect(() => {
-    window.addEventListener('keydown', (event: KeyboardEvent) => {
+    function keydownListener(event: KeyboardEvent) {
       if (event.key.toLowerCase() === 'escape') {
         setGroupId('');
       }
-    });
+    }
 
-    window.addEventListener('click', (event: MouseEvent) => {
+    function clickListener(event: MouseEvent) {
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
       const groupId = targetGroup?.dataset?.groupId;
       if (!targetGroup || !groupId) {
@@ -59,7 +59,15 @@ function RoadmapRenderer(props: RoadmapProps) {
       // e.g. 100-internet:how-does-the-internet-work
       // will be translated to `internet:how-does-the-internet-work`
       setGroupId(groupId.replace(/^\d+-/, ''));
-    });
+    }
+
+    window.addEventListener('keydown', keydownListener);
+    window.addEventListener('click', clickListener);
+
+    return () => {
+      window.removeEventListener('keydown', keydownListener);
+      window.removeEventListener('click', clickListener);
+    }
   }, []);
 
   useEffect(() => {
