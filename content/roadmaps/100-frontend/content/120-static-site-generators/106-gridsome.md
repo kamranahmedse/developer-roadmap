@@ -1,1 +1,1 @@
-static-site-generators:gridsome
+# Gridsome

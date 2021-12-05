@@ -1,1 +1,1 @@
-static-site-generators:next-js
+# Next js

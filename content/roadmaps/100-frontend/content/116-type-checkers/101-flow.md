@@ -1,1 +1,1 @@
-type-checkers:flow
+# Flow

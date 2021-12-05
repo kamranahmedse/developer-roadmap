@@ -1,6 +1,6 @@
 import { RoadmapType } from '../../lib/roadmap';
 import { NewAlertBanner } from './new-alert-banner';
-import { Button, Link, Stack, Text } from '@chakra-ui/react';
+import { Button, Link, Stack, Tab, TabList, Tabs, Text } from '@chakra-ui/react';
 import { AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
 import { PageHeader } from '../page-header';
 import React from 'react';

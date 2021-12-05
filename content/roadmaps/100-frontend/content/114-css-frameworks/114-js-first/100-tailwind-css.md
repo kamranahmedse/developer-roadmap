@@ -1,1 +1,1 @@
-css-frameworks:js-first:tailwind-css
+# Tailwind css

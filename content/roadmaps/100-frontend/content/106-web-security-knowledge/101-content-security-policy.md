@@ -1,1 +1,1 @@
-web-security-knowledge:content-security-policy
+# Content security policy

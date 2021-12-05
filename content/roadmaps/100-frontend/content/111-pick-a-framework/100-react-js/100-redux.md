@@ -1,1 +1,1 @@
-pick-a-framework:react-js:redux
+# Redux

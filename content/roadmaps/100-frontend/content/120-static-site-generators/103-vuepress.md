@@ -1,1 +1,1 @@
-static-site-generators:vuepress
+# Vuepress

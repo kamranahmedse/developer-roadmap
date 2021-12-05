@@ -1,1 +1,1 @@
-javascript:es6-and-modular-javascript
+# Es6 and modular javascript

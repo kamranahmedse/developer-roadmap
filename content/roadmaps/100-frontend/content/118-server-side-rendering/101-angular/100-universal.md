@@ -1,1 +1,1 @@
-server-side-rendering:angular:universal
+# Universal

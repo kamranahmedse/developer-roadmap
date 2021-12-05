@@ -1,1 +1,1 @@
-server-side-rendering:vue-js:nuxt-js
+# Nuxt js

@@ -1,1 +1,1 @@
-javascript:syntax-and-basic-constructs
+# Syntax and basic constructs

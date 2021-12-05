@@ -1,1 +1,1 @@
-html:seo-basics
+# Basics of SEO

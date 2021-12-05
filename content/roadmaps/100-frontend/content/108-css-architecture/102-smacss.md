@@ -1,1 +1,1 @@
-css-architecture:smacss
+# Smacss

@@ -51,6 +51,11 @@ function RoadmapRenderer(props: RoadmapProps) {
         return;
       }
 
+      if (groupId.startsWith('ext_link:')) {
+        window.open(`https://${groupId.replace('ext_link:', '')}`);
+        return;
+      }
+
       // e.g. 100-internet:how-does-the-internet-work
       // will be translated to `internet:how-does-the-internet-work`
       setGroupId(groupId.replace(/^\d+-/, ''));

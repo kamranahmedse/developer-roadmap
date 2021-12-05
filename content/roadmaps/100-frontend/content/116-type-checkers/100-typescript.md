@@ -1,1 +1,1 @@
-type-checkers:typescript
+# Typescript
