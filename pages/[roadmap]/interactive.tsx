@@ -1,52 +1,33 @@
-import { Box, Container, Flex, Heading, Spinner, Text } from '@chakra-ui/react';
+import { useFetch } from 'use-http';
+import { useEffect, useRef, useState } from 'react';
+import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
-import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
-import { useFetch } from 'use-http';
-import { Simulate } from 'react-dom/test-utils';
-import load = Simulate.load;
+import { RoadmapError } from '../../components/roadmap/roadmap-error';
+import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
 };
 
-function RoadmapLoader() {
-  return (
-    <Container
-      maxW={'container.md'}
-      position="relative"
-      mt="60px"
-      textAlign="center"
-    >
-      <Spinner
-        thickness="7px"
-        speed="0.65s"
-        emptyColor="gray.200"
-        color="gray.500"
-        size="xl"
-      />
-    </Container>
-  );
-}
-
 function RoadmapRenderer(props: RoadmapProps) {
   const { roadmap } = props;
 
-  const { loading: isLoading, error, get } = useFetch();
+  const { loading: isLoading, error: hasErrorLoading, get } = useFetch();
 
   const roadmapRef = useRef(null);
 
   const [isRendering, setIsRendering] = useState(false);
   const [roadmapJson, setRoadmapJson] = useState(null);
   const [groupId, setGroupId] = useState('');
-  const [hasError, setHasError] = useState(false);
+  const [hasErrorRendering, setHasErrorRendering] = useState(false);
 
   useEffect(() => {
     get(`/project/${roadmap.id}.json`)
@@ -55,7 +36,7 @@ function RoadmapRenderer(props: RoadmapProps) {
       })
       .catch((err) => {
         console.error(err);
-        setHasError(true);
+        setHasErrorRendering(true);
       });
   }, [get, roadmap.id]);
 
@@ -113,16 +94,20 @@ function RoadmapRenderer(props: RoadmapProps) {
         container.appendChild(svgElement);
       })
       .catch((err) => {
-        setHasError(true);
+        setHasErrorRendering(true);
       })
       .finally(() => {
         setIsRendering(false);
       });
   }, [roadmapJson]);
 
+  if (hasErrorLoading || hasErrorRendering) {
+    return <RoadmapError roadmap={roadmap} />
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative">
-      {(isLoading || isRendering) && <RoadmapLoader /> }
+      {(isLoading || isRendering) && <RoadmapLoader />}
       <ContentDrawer
         roadmap={roadmap}
         groupId={groupId}
