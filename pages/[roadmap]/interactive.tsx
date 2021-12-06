@@ -1,4 +1,4 @@
-import { Box, Container } from '@chakra-ui/react';
+import { Box, Container, Flex, Heading, Spinner, Text } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
@@ -10,17 +10,40 @@ import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { useFetch } from 'use-http';
+import { Simulate } from 'react-dom/test-utils';
+import load = Simulate.load;
 
 type RoadmapProps = {
   roadmap: RoadmapType;
 };
 
+function RoadmapLoader() {
+  return (
+    <Container
+      maxW={'container.md'}
+      position="relative"
+      mt="60px"
+      textAlign="center"
+    >
+      <Spinner
+        thickness="7px"
+        speed="0.65s"
+        emptyColor="gray.200"
+        color="gray.500"
+        size="xl"
+      />
+    </Container>
+  );
+}
+
 function RoadmapRenderer(props: RoadmapProps) {
   const { roadmap } = props;
 
-  const { loading, error, get } = useFetch();
+  const { loading: isLoading, error, get } = useFetch();
 
   const roadmapRef = useRef(null);
+
+  const [isRendering, setIsRendering] = useState(false);
   const [roadmapJson, setRoadmapJson] = useState(null);
   const [groupId, setGroupId] = useState('');
   const [hasError, setHasError] = useState(false);
@@ -67,7 +90,7 @@ function RoadmapRenderer(props: RoadmapProps) {
     return () => {
       window.removeEventListener('keydown', keydownListener);
       window.removeEventListener('click', clickListener);
-    }
+    };
   }, []);
 
   useEffect(() => {
@@ -75,6 +98,7 @@ function RoadmapRenderer(props: RoadmapProps) {
       return;
     }
 
+    setIsRendering(true);
     wireframeJSONToSVG(roadmapJson)
       .then((svgElement) => {
         const container: HTMLElement = roadmapRef.current!;
@@ -90,11 +114,15 @@ function RoadmapRenderer(props: RoadmapProps) {
       })
       .catch((err) => {
         setHasError(true);
+      })
+      .finally(() => {
+        setIsRendering(false);
       });
   }, [roadmapJson]);
 
   return (
     <Container maxW={'container.lg'} position="relative">
+      {(isLoading || isRendering) && <RoadmapLoader /> }
       <ContentDrawer
         roadmap={roadmap}
         groupId={groupId}
