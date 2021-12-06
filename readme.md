@@ -68,15 +68,11 @@ npm run dev
   <br />
   <p>
     <a href="https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github">
-      <div>
-        <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
-      </div>
+      <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
       <b>All your environment variables, in one place</b>
-      <div>
-        <sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
-        <br>
-        <sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
-      </div>
+      <sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
+      <br>
+      <sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
     </a>
   </p>
   <br>
