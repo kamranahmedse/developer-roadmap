@@ -24,7 +24,7 @@ function RoadmapRenderer(props: RoadmapProps) {
 
   const roadmapRef = useRef(null);
 
-  const [isRendering, setIsRendering] = useState(false);
+  const [isRendering, setIsRendering] = useState(true);
   const [roadmapJson, setRoadmapJson] = useState(null);
   const [groupId, setGroupId] = useState('');
   const [hasErrorRendering, setHasErrorRendering] = useState(false);
