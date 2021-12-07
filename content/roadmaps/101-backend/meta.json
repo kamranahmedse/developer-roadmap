@@ -5,6 +5,7 @@
     "keywords": [
       "guide to becoming a developer",
       "guide to becoming a backend developer",
+      "backend roadmap",
       "backend developer",
       "backend engineer",
       "backend skills",
@@ -31,7 +32,8 @@
   "featuredTitle": "Backend",
   "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
   "featured": true,
-  "imagePath": "/roadmaps/backend.png",
+  "imageUrl": "/roadmaps/backend.png",
+  "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Kamran Ahmed",

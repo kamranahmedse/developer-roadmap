@@ -30,7 +30,7 @@ function RoadmapRenderer(props: RoadmapProps) {
   const [hasErrorRendering, setHasErrorRendering] = useState(false);
 
   useEffect(() => {
-    get(`/project/${roadmap.id}.json`)
+    get(roadmap.jsonUrl)
       .then((roadmapJson) => {
         setRoadmapJson(roadmapJson);
       })
@@ -38,7 +38,7 @@ function RoadmapRenderer(props: RoadmapProps) {
         console.error(err);
         setHasErrorRendering(true);
       });
-  }, [get, roadmap.id]);
+  }, [get, roadmap.id, roadmap.jsonUrl]);
 
   // Event bindings for the roadmap interactivity
   useEffect(() => {

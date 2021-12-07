@@ -23,6 +23,7 @@
   "isTextHeavy": true,
   "isCommunity": false,
   "featured": true,
+  "jsonUrl": "/project/python.json",
   "resourcesPath": "./resources.md",
   "landingPath": "./landscape.md",
   "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",

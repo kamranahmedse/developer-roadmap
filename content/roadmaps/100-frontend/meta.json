@@ -12,6 +12,7 @@
       "javascript developer",
       "frontend development skills",
       "frontend development skills test",
+      "frontend roadmap",
       "frontend engineer roadmap",
       "frontend developer roadmap",
       "become a frontend developer",
@@ -36,6 +37,7 @@
   },
   "featured": true,
   "imagePath": "/roadmaps/frontend.png",
+  "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
   "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
   "contentPathsFilePath": "./content-paths.json"
