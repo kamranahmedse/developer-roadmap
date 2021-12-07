@@ -25,6 +25,7 @@
   "featured": true,
   "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
+  "jsonUrl": "/project/react.json",
   "versions": [
     "latest",
     "2018",

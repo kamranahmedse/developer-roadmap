@@ -15,14 +15,14 @@ type RoadmapProps = {
 
 function ImageRoadmap(props: RoadmapProps) {
   const { roadmap } = props;
-  if (!roadmap.imagePath) {
+  if (!roadmap.imageUrl) {
     return null;
   }
 
   return (
     <Container maxW={'900px'} position="relative">
       <Box mb="30px">
-        <Image alt={roadmap.title} src={roadmap.imagePath} />
+        <Image alt={roadmap.title} src={roadmap.imageUrl} />
       </Box>
     </Container>
   );

@@ -34,6 +34,7 @@
   "isCommunity": false,
   "isUpcoming": false,
   "featured": true,
+  "jsonUrl": "/project/golang.json",
   "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",

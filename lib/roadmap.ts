@@ -4,18 +4,19 @@ export type RoadmapType = {
   seo: {
     title: string;
     description: string;
-    keywords: string[]
-  },
-  title: string,
-  description: string,
+    keywords: string[];
+  };
+  title: string;
+  description: string;
   featuredTitle: string;
-  featuredDescription: string,
+  featuredDescription: string;
   author: {
-    name: string,
-    url: string
-  },
-  featured: boolean,
-  imagePath?: string,
+    name: string;
+    url: string;
+  };
+  featured: boolean;
+  imageUrl?: string;
+  jsonUrl?: string;
   landingPath?: string;
   resourcesPath: string;
   contentPathsFilePath?: string;
@@ -27,15 +28,15 @@ export type RoadmapType = {
 };
 
 export function getRoadmapById(id: string): RoadmapType | undefined {
-  return (roadmaps as RoadmapType[]).find(roadmap => roadmap.id === id);
+  return (roadmaps as RoadmapType[]).find((roadmap) => roadmap.id === id);
 }
 
 export function getAllRoadmaps(): RoadmapType[] {
-  return (roadmaps as RoadmapType[]);
+  return roadmaps as RoadmapType[];
 }
 
 export function getFeaturedRoadmaps(): RoadmapType[] {
   const roadmaps: RoadmapType[] = getAllRoadmaps();
 
-  return roadmaps.filter(roadmap => roadmap.featured);
+  return roadmaps.filter((roadmap) => roadmap.featured);
 }

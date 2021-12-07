@@ -23,6 +23,7 @@
   "isTextHeavy": true,
   "isCommunity": false,
   "featured": true,
+  "jsonUrl": "/project/android.json",
   "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "versions": [
