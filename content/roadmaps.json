@@ -37,7 +37,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "featured": true,
-    "imagePath": "/roadmaps/frontend.png",
+    "imageUrl": "/roadmaps/frontend.png",
     "jsonUrl": "/project/frontend.json",
     "resourcesPath": "/roadmaps/100-frontend/resources.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
@@ -53,6 +53,7 @@
       "keywords": [
         "guide to becoming a developer",
         "guide to becoming a backend developer",
+        "backend roadmap",
         "backend developer",
         "backend engineer",
         "backend skills",
@@ -79,7 +80,8 @@
     "featuredTitle": "Backend",
     "featuredDescription": "Step by step guide to becoming a backend developer in 2021",
     "featured": true,
-    "imagePath": "/roadmaps/backend.png",
+    "imageUrl": "/roadmaps/backend.png",
+    "jsonUrl": "/project/frontend.json",
     "resourcesPath": "/roadmaps/101-backend/resources.md",
     "author": {
       "name": "Kamran Ahmed",
@@ -117,7 +119,8 @@
     "featuredTitle": "DevOps",
     "featuredDescription": "Step by step guide for DevOps or operations role in 2021",
     "featured": true,
-    "imagePath": "/roadmaps/devops.png",
+    "imageUrl": "/roadmaps/devops.png",
+    "jsonUrl": "/project/devops.json",
     "resourcesPath": "/roadmaps/102-devops/resources.md",
     "versions": [
       "latest",
@@ -160,6 +163,7 @@
     "featured": true,
     "landingPath": "/roadmaps/103-react/landscape.md",
     "resourcesPath": "/roadmaps/103-react/resources.md",
+    "jsonUrl": "/project/react.json",
     "versions": [
       "latest",
       "2018",
@@ -199,6 +203,7 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
+    "jsonUrl": "/project/angular.json",
     "landingPath": "/roadmaps/104-angular/landscape.md",
     "resourcesPath": "/roadmaps/104-angular/resources.md",
     "versions": [
@@ -240,6 +245,7 @@
     "isTextHeavy": true,
     "isCommunity": false,
     "featured": true,
+    "jsonUrl": "/project/android.json",
     "landingPath": "/roadmaps/105-android/landscape.md",
     "resourcesPath": "/roadmaps/105-android/resources.md",
     "versions": [
@@ -280,6 +286,7 @@
     "isTextHeavy": true,
     "isCommunity": false,
     "featured": true,
+    "jsonUrl": "/project/python.json",
     "resourcesPath": "/roadmaps/106-python/resources.md",
     "landingPath": "/roadmaps/106-python/landscape.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
@@ -330,6 +337,7 @@
     "isCommunity": false,
     "isUpcoming": false,
     "featured": true,
+    "jsonUrl": "/project/golang.json",
     "landingPath": "/roadmaps/107-golang/landscape.md",
     "resourcesPath": "/roadmaps/107-golang/resources.md",
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
@@ -380,6 +388,7 @@
     "isCommunity": false,
     "isUpcoming": false,
     "featured": true,
+    "jsonUrl": "/project/java.json",
     "landingPath": "/roadmaps/108-java/landscape.md",
     "resourcesPath": "/roadmaps/108-java/resources.md",
     "versions": [
