@@ -36,7 +36,7 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "featured": true,
-  "imagePath": "/roadmaps/frontend.png",
+  "imageUrl": "/roadmaps/frontend.png",
   "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
   "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
