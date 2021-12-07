@@ -26,7 +26,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Python Roadmap](https://roadmap.sh/python)
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Java Roadmap](https://roadmap.sh/java)
-- [DBA Roadmap](https://roadmap.sh/dba)
+- [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 
 ![](https://i.imgur.com/waxVImv.png)
 
