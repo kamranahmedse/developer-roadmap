@@ -4,6 +4,7 @@ import {
   Box,
   Button,
   Container,
+  Flex,
   Heading,
   Link,
   Stack,
@@ -11,6 +12,7 @@ import {
 } from '@chakra-ui/react';
 import { AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
+import { useRouter } from 'next/router';
 
 type RoadmapPageHeaderType = {
   roadmap: RoadmapType;
@@ -18,6 +20,9 @@ type RoadmapPageHeaderType = {
 
 export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
   const { roadmap } = props;
+  const router = useRouter()
+
+  const isInteractive = router.pathname.includes('/interactive');
 
   return (
     <Box
@@ -38,54 +43,71 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
           {roadmap.title}
         </Heading>
         <Text fontSize={['13px', '14px', '15px']}>{roadmap.description}</Text>
-        <Stack mt="20px" isInline>
-          <Button
-            d={['flex', 'flex']}
-            as={Link}
-            href={'/roadmaps'}
-            size="xs"
-            py="14px"
-            px="10px"
-            colorScheme="teal"
-            variant="solid"
-            _hover={{ textDecoration: 'none' }}
-          >
-            &larr;
-            <Text as="span" d={['none', 'inline']} ml="5px">
-              All Roadmaps
-            </Text>
-          </Button>
-
-          {roadmap.pdfUrl && (
+        <Flex justifyContent="space-between" alignItems={'center'} mt="20px">
+          <Stack isInline>
             <Button
+              d={['flex', 'flex']}
               as={Link}
-              href={roadmap.pdfUrl}
-              target="_blank"
+              href={'/roadmaps'}
               size="xs"
               py="14px"
               px="10px"
-              leftIcon={<DownloadIcon />}
-              colorScheme="yellow"
+              colorScheme="teal"
               variant="solid"
               _hover={{ textDecoration: 'none' }}
             >
-              Download
+              &larr;
+              <Text as="span" d={['none', 'inline']} ml="5px">
+                All Roadmaps
+              </Text>
+            </Button>
+
+            {roadmap.pdfUrl && (
+              <Button
+                as={Link}
+                href={roadmap.pdfUrl}
+                target="_blank"
+                size="xs"
+                py="14px"
+                px="10px"
+                leftIcon={<DownloadIcon />}
+                colorScheme="yellow"
+                variant="solid"
+                _hover={{ textDecoration: 'none' }}
+              >
+                Download
+              </Button>
+            )}
+            <Button
+              as={Link}
+              href={'/signup'}
+              size="xs"
+              py="14px"
+              px="10px"
+              variant="solid"
+              colorScheme="yellow"
+              leftIcon={<AtSignIcon />}
+              _hover={{ textDecoration: 'none' }}
+            >
+              Subscribe
+            </Button>
+          </Stack>
+          {roadmap.id === 'frontend' && !isInteractive && (
+            <Button
+              d={['none', 'flex', 'flex']}
+              as={Link}
+              href={'/frontend/interactive'}
+              size="xs"
+              py="14px"
+              px="10px"
+              variant="solid"
+              _hover={{ textDecoration: 'none' }}
+              colorScheme="purple"
+            >
+              ✨ Try Beta
             </Button>
           )}
-          <Button
-            as={Link}
-            href={'/signup'}
-            size="xs"
-            py="14px"
-            px="10px"
-            leftIcon={<AtSignIcon />}
-            colorScheme="yellow"
-            variant="solid"
-            _hover={{ textDecoration: 'none' }}
-          >
-            Subscribe
-          </Button>
-        </Stack>
+        </Flex>
       </Container>
     </Box>
   );
