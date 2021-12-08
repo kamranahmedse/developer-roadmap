@@ -8,6 +8,7 @@ import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
+import { InteractiveRoadmapRenderer } from './interactive';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -15,6 +16,11 @@ type RoadmapProps = {
 
 function ImageRoadmap(props: RoadmapProps) {
   const { roadmap } = props;
+
+  if (roadmap.id === 'frontend') {
+    return <InteractiveRoadmapRenderer roadmap={roadmap} />;
+  }
+
   if (!roadmap.imageUrl) {
     return null;
   }

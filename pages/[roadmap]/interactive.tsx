@@ -17,8 +17,11 @@ type RoadmapProps = {
   roadmap: RoadmapType;
 };
 
-function RoadmapRenderer(props: RoadmapProps) {
+export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   const { roadmap } = props;
+  if (!roadmap.jsonUrl) {
+    return null;
+  }
 
   const { loading: isLoading, error: hasErrorLoading, get } = useFetch();
 
@@ -132,7 +135,7 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       />
       <Box mb="60px">
         <RoadmapPageHeader roadmap={roadmap} />
-        <RoadmapRenderer roadmap={roadmap} />
+        <InteractiveRoadmapRenderer roadmap={roadmap} />
       </Box>
 
       <OpensourceBanner />

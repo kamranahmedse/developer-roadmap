@@ -20,7 +20,7 @@ export function RoadmapError(props: RoadmapProps) {
       color='white'
     >
       <Heading mb='4px' size='md'>Oops! There&apos;s an error</Heading>
-      <Text>Try refreshing or <Link target='_blank' fontWeight={700} textDecoration={'underline'} fontSize='14px' href={siteConfig.url.issue}>report a bug</Link> and use the <Link fontWeight={700} textDecoration={'underline'} href={`/${roadmap.id}`}>non-interactive version</Link></Text>
+      <Text>Try refreshing or <Link target='_blank' fontWeight={700} textDecoration={'underline'} fontSize='14px' href={siteConfig.url.issue}>report a bug</Link> and use the <Link fontWeight={700} textDecoration={'underline'} href={`/roadmaps/${roadmap.id}.png`}>non-interactive version</Link></Text>
     </Container>
   );
 }

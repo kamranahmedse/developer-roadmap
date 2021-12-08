@@ -20,9 +20,6 @@ type RoadmapPageHeaderType = {
 
 export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
   const { roadmap } = props;
-  const router = useRouter()
-
-  const isInteractive = router.pathname.includes('/interactive');
 
   return (
     <Box
@@ -92,22 +89,6 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               Subscribe
             </Button>
           </Stack>
-          {roadmap.id === 'frontend' && !isInteractive && (
-            <Button
-              d={['none', 'flex', 'flex']}
-              as={Link}
-              href={'/frontend/interactive'}
-              size="xs"
-              py="14px"
-              px="10px"
-              variant="solid"
-              _hover={{ textDecoration: 'none' }}
-              colorScheme="purple"
-            >
-              <Text as='span' d={['none', 'none', 'inline']}>✨ Interactive Version (Beta)</Text>
-              <Text as='span' d={['inline', 'inline', 'none']}>✨ Try Beta</Text>
-            </Button>
-          )}
         </Flex>
       </Container>
     </Box>
