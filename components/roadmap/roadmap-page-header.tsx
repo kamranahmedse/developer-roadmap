@@ -104,7 +104,8 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               _hover={{ textDecoration: 'none' }}
               colorScheme="purple"
             >
-              ✨ Try Beta
+              <Text as='span' d={['none', 'none', 'inline']}>✨ Interactive Version (Beta)</Text>
+              <Text as='span' d={['inline', 'inline', 'none']}>✨ Try Beta</Text>
             </Button>
           )}
         </Flex>
