@@ -26,6 +26,15 @@ export function LinksListItem(props: LinksListItemProps) {
       color='gray.600'
       alignItems={['flex-start', 'center']}
       justifyContent={'space-between'}
+      sx={{
+        '@media (hover: none)': {
+          '&:hover': {
+            '& .list-item-title': {
+              transform: 'none'
+            }
+          }
+        }
+      }}
       _hover={{
         textDecoration: 'none',
         color: 'blue.400',
