@@ -104,7 +104,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             <Badge pos="relative" top={'-1px'} mr="6px" colorScheme="yellow">
               New
             </Badge>
-            Roadmap is now interactive, try clicking any nodes
+            Resources are here, try clicking any nodes.
           </Text>
         )}
       </Container>
