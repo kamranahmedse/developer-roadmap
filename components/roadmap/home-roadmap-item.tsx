@@ -40,13 +40,13 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
       href={url}
       _hover={{
         textDecoration: 'none',
-        bg: 'rgba(255,255,255,.10)'
+        bg: 'rgba(255,255,255,.10)',
       }}
       sx={{
         // On mobile devices, don't change the scale
         '@media (hover: none)': {
           '&:hover': {
-            transform: 'scale(1)',
+            bg: 'rgba(255,255,255,.05)',
           },
         },
       }}
