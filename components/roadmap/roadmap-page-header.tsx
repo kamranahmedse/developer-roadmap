@@ -93,7 +93,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         {roadmap.id === 'frontend' && (
           <Text
             mt="30px"
-            mb="-47px"
+            mb={['-37px', '-32px', '-47px']}
             fontWeight={500}
             fontSize="14px"
             bg="white"
