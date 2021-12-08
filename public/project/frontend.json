@@ -5878,9 +5878,7 @@
                   "x": "8",
                   "y": "6",
                   "properties": {
-                    "backgroundAlpha": "0.5",
-                    "borderColor": "16777215",
-                    "color": "10066329"
+                    "color": "16770457"
                   }
                 },
                 {
@@ -5896,22 +5894,6 @@
                     "color": "3355443",
                     "size": "17",
                     "text": "GitLab"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "TextArea",
-                  "zOrder": "2",
-                  "w": "230",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "8",
-                  "y": "6",
-                  "properties": {
-                    "backgroundAlpha": "0.25",
-                    "borderColor": "6710886",
-                    "color": "15658734"
                   }
                 },
                 {
@@ -5993,9 +5975,7 @@
                   "x": "8",
                   "y": "5",
                   "properties": {
-                    "backgroundAlpha": "0.5",
-                    "borderColor": "16777215",
-                    "color": "10066329"
+                    "color": "16770457"
                   }
                 },
                 {
@@ -6012,22 +5992,6 @@
                     "color": "3355443",
                     "size": "17",
                     "text": "Bitbucket"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "TextArea",
-                  "zOrder": "2",
-                  "w": "230",
-                  "h": "48",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "8",
-                  "y": "5",
-                  "properties": {
-                    "backgroundAlpha": "0.25",
-                    "borderColor": "6710886",
-                    "color": "15658734"
                   }
                 },
                 {
