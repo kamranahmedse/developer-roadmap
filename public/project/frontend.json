@@ -3543,7 +3543,7 @@
           "x": "624",
           "y": "273",
           "properties": {
-            "controlName": "roadmap:frontend"
+            "controlName": "ext_link:roadmap.sh/frontend"
           },
           "children": {
             "controls": {
