@@ -53,17 +53,6 @@ export default function Home(props: HomeProps) {
           <SimpleGrid
             columns={[1, 2, 3]}
             spacing={['10px', '10px', '15px']}
-            sx={{
-              // Don't change the opacity on mobile devices
-              '@media (hover: none)': {
-                '&:hover': {
-                  '.home-roadmap-item': {
-                    opacity: 1
-                  }
-                }
-              }
-            }}
-            _hover={{ '& .home-roadmap-item': { opacity: '0.5'} }}
           >
             {roadmaps.map((roadmap: RoadmapType, counter: number) => (
               <HomeRoadmapItem
