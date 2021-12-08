@@ -1,6 +1,7 @@
 import { RoadmapType } from '../../lib/roadmap';
 import { NewAlertBanner } from './new-alert-banner';
 import {
+  Badge,
   Box,
   Button,
   Container,
@@ -12,7 +13,6 @@ import {
 } from '@chakra-ui/react';
 import { AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
-import { useRouter } from 'next/router';
 
 type RoadmapPageHeaderType = {
   roadmap: RoadmapType;
@@ -90,6 +90,23 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             </Button>
           </Stack>
         </Flex>
+        {roadmap.id === 'frontend' && (
+          <Text
+            mt="30px"
+            mb="-47px"
+            fontWeight={500}
+            fontSize="14px"
+            bg="white"
+            borderWidth={1}
+            p="5px 7px"
+            rounded="3px"
+          >
+            <Badge pos="relative" top={'-1px'} mr="6px" colorScheme="yellow">
+              New
+            </Badge>
+            Roadmap is now interactive, try clicking any nodes
+          </Text>
+        )}
       </Container>
     </Box>
   );
