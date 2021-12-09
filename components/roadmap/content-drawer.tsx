@@ -76,7 +76,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
                     ?.classList?.remove('done');
                   onClose();
                 }}
-                colorScheme="purple"
+                colorScheme="red"
                 leftIcon={<RepeatIcon />}
                 size="xs"
                 iconSpacing={0}
