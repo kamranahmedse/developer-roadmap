@@ -3,9 +3,9 @@ import { extendTheme } from '@chakra-ui/react';
 export const roadmapTheme = extendTheme({
   colors: {
     brand: {
-      bg: '#222222',
-      hero: '#161616',
-      footer: '#1c1c1c'
+      bg: '#06020d',
+      hero: '#06020d',
+      footer: '#0d041e'
     }
   }
 });
