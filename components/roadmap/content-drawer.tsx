@@ -53,7 +53,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 onClick={() => {
                   localStorage.setItem(groupId, 'done');
                   document
-                    .querySelectorAll(`[data-group-id*="-${groupId}"]`)
+                    .querySelectorAll(`[data-group-id$="-${groupId}"]`)
                     .forEach((item) => item?.classList?.add('done'));
                   onClose();
                 }}
@@ -76,7 +76,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 onClick={() => {
                   localStorage.removeItem(groupId);
                   document
-                    .querySelectorAll(`[data-group-id*="-${groupId}"]`)
+                    .querySelectorAll(`[data-group-id$="-${groupId}"]`)
                     .forEach((item) => item?.classList?.remove('done'));
                   onClose();
                 }}
