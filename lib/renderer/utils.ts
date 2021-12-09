@@ -1,3 +1,7 @@
+export function removeSortingInfo(groupId: string) {
+  return (groupId || '').replace(/^\d+-/, '');
+}
+
 export function getRGBFromDecimalColor(color: number) {
   let red = (color >> 16) & 0xff;
   let green = (color >> 8) & 0xff;
