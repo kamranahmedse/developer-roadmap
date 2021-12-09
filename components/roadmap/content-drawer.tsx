@@ -53,8 +53,8 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 onClick={() => {
                   localStorage.setItem(groupId, 'done');
                   document
-                    .querySelector(`[data-group-id*="-${groupId}"]`)
-                    ?.classList?.add('done');
+                    .querySelectorAll(`[data-group-id*="-${groupId}"]`)
+                    .forEach((item) => item?.classList?.add('done'));
                   onClose();
                 }}
                 colorScheme="green"
@@ -62,7 +62,11 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 size="xs"
                 iconSpacing={0}
               >
-                <Text as="span" d={['block', 'none', 'none', 'block']} ml="10px">
+                <Text
+                  as="span"
+                  d={['block', 'none', 'none', 'block']}
+                  ml="10px"
+                >
                   Mark as Done
                 </Text>
               </Button>
@@ -72,8 +76,8 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 onClick={() => {
                   localStorage.removeItem(groupId);
                   document
-                    .querySelector(`[data-group-id*="-${groupId}"]`)
-                    ?.classList?.remove('done');
+                    .querySelectorAll(`[data-group-id*="-${groupId}"]`)
+                    .forEach((item) => item?.classList?.remove('done'));
                   onClose();
                 }}
                 colorScheme="red"
@@ -81,7 +85,11 @@ export function ContentDrawer(props: ContentDrawerProps) {
                 size="xs"
                 iconSpacing={0}
               >
-                <Text as="span" d={['block', 'none', 'none', 'block']} ml="10px">
+                <Text
+                  as="span"
+                  d={['block', 'none', 'none', 'block']}
+                  ml="10px"
+                >
                   Mark as Pending
                 </Text>
               </Button>
