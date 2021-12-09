@@ -12,6 +12,7 @@ import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header'
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
+import { removeSortingInfo } from '../../lib/renderer/utils';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -19,10 +20,6 @@ type RoadmapProps = {
 
 export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   const { roadmap } = props;
-  if (!roadmap.jsonUrl) {
-    return null;
-  }
-
   const { loading: isLoading, error: hasErrorLoading, get } = useFetch();
 
   const roadmapRef = useRef(null);
@@ -33,6 +30,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   const [hasErrorRendering, setHasErrorRendering] = useState(false);
 
   useEffect(() => {
+    if (!roadmap.jsonUrl) {
+      return;
+    }
+
     get(roadmap.jsonUrl)
       .then((roadmapJson) => {
         setRoadmapJson(roadmapJson);
@@ -65,7 +66,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
 
       // e.g. 100-internet:how-does-the-internet-work
       // will be translated to `internet:how-does-the-internet-work`
-      setGroupId(groupId.replace(/^\d+-/, ''));
+      setGroupId(removeSortingInfo(groupId));
     }
 
     window.addEventListener('keydown', keydownListener);
@@ -104,8 +105,12 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       });
   }, [roadmapJson]);
 
+  if (!roadmap.jsonUrl) {
+    return null;
+  }
+
   if (hasErrorLoading || hasErrorRendering) {
-    return <RoadmapError roadmap={roadmap} />
+    return <RoadmapError roadmap={roadmap} />;
   }
 
   return (

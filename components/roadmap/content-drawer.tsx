@@ -1,7 +1,8 @@
-import { Box, CloseButton } from '@chakra-ui/react';
+import { Box, Button, Flex, Text } from '@chakra-ui/react';
 import { RemoveScroll } from 'react-remove-scroll';
 import { RoadmapType } from '../../lib/roadmap';
 import RoadmapGroup from '../../pages/[roadmap]/[group]';
+import { CheckIcon, CloseIcon, RepeatIcon } from '@chakra-ui/icons';
 
 type ContentDrawerProps = {
   roadmap: RoadmapType;
@@ -14,6 +15,8 @@ export function ContentDrawer(props: ContentDrawerProps) {
   if (!groupId) {
     return null;
   }
+
+  const isDone = localStorage.getItem(groupId) === 'done';
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -39,13 +42,63 @@ export function ContentDrawer(props: ContentDrawerProps) {
           borderLeftWidth={'1px'}
           overflowY="scroll"
         >
-          <CloseButton
-            onClick={onClose}
-            pos="absolute"
-            top={'20px'}
-            right={'20px'}
+          <Flex
+            mt="20px"
+            justifyContent="space-between"
+            alignItems="center"
             zIndex={1}
-          />
+          >
+            {!isDone && (
+              <Button
+                onClick={() => {
+                  localStorage.setItem(groupId, 'done');
+                  document
+                    .querySelector(`[data-group-id*="-${groupId}"]`)
+                    ?.classList?.add('done');
+                  onClose();
+                }}
+                colorScheme="green"
+                leftIcon={<CheckIcon />}
+                size="xs"
+                iconSpacing={0}
+              >
+                <Text as="span" d={['block', 'none', 'none', 'block']} ml="10px">
+                  Mark as Done
+                </Text>
+              </Button>
+            )}
+            {isDone && (
+              <Button
+                onClick={() => {
+                  localStorage.removeItem(groupId);
+                  document
+                    .querySelector(`[data-group-id*="-${groupId}"]`)
+                    ?.classList?.remove('done');
+                  onClose();
+                }}
+                colorScheme="purple"
+                leftIcon={<RepeatIcon />}
+                size="xs"
+                iconSpacing={0}
+              >
+                <Text as="span" d={['block', 'none', 'none', 'block']} ml="10px">
+                  Mark as Pending
+                </Text>
+              </Button>
+            )}
+            <Button
+              onClick={onClose}
+              colorScheme="yellow"
+              ml="5px"
+              leftIcon={<CloseIcon width="8px" />}
+              iconSpacing={0}
+              size="xs"
+            >
+              <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px">
+                Close
+              </Text>
+            </Button>
+          </Flex>
           <RoadmapGroup isOutlet roadmap={roadmap} group={groupId} />
         </Box>
       </RemoveScroll>
