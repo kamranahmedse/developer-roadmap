@@ -29,8 +29,8 @@ export function EditContentPageLink(props: EditContentPageLinkProps) {
         href={href}
         target="_blank"
         isFullWidth
-        colorScheme={'purple'}
-        _hover={{ textDecoration: 'none' }}
+        colorScheme={'gray'}
+        _hover={{ textDecoration: 'none', bg: 'gray.200' }}
       >
         Edit this Page
       </Button>
