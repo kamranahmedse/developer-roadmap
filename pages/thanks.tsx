@@ -78,29 +78,14 @@ export default function Thanks() {
                      borderRadius='5px' p='10px 25px' bg='#3d157a' color='white'>
                   <Text fontWeight={700} fontSize='55px'>park.io</Text>
                 </Box>
-                <Box as={Link} href={'https://forbes.com'} _hover={{ textDecoration: 'none' }} target='_blank'
-                     borderWidth={1}
-                     borderRadius='5px' p='20px' bg='#231f20'>
-                  <Image
-                    alt=''
-                    w='250px'
-                    src='/sponsors/forbes-logo.png'
-                  />
-                </Box>
-                <Box as={Link} href='https://zalando.de' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
-                     bg='teal.50'>
-                  <Image
-                    alt=''
-                    w='300px'
-                    src='/sponsors/zalando-logo.svg'
-                  />
-                </Box>
               </Stack>
             </Box>
 
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Monthly Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/idjevm'>Josue V</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/Novecento88'>Novecento88</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
@@ -125,6 +110,10 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/elzup'>elzup</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/nikasakandelidze'>sakana</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/m-elkady'>Mohammed Elkady</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}

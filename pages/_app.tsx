@@ -26,6 +26,14 @@ const GlobalStyles = css`
     text-rendering: optimizeSpeed;
   }
   
+  code {
+    background: #1e1e3f;
+    color: #9efeff;
+    padding: 3px 5px;
+    font-size: 14px;
+    border-radius: 3px;
+  }
+  
   svg .clickable-group {
     cursor: pointer;
     
