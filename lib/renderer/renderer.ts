@@ -1,4 +1,8 @@
-import { getRGBFromDecimalColor, makeSVGElement } from './utils';
+import {
+  getRGBFromDecimalColor,
+  makeSVGElement,
+  removeSortingInfo,
+} from './utils';
 import {
   ARROW_WIDTH,
   BORDER_WIDTH,
@@ -257,12 +261,17 @@ export class Renderer {
 
   __group__(control: any, container: any) {
     const controlName = control?.properties?.controlName;
+    const groupId = removeSortingInfo(controlName);
+    const isDone = localStorage.getItem(groupId) === 'done';
 
     let group = makeSVGElement(
       'g',
       {
         ...(controlName
-          ? { class: 'clickable-group', 'data-group-id': controlName }
+          ? {
+              class: `clickable-group ${isDone ? 'done' : ''}`,
+              'data-group-id': controlName,
+            }
           : {}),
       },
       container

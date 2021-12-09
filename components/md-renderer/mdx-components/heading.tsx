@@ -70,12 +70,12 @@ const H6 = styled(H1).attrs({ as: 'h6' })`
 `;
 
 const Headings = {
-  h1: linkify(H1),
-  h2: linkify(H2),
-  h3: linkify(H3),
-  h4: linkify(H4),
-  h5: linkify(H5),
-  h6: linkify(H6)
+  h1: H1,
+  h2: H2,
+  h3: H3,
+  h4: H4,
+  h5: H5,
+  h6: H6
 };
 
 export default Headings;
