@@ -3,6 +3,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { RoadmapType } from '../../lib/roadmap';
 import RoadmapGroup from '../../pages/[roadmap]/[group]';
 import { CheckIcon, CloseIcon, RepeatIcon } from '@chakra-ui/icons';
+import { queryGroupElementsById } from '../../lib/renderer/utils';
 
 type ContentDrawerProps = {
   roadmap: RoadmapType;
@@ -52,9 +53,9 @@ export function ContentDrawer(props: ContentDrawerProps) {
               <Button
                 onClick={() => {
                   localStorage.setItem(groupId, 'done');
-                  document
-                    .querySelectorAll(`[data-group-id$="-${groupId}"]`)
-                    .forEach((item) => item?.classList?.add('done'));
+                  queryGroupElementsById(groupId).forEach((item) =>
+                    item?.classList?.add('done')
+                  );
                   onClose();
                 }}
                 colorScheme="green"
@@ -75,9 +76,9 @@ export function ContentDrawer(props: ContentDrawerProps) {
               <Button
                 onClick={() => {
                   localStorage.removeItem(groupId);
-                  document
-                    .querySelectorAll(`[data-group-id$="-${groupId}"]`)
-                    .forEach((item) => item?.classList?.remove('done'));
+                  queryGroupElementsById(groupId).forEach((item) =>
+                    item?.classList?.remove('done')
+                  );
                   onClose();
                 }}
                 colorScheme="red"
