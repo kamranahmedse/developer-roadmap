@@ -45,7 +45,7 @@ const GlobalStyles = css`
   }
   
   svg .done {
-    & rect { fill: #cbcbcb; }
+    & rect { fill: #cbcbcb !important; }
     & text { text-decoration: line-through; }
   }
 `;
