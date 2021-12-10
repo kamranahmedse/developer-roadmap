@@ -65,7 +65,6 @@ const Helmet = (props: HelmetProps) => {
       />
       {canonical && <link rel="canonical" href={canonical} />}
       <meta httpEquiv="Content-Language" content="en" />
-      <meta name="p:domain_verify" content="a207130c7798562d2416358d91de2246"/>
       <meta property="og:title" content={title || siteConfig.title} />
       <meta
         property="og:description"
