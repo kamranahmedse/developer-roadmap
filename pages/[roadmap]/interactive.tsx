@@ -113,8 +113,13 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     return <RoadmapError roadmap={roadmap} />;
   }
 
+  let minHeight: string[] = [];
+  if (roadmap.id === 'frontend') {
+    minHeight = ['970px', '970px', '2100px', '2800px', '2800px'];
+  }
+
   return (
-    <Container maxW={'container.lg'} position="relative">
+    <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
       <ContentDrawer
         roadmap={roadmap}
