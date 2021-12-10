@@ -1,6 +1,6 @@
-# Forms and validations
+# Forms and Validations
 
-Many websites allow the user to submit and request information using forms. While doing this it is important to ensure all form controls are filled out correctly.
+Before submitting data to the server, it is important to ensure all required form controls are filled out, in the correct format. This is called client-side form validation, and helps ensure data submitted matches the requirements set forth in the various form controls.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation'>MDN Web Docs: Client-side form validation</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation'>MDN Web Docs: Client-side form validation</BadgeLink>
