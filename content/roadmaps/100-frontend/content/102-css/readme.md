@@ -1,8 +1,11 @@
 # CSS
 
-Cascading Style Sheets (CSS) is a simple mechanism for adding style (e.g., fonts, colors, spacing) to Web documents.
+CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.w3schools.com/css/'>CSS Tutorial by W3Schools</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://learn.shayhowe.com/html-css/'>Learn to Code HTML & CSS by Shay Howe</BadgeLink>
-<BadgeLink badgeText='Course' colorScheme='green' href='https://www.freecodecamp.org/learn/responsive-web-design/'>freeCodeCamp Responsive Web Design Course</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools — Learn CSS</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/learn/responsive-web-design/'>freeCodeCamp — Responsive Web Design</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://learn.shayhowe.com/html-css/building-your-first-web-page/'>Learn to Code HTML & CSS</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://www.youtube.com/watch?v=yfoY53QXEnI'>CSS Crash Course For Absolute Beginners</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://www.youtube.com/watch?v=D-h8L5hgW-w'>HTML and CSS Tutorial</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://www.youtube.com/watch?v=FqmB-Zj2-PA'>CSS Masterclass - Tutorial & Course for Beginners</BadgeLink>
