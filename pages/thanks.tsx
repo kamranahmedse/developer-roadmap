@@ -49,7 +49,7 @@ export default function Thanks() {
               <Heading mb='15px' fontSize='25px' as='h2'>Companies</Heading>
 
               <Stack spacing='10px'>
-                <Box as={Link} href='https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                <Box as={Link} rel='sponsored' href='https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
                     alt=''
@@ -57,7 +57,7 @@ export default function Thanks() {
                     src='https://dashboard.doppler.com/imgs/logo-long.svg'
                   />
                 </Box>
-                <Box as={Link} href='https://oss.capital/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                <Box as={Link} rel='sponsored' href='https://oss.capital/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
                     alt=''
@@ -65,7 +65,7 @@ export default function Thanks() {
                     src='/sponsors/oss-capital-logo.svg'
                   />
                 </Box>
-                <Box as={Link} href='https://studio3t.com/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
+                <Box as={Link} rel='sponsored' href='https://studio3t.com/' target='_blank' borderWidth={1} borderRadius='5px' p='20px'
                      bg='teal.50'>
                   <Image
                     alt=''
@@ -73,7 +73,7 @@ export default function Thanks() {
                     src='/sponsors/studio3t.png'
                   />
                 </Box>
-                <Box as={Link} href='https://park.io' _hover={{ textDecoration: 'none' }} target='_blank'
+                <Box as={Link} rel='sponsored' href='https://park.io' _hover={{ textDecoration: 'none' }} target='_blank'
                      borderWidth={1}
                      borderRadius='5px' p='10px 25px' bg='#3d157a' color='white'>
                   <Text fontWeight={700} fontSize='55px'>park.io</Text>
