@@ -5510,7 +5510,7 @@
                   "y": "78",
                   "properties": {
                     "size": "17",
-                    "text": "Prototype, Shadow DOM, strict,"
+                    "text": "Prototype, Shadow DOM, strict"
                   }
                 },
                 {
@@ -6138,7 +6138,7 @@
           "x": "160",
           "y": "1108",
           "properties": {
-            "controlName": "package-managers"
+            "controlName": "100-package-managers"
           },
           "children": {
             "controls": {

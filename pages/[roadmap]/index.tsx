@@ -63,6 +63,7 @@ export default function Roadmap(props: RoadmapProps) {
         title={roadmap?.seo?.title || roadmap.title}
         description={roadmap?.seo?.description || roadmap.description}
         keywords={roadmap?.seo.keywords || []}
+        roadmap={roadmap}
       />
       <Box mb="60px">
         <RoadmapPageHeader roadmap={roadmap} />
