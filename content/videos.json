@@ -1,5 +1,16 @@
 [
   {
+    "id": "what-are-data-structures",
+    "title": "What are Data Structures?",
+    "description": "Learn about the different data structures in this illustrated series",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=9rhT3P1MDHk",
+    "authorUsername": "kamranahmedse",
+    "duration": "1 minute",
+    "updatedAt": "2021-12-12T19:59:14.191Z",
+    "createdAt": "2021-12-12T19:59:14.191Z"
+  },
+  {
     "id": "what-is-eventual-consistency",
     "title": "What is Eventual Consistency?",
     "description": "Learn about the different consistency models in distributed systems",
