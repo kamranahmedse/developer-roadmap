@@ -58,23 +58,38 @@ npm run dev
 <br>
 
 <div align="center">
-	<p>
-		<sup>
-			<a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
-		</sup>
-	</p>
-	<sup>Special thanks to:</sup>
-	<br>
-	<p>
-	<a href="https://oss.capital">
-		<div>
-			<img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
-		</div>
-		<div>
-			<sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
-		</div>
-	</a>
-	</p>
+  <p>
+    <sup>
+      <a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
+    </sup>
+  </p>
+
+  <sup>Special thanks to:</sup>
+  <br />
+  <p>
+    <a href="https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github">
+      <div>
+        <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
+      </div>
+      <b>All your environment variables, in one place</b>
+      <div>
+        <sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
+        <br>
+        <sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
+      </div>
+    </a>
+  </p>
+  <br>
+  <p>
+    <a href="https://oss.capital">
+      <div>
+        <img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
+      </div>
+      <div>
+	  <sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
+      </div>
+    </a>
+  </p>
 </div>
 
 <br>
