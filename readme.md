@@ -1,11 +1,58 @@
-![Web Developer Roadmap - 2021](./.github/images/banner.png)
+<p align="center">
+  <img src="public/brand.png" height="128">
+  <h2 align="center">roadmap.sh</h2>
+  <p align="center">Community driven roadmaps, articles and resources for developers<p>
+  <p align="center">
+    <a href="https://roadmap.sh/roadmaps">
+    	<img src="https://img.shields.io/badge/-View%20Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
+    </a>
+    <a href="https://youtube.com/theroadmap?sub_confirmation=1">
+    	<img src="https://img.shields.io/badge/-Videos-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="videos" />
+    </a>
+    <a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">
+    	<img src="https://img.shields.io/badge/%E2%9D%A4-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
+    </a>
+  </p>
+</p>
 
-> Community effort to create roadmaps, guides and structured educational content.
+<br>
 
-[![](https://img.shields.io/badge/-Roadmaps%20-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh)
-[![](https://img.shields.io/badge/-Guides-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/guides)
-[![](https://img.shields.io/badge/-Videos-0a0a0a.svg?style=flat&colorA=0a0a0a)](http://roadmap.sh/watch)
-[![](https://img.shields.io/badge/%E2%9D%A4-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a)](https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1)
+<div align="center">
+  <p>
+    <sup>
+      <a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
+    </sup>
+  </p>
+
+  <sup>Special thanks to:</sup>
+  <br />
+  <p>
+    <a href="https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github">
+      <div>
+        <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
+      </div>
+      <b>All your environment variables, in one place</b>
+      <div>
+        <sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
+        <br>
+        <sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
+      </div>
+    </a>
+  </p>
+  <br>
+  <p>
+    <a href="https://oss.capital">
+      <div>
+        <img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
+      </div>
+      <div>
+	  <sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
+      </div>
+    </a>
+  </p>
+</div>
+
+<br>
 
 ![](https://i.imgur.com/waxVImv.png)
 
@@ -52,48 +99,6 @@ npm run dev
 - Write tests
 - Discuss ideas in issues
 - Spread the word
-
-<br>
-<br>
-<br>
-
-<div align="center">
-  <p>
-    <sup>
-      <a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
-    </sup>
-  </p>
-
-  <sup>Special thanks to:</sup>
-  <br />
-  <p>
-    <a href="https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github">
-      <div>
-        <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
-      </div>
-      <b>All your environment variables, in one place</b>
-      <div>
-        <sub>Stop struggling with scattered API keys, hacking together home-brewed tools,</sub>
-        <br>
-        <sup>and avoiding access controls. Keep your team and servers in sync with Doppler.</sup>
-      </div>
-    </a>
-  </p>
-  <br>
-  <p>
-    <a href="https://oss.capital">
-      <div>
-        <img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
-      </div>
-      <div>
-	  <sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
-      </div>
-    </a>
-  </p>
-</div>
-
-<br>
-<br>
 
 ## License
 
