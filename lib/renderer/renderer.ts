@@ -24,7 +24,7 @@ export class Renderer {
   }
 
   render(control: any, container: any) {
-    let typeID = control.typeID;
+    const typeID = control.typeID;
     if (typeID in this) {
       (this as any)[typeID](control, container);
     } else {
@@ -84,24 +84,24 @@ export class Renderer {
     textColor: string,
     align: string
   ) {
-    let text = control.properties.text ?? '';
-    let x = parseInt(control.x);
-    let y = parseInt(control.y);
+    const text = control.properties.text ?? '';
+    const x = parseInt(control.x);
+    const y = parseInt(control.y);
 
-    let font = this.parseFontProperties(control);
-    let textMetrics = this.measureText(
+    const font = this.parseFontProperties(control);
+    const textMetrics = this.measureText(
       text,
       `${font.style} ${font.weight} ${font.size} ${font.family}`
     );
 
-    let textX =
+    const textX =
       align === 'center'
         ? x + (control.w ?? control.measuredW) / 2 - textMetrics.width / 2
         : x;
-    let textY =
+    const textY =
       y + control.measuredH / 2 + textMetrics.actualBoundingBoxAscent / 2;
 
-    let textElement = makeSVGElement(
+    const textElement = makeSVGElement(
       'text',
       {
         x: textX,
@@ -115,28 +115,28 @@ export class Renderer {
     );
 
     if (!text.includes('{color:')) {
-      let tspan = makeSVGElement('tspan', {}, textElement);
+      const tspan = makeSVGElement('tspan', {}, textElement);
       tspan.textContent = text;
 
       return;
     }
 
-    let split = text.split(/{color:|{color}/);
+    const split = text.split(/{color:|{color}/);
     split.forEach((str) => {
       if (str.includes('}')) {
         let [color, textPart] = str.split('}');
 
         if (!color.startsWith('#')) {
-          let index = parseInt(color.slice(-1));
+          const index = parseInt(color.slice(-1));
           color = isNaN(index)
             ? DEFAULT_COLORS[color][0]
             : DEFAULT_COLORS[color][index];
         }
 
-        let tspan = makeSVGElement('tspan', { fill: color }, textElement);
+        const tspan = makeSVGElement('tspan', { fill: color }, textElement);
         tspan.textContent = textPart;
       } else {
-        let tspan = makeSVGElement('tspan', {}, textElement);
+        const tspan = makeSVGElement('tspan', {}, textElement);
         tspan.textContent = str;
       }
     });
@@ -171,15 +171,15 @@ export class Renderer {
   }
 
   Arrow(control: any, container: any) {
-    let x = parseInt(control.x);
-    let y = parseInt(control.y);
-    let { p0, p1, p2 } = control.properties;
+    const x = parseInt(control.x);
+    const y = parseInt(control.y);
+    const { p0, p1, p2 } = control.properties;
 
     let lineDash;
     if (control.properties?.stroke === 'dotted') lineDash = '0.8 12';
     else if (control.properties?.stroke === 'dashed') lineDash = '28 46';
 
-    let xVector = { x: (p2.x - p0.x) * p1.x, y: (p2.y - p0.y) * p1.x };
+    const xVector = { x: (p2.x - p0.x) * p1.x, y: (p2.y - p0.y) * p1.x };
 
     makeSVGElement(
       'path',
@@ -201,9 +201,9 @@ export class Renderer {
   }
 
   Icon(control: any, container: any) {
-    let x = parseInt(control.x);
-    let y = parseInt(control.y);
-    let radius = 10;
+    const x = parseInt(control.x);
+    const y = parseInt(control.y);
+    const radius = 10;
 
     makeSVGElement(
       'circle',
@@ -237,8 +237,8 @@ export class Renderer {
   }
 
   HRule(control: any, container: any) {
-    let x = parseInt(control.x);
-    let y = parseInt(control.y);
+    const x = parseInt(control.x);
+    const y = parseInt(control.y);
 
     let lineDash;
     if (control.properties?.stroke === 'dotted') lineDash = '0.8, 8';
@@ -264,7 +264,7 @@ export class Renderer {
     const groupId = removeSortingInfo(controlName);
     const isDone = localStorage.getItem(groupId) === 'done';
 
-    let group = makeSVGElement(
+    const group = makeSVGElement(
       'g',
       {
         ...(controlName
