@@ -6,8 +6,7 @@
 ## Contributing
 
 * [Submitting roadmaps](./roadmap.md)
-
-**No PR will be discarded without explanations!**
+* [Adding resources](https://github.com/kamranahmedse/developer-roadmap/issues/985)
 
 ## Guidelines
 
