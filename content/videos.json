@@ -1,5 +1,16 @@
 [
   {
+    "id": "array-structure",
+    "title": "All about Array Data Structure",
+    "description": "Learn everything you need to know about array data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=QJNwK2uJyGs",
+    "authorUsername": "kamranahmedse",
+    "duration": "10 minutes",
+    "updatedAt": "2022-01-09T19:59:14.191Z",
+    "createdAt": "2022-01-09T19:59:14.191Z"
+  },
+  {
     "id": "what-are-data-structures",
     "title": "What are Data Structures?",
     "description": "Learn about the different data structures in this illustrated series",
