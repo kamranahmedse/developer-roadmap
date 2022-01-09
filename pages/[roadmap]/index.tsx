@@ -4,7 +4,7 @@ import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
-import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
+import { getAllRoadmaps, getRoadmapById, isInteractiveRoadmap, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
@@ -17,7 +17,7 @@ type RoadmapProps = {
 function ImageRoadmap(props: RoadmapProps) {
   const { roadmap } = props;
 
-  if (roadmap.id === 'frontend') {
+  if (isInteractiveRoadmap(roadmap.id)) {
     return <InteractiveRoadmapRenderer roadmap={roadmap} />;
   }
 

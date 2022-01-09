@@ -1,4 +1,4 @@
-import { RoadmapType } from '../../lib/roadmap';
+import { isInteractiveRoadmap, RoadmapType } from '../../lib/roadmap';
 import { NewAlertBanner } from './new-alert-banner';
 import {
   Badge,
@@ -90,7 +90,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             </Button>
           </Stack>
         </Flex>
-        {roadmap.id === 'frontend' && (
+        {isInteractiveRoadmap(roadmap.id) && (
           <Text
             mt="30px"
             mb={['-37px', '-32px', '-47px']}
