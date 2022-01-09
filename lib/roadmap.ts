@@ -40,3 +40,7 @@ export function getFeaturedRoadmaps(): RoadmapType[] {
 
   return roadmaps.filter((roadmap) => roadmap.featured);
 }
+
+export function isInteractiveRoadmap(id: string): boolean {
+  return ['frontend', 'backend'].includes(id);
+}

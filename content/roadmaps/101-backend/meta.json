@@ -35,11 +35,12 @@
   "featuredDescription": "Step by step guide to becoming a backend developer in 2022",
   "featured": true,
   "imageUrl": "/roadmaps/backend.png",
-  "jsonUrl": "/project/frontend.json",
+  "jsonUrl": "/project/backend.json",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap"
+  "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+  "contentPathsFilePath": "./content-paths.json"
 }

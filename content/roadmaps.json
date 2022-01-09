@@ -1,9 +1,12 @@
 [
   {
     "seo": {
-      "title": "Learn to become a modern frontend developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development. Learn to become a modern frontend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "title": "Frontend Developer Roadmap: Learn to become a modern frontend developer",
+      "description": "Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development.",
       "keywords": [
+        "javascript roadmap 2022",
+        "frontend roadmap 2022",
+        "frontend developer roadmap 2022",
         "guide to becoming a developer",
         "guide to becoming a frontend developer",
         "frontend developer",
@@ -48,9 +51,11 @@
   },
   {
     "seo": {
-      "title": "Learn to become a modern backend developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern backend development. Learn to become a modern backend developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "title": "Backend Developer Roadmap: Learn to become a modern backend developer",
+      "description": "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.",
       "keywords": [
+        "backend roadmap 2022",
+        "backend developer roadmap 2022",
         "guide to becoming a developer",
         "guide to becoming a backend developer",
         "backend roadmap",
@@ -81,13 +86,14 @@
     "featuredDescription": "Step by step guide to becoming a backend developer in 2022",
     "featured": true,
     "imageUrl": "/roadmaps/backend.png",
-    "jsonUrl": "/project/frontend.json",
+    "jsonUrl": "/project/backend.json",
     "resourcesPath": "/roadmaps/101-backend/resources.md",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    "contentPathsFilePath": "/roadmaps/101-backend/content-paths.json",
     "id": "backend",
     "metaPath": "/roadmaps/101-backend/meta.json",
     "isUpcoming": false
@@ -97,6 +103,9 @@
       "title": "DevOps Roadmap: Learn to become a DevOps Engineer or SRE",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
+        "devops roadmap 2022",
+        "sre roadmap 2022",
+        "operations roadmap 2022",
         "guide to becoming a devops enginer",
         "devops roadmap",
         "sre roadmap",
@@ -141,6 +150,8 @@
       "title": "React Developer Roadmap: Learn to become a React developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
+        "react roadmap 2022",
+        "react developer roadmap 2022",
         "guide to becoming a react developer",
         "react developer roadmap",
         "react roadmap",
