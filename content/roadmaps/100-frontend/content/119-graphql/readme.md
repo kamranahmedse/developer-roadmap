@@ -6,3 +6,4 @@ GraphQL is a query language for APIs and a runtime for fulfilling those queries 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://graphql.org/learn/'>Introduction to GraphQL</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.howtographql.com/'>The Fullstack Tutorial for GraphQL</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://odyssey.apollographql.com/'>GraphQL Tutorials</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://www.youtube.com/watch?v=ed8SzALpx1Q'>GraphQL Course for Beginners</BadgeLink>
