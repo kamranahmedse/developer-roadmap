@@ -2,6 +2,8 @@
 
 Cross-Origin Resource Sharing (CORS) is an HTTP-header based mechanism that allows a server to indicate any origins (domain, scheme, or port) other than its own from which a browser should permit loading resources.
 
-An example of a cross-origin request: the front-end JavaScript code served from https://domain-a.com uses XMLHttpRequest to make a request for https://domain-b.com/data.json.
 
-For More :- https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme="yellow" badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS'>Cross-Origin Resource Sharing (CORS)</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=4KHiSt0oLJ0'>CORS in 100 Seconds</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=PNtFSVU-YTI'>CORS in 6 minutes</BadgeLink>
