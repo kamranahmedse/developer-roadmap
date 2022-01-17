@@ -1,8 +1,12 @@
-# Javascript
-JavaScript is a dynamic programming language that's used for web development, in web applications, for game development, and lots more.
+# JavaScript
+
+JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Apart from being used on the frontend in browsers, there is Node.js which is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/What_is_JavaScript'>What is JavaScript?</BadgeLink>
-<BadgeLink colorScheme='green' badgeText='Learn' href='https://www.w3schools.com/js/'>JavaScript on W3 schools</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=PkZNo7MFNFg'>Learn JavaScript - Full Course for Beginners</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=W6NZfCO5SIk&t=1s'>JavaScript tutorials</BadgeLink>
+
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://javascript.info/'>The Modern JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/hdI2bqOjy3c'>JavaScript Crash Course for Beginners</BadgeLink>
+
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=fBNz5xF-Kx4'>Node.js Crash Course</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=TlB_eWDSMt4'>Node.js Tutorial for Beginners</BadgeLink>
