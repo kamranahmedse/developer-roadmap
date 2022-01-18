@@ -4687,78 +4687,61 @@
               "control": [
                 {
                   "ID": "0",
-                  "typeID": "__group__",
+                  "typeID": "TextArea",
                   "zOrder": "0",
-                  "measuredW": "290",
-                  "measuredH": "49",
-                  "w": "290",
-                  "h": "49",
+                  "w": "280",
+                  "h": "40",
+                  "measuredW": "200",
+                  "measuredH": "140",
                   "x": "0",
+                  "y": "9",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "179",
+                  "measuredW": "175",
+                  "measuredH": "25",
+                  "x": "51",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "DNS and how it works?"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Icon",
+                  "zOrder": "2",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "266",
                   "y": "0",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "280",
-                          "h": "40",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "9",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "w": "179",
-                          "measuredW": "175",
-                          "measuredH": "25",
-                          "x": "51",
-                          "y": "17",
-                          "properties": {
-                            "size": "17",
-                            "text": "DNS and how it works?"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Icon",
-                          "zOrder": "2",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "266",
-                          "y": "0",
-                          "properties": {
-                            "color": "16777215",
-                            "icon": {
-                              "ID": "circle",
-                              "size": "small"
-                            }
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Icon",
-                          "zOrder": "3",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "266",
-                          "y": "0",
-                          "properties": {
-                            "color": "10027263",
-                            "icon": {
-                              "ID": "check-circle",
-                              "size": "small"
-                            }
-                          }
-                        }
-                      ]
+                  "properties": {
+                    "color": "16777215",
+                    "icon": {
+                      "ID": "circle",
+                      "size": "small"
+                    }
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Icon",
+                  "zOrder": "3",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "266",
+                  "y": "0",
+                  "properties": {
+                    "color": "10027263",
+                    "icon": {
+                      "ID": "check-circle",
+                      "size": "small"
                     }
                   }
                 }
