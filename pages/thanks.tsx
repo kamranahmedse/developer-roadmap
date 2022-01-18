@@ -65,8 +65,7 @@ export default function Thanks() {
                     src='/sponsors/oss-capital-logo.svg'
                   />
                 </Box>
-                <Box as={Link} rel='sponsored' href='https://getform.io/' target='_blank' borderWidth={1} bg='black' borderRadius='5px' p='20px'
-                     bg='teal.50'>
+                <Box as={Link} rel='sponsored' href='https://getform.io/' target='_blank' borderWidth={1} bg='black' borderRadius='5px' p='20px'>
                   <Image
                     alt=''
                     w='400px'
