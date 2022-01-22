@@ -1,8 +1,9 @@
 # Version Control Systems
 
-Version control systems allow you to track changes to your codebase/files over time. They allow you to go back to some previous version of the codebase without any issues. Also, they help in collaborating with people working on the same code – if you’ve ever collaborated with other people on a project, you might already know the frustration of copying and merging the changes from someone else into your codebase; version control systems allow you to get rid of this issue.
+Version control/source control systems allow developers to track and control changes to code over time. These services often include the ability to make atomic revisions to code, branch/fork off of specific points, and to compare versions of code. They are useful in determining the who, what, when, and why code changes were made.
+
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zbKdDsNNOhg'>Version Control System Introduction</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=SWYqp7iY_Tc'>Git & GitHub Crash Course For Beginners</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/Y9XZQO1n_7c?t=21'>Learn Git in 20 Minutes</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://git-scm.com/'>Git</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.mercurial-scm.org/'>Mercurial</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.atlassian.com/git/tutorials/what-is-version-control'>What is Version Control?</BadgeLink>
