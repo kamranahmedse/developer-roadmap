@@ -1,8 +1,7 @@
-# Acid
+# ACID
 
-In the context of transaction processing, the acronym ACID refers to the presence of four properties — atomicity, consistency, isolation and durability 
+ACID are the four properties of any database system that help in making sure that we are able to perform the transactions in a reliable manner. It's an acronym which refers to the presence of four properties: atomicity, consistency, isolation and durability 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.ibm.com/docs/en/cics-ts/5.4?topic=processing-acid-properties-transactions'>IBM: ACID properties of transactions</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>MariaDB: What is ACID Compliance?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=yaQ5YMWkxq4'>ACID Explained: Atomic, Consistent, Isolated & Durable</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://retool.com/blog/whats-an-acid-compliant-database/'>What is ACID Compliant Database?</BadgeLink><BadgeLink badgeText='Read' colorScheme='yellow' href='https://fauna.com/blog/what-is-acid-compliance-atomicity-consistency-isolation'>What is ACID Compliance?: Atomicity, Consistency, Isolation</BadgeLink>
