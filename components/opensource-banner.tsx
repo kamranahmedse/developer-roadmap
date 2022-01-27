@@ -31,7 +31,7 @@ export function OpensourceBanner() {
 
         <Box>
           <iframe
-            src='https://ghbtns.com/github-btn.html?user=kamranahmedse&type=sponsor&size=large'
+            src='https://ghbtns.com/github-btn.html?user=deepcoreb4&type=sponsor&size=large'
             frameBorder='0'
             scrolling='0'
             width='260'
