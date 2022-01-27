@@ -30,7 +30,7 @@ function FreeSignUp() {
 
         <form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post' target='_blank'>
           <Input size='sm' fontSize='15px' py='18px' rounded='4px' placeholder='Your email'
-                 borderWidth={2} mb={'10px'} name='member[email]' />
+                borderWidth={2} mb={'10px'} name='member[email]' />
           <Button type={'submit'} bg='gray.700' _hover={{ bg: 'black' }} fontWeight={500} color={'white'}
                   w='100%'>Subscribe</Button>
         </form>
@@ -71,8 +71,7 @@ function PaidSignUp() {
         </ListItem>
         <ListItem fontSize='14px'>
           <ListIcon as={CheckCircleIcon} color='green.500' />
-          Your name will be added to <Link fontWeight={600} textDecoration='underline'
-                                           href='/thanks'>Thanks</Link>
+          Your name will be added to <Link fontWeight={600} textDecoration='underline'href='/thanks'>Thanks</Link>
         </ListItem>
 
       </List>

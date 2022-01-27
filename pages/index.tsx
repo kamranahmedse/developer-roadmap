@@ -49,7 +49,7 @@ export default function Home(props: HomeProps) {
             </Heading>
             <Text fontSize={['14px', '14px', '16px']} mb="10px">
               <Text fontWeight={500} as="span">
-                roadmap.sh
+              Developers-Roadmap
               </Text>{' '}
               is a community effort to create roadmaps, guides and other
               educational content to help guide the developers in picking up the
@@ -110,7 +110,7 @@ export default function Home(props: HomeProps) {
                 target={'_blank'}
                 key={video.id}
                 href={video.youtubeLink!}
-                badgeText={video.isPro ? 'PRO' : ''}
+                badgeText={video.isPro ? 'PRO' : 'PRO'}
                 hideSubtitleOnMobile
                 title={video.title}
                 subtitle={video.duration}
@@ -145,7 +145,7 @@ export default function Home(props: HomeProps) {
                 key={guide.id}
                 href={`/guides/${guide.id}`}
                 title={guide.title}
-                badgeText={guide.isPro ? 'PRO' : ''}
+                badgeText={guide.isPro ? 'Free' : 'Noob'}
                 subtitle={guide.formattedUpdatedAt!}
               />
             ))}

@@ -36,14 +36,14 @@
     "featuredTitle": "Frontend",
     "featuredDescription": "Step by step guide to becoming a frontend developer in 2022",
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
     "featured": true,
     "imageUrl": "/roadmaps/frontend.png",
     "jsonUrl": "/project/frontend.json",
     "resourcesPath": "/roadmaps/100-frontend/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/frontend-roadmap",
     "contentPathsFilePath": "/roadmaps/100-frontend/content-paths.json",
     "id": "frontend",
     "metaPath": "/roadmaps/100-frontend/meta.json",
@@ -89,10 +89,10 @@
     "jsonUrl": "/project/backend.json",
     "resourcesPath": "/roadmaps/101-backend/resources.md",
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/backend-roadmap",
     "contentPathsFilePath": "/roadmaps/101-backend/content-paths.json",
     "id": "backend",
     "metaPath": "/roadmaps/101-backend/meta.json",
@@ -137,10 +137,10 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/devops-roadmap",
     "id": "devops",
     "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
@@ -181,10 +181,10 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/react-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/react-roadmap",
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
@@ -223,10 +223,10 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/angular-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/angular-roadmap",
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false
@@ -265,8 +265,8 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
     "id": "android",
     "metaPath": "/roadmaps/105-android/meta.json",
@@ -300,13 +300,13 @@
     "jsonUrl": "/project/python.json",
     "resourcesPath": "/roadmaps/106-python/resources.md",
     "landingPath": "/roadmaps/106-python/landscape.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/python-roadmap",
     "versions": [
       "latest"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
     "id": "python",
     "metaPath": "/roadmaps/106-python/meta.json",
@@ -351,15 +351,15 @@
     "jsonUrl": "/project/golang.json",
     "landingPath": "/roadmaps/107-golang/landscape.md",
     "resourcesPath": "/roadmaps/107-golang/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/go-roadmap",
     "versions": [
       "latest",
       "2018",
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
     "id": "golang",
     "metaPath": "/roadmaps/107-golang/meta.json"
@@ -408,10 +408,10 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/java-roadmap",
+    "pdfUrl": "https://blendit4ent.gumroad.com/l/java-roadmap",
     "id": "java",
     "metaPath": "/roadmaps/108-java/meta.json"
   },
@@ -491,8 +491,8 @@
       "2017"
     ],
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Edgar Cuppari",
+      "url": "https://twitter.com/blendit4ent"
     },
     "id": "aws",
     "metaPath": "/roadmaps/110-aws/meta.json"

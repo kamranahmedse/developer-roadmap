@@ -1,14 +1,14 @@
 ## What is roadmap.sh?
 
-Roadmap.sh is the place containing community curated roadmaps, study plans, paths and resources for the budding
-developers. It started as a [set of charts to guide the developers](https://github.com/kamranahmedse/developer-roadmap)
+Developers Roadmap is the place containing community curated roadmaps, study plans, paths and resources for the budding
+developers. It started as a [set of charts to guide the developers](https://github.com/deepCoreb4/developer-roadmap)
 who are confused about what should they learn next but that alone wasn't enough so I expanded it into the website to get
 more contributors involved.
 
 ## What are the plans for roadmap.sh?
 
 The website started off as
-a [simple repository containing a few charts](https://github.com/kamranahmedse/developer-roadmap) for developers and
+a [simple repository containing a few charts](https://github.com/deepcoreb4/developer-roadmap) for developers and
 based on my personal opinions but it could have been much more than that so I decided to expand it to a website where
 people can contribute to study plans with their areas of expertise as well, add more roadmaps, write guides etc.
 
@@ -19,7 +19,7 @@ learnings, get feedbacks on their projects etc.
 ## How did you build roadmap.sh?
 
 The basic version of the website has been built with [Next.js](https://github.com/zeit/next.js/), is opensource and can
-be found on [github](https://github.com/kamranahmedse/developer-roadmap). It was hastily done to get it out in front of the
+be found on [github](https://github.com/deepcoreb4/developer-roadmap). It was hastily done to get it out in front of the
 people and get people to start contributing, so it might be rough on the edges, but that is where we need your help.
 
 ## How does it make money?
@@ -32,12 +32,12 @@ make enough money to pay for my rent, groceries, bills, travel expenses, etc but
 continue growing the site however I can. My focus at the moment is not making money from it and just add content that
 creates value for the people.
 
-> Sponsor the efforts by [paying as little as 5$ per month](https://github.com/sponsors/kamranahmedse) or with [one time payment via paypal](https://paypal.me/kamranahmedse). Alternatively, reach out to me at [kamranahmed.se@gmail.com](mailto:kamranahmed.se@gmail.com).
+> Sponsor the efforts by [paying as little as 5$ per month](https://github.com/sponsors/DeepCoreB4/) or with [one time payment via paypal](https://paypal.me/edominikB4?country.x=CH&locale.x=de_DE). Alternatively, reach out to me at [cuparikun@gmail.com](mailto:cuparikun@gmail.com).
 
 ## Can I contribute?
 
 You definitely can, infact you are encouraged to do that. Even your minor contributions such as typo fixes count. The
-source code of the website can be [found on Github](https://github.com/kamranahmedse/developer-roadmap). Your contributions can
+source code of the website can be [found on Github](https://github.com/deepcoreb4/developer-roadmap). Your contributions can
 be:
 
 * Adding a new roadmap
@@ -51,7 +51,7 @@ be:
 * Becoming a sponsor
 
 Just make sure
-to [follow the contribution guidelines](https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing) when you
+to [follow the contribution guidelines](https://github.com/deepcoreb4/developer-roadmap/tree/master/contributing) when you
 decide to contribute.
 
 ## Can I redistribute the content?
@@ -62,6 +62,6 @@ allowed.
 
 ## What is the best way to contact you?
 
-Tweet or send me a message [@kamranahmedse](https://twitter.com/kamranahmedse) or email me
-at [kamranahmed.se@gmail.com](mailto:kamranahmed.se@gmail.com). I get lots of messages so apologies in advance if you don't hear back
+Tweet or send me a message [@blendit4ent](https://twitter.com/blendit4ent) or email me
+at [cuparikun@gmail.com](mailto:cuparikun@gmail.com). I get lots of messages so apologies in advance if you don't hear back
 from me soon but I do reply to everyone.

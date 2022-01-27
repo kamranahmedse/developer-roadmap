@@ -17,24 +17,24 @@ function getRichSnippetJson(roadmap: RoadmapType) {
     '@type': 'Article',
     mainEntityOfPage: {
       '@type': 'WebPage',
-      '@id': `https://roadmap.sh/${roadmap.id}`,
+      '@id': `https://developers-roadmap.vercel.app/${roadmap.id}`,
     },
     headline: roadmap.seo.title,
     description: roadmap.seo.description,
     image: roadmap.jsonUrl
-      ? `https://roadmap.sh/roadmaps/${roadmap.id}.png`
+      ? `https://developers-roadmap.vercel.app/roadmaps/${roadmap.id}.png`
       : undefined,
     author: {
       '@type': 'Person',
-      name: 'Kamran Ahmed',
+      name: 'Edgar Cuppari',
       url: 'https://twitter.com/kamranahmedse',
     },
     publisher: {
       '@type': 'Organization',
-      name: 'roadmap.sh',
+      name: 'roadmap.vercel.app',
       logo: {
         '@type': 'ImageObject',
-        url: 'https://roadmap.sh/brand-square.png',
+        url: 'https://developers-roadmap.vercel.app/brand-square.png',
       },
     },
   };
@@ -94,7 +94,7 @@ const Helmet = (props: HelmetProps) => {
         name="twitter:image"
         content={`${siteConfig.url.web}${siteConfig.logoSquare}`}
       />
-      <meta name="twitter:image:alt" content="roadmap.sh" />
+      <meta name="twitter:image:alt" content="developers-roadmap" />
 
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
