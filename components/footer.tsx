@@ -42,19 +42,19 @@ export function Footer() {
             <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
                   href='/'>
               <Image alt='' h='25px' w='25px' src='/logo.svg' mr='6px' />
-              roadmap.sh
+              Developers Roadmap
             </Link>
             <Text as='span' mx='7px'>by</Text>
             <Link bg='blue.500' px='6px' py='2px' rounded='4px' color='white' fontWeight={600} fontSize='13px'
                   _hover={{ textDecoration: 'none', bg: 'blue.600' }} href={siteConfig.url.twitter}
-                  target='_blank'>@kamranahmedse</Link>
+                  target='_blank'>@blendit4ent</Link>
           </Flex>
 
           <Text my='15px' fontSize='14px' color='gray.500'>Community created roadmaps, articles, resources and
             journeys to help you choose your path and grow in your career.</Text>
 
           <Text fontSize='14px' color='gray.500'>
-            <Text as='span' mr='10px'>&copy; roadmap.sh</Text>&middot;
+            <Text as='span' mr='10px'>&copy; dc-roadmap.vercel.app</Text>&middot;
             <Link href='/about' _hover={{ textDecoration: 'none', color: 'white' }} color='gray.400'
                   mx='10px'>FAQs</Link>&middot;
             <Link href='/terms' _hover={{ textDecoration: 'none', color: 'white' }} color='gray.400'

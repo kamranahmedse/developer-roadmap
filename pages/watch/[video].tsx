@@ -17,31 +17,43 @@ export default function Video(props: VideoProps) {
   const VideoContent = require(`../../content/videos/${video.id}.md`).default;
 
   return (
-    <Box bg='white' minH='100vh'>
+    <Box bg="white" minH="100vh">
       <GlobalHeader />
       <Helmet title={video.title} description={video.description} />
-      <Box mb='60px'>
+      <Box mb="60px">
         <ContentPageHeader
           title={video.title}
           subtitle={video.description}
           formattedDate={video.formattedUpdatedAt!}
-          subLink={video.youtubeLink ? {
-            text: 'Watch on YouTube',
-            url: video.youtubeLink
-          } : undefined}
+          subLink={
+            video.youtubeLink
+              ? {
+                  text: 'Watch on YouTube',
+                  url: video.youtubeLink,
+                }
+              : undefined
+          }
           author={{
             twitter: video.author?.twitter!,
             name: video.author?.name!,
-            picture: video.author?.picture!
+            picture: video.author?.picture!,
           }}
         />
-        <Container maxW={'container.md'} position='relative'>
+        <Container maxW={'container.md'} position="relative">
           {video.youtubeLink && (
-            <Text mb='18px'>We are working on a better watch page — for now this <Link fontWeight={600}
-                                                                                       textDecoration={'underline'}
-                                                                                       href={video.youtubeLink}
-                                                                                       target='_blank'>video is best
-              viewed on YouTube</Link>.</Text>)}
+            <Text mb="18px">
+              We are working on a better watch page — for now this{' '}
+              <Link
+                fontWeight={600}
+                textDecoration={'underline'}
+                href={video.youtubeLink}
+                target="_blank"
+              >
+                video is best viewed on YouTube
+              </Link>
+              .
+            </Text>
+          )}
           <MdRenderer>
             <VideoContent />
           </MdRenderer>
@@ -57,26 +69,26 @@ export default function Video(props: VideoProps) {
 
 type StaticPathItem = {
   params: {
-    video: string
-  }
+    video: string;
+  };
 };
 
 export async function getStaticPaths() {
   const videos = getAllVideos();
-  const paramsList: StaticPathItem[] = videos.map(video => ({
-    params: { 'video': video.id }
+  const paramsList: StaticPathItem[] = videos.map((video) => ({
+    params: { video: video.id },
   }));
 
   return {
     paths: paramsList,
-    fallback: false
+    fallback: false,
   };
 }
 
 type ContextType = {
   params: {
-    video: string
-  }
+    video: string;
+  };
 };
 
 export async function getStaticProps(context: ContextType) {
@@ -84,8 +96,7 @@ export async function getStaticProps(context: ContextType) {
 
   return {
     props: {
-      video: getVideoById(videoId)
-    }
+      video: getVideoById(videoId),
+    },
   };
 }
-

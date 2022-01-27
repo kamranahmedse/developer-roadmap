@@ -107,7 +107,7 @@ export function GlobalHeader(props: GlobalHeaderProps) {
                   _hover={{ textDecoration: 'none' }}
                   fontSize='18px'>
               <RoadmapLogo style={{ height: '30px', width: '30px', marginRight: '10px' }} />
-              <Text d={['block', 'none', 'block']} as='span'>roadmap.sh</Text>
+              <Text d={['block', 'none', 'block']} as='span'>Developers Roadmap</Text>
             </Link>
           </Box>
           <DesktopMenuLinks />

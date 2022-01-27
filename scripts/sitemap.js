@@ -5,7 +5,7 @@ const glob = require('glob');
 const guides = require('../content/guides.json');
 const roadmaps = require('../content/roadmaps.json');
 
-const DOMAIN = 'https://roadmap.sh';
+const DOMAIN = 'https://developers-roadmap.vercel.app/';
 const PAGES_DIR = path.join(__dirname, '../pages');
 const SITEMAP_PATH = path.join(__dirname, '../public/sitemap.xml');
 

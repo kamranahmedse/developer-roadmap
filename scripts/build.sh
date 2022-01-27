@@ -3,5 +3,5 @@
 rm -rf out
 next build
 next export
-echo 'roadmap.sh' > out/CNAME
+echo 'Developers Roadmap' > out/CNAME
 touch out/.nojekyll
