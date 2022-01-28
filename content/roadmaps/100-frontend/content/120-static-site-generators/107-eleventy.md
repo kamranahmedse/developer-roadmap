@@ -5,3 +5,5 @@ Eleventy (11ty) is a simple to use, easy to customize, highly performant and pow
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Website' href='https://www.11ty.dev/'>Official Website</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=-dM6AmNmMFA'>Introduction to Eleventy</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://11ty.rocks/'>A collection of 11ty starters, projects, plugins, and resources</BadgeLink>
+
