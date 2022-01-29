@@ -4,6 +4,4 @@ Relay is a JavaScript client used in the browser to fetch GraphQL data. It's a J
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://relay.dev/'>Official Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://relay.dev/'>Official Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://relay.dev/'>Official Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://relay.dev/docs/'>Introduction to Relay modern</BadgeLink>
