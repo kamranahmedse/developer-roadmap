@@ -1,0 +1,32 @@
+{
+  "seo": {
+    "title": "Robotic/AI Roadmap: Learn to become a modern Robotic/AI engineer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern Robotic/AI development. Learn to become a modern Robotic/AI engineer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a Robotic/AI engineer",
+      "Robotic/AI engineer",
+      "Robotic/AI skills",
+      "Robotic/AI development skills",
+      "Robotic/AI development skills test",
+      "Robotic/AI engineer roadmap",
+      "become a Robotic/AI engineer",
+      "Robotic/AI engineer career path",
+      "skills for Robotic/AI development",
+      "what is Robotic/AI engineer",
+      "Robotic/AI engineer quiz",
+      "Robotic/AI engineer interview questions"
+    ]
+  },
+  "title": "Robotic/AI Engineer",
+  "description": "Steps to follow in order to become a modern Robotic/AI Engineer in 2022",
+  "featuredTitle": "Robotic/AI",
+  "featuredDescription": "Step by step guide to becoming a modern Robotic/AI Engineer in 2022",
+  "isUpcoming": true,
+  "featured": true,
+  "landingPath": "./landscape.md",
+  "resourcesPath": "./resources.md",
+  "author": {
+    "name": "Isaac Bandim",
+    "url": "https://github.com/ibandim123"
+  }
+}
