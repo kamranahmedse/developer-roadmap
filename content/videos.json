@@ -1,5 +1,16 @@
 [
   {
+    "id": "linked-list-data-structure",
+    "title": "Linked List Data Structure",
+    "description": "Learn everything you need to know about linked list data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=odW9FU8jPRQ",
+    "authorUsername": "kamranahmedse",
+    "duration": "11 minutes",
+    "updatedAt": "2022-01-31T19:59:14.191Z",
+    "createdAt": "2022-01-31T19:59:14.191Z"
+  },
+  {
     "id": "array-structure",
     "title": "All about Array Data Structure",
     "description": "Learn everything you need to know about array data structure",
