@@ -4,5 +4,5 @@ Styled JSX is a CSS-in-JS library that allows you to write encapsulated and scop
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.npmjs.com/package/styled-jsx'>Getting started</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://github.com/vercel/styled-jsx'>Getting started</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=SM5uVbfgfdo'>Styled JSX in Next.js: Master Next.js</BadgeLink>
