@@ -1,6 +1,6 @@
 # Less
 
-Less (which stands for Leaner Style Sheets) is a backwards-compatible language extension for CSS
+Less extends CSS with dynamic behavior such as variables, mixins, operations and functions. Less runs on both the server-side (with Node.js and Rhino) or client-side (modern browsers only).
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://lesscss.org/'>Official Website</BadgeLink>
