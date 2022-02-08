@@ -1,5 +1,16 @@
 [
   {
+    "id": "stack-data-structure",
+    "title": "Stack Data Structure",
+    "description": "Learn everything you need to know about the stack data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=I5lq6sCuABE",
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2022-02-07T19:59:14.191Z",
+    "createdAt": "2022-02-07T19:59:14.191Z"
+  },
+  {
     "id": "linked-list-data-structure",
     "title": "Linked List Data Structure",
     "description": "Learn everything you need to know about linked list data structure",
