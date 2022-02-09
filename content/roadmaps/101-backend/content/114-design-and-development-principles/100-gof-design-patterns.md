@@ -1,4 +1,4 @@
-# Design patterns
+# Design Patterns
 
 Design patterns are typical solutions to commonly occurring problems in software design. They can be broken into three categories: 
 
