@@ -1,6 +1,6 @@
 # Parcel
 
-Parcel is a zero configuration module bundler.
+Parcel is a web application bundler, differentiated by its developer experience. It offers blazing-fast performance utilizing multicore processing and requires zero configuration.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
