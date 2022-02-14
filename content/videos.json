@@ -1,5 +1,16 @@
 [
   {
+    "id": "queue-data-structure",
+    "title": "Queue Data Structure",
+    "description": "Learn everything you need to know about the queue data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=mDCi1lXd9hc",
+    "authorUsername": "kamranahmedse",
+    "duration": "4 minutes",
+    "updatedAt": "2022-02-14T19:59:14.191Z",
+    "createdAt": "2022-02-14T19:59:14.191Z"
+  },
+  {
     "id": "stack-data-structure",
     "title": "Stack Data Structure",
     "description": "Learn everything you need to know about the stack data structure",
