@@ -32,7 +32,7 @@
   <p>
     <a href="https://www.doppler.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=kamranahmedse&utm_source=github">
       <div>
-        <img src="./.github/sponsors/doppler-logo.svg" width="300" alt="Doppler" >
+        <img src="./.github/sponsors/doppler-logo.svg?v2" width="300" alt="Doppler" >
       </div>
       <b>All your environment variables, in one place</b>
       <div>
