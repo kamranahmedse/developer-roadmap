@@ -461,6 +461,49 @@
   },
   {
     "seo": {
+      "title": "Blockchain Developer Roadmap: Learn to become a blockchain developer",
+      "description": "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, for modern blockchain development.",
+      "keywords": [
+        "blockchain roadmap 2022",
+        "blockchain developer roadmap 2022",
+        "guide to becoming a developer",
+        "guide to becoming a blockchain developer",
+        "blockchain roadmap",
+        "blockchain developer",
+        "blockchain engineer",
+        "blockchain skills",
+        "blockchain development",
+        "blockchain development skills",
+        "blockchain development skills test",
+        "blockchain engineer roadmap",
+        "blockchain developer roadmap",
+        "become a blockchain developer",
+        "blockchain developer career path",
+        "modern blockchain developer",
+        "skills for blockchain development",
+        "learn blockchain development",
+        "what is blockchain development"
+      ]
+    },
+    "title": "Blockchain Developer",
+    "description": "Step by step guide to becoming a blockchain developer in 2022",
+    "featuredTitle": "Blockchain",
+    "featuredDescription": "Step by step guide to becoming a blockchain developer in 2022",
+    "featured": true,
+    "imageUrl": "/roadmaps/blockchain.png",
+    "jsonUrl": "/project/blockchain.json",
+    "resourcesPath": "/roadmaps/112-blockchain/resources.md",
+    "author": {
+      "name": "Daniel Gruesso",
+      "url": "https://twitter.com/danielgruesso"
+    },
+    "contentPathsFilePath": "/roadmaps/112-blockchain/content-paths.json",
+    "id": "blockchain",
+    "metaPath": "/roadmaps/112-blockchain/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
       "title": "AWS Roadmap: Learn to use AWS",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
