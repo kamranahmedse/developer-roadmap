@@ -131,9 +131,12 @@ const Helmet = (props: HelmetProps) => {
       <link rel="icon" href="/manifest/favicon.ico" type="image/x-icon" />
 
       {roadmap?.id && (
-        <script type="application/ld+json">
-          {JSON.stringify(getRichSnippetJson(roadmap))}
-        </script>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(getRichSnippetJson(roadmap)),
+          }}
+        />
       )}
 
       {/* Global Site Tag (gtag.js) - Google Analytics */}
