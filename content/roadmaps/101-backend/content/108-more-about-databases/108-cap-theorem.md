@@ -1,12 +1,6 @@
-# CAP theorem
+# CAP Theorem
 
-CAP Theorem is a Theoretical Computer Science concept stating that in any distributed system there are Three factors.
-
-<b>C</b>onsistency </br>
-<b>A</b>vailability </br>
-<b>P</b>artition Tolerance
-
-In any distributed system, there will be cases where the network goes down. This means you have to choose between designing a system for <b>C</b>onsistency (Data will be the same across all instances, meaning the application is unavailable) or <b>A</b>vailability (The Data will not be the same across all instances but the application will be available)
+CAP is an acronym that stands for Consistency, Availability and Partition Tolerance. According to CAP theorem, any distributed system can only guarantee two of the three properties at any point of time. You can't guarantee all three properties at once.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=_RbsFXWRZ10'>What is CAP Theorem?</BadgeLink>
