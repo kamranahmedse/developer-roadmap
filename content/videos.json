@@ -1,5 +1,16 @@
 [
   {
+    "id": "hash-table-data-structure",
+    "title": "Hash Table Data Structure",
+    "description": "Learn everything you need to know about the hash table data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=jalSiaIi8j4",
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2022-02-21T19:59:14.191Z",
+    "createdAt": "2022-02-21T19:59:14.191Z"
+  },
+  {
     "id": "queue-data-structure",
     "title": "Queue Data Structure",
     "description": "Learn everything you need to know about the queue data structure",
