@@ -100,9 +100,15 @@ export default function Thanks() {
               <Heading mb='15px' fontSize='25px' as='h2'>Monthly Sponsors</Heading>
               <UnorderedList>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/skyhatch'>Ash P</Link></ListItem>
+                                         href='https://github.com/greg-s-miller'>Greg Miller</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/imReset'>Reset</Link></ListItem>
+                                         href='https://github.com/scooby-moo'>Scooby Moo</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/Dieer2'>Dieer2</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/around'>Around</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/skyhatch'>Ash P</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/ricardolino'>Ricardo Lino</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
@@ -128,6 +134,20 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/timaskwhy'>Tim Wong</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/MedusaNick'>Nicklas Gellner</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/hzine'>HZine</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/rh-raju'>Reajul Hasan Raju</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/jgrochulski'>Jan Grochulski</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/francispeixoto'>Francis Peixoto</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/imReset'>Reset</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/logreg-n-coffee'>Rui Hu</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
