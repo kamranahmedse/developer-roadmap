@@ -8,4 +8,4 @@ An OpenAPI definition can then be used by documentation generation tools to disp
 <BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://swagger.io/specification/'>OpenAPI Specification Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Demo' href='https://swagger.io/tools/swagger-editor/'>Open API Live Editor</BadgeLink>
 <BadgeLink badgeText='Watch' colorScheme='green' href='https://www.youtube.com/watch?v=6kwmW_p_Tig'>OpenAPI 3.0: How to Design and Document APIs with the Latest OpenAPI Specification 3.0</BadgeLink>
-<BadgeLink badgeText='Course' href='https://www.udemy.com/course/swagger-tools-openapi/'>The Ultimate Swagger Tools Course: Build OpenAPI with Ease</BadgeLink>
+<BadgeLink badgeText='Course' href='https://swagger.io/docs/specification/about/'>Official training guide</BadgeLink>
