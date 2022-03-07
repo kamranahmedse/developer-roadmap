@@ -12,7 +12,7 @@ export function OpensourceBanner() {
             target='_blank'
             borderBottomWidth={1}
             fontWeight={600}
-          >6th most starred project on GitHub</Link> and is visited by hundreds of thousands of
+          >7th most starred project on GitHub</Link> and is visited by hundreds of thousands of
           developers every month.</Text>
         <iframe
           src='https://ghbtns.com/github-btn.html?user=kamranahmedse&repo=developer-roadmap&type=star&count=true&size=large'
