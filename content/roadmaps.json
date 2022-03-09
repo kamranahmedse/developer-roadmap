@@ -461,6 +461,48 @@
   },
   {
     "seo": {
+      "title": "Blockchain Developer Roadmap: Learn to become a blockchain developer",
+      "description": "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides for blockchain development",
+      "keywords": [
+        "guide to becoming a blockchain developer",
+        "blockchain developer roadmap",
+        "blockchain dev roadmap",
+        "smart contracts developer roadmap",
+        "blockchain developer skills",
+        "smart contracts developer skills",
+        "become blockchain developer",
+        "blockchain skills",
+        "smart contracts skills",
+        "blockchain developer skills test",
+        "skills for blockchain developer",
+        "skills for smart contract developer",
+        "learn blockchain",
+        "learn smart contracts",
+        "what is blockchain",
+        "blockchain developer quiz",
+        "blockchain developer interview questions"
+      ]
+    },
+    "title": "Blockchain Developer",
+    "description": "Step by step guide to becoming a blockchain developer in 2022",
+    "featuredTitle": "Blockchain",
+    "featuredDescription": "Step by step guide to become a blockchain developer in 2022",
+    "resourcesPath": "/roadmaps/112-blockchain/resources.md",
+    "author": {
+      "name": "Daniel Gruesso",
+      "url": "https://twitter.com/danielgruesso"
+    },
+    "isCommunity": false,
+    "isTextHeavy": true,
+    "featured": true,
+    "detailed": false,
+    "versions": [],
+    "id": "blockchain",
+    "metaPath": "/roadmaps/112-blockchain/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
       "title": "AWS Roadmap: Learn to use AWS",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
