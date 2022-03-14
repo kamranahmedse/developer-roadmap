@@ -1,5 +1,9 @@
-# OWASP Top 10 Vulnerabilities
+# OWASP Security Risks
 
-The OWASP Top 10 is a list of the 10 most common web application security risks. By writing code and performing robust testing with these risks in mind, developers can create secure applications that keep their users’ confidential data safe from attackers.
+OWASP or Open Web Application Security Project is an online community that produces freely-available articles, methodologies, documentation, tools, and technologies in the field of web application security.
 
-<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.veracode.com/security/owasp-top-10'>OWASP Top 10 Vulnerabilities</BadgeLink>
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://en.wikipedia.org/wiki/OWASP'>Wikipedia - OWASP</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://github.com/0xRadi/OWASP-Web-Checklist'>OWASP Web Application Security Testing Checklist</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/'>OWASP Top 10 Security Risks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html'>OWASP Cheatsheets</BadgeLink>
