@@ -495,14 +495,12 @@
       "name": "Daniel Gruesso",
       "url": "https://twitter.com/danielgruesso"
     },
-    "contentPathsFilePath": "/roadmaps/112-blockchain/content-paths.json",
-    "id": "blockchain",
-    "metaPath": "/roadmaps/112-blockchain/meta.json",
-    "isCommunity": true,
+    "isCommunity": false,
     "isTextHeavy": true,
     "detailed": false,
     "versions": [],
-    
+    "id": "blockchain",
+    "metaPath": "/roadmaps/112-blockchain/meta.json",
     "isUpcoming": false
   },
   {
