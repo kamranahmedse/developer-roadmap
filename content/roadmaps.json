@@ -495,7 +495,8 @@
       "name": "Daniel Gruesso",
       "url": "https://twitter.com/danielgruesso"
     },
-    "isCommunity": false,
+    "contentPathsFilePath": "/roadmaps/112-blockchain/content-paths.json",
+    "isCommunity": true,
     "isTextHeavy": true,
     "detailed": false,
     "versions": [],
