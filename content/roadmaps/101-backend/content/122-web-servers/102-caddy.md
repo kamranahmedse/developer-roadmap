@@ -1,6 +1,6 @@
 # Caddy
 
-Is a small but very powerful Web-Server. It has some really nice features like automatic SSL / HTTPs and a really easy configuration file.
+The Caddy web server is an extensible, cross-platform, open-source web server written in Go. It has some really nice features like automatic SSL/HTTPs and a really easy configuration file.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://caddyserver.com/'>Official Website</BadgeLink>
