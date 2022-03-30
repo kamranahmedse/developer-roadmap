@@ -115,7 +115,7 @@ When creating an object is not just a few assignments and involves some logic, i
 --------------
 
 Real world example
-> Consider the case of a hiring manager. It is impossible for one person to interview for each of the positions. Based on the job opening, she has to decide and delegate the interview steps to different people.
+> Consider the case of a hiring manager. It is impossible for one person to interview for each of the positions. Based on the job opening, they has to decide and delegate the interview steps to different people.
 
 In plain words
 > It provides a way to delegate the instantiation logic to child classes.
@@ -585,7 +585,7 @@ Wikipedia says
 
 **Programmatic Example**
 
-Consider a game where there is a hunter and he hunts lions.
+Consider a game where there is a hunter and they hunts lions.
 
 First we have an interface `Lion` that all types of lions have to implement
 

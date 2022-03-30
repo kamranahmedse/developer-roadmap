@@ -11,7 +11,7 @@ Here’s a problem: we want to download a file with BitTorrent, but it’s a pee
 
 ![illustration of a desktop computer and laptop sitting at a pub](/guides/torrent-client/trackers.png)
 
-Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and KickassTorrents getting seized and shut down. New methods cut out the middleman by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
+Of course, these central servers are liable to get raided by the feds if they facilitate peers exchanging illegal content. You may remember reading about trackers like TorrentSpy, Popcorn Time, and KickassTorrents getting seized and shut down. New methods cut out the intermediary by making even **peer discovery** a distributed process. We won't be implementing them, but if you're interested, some terms you can research are **DHT**, **PEX**, and **magnet links**.
 
 ### Parsing a .torrent file
 A .torrent file describes the contents of a torrentable file and information for connecting to a tracker. It's all we need in order to kickstart the process of downloading a torrent. Debian's .torrent file looks like this:
@@ -205,7 +205,7 @@ We've just set up a connection with a peer, but we want do a handshake to valida
 
 ![Two computers communicating. One asks 'do you speak BitTorrent and have this file?' and the other replies 'I speak BitTorrent and have that file'](/guides/torrent-client/handshake.png)
 
-My father told me that the secret to a good handshake is a firm grip and eye contact. The secret to a good BitTorrent handshake is that it's made up of five parts:
+My parent told me that the secret to a good handshake is a firm grip and eye contact. The secret to a good BitTorrent handshake is that it's made up of five parts:
 
 1. The length of the protocol identifier, which is always 19 (0x13 in hex)
 2. The protocol identifier, called the **pstr** which is always `BitTorrent protocol`
@@ -255,7 +255,7 @@ Once we've completed the initial handshake, we can send and receive **messages**
 
 Once we've been unchoked, we can then begin sending **requests** for pieces, and they can send us messages back containing pieces.
 
-!["A cartoon in which person 1 says 'hello I would like piece number—' and person 2 grabs him by the neck and says '00 00 00 01 00 (choke)'](/guides/torrent-client/choke.png)
+!["A cartoon in which person 1 says 'hello I would like piece number—' and person 2 grabs them by the neck and says '00 00 00 01 00 (choke)'](/guides/torrent-client/choke.png)
 
 #### Interpreting messages
 A message has a length, an **ID** and a **payload**. On the wire, it looks like:

@@ -34,13 +34,13 @@ A proxy server acts as a gateway between client *(you)* and the internet and  se
 
 If all this was too much to take in, I have a simple analogy for you.    
 
-At a restaurant the waiter/waitress takes your order and gives it to the kitchen head chef. The head chef then calls out the order and assigns tasks to everyone in the kitchen.    
+At a restaurant the waiter/waiter takes your order and gives it to the kitchen head chef. The head chef then calls out the order and assigns tasks to everyone in the kitchen.    
 
 In this analogy: 
 
 * You are the client
 * Your order is the web request
-* Waiter/Waitress is your forward proxy server
+* Waiter/Waiter is your forward proxy server
 * Kitchen head chef is the reverse proxy server
 * Other chefs working in the kitchen are the web servers
 

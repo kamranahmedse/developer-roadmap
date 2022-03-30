@@ -67,7 +67,7 @@ Get practical skills of how to deploy, extend, maintain and support Postgres ins
 - **Replication**: streaming replication, logical replication
 - **Backup/recovery tools**:
   - Built-in: `pg_dump`, `pg_dumpall`, `pg_restore`, `pg_basebackup`
-  - 3rd-party: `barman`, `pgbackrest`, `pg_probackup`, `WAL-G`
+  - 3rd-party: `barperson`, `pgbackrest`, `pg_probackup`, `WAL-G`
   - Backup validation procedures
 - **Upgrading procedures**
   - Minor and major upgrades using `pg_upgrade`
