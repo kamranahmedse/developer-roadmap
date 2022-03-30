@@ -79,7 +79,7 @@ Expires: Mon, 13 Mar 2017 12:22:00 GMT
 
 It should be noted that the date cannot be more than a year and if the date format is wrong, content will be considered stale. Also, the clock on cache has to be in sync with the clock on server, otherwise the desired results might not be achieved. 
 
-Although, `Expires` header is still valid and is supported widely by the caches, preference should be given to HTTP/1.1 successor of it i.e. `Cache-Control`.  
+Although, `Expires` header is still valid and is supported widely by the caches, orientation should be given to HTTP/1.1 successor of it i.e. `Cache-Control`.  
 
 #### Pragma
 

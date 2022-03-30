@@ -21,7 +21,7 @@ export const CustomAd = () => {
             className='carbon-text'
             target='_blank'
           >
-            He Went from ZERO TO $74,000 as a Full Time Developer in 7 Weeks
+            they Went from ZERO TO $74,000 as a Full Time Developer in 7 Weeks
           </a>
         </span>
         <a

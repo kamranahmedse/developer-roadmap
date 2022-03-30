@@ -36,7 +36,7 @@ Here is how a sample `HTTP/1.0` request and response might have looked like:
 
 ```html
 GET / HTTP/1.0
-Host: kamranahmed.info
+host: kamranahmed.info
 User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5)
 Accept: */*
 ```
@@ -87,7 +87,7 @@ After merely 3 years of `HTTP/1.0`, the next version i.e. `HTTP/1.1` was release
 
 - **New HTTP methods** were added, which introduced `PUT`, `PATCH`, `OPTIONS`, `DELETE`
 
-- **Hostname Identification** In `HTTP/1.0` `Host` header wasn't required but `HTTP/1.1` made it required.
+- **Hostname Identification** In `HTTP/1.0` `host` header wasn't required but `HTTP/1.1` made it required.
 
 - **Persistent Connections** As discussed above, in `HTTP/1.0` there was only one request per connection and the connection was closed as soon as the request was fulfilled which resulted in accute performance hit and latency problems. `HTTP/1.1` introduced the persistent connections i.e. **connections weren't closed by default** and were kept open which allowed multiple sequential requests. To close the connections, the header `Connection: close` had to be available on the request. Clients usually send this header in the last request to safely close the connection.
 

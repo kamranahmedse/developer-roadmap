@@ -42,7 +42,7 @@ Don't use Medium or a similar service - opt for a self-hosted blog as it allows 
 
 Another approach is the "Tool by Tool" approach. I've first noticed this approach being used by Shopify. The team at Shopify are providing little tools such as a [logo generator](https://hatchful.shopify.com/) and release these tools free for anyone to use. This not just builds goodwill with people; it also allows Shopify to attract powerful backlinks to their projects. As developers we are in the perfect position to build such mini-tools. It boosts morale and drives attention at the same time.
 
-Spend some time evaluating where your project or product will deliver value to the end-user. Look at options to split off small, independent tools. Build these and launch them before launching the whole product. This allows you to practice launching and promoting your part-projects at the same time. With each backlink to your part-projects you will enhance your ranking in Google. An example for a maker following this approach is [Kamban](https://kambanthemaker.com/) with [FlatGA](https://flatga.io/). He built FlatGA as phase one of a bigger project currently in development.
+Spend some time evaluating where your project or product will deliver value to the end-user. Look at options to split off small, independent tools. Build these and launch them before launching the whole product. This allows you to practice launching and promoting your part-projects at the same time. With each backlink to your part-projects you will enhance your ranking in Google. An example for a maker following this approach is [Kamban](https://kambanthemaker.com/) with [FlatGA](https://flatga.io/). they built FlatGA as phase one of a bigger project currently in development.
 
 ### Join a Maker community
 
@@ -66,4 +66,4 @@ I hope the article helped you to wrap your head around the idea that building si
 About the author
 ----------------
 
-[Peter Thaleikis](https://peterthaleikis.com/) a software engineer and business owner. He has been developing web applications since around 2000. Before he started his own software development company [Bring Your Own Ideas Ltd.](https://bringyourownideas.com/), he has been Lead Developer for multiple organisations.
+[Peter Thaleikis](https://peterthaleikis.com/) a software engineer and business owner. they has been developing web applications since around 2000. Before they started theirs own software development company [Bring Your Own Ideas Ltd.](https://bringyourownideas.com/), they has been Lead Developer for multiple organisations.

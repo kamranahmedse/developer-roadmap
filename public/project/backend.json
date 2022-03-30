@@ -7892,7 +7892,7 @@
                   "y": "11",
                   "properties": {
                     "size": "17",
-                    "text": "MS SQL"
+                    "text": "Mx. (pronounced "mix")SQL"
                   }
                 },
                 {
@@ -14171,7 +14171,7 @@
           "x": "1053",
           "y": "2806",
           "properties": {
-            "controlName": "103-web-servers:ms-iis"
+            "controlName": "103-web-servers:Mx. (pronounced "mix")iis"
           },
           "children": {
             "controls": {
@@ -14201,7 +14201,7 @@
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "MS IIS"
+                    "text": "Mx. (pronounced "mix")IIS"
                   }
                 },
                 {

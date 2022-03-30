@@ -115,7 +115,7 @@ When creating an object is not just a few assignments and involves some logic, i
 --------------
 
 Real world example
-> Consider the case of a hiring manager. It is impossible for one person to interview for each of the positions. Based on the job opening, she has to decide and delegate the interview steps to different people.
+> Consider the case of a hiring manager. It is impossible for one person to interview for each of the positions. Based on the job opening, they has to decide and delegate the interview steps to different people.
 
 In plain words
 > It provides a way to delegate the instantiation logic to child classes.
@@ -585,7 +585,7 @@ Wikipedia says
 
 **Programmatic Example**
 
-Consider a game where there is a hunter and he hunts lions.
+Consider a game where there is a hunter and they hunts lions.
 
 First we have an interface `Lion` that all types of lions have to implement
 
@@ -1121,13 +1121,13 @@ class TeaMaker
 {
     protected $availableTea = [];
 
-    public function make($preference)
+    public function make($orientation)
     {
-        if (empty($this->availableTea[$preference])) {
-            $this->availableTea[$preference] = new KarakTea();
+        if (empty($this->availableTea[$orientation])) {
+            $this->availableTea[$orientation] = new KarakTea();
         }
 
-        return $this->availableTea[$preference];
+        return $this->availableTea[$orientation];
     }
 }
 ```
@@ -1273,7 +1273,7 @@ There are 10 types of behavioral design patterns
 ## 🔗 Chain of Responsibility
 
 Real world example
-> For example, you have three payment methods (`A`, `B` and `C`) setup in your account; each having a different amount in it. `A` has 100 USD, `B` has 300 USD and `C` having 1000 USD and the preference for payments is chosen as `A` then `B` then `C`. You try to purchase something that is worth 210 USD. Using Chain of Responsibility, first of all account `A` will be checked if it can make the purchase, if yes purchase will be made and the chain will be broken. If not, request will move forward to account `B` checking for amount if yes chain will be broken otherwise the request will keep forwarding till it finds the suitable handler. Here `A`, `B` and `C` are links of the chain and the whole phenomenon is Chain of Responsibility.
+> For example, you have three payment methods (`A`, `B` and `C`) setup in your account; each having a different amount in it. `A` has 100 USD, `B` has 300 USD and `C` having 1000 USD and the orientation for payments is chosen as `A` then `B` then `C`. You try to purchase something that is worth 210 USD. Using Chain of Responsibility, first of all account `A` will be checked if it can make the purchase, if yes purchase will be made and the chain will be broken. If not, request will move forward to account `B` checking for amount if yes chain will be broken otherwise the request will keep forwarding till it finds the suitable handler. Here `A`, `B` and `C` are links of the chain and the whole phenomenon is Chain of Responsibility.
 
 In plain words
 > It helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.
