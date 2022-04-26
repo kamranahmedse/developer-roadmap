@@ -48,6 +48,16 @@ const GlobalStyles = css`
     & rect { fill: #cbcbcb !important; }
     & text { text-decoration: line-through; }
   }
+  svg .dontHave {
+    & rect { fill: #e53e3e !important; }
+    & text { text-decoration: line-through; }
+  }
+  svg .basicknowledge {
+    & rect { fill: #38a169 !important; }
+  }
+  svg .goodKnowledge {
+    & rect { fill: #3182ce !important; }
+  }
 `;
 
 

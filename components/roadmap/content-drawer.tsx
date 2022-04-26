@@ -17,7 +17,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
     return null;
   }
 
-  const isDone = localStorage.getItem(groupId) === 'done';
+  const localData = localStorage.getItem(groupId);
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -49,63 +49,93 @@ export function ContentDrawer(props: ContentDrawerProps) {
             alignItems="center"
             zIndex={1}
           >
-            {!isDone && (
-              <Button
+            {localData !== 'dontHave' &&(<Button
                 onClick={() => {
-                  localStorage.setItem(groupId, 'done');
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.add('done')
+                  localStorage.setItem(groupId, 'dontHave');
+                  queryGroupElementsById(groupId).forEach((item) =>{                    
+                    item?.classList?.remove('basicknowledge')
+                    item?.classList?.remove('goodKnowledge')
+                    item?.classList?.add('dontHave')}
                   );
                   onClose();
                 }}
-                colorScheme="green"
-                leftIcon={<CheckIcon />}
-                size="xs"
-                iconSpacing={0}
-              >
-                <Text
-                  as="span"
-                  d={['block', 'none', 'none', 'block']}
-                  ml="10px"
-                >
-                  Mark as Done
-                </Text>
-              </Button>
-            )}
-            {isDone && (
-              <Button
+                colorScheme="red"  size="xs" iconSpacing={0}  >
+                <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Don't have</Text>
+            </Button>)}
+
+            {localData === 'dontHave' &&(
+            <Button disabled
                 onClick={() => {
-                  localStorage.removeItem(groupId);
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.remove('done')
-                  );
+                  localStorage.setItem(groupId, 'dontHave');
                   onClose();
                 }}
-                colorScheme="red"
-                leftIcon={<RepeatIcon />}
-                size="xs"
-                iconSpacing={0}
-              >
-                <Text
-                  as="span"
-                  d={['block', 'none', 'none', 'block']}
-                  ml="10px"
-                >
-                  Mark as Pending
-                </Text>
+                colorScheme="red" leftIcon={<CheckIcon />} size="xs" iconSpacing={0}  >
+                <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Don't have</Text>
+            </Button>)}
+
+            {localData !== 'basicknowledge' &&(
+                <Button
+                  onClick={() => {
+                    localStorage.setItem(groupId, 'basicknowledge');
+                    queryGroupElementsById(groupId).forEach((item) =>{                    
+                      item?.classList?.remove('dontHave')
+                      item?.classList?.remove('goodKnowledge')
+                      item?.classList?.add('basicknowledge')}
+                    );
+                    onClose();
+                  }}
+                  colorScheme="green" size="xs" iconSpacing={0}  >
+                  <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Basic knowledge</Text>
+                </Button>
+            )}
+
+            {localData === 'basicknowledge' &&(
+                <Button disabled
+                  onClick={() => {
+                    localStorage.setItem(groupId, 'basicknowledge');
+                    queryGroupElementsById(groupId).forEach((item) =>
+                      item?.classList?.add('done')
+                    );
+                    onClose();
+                  }}
+                  colorScheme="green" leftIcon={<CheckIcon />} size="xs" iconSpacing={0}  >
+                  <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Basic knowledge</Text>
+                </Button>
+            )}    
+
+            {localData !== 'goodKnowledge' &&(
+              <Button
+                  onClick={() => {
+                    localStorage.setItem(groupId, 'goodKnowledge');
+                    queryGroupElementsById(groupId).forEach((item) =>{                    
+                      item?.classList?.remove('dontHave')
+                      item?.classList?.remove('basicknowledge')
+                      item?.classList?.add('goodKnowledge')}
+                    );
+                    onClose();
+                  }}
+                  colorScheme="blue" size="xs" iconSpacing={0}  >
+                  <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Good knowledge</Text>
               </Button>
             )}
-            <Button
-              onClick={onClose}
-              colorScheme="yellow"
-              ml="5px"
-              leftIcon={<CloseIcon width="8px" />}
-              iconSpacing={0}
-              size="xs"
-            >
-              <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px">
-                Close
-              </Text>
+
+            {localData === 'goodKnowledge' &&(
+              <Button disabled
+                  onClick={() => {
+                    localStorage.setItem(groupId, 'goodKnowledge');
+                    queryGroupElementsById(groupId).forEach((item) =>
+                      item?.classList?.add('done')
+                    );
+                    onClose();
+                  }}
+                  colorScheme="blue" leftIcon={<CheckIcon />} size="xs" iconSpacing={0}  >
+                  <Text as="span" d={['block', 'none', 'none', 'block']}  ml="10px" >Good knowledge</Text>
+              </Button>
+            )}
+
+
+            <Button onClick={onClose} colorScheme="yellow" ml="5px" leftIcon={<CloseIcon width="8px" />} iconSpacing={0} size="xs" > 
+            <Text as="span" d={['none', 'none', 'none', 'block']} ml="10px"> Close </Text> 
             </Button>
           </Flex>
           <RoadmapGroup isOutlet roadmap={roadmap} group={groupId} />

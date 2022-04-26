@@ -262,18 +262,13 @@ export class Renderer {
   __group__(control: any, container: any) {
     const controlName = control?.properties?.controlName;
     const groupId = removeSortingInfo(controlName);
-    const isDone = localStorage.getItem(groupId) === 'done';
+    const selectOpt = ['dontHave','basicknowledge' , 'goodKnowledge'];
+    const SavedData = localStorage.getItem(groupId);
+    const isDone = selectOpt.includes(`${SavedData}`);
+    const selectOptColor = isDone === true ? SavedData : 'done';
 
     let group = makeSVGElement(
-      'g',
-      {
-        ...(controlName
-          ? {
-              class: `clickable-group ${isDone ? 'done' : ''}`,
-              'data-group-id': controlName,
-            }
-          : {}),
-      },
+      'g',{...(controlName? {class: `clickable-group ${isDone ? selectOptColor : ''}`,'data-group-id': controlName,}: {}),},
       container
     );
 
