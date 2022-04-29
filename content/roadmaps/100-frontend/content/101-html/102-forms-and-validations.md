@@ -4,3 +4,4 @@ Before submitting data to the server, it is important to ensure all required for
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation'>MDN Web Docs: Client-side form validation</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=rsd4FNGTRBw'>JavaScript Client-side Form Validation</BadgeLink>
