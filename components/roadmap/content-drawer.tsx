@@ -17,7 +17,30 @@ export function ContentDrawer(props: ContentDrawerProps) {
     return null;
   }
 
-  const isDone = localStorage.getItem(groupId) === 'done';
+  const curStatus = localStorage.getItem(groupId) as string;
+
+  //function check status then toggeled status
+  function changeStatus(clickedBtn: string) {
+    //Remove curStatus
+    if (curStatus == clickedBtn) {
+      localStorage.removeItem(groupId)
+      queryGroupElementsById(groupId).forEach((item) =>
+        item?.classList?.remove(clickedBtn)
+      );
+    }
+    else {
+      //remove status 
+      localStorage.setItem(groupId, clickedBtn)
+      queryGroupElementsById(groupId).forEach((item) =>
+        item?.classList?.remove(curStatus)
+      );
+      //add status of clickedbnt
+      queryGroupElementsById(groupId).forEach((item) =>
+        item?.classList?.add(clickedBtn)
+      );
+    }
+  }
+
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -49,52 +72,57 @@ export function ContentDrawer(props: ContentDrawerProps) {
             alignItems="center"
             zIndex={1}
           >
-            {!isDone && (
-              <Button
-                onClick={() => {
-                  localStorage.setItem(groupId, 'done');
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.add('done')
-                  );
-                  onClose();
-                }}
-                colorScheme="green"
-                leftIcon={<CheckIcon />}
-                size="xs"
-                iconSpacing={0}
+            <Button
+              onClick={() => {
+                changeStatus('beginner');
+                onClose();
+              }}
+              colorScheme={curStatus == 'beginner' ? 'red' : 'gray'}
+              size="xs"
+              iconSpacing={0}
+            >
+              <Text
+                as="span"
+                d={['block', 'none', 'none', 'block']}
+                ml="10px"
               >
-                <Text
-                  as="span"
-                  d={['block', 'none', 'none', 'block']}
-                  ml="10px"
-                >
-                  Mark as Done
-                </Text>
-              </Button>
-            )}
-            {isDone && (
-              <Button
-                onClick={() => {
-                  localStorage.removeItem(groupId);
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.remove('done')
-                  );
-                  onClose();
-                }}
-                colorScheme="red"
-                leftIcon={<RepeatIcon />}
-                size="xs"
-                iconSpacing={0}
+                10-20 %
+              </Text>
+            </Button>
+            <Button
+              onClick={() => {
+                changeStatus('intermediate');
+                onClose();
+              }}
+              colorScheme={curStatus == 'intermediate' ? 'orange' : 'gray'}
+              size="xs"
+              iconSpacing={0}
+            >
+              <Text
+                as="span"
+                d={['block', 'none', 'none', 'block']}
+                ml="10px"
               >
-                <Text
-                  as="span"
-                  d={['block', 'none', 'none', 'block']}
-                  ml="10px"
-                >
-                  Mark as Pending
-                </Text>
-              </Button>
-            )}
+                40-50 %
+              </Text>
+            </Button>
+            <Button
+              onClick={() => {
+                changeStatus('done');
+                onClose();
+              }}
+              colorScheme={curStatus == 'done' ? 'green' : 'gray'}
+              size="xs"
+              iconSpacing={0}
+            >
+              <Text
+                as="span"
+                d={['block', 'none', 'none', 'block']}
+                ml="10px"
+              >
+                100 %
+              </Text>
+            </Button>
             <Button
               onClick={onClose}
               colorScheme="yellow"
