@@ -44,10 +44,19 @@ const GlobalStyles = css`
     &:hover > [fill="rgb(255,255,255)"] { fill: #d7d7d7; }
   }
   
+  svg .beginner{
+    & rect { fill: #ff6347 !important;}
+  }
+
+  svg .intermediate{
+    & rect { fill: #acf436 !important;}
+  }
+  
   svg .done {
     & rect { fill: #cbcbcb !important; }
     & text { text-decoration: line-through; }
   }
+
 `;
 
 
