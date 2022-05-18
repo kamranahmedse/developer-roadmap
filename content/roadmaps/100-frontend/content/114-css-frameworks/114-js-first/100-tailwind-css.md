@@ -4,6 +4,7 @@ CSS Framework that provides atomic CSS classes to help you style components e.g.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://tailwindcss.com'>Tailwind Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Docs' href='https://tailwindcss.com/docs/installation'>Official Get started with Tailwind CSS</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='YouTube Channel' href='https://www.youtube.com/c/TailwindLabs/videos'>Official Screencasts</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Watch' href='https://www.youtube.com/watch?v=hdGsFpZ0J2E'>Should You Use Tailwind CSS?</BadgeLink>
 <BadgeLink badgeText='Read' href='https://www.codemag.com/Article/2105091/Tailwind-CSS-An-Introduction'>Tailwind CSS: An Introduction</BadgeLink>
