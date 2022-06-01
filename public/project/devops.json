@@ -3404,7 +3404,7 @@
           "measuredW": "368",
           "properties": {
             "size": "15",
-            "text": "with any Linux distro. Pick Ubuntu if you have a little to"
+            "text": "with any Linux distro. Pick Ubuntu if you have a little"
           },
           "typeID": "Label",
           "w": "352",
@@ -3418,7 +3418,7 @@
           "measuredW": "172",
           "properties": {
             "size": "15",
-            "text": "no experience with Linux."
+            "text": "to no experience with Linux."
           },
           "typeID": "Label",
           "w": "183",
