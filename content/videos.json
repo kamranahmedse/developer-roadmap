@@ -200,7 +200,7 @@
   {
     "id": "freeze-and-seal-objects-in-javascript",
     "title": "Freeze and Seal in JavaScript",
-    "description": "Learn what is OSI Model and the different layers involved.",
+    "description": "Learn what is object freeze and seal in JavaScript and how to use them",
     "youtubeLink": "https://www.youtube.com/watch?v=O3uT2l6vgZ8",
     "isPro": false,
     "authorUsername": "kamranahmedse",
