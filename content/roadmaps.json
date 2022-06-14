@@ -43,7 +43,7 @@
     "imageUrl": "/roadmaps/frontend.png",
     "jsonUrl": "/project/frontend.json",
     "resourcesPath": "/roadmaps/100-frontend/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    "pdfUrl": "/pdf/frontend.pdf",
     "contentPathsFilePath": "/roadmaps/100-frontend/content-paths.json",
     "id": "frontend",
     "metaPath": "/roadmaps/100-frontend/meta.json",
@@ -92,7 +92,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    "pdfUrl": "/pdf/backend.pdf",
     "contentPathsFilePath": "/roadmaps/101-backend/content-paths.json",
     "id": "backend",
     "metaPath": "/roadmaps/101-backend/meta.json",
@@ -140,7 +140,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap",
+    "pdfUrl": "/pdf/devops.pdf",
     "id": "devops",
     "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
@@ -184,7 +184,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/react-roadmap",
+    "pdfUrl": "/pdf/react.pdf",
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
@@ -226,7 +226,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/angular-roadmap",
+    "pdfUrl": "/pdf/angular.pdf",
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false
@@ -300,7 +300,7 @@
     "jsonUrl": "/project/python.json",
     "resourcesPath": "/roadmaps/106-python/resources.md",
     "landingPath": "/roadmaps/106-python/landscape.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
+    "pdfUrl": "/pdf/python.pdf",
     "versions": [
       "latest"
     ],
@@ -315,7 +315,7 @@
   {
     "seo": {
       "title": "Learn to become a Go developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for Go development. Learn to become a modern Go developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for Go development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
         "guide to becoming a golang developer",
         "guide to becoming a go developer",
@@ -351,7 +351,7 @@
     "jsonUrl": "/project/golang.json",
     "landingPath": "/roadmaps/107-golang/landscape.md",
     "resourcesPath": "/roadmaps/107-golang/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
+    "pdfUrl": "/pdf/go.pdf",
     "versions": [
       "latest",
       "2018",
@@ -411,7 +411,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/java-roadmap",
+    "pdfUrl": "/pdf/java.pdf",
     "id": "java",
     "metaPath": "/roadmaps/108-java/meta.json"
   },
