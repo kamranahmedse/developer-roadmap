@@ -64,16 +64,6 @@ export function Footer() {
           </Text>
         </Box>
       </Container>
-
-      {/*<CustomAd />*/}
-      {process.env.GA_SECRET && (
-        <script
-          async
-          type='text/javascript'
-          src='//cdn.carbonads.com/carbon.js?serve=CE7DLK3Y&placement=roadmapsh'
-          id='_carbonads_js'
-        />
-      )}
     </Box>
   );
 }
