@@ -37,7 +37,7 @@
   "jsonUrl": "/project/golang.json",
   "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
-  "pdfUrl": "/pdf/go.pdf",
+  "pdfUrl": "/pdfs/go.pdf",
   "versions": [
     "latest",
     "2018",

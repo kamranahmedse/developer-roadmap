@@ -42,6 +42,6 @@
   "imageUrl": "/roadmaps/frontend.png",
   "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
-  "pdfUrl": "/pdf/frontend.pdf",
+  "pdfUrl": "/pdfs/frontend.pdf",
   "contentPathsFilePath": "./content-paths.json"
 }
