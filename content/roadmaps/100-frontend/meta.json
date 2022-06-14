@@ -42,6 +42,6 @@
   "imageUrl": "/roadmaps/frontend.png",
   "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
-  "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+  "pdfUrl": "/pdf/frontend.pdf",
   "contentPathsFilePath": "./content-paths.json"
 }
