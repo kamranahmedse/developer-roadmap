@@ -42,19 +42,6 @@
       </div>
     </a>
   </p>
-  <p>
-    <a href="https://workos.com/?utm_campaign=github_repo&utm_medium=referral&utm_content=developer_roadmap&utm_source=github">
-      <div>
-        <img src="./.github/sponsors/workos-logo-white-bg.svg" width="300" alt="Work OS" >
-      </div>
-      <b>Your app, enterprise-ready</b>
-      <div>
-        <sub>Start selling to enterprise customers with just a few lines of code.</sub>
-        <br>
-        <sup>Add Single Sign-On (and more) in minutes instead of months.</sup>
-      </div>
-    </a>
-  </p>
   <br>
   <p>
     <a href="https://oss.capital">
