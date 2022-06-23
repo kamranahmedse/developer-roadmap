@@ -20,29 +20,6 @@
 
 <br>
 
-<div align="center">
-  <p>
-    <sup>
-      <a href="https://github.com/sponsors/kamranahmedse">My open source work is supported by the community</a>
-    </sup>
-  </p>
-
-  <sup>Special thanks to:</sup>
-  <br>
-  <p>
-    <a href="https://oss.capital">
-      <div>
-        <img src="./.github/sponsors/oss-logo.svg" width="300" alt="OSS Capital">
-      </div>
-      <div>
-	  <sup><b>Founded in 2018, OSS Capital is the first and only venture capital platform focused<br>exclusively on supporting early-stage COSS (commercial open source) startup founders.</b></sup>
-      </div>
-    </a>
-  </p>
-</div>
-
-<br>
-
 ![](https://i.imgur.com/waxVImv.png)
 
 Roadmaps are being made interactive and have been moved to website.
