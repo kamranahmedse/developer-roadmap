@@ -88,17 +88,38 @@ export default function Thanks() {
                     src='/sponsors/studio3t.png'
                   />
                 </Box>
-                <Box as={Link} rel='sponsored' href='https://park.io' _hover={{ textDecoration: 'none' }} target='_blank'
-                     borderWidth={1}
-                     borderRadius='5px' p='10px 25px' bg='#3d157a' color='white'>
-                  <Text fontWeight={700} fontSize='55px'>park.io</Text>
-                </Box>
               </Stack>
             </Box>
 
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Monthly Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/little-huang'>little-huang</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/pathorman'>Patricio Silva</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/Luluutz'>Lulu</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/shedoks'>shedoks</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/yuriburger'>Yuri Burger</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/Stuart-cmd'>Stuart Bowles</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/danielgruesso'>Daniel Gruesso</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/megalith-elisity'>Megalith</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/andrew-werdna'>Andrew Brown</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/pluo'>Pluo Jobs</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/mrxinu'>Steve Klassen</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/alfredoparreiras'>Alfredo Parreira</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/timegated'>Daniel Beccaria</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/greg-s-miller'>Greg Miller</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
@@ -124,8 +145,6 @@ export default function Thanks() {
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://twitter.com/hassanabudu'>Hassan Abudu</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
-                                         href='https://github.com/Stuart-cmd'>Stuart Bowles</Link></ListItem>
-                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/josephjacks'>Joseph
                   Jacks</Link></ListItem>
               </UnorderedList>
@@ -134,6 +153,10 @@ export default function Thanks() {
             <Box mt='40px'>
               <Heading mb='15px' fontSize='25px' as='h2'>Past or One Time Sponsors</Heading>
               <UnorderedList>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/mvuljevas'>Mauricio Vuljevas</Link></ListItem>
+                <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
+                                         href='https://github.com/mikekornegay'>mikekornegay</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
                                          href='https://github.com/timaskwhy'>Tim Wong</Link></ListItem>
                 <ListItem mb='5px'><Link color='blue.500' target='_blank' fontWeight={500}
@@ -221,7 +244,6 @@ export default function Thanks() {
           </Box>
         </Container>
       </Box>
-
       <OpensourceBanner />
       <UpdatesBanner />
       <Footer />
