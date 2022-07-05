@@ -10,7 +10,7 @@ export const CustomAd = () => {
           >
             <img
               src='/fm-img.png'
-              alt='FM Logo'
+              alt='Custom Logo'
               height='100'
               width='130'
               style={{ maxWidth: '130px', border: 'none' }}
