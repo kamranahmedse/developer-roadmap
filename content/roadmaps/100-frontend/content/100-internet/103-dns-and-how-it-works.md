@@ -6,4 +6,5 @@ The Domain Name System (DNS) is the phonebook of the Internet. Humans access inf
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=Wj0od2ag5sk'>DNS and How does it Work?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=7lxgpKh_fRY'>DNS Records</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=e48AyJOA9W8'>When to add glue records to DNS settings</BadgeLink>
+BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=YV5tkQYcvfg'>DNS Records for Newbies - How To Manage Website Records</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Visit' href='https://messwithdns.net/'>Miss with DNS - DNS Playground</BadgeLink>
