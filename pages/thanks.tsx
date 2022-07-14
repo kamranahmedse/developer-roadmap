@@ -30,7 +30,7 @@ export default function Thanks() {
             <Flex alignItems='center'>
               <Box width='100%'>
                 <Heading mb='10px' fontWeight={700}>Thanks!</Heading>
-                <Text>The project has been made possible by the all the wonderful humans and companies supporting the
+                <Text>The project has been made possible by all the wonderful humans and companies supporting the
                   project on <Link
                     fontWeight={600} textDecoration='underline' href={siteConfig.url.sponsor} target='_blank'>GitHub
                     Sponsors</Link> and we are truly
