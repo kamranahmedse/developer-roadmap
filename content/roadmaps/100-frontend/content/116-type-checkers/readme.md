@@ -1,1 +1,2 @@
 # Type checkers
+Type checker helps developer write code with fewer bugs by adding types to your code, trying to catch type errors within your code, and then remove them during compile time. Flow and TypeScript are two popular static type checkers for JavaScript.
