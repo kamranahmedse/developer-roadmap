@@ -5,4 +5,4 @@ Docker is a platform for working with containerized applications. Among its feat
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://docs.docker.com/'>Docker Documentation</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/docker/'>What is Docker | AWS </BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/3c-iBn73dDE'>Docker Tutorial</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/fqMOX6JJhGo'>Docker Tutorial</BadgeLink>
