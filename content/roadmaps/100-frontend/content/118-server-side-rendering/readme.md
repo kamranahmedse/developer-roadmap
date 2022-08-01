@@ -1,9 +1,8 @@
-# Server side rendering 
+# Server-side rendering 
 
-Server side rendering refers to the process that the service side completes the HTML structure splicing of the page, sends it to the browser, and then binds the status and events for it to become a fully interactive page.
+Server-side rendering refers to the process that the service side completes the HTML structure splicing of the page, sends it to the browser, and then binds the status and events for it to become a fully interactive page.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
 
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://www.educative.io/answers/what-is-server-side-rendering'>what is server side rendering</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://medium.com/@mbleigh/when-should-i-server-side-render-c2a383ff2d0f'>When should I Server-Side Render?</BadgeLink>
