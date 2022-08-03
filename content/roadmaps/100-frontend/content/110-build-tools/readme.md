@@ -1,4 +1,4 @@
-# Build tools
+# Build Tools
 
 Task runners automatically execute commands and carry out processes behind the scenes. This helps automate your workflow by performing mundane, repetitive tasks that you would otherwise waste an egregious amount of time repeating yourself.
 
