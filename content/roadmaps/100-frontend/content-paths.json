@@ -130,7 +130,7 @@
   "mobile-applications:ionic": "/roadmaps/100-frontend/content/121-mobile-applications/103-ionic.md",
   "desktop-applications": "/roadmaps/100-frontend/content/122-desktop-applications/readme.md",
   "desktop-applications:electron": "/roadmaps/100-frontend/content/122-desktop-applications/100-electron.md",
-  "desktop-applications:carlo": "/roadmaps/100-frontend/content/122-desktop-applications/101-carlo.md",
+  "desktop-applications:tauri": "/roadmaps/100-frontend/content/122-desktop-applications/101-tauri.md",
   "desktop-applications:proton-native": "/roadmaps/100-frontend/content/122-desktop-applications/102-proton-native.md",
   "web-assembly": "/roadmaps/100-frontend/content/123-web-assembly.md"
 }

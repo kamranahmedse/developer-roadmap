@@ -1,1 +1,3 @@
-# Column databases
+# Column Databases
+
+A **<u>columnar database</u>** is a database management system (DBMS) that stores data in columns as opposed to rows. The main advantage of columnar databases over row-oriented ones is their **<u>faster performance</u>**; this is due in large part to them accessing less memory to output data. This column structure can store more data in a smaller amount of memory. And because the initial data retrieval is done on a column-by-column basis, only the columns that need to be used are retrieved. This grants columnar databases like **Cassandra DB** their ability to scale efficiently and handle large amounts of data.
