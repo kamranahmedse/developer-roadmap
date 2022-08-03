@@ -6,5 +6,6 @@ Normalization entails organizing the columns (attributes) and tables (relations)
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink colorScheme='blue' badgeText='Guru99' href='https://www.guru99.com/database-normalization.html'>What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF, BCNF Database with Example</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Wikipedia' href='https://en.wikipedia.org/wiki/Database_normalization'>Database normalization</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/database-normalization.html'>What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF, BCNF Database with Example</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Database_normalization'>Database normalization</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=xoTyrdT9SZI'>Basic Concept of Database Normalization</BadgeLink>
