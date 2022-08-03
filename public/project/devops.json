@@ -9400,132 +9400,6 @@
           }
         },
         {
-          "ID": "2069",
-          "typeID": "__group__",
-          "zOrder": "111",
-          "measuredW": "312",
-          "measuredH": "76",
-          "w": "312",
-          "h": "76",
-          "x": "503",
-          "y": "1048",
-          "properties": {
-            "controlName": "106-managing-servers:live-in-terminal:compiling-apps"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "302",
-                  "h": "76",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "10",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "__group__",
-                  "zOrder": "1",
-                  "measuredW": "264",
-                  "measuredH": "47",
-                  "w": "264",
-                  "h": "47",
-                  "x": "29",
-                  "y": "14",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "216",
-                          "measuredH": "25",
-                          "x": "22",
-                          "y": "0",
-                          "properties": {
-                            "text": "Compiling apps from source",
-                            "size": "17"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "264",
-                          "measuredH": "25",
-                          "x": "0",
-                          "y": "22",
-                          "properties": {
-                            "text": "(gcc, make and other related stuff)",
-                            "size": "17"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "__group__",
-                  "zOrder": "2",
-                  "measuredW": "24",
-                  "measuredH": "24",
-                  "w": "24",
-                  "h": "24",
-                  "x": "0",
-                  "y": "26",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Icon",
-                          "zOrder": "0",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16777215",
-                            "icon": {
-                              "ID": "circle",
-                              "size": "small"
-                            }
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Icon",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "10066329",
-                            "icon": {
-                              "ID": "check-circle",
-                              "size": "small"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "2070",
           "typeID": "__group__",
           "zOrder": "112",
@@ -15945,134 +15819,6 @@
           }
         },
         {
-          "ID": "2143",
-          "typeID": "__group__",
-          "zOrder": "224",
-          "measuredW": "255",
-          "measuredH": "47",
-          "w": "255",
-          "h": "47",
-          "x": "923",
-          "y": "2674",
-          "properties": {
-            "controlName": "109-availability"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "__group__",
-                  "zOrder": "0",
-                  "measuredW": "255",
-                  "measuredH": "47",
-                  "w": "255",
-                  "h": "47",
-                  "x": "0",
-                  "y": "0",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "255",
-                          "h": "47",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "80",
-                          "measuredH": "25",
-                          "x": "88",
-                          "y": "11",
-                          "properties": {
-                            "text": "Availability",
-                            "size": "17"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "2144",
-          "typeID": "__group__",
-          "zOrder": "226",
-          "measuredW": "255",
-          "measuredH": "47",
-          "w": "255",
-          "h": "47",
-          "x": "923",
-          "y": "2783",
-          "properties": {
-            "controlName": "111-design-and-implementation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "__group__",
-                  "zOrder": "0",
-                  "measuredW": "255",
-                  "measuredH": "47",
-                  "w": "255",
-                  "h": "47",
-                  "x": "0",
-                  "y": "0",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "255",
-                          "h": "47",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16770457"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "212",
-                          "measuredH": "25",
-                          "x": "22",
-                          "y": "11",
-                          "properties": {
-                            "text": "Design and Implementation",
-                            "size": "17"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "2145",
           "typeID": "__group__",
           "zOrder": "84",
@@ -17094,6 +16840,209 @@
                           "y": "0",
                           "properties": {
                             "color": "3700253",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2174",
+          "typeID": "__group__",
+          "zOrder": "224",
+          "measuredW": "255",
+          "measuredH": "47",
+          "w": "255",
+          "h": "47",
+          "x": "923",
+          "y": "2674",
+          "properties": {
+            "controlName": "109-availability"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "80",
+                  "measuredH": "25",
+                  "x": "88",
+                  "y": "11",
+                  "properties": {
+                    "text": "Availability",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2178",
+          "typeID": "__group__",
+          "zOrder": "226",
+          "measuredW": "255",
+          "measuredH": "47",
+          "w": "255",
+          "h": "47",
+          "x": "923",
+          "y": "2783",
+          "properties": {
+            "controlName": "111-design-and-implementation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "212",
+                  "measuredH": "25",
+                  "x": "22",
+                  "y": "11",
+                  "properties": {
+                    "text": "Design and Implementation",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2184",
+          "typeID": "__group__",
+          "zOrder": "111",
+          "measuredW": "312",
+          "measuredH": "76",
+          "w": "312",
+          "h": "76",
+          "x": "503",
+          "y": "1048",
+          "properties": {
+            "controlName": "106-managing-servers:live-in-terminal:compiling-apps"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "302",
+                  "h": "76",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "10",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "216",
+                  "measuredH": "25",
+                  "x": "51",
+                  "y": "14",
+                  "properties": {
+                    "text": "Compiling apps from source",
+                    "size": "17"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "264",
+                  "measuredH": "25",
+                  "x": "29",
+                  "y": "36",
+                  "properties": {
+                    "text": "(gcc, make and other related stuff)",
+                    "size": "17"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "26",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
                             "icon": {
                               "ID": "check-circle",
                               "size": "small"
