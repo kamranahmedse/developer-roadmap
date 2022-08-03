@@ -7038,7 +7038,7 @@
           "properties": {
             "bold": "true",
             "size": "15",
-            "text": "Startup Management (intid)"
+            "text": "Startup Management (initd)"
           },
           "typeID": "Label",
           "x": "636",
