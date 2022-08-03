@@ -141,6 +141,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/devops.pdf",
+    "contentPathsFilePath": "/roadmaps/102-devops/content-paths.json",
     "id": "devops",
     "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
