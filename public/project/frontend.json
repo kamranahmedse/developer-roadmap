@@ -8427,7 +8427,7 @@
           "x": "1155",
           "y": "1918",
           "properties": {
-            "controlName": "100-pick-a-framework:vue-js:vuex"
+            "controlName": "100-pick-a-framework:vue-js:pinia"
           },
           "children": {
             "controls": {
@@ -8457,7 +8457,7 @@
                   "y": "18",
                   "properties": {
                     "size": "17",
-                    "text": "VueX"
+                    "text": "Pinia"
                   }
                 },
                 {
