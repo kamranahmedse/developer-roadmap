@@ -1,4 +1,4 @@
-# Openid
+# OpenID
 
 OpenID is an open standard and decentralized authentication protocol promoted by the non-profit OpenID Foundation.
 
