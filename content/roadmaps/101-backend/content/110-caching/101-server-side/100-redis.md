@@ -5,3 +5,4 @@ Redis is an open source (BSD licensed), in-memory **data structure store** used 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://redis.io/'>Redis Website</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=G1rOthIU-uo'>Redis in 100 Seconds</BadgeLink>
