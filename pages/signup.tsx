@@ -1,20 +1,7 @@
 import React from 'react';
-import {
-  Box,
-  Container,
-  Heading,
-  Text,
-  SimpleGrid,
-  Input,
-  Button,
-  ListItem,
-  List,
-  ListIcon,
-  Link
-} from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Input, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import siteConfig from '../content/site.json';
@@ -91,15 +78,13 @@ export default function SignUp() {
       <Helmet title={'Sign Up: Be a part of the community'} />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
-          <SimpleGrid columns={[1, 1, 2]} spacing='15px' my={['30px', '30px', '80px']}>
+          <Box columns={1} maxWidth='400px' mx='auto' spacing='15px' my={['30px', '30px', '80px']}>
             <FreeSignUp />
-            <PaidSignUp />
-          </SimpleGrid>
+          </Box>
         </Container>
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

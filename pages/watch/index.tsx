@@ -1,7 +1,6 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { VideoGridItem } from '../../components/watch/video-grid-item';
 import { PageHeader } from '../../components/page-header';
@@ -44,7 +43,6 @@ export default function Watch(props: VideosProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

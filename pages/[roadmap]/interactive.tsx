@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
@@ -157,7 +156,6 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

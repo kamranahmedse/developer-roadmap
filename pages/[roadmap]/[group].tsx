@@ -1,17 +1,6 @@
-import {
-  Box,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Button,
-  Container,
-  Divider,
-  Link,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
@@ -114,7 +103,6 @@ export default function RoadmapGroup(props: RoadmapProps) {
       </Container>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );
