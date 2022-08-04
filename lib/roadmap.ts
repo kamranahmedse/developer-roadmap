@@ -14,6 +14,7 @@ export type RoadmapType = {
     name: string;
     url: string;
   };
+  type: "role" | "tool";
   featured: boolean;
   imageUrl?: string;
   jsonUrl?: string;

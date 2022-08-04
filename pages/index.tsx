@@ -3,9 +3,9 @@ import {
   Container,
   Heading,
   Link,
-  SimpleGrid,
+  SimpleGrid, Tag,
   Text,
-  useMediaQuery,
+  useMediaQuery
 } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { Footer } from '../components/footer';
@@ -55,29 +55,27 @@ export default function Home(props: HomeProps) {
               educational content to help guide the developers in picking up the
               path and guide their learnings.
             </Text>
-
-            <Text fontSize={['14px', '14px', '16px']}>
-              We also have a{' '}
-              <Link
-                textDecoration={'underline'}
-                href={siteConfig.url.youtube}
-                onClick={() =>
-                  event({
-                    category: 'Subscription',
-                    action: 'Clicked the YouTube link',
-                    label: 'YouTube link on home',
-                  })
-                }
-                target="_blank"
-                fontWeight={600}
-              >
-                YouTube channel
-              </Link>{' '}
-              which we hope you are going to love.
-            </Text>
           </Box>
-          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']}>
-            {roadmaps.map((roadmap: RoadmapType, counter: number) => (
+
+          <Tag bg='gray.400' mb={4}>Role Based Roadmaps</Tag>
+          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']} mb='40px'>
+            {roadmaps.filter(roadmap => roadmap.type === 'role').map((roadmap: RoadmapType, counter: number) => (
+              <HomeRoadmapItem
+                isUpcoming={roadmap.isUpcoming}
+                url={`/${roadmap.id}`}
+                key={roadmap.id}
+                colorIndex={counter}
+                title={roadmap.featuredTitle}
+                isCommunity={roadmap.isCommunity}
+                subtitle={roadmap.featuredDescription}
+              />
+            ))}
+          </SimpleGrid>
+
+          <Tag bg='gray.400' mb={4}>Tool Based Skill Trees</Tag>
+
+          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']} mb='30px'>
+            {roadmaps.filter(roadmap => roadmap.type === 'tool').map((roadmap: RoadmapType, counter: number) => (
               <HomeRoadmapItem
                 isUpcoming={roadmap.isUpcoming}
                 url={`/${roadmap.id}`}
