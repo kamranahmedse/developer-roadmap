@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
@@ -245,7 +244,6 @@ export default function Thanks() {
         </Container>
       </Box>
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );
