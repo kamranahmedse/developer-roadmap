@@ -12,3 +12,4 @@ After enough exposure and practice to these commands, it will become easier to u
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.learnenough.com/command-line-tutorial'>Command Line Tutorial</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.hostinger.com/tutorials/linux-commands'>34 Basic Linux Commands</BadgeLink>
 <BadgeLink colorScheme='purple' badgeText='Challenge' href='https://cmdchallenge.com/'>Commandline Challenge</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=ZtqBQ68cfJc'>The 50 Most Popular Linux & Terminal Commands (with timestamps)</BadgeLink>
