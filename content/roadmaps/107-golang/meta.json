@@ -29,6 +29,7 @@
   "title": "Go Developer",
   "description": "Step by step guide to becoming a Go developer in 2022",
   "featuredTitle": "Go",
+  "type": "tool",
   "featuredDescription": "Step by step guide to becoming a Go developer in 2022",
   "isTextHeavy": false,
   "isCommunity": false,

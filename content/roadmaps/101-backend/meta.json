@@ -31,6 +31,7 @@
   },
   "title": "Backend Developer",
   "description": "Step by step guide to becoming a modern backend developer in 2022",
+  "type": "role",
   "featuredTitle": "Backend",
   "featuredDescription": "Step by step guide to becoming a backend developer in 2022",
   "featured": true,

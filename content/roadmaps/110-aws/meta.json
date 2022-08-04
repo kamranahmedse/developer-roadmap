@@ -17,6 +17,7 @@
   "title": "AWS",
   "description": "Everything that is there to learn about AWS and the ecosystem in 2022.",
   "featuredTitle": "AWS",
+  "type": "tool",
   "featuredDescription": "Step by step guide to learn AWS in 2022",
   "isTextHeavy": false,
   "isCommunity": false,
