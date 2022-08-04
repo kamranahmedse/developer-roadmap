@@ -35,6 +35,7 @@
     "description": "Step by step guide to becoming a modern frontend developer in 2022",
     "featuredTitle": "Frontend",
     "featuredDescription": "Step by step guide to becoming a frontend developer in 2022",
+    "type": "role",
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -43,7 +44,7 @@
     "imageUrl": "/roadmaps/frontend.png",
     "jsonUrl": "/project/frontend.json",
     "resourcesPath": "/roadmaps/100-frontend/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/frontend-roadmap",
+    "pdfUrl": "/pdfs/frontend.pdf",
     "contentPathsFilePath": "/roadmaps/100-frontend/content-paths.json",
     "id": "frontend",
     "metaPath": "/roadmaps/100-frontend/meta.json",
@@ -82,6 +83,7 @@
     },
     "title": "Backend Developer",
     "description": "Step by step guide to becoming a modern backend developer in 2022",
+    "type": "role",
     "featuredTitle": "Backend",
     "featuredDescription": "Step by step guide to becoming a backend developer in 2022",
     "featured": true,
@@ -92,7 +94,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/backend-roadmap",
+    "pdfUrl": "/pdfs/backend.pdf",
     "contentPathsFilePath": "/roadmaps/101-backend/content-paths.json",
     "id": "backend",
     "metaPath": "/roadmaps/101-backend/meta.json",
@@ -126,6 +128,7 @@
     "title": "DevOps Roadmap",
     "description": "Step by step guide for DevOps, SRE or any other Operations Role in 2022",
     "featuredTitle": "DevOps",
+    "type": "role",
     "featuredDescription": "Step by step guide for DevOps or operations role in 2022",
     "featured": true,
     "imageUrl": "/roadmaps/devops.png",
@@ -140,7 +143,8 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap",
+    "pdfUrl": "/pdfs/devops.pdf",
+    "contentPathsFilePath": "/roadmaps/102-devops/content-paths.json",
     "id": "devops",
     "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
@@ -168,6 +172,7 @@
     "title": "React Developer",
     "description": "Everything that is there to learn about React and the ecosystem in 2022.",
     "featuredTitle": "React",
+    "type": "tool",
     "featuredDescription": "Step by step guide to become a React Developer in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
@@ -184,7 +189,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/react-roadmap",
+    "pdfUrl": "/pdfs/react.pdf",
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
@@ -210,6 +215,7 @@
     "title": "Angular Developer",
     "description": "Everything that is there to learn about Angular and the ecosystem in 2022.",
     "featuredTitle": "Angular",
+    "type": "tool",
     "featuredDescription": "Step by step guide to become a Angular Developer in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
@@ -226,7 +232,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/angular-roadmap",
+    "pdfUrl": "/pdfs/angular.pdf",
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false
@@ -252,6 +258,7 @@
     "title": "Android Developer",
     "description": "Step by step guide to becoming an Android developer in 2022",
     "featuredTitle": "Android",
+    "type": "role",
     "featuredDescription": "Step by step guide to becoming an Android Developer in 2022",
     "isTextHeavy": true,
     "isCommunity": false,
@@ -293,6 +300,7 @@
     "title": "Python Developer",
     "description": "Step by step guide to becoming a Python developer in 2022",
     "featuredTitle": "Python",
+    "type": "tool",
     "featuredDescription": "Step by step guide to becoming a Python Developer in 2022",
     "isTextHeavy": true,
     "isCommunity": false,
@@ -300,7 +308,7 @@
     "jsonUrl": "/project/python.json",
     "resourcesPath": "/roadmaps/106-python/resources.md",
     "landingPath": "/roadmaps/106-python/landscape.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/python-roadmap",
+    "pdfUrl": "/pdfs/python.pdf",
     "versions": [
       "latest"
     ],
@@ -315,7 +323,7 @@
   {
     "seo": {
       "title": "Learn to become a Go developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for Go development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
         "guide to becoming a golang developer",
         "guide to becoming a go developer",
@@ -343,6 +351,7 @@
     "title": "Go Developer",
     "description": "Step by step guide to becoming a Go developer in 2022",
     "featuredTitle": "Go",
+    "type": "tool",
     "featuredDescription": "Step by step guide to becoming a Go developer in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
@@ -351,7 +360,7 @@
     "jsonUrl": "/project/golang.json",
     "landingPath": "/roadmaps/107-golang/landscape.md",
     "resourcesPath": "/roadmaps/107-golang/resources.md",
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/go-roadmap",
+    "pdfUrl": "/pdfs/go.pdf",
     "versions": [
       "latest",
       "2018",
@@ -367,7 +376,7 @@
   {
     "seo": {
       "title": "Learn to become a modern Java developer",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for java development. Learn to become a modern Java developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
         "guide to becoming a developer",
         "guide to becoming a java developer",
@@ -394,6 +403,7 @@
     "title": "Java Developer",
     "description": "Step by step guide to becoming a Java developer in 2022",
     "featuredTitle": "Java",
+    "type": "tool",
     "featuredDescription": "Step by step guide to becoming a Java Developer in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
@@ -411,7 +421,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "pdfUrl": "https://kamranahmedse.gumroad.com/l/java-roadmap",
+    "pdfUrl": "/pdfs/java.pdf",
     "id": "java",
     "metaPath": "/roadmaps/108-java/meta.json"
   },
@@ -443,6 +453,7 @@
     "title": "PostgreSQL DBA",
     "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022",
     "featuredTitle": "DBA",
+    "type": "role",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2022",
     "landingPath": "/roadmaps/109-postgresql-dba/landscape.md",
     "resourcesPath": "/roadmaps/109-postgresql-dba/resources.md",
@@ -478,6 +489,7 @@
     "title": "AWS",
     "description": "Everything that is there to learn about AWS and the ecosystem in 2022.",
     "featuredTitle": "AWS",
+    "type": "tool",
     "featuredDescription": "Step by step guide to learn AWS in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
@@ -519,6 +531,7 @@
     "title": "QA Engineer",
     "description": "Steps to follow in order to become a modern QA Engineer in 2022",
     "featuredTitle": "QA",
+    "type": "role",
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
     "isUpcoming": true,
     "featured": true,

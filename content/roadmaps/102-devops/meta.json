@@ -26,6 +26,7 @@
   "title": "DevOps Roadmap",
   "description": "Step by step guide for DevOps, SRE or any other Operations Role in 2022",
   "featuredTitle": "DevOps",
+  "type": "role",
   "featuredDescription": "Step by step guide for DevOps or operations role in 2022",
   "featured": true,
   "imageUrl": "/roadmaps/devops.png",
@@ -40,5 +41,6 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "https://kamranahmedse.gumroad.com/l/devops-roadmap"
+  "pdfUrl": "/pdfs/devops.pdf",
+  "contentPathsFilePath": "./content-paths.json"
 }

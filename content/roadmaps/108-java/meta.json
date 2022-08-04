@@ -1,7 +1,7 @@
 {
   "seo": {
     "title": "Learn to become a modern Java developer",
-    "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for java development. Learn to become a modern Java developer by following the steps, skills, resources and guides listed in this roadmap.",
     "keywords": [
       "guide to becoming a developer",
       "guide to becoming a java developer",
@@ -28,6 +28,7 @@
   "title": "Java Developer",
   "description": "Step by step guide to becoming a Java developer in 2022",
   "featuredTitle": "Java",
+  "type": "tool",
   "featuredDescription": "Step by step guide to becoming a Java Developer in 2022",
   "isTextHeavy": false,
   "isCommunity": false,
@@ -45,5 +46,5 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "https://kamranahmedse.gumroad.com/l/java-roadmap"
+  "pdfUrl": "/pdfs/java.pdf"
 }
