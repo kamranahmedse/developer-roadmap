@@ -21,8 +21,6 @@ function NavigationLinks() {
         <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
               href='/watch'>Videos</Link>
         <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/thanks'>Thanks</Link>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
               href='/about'>About</Link>
         <Link py='7px' _hover={{ color: 'white' }} target='_blank'
               href={siteConfig.url.youtube}>YouTube</Link>

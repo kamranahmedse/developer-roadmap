@@ -14,7 +14,6 @@ import {
 } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
@@ -30,7 +29,7 @@ export default function Thanks() {
             <Flex alignItems='center'>
               <Box width='100%'>
                 <Heading mb='10px' fontWeight={700}>Thanks!</Heading>
-                <Text>The project has been made possible by the all the wonderful humans and companies supporting the
+                <Text>The project has been made possible by all the wonderful humans and companies supporting the
                   project on <Link
                     fontWeight={600} textDecoration='underline' href={siteConfig.url.sponsor} target='_blank'>GitHub
                     Sponsors</Link> and we are truly
@@ -245,7 +244,6 @@ export default function Thanks() {
         </Container>
       </Box>
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

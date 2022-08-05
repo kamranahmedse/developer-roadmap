@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
@@ -122,6 +121,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['870px', '1130px', '1900px', '2500px', '2520px', '2520px'];
   }
 
+  if (roadmap.id === 'devops') {
+    minHeight = ['870px', '1920px', '2505px', '2591px', '2591px', '2591px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
@@ -153,7 +156,6 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

@@ -9,3 +9,4 @@ Performance plays a significant role in the success of any online venture, as hi
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/introduction-to-chrome-lighthouse/'>Introduction to Chrome Lighthouse</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/ilt/pwa/lighthouse-pwa-analysis-tool'>Lighthouse PWA Analysis Tool</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=egmwY9n6qWY'>PWA Tutorial: Lighthouse Audit</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.chrome.com/docs/devtools/speed/get-started/'>Lighthouse: Optimize website speed</BadgeLink>
