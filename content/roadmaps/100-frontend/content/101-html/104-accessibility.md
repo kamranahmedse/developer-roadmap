@@ -1,4 +1,5 @@
 # Accessibility
+
 Web accessibility means that websites, tools, and technologies are designed and developed in such a way that people with disabilities can use them easily.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
@@ -6,3 +7,5 @@ Web accessibility means that websites, tools, and technologies are designed and 
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.w3schools.com/accessibility/index.php'>Accessibility Tutorial
 </BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.smashingmagazine.com/2021/03/complete-guide-accessible-front-end-components/'>A Complete Guide To Accessible Front-End Components</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Web/Accessibility'>Accessibility guides by MDN</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://web.dev/accessible'>Accessible to all by web.dev</BadgeLink>
