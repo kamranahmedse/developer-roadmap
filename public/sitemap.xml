@@ -31,6 +31,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/vue</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-08-08T14:27:17.274Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-08-04T11:37:35.837Z</lastmod>
@@ -58,12 +64,6 @@
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-08-04T11:37:35.848Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/aws</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2022-08-04T11:37:35.842Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
