@@ -2350,7 +2350,7 @@
           "properties": {
             "bold": "true",
             "size": "14",
-            "text": "nmap, tcpdump, ping, mtr, traceroute, dig"
+            "text": "nmap, tcpdump, ping, mtr, traceroute, dig, ngrep"
           },
           "typeID": "Label",
           "x": "653",
