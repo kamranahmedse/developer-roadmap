@@ -287,6 +287,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/vue.pdf",
+    "contentPathsFilePath": "/roadmaps/105-vue/content-paths.json",
     "id": "vue",
     "metaPath": "/roadmaps/105-vue/meta.json",
     "isUpcoming": false

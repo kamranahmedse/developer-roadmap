@@ -1,0 +1,1 @@
+# Attribute inheritance
