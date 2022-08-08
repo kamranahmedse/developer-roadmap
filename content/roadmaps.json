@@ -275,7 +275,6 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/vue.json",
-    "landingPath": "/roadmaps/105-vue/landscape.md",
     "resourcesPath": "/roadmaps/105-vue/resources.md",
     "versions": [
       "latest",

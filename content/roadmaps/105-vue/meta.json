@@ -36,7 +36,6 @@
   "isCommunity": false,
   "featured": true,
   "jsonUrl": "/project/vue.json",
-  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "versions": [
     "latest",
