@@ -34,6 +34,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [DevOps Roadmap](https://roadmap.sh/devops)
 - [React Roadmap](https://roadmap.sh/react)
+- [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Android Roadmap](https://roadmap.sh/android)
 - [Python Roadmap](https://roadmap.sh/python)
