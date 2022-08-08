@@ -125,6 +125,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['870px', '1920px', '2505px', '2591px', '2591px', '2591px'];
   }
 
+  if (roadmap.id === 'vue') {
+    minHeight = ['600px', '820px', '1340px', '1680px', '1750px', '1750px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
