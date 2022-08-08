@@ -239,6 +239,60 @@
   },
   {
     "seo": {
+      "title": "Vue Developer Roadmap: Learn to become a Vue developer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for vue development. Learn to become a modern Vue developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a vue developer",
+        "guide to becoming a vue.js developer",
+        "vue developer roadmap",
+        "vue.js developer roadmap",
+        "vue roadmap",
+        "vue.js roadmap",
+        "become vue developer",
+        "become vue.js developer",
+        "vue developer skills",
+        "vue.js developer skills",
+        "vue skills test",
+        "vue.js skills test",
+        "skills for vue development",
+        "skills for vue.js development",
+        "learn vue development",
+        "learn vue.js development",
+        "what is vue",
+        "what is vue.js",
+        "vue quiz",
+        "vue.js quiz",
+        "vue interview questions",
+        "vue.js interview questions"
+      ]
+    },
+    "title": "Vue Developer",
+    "description": "Everything that is there to learn about Vue and the ecosystem in 2022.",
+    "featuredTitle": "Vue",
+    "type": "tool",
+    "featuredDescription": "Step by step guide to become a Vue Developer in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "featured": true,
+    "jsonUrl": "/project/vue.json",
+    "landingPath": "/roadmaps/105-vue/landscape.md",
+    "resourcesPath": "/roadmaps/105-vue/resources.md",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "pdfUrl": "/pdfs/vue.pdf",
+    "id": "vue",
+    "metaPath": "/roadmaps/105-vue/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
       "title": "Android Developer Roadmap: Learn to become an Android developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -264,8 +318,8 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/android.json",
-    "landingPath": "/roadmaps/105-android/landscape.md",
-    "resourcesPath": "/roadmaps/105-android/resources.md",
+    "landingPath": "/roadmaps/106-android/landscape.md",
+    "resourcesPath": "/roadmaps/106-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -276,7 +330,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "android",
-    "metaPath": "/roadmaps/105-android/meta.json",
+    "metaPath": "/roadmaps/106-android/meta.json",
     "isUpcoming": false
   },
   {
@@ -306,8 +360,8 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/python.json",
-    "resourcesPath": "/roadmaps/106-python/resources.md",
-    "landingPath": "/roadmaps/106-python/landscape.md",
+    "resourcesPath": "/roadmaps/107-python/resources.md",
+    "landingPath": "/roadmaps/107-python/landscape.md",
     "pdfUrl": "/pdfs/python.pdf",
     "versions": [
       "latest"
@@ -317,7 +371,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "python",
-    "metaPath": "/roadmaps/106-python/meta.json",
+    "metaPath": "/roadmaps/107-python/meta.json",
     "isUpcoming": false
   },
   {
@@ -358,8 +412,8 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/golang.json",
-    "landingPath": "/roadmaps/107-golang/landscape.md",
-    "resourcesPath": "/roadmaps/107-golang/resources.md",
+    "landingPath": "/roadmaps/108-golang/landscape.md",
+    "resourcesPath": "/roadmaps/108-golang/resources.md",
     "pdfUrl": "/pdfs/go.pdf",
     "versions": [
       "latest",
@@ -371,7 +425,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "golang",
-    "metaPath": "/roadmaps/107-golang/meta.json"
+    "metaPath": "/roadmaps/108-golang/meta.json"
   },
   {
     "seo": {
@@ -410,8 +464,8 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/java.json",
-    "landingPath": "/roadmaps/108-java/landscape.md",
-    "resourcesPath": "/roadmaps/108-java/resources.md",
+    "landingPath": "/roadmaps/109-java/landscape.md",
+    "resourcesPath": "/roadmaps/109-java/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -423,7 +477,7 @@
     },
     "pdfUrl": "/pdfs/java.pdf",
     "id": "java",
-    "metaPath": "/roadmaps/108-java/meta.json"
+    "metaPath": "/roadmaps/109-java/meta.json"
   },
   {
     "seo": {
@@ -455,8 +509,8 @@
     "featuredTitle": "DBA",
     "type": "role",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2022",
-    "landingPath": "/roadmaps/109-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/109-postgresql-dba/resources.md",
+    "landingPath": "/roadmaps/110-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/110-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -467,47 +521,8 @@
     "detailed": false,
     "versions": [],
     "id": "postgresql-dba",
-    "metaPath": "/roadmaps/109-postgresql-dba/meta.json",
+    "metaPath": "/roadmaps/110-postgresql-dba/meta.json",
     "isUpcoming": false
-  },
-  {
-    "seo": {
-      "title": "AWS Roadmap: Learn to use AWS",
-      "description": "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
-      "keywords": [
-        "guide to aws",
-        "aws roadmap",
-        "aws skills",
-        "aws skills test",
-        "skills for aws",
-        "cloud development",
-        "what is aws",
-        "aws quiz",
-        "aws interview questions"
-      ]
-    },
-    "title": "AWS",
-    "description": "Everything that is there to learn about AWS and the ecosystem in 2022.",
-    "featuredTitle": "AWS",
-    "type": "tool",
-    "featuredDescription": "Step by step guide to learn AWS in 2022",
-    "isTextHeavy": false,
-    "isCommunity": false,
-    "isUpcoming": true,
-    "featured": true,
-    "landingPath": "/roadmaps/110-aws/landscape.md",
-    "resourcesPath": "/roadmaps/110-aws/resources.md",
-    "versions": [
-      "latest",
-      "2018",
-      "2017"
-    ],
-    "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
-    },
-    "id": "aws",
-    "metaPath": "/roadmaps/110-aws/meta.json"
   },
   {
     "seo": {
@@ -535,13 +550,13 @@
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
     "isUpcoming": true,
     "featured": true,
-    "landingPath": "/roadmaps/111-qa/landscape.md",
-    "resourcesPath": "/roadmaps/111-qa/resources.md",
+    "landingPath": "/roadmaps/112-qa/landscape.md",
+    "resourcesPath": "/roadmaps/112-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
     "id": "qa",
-    "metaPath": "/roadmaps/111-qa/meta.json"
+    "metaPath": "/roadmaps/112-qa/meta.json"
   }
 ]
