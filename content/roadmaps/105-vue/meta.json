@@ -47,5 +47,6 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "/pdfs/vue.pdf"
+  "pdfUrl": "/pdfs/vue.pdf",
+  "contentPathsFilePath": "./content-paths.json"
 }
