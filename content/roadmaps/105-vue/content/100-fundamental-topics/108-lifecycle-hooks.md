@@ -4,3 +4,4 @@ Each Vue component instance goes through a series of initialization steps when i
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://vuejs.org/guide/essentials/lifecycle.html'>Life Cycle Hooks</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://dev.to/amolikvivian/the-lifecycles-of-vue-js-lhh'>The Lifecycles of Vue.js</BadgeLink>
