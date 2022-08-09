@@ -1,4 +1,4 @@
-# Vue cli
+# Vue CLI
 
 Vue CLI is a full system for rapid Vue.js development, providing:
 
