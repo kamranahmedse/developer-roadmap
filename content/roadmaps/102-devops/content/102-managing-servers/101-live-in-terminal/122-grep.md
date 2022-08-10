@@ -9,5 +9,5 @@ The grep command (**g**lobal search for **r**egular **e**xpression and **p**rint
 e.g. *$ grep "search-regex" file-1.txt*
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/grep-command-in-unixlinux/'>What is Grep with examples</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/grep-command-in-unixlinux/'>What is Grep? with examples</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Manual' href='https://www.gnu.org/software/grep/manual/grep.html'>Detailed Manual</BadgeLink>
