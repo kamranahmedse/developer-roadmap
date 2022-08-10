@@ -2,7 +2,7 @@
 
 The grep command (**g**lobal search for **r**egular **e**xpression and **p**rint out) searches file(s) for a particular pattern of characters, and displays all lines that contain that pattern. It can be used with other commands like *'ps'* making it more useful.
 
-**Syntex**:
+**Syntax**:
 
 `$ grep [options] pattern [files]`
 
