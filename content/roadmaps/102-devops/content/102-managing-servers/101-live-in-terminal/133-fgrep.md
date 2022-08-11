@@ -5,7 +5,7 @@ It works the same way as `$ grep -F` command.
 
 It has the following syntax:
 
-`$  fgrep [options] [string] [files]` e.g. `$ egrep "search-string" file.txt`
+`$  fgrep [options] [string] [files]` e.g. `$ fgrep "search-string" file.txt`
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/fgrep-command-in-linux-with-examples/'>Fgrep command with examples</BadgeLink>
