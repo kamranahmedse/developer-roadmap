@@ -177,7 +177,6 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "landingPath": "/roadmaps/103-react/landscape.md",
     "resourcesPath": "/roadmaps/103-react/resources.md",
     "jsonUrl": "/project/react.json",
     "versions": [
@@ -190,6 +189,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/react.pdf",
+    "contentPathsFilePath": "/roadmaps/103-react/content-paths.json",
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
