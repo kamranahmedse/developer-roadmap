@@ -1,12 +1,10 @@
-# Grep
+# grep
 
-The grep command (**g**lobal search for **r**egular **e**xpression and **p**rint out) searches file(s) for a particular pattern of characters, and displays all lines that contain that pattern. It can be used with other commands like *'ps'* making it more useful.
+The `grep` command (**g**lobal search for **r**egular **e**xpression and **p**rint out) searches file(s) for a particular pattern of characters, and displays all lines that contain that pattern. It can be used with other commands like `ps` making it more useful.
 
-**Syntax**:
+It has the following syntax:
 
-`$ grep [options] pattern [files]`
-
-e.g. *$ grep "search-regex" file-1.txt*
+`$ grep [options] pattern [files]` e.g. `$ grep "search-regex" file-1.txt`
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/grep-command-in-unixlinux/'>What is Grep? with examples</BadgeLink>
