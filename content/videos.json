@@ -1,5 +1,16 @@
 [
   {
+    "id": "tree-data-structure",
+    "title": "Tree Data Structure",
+    "description": "Learn everything you need to know about the tree data structure",
+    "isPro": false,
+    "youtubeLink": "https://www.youtube.com/watch?v=S2W3SXGPVyU",
+    "authorUsername": "kamranahmedse",
+    "duration": "8 minutes",
+    "updatedAt": "2022-08-11T19:59:14.191Z",
+    "createdAt": "2022-08-11T19:59:14.191Z"
+  },
+  {
     "id": "hash-table-data-structure",
     "title": "Hash Table Data Structure",
     "description": "Learn everything you need to know about the hash table data structure",
