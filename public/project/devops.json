@@ -16629,9 +16629,9 @@
           "ID": "2537",
           "typeID": "__group__",
           "zOrder": "170",
-          "measuredW": "116",
+          "measuredW": "94",
           "measuredH": "40",
-          "w": "116",
+          "w": "94",
           "h": "40",
           "x": "875",
           "y": "1442",
@@ -16645,7 +16645,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "116",
+                  "w": "94",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -16661,7 +16661,7 @@
                   "zOrder": "1",
                   "measuredW": "68",
                   "measuredH": "24",
-                  "x": "23",
+                  "x": "12",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -16676,11 +16676,11 @@
           "ID": "2538",
           "typeID": "__group__",
           "zOrder": "171",
-          "measuredW": "102",
+          "measuredW": "82",
           "measuredH": "40",
-          "w": "102",
+          "w": "82",
           "h": "40",
-          "x": "998",
+          "x": "976",
           "y": "1442",
           "properties": {
             "controlName": "118-managing-servers:live-in-terminal:iptables"
@@ -16692,7 +16692,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "102",
+                  "w": "82",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -16708,7 +16708,7 @@
                   "zOrder": "1",
                   "measuredW": "57",
                   "measuredH": "24",
-                  "x": "22",
+                  "x": "12",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -16723,11 +16723,11 @@
           "ID": "2539",
           "typeID": "__group__",
           "zOrder": "169",
-          "measuredW": "73",
+          "measuredW": "53",
           "measuredH": "40",
-          "w": "73",
+          "w": "53",
           "h": "40",
-          "x": "1107",
+          "x": "1064",
           "y": "1442",
           "properties": {
             "controlName": "119-managing-servers:live-in-terminal:dig"
@@ -16739,7 +16739,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "73",
+                  "w": "53",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -16755,7 +16755,7 @@
                   "zOrder": "1",
                   "measuredW": "23",
                   "measuredH": "24",
-                  "x": "25",
+                  "x": "15",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -17903,6 +17903,53 @@
                   "properties": {
                     "size": "16",
                     "text": "du"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2609",
+          "typeID": "__group__",
+          "zOrder": "169",
+          "measuredW": "54",
+          "measuredH": "40",
+          "w": "54",
+          "h": "40",
+          "x": "1124",
+          "y": "1442",
+          "properties": {
+            "controlName": "141-managing-servers:live-in-terminal:scp"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "54",
+                  "h": "40",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "23",
+                  "measuredH": "24",
+                  "x": "14",
+                  "y": "8",
+                  "properties": {
+                    "size": "16",
+                    "text": "scp"
                   }
                 }
               ]
