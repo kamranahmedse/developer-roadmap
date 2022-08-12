@@ -1,7 +1,7 @@
 # fgrep
+
 `fgrep` (**F**ixed **Grep**) command is used for searching fixed-character strings in a file.
-It treats meta-characters or regular expressions in search field as string. For searching any **direct string** or files having meta-characters, this is the version of grep which should be selected.
-It works the same way as `$ grep -F` command.
+It treats meta-characters or regular expressions in the search field as strings. For searching any **direct string** or files having meta-characters, this is the version of grep which should be selected. It works the same way as `$ grep -F` command.
 
 It has the following syntax:
 
