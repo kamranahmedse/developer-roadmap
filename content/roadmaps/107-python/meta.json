@@ -26,7 +26,6 @@
   "featured": true,
   "jsonUrl": "/project/python.json",
   "resourcesPath": "./resources.md",
-  "landingPath": "./landscape.md",
   "pdfUrl": "/pdfs/python.pdf",
   "versions": [
     "latest"
@@ -34,5 +33,6 @@
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
-  }
+  },
+  "contentPathsFilePath": "./content-paths.json"
 }

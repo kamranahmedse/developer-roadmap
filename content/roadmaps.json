@@ -361,7 +361,6 @@
     "featured": true,
     "jsonUrl": "/project/python.json",
     "resourcesPath": "/roadmaps/107-python/resources.md",
-    "landingPath": "/roadmaps/107-python/landscape.md",
     "pdfUrl": "/pdfs/python.pdf",
     "versions": [
       "latest"
@@ -370,6 +369,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
+    "contentPathsFilePath": "/roadmaps/107-python/content-paths.json",
     "id": "python",
     "metaPath": "/roadmaps/107-python/meta.json",
     "isUpcoming": false
