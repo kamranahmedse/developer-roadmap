@@ -2003,7 +2003,7 @@
           "x": "75",
           "y": "620",
           "properties": {
-            "controlName": "102-react-advanced-ecosystem:hooks:common-hooks"
+            "controlName": "102-react-advanced-topics:hooks:common-hooks"
           },
           "children": {
             "controls": {
@@ -3187,7 +3187,7 @@
           "x": "351",
           "y": "590",
           "properties": {
-            "controlName": "100-react-advanced-ecosystem:hooks"
+            "controlName": "100-react-advanced-topics:hooks"
           },
           "children": {
             "controls": {
@@ -3234,7 +3234,7 @@
           "x": "351",
           "y": "639",
           "properties": {
-            "controlName": "101-react-advanced-ecosystem:context"
+            "controlName": "101-react-advanced-topics:context"
           },
           "children": {
             "controls": {
@@ -3281,7 +3281,7 @@
           "x": "351",
           "y": "689",
           "properties": {
-            "controlName": "102-react-advanced-ecosystem:refs"
+            "controlName": "102-react-advanced-topics:refs"
           },
           "children": {
             "controls": {
@@ -3328,7 +3328,7 @@
           "x": "351",
           "y": "739",
           "properties": {
-            "controlName": "103-react-advanced-ecosystem:render-props"
+            "controlName": "103-react-advanced-topics:render-props"
           },
           "children": {
             "controls": {
@@ -3375,7 +3375,7 @@
           "x": "942",
           "y": "612",
           "properties": {
-            "controlName": "104-react-advanced-ecosystem:high-order-components"
+            "controlName": "104-react-advanced-topics:high-order-components"
           },
           "children": {
             "controls": {
@@ -3422,7 +3422,7 @@
           "x": "942",
           "y": "662",
           "properties": {
-            "controlName": "105-react-advanced-ecosystem:portals"
+            "controlName": "105-react-advanced-topics:portals"
           },
           "children": {
             "controls": {
@@ -3469,7 +3469,7 @@
           "x": "942",
           "y": "711",
           "properties": {
-            "controlName": "106-react-advanced-ecosystem:error-boundaries"
+            "controlName": "106-react-advanced-topics:error-boundaries"
           },
           "children": {
             "controls": {
@@ -3516,7 +3516,7 @@
           "x": "942",
           "y": "760",
           "properties": {
-            "controlName": "107-react-advanced-ecosystem:fiber-architecture"
+            "controlName": "107-react-advanced-topics:fiber-architecture"
           },
           "children": {
             "controls": {
@@ -3563,7 +3563,7 @@
           "x": "75",
           "y": "569",
           "properties": {
-            "controlName": "101-react-advanced-ecosystem:hooks:writing-your-own-hooks"
+            "controlName": "101-react-advanced-topics:hooks:writing-your-own-hooks"
           },
           "children": {
             "controls": {
