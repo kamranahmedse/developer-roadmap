@@ -662,12 +662,12 @@
           "ID": "3101",
           "typeID": "Arrow",
           "zOrder": "25",
-          "w": "205",
-          "h": "88",
+          "w": "173",
+          "h": "40",
           "measuredW": "150",
           "measuredH": "100",
           "x": "493",
-          "y": "757",
+          "y": "801",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -676,15 +676,15 @@
             "color": "10027263",
             "p0": {
               "x": 0,
-              "y": 84.5
+              "y": 40.5
             },
             "p1": {
-              "x": 0.6985268644291276,
-              "y": -0.23904197066138563
+              "x": 0.7256851508000509,
+              "y": -0.1070001928289757
             },
             "p2": {
-              "x": 203,
-              "y": 0
+              "x": 173.3481629632903,
+              "y": 0.4116069210118667
             }
           }
         },
@@ -1272,7 +1272,7 @@
         {
           "ID": "3160",
           "typeID": "Arrow",
-          "zOrder": "78",
+          "zOrder": "72",
           "w": "56",
           "h": "1",
           "measuredW": "150",
@@ -1302,21 +1302,21 @@
         {
           "ID": "3211",
           "typeID": "Canvas",
-          "zOrder": "102",
+          "zOrder": "96",
           "w": "350",
           "h": "141",
           "measuredW": "100",
           "measuredH": "70",
-          "x": "594",
+          "x": "684",
           "y": "171"
         },
         {
           "ID": "3212",
           "typeID": "Label",
-          "zOrder": "103",
+          "zOrder": "97",
           "measuredW": "314",
           "measuredH": "25",
-          "x": "608",
+          "x": "698",
           "y": "188",
           "properties": {
             "size": "17",
@@ -1326,10 +1326,10 @@
         {
           "ID": "3213",
           "typeID": "Label",
-          "zOrder": "104",
+          "zOrder": "98",
           "measuredW": "319",
           "measuredH": "25",
-          "x": "608",
+          "x": "698",
           "y": "216",
           "properties": {
             "size": "17",
@@ -1337,176 +1337,14 @@
           }
         },
         {
-          "ID": "3234",
-          "typeID": "Canvas",
-          "zOrder": "54",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "69",
-          "y": "545",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3235",
-          "typeID": "Label",
-          "zOrder": "55",
-          "measuredW": "168",
-          "measuredH": "24",
-          "x": "96",
-          "y": "554",
-          "properties": {
-            "size": "16",
-            "text": "Arrays and Linked Lists"
-          }
-        },
-        {
-          "ID": "3236",
-          "typeID": "Canvas",
-          "zOrder": "56",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "69",
-          "y": "591",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3237",
-          "typeID": "Label",
-          "zOrder": "57",
-          "measuredW": "195",
-          "measuredH": "24",
-          "x": "83",
-          "y": "599",
-          "properties": {
-            "size": "16",
-            "text": "Heaps, Stacks and Queues"
-          }
-        },
-        {
-          "ID": "3238",
-          "typeID": "Canvas",
-          "zOrder": "58",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "70",
-          "y": "637",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3239",
-          "typeID": "Label",
-          "zOrder": "59",
-          "measuredW": "89",
-          "measuredH": "24",
-          "x": "136",
-          "y": "646",
-          "properties": {
-            "size": "16",
-            "text": "Hash Tables"
-          }
-        },
-        {
-          "ID": "3240",
-          "typeID": "Canvas",
-          "zOrder": "60",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "688",
-          "y": "544",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3241",
-          "typeID": "Label",
-          "zOrder": "61",
-          "measuredW": "146",
-          "measuredH": "24",
-          "x": "726",
-          "y": "553",
-          "properties": {
-            "size": "16",
-            "text": "Binary Search Trees"
-          }
-        },
-        {
-          "ID": "3242",
-          "typeID": "Canvas",
-          "zOrder": "62",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "688",
-          "y": "590",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3243",
-          "typeID": "Label",
-          "zOrder": "63",
-          "measuredW": "74",
-          "measuredH": "24",
-          "x": "762",
-          "y": "599",
-          "properties": {
-            "size": "16",
-            "text": "Recursion"
-          }
-        },
-        {
-          "ID": "3244",
-          "typeID": "Canvas",
-          "zOrder": "64",
-          "w": "222",
-          "h": "42",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "688",
-          "y": "637",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "3245",
-          "typeID": "Label",
-          "zOrder": "65",
-          "measuredW": "132",
-          "measuredH": "24",
-          "x": "733",
-          "y": "646",
-          "properties": {
-            "size": "16",
-            "text": "Sorting Algorithms"
-          }
-        },
-        {
           "ID": "3246",
           "typeID": "__group__",
           "zOrder": "2",
-          "measuredW": "454",
+          "measuredW": "552",
           "measuredH": "90",
-          "w": "454",
+          "w": "552",
           "h": "90",
-          "x": "108",
+          "x": "40",
           "y": "183",
           "properties": {
             "controlName": "ext_link:roadmap.sh/backend"
@@ -1518,7 +1356,7 @@
                   "ID": "0",
                   "typeID": "Canvas",
                   "zOrder": "0",
-                  "w": "454",
+                  "w": "552",
                   "h": "90",
                   "measuredW": "100",
                   "measuredH": "70",
@@ -1531,7 +1369,7 @@
                   "zOrder": "1",
                   "measuredW": "384",
                   "measuredH": "28",
-                  "x": "35",
+                  "x": "84",
                   "y": "18",
                   "properties": {
                     "size": "20",
@@ -1544,7 +1382,7 @@
                   "zOrder": "2",
                   "measuredW": "153",
                   "measuredH": "24",
-                  "x": "150",
+                  "x": "199",
                   "y": "47",
                   "properties": {
                     "size": "16",
@@ -1559,12 +1397,12 @@
         {
           "ID": "3247",
           "typeID": "__group__",
-          "zOrder": "105",
+          "zOrder": "99",
           "measuredW": "320",
           "measuredH": "45",
           "w": "320",
           "h": "45",
-          "x": "609",
+          "x": "699",
           "y": "252",
           "properties": {
             "controlName": "ext_link:roadmap.sh"
@@ -1816,7 +1654,7 @@
         {
           "ID": "3251",
           "typeID": "__group__",
-          "zOrder": "66",
+          "zOrder": "60",
           "measuredW": "279",
           "measuredH": "43",
           "w": "279",
@@ -1863,7 +1701,7 @@
         {
           "ID": "3252",
           "typeID": "__group__",
-          "zOrder": "79",
+          "zOrder": "73",
           "measuredW": "279",
           "measuredH": "43",
           "w": "279",
@@ -1910,7 +1748,7 @@
         {
           "ID": "3253",
           "typeID": "__group__",
-          "zOrder": "81",
+          "zOrder": "75",
           "measuredW": "209",
           "measuredH": "43",
           "w": "209",
@@ -1957,7 +1795,7 @@
         {
           "ID": "3254",
           "typeID": "__group__",
-          "zOrder": "85",
+          "zOrder": "79",
           "measuredW": "240",
           "measuredH": "43",
           "w": "240",
@@ -2004,7 +1842,7 @@
         {
           "ID": "3255",
           "typeID": "__group__",
-          "zOrder": "87",
+          "zOrder": "81",
           "measuredW": "240",
           "measuredH": "43",
           "w": "240",
@@ -2051,7 +1889,7 @@
         {
           "ID": "3256",
           "typeID": "__group__",
-          "zOrder": "97",
+          "zOrder": "91",
           "measuredW": "240",
           "measuredH": "43",
           "w": "240",
@@ -2384,7 +2222,7 @@
         {
           "ID": "3263",
           "typeID": "__group__",
-          "zOrder": "67",
+          "zOrder": "61",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2431,7 +2269,7 @@
         {
           "ID": "3264",
           "typeID": "__group__",
-          "zOrder": "72",
+          "zOrder": "66",
           "measuredW": "223",
           "measuredH": "42",
           "w": "223",
@@ -2478,7 +2316,7 @@
         {
           "ID": "3265",
           "typeID": "__group__",
-          "zOrder": "71",
+          "zOrder": "65",
           "measuredW": "223",
           "measuredH": "42",
           "w": "223",
@@ -2525,7 +2363,7 @@
         {
           "ID": "3266",
           "typeID": "__group__",
-          "zOrder": "73",
+          "zOrder": "67",
           "measuredW": "146",
           "measuredH": "42",
           "w": "146",
@@ -2572,7 +2410,7 @@
         {
           "ID": "3267",
           "typeID": "__group__",
-          "zOrder": "77",
+          "zOrder": "71",
           "measuredW": "139",
           "measuredH": "42",
           "w": "139",
@@ -2619,7 +2457,7 @@
         {
           "ID": "3268",
           "typeID": "__group__",
-          "zOrder": "74",
+          "zOrder": "68",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -2666,7 +2504,7 @@
         {
           "ID": "3269",
           "typeID": "__group__",
-          "zOrder": "70",
+          "zOrder": "64",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2713,7 +2551,7 @@
         {
           "ID": "3270",
           "typeID": "__group__",
-          "zOrder": "69",
+          "zOrder": "63",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2761,7 +2599,7 @@
         {
           "ID": "3271",
           "typeID": "__group__",
-          "zOrder": "68",
+          "zOrder": "62",
           "measuredW": "169",
           "measuredH": "42",
           "w": "169",
@@ -2809,7 +2647,7 @@
         {
           "ID": "3272",
           "typeID": "__group__",
-          "zOrder": "75",
+          "zOrder": "69",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -2856,7 +2694,7 @@
         {
           "ID": "3273",
           "typeID": "__group__",
-          "zOrder": "76",
+          "zOrder": "70",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -2903,7 +2741,7 @@
         {
           "ID": "3274",
           "typeID": "__group__",
-          "zOrder": "80",
+          "zOrder": "74",
           "measuredW": "146",
           "measuredH": "42",
           "w": "146",
@@ -2950,7 +2788,7 @@
         {
           "ID": "3275",
           "typeID": "__group__",
-          "zOrder": "82",
+          "zOrder": "76",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -2997,7 +2835,7 @@
         {
           "ID": "3276",
           "typeID": "__group__",
-          "zOrder": "83",
+          "zOrder": "77",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -3044,7 +2882,7 @@
         {
           "ID": "3278",
           "typeID": "__group__",
-          "zOrder": "84",
+          "zOrder": "78",
           "measuredW": "136",
           "measuredH": "42",
           "w": "136",
@@ -3138,7 +2976,7 @@
         {
           "ID": "3280",
           "typeID": "__group__",
-          "zOrder": "86",
+          "zOrder": "80",
           "measuredW": "110",
           "measuredH": "42",
           "w": "110",
@@ -3185,7 +3023,7 @@
         {
           "ID": "3281",
           "typeID": "__group__",
-          "zOrder": "88",
+          "zOrder": "82",
           "measuredW": "237",
           "measuredH": "43",
           "w": "237",
@@ -3232,7 +3070,7 @@
         {
           "ID": "3282",
           "typeID": "__group__",
-          "zOrder": "92",
+          "zOrder": "86",
           "measuredW": "237",
           "measuredH": "43",
           "w": "237",
@@ -3279,7 +3117,7 @@
         {
           "ID": "3284",
           "typeID": "__group__",
-          "zOrder": "89",
+          "zOrder": "83",
           "measuredW": "76",
           "measuredH": "42",
           "w": "76",
@@ -3326,7 +3164,7 @@
         {
           "ID": "3285",
           "typeID": "__group__",
-          "zOrder": "90",
+          "zOrder": "84",
           "measuredW": "69",
           "measuredH": "42",
           "w": "69",
@@ -3373,7 +3211,7 @@
         {
           "ID": "3286",
           "typeID": "__group__",
-          "zOrder": "91",
+          "zOrder": "85",
           "measuredW": "86",
           "measuredH": "42",
           "w": "86",
@@ -3420,7 +3258,7 @@
         {
           "ID": "3287",
           "typeID": "__group__",
-          "zOrder": "93",
+          "zOrder": "87",
           "measuredW": "126",
           "measuredH": "42",
           "w": "126",
@@ -3467,7 +3305,7 @@
         {
           "ID": "3288",
           "typeID": "__group__",
-          "zOrder": "94",
+          "zOrder": "88",
           "measuredW": "105",
           "measuredH": "42",
           "w": "105",
@@ -3514,7 +3352,7 @@
         {
           "ID": "3289",
           "typeID": "__group__",
-          "zOrder": "95",
+          "zOrder": "89",
           "measuredW": "126",
           "measuredH": "42",
           "w": "126",
@@ -3561,7 +3399,7 @@
         {
           "ID": "3290",
           "typeID": "__group__",
-          "zOrder": "96",
+          "zOrder": "90",
           "measuredW": "105",
           "measuredH": "42",
           "w": "105",
@@ -3608,7 +3446,7 @@
         {
           "ID": "3291",
           "typeID": "__group__",
-          "zOrder": "98",
+          "zOrder": "92",
           "measuredW": "154",
           "measuredH": "42",
           "w": "154",
@@ -3655,7 +3493,7 @@
         {
           "ID": "3292",
           "typeID": "__group__",
-          "zOrder": "99",
+          "zOrder": "93",
           "measuredW": "154",
           "measuredH": "42",
           "w": "154",
@@ -3702,7 +3540,7 @@
         {
           "ID": "3293",
           "typeID": "__group__",
-          "zOrder": "100",
+          "zOrder": "94",
           "measuredW": "122",
           "measuredH": "42",
           "w": "122",
@@ -3749,7 +3587,7 @@
         {
           "ID": "3294",
           "typeID": "__group__",
-          "zOrder": "101",
+          "zOrder": "95",
           "measuredW": "122",
           "measuredH": "42",
           "w": "122",
@@ -3792,6 +3630,288 @@
               ]
             }
           }
+        },
+        {
+          "ID": "3295",
+          "typeID": "__group__",
+          "zOrder": "54",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "545",
+          "properties": {
+            "controlName": "100-data-structures-and-algorithms:arrays-linked-lists"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "168",
+                  "measuredH": "24",
+                  "x": "27",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Arrays and Linked Lists"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3296",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "69",
+          "y": "591",
+          "properties": {
+            "controlName": "101-data-structures-and-algorithms:heaps-stacks-queues"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "195",
+                  "measuredH": "24",
+                  "x": "14",
+                  "y": "8",
+                  "properties": {
+                    "size": "16",
+                    "text": "Heaps, Stacks and Queues"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3297",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "70",
+          "y": "637",
+          "properties": {
+            "controlName": "102-data-structures-and-algorithms:hash-tables"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "89",
+                  "measuredH": "24",
+                  "x": "66",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Hash Tables"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3298",
+          "typeID": "__group__",
+          "zOrder": "57",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "688",
+          "y": "544",
+          "properties": {
+            "controlName": "103-data-structures-and-algorithms:binary-search-trees"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "146",
+                  "measuredH": "24",
+                  "x": "38",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Binary Search Trees"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3299",
+          "typeID": "__group__",
+          "zOrder": "58",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "688",
+          "y": "590",
+          "properties": {
+            "controlName": "104-data-structures-and-algorithms:recursion"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "74",
+                  "measuredH": "24",
+                  "x": "74",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Recursion"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3300",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "222",
+          "measuredH": "42",
+          "w": "222",
+          "h": "42",
+          "x": "688",
+          "y": "637",
+          "properties": {
+            "controlName": "105-data-structures-and-algorithms:sorting-algorithms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "42",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "132",
+                  "measuredH": "24",
+                  "x": "45",
+                  "y": "9",
+                  "properties": {
+                    "size": "16",
+                    "text": "Sorting Algorithms"
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     },
@@ -3804,8 +3924,8 @@
     "branchID": "Master",
     "resourceID": "CCB6346D-253A-48EE-9AB5-68DBEF696597",
     "mockupH": "1241",
-    "mockupW": "883",
-    "measuredW": "944",
+    "mockupW": "994",
+    "measuredW": "1034",
     "measuredH": "1370",
     "version": "1.0"
   },
