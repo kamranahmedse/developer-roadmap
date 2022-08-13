@@ -49,7 +49,7 @@ export function LinksListItem(props: LinksListItemProps) {
         {icon}
         <Text maxWidth={'345px'} isTruncated as='span'>{title}</Text>
         {badgeText &&
-        <Badge pos='relative' top='1px' variant='subtle' colorScheme='purple' ml='10px'>{badgeText}</Badge>}
+        <Badge pos='relative' top='1px' variant='subtle' colorScheme='green' ml='10px'>{badgeText}</Badge>}
       </Flex>
       <Text d={[hideSubtitleOnMobile ? 'none' : 'inline', 'inline']} mt={['3px', 0]} as='span'
             fontSize={['11px', '11px', '12px']} color='gray.500'>{subtitle}</Text>

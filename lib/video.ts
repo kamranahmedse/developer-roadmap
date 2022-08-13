@@ -7,7 +7,7 @@ export type VideoType = {
   title: string;
   description: string;
   youtubeLink?: string;
-  isPro: boolean;
+  isNew: boolean;
   duration: string;
   createdAt: string;
   updatedAt: string;

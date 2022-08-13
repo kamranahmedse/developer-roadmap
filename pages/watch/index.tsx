@@ -33,9 +33,8 @@ export default function Watch(props: VideosProps) {
                 title={video.title}
                 subtitle={video.description}
                 date={video.formattedUpdatedAt!}
-                isNew={counter <= 1}
                 colorIndex={counter}
-                isPro={video.isPro}
+                isNew={video.isNew}
               />
             ))}
           </SimpleGrid>
