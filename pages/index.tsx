@@ -97,7 +97,7 @@ export default function Home(props: HomeProps) {
                 target={'_blank'}
                 key={video.id}
                 href={video.youtubeLink!}
-                badgeText={video.isPro ? 'PRO' : ''}
+                badgeText={video.isNew ? 'NEW' : ''}
                 hideSubtitleOnMobile
                 title={video.title}
                 subtitle={video.duration}
@@ -132,7 +132,7 @@ export default function Home(props: HomeProps) {
                 key={guide.id}
                 href={`/guides/${guide.id}`}
                 title={guide.title}
-                badgeText={guide.isPro ? 'PRO' : ''}
+                badgeText={guide.isNew ? 'NEW' : ''}
                 subtitle={guide.formattedUpdatedAt!}
               />
             ))}

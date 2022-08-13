@@ -52,7 +52,7 @@ export default function Guides(props: GuidesProps) {
                 href={`/guides/${oldGuide.id}`}
                 key={oldGuide.id}
                 title={oldGuide.title}
-                badgeText={oldGuide.isPro ? 'PRO' : ''}
+                badgeText={oldGuide.isNew ? 'NEW' : ''}
                 subtitle={oldGuide.formattedUpdatedAt!}
               />
             ))}
