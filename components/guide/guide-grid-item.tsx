@@ -21,7 +21,7 @@ export function GuideGridItem(props: GuideGridItemProps) {
     <Box _hover={{ textDecoration: 'none', transform: 'scale(1.02)' }} as={Link} href={href} shadow='xl' p='20px'
          rounded='10px' bg={bgColorList[colorIndex] ?? bgColorList[0]} flex={1}>
       <Text mb='10px' fontSize='13px' color='gray.400'>
-        {isNew && <Badge colorScheme={'yellow'} mr='10px'>New</Badge>}
+        {isNew && <Badge colorScheme={'green'} mr='10px'>New</Badge>}
         {date}
       </Text>
       <Heading color='white' mb={'6px'} fontSize='20px'>{title}</Heading>
