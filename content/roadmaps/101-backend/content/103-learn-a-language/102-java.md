@@ -1,3 +1,9 @@
+<DedicatedRoadmap
+  href='/java'
+  title='Java Roadmap'
+  description='Click to check the detailed Java Roadmap.'
+/>
+
 # Java
 
 Java is general-purpose language, primarily used for Internet-based applications.
