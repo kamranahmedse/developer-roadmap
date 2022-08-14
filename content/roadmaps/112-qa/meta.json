@@ -24,7 +24,6 @@
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
   "isUpcoming": true,
   "featured": true,
-  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {
     "name": "Anas Fitiani",
