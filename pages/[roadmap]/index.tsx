@@ -65,7 +65,7 @@ function UpcomingRoadmap(props: RoadmapProps) {
       <Flex flexDir='column' alignItems='center' borderWidth={1} rounded='lg' py={10} boxShadow='inner' px={5}>
         <BellIcon w='90px' h='90px' color='gray.200' mb={5} />
         <Heading mb={2} fontSize='2xl' >Upcoming Roadmap</Heading>
-        <Text fontSize='md' mb={4}>Please check back later or subscribe below.</Text>
+        <Text fontSize='sm' mb={4}>Please check back later or subscribe below.</Text>
 
         <form action={SIGNUP_FORM_ACTION} method='post'>
           <Input type='email' bg={'white'} size='lg' placeholder='Enter your email' mb={2} name={SIGNUP_EMAIL_INPUT_NAME} required />
