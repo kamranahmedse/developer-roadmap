@@ -11,6 +11,7 @@ import { BadgeLink } from './badge-link';
 import { Li, Ul } from './ul';
 import PremiumBlock from './premium-block';
 import { ResourceGroupTitle } from './resource-group-title';
+import { DedicatedRoadmap } from './dedicated-roadmap';
 
 const MdxComponents = {
   p: P,
@@ -18,6 +19,7 @@ const MdxComponents = {
   pre: Pre,
   blockquote: BlockQuote,
   a: EnrichedLink,
+  DedicatedRoadmap,
   table: Table,
   iframe: IFrame,
   img: Img,
