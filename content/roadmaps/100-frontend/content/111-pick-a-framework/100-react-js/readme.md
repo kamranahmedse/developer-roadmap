@@ -1,3 +1,9 @@
+<DedicatedRoadmap
+  href='/react'
+  title='React Roadmap'
+  description='Click to check the detailed React Roadmap.'
+/>
+
 # React
 
 React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.
