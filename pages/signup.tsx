@@ -7,7 +7,10 @@ import { CheckCircleIcon } from '@chakra-ui/icons';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
 
-function FreeSignUp() {
+export const SIGNUP_FORM_ACTION = 'https://www.getrevue.co/profile/roadmap/add_subscriber';
+export const SIGNUP_EMAIL_INPUT_NAME = 'member[email]';
+
+export function FreeSignUp() {
   return (
     <Box p='20px' rounded='5px' borderWidth={2}>
       <Box textAlign='left'>
@@ -15,11 +18,10 @@ function FreeSignUp() {
         <Text mb='14px' fontSize='14px' lineHeight='20px'>Enter your email below to get notified about the new
           roadmaps, guides and updates</Text>
 
-        <form action='https://www.getrevue.co/profile/roadmap/add_subscriber' method='post' target='_blank'>
+        <form action={SIGNUP_FORM_ACTION} method='post' target='_blank'>
           <Input size='sm' fontSize='15px' py='18px' rounded='4px' placeholder='Your email'
-                 borderWidth={2} mb={'10px'} name='member[email]' />
-          <Button type={'submit'} bg='gray.700' _hover={{ bg: 'black' }} fontWeight={500} color={'white'}
-                  w='100%'>Subscribe</Button>
+                 borderWidth={2} mb={'10px'} name={SIGNUP_EMAIL_INPUT_NAME} />
+          <Button type={'submit'} bg='gray.700' _hover={{ bg: 'black' }} fontWeight={500} color={'white'} w='100%'>Subscribe</Button>
         </form>
 
         <Text color='gray.500' fontSize='12px' mt='10px'>
