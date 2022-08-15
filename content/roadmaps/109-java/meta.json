@@ -35,7 +35,6 @@
   "isUpcoming": false,
   "featured": true,
   "jsonUrl": "/project/java.json",
-  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "versions": [
     "latest",
