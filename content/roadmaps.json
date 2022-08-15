@@ -475,6 +475,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/java.pdf",
+    "contentPathsFilePath": "/roadmaps/109-java/content-paths.json",
     "id": "java",
     "metaPath": "/roadmaps/109-java/meta.json"
   },
