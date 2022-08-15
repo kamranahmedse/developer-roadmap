@@ -464,7 +464,6 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/java.json",
-    "landingPath": "/roadmaps/109-java/landscape.md",
     "resourcesPath": "/roadmaps/109-java/resources.md",
     "versions": [
       "latest",
