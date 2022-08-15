@@ -1,6 +1,6 @@
 # Jaeger
 
-Jaeger is an open source, end-to-end distributed tracing system that able to monitor and troubleshoot transactions in complex distributed systems.
+Jaeger is an open source, end-to-end distributed tracing system that enables us to monitor and troubleshoot transactions in complex distributed systems.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='System Website' href='https://www.jaegertracing.io/'>Jaeger Website</BadgeLink>
