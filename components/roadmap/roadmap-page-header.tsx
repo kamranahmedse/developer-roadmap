@@ -98,7 +98,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
                 size="xs"
                 py="14px"
                 px="10px"
-                colorScheme="purple"
+                colorScheme="green"
                 leftIcon={<ChatIcon />}
                 _hover={{ textDecoration: 'none' }}
               >
