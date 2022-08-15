@@ -1,3 +1,4 @@
+import siteConfig from '../../content/site.json';
 import { isInteractiveRoadmap, RoadmapType } from '../../lib/roadmap';
 import { NewAlertBanner } from './new-alert-banner';
 import {
@@ -11,7 +12,7 @@ import {
   Stack,
   Text,
 } from '@chakra-ui/react';
-import { AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
+import { ChatIcon, AtSignIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
 
 type RoadmapPageHeaderType = {
@@ -41,7 +42,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         </Heading>
         <Text fontSize={['13px', '14px', '15px']}>{roadmap.description}</Text>
         <Flex justifyContent="space-between" alignItems={'center'} mt="20px">
-          <Stack isInline>
+          <Stack isInline flex={1}>
             <Button
               d={['flex', 'flex']}
               as={Link}
@@ -68,6 +69,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
                 py="14px"
                 px="10px"
                 leftIcon={<DownloadIcon />}
+                d={['none', 'flex']}
                 colorScheme="yellow"
                 variant="solid"
                 _hover={{ textDecoration: 'none' }}
@@ -88,6 +90,21 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             >
               Subscribe
             </Button>
+            <Box flex={1} justifyContent='flex-end' d='flex'>
+              <Button
+                as={Link}
+                href={`${siteConfig.url.issue}?title=[Suggestion] ${roadmap.title}`}
+                target='_blank'
+                size="xs"
+                py="14px"
+                px="10px"
+                colorScheme="purple"
+                leftIcon={<ChatIcon />}
+                _hover={{ textDecoration: 'none' }}
+              >
+                Suggest Changes
+              </Button>
+            </Box>
           </Stack>
         </Flex>
         {isInteractiveRoadmap(roadmap.id) && (
