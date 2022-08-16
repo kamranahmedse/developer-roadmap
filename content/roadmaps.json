@@ -412,7 +412,6 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/golang.json",
-    "landingPath": "/roadmaps/108-golang/landscape.md",
     "resourcesPath": "/roadmaps/108-golang/resources.md",
     "pdfUrl": "/pdfs/go.pdf",
     "versions": [
@@ -424,6 +423,7 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
+    "contentPathsFilePath": "/roadmaps/108-golang/content-paths.json",
     "id": "golang",
     "metaPath": "/roadmaps/108-golang/meta.json"
   },

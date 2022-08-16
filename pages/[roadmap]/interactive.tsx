@@ -137,6 +137,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['780px', '1120px', '1770px', '2235px', '2235px', '2235px'];
   }
 
+  if (roadmap.id === 'golang') {
+    minHeight = ['590px', '1201px', '1201px', '1625px', '1625px', '1625px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
