@@ -36,7 +36,6 @@
   "isUpcoming": false,
   "featured": true,
   "jsonUrl": "/project/golang.json",
-  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "pdfUrl": "/pdfs/go.pdf",
   "versions": [
@@ -47,5 +46,6 @@
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
-  }
+  },
+  "contentPathsFilePath": "./content-paths.json"
 }
