@@ -566,7 +566,6 @@
     "type": "role",
     "imageUrl": "/roadmaps/blockchain.png",
     "jsonUrl": "/project/blockchain.json",
-    "resourcesPath": "/roadmaps/112-blockchain/resources.md",
     "author": {
       "name": "Daniel Gruesso",
       "url": "https://twitter.com/danielgruesso"

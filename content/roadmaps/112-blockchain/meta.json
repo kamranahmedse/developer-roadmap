@@ -40,7 +40,6 @@
   "type": "role",
   "imageUrl": "/roadmaps/blockchain.png",
   "jsonUrl": "/project/blockchain.json",
-  "resourcesPath": "./resources.md",
   "author": {
     "name": "Daniel Gruesso",
     "url": "https://twitter.com/danielgruesso"
