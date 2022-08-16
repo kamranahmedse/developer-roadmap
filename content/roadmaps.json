@@ -526,6 +526,56 @@
   },
   {
     "seo": {
+      "title": "Blockchain Developer Roadmap: Learn to become a blockchain developer",
+      "description": "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.",
+      "keywords": [
+        "blockchain roadmap 2022",
+        "blockchain developer roadmap 2022",
+        "guide to becoming a blockchain developer",
+        "guide to becoming a blockchain developer",
+        "blockchain roadmap",
+        "blockchain developer",
+        "blockchain engineer",
+        "blockchain skills",
+        "blockchain development",
+        "javascript developer",
+        "blockchain development skills",
+        "blockchain development skills test",
+        "blockchain engineer roadmap",
+        "blockchain developer roadmap",
+        "become a blockchain developer",
+        "blockchain developer career path",
+        "javascript developer",
+        "modern javascript developer",
+        "node developer",
+        "skills for blockchain development",
+        "learn blockchain development",
+        "what is blockchain development",
+        "blockchain developer quiz",
+        "blockchain developer interview questions"
+      ]
+    },
+    "title": "Blockchain Developer",
+    "description": "Step by step guide to becoming a blockchain developer in 2022.",
+    "featuredTitle": "Blockchain",
+    "featuredDescription": "Step by step guide to becoming a blockchain developer in 2022",
+    "featured": true,
+    "type": "role",
+    "imageUrl": "/roadmaps/blockchain.png",
+    "jsonUrl": "/project/blockchain.json",
+    "resourcesPath": "/roadmaps/112-blockchain/resources.md",
+    "author": {
+      "name": "Daniel Gruesso",
+      "url": "https://twitter.com/danielgruesso"
+    },
+    "pdfUrl": "/pdfs/blockchain.pdf",
+    "contentPathsFilePath": "/roadmaps/112-blockchain/content-paths.json",
+    "id": "blockchain",
+    "metaPath": "/roadmaps/112-blockchain/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
       "title": "QA Roadmap: Learn to become a modern QA engineer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -550,12 +600,12 @@
     "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
     "isUpcoming": true,
     "featured": true,
-    "resourcesPath": "/roadmaps/112-qa/resources.md",
+    "resourcesPath": "/roadmaps/113-qa/resources.md",
     "author": {
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
     "id": "qa",
-    "metaPath": "/roadmaps/112-qa/meta.json"
+    "metaPath": "/roadmaps/113-qa/meta.json"
   }
 ]
