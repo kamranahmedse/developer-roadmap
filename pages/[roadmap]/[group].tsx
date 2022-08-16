@@ -27,11 +27,11 @@ function TextualContent(props: RoadmapProps) {
   const contentsPathsFilePath = roadmap.contentPathsFilePath.replace(/^\//, '');
   const contentPathMapping = require(`../../content/${contentsPathsFilePath}`);
 
+
   const contentFilePath = contentPathMapping[group] || '';
   const normalizedContentFilePath = contentFilePath.replace(/^\//, '');
 
-  const GroupContent =
-    require(`../../content/${normalizedContentFilePath}`).default;
+  const GroupContent = require(`../../content/${normalizedContentFilePath}`).default;
 
   return (
     <Box>
