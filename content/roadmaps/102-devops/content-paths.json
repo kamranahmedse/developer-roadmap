@@ -154,7 +154,7 @@
   "monitoring:application-monitoring:new-relic": "/roadmaps/102-devops/content/107-monitoring/101-application-monitoring/101-new-relic.md",
   "monitoring:application-monitoring:app-dynamics": "/roadmaps/102-devops/content/107-monitoring/101-application-monitoring/102-app-dynamics.md",
   "monitoring:application-monitoring:instana": "/roadmaps/102-devops/content/107-monitoring/101-application-monitoring/103-instana.md",
-  "monitoring:application-monitoring:open-tracing": "/roadmaps/102-devops/content/107-monitoring/101-application-monitoring/104-open-tracing.md",
+  "monitoring:application-monitoring:open-telemetry": "/roadmaps/102-devops/content/107-monitoring/101-application-monitoring/104-open-telemetry.md",
   "monitoring:logs-management": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/readme.md",
   "monitoring:logs-management:elastic-stack": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/100-elastic-stack.md",
   "monitoring:logs-management:graylog": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/101-graylog.md",
