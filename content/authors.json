@@ -39,5 +39,11 @@
     "name": "Alexey Lesovsky",
     "bio": "Linux system administrator and PostgreSQL DBA at DataEgret.",
     "picture": "/authors/lesovsky.jpeg"
+  },
+  {
+    "username": "danielgruesso",
+    "name": "Daniel Gruesso",
+    "bio": "Product manager working on blockchain and smart contracts developer tools",
+    "picture": "/authors/danielgruesso.jpg"
   }
 ]
