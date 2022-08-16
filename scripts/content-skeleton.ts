@@ -45,6 +45,7 @@ const roadmaps: Record<string, RoadmapType> = {
   react: require('../public/project/react.json'),
   vue: require('../public/project/vue.json'),
   angular: require('../public/project/angular.json'),
+  blockchain: require('../public/project/blockchain.json'),
 };
 
 if (!roadmapKey || !roadmaps[roadmapKey]) {
