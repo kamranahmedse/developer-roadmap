@@ -322,7 +322,6 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "resourcesPath": "/roadmaps/106-javascript/resources.md",
     "jsonUrl": "/project/javascript.json",
     "versions": [
       "latest",

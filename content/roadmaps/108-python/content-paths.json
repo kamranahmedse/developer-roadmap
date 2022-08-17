@@ -45,9 +45,9 @@
   "python-frameworks:asynchronous:aiohttp": "/roadmaps/108-python/content/106-python-frameworks/101-asynchronous/101-aiohttp.md",
   "python-frameworks:asynchronous:tornado": "/roadmaps/108-python/content/106-python-frameworks/101-asynchronous/102-tornado.md",
   "python-frameworks:asynchronous:sanic": "/roadmaps/108-python/content/106-python-frameworks/101-asynchronous/103-sanic.md",
-  "python-testing": "/roadmaps/108-python/content/108-python-testing/readme.md",
-  "python-testing:unittest-pyunit": "/roadmaps/108-python/content/108-python-testing/100-unittest-pyunit.md",
-  "python-testing:pytest": "/roadmaps/108-python/content/108-python-testing/101-pytest.md",
-  "python-testing:doctest": "/roadmaps/108-python/content/108-python-testing/102-doctest.md",
-  "python-testing:nose": "/roadmaps/108-python/content/108-python-testing/102-nose.md"
+  "python-testing": "/roadmaps/108-python/content/107-python-testing/readme.md",
+  "python-testing:unittest-pyunit": "/roadmaps/108-python/content/107-python-testing/100-unittest-pyunit.md",
+  "python-testing:pytest": "/roadmaps/108-python/content/107-python-testing/101-pytest.md",
+  "python-testing:doctest": "/roadmaps/108-python/content/107-python-testing/102-doctest.md",
+  "python-testing:nose": "/roadmaps/108-python/content/107-python-testing/102-nose.md"
 }

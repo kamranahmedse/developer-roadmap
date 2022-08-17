@@ -29,7 +29,6 @@
   "isTextHeavy": false,
   "isCommunity": false,
   "featured": true,
-  "resourcesPath": "./resources.md",
   "jsonUrl": "/project/javascript.json",
   "versions": [
     "latest",
