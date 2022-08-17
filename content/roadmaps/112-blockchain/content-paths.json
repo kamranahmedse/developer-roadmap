@@ -56,7 +56,7 @@
   "smart-contract-frameworks:hardhat": "/roadmaps/112-blockchain/content/104-smart-contract-frameworks/100-hardhat.md",
   "smart-contract-frameworks:brownie": "/roadmaps/112-blockchain/content/104-smart-contract-frameworks/101-brownie.md",
   "smart-contract-frameworks:truffle": "/roadmaps/112-blockchain/content/104-smart-contract-frameworks/102-truffle.md",
-  "smart-contract-frameworks:dapp-tools": "/roadmaps/112-blockchain/content/104-smart-contract-frameworks/103-dapp-tools.md",
+  "smart-contract-frameworks:dapp-tools": "/roadmaps/112-blockchain/content/104-smart-contract-frameworks/103-foundry.md",
   "blockchain-security": "/roadmaps/112-blockchain/content/105-blockchain-security/readme.md",
   "blockchain-security:practices": "/roadmaps/112-blockchain/content/105-blockchain-security/100-practices/readme.md",
   "blockchain-security:practices:fuzz-testing-and-static-analysis": "/roadmaps/112-blockchain/content/105-blockchain-security/100-practices/100-fuzz-testing-and-static-analysis.md",
