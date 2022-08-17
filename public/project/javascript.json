@@ -85,7 +85,7 @@
           "measuredW": "100",
           "measuredH": "70",
           "x": "894",
-          "y": "134"
+          "y": "154"
         },
         {
           "ID": "3199",
@@ -94,7 +94,7 @@
           "measuredW": "314",
           "measuredH": "25",
           "x": "908",
-          "y": "151",
+          "y": "171",
           "properties": {
             "size": "17",
             "text": "Find the detailed version of this roadmap"
@@ -107,7 +107,7 @@
           "measuredW": "319",
           "measuredH": "25",
           "x": "908",
-          "y": "179",
+          "y": "199",
           "properties": {
             "size": "17",
             "text": "along with resources and other roadmaps"
@@ -122,7 +122,7 @@
           "w": "320",
           "h": "45",
           "x": "909",
-          "y": "215",
+          "y": "235",
           "properties": {
             "controlName": "ext_link:roadmap.sh"
           },
@@ -253,12 +253,12 @@
           "ID": "3280",
           "typeID": "__group__",
           "zOrder": "135",
-          "measuredW": "272",
+          "measuredW": "491",
           "measuredH": "136",
-          "w": "272",
+          "w": "491",
           "h": "136",
-          "x": "165",
-          "y": "137",
+          "x": "76",
+          "y": "157",
           "children": {
             "controls": {
               "control": [
@@ -266,7 +266,7 @@
                   "ID": "0",
                   "typeID": "Canvas",
                   "zOrder": "0",
-                  "w": "272",
+                  "w": "491",
                   "h": "136",
                   "measuredW": "100",
                   "measuredH": "70",
@@ -277,39 +277,39 @@
                   "ID": "3",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "118",
+                  "measuredW": "244",
                   "measuredH": "24",
                   "x": "59",
                   "y": "21",
                   "properties": {
                     "size": "16",
-                    "text": "Beginner Topics"
+                    "text": "Beginner Topics / start with these"
                   }
                 },
                 {
                   "ID": "6",
                   "typeID": "Label",
                   "zOrder": "3",
-                  "measuredW": "122",
+                  "measuredW": "394",
                   "measuredH": "24",
                   "x": "60",
                   "y": "86",
                   "properties": {
                     "size": "16",
-                    "text": "Advanced Topics"
+                    "text": "Advanced Topics / pick these after intermediate topics"
                   }
                 },
                 {
                   "ID": "9",
                   "typeID": "Label",
                   "zOrder": "5",
-                  "measuredW": "144",
+                  "measuredW": "385",
                   "measuredH": "24",
                   "x": "59",
                   "y": "54",
                   "properties": {
                     "size": "16",
-                    "text": "Intermediate Topics"
+                    "text": "Intermediate Topics / pick them after beginner topics"
                   }
                 },
                 {
@@ -13556,8 +13556,8 @@
     },
     "branchID": "Master",
     "resourceID": "3DD51A3C-1F09-4BE6-B9FB-6875747EBA53",
-    "mockupH": "2948",
-    "mockupW": "1090",
+    "mockupH": "2928",
+    "mockupW": "1168",
     "measuredW": "1244",
     "measuredH": "3082",
     "version": "1.0"
