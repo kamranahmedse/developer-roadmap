@@ -3066,7 +3066,7 @@
           "x": "750",
           "y": "743",
           "properties": {
-            "controlName": "100-java-web-frameworks:sprint"
+            "controlName": "100-java-web-frameworks:spring"
           },
           "children": {
             "controls": {
@@ -3113,7 +3113,7 @@
           "x": "750",
           "y": "789",
           "properties": {
-            "controlName": "101-java-web-frameworks:sprint-boot"
+            "controlName": "101-java-web-frameworks:spring-boot"
           },
           "children": {
             "controls": {
