@@ -293,6 +293,53 @@
   },
   {
     "seo": {
+      "title": "JavaScript Developer Roadmap: Step by step guide to learn JavaScript",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "javascript guide 2022",
+        "learn javascript",
+        "step by step javascript guide",
+        "javascript roadmap 2022",
+        "javascript developer roadmap 2022",
+        "guide to becoming a javascript developer",
+        "javascript developer roadmap",
+        "javascript roadmap",
+        "become javascript developer",
+        "javascript developer skills",
+        "javascript skills test",
+        "skills for javascript development",
+        "learn javascript development",
+        "what is javascript",
+        "javascript quiz",
+        "javascript interview questions"
+      ]
+    },
+    "title": "JavaScript Roadmap",
+    "description": "Step by step guide to learn JavaScript in 2022",
+    "featuredTitle": "JavaScript",
+    "type": "tool",
+    "featuredDescription": "Step by step guide to learn JavaScript in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "featured": true,
+    "jsonUrl": "/project/javascript.json",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "pdfUrl": "/pdfs/javascript.pdf",
+    "contentPathsFilePath": "/roadmaps/106-javascript/content-paths.json",
+    "id": "javascript",
+    "metaPath": "/roadmaps/106-javascript/meta.json",
+    "isUpcoming": false
+  },
+  {
+    "seo": {
       "title": "Android Developer Roadmap: Learn to become an Android developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for android development. Learn to become a modern Android developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -318,8 +365,8 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/android.json",
-    "landingPath": "/roadmaps/106-android/landscape.md",
-    "resourcesPath": "/roadmaps/106-android/resources.md",
+    "landingPath": "/roadmaps/107-android/landscape.md",
+    "resourcesPath": "/roadmaps/107-android/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -330,7 +377,7 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "id": "android",
-    "metaPath": "/roadmaps/106-android/meta.json",
+    "metaPath": "/roadmaps/107-android/meta.json",
     "isUpcoming": false
   },
   {
@@ -360,7 +407,7 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/python.json",
-    "resourcesPath": "/roadmaps/107-python/resources.md",
+    "resourcesPath": "/roadmaps/108-python/resources.md",
     "pdfUrl": "/pdfs/python.pdf",
     "versions": [
       "latest"
@@ -369,9 +416,9 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contentPathsFilePath": "/roadmaps/107-python/content-paths.json",
+    "contentPathsFilePath": "/roadmaps/108-python/content-paths.json",
     "id": "python",
-    "metaPath": "/roadmaps/107-python/meta.json",
+    "metaPath": "/roadmaps/108-python/meta.json",
     "isUpcoming": false
   },
   {
@@ -412,7 +459,7 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/golang.json",
-    "resourcesPath": "/roadmaps/108-golang/resources.md",
+    "resourcesPath": "/roadmaps/109-golang/resources.md",
     "pdfUrl": "/pdfs/go.pdf",
     "versions": [
       "latest",
@@ -423,9 +470,9 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
-    "contentPathsFilePath": "/roadmaps/108-golang/content-paths.json",
+    "contentPathsFilePath": "/roadmaps/109-golang/content-paths.json",
     "id": "golang",
-    "metaPath": "/roadmaps/108-golang/meta.json"
+    "metaPath": "/roadmaps/109-golang/meta.json"
   },
   {
     "seo": {
@@ -464,7 +511,7 @@
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/java.json",
-    "resourcesPath": "/roadmaps/109-java/resources.md",
+    "resourcesPath": "/roadmaps/110-java/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -475,9 +522,9 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/java.pdf",
-    "contentPathsFilePath": "/roadmaps/109-java/content-paths.json",
+    "contentPathsFilePath": "/roadmaps/110-java/content-paths.json",
     "id": "java",
-    "metaPath": "/roadmaps/109-java/meta.json"
+    "metaPath": "/roadmaps/110-java/meta.json"
   },
   {
     "seo": {
@@ -509,8 +556,8 @@
     "featuredTitle": "DBA",
     "type": "role",
     "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2022",
-    "landingPath": "/roadmaps/110-postgresql-dba/landscape.md",
-    "resourcesPath": "/roadmaps/110-postgresql-dba/resources.md",
+    "landingPath": "/roadmaps/111-postgresql-dba/landscape.md",
+    "resourcesPath": "/roadmaps/111-postgresql-dba/resources.md",
     "author": {
       "name": "Alexey Lesovsky",
       "url": "https://github.com/lesovsky"
@@ -521,7 +568,7 @@
     "detailed": false,
     "versions": [],
     "id": "postgresql-dba",
-    "metaPath": "/roadmaps/110-postgresql-dba/meta.json",
+    "metaPath": "/roadmaps/111-postgresql-dba/meta.json",
     "isUpcoming": false
   },
   {

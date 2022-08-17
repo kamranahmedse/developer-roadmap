@@ -1,0 +1,44 @@
+{
+  "seo": {
+    "title": "JavaScript Developer Roadmap: Step by step guide to learn JavaScript",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "javascript guide 2022",
+      "learn javascript",
+      "step by step javascript guide",
+      "javascript roadmap 2022",
+      "javascript developer roadmap 2022",
+      "guide to becoming a javascript developer",
+      "javascript developer roadmap",
+      "javascript roadmap",
+      "become javascript developer",
+      "javascript developer skills",
+      "javascript skills test",
+      "skills for javascript development",
+      "learn javascript development",
+      "what is javascript",
+      "javascript quiz",
+      "javascript interview questions"
+    ]
+  },
+  "title": "JavaScript Roadmap",
+  "description": "Step by step guide to learn JavaScript in 2022",
+  "featuredTitle": "JavaScript",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to learn JavaScript in 2022",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "featured": true,
+  "jsonUrl": "/project/javascript.json",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "pdfUrl": "/pdfs/javascript.pdf",
+  "contentPathsFilePath": "./content-paths.json"
+}

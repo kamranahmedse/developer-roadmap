@@ -37,6 +37,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/javascript</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-08-17T22:36:01.325Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-08-08T14:33:53.387Z</lastmod>
@@ -45,25 +51,25 @@
 <url>
               <loc>https://roadmap.sh/python</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-12T22:51:31.431Z</lastmod>
+              <lastmod>2022-08-17T16:13:43.193Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/golang</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-16T14:31:54.535Z</lastmod>
+              <lastmod>2022-08-17T16:13:43.230Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/java</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-15T06:19:10.646Z</lastmod>
+              <lastmod>2022-08-17T16:13:43.258Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-08T14:33:53.390Z</lastmod>
+              <lastmod>2022-08-17T16:13:43.259Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
