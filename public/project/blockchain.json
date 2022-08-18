@@ -9676,7 +9676,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Open Zeppelin"
+                    "text": "OpenZeppelin"
                   }
                 },
                 {
@@ -10720,7 +10720,7 @@
           "x": "551",
           "y": "1969",
           "properties": {
-            "controlName": "102-dapps:mantenance"
+            "controlName": "102-dapps:maintenance"
           },
           "children": {
             "controls": {
