@@ -12,6 +12,7 @@ import { getAllGuides, GuideType } from '../lib/guide';
 import { getAllVideos, VideoType } from '../lib/video';
 import Helmet from '../components/helmet';
 import { PageWrapper } from '../components/page-wrapper';
+import { FeaturedRoadmapsList } from '../components/home/featured-roadmaps-list';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -46,36 +47,15 @@ export default function Home(props: HomeProps) {
             </Text>
           </Box>
 
-          <Tag bg='gray.400' mb={4}>Role Based Roadmaps</Tag>
-          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']} mb='40px'>
-            {roadmaps.filter(roadmap => roadmap.type === 'role').map((roadmap: RoadmapType, counter: number) => (
-              <HomeRoadmapItem
-                isUpcoming={roadmap.isUpcoming}
-                url={`/${roadmap.id}`}
-                key={roadmap.id}
-                colorIndex={counter}
-                title={roadmap.featuredTitle}
-                isCommunity={roadmap.isCommunity}
-                subtitle={roadmap.featuredDescription}
-              />
-            ))}
-          </SimpleGrid>
+          <FeaturedRoadmapsList
+            roadmaps={roadmaps.filter(roadmap => roadmap.type === 'role')}
+            title={'Role Based Roadmaps' }
+          />
 
-          <Tag bg='gray.400' mb={4}>Tool Based Skill Trees</Tag>
-
-          <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']} mb='30px'>
-            {roadmaps.filter(roadmap => roadmap.type === 'tool').map((roadmap: RoadmapType, counter: number) => (
-              <HomeRoadmapItem
-                isUpcoming={roadmap.isUpcoming}
-                url={`/${roadmap.id}`}
-                key={roadmap.id}
-                colorIndex={counter}
-                title={roadmap.featuredTitle}
-                isCommunity={roadmap.isCommunity}
-                subtitle={roadmap.featuredDescription}
-              />
-            ))}
-          </SimpleGrid>
+          <FeaturedRoadmapsList
+            roadmaps={roadmaps.filter(roadmap => roadmap.type === 'tool')}
+            title={'Tool Based Skill Trees' }
+          />
         </Container>
       </Box>
 
