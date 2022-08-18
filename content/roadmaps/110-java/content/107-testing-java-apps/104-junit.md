@@ -1,4 +1,4 @@
-# Junit
+# JUnit
 
 JUnit is a testing framework for Java.
 
