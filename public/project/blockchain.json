@@ -5400,118 +5400,6 @@
           }
         },
         {
-          "ID": "1330",
-          "typeID": "__group__",
-          "zOrder": "135",
-          "measuredW": "158",
-          "measuredH": "44",
-          "w": "158",
-          "h": "44",
-          "x": "1215",
-          "y": "773",
-          "properties": {
-            "controlName": "101-blockchain-general-knowledge:blockchains:terra"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "147",
-                  "h": "44",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "41",
-                  "measuredH": "25",
-                  "x": "53",
-                  "y": "9",
-                  "properties": {
-                    "size": "17",
-                    "text": "Terra"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "__group__",
-                  "zOrder": "2",
-                  "measuredW": "24",
-                  "measuredH": "24",
-                  "w": "24",
-                  "h": "24",
-                  "x": "134",
-                  "y": "10",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Icon",
-                          "zOrder": "0",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16777215",
-                            "icon": {
-                              "ID": "circle",
-                              "size": "small"
-                            }
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Icon",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16777215",
-                            "icon": {
-                              "ID": "circle",
-                              "size": "small"
-                            }
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Icon",
-                          "zOrder": "2",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "3700253",
-                            "icon": {
-                              "ID": "check-circle",
-                              "size": "small"
-                            }
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "1331",
           "typeID": "__group__",
           "zOrder": "148",
@@ -5855,7 +5743,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Moonebeam / Moonriver"
+                    "text": "Moonbeam / Moonriver"
                   }
                 },
                 {
@@ -6606,7 +6494,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Moonebeam / Moonriver"
+                    "text": "Moonbeam / Moonriver"
                   }
                 },
                 {
@@ -8878,7 +8766,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "dapp.tools"
+                    "text": "Foundry"
                   }
                 },
                 {
@@ -9788,7 +9676,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Open Zeppelin"
+                    "text": "OpenZeppelin"
                   }
                 },
                 {
@@ -10832,7 +10720,7 @@
           "x": "551",
           "y": "1969",
           "properties": {
-            "controlName": "102-dapps:mantenance"
+            "controlName": "102-dapps:maintenance"
           },
           "children": {
             "controls": {
