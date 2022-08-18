@@ -159,6 +159,7 @@
   "monitoring:logs-management:elastic-stack": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/100-elastic-stack.md",
   "monitoring:logs-management:graylog": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/101-graylog.md",
   "monitoring:logs-management:splunk": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/102-splunk.md",
+  "monitoring:logs-management:loki": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/103-loki.md",
   "monitoring:logs-management:papertrail": "/roadmaps/102-devops/content/107-monitoring/102-logs-management/102-papertrail.md",
   "cloud-providers": "/roadmaps/102-devops/content/108-cloud-providers/readme.md",
   "cloud-providers:aws": "/roadmaps/102-devops/content/108-cloud-providers/100-aws.md",
