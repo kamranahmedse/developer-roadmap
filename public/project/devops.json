@@ -18053,6 +18053,36 @@
           }
         },
         {
+          "ID": "4232",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "70",
+          "h": "94",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "258",
+          "y": "2320",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 70,
+              "y": 94
+            },
+            "p1": {
+              "x": 0.49680207433016427,
+              "y": -0.09127052722558338
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
           "ID": "4233",
           "typeID": "__group__",
           "zOrder": "173",
@@ -18095,36 +18125,6 @@
                   }
                 }
               ]
-            }
-          }
-        },
-        {
-          "ID": "4232",
-          "typeID": "Arrow",
-          "zOrder": "0",
-          "w": "70",
-          "h": "94",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "258",
-          "y": "2320",
-          "properties": {
-            "color": "2848996",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 70,
-              "y": 94
-            },
-            "p1": {
-              "x": 0.49680207433016427,
-              "y": -0.09127052722558338
-            },
-            "p2": {
-              "x": 0,
-              "y": 0
             }
           }
         }
