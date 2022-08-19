@@ -1,5 +1,5 @@
 import { RoadmapType } from '../../lib/roadmap';
-import { Box, SimpleGrid, Tag } from '@chakra-ui/react';
+import { SimpleGrid, Tag } from '@chakra-ui/react';
 import { HomeRoadmapItem } from '../roadmap/home-roadmap-item';
 
 type FeaturedRoadmapsListProps = {
