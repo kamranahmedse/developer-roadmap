@@ -4,6 +4,7 @@ JavaScript was initially created by Brendan Eich of NetScape and was first annou
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://roadmap.sh/guides/history-of-javascript'>Brief History of JavaScript</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://dev.to/iarchitsharma/the-history-of-javascript-5e98'>The History of JavaScript</BadgeLink>
 
 
 
