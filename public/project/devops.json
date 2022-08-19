@@ -8369,7 +8369,7 @@
           "typeID": "TextArea",
           "zOrder": "162",
           "w": "333",
-          "h": "189",
+          "h": "205",
           "measuredW": "200",
           "measuredH": "140",
           "x": "860",
@@ -8382,7 +8382,7 @@
           "measuredW": "108",
           "measuredH": "25",
           "x": "973",
-          "y": "1492",
+          "y": "1508",
           "properties": {
             "size": "17",
             "text": "Network Tools"
@@ -8867,7 +8867,7 @@
           "w": "24",
           "h": "24",
           "x": "1177",
-          "y": "1512",
+          "y": "1528",
           "children": {
             "controls": {
               "control": [
@@ -11401,7 +11401,7 @@
           "w": "110",
           "h": "47",
           "x": "1072",
-          "y": "1595",
+          "y": "1611",
           "properties": {
             "controlName": "101-infrastructure-as-code:service-mesh:istio"
           },
@@ -11497,7 +11497,7 @@
           "w": "109",
           "h": "47",
           "x": "1071",
-          "y": "1701",
+          "y": "1717",
           "properties": {
             "controlName": "103-infrastructure-as-code:service-mesh:linkerd"
           },
@@ -11609,7 +11609,7 @@
           "w": "109",
           "h": "47",
           "x": "1072",
-          "y": "1648",
+          "y": "1664",
           "properties": {
             "controlName": "102-infrastructure-as-code:service-mesh:envoy"
           },
@@ -11721,7 +11721,7 @@
           "w": "110",
           "h": "47",
           "x": "1071",
-          "y": "1542",
+          "y": "1558",
           "properties": {
             "controlName": "100-infrastructure-as-code:service-mesh:consul"
           },
@@ -12119,7 +12119,7 @@
           "w": "122",
           "h": "47",
           "x": "1055",
-          "y": "1771",
+          "y": "1787",
           "properties": {
             "controlName": "100-infrastructure-as-code:configuration-management:ansible"
           },
@@ -12215,7 +12215,7 @@
           "w": "123",
           "h": "47",
           "x": "1055",
-          "y": "1824",
+          "y": "1840",
           "properties": {
             "controlName": "101-infrastructure-as-code:configuration-management:chef"
           },
@@ -12327,7 +12327,7 @@
           "w": "123",
           "h": "47",
           "x": "1055",
-          "y": "1930",
+          "y": "1946",
           "properties": {
             "controlName": "103-infrastructure-as-code:configuration-management:puppet"
           },
@@ -12439,7 +12439,7 @@
           "w": "123",
           "h": "47",
           "x": "1055",
-          "y": "1877",
+          "y": "1893",
           "properties": {
             "controlName": "102-infrastructure-as-code:configuration-management:salt"
           },
@@ -18046,6 +18046,53 @@
                         }
                       ]
                     }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4233",
+          "typeID": "__group__",
+          "zOrder": "173",
+          "measuredW": "82",
+          "measuredH": "40",
+          "w": "53",
+          "h": "40",
+          "x": "874",
+          "y": "1486",
+          "properties": {
+            "controlName": "118-managing-servers:live-in-terminal:ufw"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "53",
+                  "h": "40",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "57",
+                  "measuredH": "24",
+                  "x": "12",
+                  "y": "8",
+                  "properties": {
+                    "size": "16",
+                    "text": "ufw"
                   }
                 }
               ]
