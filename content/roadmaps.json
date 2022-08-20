@@ -656,5 +656,33 @@
     },
     "id": "qa",
     "metaPath": "/roadmaps/113-qa/meta.json"
+  },
+  {
+    "seo": {
+      "title": "AI Roadmap: Learn to become a modern AI engineer",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for modern AI development. Learn to become a modern AI engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a AI engineer"
+      ]
+    },
+    "title": "AI Engineer",
+    "description": "Steps to follow in order to become a modern AI Engineer in 2022",
+    "featuredTitle": "AI",
+    "type": "role",
+    "featuredDescription": "Step by step guide to becoming a modern AI Engineer in 2022",
+    "isUpcoming": false,
+    "isCommunity": false,
+    "isTextHeavy": true,
+    "featured": true,
+    "detailed": false,
+    "landingPath": "/roadmaps/114-ai/landscape.md",
+    "resourcesPath": "/roadmaps/114-ai/resources.md",
+    "author": {
+      "name": "",
+      "url": ""
+    },
+    "id": "ai",
+    "metaPath": "/roadmaps/114-ai/meta.json",
+    "versions": []
   }
 ]
