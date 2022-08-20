@@ -1,6 +1,6 @@
 # Processes
 
-A process means program in execution. It generally takes an input, processes it and gives us the appropriate output. Execute `ps` command in linux to get the list of processes running in foreground.
+A process means program in execution. It generally takes an input, processes it and gives us the appropriate output. `ps` command can be used in linux to get the list of processes running in foreground. Each process will have a unique identifier called **PID**, which can be used to track it or `kill` it through shell.
 
 **Types of processes:**
 * Foreground processes 
