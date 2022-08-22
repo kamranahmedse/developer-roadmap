@@ -114,6 +114,7 @@
   "managing-servers:live-in-terminal:history": "/roadmaps/102-devops/content/102-managing-servers/101-live-in-terminal/139-history.md",
   "managing-servers:live-in-terminal:du": "/roadmaps/102-devops/content/102-managing-servers/101-live-in-terminal/140-du.md",
   "managing-servers:live-in-terminal:scp": "/roadmaps/102-devops/content/102-managing-servers/101-live-in-terminal/141-scp.md",
+  "managing-servers:live-in-terminal:ufw": "/roadmaps/102-devops/content/102-managing-servers/101-live-in-terminal/142-ufw.md",
   "networking-protocols": "/roadmaps/102-devops/content/103-networking-protocols/readme.md",
   "networking-protocols:dns": "/roadmaps/102-devops/content/103-networking-protocols/101-dns.md",
   "networking-protocols:osi-model": "/roadmaps/102-devops/content/103-networking-protocols/100-osi-model.md",

@@ -8535,9 +8535,9 @@
           "zOrder": "167",
           "measuredW": "101",
           "measuredH": "40",
-          "w": "101",
+          "w": "71",
           "h": "40",
-          "x": "975",
+          "x": "961",
           "y": "1398",
           "properties": {
             "controlName": "115-managing-servers:live-in-terminal:airmon"
@@ -8549,7 +8549,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "101",
+                  "w": "71",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -8565,7 +8565,7 @@
                   "zOrder": "1",
                   "measuredW": "50",
                   "measuredH": "24",
-                  "x": "25",
+                  "x": "10",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -8582,9 +8582,9 @@
           "zOrder": "168",
           "measuredW": "96",
           "measuredH": "40",
-          "w": "96",
+          "w": "92",
           "h": "40",
-          "x": "1083",
+          "x": "1087",
           "y": "1398",
           "properties": {
             "controlName": "116-managing-servers:live-in-terminal:tcpdump"
@@ -8596,7 +8596,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "96",
+                  "w": "92",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -8612,7 +8612,7 @@
                   "zOrder": "1",
                   "measuredW": "64",
                   "measuredH": "24",
-                  "x": "15",
+                  "x": "13",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -8629,7 +8629,7 @@
           "zOrder": "169",
           "measuredW": "93",
           "measuredH": "40",
-          "w": "93",
+          "w": "79",
           "h": "40",
           "x": "876",
           "y": "1398",
@@ -8643,7 +8643,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "93",
+                  "w": "79",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -8659,7 +8659,7 @@
                   "zOrder": "1",
                   "measuredW": "51",
                   "measuredH": "24",
-                  "x": "21",
+                  "x": "14",
                   "y": "8",
                   "properties": {
                     "size": "16",
@@ -18079,6 +18079,52 @@
             "p2": {
               "x": 0,
               "y": 0
+            }
+          }
+        },
+        {
+          "ID": "4233",
+          "typeID": "__group__",
+          "zOrder": "173",
+          "measuredW": "82",
+          "w": "43",
+          "h": "40",
+          "x": "1038",
+          "y": "1398",
+          "properties": {
+            "controlName": "142-managing-servers:live-in-terminal:ufw"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "43",
+                  "h": "40",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "50",
+                  "measuredH": "24",
+                  "x": "9",
+                  "y": "8",
+                  "properties": {
+                    "size": "16",
+                    "text": "ufw"
+                  }
+                }
+              ]
             }
           }
         }
