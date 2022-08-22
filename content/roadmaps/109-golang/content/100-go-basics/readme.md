@@ -1,7 +1,6 @@
-# Go basics
+# Learn the Basics
 
-**Go basics** are common concepts in programming like variables, loops, conditional statemnents etc.. <br>
-A good starting point for go basics is its offical docs !
+Learn the common concepts of Go like variables, loops, conditional statements, functions, data types, and so on. A good starting point for go basics is its Go's official docs.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official tutorials' href='https://go.dev/doc/tutorial/'>Official Go Tutorials</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Tutorial' href='https://go.dev/doc/tutorial/'>Official Go Tutorial</BadgeLink>
