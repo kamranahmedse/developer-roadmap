@@ -4,5 +4,5 @@ JavaScript Hoisting refers to the process whereby the interpreter appears to mov
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Glossary/Hoisting'>What is Hoisting - MDN Docs</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/javascript-hoisting/'>JavaScritp Hoisting</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/javascript-hoisting/'>JavaScript Hoisting</BadgeLink>
 
