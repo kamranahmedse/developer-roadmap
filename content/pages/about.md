@@ -29,7 +29,7 @@ any intentions of monetization but as a good will, to help the people get out of
 
 Having said that, I love teaching and my future plans are to be able to work full-time on roadmap.sh for which it has to
 make enough money to pay for my rent, groceries, bills, travel expenses, etc but even if it doesn't it's likely I'll
-continue growing the site however I can. My focus at the moment is not making money from it and just add content that
+continue growing the site however I can. My focus at the moment is not making money from it and just adding content that
 creates value for the people.
 
 > Sponsor the efforts by [paying as little as 5$ per month](https://github.com/sponsors/kamranahmedse) or with [one time payment via paypal](https://paypal.me/kamranahmedse). Alternatively, reach out to me at [kamranahmed.se@gmail.com](mailto:kamranahmed.se@gmail.com).
