@@ -1,7 +1,12 @@
-# For loop
+# For Loop
 
-A For loop is used to execute a specific block of code repeatly, for a known or an unknown number of times . <br>
+Go has only one looping construct, the `for` loop. The basic `for` loop has three components separated by semicolons:
+
+- the init statement: executed before the first iteration
+- the condition expression: evaluated before every iteration
+- the post statement: executed at the end of every iteration
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/for'>For loop example</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/tour/flowcontrol/1'>For Loop in Golang</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/for'>Go by Example: For loop</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://yourbasic.org/golang/for-loop/'>5 basic for loop patterns</BadgeLink>
