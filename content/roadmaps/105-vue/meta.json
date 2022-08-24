@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "Vue Developer Roadmap: Learn to become a Vue developer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for vue development. Learn to become a modern Vue developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a vue developer",
+      "guide to becoming a vue.js developer",
+      "vue developer roadmap",
+      "vue.js developer roadmap",
+      "vue roadmap",
+      "vue.js roadmap",
+      "become vue developer",
+      "become vue.js developer",
+      "vue developer skills",
+      "vue.js developer skills",
+      "vue skills test",
+      "vue.js skills test",
+      "skills for vue development",
+      "skills for vue.js development",
+      "learn vue development",
+      "learn vue.js development",
+      "what is vue",
+      "what is vue.js",
+      "vue quiz",
+      "vue.js quiz",
+      "vue interview questions",
+      "vue.js interview questions"
+    ]
+  },
+  "title": "Vue Developer",
+  "description": "Everything that is there to learn about Vue and the ecosystem in 2022.",
+  "featuredTitle": "Vue",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to become a Vue Developer in 2022",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "featured": true,
+  "jsonUrl": "/project/vue.json",
+  "resourcesPath": "./resources.md",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "pdfUrl": "/pdfs/vue.pdf",
+  "contentPathsFilePath": "./content-paths.json"
+}

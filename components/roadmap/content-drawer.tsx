@@ -108,6 +108,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
               </Text>
             </Button>
           </Flex>
+
           <RoadmapGroup isOutlet roadmap={roadmap} group={groupId} />
         </Box>
       </RemoveScroll>

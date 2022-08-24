@@ -1,0 +1,38 @@
+{
+  "seo": {
+    "title": "Learn to become a modern Python developer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming an python developer",
+      "python developer roadmap",
+      "python roadmap",
+      "become python developer",
+      "python developer skills",
+      "python skills test",
+      "skills for python development",
+      "learn python development",
+      "what is python",
+      "python quiz",
+      "python interview questions"
+    ]
+  },
+  "title": "Python Developer",
+  "description": "Step by step guide to becoming a Python developer in 2022",
+  "featuredTitle": "Python",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to becoming a Python Developer in 2022",
+  "isTextHeavy": true,
+  "isCommunity": false,
+  "featured": true,
+  "jsonUrl": "/project/python.json",
+  "resourcesPath": "./resources.md",
+  "pdfUrl": "/pdfs/python.pdf",
+  "versions": [
+    "latest"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "contentPathsFilePath": "./content-paths.json"
+}

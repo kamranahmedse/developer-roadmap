@@ -1,7 +1,6 @@
 import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
@@ -48,7 +47,6 @@ export default function Roadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

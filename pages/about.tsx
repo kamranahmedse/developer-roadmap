@@ -2,7 +2,6 @@ import React from 'react';
 import { Box, Button, Container, Flex, Heading, Image, Link, Stack, Text } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
 import Helmet from '../components/helmet';
@@ -65,7 +64,6 @@ export default function About() {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

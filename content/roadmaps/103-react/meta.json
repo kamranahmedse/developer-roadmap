@@ -21,11 +21,11 @@
   "title": "React Developer",
   "description": "Everything that is there to learn about React and the ecosystem in 2022.",
   "featuredTitle": "React",
+  "type": "tool",
   "featuredDescription": "Step by step guide to become a React Developer in 2022",
   "isTextHeavy": false,
   "isCommunity": false,
   "featured": true,
-  "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "jsonUrl": "/project/react.json",
   "versions": [
@@ -37,5 +37,6 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "/pdfs/react.pdf"
+  "pdfUrl": "/pdfs/react.pdf",
+  "contentPathsFilePath": "./content-paths.json"
 }

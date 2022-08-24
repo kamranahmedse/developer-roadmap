@@ -43,7 +43,10 @@ const roadmaps: Record<string, RoadmapType> = {
   java: require('../public/project/java.json'),
   python: require('../public/project/python.json'),
   react: require('../public/project/react.json'),
+  vue: require('../public/project/vue.json'),
   angular: require('../public/project/angular.json'),
+  blockchain: require('../public/project/blockchain.json'),
+  javascript: require('../public/project/javascript.json'),
   defi: require('../public/project/defi.json'),
 };
 

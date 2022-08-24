@@ -1,3 +1,9 @@
+<DedicatedRoadmap
+  href='/postgresql-dba'
+  title='PostgreSQL DBA Roadmap'
+  description='Click to check the detailed PostgreSQL DBA Roadmap.'
+/>
+
 # PostgreSQL
 
 PostgreSQL, also known as Postgres, is a free and open-source relational database management system emphasizing extensibility and SQL compliance.

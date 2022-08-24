@@ -1,0 +1,42 @@
+{
+  "seo": {
+    "title": "DBA Roadmap: Learn to become a database administrator with PostgreSQL",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a database administrator",
+      "guide to becoming a DBA",
+      "dba roadmap",
+      "db administrator roadmap",
+      "database administrator roadmap",
+      "postgresql roadmap",
+      "dba skills",
+      "db administrator skills",
+      "become dba",
+      "postgresql skills",
+      "modern dba skills",
+      "dba skills test",
+      "skills for dba",
+      "skills for database administrator",
+      "learn dba",
+      "what is dba",
+      "database administrator quiz",
+      "dba interview questions"
+    ]
+  },
+  "title": "PostgreSQL DBA",
+  "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022",
+  "featuredTitle": "DBA",
+  "type": "role",
+  "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2022",
+  "landingPath": "./landscape.md",
+  "resourcesPath": "./resources.md",
+  "author": {
+    "name": "Alexey Lesovsky",
+    "url": "https://github.com/lesovsky"
+  },
+  "isCommunity": false,
+  "isTextHeavy": true,
+  "featured": true,
+  "detailed": false,
+  "versions": []
+}

@@ -1,7 +1,6 @@
 import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
@@ -47,7 +46,6 @@ export default function Guide(props: GuideProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

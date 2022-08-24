@@ -6,7 +6,7 @@ export type GuideType = {
   id: string;
   title: string;
   description: string;
-  isPro: boolean;
+  isNew: boolean;
   isDraft: boolean;
   createdAt: string;
   updatedAt: string;

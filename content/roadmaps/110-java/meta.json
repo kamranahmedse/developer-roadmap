@@ -1,0 +1,50 @@
+{
+  "seo": {
+    "title": "Learn to become a modern Java developer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for java development. Learn to become a modern Java developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a developer",
+      "guide to becoming a java developer",
+      "java developer",
+      "java engineer",
+      "java skills",
+      "guide to java",
+      "java roadmap",
+      "java skills",
+      "java skills test",
+      "skills for java",
+      "cloud development",
+      "what is java",
+      "java quiz",
+      "java interview questions",
+      "java engineer roadmap",
+      "java developer roadmap",
+      "become a java developer",
+      "java developer career path",
+      "java developer",
+      "modern java developer"
+    ]
+  },
+  "title": "Java Developer",
+  "description": "Step by step guide to becoming a Java developer in 2022",
+  "featuredTitle": "Java",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to becoming a Java Developer in 2022",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isUpcoming": false,
+  "featured": true,
+  "jsonUrl": "/project/java.json",
+  "resourcesPath": "./resources.md",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "pdfUrl": "/pdfs/java.pdf",
+  "contentPathsFilePath": "./content-paths.json"
+}

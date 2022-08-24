@@ -19,7 +19,7 @@ In the video below, Vint Cerf, one of the "fathers of the internet," explains th
 
 ## Wires, Cables, and Wi-Fi
 
-Information on the Internet moves from computer to another in the form of bits over various mediums, including Ethernet cables, fiber optic cables, and wireless signals (i.e., radio waves).
+Information on the Internet moves from one computer to another in the form of bits over various mediums, including Ethernet cables, fiber optic cables, and wireless signals (i.e., radio waves).
 
 In the video linked below, you will learn about the different mediums for data transfer on the Internet and the pros and cons for each. 
 

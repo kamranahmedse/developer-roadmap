@@ -3,7 +3,7 @@
     "id": "avoid-render-blocking-javascript-with-async-defer",
     "title": "Async and Defer Script Loading",
     "description": "Learn how to avoid render blocking JavaScript using async and defer scripts.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-09-10T19:59:14.191Z",
     "createdAt": "2021-09-10T19:59:14.191Z"
@@ -12,7 +12,7 @@
     "id": "what-are-web-vitals",
     "title": "What are Web Vitals?",
     "description": "Learn what are the core web vitals and how to measure them.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-09-05T19:59:14.191Z",
     "createdAt": "2021-09-05T19:59:14.191Z"
@@ -21,7 +21,7 @@
     "id": "what-is-sli-slo-sla",
     "title": "SLIs, SLOs and SLAs",
     "description": "Learn what are different indicators for performance identification of any service.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-08-31T19:59:14.191Z",
     "createdAt": "2021-08-31T19:59:14.191Z"
@@ -30,7 +30,7 @@
     "id": "ci-cd",
     "title": "What is CI and CD?",
     "description": "Learn the basics of CI/CD and how to implement that with GitHub Actions.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-07-09T19:59:14.191Z",
     "createdAt": "2021-07-09T19:59:14.191Z"
@@ -39,7 +39,7 @@
     "id": "sso",
     "title": "SSO — Single Sign On",
     "description": "Learn the basics of SAML and understand how does Single Sign On work.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-07-01T19:59:14.191Z",
     "createdAt": "2021-07-01T19:59:14.191Z"
@@ -48,7 +48,7 @@
     "id": "oauth",
     "title": "OAuth — Open Authorization",
     "description": "Learn and understand what is OAuth and how it works",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-06-28T19:59:14.191Z",
     "createdAt": "2021-06-28T19:59:14.191Z"
@@ -57,7 +57,7 @@
     "id": "jwt-authentication",
     "title": "JWT Authentication",
     "description": "Understand what is JWT authentication and how is it implemented",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-06-20T19:59:14.191Z",
     "createdAt": "2021-06-20T19:59:14.191Z"
@@ -66,7 +66,7 @@
     "id": "token-authentication",
     "title": "Token Based Authentication",
     "description": "Understand what is token based authentication and how it is implemented",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-06-02T20:59:14.191Z",
     "createdAt": "2021-06-02T20:59:14.191Z"
@@ -75,7 +75,7 @@
     "id": "session-authentication",
     "title": "Session Based Authentication",
     "description": "Understand what is session based authentication and how it is implemented",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-05-26T20:59:14.191Z",
     "createdAt": "2021-05-26T20:59:14.191Z"
@@ -84,7 +84,7 @@
     "id": "basic-authentication",
     "title": "Basic Authentication",
     "description": "Understand what is basic authentication and how it is implemented",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-05-19T20:59:14.191Z",
     "createdAt": "2021-05-19T20:59:14.191Z"
@@ -93,7 +93,7 @@
     "id": "character-encodings",
     "title": "Character Encodings",
     "description": "Covers the basics of character encodings and explains ASCII vs Unicode",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-05-14T20:59:14.191Z",
     "createdAt": "2021-05-14T20:59:14.191Z"
@@ -102,7 +102,7 @@
     "id": "unfamiliar-codebase",
     "title": "Unfamiliar Codebase",
     "description": "Tips on getting getting familiar with an unfamiliar codebase",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-05-04T20:59:14.191Z",
     "createdAt": "2021-05-04T20:59:14.191Z"
@@ -111,7 +111,7 @@
     "id": "why-build-it-and-they-will-come-wont-work-anymore",
     "title": "Build it and they will come?",
     "description": "Why “build it and they will come” alone won’t work anymore",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "spekulatius",
     "updatedAt": "2021-05-04T12:59:14.191Z",
     "createdAt": "2021-05-04T12:59:14.191Z"
@@ -120,7 +120,7 @@
     "id": "dhcp-in-one-picture",
     "title": "DHCP in One Picture",
     "description": "Here is what happens when a new device joins the network.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-04-28T15:48:21.191Z",
     "createdAt": "2021-04-28T15:48:21.191Z"
@@ -129,7 +129,7 @@
     "id": "ssl-tls-https-ssh",
     "title": "SSL vs TLS vs SSH",
     "description": "Quick tidbit on the differences between SSL, TLS, HTTPS and SSH",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-04-22T15:48:21.191Z",
     "createdAt": "2021-04-22T15:48:21.191Z"
@@ -138,7 +138,7 @@
     "id": "asymptotic-notation",
     "title": "Asymptotic Notation",
     "description": "Learn the basics of measuring the time and space complexity of algorithms",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-04-03T15:48:21.191Z",
     "createdAt": "2021-04-03T15:48:21.191Z"
@@ -147,7 +147,7 @@
     "id": "big-o-notation",
     "title": "Big-O Notation",
     "description": "Easy to understand explanation of Big-O notation without any fancy terms",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-03-15T15:48:21.191Z",
     "createdAt": "2021-03-15T15:48:21.191Z"
@@ -156,7 +156,7 @@
     "id": "random-numbers",
     "title": "Random Numbers: Are they?",
     "description": "Learn how they are generated and why they may not be truly random.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-03-14T15:48:21.191Z",
     "createdAt": "2021-03-14T15:48:21.191Z"
@@ -165,7 +165,7 @@
     "id": "scaling-databases",
     "title": "Scaling Databases",
     "description": "Learn the ups and downs of different database scaling strategies",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2021-02-18T15:48:21.191Z",
     "createdAt": "2021-02-18T15:48:21.191Z"
@@ -174,7 +174,7 @@
     "id": "what-is-internet",
     "title": "How does the internet work?",
     "description": "Learn the basics of internet and everything involved with this short video series",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "dmytrobol",
     "updatedAt": "2021-02-29T15:48:21.191Z",
     "createdAt": "2021-02-29T15:48:21.191Z"
@@ -183,7 +183,7 @@
     "id": "torrent-client",
     "title": "Building a BitTorrent Client",
     "description": "Learn everything you need to know about BitTorrent by writing a client in Go",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "jesse",
     "updatedAt": "2021-01-17T15:48:21.191Z",
     "createdAt": "2021-01-17T15:48:21.191Z",
@@ -193,7 +193,7 @@
     "id": "levels-of-seniority",
     "title": "Levels of Seniority",
     "description": "How to Step Up as a Junior, Mid Level or a Senior Developer?",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2020-12-03T12:13:00.860Z",
     "createdAt": "2020-12-03T12:13:00.860Z"
@@ -202,7 +202,7 @@
     "id": "design-patterns-for-humans",
     "title": "Design Patterns for Humans",
     "description": "A language agnostic, ultra-simplified explanation to design patterns",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2019-10-09T12:00:00.860Z",
     "createdAt": "2019-01-23T17:00:00.860Z"
@@ -211,7 +211,7 @@
     "id": "journey-to-http2",
     "title": "Journey to HTTP/2",
     "description": "The evolution of HTTP. How it all started and where we stand today",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "createdAt": "2018-12-04T12:00:00.860Z",
     "updatedAt": "2018-12-04T12:00:00.860Z",
@@ -221,7 +221,7 @@
     "id": "dns-in-one-picture",
     "title": "DNS in One Picture",
     "description": "Quick illustrative guide on how a website is found on the internet.",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "updatedAt": "2018-12-04T12:00:00.860Z",
     "createdAt": "2018-12-04T17:00:00.860Z"
@@ -230,7 +230,7 @@
     "id": "http-caching",
     "title": "HTTP Caching",
     "description": "Everything you need to know about web caching",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "createdAt": "2018-11-29T17:00:00.860Z",
     "updatedAt": "2018-11-29T17:00:00.860Z"
@@ -239,7 +239,7 @@
     "id": "history-of-javascript",
     "title": "Brief History of JavaScript",
     "description": "How JavaScript was introduced and evolved over the years",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "kamranahmedse",
     "createdAt": "2017-10-28T17:00:00.860Z",
     "updatedAt": "2017-10-28T17:00:00.860Z"
@@ -248,7 +248,7 @@
     "id": "proxy-servers",
     "title": "Proxy Servers",
     "description": "How do proxy servers work and what are forward and reverse proxies?",
-    "isPro": false,
+    "isNew": false,
     "authorUsername": "ebrahimbharmal007",
     "createdAt": "2017-10-24T17:00:00.860Z",
     "updatedAt": "2017-10-24T17:00:00.860Z"

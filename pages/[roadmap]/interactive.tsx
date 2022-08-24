@@ -3,7 +3,6 @@ import { useEffect, useRef, useState } from 'react';
 import { Box, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
@@ -53,6 +52,11 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     }
 
     function clickListener(event: MouseEvent) {
+      const viewPortMeta = document.querySelector('meta[name=viewport]');
+      if (viewPortMeta) {
+        viewPortMeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
+      }
+
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
       const groupId = targetGroup?.dataset?.groupId;
       if (!targetGroup || !groupId) {
@@ -122,6 +126,30 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['870px', '1130px', '1900px', '2500px', '2520px', '2520px'];
   }
 
+  if (roadmap.id === 'devops') {
+    minHeight = ['870px', '1920px', '2505px', '2591px', '2591px', '2591px'];
+  }
+
+  if (roadmap.id === 'vue') {
+    minHeight = ['600px', '820px', '1340px', '1680px', '1750px', '1750px'];
+  }
+
+  if (roadmap.id === 'react') {
+    minHeight = ['400px', '865px', '1065px', '1400px', '1400px', '1400px'];
+  }
+
+  if (roadmap.id === 'blockchain') {
+    minHeight = ['780px', '1120px', '1770px', '2235px', '2235px', '2235px'];
+  }
+
+  if (roadmap.id === 'golang') {
+    minHeight = ['590px', '1201px', '1201px', '1625px', '1625px', '1625px'];
+  }
+
+  if (roadmap.id === 'javascript') {
+    minHeight = ['892px', '1835px', '1835px', '2475px', '2475px', '2475px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
@@ -153,7 +181,6 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

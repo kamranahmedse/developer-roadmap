@@ -34,6 +34,7 @@
   "description": "Step by step guide to becoming a modern frontend developer in 2022",
   "featuredTitle": "Frontend",
   "featuredDescription": "Step by step guide to becoming a frontend developer in 2022",
+  "type": "role",
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"

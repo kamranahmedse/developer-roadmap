@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "Learn to become a Go developer",
+    "description": "Community driven, articles, resources, guides, interview questions, quizzes for Go development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.",
+    "keywords": [
+      "guide to becoming a golang developer",
+      "guide to becoming a go developer",
+      "golang developer",
+      "go developer",
+      "guide to golang",
+      "guide to go",
+      "golang roadmap",
+      "go roadmap",
+      "golang skills",
+      "go skills",
+      "golang skills test",
+      "go skills test",
+      "skills for golang",
+      "skills for go",
+      "cloud development",
+      "what is golang",
+      "what is go",
+      "golang quiz",
+      "go quiz",
+      "golang interview questions",
+      "go interview questions"
+    ]
+  },
+  "title": "Go Developer",
+  "description": "Step by step guide to becoming a Go developer in 2022",
+  "featuredTitle": "Go",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to becoming a Go developer in 2022",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isUpcoming": false,
+  "featured": true,
+  "jsonUrl": "/project/golang.json",
+  "resourcesPath": "./resources.md",
+  "pdfUrl": "/pdfs/go.pdf",
+  "versions": [
+    "latest",
+    "2018",
+    "2017"
+  ],
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "contentPathsFilePath": "./content-paths.json"
+}

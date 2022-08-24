@@ -1,7 +1,6 @@
 import { Box, Container, SimpleGrid } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
-import { UpdatesBanner } from '../components/updates-banner';
 import { Footer } from '../components/footer';
 import { PageHeader } from '../components/page-header';
 import { RoadmapGridItem } from '../components/roadmap/roadmap-grid-item';
@@ -47,7 +46,6 @@ export default function Roadmaps(props: RoadmapsProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

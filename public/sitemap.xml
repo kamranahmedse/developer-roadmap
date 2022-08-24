@@ -3,79 +3,85 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.546Z</lastmod>
+              <lastmod>2022-08-04T11:36:54.909Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/backend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.557Z</lastmod>
+              <lastmod>2022-08-04T11:37:35.841Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/devops</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.558Z</lastmod>
+              <lastmod>2022-08-05T13:01:37.174Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/react</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.558Z</lastmod>
+              <lastmod>2022-08-12T12:50:57.357Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/angular</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.558Z</lastmod>
+              <lastmod>2022-08-04T11:37:35.838Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/vue</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-08-08T16:43:49.818Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/javascript</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-08-17T22:44:44.573Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/android</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.558Z</lastmod>
+              <lastmod>2022-08-17T22:44:44.574Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/python</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.559Z</lastmod>
+              <lastmod>2022-08-17T22:44:44.581Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/golang</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.559Z</lastmod>
+              <lastmod>2022-08-17T22:44:44.590Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/java</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.559Z</lastmod>
+              <lastmod>2022-08-17T22:44:44.597Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/postgresql-dba</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.560Z</lastmod>
+              <lastmod>2022-08-17T22:44:44.597Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
-              <loc>https://roadmap.sh/defi</loc>
+              <loc>https://roadmap.sh/blockchain</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T22:58:47.905Z</lastmod>
-              <priority>1.0</priority>
-          </url>
-<url>
-              <loc>https://roadmap.sh/aws</loc>
-              <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.560Z</lastmod>
+              <lastmod>2022-08-16T00:30:54.157Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.560Z</lastmod>
+              <lastmod>2022-08-16T00:30:47.981Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -249,43 +255,43 @@
 <url>
               <loc>https://roadmap.sh/about</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.566Z</lastmod>
+              <lastmod>2022-08-04T14:33:07.909Z</lastmod>
               <priority>0.8</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/guides</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.566Z</lastmod>
+              <lastmod>2022-08-13T19:24:17.719Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.566Z</lastmod>
+              <lastmod>2022-08-16T13:40:48.255Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/roadmaps</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.566Z</lastmod>
+              <lastmod>2022-08-04T14:33:07.903Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/signup</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.566Z</lastmod>
+              <lastmod>2022-08-14T14:08:55.805Z</lastmod>
               <priority>0.9</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/thanks</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.567Z</lastmod>
+              <lastmod>2022-08-04T14:33:07.901Z</lastmod>
               <priority>0.5</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/watch</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-07-30T20:57:22.567Z</lastmod>
+              <lastmod>2022-08-13T19:31:00.946Z</lastmod>
               <priority>1.0</priority>
           </url>
 </urlset>

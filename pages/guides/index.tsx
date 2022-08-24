@@ -3,7 +3,6 @@ import { GlobalHeader } from '../../components/global-header';
 import { LinksList } from '../../components/links-list';
 import { LinksListItem } from '../../components/links-list-item';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { GuideGridItem } from '../../components/guide/guide-grid-item';
 import { PageHeader } from '../../components/page-header';
@@ -53,7 +52,7 @@ export default function Guides(props: GuidesProps) {
                 href={`/guides/${oldGuide.id}`}
                 key={oldGuide.id}
                 title={oldGuide.title}
-                badgeText={oldGuide.isPro ? 'PRO' : ''}
+                badgeText={oldGuide.isNew ? 'NEW' : ''}
                 subtitle={oldGuide.formattedUpdatedAt!}
               />
             ))}
@@ -62,7 +61,6 @@ export default function Guides(props: GuidesProps) {
       </Box>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );

@@ -1,17 +1,6 @@
-import {
-  Box,
-  Breadcrumb,
-  BreadcrumbItem,
-  BreadcrumbLink,
-  Button,
-  Container,
-  Divider,
-  Link,
-  Text,
-} from '@chakra-ui/react';
+import { Box, Breadcrumb, BreadcrumbItem, BreadcrumbLink, Container } from '@chakra-ui/react';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
-import { UpdatesBanner } from '../../components/updates-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
@@ -38,11 +27,11 @@ function TextualContent(props: RoadmapProps) {
   const contentsPathsFilePath = roadmap.contentPathsFilePath.replace(/^\//, '');
   const contentPathMapping = require(`../../content/${contentsPathsFilePath}`);
 
+
   const contentFilePath = contentPathMapping[group] || '';
   const normalizedContentFilePath = contentFilePath.replace(/^\//, '');
 
-  const GroupContent =
-    require(`../../content/${normalizedContentFilePath}`).default;
+  const GroupContent = require(`../../content/${normalizedContentFilePath}`).default;
 
   return (
     <Box>
@@ -114,7 +103,6 @@ export default function RoadmapGroup(props: RoadmapProps) {
       </Container>
 
       <OpensourceBanner />
-      <UpdatesBanner />
       <Footer />
     </Box>
   );
