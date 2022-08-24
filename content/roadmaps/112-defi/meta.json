@@ -1,0 +1,45 @@
+{
+  "seo": {
+    "title": "DeFi Developer Roadmap: Learn to become a modern DeFi developer",
+    "description": "Learn to become a modern DeFi developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern DeFi development.",
+    "keywords": [
+      "defi roadmap 2022",
+      "defi developer roadmap 2022",
+      "guide to becoming a developer",
+      "guide to becoming a defi developer",
+      "defi roadmap",
+      "defi developer",
+      "defi engineer",
+      "defi skills",
+      "defi development",
+      "solidity developer",
+      "defi development skills",
+      "defi development skills test",
+      "defi engineer roadmap",
+      "defi developer roadmap",
+      "become a defi developer",
+      "defi developer career path",
+      "modern solidity developer",
+      "blockchain developer",
+      "skills for defi development",
+      "learn defi development",
+      "what is defi development",
+      "defi developer quiz",
+      "defi developer interview questions"
+    ]
+  },
+  "title": "DeFi Developer",
+  "description": "Step by step guide to becoming a modern DeFi developer in 2022",
+  "featuredTitle": "DeFi",
+  "featuredDescription": "Step by step guide to becoming a DeFi developer in 2022",
+  "author": {
+    "name": "10Clouds",
+    "url": "https://twitter.com/10clouds"
+  },
+  "featured": true,
+  "imageUrl": "/roadmaps/defi.png",
+  "jsonUrl": "/project/defi.json",
+  "resourcesPath": "./resources.md",
+  "pdfUrl": "/pdfs/defi.pdf",
+  "contentPathsFilePath": "./content-paths.json"
+}
