@@ -43,6 +43,7 @@
   "react-ecosystem:api-calls:superagent": "/roadmaps/103-react/content/102-react-ecosystem/103-api-calls/106-superagent.md",
   "react-ecosystem:mobile": "/roadmaps/103-react/content/102-react-ecosystem/104-mobile/readme.md",
   "react-ecosystem:mobile:react-native": "/roadmaps/103-react/content/102-react-ecosystem/104-mobile/100-react-native.md",
+  "react-ecosystem:mobile:ionic-react": "/roadmaps/103-react/content/102-react-ecosystem/104-mobile/100-ionic-react.md",
   "react-ecosystem:forms": "/roadmaps/103-react/content/102-react-ecosystem/105-forms/readme.md",
   "react-ecosystem:forms:react-hook-form": "/roadmaps/103-react/content/102-react-ecosystem/105-forms/100-react-hook-form.md",
   "react-ecosystem:forms:formik": "/roadmaps/103-react/content/102-react-ecosystem/105-forms/101-formik.md",

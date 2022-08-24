@@ -300,6 +300,40 @@
           }
         },
         {
+          "ID": "2618",
+          "typeID": "Arrow",
+          "zOrder": "9",
+          "w": "95",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "251",
+          "y": "1520",
+          "properties": {
+            "color": "2848996",
+            "curvature": "0",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "p0": {
+              "length": 0,
+              "x": 0,
+              "y": 20
+            },
+            "p1": {
+              "length": 0.638011617080294,
+              "x": 0.6380090497737556,
+              "y": -0.0018099547511312248
+            },
+            "p2": {
+              "length": 94,
+              "x": 94,
+              "y": -30
+            },
+            "rightArrow": "false",
+            "stroke": "dotted"
+          }
+        },
+        {
           "ID": "2619",
           "typeID": "Arrow",
           "zOrder": "10",
@@ -4580,6 +4614,53 @@
                   "properties": {
                     "size": "17",
                     "text": "React Native"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2859b",
+          "typeID": "__group__",
+          "zOrder": "126",
+          "measuredW": "159",
+          "measuredH": "44",
+          "w": "159",
+          "h": "44",
+          "x": "126",
+          "y": "1500",
+          "properties": {
+            "controlName": "100-react-ecosystem:mobile:ionic-react"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "159",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "100",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "10",
+                  "properties": {
+                    "size": "17",
+                    "text": "Ionic React"
                   }
                 }
               ]
