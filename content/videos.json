@@ -1,5 +1,16 @@
 [
   {
+    "id": "heap-data-structure",
+    "title": "Heap Data Structure",
+    "description": "Learn everything you need to know about the heap data structure",
+    "isNew": true,
+    "youtubeLink": "https://www.youtube.com/watch?v=F_r0sJ1RqWk",
+    "authorUsername": "kamranahmedse",
+    "duration": "11 minutes",
+    "updatedAt": "2022-08-24T19:59:14.191Z",
+    "createdAt": "2022-08-24T19:59:14.191Z"
+  },
+  {
     "id": "tree-data-structure",
     "title": "Tree Data Structure",
     "description": "Learn everything you need to know about the tree data structure",
