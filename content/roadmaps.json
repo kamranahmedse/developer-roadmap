@@ -572,11 +572,11 @@
     "featured": true,
     "imageUrl": "/roadmaps/defi.png",
     "jsonUrl": "/project/defi.json",
-    "resourcesPath": "/roadmaps/112-defi/resources.md",
+    "resourcesPath": "/roadmaps/114-defi/resources.md",
     "pdfUrl": "/pdfs/defi.pdf",
-    "contentPathsFilePath": "/roadmaps/112-defi/content-paths.json",
+    "contentPathsFilePath": "/roadmaps/114-defi/content-paths.json",
     "id": "defi",
-    "metaPath": "/roadmaps/112-defi/meta.json",
+    "metaPath": "/roadmaps/114-defi/meta.json",
     "isUpcoming": false
   }
 ]
