@@ -63,5 +63,6 @@
   "featured": true,
   "imageUrl": "/roadmaps/nodejs.png",
   "jsonUrl": "/project/nodejs.json",
-  "pdfUrl": "/pdfs/nodejs.pdf"
+  "pdfUrl": "/pdfs/nodejs.pdf",
+  "contentPathsFilePath": "./content-paths.json"
 }
