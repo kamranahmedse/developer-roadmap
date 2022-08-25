@@ -445,9 +445,7 @@
     "featured": true,
     "imageUrl": "/roadmaps/nodejs.png",
     "jsonUrl": "/project/nodejs.json",
-    "resourcesPath": "/roadmaps/107-nodejs/resources.md",
     "pdfUrl": "/pdfs/nodejs.pdf",
-    "contentPathsFilePath": "/roadmaps/107-nodejs/content-paths.json",
     "id": "nodejs",
     "metaPath": "/roadmaps/107-nodejs/meta.json",
     "isUpcoming": false
