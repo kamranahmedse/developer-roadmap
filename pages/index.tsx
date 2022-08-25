@@ -49,12 +49,12 @@ export default function Home(props: HomeProps) {
 
           <FeaturedRoadmapsList
             roadmaps={roadmaps.filter(roadmap => roadmap.type === 'role')}
-            title={'Role Based Roadmaps' }
+            title={'Role Based' }
           />
 
           <FeaturedRoadmapsList
             roadmaps={roadmaps.filter(roadmap => roadmap.type === 'tool')}
-            title={'Tool Based Skill Trees' }
+            title={'Tool Based' }
           />
         </Container>
       </Box>
