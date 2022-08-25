@@ -1,6 +1,6 @@
 ## New Roadmap
 
-Please provide a rough textual roadmap with what you have in mind with an issue and we can take it from there.
+Please provide a rough textual roadmap with what you have in mind with an issue and we can take it from there. Here is a sample [textual roadmap submission](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5).
 
 ##  Existing Roadmaps
 
