@@ -49,15 +49,21 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/nodejs</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-08-25T15:58:24.636Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/python</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-17T22:44:44.581Z</lastmod>
+              <lastmod>2022-08-25T15:53:02.241Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
               <loc>https://roadmap.sh/golang</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-17T22:44:44.590Z</lastmod>
+              <lastmod>2022-08-25T15:53:02.254Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -267,7 +273,7 @@
 <url>
               <loc>https://roadmap.sh/</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-16T13:40:48.255Z</lastmod>
+              <lastmod>2022-08-18T23:11:13.251Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
