@@ -38,7 +38,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Android Roadmap](https://roadmap.sh/android)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
-- [Node.js Roadmap](https://roadmap.sh/node.js)
+- [Node.js Roadmap](https://roadmap.sh/nodejs)
 - [Python Roadmap](https://roadmap.sh/python)
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Java Roadmap](https://roadmap.sh/java)
