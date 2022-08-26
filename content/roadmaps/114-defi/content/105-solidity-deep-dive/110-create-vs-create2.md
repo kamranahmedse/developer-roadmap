@@ -18,7 +18,6 @@ CREATE2 is a new opcode introduced in the Constantinople hard fork to provide an
 
 None of these depend on the state of the creator. This means that you can create as many other contracts as you want, without worrying about the nonce, and still be able to deploy to the parked address whenever you need to.
 
-
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://blog.openzeppelin.com/getting-the-most-out-of-create2/'>Getting the most out of CREATE2</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://solidity-by-example.org/app/create2/'>Precompute Contract Address with Create2</BadgeLink>
