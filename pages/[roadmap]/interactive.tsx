@@ -6,12 +6,12 @@ import { OpensourceBanner } from '../../components/opensource-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
-import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
-import { removeSortingInfo } from '../../lib/renderer/utils';
+import { wireframeJSONToSVG } from 'roadmap-renderer';
+import { removeSortingInfo } from '../../lib/renderer';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -88,7 +88,9 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     }
 
     setIsRendering(true);
-    wireframeJSONToSVG(roadmapJson)
+    wireframeJSONToSVG(roadmapJson, {
+      fontURL: '/fonts/balsamiq.woff2'
+    })
       .then((svgElement) => {
         const container: HTMLElement = roadmapRef.current!;
         if (!container) {

@@ -34,6 +34,7 @@
     "react": "17.0.2",
     "react-dom": "17.0.2",
     "react-remove-scroll": "^2.4.3",
+    "roadmap-renderer": "github:kamranahmedse/roadmap-renderer",
     "styled-components": "^5.3.3",
     "use-http": "^1.0.26"
   },
