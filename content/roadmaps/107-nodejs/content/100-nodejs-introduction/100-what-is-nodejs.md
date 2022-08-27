@@ -27,3 +27,4 @@ Some of the more important packages that are good to know:
 | [Axios](https://github.com/axios/axios) | A library spcifically to make HTTP requests easier. | `npm i axios` |
 | [MongoDB](https://www.npmjs.com/package/mongodb) | A Mongo DB interface for your node.js application. MongoDB offers you a database where you don't need to learn a separate laguage to add, delete or query values like in SQL. | `npm i mongodb` |
 | [Sequelize](https://sequelize.org/) | The joker card for the golden standard of databases, SQL. Supports Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake. | `npm i sequelize` |
+| [Pug](https://pugjs.org/api/getting-started.html) | Helps you to create dynamic content through a special markup language called Pug | `npm i pug` |
