@@ -2,7 +2,7 @@ As users, we easily get frustrated by the buffering of videos, the images that t
 
 ### Introduction
 
-What is a web cache? It is something that sits somewhere between the client and the server, continuously looking at the requests and their responses, looking for any responses that can be cached. So that there is less time-consuming when the same request is made again. 
+What is a web cache? It is something that sits somewhere between the client and the server, continuously looking at the requests and their responses, looking for any responses that can be cached. So that there is less time consumed when the same request is made again. 
 
 ![Web Cache](https://i.imgur.com/mJYVvTh.png)
 
