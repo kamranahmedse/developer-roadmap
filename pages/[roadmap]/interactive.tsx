@@ -1,17 +1,17 @@
 import { useFetch } from 'use-http';
 import { useEffect, useRef, useState } from 'react';
 import { Box, Container } from '@chakra-ui/react';
+import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { GlobalHeader } from '../../components/global-header';
 import { OpensourceBanner } from '../../components/opensource-banner';
 import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
-import { wireframeJSONToSVG } from '../../lib/renderer';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
-import { removeSortingInfo } from '../../lib/renderer/utils';
+import { removeSortingInfo } from '../../lib/renderer';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -216,7 +216,6 @@ type ContextType = {
 
 export async function getStaticProps(context: ContextType) {
   const roadmapId: string = context?.params?.roadmap;
-
   return {
     props: {
       roadmap: getRoadmapById(roadmapId),
