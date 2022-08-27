@@ -5,6 +5,7 @@ on:
 env:
   ROADMAP_GA_SECRET: ${{ secrets.GA_SECRET }}
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PAT: ${{ secrets.PAT }}
   CI: true
   NEXT_TELEMETRY_DISABLED: 1
 jobs:
@@ -12,10 +13,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
     - uses: actions/setup-node@v1
       with:
         node-version: 14
-    - run: git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf ssh://git@github.com/
+    - run: git config --global url."https://${{ secrets.PAT }}@github.com/".insteadOf ssh://git@github.com/
     - name: Setup Environment
       run: |
         npm install
