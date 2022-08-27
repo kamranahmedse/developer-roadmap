@@ -18,7 +18,7 @@ jobs:
     - name: Setup Environment
       run: |
         npm install
-    - run: git config --global url."https://${{ GITHUB_TOKEN }}@github.com/".insteadOf ssh://git@github.com/
+    - run: git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf ssh://git@github.com/
     - name: Generate meta and build
       run: |
         npm run meta
