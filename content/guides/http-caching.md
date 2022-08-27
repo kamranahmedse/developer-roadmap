@@ -1,8 +1,8 @@
-As users, we easily get frustrated by the buffering videos, the images that take seconds to load, pages that got stuck because the content is being loaded. Loading the resources from some cache is much faster than fetching the same from the originating server. It reduces latency, speeds up the loading of resources, decreases the load on server, cuts down the bandwidth costs etc. 
+As users, we easily get frustrated by the buffering of videos, the images that take seconds to load, and pages that got stuck because the content is being loaded. Loading the resources from some cache is much faster than fetching the same from the originating server. It reduces latency, speeds up the loading of resources, decreases the load on the server, cuts down the bandwidth costs etc. 
 
 ### Introduction
 
-What is web cache? It is something that sits somewhere between the client and the server, continuously looking at the requests and their responses, looking for any responses that can be cached. So that there is less time consumed when the same request is made again. 
+What is a web cache? It is something that sits somewhere between the client and the server, continuously looking at the requests and their responses, looking for any responses that can be cached. So that there is less time consumed when the same request is made again. 
 
 ![Web Cache](https://i.imgur.com/mJYVvTh.png)
 
@@ -11,9 +11,9 @@ What is web cache? It is something that sits somewhere between the client and th
 Before we get into further details, let me give you an overview of the terms that will be used, further in the article
 
 - **Client** could be your browser or any application requesting the server for some resource
-- **Origin Server**, the source of truth, houses all the content required by the client and is responsible for fulfilling the client requests.
-- **Stale Content** is the cached but expired content
-- **Fresh Content** is the content available in cache that hasn't expired yet
+- **Origin Server**, the source of truth, houses all the content required by the client and is responsible for fulfilling the client's requests.
+- **Stale Content** is cached but expired content
+- **Fresh Content** is the content available in the cache that hasn't expired yet
 - **Cache Validation** is the process of contacting the server to check the validity of the cached content and get it updated for when it is going to expire
 - **Cache Invalidation** is the process of removing any stale content available in the cache
 
@@ -43,15 +43,15 @@ Unlike browser cache which serves a single user, proxy caches may serve hundreds
 
 #### Reverse Proxy Cache
 
-Reverse proxy cache or surrogate cache is implemented close to the origin servers in order to reduce the load on server. Unlike proxy caches which are implemented by ISPs etc to reduce the bandwidth usage in a network, surrogates or reverse proxy caches are implemented near to the origin servers by the server administrators to reduce the load on server.
+A Reverse proxy cache or surrogate cache is implemented close to the origin servers in order to reduce the load on the server. Unlike proxy caches which are implemented by ISPs etc to reduce the bandwidth usage in a network, surrogates or reverse proxy caches are implemented near the origin servers by the server administrators to reduce the load on the server.
 
 ![Reverse Proxy Cache](http://i.imgur.com/Eg4Cru3.png)
  
-Although you can control the reverse proxy caches (since it is implemented by you on your server) you can not avoid or control browser and proxy caches. And if your website is not configured to use these caches properly, it will still be cached using whatever the defaults are set on these caches.
+Although you can control the reverse proxy caches (since it is implemented by you on your server) you can not avoid or control browser and proxy caches. And if your website is not configured to use these caches properly, it will still be cached using whatever defaults are set on these caches.
 
 ### Caching Headers
 
-So, how do we control the web cache? Whenever the server emits some response, it is accompanied with some HTTP headers to guide the caches whether and how to cache this response. Content provider is the one that has to make sure to return proper HTTP headers to force the caches on how to cache the content.
+So, how do we control the web cache? Whenever the server emits some response, it is accompanied by some HTTP headers to guide the caches on whether and how to cache this response. The content provider is the one that has to make sure to return proper HTTP headers to force the caches on how to cache the content.
 
 - [Expires](#expires)
 - [Pragma](#pragma)
@@ -71,19 +71,19 @@ So, how do we control the web cache? Whenever the server emits some response, it
 
 #### Expires
 
-Before HTTP/1.1 and introduction of `Cache-Control`, there was `Expires` header which is simply a timestamp telling the caches how long should some content be considered fresh. Possible value to this header is absolute expiry date; where date has to be in GMT. Below is the sample header
+Before HTTP/1.1 and the introduction of `Cache-Control`, there was an `Expires` header which is simply a timestamp telling the caches how long should some content be considered fresh. A possible value to this header is the absolute expiry date; where a date has to be in GMT. Below is the sample header
 
 ```html
 Expires: Mon, 13 Mar 2017 12:22:00 GMT
 ```
 
-It should be noted that the date cannot be more than a year and if the date format is wrong, content will be considered stale. Also, the clock on cache has to be in sync with the clock on server, otherwise the desired results might not be achieved. 
+It should be noted that the date cannot be more than a year and if the date format is wrong, the content will be considered stale. Also, the clock on the cache has to be in sync with the clock on the server, otherwise, the desired results might not be achieved. 
 
-Although, `Expires` header is still valid and is supported widely by the caches, preference should be given to HTTP/1.1 successor of it i.e. `Cache-Control`.  
+Although the `Expires` header is still valid and is supported widely by the caches, preference should be given to HTTP/1.1 successor of it i.e. `Cache-Control`.  
 
 #### Pragma
 
-Another one from the old, pre HTTP/1.1 days, is `Pragma`. Everything that it could do is now possible using the cache-control header given below. However, one thing I would like to point out about it is, you might see `Pragma: no-cache` being used here and there in hopes of stopping the response from being cached. It might not necessarily work; as HTTP specification discusses it in the request headers and there is no mention of it in the response headers. Rather `Cache-Control` header should be used to control the caching.
+Another one from the old, pre HTTP/1.1 days, is `Pragma`. Everything that it could do is now possible using the cache-control header given below. However, one thing I would like to point out about it is, that you might see `Pragma: no-cache` being used here and there in hopes of stopping the response from being cached. It might not necessarily work; as HTTP specification discusses it in the request headers and there is no mention of it in the response headers. Rather `Cache-Control` header should be used to control the caching.
 
 #### Cache-Control
 
@@ -98,7 +98,7 @@ Setting the cache to `private` means that the content will not be cached in any 
 Cache-Control: private
 ```
 
-Having said that, don't let it fool you in to thinking that setting this header will make your data any secure; you still have to use SSL for that purpose. 
+Having said that, don't let it fool you into thinking that setting this header will make your data any secure; you still have to use SSL for that purpose. 
 
 ##### public
 
@@ -138,7 +138,7 @@ Cache-Control: s-maxage=3600, public
 ```
 
 ##### must-revalidate
-**`must-revalidate`** it might happen sometimes that if you have network problems and the content cannot be retrieved from the server, browser may serve stale content without validation. `must-revalidate` avoids that. If this directive is present, it means that stale content cannot be served in any case and the data must be re-validated from the server before serving. 
+**`must-revalidate`** it might happen sometimes that if you have network problems and the content cannot be retrieved from the server, the browser may serve stale content without validation. `must-revalidate` avoids that. If this directive is present, it means that stale content cannot be served in any case and the data must be re-validated from the server before serving. 
 
 ```html
 Cache-Control: max-age=3600, public, must-revalidate
@@ -177,7 +177,7 @@ ETag: "j82j8232ha7sdh0q2882" - Strong Etag
 ETag: W/"j82j8232ha7sdh0q2882" - Weak Etag (prefixed with `W/`)
 ```
 
-A strong validating ETag means that two resources are **exactly** same and there is no difference between them at all. While a weak ETag means that two resources are although not strictly same but could be considered same. Weak etags might be useful for dynamic content, for example.
+A strong validating ETag means that two resources are **exactly** same and there is no difference between them at all. While a weak ETag means that two resources although not strictly the same but could be considered the same. Weak etags might be useful for dynamic content, for example.
 
 Now you know what etags are but how does the browser make this request? by making a request to server while sending the available Etag in `If-None-Match` header.
 
