@@ -15,10 +15,10 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 14
+    - run: git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf ssh://git@github.com/
     - name: Setup Environment
       run: |
         npm install
-    - run: git config --global url."https://${GITHUB_TOKEN}@github.com/".insteadOf ssh://git@github.com/
     - name: Generate meta and build
       run: |
         npm run meta
