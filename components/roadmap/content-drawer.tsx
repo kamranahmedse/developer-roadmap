@@ -3,7 +3,7 @@ import { RemoveScroll } from 'react-remove-scroll';
 import { RoadmapType } from '../../lib/roadmap';
 import RoadmapGroup from '../../pages/[roadmap]/[group]';
 import { CheckIcon, CloseIcon, RepeatIcon } from '@chakra-ui/icons';
-import { queryGroupElementsById } from '../../lib/renderer/utils';
+import { queryGroupElementsById } from '../../lib/renderer';
 
 type ContentDrawerProps = {
   roadmap: RoadmapType;
