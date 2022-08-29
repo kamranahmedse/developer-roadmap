@@ -1,6 +1,6 @@
 # Object
 
-JavaScript object is a type of data structure in which there can be multiple properties with key values or types of it in pairs. Compair it to a real object, a pen is an object, with properties. A pen has a color, a design, a material it is made of, etc. The same way, JavaScript objects can have properties, which define their characteristics.
+JavaScript object is a data structure that allows us to have key-value pairs; so we can have distinct keys and each key is mapped to a value that can be of any JavaScript data type. Comparing it to a real-world object, a pen is an object with several properties such as color, design, the material it is made of, etc. In the same way, JavaScript objects can have properties that define their characteristics.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
