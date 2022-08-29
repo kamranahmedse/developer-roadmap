@@ -77,7 +77,7 @@ export default function Home(props: HomeProps) {
                 target={'_blank'}
                 key={video.id}
                 href={video.youtubeLink!}
-                badgeText={video.isNew ? 'NEW' : ''}
+                badgeText={video.isNew ? `NEW · ${(new Date(video.createdAt)).toLocaleDateString('en-us', { month: 'long'})}` : ''}
                 hideSubtitleOnMobile
                 title={video.title}
                 subtitle={video.duration}
