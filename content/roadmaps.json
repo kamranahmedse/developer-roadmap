@@ -273,6 +273,7 @@
     "featuredDescription": "Step by step guide to become a Vue Developer in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
+    "isNew": true,
     "featured": true,
     "jsonUrl": "/project/vue.json",
     "resourcesPath": "/roadmaps/105-vue/resources.md",
@@ -321,6 +322,7 @@
     "featuredDescription": "Step by step guide to learn JavaScript in 2022",
     "isTextHeavy": false,
     "isCommunity": false,
+    "isNew": true,
     "featured": true,
     "jsonUrl": "/project/javascript.json",
     "versions": [
@@ -438,6 +440,7 @@
     "featuredTitle": "Node.js",
     "featuredDescription": "Step by step guide to becoming a Node.js developer in 2022",
     "type": "tool",
+    "isNew": true,
     "author": {
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
@@ -682,6 +685,7 @@
     "featuredDescription": "Step by step guide to becoming a blockchain developer in 2022",
     "featured": true,
     "type": "role",
+    "isNew": true,
     "imageUrl": "/roadmaps/blockchain.png",
     "jsonUrl": "/project/blockchain.json",
     "author": {

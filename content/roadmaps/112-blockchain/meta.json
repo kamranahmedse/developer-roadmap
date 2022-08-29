@@ -38,6 +38,7 @@
   "featuredDescription": "Step by step guide to becoming a blockchain developer in 2022",
   "featured": true,
   "type": "role",
+  "isNew": true,
   "imageUrl": "/roadmaps/blockchain.png",
   "jsonUrl": "/project/blockchain.json",
   "author": {

@@ -18,6 +18,7 @@ export type RoadmapType = {
   featured: boolean;
   imageUrl?: string;
   jsonUrl?: string;
+  isNew?: boolean;
   landingPath?: string;
   resourcesPath: string;
   contentPathsFilePath?: string;

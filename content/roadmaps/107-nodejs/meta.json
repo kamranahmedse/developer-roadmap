@@ -56,6 +56,7 @@
   "featuredTitle": "Node.js",
   "featuredDescription": "Step by step guide to becoming a Node.js developer in 2022",
   "type": "tool",
+  "isNew": true,
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
