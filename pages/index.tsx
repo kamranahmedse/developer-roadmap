@@ -102,7 +102,7 @@ export default function Home(props: HomeProps) {
         <Container maxW="container.md" position="relative">
           <Box pt="40px" mb="20px">
             <Heading color="green.500" fontSize="25px" mb="5px">
-              Visual Guides
+              Guides
             </Heading>
           </Box>
 
@@ -112,8 +112,8 @@ export default function Home(props: HomeProps) {
                 key={guide.id}
                 href={`/guides/${guide.id}`}
                 title={guide.title}
-                badgeText={guide.isNew ? 'NEW' : ''}
-                subtitle={guide.formattedUpdatedAt!}
+                badgeText={guide.isNew ? `NEW · ${(new Date(guide.createdAt)).toLocaleDateString('en-us', { month: 'long'})}` : ''}
+                subtitle={`${guide?.type?.charAt(0).toUpperCase()}${guide?.type?.slice(1)}`}
               />
             ))}
             <DimmedMore href={'/guides'} text="View all Guides" />
