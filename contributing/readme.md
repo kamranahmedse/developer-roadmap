@@ -1,6 +1,6 @@
 ## The Goal
 
-* For the roadmaps, we encourage you to discuss and contribute to new roadmaps. For the existing ones, please note that our goal is to not have the biggest list of items. Our goal is to have a list of items or skills most relevant today.
+* For the roadmaps, we encourage you to discuss and contribute by adding new roadmaps. For the existing ones, please note that our goal is not to have the biggest list of items. Our goal is to list items or skills most relevant today.
 * For the resources, please note that they are *highly opinionated* and *curated*. Your opinion on the value of any resource may not match the opinion of the curator.  
 
 ## Contributing
