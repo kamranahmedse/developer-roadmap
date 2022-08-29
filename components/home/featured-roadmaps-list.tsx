@@ -23,6 +23,7 @@ export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
             colorIndex={counter}
             title={roadmap.featuredTitle}
             isCommunity={roadmap.isCommunity}
+            isNew={roadmap.isNew}
             subtitle={roadmap.featuredDescription}
           />
         ))}

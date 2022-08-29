@@ -28,6 +28,7 @@
   "featuredDescription": "Step by step guide to learn JavaScript in 2022",
   "isTextHeavy": false,
   "isCommunity": false,
+  "isNew": true,
   "featured": true,
   "jsonUrl": "/project/javascript.json",
   "versions": [

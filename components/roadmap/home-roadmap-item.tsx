@@ -1,4 +1,4 @@
-import { Box, Flex, Heading, Link, Text, Tooltip } from '@chakra-ui/react';
+import { Badge, Box, Flex, Heading, Link, Text, Tooltip } from '@chakra-ui/react';
 import { InfoIcon } from '@chakra-ui/icons';
 
 type RoadmapGridItemProps = {
@@ -7,6 +7,7 @@ type RoadmapGridItemProps = {
   isCommunity?: boolean;
   isUpcoming?: boolean;
   colorIndex?: number;
+  isNew?: boolean;
   url: string;
 };
 
@@ -21,7 +22,7 @@ const bgColorList = [
   'teal.200',
   'yellow.100',
   'green.200',
-  'red.200',
+  'red.200'
 ];
 
 export function HomeRoadmapItem(props: RoadmapGridItemProps) {
@@ -29,9 +30,10 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
     title,
     subtitle,
     isCommunity,
+    isNew,
     colorIndex = 0,
     url,
-    isUpcoming,
+    isUpcoming
   } = props;
 
   return (
@@ -40,66 +42,70 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
       href={url}
       _hover={{
         textDecoration: 'none',
-        bg: 'rgba(255,255,255,.10)',
+        bg: 'rgba(255,255,255,.10)'
       }}
       sx={{
         // On mobile devices, don't change the scale
         '@media (hover: none)': {
           '&:hover': {
-            bg: 'rgba(255,255,255,.05)',
-          },
-        },
+            bg: 'rgba(255,255,255,.05)'
+          }
+        }
       }}
       flex={1}
-      shadow="2xl"
+      shadow='2xl'
       className={'home-roadmap-item'}
       bg={'rgba(255,255,255,.05)'}
-      color="white"
-      p="15px"
-      rounded="10px"
-      pos="relative"
+      color='white'
+      p='15px'
+      rounded='10px'
+      pos='relative'
     >
       {isCommunity && (
-        <Tooltip label={'Community contribution'} hasArrow placement="top">
-          <InfoIcon opacity={0.5} position="absolute" top="10px" right="10px" />
+        <Tooltip label={'Community contribution'} hasArrow placement='top'>
+          <InfoIcon opacity={0.5} position='absolute' top='10px' right='10px' />
         </Tooltip>
       )}
 
       <Heading
         fontSize={['17px', '17px', '22px']}
         color={bgColorList[colorIndex]}
-        mb="5px"
+        mb='5px'
+        d='flex'
+        alignItems='center'
       >
         {title}
+
+        { isNew && <Badge colorScheme='yellow' ml='10px'>New</Badge> }
       </Heading>
-      <Text color="gray.200" fontSize={['13px']}>
+      <Text color='gray.200' fontSize={['13px']}>
         {subtitle}
       </Text>
 
       {isUpcoming && (
         <Flex
-          alignItems="center"
-          justifyContent="center"
-          pos="absolute"
+          alignItems='center'
+          justifyContent='center'
+          pos='absolute'
           left={0}
           right={0}
           top={0}
           bottom={0}
-          rounded="10px"
+          rounded='10px'
         >
           <Text
-            color="white"
-            bg="gray.600"
+            color='white'
+            bg='gray.600'
             zIndex={1}
             fontWeight={600}
             p={'5px 10px'}
-            rounded="10px"
+            rounded='10px'
           >
             Upcoming
           </Text>
           <Box
             bg={'black'}
-            pos="absolute"
+            pos='absolute'
             top={0}
             left={0}
             right={0}
