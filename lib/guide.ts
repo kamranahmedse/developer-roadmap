@@ -11,6 +11,7 @@ export type GuideType = {
   createdAt: string;
   updatedAt: string;
   formattedCreatedAt?: string;
+  type?: 'visual' | 'textual';
   formattedUpdatedAt?: string;
   authorUsername: string;
   author?: AuthorType;
