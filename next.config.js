@@ -48,7 +48,18 @@ let nextConfig = {
     });
 
     return config;
-  }
+  },
+
+  async redirects() {
+    return [
+      {
+        source: '/node.js',
+        destination: '/nodejs',
+        permanent: true,
+      },
+    ]
+  },
+
 };
 
 nextConfig = withMDX(nextConfig);
