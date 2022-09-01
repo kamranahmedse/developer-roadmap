@@ -23,7 +23,7 @@
   "type": "role",
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
   "featured": true,
-  "isNew": true,  
+  "isNew": true,
   "resourcesPath": "./resources.md",
   "imageUrl": "/roadmaps/qa.png",
   "jsonUrl": "/project/qa.json",
