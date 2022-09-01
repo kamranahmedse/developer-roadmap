@@ -31,5 +31,6 @@
   "author": {
     "name": "Anas Fitiani",
     "url": "https://github.com/anas-qa"
-  }
+  },
+  "contentPathsFilePath": "./content-paths.json"
 }

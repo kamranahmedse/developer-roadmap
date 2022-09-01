@@ -732,6 +732,7 @@
       "name": "Anas Fitiani",
       "url": "https://github.com/anas-qa"
     },
+    "contentPathsFilePath": "/roadmaps/113-qa/content-paths.json",
     "id": "qa",
     "metaPath": "/roadmaps/113-qa/meta.json",
     "isUpcoming": false

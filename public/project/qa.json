@@ -6489,7 +6489,7 @@
           "x": "691",
           "y": "1363",
           "properties": {
-            "controlName": "101-qa-automated-testing:frontend-automation:brower-addons"
+            "controlName": "101-qa-automated-testing:frontend-automation:browser-addons"
           },
           "children": {
             "controls": {

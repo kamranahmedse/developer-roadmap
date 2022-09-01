@@ -1,0 +1,1 @@
+# Qa automated testing
