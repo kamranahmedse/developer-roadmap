@@ -47,7 +47,7 @@ function RoadmapDownloader() {
         Download
       </Button>
 
-      <Modal initialFocusRef={initialRef} closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} isCentered>
+      <Modal initialFocusRef={initialRef} closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} isCentered motionPreset='none'>
         <ModalOverlay />
         <ModalContent>
           <ModalCloseButton />
