@@ -1,4 +1,4 @@
-# Node.js Testing
+# Testing
 
 Software testing is the process of verifying that what we create is doing exactly what we expect it to do. The tests are created to prevent bugs and improve code quality.
 
