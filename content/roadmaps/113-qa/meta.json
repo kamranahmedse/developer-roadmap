@@ -22,9 +22,12 @@
   "featuredTitle": "QA",
   "type": "role",
   "featuredDescription": "Step by step guide to becoming a modern QA Engineer in 2022",
-  "isUpcoming": true,
   "featured": true,
+  "isNew": true,  
   "resourcesPath": "./resources.md",
+  "imageUrl": "/roadmaps/qa.png",
+  "jsonUrl": "/project/qa.json",
+  "pdfUrl": "/pdfs/qa.pdf",
   "author": {
     "name": "Anas Fitiani",
     "url": "https://github.com/anas-qa"
