@@ -22,19 +22,27 @@ import {
 import { AtSignIcon, ChatIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../../pages/signup';
+import { event } from '../../lib/gtag';
 
 type RoadmapPageHeaderType = {
   roadmap: RoadmapType;
 };
 
-function RoadmapDownloader() {
+function RoadmapDownloader({ roadmapTitle }: { roadmapTitle: string }) {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const initialRef = React.useRef(null);
 
   return (
     <>
       <Button
-        onClick={onOpen}
+        onClick={(e) => {
+          event({
+            category: 'Subscription',
+            action: `Clicked Download ${roadmapTitle} Roadmap`,
+            label: `Download ${roadmapTitle} Roadmap Button`
+          });
+          onOpen();
+        }}
         size='xs'
         py='14px'
         px='10px'
@@ -54,7 +62,15 @@ function RoadmapDownloader() {
           <ModalBody p={6}>
             <Heading mb='5px' fontSize='2xl'>Download Roadmap</Heading>
             <Text fontSize={'md'} color='gray.700'>Enter your email below to receive the download link.</Text>
-            <form action={SIGNUP_FORM_ACTION} method='post' target='_blank' onSubmit={onClose}>
+            <form action={SIGNUP_FORM_ACTION} method='post' target='_blank' onSubmit={() => {
+              event({
+                category: 'Subscription',
+                action: `Submitted Download ${roadmapTitle} Roadmap Email`,
+                label: `PDF / Subscribe ${roadmapTitle} Roadmap`
+              });
+
+              onClose();
+            }}>
               <Input required ref={initialRef} size='md' my='10px' type='email' placeholder='Email address' name={SIGNUP_EMAIL_INPUT_NAME}  />
               <Button type='submit' colorScheme='green' size='md' width={'full'}>Send Link</Button>
             </form>
@@ -106,7 +122,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               </Text>
             </Button>
 
-            <RoadmapDownloader />
+            <RoadmapDownloader roadmapTitle={roadmap.featuredTitle} />
 
             <Button
               as={Link}
