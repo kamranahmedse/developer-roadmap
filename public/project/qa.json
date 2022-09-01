@@ -293,7 +293,7 @@
           "x": "127",
           "y": "368",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -548,7 +548,7 @@
           "x": "931",
           "y": "368",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -606,7 +606,7 @@
           "x": "680",
           "y": "762",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -896,7 +896,7 @@
           "x": "989",
           "y": "762",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -1143,7 +1143,7 @@
           "x": "680",
           "y": "832",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -1336,7 +1336,7 @@
           "x": "763",
           "y": "604",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -1684,7 +1684,7 @@
           "x": "54",
           "y": "701",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -1711,7 +1711,7 @@
           "x": "54",
           "y": "649",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2311,7 +2311,7 @@
           "x": "400",
           "y": "625",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2427,7 +2427,7 @@
           "x": "55",
           "y": "1178",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2454,7 +2454,7 @@
           "x": "420",
           "y": "1078",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2879,7 +2879,7 @@
           "x": "691",
           "y": "1178",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2937,7 +2937,7 @@
           "x": "693",
           "y": "1309",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2964,7 +2964,7 @@
           "x": "691",
           "y": "1363",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -2991,7 +2991,7 @@
           "x": "693",
           "y": "1417",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -4017,7 +4017,7 @@
           "x": "55",
           "y": "1571",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -4415,7 +4415,7 @@
           "x": "381",
           "y": "1650",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -4585,7 +4585,7 @@
           "x": "991",
           "y": "1784",
           "properties": {
-            "color": "65535"
+            "color": "16777181"
           }
         },
         {
@@ -6740,156 +6740,139 @@
             "controls": {
               "control": [
                 {
-                  "ID": "0",
-                  "typeID": "__group__",
+                  "ID": "1",
+                  "typeID": "TextArea",
                   "zOrder": "0",
-                  "measuredW": "295",
-                  "measuredH": "157",
                   "w": "295",
                   "h": "157",
+                  "measuredW": "200",
+                  "measuredH": "140",
                   "x": "0",
-                  "y": "0",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "TextArea",
-                          "zOrder": "0",
-                          "w": "295",
-                          "h": "157",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "0",
-                          "y": "0"
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "TextArea",
-                          "zOrder": "1",
-                          "w": "121",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "21",
-                          "y": "45",
-                          "properties": {
-                            "color": "16776960",
-                            "borderColor": "16777215"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "90",
-                          "measuredH": "24",
-                          "x": "34",
-                          "y": "55",
-                          "properties": {
-                            "size": "16",
-                            "text": "Parent Topic"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "TextArea",
-                          "zOrder": "3",
-                          "w": "121",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "148",
-                          "y": "45",
-                          "properties": {
-                            "color": "65535",
-                            "borderColor": "16777215"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "63",
-                          "measuredH": "24",
-                          "x": "177",
-                          "y": "55",
-                          "properties": {
-                            "size": "16",
-                            "text": "Subtopic"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "TextArea",
-                          "zOrder": "5",
-                          "w": "121",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "21",
-                          "y": "92",
-                          "properties": {
-                            "color": "16770457",
-                            "borderColor": "16777215"
-                          }
-                        },
-                        {
-                          "ID": "6",
-                          "typeID": "Label",
-                          "zOrder": "6",
-                          "measuredW": "62",
-                          "measuredH": "24",
-                          "x": "51",
-                          "y": "102",
-                          "properties": {
-                            "size": "16",
-                            "text": "Concept"
-                          }
-                        },
-                        {
-                          "ID": "7",
-                          "typeID": "TextArea",
-                          "zOrder": "7",
-                          "w": "121",
-                          "h": "44",
-                          "measuredW": "200",
-                          "measuredH": "140",
-                          "x": "148",
-                          "y": "92",
-                          "properties": {
-                            "color": "16767334",
-                            "borderColor": "16777215"
-                          }
-                        },
-                        {
-                          "ID": "8",
-                          "typeID": "Label",
-                          "zOrder": "8",
-                          "measuredW": "30",
-                          "measuredH": "24",
-                          "x": "194",
-                          "y": "102",
-                          "properties": {
-                            "size": "16",
-                            "text": "Tool"
-                          }
-                        },
-                        {
-                          "ID": "9",
-                          "typeID": "Label",
-                          "zOrder": "9",
-                          "measuredW": "64",
-                          "measuredH": "24",
-                          "x": "25",
-                          "y": "14",
-                          "properties": {
-                            "size": "16",
-                            "text": "Legends"
-                          }
-                        }
-                      ]
-                    }
+                  "y": "0"
+                },
+                {
+                  "ID": "2",
+                  "typeID": "TextArea",
+                  "zOrder": "1",
+                  "w": "121",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "21",
+                  "y": "45",
+                  "properties": {
+                    "color": "16776960",
+                    "borderColor": "16777215"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "90",
+                  "measuredH": "24",
+                  "x": "34",
+                  "y": "55",
+                  "properties": {
+                    "size": "16",
+                    "text": "Parent Topic"
+                  }
+                },
+                {
+                  "ID": "4",
+                  "typeID": "TextArea",
+                  "zOrder": "3",
+                  "w": "121",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "148",
+                  "y": "45",
+                  "properties": {
+                    "borderColor": "16777215",
+                    "color": "16777181"
+                  }
+                },
+                {
+                  "ID": "5",
+                  "typeID": "Label",
+                  "zOrder": "4",
+                  "measuredW": "63",
+                  "measuredH": "24",
+                  "x": "177",
+                  "y": "55",
+                  "properties": {
+                    "size": "16",
+                    "text": "Subtopic"
+                  }
+                },
+                {
+                  "ID": "6",
+                  "typeID": "TextArea",
+                  "zOrder": "5",
+                  "w": "121",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "21",
+                  "y": "92",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16777215"
+                  }
+                },
+                {
+                  "ID": "7",
+                  "typeID": "Label",
+                  "zOrder": "6",
+                  "measuredW": "62",
+                  "measuredH": "24",
+                  "x": "51",
+                  "y": "102",
+                  "properties": {
+                    "size": "16",
+                    "text": "Concept"
+                  }
+                },
+                {
+                  "ID": "8",
+                  "typeID": "TextArea",
+                  "zOrder": "7",
+                  "w": "121",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "148",
+                  "y": "92",
+                  "properties": {
+                    "color": "16767334",
+                    "borderColor": "16777215"
+                  }
+                },
+                {
+                  "ID": "9",
+                  "typeID": "Label",
+                  "zOrder": "8",
+                  "measuredW": "30",
+                  "measuredH": "24",
+                  "x": "194",
+                  "y": "102",
+                  "properties": {
+                    "size": "16",
+                    "text": "Tool"
+                  }
+                },
+                {
+                  "ID": "10",
+                  "typeID": "Label",
+                  "zOrder": "9",
+                  "measuredW": "64",
+                  "measuredH": "24",
+                  "x": "25",
+                  "y": "14",
+                  "properties": {
+                    "size": "16",
+                    "text": "Legends"
                   }
                 }
               ]
