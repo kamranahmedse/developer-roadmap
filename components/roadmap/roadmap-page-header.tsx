@@ -51,6 +51,7 @@ function RoadmapDownloader({ roadmapTitle }: { roadmapTitle: string }) {
         colorScheme='yellow'
         variant='solid'
         _hover={{ textDecoration: 'none' }}
+        _focus={{ boxShadow: 'none' }}
       >
         Download
       </Button>
