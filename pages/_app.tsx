@@ -41,6 +41,8 @@ const GlobalStyles = css`
     &:hover > [fill="rgb(255,229,153)"] { fill: #f3c950; }
     &:hover > [fill="rgb(153,153,153)"] { fill: #646464; }
     &:hover > [fill="rgb(255,255,255)"] { fill: #d7d7d7; }
+    &:hover > [fill="rgb(255,255,221)"] { fill: #e5e5be; }
+    &:hover > [fill="rgb(255,217,102)"] { fill: #d9b443; }
   }
   
   svg .done {

@@ -48,6 +48,7 @@ const roadmaps: Record<string, RoadmapType> = {
   blockchain: require('../public/project/blockchain.json'),
   javascript: require('../public/project/javascript.json'),
   nodejs: require('../public/project/nodejs.json'),
+  qa: require('../public/project/qa.json'),
 };
 
 if (!roadmapKey || !roadmaps[roadmapKey]) {
