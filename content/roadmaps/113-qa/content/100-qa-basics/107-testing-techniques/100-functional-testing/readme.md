@@ -4,6 +4,4 @@ Functional testing is a type of software testing that validates the software sys
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/functional-testing.html'>What is Functional Testing? Types & Examples</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.browserstack.com/guide/functional-testing'>Functional Testing : A Detailed Guide
-</BadgeLink>
-
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.browserstack.com/guide/functional-testing'>Functional Testing : A Detailed Guide</BadgeLink>
