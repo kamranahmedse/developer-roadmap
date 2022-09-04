@@ -4,4 +4,5 @@ JavaScript is an object-oriented language built around a prototype model. In Jav
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.codeguage.com/courses/js/objects-prototypes'>Prototypes in JavaScript - A Comprehensive Guide</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/prototypes'>Prototypes, Inheritance</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/Object_prototypes'>Object prototypes - MDN</BadgeLink>
