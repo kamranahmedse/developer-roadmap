@@ -1,6 +1,6 @@
 # Bcrypt
 
-bcrypt is a password hashing function, that has proven been proven reliable and secure since it's release in 1999.It has been implemented into most commonly-used programming languages.
+bcrypt is a password hashing function, that has been proven reliable and secure since it's release in 1999. It has been implemented into most commonly-used programming languages.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=O6cmuiTBZVs'>bcrypt explained</BadgeLink>
