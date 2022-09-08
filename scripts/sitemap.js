@@ -75,7 +75,7 @@ function generateNode(nodeProps) {
     frequency = 'monthly',
   } = nodeProps;
 
-  if (slug.includes('upcoming')) {
+  if (slug.includes('upcoming') || slug.includes('pdfs')) {
     return null;
   }
 
