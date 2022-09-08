@@ -1,5 +1,16 @@
 [
   {
+    "id": "graph-data-structure",
+    "title": "Graph Data Structure",
+    "description": "Learn everything you need to know about the graph data structure",
+    "isNew": true,
+    "youtubeLink": "https://www.youtube.com/watch?v=0sQE8zKhad0",
+    "authorUsername": "kamranahmedse",
+    "duration": "13 minutes",
+    "updatedAt": "2022-09-08T19:59:14.191Z",
+    "createdAt": "2022-09-08T19:59:14.191Z"
+  },
+  {
     "id": "heap-data-structure",
     "title": "Heap Data Structure",
     "description": "Learn everything you need to know about the heap data structure",
