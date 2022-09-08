@@ -1,6 +1,5 @@
-import { Badge, Box, Container, Heading, Link, Text } from '@chakra-ui/react';
+import { Box, Container, Heading, Text } from '@chakra-ui/react';
 import React from 'react';
-import siteConfig from '../content/site.json';
 
 type PageHeaderProps = {
   title: string;

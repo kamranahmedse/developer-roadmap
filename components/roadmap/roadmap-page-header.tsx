@@ -101,7 +101,7 @@ function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
         py='14px'
         px='10px'
         leftIcon={<AtSignIcon />}
-        display={['none', 'flex']}
+        display={'flex'}
         colorScheme='yellow'
         variant='solid'
         _hover={{ textDecoration: 'none' }}
