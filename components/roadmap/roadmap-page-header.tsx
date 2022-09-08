@@ -82,6 +82,60 @@ function RoadmapDownloader({ roadmapTitle }: { roadmapTitle: string }) {
   );
 }
 
+function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+  const initialRef = React.useRef(null);
+
+  return (
+    <>
+      <Button
+        onClick={(e) => {
+          event({
+            category: 'Subscription',
+            action: `Clicked Subscribe ${roadmapTitle} Roadmap`,
+            label: `Subscribe ${roadmapTitle} Roadmap Button`
+          });
+          onOpen();
+        }}
+        size='xs'
+        py='14px'
+        px='10px'
+        leftIcon={<AtSignIcon />}
+        display={['none', 'flex']}
+        colorScheme='yellow'
+        variant='solid'
+        _hover={{ textDecoration: 'none' }}
+        _focus={{ boxShadow: 'none' }}
+      >
+        Subscribe
+      </Button>
+
+      <Modal initialFocusRef={initialRef} closeOnOverlayClick={true} isOpen={isOpen} onClose={onClose} isCentered motionPreset='none'>
+        <ModalOverlay />
+        <ModalContent>
+          <ModalCloseButton />
+          <ModalBody p={6}>
+            <Heading mb='5px' fontSize='2xl'>Subscribe</Heading>
+            <Text fontSize={'md'} color='gray.700'>Enter your below to receive updates to this roadmap.</Text>
+            <form action={SIGNUP_FORM_ACTION} method='post' target='_blank' onSubmit={() => {
+              event({
+                category: 'Subscription',
+                action: `Submitted Subscribe ${roadmapTitle} Roadmap Email`,
+                label: `Email / Subscribe ${roadmapTitle} Roadmap`
+              });
+
+              onClose();
+            }}>
+              <Input required ref={initialRef} size='md' my='10px' type='email' placeholder='Email address' name={SIGNUP_EMAIL_INPUT_NAME}  />
+              <Button type='submit' colorScheme='green' size='md' width={'full'}>Subscribe Roadmap</Button>
+            </form>
+          </ModalBody>
+        </ModalContent>
+      </Modal>
+    </>
+  );
+}
+
 export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
   const { roadmap } = props;
 
@@ -124,20 +178,8 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             </Button>
 
             <RoadmapDownloader roadmapTitle={roadmap.featuredTitle} />
+            <RoadmapSubscriber roadmapTitle={roadmap.featuredTitle} />
 
-            <Button
-              as={Link}
-              href={'/signup'}
-              size='xs'
-              py='14px'
-              px='10px'
-              variant='solid'
-              colorScheme='yellow'
-              leftIcon={<AtSignIcon />}
-              _hover={{ textDecoration: 'none' }}
-            >
-              Subscribe
-            </Button>
             <Box flex={1} justifyContent='flex-end' d='flex'>
               <Button
                 as={Link}
