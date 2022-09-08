@@ -10,6 +10,7 @@ import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header'
 import { InteractiveRoadmapRenderer } from './interactive';
 import { FreeSignUp, SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../signup';
 import { BellIcon, EmailIcon } from '@chakra-ui/icons';
+import { RelatedRoadmaps } from '../../components/related-roadmaps';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -88,13 +89,13 @@ export default function Roadmap(props: RoadmapProps) {
         keywords={roadmap?.seo.keywords || []}
         roadmap={roadmap}
       />
-      <Box mb='60px'>
+      <Box  mb='60px'>
         <RoadmapPageHeader roadmap={roadmap} />
         <ImageRoadmap roadmap={roadmap} />
         <TextualRoadmap roadmap={roadmap} />
         <UpcomingRoadmap roadmap={roadmap} />
       </Box>
-
+      <RelatedRoadmaps roadmaps={[]} />
       <OpensourceBanner />
       <Footer />
     </Box>

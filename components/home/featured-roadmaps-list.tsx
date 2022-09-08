@@ -5,7 +5,6 @@ import { HomeRoadmapItem } from '../roadmap/home-roadmap-item';
 type FeaturedRoadmapsListProps = {
   roadmaps: RoadmapType[];
   title: string;
-
 };
 
 export const upcomingRoadmaps = [
