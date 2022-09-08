@@ -127,7 +127,7 @@ function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
               onClose();
             }}>
               <Input required ref={initialRef} size='md' my='10px' type='email' placeholder='Email address' name={SIGNUP_EMAIL_INPUT_NAME}  />
-              <Button type='submit' colorScheme='green' size='md' width={'full'}>Subscribe Roadmap</Button>
+              <Button type='submit' colorScheme='green' size='md' width={'full'}>Subscribe</Button>
             </form>
           </ModalBody>
         </ModalContent>
