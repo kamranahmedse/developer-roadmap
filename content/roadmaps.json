@@ -46,6 +46,13 @@
     "resourcesPath": "/roadmaps/100-frontend/resources.md",
     "pdfUrl": "/pdfs/frontend.pdf",
     "contentPathsFilePath": "/roadmaps/100-frontend/content-paths.json",
+    "relatedRoadmaps": [
+      "javascript",
+      "nodejs",
+      "react",
+      "angular",
+      "vue"
+    ],
     "id": "frontend",
     "metaPath": "/roadmaps/100-frontend/meta.json",
     "isUpcoming": false
@@ -96,6 +103,15 @@
     },
     "pdfUrl": "/pdfs/backend.pdf",
     "contentPathsFilePath": "/roadmaps/101-backend/content-paths.json",
+    "relatedRoadmaps": [
+      "python",
+      "java",
+      "golang",
+      "devops",
+      "javascript",
+      "nodejs",
+      "postgresql-dba"
+    ],
     "id": "backend",
     "metaPath": "/roadmaps/101-backend/meta.json",
     "isUpcoming": false
@@ -145,6 +161,14 @@
     },
     "pdfUrl": "/pdfs/devops.pdf",
     "contentPathsFilePath": "/roadmaps/102-devops/content-paths.json",
+    "relatedRoadmaps": [
+      "backend",
+      "python",
+      "java",
+      "golang",
+      "javascript",
+      "nodejs"
+    ],
     "id": "devops",
     "metaPath": "/roadmaps/102-devops/meta.json",
     "isUpcoming": false
@@ -190,6 +214,13 @@
     },
     "pdfUrl": "/pdfs/react.pdf",
     "contentPathsFilePath": "/roadmaps/103-react/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "javascript",
+      "angular",
+      "vue",
+      "nodejs"
+    ],
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",
     "isUpcoming": false
@@ -233,6 +264,13 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "pdfUrl": "/pdfs/angular.pdf",
+    "relatedRoadmaps": [
+      "frontend",
+      "javascript",
+      "react",
+      "vue",
+      "nodejs"
+    ],
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false
@@ -288,6 +326,13 @@
     },
     "pdfUrl": "/pdfs/vue.pdf",
     "contentPathsFilePath": "/roadmaps/105-vue/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "javascript",
+      "react",
+      "angular",
+      "nodejs"
+    ],
     "id": "vue",
     "metaPath": "/roadmaps/105-vue/meta.json",
     "isUpcoming": false
@@ -336,6 +381,15 @@
     },
     "pdfUrl": "/pdfs/javascript.pdf",
     "contentPathsFilePath": "/roadmaps/106-javascript/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "javascript",
+      "react",
+      "angular",
+      "vue",
+      "nodejs"
+    ],
     "id": "javascript",
     "metaPath": "/roadmaps/106-javascript/meta.json",
     "isUpcoming": false
@@ -378,6 +432,12 @@
       "name": "Kamran Ahmed",
       "url": "https://twitter.com/kamranahmedse"
     },
+    "relatedRoadmaps": [
+      "frontend",
+      "javascript",
+      "react",
+      "nodejs"
+    ],
     "id": "android",
     "metaPath": "/roadmaps/107-android/meta.json",
     "isUpcoming": false
@@ -450,6 +510,14 @@
     "jsonUrl": "/project/nodejs.json",
     "pdfUrl": "/pdfs/nodejs.pdf",
     "contentPathsFilePath": "/roadmaps/107-nodejs/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "javascript",
+      "react",
+      "angular",
+      "vue"
+    ],
     "id": "nodejs",
     "metaPath": "/roadmaps/107-nodejs/meta.json",
     "isUpcoming": false
@@ -491,6 +559,14 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "contentPathsFilePath": "/roadmaps/108-python/content-paths.json",
+    "relatedRoadmaps": [
+      "backend",
+      "devops",
+      "golang",
+      "java",
+      "javascript",
+      "nodejs"
+    ],
     "id": "python",
     "metaPath": "/roadmaps/108-python/meta.json",
     "isUpcoming": false
@@ -545,6 +621,14 @@
       "url": "https://twitter.com/kamranahmedse"
     },
     "contentPathsFilePath": "/roadmaps/109-golang/content-paths.json",
+    "relatedRoadmaps": [
+      "backend",
+      "devops",
+      "python",
+      "java",
+      "javascript",
+      "nodejs"
+    ],
     "id": "golang",
     "metaPath": "/roadmaps/109-golang/meta.json"
   },
@@ -597,6 +681,14 @@
     },
     "pdfUrl": "/pdfs/java.pdf",
     "contentPathsFilePath": "/roadmaps/110-java/content-paths.json",
+    "relatedRoadmaps": [
+      "backend",
+      "devops",
+      "python",
+      "golang",
+      "javascript",
+      "nodejs"
+    ],
     "id": "java",
     "metaPath": "/roadmaps/110-java/meta.json"
   },
@@ -641,6 +733,10 @@
     "featured": true,
     "detailed": false,
     "versions": [],
+    "relatedRoadmaps": [
+      "backend",
+      "devops"
+    ],
     "id": "postgresql-dba",
     "metaPath": "/roadmaps/111-postgresql-dba/meta.json",
     "isUpcoming": false
@@ -694,6 +790,15 @@
     },
     "pdfUrl": "/pdfs/blockchain.pdf",
     "contentPathsFilePath": "/roadmaps/112-blockchain/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "javascript",
+      "nodejs",
+      "react",
+      "vue",
+      "angular"
+    ],
     "id": "blockchain",
     "metaPath": "/roadmaps/112-blockchain/meta.json",
     "isUpcoming": false
@@ -733,6 +838,13 @@
       "url": "https://github.com/anas-qa"
     },
     "contentPathsFilePath": "/roadmaps/113-qa/content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "devops",
+      "javascript",
+      "nodejs"
+    ],
     "id": "qa",
     "metaPath": "/roadmaps/113-qa/meta.json",
     "isUpcoming": false

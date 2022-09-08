@@ -32,5 +32,12 @@
     "name": "Anas Fitiani",
     "url": "https://github.com/anas-qa"
   },
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "frontend",
+    "backend",
+    "devops",
+    "javascript",
+    "nodejs"
+  ]
 }

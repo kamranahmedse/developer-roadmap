@@ -34,5 +34,13 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "backend",
+    "devops",
+    "golang",
+    "java",
+    "javascript",
+    "nodejs"
+  ]
 }

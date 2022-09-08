@@ -42,5 +42,13 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "pdfUrl": "/pdfs/devops.pdf",
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "backend",
+    "python",
+    "java",
+    "golang",
+    "javascript",
+    "nodejs"
+  ]
 }

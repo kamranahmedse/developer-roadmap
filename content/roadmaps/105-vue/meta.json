@@ -48,5 +48,12 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "pdfUrl": "/pdfs/vue.pdf",
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "frontend",
+    "javascript",
+    "react",
+    "angular",
+    "nodejs"
+  ]
 }

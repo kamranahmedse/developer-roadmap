@@ -14,7 +14,7 @@ export type RoadmapType = {
     name: string;
     url: string;
   };
-  type: "role" | "tool";
+  type: 'role' | 'tool';
   featured: boolean;
   imageUrl?: string;
   jsonUrl?: string;
@@ -27,6 +27,7 @@ export type RoadmapType = {
   isUpcoming: boolean;
   id: string;
   pdfUrl?: string;
+  relatedRoadmaps?: string[];
 };
 
 export function getRoadmapById(id: string): RoadmapType | undefined {
@@ -35,6 +36,10 @@ export function getRoadmapById(id: string): RoadmapType | undefined {
 
 export function getAllRoadmaps(): RoadmapType[] {
   return roadmaps as RoadmapType[];
+}
+
+export function filterRoadmapsByIds(ids: string[]): RoadmapType[] {
+  return (roadmaps as RoadmapType[]).filter(roadmap => ids.includes(roadmap.id));
 }
 
 export function getFeaturedRoadmaps(): RoadmapType[] {

@@ -38,5 +38,9 @@
   "isTextHeavy": true,
   "featured": true,
   "detailed": false,
-  "versions": []
+  "versions": [],
+  "relatedRoadmaps": [
+    "backend",
+    "devops"
+  ]
 }

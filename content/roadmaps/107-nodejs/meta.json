@@ -65,5 +65,13 @@
   "imageUrl": "/roadmaps/nodejs.png",
   "jsonUrl": "/project/nodejs.json",
   "pdfUrl": "/pdfs/nodejs.pdf",
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "frontend",
+    "backend",
+    "javascript",
+    "react",
+    "angular",
+    "vue"
+  ]
 }

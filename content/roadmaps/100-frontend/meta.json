@@ -44,5 +44,12 @@
   "jsonUrl": "/project/frontend.json",
   "resourcesPath": "./resources.md",
   "pdfUrl": "/pdfs/frontend.pdf",
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "javascript",
+    "nodejs",
+    "react",
+    "angular",
+    "vue"
+  ]
 }

@@ -46,5 +46,14 @@
     "url": "https://twitter.com/danielgruesso"
   },
   "pdfUrl": "/pdfs/blockchain.pdf",
-  "contentPathsFilePath": "./content-paths.json"
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "frontend",
+    "backend",
+    "javascript",
+    "nodejs",
+    "react",
+    "vue",
+    "angular"
+  ]
 }

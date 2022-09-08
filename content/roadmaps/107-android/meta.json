@@ -35,5 +35,11 @@
   "author": {
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
-  }
+  },
+  "relatedRoadmaps": [
+    "frontend",
+    "javascript",
+    "react",
+    "nodejs"
+  ]
 }

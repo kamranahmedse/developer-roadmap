@@ -36,5 +36,12 @@
     "name": "Kamran Ahmed",
     "url": "https://twitter.com/kamranahmedse"
   },
-  "pdfUrl": "/pdfs/angular.pdf"
+  "pdfUrl": "/pdfs/angular.pdf",
+  "relatedRoadmaps": [
+    "frontend",
+    "javascript",
+    "react",
+    "vue",
+    "nodejs"
+  ]
 }
