@@ -65,13 +65,13 @@ npm run dev
 > Have a look at [contribution docs](./contributing) for how to update any of the roadmaps
 
 - Suggest changes to existing roadmaps
-- Improve the site's codebase
-- Add new Roadmap
+- [Add content to roadmaps](https://github.com/kamranahmedse/developer-roadmap/issues/985)
 - Write tests
 - Discuss ideas in issues
 - Spread the word
 
 ## Thanks to all contributors ❤
+
  <a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
    <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap"/>
  </a>
