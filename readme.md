@@ -71,6 +71,11 @@ npm run dev
 - Discuss ideas in issues
 - Spread the word
 
+## Thanks to all contributors ❤
+ <a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
+   <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap"/>
+ </a>
+
 ## License
 
 Have a look at the [license file](./license) for details
