@@ -1,12 +1,9 @@
 # DOM Manipulation
 
-The Document Object Model (DOM) is a programming interface built for HTML and XML documnets. It reoresents the page that allows programs and scripts to dynamically upadate the document structure content and style. 
-
-Note : It is called a logical structure beacause DOM doesn't specify any relationship between              objects. 
-
-DOM is a better way to reoresent the webpage in a well and structured hierarchical manner so that it will become easier  for programmers and users to glide through the documents. With DOM, we can easily access and manipulate tags, IDs, classes, attributes etc.  
+The Document Object Model (DOM) is a programming interface built for HTML and XML documents. It represents the page that allows programs and scripts to dynamically update the document structure, content, and style. With DOM, we can easily access and manipulate tags, IDs, classes, attributes, etc.  
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://javascript.info/dom-nodes'>DOM Treee</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/dom-document-object-model/'>GeeksForGeeks - DOM (Document Object Model)</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.freecodecamp.org/news/what-is-the-dom-document-object-model-meaning-in-javascript/'>What is the DOM?</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://eloquentjavascript.net/14_dom.html'>Eloquent JavaScript, 3rd Edition: The Document Object Model</BadgeLink>
