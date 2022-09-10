@@ -1,4 +1,4 @@
-# Go testing your apps
+# Testing Go Code
 
 Go has a built-in testing command that we can use to test our program.
 
