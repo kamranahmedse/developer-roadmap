@@ -7,7 +7,6 @@ type FeaturedRoadmapsListProps = {
   title: string;
 };
 
-
 export const upcomingRoadmaps = [
   {
     type: 'Role Based',
