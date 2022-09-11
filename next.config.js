@@ -34,6 +34,10 @@ const withMDX = require('@next/mdx')({
 });
 
 let nextConfig = {
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
   reactStrictMode: true,
   poweredByHeader: false,
   env: loadConfig(process.env.NODE_ENV),
@@ -44,7 +48,7 @@ let nextConfig = {
     // Transforms SVGs to components
     config.module.rules.push({
       test: /\.svg$/,
-      use: ['@svgr/webpack']
+      use: ['@svgr/webpack'],
     });
 
     return config;
@@ -57,9 +61,8 @@ let nextConfig = {
         destination: '/nodejs',
         permanent: true,
       },
-    ]
+    ];
   },
-
 };
 
 nextConfig = withMDX(nextConfig);
