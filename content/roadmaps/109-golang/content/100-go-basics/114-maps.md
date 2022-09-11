@@ -1,6 +1,5 @@
 # Maps
 
-
 A `map` is a **key-value** pair storage container. It offers fast and efficient lookups. And it doesn’t allow duplicate keys while it can have duplicate values.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
