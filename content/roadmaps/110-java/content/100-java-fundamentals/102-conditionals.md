@@ -1,17 +1,13 @@
 # Conditionals
 
-**Conditional statements are used through the various programming languages to instruct the computer on the decision to make when given some conditions.** These decisions are made if and only if the pre-stated conditins are either true or false, depending on the functions the programmer has in mind.
+Java has the following conditional statements:
 
-**There several conditional statements in Java:**
-_if Statement_
-_else-if Statement_
-_else Statement_
-
-Also according to the need of program the developer can use nested if and else-if statements in the functions to enhance the code quality.
+* Use `if` to specify a block of code to be executed, if a specified condition is true
+* Use `else` to specify a block of code to be executed if the same condition is false
+* Use `else if` to specify a new condition to test; if the first condition is false
+* Use `switch` to specify many alternative blocks of code to be executed
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/answers/what-are-conditional-statements-in-programming'>What are Conditional statements?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-if-else'>Conditionals in Java</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=YPK6NYMJt_A'>Conditionals in Java</BadgeLink>
-
-
