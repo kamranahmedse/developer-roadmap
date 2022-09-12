@@ -1,17 +1,5 @@
-# Relational operators
+# Relational Operators
 
-JavaScript Relational Operators :
-Relational operators are also known as comparison operators.
-They are used find the relationship between two values or compare relationship between two values; on comparison they yield the result true or false.
+Relational operators are also known as comparison operators. They are used to find the relationship between two values or compare the relationship between them; on the comparison, they yield the result true or false.
 
-< : less than Operator
-> : greater than Operator
-
-<= : less than or equal to Operator
->= : greater than or equal to Operator
-
-== : equal to Operator
-!= : not equal to Operator
-
-=== : strictly equal to Operator
-!== : strictly not equal to Operator
+<BadgeLink colorScheme="yellow" badgeText="Read" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#relational_operators">Relational Operators - MDN</BadgeLink>
