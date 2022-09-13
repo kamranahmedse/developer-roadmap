@@ -30,8 +30,8 @@ Roadmaps are being made interactive and have been moved to the website.
 
 Here is the list of available roadmaps with more being actively worked upon.
 
-- [Angular Roadmap](https://roadmap.sh/angular)
 - [Android Roadmap](https://roadmap.sh/android)
+- [Angular Roadmap](https://roadmap.sh/angular)
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
