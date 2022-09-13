@@ -12,7 +12,7 @@ export default function RoadmapPDF() {
   return (
     <Box bg='gray.50' minH='100vh'>
       <GlobalHeader />
-      <Helmet  title={'Download Roadmaps - roadmap.sh'} />
+      <Helmet  title={'Download Roadmaps - roadmap.sh'} noIndex={true} />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
           <MdRenderer>

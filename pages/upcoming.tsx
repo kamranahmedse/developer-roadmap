@@ -33,6 +33,7 @@ export default function Upcoming() {
     <Box bg='white' minH='100vh'>
       <GlobalHeader />
       <Helmet
+        noIndex={true}
         title={title}
         description={description}
       />

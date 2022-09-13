@@ -1,13 +1,13 @@
 import NextHead from 'next/head';
 import siteConfig from '../content/site.json';
 import { RoadmapType } from '../lib/roadmap';
-import { roadmapTheme } from '../styles/theme';
 
 type HelmetProps = {
   title?: string;
   keywords?: string[];
   canonical?: string;
   description?: string;
+  noIndex?: boolean;
   roadmap?: RoadmapType;
 };
 
@@ -41,7 +41,7 @@ function getRichSnippetJson(roadmap: RoadmapType) {
 }
 
 const Helmet = (props: HelmetProps) => {
-  const { roadmap, title, canonical, description, keywords } = props;
+  const { roadmap, title, canonical, description, keywords, noIndex = false } = props;
 
   return (
     <NextHead>
@@ -58,6 +58,8 @@ const Helmet = (props: HelmetProps) => {
         name="keywords"
         content={keywords ? keywords.join(',') : siteConfig.keywords.join(',')}
       />
+
+      {noIndex && <meta name="robots" content="noindex" /> }
 
       <meta
         name="viewport"
