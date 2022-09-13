@@ -725,6 +725,7 @@
     "featuredDescription": "Step by step guide to building a modern Design System",
     "isTextHeavy": false,
     "isCommunity": false,
+    "isNew": true,
     "isUpcoming": false,
     "featured": true,
     "jsonUrl": "/project/design-system.json",
