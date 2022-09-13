@@ -30,21 +30,22 @@ Roadmaps are being made interactive and have been moved to the website.
 
 Here is the list of available roadmaps with more being actively worked upon.
 
-- [Frontend Roadmap](https://roadmap.sh/frontend)
-- [Backend Roadmap](https://roadmap.sh/backend)
-- [DevOps Roadmap](https://roadmap.sh/devops)
-- [QA Roadmap](https://roadmap.sh/qa)
-- [React Roadmap](https://roadmap.sh/react)
-- [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Android Roadmap](https://roadmap.sh/android)
+- [Backend Roadmap](https://roadmap.sh/backend)
+- [Blockchain Roadmap](https://roadmap.sh/blockchain)
+- [DBA Roadmap](https://roadmap.sh/postgresql-dba)
+- [Design System Roadmap](https://roadmap.sh/design-system)
+- [DevOps Roadmap](https://roadmap.sh/devops)
+- [Frontend Roadmap](https://roadmap.sh/frontend)
+- [Go Roadmap](https://roadmap.sh/golang)
+- [Java Roadmap](https://roadmap.sh/java)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [Node.js Roadmap](https://roadmap.sh/nodejs)
 - [Python Roadmap](https://roadmap.sh/python)
-- [Go Roadmap](https://roadmap.sh/golang)
-- [Java Roadmap](https://roadmap.sh/java)
-- [DBA Roadmap](https://roadmap.sh/postgresql-dba)
-- [Blockchain Roadmap](https://roadmap.sh/blockchain)
+- [QA Roadmap](https://roadmap.sh/qa)
+- [React Roadmap](https://roadmap.sh/react)
+- [Vue Roadmap](https://roadmap.sh/vue)
 
 ![](https://i.imgur.com/waxVImv.png)
 
