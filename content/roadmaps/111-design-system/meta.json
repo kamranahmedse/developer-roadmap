@@ -1,0 +1,51 @@
+{
+  "seo": {
+    "title": "How to Create a Design System",
+    "description": "Learn how to create a design system or become a design system engineer with this step by step guide with resources.",
+    "keywords": [
+      "guide to create a design system",
+      "guide to becoming a design system engineer",
+      "design system engineer",
+      "design system engineer",
+      "design system skills",
+      "guide to design system",
+      "design system roadmap",
+      "design system skills",
+      "design system skills test",
+      "skills for design system",
+      "what is design system",
+      "design system quiz",
+      "design system interview questions",
+      "design system engineer roadmap",
+      "design system engineer roadmap",
+      "become a design system engineer",
+      "design system engineer career path",
+      "design system engineer",
+      "modern design system engineer"
+    ]
+  },
+  "title": "Design System",
+  "description": "Learn how to create a design system with this step by step guide",
+  "featuredTitle": "Design System",
+  "type": "tool",
+  "featuredDescription": "Step by step guide to building a modern Design System",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isUpcoming": false,
+  "featured": true,
+  "jsonUrl": "/project/design-system.json",
+  "author": {
+    "name": "Kamran Ahmed",
+    "url": "https://twitter.com/kamranahmedse"
+  },
+  "pdfUrl": "/pdfs/design-system.pdf",
+  "contentPathsFilePath": "./content-paths.json",
+  "relatedRoadmaps": [
+    "frontend",
+    "javascript",
+    "react",
+    "vue",
+    "angular",
+    "nodejs"
+  ]
+}

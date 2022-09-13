@@ -14,6 +14,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Angular Roadmap** - [Roadmap Link](https://roadmap.sh/angular) / [PDF Link](https://roadmap.sh/pdfs/angular.pdf)
 * **React Roadmap** - [Roadmap Link](https://roadmap.sh/react) / [PDF Link](https://roadmap.sh/pdfs/react.pdf)
 * **Vue Roadmap** - [Roadmap Link](https://roadmap.sh/vue) / [PDF Link](https://roadmap.sh/pdfs/vue.pdf)
+* **Design System Roadmap** - [Roadmap Link](https://roadmap.sh/design-system) / [PDF Link](https://roadmap.sh/pdfs/design-system.pdf)
 * **Blockchain Roadmap** - [Roadmap Link](https://roadmap.sh/blockchain) / [PDF Link](https://roadmap.sh/pdfs/blockchain.pdf)
 * **Go Roadmap** - [Roadmap Link](https://roadmap.sh/go) / [PDF Link](https://roadmap.sh/pdfs/go.pdf)
 * **Java Roadmap** - [Roadmap Link](https://roadmap.sh/java) / [PDF Link](https://roadmap.sh/pdfs/java.pdf)

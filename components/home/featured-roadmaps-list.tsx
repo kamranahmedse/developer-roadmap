@@ -19,12 +19,6 @@ export const upcomingRoadmaps = [
     title: 'React Native',
     description: 'Step by step guide to become a React Native Developer',
     id: 'react-native'
-  },
-  {
-    type: 'Skill Based',
-    title: 'Design System',
-    description: 'Flowchart to help you plan and build your Design System',
-    id: 'design-system'
   }
 ];
 

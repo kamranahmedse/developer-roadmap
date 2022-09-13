@@ -158,6 +158,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['865px', '1610px', '1610px', '2200px', '2200px', '2200px'];
   }
 
+  if (roadmap.id === 'design-system') {
+    minHeight = ['915px', '1760px', '1880px', '2370px', '2370px', '2370px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}

@@ -1,0 +1,5719 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "6771",
+          "typeID": "Arrow",
+          "zOrder": "50",
+          "w": "24",
+          "h": "124",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "684",
+          "y": "327",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 24,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5339433105125088,
+              "y": -0.12854309296820018
+            },
+            "p2": {
+              "x": 10,
+              "y": 124
+            }
+          }
+        },
+        {
+          "ID": "6772",
+          "typeID": "Label",
+          "zOrder": "51",
+          "measuredW": "215",
+          "measuredH": "40",
+          "x": "644",
+          "y": "272",
+          "properties": {
+            "bold": "true",
+            "size": "32",
+            "text": "Design System"
+          }
+        },
+        {
+          "ID": "6773",
+          "typeID": "Arrow",
+          "zOrder": "52",
+          "w": "19",
+          "h": "80",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "751",
+          "y": "184",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "p0": {
+              "x": 17,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4835868694955965,
+              "y": 0.10168134507606086
+            },
+            "p2": {
+              "x": 0,
+              "y": 79
+            },
+            "rightArrow": "false",
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "6774",
+          "typeID": "Canvas",
+          "zOrder": "53",
+          "w": "350",
+          "h": "141",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "959",
+          "y": "179"
+        },
+        {
+          "ID": "6775",
+          "typeID": "Label",
+          "zOrder": "54",
+          "measuredW": "314",
+          "measuredH": "25",
+          "x": "973",
+          "y": "196",
+          "properties": {
+            "size": "17",
+            "text": "Find the detailed version of this roadmap"
+          }
+        },
+        {
+          "ID": "6776",
+          "typeID": "Label",
+          "zOrder": "55",
+          "measuredW": "319",
+          "measuredH": "25",
+          "x": "973",
+          "y": "224",
+          "properties": {
+            "size": "17",
+            "text": "along with resources and other roadmaps"
+          }
+        },
+        {
+          "ID": "6778",
+          "typeID": "Canvas",
+          "zOrder": "62",
+          "w": "373",
+          "h": "151",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "147",
+          "y": "169"
+        },
+        {
+          "ID": "6818",
+          "typeID": "Arrow",
+          "zOrder": "64",
+          "w": "143",
+          "h": "44",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "473",
+          "y": "408",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 143,
+              "y": 44
+            },
+            "p1": {
+              "x": 0.49336609336609333,
+              "y": 0.03292383292383292
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "6896",
+          "typeID": "Canvas",
+          "zOrder": "56",
+          "w": "320",
+          "h": "45",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "974",
+          "y": "260",
+          "properties": {
+            "borderColor": "4273622",
+            "color": "4273622"
+          }
+        },
+        {
+          "ID": "6897",
+          "typeID": "Label",
+          "zOrder": "57",
+          "measuredW": "105",
+          "measuredH": "28",
+          "x": "1115",
+          "y": "268",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "roadmap.sh"
+          }
+        },
+        {
+          "ID": "6898",
+          "typeID": "Label",
+          "zOrder": "58",
+          "measuredW": "35",
+          "measuredH": "28",
+          "x": "1050",
+          "y": "268",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "http"
+          }
+        },
+        {
+          "ID": "6899",
+          "typeID": "Label",
+          "zOrder": "59",
+          "measuredW": "5",
+          "measuredH": "28",
+          "x": "1087",
+          "y": "268",
+          "properties": {
+            "bold": "true",
+            "color": "16777215",
+            "size": "20",
+            "text": ":"
+          }
+        },
+        {
+          "ID": "6900",
+          "typeID": "Label",
+          "zOrder": "60",
+          "measuredW": "10",
+          "measuredH": "28",
+          "x": "1094",
+          "y": "269",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "/"
+          }
+        },
+        {
+          "ID": "6901",
+          "typeID": "Label",
+          "zOrder": "61",
+          "measuredW": "10",
+          "measuredH": "28",
+          "x": "1102",
+          "y": "269",
+          "properties": {
+            "color": "16777215",
+            "size": "20",
+            "text": "/"
+          }
+        },
+        {
+          "ID": "6903",
+          "typeID": "TextArea",
+          "zOrder": "65",
+          "w": "272",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "602",
+          "y": "434",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "6904",
+          "typeID": "Label",
+          "zOrder": "66",
+          "measuredW": "176",
+          "measuredH": "25",
+          "x": "649",
+          "y": "447",
+          "properties": {
+            "size": "17",
+            "text": "Understand the Basics"
+          }
+        },
+        {
+          "ID": "6907",
+          "typeID": "TextArea",
+          "zOrder": "67",
+          "w": "340",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "389",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6908",
+          "typeID": "Label",
+          "zOrder": "68",
+          "measuredW": "189",
+          "measuredH": "25",
+          "x": "222",
+          "y": "399",
+          "properties": {
+            "size": "17",
+            "text": "What is a Design System"
+          }
+        },
+        {
+          "ID": "6947",
+          "typeID": "TextArea",
+          "zOrder": "69",
+          "w": "340",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "437",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6948",
+          "typeID": "Label",
+          "zOrder": "70",
+          "measuredW": "208",
+          "measuredH": "25",
+          "x": "213",
+          "y": "447",
+          "properties": {
+            "size": "17",
+            "text": "Why need a Design System"
+          }
+        },
+        {
+          "ID": "6949",
+          "typeID": "TextArea",
+          "zOrder": "71",
+          "w": "340",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "485",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6950",
+          "typeID": "Label",
+          "zOrder": "72",
+          "measuredW": "287",
+          "measuredH": "25",
+          "x": "173",
+          "y": "495",
+          "properties": {
+            "size": "17",
+            "text": "Design System vs Component Library"
+          }
+        },
+        {
+          "ID": "6951",
+          "typeID": "TextArea",
+          "zOrder": "73",
+          "w": "287",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1007",
+          "y": "384",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6952",
+          "typeID": "Label",
+          "zOrder": "74",
+          "measuredW": "241",
+          "measuredH": "25",
+          "x": "1030",
+          "y": "394",
+          "properties": {
+            "size": "17",
+            "text": "Traits of a Good Design System"
+          }
+        },
+        {
+          "ID": "6953",
+          "typeID": "TextArea",
+          "zOrder": "75",
+          "w": "287",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1007",
+          "y": "432",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6954",
+          "typeID": "Label",
+          "zOrder": "76",
+          "measuredW": "169",
+          "measuredH": "25",
+          "x": "1066",
+          "y": "442",
+          "properties": {
+            "size": "17",
+            "text": "Stakeholders Involved"
+          }
+        },
+        {
+          "ID": "6955",
+          "typeID": "Arrow",
+          "zOrder": "49",
+          "w": "155",
+          "h": "46",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "469",
+          "y": "469",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 155,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.45522128005575563,
+              "y": -0.05494250203275639
+            },
+            "p2": {
+              "x": 0,
+              "y": 46
+            }
+          }
+        },
+        {
+          "ID": "6956",
+          "typeID": "Arrow",
+          "zOrder": "48",
+          "w": "164",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "467",
+          "y": "460",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 164,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.47096774193548385,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "6957",
+          "typeID": "Arrow",
+          "zOrder": "47",
+          "w": "183",
+          "h": "53",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "399",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 183,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.45882352941176485,
+              "y": 0.06470588235294149
+            },
+            "p2": {
+              "x": 0,
+              "y": 53
+            }
+          }
+        },
+        {
+          "ID": "6958",
+          "typeID": "Arrow",
+          "zOrder": "46",
+          "w": "189",
+          "h": "5",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "849",
+          "y": "455",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 189,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4702020632620002,
+              "y": -0.008440617273424846
+            },
+            "p2": {
+              "x": 0,
+              "y": 5
+            }
+          }
+        },
+        {
+          "ID": "6959",
+          "typeID": "TextArea",
+          "zOrder": "77",
+          "w": "287",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1007",
+          "y": "480",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6960",
+          "typeID": "Label",
+          "zOrder": "78",
+          "measuredW": "193",
+          "measuredH": "25",
+          "x": "1054",
+          "y": "490",
+          "properties": {
+            "size": "17",
+            "text": "Design System Examples"
+          }
+        },
+        {
+          "ID": "6961",
+          "typeID": "Arrow",
+          "zOrder": "45",
+          "w": "200",
+          "h": "37",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "845",
+          "y": "470",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 200,
+              "y": 37
+            },
+            "p1": {
+              "x": 0.47465493485460125,
+              "y": -0.052188837051898765
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "6962",
+          "typeID": "Arrow",
+          "zOrder": "44",
+          "w": "190",
+          "h": "228",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "694",
+          "y": "471",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.47179900279163,
+              "y": -0.12522048304885122
+            },
+            "p2": {
+              "x": 190,
+              "y": 228
+            }
+          }
+        },
+        {
+          "ID": "6963",
+          "typeID": "TextArea",
+          "zOrder": "79",
+          "w": "258",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "448",
+          "y": "681",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "6964",
+          "typeID": "Label",
+          "zOrder": "80",
+          "measuredW": "189",
+          "measuredH": "25",
+          "x": "482",
+          "y": "694",
+          "properties": {
+            "size": "17",
+            "text": "Making a Design System"
+          }
+        },
+        {
+          "ID": "6965",
+          "typeID": "TextArea",
+          "zOrder": "81",
+          "w": "250",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "728",
+          "y": "1004",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "6966",
+          "typeID": "Label",
+          "zOrder": "82",
+          "measuredW": "186",
+          "measuredH": "25",
+          "x": "760",
+          "y": "1016",
+          "properties": {
+            "size": "17",
+            "text": "Existing Design Analysis"
+          }
+        },
+        {
+          "ID": "6967",
+          "typeID": "Arrow",
+          "zOrder": "43",
+          "w": "173",
+          "h": "66",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "605",
+          "y": "947",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 173,
+              "y": 65
+            },
+            "p1": {
+              "x": 0.5730514727411138,
+              "y": 0.15172454178134334
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "6968",
+          "typeID": "TextArea",
+          "zOrder": "83",
+          "w": "241",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "488",
+          "y": "916",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "6969",
+          "typeID": "Label",
+          "zOrder": "84",
+          "measuredW": "89",
+          "measuredH": "25",
+          "x": "564",
+          "y": "926",
+          "properties": {
+            "size": "17",
+            "text": "Visual Audit"
+          }
+        },
+        {
+          "ID": "6976",
+          "typeID": "Arrow",
+          "zOrder": "42",
+          "w": "382",
+          "h": "81",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "390",
+          "y": "945",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 382,
+              "y": 80
+            },
+            "p1": {
+              "x": 0.5801843438985321,
+              "y": 0.07961975788450934
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7010",
+          "typeID": "TextArea",
+          "zOrder": "119",
+          "w": "247",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "468",
+          "y": "1110",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7011",
+          "typeID": "Label",
+          "zOrder": "120",
+          "measuredW": "210",
+          "measuredH": "25",
+          "x": "487",
+          "y": "1119",
+          "properties": {
+            "size": "17",
+            "text": "A/B Tests and Experiments"
+          }
+        },
+        {
+          "ID": "7012",
+          "typeID": "TextArea",
+          "zOrder": "121",
+          "w": "241",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "488",
+          "y": "867",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7013",
+          "typeID": "Label",
+          "zOrder": "122",
+          "measuredW": "186",
+          "measuredH": "25",
+          "x": "516",
+          "y": "877",
+          "properties": {
+            "size": "17",
+            "text": "Existing Design Process"
+          }
+        },
+        {
+          "ID": "7017",
+          "typeID": "Arrow",
+          "zOrder": "41",
+          "w": "132",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "634",
+          "y": "1037",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 132,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.6647493837304848,
+              "y": -0.14954806902218587
+            },
+            "p2": {
+              "x": 0,
+              "y": 98
+            }
+          }
+        },
+        {
+          "ID": "7018",
+          "typeID": "TextArea",
+          "zOrder": "123",
+          "w": "340",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "534",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7019",
+          "typeID": "Label",
+          "zOrder": "124",
+          "measuredW": "172",
+          "measuredH": "25",
+          "x": "231",
+          "y": "544",
+          "properties": {
+            "size": "17",
+            "text": "What is Atomic Design"
+          }
+        },
+        {
+          "ID": "7020",
+          "typeID": "Arrow",
+          "zOrder": "40",
+          "w": "159",
+          "h": "90",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "474",
+          "y": "471",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 159,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4552212800557556,
+              "y": -0.054942502032756385
+            },
+            "p2": {
+              "x": 0,
+              "y": 90
+            }
+          }
+        },
+        {
+          "ID": "7021",
+          "typeID": "TextArea",
+          "zOrder": "125",
+          "w": "198",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "777",
+          "y": "681",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7022",
+          "typeID": "Label",
+          "zOrder": "126",
+          "measuredW": "93",
+          "measuredH": "25",
+          "x": "829",
+          "y": "694",
+          "properties": {
+            "size": "17",
+            "text": "Terminology"
+          }
+        },
+        {
+          "ID": "7023",
+          "typeID": "TextArea",
+          "zOrder": "127",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "569",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7024",
+          "typeID": "Label",
+          "zOrder": "128",
+          "measuredW": "90",
+          "measuredH": "25",
+          "x": "1153",
+          "y": "579",
+          "properties": {
+            "size": "17",
+            "text": "Component"
+          }
+        },
+        {
+          "ID": "7025",
+          "typeID": "TextArea",
+          "zOrder": "129",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "618",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7026",
+          "typeID": "Label",
+          "zOrder": "130",
+          "measuredW": "148",
+          "measuredH": "25",
+          "x": "1124",
+          "y": "628",
+          "properties": {
+            "size": "17",
+            "text": "Component Library"
+          }
+        },
+        {
+          "ID": "7027",
+          "typeID": "TextArea",
+          "zOrder": "131",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "666",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7028",
+          "typeID": "Label",
+          "zOrder": "132",
+          "measuredW": "136",
+          "measuredH": "25",
+          "x": "1130",
+          "y": "676",
+          "properties": {
+            "size": "17",
+            "text": "Design Language"
+          }
+        },
+        {
+          "ID": "7029",
+          "typeID": "TextArea",
+          "zOrder": "133",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "714",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7030",
+          "typeID": "Label",
+          "zOrder": "134",
+          "measuredW": "95",
+          "measuredH": "25",
+          "x": "1150",
+          "y": "724",
+          "properties": {
+            "size": "17",
+            "text": "Governance"
+          }
+        },
+        {
+          "ID": "7031",
+          "typeID": "TextArea",
+          "zOrder": "135",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "762",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7032",
+          "typeID": "Label",
+          "zOrder": "136",
+          "measuredW": "82",
+          "measuredH": "25",
+          "x": "1157",
+          "y": "772",
+          "properties": {
+            "size": "17",
+            "text": "Guidelines"
+          }
+        },
+        {
+          "ID": "7033",
+          "typeID": "TextArea",
+          "zOrder": "137",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "810",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7034",
+          "typeID": "Label",
+          "zOrder": "138",
+          "measuredW": "56",
+          "measuredH": "25",
+          "x": "1170",
+          "y": "820",
+          "properties": {
+            "size": "17",
+            "text": "Pattern"
+          }
+        },
+        {
+          "ID": "7035",
+          "typeID": "TextArea",
+          "zOrder": "139",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "859",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7036",
+          "typeID": "Label",
+          "zOrder": "140",
+          "measuredW": "34",
+          "measuredH": "25",
+          "x": "1181",
+          "y": "869",
+          "properties": {
+            "size": "17",
+            "text": "Pilot"
+          }
+        },
+        {
+          "ID": "7037",
+          "typeID": "TextArea",
+          "zOrder": "141",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "907",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7038",
+          "typeID": "Label",
+          "zOrder": "142",
+          "measuredW": "46",
+          "measuredH": "25",
+          "x": "1175",
+          "y": "917",
+          "properties": {
+            "size": "17",
+            "text": "Token"
+          }
+        },
+        {
+          "ID": "7039",
+          "typeID": "TextArea",
+          "zOrder": "143",
+          "w": "192",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1102",
+          "y": "955",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7040",
+          "typeID": "Label",
+          "zOrder": "144",
+          "measuredW": "43",
+          "measuredH": "25",
+          "x": "1176",
+          "y": "965",
+          "properties": {
+            "size": "17",
+            "text": "UI Kit"
+          }
+        },
+        {
+          "ID": "7044",
+          "typeID": "Arrow",
+          "zOrder": "39",
+          "w": "355",
+          "h": "61",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "427",
+          "y": "1035",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 355,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5883979271379048,
+              "y": -0.04115949837304429
+            },
+            "p2": {
+              "x": 0,
+              "y": 61
+            }
+          }
+        },
+        {
+          "ID": "7045",
+          "typeID": "TextArea",
+          "zOrder": "145",
+          "w": "247",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "468",
+          "y": "1160",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7046",
+          "typeID": "Label",
+          "zOrder": "146",
+          "measuredW": "182",
+          "measuredH": "25",
+          "x": "501",
+          "y": "1169",
+          "properties": {
+            "size": "17",
+            "text": "Regional Requirements"
+          }
+        },
+        {
+          "ID": "7047",
+          "typeID": "Arrow",
+          "zOrder": "38",
+          "w": "208",
+          "h": "110",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "905",
+          "y": "582",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 208,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.40717778212399774,
+              "y": 0.06499119890475254
+            },
+            "p2": {
+              "x": 0,
+              "y": 110
+            }
+          }
+        },
+        {
+          "ID": "7049",
+          "typeID": "Arrow",
+          "zOrder": "37",
+          "w": "237",
+          "h": "263",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "876",
+          "y": "716",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 237,
+              "y": 263
+            },
+            "p1": {
+              "x": 0.5432497720328272,
+              "y": -0.06251899726439393
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7050",
+          "typeID": "Arrow",
+          "zOrder": "36",
+          "w": "217",
+          "h": "217",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "900",
+          "y": "720",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 217,
+              "y": 217
+            },
+            "p1": {
+              "x": 0.5046082949308756,
+              "y": -0.06221198156682028
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7051",
+          "typeID": "Arrow",
+          "zOrder": "35",
+          "w": "219",
+          "h": "175",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "898",
+          "y": "711",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 219,
+              "y": 175
+            },
+            "p1": {
+              "x": 0.47850762222278775,
+              "y": -0.07881811009594585
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7052",
+          "typeID": "Arrow",
+          "zOrder": "34",
+          "w": "204",
+          "h": "124",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "915",
+          "y": "714",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 204,
+              "y": 124
+            },
+            "p1": {
+              "x": 0.48827905670971367,
+              "y": -0.08555586749017406
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7053",
+          "typeID": "Arrow",
+          "zOrder": "33",
+          "w": "165",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "951",
+          "y": "715",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 165,
+              "y": 74
+            },
+            "p1": {
+              "x": 0.42475765267117216,
+              "y": -0.0822299012262622
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7054",
+          "typeID": "Arrow",
+          "zOrder": "32",
+          "w": "185",
+          "h": "28",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "929",
+          "y": "710",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 185,
+              "y": 28
+            },
+            "p1": {
+              "x": 0.4773338021448126,
+              "y": -0.06587638445889948
+            },
+            "p2": {
+              "x": 0,
+              "y": 2
+            }
+          }
+        },
+        {
+          "ID": "7055",
+          "typeID": "Arrow",
+          "zOrder": "31",
+          "w": "178",
+          "h": "11",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "938",
+          "y": "691",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 178,
+              "y": 1
+            },
+            "p1": {
+              "x": 0.4952865761689297,
+              "y": -0.026018099547511303
+            },
+            "p2": {
+              "x": 0,
+              "y": 11
+            }
+          }
+        },
+        {
+          "ID": "7056",
+          "typeID": "Arrow",
+          "zOrder": "30",
+          "w": "193",
+          "h": "57",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "924",
+          "y": "633",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 193,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.43967889908256885,
+              "y": 0.059403669724770604
+            },
+            "p2": {
+              "x": 0,
+              "y": 57
+            }
+          }
+        },
+        {
+          "ID": "7057",
+          "typeID": "Arrow",
+          "zOrder": "29",
+          "w": "280",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "586",
+          "y": "706",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 280,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.3990825688073394,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7058",
+          "typeID": "Arrow",
+          "zOrder": "28",
+          "w": "338",
+          "h": "320",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "515",
+          "y": "692",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5467512140736054,
+              "y": 0.1713049817218941
+            },
+            "p2": {
+              "x": 338.33333333333337,
+              "y": 320
+            }
+          }
+        },
+        {
+          "ID": "7059",
+          "typeID": "TextArea",
+          "zOrder": "147",
+          "w": "198",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "664",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7060",
+          "typeID": "Label",
+          "zOrder": "148",
+          "measuredW": "103",
+          "measuredH": "25",
+          "x": "186",
+          "y": "674",
+          "properties": {
+            "size": "17",
+            "text": "From Scratch"
+          }
+        },
+        {
+          "ID": "7061",
+          "typeID": "TextArea",
+          "zOrder": "149",
+          "w": "198",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "147",
+          "y": "714",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7062",
+          "typeID": "Label",
+          "zOrder": "150",
+          "measuredW": "163",
+          "measuredH": "25",
+          "x": "166",
+          "y": "724",
+          "properties": {
+            "size": "17",
+            "text": "From Existing Design"
+          }
+        },
+        {
+          "ID": "7065",
+          "typeID": "Arrow",
+          "zOrder": "27",
+          "w": "157",
+          "h": "30",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "333",
+          "y": "713",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 157,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.6288700144819758,
+              "y": -0.07558025754432658
+            },
+            "p2": {
+              "x": 0,
+              "y": 30
+            }
+          }
+        },
+        {
+          "ID": "7066",
+          "typeID": "Arrow",
+          "zOrder": "26",
+          "w": "152",
+          "h": "19",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "321",
+          "y": "681",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 152,
+              "y": 17
+            },
+            "p1": {
+              "x": 0.5624761985359454,
+              "y": 0.06537468793636021
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7067",
+          "typeID": "Arrow",
+          "zOrder": "25",
+          "w": "1",
+          "h": "67",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "513",
+          "y": "631",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 67
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7068",
+          "typeID": "TextArea",
+          "zOrder": "151",
+          "w": "216",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "448",
+          "y": "605",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7069",
+          "typeID": "Label",
+          "zOrder": "152",
+          "measuredW": "169",
+          "measuredH": "25",
+          "x": "471",
+          "y": "615",
+          "properties": {
+            "size": "17",
+            "text": "Stakeholders Involved"
+          }
+        },
+        {
+          "ID": "7070",
+          "typeID": "TextArea",
+          "zOrder": "153",
+          "w": "247",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "468",
+          "y": "1209",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7071",
+          "typeID": "Label",
+          "zOrder": "154",
+          "measuredW": "118",
+          "measuredH": "25",
+          "x": "533",
+          "y": "1218",
+          "properties": {
+            "size": "17",
+            "text": "Documentation"
+          }
+        },
+        {
+          "ID": "7073",
+          "typeID": "Arrow",
+          "zOrder": "24",
+          "w": "108",
+          "h": "304",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "746",
+          "y": "1029",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 107.21029252867754,
+              "y": -0.1673123886146186
+            },
+            "p1": {
+              "x": 0.5483800113143977,
+              "y": 0.1197025215699228
+            },
+            "p2": {
+              "x": 0,
+              "y": 304
+            }
+          }
+        },
+        {
+          "ID": "7074",
+          "typeID": "TextArea",
+          "zOrder": "155",
+          "w": "265",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "631",
+          "y": "1332",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7075",
+          "typeID": "Label",
+          "zOrder": "156",
+          "measuredW": "207",
+          "measuredH": "25",
+          "x": "660",
+          "y": "1344",
+          "properties": {
+            "size": "17",
+            "text": "Creating Design Language"
+          }
+        },
+        {
+          "ID": "7078",
+          "typeID": "TextArea",
+          "zOrder": "23",
+          "w": "163",
+          "h": "262",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1081",
+          "y": "1060"
+        },
+        {
+          "ID": "7080",
+          "typeID": "TextArea",
+          "zOrder": "157",
+          "w": "194",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1019",
+          "y": "1240",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7081",
+          "typeID": "Label",
+          "zOrder": "158",
+          "measuredW": "47",
+          "measuredH": "25",
+          "x": "1092",
+          "y": "1250",
+          "properties": {
+            "size": "17",
+            "text": "Vision"
+          }
+        },
+        {
+          "ID": "7082",
+          "typeID": "TextArea",
+          "zOrder": "159",
+          "w": "195",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1018",
+          "y": "1190",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7083",
+          "typeID": "Label",
+          "zOrder": "160",
+          "measuredW": "135",
+          "measuredH": "25",
+          "x": "1048",
+          "y": "1200",
+          "properties": {
+            "size": "17",
+            "text": "Design Principles"
+          }
+        },
+        {
+          "ID": "7084",
+          "typeID": "TextArea",
+          "zOrder": "161",
+          "w": "195",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1018",
+          "y": "1089",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7085",
+          "typeID": "Label",
+          "zOrder": "162",
+          "measuredW": "104",
+          "measuredH": "25",
+          "x": "1064",
+          "y": "1099",
+          "properties": {
+            "size": "17",
+            "text": "Tone of Voice"
+          }
+        },
+        {
+          "ID": "7086",
+          "typeID": "TextArea",
+          "zOrder": "163",
+          "w": "195",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1018",
+          "y": "1141",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7087",
+          "typeID": "Label",
+          "zOrder": "164",
+          "measuredW": "93",
+          "measuredH": "25",
+          "x": "1069",
+          "y": "1151",
+          "properties": {
+            "size": "17",
+            "text": "Terminology"
+          }
+        },
+        {
+          "ID": "7088",
+          "typeID": "TextArea",
+          "zOrder": "165",
+          "w": "195",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1018",
+          "y": "1040",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7089",
+          "typeID": "Label",
+          "zOrder": "166",
+          "measuredW": "141",
+          "measuredH": "25",
+          "x": "1045",
+          "y": "1050",
+          "properties": {
+            "size": "17",
+            "text": "Writing Guidelines"
+          }
+        },
+        {
+          "ID": "7090",
+          "typeID": "TextArea",
+          "zOrder": "167",
+          "w": "166",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1019",
+          "y": "1299",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7091",
+          "typeID": "Label",
+          "zOrder": "168",
+          "measuredW": "47",
+          "measuredH": "25",
+          "x": "1078",
+          "y": "1309",
+          "properties": {
+            "size": "17",
+            "text": "Brand"
+          }
+        },
+        {
+          "ID": "7093",
+          "typeID": "TextArea",
+          "zOrder": "169",
+          "w": "179",
+          "h": "255",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1065",
+          "y": "1430"
+        },
+        {
+          "ID": "7102",
+          "typeID": "TextArea",
+          "zOrder": "170",
+          "w": "310",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "916",
+          "y": "1464",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7103",
+          "typeID": "Label",
+          "zOrder": "171",
+          "measuredW": "163",
+          "measuredH": "25",
+          "x": "989",
+          "y": "1474",
+          "properties": {
+            "size": "17",
+            "text": "Monochrome Version"
+          }
+        },
+        {
+          "ID": "7104",
+          "typeID": "TextArea",
+          "zOrder": "172",
+          "w": "166",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "990",
+          "y": "1408",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7105",
+          "typeID": "Label",
+          "zOrder": "173",
+          "measuredW": "39",
+          "measuredH": "25",
+          "x": "1053",
+          "y": "1418",
+          "properties": {
+            "size": "17",
+            "text": "Logo"
+          }
+        },
+        {
+          "ID": "7106",
+          "typeID": "TextArea",
+          "zOrder": "174",
+          "w": "310",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "916",
+          "y": "1513",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7107",
+          "typeID": "Label",
+          "zOrder": "175",
+          "measuredW": "156",
+          "measuredH": "25",
+          "x": "993",
+          "y": "1523",
+          "properties": {
+            "size": "17",
+            "text": "Small Use Guidance"
+          }
+        },
+        {
+          "ID": "7108",
+          "typeID": "TextArea",
+          "zOrder": "176",
+          "w": "310",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "916",
+          "y": "1562",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7109",
+          "typeID": "Label",
+          "zOrder": "177",
+          "measuredW": "261",
+          "measuredH": "25",
+          "x": "940",
+          "y": "1572",
+          "properties": {
+            "size": "17",
+            "text": "Placement & Clearance Guidance"
+          }
+        },
+        {
+          "ID": "7111",
+          "typeID": "TextArea",
+          "zOrder": "178",
+          "w": "310",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "916",
+          "y": "1610",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7112",
+          "typeID": "Label",
+          "zOrder": "179",
+          "measuredW": "130",
+          "measuredH": "25",
+          "x": "1006",
+          "y": "1620",
+          "properties": {
+            "size": "17",
+            "text": "Usage Guidance"
+          }
+        },
+        {
+          "ID": "7113",
+          "typeID": "TextArea",
+          "zOrder": "180",
+          "w": "310",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "916",
+          "y": "1658",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7114",
+          "typeID": "Label",
+          "zOrder": "181",
+          "measuredW": "166",
+          "measuredH": "25",
+          "x": "988",
+          "y": "1668",
+          "properties": {
+            "size": "17",
+            "text": "Different File Formats"
+          }
+        },
+        {
+          "ID": "7118",
+          "typeID": "Arrow",
+          "zOrder": "22",
+          "w": "209",
+          "h": "69",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "871",
+          "y": "1363",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 209,
+              "y": 69
+            },
+            "p1": {
+              "x": 0.3656158645007683,
+              "y": -0.144103553238299
+            },
+            "p2": {
+              "x": 0,
+              "y": 1
+            }
+          }
+        },
+        {
+          "ID": "7119",
+          "typeID": "TextArea",
+          "zOrder": "182",
+          "w": "140",
+          "h": "156",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "739",
+          "y": "1440"
+        },
+        {
+          "ID": "7120",
+          "typeID": "TextArea",
+          "zOrder": "183",
+          "w": "225",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "638",
+          "y": "1472",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7121",
+          "typeID": "Label",
+          "zOrder": "184",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "704",
+          "y": "1482",
+          "properties": {
+            "size": "17",
+            "text": "Accessibility"
+          }
+        },
+        {
+          "ID": "7122",
+          "typeID": "TextArea",
+          "zOrder": "185",
+          "w": "132",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "685",
+          "y": "1418",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7123",
+          "typeID": "Label",
+          "zOrder": "186",
+          "measuredW": "82",
+          "measuredH": "25",
+          "x": "710",
+          "y": "1428",
+          "properties": {
+            "size": "17",
+            "text": "Guidelines"
+          }
+        },
+        {
+          "ID": "7124",
+          "typeID": "TextArea",
+          "zOrder": "187",
+          "w": "225",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "638",
+          "y": "1521",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7125",
+          "typeID": "Label",
+          "zOrder": "188",
+          "measuredW": "133",
+          "measuredH": "25",
+          "x": "684",
+          "y": "1531",
+          "properties": {
+            "size": "17",
+            "text": "User Onboarding"
+          }
+        },
+        {
+          "ID": "7126",
+          "typeID": "TextArea",
+          "zOrder": "189",
+          "w": "225",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "638",
+          "y": "1570",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7127",
+          "typeID": "Label",
+          "zOrder": "190",
+          "measuredW": "165",
+          "measuredH": "25",
+          "x": "668",
+          "y": "1580",
+          "properties": {
+            "size": "17",
+            "text": "Microcopy Guidelines"
+          }
+        },
+        {
+          "ID": "7132",
+          "typeID": "Arrow",
+          "zOrder": "19",
+          "w": "1",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "766",
+          "y": "1341",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 97.50570630909533
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7133",
+          "typeID": "TextArea",
+          "zOrder": "100",
+          "w": "267",
+          "h": "246",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "177",
+          "y": "1047"
+        },
+        {
+          "ID": "7134",
+          "typeID": "TextArea",
+          "zOrder": "101",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "195",
+          "y": "1182",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7135",
+          "typeID": "Label",
+          "zOrder": "102",
+          "measuredW": "46",
+          "measuredH": "25",
+          "x": "219",
+          "y": "1192",
+          "properties": {
+            "size": "17",
+            "text": "Cards"
+          }
+        },
+        {
+          "ID": "7136",
+          "typeID": "TextArea",
+          "zOrder": "103",
+          "w": "131",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "295",
+          "y": "1182",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7137",
+          "typeID": "Label",
+          "zOrder": "104",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "314",
+          "y": "1192",
+          "properties": {
+            "size": "17",
+            "text": "Drop Downs"
+          }
+        },
+        {
+          "ID": "7138",
+          "typeID": "TextArea",
+          "zOrder": "105",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "196",
+          "y": "1133",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7139",
+          "typeID": "Label",
+          "zOrder": "106",
+          "measuredW": "66",
+          "measuredH": "25",
+          "x": "210",
+          "y": "1143",
+          "properties": {
+            "size": "17",
+            "text": "Banners"
+          }
+        },
+        {
+          "ID": "7140",
+          "typeID": "TextArea",
+          "zOrder": "107",
+          "w": "130",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "296",
+          "y": "1133",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7141",
+          "typeID": "Label",
+          "zOrder": "108",
+          "measuredW": "60",
+          "measuredH": "25",
+          "x": "331",
+          "y": "1143",
+          "properties": {
+            "size": "17",
+            "text": "Buttons"
+          }
+        },
+        {
+          "ID": "7142",
+          "typeID": "TextArea",
+          "zOrder": "109",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "196",
+          "y": "1084",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7143",
+          "typeID": "Label",
+          "zOrder": "110",
+          "measuredW": "49",
+          "measuredH": "25",
+          "x": "222",
+          "y": "1094",
+          "properties": {
+            "size": "17",
+            "text": "Avatar"
+          }
+        },
+        {
+          "ID": "7144",
+          "typeID": "TextArea",
+          "zOrder": "111",
+          "w": "129",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "297",
+          "y": "1084",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7145",
+          "typeID": "Label",
+          "zOrder": "112",
+          "measuredW": "60",
+          "measuredH": "25",
+          "x": "332",
+          "y": "1094",
+          "properties": {
+            "size": "17",
+            "text": "Badges"
+          }
+        },
+        {
+          "ID": "7146",
+          "typeID": "TextArea",
+          "zOrder": "113",
+          "w": "231",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "195",
+          "y": "1029",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7147",
+          "typeID": "Label",
+          "zOrder": "114",
+          "measuredW": "159",
+          "measuredH": "25",
+          "x": "231",
+          "y": "1038",
+          "properties": {
+            "size": "17",
+            "text": "Identify Components"
+          }
+        },
+        {
+          "ID": "7148",
+          "typeID": "TextArea",
+          "zOrder": "115",
+          "w": "157",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "195",
+          "y": "1232",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7149",
+          "typeID": "Label",
+          "zOrder": "116",
+          "measuredW": "117",
+          "measuredH": "25",
+          "x": "215",
+          "y": "1242",
+          "properties": {
+            "size": "17",
+            "text": "Form Elements"
+          }
+        },
+        {
+          "ID": "7150",
+          "typeID": "TextArea",
+          "zOrder": "117",
+          "w": "66",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "360",
+          "y": "1233",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7151",
+          "typeID": "Label",
+          "zOrder": "118",
+          "measuredW": "19",
+          "measuredH": "40",
+          "x": "383",
+          "y": "1228",
+          "properties": {
+            "size": "32",
+            "text": "..."
+          }
+        },
+        {
+          "ID": "7152",
+          "typeID": "Arrow",
+          "zOrder": "21",
+          "w": "183",
+          "h": "294",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "538",
+          "y": "1364",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 183,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.497454770689608,
+              "y": -0.2224265751011547
+            },
+            "p2": {
+              "x": 6.770879405488586,
+              "y": 293.89042115201073
+            }
+          }
+        },
+        {
+          "ID": "7153",
+          "typeID": "TextArea",
+          "zOrder": "191",
+          "w": "265",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "308",
+          "y": "1641",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7154",
+          "typeID": "Label",
+          "zOrder": "192",
+          "measuredW": "181",
+          "measuredH": "25",
+          "x": "350",
+          "y": "1653",
+          "properties": {
+            "size": "17",
+            "text": "Defining Design Tokens"
+          }
+        },
+        {
+          "ID": "7155",
+          "typeID": "TextArea",
+          "zOrder": "193",
+          "w": "148",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "192",
+          "y": "1530",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7156",
+          "typeID": "Label",
+          "zOrder": "194",
+          "measuredW": "51",
+          "measuredH": "25",
+          "x": "240",
+          "y": "1540",
+          "properties": {
+            "size": "17",
+            "text": "Colour"
+          }
+        },
+        {
+          "ID": "7157",
+          "typeID": "TextArea",
+          "zOrder": "195",
+          "w": "177",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "165",
+          "y": "1377",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7158",
+          "typeID": "Label",
+          "zOrder": "196",
+          "measuredW": "135",
+          "measuredH": "25",
+          "x": "186",
+          "y": "1387",
+          "properties": {
+            "size": "17",
+            "text": "Functional Colors"
+          }
+        },
+        {
+          "ID": "7159",
+          "typeID": "TextArea",
+          "zOrder": "197",
+          "w": "177",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "165",
+          "y": "1425",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7160",
+          "typeID": "Label",
+          "zOrder": "198",
+          "measuredW": "85",
+          "measuredH": "25",
+          "x": "211",
+          "y": "1435",
+          "properties": {
+            "size": "17",
+            "text": "Dark Mode"
+          }
+        },
+        {
+          "ID": "7165",
+          "typeID": "TextArea",
+          "zOrder": "199",
+          "w": "177",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "165",
+          "y": "1329",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7166",
+          "typeID": "Label",
+          "zOrder": "200",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "207",
+          "y": "1339",
+          "properties": {
+            "size": "17",
+            "text": "Accessibility"
+          }
+        },
+        {
+          "ID": "7167",
+          "typeID": "TextArea",
+          "zOrder": "201",
+          "w": "177",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "165",
+          "y": "1473",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7168",
+          "typeID": "Label",
+          "zOrder": "202",
+          "measuredW": "82",
+          "measuredH": "25",
+          "x": "213",
+          "y": "1483",
+          "properties": {
+            "size": "17",
+            "text": "Guidelines"
+          }
+        },
+        {
+          "ID": "7169",
+          "typeID": "TextArea",
+          "zOrder": "20",
+          "w": "120",
+          "h": "203",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "149",
+          "y": "1352"
+        },
+        {
+          "ID": "7171",
+          "typeID": "TextArea",
+          "zOrder": "203",
+          "w": "87",
+          "h": "205",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "363",
+          "y": "1348"
+        },
+        {
+          "ID": "7172",
+          "typeID": "TextArea",
+          "zOrder": "204",
+          "w": "124",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "381",
+          "y": "1530",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7173",
+          "typeID": "Label",
+          "zOrder": "205",
+          "measuredW": "51",
+          "measuredH": "25",
+          "x": "417",
+          "y": "1539",
+          "properties": {
+            "size": "17",
+            "text": "Layout"
+          }
+        },
+        {
+          "ID": "7174",
+          "typeID": "TextArea",
+          "zOrder": "206",
+          "w": "123",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "382",
+          "y": "1377",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7175",
+          "typeID": "Label",
+          "zOrder": "207",
+          "measuredW": "33",
+          "measuredH": "25",
+          "x": "427",
+          "y": "1387",
+          "properties": {
+            "size": "17",
+            "text": "Grid"
+          }
+        },
+        {
+          "ID": "7176",
+          "typeID": "TextArea",
+          "zOrder": "208",
+          "w": "123",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "382",
+          "y": "1425",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7177",
+          "typeID": "Label",
+          "zOrder": "209",
+          "measuredW": "93",
+          "measuredH": "25",
+          "x": "397",
+          "y": "1435",
+          "properties": {
+            "size": "17",
+            "text": "Breakpoints"
+          }
+        },
+        {
+          "ID": "7178",
+          "typeID": "TextArea",
+          "zOrder": "210",
+          "w": "123",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "382",
+          "y": "1329",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7179",
+          "typeID": "Label",
+          "zOrder": "211",
+          "measuredW": "40",
+          "measuredH": "25",
+          "x": "424",
+          "y": "1339",
+          "properties": {
+            "size": "17",
+            "text": "Units"
+          }
+        },
+        {
+          "ID": "7180",
+          "typeID": "TextArea",
+          "zOrder": "212",
+          "w": "123",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "382",
+          "y": "1473",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7181",
+          "typeID": "Label",
+          "zOrder": "213",
+          "measuredW": "63",
+          "measuredH": "25",
+          "x": "412",
+          "y": "1483",
+          "properties": {
+            "size": "17",
+            "text": "Spacing"
+          }
+        },
+        {
+          "ID": "7183",
+          "typeID": "TextArea",
+          "zOrder": "214",
+          "w": "125",
+          "h": "250",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "467",
+          "y": "1767"
+        },
+        {
+          "ID": "7184",
+          "typeID": "TextArea",
+          "zOrder": "244",
+          "w": "129",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1747",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7185",
+          "typeID": "Label",
+          "zOrder": "245",
+          "measuredW": "89",
+          "measuredH": "25",
+          "x": "431",
+          "y": "1757",
+          "properties": {
+            "size": "17",
+            "text": "Typography"
+          }
+        },
+        {
+          "ID": "7186",
+          "typeID": "TextArea",
+          "zOrder": "215",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1850",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7187",
+          "typeID": "Label",
+          "zOrder": "216",
+          "measuredW": "102",
+          "measuredH": "25",
+          "x": "442",
+          "y": "1860",
+          "properties": {
+            "size": "17",
+            "text": "Grid Relation"
+          }
+        },
+        {
+          "ID": "7188",
+          "typeID": "TextArea",
+          "zOrder": "217",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1898",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7189",
+          "typeID": "Label",
+          "zOrder": "218",
+          "measuredW": "86",
+          "measuredH": "25",
+          "x": "450",
+          "y": "1908",
+          "properties": {
+            "size": "17",
+            "text": "Readability"
+          }
+        },
+        {
+          "ID": "7190",
+          "typeID": "TextArea",
+          "zOrder": "219",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1802",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7191",
+          "typeID": "Label",
+          "zOrder": "220",
+          "measuredW": "127",
+          "measuredH": "25",
+          "x": "429",
+          "y": "1812",
+          "properties": {
+            "size": "17",
+            "text": "Responsiveness"
+          }
+        },
+        {
+          "ID": "7192",
+          "typeID": "TextArea",
+          "zOrder": "221",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1946",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7193",
+          "typeID": "Label",
+          "zOrder": "222",
+          "measuredW": "100",
+          "measuredH": "25",
+          "x": "443",
+          "y": "1956",
+          "properties": {
+            "size": "17",
+            "text": "Performance"
+          }
+        },
+        {
+          "ID": "7194",
+          "typeID": "TextArea",
+          "zOrder": "223",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "411",
+          "y": "1995",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7195",
+          "typeID": "Label",
+          "zOrder": "224",
+          "measuredW": "82",
+          "measuredH": "25",
+          "x": "452",
+          "y": "2005",
+          "properties": {
+            "size": "17",
+            "text": "Guidelines"
+          }
+        },
+        {
+          "ID": "7196",
+          "typeID": "TextArea",
+          "zOrder": "225",
+          "w": "206",
+          "h": "251",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "143",
+          "y": "1766"
+        },
+        {
+          "ID": "7197",
+          "typeID": "TextArea",
+          "zOrder": "226",
+          "w": "153",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "162",
+          "y": "1745",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7198",
+          "typeID": "Label",
+          "zOrder": "227",
+          "measuredW": "96",
+          "measuredH": "25",
+          "x": "191",
+          "y": "1755",
+          "properties": {
+            "size": "17",
+            "text": "Iconography"
+          }
+        },
+        {
+          "ID": "7199",
+          "typeID": "TextArea",
+          "zOrder": "228",
+          "w": "89",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "292",
+          "y": "1800",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7200",
+          "typeID": "Label",
+          "zOrder": "229",
+          "measuredW": "37",
+          "measuredH": "25",
+          "x": "318",
+          "y": "1810",
+          "properties": {
+            "size": "17",
+            "text": "Style"
+          }
+        },
+        {
+          "ID": "7201",
+          "typeID": "TextArea",
+          "zOrder": "230",
+          "w": "88",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "157",
+          "y": "1847",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7202",
+          "typeID": "Label",
+          "zOrder": "231",
+          "measuredW": "60",
+          "measuredH": "25",
+          "x": "171",
+          "y": "1857",
+          "properties": {
+            "size": "17",
+            "text": "Naming"
+          }
+        },
+        {
+          "ID": "7203",
+          "typeID": "TextArea",
+          "zOrder": "232",
+          "w": "126",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "157",
+          "y": "1799",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7204",
+          "typeID": "Label",
+          "zOrder": "233",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "173",
+          "y": "1809",
+          "properties": {
+            "size": "17",
+            "text": "Accessibility"
+          }
+        },
+        {
+          "ID": "7205",
+          "typeID": "TextArea",
+          "zOrder": "234",
+          "w": "224",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "157",
+          "y": "1943",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7206",
+          "typeID": "Label",
+          "zOrder": "235",
+          "measuredW": "122",
+          "measuredH": "25",
+          "x": "208",
+          "y": "1953",
+          "properties": {
+            "size": "17",
+            "text": "Reserved Icons"
+          }
+        },
+        {
+          "ID": "7207",
+          "typeID": "TextArea",
+          "zOrder": "236",
+          "w": "224",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "157",
+          "y": "1992",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7208",
+          "typeID": "Label",
+          "zOrder": "237",
+          "measuredW": "82",
+          "measuredH": "25",
+          "x": "228",
+          "y": "2002",
+          "properties": {
+            "size": "17",
+            "text": "Guidelines"
+          }
+        },
+        {
+          "ID": "7209",
+          "typeID": "TextArea",
+          "zOrder": "238",
+          "w": "131",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "250",
+          "y": "1847",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7210",
+          "typeID": "Label",
+          "zOrder": "239",
+          "measuredW": "102",
+          "measuredH": "25",
+          "x": "265",
+          "y": "1857",
+          "properties": {
+            "size": "17",
+            "text": "Grid Relation"
+          }
+        },
+        {
+          "ID": "7211",
+          "typeID": "TextArea",
+          "zOrder": "240",
+          "w": "88",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "157",
+          "y": "1895",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7212",
+          "typeID": "Label",
+          "zOrder": "241",
+          "measuredW": "41",
+          "measuredH": "25",
+          "x": "180",
+          "y": "1905",
+          "properties": {
+            "size": "17",
+            "text": "Sizes"
+          }
+        },
+        {
+          "ID": "7213",
+          "typeID": "TextArea",
+          "zOrder": "242",
+          "w": "131",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "250",
+          "y": "1895",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7214",
+          "typeID": "Label",
+          "zOrder": "243",
+          "measuredW": "74",
+          "measuredH": "25",
+          "x": "279",
+          "y": "1905",
+          "properties": {
+            "size": "17",
+            "text": "Keywords"
+          }
+        },
+        {
+          "ID": "7215",
+          "typeID": "TextArea",
+          "zOrder": "85",
+          "w": "267",
+          "h": "200",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "177",
+          "y": "799"
+        },
+        {
+          "ID": "7216",
+          "typeID": "TextArea",
+          "zOrder": "86",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "195",
+          "y": "913",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7217",
+          "typeID": "Label",
+          "zOrder": "87",
+          "measuredW": "42",
+          "measuredH": "25",
+          "x": "221",
+          "y": "923",
+          "properties": {
+            "size": "17",
+            "text": "Color"
+          }
+        },
+        {
+          "ID": "7218",
+          "typeID": "TextArea",
+          "zOrder": "88",
+          "w": "131",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "295",
+          "y": "913",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7219",
+          "typeID": "Label",
+          "zOrder": "89",
+          "measuredW": "89",
+          "measuredH": "25",
+          "x": "316",
+          "y": "923",
+          "properties": {
+            "size": "17",
+            "text": "Typography"
+          }
+        },
+        {
+          "ID": "7220",
+          "typeID": "TextArea",
+          "zOrder": "90",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "196",
+          "y": "864",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7221",
+          "typeID": "Label",
+          "zOrder": "91",
+          "measuredW": "46",
+          "measuredH": "25",
+          "x": "220",
+          "y": "874",
+          "properties": {
+            "size": "17",
+            "text": "Sizing"
+          }
+        },
+        {
+          "ID": "7222",
+          "typeID": "TextArea",
+          "zOrder": "92",
+          "w": "130",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "296",
+          "y": "864",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7223",
+          "typeID": "Label",
+          "zOrder": "93",
+          "measuredW": "58",
+          "measuredH": "25",
+          "x": "332",
+          "y": "874",
+          "properties": {
+            "size": "17",
+            "text": "Spaces"
+          }
+        },
+        {
+          "ID": "7224",
+          "typeID": "TextArea",
+          "zOrder": "94",
+          "w": "94",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "196",
+          "y": "815",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7225",
+          "typeID": "Label",
+          "zOrder": "95",
+          "measuredW": "42",
+          "measuredH": "25",
+          "x": "222",
+          "y": "825",
+          "properties": {
+            "size": "17",
+            "text": "Icons"
+          }
+        },
+        {
+          "ID": "7226",
+          "typeID": "TextArea",
+          "zOrder": "96",
+          "w": "129",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "297",
+          "y": "815",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7227",
+          "typeID": "Label",
+          "zOrder": "97",
+          "measuredW": "99",
+          "measuredH": "25",
+          "x": "312",
+          "y": "825",
+          "properties": {
+            "size": "17",
+            "text": "Visual Forms"
+          }
+        },
+        {
+          "ID": "7228",
+          "typeID": "TextArea",
+          "zOrder": "98",
+          "w": "231",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "195",
+          "y": "970",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7229",
+          "typeID": "Label",
+          "zOrder": "99",
+          "measuredW": "192",
+          "measuredH": "25",
+          "x": "215",
+          "y": "979",
+          "properties": {
+            "size": "17",
+            "text": "Identify Design Elements"
+          }
+        },
+        {
+          "ID": "7230",
+          "typeID": "Arrow",
+          "zOrder": "18",
+          "w": "163",
+          "h": "25",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "885",
+          "y": "1325",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 163,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.43967889908256924,
+              "y": 0.059403669724772554
+            },
+            "p2": {
+              "x": 0,
+              "y": 24
+            }
+          }
+        },
+        {
+          "ID": "7231",
+          "typeID": "Arrow",
+          "zOrder": "17",
+          "w": "123",
+          "h": "97",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "215",
+          "y": "1670",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 123,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5331597295140493,
+              "y": -0.24763744802385654
+            },
+            "p2": {
+              "x": 0,
+              "y": 97
+            }
+          }
+        },
+        {
+          "ID": "7232",
+          "typeID": "Arrow",
+          "zOrder": "16",
+          "w": "78",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "250",
+          "y": "1558",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 78,
+              "y": 99
+            },
+            "p1": {
+              "x": 0.4270235064243003,
+              "y": 0.2855704896678307
+            },
+            "p2": {
+              "x": 1,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7233",
+          "typeID": "Arrow",
+          "zOrder": "15",
+          "w": "1",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "453",
+          "y": "1559",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 97.50570630909533
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7234",
+          "typeID": "Arrow",
+          "zOrder": "14",
+          "w": "1",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "453",
+          "y": "1668",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 97.50570630909533
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7235",
+          "typeID": "Arrow",
+          "zOrder": "13",
+          "w": "434",
+          "h": "115",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "545",
+          "y": "1666",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.21579368960033207,
+              "y": -0.20847649162965354
+            },
+            "p1": {
+              "x": 0.30218415810388827,
+              "y": -0.16098569846591773
+            },
+            "p2": {
+              "x": 434.09845979710815,
+              "y": 103.57465610985582
+            }
+          }
+        },
+        {
+          "ID": "7236",
+          "typeID": "TextArea",
+          "zOrder": "246",
+          "w": "336",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "1756",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7237",
+          "typeID": "Label",
+          "zOrder": "247",
+          "measuredW": "212",
+          "measuredH": "25",
+          "x": "979",
+          "y": "1768",
+          "properties": {
+            "size": "17",
+            "text": "Creating Core Components"
+          }
+        },
+        {
+          "ID": "7238",
+          "typeID": "TextArea",
+          "zOrder": "248",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "1849",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7239",
+          "typeID": "Label",
+          "zOrder": "249",
+          "measuredW": "49",
+          "measuredH": "25",
+          "x": "970",
+          "y": "1859",
+          "properties": {
+            "size": "17",
+            "text": "Avatar"
+          }
+        },
+        {
+          "ID": "7240",
+          "typeID": "TextArea",
+          "zOrder": "250",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "1945",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7241",
+          "typeID": "Label",
+          "zOrder": "251",
+          "measuredW": "51",
+          "measuredH": "25",
+          "x": "969",
+          "y": "1955",
+          "properties": {
+            "size": "17",
+            "text": "Badge"
+          }
+        },
+        {
+          "ID": "7242",
+          "typeID": "TextArea",
+          "zOrder": "252",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "1897",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7243",
+          "typeID": "Label",
+          "zOrder": "253",
+          "measuredW": "57",
+          "measuredH": "25",
+          "x": "966",
+          "y": "1907",
+          "properties": {
+            "size": "17",
+            "text": "Banner"
+          }
+        },
+        {
+          "ID": "7244",
+          "typeID": "TextArea",
+          "zOrder": "254",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "1994",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7245",
+          "typeID": "Label",
+          "zOrder": "255",
+          "measuredW": "51",
+          "measuredH": "25",
+          "x": "969",
+          "y": "2004",
+          "properties": {
+            "size": "17",
+            "text": "Button"
+          }
+        },
+        {
+          "ID": "7246",
+          "typeID": "TextArea",
+          "zOrder": "256",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2043",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7247",
+          "typeID": "Label",
+          "zOrder": "257",
+          "measuredW": "38",
+          "measuredH": "25",
+          "x": "976",
+          "y": "2052",
+          "properties": {
+            "size": "17",
+            "text": "Card"
+          }
+        },
+        {
+          "ID": "7248",
+          "typeID": "TextArea",
+          "zOrder": "258",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2091",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7249",
+          "typeID": "Label",
+          "zOrder": "259",
+          "measuredW": "69",
+          "measuredH": "25",
+          "x": "960",
+          "y": "2100",
+          "properties": {
+            "size": "17",
+            "text": "Carousel"
+          }
+        },
+        {
+          "ID": "7250",
+          "typeID": "TextArea",
+          "zOrder": "260",
+          "w": "155",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2139",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7251",
+          "typeID": "Label",
+          "zOrder": "261",
+          "measuredW": "78",
+          "measuredH": "25",
+          "x": "956",
+          "y": "2148",
+          "properties": {
+            "size": "17",
+            "text": "Dropdown"
+          }
+        },
+        {
+          "ID": "7252",
+          "typeID": "TextArea",
+          "zOrder": "262",
+          "w": "156",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2188",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7253",
+          "typeID": "Label",
+          "zOrder": "263",
+          "measuredW": "34",
+          "measuredH": "25",
+          "x": "978",
+          "y": "2197",
+          "properties": {
+            "size": "17",
+            "text": "Icon"
+          }
+        },
+        {
+          "ID": "7254",
+          "typeID": "TextArea",
+          "zOrder": "264",
+          "w": "156",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2237",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7255",
+          "typeID": "Label",
+          "zOrder": "265",
+          "measuredW": "120",
+          "measuredH": "25",
+          "x": "935",
+          "y": "2246",
+          "properties": {
+            "size": "17",
+            "text": "Input Checkbox"
+          }
+        },
+        {
+          "ID": "7256",
+          "typeID": "TextArea",
+          "zOrder": "266",
+          "w": "156",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "917",
+          "y": "2286",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7257",
+          "typeID": "Label",
+          "zOrder": "267",
+          "measuredW": "90",
+          "measuredH": "25",
+          "x": "950",
+          "y": "2295",
+          "properties": {
+            "size": "17",
+            "text": "Input Radio"
+          }
+        },
+        {
+          "ID": "7258",
+          "typeID": "TextArea",
+          "zOrder": "268",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "1850",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7259",
+          "typeID": "Label",
+          "zOrder": "269",
+          "measuredW": "75",
+          "measuredH": "25",
+          "x": "1128",
+          "y": "1860",
+          "properties": {
+            "size": "17",
+            "text": "Input Text"
+          }
+        },
+        {
+          "ID": "7260",
+          "typeID": "TextArea",
+          "zOrder": "270",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "1898",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7261",
+          "typeID": "Label",
+          "zOrder": "271",
+          "measuredW": "93",
+          "measuredH": "25",
+          "x": "1119",
+          "y": "1908",
+          "properties": {
+            "size": "17",
+            "text": "Input Switch"
+          }
+        },
+        {
+          "ID": "7262",
+          "typeID": "TextArea",
+          "zOrder": "272",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "2043",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7263",
+          "typeID": "Label",
+          "zOrder": "273",
+          "measuredW": "28",
+          "measuredH": "25",
+          "x": "1152",
+          "y": "2052",
+          "properties": {
+            "size": "17",
+            "text": "List"
+          }
+        },
+        {
+          "ID": "7264",
+          "typeID": "TextArea",
+          "zOrder": "274",
+          "w": "175",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1078",
+          "y": "2091",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7265",
+          "typeID": "Label",
+          "zOrder": "275",
+          "measuredW": "135",
+          "measuredH": "25",
+          "x": "1098",
+          "y": "2100",
+          "properties": {
+            "size": "17",
+            "text": "Loading Indicator"
+          }
+        },
+        {
+          "ID": "7266",
+          "typeID": "TextArea",
+          "zOrder": "276",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "2139",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7267",
+          "typeID": "Label",
+          "zOrder": "277",
+          "measuredW": "48",
+          "measuredH": "25",
+          "x": "1142",
+          "y": "2148",
+          "properties": {
+            "size": "17",
+            "text": "Modal"
+          }
+        },
+        {
+          "ID": "7268",
+          "typeID": "TextArea",
+          "zOrder": "278",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "2188",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7269",
+          "typeID": "Label",
+          "zOrder": "279",
+          "measuredW": "37",
+          "measuredH": "25",
+          "x": "1147",
+          "y": "2197",
+          "properties": {
+            "size": "17",
+            "text": "Tabs"
+          }
+        },
+        {
+          "ID": "7270",
+          "typeID": "TextArea",
+          "zOrder": "280",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "2237",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7271",
+          "typeID": "Label",
+          "zOrder": "281",
+          "measuredW": "42",
+          "measuredH": "25",
+          "x": "1145",
+          "y": "2246",
+          "properties": {
+            "size": "17",
+            "text": "Toast"
+          }
+        },
+        {
+          "ID": "7272",
+          "typeID": "TextArea",
+          "zOrder": "282",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "2286",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7273",
+          "typeID": "Label",
+          "zOrder": "283",
+          "measuredW": "51",
+          "measuredH": "25",
+          "x": "1140",
+          "y": "2295",
+          "properties": {
+            "size": "17",
+            "text": "Tooltip"
+          }
+        },
+        {
+          "ID": "7274",
+          "typeID": "TextArea",
+          "zOrder": "284",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "1946",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7275",
+          "typeID": "Label",
+          "zOrder": "285",
+          "measuredW": "49",
+          "measuredH": "25",
+          "x": "1141",
+          "y": "1956",
+          "properties": {
+            "size": "17",
+            "text": "Select"
+          }
+        },
+        {
+          "ID": "7276",
+          "typeID": "TextArea",
+          "zOrder": "286",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1079",
+          "y": "1995",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7277",
+          "typeID": "Label",
+          "zOrder": "287",
+          "measuredW": "67",
+          "measuredH": "25",
+          "x": "1132",
+          "y": "2005",
+          "properties": {
+            "size": "17",
+            "text": "Textarea"
+          }
+        },
+        {
+          "ID": "7280",
+          "typeID": "Arrow",
+          "zOrder": "12",
+          "w": "1",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "994",
+          "y": "1783",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 97.50570630909533
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7281",
+          "typeID": "Arrow",
+          "zOrder": "11",
+          "w": "1",
+          "h": "98",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1165",
+          "y": "1783",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 97.50570630909533
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7285",
+          "typeID": "TextArea",
+          "zOrder": "288",
+          "w": "179",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "642",
+          "y": "2078",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7286",
+          "typeID": "Label",
+          "zOrder": "289",
+          "measuredW": "55",
+          "measuredH": "25",
+          "x": "704",
+          "y": "2090",
+          "properties": {
+            "size": "17",
+            "text": "Tooling"
+          }
+        },
+        {
+          "ID": "7287",
+          "typeID": "Arrow",
+          "zOrder": "10",
+          "w": "205",
+          "h": "313",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "772",
+          "y": "1789",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 2.3440290410588887,
+              "y": 313.14548909543873
+            },
+            "p1": {
+              "x": 0.5983740467924911,
+              "y": 0.26381020739309036
+            },
+            "p2": {
+              "x": 204.616587909156,
+              "y": 0.42963121347270317
+            }
+          }
+        },
+        {
+          "ID": "7288",
+          "typeID": "TextArea",
+          "zOrder": "290",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "421",
+          "y": "2153",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7289",
+          "typeID": "Label",
+          "zOrder": "291",
+          "measuredW": "55",
+          "measuredH": "25",
+          "x": "475",
+          "y": "2163",
+          "properties": {
+            "size": "17",
+            "text": "Design"
+          }
+        },
+        {
+          "ID": "7290",
+          "typeID": "TextArea",
+          "zOrder": "292",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "421",
+          "y": "2206",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7291",
+          "typeID": "Label",
+          "zOrder": "293",
+          "measuredW": "105",
+          "measuredH": "25",
+          "x": "474",
+          "y": "2216",
+          "properties": {
+            "size": "17",
+            "text": "Design Editor"
+          }
+        },
+        {
+          "ID": "7294",
+          "typeID": "TextArea",
+          "zOrder": "294",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "421",
+          "y": "2256",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7295",
+          "typeID": "Label",
+          "zOrder": "295",
+          "measuredW": "56",
+          "measuredH": "25",
+          "x": "499",
+          "y": "2266",
+          "properties": {
+            "size": "17",
+            "text": "Plugins"
+          }
+        },
+        {
+          "ID": "7296",
+          "typeID": "TextArea",
+          "zOrder": "296",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "421",
+          "y": "2306",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7297",
+          "typeID": "Label",
+          "zOrder": "297",
+          "measuredW": "118",
+          "measuredH": "25",
+          "x": "468",
+          "y": "2316",
+          "properties": {
+            "size": "17",
+            "text": "Version Control"
+          }
+        },
+        {
+          "ID": "7298",
+          "typeID": "TextArea",
+          "zOrder": "298",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "421",
+          "y": "2356",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7299",
+          "typeID": "Label",
+          "zOrder": "299",
+          "measuredW": "181",
+          "measuredH": "25",
+          "x": "436",
+          "y": "2366",
+          "properties": {
+            "size": "17",
+            "text": "Contribution Guidelines"
+          }
+        },
+        {
+          "ID": "7300",
+          "typeID": "TextArea",
+          "zOrder": "9",
+          "w": "190",
+          "h": "247",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "459",
+          "y": "2171"
+        },
+        {
+          "ID": "7301",
+          "typeID": "TextArea",
+          "zOrder": "300",
+          "w": "161",
+          "h": "546",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "153",
+          "y": "2102"
+        },
+        {
+          "ID": "7302",
+          "typeID": "TextArea",
+          "zOrder": "301",
+          "w": "164",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "223",
+          "y": "2081",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7303",
+          "typeID": "Label",
+          "zOrder": "302",
+          "measuredW": "103",
+          "measuredH": "25",
+          "x": "253",
+          "y": "2091",
+          "properties": {
+            "size": "17",
+            "text": "Development"
+          }
+        },
+        {
+          "ID": "7304",
+          "typeID": "TextArea",
+          "zOrder": "303",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2134",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7305",
+          "typeID": "Label",
+          "zOrder": "304",
+          "measuredW": "154",
+          "measuredH": "25",
+          "x": "201",
+          "y": "2144",
+          "properties": {
+            "size": "17",
+            "text": "Component Catalog"
+          }
+        },
+        {
+          "ID": "7306",
+          "typeID": "TextArea",
+          "zOrder": "305",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2184",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7307",
+          "typeID": "Label",
+          "zOrder": "306",
+          "measuredW": "118",
+          "measuredH": "25",
+          "x": "219",
+          "y": "2194",
+          "properties": {
+            "size": "17",
+            "text": "Documentation"
+          }
+        },
+        {
+          "ID": "7308",
+          "typeID": "TextArea",
+          "zOrder": "307",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2234",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7309",
+          "typeID": "Label",
+          "zOrder": "308",
+          "measuredW": "83",
+          "measuredH": "25",
+          "x": "236",
+          "y": "2244",
+          "properties": {
+            "size": "17",
+            "text": "Code Style"
+          }
+        },
+        {
+          "ID": "7310",
+          "typeID": "TextArea",
+          "zOrder": "309",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2284",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7311",
+          "typeID": "Label",
+          "zOrder": "310",
+          "measuredW": "91",
+          "measuredH": "25",
+          "x": "232",
+          "y": "2294",
+          "properties": {
+            "size": "17",
+            "text": "Unit Testing"
+          }
+        },
+        {
+          "ID": "7312",
+          "typeID": "TextArea",
+          "zOrder": "311",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2335",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7313",
+          "typeID": "Label",
+          "zOrder": "312",
+          "measuredW": "152",
+          "measuredH": "25",
+          "x": "202",
+          "y": "2345",
+          "properties": {
+            "size": "17",
+            "text": "Accessibility Testing"
+          }
+        },
+        {
+          "ID": "7314",
+          "typeID": "TextArea",
+          "zOrder": "313",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2386",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7315",
+          "typeID": "Label",
+          "zOrder": "314",
+          "measuredW": "157",
+          "measuredH": "25",
+          "x": "199",
+          "y": "2396",
+          "properties": {
+            "size": "17",
+            "text": "Semantic Versioning"
+          }
+        },
+        {
+          "ID": "7316",
+          "typeID": "TextArea",
+          "zOrder": "315",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2437",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7317",
+          "typeID": "Label",
+          "zOrder": "316",
+          "measuredW": "132",
+          "measuredH": "25",
+          "x": "212",
+          "y": "2447",
+          "properties": {
+            "size": "17",
+            "text": "Release Strategy"
+          }
+        },
+        {
+          "ID": "7318",
+          "typeID": "TextArea",
+          "zOrder": "317",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2487",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7319",
+          "typeID": "Label",
+          "zOrder": "318",
+          "measuredW": "146",
+          "measuredH": "25",
+          "x": "205",
+          "y": "2497",
+          "properties": {
+            "size": "17",
+            "text": "Commit Guidelines"
+          }
+        },
+        {
+          "ID": "7320",
+          "typeID": "TextArea",
+          "zOrder": "319",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2539",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7321",
+          "typeID": "Label",
+          "zOrder": "320",
+          "measuredW": "107",
+          "measuredH": "25",
+          "x": "224",
+          "y": "2549",
+          "properties": {
+            "size": "17",
+            "text": "PR Templates"
+          }
+        },
+        {
+          "ID": "7322",
+          "typeID": "TextArea",
+          "zOrder": "321",
+          "w": "212",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "172",
+          "y": "2589",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7323",
+          "typeID": "Label",
+          "zOrder": "322",
+          "measuredW": "181",
+          "measuredH": "25",
+          "x": "187",
+          "y": "2599",
+          "properties": {
+            "size": "17",
+            "text": "Contribution Guidelines"
+          }
+        },
+        {
+          "ID": "7324",
+          "typeID": "Arrow",
+          "zOrder": "8",
+          "w": "373",
+          "h": "2",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "344",
+          "y": "2093",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 372.7747974284025,
+              "y": -0.1911648668892667
+            },
+            "p1": {
+              "x": 0.38358379849203533,
+              "y": 0.004804079064842176
+            },
+            "p2": {
+              "x": 0.0519027656332014,
+              "y": -0.1911648668892667
+            }
+          }
+        },
+        {
+          "ID": "7325",
+          "typeID": "Arrow",
+          "zOrder": "7",
+          "w": "225",
+          "h": "57",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "500",
+          "y": "2108",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 224.9665093990128,
+              "y": 0.0005471037206916662
+            },
+            "p1": {
+              "x": 0.6677015419641932,
+              "y": -0.09117251371209674
+            },
+            "p2": {
+              "x": -0.3055697927708252,
+              "y": 57.34253089799313
+            }
+          }
+        },
+        {
+          "ID": "7327",
+          "typeID": "TextArea",
+          "zOrder": "323",
+          "w": "219",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "711",
+          "y": "2547",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7328",
+          "typeID": "Label",
+          "zOrder": "324",
+          "measuredW": "162",
+          "measuredH": "25",
+          "x": "740",
+          "y": "2559",
+          "properties": {
+            "size": "17",
+            "text": "Project Management"
+          }
+        },
+        {
+          "ID": "7329",
+          "typeID": "TextArea",
+          "zOrder": "325",
+          "w": "187",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1040",
+          "y": "2524",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7330",
+          "typeID": "Label",
+          "zOrder": "326",
+          "measuredW": "142",
+          "measuredH": "25",
+          "x": "1063",
+          "y": "2533",
+          "properties": {
+            "size": "17",
+            "text": "Task Management"
+          }
+        },
+        {
+          "ID": "7331",
+          "typeID": "TextArea",
+          "zOrder": "327",
+          "w": "190",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1039",
+          "y": "2369",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7332",
+          "typeID": "Label",
+          "zOrder": "328",
+          "measuredW": "75",
+          "measuredH": "25",
+          "x": "1096",
+          "y": "2378",
+          "properties": {
+            "size": "17",
+            "text": "Roadmap"
+          }
+        },
+        {
+          "ID": "7333",
+          "typeID": "TextArea",
+          "zOrder": "329",
+          "w": "190",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1039",
+          "y": "2420",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7334",
+          "typeID": "Label",
+          "zOrder": "330",
+          "measuredW": "84",
+          "measuredH": "25",
+          "x": "1092",
+          "y": "2429",
+          "properties": {
+            "size": "17",
+            "text": "Milestones"
+          }
+        },
+        {
+          "ID": "7335",
+          "typeID": "TextArea",
+          "zOrder": "331",
+          "w": "190",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1039",
+          "y": "2470",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7336",
+          "typeID": "Label",
+          "zOrder": "332",
+          "measuredW": "70",
+          "measuredH": "25",
+          "x": "1099",
+          "y": "2479",
+          "properties": {
+            "size": "17",
+            "text": "Ticketing"
+          }
+        },
+        {
+          "ID": "7337",
+          "typeID": "TextArea",
+          "zOrder": "333",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "466",
+          "y": "2497",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7338",
+          "typeID": "Label",
+          "zOrder": "334",
+          "measuredW": "129",
+          "measuredH": "25",
+          "x": "488",
+          "y": "2506",
+          "properties": {
+            "size": "17",
+            "text": "Communications"
+          }
+        },
+        {
+          "ID": "7339",
+          "typeID": "TextArea",
+          "zOrder": "335",
+          "w": "222",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "419",
+          "y": "2553",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7340",
+          "typeID": "Label",
+          "zOrder": "336",
+          "measuredW": "162",
+          "measuredH": "25",
+          "x": "450",
+          "y": "2562",
+          "properties": {
+            "size": "17",
+            "text": "Community Meetings"
+          }
+        },
+        {
+          "ID": "7341",
+          "typeID": "TextArea",
+          "zOrder": "337",
+          "w": "222",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "419",
+          "y": "2603",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7342",
+          "typeID": "Label",
+          "zOrder": "338",
+          "measuredW": "189",
+          "measuredH": "25",
+          "x": "436",
+          "y": "2612",
+          "properties": {
+            "size": "17",
+            "text": "Communication Channel"
+          }
+        },
+        {
+          "ID": "7343",
+          "typeID": "TextArea",
+          "zOrder": "339",
+          "w": "222",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "419",
+          "y": "2653",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7344",
+          "typeID": "Label",
+          "zOrder": "340",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "484",
+          "y": "2662",
+          "properties": {
+            "size": "17",
+            "text": "Open Hours"
+          }
+        },
+        {
+          "ID": "7345",
+          "typeID": "TextArea",
+          "zOrder": "341",
+          "w": "222",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "419",
+          "y": "2703",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7346",
+          "typeID": "Label",
+          "zOrder": "342",
+          "measuredW": "41",
+          "measuredH": "25",
+          "x": "510",
+          "y": "2712",
+          "properties": {
+            "size": "17",
+            "text": "FAQs"
+          }
+        },
+        {
+          "ID": "7349",
+          "typeID": "TextArea",
+          "zOrder": "6",
+          "w": "133",
+          "h": "193",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1029",
+          "y": "2357"
+        },
+        {
+          "ID": "7350",
+          "typeID": "TextArea",
+          "zOrder": "5",
+          "w": "179",
+          "h": "245",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "480",
+          "y": "2517"
+        },
+        {
+          "ID": "7351",
+          "typeID": "TextArea",
+          "zOrder": "343",
+          "w": "179",
+          "h": "245",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1028",
+          "y": "2614"
+        },
+        {
+          "ID": "7352",
+          "typeID": "TextArea",
+          "zOrder": "344",
+          "w": "174",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1048",
+          "y": "2594",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "7353",
+          "typeID": "Label",
+          "zOrder": "345",
+          "measuredW": "68",
+          "measuredH": "25",
+          "x": "1101",
+          "y": "2603",
+          "properties": {
+            "size": "17",
+            "text": "Analytics"
+          }
+        },
+        {
+          "ID": "7354",
+          "typeID": "TextArea",
+          "zOrder": "346",
+          "w": "246",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1047",
+          "y": "2650",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7355",
+          "typeID": "Label",
+          "zOrder": "347",
+          "measuredW": "163",
+          "measuredH": "25",
+          "x": "1088",
+          "y": "2659",
+          "properties": {
+            "size": "17",
+            "text": "Component Analytics"
+          }
+        },
+        {
+          "ID": "7356",
+          "typeID": "TextArea",
+          "zOrder": "348",
+          "w": "246",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1047",
+          "y": "2700",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7357",
+          "typeID": "Label",
+          "zOrder": "349",
+          "measuredW": "106",
+          "measuredH": "25",
+          "x": "1117",
+          "y": "2709",
+          "properties": {
+            "size": "17",
+            "text": "Error Logging"
+          }
+        },
+        {
+          "ID": "7358",
+          "typeID": "TextArea",
+          "zOrder": "350",
+          "w": "246",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1047",
+          "y": "2750",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7359",
+          "typeID": "Label",
+          "zOrder": "351",
+          "measuredW": "128",
+          "measuredH": "25",
+          "x": "1106",
+          "y": "2759",
+          "properties": {
+            "size": "17",
+            "text": "Tooling Analytics"
+          }
+        },
+        {
+          "ID": "7360",
+          "typeID": "TextArea",
+          "zOrder": "352",
+          "w": "246",
+          "h": "44",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1047",
+          "y": "2800",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "7361",
+          "typeID": "Label",
+          "zOrder": "353",
+          "measuredW": "209",
+          "measuredH": "25",
+          "x": "1065",
+          "y": "2809",
+          "properties": {
+            "size": "17",
+            "text": "Service and Health Metrics"
+          }
+        },
+        {
+          "ID": "7362",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "4",
+          "h": "488",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "777",
+          "y": "2108",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 4,
+              "y": 488
+            },
+            "p1": {
+              "x": 0.5696202531645573,
+              "y": -9.547097558079948e-19
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7363",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "141",
+          "h": "42",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "892",
+          "y": "2526",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 141,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4137225127850132,
+              "y": 0.07483568957188338
+            },
+            "p2": {
+              "x": 0,
+              "y": 42
+            }
+          }
+        },
+        {
+          "ID": "7366",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "141",
+          "h": "72",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "900",
+          "y": "2578",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 141,
+              "y": 71
+            },
+            "p1": {
+              "x": 0.4909438867647635,
+              "y": -0.13610386286861906
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7367",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "254",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "577",
+          "y": "2572",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 253.7747974284025,
+              "y": -0.1911648668892667
+            },
+            "p1": {
+              "x": 0.3835837984920354,
+              "y": 0.004804079064842176
+            },
+            "p2": {
+              "x": -0.12726614315988627,
+              "y": -0.1911648668892667
+            }
+          }
+        },
+        {
+          "ID": "7368",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "1",
+          "h": "239",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "777",
+          "y": "2573",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 238.85737453330648
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": -9.547097558079946e-19
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "7369",
+          "typeID": "Label",
+          "zOrder": "354",
+          "measuredW": "161",
+          "measuredH": "32",
+          "x": "698",
+          "y": "2834",
+          "properties": {
+            "size": "24",
+            "text": "Design System"
+          }
+        },
+        {
+          "ID": "7371",
+          "typeID": "Arrow",
+          "zOrder": "355",
+          "w": "1",
+          "h": "75",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "778",
+          "y": "2890",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 75
+            },
+            "p1": {
+              "x": 0.5696202531645572,
+              "y": -9.547097558079946e-19
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "7377",
+          "typeID": "Label",
+          "zOrder": "356",
+          "measuredW": "243",
+          "measuredH": "28",
+          "x": "175",
+          "y": "196",
+          "properties": {
+            "size": "20",
+            "text": "Recommended Resources"
+          }
+        },
+        {
+          "ID": "7387",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "211",
+          "measuredH": "24",
+          "w": "211",
+          "h": "24",
+          "x": "173",
+          "y": "237",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "178",
+                  "measuredH": "24",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "16",
+                    "text": "Design System Checklist"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Icon",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16777215",
+                    "icon": {
+                      "ID": "circle",
+                      "size": "small"
+                    }
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Icon",
+                  "zOrder": "2",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "icon": {
+                      "ID": "check-circle",
+                      "size": "small"
+                    },
+                    "color": "10066329"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "7388",
+          "typeID": "__group__",
+          "zOrder": "357",
+          "measuredW": "286",
+          "measuredH": "24",
+          "w": "286",
+          "h": "24",
+          "x": "173",
+          "y": "266",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "253",
+                  "measuredH": "24",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "16",
+                    "text": "Invision Design Systems Handbook"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Icon",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16777215",
+                    "icon": {
+                      "ID": "circle",
+                      "size": "small"
+                    }
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Icon",
+                  "zOrder": "2",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "icon": {
+                      "ID": "check-circle",
+                      "size": "small"
+                    },
+                    "color": "10066329"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 1 copy 2",
+      "order": 1000006.8992828326,
+      "parentID": null,
+      "notes": ""
+    },
+    "branchID": "Master",
+    "resourceID": "4BE92169-157F-4FC5-8E20-403CBCF7A6C6",
+    "mockupH": "2796",
+    "mockupW": "1166",
+    "measuredW": "1309",
+    "measuredH": "2965",
+    "version": "1.0"
+  },
+  "groupOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "dependencies": [],
+  "projectID": "file:///Users/kamranahmed/Desktop/devops%20roadmap%5C.bmpr"
+}
