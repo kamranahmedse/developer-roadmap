@@ -1,4 +1,4 @@
-# Type inference
+# Type Inference
 
 Type inference gives go the capability to detect the type of a value without being explicitly indicated , hence the posibility to declare variables without providing its type at first 
 
