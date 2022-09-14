@@ -51,7 +51,8 @@
       "nodejs",
       "react",
       "angular",
-      "vue"
+      "vue",
+      "design-system"
     ],
     "id": "frontend",
     "metaPath": "/roadmaps/100-frontend/meta.json",
@@ -219,7 +220,8 @@
       "javascript",
       "angular",
       "vue",
-      "nodejs"
+      "nodejs",
+      "design-system"
     ],
     "id": "react",
     "metaPath": "/roadmaps/103-react/meta.json",

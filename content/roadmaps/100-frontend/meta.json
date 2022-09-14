@@ -50,6 +50,7 @@
     "nodejs",
     "react",
     "angular",
-    "vue"
+    "vue",
+    "design-system"
   ]
 }

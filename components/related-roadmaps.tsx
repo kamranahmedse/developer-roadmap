@@ -61,7 +61,7 @@ export function RelatedRoadmaps(props: RelatedRoadmapsProps) {
                 as='span'
                 fontWeight='bold'
                 display={['inline-block']}
-                minWidth='100px'
+                minWidth='140px'
               >
                 {roadmap.featuredTitle}
               </Text>
