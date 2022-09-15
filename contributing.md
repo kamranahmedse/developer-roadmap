@@ -29,22 +29,26 @@ Please note that the markdown has a specific format. Please follow the sample fo
 * Title of the file to represent the node item.
 * Add a brief summary describing the roadmap node (preferably less than 200 characters)
 * Use `ResourceGroupTitle` tag for the resources heading
-  ```
+
+  ```html
   <ResourceGroupTitle>Free Content</ResourceGroupTitle>
   ```
+
 * Use `BadgeLink` tag for the resource links with below guidelines
+
   ```html
   <!-- blue color scheme for the official websites and documentation -->
   <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://reactjs.org/'>React Website</BadgeLink>
-  
+
   <!-- green color scheme for the courses -->
   <BadgeLink badgeText='Course' colorScheme='green' href='https://example.com'>The Beginner's Guide to React</BadgeLink>
-  
+
   <!-- no color scheme for the video links -->
   <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=i793Qm6kv3U'>Understanding React's UI Rendering Process</BadgeLink>
-  
+
   <!-- yellow color scheme for the blog posts and readable text -->
   <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/'>What is DNS?</BadgeLink>
+
   ```
 
 ## Guidelines
