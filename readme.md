@@ -63,11 +63,11 @@ npm run dev
 
 ## Contribution
 
-> Have a look at [contribution docs](./contributing) for how to update any of the roadmaps
+> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
 
+- Add content to roadmaps
+- Add new roadmaps
 - Suggest changes to existing roadmaps
-- [Add content to roadmaps](https://github.com/kamranahmedse/developer-roadmap/issues/985)
-- Write tests
 - Discuss ideas in issues
 - Spread the word
 
