@@ -4,8 +4,8 @@
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink badgeText='Read' href='https://docs.github.com/en/get-started/quickstart/hello-world'>GitHub: Quickstart</BadgeLink>
-<BadgeLink badgeText='Watch' colorScheme='yellow' href='https://www.youtube.com/watch?v=w3jLJU7DT5E'>What is GitHub?</BadgeLink>
-<BadgeLink badgeText='Watch' colorScheme='yellow' href='https://www.youtube.com/watch?v=wpISo9TNjfU'>Git vs. GitHub: What's the difference?</BadgeLink>
-<BadgeLink badgeText='Watch' colorScheme='yellow' href='https://www.youtube.com/watch?v=RGOj5yH7evk'>Git and GitHub for Beginners</BadgeLink>
-<BadgeLink badgeText='Watch' colorScheme='yellow' href='https://www.youtube.com/watch?v=eulnSXkhE7I'>Git and GitHub - CS50 Beyond 2019</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://docs.github.com/en/get-started/quickstart/hello-world'>GitHub: Quickstart</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=w3jLJU7DT5E'>What is GitHub?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=wpISo9TNjfU'>Git vs. GitHub: What's the difference?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=RGOj5yH7evk'>Git and GitHub for Beginners</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=eulnSXkhE7I'>Git and GitHub - CS50 Beyond 2019</BadgeLink>
