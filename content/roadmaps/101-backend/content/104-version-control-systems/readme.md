@@ -5,5 +5,5 @@ Version control/source control systems allow developers to track and control cha
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://git-scm.com/'>Git</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.mercurial-scm.org/'>Mercurial</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.mercurial-scm.org/'>Mercurial</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.atlassian.com/git/tutorials/what-is-version-control'>What is Version Control?</BadgeLink>
