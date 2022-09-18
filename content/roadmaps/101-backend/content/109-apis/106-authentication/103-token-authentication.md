@@ -10,4 +10,4 @@ But using tokens requires a bit of coding know-how. Most developers pick up the 
 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Read' href='https://www.okta.com/identity-101/what-is-token-based-authentication/'>What Is Token-Based Authentication?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.okta.com/identity-101/what-is-token-based-authentication/'>What Is Token-Based Authentication?</BadgeLink>
