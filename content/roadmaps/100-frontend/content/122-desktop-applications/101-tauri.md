@@ -4,4 +4,4 @@ Tauri is a toolkit that helps developers make applications for the major desktop
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://tauri.app/'>Tauri Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Docs' href='https://tauri.app/v1/guides/'>Tauri Docs</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://tauri.app/v1/guides/'>Tauri Docs</BadgeLink>

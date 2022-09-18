@@ -4,4 +4,4 @@ Gridsome is a Vue.js powered Jamstack framework for building static generated we
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://gridsome.org/'>Gridsome Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Docs' href='https://gridsome.org/docs/'>Gridsome Documentation</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://gridsome.org/docs/'>Gridsome Documentation</BadgeLink>

@@ -4,4 +4,4 @@ Electron allows you to build cross-platform desktop applications with HTML, CSS,
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.electronjs.org/'>Electron Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Docs' href='https://www.electronjs.org/docs/latest/'>Electron Docs</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://www.electronjs.org/docs/latest/'>Electron Docs</BadgeLink>
