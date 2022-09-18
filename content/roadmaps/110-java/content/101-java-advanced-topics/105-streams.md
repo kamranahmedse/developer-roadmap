@@ -7,4 +7,4 @@ Java provides a new additional package in Java 8 called java.util.stream. This p
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/stream-in-java/'>Streams in Java</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-8-stream'>Java 8 Stream</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=VNovNwHr9jY'>Streams API Tutorial in Java 8+</BadgeLink>
-<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=t1-YZ6bF-g0'>Java 8 STREAMS Tutorial</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=t1-YZ6bF-g0'>Java 8 Streams Tutorial</BadgeLink>
