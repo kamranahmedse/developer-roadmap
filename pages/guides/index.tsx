@@ -40,7 +40,7 @@ export default function Guides(props: GuidesProps) {
                 title={recentGuide.title}
                 subtitle={recentGuide.description}
                 date={recentGuide.formattedUpdatedAt!}
-                isNew
+                isNew={false}
                 colorIndex={counter}
               />
             ))}
