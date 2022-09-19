@@ -27,7 +27,7 @@ export default function Guide(props: GuideProps) {
         <ContentPageHeader
           title={guide.title}
           subtitle={guide.description}
-          formattedDate={guide.formattedUpdatedAt!}
+          formattedDate={`${guide?.type?.charAt(0).toUpperCase()}${guide?.type?.slice(1)} Guide`}
           author={{
             twitter: guide?.author?.twitter!,
             picture: guide?.author?.picture!,

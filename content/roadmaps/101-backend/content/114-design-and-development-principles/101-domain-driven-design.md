@@ -12,4 +12,4 @@ DDD connects the implementation to an evolving model and it is predicated on the
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink colorScheme='blue' badgeText='Original Paper' href='https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf'>Domain Driven Design Quickly</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://matfrs2.github.io/RS2/predavanja/literatura/Avram%20A,%20Marinescu%20F.%20-%20Domain%20Driven%20Design%20Quickly.pdf'>Domain Driven Design Quickly</BadgeLink>
