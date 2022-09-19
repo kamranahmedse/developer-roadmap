@@ -41,6 +41,7 @@ export default function Guides(props: GuidesProps) {
                 subtitle={recentGuide.description}
                 date={recentGuide.formattedUpdatedAt!}
                 isNew={false}
+                type={recentGuide.type}
                 colorIndex={counter}
               />
             ))}
@@ -53,7 +54,7 @@ export default function Guides(props: GuidesProps) {
                 key={oldGuide.id}
                 title={oldGuide.title}
                 badgeText={oldGuide.isNew ? 'NEW' : ''}
-                subtitle={oldGuide.formattedUpdatedAt!}
+                subtitle={`${oldGuide?.type?.charAt(0).toUpperCase()}${oldGuide?.type?.slice(1)}`}
               />
             ))}
           </LinksList>
