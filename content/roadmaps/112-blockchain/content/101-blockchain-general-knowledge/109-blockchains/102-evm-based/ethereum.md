@@ -7,3 +7,4 @@ The Ethereum platform launched in 2015, and it’s now the second largest form o
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://ethereum.org/en/whitepaper/'>Ethereum whitepaper</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://ethereum.org/en/developers/docs/intro-to-ethereum/'>Intro to Ethereum</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://bitsonblocks.net/2016/10/02/gentle-introduction-ethereum/'>A gentle introduction to Ethereum</BadgeLink>
