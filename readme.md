@@ -22,7 +22,7 @@
 
 ![](https://i.imgur.com/waxVImv.png)
 
-Roadmaps are being made interactive and have been moved to the website.
+Roadmaps are now interactive, you can click the nodes to read more about the topics.
 
 ### [View all Roadmaps](https://roadmap.sh)
 
