@@ -3,7 +3,7 @@
 <url>
               <loc>https://roadmap.sh/frontend</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-09-14T05:55:51.073Z</lastmod>
+              <lastmod>2022-09-14T06:02:07.073Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -21,7 +21,7 @@
 <url>
               <loc>https://roadmap.sh/react</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-09-14T05:56:23.451Z</lastmod>
+              <lastmod>2022-09-14T06:02:07.073Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -94,6 +94,12 @@
               <loc>https://roadmap.sh/qa</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-09-08T15:57:35.430Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/basics-of-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-09-21T19:59:14.191Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -273,7 +279,7 @@
 <url>
               <loc>https://roadmap.sh/guides</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-13T19:24:17.719Z</lastmod>
+              <lastmod>2022-09-21T11:15:23.404Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -292,7 +298,7 @@
 <url>
               <loc>https://roadmap.sh/signup</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-08-14T14:08:55.805Z</lastmod>
+              <lastmod>2022-09-19T11:56:53.974Z</lastmod>
               <priority>0.9</priority>
           </url>
 <url>
