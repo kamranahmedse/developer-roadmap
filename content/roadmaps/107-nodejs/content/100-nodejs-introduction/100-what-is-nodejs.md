@@ -12,3 +12,4 @@ A Node.js app runs in a single process, without creating a new thread for every 
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://nodejs.org/en/about/'>Official Website</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Read' href='https://nodejs.dev/en/learn/'>Official Website</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=uVwtVBpw7RQ'>What is Node js?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=jOupHNvDIq8'>How Node.js Works?</BadgeLink>
