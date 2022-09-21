@@ -1,5 +1,16 @@
 [
   {
+    "id": "basics-of-authentication",
+    "title": "Basics of Authentication",
+    "description": "Learn everything you need to know about authentication with this Authentication Series",
+    "isNew": true,
+    "youtubeLink": "https://www.youtube.com/watch?v=Mcyt9SrZT6g",
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2022-09-21T19:59:14.191Z",
+    "createdAt": "2022-09-21T19:59:14.191Z"
+  },
+  {
     "id": "graph-data-structure",
     "title": "Graph Data Structure",
     "description": "Learn everything you need to know about the graph data structure",

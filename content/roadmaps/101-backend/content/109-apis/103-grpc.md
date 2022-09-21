@@ -6,4 +6,4 @@ RPC stands for Remote Procedure Call, there's an ongoing debate on what the g st
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://grpc.io/'>gRPC Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Docs' href='https://grpc.io/docs/'>gRPC Docs</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://grpc.io/docs/'>gRPC Docs</BadgeLink>
