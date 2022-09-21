@@ -1,6 +1,6 @@
-# Test oracles
+# Test Oracles
 
-A source to determine an expected result to compare with the actual result of the system under test.
+A test oracle is a mechanism; different from the program itself that can be used to check the correctness of the program's output for the test cases. Conceptually, we can consider testing a process in which the test cases are given to the test oracle and the program under testing.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://glossary.istqb.org/en/search/test%20oracle'>ISTQB Glossary</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://ecomputernotes.com/software-engineering/what-are-test-oracles'>What are Test Oracles</BadgeLink>
