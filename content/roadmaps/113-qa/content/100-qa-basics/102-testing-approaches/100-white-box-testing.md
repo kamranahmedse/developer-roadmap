@@ -1,7 +1,6 @@
-# White box testing
+# White Box Testing
 
-Testing based on an analysis of the internal structure of the component or system. 
+White Box Testing is a technique in which software’s internal structure, design, and coding are tested to verify input-output flow and improve design, usability, and security. In white box testing, code is visible to testers, so it is also called Clear box testing, Open box testing, Transparent box testing, Code-based testing, and Glass box testing.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://glossary.istqb.org/en/search/white-box'>ISTQB Glossary</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://istqb-main-web-prod.s3.amazonaws.com/media/documents/ISTQB-CTFL_Syllabus_2018_v3.1.1.pdf'>ISTQB Syllabus (page 60)</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/white-box-testing.html'>White Box Testing – What is, Techniques, Example & Types</BadgeLink>
