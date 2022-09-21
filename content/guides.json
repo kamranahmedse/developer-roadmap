@@ -1,5 +1,15 @@
 [
   {
+    "id": "basics-of-authentication",
+    "title": "Basics of Authentication",
+    "description": "Learn the basics of Authentication and Authorization",
+    "isNew": true,
+    "type": "textual",
+    "authorUsername": "kamranahmedse",
+    "updatedAt": "2022-09-21T19:59:14.191Z",
+    "createdAt": "2022-09-21T19:59:14.191Z"
+  },
+  {
     "id": "avoid-render-blocking-javascript-with-async-defer",
     "title": "Async and Defer Script Loading",
     "description": "Learn how to avoid render blocking JavaScript using async and defer scripts.",
