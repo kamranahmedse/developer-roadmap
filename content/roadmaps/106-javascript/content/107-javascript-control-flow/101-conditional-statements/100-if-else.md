@@ -12,3 +12,4 @@ if (condition) {
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else'>if...else</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/ifelse'>Conditional branching: if, '?'</BadgeLink>
