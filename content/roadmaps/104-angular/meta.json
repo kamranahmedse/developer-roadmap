@@ -41,5 +41,6 @@
     "react",
     "vue",
     "nodejs"
-  ]
+  ],
+  "contentPathsFilePath": "./content-paths.json"
 }

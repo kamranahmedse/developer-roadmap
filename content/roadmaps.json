@@ -271,6 +271,7 @@
       "vue",
       "nodejs"
     ],
+    "contentPathsFilePath": "/roadmaps/104-angular/content-paths.json",
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false

@@ -333,7 +333,7 @@
         {
           "ID": "7801",
           "typeID": "Arrow",
-          "zOrder": "61",
+          "zOrder": "58",
           "w": "35",
           "h": "96",
           "measuredW": "150",
@@ -363,7 +363,7 @@
         {
           "ID": "7802",
           "typeID": "Arrow",
-          "zOrder": "62",
+          "zOrder": "59",
           "w": "10",
           "h": "81",
           "measuredW": "150",
@@ -392,7 +392,7 @@
         {
           "ID": "7804",
           "typeID": "Label",
-          "zOrder": "64",
+          "zOrder": "61",
           "measuredW": "97",
           "measuredH": "36",
           "x": "612",
@@ -405,7 +405,7 @@
         {
           "ID": "7805",
           "typeID": "Arrow",
-          "zOrder": "65",
+          "zOrder": "62",
           "w": "27",
           "h": "92",
           "measuredW": "150",
@@ -432,357 +432,9 @@
           }
         },
         {
-          "ID": "7809",
-          "typeID": "Canvas",
-          "zOrder": "70",
-          "w": "303",
-          "h": "52",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "545",
-          "y": "447",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7810",
-          "typeID": "Label",
-          "zOrder": "71",
-          "measuredW": "197",
-          "measuredH": "26",
-          "x": "598",
-          "y": "460",
-          "properties": {
-            "text": "Learn TypeScript Basics",
-            "size": "18"
-          }
-        },
-        {
-          "ID": "7815",
-          "typeID": "Canvas",
-          "zOrder": "80",
-          "w": "262",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "586",
-          "y": "712",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7816",
-          "typeID": "Label",
-          "zOrder": "81",
-          "measuredW": "145",
-          "measuredH": "25",
-          "x": "649",
-          "y": "724",
-          "properties": {
-            "text": "Learn RxJS Basics",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7817",
-          "typeID": "Canvas",
-          "zOrder": "82",
-          "w": "256",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "635",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7818",
-          "typeID": "Label",
-          "zOrder": "83",
-          "measuredW": "210",
-          "measuredH": "25",
-          "x": "244",
-          "y": "647",
-          "properties": {
-            "text": "What is Observable Pattern",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7819",
-          "typeID": "Canvas",
-          "zOrder": "84",
-          "w": "256",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "690",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7820",
-          "typeID": "Label",
-          "zOrder": "85",
-          "measuredW": "161",
-          "measuredH": "25",
-          "x": "268",
-          "y": "702",
-          "properties": {
-            "text": "Observable Lifecycle",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7821",
-          "typeID": "Canvas",
-          "zOrder": "86",
-          "w": "256",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "746",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7822",
-          "typeID": "Label",
-          "zOrder": "87",
-          "measuredW": "133",
-          "measuredH": "25",
-          "x": "282",
-          "y": "758",
-          "properties": {
-            "text": "Marble Diagrams",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7823",
-          "typeID": "Canvas",
-          "zOrder": "128",
-          "w": "222",
-          "h": "274",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "941",
-          "y": "567"
-        },
-        {
-          "ID": "7824",
-          "typeID": "Label",
-          "zOrder": "129",
-          "measuredW": "83",
-          "measuredH": "26",
-          "x": "1000",
-          "y": "580",
-          "properties": {
-            "text": "Operators",
-            "size": "18"
-          }
-        },
-        {
-          "ID": "7825",
-          "typeID": "Canvas",
-          "zOrder": "130",
-          "w": "196",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "955",
-          "y": "616",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7826",
-          "typeID": "Label",
-          "zOrder": "131",
-          "measuredW": "63",
-          "measuredH": "25",
-          "x": "1025",
-          "y": "628",
-          "properties": {
-            "text": "Filtering",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7827",
-          "typeID": "Canvas",
-          "zOrder": "132",
-          "w": "195",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "955",
-          "y": "670",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7828",
-          "typeID": "Label",
-          "zOrder": "133",
-          "measuredW": "102",
-          "measuredH": "25",
-          "x": "1006",
-          "y": "682",
-          "properties": {
-            "text": "Rate Limiting",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7829",
-          "typeID": "Canvas",
-          "zOrder": "134",
-          "w": "197",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "954",
-          "y": "726",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7830",
-          "typeID": "Label",
-          "zOrder": "135",
-          "measuredW": "116",
-          "measuredH": "25",
-          "x": "999",
-          "y": "738",
-          "properties": {
-            "text": "Transformation",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7831",
-          "typeID": "Canvas",
-          "zOrder": "136",
-          "w": "197",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "954",
-          "y": "781",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7832",
-          "typeID": "Label",
-          "zOrder": "137",
-          "measuredW": "98",
-          "measuredH": "25",
-          "x": "1008",
-          "y": "793",
-          "properties": {
-            "text": "Combination",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7833",
-          "typeID": "Canvas",
-          "zOrder": "88",
-          "w": "256",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "802",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7834",
-          "typeID": "Label",
-          "zOrder": "89",
-          "measuredW": "137",
-          "measuredH": "25",
-          "x": "280",
-          "y": "814",
-          "properties": {
-            "text": "RxJS vs Promises",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7835",
-          "typeID": "Canvas",
-          "zOrder": "90",
-          "w": "262",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "901",
-          "y": "935",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7836",
-          "typeID": "Label",
-          "zOrder": "91",
-          "measuredW": "176",
-          "measuredH": "25",
-          "x": "949",
-          "y": "947",
-          "properties": {
-            "text": "Understand the Basics",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7837",
-          "typeID": "Canvas",
-          "zOrder": "92",
-          "w": "262",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "900",
-          "y": "876",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7838",
-          "typeID": "Label",
-          "zOrder": "93",
-          "measuredW": "158",
-          "measuredH": "25",
-          "x": "952",
-          "y": "888",
-          "properties": {
-            "text": "Angular.js vs Angular",
-            "size": "17"
-          }
-        },
-        {
           "ID": "7839",
           "typeID": "Canvas",
-          "zOrder": "94",
+          "zOrder": "79",
           "w": "198",
           "h": "393",
           "measuredW": "100",
@@ -793,7 +445,7 @@
         {
           "ID": "7840",
           "typeID": "Label",
-          "zOrder": "95",
+          "zOrder": "80",
           "measuredW": "101",
           "measuredH": "26",
           "x": "1012",
@@ -801,141 +453,6 @@
           "properties": {
             "text": "What are __",
             "size": "18"
-          }
-        },
-        {
-          "ID": "7841",
-          "typeID": "Canvas",
-          "zOrder": "96",
-          "w": "222",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "657",
-          "y": "1166",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7842",
-          "typeID": "Label",
-          "zOrder": "97",
-          "measuredW": "80",
-          "measuredH": "25",
-          "x": "728",
-          "y": "1178",
-          "properties": {
-            "text": "Templates",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7869",
-          "typeID": "Canvas",
-          "zOrder": "102",
-          "w": "126",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "691",
-          "y": "1732",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7870",
-          "typeID": "Label",
-          "zOrder": "103",
-          "measuredW": "46",
-          "measuredH": "25",
-          "x": "724",
-          "y": "1744",
-          "properties": {
-            "text": "NGXS",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7871",
-          "typeID": "Canvas",
-          "zOrder": "104",
-          "w": "126",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "691",
-          "y": "1789",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7872",
-          "typeID": "Label",
-          "zOrder": "105",
-          "measuredW": "48",
-          "measuredH": "25",
-          "x": "723",
-          "y": "1801",
-          "properties": {
-            "size": "17",
-            "text": "NGRX"
-          }
-        },
-        {
-          "ID": "7882",
-          "typeID": "Canvas",
-          "zOrder": "106",
-          "w": "255",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "2128",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7883",
-          "typeID": "Label",
-          "zOrder": "107",
-          "measuredW": "104",
-          "measuredH": "25",
-          "x": "298",
-          "y": "2140",
-          "properties": {
-            "size": "17",
-            "text": "Testing Pipes"
-          }
-        },
-        {
-          "ID": "7884",
-          "typeID": "Canvas",
-          "zOrder": "108",
-          "w": "255",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "2183",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7885",
-          "typeID": "Label",
-          "zOrder": "109",
-          "measuredW": "219",
-          "measuredH": "25",
-          "x": "240",
-          "y": "2195",
-          "properties": {
-            "size": "17",
-            "text": "Services with Dependencies"
           }
         },
         {
@@ -1118,141 +635,6 @@
           }
         },
         {
-          "ID": "7910",
-          "typeID": "Canvas",
-          "zOrder": "111",
-          "w": "243",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "579",
-          "y": "940",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7911",
-          "typeID": "Label",
-          "zOrder": "112",
-          "measuredW": "91",
-          "measuredH": "25",
-          "x": "655",
-          "y": "952",
-          "properties": {
-            "text": "Angular CLI",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7912",
-          "typeID": "Canvas",
-          "zOrder": "114",
-          "w": "123",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "235",
-          "y": "891",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7913",
-          "typeID": "Label",
-          "zOrder": "115",
-          "measuredW": "61",
-          "measuredH": "25",
-          "x": "268",
-          "y": "903",
-          "properties": {
-            "text": "ng build",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7916",
-          "typeID": "Canvas",
-          "zOrder": "116",
-          "w": "94",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "364",
-          "y": "891",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7917",
-          "typeID": "Label",
-          "zOrder": "117",
-          "measuredW": "67",
-          "measuredH": "25",
-          "x": "380",
-          "y": "903",
-          "properties": {
-            "text": "ng serve",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7918",
-          "typeID": "Canvas",
-          "zOrder": "118",
-          "w": "123",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "236",
-          "y": "946",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7919",
-          "typeID": "Label",
-          "zOrder": "119",
-          "measuredW": "95",
-          "measuredH": "25",
-          "x": "253",
-          "y": "958",
-          "properties": {
-            "text": "ng generate",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7920",
-          "typeID": "Canvas",
-          "zOrder": "120",
-          "w": "94",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "365",
-          "y": "946",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7921",
-          "typeID": "Label",
-          "zOrder": "121",
-          "measuredW": "53",
-          "measuredH": "25",
-          "x": "387",
-          "y": "958",
-          "properties": {
-            "text": "ng test",
-            "size": "17"
-          }
-        },
-        {
           "ID": "7922",
           "typeID": "Arrow",
           "zOrder": "36",
@@ -1345,94 +727,13 @@
         {
           "ID": "7928",
           "typeID": "Canvas",
-          "zOrder": "113",
+          "zOrder": "90",
           "w": "253",
           "h": "188",
           "measuredW": "100",
           "measuredH": "70",
           "x": "221",
           "y": "877"
-        },
-        {
-          "ID": "7929",
-          "typeID": "Canvas",
-          "zOrder": "122",
-          "w": "145",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "579",
-          "y": "839",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7930",
-          "typeID": "Label",
-          "zOrder": "123",
-          "measuredW": "90",
-          "measuredH": "25",
-          "x": "607",
-          "y": "851",
-          "properties": {
-            "size": "17",
-            "text": "Schematics"
-          }
-        },
-        {
-          "ID": "7933",
-          "typeID": "Canvas",
-          "zOrder": "124",
-          "w": "123",
-          "h": "49",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "235",
-          "y": "1002",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7934",
-          "typeID": "Label",
-          "zOrder": "125",
-          "measuredW": "55",
-          "measuredH": "25",
-          "x": "271",
-          "y": "1014",
-          "properties": {
-            "text": "ng e2e",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7937",
-          "typeID": "Canvas",
-          "zOrder": "126",
-          "w": "94",
-          "h": "49",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "364",
-          "y": "1002",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7938",
-          "typeID": "Label",
-          "zOrder": "127",
-          "measuredW": "56",
-          "measuredH": "25",
-          "x": "385",
-          "y": "1014",
-          "properties": {
-            "text": "ng new",
-            "size": "17"
-          }
         },
         {
           "ID": "7939",
@@ -1462,281 +763,6 @@
               "x": -0.10087148815074443,
               "y": 72.101629891946
             }
-          }
-        },
-        {
-          "ID": "7941",
-          "typeID": "Canvas",
-          "zOrder": "55",
-          "w": "240",
-          "h": "49",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "387",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7942",
-          "typeID": "Label",
-          "zOrder": "56",
-          "w": "141",
-          "measuredW": "150",
-          "measuredH": "25",
-          "x": "277",
-          "y": "399",
-          "properties": {
-            "text": "What is TypeScript?",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7943",
-          "typeID": "Canvas",
-          "zOrder": "72",
-          "w": "240",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "442",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7944",
-          "typeID": "Label",
-          "zOrder": "73",
-          "w": "160",
-          "measuredW": "157",
-          "measuredH": "25",
-          "x": "262",
-          "y": "454",
-          "properties": {
-            "text": "Why use TypeScript?",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7945",
-          "typeID": "Canvas",
-          "zOrder": "57",
-          "w": "240",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "499",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7946",
-          "typeID": "Label",
-          "zOrder": "58",
-          "w": "131",
-          "measuredW": "128",
-          "measuredH": "25",
-          "x": "276",
-          "y": "511",
-          "properties": {
-            "text": "Structural Typing",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7947",
-          "typeID": "Canvas",
-          "zOrder": "59",
-          "w": "240",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "555",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7948",
-          "typeID": "Label",
-          "zOrder": "60",
-          "w": "118",
-          "measuredW": "116",
-          "measuredH": "25",
-          "x": "283",
-          "y": "567",
-          "properties": {
-            "text": "Type Inference",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7949",
-          "typeID": "Canvas",
-          "zOrder": "76",
-          "w": "222",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "943",
-          "y": "441",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7950",
-          "typeID": "Label",
-          "zOrder": "77",
-          "measuredW": "100",
-          "measuredH": "25",
-          "x": "1004",
-          "y": "453",
-          "properties": {
-            "text": "Built-in types",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7951",
-          "typeID": "Canvas",
-          "zOrder": "78",
-          "w": "222",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "943",
-          "y": "497",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7952",
-          "typeID": "Label",
-          "zOrder": "79",
-          "w": "94",
-          "measuredW": "97",
-          "measuredH": "25",
-          "x": "1007",
-          "y": "509",
-          "properties": {
-            "text": "Type Guards",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7953",
-          "typeID": "Canvas",
-          "zOrder": "74",
-          "w": "222",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "943",
-          "y": "386",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7954",
-          "typeID": "Label",
-          "zOrder": "75",
-          "measuredW": "95",
-          "measuredH": "25",
-          "x": "1006",
-          "y": "398",
-          "properties": {
-            "text": "Union Types",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7955",
-          "typeID": "Canvas",
-          "zOrder": "138",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1054",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7956",
-          "typeID": "Label",
-          "zOrder": "139",
-          "measuredW": "99",
-          "measuredH": "25",
-          "x": "983",
-          "y": "1066",
-          "properties": {
-            "size": "17",
-            "text": "Components"
-          }
-        },
-        {
-          "ID": "7959",
-          "typeID": "Canvas",
-          "zOrder": "140",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1108",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7960",
-          "typeID": "Label",
-          "zOrder": "141",
-          "measuredW": "80",
-          "measuredH": "25",
-          "x": "993",
-          "y": "1120",
-          "properties": {
-            "size": "17",
-            "text": "Templates"
-          }
-        },
-        {
-          "ID": "7961",
-          "typeID": "Canvas",
-          "zOrder": "142",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1163",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7962",
-          "typeID": "Label",
-          "zOrder": "143",
-          "measuredW": "66",
-          "measuredH": "25",
-          "x": "1000",
-          "y": "1175",
-          "properties": {
-            "size": "17",
-            "text": "Modules"
           }
         },
         {
@@ -1796,168 +822,6 @@
               "x": 0.6653417460931905,
               "y": -0.1453471090021594
             }
-          }
-        },
-        {
-          "ID": "7968",
-          "typeID": "Canvas",
-          "zOrder": "98",
-          "w": "157",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1095",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7969",
-          "typeID": "Label",
-          "zOrder": "99",
-          "measuredW": "98",
-          "measuredH": "25",
-          "x": "251",
-          "y": "1106",
-          "properties": {
-            "text": "Interpolation",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7970",
-          "typeID": "Canvas",
-          "zOrder": "100",
-          "w": "161",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "384",
-          "y": "1095",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7971",
-          "typeID": "Label",
-          "zOrder": "101",
-          "measuredW": "128",
-          "measuredH": "25",
-          "x": "401",
-          "y": "1106",
-          "properties": {
-            "text": "Property Binding",
-            "size": "17"
-          }
-        },
-        {
-          "ID": "7972",
-          "typeID": "Canvas",
-          "zOrder": "144",
-          "w": "324",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1150",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7973",
-          "typeID": "Label",
-          "zOrder": "145",
-          "measuredW": "163",
-          "measuredH": "25",
-          "x": "301",
-          "y": "1162",
-          "properties": {
-            "size": "17",
-            "text": "Template Statements"
-          }
-        },
-        {
-          "ID": "7974",
-          "typeID": "Canvas",
-          "zOrder": "146",
-          "w": "324",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1206",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7975",
-          "typeID": "Label",
-          "zOrder": "147",
-          "measuredW": "267",
-          "measuredH": "25",
-          "x": "240",
-          "y": "1218",
-          "properties": {
-            "size": "17",
-            "text": "Binding (Data, Props, Attrs, Events)"
-          }
-        },
-        {
-          "ID": "7976",
-          "typeID": "Canvas",
-          "zOrder": "148",
-          "w": "154",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1261",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7977",
-          "typeID": "Label",
-          "zOrder": "149",
-          "measuredW": "119",
-          "measuredH": "25",
-          "x": "238",
-          "y": "1273",
-          "properties": {
-            "size": "17",
-            "text": "Reference Vars"
-          }
-        },
-        {
-          "ID": "7978",
-          "typeID": "Canvas",
-          "zOrder": "150",
-          "w": "164",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "381",
-          "y": "1261",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7979",
-          "typeID": "Label",
-          "zOrder": "151",
-          "measuredW": "131",
-          "measuredH": "25",
-          "x": "399",
-          "y": "1273",
-          "properties": {
-            "size": "17",
-            "text": "@Input, @Output"
           }
         },
         {
@@ -2081,87 +945,6 @@
           }
         },
         {
-          "ID": "7984",
-          "typeID": "Canvas",
-          "zOrder": "152",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1218",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7985",
-          "typeID": "Label",
-          "zOrder": "153",
-          "measuredW": "168",
-          "measuredH": "25",
-          "x": "949",
-          "y": "1230",
-          "properties": {
-            "size": "17",
-            "text": "Dependency Injection"
-          }
-        },
-        {
-          "ID": "7986",
-          "typeID": "Canvas",
-          "zOrder": "154",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1273",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7987",
-          "typeID": "Label",
-          "zOrder": "155",
-          "measuredW": "67",
-          "measuredH": "25",
-          "x": "999",
-          "y": "1285",
-          "properties": {
-            "size": "17",
-            "text": "Services"
-          }
-        },
-        {
-          "ID": "7988",
-          "typeID": "Canvas",
-          "zOrder": "156",
-          "w": "236",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "915",
-          "y": "1329",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7989",
-          "typeID": "Label",
-          "zOrder": "157",
-          "measuredW": "60",
-          "measuredH": "25",
-          "x": "1003",
-          "y": "1341",
-          "properties": {
-            "size": "17",
-            "text": "Routing"
-          }
-        },
-        {
           "ID": "7990",
           "typeID": "Arrow",
           "zOrder": "27",
@@ -2188,114 +971,6 @@
               "x": 162,
               "y": 0
             }
-          }
-        },
-        {
-          "ID": "7991",
-          "typeID": "Canvas",
-          "zOrder": "158",
-          "w": "186",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "489",
-          "y": "1448",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "7992",
-          "typeID": "Label",
-          "zOrder": "159",
-          "measuredW": "135",
-          "measuredH": "25",
-          "x": "514",
-          "y": "1460",
-          "properties": {
-            "size": "17",
-            "text": "Rendering Topics"
-          }
-        },
-        {
-          "ID": "7993",
-          "typeID": "Canvas",
-          "zOrder": "160",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1344",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7994",
-          "typeID": "Label",
-          "zOrder": "161",
-          "measuredW": "135",
-          "measuredH": "25",
-          "x": "242",
-          "y": "1356",
-          "properties": {
-            "size": "17",
-            "text": "Built-in Directives"
-          }
-        },
-        {
-          "ID": "7995",
-          "typeID": "Canvas",
-          "zOrder": "162",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1399",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7996",
-          "typeID": "Label",
-          "zOrder": "163",
-          "measuredW": "102",
-          "measuredH": "25",
-          "x": "259",
-          "y": "1411",
-          "properties": {
-            "size": "17",
-            "text": "Built-in Pipes"
-          }
-        },
-        {
-          "ID": "7997",
-          "typeID": "Canvas",
-          "zOrder": "164",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1453",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "7998",
-          "typeID": "Label",
-          "zOrder": "165",
-          "measuredW": "141",
-          "measuredH": "25",
-          "x": "239",
-          "y": "1465",
-          "properties": {
-            "size": "17",
-            "text": "Change Detection"
           }
         },
         {
@@ -2359,33 +1034,6 @@
           }
         },
         {
-          "ID": "8002",
-          "typeID": "Canvas",
-          "zOrder": "166",
-          "w": "133",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "745",
-          "y": "1448",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8003",
-          "typeID": "Label",
-          "zOrder": "167",
-          "measuredW": "48",
-          "measuredH": "25",
-          "x": "788",
-          "y": "1460",
-          "properties": {
-            "size": "17",
-            "text": "Forms"
-          }
-        },
-        {
           "ID": "8004",
           "typeID": "Arrow",
           "zOrder": "24",
@@ -2442,60 +1090,6 @@
               "x": -0.31766348911210684,
               "y": -0.0011636194603852346
             }
-          }
-        },
-        {
-          "ID": "8006",
-          "typeID": "Canvas",
-          "zOrder": "168",
-          "w": "212",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "951",
-          "y": "1414",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8007",
-          "typeID": "Label",
-          "zOrder": "169",
-          "measuredW": "120",
-          "measuredH": "25",
-          "x": "997",
-          "y": "1426",
-          "properties": {
-            "size": "17",
-            "text": "Reactive Forms"
-          }
-        },
-        {
-          "ID": "8008",
-          "typeID": "Canvas",
-          "zOrder": "170",
-          "w": "212",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "951",
-          "y": "1469",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8009",
-          "typeID": "Label",
-          "zOrder": "171",
-          "measuredW": "177",
-          "measuredH": "25",
-          "x": "968",
-          "y": "1481",
-          "properties": {
-            "size": "17",
-            "text": "Template-driven Forms"
           }
         },
         {
@@ -2585,141 +1179,6 @@
               "x": 159.6653417460932,
               "y": 0.2239221875944395
             }
-          }
-        },
-        {
-          "ID": "8014",
-          "typeID": "Canvas",
-          "zOrder": "172",
-          "w": "186",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "489",
-          "y": "1644",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8015",
-          "typeID": "Label",
-          "zOrder": "173",
-          "measuredW": "60",
-          "measuredH": "25",
-          "x": "552",
-          "y": "1656",
-          "properties": {
-            "size": "17",
-            "text": "Routing"
-          }
-        },
-        {
-          "ID": "8016",
-          "typeID": "Canvas",
-          "zOrder": "174",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "493",
-          "y": "1540",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8017",
-          "typeID": "Label",
-          "zOrder": "175",
-          "measuredW": "103",
-          "measuredH": "25",
-          "x": "530",
-          "y": "1552",
-          "properties": {
-            "size": "17",
-            "text": "Configuration"
-          }
-        },
-        {
-          "ID": "8018",
-          "typeID": "Canvas",
-          "zOrder": "176",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1549",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8019",
-          "typeID": "Label",
-          "zOrder": "177",
-          "measuredW": "113",
-          "measuredH": "25",
-          "x": "253",
-          "y": "1561",
-          "properties": {
-            "size": "17",
-            "text": "Router Outlets"
-          }
-        },
-        {
-          "ID": "8020",
-          "typeID": "Canvas",
-          "zOrder": "178",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1659",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8021",
-          "typeID": "Label",
-          "zOrder": "179",
-          "measuredW": "110",
-          "measuredH": "25",
-          "x": "255",
-          "y": "1671",
-          "properties": {
-            "size": "17",
-            "text": "Router Events"
-          }
-        },
-        {
-          "ID": "8022",
-          "typeID": "Canvas",
-          "zOrder": "180",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1604",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8023",
-          "typeID": "Label",
-          "zOrder": "181",
-          "measuredW": "98",
-          "measuredH": "25",
-          "x": "261",
-          "y": "1616",
-          "properties": {
-            "size": "17",
-            "text": "Router Links"
           }
         },
         {
@@ -2843,33 +1302,6 @@
           }
         },
         {
-          "ID": "8028",
-          "typeID": "Canvas",
-          "zOrder": "182",
-          "w": "285",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "878",
-          "y": "1655",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8029",
-          "typeID": "Label",
-          "zOrder": "183",
-          "measuredW": "207",
-          "measuredH": "25",
-          "x": "917",
-          "y": "1667",
-          "properties": {
-            "size": "17",
-            "text": "Services and Remote Data"
-          }
-        },
-        {
           "ID": "8030",
           "typeID": "Arrow",
           "zOrder": "15",
@@ -2896,33 +1328,6 @@
               "x": -0.3346582539068095,
               "y": 0.2239221875944395
             }
-          }
-        },
-        {
-          "ID": "8031",
-          "typeID": "Canvas",
-          "zOrder": "184",
-          "w": "178",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1715",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8032",
-          "typeID": "Label",
-          "zOrder": "185",
-          "measuredW": "56",
-          "measuredH": "25",
-          "x": "282",
-          "y": "1727",
-          "properties": {
-            "size": "17",
-            "text": "Guards"
           }
         },
         {
@@ -2956,60 +1361,6 @@
           }
         },
         {
-          "ID": "8034",
-          "typeID": "Canvas",
-          "zOrder": "186",
-          "w": "285",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "878",
-          "y": "1709",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8035",
-          "typeID": "Label",
-          "zOrder": "187",
-          "measuredW": "121",
-          "measuredH": "25",
-          "x": "960",
-          "y": "1721",
-          "properties": {
-            "size": "17",
-            "text": "Lifecycle Hooks"
-          }
-        },
-        {
-          "ID": "8037",
-          "typeID": "Canvas",
-          "zOrder": "188",
-          "w": "212",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "951",
-          "y": "1560",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8038",
-          "typeID": "Label",
-          "zOrder": "189",
-          "measuredW": "168",
-          "measuredH": "25",
-          "x": "973",
-          "y": "1572",
-          "properties": {
-            "size": "17",
-            "text": "Dependency Injection"
-          }
-        },
-        {
           "ID": "8039",
           "typeID": "Arrow",
           "zOrder": "13",
@@ -3040,114 +1391,6 @@
           }
         },
         {
-          "ID": "8040",
-          "typeID": "Canvas",
-          "zOrder": "190",
-          "w": "154",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "493",
-          "y": "1747",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8041",
-          "typeID": "Label",
-          "zOrder": "191",
-          "measuredW": "100",
-          "measuredH": "25",
-          "x": "520",
-          "y": "1759",
-          "properties": {
-            "size": "17",
-            "text": "Lazy Loading"
-          }
-        },
-        {
-          "ID": "8042",
-          "typeID": "Canvas",
-          "zOrder": "192",
-          "w": "126",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "540",
-          "y": "1848",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8043",
-          "typeID": "Label",
-          "zOrder": "193",
-          "measuredW": "49",
-          "measuredH": "25",
-          "x": "578",
-          "y": "1860",
-          "properties": {
-            "size": "17",
-            "text": "Zones"
-          }
-        },
-        {
-          "ID": "8044",
-          "typeID": "Canvas",
-          "zOrder": "194",
-          "w": "286",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "877",
-          "y": "1763",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8045",
-          "typeID": "Label",
-          "zOrder": "195",
-          "measuredW": "148",
-          "measuredH": "25",
-          "x": "946",
-          "y": "1775",
-          "properties": {
-            "size": "17",
-            "text": "State Management"
-          }
-        },
-        {
-          "ID": "8046",
-          "typeID": "Canvas",
-          "zOrder": "196",
-          "w": "227",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1847",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8047",
-          "typeID": "Label",
-          "zOrder": "197",
-          "measuredW": "177",
-          "measuredH": "25",
-          "x": "244",
-          "y": "1859",
-          "properties": {
-            "size": "17",
-            "text": "Creating a custom ___"
-          }
-        },
-        {
           "ID": "8048",
           "typeID": "Arrow",
           "zOrder": "12",
@@ -3174,86 +1417,6 @@
               "x": 0.2387810888058084,
               "y": -0.32883026031754525
             }
-          }
-        },
-        {
-          "ID": "8050",
-          "typeID": "Canvas",
-          "zOrder": "198",
-          "w": "121",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1929",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8051",
-          "typeID": "Label",
-          "zOrder": "199",
-          "measuredW": "68",
-          "measuredH": "25",
-          "x": "248",
-          "y": "1941",
-          "properties": {
-            "size": "17",
-            "text": "Directive"
-          }
-        },
-        {
-          "ID": "8052",
-          "typeID": "Canvas",
-          "zOrder": "200",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "348",
-          "y": "1929",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8053",
-          "typeID": "Label",
-          "zOrder": "201",
-          "measuredW": "35",
-          "measuredH": "25",
-          "x": "380",
-          "y": "1941",
-          "properties": {
-            "size": "17",
-            "text": "Pipe"
-          }
-        },
-        {
-          "ID": "8054",
-          "typeID": "Canvas",
-          "zOrder": "202",
-          "w": "227",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "221",
-          "y": "1983",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8055",
-          "typeID": "Label",
-          "zOrder": "203",
-          "measuredW": "53",
-          "measuredH": "25",
-          "x": "308",
-          "y": "1995",
-          "properties": {
-            "size": "17",
-            "text": "Library"
           }
         },
         {
@@ -3346,117 +1509,9 @@
           }
         },
         {
-          "ID": "8059",
-          "typeID": "Canvas",
-          "zOrder": "204",
-          "w": "272",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "588",
-          "y": "2205",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8060",
-          "typeID": "Label",
-          "zOrder": "205",
-          "measuredW": "162",
-          "measuredH": "25",
-          "x": "620",
-          "y": "2217",
-          "properties": {
-            "size": "17",
-            "text": "Testing Angular Apps"
-          }
-        },
-        {
-          "ID": "8061",
-          "typeID": "Canvas",
-          "zOrder": "206",
-          "w": "255",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "2238",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8062",
-          "typeID": "Label",
-          "zOrder": "207",
-          "measuredW": "162",
-          "measuredH": "25",
-          "x": "269",
-          "y": "2250",
-          "properties": {
-            "size": "17",
-            "text": "Component Bindings"
-          }
-        },
-        {
-          "ID": "8063",
-          "typeID": "Canvas",
-          "zOrder": "208",
-          "w": "255",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "2293",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8064",
-          "typeID": "Label",
-          "zOrder": "209",
-          "measuredW": "137",
-          "measuredH": "25",
-          "x": "281",
-          "y": "2305",
-          "properties": {
-            "size": "17",
-            "text": "Testing Directives"
-          }
-        },
-        {
-          "ID": "8065",
-          "typeID": "Canvas",
-          "zOrder": "210",
-          "w": "255",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "222",
-          "y": "2348",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8066",
-          "typeID": "Label",
-          "zOrder": "211",
-          "measuredW": "174",
-          "measuredH": "25",
-          "x": "263",
-          "y": "2360",
-          "properties": {
-            "size": "17",
-            "text": "Component Tempaltes"
-          }
-        },
-        {
           "ID": "8072",
           "typeID": "Canvas",
-          "zOrder": "66",
+          "zOrder": "63",
           "w": "350",
           "h": "141",
           "measuredW": "100",
@@ -3467,7 +1522,7 @@
         {
           "ID": "8073",
           "typeID": "Label",
-          "zOrder": "67",
+          "zOrder": "64",
           "measuredW": "314",
           "measuredH": "25",
           "x": "914",
@@ -3480,7 +1535,7 @@
         {
           "ID": "8074",
           "typeID": "Label",
-          "zOrder": "68",
+          "zOrder": "65",
           "measuredW": "319",
           "measuredH": "25",
           "x": "914",
@@ -3493,7 +1548,7 @@
         {
           "ID": "8081",
           "typeID": "__group__",
-          "zOrder": "69",
+          "zOrder": "66",
           "measuredW": "320",
           "measuredH": "45",
           "w": "320",
@@ -3598,7 +1653,7 @@
         {
           "ID": "8082",
           "typeID": "__group__",
-          "zOrder": "63",
+          "zOrder": "60",
           "measuredW": "572",
           "measuredH": "90",
           "w": "572",
@@ -3656,7 +1711,7 @@
         {
           "ID": "8083",
           "typeID": "__group__",
-          "zOrder": "110",
+          "zOrder": "88",
           "measuredW": "576",
           "measuredH": "105",
           "w": "576",
@@ -3709,87 +1764,6 @@
                 }
               ]
             }
-          }
-        },
-        {
-          "ID": "8084",
-          "typeID": "Canvas",
-          "zOrder": "212",
-          "w": "271",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "689",
-          "y": "2000",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8085",
-          "typeID": "Label",
-          "zOrder": "213",
-          "measuredW": "219",
-          "measuredH": "25",
-          "x": "719",
-          "y": "2012",
-          "properties": {
-            "size": "17",
-            "text": "Static Site Generation (SSG)"
-          }
-        },
-        {
-          "ID": "8087",
-          "typeID": "Canvas",
-          "zOrder": "214",
-          "w": "272",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "688",
-          "y": "1944",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "8088",
-          "typeID": "Label",
-          "zOrder": "215",
-          "measuredW": "225",
-          "measuredH": "25",
-          "x": "711",
-          "y": "1956",
-          "properties": {
-            "size": "17",
-            "text": "Server Side Rendering (SSR)"
-          }
-        },
-        {
-          "ID": "8089",
-          "typeID": "Canvas",
-          "zOrder": "216",
-          "w": "197",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1020",
-          "y": "1944",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8090",
-          "typeID": "Label",
-          "zOrder": "217",
-          "measuredW": "135",
-          "measuredH": "25",
-          "x": "1056",
-          "y": "1956",
-          "properties": {
-            "size": "17",
-            "text": "Angular Universal"
           }
         },
         {
@@ -3849,33 +1823,6 @@
               "x": -0.33608340984960705,
               "y": 5.057669186803878
             }
-          }
-        },
-        {
-          "ID": "8094",
-          "typeID": "Canvas",
-          "zOrder": "218",
-          "w": "197",
-          "h": "50",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1020",
-          "y": "2000",
-          "properties": {
-            "color": "16770457"
-          }
-        },
-        {
-          "ID": "8095",
-          "typeID": "Label",
-          "zOrder": "219",
-          "measuredW": "45",
-          "measuredH": "25",
-          "x": "1096",
-          "y": "2012",
-          "properties": {
-            "size": "17",
-            "text": "Scully"
           }
         },
         {
@@ -4085,6 +2032,3579 @@
             "p2": {
               "x": -0.43820569842159784,
               "y": 138.13066289839662
+            }
+          }
+        },
+        {
+          "ID": "8105",
+          "typeID": "__group__",
+          "zOrder": "67",
+          "measuredW": "303",
+          "measuredH": "52",
+          "w": "303",
+          "h": "52",
+          "x": "545",
+          "y": "447",
+          "properties": {
+            "controlName": "100-typescript-basics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "303",
+                  "h": "52",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "197",
+                  "measuredH": "26",
+                  "x": "53",
+                  "y": "13",
+                  "properties": {
+                    "text": "Learn TypeScript Basics",
+                    "size": "18"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8106",
+          "typeID": "__group__",
+          "zOrder": "72",
+          "measuredW": "262",
+          "measuredH": "50",
+          "w": "262",
+          "h": "50",
+          "x": "586",
+          "y": "712",
+          "properties": {
+            "controlName": "101-rxjs-basics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "262",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "145",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "12",
+                  "properties": {
+                    "text": "Learn RxJS Basics",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8107",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "262",
+          "measuredH": "50",
+          "w": "262",
+          "h": "50",
+          "x": "901",
+          "y": "935",
+          "properties": {
+            "controlName": "102-angular-basics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "262",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "176",
+                  "measuredH": "25",
+                  "x": "48",
+                  "y": "12",
+                  "properties": {
+                    "text": "Understand the Basics",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8108",
+          "typeID": "__group__",
+          "zOrder": "89",
+          "measuredW": "243",
+          "measuredH": "50",
+          "w": "243",
+          "h": "50",
+          "x": "579",
+          "y": "940",
+          "properties": {
+            "controlName": "103-angular-cli"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "91",
+                  "measuredH": "25",
+                  "x": "76",
+                  "y": "12",
+                  "properties": {
+                    "text": "Angular CLI",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8109",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "222",
+          "measuredH": "50",
+          "w": "222",
+          "h": "50",
+          "x": "657",
+          "y": "1166",
+          "properties": {
+            "controlName": "104-templates"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "80",
+                  "measuredH": "25",
+                  "x": "71",
+                  "y": "12",
+                  "properties": {
+                    "text": "Templates",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8110",
+          "typeID": "__group__",
+          "zOrder": "113",
+          "measuredW": "186",
+          "measuredH": "50",
+          "w": "186",
+          "h": "50",
+          "x": "489",
+          "y": "1448",
+          "properties": {
+            "controlName": "105-rendering-topics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "186",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "135",
+                  "measuredH": "25",
+                  "x": "25",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Rendering Topics"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8111",
+          "typeID": "__group__",
+          "zOrder": "117",
+          "measuredW": "133",
+          "measuredH": "50",
+          "w": "133",
+          "h": "50",
+          "x": "745",
+          "y": "1448",
+          "properties": {
+            "controlName": "106-forms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "133",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "48",
+                  "measuredH": "25",
+                  "x": "43",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Forms"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8112",
+          "typeID": "__group__",
+          "zOrder": "120",
+          "measuredW": "186",
+          "measuredH": "50",
+          "w": "186",
+          "h": "50",
+          "x": "489",
+          "y": "1644",
+          "properties": {
+            "controlName": "107-routing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "186",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "60",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Routing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8113",
+          "typeID": "__group__",
+          "zOrder": "125",
+          "measuredW": "285",
+          "measuredH": "50",
+          "w": "285",
+          "h": "50",
+          "x": "878",
+          "y": "1655",
+          "properties": {
+            "controlName": "108-services-remote-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "285",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "207",
+                  "measuredH": "25",
+                  "x": "39",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Services and Remote Data"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8114",
+          "typeID": "__group__",
+          "zOrder": "127",
+          "measuredW": "285",
+          "measuredH": "50",
+          "w": "285",
+          "h": "50",
+          "x": "878",
+          "y": "1709",
+          "properties": {
+            "controlName": "109-lifecycle-hooks"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "285",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "121",
+                  "measuredH": "25",
+                  "x": "82",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Lifecycle Hooks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8115",
+          "typeID": "__group__",
+          "zOrder": "131",
+          "measuredW": "286",
+          "measuredH": "50",
+          "w": "286",
+          "h": "50",
+          "x": "877",
+          "y": "1763",
+          "properties": {
+            "controlName": "110-state-management"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "148",
+                  "measuredH": "25",
+                  "x": "69",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "State Management"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8116",
+          "typeID": "__group__",
+          "zOrder": "130",
+          "measuredW": "126",
+          "measuredH": "50",
+          "w": "126",
+          "h": "50",
+          "x": "540",
+          "y": "1848",
+          "properties": {
+            "controlName": "111-zones"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "126",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "38",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Zones"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8118",
+          "typeID": "__group__",
+          "zOrder": "132",
+          "measuredW": "227",
+          "measuredH": "50",
+          "w": "227",
+          "h": "50",
+          "x": "221",
+          "y": "1847",
+          "properties": {
+            "controlName": "112-creating-a-custom-x"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "227",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "177",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Creating a custom ___"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8119",
+          "typeID": "__group__",
+          "zOrder": "141",
+          "measuredW": "272",
+          "measuredH": "50",
+          "w": "272",
+          "h": "50",
+          "x": "688",
+          "y": "1944",
+          "properties": {
+            "controlName": "113-angular-ssr"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "272",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "225",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Server Side Rendering (SSR)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8120",
+          "typeID": "__group__",
+          "zOrder": "140",
+          "measuredW": "271",
+          "measuredH": "50",
+          "w": "271",
+          "h": "50",
+          "x": "689",
+          "y": "2000",
+          "properties": {
+            "controlName": "114-angular-ssg"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "271",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "219",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Static Site Generation (SSG)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8121",
+          "typeID": "__group__",
+          "zOrder": "136",
+          "measuredW": "272",
+          "measuredH": "50",
+          "w": "272",
+          "h": "50",
+          "x": "588",
+          "y": "2205",
+          "properties": {
+            "controlName": "115-testing-angular-apps"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "272",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "162",
+                  "measuredH": "25",
+                  "x": "55",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Testing Angular Apps"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8122",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "240",
+          "measuredH": "49",
+          "w": "240",
+          "h": "49",
+          "x": "222",
+          "y": "387",
+          "properties": {
+            "controlName": "100-typescript-basics:what-is-typescript"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "240",
+                  "h": "49",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "141",
+                  "measuredW": "150",
+                  "measuredH": "25",
+                  "x": "55",
+                  "y": "12",
+                  "properties": {
+                    "text": "What is TypeScript?",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8123",
+          "typeID": "__group__",
+          "zOrder": "68",
+          "measuredW": "240",
+          "measuredH": "50",
+          "w": "240",
+          "h": "50",
+          "x": "222",
+          "y": "442",
+          "properties": {
+            "controlName": "101-typescript-basics:why-use-typescript"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "240",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "160",
+                  "measuredW": "157",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "12",
+                  "properties": {
+                    "text": "Why use TypeScript?",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8124",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "240",
+          "measuredH": "50",
+          "w": "240",
+          "h": "50",
+          "x": "222",
+          "y": "499",
+          "properties": {
+            "controlName": "102-typescript-basics:structural-typing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "240",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "131",
+                  "measuredW": "128",
+                  "measuredH": "25",
+                  "x": "54",
+                  "y": "12",
+                  "properties": {
+                    "text": "Structural Typing",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8125",
+          "typeID": "__group__",
+          "zOrder": "57",
+          "measuredW": "240",
+          "measuredH": "50",
+          "w": "240",
+          "h": "50",
+          "x": "222",
+          "y": "555",
+          "properties": {
+            "controlName": "103-typescript-basics:type-inference"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "240",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "118",
+                  "measuredW": "116",
+                  "measuredH": "25",
+                  "x": "61",
+                  "y": "12",
+                  "properties": {
+                    "text": "Type Inference",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8126",
+          "typeID": "__group__",
+          "zOrder": "69",
+          "measuredW": "222",
+          "measuredH": "50",
+          "w": "222",
+          "h": "50",
+          "x": "943",
+          "y": "386",
+          "properties": {
+            "controlName": "104-typescript-basics:union-types"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "95",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "12",
+                  "properties": {
+                    "text": "Union Types",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8127",
+          "typeID": "__group__",
+          "zOrder": "70",
+          "measuredW": "222",
+          "measuredH": "50",
+          "w": "222",
+          "h": "50",
+          "x": "943",
+          "y": "441",
+          "properties": {
+            "controlName": "105-typescript-basics:builtin-types"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "100",
+                  "measuredH": "25",
+                  "x": "61",
+                  "y": "12",
+                  "properties": {
+                    "text": "Built-in types",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8128",
+          "typeID": "__group__",
+          "zOrder": "71",
+          "measuredW": "222",
+          "measuredH": "50",
+          "w": "222",
+          "h": "50",
+          "x": "943",
+          "y": "497",
+          "properties": {
+            "controlName": "106-typescript-basics:type-guard"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "94",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "64",
+                  "y": "12",
+                  "properties": {
+                    "text": "Type Guards",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8129",
+          "typeID": "__group__",
+          "zOrder": "73",
+          "measuredW": "256",
+          "measuredH": "50",
+          "w": "256",
+          "h": "50",
+          "x": "221",
+          "y": "635",
+          "properties": {
+            "controlName": "100-rxjs-basics:observable-pattern"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "256",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "210",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "text": "What is Observable Pattern",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8130",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "256",
+          "measuredH": "50",
+          "w": "256",
+          "h": "50",
+          "x": "221",
+          "y": "690",
+          "properties": {
+            "controlName": "101-rxjs-basics:observable-lifecycle"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "256",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "161",
+                  "measuredH": "25",
+                  "x": "47",
+                  "y": "12",
+                  "properties": {
+                    "text": "Observable Lifecycle",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8131",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "256",
+          "measuredH": "50",
+          "w": "256",
+          "h": "50",
+          "x": "221",
+          "y": "746",
+          "properties": {
+            "controlName": "102-rxjs-basics:marble-diagrams"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "256",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "133",
+                  "measuredH": "25",
+                  "x": "61",
+                  "y": "12",
+                  "properties": {
+                    "text": "Marble Diagrams",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8132",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "256",
+          "measuredH": "50",
+          "w": "256",
+          "h": "50",
+          "x": "221",
+          "y": "802",
+          "properties": {
+            "controlName": "103-rxjs-basics:rxjs-vs-promises"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "256",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "137",
+                  "measuredH": "25",
+                  "x": "59",
+                  "y": "12",
+                  "properties": {
+                    "text": "RxJS vs Promises",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8133",
+          "typeID": "__group__",
+          "zOrder": "98",
+          "measuredW": "222",
+          "measuredH": "274",
+          "w": "222",
+          "h": "274",
+          "x": "941",
+          "y": "567",
+          "properties": {
+            "controlName": "104-rxjs-basics:operators"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "222",
+                  "h": "274",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "83",
+                  "measuredH": "26",
+                  "x": "59",
+                  "y": "13",
+                  "properties": {
+                    "text": "Operators",
+                    "size": "18"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8134",
+          "typeID": "__group__",
+          "zOrder": "99",
+          "measuredW": "196",
+          "measuredH": "50",
+          "w": "196",
+          "h": "50",
+          "x": "955",
+          "y": "616",
+          "properties": {
+            "controlName": "100-rxjs-basics:operators:filtering"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "196",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "63",
+                  "measuredH": "25",
+                  "x": "70",
+                  "y": "12",
+                  "properties": {
+                    "text": "Filtering",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8137",
+          "typeID": "__group__",
+          "zOrder": "100",
+          "measuredW": "195",
+          "measuredH": "50",
+          "w": "195",
+          "h": "50",
+          "x": "955",
+          "y": "670",
+          "properties": {
+            "controlName": "101-rxjs-basics:operators:rate-limiting"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "195",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "102",
+                  "measuredH": "25",
+                  "x": "51",
+                  "y": "12",
+                  "properties": {
+                    "text": "Rate Limiting",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8138",
+          "typeID": "__group__",
+          "zOrder": "101",
+          "measuredW": "197",
+          "measuredH": "50",
+          "w": "197",
+          "h": "50",
+          "x": "954",
+          "y": "726",
+          "properties": {
+            "controlName": "102-rxjs-basics:operators:transformation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "197",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "116",
+                  "measuredH": "25",
+                  "x": "45",
+                  "y": "12",
+                  "properties": {
+                    "text": "Transformation",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8139",
+          "typeID": "__group__",
+          "zOrder": "102",
+          "measuredW": "197",
+          "measuredH": "50",
+          "w": "197",
+          "h": "50",
+          "x": "954",
+          "y": "781",
+          "properties": {
+            "controlName": "103-rxjs-basics:operators:combination"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "197",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "98",
+                  "measuredH": "25",
+                  "x": "54",
+                  "y": "12",
+                  "properties": {
+                    "text": "Combination",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8140",
+          "typeID": "__group__",
+          "zOrder": "78",
+          "measuredW": "262",
+          "measuredH": "50",
+          "w": "262",
+          "h": "50",
+          "x": "900",
+          "y": "876",
+          "properties": {
+            "controlName": "100-angular-basics:angularjs-vs-angular"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "262",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "158",
+                  "measuredH": "25",
+                  "x": "52",
+                  "y": "12",
+                  "properties": {
+                    "text": "Angular.js vs Angular",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8141",
+          "typeID": "__group__",
+          "zOrder": "103",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1054",
+          "properties": {
+            "controlName": "101-angular-basics:angular-components"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "99",
+                  "measuredH": "25",
+                  "x": "68",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Components"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8142",
+          "typeID": "__group__",
+          "zOrder": "104",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1108",
+          "properties": {
+            "controlName": "102-angular-basics:angular-templates"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "80",
+                  "measuredH": "25",
+                  "x": "78",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Templates"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8143",
+          "typeID": "__group__",
+          "zOrder": "105",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1163",
+          "properties": {
+            "controlName": "103-angular-basics:angular-modules"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "66",
+                  "measuredH": "25",
+                  "x": "85",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Modules"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8144",
+          "typeID": "__group__",
+          "zOrder": "110",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1218",
+          "properties": {
+            "controlName": "104-angular-basics:dependency-injection"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "168",
+                  "measuredH": "25",
+                  "x": "34",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Dependency Injection"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8145",
+          "typeID": "__group__",
+          "zOrder": "111",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1273",
+          "properties": {
+            "controlName": "105-angular-basics:services"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "67",
+                  "measuredH": "25",
+                  "x": "84",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Services"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8146",
+          "typeID": "__group__",
+          "zOrder": "112",
+          "measuredW": "236",
+          "measuredH": "50",
+          "w": "236",
+          "h": "50",
+          "x": "915",
+          "y": "1329",
+          "properties": {
+            "controlName": "106-angular-basics:routing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "236",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "60",
+                  "measuredH": "25",
+                  "x": "88",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Routing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8147",
+          "typeID": "__group__",
+          "zOrder": "91",
+          "measuredW": "123",
+          "measuredH": "50",
+          "w": "123",
+          "h": "50",
+          "x": "235",
+          "y": "891",
+          "properties": {
+            "controlName": "100-angular-cli:ng-build"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "123",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "61",
+                  "measuredH": "25",
+                  "x": "33",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng build",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8148",
+          "typeID": "__group__",
+          "zOrder": "92",
+          "measuredW": "94",
+          "measuredH": "50",
+          "w": "94",
+          "h": "50",
+          "x": "364",
+          "y": "891",
+          "properties": {
+            "controlName": "101-angular-cli:ng-serve"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "94",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "67",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng serve",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8149",
+          "typeID": "__group__",
+          "zOrder": "93",
+          "measuredW": "123",
+          "measuredH": "50",
+          "w": "123",
+          "h": "50",
+          "x": "236",
+          "y": "946",
+          "properties": {
+            "controlName": "102-angular-cli:ng-generate"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "123",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "95",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng generate",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8150",
+          "typeID": "__group__",
+          "zOrder": "94",
+          "measuredW": "94",
+          "measuredH": "50",
+          "w": "94",
+          "h": "50",
+          "x": "365",
+          "y": "946",
+          "properties": {
+            "controlName": "103-angular-cli:ng-test"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "94",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "53",
+                  "measuredH": "25",
+                  "x": "22",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng test",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8151",
+          "typeID": "__group__",
+          "zOrder": "96",
+          "measuredW": "123",
+          "measuredH": "49",
+          "w": "123",
+          "h": "49",
+          "x": "235",
+          "y": "1002",
+          "properties": {
+            "controlName": "104-angular-cli:ng-e2e"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "123",
+                  "h": "49",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "55",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng e2e",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8152",
+          "typeID": "__group__",
+          "zOrder": "97",
+          "measuredW": "94",
+          "measuredH": "49",
+          "w": "94",
+          "h": "49",
+          "x": "364",
+          "y": "1002",
+          "properties": {
+            "controlName": "105-angular-cli:ng-new"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "94",
+                  "h": "49",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "12",
+                  "properties": {
+                    "text": "ng new",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8153",
+          "typeID": "__group__",
+          "zOrder": "95",
+          "measuredW": "145",
+          "measuredH": "50",
+          "w": "145",
+          "h": "50",
+          "x": "579",
+          "y": "839",
+          "properties": {
+            "controlName": "106-angular-cli:schematics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "145",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "90",
+                  "measuredH": "25",
+                  "x": "28",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Schematics"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8154",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "157",
+          "measuredH": "50",
+          "w": "157",
+          "h": "50",
+          "x": "221",
+          "y": "1095",
+          "properties": {
+            "controlName": "100-templates:interpolation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "157",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "98",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "11",
+                  "properties": {
+                    "text": "Interpolation",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8155",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "161",
+          "measuredH": "50",
+          "w": "161",
+          "h": "50",
+          "x": "384",
+          "y": "1095",
+          "properties": {
+            "controlName": "101-templates:property-binding"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "161",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "128",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "11",
+                  "properties": {
+                    "text": "Property Binding",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8156",
+          "typeID": "__group__",
+          "zOrder": "106",
+          "measuredW": "324",
+          "measuredH": "50",
+          "w": "324",
+          "h": "50",
+          "x": "221",
+          "y": "1150",
+          "properties": {
+            "controlName": "102-templates:template-statements"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "324",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "163",
+                  "measuredH": "25",
+                  "x": "80",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Template Statements"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8157",
+          "typeID": "__group__",
+          "zOrder": "107",
+          "measuredW": "324",
+          "measuredH": "50",
+          "w": "324",
+          "h": "50",
+          "x": "221",
+          "y": "1206",
+          "properties": {
+            "controlName": "103-templates:binding-data-props-attrs-events"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "324",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "267",
+                  "measuredH": "25",
+                  "x": "19",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Binding (Data, Props, Attrs, Events)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8158",
+          "typeID": "__group__",
+          "zOrder": "108",
+          "measuredW": "154",
+          "measuredH": "50",
+          "w": "154",
+          "h": "50",
+          "x": "221",
+          "y": "1261",
+          "properties": {
+            "controlName": "104-templates:reference-vars"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "119",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Reference Vars"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8159",
+          "typeID": "__group__",
+          "zOrder": "109",
+          "measuredW": "164",
+          "measuredH": "50",
+          "w": "164",
+          "h": "50",
+          "x": "381",
+          "y": "1261",
+          "properties": {
+            "controlName": "105-templates:input-output"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "164",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "131",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "@Input, @Output"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8160",
+          "typeID": "__group__",
+          "zOrder": "114",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1344",
+          "properties": {
+            "controlName": "100-rendering-topics:builtin-directives"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "135",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Built-in Directives"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8161",
+          "typeID": "__group__",
+          "zOrder": "115",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1399",
+          "properties": {
+            "controlName": "101-rendering-topics:builtin-pipes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "102",
+                  "measuredH": "25",
+                  "x": "38",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Built-in Pipes"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8162",
+          "typeID": "__group__",
+          "zOrder": "116",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1453",
+          "properties": {
+            "controlName": "102-rendering-topics:change-detection"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "141",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Change Detection"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8163",
+          "typeID": "__group__",
+          "zOrder": "118",
+          "measuredW": "212",
+          "measuredH": "50",
+          "w": "212",
+          "h": "50",
+          "x": "951",
+          "y": "1414",
+          "properties": {
+            "controlName": "100-forms:reactive-forms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "212",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "120",
+                  "measuredH": "25",
+                  "x": "46",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Reactive Forms"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8164",
+          "typeID": "__group__",
+          "zOrder": "119",
+          "measuredW": "212",
+          "measuredH": "50",
+          "w": "212",
+          "h": "50",
+          "x": "951",
+          "y": "1469",
+          "properties": {
+            "controlName": "101-forms:template-driven-forms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "212",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "177",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Template-driven Forms"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8165",
+          "typeID": "__group__",
+          "zOrder": "121",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "493",
+          "y": "1540",
+          "properties": {
+            "controlName": "100-routing:configuration"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "103",
+                  "measuredH": "25",
+                  "x": "37",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Configuration"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8166",
+          "typeID": "__group__",
+          "zOrder": "122",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1549",
+          "properties": {
+            "controlName": "101-routing:router-outlets"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "113",
+                  "measuredH": "25",
+                  "x": "32",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Router Outlets"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8167",
+          "typeID": "__group__",
+          "zOrder": "124",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1604",
+          "properties": {
+            "controlName": "102-routing:router-links"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "98",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Router Links"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8168",
+          "typeID": "__group__",
+          "zOrder": "123",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1659",
+          "properties": {
+            "controlName": "103-routing:router-events"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "110",
+                  "measuredH": "25",
+                  "x": "34",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Router Events"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8169",
+          "typeID": "__group__",
+          "zOrder": "126",
+          "measuredW": "178",
+          "measuredH": "50",
+          "w": "178",
+          "h": "50",
+          "x": "221",
+          "y": "1715",
+          "properties": {
+            "controlName": "104-routing:guards"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "178",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "25",
+                  "x": "61",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Guards"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8170",
+          "typeID": "__group__",
+          "zOrder": "129",
+          "measuredW": "154",
+          "measuredH": "50",
+          "w": "154",
+          "h": "50",
+          "x": "493",
+          "y": "1747",
+          "properties": {
+            "controlName": "105-routing:lazy-loading"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "154",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "100",
+                  "measuredH": "25",
+                  "x": "27",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Lazy Loading"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8171",
+          "typeID": "__group__",
+          "zOrder": "128",
+          "measuredW": "212",
+          "measuredH": "50",
+          "w": "212",
+          "h": "50",
+          "x": "951",
+          "y": "1560",
+          "properties": {
+            "controlName": "100-services-remote-data:dependency-injection"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "212",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "168",
+                  "measuredH": "25",
+                  "x": "22",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Dependency Injection"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8172",
+          "typeID": "__group__",
+          "zOrder": "84",
+          "measuredW": "126",
+          "measuredH": "50",
+          "w": "126",
+          "h": "50",
+          "x": "691",
+          "y": "1732",
+          "properties": {
+            "controlName": "100-state-management:ngxs"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "126",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "12",
+                  "properties": {
+                    "text": "NGXS",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8173",
+          "typeID": "__group__",
+          "zOrder": "85",
+          "measuredW": "126",
+          "measuredH": "50",
+          "w": "126",
+          "h": "50",
+          "x": "691",
+          "y": "1789",
+          "properties": {
+            "controlName": "101-state-management:ngrx"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "126",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "48",
+                  "measuredH": "25",
+                  "x": "39",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "NGRX"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8174",
+          "typeID": "__group__",
+          "zOrder": "133",
+          "measuredW": "121",
+          "measuredH": "50",
+          "w": "121",
+          "h": "50",
+          "x": "221",
+          "y": "1929",
+          "properties": {
+            "controlName": "100-creating-a-custom-x:directive"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "121",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "68",
+                  "measuredH": "25",
+                  "x": "27",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Directive"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8175",
+          "typeID": "__group__",
+          "zOrder": "134",
+          "measuredW": "100",
+          "measuredH": "50",
+          "w": "100",
+          "h": "50",
+          "x": "348",
+          "y": "1929",
+          "properties": {
+            "controlName": "101-creating-a-custom-x:pipe"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "35",
+                  "measuredH": "25",
+                  "x": "32",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Pipe"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8176",
+          "typeID": "__group__",
+          "zOrder": "135",
+          "measuredW": "227",
+          "measuredH": "50",
+          "w": "227",
+          "h": "50",
+          "x": "221",
+          "y": "1983",
+          "properties": {
+            "controlName": "102-creating-a-custom-x:library"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "227",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "53",
+                  "measuredH": "25",
+                  "x": "87",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Library"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8177",
+          "typeID": "__group__",
+          "zOrder": "142",
+          "measuredW": "197",
+          "measuredH": "50",
+          "w": "197",
+          "h": "50",
+          "x": "1020",
+          "y": "1944",
+          "properties": {
+            "controlName": "100-angular-ssr:angular-universal"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "197",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "135",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Angular Universal"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8178",
+          "typeID": "__group__",
+          "zOrder": "143",
+          "measuredW": "197",
+          "measuredH": "50",
+          "w": "197",
+          "h": "50",
+          "x": "1020",
+          "y": "2000",
+          "properties": {
+            "controlName": "100-angular-ssg:scully"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "197",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "45",
+                  "measuredH": "25",
+                  "x": "76",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Scully"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8179",
+          "typeID": "__group__",
+          "zOrder": "86",
+          "measuredW": "255",
+          "measuredH": "50",
+          "w": "255",
+          "h": "50",
+          "x": "222",
+          "y": "2128",
+          "properties": {
+            "controlName": "100-testing-angular-apps:testing-pipes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "104",
+                  "measuredH": "25",
+                  "x": "76",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Testing Pipes"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8180",
+          "typeID": "__group__",
+          "zOrder": "87",
+          "measuredW": "255",
+          "measuredH": "50",
+          "w": "255",
+          "h": "50",
+          "x": "222",
+          "y": "2183",
+          "properties": {
+            "controlName": "101-testing-angular-apps:testing-services"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "219",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Services with Dependencies"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8181",
+          "typeID": "__group__",
+          "zOrder": "137",
+          "measuredW": "255",
+          "measuredH": "50",
+          "w": "255",
+          "h": "50",
+          "x": "222",
+          "y": "2238",
+          "properties": {
+            "controlName": "102-testing-angular-apps:testing-component-bindings"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "162",
+                  "measuredH": "25",
+                  "x": "47",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Component Bindings"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8182",
+          "typeID": "__group__",
+          "zOrder": "138",
+          "measuredW": "255",
+          "measuredH": "50",
+          "w": "255",
+          "h": "50",
+          "x": "222",
+          "y": "2293",
+          "properties": {
+            "controlName": "103-testing-angular-apps:testing-directives"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "137",
+                  "measuredH": "25",
+                  "x": "59",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Testing Directives"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "8183",
+          "typeID": "__group__",
+          "zOrder": "139",
+          "measuredW": "255",
+          "measuredH": "50",
+          "w": "255",
+          "h": "50",
+          "x": "222",
+          "y": "2348",
+          "properties": {
+            "controlName": "104-testing-angular-apps:testing-component-templates"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "255",
+                  "h": "50",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "174",
+                  "measuredH": "25",
+                  "x": "41",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Component Templates"
+                  }
+                }
+              ]
             }
           }
         }
