@@ -22,7 +22,7 @@ For the existing roadmaps, please follow the details listed for the nature of co
 
 ## Adding Content
 
-Adding Content to Nodes — Add your content in [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/master/content/roadmaps).
+Find [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/master/content/roadmaps).
 
 Please note that the markdown has a specific format. Please follow the sample format for markdown as given here.
 
