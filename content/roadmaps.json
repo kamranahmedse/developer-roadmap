@@ -254,8 +254,6 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/angular.json",
-    "landingPath": "/roadmaps/104-angular/landscape.md",
-    "resourcesPath": "/roadmaps/104-angular/resources.md",
     "versions": [
       "latest",
       "2018",
