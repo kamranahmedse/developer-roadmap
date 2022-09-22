@@ -7,7 +7,8 @@ There is no need to install it. Being part of the Node.js core, it can be used b
 const path = require('path');
 
 These are the `path` methods.
-path.basename(),path.dirname(),path.extname(),path.format(),path.isAbsolute(),path.join(),path.normalize(),path.parse(),path.resolve()
+
+path.basename(), path.dirname(), path.extname(), path.format(), path.isAbsolute(), path.join(), path.normalize(), path.parse(), path.resolve().
 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
