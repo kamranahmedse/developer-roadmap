@@ -1,9 +1,9 @@
-# Set timeout
+# setTimeout
 
-The setTimeout function is used to call a function after the specified number of milliseconds. The delay of the called function begins after the remaining statements in the script have finished executing. The setTimeout function is found in the Timers module of Node.js.
-
-The **setTimeout()** function accepts two arguments. The first argument is a function and the second argument is time in milliseconds. The **setTimeout()** executes the function passed in the first argument after the time specified in the second argument. The setTimeout function doesn’t block other code and the rest of the code is executed and after a specified time the code inside setTimeout function is executed.
+The setTimeout runs a function after the specified period expires. Times are declared in milliseconds.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/answers/what-is-settimeout-in-nodejs'>What is setTimeout() in Node.js?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/why-we-use-settimeout-function-in-node-js/'>Why we use setTimeout() function in Node.js ?</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Web/API/setTimeout'>JavaScript MDN Docs</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/jsref/met_win_settimeout.asp'>W3Schools – JavaScript - setTimeOut</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=kOcFZV3c75I'>setInterval and setTimeout: timing events</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=z9lJb4D3nJY'>setTimeout EXPLAINED in 5 minutes!</BadgeLink>
