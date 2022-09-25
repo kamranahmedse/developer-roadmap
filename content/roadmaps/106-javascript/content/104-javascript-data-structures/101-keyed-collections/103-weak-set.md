@@ -5,3 +5,4 @@
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakSet'>WeakSet</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/weakmap-weakset'>WeakMap and WeakSet</BadgeLink>
