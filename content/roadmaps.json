@@ -254,8 +254,6 @@
     "isCommunity": false,
     "featured": true,
     "jsonUrl": "/project/angular.json",
-    "landingPath": "/roadmaps/104-angular/landscape.md",
-    "resourcesPath": "/roadmaps/104-angular/resources.md",
     "versions": [
       "latest",
       "2018",
@@ -273,6 +271,7 @@
       "vue",
       "nodejs"
     ],
+    "contentPathsFilePath": "/roadmaps/104-angular/content-paths.json",
     "id": "angular",
     "metaPath": "/roadmaps/104-angular/meta.json",
     "isUpcoming": false

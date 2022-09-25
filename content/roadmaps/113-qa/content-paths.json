@@ -67,6 +67,7 @@
   "qa-automated-testing:frontend-automation:automation-frameworks:jasmine": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/jasmine.md",
   "qa-automated-testing:frontend-automation:automation-frameworks:nightwatch": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/nightwatch.md",
   "qa-automated-testing:frontend-automation:automation-frameworks:robot-framework": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/robot-framework.md",
+  "qa-automated-testing:frontend-automation:automation-frameworks:selenium": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/selenium.md",
   "qa-automated-testing:frontend-automation:automation-frameworks:jest": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/jest.md",
   "qa-automated-testing:frontend-automation:automation-frameworks:puppeteer": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/puppeteer.md",
   "qa-automated-testing:frontend-automation:automation-frameworks:playwright": "/roadmaps/113-qa/content/103-qa-automated-testing/100-frontend-automation/102-automation-frameworks/playwright.md",

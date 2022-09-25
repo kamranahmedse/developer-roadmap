@@ -162,6 +162,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['915px', '1760px', '1880px', '2370px', '2370px', '2370px'];
   }
 
+  if (roadmap.id === 'angular') {
+    minHeight = ['925px', '1365px', '1740px', '2370px', '2370px', '2370px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
