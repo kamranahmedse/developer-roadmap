@@ -42,5 +42,6 @@
     "golang",
     "java",
     "devops"
-  ]
+  ],
+  "contentPathsFilePath": "./content-paths.json"
 }

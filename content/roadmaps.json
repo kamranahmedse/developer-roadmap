@@ -949,6 +949,7 @@
       "java",
       "devops"
     ],
+    "contentPathsFilePath": "/roadmaps/114-software-architect/content-paths.json",
     "id": "software-architect",
     "metaPath": "/roadmaps/114-software-architect/meta.json",
     "isUpcoming": false
