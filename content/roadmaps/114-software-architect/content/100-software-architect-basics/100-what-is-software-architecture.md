@@ -20,9 +20,10 @@ When designing the software architecture of an application, there are a few impo
 
 The software architecture of an application can have a major impact on all of these factors. It is important to design the architecture carefully to make sure that the final code is high quality and efficient.
 
-**Free Content**
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
 ---
-[What is software architecture in software engineering?](https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/).<br>
-[An introduction to software architecture patterns](https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/).
-<br>
-[Software Architecture: It Might Not Be What You Think It Is](https://www.infoq.com/articles/what-software-architecture/).
+<BadgeLink colorScheme='yellow' badgeText='What is software architecture in software engineering?' href='https://www.future-processing.com/blog/what-is-software-architecture-in-software-engineering/'>What is software architecture in software engineering?</BadgeLink>
+
+<BadgeLink colorScheme='yellow' badgeText='An introduction to software architecture patterns' href='https://www.freecodecamp.org/news/an-introduction-to-software-architecture-patterns/'>An introduction to software architecture patterns</BadgeLink>
+
+<BadgeLink colorScheme='yellow' badgeText='Software Architecture: It Might Not Be What You Think It Is' href='https://www.infoq.com/articles/what-software-architecture/'>Software Architecture: It Might Not Be What You Think It Is</BadgeLink>
