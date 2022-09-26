@@ -2644,7 +2644,7 @@
           "x": "201",
           "y": "487",
           "properties": {
-            "controlName": "102-software-architect-basics:types-of-architects"
+            "controlName": "102-software-architect-basics:levels-of-architecture"
           },
           "children": {
             "controls": {
@@ -2667,13 +2667,13 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "154",
+                  "measuredW": "177",
                   "measuredH": "26",
-                  "x": "84",
+                  "x": "72",
                   "y": "12",
                   "properties": {
                     "size": "18",
-                    "text": "Types of Architects"
+                    "text": "Levels of Architecture"
                   }
                 }
               ]
@@ -2691,7 +2691,7 @@
           "x": "201",
           "y": "577",
           "properties": {
-            "controlName": "100-software-architect-basics:types-of-architects:software-architect"
+            "controlName": "100-software-architect-basics:levels-of-architecture:application-architecture"
           },
           "children": {
             "controls": {
@@ -2714,13 +2714,13 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "148",
+                  "measuredW": "194",
                   "measuredH": "26",
-                  "x": "87",
+                  "x": "64",
                   "y": "12",
                   "properties": {
                     "size": "18",
-                    "text": "Software Architect"
+                    "text": "Application Architecture"
                   }
                 }
               ]
@@ -2738,7 +2738,7 @@
           "x": "201",
           "y": "632",
           "properties": {
-            "controlName": "101-software-architect-basics:types-of-architects:solution-architect"
+            "controlName": "101-software-architect-basics:levels-of-architecture:solution-architecture"
           },
           "children": {
             "controls": {
@@ -2761,13 +2761,13 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "143",
+                  "measuredW": "169",
                   "measuredH": "26",
-                  "x": "89",
+                  "x": "76",
                   "y": "12",
                   "properties": {
                     "size": "18",
-                    "text": "Solution Architect"
+                    "text": "Solution Architecture"
                   }
                 }
               ]
@@ -2785,7 +2785,7 @@
           "x": "201",
           "y": "687",
           "properties": {
-            "controlName": "102-software-architect-basics:types-of-architects:enterprise-architect"
+            "controlName": "102-software-architect-basics:levels-of-architecture:enterprise-architecture"
           },
           "children": {
             "controls": {
@@ -2808,13 +2808,13 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "163",
+                  "measuredW": "189",
                   "measuredH": "26",
-                  "x": "79",
+                  "x": "66",
                   "y": "12",
                   "properties": {
                     "size": "18",
-                    "text": "Enterprise Architect"
+                    "text": "Enterprise Architecture"
                   }
                 }
               ]
