@@ -97,6 +97,12 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/software-architect</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-09-26T16:40:45.260Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/guides/basics-of-authentication</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-09-21T19:59:14.191Z</lastmod>

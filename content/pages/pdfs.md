@@ -9,6 +9,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Backend Roadmap** - [Roadmap Link](https://roadmap.sh/backend) / [PDF Link](https://roadmap.sh/pdfs/backend.pdf)
 * **DevOps Roadmap** - [Roadmap Link](https://roadmap.sh/devops) / [PDF Link](https://roadmap.sh/pdfs/devops.pdf)
 * **QA Roadmap** - [Roadmap Link](https://roadmap.sh/qa) / [PDF Link](https://roadmap.sh/pdfs/qa.pdf)
+* **Software Architect Roadmap** - [Roadmap Link](https://roadmap.sh/software-architect) / [PDF Link](https://roadmap.sh/pdfs/software-architect.pdf)
 * **JavaScript Roadmap** - [Roadmap Link](https://roadmap.sh/javascript) / [PDF Link](https://roadmap.sh/pdfs/javascript.pdf)
 * **Node.js Roadmap** - [Roadmap Link](https://roadmap.sh/nodejs) / [PDF Link](https://roadmap.sh/pdfs/nodejs.pdf)
 * **Angular Roadmap** - [Roadmap Link](https://roadmap.sh/angular) / [PDF Link](https://roadmap.sh/pdfs/angular.pdf)

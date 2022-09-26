@@ -903,5 +903,54 @@
     "id": "qa",
     "metaPath": "/roadmaps/113-qa/meta.json",
     "isUpcoming": false
+  },
+  {
+    "seo": {
+      "title": "Software Architect Roadmap: Learn to become a modern Software Architect",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "solution architect roadmap",
+        "enterprise architect roadmap",
+        "guide to becoming a software architect",
+        "guide to becoming a Software Architect",
+        "software architect roadmap",
+        "db administrator roadmap",
+        "software architect roadmap",
+        "software architect skills",
+        "db administrator skills",
+        "become software architect",
+        "modern software architect skills",
+        "software architect skills test",
+        "skills for software architect",
+        "skills for software architect",
+        "learn software architect",
+        "what is software architect",
+        "software architect quiz",
+        "software architect interview questions"
+      ]
+    },
+    "title": "Software Architect",
+    "description": "Step by step guide to becoming a Software Architect in 2022",
+    "featuredTitle": "Software Architect",
+    "isNew": true,
+    "type": "role",
+    "jsonUrl": "/project/software-architect.json",
+    "featuredDescription": "Step by step guide to become a Software Architect in 2022",
+    "isCommunity": false,
+    "featured": true,
+    "detailed": false,
+    "versions": [],
+    "relatedRoadmaps": [
+      "backend",
+      "python",
+      "python",
+      "nodejs",
+      "golang",
+      "java",
+      "devops"
+    ],
+    "id": "software-architect",
+    "metaPath": "/roadmaps/114-software-architect/meta.json",
+    "isUpcoming": false
   }
 ]
