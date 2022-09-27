@@ -1,5 +1,4 @@
 import { Box, Flex, Heading, Image, Link } from '@chakra-ui/react';
-import { getParameterByName } from '../pages/upcoming';
 
 function getPageSlug() {
   const pathname = (typeof window !== 'undefined' ? window : {} as any)?.location?.pathname || '';
@@ -10,11 +9,6 @@ function getPageSlug() {
 export const CustomAd = () => {
   const slug = getPageSlug();
   if (slug !== 'devops') {
-    return null;
-  }
-
-  const shouldShowAd = getParameterByName('ad');
-  if (!shouldShowAd) {
     return null;
   }
 
