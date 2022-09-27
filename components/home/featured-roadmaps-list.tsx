@@ -10,12 +10,6 @@ type FeaturedRoadmapsListProps = {
 export const upcomingRoadmaps = [
   {
     type: 'Role Based',
-    title: 'Software Architect',
-    description: 'Roadmap to become a modern Software Architect',
-    id: 'software-architect'
-  },
-  {
-    type: 'Role Based',
     title: 'React Native',
     description: 'Step by step guide to become a React Native Developer',
     id: 'react-native'

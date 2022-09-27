@@ -10,7 +10,7 @@ import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from './signup';
 import React from 'react';
 import { upcomingRoadmaps } from '../components/home/featured-roadmaps-list';
 
-function getParameterByName(name: string, url: string = (typeof window !== 'undefined' ? window : {} as any)?.location?.href) {
+export function getParameterByName(name: string, url: string = (typeof window !== 'undefined' ? window : {} as any)?.location?.href) {
   name = name.replace(/[\[\]]/g, '\\$&');
 
   let regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
