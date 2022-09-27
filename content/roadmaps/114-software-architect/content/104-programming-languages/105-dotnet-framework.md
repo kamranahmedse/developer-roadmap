@@ -1,8 +1,9 @@
-# Dotnet framework
+# .NET Framework
 
-Dotnet is an open source platform with tools and libraries for building web, mobile, desktop, games, IoT, cloud, and microservices.
+.NET is an open-source platform with tools and libraries for building web, mobile, desktop, games, IoT, cloud, and microservices.
 
 Officially supported languages in .NET: C#, F#, Visual Basic.
+
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet'>What is .NET?</BadgeLink>
