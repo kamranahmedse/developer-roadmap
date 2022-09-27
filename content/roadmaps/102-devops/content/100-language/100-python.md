@@ -12,6 +12,9 @@ Python is a multi-paradigm language. Being an interpreted language, code is exec
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.python.org/'>Python Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.python.org/about/gettingstarted/'>Python Getting Started</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://automatetheboringstuff.com/'>Automate the Boring Stuff</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/an-introduction-to-python-for-non-programmers/'>An Introduction to Python for Non-Programmers</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/python-for-beginners-lists/'>Python for Beginners: Lists</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/'>Python for Beginners: When and How to Use Tuples</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.w3schools.com/python/'>W3Schools - Python Tutorial </BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://ehmatthes.github.io/pcc/'>Python Crash Course</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.codecademy.com/learn/learn-python-3'>Codecademy - Learn Python 3</BadgeLink>
