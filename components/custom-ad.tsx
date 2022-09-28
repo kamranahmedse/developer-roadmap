@@ -1,4 +1,5 @@
 import { Box, Flex, Heading, Image, Link } from '@chakra-ui/react';
+import { event } from '../lib/gtag';
 
 function getPageSlug() {
   const pathname = (typeof window !== 'undefined' ? window : {} as any)?.location?.pathname || '';
@@ -13,8 +14,28 @@ export const CustomAd = () => {
   }
 
   return (
-    <Link href='https://thenewstack.io/ebooks/devops/cloud-native-devops-2019/?utm_source=Roadmap&utm_medium=Banner&utm_campaign=DevOps+ebook' id='custom-ad' pos='fixed' bottom='15px' right='20px' zIndex={999} display='flex' maxWidth='330px'
-          bg='white' boxShadow='0 1px 4px 1px hsla(0, 0%, 0%, .1)' _hover={{ textDecoration: 'none' }} rel="noopener sponsored">
+    <Link
+      href='https://thenewstack.io/ebooks/devops/cloud-native-devops-2019/?utm_source=Roadmap&utm_medium=Banner&utm_campaign=DevOps+ebook'
+      id='custom-ad'
+      pos='fixed'
+      bottom='15px'
+      right='20px'
+      zIndex={999}
+      display='flex'
+      maxWidth='330px'
+      bg='white'
+      boxShadow='0 1px 4px 1px hsla(0, 0%, 0%, .1)'
+      _hover={{ textDecoration: 'none' }}
+      rel="noopener sponsored"
+      target={'_blank'}
+      onClick={() => {
+        event({
+          category: 'SponsorClick',
+          action: `TNS EBook Redirect`,
+          label: `Clicked TNS EBook Link`
+        });
+      }}
+    >
       <Image
         src='https://i.imgur.com/fEKq19S.png'
         alt='Custom Logo'
