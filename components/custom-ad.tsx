@@ -15,7 +15,7 @@ export const CustomAd = () => {
 
   return (
     <Link
-      href='https://thenewstack.io/ebooks/devops/cloud-native-devops-2019/?utm_source=Roadmap&utm_medium=Banner&utm_campaign=DevOps+ebook'
+      href='https://thenewstack.io/ebooks/devops/cloud-native-devops-2019/?utm_source=Roadmap.sh&utm_medium=Banner&utm_campaign=Roadmap+DevOps+Ebook'
       id='custom-ad'
       pos='fixed'
       bottom='15px'
