@@ -1,15 +1,6 @@
-# Jmeter
-Jmeter,or Apache JMeter is a pure Java open source software designed to load test functional behavior and measure performance. Apache JMeter features include
-- Web
-- SOAP Webservies
-- FTP
-- Database via JDBC
-- LDAP
-- Message-oriented middleware via JMS
-- Mail
-- Native commands or shell scripts
-- Java Objects
-- TCP
+# JMeter
+
+Apache JMeter is an Apache project that can be used as a load testing tool for analyzing and measuring the performance of a variety of services, with a focus on web applications.
 
 <ReferenceGroupTitle>Reference Resource</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeTest='Official Website' href='https://jmeter.apache.org/'>Apache JMeter Website</BadgeLink>
