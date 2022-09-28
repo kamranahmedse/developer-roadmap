@@ -5,3 +5,6 @@ Mocking is a way of removing external dependencies from a unit test so as to cre
 - Classes that are slow
 - Classes with side effects
 - Classes with non-deterministic behavior
+
+<ReferenceGroupTitle>Reference Resource</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeTest='Official Website' href='https://site.mockito.org/'>Mocking Website</BadgeLink>

@@ -10,3 +10,6 @@ Jmeter,or Apache JMeter is a pure Java open source software designed to load tes
 - Native commands or shell scripts
 - Java Objects
 - TCP
+
+<ReferenceGroupTitle>Reference Resource</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeTest='Official Website' href='https://jmeter.apache.org/'>Apache JMeter Website</BadgeLink>
