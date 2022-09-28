@@ -8,8 +8,8 @@ It works like this:
 
 Where:
 
--`func` is the function to be delayed
--`param0, param1, ..., paramN` are the parameters the `func` function receives
+- `func` is the function to be delayed
+- `param0, param1, ..., paramN` are the parameters the `func` function receives
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
