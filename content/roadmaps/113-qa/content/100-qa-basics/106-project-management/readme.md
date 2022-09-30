@@ -1,10 +1,8 @@
-# What is a Project?
+# Project Management
 
-A project is a temporary endeavor undertaken to create a unique product, service or result. A project is defined as temporary because it has a defined beginning and end time, and it is unique because it has a particular set of operations designed to accomplish a goal.
+A project is a temporary endeavor to create a unique product, service, or result. A project is temporary because it has a defined beginning and end time, and it is unique because it has a particular set of operations designed to accomplish a goal.
 
-# What is Project Management?
-
-Project Management is a discipline to plan, organize, motivate, and control the resources to achieve specific project goals. The main objective of project management is to achieve project goals and targets while keeping in mind the project scope, time, quality, and cost. It facilitates the project workflow with team collaboration on a single project.
+Project Management is a discipline of planning, organizing, motivating, and controlling the resources to achieve specific project goals. The main objective of project management is to achieve project goals and targets while keeping in mind the project scope, time, quality, and cost. It facilitates the project workflow with team collaboration on a single project.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/introduction-project-management-pmp-certification.html'>What are the Main Objectives of Project Management?</BadgeLink>
