@@ -38,6 +38,7 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
 
   return (
     <Box
+      position='relative'
       as={Link}
       href={url}
       _hover={{
@@ -76,7 +77,7 @@ export function HomeRoadmapItem(props: RoadmapGridItemProps) {
       >
         {title}
 
-        { isNew && <Badge colorScheme='yellow' ml='10px'>New</Badge> }
+        { isNew && <Badge position='absolute' bottom={0} right={0} colorScheme='yellow' ml='10px'>New</Badge> }
       </Heading>
       <Text color='gray.200' fontSize={['13px']}>
         {subtitle}

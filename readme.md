@@ -34,6 +34,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [DevOps Roadmap](https://roadmap.sh/devops)
 - [QA Roadmap](https://roadmap.sh/qa)
+- [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [React Roadmap](https://roadmap.sh/react)
 - [Vue Roadmap](https://roadmap.sh/vue)

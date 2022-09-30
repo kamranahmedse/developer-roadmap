@@ -50,6 +50,7 @@ const roadmaps: Record<string, RoadmapType> = {
   nodejs: require('../public/project/nodejs.json'),
   qa: require('../public/project/qa.json'),
   'design-system': require('../public/project/design-system.json'),
+  'software-architect': require('../public/project/software-architect.json'),
 };
 
 if (!roadmapKey || !roadmaps[roadmapKey]) {

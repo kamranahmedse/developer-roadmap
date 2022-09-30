@@ -14,7 +14,7 @@ import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
 import { InteractiveRoadmapRenderer } from './interactive';
-import { FreeSignUp, SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../signup';
+import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../signup';
 import { BellIcon, EmailIcon } from '@chakra-ui/icons';
 import { RelatedRoadmaps } from '../../components/related-roadmaps';
 
@@ -107,6 +107,7 @@ export default function Roadmap(props: RoadmapPageProps) {
         <UpcomingRoadmap roadmap={roadmap} />
       </Box>
       <RelatedRoadmaps roadmaps={relatedRoadmaps} />
+
       <OpensourceBanner />
       <Footer />
     </Box>
