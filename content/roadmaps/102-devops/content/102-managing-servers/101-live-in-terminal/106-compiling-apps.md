@@ -23,7 +23,7 @@ Make builds the program from a file called the makefile, which lists each of the
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.gnu.org/software/make/manual/'>Documentation for make</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cs.swarthmore.edu/~newhall/unixhelp/howto_makefiles.html'>Using Make and writing Makefiles</BadgeLink>
 
-#sbt
+# sbt
 
 sbt is an open-source build tool for Scala and Java projects, similar to Apache's Maven and Ant. Its main features are: Native support for compiling Scala code and integrating with many Scala test frameworks. Continuous compilation, testing, and deployment.
 
