@@ -1,4 +1,4 @@
-# Template driven forms
+# Template Driven Forms
 
 A Template driven form is the simplest form we can build in Angular. It is mainly used for creating simple form application. 
 
