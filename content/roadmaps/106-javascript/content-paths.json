@@ -63,7 +63,7 @@
   "javascript-control-flow:conditional-statements:switch": "/roadmaps/106-javascript/content/107-javascript-control-flow/101-conditional-statements/101-switch.md",
   "javascript-expressions-and-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/readme.md",
   "javascript-expressions-and-operators:assignment-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/100-assignment-operators.md",
-  "javascript-expressions-and-operators:omparison-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/101-omparison-operators.md",
+  "javascript-expressions-and-operators:comparison-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/101-comparison-operators.md",
   "javascript-expressions-and-operators:arithmetic-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/102-arithmetic-operators.md",
   "javascript-expressions-and-operators:bitwise-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/103-bitwise-operators.md",
   "javascript-expressions-and-operators:logical-operators": "/roadmaps/106-javascript/content/108-javascript-expressions-and-operators/104-logical-operators.md",
