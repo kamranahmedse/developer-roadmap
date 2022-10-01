@@ -11,7 +11,7 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/gcc-linux'>GCC Linux</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/'>GCC Commands</BadgeLink>
 
-#make
+# make
 
 The GNU Make is a tool which enables and controls the creation of executables and other non-source files of a program from the program's source files.
 Make builds the program from a file called the makefile, which lists each of the non-source files and how to compute it from other files. When you write a program, you should write a makefile for it, so that it is possible to use Make to build and install the program.
