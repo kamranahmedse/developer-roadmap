@@ -1,4 +1,4 @@
-# Compiling apps
+# Compiling Apps
 
 # gcc
 
