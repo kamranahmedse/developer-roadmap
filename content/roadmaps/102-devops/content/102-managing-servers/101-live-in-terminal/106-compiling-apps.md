@@ -31,7 +31,7 @@ sbt is an open-source build tool for Scala and Java projects, similar to Apache'
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scala-sbt.org/1.x/docs/'>Sbt Documentation</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scala-sbt.org/1.x/docs/sbt-by-example.html'>Sbt By Example</BadgeLink>
 
-#gradle
+# gradle
 
 Gradle is a build automation tool known for its flexibility to build software. A build automation tool is used to automate the creation of applications. The building process includes compiling, linking, and packaging the code.
 
