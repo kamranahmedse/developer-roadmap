@@ -54,7 +54,7 @@ If you think that these can be improved in any way, please do suggest. Also, if 
 
 ## Development
 
-Clone the repository, install the dependencies and start the application
+Clone the repository, install the dependencies and start the application.
 
 ```bash
 git clone git@github.com:kamranahmedse/developer-roadmap.git
@@ -64,7 +64,7 @@ npm run dev
 
 ## Contribution
 
-> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
+> Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps.
 
 - Add content to roadmaps
 - Add new roadmaps
@@ -80,4 +80,4 @@ npm run dev
 
 ## License
 
-Have a look at the [license file](./license) for details
+Have a look at the [license file](./license) for details.
