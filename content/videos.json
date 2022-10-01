@@ -1,5 +1,16 @@
 [
   {
+    "id": "basic-authentication",
+    "title": "Basic Authentication",
+    "description": "Learn everything you need to know about basic authentication",
+    "isNew": true,
+    "youtubeLink": "https://www.youtube.com/watch?v=mwccHwUn7Gc",
+    "authorUsername": "kamranahmedse",
+    "duration": "5 minutes",
+    "updatedAt": "2022-09-30T19:59:14.191Z",
+    "createdAt": "2022-09-30T19:59:14.191Z"
+  },
+  {
     "id": "basics-of-authentication",
     "title": "Basics of Authentication",
     "description": "Learn everything you need to know about authentication with this Authentication Series",
@@ -25,7 +36,7 @@
     "id": "heap-data-structure",
     "title": "Heap Data Structure",
     "description": "Learn everything you need to know about the heap data structure",
-    "isNew": true,
+    "isNew": false,
     "youtubeLink": "https://www.youtube.com/watch?v=F_r0sJ1RqWk",
     "authorUsername": "kamranahmedse",
     "duration": "11 minutes",
@@ -36,7 +47,7 @@
     "id": "tree-data-structure",
     "title": "Tree Data Structure",
     "description": "Learn everything you need to know about the tree data structure",
-    "isNew": true,
+    "isNew": false,
     "youtubeLink": "https://www.youtube.com/watch?v=S2W3SXGPVyU",
     "authorUsername": "kamranahmedse",
     "duration": "8 minutes",
