@@ -1,4 +1,8 @@
-# Why nodejs
+# Why Node.js
 
-Node.js is an open source, a server-side script which runs on the top of Google’s open-source scripting engine V8. Node.js is fast, lightweight and efficient. It uses the asynchronous mode of operation, event-driven Input/Output rather than using the traditional threads or separate threads for each process. Node.js was originally written by Ryan Dahl in the year 2009. It is a cross-platform Javascript run-time environment that executes Javascript code outside of a browser. Node.js uses javascript for creating node applications or we can use any other language that ultimately compiles to javascript (like typescript). The javascript is written in the same way as we’d use in any client-side application. However, we need to set up the node development environment.
-
+* Node.js is OpenSource
+* Guarantees ease of scaling applications vertically by adding new resources to the existing node and horizontally with the addition of new nodes
+* It facilitates building separate components that easily complement larger applications, which means saving money at the initial development stages and potentially shortening time-to-market, reusable code (some of the code can be used both on the front and backend)
+* Tested on production (a lot of [companies use it](https://selleo.com/blog/10-successful-companies-using-nodejs) from the very beginning in 2009)
+* offers improved performance thanks to Chrome’s V8 engine
+* using JavaScript on both backend and frontend makes Node a great choice to improve speed and simplicity of implementation
