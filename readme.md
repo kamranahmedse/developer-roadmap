@@ -33,7 +33,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Frontend Roadmap](https://roadmap.sh/frontend)
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [DevOps Roadmap](https://roadmap.sh/devops)
-- [DevOps Roadmap](https://www.commclassroom.org/devops-roadmap)DevOps Roadmap + Resources
+- [DevOps Roadmap](https://www.commclassroom.org/devops-roadmap) DevOps Roadmap + Resources
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
