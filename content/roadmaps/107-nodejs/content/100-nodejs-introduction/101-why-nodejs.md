@@ -21,3 +21,8 @@
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodejs.dev/en/learn/'>Learn Node.js</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://medium.com/selleo/why-choose-node-js-b0091ad6c3fc'>Why Choose Node.js?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.bitovi.com/blog/5-reasons-to-choose-nodejs'>5 Reasons to Choose Node.js</BadgeLink>
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodejs.dev/en/learn/'>Learn Node.js</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://medium.com/selleo/why-choose-node-js-b0091ad6c3fc'>Why Choose Node.js?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.bitovi.com/blog/5-reasons-to-choose-nodejs'>5 Reasons to Choose Node.js</BadgeLink>
