@@ -1,4 +1,4 @@
-#Civo
+# CIVO
 
 Civo Kubernetes provides all of the core components of the control plane for free, ensuring your cluster's API and management is always available.
 
