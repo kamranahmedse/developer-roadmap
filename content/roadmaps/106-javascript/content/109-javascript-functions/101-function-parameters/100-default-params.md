@@ -1,4 +1,4 @@
-# Default parameters
+# Default Parameters
 
 Default function parameters allow named parameters to be initialized with default values if no value or `undefined` is passed.
 
