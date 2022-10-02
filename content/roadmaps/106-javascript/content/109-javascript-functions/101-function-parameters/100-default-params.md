@@ -1,3 +1,3 @@
 # Default parameters
 
-To learn more about Default parameters check this out [Default Paremeters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters)
+<BadgeLink colorScheme='yellow' badgeText='Default Paremeters MDN documentation' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Default_parameters'>Default Paremeters - MDN Docs</BadgeLink>
