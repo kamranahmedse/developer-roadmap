@@ -1,7 +1,6 @@
-# Filename
+# __filename
 
-The __filename in the Node.js returns the filename of the code which is executed. It gives the absolute path of the code file. The following approach covers how to implement __filename in the NodeJS project.
+The `__filename` in Node.js returns the filename of the executed code. It gives the absolute path of the code file. The following approach covers implementing `__filename` in the Node.js project.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Read' href='https://nodejs.org/docs/latest/api/modules.html#__filename'>Official Website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/node-js-__filename-object/'> What is __filename </BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/docs/latest/api/modules.html#__filename'>Official Docs</BadgeLink>
