@@ -1,3 +1,3 @@
 # Rest parameters
 
-To learn more about Rest parameters check this out [Rest Paremeters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters)
+<BadgeLink colorScheme='blue' badgeText='Rest parameters MDN documentation' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/rest_parameters'>Rest Paremeters - MDN Docs</BadgeLink>
