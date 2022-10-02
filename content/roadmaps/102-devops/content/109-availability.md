@@ -6,3 +6,4 @@ To achieve high levels of uptime, it is important to eliminate single points of 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://codster.io/en/blog/high-availability-in-the-cloud/'>How High Availability Works in the Cloud</BadgeLink>
+<BadgeLink badgeText='Course' colorScheme='green' href='https://www.sqlservercentral.com/articles/cloud-computing-basics-achieving-high-availability-2'>Techniques for Achieving High Availability</BadgeLink>
