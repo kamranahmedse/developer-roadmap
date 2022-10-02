@@ -1,5 +1,9 @@
-# Set interval
+# setInterval
 
-The setInterval() method in JavaScript is used to repeat a specified function at every given **time-interval.** It evaluates an expression or calls a function at given intervals. This method continues the calling of function until the window is closed or the clearInterval() method is called. This method returns a numeric value or a non-zero number that identifies the created timer.
+The `setInterval()` method helps us to repeatedly execute a function after a fixed delay. It returns a unique interval ID which can later be used by the `clearInterval()` method, which stops further repeated execution of the function. 
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.programiz.com/javascript/setInterval'>Javascript setInterval() method</BadgeLink>
+`setInterval()` is similar to setTimeout, with a difference. Instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds):
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/settimeout-setinterval'>Scheduling: setTimeout and setInterval</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/'>What is the use of setInterval() method in JavaScript?</BadgeLink>
