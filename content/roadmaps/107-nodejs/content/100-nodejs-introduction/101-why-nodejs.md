@@ -6,3 +6,8 @@
 * Tested on production (a lot of [companies use it](https://selleo.com/blog/10-successful-companies-using-nodejs) from the very beginning in 2009)
 * offers improved performance thanks to Chrome’s V8 engine
 * using JavaScript on both backend and frontend makes Node a great choice to improve speed and simplicity of implementation
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodejs.dev/en/learn/'>Learn Node.js</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://medium.com/selleo/why-choose-node-js-b0091ad6c3fc'>Why Choose Node.js?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.bitovi.com/blog/5-reasons-to-choose-nodejs'>5 Reasons to Choose Node.js</BadgeLink>
