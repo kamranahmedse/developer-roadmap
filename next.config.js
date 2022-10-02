@@ -37,6 +37,11 @@ let nextConfig = {
   reactStrictMode: true,
   poweredByHeader: false,
   env: loadConfig(process.env.NODE_ENV),
+  
+  i18n: {
+    locales: ['en'],
+    defaultLocale: 'en',
+  },
 
   webpack(config, options) {
     config.resolve.modules.push(path.resolve('./'));
