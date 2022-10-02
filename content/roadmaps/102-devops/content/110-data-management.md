@@ -6,3 +6,5 @@ Additionally data should be protected at rest, in transit, and via authorized ac
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='blue' href='https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management'>Data management patterns</BadgeLink>
+
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://thenewstack.io/what-is-data-management-in-the-kubernetes-age/'>What Is Data Management in the Kubernetes Age?</BadgeLink>
