@@ -6,3 +6,8 @@ Terraform is an extremely popular open source Infrastructure as Code (IaC) tool 
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://www.terraform.io/docs'>Terraform Documentation</BadgeLink>
 <BadgeLink badgeText='Tutorials' colorScheme='blue' href='https://learn.hashicorp.com/terraform'>Terraform Tutorials</BadgeLink>
 <BadgeLink badgeText='Intro Video' colorScheme='blue' href='https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp'>Intro to Terraform Video</BadgeLink>
+
+<BadgeLink badgeText="CDKTF Official Website' colorScheme='blue' href='https://www.terraform.io/cdktf'>Terraform CDK Website</BadgeLink>
+<BadgeLink badgeText='CDKTF Concepts' colorScheme='blue' href='https://www.terraform.io/cdktf/concepts/cdktf-architecture'>What is the CDKTF?</BadgeLink>
+<BadgeLink badgeText='CDKTF Getting Started Guide' colorScheme='blue' href='https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf'>CDKTF Getting Started Guide</BadgeLink>
+<BadgeLink badgeText='CDKTF Examples' colorScheme='blue' href='https://www.terraform.io/cdktf/examples'>CDKTF Examples</BadgeLink>
