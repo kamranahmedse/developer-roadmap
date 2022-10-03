@@ -16,6 +16,16 @@ export const upcomingRoadmaps = [
   }
 ];
 
+export const upcomNEWingRoadmaps = [
+  {
+    type: 'Project Based',
+    title: 'React Native',
+    description: 'Practial approach to become a React Native Developer',
+    id: 'react-native'
+  }
+];
+
+
 export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
   const { roadmaps, title } = props;
 
