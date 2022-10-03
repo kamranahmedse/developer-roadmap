@@ -103,6 +103,18 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/software-design-architecture</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-10-03T17:03:35.645Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
+              <loc>https://roadmap.sh/guides/http-basic-authentication</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-10-03T19:59:14.191Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/guides/basics-of-authentication</loc>
               <changefreq>monthly</changefreq>
               <lastmod>2022-09-21T19:59:14.191Z</lastmod>
