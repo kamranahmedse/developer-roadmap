@@ -12,3 +12,7 @@ Apache JMeter features:
     - TCP
 - JMeter Command Line Interface helps to run large load tests from any Java compatible OS 
 - Highly extendable using JMeter Plugins  
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://jmeter.apache.org/'>Apache JMeter Website</BadgeLink>
+<BadgeLink badgeText='Course' colorScheme='green' href='https://www.youtube.com/playlist?list=PLJ9A48W0kpRIjLkZ32Do9yDZXnnm7_uj_'>Learn JMeter</BadgeLink>
