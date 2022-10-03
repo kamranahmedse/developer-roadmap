@@ -1,17 +1,6 @@
-# Using packages
+# Using Packages
 
-Every package you want to use would be exposing various APIs.
-After reading about these APIs in the [npm site](https://www.npmjs.com/), and after you [installed the package in your project](101-global-install-vs-local-install.md) you can start using the package.
-
-Usually, in your JavaScript (or TypeScript) file - you'd first import it, at the top of the file.
-Then, you'd call the methods/API of this package.
-
-For example - when using `express` package:
-
-```javascript
-import * as express from "express";
-...
-this.app = express();
-```
+Open source Node modules are very powerful as you can instantly get access to the functionality that you’d otherwise have to write yourself. We normally use CommonJS or ESM to import an installed package.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://learn.coderslang.com/0014-how-to-import-and-use-npm-modules/'>How to import and use npm modules</BadgeLink>
