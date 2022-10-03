@@ -34,7 +34,6 @@
     "url": "https://twitter.com/kamranahmedse"
   },
   "pdfUrl": "/pdfs/software-design-architecture.pdf",
-  "contentPathsFilePath": "./content-paths.json",
   "relatedRoadmaps": [
     "backend",
     "software-architect",
