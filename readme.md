@@ -24,7 +24,7 @@
 
 Roadmaps are now interactive, you can click the nodes to read more about the topics.
 
-### [View all Roadmaps](https://roadmap.sh)
+<marquee>### [View all Roadmaps](https://roadmap.sh)</marquee>
 
 ![](https://i.imgur.com/waxVImv.png)
 
@@ -52,7 +52,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@kamranahmedse](https://twitter.com/kamranahmedse).
 
-## Development
+<marquee>## Development</marquee>
 
 Clone the repository, install the dependencies and start the application
 
@@ -62,7 +62,7 @@ npm install
 npm run dev
 ```
 
-## Contribution
+<marquee>## Contribution</marquee>
 
 > Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
 
@@ -72,12 +72,12 @@ npm run dev
 - Discuss ideas in issues
 - Spread the word
 
-## Thanks to all contributors ❤
+<marquee> ## Thanks to all contributors ❤</marquee>
 
  <a href = "https://github.com/kamranahmedse/developer-roadmap/graphs/contributors">
    <img src = "https://contrib.rocks/image?repo=kamranahmedse/developer-roadmap"/>
  </a>
 
-## License
+<marquee> ## License </marquee>
 
 Have a look at the [license file](./license) for details
