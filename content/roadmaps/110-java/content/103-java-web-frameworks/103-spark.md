@@ -1,6 +1,6 @@
 # Spark
 
-Spark is a Java micro framework that allows to quickly create web applications in Java 8. Spark is a lightweight and simple Java web framework designed for quick development.
+Spark is a micro framework for creating web applications in Kotlin and Java 8. 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Site' href='https://sparkjava.com/'>Spark Java</BadgeLink>
