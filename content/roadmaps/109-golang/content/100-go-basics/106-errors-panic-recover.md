@@ -1,4 +1,4 @@
-# Errors panic recover
+# Errors/Panic/Recover
 
 In lieu of adding exception handlers, the Go creators exploited Go’s ability to return multiple values. The most commonly used Go technique for issuing errors is to return the error as the last value in a return.
 
