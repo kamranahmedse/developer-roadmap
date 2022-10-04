@@ -1,4 +1,4 @@
-# Labeled statements
+# Labeled Statements
 
 JavaScript label statements are used to prefix a label to an identifier. It can be used with `break` and `continue` statement to control the flow more precisely.
 
