@@ -5,5 +5,3 @@ JavaScript was invented by Brendan Eich, and in 1997 and became an ECMA standard
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/blog/javascript-versions-history'>JavaScript Versions: How JavaScript has changed over the years</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://roadmap.sh/guides/history-of-javascript'>Brief History of JavaScript</BadgeLink>
-
-
