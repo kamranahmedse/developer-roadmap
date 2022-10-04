@@ -17,6 +17,10 @@ const colorsList = [
   'pink.700'
 ];
 
+const roadmapTitleMapping: Record<string, string> = {
+  "Software Design and Architecture": "Software Design",
+}
+
 export function RelatedRoadmaps(props: RelatedRoadmapsProps) {
   const { roadmaps } = props;
   if (!roadmaps.length) {
@@ -61,9 +65,10 @@ export function RelatedRoadmaps(props: RelatedRoadmapsProps) {
                 as='span'
                 fontWeight='bold'
                 display={['inline-block']}
-                minWidth='140px'
+                minWidth='150px'
+                mr='10px'
               >
-                {roadmap.featuredTitle}
+                {roadmapTitleMapping[roadmap.featuredTitle] || roadmap.featuredTitle}
               </Text>
               <Text as='span' display={['block', 'inline']} isTruncated maxWidth='100%' fontSize={['sm', 'sm', 'md']} color='gray.700'>{roadmap.featuredDescription}</Text>
             </Link>
