@@ -1,10 +1,10 @@
 # Errors panic recover
 
-Discover how error handling works in Go, the list of resources below will cover:
+In lieu of adding exception handlers, the Go creators exploited Go’s ability to return multiple values. The most commonly used Go technique for issuing errors is to return the error as the last value in a return.
 
- - How an error is structured in Go
- - How to manage errors in Go
- - Simple strategies to have a robust and easy to debug code
+A panic typically means something went unexpectedly wrong. Mostly used to fail fast on errors that shouldn’t occur during normal operation, or that we aren’t prepared to handle gracefully.
+
+Panic recovery in Go depends on a feature of the language called deferred functions. Go has the ability to guarantee the execution of a function at the moment its parent function returns. This happens regardless of whether the reason for the parent function’s return is a return statement, the end of the function block, or a panic.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/blog/error-handling-and-go'>Error handling and Go</BadgeLink>
