@@ -11,4 +11,3 @@ In JavaScript, the `this` keyword is a little different compared to other langua
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/js/js_this.asp'>The JavaScript `this` Keyword</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this'>This Keyword</BadgeLink>
-

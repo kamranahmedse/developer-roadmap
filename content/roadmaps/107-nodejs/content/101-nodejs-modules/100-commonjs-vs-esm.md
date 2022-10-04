@@ -1,4 +1,5 @@
 # CommonJS vs ESM
+
 A module system allows us to split up our code in different parts or to include code written by other developers.
 
 Since the very beginning of NodeJS, the CommonJS module system is the default module system within the ecosystem. However, recently a new module system was added to NodeJS - ES modules.
