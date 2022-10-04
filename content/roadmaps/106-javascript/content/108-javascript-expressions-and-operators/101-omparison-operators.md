@@ -1,4 +1,4 @@
-# Comparison operators
+# Comparison Operators
 
 Comparison operators are the operators that compare values and return true or false.
 The operators include : `>`, `<`, `>=`, `<=`, `==`, `===`, `!==` and `!===`
