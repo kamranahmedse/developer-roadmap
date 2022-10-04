@@ -1,6 +1,6 @@
 # Go modules
 
-Discover what is a Go module, how to create them and how to convert an existing project to use them.
+Go code is grouped into packages, and packages are grouped into modules. Your module specifies dependencies needed to run your code, including the Go version and the set of other modules it requires.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/doc/tutorial/create-module'>How to create a module in Go</BadgeLink>
