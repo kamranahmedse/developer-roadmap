@@ -5,3 +5,5 @@ Application state management is the process of maintaining knowledge of an appli
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.techtarget.com/searchapparchitecture/definition/state-management'>What is State Management?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/angular-state-management-made-simple-with-ngrx/'> Angular state management made simple with NgRx</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.syncfusion.com/blogs/post/angular-state-management-with-ngrx.aspx'>Angular State Management with NgRx</BadgeLink>
