@@ -4,3 +4,4 @@ Terminals, also known as command lines or consoles, allow us to accomplish and a
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools/Command_line'>Command line crash course</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=jDINUSK7rXE'>Basic Terminal Usage - Cheat Sheet to make the command line EASY</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=Z56Jmr9Z34Q&list=PLyzOVJj3bHQuloKGG59rS43e29ro7I57J&index=1&ab_channel=MissingSemester'>Full terminal usage giude from basic to advanced</BadgeLink>
