@@ -6,3 +6,6 @@ Constants are block-scoped, much like variables declared using the `let` keyword
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const'>const keyword - MDN Docs</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/variables'>JavaScript Variables</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/how-to-declare-variables-in-different-ways-in-javascript/'>How to declare variables in different ways in JavaScript?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/basic-javascript/declare-a-read-only-variable-with-the-const-keyword'>Declare a Read-Only Variable with the const Keyword</BadgeLink>
+
+
