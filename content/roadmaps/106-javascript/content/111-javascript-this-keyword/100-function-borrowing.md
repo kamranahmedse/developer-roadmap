@@ -1,6 +1,6 @@
 # Function borrowing
 
-**_Method borrowing_**, also known as function borrowing, is a technique where a method of one object is used on another object. This is possible because JavaScript functions are objects and can be passed around like any other object.
+Function borrowing allows us to use the methods of one object on a different object without having to make a copy of that method and maintain it in two separate places. It is accomplished through the use of `.call()`, `.apply()`, or `.bind()`, all of which exist to explicitly set this on the method we are borrowing.
 
 In JavaScript, we can reuse the method of a function on a different object other than the object it was defined on. Method borrowing helps to keep us from having to write the same code multiple times. Using the predefined JavaScript methods, `call()`, `apply()` or `bind()`, we can borrow methods from other objects without inheriting their properties and methods.
 
