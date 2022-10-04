@@ -1,15 +1,3 @@
-# Mitigation strategies
+# Mitigation Strategies
 
-## Graceful Degradation
-
-
-## Throttling 
-Throttling is used to prevent resource usage from ballooing out of control and to control the consumption of resources. One way it does this is by limiting the amount of requests a client can make. Often, throttling is determined by two different rates, a *burst* rate and a *sustained* rate. The burst rate applies over a short period of time, while the sustained rate applies over a longer period. 
-
-## Backpressure
-
-
-## Loadshifting
-
-
-## Circuit Breaker
+This section is mainly relevant to the cloud design patterns that help you build scalable solutions. Have a look at the [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/) docs by Microsoft and this video covering [the throttling, retry and circuit breaker patterns](https://www.youtube.com/watch?v=0HoTGgb5oFg)
