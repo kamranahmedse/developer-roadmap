@@ -14,7 +14,7 @@ appearance, race, religion, or sexual identity and orientation.
 Examples of behavior that contributes to creating a positive environment
 include:
 
-* Using welcoming and inclusive language
+* Using welcoming and interactive language
 * Being respectful of differing viewpoints and experiences
 * Gracefully accepting constructive criticism
 * Focusing on what is best for the community
@@ -34,13 +34,13 @@ Examples of unacceptable behavior by participants include:
 ## Our Responsibilities
 
 Project maintainers are responsible for clarifying the standards of acceptable
-behavior and are expected to take appropriate and fair corrective action in
-response to any instances of unacceptable behavior.
+behaviour and are expected to take appropriate and fair corrective action in
+response to any instances of unacceptable behaviour.
 
 Project maintainers have the right and responsibility to remove, edit, or
 reject comments, commits, code, wiki edits, issues, and other contributions
 that are not aligned to this Code of Conduct, or to ban temporarily or
-permanently any contributor for other behaviors that they deem inappropriate,
+permanently any contributor for other behaviours that they deem inappropriate,
 threatening, offensive, or harmful.
 
 ## Scope
@@ -54,7 +54,7 @@ a project may be further defined and clarified by project maintainers.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be
+Instances of abusive, harassing, or otherwise unacceptable behaviour may be
 reported by contacting the project team at <kamranahmed.se@gmail.com>. All
 complaints will be reviewed and investigated and will result in a response that
 is deemed necessary and appropriate to the circumstances. The project team is
