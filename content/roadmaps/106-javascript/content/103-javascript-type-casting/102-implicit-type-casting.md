@@ -1,4 +1,4 @@
-# Implicit type casting
+# Implicit Type Casting
 
 Implicit type casting happens when JavaScript automatically converts one data type to another to meet the expectations of the process. as for example passing a number when it expects a string like `"foo" + 1`, the Number `1` is implicitly converted into a string and the expression returns `"foo1"`.
 
