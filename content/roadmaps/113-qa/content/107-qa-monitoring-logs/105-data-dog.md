@@ -4,4 +4,4 @@ Datadog is the essential monitoring and security platform for cloud applications
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://www.datadoghq.com/'>Datadog Website</BadgeLink>
-<BadgeLink badgeText='Course' colorScheme='green' href='https://learn.datadoghq.com/'>Learn Datadog</BadgeLink>
+<BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://docs.datadoghq.com/'>Official Documentation</BadgeLink>
