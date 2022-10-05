@@ -8,6 +8,7 @@
   "infrastructure-as-code:service-mesh:consul": "/roadmaps/102-devops/content/105-infrastructure-as-code/100-service-mesh/100-consul.md",
   "infrastructure-as-code:containers": "/roadmaps/102-devops/content/105-infrastructure-as-code/101-containers.md",
   "infrastructure-as-code:docker": "/roadmaps/102-devops/content/105-infrastructure-as-code/100-docker.md",
+  "infrastructure-as-code:containerd": "/roadmaps/102-devops/content/105-infrastructure-as-code/102-containerd.md",
   "infrastructure-as-code:lxc": "/roadmaps/102-devops/content/105-infrastructure-as-code/101-lxc.md",
   "infrastructure-as-code:configuration-management": "/roadmaps/102-devops/content/105-infrastructure-as-code/102-configuration-management/readme.md",
   "infrastructure-as-code:configuration-management:ansible": "/roadmaps/102-devops/content/105-infrastructure-as-code/102-configuration-management/100-ansible.md",
