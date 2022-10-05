@@ -1,5 +1,15 @@
 [
   {
+    "id": "http-basic-authentication",
+    "title": "HTTP Basic Authentication",
+    "description": "Learn what is HTTP Basic Authentication and how to implement it in Node.js",
+    "isNew": true,
+    "type": "textual",
+    "authorUsername": "kamranahmedse",
+    "updatedAt": "2022-10-03T19:59:14.191Z",
+    "createdAt": "2022-10-03T19:59:14.191Z"
+  },
+  {
     "id": "basics-of-authentication",
     "title": "Basics of Authentication",
     "description": "Learn the basics of Authentication and Authorization",

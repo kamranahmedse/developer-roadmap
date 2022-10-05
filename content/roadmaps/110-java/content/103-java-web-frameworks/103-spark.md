@@ -1,6 +1,6 @@
 # Spark
 
-Spark is an open source framework focused on interactive query, machine learning, and real-time workloads. It does not have its own storage system, but runs analytics on other storage systems like HDFS, or other popular stores like Amazon Redshift, Amazon S3, Couchbase, Cassandra, and others.
+Spark is a micro framework for creating web applications in Kotlin and Java 8. Sinatra, a popular Ruby micro framework, was the inspiration for it.
 
 <ResourceGroupTitle>Reference Resource</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.playframework.com/'>Play Framework Website</BadgeLink>

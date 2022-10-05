@@ -1,3 +1,9 @@
 # Column Databases
 
-A **<u>columnar database</u>** is a database management system (DBMS) that stores data in columns as opposed to rows. The main advantage of columnar databases over row-oriented ones is their **<u>faster performance</u>**; this is due in large part to them accessing less memory to output data. This column structure can store more data in a smaller amount of memory. And because the initial data retrieval is done on a column-by-column basis, only the columns that need to be used are retrieved. This grants columnar databases like **Cassandra DB** their ability to scale efficiently and handle large amounts of data.
+A **<u>wide-column database</u>** (sometimes refered to as a column database) is similar to a relational database. It store data in tables, rows and columns. However in opposite to relational databases here each row can have its own format of the columns. Column databases can be seen as a two-dimensional key-value database. One of such database system is **Apache Cassandra**.
+
+**Warning:** <a href="https://en.wikipedia.org/wiki/Wide-column_store#Wide-column_stores_versus_columnar_databases">note that a "columnar database" and a "column database" are two different terms!</a>
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://cassandra.apache.org/_/index.html'>Apache Cassandra</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=J-cSy5MeMOA'>Apache Cassandra Database - Full Course for Beginners</BadgeLink>
