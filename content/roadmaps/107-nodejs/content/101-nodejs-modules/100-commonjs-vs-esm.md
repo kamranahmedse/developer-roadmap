@@ -1,10 +1,10 @@
 # CommonJS vs ESM
 
-A module system allows us to split up our code in different parts or to include code written by other developers.
-
-Since the very beginning of NodeJS, the CommonJS module system is the default module system within the ecosystem. However, recently a new module system was added to NodeJS - ES modules.
+CommonJS and ES (EcmaScript) are module systems used in Node. CommonJS is the default module system. However, a new module system was recently added to NodeJS - ES modules. CommonJS modules use the require() statement for module imports and module.exports for module exports while it's import and export for ES.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs. ES modules in Node.js</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs ESM</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javascripttutorial.net/nodejs-tutorial/nodejs-modules/'>Using CommonJS</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/es-modules-in-node-today/'>Using ES Modules</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=pP4kjXykbio'>Using Modules</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://reflectoring.io/nodejs-modules-imports/'>CommonJS vs. ES Modules: Modules and Imports in NodeJS</BadgeLink>
