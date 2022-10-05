@@ -4,5 +4,9 @@ Create React App is the CLI based tool and is the best way to start building a n
 
 It sets up your development environment so that you can use the latest JavaScript features, provides a nice developer experience, and optimizes your app for production. You’ll need to have Node >= 14.0.0 and npm >= 5.6 on your machine.
 
+You can use the command below to create a project called 'my-app'.
+
+npx create-react-app my-app
+
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://create-react-app.dev/docs/getting-started'>Official Website</BadgeLink>
