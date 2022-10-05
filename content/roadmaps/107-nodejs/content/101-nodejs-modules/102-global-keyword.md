@@ -1,4 +1,4 @@
-# Global keyword
+# global keyword
 
 The global object gives access to some useful functions that can be used directly in our code. The global object, in contrast to the global object in a browser, is not the Window object. It is just an object called 'Global'.
 
