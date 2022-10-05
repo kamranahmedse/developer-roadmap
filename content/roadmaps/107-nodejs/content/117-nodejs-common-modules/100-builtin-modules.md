@@ -2,7 +2,6 @@
 
 Built-in modules are already installed with `Node.js`, so you don't need to install them with any package manager (yarn, npm, etc.).
 
-**Some built-in modules of Node.js :**
 - **fs**: dealing with the system files.
 - **os**: provides information about the operation system.
 - **net**: to build clients and servers.
