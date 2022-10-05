@@ -4,3 +4,5 @@ JWT, or JSON-Web-Token, is an open standard for sharing security information bet
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Official Package' colorScheme="blue" href='https://www.npmjs.com/package/jsonwebtoken'>Package Documentation</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.akana.com/blog/what-is-jwt'>What is JWT</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=mbsmsi7l3r4'>JWT Implementation</BadgeLink>

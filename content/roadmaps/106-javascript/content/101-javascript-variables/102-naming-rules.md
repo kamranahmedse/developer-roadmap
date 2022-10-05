@@ -7,5 +7,3 @@ A variable name should accurately identify your variable. When you create good v
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.dummies.com/article/technology/programming-web-design/javascript/naming-javascript-variables-142522/'>Naming JavaScript Variables</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/javascript-naming-conventions/'>JavaScript Naming Conventions</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://google.github.io/styleguide/jsguide.html'>Google JavaScript Style Guide</BadgeLink>
-
-
