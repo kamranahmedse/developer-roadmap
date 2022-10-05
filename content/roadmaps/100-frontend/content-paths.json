@@ -38,6 +38,7 @@
   "package-managers": "/roadmaps/100-frontend/content/107-package-managers/readme.md",
   "package-managers:npm": "/roadmaps/100-frontend/content/107-package-managers/100-npm.md",
   "package-managers:yarn": "/roadmaps/100-frontend/content/107-package-managers/101-yarn.md",
+  "package-managers:pnpm": "/roadmaps/100-frontend/content/107-package-managers/102-pnpm.md",
   "css-architecture": "/roadmaps/100-frontend/content/108-css-architecture/readme.md",
   "css-architecture:bem": "/roadmaps/100-frontend/content/108-css-architecture/100-bem.md",
   "css-architecture:oocss": "/roadmaps/100-frontend/content/108-css-architecture/101-oocss.md",
