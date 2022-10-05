@@ -5,3 +5,5 @@ Google Cloud is Google's cloud computing service offering, providing over 150 pr
 <BadgeLink badgeText='Official Website' colorScheme='blue' href='https://cloud.google.com/'>Google Cloud Website</BadgeLink>
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://cloud.google.com/docs'>Official Documentation</BadgeLink>
 <BadgeLink badgeText='Get Started Guide' colorScheme='blue' href='https://cloud.google.com/docs/get-started/'>Google Cloud Get Started Guide</BadgeLink>
+
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://thenewstack.io/5-tips-to-become-a-google-cloud-certified-professional-architect/'>5 Tips to Become a Google Cloud Certified Professional Architect</BadgeLink>
