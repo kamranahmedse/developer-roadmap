@@ -5,3 +5,5 @@ Our current build tools for the web are 10-100x slower than they could be. The m
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://esbuild.github.io/'>Esbuild Official Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://esbuild.github.io/api/'>Esbuild Documentation</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=9XS_RA6zyyU'>Why are People Obsessed with esbuild?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=9wFfq5bLCgg'>ESBuild full course from A to Z. Webpack 5 replacement?
+</BadgeLink>
