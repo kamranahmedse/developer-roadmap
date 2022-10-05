@@ -56,11 +56,11 @@
           "ID": "6778",
           "typeID": "Canvas",
           "zOrder": "47",
-          "w": "414",
+          "w": "457",
           "h": "151",
           "measuredW": "100",
           "measuredH": "70",
-          "x": "184",
+          "x": "144",
           "y": "169"
         },
         {
@@ -98,7 +98,7 @@
           "zOrder": "51",
           "measuredW": "106",
           "measuredH": "28",
-          "x": "210",
+          "x": "170",
           "y": "194",
           "properties": {
             "size": "20",
@@ -1489,14 +1489,14 @@
           "ID": "8054",
           "typeID": "__group__",
           "zOrder": "166",
-          "measuredW": "350",
+          "measuredW": "401",
           "measuredH": "26",
-          "w": "350",
+          "w": "401",
           "h": "26",
-          "x": "211",
+          "x": "171",
           "y": "237",
           "properties": {
-            "controlName": "ext_link:github.com/justinamiller/SoftwareArchitect"
+            "controlName": "ext_link:medium.com/hackernoon/38-actions-and-insights-to-become-a-better-software-architect-f135e2de9a1b"
           },
           "children": {
             "controls": {
@@ -1505,13 +1505,13 @@
                   "ID": "0",
                   "typeID": "Label",
                   "zOrder": "0",
-                  "measuredW": "317",
+                  "measuredW": "368",
                   "measuredH": "26",
                   "x": "33",
                   "y": "0",
                   "properties": {
                     "size": "18",
-                    "text": "Justin Miller’s Software Architect Guide"
+                    "text": "Kai Niklas’s Tips to become a better Architect"
                   }
                 },
                 {
@@ -1558,7 +1558,7 @@
           "measuredH": "26",
           "w": "279",
           "h": "26",
-          "x": "211",
+          "x": "171",
           "y": "267",
           "properties": {
             "controlName": "ext_link:amazon.ae/Fundamentals-Software-Architecture-Engineering-Approach/dp/1492043451"
@@ -6663,7 +6663,7 @@
     "branchID": "Master",
     "resourceID": "4BE92169-157F-4FC5-8E20-403CBCF7A6C6",
     "mockupH": "2683",
-    "mockupW": "1340",
+    "mockupW": "1375",
     "measuredW": "1519",
     "measuredH": "2852",
     "version": "1.0"
