@@ -1,0 +1,28 @@
+# Networking Commands
+
+Networking commands are used extensively to inspect, analyze, maintain, and troubleshoot the network/s connected to the system. \
+Below is the list of the basic networking commands used in Linux followed by a detailed explanation of each.
+
+ifconfig 
+ip
+traceroute
+tracepath
+ping
+netstat
+ss
+dig
+nslookup
+route
+host
+arp
+iwconfig
+hostname
+curl or wget
+mtr
+whois
+ifplugstatus
+iftop
+tcpdum
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://mindmajix.com/linux-networking-commands-best-examples'>Must know Computer Networking Commands?</BadgeLink>
