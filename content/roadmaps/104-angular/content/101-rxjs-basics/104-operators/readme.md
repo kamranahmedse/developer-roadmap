@@ -30,13 +30,13 @@ import { interval } from 'rxjs';
 
 const observable = interval(1000 /* number of milliseconds */);
 ```
-[List of creation operators](https://rxjs.dev/guide/operators#creation-operators-list)
+
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://rxjs.dev/guide/operators#creation-operators-list'>List of creation operators</BadgeLink>
 
 
 ## Higher-order Observables
 
 Observables most commonly emit ordinary values like strings and numbers, but surprisingly often, it is necessary to handle Observables of Observables, so-called higher-order Observables.
 
-
-[Full RxJS Operators Documentation](https://rxjs.dev/guide/operators)
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://rxjs.dev/guide/operators'>Full RxJS Operators Documentation</BadgeLink>
 
