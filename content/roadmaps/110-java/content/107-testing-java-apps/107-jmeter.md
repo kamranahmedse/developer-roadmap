@@ -4,3 +4,4 @@ Apache JMeter is an Apache project that can be used as a load testing tool for a
 
 <ResourceGroupTitle>Reference Resource</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://jmeter.apache.org/'>Apache JMeter Website</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Watch' href='https://www.youtube.com/watch?v=mXGcBvWYl-U'>JMeter Tutorial For Beginners</BadgeLink>
