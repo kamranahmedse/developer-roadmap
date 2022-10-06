@@ -1,6 +1,6 @@
 # This Keyword
 
-In JavaScript, the `this` keyword is a little different compared to other languages. It refers to an object, but it depends on how or where its being invoked. It also has some differences between strict mode and non-strict mode.
+In JavaScript, the `this` keyword is a little different compared to other languages. It refers to an object, but it depends on how or where it is being invoked. It also has some differences between strict mode and non-strict mode.
 
 - In an object method, `this` refers to the object
 - Alone, `this` refers to the global object
@@ -11,4 +11,3 @@ In JavaScript, the `this` keyword is a little different compared to other langua
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/js/js_this.asp'>The JavaScript `this` Keyword</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this'>This Keyword</BadgeLink>
-

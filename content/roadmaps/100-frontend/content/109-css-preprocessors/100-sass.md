@@ -4,6 +4,6 @@ Sass is a preprocessor scripting language that is interpreted or compiled into C
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://sass-lang.com/'>Sass Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Documentation' href='https://sass-lang.com/documentation'>Official Documentation</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://sass-lang.com/documentation'>Official Documentation</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=_a5j7KoflTs'> Sass Tutorial for Beginners</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=jfMHA8SqUL4'> Sass, BEM, & Responsive Design</BadgeLink>

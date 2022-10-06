@@ -4,4 +4,4 @@ CentOS (short for Community Enterprise Operating System) is a community driven, 
 
 <BadgeLink badgeText='Official Website' colorScheme='blue' href='https://www.centos.org/'>CentOS Project Website</BadgeLink>
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://wiki.centos.org/Documentation'>CentOS Documentation</BadgeLink>
-<BadgeLink badgeText='How To Guides' colorScheme='blue' href='https://wiki.centos.org/HowTos'>CentOS How To Guides</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://wiki.centos.org/HowTos'>CentOS How To Guides</BadgeLink>

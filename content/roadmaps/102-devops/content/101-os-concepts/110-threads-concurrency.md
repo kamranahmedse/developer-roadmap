@@ -9,7 +9,7 @@ Each thread has its own program counter, stack, and set of registers. But the th
 * `join`
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Pre-Requesite' href='https://www.geeksforgeeks.org/introduction-of-process-synchronization/'>Process Synchronization</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/introduction-of-process-synchronization/'>Process Synchronization</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/thread-in-operating-system/'>What is Thread in OS?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scaler.com/topics/operating-system/threads-in-operating-system/'>Process vs Thread & Multi-Threading</BadgeLink>
 

@@ -4,4 +4,4 @@ Debian is a free and open-source Linux distribution developed by the Debian Proj
 
 <BadgeLink badgeText='Official Website' colorScheme='blue' href='https://www.debian.org/'>Debian Website</BadgeLink>
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://www.debian.org/doc/'>Official Debian Documentation</BadgeLink>
-<BadgeLink badgeText='Installation Guide' colorScheme='blue' href='https://www.debian.org/releases/stable/installmanual'>Debian Installation Guide</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.debian.org/releases/stable/installmanual'>Debian Installation Guide</BadgeLink>

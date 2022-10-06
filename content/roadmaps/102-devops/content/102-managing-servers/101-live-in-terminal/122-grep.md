@@ -8,4 +8,4 @@ It has the following syntax:
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/grep-command-in-unixlinux/'>What is Grep? with examples</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Manual' href='https://www.gnu.org/software/grep/manual/grep.html'>Detailed Manual</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.gnu.org/software/grep/manual/grep.html'>Detailed Manual</BadgeLink>

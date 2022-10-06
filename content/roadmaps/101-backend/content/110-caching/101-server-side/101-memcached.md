@@ -12,4 +12,4 @@ Memcached has no internal mechanism to track misses which may happen. However, s
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/memcached/memcached#readme'>Memcached, From Official Github</BadgeLink>
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/memcached/index.htm'>Memcached Tutorial</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://www.tutorialspoint.com/memcached/index.htm'>Memcached Tutorial</BadgeLink>

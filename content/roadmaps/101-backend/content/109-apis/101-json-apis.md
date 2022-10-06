@@ -4,6 +4,6 @@ JSON or JavaScript Object Notation is an encoding scheme that is designed to eli
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink badgeText='Read' colorScheme="yellow" href='https://jsonapi.org/'>Official Website</BadgeLink>
+<BadgeLink badgeText='Official Website' colorScheme="blue" href='https://jsonapi.org/'>Official Website</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://jsonapi.org/implementations/'>Official Docs</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=N-4prIh7t38'>JSON API: Explained in 4 minutes </BadgeLink>

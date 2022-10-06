@@ -10,16 +10,22 @@ type FeaturedRoadmapsListProps = {
 export const upcomingRoadmaps = [
   {
     type: 'Role Based',
-    title: 'Software Architect',
-    description: 'Roadmap to become a modern Software Architect',
-    id: 'software-architect'
-  },
-  {
-    type: 'Role Based',
     title: 'React Native',
     description: 'Step by step guide to become a React Native Developer',
     id: 'react-native'
-  }
+  },
+  {
+    type: 'Skill Based',
+    title: 'TypeScript',
+    description: 'Step by step guide to learn TypeScript in 2022',
+    id: 'typescript'
+  },
+  {
+    type: 'Skill Based',
+    title: 'Rust',
+    description: 'Step by step guide to learn Rust in 2022',
+    id: 'rust'
+  },
 ];
 
 export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
@@ -36,7 +42,7 @@ export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
               url={`/${roadmap.id}`}
               key={roadmap.id}
               colorIndex={counter}
-              title={roadmap.featuredTitle}
+              title={roadmap.featuredTitle === 'Software Design and Architecture' ? 'Software Design' : roadmap.featuredTitle}
               isCommunity={roadmap.isCommunity}
               isNew={roadmap.isNew}
               subtitle={roadmap.featuredDescription}
