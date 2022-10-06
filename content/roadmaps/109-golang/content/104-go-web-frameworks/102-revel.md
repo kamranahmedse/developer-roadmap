@@ -1,7 +1,7 @@
 # Revel
 
-Revel web development is a near full-stack web framework. The purpose of Revel is to make it easier for developers to build web applications using the MVC (Model-View-Controller) architecture pattern.
+Revel organizes endpoints into Controllers. They provide easy data binding and form validation. Revel makes Go Templates simple to use at scale. Register functionality to be called before or after actions.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/revel/revel'>Github Repository</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://revel.github.io/'>Official Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://revel.github.io/tutorial/index.html'>Revel</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://pkg.go.dev/github.com/revel/revel'>Revel Packages</BadgeLink>
