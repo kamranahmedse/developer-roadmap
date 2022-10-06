@@ -26,6 +26,12 @@ export const upcomingRoadmaps = [
     description: 'Step by step guide to learn Rust in 2022',
     id: 'rust'
   },
+  {
+    type: 'Skill Based',
+    title: 'DSA',
+    description: 'Conquer Data structures and Algorithms in 2022',
+    id: 'dsa'
+  }
 ];
 
 export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
