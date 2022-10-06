@@ -4,4 +4,4 @@ Forever is a node.js package for ensuring that a given script runs continuously 
 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://pm2.keymetrics.io/'>Forever package documentation</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.npmjs.com/package/forever'>Forever package documentation</BadgeLink>
