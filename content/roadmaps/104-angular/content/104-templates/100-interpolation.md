@@ -21,5 +21,4 @@ In the following example, Angular evaluates the title and itemImageUrl propertie
 
 <div><img alt="item" src="{{itemImageUrl}}"></div>
 ```
-
-[Full documentation angular.io](https://angular.io/guide/interpolation)
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='ttps://angular.io/guide/interpolation'>Angular Official Website</BadgeLink>
