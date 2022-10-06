@@ -98,5 +98,3 @@ Graphql is a very powerful tool and it makes queries and requests much easier. A
 <hr>
 
 # HAPPY READING
-
-Footer
