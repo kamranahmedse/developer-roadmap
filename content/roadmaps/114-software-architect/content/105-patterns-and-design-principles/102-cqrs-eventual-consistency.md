@@ -1,4 +1,4 @@
-# Cqrs eventual consistency
+# CQRS eventual consistency
 
 CQRS (Segregation of Responsibility for Command Queries) is an architectural pattern that comes with the idea of separating read and write operations into two distinct logical processes.
 
