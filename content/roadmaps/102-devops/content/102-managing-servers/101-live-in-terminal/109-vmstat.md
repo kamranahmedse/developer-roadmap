@@ -1,6 +1,6 @@
 # Vmstat
 
-Short for **V**ritual **m**emory **stat**istic reporter, it is a command line tool for Unix and Unix-like operating systems that reports various information about the operating system such as memory, paging, processes, I/O, CPU and disk usage.
+Short for **V**irtual **m**emory **stat**istic reporter, it is a command line tool for Unix and Unix-like operating systems that reports various information about the operating system such as memory, paging, processes, I/O, CPU and disk usage.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
