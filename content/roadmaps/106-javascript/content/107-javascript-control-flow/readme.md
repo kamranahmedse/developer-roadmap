@@ -9,4 +9,4 @@ We can control the flow of the program through any of these control structures:
 - Loops and Iterations
   
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Glossary/Control_flow#:~:text=The%20control%20flow%20is%20the,such%20as%20conditionals%20and%20loops.'>control flow</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Glossary/Control_flow'>Control Flow - MDN</BadgeLink>
