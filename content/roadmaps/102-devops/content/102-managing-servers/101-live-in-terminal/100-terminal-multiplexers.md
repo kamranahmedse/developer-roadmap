@@ -4,5 +4,5 @@ Terminal multiplexers are programs that allow us to [multiplex](https://en.wikip
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink colorScheme='yellow' badgeText='Wikipedia' href='https://en.wikipedia.org/wiki/Terminal_multiplexer'>Terminal Multiplexer</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='LinuxCommand' href='https://linuxcommand.org/lc3_adv_termmux.php'>Terminal Multiplexers</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Terminal_multiplexer'>Terminal Multiplexer</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://linuxcommand.org/lc3_adv_termmux.php'>Terminal Multiplexers</BadgeLink>
