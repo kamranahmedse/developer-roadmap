@@ -1,4 +1,4 @@
-# Nodejs threads
+# Nodejs Threads
 
 Node.js is a single-threaded language and gives us ways to work parallelly to our main process.
 Taking note of nowadays multicore system single threading is very memory efficient.

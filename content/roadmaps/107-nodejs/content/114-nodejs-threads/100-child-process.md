@@ -1,4 +1,4 @@
-# Child process
+# Child Process
 
 The child_process module gives the node the ability to run the child process, established through IPC (inter-process communication) by accessing operating system commands.
 
