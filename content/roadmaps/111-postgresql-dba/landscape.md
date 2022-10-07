@@ -148,7 +148,7 @@ Get basic understanding about troubleshooting tools and get practical skills of 
   - [Linux Performance](http://www.brendangregg.com/linuxperf.html) by Brendan Gregg
   - [USE Method](http://www.brendangregg.com/usemethod.html)
 
-## Learn SQL optimization technics
+## Learn SQL optimization techniques
 Get understanding and practical skills of how to optimize SQL queries.
 - **Indexes, and their use cases**: B-tree, Hash, GiST, SP-GiST, GIN, BRIN
 - SQL queries patterns and anti-patterns
