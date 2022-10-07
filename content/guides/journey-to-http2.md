@@ -71,7 +71,7 @@ Three-way handshake in its simplest form is that all the `TCP` connections begin
 - `SYN ACK` - Server acknowledges the request by sending an `ACK` packet back to the client which is made up of a random number, let's say `y` picked up by server and the number `x+1` where `x` is the number that was sent by the client
 - `ACK` - Client increments the number `y` received from the server and sends an `ACK` packet back with the number `y+1`
 
-Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be receieved in order to fulfill the request.
+Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be received in order to fulfill the request.
 
 ![](http://i.imgur.com/uERG2G2.png)
 
