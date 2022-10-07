@@ -1,0 +1,54 @@
+{
+    "seo": {
+      "title": "Laravel Developer Roadmap: Step by step guide to learn Laravel",
+      "description": "Community driven, articles, resources, guides, interview questions, quizzes for laravel development. Learn to become a modern Laravel developer by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "laravel guide 2022",
+        "learn laravel",
+        "step by step laravel guide",
+        "laravel roadmap 2022",
+        "laravel developer roadmap 2022",
+        "guide to becoming a laravel developer",
+        "laravel developer roadmap",
+        "laravel roadmap",
+        "become laravel developer",
+        "laravel developer skills",
+        "laravel skills test",
+        "skills for laravel development",
+        "learn laravel development",
+        "what is laravel",
+        "laravel quiz",
+        "laravel interview questions"
+      ]
+    },
+    "title": "laravel Roadmap",
+    "description": "Step by step guide to learn laravel in 2022",
+    "featuredTitle": "laravel",
+    "type": "tool",
+    "featuredDescription": "Step by step guide to learn laravel in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isNew": true,
+    "featured": true,
+    "jsonUrl": "/project/laravel.json",
+    "versions": [
+      "latest",
+      "2018",
+      "2017"
+    ],
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "pdfUrl": "/pdfs/laravel.pdf",
+    "contentPathsFilePath": "./content-paths.json",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "laravel",
+      "react",
+      "angular",
+      "vue",
+      "nodejs"
+    ]
+  }

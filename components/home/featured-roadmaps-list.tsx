@@ -26,6 +26,12 @@ export const upcomingRoadmaps = [
     description: 'Step by step guide to learn Rust in 2022',
     id: 'rust'
   },
+  {
+    type: 'Skill Based',
+    title: 'Laravel',
+    description: 'Step by step guide to learn Laravel in 2022',
+    id: 'laravel'
+  },
 ];
 
 export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
