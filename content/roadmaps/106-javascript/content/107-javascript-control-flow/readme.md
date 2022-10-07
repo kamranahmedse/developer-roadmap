@@ -1,4 +1,4 @@
-# Javascript control flow
+# Control Flow
 
 In JavaScript, the `Control flow` is a way of how your computer runs code from top to bottom. It starts from the first line and ends at the last line unless it hits any statement that changes the control flow of the program such as loops, conditionals, etc.
 
