@@ -7,4 +7,4 @@ When tmux is started it creates a new session with a single window and displays 
 See `man tmux` further information
 
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://tmuxguide.readthedocs.io/en/latest/tmux/tmux.html'>Tmux Documentation</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://tmuxcheatsheet.com/'>Tux Cheat Sheet</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://tmuxcheatsheet.com/'>Tmux Cheat Sheet</BadgeLink>
