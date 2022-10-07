@@ -4,5 +4,5 @@ REST (Representational State Transfer) API (Application Programming Interface) i
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://go.dev/doc/tutorial/web-service-gin'>Tutorial</BadgeLink>
-<BadgeLink badgeText='Youtube' colorScheme="red" href='https://youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY'>REST API</BadgeLink>
-<BadgeLink badgeText='GeeksForGeeks' colorScheme="Green" href='https://www.geeksforgeeks.org/rest-api-introduction/'>Website</BadgeLink>
+<BadgeLink badgeText='Watch' colorScheme="red" href='https://youtube.com/playlist?list=PLzUGFf4GhXBL4GHXVcMMvzgtO8-WEJIoY'>RESTful APIs Series</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/rest-api-introduction/'>Introduction to RESTful APIs</BadgeLink>
