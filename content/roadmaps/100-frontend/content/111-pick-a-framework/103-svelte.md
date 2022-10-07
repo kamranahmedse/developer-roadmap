@@ -1,5 +1,6 @@
 # Svelte
-Svelte is a javascript framework that unlike vue.js and react.js does not use vertical DOM diffing but instead knows exactly what and where to update when the state changes. It's mainly focused on frontend and building user interfaces.
+
+Svelte is a javascript framework that unlike Vue and React does not use vertical DOM diffing but instead knows exactly what and where to update when the state changes. It's mainly focused on frontend and building user interfaces.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://svelte.dev/'>Svelte Website</BadgeLink>
