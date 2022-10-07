@@ -1,5 +1,6 @@
 # Daisy UI
-The most popular, free and open-source Tailwind CSS component library
+
+Component library around Tailwind CSS that comes with several built-in components.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://daisyui.com/'>DaisyUI Website</BadgeLink>
