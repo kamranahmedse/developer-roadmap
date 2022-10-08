@@ -1,6 +1,6 @@
 # Passport js
 
-Passport.js is authentication middleware for Node.js. It makes implementing authetication in express apps really easy and fast. It is extremely flexible and modular. It uses "strategies" to support authentication using a username and password, Facebook, Twitter, and a lot of other sites.
+Passport.js is authentication middleware for Node.js. It makes implementing authentication in express apps really easy and fast. It is extremely flexible and modular. It uses "strategies" to support authentication using a username and password, Facebook, Twitter, and a lot of other sites.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.passportjs.org/'>PassportJS Website</BadgeLink>
