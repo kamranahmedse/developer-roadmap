@@ -5,3 +5,6 @@ A programming method to map objects in Java to relational entities in a database
 - Spring Data JPA 
 - Hibernate
 - Ebean
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.altexsoft.com/blog/object-relational-mapping/'>ORM tutorial</BadgeLink>

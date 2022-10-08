@@ -1,6 +1,6 @@
 # strace
 
-`strac` is a useful diagnsotic, debugging tool for unix based operating systems. It traces the system calls and signals a processs uses during its lifetime. And usually returns the name of the each system calls , its arguments and what it returned.
+`strac` is a useful diagnsotic, debugging tool for unix based operating systems. It traces the system calls and signals a process uses during its lifetime. And usually returns the name of the each system calls , its arguments and what it returned.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://strace.io/'>Strace Official Website</BadgeLink>
