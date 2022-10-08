@@ -22,7 +22,7 @@ d8:announce41:http://bttracker.debian.org:6969/announce7:comment35:"Debian CD fr
 
 That mess is encoded in a format called **Bencode** (pronounced *bee-encode*), and we'll need to decode it.
 
-Bencode can encode roughly the same types of structures as JSON—strings, integers, lists, and dictionaries. Bencoded data is not as human-readable/writable as JSON, but it can efficiently handle binary data and it's really simple to parse from a stream. Strings come with a length prefix, and look like `4:spam`. Integers go between *start* and *end* markers, so `7` would encode to `i7e`. Lists and dictionaries work in a similar way: `l4:spami7ee` represents `['spam', 7]`, while `d4:spami7ee` means `{spam: 7}`.
+Bencode can encode roughly the same types of structures as JSON—strings, integers, lists, and dictionaries. Bencoded data is not as human-readable/writable as JSON, but it can efficiently handle binary data and it's really simple to parse from a stream. Strings come with a length prefix, and look like `4:spam`. Integers go between *start* and *end* markers, so `7` would encode to `i7e`. Lists and dictionaries work similarly: `l4:spami7ee` represents `['spam', 7]`, while `d4:spami7ee` means `{spam: 7}`.
 
 
 In a prettier format, our .torrent file looks like this:

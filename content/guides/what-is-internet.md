@@ -6,7 +6,7 @@ Since the explosive growth of web-based applications, every developer stands to 
 * What's the relationship between packets, routers, and reliability? 
 * HTTP and the HTML – How are you viewing this webpage in your browser?
 * How is the information transfer on the internet made secure?
-* What is cybersecurity and what are some common internet crimes?
+* What is cybersecurity, and what are some common internet crimes?
 
 ## What is the Internet?
 
@@ -49,13 +49,13 @@ HTTP is the standard protocol by which webpages are transferred over the Interne
 
 ## Encryption and Public Keys
 
-Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptograpy, SSL/TLS, and how they help make the communication on the Internet secure.
+Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptography, SSL/TLS, and how they help make the communication on the Internet secure.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZghMPWGXexs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Cybersecurity and Crime
 
-In this video, you will learn about the basics of cybersecurity and common cybercrimes
+In this video, you will learn about the basics of cybersecurity and common cybercrime
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/AuYNXgO_f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

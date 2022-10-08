@@ -71,7 +71,7 @@ So, how do we control the web cache? Whenever the server emits some response, it
 
 #### Expires
 
-Before HTTP/1.1 and the introduction of `Cache-Control`, there was an `Expires` header which is simply a timestamp telling the caches how long should some content be considered fresh. A possible value to this header is the absolute expiry date; where a date has to be in GMT. Below is the sample header
+Before HTTP/1.1 and the introduction of `Cache-Control`, there was a `Expires` header which is simply a timestamp telling the caches how long should some content be considered fresh. A possible value to this header is the absolute expiry date; where a date has to be in GMT. Below is the sample header
 
 ```html
 Expires: Mon, 13 Mar 2017 12:22:00 GMT
@@ -92,7 +92,7 @@ Cache-Control specifies how long and in what manner should the content be cached
 Value for the `Cache-Control` header is composite i.e. it can have multiple directive/values. Let's look at the possible values that this header may contain. 
 
 ##### private
-Setting the cache to `private` means that the content will not be cached in any of the proxies and it will only be cached by the client (i.e. browser)
+Setting the cache to `private` means that the content will not be cached in any of the proxies, and it will only be cached by the client (i.e. browser)
 
 ```html
 Cache-Control: private
@@ -116,7 +116,7 @@ Cache-Control: no-store
 ```
 
 ##### no-cache
-**`no-cache`** indicates that the cache can be maintained but the cached content is to be re-validated (using `ETag` for example) from the server before being served. That is, there is still a request to server but for validation and not to download the cached content.
+**`no-cache`** indicates that the cache can be maintained, but the cached content is to be re-validated (using `ETag` for example) from the server before being served. That is, there is still a request to server but for validation and not to download the cached content.
 
 ```html
 Cache-Control: max-age=3600, no-cache, public
@@ -138,14 +138,14 @@ Cache-Control: s-maxage=3600, public
 ```
 
 ##### must-revalidate
-**`must-revalidate`** it might happen sometimes that if you have network problems and the content cannot be retrieved from the server, the browser may serve stale content without validation. `must-revalidate` avoids that. If this directive is present, it means that stale content cannot be served in any case and the data must be re-validated from the server before serving. 
+**`must-revalidate`** it might sometimes happen that if you have network problems and the content cannot be retrieved from the server, the browser may serve stale content without validation. `must-revalidate` avoids that. If this directive is present, it means that stale content cannot be served in any case and the data must be re-validated from the server before serving. 
 
 ```html
 Cache-Control: max-age=3600, public, must-revalidate
 ```
 
 ##### proxy-revalidate
-**`proxy-revalidate`** is similar to `must-revalidate` but it specifies the same for shared or proxy caches. In other words `proxy-revalidate` is to `must-revalidate` as `s-maxage` is to `max-age`. But why did they not call it `s-revalidate`?. I have no idea why, if you have any clue please leave a comment below. 
+**`proxy-revalidate`** is similar to `must-revalidate`, but it specifies the same for shared or proxy caches. In other words `proxy-revalidate` is to `must-revalidate` as `s-maxage` is to `max-age`. But why did they not call it `s-revalidate`?. I have no idea why, if you have any clue please leave a comment below. 
 
 ##### Mixing Values
 You can combine these directives in different ways to achieve different caching behaviors, however `no-cache/no-store` and `public/private` are mutually exclusive. 
@@ -164,7 +164,7 @@ For `private/public`, for any unauthenticated requests cache is considered `publ
 
 ### Validators 
 
-Up until now we only discussed how the content is cached and how long the cached content is to be considered fresh but we did not discuss how the client does the validation from the server. Below we discuss the headers used for this purpose.
+Up until now we only discussed how the content is cached and how long the cached content is to be considered fresh, but we did not discuss how the client does the validation from the server. Below we discuss the headers used for this purpose.
 
 #### ETag
 
@@ -187,7 +187,7 @@ Consider the scenario, you opened a web page which loaded a logo image with cach
 If-None-Match: "abc123xyz"
 ```
 
-Server will then compare this ETag with the ETag of the current version of resource. If both etags are matched, server will send back the response of `304 Not Modified` which will tell the client that the copy that it has is still good and it will be considered fresh for another 60 seconds. If both the etags do not match i.e. the logo has likely changed and client will be sent the new logo which it will use to replace the stale logo that it has.
+Server will then compare this ETag with the ETag of the current version of resource. If both etags are matched, server will send back the response of `304 Not Modified` which will tell the client that the copy that it has is still good, and it will be considered fresh for another 60 seconds. If both the etags do not match i.e. the logo has likely changed and client will be sent the new logo which it will use to replace the stale logo that it has.
 
 #### Last-Modified
 
@@ -211,7 +211,7 @@ Now that we have got *everything* covered, let us put everything in perspective 
 
 #### Utilizing Server
 
-Before we get into the possible caching strategies , let me add the fact that most of the servers including Apache and Nginx allow you to implement your caching policy through the server so that you don't have to juggle with headers in your code. 
+Before we get into the possible caching strategies, let me add the fact that most of the servers including Apache and Nginx allow you to implement your caching policy through the server so that you don't have to juggle with headers in your code. 
 
 **For example**, if you are using Apache and you have your static content placed at `/static`, you can put below `.htaccess` file in the directory to make all the content in it be cached for an year using below
 
@@ -238,14 +238,14 @@ Or if you don't want to use the `.htaccess` file you can modify Apache's configu
 
 #### Caching Recommendations
 
-There is no golden rule or set standards about how your caching policy should look like, each of the application is different and you have to look and find what suits your application the best. However, just to give you a rough idea
+There is no golden rule or set standards about how your caching policy should look like, each of the application is different, and you have to look and find what suits your application the best. However, just to give you a rough idea
 
   - You can have aggressive caching (e.g. cache for an year) on any static content and use fingerprinted filenames (e.g. `style.ju2i90.css`) so that the cache is automatically rejected whenever the files are updated.
     Also it should be noted that you should not cross the upper limit of one year as it [might not be honored](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9) 
   - Look and decide do you even need caching for any dynamic content, if yes how long it should be. For example, in case of some RSS feed of a blog there could be the caching of a few hours but there couldn't be any caching for inventory items in an ERP.
   - Always add the validators (preferably ETags) in your response.
   - Pay attention while choosing the visibility (private or public) of the cached content. Make sure that you do not accidentally cache any user-specific or sensitive content in any public proxies. When in doubt, do not use cache at all.
-  - Separate the content that changes often from the content that doesn't change that often (e.g. in javascript bundles) so that when it is updated it doesn't need to make the whole cached content stale.  
+  - Separate the content that changes often from the content that doesn't change that often (e.g. in JavaScript bundles) so that when it is updated it doesn't need to make the whole cached content stale.  
   - Test and monitor the caching headers being served by your site. You can use the browser console or `curl -I http://some-url.com` for that purpose. 
 
 And that about wraps it up. Stay tuned for more!

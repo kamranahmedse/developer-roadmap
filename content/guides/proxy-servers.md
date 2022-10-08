@@ -16,7 +16,7 @@ Proxy servers serve as a single point of control making it easier to enforce sec
      
 ## Forward Proxy Server    
 
-A forward proxy is generally implemented on the client side and **sits in front of multiple clients** or client sources. Forward proxy servers are mainly used by companies to **manage internet usage** of their employees and **restrict content**. It is also used as a **firewall** to secure the company's network by blocking any request which would pose threat to the companies's network. Proxy servers are also used to **bypass geo-restriction** and browse content that might be blocked in the user's country. It enables users to **browse anonymously**, as the proxy server masks their details from the website's servers. 
+A forward proxy is generally implemented on the client side and **sits in front of multiple clients** or client sources. Forward proxy servers are mainly used by companies to **manage internet usage** of their employees and **restrict content**. It is also used as a **firewall** to secure the company's network by blocking any request which would pose threat to the companies' network. Proxy servers are also used to **bypass geo-restriction** and browse content that might be blocked in the user's country. It enables users to **browse anonymously**, as the proxy server masks their details from the website's servers. 
 
 ![Forward Proxy Description](/guides/proxy/forward-proxy.png)    
 > NOTE: This is not an accurate description but rather just an illustration
