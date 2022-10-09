@@ -5,3 +5,4 @@ A template is a form of HTML that tells Angular how to render the component. The
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/guide/template-overview'>Angular Official Website</BadgeLink>
+
