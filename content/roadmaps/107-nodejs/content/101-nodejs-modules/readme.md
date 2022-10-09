@@ -4,4 +4,4 @@ CommonJS modules are the original way to package JavaScript code for Node.js. No
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/modules.html#modules-commonjs-modules'>Modules: CommonJS modules</BadgeLink>
-href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs. ES modules in Node.js</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Docs' href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs. ES modules in Node.js</BadgeLink>
