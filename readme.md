@@ -48,6 +48,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
+- [Salesforce Developer Roadmap]([https://roadmap.sh/blockchain](https://www.salesforcetraining.education/4-reasons-transition-force-com-developer-advanced-developer-certifications-now/))
 
 ![](https://i.imgur.com/waxVImv.png)
 
