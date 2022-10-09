@@ -1,7 +1,7 @@
 # Solana
 
 Solana is a public blockchain platform with smart contract functionality. 
-Solana is an open source project implementing a new, high-performance, permissionless blockchain. The Solana Foundation is based in Geneva, Switzerland and maintains the open source project. The Solana Foundation is based in Geneva, Switzerland and maintains the open source project.
+Solana is an open source project implementing a new, high-performance, permissionless blockchain. The Solana Foundation is based in Geneva, Switzerland and maintains the open source project. 
 It's architecture is built in such a way that satisfies all three desirable properties of a proper blockchain. It is 
 - scalable, 
 - secure and 
