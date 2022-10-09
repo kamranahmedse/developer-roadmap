@@ -1,1 +1,3 @@
 # Qa automated testing
+
+Since, Numerous automation tools had been came into the testing process, QA automation is the process of automating the testing of software applications and mobile apps using them. This is also known as Automated testing. The main motive of QA automated testing is to enable the QA automation tools to conduct the repetitive (or manual) testing tasks instead of a human tester. Therefore, Quality Assurance automation helps the software testing team by removing their burden of focussing upon complex (or advanced) test cases. This QA automation uses testing scripts that can be executed for numerous times. QA automation tools will perform this testing scripts (or tests) and produce the test results to the testing team.
