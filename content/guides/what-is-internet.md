@@ -49,7 +49,7 @@ HTTP is the standard protocol by which webpages are transferred over the Interne
 
 ## Encryption and Public Keys
 
-Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptograpy, SSL/TLS, and how they help make the communication on the Internet secure.
+Cryptography is what keeps our communication secure on the Internet. In this short video, you will learn the basics of cryptography, SSL/TLS, and how they help make the communication on the Internet secure.
 
 <iframe width="100%" height="400" src="https://www.youtube.com/embed/ZghMPWGXexs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
