@@ -1,14 +1,6 @@
 # Express.js
 
 Express is a node js web application framework that provides broad features for building web and mobile applications. It is used to build a single page, multipage, and hybrid web application.
-It's a layer built on the top of the Node js that helps manage servers and routes.
-
-Features of Express JS:
-1) Fast Server-Side Development
-2) Middleware
-3) Routing
-4) Templating 
-5) Debugging 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://expressjs.com/'>Express.js Official Website</BadgeLink>
