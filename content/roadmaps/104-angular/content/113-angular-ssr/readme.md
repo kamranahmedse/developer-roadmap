@@ -1,1 +1,3 @@
 # Angular ssr
+
+Server side Rendering (SSR) is a latest and wonderful technique, used in the conversion process of a Single Page Application (SPA) running in the browser into a server based application. According to the operations of a user, a Angular application will be executed in the user's browser & rendering pages in the DOM. Angular Universal is a special technology given by Angular, which runs on the server to generate the static application page (SPA), that will be later bootstrapped on the client. This process and functionality of the Angular SSR allows the application to render more quickly, which gives users a chance to see the application layout before it becomes a fully interactive one. 
