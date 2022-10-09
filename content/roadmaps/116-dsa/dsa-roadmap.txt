@@ -1,0 +1,57 @@
+Searching
+---------------------
+Linear Search
+Binary Search
+Ternary Search
+
+
+Sorting
+-------------------
+Bubble Sort
+Selection Sort
+Insertion Sort
+Merge Sort
+Quick Sort
+Counting Sort
+Radix Sort
+Heap Sort
+Bucket Sort
+
+
+Greedy Algorithms
+----------------------------
+Basics of Greedy Algorithms
+
+
+Graphs
+-------------------
+Graph Representation
+Breadth First Search
+Depth First Search
+Minimum Spanning Tree
+Shortest Path Algorithms
+Flood-fill Algorithm
+Articulation Points and Bridges
+Biconnected Components
+Strongly Connected Components
+Topological Sort
+Hamiltonian Path
+Maximum flow
+Minimum Cost Maximum Flow
+Min-cut
+
+
+String Algorithms
+----------------------------------
+Basics of String Manipulation
+String Searching
+Z Algorithm
+Manachar’s Algorithm
+
+
+Dynamic Programming
+---------------------------------------
+Introduction to Dynamic Programming 1
+2 Dimensional
+State space reduction
+Dynamic Programming and Bit Mas
