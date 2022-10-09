@@ -5,3 +5,4 @@ Before submitting data to the server, it is important to ensure all required for
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Learn/Forms/Form_validation'>MDN Web Docs: Client-side form validation</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://web.dev/learn/forms/'>Learn Forms by web.dev</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.tutorialspoint.com/html/html_forms.htm'>tutorialspoint: Client-side form validation with attractive form</BadgeLink>
