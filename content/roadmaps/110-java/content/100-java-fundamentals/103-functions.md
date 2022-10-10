@@ -4,7 +4,7 @@ A method/function is a way to perform some task. Similarly, in programming like 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink badgeText='Read' href='https://www.javatpoint.com/method-in-java'>Methods/Functions in Java.</BadgeLink>
-<BadgeLink badgeText='Read' href='https://www.geeksforgeeks.org/methods-in-java/'>What are methods or functions in Java.</BadgeLink>
-<BadgeLink badgeText='Read' href='https://www.w3schools.com/java/java_methods.asp'>Learn Functions/Methods in Java</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/method-in-java'>Methods/Functions in Java.</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/methods-in-java/'>What are methods or functions in Java.</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/java/java_methods.asp'>Learn Functions/Methods in Java</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=vvanI8NRlSI'>Functions / Methods in Java</BadgeLink>
