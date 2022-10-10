@@ -4,4 +4,4 @@
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Equality'> Loosely Equality (==) Operator</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/comparison'>Comparsion - javascript.info</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/comparison'>Comparison - javascript.info</BadgeLink>
