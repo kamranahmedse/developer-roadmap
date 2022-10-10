@@ -13,7 +13,7 @@ export function TeamsBanner() {
             action: `Teams Form Redirect`,
             label: `Click Teams Footer Link`
           });
-        }} target={'_blank'} as={Link} href='https://forms.gle/6X2matbCmjmvYGGt6' _hover={{textDecoration: 'none', bg: 'gray.300'}}>Tell us what you Need</Button>
+        }} target={'_blank'} as={Link} href='https://forms.gle/6X2matbCmjmvYGGt6' _hover={{textDecoration: 'none', bg: 'gray.300'}}>Take a Survey</Button>
       </Container>
     </Box>
   );
