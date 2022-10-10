@@ -8,7 +8,7 @@ Solana is an open source project implementing a new, high-performance, permissio
 
 ### SOL
 Solana's native cryptocurrency is SOL. A SOL can be passed to nodes in a Solana cluster in exchange for running an on-chain program or validating its output. A Lamport is a fraction of SOL, this native token is helpful in making micropayments. 
-> 10^-9 lamports = 1 SOL
+> 10^-9 SOL = 1 Lamport
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://solana.com/news/getting-started-with-solana-development'>Beginner's Guide To Solana</BadgeLink>
