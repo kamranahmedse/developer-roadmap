@@ -1,0 +1,10 @@
+#Opertional errros
+
+Operational errors are largely predictable faults that can happen when an application is being run. 
+They could be external factors that interfere with programme execution rather than errors, which are not
+always the case. In these situations, it is possible to comprehend the entire consequences of the error and take the necessary action.
+some of the examples include
+An API request fails for some reason (e.g., the server is down or the rate limit exceeded).
+A database connection is lost, perhaps due to a faulty network connection.
+The OS cannot fulfill your request to open a file or write to it.
+The user sends invalid input to the server, such as an invalid phone number or email address.
