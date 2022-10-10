@@ -8,3 +8,4 @@ The popularity of Kubernetes has made it an increasingly important skill for the
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://kubernetes.io/'>Kubernetes Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Documentation' href='https://kubernetes.io/docs/home/'>Kubernetes Documentation</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=s_o8dwzRlu4'>Kubernetes Crash Course for Absolute Beginners</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=KVBON1lA9N8&list=PL9gnSGHSqcnqFSSCnmWYoK_4HkXs2mCM2&index=1'>Kubernetes Tutorial for Beginners | What is Kubernetes? Architecture Simplified!</BadgeLink>
