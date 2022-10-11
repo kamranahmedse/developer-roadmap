@@ -9,3 +9,5 @@ These images are designed for portability, allowing for full local testing of a 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.docker.com/resources/what-container/'>What is a Container?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz'>What are Containers?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/category/containers/'>Articles about Containers - The New Stack</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/deploy-a-container-stack-in-portainer-from-a-github-repository/'>Deploy a Container Stack in Portainer from a GitHub Repository</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/4-ways-to-optimize-your-workflows-with-docker-extensions/'>4 Ways to Optimize Your Workflows with Docker Extensions</BadgeLink>
