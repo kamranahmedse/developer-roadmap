@@ -1,4 +1,4 @@
-# Using apm
+# Using APM
 
 As much fun as it is to intercept your container requests with inspect and step through your code, you won’t have this option in production. This is why it makes a lot of sense to try and debug your application locally in the same way as you would in production.
 
