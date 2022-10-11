@@ -4,3 +4,4 @@ A network protocol is an established set of rules that determine how data is tra
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.comptia.org/content/guides/what-is-a-network-protocol'>What Is a Network Protocol, and How Does It Work?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/what-is-zero-trust-security/'>What Is Zero Trust Security?</BadgeLink>
