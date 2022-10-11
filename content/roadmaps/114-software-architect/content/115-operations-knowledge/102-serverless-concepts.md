@@ -1,5 +1,10 @@
-# Serverless concepts
+# Serverless Concepts
 
-A cloud-native development methodology called serverless enables developers to create and execute applications without having to worry about managing servers.
+Serverless is a cloud-native development model that allows developers to build and run applications without having to manage servers. 
 
-In serverless, servers still exist, but they are separated from the app development process. The routine tasks of setting up, maintaining, and scaling the server infrastructure are handled by a cloud provider. For deployment, developers only need to package their code in containers.
+There are still servers in serverless, but they are abstracted away from app development. A cloud provider handles the routine work of provisioning, maintaining, and scaling the server infrastructure. Developers can simply package their code in containers for deployment.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.redhat.com/en/topics/cloud-native-apps/what-is-serverless'>What is serverless?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cloudflare.com/learning/serverless/what-is-serverless/'>What is serverless computing?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/serverless/'>Serverless on AWS</BadgeLink>
