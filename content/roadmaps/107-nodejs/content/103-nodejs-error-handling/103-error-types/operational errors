@@ -1,0 +1,3 @@
+# Operational Errors
+
+Operational errors represent run-time problems experienced by correctly written programs. they are not really bugs but are problems attached to something else in our program. Examples of such errors can be a failure to connect to a database, failure to resolve hostname, request-timeout, invalid input from the user, and so on.
