@@ -15,16 +15,10 @@ require jq
 require gh
 require fzf
 
-# get the list of open pull requests
-prs=$(gh pr list --json number,title --limit 100 | jq -r '.[] | "\(.number) \(.title)"')
+prd="$(gh pr list --json 'number,title' | jq -r '.[]| [.number, .title] | @sh' | column -t -s"'" | fzf)"
+[ -z "$prd" ] && echo "No PR selected" && exit 0
 
-# select a pr
-pr=$(echo "$prs" | fzf --prompt="Select a PR: " --height=50% --reverse --preview="gh pr view {1} --json 'files' | jq -r '.files|map(.path)|.[]'")
+pr_id="$(echo "$prd" | awk '{print $1}')"
 
-# get the pr number
-pr_number=$(echo "$pr" | awk '{print $1}')
-
-[ -z "$pr_number" ] && echo "🛑 No PR selected" && exit 1
-
-echo "Checkout PR: $pr_number"
-gh pr checkout "$pr_number"
+gh pr view "$pr_id" --json "files" | jq -r '.files|map(.path)|.[]'
+gh pr checkout "$pr_id"
