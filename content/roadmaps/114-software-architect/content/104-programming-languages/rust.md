@@ -1,6 +1,11 @@
-#RUST
-A multi-paradigm, all-purpose programming language is called Rust. Performance, type safety, and concurrency are highlighted in Rust. Unlike other memory-safe 
-languages, Rust maintains memory safety—that is, that all references link to valid memory—without necessitating the employment of a garbage collector or reference
-counting. Rust's borrow checker keeps track of the object lifetime and variable scope of all references in a programme during compilation to guarantee memory safety
-and stop concurrent data races. Although functional programming structures are among the high-level capabilities offered by Rust, it is mostly used for systems 
-development.
+# Rust
+
+Rust is blazingly fast and memory-efficient: with no runtime or garbage collector, it can power performance-critical services, run on embedded devices, and easily integrate with other languages.
+
+Rust’s rich type system and ownership model guarantee memory-safety and thread-safety — enabling you to eliminate many classes of bugs at compile-time.
+
+Rust has great documentation, a friendly compiler with useful error messages, and top-notch tooling — an integrated package manager and build tool, smart multi-editor support with auto-completion and type inspections, an auto-formatter, and more.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.rust-lang.org/'>Rust: Official Website</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://doc.rust-lang.org/book/'>The Rust Programming Language - Book</BadgeLink>
