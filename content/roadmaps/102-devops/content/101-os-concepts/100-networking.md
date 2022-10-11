@@ -7,3 +7,4 @@ Begin by studying the [OSI Model](https://en.wikipedia.org/wiki/OSI_model). This
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/what-is/computer-networking/'>What is Computer Networking?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=dV8mjZd1OtU'>OSI Model Explained</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/hackers-guide-kubernetes-networking/'>A Hacker’s Guide to Kubernetes Networking</BadgeLink>
