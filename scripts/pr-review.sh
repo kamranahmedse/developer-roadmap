@@ -26,4 +26,5 @@ pr_number=$(echo "$pr" | awk '{print $1}')
 
 [ -z "$pr_number" ] && echo "🛑 No PR selected" && exit 1
 
+echo "Checkout PR: $pr_number"
 gh pr checkout "$pr_number"
