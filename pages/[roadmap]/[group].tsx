@@ -9,6 +9,7 @@ import React from 'react';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 import siteConfig from '../../content/site.json';
 import { EditContentPageLink } from '../../components/roadmap/edit-content-page-link';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -103,6 +104,7 @@ export default function RoadmapGroup(props: RoadmapProps) {
       </Container>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
