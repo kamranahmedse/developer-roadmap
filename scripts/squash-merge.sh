@@ -2,8 +2,6 @@
 
 set -e
 
-git reset --soft HEAD~$(git rev-list --count HEAD ^master)
+current_branch=$(git branch --show-current)
 git checkout master
-git add -A
-git commit -m "$1"
-
+gh pr merge "$current_branch" -s -t "$1"
