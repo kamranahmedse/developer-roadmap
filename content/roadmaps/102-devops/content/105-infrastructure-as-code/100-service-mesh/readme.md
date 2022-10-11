@@ -5,3 +5,4 @@ A service mesh, like the open source project Istio, is a way to control how diff
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.redhat.com/en/topics/microservices/what-is-a-service-mesh'>What's a service mesh?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/category/service-mesh/'>The latest news about service mesh (TNS)</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/how-to-handle-authorization-in-a-service-mesh/'>How to Handle Authorization in a Service Mesh</BadgeLink>
