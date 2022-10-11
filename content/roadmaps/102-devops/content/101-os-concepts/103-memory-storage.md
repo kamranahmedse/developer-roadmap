@@ -6,3 +6,4 @@ To achieve a degree of multiprogramming and proper utilization of memory, memory
 
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://dev.to/deepu105/demystifying-memory-management-in-modern-programming-languages-ddd'>Demystifying memory management in modern programming languages</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/memory-management-in-operating-system/'>Memory Management in Operating System</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://thenewstack.io/an-architects-guide-to-edge-storage/'>An Architect’s Guide to Edge Storage</BadgeLink>
