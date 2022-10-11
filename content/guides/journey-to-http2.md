@@ -71,7 +71,7 @@ Three-way handshake in its simplest form is that all the `TCP` connections begin
 - `SYN ACK` - Server acknowledges the request by sending an `ACK` packet back to the client which is made up of a random number, let's say `y` picked up by server and the number `x+1` where `x` is the number that was sent by the client
 - `ACK` - Client increments the number `y` received from the server and sends an `ACK` packet back with the number `y+1`
 
-Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be recieved in order to fulfill the request.
+Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be received in order to fulfill the request.
 
 ![](http://i.imgur.com/uERG2G2.png)
 
@@ -121,7 +121,7 @@ Google went ahead and started experimenting with alternative protocols to make t
 
 It was seen that if we keep increasing the bandwidth, the network performance increases in the beginning but a point comes when there is not much of a performance gain. But if you do the same with latency i.e. if we keep dropping the latency, there is a constant performance gain. This was the core idea for performance gain behind `SPDY`, decrease the latency to increase the network performance.
 
-> For those who don't know the difference, latency is the delay i.e. how long it takes for data to travel between the source and destination (measured in milliseconds) and bandwidth is the amount of data transfered per second (bits per second).
+> For those who don't know the difference, latency is the delay i.e. how long it takes for data to travel between the source and destination (measured in milliseconds) and bandwidth is the amount of data transferred per second (bits per second).
 
 The features of `SPDY` included, multiplexing, compression, prioritization, security etc. I am not going to get into the details of SPDY, as you will get the idea when we get into the nitty gritty of `HTTP/2` in the next section as I said `HTTP/2` is mostly inspired from SPDY.
 

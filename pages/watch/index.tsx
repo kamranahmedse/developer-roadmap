@@ -6,6 +6,7 @@ import { VideoGridItem } from '../../components/watch/video-grid-item';
 import { PageHeader } from '../../components/page-header';
 import { getAllVideos, VideoType } from '../../lib/video';
 import Helmet from '../../components/helmet';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type VideosProps = {
   videos: VideoType[]
@@ -42,6 +43,7 @@ export default function Watch(props: VideosProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
