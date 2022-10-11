@@ -4,6 +4,7 @@
   "private": true,
   "license": "BSD-4-Clause",
   "scripts": {
+    "review": "./scripts/pr-review.sh",
     "dev": "next",
     "serve:out": "serve out",
     "build": "./scripts/build.sh",
