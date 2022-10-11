@@ -1,6 +1,7 @@
-# Nodejs error handling
+# Error Handling
 
-What are errors in Node.js
-An error in Node.js is any instance of the `Error` object. 
+Error handling is a way to find bugs and solve them as quickly as humanly possible. The errors in Node.js can be either operation or programmer errors. Read the articles linked below to understand how to handle different types of errors in Node.js
 
-Error handling handles the runtime errors in the JavaScript
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://sematext.com/blog/node-js-error-handling'>Node.js Error Handling Best Practices</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/error-handling-node-js/'>Error handling in Node.js</BadgeLink>
