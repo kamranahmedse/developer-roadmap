@@ -5,3 +5,4 @@ To run a script called "myScript" -- run `npm run myScript` and it'll execute th
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/introduction-to-npm-scripts/'>Introduction to NPM Scripts</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://docs.npmjs.com/downloading-and-installing-packages-locally'>Running Scripts</BadgeLink>
