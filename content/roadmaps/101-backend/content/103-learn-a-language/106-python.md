@@ -12,6 +12,7 @@ Python is a well known programming language which is both a strongly typed and a
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.python.org/'>Python Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.python.org/about/gettingstarted/'>Python Getting Started</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://automatetheboringstuff.com/'>Automate the Boring Stuff</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/how-to-learn-python/'>FreeCodeCamp.org - How to Learn Python ? </BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://pythonprinciples.com/'>Python principles - Python basics</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.w3schools.com/python/'>W3Schools - Python Tutorial </BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://ehmatthes.github.io/pcc/'>Python Crash Course</BadgeLink>
