@@ -17,5 +17,3 @@ Python is a well known programming language which is both a strongly typed and a
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.w3schools.com/python/'>W3Schools - Python Tutorial </BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://ehmatthes.github.io/pcc/'>Python Crash Course</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.codecademy.com/learn/learn-python'>Codecademy - Learn Python 2</BadgeLink>
-
-
