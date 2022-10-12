@@ -14252,7 +14252,7 @@
           "x": "959",
           "y": "2932",
           "properties": {
-            "controlName": "103-scalability:horizontal-vertial-scaling"
+            "controlName": "103-scalability:horizontal-vertical-scaling"
           },
           "children": {
             "controls": {
