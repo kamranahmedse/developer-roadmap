@@ -1,6 +1,7 @@
 # Chalk
 
-Chalk is used to style terminal strings.
+Chalk is a clean and focused library used to do string styling in your terminal applications. With it you can print different styled messages to your console like changing font colors, font boldness, font opacity and also the background of any message printed on your console.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official GitHub Repository' href='https://github.com/chalk/chalk'>Chalk GitHub Repository</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://github.com/chalk/chalk#readme'>Chalk Docs</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.positronx.io/style-command-line-output-with-chalk-library-in-node-js/'>Style Command Line Output with Chalk Package in Node.js</BadgeLink>
