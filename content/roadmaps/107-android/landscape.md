@@ -30,6 +30,9 @@ We have also listed down some free resources which you can use for the items lis
 * [Data Structures and Algorithms](https://www.studytonight.com/data-structures/introduction-to-data-structures). Also [check this](https://www.tutorialspoint.com/data_structures_algorithms/index.htm).
 * [Kotlin DataStructures](https://kotlinlang.org/docs/reference/collections-overview.html)
 * [Algorithms and DataStructures in Kotlin](https://github.com/bmaslakov/kotlin-algorithm-club)
+* [Gradle](https://docs.gradle.org/current/userguide/what_is_gradle.html)
+* [Getting started with Gradle](https://docs.gradle.org/current/userguide/getting_started.html)
+Note: Android Studio comes with a working installation of Gradle, so you don’t need to install Gradle separately in that case.
 
 ## Version Control Systems
 Version control systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available but [Git](https://git-scm.com/) is the most common one these days.
@@ -66,9 +69,17 @@ To learn more about the items listed in the image above, here are the links to t
 * [Memory Management Overview](https://developer.android.com/topic/performance/memory-overview)
 * [Diving deeper into context-oriented programming in Kotlin](https://proandroiddev.com/diving-deeper-into-context-oriented-programming-in-kotlin-3ecb4ec38814)  
 
-I would highly recommend watching [this free course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012) from google on Developing Android Apps with Kotlin. Also, here are some of the resources to learn more about the topics listed above.
+## Jetpack Compose
+Jetpack Compose is Android’s modern toolkit for building native UI. It simplifies and accelerates UI development on Android. Quickly bring your app to life with less code, powerful tools, and intuitive Kotlin APIs.
+* [Jetpack Compose](https://developer.android.com/jetpack/compose/documentation)
+* [Material Design 3](https://m3.material.io/)
+* [Getting started with Material Components](https://m3.material.io/libraries/mdc-android/getting-started)
+
+## Free Resources
+I would highly recommend watching [this free course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012) from google on Developing Android Apps with Kotlin. You may also get started with this [free course](https://developer.android.com/courses/android-basics-kotlin/course) on the android developer's page, concepts are taught with the help of code labs, projects and quizzes and you also earn badges as you learn that appear on your google developer profile. Also, here are some of the resources to learn more about the topics listed above.
 
 * [Developing Android Apps with Kotlin](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
+* [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
 * [Android Developer Guides](https://developer.android.com/guide)
 * [Raywenderlich](https://www.raywenderlich.com)
 
