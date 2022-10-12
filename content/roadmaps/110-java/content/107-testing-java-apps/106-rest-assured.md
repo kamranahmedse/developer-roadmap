@@ -1,6 +1,6 @@
 # Rest assured
 
-Testing and validating REST services in Java is harder than in dynamic languages such as Ruby and Groovy. REST Assured brings the simplicity of using these languages into the Java domain.
+REST Assured is a java library used for testing and validating the Restful Web Services. It supports Behavior-Driven Development(BDD) syntax like Given, When, and Then notations. It helps us to integrate with testing frameworks like Junit or TestNG. The Request URL is the unique address used to make a request.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Site' href='https://rest-assured.io/'>Rest-assured</BadgeLink>

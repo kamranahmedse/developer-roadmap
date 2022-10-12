@@ -1,6 +1,8 @@
 # Testng
 
-TestNG is a testing framework inspired from JUnit and NUnit but introducing some new functionalities that make it more powerful and easier to use.
+TestNG tutorial provides basic and advanced concepts of TestNG framework. Our TestNG tutorial is designed for beginners and professionals.
+
+TestNG is one of the most widely used open source testing framework used in automation testing suite.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Site' href='https://testng.org'>Testng</BadgeLink>

@@ -1,6 +1,18 @@
 # Datastructures
 
-As the name indicates itself, a **Data Structure** is a way of organizing the data in the **memory** so that it can be used efficiently. Some common data structures are array, linked list, stack, hashtable, queue, tree, heap, and graph.
+As the name indicates itself, a **Data Structure** is a way of organizing the data in the **memory** so that it can be used efficiently.
+
+Here is the list of some of the common types of data structures in Java:
+
+- Array
+- Linked List
+- Stack
+- Queue
+- Binary Tree
+- Binary Search Tree
+- Heap
+- Hashing
+- Graph
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/data-structures'>What are Data Structures?</BadgeLink>

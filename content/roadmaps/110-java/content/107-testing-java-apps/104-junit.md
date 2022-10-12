@@ -1,6 +1,6 @@
 # JUnit
 
-JUnit is a testing framework for Java.
+JUnit is an open source Unit Testing Framework for JAVA. It is useful for Java Developers to write and run repeatable tests. Erich Gamma and Kent Beck initially develop it. It is an instance of xUnit architecture. As the name implies, it is used for Unit Testing of a small chunk of code.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Site' href='https://junit.org/junit5/docs/current/user-guide/'>Official Documentation</BadgeLink>

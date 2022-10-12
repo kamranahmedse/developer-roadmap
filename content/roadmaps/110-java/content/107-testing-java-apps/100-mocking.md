@@ -1,6 +1,6 @@
 # Mocking
 
-Mocking removes external dependencies from a unit test to create a sense of an entire controlled environment. The traditional method of mocks involves mocking all other classes that interact with the class we want to test. The common targets for mocking are:
+Mockito is a mocking framework, JAVA-based library that is used for effective unit testing of JAVA applications. Mockito is used to mock interfaces so that a dummy functionality can be added to a mock interface that can be used in unit testing. The common targets for mocking are:
 
 - Database connections
 - Web services

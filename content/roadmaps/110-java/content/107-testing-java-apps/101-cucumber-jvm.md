@@ -1,6 +1,6 @@
 # Cucumber JVM
 
-Cucumber is a testing tool that supports Behavior Driven Development (BDD). It offers a way to write tests that anybody can understand, regardless of their technical knowledge.
+Cucumber-JVM is the official port for Java. Every Gherkin step is “glued” to a step definition method that executes the step. The English text of a step is glued using annotations and regular expressions. Cucumber-JVM integrates nicely with other testing packages. Anything that can be done with Java can be handled by Cucumber-JVM. Cucumber-JVM is ideal for black-box, above-unit, functional tests.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Site' href='https://cucumber.io/'>Cucumber</BadgeLink>

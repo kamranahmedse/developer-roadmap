@@ -2,7 +2,9 @@
 
 Learn how to work with files i.e., reading, writing and deleting, files and folders, etc. Also, learn how to make API calls, parse the incoming response, and so on.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>   
+APIs are important software components bundled with the JDK. APIs in Java include classes, interfaces, and user Interfaces. They enable developers to integrate various applications and websites and offer real-time information.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>  
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.marcobehler.com/guides/java-files'>How To Work With Files In Java</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-file-class'>Java File Class</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/file-class-in-java/'>Java.io.File Class in Java</BadgeLink>
