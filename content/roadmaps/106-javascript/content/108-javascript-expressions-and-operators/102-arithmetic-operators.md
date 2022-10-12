@@ -1,6 +1,6 @@
 # Arithmetic operators
 
-The Arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and remainder perations.
+The Arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and remainder operations.
 
 Arithmetic operators in JavaScript are as follows:
 - `+` (Addition)
