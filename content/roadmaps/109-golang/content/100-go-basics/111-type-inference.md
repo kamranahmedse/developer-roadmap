@@ -1,6 +1,6 @@
 # Type Inference
 
-Type inference gives go the capability to detect the type of a value without being explicitly indicated , hence the posibility to declare variables without providing its type at first 
+Type inference gives go the capability to detect the type of a value without being explicitly indicated , hence the possibility to declare variables without providing its type at first 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.callicoder.com/golang-variables-zero-values-type-inference/#type-inference'>Go Variables: Type Inference</BadgeLink>

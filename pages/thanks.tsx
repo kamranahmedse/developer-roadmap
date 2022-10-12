@@ -17,6 +17,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { Footer } from '../components/footer';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
+import { TeamsBanner } from '../components/teams-banner';
 
 export default function Thanks() {
   return (
@@ -244,6 +245,7 @@ export default function Thanks() {
         </Container>
       </Box>
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
