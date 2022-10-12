@@ -6,3 +6,5 @@ Specifically, CI/CD introduces ongoing automation and continuous monitoring thro
 
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment'>CI vs CD</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.redhat.com/en/topics/devops/what-is-ci-cd'>What is CI/CD?</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://semaphoreci.com/blog/cicd-pipeline'>CI/CD Pipeline: A Gentle Introduction</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=scEDHsr3APg'>DevOps CI/CD Explained in 100 Seconds</BadgeLink>
