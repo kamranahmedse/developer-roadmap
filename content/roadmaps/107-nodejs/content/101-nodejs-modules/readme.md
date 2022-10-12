@@ -4,7 +4,7 @@ We split our code into different files to maintain, organize and reuse code when
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/modules.html#modules-commonjs-modules'>Modules: CommonJS modules</BadgeLink>
-<BadgeLink badgeText='yellow' colorScheme="yellow" href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs. ES modules in Node.js</BadgeLink>
+<BadgeLink colorScheme="yellow" badgeText='Read' href='https://blog.logrocket.com/commonjs-vs-es-modules-node-js/'>CommonJS vs. ES modules in Node.js</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/node-js-modules/'>More about modules</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/modular-programming-nodejs-npm-modules/'>Using Modules</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=9Amxzvq5LY8&'>Modules in Node.js</BadgeLink>
