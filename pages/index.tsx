@@ -12,6 +12,7 @@ import { getAllVideos, VideoType } from '../lib/video';
 import Helmet from '../components/helmet';
 import { PageWrapper } from '../components/page-wrapper';
 import { FeaturedRoadmapsList } from '../components/home/featured-roadmaps-list';
+import { TeamsBanner } from '../components/teams-banner';
 
 type HomeProps = {
   roadmaps: RoadmapType[];
@@ -121,6 +122,7 @@ export default function Home(props: HomeProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </PageWrapper>
   );
