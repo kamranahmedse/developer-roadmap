@@ -7,6 +7,7 @@ import MdRenderer from '../../components/md-renderer';
 import { getAllGuides, getGuideById, GuideType } from '../../lib/guide';
 import siteConfig from '../../content/site.json';
 import Helmet from '../../components/helmet';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type GuideProps = {
   guide: GuideType;
@@ -46,6 +47,7 @@ export default function Guide(props: GuideProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

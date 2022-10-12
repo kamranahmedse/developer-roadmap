@@ -5,6 +5,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
 import Helmet from '../components/helmet';
+import { TeamsBanner } from '../components/teams-banner';
 
 export default function Terms() {
   const TermsContent = require(`../content/pages/terms.md`).default;
@@ -22,6 +23,7 @@ export default function Terms() {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

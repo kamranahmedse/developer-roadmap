@@ -6,6 +6,7 @@ import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import MdRenderer from '../../components/md-renderer';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -47,6 +48,7 @@ export default function Roadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
