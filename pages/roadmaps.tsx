@@ -7,6 +7,7 @@ import { RoadmapGridItem } from '../components/roadmap/roadmap-grid-item';
 import { getAllRoadmaps, RoadmapType } from '../lib/roadmap';
 import Helmet from '../components/helmet';
 import { NewAlertBanner } from '../components/roadmap/new-alert-banner';
+import { TeamsBanner } from '../components/teams-banner';
 
 type RoadmapsProps = {
   roadmaps: RoadmapType[];
@@ -46,6 +47,7 @@ export default function Roadmaps(props: RoadmapsProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
