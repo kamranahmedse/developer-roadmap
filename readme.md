@@ -48,7 +48,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
-
+- [Apple Roadmap](https://www.notebookcheck.net/Analyst-outlines-Apple-iPhone-display-roadmap-until-2026-as-increased-iPhone-14-Pro-and-iPhone-14-Pro-Max-display-sizes-also-detailed.618734.0.html)
 ![](https://i.imgur.com/waxVImv.png)
 
 If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@kamranahmedse](https://twitter.com/kamranahmedse).
