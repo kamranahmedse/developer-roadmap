@@ -51,7 +51,7 @@ be:
 * Becoming a sponsor
 
 Just make sure
-to [follow the contribution guidelines](https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing) when you
+to [follow the contribution guidelines](https://github.com/kamranahmedse/developer-roadmap/tree/master/contributing.md) when you
 decide to contribute.
 
 ## Can I redistribute the content?
