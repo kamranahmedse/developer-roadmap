@@ -5,3 +5,4 @@ Espresso is a native testing framework for Android to write reliable UI tests. G
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://developer.android.com/training/testing/espresso#kotlin'>Official Documentation</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/espresso_testing/index.htm'>Espresso Testing Tutorial</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/android/testing-samples'>Espresso Code Samples on Github</BadgeLink>
