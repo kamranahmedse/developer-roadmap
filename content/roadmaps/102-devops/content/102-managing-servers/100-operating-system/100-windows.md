@@ -1,7 +1,6 @@
 # Windows
 
-Microsoft Windows is a family of proprietary Operating Systems that is very popular worldwide. It is mainly focused on graphical interfaces and being general purpose it runs all kinds of software.
+Windows is a graphical user interface (GUI) based operating system developed by Microsoft. It is a hybrid kernel-based proprietary operating system. According to a survey, till April 2022, windows is the most popular operating system in the world with a 75% market share.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Official Website' colorScheme='blue' href='https://www.microsoft.com/en-us/windows'>Microsoft Windows Website</BadgeLink>
-<BadgeLink badgeText='Official Support' colorScheme='blue' href='https://support.microsoft.com/en-us/windows'>Microsoft Official Support site</BadgeLink>
+<BadgeLink badgeText='Official Website' colorScheme='blue' href='http://microsoft.com/windows'>Windows Official Site</BadgeLink>
+<BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://learn.microsoft.com/en-us/windows/'>Windows Documentation for Developers</BadgeLink>

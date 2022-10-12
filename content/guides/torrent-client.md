@@ -475,7 +475,7 @@ Files, pieces, and piece hashes aren't the full story—we can go further by bre
 A peer is supposed to sever the connection if they receive a request for a block larger than 16KB. However, based on my experience, they're often perfectly happy to satisfy requests up to 128KB. I only got moderate gains in overall speed with larger block sizes, so it's probably better to stick with the spec.
 
 #### Pipelining
-Network round-trips are expensive, and requesting each block one by one will absolutely tank the performance of our download. Therefore, it's important to **pipeline** our requests such that we keep up a constant pressure of some number of unfulfilled requests. This can increase the throughput of our connection by an order of magnitude.
+Network round-trips are expensive, and requesting each block one by one will absolutely thank the performance of our download. Therefore, it's important to **pipeline** our requests such that we keep up a constant pressure of some number of unfulfilled requests. This can increase the throughput of our connection by an order of magnitude.
 
 ![Two email threads simulating peer connections. The thread on the left shows a request followed by a reply, repeated three times. The thread on the left sends three requests, and receives three replies in quick succession.](/guides/torrent-client/pipelining.png)
 
