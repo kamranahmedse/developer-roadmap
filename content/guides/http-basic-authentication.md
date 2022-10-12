@@ -20,7 +20,7 @@ When the browser first requests the server, the server tries to check the availa
 
 ```text
 401 Unauthorized
-WWWW-Authenticate: Basic realm='user_pages'
+WWW-Authenticate: Basic realm='user_pages'
 ```
 
 If you notice the response, we have an additional parameter called `realm`, which is just a value assigned to a group of pages that share the same credentials.
