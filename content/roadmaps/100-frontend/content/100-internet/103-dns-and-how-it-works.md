@@ -5,6 +5,7 @@ The Domain Name System (DNS) is the phonebook of the Internet. Humans access inf
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/'>What is DNS?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://messwithdns.net/'>Mess with DNS - DNS Playground</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://howdns.works/'>How DNS works (comic)</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=Wj0od2ag5sk'>DNS and How does it Work?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=7lxgpKh_fRY'>DNS Records</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=e48AyJOA9W8'>When to add glue records to DNS settings</BadgeLink>
