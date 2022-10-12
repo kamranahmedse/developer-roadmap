@@ -5,6 +5,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
 import Helmet from '../components/helmet';
+import { TeamsBanner } from '../components/teams-banner';
 
 function AboutHeader() {
   return (
@@ -64,6 +65,7 @@ export default function About() {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

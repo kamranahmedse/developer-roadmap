@@ -1,17 +1,9 @@
 # Cypress
 
-Cypress is a next generation front end testing tool built for the modern web. We address the key pain points developers and QA engineers face when testing modern applications.
+Cypress framework is a JavaScript-based end-to-end testing framework built on top of Mocha – a feature-rich JavaScript test framework running on and in the browser, making asynchronous testing simple and convenient. It also uses a BDD/TDD assertion library and a browser to pair with any JavaScript testing framework.
 
-Cypress is most often compared to Selenium; however Cypress is both fundamentally and architecturally different. Cypress is not constrained by the same restrictions as Selenium.
-
-This enables you to write faster, easier and more reliable tests.
-
-Cypress can be used to write several different types of tests. This can provide even more confidence that your application under test is working as intended.
-- End-to-end
-- Component
-- API
-
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.cypress.io/'>Cypress Website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://docs.cypress.io/guides/overview/why-cypress'>Cypress documentation</BadgeLink>
+<ResourceGroupTitle>Free Resources</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.cypress.io/'>Official Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.cypress.io/guides/overview/why-cypress#Other'>Official Documentation</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cypress.io/how-it-works'>How it works</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=7N63cMKosIE'>Cypress End-to-End Testing</BadgeLink>
