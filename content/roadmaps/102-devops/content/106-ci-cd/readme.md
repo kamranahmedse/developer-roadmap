@@ -1,7 +1,10 @@
 # CI/CD
 
-CI/CD is a major set of practices used in devops which aims at frequently delivering service to customers by automating the stages involved during development. CI/CD combines Continuos Integration and Continuos Delivery and automates the manual labour generally involved traditionally in pushing code from commit to production like building, testing and deploying. As a result, developers can push changes to the codebase which will then be pulled by the automation server, tested automatically and released for deployment. Automated pipelines remove errors that might be made manually, provide standardized feedback loops to developers and enable fast product iterations in a single environment. This ensures faster and more efficient delivery of service to clients. 
+CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment. CI/CD is a solution to the problems integrating new code can cause for development and operations teams.
 
+Specifically, CI/CD introduces ongoing automation and continuous monitoring throughout the lifecycle of apps, from integration and testing phases to delivery and deployment. Taken together, these connected practices are often referred to as a "CI/CD pipeline" and are supported by development and operations teams working together in an agile way with either a DevOps or site reliability engineering (SRE) approach.
+
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment'>CI vs CD</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.redhat.com/en/topics/devops/what-is-ci-cd'>What is CI/CD?</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://semaphoreci.com/blog/cicd-pipeline'>CI/CD Pipeline: A Gentle Introduction</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=scEDHsr3APg'>DevOps CI/CD Explained in 100 Seconds</BadgeLink>
-
