@@ -1,4 +1,5 @@
 # Building for Scale
+
 Speaking in general terms, scalability is the ability of a system to handle a growing amount of work by adding resources to it.  
 
 A software that was conceived with a scalable architecture in mind, is a system that will support higher workloads without any fundamental changes to it, but don't be fooled, this isn't magic. You'll only get so far with smart thinking without adding more sources to it.  
