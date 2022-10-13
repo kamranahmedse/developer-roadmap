@@ -5,6 +5,7 @@ import { OpensourceBanner } from '../components/opensource-banner';
 import { Footer } from '../components/footer';
 import MdRenderer from '../components/md-renderer';
 import Helmet from '../components/helmet';
+import { TeamsBanner } from '../components/teams-banner';
 
 export default function RoadmapPDF() {
   const PDFList = require(`../content/pages/pdfs.md`).default;
@@ -22,6 +23,7 @@ export default function RoadmapPDF() {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

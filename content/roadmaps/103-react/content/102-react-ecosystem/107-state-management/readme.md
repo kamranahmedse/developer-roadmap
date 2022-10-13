@@ -4,3 +4,4 @@ Application state management is the process of maintaining knowledge of an appli
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.techtarget.com/searchapparchitecture/definition/state-management'>What is State Management?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-state/'>Overview of State in React</BadgeLink>

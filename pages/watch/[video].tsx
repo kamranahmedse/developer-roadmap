@@ -6,6 +6,7 @@ import { ContentPageHeader } from '../../components/content-page-header';
 import MdRenderer from '../../components/md-renderer';
 import { getAllVideos, getVideoById, VideoType } from '../../lib/video';
 import Helmet from '../../components/helmet';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type VideoProps = {
   video: VideoType;
@@ -48,6 +49,7 @@ export default function Video(props: VideoProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
