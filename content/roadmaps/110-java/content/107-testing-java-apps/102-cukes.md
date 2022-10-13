@@ -1,6 +1,6 @@
 # Cukes
 
-Cukes is the name of the archived version of Cucumber-JVM. io.cucumber and info.cukes are both Maven group ids. info.cukes were for the Cucumber version till 1.2.5. The latest version is io.cucumber starting from 2.0.0 and currently being 7.8.1. Older Cucumber-JVM 1.x versions you can find under Maven Group ID info.cukes.
+Cukes is the name of the archived version of Cucumber-JVM. io.cucumber and info.cukes are both Maven group IDs. info.cukes were for the Cucumber version till 1.2.5. The latest version is io.cucumber starting from 2.0.0 and currently being 7.8.1. Older Cucumber-JVM 1.x versions you can find under Maven Group ID info.cukes.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Doc' href='https://cucumber.io/blog/open-source/announcing-cucumber-jvm-2-0-0/'>Announcing Cucumber-JVM v2.0.0</BadgeLink>
