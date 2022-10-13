@@ -4,5 +4,5 @@ JSON (JavaScript Object Notation) is a simple data interchange format. Syntactic
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://go.dev/blog/json'>JSON</BadgeLink>
-<BadgeLink badgeText='Read' href='https://www.sohamkamani.com/golang/json/'>Guide to JSON in Golang</BadgeLink>
-<BadgeLink badgeText='Tool' href='https://mholt.github.io/json-to-go/'>JSON to GO</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.sohamkamani.com/golang/json/'>Guide to JSON in Golang</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Tool' href='https://mholt.github.io/json-to-go/'>JSON to GO</BadgeLink>
