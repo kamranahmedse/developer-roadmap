@@ -1,8 +1,11 @@
 # Auth strategies
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
 ### JTW
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://auth0.com/resources/ebooks/jwt-handbook'>JSON Web Token - Handbook</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=UBUNrFtufWo'>Session vs Token Authentication in 100 Seconds
+</BadgeLink>
 
 ### SAML
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=i8wFExDSZv0'>SAML Overview</BadgeLink>

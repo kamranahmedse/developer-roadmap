@@ -4,4 +4,5 @@ Functional components are some of the more common components that will come acro
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/components-and-props.html#function-and-class-components'>Components and Props</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/reactjs-functional-components/'>ReactJS Functional Components</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/reactjs-functional-components/'>Functional Components in React (1)</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-function-component/'>Functional Components in React (2)</BadgeLink>
