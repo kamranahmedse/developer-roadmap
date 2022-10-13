@@ -6,6 +6,4 @@ Conditional rendering in React works the same way conditions work in JavaScript.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/conditional-rendering.html'>Conditional Rendering</BadgeLink>
-
-
-
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/conditional-rendering-react/'>Different techniques for conditional rendering in React</BadgeLink>
