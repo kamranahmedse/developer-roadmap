@@ -1,0 +1,54 @@
+                                                             Backend developer roadmap: (2 months)
+*Choose and learn a language:-(choose any 1)
+1. Javascript
+2. Java
+3. PHP
+4. Python
+5. Ruby
+6. Go
+7. Rust
+8. Node.JS
+
+*APIs
+1. REST
+2. JSON
+3. SOAP
+4. GSON
+
+*Caching
+1. CDN
+2. Server Side
+3. Client-Side
+4. Redis
+
+*Frameworks (choose any 1)
+1. Django
+2. ExpressJS
+3. Ruby on Rails
+
+*Databases
+
+-RELATIONAL- (choose any 1)
+1. PostgreSQL
+2. MYSQL
+3. ORACLE
+4. MariaDB
+
+-NON-RELATIONAL- (choose any 1)
+1. MongoDB
+2. GraphQL
+3. DynamoDB
+
+*DEVOPS
+GITLAB CI
+JENKINS
+AZURE DEVOPS
+AWS
+GOOGLE CLOUDS
+AZURE,LINODE
+HEROKU
+LOAD BALANCER
+FIREWALL
+
+
+
