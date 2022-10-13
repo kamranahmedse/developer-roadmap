@@ -6,3 +6,4 @@ In a typical React application, data is passed top-down (parent to child) via pr
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/context.html'>Official React Context Docs</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-context/'>React Context: Why, How, and When</BadgeLink>
