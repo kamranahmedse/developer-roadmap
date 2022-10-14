@@ -5,3 +5,4 @@ Thanks to its popularity, React has been enriched by a vast ecosystem of plugins
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Awesome React' href='https://github.com/enaqx/awesome-react'>Awesome React</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Awesome React Components' href='https://github.com/brillout/awesome-react-components'>Awesome React Components</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-libraries/'>Popular React Libraries</BadgeLink>
