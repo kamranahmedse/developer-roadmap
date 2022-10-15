@@ -71,6 +71,26 @@
     - SQL Query
   - What is Index in DBMS & its types?
 - Relational Database Design
+  - Features of Good Relational Design
+  - What is Functional Dependency?
+    - Types
+      - Trivial
+      - Non-Trivial
+      - Fully-Functional Dependency
+      - Partial
+      - Transitive
+  - What is Normalization?
+  - Purpose of Normalization?
+  - What are 3 anomalies resolved by normalization?
+  - Types of Normalization
+    - 1NF
+      - Purpose and Steps to convert?
+    - 2NF
+      - Purpose and Steps to convert?
+    - 3NF
+      - Purpose and Steps to convert?
+    - BCNF
+      - Purpose and Steps to convert?
 - Storage and File Structure
 - Transaction Management
 - DeadLock
