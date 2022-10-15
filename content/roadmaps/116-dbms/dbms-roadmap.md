@@ -92,6 +92,8 @@
     - BCNF
       - Purpose and Steps to convert?
 - Storage and File Structure
+  - Storage System
+  - File Structure
 - Transaction Management
 - DeadLock
 - Must Do
