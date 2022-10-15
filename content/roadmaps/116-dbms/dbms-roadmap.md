@@ -119,4 +119,20 @@
       - Exclusive Lock
     - 2-Phase Locking Protocol [IMP]
 - DeadLock
-- Must Do
+  - What is a DeadLock?
+  - DeadLock Detection
+  - DeadLock Prevention
+    - Mutual Exclusion
+    - Hold and Wait
+    - No PreEmption
+    - Circular wait
+  - Other Techniques to prevent DeadLock
+    - use Timestamp
+      - Wait-Die Scheme
+      - Wound-Wait Scheme
+      - Timeout Based Scheme
+  - What is Starvation and its reason?
+  - DeadLock Recovery
+    - Selection of Victim
+    - Rollback
+    - Starvation
