@@ -95,5 +95,28 @@
   - Storage System
   - File Structure
 - Transaction Management
+  - What is a transaction?
+    - State of Transaction
+  - IMP terms
+    - Commit
+    - Rollback
+    - Savepoint
+  - ACID Properties
+  - How to implement Atomicity in Transactions?
+  - Concurrent Transaction?
+  - Schedule
+    - Types
+      - Serial
+      - Complete
+      - Recoverable
+      - Cascadeless
+      - Strict
+    - What is Conflict Operation?
+      - How to find whether Schedules are conflicting or not?
+  - Concurrency Control
+    - Purpose
+      - Shared Lock
+      - Exclusive Lock
+    - 2-Phase Locking Protocol [IMP]
 - DeadLock
 - Must Do
