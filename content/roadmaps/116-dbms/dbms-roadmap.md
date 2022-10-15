@@ -22,6 +22,54 @@
   - 3 level of Data Abstraction
   - What is Referential Integrity
 - RDBMS
+  - What is RDBMS & how it is stored in memory?
+  - What is the meaning of word `Relational` in RDBMS?
+  - Degree of Relation
+    - 1:1
+    - 1:M
+    - M:M
+  - Keys
+    - Primary Key
+    - Foreign Key
+    - Candidate Key
+    - Composite Key
+    - Alternate Key
+    - Super Key
+    - Secondary Key
+  - Database Schema
+    - Physical Database Schema
+    - Logical Database Schema
+  - Schema Diagrams
+    - Relational Model
+    - ER Diagram
+      - ER to Relational Model conversion
+  - Relational Operations
+    - Select
+    - Project
+    - Union
+    - Set Different
+    - Cartesian Product
+    - Rename
+  - SQL
+    - What is SQL?
+    - Difference between SQL and MySQL
+    - Important Keywords
+    - Types of JOIN
+      - Inner Join
+      - Left Join
+      - Right Join
+      - Full Join
+      - Self Join
+    - View
+    - Trigger
+    - SQL Injection
+    - SQL Privileges
+    - Delete vs Truncate
+    - Unique key vs Primary key
+    - Clustered vs Non-Clustered
+    - Cursor
+    - SQL Query
+  - What is Index in DBMS & its types?
 - Relational Database Design
 - Storage and File Structure
 - Transaction Management
