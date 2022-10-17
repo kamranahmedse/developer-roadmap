@@ -71,7 +71,7 @@ Three-way handshake in its simplest form is that all the `TCP` connections begin
 - `SYN ACK` - Server acknowledges the request by sending an `ACK` packet back to the client which is made up of a random number, let's say `y` picked up by server and the number `x+1` where `x` is the number that was sent by the client
 - `ACK` - Client increments the number `y` received from the server and sends an `ACK` packet back with the number `y+1`
 
-Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be recieved in order to fulfill the request.
+Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be received in order to fulfill the request.
 
 ![](http://i.imgur.com/uERG2G2.png)
 
@@ -89,7 +89,7 @@ After merely 3 years of `HTTP/1.0`, the next version i.e. `HTTP/1.1` was release
 
 - **Hostname Identification** In `HTTP/1.0` `Host` header wasn't required but `HTTP/1.1` made it required.
 
-- **Persistent Connections** As discussed above, in `HTTP/1.0` there was only one request per connection and the connection was closed as soon as the request was fulfilled which resulted in accute performance hit and latency problems. `HTTP/1.1` introduced the persistent connections i.e. **connections weren't closed by default** and were kept open which allowed multiple sequential requests. To close the connections, the header `Connection: close` had to be available on the request. Clients usually send this header in the last request to safely close the connection.
+- **Persistent Connections** As discussed above, in `HTTP/1.0` there was only one request per connection and the connection was closed as soon as the request was fulfilled which resulted in acute performance hit and latency problems. `HTTP/1.1` introduced the persistent connections i.e. **connections weren't closed by default** and were kept open which allowed multiple sequential requests. To close the connections, the header `Connection: close` had to be available on the request. Clients usually send this header in the last request to safely close the connection.
 
 - **Pipelining** It also introduced the support for pipelining, where the client could send multiple requests to the server without waiting for the response from server on the same connection and server had to send the response in the same sequence in which requests were received. But how does the client know that this is the point where first response download completes and the content for next response starts, you may ask! Well, to solve this, there must be `Content-Length` header present which clients can use to identify where the response ends and it can start waiting for the next response.
 
@@ -111,7 +111,7 @@ After merely 3 years of `HTTP/1.0`, the next version i.e. `HTTP/1.1` was release
 
 I am not going to dwell about all the `HTTP/1.1` features in this post as it is a topic in itself and you can already find a lot about it. The one such document that I would recommend you to read is [Key differences between `HTTP/1.0` and HTTP/1.1](http://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf) and here is the link to [original RFC](https://tools.ietf.org/html/rfc2616) for the overachievers.
 
-`HTTP/1.1` was introduced in 1999 and it had been a standard for many years. Although, it improved alot over its predecessor; with the web changing everyday, it started to show its age. Loading a web page these days is more resource-intensive than it ever was. A simple webpage these days has to open more than 30 connections. Well `HTTP/1.1` has persistent connections, then why so many connections? you say! The reason is, in `HTTP/1.1` it can only have one outstanding connection at any moment of time. `HTTP/1.1` tried to fix this by introducing pipelining but it didn't completely address the issue because of the **head-of-line blocking** where a slow or heavy request may block the requests behind and once a request gets stuck in a pipeline, it will have to wait for the next requests to be fulfilled. To overcome these shortcomings of `HTTP/1.1`, the developers started implementing the workarounds, for example use of spritesheets, encoded images in CSS, single humungous CSS/Javascript files, [domain sharding](https://www.maxcdn.com/one/visual-glossary/domain-sharding-2/) etc.
+`HTTP/1.1` was introduced in 1999 and it had been a standard for many years. Although, it improved alot over its predecessor; with the web changing everyday, it started to show its age. Loading a web page these days is more resource-intensive than it ever was. A simple webpage these days has to open more than 30 connections. Well `HTTP/1.1` has persistent connections, then why so many connections? you say! The reason is, in `HTTP/1.1` it can only have one outstanding connection at any moment of time. `HTTP/1.1` tried to fix this by introducing pipelining but it didn't completely address the issue because of the **head-of-line blocking** where a slow or heavy request may block the requests behind and once a request gets stuck in a pipeline, it will have to wait for the next requests to be fulfilled. To overcome these shortcomings of `HTTP/1.1`, the developers started implementing the workarounds, for example use of spritesheets, encoded images in CSS, single humongous CSS/Javascript files, [domain sharding](https://www.maxcdn.com/one/visual-glossary/domain-sharding-2/) etc.
 
 ### SPDY - 2009
 
@@ -121,7 +121,7 @@ Google went ahead and started experimenting with alternative protocols to make t
 
 It was seen that if we keep increasing the bandwidth, the network performance increases in the beginning but a point comes when there is not much of a performance gain. But if you do the same with latency i.e. if we keep dropping the latency, there is a constant performance gain. This was the core idea for performance gain behind `SPDY`, decrease the latency to increase the network performance.
 
-> For those who don't know the difference, latency is the delay i.e. how long it takes for data to travel between the source and destination (measured in milliseconds) and bandwidth is the amount of data transfered per second (bits per second).
+> For those who don't know the difference, latency is the delay i.e. how long it takes for data to travel between the source and destination (measured in milliseconds) and bandwidth is the amount of data transferred per second (bits per second).
 
 The features of `SPDY` included, multiplexing, compression, prioritization, security etc. I am not going to get into the details of SPDY, as you will get the idea when we get into the nitty gritty of `HTTP/2` in the next section as I said `HTTP/2` is mostly inspired from SPDY.
 
@@ -176,7 +176,7 @@ While we are talking headers, let me add here that the headers are still the sam
 
 Server push is another tremendous feature of `HTTP/2` where the server, knowing that the client is going to ask for a certain resource, can push it to the client without even client asking for it. For example, let's say a browser loads a web page, it parses the whole page to find out the remote content that it has to load from the server and then sends consequent requests to the server to get that content.
 
-Server push allows the server to decrease the roundtrips by pushing the data that it knows that client is going to demand. How it is done is, server sends a special frame called `PUSH_PROMISE` notifying the client that, "Hey, I am about to send this resource to you! Do not ask me for it." The `PUSH_PROMISE` frame is associated with the stream that caused the push to happen and it contains the promised stream ID i.e. the stream on which the server will send the resource to be pushed.
+Server push allows the server to decrease the round trips by pushing the data that it knows that client is going to demand. How it is done is, server sends a special frame called `PUSH_PROMISE` notifying the client that, "Hey, I am about to send this resource to you! Do not ask me for it." The `PUSH_PROMISE` frame is associated with the stream that caused the push to happen and it contains the promised stream ID i.e. the stream on which the server will send the resource to be pushed.
 
 #### 5. Request Prioritization
 
@@ -186,7 +186,7 @@ Without any priority information, server processes the requests asynchronously i
 
 #### 6. Security
 
-There was extensive discussion on whether security (through `TLS`) should be made mandatory for `HTTP/2` or not. In the end, it was decided not to make it mandatory. However, most vendors stated that they will only support `HTTP/2` when it is used over `TLS`. So, although `HTTP/2` doesn't require encryption by specs but it has kind of become mandatory by default anyway. With that out of the way, `HTTP/2` when implemented over `TLS` does impose some requirementsi.e. `TLS` version `1.2` or higher must be used, there must be a certain level of minimum keysizes, ephemeral keys are required etc.
+There was extensive discussion on whether security (through `TLS`) should be made mandatory for `HTTP/2` or not. In the end, it was decided not to make it mandatory. However, most vendors stated that they will only support `HTTP/2` when it is used over `TLS`. So, although `HTTP/2` doesn't require encryption by specs but it has kind of become mandatory by default anyway. With that out of the way, `HTTP/2` when implemented over `TLS` does impose some requirements i.e. `TLS` version `1.2` or higher must be used, there must be a certain level of minimum key sizes, ephemeral keys are required etc.
 
 `HTTP/2` is here and it has already [surpassed SPDY in adaption](http://caniuse.com/#search=http2) which is gradually increasing. `HTTP/2` has alot to offer in terms of performance gain and it is about time we should start using it. 
 

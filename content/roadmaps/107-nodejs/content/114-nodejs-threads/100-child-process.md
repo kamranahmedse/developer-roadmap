@@ -1,1 +1,12 @@
-# Child process
+# Child Process
+
+The child_process module gives the node the ability to run the child process, established through IPC (inter-process communication) by accessing operating system commands.
+
+The three main methods inside this module are :
+`child_process.spawn()`
+`child_process.fork()`
+`child_process.exec()`
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/child_process.html#child-process'>Child Process Docs</BadgeLink>

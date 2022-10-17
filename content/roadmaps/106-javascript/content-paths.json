@@ -114,5 +114,8 @@
   "javascript-chrome-dev-tools": "/roadmaps/106-javascript/content/117-javascript-chrome-dev-tools/readme.md",
   "javascript-chrome-dev-tools:debugging-issues": "/roadmaps/106-javascript/content/117-javascript-chrome-dev-tools/100-debugging-issues.md",
   "javascript-chrome-dev-tools:debugging-memory-leaks": "/roadmaps/106-javascript/content/117-javascript-chrome-dev-tools/101-debugging-memory-leaks.md",
-  "javascript-chrome-dev-tools:debugging-performance": "/roadmaps/106-javascript/content/117-javascript-chrome-dev-tools/102-debugging-performance.md"
+  "javascript-chrome-dev-tools:debugging-performance": "/roadmaps/106-javascript/content/117-javascript-chrome-dev-tools/102-debugging-performance.md",
+  "working-with-apis": "/roadmaps/106-javascript/content/118-working-with-apis/readme.md",
+  "working-with-apis:xml-http-request": "/roadmaps/106-javascript/content/118-working-with-apis/100-xml-http-request.md",
+  "working-with-apis:fetch": "/roadmaps/106-javascript/content/118-working-with-apis/101-fetch.md"
 }

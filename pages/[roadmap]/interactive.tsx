@@ -12,6 +12,7 @@ import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -205,6 +206,7 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

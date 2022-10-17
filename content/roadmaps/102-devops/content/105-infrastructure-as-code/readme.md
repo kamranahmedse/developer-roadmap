@@ -7,3 +7,4 @@ The term Infrastructure as Code encompasses everything from bootstrapping to con
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zWw2wuiKd5o'>What is Infrastructure as Code?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=POPP2WTJ8es'>What is Infrastructure as Code? Difference of Infrastructure as Code Tools</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/'>GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code</BadgeLink>

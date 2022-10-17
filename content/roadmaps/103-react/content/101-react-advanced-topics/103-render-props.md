@@ -6,3 +6,4 @@ A component with a render prop takes a function that returns a React element and
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/render-props.html'>Render Props in React</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-render-props/'>How to create a Render Prop Component</BadgeLink>
