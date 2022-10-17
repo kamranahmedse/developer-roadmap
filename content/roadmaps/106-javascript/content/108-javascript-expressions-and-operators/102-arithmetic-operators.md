@@ -10,7 +10,7 @@ Arithmetic operators in JavaScript are as follows:
 - `/` (Division)
 - `%` (Modulus i.e. Remainder)
 - `++` (Increment)
-- `++` (Decrement)
+- `--` (Decrement)
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators'>Arithmetic Operators - MDN</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/operators#maths'>Arithmetic Operators - JavaScript.info</BadgeLink>
