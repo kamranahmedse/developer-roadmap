@@ -1,5 +1,18 @@
+<DedicatedRoadmap
+  href='/javascript'
+  title='JavaScript Roadmap'
+  description='Click to check the detailed JavaScript Roadmap.'
+/>
+
 # JavaScript
-JavaScript, often abbreviated as JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client side for webpage behavior, often incorporating third-party libraries. All major web browsers have a dedicated JavaScript engine to execute the code on users' devices.
-JavaScript is a high-level, often just-in-time compiled language that conforms to the ECMAScript standard.[10] It has dynamic typing, prototype-based object-orientation, and first-class functions. It is multi-paradigm, supporting event-driven, functional, and imperative programming styles. It has application programming interfaces (APIs) for working with text, dates, regular expressions, standard data structures, and the Document Object Model (DOM).
-# ECMAScript
-The ECMAScript standard does not include any input/output (I/O), such as networking, storage, or graphics facilities. In practice, the web browser or other runtime system provides JavaScript APIs for I/O.
+
+JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Apart from being used on the frontend in browsers, there is Node.js which is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://javascript.info/'>The Modern JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Course' colorScheme='green' href='https://www.codecademy.com/learn/introduction-to-javascript'>Codecademy - Learn JavaScript</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/hdI2bqOjy3c'>JavaScript Crash Course for Beginners</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=fBNz5xF-Kx4'>Node.js Crash Course</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=TlB_eWDSMt4'>Node.js Tutorial for Beginners</BadgeLink>
