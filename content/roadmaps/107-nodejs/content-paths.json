@@ -49,7 +49,7 @@
   "nodejs-working-with-files:dirname": "/roadmaps/107-nodejs/content/105-nodejs-working-with-files/107-dirname.md",
   "nodejs-working-with-files:filename": "/roadmaps/107-nodejs/content/105-nodejs-working-with-files/108-filename.md",
   "nodejs-command-line-apps": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/readme.md",
-  "nodejs-command-line-apps:exitting-and-exit-codes": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/100-exitting-and-exit-codes.md",
+  "nodejs-command-line-apps:exiting-and-exit-codes": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/100-exiting-and-exit-codes.md",
   "nodejs-command-line-apps:printing-output": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/101-printing-output/readme.md",
   "nodejs-command-line-apps:printing-output:process-stdout": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/101-printing-output/100-process-stdout.md",
   "nodejs-command-line-apps:printing-output:process-stderr": "/roadmaps/107-nodejs/content/106-nodejs-command-line-apps/101-printing-output/101-process-stderr.md",
