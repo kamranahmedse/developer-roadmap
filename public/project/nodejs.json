@@ -7411,7 +7411,7 @@
           "x": "392",
           "y": "1470",
           "properties": {
-            "controlName": "100-nodejs-command-line-apps:exitting-and-exit-codes"
+            "controlName": "100-nodejs-command-line-apps:exiting-and-exit-codes"
           },
           "children": {
             "controls": {
@@ -7440,7 +7440,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Exitting & Exit Codes"
+                    "text": "Exiting & Exit Codes"
                   }
                 },
                 {
