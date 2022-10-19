@@ -1,6 +1,6 @@
 # Relational Databases
 
-A relational database is **a type of database that stores and provides access to data points that are related to one another**. Relational databases store data in a series of tables. Interconnections between the tables are specified as foreign keys. A foreign key is a unique reference from one row in a relational table to another row in a table, which can be the same table but is most commonly a different table.
+A relational database is **a type of database that stores and provides access to data points that are related to one another**. Relational databases store data in a series of tables. Interconnections between the tables are specified as foreign keys. A foreign key is a unique reference from one row in a relational table to another row in a table, which can be the same table but is most commonly a different table. The database structures are organized into physical files optimized for speed.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.ibm.com/cloud/learn/relational-databases'>Relational Databases</BadgeLink>
