@@ -5,6 +5,10 @@
 />
 
 # JavaScript
+You don't have to get or download JavaScript.
+
+JavaScript is already running in your browser on your computer, on your tablet, and on your smart-phone.
+
 
 JavaScript allows you to add interactivity to your pages. Common examples that you may have seen on the websites are sliders, click interactions, popups and so on. Apart from being used on the frontend in browsers, there is Node.js which is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser.
 
