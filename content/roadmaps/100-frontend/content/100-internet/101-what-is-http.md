@@ -1,6 +1,6 @@
 # What is HTTP?
 
-HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. HTTP follows a classical "Client-Server model" with a client opening a connection request, then waiting until it receives a response. HTTP is a stateless protocol, that means that the server does not keep any data (state) between two requests.
+HTTP stands for Hypertext transfer Protocol. HTTP is the `TCP/IP` based application layer communication protocol which standardizes how the client and server communicate with each other. HTTP is the foundation of data communication for the World Wide Web, where hypertext documents include hyperlinks to other resources that the user can easily access. It follows a classical "Client-Server model" with a client opening a connection request, then waiting until it receives a response. HTTP is a stateless protocol, that means that the server does not keep any data (state) between two requests.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/'>What is HTTP?</BadgeLink>
