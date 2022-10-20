@@ -1,6 +1,6 @@
 # Tailwind CSS
 
-CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup.
+CSS Framework that provides atomic CSS classes to help you style components e.g. `flex`, `pt-4`, `text-center` and `rotate-90` that can be composed to build any design, directly in your markup. Tailwind doesn't  the require user to make a different CSS file, you can directly style your project in the main file using classNames.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://tailwindcss.com'>Tailwind Website</BadgeLink>
