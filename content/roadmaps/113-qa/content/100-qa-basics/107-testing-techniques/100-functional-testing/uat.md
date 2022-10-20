@@ -1,7 +1,7 @@
-# Uat
+# UAT
 
-UAT stands for User Acceptance Testing. It is a testing methodology where the clients/end users are involved in testing the product to validate it against their requirements. This test is usually done in a separate UAT Environment wherein end users can verify if the functionality outlined in the user story or requirements documents exists and can effectively support the business’s day-to-day operations.
+User Acceptance Testing (UAT) is a type of testing performed by the end user or the client to verify/accept the software system before moving the software application to the production environment. UAT is done in the final phase of testing after functional, integration and system testing is done.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/user-acceptance-testing.html'>What is User Acceptance Testing (UAT)?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=AU8SV7091-s'>How to plan your UAT</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/software_testing_dictionary/use_acceptance_testing.htm'>Tutorials Point</BadgeLink>
