@@ -1,0 +1,12 @@
+# Linked List
+
+This dynamic data structure is like an array in that it is linear. However, unlike arrays, linked list elements are not stored in adjacent locations. The items in the list are connected using or with pointers.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/linked-list-in-data-structure#:~:text=A%20linked%20list%20is%20the,reference%20to%20the%20next%20node.'>Linked List in a Data Structure: All You Need to Know</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/data-structures/linked-list/'>Linked List Data Structure - GeeksforGeeks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.tutorialspoint.com/data_structures_algorithms/linked_list_algorithms.htm'>SLinked List - Data Structure and Algorithms - Tutorialspoint</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.programiz.com/dsa/linked-list'>Linked List Data Structure - Programiz</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=odW9FU8jPRQ&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY&index=3'>Linked list Data STructure | Illustrated Data Structure - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/linked-list-in-data-structure'>Linked List in a Data Structure: All You Need to Know - Simplilearn</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=njTh_OwMljA'>Data Structures: Linked Lists</BadgeLink>

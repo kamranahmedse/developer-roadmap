@@ -1,0 +1,41 @@
+{
+    "seo": {
+        "title": "",
+        "description": "",
+        "keywords": [
+            "",
+            "",
+            ""
+        ]
+    },
+    "title": "Data structures Roadmap",
+    "description": "Everything there is to know about Data Structues in 2022",
+    "featuredTitle": "Data Structures",
+    "type": "tool",
+    "featuredDescription": "Everything there is to know about Data Structues in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "featured": true,
+    "jsonUrl": "",
+    "versions": [
+        "latest",
+        "2018",
+        "2017"
+    ],
+    "author": {
+        "name": "Kamran Ahmed",
+        "url": "https://twitter.com/kamranahmedse"
+    },
+    "pdfUrl": "/pdfs/data-structures.pdf",
+    "contentPathsFilePath": "./content-paths.json",
+    "relatedRoadmaps": [
+        "javascript",
+        "python",
+        "java",
+        "design-system",
+        "nodejs",
+        "postgresql-dba",
+        "sostware-architect",
+        "software-design-architecture"
+    ]
+}

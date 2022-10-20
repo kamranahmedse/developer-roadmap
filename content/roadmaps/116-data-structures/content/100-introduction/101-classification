@@ -1,0 +1,11 @@
+# Classification
+
+Data Structures are divided into linear data structures and non-linear data structures. Linear data structures further divides into static and data structures and dynamic data structures. An exaample of static data structures is an array. Examples of dynamic data structures include queue, stack and linked list. Non-linear data structures examples includes tree and graph.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.geeksforgeeks.org/static-data-structure-vs-dynamic-data-structure/'>GeeksForGeeks - Static Data Structure vs Dynamic Data Structure</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.scaler.com/topics/static-and-dynamic-data-structure/'>Scaler Topics - What Are Static and Dynamic Data Structures?</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://medium.com/@cse_18061/data-structures-static-vs-dynamic-3740260c2d18'>Data Structures: Static VS Dynamic - Medium</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=EfYlFx4Hv5w'>AQAA'Level Static & dynamic data structures</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=GEmjWSKpM80'>Data Structure Fundamentals - Static vs dynamic data structures</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=iaawREVWdQE'>Static and Dynamic Data Structure | Difference between Static and Dynamic data structures</BadgeLink>

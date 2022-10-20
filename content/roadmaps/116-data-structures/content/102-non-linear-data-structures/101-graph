@@ -1,0 +1,12 @@
+# Graph Data Structure
+
+The grapg data structure is a non-linear data structure that comprises of vertices or nodes and edges (or lines or arcs). Vertices are nodes and the edges connect the vertices to each other accirdingly. A graph is denoted by G(E,V) where E standes for edges and V stands for vertices. Unlike tree, graphs can have more than two edges or lines or arcs that connect the vertices together.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/'>Graph Data Structure And Algorithms - GeeksforGeeks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.programiz.com/dsa/graph'>Graph Data Structure - Programiz</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.simplilearn.com/tutorials/data-structure-tutorial/graphs-in-data-structure'>Your One-Stop Solution for Graphs in Data Structures</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.javatpoint.com/ds-graph'>DS Graph - Javapoint</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=0sQE8zKhad0'>Graph Data Structure | Illustrated Data Structure - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=gXgEDyodOJU&vl=en'>Data structures: Introduction to graphs - mycodeschool</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=KXnJQUzZ9iI'>Introduction To Graphs | Data Structures - Amulya's Academy</BadgeLink>

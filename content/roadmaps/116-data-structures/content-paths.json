@@ -1,0 +1,17 @@
+{
+    "home": "/roadmaps/116-data-structures/content/readme.md",
+    "data-structure-introduction": "/roadmaps/116-data-structures/content/100-introduction/readme.md",
+    "data-structure-introduction:what-is-a-data=structure": "/roadmaps/116-data-structures/content/100-introduction/100-what-is-a-data-structure",
+    "data-structure-introduction:classification": "/roadmaps/116-data-structures/content/100-introduction/101-classification",
+    "data-structure-introduction:necessity-of-data-structures": "/roadmaps/116-data-structures/content/100-introduction/102-necessity-of-data-structures",
+    "data-structure-linear-data-structures": "/roadmaps/116-data-structures/content/101-linear-data-structures/readme.md",
+    "data-structure-linear-data-structures:static-data-structures": "/roadmaps/116-data-structures/content/101-linear-data-structures-static-data-structures/readme.md",
+    "data-structure-linear-data-structures:static-data-structures:array": "/roadmaps/116-data-structures/content/101-linear-data-structures-static-data-structures/array",
+    "data-structure-linear-data-structures:dynamic-data-structures":"/roadmaps/116-data-structures/content/101-linear-data-structures/dynamic-data-structures/readme.md",
+    "data-structure-linear-data-structures:dynamic-data-structures:queue":"/roadmaps/116-data-structures/content/101-linear-data-structures/dynamic-data-structures/queue",
+    "data-structure-linear-data-structures:dynamic-data-structures:stack":"/roadmaps/116-data-structures/content/101-linear-data-structures/dynamic-data-structures/stack",
+    "data-structure-linear-data-structures:dynamic-data-structures:linked-list":"/roadmaps/116-data-structures/content/101-linear-data-structures/dynamic-data-structures/linked-list",
+    "data-structure-non-linear-data-structures": "/roadmaps/116-data-structures/content/102-non-linear-data-structures/readme.md",
+    "data-structure-non-linear-data-structures:binary-tree": "/roadmaps/116-data-structures/content/102-non-linear-data-structures/100-binary-tree",
+    "data-structure-non-linear-data-structures:graph": "/roadmaps/116-data-structures/content/102-non-linear-data-structures/101-graph"
+}

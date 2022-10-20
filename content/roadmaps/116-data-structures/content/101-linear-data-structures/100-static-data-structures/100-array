@@ -1,0 +1,13 @@
+# Arrays
+
+Arrays are a type of linear data structures. The data is an array is a collection of items which are stored at adjacent locations in a memory. Similar types of data are stored together, making it easy to determine where each element is positioned.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/arrays-in-data-structure#:~:text=the%20same%20kind.-,What%20Are%20Arrays%20in%20Data%20Structures%3F,the%20size%20of%20the%20array.'>Arrays in Data Structure: A Guide With Examples - Simplilearn</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/array-data-structure/'>Array Data Structure - GeeksforGeeks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.tutorialspoint.com/data_structures_algorithms/array_data_structure.htm'>Data Structures and Algorithms - Arrays - Tutorialspoint</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.javatpoint.com/data-structure-array'>DS Array - Javatpoint</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.guru99.com/array-data-structure.html'>DArray in Data Structure: What is, Arrays Operations [Examples]</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=QJNwK2uJyGs&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY&index=2'>Array Data Structures - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/arrays-in-data-structure'>Arrays in Data Structure: A Guide With Examples - Simplilearn</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.javatpoint.com/data-structure-array'>DS Array - Javatpoint</BadgeLink>

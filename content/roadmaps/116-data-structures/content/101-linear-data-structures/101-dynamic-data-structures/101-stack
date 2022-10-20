@@ -1,0 +1,12 @@
+# Stack
+
+This is a linear data structure and may follow one of two order when performing an operation. The two orders are Last In First Out (LIFO) and First In Last Out (FILO). The addition and removal of elements or items are allowed or done at one end of the list only. Basic functions done in a stack include: initialize (that is make the stack empty), push (meaning inserting an element in the stack, when it is full it is an overflow), pop (meaning deletes an element in the stack, when the stack is empty it is an underflow), peek/top (returns the top item in the stack), isEmpty (returns true when stack is empty, otherwise it is returned false)
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures#:~:text=The%20stack%20data%20structure%20is,of%20money%2C%20and%20many%20more.'>Implementing Stacks in Data Structures [Updated] - Simplilearn</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.geeksforgeeks.org/stack-data-structure/'>Stack Data Structure - GeeksforGeeks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.programiz.com/dsa/stack'>Stack Data Structure - Programiz</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.javatpoint.com/data-structure-stack'>QDS Stack - Javatpoint</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=I5lq6sCuABE&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY&index=4'>Stack Data STructure | Illustrated Data Structure - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.simplilearn.com/tutorials/data-structure-tutorial/stacks-in-data-structures'>Implementing Stacks in Data Structures [Updated] - Simplilearn</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=r7P9sy5Rar8'>Data Structure and Algorithms (DSA) | Part - 1</BadgeLink>

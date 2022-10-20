@@ -1,0 +1,12 @@
+# Binary Tree Data Structure
+
+This is a non-linear data structure. Trees are hierarchical data structures. A Binary Tree is a tree data structure where a node has not more than two children or branches named left child and right child. Links are used to execute trees. When a tree is empty, the root value of the node is Null. A node on a binary tree has data, pointer to the left child and pointer to the right child. Other trees inclide Binary Search Tree and Heap.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/#:~:text=What%20is%20a%20Tree%20data,(the%20%E2%80%9Cchildren%E2%80%9D).'>Introduction to Tree - Data Structure and Algorithm Tutorials</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.programiz.com/dsa/trees'>Tree Data Structure - Programiz</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://en.wikipedia.org/wiki/Tree_(data_structure)'>Tree (data structure) - Wikipedia</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.tutorialspoint.com/data_structures_algorithms/tree_data_structure.htm'>Data Structure and Algorithms - Tree - Tutorialspoint</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=S2W3SXGPVyU&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY&index=7'>Tree Data Structure | Illustrated Data Structures - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.geeksforgeeks.org/introduction-to-binary-tree-data-structure-and-algorithm-tutorials/'>Introduction to Binary Tree - Data Structure and Algorithm</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=1-l_UOFi1Xw'>Introduction to Trees (Data Structures & Algorithms #9)</BadgeLink>

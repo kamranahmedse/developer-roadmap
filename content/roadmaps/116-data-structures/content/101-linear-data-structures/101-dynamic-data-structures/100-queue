@@ -1,0 +1,12 @@
+# Queue
+
+This data structture is linear and follows an order when operations in the system are taking place. The order is defined as First In First Out (FIFO). When an item is placed at one end of the list or queue, it is deleted from the other end. It operates like the first come first serve basis. In this data structure the item or element that was recently added is removed, unlike the stack data structure.
+
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.geeksforgeeks.org/queue-data-structure/'>Queue Data Structure - GeeksforGeeks</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.programiz.com/dsa/queue'>Queue Data Structure and Implementation in JavaScript - Programiz</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.tutorialspoint.com/data_structures_algorithms/dsa_queue.htm'>Data Structure and Algorithms - Queue - Tutorialspoint</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.naukri.com/learning/articles/queue-data-structure-types-implementation-applications/'>Queue Data Structure: Types, Implementation, Applications</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=mDCi1lXd9hc&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY&index=5'>Queue Data Structure | Illustrated Data Structures - the roadmap</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=yzj0Ch01Exo'>Introduction To Queue With Example | Data Structures Tutorial</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.javatpoint.com/ds-types-of-queues'>DS | Types of Queues - javatpoint</BadgeLink>
