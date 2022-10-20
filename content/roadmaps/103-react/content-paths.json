@@ -60,5 +60,6 @@
   "react-ecosystem:styling:material-ui": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/101-material-ui.md",
   "react-ecosystem:styling:ant-design": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/102-ant-design.md",
   "react-ecosystem:styling:styled-components": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/103-styled-components.md",
-  "react-ecosystem:styling:emotion": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/104-emotion.md"
+  "react-ecosystem:styling:emotion": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/104-emotion.md",
+  "react-ecosystem:styling:mantine": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/105-mantine.md"
 }
