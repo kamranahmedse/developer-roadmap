@@ -7,9 +7,7 @@ An ORM is known as Object Relational Mapper. This is a tool or a level of abstra
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://sequelize.org/'>Sequelize Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='npm Package' href='https://www.npmjs.com/package/sequelize'>Package Link</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Documentation' href='https://sequelize.org/docs/v6/getting-started/'>Getting Started</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Guide' href='https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e'>Full Guide</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Package Page' href='https://www.npmjs.com/package/sequelize'>Sequelize - NPM Package</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Offical Docs' href='https://sequelize.org/docs/v6/getting-started/'>Official Sequelize Docs</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Guide' href='https://levelup.gitconnected.com/the-ultimate-guide-to-get-started-with-sequelize-orm-238588d3516e'>Getting started with Sequelize</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Example' href='https://www.geeksforgeeks.org/how-to-use-sequelize-in-node-js/'>Sequelize in Node.js</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Connection Guide' href='https://www.turing.com/kb/mysql-connection-with-node-js-using-sequelize-and-express'>Create MySQL Connection with Node JS using Sequelize</BadgeLink>
-
