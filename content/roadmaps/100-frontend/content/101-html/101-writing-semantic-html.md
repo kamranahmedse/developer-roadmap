@@ -1,6 +1,6 @@
 # Semantic HTML
 
-Semantic element clearly describes its meaning to both the browser and the developer. In HTML,semantic element are the type of elements that can be used to define different parts of a web page such as <form>, <table>, <article>, <header>, <footer>, etc.
+Semantic element clearly describes its meaning to both the browser and the developer. In HTML,semantic element are the type of elements that can be used to define different parts of a web page such as `<form>`, `<table>`, `<article>`, `<header>`, `<footer>`, etc.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Glossary/Semantics'>Semantics - MDN Web Docs Glossary: Definitions of Web-related terms | MDN</BadgeLink>
