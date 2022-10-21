@@ -4,3 +4,4 @@ TestRail is a web-based test management tool used by testers, developers and oth
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.gurock.com/testrail/'>Test Rail</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://support.gurock.com/hc/en-us'>TestRail Official Docs</BadgeLink>
