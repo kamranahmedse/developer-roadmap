@@ -1,6 +1,6 @@
 # Conditional operators
 
-Conditional oprator also known as Ternary operator is the only JS operator that takes three operands.
+Conditional operator also known as Ternary operator is the only JS operator that takes three operands.
 
 The operator can have one of two values based on a condition.
 
