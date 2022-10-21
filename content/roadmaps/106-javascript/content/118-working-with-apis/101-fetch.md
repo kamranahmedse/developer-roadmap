@@ -1,9 +1,9 @@
 # Fetch
 
-The `fetch()` method requests data and expects a response from a server. The response returns as a `promise`, which allows for asynchronous funcitons. It has one required parameter, `url` and `options` as an object.
+Fetch or Fetch API is a modern alternative to XMLHttpRequest. Compared to XMLHttpRequest, fetch is cleaner, simpler and easier to understand. Fetch already uses Promise, so `fetch()` does not directly return response body but instead returns a promise that resolves with a `Response` object, which is a representation of the entire HTTP response.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-  <BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/fetch'>Fetch on javascript.info
-  <BadgeLink colorScheme='yellow' badgeText='Read' href='[https://javascript.info/fetch](https://www.geeksforgeeks.org/javascript-fetch-method/)'>JavaScript | fetch() Method
-  <BadgeLink colorScheme='yellow' badgeText='Watch' href='[https://javascript.info/fetch](https://www.youtube.com/watch?v=tVQgfKqbX3M)'>How to use Fetch with JavaScript
-</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'>Using the Fetch API</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://javascript.info/fetch'>Network request - Fetch</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.codeguage.com/courses/js/'>A Comprehensive Course on JavaScript with Quizzes and Exercises - CodeGuage</BadgeLink>

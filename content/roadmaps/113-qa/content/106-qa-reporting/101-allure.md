@@ -4,4 +4,4 @@ Allure Report is a flexible, lightweight multi-language test reporting tool. It 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://qameta.io/'>Allure</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.qameta.io/allure-report/'>Allue Official Docs</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.qameta.io/allure-report/'>Allure Official Docs</BadgeLink>
