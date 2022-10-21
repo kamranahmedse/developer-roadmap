@@ -8,3 +8,4 @@ e.g. `http://192.168.0.1:8080`
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/socket-in-computer-network/'>What are Sockets?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm'>Types of Sockets</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.baeldung.com/cs/port-vs-socket'>Port vs Socket</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Library' href='https://socket.io/'>Socket.io Library Bidirectional and low-latency communication for every platform</BadgeLink>
