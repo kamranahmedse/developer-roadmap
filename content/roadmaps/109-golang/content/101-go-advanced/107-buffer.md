@@ -4,5 +4,5 @@
 
  <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://pkg.go.dev/bytes#example-Buffer'>Buffer Examples</BadgeLink>
-<BadgeLink badgeText='Read' herf='https://www.educba.com/golang-buffer/'>Buffer</BadgeLink>
+<BadgeLink badgeText='Read' href='https://www.educba.com/golang-buffer/'>Buffer</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=NoDRq6Twkts'>Buffers in Golang</BadgeLink>
