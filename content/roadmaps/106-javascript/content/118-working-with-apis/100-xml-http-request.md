@@ -1,13 +1,7 @@
 # XMLHttpRequest
-XMLHttpRequest is a built-in browser object that allows to make HTTP requests in JavaScript.
 
-Despite having the word “XML” in its name, it can operate on any data, not only in XML format. We can upload/download files, track progress and much more.
-
-In modern web-development XMLHttpRequest is used for three reasons:
-
-1. Historical reasons: we need to support existing scripts with XMLHttpRequest.
-2. We need to support old browsers, and don’t want polyfills (e.g. to keep scripts tiny).
-3. We need something that fetch can’t do yet, e.g. to track upload progress.
+`XMLHttpRequest` (XHR) is a built-in browser object that can be used to interact with server. XHR allows you to update data without having to reload a web page. Despite the word XML in its name, XHR not only used to retrieve data with XML format, we can use it with any type of data, like JSON, file(s), and much more.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://javascript.info/xmlhttprequest'>XMLHttpRequest</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest'>Using XMLHttpRequest</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://javascript.info/xmlhttprequest'>Network request - XMLHttpRequest</BadgeLink>
