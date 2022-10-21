@@ -5,3 +5,5 @@ Fetch or Fetch API is a modern alternative to XMLHttpRequest. Compared to XMLHtt
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch'>Using the Fetch API</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://javascript.info/fetch'>Network request - Fetch</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.codeguage.com/courses/js/'>A Comprehensive Course on JavaScript with Quizzes and Exercises - CodeGuage</BadgeLink>
