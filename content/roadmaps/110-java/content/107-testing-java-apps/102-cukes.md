@@ -4,8 +4,4 @@ cukes-rest takes simplicity of Cucumber and provides bindings for HTTP specifica
 
 <ResourceGroupTitle>Reference Resource</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Github' href='https://github.com/ctco/cukes'>Cukes Github</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://speakerdeck.com/larchaon/getting-started-with-cukes-rest?slide=23'>Getting Started with Cukes-REST
-</BadgeLink>
-
-
-
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://speakerdeck.com/larchaon/getting-started-with-cukes-rest?slide=23'>Getting Started with Cukes-REST</BadgeLink>
