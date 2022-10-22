@@ -7,6 +7,7 @@ Learn about the fundamentals of Java such as basic syntax, data types, variables
 <ResourceGroupTitle>Free Resources</ResourceGroupTitle>
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/java/'>Java Basics - W3Schools</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.sololearn.com/learning/1068'>Java Course - SoloLearn</BadgeLink>
 <BadgeLink colorScheme='purple' badgeText='Watch' href='https://youtu.be/eIrMbAQSU34'>Java Tutorial for Beginners</BadgeLink>
 <ResourceGroupTitle>Books</ResourceGroupTitle>
 
