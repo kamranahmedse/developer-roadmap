@@ -70,7 +70,7 @@ npm run dev
 - Add content to roadmaps
 - Add new roadmaps
 - Suggest changes to existing roadmaps
-- Discuss ideas in issues
+- Discuss ideas and issues
 - Spread the word
 
 ## Thanks to all contributors ❤
