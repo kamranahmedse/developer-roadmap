@@ -5,5 +5,6 @@ Slices are similar to arrays but are more powerful and flexible. Like arrays, sl
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://go.dev/tour/moretypes/7'>Go Slices</BadgeLink>
+<BadgeLink badgeText='Read' href='https://go.dev/doc/effective_go#slices'>Effective Go: Slices</BadgeLink>
 <BadgeLink badgeText='Read' href='https://www.w3schools.com/go/go_slices.php'>Slices in Go</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/YS4e4q9oBaU?t=6473'>Learn Go Programming - Slices (by freeCodeCamp on YouTube)</BadgeLink>
