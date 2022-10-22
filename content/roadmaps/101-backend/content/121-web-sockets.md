@@ -5,3 +5,4 @@ Web sockets are defined as a two-way communication between the servers and the c
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/websockets/index.htm'>Introduction to WebSockets</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://www.youtube.com/watch?v=8ARodQ4Wlf4'>A Beginner's Guide to WebSockets</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Library' href='https://socket.io/'>Socket.io Library Bidirectional and low-latency communication for every platform</BadgeLink>
