@@ -1,8 +1,12 @@
 # Infrastructure as Code
 
-Infrastructure as Code (IaC) is the managing and provisioning of infrastructure through code instead of through manual processes.
+Sometimes referred to as IaC, this section refers to the techniques and tools used to define infrastructure, typically in a markup language like YAML or JSON. Infrastructure as code allows DevOps Engineers to use the same workflows used by software developers to version, roll back, and otherwise manage changes.  
 
-With IaC, configuration files are created that contain your infrastructure specifications, which makes it easier to edit and distribute configurations. It also ensures that you provision the same environment every time. By codifying and documenting your configuration specifications, IaC aids [configuration management](https://www.redhat.com/en/topics/automation/what-is-configuration-management) and helps you to avoid undocumented, ad-hoc configuration changes.
+The term Infrastructure as Code encompasses everything from bootstrapping to configuration to orchestration, and it is considered a best practice in the industry to manage all infrastructure as code.  This technique precipitated the explosion in system complexity seen in modern DevOps organizations.
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='(https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac'>What is infrastructure as code</BadgeLink>
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zWw2wuiKd5o'>What is Infrastructure as Code?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=POPP2WTJ8es'>What is Infrastructure as Code? Difference of Infrastructure as Code Tools</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zWw2wuiKd5o'>Video introduction to infrastructure as code</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/'>GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='(https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac'>What is infrastructure as code</BadgeLink>

@@ -7,3 +7,5 @@ While there are several Ethereum standards. These ERC Ethereum standards are the
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80'>What are Ethereum request for comments (ERC) Standards</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://ethereum.org/en/developers/docs/standards/tokens/erc-20/'>ERC-20 Token Standard</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://decrypt.co/resources/erc-721-ethereum-nft-token-standard'>ERC-721 Token Standard (NFT's)</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://decrypt.co/resources/what-is-erc-1155-ethereums-flexible-token-standard'>ERC-1155 Token Standard (Multi-Token)</BadgeLink>

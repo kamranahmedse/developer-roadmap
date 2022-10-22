@@ -4,4 +4,9 @@
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/Using_XMLHttpRequest'>Using XMLHttpRequest</BadgeLink>
+<<<<<<< HEAD
 <BadgeLink colorScheme='green' badgeText='Course' href='https://javascript.info/xmlhttprequest'>Network request - XMLHttpRequest</BadgeLink>
+=======
+<BadgeLink colorScheme='green' badgeText='Course' href='https://javascript.info/xmlhttprequest'>Network request - XMLHttpRequest</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/xml/xml_http.asp'>W3Schools</BadgeLink>
+>>>>>>> a89236f33302ed916fa3a37e3d0f4cb214f370e3
