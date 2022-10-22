@@ -4,3 +4,4 @@ The React Testing Library is a very lightweight solution for testing React compo
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Getting Started' href='https://testing-library.com/docs/react-testing-library/intro/'>React Testing Library</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-testing-library/'>How to use React Testing Library</BadgeLink>

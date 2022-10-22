@@ -52,7 +52,7 @@
   "react-ecosystem:testing:react-testing-library": "/roadmaps/103-react/content/102-react-ecosystem/106-testing/101-react-testing-library.md",
   "react-ecosystem:testing:cypress": "/roadmaps/103-react/content/102-react-ecosystem/106-testing/102-cypress.md",
   "react-ecosystem:state-management": "/roadmaps/103-react/content/102-react-ecosystem/107-state-management/readme.md",
-  "react-ecosystem:state-management:conext-state": "/roadmaps/103-react/content/102-react-ecosystem/107-state-management/100-conext-state.md",
+  "react-ecosystem:state-management:context-state": "/roadmaps/103-react/content/102-react-ecosystem/107-state-management/100-context-state.md",
   "react-ecosystem:state-management:redux": "/roadmaps/103-react/content/102-react-ecosystem/107-state-management/101-redux.md",
   "react-ecosystem:state-management:mobx": "/roadmaps/103-react/content/102-react-ecosystem/107-state-management/102-mobx.md",
   "react-ecosystem:styling": "/roadmaps/103-react/content/102-react-ecosystem/108-styling/readme.md",

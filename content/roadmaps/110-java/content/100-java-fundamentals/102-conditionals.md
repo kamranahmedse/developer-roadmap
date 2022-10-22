@@ -6,6 +6,7 @@ Java has the following conditional statements:
 * Use `else` to specify a block of code to be executed if the same condition is false
 * Use `else if` to specify a new condition to test; if the first condition is false
 * Use `switch` to specify many alternative blocks of code to be executed
+* Use `?,:` operator to specify one line condition
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/answers/what-are-conditional-statements-in-programming'>What are Conditional statements?</BadgeLink>

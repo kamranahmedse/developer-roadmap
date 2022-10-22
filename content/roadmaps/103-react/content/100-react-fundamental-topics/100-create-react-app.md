@@ -6,3 +6,4 @@ It sets up your development environment so that you can use the latest JavaScrip
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://create-react-app.dev/docs/getting-started'>Official Website</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/minimal-react-webpack-babel-setup/'>Advanced: Custom Setup with Webpack</BadgeLink>

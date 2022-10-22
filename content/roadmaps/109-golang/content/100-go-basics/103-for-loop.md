@@ -8,5 +8,6 @@ Go has only one looping construct, the `for` loop. The basic `for` loop has thre
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/tour/flowcontrol/1'>For Loop in Golang</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/doc/effective_go#for'>Effective Go: For loop</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/for'>Go by Example: For loop</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://yourbasic.org/golang/for-loop/'>5 basic for loop patterns</BadgeLink>

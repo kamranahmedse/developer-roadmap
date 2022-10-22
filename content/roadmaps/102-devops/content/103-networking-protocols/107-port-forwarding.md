@@ -4,4 +4,4 @@ Port forwarding, sometimes called **port mapping**, allows computers or services
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://learn.g2.com/port-forwarding'>What is Port Forwarding?</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme="yellow" href='https://cybernews.com/what-is-vpn/port-forwarding/'>Types of Port Fowarding</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://cybernews.com/what-is-vpn/port-forwarding/'>Types of Port Forwarding</BadgeLink>

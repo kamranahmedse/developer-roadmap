@@ -6,3 +6,4 @@ In the typical React dataflow, props are the only way that parent components int
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/refs-and-the-dom.html'>Refs and DOM</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-ref/'>Examples of using refs in React</BadgeLink>
