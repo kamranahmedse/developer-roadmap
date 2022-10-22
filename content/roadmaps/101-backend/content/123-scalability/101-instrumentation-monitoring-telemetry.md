@@ -8,5 +8,5 @@ Telemetry is the process of continuously collecting data from different componen
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)'>What is Instrumentation?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/'>What is Monitoring?Monitoring</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/'>What is Monitoring?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.sumologic.com/insight/what-is-telemetry/'>What is Telemetry?</BadgeLink>
