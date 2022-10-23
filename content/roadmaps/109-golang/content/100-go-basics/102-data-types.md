@@ -7,4 +7,4 @@ To learn more about types in Go, visit these resources :
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/go/go_data_types.php'>Basic data types</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/tour/basics/11'>Tour of Go: types</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://golangbyexample.com/all-data-types-in-golang-with-examples/'>Go types with examples</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.golangprograms.com/go-language/data-type.html'>Go types with examples</BadgeLink>

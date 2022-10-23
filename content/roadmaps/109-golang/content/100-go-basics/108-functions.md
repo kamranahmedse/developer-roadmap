@@ -8,5 +8,5 @@ Discover how functions work in Go, the list of resources below will cover :
  - Different types of functions in Go.
  
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/functions'>Go by Example: Functions</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/go/go_functions.php'>Golang Program: Functions</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.golangprograms.com/go-language/functions.html'>Functions in go</BadgeLink>
