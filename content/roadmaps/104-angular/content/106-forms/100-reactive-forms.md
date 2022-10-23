@@ -1,6 +1,8 @@
 # Reactive Forms
 
-Reactive Forms in angular are those which used to handle the inputs coming from the user. We can define controls by using classes such as FormGroup and FormControl. 
+Reactive Forms in angular are those which used to handle the inputs coming from the user. The setup of form model is explicit and structured. We can define controls by using classes such as FormGroup and FormControl. The data model is inmutable.
+The data flow between the model and the view is synchronous and the validation is done using functions.
+As a result reactive forms are more robust, scalable, reusable and testeable. 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://angular.io/guide/reactive-forms'>Reactive forms - Angular</BadgeLink>
