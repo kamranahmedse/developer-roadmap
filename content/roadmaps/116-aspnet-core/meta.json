@@ -33,7 +33,7 @@
   "isTextHeavy": false,
   "isCommunity": false,
   "isUpcoming": false,
-  "featured": true,
+  "featured": false,
   "isNew": true,
   "jsonUrl": "/project/aspnet-core.json",
   "resourcesPath": "./resources.md",

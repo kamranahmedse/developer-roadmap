@@ -175,6 +175,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['515px', '1230px', '1310px', '1765px', '1765px', '1765px'];
   }
 
+  if (roadmap.id === 'aspnet-core') {
+    minHeight = ['515px', '1230px', '1310px', '1765px', '1765px', '1765px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
