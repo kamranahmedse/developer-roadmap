@@ -49,5 +49,5 @@ export function getFeaturedRoadmaps(): RoadmapType[] {
 }
 
 export function isInteractiveRoadmap(id: string): boolean {
-  return ['frontend', 'backend', 'devops', 'react', 'vue', 'python', 'java', 'blockchain', 'golang', 'javascript', 'nodejs', 'qa', 'design-system', 'angular', 'software-architect', 'software-design-architecture'].includes(id);
+  return ['frontend', 'backend', 'devops', 'react', 'vue', 'python', 'java', 'blockchain', 'golang', 'javascript', 'nodejs', 'qa', 'design-system', 'angular', 'software-architect', 'software-design-architecture', 'aspnet-core'].includes(id);
 }
