@@ -1041,7 +1041,6 @@
     "featured": false,
     "isNew": true,
     "jsonUrl": "/project/aspnet-core.json",
-    "resourcesPath": "/roadmaps/116-aspnet-core/resources.md",
     "versions": [
       "latest",
       "2018",

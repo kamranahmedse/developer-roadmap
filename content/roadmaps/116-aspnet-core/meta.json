@@ -36,7 +36,6 @@
   "featured": false,
   "isNew": true,
   "jsonUrl": "/project/aspnet-core.json",
-  "resourcesPath": "./resources.md",
   "versions": [
     "latest",
     "2018",
