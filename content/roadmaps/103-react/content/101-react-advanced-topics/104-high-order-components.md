@@ -6,3 +6,4 @@ Concretely, a higher-order component is a function that takes a component and re
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/higher-order-components.html'>High-Order Components</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-higher-order-components/'>How to create a Higher-Order Component</BadgeLink>

@@ -12,6 +12,7 @@ import { ContentDrawer } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
+import { TeamsBanner } from '../../components/teams-banner';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -170,6 +171,14 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['685px', '1170px', '1470px', '1980px', '1980px', '1980px'];
   }
 
+  if (roadmap.id === 'software-design-architecture') {
+    minHeight = ['515px', '1230px', '1310px', '1765px', '1765px', '1765px'];
+  }
+
+  if (roadmap.id === 'aspnet-core') {
+    minHeight = ['1278px', '2105px', '2748px', '2845px', '2845px', '2845px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
@@ -201,6 +210,7 @@ export default function InteractiveRoadmap(props: RoadmapProps) {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );

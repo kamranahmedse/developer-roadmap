@@ -2,7 +2,7 @@
 
 Forms are used to handle user inputs in many applications. It enables users from entering sensitive information to performing several data entry tasks.
 
-Angular provides two forms to hadle user inputs: reactive forms and template-driven forms.
+Angular provides two approachs to handle user inputs trough forms: reactive and template-driven forms.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://angular.io/guide/forms-overview'>Introduction to forms in Angular</BadgeLink>

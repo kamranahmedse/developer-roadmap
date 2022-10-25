@@ -4,4 +4,4 @@
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/hooks-state.html'>Using the State Hook</BadgeLink>
-
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-usestate-hook/'>React useState Hook by Example</BadgeLink>

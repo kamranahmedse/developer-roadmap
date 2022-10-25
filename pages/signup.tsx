@@ -6,6 +6,7 @@ import { Footer } from '../components/footer';
 import { CheckCircleIcon } from '@chakra-ui/icons';
 import siteConfig from '../content/site.json';
 import Helmet from '../components/helmet';
+import { TeamsBanner } from '../components/teams-banner';
 
 export const SIGNUP_FORM_ACTION = 'https://www.getrevue.co/profile/roadmap/add_subscriber';
 export const SIGNUP_EMAIL_INPUT_NAME = 'member[email]';
@@ -87,6 +88,7 @@ export default function SignUp() {
       </Box>
 
       <OpensourceBanner />
+      <TeamsBanner />
       <Footer />
     </Box>
   );
