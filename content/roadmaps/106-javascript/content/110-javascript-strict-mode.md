@@ -11,3 +11,4 @@ Strict mode makes several changes to normal JavaScript semantics:
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode'>Strict mode</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/strict-mode'>Strict mode in JavaScript</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zHqL_sB4bEQ'>JavaScript Strict mode</BadgeLink>
