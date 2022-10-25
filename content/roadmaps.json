@@ -1062,6 +1062,7 @@
       "java",
       "nodejs"
     ],
+    "contentPathsFilePath": "/roadmaps/116-aspnet-core/content-paths.json",
     "id": "aspnet-core",
     "metaPath": "/roadmaps/116-aspnet-core/meta.json"
   }
