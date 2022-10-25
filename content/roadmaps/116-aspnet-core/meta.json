@@ -9,6 +9,9 @@
       "asp.net core engineer",
       "asp.net core skills",
       "guide to asp.net core",
+      "asp.net developer roadmap",
+      "asp net developer roadmap",
+      "asp developer roadmap",
       "asp.net core roadmap",
       "asp.net core skills",
       "asp.net core skills test",
@@ -33,7 +36,7 @@
   "isTextHeavy": false,
   "isCommunity": false,
   "isUpcoming": false,
-  "featured": false,
+  "featured": true,
   "isNew": true,
   "jsonUrl": "/project/aspnet-core.json",
   "versions": [

@@ -176,7 +176,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   }
 
   if (roadmap.id === 'aspnet-core') {
-    minHeight = ['515px', '1230px', '1310px', '1765px', '1765px', '1765px'];
+    minHeight = ['1278px', '2105px', '2748px', '2845px', '2845px', '2845px'];
   }
 
   return (
