@@ -7,3 +7,4 @@ The importance of sorting lies in the fact that data searching can be optimized 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://realpython.com/sorting-algorithms-python/'>Sorting Algorithms in Python</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/python_data_structure/python_sorting_algorithms.htm'>Python - Sorting Algorithms</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/heap-sort-in-python'>Advanced Sorting Algorithms (Heap Sort)</BadgeLink>
