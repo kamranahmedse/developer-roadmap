@@ -1,6 +1,6 @@
 # Browsers
 
-A web browser is a software application that enables a user to access and display web pages or other online content through its graphical user interface. 
+A web browser is a software application that enables a user to access and display web pages or other online content through it's graphical user interface(GUI). 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.html5rocks.com/en/tutorials/internals/howbrowserswork/'>How Browsers Work</BadgeLink>

@@ -34,7 +34,7 @@ We have also listed down some free resources which you can use for the items lis
 * [Getting started with Gradle](https://docs.gradle.org/current/userguide/getting_started.html)
 Note: Android Studio comes with a working installation of Gradle, so you don’t need to install Gradle separately in that case.
 
-## Version Control Systems
+## Version Control Systems(VCS)
 Version control systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available but [Git](https://git-scm.com/) is the most common one these days.
 
 [![](/roadmaps/android/git-github.png)](/roadmaps/android/git-github.png)
@@ -85,7 +85,7 @@ I would highly recommend watching [this free course](https://www.udacity.com/cou
 
 ## Wrap Up
 
-That wraps it up for the android developer roadmap. Again, remember to not be exhausted by the list; just learn the basics and start working on some project, rest of the learnings will come along the way. Good luck!
+That wraps it up for the android developer roadmap. Again, remember to not be exhausted by the list, just learn the basics and start working on some project, rest of the learnings will come along the way. Good luck! Happy Coding :)
  
 For any suggestions, improvements and feedback, feel free to [submit an issue](https://github.com/kamranahmedse/developer-roadmap) or reach out to me on twitter [@kamranahmedse](https://twitter.com/kamranahmedse).
 
