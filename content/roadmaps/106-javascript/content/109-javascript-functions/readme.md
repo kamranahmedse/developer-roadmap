@@ -1,6 +1,6 @@
 # Functions
 
-Functions are blocks of code that execute whenever they are invoked. They are useful for placing code snippets executed in different places in the code.
+Functions exist so we can reuse code. They are blocks of code that execute whenever they are invoked. Each function is typically written to perform a particular task, like an addition function used to find the sum of two or more numbers. When numbers need to be added anywhere within your code, the addition function can be invoked as many times as necessary.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme="yellow" badgeText="Read" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Functions - MDN Docs</BadgeLink>
