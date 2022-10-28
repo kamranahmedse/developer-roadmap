@@ -9,3 +9,4 @@ Server-side rendering refers to the process that the service side completes the 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://vuejs.org/guide/scaling-up/ssr.html'>Server-Side Rendering (SSR)</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=GQzn7XRdzxY'>what is server side rendering?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=okvg3MRAPs0'>What is server-side rendering for web development?</BadgeLink>
+<BadgeLink badgeText='Read' href='https://svelte.dev/'>How to building user interfaces?</BadgeLink>
