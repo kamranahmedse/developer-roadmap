@@ -1,0 +1,66 @@
+<ResourceGroupTitle> Competitive Coding </ResourceGroupTitle>
+
+    Competitive Coding is nothing but a great way to learn programming by solving different sets of problems. 
+    Long story short, you will receive some problems/situations in programming which you will solve by programming.
+
+
+1. Choose a programming language:
+    Well first thing first, you need a language to learn. 
+    You need to learn its fundamentals and most important its data types, looping, playing with conditions, solve some pattern-related problems.
+
+
+2. Learn Data Structures:
+    The best way to learn them is by practicing them, most important is to understand why we need them and how to use them.
+    a. Array
+    b. Queue
+    c. Linked List, Doubly Linked List, Circular Linked List
+    d. Tree
+    e. Heap
+    f. Graph
+
+
+ 3. Calculate Time and Space complexity:
+    The most important thing in Competitive Coding is to calculate space and time complexity. 
+
+ 4. Get Started With Algorithms:
+    Basic Algorithms:
+    If you are here, it means you are confident enough to know why algorithms is important.
+
+    So, Let’s list out some basic algorithms first:
+
+a. Searching:
+
+— Depth First Searching
+
+— Breath First Searching
+
+b. Sorting:
+
+— Merge Sorting
+
+— Quick Sorting
+
+— Bucket Sorting
+
+— Heap Sorting
+
+— Insertion sort etc.
+
+c. Hashing
+
+d. 2 pointers
+
+e. Backtracking
+
+Intermediate Algorithms:
+Greedy Algo
+Dynamic Programming
+Graph DSA
+Advanced Algorithms:
+Game Theory
+Advanced String Algorithms
+Types of Trees
+Set Theory etc.
+
+
+
