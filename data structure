@@ -1,0 +1,68 @@
+DATA STRUCTURE ROADMAP
+
+5 Steps to learn DS.
+1. Learn a programming language of your choice
+2. Learn about Time and Space complexities
+3. Learn the basics of individual Data Structures
+4. Practice, Practice, and Practice more
+5. Compete, Compete and Compete more.
+
+
+1) Learn a programming language of your choice:
+    Firstly, select a language of your choice, be it Java, C, C++, Python, or any other language of your choice. Before learning how to code in that language you should learn about the building pieces of the language: the basic syntax, the data types, variables, operators, conditional statements, loops, functions, etc.
+
+2) Learn about Time and Space complexities:
+    Time Complexity: Time complexity is used to measure the amount of time required to execute the code.
+    Space Complexity: Space complexity means the amount of space required to execute successfully the functionalities of the code
+    
+    
+3) Learn the basics of individual Data Structures
+    a) Array:
+        Here are some topics about array which you must learn:
+        Rotation of Array – Rotation of array means shifting the elements of an array in a circular manner. 
+        Rearranging an array – Rearrangement of array elements suggests the changing of an initial order of elements following some conditions or operations.
+        Range queries in the array – Often you need to perform operations on a range of elements. These functions are known as range queries.
+        Multidimensional array – These are arrays having more than one dimension. The most used one is the 2-dimensional array, commonly known as a matrix.
+        Kadane’s algorithm
+        Dutch national flag algorithm
+
+      b) Linked List:
+          The topics which you must want to cover are:
+          Singly Linked List – In this, each node of the linked list points only to its next node.
+          Circular Linked List – This is the type of linked list where the last node points back to the head of the linked list.
+          Doubly Linked List – In this case, each node of the linked list holds two pointers, one point to the next node and the other points to the previous node.
+          
+      c) String:
+           Here are some must-know concepts of string:
+           Subsequence and substring – A subsequence is a sequence that can be derived from a string deleting one or more elements. A substring is a contiguous segment of the string.
+           Reverse and rotation in a string – Reverse operation is interchanging the position of characters of a string such that the first becomes the last, the second becomes the second last, and so on.
+           Binary String – A binary string is a string made up of only two types of characters.
+           Palindrome – A palindrome string is a string in which the elements at the same distance from the center of the string are the same.
+           Lexicographic pattern – Lexicographical pattern is the pattern based on the ASCII value or can be said in dictionary order.
+           Pattern searching – Pattern searching is searching a given pattern in the string. It is an advanced topic of string.
+           
+       d) Stack:
+            Stack is a linear data structure which follows a particular order in which the operations are performed. The order may be LIFO(Last In First Out)
+
+       e) Queue:
+            A Queue is a linear structure which follows First In First Out (FIFO) approach in its individual operations.
+            
+       f) Tree Data Structure:
+            Tree data structure is similar to a tree we see in nature but it is upside down. It also has a root and leaves. The root is the first node of the tree and the leaves are the ones at the bottom-most level. The special characteristic of a tree is that there is only one path to go from any of its nodes to any other node.
+        
+        g) Graph Data Structure:
+              A Graph is a non-linear data structure consisting of a finite set of vertices(or nodes) and a set of edges that connect a pair of nodes.
+             
+             
+             
+4) Practice, Practice, and Practice more:
+    With this, we have completed the basics of major Data structure, and now it’s time to try our hands on each of them.
+    This is highly applicable for learning DS. You have learned a lot of data structures and now you need a lot of practice.
+    “Practice makes a man perfect.”
+    
+    
+5) Compete, Compete and Compete more.
+    Now it is time to test out your skills and efficiency. The best possible way is to compete with others. This will help you find out your position among others and also give you a hint on the areas you are lacking. 
+
+There are several online competitive platforms available where you can participate regularly. Also, some online challenges are held from time to time in a year which also provides lots of prizes and opportunities.
+      
