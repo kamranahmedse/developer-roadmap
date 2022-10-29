@@ -4709,7 +4709,7 @@
                           "zOrder": "0",
                           "measuredW": "105",
                           "measuredH": "28",
-                          "x": "65",
+                          "x": "69",
                           "y": "0",
                           "properties": {
                             "color": "16777215",
@@ -4723,12 +4723,12 @@
                           "zOrder": "1",
                           "measuredW": "35",
                           "measuredH": "28",
-                          "x": "0",
+                          "x": "-6",
                           "y": "0",
                           "properties": {
                             "color": "16777215",
                             "size": "20",
-                            "text": "http"
+                            "text": "https"
                           }
                         },
                         {
@@ -4737,7 +4737,7 @@
                           "zOrder": "2",
                           "measuredW": "5",
                           "measuredH": "28",
-                          "x": "37",
+                          "x": "43",
                           "y": "0",
                           "properties": {
                             "bold": "true",
@@ -4752,7 +4752,7 @@
                           "zOrder": "3",
                           "measuredW": "10",
                           "measuredH": "28",
-                          "x": "44",
+                          "x": "50",
                           "y": "1",
                           "properties": {
                             "color": "16777215",
@@ -4766,7 +4766,7 @@
                           "zOrder": "4",
                           "measuredW": "10",
                           "measuredH": "28",
-                          "x": "52",
+                          "x": "58",
                           "y": "1",
                           "properties": {
                             "color": "16777215",
