@@ -9,3 +9,5 @@ In javascript, the `==` operator does the type conversion of the operands before
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scaler.com/topics/javascript/difference-between-double-equals-and-triple-equals-in-javascript/'>The Difference Between == and === in Javascript</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness#same-value_equality_using_object.is'>Equality comparisons and sameness - MDN</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/js/js_comparisons.asp'>JavaScript Comparison and Logical Operators</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/javascript-basic-syntax/?ref=lbp'>JavaScript Basic Syntax</BadgeLink>
