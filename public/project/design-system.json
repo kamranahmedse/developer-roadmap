@@ -1462,95 +1462,95 @@
           },
           "children": {
             "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "320",
-                  "h": "45",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "borderColor": "4273622",
-                    "color": "4273622"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "28",
-                  "x": "141",
-                  "y": "8",
-                  "properties": {
-                    "color": "16777215",
-                    "size": "20",
-                    "text": "roadmap.sh"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "45",
-                  "measuredH": "28",
-                  "x": "66",
-                  "y": "8",
-                  "properties": {
-                    "color": "16777215",
-                    "size": "20",
-                    "text": "https"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "Label",
-                  "zOrder": "3",
-                  "measuredW": "5",
-                  "measuredH": "28",
-                  "x": "113",
-                  "y": "8",
-                  "properties": {
-                    "bold": "true",
-                    "color": "16777215",
-                    "size": "20",
-                    "text": ":"
-                  }
-                },
-                {
-                  "ID": "4",
-                  "typeID": "Label",
-                  "zOrder": "4",
-                  "measuredW": "10",
-                  "measuredH": "28",
-                  "x": "120",
-                  "y": "9",
-                  "properties": {
-                    "color": "16777215",
-                    "size": "20",
-                    "text": "/"
-                  }
-                },
-                {
-                  "ID": "5",
-                  "typeID": "Label",
-                  "zOrder": "5",
-                  "measuredW": "10",
-                  "measuredH": "28",
-                  "x": "128",
-                  "y": "9",
-                  "properties": {
-                    "color": "16777215",
-                    "size": "20",
-                    "text": "/"
-                  }
-                }
-              ]
-            }
+				"control": [
+					{
+					  "ID": "0",
+					  "typeID": "Canvas",
+					  "zOrder": "0",
+					  "w": "320",
+					  "h": "45",
+					  "measuredW": "100",
+					  "measuredH": "70",
+					  "x": "0",
+					  "y": "0",
+					  "properties": {
+						"borderColor": "4273622",
+						"color": "4273622"
+					  }
+					},
+					{
+					  "ID": "1",
+					  "typeID": "Label",
+					  "zOrder": "1",
+					  "measuredW": "105",
+					  "measuredH": "28",
+					  "x": "145",
+					  "y": "8",
+					  "properties": {
+						"color": "16777215",
+						"size": "20",
+						"text": "roadmap.sh"
+					  }
+					},
+					{
+					  "ID": "2",
+					  "typeID": "Label",
+					  "zOrder": "2",
+					  "measuredW": "35",
+					  "measuredH": "28",
+					  "x": "70",
+					  "y": "8",
+					  "properties": {
+						"color": "16777215",
+						"size": "20",
+						"text": "https"
+					  }
+					},
+					{
+					  "ID": "3",
+					  "typeID": "Label",
+					  "zOrder": "3",
+					  "measuredW": "5",
+					  "measuredH": "28",
+					  "x": "119",
+					  "y": "8",
+					  "properties": {
+						"bold": "true",
+						"color": "16777215",
+						"size": "20",
+						"text": ":"
+					  }
+					},
+					{
+					  "ID": "4",
+					  "typeID": "Label",
+					  "zOrder": "4",
+					  "measuredW": "10",
+					  "measuredH": "28",
+					  "x": "126",
+					  "y": "9",
+					  "properties": {
+						"color": "16777215",
+						"size": "20",
+						"text": "/"
+					  }
+					},
+					{
+					  "ID": "5",
+					  "typeID": "Label",
+					  "zOrder": "5",
+					  "measuredW": "10",
+					  "measuredH": "28",
+					  "x": "134",
+					  "y": "9",
+					  "properties": {
+						"color": "16777215",
+						"size": "20",
+						"text": "/"
+					  }
+					}
+				  ]
+			}
           }
         },
         {
