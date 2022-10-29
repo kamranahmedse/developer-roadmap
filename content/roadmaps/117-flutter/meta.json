@@ -52,5 +52,6 @@
     "golang",
     "java",
     "nodejs"
-  ]
+  ],
+  "contentPathsFilePath": "./content-paths.json"
 }
