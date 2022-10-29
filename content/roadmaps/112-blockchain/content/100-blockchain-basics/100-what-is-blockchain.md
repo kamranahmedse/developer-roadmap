@@ -5,5 +5,5 @@ A blockchain is a decentralized, distributed, and oftentimes public, digital led
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.investopedia.com/terms/b/blockchain.asp'>Blockchain Explained</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/blockchain/decentralization-in-blockchain/'>What is decentralization?</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/SSo_EIwHSd4'>How does a blockchain work?</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/4ff9esY_4aU'>What Is a Blockchain? | Blockchain Basics for Developers</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/SSo_EIwHSd4'>How blockchain works?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/4ff9esY_4aU'>What is a Blockchain? | Blockchain Basics for Developers</BadgeLink>
