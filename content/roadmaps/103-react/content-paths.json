@@ -28,6 +28,7 @@
   "react-fundamental-topics:basic-hooks": "/roadmaps/103-react/content/100-react-fundamental-topics/108-basic-hooks/readme.md",
   "react-fundamental-topics:basic-hooks:use-state": "/roadmaps/103-react/content/100-react-fundamental-topics/108-basic-hooks/100-use-state.md",
   "react-fundamental-topics:basic-hooks:use-effect": "/roadmaps/103-react/content/100-react-fundamental-topics/108-basic-hooks/101-use-effect.md",
+  "react-fundamental-topics:events": "/roadmaps/103-react/content/100-react-fundamental-topics/109-events.md",
   "react-ecosystem": "/roadmaps/103-react/content/102-react-ecosystem/readme.md",
   "react-ecosystem:routers": "/roadmaps/103-react/content/102-react-ecosystem/100-routers/readme.md",
   "react-ecosystem:routers:react-router": "/roadmaps/103-react/content/102-react-ecosystem/100-routers/100-react-router.md",
