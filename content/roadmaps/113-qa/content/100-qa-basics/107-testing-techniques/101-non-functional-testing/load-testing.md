@@ -4,4 +4,4 @@ Load Testing is a type of Performance Testing that determines the performance of
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/software-testing-load-testing/'>Software Testing: Load Testing</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://loadninja.com/load-testing/'>Load testing and Best Practises</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://loadninja.com/load-testing/'>Load testing and Best Practices</BadgeLink>
