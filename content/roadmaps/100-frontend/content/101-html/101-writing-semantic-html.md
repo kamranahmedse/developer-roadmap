@@ -8,4 +8,3 @@ Semantic element clearly describes its meaning to both the browser and the devel
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://hackernoon.com/how-to-write-semantic-html-dkq3ulo'>How To Write Semantic HTML</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.freecodecamp.org/news/html-best-practices/'>HTML Best Practices – How to Build a Better HTML-Based Website</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://blog.hubspot.com/website/semantic-html'>Semantic HTML: What It Is and How It Improves Your Site</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://hackernoon.com/how-to-write-semantic-html-dkq3ulo'>How To Write Semantic HTML</BadgeLink>
