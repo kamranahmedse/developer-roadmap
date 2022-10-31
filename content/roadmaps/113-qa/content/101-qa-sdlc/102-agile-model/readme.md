@@ -7,3 +7,4 @@ The Agile software development methodology is one of the simplest and most effec
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/agile-scrum-extreme-testing.html'>Agile Methodology: What is Agile Model in Software Testing?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/software-engineering-agile-model'>Agile Model</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://agilemanifesto.org/'>Manifesto for Agile Software Development</BadgeLink>

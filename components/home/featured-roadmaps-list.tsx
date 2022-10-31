@@ -15,6 +15,12 @@ export const upcomingRoadmaps = [
     id: 'react-native'
   },
   {
+    type: 'Role Based',
+    title: 'Cyber Security',
+    description: 'Step by step guide to become a Cyber Security Expert',
+    id: 'cyber-security'
+  },
+  {
     type: 'Skill Based',
     title: 'TypeScript',
     description: 'Step by step guide to learn TypeScript in 2022',

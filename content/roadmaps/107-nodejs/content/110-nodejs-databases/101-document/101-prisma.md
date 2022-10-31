@@ -5,3 +5,4 @@ Prisma is an open source next-generation ORM in the TypeScript ecosystem. It off
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.prisma.io/'>Prisma Website</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=-7r4whMKt1s'>Prisma & MongoDB Youtube Tutorial</BadgeLink>
