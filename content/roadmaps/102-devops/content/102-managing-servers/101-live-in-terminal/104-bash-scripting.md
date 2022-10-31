@@ -14,4 +14,5 @@ With a CLI shell like Bash, you type commands into the program to directly contr
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/'>Shell Scripting for Beginners</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html'>A guide to Bash</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://wiki.bash-hackers.org/'>The Bash Hackers Wiki</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://rudrakshi.hashnode.dev/bash-shell-scripting-guide'>Bash Shell Scripting Guide</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.codecademy.com/learn/bash-scripting'>Codecademy - Learn Bash Scripting</BadgeLink>
