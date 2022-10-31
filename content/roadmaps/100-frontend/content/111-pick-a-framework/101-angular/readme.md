@@ -10,3 +10,4 @@ Angular is a component based front-end development framework built on TypeScript
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://angular.io/start'>Official - Getting started with Angular</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=3qBXWUpoPHo'>Angular for Beginners Course [Full Front End Tutorial with TypeScript]</BadgeLink>
