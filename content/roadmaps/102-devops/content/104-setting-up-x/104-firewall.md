@@ -5,3 +5,7 @@ Firewall is a **network security device** that monitors and filters incoming and
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/'>What is Firewall?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cisco.com/c/en_in/products/security/firewalls/what-is-a-firewall.html'>Types of Firewall</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/introduction-of-firewall-in-computer-network/'> Introduction of Firewall in Computer Network</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/introduction-of-firewall-in-computer-network/'> What is Firewall in Computer Network?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/what-is-a-firewall-and-why-do-you-need-one'>Why do we need Firewalls?</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Watch' href='https://www.youtube.com/watch?v=9GZlVOafYTg'> Firewalls and Network Security - SimpliLearn</BadgeLink>

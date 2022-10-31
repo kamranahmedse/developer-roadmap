@@ -51,6 +51,8 @@ const roadmaps: Record<string, RoadmapType> = {
   qa: require('../public/project/qa.json'),
   'design-system': require('../public/project/design-system.json'),
   'software-architect': require('../public/project/software-architect.json'),
+  'aspnet-core': require('../public/project/aspnet-core.json'),
+  'flutter': require('../public/project/flutter.json'),
 };
 
 if (!roadmapKey || !roadmaps[roadmapKey]) {

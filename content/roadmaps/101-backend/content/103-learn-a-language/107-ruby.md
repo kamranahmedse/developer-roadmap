@@ -6,3 +6,4 @@ Ruby is a high-level, interpreted programming language that blends Perl, Smallta
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.ruby-lang.org/en/'>Ruby Website</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.ruby-lang.org/en/documentation/quickstart/'>Learn Ruby in 20 minutes</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.codecademy.com/learn/learn-ruby'>Learn Ruby | Codecademy</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://thenewstack.io/ruby-a-programmers-best-friend/'>Ruby, An Introduction to a Programmer’s Best Friend</BadgeLink>

@@ -9,3 +9,4 @@ Web security refers to the protective measures taken by the developers to protec
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://sucuri.net/guides/owasp-top-10-security-vulnerabilities-2021/'>OWASP Top 10 Security Risks</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://cheatsheetseries.owasp.org/cheatsheets/AJAX_Security_Cheat_Sheet.html'>OWASP Cheatsheets</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP'>Content Security Policy (CSP)</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.youtube.com/playlist?list=PLH8n_ayg-60J9i3nsLybper-DR3zJw6Z5'>OWASP ZAP Step-by-Step Tutorial</BadgeLink>

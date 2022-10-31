@@ -175,6 +175,14 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['515px', '1230px', '1310px', '1765px', '1765px', '1765px'];
   }
 
+  if (roadmap.id === 'aspnet-core') {
+    minHeight = ['1278px', '2105px', '2748px', '2845px', '2845px', '2845px'];
+  }
+
+  if (roadmap.id === 'flutter') {
+    minHeight = ['830px', '1534px', '1553px', '2093px', '2093px', '2093px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
       {(isLoading || isRendering) && <RoadmapLoader />}
