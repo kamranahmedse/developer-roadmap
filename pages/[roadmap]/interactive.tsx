@@ -53,11 +53,6 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     }
 
     function clickListener(event: MouseEvent) {
-      const viewPortMeta = document.querySelector('meta[name=viewport]');
-      if (viewPortMeta) {
-        viewPortMeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
-      }
-
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
       const groupId = targetGroup?.dataset?.groupId;
       if (!targetGroup || !groupId) {
