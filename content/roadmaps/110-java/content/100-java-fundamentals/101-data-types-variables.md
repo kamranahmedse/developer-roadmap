@@ -9,4 +9,4 @@ Data Types are divided into two group -
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/java-variables.html'>What are Data Types & Variables?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-variables'>Java Variables</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.javatpoint.com/java-data-types'>Learn more about Data types and Variables</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-data-types'>Learn more about Data types and Variables</BadgeLink>
