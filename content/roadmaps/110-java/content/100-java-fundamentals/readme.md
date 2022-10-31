@@ -8,6 +8,7 @@ Learn about the fundamentals of Java such as basic syntax, data types, variables
 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/java/'>Java Basics - W3Schools</BadgeLink>
 <BadgeLink colorScheme='purple' badgeText='Watch' href='https://youtu.be/eIrMbAQSU34'>Java Tutorial for Beginners</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ'>Java + DSA + Interview Preparation Course (For beginners)</BadgeLink>
 <ResourceGroupTitle>Books</ResourceGroupTitle>
 
 <BadgeLink colorScheme='purple' badgeText='Book' href='https://www.amazon.co.uk/Head-First-Java-3rd-Brain-Friendly/dp/1491910771'>Head First Java</BadgeLink>
