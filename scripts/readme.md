@@ -8,7 +8,7 @@ Here is the list of scripts available:
 
 ## Sitemap
 
-Generates the sitemap with all the pages and guides
+The below mentioned command generates the sitemap with all the pages and guides
 
 ```shell
 npm run meta:sitemap
@@ -16,7 +16,7 @@ npm run meta:sitemap
 
 ## Roadmaps Meta
 
-Generates the `content/roadmaps.json` file by combining the `content/raodmaps/**/meta.json` content in each roadmap
+The below mentioned command generates the `content/roadmaps.json` file by combining the `content/raodmaps/**/meta.json` content in each roadmap
 
 ```shell
 npm run meta:roadmaps

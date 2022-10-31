@@ -7,3 +7,4 @@ Redux is a predictable state container for JavaScript apps. It helps you write a
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://redux.js.org/introduction/getting-started'>Official Getting Started to Redux</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://redux.js.org/tutorials/essentials/part-1-overview-concepts'>Official Tutorial to Learn Redux</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://egghead.io/courses/fundamentals-of-redux-course-from-dan-abramov-bd5cc867'>Fundamentals of Redux Course from Dan Abramov</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://youtube.com/watch?v=zrs7u6bdbUw'>Redux Tutorial - Beginner to Advanced</BadgeLink>
