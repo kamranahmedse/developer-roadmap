@@ -1121,6 +1121,7 @@
       "java",
       "nodejs"
     ],
+    "contentPathsFilePath": "/roadmaps/117-flutter/content-paths.json",
     "id": "flutter",
     "metaPath": "/roadmaps/117-flutter/meta.json"
   }
