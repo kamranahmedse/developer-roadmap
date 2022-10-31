@@ -6,3 +6,5 @@ Version control systems allow you to track changes to your codebase/files over t
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=zbKdDsNNOhg'>Version Control System Introduction</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=SWYqp7iY_Tc'>Git & GitHub Crash Course For Beginners</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/Y9XZQO1n_7c?t=21'>Learn Git in 20 Minutes</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://git-scm.com/docs'>Git Documentation</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.atlassian.com/git'>Learn Git by Atlassian</BadgeLink>

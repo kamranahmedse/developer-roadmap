@@ -53,11 +53,6 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     }
 
     function clickListener(event: MouseEvent) {
-      const viewPortMeta = document.querySelector('meta[name=viewport]');
-      if (viewPortMeta) {
-        viewPortMeta.setAttribute('content', "initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0");
-      }
-
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
       const groupId = targetGroup?.dataset?.groupId;
       if (!targetGroup || !groupId) {
@@ -177,6 +172,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
 
   if (roadmap.id === 'aspnet-core') {
     minHeight = ['1278px', '2105px', '2748px', '2845px', '2845px', '2845px'];
+  }
+
+  if (roadmap.id === 'flutter') {
+    minHeight = ['830px', '1534px', '1553px', '2093px', '2093px', '2093px'];
   }
 
   return (

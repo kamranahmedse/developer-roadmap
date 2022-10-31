@@ -15,3 +15,5 @@ CSS or Cascading Style Sheets is the language used to style the frontend of any 
 <BadgeLink colorScheme='green' badgeText='Course' href='https://flexbox.io/'>What The Flexbox!</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://www.codecademy.com/learn/learn-css'>Learn CSS | Codecademy</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Course' href='https://www.codecademy.com/learn/learn-intermediate-css'>Learn Intermediate CSS | Codecademy</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://100dayscss.com'>100 Days CSS Challenge</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scaler.com/topics/css'>CSS Tutorial | Scaler</BadgeLink>

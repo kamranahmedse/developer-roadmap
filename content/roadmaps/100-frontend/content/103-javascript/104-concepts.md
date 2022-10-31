@@ -11,3 +11,4 @@ Learn and understand the concepts such as Hoisting, Event Bubbling, Scope, Proto
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode'>JavaScript Strict Mode</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://dev.to/lydiahallie/javascript-visualized-event-loop-3dif'>JavaScript Visualized (7 Part Series)</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=7Tok22qxPzQ'>DOM vs Shadow DOM vs Virtual DOM</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://blog.greenroots.info/series/javascript-promises'>Demystifying JavaScript Promises</BadgeLink>

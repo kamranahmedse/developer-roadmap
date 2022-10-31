@@ -6,3 +6,4 @@ As a backend developer, you may not need to have proficient knowledge of the fro
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.w3schools.com/html/html_intro.asp'>W3Schools: Learn HTML</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools: Learn CSS</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools: JavaScript Tutorial</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://thenewstack.io/category/frontend-dev/'>Articles about Frontend Development</BadgeLink>
