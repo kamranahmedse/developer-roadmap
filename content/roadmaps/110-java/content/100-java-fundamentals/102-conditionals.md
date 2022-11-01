@@ -11,4 +11,5 @@ Java has the following conditional statements:
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/answers/what-are-conditional-statements-in-programming'>What are Conditional statements?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-if-else'>Conditionals in Java</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=YPK6NYMJt_A'>Conditionals in Java</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/ldYLYRNaucM'>Conditionals and Loops in Java</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/mA23x39DjbI'>Switch Statements + Nested Case in Java</BadgeLink>
