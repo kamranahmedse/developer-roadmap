@@ -5,6 +5,7 @@
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://docs.github.com/en/get-started/quickstart/hello-world'>GitHub: Quickstart</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://skills.github.com/'>Learn Github by doing</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=w3jLJU7DT5E'>What is GitHub?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=wpISo9TNjfU'>Git vs. GitHub: What's the difference?</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=RGOj5yH7evk'>Git and GitHub for Beginners</BadgeLink>

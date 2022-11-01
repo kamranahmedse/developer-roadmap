@@ -6,4 +6,5 @@ Axios is a client HTTP API based on the XMLHttpRequest interface provided by bro
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://axios-http.com/docs/intro'>Axios Getting Started</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/how-to-use-axios-with-react/'>How To Use Axios With React: The Definitive Guide</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/how-to-make-http-requests-like-a-pro-with-axios/#why'>How to make HTTP requests with Axios</BadgeLink>

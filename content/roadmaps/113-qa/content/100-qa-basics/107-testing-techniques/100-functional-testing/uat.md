@@ -4,3 +4,4 @@ User Acceptance Testing (UAT) is a type of testing performed by the end user or 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/user-acceptance-testing.html'>What is User Acceptance Testing (UAT)?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=AU8SV7091-s'>How to plan your UAT</BadgeLink>

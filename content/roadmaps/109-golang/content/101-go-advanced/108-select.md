@@ -7,5 +7,5 @@ A `select` blocks until one of its cases can run, then it executes that case. It
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://go.dev/tour/concurrency/5'>Select</BadgeLink>
 <BadgeLink badgeText='Read' href='https://gobyexample.com/select'>Go by Example: Select</BadgeLink>
-<BadgeLink badgeText='Read' herf='https://www.geeksforgeeks.org/select-statement-in-go-language/'>Select in Golang</BadgeLink>
+<BadgeLink badgeText='Read' href='https://www.geeksforgeeks.org/select-statement-in-go-language/'>Select in Golang</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=1c7ttSJDMAI'>Select Statement</BadgeLink>
