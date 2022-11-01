@@ -1,5 +1,15 @@
 [
   {
+    "id": "session-based-authentication",
+    "title": "Session Based Authentication",
+    "description": "Learn what is Session Based Authentication and how to implement it in Node.js",
+    "isNew": true,
+    "type": "textual",
+    "authorUsername": "kamranahmedse",
+    "updatedAt": "2022-11-01T19:59:14.191Z",
+    "createdAt": "2022-11-01T19:59:14.191Z"
+  },
+  {
     "id": "http-basic-authentication",
     "title": "HTTP Basic Authentication",
     "description": "Learn what is HTTP Basic Authentication and how to implement it in Node.js",
@@ -13,7 +23,7 @@
     "id": "basics-of-authentication",
     "title": "Basics of Authentication",
     "description": "Learn the basics of Authentication and Authorization",
-    "isNew": true,
+    "isNew": false,
     "type": "textual",
     "authorUsername": "kamranahmedse",
     "updatedAt": "2022-09-21T19:59:14.191Z",
