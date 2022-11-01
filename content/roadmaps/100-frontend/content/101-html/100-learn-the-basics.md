@@ -9,4 +9,4 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=qz0aGYrrlhU'>HTML Tutorial for Beginners: HTML Crash Course</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://htmlcheatsheet.com'>HTML Cheatsheet</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.scaler.com/topics/html'>Scaler: HTML</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='blue' href='https://www.freecodecamp.org/learn/2022/responsive-web-design/'>FreeCode Camp: Responsive web design</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='blue' href='https://www.freecodecamp.org/learn/2022/responsive-web-design/'>freeCodeCamp: Responsive web design</BadgeLink>
