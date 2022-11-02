@@ -1,1 +1,48 @@
-{}
+{
+    "seo": {
+      "title": "Start your career in the world of Developer Relations",
+      "description": "Community driven, articles, resources, guides, programs to get into Developer Relations. Learn the different roles like Developer Advocate, Developer Evangelist, Community Manager by following the steps, skills, resources and guides listed in this roadmap.",
+      "keywords": [
+        "guide to becoming a developer advocate",
+        "guide to becoming a developer evangelist",
+        "guide to becoming a community manager",
+        "developer advocate",
+        "developer evangelist",
+        "developer relations",
+        "community manager",
+        "devRel",
+        "developer advocate roadmap",
+        "developer relations roadmap",
+        "developer evagelist roadmap",
+        "community manager roadmap",
+        "developer advocate skills",
+        "developer relations skills",
+        "developer evagelist skills",
+        "community manager skills"
+      ]
+    },
+    "title": "Developer Relations",
+    "description": "Step by step guide to making a career in Developer Relations in 2022",
+    "featuredTitle": "Develope Relations",
+    "type": "role",
+    "featuredDescription": "Step by step guide to making a career in Developer Relations in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isUpcoming": false,
+    "featured": true,
+    "isNew": true,
+    "jsonUrl": "/project/developer-relations.json",
+    "versions": [
+      "latest"
+    ],
+    "author": {
+      "name": "Shruti Kuber",
+      "url": "https://kuberaspeaking.com"
+    },
+    "pdfUrl": "/pdfs/developer-relations.pdf",
+    "relatedRoadmaps": [
+      "python",
+      "nodejs"
+    ],
+    "contentPathsFilePath": "./content-paths.json"
+  }
