@@ -11,6 +11,17 @@
     "createdAt": "2022-10-01T19:59:14.191Z"
   },
   {
+    "id": "session-based-authentication",
+    "title": "Session Based Authentication",
+    "description": "Learn everything you need to know about session authentication",
+    "isNew": true,
+    "youtubeLink": "https://www.youtube.com/watch?v=gKkBEOq_shs",
+    "authorUsername": "kamranahmedse",
+    "duration": "2 minutes",
+    "updatedAt": "2022-11-02T19:59:14.191Z",
+    "createdAt": "2022-11-02T19:59:14.191Z"
+  },
+  {
     "id": "basics-of-authentication",
     "title": "Basics of Authentication",
     "description": "Learn everything you need to know about authentication with this Authentication Series",
