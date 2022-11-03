@@ -83,7 +83,7 @@ module.exports = function HomeHandler(req, res) {
     return res.redirect('/login');
   }
 
-  res.setHeader('Content-Type', 'text/HTML)
+  res.setHeader('Content-Type', 'text/HTML')
   res.write(`
     <h1>Welcome back ${req.session.userid}</h1>
     <a href="/logout">Logout</a>
@@ -111,7 +111,7 @@ module.exports = function LoginHandler(req, res) {
     return res.redirect('/');
   }
 
-  res.setHeader('Content-Type', 'text/HTML)
+  res.setHeader('Content-Type', 'text/HTML')
   res.write(`
     <h1>Login</h1>
     <form method="post" action="/process-login">
