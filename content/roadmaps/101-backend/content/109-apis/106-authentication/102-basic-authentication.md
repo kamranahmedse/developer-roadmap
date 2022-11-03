@@ -1,5 +1,8 @@
 # Basic authentication
-Basic authentication is a simple method for authenticating users before granting access to resources. When using the Basic Authentication, the client sends HTTP requests with the Authorization header that contains the word **Basic** followed by a space and a base64-encoded string username:password. Basic Authenication is not a very secured method as base64 is easily decoded. Therefore, it should be used together with other security mechanisms like HTTPS/SSL.
 
-#### Free Content 
-[What is Basic Authentication?](https://www.wallarm.com/what/what-is-basic-authentication-all-you-need-to-know)
+Given the name "Basic Authentication", you should not confuse Basic Authentication with the standard username and password authentication. Basic authentication is a part of the HTTP specification, and the details can be [found in the RFC7617](https://www.rfc-editor.org/rfc/rfc7617.html).
+
+Because it is a part of the HTTP specifications, all the browsers have native support for "HTTP Basic Authentication".
+
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://roadmap.sh/guides/http-basic-authentication'>HTTP Basic Authentication</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=mwccHwUn7Gc'>Illustrated HTTP Basic Authentication</BadgeLink>
