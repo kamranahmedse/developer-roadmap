@@ -188,9 +188,8 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
         onClose={() => setGroupId('')}
       />
 
+      { (!isLoading && !isRendering) && <ShareIcons url={`https://roadmap.sh/${roadmap.id}`} text={roadmap.description} /> }
       <div ref={roadmapRef} />
-
-      <ShareIcons url={`https://roadmap.sh/${roadmap.id}`} text={roadmap.description} />
     </Container>
   );
 }
