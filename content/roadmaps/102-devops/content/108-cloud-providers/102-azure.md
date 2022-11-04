@@ -1,6 +1,6 @@
 # Azure
 
-Microsoft Azure is a is a cloud computing service operated by Microsoft. Azure currently provides more than 200 products and cloud services.
+Microsoft Azure is a cloud computing service operated by Microsoft. Azure currently provides more than 200 products and cloud services.
 
 <BadgeLink badgeText='Official Website' colorScheme='blue' href='https://azure.microsoft.com/en-us/'>Azure Website</BadgeLink>
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://docs.microsoft.com/en-us/azure/'>Official Documentation</BadgeLink>
