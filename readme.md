@@ -53,7 +53,15 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 ![](https://i.imgur.com/waxVImv.png)
 
-If you think that these can be improved in any way, please do suggest. Also, if you would like to contribute to existing roadmaps or add a new roadmap, please open an issue or reach out to [@kamranahmedse](https://twitter.com/kamranahmedse).
+## Share with the community
+
+Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
+
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-reddit-red?logo=reddit)](https://reddit.com/submit?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-hacker%20news-orange?logo=ycombinator)](https://news.ycombinator.com/submitlink?u=https://roadmap.sh)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-twitter-03A9F4?logo=twitter)](https://twitter.com/share?url=https://roadmap.sh&t=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://roadmap.sh)
+[![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
 
 ## Development
 
