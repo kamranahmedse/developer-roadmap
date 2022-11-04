@@ -18,6 +18,7 @@ import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../signup';
 import { BellIcon, EmailIcon } from '@chakra-ui/icons';
 import { RelatedRoadmaps } from '../../components/related-roadmaps';
 import { TeamsBanner } from '../../components/teams-banner';
+import { ShareIcons } from '../../components/share-icons';
 
 type RoadmapProps = {
   roadmap: RoadmapType;

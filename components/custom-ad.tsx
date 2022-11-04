@@ -21,7 +21,7 @@ export const CustomAd = () => {
       bottom='15px'
       right='20px'
       zIndex={999}
-      display='flex'
+      display={['none', 'none', 'flex', 'flex']}
       maxWidth='330px'
       bg='white'
       boxShadow='0 1px 4px 1px hsla(0, 0%, 0%, .1)'

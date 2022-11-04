@@ -1,5 +1,5 @@
 import { useFetch } from 'use-http';
-import { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { Box, Container } from '@chakra-ui/react';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { GlobalHeader } from '../../components/global-header';
@@ -13,6 +13,7 @@ import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
 import { TeamsBanner } from '../../components/teams-banner';
+import { ShareIcons } from '../../components/share-icons';
 
 type RoadmapProps = {
   roadmap: RoadmapType;
@@ -179,7 +180,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   }
 
   return (
-    <Container maxW={'container.lg'} position="relative" minHeight={minHeight}>
+    <Container maxW={'container.lg'} position="relative" minHeight={minHeight} pos='relative'>
       {(isLoading || isRendering) && <RoadmapLoader />}
       <ContentDrawer
         roadmap={roadmap}
@@ -188,6 +189,8 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       />
 
       <div ref={roadmapRef} />
+
+      <ShareIcons url={`https://roadmap.sh/${roadmap.id}`} text={roadmap.description} />
     </Container>
   );
 }
