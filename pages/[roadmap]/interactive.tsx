@@ -179,6 +179,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['830px', '1534px', '1553px', '2093px', '2093px', '2093px'];
   }
 
+  if (roadmap.id === 'computer-science') {
+    minHeight = ['1222px', '1393px', '2288px', '3084px', '3084px', '3084px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight} pos='relative'>
       {(isLoading || isRendering) && <RoadmapLoader />}
