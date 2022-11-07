@@ -26,12 +26,12 @@ export const upcomingRoadmaps = [
     description: 'Step by step guide to learn TypeScript in 2022',
     id: 'typescript'
   },
-  {
-    type: 'Skill Based',
-    title: 'Rust',
-    description: 'Step by step guide to learn Rust in 2022',
-    id: 'rust'
-  },
+  // {
+  //   type: 'Skill Based',
+  //   title: 'Rust',
+  //   description: 'Step by step guide to learn Rust in 2022',
+  //   id: 'rust'
+  // },
 ];
 
 export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {

@@ -1,0 +1,1 @@
+# Type object pattern
