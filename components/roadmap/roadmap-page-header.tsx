@@ -116,7 +116,7 @@ function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
           <ModalCloseButton />
           <ModalBody p={6}>
             <Heading mb='5px' fontSize='2xl'>Subscribe</Heading>
-            <Text fontSize={'md'} color='gray.700'>Enter your below to receive updates to this roadmap.</Text>
+            <Text fontSize={'md'} color='gray.700'>Enter your email below to receive updates to this roadmap.</Text>
             <form action={SIGNUP_FORM_ACTION} method='post' target='_blank' onSubmit={() => {
               event({
                 category: 'Subscription',

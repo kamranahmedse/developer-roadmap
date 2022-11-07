@@ -19,10 +19,20 @@ import siteConfig from '../content/site.json';
 type MenuLinkProps = {
   text: string;
   link: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
+  isFancy?: boolean;
 };
 
 function MenuLink(props: MenuLinkProps) {
-  const { text, link } = props;
+  const { text, link, target = '_self', isFancy = false } = props;
+
+  const gradientProp = isFancy ? {
+    bgGradient: 'linear(to-r, yellow.100, teal.100)',
+    bgClip: 'text',
+    _hover: {
+      color: 'yellow.100'
+    }
+  } : {};
 
   return (
     <Link
@@ -35,6 +45,17 @@ function MenuLink(props: MenuLinkProps) {
       {text}
     </Link>
   );
+  return <Link
+    borderBottomWidth={0}
+    borderBottomColor='gray.500'
+    _hover={{ textDecoration: 'none', borderBottomColor: 'white' }}
+    fontWeight={500}
+    href={link}
+    target={target}
+    {...gradientProp}
+  >
+    {text}
+  </Link>;
 }
 
 function DesktopMenuLinks() {
@@ -59,6 +80,17 @@ function DesktopMenuLinks() {
         <ListItem>
           <MenuLink text={'Videos'} link={'/watch'} />
         </ListItem>
+    <Stack d={['none', 'flex', 'flex']} shouldWrapChildren isInline spacing='15px' alignItems='center' color='gray.50'
+           fontSize='15px'>
+      <MenuLink text={'Roadmaps'} link={'/roadmaps'} />
+      <MenuLink text={'Guides'} link={'/guides'} />
+
+      <MenuLink
+        target={'_blank'}
+        text={'We are Hiring'}
+        isFancy
+        link={'https://docs.google.com/forms/d/e/1FAIpQLSesFpPxgKx_8-L5hm7fw6NQpgGixrMGC4Cg3M8NHPQhFfSajQ/viewform'}
+      />
 
         <ListItem>
           <Link

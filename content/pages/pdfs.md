@@ -8,6 +8,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Frontend Roadmap** - [Roadmap Link](https://roadmap.sh/frontend) / [PDF Link](https://roadmap.sh/pdfs/frontend.pdf)
 * **Backend Roadmap** - [Roadmap Link](https://roadmap.sh/backend) / [PDF Link](https://roadmap.sh/pdfs/backend.pdf)
 * **DevOps Roadmap** - [Roadmap Link](https://roadmap.sh/devops) / [PDF Link](https://roadmap.sh/pdfs/devops.pdf)
+* **Computer Science Roadmap** - [Roadmap Link](https://roadmap.sh/computer-science) / [PDF Link](https://roadmap.sh/pdfs/computer-science.pdf)
 * **QA Roadmap** - [Roadmap Link](https://roadmap.sh/qa) / [PDF Link](https://roadmap.sh/pdfs/qa.pdf)
 * **ASP.NET Core Roadmap** - [Roadmap Link](https://roadmap.sh/aspnet-core) / [PDF Link](https://roadmap.sh/pdfs/aspnet-core.pdf)
 * **Flutter Roadmap** - [Roadmap Link](https://roadmap.sh/flutter) / [PDF Link](https://roadmap.sh/pdfs/flutter.pdf)

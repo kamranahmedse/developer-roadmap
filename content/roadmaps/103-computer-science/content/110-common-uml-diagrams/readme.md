@@ -1,0 +1,1 @@
+# Common uml diagrams

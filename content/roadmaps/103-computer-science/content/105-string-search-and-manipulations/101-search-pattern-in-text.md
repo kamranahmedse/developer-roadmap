@@ -1,0 +1,1 @@
+# Search pattern in text
