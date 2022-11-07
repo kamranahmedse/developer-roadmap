@@ -12,25 +12,25 @@ export const upcomingRoadmaps = [
     type: 'Role Based',
     title: 'React Native',
     description: 'Step by step guide to become a React Native Developer',
-    id: 'react-native'
+    id: 'react-native',
   },
   {
     type: 'Role Based',
     title: 'Cyber Security',
     description: 'Step by step guide to become a Cyber Security Expert',
-    id: 'cyber-security'
+    id: 'cyber-security',
   },
   {
     type: 'Skill Based',
     title: 'TypeScript',
     description: 'Step by step guide to learn TypeScript in 2022',
-    id: 'typescript'
+    id: 'typescript',
   },
   {
     type: 'Skill Based',
     title: 'Rust',
     description: 'Step by step guide to learn Rust in 2022',
-    id: 'rust'
+    id: 'rust',
   },
 ];
 
@@ -39,8 +39,16 @@ export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
 
   return (
     <>
-      <Tag bg='gray.400' mb={4}>{title}</Tag>
-      <SimpleGrid columns={[1, 2, 3]} spacing={['10px', '10px', '15px']} mb='40px'>
+      <Tag bg="gray.400" mb={4} aria-labelledby="tag">
+        {title}
+      </Tag>
+      <SimpleGrid
+        columns={[1, 2, 3]}
+        spacing={['10px', '10px', '15px']}
+        mb="40px"
+        as="article"
+        id="tag"
+      >
         <>
           {roadmaps.map((roadmap: RoadmapType, counter: number) => (
             <HomeRoadmapItem
@@ -48,14 +56,18 @@ export function FeaturedRoadmapsList(props: FeaturedRoadmapsListProps) {
               url={`/${roadmap.id}`}
               key={roadmap.id}
               colorIndex={counter}
-              title={roadmap.featuredTitle === 'Software Design and Architecture' ? 'Software Design' : roadmap.featuredTitle}
+              title={
+                roadmap.featuredTitle === 'Software Design and Architecture'
+                  ? 'Software Design'
+                  : roadmap.featuredTitle
+              }
               isCommunity={roadmap.isCommunity}
               isNew={roadmap.isNew}
               subtitle={roadmap.featuredDescription}
             />
           ))}
           {upcomingRoadmaps
-            .filter(roadmap => roadmap.type === title)
+            .filter((roadmap) => roadmap.type === title)
             .map((roadmap, counter) => (
               <HomeRoadmapItem
                 isUpcoming={true}

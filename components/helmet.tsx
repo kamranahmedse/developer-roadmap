@@ -41,7 +41,14 @@ function getRichSnippetJson(roadmap: RoadmapType) {
 }
 
 const Helmet = (props: HelmetProps) => {
-  const { roadmap, title, canonical, description, keywords, noIndex = false } = props;
+  const {
+    roadmap,
+    title,
+    canonical,
+    description,
+    keywords,
+    noIndex = false,
+  } = props;
 
   return (
     <NextHead>
@@ -59,7 +66,7 @@ const Helmet = (props: HelmetProps) => {
         content={keywords ? keywords.join(',') : siteConfig.keywords.join(',')}
       />
 
-      {noIndex && <meta name="robots" content="noindex" /> }
+      {noIndex && <meta name="robots" content="noindex" />}
 
       <meta
         name="viewport"
