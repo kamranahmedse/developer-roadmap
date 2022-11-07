@@ -7,10 +7,14 @@ import siteConfig from '../content/site.json';
 type MenuLinkProps = {
   text: string;
   link: string;
+  target?: '_blank' | '_self' | '_parent' | '_top';
+  isFancy?: boolean;
 };
 
 function MenuLink(props: MenuLinkProps) {
-  const { text, link } = props;
+  const { text, link, target = '_self', isFancy = false } = props;
+
+  const gradientProp = isFancy ? { bgGradient: 'linear(to-r, yellow.100, teal.100)', bgClip: 'text' } : {};
 
   return <Link
     borderBottomWidth={0}
@@ -18,6 +22,8 @@ function MenuLink(props: MenuLinkProps) {
     _hover={{ textDecoration: 'none', borderBottomColor: 'white' }}
     fontWeight={500}
     href={link}
+    target={target}
+    {...gradientProp}
   >
     {text}
   </Link>;
@@ -29,7 +35,13 @@ function DesktopMenuLinks() {
            fontSize='15px'>
       <MenuLink text={'Roadmaps'} link={'/roadmaps'} />
       <MenuLink text={'Guides'} link={'/guides'} />
-      <MenuLink text={'Videos'} link={'/watch'} />
+
+      <MenuLink
+        target={'_blank'}
+        text={'We are Hiring'}
+        isFancy
+        link={'https://docs.google.com/forms/d/e/1FAIpQLSesFpPxgKx_8-L5hm7fw6NQpgGixrMGC4Cg3M8NHPQhFfSajQ/viewform'}
+      />
 
       <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
             _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
