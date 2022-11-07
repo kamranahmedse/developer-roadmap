@@ -3159,13 +3159,13 @@
           "ID": "13236",
           "typeID": "Label",
           "zOrder": "287",
-          "measuredW": "106",
+          "measuredW": "281",
           "measuredH": "28",
           "x": "382",
           "y": "196",
           "properties": {
             "size": "20",
-            "text": "References"
+            "text": "References / Other Resources"
           }
         },
         {
@@ -3400,7 +3400,7 @@
                   "y": "14",
                   "properties": {
                     "size": "18",
-                    "text": "Click here / Important Note"
+                    "text": "Important Note / Click here"
                   }
                 },
                 {
@@ -3412,7 +3412,7 @@
                   "w": "24",
                   "h": "24",
                   "x": "18",
-                  "y": "17",
+                  "y": "18",
                   "children": {
                     "controls": {
                       "control": [
@@ -3445,7 +3445,7 @@
                               "ID": "check-circle",
                               "size": "small"
                             },
-                            "color": "10066329"
+                            "color": "13576743"
                           }
                         }
                       ]
