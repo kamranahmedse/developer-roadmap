@@ -14,7 +14,13 @@ type MenuLinkProps = {
 function MenuLink(props: MenuLinkProps) {
   const { text, link, target = '_self', isFancy = false } = props;
 
-  const gradientProp = isFancy ? { bgGradient: 'linear(to-r, yellow.100, teal.100)', bgClip: 'text' } : {};
+  const gradientProp = isFancy ? {
+    bgGradient: 'linear(to-r, yellow.100, teal.100)',
+    bgClip: 'text',
+    _hover: {
+      color: 'yellow.100'
+    }
+  } : {};
 
   return <Link
     borderBottomWidth={0}
