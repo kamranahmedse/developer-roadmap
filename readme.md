@@ -33,6 +33,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Frontend Roadmap](https://roadmap.sh/frontend)
 - [Backend Roadmap](https://roadmap.sh/backend)
 - [DevOps Roadmap](https://roadmap.sh/devops)
+- [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
