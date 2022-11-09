@@ -1,4 +1,4 @@
-# Database indexes
+# Database Indexes
 
 An index is a data structure that you build and assign on top of an existing table that basically looks through your table and tries to analyze and summarize so that it can create shortcuts.
 
