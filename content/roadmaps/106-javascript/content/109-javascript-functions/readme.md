@@ -5,3 +5,4 @@ Functions exist so we can reuse code. They are blocks of code that execute whene
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme="yellow" badgeText="Read" href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions">Functions - MDN Docs</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/N8ap4k_1QEQ'>JavaScript Functions - Programming with Mosh</BadgeLink>
+<BadgeLink colorScheme="yellow" badgeText="Read" href="https://www.codeguage.com/courses/js/functions-basics">JavaScript Functions in Detail - CodeGuage</BadgeLink>
