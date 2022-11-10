@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, CloseButton, Container, Flex, IconButton, Image, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, CloseButton, Container, Flex, IconButton, Link, Stack, Text } from '@chakra-ui/react';
 import RoadmapLogo from '../components/icons/roadmap.svg';
-import siteConfig from '../content/site.json';
 
 type MenuLinkProps = {
   text: string;
