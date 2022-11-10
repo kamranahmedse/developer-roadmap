@@ -44,7 +44,7 @@ function DesktopMenuLinks() {
 
       <MenuLink
         target={'_blank'}
-        text={'We are Hiring'}
+        text={'Hiring a DevRel'}
         isFancy
         link={'https://docs.google.com/forms/d/e/1FAIpQLSesFpPxgKx_8-L5hm7fw6NQpgGixrMGC4Cg3M8NHPQhFfSajQ/viewform'}
       />
