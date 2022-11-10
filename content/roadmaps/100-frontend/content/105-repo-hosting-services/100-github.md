@@ -4,6 +4,7 @@
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
+<BadgeLink badgeText='Course' colorScheme='green' href='https://www.eddiejaoude.io/portal'>GitHub complete course by Eddie Jaoude</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://docs.github.com/en/get-started/quickstart/hello-world'>GitHub: Quickstart</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://skills.github.com/'>Learn Github by doing</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=w3jLJU7DT5E'>What is GitHub?</BadgeLink>
