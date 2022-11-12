@@ -3,9 +3,9 @@ import { event } from '../lib/gtag';
 
 export function TeamsBanner() {
   return (
-    <Box bg='teal.500' borderTopWidth={1} py={['45px', '45px', '70px']} textAlign='center'>
-      <Container maxW='container.sm'>
-        <Heading as='h4' color={'white'} fontSize={['25px', '25px', '35px']} mb={['10px', '10px', '20px']}>Roadmaps for Teams</Heading>
+    <Box bg='teal.500' borderTopWidth={1} py={['45px', '45px', '70px']} textAlign='center' as='section'>
+      <Container maxW='container.sm' as='article'>
+        <Heading as='h2' color={'white'} fontSize={['25px', '25px', '35px']} mb={['10px', '10px', '20px']}>Roadmaps for Teams</Heading>
         <Text lineHeight='26px' color={'white'} fontSize={['15px', '15px', '18px']} mb='20px'>We are working on a solution for teams. Help us shape the platform!</Text>
         <Button onClick={() => {
           event({

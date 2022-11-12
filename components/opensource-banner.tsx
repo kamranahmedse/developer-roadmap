@@ -2,8 +2,8 @@ import { Box, Container, Heading, Link, Text } from '@chakra-ui/react';
 
 export function OpensourceBanner() {
   return (
-    <Box bg='white' borderTopWidth={1} py={['45px', '45px', '70px']} textAlign='center'>
-      <Container maxW='container.sm'>
+    <Box bg='white' borderTopWidth={1} py={['45px', '45px', '70px']} textAlign='center' as='section'>
+      <Container maxW='container.sm' as='article'>
         <Heading fontSize={['25px', '25px', '35px']} mb={['10px', '10px', '20px']}>Open Source</Heading>
         <Text lineHeight='26px' fontSize={['15px', '15px', '16px']} mb='20px'>The project is OpenSource,&nbsp;
           <Link

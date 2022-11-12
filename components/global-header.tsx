@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { HamburgerIcon } from '@chakra-ui/icons';
-import { Box, CloseButton, Container, Flex, IconButton, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, CloseButton, Container, Flex, IconButton, Link, Stack, Text, List, ListItem } from '@chakra-ui/react';
 import RoadmapLogo from '../components/icons/roadmap.svg';
 
 type MenuLinkProps = {
@@ -37,20 +37,30 @@ function MenuLink(props: MenuLinkProps) {
 function DesktopMenuLinks() {
   return (
     <Stack d={['none', 'flex', 'flex']} shouldWrapChildren isInline spacing='15px' alignItems='center' color='gray.50'
-           fontSize='15px'>
-      <MenuLink text={'Roadmaps'} link={'/roadmaps'} />
-      <MenuLink text={'Guides'} link={'/guides'} />
+           fontSize='15px' as='nav'>
+      <List display='flex' gap={4}>
+        <ListItem>
+          <MenuLink text={'Roadmaps'} link={'/roadmaps'} />
+        </ListItem>
+        <ListItem>
+          <MenuLink text={'Guides'} link={'/guides'} />
+        </ListItem>
 
-      <MenuLink
-        target={'_blank'}
-        text={'Hiring a DevRel'}
-        isFancy
-        link={'https://docs.google.com/forms/d/e/1FAIpQLSesFpPxgKx_8-L5hm7fw6NQpgGixrMGC4Cg3M8NHPQhFfSajQ/viewform'}
-      />
+        <ListItem>
+          <MenuLink
+            target={'_blank'}
+            text={'Hiring a DevRel'}
+            isFancy
+            link={'https://docs.google.com/forms/d/e/1FAIpQLSesFpPxgKx_8-L5hm7fw6NQpgGixrMGC4Cg3M8NHPQhFfSajQ/viewform'}
+          />
+        </ListItem>
 
-      <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
-            _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
-            fontWeight={500} href={'/signup'}>Subscribe</Link>
+        <ListItem>
+          <Link ml='10px' bgGradient='linear(to-l, yellow.700, red.600)' p='7px 10px' rounded='4px'
+                _hover={{ textDecoration: 'none', bgGradient: 'linear(to-l, red.800, yellow.700)' }}
+                fontWeight={500} href={'/signup'}>Subscribe</Link>
+        </ListItem>
+      </List>
     </Stack>
   );
 }
@@ -89,11 +99,22 @@ function MobileMenuLinks() {
                bg='gray.900'
                spacing='12px'
                zIndex={999}
+               as='nav'
         >
-          <Link href='/roadmaps'>Roadmaps</Link>
-          <Link href='/guides'>Guides</Link>
-          <Link href='/watch'>Videos</Link>
-          <Link href='/signup'>Subscribe</Link>
+          <List display='flex' flexDirection='column' gap={3} alignItems='center'>
+            <ListItem>
+              <Link href='/roadmaps'>Roadmaps</Link>
+            </ListItem>
+            <ListItem>
+              <Link href='/guides'>Guides</Link>
+            </ListItem>
+            <ListItem>
+              <Link href='/watch'>Videos</Link>
+            </ListItem>
+            <ListItem>
+              <Link href='/signup'>Subscribe</Link>
+            </ListItem>
+          </List>
           <CloseButton onClick={() => setIsOpen(false)} pos='fixed' top='40px' right='15px' size='lg' />
         </Stack>
       )}
@@ -109,7 +130,7 @@ export function GlobalHeader(props: GlobalHeaderProps) {
   const { variant = 'solid' } = props;
 
   return (
-    <Box bg={variant === 'solid' ? 'gray.900' : 'transparent'} p='20px 0'>
+    <Box bg={variant === 'solid' ? 'gray.900' : 'transparent'} p='20px 0' as='header'>
       <Container maxW='container.md'>
         <Flex justifyContent='space-between' alignItems='center'>
           <Box>

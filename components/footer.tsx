@@ -1,4 +1,4 @@
-import { Box, Container, Flex, Image, Link, Stack, Text } from '@chakra-ui/react';
+import { Box, Container, Flex, Image, Link, Stack, Text, List, ListItem } from '@chakra-ui/react';
 import siteConfig from '../content/site.json';
 import { CustomAd } from './custom-ad';
 import React from 'react';
@@ -6,25 +6,49 @@ import React from 'react';
 function NavigationLinks() {
   return (
     <>
-      <Stack isInline d={['none', 'none', 'flex']} color='gray.400' fontWeight={600} spacing='30px'>
-        <Link _hover={{ color: 'white' }} href='/roadmaps'>Roadmaps</Link>
-        <Link _hover={{ color: 'white' }} href='/guides'>Guides</Link>
-        <Link _hover={{ color: 'white' }} href='/watch'>Videos</Link>
-        <Link _hover={{ color: 'white' }} href='/about'>About</Link>
-        <Link _hover={{ color: 'white' }} href={siteConfig.url.youtube} target='_blank'>YouTube</Link>
+      <Stack isInline d={['none', 'none', 'flex']} color='gray.400' fontWeight={600} spacing='30px' as='nav'>
+        <List display='flex' gap={8}>
+          <ListItem>
+            <Link _hover={{ color: 'white' }} href='/roadmaps'>Roadmaps</Link>
+          </ListItem>
+          <ListItem>
+            <Link _hover={{ color: 'white' }} href='/guides'>Guides</Link>
+          </ListItem>
+          <ListItem>
+            <Link _hover={{ color: 'white' }} href='/watch'>Videos</Link>
+          </ListItem>
+          <ListItem>
+            <Link _hover={{ color: 'white' }} href='/about'>About</Link>
+          </ListItem>
+          <ListItem>
+            <Link _hover={{ color: 'white' }} href={siteConfig.url.youtube} target='_blank'>YouTube</Link>
+          </ListItem>
+        </List>
       </Stack>
 
-      <Stack d={['flex', 'flex', 'none']} color='gray.400' fontWeight={600} spacing={0}>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/roadmaps'>Roadmaps</Link>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/guides'>Guides</Link>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/watch'>Videos</Link>
-        <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
-              href='/about'>About</Link>
-        <Link py='7px' _hover={{ color: 'white' }} target='_blank'
-              href={siteConfig.url.youtube}>YouTube</Link>
+      <Stack d={['flex', 'flex', 'none']} color='gray.400' fontWeight={600} spacing={0} as='nav'>
+        <List display='flex' flexDirection='column' gap={0}>
+          <ListItem display='flex'>
+            <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
+                  href='/roadmaps' width='100%'>Roadmaps</Link>
+          </ListItem>
+          <ListItem display='flex'>
+            <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
+                  href='/guides' width='100%'>Guides</Link>
+          </ListItem>
+          <ListItem display='flex'>
+            <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
+                  href='/watch' width='100%'>Videos</Link>
+          </ListItem>
+          <ListItem display='flex'>
+            <Link py='7px' borderBottomWidth={1} borderBottomColor='gray.800' _hover={{ color: 'white' }}
+                  href='/about' width='100%'>About</Link>
+          </ListItem>
+          <ListItem display='flex'>
+            <Link py='7px' _hover={{ color: 'white' }} target='_blank'
+                  href={siteConfig.url.youtube} width='100%'>YouTube</Link>
+          </ListItem>
+        </List>
       </Stack>
     </>
   );
@@ -32,7 +56,7 @@ function NavigationLinks() {
 
 export function Footer() {
   return (
-    <Box bg='brand.hero' p={['25px 0', '25px 0', '40px 0']}>
+    <Box bg='brand.hero' p={['25px 0', '25px 0', '40px 0']} as='footer'>
       <Container maxW='container.md'>
         <NavigationLinks />
 
