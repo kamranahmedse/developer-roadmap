@@ -11,7 +11,6 @@ Using resolve() and reject(), we can communicate back to the caller what the res
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodejs.dev/en/learn/understanding-javascript-promises/'>Understanding Javascript Promises</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise'>Promise Methods</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://www.promisejs.org/'>Official Website</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Read' href='https://www.freecodecamp.org/news/javascript-promises-for-beginners/'>Official Website</BadgeLink>
