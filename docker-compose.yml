@@ -1,0 +1,10 @@
+version: '3'
+services:
+  react-ui:
+    container_name: rodemap.sh
+    build: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - /usr/src/app
+    
