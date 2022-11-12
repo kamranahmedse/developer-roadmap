@@ -6,5 +6,5 @@ services:
     ports:
       - "3000:3000"
     volumes:
-      - /usr/src/app
+      - /home/usr/src/app
     
