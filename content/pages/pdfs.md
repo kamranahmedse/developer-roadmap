@@ -13,6 +13,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **ASP.NET Core Roadmap** - [Roadmap Link](https://roadmap.sh/aspnet-core) / [PDF Link](https://roadmap.sh/pdfs/aspnet-core.pdf)
 * **Flutter Roadmap** - [Roadmap Link](https://roadmap.sh/flutter) / [PDF Link](https://roadmap.sh/pdfs/flutter.pdf)
 * **Software Architect Roadmap** - [Roadmap Link](https://roadmap.sh/software-architect) / [PDF Link](https://roadmap.sh/pdfs/software-architect.pdf)
+* **Software Design and Architecture Roadmap** - [Roadmap Link](https://roadmap.sh/software-design-architecture) / [PDF Link](https://roadmap.sh/pdfs/software-design-architecture.pdf)
 * **JavaScript Roadmap** - [Roadmap Link](https://roadmap.sh/javascript) / [PDF Link](https://roadmap.sh/pdfs/javascript.pdf)
 * **Node.js Roadmap** - [Roadmap Link](https://roadmap.sh/nodejs) / [PDF Link](https://roadmap.sh/pdfs/nodejs.pdf)
 * **Angular Roadmap** - [Roadmap Link](https://roadmap.sh/angular) / [PDF Link](https://roadmap.sh/pdfs/angular.pdf)
