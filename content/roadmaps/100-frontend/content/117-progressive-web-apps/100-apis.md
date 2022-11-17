@@ -6,3 +6,4 @@ One of the main purposes of PWAs is to provide a native-app-like experience. API
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://web.dev/progressive-web-apps/'>Progressive Web Apps</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps'>Progressive web apps (PWAs)</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.logrocket.com/project-fugu-5-new-apis-to-try-out-in-your-pwa/'> 5 new APIs to try out in your PWA</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/an-introduction-to-websockets-with-ballerina/'>An Introduction to WebSockets with Ballerina</BadgeLink>
