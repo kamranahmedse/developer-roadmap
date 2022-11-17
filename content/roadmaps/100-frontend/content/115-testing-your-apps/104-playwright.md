@@ -5,3 +5,4 @@ Playwright is an open-source test automation library initially developed by Micr
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://playwright.dev/'>Playwright Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.browserstack.com/guide/playwright-tutorial'>Playwright Tutorial: Learn Basics and Setup</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/playwright-a-time-saving-end-to-end-testing-framework/'>Playwright, a Time-Saving End-to-End Testing Framework</BadgeLink>
