@@ -5,3 +5,4 @@ Remix is a full stack web framework that lets you focus on the user interface an
 <ResourceGroupTitle>Free Resources</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://remix.run/'>Official Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://remix.run/docs/en/v1#getting-started'>Official Docs for Getting Started</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/remix-os-peek-future-android-desktop/'>Remix OS : A Peek into The Future of Android on the Desktop</BadgeLink>
