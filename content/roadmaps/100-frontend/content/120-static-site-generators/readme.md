@@ -6,5 +6,5 @@ A static site generator is a tool that generates a full static HTML website base
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.cloudflare.com/learning/performance/static-site-generator/'>What is a static site generator?</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://nextjs.org/docs/advanced-features/static-html-export'>Next.js SSG</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.gatsbyjs.com/docs/glossary/static-site-generator/'>Gatsby SSG</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.smashingmagazine.com/2021/10/building-ssg-11ty-vite-jam-sandwich/'>SSG — An 11ty, Vite And JAM Sandwich
-</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.smashingmagazine.com/2021/10/building-ssg-11ty-vite-jam-sandwich/'>SSG — An 11ty, Vite And JAM Sandwich</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/get-back-basics-static-website-generators/'>Get Back to Basics With Static Website Generators</BadgeLink>
