@@ -10,3 +10,4 @@ It is two things: first and foremost, it is an online repository for the publish
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.npmjs.com/'>Official Website</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://docs.npmjs.com/'>Official Documentation</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=jHDhaSSKmB0'>NPM Crash Course</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://github.com/sindresorhus/awesome-nodejs/'>List of awesome packages</BadgeLink>
