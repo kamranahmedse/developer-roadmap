@@ -9,7 +9,7 @@ To understand these commands, read through the manual pages by using `man` comma
 After enough exposure and practice to these commands, it will become easier to use these in practice
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.hostinger.com/tutorials/linux-commands'>34 Basic Linux Commands</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.hostinger.com/tutorials/linux-commands'>40 Basic Linux Commands</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/ibraheemdev/modern-unix'>A collection of modern/faster/saner alternatives to common unix commands</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.learnenough.com/command-line-tutorial'>Command Line Tutorial</BadgeLink>
 <BadgeLink colorScheme='green' badgeText='Challenge' href='https://cmdchallenge.com/'>Commandline Challenge</BadgeLink>
