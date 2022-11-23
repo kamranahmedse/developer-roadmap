@@ -66,6 +66,7 @@
   "state-management:velocity-x": "/roadmaps/117-flutter/content/111-state-management/103-velocity-x.md",
   "state-management:get-x": "/roadmaps/117-flutter/content/111-state-management/104-get-x.md",
   "state-management:redux": "/roadmaps/117-flutter/content/111-state-management/105-redux.md",
+  "state-management:riverpod": "/roadmaps/117-flutter/content/111-state-management/106-riverpod.md",
   "animations": "/roadmaps/117-flutter/content/112-animations/readme.md",
   "animations:curved-animations": "/roadmaps/117-flutter/content/112-animations/100-curved-animations.md",
   "animations:animation-controller": "/roadmaps/117-flutter/content/112-animations/101-animation-controller.md",
