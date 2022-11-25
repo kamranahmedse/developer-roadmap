@@ -2,6 +2,8 @@ import { Box, Button, Container, Heading, Link, Text } from '@chakra-ui/react';
 import { event } from '../lib/gtag';
 
 export function TeamsBanner() {
+  return null;
+
   return (
     <Box bg='teal.500' borderTopWidth={1} py={['45px', '45px', '70px']} textAlign='center'>
       <Container maxW='container.sm'>
