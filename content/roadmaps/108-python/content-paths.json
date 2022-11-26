@@ -36,6 +36,7 @@
   "python-package-managers:pypi": "/roadmaps/108-python/content/105-python-package-managers/100-pypi.md",
   "python-package-managers:pip": "/roadmaps/108-python/content/105-python-package-managers/101-pip.md",
   "python-frameworks": "/roadmaps/108-python/content/106-python-frameworks/readme.md",
+  "python-frameworks:fastapi": "/roadmaps/108-python/content/106-python-frameworks/102-fastapi.md",
   "python-frameworks:synchronous": "/roadmaps/108-python/content/106-python-frameworks/100-synchronous/readme.md",
   "python-frameworks:synchronous:django": "/roadmaps/108-python/content/106-python-frameworks/100-synchronous/100-django.md",
   "python-frameworks:synchronous:flask": "/roadmaps/108-python/content/106-python-frameworks/100-synchronous/101-flask.md",
