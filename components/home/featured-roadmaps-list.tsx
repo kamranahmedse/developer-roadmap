@@ -26,6 +26,12 @@ export const upcomingRoadmaps = [
     description: 'Step by step guide to learn TypeScript in 2022',
     id: 'typescript'
   },
+  {
+    type: 'Skill Based',
+    title: 'GraphQL',
+    description: 'Step by step guide to become a GraphQL developer',
+    id: 'graphql'
+  },
   // {
   //   type: 'Skill Based',
   //   title: 'Rust',
