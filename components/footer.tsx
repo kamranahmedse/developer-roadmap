@@ -67,7 +67,7 @@ export function Footer() {
 
           <Box maxWidth={'550px'} textAlign={['left', 'left', 'right']}>
             <Link display='flex' justifyContent={['flex-start', 'flex-start', 'flex-end']} fontWeight={600}
-                  _hover={{ textDecoration: 'none', color: 'white' }} href='/'>
+                  _hover={{ textDecoration: 'none', color: 'white' }} href='https://thenewstack.io/' target='_blank'>
               <Image alt='' w='195px' src='/tns.png' />
             </Link>
 
