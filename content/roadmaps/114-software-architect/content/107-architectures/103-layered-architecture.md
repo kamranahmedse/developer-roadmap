@@ -1,24 +1,19 @@
-# Layered architecture
-Layered architectures are said to be the most common and widely used architectural framework in software development. It is also known as an n-tier architecture and describes an architectural pattern composed of several separate horizontal layers that function together as a single unit of software. A layer is a logical separation of components or code.
-It's the de-facto architecture style of modern web applications. Layered architecture matches to the well-known "single responsibility principle".
+# Layered Architecture
 
-### Characteristics
-* A major characteristic of this framework is that layers are only connected to the layers directly below them.
-* Another characteristic is the concept of layers of isolation. This means that layers can be modified and the change won't affect other layers. In short, changes are isolated to the specific layer that is altered.
-* Separation of concerns is another notable feature that speaks to how the modules on a single layer together perform a single function.
+Layered architecture is a software design pattern in which an application is composed of several layers or tiers. Each layer has a specific responsibility and communicates with the other layers through well-defined interfaces. This modular approach to software design allows for easier maintenance and testing, and also makes it possible to reuse components in different applications.
 
-### Advantages
-* The framework is simple and easy to learn and implement.
-* There is reduced dependency because the function of each layer is separate from the other layers.
-* Testing is easier because of the separated components, each component can be tested individually.
-* Cost overheads are fairly low.
-* Changeability. If you're not satisfy with the implementation of one layer, you can replace it with another layer, as long as they implements the same interface.
+The most common type of layered architecture is the three-tier architecture, which is typically composed of a presentation layer, a business logic layer, and a data access layer. The presentation layer is responsible for displaying data to the user and receiving user input. The business logic layer contains the core business logic and rules of the application, and the data access layer is responsible for accessing and manipulating data in the database.
 
-### Disadvantages
-* Scalability is difficult because the structure of the framework does not allow for growth.
-* They can be difficult to maintain. A change in a single layer can affect the entire system because it operates as a single unit.
-* There is interdependence between layers since a layer depends on the layer above it to receive data.
-* Parallel processing is not possible.
-* Management cost if there are too many layers.
-* The performance is getting slower as more and more layers added.
-* Leaky abstraction can disturb your layered intent.
+Layered architecture is a common approach to designing scalable and maintainable software systems, and it is often used in enterprise-level applications.
+
+While layered architecture has many benefits, it also has some drawbacks that should be considered. These include the following:
+
+* Complexity: Layered architecture can add complexity to an application, especially if it is not implemented carefully. This can make the application more difficult to understand and maintain.
+
+* Performance: Layered architecture can potentially impact the performance of an application, because data has to be passed between the different layers. This can be especially problematic if the application has a large number of layers or if the layers are not optimized for performance.
+
+* Tight coupling: If the layers in a layered architecture are not well-defined and loosely coupled, changes to one layer can potentially affect other layers, which can lead to maintainability issues.
+
+* Overhead: Layered architecture can add overhead to an application, because data has to be passed between the different layers. This can potentially impact the performance and scalability of the application.
+
+Overall, while layered architecture has many benefits, it is important to carefully consider the potential drawbacks and make sure that the benefits outweigh the costs in your specific application.
