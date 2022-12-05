@@ -6,3 +6,5 @@ WebAssembly is a new type of code that can be run in modern web browsers — it 
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://webassembly.org/'>Official Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://webassembly.org/getting-started/developers-guide/'>Official Getting Started to Web Assembly</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=3sU557ZKjUs'>An introduction to WebAssembly</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/what-is-webassembly/'>What Is WebAssembly — and Why Are You Hearing So Much About It?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/what-is-webassembly-and-why-do-you-need-it/'>What Is WebAssembly and Why Do You Need It?</BadgeLink>
