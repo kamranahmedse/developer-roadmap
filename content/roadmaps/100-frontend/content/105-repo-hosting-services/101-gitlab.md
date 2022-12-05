@@ -6,3 +6,4 @@
 
 <BadgeLink badgeText='Read' href='https://docs.gitlab.com/'>GitLab Documentation</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme="green" href='https://gitlab.com/'>GitLab Website</BadgeLink>
+<BadgeLink badgeText='Read' href='https://thenewstack.io/development-connect-git-to-gitlab-for-small-projects/'>Development: Connect git to GitLab for Small Projects</BadgeLink>
