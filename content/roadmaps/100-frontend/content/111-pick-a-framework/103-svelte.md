@@ -7,5 +7,4 @@ Svelte is a javascript framework that unlike Vue and React does not use vertical
 <BadgeLink colorScheme='blue' badgeText='Official Guide' href='https://svelte.dev/docs'>Svelte Documentation</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/playlist?list=PL4cUxeGkcC9hlbrVO_2QFVqVPhlZmz7tO'>Svelte Course Playlist for beginners</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/all-about-svelte-the-much-loved-state-driven-web-framework/'>All About Svelte, the Much-Loved, State-Driven Web Framework</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/vercel-and-svelte-a-perfect-match-for-web-developers/'>Vercel and Svelte: A Perfect Match for Web Developers</BadgeLink>
 <BadgeLink colorScheme='purple' badgeText='Watch' href='https://thenewstack.io/svelte-and-the-future-of-front-end-development/'>Svelte and the Future of Frontend Development</BadgeLink>
