@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Container, Heading, Input, Link, List, ListIcon, ListItem, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Heading, Input, Link, List, ListIcon, ListItem, SimpleGrid, Text } from '@chakra-ui/react';
 import { GlobalHeader } from '../components/global-header';
 import { OpensourceBanner } from '../components/opensource-banner';
 import { Footer } from '../components/footer';
@@ -81,9 +81,9 @@ export default function SignUp() {
       <Helmet title={'Sign Up: Be a part of the community'} />
       <Box mb='60px'>
         <Container maxW={'container.md'} position='relative'>
-          <Box columns={1} maxWidth='400px' mx='auto' spacing='15px' my={['30px', '30px', '80px']}>
+          <SimpleGrid columns={1} maxWidth='400px' mx='auto' spacing='15px' my={['30px', '30px', '80px']}>
             <FreeSignUp />
-          </Box>
+          </SimpleGrid>
         </Container>
       </Box>
 
