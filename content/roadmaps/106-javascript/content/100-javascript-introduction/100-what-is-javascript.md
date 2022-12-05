@@ -10,3 +10,4 @@ JavaScript, often abbreviated JS, is a programming language that is one of the c
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://exploringjs.com/'>Exploring JS: JavaScript books for programmers</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/hdI2bqOjy3c?t=2'>JavaScript Crash Course for Beginners</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/P7t13SGytRk?t=22'>Build a Netflix Landing Page Clone with HTML, CSS & JS</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=PkZNo7MFNFg'>Learn Javascript - Full course for bignners></BadgeLink>
