@@ -10,3 +10,4 @@ Web accessibility means that websites, tools, and technologies are designed and 
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Web/Accessibility'>MDN Accessibility</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://web.dev/accessibility'>Accessibility for Developers by Google</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.udacity.com/course/web-accessibility--ud891'>Web Accessibility by Udacity</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://thenewstack.io/accessibility-as-an-essential-part-of-the-inclusive-developer-experience/'>Accessibility as an Essential Part of the Inclusive Developer Experience</BadgeLink>
