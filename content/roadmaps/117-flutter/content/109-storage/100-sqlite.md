@@ -1,14 +1,6 @@
-# Sqlite
+# SQLite
 
-Flutter plugin for SQLite, a self-contained, high-reliability, embedded, SQL database engine.
+SQLite is an open-source, lightweight relational database management system (RDBMS) used to store and manage data. It is written in C and self-contained, meaning it does not require a separate server process or system. SQLite is commonly used in mobile applications, embedded systems, and web browsers and is also supported by many programming languages. It is a popular choice for databases because it is easy to use and does not require a lot of setup or configuration.
 
-It supports:
-<ul>
-  <li>Support transactions and batches</li>
-<li>Automatic version managment during open</li>
-<li>Helpers for insert/query/update/delete queries</li>
-<li>DB operation executed in a background thread on iOS and Android</li>
-</ul>
-
-
-<a href="https://pub.dev/packages/sqflite">For more visit pub.dev</a>
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://pub.dev/packages/sqflite'>sqflite - pub.dev package</BadgeLink>
