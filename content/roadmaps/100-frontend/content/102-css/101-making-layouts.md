@@ -14,3 +14,4 @@ Float, grid, flexbox, positioning, display and box model are some of the key top
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://css-tricks.com/snippets/css/complete-guide-grid'>A Complete Guide to Grid</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://cssgrid.io/'>Learn CSS Grid - Course</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://scrimba.com/learn/cssgrid'>Learn CSS Grid for free</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/get-grid-last-css-grid-template-markup/'>Get on the Grid at Last with the CSS Grid Layout Module</BadgeLink>
