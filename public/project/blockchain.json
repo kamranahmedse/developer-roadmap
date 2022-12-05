@@ -5410,7 +5410,7 @@
           "x": "1215",
           "y": "773",
           "properties": {
-            "controlName": "103-blockchain-general-knowledge:blockchains:ton"
+            "controlName": "101-blockchain-general-knowledge:blockchains:ton"
           },
           "children": {
             "controls": {
