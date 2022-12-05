@@ -1,6 +1,6 @@
 # Comparison Operators
 
-Comparison operators are the operators that compare values and return true or false. The operators include: `>`, `<`, `>=`, `<=`, `==`, `===`, `!==` and `!===`
+Comparison operators are the operators that compare values and return true or false. The operators include: `>`, `<`, `>=`, `<=`, `==`, `===`, `!=` and `!==`
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.w3schools.com/js/js_comparisons.asp'>W3Schools - JavaScript Tutorials</BadgeLink>
