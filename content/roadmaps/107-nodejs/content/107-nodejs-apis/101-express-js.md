@@ -8,3 +8,4 @@ Express is a node js web application framework that provides broad features for 
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/nodejs/nodejs_express_framework.html'>Express Full Guide</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://auth0.com/blog/create-a-simple-and-stylish-node-express-app/'>Sample Project</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/express-explained-with-examples-installation-routing-middleware-and-more/'>Express Explained with Examples</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=Oe421EPjeBE'>Node.js and Express.js - Full Course</BadgeLink>
