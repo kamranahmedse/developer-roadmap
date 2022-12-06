@@ -1,9 +1,5 @@
 # Constraints
 
-SQL constraints are used to specify rules for the data in a table.
-
-Constraints are used to limit the type of data that can go into a table. This ensures the accuracy and reliability of the data in the table. If there is any violation between the constraint and the data action, the action is aborted.
-
-Constraints can be column level or table level. Column level constraints apply to a column, and table level constraints apply to the whole table
+Database constraints are rules that are used to limit the data that can be stored in a database table. These constraints can be used to ensure the integrity and accuracy of the data in the table, and they can be used to enforce business rules or other requirements. For example, a constraint might be used to ensure that a column only contains positive numbers, or to ensure that a column always has a unique value. Constraints can be specified at the time a table is created, or they can be added to an existing table. Some common types of constraints include primary keys, foreign keys, and NOT NULL constraints.
 
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://www.w3schools.com/sql/sql_constraints.asp'>SQL Constraints</BadgeLink>
