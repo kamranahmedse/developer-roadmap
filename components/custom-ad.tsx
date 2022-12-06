@@ -9,6 +9,8 @@ function getPageSlug() {
 
 export const CustomAd = () => {
   const slug = getPageSlug();
+  return null;
+
   if (slug !== 'devops') {
     return null;
   }
