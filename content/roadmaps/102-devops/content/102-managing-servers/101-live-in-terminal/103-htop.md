@@ -4,3 +4,4 @@ htop is a cross-platform ncurses-based process. It is similar to top, but allows
 
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://www.man7.org/linux/man-pages/man1/htop.1.html'>htop Documentation</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.maketecheasier.com/power-user-guide-htop/'>htop Cheat Sheet</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Tutorial' href='https://www.youtube.com/watch?v=VHwaQxgGKwY/'>htop tutorial for beginners</BadgeLink>
