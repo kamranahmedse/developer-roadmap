@@ -40,10 +40,6 @@
     "2018",
     "2017"
   ],
-  "author": {
-    "name": "Moien Tajik",
-    "url": "https://twitter.com/MoienTajik"
-  },
   "pdfUrl": "/pdfs/flutter.pdf",
   "relatedRoadmaps": [
     "backend",

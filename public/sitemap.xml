@@ -121,9 +121,15 @@
               <priority>1.0</priority>
           </url>
 <url>
+              <loc>https://roadmap.sh/graphql</loc>
+              <changefreq>monthly</changefreq>
+              <lastmod>2022-12-12T13:43:44.831Z</lastmod>
+              <priority>1.0</priority>
+          </url>
+<url>
               <loc>https://roadmap.sh/flutter</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-11-14T14:37:05.558Z</lastmod>
+              <lastmod>2022-12-12T13:27:19.515Z</lastmod>
               <priority>1.0</priority>
           </url>
 <url>
@@ -340,7 +346,7 @@
 <url>
               <loc>https://roadmap.sh/signup</loc>
               <changefreq>monthly</changefreq>
-              <lastmod>2022-11-14T14:37:05.596Z</lastmod>
+              <lastmod>2022-12-05T14:00:28.160Z</lastmod>
               <priority>0.9</priority>
           </url>
 <url>

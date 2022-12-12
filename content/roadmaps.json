@@ -1117,6 +1117,51 @@
   },
   {
     "seo": {
+      "title": "GraphQL Roadmap",
+      "description": "Learn GraphQL with this step by step guide and resources.",
+      "keywords": [
+        "guide to learn graphql",
+        "graphql roadmap",
+        "graphql roadmap",
+        "modern graphql roadmap",
+        "fullstack graphql roadmap",
+        "design and architecture roadmap",
+        "scalable design roadmap",
+        "design architecture patterns roadmap",
+        "application architectures"
+      ]
+    },
+    "title": "GraphQL",
+    "description": "Step by step guide to learn GraphQL",
+    "featuredTitle": "GraphQL",
+    "type": "tool",
+    "featuredDescription": "Step by Step guide to learn GraphQL in 2022",
+    "isTextHeavy": false,
+    "isCommunity": false,
+    "isNew": true,
+    "isUpcoming": false,
+    "featured": true,
+    "jsonUrl": "/project/graphql.json",
+    "author": {
+      "name": "Kamran Ahmed",
+      "url": "https://twitter.com/kamranahmedse"
+    },
+    "pdfUrl": "/pdfs/graphql.pdf",
+    "relatedRoadmaps": [
+      "frontend",
+      "backend",
+      "nodejs",
+      "javascript",
+      "react",
+      "vue",
+      "angular"
+    ],
+    "contentPathsFilePath": "/roadmaps/116-graphql/content-paths.json",
+    "id": "graphql",
+    "metaPath": "/roadmaps/116-graphql/meta.json"
+  },
+  {
+    "seo": {
       "title": "Learn to become a modern Flutter developer",
       "description": "Community driven, articles, resources, guides, interview questions, quizzes for flutter development. Learn to become a modern Flutter developer by following the steps, skills, resources and guides listed in this roadmap.",
       "keywords": [
@@ -1157,10 +1202,6 @@
       "2018",
       "2017"
     ],
-    "author": {
-      "name": "Moien Tajik",
-      "url": "https://twitter.com/MoienTajik"
-    },
     "pdfUrl": "/pdfs/flutter.pdf",
     "relatedRoadmaps": [
       "backend",

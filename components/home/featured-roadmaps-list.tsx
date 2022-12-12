@@ -20,12 +20,12 @@ export const upcomingRoadmaps = [
     description: 'Step by step guide to become a Cyber Security Expert',
     id: 'cyber-security'
   },
-  {
-    type: 'Skill Based',
-    title: 'TypeScript',
-    description: 'Step by step guide to learn TypeScript in 2022',
-    id: 'typescript'
-  },
+  // {
+  //   type: 'Skill Based',
+  //   title: 'TypeScript',
+  //   description: 'Step by step guide to learn TypeScript in 2022',
+  //   id: 'typescript'
+  // },
   // {
   //   type: 'Skill Based',
   //   title: 'Rust',

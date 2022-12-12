@@ -183,6 +183,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     minHeight = ['1222px', '1393px', '2288px', '3084px', '3084px', '3084px'];
   }
 
+  if (roadmap.id === 'graphql') {
+    minHeight = ['770px', '1261px', '1617px', '1712px', '1712px', '1712px'];
+  }
+
   return (
     <Container maxW={'container.lg'} position="relative" minHeight={minHeight} pos='relative'>
       {(isLoading || isRendering) && <RoadmapLoader />}

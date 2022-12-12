@@ -1,0 +1,43 @@
+{
+  "seo": {
+    "title": "GraphQL Roadmap",
+    "description": "Learn GraphQL with this step by step guide and resources.",
+    "keywords": [
+      "guide to learn graphql",
+      "graphql roadmap",
+      "graphql roadmap",
+      "modern graphql roadmap",
+      "fullstack graphql roadmap",
+      "design and architecture roadmap",
+      "scalable design roadmap",
+      "design architecture patterns roadmap",
+      "application architectures"
+    ]
+  },
+  "title": "GraphQL",
+  "description": "Step by step guide to learn GraphQL",
+  "featuredTitle": "GraphQL",
+  "type": "tool",
+  "featuredDescription": "Step by Step guide to learn GraphQL in 2022",
+  "isTextHeavy": false,
+  "isCommunity": false,
+  "isNew": true,
+  "isUpcoming": false,
+  "featured": true,
+  "jsonUrl": "/project/graphql.json",
+  "author": {
+    "name": "Denis Badurina",
+    "url": "https://twitter.com/enisdenjo"
+  },
+  "pdfUrl": "/pdfs/graphql.pdf",
+  "relatedRoadmaps": [
+    "frontend",
+    "backend",
+    "nodejs",
+    "javascript",
+    "react",
+    "vue",
+    "angular"
+  ],
+  "contentPathsFilePath": "./content-paths.json"
+}
