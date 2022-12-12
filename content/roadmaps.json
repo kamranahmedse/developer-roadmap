@@ -1132,7 +1132,7 @@
       ]
     },
     "title": "GraphQL",
-    "description": "Step by step guide to learn GraphQL",
+    "description": "Step by step guide to learn GraphQL in 2022",
     "featuredTitle": "GraphQL",
     "type": "tool",
     "featuredDescription": "Step by Step guide to learn GraphQL in 2022",
@@ -1143,8 +1143,8 @@
     "featured": true,
     "jsonUrl": "/project/graphql.json",
     "author": {
-      "name": "Kamran Ahmed",
-      "url": "https://twitter.com/kamranahmedse"
+      "name": "Denis Badurina",
+      "url": "https://twitter.com/enisdenjo"
     },
     "pdfUrl": "/pdfs/graphql.pdf",
     "relatedRoadmaps": [
