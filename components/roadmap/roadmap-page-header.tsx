@@ -220,7 +220,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='red'>
               New
             </Badge>
-              Track your progress, Left click to any node. 
+              Track your progress, Right click to any node. 
             </Text>
           </Text>
           
