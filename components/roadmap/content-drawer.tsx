@@ -19,13 +19,25 @@ export function markTopicDone(groupId: string) {
   );
 }
 
+export function markTopicPending(groupId: string) {
+  localStorage.removeItem(groupId);
+
+  queryGroupElementsById(groupId).forEach((item) =>
+    item?.classList?.remove('done')
+  );
+}
+
+export function isTopicDone(groupId: string) {
+  return localStorage.getItem(groupId) === 'done';
+}
+
 export function ContentDrawer(props: ContentDrawerProps) {
   const { roadmap, groupId, onClose = () => null } = props;
   if (!groupId) {
     return null;
   }
 
-  const isDone = localStorage.getItem(groupId) === 'done';
+  const isDone = isTopicDone(groupId);
 
   return (
     <Box zIndex={99999} pos="relative">
@@ -80,10 +92,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
             {isDone && (
               <Button
                 onClick={() => {
-                  localStorage.removeItem(groupId);
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.remove('done')
-                  );
+                  markTopicPending(groupId);
                   onClose();
                 }}
                 colorScheme="red"

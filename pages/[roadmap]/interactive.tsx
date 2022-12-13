@@ -8,7 +8,7 @@ import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
-import { ContentDrawer, markTopicDone } from '../../components/roadmap/content-drawer';
+import { ContentDrawer, isTopicDone, markTopicDone, markTopicPending } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
@@ -81,7 +81,13 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       }
 
       event.preventDefault();
-      markTopicDone(removeSortingInfo(groupId));
+      const normalizedGroupId = removeSortingInfo(groupId);
+
+      if (isTopicDone(normalizedGroupId)) {
+        markTopicPending(normalizedGroupId);
+      } else {
+        markTopicDone(normalizedGroupId);
+      }
     }
 
     window.addEventListener('keydown', keydownListener);
