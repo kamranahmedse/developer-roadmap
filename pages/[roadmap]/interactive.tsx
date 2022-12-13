@@ -72,6 +72,9 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     function markAsDone(event:MouseEvent){
       event.preventDefault();
       const targetGroup = (event?.target as HTMLElement)?.closest('g');
+      if((targetGroup?.classList?.value)?.match('done'))
+      targetGroup?.classList?.remove('done')
+      else
       targetGroup?.classList?.add('done')
     }
 
