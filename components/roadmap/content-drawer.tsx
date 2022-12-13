@@ -11,6 +11,14 @@ type ContentDrawerProps = {
   onClose?: () => void;
 };
 
+export function markTopicDone(groupId: string) {
+  localStorage.setItem(groupId, 'done');
+
+  queryGroupElementsById(groupId).forEach((item) =>
+    item?.classList?.add('done')
+  );
+}
+
 export function ContentDrawer(props: ContentDrawerProps) {
   const { roadmap, groupId, onClose = () => null } = props;
   if (!groupId) {
@@ -52,10 +60,7 @@ export function ContentDrawer(props: ContentDrawerProps) {
             {!isDone && (
               <Button
                 onClick={() => {
-                  localStorage.setItem(groupId, 'done');
-                  queryGroupElementsById(groupId).forEach((item) =>
-                    item?.classList?.add('done')
-                  );
+                  markTopicDone(groupId);
                   onClose();
                 }}
                 colorScheme="green"

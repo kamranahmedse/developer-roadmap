@@ -8,7 +8,7 @@ import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
-import { ContentDrawer } from '../../components/roadmap/content-drawer';
+import { ContentDrawer, markTopicDone } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
@@ -53,10 +53,14 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       }
     }
 
+    function getClosestGroupId(target: HTMLElement) {
+      const targetGroup = target?.closest('g');
+      return targetGroup?.dataset?.groupId;
+    }
+
     function clickListener(event: MouseEvent) {
-      const targetGroup = (event?.target as HTMLElement)?.closest('g');
-      const groupId = targetGroup?.dataset?.groupId;
-      if (!targetGroup || !groupId) {
+      const groupId = getClosestGroupId(event.target as HTMLElement);
+      if (!groupId) {
         return;
       }
 
@@ -70,8 +74,19 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       setGroupId(removeSortingInfo(groupId));
     }
 
+    function rightClickListener(event: MouseEvent) {
+      const groupId = getClosestGroupId(event.target as HTMLElement);
+      if (!groupId) {
+        return;
+      }
+
+      event.preventDefault();
+      markTopicDone(removeSortingInfo(groupId));
+    }
+
     window.addEventListener('keydown', keydownListener);
     window.addEventListener('click', clickListener);
+    window.addEventListener('contextmenu', rightClickListener)
 
     return () => {
       window.removeEventListener('keydown', keydownListener);
