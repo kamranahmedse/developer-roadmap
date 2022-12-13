@@ -212,7 +212,18 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               New
             </Badge>
             Resources are here, try clicking any nodes.
+            
+            <Text
+            mt='5px'
+            // Loza
+            >
+              <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='red'>
+              New
+            </Badge>
+              Track your progress, Left click to any node. 
+            </Text>
           </Text>
+          
         )}
       </Container>
     </Box>
