@@ -69,13 +69,19 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       // will be translated to `internet:how-does-the-internet-work`
       setGroupId(removeSortingInfo(groupId));
     }
+    function markAsDone(event:MouseEvent){
+      event.preventDefault();
+      const targetGroup = (event?.target as HTMLElement)?.closest('g');
+      targetGroup?.classList?.add('done')
+    }
 
     window.addEventListener('keydown', keydownListener);
     window.addEventListener('click', clickListener);
-
+    window.addEventListener("contextmenu",markAsDone);
     return () => {
       window.removeEventListener('keydown', keydownListener);
       window.removeEventListener('click', clickListener);
+      window.removeEventListener("contextmenu",markAsDone);
     };
   }, []);
 
