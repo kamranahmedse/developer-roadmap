@@ -8,7 +8,7 @@ import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
-import { ContentDrawer } from '../../components/roadmap/content-drawer';
+import { ContentDrawer, isTopicDone, markTopicDone, markTopicPending } from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
@@ -53,10 +53,14 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       }
     }
 
+    function getClosestGroupId(target: HTMLElement) {
+      const targetGroup = target?.closest('g');
+      return targetGroup?.dataset?.groupId;
+    }
+
     function clickListener(event: MouseEvent) {
-      const targetGroup = (event?.target as HTMLElement)?.closest('g');
-      const groupId = targetGroup?.dataset?.groupId;
-      if (!targetGroup || !groupId) {
+      const groupId = getClosestGroupId(event.target as HTMLElement);
+      if (!groupId) {
         return;
       }
 
@@ -70,8 +74,25 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
       setGroupId(removeSortingInfo(groupId));
     }
 
+    function rightClickListener(event: MouseEvent) {
+      const groupId = getClosestGroupId(event.target as HTMLElement);
+      if (!groupId) {
+        return;
+      }
+
+      event.preventDefault();
+      const normalizedGroupId = removeSortingInfo(groupId);
+
+      if (isTopicDone(normalizedGroupId)) {
+        markTopicPending(normalizedGroupId);
+      } else {
+        markTopicDone(normalizedGroupId);
+      }
+    }
+
     window.addEventListener('keydown', keydownListener);
     window.addEventListener('click', clickListener);
+    window.addEventListener('contextmenu', rightClickListener)
 
     return () => {
       window.removeEventListener('keydown', keydownListener);
@@ -181,6 +202,10 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
 
   if (roadmap.id === 'computer-science') {
     minHeight = ['1222px', '1393px', '2288px', '3084px', '3084px', '3084px'];
+  }
+
+  if (roadmap.id === 'graphql') {
+    minHeight = ['770px', '1261px', '1617px', '1712px', '1712px', '1712px'];
   }
 
   return (

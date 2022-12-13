@@ -16,6 +16,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Software Design and Architecture Roadmap** - [Roadmap Link](https://roadmap.sh/software-design-architecture) / [PDF Link](https://roadmap.sh/pdfs/software-design-architecture.pdf)
 * **JavaScript Roadmap** - [Roadmap Link](https://roadmap.sh/javascript) / [PDF Link](https://roadmap.sh/pdfs/javascript.pdf)
 * **Node.js Roadmap** - [Roadmap Link](https://roadmap.sh/nodejs) / [PDF Link](https://roadmap.sh/pdfs/nodejs.pdf)
+* **GraphQL Roadmap** - [Roadmap Link](https://roadmap.sh/graphql) / [PDF Link](https://roadmap.sh/pdfs/graphql.pdf)
 * **Angular Roadmap** - [Roadmap Link](https://roadmap.sh/angular) / [PDF Link](https://roadmap.sh/pdfs/angular.pdf)
 * **React Roadmap** - [Roadmap Link](https://roadmap.sh/react) / [PDF Link](https://roadmap.sh/pdfs/react.pdf)
 * **Vue Roadmap** - [Roadmap Link](https://roadmap.sh/vue) / [PDF Link](https://roadmap.sh/pdfs/vue.pdf)
