@@ -9,3 +9,4 @@ A Java API also exists for those who prefer to programmatically integrate Karate
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.karatelabs.io/'>karate website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/karatelabs/karate/blob/master/karate-core/src/test/resources/karate-map.jpg?raw=true'>karate architecture</BadgeLink>
+<BadgeLink colorScheme='Purple' badgeText='Watch' href='https://www.youtube.com/watch?v=1f6xtJpRx4k&list=PLhW3qG5bs-L-y5Q1zDXJAur1JNZVFB534'>karate for beginner</BadgeLink>
