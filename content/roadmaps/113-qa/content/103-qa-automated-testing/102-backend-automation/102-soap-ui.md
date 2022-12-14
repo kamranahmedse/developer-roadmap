@@ -5,3 +5,4 @@ SoapUI is the world's leading Functional Testing tool for SOAP and REST testing.
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Official Website' href='https://www.soapui.org/'>SoapUI Official Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Official Docs' href='https://www.soapui.org/getting-started/'>SoapUI Docs</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=4Od5hMd-EPM&list=PLUDwpEzHYYLugXkSaNTuQ4J3HFXVWNUf-'>SoapUI Beginner</BadgeLink>
