@@ -1,6 +1,6 @@
 # Value Comparison Operators
 
-In javascript, the `==` operator does the type conversion of the operands before comparison, whereas the === operator compares the values and the data types of the operands. The `Object.is()` method determines whether two values are the same value: `Object.is(value1, value2)`.
+In javascript, the `==` operator does the type conversion of the operands before comparison, whereas the `===` operator compares the values and the data types of the operands. The `Object.is()` method determines whether two values are the same value: `Object.is(value1, value2)`.
 
 `Object.is()` is not equivalent to the `==` operator. The `==` operator applies various coercions to both sides (if they are not the same type) before testing for equality (resulting in such behavior as `"" == false` being `true`), but `Object.is()` doesn't coerce either value.
 
