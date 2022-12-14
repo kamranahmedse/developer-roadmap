@@ -5,3 +5,5 @@ Rest-assured helps developers and test engineers to test REST APIs in Java ease 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://rest-assured.io'>REST-assured Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/rest-assured.html'>REST Assured Tutorial: How to test API with Example</BadgeLink>
+
+<BadgeLink colorScheme='Purple' badgeText='Watch' href='https://www.youtube.com/watch?v=oVNbaBlrhbo&list=PLhW3qG5bs-L8xPrBwDv66cTMlFNeUPdJx'>REST-assured Beginner</BadgeLink>
