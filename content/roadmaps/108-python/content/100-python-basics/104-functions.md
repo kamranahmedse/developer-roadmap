@@ -9,3 +9,7 @@ In Python, you define a function with the `def` keyword, then write the function
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/python/python_functions.asp'>Python Functions - W3Schools</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/python-functions/'>Python Functions</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.python.org/3/library/functions.html'>Built-in Functions in Python</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/python-for-beginners-and-or-operators/'>Python for Beginners: And/or Operators</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/yet-more-python-for-beginners-saving-input-to-a-file/'>Yet More Python for Beginners: Saving Input to a File</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href=' https://thenewstack.io/python-for-beginners-the-range-function/'>Python for Beginners: The Range() Function</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/so-much-more-python-for-beginners-functions/'>So Much More Python for Beginners: Functions</BadgeLink>
