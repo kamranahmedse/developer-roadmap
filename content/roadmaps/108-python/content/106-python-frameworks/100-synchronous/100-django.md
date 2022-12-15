@@ -7,3 +7,4 @@ Django is a free and open-source, Python-based web framework that follows the mo
 <BadgeLink colorScheme='blue' badgeText='Getting Started' href='https://www.djangoproject.com/start/'>Official Getting Started Guide</BadgeLink>
 <BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=rHux0gMZ3Eg'>Python Django Tutorial for Beginners</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://stackoverflow.com/questions/58548089/django-is-synchronous-or-asynchronous'>Is Django synchronous or asynchronous?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/finding-and-fixing-django-n1-problems/'>Finding and Fixing Django N+1 Problems</BadgeLink>
