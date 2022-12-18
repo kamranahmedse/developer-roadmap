@@ -19,3 +19,4 @@ JavaScript allows you to add interactivity to your pages. Common examples that y
 <BadgeLink badgeText='Watch' href='https://javascript30.com/'>Build 30 Javascript projects in 30 days</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://github.com/workshopper/javascripting'>Learn the basics of JavaScript</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme="green" href='https://www.scaler.com/topics/course/javascript-beginners'>JavaScript for Beginners </BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=EfAl9bwzVZk&list=PL0Zuz27SZ-6M1Uopt6_VL3gf3cpMnwavm&index=3'>JavaScript complete course by Dave Gray</BadgeLink>
