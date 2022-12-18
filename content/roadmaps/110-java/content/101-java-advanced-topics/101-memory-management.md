@@ -5,3 +5,6 @@ In Java, memory management is the process of allocation and de-allocation of obj
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>   
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/java-memory-management/'>Java Memory Management</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/memory-management-in-java'>Memory Management in Java</BadgeLink>
+
+<ResourceGroupTitle>This topic in books</ResourceGroupTitle> 
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://a.co/d/6cEESsG'>Java in a Nutshell: A Desktop Quick Reference, Chapter 6: Java’s Approach To Memory And Concurrency</BadgeLink>
