@@ -1170,7 +1170,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "279",
-          "y": "1626",
+          "y": "1675",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -1200,7 +1200,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "608",
-          "y": "1674",
+          "y": "1626",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -4443,7 +4443,7 @@
           "x": "125",
           "y": "1648",
           "properties": {
-            "controlName": "100-frontend-implementations:graphql-http"
+            "controlName": "100-backend-implementations:graphql-http"
           },
           "children": {
             "controls": {
@@ -4490,7 +4490,7 @@
           "x": "125",
           "y": "1697",
           "properties": {
-            "controlName": "101-frontend-implementations:graphql-yoga"
+            "controlName": "101-backend-implementations:graphql-yoga"
           },
           "children": {
             "controls": {
@@ -4537,7 +4537,7 @@
           "x": "125",
           "y": "1746",
           "properties": {
-            "controlName": "102-frontend-implementations:apollo-server"
+            "controlName": "102-backend-implementations:apollo-server"
           },
           "children": {
             "controls": {
@@ -4584,7 +4584,7 @@
           "x": "125",
           "y": "1796",
           "properties": {
-            "controlName": "103-frontend-implementations:mercurius"
+            "controlName": "103-backend-implementations:mercurius"
           },
           "children": {
             "controls": {
@@ -4631,7 +4631,7 @@
           "x": "744",
           "y": "1645",
           "properties": {
-            "controlName": "100-backend-implementations:relay"
+            "controlName": "100-frontend-implementations:relay"
           },
           "children": {
             "controls": {
@@ -4678,7 +4678,7 @@
           "x": "744",
           "y": "1694",
           "properties": {
-            "controlName": "101-backend-implementations:apollo-client"
+            "controlName": "101-frontend-implementations:apollo-client"
           },
           "children": {
             "controls": {
@@ -4725,7 +4725,7 @@
           "x": "744",
           "y": "1743",
           "properties": {
-            "controlName": "102-backend-implementations:urql"
+            "controlName": "102-frontend-implementations:urql"
           },
           "children": {
             "controls": {
