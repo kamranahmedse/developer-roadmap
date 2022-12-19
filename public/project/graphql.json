@@ -2017,7 +2017,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Frontend Implementations"
+                    "text": "Backend Implementations"
                   }
                 }
               ]
@@ -2064,7 +2064,7 @@
                   "y": "9",
                   "properties": {
                     "size": "17",
-                    "text": "Backend Implementations"
+                    "text": "Frontend Implementations"
                   }
                 }
               ]
