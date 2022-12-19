@@ -8,7 +8,12 @@ import { Footer } from '../../components/footer';
 import { getAllRoadmaps, getRoadmapById, RoadmapType } from '../../lib/roadmap';
 import Helmet from '../../components/helmet';
 import { RoadmapPageHeader } from '../../components/roadmap/roadmap-page-header';
-import { ContentDrawer, isTopicDone, markTopicDone, markTopicPending } from '../../components/roadmap/content-drawer';
+import {
+  ContentDrawer,
+  isTopicDone,
+  markTopicDone,
+  markTopicPending,
+} from '../../components/roadmap/content-drawer';
 import { RoadmapError } from '../../components/roadmap/roadmap-error';
 import { RoadmapLoader } from '../../components/roadmap/roadmap-loader';
 import { removeSortingInfo } from '../../lib/renderer';
@@ -29,7 +34,6 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   const [roadmapJson, setRoadmapJson] = useState(null);
   const [groupId, setGroupId] = useState('');
   const [hasErrorRendering, setHasErrorRendering] = useState(false);
-
   useEffect(() => {
     if (!roadmap.jsonUrl) {
       return;
@@ -92,7 +96,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
 
     window.addEventListener('keydown', keydownListener);
     window.addEventListener('click', clickListener);
-    window.addEventListener('contextmenu', rightClickListener)
+    window.addEventListener('contextmenu', rightClickListener);
 
     return () => {
       window.removeEventListener('keydown', keydownListener);
@@ -104,6 +108,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
     if (!roadmapJson) {
       return;
     }
+    console.log(roadmapJson);
 
     setIsRendering(true);
     wireframeJSONToSVG(roadmapJson)
@@ -209,7 +214,12 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   }
 
   return (
-    <Container maxW={'container.lg'} position="relative" minHeight={minHeight} pos='relative'>
+    <Container
+      maxW={'container.lg'}
+      position="relative"
+      minHeight={minHeight}
+      pos="relative"
+    >
       {(isLoading || isRendering) && <RoadmapLoader />}
       <ContentDrawer
         roadmap={roadmap}
@@ -217,7 +227,12 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
         onClose={() => setGroupId('')}
       />
 
-      { (!isLoading && !isRendering) && <ShareIcons url={`https://roadmap.sh/${roadmap.id}`} text={roadmap.description} /> }
+      {!isLoading && !isRendering && (
+        <ShareIcons
+          url={`https://roadmap.sh/${roadmap.id}`}
+          text={roadmap.description}
+        />
+      )}
       <div ref={roadmapRef} />
     </Container>
   );
