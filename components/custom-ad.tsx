@@ -9,7 +9,6 @@ function getPageSlug() {
 
 export const CustomAd = () => {
   const slug = getPageSlug();
-  return null;
 
   if (slug !== 'devops') {
     return null;
@@ -17,7 +16,7 @@ export const CustomAd = () => {
 
   return (
     <Link
-      href='https://www.stormforge.io/ebook/getting-started-kubernetes-resource-management-optimization/?utm_medium=referral&utm_source=roadmap-sh&utm_campaign=ebook_get-started-k8s-resource-mgmt'
+      href='https://www.getambassador.io/edge-stack-guide-v4?utm_source=roadmap.sh&utm_medium=ebook&utm_campaign=edgestack-guide'
       id='custom-ad'
       pos='fixed'
       bottom='15px'
@@ -33,13 +32,13 @@ export const CustomAd = () => {
       onClick={() => {
         event({
           category: 'SponsorClick',
-          action: `StormForge EBook Redirect`,
-          label: `Clicked StormForge EBook Link`
+          action: `Ambassador EBook Redirect`,
+          label: `Clicked Ambassador EBook Link`
         });
       }}
     >
       <Image
-        src='https://i.imgur.com/uNJWl4L.png'
+        src='https://i.imgur.com/0bH1Vl6.png'
         alt='Custom Logo'
         height={['100px', '100px', '100px', 'auto']}
         width='130'
@@ -47,9 +46,9 @@ export const CustomAd = () => {
       />
       <Flex as='span' flexDirection='column' justifyContent='space-between'>
         <Box as='span' p='10px'>
-          <Heading as='span' fontSize='14px' mb='5px' display='block'>Free Kubernetes eBook</Heading>
+          <Heading as='span' fontSize='14px' mb='5px' display='block'>Free API Gateways eBook</Heading>
           <Box display='block' as='span' fontSize='13px' lineHeight={1.5} fontWeight={500} color='gray.500'>
-            Learn how to manage and optimize Kubernetes resources with this free eBook.
+            Learn about API Gateways, Microservices, Load Balancing, and more with this free eBook.
           </Box>
         </Box>
         <Box as='span'
