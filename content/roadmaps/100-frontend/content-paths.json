@@ -142,5 +142,5 @@
   "desktop-applications:electron": "/roadmaps/100-frontend/content/122-desktop-applications/100-electron.md",
   "desktop-applications:tauri": "/roadmaps/100-frontend/content/122-desktop-applications/101-tauri.md",
   "desktop-applications:flutter": "/roadmaps/100-frontend/content/122-desktop-applications/102-flutter.md",
-  "web-assembly": "/roadmaps/100-frontend/content/123-web-assembly.md"
+  "bonus-content": "/roadmaps/100-frontend/content/123-bonus-content.md"
 }
