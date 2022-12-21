@@ -102,6 +102,7 @@
   "testing-your-apps:chai": "/roadmaps/100-frontend/content/115-testing-your-apps/106-chai.md",
   "testing-your-apps:ava": "/roadmaps/100-frontend/content/115-testing-your-apps/107-ava.md",
   "testing-your-apps:jasmine": "/roadmaps/100-frontend/content/115-testing-your-apps/108-jasmine.md",
+  "auth-strategies": "/roadmaps/100-frontend/content/116-auth-strategies/readme.md",
   "type-checkers": "/roadmaps/100-frontend/content/116-type-checkers/readme.md",
   "type-checkers:typescript": "/roadmaps/100-frontend/content/116-type-checkers/100-typescript.md",
   "type-checkers:flow": "/roadmaps/100-frontend/content/116-type-checkers/101-flow.md",
