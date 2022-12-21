@@ -129,7 +129,7 @@
   "static-site-generators:vuepress": "/roadmaps/100-frontend/content/120-static-site-generators/103-vuepress.md",
   "static-site-generators:jekyll": "/roadmaps/100-frontend/content/120-static-site-generators/104-jekyll.md",
   "static-site-generators:hugo": "/roadmaps/100-frontend/content/120-static-site-generators/105-hugo.md",
-  "static-site-generators:gridsome": "/roadmaps/100-frontend/content/120-static-site-generators/106-gridsome.md",
+  "static-site-generators:astro": "/roadmaps/100-frontend/content/120-static-site-generators/106-astro.md",
   "static-site-generators:eleventy": "/roadmaps/100-frontend/content/120-static-site-generators/107-eleventy.md",
   "mobile-applications": "/roadmaps/100-frontend/content/121-mobile-applications/readme.md",
   "mobile-applications:react-native": "/roadmaps/100-frontend/content/121-mobile-applications/100-react-native.md",
