@@ -13,3 +13,4 @@ There are many tools and techniques available for measuring web performance metr
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics'>Web Performance Metrics - Google Developers</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://web.dev/metrics/'>Measuring performance and user experience - Google Developers</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/Guide/Performance'>Measuring performance and user experience - MDN</BadgeLink>
