@@ -42,6 +42,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
 - [Node.js Roadmap](https://roadmap.sh/nodejs)
+- [GraphQL Roadmap](https://roadmap.sh/graphql)
 - [Android Roadmap](https://roadmap.sh/android)
 - [Flutter Roadmap](https://roadmap.sh/flutter)
 - [Python Roadmap](https://roadmap.sh/python)
