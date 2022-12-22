@@ -5,4 +5,6 @@ Props (short for “properties”) and state are both plain JavaScript objects. 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://reactjs.org/docs/faq-state.html'>Component State</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-pass-props-to-component/'>How to use Props in React</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.robinwieruch.de/react-derive-state-props/'>How to update state from props in React</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://tkdodo.eu/blog/putting-props-to-use-state'>Putitng props to useState</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://stackoverflow.com/questions/27991366/what-is-the-difference-between-state-and-props-in-react'>What is the difference between state and props in React?</BadgeLink>
