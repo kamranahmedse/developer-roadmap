@@ -3,6 +3,7 @@
 It is not required to complete the bonus content, it just expands on the topics covered in the roadmap and has the items which were missed in the roadmap.
 
 * **UI / UX Knowledge** - Gaining UI/UX knowledge is not a must for a Frontend Developer but having an eye for design and a good understanding of UI/UX will help you in your career.
+* **[Design Systems](/design-system)** - Learn how to create and work with design systems.
 * **Visual Programming** — it is entirely possible to be a successful, competent frontend developer without it, but for many frontend developers this path represents a serious chunk of their workload, and represents a very in-demand option for frontend development – especially for developers who are have a visual aptitude.
   * **For Animations**: [GSAP](https://greensock.com/gsap/), [Lottie](https://airbnb.design/lottie/), [Framer Motion](https://github.com/framer/motion) or [MoJs](https://mojs.github.io/)
   * **Web Graphics Library (WebGL)**: [WebGL MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API/Tutorial), [WebGL Fundamentals](https://webglfundamentals.org/webgl/lessons/webgl-fundamentals.html)
