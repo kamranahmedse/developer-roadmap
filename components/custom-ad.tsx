@@ -46,7 +46,7 @@ export const CustomAd = () => {
       />
       <Flex as='span' flexDirection='column' justifyContent='space-between'>
         <Box as='span' p='10px'>
-          <Heading as='span' fontSize='14px' mb='5px' display='block'>Free API Gateways eBook</Heading>
+          <Heading as='span' fontSize='14px' mb='5px' display='block'>Free eBook</Heading>
           <Box display='block' as='span' fontSize='13px' lineHeight={1.5} fontWeight={500} color='gray.500'>
             Learn about API Gateways, Microservices, Load Balancing, and more with this free eBook.
           </Box>
