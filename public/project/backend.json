@@ -13908,7 +13908,7 @@
           "x": "1059",
           "y": "1924",
           "properties": {
-            "controlName": "105-more-about-databases:read-contention"
+            "controlName": "105-more-about-databases:failure-modes"
           },
           "children": {
             "controls": {
@@ -13931,13 +13931,13 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "131",
+                  "measuredW": "110",
                   "measuredH": "25",
-                  "x": "30",
+                  "x": "41",
                   "y": "7",
                   "properties": {
                     "size": "17",
-                    "text": "Read Contention"
+                    "text": "Failure Modes"
                   }
                 },
                 {
