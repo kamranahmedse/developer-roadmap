@@ -55,7 +55,7 @@
   "more-about-databases:transactions": "/roadmaps/101-backend/content/108-more-about-databases/102-transactions.md",
   "more-about-databases:n-plus-one-problem": "/roadmaps/101-backend/content/108-more-about-databases/103-n-plus-one-problem.md",
   "more-about-databases:database-normalization": "/roadmaps/101-backend/content/108-more-about-databases/104-database-normalization.md",
-  "more-about-databases:read-contention": "/roadmaps/101-backend/content/108-more-about-databases/105-read-contention.md",
+  "more-about-databases:failure-modes": "/roadmaps/101-backend/content/108-more-about-databases/105-failure-modes.md",
   "more-about-databases:profiling-performance": "/roadmaps/101-backend/content/108-more-about-databases/106-profiling-performance.md",
   "scaling-databases": "/roadmaps/101-backend/content/109-scaling-databases/readme.md",
   "scaling-databases:database-indexes": "/roadmaps/101-backend/content/109-scaling-databases/100-database-indexes.md",
