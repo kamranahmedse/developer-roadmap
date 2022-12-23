@@ -4476,11 +4476,11 @@
           "typeID": "TextArea",
           "zOrder": "233",
           "w": "271",
-          "h": "171",
+          "h": "224",
           "measuredW": "200",
           "measuredH": "140",
           "x": "1451",
-          "y": "2651"
+          "y": "2623"
         },
         {
           "ID": "14206",
@@ -4491,7 +4491,7 @@
           "w": "86",
           "h": "42",
           "x": "1467",
-          "y": "2715",
+          "y": "2687",
           "properties": {
             "controlName": "106-web-security-knowledge:cors"
           },
@@ -4538,7 +4538,7 @@
           "w": "90",
           "h": "43",
           "x": "1465",
-          "y": "2665",
+          "y": "2637",
           "properties": {
             "controlName": "105-web-security-knowledge:https"
           },
@@ -4585,7 +4585,7 @@
           "w": "241",
           "h": "44",
           "x": "1468",
-          "y": "2765",
+          "y": "2737",
           "properties": {
             "controlName": "105-web-security-knowledge:content-security-policy"
           },
@@ -4632,7 +4632,7 @@
           "w": "147",
           "h": "43",
           "x": "1560",
-          "y": "2665",
+          "y": "2637",
           "properties": {
             "controlName": "108-web-security-knowledge:owasp"
           },
@@ -4679,7 +4679,7 @@
           "measuredW": "200",
           "measuredH": "140",
           "x": "1451",
-          "y": "2464"
+          "y": "2436"
         },
         {
           "ID": "14211",
@@ -4690,7 +4690,7 @@
           "w": "239",
           "h": "40",
           "x": "1466",
-          "y": "2479",
+          "y": "2451",
           "properties": {
             "controlName": "100-web-security-knowledge:md5"
           },
@@ -4738,7 +4738,7 @@
           "w": "237",
           "h": "40",
           "x": "1467",
-          "y": "2524",
+          "y": "2496",
           "properties": {
             "controlName": "101-web-security-knowledge:sha-family"
           },
@@ -4786,7 +4786,7 @@
           "w": "119",
           "h": "40",
           "x": "1468",
-          "y": "2570",
+          "y": "2542",
           "properties": {
             "controlName": "104-web-security-knowledge:scrypt"
           },
@@ -4834,7 +4834,7 @@
           "w": "111",
           "h": "40",
           "x": "1594",
-          "y": "2570",
+          "y": "2542",
           "properties": {
             "controlName": "102-web-security-knowledge:bcrypt"
           },
@@ -4881,7 +4881,7 @@
           "measuredW": "149",
           "measuredH": "25",
           "x": "1508",
-          "y": "2618",
+          "y": "2590",
           "properties": {
             "size": "17",
             "text": "Hashing Algorithms"
@@ -4964,7 +4964,7 @@
           "w": "149",
           "h": "43",
           "x": "1559",
-          "y": "2715",
+          "y": "2687",
           "properties": {
             "controlName": "107-web-security-knowledge:ssl-tls"
           },
@@ -8925,7 +8925,7 @@
           "measuredW": "24",
           "measuredH": "24",
           "x": "1705",
-          "y": "2455",
+          "y": "2427",
           "properties": {
             "color": "16777215",
             "icon": {
@@ -8941,7 +8941,7 @@
           "measuredW": "24",
           "measuredH": "24",
           "x": "1705",
-          "y": "2455",
+          "y": "2427",
           "properties": {
             "color": "10027263",
             "icon": {
@@ -8957,7 +8957,7 @@
           "measuredW": "24",
           "measuredH": "24",
           "x": "1709",
-          "y": "2809",
+          "y": "2828",
           "properties": {
             "color": "16777215",
             "icon": {
@@ -8973,7 +8973,7 @@
           "measuredW": "24",
           "measuredH": "24",
           "x": "1709",
-          "y": "2809",
+          "y": "2828",
           "properties": {
             "color": "10027263",
             "icon": {
@@ -14416,6 +14416,53 @@
                   "properties": {
                     "size": "17",
                     "text": "DevOps Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "14592",
+          "typeID": "__group__",
+          "zOrder": "264",
+          "measuredW": "241",
+          "measuredH": "44",
+          "w": "241",
+          "h": "44",
+          "x": "1468",
+          "y": "2786",
+          "properties": {
+            "controlName": "106-web-security-knowledge:server-security"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "241",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "117",
+                  "measuredH": "25",
+                  "x": "62",
+                  "y": "10",
+                  "properties": {
+                    "size": "17",
+                    "text": "Server Security"
                   }
                 }
               ]

@@ -91,6 +91,7 @@
   "web-security-knowledge:scrypt": "/roadmaps/101-backend/content/111-web-security-knowledge/104-scrypt.md",
   "web-security-knowledge:https": "/roadmaps/101-backend/content/111-web-security-knowledge/105-https.md",
   "web-security-knowledge:content-security-policy": "/roadmaps/101-backend/content/111-web-security-knowledge/105-content-security-policy.md",
+  "web-security-knowledge:server-security": "/roadmaps/101-backend/content/111-web-security-knowledge/106-server-security.md",
   "web-security-knowledge:cors": "/roadmaps/101-backend/content/111-web-security-knowledge/106-cors.md",
   "web-security-knowledge:ssl-tls": "/roadmaps/101-backend/content/111-web-security-knowledge/107-ssl-tls.md",
   "web-security-knowledge:owasp": "/roadmaps/101-backend/content/111-web-security-knowledge/108-owasp.md",
