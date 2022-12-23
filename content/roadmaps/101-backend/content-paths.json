@@ -144,6 +144,5 @@
   "scalability:instrumentation-monitoring-telemetry": "/roadmaps/101-backend/content/123-scalability/101-instrumentation-monitoring-telemetry.md",
   "scalability:migration-strategies": "/roadmaps/101-backend/content/123-scalability/102-migration-strategies.md",
   "scalability:horizontal-vertical-scaling": "/roadmaps/101-backend/content/123-scalability/103-horizontal-vertical-scaling.md",
-  "scalability:observability": "/roadmaps/101-backend/content/123-scalability/104-observability.md",
-  "bonus-content": "/roadmaps/101-backend/content/124-bonus-content.md"
+  "scalability:observability": "/roadmaps/101-backend/content/123-scalability/104-observability.md"
 }
