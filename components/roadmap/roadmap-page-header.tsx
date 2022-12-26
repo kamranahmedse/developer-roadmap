@@ -19,10 +19,11 @@ import {
   Text,
   useDisclosure
 } from '@chakra-ui/react';
-import { AtSignIcon, ChatIcon, DownloadIcon, ExternalLinkIcon } from '@chakra-ui/icons';
+import { AtSignIcon, ChatIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../../pages/signup';
 import { event } from '../../lib/gtag';
+import { TNSAlert } from './tns-alert';
 
 type RoadmapPageHeaderType = {
   roadmap: RoadmapType;
@@ -163,7 +164,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         <Flex justifyContent='space-between' alignItems={'center'} mt='20px'>
           <Stack isInline flex={1}>
             <Button
-              d={['flex', 'flex']}
+              display={['flex', 'flex']}
               as={Link}
               href={'/roadmaps'}
               size='xs'
@@ -174,7 +175,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               _hover={{ textDecoration: 'none' }}
             >
               &larr;
-              <Text as='span' d={['none', 'inline']} ml='5px'>
+              <Text as='span' display={['none', 'inline']} ml='5px'>
                 All Roadmaps
               </Text>
             </Button>
@@ -182,7 +183,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             <RoadmapDownloader roadmapTitle={roadmap.featuredTitle} />
             <RoadmapSubscriber roadmapTitle={roadmap.featuredTitle} />
 
-            <Box flex={1} justifyContent='flex-end' d='flex'>
+            <Box flex={1} justifyContent='flex-end' display='flex'>
               <Button
                 as={Link}
                 href={`${siteConfig.url.issue}?title=[Suggestion] ${roadmap.title}`}
@@ -201,19 +202,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         </Flex>
         {isInteractiveRoadmap(roadmap.id) && (
           <Box mt='30px' mb={hasTNSAlert ? ['-53px', '-48px', '-63px'] : ['-37px', '-32px', '-47px']} borderWidth={1} rounded='3px'>
-            { hasTNSAlert && (
-              <Text
-                fontWeight={500}
-                fontSize='14px'
-                bg='gray.100'
-                p='5px 7px'
-                rounded='2px 2px 0 0'
-                borderBottomWidth={1}
-              >
-                <Box as='span' display={['none', 'none', 'inline']}>Get the latest { roadmap.featuredTitle } news from our sister site&nbsp;<Link href={'https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Banner'} target='_blank' textDecoration='underline' fontWeight={600}>TheNewStack.io <ExternalLinkIcon /></Link></Box>
-                <Box as='span' display={['inline', 'inline', 'none']}>Get latest { roadmap.featuredTitle } news on &nbsp;<Link href={'https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Banner'} target={'_blank'} textDecoration='underline' fontWeight={600}>TheNewStack.io <ExternalLinkIcon /></Link></Box>
-              </Text>
-            )}
+            { hasTNSAlert && <TNSAlert roadmapName={roadmap.featuredTitle} />}
             <Text
               fontWeight={500}
               fontSize='14px'

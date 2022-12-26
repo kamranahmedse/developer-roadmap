@@ -2,6 +2,7 @@ import { Box, Container, Flex, Image, Link, SimpleGrid, Stack, Text } from '@cha
 import siteConfig from '../content/site.json';
 import { CustomAd } from './custom-ad';
 import React from 'react';
+import { event } from '../lib/gtag';
 
 function NavigationLinks() {
   return (
@@ -37,7 +38,8 @@ export function Footer() {
       <Container maxW='container.md'>
         <NavigationLinks />
 
-        <SimpleGrid mt={['40px', '40px', '50px']} mb='40px' gap={['40px', '40px', '75px']} columns={[1, 1, 2, 2]} justifyContent='space-between'>
+        <SimpleGrid mt={['40px', '40px', '50px']} mb='40px' gap={['40px', '40px', '75px']} columns={[1, 1, 2, 2]}
+                    justifyContent='space-between'>
           <Box maxWidth={'550px'}>
             <Flex gap={0} alignItems='center' color='gray.400'>
               <Link d='flex' alignItems='center' fontWeight={600} _hover={{ textDecoration: 'none', color: 'white' }}
@@ -67,7 +69,9 @@ export function Footer() {
 
           <Box maxWidth={'550px'} textAlign={['left', 'left', 'right']}>
             <Link display='flex' justifyContent={['flex-start', 'flex-start', 'flex-end']} fontWeight={600}
-                  _hover={{ textDecoration: 'none', color: 'white' }} href='https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer' target='_blank'>
+                  _hover={{ textDecoration: 'none', color: 'white' }}
+                  href='https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer'
+                  target='_blank'>
               <Image alt='' w='195px' src='/tns.png' />
             </Link>
 
@@ -75,9 +79,40 @@ export function Footer() {
               computing, and the latest in at-scale development, deployment, and management.</Text>
 
             <Text fontSize='14px' color='gray.500'>
-              <Link href='https://thenewstack.io/category/devops/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer' target='_blank' _hover={{ textDecoration: 'none', color: 'white' }} color='gray.400' mx='10px' ml={['0', '0', '10px']}>DevOps</Link>&middot;
-              <Link href='https://thenewstack.io/category/kubernetes/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer' target='_blank' _hover={{ textDecoration: 'none', color: 'white' }} color='gray.400' mx='10px'>Kubernetes</Link>&middot;
-              <Link href='https://thenewstack.io/category/cloud-native/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer' target='_blank' _hover={{ textDecoration: 'none', color: 'white' }} color='gray.400' mx='10px'>Cloud-Native</Link>
+              <Link
+                href='https://thenewstack.io/category/devops/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer'
+                target='_blank'
+                _hover={{ textDecoration: 'none', color: 'white' }}
+                onClick={() => {
+                  event({
+                    category: 'PartnerClick',
+                    action: `TNS Referral`,
+                    label: `TNS Referral - Footer`,
+                  });
+                }}
+                color='gray.400' mx='10px' ml={['0', '0', '10px']}>DevOps</Link>&middot;
+              <Link
+                href='https://thenewstack.io/category/kubernetes/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer'
+                target='_blank' _hover={{ textDecoration: 'none', color: 'white' }}
+                onClick={() => {
+                  event({
+                    category: 'PartnerClick',
+                    action: `TNS Referral`,
+                    label: `TNS Referral - Footer`,
+                  });
+                }}
+                color='gray.400' mx='10px'>Kubernetes</Link>&middot;
+              <Link
+                href='https://thenewstack.io/category/cloud-native/?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Footer'
+                target='_blank' _hover={{ textDecoration: 'none', color: 'white' }}
+                onClick={() => {
+                  event({
+                    category: 'PartnerClick',
+                    action: `TNS Referral`,
+                    label: `TNS Referral - Footer`,
+                  });
+                }}
+                color='gray.400' mx='10px'>Cloud-Native</Link>
             </Text>
           </Box>
         </SimpleGrid>
