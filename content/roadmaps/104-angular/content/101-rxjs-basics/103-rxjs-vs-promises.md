@@ -8,4 +8,4 @@ In a nutshell, the main differences between the Promise and the Observable are a
 you can apply RxJS operators to the Observable to get a new tailored stream.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://javascript.plainenglish.io/why-rxjs-rxjs-vs-promises-b28962771d68'>Why RxJS? RxJS vs Promises</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.plainenglish.io/why-rxjs-rxjs-vs-promises-b28962771d68'>Why RxJS? RxJS vs Promises</BadgeLink>
