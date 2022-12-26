@@ -55,12 +55,12 @@
   "serving-over-internet:graphql-over-sse:authorization": "/roadmaps/116-graphql/content/106-serving-over-internet/102-graphql-over-sse/100-authorization.md",
   "pagination": "/roadmaps/116-graphql/content/107-pagination.md",
   "frontend-implementations": "/roadmaps/116-graphql/content/108-frontend-implementations/readme.md",
-  "frontend-implementations:graphql-http": "/roadmaps/116-graphql/content/108-frontend-implementations/100-graphql-http.md",
-  "frontend-implementations:graphql-yoga": "/roadmaps/116-graphql/content/108-frontend-implementations/101-graphql-yoga.md",
-  "frontend-implementations:apollo-server": "/roadmaps/116-graphql/content/108-frontend-implementations/102-apollo-server.md",
-  "frontend-implementations:mercurius": "/roadmaps/116-graphql/content/108-frontend-implementations/103-mercurius.md",
+  "frontend-implementations:relay": "/roadmaps/116-graphql/content/108-frontend-implementations/100-relay.md",
+  "frontend-implementations:apollo-client": "/roadmaps/116-graphql/content/108-frontend-implementations/101-apollo-client.md",
+  "frontend-implementations:urql": "/roadmaps/116-graphql/content/108-frontend-implementations/102-urql.md",
   "backend-implementations": "/roadmaps/116-graphql/content/109-backend-implementations/readme.md",
-  "backend-implementations:relay": "/roadmaps/116-graphql/content/109-backend-implementations/100-relay.md",
-  "backend-implementations:apollo-client": "/roadmaps/116-graphql/content/109-backend-implementations/101-apollo-client.md",
-  "backend-implementations:urql": "/roadmaps/116-graphql/content/109-backend-implementations/102-urql.md"
+  "backend-implementations:graphql-http": "/roadmaps/116-graphql/content/109-backend-implementations/100-graphql-http.md",
+  "backend-implementations:graphql-yoga": "/roadmaps/116-graphql/content/109-backend-implementations/101-graphql-yoga.md",
+  "backend-implementations:apollo-server": "/roadmaps/116-graphql/content/109-backend-implementations/102-apollo-server.md",
+  "backend-implementations:mercurius": "/roadmaps/116-graphql/content/109-backend-implementations/103-mercurius.md"
 }
