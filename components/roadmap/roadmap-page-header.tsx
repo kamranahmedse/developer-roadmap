@@ -19,7 +19,7 @@ import {
   Text,
   useDisclosure
 } from '@chakra-ui/react';
-import { AtSignIcon, ChatIcon, DownloadIcon } from '@chakra-ui/icons';
+import { AtSignIcon, ChatIcon, DownloadIcon, ExternalLinkIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../../pages/signup';
 import { event } from '../../lib/gtag';
@@ -139,12 +139,14 @@ function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
 export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
   const { roadmap } = props;
 
+  const hasTNSAlert = ['frontend', 'backend', 'devops'].includes(roadmap.id);
+
   return (
     <Box
       pt={['25px', '20px', '45px']}
       pb={['20px', '15px', '30px']}
       borderBottomWidth={1}
-      mb='30px'
+      mb='50px'
     >
       <Container maxW='container.md' position='relative'>
         <NewAlertBanner />
@@ -198,21 +200,33 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
           </Stack>
         </Flex>
         {isInteractiveRoadmap(roadmap.id) && (
-          <Text
-            mt='30px'
-            mb={['-37px', '-32px', '-47px']}
-            fontWeight={500}
-            fontSize='14px'
-            bg='white'
-            borderWidth={1}
-            p='5px 7px'
-            rounded='3px'
-          >
-            <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='yellow'>
-              New
-            </Badge>
-            Resources are here, try clicking any nodes.
-          </Text>
+          <Box mt='30px' mb={hasTNSAlert ? ['-53px', '-48px', '-63px'] : ['-37px', '-32px', '-47px']} borderWidth={1} rounded='3px'>
+            { hasTNSAlert && (
+              <Text
+                fontWeight={500}
+                fontSize='14px'
+                bg='gray.100'
+                p='5px 7px'
+                rounded='2px 2px 0 0'
+                borderBottomWidth={1}
+              >
+                <Box as='span' display={['none', 'none', 'inline']}>Get the latest { roadmap.featuredTitle } news from our sister site&nbsp;<Link href={'https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Banner'} target='_blank' textDecoration='underline' fontWeight={600}>TheNewStack.io <ExternalLinkIcon /></Link></Box>
+                <Box as='span' display={['inline', 'inline', 'none']}>Get latest { roadmap.featuredTitle } news on &nbsp;<Link href={'https://thenewstack.io?utm_source=roadmap-sh&utm_medium=Referral&utm_campaign=Banner'} target={'_blank'} textDecoration='underline' fontWeight={600}>TheNewStack.io <ExternalLinkIcon /></Link></Box>
+              </Text>
+            )}
+            <Text
+              fontWeight={500}
+              fontSize='14px'
+              bg='white'
+              p='5px 7px'
+              rounded='3px'
+            >
+              <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='yellow'>
+                New
+              </Badge>
+              Resources are here, try clicking any nodes.
+            </Text>
+          </Box>
         )}
       </Container>
     </Box>
