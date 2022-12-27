@@ -2027,11 +2027,11 @@
           "ID": "14093",
           "typeID": "TextArea",
           "zOrder": "54",
-          "w": "208",
+          "w": "216",
           "h": "191",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "985",
+          "x": "977",
           "y": "641"
         },
         {
@@ -2040,7 +2040,7 @@
           "zOrder": "55",
           "measuredW": "41",
           "measuredH": "25",
-          "x": "1040",
+          "x": "1064",
           "y": "794",
           "properties": {
             "text": "Linux",
@@ -2051,11 +2051,11 @@
           "ID": "14095",
           "typeID": "__group__",
           "zOrder": "56",
-          "measuredW": "243",
+          "measuredW": "197",
           "measuredH": "40",
-          "w": "243",
+          "w": "197",
           "h": "40",
-          "x": "935",
+          "x": "982",
           "y": "744",
           "properties": {
             "controlName": "104-managing-servers:operating-system:rhel"
@@ -2067,7 +2067,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "234",
+                  "w": "188",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -2083,7 +2083,7 @@
                   "zOrder": "1",
                   "measuredW": "147",
                   "measuredH": "25",
-                  "x": "52",
+                  "x": "34",
                   "y": "7",
                   "properties": {
                     "size": "17",
@@ -2147,11 +2147,11 @@
           "ID": "14097",
           "typeID": "__group__",
           "zOrder": "57",
-          "measuredW": "245",
+          "measuredW": "194",
           "measuredH": "40",
-          "w": "245",
+          "w": "194",
           "h": "40",
-          "x": "933",
+          "x": "984",
           "y": "653",
           "properties": {
             "controlName": "102-managing-servers:operating-system:ubuntu"
@@ -2163,11 +2163,11 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "234",
+                  "w": "185",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
-                  "x": "11",
+                  "x": "9",
                   "y": "0",
                   "properties": {
                     "color": "16770457"
@@ -2179,7 +2179,7 @@
                   "zOrder": "1",
                   "measuredW": "128",
                   "measuredH": "25",
-                  "x": "64",
+                  "x": "42",
                   "y": "8",
                   "properties": {
                     "size": "17",
@@ -2226,11 +2226,11 @@
           "ID": "14100",
           "typeID": "__group__",
           "zOrder": "58",
-          "measuredW": "246",
+          "measuredW": "195",
           "measuredH": "40",
-          "w": "246",
+          "w": "195",
           "h": "40",
-          "x": "932",
+          "x": "983",
           "y": "699",
           "properties": {
             "controlName": "103-managing-servers:operating-system:suse-linux"
@@ -2242,11 +2242,11 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "234",
+                  "w": "186",
                   "h": "40",
                   "measuredW": "200",
                   "measuredH": "140",
-                  "x": "12",
+                  "x": "9",
                   "y": "0",
                   "properties": {
                     "color": "16770457"
@@ -2258,7 +2258,7 @@
                   "zOrder": "1",
                   "measuredW": "90",
                   "measuredH": "25",
-                  "x": "84",
+                  "x": "55",
                   "y": "7",
                   "properties": {
                     "text": "SUSE Linux",
