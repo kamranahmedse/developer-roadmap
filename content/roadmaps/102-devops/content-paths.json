@@ -50,8 +50,6 @@
   "language:javascript": "/roadmaps/102-devops/content/100-language/102-javascript.md",
   "language:go": "/roadmaps/102-devops/content/100-language/103-go.md",
   "language:rust": "/roadmaps/102-devops/content/100-language/104-rust.md",
-  "language:c": "/roadmaps/102-devops/content/100-language/105-c.md",
-  "language:cpp": "/roadmaps/102-devops/content/100-language/106-cpp.md",
   "managing-servers": "/roadmaps/102-devops/content/102-managing-servers/readme.md",
   "managing-servers:operating-system": "/roadmaps/102-devops/content/102-managing-servers/100-operating-system/readme.md",
   "managing-servers:operating-system:windows": "/roadmaps/102-devops/content/102-managing-servers/100-operating-system/100-windows.md",
