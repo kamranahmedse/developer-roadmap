@@ -13057,7 +13057,7 @@
           "x": "767",
           "y": "3154",
           "properties": {
-            "controlName": "100-message-brokers:rabbitmq"
+            "controlName": "101-message-brokers:kafka"
           },
           "children": {
             "controls": {
