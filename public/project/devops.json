@@ -123,28 +123,28 @@
           "ID": "14036",
           "typeID": "Arrow",
           "zOrder": "8",
-          "w": "198",
-          "h": "305",
+          "w": "192",
+          "h": "247",
           "measuredW": "150",
           "measuredH": "100",
           "x": "434",
-          "y": "2311",
+          "y": "2369",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
             "leftArrow": "false",
             "rightArrow": "false",
             "p0": {
-              "x": 197,
-              "y": 0
+              "x": 192.35091394754102,
+              "y": 0.47218084835731133
             },
             "p1": {
               "x": 0.5554094414478669,
-              "y": 0.21886655076598482
+              "y": 0.21886655076598477
             },
             "p2": {
               "x": 0,
-              "y": 305
+              "y": 247
             }
           }
         },
@@ -152,12 +152,12 @@
           "ID": "14037",
           "typeID": "Arrow",
           "zOrder": "9",
-          "w": "84",
-          "h": "119",
+          "w": "90",
+          "h": "60",
           "measuredW": "150",
           "measuredH": "100",
           "x": "507",
-          "y": "2310",
+          "y": "2373",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -166,15 +166,15 @@
             "stroke": "dotted",
             "p0": {
               "x": 0,
-              "y": 118.5
+              "y": 55.5
             },
             "p1": {
-              "x": 0.39766472060050223,
-              "y": -0.21384487072560038
+              "x": 0.3976647206005023,
+              "y": -0.21384487072560043
             },
             "p2": {
-              "x": 84,
-              "y": -0.5
+              "x": 90.03236052872,
+              "y": 0.4701654054692881
             }
           }
         },
@@ -186,8 +186,8 @@
           "h": "66",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "945",
-          "y": "2460",
+          "x": "895",
+          "y": "2450",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -216,8 +216,8 @@
           "h": "66",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "835",
-          "y": "2460",
+          "x": "765",
+          "y": "2450",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -247,7 +247,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "836",
-          "y": "2362",
+          "y": "2352",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -277,7 +277,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "838",
-          "y": "2310",
+          "y": "2300",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -307,7 +307,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "966",
-          "y": "2311",
+          "y": "2301",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -337,7 +337,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "968",
-          "y": "2310",
+          "y": "2300",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -367,7 +367,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "974",
-          "y": "2312",
+          "y": "2302",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -397,7 +397,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "968",
-          "y": "2312",
+          "y": "2302",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -427,7 +427,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "966",
-          "y": "2282",
+          "y": "2272",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -457,7 +457,7 @@
           "measuredW": "150",
           "measuredH": "100",
           "x": "964",
-          "y": "2232",
+          "y": "2222",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -482,8 +482,8 @@
           "ID": "14048",
           "typeID": "Arrow",
           "zOrder": "20",
-          "w": "192",
-          "h": "306",
+          "w": "286",
+          "h": "362",
           "measuredW": "150",
           "measuredH": "100",
           "x": "418",
@@ -493,12 +493,12 @@
             "leftArrow": "false",
             "rightArrow": "false",
             "p0": {
-              "x": 192,
-              "y": 305.5
+              "x": 285.64528205170564,
+              "y": 362.4782271770214
             },
             "p1": {
-              "x": 0.4365971463723129,
-              "y": 0.20879511032103926
+              "x": 0.4365971463723128,
+              "y": 0.20879511032103928
             },
             "p2": {
               "x": 0,
@@ -2055,7 +2055,7 @@
           "measuredH": "40",
           "w": "243",
           "h": "40",
-          "x": "928",
+          "x": "935",
           "y": "744",
           "properties": {
             "controlName": "104-managing-servers:operating-system:rhel"
@@ -2151,7 +2151,7 @@
           "measuredH": "40",
           "w": "245",
           "h": "40",
-          "x": "926",
+          "x": "933",
           "y": "653",
           "properties": {
             "controlName": "102-managing-servers:operating-system:ubuntu"
@@ -2230,7 +2230,7 @@
           "measuredH": "40",
           "w": "246",
           "h": "40",
-          "x": "925",
+          "x": "932",
           "y": "699",
           "properties": {
             "controlName": "103-managing-servers:operating-system:suse-linux"
@@ -3715,11 +3715,11 @@
                   "ID": "1",
                   "typeID": "__group__",
                   "zOrder": "1",
-                  "measuredW": "170",
+                  "measuredW": "181",
                   "measuredH": "29",
-                  "w": "170",
+                  "w": "181",
                   "h": "29",
-                  "x": "76",
+                  "x": "65",
                   "y": "8",
                   "children": {
                     "controls": {
@@ -3730,7 +3730,7 @@
                           "zOrder": "0",
                           "measuredW": "105",
                           "measuredH": "28",
-                          "x": "65",
+                          "x": "76",
                           "y": "0",
                           "properties": {
                             "color": "16777215",
@@ -3742,14 +3742,14 @@
                           "ID": "1",
                           "typeID": "Label",
                           "zOrder": "1",
-                          "measuredW": "35",
+                          "measuredW": "45",
                           "measuredH": "28",
                           "x": "0",
                           "y": "0",
                           "properties": {
                             "color": "16777215",
                             "size": "20",
-                            "text": "http"
+                            "text": "https"
                           }
                         },
                         {
@@ -3758,7 +3758,7 @@
                           "zOrder": "2",
                           "measuredW": "5",
                           "measuredH": "28",
-                          "x": "37",
+                          "x": "48",
                           "y": "0",
                           "properties": {
                             "bold": "true",
@@ -3773,7 +3773,7 @@
                           "zOrder": "3",
                           "measuredW": "10",
                           "measuredH": "28",
-                          "x": "44",
+                          "x": "55",
                           "y": "1",
                           "properties": {
                             "color": "16777215",
@@ -3787,7 +3787,7 @@
                           "zOrder": "4",
                           "measuredW": "10",
                           "measuredH": "28",
-                          "x": "52",
+                          "x": "63",
                           "y": "1",
                           "properties": {
                             "color": "16777215",
@@ -12288,7 +12288,7 @@
           "w": "426",
           "h": "50",
           "x": "550",
-          "y": "2353",
+          "y": "2343",
           "properties": {
             "controlName": "107-monitoring"
           },
@@ -12335,7 +12335,7 @@
           "w": "238",
           "h": "47",
           "x": "740",
-          "y": "2276",
+          "y": "2266",
           "properties": {
             "controlName": "100-monitoring:infrastructure-monitoring"
           },
@@ -12382,7 +12382,7 @@
           "w": "140",
           "h": "47",
           "x": "1053",
-          "y": "2264",
+          "y": "2254",
           "properties": {
             "controlName": "101-monitoring:infrastructure-monitoring:nagios"
           },
@@ -12494,7 +12494,7 @@
           "w": "140",
           "h": "47",
           "x": "1053",
-          "y": "2316",
+          "y": "2306",
           "properties": {
             "controlName": "102-monitoring:infrastructure-monitoring:grafana"
           },
@@ -12590,7 +12590,7 @@
           "w": "139",
           "h": "47",
           "x": "1053",
-          "y": "2472",
+          "y": "2462",
           "properties": {
             "controlName": "102-monitoring:infrastructure-monitoring:datadog"
           },
@@ -12702,7 +12702,7 @@
           "w": "139",
           "h": "47",
           "x": "1053",
-          "y": "2368",
+          "y": "2358",
           "properties": {
             "controlName": "102-monitoring:infrastructure-monitoring:zabbix"
           },
@@ -12814,7 +12814,7 @@
           "w": "139",
           "h": "47",
           "x": "1053",
-          "y": "2420",
+          "y": "2410",
           "properties": {
             "controlName": "102-monitoring:infrastructure-monitoring:monit"
           },
@@ -12926,7 +12926,7 @@
           "w": "140",
           "h": "47",
           "x": "1053",
-          "y": "2213",
+          "y": "2203",
           "properties": {
             "controlName": "100-monitoring:infrastructure-monitoring:prometheus"
           },
@@ -13022,7 +13022,7 @@
           "w": "289",
           "h": "49",
           "x": "685",
-          "y": "2429",
+          "y": "2419",
           "properties": {
             "controlName": "101-monitoring:application-monitoring"
           },
@@ -13069,7 +13069,7 @@
           "w": "153",
           "h": "47",
           "x": "675",
-          "y": "2514",
+          "y": "2504",
           "properties": {
             "controlName": "100-monitoring:application-monitoring:jaeger"
           },
@@ -13148,7 +13148,7 @@
           "w": "149",
           "h": "47",
           "x": "835",
-          "y": "2514",
+          "y": "2504",
           "properties": {
             "controlName": "101-monitoring:application-monitoring:new-relic"
           },
@@ -13244,7 +13244,7 @@
           "w": "154",
           "h": "47",
           "x": "674",
-          "y": "2566",
+          "y": "2556",
           "properties": {
             "controlName": "102-monitoring:application-monitoring:app-dynamics"
           },
@@ -13356,7 +13356,7 @@
           "w": "148",
           "h": "47",
           "x": "835",
-          "y": "2566",
+          "y": "2556",
           "properties": {
             "controlName": "103-monitoring:application-monitoring:instana"
           },
@@ -13468,7 +13468,7 @@
           "w": "298",
           "h": "47",
           "x": "676",
-          "y": "2619",
+          "y": "2609",
           "properties": {
             "controlName": "104-monitoring:application-monitoring:open-telemetry"
           },
