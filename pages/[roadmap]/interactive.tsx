@@ -137,15 +137,15 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
 
   let minHeight: string[] = [];
   if (roadmap.id === 'frontend') {
-    minHeight = ['970px', '970px', '2100px', '2800px', '2800px'];
+    minHeight = ['1265px', '2075px', '2710px', '2804px', '2804px'];
   }
 
   if (roadmap.id === 'backend') {
-    minHeight = ['870px', '1130px', '1900px', '2500px', '2520px', '2520px'];
+    minHeight = ['1310px', '2150px', '2170px', '2920px', '2920px', '2920px'];
   }
 
   if (roadmap.id === 'devops') {
-    minHeight = ['870px', '1920px', '2505px', '2591px', '2591px', '2591px'];
+    minHeight = ['1160px', '1920px', '2505px', '2591px', '2591px', '2591px'];
   }
 
   if (roadmap.id === 'vue') {
@@ -153,7 +153,7 @@ export function InteractiveRoadmapRenderer(props: RoadmapProps) {
   }
 
   if (roadmap.id === 'react') {
-    minHeight = ['400px', '865px', '1065px', '1400px', '1400px', '1400px'];
+    minHeight = ['720px', '865px', '1340px', '1615px', '1615px', '1615px'];
   }
 
   if (roadmap.id === 'blockchain') {
