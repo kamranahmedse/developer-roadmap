@@ -251,7 +251,6 @@
     "isTextHeavy": false,
     "isCommunity": false,
     "featured": true,
-    "resourcesPath": "/roadmaps/103-react/resources.md",
     "jsonUrl": "/project/react.json",
     "versions": [
       "latest",
