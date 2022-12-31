@@ -29,6 +29,10 @@ const { roadmapId, jsonUrl, dimensions, description, roadmapPermalink } =
 
 <div class='bg-gray-50 py-4 sm:py-10'>
   <div class="max-w-[1000px] container relative">
+    <ShareIcons 
+      description={description}
+      pageUrl={`https://roadmap.sh/${roadmapId}`}
+    />
     <div
       id="roadmap-svg"
       style={`--aspect-ratio:${dimensions.width}/${dimensions.height}`}
