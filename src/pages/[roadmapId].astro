@@ -1,5 +1,6 @@
 ---
 import InteractiveRoadamp from "../components/InteractiveRoadmap/InteractiveRoadmap.astro";
+import MarkdownRoadmap from "../components/MarkdownRoadmap/MarkdownRoadmap.astro";
 import RoadmapHeader from "../components/RoadmapHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getRoadmapIds, RoadmapFrontmatter } from "../lib/roadmap";
@@ -40,5 +41,7 @@ const frontmatter = file.frontmatter as RoadmapFrontmatter;
     )
   }
 
-  <file.Content />
+  <MarkdownRoadmap>
+    <file.Content />
+  </MarkdownRoadmap>
 </BaseLayout>
