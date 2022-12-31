@@ -1,0 +1,20 @@
+# JPA
+
+The Jakarta Persistence API provides Java developers with an object/relational mapping facility for managing relational data in Java applications. JPA is not a tool nor a framework, but a set of interfaces for accessing, persisting, and managing data between Java objects and (a) relational database. Because it is a set of interfaces, it will require an implementation to work with and persist Java objects. This will be ORM. Here are the main features of JPA:
+
+- Cleaner, easier, standardized ORM.
+- Supports inheritance, polymorphism, and polymorphic queries.
+- Supports metadata annotations/XML descriptors to define the mapping (between objects and relational database).
+- Supports a rich, SQL-like query language for static and dynamic queries.
+- Pluggable persistence providers like Hibernate, MyBatis, etc.
+- Caching: JPA supports 2 kinds of cache - first and second levels - to support performance tuning.
+- Read more [here](https://javabydeveloper.com/what-is-java-persistence-api/).
+
+> Note: In 2019, JPA was renamed from Java Persistence API to Jakarta Persistence.
+
+{% resources %}
+  {% Blog "https://www.tutorialspoint.com/jpa/", "TutorialsPoint JPA" %}
+  {% Blog "https://docs.oracle.com/javaee/7/api/javax/persistence/package-summary.html", "Official Java doc - Package javax.persistence" %}
+  {% Blog "https://www.amazon.com/Pro-Jakarta-Persistence-Depth-Development/dp/1484274423", "Pro Jakarta Persistence in Jakarta EE 10" %}
+  {% Blog "https://www.simonandschuster.com/books/Java-Persistence-with-Spring-Data-and-Hibernate/Catalin-Tudose/9781617299186", "Java Persistence with Spring Data and Hibernate by Catalin Tudose" %}
+{% endresources %}

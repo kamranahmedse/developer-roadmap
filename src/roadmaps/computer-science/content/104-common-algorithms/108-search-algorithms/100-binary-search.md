@@ -1,0 +1,10 @@
+# Binary Search
+
+Binary search is a search algorithm that finds the position of a target value within a sorted array. Binary search compares the target value to the middle element of the array. If they are not equal, the half in which the target cannot lie is eliminated and the search continues on the remaining half, again taking the middle element to compare to the target value, and repeating this until the target value is found. If the search ends with the remaining half being empty, the target is not in the array.
+
+{% resources %}
+  {% Blog "https://www.youtube.com/watch?v=fDKIpRe8GW4&feature=youtu.be", "Binary Search in 4 Minutes" %}
+  {% Blog "https://www.youtube.com/watch?v=D5SrAga1pno", "Binary Search - CS50" %}
+  {% Blog "https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/binary-search", "Binary Search - Khan Academy" %}
+  {% Blog "https://www.topcoder.com/thrive/articles/Binary%20Search", "Binary Search" %}
+{% endresources %}

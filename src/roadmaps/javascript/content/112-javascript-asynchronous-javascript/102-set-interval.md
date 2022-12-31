@@ -1,0 +1,10 @@
+# setInterval
+
+The `setInterval()` method helps us to repeatedly execute a function after a fixed delay. It returns a unique interval ID which can later be used by the `clearInterval()` method, which stops further repeated execution of the function. 
+
+`setInterval()` is similar to setTimeout, with a difference. Instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds):
+
+{% resources %}
+  {% Blog "https://javascript.info/settimeout-setinterval", "Scheduling: setTimeout and setInterval" %}
+  {% Blog "https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/", "What is the use of setInterval() method in JavaScript?" %}
+{% endresources %}
