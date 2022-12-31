@@ -1,6 +1,4 @@
 ---
-layout: "layouts/svg-roadmap.njk"
-permalink: "/frontend/"
 jsonUrl: "/assets/jsons/frontend.json"
 pdfUrl: "/assets/pdfs/frontend.pdf"
 order: 1

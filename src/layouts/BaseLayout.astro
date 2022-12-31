@@ -16,10 +16,14 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<slot name="after-header" />
 	</head>
 	<body>
 		<Navigation />
 		<slot />
+
+		<slot name="after-footer"/>
 	</body>
 </html>
 <style is:global>

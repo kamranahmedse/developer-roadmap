@@ -1,0 +1,11 @@
+---
+import "./InteractiveRoadmap.css";
+
+export interface Props {
+    jsonUrl: string;
+}
+
+const { jsonUrl } = Astro.props;
+---
+
+<link rel="preload" href="/fonts/balsamiq.woff2" as="font" type="font/woff2" crossorigin slot="after-header" />

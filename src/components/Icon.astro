@@ -7,9 +7,6 @@ export interface Props {
 
 async function getSVG(name: string) {
   const filepath = `/src/icons/${name}.svg`;
-  const iconFiles = await Astro.glob("../icons/**/*.svg");
-
-  console.log(iconFiles[0]);
 
   const files = import.meta.glob<string>('/src/icons/**/*.svg', {
     eager: true,
