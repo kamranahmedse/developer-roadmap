@@ -1,6 +1,8 @@
 ---
+import DownloadPopup from "../DownloadPopup.astro";
 import Loader from "../Loader.astro";
 import ShareIcons from "../ShareIcons.astro";
+import SubscribePopup from "../SubscribePopup.astro";
 import TopicOverlay from "../TopicOverlay.astro";
 import "./InteractiveRoadmap.css";
 
@@ -34,6 +36,8 @@ const { roadmapId, jsonUrl, dimensions, description, roadmapPermalink } =
       description={description}
       pageUrl={`https://roadmap.sh/${roadmapId}`}
     />
+    <DownloadPopup />
+    <SubscribePopup />
     <TopicOverlay />
     <div
       id="roadmap-svg"

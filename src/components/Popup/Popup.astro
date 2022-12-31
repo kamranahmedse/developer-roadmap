@@ -1,0 +1,36 @@
+---
+import Icon from '../Icon.astro';
+
+export interface Props {
+    id: string;
+    title: string;
+    subtitle: string;
+}
+
+const { id, title, subtitle } = Astro.props;
+---
+
+<script src="./popup.js"></script>
+
+<div id={id} tabindex="-1" class="hidden bg-black/50 overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 h-full flex items-center justify-center modal">
+    <div class="relative p-4 w-full max-w-md h-full md:h-auto">
+      <div class="relative bg-white rounded-lg shadow modal-body">
+        <button type="button" class="absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center" onclick='this.closest(".modal").classList.add("hidden")'>
+          <Icon icon="close" />
+          <span class="sr-only">Close modal</span>
+        </button>
+        <div class="p-5">
+          <h3 class='text-2xl mb-0.5 font-medium'>
+            { title }
+          </h3>
+          <p class="mb-4 text-sm font-normal text-gray-800">
+            { subtitle }
+          </p>
+  
+          <slot />
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
