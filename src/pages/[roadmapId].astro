@@ -1,13 +1,14 @@
 ---
 import InteractiveRoadamp from "../components/InteractiveRoadmap/InteractiveRoadmap.astro";
+import RoadmapHeader from "../components/RoadmapHeader.astro";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import { getRoadmapIds, RoadmapFrontmatter } from "../lib/roadmap";
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
 
-  return roadmapIds.map(roadmapId => ({
-    params: { roadmapId }
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
   }));
 }
 
@@ -17,5 +18,13 @@ const frontmatter = file.frontmatter as RoadmapFrontmatter;
 ---
 
 <BaseLayout title="">
+  <RoadmapHeader
+    description={frontmatter.description}
+    title={frontmatter.title}
+    roadmapUrl={`/${roadmapId}`}
+  />
+
   {frontmatter.jsonUrl && <InteractiveRoadamp jsonUrl={frontmatter.jsonUrl} />}
+
+  <file.Content />
 </BaseLayout>
