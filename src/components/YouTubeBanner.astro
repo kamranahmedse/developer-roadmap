@@ -1,0 +1,12 @@
+---
+import Icon from "./Icon.astro";
+---
+
+<div class='sticky top-0 border-b border-b-yellow-300 z-10 flex h-[37px]' id='sticky-youtube-banner'>
+    <a href='https://youtube.com/theroadmap?sub_confirmation=1' target='_blank' class='flex bg-yellow-200 text-center flex-1 items-center justify-center text-sm hover:bg-yellow-300 outline-0 '>
+        <Icon icon="youtube" /> We now have a YouTube Channel.&nbsp;<span class='hidden sm:inline'>Subscribe for the video content.</span>
+    </a>
+    <button class='text-yellow-500 bg-yellow-200 hover:text-yellow-900 hover:bg-yellow-400 outline-0 px-2' onclick='this.parentElement.classList.add("hidden")'>
+        <Icon icon="close" />
+    </button>
+</div>
