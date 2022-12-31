@@ -1,4 +1,5 @@
 ---
+import "../global.css";
 import Navigation from '../components/Navigation.astro';
 
 export interface Props {
@@ -26,24 +27,3 @@ const { title } = Astro.props;
 		<slot name="after-footer"/>
 	</body>
 </html>
-<style is:global>
-	.container {
-		@apply max-w-[830px] px-4 mx-auto;
-	}
-
-	.bg-stripes {
-		background-image: linear-gradient(45deg, var(--stripes-color) 12.5%, transparent 12.5%, transparent 50%, var(--stripes-color) 50%, var(--stripes-color) 62.5%, transparent 62.5%, transparent 100%);
-		background-size: 5.66px 5.66px
-	}
-
-	.sponsor-footer {
-		text-align: center;
-		font-weight: 600;
-		font-size: 9px;
-		letter-spacing: 0.5px;
-		text-transform: uppercase;
-		padding: 3px 10px;
-		display: block;
-		background: repeating-linear-gradient(-45deg, transparent, transparent 5px, hsla(0, 0%, 0%, .025) 5px, hsla(0, 0%, 0%, .025) 10px) hsla(203, 11%, 95%, .4);
-	}
-</style>

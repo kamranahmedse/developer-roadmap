@@ -12,7 +12,11 @@ export async function getStaticPaths() {
   }));
 }
 
-const { roadmapId } = Astro.params;
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
 const file = await import(`../roadmaps/${roadmapId}/${roadmapId}.md`);
 const frontmatter = file.frontmatter as RoadmapFrontmatter;
 ---
@@ -21,10 +25,20 @@ const frontmatter = file.frontmatter as RoadmapFrontmatter;
   <RoadmapHeader
     description={frontmatter.description}
     title={frontmatter.title}
-    roadmapUrl={`/${roadmapId}`}
+    roadmapPermalink={`/${roadmapId}`}
   />
 
-  {frontmatter.jsonUrl && <InteractiveRoadamp jsonUrl={frontmatter.jsonUrl} />}
+  {
+    frontmatter.jsonUrl && (
+      <InteractiveRoadamp
+        roadmapId={roadmapId}
+        description={frontmatter.description}
+        roadmapPermalink={`/${roadmapId}`}
+        jsonUrl={frontmatter.jsonUrl}
+        dimensions={frontmatter.dimensions}
+      />
+    )
+  }
 
   <file.Content />
 </BaseLayout>

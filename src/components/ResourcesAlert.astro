@@ -2,10 +2,10 @@
 import Icon from "./Icon.astro";
 
 export interface Props {
-  roadmapUrl: string;
+  roadmapPermalink: string;
 }
 
-const { roadmapUrl } = Astro.props;
+const { roadmapPermalink } = Astro.props;
 ---
 
 <!-- Desktop: Roadmap Resources - Alert -->
@@ -21,7 +21,7 @@ const { roadmapUrl } = Astro.props;
   </p>
 
   <a
-    href={`${roadmapUrl}/topics`}
+    href={`${roadmapPermalink}/topics`}
     class="inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1"
   >
     <Icon icon="search" />
@@ -34,7 +34,7 @@ const { roadmapUrl } = Astro.props;
   class="block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white mt-5 relative"
 >
   We have added resources. Try clicking roadmap nodes or visit{" "}
-  <a href={`${roadmapUrl}/topics`} class="text-blue-700 underline">
+  <a href={`${roadmapPermalink}/topics`} class="text-blue-700 underline">
     resources list
   </a>
   .

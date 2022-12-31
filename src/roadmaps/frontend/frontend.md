@@ -1,6 +1,6 @@
 ---
-jsonUrl: "/assets/jsons/frontend.json"
-pdfUrl: "/assets/pdfs/frontend.pdf"
+jsonUrl: "/jsons/frontend.json"
+pdfUrl: "/pdfs/frontend.pdf"
 order: 1
 featuredTitle: "Frontend"
 featuredDescription: "Step by step guide to becoming a frontend developer in 2022"
