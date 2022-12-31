@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/postgresql-dba.json"
 pdfUrl: "/pdfs/postgresql-dba.pdf"
 order: 5
 featuredTitle: "DBA"

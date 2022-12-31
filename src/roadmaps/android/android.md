@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/android.json"
 pdfUrl: "/pdfs/android.pdf"
 order: 4
 featuredTitle: "Android"

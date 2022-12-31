@@ -1,6 +1,6 @@
 ---
-jsonUrl: "angular.json"
-pdfUrl: "ngular.pdf"
+jsonUrl: "/jsons/angular.json"
+pdfUrl: "/pdfs/angular.pdf"
 order: 3
 featuredTitle: "Angular"
 featuredDescription: "Step by step guide to become a Angular Developer in 2022"

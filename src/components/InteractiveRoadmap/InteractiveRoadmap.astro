@@ -11,13 +11,13 @@ export interface Props {
   description: string;
   roadmapPermalink: string;
   jsonUrl: string;
-  dimensions: {
+  dimensions?: {
     width: number;
     height: number;
   };
 }
 
-const { roadmapId, jsonUrl, dimensions, description, roadmapPermalink } =
+const { roadmapId, jsonUrl, dimensions = null, description, roadmapPermalink } =
   Astro.props;
 ---
 
@@ -41,7 +41,7 @@ const { roadmapId, jsonUrl, dimensions, description, roadmapPermalink } =
     <TopicOverlay />
     <div
       id="roadmap-svg"
-      style={`--aspect-ratio:${dimensions.width}/${dimensions.height}`}
+      style={dimensions ? `--aspect-ratio:${dimensions.width}/${dimensions.height}` : null}
       data-roadmap-id={roadmapId}
       data-json-url={jsonUrl}
     >
