@@ -1,6 +1,7 @@
 # Fetch API
 
 Ajax is the technique that lets us send and receive the data asynchronously from the servers e.g. updating the user profile or asynchronously fetching the list of searched products without reloading the page.
+If you haven't studied callback, promise and async/await, study those topics first. Async/await is used in conjunction with fetch, to fetch data asynchronously.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API'>Fetch API MDN Docs</BadgeLink>
