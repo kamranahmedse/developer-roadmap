@@ -9,3 +9,4 @@ The Java Virtual Machine is a program whose purpose is to execute other programs
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/jvm-works-jvm-architecture/'>JVM Architecture</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/jvm-java-virtual-machine'>JVM (Java Virtual Machine) Architecture</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://youtu.be/G1ubVOl9IBw'>How JVM works?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/dncpVFP1JeQ'>JVM Architecture</BadgeLink>
