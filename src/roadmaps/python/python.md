@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/python.json"
 pdfUrl: "/pdfs/python.pdf"
 order: 7
 featuredTitle: "Python"

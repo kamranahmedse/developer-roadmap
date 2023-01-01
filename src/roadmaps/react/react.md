@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/react.json"
 pdfUrl: "/pdfs/react.pdf"
 order: 2
 featuredTitle: "React"

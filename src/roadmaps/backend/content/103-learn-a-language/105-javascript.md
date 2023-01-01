@@ -10,7 +10,7 @@ Apart from being used in the browser, JavaScript is also used in backend e.g. us
 
 If you pick up JavaScript for the Backend, my personal recommendation would be to learn [JavaScript](/javascript) and then go with [Node.js](/nodejs) as it is the most popular and widely used option. Also, I would recommend learning TypeScript later on as you continue with your backend development Journey; it's a superset of JavaScript and is used in many projects. 
 
-- [JavaScript Roadmap](/javascript)
+- [Visit Dedicated JavaScript Roadmap](/javascript)
 - [W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Eloquent Javascript - Book](https://eloquentjavascript.net/)

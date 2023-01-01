@@ -85,7 +85,7 @@ roadmapDirs.forEach((roadmapDirName) => {
         if (dedicatedMatches) {
           const [, href, title] = dedicatedMatches;
 
-          resourceLinks = [`- [${title}](${href})`, ...resourceLinks];
+          resourceLinks = [`- [Visit Dedicated ${title}](${href})`, ...resourceLinks];
         }
 
         resourceLinks = resourceLinks.join('\n');

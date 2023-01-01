@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/blockchain.json"
 pdfUrl: "/pdfs/blockchain.pdf"
 order: 6
 featuredTitle: "Blockchain"

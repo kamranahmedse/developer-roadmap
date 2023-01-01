@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/frontend.json"
 pdfUrl: "/pdfs/frontend.pdf"
 order: 1
 featuredTitle: "Frontend"

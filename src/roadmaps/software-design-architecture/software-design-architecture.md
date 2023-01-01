@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/software-design-architecture.json"
 pdfUrl: "/pdfs/software-design-architecture.pdf"
 order: 11
 featuredTitle: "Software Design"

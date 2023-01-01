@@ -76,7 +76,7 @@ oldRoadmaps.forEach((oldRoadmapPath) => {
     .replace(/<iframe/g, '<iframe class="w-full aspect-video mb-5"')
     .replace(/<iframe(.+?)\s?\/>/g, '<iframe$1></iframe>');
 
-  const hasJson = fs.existsSync(path.join(newAssetsPath, `/${roadmapId}.json`));
+  const hasJson = fs.existsSync(path.join(oldAssetsPath, `/project/${roadmapId}.json`));
 
   const newRoadmapMeta = {
     ...( hasJson ? { jsonUrl: `/jsons/${roadmapId}.json`} : {}),

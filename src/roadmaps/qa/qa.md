@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/qa.json"
 pdfUrl: "/pdfs/qa.pdf"
 order: 7
 featuredTitle: "QA"

@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/flutter.json"
 pdfUrl: "/pdfs/flutter.pdf"
 order: 10
 featuredTitle: "Flutter"

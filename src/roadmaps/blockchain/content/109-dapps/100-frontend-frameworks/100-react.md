@@ -8,7 +8,7 @@
 
 React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.
 
-- [React Roadmap](/react)
+- [Visit Dedicated React Roadmap](/react)
 - [React Website](https://reactjs.org/)
 - [Official Getting Started](https://reactjs.org/tutorial/tutorial.html)
 - [The Beginners Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)

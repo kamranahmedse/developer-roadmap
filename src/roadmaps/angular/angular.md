@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/angular.json"
 pdfUrl: "/pdfs/angular.pdf"
 order: 3
 featuredTitle: "Angular"

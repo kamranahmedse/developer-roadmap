@@ -1,4 +1,5 @@
 ---
+jsonUrl: "/jsons/graphql.json"
 pdfUrl: "/pdfs/graphql.pdf"
 order: 12
 featuredTitle: "GraphQL"
