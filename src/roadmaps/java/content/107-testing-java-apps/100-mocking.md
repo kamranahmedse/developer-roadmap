@@ -8,4 +8,6 @@ Mocking removes external dependencies from a unit test to create a sense of an e
 - Classes with side effects
 - Classes with non-deterministic behavior
 
+Visit the following resources to learn more:
+
 - [Mockito - Mocking Framework for Java](https://site.mockito.org/)

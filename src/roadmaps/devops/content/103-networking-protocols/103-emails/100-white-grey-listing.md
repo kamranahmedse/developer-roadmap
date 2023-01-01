@@ -4,5 +4,7 @@ White listing is a process of adding an email to an approved sender list, so ema
 
 `Greylisting` is a method of protecting e-mail users against spam. A mail transfer agent (MTA) using greylisting will "temporarily reject" any email from a sender it does not recognize. If the mail is legitimate, the originating server will try again after a delay, and the email will be accepted if sufficient time has elapsed.
 
+Visit the following resources to learn more:
+
 - [Basic Introduction to whitelisting](https://www.cblohm.com/blog/education-marketing-trends/what-is-email-whitelisting/)
 - [Detailed Introduction to greylisting](https://en.wikipedia.org/wiki/Greylisting_(email))

@@ -4,6 +4,8 @@ Networking is the process of connecting two or more computing devices together f
 
 If you have networking experience or want to be a reliability engineer or operations engineer, expect questions from these topics. Otherwise, this is just good to know.
 
+Visit the following resources to learn more:
+
 - [Computer Networking Course - Network Engineering](https://www.youtube.com/watch?v=qiQR5rTSshw)
 - [Khan Academy - Networking](https://www.khanacademy.org/computing/code-org/computers-and-the-internet)
 - [Networking Video Series (21 videos)](https://www.youtube.com/playlist?list=PLEbnTDJUr_IegfoqO4iPnPYQui46QqT0j)

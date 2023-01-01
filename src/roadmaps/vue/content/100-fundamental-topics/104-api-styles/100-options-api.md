@@ -4,6 +4,8 @@ We use Options API in a Vue application to write and define different components
 
 To state it simply, Options API is an old way to structure a Vue.JS application. Due to some limitations in this API, Composition API was introduced in Vue 3.
 
+Visit the following resources to learn more:
+
 - [TypeScript with Options API](https://vuejs.org/guide/typescript/options-api.html)
 - [Options API Documentation](https://vuejs.org/api/#options-api)
 

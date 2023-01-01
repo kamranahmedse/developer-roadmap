@@ -2,6 +2,8 @@
 
 CSS or Cascading Style Sheets is the language used to style the frontend of any website. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.
 
+Visit the following resources to learn more:
+
 - [W3Schools — Learn CSS](https://www.w3schools.com/css/)
 - [freeCodeCamp — Responsive Web Design](https://www.freecodecamp.org/learn/responsive-web-design/)
 - [Learn to Code HTML & CSS](https://learn.shayhowe.com/html-css/building-your-first-web-page/)

@@ -2,6 +2,8 @@
 
 [Git](https://git-scm.com/) is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.
 
+Visit the following resources to learn more:
+
 - [Visual Git Guide](https://marklodato.github.io/visual-git-guide/index-en.html)
 - [Git and Github full course](https://youtu.be/apGV9Kg7ics)
 - [Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)

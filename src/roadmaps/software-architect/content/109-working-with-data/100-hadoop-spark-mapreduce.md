@@ -4,5 +4,7 @@
 
 Hadoop MapReduce is a software framework for easily writing applications which process vast amounts of data (multi-terabyte data-sets) in-parallel on large clusters (thousands of nodes) of commodity hardware in a reliable, fault-tolerant manner.
 
+Visit the following resources to learn more:
+
 - [Spark vs Hadoop MapReduce](https://www.integrate.io/blog/apache-spark-vs-hadoop-mapreduce)
 - [Hadoop explained in 5 minutes](https://www.youtube.com/watch?v=aReuLtY0YMI)

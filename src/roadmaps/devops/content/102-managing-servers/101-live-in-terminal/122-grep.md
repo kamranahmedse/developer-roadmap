@@ -6,6 +6,8 @@ It has the following syntax:
 
 `$ grep [options] pattern [files]` e.g. `$ grep "search-regex" file-1.txt`
 
+Visit the following resources to learn more:
+
 - [What is Grep? with examples](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 - [Detailed Manual](https://www.gnu.org/software/grep/manual/grep.html)
 - [Linux Crash Course - The grep Command](https://www.youtube.com/watch?v=Tc_jntovCM0)

@@ -2,6 +2,8 @@
 
 An interface in Go, is a type that defines a set of methods. If we have a type (e.g. struct) that implements that set of methods, then we have a type that implements this interface.
 
+Visit the following resources to learn more:
+
 - [Go Interfaces](https://go.dev/tour/methods/9)
 - [Effective Go: Interfaces](https://go.dev/doc/effective_go#interfaces)
 - [Go by Example: Interfaces](https://gobyexample.com/interfaces)

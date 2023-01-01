@@ -4,4 +4,6 @@ The Web Storage API provides mechanisms for storing key-value pairs in a web bro
 
 The Web Storage API is designed to be simple and easy to use, and it is widely supported across modern web browsers. It is often used as an alternative to cookies, as it allows for larger amounts of data to be stored and is more efficient in terms of performance.
 
+Visit the following resources to learn more:
+
 - [Web Storage API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Storage_API)

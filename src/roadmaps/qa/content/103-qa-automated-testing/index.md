@@ -4,6 +4,8 @@ Automation Testing is a software testing technique that performs using special a
 
 Automated testing is the application of software tools to automate a human-driven manual process of reviewing and validating a software product. Most modern agile and DevOps software projects now include automated testing from inception. To fully appreciate the value of automated testing, however, it helps to understand what life was like before it was widely adopted.
 
+Visit the following resources to learn more:
+
 - [What is Automated Testing?](https://www.atlassian.com/continuous-delivery/software-testing/automated-testing)
 - [Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
 - [Learning Path with different programming language](https://testautomationu.applitools.com/learningpaths.html)

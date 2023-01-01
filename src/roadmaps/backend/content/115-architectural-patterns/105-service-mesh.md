@@ -8,5 +8,7 @@ Service meshes are typically implemented using a sidecar pattern, in which the e
 
 Service meshes are commonly used in cloud-native architectures and are often managed using a control plane, which is responsible for configuring and managing the envoys. Some popular service mesh implementations include Istio and Linkerd.
 
+Visit the following resources to learn more:
+
 - [What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
 - [Service Mesh Explained - Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/blog/2018/05/02/service-mesh-explained/)

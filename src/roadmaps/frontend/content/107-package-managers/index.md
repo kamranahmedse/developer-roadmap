@@ -2,6 +2,8 @@
 
 Package managers allow you to manage the dependencies (external code written by you or someone else) that your project needs to work correctly.
 
+Visit the following resources to learn more:
+
 - [Modern JavaScript for Dinosaurs](https://peterxjang.com/blog/modern-javascript-explained-for-dinosaurs.html)
 - [An Absolute Beginners Guide to Using npm](https://nodesource.com/blog/an-absolute-beginners-guide-to-using-npm/)
 - [Yarn - Getting Started](https://yarnpkg.com/en/docs/getting-started)

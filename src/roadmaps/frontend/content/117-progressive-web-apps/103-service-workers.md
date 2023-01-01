@@ -6,4 +6,6 @@ Service Workers are written in JavaScript and are registered by a web page. Once
 
 Service Workers are supported by most modern web browsers, and they are an essential component of progressive web applications (PWAs).
 
+Visit the following resources to learn more:
+
 - [Service Workers - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Service_Worker_API)

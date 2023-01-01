@@ -4,6 +4,8 @@ Angular route guards are interfaces provided by Angular which, when implemented,
 
 Some types of angular guards are `CanActivate`, `CanActivateChild`, `CanLoad`, `CanDeactivate` and `Resolve`.
 
+Visit the following resources to learn more:
+
 - [Angular Official Website](https://angular.io/api/router)
 - [Can Activate Guard](https://angular.io/api/router/CanActivate)
 - [Can Activate Child](https://angular.io/api/router/CanActivateChild)

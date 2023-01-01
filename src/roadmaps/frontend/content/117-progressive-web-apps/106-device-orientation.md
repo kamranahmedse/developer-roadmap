@@ -6,4 +6,6 @@ To use the Device Orientation API, a web page must first request permission from
 
 The Device Orientation API is supported by most modern web browsers and is often used in conjunction with other APIs, such as the Geolocation API, to build location-based applications.
 
+Visit the following resources to learn more:
+
 - [Device Orientation API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Device_orientation_events)

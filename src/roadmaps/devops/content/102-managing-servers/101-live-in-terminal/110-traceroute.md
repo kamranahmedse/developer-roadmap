@@ -4,5 +4,7 @@
 
 It has the following syntax: `$ traceroute [OPTIONS] DESTINATION` e.g. `$ traceroute roadmap.sh`
 
+Visit the following resources to learn more:
+
 - [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)
 - [Traceroute command in Linux with examples](https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/)

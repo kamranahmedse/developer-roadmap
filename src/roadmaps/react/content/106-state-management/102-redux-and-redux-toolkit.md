@@ -6,6 +6,8 @@ Redux Toolkit (RTK) is a library for managing state in JavaScript applications. 
 
 RTK is often used as an alternative to writing Redux applications from scratch, as it provides a set of conventions and utilities that can make it easier and faster to build Redux applications.
 
+Visit the following resources to learn more:
+
 - [Redux Toolkit - ReduxJS](https://redux-toolkit.js.org/)
 - [Official Website](https://redux.js.org/)
 - [Official Getting Started to Redux](https://redux.js.org/introduction/getting-started)

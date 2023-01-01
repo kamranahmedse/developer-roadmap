@@ -11,6 +11,8 @@ Here is the list of common ways of authentication:
 - OAuth - Open Authorization
 - SSO - Single Sign On
 
+Visit the following resources to learn more:
+
 - [User Authentication: Understanding the Basics & Top Tips](https://swoopnow.com/user-authentication/)
 - [An overview about authentication methods](https://betterprogramming.pub/how-do-you-authenticate-mate-f2b70904cc3a)
 - [SSO - Single Sign On](https://roadmap.sh/guides/sso)

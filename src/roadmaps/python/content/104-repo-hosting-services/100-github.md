@@ -2,6 +2,8 @@
 
 [GitHub](https://github.com) is a provider of internet hosting for software development and version control using Git. It offers the distributed version control and source code management functionality of Git, plus its own features.
 
+Visit the following resources to learn more:
+
 - [GitHub: Quickstart](https://docs.github.com/en/get-started/quickstart/hello-world)
 - [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)

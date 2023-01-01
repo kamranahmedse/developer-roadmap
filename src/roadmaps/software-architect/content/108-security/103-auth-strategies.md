@@ -1,5 +1,7 @@
 # Auth strategies
 
+Visit the following resources to learn more:
+
 - [JSON Web Token - Handbook](https://auth0.com/resources/ebooks/jwt-handbook)
 - [SAML Overview](https://www.youtube.com/watch?v=i8wFExDSZv0)
 - [A Devlopers Guide to SAML](https://www.youtube.com/watch?v=l-6QSEqDJPo)

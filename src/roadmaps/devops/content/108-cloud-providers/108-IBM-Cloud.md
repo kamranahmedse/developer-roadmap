@@ -2,6 +2,8 @@
 
 IBM cloud computing is a set of cloud computing services that offers both platform as a service (PaaS) and infrastructure as a service (IaaS). IBM Cloud supports various languages and frameworks such as Go, Java™, Node.js, Python and Swift.
 
+Visit the following resources to learn more:
+
 - [IBM cloud](https://www.ibm.com/cloud)
 - [IBM Cloud Documentation](https://cloud.ibm.com/docs)
 - [IBM Cloud Essentials](https://www.coursera.org/learn/ibm-cloud-essentials)

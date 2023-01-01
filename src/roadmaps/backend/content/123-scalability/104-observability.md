@@ -6,6 +6,8 @@ So what makes a system to be "observable"? It is its ability of producing and co
 
 You can of course implement all those features by yourself, but there are a lot of softwares out there that can help you with it like Datadog, Sentry and CloudWatch.
 
+Visit the following resources to learn more:
+
 - [DataDog Docs](https://docs.datadoghq.com/)
 - [AWS CloudWatch Docs](https://aws.amazon.com/cloudwatch/getting-started/)
 - [Sentry Docs](https://docs.sentry.io/)

@@ -4,5 +4,7 @@ World Wide Web Consortium (W3C) standards define the best practices for web deve
 
 Web Hypertext Application Technology Working Group (WHATWG) is another set of web standards that came into existence after W3C announced that it was going to be focusing on XHTML over HTML. 
 
+Visit the following resources to learn more:
+
 - [W3C Standards](https://www.w3.org/standards/)
 - [WHATWG Standards](https://spec.whatwg.org/)

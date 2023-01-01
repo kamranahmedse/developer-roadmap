@@ -6,6 +6,8 @@ There's also a cross-platform stand-alone executable for teams not comfortable w
 
 A Java API also exists for those who prefer to programmatically integrate Karate's rich automation and data-assertion capabilities.
 
+Visit the following resources to learn more:
+
 - [karate website](https://www.karatelabs.io/)
 - [karate architecture](https://github.com/karatelabs/karate/blob/master/karate-core/src/test/resources/karate-map.jpg?raw=true)
 - [karate for beginner](https://www.youtube.com/watch?v=1f6xtJpRx4k&list=PLhW3qG5bs-L-y5Q1zDXJAur1JNZVFB534)

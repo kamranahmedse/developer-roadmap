@@ -8,4 +8,6 @@ A few example cases where one may use headless browser testing include:
 - Web scraping
 - Generating screenshots of webpages
 
+Visit the following resources to learn more:
+
 - [What is Headless Browser Testing and Why is it Important?](https://www.browserstack.com/guide/what-is-headless-browser-testing)

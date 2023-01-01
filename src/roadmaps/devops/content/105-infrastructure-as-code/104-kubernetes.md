@@ -4,6 +4,8 @@ Kubernetes is an [open source](https://github.com/kubernetes/kubernetes) contain
 
 The popularity of Kubernetes has made it an increasingly important skill for the DevOps Engineer and has triggered the creation of Platform teams across the industry.  These Platform engineering teams often exist with the sole purpose of making Kubernetes approachable and usable for their product development colleagues.
 
+Visit the following resources to learn more:
+
 - [Kubernetes Website](https://kubernetes.io/)
 - [Kubernetes Documentation](https://kubernetes.io/docs/home/)
 - [Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=s_o8dwzRlu4)

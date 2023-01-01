@@ -16,4 +16,6 @@ Following are the commonly used performance testing types, but not limited to:
 - Scalability Testing
 - Capacity Testing
 
+Visit the following resources to learn more:
+
 - [Performance Testing Tutorial – Types (Example)](https://www.guru99.com/performance-testing.html)

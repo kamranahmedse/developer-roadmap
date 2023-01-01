@@ -6,6 +6,8 @@
 
 # Java/Kotlin/Scala
 
+Visit the following resources to learn more:
+
 - [Visit Dedicated Java Roadmap](/java)
 - [Java Basics](https://www.w3schools.com/java/)
 - [Learn the basics of Kotlin](https://blog.teamtreehouse.com/absolute-beginners-guide-kotlin)

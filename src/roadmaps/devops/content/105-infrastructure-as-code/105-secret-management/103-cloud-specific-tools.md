@@ -8,6 +8,8 @@ There are several cloud-specific tools for securely storing and managing secrets
 
 These cloud-specific tools are designed to be used in conjunction with cloud-based applications and infrastructure and are typically integrated with other cloud services, such as container orchestration platforms and continuous delivery pipelines.
 
+Visit the following resources to learn more:
+
 - [AWS Secrets Manager - Amazon Web Services](https://aws.amazon.com/secrets-manager/)
 - [Google Cloud Secret Manager - Google Cloud](https://cloud.google.com/secret-manager)
 - [Azure Key Vault - Microsoft Azure](https://azure.microsoft.com/en-us/services/key-vault/)

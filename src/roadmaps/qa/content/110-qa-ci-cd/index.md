@@ -4,6 +4,8 @@ Continuous Integration is a software development method where team members integ
 
 Continuous Delivery is a software engineering method in which a team develops software products in a short cycle. It ensures that software can be easily released at any time. The main aim of continuous delivery is to build, test, and release software with good speed and frequency. It helps reduce the cost, time, and risk of delivering changes by allowing for frequent updates in production.
 
+Visit the following resources to learn more:
+
 - [What is CI/CD? Continuous Integration and Continuous Delivery](https://www.guru99.com/continuous-integration.html)
 - [Continuous Integration vs Delivery vs Deployment](https://www.guru99.com/continuous-integration-vs-delivery-vs-deployment.html)
 - [CI/CD Pipeline: Learn with Example](https://www.guru99.com/ci-cd-pipeline.html)

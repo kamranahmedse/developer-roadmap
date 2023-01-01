@@ -9,6 +9,8 @@ Built-in objects, or "global objects", are those built into the language specifi
 - `Function`
 - `Boolean`
 
+Visit the following resources to learn more:
+
 - [Built-in Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 - [Standard built-in objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
 - [JavaScript Built-in Objects](https://www.tutorialride.com/javascript/javascript-built-in-objects.htm)

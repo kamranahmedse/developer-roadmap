@@ -8,6 +8,8 @@ Vim is a highly configurable text editor built to make creating and changing any
 
 Vim ships with `vimtutor` that is a tutor designed to describe enough of the Vim commands that you will be able to easily use Vim as an all-purpose editor.
 
+Visit the following resources to learn more:
+
 - [Vim](https://www.vim.org)
 - [Vim help files](https://vimhelp.org/)
 - [Vim Tips Wiki](https://vim.fandom.com/wiki/Vim_Tips_Wiki)

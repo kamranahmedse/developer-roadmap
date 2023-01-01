@@ -1,6 +1,8 @@
 # Design System Examples
 
 
+Visit the following resources to learn more:
+
 - [Material Design (Google)](https://material.io/)
 - [Carbon Design System (IBM)](https://carbondesignsystem.com/)
 - [Atlassian Design System](https://atlassian.design/)

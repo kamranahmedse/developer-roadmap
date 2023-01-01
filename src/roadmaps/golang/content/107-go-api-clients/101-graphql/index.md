@@ -4,6 +4,8 @@
 
 Besides, you don't need to be worried about breaking changes, versioning and backwards compatibility like REST APIs. Therefore you can implement your version and auto-document your API just by using `GraphQL`.
 
+Visit the following resources to learn more:
+
 - [GraphQL Website](https://graphql.org/)
 - [Learn GraphQL](https://graphql.org/learn/)
 - [GraphQL Tutorials](https://www.graphql.com/tutorials/)

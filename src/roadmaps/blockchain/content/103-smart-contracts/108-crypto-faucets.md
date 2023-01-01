@@ -4,5 +4,7 @@ A crypto faucet lets users earn small crypto rewards by completing simple tasks.
 
 Faucets are common in development environments where developers obtain testnet crypto in order develop and test their application prior to mainnet deployment.
 
+Visit the following resources to learn more:
+
 - [What Is A Crypto Faucet?](https://academy.binance.com/en/articles/what-is-a-crypto-faucet)
 - [What are crypto faucets and how do they work?](https://cointelegraph.com/news/what-are-crypto-faucets-and-how-do-they-work)

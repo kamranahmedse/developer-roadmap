@@ -8,6 +8,8 @@ description='Click to check the detailed Flutter Roadmap.'
 
 Flutter is a free and open-source multi-platform UI framework created by Google and released in May 2017. In a few words, it allows you to create a native mobile application with only one codebase. This means that you can use one programming language and one codebase to create three different apps (for iOS, Android and Desktop).
 
+Visit the following resources to learn more:
+
 - [Visit Dedicated Flutter Roadmap](/flutter)
 - [Flutter Website](https://flutter.dev)
 - [Flutter for Desktop](https://flutter.dev/multi-platform/desktop)

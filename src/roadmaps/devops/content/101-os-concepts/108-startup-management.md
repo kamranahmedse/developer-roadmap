@@ -4,6 +4,8 @@
 
 It has following syntax: `$ service [service_name] [action]` e.g. `$ service ssh start`
 
+Visit the following resources to learn more:
+
 - [Linux Booting Process](https://www.freecodecamp.org/news/the-linux-booting-process-6-steps-described-in-detail/)
 - [What is init.d?](https://www.geeksforgeeks.org/what-is-init-d-in-linux-service-management/)
 - [What are Daemons in Linux?](https://itsfoss.com/linux-daemons/)

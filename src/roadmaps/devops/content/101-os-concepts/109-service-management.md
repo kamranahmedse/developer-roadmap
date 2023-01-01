@@ -4,6 +4,8 @@
 
 e.g. `$ systemctl start [service-name]`, `$ systemctl poweroff`
 
+Visit the following resources to learn more:
+
 - [What is systemd? and its commands](https://www.geeksforgeeks.org/linux-systemd-and-its-components/)
 - [init.d vs systemd](https://uace.github.io/learning/init-vs-systemd-what-is-an-init-daemon)
 - [Why Systemd as a replacement of init.d?](https://www.tecmint.com/systemd-replaces-init-in-linux/)

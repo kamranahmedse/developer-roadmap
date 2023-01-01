@@ -18,6 +18,8 @@ Dart focuses on front-end development, and you can use it to create mobile and w
 
 If you know a bit of programming, Dart is a typed object programming language. You can compare Dart's syntax to JavaScript.
 
+Visit the following resources to learn more:
+
 - [Visit Dedicated Flutter Roadmap](/flutter)
 - [Flutter Website](https://flutter.dev)
 - [Flutter Tutorial](https://www.w3adda.com/flutter-tutorial)

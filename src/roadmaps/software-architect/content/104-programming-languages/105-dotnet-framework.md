@@ -5,6 +5,8 @@
 Officially supported languages in .NET: C#, F#, Visual Basic.
 
 
+Visit the following resources to learn more:
+
 - [.NET Website](https://dotnet.microsoft.com/en-us/)
 - [What is .NET?](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
 - [Why Choose .NET?](https://dotnet.microsoft.com/en-us/platform/why-choose-dotnet)

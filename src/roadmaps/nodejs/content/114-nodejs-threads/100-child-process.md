@@ -7,4 +7,6 @@ The three main methods inside this module are :
 `child_process.fork()`
 `child_process.exec()`
 
+Visit the following resources to learn more:
+
 - [Child Process Docs](https://nodejs.org/api/child_process.html#child-process)

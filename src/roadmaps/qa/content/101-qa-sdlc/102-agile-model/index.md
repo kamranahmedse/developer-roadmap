@@ -4,6 +4,8 @@ The agile model refers to a software development approach based on iterative dev
 
 The Agile software development methodology is one of the simplest and most effective processes to turn a vision for a business need into software solutions.
 
+Visit the following resources to learn more:
+
 - [Agile Methodology: What is Agile Model in Software Testing?](https://www.guru99.com/agile-scrum-extreme-testing.html)
 - [Agile Model](https://www.javatpoint.com/software-engineering-agile-model)
 - [Manifesto for Agile Software Development](https://agilemanifesto.org/)

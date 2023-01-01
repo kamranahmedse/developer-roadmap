@@ -4,4 +4,6 @@ Configuration management is a systems engineering process for establishing consi
 
 Software configuration management is a systems engineering process that tracks and monitors changes to a software systems configuration metadata. In software development, configuration management is commonly used alongside version control and CI/CD infrastructure. This post focuses on its modern application and use in agile CI/CD software environments.
 
+Visit the following resources to learn more:
+
 - [What is configuration management?](https://www.atlassian.com/microservices/microservices-architecture/configuration-management)

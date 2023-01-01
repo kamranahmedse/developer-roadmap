@@ -4,5 +4,7 @@ The term Memory can be defined as a collection of data in a specific format. It 
 
 To achieve a degree of multiprogramming and proper utilization of memory, memory management is important. There are several memory management methods, reflecting various approaches, and the effectiveness of each algorithm depends on the situation.
 
+Visit the following resources to learn more:
+
 - [Demystifying memory management in modern programming languages](https://dev.to/deepu105/demystifying-memory-management-in-modern-programming-languages-ddd)
 - [Memory Management in Operating System](https://www.geeksforgeeks.org/memory-management-in-operating-system/)

@@ -6,4 +6,6 @@ KV databases are designed for fast and efficient storage and retrieval of data, 
 
 Some popular KV databases include Redis, Memcached, and LevelDB. These databases are often used in combination with other types of databases, such as relational databases or document databases, to provide a complete and scalable data storage solution.
 
+Visit the following resources to learn more:
+
 - [Key-Value Databases - Wikipedia](https://en.wikipedia.org/wiki/Key-value_database)

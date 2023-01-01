@@ -6,4 +6,6 @@ In a Flux CD workflow, changes to the application are made by committing code or
 
 Flux CD is designed to be a simple and efficient way to manage cloud-native applications, as it allows developers to make changes to the system using familiar tools and processes and it provides a clear and auditable history of all changes to the system. It is often used in conjunction with tools such as Helm to automate the deployment and management of cloud-native applications.
 
+Visit the following resources to learn more:
+
 - [Flux CD Docs](https://docs.fluxcd.io/)

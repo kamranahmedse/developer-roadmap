@@ -6,6 +6,8 @@ Memcached's APIs provide a very large hash table distributed across multiple mac
 
 Memcached has no internal mechanism to track misses which may happen. However, some third-party utilities provide this functionality.
 
+Visit the following resources to learn more:
+
 - [Memcached, From Wikipedia](https://en.wikipedia.org/wiki/Memcached)
 - [Memcached, From Official Github](https://github.com/memcached/memcached#readme)
 - [Memcached Tutorial](https://www.tutorialspoint.com/memcached/index.htm)

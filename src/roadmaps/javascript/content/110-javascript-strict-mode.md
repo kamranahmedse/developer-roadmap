@@ -8,5 +8,7 @@ Strict mode makes several changes to normal JavaScript semantics:
 - Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes run faster than identical code that's not strict mode.
 - Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
+Visit the following resources to learn more:
+
 - [Strict mode](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode)
 - [Strict mode in JavaScript](https://javascript.info/strict-mode)

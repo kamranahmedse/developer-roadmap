@@ -6,6 +6,8 @@ Steps -
 1. Define function - datatype function_name(parameters){body}
 2. Call function - function_name(values)
 
+Visit the following resources to learn more:
+
 - [Methods/Functions in Java.](https://www.javatpoint.com/method-in-java)
 - [What are methods or functions in Java.](https://www.geeksforgeeks.org/methods-in-java/)
 - [Learn Functions/Methods in Java](https://www.w3schools.com/java/java_methods.asp)

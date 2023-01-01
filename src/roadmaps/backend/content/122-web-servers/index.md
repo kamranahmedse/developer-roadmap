@@ -12,5 +12,7 @@ A software web server has a number of software components that regulate how host
  
 Basically, an HTTP request is made by a browser anytime it wants a file that is stored on a web server. The relevant (hardware) web server receives the request, which is then accepted by the appropriate (software) HTTP server, which then locates the requested content and returns it to the browser over HTTP. (If the server cannot locate the requested page, it responds with a 404 error.)
 
+Visit the following resources to learn more:
+
 - [What is a Web Server ](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/What_is_a_web_server)
 - [Web Server Concepts and Examples](https://youtu.be/9J1nJOivdyw)

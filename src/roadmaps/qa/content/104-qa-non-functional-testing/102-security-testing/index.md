@@ -4,4 +4,6 @@ Security testing is a process intended to reveal flaws in the security mechanism
 
 Typical security requirements may include specific elements of confidentiality, integrity, authentication, availability, authorization and non-repudiation. Actual security requirements tested depend on the security requirements implemented by the system. Security testing as a term has a number of different meanings and can be completed in a number of different ways. As such, a Security Taxonomy helps us to understand these different approaches and meanings by providing a base level to work from. 
 
+Visit the following resources to learn more:
+
 - [Security Testing Wiki](https://en.wikipedia.org/wiki/Security_testing)

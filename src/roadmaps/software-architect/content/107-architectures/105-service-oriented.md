@@ -9,5 +9,7 @@ SOA provides four different service types:
 3. Application services, which are used to develop and deploy apps.
 4. Infrastructure services, which are instrumental for backend processes like security and authentication.
 
+Visit the following resources to learn more:
+
 - [SOA Architecture By AWS](https://aws.amazon.com/what-is/service-oriented-architecture/)
 - [SOA Architecture](https://www.geeksforgeeks.org/service-oriented-architecture/)

@@ -4,5 +4,7 @@ HtmlUnit is a "GUI-Less browser for Java programs". It models HTML documents and
 
 HtmlUnit is not a generic unit testing framework. It is specifically a way to simulate a browser for testing purposes and is intended to be used within another testing framework such as JUnit or TestNG. 
 
+Visit the following resources to learn more:
+
 - [HtmlUnit Website](https://htmlunit.sourceforge.io/)
 - [Introduction to HtmlUnit](https://www.baeldung.com/htmlunit)

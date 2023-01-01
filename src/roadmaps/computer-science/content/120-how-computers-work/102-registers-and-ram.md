@@ -8,4 +8,6 @@ Registers are the high-speed accessible storage elements. The processor accesses
 Primary memory or RAM is a volatile memory, meaning the primary memory data exist when the system's power is on, and the data vanishes as the system is switched off. The primary memory contains the data required by the currently executing program in the CPU. If the data required by the processor is not in primary memory, then the data is transferred from secondary storage to primary memory, and then it is fetched by the processor.
 
 
+Visit the following resources to learn more:
+
 - [Registers and RAM](https://youtu.be/fpnE6UAfbtU)

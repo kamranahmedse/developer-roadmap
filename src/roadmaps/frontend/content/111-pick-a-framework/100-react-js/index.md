@@ -8,6 +8,8 @@
 
 React is the most popular front-end JavaScript library for building user interfaces. React can also render on the server using Node and power mobile apps using React Native.
 
+Visit the following resources to learn more:
+
 - [Visit Dedicated React Roadmap](/react)
 - [React Website](https://reactjs.org/)
 - [Official Getting Started](https://reactjs.org/tutorial/tutorial.html)

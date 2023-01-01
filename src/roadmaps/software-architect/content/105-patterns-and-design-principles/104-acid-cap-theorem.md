@@ -6,6 +6,8 @@ CAP is an acronym for Consistency, Availability, and Partition Tolerance. Accord
 
 ACID is an acronym that stands for Atomicity, Consistency, Isolation, Durability. ACID is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc.
 
+Visit the following resources to learn more:
+
 - [What is CAP Theorem?](https://www.bmc.com/blogs/cap-theorem/)
 - [CAP Theorem - Wikipedia](https://en.wikipedia.org/wiki/CAP_theorem)
 - [An Illustrated Proof of the CAP Theorem](https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/)

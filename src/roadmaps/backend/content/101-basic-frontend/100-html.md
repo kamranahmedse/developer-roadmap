@@ -2,6 +2,8 @@
 
 HTML stands for HyperText Markup Language. It is used on the frontend and gives the structure to the webpage which you can style using CSS and make interactive using JavaScript.
 
+Visit the following resources to learn more:
+
 - [W3Schools: Learn HTML](https://www.w3schools.com/html/html_intro.asp)
 - [Codecademy - Learn HTML](https://www.codecademy.com/learn/learn-html)
 - [Interactive HTML Course](https://github.com/denysdovhan/learnyouhtml)

@@ -4,6 +4,8 @@ Go modules are a group of related packages that are versioned and distributed to
 
 Modules are identified by a module path that is declared in the first line of the go.mod file in our project.  
 
+Visit the following resources to learn more:
+
 - [Go Modules](https://go.dev/blog/using-go-modules)
 - [Go Modules](https://www.youtube.com/watch?v=9cV1KESTJRc)
 - [DigitalOcean: How to use Go Modules](https://www.digitalocean.com/community/tutorials/how-to-use-go-modules)

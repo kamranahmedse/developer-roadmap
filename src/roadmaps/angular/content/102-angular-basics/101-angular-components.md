@@ -7,5 +7,7 @@ Components are the main building block for Angular applications. Each component 
 * A CSS selector that defines how the component is used in a template
 * Optionally, CSS styles applied to the template
 
+Visit the following resources to learn more:
+
 - [Angular Components Overview](https://angular.io/guide/component-overview)
 - [Standalone Components in Angular](https://www.youtube.com/watch?v=x5PZwb4XurU)

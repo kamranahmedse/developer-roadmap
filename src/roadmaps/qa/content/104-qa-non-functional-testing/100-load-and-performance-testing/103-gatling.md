@@ -6,5 +6,7 @@ Out of the box, Gatling comes with excellent support of the HTTP protocol that m
 
 Gatling’s architecture is asynchronous as long as the underlying protocol, such as HTTP, can be implemented in a non blocking way. This kind of architecture lets us implement virtual users as messages instead of dedicated threads, making them very resource cheap. Thus, running thousands of concurrent virtual users is not an issue.
 
+Visit the following resources to learn more:
+
 - [Gatling Website](https://gatling.io/)
 - [Learn Gatling](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJE6s8I1MjWm-z8BGbUYNCw)

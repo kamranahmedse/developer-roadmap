@@ -6,6 +6,8 @@ It has the following syntax
 
 `$ sort [options].. input-file` e.g. `$ sort file.txt`
 
+Visit the following resources to learn more:
+
 - [Sort command with examples](https://www.geeksforgeeks.org/sort-command-linuxunix-examples/)
 - [Options](https://en.wikipedia.org/wiki/Sort_(Unix))
 - [Linux Tutorials|sort command GeeksforGeeks](https://www.youtube.com/watch?v=fEx5rnbDKO4)

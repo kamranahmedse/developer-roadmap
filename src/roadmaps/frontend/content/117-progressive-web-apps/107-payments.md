@@ -6,6 +6,8 @@ To use the Payment Request API, a web page must first create a `PaymentRequest` 
 
 The Payment Request API is supported by most modern web browsers and is designed to be simple and efficient for both the developer and the user.
 
+Visit the following resources to learn more:
+
 - [Payment Request API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API)
 
 

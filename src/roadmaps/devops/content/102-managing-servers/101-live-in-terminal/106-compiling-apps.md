@@ -6,6 +6,8 @@ The GNU Compiler Collection (GCC) is a compiler system produced by the GNU Proje
 
 "What is GCC used for?" GCC is a toolchain that compiles code, links it with any library dependencies, converts that code to assembly, and then prepares executable files.It is responsible for the conversion of the “high level” source code in the respective language and ensuring that it is semantically valid, performing well formed optimizations, and converting it to assembly code (which is then handed off to the assembler).
 
+Visit the following resources to learn more:
+
 - [Intro to GCC](https://courses.cs.washington.edu/courses/cse451/99wi/Section/gccintro.html)
 - [GCC Linux](https://www.javatpoint.com/gcc-linux)
 - [GCC Commands](https://www.geeksforgeeks.org/gcc-command-in-linux-with-examples/)

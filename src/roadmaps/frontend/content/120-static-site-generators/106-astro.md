@@ -9,5 +9,7 @@ Astro is an all-in-one web framework for building fast, content-focused websites
 - Customizable: Tailwind, MDX, and 100+ other integrations to choose from.
 - UI-agnostic: Supports React, Preact, Svelte, Vue, Solid, Lit and more.
 
+Visit the following resources to learn more:
+
 - [Official Astro Website](https://astro.build/)
 - [Official Astro Docs](https://docs.astro.build/)

@@ -9,5 +9,7 @@ In JavaScript, the `this` keyword is a little different compared to other langua
 - In an event, `this` refers to the element that received the event
 - Methods like call(), apply(), and bind() can refer `this` to any object
 
+Visit the following resources to learn more:
+
 - [The JavaScript `this` Keyword](https://www.w3schools.com/js/js_this.asp)
 - [This Keyword](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this)

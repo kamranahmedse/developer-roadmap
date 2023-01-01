@@ -6,4 +6,6 @@ In a GitOps workflow, changes to the system are made by committing code or confi
 
 GitOps is designed to be a more efficient and agile way of managing cloud-native environments, as it allows developers to make changes to the system using familiar tools and processes and it provides a clear and auditable history of all changes to the system. It is often used in conjunction with tools such as Kubernetes and Helm to automate the deployment and management of cloud-native applications.
 
+Visit the following resources to learn more:
+
 - [Guide to GitOps](https://www.weave.works/technologies/gitops/)

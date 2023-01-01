@@ -2,6 +2,8 @@
 
 Math is a fundamental skill for computer science.
 
+Visit the following resources to learn more:
+
 - [Lec 1 | MIT 6.042J Mathematics for Computer Science, Fall 2010](https://www.youtube.com/watch?v=L3LMbpZIKhQ&list=PLB7540DEDD482705B)
 - [Integer Arithmetic, Karatsuba Multiplication](https://www.youtube.com/watch?v=eCaXlAaN2uE&index=11&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
 - [The Chinese Remainder Theorem (used in cryptography)](https://www.youtube.com/watch?v=ru7mWZJlRQg)

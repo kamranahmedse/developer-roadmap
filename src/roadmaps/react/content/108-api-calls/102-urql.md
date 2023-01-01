@@ -11,4 +11,6 @@ urql is designed to be easy to use and flexible, with a simple API for performin
 
 urql is often used as an alternative to other GraphQL libraries, such as Apollo Client, because of its simplicity and lightweight size. It is particularly well-suited for small to medium-sized React applications where the complexity of other GraphQL libraries may not be required.
 
+Visit the following resources to learn more:
+
 - [urql - Formidable Labs](https://formidable.com/open-source/urql/)

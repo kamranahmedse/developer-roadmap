@@ -8,6 +8,8 @@ To understand these commands, read through the manual pages by using `man` comma
 
 After enough exposure and practice to these commands, it will become easier to use these in practice
 
+Visit the following resources to learn more:
+
 - [40 Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands)
 - [A collection of modern/faster/saner alternatives to common unix commands](https://github.com/ibraheemdev/modern-unix)
 - [Command Line Tutorial](https://www.learnenough.com/command-line-tutorial)

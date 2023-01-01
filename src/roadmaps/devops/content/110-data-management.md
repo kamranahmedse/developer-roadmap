@@ -4,4 +4,6 @@ Data management is the key element of cloud applications, and influences most of
 
 Additionally data should be protected at rest, in transit, and via authorized access mechanisms to maintain security assurances of confidentiality, integrity, and availability. Refer to the Azure Security Benchmark Data Protection Control for more information.
 
+Visit the following resources to learn more:
+
 - [Data management patterns](https://docs.microsoft.com/en-us/azure/architecture/patterns/category/data-management)

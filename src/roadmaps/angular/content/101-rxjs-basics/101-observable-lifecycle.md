@@ -8,4 +8,6 @@ There are 4 stages for a life cycle of an observable.
  - Execution
  - Destruction
 
+Visit the following resources to learn more:
+
 - [Understanding Observable LifeCycle](https://medium.com/analytics-vidhya/understanding-rxjs-observables-ad5b34d9607f)

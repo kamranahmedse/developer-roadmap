@@ -10,6 +10,8 @@ Web performance metrics are quantitative measures of the performance of a web pa
 
 There are many tools and techniques available for measuring web performance metrics, including browser dev tools, performance monitoring tools, and web performance APIs. By tracking these metrics and analyzing the results, web developers can identify areas for improvement and optimize the performance of their web pages.
 
+Visit the following resources to learn more:
+
 - [Web Performance Metrics - Google Developers](https://developers.google.com/web/fundamentals/performance/user-centric-performance-metrics)
 - [Measuring performance and user experience - Google Developers](https://web.dev/metrics/)
 - [Measuring performance and user experience - MDN](https://developer.mozilla.org/en-US/docs/Web/Guide/Performance)

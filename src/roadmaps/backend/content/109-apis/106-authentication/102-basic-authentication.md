@@ -4,5 +4,7 @@ Given the name "Basic Authentication", you should not confuse Basic Authenticati
 
 Because it is a part of the HTTP specifications, all the browsers have native support for "HTTP Basic Authentication".
 
+Visit the following resources to learn more:
+
 - [HTTP Basic Authentication](https://roadmap.sh/guides/http-basic-authentication)
 - [Illustrated HTTP Basic Authentication](https://www.youtube.com/watch?v=mwccHwUn7Gc)

@@ -7,6 +7,8 @@ Knuth morris pratt is a string searching algorithm that uses a precomputed array
 * If the characters match, increment the index of both the string and substring. 
 * If the characters don't match, increment the index of the string by the value of the prefix function at the index of the substring.
 
+Visit the following resources to learn more:
+
 - [KMP Algorithm for Pattern Searching](https://www.geeksforgeeks.org/kmp-algorithm-for-pattern-searching/)
 - [The Knuth-Morris-Pratt (KMP)Algorithm](https://www.javatpoint.com/daa-knuth-morris-pratt-algorithm)
 - [9.1 Knuth-Morris-Pratt KMP String Matching Algorithm](https://www.youtube.com/watch?v=V5-7GzOfADQ)

@@ -13,4 +13,6 @@ Sealed Secrets is designed to be highly secure and easy to use, with a range of 
 
 Sealed Secrets is commonly used in Kubernetes environments to securely store and manage secrets, and it is often used in conjunction with other tools, such as Helm, to automate the deployment and management of cloud-native applications.
 
+Visit the following resources to learn more:
+
 - [Sealed Secrets - Bitnami](https://github.com/bitnami-labs/sealed-secrets)

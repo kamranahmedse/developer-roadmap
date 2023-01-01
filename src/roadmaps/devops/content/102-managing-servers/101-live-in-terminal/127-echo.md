@@ -4,5 +4,7 @@
 
 It has the following syntax: `$ echo [options] [string]` e.g. `$ echo "Hello World!"`
 
+Visit the following resources to learn more:
+
 - [Echo command with Examples](https://www.tecmint.com/echo-command-in-linux/)
 - [Linux Crash Course - The echo Command](https://www.youtube.com/watch?v=S_ySzMHxMjw)

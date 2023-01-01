@@ -2,6 +2,8 @@
 
 React also has a lot of hooks that allow you to write more efficient React code.
 
+Visit the following resources to learn more:
+
 - [React Hooks Reference](https://reactjs.org/docs/hooks-reference.html#usereducer)
 - [useState Hook by Example](https://reactjs.org/docs/hooks-state.html)
 - [useCallback Hook by Example](https://www.robinwieruch.de/react-usecallback-hook/)

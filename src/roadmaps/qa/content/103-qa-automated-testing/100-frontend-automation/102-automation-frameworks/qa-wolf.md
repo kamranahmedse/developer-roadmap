@@ -2,6 +2,8 @@
 
 QA Wolf is a hybrid platform & service that helps software teams ship better software faster by taking QA completely off their plate.
 
+Visit the following resources to learn more:
+
 - [QA Wolf](https://www.qawolf.com/)
 - [QA Wolf Official Docs](https://app.qawolf.com/docs/why-qa-wolf)
 - [Getting started with QA Wolf](https://app.qawolf.com/docs/create-a-test)

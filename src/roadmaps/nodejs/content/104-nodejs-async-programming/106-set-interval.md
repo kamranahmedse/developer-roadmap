@@ -4,5 +4,7 @@ The `setInterval()` method helps us to repeatedly execute a function after a fix
 
 `setInterval()` is similar to setTimeout, with a difference. Instead of running the callback function once, it will run it forever, at the specific time interval you specify (in milliseconds):
 
+Visit the following resources to learn more:
+
 - [Scheduling: setTimeout and setInterval](https://javascript.info/settimeout-setinterval)
 - [What is the use of setInterval() method in Node.js?](https://www.geeksforgeeks.org/what-is-setinterval-in-javascript/)

@@ -88,6 +88,7 @@ roadmapDirs.forEach((roadmapDirName) => {
           resourceLinks = [`- [Visit Dedicated ${title}](${href})`, ...resourceLinks];
         }
 
+        resourceLinks = ['Visit the following resources to learn more:\n', ...resourceLinks];
         resourceLinks = resourceLinks.join('\n');
 
         let newFileContent = fileContent.replace(

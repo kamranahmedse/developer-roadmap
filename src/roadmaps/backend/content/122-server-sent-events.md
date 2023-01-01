@@ -6,4 +6,6 @@ SSE is useful for applications that require real-time updates, such as chat syst
 
 To use SSE, the client must create an EventSource object and specify the URL of the server-side script that will send the events. The server can then send events by writing them to the response stream with the proper formatting.
 
+Visit the following resources to learn more:
+
 - [Server-Sent Events - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Server-sent_events)

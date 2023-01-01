@@ -4,5 +4,7 @@ Verification in Software Testing is a process of checking documents, design, cod
 
 Validation in Software Engineering is a dynamic mechanism of testing and validating if the software product actually meets the exact needs of the customer or not. The process helps to ensure that the software fulfills the desired use in an appropriate environment. The validation process involves activities like unit testing, integration testing, system testing and user acceptance testing.
 
+Visit the following resources to learn more:
+
 - [Differences Between Verification and Validation](https://www.guru99.com/verification-v-s-validation-in-a-software-testing.html)
 - [Design Verification & Validation Process](https://www.guru99.com/design-verification-process.html)

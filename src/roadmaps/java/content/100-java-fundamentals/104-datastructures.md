@@ -7,6 +7,8 @@ As the name indicates itself, a **Data Structure** is a way of organizing the da
 * Stack follows Last In First Out principle
 * Queue follows First In First Out principle
 
+Visit the following resources to learn more:
+
 - [What are Data Structures?](https://www.geeksforgeeks.org/data-structures)
 - [ Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
 - [Java + DSA + Interview Preparation Course](https://youtube.com/playlist?list=PL9gnSGHSqcnr_DxHsP7AW9ftq0AtAyYqJ)

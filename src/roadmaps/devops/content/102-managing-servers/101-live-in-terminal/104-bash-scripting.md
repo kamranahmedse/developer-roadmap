@@ -8,6 +8,8 @@ You actually use GUI shells all the time. For example, Windows 10 is based on th
 
 With a CLI shell like Bash, you type commands into the program to directly control your computer's OS. Opening up the terminal on your Mac or command line in Linux will look similar to consoles and integrated development environments (IDEs) for other programming languages such as R, Ruby, or Python. You can type commands directly in the command line or run Bash scripts to perform longer and more complex tasks.
 
+Visit the following resources to learn more:
+
 - [The Shell Scripting Tutorial](https://www.shellscript.sh/)
 - [Writing Shell Scripts](https://linuxcommand.org/lc3_writing_shell_scripts.php)
 - [Shell Scripting for Beginners](https://www.freecodecamp.org/news/shell-scripting-crash-course-how-to-write-bash-scripts-in-linux/)

@@ -4,4 +4,6 @@
 
 It has the below syntax: `$ history`
 
+Visit the following resources to learn more:
+
 - [What is history command? How to recall previous commands?](https://www.geeksforgeeks.org/history-command-in-linux-with-examples/)

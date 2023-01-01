@@ -4,4 +4,6 @@
 
 Optimistic rollups allow anyone to publish blocks without providing proofs of validity. However, to ensure the chain remains safe, optimistic rollups specify a time window during which anyone can dispute a state transition.
 
+Visit the following resources to learn more:
+
 - [How Do Optimistic Rollups Work (The Complete Guide)](https://www.alchemy.com/overviews/optimistic-rollups)

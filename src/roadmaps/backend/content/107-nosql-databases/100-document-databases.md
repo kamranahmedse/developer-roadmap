@@ -4,6 +4,8 @@
 
 MongoDB is a source-available cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the Server Side Public License (SSPL).
 
+Visit the following resources to learn more:
+
 - [MongoDB Website](https://www.mongodb.com/)
 - [MongoDB Documentation](https://docs.mongodb.com/)
 - [MongoDB Online Sandbox](https://mongoplayground.net/)

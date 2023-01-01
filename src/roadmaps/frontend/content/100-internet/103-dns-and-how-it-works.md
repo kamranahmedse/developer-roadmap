@@ -2,6 +2,8 @@
 
 The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load Internet resources.
 
+Visit the following resources to learn more:
+
 - [What is DNS?](https://www.cloudflare.com/en-gb/learning/dns/what-is-dns/)
 - [Mess with DNS - DNS Playground](https://messwithdns.net/)
 - [How DNS works (comic)](https://howdns.works/)

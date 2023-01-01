@@ -4,6 +4,8 @@ If we are building a blog, we will likely need a component representing a blog p
 
 Props are custom attributes you can register on a component. 
 
+Visit the following resources to learn more:
+
 - [Props Basics](https://vuejs.org/guide/essentials/component-basics.html#passing-props)
 - [Props in Depth](https://vuejs.org/guide/components/props.html)
 

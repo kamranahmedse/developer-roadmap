@@ -4,6 +4,8 @@ An ‘Ethereum Request for Comments’ (ERC) is a document that programmers use 
 
 While there are several Ethereum standards. These ERC Ethereum standards are the most well-known and popular: ERC-20, ERC-721, ERC-1155, and ERC-777.
 
+Visit the following resources to learn more:
+
 - [What are Ethereum request for comments (ERC) Standards](https://dev.to/envoy_/ks-what-are-ethereum-request-for-comments-erc-standards-5f80)
 - [ERC-20 Token Standard](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/)
 - [ERC-721 Token Standard (NFTs)](https://decrypt.co/resources/erc-721-ethereum-nft-token-standard)

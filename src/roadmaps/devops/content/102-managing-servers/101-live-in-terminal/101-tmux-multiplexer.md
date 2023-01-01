@@ -6,5 +6,7 @@ When tmux is started it creates a new session with a single window and displays 
 
 See `man tmux` further information
 
+Visit the following resources to learn more:
+
 - [Tmux Documentation](https://tmuxguide.readthedocs.io/en/latest/tmux/tmux.html)
 - [Tmux Cheat Sheet](https://tmuxcheatsheet.com/)

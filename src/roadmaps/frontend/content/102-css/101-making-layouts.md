@@ -2,6 +2,8 @@
 
 Float, grid, flexbox, positioning, display and box model are some of the key topics that are used for making layouts. Use the resources below to learn about these topics:
 
+Visit the following resources to learn more:
+
 - [Learn and Practice Flexbox](https://flexboxfroggy.com/)
 - [Game for learning CSS Grid](https://cssgridgarden.com/)
 - [All about Floats](https://css-tricks.com/all-about-floats/)

@@ -10,4 +10,6 @@ There are several ways to implement backpressure in a cloud environment:
 
 Backpressure is an important aspect of cloud design, as it helps to ensure that data is processed efficiently and that the system remains stable and available. It is often used in conjunction with other design patterns, such as auto-scaling and load balancing, to provide a scalable and resilient cloud environment.
 
+Visit the following resources to learn more:
+
 - [Backpressure - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/backpressure/)

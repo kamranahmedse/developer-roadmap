@@ -4,6 +4,8 @@ A Template driven form is the simplest form we can build in Angular. It is mainl
 
 It uses two-way data-binding (ngModel) to create and handle the form components.
 
+Visit the following resources to learn more:
+
 - [Building a template-driven form](https://angular.io/guide/forms)
 - [Template-Driven Forms](https://codecraft.tv/courses/angular/forms/template-driven/)
 - [Template driven form](https://www.youtube.com/watch?v=whr14XxB8-M)

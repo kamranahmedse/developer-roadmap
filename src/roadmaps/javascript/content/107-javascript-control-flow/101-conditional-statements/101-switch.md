@@ -21,5 +21,7 @@ switch (expression) {
 } 
 ```
 
+Visit the following resources to learn more:
+
 - [switch - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch)
 - [The switch statement - javascript.info](https://javascript.info/switch)

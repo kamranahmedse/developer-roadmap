@@ -4,5 +4,7 @@ Availability is the percentage of time that a system is functional and working a
 
 To achieve high levels of uptime, it is important to eliminate single points of failure so that a single device failure does not disrupt the entire service. High availability in the cloud is often achieved by creating clusters. Clusters are groups of devices (such as servers) that all have access to the same shared storage and function as one single server to provide uninterrupted availability. This way, if one server goes down, the others are able to pick up the load until it comes back online. Clusters can range from two servers to even multiple buildings of servers.
 
+Visit the following resources to learn more:
+
 - [How High Availability Works in the Cloud](https://codster.io/en/blog/high-availability-in-the-cloud/)
 - [Techniques for Achieving High Availability](https://www.sqlservercentral.com/articles/cloud-computing-basics-achieving-high-availability-2)

@@ -7,4 +7,6 @@ Model-view-presenter, or MVP, was designed to ease automated unit testing and im
 
 Another variant of the MVC is the model-view-viewmodel pattern. The Model-view-viewmodel, or MVVM, separates the application into three core components: Model, View, and View Model. While the view and model represent all that they did in their parent pattern, the view model acts as a link between the model and view, retrieves data from the model and exposes it to the view through two-way data binding and can manipulate the model's data.
 
+Visit the following resources to learn more:
+
 - [MVC, MVP and MVVM Design Pattern](https://medium.com/@ankit.sinhal/mvc-mvp-and-mvvm-design-pattern-6e169567bbad)

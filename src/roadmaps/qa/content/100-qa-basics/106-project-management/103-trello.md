@@ -6,5 +6,7 @@ Trello is a popular, simple, and easy-to-use collaboration tool that enables you
 - Who’s working on what? 
 - What progress the project is making
 
+Visit the following resources to learn more:
+
 - [Trello Website](https://trello.com/en)
 - [What is Trello and How To Use It?](https://www.simplilearn.com/tutorials/project-management-tutorial/what-is-trello)

@@ -8,6 +8,8 @@ So, in this case, when we want to interact with any of these streams (through a 
 
 POSIX also adds a standard for exit codes, filesystem semantics, and several other command line utility API conventions.
 
+Visit the following resources to learn more:
+
 - [POSIX standard by IEEE](https://pubs.opengroup.org/onlinepubs/9699919799/)
 - [Summary of some POSIX implementations](https://unix.stackexchange.com/a/220877)
 - [A guide to POSIX](https://www.baeldung.com/linux/posix)

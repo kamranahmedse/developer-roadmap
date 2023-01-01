@@ -8,6 +8,8 @@ Each thread has its own program counter, stack, and set of registers. But the th
 * `fork`
 * `join`
 
+Visit the following resources to learn more:
+
 - [Process Synchronization](https://www.geeksforgeeks.org/introduction-of-process-synchronization/)
 - [What is Thread in OS?](https://www.geeksforgeeks.org/thread-in-operating-system/)
 - [Process vs Thread & Multi-Threading](https://www.scaler.com/topics/operating-system/threads-in-operating-system/)

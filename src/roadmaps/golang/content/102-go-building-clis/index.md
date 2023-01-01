@@ -4,4 +4,6 @@ Command line interfaces (CLIs), unlike graphical user interfaces (GUIs), are tex
 
 Go applications are built into a single self contained binary making installing Go applications trivial; specifically, programs written in Go run on any system without requiring any existing libraries, runtimes, or dependencies. And programs written in Go have an immediate startup time—similar to C or C++ but unobtainable with other programming languages.
 
+Visit the following resources to learn more:
+
 - [Command-line Interfaces (CLIs)](https://go.dev/solutions/clis)
