@@ -6,5 +6,4 @@ The rise in popularity of NoSQL databases provided a flexible and fluidity with 
 - **S**oft state
 - **E**ventual consistency
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/acid-model-vs-base-model-for-database/'>ACID Model vs BASE Model For Database</BadgeLink>
+- [ACID Model vs BASE Model For Database](https://www.geeksforgeeks.org/acid-model-vs-base-model-for-database/)

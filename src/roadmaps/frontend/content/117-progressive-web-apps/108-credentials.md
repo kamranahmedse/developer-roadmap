@@ -6,5 +6,4 @@ To use the Credential Management API, a web page must first create a Credential 
 
 The Credential Management API is supported by most modern web browsers and is designed to improve the security and usability of login flows by allowing the user to store and reuse their credentials across multiple sites and devices.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API'>Credential Management API - MDN</BadgeLink>
+- [Credential Management API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Credential_Management_API)

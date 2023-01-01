@@ -2,5 +2,4 @@
 
 The usual way to run a Node.js program is to run the globally available `node` command (once you install Node.js) and pass the name of the file you want to execute.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodejs.dev/en/learn/run-nodejs-scripts-from-the-command-line/'>Run Node.js from Command Line</BadgeLink>
+- [Run Node.js from Command Line](https://nodejs.dev/en/learn/run-nodejs-scripts-from-the-command-line/)

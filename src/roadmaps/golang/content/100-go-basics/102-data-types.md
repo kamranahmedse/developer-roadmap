@@ -4,7 +4,6 @@ Go is a statically typed programming language, which means each variable has a t
 
 To learn more about types in Go, visit these resources :
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/go/go_data_types.php'>Basic data types</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/tour/basics/11'>Tour of Go: types</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://golangbyexample.com/all-data-types-in-golang-with-examples/'>Go types with examples</BadgeLink>
+- [Basic data types](https://www.w3schools.com/go/go_data_types.php)
+- [Tour of Go: types](https://go.dev/tour/basics/11)
+- [Go types with examples](https://golangbyexample.com/all-data-types-in-golang-with-examples/)

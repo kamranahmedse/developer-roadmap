@@ -4,6 +4,5 @@ With website and app users expecting flawless software, spiffy updates and marke
 
 Given that Chrome is the undisputed market leader in web browsers, it’s safe to assume that a large number of QAs are using Chrome for their work. Turns out, there are certain Chrome extensions that can actually help QAs work faster and more efficiently.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.gurock.com/browser-plugins-for-testing/'>8 Browser Plugins for Testing</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.softwaretestingmaterial.com/chrome-extensions-for-software-testers/'>15 Best Chrome Extensions for Software Testers</BadgeLink>
+- [8 Browser Plugins for Testing](https://blog.gurock.com/browser-plugins-for-testing/)
+- [15 Best Chrome Extensions for Software Testers](https://www.softwaretestingmaterial.com/chrome-extensions-for-software-testers/)

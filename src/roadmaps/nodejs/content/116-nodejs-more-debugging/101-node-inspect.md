@@ -2,5 +2,4 @@
 
 Node.js provides a built-in DevTools-based debugger to allow debugging Node.js applicatins.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme="yellow" href='https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27'>Debugging Node.js with Chrome DevTools</BadgeLink>
+- [Debugging Node.js with Chrome DevTools](https://medium.com/@paul_irish/debugging-node-js-nightlies-with-chrome-devtools-7c4a1b95ae27)

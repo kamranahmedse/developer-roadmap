@@ -2,5 +2,4 @@
 
 PostCSS is a tool for transforming styles with JS plugins. These plugins can lint your CSS, support variables and mixins, transpile future CSS syntax, inline images, and more.
 
-<ResourceGroupTitle>Free Resources</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://postcss.org/'>Official Website</BadgeLink>
+- [Official Website](https://postcss.org/)

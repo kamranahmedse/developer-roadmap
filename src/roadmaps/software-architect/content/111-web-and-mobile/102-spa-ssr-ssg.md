@@ -4,7 +4,5 @@
 - **SSR**: This technique uses a server like `Node.js` to fully render the web document upon the receival of a request and then send it back to the client. This way the user get an interactive document with all the necessary information without having to wait for any JavaScript or CSS files to load.
 - **SSG**: Static site generation renders the web document in the server(like SSR), however the page is rendered at **build time**. So, instead of rendering the page on the server upon the receival of a request, the page is already rendered in the server, waiting to be served to the client.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://medium.com/codex/web-design-patterns-ssr-ssg-and-spa-fadad7673dfe'>Web design patterns — SSR, SSG, and SPA</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://web.dev/rendering-on-the-web/'>Rendering on the Web</BadgeLink>
+- [Web design patterns — SSR, SSG, and SPA](https://medium.com/codex/web-design-patterns-ssr-ssg-and-spa-fadad7673dfe)
+- [Rendering on the Web](https://web.dev/rendering-on-the-web/)

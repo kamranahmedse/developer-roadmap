@@ -14,5 +14,4 @@ Some of the features provided by Chrome DevTools include:
 
 Chrome DevTools is a powerful and essential tool for web developers, and it is widely used to debug and optimize web pages. It is constantly updated with new features and improvements, and it is available on all modern web browsers.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/tools/chrome-devtools'>Chrome DevTools - Google Developers</BadgeLink>
+- [Chrome DevTools - Google Developers](https://developers.google.com/web/tools/chrome-devtools)

@@ -6,7 +6,6 @@ Data Types are divided into two group -
 * Primitive - byte,short,int,long,float,double,boolean and char
 * Non-Primitive - String, Arrays and Classes
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/java-variables.html'>What are Data Types & Variables?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-variables'>Java Variables</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-data-types'>Learn more about Data types and Variables</BadgeLink>
+- [What are Data Types & Variables?](https://www.guru99.com/java-variables.html)
+- [Java Variables](https://www.javatpoint.com/java-variables)
+- [Learn more about Data types and Variables](https://www.javatpoint.com/java-data-types)

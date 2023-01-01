@@ -2,6 +2,5 @@
 
 Bellman ford's algorithm is a graph algorithm that finds the shortest path from a source vertex to all other vertices in a graph. It is a dynamic programming algorithm that uses a bottom-up approach to find the shortest path. It is similar to Dijkstra's algorithm but it can handle negative weights. It is also similar to Floyd-Warshall's algorithm but it can handle negative weights and it is faster than Floyd-Warshall's algorithm.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=f9cVS_URPc0&ab_channel=MITOpenCourseWare'>Bellman-Ford - MIT</BadgeLink>
-<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=9PHkk0UavIM'>Bellman-Ford in 4 Minutes</BadgeLink>
+- [Bellman-Ford - MIT](https://www.youtube.com/watch?v=f9cVS_URPc0&ab_channel=MITOpenCourseWare)
+- [Bellman-Ford in 4 Minutes](https://www.youtube.com/watch?v=9PHkk0UavIM)

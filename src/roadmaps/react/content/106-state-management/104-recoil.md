@@ -13,5 +13,4 @@ Recoil provides a set of utilities and APIs for managing state, including:
 
 Recoil is often used as an alternative to other state management libraries, such as Redux and MobX, because of its simplicity and performance. It is particularly well-suited for large, complex React applications where the overhead of other state management libraries may be too high.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://recoiljs.org/'>Recoil - Official Website</BadgeLink>
+- [Recoil - Official Website](https://recoiljs.org/)

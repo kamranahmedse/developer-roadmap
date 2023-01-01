@@ -4,6 +4,5 @@
 
 It has the following syntax: `$ traceroute [OPTIONS] DESTINATION` e.g. `$ traceroute roadmap.sh`
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://linuxhint.com/run_traceroute_linux/'>How to Run Traceroute in Linux</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/'>Traceroute command in Linux with examples</BadgeLink>
+- [How to Run Traceroute in Linux](https://linuxhint.com/run_traceroute_linux/)
+- [Traceroute command in Linux with examples](https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/)

@@ -4,5 +4,4 @@
 
 It has the below syntax: `$ history`
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/history-command-in-linux-with-examples/'>What is history command? How to recall previous commands?</BadgeLink>
+- [What is history command? How to recall previous commands?](https://www.geeksforgeeks.org/history-command-in-linux-with-examples/)

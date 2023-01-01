@@ -14,6 +14,5 @@ Artillery prioritizes developer productivity and happiness, and follows the "bat
 - Designed for cross-team collaboration
 - Planet-scale testing
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.artillery.io/'>Artillery Website</BadgeLink>
-<BadgeLink badgeText='Course' colorScheme='green' href='https://www.youtube.com/playlist?list=PLJ9A48W0kpRJh1_uW2mVNhSIVCMYmNlm7'>Learn Artillery</BadgeLink>
+- [Artillery Website](https://www.artillery.io/)
+- [Learn Artillery](https://www.youtube.com/playlist?list=PLJ9A48W0kpRJh1_uW2mVNhSIVCMYmNlm7)

@@ -9,5 +9,4 @@ The PRPL pattern is a performance optimization pattern for web applications that
 
 The PRPL pattern is designed to improve the perceived performance of a web page by reducing the time it takes for the page to become interactive. It is particularly useful for applications that are served over slow or unreliable networks, as it allows the page to render as quickly as possible and then gradually load the remaining resources.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/fundamentals/performance/prpl-pattern'>PRPL Pattern - Google Developers</BadgeLink>
+- [PRPL Pattern - Google Developers](https://developers.google.com/web/fundamentals/performance/prpl-pattern)

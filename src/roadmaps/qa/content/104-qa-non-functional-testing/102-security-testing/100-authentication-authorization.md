@@ -6,5 +6,4 @@
 
 For example, a web app may have both regular users and admins, with the admins being able to perform actions the average user is not privileged to do so, even though they have been authenticated. Additionally, authentication is not always required for accessing resources; an unauthenticated user may be authorized to access certain public resources, such as an image or login page, or even an entire web app.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html'>OWASP Website</BadgeLink>
+- [OWASP Website](https://cheatsheetseries.owasp.org/cheatsheets/Authorization_Cheat_Sheet.html)

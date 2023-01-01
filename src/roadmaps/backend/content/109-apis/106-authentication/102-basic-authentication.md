@@ -4,5 +4,5 @@ Given the name "Basic Authentication", you should not confuse Basic Authenticati
 
 Because it is a part of the HTTP specifications, all the browsers have native support for "HTTP Basic Authentication".
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://roadmap.sh/guides/http-basic-authentication'>HTTP Basic Authentication</BadgeLink>
-<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=mwccHwUn7Gc'>Illustrated HTTP Basic Authentication</BadgeLink>
+- [HTTP Basic Authentication](https://roadmap.sh/guides/http-basic-authentication)
+- [Illustrated HTTP Basic Authentication](https://www.youtube.com/watch?v=mwccHwUn7Gc)

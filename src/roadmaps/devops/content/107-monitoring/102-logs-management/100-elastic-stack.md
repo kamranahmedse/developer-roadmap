@@ -6,8 +6,7 @@ Elastic Stack is a group of open source products comprised of Elasticsearch, Kib
 * `Logstash/fluentd` - Data processing pipeline
 * `Kibana` - Dashboard to visualize data
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Official Website' href='https://www.elastic.co/elastic-stack/'>Elastic Stack Website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Official Docs' href='https://www.elastic.co/guide/index.html'>Official Docs</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Features List' href='https://www.elastic.co/elastic-stack/features'>Elastic Stack features</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://logz.io/blog/fluentd-logstash/'>Logstash vs Fluentd</BadgeLink>
+- [Elastic Stack Website](https://www.elastic.co/elastic-stack/)
+- [Official Docs](https://www.elastic.co/guide/index.html)
+- [Elastic Stack features](https://www.elastic.co/elastic-stack/features)
+- [Logstash vs Fluentd](https://logz.io/blog/fluentd-logstash/)

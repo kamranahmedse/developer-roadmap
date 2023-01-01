@@ -6,5 +6,4 @@ In production, one of your tools would be to login to your remote server to view
 
 These tools send your logs from your running application into a single location. They often come with high-powered search and query utilities so that you can easily parse your logs and visualize them.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Website' colorScheme="yellow" href='https://stackify.com/node-js-debugging-tips/'>Debugging using APM </BadgeLink>
+- [Debugging using APM ](https://stackify.com/node-js-debugging-tips/)

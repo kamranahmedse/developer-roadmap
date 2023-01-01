@@ -7,6 +7,4 @@ The three main methods inside this module are :
 `child_process.fork()`
 `child_process.exec()`
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/child_process.html#child-process'>Child Process Docs</BadgeLink>
+- [Child Process Docs](https://nodejs.org/api/child_process.html#child-process)

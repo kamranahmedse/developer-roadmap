@@ -13,8 +13,7 @@ Vault is designed to be highly scalable and flexible, with a wide range of featu
 Vault is commonly used in DevOps environments to securely store and manage secrets, and it is often used in conjunction with other tools, such as Kubernetes and Helm, to automate the deployment and management of cloud-native applications.
 
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.vaultproject.io/'>Vault - Official Website</BadgeLink>
+- [Vault - Official Website](https://www.vaultproject.io/)
 
 
 

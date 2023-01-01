@@ -9,5 +9,4 @@ The RAIL model is a performance optimization model for web applications that foc
 
 The RAIL model is designed to provide a framework for optimizing the performance of a web page by focusing on the four key areas that impact the user's perception of performance. It is particularly useful for applications that require high levels of interactivity, such as games and social media applications.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/fundamentals/performance/rail'>RAIL Model - Google Developers</BadgeLink>
+- [RAIL Model - Google Developers](https://developers.google.com/web/fundamentals/performance/rail)

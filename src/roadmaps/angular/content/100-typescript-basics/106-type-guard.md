@@ -6,5 +6,4 @@ TypeScript uses built-in JavaScript operators like `typeof`, `instanceof`, and t
 
 Type guards are typically used for narrowing a type and are pretty similar to feature detection, allowing you to detect the correct methods, prototypes, and properties of a value. Therefore, you can quickly figure out how to handle that value.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://blog.logrocket.com/how-to-use-type-guards-typescript/'>Types Guards - Blog</BadgeLink>
+- [Types Guards - Blog](https://blog.logrocket.com/how-to-use-type-guards-typescript/)

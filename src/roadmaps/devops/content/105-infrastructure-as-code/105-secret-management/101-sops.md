@@ -11,5 +11,4 @@ SOPS is designed to be easy to use and highly secure, with a range of features f
 
 SOPS is commonly used in DevOps environments to securely store and manage secrets, and it is often used in conjunction with other tools, such as Kubernetes and Helm, to automate the deployment and management of cloud-native applications.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://github.com/mozilla/sops'>Mozilla SOPS - Official Website</BadgeLink>
+- [Mozilla SOPS - Official Website](https://github.com/mozilla/sops)

@@ -4,7 +4,6 @@ A package is a namespace that mainly contains classes and interfaces. For instan
 
 To create package use this command -> javac -d directory javafilename
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Site' href='https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html'>Packages in Java</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/package'>Java Package</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/packages-in-java/'>Packages In Java</BadgeLink>
+- [Packages in Java](https://docs.oracle.com/javase/8/docs/api/java/lang/Package.html)
+- [Java Package](https://www.javatpoint.com/package)
+- [Packages In Java](https://www.geeksforgeeks.org/packages-in-java/)

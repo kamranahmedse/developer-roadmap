@@ -9,5 +9,4 @@ Here is a general overview of how React Suspense works:
 - The `Suspense` component catches the promise and renders a fallback component while the promise is pending.
 - When the promise resolves, the wrapped component is rendered with the required data.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://reactjs.org/docs/react-api.html#suspense'>React Suspense - Official Docs</BadgeLink>
+- [React Suspense - Official Docs](https://reactjs.org/docs/react-api.html#suspense)

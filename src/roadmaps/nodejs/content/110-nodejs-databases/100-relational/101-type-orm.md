@@ -4,7 +4,5 @@ TypeORM is an ORM that can run in NodeJS, Browser, Cordova, PhoneGap, Ionic, Rea
 
 TypeORM supports both [Active Record](https://typeorm.io/active-record-data-mapper#what-is-the-active-record-pattern) and [Data Mapper](https://typeorm.io/active-record-data-mapper#what-is-the-data-mapper-pattern) patterns, unlike all other JavaScript ORMs currently in existence, which means you can write high quality, loosely coupled, scalable, maintainable applications the most productive way.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://typeorm.io'>TypeORM Docs</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=JaTbzPcyiOE'>TypeORM Crash Course</BadgeLink>
+- [TypeORM Docs](https://typeorm.io)
+- [TypeORM Crash Course](https://www.youtube.com/watch?v=JaTbzPcyiOE)

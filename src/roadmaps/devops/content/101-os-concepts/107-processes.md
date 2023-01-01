@@ -6,8 +6,7 @@ A process means program in execution. It generally takes an input, processes it 
 * Foreground processes 
 * Background processes
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/introduction-of-process-management/'>Intro to Process Management</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/process-management-in-linux/'>Process Management in Linux</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/processes-in-linuxunix/'>Process related commands in Linux</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/difference-between-process-and-thread/'>Process vs Thread</BadgeLink>
+- [Intro to Process Management](https://www.geeksforgeeks.org/introduction-of-process-management/)
+- [Process Management in Linux](https://www.geeksforgeeks.org/process-management-in-linux/)
+- [Process related commands in Linux](https://www.geeksforgeeks.org/processes-in-linuxunix/)
+- [Process vs Thread](https://www.geeksforgeeks.org/difference-between-process-and-thread/)

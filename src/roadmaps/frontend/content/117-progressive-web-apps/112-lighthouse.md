@@ -6,5 +6,4 @@ Lighthouse works by simulating the load and interaction of a web page and measur
 
 Lighthouse provides a comprehensive and easy-to-use tool for identifying and fixing performance and accessibility issues on web pages. It is widely used by web developers and is integrated into many popular development tools.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/web/tools/lighthouse'>Lighthouse - Google Developers</BadgeLink>
+- [Lighthouse - Google Developers](https://developers.google.com/web/tools/lighthouse)

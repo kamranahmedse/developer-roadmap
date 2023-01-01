@@ -10,5 +10,4 @@ There are several ways to implement load shifting in a cloud environment:
 
 Load shifting is an important aspect of cloud design, as it helps to ensure that resources are used efficiently and that the system remains stable and available. It is often used in conjunction with other design patterns, such as throttling and backpressure, to provide a scalable and resilient cloud environment.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/architecture/well-architected/serverless/patterns/load-shifting/'>Load Shifting - AWS Well-Architected Framework</BadgeLink>
+- [Load Shifting - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/load-shifting/)

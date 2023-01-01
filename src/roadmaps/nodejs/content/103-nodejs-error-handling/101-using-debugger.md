@@ -4,8 +4,5 @@ Node.js includes a command-line debugging utility. The Node.js debugger client i
 
 Example - $ node inspect myscript.js
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://nodejs.org/api/debugger.html'>Official Website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/node-js-debugging/'>Node.js Debugging</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://code.visualstudio.com/docs/nodejs/nodejs-debugging'>Node.js Debugging in VS Code
-</BadgeLink>
+- [Official Website](https://nodejs.org/api/debugger.html)
+- [Node.js Debugging](https://www.geeksforgeeks.org/node-js-debugging/)

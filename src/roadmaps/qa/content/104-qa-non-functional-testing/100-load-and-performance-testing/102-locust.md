@@ -8,6 +8,5 @@ Locust is an easy-to-use, scriptable and scalable performance testing tool. You 
 - Can test any system
 - Hackable
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://locust.io/'>Locust Website</BadgeLink>
-<BadgeLink badgeText='Course' colorScheme='green' href='https://www.youtube.com/playlist?list=PLJ9A48W0kpRKMCzJARCObgJs3SinOewp5'>Learn Locust</BadgeLink>
+- [Locust Website](https://locust.io/)
+- [Learn Locust](https://www.youtube.com/playlist?list=PLJ9A48W0kpRKMCzJARCObgJs3SinOewp5)

@@ -2,6 +2,5 @@
 
 Electron allows you to build cross-platform desktop applications with HTML, CSS, and Javascript/Typescript. It uses Chromium and Node.js, so essentially it is a "Browser" like application that is compatible with Mac, Windows, and Linux.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.electronjs.org/'>Electron Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://www.electronjs.org/docs/latest/'>Electron Docs</BadgeLink>
+- [Electron Website](https://www.electronjs.org/)
+- [Electron Docs](https://www.electronjs.org/docs/latest/)

@@ -8,9 +8,8 @@ To understand these commands, read through the manual pages by using `man` comma
 
 After enough exposure and practice to these commands, it will become easier to use these in practice
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.hostinger.com/tutorials/linux-commands'>40 Basic Linux Commands</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/ibraheemdev/modern-unix'>A collection of modern/faster/saner alternatives to common unix commands</BadgeLink>
-<BadgeLink badgeText='Course' colorScheme='green' href='https://www.learnenough.com/command-line-tutorial'>Command Line Tutorial</BadgeLink>
-<BadgeLink colorScheme='green' badgeText='Challenge' href='https://cmdchallenge.com/'>Commandline Challenge</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=ZtqBQ68cfJc'>The 50 Most Popular Linux & Terminal Commands (with timestamps)</BadgeLink>
+- [40 Basic Linux Commands](https://www.hostinger.com/tutorials/linux-commands)
+- [A collection of modern/faster/saner alternatives to common unix commands](https://github.com/ibraheemdev/modern-unix)
+- [Command Line Tutorial](https://www.learnenough.com/command-line-tutorial)
+- [Commandline Challenge](https://cmdchallenge.com/)
+- [The 50 Most Popular Linux & Terminal Commands (with timestamps)](https://www.youtube.com/watch?v=ZtqBQ68cfJc)

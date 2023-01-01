@@ -9,8 +9,6 @@ Streams are a type of data handling methods and are used to read, write or trans
 
 Multiple streams can be chained together using `pipe()` method.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://nodejs.org/api/stream.html'>Stream API Official Documentation</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=GlybFFMXXmQ'>Node.js Streams tutorial</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://nodesource.com/blog/understanding-streams-in-nodejs'>Understanding Streams in Node.js</BadgeLink>
+- [Stream API Official Documentation](https://nodejs.org/api/stream.html)
+- [Node.js Streams tutorial](https://www.youtube.com/watch?v=GlybFFMXXmQ)
+- [Understanding Streams in Node.js](https://nodesource.com/blog/understanding-streams-in-nodejs)

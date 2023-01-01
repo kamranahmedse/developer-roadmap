@@ -9,6 +9,5 @@ A few important points:
 - Don’t be afraid to think outside of the box when you are testing it
 - Don’t be afraid to misuse it as much as possible. 
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://softwaretester.careers/the-software-testers-mindset/'>The Software Tester’s Mindset</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://medium.com/@blakenorrish/how-to-think-like-a-tester-7a174ff6aeaf'>How to Think Like a Tester</BadgeLink>
+- [The Software Tester’s Mindset](https://softwaretester.careers/the-software-testers-mindset/)
+- [How to Think Like a Tester](https://medium.com/@blakenorrish/how-to-think-like-a-tester-7a174ff6aeaf)

@@ -6,7 +6,6 @@ Monit has the ability to start a process if it is not running, restart a process
 
 With Monit, you can able to monitor remote hosts’ TCP/IP port, server protocols, and ping. Monit keeps its own log file and alerts about any critical error conditions and recovery status.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://mmonit.com/monit/'>Monit Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Read' href='https://mmonit.com/monit/documentation/monit.html'>Monit Official Documentation</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Read' href='https://www.tecmint.com/monit-linux-services-monitoring/'>Monit Tutorial</BadgeLink>
+- [Monit Website](https://mmonit.com/monit/)
+- [Monit Official Documentation](https://mmonit.com/monit/documentation/monit.html)
+- [Monit Tutorial](https://www.tecmint.com/monit-linux-services-monitoring/)

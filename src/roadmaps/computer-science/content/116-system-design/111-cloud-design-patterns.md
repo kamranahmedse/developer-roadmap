@@ -4,5 +4,4 @@ These design patterns are useful for building reliable, scalable, secure applica
 
 The link below has cloud design patterns where each pattern describes the problem that the pattern addresses, considerations for applying the pattern, and an example based on Microsoft Azure. Most patterns include code samples or snippets that show how to implement the pattern on Azure. However, most patterns are relevant to any distributed system, whether hosted on Azure or other cloud platforms.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://learn.microsoft.com/en-us/azure/architecture/patterns/'>Cloud Design Patterns</BadgeLink>
+- [Cloud Design Patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)

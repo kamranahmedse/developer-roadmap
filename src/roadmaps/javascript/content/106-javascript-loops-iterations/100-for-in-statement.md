@@ -2,5 +2,5 @@
 
 The for...in statement iterates over all enumerable properties of an object that are keyed by strings (ignoring ones keyed by Symbols), including inherited enumerable properties.
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in'>for...in statement - MDN</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/object#forin'>The "for..in" loop with examples</BadgeLink>
+- [for...in statement - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in)
+- [The for..in loop with examples](https://javascript.info/object#forin)

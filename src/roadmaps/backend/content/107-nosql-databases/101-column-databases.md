@@ -4,6 +4,5 @@ A **<u>wide-column database</u>** (sometimes referred to as a column database) i
 
 **Warning:** <a href="https://en.wikipedia.org/wiki/Wide-column_store#Wide-column_stores_versus_columnar_databases">note that a "columnar database" and a "column database" are two different terms!</a>
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://cassandra.apache.org/_/index.html'>Apache Cassandra</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=J-cSy5MeMOA'>Apache Cassandra Database - Full Course for Beginners</BadgeLink>
+- [Apache Cassandra](https://cassandra.apache.org/_/index.html)
+- [Apache Cassandra Database - Full Course for Beginners](https://www.youtube.com/watch?v=J-cSy5MeMOA)

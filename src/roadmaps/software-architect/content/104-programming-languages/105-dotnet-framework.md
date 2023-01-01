@@ -5,10 +5,9 @@
 Officially supported languages in .NET: C#, F#, Visual Basic.
 
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://dotnet.microsoft.com/en-us/'>.NET Website</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet'>What is .NET?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://dotnet.microsoft.com/en-us/platform/why-choose-dotnet'>Why Choose .NET?</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://learn.microsoft.com/en-us/dotnet/csharp/?WT.mc_id=dotnet-35129-website'>C# Documentation</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://learn.microsoft.com/en-us/dotnet/fsharp/?WT.mc_id=dotnet-35129-website'>F# Documentation</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://learn.microsoft.com/en-us/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website'>Visual Basic Documentation</BadgeLink>
+- [.NET Website](https://dotnet.microsoft.com/en-us/)
+- [What is .NET?](https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet)
+- [Why Choose .NET?](https://dotnet.microsoft.com/en-us/platform/why-choose-dotnet)
+- [C# Documentation](https://learn.microsoft.com/en-us/dotnet/csharp/?WT.mc_id=dotnet-35129-website)
+- [F# Documentation](https://learn.microsoft.com/en-us/dotnet/fsharp/?WT.mc_id=dotnet-35129-website)
+- [Visual Basic Documentation](https://learn.microsoft.com/en-us/dotnet/visual-basic/?WT.mc_id=dotnet-35129-website)

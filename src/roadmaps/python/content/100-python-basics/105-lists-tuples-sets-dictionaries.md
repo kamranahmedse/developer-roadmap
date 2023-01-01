@@ -8,10 +8,9 @@
 
 **Dictionary:** In python, Dictionary is an ordered (since Py 3.7) [unordered (Py 3.6 & prior)] collection of data values, used to store data values like a map, which, unlike other Data Types that hold only a single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=n0krwG38SHI'>Difference Between List, Tuple, Set and Dictionary in Python</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/'>Differences and Applications of List, Tuple, Set and Dictionary in Python</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/'>Tuples vs. Lists vs. Sets in Python</BadgeLink>
+- [Difference Between List, Tuple, Set and Dictionary in Python](https://www.youtube.com/watch?v=n0krwG38SHI)
+- [Differences and Applications of List, Tuple, Set and Dictionary in Python](https://www.geeksforgeeks.org/differences-and-applications-of-list-tuple-set-and-dictionary-in-python/)
+- [Tuples vs. Lists vs. Sets in Python](https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/)
 
 
 

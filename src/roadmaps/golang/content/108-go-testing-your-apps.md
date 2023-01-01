@@ -2,8 +2,7 @@
 
 Go has a built-in testing command that we can use to test our program.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/doc/tutorial/add-a-test'>Official Go Tutorial: Add a test</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/testing'>Go by Example: Testing</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://yourbasic.org/golang/table-driven-unit-test/'>YourBasic Go: Table-driven unit tests</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://quii.gitbook.io/learn-go-with-tests/'>Learn Go with Tests</BadgeLink>
+- [Official Go Tutorial: Add a test](https://go.dev/doc/tutorial/add-a-test)
+- [Go by Example: Testing](https://gobyexample.com/testing)
+- [YourBasic Go: Table-driven unit tests](https://yourbasic.org/golang/table-driven-unit-test/)
+- [Learn Go with Tests](https://quii.gitbook.io/learn-go-with-tests/)

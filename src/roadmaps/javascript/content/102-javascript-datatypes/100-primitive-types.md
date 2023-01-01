@@ -12,4 +12,4 @@ In JavaScript, a primitive (primitive value, primitive data type) is data that i
 
 Most of the time, a primitive value is represented directly at the lowest level of the language implementation.
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Glossary/Primitive'>Primitive</BadgeLink>
+- [Primitive](https://developer.mozilla.org/en-US/docs/Glossary/Primitive)

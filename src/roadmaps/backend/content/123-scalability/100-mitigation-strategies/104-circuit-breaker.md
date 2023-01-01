@@ -6,5 +6,4 @@ A circuit breaker consists of three states: closed, open, and half-open. In the 
 
 The circuit breaker design pattern is useful for protecting a system from failures or excessive load by providing a way to temporarily stop certain operations and allow the system to recover. It is often used in conjunction with other design patterns, such as retries and fallbacks, to provide a more robust and resilient cloud environment.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/architecture/well-architected/serverless/patterns/circuit-breaker/'>Circuit Breaker - AWS Well-Architected Framework</BadgeLink>
+- [Circuit Breaker - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/circuit-breaker/)

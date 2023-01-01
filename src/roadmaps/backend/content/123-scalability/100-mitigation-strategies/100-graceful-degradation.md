@@ -4,8 +4,7 @@ Graceful degradation is a design principle that states that a system should be d
 
 Graceful degradation is often used as an alternative to progressive enhancement, a design principle that states that a system should be designed to take advantage of advanced features and technologies if they are available.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.hubspot.com/website/graceful-degradation'>What is Graceful Degradation & Why Does it Matter?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://newrelic.com/blog/best-practices/design-software-for-graceful-degradation'>Four Considerations When Designing Systems For Graceful Degradation</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://farfetchtechblog.com/en/blog/post/the-art-of-failure-ii-graceful-degradation/'>The Art of Graceful Degradation</BadgeLink>
+- [What is Graceful Degradation & Why Does it Matter?](https://blog.hubspot.com/website/graceful-degradation)
+- [Four Considerations When Designing Systems For Graceful Degradation](https://newrelic.com/blog/best-practices/design-software-for-graceful-degradation)
+- [The Art of Graceful Degradation](https://farfetchtechblog.com/en/blog/post/the-art-of-failure-ii-graceful-degradation/)
 

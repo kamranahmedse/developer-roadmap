@@ -10,5 +10,4 @@ There are several ways to implement throttling in a cloud environment:
 
 Throttling is an important aspect of cloud design, as it helps to ensure that resources are used efficiently and that the system remains stable and available. It is often used in conjunction with other design patterns, such as auto-scaling and load balancing, to provide a scalable and resilient cloud environment.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://aws.amazon.com/architecture/well-architected/serverless/patterns/throttling/'>Throttling - AWS Well-Architected Framework</BadgeLink>
+- [Throttling - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/throttling/)

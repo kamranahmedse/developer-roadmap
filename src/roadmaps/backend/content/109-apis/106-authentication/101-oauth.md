@@ -6,8 +6,7 @@ In its most simplest form, OAuth delegates authentication to services like Faceb
 
 It is mostly utilized for REST/APIs and only provides a limited scope of a user's data.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth'>Okta - What the Heck is OAuth</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2'>DigitalOcean - An Introduction to OAuth 2</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=t4-416mg6iU'>What is OAuth really all about</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=CPbvxxslDTU'>OAuth 2.0: An Overview</BadgeLink>
+- [Okta - What the Heck is OAuth](https://developer.okta.com/blog/2017/06/21/what-the-heck-is-oauth)
+- [DigitalOcean - An Introduction to OAuth 2](https://www.digitalocean.com/community/tutorials/an-introduction-to-oauth-2)
+- [What is OAuth really all about](https://www.youtube.com/watch?v=t4-416mg6iU)
+- [OAuth 2.0: An Overview](https://www.youtube.com/watch?v=CPbvxxslDTU)

@@ -11,6 +11,5 @@ if (condition) {
 }
 ```
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else'>if...else - MDN docs</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/ifelse'>Conditional branching: if, '?' - javascript.info</BadgeLink>
+- [if...else - MDN docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/if...else)
+- [Conditional branching: if, ? - javascript.info](https://javascript.info/ifelse)

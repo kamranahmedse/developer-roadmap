@@ -4,8 +4,7 @@ Tail recursion is when a function can directly return the result of a recursive 
 
 In “non-tail recursion”, there are outstanding operations after the recursive call, and the stack frame cannot be nuked.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.quora.com/What-is-non-tail-recursion'>What is non-tail recursion?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.baeldung.com/cs/tail-vs-non-tail-recursion'>Tail vs Non-Tail Recursion</BadgeLink>
-<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=IVLUGb_gDDE'>Recursion (Solved Problem 1)</BadgeLink>
-<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=HIt_GPuD7wk'>Types of Recursion (Part 2) | Tail & Non-tail Recursion</BadgeLink>
+- [What is non-tail recursion?](https://www.quora.com/What-is-non-tail-recursion)
+- [Tail vs Non-Tail Recursion](https://www.baeldung.com/cs/tail-vs-non-tail-recursion)
+- [Recursion (Solved Problem 1)](https://www.youtube.com/watch?v=IVLUGb_gDDE)
+- [Types of Recursion (Part 2) | Tail & Non-tail Recursion](https://www.youtube.com/watch?v=HIt_GPuD7wk)

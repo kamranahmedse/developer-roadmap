@@ -8,8 +8,7 @@ Java has the following conditional statements:
 * Use `switch` to specify many alternative blocks of code to be executed
 * Use `?,:` operator to specify one line condition
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.educative.io/answers/what-are-conditional-statements-in-programming'>What are Conditional statements?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/java-if-else'>Conditionals in Java</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/ldYLYRNaucM'>Conditionals and Loops in Java</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/mA23x39DjbI'>Switch Statements + Nested Case in Java</BadgeLink>
+- [What are Conditional statements?](https://www.educative.io/answers/what-are-conditional-statements-in-programming)
+- [Conditionals in Java](https://www.javatpoint.com/java-if-else)
+- [Conditionals and Loops in Java](https://youtu.be/ldYLYRNaucM)
+- [Switch Statements + Nested Case in Java](https://youtu.be/mA23x39DjbI)

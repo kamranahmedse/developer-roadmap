@@ -21,7 +21,7 @@ echo "=== Migrating Roadmaps ==="
 node roadmap-migrator.cjs
 
 echo "=== Migrating Content ==="
-# node content-migrator.cjs
+node content-migrator.cjs
 
 echo "=== Migrating Guides ==="
 # node guide-migrator.cjs

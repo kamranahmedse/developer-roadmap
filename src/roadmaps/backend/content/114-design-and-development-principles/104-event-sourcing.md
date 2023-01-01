@@ -6,5 +6,4 @@ One of the main benefits of event sourcing is that it provides a clear and audit
 
 Event sourcing is often used in conjunction with other patterns, such as Command Query Responsibility Segregation (CQRS) and domain-driven design, to build scalable and responsive systems with complex business logic. It is also useful for building systems that need to support undo/redo functionality or that need to integrate with external systems.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://martinfowler.com/eaaDev/EventSourcing.html'>Event Sourcing - Martin Fowler</BadgeLink>
+- [Event Sourcing - Martin Fowler](https://martinfowler.com/eaaDev/EventSourcing.html)

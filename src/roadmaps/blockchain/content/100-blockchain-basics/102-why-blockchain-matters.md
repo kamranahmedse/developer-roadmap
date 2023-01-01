@@ -4,8 +4,7 @@ The nature of blockchain allows for trustless systems to be built on top of it. 
 
 This decentralization enables use-cases that were previously impossible, such as parametric insurance, decentralized finance, and decentralized organizations (DAOs), among a few. This allows developers to build products that provide immediate value without having to go through a bureaucratic process of applications, approvals, and general red tape.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.blockchain.education/blockchain101/blockchain'>Why Blockchain?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.forbes.com/sites/theyec/2020/05/18/what-is-the-blockchain-and-why-does-it-matter/'>What Is The Blockchain And Why Does It Matter?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://continuations.com/post/671863718643105792/web3crypto-why-bother'>Web3/Crypto: Why Bother?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important'>Why is Blockchain Important and Why Does it Matter</BadgeLink>
+- [Why Blockchain?](https://www.blockchain.education/blockchain101/blockchain)
+- [What Is The Blockchain And Why Does It Matter?](https://www.forbes.com/sites/theyec/2020/05/18/what-is-the-blockchain-and-why-does-it-matter/)
+- [Web3/Crypto: Why Bother?](https://continuations.com/post/671863718643105792/web3crypto-why-bother)
+- [Why is Blockchain Important and Why Does it Matter](https://www.simplilearn.com/tutorials/blockchain-tutorial/why-is-blockchain-important)

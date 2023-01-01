@@ -6,8 +6,7 @@ WebdriverIO leverages the power of the WebDriver protocol that is developed and 
 
 During the development of this automation standard the web has changed a lot and many of the requirements that developers have today to test their web application can not be fulfilled using WebDriver anymore. While some of the core contributors of this project help support the next generation of the WebDriver protocol, WebdriverIO provides an alternative automation solution based on the Chrome DevTools protocol. This allows the user to seamlessly switch between conventional commands based on WebDriver and powerful browser interactions through Puppeteer.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Bitbucket Website' href='https://webdriver.io/'>WebdriverIO Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Read' href='https://webdriver.io/docs/what-is-webdriverio'>A brief overview of WebdriverIO</BadgeLink>
-<BadgeLink badgeText='Guide' colorScheme='green' href='https://webdriver.io/docs/gettingstarted'>Getting started with WebdriverIO</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=e8goAKb6CC0&list=PL6AdzyjjD5HBbt9amjf3wIVMaobb28ZYN'>WebdriverIO Tutorial</BadgeLink>
+- [WebdriverIO Website](https://webdriver.io/)
+- [A brief overview of WebdriverIO](https://webdriver.io/docs/what-is-webdriverio)
+- [Getting started with WebdriverIO](https://webdriver.io/docs/gettingstarted)
+- [WebdriverIO Tutorial](https://www.youtube.com/watch?v=e8goAKb6CC0&list=PL6AdzyjjD5HBbt9amjf3wIVMaobb28ZYN)

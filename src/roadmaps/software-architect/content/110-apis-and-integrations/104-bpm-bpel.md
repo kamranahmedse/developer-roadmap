@@ -10,6 +10,6 @@ Its is a standard for representing business processes graphically. While modelli
 ## BPEL : Business Process Execution Language
 Programmers use BPEL to define how a business process that involves web services will be executed. BPEL messages are typically used to invoke remote services, orchestrate process execution and manage events and exceptions. BPEL is often associated with Business Process Management Notation. In many organizations, analysts use BPMN to visualize business processes and developers transform the visualizations to BPEL for execution.
 
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.redhat.com/en/topics/automation/what-is-business-process-management'>What is BPM?</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.ibm.com/docs/en/baw/19.x?topic=SS8JB4_19.x/com.ibm.wbpm.wid.main.doc/prodoverview/topics/cbpelproc.html'>BPEL described</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=V6nr5dnb1JQ'>BPM vs BPEL</BadgeLink>
+- [What is BPM?](https://www.redhat.com/en/topics/automation/what-is-business-process-management)
+- [BPEL described](https://www.ibm.com/docs/en/baw/19.x?topic=SS8JB4_19.x/com.ibm.wbpm.wid.main.doc/prodoverview/topics/cbpelproc.html)
+- [BPM vs BPEL](https://www.youtube.com/watch?v=V6nr5dnb1JQ)

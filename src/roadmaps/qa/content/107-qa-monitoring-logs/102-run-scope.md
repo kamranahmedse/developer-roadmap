@@ -4,6 +4,5 @@ A Simple Tool for Monitoring Complex APIs. Verify that the structure and content
 
 Create simple monitors with dynamic data for even the most complex use cases. More than simple string matching, build API validations without any code and use them across local dev, staging and production environments. 
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://www.runscope.com'>Runscope Website</BadgeLink>
+- [Runscope Website](https://www.runscope.com)
 

@@ -4,5 +4,5 @@ The uniq utility reads the specified input_file comparing adjacent lines, and wr
 
 See `man uniq` for further information.
 
-<BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://man7.org/linux/man-pages/man1/uniq.1.html'>uniq Documentation</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/'>uniq Cheat Sheet</BadgeLink>
+- [uniq Documentation](https://man7.org/linux/man-pages/man1/uniq.1.html)
+- [uniq Cheat Sheet](https://www.geeksforgeeks.org/uniq-command-in-linux-with-examples/)

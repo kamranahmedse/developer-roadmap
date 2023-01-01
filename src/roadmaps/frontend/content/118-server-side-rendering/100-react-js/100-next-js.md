@@ -2,9 +2,8 @@
 
 Next.js is an open-source development framework built on top of Node.js enabling React based web applications functionalities such as server-side rendering and generating static websites.
 
-<ResourceGroupTitle>Free Resources</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://nextjs.org/'>Official Website</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nextjs.org/docs/getting-started'>Official Docs for Getting Started</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://masteringnextjs.com/'>Mastering Next.js</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/the-next-js-handbook/'>The Next.js Handbook — freeCodeCamp</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/1WmNXEVia8I'>Next.js for Beginners - freeCodeCamp</BadgeLink>
+- [Official Website](https://nextjs.org/)
+- [Official Docs for Getting Started](https://nextjs.org/docs/getting-started)
+- [Mastering Next.js](https://masteringnextjs.com/)
+- [The Next.js Handbook — freeCodeCamp](https://www.freecodecamp.org/news/the-next-js-handbook/)
+- [Next.js for Beginners - freeCodeCamp](https://youtu.be/1WmNXEVia8I)

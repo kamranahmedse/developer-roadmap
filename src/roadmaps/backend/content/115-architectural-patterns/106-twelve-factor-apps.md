@@ -19,5 +19,4 @@ The Twelve-Factor App methodology consists of the following principles:
 
 The Twelve-Factor App methodology is widely adopted by developers of SaaS applications, and it is seen as a best practice for building cloud-native applications that are scalable, maintainable, and easy to deploy.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://12factor.net/'>The Twelve-Factor App</BadgeLink>
+- [The Twelve-Factor App](https://12factor.net/)

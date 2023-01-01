@@ -6,8 +6,7 @@ Go has only one looping construct, the `for` loop. The basic `for` loop has thre
 - the condition expression: evaluated before every iteration
 - the post statement: executed at the end of every iteration
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/tour/flowcontrol/1'>For Loop in Golang</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://go.dev/doc/effective_go#for'>Effective Go: For loop</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://gobyexample.com/for'>Go by Example: For loop</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://yourbasic.org/golang/for-loop/'>5 basic for loop patterns</BadgeLink>
+- [For Loop in Golang](https://go.dev/tour/flowcontrol/1)
+- [Effective Go: For loop](https://go.dev/doc/effective_go#for)
+- [Go by Example: For loop](https://gobyexample.com/for)
+- [5 basic for loop patterns](https://yourbasic.org/golang/for-loop/)

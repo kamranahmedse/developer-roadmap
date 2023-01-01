@@ -6,7 +6,7 @@ There are several distributions of Linux that are based on RHEL, or that have be
 
 RHEL derivatives are often used in enterprise environments because they offer the stability and reliability of RHEL, but with the added benefit of being free or lower-cost alternatives.
 
-<BadgeLink badgeText='Official Website' colorScheme='blue' href='https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux'>Red Hat Enterprise Linux Website</BadgeLink>
-<BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/'>RHEL Documentation</BadgeLink>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/get-started'>RHEL Getting Started Guides</BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.redhat.com/en/topics/linux/what-is-rhel'>What is Red Hat Enterprise Linux (RHEL) - Red Hat</BadgeLink>
+- [Red Hat Enterprise Linux Website](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux)
+- [RHEL Documentation](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/)
+- [RHEL Getting Started Guides](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/get-started)
+- [What is Red Hat Enterprise Linux (RHEL) - Red Hat](https://www.redhat.com/en/topics/linux/what-is-rhel)

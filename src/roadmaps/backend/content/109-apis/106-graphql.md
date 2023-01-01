@@ -8,5 +8,4 @@ GraphQL also provides a way to define the structure of the data that is returned
 
 GraphQL is widely used in modern web and mobile applications, and it is supported by a large and active developer community.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://graphql.org/'>GraphQL Official Website</BadgeLink>
+- [GraphQL Official Website](https://graphql.org/)

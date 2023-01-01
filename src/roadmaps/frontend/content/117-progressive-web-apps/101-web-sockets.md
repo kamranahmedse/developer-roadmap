@@ -6,5 +6,4 @@ Web Sockets utilizes a persistent connection between a client and a server, allo
 
 Web Sockets is supported by most modern web browsers and can be used with a variety of programming languages and frameworks.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API'>Web Sockets - MDN</BadgeLink>
+- [Web Sockets - MDN](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)

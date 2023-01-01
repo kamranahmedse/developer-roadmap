@@ -29,13 +29,12 @@ Advanced Roadmaps is available as a standalone app for Jira Software Server and 
 ### Jira Align
 Jira Align is an Enterprise Agile Planning platform that helps improve visibility, strategic alignment, and enterprise adaptability in order to accelerate your digital transformation.
 
-<ResourceGroupTitle>Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/jira/service-management/features/service-desk'>Jira Service Desk</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/jira/work-management'>Jira Core</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/wac/software/confluence?'>Confluence</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://bitbucket.org/product/'>Bitbucket</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/statuspage'>Statuspage</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/opsgenie'>Opsgenie</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/jira/features/roadmaps'>Advanced Roadmaps for Jira</BadgeLink>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.atlassian.com/software/jira/align'>Jira Align</BadgeLink>
+- [Jira Service Desk](https://www.atlassian.com/software/jira/service-management/features/service-desk)
+- [Jira Core](https://www.atlassian.com/software/jira/work-management)
+- [Confluence](https://www.atlassian.com/wac/software/confluence?)
+- [Bitbucket](https://bitbucket.org/product/)
+- [Statuspage](https://www.atlassian.com/software/statuspage)
+- [Opsgenie](https://www.atlassian.com/software/opsgenie)
+- [Advanced Roadmaps for Jira](https://www.atlassian.com/software/jira/features/roadmaps)
+- [Jira Align](https://www.atlassian.com/software/jira/align)
 

@@ -2,5 +2,4 @@
 
 The keyword `this` when used in an event handler refers to the element that received the event.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/js/js_this.asp'>this in Event handlers</BadgeLink>
+- [this in Event handlers](https://www.w3schools.com/js/js_this.asp)

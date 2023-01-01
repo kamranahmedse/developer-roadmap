@@ -4,5 +4,4 @@ The observer pattern is a software design pattern in which an object, named the 
 
 Angular uses the Observer pattern which simply means — Observable objects are registered, and other objects observe (in Angular using the subscribe method) them and take action when the observable object is acted on in some way.
 
-<ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink badgeText='Read' colorScheme='yellow' href='https://medium.com/fuzzycloud/angular-and-observable-4bf890b2a282'>Angular and Observable</BadgeLink>
+- [Angular and Observable](https://medium.com/fuzzycloud/angular-and-observable-4bf890b2a282)
