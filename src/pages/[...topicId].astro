@@ -1,27 +1,27 @@
 ---
-import MarkdownContent from "../components/MarkdownContent/MarkdownContent.astro";
-import BaseLayout from "../layouts/BaseLayout.astro";
-import { getTopicPathMapping, TopicFileType } from "../lib/roadmap";
+import MarkdownContent from '../components/MarkdownContent/MarkdownContent.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getTopicFiles, TopicFileType } from '../lib/topic';
 
 export async function getStaticPaths() {
-  const topicPathMapping = await getTopicPathMapping();
+  const topicPathMapping = await getTopicFiles();
 
   // console.log(topicPathMapping);
 
   return Object.keys(topicPathMapping).map((topicSlug) => ({
-    params: { topicId: topicSlug },
+    params: { topicId: topicSlug.replace(/^\//, '') },
     props: topicPathMapping[topicSlug],
   }));
 }
 
 const { topicId } = Astro.params;
-const props: TopicFileType = Astro.props as any;
+const { file } = Astro.props as TopicFileType;
 ---
 
 <BaseLayout title="What is this">
   <MarkdownContent>
     <main id="main-content">
-      <props.Content />
+      <file.Content />
     </main>
   </MarkdownContent>
 </BaseLayout>
