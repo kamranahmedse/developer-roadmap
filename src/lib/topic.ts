@@ -59,7 +59,7 @@ function generateBreadcrumbs(
   return breadcrumbs;
 }
 
-type BreadcrumbItem = {
+export type BreadcrumbItem = {
   title: string;
   url: string;
 };

@@ -1,12 +1,12 @@
 ---
+import Breadcrumbs from '../components/Breadcrumbs.astro';
 import MarkdownContent from '../components/MarkdownContent/MarkdownContent.astro';
+import RoadmapBanner from '../components/RoadmapBanner.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getTopicFiles, TopicFileType } from '../lib/topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getTopicFiles();
-
-  // console.log(topicPathMapping);
 
   return Object.keys(topicPathMapping).map((topicSlug) => ({
     params: { topicId: topicSlug.replace(/^\//, '') },
@@ -15,10 +15,13 @@ export async function getStaticPaths() {
 }
 
 const { topicId } = Astro.params;
-const { file } = Astro.props as TopicFileType;
+const { file, breadcrumbs, roadmapId, roadmap } = Astro.props as TopicFileType;
 ---
 
 <BaseLayout title="What is this">
+  <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
+  <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />
+
   <MarkdownContent>
     <main id="main-content">
       <file.Content />

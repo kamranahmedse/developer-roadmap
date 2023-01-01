@@ -1,0 +1,26 @@
+---
+import type { RoadmapFrontmatter } from '../lib/roadmap';
+
+export interface Props {
+  roadmapId: string;
+  roadmap: RoadmapFrontmatter;
+}
+
+const { roadmap, roadmapId } = Astro.props;
+---
+
+<a
+  href={`/${roadmapId}`}
+  class="flex items-center justify-center bg-yellow-100 text-yellow-900 border-b py-2 sm:py-3 text-sm sm:text-md hover:bg-yellow-200"
+>
+  <span class="container">
+    <span class="hidden sm:inline"
+      >Click to visit the interactive version of</span
+    >
+    <span class="inline sm:hidden">Visit complete</span>
+
+    <span class="sm:lowercase ml-0.5 font-medium underline underline-offset-1"
+      >{roadmap.featuredTitle} roadmap</span
+    >
+  </span>
+</a>
