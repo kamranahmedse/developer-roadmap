@@ -8,6 +8,7 @@ specifiers:
   node-html-parser: ^6.1.4
   prettier: ^2.8.1
   prettier-plugin-astro: ^0.7.0
+  rehype-external-links: ^2.0.1
   roadmap-renderer: ^1.0.1
   tailwindcss: ^3.2.4
 
@@ -15,6 +16,7 @@ dependencies:
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   astro: 1.8.0
   node-html-parser: 6.1.4
+  rehype-external-links: 2.0.1
   roadmap-renderer: 1.0.1
   tailwindcss: 3.2.4
 
@@ -1796,6 +1798,11 @@ packages:
     resolution: {integrity: sha512-7NXolsK4CAS5+xvdj5OMMbI962hU/wvwoxk+LWR9Ek9bVtyuuYScDN6eS0rUm6TxApFpw7CX1o4uJzcd4AyD3Q==}
     dev: false
 
+  /is-absolute-url/4.0.1:
+    resolution: {integrity: sha512-/51/TKE88Lmm7Gc4/8btclNXWS+g50wXhYJq8HWIBAGUBnoAdRu1aXeh364t/O7wXDAcTJDP8PNuNKWUDWie+A==}
+    engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
+    dev: false
+
   /is-alphabetical/2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
     dev: false
@@ -2880,6 +2887,17 @@ packages:
       esprima: 4.0.1
       source-map: 0.6.1
       tslib: 2.4.1
+    dev: false
+
+  /rehype-external-links/2.0.1:
+    resolution: {integrity: sha512-u2dNypma+ps12SJWlS23zvbqwNx0Hl24t0YHXSM/6FCZj/pqWETCO3WyyrvALv4JYvRtuPjhiv2Lpen15ESqbA==}
+    dependencies:
+      '@types/hast': 2.3.4
+      extend: 3.0.2
+      is-absolute-url: 4.0.1
+      space-separated-tokens: 2.0.2
+      unified: 10.1.2
+      unist-util-visit: 4.1.1
     dev: false
 
   /rehype-parse/8.0.4:
