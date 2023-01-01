@@ -4,11 +4,9 @@ Angular route guards are interfaces provided by Angular which, when implemented,
 
 Some types of angular guards are `CanActivate`, `CanActivateChild`, `CanLoad`, `CanDeactivate` and `Resolve`.
 
-{% resources %}
-  {% Official "https://angular.io/api/router", "Angular Official Website" %}
-  {% Official "https://angular.io/api/router/CanActivate", "Can Activate Guard" %}
-  {% Official "https://angular.io/api/router/CanActivateChild", "Can Activate Child" %}
-  {% Official "https://angular.io/api/router/CanDeactivate", "Can Deactivate" %}
-  {% Official "https://angular.io/api/router/CanLoad", "Angular Can Load" %}
-  {% Official "https://angular.io/api/router/CanMatch", "Can Match" %}
-{% endresources %}
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router'>Angular Official Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router/CanActivate'>Can Activate Guard</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router/CanActivateChild'>Can Activate Child</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router/CanDeactivate'>Can Deactivate</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router/CanLoad'>Angular Can Load</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/api/router/CanMatch'>Can Match</BadgeLink>

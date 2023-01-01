@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/java.json"
 pdfUrl: "/pdfs/java.pdf"
 order: 9
 featuredTitle: "Java"

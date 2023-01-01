@@ -1,5 +1,4 @@
 # Built in types
 
-{% resources %}
-  {% Official "https://dart.dev/guides/language/language-tour#built-in-types", "Built-in types" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://dart.dev/guides/language/language-tour#built-in-types'>Built-in types</BadgeLink>

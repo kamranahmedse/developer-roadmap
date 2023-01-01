@@ -4,8 +4,8 @@ Database normalization is the process of structuring a relational database in ac
 
 Normalization entails organizing the columns (attributes) and tables (relations) of a database to ensure that their dependencies are properly enforced by database integrity constraints. It is accomplished by applying some formal rules either by a process of synthesis (creating a new database design) or decomposition (improving an existing database design).
 
-{% resources %}
-  {% Blog "https://www.guru99.com/database-normalization.html", "What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF, BCNF Database with Example" %}
-  {% Blog "https://en.wikipedia.org/wiki/Database_normalization", "Database normalization" %}
-  {% Blog "https://www.youtube.com/watch?v=xoTyrdT9SZI", "Basic Concept of Database Normalization" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/database-normalization.html'>What is Normalization in DBMS (SQL)? 1NF, 2NF, 3NF, BCNF Database with Example</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Database_normalization'>Database normalization</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=xoTyrdT9SZI'>Basic Concept of Database Normalization</BadgeLink>

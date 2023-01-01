@@ -8,8 +8,7 @@ So, in this case, when we want to interact with any of these streams (through a 
 
 POSIX also adds a standard for exit codes, filesystem semantics, and several other command line utility API conventions.
 
-{% resources %}
-  {% Official "https://pubs.opengroup.org/onlinepubs/9699919799/", "POSIX standard by IEEE" %}
-  {% Blog "https://unix.stackexchange.com/a/220877", "Summary of some POSIX implementations" %}
-  {% Blog "https://www.baeldung.com/linux/posix", "A guide to POSIX" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://pubs.opengroup.org/onlinepubs/9699919799/'>POSIX standard by IEEE</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://unix.stackexchange.com/a/220877'>Summary of some POSIX implementations</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.baeldung.com/linux/posix'>A guide to POSIX</BadgeLink>

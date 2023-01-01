@@ -9,10 +9,9 @@ Built-in objects, or "global objects", are those built into the language specifi
 - `Function`
 - `Boolean`
 
-{% resources %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects", "Built-in Objects" %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects", "Standard built-in objects" %}
-  {% Blog "https://www.tutorialride.com/javascript/javascript-built-in-objects.htm", "JavaScript Built-in Objects" %}
-  {% Blog "https://www.scaler.com/topics/javascript-built-in-objects/", "Built-in Objects" %}
-  {% Blog "https://youtu.be/YLCtw8Ms5Q4", "JavaScript Built-in Objects" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects'>Built-in Objects</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects'>Standard built-in objects</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialride.com/javascript/javascript-built-in-objects.htm'>JavaScript Built-in Objects</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.scaler.com/topics/javascript-built-in-objects/'>Built-in Objects</BadgeLink>

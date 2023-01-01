@@ -12,6 +12,4 @@ Building an effective design system is not an individual responsibility, you nee
 - **Leaders:** (VPs and directors) to champion and align the vision throughout the company including up to executive leadership
 
 
-{% resources %}
-  {% Blog "https://www.designbetter.co/design-systems-handbook/designing-design-system", "Designing the Design System" %}
-{% endresources %}
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.designbetter.co/design-systems-handbook/designing-design-system'>Designing the Design System</BadgeLink>

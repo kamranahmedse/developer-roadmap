@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/vue.json"
 pdfUrl: "/pdfs/vue.pdf"
 order: 4
 featuredTitle: "Vue"

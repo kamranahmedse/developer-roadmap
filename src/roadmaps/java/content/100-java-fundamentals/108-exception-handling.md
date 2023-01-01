@@ -7,7 +7,6 @@ There are three types of exceptions -
 2. Unchecked Exception - exceptions checked at run time. Example - NullPointerException
 3. Error - It is irrecoverable. Example - OutOfMemoryError
 
-{% resources %}
-  {% Blog "https://www.geeksforgeeks.org/exceptions-in-java/", "Exception Handling - G4G" %}
-  {% Blog "https://www.youtube.com/watch?v=W-N2ltgU-X4", "Understanding Java Exceptions" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/exceptions-in-java/'>Exception Handling - G4G</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=W-N2ltgU-X4'>Understanding Java Exceptions</BadgeLink>

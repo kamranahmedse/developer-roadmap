@@ -9,6 +9,5 @@ Token-based authentication is different from traditional password-based or serve
 But using tokens requires a bit of coding know-how. Most developers pick up the techniques quickly, but there is a learning curve.
 
 
-{% resources %}
-  {% Blog "https://www.okta.com/identity-101/what-is-token-based-authentication/", "What Is Token-Based Authentication?" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.okta.com/identity-101/what-is-token-based-authentication/'>What Is Token-Based Authentication?</BadgeLink>

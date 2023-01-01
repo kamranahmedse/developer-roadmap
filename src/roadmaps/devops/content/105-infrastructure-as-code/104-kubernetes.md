@@ -4,10 +4,9 @@ Kubernetes is an [open source](https://github.com/kubernetes/kubernetes) contain
 
 The popularity of Kubernetes has made it an increasingly important skill for the DevOps Engineer and has triggered the creation of Platform teams across the industry.  These Platform engineering teams often exist with the sole purpose of making Kubernetes approachable and usable for their product development colleagues.
 
-{% resources %}
-  {% Official "https://kubernetes.io/", "Kubernetes Website" %}
-  {% Blog "https://kubernetes.io/docs/home/", "Kubernetes Documentation" %}
-  {% Blog "https://www.youtube.com/watch?v=s_o8dwzRlu4", "Kubernetes Crash Course for Absolute Beginners" %}
-  {% Blog "https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/", "Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care" %}
-  {% Blog "https://thenewstack.io/kubernetes-an-overview/", "Kubernetes: An Overview" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://kubernetes.io/'>Kubernetes Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Documentation' href='https://kubernetes.io/docs/home/'>Kubernetes Documentation</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=s_o8dwzRlu4'>Kubernetes Crash Course for Absolute Beginners</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/'>Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/kubernetes-an-overview/'>Kubernetes: An Overview</BadgeLink>

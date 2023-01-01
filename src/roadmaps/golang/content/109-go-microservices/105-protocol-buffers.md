@@ -8,8 +8,7 @@ Some of the advantages of using protocol buffers include:
 - Availability in many programming languages
 - Optimized functionality through automatically-generated classes
 
-{% resources %}
-  {% Official "https://github.com/protocolbuffers/protobuf/", "Protobuf Github" %}
-  {% Official "https://developers.google.com/protocol-buffers/", "Protobuf Doc" %}
-  {% Blog "https://developers.google.com/protocol-buffers/docs/gotutorial/", "Protobuf with Go" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Github' href='https://github.com/protocolbuffers/protobuf/'>Protobuf Github</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://developers.google.com/protocol-buffers/'>Protobuf Doc</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/protocol-buffers/docs/gotutorial/'>Protobuf with Go</BadgeLink>

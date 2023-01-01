@@ -9,7 +9,6 @@ def polynomial_algorithm(n):
             print(i, j)
 ```
 
-{% resources %}
-  {% Blog "https://www.youtube.com/watch?v=Z0bH0cMY0E8", "Big O Notation — Calculating Time Complexity" %}
-  {% Blog "https://www.youtube.com/watch?v=V6mKVRU1evU", "Big O Notations" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=Z0bH0cMY0E8'>Big O Notation — Calculating Time Complexity</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.youtube.com/watch?v=V6mKVRU1evU'>Big O Notations</BadgeLink>

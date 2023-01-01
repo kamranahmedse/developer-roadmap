@@ -7,10 +7,9 @@ Solidity is an object-oriented programming language created specifically by Ethe
 
 Like any other programming languages, Solidity also has variables, functions, classes, arithmetic operations, string manipulation, and many more.
 
-{% resources %}
-  {% Blog "https://soliditylang.org/", "Solidity Programming Language" %}
-  {% Blog "https://www.tutorialspoint.com/solidity/index.htm", "Solidity Tutorial" %}
-  {% Blog "https://www.youtube.com/watch?v=ipwxYa-F1uY", "Solidity Course by FreeCodeCamp" %}
-  {% Blog "https://www.youtube.com/watch?v=EhPeHeoKF88", "Solidity Course by Dapp University" %}
-  {% Blog "https://youtu.be/gyMwXuJrbJQ", "Learn Blockchain, Solidity, and Full Stack Web3 Development" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://soliditylang.org/'>Solidity Programming Language</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/solidity/index.htm'>Solidity Tutorial</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Watch' href='https://www.youtube.com/watch?v=ipwxYa-F1uY'>Solidity Course by FreeCodeCamp</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Watch' href='https://www.youtube.com/watch?v=EhPeHeoKF88'>Solidity Course by Dapp University</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/gyMwXuJrbJQ'>Learn Blockchain, Solidity, and Full Stack Web3 Development</BadgeLink>

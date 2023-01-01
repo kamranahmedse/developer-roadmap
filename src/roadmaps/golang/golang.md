@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/golang.json"
 pdfUrl: "/pdfs/golang.pdf"
 order: 8
 featuredTitle: "Go"

@@ -6,8 +6,7 @@ Rpcx is a RPC (Remote Procedure Call) framework like Alibaba Dubbo and Weibo Mot
 - Cross-platform: support raw slice of bytes, JSON, Protobuf and MessagePack. Theoretically it can be used with java, php, python, c/c++, node.js, c# and other platforms
 - Service discovery and service governance: support zookeeper, etcd and consul.
 
-{% resources %}
-  {% Blog "https://en.doc.rpcx.io/", "Rpcx English Documentation" %}
-  {% Official "https://github.com/smallnest/rpcx", "Rpcx Github" %}
-  {% Official "https://rpcx.io/", "Rpcx Official Website" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.doc.rpcx.io/'>Rpcx English Documentation</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Github' href='https://github.com/smallnest/rpcx'>Rpcx Github</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://rpcx.io/'>Rpcx Official Website</BadgeLink>

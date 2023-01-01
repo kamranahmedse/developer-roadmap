@@ -4,9 +4,8 @@ Socket is an endpoint of a two way **communication** link between **two differen
 
 e.g. `http://192.168.0.1:8080`
 
-{% resources %}
-  {% Blog "https://www.geeksforgeeks.org/socket-in-computer-network/", "What are Sockets?" %}
-  {% Blog "https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm", "Types of Sockets" %}
-  {% Blog "https://www.baeldung.com/cs/port-vs-socket", "Port vs Socket" %}
-  {% Blog "https://socket.io/", "Socket.io Library Bidirectional and low-latency communication for every platform" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/socket-in-computer-network/'>What are Sockets?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/unix_sockets/what_is_socket.htm'>Types of Sockets</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.baeldung.com/cs/port-vs-socket'>Port vs Socket</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Library' href='https://socket.io/'>Socket.io Library Bidirectional and low-latency communication for every platform</BadgeLink>

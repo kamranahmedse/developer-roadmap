@@ -5,7 +5,6 @@ Use pipes to transform strings, currency amounts, dates, and other data for disp
 `DatePipe` | `UpperCasePipe` | `LowerCasePipe` | `CurrencyPipe` | `DecimalPipe` | `PercentPipe`
 
 
-{% resources %}
-  {% Official "https://angular.io/guide/pipes", "Understanding BuiltIn Pipes" %}
-  {% Blog "https://codecraft.tv/courses/angular/pipes/built-in-pipes/", "BuiltIn Pipes - exampls" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://angular.io/guide/pipes'>Understanding BuiltIn Pipes</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Web' href='https://codecraft.tv/courses/angular/pipes/built-in-pipes/'>BuiltIn Pipes - exampls</BadgeLink>

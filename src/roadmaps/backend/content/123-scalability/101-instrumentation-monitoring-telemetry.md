@@ -6,8 +6,7 @@ Backend monitoring allows the user to view the performance of infrastructure i.e
 
 Telemetry is the process of continuously collecting data from different components of the application. This data helps engineering teams to troubleshoot issues across services and identify the root causes. In other words, telemetry data powers observability for your distributed applications.
 
-{% resources %}
-  {% Blog "https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)", "What is Instrumentation?" %}
-  {% Blog "https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/", "What is Monitoring?" %}
-  {% Blog "https://www.sumologic.com/insight/what-is-telemetry/", "What is Telemetry?" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)'>What is Instrumentation?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/'>What is Monitoring?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.sumologic.com/insight/what-is-telemetry/'>What is Telemetry?</BadgeLink>

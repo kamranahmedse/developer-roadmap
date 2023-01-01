@@ -4,7 +4,6 @@ Secrets Management is a systematic way of in managing, storing, securing, and re
 
 Credentials such as passwords, SSH keys, certificates, API keys, backup codes, and more.
 
-{% resources %}
-  {% Blog "https://aws.amazon.com/secrets-manager/", "AWS Secrets Management Website" %}
-  {% Blog "https://www.vaultproject.io/", "Vault Website" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://aws.amazon.com/secrets-manager/'>AWS Secrets Management Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Framework Website' href='https://www.vaultproject.io/'>Vault Website</BadgeLink>

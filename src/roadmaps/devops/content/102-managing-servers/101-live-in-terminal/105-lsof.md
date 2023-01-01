@@ -4,7 +4,5 @@ Lsof lists on its standard output file information about files opened by process
 
 See `man lsof` or `lsof --help` for further information.
 
-{% resources %}
-  {% Blog "https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/", "lsof Cheat Sheet" %}
-  {% Official "https://man7.org/linux/man-pages/man8/lsof.8.html", "lsof Documentation" %}
-{% endresources %}
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/'>lsof Cheat Sheet</BadgeLink>
+<BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://man7.org/linux/man-pages/man8/lsof.8.html'>lsof Documentation</BadgeLink>

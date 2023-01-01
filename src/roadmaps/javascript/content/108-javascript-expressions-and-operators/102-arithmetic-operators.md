@@ -12,8 +12,7 @@ Arithmetic operators in JavaScript are as follows:
 - `++` (Increment)
 - `--` (Decrement)
 
-{% resources %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators", "Arithmetic Operators - MDN" %}
-  {% Blog "https://javascript.info/operators#maths", "Arithmetic Operators - JavaScript.info" %}
-  {% Blog "https://www.w3schools.com/js/js_arithmetic.asp", "JavaScript Arithmetic Operators" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators#arithmetic_operators'>Arithmetic Operators - MDN</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/operators#maths'>Arithmetic Operators - JavaScript.info</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/js/js_arithmetic.asp'>JavaScript Arithmetic Operators</BadgeLink>

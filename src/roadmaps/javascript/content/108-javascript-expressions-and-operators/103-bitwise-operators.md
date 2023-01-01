@@ -13,7 +13,6 @@ Bitwise operators in JavaScript are as follows:
 - `>>` (Right SHIFT)
 - `>>>` (Zero-Fill Right SHIFT)
 
-{% resources %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators", "Bitwise Operators - MDN" %}
-  {% Blog "https://javascript.info/operators#bitwise-operators", "Bitwise Operators - JavaScript.info" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Expressions_and_Operators#bitwise_operators'>Bitwise Operators - MDN</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/operators#bitwise-operators'>Bitwise Operators - JavaScript.info</BadgeLink>

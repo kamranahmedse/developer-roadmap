@@ -2,7 +2,6 @@
 
 Vue Router is the official router for Vue.js which allows creating static/dynamic routes, has support for navigation interception, allows for component based configuration and much more.
 
-{% resources %}
-  {% Official "https://router.vuejs.org/", "Vue Router" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://router.vuejs.org/'>Vue Router</BadgeLink>
 

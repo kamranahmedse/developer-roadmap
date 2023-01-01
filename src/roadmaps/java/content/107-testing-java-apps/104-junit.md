@@ -2,10 +2,9 @@
 
 JUnit is a testing framework for Java.
 
-{% resources %}
-  {% Official "https://junit.org/junit5", "JUnit" %}
-  {% Official "https://junit.org/junit5/docs/current/user-guide/", "JUnit Documentation" %}
-  {% Blog "https://www.guru99.com/junit-tutorial.html", "JUnit tutorial" %}
-  {% Blog "https://www.baeldung.com/junit-5", "Basic JUnit tutorial" %}
-  {% Blog "https://www.youtube.com/watch?v=flpmSXVTqBI", "Testing with JUnit crash course" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Site' href='https://junit.org/junit5'>JUnit</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://junit.org/junit5/docs/current/user-guide/'>JUnit Documentation</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.guru99.com/junit-tutorial.html'>JUnit tutorial</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.baeldung.com/junit-5'>Basic JUnit tutorial</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=flpmSXVTqBI'>Testing with JUnit crash course</BadgeLink>

@@ -6,9 +6,8 @@ It's main use case is for communication between two different languages within t
 
 gRPC uses the protocol buffer language to define the structure of the data that is
 
-{% resources %}
-  {% Official "https://grpc.io/", "gRPC Website" %}
-  {% Official "https://grpc.io/docs/what-is-grpc/introduction/", "gRPC Introduction" %}
-  {% Official "https://grpc.io/docs/what-is-grpc/core-concepts/", "gRPC Core Concepts" %}
-  {% Blog "https://youtu.be/XRXTsQwyZSU", "Stephane Maarek - gRPC Introduction" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://grpc.io/'>gRPC Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://grpc.io/docs/what-is-grpc/introduction/'>gRPC Introduction</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://grpc.io/docs/what-is-grpc/core-concepts/'>gRPC Core Concepts</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://youtu.be/XRXTsQwyZSU'>Stephane Maarek - gRPC Introduction</BadgeLink>

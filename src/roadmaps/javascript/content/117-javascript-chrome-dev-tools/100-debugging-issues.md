@@ -4,6 +4,5 @@ When you're just starting out with JavaScript development, you might use a lot o
 
 However, for quicker, more complex and easier to handler debugging (which also doesn't litter your codebase with `console.log()`s), breakpoints and the sources panel is your friend.
 
-{% resources %}
-  {% Blog "https://developer.chrome.com/docs/devtools/javascript/", "Debugging JavaScript in the sources panel" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.chrome.com/docs/devtools/javascript/'>Debugging JavaScript in the sources panel</BadgeLink>

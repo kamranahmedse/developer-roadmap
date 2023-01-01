@@ -8,7 +8,6 @@ Strict mode makes several changes to normal JavaScript semantics:
 - Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes run faster than identical code that's not strict mode.
 - Prohibits some syntax likely to be defined in future versions of ECMAScript.
 
-{% resources %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode", "Strict mode" %}
-  {% Blog "https://javascript.info/strict-mode", "Strict mode in JavaScript" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode'>Strict mode</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://javascript.info/strict-mode'>Strict mode in JavaScript</BadgeLink>

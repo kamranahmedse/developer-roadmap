@@ -20,6 +20,5 @@ Below are the system errors commonly encountered when writing a Node.js program
 13. ETIMEDOUT - Operation timed out
 
 
-{% resources %}
-  {% Official "https://nodejs.org/api/errors.html#class-systemerror", "Node.js Errors - Official Docs" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/errors.html#class-systemerror'>Node.js Errors - Official Docs</BadgeLink>

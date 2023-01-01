@@ -8,7 +8,5 @@ In the world of data warehousing, if you need to bring data from multiple differ
 
 ETL tools enable data integration strategies by allowing companies to gather data from multiple data sources and consolidate it into a single, centralized location. ETL tools also make it possible for different types of data to work together.
 
-{% resources %}
-  {% Blog "https://www.snowflake.com/guides/what-etl", "What is ETL?" %}
-  {% Blog "https://www.youtube.com/watch?v=OW5OgsLpDCQ", "ETL explained" %}
-{% endresources %}
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.snowflake.com/guides/what-etl'>What is ETL?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=OW5OgsLpDCQ'>ETL explained</BadgeLink>

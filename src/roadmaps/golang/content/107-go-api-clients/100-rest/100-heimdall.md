@@ -9,6 +9,5 @@ Heimdall is an HTTP client that helps your application make a large number of re
 
 All HTTP methods are exposed as a fluent interface.
 
-{% resources %}
-  {% Blog "https://github.com/gojek/heimdall", "GitHub Repository" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='GitHub Repository' href='https://github.com/gojek/heimdall'>GitHub Repository</BadgeLink>

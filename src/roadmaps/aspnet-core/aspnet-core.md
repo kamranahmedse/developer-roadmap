@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/aspnet-core.json"
 pdfUrl: "/pdfs/aspnet-core.pdf"
 order: 9
 featuredTitle: "ASP.NET Core"

@@ -8,7 +8,6 @@ Forward Proxy, often called proxy server is a server that sits in front of a gro
 * To protect client identity online
 * To provide restricted internet to organizations
 
-{% resources %}
-  {% Blog "https://www.fortinet.com/resources/cyberglossary/proxy-server", "What is Forward Proxy?" %}
-  {% Blog "https://oxylabs.io/blog/reverse-proxy-vs-forward-proxy", "Forward vs Reverse Proxy" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.fortinet.com/resources/cyberglossary/proxy-server'>What is Forward Proxy?</BadgeLink>
+<BadgeLink badgeText='Read' href='https://oxylabs.io/blog/reverse-proxy-vs-forward-proxy'>Forward vs Reverse Proxy</BadgeLink>

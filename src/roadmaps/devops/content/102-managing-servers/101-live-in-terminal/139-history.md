@@ -4,6 +4,5 @@
 
 It has the below syntax: `$ history`
 
-{% resources %}
-  {% Blog "https://www.geeksforgeeks.org/history-command-in-linux-with-examples/", "What is history command? How to recall previous commands?" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/history-command-in-linux-with-examples/'>What is history command? How to recall previous commands?</BadgeLink>

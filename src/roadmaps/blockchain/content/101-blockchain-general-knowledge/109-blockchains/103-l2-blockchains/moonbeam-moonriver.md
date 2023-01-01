@@ -4,7 +4,6 @@ Moonbeam is a Polkadot network parachain that promises cross-chain interoperabil
 
 Moonriver is an incentivized testnet. It enables developers to create, test, and adjust their protocols prior to launching on Moonbeam. Moonbeam is the mainnet of the ecosystem.
 
-{% resources %}
-  {% Blog "https://docs.moonbeam.network/learn/platform/networks/moonbeam/", "About Moonbeam" %}
-  {% Blog "https://docs.moonbeam.network/learn/platform/vision/", "Moonbeam Vision" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://docs.moonbeam.network/learn/platform/networks/moonbeam/'>About Moonbeam</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://docs.moonbeam.network/learn/platform/vision/'>Moonbeam Vision</BadgeLink>

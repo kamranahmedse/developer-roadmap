@@ -21,7 +21,6 @@ switch (expression) {
 } 
 ```
 
-{% resources %}
-  {% Blog "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch", "switch - MDN" %}
-  {% Blog "https://javascript.info/switch", "The switch statement - javascript.info" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Read' href='https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/switch'>switch - MDN</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Read' href='https://javascript.info/switch'>The switch statement - javascript.info</BadgeLink>

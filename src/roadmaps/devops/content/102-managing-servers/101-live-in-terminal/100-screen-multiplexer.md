@@ -4,7 +4,5 @@ Screen  is  a  full-screen  window manager that multiplexes a physical terminal 
 
 See `man screen` or `screen -h` for further information
 
-{% resources %}
-  {% Blog "https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index", "Screen Cheat Sheet" %}
-  {% Blog "https://www.gnu.org/software/screen/manual/screen.html", "Screen Users Manual" %}
-{% endresources %}
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://kapeli.com/cheat_sheets/screen.docset/Contents/Resources/Documents/index'>Screen Cheat Sheet</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.gnu.org/software/screen/manual/screen.html'>Screen User's Manual</BadgeLink>

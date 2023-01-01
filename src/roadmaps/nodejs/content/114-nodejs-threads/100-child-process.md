@@ -7,6 +7,6 @@ The three main methods inside this module are :
 `child_process.fork()`
 `child_process.exec()`
 
-{% resources %}
-  {% Official "https://nodejs.org/api/child_process.html#child-process", "Child Process Docs" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://nodejs.org/api/child_process.html#child-process'>Child Process Docs</BadgeLink>

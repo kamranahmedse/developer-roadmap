@@ -6,8 +6,7 @@ SHA (Secure Hash Algorithms) is a family of cryptographic hash functions created
 - SHA-2: This isn't an algorithm, but a set of them, with SHA-256 and SHA-512 being the most popular. SHA-2 is still secure and widely used.
 - SHA-3: Born in a competition, this is the newest member of the family. SHA-3 is very secure and doesn't carry the same design flaws as its brethren.
 
-{% resources %}
-  {% Blog "https://en.wikipedia.org/wiki/SHA-1", "Wikipedia - SHA-1" %}
-  {% Blog "https://en.wikipedia.org/wiki/SHA-2", "Wikipedia - SHA-2" %}
-  {% Blog "https://en.wikipedia.org/wiki/SHA-3", "Wikipedia - SHA-3" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/SHA-1'>Wikipedia - SHA-1</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/SHA-2'>Wikipedia - SHA-2</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/SHA-3'>Wikipedia - SHA-3</BadgeLink>

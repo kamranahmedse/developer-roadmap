@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/javascript.json"
 pdfUrl: "/pdfs/javascript.pdf"
 order: 5
 featuredTitle: "JavaScript"

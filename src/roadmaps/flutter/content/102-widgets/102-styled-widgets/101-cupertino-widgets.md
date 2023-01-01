@@ -2,6 +2,5 @@
 
 Beautiful and high-fidelity widgets for current iOS design language.
 
-{% resources %}
-  {% Official "https://docs.flutter.dev/development/ui/widgets/cupertino", "Cupertino (iOS-style) widgets" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.flutter.dev/development/ui/widgets/cupertino'>Cupertino (iOS-style) widgets</BadgeLink>

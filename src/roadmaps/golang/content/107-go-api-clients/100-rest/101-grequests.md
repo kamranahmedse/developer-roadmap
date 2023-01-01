@@ -9,6 +9,5 @@ Features:
 - Easy file downloads
 - Support for the following HTTP verbs GET, HEAD, POST, PUT, DELETE, PATCH, OPTIONS
 
-{% resources %}
-  {% Blog "https://github.com/levigross/grequests", "GitHub Repository" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='GitHub Repository' href='https://github.com/levigross/grequests'>GitHub Repository</BadgeLink>

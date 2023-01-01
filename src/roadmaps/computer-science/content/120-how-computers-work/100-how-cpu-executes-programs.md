@@ -1,5 +1,4 @@
 # How CPU Executes Programs?
 
-{% resources %}
-  {% Blog "https://www.youtube.com/watch?v=XM4lGflQFvA", "How CPU executes a program" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=XM4lGflQFvA'>How CPU executes a program</BadgeLink>

@@ -6,7 +6,7 @@ import { getTopicPathMapping, TopicFileType } from "../lib/roadmap";
 export async function getStaticPaths() {
   const topicPathMapping = await getTopicPathMapping();
 
-  console.log(topicPathMapping);
+  // console.log(topicPathMapping);
 
   return Object.keys(topicPathMapping).map((topicSlug) => ({
     params: { topicId: topicSlug },

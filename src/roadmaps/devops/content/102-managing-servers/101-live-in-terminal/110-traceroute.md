@@ -4,7 +4,6 @@
 
 It has the following syntax: `$ traceroute [OPTIONS] DESTINATION` e.g. `$ traceroute roadmap.sh`
 
-{% resources %}
-  {% Blog "https://linuxhint.com/run_traceroute_linux/", "How to Run Traceroute in Linux" %}
-  {% Blog "https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/", "Traceroute command in Linux with examples" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://linuxhint.com/run_traceroute_linux/'>How to Run Traceroute in Linux</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/traceroute-command-in-linux-with-examples/'>Traceroute command in Linux with examples</BadgeLink>

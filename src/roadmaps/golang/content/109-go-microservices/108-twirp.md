@@ -4,7 +4,6 @@ Twirp is a framework for service-to-service communication emphasizing simplicity
 
 Twirp is similar to gRPC, but without the custom HTTP server and transport implementations: it runs on the standard library's extremely-well-tested-and-high-performance net/http Server. It can run on HTTP 1.1, not just http/2, and supports JSON serialization for easy debugging.
 
-{% resources %}
-  {% Blog "https://github.com/twitchtv/twirp", "GitHub Repository" %}
-  {% Blog "https://twitchtv.github.io/twirp/docs/intro.html", "Getting started" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='GitHub Repository' href='https://github.com/twitchtv/twirp'>GitHub Repository</BadgeLink>
+<BadgeLink badgeText='Read' href='https://twitchtv.github.io/twirp/docs/intro.html'>Getting started</BadgeLink>

@@ -1,5 +1,4 @@
 # How Computers Calculate?
 
-{% resources %}
-  {% Blog "https://youtu.be/1I5ZMmrOfnA", "How computers calculate - ALU" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='red' badgeText='Watch' href='https://youtu.be/1I5ZMmrOfnA'>How computers calculate - ALU</BadgeLink>

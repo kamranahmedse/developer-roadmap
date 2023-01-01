@@ -2,6 +2,5 @@
 
 Visual, behavioral, and motion-rich widgets implementing the Material Design guidelines.
 
-{% resources %}
-  {% Official "https://docs.flutter.dev/development/ui/widgets/material", "Material Components widgets" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.flutter.dev/development/ui/widgets/material'>Material Components widgets</BadgeLink>

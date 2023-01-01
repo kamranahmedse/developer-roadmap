@@ -6,8 +6,7 @@ Design patterns are typical solutions to commonly occurring problems in software
 - Structural Patterns to provide relationship between objects
 - Behavioral Patterns to help define how objects interact
 
-{% resources %}
-  {% Blog "https://github.com/kamranahmedse/design-patterns-for-humans", "Design Patterns for Humans" %}
-  {% Blog "https://springframework.guru/gang-of-four-design-patterns/", "GOF design patterns" %}
-  {% Blog "https://refactoring.guru/design-patterns", "Design Patterns" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://github.com/kamranahmedse/design-patterns-for-humans'>Design Patterns for Humans</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://springframework.guru/gang-of-four-design-patterns/'>GOF design patterns</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://refactoring.guru/design-patterns'>Design Patterns</BadgeLink>

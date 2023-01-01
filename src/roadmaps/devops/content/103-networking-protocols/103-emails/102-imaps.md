@@ -3,7 +3,6 @@ IMAP (port 143) or IMAPS (port 993) allows you to access your email wherever you
 
 IMAP only downloads a message when you click on it, and attachments aren't automatically downloaded. This way you're able to check your messages a lot more quickly than POP.
 
-{% resources %}
-  {% Blog "https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol", "Wikipedia: Internet Message Access Protocol" %}
-  {% Blog "https://www.youtube.com/watch?v=cfXabGOA2s8", "What is IMAP and How To Use It | Email Tutorial" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Internet_Message_Access_Protocol'>Wikipedia: Internet Message Access Protocol</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=cfXabGOA2s8'>What is IMAP and How To Use It | Email Tutorial</BadgeLink>

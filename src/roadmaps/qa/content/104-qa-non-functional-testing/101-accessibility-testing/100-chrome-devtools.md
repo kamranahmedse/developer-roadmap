@@ -6,7 +6,5 @@ To enter the dev tools, right click and click **Inspect** (or press `ctrl+shift+
 
 NOTE: This isn't a chrome-specific feature, and most browsers (Chromium based or otherwise) will have their own, largely-similar set of devtools.
 
-{% resources %}
-  {% Blog "https://developer.chrome.com/docs/devtools/overview/", "Official Docs" %}
-  {% Blog "https://www.freecodecamp.org/news/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3/", "Mastering Chrome Dev Tools" %}
-{% endresources %}
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developer.chrome.com/docs/devtools/overview/'>Official Docs</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/mastering-chrome-developer-tools-next-level-front-end-development-techniques-3ac0b6fe8a3/'>Mastering Chrome Dev Tools</BadgeLink>

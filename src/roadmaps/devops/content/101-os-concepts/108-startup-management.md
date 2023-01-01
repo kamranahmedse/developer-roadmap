@@ -4,8 +4,7 @@
 
 It has following syntax: `$ service [service_name] [action]` e.g. `$ service ssh start`
 
-{% resources %}
-  {% Blog "https://www.freecodecamp.org/news/the-linux-booting-process-6-steps-described-in-detail/", "Linux Booting Process" %}
-  {% Blog "https://www.geeksforgeeks.org/what-is-init-d-in-linux-service-management/", "What is init.d?" %}
-  {% Blog "https://itsfoss.com/linux-daemons/", "What are Daemons in Linux?" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/news/the-linux-booting-process-6-steps-described-in-detail/'>Linux Booting Process</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/what-is-init-d-in-linux-service-management/'>What is init.d?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://itsfoss.com/linux-daemons/'>What are Daemons in Linux?</BadgeLink>

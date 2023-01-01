@@ -6,8 +6,7 @@ CSS or Cascading Style Sheets is the language used to style the front end of any
 
 JavaScript allows you to add interactivity to your pages. You may have seen common examples on the websites: sliders, click interactions, popups, and so on.
 
-{% resources %}
-  {% Blog "https://www.w3schools.com/html/html_intro.asp", "W3Schools: Learn HTML" %}
-  {% Blog "https://www.w3schools.com/css/", "W3Schools — Learn CSS" %}
-  {% Blog "https://www.w3schools.com/js/", "W3Schools – JavaScript Tutorial" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.w3schools.com/html/html_intro.asp'>W3Schools: Learn HTML</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools — Learn CSS</BadgeLink>
+<BadgeLink badgeText='Read' colorScheme="yellow" href='https://www.w3schools.com/js/'>W3Schools – JavaScript Tutorial</BadgeLink>

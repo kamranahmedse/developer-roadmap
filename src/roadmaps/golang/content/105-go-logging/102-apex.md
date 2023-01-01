@@ -2,6 +2,5 @@
 
 Structured logging package for Go.
 
-{% resources %}
-  {% Blog "https://github.com/apex/log", "GitHub Repository" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='GitHub Repository' href='https://github.com/apex/log'>GitHub Repository</BadgeLink>

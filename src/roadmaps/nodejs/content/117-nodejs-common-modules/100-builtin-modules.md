@@ -26,7 +26,6 @@ Built-in modules are already installed with `Node.js`, so you don't need to inst
 - **string_decoder**: provides an API for decoding Buffer objects into strings.
 - **tls**: provides an implementation of the Transport Layer Security (TLS) and Secure Socket Layer (SSL) protocols.
 
-{% resources %}
-  {% Official "https://nodejs.org/api/modules.html", "API documentation of Built-in modules" %}
-  {% Blog "https://www.w3schools.com/nodejs/ref_modules.asp", "Built-in modules - w3schools" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://nodejs.org/api/modules.html'>API documentation of Built-in modules</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/nodejs/ref_modules.asp'>Built-in modules - w3schools</BadgeLink>

@@ -6,6 +6,5 @@ Encryption is a two-way function that takes an input and produces an output. The
 
 Encoding is a two-way function that takes an input and produces an output. The output is called encoded text. The encoded text is a unique representation of the input. The encoded text is deterministic, meaning that the same input will always produce the same encoded text. The encoded text is reversible, meaning that it is possible to go from the encoded text back to the original input. The encoded text is not collision-resistant, meaning that it is possible to find two different inputs that produce the same encoded text.
 
-{% resources %}
-  {% Blog "https://www.youtube.com/watch?v=-bAnBzvMLig", "Encoding, Encryption and Hashing -- Whats the Difference?" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='red' badgeText='Watch' href='https://www.youtube.com/watch?v=-bAnBzvMLig'>Encoding, Encryption and Hashing -- What's the Difference?</BadgeLink>

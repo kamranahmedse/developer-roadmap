@@ -6,11 +6,10 @@ CAP is an acronym for Consistency, Availability, and Partition Tolerance. Accord
 
 ACID is an acronym that stands for Atomicity, Consistency, Isolation, Durability. ACID is a set of properties of database transactions intended to guarantee validity even in the event of errors, power failures, etc.
 
-{% resources %}
-  {% Blog "https://www.bmc.com/blogs/cap-theorem/", "What is CAP Theorem?" %}
-  {% Blog "https://en.wikipedia.org/wiki/CAP_theorem", "CAP Theorem - Wikipedia" %}
-  {% Blog "https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/", "An Illustrated Proof of the CAP Theorem" %}
-  {% Blog "https://www.ibm.com/uk-en/cloud/learn/cap-theorem", "CAP Theorem and its applications in NoSQL Databases" %}
-  {% Blog "https://www.youtube.com/watch?v=_RbsFXWRZ10", "What is CAP Theorem?" %}
-  {% Blog "https://en.wikipedia.org/wiki/ACID", "ACID - Wikipedia" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.bmc.com/blogs/cap-theorem/'>What is CAP Theorem?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/CAP_theorem'>CAP Theorem - Wikipedia</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://mwhittaker.github.io/blog/an_illustrated_proof_of_the_cap_theorem/'>An Illustrated Proof of the CAP Theorem</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.ibm.com/uk-en/cloud/learn/cap-theorem'>CAP Theorem and it's applications in NoSQL Databases</BadgeLink>
+<BadgeLink colorScheme='purple' badgeText='Watch' href='https://www.youtube.com/watch?v=_RbsFXWRZ10'>What is CAP Theorem?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/ACID'>ACID - Wikipedia</BadgeLink>

@@ -4,9 +4,8 @@ Containers are a construct in which [cgroups](https://en.wikipedia.org/wiki/Cgro
 
 These images are designed for portability, allowing for full local testing of a static image, and easy deployment to a container management platform.
 
-{% resources %}
-  {% Blog "https://cloud.google.com/learn/what-are-containers", "What are Containers?" %}
-  {% Blog "https://www.docker.com/resources/what-container/", "What is a Container?" %}
-  {% Blog "https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz", "What are Containers?" %}
-  {% Blog "https://thenewstack.io/category/containers/", "Articles about Containers - The New Stack" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://cloud.google.com/learn/what-are-containers'>What are Containers?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.docker.com/resources/what-container/'>What is a Container?</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/playlist?list=PLawsLZMfND4nz-WDBZIj8-nbzGFD4S9oz'>What are Containers?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/category/containers/'>Articles about Containers - The New Stack</BadgeLink>

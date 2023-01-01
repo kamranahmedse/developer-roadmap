@@ -6,9 +6,9 @@ Steps -
 1. Define function - datatype function_name(parameters){body}
 2. Call function - function_name(values)
 
-{% resources %}
-  {% Blog "https://www.javatpoint.com/method-in-java", "Methods/Functions in Java." %}
-  {% Blog "https://www.geeksforgeeks.org/methods-in-java/", "What are methods or functions in Java." %}
-  {% Blog "https://www.w3schools.com/java/java_methods.asp", "Learn Functions/Methods in Java" %}
-  {% Blog "https://www.youtube.com/watch?v=vvanI8NRlSI", "Functions / Methods in Java" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.javatpoint.com/method-in-java'>Methods/Functions in Java.</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/methods-in-java/'>What are methods or functions in Java.</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/java/java_methods.asp'>Learn Functions/Methods in Java</BadgeLink>
+<BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=vvanI8NRlSI'>Functions / Methods in Java</BadgeLink>

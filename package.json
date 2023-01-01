@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "roadmap.sh",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -8,7 +8,8 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "sync-content": "sh ./bin/sync-content.sh"
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.1.3",
@@ -19,6 +20,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
+    "json-to-pretty-yaml": "^1.2.2",
     "prettier": "^2.8.1",
     "prettier-plugin-astro": "^0.7.0"
   }

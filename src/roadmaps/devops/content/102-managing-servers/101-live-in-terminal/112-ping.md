@@ -4,7 +4,6 @@
 
 It has the following syntax: `$ ping [OPTIONS] DESTINATION` e.g. `$ ping roadmap.sh`
 
-{% resources %}
-  {% Blog "https://linuxize.com/post/linux-ping-command/", "What is ping command?" %}
-  {% Blog "https://www.geeksforgeeks.org/ping-command-in-linux-with-examples/", "ping command with examples" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://linuxize.com/post/linux-ping-command/'>What is ping command?</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.geeksforgeeks.org/ping-command-in-linux-with-examples/'>ping command with examples</BadgeLink>

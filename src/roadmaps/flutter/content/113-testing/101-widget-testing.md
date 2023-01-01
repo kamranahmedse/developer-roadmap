@@ -2,6 +2,5 @@
 
 Flutter provides necessary tools and libraries to test widget classes.
 
-{% resources %}
-  {% Official "https://docs.flutter.dev/cookbook/testing/widget/introduction", "An introduction to widget testing" %}
-{% endresources %}
+<ResourceGroupTitle>Free Content</ResourceGroupTitle>
+<BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://docs.flutter.dev/cookbook/testing/widget/introduction'>An introduction to widget testing</BadgeLink>

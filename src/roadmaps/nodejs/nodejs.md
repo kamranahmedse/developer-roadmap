@@ -1,5 +1,4 @@
 ---
-jsonUrl: "/jsons/nodejs.json"
 pdfUrl: "/pdfs/nodejs.pdf"
 order: 6
 featuredTitle: "Node.js"
