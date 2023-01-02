@@ -1,1 +1,0 @@
-# Reactive programming

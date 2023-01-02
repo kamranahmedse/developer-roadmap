@@ -1,1 +1,0 @@
-# Graphql over sse

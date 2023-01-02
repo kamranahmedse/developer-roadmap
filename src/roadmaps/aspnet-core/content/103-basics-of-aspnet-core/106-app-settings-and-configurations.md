@@ -1,1 +1,0 @@
-# App settings and configurations

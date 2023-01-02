@@ -1,1 +1,0 @@
-# Guidelines and protocols

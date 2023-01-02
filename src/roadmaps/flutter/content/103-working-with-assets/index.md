@@ -1,1 +1,0 @@
-# Working with assets
