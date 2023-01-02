@@ -1,0 +1,1 @@
+# Graphql on the frontend
