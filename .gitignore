@@ -5,6 +5,8 @@ dist/
 # dependencies
 node_modules/
 
+bin/developer-roadmap
+
 # logs
 npm-debug.log*
 yarn-debug.log*
