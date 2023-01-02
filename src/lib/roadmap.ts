@@ -12,6 +12,7 @@ export interface RoadmapFrontmatter {
   title: string;
   description: string;
   hasTopics: boolean;
+  isNew: boolean;
   dimensions: {
     width: number;
     height: number;
@@ -63,5 +64,7 @@ export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> 
   const roadmapFiles: MarkdownFileType<RoadmapFrontmatter>[] = Object.values(roadmapFilesMap);
   const filteredRoadmaps = roadmapFiles.filter(roadmapFile => roadmapFile.frontmatter.tags.includes(tag));
 
-  return filteredRoadmaps;
+  return filteredRoadmaps.sort(
+    (a, b) => a.frontmatter.order - b.frontmatter.order
+  );
 }

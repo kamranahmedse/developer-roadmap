@@ -1,4 +1,5 @@
 ---
+import GridRoadmapItem from '../components/GridRoadmapItem.astro';
 import SimplePageHeader from '../components/SimplePageHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapsByTag } from '../lib/roadmap';
@@ -17,8 +18,17 @@ const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
   <div class="bg-gray-100 pt-4 pb-14 sm:pt-8 sm:pb-16">
     <div class="container">
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-3">
-        <h1>{ roleRoadmaps.length }</h1>
-        <h1>{ skillRoadmaps.length }</h1>
+        {
+          roleRoadmaps.map((roleRoadmap) => (
+            <GridRoadmapItem roadmap={roleRoadmap.frontmatter} />
+          ))
+        }
+
+        {
+          skillRoadmaps.map((skillRoadmap) => (
+            <GridRoadmapItem roadmap={skillRoadmap.frontmatter} />
+          ))
+        }
       </div>
     </div>
   </div>
