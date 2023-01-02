@@ -14,6 +14,10 @@ export async function countStars(
 export async function getFormattedStars(
   repo = 'kamranahmedse/developer-roadmap'
 ): Promise<string> {
+  if (import.meta.env.DEV) {
+    return '223k';
+  }
+
   const stars = await countStars(repo);
 
   return formatter.format(stars);
