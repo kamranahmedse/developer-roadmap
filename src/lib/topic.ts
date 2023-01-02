@@ -1,4 +1,4 @@
-import { joinPath } from './path';
+import type { MarkdownFileType } from './File';
 import type { RoadmapFrontmatter } from './roadmap';
 
 // Generates URL from the topic file path e.g.
@@ -64,24 +64,10 @@ export type BreadcrumbItem = {
   url: string;
 };
 
-type FileHeadingType = {
-  depth: number;
-  slug: string;
-  text: string;
-};
-
-export interface TopicFileContentType {
-  frontMatter: Record<string, string>;
-  file: string;
-  url: string;
-  Content: any;
-  getHeadings: () => FileHeadingType[];
-}
-
 export interface TopicFileType {
   url: string;
   text: string;
-  file: TopicFileContentType;
+  file: MarkdownFileType;
   roadmap: RoadmapFrontmatter;
   roadmapId: string;
   breadcrumbs: BreadcrumbItem[];
@@ -102,7 +88,7 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
   const mapping: Record<string, TopicFileType> = {};
 
   for (let filePath of Object.keys(contentFiles)) {
-    const fileContent: TopicFileContentType = contentFiles[filePath] as any;
+    const fileContent: MarkdownFileType = contentFiles[filePath] as any;
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 

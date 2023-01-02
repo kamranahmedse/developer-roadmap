@@ -1,3 +1,7 @@
+import type { MarkdownFileType } from "./File";
+
+type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter>;
+
 export interface RoadmapFrontmatter {
   id: string;
   jsonUrl: string;
@@ -25,6 +29,11 @@ export interface RoadmapFrontmatter {
   tags: string[];
 }
 
+/**
+ * Gets the IDs of all the roadmaps available on the website
+ * 
+ * @returns string[] Array of roadmap IDs
+ */
 export async function getRoadmapIds() {
   const roadmapFiles = await import.meta.glob<string>("/src/roadmaps/*/*.md", {
     eager: true,
@@ -35,4 +44,24 @@ export async function getRoadmapIds() {
 
     return fileName.replace(".md", "");
   });
+}
+
+/**
+ * Gets the roadmap files which have the given tag assigned
+ * 
+ * @param tag Tag assigned to roadmap
+ * @returns Promisified RoadmapFileType[]
+ */
+export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> {
+  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>(
+    '/src/roadmaps/*/*.md',
+    {
+      eager: true,
+    }
+  );
+  
+  const roadmapFiles: MarkdownFileType<RoadmapFrontmatter>[] = Object.values(roadmapFilesMap);
+  const filteredRoadmaps = roadmapFiles.filter(roadmapFile => roadmapFile.frontmatter.tags.includes(tag));
+
+  return filteredRoadmaps;
 }
