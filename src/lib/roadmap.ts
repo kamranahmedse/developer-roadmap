@@ -1,8 +1,5 @@
-import type { MarkdownFileType } from "./File";
+import type { MarkdownFileType } from "./file";
 
-export type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter> & {
-  id: string;
-};
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;
@@ -32,6 +29,10 @@ export interface RoadmapFrontmatter {
   tags: string[];
 }
 
+export type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter> & {
+  id: string;
+};
+
 function roadmapPathToId(filePath: string):string {
   const fileName = filePath.split("/").pop() || "";
 
@@ -44,7 +45,7 @@ function roadmapPathToId(filePath: string):string {
  * @returns string[] Array of roadmap IDs
  */
 export async function getRoadmapIds() {
-  const roadmapFiles = await import.meta.glob<string>("/src/roadmaps/*/*.md", {
+  const roadmapFiles = await import.meta.glob<RoadmapFileType>("/src/roadmaps/*/*.md", {
     eager: true,
   });
 

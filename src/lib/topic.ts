@@ -1,4 +1,4 @@
-import type { MarkdownFileType } from './File';
+import type { MarkdownFileType } from './file';
 import type { RoadmapFrontmatter } from './roadmap';
 
 // Generates URL from the topic file path e.g.
