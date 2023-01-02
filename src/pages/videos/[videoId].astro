@@ -1,0 +1,32 @@
+---
+import VideoHeader from '../../components/VideoHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllVideos, VideoFileType } from '../../lib/video';
+import '../../styles/prism.css';
+
+export interface Props {
+  video: VideoFileType;
+}
+
+export async function getStaticPaths() {
+  const videos = await getAllVideos();
+
+  return videos.map((video) => ({
+    params: { videoId: video.id },
+    props: { video },
+  }));
+}
+
+const { videoId } = Astro.params;
+const { video } = Astro.props;
+---
+
+<BaseLayout title='Simple Video'>
+  <VideoHeader video={video} />
+
+  <div class='bg-gray-50 py-5 sm:py-10'>
+    <div class='container prose prose-code:bg-transparent prose-h2:text-3xl prose-h2:mt-4 prose-h2:mb-2 prose-h3:mt-2 prose-img:mt-1'>
+      <video.Content />
+    </div>
+  </div>
+</BaseLayout>
