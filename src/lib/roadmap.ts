@@ -1,9 +1,10 @@
 import type { MarkdownFileType } from "./File";
 
-type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter>;
+export type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter> & {
+  id: string;
+};
 
 export interface RoadmapFrontmatter {
-  id: string;
   jsonUrl: string;
   pdfUrl: string;
   order: number;
@@ -30,6 +31,12 @@ export interface RoadmapFrontmatter {
   tags: string[];
 }
 
+function roadmapPathToId(filePath: string):string {
+  const fileName = filePath.split("/").pop() || "";
+
+  return fileName.replace(".md", "");
+}
+
 /**
  * Gets the IDs of all the roadmaps available on the website
  * 
@@ -40,11 +47,7 @@ export async function getRoadmapIds() {
     eager: true,
   });
 
-  return Object.keys(roadmapFiles).map((filePath) => {
-    const fileName = filePath.split("/").pop() || "";
-
-    return fileName.replace(".md", "");
-  });
+  return Object.keys(roadmapFiles).map(roadmapPathToId);
 }
 
 /**
@@ -61,8 +64,13 @@ export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> 
     }
   );
   
-  const roadmapFiles: MarkdownFileType<RoadmapFrontmatter>[] = Object.values(roadmapFilesMap);
-  const filteredRoadmaps = roadmapFiles.filter(roadmapFile => roadmapFile.frontmatter.tags.includes(tag));
+  const roadmapFiles = Object.values(roadmapFilesMap);
+  const filteredRoadmaps = roadmapFiles
+    .filter((roadmapFile) => roadmapFile.frontmatter.tags.includes(tag))
+    .map((roadmapFile) => ({
+      ...roadmapFile,
+      id: roadmapPathToId(roadmapFile.file),
+    }));
 
   return filteredRoadmaps.sort(
     (a, b) => a.frontmatter.order - b.frontmatter.order

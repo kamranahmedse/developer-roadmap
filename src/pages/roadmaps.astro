@@ -20,13 +20,13 @@ const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-3">
         {
           roleRoadmaps.map((roleRoadmap) => (
-            <GridRoadmapItem roadmap={roleRoadmap.frontmatter} />
+            <GridRoadmapItem roadmap={roleRoadmap} />
           ))
         }
 
         {
           skillRoadmaps.map((skillRoadmap) => (
-            <GridRoadmapItem roadmap={skillRoadmap.frontmatter} />
+            <GridRoadmapItem roadmap={skillRoadmap} />
           ))
         }
       </div>

@@ -1,11 +1,12 @@
 ---
-import type { RoadmapFrontmatter } from '../lib/roadmap';
+import type { RoadmapFileType } from '../lib/roadmap';
 
 export interface Props {
-  roadmap: RoadmapFrontmatter;
+  roadmap: RoadmapFileType;
 }
 
 const { roadmap } = Astro.props;
+const frontmatter = roadmap.frontmatter;
 ---
 
 <a
@@ -14,14 +15,14 @@ const { roadmap } = Astro.props;
 >
   <span
     class="font-regular sm:font-medium text-md sm:text-xl hover:text-gray-50 text-gray-200 sm:text-gray-100 mb-0 sm:mb-1.5"
-    >{roadmap.title}</span
+    >{frontmatter.title}</span
   >
   <span class="text-sm leading-normal text-gray-400 hidden sm:block"
-    >{roadmap.description}</span
+    >{frontmatter.description}</span
   >
 
   {
-    roadmap.isNew && (
+    frontmatter.isNew && (
       <span class="absolute bottom-1 right-1 bg-yellow-300 text-yellow-900 text-xs font-medium px-1 sm:px-1.5 py-0.5 rounded-sm uppercase">
         New
       </span>
