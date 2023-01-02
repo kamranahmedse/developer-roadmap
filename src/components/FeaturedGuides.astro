@@ -1,0 +1,33 @@
+---
+import type { GuideFileType } from '../lib/guide';
+import GuideListItem from './GuideListItem.astro';
+
+export interface Props {
+  heading: string;
+  guides: GuideFileType[];
+}
+
+const { heading, guides } = Astro.props;
+---
+
+<h1 class='text-2xl sm:text-3xl font-bold block'>{heading}</h1>
+
+<div class='mt-3 sm:my-5'>
+  {guides.map((guide) => <GuideListItem guide={guide} />)}
+</div>
+
+<a
+  href='/guides'
+  class='hidden sm:inline transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'
+>
+  View All Guides &rarr;
+</a>
+
+<div class='block sm:hidden mt-3'>
+  <a
+    href='/guides'
+    class='text-sm font-regular block p-2 border border-black text-black rounded-md text-center hover:bg-black hover:text-gray-50'
+  >
+    View All Guides &nbsp;&rarr;
+  </a>
+</div>
