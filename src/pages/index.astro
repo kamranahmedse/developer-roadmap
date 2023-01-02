@@ -1,13 +1,16 @@
 ---
 import FeaturedGuides from '../components/FeaturedGuides.astro';
 import FeaturedRoadmaps from '../components/FeaturedRoadmaps/FeaturedRoadmaps.astro';
+import FeaturedVideos from '../components/FeaturedVideos.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
+import { getAllVideos } from '../lib/video';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
 const guides = await getAllGuides();
+const videos = await getAllVideos();
 ---
 
 <BaseLayout title='Developer Roadmaps'>
@@ -39,9 +42,8 @@ const guides = await getAllGuides();
     <FeaturedRoadmaps heading='Skill based Roadmaps' roadmaps={skillRoadmaps} />
 
     <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
-      <div class='container'>
-        <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
-      </div>
+      <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
+      <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
     </div>
   </div>
 </BaseLayout>
