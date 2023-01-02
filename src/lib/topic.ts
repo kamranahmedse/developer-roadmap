@@ -80,6 +80,7 @@ export interface TopicFileContentType {
 
 export interface TopicFileType {
   url: string;
+  text: string;
   file: TopicFileContentType;
   roadmap: RoadmapFrontmatter;
   roadmapId: string;
@@ -101,9 +102,8 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 
-    const [, roadmapId, pathInsideContent] =
+    const [, roadmapId] =
       filePath.match(/^\/src\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
-
     const topicUrl = generateTopicUrl(filePath);
 
     const currentRoadmap = await import(
@@ -112,6 +112,7 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
 
     mapping[topicUrl] = {
       url: topicUrl,
+      text: firstHeading?.text,
       file: fileContent,
       roadmap: currentRoadmap.frontmatter,
       roadmapId: roadmapId,
@@ -131,6 +132,10 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
     // Breadcrumbs for the file
     const breadcrumbs: BreadcrumbItem[] = [
       {
+        title: 'Roadmaps',
+        url: '/roadmaps',
+      },
+      {
         title: currentRoadmap.featuredTitle,
         url: `${roadmapUrl}`,
       },
@@ -145,4 +150,18 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
   });
 
   return mapping;
+}
+
+/**
+ * Gets the the topics for a given roadmap
+ * @param roadmapId Roadmap id for which you want the topics
+ * @returns Promise<TopicFileType[]>
+ */
+export async function getTopicsByRoadmapId(roadmapId: string): Promise<TopicFileType[]> {
+  const topicFileMapping = await getTopicFiles();
+  const allTopics = Object.values(topicFileMapping);
+
+  return Object.values(allTopics).filter(
+    (topic) => topic.roadmapId === roadmapId
+  );
 }

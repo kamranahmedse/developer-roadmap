@@ -12,8 +12,6 @@ const { breadcrumbs, roadmapId } = Astro.props;
 <div class='py-7 pb-6'>
     <!-- Desktop breadcrums -->
     <p class='text-gray-500 container hidden sm:block'>
-      <a href='/roadmaps' class='hover:text-gray-800'>Roadmaps</a>
-      <span>&middot;</span>
       { breadcrumbs.map((breadcrumb, counter) => {
         const isLast = counter === breadcrumbs.length - 1;
         
