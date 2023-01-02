@@ -1,29 +1,31 @@
 ---
-import "../styles/global.css";
+import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
+import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 
 export interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width' />
+    <link rel='icon' type='image/svg+xml' href='/favicon.svg' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
 
-		<slot name="after-header" />
-	</head>
-	<body>
-		<Navigation />
-		<slot />
+    <slot name='after-header' />
+  </head>
+  <body>
+    <Navigation />
+    <slot />
 
-		<slot name="after-footer"/>
-	</body>
+    <OpenSourceBanner />
+    <slot name='after-footer' />
+  </body>
 </html>
