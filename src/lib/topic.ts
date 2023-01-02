@@ -87,6 +87,10 @@ export interface TopicFileType {
   breadcrumbs: BreadcrumbItem[];
 }
 
+/**
+ * Gets all the topic files available for all the roadmaps
+ * @returns Hashmap containing the topic slug and the topic file content
+ */
 export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
   const contentFiles = await import.meta.glob<string>(
     '/src/roadmaps/*/content/**/*.md',
@@ -152,6 +156,64 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
   return mapping;
 }
 
+// [
+//   '/frontend/internet/how-does-the-internet-work',
+//   '/frontend/internet/what-is-http',
+//   '/frontend/internet/browsers-and-how-they-work',
+//   '/frontend/internet/dns-and-how-it-works',
+//   '/frontend/internet/what-is-domain-name',
+//   '/frontend/internet/what-is-hosting',
+//   '/frontend/internet',
+//   '/frontend/html/learn-the-basics',
+//   '/frontend/html/writing-semantic-html',
+//   '/frontend/html/forms-and-validations',
+//   '/frontend/html/conventions-and-best-practices',
+//   '/frontend/html/accessibility',
+//   '/frontend/html/seo-basics',
+//   '/frontend/html',
+//   '/frontend/css/learn-the-basics',
+//   '/frontend/css/making-layouts',
+//   '/frontend/css/responsive-design-and-media-queries',
+//   '/frontend/css',
+//   '/frontend/javascript/syntax-and-basic-constructs',
+//   '/frontend/javascript/learn-dom-manipulation',
+//   '/frontend/javascript/learn-fetch-api-ajax-xhr',
+//   '/frontend/javascript/es6-and-modular-javascript',
+//   '/frontend/javascript/concepts',
+//   '/frontend/javascript',
+//   '/frontend/version-control-systems/basic-usage-of-git',
+//   '/frontend/version-control-systems'
+// ]
+export async function sortTopics(topics: TopicFileType[]): Promise<TopicFileType[]> {
+  let sortedTopics: TopicFileType[] = [];
+
+  // For each of the topic, find its place in the sorted topics
+  for (let i = 0; i < topics.length; i++) {
+    const currTopic = topics[i];
+    const currUrl = currTopic.url;
+    let isPlaced = false;
+    
+    // Find the first sorted topic which starts with the current topic
+    for (let j = 0; j < sortedTopics.length; j++) {
+      const sortedTopic = sortedTopics[j];
+      const sortedUrl = sortedTopic.url;
+
+      // Insert before the current URL and break
+      if (sortedUrl.startsWith(`${currUrl}/`)) {
+        sortedTopics.splice(j, 0, currTopic);
+        isPlaced = true;
+        break;
+      }
+    }
+
+    if (!isPlaced) {
+      sortedTopics.push(currTopic);
+    }
+  }
+
+  return sortedTopics;
+}
+
 /**
  * Gets the the topics for a given roadmap
  * @param roadmapId Roadmap id for which you want the topics
@@ -160,8 +222,9 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
 export async function getTopicsByRoadmapId(roadmapId: string): Promise<TopicFileType[]> {
   const topicFileMapping = await getTopicFiles();
   const allTopics = Object.values(topicFileMapping);
-
-  return Object.values(allTopics).filter(
+  const roadmapTopics = allTopics.filter(
     (topic) => topic.roadmapId === roadmapId
   );
+
+  return sortTopics(roadmapTopics);
 }
