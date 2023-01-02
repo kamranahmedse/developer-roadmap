@@ -1,0 +1,60 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='Signup'>
+  <div class='container'>
+    <div
+      class='py-12 sm:py-0 sm:min-h-[550px] sm:max-w-[400px] mx-auto flex items-start sm:items-center flex-col justify-start sm:justify-center'
+    >
+      <div class='mb-2 sm:mb-5 text-left sm:text-center'>
+        <h1 class='text-3xl sm:text-5xl font-semibold mb-2 sm:mb-4'>Signup</h1>
+        <p class='hidden sm:block text-md text-gray-600'>
+          Register yourself to receive occasional emails about new roadmaps,
+          updates, guides and videos
+        </p>
+        <p class='text-sm block sm:hidden text-gray-600'>
+          Register yourself for occasional updates about roadmaps, guides and
+          videos.
+        </p>
+      </div>
+
+      <form
+        action='https://newsletter.roadmap.sh/subscribe'
+        method='POST'
+        accept-charset='utf-8'
+        class='w-full validate-captcha-form'
+      >
+        <input
+          type='email'
+          required
+          name='email'
+          id='email'
+          autofocus
+          class='mt-1 block w-full mb-2 border-2 rounded-md py-2 sm:py-3 px-3 sm:px-3.5 text-md'
+          placeholder='Enter your email'
+        />
+
+        <!-- Captcha form start -->
+        <div class='recaptcha-field mb-2'></div>
+        <input
+          type='hidden'
+          name='g-recaptcha-response'
+          class='recaptcha-response'
+        />
+        <!-- Catpcha form end -->
+
+        <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
+        <input type='hidden' name='subform' value='yes' />
+
+        <button
+          type='submit'
+          name='submit'
+          class='bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-2 sm:py-2.5 sm:px-5 rounded-md w-full text-md'
+        >
+          Subscribe
+        </button>
+      </form>
+    </div>
+  </div>
+</BaseLayout>
