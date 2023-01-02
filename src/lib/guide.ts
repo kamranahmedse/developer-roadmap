@@ -1,4 +1,4 @@
-import type { MarkdownFileType } from "./file";
+import type { MarkdownFileType } from './file';
 
 export interface GuideFrontmatter {
   title: string;
@@ -13,11 +13,11 @@ export interface GuideFrontmatter {
     description: string;
   };
   isNew: boolean;
-  type: "visual" | "textual";
+  type: 'visual' | 'textual';
   date: string;
   sitemap: {
     priority: number;
-    changefreq: "daily" | "weekly" | "monthly" | "yealry";
+    changefreq: 'daily' | 'weekly' | 'monthly' | 'yealry';
   };
   tags: string[];
 }
@@ -33,7 +33,9 @@ export type GuideFileType = MarkdownFileType<GuideFrontmatter> & {
  * @returns unique guide identifier
  */
 function guidePathToId(filePath: string): string {
-  return filePath.replace("/src/guides/", "").replace(".md", "");
+  const fileName = filePath.split('/').pop() || '';
+
+  return fileName.replace('.md', '');
 }
 
 /**
@@ -41,7 +43,7 @@ function guidePathToId(filePath: string): string {
  * @returns Promisifed guide files
  */
 export async function getAllGuides(): Promise<GuideFileType[]> {
-  const guides = await import.meta.glob<GuideFileType>("/src/guides/*.md", {
+  const guides = await import.meta.glob<GuideFileType>('/src/guides/*.md', {
     eager: true,
   });
 

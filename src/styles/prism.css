@@ -44,8 +44,8 @@ code:not([class]) {
   padding: 2px 4px;
   font-family: 'Operator Mono', 'Fira Code', Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
   font-size: .875rem;
-  background-color: #FAFAFA;
-  border: 1px solid #EAEAEA;
+  /* background-color: #FAFAFA;
+  border: 1px solid #EAEAEA; */
   border-radius: 4px;
 }
 
