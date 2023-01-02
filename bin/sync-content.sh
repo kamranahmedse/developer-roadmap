@@ -27,4 +27,4 @@ echo "=== Migrating Guides ==="
 node guide-migrator.cjs
 
 echo "=== Migrating Videos ==="
-# node video-migrator.cjs
+node video-migrator.cjs
