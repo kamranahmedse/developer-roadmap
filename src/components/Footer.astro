@@ -1,0 +1,108 @@
+---
+import Icon from './Icon.astro';
+---
+
+<div class='py-6 sm:py-16 pb-10 bg-slate-900 text-white'>
+  <div class='container'>
+    <p
+      class='text-gray-400 font-medium flex flex-col sm:flex-row gap-0 sm:gap-4 mb-8 sm:mb-16 justify-center'
+    >
+      <a
+        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        href='/roadmaps'>Roadmaps</a
+      >
+      <a
+        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        href='/guides'>Guides</a
+      >
+      <a
+        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        href='/videos'>Videos</a
+      >
+      <a
+        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        href='/about'>About</a
+      >
+      <a
+        class='transition-colors px-2 py-1.5 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        href='https://youtube.com/theroadmap?sub_confirmation=1'
+        target='_blank'>YouTube</a
+      >
+    </p>
+
+    <div class='flex flex-col sm:flex-row justify-between gap-12'>
+      <div class='max-w-[365px]'>
+        <p class='flex items-center text-md'>
+          <a
+            class='font-medium text-lg inline-flex items-center hover:text-gray-100 text-white transition-colors hover:text-gray-400'
+            href='/'
+          >
+            <Icon icon='logo' />
+            <span class='ml-2'>roadmap.sh</span>
+          </a>
+          <span class='text-gray-400 mx-2'>by</span>
+          <a
+            class='bg-blue-600 text-sm py-1 px-1.5 font-regular hover:bg-blue-700 rounded-md'
+            href='https://twitter.com/kamranahmedse'
+            target='_blank'
+          >
+            <span class='hidden sm:inline'>@kamranahmedse</span>
+            <span class='inline sm:hidden'>Kamran Ahmed</span>
+          </a>
+        </p>
+        <p class='text-slate-300/60 my-4'>
+          Community created roadmaps, articles, resources and journeys to help
+          you choose your path and grow in your career.
+        </p>
+        <div class='text-gray-400 text-sm'>
+          <p>
+            &copy; roadmap.sh
+            <span class='mx-1.5'>&middot;</span>
+            <a href='/about' class='hover:text-white'>FAQs</a>
+            <span class='mx-1.5'>&middot;</span>
+            <a href='/terms' class='hover:text-white'>Terms</a>
+            <span class='mx-1.5'>&middot;</span>
+            <a href='/privacy' class='hover:text-white'>Privacy</a>
+          </p>
+        </div>
+      </div>
+
+      <div class='text-left sm:text-right max-w-[365px]'>
+        <a href='https://thenewstack.io' target='_blank'>
+          <img
+            src='/images/tns.png'
+            alt='ThewNewStack'
+            class='my-1.5 mr-auto sm:mr-0 sm:ml-auto'
+            width='200'
+            height='24.8'
+          />
+        </a>
+        <p class='text-slate-300/60 my-4'>
+          The leading DevOps resource for Kubernetes, cloud-native computing,
+          and the latest in at-scale development, deployment, and management.
+        </p>
+        <div class='text-gray-400 text-sm'>
+          <p>
+            <a
+              href='https://thenewstack.io/category/devops/'
+              target='_blank'
+              class='text-gray-400 hover:text-white'>DevOps</a
+            >
+            <span class='mx-1.5'>&middot;</span>
+            <a
+              href='https://thenewstack.io/category/kubernetes/'
+              target='_blank'
+              class='text-gray-400 hover:text-white'>Kubernetes</a
+            >
+            <span class='mx-1.5'>&middot;</span>
+            <a
+              href='https://thenewstack.io/category/cloud-native/'
+              target='_blank'
+              class='text-gray-400 hover:text-white'>Cloud-Native</a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
