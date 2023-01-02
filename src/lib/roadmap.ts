@@ -14,6 +14,7 @@ export interface RoadmapFrontmatter {
   description: string;
   hasTopics: boolean;
   isNew: boolean;
+  isUpcoming: boolean;
   dimensions: {
     width: number;
     height: number;
