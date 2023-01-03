@@ -22,7 +22,12 @@ const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
-<BaseLayout title='' sponsor={roadmapData.sponsor}>
+<BaseLayout
+  title={roadmapData?.seo?.title}
+  description={roadmapData.seo.description}
+  keywords={roadmapData.seo.keywords}
+  sponsor={roadmapData.sponsor}
+>
   <RoadmapHeader
     description={roadmapData.description}
     title={roadmapData.title}

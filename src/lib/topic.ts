@@ -66,7 +66,7 @@ export type BreadcrumbItem = {
 
 export interface TopicFileType {
   url: string;
-  text: string;
+  heading: string;
   file: MarkdownFileType;
   roadmap: RoadmapFrontmatter;
   roadmapId: string;
@@ -102,7 +102,7 @@ export async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
 
     mapping[topicUrl] = {
       url: topicUrl,
-      text: firstHeading?.text,
+      heading: firstHeading?.text,
       file: fileContent,
       roadmap: currentRoadmap.frontmatter,
       roadmapId: roadmapId,

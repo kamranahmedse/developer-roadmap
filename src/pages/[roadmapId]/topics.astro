@@ -22,10 +22,10 @@ const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
-<BaseLayout title="Topics">
+<BaseLayout title={`${roadmapData.title} Topics`} description={roadmapData.seo.description} keywords={roadmapData.seo.keywords}>
   <RoadmapHeader
     description={roadmapData.description}
-    title={roadmapData.title}
+    title={`${roadmapData.featuredTitle} Topics`}
     roadmapPermalink={`/${roadmapId}`}
     hasSearch={true}
     hasTopics={false}
@@ -45,7 +45,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
           return (
             <a
-              data-topic={topic.text.toLowerCase()}
+              data-topic={topic.heading.toLowerCase()}
               class:list={[
                 'cursor-pointer text-sm sm:text-md border-gray-200 border py-1.5 px-2 sm:py-2 sm:px-2.5 rounded-md block mb-0.5 sm:mb-1',
                 {
@@ -56,7 +56,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
               ]}
               href={topic.url}
             >
-              {topic.text}
+              {topic.heading}
             </a>
           );
         })
