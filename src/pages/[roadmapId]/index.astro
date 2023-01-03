@@ -42,7 +42,11 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
     )
   }
 
-  <MarkdownRoadmap>
-    <roadmapFile.Content />
-  </MarkdownRoadmap>
+  {
+    !roadmapData.jsonUrl && (
+      <MarkdownRoadmap>
+        <roadmapFile.Content />
+      </MarkdownRoadmap>
+    )
+  }
 </BaseLayout>
