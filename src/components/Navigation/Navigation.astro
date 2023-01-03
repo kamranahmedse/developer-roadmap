@@ -1,11 +1,8 @@
 ---
-import YouTubeBanner from '../YouTubeBanner.astro';
 import Icon from '../Icon.astro';
 ---
 
 <script src='./navigation.js'></script>
-
-<YouTubeBanner />
 
 <div class='bg-slate-900 text-white py-5 sm:py-8'>
   <nav class='container flex items-center justify-between'>
@@ -47,11 +44,11 @@ import Icon from '../Icon.astro';
     <!-- Mobile Navigation Items -->
     <div
       id='mobile-navigation'
-      class='fixed top-0 bottom-0 left-0 right-0 z-40 bg-slate-900 flex items-center hidden'
+      class='fixed top-0 bottom-0 left-0 right-0 z-40 bg-slate-900 items-center hidden'
     >
       <button
         id='close-mobile-navigation'
-        class='text-gray-400 hover:text-gray-50 block cursor-pointer absolute top-6 right-6 cursor-pointer'
+        class='text-gray-400 hover:text-gray-50 block cursor-pointer absolute top-6 right-6'
       >
         <Icon icon='close' />
       </button>

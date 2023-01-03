@@ -23,11 +23,13 @@ class Navigation {
   }
 
   showNavigation() {
-    this.navigationEl.classList.toggle('hidden');
+    this.navigationEl.classList.remove('hidden');
+    this.navigationEl.classList.add('flex');
   }
 
   closeNavigation() {
     this.navigationEl.classList.add('hidden');
+    this.navigationEl.classList.remove('flex');
   }
 
   onDOMLoaded() {

@@ -5,6 +5,7 @@ import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import Footer from '../components/Footer.astro';
 import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 import Sponsor from '../components/Sponsor/Sponsor.astro';
+import YouTubeBanner from '../components/YouTubeBanner.astro';
 
 export interface Props {
   title: string;
@@ -26,6 +27,7 @@ const { title, sponsor } = Astro.props;
     <slot name='after-header' />
   </head>
   <body>
+    <YouTubeBanner />
     <Navigation />
     <slot />
 
