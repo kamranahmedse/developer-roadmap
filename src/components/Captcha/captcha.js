@@ -25,7 +25,7 @@ class Captcha {
       target.querySelector('.recaptcha-response').value = captchaResponse;
     }
 
-    target.closest('.modal').classList.add('hidden');
+    target.closest('.popup').classList.add('hidden');
     return true;
   }
 
