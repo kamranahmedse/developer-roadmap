@@ -74,7 +74,7 @@ const Helmet = (props: HelmetProps) => {
       />
       <meta
         property="og:image"
-        content={`https://roadmap.sh/twitter-img.png`}
+        content={`${siteConfig.url.web}${siteConfig.logoSquare}`}
       />
       <meta property="og:url" content={siteConfig.url.web} />
       <meta property="og:type" content="website" />
