@@ -7,6 +7,7 @@ import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 import Sponsor from '../components/Sponsor/Sponsor.astro';
 import YouTubeBanner from '../components/YouTubeBanner.astro';
 import { siteConfig } from '../lib/config';
+import Analytics from '../components/Analytics/Analytics.astro';
 
 export interface Props {
   title: string;
@@ -34,7 +35,10 @@ const {
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
-    {noIndex && <meta name='robots' content='noindex' />}
+    <!-- TODO: Add when launching -->
+    <!-- {noIndex && <meta name='robots' content='noindex' />} -->
+    <!-- TODO: Remove when launching -->
+    <meta name='robots' content='noindex' />
     <meta
       name='viewport'
       content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
@@ -93,6 +97,8 @@ const {
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <slot name='after-header' />
+
+    <Analytics />
   </head>
   <body>
     <YouTubeBanner />
