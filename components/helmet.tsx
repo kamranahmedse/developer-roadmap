@@ -94,7 +94,7 @@ const Helmet = (props: HelmetProps) => {
       />
       <meta
         name="twitter:image"
-        content={`${siteConfig.url.web}${siteConfig.logoSquare}`}
+        content="https://roadmap.sh/twitter-img.png"
       />
       <meta name="twitter:image:alt" content="roadmap.sh" />
 
