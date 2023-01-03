@@ -3,29 +3,11 @@ export {};
 declare global {
   interface Window {
     gtag: any;
-    fireEvent: (props: EventType) => void;
-    firePageView: (url: string) => void;
+    fireEvent: (props: GAEventType) => void;
   }
 }
 
-/**
- * Tracks the page view on google analytics
- * @see https://developers.google.com/analytics/devguides/collection/gtagjs/pages
- * @param url URL to track
- * @returns void
- */
-window.firePageView = (url: string) => {
-  if (!window.gtag) {
-    console.warn('Missing GTAG - Analytics disabled');
-    return;
-  }
-
-  window.gtag('config', 'UA-139582634-1', {
-    page_path: url,
-  });
-};
-
-type EventType = {
+export type GAEventType = {
   action: string;
   category: string;
   label?: string;
@@ -38,7 +20,7 @@ type EventType = {
  * @param props Event properties
  * @returns void
  */
-window.fireEvent = (props: EventType) => {
+window.fireEvent = (props: GAEventType) => {
   const { action, category, label, value } = props;
   if (!window.gtag) {
     console.warn('Missing GTAG - Analytics disabled');

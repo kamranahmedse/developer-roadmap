@@ -1,5 +1,5 @@
 import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor.astro';
+import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;

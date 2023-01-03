@@ -12,6 +12,10 @@ sponsor:
   imageUrl: "https://i.imgur.com/uNJWl4L.png"
   title: "Free Kubernetes eBook"
   description: "Learn how to manage and optimize Kubernetes resources with this free eBook."
+  event:
+    category: "SponsorClick"
+    action: "Ambassador EBook Redirect"
+    label: "Clicked Ambassador EBook Link"
 dimensions:
   width: 968
   height: 2527.46
