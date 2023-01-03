@@ -18,7 +18,7 @@ Now that we know what basic authentication is, the question is, how does it work
 ### Step 1
 When the browser first requests the server, the server tries to check the availability of the `Authorization` header in the request. Because it is the first request, no `Authorization` header is found in the request. So the server responds with the `401 Unauthorized` response code and also sends the `WWW-Authenticate` header with the value set to `Basic`, which tells the browser that it needs to trigger the basic authentication flow.
 
-```text
+```plaintext
 401 Unauthorized
 WWW-Authenticate: Basic realm='user_pages'
 ```
