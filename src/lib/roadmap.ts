@@ -1,5 +1,5 @@
-import type { MarkdownFileType } from "./file";
-
+import type { MarkdownFileType } from './file';
+import type { SponsorType } from '../components/Sponsor.astro';
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;
@@ -12,10 +12,11 @@ export interface RoadmapFrontmatter {
   hasTopics: boolean;
   isNew: boolean;
   isUpcoming: boolean;
-  dimensions: {
+  dimensions?: {
     width: number;
     height: number;
   };
+  sponsor?: SponsorType;
   seo: {
     title: string;
     description: string;
@@ -33,39 +34,44 @@ export type RoadmapFileType = MarkdownFileType<RoadmapFrontmatter> & {
   id: string;
 };
 
-function roadmapPathToId(filePath: string):string {
-  const fileName = filePath.split("/").pop() || "";
+function roadmapPathToId(filePath: string): string {
+  const fileName = filePath.split('/').pop() || '';
 
-  return fileName.replace(".md", "");
+  return fileName.replace('.md', '');
 }
 
 /**
  * Gets the IDs of all the roadmaps available on the website
- * 
+ *
  * @returns string[] Array of roadmap IDs
  */
 export async function getRoadmapIds() {
-  const roadmapFiles = await import.meta.glob<RoadmapFileType>("/src/roadmaps/*/*.md", {
-    eager: true,
-  });
+  const roadmapFiles = await import.meta.glob<RoadmapFileType>(
+    '/src/roadmaps/*/*.md',
+    {
+      eager: true,
+    }
+  );
 
   return Object.keys(roadmapFiles).map(roadmapPathToId);
 }
 
 /**
  * Gets the roadmap files which have the given tag assigned
- * 
+ *
  * @param tag Tag assigned to roadmap
  * @returns Promisified RoadmapFileType[]
  */
-export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> {
+export async function getRoadmapsByTag(
+  tag: string
+): Promise<RoadmapFileType[]> {
   const roadmapFilesMap = await import.meta.glob<RoadmapFileType>(
     '/src/roadmaps/*/*.md',
     {
       eager: true,
     }
   );
-  
+
   const roadmapFiles = Object.values(roadmapFilesMap);
   const filteredRoadmaps = roadmapFiles
     .filter((roadmapFile) => roadmapFile.frontmatter.tags.includes(tag))

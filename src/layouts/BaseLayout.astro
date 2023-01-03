@@ -3,12 +3,15 @@ import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import Footer from '../components/Footer.astro';
+import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
+import Sponsor from '../components/Sponsor/Sponsor.astro';
 
 export interface Props {
   title: string;
+  sponsor?: SponsorType;
 }
 
-const { title } = Astro.props;
+const { title, sponsor } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -27,7 +30,8 @@ const { title } = Astro.props;
     <slot />
 
     <OpenSourceBanner />
-	  <Footer />
+    <Footer />
+    {sponsor && <Sponsor sponsor={sponsor} />}
     <slot name='after-footer' />
   </body>
 </html>

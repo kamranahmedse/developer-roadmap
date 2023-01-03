@@ -1,0 +1,39 @@
+---
+export type SponsorType = {
+  url: string;
+  title: string;
+  imageUrl: string;
+  description: string;
+};
+
+export interface Props {
+  sponsor: SponsorType;
+}
+
+const {
+  sponsor: { title, url, description, imageUrl },
+} = Astro.props;
+---
+
+<script src="./sponsor.js" />
+
+<a
+  href={url}
+  id='sponsor-ad'
+  target='_blank'
+  rel='noopener sponsored'
+  class='fixed bottom-[15px] right-[20px] outline-[2px] outline-transparent z-50 bg-white max-w-[330px] shadow-lg hidden'
+>
+  <img
+    src={ imageUrl }
+    class='w-[100px] lg:w-[130px]'
+    alt='Sponsor Banner'
+  />
+  <span class='text-sm flex flex-col justify-between'>
+    <span class='p-[10px]'>
+      <span class='font-semibold mb-0.5 block'>{title}</span>
+      <span class='text-gray-500 block'>{description}</span>
+    </span>
+    <span class='sponsor-footer'>Partner Content</span>
+  </span>
+</a>
