@@ -1,45 +1,39 @@
 ---
-import Popup from "./Popup/Popup.astro";
+import Popup from './Popup/Popup.astro';
+import Captcha from './Captcha/Captcha.astro';
 ---
 
 <Popup
-  id="download-popup"
-  title="Download Roadmap"
-  subtitle="Enter your email below to receive the download link."
+  id='download-popup'
+  title='Download Roadmap'
+  subtitle='Enter your email below to receive the download link.'
 >
   <form
-    action="https://newsletter.roadmap.sh/subscribe"
-    method="POST"
-    accept-charset="utf-8"
-    target="_blank"
-    class="validate-captcha-form"
+    action='https://newsletter.roadmap.sh/subscribe'
+    method='POST'
+    accept-charset='utf-8'
+    target='_blank'
+    class='validate-captcha-form'
   >
     <input
-      type="email"
-      name="email"
-      id="email"
+      type='email'
+      name='email'
+      id='email'
       required
       autofocus
-      class="w-full rounded-md border text-md py-2.5 px-3 mb-2"
-      placeholder="Enter your Email"
+      class='w-full rounded-md border text-md py-2.5 px-3 mb-2'
+      placeholder='Enter your Email'
     />
 
-    <!-- {# Captcha Form Start #} -->
-    <div class="recaptcha-field mb-2"></div>
-    <input
-      type="hidden"
-      name="g-recaptcha-response"
-      class="recaptcha-response"
-    />
-    <!-- {# Captcha Form End #} -->
+    <Captcha />
 
-    <input type="hidden" name="list" value="tTqz1w7nexY3cWDpLnI88Q" />
-    <input type="hidden" name="subform" value="yes" />
+    <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
+    <input type='hidden' name='subform' value='yes' />
 
     <button
-      type="submit"
-      name="submit"
-      class="text-white bg-gradient-to-r from-amber-700 to-blue-800 hover:from-amber-800 hover:to-blue-900 font-regular rounded-md text-md px-5 py-2.5 w-full text-center mr-2"
+      type='submit'
+      name='submit'
+      class='text-white bg-gradient-to-r from-amber-700 to-blue-800 hover:from-amber-800 hover:to-blue-900 font-regular rounded-md text-md px-5 py-2.5 w-full text-center mr-2'
     >
       Send Link
     </button>

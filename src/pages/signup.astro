@@ -1,4 +1,5 @@
 ---
+import Captcha from '../components/Captcha/Captcha.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -35,14 +36,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           placeholder='Enter your email'
         />
 
-        <!-- Captcha form start -->
-        <div class='recaptcha-field mb-2'></div>
-        <input
-          type='hidden'
-          name='g-recaptcha-response'
-          class='recaptcha-response'
-        />
-        <!-- Catpcha form end -->
+        <Captcha />
 
         <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
         <input type='hidden' name='subform' value='yes' />
