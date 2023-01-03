@@ -45,8 +45,6 @@ class Captcha {
 
     const recaptchaFields = document.querySelectorAll('.recaptcha-field');
 
-    console.log(recaptchaFields);
-
     // render recaptcha on fields
     recaptchaFields.forEach((field) => {
       // If captcha already rendered for this field
