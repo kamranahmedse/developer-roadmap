@@ -12,6 +12,7 @@ export interface Props {
   title: string;
   description?: string;
   keywords?: string[];
+  noIndex?: boolean;
   sponsor?: SponsorType;
 }
 
@@ -19,6 +20,7 @@ const {
   title = siteConfig.title,
   description = siteConfig.description,
   keywords = siteConfig.keywords,
+  noIndex = false,
   sponsor,
 } = Astro.props;
 ---
@@ -32,6 +34,7 @@ const {
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
+    {noIndex && <meta name='robots' content='noindex' />}
     <meta
       name='viewport'
       content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'

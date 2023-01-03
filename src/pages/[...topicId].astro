@@ -18,7 +18,7 @@ const { topicId } = Astro.params;
 const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as TopicFileType;
 ---
 
-<BaseLayout title={`${heading} - roadmap.sh`} description={`Free resources to learn ${heading} in ${roadmap.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.featuredTitle}.`}>
+<BaseLayout title={`${heading} - roadmap.sh`} description={`Free resources to learn ${heading} in ${roadmap.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.featuredTitle}.`} noIndex={true}>
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
   <div class="bg-gray-50">
     <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />

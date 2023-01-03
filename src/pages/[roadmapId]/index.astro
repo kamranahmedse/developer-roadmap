@@ -27,6 +27,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   sponsor={roadmapData.sponsor}
+  noIndex={roadmapData.isUpcoming}
 >
   <RoadmapHeader
     description={roadmapData.description}
