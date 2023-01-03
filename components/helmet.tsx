@@ -67,36 +67,19 @@ const Helmet = (props: HelmetProps) => {
       />
       {canonical && <link rel="canonical" href={canonical} />}
       <meta httpEquiv="Content-Language" content="en" />
-      <meta property="og:title" content={title || siteConfig.title} />
-      <meta
-        property="og:description"
-        content={description || siteConfig.description}
-      />
-      <meta
-        property="og:image"
-        content={`${siteConfig.url.web}${siteConfig.logoSquare}`}
-      />
-      <meta property="og:url" content={siteConfig.url.web} />
-      <meta property="og:type" content="website" />
-      <meta
-        property="article:publisher"
-        content={`https://facebook.com/${siteConfig.facebook}`}
-      />
-      <meta property="og:site_name" content={siteConfig.name} />
-      <meta property="article:author" content={siteConfig.author} />
 
-      <meta name="twitter:card" content="summary" />
-      <meta name="twitter:site" content={`@${siteConfig.twitter}`} />
-      <meta name="twitter:title" content={title || siteConfig.title} />
-      <meta
-        name="twitter:description"
-        content={description || siteConfig.description}
-      />
-      <meta
-        name="twitter:image"
-        content="https://roadmap.sh/twitter-img.png"
-      />
-      <meta name="twitter:image:alt" content="roadmap.sh" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content="@kamranahmedse" />
+
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta property="og:image" content="https://roadmap.sh/og-img.png" />
+      <meta property="og:image:alt" content="roadmap.sh" />
+      <meta property="og:site_name" content="roadmap.sh" />
+      <meta property="og:title" content={title || siteConfig.title} />
+      <meta property="og:description" content={description || siteConfig.description} />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://roadmap.sh" />
 
       <meta name="mobile-web-app-capable" content="yes" />
       <meta name="apple-mobile-web-app-capable" content="yes" />
