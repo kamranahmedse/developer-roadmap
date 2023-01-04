@@ -6,6 +6,5 @@ Python is a high-level, interpreted, general-purpose programming language. Its d
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.python.org/'>Official Website: Python</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.digitalocean.com/community/tutorials/how-to-write-your-first-python-3-program'>Tutorial Series: How to Code in Python</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://en.wikipedia.org/wiki/Python_(programming_language)'>Python Wikipedia</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://developers.google.com/edu/python'>Google's Python Class</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/python'>W3Schools - Python Tutorial</BadgeLink>
-
-
