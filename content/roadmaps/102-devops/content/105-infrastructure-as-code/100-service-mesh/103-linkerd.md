@@ -6,3 +6,5 @@ Linkerd is an open source service mesh designed to be deployed into a variety of
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://linkerd.io/'>Linkerd Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Documentation' href='https://linkerd.io/2.11/overview/'>Linkerd Documentation</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://www.techtarget.com/searchitoperations/definition/Linkerd'>What is Linkerd?</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://layer5.io/learn/learning-paths/mastering-service-meshes-for-developers/introduction-to-service-meshes'>Introduction to Service Meshes - Hands On</BadgeLink>
+<BadgeLink colorScheme='green' badgeText='Course' href='https://layer5.io/learn/learning-paths/mastering-service-meshes-for-developers/advance-concepts-of-service-mesh'>Advance Concepts of Service Meshes - Hands On</BadgeLink>

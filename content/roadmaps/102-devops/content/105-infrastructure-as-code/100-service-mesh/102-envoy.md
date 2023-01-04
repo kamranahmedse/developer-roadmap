@@ -6,3 +6,4 @@ Originally created at Lyft, Envoy is a high-performance data plane designed for 
 <BadgeLink colorScheme='blue' badgeText='Official Website' href='https://www.envoyproxy.io/'>Envoy Website</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://www.envoyproxy.io/docs/envoy/latest/start/start'>Envoy Documentation</BadgeLink>
 <BadgeLink colorScheme='blue' badgeText='Read' href='https://www.envoyproxy.io/docs/envoy/latest/intro/what_is_envoy'>What is Envoy?</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Read' href='https://academy.solo.io/get-started-with-envoy-proxy-with-fundamentals-for-envoy-certification'>What is Envoy?</BadgeLink>
