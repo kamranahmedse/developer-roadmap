@@ -13,6 +13,7 @@
     "sync-content": "sh ./bin/sync-content.sh"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.3",
     "astro": "^1.8.0",
     "node-html-parser": "^6.1.4",

@@ -1,0 +1,27 @@
+---
+import Icon from '../components/Icon.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title='Page not found'>
+  <div class='bg-gray-100'>
+    <div
+      class='py-10 md:py-32 container flex flex-col md:flex-row items-center justify-center gap-7 '
+    >
+      <Icon icon='construction' class='hidden md:block' />
+      <div class='text-left md:text-left'>
+        <h1
+          class='font-extrabold text-transparent leading-tight text-2xl md:text-5xl bg-clip-text bg-gradient-to-t from-black to-gray-600'
+        >
+          Page not found!
+        </h1>
+        <p class='text-md md:text-xl mt-1.5 mb-2'>
+          Sorry, we couldn't find the page you are looking for.
+        </p>
+        <p>
+          <a class="underline text-blue-700" href='/'>Homepage</a> &middot; <a href='/roadmaps' class="underline text-blue-700">Roadmaps</a> &middot; <a href='/videos' class="underline text-blue-700">Videos</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</BaseLayout>

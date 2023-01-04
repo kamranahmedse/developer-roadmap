@@ -1,8 +1,10 @@
 ---
 import { parse } from 'node-html-parser';
+import type { Attributes } from 'node-html-parser/dist/nodes/html';
 
 export interface Props {
   icon: string;
+  class?: string;
 }
 
 async function getSVG(name: string) {
