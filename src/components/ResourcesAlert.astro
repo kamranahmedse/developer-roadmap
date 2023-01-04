@@ -29,7 +29,12 @@ const roadmapTitle =
       <div class='px-2 py-1.5 border-b bg-gray-100 hidden sm:block'>
         <p class='text-sm'>
           Get the latest {roadmapTitle} news from our sister site{' '}
-          <a href='#' class='font-semibold underline'>
+          <a
+            href='https://thenewstack.io'
+            target='_blank'
+            class='font-semibold underline'
+            onclick="window.fireEvent({ category: 'PartnerClick', action: `TNS Referral`, label: `TNS Referral - Roadmap` })"
+          >
             TheNewStack.io
           </a>
         </p>
