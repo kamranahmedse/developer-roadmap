@@ -7,6 +7,6 @@ Google Cloud is Google's cloud computing service offering, providing over 150 pr
 <BadgeLink badgeText='Get Started Guide' colorScheme='blue' href='https://cloud.google.com/docs/get-started/'>Google Cloud Get Started Guide</BadgeLink>
 <BadgeLink badgeText='Watch' colorScheme='Red' href='https://www.coursera.org/professional-certificates/cloud-engineering-gcp#courses'>Coursera Complete Course for Google Cloud </BadgeLink>
 <BadgeLink badgeText='Watch' colorScheme='Red' href='https://www.youtube.com/watch?v=IUU6OR8yHCc'>Google Cloud by Edureka on You-Tube</BadgeLink>
-
+<BadgeLink badgeText='Official Learning' colorScheme='blue' href='https://www.cloudskillsboost.google/paths'>Google Cloud Skill Boost Paths</BadgeLink>
 
 <BadgeLink badgeText='Read' colorScheme="yellow" href='https://thenewstack.io/5-tips-to-become-a-google-cloud-certified-professional-architect/'>5 Tips to Become a Google Cloud Certified Professional Architect</BadgeLink>
