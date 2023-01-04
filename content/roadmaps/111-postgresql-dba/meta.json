@@ -24,10 +24,10 @@
     ]
   },
   "title": "PostgreSQL DBA",
-  "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2022",
+  "description": "Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023",
   "featuredTitle": "DBA",
   "type": "role",
-  "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2022",
+  "featuredDescription": "Step by step guide to become a PostgreSQL DBA in 2023",
   "landingPath": "./landscape.md",
   "resourcesPath": "./resources.md",
   "author": {
