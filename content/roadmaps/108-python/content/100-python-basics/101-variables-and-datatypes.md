@@ -14,9 +14,4 @@ Variables in Python can be of different data types. These data types can be text
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/python/python_datatypes.asp'>Python Data Types</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://realpython.com/python-data-types/'>Basic Data Types in Python</BadgeLink>
-
-
-
-
-
-
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://thenewstack.io/python-for-beginners-data-types/'>Python for Beginners: Data Types</BadgeLink>
