@@ -11,3 +11,4 @@ Ubuntu is a free and open-source Linux distribution based on Debian. Ubuntu is a
 <BadgeLink badgeText='Official Documentation' colorScheme='blue' href='https://help.ubuntu.com/'>Ubuntu Documentation</BadgeLink>
 <BadgeLink badgeText='Install Documentation' colorScheme='blue' href='https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview'>Install Ubuntu Desktop Documentation</BadgeLink>
 <BadgeLink badgeText='Tutorials' colorScheme='yellow' href='https://itsfoss.com/getting-started-with-ubuntu/'>Getting Started with Ubuntu Tutorials</BadgeLink>
+<BadgeLink badgeText='Tutorials' colorScheme='yellow' href='https://linuxcommand.org/tlcl.php'>The Linux Command Line by William Shotts</BadgeLink>
