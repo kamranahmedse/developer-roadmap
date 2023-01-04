@@ -12,6 +12,4 @@ JavaScript has six types of errors that may occur during the execution of the sc
 * URIError
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/javascript/javascript_error_handling.htm'>JavaScript - Errors </BadgeLink>
-<BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.tutorialspoint.com/what-are-the-different-types-of-errors-in-javascript'>Error Types in JavaScript</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://youtu.be/fRv2ng_srrM'>JavaScript Errors and Types</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://blog.bitsrc.io/types-of-native-errors-in-javascript-you-must-know-b8238d40e492'>Error Types in JavaScript</BadgeLink>
