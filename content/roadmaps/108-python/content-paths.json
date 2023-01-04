@@ -26,6 +26,9 @@
   "python-advanced-topics:modules": "/roadmaps/108-python/content/102-python-advanced-topics/105-modules/readme.md",
   "python-advanced-topics:modules:builtin-modules": "/roadmaps/108-python/content/102-python-advanced-topics/105-modules/100-builtin-modules.md",
   "python-advanced-topics:modules:custom-modules": "/roadmaps/108-python/content/102-python-advanced-topics/105-modules/101-custom-modules.md",
+  "python-advanced-topics:list-comprehensions": "/roadmaps/108-python/content/102-python-advanced-topics/106-list-comprehensions.md",
+  "python-advanced-topics:generator-expressions": "/roadmaps/108-python/content/102-python-advanced-topics/107-generator-expressions.md",
+  "python-advanced-topics:paradigms": "/roadmaps/108-python/content/102-python-advanced-topics/108-paradigms.md",
   "version-control-systems": "/roadmaps/108-python/content/103-version-control-systems/readme.md",
   "version-control-systems:basic-git-usage": "/roadmaps/108-python/content/103-version-control-systems/100-basic-git-usage.md",
   "repo-hosting-services": "/roadmaps/108-python/content/104-repo-hosting-services/readme.md",
@@ -35,6 +38,7 @@
   "python-package-managers": "/roadmaps/108-python/content/105-python-package-managers/readme.md",
   "python-package-managers:pypi": "/roadmaps/108-python/content/105-python-package-managers/100-pypi.md",
   "python-package-managers:pip": "/roadmaps/108-python/content/105-python-package-managers/101-pip.md",
+  "python-package-managers:conda": "/roadmaps/108-python/content/105-python-package-managers/102-conda.md",
   "python-frameworks": "/roadmaps/108-python/content/106-python-frameworks/readme.md",
   "python-frameworks:fastapi": "/roadmaps/108-python/content/106-python-frameworks/102-fastapi.md",
   "python-frameworks:synchronous": "/roadmaps/108-python/content/106-python-frameworks/100-synchronous/readme.md",
@@ -50,5 +54,6 @@
   "python-testing:unittest-pyunit": "/roadmaps/108-python/content/107-python-testing/100-unittest-pyunit.md",
   "python-testing:pytest": "/roadmaps/108-python/content/107-python-testing/101-pytest.md",
   "python-testing:doctest": "/roadmaps/108-python/content/107-python-testing/102-doctest.md",
-  "python-testing:nose": "/roadmaps/108-python/content/107-python-testing/102-nose.md"
+  "python-testing:nose": "/roadmaps/108-python/content/107-python-testing/102-nose.md",
+  "python-roadmap-note": "/roadmaps/108-python/content/100-roadmap-note.md"
 }

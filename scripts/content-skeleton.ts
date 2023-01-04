@@ -54,6 +54,7 @@ const roadmaps: Record<string, RoadmapType> = {
   'aspnet-core': require('../public/project/aspnet-core.json'),
   'flutter': require('../public/project/flutter.json'),
   'computer-science': require('../public/project/computer-science.json'),
+  'graphql': require('../public/project/graphql.json'),
 };
 
 if (!roadmapKey || !roadmaps[roadmapKey]) {

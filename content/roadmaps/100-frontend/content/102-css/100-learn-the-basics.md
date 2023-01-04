@@ -4,6 +4,7 @@ CSS or Cascading Style Sheets is the language used to style the frontend of any 
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.w3schools.com/css/'>W3Schools — Learn CSS</BadgeLink>
+<BadgeLink colorScheme='yellow' badgeText='Read' href='https://web.dev/learn/css/'>web.dev — Learn CSS</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://www.freecodecamp.org/learn/responsive-web-design/'>freeCodeCamp — Responsive Web Design</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://learn.shayhowe.com/html-css/building-your-first-web-page/'>Learn to Code HTML & CSS</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=yfoY53QXEnI'>CSS Crash Course For Absolute Beginners</BadgeLink>

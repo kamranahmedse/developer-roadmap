@@ -23,6 +23,7 @@ import { AtSignIcon, ChatIcon, DownloadIcon } from '@chakra-ui/icons';
 import React from 'react';
 import { SIGNUP_EMAIL_INPUT_NAME, SIGNUP_FORM_ACTION } from '../../pages/signup';
 import { event } from '../../lib/gtag';
+import { TNSAlert } from './tns-alert';
 
 type RoadmapPageHeaderType = {
   roadmap: RoadmapType;
@@ -139,12 +140,14 @@ function RoadmapSubscriber({ roadmapTitle }: { roadmapTitle: string }) {
 export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
   const { roadmap } = props;
 
+  const hasTNSAlert = ['frontend', 'backend', 'devops'].includes(roadmap.id);
+
   return (
     <Box
       pt={['25px', '20px', '45px']}
       pb={['20px', '15px', '30px']}
       borderBottomWidth={1}
-      mb='30px'
+      mb='50px'
     >
       <Container maxW='container.md' position='relative'>
         <NewAlertBanner />
@@ -161,7 +164,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
         <Flex justifyContent='space-between' alignItems={'center'} mt='20px'>
           <Stack isInline flex={1}>
             <Button
-              d={['flex', 'flex']}
+              display={['flex', 'flex']}
               as={Link}
               href={'/roadmaps'}
               size='xs'
@@ -172,7 +175,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
               _hover={{ textDecoration: 'none' }}
             >
               &larr;
-              <Text as='span' d={['none', 'inline']} ml='5px'>
+              <Text as='span' display={['none', 'inline']} ml='5px'>
                 All Roadmaps
               </Text>
             </Button>
@@ -180,7 +183,7 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
             <RoadmapDownloader roadmapTitle={roadmap.featuredTitle} />
             <RoadmapSubscriber roadmapTitle={roadmap.featuredTitle} />
 
-            <Box flex={1} justifyContent='flex-end' d='flex'>
+            <Box flex={1} justifyContent='flex-end' display='flex'>
               <Button
                 as={Link}
                 href={`${siteConfig.url.issue}?title=[Suggestion] ${roadmap.title}`}
@@ -198,21 +201,21 @@ export function RoadmapPageHeader(props: RoadmapPageHeaderType) {
           </Stack>
         </Flex>
         {isInteractiveRoadmap(roadmap.id) && (
-          <Text
-            mt='30px'
-            mb={['-37px', '-32px', '-47px']}
-            fontWeight={500}
-            fontSize='14px'
-            bg='white'
-            borderWidth={1}
-            p='5px 7px'
-            rounded='3px'
-          >
-            <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='yellow'>
-              New
-            </Badge>
-            Resources are here, try clicking any nodes.
-          </Text>
+          <Box mt='30px' mb={hasTNSAlert ? ['-53px', '-48px', '-63px'] : ['-37px', '-32px', '-47px']} borderWidth={1} rounded='3px'>
+            { hasTNSAlert && <TNSAlert roadmapName={roadmap.featuredTitle} />}
+            <Text
+              fontWeight={500}
+              fontSize='14px'
+              bg='white'
+              p='5px 7px'
+              rounded='3px'
+            >
+              <Badge pos='relative' top={'-1px'} mr='6px' colorScheme='yellow'>
+                New
+              </Badge>
+              Resources are here, try clicking any nodes.
+            </Text>
+          </Box>
         )}
       </Container>
     </Box>
