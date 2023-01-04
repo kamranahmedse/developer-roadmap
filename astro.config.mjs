@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config';
-import { shouldIndexPage } from './src/lib/sitemap';
+import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 
 // https://astro.build/config
 import tailwind from '@astrojs/tailwind';
@@ -29,6 +29,7 @@ export default defineConfig({
     }),
     sitemap({
       filter: shouldIndexPage,
+      serialize: serializeSitemap,
     }),
   ],
 });
