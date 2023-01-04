@@ -2,10 +2,10 @@
 import BaseLayout from './BaseLayout.astro';
 
 const { frontmatter = {} } = Astro.props;
-const { title, description } = frontmatter;
+const { title, description, noIndex = false } = frontmatter;
 ---
 
-<BaseLayout title={title} description={description}>
+<BaseLayout title={title} description={description} noIndex={noIndex}>
   <div class='container prose py-12'>
     <slot />
   </div>

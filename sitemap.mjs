@@ -10,6 +10,7 @@ export function shouldIndexPage(page) {
     'https://roadmap.sh/404/',
     'https://roadmap.sh/terms/',
     'https://roadmap.sh/privacy/',
+    'https://roadmap.sh/pdfs/',
   ].includes(page);
 }
 
