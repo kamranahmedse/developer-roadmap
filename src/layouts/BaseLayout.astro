@@ -97,8 +97,6 @@ const {
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <slot name='after-header' />
-
-    <Analytics />
   </head>
   <body>
     <YouTubeBanner />
@@ -109,5 +107,6 @@ const {
     <Footer />
     {sponsor && <Sponsor sponsor={sponsor} />}
     <slot name='after-footer' />
+    <Analytics />
   </body>
 </html>
