@@ -1,5 +1,6 @@
 ---
-import Captcha from '../components/Captcha/Captcha.astro';
+import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
+import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -27,7 +28,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         action='https://newsletter.roadmap.sh/subscribe'
         method='POST'
         accept-charset='utf-8'
-        class='w-full validate-captcha-form'
+        class='w-full'
+        captcha-form
       >
         <input
           type='email'
@@ -39,7 +41,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           placeholder='Enter your email'
         />
 
-        <Captcha />
+        <CaptchaFields />
 
         <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
         <input type='hidden' name='subform' value='yes' />
@@ -54,4 +56,6 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </form>
     </div>
   </div>
+
+  <CaptchaScripts slot='after-footer' />
 </BaseLayout>

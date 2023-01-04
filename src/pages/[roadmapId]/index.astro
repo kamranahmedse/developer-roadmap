@@ -1,4 +1,5 @@
 ---
+import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import InteractiveRoadamp from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
@@ -55,4 +56,6 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
       </MarkdownRoadmap>
     )
   }
+
+  <CaptchaScripts slot="after-footer" />
 </BaseLayout>

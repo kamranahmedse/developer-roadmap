@@ -1,6 +1,6 @@
 ---
 import Popup from './Popup/Popup.astro';
-import Captcha from './Captcha/Captcha.astro';
+import CaptchaFields from './Captcha/CaptchaFields.astro';
 ---
 
 <Popup
@@ -13,7 +13,7 @@ import Captcha from './Captcha/Captcha.astro';
     method='POST'
     accept-charset='utf-8'
     target='_blank'
-    class='validate-captcha-form'
+    captcha-form
   >
     <input
       type='email'
@@ -25,7 +25,7 @@ import Captcha from './Captcha/Captcha.astro';
       placeholder='Enter your Email'
     />
 
-    <Captcha />
+    <CaptchaFields />
 
     <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
     <input type='hidden' name='subform' value='yes' />

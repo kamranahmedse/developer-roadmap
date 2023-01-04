@@ -4,7 +4,6 @@ class Captcha {
     this.bindValidation = this.bindValidation.bind(this);
     this.validateCaptchaBeforeSubmit =
       this.validateCaptchaBeforeSubmit.bind(this);
-    this.onCaptchaLoad = this.onCaptchaLoad.bind(this);
   }
 
   validateCaptchaBeforeSubmit(e) {
@@ -30,33 +29,10 @@ class Captcha {
   }
 
   bindValidation() {
-    const forms = document.querySelectorAll('.validate-captcha-form');
+    const forms = document.querySelectorAll('[captcha-form]');
 
     forms.forEach((form) => {
       form.addEventListener('submit', this.validateCaptchaBeforeSubmit);
-    });
-  }
-
-  onCaptchaLoad() {
-    if (!window.grecaptcha) {
-      console.warn('window.grecaptcha is not defined');
-      return;
-    }
-
-    const recaptchaFields = document.querySelectorAll('.recaptcha-field');
-
-    // render recaptcha on fields
-    recaptchaFields.forEach((field) => {
-      // If captcha already rendered for this field
-      if (field.hasAttribute('data-recaptcha-id')) {
-        return;
-      }
-
-      const renderedId = window.grecaptcha.render(field, {
-        sitekey: '6Ldn2YsjAAAAABlUxNxukAuDAUIuZIhO0hRVxzJW',
-      });
-
-      field.setAttribute('data-recaptcha-id', renderedId);
     });
   }
 
@@ -71,5 +47,3 @@ class Captcha {
 
 const captcha = new Captcha();
 captcha.init();
-
-window.onCaptchaLoad = captcha.onCaptchaLoad;
