@@ -10,4 +10,4 @@ Visit the following resources to learn more:
 - [What is Infrastructure as Code? Difference of Infrastructure as Code Tools](https://www.youtube.com/watch?v=POPP2WTJ8es)
 - [Video introduction to infrastructure as code](https://www.youtube.com/watch?v=zWw2wuiKd5o)
 - [GUIs, CLI, APIs: Learn Basic Terms of Infrastructure-as-Code](https://thenewstack.io/guis-cli-apis-learn-basic-terms-of-infrastructure-as-code/)
-- [What is infrastructure as code]((https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)
+- [What is infrastructure as code](https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac)

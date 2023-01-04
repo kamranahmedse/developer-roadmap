@@ -3,9 +3,9 @@ jsonUrl: "/jsons/flutter.json"
 pdfUrl: "/pdfs/flutter.pdf"
 order: 10
 featuredTitle: "Flutter"
-featuredDescription: "Step by step guide to becoming a Flutter Developer in 2022"
+featuredDescription: "Step by step guide to becoming a Flutter Developer in 2023"
 title: "Flutter Developer"
-description: "Step by step guide to becoming a Flutter developer in 2022"
+description: "Step by step guide to becoming a Flutter developer in 2023"
 isNew: true
 hasTopics: true
 dimensions:

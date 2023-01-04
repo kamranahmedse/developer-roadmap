@@ -22,4 +22,4 @@ Below are the system errors commonly encountered when writing a Node.js program
 
 Visit the following resources to learn more:
 
-- [Node.js Errors - Official Docs](https://nodejs.org/api/errors.html#class-systemerror)
+- [Node.js Errors - Official Docs](https://nodejs.org/api/errors.html#errors_class_systemerror)

@@ -3,9 +3,9 @@ jsonUrl: "/jsons/blockchain.json"
 pdfUrl: "/pdfs/blockchain.pdf"
 order: 6
 featuredTitle: "Blockchain"
-featuredDescription: "Step by step guide to becoming a blockchain developer in 2022"
+featuredDescription: "Step by step guide to becoming a blockchain developer in 2023"
 title: "Blockchain Developer"
-description: "Step by step guide to becoming a blockchain developer in 2022."
+description: "Step by step guide to becoming a blockchain developer in 2023."
 isNew: true
 hasTopics: true
 dimensions:
@@ -15,11 +15,11 @@ seo:
   title: "Blockchain Developer Roadmap: Learn to become a blockchain developer"
   description: "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
   keywords:
-    - "blockchain roadmap 2022"
+    - "blockchain roadmap 2023"
     - "web3 developer roadmap"
-    - "web3 developer roadmap 2022"
+    - "web3 developer roadmap 2023"
     - "web3 roadmap"
-    - "blockchain developer roadmap 2022"
+    - "blockchain developer roadmap 2023"
     - "guide to becoming a blockchain developer"
     - "guide to becoming a blockchain developer"
     - "blockchain roadmap"

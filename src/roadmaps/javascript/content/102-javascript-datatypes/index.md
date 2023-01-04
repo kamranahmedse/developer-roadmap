@@ -1,6 +1,6 @@
 # Datatypes
 
-Data type refers to the type of data that a JavaScript variable can hold. There are eight basic data types in JavaScript.
+Data type refers to the type of data that a JavaScript variable can hold. There are seven primitive data types in JavaScript (Number, BigInt, String, Boolean, Null, Undefined and Symbol). Objects are non-primitives.
 
 Visit the following resources to learn more:
 

@@ -3,9 +3,9 @@ jsonUrl: "/jsons/nodejs.json"
 pdfUrl: "/pdfs/nodejs.pdf"
 order: 6
 featuredTitle: "Node.js"
-featuredDescription: "Step by step guide to becoming a Node.js developer in 2022"
+featuredDescription: "Step by step guide to becoming a Node.js developer in 2023"
 title: "Node.js Developer"
-description: "Step by step guide to becoming a modern Node.js developer in 2022"
+description: "Step by step guide to becoming a modern Node.js developer in 2023"
 isNew: true
 hasTopics: true
 dimensions:
@@ -15,12 +15,12 @@ seo:
   title: "Node.js Developer Roadmap: Learn to become a modern node.js developer"
   description: "Learn to become a modern node.js developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern node.js development."
   keywords:
-    - "node.js roadmap 2022"
-    - "nodejs roadmap 2022"
-    - "node.js roadmap 2022"
-    - "nodejs roadmap 2022"
-    - "node.js developer roadmap 2022"
-    - "nodejs developer roadmap 2022"
+    - "node.js roadmap 2023"
+    - "nodejs roadmap 2023"
+    - "node.js roadmap 2023"
+    - "nodejs roadmap 2023"
+    - "node.js developer roadmap 2023"
+    - "nodejs developer roadmap 2023"
     - "guide to becoming a developer"
     - "guide to becoming a node.js developer"
     - "guid to becoming a node.js developer"

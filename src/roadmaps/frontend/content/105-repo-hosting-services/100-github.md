@@ -5,7 +5,7 @@
 Visit the following resources to learn more:
 
 - [GitHub: Quickstart](https://docs.github.com/en/get-started/quickstart/hello-world)
-- [Learn Github by doing](https://skills.github.com/)
+- [Learn GitHub by doing](https://skills.github.com/)
 - [What is GitHub?](https://www.youtube.com/watch?v=w3jLJU7DT5E)
 - [Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)
 - [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)

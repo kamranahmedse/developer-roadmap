@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Official Documentation](https://developer.apple.com/documentation/xctest/)
 - [Getting Started with XCUITest](https://www.browserstack.com/guide/getting-started-xcuitest-framework)
+- [Xcuitest - End to End Testing](https://testautomationu.applitools.com/learningpaths.html?id=mobile-swift-path)

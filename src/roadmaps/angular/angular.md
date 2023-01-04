@@ -3,9 +3,9 @@ jsonUrl: "/jsons/angular.json"
 pdfUrl: "/pdfs/angular.pdf"
 order: 3
 featuredTitle: "Angular"
-featuredDescription: "Step by step guide to become a Angular Developer in 2022"
+featuredDescription: "Step by step guide to become a Angular Developer in 2023"
 title: "Angular Developer"
-description: "Everything that is there to learn about Angular and the ecosystem in 2022."
+description: "Everything that is there to learn about Angular and the ecosystem in 2023."
 hasTopics: true
 dimensions:
   width: 968

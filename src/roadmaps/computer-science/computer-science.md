@@ -17,10 +17,10 @@ seo:
   keywords:
     - "computer science roadmap"
     - "computer science"
-    - "computer science roadmap 2022"
+    - "computer science roadmap 2023"
     - "guide to computer science"
     - "software engineer roadmap"
-    - "software engineer roadmap 2022"
+    - "software engineer roadmap 2023"
     - "self-taught computer science roadmap"
     - "computer science skills"
     - "computer science skills test"

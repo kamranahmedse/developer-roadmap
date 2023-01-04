@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [Java Threads](https://www.geeksforgeeks.org/java-threads/)
 - [How to Create a Thread in Java?](https://www.javatpoint.com/how-to-create-a-thread-in-java)
 - [Java Threads Tutorial](https://www.youtube.com/watch?v=TCd8QIS-2KI)
-- [Threads in Java](https://youtu.be/TCd8QIS-2KI)

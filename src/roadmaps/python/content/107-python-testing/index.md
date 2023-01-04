@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [What is Software Testing?](https://www.guru99.com/software-testing-introduction-importance.html)
 - [Testing Pyramid](https://www.browserstack.com/guide/testing-pyramid-for-test-automation)
+- [Automate Quality, Security Checks for Python Library Dependencies](https://thenewstack.io/automate-quality-security-checks-for-python-library-dependencies/)

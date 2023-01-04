@@ -13,6 +13,4 @@ JavaScript has six types of errors that may occur during the execution of the sc
 
 Visit the following resources to learn more:
 
-- [JavaScript - Errors ](https://www.tutorialspoint.com/javascript/javascript_error_handling.htm)
-- [Error Types in JavaScript](https://www.tutorialspoint.com/what-are-the-different-types-of-errors-in-javascript)
-- [JavaScript Errors and Types](https://youtu.be/fRv2ng_srrM)
+- [Error Types in JavaScript](https://blog.bitsrc.io/types-of-native-errors-in-javascript-you-must-know-b8238d40e492)

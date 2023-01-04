@@ -4,4 +4,4 @@ Interpolation refers to embedding expressions into marked up text. By default, i
 
 Visit the following resources to learn more:
 
-- [Angular Official Website](ttps://angular.io/guide/interpolation)
+- [Angular Official Website](https://angular.io/guide/interpolation)

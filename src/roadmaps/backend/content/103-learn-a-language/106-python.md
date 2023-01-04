@@ -21,3 +21,4 @@ Visit the following resources to learn more:
 - [Codecademy - Learn Python 2](https://www.codecademy.com/learn/learn-python)
 - [An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
 - [Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)
+- [Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8&ab_channel=ProgrammingwithMosh)

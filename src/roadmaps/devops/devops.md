@@ -7,15 +7,6 @@ featuredDescription: "Step by step guide for DevOps or operations role in 2023"
 title: "DevOps Roadmap"
 description: "Step by step guide for DevOps, SRE or any other Operations Role in 2023"
 hasTopics: true
-sponsor:
-  url: "https://www.stormforge.io/ebook/getting-started-kubernetes-resource-management-optimization/?utm_medium=referral&utm_source=roadmap-sh&utm_campaign=ebook_get-started-k8s-resource-mgmt"
-  imageUrl: "https://i.imgur.com/uNJWl4L.png"
-  title: "Free Kubernetes eBook"
-  description: "Learn how to manage and optimize Kubernetes resources with this free eBook."
-  event:
-    category: "SponsorClick"
-    action: "Ambassador EBook Redirect"
-    label: "Clicked Ambassador EBook Link"
 dimensions:
   width: 968
   height: 2527.46
