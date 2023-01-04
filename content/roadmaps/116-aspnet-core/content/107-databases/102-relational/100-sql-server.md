@@ -7,4 +7,3 @@ MS SQL (or Microsoft SQL Server) is the Microsoft developed relational database 
 <BadgeLink badgeText='Course' colorScheme='green' href='https://docs.microsoft.com/en-us/sql/sql-server/tutorials-for-sql-server-2016?view=sql-server-ver15'>Tutorials for SQL Server</BadgeLink>
 <BadgeLink badgeText='Course' colorScheme='green' href='https://www.w3schools.com/sql/default.asp'>SQL Tutorial</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=-EPMOaV7h_Q'>SQL Server tutorial for beginners</BadgeLink>
-<BadgeLink badgeText='Watch' href='https://www.udemy.com/course/uctan-uca-sql-server-egitimi/'>Uçtan uca SQL Server eğitimi</BadgeLink>
