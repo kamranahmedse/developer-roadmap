@@ -1,6 +1,6 @@
 # Playstore
 
-The Playstore is the official Appstore for Android Phones that are powered by Google.
+The Google Play Store is an online store for Android apps, games, and other digital content. It is operated by Google and is the official app store for Android devices.
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink colorScheme='blue' badgeText='Official Docs' href='https://developer.android.com/studio/publish'>Publish your app</BadgeLink>
