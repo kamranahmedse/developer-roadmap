@@ -10,6 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
+    "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
     "sync-content": "sh ./bin/sync-content.sh"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
   },
   "devDependencies": {
     "@tailwindcss/typography": "^0.5.8",
+    "gh-pages": "^4.0.0",
     "json-to-pretty-yaml": "^1.2.2",
     "prettier": "^2.8.1",
     "prettier-plugin-astro": "^0.7.0"
