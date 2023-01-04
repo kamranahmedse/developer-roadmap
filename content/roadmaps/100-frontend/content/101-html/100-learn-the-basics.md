@@ -5,6 +5,7 @@ HTML stands for HyperText Markup Language. It is used on the frontend and gives 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://www.w3schools.com/html/html_intro.asp'>W3Schools: Learn HTML</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Getting_started'>MDN Docs: Getting Started with HTML </BadgeLink>
+<BadgeLink badgeText='Read' colorScheme='yellow' href='https://web.dev/learn/html'>web.dev: Learn HTML</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=pQN-pnXPaVg'>HTML Full Course - Build a Website Tutorial</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=qz0aGYrrlhU'>HTML Tutorial for Beginners: HTML Crash Course</BadgeLink>
 <BadgeLink badgeText='Read' colorScheme='yellow' href='https://htmlcheatsheet.com'>HTML Cheatsheet</BadgeLink>
