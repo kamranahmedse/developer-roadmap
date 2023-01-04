@@ -92,7 +92,7 @@ module.exports = {
   react: {
     dimensions: {
       width: 968,
-      height: 2570.26,
+      height: 1570.26,
     },
   },
   'software-architect': {

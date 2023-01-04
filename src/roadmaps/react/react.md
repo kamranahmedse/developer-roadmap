@@ -9,7 +9,7 @@ description: "Everything that is there to learn about React and the ecosystem in
 hasTopics: true
 dimensions:
   width: 968
-  height: 2570.26
+  height: 1570.26
 seo:
   title: "React Developer Roadmap: Learn to become a React developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap."

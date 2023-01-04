@@ -6,36 +6,44 @@ export interface Props {
 }
 
 const { roadmapPermalink } = Astro.props;
+
+const roadmapId = roadmapPermalink.replace(/\//, '');
+const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).toUpperCase()} ${roadmapId.slice(1)}`;
 ---
 
-<!-- Desktop: Roadmap Resources - Alert -->
-<div
-  class="hidden sm:flex justify-between mb-0 sm:-mb-16 mt-7 px-2 bg-white border rounded-md items-center"
->
-  <p class="text-sm">
-    <span
-      class="text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5"
-      >New</span
+<div class="mt-4 sm:mt-7 border rounded-md mb-0 sm:-mb-[82px]">
+  <!-- Alert for the Sister Site -->
+  <div class="px-2 py-1.5 border-b bg-gray-100 hidden sm:block">
+    <p class="text-sm">Get the latest {roadmapTitle} news from our sister site <a href="#" class="font-semibold underline">TheNewStack.io</a></p>
+  </div>
+
+  <!-- Desktop: Roadmap Resources - Alert -->
+  <div class="hidden sm:flex justify-between px-2 bg-white items-center rounded-bl-md rounded-br-md">
+    <p class="text-sm">
+      <span
+        class="text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5"
+        >New</span
+      >
+      Resources are here, try clicking nodes
+    </p>
+  
+    <a
+      href={`${roadmapPermalink}/topics`}
+      class="inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1"
     >
-    Resources are here, try clicking nodes
-  </p>
-
-  <a
-    href={`${roadmapPermalink}/topics`}
-    class="inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1"
+      <Icon icon="search" />
+      <span class="ml-2">Search Topics</span>
+    </a>
+  </div>
+  
+  <!-- Mobile - Roadmap resources alert -->
+  <p
+    class="block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative"
   >
-    <Icon icon="search" />
-    <span class="ml-2">Search Topics</span>
-  </a>
+    Click roadmap items for resources or visit{" "}
+    <a href={`${roadmapPermalink}/topics`} class="text-blue-700 underline">
+      resources list
+    </a>
+    .
+  </p>
 </div>
-
-<!-- Mobile - Roadmap resources alert -->
-<p
-  class="block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white mt-5 relative"
->
-  We have added resources. Try clicking roadmap nodes or visit{" "}
-  <a href={`${roadmapPermalink}/topics`} class="text-blue-700 underline">
-    resources list
-  </a>
-  .
-</p>
