@@ -1,6 +1,6 @@
 The intent of this guide is to give you an idea about the Android development landscape and to help guide your learning if you are confused. Before we start, please note that the roadmap is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/developer-roadmap/issues/new) and incorporate them in the roadmap if suitable.
 
-There are multiple ways to develop applications for the android; you can go down the path of hybrid application development where [flutter](https://flutter.dev/), [react-native](https://reactnative.dev/), or [NativeScript](https://www.nativescript.org/) are the most common contenders. Flutter uses Dart, whereas React Native and Native Script rely on JavaScript. Answering the question of hybrid vs native is out of the scope of this roadmap. This roadmap is focused on the native Android apps development but if you are interested in learning any hybrid framework, my personal preference is [react-native](https://reactnative.dev) and I would recommend you to checkout the [Frontend Developer Roadmap](/frontend).
+There are multiple ways to develop applications for Android; you can go down the path of hybrid application development where [Flutter](https://flutter.dev/), [React-Native](https://reactnative.dev/), or [NativeScript](https://www.nativescript.org/) are the most common contenders. Flutter uses Dart, whereas React Native and Native Script rely on JavaScript. Answering the question of hybrid vs native is out of the scope of this roadmap. This roadmap is focused on native Android app development, but if you are interested in learning any hybrid framework, my personal preference is [React-Native](https://reactnative.dev) and I would recommend you check out the [Frontend Developer Roadmap](/frontend).
 
 ## Complete Roadmap
 
@@ -12,14 +12,14 @@ Here is the full version of the roadmap in a single image and after that we have
 Below is the broken down version of the roadmap with links and resources to learn more about each of the items listed in the complete roadmap above.
 
 ## Pick a Language
-For the languages, you can develop android apps either by using Kotlin or Java.
+For the languages, you can develop Android apps either by using Kotlin or Java.
 
 [![](/roadmaps/android/pick-language.svg)](/roadmaps/android/pick-language.svg)
 
-Although, you can use both [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) and [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) to develop native android apps, [Google announced in 2019](https://android-developers.googleblog.com/2019/05/google-io-2019-empowering-developers-to-build-experiences-on-Android-Play.html) to make Kotlin the preferred way of developing android applications. If you were to start learning android development today, Kotlin should be your language of choice.
+Although, you can use both [Kotlin](https://en.wikipedia.org/wiki/Kotlin_(programming_language)) and [Java](https://en.wikipedia.org/wiki/Java_(programming_language)) to develop native Android apps, [Google announced in 2019](https://android-developers.googleblog.com/2019/05/google-io-2019-empowering-developers-to-build-experiences-on-Android-Play.html) to make Kotlin the preferred way of developing Android applications. If you were to start learning Android development today, Kotlin should be your language of choice.
 
 ## The Fundamentals
-Install the [Android Studio](https://developer.android.com/studio) and learn the basics of Kotlin to get started. 
+Install [Android Studio](https://developer.android.com/studio) and learn the basics of Kotlin to get started. 
 
 [![](/roadmaps/android/the-fundamentals.png)](/roadmaps/android/the-fundamentals.png)
 
@@ -28,14 +28,14 @@ We have also listed down some free resources which you can use for the items lis
 * [Learn the basics of Kotlin](https://blog.teamtreehouse.com/absolute-beginners-guide-kotlin)
 * [Kotlin Docs](https://kotlinlang.org/docs/reference/basic-syntax.html) and [Official Kotlin Tutorials](https://kotlinlang.org/docs/tutorials/)
 * [Data Structures and Algorithms](https://www.studytonight.com/data-structures/introduction-to-data-structures). Also [check this](https://www.tutorialspoint.com/data_structures_algorithms/index.htm).
-* [Kotlin DataStructures](https://kotlinlang.org/docs/reference/collections-overview.html)
-* [Algorithms and DataStructures in Kotlin](https://github.com/bmaslakov/kotlin-algorithm-club)
+* [Kotlin Data Structures](https://kotlinlang.org/docs/reference/collections-overview.html)
+* [Algorithms and Data Structures in Kotlin](https://github.com/bmaslakov/kotlin-algorithm-club)
 * [Gradle](https://docs.gradle.org/current/userguide/what_is_gradle.html)
 * [Getting started with Gradle](https://docs.gradle.org/current/userguide/getting_started.html)
 Note: Android Studio comes with a working installation of Gradle, so you don’t need to install Gradle separately in that case.
 
 ## Version Control Systems
-Version control systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available but [Git](https://git-scm.com/) is the most common one these days.
+Version Control Systems record your changes to the codebase and allow you to recall specific versions later. There are multiple Version Control Systems available, but [Git](https://git-scm.com/) is the most common one these days.
 
 [![](/roadmaps/android/git-github.png)](/roadmaps/android/git-github.png)
 
@@ -46,11 +46,11 @@ Here are some of the resources to get you started. Feel free to google and find 
 
 ## Building an Application
 
-Here is the list of items that you are going to need when developing Android applications. Please note that, this is an exhaustive list, and you don't need to know it all from the get-go. Get an idea of the items listed, and just start building some apps and keep the items listed in the back of your mind and have a deep dive when using them. 
+Here is the list of items that you are going to need when developing Android applications. Please note that this is an exhaustive list, and you don't need to know it all from the get-go. Get an idea of the items listed, and just start building some apps and keep the items listed in the back of your mind and have a deep dive when using them. 
 
 [![](/roadmaps/android/build-an-application.png)](/roadmaps/android/build-an-application.png)
 
-To learn more about the items listed in the image above, here are the links to the relevant docs
+To learn more about the items listed in the image above, here are the links to the relevant docs.
 
 * [Using Activities and Activity Life Cycles](https://developer.android.com/guide/components/activities/intro-activities)
 * Building Flexible Interfaces using [Fragments](https://developer.android.com/guide/components/fragments)
@@ -76,7 +76,7 @@ Jetpack Compose is Android’s modern toolkit for building native UI. It simplif
 * [Getting started with Material Components](https://m3.material.io/libraries/mdc-android/getting-started)
 
 ## Free Resources
-I would highly recommend watching [this free course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012) from google on Developing Android Apps with Kotlin. You may also get started with this [free course](https://developer.android.com/courses/android-basics-kotlin/course) on the android developer's page, concepts are taught with the help of code labs, projects and quizzes and you also earn badges as you learn that appear on your google developer profile. Also, here are some of the resources to learn more about the topics listed above.
+I would highly recommend watching [this free course](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012) from Google on Developing Android Apps with Kotlin. You may also get started with this [free course](https://developer.android.com/courses/android-basics-kotlin/course) on the Android developer's page, where concepts are taught with the help of code labs, projects and quizzes, and you also earn badges as you learn that appear on your Google developer profile. Also, here are some of the resources to learn more about the topics listed above.
 
 * [Developing Android Apps with Kotlin](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
@@ -85,7 +85,7 @@ I would highly recommend watching [this free course](https://www.udacity.com/cou
 
 ## Wrap Up
 
-That wraps it up for the android developer roadmap. Again, remember to not be exhausted by the list; just learn the basics and start working on some project, rest of the learnings will come along the way. Good luck!
+That wraps it up for the Android developer roadmap. Again, remember to not be exhausted by the list; just learn the basics and start working on some project and the rest of the learnings will come along the way. Good luck!
  
 For any suggestions, improvements and feedback, feel free to [submit an issue](https://github.com/kamranahmedse/developer-roadmap) or reach out to me on twitter [@kamranahmedse](https://twitter.com/kamranahmedse).
 
