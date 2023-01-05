@@ -1,1 +1,0 @@
-# Design and development principles

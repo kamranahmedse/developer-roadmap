@@ -1,1 +1,0 @@
-# Problems graphql solves

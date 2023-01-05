@@ -1,1 +1,0 @@
-# Elk stack

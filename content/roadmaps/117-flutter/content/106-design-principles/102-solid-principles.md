@@ -1,1 +1,0 @@
-# Solid principles
