@@ -3,6 +3,7 @@ import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
 
@@ -35,10 +36,11 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
     title={roadmapData.title}
     roadmapId={roadmapId}
     hasTopics={roadmapData.hasTopics}
+    isUpcoming={roadmapData.isUpcoming}
   />
 
   {
-    roadmapData.jsonUrl && (
+    !roadmapData.isUpcoming && roadmapData.jsonUrl && (
       <InteractiveRoadmap
         roadmapId={roadmapId}
         description={roadmapData.description}
@@ -49,12 +51,14 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
   }
 
   {
-    !roadmapData.jsonUrl && (
+    !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
       <MarkdownRoadmap>
         <roadmapFile.Content />
       </MarkdownRoadmap>
     )
   }
+
+  {roadmapData.isUpcoming && <UpcomingRoadmap />}
 
   <CaptchaScripts slot='after-footer' />
 </BaseLayout>
