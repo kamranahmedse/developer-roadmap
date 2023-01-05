@@ -26,7 +26,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
   <RoadmapHeader
     description={roadmapData.description}
     title={`${roadmapData.featuredTitle} Topics`}
-    roadmapPermalink={`/${roadmapId}`}
+    roadmapId={roadmapId}
     hasSearch={true}
     hasTopics={false}
   />
@@ -54,7 +54,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
                   'bg-gray-100 hover:bg-gray-300': totalParentCount === 3,
                 },
               ]}
-              href={topic.url}
+              href={`${topic.url}/`}
             >
               {topic.heading}
             </a>

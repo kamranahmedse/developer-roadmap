@@ -1,6 +1,6 @@
 ---
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
-import InteractiveRoadamp from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
+import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
@@ -33,16 +33,15 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
   <RoadmapHeader
     description={roadmapData.description}
     title={roadmapData.title}
-    roadmapPermalink={`/${roadmapId}`}
+    roadmapId={roadmapId}
     hasTopics={roadmapData.hasTopics}
   />
 
   {
     roadmapData.jsonUrl && (
-      <InteractiveRoadamp
+      <InteractiveRoadmap
         roadmapId={roadmapId}
         description={roadmapData.description}
-        roadmapPermalink={`/${roadmapId}`}
         jsonUrl={roadmapData.jsonUrl}
         dimensions={roadmapData.dimensions}
       />
@@ -57,5 +56,5 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
     )
   }
 
-  <CaptchaScripts slot="after-footer" />
+  <CaptchaScripts slot='after-footer' />
 </BaseLayout>

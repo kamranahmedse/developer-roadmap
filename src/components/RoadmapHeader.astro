@@ -7,7 +7,7 @@ import YouTubeAlert from "./YouTubeAlert.astro";
 export interface Props {
   title: string;
   description: string;
-  roadmapPermalink: string;
+  roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
   hasTopics?: boolean;
@@ -16,7 +16,7 @@ export interface Props {
 const {
   title,
   description,
-  roadmapPermalink,
+  roadmapId,
   isUpcoming = false,
   hasSearch = false,
   hasTopics = false,
@@ -72,7 +72,7 @@ const isRoadmapReady = !isUpcoming;
         {
           hasSearch && (
             <a
-              href={roadmapPermalink}
+              href={`/${roadmapId}/`}
               class="bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600"
               aria-label="Back to Visual Roadmap"
             >
@@ -100,7 +100,7 @@ const isRoadmapReady = !isUpcoming;
     </div>
 
     <!-- Desktop: Roadmap Resources - Alert -->
-    {hasTopics && <ResourcesAlert roadmapPermalink={roadmapPermalink} />}
+    {hasTopics && <ResourcesAlert roadmapId={roadmapId} />}
 
     {hasSearch && <TopicSearch />}
   </div>

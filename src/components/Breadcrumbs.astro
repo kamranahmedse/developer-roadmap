@@ -18,7 +18,7 @@ const { breadcrumbs, roadmapId } = Astro.props;
         if (!isLast) {
           return (
             <>
-              <a class='hover:text-gray-800' href={breadcrumb.url}>{ breadcrumb.title }</a>
+              <a class='hover:text-gray-800' href={`${breadcrumb.url}/`}>{ breadcrumb.title }</a>
               <span>&nbsp;&middot;&nbsp;</span>
             </>
           );
@@ -30,7 +30,7 @@ const { breadcrumbs, roadmapId } = Astro.props;
 
     <!-- Mobile breadcrums -->
     <p class='container block sm:hidden'>
-      <a class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' href={`/${roadmapId}`}>
+      <a class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' href={`/${roadmapId}/`}>
         &larr; Back to Topics List
       </a>
     </p>

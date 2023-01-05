@@ -2,12 +2,11 @@
 import Icon from './Icon.astro';
 
 export interface Props {
-  roadmapPermalink: string;
+  roadmapId: string;
 }
 
-const { roadmapPermalink } = Astro.props;
+const { roadmapId } = Astro.props;
 
-const roadmapId = roadmapPermalink.replace(/\//, '');
 const hasTNSBanner = ['frontend', 'backend', 'devops'].includes(roadmapId);
 const roadmapTitle =
   roadmapId === 'devops'
@@ -61,7 +60,7 @@ const roadmapTitle =
     </p>
 
     <a
-      href={`${roadmapPermalink}/topics`}
+      href={`/${roadmapId}/topics/`}
       class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'
     >
       <Icon icon='search' />
@@ -74,7 +73,7 @@ const roadmapTitle =
     class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'
   >
     Click roadmap items for resources or visit{' '}
-    <a href={`${roadmapPermalink}/topics`} class='text-blue-700 underline'>
+    <a href={`/${roadmapId}/topics/`} class='text-blue-700 underline'>
       resources list
     </a>
     .

@@ -9,7 +9,6 @@ import "./InteractiveRoadmap.css";
 export interface Props {
   roadmapId: string;
   description: string;
-  roadmapPermalink: string;
   jsonUrl: string;
   dimensions?: {
     width: number;
@@ -17,7 +16,7 @@ export interface Props {
   };
 }
 
-const { roadmapId, jsonUrl, dimensions = null, description, roadmapPermalink } =
+const { roadmapId, jsonUrl, dimensions = null, description } =
   Astro.props;
 ---
 
