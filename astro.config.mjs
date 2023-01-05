@@ -1,12 +1,11 @@
-import { defineConfig } from 'astro/config';
-import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
-
 // https://astro.build/config
+import { defineConfig } from 'astro/config';
 import tailwind from '@astrojs/tailwind';
 import rehypeExternalLinks from 'rehype-external-links';
-
-// https://astro.build/config
 import sitemap from '@astrojs/sitemap';
+import critters from 'astro-critters';
+
+import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 
 // https://astro.build/config
 export default defineConfig({
@@ -31,5 +30,6 @@ export default defineConfig({
       filter: shouldIndexPage,
       serialize: serializeSitemap,
     }),
+    critters(),
   ],
 });
