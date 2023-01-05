@@ -30,6 +30,6 @@ export default defineConfig({
       filter: shouldIndexPage,
       serialize: serializeSitemap,
     }),
-    critters(),
+    // critters(),
   ],
 });
