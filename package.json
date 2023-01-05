@@ -5,13 +5,13 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "dev:verbose": "astro dev --verbose",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
-    "sync-content": "sh ./bin/sync-content.sh"
+    "sync-content": "sh ./bin/sync-content.sh",
+    "compress:jsons": "node bin/compress-jsons.cjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
