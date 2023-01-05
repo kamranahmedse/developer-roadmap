@@ -1,13 +1,11 @@
 // https://astro.build/config
-import { defineConfig } from 'astro/config';
-import tailwind from '@astrojs/tailwind';
-import rehypeExternalLinks from 'rehype-external-links';
 import sitemap from '@astrojs/sitemap';
-import critters from 'astro-critters';
-
+import tailwind from '@astrojs/tailwind';
+import compress from 'astro-compress';
+import { defineConfig } from 'astro/config';
+import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 
-// https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh',
   markdown: {
@@ -30,6 +28,9 @@ export default defineConfig({
       filter: shouldIndexPage,
       serialize: serializeSitemap,
     }),
-    // critters(),
+    compress({
+      css: false,
+      js: false,
+    }),
   ],
 });
