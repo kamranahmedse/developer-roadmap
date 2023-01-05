@@ -10,6 +10,15 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2527.46
+sponsor:
+  url: "https://www.getambassador.io/edge-stack-guide-v4?utm_source=roadmap.sh&utm_medium=ebook&utm_campaign=edgestack-guide"
+  title: "Free eBook"
+  imageUrl: "https://i.imgur.com/0bH1Vl6.png"
+  description: "Learn about API Gateways, Microservices, Load Balancing, and more with this free eBook."
+  event:
+    category: "SponsorClick"
+    action: "Ambassador EBook Redirect"
+    label: "Clicked Ambassador EBook Link"
 seo:
   title: "DevOps Roadmap: Learn to become a DevOps Engineer or SRE"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."
