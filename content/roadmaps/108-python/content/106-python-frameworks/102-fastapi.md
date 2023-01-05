@@ -14,6 +14,6 @@ The key features are:
 - **Standards-based**: Based on (and fully compatible with) the open standards for APIs: [OpenAPI](https://github.com/OAI/OpenAPI-Specification) (previously known as Swagger) and [JSON Schema](https://json-schema.org/).
 
 <ResourceGroupTitle>Free Content</ResourceGroupTitle>
-<BadgeLink colorScheme='blue' badgeText='Official Website' href='[https://sanic.dev/en/](https://fastapi.tiangolo.com/)'>FastAPI Official Website</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Website' href='https://fastapi.tiangolo.com/'>FastAPI Official Website</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://realpython.com/fastapi-python-web-apis/'>Using FastAPI to Build Python Web APIs</BadgeLink>
 
