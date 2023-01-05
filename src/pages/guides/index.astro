@@ -1,0 +1,23 @@
+---
+import GuideListItem from '../../components/GuideListItem.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllGuides } from '../../lib/guide';
+
+const guides = await getAllGuides();
+---
+
+<BaseLayout title='Guides - roadmap.sh' description={'Detailed guides on Software Engineering Topics'}>
+  <SimplePageHeader
+    title='Guides'
+    description='Succinct graphical explanations to engineering topics.'
+  />
+
+  <div class='pb-20 pt-2 bg-gray-50'>
+    <div class='container'>
+      <div class='mt-3 sm:my-5'>
+        {guides.map((guide) => <GuideListItem guide={guide} />)}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

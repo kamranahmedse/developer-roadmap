@@ -1,0 +1,40 @@
+---
+import { getFormattedStars } from '../lib/github';
+import Icon from './Icon.astro';
+
+const starCount = await getFormattedStars('kamranahmedse/developer-roadmap');
+---
+
+<div class='py-6 sm:py-16 border-b border-t text-left sm:text-center bg-white'>
+  <div class='max-w-[600px] container'>
+    <h1 class='text-3xl sm:text-5xl font-bold'>Open Source</h1>
+    <p class='text-gray-600 text-sm sm:text-lg leading-relaxed my-2.5 sm:my-5'>
+      The project is OpenSource, <a
+        href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
+        target='_blank'
+        class='font-medium text-gray-600 hover:text-black underline underline-offset-2'
+        >6th most starred project on GitHub</a
+      > and is visited by hundreds of thousands of developers every month.
+    </p>
+
+    <div class='block mb-1.5 sm:mb-0'>
+      <a
+        href='https://github.com/kamranahmedse/developer-roadmap'
+        target='_blank'
+        class='inline-flex items-center group rounded-md relative'
+      >
+        <span
+          class='inline-flex items-center border border-black py-1.5 px-3 rounded-lg text-sm group-hover:text-white group-hover:bg-black relative bg-white'
+        >
+          <div class='mr-1 -ml-1'>
+            <Icon icon='star' />
+          </div>
+
+          <span class='lowercase'>{starCount}</span>
+          <span class='ml-1.5 group-hover:hidden'>GitHub Stars</span>
+          <span class='ml-2 hidden group-hover:block'>Star us on GitHub</span>
+        </span>
+      </a>
+    </div>
+  </div>
+</div>

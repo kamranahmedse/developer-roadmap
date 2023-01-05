@@ -1,0 +1,42 @@
+---
+import type { GuideFileType } from '../lib/guide';
+
+export interface Props {
+  guide: GuideFileType;
+}
+
+const { guide } = Astro.props;
+const { frontmatter } = guide;
+const { author } = frontmatter;
+---
+
+<div class='bg-white border-b py-5 sm:py-12'>
+  <div class='container text-left sm:text-center'>
+    <p
+      class='text-gray-400 hidden sm:flex items-center justify-start sm:justify-center'
+    >
+      <a
+        href={author.url}
+        target='_blank'
+        class='font-medium hover:text-gray-600 inline-flex items-center hover:underline'
+      >
+        <img src={author.imageUrl} class='w-5 h-5 inline mr-2 rounded-full' />
+        {author.name}
+      </a>
+      <span class='mx-1.5'>&middot;</span>
+      <span class='capitalize'>{frontmatter.type} Guide</span>
+      <span class='mx-1.5'>&middot;</span>
+      <a
+        class='text-blue-400 hover:text-blue-500 hover:underline'
+        href={`https://github.com/kamranahmedse/roadmap.sh/tree/master/src/guides/${guide.id}.md`}
+        target='_blank'>Improve this Guide</a
+      >
+    </p>
+    <h1 class='text-2xl sm:text-5xl my-0 sm:my-3.5 font-bold'>
+      {frontmatter.title}
+    </h1>
+    <p class='hidden sm:block text-gray-400 text-md'>
+      {frontmatter.description}
+    </p>
+  </div>
+</div>

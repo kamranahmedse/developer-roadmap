@@ -1,0 +1,64 @@
+---
+import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
+import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
+import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
+
+export async function getStaticPaths() {
+  const roadmapIds = await getRoadmapIds();
+
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
+  }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.params as Params;
+const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
+const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
+---
+
+<BaseLayout
+  title={roadmapData?.seo?.title}
+  description={roadmapData.seo.description}
+  keywords={roadmapData.seo.keywords}
+  sponsor={roadmapData.sponsor}
+  noIndex={roadmapData.isUpcoming}
+>
+  <RoadmapHeader
+    description={roadmapData.description}
+    title={roadmapData.title}
+    roadmapId={roadmapId}
+    hasTopics={roadmapData.hasTopics}
+    isUpcoming={roadmapData.isUpcoming}
+  />
+
+  {
+    !roadmapData.isUpcoming && roadmapData.jsonUrl && (
+      <InteractiveRoadmap
+        roadmapId={roadmapId}
+        description={roadmapData.description}
+        jsonUrl={roadmapData.jsonUrl}
+        dimensions={roadmapData.dimensions}
+      />
+    )
+  }
+
+  {
+    !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
+      <MarkdownRoadmap>
+        <roadmapFile.Content />
+      </MarkdownRoadmap>
+    )
+  }
+
+  {roadmapData.isUpcoming && <UpcomingRoadmap />}
+
+  <CaptchaScripts slot='after-footer' />
+</BaseLayout>

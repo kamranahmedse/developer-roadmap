@@ -1,0 +1,36 @@
+name: Deployment to GH Pages
+on:
+  push:
+    branches: [ master ]
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  PAT: ${{ secrets.PAT }}
+  CI: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 18
+    - run: git config --global url."https://${{ secrets.PAT }}@github.com/".insteadOf ssh://git@github.com/
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 7.13.4
+    - name: Setup Environment
+      run: |
+        pnpm install
+    - name: Generate meta and build
+      run: |
+        npm run build
+        touch ./dist/.nojekyll
+        echo 'roadmap.sh' > ./dist/CNAME
+    - name: Deploy to GH Pages
+      run: |
+        git config user.email "kamranahmed.se@gmail.com"
+        git config user.name "Kamran Ahmed"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy

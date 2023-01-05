@@ -1,0 +1,107 @@
+---
+import Icon from "./Icon.astro";
+import ResourcesAlert from "./ResourcesAlert.astro";
+import TopicSearch from "./TopicSearch/TopicSearch.astro";
+import YouTubeAlert from "./YouTubeAlert.astro";
+
+export interface Props {
+  title: string;
+  description: string;
+  roadmapId: string;
+  isUpcoming?: boolean;
+  hasSearch?: boolean;
+  hasTopics?: boolean;
+}
+
+const {
+  title,
+  description,
+  roadmapId,
+  isUpcoming = false,
+  hasSearch = false,
+  hasTopics = false,
+} = Astro.props;
+
+
+const isRoadmapReady = !isUpcoming;
+---
+
+<div class="border-b">
+  <div class="py-5 sm:py-12 container relative">
+    <YouTubeAlert />
+
+    <div class="mt-0 mb-3 sm:mb-6 sm:mt-4">
+      <h1 class="text-2xl sm:text-4xl mb-0.5 sm:mb-2 font-bold">
+        {title}
+      </h1>
+      <p class="text-gray-500 text-sm sm:text-lg">{description}</p>
+    </div>
+
+    <div class="flex justify-between">
+      <div class="flex gap-1 sm:gap-2">
+        {
+          !hasSearch && (
+            <>
+            <a href='/roadmaps' class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' aria-label="Back to All Roadmaps">
+              &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
+            </a>
+
+              {isRoadmapReady && (
+                <button
+                  data-popup="download-popup"
+                  class="inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500"
+                  aria-label="Download Roadmap"
+                >
+                  <Icon icon="download" />
+                  <span class="hidden sm:inline ml-2">Download</span>
+                </button>
+              )}
+
+              <button
+                data-popup="subscribe-popup"
+                class="inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500"
+                aria-label="Subscribe for Updates"
+              >
+                <Icon icon="email" />
+                <span class="ml-2">Subscribe</span>
+              </button>
+            </>
+          )
+        }
+
+        {
+          hasSearch && (
+            <a
+              href={`/${roadmapId}/`}
+              class="bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600"
+              aria-label="Back to Visual Roadmap"
+            >
+              &larr;
+              <span class="inline">&nbsp;Visual Roadmap</span>
+            </a>
+          )
+        }
+      </div>
+
+      {
+        isRoadmapReady && (
+          <a
+            href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
+            target="_blank"
+            class="inline-flex items-center justify-center bg-gray-500 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-gray-600"
+            aria-label="Suggest Changes"
+          >
+            <Icon icon="comment" class="h-3 w-3" />
+            <span class="ml-2 hidden sm:inline">Suggest Changes</span>
+            <span class="ml-2 inline sm:hidden">Suggest</span>
+          </a>
+        )
+      }
+    </div>
+
+    <!-- Desktop: Roadmap Resources - Alert -->
+    {hasTopics && <ResourcesAlert roadmapId={roadmapId} />}
+
+    {hasSearch && <TopicSearch />}
+  </div>
+</div>

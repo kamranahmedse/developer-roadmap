@@ -1,0 +1,39 @@
+---
+import type { GAEventType } from '../Analytics/analytics';
+
+export type SponsorType = {
+  url: string;
+  title: string;
+  imageUrl: string;
+  description: string;
+  event: GAEventType;
+};
+
+export interface Props {
+  sponsor: SponsorType;
+}
+
+const {
+  sponsor: { title, url, description, imageUrl, event },
+} = Astro.props;
+---
+
+<script src='./sponsor.js'></script>
+
+<a
+  href={url}
+  id='sponsor-ad'
+  target='_blank'
+  rel='noopener sponsored'
+  onclick={event ? `window.fireEvent(${JSON.stringify(event)})` : ''}
+  class='fixed bottom-[15px] right-[20px] outline-transparent z-50 bg-white max-w-[330px] shadow-lg outline-0 hidden'
+>
+  <img src={imageUrl} class='w-[100px] lg:w-[130px]' alt='Sponsor Banner' />
+  <span class='text-sm flex flex-col justify-between'>
+    <span class='p-[10px]'>
+      <span class='font-semibold mb-0.5 block'>{title}</span>
+      <span class='text-gray-500 block'>{description}</span>
+    </span>
+    <span class='sponsor-footer'>Partner Content</span>
+  </span>
+</a>

@@ -1,0 +1,21 @@
+---
+import Icon from "../Icon.astro";
+---
+
+<script src="./topics.js" />
+
+<div class="sm:-mb-[68px] mt-5 sm:mt-6 relative">
+  <input
+    autofocus
+    type="text"
+    id="search-topic-input"
+    class="border border-gray-300 text-gray-900 text-sm sm:text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 sm:px-3 py-2"
+    placeholder="Search for a topic"
+  />
+
+  <span
+    class="absolute top-1/2 -translate-y-1/2 right-4 flex items-center text-sm text-gray-500"
+  >
+    <Icon icon="search" />
+  </span>
+</div>

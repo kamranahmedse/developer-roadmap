@@ -1,0 +1,26 @@
+---
+import VideoListItem from '../../components/VideoListItem.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllVideos } from '../../lib/video';
+
+const videos = await getAllVideos();
+---
+
+<BaseLayout
+  title='Illustrated Videos - roadmap.sh'
+  description={'Graphical video demonstrations on software engineering topics.'}
+>
+  <SimplePageHeader
+    title='Videos'
+    description='Graphical video demonstrations on software engineering topics.'
+  />
+
+  <div class='pb-20 pt-2 bg-gray-50'>
+    <div class='container'>
+      <div class='mt-3 sm:my-5'>
+        {videos.map((video) => <VideoListItem video={video} />)}
+      </div>
+    </div>
+  </div>
+</BaseLayout>

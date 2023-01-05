@@ -1,0 +1,35 @@
+---
+import GridRoadmapItem from '../components/GridRoadmapItem.astro';
+import SimplePageHeader from '../components/SimplePageHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getRoadmapsByTag } from '../lib/roadmap';
+
+const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
+const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
+---
+
+<BaseLayout title="Developer Roadmaps" description={"Step by step guides and paths to learn different tools or technologies"}>
+  <SimplePageHeader
+    title="Developer Roadmaps"
+    description="Step by step guides and paths to learn different tools or technologies"
+    showYouTubeAlert={true}
+  />
+
+  <div class="bg-gray-100 pt-4 pb-14 sm:pt-8 sm:pb-16">
+    <div class="container">
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-3">
+        {
+          roleRoadmaps.map((roleRoadmap) => (
+            <GridRoadmapItem roadmap={roleRoadmap} />
+          ))
+        }
+
+        {
+          skillRoadmaps.map((skillRoadmap) => (
+            <GridRoadmapItem roadmap={skillRoadmap} />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

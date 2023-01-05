@@ -1,0 +1,49 @@
+---
+import FeaturedGuides from '../components/FeaturedGuides.astro';
+import FeaturedRoadmaps from '../components/FeaturedRoadmaps/FeaturedRoadmaps.astro';
+import FeaturedVideos from '../components/FeaturedVideos.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllGuides } from '../lib/guide';
+import { getRoadmapsByTag } from '../lib/roadmap';
+import { getAllVideos } from '../lib/video';
+
+const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
+const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
+const guides = await getAllGuides();
+const videos = await getAllVideos();
+---
+
+<BaseLayout title='Developer Roadmaps' description={"Community driven roadmaps, articles and guides for developers to grow in their career."}>
+  <div class='bg-gradient-to-b from-slate-900 to-black'>
+    <div class='border-b border-b-slate-900'>
+      <div
+        class='container text-left sm:text-center py-6 sm:py-20 px-6 sm:px-0'
+      >
+        <h1
+          class='text-2xl sm:text-5xl mb-2 sm:mb-4 font-bold bg-gradient-to-b from-amber-50 to-purple-500 text-transparent bg-clip-text'
+        >
+          Developer Roadmaps
+        </h1>
+
+        <p class='hidden sm:block text-gray-400 text-lg px-4'>
+          <span class='font-medium text-gray-400'>roadmap.sh</span> is a community
+          effort to create roadmaps, guides and other educational content to help
+          guide the developers in picking up the path and guide their learnings.
+        </p>
+
+        <p class='block sm:hidden text-gray-400 text-md px-0'>
+          Community created roadmaps, guides and articles to help developers
+          grow in their career.
+        </p>
+      </div>
+    </div>
+
+    <FeaturedRoadmaps heading='Role based Roadmaps' roadmaps={roleRoadmaps} />
+    <FeaturedRoadmaps heading='Skill based Roadmaps' roadmaps={skillRoadmaps} />
+
+    <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
+      <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
+      <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
+    </div>
+  </div>
+</BaseLayout>

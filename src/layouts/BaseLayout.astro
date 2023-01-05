@@ -1,0 +1,109 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import OpenSourceBanner from '../components/OpenSourceBanner.astro';
+import Footer from '../components/Footer.astro';
+import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
+import Sponsor from '../components/Sponsor/Sponsor.astro';
+import YouTubeBanner from '../components/YouTubeBanner.astro';
+import { siteConfig } from '../lib/config';
+import Analytics from '../components/Analytics/Analytics.astro';
+
+export interface Props {
+  title: string;
+  description?: string;
+  keywords?: string[];
+  noIndex?: boolean;
+  sponsor?: SponsorType;
+}
+
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  keywords = siteConfig.keywords,
+  noIndex = false,
+  sponsor,
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='generator' content={Astro.generator} />
+    <title>{title}</title>
+    <meta name='description' content={description} />
+    <meta name='author' content='Kamran Ahmed' />
+    <meta name='keywords' content={keywords.join(', ')} />
+    {noIndex && <meta name='robots' content='noindex' />}
+    <meta
+      name='viewport'
+      content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
+    />
+    <meta http-equiv='Content-Language' content='en' />
+
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:creator' content='@kamranahmedse' />
+
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <meta property='og:image' content='https://roadmap.sh/images/og-img.png' />
+    <meta property='og:image:alt' content='roadmap.sh' />
+    <meta property='og:site_name' content='roadmap.sh' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content='https://roadmap.sh' />
+
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta
+      name='apple-mobile-web-app-status-bar-style'
+      content='black-translucent'
+    />
+    <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
+    <meta name='application-name' content='roadmap.sh' />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/manifest/apple-touch-icon.png'
+    />
+    <meta name='msapplication-TileColor' content='#101010' />
+    <meta name='theme-color' content='#848a9a' />
+
+    <link rel='manifest' href='/manifest/manifest.json' />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/manifest/icon32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/manifest/icon16.png'
+    />
+    <link
+      rel='shortcut icon'
+      href='/manifest/favicon.ico'
+      type='image/x-icon'
+    />
+
+    <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
+
+    <slot name='after-header' />
+  </head>
+  <body>
+    <YouTubeBanner />
+    <Navigation />
+    <slot />
+
+    <OpenSourceBanner />
+    <Footer />
+    {sponsor && <Sponsor sponsor={sponsor} />}
+    <slot name='after-footer' />
+    <Analytics />
+  </body>
+</html>
