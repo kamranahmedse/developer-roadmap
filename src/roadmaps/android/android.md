@@ -119,7 +119,7 @@ I would highly recommend watching [this free course](https://www.udacity.com/cou
 * [Developing Android Apps with Kotlin](https://www.udacity.com/course/developing-android-apps-with-kotlin--ud9012)
 * [Android Basics in Kotlin](https://developer.android.com/courses/android-basics-kotlin/course)
 * [Android Developer Guides](https://developer.android.com/guide)
-* [Raywenderlich](https://www.raywenderlich.com)
+* [Kodeco](https://www.kodeco.com)
 
 ## Wrap Up
 
