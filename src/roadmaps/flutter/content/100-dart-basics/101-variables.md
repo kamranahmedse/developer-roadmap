@@ -18,3 +18,4 @@ Another option is to explicitly declare the type that would be inferred:
 Visit the following resources to learn more:
 
 - [Variables](https://dart.dev/guides/language/language-tour#variables)
+- [Flutter By Example Values & Variables](https://flutterbyexample.com/lesson/values-and-variables)
