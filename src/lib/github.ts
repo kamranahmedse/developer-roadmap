@@ -2,6 +2,7 @@ const formatter = Intl.NumberFormat('en-US', {
   notation: 'compact',
 });
 
+const defaultStarCount = 224000;
 let starCount: number | undefined = undefined;
 
 export async function countStars(
@@ -15,10 +16,10 @@ export async function countStars(
     const repoData = await fetch(`https://api.github.com/repos/${repo}`);
     const json = await repoData.json();
 
-    starCount = json.stargazers_count * 1;
+    starCount = json.stargazers_count * 1 || defaultStarCount;
   } catch (e) {
     console.log('Failed to fetch stars', e);
-    starCount = 224000;
+    starCount = defaultStarCount;
   }
 
   return starCount;
@@ -27,11 +28,7 @@ export async function countStars(
 export async function getFormattedStars(
   repo = 'kamranahmedse/developer-roadmap'
 ): Promise<string> {
-  if (import.meta.env.DEV) {
-    return '224k';
-  }
-
-  const stars = await countStars(repo);
+  const stars = import.meta.env.DEV ? defaultStarCount : await countStars(repo);
 
   return formatter.format(stars);
 }
