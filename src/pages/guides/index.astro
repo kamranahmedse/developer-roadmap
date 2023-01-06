@@ -7,7 +7,11 @@ import { getAllGuides } from '../../lib/guide';
 const guides = await getAllGuides();
 ---
 
-<BaseLayout title='Guides - roadmap.sh' description={'Detailed guides on Software Engineering Topics'}>
+<BaseLayout
+  title='Guides - roadmap.sh'
+  description={'Detailed guides on Software Engineering Topics'}
+  permalink={`/guides/`}
+>
   <SimplePageHeader
     title='Guides'
     description='Succinct graphical explanations to engineering topics.'

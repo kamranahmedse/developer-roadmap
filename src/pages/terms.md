@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Terms and Conditions - roadmap.sh
+noIndex: true
 ---
 
 # Terms of Service

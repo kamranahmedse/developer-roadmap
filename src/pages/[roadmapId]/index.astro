@@ -25,6 +25,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
 <BaseLayout
+  permalink={`/${roadmapId}/`}
   title={roadmapData?.seo?.title}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}

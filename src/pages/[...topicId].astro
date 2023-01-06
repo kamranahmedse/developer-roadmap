@@ -15,16 +15,24 @@ export async function getStaticPaths() {
 }
 
 const { topicId } = Astro.params;
-const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as TopicFileType;
+const { file, breadcrumbs, roadmapId, roadmap, heading } =
+  Astro.props as TopicFileType;
 ---
 
-<BaseLayout title={`${heading} - roadmap.sh`} description={`Free resources to learn ${heading} in ${roadmap.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.featuredTitle}.`} noIndex={true}>
+<BaseLayout
+  title={`${heading} - roadmap.sh`}
+  description={`Free resources to learn ${heading} in ${roadmap.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.featuredTitle}.`}
+  noIndex={true}
+  permalink={`/${topicId}/`}
+>
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
-  <div class="bg-gray-50">
+  <div class='bg-gray-50'>
     <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />
 
-    <div class="container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0">
-      <main id="main-content">
+    <div
+      class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'
+    >
+      <main id='main-content'>
         <file.Content />
       </main>
     </div>

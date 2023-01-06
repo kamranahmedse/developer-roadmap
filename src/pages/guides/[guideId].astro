@@ -22,7 +22,11 @@ const { guide } = Astro.props;
 const { frontmatter: guideData } = guide;
 ---
 
-<BaseLayout title={guideData.seo.title} description={guideData.seo.description}>
+<BaseLayout
+  title={guideData.seo.title}
+  description={guideData.seo.description}
+  permalink={`/guides/${guideId}/`}
+>
   <GuideHeader guide={guide} />
 
   <div class='bg-gray-50 py-5 sm:py-10'>

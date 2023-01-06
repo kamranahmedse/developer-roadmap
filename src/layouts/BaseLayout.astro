@@ -14,6 +14,7 @@ export interface Props {
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
+  permalink?: string;
   sponsor?: SponsorType;
 }
 
@@ -22,8 +23,11 @@ const {
   description = siteConfig.description,
   keywords = siteConfig.keywords,
   noIndex = false,
+  permalink = '',
   sponsor,
 } = Astro.props;
+
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
 ---
 
 <!DOCTYPE html>
@@ -53,7 +57,9 @@ const {
     <meta property='og:title' content={title} />
     <meta property='og:description' content={description} />
     <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://roadmap.sh' />
+    <meta property='og:url' content={currentPageAbsoluteUrl} />
+
+    <link rel='canonical' href={currentPageAbsoluteUrl} />
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />

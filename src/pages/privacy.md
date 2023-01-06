@@ -1,6 +1,7 @@
 ---
 layout: ../layouts/MarkdownLayout.astro
 title: Privacy Policy - roadmap.sh
+noIndex: true
 ---
 
 # Privacy Policy
