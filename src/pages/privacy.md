@@ -6,7 +6,7 @@ noIndex: true
 
 # Privacy Policy
 
-By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways. Remember that your use of roadmap.sh’s Services is at all times subject to the [Terms of Use](/terms), which incorporates this Privacy Policy. Any terms we use in this Policy without defining them have the definitions given to them in the Terms of Use.
+By using or accessing the Services in any manner, you acknowledge that you accept the practices and policies outlined in this Privacy Policy, and you hereby consent that we will collect, use, and share your information in the following ways. Remember that your use of roadmap.sh’s Services is at all times subject to the [Terms of Use](/terms/), which incorporates this Privacy Policy. Any terms we use in this Policy without defining them have the definitions given to them in the Terms of Use.
 
 ## What does this Privacy Policy cover?
 
