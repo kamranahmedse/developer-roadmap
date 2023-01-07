@@ -8,3 +8,5 @@ Visit the following resources to learn more:
 
 - [Refs and DOM](https://reactjs.org/docs/refs-and-the-dom.html)
 - [Examples of using refs in React](https://www.robinwieruch.de/react-ref/)
+- [The Complete Guide to useRef() and Refs in React](https://dmitripavlutin.com/react-useref-guide/)
+- [Learn useRef in 11 Minutes - Web Dev Simplified](https://www.youtube.com/watch?v=t2ypzz6gJm0)
