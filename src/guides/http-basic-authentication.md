@@ -31,7 +31,7 @@ Given the name "Basic Authentication", you should not confuse Basic Authenticati
 
 Because it is a part of the HTTP specifications, all the browsers have native support for "HTTP Basic Authentication". Given below is the screenshot from the implementation in Google Chrome.
 
-![](/guides/basic-authentication/chrome-basic-auth.png)
+![Chrome Basic Authentication](/guides/basic-authentication/chrome-basic-auth.png)
 
 
 ## How does it Work?
@@ -52,7 +52,7 @@ The browser might use Realm to cache the credential. In the future, when there i
 ## Step 2
 Upon receiving the response from the server, the browser will notice the `WWW-Authenticate` header and will show the authentication popup.
 
-![](/guides/basic-authentication/chrome-basic-auth.png)
+![Chrome Basic Authentication](/guides/basic-authentication/chrome-basic-auth.png)
 
 ## Step 3
 After the user submits the credentials through this authentication popup, the browser will automatically encode the credentials using the `base64` encoding and send them in the `Authorization` header of the same request.

@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/web-vitals.png)](/guides/web-vitals.png)
+[![Web Vitals](/guides/web-vitals.png)](/guides/web-vitals.png)
 

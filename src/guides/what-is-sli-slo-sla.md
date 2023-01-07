@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/sli-slo-sla.jpeg)](/guides/sli-slo-sla.jpeg)
+[![SLI vs SLO vs SLA](/guides/sli-slo-sla.jpeg)](/guides/sli-slo-sla.jpeg)
 

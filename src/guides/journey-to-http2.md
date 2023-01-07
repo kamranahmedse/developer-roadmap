@@ -95,7 +95,7 @@ Three-way handshake in its simplest form is that all the `TCP` connections begin
 
 Once the three-way handshake is completed, the data sharing between the client and server may begin. It should be noted that the client may start sending the application data as soon as it dispatches the last `ACK` packet but the server will still have to wait for the `ACK` packet to be received in order to fulfill the request.
 
-![](http://i.imgur.com/uERG2G2.png)
+![Three-way Handshake](https://i.imgur.com/uERG2G2.png)
 
 > Please note that there is a minor issue with the image, the last `ACK` packet sent by the client to end the handshake contains only `y+1` i.e. it should have been `ACK:y+1` instead of `ACK: x+1, y+1` 
 
@@ -131,7 +131,7 @@ After merely 3 years of `HTTP/1.0`, the next version i.e. `HTTP/1.1` was release
 - New status codes
 - ..and more 
 
-I am not going to dwell about all the `HTTP/1.1` features in this post as it is a topic in itself and you can already find a lot about it. The one such document that I would recommend you to read is [Key differences between `HTTP/1.0` and HTTP/1.1](http://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf) and here is the link to [original RFC](https://tools.ietf.org/html/rfc2616) for the overachievers.
+I am not going to dwell about all the `HTTP/1.1` features in this post as it is a topic in itself and you can already find a lot about it. The one such document that I would recommend you to read is [Key differences between `HTTP/1.0` and HTTP/1.1](https://www.ra.ethz.ch/cdstore/www8/data/2136/pdf/pd1.pdf) and here is the link to [original RFC](https://tools.ietf.org/html/rfc2616) for the overachievers.
 
 `HTTP/1.1` was introduced in 1999 and it had been a standard for many years. Although, it improved alot over its predecessor; with the web changing everyday, it started to show its age. Loading a web page these days is more resource-intensive than it ever was. A simple webpage these days has to open more than 30 connections. Well `HTTP/1.1` has persistent connections, then why so many connections? you say! The reason is, in `HTTP/1.1` it can only have one outstanding connection at any moment of time. `HTTP/1.1` tried to fix this by introducing pipelining but it didn't completely address the issue because of the **head-of-line blocking** where a slow or heavy request may block the requests behind and once a request gets stuck in a pipeline, it will have to wait for the next requests to be fulfilled. To overcome these shortcomings of `HTTP/1.1`, the developers started implementing the workarounds, for example use of spritesheets, encoded images in CSS, single humongous CSS/Javascript files, [domain sharding](https://www.maxcdn.com/one/visual-glossary/domain-sharding-2/) etc.
 
@@ -162,7 +162,7 @@ By now, you must be convinced that why we needed another revision of the HTTP pr
 - Request Prioritization
 - Security
 
-![](http://i.imgur.com/S85j8gg.png)
+![HTTP Model](https://i.imgur.com/S85j8gg.png)
 
 
 #### 1. Binary Protocol
@@ -187,7 +187,7 @@ Since `HTTP/2` is now a binary protocol and as I said above that it uses frames 
 
 It was part of a separate RFC which was specifically aimed at optimizing the sent headers. The essence of it is that when we are constantly accessing the server from a same client there is alot of redundant data that we are sending in the headers over and over, and sometimes there might be cookies increasing the headers size which results in bandwidth usage and increased latency. To overcome this, `HTTP/2` introduced header compression.
 
-![](http://i.imgur.com/3IPWXvR.png)
+![Header Compression](https://i.imgur.com/3IPWXvR.png)
 
 Unlike request and response, headers are not compressed in `gzip` or `compress` etc formats but there is a different mechanism in place for header compression which is literal values are encoded using Huffman code and a headers table is maintained by the client and server and both the client and server omit any repetitive headers (e.g. user agent etc) in the subsequent requests and reference them using the headers table maintained by both.
 
@@ -210,8 +210,8 @@ Without any priority information, server processes the requests asynchronously i
 
 There was extensive discussion on whether security (through `TLS`) should be made mandatory for `HTTP/2` or not. In the end, it was decided not to make it mandatory. However, most vendors stated that they will only support `HTTP/2` when it is used over `TLS`. So, although `HTTP/2` doesn't require encryption by specs but it has kind of become mandatory by default anyway. With that out of the way, `HTTP/2` when implemented over `TLS` does impose some requirements i.e. `TLS` version `1.2` or higher must be used, there must be a certain level of minimum key sizes, ephemeral keys are required etc.
 
-`HTTP/2` is here and it has already [surpassed SPDY in adaption](http://caniuse.com/#search=http2) which is gradually increasing. `HTTP/2` has alot to offer in terms of performance gain and it is about time we should start using it. 
+`HTTP/2` is here and it has already [surpassed SPDY in adaption](https://caniuse.com/#search=http2) which is gradually increasing. `HTTP/2` has alot to offer in terms of performance gain and it is about time we should start using it. 
 
-For anyone interested in further details here is the [link to specs](https:/http2.github.iohttp2-spec) and a link [demonstrating the performance benefits of `HTTP/2`](http://www.http2demo.io/). 
+For anyone interested in further details here is the [link to specs](https:/http2.github.iohttp2-spec) and a link [demonstrating the performance benefits of `HTTP/2`](https://www.http2demo.io/). 
 
 And that about wraps it up. Until next time! stay tuned.

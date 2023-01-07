@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/session-authentication.png)](/guides/session-authentication.png)
+[![Session Authentication](/guides/session-authentication.png)](/guides/session-authentication.png)
 
