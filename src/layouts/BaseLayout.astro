@@ -27,7 +27,11 @@ const {
   sponsor,
 } = Astro.props;
 
-const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+// Remove trailing slashes to consider the page as canonical
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink.replace(
+  /\/$/,
+  ''
+)}`;
 ---
 
 <!DOCTYPE html>
@@ -59,7 +63,7 @@ const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
     <meta property='og:type' content='website' />
     <meta property='og:url' content={currentPageAbsoluteUrl} />
 
-    <link rel='canonical' href={currentPageAbsoluteUrl} />
+    {currentPageAbsoluteUrl !== 'https://roadmap.sh' && <link rel='canonical' href={currentPageAbsoluteUrl} /> }
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />
