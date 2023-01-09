@@ -10,7 +10,6 @@
     "preview": "astro preview",
     "astro": "astro",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
-    "sync-content": "sh ./bin/sync-content.sh",
     "compress:jsons": "node bin/compress-jsons.cjs",
     "upgrade": "ncu -u",
     "roadmap-links": "node bin/roadmap-links.cjs"
