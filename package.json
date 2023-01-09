@@ -11,7 +11,8 @@
     "astro": "astro",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
     "sync-content": "sh ./bin/sync-content.sh",
-    "compress:jsons": "node bin/compress-jsons.cjs"
+    "compress:jsons": "node bin/compress-jsons.cjs",
+    "upgrade": "ncu -u"
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
@@ -20,6 +21,7 @@
     "astro-compress": "^1.1.24",
     "astro-critters": "^1.1.24",
     "node-html-parser": "^6.1.4",
+    "npm-check-updates": "^16.6.2",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.1",
     "tailwindcss": "^3.2.4"
