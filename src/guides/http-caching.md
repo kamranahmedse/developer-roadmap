@@ -39,7 +39,7 @@ Before we get into further details, let me give you an overview of the terms tha
 - **Cache Validation** is the process of contacting the server to check the validity of the cached content and get it updated for when it is going to expire
 - **Cache Invalidation** is the process of removing any stale content available in the cache
 
-![](https://i.imgur.com/9MjlzvW.png)
+![Web Cache](https://i.imgur.com/9MjlzvW.png)
 
 ### Caching Locations
 
@@ -75,21 +75,30 @@ Although you can control the reverse proxy caches (since it is implemented by yo
 
 So, how do we control the web cache? Whenever the server emits some response, it is accompanied by some HTTP headers to guide the caches on whether and how to cache this response. The content provider is the one that has to make sure to return proper HTTP headers to force the caches on how to cache the content.
 
-- [Expires](#expires)
-- [Pragma](#pragma)
-- [Cache-Control](#cache-control)
-  - [private](#private)
-  - [public](#public)
-  - [no-store](#no-store)
-  - [no-cache](#no-cache)
-  - [max-age: seconds](#max-age)
-  - [s-maxage: seconds](#s-maxage)
-  - [must-revalidate](#must-revalidate)
-  - [proxy-revalidate](#proxy-revalidate)
-  - [Mixing Values](#mixing-values)
+- [Introduction](#introduction)
+- [Caching Locations](#caching-locations)
+  - [Browser Cache](#browser-cache)
+  - [Proxy Cache](#proxy-cache)
+  - [Reverse Proxy Cache](#reverse-proxy-cache)
+- [Caching Headers](#caching-headers)
+  - [Expires](#expires)
+  - [Pragma](#pragma)
+  - [Cache-Control](#cache-control)
+    - [private](#private)
+    - [public](#public)
+    - [no-store](#no-store)
+    - [no-cache](#no-cache)
+    - [max-age: seconds](#max-age-seconds)
+    - [s-maxage: seconds](#s-maxage-seconds)
+    - [must-revalidate](#must-revalidate)
+    - [proxy-revalidate](#proxy-revalidate)
+    - [Mixing Values](#mixing-values)
 - [Validators](#validators)
   - [ETag](#etag)
   - [Last-Modified](#last-modified)
+- [Where do I start?](#where-do-i-start)
+  - [Utilizing Server](#utilizing-server)
+  - [Caching Recommendations](#caching-recommendations)
 
 #### Expires
 

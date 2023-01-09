@@ -33,6 +33,7 @@ import CaptchaFields from './Captcha/CaptchaFields.astro';
       type='submit'
       name='submit'
       class='text-white bg-gradient-to-r from-amber-700 to-blue-800 hover:from-amber-800 hover:to-blue-900 font-regular rounded-md text-md px-5 py-2.5 w-full text-center mr-2'
+      onclick="window.fireEvent({ category: 'Subscription', action: 'Submitted Popup Form', label: 'Subscribe Roadmap Popup' })"
     >
       Subscribe
     </button>

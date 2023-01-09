@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/basic-authentication.png)](/guides/basic-authentication.png)
+[![Basic Authentication](/guides/basic-authentication.png)](/guides/basic-authentication.png)
 

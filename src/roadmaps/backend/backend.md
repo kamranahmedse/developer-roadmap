@@ -11,7 +11,7 @@ dimensions:
   width: 968
   height: 2840.4
 seo:
-  title: "Backend Developer Roadmap: Learn to become a modern backend developer"
+  title: "Backend Developer Roadmap"
   description: "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
   keywords:
     - "backend roadmap 2023"

@@ -81,4 +81,4 @@ Cybersecurity refers to the protective measures against criminal activity accomp
 
 <iframe class="w-full aspect-video mb-5" width="100%" height="400" src="https://www.youtube.com/embed/AuYNXgO_f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-And that wraps it up for this article. To learn more about the Internet, [Kamran Ahmed](https://twitter.com/kamranahmedse) has a nice little guide on [DNS: How a website is found on the Internet](/guides/dns-in-one-picture). Also, go through the episodes of [howdns.works](https://howdns.works/) and read this [cartoon intro to DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/).
+And that wraps it up for this article. To learn more about the Internet, [Kamran Ahmed](https://twitter.com/kamranahmedse) has a nice little guide on [DNS: How a website is found on the Internet](/guides/dns-in-one-picture/). Also, go through the episodes of [howdns.works](https://howdns.works/) and read this [cartoon intro to DNS over HTTPS](https://hacks.mozilla.org/2018/05/a-cartoon-intro-to-dns-over-https/).

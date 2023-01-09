@@ -20,7 +20,11 @@ const { author } = frontmatter;
         target='_blank'
         class='font-medium hover:text-gray-600 inline-flex items-center hover:underline'
       >
-        <img src={author.imageUrl} class='w-5 h-5 inline mr-2 rounded-full' />
+        <img
+          alt={author.name}
+          src={author.imageUrl}
+          class='w-5 h-5 inline mr-2 rounded-full'
+        />
         {author.name}
       </a>
       <span class='mx-1.5'>&middot;</span>

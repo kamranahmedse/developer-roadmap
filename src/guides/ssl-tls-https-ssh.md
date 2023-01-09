@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/ssl-tls-https-ssh.png)](/guides/ssl-tls-https-ssh.png)
+[![SSL vs TLS vs HTTPs vs SSH](/guides/ssl-tls-https-ssh.png)](/guides/ssl-tls-https-ssh.png)
 

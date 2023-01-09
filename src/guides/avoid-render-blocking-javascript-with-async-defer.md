@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/avoid-render-blocking-javascript-with-async-defer.png)](/guides/avoid-render-blocking-javascript-with-async-defer.png)
+[![Avoid Render Blocking with Async and Defer](/guides/avoid-render-blocking-javascript-with-async-defer.png)](/guides/avoid-render-blocking-javascript-with-async-defer.png)
 

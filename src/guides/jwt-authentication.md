@@ -20,5 +20,5 @@ tags:
   - "guide-sitemap"
 ---
 
-[![](/guides/jwt-authentication.png)](/guides/jwt-authentication.png)
+[![JWT Authentication](/guides/jwt-authentication.png)](/guides/jwt-authentication.png)
 

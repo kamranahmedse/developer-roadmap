@@ -14,6 +14,7 @@ export interface Props {
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
+  permalink?: string;
   sponsor?: SponsorType;
 }
 
@@ -22,8 +23,19 @@ const {
   description = siteConfig.description,
   keywords = siteConfig.keywords,
   noIndex = false,
+  permalink = '',
   sponsor,
 } = Astro.props;
+
+// Remove trailing slashes to consider the page as canonical
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink.replace(
+  /\/$/,
+  ''
+)}`;
+
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
 ---
 
 <!DOCTYPE html>
@@ -31,6 +43,7 @@ const {
   <head>
     <meta charset='UTF-8' />
     <meta name='generator' content={Astro.generator} />
+    <meta name='commit' content={commitUrl} />
     <title>{title}</title>
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
@@ -53,7 +66,9 @@ const {
     <meta property='og:title' content={title} />
     <meta property='og:description' content={description} />
     <meta property='og:type' content='website' />
-    <meta property='og:url' content='https://roadmap.sh' />
+    <meta property='og:url' content={currentPageAbsoluteUrl} />
+
+    <link rel='canonical' href={currentPageAbsoluteUrl} />
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />

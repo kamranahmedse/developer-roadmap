@@ -11,7 +11,7 @@ dimensions:
   width: 968
   height: 2734.48
 seo:
-  title: "Frontend Developer Roadmap: Learn to become a modern frontend developer"
+  title: "Frontend Developer Roadmap"
   description: "Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development."
   keywords:
     - "javascript roadmap 2023"

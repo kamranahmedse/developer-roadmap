@@ -22,7 +22,12 @@ const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
-<BaseLayout title={`${roadmapData.title} Topics`} description={roadmapData.seo.description} keywords={roadmapData.seo.keywords}>
+<BaseLayout
+  title={`${roadmapData.title} Topics`}
+  description={roadmapData.seo.description}
+  keywords={roadmapData.seo.keywords}
+  permalink={`/${roadmapId}/topics/`}
+>
   <RoadmapHeader
     description={roadmapData.description}
     title={`${roadmapData.featuredTitle} Topics`}
@@ -31,8 +36,8 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
     hasTopics={false}
   />
 
-  <div class="bg-gray-50 pt-5 pb-8 sm:pt-10 sm:pb-16">
-    <div class="container">
+  <div class='bg-gray-50 pt-5 pb-8 sm:pt-10 sm:pb-16'>
+    <div class='container'>
       {
         topics.map((topic) => {
           // Breadcrumbs have three additional items e.g.
