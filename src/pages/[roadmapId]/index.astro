@@ -53,7 +53,10 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
   {
     !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-      <MarkdownRoadmap>
+      <MarkdownRoadmap
+        roadmapId={roadmapId}
+        description={roadmapData.description}
+      >
         <roadmapFile.Content />
       </MarkdownRoadmap>
     )

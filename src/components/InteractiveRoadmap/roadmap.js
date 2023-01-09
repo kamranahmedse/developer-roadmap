@@ -1,6 +1,6 @@
-import { wireframeJSONToSVG } from "roadmap-renderer";
-import { Topic } from "./topic";
-import { Sharer } from "./sharer";
+import { wireframeJSONToSVG } from 'roadmap-renderer';
+import { Topic } from './topic';
+import { Sharer } from './sharer';
 
 /**
  * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
@@ -11,10 +11,10 @@ export class Roadmap {
    * @param {RoadmapConfig} config
    */
   constructor() {
-    this.roadmapId = "";
-    this.jsonUrl = "";
+    this.roadmapId = '';
+    this.jsonUrl = '';
 
-    this.containerId = "roadmap-svg";
+    this.containerId = 'roadmap-svg';
 
     this.init = this.init.bind(this);
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
@@ -28,10 +28,16 @@ export class Roadmap {
   }
 
   prepareConfig() {
+    if (!this.containerEl) {
+      return false;
+    }
+
     const dataset = this.containerEl.dataset;
 
     this.roadmapId = dataset.roadmapId;
     this.jsonUrl = dataset.jsonUrl;
+
+    return true;
   }
 
   /**
@@ -40,7 +46,7 @@ export class Roadmap {
    */
   fetchRoadmapSvg(jsonUrl) {
     if (!jsonUrl) {
-      console.error("jsonUrl not defined in frontmatter");
+      console.error('jsonUrl not defined in frontmatter');
       return null;
     }
 
@@ -50,13 +56,15 @@ export class Roadmap {
       })
       .then(function (json) {
         return wireframeJSONToSVG(json, {
-          fontURL: "/fonts/balsamiq.woff2",
+          fontURL: '/fonts/balsamiq.woff2',
         });
       });
   }
 
   onDOMLoaded() {
-    this.prepareConfig();
+    if (!this.prepareConfig()) {
+      return;
+    }
 
     this.fetchRoadmapSvg(this.jsonUrl)
       .then((svg) => {
@@ -66,8 +74,8 @@ export class Roadmap {
   }
 
   handleRoadmapClick(e) {
-    const targetGroup = e.target.closest("g") || {};
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : "";
+    const targetGroup = e.target.closest('g') || {};
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
     if (!groupId) {
       return;
     }
@@ -75,7 +83,7 @@ export class Roadmap {
     e.stopImmediatePropagation();
 
     window.dispatchEvent(
-      new CustomEvent("topic.click", {
+      new CustomEvent('topic.click', {
         detail: {
           topicId: groupId,
           roadmapId: this.roadmapId,
@@ -85,8 +93,8 @@ export class Roadmap {
   }
 
   init() {
-    window.addEventListener("DOMContentLoaded", this.onDOMLoaded);
-    window.addEventListener("click", this.handleRoadmapClick);
+    window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
+    window.addEventListener('click', this.handleRoadmapClick);
   }
 }
 
