@@ -12,7 +12,8 @@
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
     "compress:jsons": "node bin/compress-jsons.cjs",
     "upgrade": "ncu -u",
-    "roadmap-links": "node bin/roadmap-links.cjs"
+    "roadmap-links": "node bin/roadmap-links.cjs",
+    "roadmap-content": "node bin/roadmap-content.cjs"
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
