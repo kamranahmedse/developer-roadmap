@@ -1,5 +1,6 @@
 ---
 import type { GAEventType } from '../Analytics/analytics';
+import Icon from '../Icon.astro';
 
 export type SponsorType = {
   url: string;
@@ -28,6 +29,13 @@ const {
   onclick={event ? `window.fireEvent(${JSON.stringify(event)})` : ''}
   class='fixed bottom-[15px] right-[20px] outline-transparent z-50 bg-white max-w-[330px] shadow-lg outline-0 hidden'
 >
+  <button
+    class='absolute top-1.5 right-1.5 text-gray-300 hover:text-gray-800'
+    aria-label='Close'
+    close-sponsor
+  >
+    <Icon icon='close' class='h-4' />
+  </button>
   <img src={imageUrl} class='h-[150px] lg:h-[169px]' alt='Sponsor Banner' />
   <span class='text-sm flex flex-col justify-between'>
     <span class='p-[10px]'>
@@ -37,3 +45,11 @@ const {
     <span class='sponsor-footer'>Partner Content</span>
   </span>
 </a>
+
+<script>
+  document.querySelector('[close-sponsor]')?.addEventListener('click', (e) => {
+    e.preventDefault();
+    e.stopPropagation();
+    document.getElementById('sponsor-ad')?.classList.add('hidden');
+  });
+</script>

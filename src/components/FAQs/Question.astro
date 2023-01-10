@@ -14,9 +14,9 @@ const { question, isActive = false } = Astro.props;
 >
   <button
     faq-question
-    class='flex flex-row justify-between items-center p-3 w-full'
+    class='flex flex-row justify-between items-center p-2 sm:p-3 w-full'
   >
-    <span class='text-md text-left font-medium'>{question}</span>
+    <span class='text-sm sm:text-base text-left font-medium'>{question}</span>
     <Icon icon='down' class='h-6 hidden sm:block text-gray-400' />
   </button>
   <div class:list={['answer', { hidden: !isActive }]} faq-answer>
