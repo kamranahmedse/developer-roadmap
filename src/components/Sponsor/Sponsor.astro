@@ -26,7 +26,9 @@ const {
   id='sponsor-ad'
   target='_blank'
   rel='noopener sponsored'
-  onclick={event ? `window.fireEvent(${JSON.stringify(event)})` : ''}
+  ga-category={event?.category}
+  ga-action={event?.action}
+  ga-label={event?.label}
   class='fixed bottom-[15px] right-[20px] outline-transparent z-50 bg-white max-w-[330px] shadow-lg outline-0 hidden'
 >
   <button

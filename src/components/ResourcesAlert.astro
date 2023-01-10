@@ -29,10 +29,12 @@ const roadmapTitle =
         <p class='text-sm'>
           Get the latest {roadmapTitle} news from our sister site{' '}
           <a
-            href='https://thenewstack.io'
+            href='https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
             target='_blank'
             class='font-semibold underline'
-            onclick="window.fireEvent({ category: 'PartnerClick', action: `TNS Referral`, label: `TNS Referral - Roadmap` })"
+            ga-category='PartnerClick'
+            ga-action='TNS Referral'
+            ga-label='TNS Referral - Roadmap'
           >
             TheNewStack.io
           </a>
