@@ -1,31 +1,69 @@
 ---
-import Icon from "./Icon.astro";
-import Loader from "./Loader.astro";
+import Icon from './Icon.astro';
+import Loader from './Loader.astro';
 
+export interface Props {
+  roadmapId: string;
+}
+
+const { roadmapId } = Astro.props;
+const githubLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/roadmaps/${roadmapId}/content`;
 ---
 
 <div id='topic-overlay' class='hidden'>
-    <div class="fixed top-0 right-0 z-40 h-screen p-4 sm:p-6 overflow-y-auto bg-white w-full sm:max-w-[600px]" tabindex="-1" id='topic-body'>
-      <div id='topic-loader' class='hidden'>
-        <Loader />
-      </div>
-  
-      <div id='topic-actions' class='hidden mb-2'>
-        <button id='mark-topic-done' class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700 inline-flex items-center'>
-          <Icon icon="check" /> <span class='ml-2'>Mark as Done</span>
-        </button>
-  
-        <button id='mark-topic-pending' class='hidden bg-red-600 text-white p-1 px-2 text-sm rounded-md hover:bg-red-700 inline-flex items-center'>
-          <Icon icon="reset" /> <span class='ml-2'>Mark as Pending</span>
-        </button>
-  
-        <button type="button" id='close-topic' class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center">
-          <Icon icon="close" />
-        </button>
-      </div>
-  
-      <div id='topic-content' class='prose prose-h1:mt-7 prose-h1:mb-2.5 prose-p:mt-0 prose-p:mb-2 prose-li:m-0 prose-li:mb-0.5  prose-h2:mb-3 prose-h2:mt-0'></div>
+  <div
+    class='fixed top-0 right-0 z-40 h-screen p-4 sm:p-6 overflow-y-auto bg-white w-full sm:max-w-[600px]'
+    tabindex='-1'
+    id='topic-body'
+  >
+    <div id='topic-loader' class='hidden'>
+      <Loader />
     </div>
-    <div class="bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30"></div>
+
+    <div id='topic-actions' class='hidden mb-2'>
+      <button
+        id='mark-topic-done'
+        class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700 inline-flex items-center'
+      >
+        <Icon icon='check' />
+        <span class='ml-2'>Mark as Done</span>
+      </button>
+
+      <button
+        id='mark-topic-pending'
+        class='hidden bg-red-600 text-white p-1 px-2 text-sm rounded-md hover:bg-red-700 inline-flex items-center'
+      >
+        <Icon icon='reset' />
+        <span class='ml-2'>Mark as Pending</span>
+      </button>
+
+      <button
+        type='button'
+        id='close-topic'
+        class='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center'
+      >
+        <Icon icon='close' />
+      </button>
+    </div>
+
+    <div
+      id='topic-content'
+      class='prose prose-h1:mt-7 prose-h1:mb-2.5 prose-p:mt-0 prose-p:mb-2 prose-li:m-0 prose-li:mb-0.5 prose-h2:mb-3 prose-h2:mt-0'
+    >
+    </div>
+
+    <p
+      id='contrib-meta'
+      class='text-gray-400 text-sm border-t pt-3 mt-10 hidden'
+    >
+      We are still working on this page. You can contribute by submitting a
+      brief description and a few links to learn more about this topic <a
+        target='_blank'
+        class='underline text-blue-700'
+        href={githubLink}>on GitHub repository.</a
+      >.
+    </p>
   </div>
-  
+  <div class='bg-gray-900 bg-opacity-50 dark:bg-opacity-80 fixed inset-0 z-30'>
+  </div>
+</div>
