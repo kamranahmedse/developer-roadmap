@@ -1,0 +1,42 @@
+---
+import Icon from '../Icon.astro';
+
+export interface Props {
+  question: string;
+  isActive?: boolean;
+}
+
+const { question, isActive = false } = Astro.props;
+---
+
+<div
+  class='faq-item bg-white border rounded-md hover:bg-gray-50 border-gray-300'
+>
+  <button
+    faq-question
+    class='flex flex-row justify-between items-center p-3 w-full'
+  >
+    <span class='text-md text-left font-medium'>{question}</span>
+    <Icon icon='down' class='h-6 hidden sm:block text-gray-400' />
+  </button>
+  <div class:list={['answer', { hidden: !isActive }]} faq-answer>
+    <slot />
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('[faq-question]').forEach((el) => {
+    el.addEventListener('click', () => {
+      // Hide any other visible answers
+      document.querySelectorAll('[faq-answer]').forEach((element) => {
+        element.classList.add('hidden');
+      });
+
+      // Show the current answer
+      const answer = el.nextElementSibling;
+      if (answer) {
+        answer.classList.remove('hidden');
+      }
+    });
+  });
+</script>

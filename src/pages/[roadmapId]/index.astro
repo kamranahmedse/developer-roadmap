@@ -1,5 +1,6 @@
 ---
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
+import FAQs from '../../components/FAQs.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
@@ -21,6 +22,7 @@ interface Params extends Record<string, string | undefined> {
 
 const { roadmapId } = Astro.params as Params;
 const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
+const questions = await import (`../../roadmaps/${roadmapId}/faqs.astro`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 
@@ -64,5 +66,6 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
   {roadmapData.isUpcoming && <UpcomingRoadmap />}
 
+  <questions.default />
   <CaptchaScripts slot='after-footer' />
 </BaseLayout>
