@@ -2,7 +2,7 @@
 jsonUrl: "/jsons/software-design-architecture.json"
 pdfUrl: "/pdfs/software-design-architecture.pdf"
 order: 11
-featuredTitle: "Software Design"
+featuredTitle: "Design and Architecture"
 featuredDescription: "Guide to learn software design and architecture"
 title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
