@@ -27,7 +27,15 @@ const {
   sponsor,
 } = Astro.props;
 
-const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+// Remove trailing slashes to consider the page as canonical
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink.replace(
+  /\/$/,
+  ''
+)}`;
+
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
 ---
 
 <!DOCTYPE html>
@@ -35,6 +43,7 @@ const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
   <head>
     <meta charset='UTF-8' />
     <meta name='generator' content={Astro.generator} />
+    <meta name='commit' content={commitUrl} />
     <title>{title}</title>
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />

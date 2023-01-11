@@ -48,6 +48,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Python Roadmap](https://roadmap.sh/python)
 - [Go Roadmap](https://roadmap.sh/golang)
 - [Java Roadmap](https://roadmap.sh/java)
+- [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 - [Design System Roadmap](https://roadmap.sh/design-system)
 - [DBA Roadmap](https://roadmap.sh/postgresql-dba)
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)

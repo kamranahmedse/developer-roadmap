@@ -11,4 +11,3 @@ Service meshes are commonly used in cloud-native architectures and are often man
 Visit the following resources to learn more:
 
 - [What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
-- [Service Mesh Explained - Cloud Native Computing Foundation (CNCF)](https://www.cncf.io/blog/2018/05/02/service-mesh-explained/)

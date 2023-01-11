@@ -3,7 +3,7 @@ export class Sharer {
     this.init = this.init.bind(this);
     this.onScroll = this.onScroll.bind(this);
 
-    this.shareIconsId = "page-share-icons";
+    this.shareIconsId = 'page-share-icons';
   }
 
   get shareIconsEl() {
@@ -12,14 +12,18 @@ export class Sharer {
 
   onScroll() {
     if (window.scrollY < 100 || window.innerWidth < 1050) {
-      this.shareIconsEl.classList.add("hidden");
+      this.shareIconsEl.classList.add('hidden');
       return null;
     }
 
-    this.shareIconsEl.classList.remove("hidden");
+    this.shareIconsEl.classList.remove('hidden');
   }
 
   init() {
-    window.addEventListener("scroll", this.onScroll, { passive: true });
+    if (!this.shareIconsEl) {
+      return;
+    }
+
+    window.addEventListener('scroll', this.onScroll, { passive: true });
   }
 }

@@ -4,5 +4,5 @@ The `for` loop is a standard control-flow construct in many programming language
 
 Visit the following resources to learn more:
 
-- [JavaScript `for` Loop - CodeGuage](https://www.codeguage.com/courses/js/loops-for-loop)
-- [The `for` Loop - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)
+- [JavaScript for Loop - CodeGuage](https://www.codeguage.com/courses/js/loops-for-loop)
+- [The for Loop - MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for)

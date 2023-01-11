@@ -1,7 +1,7 @@
 ---
 jsonUrl: "/jsons/design-system.json"
 pdfUrl: "/pdfs/design-system.pdf"
-order: 10
+order: 11
 featuredTitle: "Design System"
 featuredDescription: "Step by step guide to building a modern Design System"
 title: "Design System"
