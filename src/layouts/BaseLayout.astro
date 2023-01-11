@@ -28,10 +28,7 @@ const {
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
-const currentPageAbsoluteUrl = `https://roadmap.sh${permalink.replace(
-  /\/$/,
-  ''
-)}`;
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
 
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
