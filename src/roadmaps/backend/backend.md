@@ -10,6 +10,15 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2840.4
+sponsor:
+  url: "https://www.getambassador.io/api-gateway-to-success?utm_source=roadmap-sh&utm_medium=ebook&utm_campaign=edgestack-guide"
+  title: "API Gateways"
+  imageUrl: "/images/ambassador-img.png"
+  description: "Learn about the benefits and challenges of using API Gateway in cloud native environments."
+  event:
+    category: "SponsorClick"
+    action: "Ambassador Redirect"
+    label: "Clicked Ambassador Link"
 seo:
   title: "Backend Developer Roadmap"
   description: "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."
