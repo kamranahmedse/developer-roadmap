@@ -1,4 +1,4 @@
-# Mockbean Annotation
+# @MockBean Annotation
 
 `MockBean` is a Spring annotation that can be used to create a mock implementation of a bean in the Spring application context. When a test is annotated with MockBean, Spring creates a mock implementation of the specified bean and adds it to the application context. The mock bean can then be used to replace the real bean during testing.
 

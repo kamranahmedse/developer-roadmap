@@ -1,4 +1,4 @@
-# Spring boot test annotation
+# @SpringBootTest annotation
 
 `@SpringBootTest` This annotation is used to create a fully-configured instance of the Spring ApplicationContext for testing. It can be used to test the application's components, including controllers, services, and repositories, in a real application environment.
 
