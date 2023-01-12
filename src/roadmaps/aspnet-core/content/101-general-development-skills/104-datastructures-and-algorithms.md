@@ -5,7 +5,7 @@ As the name indicates, a **Data Structure** is a way of organizing the data in t
 Visit the following resources to learn more:
 
 - [What are Data Structures?](https://www.geeksforgeeks.org/data-structures)
-- [ Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
+- [Data Structures and Algorithms](https://www.javatpoint.com/data-structure-tutorial)
 - [Data Structures Illustrated](https://www.youtube.com/watch?v=9rhT3P1MDHk&list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
 - [C# resources](https://dev.to/adavidoaiei/fundamental-data-structures-and-algorithms-in-c-4ocf)
 - [Interview Questions about Data Structures](https://www.csharpstar.com/csharp-algorithms/)
