@@ -9,7 +9,8 @@
 }
 
 .prose ul li code {
-  color: white;
+  background: transparent;
+  border: 1px solid #EAEAEA;
 }
 
 .bg-stripes {
