@@ -11,6 +11,7 @@ dimensions:
   width: 968
   height: 2840.4
 sponsor:
+  expiryDate: "2023-02-02"
   url: "https://www.getambassador.io/api-gateway-to-success?utm_source=roadmap-sh&utm_medium=ebook&utm_campaign=edgestack-guide"
   title: "API Gateways"
   imageUrl: "/images/ambassador-img.png"
