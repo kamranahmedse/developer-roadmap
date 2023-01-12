@@ -32,24 +32,22 @@ import Icon from './Icon.astro';
 
     <!-- Mobile Navigation Button -->
     <button
-      id='show-mobile-navigation'
       class='text-gray-400 hover:text-gray-50 block sm:hidden cursor-pointer'
       aria-label='Menu'
-      onclick="document.getElementById('mobile-navigation').classList.remove('hidden');"
+      show-mobile-nav
     >
       <Icon icon='hamburger' />
     </button>
 
     <!-- Mobile Navigation Items -->
     <div
-      id='mobile-navigation'
       class='fixed top-0 bottom-0 left-0 right-0 z-40 bg-slate-900 items-center flex hidden'
+      mobile-nav
     >
       <button
-        id='close-mobile-navigation'
+        close-mobile-nav
         class='text-gray-400 hover:text-gray-50 block cursor-pointer absolute top-6 right-6'
         aria-label='Close Menu'
-        onclick="document.getElementById('mobile-navigation').classList.add('hidden');"
       >
         <Icon icon='close' />
       </button>
@@ -80,3 +78,15 @@ import Icon from './Icon.astro';
     </div>
   </nav>
 </div>
+
+<script>
+  document.querySelector('[show-mobile-nav]')?.addEventListener('click', () => {
+    document.querySelector('[mobile-nav]')?.classList.remove('hidden');
+  });
+
+  document
+    .querySelector('[close-mobile-nav]')
+    ?.addEventListener('click', () => {
+      document.querySelector('[mobile-nav]')?.classList.add('hidden');
+    });
+</script>

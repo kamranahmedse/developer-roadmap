@@ -2,7 +2,8 @@
 ---
 
 <script src='./analytics.js'></script>
-<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139582634-1'></script>
+<script async src='https://www.googletagmanager.com/gtag/js?id=UA-139582634-1'
+></script>
 <script is:inline>
   // @ts-nocheck
   window.dataLayer = window.dataLayer || [];
@@ -12,4 +13,29 @@
   gtag('js', new Date());
 
   gtag('config', 'UA-139582634-1');
+
+  document.addEventListener('click', (e) => {
+    let trackEl = e.target;
+    if (!trackEl.getAttribute('ga-category')) {
+      trackEl = trackEl.closest('[ga-category]');
+    }
+
+    if (!trackEl) {
+      return;
+    }
+
+    const category = trackEl.getAttribute('ga-category');
+    const action = trackEl.getAttribute('ga-action');
+    const label = trackEl.getAttribute('ga-label');
+
+    if (!category) {
+      return;
+    }
+
+    window.fireEvent({
+      category,
+      action,
+      label,
+    });
+  });
 </script>

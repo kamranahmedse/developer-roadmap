@@ -1,18 +1,20 @@
 # Terminology
 
-Spring Boot is a framework for building Spring-based applications. It provides a set of features and tools to help developers quickly and easily create stand-alone, production-grade Spring-based applications.
+Spring Core is the foundation of the Spring Framework, which provides a comprehensive programming and configuration model for Java-based applications. Here are some key terms and concepts related to Spring Core:
 
-Here are a few key terms and concepts that are commonly used when working with Spring Boot:
+- Beans: In Spring, a "bean" is a Java object that is managed by the Spring container. Beans are typically defined using configuration metadata, which can be specified in XML, Java annotations, or Java code.
+- Inversion of Control (IoC): One of the main principles of Spring is Inversion of Control (IoC), which means that the Spring container is responsible for managing the lifecycle of beans and injecting their dependencies.
+- Dependency Injection (DI): Spring uses Dependency Injection (DI) to manage the dependencies between beans. In DI, an object's dependencies are provided to it by the container, rather than the object creating or looking up its own dependencies.
+- Container: The Spring container is the core part of the Spring Framework, which creates and manages beans and their dependencies.
+- ApplicationContext: An ApplicationContext is an implementation of the Spring container. It is responsible for loading and managing the configuration metadata and creating the beans defined in that metadata.
+- Aspect-Oriented Programming (AOP): Spring supports Aspect-Oriented Programming (AOP), which allows you to separate cross-cutting concerns, such as logging or security, from the business logic of your application.
+- Events: Spring provides an event model that allows beans to send and receive events. This is used to decouple the beans from each other, making the application more loosely coupled.
+- ApplicationEvent and listener: Spring support publish subscribe model for event handling, ApplicationEvent defines event object, and the listener is a class that implements ApplicationListener interface, listening for the specific event and take the necessary action.
+- Data Access: Spring provides a consistent, high-level abstraction for data access using various frameworks like JDBC, Hibernate, JPA.
+- Transactions: Spring provides a flexible, consistent and easy way to declaratively manage transactions with different underlying technologies such as JPA, JDBC, and Hibernate.
+- Task Execution and Scheduling: Spring provides a TaskExecutor and TaskScheduler, providing a convenient way to run tasks concurrently, on a scheduled basis or asynchronously.
 
-- Starters: Spring Boot starters are a set of convenient dependency descriptors that you can include in your application to add useful libraries and frameworks to your project. For example, if you want to add Spring MVC to your project, you can include the "spring-boot-starter-web" dependency in your pom.xml file, and Spring Boot will automatically add all of the necessary dependencies to your project.
+This list is not exhaustive, it covers common terms and concepts used. Visit the following links to learn more about Spring:
 
-- Auto-configuration: One of the key features of Spring Boot is its ability to automatically configure your application based on the dependencies that you have included in your project. This can include things like setting up an embedded web server, configuring a database connection, or enabling security features.
-
-- Properties: Spring Boot applications can be configured using a variety of properties. These properties can be defined in a application.properties or application.yml file in the project classpath, and they can be used to configure things like the server port, database connection details, and various other aspects of the application.
-
-- Spring Initializer: Spring Initializer is a web-based tool that allows you to quickly generate a basic structure for a new Spring Boot project, including a pom.xml file with the appropriate dependencies and a simple "Hello, World" application.
-
-For more information visit the following links:
-
-- [Spring Boot - Introduction](https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm)
-- [Spring Boot Tutorial](https://www.digitalocean.com/community/tutorials/spring-boot-tutorial)
+- [Spring Boot - Official Website](https://spring.io/projects/spring-boot)
+- [Spring Boot - Starter Guide](https://spring.io/quickstart)

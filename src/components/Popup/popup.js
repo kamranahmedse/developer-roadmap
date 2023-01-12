@@ -31,8 +31,9 @@ export class Popup {
     const target = e.target;
     const popupBody = target.closest('.popup-body');
     const closestPopup = target.closest('.popup');
+    const closeBtn = target.closest('.popup-close');
 
-    if (popupBody) {
+    if (!closeBtn && popupBody) {
       return;
     }
 
