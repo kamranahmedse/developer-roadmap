@@ -9,3 +9,6 @@ export const roadmapTheme = extendTheme({
     }
   }
 });
+.mb-1.5 block sm:mb-0 {
+  animation-duration:1s;
+}
