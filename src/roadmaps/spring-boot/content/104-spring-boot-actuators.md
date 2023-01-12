@@ -1,4 +1,4 @@
-# Spring boot actuators
+# Actuators
 
 Spring Boot Actuators are a set of production-ready features in Spring Boot that allow you to monitor and manage your application in various ways. They provide a variety of endpoints that expose information about the health and performance of your application, and allow you to perform various management tasks such as shutting down the application or refreshing its configuration.
 
@@ -12,10 +12,8 @@ Some of the key features of Spring Boot Actuators include:
 
 Spring Boot Actuators are typically used in production environments to monitor the health and performance of an application and identify any issues that may arise. They can also be used in development and testing environments to gain insight into the internal workings of the application.
 
-Actuators can be easily added to a Spring Boot application by including the spring-boot-starter-actuator dependency in your project and they can be accessed by default on a special /actuator path in your application. With Actuators you can monitor the health of your application and gain insight on how it behaves, also it can be used to perform various management tasks on your application.
-
 For more information, visit the following links:
 
-- [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/#:~:text=Spring%20Boot%20Actuator%20is%20a,how%20to%20add%20these%20services.)
+- [Building a RESTful Web Service with Spring Boot Actuator](https://spring.io/guides/gs/actuator-service/)
 - [Spring Boot Starter Actuator](https://www.javatpoint.com/spring-boot-actuator)
 - [What is Spring Boot Actuator](https://www.baeldung.com/spring-boot-actuators)

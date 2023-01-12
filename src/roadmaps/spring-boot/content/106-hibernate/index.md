@@ -1,6 +1,6 @@
 # Hibernate
 
-Spring is an open-source framework developed by pivotal is an application framework and inversion of control container for the Java platform which provides infrastructure support for developing applications. Hibernate is a Java framework that provides an object-relational mapping to an object-oriented model to the relational database. It means hibernate provides from Java classes to database tables and also provides data querying and retrieval facility.
+Hibernate is a Java framework that provides an object-relational mapping to an object-oriented model to the relational database. It means hibernate provides from Java classes to database tables and also provides data querying and retrieval facility.
 
 For more resources, visit the following links:
 

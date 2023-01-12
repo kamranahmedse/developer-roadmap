@@ -1,4 +1,4 @@
-# Jpa test
+# JPA Test
 
 Spring JPA (Java Persistence API) is a library that makes it easy to work with databases and other data stores in a Spring application. Spring JPA uses the Java Persistence API (JPA) to interact with databases and provides an abstraction layer to work with different data stores.
 
@@ -8,7 +8,7 @@ There are several ways to test the persistence layer using Spring JPA. One way i
 
 Spring Test module provides different annotations such as @DataJpaTest and @AutoConfigureTestDatabase that facilitates the testing of JPA specific functionality.
 
-Additionally, Spring provides the JPA Testing Utilities, which provides a set of utility classes and annotations to test JPA-based persistence layer easily, such as @DataJpaTest, @AutoConfigureTestDatabase, and TestEntityManager classes. These utilities can be used to create, read, update, and delete entities, perform JPA queries, and interact with the database during the test.
+Additionally, Spring provides the JPA Testing Utilities, which provides a set of utility classes and annotations to test JPA-based persistence layer easily, such as `@DataJpaTest`, `@AutoConfigureTestDatabase`, and TestEntityManager classes. These utilities can be used to create, read, update, and delete entities, perform JPA queries, and interact with the database during the test.
 
 Testing the persistence layer separately from the rest of the application allows to catch any issues early in the development process, making it easy to identify and fix bugs and improve the quality of the application.
 

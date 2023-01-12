@@ -4,4 +4,4 @@ Angular processes all data bindings once for each JavaScript event cycle, from t
 
 Visit the following resources to learn more:
 
-- [Angular.io Website](https://angular.io/guide/architecture-components#:~:text=Angular%20processes%20all%20data%20bindings,between%20parent%20and%20child%20components.)
+- [Angular.io Website](https://angular.io/guide/architecture-components)

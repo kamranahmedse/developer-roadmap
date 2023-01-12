@@ -16,4 +16,3 @@ For more information visit the following links:
 
 - [Spring Boot - Introduction](https://www.tutorialspoint.com/spring_boot/spring_boot_introduction.htm)
 - [Spring Boot Tutorial](https://www.digitalocean.com/community/tutorials/spring-boot-tutorial)
-- [Guide to Spring Boot](https://www.educative.io/courses/guide-spring-5-spring-boot-2/3jjq3L6VW0n)

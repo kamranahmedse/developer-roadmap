@@ -2,9 +2,7 @@
 
 Spring Cloud Sleuth is a library for distributed tracing in Spring-based applications. Distributed tracing is a technique that allows developers to track the flow of a request as it travels through a microservices-based application, in order to understand how the different components of the system are interacting and to identify and troubleshoot performance bottlenecks.
 
-Spring Cloud Sleuth provides a simple, consistent way to add trace information to the requests flowing through a Spring-based application. It automatically adds trace information, such as trace and span IDs, to requests and responses, so that developers can easily correlate requests as they travel through the different services and components of their application. It also integrates with other distributed tracing systems such as Zipkin, so that developers can use the same trace information across different systems.
-
-It also supports log correlation, so that developers can easily see the trace information in their application logs. By using Spring Cloud Sleuth developer can easily debug, troubleshoot and monitor the microservices based application by tracing the requests throughout the different microservices.
+Spring Cloud Sleuth provides a simple, consistent way to add trace information to the requests flowing through a Spring-based application. It automatically adds trace information, such as trace and span IDs, to requests and responses, so that developers can easily correlate requests as they travel through the different services and components of their application.
 
 For more resources, visit the following links:
 
