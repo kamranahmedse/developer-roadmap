@@ -1,6 +1,10 @@
 # Spring Core
 
-Spring is an application framework for the Java platform. It provides the infrastructure support for developing Java applications, including dependency injection, data access, transaction management, and more.
+Spring is an open-source framework that provides a comprehensive programming and configuration model for modern Java-based enterprise applications. The core module of Spring, also known as the "Spring Core" module, is at the heart of the framework and provides the fundamental functionality for dependency injection (DI) and inversion of control (IoC). In addition to dependency injection, the Spring Core module also provides several other features, such as:
+
+- A flexible and extensible validation framework
+- A type conversion system
+- A consistent messaging framework
 
 You can learn more about Spring Core from the links below:
 
