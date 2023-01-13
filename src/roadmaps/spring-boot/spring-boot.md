@@ -11,6 +11,12 @@ isNew: true
 dimensions:
   width: 968
   height: 1245.52
+schema:
+  headline: "Spring Boot Roadmap"
+  description: "Learn Spring Boot with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/spring-boot.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Learn to become a modern Spring Boot developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for spring boot development. Learn to become a modern Spring Boot developer by following the steps, skills, resources and guides listed in this roadmap."

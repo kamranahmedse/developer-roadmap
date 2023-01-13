@@ -10,6 +10,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2527.46
+schema:
+  headline: "DevOps Roadmap"
+  description: "Learn to become a DevOps, SRE or get any other operations role with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/devops.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 sponsor:
   url: "https://www.tigera.io/lp/kubernetes-security-and-observability-ebook/?utm_campaign=O%27Reilly-book-final-release&utm_medium=web&utm_source=Insight-Partners-popup"
   title: "Free eBook"

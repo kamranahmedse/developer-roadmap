@@ -10,6 +10,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2277.8
+schema:
+  headline: "Angular Developer Roadmap"
+  description: "Learn how to become a Angular Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/angular.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Angular Developer Roadmap: Learn to become a Angular developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for angular development. Learn to become a modern Angular developer by following the steps, skills, resources and guides listed in this roadmap."

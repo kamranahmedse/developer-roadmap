@@ -11,6 +11,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2173.87
+schema:
+  headline: "Blockchain Developer Roadmap"
+  description: "Learn how to become a Blockchain Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/blockchain.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Blockchain Developer Roadmap: Learn to become a blockchain developer"
   description: "Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."

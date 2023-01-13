@@ -11,6 +11,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2107.75
+schema:
+  headline: "QA Engineer Roadmap"
+  description: "Learn to become a QA Engineer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/qa.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "QA Roadmap: Learn to become a modern QA engineer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for modern QA development. Learn to become a modern QA engineer by following the steps, skills, resources and guides listed in this roadmap."

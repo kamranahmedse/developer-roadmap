@@ -11,6 +11,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2309.7
+schema:
+  headline: "Design System Roadmap"
+  description: "Learn how to create a Design System with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/design-system.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "How to Create a Design System"
   description: "Learn how to create a design system or become a design system engineer with this step by step guide with resources."

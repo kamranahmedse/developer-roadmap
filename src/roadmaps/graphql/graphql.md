@@ -8,6 +8,12 @@ title: "GraphQL"
 description: "Step by step guide to learn GraphQL in 2023"
 isNew: true
 hasTopics: true
+schema:
+  headline: "GraphQL Roadmap"
+  description: "Learn how to use GraphQL with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/graphql.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "GraphQL Roadmap"
   description: "Learn GraphQL with this step by step guide and resources."

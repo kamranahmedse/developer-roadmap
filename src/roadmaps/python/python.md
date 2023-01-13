@@ -10,6 +10,12 @@ hasTopics: true
 dimensions:
   width: 992
   height: 1259.03
+schema:
+  headline: "Python Roadmap"
+  description: "Learn Python with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/python.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Learn to become a modern Python developer"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap."

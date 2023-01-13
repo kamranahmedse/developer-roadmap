@@ -11,6 +11,12 @@ hasTopics: true
 dimensions:
   width: 968
   height: 3009.05
+schema:
+  headline: "Computer Science Roadmap"
+  description: "Computer Science roadmap for the self-taught developers and bootcamp grads. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/computer-science.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Computer Science Roadmap: Curriculum for the self taught developer"
   description: "Computer Science study plan with free resources for the self-taught and bootcamp grads wanting to learn Computer Science."
