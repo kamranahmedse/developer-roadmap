@@ -1,7 +1,5 @@
 ---
-import Answer from '../../components/FAQs/Answer.astro';
-import FAQs, { FAQType } from '../../components/FAQs/FAQs.astro';
-import Question from '../../components/FAQs/Question.astro';
+import type { FAQType } from '../../components/FAQs/FAQs.astro';
 
 export const faqs: FAQType[] = [
   {
@@ -48,17 +46,3 @@ export const faqs: FAQType[] = [
   },
 ];
 ---
-
-<FAQs>
-  {
-    faqs.map((faq, questionIndex) => (
-      <Question isActive={questionIndex === 0} question={faq.question}>
-        <Answer>
-          {faq.answer.map((answer, index) => (
-            <p class:list={{ 'mb-3': index !== faq.answer.length - 1 }}>{answer}</p>
-          ))}
-        </Answer>
-      </Question>
-    ))
-  }
-</FAQs>

@@ -1,5 +1,6 @@
 ---
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
+import FAQs from '../../components/FAQs/FAQs.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
@@ -22,7 +23,7 @@ interface Params extends Record<string, string | undefined> {
 
 const { roadmapId } = Astro.params as Params;
 const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
-const questions = await import(`../../roadmaps/${roadmapId}/faqs.astro`);
+const { faqs: roadmapFAQs = [] } = await import(`../../roadmaps/${roadmapId}/faqs.astro`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];
@@ -41,8 +42,8 @@ if (roadmapData.schema) {
   );
 }
 
-if (questions.faqs) {
-  jsonLdSchema.push(generateFAQSchema(questions.faqs));
+if (roadmapFAQs.length) {
+  jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
 ---
 
@@ -84,6 +85,7 @@ if (questions.faqs) {
 
   {roadmapData.isUpcoming && <UpcomingRoadmap />}
 
-  <questions.default />
+  <FAQs faqs={roadmapFAQs} />
+
   <CaptchaScripts slot='after-footer' />
 </BaseLayout>

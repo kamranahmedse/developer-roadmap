@@ -1,8 +1,21 @@
 ---
+import Answer from './Answer.astro';
+import Question from './Question.astro';
+
 export type FAQType = {
   question: string;
   answer: string[];
 };
+
+export interface Props {
+  faqs: FAQType[];
+}
+
+const { faqs } = Astro.props;
+
+if (faqs.length === 0) {
+  return '';
+}
 ---
 
 <div class='border-t bg-gray-100'>
@@ -12,7 +25,17 @@ export type FAQType = {
     </div>
 
     <div class='flex flex-col gap-1 pb-8'>
-      <slot />
+      {
+        faqs.map((faq, questionIndex) => (
+          <Question isActive={questionIndex === 0} question={faq.question}>
+            <Answer>
+              {faq.answer.map((answer, index) => (
+                <p class:list={{ 'mb-3': index !== faq.answer.length - 1 }}>{answer}</p>
+              ))}
+            </Answer>
+          </Question>
+        ))
+      }
     </div>
   </div>
 </div>

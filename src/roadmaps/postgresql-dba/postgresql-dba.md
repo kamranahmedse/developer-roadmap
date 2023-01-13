@@ -216,7 +216,3 @@ Get involved to Postgres community and contribute to Postgres; be a useful membe
   - pgsql-bugs
 - Reviewing patches
 - Writing patches, attending in [Commitfests](https://commitfest.postgresql.org/)
-
-<br />
-<br />
-<br />
