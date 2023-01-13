@@ -20,6 +20,12 @@ sponsor:
     category: "SponsorClick"
     action: "Ambassador Redirect"
     label: "Clicked Ambassador Link"
+schema:
+  headline: "Backend Developer Roadmap"
+  description: "Learn how to become a Backend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
+  imageUrl: "https://roadmap.sh/roadmaps/backend.png"
+  datePublished: "2023-01-05"
+  dateModified: "2023-01-20"
 seo:
   title: "Backend Developer Roadmap"
   description: "Learn to become a modern backend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development."

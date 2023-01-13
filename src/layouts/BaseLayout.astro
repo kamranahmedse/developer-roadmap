@@ -16,6 +16,7 @@ export interface Props {
   noIndex?: boolean;
   permalink?: string;
   sponsor?: SponsorType;
+  jsonLd?: Record<string, unknown>;
 }
 
 const {
@@ -25,14 +26,13 @@ const {
   noIndex = false,
   permalink = '',
   sponsor,
+  jsonLd,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
 const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
 
-const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
-  import.meta.env.GITHUB_SHA
-}`;
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
 ---
 
 <!DOCTYPE html>
@@ -69,43 +69,23 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-    <meta
-      name='apple-mobile-web-app-status-bar-style'
-      content='black-translucent'
-    />
+    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
     <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
     <meta name='application-name' content='roadmap.sh' />
 
-    <link
-      rel='apple-touch-icon'
-      sizes='180x180'
-      href='/manifest/apple-touch-icon.png'
-    />
+    <link rel='apple-touch-icon' sizes='180x180' href='/manifest/apple-touch-icon.png' />
     <meta name='msapplication-TileColor' content='#101010' />
     <meta name='theme-color' content='#848a9a' />
 
     <link rel='manifest' href='/manifest/manifest.json' />
-    <link
-      rel='icon'
-      type='image/png'
-      sizes='32x32'
-      href='/manifest/icon32.png'
-    />
-    <link
-      rel='icon'
-      type='image/png'
-      sizes='16x16'
-      href='/manifest/icon16.png'
-    />
-    <link
-      rel='shortcut icon'
-      href='/manifest/favicon.ico'
-      type='image/x-icon'
-    />
+    <link rel='icon' type='image/png' sizes='32x32' href='/manifest/icon32.png' />
+    <link rel='icon' type='image/png' sizes='16x16' href='/manifest/icon16.png' />
+    <link rel='shortcut icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <slot name='after-header' />
+    {jsonLd && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
     <YouTubeBanner />

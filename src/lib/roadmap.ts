@@ -22,6 +22,13 @@ export interface RoadmapFrontmatter {
     description: string;
     keywords: string[];
   };
+  schema?: {
+    headline: string;
+    description: string;
+    datePublished: string;
+    dateModified: string;
+    imageUrl: string;
+  };
   relatedRoadmaps: string[];
   sitemap: {
     priority: number;
@@ -46,12 +53,9 @@ function roadmapPathToId(filePath: string): string {
  * @returns string[] Array of roadmap IDs
  */
 export async function getRoadmapIds() {
-  const roadmapFiles = await import.meta.glob<RoadmapFileType>(
-    '/src/roadmaps/*/*.md',
-    {
-      eager: true,
-    }
-  );
+  const roadmapFiles = await import.meta.glob<RoadmapFileType>('/src/roadmaps/*/*.md', {
+    eager: true,
+  });
 
   return Object.keys(roadmapFiles).map(roadmapPathToId);
 }
@@ -62,15 +66,10 @@ export async function getRoadmapIds() {
  * @param tag Tag assigned to roadmap
  * @returns Promisified RoadmapFileType[]
  */
-export async function getRoadmapsByTag(
-  tag: string
-): Promise<RoadmapFileType[]> {
-  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>(
-    '/src/roadmaps/*/*.md',
-    {
-      eager: true,
-    }
-  );
+export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> {
+  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>('/src/roadmaps/*/*.md', {
+    eager: true,
+  });
 
   const roadmapFiles = Object.values(roadmapFilesMap);
   const filteredRoadmaps = roadmapFiles
@@ -80,7 +79,5 @@ export async function getRoadmapsByTag(
       id: roadmapPathToId(roadmapFile.file),
     }));
 
-  return filteredRoadmaps.sort(
-    (a, b) => a.frontmatter.order - b.frontmatter.order
-  );
+  return filteredRoadmaps.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 }
