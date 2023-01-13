@@ -16,7 +16,7 @@ export interface Props {
   noIndex?: boolean;
   permalink?: string;
   sponsor?: SponsorType;
-  jsonLd?: Record<string, unknown>;
+  jsonLd?: Record<string, unknown>[];
 }
 
 const {
@@ -26,7 +26,7 @@ const {
   noIndex = false,
   permalink = '',
   sponsor,
-  jsonLd,
+  jsonLd = [],
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -85,7 +85,7 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <slot name='after-header' />
-    {jsonLd && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
+    {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
     <YouTubeBanner />

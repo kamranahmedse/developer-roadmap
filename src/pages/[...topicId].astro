@@ -3,7 +3,6 @@ import Breadcrumbs from '../components/Breadcrumbs.astro';
 import RoadmapBanner from '../components/RoadmapBanner.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getTopicFiles, TopicFileType } from '../lib/topic';
-import '../styles/prism.css';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getTopicFiles();
@@ -15,8 +14,7 @@ export async function getStaticPaths() {
 }
 
 const { topicId } = Astro.params;
-const { file, breadcrumbs, roadmapId, roadmap, heading } =
-  Astro.props as TopicFileType;
+const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as TopicFileType;
 ---
 
 <BaseLayout
@@ -29,9 +27,7 @@ const { file, breadcrumbs, roadmapId, roadmap, heading } =
   <div class='bg-gray-50'>
     <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />
 
-    <div
-      class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'
-    >
+    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
       <main id='main-content'>
         <file.Content />
       </main>
