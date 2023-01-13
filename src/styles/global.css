@@ -8,9 +8,10 @@
   }
 }
 
-.prose ul li code {
-  background: #1e1e3f;
-  color: #9efeff;
+.prose ul li code, p code {
+  background: #1e1e3f !important;
+  color: #9efeff !important;
+  font-size: 14px;
 }
 
 .bg-stripes {

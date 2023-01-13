@@ -9,6 +9,9 @@ import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 export default defineConfig({
   site: 'https://roadmap.sh',
   markdown: {
+    shikiConfig: {
+      theme: 'dracula'
+    },
     rehypePlugins: [
       [
         rehypeExternalLinks,
