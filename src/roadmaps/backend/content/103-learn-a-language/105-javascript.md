@@ -13,5 +13,6 @@ Visit the following resources to learn more:
 - [You Dont Know JS Yet (book series) ](https://github.com/getify/You-Dont-Know-JS)
 - [Codecademy - Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
 - [JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
+- [Free JavaScript Practice website to master JavaScript - exercism](https://exercism.org/)
 - [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
