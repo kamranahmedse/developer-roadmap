@@ -1,4 +1,4 @@
-# Graphql
+# GraphQL
 
 GraphQL is a query language for your API that allows clients to define the structure of the data they need, and the server will return only the requested data. It is an alternative to RESTful web services, and it is gaining popularity because of its flexibility and efficiency.
 
