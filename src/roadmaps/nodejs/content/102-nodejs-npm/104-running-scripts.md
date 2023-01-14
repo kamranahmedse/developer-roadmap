@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [Example of Running Scripts](https://riptutorial.com/node-js/example/4592/running-scripts)
 - [Introduction to NPM Scripts](https://www.geeksforgeeks.org/introduction-to-npm-scripts/)
-- [Running Scripts](https://docs.npmjs.com/downloading-and-installing-packages-locally)
+- [Running Scripts](https://learn.microsoft.com/en-us/shows/beginners-series-to-nodejs/how-to-use-npm-scripts-for-your-development-task-automation-7-of-26)
