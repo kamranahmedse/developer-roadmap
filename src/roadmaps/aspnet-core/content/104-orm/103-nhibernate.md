@@ -1,4 +1,4 @@
-# Nhibernate
+# NHibernate
 
 NHibernate is an open-source Object-Relational Mapping (ORM) framework for .NET. It is a powerful and flexible framework that can greatly simplify working with relational data in .NET. NHibernate is similar to other ORM frameworks such as Entity Framework and RepoDb in that it provides a higher-level abstraction on top of the underlying data access technology (ADO.NET in this case) and allows developers to work with data using domain-specific objects, eliminating the need to write raw SQL statements.
 
