@@ -1,4 +1,4 @@
-# Rest
+# REST
 
 REST (Representational State Transfer) is an architectural style for building web services. It is based on the principles of the HTTP protocol, and it uses the conventions of HTTP to create a standard interface for interacting with web services.
 
