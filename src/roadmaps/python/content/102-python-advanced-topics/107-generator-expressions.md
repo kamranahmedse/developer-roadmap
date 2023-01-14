@@ -1,4 +1,4 @@
-# Generator Compressions
+# Generator Comprehensions
 
 Generator comprehensions are a concise way to create a generator using a single line of code in Python. They are similar to list comprehensions, but instead of creating a list, they create a generator object that produces the values on-demand, as they are needed.
 
