@@ -5,7 +5,7 @@ In ASP.NET, log frameworks are libraries that provide a way to log and analyze d
 - Serilog
 - NLog
 - Log4Net
-- Elmah
+- ELMAH
 - Microsoft.Extensions.Logging
 
 These are some of the most popular log frameworks in ASP.NET, each of them has its own set of features and use cases, and the choice of which log framework to use will depend on the specific requirements of the application.
