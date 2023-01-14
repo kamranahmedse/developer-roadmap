@@ -1,4 +1,4 @@
-# GRPC
+# gRPC
 
 gRPC is a high-performance, open-source framework for building remote procedure call (RPC) APIs. It uses the Protocol Buffers data serialization format and the HTTP/2 protocol to create highly efficient and scalable APIs. gRPC supports a variety of programming languages, including C# and ASP.NET.
 
