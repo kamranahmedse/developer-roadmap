@@ -1,4 +1,4 @@
-# Odata
+# OData
 
 OData (Open Data Protocol) is a web protocol for querying and updating data. It is an open standard for creating and consuming RESTful web services. OData is built on top of the HTTP protocol, and it uses the conventions of REST to expose data through a standard interface.
 
