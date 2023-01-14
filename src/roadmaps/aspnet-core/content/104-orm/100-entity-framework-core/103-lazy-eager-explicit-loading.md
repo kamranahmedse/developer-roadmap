@@ -1,6 +1,6 @@
 # Lazy Eager Explicit Loading
 
-**Eager Loading**
+## Eager Loading
 
 Eager Loading helps you to load all your needed entities at once; i.e., all your child entities will be loaded at single database call. This can be achieved, using the Include method, which returs the related entities as a part of the query and a large amount of data is loaded at once.
 
