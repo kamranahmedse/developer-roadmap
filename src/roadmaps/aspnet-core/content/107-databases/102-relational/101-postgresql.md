@@ -1,4 +1,4 @@
-# Postgresql
+# PostgreSQL
 
 PostgreSQL, often simply "Postgres", is an open-source relational database management system (RDBMS) emphasizing extensibility and SQL compliance. It was originally developed at the University of California, Berkeley in the 1980s and is now maintained by the PostgreSQL Global Development Group.
 
