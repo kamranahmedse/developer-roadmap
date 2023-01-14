@@ -49,7 +49,7 @@ export function generateFAQSchema(faqs: FAQType[]) {
       name: faq.question,
       acceptedAnswer: {
         '@type': 'Answer',
-        text: faq.answer,
+        text: faq.answer.join(' '),
       },
     })),
   };
