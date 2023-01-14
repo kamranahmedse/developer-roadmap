@@ -1,4 +1,4 @@
-# Elmah
+# ELMAH
 
 ELMAH (Error Logging Modules and Handlers) is an open-source error logging and management library for ASP.NET applications. It is designed to be easy to use and easy to integrate into existing ASP.NET applications.
 
