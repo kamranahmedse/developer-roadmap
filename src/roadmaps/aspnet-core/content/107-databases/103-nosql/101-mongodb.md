@@ -1,4 +1,4 @@
-# Mongodb
+# MongoDB
 
 MongoDB is a cross-platform, open-source, NoSQL document-oriented database that can be used to store and retrieve large amounts of data. It uses a flexible, JSON-like data structure called BSON (binary JSON) and it is designed to handle large amounts of unstructured data.
 
