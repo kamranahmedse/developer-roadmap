@@ -1,4 +1,4 @@
-# Repodb
+# RepoDB
 
 RepoDb is an open-source ORM (Object-Relational Mapping) library for .NET that simplifies the process of working with databases. It is a lightweight, fast, and easy-to-use library that provides a simple and consistent API for performing common database operations such as querying, inserting, updating, and deleting data.
 
