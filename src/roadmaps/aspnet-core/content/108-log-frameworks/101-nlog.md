@@ -1,4 +1,4 @@
-# Nlog
+# NLog
 
 NLog is an open-source logging library for .NET applications, including ASP.NET. It is designed to be easy to use, highly configurable, and extensible, and it provides a number of features that help developers to log and analyze data in their applications.
 
