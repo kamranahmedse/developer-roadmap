@@ -1,4 +1,4 @@
-# Auto Mapper
+# AutoMapper
 
 AutoMapper is a library for .NET that allows you to easily map between objects of different types. It is particularly useful when working with domain models and data transfer objects (DTOs) in a layered architecture. It can also be used to map between different versions of an object, or to map between objects in different formats, such as JSON and XML.
 
