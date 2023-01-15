@@ -18,9 +18,9 @@
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
     "@astrojs/tailwind": "^2.1.3",
-    "astro": "^1.8.0",
-    "astro-compress": "^1.1.24",
-    "astro-critters": "^1.1.24",
+    "astro": "^1.9.2",
+    "astro-compress": "^1.1.27",
+    "astro-critters": "^1.1.26",
     "node-html-parser": "^6.1.4",
     "npm-check-updates": "^16.6.2",
     "rehype-external-links": "^2.0.1",
@@ -28,10 +28,10 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
-    "@tailwindcss/typography": "^0.5.8",
+    "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^4.0.0",
     "json-to-pretty-yaml": "^1.2.2",
-    "prettier": "^2.8.1",
-    "prettier-plugin-astro": "^0.7.0"
+    "prettier": "^2.8.3",
+    "prettier-plugin-astro": "^0.7.2"
   }
 }
