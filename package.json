@@ -13,7 +13,8 @@
     "compress:jsons": "node bin/compress-jsons.cjs",
     "upgrade": "ncu -u",
     "roadmap-links": "node bin/roadmap-links.cjs",
-    "roadmap-content": "node bin/roadmap-content.cjs"
+    "roadmap-content": "node bin/roadmap-content.cjs",
+    "test:e2e": "playwright test"
   },
   "dependencies": {
     "@astrojs/sitemap": "^1.0.0",
@@ -27,6 +28,7 @@
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
+    "@playwright/test": "^1.29.2",
     "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^4.0.0",
     "json-to-pretty-yaml": "^1.2.2",
