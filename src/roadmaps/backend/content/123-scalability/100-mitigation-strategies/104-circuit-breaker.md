@@ -8,4 +8,4 @@ The circuit breaker design pattern is useful for protecting a system from failur
 
 Visit the following resources to learn more:
 
-- [Circuit Breaker - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/circuit-breaker/)
+- [Circuit Breaker - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_mitigate_interaction_failure_graceful_degradation.html)
