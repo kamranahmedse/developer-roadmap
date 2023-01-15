@@ -7,6 +7,6 @@ For more information, visit the following link:
 
 - [Spring MockMVC tutorial](https://zetcode.com/spring/mockmvc/)
 - [Spring Boot MockMVC Example](https://howtodoinjava.com/spring-boot2/testing/spring-boot-mockmvc-example/)
-- [Integration Testing in Spring](baeldung.com/integration-testing-in-spring)
+- [Integration Testing in Spring](https://baeldung.com/integration-testing-in-spring)
 
 
