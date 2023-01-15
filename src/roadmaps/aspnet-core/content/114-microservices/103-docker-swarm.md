@@ -7,5 +7,4 @@ With Docker Swarm, you can easily deploy and scale your applications across mult
 To learn more, visit the following links:
 
 - [Introduction to Docker Swarm](https://www.section.io/engineering-education/introduction-to-docker-swarm-in-container-orchestration/)
-- [Scale ASP.NET Core Apps with Docker Swarm](https://www.pluralsight.com/guides/scale-asp-net-core-apps-with-docker-swarm-mode)
 - [How - Deploy to Swarm?](https://docs.docker.com/get-started/swarm-deploy/)

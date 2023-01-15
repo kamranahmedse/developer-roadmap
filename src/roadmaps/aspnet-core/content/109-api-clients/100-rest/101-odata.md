@@ -7,5 +7,4 @@ In ASP.NET, OData can be used to create RESTful web services that expose data in
 For more information, visit the following links:
 
 - [Create an OData v4 Endpoint Using ASP.NET](https://learn.microsoft.com/en-us/aspnet/web-api/overview/odata-support-in-aspnet-web-api/odata-v4/create-an-odata-v4-endpoint)
-- [Working with OData in ASP.NET Core](https://www.pluralsight.com/blog/software-development/odata-asp-net-core)
 - [Example of OData Protocol With ASP.NET Core](https://www.youtube.com/watch?v=L9HdnNCi0R0)

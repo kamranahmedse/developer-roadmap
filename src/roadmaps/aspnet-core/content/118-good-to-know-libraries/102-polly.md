@@ -4,6 +4,5 @@ Polly is an open-source library for .NET that provides a simple and flexible API
 
 To learn more, visit the following resources:
 
-- [Intro to Polly in ASP.NET](https://www.pluralsight.com/blog/software-development/intro-to-polly)
 - [Using Polly for .NET Resilience](https://www.telerik.com/blogs/using-polly-for-net-resilience-and-transient-fault-handling-with-net-core)
 - [Build Resilient Microservices Using Polly In ASP.NET](https://procodeguide.com/programming/polly-in-aspnet-core/)
