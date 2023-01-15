@@ -7,3 +7,5 @@ To use Code First Migrations, you need to enable it in your Entity Framework app
 Once Migrations is enabled, you can use the Package Manager Console to add a new migration to your application. This will generate a class that contains the necessary SQL commands to update the database schema. You can then use the Update-Database command to apply the migration to the database.
 
 - [What is a Code First Migration?](https://www.entityframeworktutorial.net/code-first/what-is-code-first.aspx)
+- [Example for Code First Migrations](https://learn.microsoft.com/en-us/ef/ef6/modeling/code-first/migrations/)
+- [Code First Migrations in Entity Framework](https://www.c-sharpcorner.com/UploadFile/26b237/code-first-migrations-in-entity-framework/)

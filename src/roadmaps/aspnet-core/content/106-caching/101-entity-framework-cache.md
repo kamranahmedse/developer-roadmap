@@ -1,4 +1,4 @@
-# Entity framework cache
+# Entity Framework Cache
 
 Entity Framework Core(EF Core) is a cross-platform version of the popular Entity Framework data access technology that is lightweight, extendable, and open source.
 It can be used as an object-relational mapper (O/RM), which can Allow .NET developers to use .NET objects to interact with a database and Removes the requirement for most of the data-access code that is generally required.
@@ -8,4 +8,5 @@ However, during peak loads, high-transaction .NET Core apps using EF Core have p
 Visit the following resources to learn more:
 
 - [Entity Framework 2nd Level Cache](https://www.gridgain.com/docs/latest/developers-guide/net-specific/net-entity-framework-cache)
-- [What is Entity Framework](https://www.youtube.com/watch?v=Z7713GBhi4k)
+- [What is Entity Framework?](https://www.youtube.com/watch?v=Z7713GBhi4k)
+- [Caching In Entity Framework](https://www.c-sharpcorner.com/article/caching-in-entity-framework-ef-core-using-ncache/)

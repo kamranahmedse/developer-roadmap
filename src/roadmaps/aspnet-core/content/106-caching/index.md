@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Caching in ASP.Net](https://www.c-sharpcorner.com/UploadFile/2072a9/caching-in-Asp-Net/)
 - [Overview of caching in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/performance/caching/overview?view=aspnetcore-7.0)
+- [Intro to Data Caching in ASP.NET](https://www.tutorialspoint.com/asp.net/asp.net_data_caching.htm)
