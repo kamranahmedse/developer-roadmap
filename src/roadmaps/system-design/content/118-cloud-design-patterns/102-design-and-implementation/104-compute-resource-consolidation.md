@@ -1,0 +1,1 @@
+# Compute resource consolidation

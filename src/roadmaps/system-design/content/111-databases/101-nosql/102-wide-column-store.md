@@ -1,0 +1,1 @@
+# Wide column store

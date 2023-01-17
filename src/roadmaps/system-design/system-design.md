@@ -7,7 +7,7 @@ featuredDescription: "Guide to learn system Design"
 title: "System Design"
 description: "Everything you need to know about designing large scale systems."
 isNew: true
-hasTopics: false
+hasTopics: true
 dimensions:
   width: 968
   height: 2848.5
