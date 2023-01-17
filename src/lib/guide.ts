@@ -8,6 +8,7 @@ export interface GuideFrontmatter {
     url: string;
     imageUrl: string;
   };
+  canonicalUrl?: string;
   seo: {
     title: string;
     description: string;
