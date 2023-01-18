@@ -29,4 +29,4 @@ To learn more, visit the following links:
 
  - [Getting started with Availability Patterns](https://github.com/donnemartin/system-design-primer)
  - [Availability in System Design](https://www.enjoyalgorithms.com/blog/availability-system-design-concept)
- - []()
+ - [System Design: Availability](https://dev.to/karanpratapsingh/system-design-availability-38bd)
