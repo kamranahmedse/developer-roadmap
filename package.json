@@ -32,6 +32,7 @@
     "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^4.0.0",
     "json-to-pretty-yaml": "^1.2.2",
+    "markdown-it": "^13.0.1",
     "prettier": "^2.8.3",
     "prettier-plugin-astro": "^0.7.2"
   }

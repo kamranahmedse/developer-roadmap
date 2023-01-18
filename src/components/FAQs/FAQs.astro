@@ -1,6 +1,9 @@
 ---
+import MarkdownIt from 'markdown-it';
 import Answer from './Answer.astro';
 import Question from './Question.astro';
+
+const md = new MarkdownIt();
 
 export type FAQType = {
   question: string;
@@ -30,7 +33,7 @@ if (faqs.length === 0) {
           <Question isActive={questionIndex === 0} question={faq.question}>
             <Answer>
               {faq.answer.map((answer, index) => (
-                <p class:list={{ 'mb-3': index !== faq.answer.length - 1 }}>{answer}</p>
+                <Fragment set:html={md.render(answer)} />
               ))}
             </Answer>
           </Question>
