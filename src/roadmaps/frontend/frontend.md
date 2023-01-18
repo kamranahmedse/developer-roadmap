@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/frontend.json"
+jsonUrl: "/jsons/roadmaps/frontend.json"
 pdfUrl: "/pdfs/frontend.pdf"
 order: 1
 featuredTitle: "Frontend"

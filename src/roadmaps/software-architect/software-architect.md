@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/software-architect.json"
+jsonUrl: "/jsons/roadmaps/software-architect.json"
 pdfUrl: "/pdfs/software-architect.pdf"
 order: 8
 featuredTitle: "Software Architect"

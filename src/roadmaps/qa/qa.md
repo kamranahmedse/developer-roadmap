@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/qa.json"
+jsonUrl: "/jsons/roadmaps/qa.json"
 pdfUrl: "/pdfs/qa.pdf"
 order: 7
 featuredTitle: "QA"

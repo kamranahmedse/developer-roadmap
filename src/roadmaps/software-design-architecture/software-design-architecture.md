@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/software-design-architecture.json"
+jsonUrl: "/jsons/roadmaps/software-design-architecture.json"
 pdfUrl: "/pdfs/software-design-architecture.pdf"
 order: 12
 featuredTitle: "Design and Architecture"

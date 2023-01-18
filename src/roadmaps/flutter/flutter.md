@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/flutter.json"
+jsonUrl: "/jsons/roadmaps/flutter.json"
 pdfUrl: "/pdfs/flutter.pdf"
 order: 10
 featuredTitle: "Flutter"

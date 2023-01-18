@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/javascript.json"
+jsonUrl: "/jsons/roadmaps/javascript.json"
 pdfUrl: "/pdfs/javascript.pdf"
 order: 5
 featuredTitle: "JavaScript"

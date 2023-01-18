@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/design-system.json"
+jsonUrl: "/jsons/roadmaps/design-system.json"
 pdfUrl: "/pdfs/design-system.pdf"
 order: 13
 featuredTitle: "Design System"
