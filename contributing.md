@@ -3,10 +3,10 @@
 First of all thank you for considering to contribute. Please look at the details below:
 
 - [Contribution](#contribution)
-- [New Roadmaps](#new-roadmaps)
-- [Existing Roadmaps](#existing-roadmaps)
-- [Adding Content](#adding-content)
-- [Guidelines](#guidelines)
+  - [New Roadmaps](#new-roadmaps)
+  - [Existing Roadmaps](#existing-roadmaps)
+  - [Adding Content](#adding-content)
+  - [Guidelines](#guidelines)
 
 ## New Roadmaps
 
@@ -23,7 +23,7 @@ For the existing roadmaps, please follow the details listed for the nature of co
 
 ## Adding Content
 
-Find [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/roadmap-astro/tree/master/src/roadmaps). Please keep the following guidelines in mind when submitting content:
+Find [the content directory inside the relevant roadmap](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/roadmaps). Please keep the following guidelines in mind when submitting content:
 
 - Content must be in English.
 - Put a brief description about the topic on top of the file and the a list of links below with each link having title of the URL.
