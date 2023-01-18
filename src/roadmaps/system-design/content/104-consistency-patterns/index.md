@@ -1,16 +1,13 @@
 # Consistency Patterns
 
-With multiple copies of the same data, we are faced with options on how to synchronize them so clients have a consistent view of the data. Recall the definition of consistency from the CAP theorem - Every read receives the most recent write or an error.
+Consistency patterns refer to the ways in which data is stored and managed in a distributed system, and how that data is made available to users and applications. There are three main types of consistency patterns:
 
-## Weak Consistency:
-After a write, reads may or may not see it. A best effort approach is taken. This approach is seen in systems such as memcached. Weak consistency works well in real time use cases such as VoIP, video chat, and realtime multiplayer games. For example, if you are on a phone call and lose reception for a few seconds, when you regain connection you do not hear what was spoken during connection loss.
+- Strong consistency
+- Weak consistency
+- Eventual Consistency
 
-## Eventual Consistency:
-After a write, reads will eventually see it (typically within milliseconds). Data is replicated asynchronously. This approach is seen in systems such as DNS and email. Eventual consistency works well in highly available systems.
+Each of these patterns has its own advantages and disadvantages, and the choice of which pattern to use will depend on the specific requirements of the application or system.
 
-## Strong Consistency:
-After a write, reads will see it. Data is replicated synchronously. This approach is seen in file systems and RDBMSes. Strong consistency works well in systems that need transactions.
+Have a look at the following resources to learn more:
 
-To learn more, visit the following links:
-- [Getting Started with Consistency Patterns](https://github.com/donnemartin/system-design-primer)
-- [Introduction to Consistency Patterns](https://iq.opengenus.org/consistency-patterns-in-system-design/)
+- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)
