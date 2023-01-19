@@ -9,6 +9,8 @@ There are four qualities of a RESTful interface:
 - Self-descriptive error message (status response in HTTP) - Use status codes, don't reinvent the wheel.
 - HATEOAS (HTML interface for HTTP) - your web service should be fully accessible in a browser.
 
+REST is focused on exposing data. It minimizes the coupling between client/server and is often used for public HTTP APIs. REST uses a more generic and uniform method of exposing resources through URIs, representation through headers, and actions through verbs such as GET, POST, PUT, DELETE, and PATCH. Being stateless, REST is great for horizontal scaling and partitioning.
+
 To learn more, visit the following links:
 
 - [What Is REST?](https://github.com/donnemartin/system-design-primer#REST)
