@@ -6,7 +6,7 @@ featuredTitle: "Software Architect"
 featuredDescription: "Step by step guide to become a Software Architect in 2023"
 title: "Software Architect"
 description: "Step by step guide to becoming a Software Architect in 2023"
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

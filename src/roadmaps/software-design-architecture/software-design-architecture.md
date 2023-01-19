@@ -6,7 +6,7 @@ featuredTitle: "Design and Architecture"
 featuredDescription: "Guide to learn software design and architecture"
 title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
-isNew: true
+isNew: false
 hasTopics: false
 dimensions:
   width: 968

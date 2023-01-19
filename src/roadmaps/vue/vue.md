@@ -6,7 +6,7 @@ featuredTitle: "Vue"
 featuredDescription: "Step by step guide to become a Vue Developer in 2023"
 title: "Vue Developer"
 description: "Everything that is there to learn about Vue and the ecosystem in 2023."
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

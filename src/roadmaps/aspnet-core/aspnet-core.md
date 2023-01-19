@@ -6,7 +6,7 @@ featuredTitle: "ASP.NET Core"
 featuredDescription: "Step by step guide to becoming an ASP.NET Core Developer in 2023"
 title: "ASP.NET Core Developer"
 description: "Step by step guide to becoming an ASP.NET core developer in 2023"
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

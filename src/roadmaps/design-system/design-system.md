@@ -6,7 +6,7 @@ featuredTitle: "Design System"
 featuredDescription: "Step by step guide to building a modern Design System"
 title: "Design System"
 description: "Learn how to create a design system with this step by step guide"
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

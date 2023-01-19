@@ -6,7 +6,7 @@ featuredTitle: "Node.js"
 featuredDescription: "Step by step guide to becoming a Node.js developer in 2023"
 title: "Node.js Developer"
 description: "Step by step guide to becoming a modern Node.js developer in 2023"
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

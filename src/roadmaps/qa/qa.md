@@ -6,7 +6,7 @@ featuredTitle: "QA"
 featuredDescription: "Step by step guide to becoming a modern QA Engineer in 2023"
 title: "QA Engineer"
 description: "Steps to follow in order to become a modern QA Engineer in 2023"
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968
