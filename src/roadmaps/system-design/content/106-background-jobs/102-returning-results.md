@@ -1,7 +1,7 @@
 # Returning Results
 
-Returning results in a system design refers to the process of providing the output or outcome of a specific task or action to the requesting entity. This can include providing a response to a user request, returning a result of a computation or analysis, or sending a notification or message to another system.
+Background jobs execute asynchronously in a separate process, or even in a separate location, from the UI or the process that invoked the background task. Ideally, background tasks are "fire and forget" operations, and their execution progress has no impact on the UI or the calling process. This means that the calling process does not wait for completion of the tasks. Therefore, it cannot automatically detect when the task ends.
 
 Learn more from the following links:
 
-- [Overview of Return Statement](https://press.rebus.community/programmingfundamentals/chapter/return-statement/)
+- [Returning Results - Background Jobs](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs#returning-results)

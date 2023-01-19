@@ -11,4 +11,4 @@ Background jobs can be used for a variety of purposes, such as:
 
 Learn more from the following links:
 
-- [Intro of Background job system](https://www.codementor.io/projects/tool/background-job-system-atx32exogo)
+- [Background Jobs - Best Practices](https://learn.microsoft.com/en-us/azure/architecture/best-practices/background-jobs)

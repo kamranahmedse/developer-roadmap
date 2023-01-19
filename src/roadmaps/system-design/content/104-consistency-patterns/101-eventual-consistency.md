@@ -1,7 +1,6 @@
 # Eventual Consistency
 
-After a write, reads will eventually see it (typically within milliseconds).Data is replicated asynchronously. This approach is seen in systems such as DNS and email. Eventual consistency works well in highly available systems.
-
+Eventual consistency is a form of Weak Consistency. After an update is made to the data, it will be eventually visible to any subsequent read operations. The data is replicated in an asynchronous manner, ensuring that all copies of the data are eventually updated.
 
 To learn more, visit the following links:
 
