@@ -5,5 +5,4 @@ After a write, reads will eventually see it (typically within milliseconds).Data
 
 To learn more, visit the following links:
 
-- [Eventual Consistency Patterns](https://github.com/donnemartin/system-design-primer)
-- [System Design Concepts – Eventual Consistency](https://www.acodersjourney.com/eventual-consistency/)
+- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)

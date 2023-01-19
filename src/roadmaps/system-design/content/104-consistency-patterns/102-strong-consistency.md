@@ -4,5 +4,4 @@ After a write, reads will see it. Data is replicated synchronously. This approac
 
 To learn more, visit the following links:
 
-- [Strong Consistency Patterns](https://github.com/donnemartin/system-design-primer)
-- [Get started with Strong Consistency](https://www.geeksforgeeks.org/eventual-vs-strong-consistency-in-distributed-databases/)
+- [Consistency Patterns in Distributed Systems](https://cs.fyi/guide/consistency-patterns-week-strong-eventual/)

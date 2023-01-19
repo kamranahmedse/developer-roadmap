@@ -1,6 +1,6 @@
 # CAP Theorem
 
-In a distributed computer system, you can only support two of the following guarantees:
+According to CAP theorem, in a distributed system, you can only support two of the following guarantees:
 
 - **Consistency** - Every read receives the most recent write or an error
 - **Availability** - Every request receives a response, without guarantee that it contains the most recent version of the information

@@ -1,13 +1,14 @@
 # Availability vs Consistency
 
-A service is scalable if it results in increased performance in a manner proportional to resources added. Generally, increasing performance means serving more units of work, but it can also be to handle larger units of work, such as when datasets grow.
+Availability refers to the ability of a system to provide its services to clients even in the presence of failures. This is often measured in terms of the percentage of time that the system is up and running, also known as its uptime.
 
-Another way to look at performance vs scalability:
+Consistency, on the other hand, refers to the property that all clients see the same data at the same time. This is important for maintaining the integrity of the data stored in the system.
 
-- If you have a performance problem, your system is slow for a single user.
-- If you have a scalability problem, your system is fast for a single user but slow under heavy load.
+In distributed systems, it is often a trade-off between availability and consistency. Systems that prioritize high availability may sacrifice consistency, while systems that prioritize consistency may sacrifice availability. Different distributed systems use different approaches to balance the trade-off between availability and consistency, such as using replication or consensus algorithms.
 
 Have a look at the following resources to learn more:
 
-- [A Word on Scalability](http://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
-- [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
+- [CAP Theorem](https://www.youtube.com/watch?v=_RbsFXWRZ10&t=1s)
+- [CAP Theorem Revisited](https://robertgreiner.com/cap-theorem-revisited/)
+- [A plain english introduction to CAP Theorem](http://ksat.me/a-plain-english-introduction-to-cap-theorem)
+- [CAP FAQ](https://github.com/henryr/cap-faq)

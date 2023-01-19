@@ -2,7 +2,7 @@
 
 There are three Availability Patterns which are:
 
-- Fail-Over    
+- Fail-Over
 - Replication
 - Availability in Numbers
 

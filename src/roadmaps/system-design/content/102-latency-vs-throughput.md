@@ -1,7 +1,10 @@
 # Latency vs Throughput
 
-Latency is the time to perform some action or to produce some result. Throughput is the number of such actions or results per unit of time Generally, you should aim for maximal throughput with acceptable latency.
+Latency and throughput are two important measures of a system's performance. **Latency** refers to the amount of time it takes for a system to respond to a request. **Throughput** refers to the number of requests that a system can handle at the same time.
+
+Generally, you should aim for maximal throughput with acceptable latency.
 
 Learn more from the following links:
 
+- [System Design: Latency vs Throughput](https://cs.fyi/guide/latency-vs-throughput/)
 - [Understanding Latency versus Throughput](https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput)
