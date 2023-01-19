@@ -1,8 +1,7 @@
 # High availability
 
-High availability refers to the ability of a system to continue operating even in the event of a failure or outage. This is often achieved by designing the system to be redundant, meaning that multiple copies of the system are running at the same time, and if one copy fails, the others can take over. It can be achieved by using Redundancy, Load balancing, and Failover. It can be measured using metrics such as Mean Time Between Failures (MTBF), Mean Time To Recovery (MTTR) and Availability.
+Azure infrastructure is composed of geographies, regions, and Availability Zones, which limit the blast radius of a failure and therefore limit potential impact to customer applications and data. The Azure Availability Zones construct was developed to provide a software and networking solution to protect against datacenter failures and to provide increased high availability (HA) to our customers. With HA architecture there is a balance between high resilience, low latency, and cost.
 
 Learn more from the following links:
 
-- [What is High availability (HA)?](https://www.techtarget.com/searchdatacenter/definition/high-availability)
-- [Introduction to High Availability Architecture](https://www.filecloud.com/blog/an-introduction-to-high-availability-architecture/)
+- [High availability Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#high-availability)

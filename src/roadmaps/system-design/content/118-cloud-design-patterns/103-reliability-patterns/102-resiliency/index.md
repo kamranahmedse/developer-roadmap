@@ -1,7 +1,11 @@
 # Resilience
 
-Resilience refers to the ability of a system to withstand and recover from disruptions, failures or unexpected conditions. It means the system can continue to function and provide service even when faced with stressors such as high traffic, failures or unexpected changes. Resilience can be achieved by designing the system to be redundant, fault-tolerant, scalable, having automatic recovery, and monitoring and alerting mechanisms. It can be measured by Recovery Time Objective (RTO), Recovery Point Objective (RPO), Mean time to failure (MTTF), and Mean time to recovery (MTTR).
+Resiliency is the ability of a system to gracefully handle and recover from failures, both inadvertent and malicious.
+
+The nature of cloud hosting, where applications are often multi-tenant, use shared platform services, compete for resources and bandwidth, communicate over the Internet, and run on commodity hardware means there is an increased likelihood that both transient and more permanent faults will arise. The connected nature of the internet and the rise in sophistication and volume of attacks increase the likelihood of a security disruption.
+
+Detecting failures and recovering quickly and efficiently, is necessary to maintain resiliency.
 
 Learn more from the following links:
 
-- [System Resilience: What Exactly is it?](https://insights.sei.cmu.edu/blog/system-resilience-what-exactly-is-it/)
+- [Resiliency Patterns](https://learn.microsoft.com/en-us/azure/architecture/framework/resiliency/reliability-patterns#resiliency)
