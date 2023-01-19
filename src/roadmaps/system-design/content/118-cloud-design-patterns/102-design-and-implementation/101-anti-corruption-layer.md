@@ -1,6 +1,6 @@
 # Anti-orruption Layer
 
-An Anti-Corruption Layer (ACL) in system design is a software pattern that acts as a buffer between a system and external systems or legacy systems that use incompatible data formats or protocols. It's purpose is to protect the internal system from being affected by changes or inconsistencies in the external systems, and to provide a stable and consistent interface for the internal system to interact with the external systems. It can be used in scenarios like integration with legacy systems, integration with external systems, and isolation of dependencies. An ACL can be implemented using several different techniques such as data mapping, data validation, and error handling.
+Implement a façade or adapter layer between different subsystems that don't share the same semantics. This layer translates requests that one subsystem makes to the other subsystem. Use this pattern to ensure that an application's design is not limited by dependencies on outside subsystems. This pattern was first described by Eric Evans in Domain-Driven Design.
 
 To learn more, visit the following links:
 

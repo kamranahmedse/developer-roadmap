@@ -1,8 +1,7 @@
 # Pipes and Filters
 
-Pipes and Filters in system design is a pattern that is used to decompose a large system into smaller, reusable components that can be combined in different ways to perform different tasks. It is based on the idea of data flowing through a series of connected "pipes", where each "pipe" represents a processing step or "filter" that performs a specific task on the data. It can be used to decompose a large system, increase flexibility and increase reusability. It can be implemented in several ways such as pipeline and Chain of Responsibility pattern.
+Decompose a task that performs complex processing into a series of separate elements that can be reused. This can improve performance, scalability, and reusability by allowing task elements that perform the processing to be deployed and scaled independently.
 
 To learn more, visit the following links:
 
-- [Pipe and Filter Architectural Style](https://cs.uwaterloo.ca/~m2nagapp/courses/CS446/1181/Arch_Design_Activity/PipeFilter.pdf)
-- [What are Pipes and Filters?](https://syedhasan010.medium.com/pipe-and-filter-architecture-bd7babdb908)
+- [Pipe and Filter Architectural Style](https://learn.microsoft.com/en-us/azure/architecture/patterns/pipes-and-filters)

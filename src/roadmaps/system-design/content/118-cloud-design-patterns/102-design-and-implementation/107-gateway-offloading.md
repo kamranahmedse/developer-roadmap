@@ -1,6 +1,6 @@
 # Gateway Offloading
 
-Gateway Offloading in system design is a pattern that involves using a gateway to offload certain tasks or processing from the backend services or microservices to the gateway itself. This can be used to reduce the load on the backend services, improve performance, and provide additional functionality such as caching, compression, and encryption. It can be implemented using techniques such as API Gateway and Edge Computing.
+Offload shared or specialized service functionality to a gateway proxy. This pattern can simplify application development by moving shared service functionality, such as the use of SSL certificates, from other parts of the application into the gateway.
 
 To learn more, visit the following links:
 

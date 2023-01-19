@@ -2,21 +2,7 @@
 
 Idempotent operations are operations that can be applied multiple times without changing the result beyond the initial application. In other words, if an operation is idempotent, it will have the same effect whether it is executed once or multiple times.
 
-For example, consider an HTTP PUT request to update a resource. If the request is idempotent, it will have the same effect whether it is executed once or multiple times, regardless of the state of the resource. In contrast, a non-idempotent operation such as an HTTP POST request, which creates a new resource, will have a different effect each time it is executed.
-
-Idempotent operations are useful in distributed systems, where network failures and other errors may cause the same operation to be executed multiple times. Idempotent operations can help to ensure that the system remains in a consistent state, even in the face of these types of errors.
-
-Examples of idempotent operations are:
-
-- HTTP GET requests
-- HTTP PUT requests that update a resource to a specific state
-- Database operations such as SELECT statements
-
-Examples of non-idempotent operations are:
-
-- HTTP POST requests that create a new resource
-- HTTP DELETE requests
-- Database operations that modify data such as INSERT, UPDATE, DELETE.
+It is also important to understand the benefits of [idempotent](https://en.wikipedia.org/wiki/Idempotence#Computer_science_meaning) operations, especially when using message or task queues that do not guarantee *exactly once* processing.  Many queueing systems guarantee *at least once* message delivery or processing.  These systems are not completely synchronized, for instance, across geographic regions, which simplifies some aspects of their implemntation or design.  Designing the operations that a task queue executes to be idempotent allows one to use a queueing system that has accepted this design trade-off.
 
 To learn more, visit the following links:
 

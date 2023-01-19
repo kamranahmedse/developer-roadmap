@@ -1,10 +1,7 @@
 # Valet Key
 
-A valet key in system design is a type of security feature that allows a user to grant limited access to a resource. It is commonly used in the automotive industry, where a valet key is used to allow a valet parking attendant to drive and park a car, but not to access the trunk or the glove compartment of the car.
-
-In system design, a valet key can be used as a security feature to allow a user to grant limited access to a resource, such as a file or a service, to a third party. The third party can access the resource, but only with the limited permissions that have been granted by the valet key.
+Use a token that provides clients with restricted direct access to a specific resource, in order to offload data transfer from the application. This is particularly useful in applications that use cloud-hosted storage systems or queues, and can minimize cost and maximize scalability and performance.
 
 Learn more from the following links:
 
 - [Valet Key pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/valet-key)
-- [Explanation of Valet Key](https://www.youtube.com/watch?v=sapu2CE1W8s)

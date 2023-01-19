@@ -1,8 +1,7 @@
 # Design and Implementation
 
-Design and Implementation in system design refers to the process of creating a system that meets the requirements and goals of the stakeholders. It involves several steps such as requirements gathering, design, implementation, testing, deployment, and maintenance. The design phase involves creating a high-level plan for the system, including the overall architecture, the components that will be used, and the interfaces between them. The implementation phase involves taking the design and creating a working system using the chosen technologies and tools.
+Good design encompasses factors such as consistency and coherence in component design and deployment, maintainability to simplify administration and development, and reusability to allow components and subsystems to be used in other applications and in other scenarios. Decisions made during the design and implementation phase have a huge impact on the quality and the total cost of ownership of cloud hosted applications and services.
 
 To learn more, visit the following links:
 
-- [What is Design and Implementation?](https://www.marketlinks.org/good-practice-center/value-chain-wiki/design-and-implementation-overview)
-- [Overview of System Design and Implementation](https://www.tutorialspoint.com/operating-system-design-and-implementation)
+- [Design and implementation patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/design-implementation)

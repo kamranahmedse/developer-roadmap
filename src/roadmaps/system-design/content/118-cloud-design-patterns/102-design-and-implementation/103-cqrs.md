@@ -1,8 +1,6 @@
 # CQRS
 
-CQRS (Command Query Responsibility Segregation) in system design is a pattern that separates the responsibilities of handling read and write operations in a system. This pattern allows for the separation of concerns between the read and write operations, and can be used to improve the scalability, performance, and maintainability of a system.
-
-In this pattern, the read and write operations are handled by different components in the system. The write operations, known as commands, are handled by a Command component that updates the state of the system. The read operations, known as queries, are handled by a Query component that retrieves the current state of the system.
+CQRS stands for Command and Query Responsibility Segregation, a pattern that separates read and update operations for a data store. Implementing CQRS in your application can maximize its performance, scalability, and security. The flexibility created by migrating to CQRS allows a system to better evolve over time and prevents update commands from causing merge conflicts at the domain level.
 
 Learn more from the following links:
 

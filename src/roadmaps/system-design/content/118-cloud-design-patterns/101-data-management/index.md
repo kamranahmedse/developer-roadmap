@@ -1,8 +1,7 @@
 # Data Management
 
-Data management in cloud system design refers to the process of designing, implementing and maintaining the data infrastructure and data management processes in a cloud computing environment. This includes designing and configuring data storage systems, data replication, data backup and disaster recovery, data security and access control, and data governance policies. It's a set of actions that aims to ensure the data is properly managed, stored and protected in a cloud environment.
+Data management is the key element of cloud applications, and influences most of the quality attributes. Data is typically hosted in different locations and across multiple servers for reasons such as performance, scalability or availability, and this can present a range of challenges. For example, data consistency must be maintained, and data will typically need to be synchronized across different locations.
 
 Learn more from the following links:
 
-- [Data Management in the Cloud: Promises, State-of-the-art](https://link.springer.com/article/10.1007/s13222-010-0033-3)
-- [Data Management: What It Is, Importance, And Challenges](https://www.tableau.com/learn/articles/what-is-data-management)
+- [Data management patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/category/data-management)

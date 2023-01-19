@@ -1,8 +1,9 @@
 # Ambassador
 
-Ambassador in system design is a type of software that acts as a facade for other services or applications. It's a reverse proxy and service mesh that allows to control access to services, and provide features such as authentication, rate limiting, and observability. Ambassador can be used to route requests, authenticate and authorize requests, provide observability, and rate limiting. Ambassador is designed to work with Kubernetes and other cloud-native platforms.
+Create helper services that send network requests on behalf of a consumer service or application. An ambassador service can be thought of as an out-of-process proxy that is co-located with the client.
+
+This pattern can be useful for offloading common client connectivity tasks such as monitoring, logging, routing, security (such as TLS), and resiliency patterns in a language agnostic way. It is often used with legacy applications, or other applications that are difficult to modify, in order to extend their networking capabilities. It can also enable a specialized team to implement those features.
 
 To learn more, visit the following links:
 
-- [Design System Ambassadors](https://medium.com/sprout-social-design/design-system-ambassadors-c240e480baf6)
 - [Ambassador pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/ambassador)

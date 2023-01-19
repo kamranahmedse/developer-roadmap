@@ -1,8 +1,7 @@
 # Claim Check
 
-Claim check in system design is a pattern where large or complex data is replaced with a small token or reference, which is passed along with a message or request. This can help to reduce the size and complexity of messages, and improve the performance and scalability of a system. The large or complex data is stored in a separate location, and a token generator is used to create a unique token for the actual data.
+Split a large message into a claim check and a payload. Send the claim check to the messaging platform and store the payload to an external service. This pattern allows large messages to be processed, while protecting the message bus and the client from being overwhelmed or slowed down. This pattern also helps to reduce costs, as storage is usually cheaper than resource units used by the messaging platform.
 
 Learn more from the following links:
 
-- [An Introduction to Claim-Check Pattern and Its Uses](https://aws.plainenglish.io/an-introduction-to-claim-check-pattern-and-its-uses-b018649a380d)
-- [Claim Check - Cloud Design patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/)
+- [Claim Check - Cloud Design patterns](https://learn.microsoft.com/en-us/azure/architecture/patterns/claim-check)

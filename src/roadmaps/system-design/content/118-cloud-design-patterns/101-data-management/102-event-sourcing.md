@@ -1,8 +1,7 @@
 # Event Sourcing
 
-Event Sourcing in system design is a pattern that stores the state of a system as a sequence of events, rather than the current state. Each change to the state of the system is recorded as an event, which is stored in an event store. The current state of the system can be derived from the events in the event store. Event sourcing can be used for various purposes such as tracking history, reconstruct state, recover from failures, and auditing. It is often implemented in conjunction with CQRS (Command Query Responsibility Segregation) pattern, which separates the responsibilities of handling read and write operations in a system.
+Instead of storing just the current state of the data in a domain, use an append-only store to record the full series of actions taken on that data. The store acts as the system of record and can be used to materialize the domain objects. This can simplify tasks in complex domains, by avoiding the need to synchronize the data model and the business domain, while improving performance, scalability, and responsiveness. It can also provide consistency for transactional data, and maintain full audit trails and history that can enable compensating actions.
 
 Learn more from the following links:
 
 - [Event Sourcing pattern](https://learn.microsoft.com/en-us/azure/architecture/patterns/event-sourcing)
-- [Overview of Event Sourcing](https://microservices.io/patterns/data/event-sourcing.html)
