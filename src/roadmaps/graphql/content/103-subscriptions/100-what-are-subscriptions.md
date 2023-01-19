@@ -1,1 +1,10 @@
-# What are subscriptions
+# What are Subscriptions
+
+In GraphQL, subscriptions are a way to push real-time updates to the client. They allow a client to subscribe to a specific event or data change on the server, and receive updates in real-time as soon as the event occurs or the data changes.
+
+Subscriptions are defined on the server and are structured similar to queries and mutations. They have a "subscription" field at the top level, followed by the fields that define the event or data change to be subscribed to.
+
+To learn more, visit the following links:
+
+- [How GraphQL Subscriptions Work](https://www.youtube.com/watch?v=_r2ooFgBdoc)
+- [Realtime Updates with GraphQL Subscriptions](https://www.howtographql.com/vue-apollo/8-subscriptions/)
