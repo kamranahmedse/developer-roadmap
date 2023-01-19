@@ -1,7 +1,7 @@
 # Health Monitoring
 
-A health monitoring system is a system that is designed to collect, store, and analyze health-related data from a variety of sources, such as wearable devices, medical devices, and electronic health records. The goal of a health monitoring system is to provide healthcare professionals and individuals with real-time insights into their health, allowing them to make informed decisions about their care.
+A system is healthy if it is running and capable of processing requests. The purpose of health monitoring is to generate a snapshot of the current health of the system so that you can verify that all components of the system are functioning as expected.
 
 Learn more from the following:
 
-- [Design of Wearable Health Monitoring Systems](https://link.springer.com/chapter/10.1007/978-3-319-23341-3_6)
+- [Health Monitoring of a System](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#health-monitoring)

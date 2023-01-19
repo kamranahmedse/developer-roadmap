@@ -1,14 +1,7 @@
 # Availability Monitoring
 
-Availability monitoring in system design refers to the practice of monitoring the availability of a system, service or application, to ensure that it is functioning correctly and is accessible to users when they need it. This is an important aspect of ensuring that a system is reliable and performs well.
-
-Availability monitoring typically includes the following components:
-
-- Heartbeat monitoring
-- Transaction monitoring
-- Alerts and notifications
-- Root cause analysis
+A truly healthy system requires that the components and subsystems that compose the system are available. Availability monitoring is closely related to health monitoring. But whereas health monitoring provides an immediate view of the current health of the system, availability monitoring is concerned with tracking the availability of the system and its components to generate statistics about the uptime of the system.
 
 Learn more from the following:
 
-- [System Monitoring, Alerting and Availability](https://www.aits.uillinois.edu/services/network_and_desktop_services/system_monitoring__alerting_and_availability)
+- [Availability Monitoring](https://learn.microsoft.com/en-us/azure/architecture/best-practices/monitoring#availability-monitoring)
