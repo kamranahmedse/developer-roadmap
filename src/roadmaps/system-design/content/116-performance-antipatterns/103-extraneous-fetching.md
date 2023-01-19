@@ -12,4 +12,3 @@ Extraneous fetching can lead to a number of issues, such as:
 Visit the following links to learn more:
 
 - [Extraneous Fetching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/extraneous-fetching/)
-- [What’s the difference between extraneous and confounding variables?](https://www.scribbr.com/frequently-asked-questions/extraneous-vs-confounding-variables/)

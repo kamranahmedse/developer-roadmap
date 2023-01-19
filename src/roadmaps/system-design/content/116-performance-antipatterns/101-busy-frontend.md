@@ -1,8 +1,11 @@
 # Busy Frontend
 
-A busy frontend in system design refers to a frontend that is handling a high volume of requests or traffic, this can occur when a system is experiencing high traffic or when a frontend is not properly optimized for the workload it is handling. This can lead to Performance degradation, Increased resource utilization, Increased error rates, and Poor user experience. To address a busy frontend, a number of approaches can be taken such as Scaling out, Optimizing the code, Caching, and Load balancing.
+Performing asynchronous work on a large number of background threads can starve other concurrent foreground tasks of resources, decreasing response times to unacceptable levels.
 
-To learn more, visit the following link:
+Resource-intensive tasks can increase the response times for user requests and cause high latency. One way to improve response times is to offload a resource-intensive task to a separate thread. This approach lets the application stay responsive while processing happens in the background. However, tasks that run on a background thread still consume resources. If there are too many of them, they can starve the threads that are handling requests.
+
+This problem typically occurs when an application is developed as monolithic piece of code, with all of the business logic combined into a single tier shared with the presentation layer.
+
+To learn more about this and how to fix this pattern, visit the following link:
 
 - [Busy Front End antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/busy-front-end/)
-- [What is Front end system design?](https://www.youtube.com/watch?v=XPNMiWyHBAU)

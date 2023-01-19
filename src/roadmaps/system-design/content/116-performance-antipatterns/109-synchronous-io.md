@@ -1,11 +1,21 @@
-# Synchronous IO
+# Synchronous I/O
 
-In system design, synchronous IO refers to a type of input/output (IO) operation where the program execution is blocked or halted until the IO operation completes. This means that the program will wait for the IO operation to finish before it can continue executing the next instruction. Synchronous IO can be used in a variety of scenarios, such as:
+Blocking the calling thread while I/O completes can reduce performance and affect vertical scalability.
 
-- **Reading and writing files:** When a program needs to read or write a file, it can use synchronous IO to ensure that the operation completes before continuing.
-- **Communicating with a database:** When a program needs to query or update a database, it can use synchronous IO to ensure that the operation completes before continuing.
-- **Networking:** When a program needs to send or receive data over a network, it can use synchronous IO to ensure that the operation completes before continuing.
+A synchronous I/O operation blocks the calling thread while the I/O completes. The calling thread enters a wait state and is unable to perform useful work during this interval, wasting processing resources.
 
-To learn more, visit the following links:
+Common examples of I/O include:
+
+- Retrieving or persisting data to a database or any type of persistent storage.
+- Sending a request to a web service.
+- Posting a message or retrieving a message from a queue.
+- Writing to or reading from a local file.
+
+This antipattern typically occurs because:
+
+- It appears to be the most intuitive way to perform an operation.
+- The application requires a response from a request.
+- The application uses a library that only provides synchronous methods for I/O.
+- An external library performs synchronous I/O operations internally. A single synchronous I/O call can block an entire call chain.
 
 - [What is Synchronous I/O antipattern?](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/synchronous-io/)

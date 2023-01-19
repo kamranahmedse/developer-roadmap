@@ -1,15 +1,13 @@
 # No Caching
 
-Monolithic persistence in system design refers to the use of a single, monolithic database to store all of the data for an application or system. This approach can be used for simple, small-scale systems, but as the system grows and evolves, it can become a bottleneck, resulting in poor scalability, limited flexibility, and increased complexity.
+No caching antipattern occurs when a cloud application that handles many concurrent requests, repeatedly fetches the same data. This can reduce performance and scalability.
 
-A monolithic persistence can have several disadvantages:
+When data is not cached, it can cause a number of undesirable behaviors, including:
 
-- Scalability
-- Limited Flexibility
-- Increased Complexity
-- Single Point of Failure
+- Repeatedly fetching the same information from a resource that is expensive to access, in terms of I/O overhead or latency.
+- Repeatedly constructing the same objects or data structures for multiple requests.
+- Making excessive calls to a remote service that has a service quota and throttles clients past a certain limit.
 
-Learn from the following links:
+In turn, these problems can lead to poor response times, increased contention in the data store, and poor scalability.
 
-- [What is Caching in system design?](enjoyalgorithms.com/blog/caching-system-design-concept)
 - [No Caching antipattern](https://learn.microsoft.com/en-us/azure/architecture/antipatterns/no-caching/)
