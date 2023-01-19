@@ -6,6 +6,5 @@ A time-to-live (TTL) determines how long content is cached. Pull CDNs minimize s
 
 To learn more, visit the following links:
 
+- [Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)
 - [The Differences Between Push And Pull CDNss](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
-- [Brief aout Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
-- [What is Globally distributed content delivery?](https://figshare.com/articles/journal_contribution/Globally_distributed_content_delivery/6605972)

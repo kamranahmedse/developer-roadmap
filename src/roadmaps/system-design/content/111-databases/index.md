@@ -1,15 +1,13 @@
 # Databases
 
-A database is a collection of data that is organized and stored in a structured way, allowing for efficient retrieval and manipulation of the data. Databases are used in many different types of systems to store and manage data, from small personal applications to large enterprise systems.
+Picking the right database for a system is an important decision, as it can have a significant impact on the performance, scalability, and overall success of the system. Some of the key reasons why it's important to pick the right database include:
 
-There are many different types of databases available, each with their own strengths and weaknesses. Some of the most common types of databases are:
+- Performance: Different databases have different performance characteristics, and choosing the wrong one can lead to poor performance and slow response times.
+- Scalability: As the system grows and the volume of data increases, the database needs to be able to scale accordingly. Some databases are better suited for handling large amounts of data than others.
+- Data Modeling: Different databases have different data modeling capabilities and choosing the right one can help to keep the data consistent and organized.
+- Data Integrity: Different databases have different capabilities for maintaining data integrity, such as enforcing constraints, and can have different levels of data security.
+- Support and maintenance: Some databases have more active communities and better documentation, making it easier to find help and resources.
 
-- Relational databases
-- NoSQL databases
-- Graph databases
-- Time-series databases
+Overall, by choosing the right database, you can ensure that your system will perform well, scale as needed, and be maintainable in the long run.
 
-Learn more from the following links:
-
-- [Intro to Databases](https://github.com/donnemartin/system-design-primer#database)
-- [Database design](https://en.wikipedia.org/wiki/Database_design)
+- [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)

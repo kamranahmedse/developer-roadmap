@@ -6,5 +6,4 @@ Based on the underlying implementation, documents are organized by collections, 
 
 To learn more, visit the following links:
 
-- [Getting started with Document Store](https://github.com/donnemartin/system-design-primer#document-store)
 - [Document-oriented database](https://en.wikipedia.org/wiki/Document-oriented_database)

@@ -9,5 +9,5 @@ Benchmarking and profiling might point you to the following optimizations.
 
 To learn more, visit the following links:
 
-- [What is SQL Tuning?](https://github.com/donnemartin/system-design-primer#sql-tuning)
 - [Optimizing MySQL Queries](https://aiddroid.com/10-tips-optimizing-mysql-queries-dont-suck/)
+- [How we optimized PostgreSQL queries 100x](https://towardsdatascience.com/how-we-optimized-postgresql-queries-100x-ff52555eabe?gi=13caf5bcf32e)

@@ -6,5 +6,4 @@ Sites with a small amount of traffic or sites with content that isn't often upda
 
 To learn more, visit the following links:
 
-- [Introduction on Push CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)
-- [Why use a CDN?](https://dev.to/karanpratapsingh/system-design-content-delivery-network-cdn-bof)
+- [Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)

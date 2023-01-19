@@ -1,32 +1,12 @@
 # SQL vs noSQL
 
-## Reasons for SQL:
-- Structured data
-- Strict schema
-- Relational data
-- Need for complex joins
-- Transactions
-- Clear patterns for scaling
-- More established: developers, community, code, tools, etc
-- Lookups by index are very fast
+SQL databases, such as MySQL and PostgreSQL, are best suited for structured, relational data and use a fixed schema. They provide robust ACID (Atomicity, Consistency, Isolation, Durability) transactions and support complex queries and joins.
 
+NoSQL databases, such as MongoDB and Cassandra, are best suited for unstructured, non-relational data and use a flexible schema. They provide high scalability and performance for large amounts of data and are often used in big data and real-time web applications.
 
-## Reasons for NoSQL:
-- Semi-structured data
-- Dynamic or flexible schema
-- Non-relational data
-- No need for complex joins
-- Store many TB (or PB) of data
-- Very data intensive workload
-- Very high throughput for IOPS
+The choice between SQL and NoSQL depends on the specific use case and requirements of the project. If you need to store and query structured data with complex relationships, an SQL database is likely a better choice. If you need to store and query large amounts of unstructured data with high scalability and performance, a NoSQL database may be a better choice.
 
-## Sample data well-suited for NoSQL:
-- Rapid ingest of clickstream and log data
-- Leaderboard or scoring data
-- Temporary data, such as a shopping cart
-- Frequently accessed ('hot') tables
-- Metadata/lookup tables
 
 Learn more from the followinw links:
 - [SQL vs NoSQL: The Differences](https://www.sitepoint.com/sql-vs-nosql-differences/)
-- [Scaling up to your first 10 million users](https://www.youtube.com/watch?v=kKjm4ehYiMs)
+- [SQL vs NoSQL - When to Use Each](https://www.ibm.com/cloud/blog/sql-vs-nosql)

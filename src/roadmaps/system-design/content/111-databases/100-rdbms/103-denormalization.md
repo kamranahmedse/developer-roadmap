@@ -6,5 +6,4 @@ Once data becomes distributed with techniques such as federation and sharding, m
 
 To learn more, visit the following links:
 
-- [Guide to Denormalization](https://github.com/donnemartin/system-design-primer#denormalization)
 - [Denormalization](https://en.wikipedia.org/wiki/Denormalization)

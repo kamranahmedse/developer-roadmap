@@ -4,11 +4,14 @@
 - Reverse proxies can be useful even with just one web server or application server, opening up the benefits described in the previous section.
 - Solutions such as NGINX and HAProxy can support both layer 7 reverse proxying and load balancing.
 
-## Disadvantages of reverse proxy:
+## Disadvantages of Reverse Proxy:
 
 - Introducing a reverse proxy results in increased complexity.
-- A single reverse proxy is a single point of failure, configuring multiple reverse proxies (ie a failover) further increases complexity
+- A single reverse proxy is a single point of failure, configuring multiple reverse proxies (ie a failover) further increases complexity.
 
 To learn more visit the following links:
 
-- [What is a Reverse Proxy vs. Load Balancer?](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
+- [Reverse Proxy vs Load Balancer](https://www.nginx.com/resources/glossary/reverse-proxy-vs-load-balancer/)
+- [NGINX Architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
+- [HAProxy Architecture Guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
+- [Reverse Proxy](https://en.wikipedia.org/wiki/Reverse_proxy)
