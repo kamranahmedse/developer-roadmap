@@ -21,8 +21,9 @@ export class Topic {
     this.handleOverlayClick = this.handleOverlayClick.bind(this);
     this.markAsDone = this.markAsDone.bind(this);
     this.markAsPending = this.markAsPending.bind(this);
-    this.queryRoadmapElementsByTopicId =
-      this.queryRoadmapElementsByTopicId.bind(this);
+    this.queryRoadmapElementsByTopicId = this.queryRoadmapElementsByTopicId.bind(this);
+    this.rightClickListener = this.rightClickListener.bind(this);
+    this.isTopicDone = this.isTopicDone.bind(this);
 
     this.init = this.init.bind(this);
   }
@@ -55,6 +56,20 @@ export class Topic {
     return document.getElementById(this.overlayId);
   }
 
+  rightClickListener(e) {
+    const groupId = e.target?.closest('g')?.dataset?.groupId;
+    if (!groupId) {
+      return;
+    }
+
+    e.preventDefault();
+    if (this.isTopicDone(groupId)) {
+      this.markAsPending(groupId);
+    } else {
+      this.markAsDone(groupId);
+    }
+  }
+
   resetDOM(hideOverlay = false) {
     if (hideOverlay) {
       this.overlayEl.classList.add('hidden');
@@ -75,6 +90,11 @@ export class Topic {
     this.activeTopicId = null;
   }
 
+  isTopicDone(topicId) {
+    const normalizedGroup = topicId.replace(/^\d+-/, '');
+    return localStorage.getItem(normalizedGroup) === 'done';
+  }
+
   /**
    * @param {string | HTMLElement} html
    */
@@ -84,8 +104,7 @@ export class Topic {
     this.topicActionsEl.classList.remove('hidden');
     this.contributionTextEl.classList.remove('hidden');
 
-    const normalizedGroup = (this.activeTopicId || '').replace(/^\d+-/, '');
-    const isDone = localStorage.getItem(normalizedGroup) === 'done';
+    const isDone = this.isTopicDone(this.activeTopicId);
 
     if (isDone) {
       this.markTopicDoneEl.classList.add('hidden');
@@ -140,9 +159,7 @@ export class Topic {
   }
 
   queryRoadmapElementsByTopicId(topicId) {
-    const elements = document.querySelectorAll(
-      `[data-group-id$="-${topicId}"]`
-    );
+    const elements = document.querySelectorAll(`[data-group-id$="-${topicId}"]`);
     const matchingElements = [];
 
     elements.forEach((element) => {
@@ -183,25 +200,19 @@ export class Topic {
       return;
     }
 
-    const isClickedDone =
-      e.target.id === this.markTopicDoneId ||
-      e.target.closest(`#${this.markTopicDoneId}`);
+    const isClickedDone = e.target.id === this.markTopicDoneId || e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
       this.markAsDone(this.activeTopicId);
       this.close();
     }
 
-    const isClickedPending =
-      e.target.id === this.markTopicPendingId ||
-      e.target.closest(`#${this.markTopicPendingId}`);
+    const isClickedPending = e.target.id === this.markTopicPendingId || e.target.closest(`#${this.markTopicPendingId}`);
     if (isClickedPending) {
       this.markAsPending(this.activeTopicId);
       this.close();
     }
 
-    const isClickedClose =
-      e.target.id === this.closeTopicId ||
-      e.target.closest(`#${this.closeTopicId}`);
+    const isClickedClose = e.target.id === this.closeTopicId || e.target.closest(`#${this.closeTopicId}`);
     if (isClickedClose) {
       this.close();
     }
@@ -210,6 +221,8 @@ export class Topic {
   init() {
     window.addEventListener('topic.click', this.handleTopicClick);
     window.addEventListener('click', this.handleOverlayClick);
+    window.addEventListener('contextmenu', this.rightClickListener);
+
     window.addEventListener('keydown', (e) => {
       if (e.key.toLowerCase() === 'escape') {
         this.close();
