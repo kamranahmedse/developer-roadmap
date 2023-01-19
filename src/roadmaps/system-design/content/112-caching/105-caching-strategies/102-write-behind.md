@@ -10,6 +10,8 @@ In write-behind, the application does the following:
 - There could be data loss if the cache goes down prior to its contents hitting the data store.
 - It is more complex to implement write-behind than it is to implement cache-aside or write-through.
 
+![Scalability, availability, stability, patterns](https://i.imgur.com/XDsb7RS.png)
+
 To learn more, visit the following links:
 
-- [Getting started with Write-behind](https://github.com/donnemartin/system-design-primer#Write-behind)
+- [Scalability, availability, stability, patterns](http://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
