@@ -1,6 +1,6 @@
 # Bulkhead
 
-Bulkhead refers to a technique for isolating different parts of a system to prevent one part from affecting the performance of the whole system. The term "bulkhead" is used to refer to the partitions or walls that are used to separate different parts of the system. It allows to Isolate critical parts of the system, prevent cascading failures and provide isolation for different types of requests. It can be implemented in several different ways such as Thread pools, Circuit breakers, and Workers.
+The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.
 
 Learn more from the following links:
 

@@ -1,6 +1,6 @@
 # Deployment Stamps
 
-Deployment Stamps refers to a technique used to manage the deployment of a system across different environments, such as development, staging, and production. A deployment stamp is a set of environment-specific configurations and settings that are applied to the system during the deployment process. It allows to manage environment-specific configurations, ensure consistency across environments, and simplify the deployment process. It can be implemented in several different ways such as Configuration files, Environment variables and Deployment script.
+The Bulkhead pattern is a type of application design that is tolerant of failure. In a bulkhead architecture, elements of an application are isolated into pools so that if one fails, the others will continue to function. It's named after the sectioned partitions (bulkheads) of a ship's hull. If the hull of a ship is compromised, only the damaged section fills with water, which prevents the ship from sinking.
 
 To learn more visit the following links:
 

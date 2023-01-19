@@ -1,6 +1,6 @@
 # Queue-Based load leveling
 
-Queue-based load leveling refers to a technique for managing the workload of a system by using a queue to buffer incoming requests and process them at a steady pace. By using a queue, the system can handle bursts of incoming requests without being overwhelmed, as well as prevent idle periods where there are not enough requests to keep the system busy. It allows to smooth out bursts of incoming requests, prevent idle periods, Provide a way to prioritize requests, and provide a way to monitor requests. It can be implemented in several different ways such as In-memory queue and Persistent queue.
+Use a queue that acts as a buffer between a task and a service it invokes in order to smooth intermittent heavy loads that can cause the service to fail or the task to time out. This can help to minimize the impact of peaks in demand on availability and responsiveness for both the task and the service.
 
 To learn more visit the following links:
 

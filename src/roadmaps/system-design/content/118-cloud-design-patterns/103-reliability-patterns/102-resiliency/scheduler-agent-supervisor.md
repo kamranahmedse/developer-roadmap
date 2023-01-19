@@ -1,6 +1,6 @@
 # Scheduling Agent Supervisor
 
-Scheduling Agent Supervisor is a pattern that allows for the scheduling and coordination of tasks or processes by a central entity, known as the Scheduling Agent. The Scheduling Agent is responsible for scheduling tasks, monitoring their execution, and handling errors or failures. This pattern can be used to build robust and fault-tolerant systems, by ensuring that tasks are executed as intended and that any errors or failures are handled appropriately.
+Coordinate a set of distributed actions as a single operation. If any of the actions fail, try to handle the failures transparently, or else undo the work that was performed, so the entire operation succeeds or fails as a whole. This can add resiliency to a distributed system, by enabling it to recover and retry actions that fail due to transient exceptions, long-lasting faults, and process failures.
 
 Learn more from the following links:
 

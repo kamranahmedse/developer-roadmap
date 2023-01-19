@@ -1,6 +1,6 @@
 # Compensating Transaction
 
-A Compensating Transaction refers to a mechanism for reversing or undoing the effects of a previously executed transaction in a system. It can be used to ensure that the system remains in a consistent state, even if a subsequent transaction fails or is rolled back. Typically used in systems that implement the principles of ACID transactions, it can be implemented in several different ways such as undo logs, savepoints.
+Undo the work performed by a series of steps, which together define an eventually consistent operation, if one or more of the steps fail. Operations that follow the eventual consistency model are commonly found in cloud-hosted applications that implement complex business processes and workflows.
 
 Learn more from the following resources:
 

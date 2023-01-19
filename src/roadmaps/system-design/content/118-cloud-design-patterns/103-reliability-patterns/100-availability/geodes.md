@@ -1,6 +1,6 @@
 # Geodes
 
-Geodes refers to a technique of partitioning a large dataset into smaller chunks, called geodes, that can be stored and processed more efficiently. Geodes are similar to shards in database partitioning, but the term is often used in the context of distributed systems and data processing. It allows to Scale the system, Improve performance and balance the load. It can be implemented in several different ways such as Hashing and Range-based partitioning.
+The Geode pattern involves deploying a collection of backend services into a set of geographical nodes, each of which can service any request for any client in any region. This pattern allows serving requests in an active-active style, improving latency and increasing availability by distributing request processing around the globe.
 
 To learn more visit the following links:
 

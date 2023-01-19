@@ -1,6 +1,6 @@
 # Deployment Stamps
 
-Deployment Stamps refers to a technique used to manage the deployment of a system across different environments, such as development, staging, and production. A deployment stamp is a set of environment-specific configurations and settings that are applied to the system during the deployment process. It allows to manage environment-specific configurations, ensure consistency across environments, and simplify the deployment process. It can be implemented in several different ways such as Configuration files, Environment variables and Deployment script.
+The deployment stamp pattern involves provisioning, managing, and monitoring a heterogeneous group of resources to host and operate multiple workloads or tenants. Each individual copy is called a stamp, or sometimes a service unit, scale unit, or cell. In a multi-tenant environment, every stamp or scale unit can serve a predefined number of tenants. Multiple stamps can be deployed to scale the solution almost linearly and serve an increasing number of tenants. This approach can improve the scalability of your solution, allow you to deploy instances across multiple regions, and separate your customer data.
 
 To learn more visit the following links:
 
