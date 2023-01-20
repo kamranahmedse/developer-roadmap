@@ -4,7 +4,7 @@ Flutter is a free and open-source multi-platform UI framework created by Google 
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated Flutter Roadmap](/flutter/)
+- [Visit Dedicated Flutter Roadmap](/flutter)
 - [Flutter Website](https://flutter.dev)
 - [Flutter for Desktop](https://flutter.dev/multi-platform/desktop)
 - [Flutter Tutorial](https://www.w3adda.com/flutter-tutorial)

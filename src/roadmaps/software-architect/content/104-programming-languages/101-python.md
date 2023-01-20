@@ -4,7 +4,7 @@ Python is a multi-paradigm language. Being an interpreted language, code is exec
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated Python Roadmap](/python/)
+- [Visit Dedicated Python Roadmap](/python)
 - [Python Website](https://www.python.org/)
 - [Python Getting Started](https://www.python.org/about/gettingstarted/)
 - [Automate the Boring Stuff](https://automatetheboringstuff.com/)
