@@ -8,4 +8,4 @@ To learn more, visit the following links:
 
 - [Getting Started With Mapster in ASP.NET](https://code-maze.com/mapster-aspnetcore-introduction/)
 - [Overview of Mapster in .Net ](https://medium.com/@M-S-2/enjoy-using-mapster-in-net-6-2d3f287a0989)
-- [Introduction to Mapster](youtube.com/watch?v=bClE7Uon9e8)
+- [Introduction to Mapster](https://youtube.com/watch?v=bClE7Uon9e8)

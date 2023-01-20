@@ -8,4 +8,4 @@ Visit the following links to learn more:
 
 - [Background tasks with hosted services in ASP.NET](https://learn.microsoft.com/en-us/aspnet/core/fundamentals/host/hosted-services?view=aspnetcore-7.0&tabs=visual-studio)
 - [BackgroundService in ASP.NET Core](https://medium.com/@daniel.sagita/backgroundservice-for-a-long-running-work-3debe8f8d25b)
-- [Tutorial on Background Tasks in ASP.NET](youtube.com/watch?v=rugxQIH_p3A)
+- [Tutorial on Background Tasks in ASP.NET](https://youtube.com/watch?v=rugxQIH_p3A)
