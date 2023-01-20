@@ -32,22 +32,17 @@ export async function serializeSitemap(item) {
         // @ts-ignore
         changefreq: 'monthly',
         priority: 1,
-        lastmod: new Date().toISOString(),
       };
     }
   }
 
   // Guide and video pages
-  if (
-    item.url.startsWith('https://roadmap.sh/guides/') ||
-    item.url.startsWith('https://roadmap.sh/videos/')
-  ) {
+  if (item.url.startsWith('https://roadmap.sh/guides/') || item.url.startsWith('https://roadmap.sh/videos/')) {
     return {
       ...item,
       // @ts-ignore
       changefreq: 'monthly',
       priority: 0.9,
-      lastmod: new Date().toISOString(),
     };
   }
 
