@@ -24,7 +24,7 @@ const { frontmatter: guideData } = guide;
 <BaseLayout
   title={guideData.seo.title}
   description={guideData.seo.description}
-  permalink={`/guides/${guideId}/`}
+  permalink={`/guides/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
 >
   <GuideHeader guide={guide} />

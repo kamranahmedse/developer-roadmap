@@ -10,28 +10,35 @@ const { breadcrumbs, roadmapId } = Astro.props;
 ---
 
 <div class='py-7 pb-6'>
-    <!-- Desktop breadcrums -->
-    <p class='text-gray-500 container hidden sm:block'>
-      { breadcrumbs.map((breadcrumb, counter) => {
+  <!-- Desktop breadcrums -->
+  <p class='text-gray-500 container hidden sm:block'>
+    {
+      breadcrumbs.map((breadcrumb, counter) => {
         const isLast = counter === breadcrumbs.length - 1;
-        
+
         if (!isLast) {
           return (
             <>
-              <a class='hover:text-gray-800' href={`${breadcrumb.url}/`}>{ breadcrumb.title }</a>
+              <a class='hover:text-gray-800' href={`${breadcrumb.url}`}>
+                {breadcrumb.title}
+              </a>
               <span>&nbsp;&middot;&nbsp;</span>
             </>
           );
         }
-        
-        return <span class='text-gray-400'>{ breadcrumb.title }</span>
-      })}
-    </p>
 
-    <!-- Mobile breadcrums -->
-    <p class='container block sm:hidden'>
-      <a class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600' href={`/${roadmapId}/`}>
-        &larr; Back to Topics List
-      </a>
-    </p>
-  </div>
+        return <span class='text-gray-400'>{breadcrumb.title}</span>;
+      })
+    }
+  </p>
+
+  <!-- Mobile breadcrums -->
+  <p class='container block sm:hidden'>
+    <a
+      class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'
+      href={`/${roadmapId}`}
+    >
+      &larr; Back to Topics List
+    </a>
+  </p>
+</div>

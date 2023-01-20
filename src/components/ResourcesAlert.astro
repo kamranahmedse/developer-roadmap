@@ -8,10 +8,7 @@ export interface Props {
 const { roadmapId } = Astro.props;
 
 const hasTNSBanner = ['frontend', 'backend', 'devops'].includes(roadmapId);
-const roadmapTitle =
-  roadmapId === 'devops'
-    ? 'DevOps'
-    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
 ---
 
 <div
@@ -54,15 +51,12 @@ const roadmapTitle =
     ]}
   >
     <p class='text-sm'>
-      <span
-        class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'
-        >New</span
-      >
+      <span class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'>New</span>
       Resources are here, try clicking nodes
     </p>
 
     <a
-      href={`/${roadmapId}/topics/`}
+      href={`/${roadmapId}/topics`}
       class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'
     >
       <Icon icon='search' />
@@ -71,13 +65,8 @@ const roadmapTitle =
   </div>
 
   <!-- Mobile - Roadmap resources alert -->
-  <p
-    class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'
-  >
+  <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'>
     Click roadmap items for resources or visit{' '}
-    <a href={`/${roadmapId}/topics/`} class='text-blue-700 underline'>
-      resources list
-    </a>
-    .
+    <a href={`/${roadmapId}/topics`} class='text-blue-700 underline'> resources list</a>.
   </p>
 </div>

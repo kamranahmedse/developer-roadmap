@@ -1,5 +1,5 @@
 ---
-import type { VideoFileType } from "../lib/video";
+import type { VideoFileType } from '../lib/video';
 
 export interface Props {
   video: VideoFileType;
@@ -11,30 +11,30 @@ const { frontmatter, id } = video;
 
 <a
   class:list={[
-    "block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between border-b",
+    'block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between border-b',
   ]}
-  href={`/videos/${id}/`}
+  href={`/videos/${id}`}
 >
-  <span class="group-hover:translate-x-2 transition-transform">
+  <span class='group-hover:translate-x-2 transition-transform'>
     {frontmatter.title}
 
     {
       frontmatter.isNew && (
-        <span class="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5">
+        <span class='bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5'>
           New
-          <span class="hidden sm:inline">
+          <span class='hidden sm:inline'>
             &middot;
-            {new Date(frontmatter.date).toLocaleString("default", {
-              month: "long",
+            {new Date(frontmatter.date).toLocaleString('default', {
+              month: 'long',
             })}
           </span>
         </span>
       )
     }
   </span>
-  <span class="capitalize text-gray-500 text-xs hidden sm:block">
+  <span class='capitalize text-gray-500 text-xs hidden sm:block'>
     {frontmatter.duration}
   </span>
 
-  <span class="text-gray-400 text-xs block sm:hidden"> &raquo;</span>
+  <span class='text-gray-400 text-xs block sm:hidden'> &raquo;</span>
 </a>
