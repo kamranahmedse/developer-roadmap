@@ -117,7 +117,7 @@ export class Topic {
 
   fetchTopicHtml(roadmapId, topicId) {
     const topicPartial = topicId.replace(/^\d+-/, '').replaceAll(/:/g, '/');
-    const fullUrl = `/${roadmapId}/${topicPartial}/`;
+    const fullUrl = `/${roadmapId}/${topicPartial}`;
 
     return fetch(fullUrl)
       .then((res) => {
