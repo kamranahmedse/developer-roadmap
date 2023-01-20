@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="public/images/brand.png" height="128">
+  <img src="https://user-images.githubusercontent.com/77012237/213626896-9c47a0c3-6816-4311-9f41-7763cfd5cb69.svg" height=120>
   <h2 align="center"><a href="https://roadmap.sh">roadmap.sh</a></h2>
   <p align="center">Community driven roadmaps, articles and resources for developers<p>
   <p align="center">
