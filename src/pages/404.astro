@@ -4,7 +4,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapIds } from '../lib/roadmap';
 
 const roadmapIds = await getRoadmapIds();
-const legacyRoadmapUrls = roadmapIds.map((id) => `/${id}/`);
+const legacyRoadmapUrls = [...roadmapIds.map((id) => `/${id}/`), '/roadmaps/'];
 ---
 
 <BaseLayout title='Page not found' permalink={'/404'}>
