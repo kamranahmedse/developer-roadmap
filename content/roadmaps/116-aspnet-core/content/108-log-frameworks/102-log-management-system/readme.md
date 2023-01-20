@@ -1,1 +1,0 @@
-# Log management system

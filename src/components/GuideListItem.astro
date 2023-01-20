@@ -1,0 +1,40 @@
+---
+import type { GuideFileType } from "../lib/guide";
+
+export interface Props {
+  guide: GuideFileType;
+}
+
+const { guide } = Astro.props;
+const { frontmatter, id } = guide;
+---
+
+<a
+  class:list={[
+    "block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between border-b",
+  ]}
+  href={`/guides/${id}`}
+>
+  <span class="group-hover:translate-x-2 transition-transform">
+    {frontmatter.title}
+
+    {
+      frontmatter.isNew && (
+        <span class="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5">
+          New
+          <span class="hidden sm:inline">
+            &middot;
+            {new Date(frontmatter.date).toLocaleString("default", {
+              month: "long",
+            })}
+          </span>
+        </span>
+      )
+    }
+  </span>
+  <span class="capitalize text-gray-500 text-xs hidden sm:block">
+    {frontmatter.type}
+  </span>
+
+  <span class="text-gray-400 text-xs block sm:hidden"> &raquo;</span>
+</a>

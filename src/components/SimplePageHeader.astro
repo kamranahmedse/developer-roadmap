@@ -1,0 +1,26 @@
+---
+import YouTubeAlert from './YouTubeAlert.astro';
+
+export interface Props {
+  title: string;
+  description: string;
+  showYouTubeAlert?: boolean;
+}
+
+const { title, description, showYouTubeAlert = false } = Astro.props;
+---
+
+<div class="bg-white border-b pt-6 pb-5 sm:pt-12 sm:pb-10">
+  <div class="container">
+    {
+      showYouTubeAlert && (
+        <div class="mb-4 hidden sm:block">
+          <YouTubeAlert />
+        </div>
+      )
+    }
+
+    <h1 class="text-3xl sm:text-5xl mb-1 sm:mb-2 font-bold">{title}</h1>
+    <p class="text-gray-500 text-sm sm:text-lg">{description}</p>
+  </div>
+</div>

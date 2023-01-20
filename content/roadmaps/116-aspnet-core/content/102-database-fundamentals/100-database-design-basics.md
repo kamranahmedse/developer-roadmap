@@ -1,1 +1,0 @@
-# Database design basics
