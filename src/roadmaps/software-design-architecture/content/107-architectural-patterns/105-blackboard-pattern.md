@@ -1,0 +1,1 @@
+# Blackboard pattern

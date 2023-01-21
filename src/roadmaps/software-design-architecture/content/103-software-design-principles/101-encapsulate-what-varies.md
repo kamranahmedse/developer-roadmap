@@ -1,0 +1,1 @@
+# Encapsulate what varies

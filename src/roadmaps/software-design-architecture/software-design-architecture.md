@@ -7,7 +7,7 @@ featuredDescription: "Guide to learn software design and architecture"
 title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
 isNew: false
-hasTopics: false
+hasTopics: true
 dimensions:
   width: 968
   height: 1764.66
