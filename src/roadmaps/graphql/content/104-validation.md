@@ -5,4 +5,3 @@ Validation in GraphQL refers to the process of checking whether a GraphQL query 
 Learn more from the following links:
 
 - [Get Started with Validation in GraphQL](https://graphql.org/learn/validation/)
-- [Validate GraphQL Schema](https://medium.com/the-guild/validate-graphql-schema-70e2f63451c8)

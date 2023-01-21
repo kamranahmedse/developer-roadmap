@@ -4,5 +4,4 @@ Aliases in GraphQL are a way to rename fields when they are requested in a query
 
 To learn more, visit the following links:
 
-- [What are GraphQL aliases?](https://blog.logrocket.com/using-aliases-graphql/)
-- [How to use GraphQL aliases?](https://atheros.ai/blog/how-to-use-graphql-aliases)
+- [What are GraphQL Aliases?](https://graphql.org/learn/queries/#aliases)

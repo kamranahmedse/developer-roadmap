@@ -7,4 +7,3 @@ A GraphQL schema is defined using the GraphQL Schema Definition Language (SDL), 
 Learn more from the following links:
 
 - [Get started with Schema](https://graphql.org/learn/schema/)
-- [Complete guide to GraphQL Schema](https://www.apollographql.com/docs/apollo-server/schema/schema/)

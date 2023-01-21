@@ -4,5 +4,4 @@ In GraphQL, a fragment is a reusable piece of a GraphQL query that can be used t
 
 To learn more, visit the following links:
 
-- [Fragments of GraphQL](https://graphql.org/learn/queries/#fragments)
 - [Intro to Fragments in GraphQL](https://graphql.org/learn/queries/#fragments)

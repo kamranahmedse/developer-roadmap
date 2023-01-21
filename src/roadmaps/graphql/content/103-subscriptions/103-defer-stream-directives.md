@@ -7,4 +7,3 @@ The "defer" directive is used to delay the fetching of a field's data until the 
 Learn more from the following links:
 
 - [Defer and Stream in GraphQL](https://the-guild.dev/graphql/yoga-server/docs/features/defer-stream)
-- [Tutorial - Defer and Stream Directives in GraphQL](https://www.youtube.com/watch?v=icv_Pq06aOY)

@@ -8,4 +8,3 @@ Enums also called as enumeration types are a special kind of scalar that is rest
 Learn more from the following links:
 
 - [What are Enums?](https://graphql.org/learn/schema/#enumeration-types)
-- [Get started with Enums](https://graphql-ruby.org/type_definitions/enums)

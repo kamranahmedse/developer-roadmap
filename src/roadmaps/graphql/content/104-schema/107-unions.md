@@ -7,4 +7,3 @@ Unions don't allow to specify a common set of fields to be queried across multip
 Learn more from the following links:
 
 - [Get started with Union in GraphQL](https://graphql.org/learn/schema/#union-types)
-- [Unions in GraphQL](https://www.apollographql.com/docs/apollo-server/schema/unions-interfaces/)

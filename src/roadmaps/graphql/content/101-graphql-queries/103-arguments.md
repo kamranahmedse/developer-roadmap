@@ -4,5 +4,4 @@ Arguments in GraphQL are pieces of information that are passed to a field or a d
 
 Learn more from the following links:
 
-- [GraphQL - Passing Arguments](https://graphql.org/graphql-js/passing-arguments/)
-- [Different ways to pass an argument in GraphQL?](educative.io/answers/what-are-different-ways-to-pass-an-argument-in-graphql)
+- [GraphQL - Arguments](https://graphql.org/learn/queries/#arguments)

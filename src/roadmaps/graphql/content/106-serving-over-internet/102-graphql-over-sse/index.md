@@ -9,4 +9,3 @@ To implement GraphQL over SSE, you can use a library such as graphql-sse which p
 To learn more, visit the following links:
 
 - [Overview of GraphQL over SSE (Server-Sent Events)](https://the-guild.dev/blog/graphql-over-sse)
-- [GraphQL Subscriptions with Server Sent Events](https://www.youtube.com/watch?v=oZtTut7QsZ8)

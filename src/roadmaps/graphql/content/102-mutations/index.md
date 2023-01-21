@@ -7,4 +7,3 @@ The mutation includes fields that specify the data to be changed, the operation 
 To learn more, visit the following links:
 
 - [Getting started with Mutations](https://graphql.org/learn/queries/#mutations)
-- [Tutorial - Mutations in GraphQL](https://www.youtube.com/watch?v=DU77lbBPfBI)

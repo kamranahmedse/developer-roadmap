@@ -8,5 +8,4 @@ By using GraphQL on the frontend, developers can benefit from the flexibility an
 
 Learn more from following links:
 
-- [Get started with GraphQL on the frontend](https://www.smashingmagazine.com/2021/11/graphql-frontend-react-apollo/)
-- [GraphQL for Front End Developers](https://www.freecodecamp.org/news/graphql-for-front-end-developers/)
+- [Get started with GraphQL on the frontend](https://www.howtographql.com/react-apollo/0-introduction/)

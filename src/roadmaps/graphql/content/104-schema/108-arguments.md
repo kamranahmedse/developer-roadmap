@@ -5,4 +5,3 @@ In GraphQL, an argument is a value that is passed to a field in a query or mutat
 To learn more, visit the following links:
 
 - [Get started with Arguments in GraphQL](https://graphql.org/learn/schema/#arguments)
-- [Tutorial - Arguments in GraphQL](https://www.apollographql.com/tutorials/lift-off-part3/03-graphql-arguments)

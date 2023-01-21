@@ -11,4 +11,3 @@ There are several types of caching that can be used in GraphQL:
 Learn more from the following links:
 
 - [Get started with Caching](https://graphql.org/learn/caching/)
-- [How to Cache GraphQL?](https://www.youtube.com/watch?v=8EiF8j4s-os)

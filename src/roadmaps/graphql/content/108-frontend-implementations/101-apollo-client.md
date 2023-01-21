@@ -6,5 +6,4 @@ Apollo Client provides a set of features that make it easy to interact with a Gr
 
 Learn more from the following links:
 
-- [Why Apollo Client?](https://www.apollographql.com/docs/react/why-apollo/)
-- [What Is Apollo in GraphQL?](https://www.youtube.com/watch?v=mSzUb7f47qk)
+- [Why Apollo Client - Frontend?](https://www.howtographql.com/react-apollo/0-introduction/)

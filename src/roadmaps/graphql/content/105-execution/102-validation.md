@@ -7,4 +7,3 @@ GraphQL servers perform validation on all incoming queries and mutations to ensu
 Learn more from the following links:
 
 - [Get Started with Validation in GraphQL](https://graphql.org/learn/validation/)
-- [Validation in GraphQL](https://www.youtube.com/watch?v=cCBFY1yShUA)

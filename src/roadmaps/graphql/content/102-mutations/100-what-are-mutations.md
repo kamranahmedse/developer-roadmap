@@ -7,4 +7,3 @@ A mutation typically includes fields that specify the data to be changed and the
 Learn more from the following resources:
 
 - [Get started with Mutations](https://graphql.org/learn/queries/#mutations)
-- [What is a GraphQL Mutation?](https://hasura.io/learn/graphql/intro-graphql/graphql-mutations/)

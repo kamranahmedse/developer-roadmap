@@ -6,5 +6,4 @@ Relay is designed to work with GraphQL on the server and provides a set of clien
 
 Learn more from the following links:
 
-- [Relay - GraphQL](https://relay.dev/)
-- [Introducing Relay and GraphQL](https://reactjs.org/blog/2015/02/20/introducing-relay-and-graphql.html)
+- [GraphQL Code Generator & Relay Compiler](https://the-guild.dev/blog/graphql-codegen-relay-compiler)

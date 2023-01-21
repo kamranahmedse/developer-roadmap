@@ -9,5 +9,4 @@ There are several ways to implement a GraphQL backend, depending on the use case
 
 Learn more from the following links:
 
-- [How to use GraphQL to build Backend-For-Frontends](https://blog.bitsrc.io/how-to-use-graphql-to-build-backend-for-frontends-bffs-4b7e5a0105d0)
-- [Creating A GraphQL Backend](https://www.youtube.com/watch?v=6duKEokTZ44)
+- [How to use GraphQL to build Backend?](https://www.howtographql.com/typescript-apollo/0-introduction/)

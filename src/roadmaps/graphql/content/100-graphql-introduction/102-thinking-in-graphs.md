@@ -1,4 +1,4 @@
-# Thinking in graphs
+# Thinking in Graphs
 
 "Thinking in Graphs" is a mindset or approach when working with GraphQL. It refers to the way that data is organized and queried in GraphQL, which is based on the concept of a graph.
 

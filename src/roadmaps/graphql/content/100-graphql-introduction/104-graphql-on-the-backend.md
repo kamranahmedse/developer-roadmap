@@ -8,5 +8,4 @@ The GraphQL server is responsible for handling the incoming queries and mutation
 
 Learn more from the following links:
 
-- [GraphQL Codegen adds a new Java Backend plugin](https://medium.com/the-guild/graphql-codegen-adds-a-new-apollo-android-and-a-new-java-backend-plugins-57832b024e7b)
-- [How to use GraphQL to build Backend?](https://blog.bitsrc.io/how-to-use-graphql-to-build-backend-for-frontends-bffs-4b7e5a0105d0)
+- [How to use GraphQL in Backend?](https://www.howtographql.com/)

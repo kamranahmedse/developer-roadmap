@@ -4,9 +4,9 @@ Pagination in GraphQL refers to the process of breaking up large sets of data in
 
 There are several ways to implement pagination in GraphQL:
 
-- Using cursor-based pagination
-- Using offset-based pagination
-- Using relay-style pagination
+- Cursor-based pagination
+- Offset-based pagination
+- Relay-style pagination
 
 To learn more, visit the following links:
 

@@ -7,4 +7,3 @@ In GraphQL, lists can also be used within interfaces to define the return type f
 Learn more from the following links:
 
 - [Get started with Interfaces](https://graphql.org/learn/schema/#interfaces)
-- [Interfaces in GraphQL](https://graphql-ruby.org/type_definitions/interfaces)

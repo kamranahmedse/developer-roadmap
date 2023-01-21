@@ -15,6 +15,3 @@ Scalars are “leaf” values in GraphQL. There are several built-in scalars, an
 Learn more from the following links:
 
 - [Get started with Scalars in GraphQL](https://graphql.org/learn/schema/#scalar-types)
-- [Custom GraphQL Scalars](https://www.howtographql.com/typescript-apollo/7-voting-and-scalars/)
-- [Overview of GraphQL Scalars 1.0](https://medium.com/the-guild/graphql-scalars-1-0-is-out-more-types-data-integrity-and-strict-validations-on-graphql-972079428fb)
-- [Scalars in GraphQL](https://graphql-ruby.org/type_definitions/scalars)

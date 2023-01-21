@@ -11,4 +11,3 @@ GraphQL is a strongly typed language. Type System defines various data types tha
 Learn more from the following links:
 
 - [Get started with Type system](https://graphql.org/learn/schema/#type-system)
-- [GraphQL - Type System](https://www.tutorialspoint.com/graphql/graphql_type_system.htm)

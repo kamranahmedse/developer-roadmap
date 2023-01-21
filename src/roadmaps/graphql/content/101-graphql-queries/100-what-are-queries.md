@@ -4,6 +4,4 @@ In GraphQL, a query is a request made by the client to the server to retrieve da
 
 Learn more from following links:
 
-- [Introduction of GraphQL - Query](https://www.tutorialspoint.com/graphql/graphql_query.htm)
-- [What is a GraphQL Query?](https://www.apollographql.com/blog/graphql/examples/what-is-a-graphql-query-graphql-query-using-apollo-explorer/)
-- [Understanding GraphQL Queries](https://www.youtube.com/watch?v=_hTnvOFKsUs)
+- [Introduction of GraphQL - Query](https://graphql.org/learn/queries/)

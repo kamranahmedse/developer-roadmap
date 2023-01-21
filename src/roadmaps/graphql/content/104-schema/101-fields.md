@@ -6,5 +6,4 @@ Each field in a GraphQL schema can return a scalar value (such as a string or an
 
 Learn more from the following links:
 
-- [GraphQL Tutorial: How to use fields?](https://www.educative.io/blog/graphql-tutorial)
-- [GraphQL: Types and Fields](https://typegraphql.com/docs/types-and-fields.html)
+- [GraphQL: Types and Fields](https://graphql.org/learn/queries/#fields)
