@@ -6,8 +6,8 @@ specifiers:
   '@playwright/test': ^1.29.2
   '@tailwindcss/typography': ^0.5.9
   astro: ^1.9.2
-  astro-compress: ^1.1.27
-  gh-pages: ^4.0.0
+  astro-compress: ^1.1.28
+  gh-pages: ^5.0.0
   json-to-pretty-yaml: ^1.2.2
   markdown-it: ^13.0.1
   node-html-parser: ^6.1.4
@@ -22,7 +22,7 @@ dependencies:
   '@astrojs/sitemap': 1.0.0
   '@astrojs/tailwind': 2.1.3_tailwindcss@3.2.4
   astro: 1.9.2
-  astro-compress: 1.1.27
+  astro-compress: 1.1.28
   node-html-parser: 6.1.4
   npm-check-updates: 16.6.2
   rehype-external-links: 2.0.1
@@ -32,7 +32,7 @@ dependencies:
 devDependencies:
   '@playwright/test': 1.29.2
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.4
-  gh-pages: 4.0.0
+  gh-pages: 5.0.0
   json-to-pretty-yaml: 1.2.2
   markdown-it: 13.0.1
   prettier: 2.8.3
@@ -968,8 +968,8 @@ packages:
       tslib: 2.4.1
     dev: false
 
-  /astro-compress/1.1.27:
-    resolution: {integrity: sha512-7H7mfp4/BECckQGtyNJVYBI9jwWYX3rBcbL1EbhlgyDRbs3/thtJKDwW8xEaUvxox4R2bnNyzIET4XF/zGbozg==}
+  /astro-compress/1.1.28:
+    resolution: {integrity: sha512-uk4lZHug/A276T/jdtEscCFbWVI78UqlvDg4ujRL5UUcIs+nd8gJOipSagkzdGswjNkd482zFysQ9YS5/u7xVw==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1061,10 +1061,8 @@ packages:
       - ts-node
     dev: false
 
-  /async/2.6.4:
-    resolution: {integrity: sha512-mzo5dfJYwAn29PeiJ0zvwTo04zj8HDJj0Mn8TD7sno7q12prdbnasKJHhkm2c1LgrhlJ0teaea8860oxi51mGA==}
-    dependencies:
-      lodash: 4.17.21
+  /async/3.2.4:
+    resolution: {integrity: sha512-iAB+JbDEGXhyIUavoDl9WP/Jj106Kz9DEn1DPgYw5ruDn0e3Wgi3sKFm55sASdGBNOQB8F59d9qQ7deqrHA8wQ==}
     dev: true
 
   /autoprefixer/10.4.13_postcss@8.4.20:
@@ -1745,8 +1743,8 @@ packages:
     resolution: {integrity: sha512-M8WEXFuKXMYMVr45fo8mq0wUrrJHheiKZf6BArTKk9ZBYCKJEOU5H8cdWgDT+qCVZf7Na4lVUaZsA+h6uA9+PA==}
     dev: false
 
-  /email-addresses/3.1.0:
-    resolution: {integrity: sha512-k0/r7GrWVL32kZlGwfPNgB2Y/mMXVTq/decgLczm/j34whdaspNrZO8CnXPf1laaHxI6ptUlsnAxN+UAPw+fzg==}
+  /email-addresses/5.0.0:
+    resolution: {integrity: sha512-4OIPYlA6JXqtVn8zpHpGiI7vE6EQOAg16aGnDMIAlZVinnoZ8208tW1hAbjWydgN/4PLTT9q+O1K6AH/vALJGw==}
     dev: true
 
   /emmet/2.3.6:
@@ -2279,14 +2277,14 @@ packages:
     engines: {node: '>=10'}
     dev: false
 
-  /gh-pages/4.0.0:
-    resolution: {integrity: sha512-p8S0T3aGJc68MtwOcZusul5qPSNZCalap3NWbhRUZYu1YOdp+EjZ+4kPmRM8h3NNRdqw00yuevRjlkuSzCn7iQ==}
+  /gh-pages/5.0.0:
+    resolution: {integrity: sha512-Nqp1SjkPIB94Xw/3yYNTUL+G2dxlhjvv1zeN/4kMC1jfViTEqhtVz/Ba1zSXHuvXCN9ADNS1dN4r5/J/nZWEQQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
-      async: 2.6.4
+      async: 3.2.4
       commander: 2.20.3
-      email-addresses: 3.1.0
+      email-addresses: 5.0.0
       filenamify: 4.3.0
       find-cache-dir: 3.3.2
       fs-extra: 8.1.0
@@ -3042,6 +3040,7 @@ packages:
 
   /lodash/4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
 
   /log-symbols/5.1.0:
     resolution: {integrity: sha512-l0x2DvrW294C9uDCoQe1VSU4gf529FkSZ6leBl4TiqZH/e+0R7hSfHQBNut2mNygDgHwvYHfFLn6Oxb3VWj2rA==}
