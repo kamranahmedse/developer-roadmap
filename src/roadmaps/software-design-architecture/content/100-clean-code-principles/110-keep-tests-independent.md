@@ -1,6 +1,6 @@
 # Keep Tests Independent
 
-Keeping tests independent is important in system architecture because it ensures that the tests are reliable, repeatable, and easy to maintain. When tests are independent, a change in one test will not affect the results of other tests.
+Keeping tests independent helps ensures that the tests are reliable, repeatable, and easy to maintain. When tests are independent, a change in one test will not affect the results of other tests.
 
 Here are some ways to keep tests independent in system architecture:
 
