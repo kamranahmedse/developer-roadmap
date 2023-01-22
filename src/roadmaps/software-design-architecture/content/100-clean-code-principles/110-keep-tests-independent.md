@@ -15,4 +15,4 @@ By following these best practices, the system architecture will be more maintain
 
 Learn more from the following links:
 
-- [Independent Testing in Software Engineering](https://www.geeksforgeeks.org/independent-testing-in-software-engineering/)
+- [Keeping Tests Valuable](https://www.checklyhq.com/learn/headless/valuable-tests/)
