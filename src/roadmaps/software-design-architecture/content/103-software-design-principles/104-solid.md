@@ -11,5 +11,5 @@ SOLID is an acronym that stands for five principles of object-oriented software 
 Learn more from the following resources:
 
 - [Get Started with SOLID](https://www.bmc.com/blogs/solid-design-principles/)
-- [Introduction to SOLID Principles of Software Architecture](https://www.developer.com/project-management/solid-principles-software-architecture/)
+- [SOLID Principles](https://khalilstemmler.com/articles/tags/solid/)
 - [Tutorial - What are SOLID principle?](https://www.youtube.com/watch?v=aUCo5cy32kE)
