@@ -11,9 +11,9 @@ jobs:
     steps:
       - name: Get Costs
         env:
-          AWS_KEY: ${{ COST_AWS_ACCESS_KEY }}
-          AWS_SECRET: ${{ COST_AWS_SECRET_KEY }}
-          AWS_REGION: ${{ COST_AWS_REGION }}
+          AWS_KEY: ${{ secrets.COST_AWS_ACCESS_KEY }}
+          AWS_SECRET: ${{ secrets.COST_AWS_SECRET_KEY }}
+          AWS_REGION: ${{ secrets.COST_AWS_REGION }}
         run: |
           npm install -g aws-cost-cli
           aws-cost -k $AWS_KEY -s $AWS_SECRET -r $AWS_REGION
