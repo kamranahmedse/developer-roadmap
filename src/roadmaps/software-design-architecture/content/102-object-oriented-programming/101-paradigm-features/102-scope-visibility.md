@@ -7,7 +7,3 @@ Scope visibility refers to the accessibility or visibility of variables, functio
 - Protected: A protected element can only be accessed within the class and its subclasses.
 
 There are variations of scope visibility based on the programming language, but these are the most common.
-
-Learn more from the following resources:
-
-- [Scope, Visibility and Lifetime of Variables](https://www.youtube.com/watch?v=GQn46bSZE1g)
