@@ -21,7 +21,7 @@ const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as TopicF
   title={`${heading} - roadmap.sh`}
   description={`Free resources to learn ${heading} in ${roadmap.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.featuredTitle}.`}
   noIndex={true}
-  permalink={`/${topicId}/`}
+  permalink={`/${topicId}`}
 >
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
   <div class='bg-gray-50'>

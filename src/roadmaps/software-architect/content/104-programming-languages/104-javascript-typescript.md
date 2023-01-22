@@ -4,7 +4,7 @@ JavaScript allows you to add interactivity to your pages. Common examples that y
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated JavaScript Roadmap](/javascript/)
+- [Visit Dedicated JavaScript Roadmap](/javascript)
 - [W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Codecademy - Learn JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)

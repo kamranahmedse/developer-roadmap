@@ -6,7 +6,7 @@ If you pick up JavaScript for the Backend, my personal recommendation would be t
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated JavaScript Roadmap](/javascript/)
+- [Visit Dedicated JavaScript Roadmap](/javascript)
 - [W3Schools – JavaScript Tutorial](https://www.w3schools.com/js/)
 - [The Modern JavaScript Tutorial](https://javascript.info/)
 - [Eloquent Javascript - Book](https://eloquentjavascript.net/)

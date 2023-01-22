@@ -2,13 +2,18 @@ const fs = require('node:fs');
 const path = require('node:path');
 
 const jsonsDir = path.join(process.cwd(), 'public/jsons');
-const jsonFiles = fs.readdirSync(jsonsDir);
+const childJsonDirs = fs.readdirSync(jsonsDir);
 
-jsonFiles.forEach((jsonFileName) => {
-  console.log(`Compressing ${jsonFileName}...`);
+childJsonDirs.forEach((childJsonDir) => {
+  const fullChildJsonDirPath = path.join(jsonsDir, childJsonDir);
+  const jsonFiles = fs.readdirSync(fullChildJsonDirPath);
 
-  const jsonFilePath = path.join(jsonsDir, jsonFileName);
-  const json = require(jsonFilePath);
+  jsonFiles.forEach((jsonFileName) => {
+    console.log(`Compressing ${jsonFileName}...`);
 
-  fs.writeFileSync(jsonFilePath, JSON.stringify(json));
+    const jsonFilePath = path.join(fullChildJsonDirPath, jsonFileName);
+    const json = require(jsonFilePath);
+
+    fs.writeFileSync(jsonFilePath, JSON.stringify(json));
+  });
 });

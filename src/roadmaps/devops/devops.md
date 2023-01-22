@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/devops.json"
+jsonUrl: "/jsons/roadmaps/devops.json"
 pdfUrl: "/pdfs/devops.pdf"
 order: 3
 featuredTitle: "DevOps"

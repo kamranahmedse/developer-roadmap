@@ -1,26 +1,21 @@
 ---
 import Icon from './Icon.astro';
 import ResourcesAlert from './ResourcesAlert.astro';
+import RoadmapNote from './RoadmapNote.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
 
 export interface Props {
   title: string;
   description: string;
+  note?: string;
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
   hasTopics?: boolean;
 }
 
-const {
-  title,
-  description,
-  roadmapId,
-  isUpcoming = false,
-  hasSearch = false,
-  hasTopics = false,
-} = Astro.props;
+const { title, description, roadmapId, isUpcoming = false, hasSearch = false, note, hasTopics = false } = Astro.props;
 
 const isRoadmapReady = !isUpcoming;
 ---
@@ -42,7 +37,7 @@ const isRoadmapReady = !isUpcoming;
           !hasSearch && (
             <>
               <a
-                href='/roadmaps/'
+                href='/roadmaps'
                 class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'
                 aria-label='Back to All Roadmaps'
               >
@@ -81,7 +76,7 @@ const isRoadmapReady = !isUpcoming;
         {
           hasSearch && (
             <a
-              href={`/${roadmapId}/`}
+              href={`/${roadmapId}`}
               class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'
               aria-label='Back to Visual Roadmap'
             >
@@ -114,3 +109,5 @@ const isRoadmapReady = !isUpcoming;
     {hasSearch && <TopicSearch />}
   </div>
 </div>
+
+{note && <RoadmapNote text={note} />}

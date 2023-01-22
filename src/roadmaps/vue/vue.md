@@ -1,12 +1,12 @@
 ---
-jsonUrl: "/jsons/vue.json"
+jsonUrl: "/jsons/roadmaps/vue.json"
 pdfUrl: "/pdfs/vue.pdf"
 order: 4
 featuredTitle: "Vue"
 featuredDescription: "Step by step guide to become a Vue Developer in 2023"
 title: "Vue Developer"
 description: "Everything that is there to learn about Vue and the ecosystem in 2023."
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

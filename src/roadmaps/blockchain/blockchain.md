@@ -1,12 +1,12 @@
 ---
-jsonUrl: "/jsons/blockchain.json"
+jsonUrl: "/jsons/roadmaps/blockchain.json"
 pdfUrl: "/pdfs/blockchain.pdf"
 order: 6
 featuredTitle: "Blockchain"
 featuredDescription: "Step by step guide to becoming a blockchain developer in 2023"
 title: "Blockchain Developer"
 description: "Step by step guide to becoming a blockchain developer in 2023."
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

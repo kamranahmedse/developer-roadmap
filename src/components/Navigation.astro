@@ -12,18 +12,18 @@ import Icon from './Icon.astro';
     <!-- Desktop navigation items -->
     <ul class='hidden sm:flex space-x-5'>
       <li>
-        <a href='/roadmaps/' class='text-gray-400 hover:text-white'>Roadmaps</a>
+        <a href='/roadmaps' class='text-gray-400 hover:text-white'>Roadmaps</a>
       </li>
       <li>
-        <a href='/guides/' class='text-gray-400 hover:text-white'>Guides</a>
+        <a href='/guides' class='text-gray-400 hover:text-white'>Guides</a>
       </li>
       <li>
-        <a href='/videos/' class='text-gray-400 hover:text-white'>Videos</a>
+        <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
       <li>
         <a
           class='py-2 px-4 text-sm font-regular rounded-full bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-500 hover:to-blue-600 text-white'
-          href='/signup/'
+          href='/signup'
         >
           Subscribe
         </a>
@@ -31,19 +31,12 @@ import Icon from './Icon.astro';
     </ul>
 
     <!-- Mobile Navigation Button -->
-    <button
-      class='text-gray-400 hover:text-gray-50 block sm:hidden cursor-pointer'
-      aria-label='Menu'
-      show-mobile-nav
-    >
+    <button class='text-gray-400 hover:text-gray-50 block sm:hidden cursor-pointer' aria-label='Menu' show-mobile-nav>
       <Icon icon='hamburger' />
     </button>
 
     <!-- Mobile Navigation Items -->
-    <div
-      class='fixed top-0 bottom-0 left-0 right-0 z-40 bg-slate-900 items-center flex hidden'
-      mobile-nav
-    >
+    <div class='fixed top-0 bottom-0 left-0 right-0 z-40 bg-slate-900 items-center flex hidden' mobile-nav>
       <button
         close-mobile-nav
         class='text-gray-400 hover:text-gray-50 block cursor-pointer absolute top-6 right-6'
@@ -53,26 +46,16 @@ import Icon from './Icon.astro';
       </button>
       <ul class='flex flex-col gap-2 md:gap-3 items-center w-full'>
         <li>
-          <a href='/roadmaps/' class='text-xl md:text-lg hover:text-blue-300'
-            >Roadmaps</a
-          >
+          <a href='/roadmaps' class='text-xl md:text-lg hover:text-blue-300'>Roadmaps</a>
         </li>
         <li>
-          <a href='/guides/' class='text-xl md:text-lg hover:text-blue-300'
-            >Guides</a
-          >
+          <a href='/guides' class='text-xl md:text-lg hover:text-blue-300'>Guides</a>
         </li>
         <li>
-          <a href='/videos/' class='text-xl md:text-lg hover:text-blue-300'
-            >Videos</a
-          >
+          <a href='/videos' class='text-xl md:text-lg hover:text-blue-300'>Videos</a>
         </li>
         <li>
-          <a
-            href='/signup/'
-            class='text-xl md:text-lg text-red-300 hover:text-red-400'
-            >Subscribe</a
-          >
+          <a href='/signup' class='text-xl md:text-lg text-red-300 hover:text-red-400'>Subscribe</a>
         </li>
       </ul>
     </div>
@@ -84,9 +67,7 @@ import Icon from './Icon.astro';
     document.querySelector('[mobile-nav]')?.classList.remove('hidden');
   });
 
-  document
-    .querySelector('[close-mobile-nav]')
-    ?.addEventListener('click', () => {
-      document.querySelector('[mobile-nav]')?.classList.add('hidden');
-    });
+  document.querySelector('[close-mobile-nav]')?.addEventListener('click', () => {
+    document.querySelector('[mobile-nav]')?.classList.add('hidden');
+  });
 </script>

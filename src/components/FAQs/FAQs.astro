@@ -1,4 +1,5 @@
 ---
+import { markdownToHtml } from '../../lib/markdown';
 import Answer from './Answer.astro';
 import Question from './Question.astro';
 
@@ -29,8 +30,8 @@ if (faqs.length === 0) {
         faqs.map((faq, questionIndex) => (
           <Question isActive={questionIndex === 0} question={faq.question}>
             <Answer>
-              {faq.answer.map((answer, index) => (
-                <p class:list={{ 'mb-3': index !== faq.answer.length - 1 }}>{answer}</p>
+              {faq.answer.map((answer) => (
+                <p set:html={markdownToHtml(answer)} />
               ))}
             </Answer>
           </Question>

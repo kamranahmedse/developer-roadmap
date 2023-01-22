@@ -4,6 +4,6 @@ Razor is a markup syntax for embedding server-side code in web pages. It was int
 
 To learn more, visit the following links:
 
-- [Complete Guide to ASP.NET Razor](w3schools.com/asp/razor_intro.asp)
+- [Complete Guide to ASP.NET Razor](https://w3schools.com/asp/razor_intro.asp)
 - [Introduction to ASP.NET Web Programming Using Razor](https://learn.microsoft.com/en-us/aspnet/web-pages/overview/getting-started/introducing-razor-syntax-c)
 - [An Introduction To Razor](https://khalidabuhakmeh.com/what-is-razor-aspnet)

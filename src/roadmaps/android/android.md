@@ -1,5 +1,5 @@
 ---
-# jsonUrl: "/jsons/android.json"
+# jsonUrl: "/jsons/roadmaps/android.json"
 pdfUrl: "/pdfs/android.pdf"
 order: 4
 featuredTitle: "Android"

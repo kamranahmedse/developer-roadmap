@@ -14,6 +14,7 @@ export interface Props {
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
+  canonicalUrl?: string;
   permalink?: string;
   sponsor?: SponsorType;
   jsonLd?: Record<string, unknown>[];
@@ -25,12 +26,15 @@ const {
   keywords = siteConfig.keywords,
   noIndex = false,
   permalink = '',
+  canonicalUrl: givenCanonical = '',
   sponsor,
   jsonLd = [],
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
 const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+
+const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
 
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
 ---
@@ -65,7 +69,7 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta property='og:type' content='website' />
     <meta property='og:url' content={currentPageAbsoluteUrl} />
 
-    <link rel='canonical' href={currentPageAbsoluteUrl} />
+    <link rel='canonical' href={canonicalUrl} />
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />

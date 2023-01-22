@@ -29,3 +29,4 @@ Here is the list of PDF links for each of the roadmaps.
 * **Java Roadmap** - [Roadmap Link](https://roadmap.sh/java) / [PDF Link](https://roadmap.sh/pdfs/java.pdf)
 * **Spring Boot Roadmap** - [Roadmap Link](https://roadmap.sh/spring-boot) / [PDF Link](https://roadmap.sh/pdfs/spring-boot.pdf)
 * **Python Roadmap** - [Roadmap Link](https://roadmap.sh/python) / [PDF Link](https://roadmap.sh/pdfs/python.pdf)
+* **System Design** - [Roadmap Link](https://roadmap.sh/system-design) / [PDF Link](https://roadmap.sh/pdfs/system-design.pdf)

@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/graphql.json"
+jsonUrl: "/jsons/roadmaps/graphql.json"
 pdfUrl: "/pdfs/graphql.pdf"
 order: 12
 featuredTitle: "GraphQL"

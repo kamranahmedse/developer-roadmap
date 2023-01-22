@@ -23,7 +23,7 @@ const { video } = Astro.props;
 <BaseLayout
   title={video.frontmatter.title}
   description={video.frontmatter.description}
-  permalink={`/videos/${videoId}/`}
+  permalink={`/videos/${videoId}`}
 >
   <VideoHeader video={video} />
 

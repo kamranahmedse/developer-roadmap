@@ -10,7 +10,7 @@ export default defineConfig({
   site: 'https://roadmap.sh',
   markdown: {
     shikiConfig: {
-      theme: 'dracula'
+      theme: 'dracula',
     },
     rehypePlugins: [
       [
@@ -20,6 +20,9 @@ export default defineConfig({
         },
       ],
     ],
+  },
+  build: {
+    format: 'file',
   },
   integrations: [
     tailwind({

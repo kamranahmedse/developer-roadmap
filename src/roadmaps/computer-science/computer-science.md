@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/computer-science.json"
+jsonUrl: "/jsons/roadmaps/computer-science.json"
 pdfUrl: "/pdfs/computer-science.pdf"
 order: 1
 featuredTitle: "Computer Science"

@@ -1,5 +1,5 @@
 ---
-jsonUrl: "/jsons/java.json"
+jsonUrl: "/jsons/roadmaps/java.json"
 pdfUrl: "/pdfs/java.pdf"
 order: 9
 featuredTitle: "Java"

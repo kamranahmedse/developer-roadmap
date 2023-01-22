@@ -14,7 +14,7 @@ If you know a bit of programming, Dart is a typed object programming language. Y
 
 Visit the following resources to learn more:
 
-- [Visit Dedicated Flutter Roadmap](/flutter/)
+- [Visit Dedicated Flutter Roadmap](/flutter)
 - [Flutter Website](https://flutter.dev)
 - [Flutter Tutorial](https://www.w3adda.com/flutter-tutorial)
 - [Flutter Tutorial for Beginners](https://www.youtube.com/watch?v=1ukSR1GRtMU&list=PL4cUxeGkcC9jLYyp2Aoh6hcWuxFDX6PBJ)

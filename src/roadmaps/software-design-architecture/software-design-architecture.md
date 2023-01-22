@@ -1,13 +1,13 @@
 ---
-jsonUrl: "/jsons/software-design-architecture.json"
+jsonUrl: "/jsons/roadmaps/software-design-architecture.json"
 pdfUrl: "/pdfs/software-design-architecture.pdf"
-order: 11
+order: 12
 featuredTitle: "Design and Architecture"
 featuredDescription: "Guide to learn software design and architecture"
 title: "Software Design and Architecture"
 description: "Step by step guide to learn software design and architecture"
-isNew: true
-hasTopics: false
+isNew: false
+hasTopics: true
 dimensions:
   width: 968
   height: 1764.66
