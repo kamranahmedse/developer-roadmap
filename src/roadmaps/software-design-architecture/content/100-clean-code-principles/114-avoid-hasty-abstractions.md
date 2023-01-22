@@ -15,4 +15,4 @@ Here are some ways to avoid hasty abstractions in system architecture:
 
 Learn more from the following links:
 
-- [Avoiding Hasty Abstractions (AHA programming)](https://dev.to/cher/avoiding-hasty-abstractions-aha-programming-3d3b)
+- [AHA Programming](https://kentcdodds.com/blog/aha-programming)
