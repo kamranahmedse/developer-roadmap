@@ -7,4 +7,4 @@ A domain model is used to provide a clear and consistent representation of the p
 Learn more from the following links:
 
 - [Overview of Domain model](https://en.wikipedia.org/wiki/Domain_model)
-- [Software Engineering | Domain Modeling](https://www.geeksforgeeks.org/software-engineering-domain-modeling/)
+- [Domain Driven Design](https://khalilstemmler.com/articles/categories/domain-driven-design/)
