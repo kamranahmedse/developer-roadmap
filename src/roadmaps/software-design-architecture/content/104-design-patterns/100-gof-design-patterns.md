@@ -1,4 +1,4 @@
-# Gof Design Patterns
+# GoF Design Patterns
 
 The Gang of Four (GoF) design patterns are a set of design patterns for object-oriented software development that were first described in the book "Design Patterns: Elements of Reusable Object-Oriented Software" by Erich Gamma, Richard Helm, Ralph Johnson, and John Vlissides (also known as the Gang of Four).
 
