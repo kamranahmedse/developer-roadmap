@@ -79,7 +79,12 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
           <ShareIcons description={roadmapData.featuredDescription} pageUrl={`https://roadmap.sh/${roadmapId}`} />
           <TopicOverlay contentContributionLink={contentContributionLink} />
 
-          <FrameRenderer roadmapId={roadmapId} jsonUrl={roadmapData.jsonUrl} dimensions={roadmapData.dimensions} />
+          <FrameRenderer
+            resourceType={'roadmap'}
+            resourceId={roadmapId}
+            jsonUrl={roadmapData.jsonUrl}
+            dimensions={roadmapData.dimensions}
+          />
         </div>
       )
     }

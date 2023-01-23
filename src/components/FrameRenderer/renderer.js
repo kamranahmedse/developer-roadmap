@@ -1,23 +1,17 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 
-/**
- * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
- */
-
 export class Renderer {
-  /**
-   * @param {RoadmapConfig} config
-   */
   constructor() {
-    this.roadmapId = '';
+    this.resourceId = '';
+    this.resourceType = '';
     this.jsonUrl = '';
 
-    this.containerId = 'roadmap-svg';
+    this.containerId = 'resource-svg';
 
     this.init = this.init.bind(this);
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
-    this.fetchRoadmapSvg = this.fetchRoadmapSvg.bind(this);
-    this.handleRoadmapClick = this.handleRoadmapClick.bind(this);
+    this.jsonToSvg = this.jsonToSvg.bind(this);
+    this.handleSvgClick = this.handleSvgClick.bind(this);
     this.prepareConfig = this.prepareConfig.bind(this);
   }
 
@@ -32,7 +26,8 @@ export class Renderer {
 
     const dataset = this.containerEl.dataset;
 
-    this.roadmapId = dataset.roadmapId;
+    this.resourceType = dataset.resourceType;
+    this.resourceId = dataset.resourceId;
     this.jsonUrl = dataset.jsonUrl;
 
     return true;
@@ -42,7 +37,7 @@ export class Renderer {
    * @param { string } jsonUrl
    * @returns {Promise<SVGElement>}
    */
-  fetchRoadmapSvg(jsonUrl) {
+  jsonToSvg(jsonUrl) {
     if (!jsonUrl) {
       console.error('jsonUrl not defined in frontmatter');
       return null;
@@ -64,14 +59,14 @@ export class Renderer {
       return;
     }
 
-    this.fetchRoadmapSvg(this.jsonUrl)
+    this.jsonToSvg(this.jsonUrl)
       .then((svg) => {
         document.getElementById(this.containerId).replaceChildren(svg);
       })
       .catch(console.error);
   }
 
-  handleRoadmapClick(e) {
+  handleSvgClick(e) {
     const targetGroup = e.target.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
     if (!groupId) {
@@ -80,11 +75,19 @@ export class Renderer {
 
     e.stopImmediatePropagation();
 
+    if (/^ext_link/.test(groupId)) {
+      window.open(`https://${groupId.replace('ext_link:', '')}`);
+      return;
+    }
+
+    // Remove sorting prefix from groupId
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+
     window.dispatchEvent(
-      new CustomEvent('topic.click', {
+      new CustomEvent(`${this.resourceType}.topic.click`, {
         detail: {
-          topicId: groupId,
-          roadmapId: this.roadmapId,
+          topicId: normalizedGroupId,
+          resourceId: this.resourceId,
         },
       })
     );
@@ -92,7 +95,7 @@ export class Renderer {
 
   init() {
     window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
-    window.addEventListener('click', this.handleRoadmapClick);
+    window.addEventListener('click', this.handleSvgClick);
   }
 }
 
