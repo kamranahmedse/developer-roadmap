@@ -6,7 +6,7 @@ import { Sharer } from './sharer';
  * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
  */
 
-export class Roadmap {
+export class Renderer {
   /**
    * @param {RoadmapConfig} config
    */
@@ -98,8 +98,8 @@ export class Roadmap {
   }
 }
 
-const roadmap = new Roadmap();
-roadmap.init();
+const renderer = new Renderer();
+renderer.init();
 
 // Initialize the topic loader
 const topic = new Topic();

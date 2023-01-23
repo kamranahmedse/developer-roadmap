@@ -2,10 +2,10 @@
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import RoadmapBanner from '../../components/RoadmapBanner.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getTopicFiles, TopicFileType } from '../../lib/topic';
+import { getRoadmapTopicFiles, RoadmapTopicFileType } from '../../lib/roadmap-topic';
 
 export async function getStaticPaths() {
-  const topicPathMapping = await getTopicFiles();
+  const topicPathMapping = await getRoadmapTopicFiles();
 
   return Object.keys(topicPathMapping).map((topicSlug) => {
     const topicDetails = topicPathMapping[topicSlug];
@@ -23,7 +23,7 @@ export async function getStaticPaths() {
 }
 
 const { topicId } = Astro.params;
-const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as TopicFileType;
+const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as RoadmapTopicFileType;
 ---
 
 <BaseLayout
