@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/javascript.json"
-pdfUrl: "/pdfs/javascript.pdf"
+pdfUrl: "/pdfs/roadmaps/javascript.pdf"
 order: 5
 featuredTitle: "JavaScript"
 featuredDescription: "Step by step guide to learn JavaScript in 2023"

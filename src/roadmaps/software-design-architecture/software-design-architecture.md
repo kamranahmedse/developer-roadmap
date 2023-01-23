@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/software-design-architecture.json"
-pdfUrl: "/pdfs/software-design-architecture.pdf"
+pdfUrl: "/pdfs/roadmaps/software-design-architecture.pdf"
 order: 12
 featuredTitle: "Design and Architecture"
 featuredDescription: "Guide to learn software design and architecture"

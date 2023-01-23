@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/angular.json"
-pdfUrl: "/pdfs/angular.pdf"
+pdfUrl: "/pdfs/roadmaps/angular.pdf"
 order: 3
 featuredTitle: "Angular"
 featuredDescription: "Step by step guide to become a Angular Developer in 2023"

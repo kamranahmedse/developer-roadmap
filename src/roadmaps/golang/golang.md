@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/golang.json"
-pdfUrl: "/pdfs/golang.pdf"
+pdfUrl: "/pdfs/roadmaps/golang.pdf"
 order: 11
 featuredTitle: "Go"
 featuredDescription: "Step by step guide to becoming a Go developer in 2023"
