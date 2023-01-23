@@ -1,10 +1,9 @@
 ---
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
-import FAQs from '../../components/FAQs/FAQs.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
-import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
+import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BestPracticeFrontmatter,getBestPracticeIds } from '../../lib/best-pratice';
 import { generateArticleSchema } from '../../lib/jsonld-schema';
@@ -23,7 +22,6 @@ interface Params extends Record<string, string | undefined> {
 
 const { bestPracticeId } = Astro.params as Params;
 const bestPracticeFile = await import(`../../best-practices/${bestPracticeId}/${bestPracticeId}.md`);
-const { faqs: roadmapFAQs = [] } = await import(`../../roadmaps/${bestPracticeId}/faqs.astro`);
 const bestPracticeData = bestPracticeFile.frontmatter as BestPracticeFrontmatter;
 
 let jsonLdSchema = [];
@@ -78,9 +76,6 @@ if (bestPracticeData.schema) {
     )
   }
 
-  {bestPracticeData.isUpcoming && <UpcomingRoadmap />}
-
-  <FAQs faqs={roadmapFAQs} />
-
+  {bestPracticeData.isUpcoming && <UpcomingForm />}
   <CaptchaScripts slot='after-footer' />
 </BaseLayout>
