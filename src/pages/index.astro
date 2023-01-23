@@ -3,12 +3,14 @@ import FeaturedGuides from '../components/FeaturedGuides.astro';
 import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
 import FeaturedVideos from '../components/FeaturedVideos.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { getAllBestPractices } from '../lib/best-pratice';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
+const bestPractices = await getAllBestPractices();
 
 const guides = await getAllGuides();
 const videos = await getAllVideos();
@@ -20,7 +22,7 @@ const videos = await getAllVideos();
   permalink={'/'}
 >
   <div class='bg-gradient-to-b from-slate-900 to-black'>
-    <div class='border-b border-b-slate-900'>
+    <div class='border-b border-b-[#1e293c]'>
       <div class='container text-left sm:text-center py-6 sm:py-20 px-6 sm:px-0'>
         <h1
           class='text-2xl sm:text-5xl mb-2 sm:mb-4 font-bold bg-gradient-to-b from-amber-50 to-purple-500 text-transparent bg-clip-text'
@@ -56,6 +58,16 @@ const videos = await getAllVideos();
         url: `/${roadmapItem.id}`,
         isNew: roadmapItem.frontmatter.isNew,
         isUpcoming: roadmapItem.frontmatter.isUpcoming,
+      }))}
+    />
+
+    <FeaturedItems
+      heading='Best Practices'
+      featuredItems={bestPractices.map((bestPractice) => ({
+        text: bestPractice.frontmatter.featuredTitle,
+        url: `/best-practices/${bestPractice.id}`,
+        isNew: bestPractice.frontmatter.isNew,
+        isUpcoming: bestPractice.frontmatter.isUpcoming,
       }))}
     />
 

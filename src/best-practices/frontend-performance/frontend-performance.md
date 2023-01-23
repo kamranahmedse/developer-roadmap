@@ -4,6 +4,8 @@ pdfUrl: "/pdfs/best-practices/frontend-performance.pdf"
 order: 1
 featuredTitle: "Frontend Performance"
 featuredDescription: "Detailed list of best practices to improve your frontend performance"
+isNew: true
+isUpcoming: false
 title: "Frontend Performance"
 description: "Detailed list of best practices to improve your frontend performance"
 dimensions:
