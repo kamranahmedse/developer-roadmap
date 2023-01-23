@@ -10,7 +10,7 @@ title: "Frontend Performance"
 description: "Detailed list of best practices to improve your frontend performance"
 dimensions:
   width: 968
-  height: 2734.48
+  height: 1270.89
 schema:
   headline: "Frontend Performance Best Practices"
   description: "Detailed list of best practices to improve the frontend performance of your website. Each best practice carries further details and how to implement that best practice."

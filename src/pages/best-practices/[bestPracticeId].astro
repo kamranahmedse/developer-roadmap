@@ -1,8 +1,8 @@
 ---
+import BestPracticeHeader from '../../components/BestPracticeHeader.astro';
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
-import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BestPracticeFrontmatter,getBestPracticeIds } from '../../lib/best-pratice';
@@ -50,10 +50,10 @@ if (bestPracticeData.schema) {
   noIndex={bestPracticeData.isUpcoming}
   jsonLd={jsonLdSchema}
 >
-  <RoadmapHeader
+  <BestPracticeHeader
     title={bestPracticeData.title}
     description={bestPracticeData.description}
-    roadmapId={bestPracticeId}
+    bestPracticeId={bestPracticeId}
     isUpcoming={bestPracticeData.isUpcoming}
   />
 

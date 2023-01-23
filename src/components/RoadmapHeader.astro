@@ -1,7 +1,7 @@
 ---
 import DownloadPopup from './DownloadPopup.astro';
 import Icon from './Icon.astro';
-import ResourcesAlert from './ResourcesAlert.astro';
+import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import SubscribePopup from './SubscribePopup.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
@@ -109,7 +109,7 @@ const isRoadmapReady = !isUpcoming;
     </div>
 
     <!-- Desktop: Roadmap Resources - Alert -->
-    {hasTopics && <ResourcesAlert roadmapId={roadmapId} />}
+    {hasTopics && <RoadmapHint roadmapId={roadmapId} />}
 
     {hasSearch && <TopicSearch />}
   </div>
