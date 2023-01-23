@@ -1,16 +1,25 @@
 ---
-import Breadcrumbs from '../components/Breadcrumbs.astro';
-import RoadmapBanner from '../components/RoadmapBanner.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
-import { getTopicFiles, TopicFileType } from '../lib/topic';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RoadmapBanner from '../../components/RoadmapBanner.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getTopicFiles, TopicFileType } from '../../lib/topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getTopicFiles();
 
-  return Object.keys(topicPathMapping).map((topicSlug) => ({
-    params: { topicId: topicSlug.replace(/^\//, '') },
-    props: topicPathMapping[topicSlug],
-  }));
+  return Object.keys(topicPathMapping).map((topicSlug) => {
+    const topicDetails = topicPathMapping[topicSlug];
+    const roadmapId = topicDetails.roadmapId;
+    const topicId = topicSlug.replace(`/${roadmapId}/`, '');
+
+    return {
+      params: {
+        topicId,
+        roadmapId,
+      },
+      props: topicDetails,
+    };
+  });
 }
 
 const { topicId } = Astro.params;
