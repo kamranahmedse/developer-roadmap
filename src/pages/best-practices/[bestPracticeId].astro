@@ -1,11 +1,11 @@
 ---
 import BestPracticeHeader from '../../components/BestPracticeHeader.astro';
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
-import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { BestPracticeFrontmatter,getBestPracticeIds } from '../../lib/best-pratice';
+import { BestPracticeFrontmatter, getBestPracticeIds } from '../../lib/best-pratice';
 import { generateArticleSchema } from '../../lib/jsonld-schema';
 
 export async function getStaticPaths() {
@@ -59,7 +59,7 @@ if (bestPracticeData.schema) {
 
   {
     !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
-      <InteractiveRoadmap
+      <FrameRenderer
         roadmapId={bestPracticeId}
         description={bestPracticeData.description}
         jsonUrl={bestPracticeData.jsonUrl}
