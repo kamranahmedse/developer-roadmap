@@ -1,5 +1,4 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
-import { Topic } from './topic';
 
 /**
  * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
@@ -99,7 +98,3 @@ export class Renderer {
 
 const renderer = new Renderer();
 renderer.init();
-
-// Initialize the topic loader
-const topic = new Topic();
-topic.init();

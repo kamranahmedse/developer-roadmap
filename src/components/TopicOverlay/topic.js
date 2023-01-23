@@ -230,3 +230,7 @@ export class Topic {
     });
   }
 }
+
+// Initialize the topic loader
+const topic = new Topic();
+topic.init();
