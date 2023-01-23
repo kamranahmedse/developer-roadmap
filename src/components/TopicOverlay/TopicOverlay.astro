@@ -3,11 +3,10 @@ import Icon from '../Icon.astro';
 import Loader from '../Loader.astro';
 
 export interface Props {
-  roadmapId: string;
+  contentContributionLink: string;
 }
 
-const { roadmapId } = Astro.props;
-const githubLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/roadmaps/${roadmapId}/content`;
+const { contentContributionLink } = Astro.props;
 ---
 
 <div id='topic-overlay' class='hidden'>
@@ -60,7 +59,7 @@ const githubLink = `https://github.com/kamranahmedse/developer-roadmap/tree/mast
       brief description and a few links to learn more about this topic <a
         target='_blank'
         class='underline text-blue-700'
-        href={githubLink}>on GitHub repository.</a
+        href={contentContributionLink}>on GitHub repository.</a
       >.
     </p>
   </div>
