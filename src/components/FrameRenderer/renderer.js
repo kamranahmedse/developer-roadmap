@@ -1,6 +1,5 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { Topic } from './topic';
-import { Sharer } from './sharer';
 
 /**
  * @typedef {{ roadmapId: string, jsonUrl: string }} RoadmapConfig
@@ -104,7 +103,3 @@ renderer.init();
 // Initialize the topic loader
 const topic = new Topic();
 topic.init();
-
-// Handles the share icons on the roadmap page
-const sharer = new Sharer();
-sharer.init();

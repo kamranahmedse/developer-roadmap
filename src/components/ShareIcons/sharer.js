@@ -27,3 +27,6 @@ export class Sharer {
     window.addEventListener('scroll', this.onScroll, { passive: true });
   }
 }
+
+const sharer = new Sharer();
+sharer.init();

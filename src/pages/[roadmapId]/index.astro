@@ -4,6 +4,7 @@ import FAQs from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { generateArticleSchema, generateFAQSchema } from '../../lib/jsonld-schema';
@@ -65,30 +66,36 @@ if (roadmapFAQs.length) {
     isUpcoming={roadmapData.isUpcoming}
   />
 
-  {
-    !roadmapData.isUpcoming && roadmapData.jsonUrl && (
-      <FrameRenderer
-        roadmapId={roadmapId}
-        description={roadmapData.description}
-        jsonUrl={roadmapData.jsonUrl}
-        dimensions={roadmapData.dimensions}
-      />
-    )
-  }
+  <div class='bg-gray-50 py-4 sm:py-12'>
+    {
+      !roadmapData.isUpcoming && roadmapData.jsonUrl && (
+        <div class='max-w-[1000px] container relative'>
+          <ShareIcons description={roadmapData.description} pageUrl={`https://roadmap.sh/${roadmapId}`} />
 
-  {
-    !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-      <div class='pt-5 bg-gray-50'>
-        <MarkdownFile>
-          <roadmapFile.Content />
-        </MarkdownFile>
-      </div>
-    )
-  }
+          <FrameRenderer
+            roadmapId={roadmapId}
+            description={roadmapData.description}
+            jsonUrl={roadmapData.jsonUrl}
+            dimensions={roadmapData.dimensions}
+          />
+        </div>
+      )
+    }
 
-  {roadmapData.isUpcoming && <UpcomingForm />}
+    {
+      !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
+        <div class='mt-0 sm:-mt-6'>
+          <MarkdownFile>
+            <roadmapFile.Content />
+          </MarkdownFile>
+        </div>
+      )
+    }
 
-  <FAQs faqs={roadmapFAQs} />
+    {roadmapData.isUpcoming && <UpcomingForm />}
 
-  <CaptchaScripts slot='after-footer' />
+    <FAQs faqs={roadmapFAQs} />
+
+    <CaptchaScripts slot='after-footer' />
+  </div>
 </BaseLayout>
