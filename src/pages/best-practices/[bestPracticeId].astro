@@ -3,6 +3,7 @@ import BestPracticeHeader from '../../components/BestPracticeHeader.astro';
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { BestPracticeFrontmatter, getBestPracticeIds } from '../../lib/best-pratice';
@@ -57,24 +58,33 @@ if (bestPracticeData.schema) {
     isUpcoming={bestPracticeData.isUpcoming}
   />
 
-  {
-    !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
-      <FrameRenderer
-        roadmapId={bestPracticeId}
-        description={bestPracticeData.description}
-        jsonUrl={bestPracticeData.jsonUrl}
-        dimensions={bestPracticeData.dimensions}
-      />
-    )
-  }
+  <div class='bg-gray-50 py-4 sm:py-12'>
+    {
+      !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
+        <div class='max-w-[1000px] container relative'>
+          <ShareIcons
+            description={bestPracticeData.description}
+            pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
+          />
 
-  {
-    !bestPracticeData.isUpcoming && !bestPracticeData.jsonUrl && (
-      <MarkdownFile>
-        <bestPracticeFile.Content />
-      </MarkdownFile>
-    )
-  }
+          <FrameRenderer
+            roadmapId={bestPracticeId}
+            description={bestPracticeData.description}
+            jsonUrl={bestPracticeData.jsonUrl}
+            dimensions={bestPracticeData.dimensions}
+          />
+        </div>
+      )
+    }
+
+    {
+      !bestPracticeData.isUpcoming && !bestPracticeData.jsonUrl && (
+        <MarkdownFile>
+          <bestPracticeFile.Content />
+        </MarkdownFile>
+      )
+    }
+  </div>
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}
   <CaptchaScripts slot='after-footer' />
