@@ -2,6 +2,7 @@
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FAQs from '../../components/FAQs/FAQs.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
+import MarkdownFile from '../../components/MarkdownFile.astro';
 import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
@@ -78,9 +79,11 @@ if (roadmapFAQs.length) {
 
   {
     !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-      <MarkdownRoadmap roadmapId={roadmapId} description={roadmapData.description}>
-        <roadmapFile.Content />
-      </MarkdownRoadmap>
+      <div class='pt-5 bg-gray-50'>
+        <MarkdownFile>
+          <roadmapFile.Content />
+        </MarkdownFile>
+      </div>
     )
   }
 

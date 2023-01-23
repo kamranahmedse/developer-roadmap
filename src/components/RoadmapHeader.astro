@@ -1,7 +1,9 @@
 ---
+import DownloadPopup from './DownloadPopup.astro';
 import Icon from './Icon.astro';
 import ResourcesAlert from './ResourcesAlert.astro';
 import RoadmapNote from './RoadmapNote.astro';
+import SubscribePopup from './SubscribePopup.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
 
@@ -19,6 +21,9 @@ const { title, description, roadmapId, isUpcoming = false, hasSearch = false, no
 
 const isRoadmapReady = !isUpcoming;
 ---
+
+<DownloadPopup />
+<SubscribePopup />
 
 <div class='border-b'>
   <div class='py-5 sm:py-12 container relative'>
