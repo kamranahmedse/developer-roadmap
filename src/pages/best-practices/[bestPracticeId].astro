@@ -51,6 +51,9 @@ if (bestPracticeData.schema) {
   noIndex={bestPracticeData.isUpcoming}
   jsonLd={jsonLdSchema}
 >
+  <!-- Preload the font being used in the renderer -->
+  <link rel='preload' href='/fonts/balsamiq.woff2' as='font' type='font/woff2' crossorigin slot='after-header' />
+
   <BestPracticeHeader
     title={bestPracticeData.title}
     description={bestPracticeData.description}
@@ -69,7 +72,6 @@ if (bestPracticeData.schema) {
 
           <FrameRenderer
             roadmapId={bestPracticeId}
-            description={bestPracticeData.description}
             jsonUrl={bestPracticeData.jsonUrl}
             dimensions={bestPracticeData.dimensions}
           />

@@ -1,12 +1,10 @@
 ---
 import Loader from '../Loader.astro';
-import ShareIcons from '../ShareIcons/ShareIcons.astro';
-import TopicOverlay from './TopicOverlay.astro';
+import TopicOverlay from '../TopicOverlay/TopicOverlay.astro';
 import './FrameRenderer.css';
 
 export interface Props {
   roadmapId: string;
-  description: string;
   jsonUrl: string;
   dimensions?: {
     width: number;
@@ -14,12 +12,9 @@ export interface Props {
   };
 }
 
-const { roadmapId, jsonUrl, dimensions = null, description } = Astro.props;
+const { roadmapId, jsonUrl, dimensions = null } = Astro.props;
 ---
 
-<link rel='preload' href='/fonts/balsamiq.woff2' as='font' type='font/woff2' crossorigin slot='after-header' />
-
-<TopicOverlay roadmapId={roadmapId} />
 <div
   id='roadmap-svg'
   style={dimensions ? `--aspect-ratio:${dimensions.width}/${dimensions.height}` : null}
