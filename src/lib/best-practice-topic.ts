@@ -15,7 +15,7 @@ function generateTopicUrl(filePath: string) {
     .replace(/\.md$/, ''); // Remove `.md` from the end of file
 }
 
-interface TopicFileType {
+export interface BestPracticeTopicFileType {
   url: string;
   heading: string;
   file: MarkdownFileType;
@@ -27,12 +27,12 @@ interface TopicFileType {
  * Gets all the topic files available for all the best practices
  * @returns Hashmap containing the topic slug and the topic file content
  */
-async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
+export async function getAllBestPracticeTopicFiles(): Promise<Record<string, BestPracticeTopicFileType>> {
   const contentFiles = await import.meta.glob<string>('/src/best-practices/*/content/**/*.md', {
     eager: true,
   });
 
-  const mapping: Record<string, TopicFileType> = {};
+  const mapping: Record<string, BestPracticeTopicFileType> = {};
 
   for (let filePath of Object.keys(contentFiles)) {
     const fileContent: MarkdownFileType = contentFiles[filePath] as any;
@@ -63,8 +63,8 @@ async function getTopicFiles(): Promise<Record<string, TopicFileType>> {
  *
  * @returns Promise<TopicFileType[]>
  */
-export async function getTopicsByBestPracticeId(bestPracticeId: string): Promise<TopicFileType[]> {
-  const topicFileMapping = await getTopicFiles();
+export async function getTopicsByBestPracticeId(bestPracticeId: string): Promise<BestPracticeTopicFileType[]> {
+  const topicFileMapping = await getAllBestPracticeTopicFiles();
   const allTopics = Object.values(topicFileMapping);
 
   return allTopics.filter((topic) => topic.bestPracticeId === bestPracticeId);

@@ -1,0 +1,40 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { BestPracticeTopicFileType, getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
+
+export async function getStaticPaths() {
+  const topicPathMapping = await getAllBestPracticeTopicFiles();
+
+  return Object.keys(topicPathMapping).map((topicSlug) => {
+    const topicDetails = topicPathMapping[topicSlug];
+    const bestPracticeId = topicDetails.bestPracticeId;
+    const topicId = topicSlug.replace(`/${bestPracticeId}/`, '');
+
+    return {
+      params: {
+        topicId,
+        bestPracticeId,
+      },
+      props: topicDetails,
+    };
+  });
+}
+
+const { topicId } = Astro.params;
+const { file, bestPracticeId, bestPractice, heading } = Astro.props as BestPracticeTopicFileType;
+---
+
+<BaseLayout
+  title={`${heading} - roadmap.sh`}
+  description={`Free resources to learn ${heading} in ${bestPractice.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${bestPractice.featuredTitle}.`}
+  noIndex={true}
+  permalink={`/${topicId}`}
+>
+  <div class='bg-gray-50'>
+    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
+      <main id='main-content'>
+        <file.Content />
+      </main>
+    </div>
+  </div>
+</BaseLayout>
