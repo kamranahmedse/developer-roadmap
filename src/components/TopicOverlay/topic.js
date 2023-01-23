@@ -10,10 +10,12 @@ export class Topic {
     this.closeTopicId = 'close-topic';
     this.contributionTextId = 'contrib-meta';
 
-    this.activeRoadmapId = null;
+    this.activeResourceType = null;
+    this.activeResourceId = null;
     this.activeTopicId = null;
 
-    this.handleTopicClick = this.handleTopicClick.bind(this);
+    this.handleRoadmapTopicClick = this.handleRoadmapTopicClick.bind(this);
+    this.handleBestPracticeTopicClick = this.handleBestPracticeTopicClick.bind(this);
 
     this.close = this.close.bind(this);
     this.resetDOM = this.resetDOM.bind(this);
@@ -86,7 +88,7 @@ export class Topic {
   close() {
     this.resetDOM(true);
 
-    this.activeRoadmapId = null;
+    this.activeResourceId = null;
     this.activeTopicId = null;
   }
 
@@ -115,11 +117,8 @@ export class Topic {
     }
   }
 
-  fetchTopicHtml(roadmapId, topicId) {
-    const topicPartial = topicId.replace(/^\d+-/, '').replaceAll(/:/g, '/');
-    const fullUrl = `/${roadmapId}/${topicPartial}`;
-
-    return fetch(fullUrl)
+  renderTopicFromUrl(url) {
+    return fetch(url)
       .then((res) => {
         return res.text();
       })
@@ -129,26 +128,7 @@ export class Topic {
         const node = new DOMParser().parseFromString(topicHtml, 'text/html');
 
         return node.getElementById('main-content');
-      });
-  }
-
-  handleTopicClick(e) {
-    const { roadmapId, topicId } = e.detail;
-    if (!topicId || !roadmapId) {
-      console.log('Missing topic or roadmap: ', e.detail);
-      return;
-    }
-
-    this.activeRoadmapId = roadmapId;
-    this.activeTopicId = topicId;
-
-    if (/^ext_link/.test(topicId)) {
-      window.open(`https://${topicId.replace('ext_link:', '')}`);
-      return;
-    }
-
-    this.resetDOM();
-    this.fetchTopicHtml(roadmapId, topicId)
+      })
       .then((content) => {
         this.populate(content);
       })
@@ -156,6 +136,37 @@ export class Topic {
         console.error(e);
         this.populate('Error loading the content!');
       });
+  }
+
+  handleBestPracticeTopicClick(e) {
+    const { resourceId: bestPracticeId, topicId } = e.detail;
+    if (!topicId || !bestPracticeId) {
+      console.log('Missing topic or bestPracticeId: ', e.detail);
+      return;
+    }
+
+    this.activeResourceType = 'best-practice';
+    this.activeResourceId = bestPracticeId;
+    this.activeTopicId = topicId;
+
+    this.resetDOM();
+
+    alert('Best practices are not yet implemented!');
+  }
+
+  handleRoadmapTopicClick(e) {
+    const { resourceId: roadmapId, topicId } = e.detail;
+    if (!topicId || !roadmapId) {
+      console.log('Missing topic or roadmap: ', e.detail);
+      return;
+    }
+
+    this.activeResourceType = 'roadmap';
+    this.activeResourceId = roadmapId;
+    this.activeTopicId = topicId;
+
+    this.resetDOM();
+    this.renderTopicFromUrl(`/${roadmapId}/${topicId.replaceAll(':', '/')}`);
   }
 
   queryRoadmapElementsByTopicId(topicId) {
@@ -219,7 +230,8 @@ export class Topic {
   }
 
   init() {
-    window.addEventListener('topic.click', this.handleTopicClick);
+    window.addEventListener('roadmap.topic.click', this.handleRoadmapTopicClick);
+    window.addEventListener('best-practice.topic.click', this.handleBestPracticeTopicClick);
     window.addEventListener('click', this.handleOverlayClick);
     window.addEventListener('contextmenu', this.rightClickListener);
 

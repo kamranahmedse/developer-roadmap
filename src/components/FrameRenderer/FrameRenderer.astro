@@ -4,7 +4,8 @@ import TopicOverlay from '../TopicOverlay/TopicOverlay.astro';
 import './FrameRenderer.css';
 
 export interface Props {
-  roadmapId: string;
+  resourceType: 'roadmap' | 'best-practice';
+  resourceId: string;
   jsonUrl: string;
   dimensions?: {
     width: number;
@@ -12,13 +13,14 @@ export interface Props {
   };
 }
 
-const { roadmapId, jsonUrl, dimensions = null } = Astro.props;
+const { resourceId, resourceType, jsonUrl, dimensions = null } = Astro.props;
 ---
 
 <div
-  id='roadmap-svg'
+  id='resource-svg'
   style={dimensions ? `--aspect-ratio:${dimensions.width}/${dimensions.height}` : null}
-  data-roadmap-id={roadmapId}
+  data-resource-type={resourceType}
+  data-resource-id={resourceId}
   data-json-url={jsonUrl}
 >
   <Loader />
