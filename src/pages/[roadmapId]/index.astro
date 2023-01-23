@@ -3,12 +3,11 @@ import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FAQs from '../../components/FAQs/FAQs.astro';
 import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
-import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
-import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
+import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { generateArticleSchema, generateFAQSchema } from '../../lib/jsonld-schema';
-import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
+import { generateArticleSchema,generateFAQSchema } from '../../lib/jsonld-schema';
+import { getRoadmapIds,RoadmapFrontmatter } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -87,7 +86,7 @@ if (roadmapFAQs.length) {
     )
   }
 
-  {roadmapData.isUpcoming && <UpcomingRoadmap />}
+  {roadmapData.isUpcoming && <UpcomingForm />}
 
   <FAQs faqs={roadmapFAQs} />
 
