@@ -1,5 +1,5 @@
 ---
-import GridRoadmapItem from '../components/GridRoadmapItem.astro';
+import GridItem from '../components/GridItem.astro';
 import SimplePageHeader from '../components/SimplePageHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapsByTag } from '../lib/roadmap';
@@ -24,13 +24,23 @@ const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
       <div class='grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-3'>
         {
           roleRoadmaps.map((roleRoadmap) => (
-            <GridRoadmapItem roadmap={roleRoadmap} />
+            <GridItem
+              url={`/${roleRoadmap.id}`}
+              isNew={roleRoadmap.frontmatter.isNew}
+              title={roleRoadmap.frontmatter.title}
+              description={roleRoadmap.frontmatter.description}
+            />
           ))
         }
 
         {
           skillRoadmaps.map((skillRoadmap) => (
-            <GridRoadmapItem roadmap={skillRoadmap} />
+            <GridItem
+              url={`/${skillRoadmap.id}`}
+              isNew={skillRoadmap.frontmatter.isNew}
+              title={skillRoadmap.frontmatter.title}
+              description={skillRoadmap.frontmatter.description}
+            />
           ))
         }
       </div>
