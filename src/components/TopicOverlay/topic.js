@@ -23,7 +23,7 @@ export class Topic {
     this.handleOverlayClick = this.handleOverlayClick.bind(this);
     this.markAsDone = this.markAsDone.bind(this);
     this.markAsPending = this.markAsPending.bind(this);
-    this.queryRoadmapElementsByTopicId = this.queryRoadmapElementsByTopicId.bind(this);
+    this.querySvgElementsByTopicId = this.querySvgElementsByTopicId.bind(this);
     this.rightClickListener = this.rightClickListener.bind(this);
     this.isTopicDone = this.isTopicDone.bind(this);
 
@@ -150,8 +150,7 @@ export class Topic {
     this.activeTopicId = topicId;
 
     this.resetDOM();
-
-    alert('Best practices are not yet implemented!');
+    this.renderTopicFromUrl(`/best-practices/${bestPracticeId}/${topicId.replaceAll(':', '/')}`);
   }
 
   handleRoadmapTopicClick(e) {
@@ -169,7 +168,7 @@ export class Topic {
     this.renderTopicFromUrl(`/${roadmapId}/${topicId.replaceAll(':', '/')}`);
   }
 
-  queryRoadmapElementsByTopicId(topicId) {
+  querySvgElementsByTopicId(topicId) {
     const elements = document.querySelectorAll(`[data-group-id$="-${topicId}"]`);
     const matchingElements = [];
 
@@ -189,7 +188,7 @@ export class Topic {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
     localStorage.setItem(updatedTopicId, 'done');
 
-    this.queryRoadmapElementsByTopicId(updatedTopicId).forEach((item) => {
+    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
       item?.classList?.add('done');
     });
   }
@@ -198,7 +197,7 @@ export class Topic {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
     localStorage.removeItem(updatedTopicId);
-    this.queryRoadmapElementsByTopicId(updatedTopicId).forEach((item) => {
+    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
       item?.classList?.remove('done');
     });
   }
