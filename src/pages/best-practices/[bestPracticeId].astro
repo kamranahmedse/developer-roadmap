@@ -1,0 +1,86 @@
+---
+import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
+import FAQs from '../../components/FAQs/FAQs.astro';
+import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
+import MarkdownFile from '../../components/MarkdownFile.astro';
+import RoadmapHeader from '../../components/RoadmapHeader.astro';
+import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BestPracticeFrontmatter,getBestPracticeIds } from '../../lib/best-pratice';
+import { generateArticleSchema } from '../../lib/jsonld-schema';
+
+export async function getStaticPaths() {
+  const bestPracticeIds = await getBestPracticeIds();
+
+  return bestPracticeIds.map((bestPracticeId) => ({
+    params: { bestPracticeId },
+  }));
+}
+
+interface Params extends Record<string, string | undefined> {
+  bestPracticeId: string;
+}
+
+const { bestPracticeId } = Astro.params as Params;
+const bestPracticeFile = await import(`../../best-practices/${bestPracticeId}/${bestPracticeId}.md`);
+const { faqs: roadmapFAQs = [] } = await import(`../../roadmaps/${bestPracticeId}/faqs.astro`);
+const bestPracticeData = bestPracticeFile.frontmatter as BestPracticeFrontmatter;
+
+let jsonLdSchema = [];
+
+if (bestPracticeData.schema) {
+  const bestPracticeSchema = bestPracticeData.schema;
+  jsonLdSchema.push(
+    generateArticleSchema({
+      url: `https://roadmap.sh/best-practices/${bestPracticeId}`,
+      headline: bestPracticeSchema.headline,
+      description: bestPracticeSchema.description,
+      datePublished: bestPracticeSchema.datePublished,
+      dateModified: bestPracticeSchema.dateModified,
+      imageUrl: bestPracticeSchema.imageUrl,
+    })
+  );
+}
+---
+
+<BaseLayout
+  permalink={`/best-practices/${bestPracticeId}`}
+  title={bestPracticeData?.seo?.title}
+  description={bestPracticeData.seo.description}
+  keywords={bestPracticeData.seo.keywords}
+  sponsor={bestPracticeData.sponsor}
+  noIndex={bestPracticeData.isUpcoming}
+  jsonLd={jsonLdSchema}
+>
+  <RoadmapHeader
+    title={bestPracticeData.title}
+    description={bestPracticeData.description}
+    roadmapId={bestPracticeId}
+    isUpcoming={bestPracticeData.isUpcoming}
+  />
+
+  {
+    !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
+      <InteractiveRoadmap
+        roadmapId={bestPracticeId}
+        description={bestPracticeData.description}
+        jsonUrl={bestPracticeData.jsonUrl}
+        dimensions={bestPracticeData.dimensions}
+      />
+    )
+  }
+
+  {
+    !bestPracticeData.isUpcoming && !bestPracticeData.jsonUrl && (
+      <MarkdownFile>
+        <bestPracticeFile.Content />
+      </MarkdownFile>
+    )
+  }
+
+  {bestPracticeData.isUpcoming && <UpcomingRoadmap />}
+
+  <FAQs faqs={roadmapFAQs} />
+
+  <CaptchaScripts slot='after-footer' />
+</BaseLayout>
