@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/aspnet-core.json"
-pdfUrl: "/pdfs/aspnet-core.pdf"
+pdfUrl: "/pdfs/roadmaps/aspnet-core.pdf"
 order: 9
 featuredTitle: "ASP.NET Core"
 featuredDescription: "Step by step guide to becoming an ASP.NET Core Developer in 2023"
