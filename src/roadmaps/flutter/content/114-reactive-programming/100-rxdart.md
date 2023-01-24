@@ -6,3 +6,6 @@ RxDart adds functionality to Dart Streams in three ways:
 - Extension Methods - transform a source Stream into a new Stream with different capabilities, such as throttling or buffering events.
 - Subjects - StreamControllers with additional powers
 
+
+### [rxdart](https://pub.dev/packages/rxdart) - [documentation](https://pub.dev/documentation/rxdart/latest/)
+### [Streams](https://api.dart.dev/stable/2.19.0/dart-async/Stream-class.html)
