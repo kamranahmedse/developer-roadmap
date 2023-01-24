@@ -25,7 +25,7 @@
     "node-html-parser": "^6.1.4",
     "npm-check-updates": "^16.6.2",
     "rehype-external-links": "^2.0.1",
-    "roadmap-renderer": "^1.0.1",
+    "roadmap-renderer": "^1.0.4",
     "tailwindcss": "^3.2.4"
   },
   "devDependencies": {
