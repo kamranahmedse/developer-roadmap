@@ -1,86 +1,90 @@
 svg text tspan {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeSpeed;
-  }
-  
-  code {
-    background: #1e1e3f;
-    color: #9efeff;
-    padding: 3px 5px;
-    font-size: 14px;
-    border-radius: 3px;
-  }
-  
-  svg .clickable-group {
-    cursor: pointer;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(65,53,214)'] {
-    fill: #232381;
-    stroke: #232381;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(255,255,0)'] {
-    fill: #d6d700;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(255,229,153)'] {
-    fill: #f3c950;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(153,153,153)'] {
-    fill: #646464;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(255,255,255)'] {
-    fill: #d7d7d7;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(255,255,221)'] {
-    fill: #e5e5be;
-  }
-  
-  svg .clickable-group:hover > [fill='rgb(255,217,102)'] {
-    fill: #d9b443;
-  }
-  
-  svg .done rect {
-    fill: #cbcbcb !important;
-  }
-  
-  svg .done text {
-    text-decoration: line-through;
-  }
-  
-  /************************************
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+code {
+  background: #1e1e3f;
+  color: #9efeff;
+  padding: 3px 5px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+svg .clickable-group {
+  cursor: pointer;
+}
+
+svg .clickable-group:hover > [fill='rgb(65,53,214)'] {
+  fill: #232381;
+  stroke: #232381;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,0)'] {
+  fill: #d6d700;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,229,153)'] {
+  fill: #f3c950;
+}
+
+svg .clickable-group:hover > [fill='rgb(153,153,153)'] {
+  fill: #646464;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,255)'] {
+  fill: #d7d7d7;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,221)'] {
+  fill: #e5e5be;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,217,102)'] {
+  fill: #d9b443;
+}
+
+svg .done rect {
+  fill: #cbcbcb !important;
+}
+
+svg .done text {
+  text-decoration: line-through;
+}
+
+svg .clickable-group.done[data-group-id^='check:'] rect {
+  fill: gray !important;
+  stroke: gray;
+}
+
+/************************************
     Aspect ratio implementation
   *************************************/
-  [style*="--aspect-ratio"] > :first-child {
-    width: 100%;
+[style*='--aspect-ratio'] > :first-child {
+  width: 100%;
+}
+
+[style*='--aspect-ratio'] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*='--aspect-ratio'] {
+    position: relative;
   }
-  
-  [style*="--aspect-ratio"] > img {
-    height: auto;
+
+  [style*='--aspect-ratio']::before {
+    content: '';
+    display: block;
+    /*noinspection CssUnresolvedCustomProperty*/
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
   }
-  
-  @supports (--custom:property) {
-    [style*="--aspect-ratio"] {
-      position: relative;
-    }
-  
-    [style*="--aspect-ratio"]::before {
-      content: "";
-      display: block;
-      /*noinspection CssUnresolvedCustomProperty*/
-      padding-bottom: calc(100% / (var(--aspect-ratio)));
-    }
-  
-    [style*="--aspect-ratio"] > :first-child {
-      position: absolute;
-      top: 0;
-      left: 0;
-      height: 100%;
-    }
+
+  [style*='--aspect-ratio'] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
   }
-  
+}

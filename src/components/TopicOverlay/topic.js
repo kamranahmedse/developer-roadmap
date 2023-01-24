@@ -16,6 +16,8 @@ export class Topic {
 
     this.handleRoadmapTopicClick = this.handleRoadmapTopicClick.bind(this);
     this.handleBestPracticeTopicClick = this.handleBestPracticeTopicClick.bind(this);
+    this.handleBestPracticeTopicToggle = this.handleBestPracticeTopicToggle.bind(this);
+    this.handleBestPracticeTopicPending = this.handleBestPracticeTopicPending.bind(this);
 
     this.close = this.close.bind(this);
     this.resetDOM = this.resetDOM.bind(this);
@@ -138,6 +140,31 @@ export class Topic {
       });
   }
 
+  handleBestPracticeTopicToggle(e) {
+    const { resourceId: bestPracticeId, topicId } = e.detail;
+    if (!topicId || !bestPracticeId) {
+      console.log('Missing topic or bestPracticeId: ', e.detail);
+      return;
+    }
+
+    const isDone = localStorage.getItem(topicId) === 'done';
+    if (isDone) {
+      this.markAsPending(topicId);
+    } else {
+      this.markAsDone(topicId);
+    }
+  }
+
+  handleBestPracticeTopicPending(e) {
+    const { resourceId: bestPracticeId, topicId } = e.detail;
+    if (!topicId || !bestPracticeId) {
+      console.log('Missing topic or bestPracticeId: ', e.detail);
+      return;
+    }
+
+    this.markAsPending(topicId);
+  }
+
   handleBestPracticeTopicClick(e) {
     const { resourceId: bestPracticeId, topicId } = e.detail;
     if (!topicId || !bestPracticeId) {
@@ -169,16 +196,26 @@ export class Topic {
   }
 
   querySvgElementsByTopicId(topicId) {
-    const elements = document.querySelectorAll(`[data-group-id$="-${topicId}"]`);
     const matchingElements = [];
 
-    elements.forEach((element) => {
+    // Elements having sort order in the beginning of the group id
+    document.querySelectorAll(`[data-group-id$="-${topicId}"]`).forEach((element) => {
       const foundGroupId = element?.dataset?.groupId || '';
       const validGroupRegex = new RegExp(`^\\d+-${topicId}$`);
 
       if (validGroupRegex.test(foundGroupId)) {
         matchingElements.push(element);
       }
+    });
+
+    // Elements with exact match of the topic id
+    document.querySelectorAll(`[data-group-id="${topicId}"]`).forEach((element) => {
+      matchingElements.push(element);
+    });
+
+    // Matching "check:XXXX" box of the topic
+    document.querySelectorAll(`[data-group-id="check:${topicId}"]`).forEach((element) => {
+      matchingElements.push(element);
     });
 
     return matchingElements;
@@ -229,8 +266,10 @@ export class Topic {
   }
 
   init() {
-    window.addEventListener('roadmap.topic.click', this.handleRoadmapTopicClick);
     window.addEventListener('best-practice.topic.click', this.handleBestPracticeTopicClick);
+    window.addEventListener('best-practice.topic.toggle', this.handleBestPracticeTopicToggle);
+
+    window.addEventListener('roadmap.topic.click', this.handleRoadmapTopicClick);
     window.addEventListener('click', this.handleOverlayClick);
     window.addEventListener('contextmenu', this.rightClickListener);
 
