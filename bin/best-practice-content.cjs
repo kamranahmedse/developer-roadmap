@@ -41,7 +41,7 @@ if (fs.existsSync(bestPracticeContentDirPath)) {
   process.exit(1);
 }
 
-function prepareDirTree(control, dirTree, dirSortOrders) {
+function prepareDirTree(control, dirTree) {
   // Directories are only created for groups
   if (control.typeID !== '__group__') {
     return;
@@ -49,18 +49,14 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
 
   // e.g. 104-testing-your-apps:other-options
   const controlName = control?.properties?.controlName || '';
-  // e.g. 104
-  const sortOrder = controlName.match(/^\d+/)?.[0];
 
   // No directory for a group without control name
-  if (!controlName || !sortOrder) {
+  if (!controlName || controlName.startsWith('check:') || controlName.startsWith('ext_link:')) {
     return;
   }
 
-  // e.g. testing-your-apps:other-options
-  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '');
   // e.g. ['testing-your-apps', 'other-options']
-  const dirParts = controlNameWithoutSortOrder.split(':');
+  const dirParts = controlName.split(':');
 
   // Nest the dir path in the dirTree
   let currDirTree = dirTree;
@@ -69,37 +65,33 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
     currDirTree = currDirTree[dirPart];
   });
 
-  dirSortOrders[controlNameWithoutSortOrder] = Number(sortOrder);
-
   const childrenControls = control.children.controls.control;
   // No more children
   if (childrenControls.length) {
     childrenControls.forEach((childControl) => {
-      prepareDirTree(childControl, dirTree, dirSortOrders);
+      prepareDirTree(childControl, dirTree);
     });
   }
 
-  return { dirTree, dirSortOrders };
+  return { dirTree };
 }
 
 const bestPractice = require(path.join(__dirname, `../public/jsons/best-practices/${bestPracticeId}`));
 const controls = bestPractice.mockup.controls.control;
 
-// Prepare the dir tree that we will be creating and also calculate the sort orders
+// Prepare the dir tree that we will be creating
 const dirTree = {};
-const dirSortOrders = {};
 
 controls.forEach((control) => {
-  prepareDirTree(control, dirTree, dirSortOrders);
+  prepareDirTree(control, dirTree);
 });
 
 /**
  * @param parentDir Parent directory in which directory is to be created
  * @param dirTree Nested dir tree to be created
- * @param sortOrders Mapping from groupName to sort order
  * @param filePaths The mapping from groupName to file path
  */
-function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
+function createDirTree(parentDir, dirTree, filePaths = {}) {
   const childrenDirNames = Object.keys(dirTree);
   const hasChildren = childrenDirNames.length !== 0;
 
@@ -107,7 +99,6 @@ function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
   const groupName = parentDir
     .replace(bestPracticeContentDirPath, '') // Remove base dir path
     .replace(/(^\/)|(\/$)/g, '') // Remove trailing slashes
-    .replace(/(^\d+?-)/g, '') // Remove sorting information
     .replaceAll('/', ':') // Replace slashes with `:`
     .replace(/:\d+-/, ':');
 
@@ -116,15 +107,6 @@ function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
     .pop()
     ?.replaceAll('-', ' ')
     .replace(/^\w/, ($0) => $0.toUpperCase());
-
-  const sortOrder = sortOrders[groupName] || '';
-
-  // Attach sorting information to dirname
-  // e.g. /best-practices/frontend-performance/content/internet
-  // ———> /best-practices/frontend-performance/content/103-internet
-  if (sortOrder) {
-    parentDir = parentDir.replace(/(.+?)([^\/]+)?$/, `$1${sortOrder}-$2`);
-  }
 
   // If no children, create a file for this under the parent directory
   if (!hasChildren) {
@@ -150,7 +132,6 @@ function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
     createDirTree(
       path.join(parentDir, dirName),
       dirTree[dirName],
-      dirSortOrders,
       filePaths
     );
   });
@@ -159,5 +140,5 @@ function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
 }
 
 // Create directories and get back the paths for created directories
-createDirTree(bestPracticeContentDirPath, dirTree, dirSortOrders);
+createDirTree(bestPracticeContentDirPath, dirTree);
 console.log('Created best practice content directory structure');
