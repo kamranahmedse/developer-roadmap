@@ -80,6 +80,19 @@ export class Renderer {
       return;
     }
 
+    if (/^check:/.test(groupId)) {
+      window.dispatchEvent(
+        new CustomEvent(`${this.resourceType}.topic.toggle`, {
+          detail: {
+            topicId: groupId.replace('check:', ''),
+            resourceType: this.resourceType,
+            resourceId: this.resourceId,
+          },
+        })
+      );
+      return;
+    }
+
     // Remove sorting prefix from groupId
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
 
