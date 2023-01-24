@@ -58,6 +58,10 @@ svg .clickable-group.done[data-group-id^='check:'] rect {
   stroke: gray;
 }
 
+.clickable-group rect {
+  user-select: none;
+}
+
 /************************************
     Aspect ratio implementation
   *************************************/
