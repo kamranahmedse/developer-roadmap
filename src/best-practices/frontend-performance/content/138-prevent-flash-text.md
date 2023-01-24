@@ -1,0 +1,1 @@
+# Prevent flash text

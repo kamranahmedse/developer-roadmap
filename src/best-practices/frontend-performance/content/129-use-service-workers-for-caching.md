@@ -1,0 +1,1 @@
+# Use service workers for caching

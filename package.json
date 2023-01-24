@@ -14,6 +14,7 @@
     "upgrade": "ncu -u",
     "roadmap-links": "node bin/roadmap-links.cjs",
     "roadmap-content": "node bin/roadmap-content.cjs",
+    "best-practice-content": "node bin/best-practice-content.cjs",
     "test:e2e": "playwright test"
   },
   "dependencies": {

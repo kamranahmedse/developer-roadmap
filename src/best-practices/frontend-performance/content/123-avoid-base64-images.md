@@ -1,0 +1,1 @@
+# Avoid base64 images
