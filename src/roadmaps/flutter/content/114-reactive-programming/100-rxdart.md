@@ -1,11 +1,5 @@
-# Rxdart
+# RxDart
 
-RxDart is an implementation of the popular [**reactiveX**](https://reactivex.io/) api for asynchronous programming, leveraging the native Dart Streams api. It extends the capabilities of Dart Streams and StreamControllers.<br><br>
-RxDart adds functionality to Dart Streams in three ways:
-- Stream Classes - create Streams with specific capabilities, such as combining or merging many Streams.
-- Extension Methods - transform a source Stream into a new Stream with different capabilities, such as throttling or buffering events.
-- Subjects - StreamControllers with additional powers
+RxDart is a library for Dart that provides additional functionality for working with reactive programming, specifically with the Streams and Observables classes. It extends the standard Dart Streams API and provides additional features such as the ability to transform and combine streams, and to compose and chain streams together. In Flutter, RxDart is commonly used to handle asynchronous data streams and user interactions in a more efficient and elegant way.
 
-
-### [rxdart](https://pub.dev/packages/rxdart) - [documentation](https://pub.dev/documentation/rxdart/latest/)
-### [Streams](https://api.dart.dev/stable/2.19.0/dart-async/Stream-class.html)
+- [RxDart Official Docs](https://pub.dev/documentation/rxdart/latest)
