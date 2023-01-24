@@ -10,8 +10,8 @@ export interface Props {
 const { heading, guides } = Astro.props;
 ---
 
-<div class='container'>
-  <h1 class='text-2xl sm:text-3xl font-bold block'>{heading}</h1>
+<article class='container' id="guides">
+  <h2 class='text-2xl sm:text-3xl font-bold block' aria-labelledby="guides">{heading}</h2>
 
   <div class='mt-3 sm:my-5'>
     {guides.map((guide) => <GuideListItem guide={guide} />)}
@@ -32,4 +32,4 @@ const { heading, guides } = Astro.props;
       View All Guides &nbsp;&rarr;
     </a>
   </div>
-</div>
+</article>

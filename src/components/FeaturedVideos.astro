@@ -10,8 +10,8 @@ export interface Props {
 const { heading, videos } = Astro.props;
 ---
 
-<div class='container'>
-  <h1 class='text-2xl sm:text-3xl font-bold block'>{heading}</h1>
+<article class='container' id="videos">
+  <h2 class='text-2xl sm:text-3xl font-bold block' aria-labelledby="videos">{heading}</h2>
 
   <div class='mt-3 sm:my-5'>
     {videos.map((video) => <VideoListItem video={video} />)}
@@ -32,4 +32,4 @@ const { heading, videos } = Astro.props;
       View All Videos &nbsp;&rarr;
     </a>
   </div>
-</div>
+</article>

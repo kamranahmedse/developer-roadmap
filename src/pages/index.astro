@@ -19,8 +19,8 @@ const videos = await getAllVideos();
   description={'Community driven roadmaps, articles and guides for developers to grow in their career.'}
   permalink={'/'}
 >
-  <div class='bg-gradient-to-b from-slate-900 to-black'>
-    <div class='border-b border-b-slate-900'>
+  <main class='bg-gradient-to-b from-slate-900 to-black'>
+    <section class='border-b border-b-slate-900'>
       <div class='container text-left sm:text-center py-6 sm:py-20 px-6 sm:px-0'>
         <h1
           class='text-2xl sm:text-5xl mb-2 sm:mb-4 font-bold bg-gradient-to-b from-amber-50 to-purple-500 text-transparent bg-clip-text'
@@ -37,7 +37,7 @@ const videos = await getAllVideos();
           Community created roadmaps, guides and articles to help developers grow in their career.
         </p>
       </div>
-    </div>
+    </section>
 
     <FeaturedItems
       heading='Role based Roadmaps'
@@ -59,9 +59,9 @@ const videos = await getAllVideos();
       }))}
     />
 
-    <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
+    <section class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
       <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
       <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
-    </div>
-  </div>
+    </section>
+  </main>
 </BaseLayout>
