@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/computer-science.json"
-pdfUrl: "/pdfs/computer-science.pdf"
+pdfUrl: "/pdfs/roadmaps/computer-science.pdf"
 order: 1
 featuredTitle: "Computer Science"
 featuredDescription: "Curriculum with free resources for a self-taught developer."

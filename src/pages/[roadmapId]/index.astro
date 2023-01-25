@@ -1,10 +1,12 @@
 ---
 import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FAQs from '../../components/FAQs/FAQs.astro';
-import InteractiveRoadmap from '../../components/InteractiveRoadmap/InteractiveRoadmap.astro';
-import MarkdownRoadmap from '../../components/MarkdownRoadmap.astro';
+import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
+import MarkdownFile from '../../components/MarkdownFile.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
-import UpcomingRoadmap from '../../components/UpcomingRoadmap.astro';
+import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import TopicOverlay from '../../components/TopicOverlay/TopicOverlay.astro';
+import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { generateArticleSchema, generateFAQSchema } from '../../lib/jsonld-schema';
 import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
@@ -45,6 +47,8 @@ if (roadmapData.schema) {
 if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
+
+const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/roadmaps/${roadmapId}/content`;
 ---
 
 <BaseLayout
@@ -56,6 +60,9 @@ if (roadmapFAQs.length) {
   noIndex={roadmapData.isUpcoming}
   jsonLd={jsonLdSchema}
 >
+  <!-- Preload the font being used in the renderer -->
+  <link rel='preload' href='/fonts/balsamiq.woff2' as='font' type='font/woff2' crossorigin slot='after-header' />
+
   <RoadmapHeader
     title={roadmapData.title}
     description={roadmapData.description}
@@ -65,28 +72,37 @@ if (roadmapFAQs.length) {
     isUpcoming={roadmapData.isUpcoming}
   />
 
-  {
-    !roadmapData.isUpcoming && roadmapData.jsonUrl && (
-      <InteractiveRoadmap
-        roadmapId={roadmapId}
-        description={roadmapData.description}
-        jsonUrl={roadmapData.jsonUrl}
-        dimensions={roadmapData.dimensions}
-      />
-    )
-  }
+  <div class='bg-gray-50 py-4 sm:py-12'>
+    {
+      !roadmapData.isUpcoming && roadmapData.jsonUrl && (
+        <div class='max-w-[1000px] container relative'>
+          <ShareIcons description={roadmapData.featuredDescription} pageUrl={`https://roadmap.sh/${roadmapId}`} />
+          <TopicOverlay contentContributionLink={contentContributionLink} />
 
-  {
-    !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-      <MarkdownRoadmap roadmapId={roadmapId} description={roadmapData.description}>
-        <roadmapFile.Content />
-      </MarkdownRoadmap>
-    )
-  }
+          <FrameRenderer
+            resourceType={'roadmap'}
+            resourceId={roadmapId}
+            jsonUrl={roadmapData.jsonUrl}
+            dimensions={roadmapData.dimensions}
+          />
+        </div>
+      )
+    }
 
-  {roadmapData.isUpcoming && <UpcomingRoadmap />}
+    {
+      !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
+        <div class='mt-0 sm:-mt-6'>
+          <MarkdownFile>
+            <roadmapFile.Content />
+          </MarkdownFile>
+        </div>
+      )
+    }
 
-  <FAQs faqs={roadmapFAQs} />
+    {roadmapData.isUpcoming && <UpcomingForm />}
 
-  <CaptchaScripts slot='after-footer' />
+    <FAQs faqs={roadmapFAQs} />
+
+    <CaptchaScripts slot='after-footer' />
+  </div>
 </BaseLayout>

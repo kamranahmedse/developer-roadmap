@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/design-system.json"
-pdfUrl: "/pdfs/design-system.pdf"
+pdfUrl: "/pdfs/roadmaps/design-system.pdf"
 order: 13
 featuredTitle: "Design System"
 featuredDescription: "Step by step guide to building a modern Design System"

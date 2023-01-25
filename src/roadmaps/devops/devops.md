@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/devops.json"
-pdfUrl: "/pdfs/devops.pdf"
+pdfUrl: "/pdfs/roadmaps/devops.pdf"
 order: 3
 featuredTitle: "DevOps"
 featuredDescription: "Step by step guide for DevOps or operations role in 2023"

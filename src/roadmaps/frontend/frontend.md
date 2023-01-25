@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/frontend.json"
-pdfUrl: "/pdfs/frontend.pdf"
+pdfUrl: "/pdfs/roadmaps/frontend.pdf"
 order: 1
 featuredTitle: "Frontend"
 featuredDescription: "Step by step guide to becoming a frontend developer in 2023"

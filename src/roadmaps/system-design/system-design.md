@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/system-design.json"
-pdfUrl: "/pdfs/system-design.pdf"
+pdfUrl: "/pdfs/roadmaps/system-design.pdf"
 order: 8
 featuredTitle: "System Design"
 featuredDescription: "Guide to learn system Design"

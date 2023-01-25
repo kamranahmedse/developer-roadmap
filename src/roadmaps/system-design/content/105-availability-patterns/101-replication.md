@@ -8,4 +8,4 @@ Replication is an availability pattern that involves having multiple copies of t
 
 Visi the following links for more resources:
 
-- [Replication: Avaiability Pattern](https://github.com/donnemartin/system-design-primer#replication)
+- [Replication: Availability Pattern](https://github.com/donnemartin/system-design-primer#replication)

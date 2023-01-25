@@ -2,7 +2,7 @@
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
-import { getTopicsByRoadmapId } from '../../lib/topic';
+import { getTopicsByRoadmapId } from '../../lib/roadmap-topic';
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
