@@ -1,0 +1,32 @@
+---
+import type { RoadmapFileType } from '../lib/roadmap';
+
+export interface Props {
+  url: string;
+  title: string;
+  description: string;
+  isNew: boolean;
+}
+
+const { url, title, description, isNew } = Astro.props;
+---
+
+<a
+  href={url}
+  class='bg-gradient-to-r from-slate-900 to-amber-900 hover:from-stone-900 hover:to-stone-900 hover:bg-gray-100 flex flex-col p-2.5 sm:p-5 rounded-md sm:rounded-lg border border-gray-200 relative h-full'
+>
+  <span
+    class='font-regular sm:font-medium text-md sm:text-xl hover:text-gray-50 text-gray-200 sm:text-gray-100 mb-0 sm:mb-1.5'
+  >
+    {title}
+  </span>
+  <span class='text-sm leading-normal text-gray-400 hidden sm:block'>{description}</span>
+
+  {
+    isNew && (
+      <span class='absolute bottom-1 right-1 bg-yellow-300 text-yellow-900 text-xs font-medium px-1 sm:px-1.5 py-0.5 rounded-sm uppercase'>
+        New
+      </span>
+    )
+  }
+</a>

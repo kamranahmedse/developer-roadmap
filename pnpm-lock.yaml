@@ -15,7 +15,7 @@ specifiers:
   prettier: ^2.8.3
   prettier-plugin-astro: ^0.7.2
   rehype-external-links: ^2.0.1
-  roadmap-renderer: ^1.0.1
+  roadmap-renderer: ^1.0.4
   tailwindcss: ^3.2.4
 
 dependencies:
@@ -26,7 +26,7 @@ dependencies:
   node-html-parser: 6.1.4
   npm-check-updates: 16.6.2
   rehype-external-links: 2.0.1
-  roadmap-renderer: 1.0.1
+  roadmap-renderer: 1.0.4
   tailwindcss: 3.2.4
 
 devDependencies:
@@ -4729,8 +4729,8 @@ packages:
       glob: 7.2.3
     dev: false
 
-  /roadmap-renderer/1.0.1:
-    resolution: {integrity: sha512-f71DLNMfBNtwNwa5ffkXVRBL24loYJ7YMcyyeAUhbJMzEQYp9vWaArVGualylBIw95APy/UIgBZ9KuqiW1Y4UA==}
+  /roadmap-renderer/1.0.4:
+    resolution: {integrity: sha512-TS9jDZu/CzTqxv7QWnMZHgB89WzgLpaExXKcBIWQEKtXm9g9E45t7gijZst9qtRQ2E2+iplAxQz/eMuttq4wAQ==}
     dev: false
 
   /roarr/2.15.4:

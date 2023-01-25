@@ -1,5 +1,6 @@
 ---
 import GuideHeader from '../../components/GuideHeader.astro';
+import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides, GuideFileType } from '../../lib/guide';
 
@@ -36,4 +37,9 @@ const { frontmatter: guideData } = guide;
       <guide.Content />
     </article>
   </main>
+  <div class='bg-gray-50 py-5 sm:py-10'>
+    <MarkdownFile>
+      <guide.Content />
+    </MarkdownFile>
+  </div>
 </BaseLayout>

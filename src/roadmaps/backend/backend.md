@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/backend.json"
-pdfUrl: "/pdfs/backend.pdf"
+pdfUrl: "/pdfs/roadmaps/backend.pdf"
 order: 2
 featuredTitle: "Backend"
 featuredDescription: "Step by step guide to becoming a backend developer in 2023"

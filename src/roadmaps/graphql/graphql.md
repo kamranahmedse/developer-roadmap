@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/graphql.json"
-pdfUrl: "/pdfs/graphql.pdf"
+pdfUrl: "/pdfs/roadmaps/graphql.pdf"
 order: 12
 featuredTitle: "GraphQL"
 featuredDescription: "Step by Step guide to learn GraphQL in 2023"

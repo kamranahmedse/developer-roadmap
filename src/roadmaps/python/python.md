@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/python.json"
-pdfUrl: "/pdfs/python.pdf"
+pdfUrl: "/pdfs/roadmaps/python.pdf"
 order: 7
 featuredTitle: "Python"
 featuredDescription: "Step by step guide to becoming a Python Developer in 2023"

@@ -1,6 +1,6 @@
 ---
 jsonUrl: "/jsons/roadmaps/flutter.json"
-pdfUrl: "/pdfs/flutter.pdf"
+pdfUrl: "/pdfs/roadmaps/flutter.pdf"
 order: 10
 featuredTitle: "Flutter"
 featuredDescription: "Step by step guide to becoming a Flutter Developer in 2023"
