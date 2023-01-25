@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [ Data structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure)
 - [Binary Tree Algorithms for Technical Interviews - Full Course](https://youtu.be/fAAZixBzIAI)
 - [Graph Algorithms for Technical Interviews - Full Course](https://youtu.be/tWVWeAqZ0WU)
+- [Dynamic Programming - Learn to Solve Algorithmic Problems & Coding Challenges](https://youtu.be/oBt53YbR9Kk)
