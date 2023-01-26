@@ -12,3 +12,4 @@ You can of course implement all those features by yourself, but there are a lot 
 <BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://docs.sentry.io/'>Sentry Docs</BadgeLink>
 <BadgeLink badgeText='Watch' href='https://www.youtube.com/watch?v=Wx0SHRb2xcI'>AWS re:Invent 2017: Improving Microservice and Serverless Observability with Monitor</BadgeLink>
 <BadgeLink colorScheme='yellow' badgeText='Read' href='https://newrelic.com/blog/best-practices/observability-instrumentation'>Observability and Instrumentation: What They Are and Why They Matter</BadgeLink>
+<BadgeLink colorScheme='blue' badgeText='Official Documentation' href='https://opentelemetry.io/docs/'>OpenTelemetry Docs</BadgeLink>
