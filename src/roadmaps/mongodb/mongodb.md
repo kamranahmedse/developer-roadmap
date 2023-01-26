@@ -4,13 +4,13 @@ pdfUrl: "/pdfs/roadmaps/mongodb.pdf"
 order: 10
 featuredTitle: "MongoDB"
 featuredDescription: "Step by step guide to becoming a MongoDB Developer in 2023"
-title: "MongoDB Developer"
+title: "MongoDB"
 description: "Step by step guide to becoming a MongoDB developer in 2023"
 hasTopics: true
 isNew: true
 dimensions:
-  width: 968
-  height: 1245.52
+  width: 1057
+  height: 1178
 schema:
   headline: "MongoDB Roadmap"
   description: "Learn MongoDB with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
