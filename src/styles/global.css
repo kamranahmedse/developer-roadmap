@@ -10,7 +10,7 @@
 
 @layer base {
   ::selection {
-    @apply dark:text-white dark:bg-blue-500 dark:bg-opacity-80;
+    @apply dark:text-white dark:bg-blue-500/80;
   }
 }
 

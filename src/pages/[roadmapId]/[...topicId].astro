@@ -33,10 +33,10 @@ const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as Roadma
   permalink={`/${topicId}`}
 >
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
-  <div class='bg-gray-50'>
+  <div class='bg-gray-50 dark:bg-gradient-to-b dark:from-slate-900 dark:to-black'>
     <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />
 
-    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
+    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0 dark:prose-invert'>
       <main id='main-content'>
         <file.Content />
       </main>

@@ -36,7 +36,7 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
     hasTopics={false}
   />
 
-  <div class='bg-gray-50 pt-5 pb-8 sm:pt-10 sm:pb-16'>
+  <div class='bg-gray-50 pt-5 pb-8 sm:pt-10 sm:pb-16 dark:bg-gradient-to-b dark:from-slate-900 dark:to-black'>
     <div class='container'>
       {
         topics.map((topic) => {
@@ -52,11 +52,11 @@ const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
             <a
               data-topic={topic.heading.toLowerCase()}
               class:list={[
-                'cursor-pointer text-sm sm:text-md border-gray-200 border py-1.5 px-2 sm:py-2 sm:px-2.5 rounded-md block mb-0.5 sm:mb-1',
+                'cursor-pointer text-sm sm:text-md border-gray-200 border py-1.5 px-2 sm:py-2 sm:px-2.5 rounded-md block mb-0.5 sm:mb-1 dark:text-white dark:border-gray-800',
                 {
-                  'bg-gray-400 hover:bg-gray-500': totalParentCount === 1,
-                  'bg-gray-300 hover:bg-gray-400': totalParentCount === 2,
-                  'bg-gray-100 hover:bg-gray-300': totalParentCount === 3,
+                  'bg-gray-400 hover:bg-gray-500 dark:bg-slate-700 dark:hover:bg-slate-800': totalParentCount === 1,
+                  'bg-gray-300 hover:bg-gray-400 dark:bg-slate-600 dark:hover:bg-slate-700': totalParentCount === 2,
+                  'bg-gray-100 hover:bg-gray-300 dark:bg-slate-500 dark:hover:bg-slate-600': totalParentCount === 3,
                 },
               ]}
               href={`${topic.url}`}
