@@ -10,7 +10,7 @@ export interface Props {
 const { title, description, showYouTubeAlert = false } = Astro.props;
 ---
 
-<div class="bg-white border-b pt-6 pb-5 sm:pt-12 sm:pb-10">
+<div class="bg-white border-b dark:border-b-gray-800 pt-6 pb-5 sm:pt-12 sm:pb-10 dark:bg-slate-900">
   <div class="container">
     {
       showYouTubeAlert && (
@@ -20,7 +20,7 @@ const { title, description, showYouTubeAlert = false } = Astro.props;
       )
     }
 
-    <h1 class="text-3xl sm:text-5xl mb-1 sm:mb-2 font-bold">{title}</h1>
-    <p class="text-gray-500 text-sm sm:text-lg">{description}</p>
+    <h1 class="text-3xl sm:text-5xl mb-1 sm:mb-2 font-bold dark:text-white">{title}</h1>
+    <p class="text-gray-500 text-sm sm:text-lg dark:text-gray-400">{description}</p>
   </div>
 </div>

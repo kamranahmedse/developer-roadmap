@@ -71,7 +71,7 @@ const videos = await getAllVideos();
       }))}
     />
 
-    <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
+    <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16 dark:bg-transparent'>
       <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
       <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
     </div>

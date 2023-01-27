@@ -11,7 +11,7 @@ const { heading, videos } = Astro.props;
 ---
 
 <div class='container'>
-  <h1 class='text-2xl sm:text-3xl font-bold block'>{heading}</h1>
+  <h1 class='text-2xl sm:text-3xl font-bold block dark:text-white'>{heading}</h1>
 
   <div class='mt-3 sm:my-5'>
     {videos.map((video) => <VideoListItem video={video} />)}
@@ -19,7 +19,7 @@ const { heading, videos } = Astro.props;
 
   <a
     href='/videos'
-    class='hidden sm:inline transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black hover:from-blue-600 hover:to-blue-800 text-white'
+    class='hidden sm:inline transition-colors py-2 px-3 text-xs font-medium rounded-full bg-gradient-to-r from-slate-600 to-black dark:to-slate-800 hover:from-blue-600 hover:to-blue-800 dark:hover:to-blue-800 text-white'
   >
     View All Videos &rarr;
   </a>
@@ -27,7 +27,7 @@ const { heading, videos } = Astro.props;
   <div class='block sm:hidden mt-3'>
     <a
       href='/videos'
-      class='text-sm font-regular block p-2 border border-black text-black rounded-md text-center hover:bg-black hover:text-gray-50'
+      class='text-sm font-regular block p-2 border border-black text-black rounded-md text-center hover:bg-black hover:text-gray-50 dark:border-white dark:text-white dark:hover:bg-white dark:hover:text-gray-800'
     >
       View All Videos &nbsp;&rarr;
     </a>
