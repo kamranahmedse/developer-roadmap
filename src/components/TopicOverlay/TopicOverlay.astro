@@ -11,7 +11,7 @@ const { contentContributionLink } = Astro.props;
 
 <div id='topic-overlay' class='hidden'>
   <div
-    class='fixed top-0 right-0 z-40 h-screen p-4 sm:p-6 overflow-y-auto bg-white w-full sm:max-w-[600px]'
+    class='fixed top-0 right-0 z-40 h-screen p-4 sm:p-6 overflow-y-auto bg-white w-full sm:max-w-[600px] dark:bg-slate-900'
     tabindex='-1'
     id='topic-body'
   >
@@ -39,7 +39,7 @@ const { contentContributionLink } = Astro.props;
       <button
         type='button'
         id='close-topic'
-        class='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center'
+        class='text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-400'
       >
         <Icon icon='close' />
       </button>
@@ -47,7 +47,7 @@ const { contentContributionLink } = Astro.props;
 
     <div
       id='topic-content'
-      class='prose prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-quoteless prose-blockquote:font-normal prose-h1:mt-7 prose-h1:mb-2.5 prose-p:mt-0 prose-p:mb-2 prose-li:m-0 prose-li:mb-0.5 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mt-[10px] prose-h3:mb-[5px]'
+      class='prose prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-quoteless prose-blockquote:font-normal prose-h1:mt-7 prose-h1:mb-2.5 prose-p:mt-0 prose-p:mb-2 prose-li:m-0 prose-li:mb-0.5 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mt-[10px] prose-h3:mb-[5px] dark:prose-invert dark:prose-blockquote:text-gray-400'
     >
     </div>
 
@@ -58,7 +58,7 @@ const { contentContributionLink } = Astro.props;
       We are still working on this page. You can contribute by submitting a
       brief description and a few links to learn more about this topic <a
         target='_blank'
-        class='underline text-blue-700'
+        class='underline text-blue-700 dark:text-blue-500'
         href={contentContributionLink}>on GitHub repository.</a
       >.
     </p>
