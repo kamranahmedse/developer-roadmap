@@ -13,7 +13,7 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
 
 <div
   class:list={[
-    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0',
+    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 dark:border-gray-600',
     {
       'sm:-mb-[82px]': hasTNSBanner,
       'sm:-mb-[65px]': !hasTNSBanner,
@@ -22,13 +22,13 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
 >
   {
     hasTNSBanner && (
-      <div class='px-2 py-1.5 border-b bg-gray-100 hidden sm:block'>
+      <div class='px-2 py-1.5 border-b bg-gray-100 hidden sm:block dark:bg-slate-800 dark:border-gray-600 dark:text-gray-400 dark:rounded-t-md'>
         <p class='text-sm'>
           Get the latest {roadmapTitle} news from our sister site{' '}
           <a
             href='https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
             target='_blank'
-            class='font-semibold underline'
+            class='font-semibold underline dark:hover:text-gray-300'
             ga-category='PartnerClick'
             ga-action='TNS Referral'
             ga-label='TNS Referral - Roadmap'
@@ -43,7 +43,7 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
   <!-- Desktop: Roadmap Resources - Alert -->
   <div
     class:list={[
-      'hidden sm:flex justify-between px-2 bg-white items-center',
+      'hidden sm:flex justify-between px-2 bg-white items-center dark:bg-slate-900 dark:text-gray-400',
       {
         'rounded-bl-md rounded-br-md': hasTNSBanner,
         'rounded-md': !hasTNSBanner,
@@ -57,7 +57,7 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
 
     <a
       href={`/${roadmapId}/topics`}
-      class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'
+      class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1 dark:text-gray-400 dark:hover:text-gray-300'
     >
       <Icon icon='search' />
       <span class='ml-2'>Search Topics</span>
