@@ -1,0 +1,48 @@
+---
+import Icon from './Icon.astro';
+---
+<button id="js-theme-switch" data-dark-mode-enabled='true' class="group border border-gray-200 text-gray-200 text-sm py-1 px-3 rounded-md dark:border-white dark:bg-white dark:text-gray-800 mb-8 sm:mb-8 sm:ml-[calc(50%-25px)]">
+	<span class="hidden group-data-[dark-mode-enabled=true]:flex gap-1 items-center">
+		<Icon icon='sun' class='w-4'/>
+		Light
+	</span>
+	<span class="hidden group-data-[dark-mode-enabled=false]:flex gap-1 items-center">
+		<Icon icon='moon' class='w-4'/>
+		Dark
+	</span>
+</button>
+
+<script>
+	function handleThemeSwitch() {
+		const themeButton = document.getElementById('js-theme-switch');
+		const isDarkMode = document.documentElement.classList.contains('dark');
+
+		if (!isDarkMode) {
+			document.documentElement.classList.add('dark');
+			localStorage.theme = 'dark'
+			if (themeButton) {
+				themeButton.dataset.darkModeEnabled = 'true'
+			}
+			return
+		}
+
+		document.documentElement.classList.remove('dark');
+		localStorage.theme = 'light'
+		if (themeButton) {
+			themeButton.dataset.darkModeEnabled = 'false'
+		}
+	}
+
+	const themeButton = document.getElementById('js-theme-switch');
+	if (localStorage.theme === 'light' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: light)').matches)) {
+		document.documentElement.classList.remove('dark')
+		if (themeButton) {
+			themeButton.dataset.darkModeEnabled = 'false'
+		}
+	}
+
+	if (themeButton) {
+		themeButton.addEventListener('click', handleThemeSwitch);
+	}
+
+</script>
