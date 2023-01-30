@@ -5,3 +5,4 @@ The package manager for Flutter is called pub. It is used to manage Flutter proj
 Visit the following resources to learn more:
 
 - [Packages and Plugins](https://docs.flutter.dev/development/packages-and-plugins)
+- [Dart Package Manager (pub.dev) in Flutter](https://www.youtube.com/watch?v=F1VRO0_MKLs)
