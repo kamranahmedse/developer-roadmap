@@ -13,4 +13,3 @@ These operators can be used to perform operations on values, variables, and expr
 Visit the following resources to learn more:
 
 - [Operators](https://dart.dev/guides/language/language-tour#operators)
-- [Operators in Dart](https://www.geeksforgeeks.org/operators-in-dart/)
