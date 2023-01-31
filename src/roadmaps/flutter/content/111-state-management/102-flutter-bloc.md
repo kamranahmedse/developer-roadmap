@@ -1,6 +1,6 @@
-# Flutter bloc
+# Flutter_bloc
 
-Bloc (Business Logic Component) is a state management pattern used in Flutter to separate presentation logic from business logic. It helps to manage and maintain the app state, making it easier to test, debug, and reuse code. It uses streams to emit new states and reacts to changes in the state.
+flutter_bloc is a Flutter package that implements the BLoC pattern and provides a set of tools for building BLoC-based apps. It provides a set of widgets, such as `BlocProvider` and `BlocBuilder`, that make it easier to implement the BLoC pattern in your app. It also provides utility classes, such as `Bloc` and `BlocEvent`, that help you to write reusable and testable business logic components.
 
 Visit the following resources to learn more:
 
