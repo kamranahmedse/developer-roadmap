@@ -1,6 +1,6 @@
-# Flutter bloc
+# Flutter_bloc
 
-State management library exposing widgets which can help handle all possible states of the application.
+flutter_bloc is a Flutter package that implements the BLoC pattern and provides a set of tools for building BLoC-based apps. It provides a set of widgets, such as `BlocProvider` and `BlocBuilder`, that make it easier to implement the BLoC pattern in your app. It also provides utility classes, such as `Bloc` and `BlocEvent`, that help you to write reusable and testable business logic components.
 
 Visit the following resources to learn more:
 
