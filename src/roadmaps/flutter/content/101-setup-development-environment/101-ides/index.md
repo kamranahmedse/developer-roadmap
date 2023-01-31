@@ -9,10 +9,6 @@ An IDE (Integrated Development Environment) is a software application that provi
 
 These IDEs provide a variety of features and tools to assist in the development of Flutter apps, including code completion, debugging, testing, and more. Developers can choose the IDE that works best for their needs and preferences.
 
-
-
-Reg
-
 Learn more from the following links:
 
 - [Setting up and Editor](https://docs.flutter.dev/get-started/editor)
