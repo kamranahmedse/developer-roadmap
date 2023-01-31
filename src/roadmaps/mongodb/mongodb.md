@@ -5,7 +5,7 @@ order: 10
 featuredTitle: "MongoDB"
 featuredDescription: "Step by step guide to becoming a MongoDB Developer in 2023"
 title: "MongoDB"
-description: "Step by step guide to becoming a MongoDB developer in 2023"
+description: "Step by step guide to becoming a successful developer using MongoDB developer in 2023"
 hasTopics: true
 isNew: true
 dimensions:
