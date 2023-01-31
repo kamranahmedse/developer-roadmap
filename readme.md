@@ -38,6 +38,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
+- [TypeScript Roadmap](https://roadmap.sh/typescript)
 - [React Roadmap](https://roadmap.sh/react)
 - [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
