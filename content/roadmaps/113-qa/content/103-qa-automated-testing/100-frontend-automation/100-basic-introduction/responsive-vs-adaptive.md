@@ -1,1 +1,0 @@
-# Responsive vs adaptive

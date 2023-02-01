@@ -1,1 +1,0 @@
-# Equality algorithms

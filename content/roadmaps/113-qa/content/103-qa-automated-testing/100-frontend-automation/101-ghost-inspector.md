@@ -1,1 +1,0 @@
-# Ghost inspector
