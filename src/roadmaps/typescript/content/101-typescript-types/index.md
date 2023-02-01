@@ -19,7 +19,7 @@ TypeScript has several built-in types, including:
 15. Type aliases
 16. Type assertions
 
-Additionally, you can also create custom types in TypeScript using interfaces, classes, and type aliases.
+You can also create custom types in TypeScript using interfaces, classes, and type aliases.
 
 Learn more from the following links:
 
