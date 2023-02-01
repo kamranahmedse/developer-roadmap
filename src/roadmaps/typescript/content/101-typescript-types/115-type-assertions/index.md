@@ -4,8 +4,8 @@ Type assertions in TypeScript are a way to tell the compiler to treat a value as
 
 There are two syntaxes for type assertions in TypeScript:
 
-1. The "angle-bracket" syntax: <T>value
-2. The "as" syntax: value as T
+1. The "angle-bracket" syntax: `<T>value`
+2. The "as" syntax: value as `T`
 
 For example:
 
