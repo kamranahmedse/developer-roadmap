@@ -1,1 +1,20 @@
 # Readonly
+
+Readonly constructs a type with all properties of Type set to readonly, meaning the properties of the constructed type cannot be reassigned.
+
+    ```
+    interface Todo {
+    title: string;
+    }
+    
+    const todo: Readonly<Todo> = {
+    title: "Delete inactive users",
+    };
+    
+    todo.title = "Hello";
+    Cannot assign to 'title' because it is a read-only property.
+    ```
+
+Learn more from the following links:
+
+- [Readonly<Type>](https://www.typescriptlang.org/docs/handbook/utility-types.html#readonlytype)
