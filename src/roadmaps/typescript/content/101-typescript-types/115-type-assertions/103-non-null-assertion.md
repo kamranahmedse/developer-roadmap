@@ -1,0 +1,1 @@
+# Non null assertion

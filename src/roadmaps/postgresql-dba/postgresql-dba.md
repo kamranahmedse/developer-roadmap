@@ -134,7 +134,7 @@ Get practical skills, learn automation tools and automate existing routine tasks
 Learn theory and get practical skills of how applications should work with Postgres
 - **Migrations**:
   - practical patterns and antipatterns
-  - tools: `liquibase`, `sqitch`, language-specific tools
+  - tools: `liquibase`, `sqitch`, `Bytebase`, language-specific tools
 - Data import/export, bulk loading and processing
 - **Queues**:
   - practical patterns and anti-patterns
@@ -202,7 +202,7 @@ Get understanding and practical skills of how to optimize SQL queries.
 
 ## Develop architect skills
 Get deeper understanding of Postgres use cases and where Postgres is suitable and where is not.
-- **Postgres forks and extensions**: `Greenplum`, `Timescaledb`, `Citus`, `Postgres-XL`, etc.
+- **Postgres forks and extensions**: `Greenplum`, `Timescaledb`, `Citus`, `Postgres-XL`, `PostGIS` etc.
 - RDBMS in general, benefits and limitations
 - Differences between Postgres and other RDBMS and NoSQL databases
 

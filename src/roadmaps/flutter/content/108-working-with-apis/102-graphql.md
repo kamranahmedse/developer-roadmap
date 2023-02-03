@@ -1,4 +1,4 @@
-# Graphql
+# GraphQL
 
 GraphQL is a query language for your API that allows clients to request exactly the data they need, and nothing more. It was developed by Facebook and released as open source in 2015.
 
