@@ -4,10 +4,10 @@
 
 For example:
 
-    ```
-    let anyValue: any = 42;
+```typescript
+let anyValue: any = 42;
 
-    // we can assign any value to anyValue, regardless of its type
-    anyValue = 'Hello, world!';
-    anyValue = true;
-    ```
+// we can assign any value to anyValue, regardless of its type
+anyValue = 'Hello, world!';
+anyValue = true;
+```

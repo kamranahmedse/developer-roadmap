@@ -4,11 +4,11 @@
 
 For example:
 
-    ```
-    const colors = ['red', 'green', 'blue'] as const;
+```typescript
+const colors = ['red', 'green', 'blue'] as const;
 
-    // colors is now of type readonly ['red', 'green', 'blue']
-    ```
+// colors is now of type readonly ['red', 'green', 'blue']
+```
 
 Using as const allows TypeScript to infer more accurate types for constants, which can lead to improved type checking and better type inference in your code.
 
