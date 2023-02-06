@@ -2,16 +2,17 @@
 
 TypeScript allows you to specifically type an object using an interface that can be reused by multiple objects.
 
-Example:
+```typescript
+interface Person {
+  name: string;
+  age: number;
+}
 
-    ```
-    interface Publication {
-    isbn: string;
-    author: string;
-    publisher: string;
-    }
-    ```
+function greet(person: Person) {
+  return 'Hello ' + person.name;
+}
+```
 
 Learn more from the following links:
 
-- [Reusable Types (Interfaces)](https://www.typescriptlang.org/docs/handbook/declaration-files/by-example.html#reusable-types-interfaces)
+- [Object Types - Interfaces](https://www.typescriptlang.org/docs/handbook/2/objects.html)

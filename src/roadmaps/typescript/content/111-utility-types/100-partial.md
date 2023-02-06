@@ -4,26 +4,27 @@ The Partial type in TypeScript allows you to make all properties of a type optio
 
 Here's an example of using the Partial type in TypeScript:
 
-    ```
-    interface User {
-    name: string;
-    age: number;
-    email: string;
-    }
+```typescript
+interface User {
+  name: string;
+  age: number;
+  email: string;
+}
 
-    function createUser(user: Partial<User>): User {
-    return {
-        name: 'John Doe',
-        age: 30,
-        email: 'john.doe@example.com',
-        ...user
-    };
-    }
+function createUser(user: Partial<User>): User {
+  return {
+    name: 'John Doe',
+    age: 30,
+    email: 'john.doe@example.com',
+    ...user
+  };
+}
 
-    const newUser = createUser({ name: 'Jane Doe' });
-    console.log(newUser);
-    // Output: { name: 'Jane Doe', age: 30, email: 'john.doe@example.com' }
-    ```
+const newUser = createUser({ name: 'Jane Doe' });
+
+console.log(newUser);
+// Output: { name: 'Jane Doe', age: 30, email: 'john.doe@example.com' }
+```
 
 Learn more from the following links:
 

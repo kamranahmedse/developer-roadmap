@@ -4,20 +4,22 @@ In TypeScript, a hybrid type is a type that combines multiple types into a singl
 
 For example, you can create a hybrid type that can accept either a string or a number:
 
-    ```
-    type StringOrNumber = string | number;
-    ```
+```typescript
+type StringOrNumber = string | number;
+```
 
-Now, a value of type StringOrNumber can be either a string or a number:
+You can also use hybrid types to create more complex types that can represent a combination of several different types of values. For example:
 
-    ```
-    let value: StringOrNumber = 'Hello, world!';
-    value = 42;
-    ```
+```typescript
+type Education = {
+  degree: string;
+  school: string;
+  year: number;
+};
 
-You can also use hybrid types to create more complex types that can represent a combination of several different types of values.
-
-Learn more from the following links:
-
-- [TypeScript - Interface Hybrid Types](https://www.logicbig.com/tutorials/misc/typescript/interface-hybrid-types.html)
-- [What is Hybrid types in typescript?](https://www.youtube.com/watch?v=eYAq1A4BsuI)
+type User = {
+  name: string;
+  age: number;
+  email: string;
+  education: Education;
+};

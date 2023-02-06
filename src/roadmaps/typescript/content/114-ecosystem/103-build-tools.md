@@ -1,13 +1,16 @@
 # Build Tools
 
-Build tools are used to compile and bundle your TypeScript code into a format that can be run in a browser or other environment. Some popular build tools for TypeScript include:
+Task runners automatically execute commands and carry out processes behind the scenes. This helps automate your workflow by performing mundane, repetitive tasks that you would otherwise waste an egregious amount of time repeating yourself.
 
-- Webpack: A popular module bundler that can compile and bundle TypeScript code, as well as other assets such as CSS, images, and more.
-- Babel: A popular JavaScript compiler that can be used to compile TypeScript code into a format that is compatible with older browsers and environments.
-- Rollup: A module bundler that can be used to compile and bundle TypeScript code for small to medium-sized projects.
-- Parcel: A fast and efficient zero-configuration bundler that can compile and bundle TypeScript code.
+Common usages of task runners include numerous development tasks such as: spinning up development servers, compiling code (ex. SCSS to CSS), running linters, serving files up from a local port on your computer, and many more!
 
-Learn more from the following links:
+Visit the following resources to learn more:
 
-- [Integrating with Build Tools](https://www.typescriptlang.org/docs/handbook/integrating-with-build-tools.html#handbook-content)
-- [TypeScript Build Tools](https://www.javatpoint.com/typescript-build-tools)
+- [webpack is a static module bundler for modern JavaScript applications](https://webpack.js.org/)
+- [Vite Next Generation Frontend Tooling](https://vitejs.dev)
+- [Parcel is a zero configuration build tool for the web](https://parceljs.org/)
+- [esbuild is an extremely fast JavaScript bundler and minifier](https://esbuild.github.io/)
+- [swc is a super-fast compiler written in Rust](https://swc.rs/)
+- [tsup is a zero-config TypeScript build tool](https://tsup.egoist.sh/)
+- [Rollup is a module bundler for JavaScript](https://rollupjs.org/guide/en/)
+- [tsdx is a zero-config CLI for TypeScript package development](https://tsdx.io/)

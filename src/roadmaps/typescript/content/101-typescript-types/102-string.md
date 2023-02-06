@@ -1,13 +1,11 @@
-# String
+# string
 
-In TypeScript, the string is sequence of char values and also considered as an object.
+It is a primitive data type in TypeScript that represents textual data. It is a set of elements of the 16-bit Unicode character set.
 
-Syntax:
-
-```
-var var_name = new String(string);
+```typescript
+let name: string = 'John Doe';
 ```
 
-Learn more from the following links:
+Learn more from the following link
 
-- [Number, String, Boolean, Symbol and Object](https://www.typescriptlang.org/docs/handbook/declaration-files/do-s-and-don-ts.html#number-string-boolean-symbol-and-object)
+- [Number, String, Boolean, Symbol and Object](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#the-primitives-string-number-and-boolean)

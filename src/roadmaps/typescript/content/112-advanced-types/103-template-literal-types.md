@@ -4,16 +4,15 @@ Template literal types in TypeScript are a way to manipulate string values as ty
 
 For example, the following is a template literal type that concatenates two strings:
 
-    ```
-    type Name = `Mr. ` + string;
+```typescript
+type Name = `Mr. ` + string;
 
-    let name: Name = `Mr. Smith`;  // ok
-    let name: Name = `Mrs. Smith`;  // error
-    ```
+let name: Name = `Mr. Smith`;  // ok
+let name: Name = `Mrs. Smith`;  // error
+```
 
 In this example, the `Name` template literal type is created by concatenating the string `"Mr. "` with the type `string`. This type can then be used to enforce that a value must be a string that starts with `"Mr. "`.
 
 Learn more from the following links:
 
 - [Template Literal Types](https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html#handbook-content)
-- [TypeScript Template Literal Types](https://www.youtube.com/watch?v=nskIP1iyrAo)

@@ -12,5 +12,4 @@ The main benefits of using TypeScript include:
 Learn more from the folowing links:
 
 - [Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
-- [TypeScript: A Static Type Checker](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html#typescript-a-static-type-checker)
-- [Learn Complete TypeScript](https://www.youtube.com/watch?v=30LWjhZzg50)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)

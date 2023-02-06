@@ -1,22 +1,17 @@
 # Intersection Types
 
-Intersection Types in TypeScript allow you to combine multiple types into a single type. An intersection type is written as an ampersand (&) separated list of types.
+An intersection type creates a new type by combining multiple existing types. The new type has all features of the existing types.
 
-For example, consider an object that has both a name property and a email property:
+To combine types, you use the `&` operator as follows:
 
-    ```
-    interface User {
-    name: string;
-    email: string;
-    }
+```typescript
+type typeAB = typeA & typeB;
+```
 
-    const user: User = {
-    name: 'John Doe',
-    email: 'johndoe@example.com'
-    };
-    ```
+The `typeAB` will have all properties from both typeA and typeB.
+
+Note that the union type uses the `|` operator that defines a variable which can hold a value of either `typeA` or `typeB`
 
 Learn more from the following links:
 
-- [Intersection Types](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html#intersection-types)
-- [Implement Intersection Types in the Typescript](https://www.youtube.com/watch?v=adr7W5uyIMk)
+- [Intersection Types in TypeScript](https://www.typescripttutorial.net/typescript-tutorial/typescript-intersection-types/)

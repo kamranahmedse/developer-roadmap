@@ -4,7 +4,7 @@ Type inference in TypeScript refers to the process of automatically determining 
 
 Here's an example of type inference in TypeScript:
 
-```
+```typescript
 let name = "John Doe";
 ```
 
@@ -13,4 +13,3 @@ In this example, the TypeScript compiler automatically infers that the type of t
 Learn more from the following links:
 
 - [Type Inference](https://www.typescriptlang.org/docs/handbook/type-inference.html#handbook-content)
-- [Type Inference in TypeScript](https://www.tutorialsteacher.com/typescript/type-inference)

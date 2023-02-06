@@ -11,18 +11,18 @@ External modules are used to organize code across multiple files. They are defin
 
 Here is an example of how you can use internal modules in TypeScript:
 
-    ```
-    // myModule.ts
-    namespace MyModule {
-        export function doSomething() {
-            console.log("Doing something...");
-        }
+```typescript
+// myModule.ts
+namespace MyModule {
+    export function doSomething() {
+        console.log("Doing something...");
     }
+}
 
-    // main.ts
-    /// <reference path="myModule.ts" />
-    MyModule.doSomething(); // Output: "Doing something..."
-    ```
+// main.ts
+/// <reference path="myModule.ts" />
+MyModule.doSomething(); // Output: "Doing something..."
+```
 
 Learn more from the following links:
 

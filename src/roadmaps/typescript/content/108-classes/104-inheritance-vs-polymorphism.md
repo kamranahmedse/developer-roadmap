@@ -6,33 +6,33 @@ Inheritance refers to a mechanism where a subclass inherits properties and metho
 
 Polymorphism refers to the ability of an object to take on many forms. This allows objects of different classes to be treated as objects of a common class, as long as they share a common interface or inheritance hierarchy. In TypeScript, polymorphism is achieved through method overriding and method overloading.
 
-For example:
+```typescript
+class Animal {
+  makeSound(): void {
+    console.log('Making animal sound');
+  }
+}
 
-    ```
-    class Animal {
-    makeSound(): void {
-        console.log('Making animal sound');
-    }
-    }
+class Dog extends Animal {
+  makeSound(): void {
+    console.log('Bark');
+  }
+}
 
-    class Dog extends Animal {
-    makeSound(): void {
-        console.log('Bark');
-    }
-    }
+class Cat extends Animal {
+  makeSound(): void {
+    console.log('Meow');
+  }
+}
 
-    class Cat extends Animal {
-    makeSound(): void {
-        console.log('Meow');
-    }
-    }
+let animal: Animal;
 
-    let animal: Animal;
-    animal = new Dog();
-    animal.makeSound(); // Output: Bark
-    animal = new Cat();
-    animal.makeSound(); // Output: Meow
-    ```
+animal = new Dog();
+animal.makeSound(); // Output: Bark
+
+animal = new Cat();
+animal.makeSound(); // Output: Meow
+```
 
 Learn more from the following resources:
 

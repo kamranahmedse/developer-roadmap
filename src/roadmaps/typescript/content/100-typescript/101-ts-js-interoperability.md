@@ -1,4 +1,4 @@
-# TS JS Interoperability
+# TS/JS Interoperability
 
 TypeScript and JavaScript have full interoperability, meaning you can use TypeScript code in JavaScript projects and vice versa. TypeScript is a superset of JavaScript, which means that any valid JavaScript code is also valid TypeScript code.
 

@@ -4,7 +4,7 @@ Literal types in TypeScript are a way to specify a value exactly, rather than ju
 
 For example, the following is a literal type that represents a value of 42:
 
-```
+```typescript
 type Age = 42;
 
 let age: Age = 42;  // ok
@@ -16,4 +16,3 @@ In this example, the `Age` literal type is created by using the number `42` as a
 Learn more from the following links:
 
 - [Literal Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#literal-types)
-- [TypeScript Literal Types Explained](https://www.youtube.com/watch?v=JXVrPRmnQt0)

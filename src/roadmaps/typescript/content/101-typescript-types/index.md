@@ -2,22 +2,22 @@
 
 TypeScript has several built-in types, including:
 
-1. number
-2. string
-3. boolean
-4. any
-5. void
-6. null and undefined
-7. never
-8. object
-9. symbol
-10. Enumerated types (enum)
-11. Tuple types
-12. Array types
-13. Union types
-14. Intersection types
-15. Type aliases
-16. Type assertions
+- number
+- string
+- boolean
+- any
+- void
+- null and undefined
+- never
+- object
+- symbol
+- Enumerated types (enum)
+- Tuple types
+- Array types
+- Union types
+- Intersection types
+- Type aliases
+- Type assertions
 
 You can also create custom types in TypeScript using interfaces, classes, and type aliases.
 

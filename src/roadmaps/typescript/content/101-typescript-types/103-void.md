@@ -1,18 +1,18 @@
-# Void
+# void
 
-Void is used where there is no data. For example, if a function does not return any value then you can specify void as return type.
+`void` represents the return value of functions which don’t return a value. It’s the inferred type any time a function doesn’t have any `return` statements, or doesn’t return any explicit value from those return statements:
 
-Example: 
 
-    ```
-    function sayHi(): void { 
-        console.log('Hi!')
-    } 
+```typescript
+// The inferred return type is void
+function noop() {
+  return;
+}
+```
 
-    let speech: void = sayHi(); 
-    console.log(speech); //Output: undefined
-    ```
+In JavaScript, a function that doesn’t return any value will implicitly return the value `undefined`. However, `void` and `undefined` are not the same thing in TypeScript. There are further details at the end of this chapter.
+
 
 Learn more from the following links:
 
-- [void](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)
+- [void - TypeScript Docs](https://www.typescriptlang.org/docs/handbook/2/functions.html#void)

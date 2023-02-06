@@ -4,7 +4,7 @@ Conditional types in TypeScript are a way to select a type based on a condition.
 
 For example, the following is a conditional type that takes two types and returns the type of the first argument if it extends the second argument, and the type of the second argument otherwise:
 
-```
+```typescript
 type Extends<T, U> = T extends U ? T : U;
 
 type A = Extends<string, any>;  // type A is 'string'

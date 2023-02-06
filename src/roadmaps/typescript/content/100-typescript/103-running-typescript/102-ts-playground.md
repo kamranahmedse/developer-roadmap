@@ -1,6 +1,6 @@
-# Ts playground
+# TS Playground
 
-A TypeScript playground in Flutter refers to a development environment or an online tool that allows you to write, run, and debug TypeScript code in a Flutter environment. It's a way to test TypeScript code snippets and see the results immediately, without having to set up a full development environment or project. Some popular online TypeScript playgrounds for Flutter include Repl.it, CodeSandbox, and StackBlitz. These platforms provide an interactive development environment with all the necessary tools and features to write, test, and debug TypeScript code.
+The TypeScript Playground is a great tool to learn TypeScript. It allows you to write TypeScript code and see the JavaScript output. It also allows you to share your code with others.
 
 Learn more from the following links:
 

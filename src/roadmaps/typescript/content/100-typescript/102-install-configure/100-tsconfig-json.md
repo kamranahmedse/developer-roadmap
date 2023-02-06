@@ -1,17 +1,17 @@
-# Tsconfig JSON
+# tsconfig.json
 
 tsconfig.json is a configuration file in TypeScript that specifies the compiler options for building your project. It helps the TypeScript compiler understand the structure of your project and how it should be compiled to JavaScript. Some common options include:
 
-- **target**: the version of JavaScript to compile to.
-- **module**: the module system to use.
-- **stric**": enables/disables strict type checking.
-- **outDir**: the directory to output the compiled JavaScript files.
-- **rootDir**: the root directory of the TypeScript files.
-- **exclude**: an array of file/directory patterns to exclude from the compilation.
+- `target`: the version of JavaScript to compile to.
+- `module`: the module system to use.
+- `strict`: enables/disables strict type checking.
+- `outDir`: the directory to output the compiled JavaScript files.
+- `rootDir`: the root directory of the TypeScript files.
+- `exclude`: an array of file/directory patterns to exclude from the compilation.
 
-Example:
+Given below is the sample `tsconfig.json` file:
 
-```
+```json
 {
   "compilerOptions": {
     "target": "es5",
@@ -27,4 +27,3 @@ Example:
 Learn more from the following links:
 
 - [What is a tsconfig.json](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#handbook-content)
-- [TypeScript Projects: What is a tsconfig.json?](https://www.youtube.com/watch?v=sLylejlr6lA)

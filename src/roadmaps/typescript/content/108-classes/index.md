@@ -4,26 +4,24 @@ Classes in TypeScript are a blueprint for creating objects (instances of a class
 
 A class in TypeScript is defined using the class keyword, followed by the name of the class. The class definition can include fields (also known as properties or attributes), methods (functions), and a constructor.
 
-For example:
+```typescript
+class Animal {
+  name: string;
+  constructor(name: string) {
+    this.name = name;
+  }
 
-    ```
-    class Animal {
-    name: string;
-    constructor(name: string) {
-        this.name = name;
-    }
-    makeSound(): void {
-        console.log(`${this.name} is making a sound`);
-    }
-    }
+  makeSound(): void {
+    console.log(`${this.name} is making a sound`);
+  }
+}
 
-    const dog = new Animal('Dog');
-    dog.makeSound(); // Output: Dog is making a sound
-    ```
+const dog = new Animal('Dog');
+dog.makeSound(); // Output: Dog is making a sound
+```
 
 In this example, the `Animal` class has a name field, a constructor that sets the value of the `name` field, and a `makeSound` method. An instance of the `Animal` class can be created using the `new` keyword, and its methods and properties can be accessed using dot notation.
 
 Learn more from the following resources:
 
 - [Tutorial - Classes](https://www.typescriptlang.org/docs/handbook/2/classes.html)
-- [TypeScript Tutorial - Classes](https://www.youtube.com/watch?v=OsFwOzr3_sE)

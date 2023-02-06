@@ -1,49 +1,11 @@
 # Useful Packages
 
-There are many useful packages available for TypeScript that can help you improve your development workflow and add new functionality to your projects. Here are a few popular packages to consider using in your TypeScript projects:
+TypeScript has a large ecosystem of packages that can be used to extend the language or to add functionality to your project. Here is the list of some of the most useful packages.
 
-1. Lodash: A utility library that provides a wide range of helpful functions for working with arrays, objects, and other data structures.
-
-    ```
-    // Step 1: Install Lodash
-    npm install lodash
-
-    // Step 2: Import Lodash in your TypeScript code
-    import * as _ from "lodash";
-
-    // Step 3: Use Lodash in your code
-    const result = _.map([1, 2, 3], (num) => num * 3);
-    console.log(result); // Output: [3, 6, 9]
-    ```
-
-2. Axios: A popular HTTP client for making REST API requests.
-
-    ```
-    // Step 1: Install Axios
-    npm install axios
-
-    // Step 2: Import Axios in your TypeScript code
-    import axios from "axios";
-
-    // Step 3: Use Axios in your code
-    axios.get("https://jsonplaceholder.typicode.com/posts")
-        .then((response) => {
-            console.log(response.data);
-        });
-    ```
-
-3. Moment.js: A library for working with dates and times.
-
-    ```
-    // Step 1: Install Moment.js
-    npm install moment
-
-    // Step 2: Import Moment.js in your TypeScript code
-    import * as moment from "moment";
-
-    // Step 3: Use Moment.js in your code
-    const date = moment().format("MMMM Do YYYY, h:mm:ss a");
-    console.log(date); // Output: "February 1st 2023, 2:00:00 pm"
-    ```
-
-These are just a few examples of the many useful packages available for TypeScript. By using these and other packages, you can improve your development workflow and add new functionality to your projects.
+- [zod](https://zod.dev/): A TypeScript-first data validation library
+- [ts-morph](https://github.com/dsherret/ts-morph): A TypeScript-first API for manipulating TypeScript code
+- [ts-node](https://typestrong.org/ts-node/): A TypeScript execution and REPL for node.js
+- [ts-jest](https://github.com/kulshekhar/ts-jest): A Jest transformer with source map support that lets you use Jest to test projects written in TypeScript.
+- [typesync](https://github.com/jeffijoe/typesync): Install missing TypeScript typings for dependencies in your package.json.
+- [tsd](https://github.com/SamVerschueren/tsd) - TypeScript Definition Manager
+- [type-fest](https://github.com/sindresorhus/type-fest) - A collection of essential TypeScript types
