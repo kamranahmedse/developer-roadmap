@@ -1,0 +1,1 @@
+# Configuring taints and tolerations

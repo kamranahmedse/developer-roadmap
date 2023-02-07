@@ -1,10 +1,10 @@
 ---
 jsonUrl: "/jsons/roadmaps/kubernetes.json"
 pdfUrl: "/pdfs/roadmaps/kubernetes.pdf"
-order: 9
+order: 14
 featuredTitle: "Kubernetes"
 featuredDescription: "Step by step guide to learning Kubernetes in 2023"
-title: "Kubernetes"
+title: "Kubernetes Roadmap"
 description: "Step by step guide to learning Kubernetes in 2023"
 isNew: true
 hasTopics: true
