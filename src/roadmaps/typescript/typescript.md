@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/typescript.json"
 pdfUrl: "/pdfs/roadmaps/typescript.pdf"
 order: 6
-featuredTitle: "TypeScript"
-featuredDescription: "Everything you need to learn about TypeScript in 2023"
+briefTitle: "TypeScript"
+briefDescription: "Everything you need to learn about TypeScript in 2023"
 title: "TypeScript"
 description: "Everything you need to learn about TypeScript in 2023"
 hasTopics: true

@@ -25,7 +25,7 @@ const bestPractices = await getAllBestPractices();
             <GridItem
               url={`/best-practices/${bestPractice.id}`}
               isNew={bestPractice.frontmatter.isNew}
-              title={bestPractice.frontmatter.title}
+              title={bestPractice.frontmatter.briefTitle}
               description={bestPractice.frontmatter.description}
             />
           ))

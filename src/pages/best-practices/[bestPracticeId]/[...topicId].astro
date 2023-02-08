@@ -26,7 +26,7 @@ const { file, bestPracticeId, bestPractice, heading } = Astro.props as BestPract
 
 <BaseLayout
   title={`${heading} - roadmap.sh`}
-  description={`Free resources to learn ${heading} in ${bestPractice.featuredTitle}. Everything you need to know about ${heading} and how it realtes to ${bestPractice.featuredTitle}.`}
+  description={`Free resources to learn ${heading} in ${bestPractice.briefTitle}. Everything you need to know about ${heading} and how it realtes to ${bestPractice.briefTitle}.`}
   noIndex={true}
   permalink={`/best-practices/${bestPracticeId}/${topicId}`}
 >

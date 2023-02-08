@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/nodejs.json"
 pdfUrl: "/pdfs/roadmaps/nodejs.pdf"
 order: 6
-featuredTitle: "Node.js"
-featuredDescription: "Step by step guide to becoming a Node.js developer in 2023"
+briefTitle: "Node.js"
+briefDescription: "Step by step guide to becoming a Node.js developer in 2023"
 title: "Node.js Developer"
 description: "Step by step guide to becoming a modern Node.js developer in 2023"
 isNew: false

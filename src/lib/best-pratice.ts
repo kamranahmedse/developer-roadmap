@@ -5,8 +5,8 @@ export interface BestPracticeFrontmatter {
   jsonUrl: string;
   pdfUrl: string;
   order: number;
-  featuredTitle: string;
-  featuredDescription: string;
+  briefTitle: string;
+  briefDescription: string;
   title: string;
   description: string;
   isNew: boolean;

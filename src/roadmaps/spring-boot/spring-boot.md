@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/spring-boot.json"
 pdfUrl: "/pdfs/roadmaps/spring-boot.pdf"
 order: 10
-featuredTitle: "Spring Boot"
-featuredDescription: "Step by step guide to becoming a Spring Boot Developer in 2023"
+briefTitle: "Spring Boot"
+briefDescription: "Step by step guide to becoming a Spring Boot Developer in 2023"
 title: "Spring Boot Developer"
 description: "Step by step guide to becoming a Spring Boot developer in 2023"
 hasTopics: true

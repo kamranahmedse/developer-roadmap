@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/backend.json"
 pdfUrl: "/pdfs/roadmaps/backend.pdf"
 order: 2
-featuredTitle: "Backend"
-featuredDescription: "Step by step guide to becoming a backend developer in 2023"
+briefTitle: "Backend"
+briefDescription: "Step by step guide to becoming a backend developer in 2023"
 title: "Backend Developer"
 description: "Step by step guide to becoming a modern backend developer in 2023"
 hasTopics: true

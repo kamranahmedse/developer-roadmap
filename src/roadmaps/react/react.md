@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/react.json"
 pdfUrl: "/pdfs/roadmaps/react.pdf"
 order: 2
-featuredTitle: "React"
-featuredDescription: "Step by step guide to become a React Developer in 2023"
+briefTitle: "React"
+briefDescription: "Step by step guide to become a React Developer in 2023"
 title: "React Developer"
 description: "Everything that is there to learn about React and the ecosystem in 2023."
 hasTopics: true

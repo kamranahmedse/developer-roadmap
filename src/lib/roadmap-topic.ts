@@ -113,7 +113,7 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
         url: '/roadmaps',
       },
       {
-        title: currentRoadmap.featuredTitle,
+        title: currentRoadmap.briefTitle,
         url: `${roadmapUrl}`,
       },
       {

@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/system-design.json"
 pdfUrl: "/pdfs/roadmaps/system-design.pdf"
 order: 8
-featuredTitle: "System Design"
-featuredDescription: "Guide to learn system Design"
+briefTitle: "System Design"
+briefDescription: "Guide to learn system Design"
 title: "System Design"
 description: "Everything you need to know about designing large scale systems."
 isNew: true

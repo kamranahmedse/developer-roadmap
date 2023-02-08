@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/qa.json"
 pdfUrl: "/pdfs/roadmaps/qa.pdf"
 order: 7
-featuredTitle: "QA"
-featuredDescription: "Step by step guide to becoming a modern QA Engineer in 2023"
+briefTitle: "QA"
+briefDescription: "Step by step guide to becoming a modern QA Engineer in 2023"
 title: "QA Engineer"
 description: "Steps to follow in order to become a modern QA Engineer in 2023"
 isNew: false

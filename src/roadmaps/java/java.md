@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/java.json"
 pdfUrl: "/pdfs/roadmaps/java.pdf"
 order: 9
-featuredTitle: "Java"
-featuredDescription: "Step by step guide to becoming a Java Developer in 2023"
+briefTitle: "Java"
+briefDescription: "Step by step guide to becoming a Java Developer in 2023"
 title: "Java Developer"
 description: "Step by step guide to becoming a Java developer in 2023"
 hasTopics: true

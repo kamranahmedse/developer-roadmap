@@ -2,11 +2,11 @@
 jsonUrl: "/jsons/best-practices/frontend-performance.json"
 pdfUrl: "/pdfs/best-practices/frontend-performance.pdf"
 order: 1
-featuredTitle: "Frontend Performance"
-featuredDescription: "Frontend Performance Best Practices"
+briefTitle: "Frontend Performance"
+briefDescription: "Frontend Performance Best Practices"
 isNew: true
 isUpcoming: false
-title: "Frontend Performance"
+title: "Frontend Performance Best Practices"
 description: "Detailed list of best practices to improve your frontend performance"
 dimensions:
   width: 968
