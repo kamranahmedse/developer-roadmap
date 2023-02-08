@@ -8,6 +8,7 @@ title: "Kubernetes Roadmap"
 description: "Step by step guide to learning Kubernetes in 2023"
 isNew: true
 hasTopics: true
+note: "This is a new roadmap, please help us improve it by [sharing your feedback](https://github.com/kamranahmedse/developer-roadmap/issues/new)."
 dimensions:
   width: 968
   height: 1992.7
