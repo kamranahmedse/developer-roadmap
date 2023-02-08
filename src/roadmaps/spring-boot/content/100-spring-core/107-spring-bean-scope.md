@@ -11,7 +11,7 @@ The scope of a bean determines the lifecycle and visibility of the bean within t
 - **application**: This scope is for global application-level data, and only valid in a web-aware Spring ApplicationContext.
 - **websocket**: This scope is for global WebSocket-level data, and also only valid in a web-aware Spring ApplicationContext.
 
-The scope of a bean can be specified in the configuration file using the scope attribute of the bean element. For example, to configure a bean with the prototype scope, you would use the following XML configuration:
+The scope of a bean can be specified in the configuration file using the scope attribute of the bean element.
 
 It is very important to choose the right scope for a bean, as it can affect the behavior and performance of the application.
 
