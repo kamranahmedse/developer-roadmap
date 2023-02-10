@@ -23,4 +23,4 @@ Learn more from the following resources:
 
 - [Overview of Namespaces](https://www.typescriptlang.org/docs/handbook/namespaces.html)
 - [Namespaces and Modules](https://www.typescriptlang.org/docs/handbook/namespaces-and-modules.html)
-- [TypeScript - Using Namespaces](typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-namespaces)
+- [TypeScript - Using Namespaces](https://typescriptlang.org/docs/handbook/namespaces-and-modules.html#using-namespaces)

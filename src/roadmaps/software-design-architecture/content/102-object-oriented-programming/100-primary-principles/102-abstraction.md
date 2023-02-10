@@ -9,5 +9,4 @@ There are two types of abstraction:
 
 Learn more from the following links:
 
-- [What is Abstraction?](Abstraction)
 - [Tutorial - Abstraction](https://www.youtube.com/watch?v=OF55HZPE7lQ)
