@@ -7,6 +7,7 @@ briefDescription: "Step by step guide for DevOps or operations role in 2023"
 title: "DevOps Roadmap"
 description: "Step by step guide for DevOps, SRE or any other Operations Role in 2023"
 hasTopics: true
+tnsBannerLink: "https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
 dimensions:
   width: 968
   height: 2527.46

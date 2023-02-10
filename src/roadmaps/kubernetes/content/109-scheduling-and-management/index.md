@@ -1,1 +1,0 @@
-# Scheduling and management

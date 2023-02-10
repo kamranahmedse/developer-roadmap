@@ -3,11 +3,12 @@ import Icon from './Icon.astro';
 
 export interface Props {
   roadmapId: string;
+  tnsBannerLink?: string;
 }
 
-const { roadmapId } = Astro.props;
+const { roadmapId, tnsBannerLink = '' } = Astro.props;
 
-const hasTNSBanner = ['frontend', 'backend', 'devops'].includes(roadmapId);
+const hasTNSBanner = !!tnsBannerLink;
 const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
 ---
 
@@ -26,7 +27,7 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
         <p class='text-sm'>
           Get the latest {roadmapTitle} news from our sister site{' '}
           <a
-            href='https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+            href={tnsBannerLink}
             target='_blank'
             class='font-semibold underline'
             ga-category='PartnerClick'

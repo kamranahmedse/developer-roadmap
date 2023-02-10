@@ -1,1 +1,0 @@
-# Stateful vs stateless apps

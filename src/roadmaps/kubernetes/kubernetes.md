@@ -8,10 +8,10 @@ title: "Kubernetes Roadmap"
 description: "Step by step guide to learning Kubernetes in 2023"
 isNew: true
 hasTopics: true
-note: "This is a new roadmap, please help us improve it by [sharing your feedback](https://github.com/kamranahmedse/developer-roadmap/issues/new)."
+tnsBannerLink: "https://thenewstack.io/kubernetes?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
 dimensions:
   width: 968
-  height: 1992.7
+  height: 1785.73
 # sponsor:
 #   expiryDate: "2023-02-02"
 #   url: "https://www.getambassador.io/api-gateway-to-success?utm_source=roadmap-sh&utm_medium=ebook&utm_campaign=edgestack-guide"

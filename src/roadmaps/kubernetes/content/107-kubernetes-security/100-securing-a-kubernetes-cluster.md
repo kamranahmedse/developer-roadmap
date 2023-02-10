@@ -1,1 +1,0 @@
-# Securing a kubernetes cluster

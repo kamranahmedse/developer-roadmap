@@ -1,1 +1,0 @@
-# Pods and their role
