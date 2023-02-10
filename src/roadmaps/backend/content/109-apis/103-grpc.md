@@ -8,3 +8,5 @@ Visit the following resources to learn more:
 
 - [gRPC Website](https://grpc.io/)
 - [gRPC Docs](https://grpc.io/docs/)
+- [What Is GRPC?](https://www.wallarm.com/what/the-concept-of-grpc)
+- [What Is GRPC?](https://www.youtube.com/watch?v=hVrwuMnCtok)
