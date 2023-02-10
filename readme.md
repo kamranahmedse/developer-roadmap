@@ -55,6 +55,11 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Blockchain Roadmap](https://roadmap.sh/blockchain)
 - [ASP.NET Core Roadmap](https://roadmap.sh/aspnet-core)
 - [System Design Roadmap](https://roadmap.sh/system-design)
+- [Kubernetes Roadmap](https://roadmap.sh/kubernetes)
+
+We have also added a new form of visual content covering best practices:
+
+- [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
 
 ![](https://i.imgur.com/waxVImv.png)
 

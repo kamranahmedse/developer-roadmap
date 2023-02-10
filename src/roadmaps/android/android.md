@@ -2,8 +2,8 @@
 # jsonUrl: "/jsons/roadmaps/android.json"
 pdfUrl: "/pdfs/roadmaps/android.pdf"
 order: 4
-featuredTitle: "Android"
-featuredDescription: "Step by step guide to becoming an Android Developer in 2023"
+briefTitle: "Android"
+briefDescription: "Step by step guide to becoming an Android Developer in 2023"
 title: "Android Developer"
 description: "Step by step guide to becoming an Android developer in 2023"
 hasTopics: false

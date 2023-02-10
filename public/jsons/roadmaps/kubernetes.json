@@ -1,0 +1,4380 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "16551",
+          "typeID": "Arrow",
+          "zOrder": "43",
+          "w": "251",
+          "h": "124",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "582",
+          "y": "366",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": { "x": 250.9819203652737, "y": -0.2642105923081317 },
+            "p1": { "x": 0.46985037947985014, "y": 0.07873961161529373 },
+            "p2": { "x": -0.18181818181824383, "y": 124.15151515151513 }
+          }
+        },
+        {
+          "ID": "16552",
+          "typeID": "Arrow",
+          "zOrder": "44",
+          "w": "163",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "882",
+          "y": "357",
+          "properties": {
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 162.95939830769112, "y": 0 },
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "16553",
+          "typeID": "Arrow",
+          "zOrder": "45",
+          "w": "119",
+          "h": "20",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "614",
+          "y": "330",
+          "properties": {
+            "p0": { "x": 0.0764510184608298, "y": -0.09138996285753365 },
+            "p1": { "x": 0.4703270513601983, "y": -0.06962106433480872 },
+            "p2": { "x": 118.96437795582324, "y": 19.314998862856726 },
+            "curvature": "0",
+            "color": "10027263",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "16554",
+          "typeID": "Arrow",
+          "zOrder": "46",
+          "w": "145",
+          "h": "24",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "608",
+          "y": "361",
+          "properties": {
+            "curvature": "0",
+            "color": "10027263",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": { "x": 0.10525445670259614, "y": 24.142178233406128 },
+            "p1": { "x": 0.4814350899167937, "y": 0.05627628164981654 },
+            "p2": { "x": 144.9067710793397, "y": 0.7645928459336346 }
+          }
+        },
+        {
+          "ID": "16555",
+          "typeID": "Arrow",
+          "zOrder": "47",
+          "w": "46",
+          "h": "112",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "837",
+          "y": "242",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": { "x": 42.258693718900076, "y": -0.1665392487915085 },
+            "p1": { "x": 0.4617576593953421, "y": 0.15740493867575214 },
+            "p2": { "x": 0.4603177865924408, "y": 111.7933962841754 }
+          }
+        },
+        {
+          "ID": "16558",
+          "typeID": "Label",
+          "zOrder": "50",
+          "measuredW": "147",
+          "measuredH": "36",
+          "x": "792",
+          "y": "185",
+          "properties": { "size": "28", "text": "Kubernetes" }
+        },
+        {
+          "ID": "16559",
+          "typeID": "Canvas",
+          "zOrder": "51",
+          "w": "350",
+          "h": "141",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1110",
+          "y": "102"
+        },
+        {
+          "ID": "16560",
+          "typeID": "Label",
+          "zOrder": "52",
+          "measuredW": "314",
+          "measuredH": "25",
+          "x": "1124",
+          "y": "119",
+          "properties": { "size": "17", "text": "Find the detailed version of this roadmap" }
+        },
+        {
+          "ID": "16561",
+          "typeID": "Label",
+          "zOrder": "53",
+          "measuredW": "319",
+          "measuredH": "25",
+          "x": "1124",
+          "y": "147",
+          "properties": { "size": "17", "text": "along with resources and other roadmaps" }
+        },
+        {
+          "ID": "16562",
+          "typeID": "__group__",
+          "zOrder": "54",
+          "measuredW": "320",
+          "measuredH": "45",
+          "w": "320",
+          "h": "45",
+          "x": "1125",
+          "y": "183",
+          "properties": { "controlName": "ext_link:roadmap.sh" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "320",
+                  "h": "45",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "borderColor": "4273622", "color": "4273622" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "105",
+                  "measuredH": "28",
+                  "x": "141",
+                  "y": "8",
+                  "properties": { "color": "16777215", "size": "20", "text": "roadmap.sh" }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "45",
+                  "measuredH": "28",
+                  "x": "66",
+                  "y": "8",
+                  "properties": { "color": "16777215", "size": "20", "text": "https" }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "3",
+                  "measuredW": "5",
+                  "measuredH": "28",
+                  "x": "113",
+                  "y": "8",
+                  "properties": { "color": "16777215", "size": "20", "text": ":" }
+                },
+                {
+                  "ID": "4",
+                  "typeID": "Label",
+                  "zOrder": "4",
+                  "measuredW": "10",
+                  "measuredH": "28",
+                  "x": "120",
+                  "y": "9",
+                  "properties": { "color": "16777215", "size": "20", "text": "/" }
+                },
+                {
+                  "ID": "5",
+                  "typeID": "Label",
+                  "zOrder": "5",
+                  "measuredW": "10",
+                  "measuredH": "28",
+                  "x": "128",
+                  "y": "9",
+                  "properties": { "color": "16777215", "size": "20", "text": "/" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "16563",
+          "typeID": "Arrow",
+          "zOrder": "55",
+          "w": "11",
+          "h": "65",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "837",
+          "y": "109",
+          "properties": {
+            "color": "2848996",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": { "x": 5.81355254908226, "y": -0.3048709282632984 },
+            "p1": { "x": 0.4747832595422888, "y": -0.12123341254486592 },
+            "p2": { "x": 11, "y": 65 }
+          }
+        },
+        {
+          "ID": "16721",
+          "typeID": "Canvas",
+          "zOrder": "59",
+          "w": "398",
+          "h": "159",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "262",
+          "y": "95"
+        },
+        {
+          "ID": "16722",
+          "typeID": "__group__",
+          "zOrder": "60",
+          "measuredW": "183",
+          "measuredH": "27",
+          "w": "183",
+          "h": "27",
+          "x": "289",
+          "y": "167",
+          "properties": { "controlName": "ext_link:github.com/donnemartin/devops" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "150",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": { "size": "18", "text": "DevOps Roadmap" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": { "color": "16777215", "icon": { "ID": "circle", "size": "small" } }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": { "color": "10066329", "icon": { "ID": "check-circle", "size": "small" } }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "16723",
+          "typeID": "__group__",
+          "zOrder": "61",
+          "measuredW": "238",
+          "measuredH": "27",
+          "w": "238",
+          "h": "27",
+          "x": "289",
+          "y": "203",
+          "properties": { "controlName": "ext_link:roadmap.sh/system-design" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "205",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": { "size": "18", "text": "System Design Roadmap" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": { "color": "16777215", "icon": { "ID": "circle", "size": "small" } }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": { "color": "10066329", "icon": { "ID": "check-circle", "size": "small" } }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "16724",
+          "typeID": "Label",
+          "zOrder": "62",
+          "measuredW": "209",
+          "measuredH": "32",
+          "x": "289",
+          "y": "119",
+          "properties": { "size": "24", "text": "Related Roadmaps" }
+        },
+        {
+          "ID": "16848",
+          "typeID": "Arrow",
+          "zOrder": "41",
+          "w": "1",
+          "h": "78",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "460",
+          "y": "501",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 0, "y": 77.69696969696969 }
+          }
+        },
+        {
+          "ID": "16858",
+          "typeID": "Arrow",
+          "zOrder": "40",
+          "w": "119",
+          "h": "64",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "973",
+          "y": "422",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 64 },
+            "p1": { "x": 0.4683294842186294, "y": -0.0843110084680532 },
+            "p2": { "x": 119, "y": 0 }
+          }
+        },
+        {
+          "ID": "16859",
+          "typeID": "Arrow",
+          "zOrder": "39",
+          "w": "121",
+          "h": "23",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "973",
+          "y": "470",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0.33333333333337123, "y": 22.666666666666686 },
+            "p1": { "x": 0.49193894855850734, "y": -0.054087054833238946 },
+            "p2": { "x": 121.66666666666674, "y": 0 }
+          }
+        },
+        {
+          "ID": "16860",
+          "typeID": "Arrow",
+          "zOrder": "38",
+          "w": "124",
+          "h": "69",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "972",
+          "y": "515",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0.33333333333337123 },
+            "p1": { "x": 0.4769230769230774, "y": 0.10384615384615405 },
+            "p2": { "x": 124, "y": 69.66666666666663 }
+          }
+        },
+        {
+          "ID": "16861",
+          "typeID": "Arrow",
+          "zOrder": "37",
+          "w": "128",
+          "h": "24",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "968",
+          "y": "505",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 1 },
+            "p1": { "x": 0.4911471358380652, "y": 0.061219806407955525 },
+            "p2": { "x": 128, "y": 24.66666666666663 }
+          }
+        },
+        {
+          "ID": "16862",
+          "typeID": "Arrow",
+          "zOrder": "36",
+          "w": "1",
+          "h": "404",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "856",
+          "y": "512",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0, "y": -0.43840128920419374 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 404.04241115621176 }
+          }
+        },
+        {
+          "ID": "16869",
+          "typeID": "Arrow",
+          "zOrder": "35",
+          "w": "163",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "592",
+          "y": "501",
+          "properties": {
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 162.95939830769112, "y": 0 },
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "16878",
+          "typeID": "Arrow",
+          "zOrder": "34",
+          "w": "163",
+          "h": "2",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "958",
+          "y": "666",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 162.9828304689379, "y": 1.8423326161033629 }
+          }
+        },
+        {
+          "ID": "16879",
+          "typeID": "Arrow",
+          "zOrder": "33",
+          "w": "171",
+          "h": "140",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "949",
+          "y": "691",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0.052948495174291565, "y": 0.22479656453515418 },
+            "p1": { "x": 0.5334367726920093, "y": 0.11621411947245915 },
+            "p2": { "x": 170.60739141314775, "y": 140.51958025512613 }
+          }
+        },
+        {
+          "ID": "16880",
+          "typeID": "Arrow",
+          "zOrder": "31",
+          "w": "148",
+          "h": "89",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "970",
+          "y": "686",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": -0.31546566797408104, "y": -0.2769596586252874 },
+            "p1": { "x": 0.5537070162735024, "y": 0.09992567117734508 },
+            "p2": { "x": 147.60739141314775, "y": 88.51958025512613 }
+          }
+        },
+        {
+          "ID": "16881",
+          "typeID": "Arrow",
+          "zOrder": "32",
+          "w": "153",
+          "h": "51",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "967",
+          "y": "677",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": -0.06634377955424497, "y": 0.47040600663410714 },
+            "p1": { "x": 0.556503084485988, "y": 0.08697758851119042 },
+            "p2": { "x": 152.60739141314775, "y": 51.51958025512613 }
+          }
+        },
+        {
+          "ID": "16890",
+          "typeID": "Arrow",
+          "zOrder": "25",
+          "w": "170",
+          "h": "41",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "597",
+          "y": "870",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": -0.030303030303002743, "y": 0.24242424242424931 },
+            "p1": { "x": 0.46717831146841055, "y": -0.07931106891015492 },
+            "p2": { "x": 169.66666666666663, "y": 41.15151515151513 }
+          }
+        },
+        {
+          "ID": "16893",
+          "typeID": "Arrow",
+          "zOrder": "30",
+          "w": "202",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "962",
+          "y": "920",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 201.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16896",
+          "typeID": "Arrow",
+          "zOrder": "29",
+          "w": "1",
+          "h": "70",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1276",
+          "y": "919",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 0, "y": 70.33333333333337 }
+          }
+        },
+        {
+          "ID": "16903",
+          "typeID": "Arrow",
+          "zOrder": "28",
+          "w": "1",
+          "h": "257",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1132",
+          "y": "925",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 256.81818181818176 }
+          }
+        },
+        {
+          "ID": "16904",
+          "typeID": "Arrow",
+          "zOrder": "85",
+          "w": "202",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "930",
+          "y": "1183",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 201.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16915",
+          "typeID": "Arrow",
+          "zOrder": "27",
+          "w": "1",
+          "h": "79",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1276",
+          "y": "1182",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 0, "y": 78.75757575757575 }
+          }
+        },
+        {
+          "ID": "16922",
+          "typeID": "Arrow",
+          "zOrder": "26",
+          "w": "160",
+          "h": "42",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "595",
+          "y": "933",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0.4545454545453822, "y": 41.78787878787875 },
+            "p1": { "x": 0.44728539933583694, "y": 0.07675206443923568 },
+            "p2": { "x": 160.7441150192999, "y": -0.0979557964419655 }
+          }
+        },
+        {
+          "ID": "16923",
+          "typeID": "Arrow",
+          "zOrder": "24",
+          "w": "187",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "588",
+          "y": "922",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 1 },
+            "p1": { "x": 0.4999999999999999, "y": -4.074847292650059e-19 },
+            "p2": { "x": 186.7441150192999, "y": -0.0979557964419655 }
+          }
+        },
+        {
+          "ID": "16928",
+          "typeID": "Arrow",
+          "zOrder": "23",
+          "w": "3",
+          "h": "191",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "860",
+          "y": "1089",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 3.212121212121133, "y": 190.5454545454545 }
+          }
+        },
+        {
+          "ID": "16929",
+          "typeID": "Arrow",
+          "zOrder": "22",
+          "w": "245",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "517",
+          "y": "1183",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 244.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16936",
+          "typeID": "Arrow",
+          "zOrder": "21",
+          "w": "1",
+          "h": "163",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "433",
+          "y": "1092",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 163.30303030303025 }
+          }
+        },
+        {
+          "ID": "16941",
+          "typeID": "Arrow",
+          "zOrder": "20",
+          "w": "1",
+          "h": "245",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "595",
+          "y": "1185",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 1.4760272784360275e-20 },
+            "p2": { "x": -0.3030303030303685, "y": 245.30303030303025 }
+          }
+        },
+        {
+          "ID": "16952",
+          "typeID": "Arrow",
+          "zOrder": "19",
+          "w": "1",
+          "h": "119",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "433",
+          "y": "1430",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 119.39393939393926 }
+          }
+        },
+        {
+          "ID": "16953",
+          "typeID": "Arrow",
+          "zOrder": "18",
+          "w": "245",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "595",
+          "y": "1432",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 244.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16954",
+          "typeID": "Arrow",
+          "zOrder": "104",
+          "w": "1",
+          "h": "211",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1433",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": -0.33333333333337123, "y": 210.93939393939377 }
+          }
+        },
+        {
+          "ID": "16963",
+          "typeID": "Arrow",
+          "zOrder": "17",
+          "w": "202",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "939",
+          "y": "1513",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 201.62144119843106, "y": 0 },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "16964",
+          "typeID": "Arrow",
+          "zOrder": "16",
+          "w": "174",
+          "h": "48",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "963",
+          "y": "1455",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.12121212121212466, "y": 48.030303030303 },
+            "p1": { "x": 0.5125271948908697, "y": -0.06435539336093715 },
+            "p2": { "x": 174.121212121212, "y": -0.4545454545454959 }
+          }
+        },
+        {
+          "ID": "16966",
+          "typeID": "Arrow",
+          "zOrder": "15",
+          "w": "171",
+          "h": "35",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "964",
+          "y": "1526",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": 0.3939393939393767, "y": -0.24242424242424931 },
+            "p1": { "x": 0.5086514295478874, "y": 0.05048573363607376 },
+            "p2": { "x": 171.6060606060605, "y": 34.60606060606051 }
+          }
+        },
+        {
+          "ID": "16969",
+          "typeID": "Arrow",
+          "zOrder": "14",
+          "w": "299",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1645",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.36363636363637397, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 298.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16978",
+          "typeID": "Arrow",
+          "zOrder": "13",
+          "w": "1",
+          "h": "90",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1284",
+          "y": "1659",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0.48484848484849863 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 90.75757575757575 }
+          }
+        },
+        {
+          "ID": "16979",
+          "typeID": "Arrow",
+          "zOrder": "12",
+          "w": "299",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1664",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.36363636363637397, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 298.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "16980",
+          "typeID": "Arrow",
+          "zOrder": "114",
+          "w": "1",
+          "h": "299",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1665",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.49999999999999983, "y": 0 },
+            "p2": { "x": -0.33333333333337123, "y": 298.6363636363635 }
+          }
+        },
+        {
+          "ID": "16993",
+          "typeID": "Arrow",
+          "zOrder": "11",
+          "w": "205",
+          "h": "7",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "553",
+          "y": "1782",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": 0.030303030303002743, "y": 6.636363636363512 },
+            "p1": { "x": 0.4999999999999999, "y": 2.713187686711552e-18 },
+            "p2": { "x": 204.62144119843106, "y": 0 },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "16994",
+          "typeID": "Arrow",
+          "zOrder": "10",
+          "w": "198",
+          "h": "194",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "582",
+          "y": "1802",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.18181818181824383, "y": 194.21212121212102 },
+            "p1": { "x": 0.5197445926205173, "y": 0.08121671928749798 },
+            "p2": { "x": 198.30303030303025, "y": 0.27272727272725206 }
+          }
+        },
+        {
+          "ID": "16995",
+          "typeID": "Arrow",
+          "zOrder": "9",
+          "w": "176",
+          "h": "131",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "582",
+          "y": "1807",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.18181818181824383, "y": 131.21212121212102 },
+            "p1": { "x": 0.5197445926205174, "y": 0.08121671928749793 },
+            "p2": { "x": 175.5757575757575, "y": -0.18181818181824383 }
+          }
+        },
+        {
+          "ID": "16996",
+          "typeID": "Arrow",
+          "zOrder": "8",
+          "w": "167",
+          "h": "87",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "582",
+          "y": "1801",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.18181818181824383, "y": 87.21212121212102 },
+            "p1": { "x": 0.5197445926205175, "y": 0.08121671928749788 },
+            "p2": { "x": 166.4848484848485, "y": -0.24242424242424931 }
+          }
+        },
+        {
+          "ID": "16997",
+          "typeID": "Arrow",
+          "zOrder": "7",
+          "w": "174",
+          "h": "46",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "582",
+          "y": "1794",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.18181818181824383, "y": 46.21212121212102 },
+            "p1": { "x": 0.5197445926205174, "y": 0.08121671928749785 },
+            "p2": { "x": 174.060606060606, "y": 0.6969696969695178 }
+          }
+        },
+        {
+          "ID": "17002",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "299",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1965",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.36363636363637397, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 298.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "17011",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "w": "1",
+          "h": "90",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1283",
+          "y": "1960",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0.48484848484849863 },
+            "p1": { "x": 0.5, "y": 0 },
+            "p2": { "x": 0, "y": 90.75757575757575 }
+          }
+        },
+        {
+          "ID": "17012",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "299",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1982",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.36363636363637397, "y": 0 },
+            "p1": { "x": 0.4999999999999999, "y": 0 },
+            "p2": { "x": 298.62144119843106, "y": 0 }
+          }
+        },
+        {
+          "ID": "17013",
+          "typeID": "Arrow",
+          "zOrder": "127",
+          "w": "1",
+          "h": "521",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1984",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.4999999999999998, "y": 0 },
+            "p2": { "x": -0.33333333333337123, "y": 520.6666666666665 }
+          }
+        },
+        {
+          "ID": "17024",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "149",
+          "h": "3",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "623",
+          "y": "2277",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.33333333333337123, "y": 0 },
+            "p1": { "x": 0.49999999999999983, "y": 2.5481688802362523e-18 },
+            "p2": { "x": 149, "y": 2.666666666666515 }
+          }
+        },
+        {
+          "ID": "17025",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "143",
+          "h": "133",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "643",
+          "y": "2131",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": -0.33333333333337123, "y": -0.3333333333334849 },
+            "p1": { "x": 0.4993418969309351, "y": -0.07823132915278162 },
+            "p2": { "x": 143, "y": 132.33333333333348 }
+          }
+        },
+        {
+          "ID": "17026",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "125",
+          "h": "92",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "636",
+          "y": "2172",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49934189693093495, "y": -0.07823132915278168 },
+            "p2": { "x": 125.33333333333337, "y": 92 }
+          }
+        },
+        {
+          "ID": "17027",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "117",
+          "h": "41",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "641",
+          "y": "2227",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "stroke": "dotted",
+            "p0": { "x": 0.33333333333337123, "y": -0.3333333333334849 },
+            "p1": { "x": 0.49934189693093545, "y": -0.07823132915278307 },
+            "p2": { "x": 117.66666666666663, "y": 41 }
+          }
+        },
+        {
+          "ID": "17028",
+          "typeID": "Arrow",
+          "zOrder": "133",
+          "w": "1",
+          "h": "81",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "2534",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": { "x": 0, "y": 0 },
+            "p1": { "x": 0.49999999999999994, "y": 0 },
+            "p2": { "x": 0, "y": 81.09090909090901 }
+          }
+        },
+        {
+          "ID": "17029",
+          "typeID": "TextArea",
+          "zOrder": "134",
+          "w": "438",
+          "h": "118",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "620",
+          "y": "2448"
+        },
+        {
+          "ID": "17030",
+          "typeID": "Label",
+          "zOrder": "135",
+          "measuredW": "366",
+          "measuredH": "25",
+          "x": "657",
+          "y": "2467",
+          "properties": { "size": "17", "text": "Continue Learning with following relevant tracks" }
+        },
+        {
+          "ID": "17031",
+          "typeID": "__group__",
+          "zOrder": "136",
+          "measuredW": "198",
+          "measuredH": "44",
+          "w": "198",
+          "h": "44",
+          "x": "844",
+          "y": "2504",
+          "properties": { "controlName": "ext_link:roadmap.sh/backend" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "198",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "147",
+                  "measuredH": "25",
+                  "x": "25",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Backend Roadmap" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17032",
+          "typeID": "__group__",
+          "zOrder": "137",
+          "measuredW": "198",
+          "measuredH": "44",
+          "w": "198",
+          "h": "44",
+          "x": "636",
+          "y": "2504",
+          "properties": { "controlName": "ext_link:roadmap.sh/devops" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "198",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "141",
+                  "measuredH": "25",
+                  "x": "28",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "DevOps Roadmap" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17033",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "207",
+          "measuredH": "47",
+          "w": "207",
+          "h": "47",
+          "x": "715",
+          "y": "333",
+          "properties": { "controlName": "100-kubernetes-introduction" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "207",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "93",
+                  "measuredH": "25",
+                  "x": "57",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Introduction" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17034",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "302",
+          "y": "311",
+          "properties": { "controlName": "100-kubernetes-introduction:what-is-kubernetes" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "184",
+                  "measuredH": "25",
+                  "x": "66",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Overview of Kubernetes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17035",
+          "typeID": "__group__",
+          "zOrder": "48",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "302",
+          "y": "360",
+          "properties": { "controlName": "101-kubernetes-introduction:concepts-and-terminologies" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "251",
+                  "measuredH": "25",
+                  "x": "32",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Key Concepts and Terminologies" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17036",
+          "typeID": "__group__",
+          "zOrder": "57",
+          "measuredW": "377",
+          "measuredH": "44",
+          "w": "377",
+          "h": "44",
+          "x": "1012",
+          "y": "335",
+          "properties": { "controlName": "102-kubernetes-introduction:kubernetes-vs-other-container-orchestration-tools" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "377",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "309",
+                  "measuredH": "25",
+                  "x": "34",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Kubernetes vs other Orchestration Tools" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17037",
+          "typeID": "__group__",
+          "zOrder": "58",
+          "measuredW": "307",
+          "measuredH": "47",
+          "w": "307",
+          "h": "47",
+          "x": "303",
+          "y": "468",
+          "properties": { "controlName": "101-cluster-setup-and-configuration" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "307",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "245",
+                  "measuredH": "25",
+                  "x": "31",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Cluster Setup and Configuration" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17038",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "740",
+          "y": "478",
+          "properties": { "controlName": "102-pods-and-replication" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "163",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Pods and Replication" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17039",
+          "typeID": "__group__",
+          "zOrder": "72",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "740",
+          "y": "653",
+          "properties": { "controlName": "103-services-and-networking" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "192",
+                  "measuredH": "25",
+                  "x": "26",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Services and Networking" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17040",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "740",
+          "y": "898",
+          "properties": { "controlName": "104-configmaps-and-secrets" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "189",
+                  "measuredH": "25",
+                  "x": "27",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "ConfigMaps and Secrets" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17041",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "309",
+          "measuredH": "47",
+          "w": "309",
+          "h": "47",
+          "x": "1110",
+          "y": "898",
+          "properties": { "controlName": "105-storage-and-volumes" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "309",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "163",
+                  "measuredH": "25",
+                  "x": "73",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Storage and Volumes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17042",
+          "typeID": "__group__",
+          "zOrder": "86",
+          "measuredW": "322",
+          "measuredH": "47",
+          "w": "322",
+          "h": "47",
+          "x": "1105",
+          "y": "1160",
+          "properties": { "controlName": "106-resource-management-and-quotas" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "322",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "275",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Resource Management and Quotas" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17044",
+          "typeID": "__group__",
+          "zOrder": "95",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "376",
+          "y": "1160",
+          "properties": { "controlName": "108-monitoring-and-logging" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "183",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Monitoring and Logging" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17045",
+          "typeID": "__group__",
+          "zOrder": "99",
+          "measuredW": "270",
+          "measuredH": "47",
+          "w": "270",
+          "h": "47",
+          "x": "349",
+          "y": "1407",
+          "properties": { "controlName": "109-scheduling-and-management" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "270",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "209",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Scheduling & Management" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17046",
+          "typeID": "__group__",
+          "zOrder": "105",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "735",
+          "y": "1489",
+          "properties": { "controlName": "110-stateful-applications" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "157",
+                  "measuredH": "25",
+                  "x": "43",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Stateful Applications" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17047",
+          "typeID": "__group__",
+          "zOrder": "109",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "1123",
+          "y": "1631",
+          "properties": { "controlName": "111-deployment-patterns" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "161",
+                  "measuredH": "25",
+                  "x": "43",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Deployment Patterns" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17048",
+          "typeID": "__group__",
+          "zOrder": "115",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "735",
+          "y": "1766",
+          "properties": { "controlName": "112-advanced-topics" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "130",
+                  "measuredH": "25",
+                  "x": "57",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Advanced Topics" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17049",
+          "typeID": "__group__",
+          "zOrder": "121",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "1124",
+          "y": "1949",
+          "properties": { "controlName": "113-kubernetes-best-practices" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "206",
+                  "measuredH": "25",
+                  "x": "19",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Kubernetes Best Practices" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17050",
+          "typeID": "__group__",
+          "zOrder": "128",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "735",
+          "y": "2252",
+          "properties": { "controlName": "114-kubernetes-in-production" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "195",
+                  "measuredH": "25",
+                  "x": "24",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Kubernetes in Production" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17052",
+          "typeID": "__group__",
+          "zOrder": "64",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "558",
+          "properties": { "controlName": "100-cluster-setup-and-configuration:setting-up-a-cluster" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "152",
+                  "measuredH": "25",
+                  "x": "77",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Setting up a Cluster" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17053",
+          "typeID": "__group__",
+          "zOrder": "65",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "606",
+          "properties": { "controlName": "101-cluster-setup-and-configuration:configuring-nodes" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "259",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Configuring and Managing Nodes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17054",
+          "typeID": "__group__",
+          "zOrder": "66",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "654",
+          "properties": { "controlName": "102-cluster-setup-and-configuration:cluster-networking" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "179",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Networking in a Cluster" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17055",
+          "typeID": "__group__",
+          "zOrder": "42",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "702",
+          "properties": { "controlName": "103-cluster-setup-and-configuration:cluster-federation" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "144",
+                  "measuredH": "25",
+                  "x": "81",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Cluster Federation" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17056",
+          "typeID": "__group__",
+          "zOrder": "67",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "749",
+          "properties": { "controlName": "104-cluster-setup-and-configuration:multi-cluster-management" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "203",
+                  "measuredH": "25",
+                  "x": "51",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Multi-cluster Management" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17057",
+          "typeID": "__group__",
+          "zOrder": "68",
+          "measuredW": "359",
+          "measuredH": "44",
+          "w": "359",
+          "h": "44",
+          "x": "1084",
+          "y": "406",
+          "properties": { "controlName": "103-pods-and-replication:pods-and-their-role" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "359",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "263",
+                  "measuredH": "25",
+                  "x": "48",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Pods and their Role in Kubernetes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17058",
+          "typeID": "__group__",
+          "zOrder": "69",
+          "measuredW": "359",
+          "measuredH": "44",
+          "w": "359",
+          "h": "44",
+          "x": "1084",
+          "y": "455",
+          "properties": { "controlName": "104-pods-and-replication:creating-and-managing-pods" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "359",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "224",
+                  "measuredH": "25",
+                  "x": "68",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Creating and Managing Pods" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17059",
+          "typeID": "__group__",
+          "zOrder": "70",
+          "measuredW": "359",
+          "measuredH": "44",
+          "w": "359",
+          "h": "44",
+          "x": "1084",
+          "y": "504",
+          "properties": { "controlName": "105-pods-and-replication:replication-and-scaling" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "359",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "181",
+                  "measuredH": "25",
+                  "x": "89",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Replication and Scaling" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17060",
+          "typeID": "__group__",
+          "zOrder": "71",
+          "measuredW": "359",
+          "measuredH": "44",
+          "w": "359",
+          "h": "44",
+          "x": "1084",
+          "y": "553",
+          "properties": { "controlName": "106-pods-and-replication:deployment-strategies" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "359",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "318",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Deployment Strategies & Rolling Updates" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17061",
+          "typeID": "__group__",
+          "zOrder": "73",
+          "measuredW": "333",
+          "measuredH": "44",
+          "w": "333",
+          "h": "44",
+          "x": "1110",
+          "y": "653",
+          "properties": { "controlName": "100-services-and-networking:networking-pods-and-communication" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "333",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "270",
+                  "measuredH": "25",
+                  "x": "32",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Networking & Pods Communication" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17062",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "333",
+          "measuredH": "44",
+          "w": "333",
+          "h": "44",
+          "x": "1110",
+          "y": "702",
+          "properties": { "controlName": "101-services-and-networking:understanding-and-using-services" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "333",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "263",
+                  "measuredH": "25",
+                  "x": "35",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Understanding and using services" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17063",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "333",
+          "measuredH": "44",
+          "w": "333",
+          "h": "44",
+          "x": "1110",
+          "y": "751",
+          "properties": { "controlName": "102-services-and-networking:network-load-balancing-with-services" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "333",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "284",
+                  "measuredH": "25",
+                  "x": "25",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Network load balancing with services" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17064",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "333",
+          "measuredH": "44",
+          "w": "333",
+          "h": "44",
+          "x": "1110",
+          "y": "800",
+          "properties": { "controlName": "103-services-and-networking:external-access-to-services" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "333",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "211",
+                  "measuredH": "25",
+                  "x": "61",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "External access to services" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17065",
+          "typeID": "__group__",
+          "zOrder": "78",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "849",
+          "properties": { "controlName": "100-configmaps-and-secrets:config-management-and-config-maps" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "269",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Config Management & ConfigMaps" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17066",
+          "typeID": "__group__",
+          "zOrder": "79",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "898",
+          "properties": { "controlName": "101-configmaps-and-secrets:using-secrets" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "247",
+                  "measuredH": "25",
+                  "x": "29",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Using Secrets for Sensitive Data" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17067",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "305",
+          "measuredH": "44",
+          "w": "305",
+          "h": "44",
+          "x": "302",
+          "y": "947",
+          "properties": { "controlName": "102-configmaps-and-secrets:usage-in-pods-and-controllers" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "234",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Usage in Pods and Controllers" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17068",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "290",
+          "measuredH": "44",
+          "w": "290",
+          "h": "44",
+          "x": "1173",
+          "y": "983",
+          "properties": { "controlName": "100-storage-and-volumes:storage-options" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "290",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "237",
+                  "measuredH": "25",
+                  "x": "26",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Storage Options in Kubernetes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17069",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "290",
+          "measuredH": "44",
+          "w": "290",
+          "h": "44",
+          "x": "1173",
+          "y": "1032",
+          "properties": { "controlName": "101-storage-and-volumes:persistent-storage" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "290",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "254",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Persistent Storage in Kubernetes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17070",
+          "typeID": "__group__",
+          "zOrder": "84",
+          "measuredW": "290",
+          "measuredH": "44",
+          "w": "290",
+          "h": "44",
+          "x": "1173",
+          "y": "1080",
+          "properties": { "controlName": "102-storage-and-volumes:volumes" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "290",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "248",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Volumes in Pods and Containers" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17071",
+          "typeID": "__group__",
+          "zOrder": "87",
+          "measuredW": "323",
+          "measuredH": "44",
+          "w": "323",
+          "h": "44",
+          "x": "1139",
+          "y": "1239",
+          "properties": { "controlName": "100-resource-management-and-quotas:resource-consumption-and-limits" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "323",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "265",
+                  "measuredH": "25",
+                  "x": "29",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Resource Consumption and Limits" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17072",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "323",
+          "measuredH": "44",
+          "w": "323",
+          "h": "44",
+          "x": "1139",
+          "y": "1287",
+          "properties": { "controlName": "101-resource-management-and-quotas:assigning-namespace-quotas" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "323",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "260",
+                  "measuredH": "25",
+                  "x": "32",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Assigning Quotas to Namespaces" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17073",
+          "typeID": "__group__",
+          "zOrder": "89",
+          "measuredW": "323",
+          "measuredH": "44",
+          "w": "323",
+          "h": "44",
+          "x": "1139",
+          "y": "1337",
+          "properties": {
+            "controlName": "102-resource-management-and-quotas:resource-usage-and-performance-monitoring"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "323",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "290",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Resource Usage and Perf. Monitoring" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17076",
+          "typeID": "__group__",
+          "zOrder": "90",
+          "measuredW": "243",
+          "measuredH": "47",
+          "w": "243",
+          "h": "47",
+          "x": "740",
+          "y": "1160",
+          "properties": { "controlName": "107-kubernetes-security" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "243",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16776960" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "62",
+                  "measuredH": "25",
+                  "x": "91",
+                  "y": "11",
+                  "properties": { "size": "17", "text": "Security" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17077",
+          "typeID": "__group__",
+          "zOrder": "91",
+          "measuredW": "308",
+          "measuredH": "44",
+          "w": "308",
+          "h": "44",
+          "x": "715",
+          "y": "1027",
+          "properties": { "controlName": "100-kubernetes-security:securing-a-kubernetes-cluster" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "308",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "233",
+                  "measuredH": "25",
+                  "x": "37",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Securing a Kubernetes cluster" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17078",
+          "typeID": "__group__",
+          "zOrder": "92",
+          "measuredW": "308",
+          "measuredH": "44",
+          "w": "308",
+          "h": "44",
+          "x": "715",
+          "y": "1077",
+          "properties": { "controlName": "101-kubernetes-security:role-based-access-control" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "308",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "269",
+                  "measuredH": "25",
+                  "x": "19",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Role-based access control (RBAC)" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17079",
+          "typeID": "__group__",
+          "zOrder": "93",
+          "measuredW": "270",
+          "measuredH": "44",
+          "w": "270",
+          "h": "44",
+          "x": "722",
+          "y": "1242",
+          "properties": { "controlName": "102-kubernetes-security:cluster-and-network-security" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "270",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "223",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Cluster and Network Security" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17081",
+          "typeID": "__group__",
+          "zOrder": "94",
+          "measuredW": "270",
+          "measuredH": "44",
+          "w": "270",
+          "h": "44",
+          "x": "722",
+          "y": "1291",
+          "properties": { "controlName": "103-kubernetes-security:container-and-pod-security" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "270",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "210",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Container and Pod Security" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17082",
+          "typeID": "__group__",
+          "zOrder": "97",
+          "measuredW": "301",
+          "measuredH": "44",
+          "w": "301",
+          "h": "44",
+          "x": "257",
+          "y": "1028",
+          "properties": { "controlName": "100-monitoring-and-logging:cluster-and-pod-health-monitoring" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "301",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "265",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Cluster and Pod Health Monitoring" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17083",
+          "typeID": "__group__",
+          "zOrder": "96",
+          "measuredW": "301",
+          "measuredH": "44",
+          "w": "301",
+          "h": "44",
+          "x": "257",
+          "y": "1076",
+          "properties": { "controlName": "101-monitoring-and-logging:log-collection-and-analysis" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "301",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "211",
+                  "measuredH": "25",
+                  "x": "45",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Log Collection and Analysis" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17084",
+          "typeID": "__group__",
+          "zOrder": "98",
+          "measuredW": "301",
+          "measuredH": "77",
+          "w": "301",
+          "h": "77",
+          "x": "257",
+          "y": "1251",
+          "properties": { "controlName": "102-monitoring-and-logging:monitoring-tools-setup" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "301",
+                  "h": "77",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "273",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "12",
+                  "properties": { "size": "17", "text": "Monitoring Tools Setup / Usage e.g." }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "272",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "41",
+                  "properties": { "size": "17", "text": "Prometheus, Fluentd, ElasticSearch" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17085",
+          "typeID": "__group__",
+          "zOrder": "100",
+          "measuredW": "336",
+          "measuredH": "44",
+          "w": "336",
+          "h": "44",
+          "x": "255",
+          "y": "1526",
+          "properties": { "controlName": "100-scheduling-and-management:scheduling-pods-on-nodes" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "336",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "207",
+                  "measuredH": "25",
+                  "x": "64",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Scheduling Pods on Nodes" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17086",
+          "typeID": "__group__",
+          "zOrder": "101",
+          "measuredW": "336",
+          "measuredH": "44",
+          "w": "336",
+          "h": "44",
+          "x": "255",
+          "y": "1576",
+          "properties": { "controlName": "101-scheduling-and-management:configuring-taints-and-tolerations" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "336",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "260",
+                  "measuredH": "25",
+                  "x": "38",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Configuring Taints and Tolerations" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17087",
+          "typeID": "__group__",
+          "zOrder": "102",
+          "measuredW": "336",
+          "measuredH": "44",
+          "w": "336",
+          "h": "44",
+          "x": "255",
+          "y": "1625",
+          "properties": { "controlName": "102-scheduling-and-management:automated-scheduling-and-self-healing" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "336",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "300",
+                  "measuredH": "25",
+                  "x": "18",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Automated scheduling and self-healing" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17088",
+          "typeID": "__group__",
+          "zOrder": "103",
+          "measuredW": "336",
+          "measuredH": "44",
+          "w": "336",
+          "h": "44",
+          "x": "255",
+          "y": "1674",
+          "properties": { "controlName": "103-scheduling-and-management:managing-and-upgrading-cluster" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "336",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "279",
+                  "measuredH": "25",
+                  "x": "28",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Managing and upgrading the cluster" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17089",
+          "typeID": "__group__",
+          "zOrder": "106",
+          "measuredW": "351",
+          "measuredH": "44",
+          "w": "351",
+          "h": "44",
+          "x": "1123",
+          "y": "1441",
+          "properties": { "controlName": "100-stateful-applications:stateful-vs-stateless-apps" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "351",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "198",
+                  "measuredH": "25",
+                  "x": "77",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Stateful vs Stateless Apps" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17090",
+          "typeID": "__group__",
+          "zOrder": "107",
+          "measuredW": "351",
+          "measuredH": "44",
+          "w": "351",
+          "h": "44",
+          "x": "1123",
+          "y": "1490",
+          "properties": { "controlName": "101-stateful-applications:statefulset-patterns-and-usecases" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "351",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "268",
+                  "measuredH": "25",
+                  "x": "42",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "StatefulSet Patterns and Usecases" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17091",
+          "typeID": "__group__",
+          "zOrder": "108",
+          "measuredW": "351",
+          "measuredH": "44",
+          "w": "351",
+          "h": "44",
+          "x": "1123",
+          "y": "1538",
+          "properties": { "controlName": "102-stateful-applications:persistent-storage-and-network-identity" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "351",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "304",
+                  "measuredH": "25",
+                  "x": "24",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Persistent Storage and Network identity" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17092",
+          "typeID": "__group__",
+          "zOrder": "110",
+          "measuredW": "267",
+          "measuredH": "44",
+          "w": "267",
+          "h": "44",
+          "x": "1207",
+          "y": "1726",
+          "properties": { "controlName": "100-deployment-patterns:blue-green-deployment" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "267",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "187",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Blue-Green Deployment" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17093",
+          "typeID": "__group__",
+          "zOrder": "111",
+          "measuredW": "267",
+          "measuredH": "44",
+          "w": "267",
+          "h": "44",
+          "x": "1207",
+          "y": "1776",
+          "properties": { "controlName": "101-deployment-patterns:canary-deployment" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "267",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "151",
+                  "measuredH": "25",
+                  "x": "58",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Canary Deployment" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17094",
+          "typeID": "__group__",
+          "zOrder": "112",
+          "measuredW": "267",
+          "measuredH": "44",
+          "w": "267",
+          "h": "44",
+          "x": "1207",
+          "y": "1825",
+          "properties": { "controlName": "102-deployment-patterns:ab-testing" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "267",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "90",
+                  "measuredH": "25",
+                  "x": "89",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "A/B Testing" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17095",
+          "typeID": "__group__",
+          "zOrder": "113",
+          "measuredW": "267",
+          "measuredH": "44",
+          "w": "267",
+          "h": "44",
+          "x": "1207",
+          "y": "1874",
+          "properties": { "controlName": "103-deployment-patterns:rolling-update-and-rollback" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "267",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "219",
+                  "measuredH": "25",
+                  "x": "24",
+                  "y": "9",
+                  "properties": { "size": "17", "text": "Rolling Update and Rollback" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17096",
+          "typeID": "__group__",
+          "zOrder": "116",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "276",
+          "y": "1766",
+          "properties": { "controlName": "100-advanced-topics:custom-controllers" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "219",
+                  "measuredH": "25",
+                  "x": "48",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Creating Custom Controllers" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17097",
+          "typeID": "__group__",
+          "zOrder": "117",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "276",
+          "y": "1816",
+          "properties": { "controlName": "101-advanced-topics:custom-schedulers-and-extenders" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "263",
+                  "measuredH": "25",
+                  "x": "26",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Custom schedulers and extenders" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17098",
+          "typeID": "__group__",
+          "zOrder": "118",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "276",
+          "y": "1866",
+          "properties": { "controlName": "102-advanced-topics:custom-resource-definitions" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "277",
+                  "measuredH": "25",
+                  "x": "19",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Custom resource definitions (CRDs)" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17099",
+          "typeID": "__group__",
+          "zOrder": "119",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "276",
+          "y": "1916",
+          "properties": { "controlName": "103-advanced-topics:kubernetes-extensions-and-apis" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "250",
+                  "measuredH": "25",
+                  "x": "33",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Kubernetes extensions and APIs" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17100",
+          "typeID": "__group__",
+          "zOrder": "120",
+          "measuredW": "316",
+          "measuredH": "44",
+          "w": "316",
+          "h": "44",
+          "x": "276",
+          "y": "1965",
+          "properties": { "controlName": "104-advanced-topics:integration-with-ci-cd-pipelines" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "316",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "247",
+                  "measuredH": "25",
+                  "x": "34",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Integration with CI/CD pipelines" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17101",
+          "typeID": "__group__",
+          "zOrder": "122",
+          "measuredW": "286",
+          "measuredH": "44",
+          "w": "286",
+          "h": "44",
+          "x": "1188",
+          "y": "2030",
+          "properties": { "controlName": "100-kubernetes-best-practices:architecture-and-design" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "186",
+                  "measuredH": "25",
+                  "x": "50",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Architecture and Design" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17102",
+          "typeID": "__group__",
+          "zOrder": "123",
+          "measuredW": "286",
+          "measuredH": "44",
+          "w": "286",
+          "h": "44",
+          "x": "1188",
+          "y": "2080",
+          "properties": { "controlName": "101-kubernetes-best-practices:performance-and-scalability" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "214",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Performance and Scalability" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17103",
+          "typeID": "__group__",
+          "zOrder": "124",
+          "measuredW": "286",
+          "measuredH": "44",
+          "w": "286",
+          "h": "44",
+          "x": "1188",
+          "y": "2129",
+          "properties": { "controlName": "102-kubernetes-best-practices:security-best-practices" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "175",
+                  "measuredH": "25",
+                  "x": "55",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Security best practices" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17104",
+          "typeID": "__group__",
+          "zOrder": "125",
+          "measuredW": "286",
+          "measuredH": "44",
+          "w": "286",
+          "h": "44",
+          "x": "1188",
+          "y": "2178",
+          "properties": { "controlName": "103-kubernetes-best-practices:cluster-management" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "162",
+                  "measuredH": "25",
+                  "x": "62",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Cluster Management" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17105",
+          "typeID": "__group__",
+          "zOrder": "126",
+          "measuredW": "286",
+          "measuredH": "44",
+          "w": "286",
+          "h": "44",
+          "x": "1188",
+          "y": "2227",
+          "properties": { "controlName": "104-kubernetes-best-practices:troubleshooting-and-debugging" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "286",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "244",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Troubleshooting and debugging" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17106",
+          "typeID": "__group__",
+          "zOrder": "129",
+          "measuredW": "392",
+          "measuredH": "44",
+          "w": "392",
+          "h": "44",
+          "x": "255",
+          "y": "2111",
+          "properties": { "controlName": "100-kubernetes-in-production:managing-production-workloads" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "392",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "362",
+                  "measuredH": "25",
+                  "x": "15",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Deploying and managing Production Workloads" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17107",
+          "typeID": "__group__",
+          "zOrder": "130",
+          "measuredW": "392",
+          "measuredH": "44",
+          "w": "392",
+          "h": "44",
+          "x": "255",
+          "y": "2159",
+          "properties": { "controlName": "101-kubernetes-in-production:cluster-and-application-scaling" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "392",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "239",
+                  "measuredH": "25",
+                  "x": "76",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Cluster and Application Scaling" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17108",
+          "typeID": "__group__",
+          "zOrder": "131",
+          "measuredW": "392",
+          "measuredH": "44",
+          "w": "392",
+          "h": "44",
+          "x": "255",
+          "y": "2207",
+          "properties": { "controlName": "102-kubernetes-in-production:monitoring-and-managing-cluster-performance" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "392",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "361",
+                  "measuredH": "25",
+                  "x": "15",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Monitoring and Managing Cluster Performance" }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "17109",
+          "typeID": "__group__",
+          "zOrder": "132",
+          "measuredW": "392",
+          "measuredH": "44",
+          "w": "392",
+          "h": "44",
+          "x": "255",
+          "y": "2255",
+          "properties": { "controlName": "103-kubernetes-in-production:upgrading-cluster-and-applications" },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "392",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": { "color": "16770457" }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "302",
+                  "measuredH": "25",
+                  "x": "45",
+                  "y": "10",
+                  "properties": { "size": "17", "text": "Upgrading the cluster and Applications." }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "attributes": { "name": "New Wireframe 1 copy 4", "order": 1000019.1097559511, "parentID": null, "notes": "" },
+    "branchID": "Master",
+    "resourceID": "E1CB7BE6-6915-47A7-A0F5-139EC887D1A8",
+    "mockupH": "2520",
+    "mockupW": "1219",
+    "measuredW": "1474",
+    "measuredH": "2615",
+    "version": "1.0"
+  },
+  "groupOffset": { "x": 0, "y": 0 },
+  "dependencies": [],
+  "projectID": "file:///Users/kamranahmed/Desktop/devops%20roadmap%5C.bmpr"
+}

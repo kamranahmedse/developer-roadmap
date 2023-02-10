@@ -5,8 +5,8 @@ export interface RoadmapFrontmatter {
   jsonUrl: string;
   pdfUrl: string;
   order: number;
-  featuredTitle: string;
-  featuredDescription: string;
+  briefTitle: string;
+  briefDescription: string;
   title: string;
   description: string;
   hasTopics: boolean;

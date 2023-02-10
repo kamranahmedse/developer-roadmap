@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/devops.json"
 pdfUrl: "/pdfs/roadmaps/devops.pdf"
 order: 3
-featuredTitle: "DevOps"
-featuredDescription: "Step by step guide for DevOps or operations role in 2023"
+briefTitle: "DevOps"
+briefDescription: "Step by step guide for DevOps or operations role in 2023"
 title: "DevOps Roadmap"
 description: "Step by step guide for DevOps, SRE or any other Operations Role in 2023"
 hasTopics: true
@@ -17,14 +17,14 @@ schema:
   datePublished: "2023-01-05"
   dateModified: "2023-01-20"
 sponsor:
-  url: "https://www.tigera.io/lp/kubernetes-security-and-observability-ebook/?utm_campaign=O%27Reilly-book-final-release&utm_medium=web&utm_source=Insight-Partners-popup"
-  title: "Free eBook"
-  imageUrl: "/images/devops-ebook.png"
-  description: "Learn how to secure and troubleshoot your cloud-native applications with this free eBook."
+  url: "https://kubecampus.io/?utm_source=NewStack&utm_medium=email&utm_campaign=devops"
+  title: "Learn Kubernetes"
+  imageUrl: "/images/partners/kubecampus.png"
+  description: "Free Kubernetes courses to learn basic or advanced Kubernetes skills at your own pace."
   event:
     category: "SponsorClick"
-    action: "Tigera EBook Redirect"
-    label: "Clicked Tigera EBook Link"
+    action: "KubeCampus Courses Redirect"
+    label: "Clicked KubeCampus Courses Link"
 seo:
   title: "DevOps Roadmap: Learn to become a DevOps Engineer or SRE"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."

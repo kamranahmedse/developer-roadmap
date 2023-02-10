@@ -1,0 +1,1 @@
+# Upgrading cluster and applications

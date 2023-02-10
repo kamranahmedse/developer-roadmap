@@ -1,7 +1,7 @@
 ---
 order: 12
-featuredTitle: "Cyber Security"
-featuredDescription: "Step by step guide to becoming a Cyber Security Expert in 2023"
+briefTitle: "Cyber Security"
+briefDescription: "Step by step guide to becoming a Cyber Security Expert in 2023"
 title: "Cyber Security Expert"
 description: "Step by step guide to becoming a Cyber Security developer in 2023"
 isUpcoming: true

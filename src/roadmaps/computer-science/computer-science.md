@@ -2,8 +2,8 @@
 jsonUrl: "/jsons/roadmaps/computer-science.json"
 pdfUrl: "/pdfs/roadmaps/computer-science.pdf"
 order: 1
-featuredTitle: "Computer Science"
-featuredDescription: "Curriculum with free resources for a self-taught developer."
+briefTitle: "Computer Science"
+briefDescription: "Curriculum with free resources for a self-taught developer."
 title: "Computer Science"
 description: "Computer Science curriculum with free resources for a self-taught developer."
 isNew: true

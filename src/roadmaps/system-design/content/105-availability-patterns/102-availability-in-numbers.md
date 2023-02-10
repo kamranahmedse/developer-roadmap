@@ -7,10 +7,10 @@ Availability is often quantified by uptime (or downtime) as a percentage of time
 ```
 Duration           | Acceptable downtime
 -------------      | -------------      
-Downtime per year  | 8h 45min 57s       
-Downtime per month | 43m 49.7s          
+Downtime per year  | 8h 41min 38s       
+Downtime per month | 43m 28s          
 Downtime per week  | 10m 4.8s           
-Downtime per day   | 1m 26.4s           
+Downtime per day   | 1m 26s           
 ```
 
 ## 99.99% Availability - Four 9s
@@ -18,9 +18,9 @@ Downtime per day   | 1m 26.4s
 ```
 Duration           | Acceptable downtime
 -------------      | -------------      
-Downtime per year  | 52min 35.7s        
-Downtime per month | 43m 49.7s          
-Downtime per week  | 1m 5s              
+Downtime per year  | 52min 9.8s        
+Downtime per month | 4m 21s         
+Downtime per week  | 1m 0.5s              
 Downtime per day   | 8.6s               
 ```
 
@@ -51,3 +51,4 @@ If both `Foo` and `Bar` each had 99.9% availability, their total availability in
 To learn more, visit the following links:
 
 - [Availability in System Design](https://www.enjoyalgorithms.com/blog/availability-system-design-concept/)
+- [Uptime calculator: How much downtime corresponds to 99.9 % uptime](https://uptime.is/)

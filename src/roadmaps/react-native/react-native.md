@@ -1,7 +1,7 @@
 ---
 order: 11
-featuredTitle: "React Native"
-featuredDescription: "Step by step guide to becoming a React Native Developer in 2023"
+briefTitle: "React Native"
+briefDescription: "Step by step guide to becoming a React Native Developer in 2023"
 title: "React Native Developer"
 description: "Step by step guide to becoming a React Native developer in 2023"
 isUpcoming: true

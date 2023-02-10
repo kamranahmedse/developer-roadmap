@@ -1,0 +1,1 @@
+# Statefulset patterns and usecases
