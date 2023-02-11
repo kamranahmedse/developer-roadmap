@@ -1,1 +1,0 @@
-# Scheduling pods on nodes

@@ -7,6 +7,7 @@ briefDescription: "Step by step guide to becoming a frontend developer in 2023"
 title: "Frontend Developer"
 description: "Step by step guide to becoming a modern frontend developer in 2023"
 hasTopics: true
+tnsBannerLink: "https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
 dimensions:
   width: 968
   height: 2807.36

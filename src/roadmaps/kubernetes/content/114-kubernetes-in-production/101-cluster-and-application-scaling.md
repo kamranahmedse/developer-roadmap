@@ -1,1 +1,0 @@
-# Cluster and application scaling

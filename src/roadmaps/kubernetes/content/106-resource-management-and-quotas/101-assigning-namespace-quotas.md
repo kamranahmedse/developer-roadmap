@@ -1,1 +1,0 @@
-# Assigning namespace quotas

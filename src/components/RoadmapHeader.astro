@@ -11,13 +11,14 @@ export interface Props {
   title: string;
   description: string;
   note?: string;
+  tnsBannerLink?: string;
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
   hasTopics?: boolean;
 }
 
-const { title, description, roadmapId, isUpcoming = false, hasSearch = false, note, hasTopics = false } = Astro.props;
+const { title, description, roadmapId, tnsBannerLink, isUpcoming = false, hasSearch = false, note, hasTopics = false } = Astro.props;
 
 const isRoadmapReady = !isUpcoming;
 ---
@@ -109,7 +110,7 @@ const isRoadmapReady = !isUpcoming;
     </div>
 
     <!-- Desktop: Roadmap Resources - Alert -->
-    {hasTopics && <RoadmapHint roadmapId={roadmapId} />}
+    {hasTopics && <RoadmapHint roadmapId={roadmapId} tnsBannerLink={tnsBannerLink} />}
 
     {hasSearch && <TopicSearch />}
   </div>

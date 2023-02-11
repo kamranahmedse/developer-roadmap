@@ -1,1 +1,0 @@
-# Managing and upgrading cluster
