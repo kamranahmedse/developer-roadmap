@@ -5,3 +5,4 @@ HATEOAS is an acronym for <b>H</b>ypermedia <b>A</b>s <b>T</b>he <b>E</b>ngine <
 Visit the following resources to learn more:
 
 - [Oktane17: Designing Beautiful REST + JSON APIs (3:56 - 5:57)](https://youtu.be/MiOSzpfP1Ww?t=236)
+- [Comparison of hypermedia types](https://sookocheff.com/post/api/on-choosing-a-hypermedia-format/)
