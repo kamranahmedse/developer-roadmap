@@ -48,6 +48,7 @@ seo:
     - "what is sre"
     - "devops quiz"
     - "devops interview questions"
+    - "how to become a devops engineer"
 relatedRoadmaps:
   - "backend"
   - "python"
