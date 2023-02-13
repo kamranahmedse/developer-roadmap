@@ -1,29 +1,19 @@
 # Constructor Overloading
 
-In TypeScript, you can achieve constructor overloading by using multiple constructors with different parameter lists in a single class. When you create an instance of the class, the constructor with the matching parameter list is called. Here's an example:
+In TypeScript, you can achieve constructor overloading by using multiple constructor definitions with different parameter lists in a single class. Given below is the example where we have multiple definitions for the constructor:
 
 ```typescript
-class MyClass {
-  property1: number;
-  property2: string;
-
-  constructor(property1: number) {
-    this.property1 = property1;
-  }
-
-  constructor(property1: number, property2: string) {
-    this.property1 = property1;
-    this.property2 = property2;
+class Point {
+  // Overloads
+  constructor(x: number, y: string);
+  constructor(s: string);
+  constructor(xs: any, y?: any) {
+    // TBD
   }
 }
 ```
 
-In this example, we have two constructors with different parameter lists: constructor(property1: number) and constructor(property1: number, property2: string). When you create an instance of the class, the constructor with the matching parameter list is called:
-
-```typescript
-let myInstance1 = new MyClass(10);
-let myInstance2 = new MyClass(10, "Hello");
-```
+Note that, similar to function overloading, we only have one implementation of the consructor and it's the only the signature that is overloaded.
 
 Learn more from the following resources:
 
