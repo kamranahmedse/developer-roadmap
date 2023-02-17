@@ -15,3 +15,8 @@ Visit the following resources to learn more:
 - [Tuples vs. Lists vs. Sets in Python](https://jerrynsh.com/tuples-vs-lists-vs-sets-in-python/)
 - [Python for Beginners: Lists](https://thenewstack.io/python-for-beginners-lists/)
 - [Python for Beginners: When and How to Use Tuples](https://thenewstack.io/python-for-beginners-when-and-how-to-use-tuples/)
+- [Python List exercises](https://www.w3resource.com/python-exercises/list/)
+- [Python advanced List exercises](https://www.w3resource.com/python-exercises/list-advanced/index.php)
+- [Python Dictionary exercises](https://www.w3resource.com/python-exercises/dictionary/)
+- [Python Tuple exercises](https://www.w3resource.com/python-exercises/tuple/)
+- [Python Sets exercises](https://www.w3resource.com/python-exercises/sets/)
