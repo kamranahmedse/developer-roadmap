@@ -5,5 +5,6 @@ Cypress framework is a JavaScript-based end-to-end testing framework built on to
 Visit the following resources to learn more:
 
 - [Official Website](https://www.cypress.io/)
+- [Official Tutorials](https://learn.cypress.io/)
 - [Official Documentation](https://docs.cypress.io/guides/overview/why-cypress#Other)
 - [Cypress End-to-End Testing](https://www.youtube.com/watch?v=7N63cMKosIE)
