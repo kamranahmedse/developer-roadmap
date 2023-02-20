@@ -9,4 +9,4 @@ A custom scheduler extender is similar to a custom scheduler but allows users to
 
 To use a custom scheduler extender, users can add custom scheduler extender name and URL to their pod specification. When a pod is created, the custom scheduler extender controller will evaluate the pod's requirements and select a suitable node for the pod based on the custom scheduling filters and priorities.
 
-Custom schedulers and extenders enable users to customize the scheduling process in Kubernetes, allowing them to optimize workload placement based on their specific 
+Custom schedulers and extenders enable users to customize the scheduling process in Kubernetes, allowing them to optimize workload placement based on their specific requirements.
