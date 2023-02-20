@@ -1,1 +1,2 @@
 # Configuration management
+Kubernetes configuration management is an essential aspect of managing Kubernetes applications. It involves managing the configuration of applications running in a Kubernetes cluster. Configurations in Kubernetes are managed using configuration files. These configuration files contain configuration data such as environment variables, volumes, and secrets.
