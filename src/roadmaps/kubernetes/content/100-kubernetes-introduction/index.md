@@ -1,1 +1,8 @@
 # Kubernetes introduction
+Kubernetes is an open-source container orchestration platform that was developed by Google. It is designed to automate the deployment, scaling, and management of containerized applications across clusters of hosts. Kubernetes provides a platform-agnostic way to deploy and manage applications, making it easier to move applications between different cloud providers or on-premises data centers.
+
+At a high level, Kubernetes operates by grouping containers into logical units called pods, which are then scheduled onto nodes, or servers, in a Kubernetes cluster. Kubernetes provides a rich set of features for managing the lifecycle of these pods, including scaling them up or down based on demand, rolling out updates to them, and restarting them if they fail.
+
+Kubernetes is built around a declarative model, where users specify the desired state of their applications using Kubernetes manifest files, and Kubernetes takes care of bringing the actual state of the application in line with the desired state. This model makes it easy to automate and scale the deployment and management of complex applications.
+
+Kubernetes has become the de facto standard for container orchestration, and is used by organizations of all sizes to manage their containerized workloads. The platform has a large and active community of developers and users who contribute to its development and provide support and guidance to other users.
