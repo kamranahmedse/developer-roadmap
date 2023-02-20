@@ -23,16 +23,21 @@ Install Minikube: You can download and install the latest version of Minikube fr
 
 Start Minikube: After installing Minikube, start it by running the following command in your terminal:
 
-``` minikube start
-
+``` 
+minikube start
+```
 This command creates a new virtual machine and starts a Kubernetes cluster on it.
 
 Check Minikube status: You can check the status of your Minikube cluster by running the following command:
 
-``` minikube status
+``` 
+minikube status
+```
 
 This command shows the IP address of your cluster, the Kubernetes version, and other information.
 
 Interact with the Minikube cluster: Now that your Minikube cluster is up and running, you can interact with it using the kubectl command-line tool. You can run commands such as:
 
-``` kubectl get nodes
+``` 
+kubectl get nodes
+```
