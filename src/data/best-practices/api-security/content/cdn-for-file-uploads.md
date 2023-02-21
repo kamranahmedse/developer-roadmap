@@ -1,0 +1,1 @@
+# Cdn for file uploads

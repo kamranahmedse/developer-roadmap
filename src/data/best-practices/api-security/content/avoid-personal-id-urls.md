@@ -1,0 +1,1 @@
+# Avoid personal id urls

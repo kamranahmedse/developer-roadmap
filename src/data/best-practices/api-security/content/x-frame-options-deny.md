@@ -1,0 +1,1 @@
+# X frame options deny
