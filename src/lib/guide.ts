@@ -44,7 +44,7 @@ function guidePathToId(filePath: string): string {
  * @returns Promisifed guide files
  */
 export async function getAllGuides(): Promise<GuideFileType[]> {
-  const guides = await import.meta.glob<GuideFileType>('/src/guides/*.md', {
+  const guides = await import.meta.glob<GuideFileType>('/src/data/guides/*.md', {
     eager: true,
   });
 

@@ -2,11 +2,11 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 
 async function getRoadmapIds() {
-  return fs.readdir(path.join(process.cwd(), 'src/roadmaps'));
+  return fs.readdir(path.join(process.cwd(), 'src/data/roadmaps'));
 }
 
 async function getBestPracticesIds() {
-  return fs.readdir(path.join(process.cwd(), 'src/best-practices'));
+  return fs.readdir(path.join(process.cwd(), 'src/data/best-practices'));
 }
 
 export function shouldIndexPage(pageUrl) {

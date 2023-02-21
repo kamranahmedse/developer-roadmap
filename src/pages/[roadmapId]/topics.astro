@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 
 const { roadmapId } = Astro.params as Params;
 const topics = await getTopicsByRoadmapId(roadmapId);
-const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
+const roadmapFile = await import(`../../data/roadmaps/${roadmapId}/${roadmapId}.md`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 ---
 

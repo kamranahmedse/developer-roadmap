@@ -2,13 +2,13 @@ import type { MarkdownFileType } from './file';
 import type { RoadmapFrontmatter } from './roadmap';
 
 // Generates URL from the topic file path e.g.
-// -> /src/roadmaps/vue/content/102-ecosystem/102-ssr/101-nuxt-js.md
+// -> /src/data/roadmaps/vue/content/102-ecosystem/102-ssr/101-nuxt-js.md
 //    /vue/ecosystem/ssr/nuxt-js
-// -> /src/roadmaps/vue/content/102-ecosystem
+// -> /src/data/roadmaps/vue/content/102-ecosystem
 //    /vue/ecosystem
 function generateTopicUrl(filePath: string) {
   return filePath
-    .replace('/src/roadmaps/', '/') // Remove the base `/src/roadmaps` from path
+    .replace('/src/data/roadmaps/', '/') // Remove the base `/src/data/roadmaps` from path
     .replace('/content', '') // Remove the `/[roadmapId]/content`
     .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
     .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
@@ -75,7 +75,7 @@ export interface RoadmapTopicFileType {
  * @returns Hashmap containing the topic slug and the topic file content
  */
 export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopicFileType>> {
-  const contentFiles = await import.meta.glob<string>('/src/roadmaps/*/content/**/*.md', {
+  const contentFiles = await import.meta.glob<string>('/src/data/roadmaps/*/content/**/*.md', {
     eager: true,
   });
 
@@ -89,7 +89,7 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
     const [, roadmapId] = filePath.match(/^\/src\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
     const topicUrl = generateTopicUrl(filePath);
 
-    const currentRoadmap = await import(`../roadmaps/${roadmapId}/${roadmapId}.md`);
+    const currentRoadmap = await import(`../data/roadmaps/${roadmapId}/${roadmapId}.md`);
 
     mapping[topicUrl] = {
       url: topicUrl,

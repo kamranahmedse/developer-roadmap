@@ -6,7 +6,7 @@ if (!roadmapId) {
   console.error('Error: roadmapId is required');
 }
 
-const fullPath = path.join(__dirname, `../src/roadmaps/${roadmapId}`);
+const fullPath = path.join(__dirname, `../src/data/roadmaps/${roadmapId}`);
 if (!fs.existsSync(fullPath)) {
   console.error(`Error: path not found: ${fullPath}!`);
   process.exit(1);
