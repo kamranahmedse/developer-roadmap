@@ -86,7 +86,7 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 
-    const [, roadmapId] = filePath.match(/^\/src\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
+    const [, roadmapId] = filePath.match(/^\/src\/data\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
     const topicUrl = generateTopicUrl(filePath);
 
     const currentRoadmap = await import(`../data/roadmaps/${roadmapId}/${roadmapId}.md`);

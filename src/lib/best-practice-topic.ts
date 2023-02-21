@@ -39,7 +39,7 @@ export async function getAllBestPracticeTopicFiles(): Promise<Record<string, Bes
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 
-    const [, bestPracticeId] = filePath.match(/^\/src\/best-practices\/(.+)?\/content\/(.+)?$/) || [];
+    const [, bestPracticeId] = filePath.match(/^\/src\/data\/best-practices\/(.+)?\/content\/(.+)?$/) || [];
     const topicUrl = generateTopicUrl(filePath);
 
     const currentBestPractice = await import(`../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`);
