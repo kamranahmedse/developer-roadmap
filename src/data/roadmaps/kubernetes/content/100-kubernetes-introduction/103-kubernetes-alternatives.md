@@ -1,6 +1,6 @@
 # Kubernetes Alternatives
 
-Kubernetes is a popular open-source container orchestration tool that is widely used for managing and deploying containerized applications. While there are other container orchestration tools available, such as Docker Swarm, Mesos, and Nomad, there are some key differences between Kubernetes and these other tools. Here are some of the main differences:
+Kubernetes is a popular open-source container orchestration tool that is widely used for managing and deploying containerized applications. While there are other container orchestration tools available, such as Docker Swarm, Mesos, and Nomad, there are some key differences between Kubernetes and these other tools and some of them are mentioned below:
 
 - Architecture: Kubernetes is designed as a modular system with many components that work together to provide container orchestration, such as the Kubernetes API server, kubelet, kube-proxy, and etcd.
 - Scalability: Kubernetes is designed to handle large-scale deployments and can scale applications up or down based on demand.
@@ -10,5 +10,5 @@ Kubernetes is a popular open-source container orchestration tool that is widely 
 
 Learn more from the following links:
 
-- [Docker Swarm](https://docs.docker.com/engine/swarm/)
-- [Mesos](https://mesos.apache.org/)
+- [Kubernetes vs. Docker Swarm – A Comparison](https://www.freecodecamp.org/news/kubernetes-vs-docker-swarm-what-is-the-difference/)
+- [Compare Apache Mesos vs. Kubernetes](https://www.techtarget.com/searchitoperations/tip/Compare-container-orchestrators-Apache-Mesos-vs-Kubernetes)
