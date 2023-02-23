@@ -1,12 +1,8 @@
 # Installing a Local Cluster
 
-To install a local Kubernetes cluster, you can use a tool like Minikube or Kind. Here are the steps to install Minikube:
+To install and configure a Kubernetes cluster on CentOS 7 or Ubunto, you would need to setup the prerequisites and requirements for setting up a Kubernetes cluster after which you would be installing the Kubernetes components, including Kubeadm, Kubelet, and Kubectl and then you'll need to connect the master and the worker nodes. Once the connection is established you can check it by deploying application on the cluster.
 
-1. Install a Hypervisor: Minikube requires a hypervisor to run a virtual machine (VM) on your local machine. You can choose from VirtualBox, HyperKit, or KVM.
-2. Install Minikube: Download the latest version of Minikube from the official website and follow the installation instructions for your operating system.
-3. Start the Cluster: Open a terminal window and run the command minikube start. This will start a new virtual machine and create a new Kubernetes cluster.
-4. Verify the Installation: Once the cluster is up and running, you can verify the installation by running kubectl version to check the Kubernetes version and kubectl get nodes to list the nodes in the cluster.
-5. Use the Cluster: You can now use the cluster to deploy and manage containerized applications using Kubernetes. You can create and deploy Docker containers using Kubernetes YAML files and commands.
+Learn more from the following links:
 
-- [Cluster Architecture](https://kubernetes.io/docs/concepts/architecture/)
-- [Understand the Basic Cluster Concepts](https://www.youtube.com/watch?v=8BBDxzJL6fY)
+- [How to Install a Kubernetes Cluster on CentOS 7](https://www.tecmint.com/install-kubernetes-cluster-on-centos-7/)
+- [How To Create a Kubernetes Cluster Using on Ubuntu](https://www.digitalocean.com/community/tutorials/how-to-create-a-kubernetes-cluster-using-kubeadm-on-ubuntu-20-04)
