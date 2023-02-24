@@ -4,5 +4,5 @@ Monitoring and optimizing resource usage in Kubernetes (k8s) is crucial for ensu
 
 Learn more from the following resources:
 
-- [Tools for Monitoring Resources](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/)
+- [Tools for Monitoring Resources - Documentation](https://kubernetes.io/docs/tasks/debug/debug-cluster/resource-usage-monitoring/)
 - [Kubernetes Resource Optimization: Just The Basics](https://sequoia.makes.software/kubernetes-resource-optimization-just-the-basics/)
