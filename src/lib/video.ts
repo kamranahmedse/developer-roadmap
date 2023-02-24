@@ -43,7 +43,7 @@ function videoPathToId(filePath: string): string {
  * @returns Promisifed video files
  */
 export async function getAllVideos(): Promise<VideoFileType[]> {
-  const videos = await import.meta.glob<VideoFileType>('/src/videos/*.md', {
+  const videos = await import.meta.glob<VideoFileType>('/src/data/videos/*.md', {
     eager: true,
   });
 

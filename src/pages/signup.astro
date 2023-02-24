@@ -17,12 +17,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class='mb-2 sm:mb-5 text-left sm:text-center'>
         <h1 class='text-3xl sm:text-5xl font-semibold mb-2 sm:mb-4'>Signup</h1>
         <p class='hidden sm:block text-md text-gray-600'>
-          Register yourself to receive occasional emails about new roadmaps,
-          updates, guides and videos
+          Register yourself to receive occasional emails about new roadmaps, updates, guides and videos
         </p>
         <p class='text-sm block sm:hidden text-gray-600'>
-          Register yourself for occasional updates about roadmaps, guides and
-          videos.
+          Register yourself for occasional updates about roadmaps, guides and videos.
         </p>
       </div>
 
@@ -33,6 +31,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         class='w-full'
         captcha-form
       >
+        <input type='hidden' name='gdpr' value='true' />
+
         <input
           type='email'
           required

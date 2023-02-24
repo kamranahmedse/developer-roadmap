@@ -5,7 +5,7 @@ const { frontmatter = {} } = Astro.props;
 const { title, description, noIndex = false } = frontmatter;
 ---
 
-<BaseLayout title={title} description={description} noIndex={noIndex}>
+<BaseLayout {...frontmatter}>
   <div class='container prose py-12'>
     <slot />
   </div>

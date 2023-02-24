@@ -1,0 +1,39 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
+import { getAllLinkGroups } from '../../../lib/link-group';
+
+export async function getStaticPaths() {
+  const linkGroups = await getAllLinkGroups();
+
+  return linkGroups.flatMap((linkGroup) => {
+    const linkGroupLinks = linkGroup.frontmatter;
+
+    return Object.keys(linkGroupLinks).map((slug) => {
+      return {
+        params: {
+          linkGroupId: linkGroup.id,
+          linkId: slug,
+        },
+        props: {
+          linkGroup,
+        },
+      };
+    });
+  });
+}
+
+const { linkId } = Astro.params;
+const { linkGroup } = Astro.props;
+
+const fullUrl = linkGroup.frontmatter[linkId!];
+---
+
+<SkeletonLayout title='Redirecting..' noIndex={true} redirectUrl={fullUrl}>
+  <div class='p-8'>
+    <h2 class='text-xl font-bold'>Redirecting ..</h2>
+    <p>Click the link below if you are not redirected automatically.</p>
+
+    <p><a href={fullUrl} class='underline text-blue-700'>{fullUrl}</a></p>
+  </div>
+</SkeletonLayout>

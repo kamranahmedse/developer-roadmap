@@ -1,1 +1,0 @@
-# Resource consumption and limits

@@ -2,20 +2,21 @@ import path from 'node:path';
 import fs from 'node:fs/promises';
 
 async function getRoadmapIds() {
-  return fs.readdir(path.join(process.cwd(), 'src/roadmaps'));
+  return fs.readdir(path.join(process.cwd(), 'src/data/roadmaps'));
 }
 
 async function getBestPracticesIds() {
-  return fs.readdir(path.join(process.cwd(), 'src/best-practices'));
+  return fs.readdir(path.join(process.cwd(), 'src/data/best-practices'));
 }
 
-export function shouldIndexPage(page) {
+export function shouldIndexPage(pageUrl) {
   return ![
     'https://roadmap.sh/404',
     'https://roadmap.sh/terms',
     'https://roadmap.sh/privacy',
     'https://roadmap.sh/pdfs',
-  ].includes(page);
+    'https://roadmap.sh/g',
+  ].includes(pageUrl);
 }
 
 export async function serializeSitemap(item) {

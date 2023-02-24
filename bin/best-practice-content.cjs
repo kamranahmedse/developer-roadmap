@@ -3,7 +3,7 @@ const path = require('path');
 
 const CONTENT_DIR = path.join(__dirname, '../content');
 // Directory containing the best-practices
-const BEST_PRACTICE_CONTENT_DIR = path.join(__dirname, '../src/best-practices');
+const BEST_PRACTICE_CONTENT_DIR = path.join(__dirname, '../src/data/best-practices');
 const bestPracticeId = process.argv[2];
 
 const allowedBestPracticeId = fs.readdirSync(BEST_PRACTICE_CONTENT_DIR);

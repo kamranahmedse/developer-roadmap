@@ -1,1 +1,0 @@
-# Blue green deployment

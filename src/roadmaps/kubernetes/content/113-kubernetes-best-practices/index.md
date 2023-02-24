@@ -1,1 +1,0 @@
-# Kubernetes best practices

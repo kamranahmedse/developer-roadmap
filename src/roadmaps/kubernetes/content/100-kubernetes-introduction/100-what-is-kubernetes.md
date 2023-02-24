@@ -1,1 +1,0 @@
-# What is kubernetes

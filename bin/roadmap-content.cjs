@@ -3,7 +3,7 @@ const path = require('path');
 
 const CONTENT_DIR = path.join(__dirname, '../content');
 // Directory containing the roadmaps
-const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/roadmaps');
+const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
 const roadmapId = process.argv[2];
 
 const allowedRoadmapIds = fs.readdirSync(ROADMAP_CONTENT_DIR);
