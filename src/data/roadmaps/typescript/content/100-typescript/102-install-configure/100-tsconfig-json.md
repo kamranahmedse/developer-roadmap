@@ -1,3 +1,4 @@
+# tsconfig.json
 
 tsconfig.json is a configuration file in TypeScript that specifies the compiler options for building your project. It helps the TypeScript compiler understand the structure of your project and how it should be compiled to JavaScript. Some common options include:
 
