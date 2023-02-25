@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 - [Learn Git in 20 Minutes](https://youtu.be/Y9XZQO1n_7c?t=21)
 - [Tutorial: Git for Absolutely Everyone](https://thenewstack.io/tutorial-git-for-absolutely-everyone/)
+- [Interactive Git Branching Guide](https://learngitbranching.js.org/)
