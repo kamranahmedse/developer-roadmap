@@ -7,6 +7,7 @@ tsconfig.json is a configuration file in TypeScript that specifies the compiler 
 - `strict`: enables/disables strict type checking.
 - `outDir`: the directory to output the compiled JavaScript files.
 - `rootDir`: the root directory of the TypeScript files.
+- `include`: an array of file/directory patterns to include in the compilation.
 - `exclude`: an array of file/directory patterns to exclude from the compilation.
 
 Given below is the sample `tsconfig.json` file:
@@ -20,7 +21,8 @@ Given below is the sample `tsconfig.json` file:
     "outDir": "./dist",
     "rootDir": "./src",
     "exclude": ["node_modules"]
-  }
+  },
+  "include": ["src"]
 }
 ```
 
