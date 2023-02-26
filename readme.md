@@ -60,6 +60,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 We have also added a new form of visual content covering best practices:
 
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
+- [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 
 ![](https://i.imgur.com/waxVImv.png)
 

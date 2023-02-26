@@ -1,1 +1,0 @@
-# Setting resource requests and limits

@@ -24,8 +24,8 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapFile = await import(`../../roadmaps/${roadmapId}/${roadmapId}.md`);
-const { faqs: roadmapFAQs = [] } = await import(`../../roadmaps/${roadmapId}/faqs.astro`);
+const roadmapFile = await import(`../../data/roadmaps/${roadmapId}/${roadmapId}.md`);
+const { faqs: roadmapFAQs = [] } = await import(`../../data/roadmaps/${roadmapId}/faqs.astro`);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];
@@ -48,7 +48,7 @@ if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
 
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/roadmaps/${roadmapId}/content`;
+const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps/${roadmapId}/content`;
 ---
 
 <BaseLayout

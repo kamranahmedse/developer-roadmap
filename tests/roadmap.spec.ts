@@ -2,7 +2,7 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { test, expect } from '@playwright/test';
 
-const roadmapIds = fs.readdirSync(path.join(process.cwd(), 'src/roadmaps'));
+const roadmapIds = fs.readdirSync(path.join(process.cwd(), 'src/data/roadmaps'));
 
 test(`roadmaps`, async ({ page }) => {
   await page.goto('/roadmaps');

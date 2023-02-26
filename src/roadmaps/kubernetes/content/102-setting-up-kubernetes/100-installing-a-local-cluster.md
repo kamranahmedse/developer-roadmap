@@ -1,1 +1,0 @@
-# Installing a local cluster

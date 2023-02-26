@@ -1,1 +1,0 @@
-# Vertical pod autoscaler

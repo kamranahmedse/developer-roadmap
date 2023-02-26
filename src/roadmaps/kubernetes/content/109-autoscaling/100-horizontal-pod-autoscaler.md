@@ -1,1 +1,0 @@
-# Horizontal pod autoscaler

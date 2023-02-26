@@ -46,7 +46,7 @@ function bestPracticePathToId(filePath: string): string {
  * @returns string[] Array of best practices file IDs
  */
 export async function getBestPracticeIds() {
-  const bestPracticeFiles = await import.meta.glob<BestPracticeFileType>('/src/best-practices/*/*.md', {
+  const bestPracticeFiles = await import.meta.glob<BestPracticeFileType>('/src/data/best-practices/*/*.md', {
     eager: true,
   });
 
@@ -60,7 +60,7 @@ export async function getBestPracticeIds() {
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
-  const bestPracticeFilesMap = await import.meta.glob<BestPracticeFileType>('/src/best-practices/*/*.md', {
+  const bestPracticeFilesMap = await import.meta.glob<BestPracticeFileType>('/src/data/best-practices/*/*.md', {
     eager: true,
   });
 

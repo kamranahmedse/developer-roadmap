@@ -1,1 +1,0 @@
-# Monitoring and optimizing resource usage

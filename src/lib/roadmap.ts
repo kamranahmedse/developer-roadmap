@@ -55,7 +55,7 @@ function roadmapPathToId(filePath: string): string {
  * @returns string[] Array of roadmap IDs
  */
 export async function getRoadmapIds() {
-  const roadmapFiles = await import.meta.glob<RoadmapFileType>('/src/roadmaps/*/*.md', {
+  const roadmapFiles = await import.meta.glob<RoadmapFileType>('/src/data/roadmaps/*/*.md', {
     eager: true,
   });
 
@@ -69,7 +69,7 @@ export async function getRoadmapIds() {
  * @returns Promisified RoadmapFileType[]
  */
 export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> {
-  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>('/src/roadmaps/*/*.md', {
+  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>('/src/data/roadmaps/*/*.md', {
     eager: true,
   });
 
