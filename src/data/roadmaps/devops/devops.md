@@ -18,14 +18,14 @@ schema:
   datePublished: "2023-01-05"
   dateModified: "2023-01-20"
 sponsor:
-  url: "https://kubecampus.io/?utm_source=NewStack&utm_medium=email&utm_campaign=devops"
-  title: "Learn Kubernetes"
-  imageUrl: "/images/partners/kubecampus.png"
-  description: "Free Kubernetes courses to learn basic or advanced Kubernetes skills at your own pace."
+  url: "https://www.getambassador.io/products/edge-stack-api-gateway?utm_source=roadmap-sh&utm_medium=edge-stack-page&utm_campaign=new-account"
+  title: "Featured Product"
+  imageUrl: "https://i.imgur.com/e5fdI0q.png"
+  description: "Get your Kubernetes API Gateway up and running in 5 minutes with Ambassador Edge Stack!"
   event:
     category: "SponsorClick"
-    action: "KubeCampus Courses Redirect"
-    label: "Clicked KubeCampus Courses Link"
+    action: "Ambassador Product Redirect"
+    label: "Clicked Ambassador Product Link"
 seo:
   title: "DevOps Roadmap: Learn to become a DevOps Engineer or SRE"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."
