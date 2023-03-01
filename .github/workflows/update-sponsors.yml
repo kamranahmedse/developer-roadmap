@@ -20,22 +20,24 @@ jobs:
       - uses: pnpm/action-setup@v2.2.2
         with:
           version: 7.13.4
-      - name: Update the Sponsors
+      - name: Install dependencies
         run: |
           pnpm install
+      - name: Update sponsors
+        run: |
           node bin/update-sponsors.cjs
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
           delete-branch: false
-          branch: "update-sponsors"
-          base: "master"
+          branch: 'update-sponsors'
+          base: 'master'
           labels: |
             sponsors
             automated pr
           reviewers: kamranahmedse
-          commit-message: "chore: update sponsors"
-          title: "Upgrade Sponsor Banners"
+          commit-message: 'chore: update sponsors'
+          title: 'Upgrade Sponsor Banners'
           body: |
             Updates sponsor banners.
             Please review the changes and merge if everything looks good.
