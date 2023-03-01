@@ -37,7 +37,7 @@ jobs:
             automated pr
           reviewers: kamranahmedse
           commit-message: 'chore: update sponsors'
-          title: 'Upgrade Sponsor Banners'
+          title: 'Update Sponsor Banners'
           body: |
             Updates sponsor banners.
             Please review the changes and merge if everything looks good.
