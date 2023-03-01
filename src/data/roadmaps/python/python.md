@@ -17,8 +17,8 @@ sponsor:
   description: "Go from blinking cursor to deployed serverless Python apps in 66 seconds with Fermyon Cloud."
   event:
     category: "SponsorClick"
-    action: "Ambassador Product Redirect"
-    label: "Clicked Ambassador Product Link"
+    action: "Fermyon Redirect"
+    label: "Clicked Fermyon Link"
 schema:
   headline: "Python Roadmap"
   description: "Learn Python with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."

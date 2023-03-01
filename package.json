@@ -32,7 +32,7 @@
     "@playwright/test": "^1.31.1",
     "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^5.0.0",
-    "json-to-pretty-yaml": "^1.2.2",
+    "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0"

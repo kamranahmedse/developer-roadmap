@@ -24,8 +24,8 @@ sponsor:
   description: "Get your Kubernetes API Gateway up and running in 5 minutes with Ambassador Edge Stack!"
   event:
     category: "SponsorClick"
-    action: "Ambassador Product Redirect"
-    label: "Clicked Ambassador Product Link"
+    action: "Ambassador Redirect"
+    label: "Clicked Ambassador Link"
 seo:
   title: "DevOps Roadmap: Learn to become a DevOps Engineer or SRE"
   description: "Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap."

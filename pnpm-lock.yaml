@@ -8,6 +8,7 @@ specifiers:
   astro: ^2.0.15
   astro-compress: ^1.1.34
   gh-pages: ^5.0.0
+  js-yaml: ^4.1.0
   json-to-pretty-yaml: ^1.2.2
   markdown-it: ^13.0.1
   node-html-parser: ^6.1.5
@@ -33,6 +34,7 @@ devDependencies:
   '@playwright/test': 1.31.1
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.2.7
   gh-pages: 5.0.0
+  js-yaml: 4.1.0
   json-to-pretty-yaml: 1.2.2
   markdown-it: 13.0.1
   prettier: 2.8.4
@@ -2719,7 +2721,6 @@ packages:
     hasBin: true
     dependencies:
       argparse: 2.0.1
-    dev: false
 
   /jsesc/2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
