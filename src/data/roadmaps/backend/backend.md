@@ -12,10 +12,10 @@ dimensions:
   width: 968
   height: 2840.4
 sponsor:
-  url: "https://bit.ly/3mcwVVQ"
-  title: "Fermyon Cloud"
-  imageUrl: "https://i.imgur.com/0KFbxGz.png"
-  description: "Go from blinking cursor to deployed serverless app in 66 seconds with Fermyon Cloud."
+  url: "https://www.fermyon.com/spin?utm_source=backend&utm_medium=banner&utm_campaign=roadmap-sh"
+  title: "Severless Backend Apps"
+  imageUrl: "https://i.imgur.com/2ONZopb.jpg"
+  description: "Go from blinking cursor to deployed serverless Backend apps in 66 seconds with Fermyon Cloud."
   event:
     category: "SponsorClick"
     action: "Ambassador Product Redirect"

@@ -12,14 +12,14 @@ dimensions:
   width: 968
   height: 2438.9
 sponsor:
-  url: "https://bit.ly/3kvg4NJ"
-  title: "Fermyon Cloud"
-  imageUrl: "https://i.imgur.com/0KFbxGz.png"
-  description: "Go from blinking cursor to deployed serverless app in 66 seconds with Fermyon Cloud."
+  url: "https://www.fermyon.com/spin?utm_source=javascript&utm_medium=banner&utm_campaign=roadmap-sh"
+  title: "Serverless JavaScript Apps"
+  imageUrl: "https://i.imgur.com/2ONZopb.jpg"
+  description: "Go from blinking cursor to deployed serverless JavaScript apps in 66 seconds with Fermyon Cloud."
   event:
     category: "SponsorClick"
-    action: "Ambassador Product Redirect"
-    label: "Clicked Ambassador Product Link"
+    action: "Fermyon Product Redirect"
+    label: "Clicked Fermyon Product Link"
 schema:
   headline: "JavaScript Roadmap"
   description: "Learn JavaScript with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
