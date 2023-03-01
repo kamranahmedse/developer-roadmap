@@ -23,7 +23,7 @@ jobs:
       - name: Update the Sponsors
         run: |
           pnpm install
-          node bin/roadmap-ads.cjs
+          node bin/update-sponsors.cjs
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:

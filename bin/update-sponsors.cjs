@@ -51,25 +51,34 @@ function populateRoadmapAds({
   const existingFrontmatter = roadmapFileContent.match(frontMatterRegex)[1];
   const contentWithoutFrontmatter = roadmapFileContent.replace(frontMatterRegex, ``).trim();
 
-  const yamlObject = yaml.load(existingFrontmatter);
+  let fronmatterObj = yaml.load(existingFrontmatter);
 
   if (shouldShowAd) {
-    yamlObject.sponsor = {
-      url: redirectUrl,
-      title: adTitle,
-      imageUrl,
-      description: adDescription,
-      event: {
-        category: 'SponsorClick',
-        action: `${company} Redirect`,
-        label: `Clicked ${company} Link`,
+    const frontmatterValues = Object.entries(fronmatterObj);
+
+    // Insert sponsor data at 10 index i.e. after 
+    // roadmap dimensions in the fronmatter
+    frontmatterValues.splice(10, 0, [
+      'sponsor',
+      {
+        url: redirectUrl,
+        title: adTitle,
+        imageUrl,
+        description: adDescription,
+        event: {
+          category: 'SponsorClick',
+          action: `${company} Redirect`,
+          label: `Clicked ${company} Link`,
+        },
       },
-    };
+    ]);
+
+    fronmatterObj = Object.fromEntries(frontmatterValues);
   } else {
-    delete yamlObject.sponsor;
+    delete fronmatterObj.sponsor;
   }
 
-  const newFrontmatter = yaml.dump(yamlObject, { lineWidth: 10000, forceQuotes: true, quotingType: '"' });
+  const newFrontmatter = yaml.dump(fronmatterObj, { lineWidth: 10000, forceQuotes: true, quotingType: '"' });
   const newContent = `---\n${newFrontmatter}---\n\n${contentWithoutFrontmatter}`;
 
   fs.writeFileSync(roadmapFilePath, newContent, 'utf8');
