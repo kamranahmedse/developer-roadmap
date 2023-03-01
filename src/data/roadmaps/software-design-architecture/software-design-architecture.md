@@ -19,7 +19,7 @@ sponsor:
   event:
     category: "SponsorClick"
     action: "Apollo Redirect"
-    label: "Clicked Apollo Link"
+    label: "Design and Architecture / Apollo Link"
 schema:
   headline: "Software Design and Architecture Roadmap"
   description: "Learn Software Design and Architecture with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
