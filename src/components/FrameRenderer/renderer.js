@@ -5,14 +5,20 @@ export class Renderer {
     this.resourceId = '';
     this.resourceType = '';
     this.jsonUrl = '';
+    this.loaderNode = null;
 
-    this.containerId = 'resource-svg';
+    this.containerId = 'resource-svg-wrap';
+    this.loaderId = 'resource-loader';
 
     this.init = this.init.bind(this);
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
     this.jsonToSvg = this.jsonToSvg.bind(this);
     this.handleSvgClick = this.handleSvgClick.bind(this);
     this.prepareConfig = this.prepareConfig.bind(this);
+  }
+
+  get loaderEl() {
+    return document.getElementById(this.loaderId);
   }
 
   get containerEl() {
@@ -24,6 +30,8 @@ export class Renderer {
       return false;
     }
 
+    // Clone it so we can use it later
+    this.loaderNode = this.loaderEl.cloneNode();
     const dataset = this.containerEl.dataset;
 
     this.resourceType = dataset.resourceType;
@@ -43,14 +51,30 @@ export class Renderer {
       return null;
     }
 
+    this.containerEl.replaceChildren(this.loaderNode);
+
     return fetch(jsonUrl)
-      .then(function (res) {
+      .then((res) => {
         return res.json();
       })
-      .then(function (json) {
+      .then((json) => {
         return wireframeJSONToSVG(json, {
           fontURL: '/fonts/balsamiq.woff2',
         });
+      })
+      .then((svg) => {
+        this.containerEl.replaceChildren(svg);
+      })
+      .catch((error) => {
+        const message = `
+          <strong>There was an error.</strong><br>
+          
+          Try loading the page again. or submit an issue on GitHub with following:<br><br>
+
+          ${error.message} <br /> ${error.stack}
+        `;
+
+        this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
       });
   }
 
@@ -59,11 +83,7 @@ export class Renderer {
       return;
     }
 
-    this.jsonToSvg(this.jsonUrl)
-      .then((svg) => {
-        document.getElementById(this.containerId).replaceChildren(svg);
-      })
-      .catch(console.error);
+    this.jsonToSvg(this.jsonUrl);
   }
 
   handleSvgClick(e) {
