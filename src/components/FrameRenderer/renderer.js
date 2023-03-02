@@ -5,7 +5,7 @@ export class Renderer {
     this.resourceId = '';
     this.resourceType = '';
     this.jsonUrl = '';
-    this.loaderNode = null;
+    this.loaderHTML = null;
 
     this.containerId = 'resource-svg-wrap';
     this.loaderId = 'resource-loader';
@@ -31,7 +31,7 @@ export class Renderer {
     }
 
     // Clone it so we can use it later
-    this.loaderNode = this.loaderEl.cloneNode();
+    this.loaderHTML = this.loaderEl.innerHTML;
     const dataset = this.containerEl.dataset;
 
     this.resourceType = dataset.resourceType;
@@ -51,7 +51,7 @@ export class Renderer {
       return null;
     }
 
-    this.containerEl.replaceChildren(this.loaderNode);
+    this.containerEl.innerHTML = this.loaderHTML;
 
     return fetch(jsonUrl)
       .then((res) => {
@@ -97,6 +97,13 @@ export class Renderer {
 
     if (/^ext_link/.test(groupId)) {
       window.open(`https://${groupId.replace('ext_link:', '')}`);
+      return;
+    }
+
+    if (/^json:/.test(groupId)) {
+      this.jsonToSvg(groupId.replace('json:', '')).then(() => {
+        this.containerEl.setAttribute('style', '');
+      });
       return;
     }
 
