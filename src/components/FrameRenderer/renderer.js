@@ -84,7 +84,14 @@ export class Renderer {
       return;
     }
 
-    this.jsonToSvg(this.jsonUrl);
+    const urlParams = new URLSearchParams(window.location.search);
+    const roadmapType = urlParams.get('r');
+
+    if (roadmapType) {
+      this.switchRoadmap(`/jsons/roadmaps/${roadmapType}.json`);
+    } else {
+      this.jsonToSvg(this.jsonUrl);
+    }
   }
 
   switchRoadmap(newJsonUrl) {
