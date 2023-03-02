@@ -15,6 +15,7 @@ export class Renderer {
     this.jsonToSvg = this.jsonToSvg.bind(this);
     this.handleSvgClick = this.handleSvgClick.bind(this);
     this.prepareConfig = this.prepareConfig.bind(this);
+    this.switchRoadmap = this.switchRoadmap.bind(this);
   }
 
   get loaderEl() {
@@ -86,6 +87,45 @@ export class Renderer {
     this.jsonToSvg(this.jsonUrl);
   }
 
+  switchRoadmap(newJsonUrl) {
+    const newJsonFileSlug = newJsonUrl.split('/').pop().replace('.json', '');
+
+    // Only update the URL
+    if (window?.history?.pushState) {
+      const url = new URL(window.location);
+      const type = this.resourceType[0]; // r for roadmap, b for best-practices
+
+      url.searchParams.delete(type);
+      url.searchParams.set(type, newJsonFileSlug);
+
+      window.history.pushState(null, '', url.toString());
+    }
+
+    const pageTitle = this.resourceId.replace(/\b\w/g, (l) => l.toUpperCase());
+    const pageType = this.resourceType.replace(/\b\w/g, (l) => l.toUpperCase());
+    const newRoadmapType = newJsonFileSlug.replace(/\b\w/g, (l) => l.toUpperCase()).replace('-', ' ');
+
+    console.log({
+      // RoadmapClick, BestPracticesClick, etc
+      category: `${pageType.replace('-', '')}Click`,
+      // Roadmap Switch, BestPractices Switch, etc
+      action: `${pageType} Switch`,
+      label: `${pageTitle} / ${newRoadmapType}`,
+    });
+
+    // window.fireEvent({
+    //   // RoadmapClick, BestPracticesClick, etc
+    //   category: `${pageType.replace('-', '')}Click`,
+    //   // Roadmap Switch, BestPractices Switch, etc
+    //   action: `${pageType} Switch`,
+    //   label: `${pageTitle} Switch`,
+    // });
+
+    this.jsonToSvg(newJsonUrl).then(() => {
+      this.containerEl.setAttribute('style', '');
+    });
+  }
+
   handleSvgClick(e) {
     const targetGroup = e.target.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
@@ -101,9 +141,10 @@ export class Renderer {
     }
 
     if (/^json:/.test(groupId)) {
-      this.jsonToSvg(groupId.replace('json:', '')).then(() => {
-        this.containerEl.setAttribute('style', '');
-      });
+      // e.g. /roadmaps/frontend-beginner.json
+      const newJsonUrl = groupId.replace('json:', '');
+
+      this.switchRoadmap(newJsonUrl);
       return;
     }
 
