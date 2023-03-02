@@ -112,21 +112,13 @@ export class Renderer {
     const pageType = this.resourceType.replace(/\b\w/g, (l) => l.toUpperCase());
     const newRoadmapType = newJsonFileSlug.replace(/\b\w/g, (l) => l.toUpperCase()).replace('-', ' ');
 
-    console.log({
+    window.fireEvent({
       // RoadmapClick, BestPracticesClick, etc
       category: `${pageType.replace('-', '')}Click`,
       // Roadmap Switch, BestPractices Switch, etc
       action: `${pageType} Switch`,
       label: `${pageTitle} / ${newRoadmapType}`,
     });
-
-    // window.fireEvent({
-    //   // RoadmapClick, BestPracticesClick, etc
-    //   category: `${pageType.replace('-', '')}Click`,
-    //   // Roadmap Switch, BestPractices Switch, etc
-    //   action: `${pageType} Switch`,
-    //   label: `${pageTitle} Switch`,
-    // });
 
     this.jsonToSvg(newJsonUrl).then(() => {
       this.containerEl.setAttribute('style', '');
