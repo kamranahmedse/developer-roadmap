@@ -43,8 +43,8 @@ seo:
     - "kubernetes interview questions"
 relatedRoadmaps:
   - "devops"
+  - "system-design"
   - "backend"
-  - "systm-design"
 sitemap:
   priority: 1
   changefreq: "monthly"
