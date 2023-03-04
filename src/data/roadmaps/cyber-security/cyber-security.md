@@ -42,9 +42,7 @@ seo:
 relatedRoadmaps:
   - "backend"
   - "devops"
-  - "java"
   - "python"
-  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"

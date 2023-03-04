@@ -3,6 +3,7 @@ import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FAQs from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
+import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import TopicOverlay from '../../components/TopicOverlay/TopicOverlay.astro';
@@ -103,6 +104,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     {roadmapData.isUpcoming && <UpcomingForm />}
 
     <FAQs faqs={roadmapFAQs} />
+    <RelatedRoadmaps roadmap={roadmapData} />
 
     <CaptchaScripts slot='after-footer' />
   </div>
