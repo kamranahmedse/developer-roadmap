@@ -32,6 +32,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Python Roadmap** - [Roadmap Link](https://roadmap.sh/python) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/python.pdf)
 * **System Design** - [Roadmap Link](https://roadmap.sh/system-design) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/system-design.pdf)
 * **Kubernetes** - [Roadmap Link](https://roadmap.sh/kubernetes) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/kubernetes.pdf)
+* **Cyber Security** - [Roadmap Link](https://roadmap.sh/cyber-security) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/cyber-security.pdf)
 
 Here is the list of PDF links for each of the best practices:
 
