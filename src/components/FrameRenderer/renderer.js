@@ -97,7 +97,7 @@ export class Renderer {
   switchRoadmap(newJsonUrl) {
     const newJsonFileSlug = newJsonUrl.split('/').pop().replace('.json', '');
 
-    // Only update the URL
+    // Update the URL and attach the new roadmap type
     if (window?.history?.pushState) {
       const url = new URL(window.location);
       const type = this.resourceType[0]; // r for roadmap, b for best-practices

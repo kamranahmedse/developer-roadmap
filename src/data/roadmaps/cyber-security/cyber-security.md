@@ -1,10 +1,12 @@
 ---
-order: 12
+jsonUrl: "/jsons/roadmaps/cyber-security.json"
+pdfUrl: "/pdfs/roadmaps/cyber-security.pdf"
+order: 11
 briefTitle: "Cyber Security"
 briefDescription: "Step by step guide to becoming a Cyber Security Expert in 2023"
 title: "Cyber Security Expert"
-description: "Step by step guide to becoming a Cyber Security developer in 2023"
-isUpcoming: true
+description: "Step by step guide to becoming a Cyber Security Expert in 2023"
+isNew: true
 schema:
   headline: "Cyber Security Roadmap"
   description: "Learn how to become a Cyber Security expert with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
@@ -13,7 +15,7 @@ schema:
   dateModified: "2023-01-20"
 seo:
   title: "Cyber Security Roadmap"
-  description: "Community driven, articles, resources, guides, interview questions, quizzes for cyber security. Learn to become a modern Cyber Security developer by following the steps, skills, resources and guides listed in this roadmap."
+  description: "Community driven, articles, resources, guides, interview questions, quizzes for cyber security. Learn to become a modern Cyber Security Expert by following the steps, skills, resources and guides listed in this roadmap."
   keywords:
     - "guide to becoming a cyber security expert"
     - "guide to becoming a cyber security expert"
