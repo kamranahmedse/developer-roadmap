@@ -20,16 +20,16 @@
   "dependencies": {
     "@astrojs/sitemap": "^1.1.0",
     "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.15",
-    "astro-compress": "^1.1.34",
+    "astro": "^2.0.17",
+    "astro-compress": "^1.1.35",
     "node-html-parser": "^6.1.5",
-    "npm-check-updates": "^16.7.9",
+    "npm-check-updates": "^16.7.10",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.4",
     "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.31.1",
+    "@playwright/test": "^1.31.2",
     "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^5.0.0",
     "js-yaml": "^4.1.0",
