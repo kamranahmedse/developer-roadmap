@@ -25,7 +25,7 @@ if (faqs.length === 0) {
       <h1 class='text-sm sm:text-base font-medium py-1 px-3 border bg-white rounded-md'>Frequently Asked Questions</h1>
     </div>
 
-    <div class='flex flex-col gap-1 pb-8'>
+    <div class='flex flex-col gap-1 pb-14'>
       {
         faqs.map((faq, questionIndex) => (
           <Question isActive={questionIndex === 0} question={faq.question}>
