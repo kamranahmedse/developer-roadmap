@@ -45,3 +45,12 @@
     )
     hsla(203, 11%, 95%, 0.4);
 }
+html::-webkit-scrollbar{
+  width:0px;
+  display:none; /* Chrome and Brave */
+}
+html{
+  -ms-overflow-style: none; /* IE and Edge */
+	scrollbar-width: none; /* Firefox */
+	
+}
