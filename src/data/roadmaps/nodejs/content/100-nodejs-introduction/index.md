@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 
 - [Official Website](https://nodejs.org/en/)
 - [Official Documentation](https://nodejs.org/en/docs/)
+- [Node.js tutorial for Beginners](https://youtu.be/f2EqECiTBL8)
