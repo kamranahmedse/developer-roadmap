@@ -38,3 +38,4 @@ Here is the list of PDF links for each of the best practices:
 
 * **Frontend Performance** - [Best Practices Link](https://roadmap.sh/best-practices/frontend-performance) / [PDF Link](https://roadmap.sh/pdfs/best-practices/frontend-performance.pdf)
 * **API Security** - [Best Practices Link](https://roadmap.sh/best-practices/api-security) / [PDF Link](https://roadmap.sh/pdfs/best-practices/api-security.pdf)
+* **Amazon Web Services (AWS)** - [Best Practices Link](https://roadmap.sh/best-practices/aws) / [PDF Link](https://roadmap.sh/pdfs/best-practices/aws.pdf)
