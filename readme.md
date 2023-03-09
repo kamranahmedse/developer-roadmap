@@ -62,6 +62,7 @@ We have also added a new form of visual content covering best practices:
 
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
+- [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
 ![](https://i.imgur.com/waxVImv.png)
 
