@@ -9,4 +9,5 @@ Visit the following resources to learn more:
 
 - [Handling Events in React](https://reactjs.org/docs/handling-events.html)
 - [Synthetic Events in React](https://reactjs.org/docs/events.html)
+- [The System of Synthetic Events in React - CodeGuage](https://www.codeguage.com/courses/react/events)
 - [React Event Handler](https://www.robinwieruch.de/react-event-handler/)
