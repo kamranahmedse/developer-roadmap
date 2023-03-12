@@ -1,1 +1,1 @@
-# Comptia aplus
+# CompTIA A+

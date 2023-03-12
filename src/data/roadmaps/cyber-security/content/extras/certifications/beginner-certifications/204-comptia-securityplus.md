@@ -1,1 +1,1 @@
-# Comptia securityplus
+# CompTIA Security+

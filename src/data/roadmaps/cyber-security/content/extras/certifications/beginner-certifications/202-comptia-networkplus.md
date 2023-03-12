@@ -1,1 +1,1 @@
-# Comptia networkplus
+# CompTIA Network+

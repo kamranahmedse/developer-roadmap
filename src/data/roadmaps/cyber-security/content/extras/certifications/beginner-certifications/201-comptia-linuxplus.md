@@ -1,1 +1,1 @@
-# Comptia linuxplus
+# CompTIA Linux+
