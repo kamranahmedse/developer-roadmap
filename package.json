@@ -18,12 +18,12 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^1.1.0",
-    "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.17",
+    "@astrojs/sitemap": "^1.2.0",
+    "@astrojs/tailwind": "^3.1.0",
+    "astro": "^2.1.2",
     "astro-compress": "^1.1.35",
     "node-html-parser": "^6.1.5",
-    "npm-check-updates": "^16.7.10",
+    "npm-check-updates": "^16.7.12",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.4",
     "tailwindcss": "^3.2.7"
