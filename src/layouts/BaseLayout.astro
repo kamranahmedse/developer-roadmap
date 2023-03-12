@@ -11,6 +11,7 @@ import Analytics from '../components/Analytics/Analytics.astro';
 
 export interface Props {
   title: string;
+  redirectUrl?: string;
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
@@ -29,6 +30,7 @@ const {
   canonicalUrl: givenCanonical = '',
   sponsor,
   jsonLd = [],
+  redirectUrl = '',
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -49,6 +51,7 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
+    {redirectUrl && <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />}
     {noIndex && <meta name='robots' content='noindex' />}
     <meta
       name='viewport'
@@ -92,14 +95,19 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
-    <YouTubeBanner />
-    <Navigation />
+    <slot name='page-header'>
+      <YouTubeBanner />
+      <Navigation />
+    </slot>
+
     <slot />
 
-    <OpenSourceBanner />
-    <Footer />
-    {sponsor && <Sponsor sponsor={sponsor} />}
-    <slot name='after-footer' />
-    <Analytics />
+    <slot name='page-footer'>
+      <OpenSourceBanner />
+      <Footer />
+      {sponsor && <Sponsor sponsor={sponsor} />}
+      <slot name='after-footer' />
+      <Analytics />
+    </slot>
   </body>
 </html>

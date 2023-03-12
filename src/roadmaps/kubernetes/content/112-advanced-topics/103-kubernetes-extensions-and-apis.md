@@ -1,1 +1,0 @@
-# Kubernetes extensions and apis

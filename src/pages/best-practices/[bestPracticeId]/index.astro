@@ -23,7 +23,7 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { bestPracticeId } = Astro.params as Params;
-const bestPracticeFile = await import(`../../../best-practices/${bestPracticeId}/${bestPracticeId}.md`);
+const bestPracticeFile = await import(`../../../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`);
 const bestPracticeData = bestPracticeFile.frontmatter as BestPracticeFrontmatter;
 
 let jsonLdSchema = [];
@@ -42,7 +42,7 @@ if (bestPracticeData.schema) {
   );
 }
 
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/best-practices/${bestPracticeId}/content`;
+const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/${bestPracticeId}/content`;
 ---
 
 <BaseLayout

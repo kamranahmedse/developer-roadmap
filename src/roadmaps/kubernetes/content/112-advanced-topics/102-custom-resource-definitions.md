@@ -1,1 +1,0 @@
-# Custom resource definitions

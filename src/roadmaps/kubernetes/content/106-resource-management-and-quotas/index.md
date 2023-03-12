@@ -1,1 +1,0 @@
-# Resource management and quotas

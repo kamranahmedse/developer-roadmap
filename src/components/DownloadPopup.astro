@@ -3,11 +3,7 @@ import Popup from './Popup/Popup.astro';
 import CaptchaFields from './Captcha/CaptchaFields.astro';
 ---
 
-<Popup
-  id='download-popup'
-  title='Download'
-  subtitle='Enter your email below to receive the download link.'
->
+<Popup id='download-popup' title='Download' subtitle='Enter your email below to receive the download link.'>
   <form
     action='https://newsletter.roadmap.sh/subscribe'
     method='POST'
@@ -15,6 +11,8 @@ import CaptchaFields from './Captcha/CaptchaFields.astro';
     target='_blank'
     captcha-form
   >
+    <input type='hidden' name='gdpr' value='true' />
+
     <input
       type='email'
       name='email'
@@ -42,13 +40,11 @@ import CaptchaFields from './Captcha/CaptchaFields.astro';
 </Popup>
 
 <script>
-  document
-    .querySelector('[submit-download-form]')
-    ?.addEventListener('click', () => {
-      window.fireEvent({
-        category: 'Subscription',
-        action: 'Submitted Popup Form',
-        label: 'Download Roadmap Popup',
-      });
+  document.querySelector('[submit-download-form]')?.addEventListener('click', () => {
+    window.fireEvent({
+      category: 'Subscription',
+      action: 'Submitted Popup Form',
+      label: 'Download Roadmap Popup',
     });
+  });
 </script>

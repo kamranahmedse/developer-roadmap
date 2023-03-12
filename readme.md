@@ -56,10 +56,13 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [ASP.NET Core Roadmap](https://roadmap.sh/aspnet-core)
 - [System Design Roadmap](https://roadmap.sh/system-design)
 - [Kubernetes Roadmap](https://roadmap.sh/kubernetes)
+- [Cyber Security Roadmap](https://roadmap.sh/cyber-security)
 
 We have also added a new form of visual content covering best practices:
 
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
+- [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
+- [AWS Best Practices](https://roadmap.sh/best-practices/aws)
 
 ![](https://i.imgur.com/waxVImv.png)
 

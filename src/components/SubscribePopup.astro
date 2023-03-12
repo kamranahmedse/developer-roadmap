@@ -3,11 +3,7 @@ import Popup from './Popup/Popup.astro';
 import CaptchaFields from './Captcha/CaptchaFields.astro';
 ---
 
-<Popup
-  id='subscribe-popup'
-  title='Subscribe'
-  subtitle='Enter your email below to receive updates.'
->
+<Popup id='subscribe-popup' title='Subscribe' subtitle='Enter your email below to receive updates.'>
   <form
     action='https://newsletter.roadmap.sh/subscribe'
     method='POST'
@@ -15,6 +11,8 @@ import CaptchaFields from './Captcha/CaptchaFields.astro';
     target='_blank'
     captcha-form
   >
+    <input type='hidden' name='gdpr' value='true' />
+
     <input
       type='email'
       name='email'
