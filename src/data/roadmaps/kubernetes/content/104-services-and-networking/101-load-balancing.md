@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Load Balancing - Documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/#load-balancing)
 - [Tutorial | Load Balancing Service in Kubernetes](https://www.youtube.com/watch?v=xCsz9IOt-fs)
+- [Ingress Controllers: The Swiss Army Knife of Kubernetes](https://thenewstack.io/ingress-controllers-the-swiss-army-knife-of-kubernetes/)
