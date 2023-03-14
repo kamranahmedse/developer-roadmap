@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [Getting Started Guide](https://reactrouter.com/docs/en/v6/getting-started/tutorial)
 - [React Router v6 in 1 hour](https://youtu.be/0cSVuySEB0A)
 - [How to use React Router v6](https://www.robinwieruch.de/react-router/)
+- [React Router Cheat Sheet](https://stackdiary.com/guides/react-router-cheat-sheet-reference/)
