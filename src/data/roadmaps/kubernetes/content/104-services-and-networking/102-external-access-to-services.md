@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [How do I provide external access to Kubernetes services](https://www.youtube.com/watch?v=iBYTFpoXx24)
 - [Ingress - Documentation](https://kubernetes.io/docs/concepts/services-networking/ingress/)
+- [Kubernetes Ingress for Beginners](https://thenewstack.io/kubernetes-ingress-for-beginners/)
