@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [DevOps and GitOps for Kubernetes](https://www.youtube.com/watch?v=PFLimPh5-wo)
 - [Using GitOps with a Kubernetes cluster](https://docs.gitlab.com/ee/user/clusters/agent/gitops.html)
+- [Kubernetes at Scale without GitOps Is a Bad Idea](https://thenewstack.io/kubernetes-at-scale-without-gitops-is-a-bad-idea/)
