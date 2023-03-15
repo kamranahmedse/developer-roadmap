@@ -8,3 +8,5 @@ Learn more from the following resources:
 
 - [Stateful Applications](https://kubernetes.io/docs/tutorials/stateful-application/)
 - [The basics of stateful applications in Kubernetes](https://www.youtube.com/watch?v=GieXzb91I40)
+- [A Guide to Running Stateful Applications in Kubernetes](https://thenewstack.io/a-guide-to-running-stateful-applications-in-kubernetes/)
+- [Different Approaches for Building Stateful Kubernetes Applications](https://thenewstack.io/different-approaches-for-building-stateful-kubernetes-applications/)
