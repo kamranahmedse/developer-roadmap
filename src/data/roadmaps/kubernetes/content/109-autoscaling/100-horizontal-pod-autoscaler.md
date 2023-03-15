@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Horizontal Pod Autoscaling - Documentation](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/)
 - [Kubernetes Horizontal Pod Autoscaling - Kubernetes Tutorials](https://www.youtube.com/watch?v=hm3jnETOoFo)
+- [Scale Applications in Kubernetes with Kubectl and the Horizontal Pod Autoscaler](https://thenewstack.io/scale-applications-in-kubernetes-with-kubectl-and-the-horizontal-pod-autoscaler/)
