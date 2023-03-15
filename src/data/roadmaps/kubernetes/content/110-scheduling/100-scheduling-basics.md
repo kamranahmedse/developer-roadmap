@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Kubernetes Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
 - [How Scheduling in Kubernetes Works](https://www.youtube.com/watch?v=0FvQR-0tK54)
+- [Strategies for Kubernetes Pod Placement and Scheduling](https://thenewstack.io/strategies-for-kubernetes-pod-placement-and-scheduling/)
