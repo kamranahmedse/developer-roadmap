@@ -6,3 +6,6 @@ Learn more from the following resources:
 
 - [Helm Docs](https://helm.sh/docs/)
 - [What is Helm in Kubernetes? Helm and Helm Charts explained](https://www.youtube.com/watch?v=-ykwb1d0DXU)
+- [Get Started with the Helm Kubernetes Package Manager](https://thenewstack.io/get-started-with-the-helm-kubernetes-package-manager/)
+- [What the Helm?! The Tool We All Love (and Sometimes Hate)](https://thenewstack.io/what-the-helm-the-tool-we-all-love-and-sometimes-hate/)
+- [Applying Kubernetes Security Best Practices to Helm Charts](https://thenewstack.io/applying-kubernetes-security-best-practices-to-helm-charts/)
