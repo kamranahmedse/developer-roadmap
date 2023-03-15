@@ -6,3 +6,4 @@ Learn more from the following resource:
 
 - [Autoscaling in Kubernetes](https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/)
 - [Kubernetes cluster autoscaling for beginners](https://www.youtube.com/watch?v=jM36M39MA3I)
+- [Kubernetes Probes (and Why They Matter for Autoscaling)](https://thenewstack.io/kubernetes-probes-and-why-they-matter-for-autoscaling/)
