@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Set up a K8s cluster](https://kubernetes.io/docs/home/#set-up-a-k8s-cluster)
 - [Kubernetes | Cluster Setup](https://www.youtube.com/watch?v=z_w3me8tmJA)
+- [Kubernetes 101: Install Kubernetes on Rocky Linux](https://thenewstack.io/kubernetes-101-install-kubernetes-on-rocky-linux/)
