@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [What is Kubernetes VPA?](https://www.kubecost.com/kubernetes-autoscaling/kubernetes-vpa/)
 - [Vertical Pod Autoscaling: Example](https://www.youtube.com/watch?v=3h-vDDTZrm8)
+- [Reduce Kubernetes Costs Using Autoscaling Mechanisms](https://thenewstack.io/reduce-kubernetes-costs-using-autoscaling-mechanisms/)
