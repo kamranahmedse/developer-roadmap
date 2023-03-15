@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Dashboards with Grafana and Prometheus](https://www.youtube.com/watch?v=fzny5uUaAeY)
 - [How to Monitor a Kubernetes Cluster with Prometheus & Grafana](https://www.youtube.com/watch?v=YDtuwlNTzRc)
+- [12 Critical Kubernetes Health Conditions You Need to Monitor](https://thenewstack.io/12-critical-kubernetes-health-conditions-you-need-to-monitor/)
+- [Is Your Kubernetes Cluster Healthy? Here are 5 Ways to Find Out](https://thenewstack.io/is-your-kubernetes-cluster-healthy-here-are-5-ways-to-find-out/)
