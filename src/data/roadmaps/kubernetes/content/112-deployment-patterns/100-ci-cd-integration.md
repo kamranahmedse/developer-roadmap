@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Deploy to Kubernetes Cluster | CI/CD Kubernetes](https://www.youtube.com/watch?v=naUhXrV_rRA)
 - [Create A CI/CD Pipeline With Kubernetes](https://discuss.kubernetes.io/t/create-a-ci-cd-pipeline-with-kubernetes-and-jenkins/11043)
+- [Ebook: CI/CD with Kubernetes](https://thenewstack.io/ebooks/kubernetes/ci-cd-with-kubernetes/)
+- [Kubernetes CI/CD Pipelines Explained](https://thenewstack.io/kubernetes-ci-cd-pipelines-explained/)
