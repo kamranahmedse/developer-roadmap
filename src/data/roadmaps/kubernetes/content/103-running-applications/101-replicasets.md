@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [ReplicaSet Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)
 - [ReplicaSet in Kubernetes](https://www.youtube.com/watch?v=1WM-LsH6tKc)
+- [Strategies for Running Stateful Workloads in Kubernetes: Pet Sets](https://thenewstack.io/strategies-running-stateful-applications-kubernetes-pet-sets/)

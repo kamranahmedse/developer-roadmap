@@ -3,7 +3,7 @@ name: Update Sponsors
 on:
   workflow_dispatch: # allow manual run
   schedule:
-    - cron: '0 */3 * * *' # every 3 hours
+    - cron: '0 0 * * *' # run daily at 00:00 UTC
 
 env:
   SPONSOR_SHEET_API_KEY: ${{ secrets.SPONSOR_SHEET_API_KEY }}
