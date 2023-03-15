@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 * [Official Docker Tutorial](https://www.docker.com/101-tutorial/)
 * [Docker Curriculum](https://docker-curriculum.com/)
 * [Free 3 Hour Video Course on Docker for Beginners](https://www.youtube.com/watch?v=3c-iBn73dDE)
+* [Analyst Report: What CTOs Must Know about Kubernetes and Containers ](https://thenewstack.io/analyst-report-what-ctos-must-know-about-kubernetes-and-containers/)
