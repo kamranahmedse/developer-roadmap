@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Deployments - Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/)
 - [How Kubernetes deployments work?](https://www.youtube.com/watch?v=mNK14yXIZF4)
+- [A Look at Kubernetes Deployment](https://thenewstack.io/kubernetes/a-look-at-kubernetes-deployment/)
