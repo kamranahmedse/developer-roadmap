@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Node Metrics Data](https://kubernetes.io/docs/reference/instrumentation/node-metrics/)
 - [How to collect metrics in K8s?](https://www.youtube.com/watch?v=JQrk6HwlN78)
+- [Which Kubernetes Health Metrics Should Be Monitored?](https://thenewstack.io/which-kubernetes-health-metrics-should-be-monitored/)
