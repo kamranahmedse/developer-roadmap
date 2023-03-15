@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Canary deployment for K8s deployments](https://learn.microsoft.com/en-us/azure/devops/pipelines/ecosystems/kubernetes/canary-demo?view=azure-devops&tabs=yaml)
 - [Kubernetes canary deployments Explained](https://www.youtube.com/watch?v=sCevTD_GtvU)
+- [Perform Canary Deployments with AWS App Mesh on Amazon EKS](https://thenewstack.io/perform-canary-deployments-with-aws-app-mesh-on-amazon-eks/)
