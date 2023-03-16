@@ -177,7 +177,16 @@ export class Topic {
     this.activeTopicId = topicId;
 
     this.resetDOM();
-    this.renderTopicFromUrl(`/best-practices/${bestPracticeId}/${topicId.replaceAll(':', '/')}`);
+
+    const topicUrl = `/best-practices/${bestPracticeId}/${topicId.replaceAll(':', '/')}`;
+
+    window.fireEvent({
+      category: `BestPracticesClick`,
+      action: `Load Topic`,
+      label: topicUrl,
+    });
+
+    this.renderTopicFromUrl(topicUrl).then(() => null);
   }
 
   handleRoadmapTopicClick(e) {
@@ -192,7 +201,15 @@ export class Topic {
     this.activeTopicId = topicId;
 
     this.resetDOM();
-    this.renderTopicFromUrl(`/${roadmapId}/${topicId.replaceAll(':', '/')}`);
+    const topicUrl = `/${roadmapId}/${topicId.replaceAll(':', '/')}`;
+
+    window.fireEvent({
+      category: `RoadmapClick`,
+      action: `Load Topic`,
+      label: topicUrl,
+    });
+
+    this.renderTopicFromUrl(topicUrl).then(() => null);
   }
 
   querySvgElementsByTopicId(topicId) {
