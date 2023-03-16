@@ -180,12 +180,6 @@ export class Topic {
 
     const topicUrl = `/best-practices/${bestPracticeId}/${topicId.replaceAll(':', '/')}`;
 
-    window.fireEvent({
-      category: `BestPracticesClick`,
-      action: `Load Topic`,
-      label: topicUrl,
-    });
-
     this.renderTopicFromUrl(topicUrl).then(() => null);
   }
 
@@ -205,7 +199,7 @@ export class Topic {
 
     window.fireEvent({
       category: `RoadmapClick`,
-      action: `Load Topic`,
+      action: `roadmap/${roadmapId}/load-topic`,
       label: topicUrl,
     });
 
