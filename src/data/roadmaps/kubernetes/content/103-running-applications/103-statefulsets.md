@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [StatefulSets Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/statefulset/)
 - [Kubernetes StatefulSet | Tutorial](https://www.youtube.com/watch?v=pPQKAR1pA9U)
+- [Different Approaches for Building Stateful Kubernetes Applications](https://thenewstack.io/different-approaches-for-building-stateful-kubernetes-applications/)

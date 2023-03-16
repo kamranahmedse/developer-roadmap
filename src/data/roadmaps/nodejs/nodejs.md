@@ -11,6 +11,15 @@ hasTopics: true
 dimensions:
   width: 968
   height: 2474.06
+sponsor:
+  url: "https://bit.ly/3YYcqdt"
+  title: "Free eBook"
+  imageUrl: "https://i.imgur.com/RCbFXOY.png"
+  description: "Learn how to find a GraphQL architecture that scales with this free eBook from Apollo"
+  event:
+    category: "SponsorClick"
+    action: "Apollo Redirect"
+    label: "Node.js / Apollo Link"
 schema:
   headline: "Node.js Roadmap"
   description: "Learn Node.js with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
