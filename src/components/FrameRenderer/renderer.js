@@ -108,16 +108,15 @@ export class Renderer {
       window.history.pushState(null, '', url.toString());
     }
 
-    const pageTitle = this.resourceId.replace(/\b\w/g, (l) => l.toUpperCase());
     const pageType = this.resourceType.replace(/\b\w/g, (l) => l.toUpperCase());
-    const newRoadmapType = newJsonFileSlug.replace(/\b\w/g, (l) => l.toUpperCase()).replace('-', ' ');
 
     window.fireEvent({
       // RoadmapClick, BestPracticesClick, etc
       category: `${pageType.replace('-', '')}Click`,
-      // Roadmap Switch, BestPractices Switch, etc
-      action: `${pageType} Switch`,
-      label: `${pageTitle} / ${newRoadmapType}`,
+      // roadmap/frontend/switch-version
+      action: `${this.resourceType}/${this.resourceId}/switch-version`,
+      // roadmap/frontend/switch-version
+      label: `${newJsonFileSlug}`,
     });
 
     this.jsonToSvg(newJsonUrl).then(() => {
