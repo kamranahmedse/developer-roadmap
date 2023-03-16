@@ -13,6 +13,6 @@ Visit the following resources to learn more:
 
 - [Promise Methods](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise)
 - [Official Website](https://www.promisejs.org/)
-- [Official Website](https://www.freecodecamp.org/news/javascript-promises-for-beginners/)
+- [JavaScript Promises for Beginners](https://www.freecodecamp.org/news/javascript-promises-for-beginners/)
 - [Asynchronous JavaScript - Promises](https://www.youtube.com/watch?v=a_8nrslImo4/)
 
