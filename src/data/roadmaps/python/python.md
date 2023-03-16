@@ -17,7 +17,7 @@ schema:
   datePublished: "2023-01-05"
   dateModified: "2023-01-20"
 sponsor:
-  url: "https://www.fermyon.com/spin?utm_source=python&utm_medium=banner&utm_campaign=roadmap-sh"
+  url: "https://developer.fermyon.com/spin/python-components?utm_source=python&utm_medium=banner&utm_campaign=roadmap-sh"
   title: "Serverless Python Apps"
   imageUrl: "https://i.imgur.com/2ONZopb.jpg"
   description: "Go from blinking cursor to deployed serverless Python apps in 66 seconds with Fermyon Cloud."
