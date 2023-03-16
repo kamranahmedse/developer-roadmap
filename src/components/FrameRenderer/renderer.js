@@ -114,7 +114,7 @@ export class Renderer {
       // RoadmapClick, BestPracticesClick, etc
       category: `${pageType.replace('-', '')}Click`,
       // roadmap/frontend/switch-version
-      action: `${this.resourceType}/${this.resourceId}/switch-version`,
+      action: `${this.resourceId}/switch-version`,
       // roadmap/frontend/switch-version
       label: `${newJsonFileSlug}`,
     });

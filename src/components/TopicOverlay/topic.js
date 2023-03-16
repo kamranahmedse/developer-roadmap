@@ -199,7 +199,7 @@ export class Topic {
 
     window.fireEvent({
       category: `RoadmapClick`,
-      action: `roadmap/${roadmapId}/load-topic`,
+      action: `${roadmapId}/load-topic`,
       label: topicUrl,
     });
 
