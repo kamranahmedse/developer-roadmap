@@ -7,6 +7,7 @@ Visit the following resources to learn more:
 
 - [Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
 - [What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
+- [Full HTTP Networking Course](https://www.youtube.com/watch?v=2JYT5f2isg4)
 - [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
 - [HTTP/1 to HTTP/2 to HTTP/3](https://www.youtube.com/watch?v=a-sBfyiXysI)
