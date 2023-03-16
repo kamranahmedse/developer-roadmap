@@ -5,6 +5,7 @@ HTTP is the `TCP/IP` based application layer communication protocol which standa
 Visit the following resources to learn more:
 
 - [What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
+- [Full HTTP Networking Course](https://www.youtube.com/watch?v=2JYT5f2isg4)
 - [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
 - [Journey to HTTP/2](https://kamranahmed.info/blog/2016/08/13/http-in-depth)
 - [HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
