@@ -1,4 +1,4 @@
-## Maximum Likelihood Estimation (MSE)
+## Maximum Likelihood Estimation (MLE)
 
 ## What is MLE?
 MLE stands for Maximum Likelihood Estimation, which is a statistical method used to estimate the parameters of a probability distribution based on a set of observed data.
