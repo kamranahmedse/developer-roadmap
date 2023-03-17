@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 ## PARAMETER PENALTIES RESOURCES
 
 ## Parameter Norm Penalties:
