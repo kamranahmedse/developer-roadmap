@@ -14,11 +14,11 @@ command line : **pip install plotly**
 # **Plotly Tutorial for Beginners**
 [Plotly for Beginner level](https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners)
 # Resource
-[Source_1](https://www.kaggle.com/code/thebrownviking20/intermediate-visualization-tutorial-using-plotly)
+[Plotly for Intermediate level](https://www.kaggle.com/code/thebrownviking20/intermediate-visualization-tutorial-using-plotly)
 
-[Source_2](https://youtu.be/i2bk7M1NbIs)
+[Plotly dash framwork](https://youtu.be/i2bk7M1NbIs)
 
-[Source_3](https://youtu.be/RbQ8d97p7QU)
+[Plotly & Cost Function Visualizations](https://youtu.be/RbQ8d97p7QU)
 
 # _Line plot_
 
