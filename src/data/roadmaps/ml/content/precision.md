@@ -14,10 +14,17 @@ Accuracy will tell us right away whether a model is being trained correctly and 
 The number of positive class predictions that currently belong to the positive class is calculated by precision.
 
 _Learning Resources_
+
 1.[Javatpoint](https://www.javatpoint.com/precision-and-recall-in-machine-learning)
-2.[https://deepchecks.com/glossary/precision-in-machine-learning/]
+
+2.[Deepchecks](https://deepchecks.com/glossary/precision-in-machine-learning)
+
 _Accuracy, Recall and Precision Calculation_
+
 1.[Youtube](https://www.youtube.com/watch?v=RYFViaaJxE8)
+
 2.[Youtube](https://www.youtube.com/watch?v=NnmKeYUYMPY)
+
 3.[Youtube](https://www.youtube.com/watch?v=wvMjy5rdBU8)
+
 4.[Youtube](https://www.youtube.com/watch?v=T3qs3qpMANU)
