@@ -4,7 +4,6 @@ In linear algebra, the eigenvectors of a square matrix are non-zero vectors whic
 ![Eigen vectors](https://image1.slideserve.com/1800950/6-3-eigenvectors1-l.jpg)
 
 # Eigenvectors _ML_ study:
-
 Almost all vectors change direction when they are multiplied by a transformation matrix suppose $A$. There are certain vectors $x$ that will give same direction when multiplied by $A$ and will be stretched by some scalar $lambda$. Thus, the vector $x$ is called the eigen vector and the scalar $lambda$ is called the eigen value.
 
 Visit the following resources to learn more:
