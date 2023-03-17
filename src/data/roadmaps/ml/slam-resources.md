@@ -2,7 +2,7 @@
 SLAM (Simultaneous Localization and Mapping) is a technique used in robotics and computer vision that allows a robot to create a map of an unknown environment while simultaneously localizing itself within that environment. There are many resources available for learning about SLAM, including textbooks, online courses, research papers, and software libraries.
 
 ## Learn more
-The below links are recommended to learn more about FP trees:
+The below links are recommended to learn more about SLAM:
 
 ### Online Course:
 1. ["Robotics Specialization" on Coursera](https://in.coursera.org/specializations/robotics)
