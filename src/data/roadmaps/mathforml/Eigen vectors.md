@@ -3,8 +3,8 @@ In linear algebra, the eigenvectors of a square matrix are non-zero vectors whic
 
 ![Eigen vectors](https://image1.slideserve.com/1800950/6-3-eigenvectors1-l.jpg)
 
-# ML study:
-- [Eigenvectors _ML_ study](https://ekbanaml.github.io/linear%20algebra/EigenValues_EigenVectors/#:~:text=Almost%20all%20vectors%20change%20direction%20when%20they%20are,the%20scalar%20%24lambda%24%20is%20called%20the%20eigen%20value.)
+# Eigenvectors _ML_ study:
+Almost all vectors change direction when they are multiplied by a transformation matrix suppose $A$. There are certain vectors $x$ that will give same direction when multiplied by $A$ and will be stretched by some scalar $lambda$. Thus, the vector $x$ is called the eigen vector and the scalar $lambda$ is called the eigen value.
 
 Visit the following resources to learn more:
 
