@@ -7,6 +7,7 @@
 - [Stanford University?](https://web.stanford.edu/class/psych252/tutorials/Tutorial_KMeans.html)
 
 - [Real Python?](https://realpython.com/k-means-clustering-python/)
+
 - [Clustering Data Science?](https://towardsdatascience.com/k-means-clustering-algorithm-explained-in-detail-2624cd597d42)
 
 - [DataFlair?](https://data-flair.training/blogs/pros-and-cons-of-k-means-clustering/)
