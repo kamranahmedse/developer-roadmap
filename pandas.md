@@ -1,4 +1,5 @@
-Pandas is an open-source data analysis library for Python. It provides data structures and functions for manipulating numerical tables and time series. Pandas is built on top of NumPy and provides fast, flexible, and expressive data structures designed to work with relational or labeled data.
+INTRODUCTION:
+     Pandas is an open-source data analysis library for Python. It provides data structures and functions for manipulating numerical tables and time series. Pandas is built on top of NumPy and provides fast, flexible, and expressive data structures designed to work with relational or labeled data.
 
 The key data structures in Pandas are the Series and DataFrame objects. A Series is a one-dimensional array-like object that can hold any data type, while a DataFrame is a two-dimensional table-like data structure with columns of potentially different types.
 
