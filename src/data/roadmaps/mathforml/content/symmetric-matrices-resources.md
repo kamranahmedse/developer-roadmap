@@ -1,4 +1,4 @@
-# SYMMETRIC MATRICES:
+# SYMMETRIC MATRICES
 ## DEFINITION:
 The sum of two symmetric matrices is a symmetric matrix.
 If we multiply a symmetric matrix by a scalar, the result will be a symmetric matrix.]
