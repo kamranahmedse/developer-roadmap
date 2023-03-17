@@ -13,4 +13,4 @@ It is a continuous probability distribution with a support on the real line.It i
 
 - [Lagrange's Multiplier](https://www.youtube.com/watch?v=iPzrkzaFKhI)
 
-- ["Lagrangian](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/lagrange-multipliers-and-constrained-optimization/v/the-lagrangian)
+- [Lagrangian](https://www.khanacademy.org/math/multivariable-calculus/applications-of-multivariable-derivatives/lagrange-multipliers-and-constrained-optimization/v/the-lagrangian)
