@@ -31,4 +31,4 @@ _Youtube Videos_
 3.[Multi-class Classification and Precision
 ](https://www.youtube.com/watch?v=wvMjy5rdBU8)
 
-4.[Accuracy](https://www.youtube.com/watch?v=T3qs3qpMANU)
+4.[Accuracy](https://www.youtube.com/watch?v=T3qs3qpMANU) 
