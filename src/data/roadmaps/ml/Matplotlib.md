@@ -74,13 +74,11 @@ plt.show()
 
 In this example, we use plt.xlabel() to add a label to the x-axis, plt.ylabel() to add a label to the y-axis, and plt.title() to add a title to the plot.
 
-#
 These are the basic steps to get started with Matplotlib. Matplotlib provides many more features and customization options, such as adding multiple subplots, saving the plot to a file, and more. 
 #
-# You can find more information and examples in the Matplotlib documentation.
+## You can find more information and examples in the Matplotlib documentation.
 
 Certainly, here are some helpful resources for studying Matplotlib:
-#
  - Matplotlib Documentation: 
 
     The official Matplotlib documentation is a comprehensive resource for learning about the library. It provides detailed information on how to use Matplotlib, including tutorials, examples, and a user guide. You can find the documentation at the following link:
