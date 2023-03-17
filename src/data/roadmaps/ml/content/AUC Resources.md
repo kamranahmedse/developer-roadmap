@@ -1,5 +1,5 @@
-# AUC
-## what is AUC
+# AUC Resources
+## what is AUC Resources
 
 
 
@@ -12,6 +12,6 @@ Visit the following resources to learn more:
 - [Guide to AUC resources](https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/)
 
 - [What is AUC Resources](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)
-- [How does the Internet work?](https://www.youtube.com/watch?v=TNQsmPf24go)
-- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
-- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+- [How does the AUC resource works?](https://towardsdatascience.com/deep-dive-into-roc-auc-cfdd78959ac3)
+- [Clear explantion about AUC resource](https://youtu.be/4H9g60dbPRg)
+- [concept and explanation of AUC](https://youtu.be/liiVoYDbs1A)
