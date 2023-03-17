@@ -1,6 +1,6 @@
 # Statistics
 
-## Statistics is a step by step guide to learn statistics with popular statistical tools such as SAS, R and Python. It would give you an idea how these algorithms works in background and how to perform these statistical techniques with statistical packages. It includes both theoretical as well as technical explanation.
+Statistics is a step by step guide to learn statistics with popular statistical tools such as SAS, R and Python. It would give you an idea how these algorithms works in background and how to perform these statistical techniques with statistical packages. It includes both theoretical as well as technical explanation.
 
 </br>
 
