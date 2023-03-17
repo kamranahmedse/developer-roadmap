@@ -1,10 +1,10 @@
 # Eigen vectors
 In linear algebra, the eigenvectors of a square matrix are non-zero vectors which when multiplied by the square matrix would result in just the scalar multiple of the vectors. i.e., a vector v is said to be an eigenvector of a square matrix A if and only if A v = λ v, for some scalar λ.
 
-![Eigen vectors](https://slidetodoc.com/presentation_image_h/2cbc0e16f0e1a328c9d560e3e08c51b3/image-9.jpg)
+![Eigen vectors](https://image1.slideserve.com/1800950/6-3-eigenvectors1-l.jpg)
 
 # [Eigenvectors _ML_ study](https://ekbanaml.github.io/linear%20algebra/EigenValues_EigenVectors/#:~:text=Almost%20all%20vectors%20change%20direction%20when%20they%20are,the%20scalar%20%24lambda%24%20is%20called%20the%20eigen%20value.)
-Almost all vectors change direction when they are multiplied by a transformation matrix suppose $A$. There are certain vectors $x$ that will give same direction when multiplied by $A$ and will be stretched by some scalar $lambda$. Thus, the vector $x$ is called the eigen vector and the scalar $lambda$ is called the eigen value.
+
 
 Visit the following resources to learn more:
 
