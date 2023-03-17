@@ -21,12 +21,14 @@ _Learning Resources_
 
 3.[wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall)
 
-_Accuracy, Recall and Precision Calculation_
+_Youtube Videos_
 
-1.[Youtube](https://www.youtube.com/watch?v=RYFViaaJxE8)
+1.[Precision Calculation](https://www.youtube.com/watch?v=RYFViaaJxE8)
 
-2.[Youtube](https://www.youtube.com/watch?v=NnmKeYUYMPY)
+2.[Binary Classification and Precision
+](https://www.youtube.com/watch?v=NnmKeYUYMPY)
 
-3.[Youtube](https://www.youtube.com/watch?v=wvMjy5rdBU8)
+3.[Multi-class Classification and Precision
+](https://www.youtube.com/watch?v=wvMjy5rdBU8)
 
-4.[Youtube](https://www.youtube.com/watch?v=T3qs3qpMANU)
+4.[Accuracy](https://www.youtube.com/watch?v=T3qs3qpMANU)
