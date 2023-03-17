@@ -1,12 +1,14 @@
-# Internet
 
-The Internet is a global network of computers connected to each other which communicate through a standardized set of protocols.
+
+Natural language processing (NLP) refers to the branch of computer science—and more specifically, the branch of artificial intelligence or AI—concerned with giving computers the ability to understand text and spoken words in much the same way human beings can.
+
+NLP combines computational linguistics—rule-based modeling of human language—with statistical, machine learning, and deep learning models. Together, these technologies enable computers to process human language in the form of text or voice data and to ‘understand’ its full meaning, complete with the speaker or writer’s intent and sentiment.
 
 Visit the following resources to learn more:
 
-- [The Internet Explained](https://www.vox.com/2014/6/16/18076282/the-internet)
-- [How Does the Internet Work?](http://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm)
-- [How Does the Internet Work? MDN Docs](https://developer.mozilla.org/en-US/docs/Learn/Common_questions/How_does_the_Internet_work)
-- [Introduction to Internet](/guides/what-is-internet)
-- [How does the Internet work?](https://www.youtube.com/watch?v=TNQsmPf24go)
-- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+- [List of NLP resources](https://www.kaggle.com/getting-started/55298)
+- [A Complete guide to
+Natural Language Processing](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=17s)
+- [Open-Source NLP Projects (With Tutorials)](https://www.theclickreader.com/open-source-nlp-projects-with-tutorials/)
+- [NLP Courses to Learn Natural Language Processing](https://www.youtube.com/watch?v=rmVRLeJRkl4&t=17s)
+

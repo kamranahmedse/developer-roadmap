@@ -12,7 +12,7 @@ dimensions:
   width: 968
   height: 2438.9
 sponsor:
-  url: "https://www.fermyon.com/spin?utm_source=javascript&utm_medium=banner&utm_campaign=roadmap-sh"
+  url: "https://developer.fermyon.com/spin/javascript-components?utm_source=javascript&utm_medium=banner&utm_campaign=roadmap-sh"
   title: "Serverless JavaScript Apps"
   imageUrl: "https://i.imgur.com/2ONZopb.jpg"
   description: "Go from blinking cursor to deployed serverless JavaScript apps in 66 seconds with Fermyon Cloud"
