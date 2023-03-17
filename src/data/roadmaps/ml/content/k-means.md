@@ -1,7 +1,6 @@
 # k-means:
-       I love working on recommendation engines. Whenever I encounter any recommendation engine on a website, I can’t wait to break it down and understand how it works. It’s one of the many great things about being a data scientist! Artificial Intelligence has revolutionized how we approach data analysis and has led to the development of powerful algorithms such as k-means clustering. K-means clustering, a part of the unsupervised learning family in AI, is used to group similar data points together in a process known as clustering. 
-
-       
+      K-means clustering is a type of unsupervised learning, which is used when you have unlabeled data (i.e., data without defined categories or groups). The goal of this algorithm is to find groups in the data, with the number of groups represented by the variable K. The algorithm works iteratively to assign each data point to one of K groups based on the features that are provided. Data points are clustered based on feature similarity. 
+      
 # Resources:
 - [DataCamp?](https://www.datacamp.com/community/tutorials/introduction-to-k-means-clustering)
     
