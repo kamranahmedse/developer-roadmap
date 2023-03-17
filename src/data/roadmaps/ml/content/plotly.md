@@ -2,35 +2,17 @@
 
 Plotly is a web-based data visualization library for creating interactive charts and graphs. It offers a wide range of graph types, including scatter plots, line charts, bar charts, and heatmaps, among others. Plotly allows you to create interactive visualizations that can be easily customized and shared
 
-plotly.py is a high-level, declarative charting library. plotly.js ships with over 30 chart types, including scientific charts, 3D graphs, statistical charts, SVG maps, financial charts, and more.
-
 # Installation
 
 Plotly does not come built-in with Python. To install it type the below command in the terminal.
 
 command line : **pip install plotly**
 
-# Package Structure of Plotly
-
-There are three main modules in Plotly. They are:
-plotly.plotly
-plotly.graph.objects
-plotly.tools
-**plotly.plotly** acts as the interface between the local machine and Plotly. It contains functions that require a response from Plotly’s server.
-
-**plotly.graph_objects** module contains the objects (Figure, layout, data, and the definition of the plots like scatter plot, line chart) that are responsible for creating the plots.  The Figure can be represented either as dict or instances of **plotly.graph_objects.Figure** and these are serialized as JSON before it gets passed to plotly.js. Consider the below example for better understanding.
-
 **Note:** plotly.express module can create the entire Figure at once. It uses the graph_objects internally and returns the graph_objects.Figure instance.
 
 
 # **Plotly Tutorial for Beginners**
 [Plotly for Beginner level](https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners)
-## Some plotes in plotly 
-    1.Line Charts
-    2.Scatter Charts
-    3.Bar Charts
-    4.Pie Charts
-    5.Bubble Charts
 
 # _Line plot_
 
