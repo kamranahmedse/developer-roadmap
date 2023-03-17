@@ -6,8 +6,6 @@ XGBoost is a popular gradient-boosting library for GPU training, distributed com
 
 -[XGBoost GitHub repository](https://github.com/dmlc/xgboost)
 
--[XGBoost Kaggle](https://www.kaggle.com/learn/xgboost)
-
 -[XGBoost on Python package](https://xgboost.readthedocs.io/en/latest/python/python_api.html)
 
 -[XGBoost on R package](https://xgboost.readthedocs.io/en/latest/R-package/index.html)
