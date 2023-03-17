@@ -9,5 +9,4 @@
 
 - [opecv coursera](https://in.coursera.org/projects/computer-vision-opencv-for-images)
 - [How it works? An Overview and Its Use Cases](https://www.devopsschool.com/blog/what-is-opennn-and-how-it-works-an-overview-and-its-use-cases/)
-
 - [opecv course by freeCodeCamp.org](https://youtu.be/oXlwWbU8l2o)
