@@ -6,7 +6,7 @@ The mode, the value with the highest probability of appearing, of a Bernoulli di
 
 # Resource for Bernoulli
 ## course on Bernoulli
-- [Bernoulli Distribution Explained](https://www.mygreatlearning.com/blog/bernoulli-distribution-explained/)
+- [Bernoulli Distribution Explained](https://www.mygreatlearning.com/blog/bernoulli-distribution-explained/) 
 ## Bloges
 - [Bernoulli Trials and Binomial Distribution](https://www.vedantu.com/maths/bernoulli-trials-and-binomial-distribution)
 
