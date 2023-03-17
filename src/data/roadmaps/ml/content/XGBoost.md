@@ -14,7 +14,7 @@ XGBoost is a popular gradient-boosting library for GPU training, distributed com
 
 - [Intro to XGBoost by datacamp](https://youtu.be/gUJVmds9DsI)
 
-- [XGBoost algorithm](https://youtu.be/PxgVFp5a0E4)
+- [XGBoost algorithm](https://youtu.be/PxgVFp5a0E4) 
 
 
 
