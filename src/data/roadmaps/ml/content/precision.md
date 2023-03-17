@@ -15,11 +15,11 @@ The number of positive class predictions that currently belong to the positive c
 
 _Learning Resources_
 
-1.[Javatpoint](https://www.javatpoint.com/precision-and-recall-in-machine-learning)
+1.[precision and recall in machine learning](https://www.javatpoint.com/precision-and-recall-in-machine-learning)
 
-2.[Deepchecks](https://deepchecks.com/glossary/precision-in-machine-learning)
+2.[Precision and its types](https://deepchecks.com/glossary/precision-in-machine-learning)
 
-3.[wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall)
+3.[Precision Calculation](https://en.wikipedia.org/wiki/Precision_and_recall)
 
 _Youtube Videos_
 
