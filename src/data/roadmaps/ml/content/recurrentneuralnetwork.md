@@ -6,7 +6,7 @@ Recurrent Neural Networks (RNNs) are a type of neural network used for processin
 
 
 
- ## VISIT RESOURCES FOR FURTHER DETAILS
+ ## VISIT RESOURCES FOR FURTHER DETAIL
 
  - [Introduction to Recurrent Neural Networks ](https://www.geeksforgeeks.org/introduction-to-recurrent-neural-network/)
  - [Some applications of RNNs in machine learning](https://iq.opengenus.org/applications-of-rnn/)
