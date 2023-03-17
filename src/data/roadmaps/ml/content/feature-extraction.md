@@ -29,15 +29,7 @@ Including training data that doesn’t directly contribute to solving the busine
 More-efficient use of compute resources:
 
 Pruning out peripheral data boosts speed and efficiency. With less data to sift through, compute resources aren’t dedicated to processing tasks that aren’t generating additional value.
-## Feature extraction techniques
-
-The following is a list of some common feature extraction techniques used by the Machine Learning community:
-
-Principle Components Analysis (PCA)
-Independent Component Analysis (ICA)
-Linear Discriminant Analysis (LDA)
-Locally Linear Embedding (LLE)
-t-distributed Stochastic Neighbor Embedding (t-SNE)
+## 
 
  #### APPLICATIONS OF FEATURE EXTRACTION:
  ***
@@ -69,6 +61,6 @@ We can now repeat a similar workflow as in the previous examples, this time usin
 
 ![feature extraction(https://www.mygreatlearning.com/blog/feature-extraction-in-image-processing/#sh1)]
 
-![Techniques(https://towardsdatascience.com/feature-extraction-techniques-d619b56e31be)]
+![Techniques(https://towardsdatascience.com/feature
 
 

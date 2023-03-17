@@ -8,4 +8,3 @@ Normalization is a technique often applied as part of data preparation for machi
 - [Normalization by DEEPCHECKS GLOSSARY](https://deepchecks.com/glossary/normalization-in-machine-learning/)
 - [Normalizing Inputs](https://www.coursera.org/lecture/deep-neural-network/normalizing-inputs-lXv6U)
 - [Normalization Vs. Standardization (Feature Scaling in Machine Learning)](https://youtu.be/bqhQ2LWBheQ)
-
