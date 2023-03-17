@@ -1,4 +1,4 @@
-Add Feedforward NN resources 
+
 
 # Definition Feedforward NN resources :
 
