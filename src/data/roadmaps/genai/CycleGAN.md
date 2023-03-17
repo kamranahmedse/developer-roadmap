@@ -6,7 +6,11 @@ The CycleGAN is a technique that involves the automatic training of image-to-ima
 # Sources of CycleGan:
 
 [CycleGAN by ArcDIS](https://developers.arcgis.com/python/guide/how-cyclegan-works/)
+
 [CycleGAN by Geeks for Geeks](https://www.geeksforgeeks.org/cycle-generative-adversarial-network-cyclegan-2/)
+
 [CycleGAN by Tensorflow](https://www.tensorflow.org/tutorials/generative/cyclegan)
+
 [CycleGAN by Aladdin persson](https://www.youtube.com/watch?v=4LktBHGCNfw)
+
 [Connor shorted CycleGAN](https://www.youtube.com/watch?v=AQBti_wN414)
