@@ -3,8 +3,8 @@
 
        
 # Resources:
--[DataCamp?](https://www.datacamp.com/community/tutorials/introduction-to-k-means-clustering)
+- [DataCamp?](https://www.datacamp.com/community/tutorials/introduction-to-k-means-clustering)
     
--[Stanford University?](https://web.stanford.edu/class/psych252/tutorials/Tutorial_KMeans.html)
+- [Stanford University?](https://web.stanford.edu/class/psych252/tutorials/Tutorial_KMeans.html)
 
--[Real Python?](https://realpython.com/k-means-clustering-python/)
+- [Real Python?](https://realpython.com/k-means-clustering-python/)
