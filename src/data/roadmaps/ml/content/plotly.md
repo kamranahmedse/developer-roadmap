@@ -34,8 +34,7 @@ fig = px.line(x=[1,2, 3], y=[1, 2, 3])
 print(fig)'''
 
 # **Plotly Tutorial for Beginners**
-[Website](https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners)
-
+[Plotly for Beginner level](https://www.kaggle.com/code/kanncaa1/plotly-tutorial-for-beginners)
 ## Some plotes in plotly 
     1.Line Charts
     2.Scatter Charts
@@ -45,96 +44,106 @@ print(fig)'''
 
 # _Line plot_
 
-_Line Charts Example_: Citation and Teaching vs World Rank of Top 100 Universities
+Line plot in Plotly is much accessible and illustrious annexation to plotly which manage a variety of types of data and assemble easy-to-style statistic. With px.line each data position is represented as a vertex  (which location is given by the x and y columns) of a polyline mark in 2D space.
 
->Import graph_objs as go
->Creating traces
-    >x = x axis
-    >y = y axis
-    >mode = type of plot like marker, line or line + markers
-    >name = name of the plots
-    >marker = marker is used with dictionary.
-        >>color = color of lines. It takes RGB (red, green, blue) and opacity (alpha)
-    >text = The hover text (hover is curser)
->data = is a list that we add traces into it
->layout = it is dictionary.
-    >title = title of layout
-    >x axis = it is dictionary
-        >title = label of x axis
-        >ticklen = length of x axis ticks
-        >zeroline = showing zero line or not
->fig = it includes data and layout
->iplot() = plots the figure(fig) that is created by data and layout
- [youtube](https://youtu.be/c6gVnZ0cmqM)
+_Example:_
+'''import plotly.express as px
+
+_#using the iris dataset._
+
+df = px.data.iris()
+
+_#plotting the line chart._
+
+fig = px.line(df, x="species", y="petal_width")
+
+_#showing the plot._
+
+fig.show()''
+
+ [Video Material](https://youtu.be/c6gVnZ0cmqM)
 
 # Scatter Charts
 
 A **scatter plot** is a set of dotted points to represent individual pieces of data in the horizontal and vertical axis. A graph in which the values of two variables are plotted along X-axis and Y-axis, the pattern of the resulting points reveals a correlation between them.
 
-[youtube](https://youtu.be/8UX0BE405Vg)
+[Video Material](https://youtu.be/8UX0BE405Vg)
 
 _Example:_
  '''import plotly.express as px
 
-# using the iris dataset
+_#using the iris dataset._
+
 df = px.data.iris()
 
-# plotting the scatter chart
+_#plotting the scatter chart._
+
 fig = px.scatter(df, x="species", y="petal_width")
 
-# showing the plot
+_#showing the plot._
+
 fig.show()'''
 
 # Bar chart 
 
 A **bar chart** is a pictorial representation of data that presents categorical data with rectangular bars with heights or lengths proportional to the values that they represent. In other words, it is the pictorial representation of dataset. These data sets contain the numerical values of variables that represent the length or height.
 
-[youtube](https://youtu.be/oz7sg5NW4WU)
+[Video Material](https://youtu.be/oz7sg5NW4WU)
 
 _Example:_
 '''import plotly.express as px
 
-# using the iris dataset
-df = px.data.iris()
+_#using the iris dataset._
 
-# plotting the bar chart
+df = px.data.iris()
+_#plotting the bar chart_
+
 fig = px.bar(df, x="sepal_width", y="sepal_length")
 
-# showing the plot
+_#showing the plot._
+
 fig.show()'''
 
 # Pie chart
 
 A **pie chart** is a circular statistical graphic, which is divided into slices to illustrate numerical proportions. It depicts a special chart that uses “pie slices”, where each sector shows the relative sizes of data. A circular chart cuts in a form of radii into segments describing relative frequencies or magnitude also known as circle graph.
 
-[youtube](https://youtu.be/7o6Aqp6kjTg)
+[Video Material](https://youtu.be/7o6Aqp6kjTg)
 
 _Example:_
 '''import plotly.express as px
 
-# using the tips dataset
+_#using the tips dataset_
+
 df = px.data.tips()
 
-# plotting the pie chart
+_#plotting the pie chart_
+
 fig = px.pie(df, values="total_bill", names="day")
 
-# showing the plot
+_#showing the plot_
+
 fig.show()'''
 
 # Bubble chart
 
 A **bubble plot** is a scatter plot with bubbles (color-filled circles). Bubbles have various sizes dependent on another variable in the data. It can be created using the scatter() method of plotly.express.
 
-[youtube](https://youtu.be/qzpNzyMTDTQ)
+[Video Material](https://youtu.be/qzpNzyMTDTQ)
 
  _Example:_
  '''import plotly.express as px
 
-# using the iris dataset
+_#using the iris dataset_
+
 df = px.data.iris()
 
-# plotting the scatter chart
+_#plotting the scatter chart_
+
 fig = px.scatter(df, x="species", y="petal_width")
 
-# showing the plot
+_#showing the plot_
+
 fig.show()'''
+
+[Coursera_project](https://in.coursera.org/projects/data-visualization-plotly-express)
