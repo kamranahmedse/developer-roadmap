@@ -8,6 +8,7 @@ As one of the most commonly used loss functions for regression problems, MAE hel
 
 > ### FORMULA
 > ![MAE](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.analyticsvidhya.com%2Fblog%2F2021%2F10%2Fevaluation-metric-for-regression-models%2F&psig=AOvVaw0pkLJhVOL04Qd1tYeqqshc&ust=1679149036572000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCKiwuOCT4_0CFQAAAAAdAAAAABAE)
+> - hello
 
 ### REFERENCE
 - [Medium.com](https://medium.com/@20__80__/mean-absolute-error-mae-machine-learning-ml-b9b4afc63077)
