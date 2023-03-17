@@ -9,7 +9,6 @@ Enables developers to use a REST interface to call commonly used functions to im
 
 # Resource
 - [What is Fast API?](https://fastapi.tiangolo.com/)
-
 - [Understanding Fast API?](https://www.analyticsvidhya.com/blog/2022/08/getting-started-with-restful-apis-and-fast-api/)
 - [Advanced Feature of Fast API?](https://levelup.gitconnected.com/5-advance-features-of-fastapi-you-should-try-7c0ac7eebb3e)
 - [Fast API for Flask Users?](https://amitness.com/2020/06/fastapi-vs-flask/)
