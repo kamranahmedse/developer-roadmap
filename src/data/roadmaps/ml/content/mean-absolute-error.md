@@ -12,4 +12,4 @@ As one of the most commonly used loss functions for regression problems, MAE hel
 ### REFERENCE
 - [Medium.com](https://medium.com/@20__80__/mean-absolute-error-mae-machine-learning-ml-b9b4afc63077)
 - [Wikipedia](https://en.wikipedia.org/wiki/Mean_absolute_error)
-
+- [Youtube](https://www.youtube.com/watch?v=fk7bzKFDmk8)
