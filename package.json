@@ -18,21 +18,21 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^1.0.1",
-    "@astrojs/tailwind": "^3.0.1",
-    "astro": "^2.0.8",
-    "astro-compress": "^1.1.31",
-    "node-html-parser": "^6.1.4",
-    "npm-check-updates": "^16.6.5",
+    "@astrojs/sitemap": "^1.2.0",
+    "@astrojs/tailwind": "^3.1.0",
+    "astro": "^2.1.2",
+    "astro-compress": "^1.1.35",
+    "node-html-parser": "^6.1.5",
+    "npm-check-updates": "^16.7.12",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.4",
-    "tailwindcss": "^3.2.6"
+    "tailwindcss": "^3.2.7"
   },
   "devDependencies": {
-    "@playwright/test": "^1.30.0",
+    "@playwright/test": "^1.31.2",
     "@tailwindcss/typography": "^0.5.9",
     "gh-pages": "^5.0.0",
-    "json-to-pretty-yaml": "^1.2.2",
+    "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
     "prettier": "^2.8.4",
     "prettier-plugin-astro": "^0.8.0"

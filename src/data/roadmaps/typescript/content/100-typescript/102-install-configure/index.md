@@ -23,9 +23,9 @@ npm install --save-dev typescript
     "module": "commonjs",
     "strict": true,
     "outDir": "./dist",
-    "rootDir": "./src",
-    "exclude": ["node_modules"]
-  }
+    "rootDir": "./src"
+  },
+  "exclude": ["node_modules"]
 }
 ```
 

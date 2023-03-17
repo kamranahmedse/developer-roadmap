@@ -8,7 +8,7 @@ author:
 seo:
   title: "HTTP Basic Authentication - roadmap.sh"
   description: "Learn what is HTTP Basic Authentication and how to implement it in Node.js"
-isNew: true
+isNew: false
 type: "textual"
 date: 2022-10-03
 sitemap:

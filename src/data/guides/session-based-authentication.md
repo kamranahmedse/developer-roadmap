@@ -8,7 +8,7 @@ author:
 seo:
   title: "Session Based Authentication - roadmap.sh"
   description: "Learn what is Session Based Authentication and how to implement it in Node.js"
-isNew: true
+isNew: false
 type: "textual"
 date: 2022-11-01
 sitemap:

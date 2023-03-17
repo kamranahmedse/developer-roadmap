@@ -1,5 +1,5 @@
 ---
-order: 11
+order: 12
 briefTitle: "React Native"
 briefDescription: "Step by step guide to becoming a React Native Developer in 2023"
 title: "React Native Developer"

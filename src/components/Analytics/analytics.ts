@@ -2,6 +2,8 @@ export {};
 
 declare global {
   interface Window {
+    // To selectively enable/disable debug logs
+    __DEBUG__: boolean;
     gtag: any;
     fireEvent: (props: GAEventType) => void;
   }
@@ -25,6 +27,10 @@ window.fireEvent = (props: GAEventType) => {
   if (!window.gtag) {
     console.warn('Missing GTAG - Analytics disabled');
     return;
+  }
+
+  if (window.__DEBUG__) {
+    console.log('Analytics event fired', props);
   }
 
   window.gtag('event', action, {

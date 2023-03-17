@@ -32,8 +32,11 @@ Here is the list of PDF links for each of the roadmaps.
 * **Python Roadmap** - [Roadmap Link](https://roadmap.sh/python) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/python.pdf)
 * **System Design** - [Roadmap Link](https://roadmap.sh/system-design) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/system-design.pdf)
 * **Kubernetes** - [Roadmap Link](https://roadmap.sh/kubernetes) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/kubernetes.pdf)
+* **Cyber Security** - [Roadmap Link](https://roadmap.sh/cyber-security) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/cyber-security.pdf)
+* **MongoDB** - [Roadmap Link](https://roadmap.sh/mongodb) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/mongodb.pdf)
 
 Here is the list of PDF links for each of the best practices:
 
 * **Frontend Performance** - [Best Practices Link](https://roadmap.sh/best-practices/frontend-performance) / [PDF Link](https://roadmap.sh/pdfs/best-practices/frontend-performance.pdf)
 * **API Security** - [Best Practices Link](https://roadmap.sh/best-practices/api-security) / [PDF Link](https://roadmap.sh/pdfs/best-practices/api-security.pdf)
+* **Amazon Web Services (AWS)** - [Best Practices Link](https://roadmap.sh/best-practices/aws) / [PDF Link](https://roadmap.sh/pdfs/best-practices/aws.pdf)

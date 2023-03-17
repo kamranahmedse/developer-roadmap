@@ -83,3 +83,26 @@ export async function getRoadmapsByTag(tag: string): Promise<RoadmapFileType[]> 
 
   return filteredRoadmaps.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 }
+
+export async function getRoadmapById(id: string): Promise<RoadmapFileType> {
+  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>('/src/data/roadmaps/*/*.md', {
+    eager: true,
+  });
+
+  const roadmapFile = Object.values(roadmapFilesMap).find((roadmapFile) => {
+    return roadmapPathToId(roadmapFile.file) === id;
+  });
+
+  if (!roadmapFile) {
+    throw new Error(`Roadmap with ID ${id} not found`);
+  }
+
+  return {
+    ...roadmapFile,
+    id: roadmapPathToId(roadmapFile.file),
+  };
+}
+
+export async function getRoadmapsByIds(ids: string[]): Promise<RoadmapFileType[]> {
+  return Promise.all(ids.map((id) => getRoadmapById(id)));
+}
