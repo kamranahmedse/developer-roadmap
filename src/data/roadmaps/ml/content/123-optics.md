@@ -1,4 +1,4 @@
-"optics ml lgorithm "
+"optics ml algorithm "
 
         Optics (Ordering Points To Identify the Clustering Structure) is a machine learning algorithm used for clustering and identifying structure in datasets. It is a density-based clustering algorithm that finds clusters of varying shapes and sizes, and is useful for datasets with high variability in density.
 
