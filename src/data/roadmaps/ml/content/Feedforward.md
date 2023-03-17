@@ -27,5 +27,6 @@ The network is organized into layers, with each layer consisting of multiple neu
  [This video series provides a step-by-step explanation of neural networks, including feedforward networks. It includes examples in Python using the NumPy library.](https://www.youtube.com/watch?v=bxe2T-V8XRs)
 
 "Deep Learning 101" by Brandon Rohrer 
+
 [This video provides an introduction to deep learning, including feedforward networks. It covers the basics of how neural networks work and how they can be trained.](https://www.youtube.com/watch?v=QJoa0JYaX1I)
 
