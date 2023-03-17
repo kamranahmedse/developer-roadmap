@@ -10,11 +10,11 @@ The uniform distribution can be visualized as a straight horizontal line, so for
           root((y-x)^2/12)
 
 # Resources
-[Introduction video](https://www.youtube.com/watch?v=-qt8CPIadWQ)
+- [Introduction video](https://www.youtube.com/watch?v=-qt8CPIadWQ)
 
-[What is uniform distribution?](https://www.investopedia.com/terms/u/uniform-distribution.asp)
+- [What is uniform distribution?](https://www.investopedia.com/terms/u/uniform-distribution.asp)
 
-[Uniform distribution formula](https://www.geeksforgeeks.org/uniform-distribution-formula/)
+- [Uniform distribution formula](https://www.geeksforgeeks.org/uniform-distribution-formula/)
 
-[Problem video](https://www.youtube.com/watch?v=KfunVw-0AH0)
+- [Problem video](https://www.youtube.com/watch?v=KfunVw-0AH0)
 
