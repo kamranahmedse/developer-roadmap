@@ -3,6 +3,7 @@ Definition:
     A loss function is mathematical function that measures the difference between the predicted output and the actual output.It is also a method of evaluating how well your algorithm models your dataset.
 
 RESOURCES:
+
     1. [Machine learning mastery](https://machinelearningmastery.com/how-to-choose-loss-functions-when-training-deep-learning-neural-networks/)
 
     2. [Tensor Flow](https://blog.tensorflow.org/2019/03/overview-of-loss-functions-in-tensorflow.html)
