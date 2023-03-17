@@ -8,6 +8,8 @@ Batch normalization (BN) is a technique used in machine learning and deep learni
 
 Batch normalization has been shown to be effective in a wide range of deep learning tasks, including image classification, object detection, and s  peech recognition. It is widely used in many popular deep learning frameworks, such as TensorFlow, PyTorch, and Keras.
 
+<br>
+
 Visit the following resources to learn more:    
 - [Feature Scaling and Normalization](https://machinelearningmastery.com/normalize-standardize-machine-learning-data-weka/)
 
