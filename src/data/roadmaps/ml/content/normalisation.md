@@ -8,4 +8,4 @@
 - [GeeksforGeeks](https://www.geeksforgeeks.org/database-normalization-normal-forms/)
 - [Studytonight](https://www.studytonight.com/dbms/database-normalization.php)
 - [tutorialspoint](https://www.tutorialspoint.com/dbms/dbms_normalization.htm)
-- [Databasestar](https://www.databasestar.com/database-normalization-explained-in-simple-english/)
+- [Databasestar](https://www.databasestar.com/database-normalization-explained-in-simple-english/) 
