@@ -4,3 +4,6 @@ To improve the efficiency of level-wise generation of frequent itemsets, an impo
 
 
 - [What is Apriori](https://www.geeksforgeeks.org/apriori-algorithm/)
+- [What is Apriori](https://www.simplilearn.com/tutorials/machine-learning-tutorial/apriori-algorithm-in-data-mining)
+- [Apriori youtube video](https://www.youtube.com/watch?v=guVvtZ7ZClw)
+- [What is apriori algorithm](https://www.mygreatlearning.com/blog/apriori-algorithm-explained/)
