@@ -7,7 +7,7 @@
 <span style="color:grey">
 <h1> What is bigram?</h1>
 
-</style>
+
 
 <span style="color:white">
 
