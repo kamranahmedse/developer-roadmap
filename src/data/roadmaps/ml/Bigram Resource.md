@@ -15,7 +15,7 @@
 *  Bigrams are widely used in natural language processing (NLP) and computational linguistics, particularly for tasks such as language modeling, part-of-speech tagging, and text classification
 
 
-<h3>Learn More</h3>
+<h3> visit the following resources to learn more :</h3>
 
 
 
