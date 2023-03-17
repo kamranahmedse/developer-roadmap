@@ -1,25 +1,17 @@
-# head1
-
-## head2
-
-### head3
+# AUC
+## what is AUC
 
 
-#### head4
 
-_italics_
-__bold__
+AUC stands for Area Under the Curve. It is a metric used to evaluate the performance of binary classification models. The AUC represents the area under the Receiver Operating Characteristic (ROC) curve, which plots the true positive rate (sensitivity) against the false positive rate (1-specificity) for different classification thresholds.
 
-- one
-- two
-- three
+The AUC is a value between 0 and 1, where 1 represents a perfect classifier that can distinguish between the positive and negative classes with 100% accuracy, and 0.5 represents a random classifier that performs no better than chance. A higher AUC indicates better performance of the model at distinguishing between the positive and negative classes.
 
-1. one
-2. two
-3. three
+Visit the following resources to learn more:
 
-```python
-print("hello")
-```
+- [Guide to AUC resources](https://www.analyticsvidhya.com/blog/2020/06/auc-roc-curve-machine-learning/)
 
-[pandas for beginners](https://www.w3schools.com/python/pandas/pandas_intro.asp)
+- [What is AUC Resources](https://developers.google.com/machine-learning/crash-course/classification/roc-and-auc)
+- [How does the Internet work?](https://www.youtube.com/watch?v=TNQsmPf24go)
+- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+- [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
