@@ -9,8 +9,8 @@
 
 - [Real Python?](https://realpython.com/k-means-clustering-python/)
 
--[Clustering Data Science?](https://towardsdatascience.com/k-means-clustering-algorithm-explained-in-detail-2624cd597d42)
+- [Clustering Data Science?](https://towardsdatascience.com/k-means-clustering-algorithm-explained-in-detail-2624cd597d42)
 
--[DataFlair?](https://data-flair.training/blogs/pros-and-cons-of-k-means-clustering/)
+- [DataFlair?](https://data-flair.training/blogs/pros-and-cons-of-k-means-clustering/)
 
--[R bloggers?](https://www.r-bloggers.com/2018/09/k-means-clustering-in-r/)
+- [R bloggers?](https://www.r-bloggers.com/2018/09/k-means-clustering-in-r/)
