@@ -1,0 +1,1 @@
+# Atlas search indexes
