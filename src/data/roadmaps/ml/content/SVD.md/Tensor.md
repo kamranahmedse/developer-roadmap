@@ -4,6 +4,8 @@ _End-to-end open source platform for machine learning._
 ## About tensorflow serving resources:
 TensorFlow Serving is a flexible, high-performance serving system for machine learning models, designed for production environments. TensorFlow Serving makes it easy to deploy new algorithms and experiments, while keeping the same server architecture and APIs. TensorFlow Serving provides out-of-the-box integration with TensorFlow models, but can be easily extended to serve other types of models and data.
 
+[First Steps with TensorFlow: Programming Exercises](https://developers.google.com/machine-learning/crash-course/first-steps-with-tensorflow/programming-exercises)
+
 Visit the following resources to learn more:
 - [Tensorflow serving(Git hub)](https://github.com/tensorflow/serving)
 - [Machine learning with Tensorflow(coursera)](https://www.coursera.org/specializations/machine-learning-tensorflow-gcp?irclickid=xK3VuUxP1xyNWqUQodwnHxJuUkARLS3BqT-QRc0&irgwc=1&utm_medium=partners&utm_source=impact&utm_campaign=1962309&utm_content=b2c)
