@@ -1,8 +1,8 @@
 # SYMMETRIC MATRICES:
 ## DEFINITION:
-- The sum of two symmetric matrices is a symmetric matrix.
-- If we multiply a symmetric matrix by a scalar, the result will be a symmetric matrix.]
-- If A and B are symmetric matrices then AB+BA is a symmetric matrix (thus symmetric matrices form a so-called Jordan algebra).
+The sum of two symmetric matrices is a symmetric matrix.
+If we multiply a symmetric matrix by a scalar, the result will be a symmetric matrix.]
+If A and B are symmetric matrices then AB+BA is a symmetric matrix (thus symmetric matrices form a so-called Jordan algebra).
 # RESOURCES:
 - [Basic properties](https://en.wikipedia.org/wiki/Symmetric_matrix)
 - [Symmetric and Skew-Symmetric Matrices](https://www.toppr.com/guides/maths/matrices/symmetric-and-skew-symmetric-matrices/)
