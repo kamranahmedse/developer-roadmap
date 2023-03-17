@@ -19,6 +19,8 @@ _Learning Resources_
 
 2.[Deepchecks](https://deepchecks.com/glossary/precision-in-machine-learning)
 
+3.[wikipedia](https://en.wikipedia.org/wiki/Precision_and_recall)
+
 _Accuracy, Recall and Precision Calculation_
 
 1.[Youtube](https://www.youtube.com/watch?v=RYFViaaJxE8)
