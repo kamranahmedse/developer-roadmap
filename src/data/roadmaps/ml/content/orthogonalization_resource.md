@@ -17,7 +17,7 @@ An algorithm to construct for a given linear independent system of vectors in a 
  and the matrix C
  are defined uniquely by these conditions.
 
-## Visit the following resources to learn more:
+# Visit the following resources to learn more:
 
 - [Gram Schmidt Orthonormalization Process With an Example](https://byjus.com/maths/gram-schmidt-orthonormalization-process/)
 - [Orthogonalization in Machine Learning - Medium](https://medium.com/structuring-your-machine-learning-projects/orthogonalization-in-machine-learning-ee19f930d102)
