@@ -1,15 +1,6 @@
 # Introduction to Probability Resources
-Probability resources refer to any tools, methods, or techniques used to estimate the likelihood or chance of an event occurring. These resources are essential in many fields, including statistics, mathematics, finance, engineering, and science.
-
-Some examples of probability resources include:
-1. Probability theory
-2. Probability distributions
-3. Statistical software
-4. Simulation tools
-5. Probability models
-6. Probability tables
-
-probability resources are essential for making informed decisions in many fields. They can be used to estimate risks, make predictions, and optimize processes.
+Probability resources refer to any tools, methods, or techniques used to estimate the likelihood or chance of an event occurring. These resources are essential in many fields, including statistics, mathematics, finance, engineering, and science.probability resources are essential for making informed decisions in many fields. They can be used to estimate risks, make predictions, and optimize processes.
+Some examples of probability resources include:Probability theory,Probability distributions,Statistical software,Simulation tools,Probability models,Probability tables
 
 ## Learn more
 The below links are recommended to learn more about Probability Resources.
