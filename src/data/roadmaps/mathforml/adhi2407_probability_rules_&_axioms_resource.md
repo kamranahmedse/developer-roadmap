@@ -1,3 +1,4 @@
+# PROBABILITY & AXIOMS
 # Define Probability
 1.   Probability means possibility. It is a branch of mathematics that deals with the occurrence of a random event. 
 2.  The value is expressed from zero to one. Probability has been introduced in Maths to predict how likely events are to happen. 
@@ -11,6 +12,12 @@
 2.   Here is an axiom of addition and multiplication.
 3.  Let x and y be real numbers.
 4.  Then x + y is also a real number and xy is also a real number.
+
+## Follow this link ;
+
+
+
+
 
 - [ probability of axioms blocks ](https://www.thoughtco.com/what-are-probability-axioms-3126567)
 - [Axioms of Probability](https://www.math.purdue.edu/~stindel/teaching/ma519/axioms-probability.pdf)
