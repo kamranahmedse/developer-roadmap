@@ -1,5 +1,9 @@
 
-<h1>**PYTORCH RESOURCES**</h1>
+<h1>
+
+**PYTORCH RESOURCES**
+
+</h1>
 
 
 <span style="color:grey">
