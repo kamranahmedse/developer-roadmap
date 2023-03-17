@@ -3,7 +3,8 @@ FP-trees are an efficient data structure used in data mining to discover frequen
 ## Learn more
 The below links are recommended to learn more about FP trees:
 
-### Online Course: [Mining Massive Datasets](https://online.stanford.edu/courses/soe-ycs0007-mining-massive-data-sets)
+### Online Course:
+>[Mining Massive Datasets](https://online.stanford.edu/courses/soe-ycs0007-mining-massive-data-sets)
 
 ### Book: Data Mining:Introductory and Advanced Topics
 > [Amazon](https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjTnJXir-P9AhVKHSsKHbyYAHUYABAIGgJzZg&ase=2&ohost=www.google.com&cid=CAESbOD2LcAh1yM0CA6qR2Ygfxmg9h6ygQrGJnypBykebllIbCzJ5SPxuw4d5_0Dt7OseUDh6kWT0ma_fYFPJe4IC24mWl78hYDL5Qa9TKK_LEC1Y3iKjuH7QPk8T7xi2V5GnyLN9m1uEzWbXMwVMA&sig=AOD64_3jGZepZkxenGqGMu4mbDvKNpAJkA&ctype=5&q=&nis=4&ved=2ahUKEwj0oo7ir-P9AhXZRmwGHRWGBd8Q9aACKAB6BAgDEA0&adurl=)
