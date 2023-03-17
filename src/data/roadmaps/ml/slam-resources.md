@@ -10,13 +10,12 @@ The below links are recommended to learn more about FP trees:
 
 ### Book:
 1. [Probabilistic Robotics (Intelligent Robotics and Autonomous Agents series)](https://amzn.eu/d/i8CxzIQ)
-
 2. [Robotic Mapping and Exploration](https://amzn.eu/d/2y8zTx0)
 
 
 ### Blogs:
-1. [Simultaneous localization and mapping](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
-2. [What Is Simultaneous Localization and Mapping](https://blogs.nvidia.com/blog/2019/07/25/what-is-simultaneous-localization-and-mapping-nvidia-jetson-isaac-sdk/)
+1. ["Simultaneous localization and mapping" By Wikipedia](https://en.wikipedia.org/wiki/Simultaneous_localization_and_mapping)
+2. ["What Is Simultaneous Localization and Mapping" By NVidia](https://blogs.nvidia.com/blog/2019/07/25/what-is-simultaneous-localization-and-mapping-nvidia-jetson-isaac-sdk/)
 
 ### Videos:
 1. [Simultaneous Localization and Mapping (SLAM)](https://youtu.be/mQQL8pmztb4)
