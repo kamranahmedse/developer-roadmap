@@ -3,10 +3,10 @@ This generalisation of NSL is known as Adversarial Regularisation, where adversa
 
 ![](<https://miro.medium.com/v2/resize:fit:968/1*AuC-ZlRwuV3-obQj0Pk1uA.png>)
 
-<br>
 
 ### Reference:
 
 - [TowardsDataScience](https://towardsdatascience.com/neural-structured-learning-adversarial-regularization-378523dace08)
 - [TensorFlow](https://www.tensorflow.org/neural_structured_learning/tutorials/adversarial_keras_cnn_mnist)
 - [Youtube](https://www.youtube.com/watch?v=Js2WJkhdU7k)
+
