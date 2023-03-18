@@ -1,0 +1,7 @@
+# Reinforcement learning with function approximation
+In tabular methods like DP and Monte Carlo we have seen that the representation of the states is actually a memorisation of each state.Now let’s recall what is exactly a state.A state is the combination of observable features or variables. Which means every time a feature or a variable has a new value, it results in a a new state.
+## Visit the following to learn more:
+-[Function Approximation in Reinforcement Learning](https://towardsdatascience.com/function-approximation-in-reinforcement-learning-85a4864d566)
+-[Function Approximation in Reinforcement Learning](https://towardsdatascience.com/function-approximation-in-reinforcement-learning-85a4864d566)
+-[Prediction and Control with Function Approximation - Coursera](https://in.coursera.org/learn/prediction-control-function-approximation)
+-[Tutorial: Introduction to Reinforcement Learning with Function](https://www.youtube.com/watch?v=Fsh1qMTg1xI)
