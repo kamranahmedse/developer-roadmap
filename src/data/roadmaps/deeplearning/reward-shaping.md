@@ -9,3 +9,6 @@ Reward shaping is a technique used in reinforcement learning to improve the lear
 [Theory and Application ](https://www.ideals.illinois.edu/items/10802)
 
 [Reference Link](https://crossminds.ai/video/learning-to-utilize-shaping-rewards-a-new-approach-of-reward-shaping-606fe26bf43a7f2f827c0093/)
+
+[What is Data Augmentation? The Complete Guide!](https://www.amygb.ai/blog/what-is-data-augmentation)
+
