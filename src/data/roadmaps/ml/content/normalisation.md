@@ -1,24 +1,10 @@
 # Normalisation
 
-## What is Normalisation?
+Normalization is a technique often applied as part of data preparation for machine learning. The goal of normalization is to change the values of numeric columns in the dataset to use a common scale, without distorting differences in the ranges of values or losing information
 
-Batch normalization (BN) is a technique used in machine learning and deep learning to improve the performance and stability of artificial neural networks. It involves normalizing the inputs to each layer of a neural network to have zero mean and unit variance, which can help to prevent overfitting and improve training speed.
-
-## Why we use Normalisation?
-
-Batch normalization has been shown to be effective in a wide range of deep learning tasks, including image classification, object detection, and s  peech recognition. It is widely used in many popular deep learning frameworks, such as TensorFlow, PyTorch, and Keras.
-
-<br>
-
-Visit the following resources to learn more:    
-- [Feature Scaling and Normalization](https://machinelearningmastery.com/normalize-standardize-machine-learning-data-weka/)
-
-- [What is Data Normalization and Why Is It Important?](https://dzone.com/articles/what-is-data-normalization-and-why-is-it-important)
-
-- [Understanding Feature Scaling and Normalization in Machine Learning](https://www.datacamp.com/community/tutorials/feature-scaling-normalization-in-python)
-
-- [Why, How and When to Scale Your Features](https://sebastianraschka.com/Articles/2014_about_feature_scaling.html)
-
-- [Normalization vs Standardization](https://www.analyticsvidhya.com/blog/2020/04/feature-scaling-machine-learning-normalization-standardization/)
-
-- [Learn Batch Normalisation in 20 mins](https://youtu.be/dXB-KQYkzNU)
+# Resources
+- [Normalization in Machine Learning](https://www.javatpoint.com/normalization-in-machine-learning)
+- [Normalization Techniques in ML](https://developers.google.com/machine-learning/data-prep/transform/normalization)
+- [Normalization by DEEPCHECKS GLOSSARY](https://deepchecks.com/glossary/normalization-in-machine-learning/)
+- [Normalizing Inputs](https://www.coursera.org/lecture/deep-neural-network/normalizing-inputs-lXv6U)
+- [Normalization Vs. Standardization (Feature Scaling in Machine Learning)](https://youtu.be/bqhQ2LWBheQ)
