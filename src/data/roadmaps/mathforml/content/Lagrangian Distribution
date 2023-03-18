@@ -1,0 +1,6 @@
+# Lagrangian Distributions
+All such distributions have their wave front sets in the normal bundle of Y which is a conic Lagrangian manifold. In Section 25.1 we generalize the notion of conormal distribution by defining the space of Lagrangian distributions associated with an arbitrary conic Lagrangian Λ ⊂ T*(X)\0.
+
+# Formula
+
+A(h)u(x) = ∫ KA(x, y;h)u(y)dy
