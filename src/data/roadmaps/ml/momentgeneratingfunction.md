@@ -12,11 +12,11 @@ Finding moments of linear combinations,
 Hypothesis testing
 
 ## YOUTUBE RESOURCE
-1.https://www.youtube.com/watch?v=dVRWBmykncQ
-2.https://www.youtube.com/watch?v=_pCVlYctBpQ
+https://www.youtube.com/watch?v=dVRWBmykncQ
+https://www.youtube.com/watch?v=_pCVlYctBpQ
 
 ## COURSERA COURSES
-1.https://www.coursera.org/lecture/analytic-combinatorics/moment-calculations-WWLaT
+https://www.coursera.org/lecture/analytic-combinatorics/moment-calculations-WWLaT
 
-2.https://www.coursera.org/lecture/prob2/9-2-c-mgf-xia-pb6XI
+https://www.coursera.org/lecture/prob2/9-2-c-mgf-xia-pb6XI
 
