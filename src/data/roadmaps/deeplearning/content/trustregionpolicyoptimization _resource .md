@@ -1,6 +1,6 @@
 # TRUST REGION POLICY OPTIMIZATION RESOURCE 
 ## ABOUT TRPO:
-Trust Region Policy Optimization, or TRPO, is a policy gradient method in reinforcement learning that avoids parameter updates that change the policy too much with a KL divergence constraint on the size of the policy update at each iteration.
+Trust Region Policy Optimization, or TRPO, is a policy gradient method in reinforcement learning that avoids parameter updates that change the policy too much with a KL divergence constraint on the size of the policy update at each iteration. TRPO alternates between sampling data through environmental interaction and updating the policy parameters by solving a constrained optimization problem.Trust Region Policy Optimization, or TRPO, is a policy gradient method in reinforcement learning that avoids parameter updates that change the policy too much with a KL divergence constraint on the size of the policy update at each iteration.
 
 ## Visit the following resources to learn more:
 
