@@ -6,12 +6,12 @@
 <img src="https://www.skcript.com/svrmedia/heroes/awesome-tensorflow.jpg">
 
 ### ***Resources to learn Tensorflow*** :
- #### *Youtube* : 
+
  - [Tutorial](https://youtu.be/tXVNS-V39A0)
  <br>
-  #### *Coursera* :
+
   - [tensorflow-in-practice](https://www.coursera.org/professional-certificates/tensorflow-in-practice)
   - [tensorflow-advanced-techniques](https://www.coursera.org/specializations/tensorflow-advanced-techniques)
 <br>
-  #### *Blogs* :
+
  - [Learn Tensorflow](https://robterceros.medium.com/the-5-best-resources-to-learn-tensorflow-in-2020-65b764a5fb8c )

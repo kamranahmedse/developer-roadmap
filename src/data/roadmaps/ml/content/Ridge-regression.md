@@ -6,18 +6,11 @@
 ">Read More...</a> </em> 
 
 ### Visit the following resources to learn more:
- #### Youtube Videos :
-
 - [BEGINNER](https://youtu.be/OEU22e20tWw)
 - [INTERMEDIATE](https://youtu.be/Q81RR3yKn30)
 - [RIDGE vs LASSO]( https://youtu.be/Xm2C_gTAl8c)
-
-#### Coursera :
 - [IBM](https://www.coursera.org/videos/supervised-machine-learning-regression/u3ggW?query=ridge+regression+resourses&source=search)
-
-#### Github:
-
-*https://github.com/alexhuth/ridge.git*
+- *https://github.com/alexhuth/ridge.git*
 
 
 
