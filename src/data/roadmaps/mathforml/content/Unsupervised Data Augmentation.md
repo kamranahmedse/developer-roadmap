@@ -18,7 +18,7 @@ Since regularizing the predictions to have low entropy has been shown to be bene
 
 [Unsupervised Data Augmentation and its types](https://sh-tsang.medium.com/review-uda-unsupervised-data-augmentation-for-consistency-training-3c97274b20c5)
 
-# Youtube Vedieos
+# Youtube Videos
 
 [Unsupervised Data Augmentation
 ](https://www.youtube.com/watch?v=-u8Mi57BDIY)
