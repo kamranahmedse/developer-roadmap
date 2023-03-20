@@ -17,6 +17,24 @@ export default defineConfig({
         rehypeExternalLinks,
         {
           target: '_blank',
+          rel: function (element) {
+            const href = element.properties.href;
+            const whiteListedStarts = [
+              '/',
+              '#',
+              'mailto:',
+              'https://github.com/kamranahmedse',
+              'https://thenewstack.io',
+              'https://cs.fyi',
+              'https://roadmap.sh'
+            ];
+
+            if (whiteListedStarts.some((start) => href.startsWith(start))) {
+              return [];
+            }
+
+            return 'noopener noreferrer nofollow';
+          },
         },
       ],
     ],
