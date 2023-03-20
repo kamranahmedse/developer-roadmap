@@ -20,13 +20,9 @@ tags:
   - "guide-sitemap"
 ---
 
+Given below is the demonstration of a sample production environment for a web application that consists of two different components, application server and database server.
 
-![](https://i.imgur.com/otqj9D4.png)
-
-Given above is the demonstration of a sample production environment for a web application that consists of two different components:
-
-- Application Server
-- Database Server
+![](https://i.imgur.com/nBJDuVO.png)
 
 Application server has both a public and private IP address. It is accessible from the internet. Database server has only a private IP address and is accessible only from the application server.
 
