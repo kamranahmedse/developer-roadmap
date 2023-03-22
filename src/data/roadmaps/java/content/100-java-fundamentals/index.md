@@ -14,5 +14,5 @@ Visit the following resources to learn more:
 - [Effective Java](https://www.amazon.com/Effective-Java-Joshua-Bloch/dp/0134685997)
 - [Java: A Beginners Guide](https://www.amazon.co.uk/Java-Beginners-Guide-Herbert-Schildt/dp/1260463559)
 - [Java: The Complete Reference](https://www.amazon.co.uk/gp/product/B09JL8BMK7/ref=dbs_a_def_rwt_bibl_vppi_i2)
-- [Java Tutorial for Beginners] (https://www.scaler.com/topics/java/)
+- [Java Tutorial for Beginners](https://www.scaler.com/topics/java/)
 - [Java Video Tutorial for Beginners](https://www.scaler.com/topics/course/java-beginners/)
