@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [Vite Website](https://vitejs.dev)
 - [Vite Documentation](https://vitejs.dev/guide)
+- [Vite Full Course](https://youtu.be/VAeRhmpcWEQ)
 - [Vite Crash Course](https://youtu.be/LQQ3CR2JTX8)
