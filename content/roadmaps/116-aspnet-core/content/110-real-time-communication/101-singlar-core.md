@@ -1,1 +1,0 @@
-# Singlar core

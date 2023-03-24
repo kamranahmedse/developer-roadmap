@@ -1,0 +1,45 @@
+---
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import RoadmapBanner from '../../components/RoadmapBanner.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getRoadmapTopicFiles, RoadmapTopicFileType } from '../../lib/roadmap-topic';
+
+export async function getStaticPaths() {
+  const topicPathMapping = await getRoadmapTopicFiles();
+
+  return Object.keys(topicPathMapping).map((topicSlug) => {
+    const topicDetails = topicPathMapping[topicSlug];
+    const roadmapId = topicDetails.roadmapId;
+    const topicId = topicSlug.replace(`/${roadmapId}/`, '');
+
+    return {
+      params: {
+        topicId,
+        roadmapId,
+      },
+      props: topicDetails,
+    };
+  });
+}
+
+const { topicId } = Astro.params;
+const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as RoadmapTopicFileType;
+---
+
+<BaseLayout
+  title={`${heading} - roadmap.sh`}
+  description={`Free resources to learn ${heading} in ${roadmap.briefTitle}. Everything you need to know about ${heading} and how it realtes to ${roadmap.briefTitle}.`}
+  noIndex={true}
+  permalink={`/${roadmapId}/${topicId}`}
+>
+  <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
+  <div class='bg-gray-50'>
+    <Breadcrumbs breadcrumbs={breadcrumbs} roadmapId={roadmapId} />
+
+    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
+      <main id='main-content'>
+        <file.Content />
+      </main>
+    </div>
+  </div>
+</BaseLayout>
