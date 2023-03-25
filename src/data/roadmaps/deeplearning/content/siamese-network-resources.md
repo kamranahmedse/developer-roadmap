@@ -1,6 +1,5 @@
 # Siamese Networks
 
-
 A Siamese Neural Network is a class of neural network architectures that contain two or more identical subnetworks.
 ‘identical’ here means, they have the same configuration with the same parameters and weights.Parameter updating is mirrored across both sub-networks. It is used to find the similarity of the inputs by comparing its feature vectors, so these networks are used in many applicationsTraditionally, a neural network learns to predict multiple classes. This poses a problem when we need to add/remove new classes to the data.In this case, we have to update the neural network and retrain it on the whole dataset.
 

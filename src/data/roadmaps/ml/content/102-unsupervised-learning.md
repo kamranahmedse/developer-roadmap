@@ -1,4 +1,4 @@
-# Unsupervised learning**
+# Unsupervised learning
 
 Unsupervised learning is a type of machine learning where the goal is to identify patterns or relationships in data without the use of labeled examples. This can be useful for discovering new insights, clustering similar items together, or reducing the dimensionality of high-dimensional data.
 

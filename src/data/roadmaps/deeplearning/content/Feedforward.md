@@ -1,10 +1,8 @@
 
 # Feedforward Neural Network 
 
-
 A feedforward neural network (also known as a multilayer perceptron) is a type of artificial neural network in which the connections between the neurons do not form a cycle. 
 The network is organized into layers, with each layer consisting of multiple neurons.
-
 
 - [This online book provides a comprehensive introduction to neural networks and deep learning, including feedforward neural networks.](http://neuralnetworksanddeeplearning.com/)
 - [This textbook provides a thorough introduction to deep learning, including feedforward neural networks. It covers both the theory and practical aspects of building and training neural networks. It's available for purchase on Amazon and other book retailers.](https://www.deeplearningbook.org/)
