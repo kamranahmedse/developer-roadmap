@@ -1,4 +1,4 @@
-# Adam Optimiser resources
+# Adam Optimiser Resources
 
 Adam optimizer is a powerful optimization algorithm that is widely used in the field of machine learning and deep learning. It is a stochastic gradient descent algorithm that is used to minimize the loss function of a neural network. In this blog post, we will explore some of the best resources available for learning and using Adam optimizer. In conclusion, Adam optimizer is a powerful optimization algorithm that can significantly improve the performance of your deep learning models. There are several resources available for learning and using Adam optimizer, including research papers, documentation, books, websites, and Coursera courses. By leveraging these resources, you can effectively optimize your deep learning models and achieve better results
 

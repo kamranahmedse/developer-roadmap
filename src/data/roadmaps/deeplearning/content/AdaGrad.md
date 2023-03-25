@@ -1,6 +1,6 @@
 # AdaGrad
   
-The AdaGrad Optimiser resources one para graph is a graphical representation of the AdaGrad Optimiser resources usage. AdaGrad Optimiser resources can be used to improve the performance of Ada programs.
+The AdaGrad Optimiser resources in one paragraph is a graphical representation of the AdaGrad Optimiser resources usage. AdaGrad Optimiser resources can be used to improve the performance of Ada programs.
 
 - [What is AdaGrad Optimizer resources](https://www.databricks.com/glossary/adagrad)
 - [AdaGrad Optimizer resources for beginners](https://www.javatpoint.com/gradient-descent-algorithm)

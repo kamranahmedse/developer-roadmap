@@ -1,4 +1,4 @@
-# ADD WEIGHTS AND BIAS
+# Add Weights And Bias
 
 Together, weights and biases are the parameters of a neural network that are learned during the training process to optimize the performance of the model. The goal is to find the optimal set of weights and biases that minimize the error between the predicted output and the actual output.
 
