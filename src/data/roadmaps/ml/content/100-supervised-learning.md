@@ -1,1 +1,1 @@
-# Super vised learning
+# Supervised learning

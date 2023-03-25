@@ -2,8 +2,6 @@
 
 This article describes how to use the Score SVD Recommender component in Azure Machine Learning designer. Use this component to create predictions by using a trained recommendation model based on the Single Value Decomposition (SVD) algorithm.
 
-Visit the following resources to learn more:
-
 - [What is SVD?](https://www.geeksforgeeks.org/singular-value-decomposition-svd/)
 - [How to use Singular Value Decomposition in machine learning?](https://dataaspirant.com/single-value-decomposition-svd/#:~:text=How%20to%20Use%20SVD%20in%20Machine%20Learning%201,smaller%2C%20simpler%20one.%20...%204%20Collaborative%20Filtering%20)
 - [To calculate the SVD from Scratch with python:](https://machinelearningmastery.com/singular-value-decomposition-for-machine-learning/)

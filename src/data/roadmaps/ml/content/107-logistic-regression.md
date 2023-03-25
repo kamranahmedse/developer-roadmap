@@ -1,7 +1,6 @@
-# logistic regression
+# Logistic regression
 
 Logistic regression is a statistical technique used to predict a binary outcome, such as yes/no or true/false, based on one or more input variables. It estimates the probability of the outcome using a sigmoidal function and applies a logit transformation to create a linear relationship. Logistic regression is commonly used in machine learning, predictive analytics, and other fields to classify data and make informed decisions based on the predicted probability of a binary outcome.
-
 
 - [What is logistic regression?](https://www.ibm.com/in-en/topics/logistic-regression)
 - [Logistic Regression — Detailed Overview](https://medium.com/towards-data-science/logistic-regression-detailed-overview-46c4da4303bc)
