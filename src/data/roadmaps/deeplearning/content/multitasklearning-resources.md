@@ -1,11 +1,7 @@
-# Multitasking Learning Resources
+# Multitasking Learning
 
-## About Multitasking Learning Resources:
-Multitasking refers to either the ability to pay attention to several pieces of information at the same time or the process of performing more than one task at the same time.
-## How does multitasking help learning?
-Multitasking can help students check off many items on a to-do list. However, doing two or more tasks at the same time affects their ability to do those tasks well. When students multitask, they are not dividing their attention equally between two tasks. Instead, their focus rapidly shifts between the tasks.
+Multitasking refers to either the ability to pay attention to several pieces of information at the same time or the process of performing more than one task at the same time.Multitasking can help students check off many items on a to-do list. However, doing two or more tasks at the same time affects their ability to do those tasks well. When students multitask, they are not dividing their attention equally between two tasks. Instead, their focus rapidly shifts between the tasks.
 
-Visit the following resources to learn more:
 
 - [How Multitasking Affects Learning | GradePower Learning](https://gradepowerlearning.com/effects-of-multitasking-on-learning/#:~:text=Multitasking%20can%20help%20students%20check,rapidly%20shifts%20between%20the%20tasks.)
 - [Multi-task Learning - ML Strategy | Coursera](https://www.coursera.org/lecture/machine-learning-projects/multi-task-learning-l9zia)

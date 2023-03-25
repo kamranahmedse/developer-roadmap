@@ -1,4 +1,4 @@
-# What is Yolo?
+# Yolo
 
 YOLO (You Only Look Once) is a popular object detection algorithm in machine learning that was introduced in 2016 by Joseph Redmon, Santosh Divvala, Ross Girshick, and Ali Farhadi. YOLO is a deep learning-based approach for detecting objects in images and video streams in real-time with high accuracy.
 
