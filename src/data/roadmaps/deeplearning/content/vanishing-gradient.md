@@ -1,4 +1,4 @@
-# Add vanishing gradients resourses
+# Add Vanishing Gradients
 
 The vanishing gradient problem refers to a situation in deep neural networks where the gradients become very small as they propagate through many layers, making it difficult for the model to learn from earlier layers. Gradients are used in the backpropagation algorithm to update the weights of the neural network, and if they become too small, the network may not be able to learn effectively.
 
