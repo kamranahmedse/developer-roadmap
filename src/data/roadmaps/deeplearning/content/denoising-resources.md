@@ -1,9 +1,8 @@
-# What Is Denoising?
-  1. In computer graphics, images can be made up of both useful information and noise. 
-  2. The latter reduces clarity. The ideal end product of denoising would be a crisp image that only preserves the useful information.
-  3.  When denoising an image, it’s also important to keep visual details and components such as edges, corners, textures and other sharp structures.
-#
+# Denoising
 
+In computer graphics, images can be made up of both useful information and noise. 
+The latter reduces clarity. The ideal end product of denoising would be a crisp image that only preserves the useful information.
+When denoising an image, it’s also important to keep visual details and components such as edges, corners, textures and other sharp structures.
 
 
 - [What is noise ?](https://textdoc.co/lcO5ZYuMosiWIXFn)
