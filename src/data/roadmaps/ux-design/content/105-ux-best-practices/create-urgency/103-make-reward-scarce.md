@@ -1,0 +1,1 @@
+# Make reward scarce

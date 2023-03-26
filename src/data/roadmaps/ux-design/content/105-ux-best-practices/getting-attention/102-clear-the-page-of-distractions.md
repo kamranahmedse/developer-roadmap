@@ -1,0 +1,1 @@
+# Clear the page of distractions

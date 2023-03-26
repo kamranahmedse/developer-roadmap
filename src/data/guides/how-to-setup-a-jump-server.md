@@ -76,7 +76,7 @@ ssh -i ~/.ssh/mykey.pem ec2-user@192.168.1.0
 
 We have an error:
 
-```text
+```
 Warning: Identity file /home/ubuntu/.ssh/mykey.pem not accessible: No such file or directory.
 ubuntu@192.168.1.0: Permission denied (publickey).
 ```
@@ -115,7 +115,7 @@ ssh-add ~/.ssh/mykey.pem
 
 Now if you run `ssh-add -l` you will see the key added to the agent:
 
-```plaintext
+```
 2048 SHA256:xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx path/to/key.pem (RSA)
 ```
 

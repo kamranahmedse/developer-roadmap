@@ -1,0 +1,1 @@
+# Make successful completion clearly visible

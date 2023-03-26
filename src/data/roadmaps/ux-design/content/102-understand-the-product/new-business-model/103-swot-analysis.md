@@ -1,0 +1,1 @@
+# Swot analysis
