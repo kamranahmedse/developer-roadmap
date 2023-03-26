@@ -34,6 +34,7 @@ Here is the list of PDF links for each of the roadmaps.
 * **Kubernetes** - [Roadmap Link](https://roadmap.sh/kubernetes) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/kubernetes.pdf)
 * **Cyber Security** - [Roadmap Link](https://roadmap.sh/cyber-security) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/cyber-security.pdf)
 * **MongoDB** - [Roadmap Link](https://roadmap.sh/mongodb) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/mongodb.pdf)
+* **UX Design** - [Roadmap Link](https://roadmap.sh/ux-design) / [PDF Link](https://roadmap.sh/pdfs/roadmaps/ux-design.pdf)
 
 Here is the list of PDF links for each of the best practices:
 
