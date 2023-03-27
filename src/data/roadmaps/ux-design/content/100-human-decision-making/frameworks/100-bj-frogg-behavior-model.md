@@ -1,7 +1,11 @@
-# Fogg's Behavior Model
+# BJ Fogg’s Behavior Model
 
-BJ Fogg's Behavior Model is a framework that helps UX designers understand and influence user behavior. According to the model, three elements must converge at the same moment for a behavior to occur: motivation, ability, and a trigger. Motivation refers to the user's desire to perform the behavior, ability refers to the user's ability to perform the behavior, and a trigger refers to the cue that prompts the user to perform the behavior. UX designers can use this framework to design interfaces and interactions that increase motivation, improve ability, and provide effective triggers, ultimately leading to desired user behaviors.
+B.J. Fogg, a renowned psychologist, and researcher at Stanford University, proposed the [Fogg Behavior Model (FBM)](https://www.behaviormodel.org/). This insightful model helps UX designers understand and influence user behavior by focusing on three core elements. These key factors are motivation, ability, and triggers.
 
-- [How to Understand and Influence Behavior](https://cs.fyi/guide/how-to-understand-and-influence-behavior)
-- [Understanding Fogg behaviour model](https://uxdesign.cc/understanding-fogg-behaviour-model-dd2cc78e4a2)
-- [Effective notifications using fogg’s behaviour model](https://uxmag.com/articles/effective-notifications-using-foggs-behaviour-model)
+- **Motivation**: This element emphasizes the user's desire to perform a certain action or attain specific outcomes. Motivation can be linked to three core elements specified as sensation (pleasure/pain), anticipation (hope/fear), and social cohesion (belonging/rejection).
+
+- **Ability**: Ability refers to the user's capacity, both physical and mental, to perform desired actions. To enhance the ability of users, UX designers should follow the principle of simplicity. The easier it is to perform an action, the more likely users will engage with the product. Some factors to consider are time, financial resources, physical efforts, and cognitive load.
+
+- **Triggers**: Triggers are the cues, notifications, or prompts that signal users to take an action. For an action to occur, triggers should be presented at the right time when the user has adequate motivation and ability.
+
+UX designers should strive to find the balance between these three factors to facilitate the desired user behavior. By understanding your audience and their needs, implementing clear and concise triggers, and minimizing the effort required for action, the FBM can be an effective tool for designing user-centered products.

@@ -50,10 +50,23 @@ function getFilesInFolder(folderPath, fileList = {}) {
   return fileList;
 }
 
-function writeTopicContent(topicTitle) {
-  console.log(`Genearting '${topicTitle}'...`);
+function writeTopicContent(currTopicUrl) {
+  const [parentTopic, childTopic] = currTopicUrl
+    .replace(/^\d+-/g, '/')
+    .replace(/:/g, '/')
+    .replace(/^\//, '')
+    .split('/')
+    .slice(-2)
+    .map((topic) => topic.replace(/-/g, ' '));
 
-  const instruction = `I am writing a guide about ${roadmapId}. I have a heading called "${topicTitle}". Write me a brief summary for that heading. Content should be in markdown. Also, if you add any bullet points then use the unordered list. Do not include the heading in the content you provide. Avoid including "In this section" or "In this article" or "In this guide" in the content.`;
+  const roadmapTitle = roadmapId.replace(/-/g, ' ');
+
+  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
+  if (!childTopic) {
+    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
+  }
+
+  console.log(`Genearting '${childTopic || parentTopic}'...`);
 
   return new Promise((resolve, reject) => {
     openai
@@ -62,7 +75,7 @@ function writeTopicContent(topicTitle) {
         messages: [
           {
             role: 'user',
-            content: instruction,
+            content: prompt,
           },
         ],
       })
@@ -114,7 +127,7 @@ async function run() {
       continue;
     }
 
-    const topicContent = await writeTopicContent(topicTitle);
+    const topicContent = await writeTopicContent(currTopicUrl);
     newFileContent += `\n\n${topicContent}`;
 
     console.log(`Writing ${topicId}..`);
