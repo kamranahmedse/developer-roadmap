@@ -1,1 +1,1 @@
-# Reminders planning prompts
+# Simple Reminders and Planning Prompts

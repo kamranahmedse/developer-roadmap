@@ -1,1 +1,1 @@
-# Remind of prior commitment to act
+# Remind of Prior Commitment to Act

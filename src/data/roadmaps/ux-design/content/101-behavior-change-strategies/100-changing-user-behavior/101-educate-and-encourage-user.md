@@ -1,1 +1,1 @@
-# Educate and encourage user
+# Educate and Encourage User

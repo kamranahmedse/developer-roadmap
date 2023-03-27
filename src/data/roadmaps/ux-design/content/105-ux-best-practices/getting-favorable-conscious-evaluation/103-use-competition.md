@@ -1,1 +1,1 @@
-# Use competition
+# Use Competition

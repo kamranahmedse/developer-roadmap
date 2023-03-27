@@ -1,1 +1,1 @@
-# Avoid temporal myopia
+# Frame Text to Avoid Temporal Myopia

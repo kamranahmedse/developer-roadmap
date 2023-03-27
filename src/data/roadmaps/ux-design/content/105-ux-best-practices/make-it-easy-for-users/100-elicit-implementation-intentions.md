@@ -1,1 +1,1 @@
-# Elicit implementation intentions
+# Elicit Implementation Intentions

@@ -1,1 +1,1 @@
-# Be authentic and personal
+# Be Authentic and Personal

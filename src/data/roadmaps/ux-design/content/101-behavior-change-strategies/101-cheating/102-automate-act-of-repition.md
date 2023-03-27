@@ -1,1 +1,1 @@
-# Automate act of repition
+# Automate the Act of Repetition

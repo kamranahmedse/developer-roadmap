@@ -1,1 +1,1 @@
-# Event driven process chain model
+# Event-Driven Process Chain Model (EPC)

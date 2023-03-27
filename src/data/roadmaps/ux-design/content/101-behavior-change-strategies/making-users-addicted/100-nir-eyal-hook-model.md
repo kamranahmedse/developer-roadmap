@@ -1,1 +1,1 @@
-# Nir eyal hook model
+# Nir Eyal’s Hook Model

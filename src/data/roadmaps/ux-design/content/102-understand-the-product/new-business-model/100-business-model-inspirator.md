@@ -1,1 +1,1 @@
-# Business model inspirator
+# Business Model Inspirator

@@ -1,1 +1,1 @@
-# Mindfulness to avoid acting on the cue
+# Mindfulness to Avoid Acting on the Cue

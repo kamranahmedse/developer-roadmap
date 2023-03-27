@@ -1,1 +1,1 @@
-# Deploy strong subject authority
+# Deploy Strong Authority on Subject

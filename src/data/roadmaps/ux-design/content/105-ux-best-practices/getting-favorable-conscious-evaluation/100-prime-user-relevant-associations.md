@@ -1,1 +1,1 @@
-# Prime user relevant associations
+# Prime User-Relevant Associations

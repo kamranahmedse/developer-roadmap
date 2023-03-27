@@ -1,1 +1,1 @@
-# Avoid cognitive overhead
+# Avoid Cognitive Overhead

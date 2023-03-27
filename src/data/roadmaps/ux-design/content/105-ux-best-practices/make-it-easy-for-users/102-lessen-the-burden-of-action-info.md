@@ -1,1 +1,1 @@
-# Lessen the burden of action info
+# Lessen the Burden of Action/Info.

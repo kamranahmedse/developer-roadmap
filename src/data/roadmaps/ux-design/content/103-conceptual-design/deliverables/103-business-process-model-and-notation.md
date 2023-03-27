@@ -1,1 +1,1 @@
-# Business process model and notation
+# Business Process Model and Notation (BPMN)

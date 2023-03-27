@@ -1,1 +1,1 @@
-# Understand the product
+# Understanding the Product

@@ -1,1 +1,1 @@
-# Keep it short simple
+# In general, Keep it Short and Simple

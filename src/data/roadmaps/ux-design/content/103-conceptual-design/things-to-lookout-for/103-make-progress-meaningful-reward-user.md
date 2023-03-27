@@ -1,1 +1,1 @@
-# Make progress meaningful reward user
+# Make Progress Meaningful in order to Reward User

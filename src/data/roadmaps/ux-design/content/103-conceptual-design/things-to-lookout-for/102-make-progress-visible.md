@@ -1,1 +1,1 @@
-# Make progress visible
+# Make Progress Visible to User

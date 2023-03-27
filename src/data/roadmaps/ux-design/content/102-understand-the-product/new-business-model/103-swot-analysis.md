@@ -1,1 +1,1 @@
-# Swot analysis
+# SWOT Analysis

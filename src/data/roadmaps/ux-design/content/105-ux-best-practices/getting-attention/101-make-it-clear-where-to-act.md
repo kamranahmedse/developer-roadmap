@@ -1,1 +1,1 @@
-# Make it clear where to act
+# Make it Clear, Where to Act

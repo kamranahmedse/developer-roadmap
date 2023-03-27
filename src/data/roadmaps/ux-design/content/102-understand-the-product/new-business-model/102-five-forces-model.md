@@ -1,1 +1,1 @@
-# Five forces model
+# Five Forces Model

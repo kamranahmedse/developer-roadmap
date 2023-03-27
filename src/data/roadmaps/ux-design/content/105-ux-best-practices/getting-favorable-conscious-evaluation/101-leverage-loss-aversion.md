@@ -1,1 +1,1 @@
-# Leverage loss aversion
+# Leverage Loss Aversion

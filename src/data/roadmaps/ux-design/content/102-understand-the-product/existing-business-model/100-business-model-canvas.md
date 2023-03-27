@@ -1,1 +1,1 @@
-# Business model canvas
+# Business Model Canvas

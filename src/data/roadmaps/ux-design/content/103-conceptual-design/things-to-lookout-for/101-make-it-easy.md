@@ -1,1 +1,1 @@
-# Make it easy
+# Make it Easy to Understand, Easy to Complete
