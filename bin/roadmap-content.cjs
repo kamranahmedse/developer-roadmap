@@ -20,6 +20,12 @@ if (!allowedRoadmapIds.includes(roadmapId)) {
 }
 
 const ROADMAP_CONTENT_DIR = path.join(ALL_ROADMAPS_DIR, roadmapId, 'content');
+const { Configuration, OpenAIApi } = require('openai');
+const configuration = new Configuration({
+  apiKey: OPEN_AI_API_KEY,
+});
+
+const openai = new OpenAIApi(configuration);
 
 function getFilesInFolder(folderPath, fileList = {}) {
   const files = fs.readdirSync(folderPath);
@@ -44,38 +50,88 @@ function getFilesInFolder(folderPath, fileList = {}) {
   return fileList;
 }
 
-const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
+function writeTopicContent(topicTitle) {
+  console.log(`Genearting '${topicTitle}'...`);
 
-const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
-const groups = roadmapJson?.mockup?.controls?.control?.filter(
-  (control) => control.typeID === '__group__' && !control.properties?.controlName?.startsWith('ext_link')
-);
+  const instruction = `Write a short paragraph explaining '${topicTitle}' in ${roadmapId}. Avoid any text similar to "In ${roadmapId}, ${topicTitle} refers to" and write it as a direct explanation of the topic.`;
 
-groups.forEach((group) => {
-  const topicId = group?.properties?.controlName;
-  const topicTitle = group?.children?.controls?.control?.find((control) => control?.typeID === 'Label')?.properties
-    ?.text;
-  const currTopicUrl = topicId.replace(/^\d+-/g, '/').replace(/:/g, '/');
-  const contentFilePath = topicUrlToPathMapping[currTopicUrl];
+  return new Promise((resolve, reject) => {
+    openai
+      .createChatCompletion({
+        model: 'gpt-4',
+        messages: [
+          {
+            role: 'user',
+            content: instruction,
+          },
+        ],
+      })
+      .then((response) => {
+        const article = response.data.choices[0].message.content;
 
-  const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
-  const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() == '';
+        resolve(article);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+}
 
-  if (!isFileEmpty) {
-    console.log(`${topicId} not empty. Ignoring...`);
-    return;
-  }
+async function run() {
+  const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
 
-  let newFileContent = `# ${topicTitle}`;
+  const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
+  const groups = roadmapJson?.mockup?.controls?.control?.filter(
+    (control) => control.typeID === '__group__' && !control.properties?.controlName?.startsWith('ext_link')
+  );
 
   if (!OPEN_AI_API_KEY) {
-    console.log(`OPEN_AI_API_KEY not set. Only adding title to ${topicId}..`);
-    fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
-    return;
+    console.log('----------------------------------------');
+    console.log('OPEN_AI_API_KEY not found. Skipping openai api calls...');
+    console.log('----------------------------------------');
   }
 
-  // console.log(currentFileContent);
-  // console.log(currTopicUrl);
-  // console.log(topicTitle);
-  // console.log(topicUrlToPathMapping[currTopicUrl]);
-});
+  for (let group of groups) {
+    const topicId = group?.properties?.controlName;
+    const topicTitle = group?.children?.controls?.control?.find((control) => control?.typeID === 'Label')?.properties
+      ?.text;
+    const currTopicUrl = topicId.replace(/^\d+-/g, '/').replace(/:/g, '/');
+    const contentFilePath = topicUrlToPathMapping[currTopicUrl];
+
+    const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
+    const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() == '';
+
+    if (!isFileEmpty) {
+      console.log(`Ignoring ${topicId}. Not empty.`);
+      continue;
+    }
+
+    let newFileContent = `# ${topicTitle}`;
+
+    if (!OPEN_AI_API_KEY) {
+      console.log(`Writing ${topicId}..`);
+      fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+      continue;
+    }
+
+    const topicContent = await writeTopicContent(topicTitle);
+    newFileContent += `\n\n${topicContent}`;
+
+    console.log(`Writing ${topicId}..`);
+    fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+
+    // console.log(currentFileContent);
+    // console.log(currTopicUrl);
+    // console.log(topicTitle);
+    // console.log(topicUrlToPathMapping[currTopicUrl]);
+  }
+}
+
+run()
+  .then(() => {
+    console.log('Done');
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

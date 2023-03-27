@@ -9,12 +9,22 @@ Generates a list of all the resources links in any roadmap file.
 
 Compresses all the JSON files in the `public/jsons` folder
 
+## `update-sponsors.cjs`
+
+Updates the sponsor ads on each roadmap page with the latest sponsor information in the Excel sheet.
+
 ## `roadmap-content.cjs`
+
+Currently, for any new roadmaps that we add, we do create the interactive roadmap but we end up leaving the content empty in the roadmap till we get time to fill it up manually.
+
+This script populates all the content files with some minimal content from OpenAI so that the users visiting the website have something to read in the interactive roadmap till we get time to fill it up manually.
+
+## `roadmap-dirs.cjs`
 
 This command is used to create the content folders and files for the interactivity of the roadmap. You can use the below command to generate the roadmap skeletons inside a roadmap directory:
 
 ```bash
-npm run roadmap-content [frontend|backend|devops|...]
+npm run roadmap-dirs [frontend|backend|devops|...]
 ```
 
 For the content skeleton to be generated, we should have proper grouping, and the group names in the project files. You can follow the steps listed below in order to add the meta information to the roadmap.
