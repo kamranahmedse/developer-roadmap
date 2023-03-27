@@ -77,12 +77,12 @@ seo:
     - "node.js developer interview questions"
     - "nodejs developer interview questions"
 relatedRoadmaps:
-  - "frontend"
-  - "backend"
   - "javascript"
-  - "react"
-  - "angular"
-  - "vue"
+  - "backend"
+  - "typescript"
+  - "system-design"
+  - "graphql"
+  - "frontend"
 sitemap:
   priority: 1
   changefreq: "monthly"

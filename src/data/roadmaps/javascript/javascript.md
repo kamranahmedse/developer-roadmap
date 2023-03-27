@@ -47,13 +47,13 @@ seo:
     - "javascript quiz"
     - "javascript interview questions"
 relatedRoadmaps:
+  - "nodejs"
+  - "typescript"
   - "frontend"
   - "backend"
-  - "javascript"
   - "react"
   - "angular"
   - "vue"
-  - "nodejs"
 sitemap:
   priority: 1
   changefreq: "monthly"
