@@ -16,17 +16,5 @@
 
 - **Plugins**: Figma supports a wide range of user-created plugins that extend its functionality, allowing you to tailor the tool to your specific needs.
 
-## Getting Started
 
-To start using Figma, sign up for a [free account](https://www.figma.com/signup/), which provides a personal workspace with unlimited files, three active projects, and access to the community. There are also paid plans available for individuals, teams, and enterprises. Once you've signed up, you can access Figma directly from your browser, or you can download the desktop app for improved performance.
-
-## Learning Resources
-
-If you're new to Figma, here are some resources to help you get started:
-
-- [Figma Tutorial for Beginners](https://www.youtube.com/watch?v=Cx2dkbp_Blk) (Video)
-- [Figma's Official Help Center](https://help.figma.com/hc/en-us/)
-- [Figma Community](https://www.figma.com/community)for templates, UI kits, and examples
-- [Learn Design with Figma](https://www.figma.com/resources/learn-design/) (Interactive design course)
-
-Figma's collaborative features, along with its capabilities for wireframing, prototyping, and designing, make it a popular choice among UX designers. Give it a try for your next project, and see how it can improve your design process.
+- [Figma Website](https://figma.com)

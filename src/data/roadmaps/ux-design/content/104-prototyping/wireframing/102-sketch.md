@@ -14,15 +14,4 @@ Sketch is a powerful digital design tool specifically tailored for user interfac
 
 - **Collaboration and Plugins:** Sketch offers a wide range of plugins and integrations for collaborative work and extends its functionality via community-driven addons.
 
-## How to use Sketch in wireframing
-
-To get started with Sketch in wireframing, follow these simple steps:
-
-- Create a new document and set up your artboards to match the devices you're designing for.
-- Use Sketch's pre-built shapes, layers, and text tools to create the basic structure of your wireframe.
-- Create symbols for your common design elements, such as buttons, controls, and menus.
-- Apply styles, such as colors, fonts, and layers, to bring your wireframe to life.
-- Create links and hotspots in your design to simulate user interactions and navigation.
-- Export your wireframe to different formats to present, share and test your designs.
-
-In conclusion, Sketch is a go-to tool for many UX designers due to its powerful features and focus on interface design. By understanding how to effectively use Sketch for wireframing, you'll be able to create detailed and interactive UI designs, which will ultimately help drive the success of your project.
+- [Sketch Website](https://www.sketch.com/)
