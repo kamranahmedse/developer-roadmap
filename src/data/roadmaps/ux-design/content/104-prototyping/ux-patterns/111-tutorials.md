@@ -1,7 +1,5 @@
 # Tutorials
 
-## Tutorials in UX Design
-
 Tutorials are an important aspect of UX Design, as they help users understand and learn how to navigate through a new application, software or website. It is essential to create engaging, informative and easy-to-follow tutorials to ensure users can quickly comprehend the interface and become efficient in navigating it.
 
 In this section, we will discuss the importance of tutorials in UX Design and provide best practices for creating effective tutorials.

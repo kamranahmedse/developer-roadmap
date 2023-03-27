@@ -1,7 +1,5 @@
 # Be Authentic and Personal
 
-## Be Authentic and Personal
-
 When creating a user experience (UX) design, it's essential to be authentic and personal. This means that your design should be genuine, truthful, and relatable to your users. By being authentic and personal, you can create a positive intuitive reaction in your users, as they feel connected and engaged with your website or application. Here are some tips to make your UX design authentic and personal:
 
 #### 1. Understand your user persona(s)

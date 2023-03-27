@@ -1,7 +1,5 @@
 # Make it Clear, Where to Act
 
-## Make it Clear Where to Act
-
 When designing a user interface, it is essential to guide your users in such a way that they can effortlessly understand where they need to act. This means making it abundantly clear where the actionable elements are on the screen.
 
 Here are a few strategies to ensure users can easily identify where to act:
