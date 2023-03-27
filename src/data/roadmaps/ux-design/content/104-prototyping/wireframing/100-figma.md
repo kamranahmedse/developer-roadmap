@@ -1,7 +1,5 @@
 # Figma
 
-## Figma
-
 [Figma](https://www.figma.com/) is a powerful and versatile web-based design tool that allows designers, developers, and stakeholders to collaborate on UI and UX projects in real-time. It's an excellent choice for creating wireframes and high-fidelity prototypes and supports vector editing, responsive design, and team collaboration.
 
 ### Key Features

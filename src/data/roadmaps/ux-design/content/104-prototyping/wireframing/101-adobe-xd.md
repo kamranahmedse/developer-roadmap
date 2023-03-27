@@ -1,7 +1,5 @@
 # Adobe XD
 
-## Adobe XD
-
 Adobe XD (Experience Design) is a powerful design and prototyping tool that allows UX designers to create wireframes, mockups, and interactive prototypes for various digital projects. It is available for both Mac and Windows, and it focuses on providing an easy-to-use, intuitive interface for designing responsive websites, mobile apps, and more.
 
 ## Key Features of Adobe XD

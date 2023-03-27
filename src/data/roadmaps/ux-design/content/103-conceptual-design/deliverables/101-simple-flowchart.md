@@ -1,7 +1,5 @@
 # Simple Flowchart
 
-## Simple Flowchart
-
 A simple flowchart is a useful deliverable in the UX design process that helps visually represent the flow of a user's journey through a website or an app. It's a diagrammatic representation of the user interactions and decision points, showcasing the steps they will take to achieve a specific goal.
 
 This straightforward visual aid can assist the entire project team, including designers, developers, and stakeholders, to understand the overall structure and organization of the proposed design solution. 

@@ -1,7 +1,5 @@
 # Customer Experience Map by Mel Edwards
 
-## Custom Experience Map
-
 A **Custom Experience Map** is a powerful visual representation that helps designers and stakeholders understand the entire user journey. It captures the various touchpoints, interactions, and experiences a user goes through while using a product or service. This map can be created to suit the specific needs of your project or organization, giving you a comprehensive view of the user experience.
 
 ## Key Components of a Custom Experience Map

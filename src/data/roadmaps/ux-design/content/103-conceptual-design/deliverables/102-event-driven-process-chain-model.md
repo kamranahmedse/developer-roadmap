@@ -1,7 +1,5 @@
 # Event-Driven Process Chain Model (EPC)
 
-## Event Driven Process Chain Model
-
 The Event Driven Process Chain (EPC) model is a flowchart-based diagramming method that supports the documentation and analysis of business processes. EPCs are frequently used in the field of UX design to aid in identifying areas for optimization and improvement.
 
 In an EPC model, events, functions, and control flow are the primary components.

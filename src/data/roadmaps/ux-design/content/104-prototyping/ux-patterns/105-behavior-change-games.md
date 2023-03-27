@@ -1,7 +1,5 @@
 # Behavior Change Games
 
-## Behavior Change Games in UX Design
-
 Behavior change games are a powerful UX design pattern that help users adopt new habits or make positive lifestyle changes. These games are typically designed to be engaging, enjoyable, and motivating, utilizing various game elements and mechanics to encourage users to take desired actions.
 
 ## Key elements of behavior change games

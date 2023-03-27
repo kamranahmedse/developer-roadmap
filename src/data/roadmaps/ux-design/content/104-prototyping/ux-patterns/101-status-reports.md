@@ -1,7 +1,5 @@
 # Status Reports
 
-## Status Reports
-
 Status reports are an essential component of UX patterns that aid in keeping users informed about the current state of the system, task progress, and any relevant updates. By providing real-time feedback, users can understand the outcome of their actions which ultimately helps in building trust, reducing confusion, and enhancing overall user satisfaction.
 
 Here are some key aspects to consider when designing status reports for your application:

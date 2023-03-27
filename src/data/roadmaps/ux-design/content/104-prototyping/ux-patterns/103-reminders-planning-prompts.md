@@ -1,6 +1,4 @@
 # Simple Reminders and Planning Prompts
-
-## Reminders & Planning Prompts
 In the realm of UX design, **reminders and planning prompts** are essential components that ensure users remember to complete specific actions or tasks at the right time. By including these prompts within the user flow, you can aid users in staying on track and reduce the likelihood of missed deadlines or incomplete tasks. 
 
 ### Why Use Reminders and Planning Prompts?
