@@ -1,1 +1,1 @@
-# Ux buzzwords
+# UX Buzzwords

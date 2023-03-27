@@ -1,1 +1,3 @@
-# Behavioral economics
+# Behavioral Economics
+
+Behavioral economics involves applying insights from economics, psychology, and neuroscience to design user experiences that encourage desired behaviors and decision-making. It involves understanding how users make decisions, what biases and heuristics influence their choices, and how to design interfaces and interactions that nudge users towards certain actions. By leveraging behavioral economics principles such as framing, social norms, and default options, UX designers can create interfaces that are more effective at achieving their intended outcomes and more satisfying for users.

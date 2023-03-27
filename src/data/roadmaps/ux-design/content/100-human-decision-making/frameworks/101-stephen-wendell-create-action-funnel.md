@@ -1,1 +1,5 @@
-# Stephen wendell create action funnel
+# Wendel's CREATE Action Funnel
+
+Steve Wendel's CREATE Action Funnel is a behavior design framework that helps UX designers create user experiences that promote behavior change. The acronym CREATE stands for the six stages of behavior change: cue, react, evaluate, ability, time, and encouragement. The framework emphasizes the importance of providing clear cues that prompt users to perform a desired behavior, designing interactions that make the behavior easy to perform, and providing timely feedback and encouragement. UX designers can use the CREATE Action Funnel to design interfaces and interactions that promote behavior change and help users achieve their goals.
+
+- [Steve Wendel's CREATE Action Funnel](https://www.prodify.group/blog/behavioral-science-crash-course-steve-wendels-create-action-funnel)

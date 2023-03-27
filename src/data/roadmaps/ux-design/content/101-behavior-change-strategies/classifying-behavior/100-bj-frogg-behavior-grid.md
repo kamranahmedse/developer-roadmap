@@ -1,1 +1,1 @@
-# Bj frogg behavior grid
+# BJ Fogg's Behavior Model
