@@ -3,9 +3,9 @@ jsonUrl: "/jsons/roadmaps/ux-design.json"
 pdfUrl: "/pdfs/roadmaps/ux-design.pdf"
 order: 12
 briefTitle: "UX Design"
-briefDescription: "Step by Step guide learn UX Design in 2023"
+briefDescription: "Step by step guide to becoming a UX Designer in 2023"
 title: "UX Design"
-description: "Learn everything you need to know about UX Design in 2023."
+description: "Step by step guide to becoming a UX Designer in 2023"
 isNew: true
 hasTopics: true
 dimensions:
