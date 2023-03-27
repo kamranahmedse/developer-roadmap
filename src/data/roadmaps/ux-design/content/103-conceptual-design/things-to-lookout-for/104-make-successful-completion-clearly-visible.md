@@ -1,6 +1,6 @@
 # Make Successful Completion Clearly Visible
 
-### Make Successful Completion Clearly Visible
+## Make Successful Completion Clearly Visible
 
 When designing user experiences, it's essential to ensure that users can easily recognize when they've completed a task or achieved their goal. This is important because it provides users with a sense of accomplishment and satisfaction; it also helps build trust in the digital product. Here are some tips to make successful completion clearly visible:
 
