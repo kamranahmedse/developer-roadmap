@@ -53,7 +53,7 @@ function getFilesInFolder(folderPath, fileList = {}) {
 function writeTopicContent(topicTitle) {
   console.log(`Genearting '${topicTitle}'...`);
 
-  const instruction = `Write a short paragraph explaining '${topicTitle}' in ${roadmapId}. Avoid any text similar to "In ${roadmapId}, ${topicTitle} refers to" and write it as a direct explanation of the topic.`;
+  const instruction = `I am writing a guide about ${roadmapId}. I have a heading called "${topicTitle}". Write me a brief summary for that heading. Content should be in markdown. Also, if you add any bullet points then use the unordered list. Do not include the heading in the content you provide. Avoid including "In this section" or "In this article" or "In this guide" in the content.`;
 
   return new Promise((resolve, reject) => {
     openai
