@@ -10,9 +10,9 @@ HTTPS (**H**ypertext **T**ransfer **P**rotocol **S**ecure) is the secure version
 
 Visit the following resources to learn more:
 
+- [Everything you need to know about HTTP](https://cs.fyi/guide/http-in-depth)
 - [What is HTTP?](https://www.cloudflare.com/en-gb/learning/ddos/glossary/hypertext-transfer-protocol-http/)
 - [An overview of HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview)
-- [Journey to HTTP/2](https://kamranahmed.info/blog/2016/08/13/http-in-depth)
 - [HTTP/3 From A To Z: Core Concepts](https://www.smashingmagazine.com/2021/08/http3-core-concepts-part1/)
 - [HTTP Crash Course & Exploration](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
 - [What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)

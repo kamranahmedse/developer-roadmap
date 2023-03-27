@@ -22,6 +22,9 @@ const { contentContributionLink } = Astro.props;
     <div id='topic-actions' class='hidden mb-2'>
       <button
         id='mark-topic-done'
+        ga-category='TopicClick'
+        ga-action='topic/mark-completion'
+        ga-label='done'
         class='bg-green-600 text-white p-1 px-2 text-sm rounded-md hover:bg-green-700 inline-flex items-center'
       >
         <Icon icon='check' />
@@ -30,6 +33,9 @@ const { contentContributionLink } = Astro.props;
 
       <button
         id='mark-topic-pending'
+        ga-category='TopicClick'
+        ga-action='topic/mark-completion'
+        ga-label='pending'
         class='hidden bg-red-600 text-white p-1 px-2 text-sm rounded-md hover:bg-red-700 inline-flex items-center'
       >
         <Icon icon='reset' />

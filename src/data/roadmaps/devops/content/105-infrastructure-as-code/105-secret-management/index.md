@@ -12,6 +12,7 @@ Effective secret management is essential for maintaining the security and integr
 
 Visit the following resources to learn more:
 
+- [How to Manage Secrets in Web Applications?](https://cs.fyi/guide/secret-management-best-practices)
 - [Secrets management guide — approaches, open source tools, commercial products, challenges and questions](https://medium.com/@burshteyn/secrets-management-guide-approaches-open-source-tools-commercial-products-challenges-db560fd0584d)
 - [Secret Management Architectures: Finding the balance between security and complexity](https://medium.com/slalom-technology/secret-management-architectures-finding-the-balance-between-security-and-complexity-9e56f2078e54)
 
