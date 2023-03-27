@@ -13,8 +13,8 @@
     "compress:jsons": "node bin/compress-jsons.cjs",
     "upgrade": "ncu -u",
     "roadmap-links": "node bin/roadmap-links.cjs",
-    "roadmap-content": "node bin/roadmap-content.cjs",
-    "best-practice-content": "node bin/best-practice-content.cjs",
+    "roadmap-dirs": "node bin/roadmap-dirs.cjs",
+    "best-practice-dirs": "node bin/best-practice-dirs.cjs",
     "test:e2e": "playwright test"
   },
   "dependencies": {
