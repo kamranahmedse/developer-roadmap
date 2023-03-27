@@ -4,15 +4,15 @@ Behavior change games are a powerful UX design pattern that help users adopt new
 
 ## Key elements of behavior change games
 
-1. **Set clear objectives**: Define specific goals users should achieve, such as losing weight or learning a new skill. Well-defined objectives provide a strong focus for the game and encourage user engagement.
+- **Set clear objectives**: Define specific goals users should achieve, such as losing weight or learning a new skill. Well-defined objectives provide a strong focus for the game and encourage user engagement.
 
-2. **Feedback and progress**: Provide real-time feedback and track user progress to create a sense of accomplishment. This can include visual cues, points, badges, or leveling up systems.
+- **Feedback and progress**: Provide real-time feedback and track user progress to create a sense of accomplishment. This can include visual cues, points, badges, or leveling up systems.
 
-3. **Social interaction**: Utilize social features, such as sharing achievements, comparing results with friends, or team challenges. This enables users to work together, fosters a sense of community, and enhances motivation through friendly competition.
+- **Social interaction**: Utilize social features, such as sharing achievements, comparing results with friends, or team challenges. This enables users to work together, fosters a sense of community, and enhances motivation through friendly competition.
 
-4. **Reward system**: Implement a reward system that grants virtual or real rewards for completing tasks or reaching milestones. These rewards can be intrinsic (e.g., personal satisfaction) or extrinsic (e.g., discounts or prizes).
+- **Reward system**: Implement a reward system that grants virtual or real rewards for completing tasks or reaching milestones. These rewards can be intrinsic (e.g., personal satisfaction) or extrinsic (e.g., discounts or prizes).
 
-5. **Gamification**: Incorporate game-like elements, such as storytelling, quests, or time-limited challenges. These elements add an entertaining aspect, improve user experience, and make the behavior change process more enjoyable.
+- **Gamification**: Incorporate game-like elements, such as storytelling, quests, or time-limited challenges. These elements add an entertaining aspect, improve user experience, and make the behavior change process more enjoyable.
 
 ## Benefits of behavior change games
 

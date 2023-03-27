@@ -9,9 +9,9 @@ In an EPC model, events, functions, and control flow are the primary components.
 * **Control Flow**: Illustrates the flow of activities in the process chain by connecting events and functions with arrows, showing the sequence of tasks.
 
 Creating an EPC model involves the following steps:
-1. Identify the main activities and events in the process to be modeled.
-2. Define the flow of activities by connecting events and functions using arrows.
-3. Identify decision points or branches in the process, where alternative paths may be followed.
-4. Analyze the model to identify areas for improvement, such as bottlenecks, inefficiencies or redundancies.
+- Identify the main activities and events in the process to be modeled.
+- Define the flow of activities by connecting events and functions using arrows.
+- Identify decision points or branches in the process, where alternative paths may be followed.
+- Analyze the model to identify areas for improvement, such as bottlenecks, inefficiencies or redundancies.
 
 EPC models are beneficial for UX designers as they provide a clear, visual representation of the business processes. This helps in understanding how a user's interactions with a product or service are tied to the overall process flow. Consequently, insights gained from EPC models can inform the UX design process in terms of the required steps and interactions, potential pain points, and opportunities for innovation.

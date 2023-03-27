@@ -6,17 +6,17 @@ A **Custom Experience Map** is a powerful visual representation that helps desig
 
 Below are some crucial components of an effective custom experience map:
 
-1. **User Persona**: This includes the demographics, goals, and pain-points of the target user, which helps in understanding the user's perspective throughout the journey.
+- **User Persona**: This includes the demographics, goals, and pain-points of the target user, which helps in understanding the user's perspective throughout the journey.
 
-2. **Stages**: The different logical steps or phases the user goes through during their interaction with the product or service.
+- **Stages**: The different logical steps or phases the user goes through during their interaction with the product or service.
 
-3. **Touchpoints**: These are the specific interactions the user has with the product or service, such as clicking a button, opening an app, or talking to a customer representative.
+- **Touchpoints**: These are the specific interactions the user has with the product or service, such as clicking a button, opening an app, or talking to a customer representative.
 
-4. **Channels**: These refer to the mediums or platforms through which the interactions take place, such as website, mobile app, email, or in-person.
+- **Channels**: These refer to the mediums or platforms through which the interactions take place, such as website, mobile app, email, or in-person.
 
-5. **Emotions**: The emotional state of the user during each touchpoint, which can highlight areas of frustration or delight.
+- **Emotions**: The emotional state of the user during each touchpoint, which can highlight areas of frustration or delight.
 
-6. **Opportunities**: Areas where improvements can be made, new features can be introduced, or further research can be conducted to enhance the overall user experience.
+- **Opportunities**: Areas where improvements can be made, new features can be introduced, or further research can be conducted to enhance the overall user experience.
 
 ## Benefits of a Custom Experience Map
 
