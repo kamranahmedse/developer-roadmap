@@ -42,6 +42,7 @@ seo:
     - "modern java developer"
 relatedRoadmaps:
   - "backend"
+  - "spring-boot"
   - "devops"
   - "python"
   - "golang"

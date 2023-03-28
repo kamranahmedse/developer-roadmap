@@ -2,8 +2,6 @@
 
 MongoDB is a popular NoSQL database system that stores data in Flexible JSON-like documents, making it suitable for working with large scale and unstructured data.
 
-## Key MongoDB Concepts
-
 - **Database**: Stores all your collections within a MongoDB instance.
 - **Collection**: A group of related documents, similar to a table in a relational database.
 - **Document**: A single record within a collection, which is stored as BSON (Binary JSON) format.
