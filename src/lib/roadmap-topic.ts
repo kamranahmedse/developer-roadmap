@@ -46,7 +46,8 @@ function generateBreadcrumbs(topicUrl: string, topicFiles: Record<string, Roadma
 
   const breadcrumbs = breadcrumbUrls.map((breadCrumbUrl): BreadcrumbItem => {
     const topicFile = topicFiles[breadCrumbUrl];
-    const topicFileContent = topicFile.file;
+
+    const topicFileContent = topicFile?.file;
 
     const firstHeading = topicFileContent?.getHeadings()?.[0];
 

@@ -31,7 +31,8 @@ To enable encryption at rest in MongoDB, you have to perform the following steps
 - **Enable encryption**: Turn on the `encryptWith` parameter in the WiredTiger storage engine.
 
 Example `mongod.conf` file:
-```yml
+
+```yaml
 storage:
   wiredTiger:
     engineConfig:
