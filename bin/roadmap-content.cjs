@@ -111,8 +111,13 @@ async function run() {
     const currTopicUrl = topicId.replace(/^\d+-/g, '/').replace(/:/g, '/');
     const contentFilePath = topicUrlToPathMapping[currTopicUrl];
 
+    if (!contentFilePath) {
+      console.log(`Missing file for: ${currTopicUrl}`);
+      return;
+    }
+
     const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
-    const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() == '';
+    const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() === '';
 
     if (!isFileEmpty) {
       console.log(`Ignoring ${topicId}. Not empty.`);
