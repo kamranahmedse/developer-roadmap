@@ -8,18 +8,18 @@
   }
 }
 
-.prose ul li code,
-p code {
+.prose ul li > code,
+p > code {
   background: #ebebeb !important;
   color: currentColor !important;
   font-size: 14px;
   font-weight: normal !important;
 }
 
-.prose ul li code:before,
-p code:before,
-.prose ul li code:after,
-p code:after {
+.prose ul li>code:before,
+p>code:before,
+.prose ul li>code:after,
+p>code:after {
   content: '' !important;
 }
 
