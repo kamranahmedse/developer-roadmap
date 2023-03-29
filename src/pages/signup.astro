@@ -1,7 +1,7 @@
 ---
 import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
 import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
-import { GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
+import { EmailLoginButton, GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -25,10 +25,18 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <div class="space-y-2">
+      <div class="space-y-2 w-full">
         <GithubLoginButton />
         <GoogleLoginButton />
       </div>
+
+      <div class="flex items-center gap-2 text-sm text-slate-600 py-6 w-full">
+				<div class="h-px w-full bg-slate-200" />
+				OR
+				<div class="h-px w-full bg-slate-200" />
+			</div>
+
+			<EmailLoginButton />
     </div>
   </div>
 

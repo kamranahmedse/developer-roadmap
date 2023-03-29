@@ -23,23 +23,7 @@ export default function LoginComponent() {
 				<div className="h-px w-full bg-slate-200" />
 			</div>
 
-			<div>
-				<label htmlFor="email" className="sr-only">
-					Email address
-				</label>
-				<input
-					id="email"
-					name="email"
-					type="email"
-					autoComplete="email"
-					required
-					className="block w-full appearance-none border border-gray-300 px-3 py-2 shadow-sm placeholder:text-gray-400  focus:ring-black rounded-lg outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-offset-1"
-					placeholder="Enter you email"
-				/>
-				<button className="inline-flex h-10 w-full bg-black text-white focus:ring-black items-center justify-center rounded-lg border border-slate-300 p-2 text-sm font-medium outline-none transition duration-150 ease-in-out focus:ring-2 disabled:opacity-60 focus:ring-offset-1 mt-3">
-					Continue
-				</button>
-			</div>
+			<EmailLoginButton />
 
 			<div className="text-center text-slate-600 text-sm mt-6">
 				Don't have an account?{' '}
@@ -82,6 +66,31 @@ export const GoogleLoginButton: FunctionComponent<{ className?: string }> = ({
 			<GoogleLogo />
 			<span className="ml-2">Continue with Google</span>
 		</button>
+	);
+};
+
+export const EmailLoginButton: FunctionComponent<{}> = () => {
+	return (
+		<form className="w-full">
+			<label htmlFor="email" className="sr-only">
+				Email address
+			</label>
+			<input
+				id="email"
+				name="email"
+				type="email"
+				autoComplete="email"
+				required
+				className="block w-full appearance-none border border-gray-300 px-3 py-2 shadow-sm placeholder:text-gray-400  focus:ring-black rounded-lg outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-offset-1"
+				placeholder="Enter you email"
+			/>
+			<button
+				type="submit"
+				className="inline-flex h-10 w-full bg-black text-white focus:ring-black items-center justify-center rounded-lg border border-slate-300 p-2 text-sm font-medium outline-none transition duration-150 ease-in-out focus:ring-2 disabled:opacity-60 focus:ring-offset-1 mt-3"
+			>
+				Continue
+			</button>
+		</form>
 	);
 };
 
