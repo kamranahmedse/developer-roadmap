@@ -37,6 +37,7 @@
     "markdown-it": "^13.0.1",
     "openai": "^3.2.1",
     "prettier": "^2.8.7",
-    "prettier-plugin-astro": "^0.8.0"
+    "prettier-plugin-astro": "^0.8.0",
+    "prettier-plugin-tailwindcss": "^0.2.6"
   }
 }
