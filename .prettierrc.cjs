@@ -7,6 +7,7 @@ module.exports = {
       options: {
         parser: 'astro',
         singleQuote: true,
+        jsxSingleQuote: true,
       },
     },
   ],
