@@ -1,0 +1,9 @@
+---
+import Popup from '../Popup/Popup.astro';
+import LoginComponent from './LoginComponent'
+---
+
+<Popup id='login-popup' title='Become a member' subtitle='Welcome back! Login with github or google.'>
+  <LoginComponent client:only="preact" />
+</Popup>
+
