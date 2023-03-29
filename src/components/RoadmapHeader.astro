@@ -55,7 +55,7 @@ const isRoadmapReady = !isUpcoming;
 
               {isRoadmapReady && (
                 <button
-                  data-popup='download-popup'
+                  data-popup='login-popup'
                   class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
                   aria-label='Download Roadmap'
                   ga-category='Subscription'
@@ -68,7 +68,7 @@ const isRoadmapReady = !isUpcoming;
               )}
 
               <button
-                data-popup='subscribe-popup'
+                data-popup='login-popup'
                 class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
                 aria-label='Subscribe for Updates'
                 ga-category='Subscription'
@@ -77,17 +77,6 @@ const isRoadmapReady = !isUpcoming;
               >
                 <Icon icon='email' />
                 <span class='ml-2'>Subscribe</span>
-              </button>
-              <button
-                data-popup='login-popup'
-                class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
-                aria-label='Login to Subscribe for Updates'
-                ga-category='Login'
-                ga-action='Clicked Popup Opener'
-                ga-label='Login Roadmap Popup'
-              >
-                <Icon icon='email' />
-                <span class='ml-2'>Login</span>
               </button>
             </>
           )
