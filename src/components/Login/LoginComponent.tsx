@@ -17,13 +17,9 @@ export default function LoginComponent() {
 				<GoogleLoginButton />
 			</div>
 
-			<div className="flex items-center gap-2 text-sm text-slate-600 py-6">
-				<div className="h-px w-full bg-slate-200" />
-				OR
-				<div className="h-px w-full bg-slate-200" />
-			</div>
+			<Divider />
 
-			<EmailLoginButton />
+			<EmailLoginForm />
 
 			<div className="text-center text-slate-600 text-sm mt-6">
 				Don't have an account?{' '}
@@ -34,6 +30,18 @@ export default function LoginComponent() {
 		</div>
 	);
 }
+
+export const Divider: FunctionComponent<{ className?: string }> = ({
+	className,
+}) => {
+	return (
+		<div className="flex items-center gap-2 text-sm text-slate-600 py-6">
+			<div className="h-px w-full bg-slate-200" />
+			OR
+			<div className="h-px w-full bg-slate-200" />
+		</div>
+	);
+};
 
 export const GithubLoginButton: FunctionComponent<{ className?: string }> = ({
 	className,
@@ -69,7 +77,7 @@ export const GoogleLoginButton: FunctionComponent<{ className?: string }> = ({
 	);
 };
 
-export const EmailLoginButton: FunctionComponent<{}> = () => {
+export const EmailLoginForm: FunctionComponent<{}> = () => {
 	return (
 		<form className="w-full">
 			<label htmlFor="email" className="sr-only">
