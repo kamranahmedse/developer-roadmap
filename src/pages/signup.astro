@@ -1,6 +1,7 @@
 ---
 import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
 import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
+import { GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -24,38 +25,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <form
-        action='https://news.roadmap.sh/subscribe'
-        method='POST'
-        accept-charset='utf-8'
-        class='w-full'
-        captcha-form
-      >
-        <input type='hidden' name='gdpr' value='true' />
-
-        <input
-          type='email'
-          required
-          name='email'
-          id='email'
-          autofocus
-          class='mt-1 block w-full mb-2 border-2 rounded-md py-2 sm:py-3 px-3 sm:px-3.5 text-md'
-          placeholder='Enter your email'
-        />
-
-        <CaptchaFields />
-
-        <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
-        <input type='hidden' name='subform' value='yes' />
-
-        <button
-          type='submit'
-          name='submit'
-          class='bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-2 sm:py-2.5 sm:px-5 rounded-md w-full text-md'
-        >
-          Subscribe
-        </button>
-      </form>
+      <div class="space-y-2">
+        <GithubLoginButton />
+        <GoogleLoginButton />
+      </div>
     </div>
   </div>
 
