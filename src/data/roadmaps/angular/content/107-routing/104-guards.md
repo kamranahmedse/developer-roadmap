@@ -12,3 +12,4 @@ Visit the following resources to learn more:
 - [Can Deactivate](https://angular.io/api/router/CanDeactivate)
 - [Angular Can Load](https://angular.io/api/router/CanLoad)
 - [Can Match](https://angular.io/api/router/CanMatch)
+- [Resolve](https://angular.io/api/router/Resolve)
