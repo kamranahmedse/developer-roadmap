@@ -111,7 +111,11 @@ async function run() {
     const topicTitle = group?.children?.controls?.control?.find(
       (control) => control?.typeID === 'Label'
     )?.properties?.text;
-    const currTopicUrl = topicId.replace(/^\d+-/g, '/').replace(/:/g, '/');
+    const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
+    if (!currTopicUrl) {
+      continue;
+    }
+
     const contentFilePath = topicUrlToPathMapping[currTopicUrl];
 
     if (!contentFilePath) {
