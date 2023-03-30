@@ -21,7 +21,7 @@ export default function AccountNavigation() {
   return (
     <div>
       {isAuthenticated ? (
-        <div>Authenticated: {user?.email}</div>
+        <div>Authenticated: {user?.name}</div>
       ) : (
         <div>Not Authenticated</div>
       )}
