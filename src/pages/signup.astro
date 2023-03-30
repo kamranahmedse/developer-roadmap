@@ -1,7 +1,8 @@
 ---
 import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
 import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
-import { Divider, EmailLoginForm, GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
+import { Divider, GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
+import EmailLoginForm from '../components/Login/email-login-form';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -32,7 +33,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
       <Divider />
 
-			<EmailLoginForm />
+			<EmailLoginForm client:load />
     </div>
   </div>
 

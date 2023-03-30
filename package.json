@@ -8,7 +8,7 @@
 		"start": "astro dev",
 		"build": "astro build",
 		"preview": "astro preview",
-    "format": "prettier --write .",
+		"format": "prettier --write .",
 		"astro": "astro",
 		"deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
 		"compress:jsons": "node bin/compress-jsons.cjs",
@@ -25,6 +25,8 @@
 		"@astrojs/tailwind": "^3.1.1",
 		"astro": "^2.1.7",
 		"astro-compress": "^1.1.35",
+		"jose": "^4.13.1",
+		"js-cookie": "^3.0.1",
 		"node-html-parser": "^6.1.5",
 		"npm-check-updates": "^16.8.0",
 		"preact": "^10.6.5",
@@ -35,12 +37,13 @@
 	"devDependencies": {
 		"@playwright/test": "^1.32.1",
 		"@tailwindcss/typography": "^0.5.9",
+		"@types/js-cookie": "^3.0.3",
 		"gh-pages": "^5.0.0",
 		"js-yaml": "^4.1.0",
 		"markdown-it": "^13.0.1",
 		"openai": "^3.2.1",
 		"prettier": "^2.8.7",
 		"prettier-plugin-astro": "^0.8.0",
-    "prettier-plugin-tailwindcss": "^0.2.6"
+		"prettier-plugin-tailwindcss": "^0.2.6"
 	}
 }
