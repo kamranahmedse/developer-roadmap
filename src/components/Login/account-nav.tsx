@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { useAuth } from '../../hooks/use-auth';
 import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+import AccountDropdown from './account-dropdown';
 
 export default function AccountNavigation() {
   const { user, isLoading } = useAuth();
@@ -16,21 +17,13 @@ export default function AccountNavigation() {
       ) : (
         <>
           {user ? (
-            <button
-              className="flex h-10 w-32 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
-              onClick={() => {
-                Cookies.remove(TOKEN_COOKIE_NAME);
-                window.location.reload();
-              }}
-            >
-              <span className="mr-2">Logout</span>
-            </button>
+            <AccountDropdown />
           ) : (
             <a
               className="flex h-10 w-32 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
               href="/signup"
             >
-              <span className="mr-2">Login</span>
+              <span className="mr-2">Register</span>
             </a>
           )}
         </>
