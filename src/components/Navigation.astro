@@ -11,7 +11,7 @@ import AccountNavigation from './Login/account-nav';
     </a>
 
     <!-- Desktop navigation items -->
-    <ul class='hidden space-x-5 sm:flex'>
+    <ul class='hidden space-x-5 sm:flex sm:items-center'>
       <li>
         <a href='/roadmaps' class='text-gray-400 hover:text-white'>Roadmaps</a>
       </li>
@@ -25,14 +25,6 @@ import AccountNavigation from './Login/account-nav';
       </li>
       <li>
         <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
-      </li>
-      <li>
-        <a
-          class='font-regular rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm text-white hover:from-blue-500 hover:to-blue-600'
-          href='/signup'
-        >
-          Subscribe
-        </a>
       </li>
       <li>
         <AccountNavigation client:load />
