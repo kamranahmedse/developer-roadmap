@@ -25,7 +25,7 @@ export default function AccountDropdown() {
       </button>
 
       <div
-        className={`absolute right-0 mt-2 w-48 rounded-md bg-slate-800 py-1 shadow-xl ${
+        className={`absolute right-0 z-10 mt-2 w-48 rounded-md bg-slate-800 py-1 shadow-xl ${
           isOpen ? 'block' : 'hidden'
         }`}
       >
