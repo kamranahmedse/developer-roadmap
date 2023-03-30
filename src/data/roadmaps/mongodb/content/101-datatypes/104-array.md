@@ -27,19 +27,19 @@ MongoDB provides various operators such as `$in`, `$all`, and `$size`, for query
 - Finding documents with a specific item in an array:
 
 ```javascript
-db.collection.find({ hobbies: "swimming" });
+db.collection.find({ hobbies: 'swimming' });
 ```
 
 - Finding documents with any of the specified items in an array:
 
 ```javascript
-db.collection.find({ hobbies: { $in: ["swimming", "coding"] } });
+db.collection.find({ hobbies: { $in: ['swimming', 'coding'] } });
 ```
 
 - Finding documents with all specified items in an array:
 
 ```javascript
-db.collection.find({ hobbies: { $all: ["reading", "coding"] } });
+db.collection.find({ hobbies: { $all: ['reading', 'coding'] } });
 ```
 
 - Finding documents with a specific array size:
@@ -55,29 +55,38 @@ You can update documents containing arrays by using operators like `$push`, `$ad
 - Adding a new item to an array:
 
 ```javascript
-db.collection.updateOne({ _id: ObjectId("123xyz") }, { $push: { hobbies: "painting" } });
+db.collection.updateOne(
+  { _id: ObjectId('123xyz') },
+  { $push: { hobbies: 'painting' } }
+);
 ```
 
 - Adding unique items to an array:
 
 ```javascript
-db.collection.updateOne({ _id: ObjectId("123xyz") }, { $addToSet: { hobbies: "painting" } });
+db.collection.updateOne(
+  { _id: ObjectId('123xyz') },
+  { $addToSet: { hobbies: 'painting' } }
+);
 ```
 
 - Removing an item from an array:
 
 ```javascript
-db.collection.updateOne({ _id: ObjectId("123xyz") }, { $pull: { hobbies: "reading" } });
+db.collection.updateOne(
+  { _id: ObjectId('123xyz') },
+  { $pull: { hobbies: 'reading' } }
+);
 ```
 
 - Removing the first or last item from an array:
 
 ```javascript
 // Remove the first item (use $pop with -1)
-db.collection.updateOne({ _id: ObjectId("123xyz") }, { $pop: { hobbies: -1 } });
+db.collection.updateOne({ _id: ObjectId('123xyz') }, { $pop: { hobbies: -1 } });
 
 // Remove the last item (use $pop with 1)
-db.collection.updateOne({ _id: ObjectId("123xyz") }, { $pop: { hobbies: 1 } });
+db.collection.updateOne({ _id: ObjectId('123xyz') }, { $pop: { hobbies: 1 } });
 ```
 
 In this section, we've covered the essentials of using the `Array` datatype in MongoDB. With this knowledge, you can efficiently model and query data that requires multiple related items within a single document.

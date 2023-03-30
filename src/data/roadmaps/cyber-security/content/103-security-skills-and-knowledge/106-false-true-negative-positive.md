@@ -1,6 +1,6 @@
 # False Negative / False Positive
 
-In cybersecurity, one important aspect is the accuracy of security tools and systems in detecting threats and attacks. To capture this concept, we refer to four terms: *true positive, true negative, false positive, and false negative*.
+In cybersecurity, one important aspect is the accuracy of security tools and systems in detecting threats and attacks. To capture this concept, we refer to four terms: _true positive, true negative, false positive, and false negative_.
 
 ## True Positive (TP)
 
@@ -21,6 +21,7 @@ A false negative occurs when the security tool fails to detect an actual threat 
 To have an effective cybersecurity system, security professionals aim to maximize true positives and true negatives, while minimizing false positives and false negatives. Balancing these aspects ensures that the security tools maintain their effectiveness without causing undue disruptions to a user's experience.
 
 ## Key Points
+
 - **True Positive (TP)**: Correctly identifying a threat
 - **True Negative (TN)**: Correctly identifying there is no threat
 - **False Positive (FP)**: Mistakenly identifying a non-threat as a threat

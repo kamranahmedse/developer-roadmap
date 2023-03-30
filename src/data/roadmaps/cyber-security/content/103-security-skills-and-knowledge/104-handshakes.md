@@ -4,7 +4,7 @@ In the world of cyber security, a **handshake** refers to the process of establi
 
 There are two common types of handshakes in cyber security:
 
-- **Three-Way Handshake** 
+- **Three-Way Handshake**
 - **Cryptographic Handshake**
 
 ## Three-Way Handshake (TCP Handshake)

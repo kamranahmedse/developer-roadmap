@@ -13,4 +13,3 @@ Visit the following resources to learn more:
 - [CSE373 2020 - Lecture 14 - Minimum Spanning Trees (cont)](https://www.youtube.com/watch?v=RktgPx0MarY&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=14)
 - [CSE373 2020 - Lecture 15 - Graph Algorithms (cont 2)](https://www.youtube.com/watch?v=MUe5DXRhyAo&list=PLOtl7M3yp-DX6ic0HGT0PUX_wiNmkWkXx&index=15)
 - [6.006 Single-Source Shortest Paths Problem](https://www.youtube.com/watch?v=Aa2sqUhIn-E&index=15&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb)
-

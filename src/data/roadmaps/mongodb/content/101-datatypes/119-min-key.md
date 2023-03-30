@@ -12,13 +12,13 @@ To use Min Key in MongoDB, you can utilize the `MinKey()` function. Here's an ex
 
 ```javascript
 // Import the MinKey class from the BSON module
-const { MinKey } = require("bson");
+const { MinKey } = require('bson');
 
 // Create an instance of the MinKey class
 const minValue = new MinKey();
 
 // Insert a document with a field `priority` having the MinKey value
-db.myCollection.insertOne({ name: "example", priority: minValue });
+db.myCollection.insertOne({ name: 'example', priority: minValue });
 ```
 
 This will insert a document with a `priority` field set to the Min Key value.

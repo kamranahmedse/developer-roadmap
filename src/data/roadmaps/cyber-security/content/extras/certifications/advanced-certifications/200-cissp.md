@@ -1,19 +1,19 @@
 # CISSP
 
-The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security. 
+The Certified Information Systems Security Professional (CISSP) is a globally recognized certification offered by the International Information System Security Certification Consortium (ISC)². It is designed for experienced security professionals to validate their knowledge and expertise in the field of information security.
 
 ## Who Should Obtain the CISSP Certification?
 
 The CISSP certification is ideal for security consultants, managers, IT directors, security auditors, security analysts, and other professionals who are responsible for designing, implementing, and managing security for their organization. This certification is aimed at professionals with at least five years of full-time experience in two or more of the eight CISSP domains:
 
-* Security and Risk Management
-* Asset Security
-* Security Architecture and Engineering
-* Communication and Network Security
-* Identity and Access Management (IAM)
-* Security Assessment and Testing
-* Security Operations
-* Software Development Security
+- Security and Risk Management
+- Asset Security
+- Security Architecture and Engineering
+- Communication and Network Security
+- Identity and Access Management (IAM)
+- Security Assessment and Testing
+- Security Operations
+- Software Development Security
 
 ## Certification Process
 
@@ -31,8 +31,8 @@ To obtain the CISSP certification, candidates must meet the following requiremen
 
 Obtaining the CISSP certification comes with numerous benefits, such as:
 
-* Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.
-* Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.
-* Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.
-* Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.
-* Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.
+- Enhanced credibility, as the CISSP is often considered the gold standard in information security certifications.
+- Increased job opportunities, as many organizations and government agencies require or prefer CISSP-certified professionals.
+- Improved knowledge and skills, as the certification covers a broad range of security topics and best practices.
+- Higher salary potential, as CISSP-certified professionals often command higher salaries compared to their non-certified counterparts.
+- Access to a network of other CISSP-certified professionals and resources, enabling continuous learning and professional development.

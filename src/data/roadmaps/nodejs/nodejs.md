@@ -1,94 +1,93 @@
 ---
-jsonUrl: "/jsons/roadmaps/nodejs.json"
-pdfUrl: "/pdfs/roadmaps/nodejs.pdf"
+jsonUrl: '/jsons/roadmaps/nodejs.json'
+pdfUrl: '/pdfs/roadmaps/nodejs.pdf'
 order: 6
-briefTitle: "Node.js"
-briefDescription: "Step by step guide to becoming a Node.js developer in 2023"
-title: "Node.js Developer"
-description: "Step by step guide to becoming a modern Node.js developer in 2023"
+briefTitle: 'Node.js'
+briefDescription: 'Step by step guide to becoming a Node.js developer in 2023'
+title: 'Node.js Developer'
+description: 'Step by step guide to becoming a modern Node.js developer in 2023'
 isNew: false
 hasTopics: true
 dimensions:
   width: 968
   height: 2474.06
 sponsor:
-  url: "https://bit.ly/3YYcqdt"
-  title: "Free eBook"
-  imageUrl: "https://i.imgur.com/RCbFXOY.png"
-  description: "Learn how to find a GraphQL architecture that scales with this free eBook from Apollo"
+  url: 'https://bit.ly/3YYcqdt'
+  title: 'Free eBook'
+  imageUrl: 'https://i.imgur.com/RCbFXOY.png'
+  description: 'Learn how to find a GraphQL architecture that scales with this free eBook from Apollo'
   event:
-    category: "SponsorClick"
-    action: "Apollo Redirect"
-    label: "Node.js / Apollo Link"
+    category: 'SponsorClick'
+    action: 'Apollo Redirect'
+    label: 'Node.js / Apollo Link'
 schema:
-  headline: "Node.js Roadmap"
-  description: "Learn Node.js with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
-  imageUrl: "https://roadmap.sh/roadmaps/nodejs.png"
-  datePublished: "2023-01-05"
-  dateModified: "2023-01-20"
+  headline: 'Node.js Roadmap'
+  description: 'Learn Node.js with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  imageUrl: 'https://roadmap.sh/roadmaps/nodejs.png'
+  datePublished: '2023-01-05'
+  dateModified: '2023-01-20'
 seo:
-  title: "Node.js Developer Roadmap: Learn to become a modern node.js developer"
-  description: "Learn to become a modern node.js developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern node.js development."
+  title: 'Node.js Developer Roadmap: Learn to become a modern node.js developer'
+  description: 'Learn to become a modern node.js developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern node.js development.'
   keywords:
-    - "node.js roadmap 2023"
-    - "nodejs roadmap 2023"
-    - "node.js roadmap 2023"
-    - "nodejs roadmap 2023"
-    - "node.js developer roadmap 2023"
-    - "nodejs developer roadmap 2023"
-    - "guide to becoming a developer"
-    - "guide to becoming a node.js developer"
-    - "guid to becoming a node.js developer"
-    - "node.js developer"
-    - "nodejs developer"
-    - "node.js engineer"
-    - "nodejs engineer"
-    - "node.js skills"
-    - "nodejs skills"
-    - "node.js development"
-    - "nodejs development"
-    - "node.js developer"
-    - "nodejs developer"
-    - "node.js development skills"
-    - "nodejs development skills"
-    - "node.js development skills test"
-    - "nodejs development skills test"
-    - "node.js roadmap"
-    - "nodejs roadmap"
-    - "node.js engineer roadmap"
-    - "nodejs engineer roadmap"
-    - "node.js developer roadmap"
-    - "nodejs developer roadmap"
-    - "become a node.js developer"
-    - "become a node.js developer"
-    - "node.js developer career path"
-    - "nodejs developer career path"
-    - "node.js developer"
-    - "nodejs developer"
-    - "modern node.js developer"
-    - "modern node.js developer"
-    - "node developer"
-    - "skills for node.js development"
-    - "skills for nodejs development"
-    - "learn node.js development"
-    - "lear node.js development"
-    - "node.js developer quiz"
-    - "nodejs developer quiz"
-    - "node.js developer interview questions"
-    - "nodejs developer interview questions"
+    - 'node.js roadmap 2023'
+    - 'nodejs roadmap 2023'
+    - 'node.js roadmap 2023'
+    - 'nodejs roadmap 2023'
+    - 'node.js developer roadmap 2023'
+    - 'nodejs developer roadmap 2023'
+    - 'guide to becoming a developer'
+    - 'guide to becoming a node.js developer'
+    - 'guid to becoming a node.js developer'
+    - 'node.js developer'
+    - 'nodejs developer'
+    - 'node.js engineer'
+    - 'nodejs engineer'
+    - 'node.js skills'
+    - 'nodejs skills'
+    - 'node.js development'
+    - 'nodejs development'
+    - 'node.js developer'
+    - 'nodejs developer'
+    - 'node.js development skills'
+    - 'nodejs development skills'
+    - 'node.js development skills test'
+    - 'nodejs development skills test'
+    - 'node.js roadmap'
+    - 'nodejs roadmap'
+    - 'node.js engineer roadmap'
+    - 'nodejs engineer roadmap'
+    - 'node.js developer roadmap'
+    - 'nodejs developer roadmap'
+    - 'become a node.js developer'
+    - 'become a node.js developer'
+    - 'node.js developer career path'
+    - 'nodejs developer career path'
+    - 'node.js developer'
+    - 'nodejs developer'
+    - 'modern node.js developer'
+    - 'modern node.js developer'
+    - 'node developer'
+    - 'skills for node.js development'
+    - 'skills for nodejs development'
+    - 'learn node.js development'
+    - 'lear node.js development'
+    - 'node.js developer quiz'
+    - 'nodejs developer quiz'
+    - 'node.js developer interview questions'
+    - 'nodejs developer interview questions'
 relatedRoadmaps:
-  - "javascript"
-  - "backend"
-  - "typescript"
-  - "system-design"
-  - "graphql"
-  - "frontend"
+  - 'javascript'
+  - 'backend'
+  - 'typescript'
+  - 'system-design'
+  - 'graphql'
+  - 'frontend'
 sitemap:
   priority: 1
-  changefreq: "monthly"
+  changefreq: 'monthly'
 tags:
-  - "roadmap"
-  - "main-sitemap"
-  - "skill-roadmap"
+  - 'roadmap'
+  - 'main-sitemap'
+  - 'skill-roadmap'
 ---
-

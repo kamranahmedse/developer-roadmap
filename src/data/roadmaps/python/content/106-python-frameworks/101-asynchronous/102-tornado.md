@@ -7,5 +7,3 @@ Visit the following resources to learn more:
 - [Tornado — Official Website](https://www.tornadoweb.org/)
 - [A Step-by-Step Tutorial on Python Tornado](https://phrase.com/blog/posts/tornado-web-framework-i18n/)
 - [Tornado Python Framework](https://www.youtube.com/watch?v=-gJ21qzpieA)
-
-

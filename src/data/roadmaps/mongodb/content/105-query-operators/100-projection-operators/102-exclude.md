@@ -47,12 +47,12 @@ Now, let's say we want to fetch all the students but exclude the `age` field fro
 
 ```javascript
 db.students.aggregate([
-    {
-        $project: {
-            age: 0
-        }
-    }
-])
+  {
+    $project: {
+      age: 0,
+    },
+  },
+]);
 ```
 
 This command will return the following result:

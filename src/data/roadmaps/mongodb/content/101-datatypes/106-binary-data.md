@@ -1,6 +1,6 @@
 # Binary data
 
-Binary Data is a datatype in MongoDB that is used to store binary content like images, audio files, or any other data that can be represented in binary format. This datatype is particularly useful when you need to store large files, manipulate raw binary data, or work with data that cannot be encoded as UTF-8 strings. 
+Binary Data is a datatype in MongoDB that is used to store binary content like images, audio files, or any other data that can be represented in binary format. This datatype is particularly useful when you need to store large files, manipulate raw binary data, or work with data that cannot be encoded as UTF-8 strings.
 
 In MongoDB, binary data is represented using the BSON Binary type, which uses a binary format for encoding and decoding data. The BSON Binary type has several subtypes to better categorize the kind of binary data being stored, such as `B_GENERAL`, `B_FUNCTION`, and `B_BINARY`.
 

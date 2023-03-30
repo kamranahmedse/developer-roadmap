@@ -12,6 +12,7 @@ Here is a brief summary of Max Key:
 - Max Key is not to be confused with a regular value in a document and is primarily used for internal purposes.
 
 ## Usage
+
 To use Max Key in your MongoDB implementation, you can insert it into your document using MongoDB syntax as follows:
 
 ```javascript
@@ -29,7 +30,7 @@ When you want to sort or compare documents in a collection, Max Key will help en
 Here is an example of how Max Key can be used in a range query:
 
 ```javascript
-db.my_collection.find({age: {$lte: MaxKey()}});
+db.my_collection.find({ age: { $lte: MaxKey() } });
 ```
 
 This query will return all the documents in `my_collection` where the `age` field is less than or equal to Max Key, essentially retrieving everything, as no value can be greater than Max Key.

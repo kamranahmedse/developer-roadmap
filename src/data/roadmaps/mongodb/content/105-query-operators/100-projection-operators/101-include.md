@@ -5,7 +5,9 @@ The `$include` projection operator is used in queries to specify the fields that
 The syntax for `$include` is as follows:
 
 ```javascript
-{ field: 1 }
+{
+  field: 1;
+}
 ```
 
 Here, `field` is the name of the field to include, and `1` indicates that you want the field included in the result documents. You can include multiple fields by specifying them in a comma-separated list:
@@ -21,30 +23,30 @@ Suppose we have a collection called `books` with the following documents:
 ```javascript
 [
   {
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
-    "year": 1951,
-    "genre": "Literary fiction"
+    title: 'The Catcher in the Rye',
+    author: 'J.D. Salinger',
+    year: 1951,
+    genre: 'Literary fiction',
   },
   {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
-    "year": 1960,
-    "genre": "Southern Gothic"
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
+    year: 1960,
+    genre: 'Southern Gothic',
   },
   {
-    "title": "Of Mice and Men",
-    "author": "John Steinbeck",
-    "year": 1937,
-    "genre": "Novella"
-  }
-]
+    title: 'Of Mice and Men',
+    author: 'John Steinbeck',
+    year: 1937,
+    genre: 'Novella',
+  },
+];
 ```
 
 If you want to retrieve only the `title` and `author` fields from the documents in the `books` collection, you can use the `$include` projection operator as follows:
 
 ```javascript
-db.books.find({}, { title: 1, author: 1, _id: 0 })
+db.books.find({}, { title: 1, author: 1, _id: 0 });
 ```
 
 The result will be:
@@ -52,18 +54,18 @@ The result will be:
 ```javascript
 [
   {
-    "title": "The Catcher in the Rye",
-    "author": "J.D. Salinger",
+    title: 'The Catcher in the Rye',
+    author: 'J.D. Salinger',
   },
   {
-    "title": "To Kill a Mockingbird",
-    "author": "Harper Lee",
+    title: 'To Kill a Mockingbird',
+    author: 'Harper Lee',
   },
   {
-    "title": "Of Mice and Men",
-    "author": "John Steinbeck",
-  }
-]
+    title: 'Of Mice and Men',
+    author: 'John Steinbeck',
+  },
+];
 ```
 
 Note that we have also excluded the `_id` field (which is included by default) by setting it to `0`.

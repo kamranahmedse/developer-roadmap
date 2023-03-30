@@ -7,5 +7,3 @@ Visit the following resources to learn more:
 - [Official Website: Quasar](https://quasar.dev/)
 - [Quasar Framework: Vue.js Cross Platform App](https://www.youtube.com/watch?v=opmng7llVJ0&list=PLAiDzIdBfy8iu_MZrq3IPuSFcRgCQ0iL0)
 - [How to Build an App using Quasar Framework](https://www.youtube.com/watch?v=czJIuHyPPXo)
-
-

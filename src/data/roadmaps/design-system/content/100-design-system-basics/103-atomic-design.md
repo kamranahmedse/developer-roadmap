@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Atomic Design Principles & Methodology 101](https://xd.adobe.com/ideas/process/ui-design/atomic-design-principles-methodology-101/)
 - [Atomic Design Methodology](https://atomicdesign.bradfrost.com/chapter-2/)
 - [Atomic Design and UI Components: Theory to Practice](https://blog.bitsrc.io/atomic-design-and-ui-components-theory-to-practice-f200db337c24)
-

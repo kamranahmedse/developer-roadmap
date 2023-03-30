@@ -10,8 +10,8 @@ Here's an example of storing JavaScript code in a MongoDB document:
 
 ```javascript
 db.scripts.insert({
-  name: "helloWorld",
-  code: new Code("function() { return 'Hello World!'; }")
+  name: 'helloWorld',
+  code: new Code("function() { return 'Hello World!'; }"),
 });
 ```
 
@@ -23,13 +23,13 @@ db.collection.aggregate([
     $addFields: {
       volume: {
         $function: {
-          body: "function(l, w, h) { return l * w * h; }",
-          args: ["$length", "$width", "$height"],
-          lang: "js"
-        }
-      }
-    }
-  }
+          body: 'function(l, w, h) { return l * w * h; }',
+          args: ['$length', '$width', '$height'],
+          lang: 'js',
+        },
+      },
+    },
+  },
 ]);
 ```
 
@@ -40,15 +40,15 @@ You can utilize JavaScript functions with MongoDB's Map-Reduce framework. Map-Re
 An example of Map-Reduce using JavaScript functions:
 
 ```javascript
-var map = function() {
+var map = function () {
   emit(this.category, this.price);
 };
 
-var reduce = function(key, values) {
+var reduce = function (key, values) {
   return Array.sum(values);
 };
 
-db.products.mapReduce(map, reduce, { out: "total_by_category" });
+db.products.mapReduce(map, reduce, { out: 'total_by_category' });
 ```
 
 ## Limitations

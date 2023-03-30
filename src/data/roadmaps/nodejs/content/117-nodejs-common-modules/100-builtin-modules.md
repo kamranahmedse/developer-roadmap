@@ -21,7 +21,7 @@ Built-in modules are already installed with `Node.js`, so you don't need to inst
 - **child_processes**: provides the ability to spawn subprocesses.
 - **REPL**: provides a Read-Eval-Print-Loop (REPL) implementation that is available both as a standalone program or includible in other applications.
 - **readline**: provides an interface for reading data from a Readable stream one line at a time.
-- **util**:  supports the needs of Node.js internal APIs. 
+- **util**: supports the needs of Node.js internal APIs.
 - **querystring**: provides utilities for parsing and formatting URL query strings.
 - **string_decoder**: provides an API for decoding Buffer objects into strings.
 - **tls**: provides an implementation of the Transport Layer Security (TLS) and Secure Socket Layer (SSL) protocols.

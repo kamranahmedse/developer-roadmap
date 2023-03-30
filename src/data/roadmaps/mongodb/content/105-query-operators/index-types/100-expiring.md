@@ -7,7 +7,7 @@ To create an expiring index, you can use the `createIndex()` method along with t
 Here's an example of creating an expiring index on a `createdAt` field with a time-to-live (TTL) of 3600 seconds (1 hour):
 
 ```javascript
-db.collection.createIndex({createdAt: 1}, {expireAfterSeconds: 3600})
+db.collection.createIndex({ createdAt: 1 }, { expireAfterSeconds: 3600 });
 ```
 
 When using expiring indexes, it's essential to note the following points:

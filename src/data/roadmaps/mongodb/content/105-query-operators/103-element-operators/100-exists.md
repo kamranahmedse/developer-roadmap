@@ -13,13 +13,15 @@ Here, `<boolean>` can be either `true` or `false`. If `true`, then it filters th
 ## Examples
 
 - Find all documents where the field "author" exists:
+
 ```javascript
-db.books.find( { author: { $exists: true } } )
+db.books.find({ author: { $exists: true } });
 ```
 
 - Find all documents where the field "publisher" does not exist:
+
 ```javascript
-db.books.find( { publisher: { $exists: false } } )
+db.books.find({ publisher: { $exists: false } });
 ```
 
 ## Usage with Embedded Documents
@@ -31,10 +33,11 @@ db.books.find( { publisher: { $exists: false } } )
 Find all documents where the field "address.city" is present.
 
 ```javascript
-db.users.find( { "address.city": { $exists: true } } )
+db.users.find({ 'address.city': { $exists: true } });
 ```
 
 ## Note
+
 Keep in mind that `$exists` checks for both the presence of a field and `null` values since they represent the existence of a field with no value. If you want to search for fields with non-null values, you can use a combination of `$exists` and `$ne` (not equal to) operator.
 
 **Example:**
@@ -42,7 +45,7 @@ Keep in mind that `$exists` checks for both the presence of a field and `null` v
 Find all documents where the field "edition" exists and has a non-null value.
 
 ```javascript
-db.books.find( { edition: { $exists: true, $ne: null } } )
+db.books.find({ edition: { $exists: true, $ne: null } });
 ```
 
 That's all you need to know about `$exists` in MongoDB! Happy querying!

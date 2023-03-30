@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Vue.js Official Website](https://vuejs.org/)
 - [Official Documentation](https://vuejs.org/guide/introduction.html)
-

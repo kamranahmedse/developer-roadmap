@@ -8,10 +8,10 @@ Serverless computing works by executing your application code in short-lived sta
 
 Some common characteristics of serverless computing include:
 
-- *No server management:* Developers don't need to manage any servers, taking the burden of infrastructure management off their shoulders.
-- *Auto-scaling:* The cloud provider automatically scales the compute resources as per the incoming requests or events.
-- *Cost optimization:* Pay-as-you-go pricing model ensures that you only pay for the compute resources consumed by your application.
-- *Event-driven:* Serverless applications are often designed to be triggered by events, such as API calls or data updates, ensuring efficient use of resources.
+- _No server management:_ Developers don't need to manage any servers, taking the burden of infrastructure management off their shoulders.
+- _Auto-scaling:_ The cloud provider automatically scales the compute resources as per the incoming requests or events.
+- _Cost optimization:_ Pay-as-you-go pricing model ensures that you only pay for the compute resources consumed by your application.
+- _Event-driven:_ Serverless applications are often designed to be triggered by events, such as API calls or data updates, ensuring efficient use of resources.
 
 ## Popular Serverless platforms
 

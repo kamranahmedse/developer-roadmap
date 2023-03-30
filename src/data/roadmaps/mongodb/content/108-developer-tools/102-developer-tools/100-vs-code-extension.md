@@ -4,17 +4,17 @@ Visual Studio Code (VS Code) offers an extension for MongoDB that provides a con
 
 ## Features
 
-* __Explorer Integration__: This extension integrates directly with the VS Code Explorer – allowing you to efficiently browse your databases, collections, and documents sans the need to leave the comfort of your code editor.
+- **Explorer Integration**: This extension integrates directly with the VS Code Explorer – allowing you to efficiently browse your databases, collections, and documents sans the need to leave the comfort of your code editor.
 
-* __Query Execution__: Write and execute MongoDB queries in your editor using the built-in MongoDB Query Playground. Easily execute commands, one by one or in groups, making your data manipulation experience more efficient.
+- **Query Execution**: Write and execute MongoDB queries in your editor using the built-in MongoDB Query Playground. Easily execute commands, one by one or in groups, making your data manipulation experience more efficient.
 
-* __CRUD Operations__: Perform Create, Read, Update, Delete (CRUD) operations on your documents right from the VS Code, without needing to switch between applications, keeping you focused and productive.
+- **CRUD Operations**: Perform Create, Read, Update, Delete (CRUD) operations on your documents right from the VS Code, without needing to switch between applications, keeping you focused and productive.
 
-* __Schema Visualization__: Get insights into your data schema by simply hovering over a field or a document. This feature enables you to have a more profound understanding of your data, helping you make better decisions while developing your application.
+- **Schema Visualization**: Get insights into your data schema by simply hovering over a field or a document. This feature enables you to have a more profound understanding of your data, helping you make better decisions while developing your application.
 
-* __Snippet Support__: The extension provides template snippets for the most common MongoDB commands, such as find, update or aggregation, to help you write queries faster and adhere to best practices.
+- **Snippet Support**: The extension provides template snippets for the most common MongoDB commands, such as find, update or aggregation, to help you write queries faster and adhere to best practices.
 
-* __Error Monitoring__: Get real-time feedback on syntax or runtime errors while writing MongoDB queries or manipulating documents. This feature helps you identify any potential issues or inconsistencies in your MongoDB operations.
+- **Error Monitoring**: Get real-time feedback on syntax or runtime errors while writing MongoDB queries or manipulating documents. This feature helps you identify any potential issues or inconsistencies in your MongoDB operations.
 
 ## Getting Started
 

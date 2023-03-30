@@ -5,40 +5,43 @@ When working with MongoDB, you might often need to know the number of documents 
 - `countDocuments()`
 - `estimatedDocumentCount()`
 
-##  countDocuments()
+## countDocuments()
 
 The `countDocuments()` method is used to count the number of documents in a collection based on a specified filter. It provides an accurate count that may involve reading all documents in the collection.
 
 **Syntax:**
 
 ```javascript
-collection.countDocuments(filter, options)
+collection.countDocuments(filter, options);
 ```
 
-* `filter`: (Optional) A query that will filter the documents before the count is applied.
-* `options`: (Optional) Additional options for the count operation such as `skip`, `limit`, and `collation`.
+- `filter`: (Optional) A query that will filter the documents before the count is applied.
+- `options`: (Optional) Additional options for the count operation such as `skip`, `limit`, and `collation`.
 
 **Example:**
 
 ```javascript
-db.collection('orders').countDocuments({ status: 'completed' }, (err, count) => {
-  console.log('Number of completed orders: ', count);
-});
+db.collection('orders').countDocuments(
+  { status: 'completed' },
+  (err, count) => {
+    console.log('Number of completed orders: ', count);
+  }
+);
 ```
 
 In the example above, we count the number of documents in the `orders` collection that have a`status` field equal to `'completed'`.
 
-##  estimatedDocumentCount()
+## estimatedDocumentCount()
 
 The `estimatedDocumentCount()` method provides an approximate count of documents in the collection, without applying any filters. This method uses the collection's metadata to determine the count and is generally faster than `countDocuments()`.
 
 **Syntax:**
 
 ```javascript
-collection.estimatedDocumentCount(options)
+collection.estimatedDocumentCount(options);
 ```
 
-* `options`: (Optional) Additional options for the count operation such as `maxTimeMS`.
+- `options`: (Optional) Additional options for the count operation such as `maxTimeMS`.
 
 **Example:**
 

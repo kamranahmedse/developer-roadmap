@@ -2,8 +2,8 @@
 
 You need to pick a programming language to learn the Computer Science concepts. My personal recommendation would be to pick C++ or C and the reason for that is:
 
-* They allow you to deal with pointers and memory allocation/deallocation, so you feel the data structures and algorithms in your bones. In higher level languages like Python or Java, these are hidden from you. In day to day work, that's terrific, but when you're learning how these low-level data structures are built, it's great to feel close to the metal.
-* You will be able to find a lot of resources for the topics listed in this roadmap using C or C++. You can find a lot of resources for Python and Java, but they are not as abundant as C++ and C.
+- They allow you to deal with pointers and memory allocation/deallocation, so you feel the data structures and algorithms in your bones. In higher level languages like Python or Java, these are hidden from you. In day to day work, that's terrific, but when you're learning how these low-level data structures are built, it's great to feel close to the metal.
+- You will be able to find a lot of resources for the topics listed in this roadmap using C or C++. You can find a lot of resources for Python and Java, but they are not as abundant as C++ and C.
 
 Given below is the list of resources; pick ones relevant to the language of your choice.
 

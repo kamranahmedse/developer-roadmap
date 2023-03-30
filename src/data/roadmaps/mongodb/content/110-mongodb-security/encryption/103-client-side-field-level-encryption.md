@@ -4,9 +4,9 @@ Client-Side Field Level Encryption (CSFLE) in MongoDB provides enhanced security
 
 ## Key Features
 
-* **Field-level granularity**: Encrypt only the required fields in a document, ensuring optimal performance while maintaining security.
-* **Automatic encryption and decryption**: The MongoDB client library automatically encrypts and decrypts sensitive fields, without requiring any manual intervention.
-* **Separation of duties**: Client-Side Field Level Encryption separates the management of encryption keys and the encrypted data, allowing for a more secure infrastructure.
+- **Field-level granularity**: Encrypt only the required fields in a document, ensuring optimal performance while maintaining security.
+- **Automatic encryption and decryption**: The MongoDB client library automatically encrypts and decrypts sensitive fields, without requiring any manual intervention.
+- **Separation of duties**: Client-Side Field Level Encryption separates the management of encryption keys and the encrypted data, allowing for a more secure infrastructure.
 
 ## How It Works
 
@@ -20,16 +20,16 @@ Client-Side Field Level Encryption (CSFLE) in MongoDB provides enhanced security
 
 MongoDB supports the following encryption algorithms for CSFLE:
 
-* **Deterministic Encryption**: This encryption method allows for equality queries on encrypted fields. It uses the same encryption key and plaintext to generate the same encrypted data, ensuring that the same values will be encrypted the same way.
-* **Random Encryption**: This encryption method provides a higher level of security by using different values for each encryption, even with identical plaintext. It is suitable for fields that don't require searching or querying based on individual values.
+- **Deterministic Encryption**: This encryption method allows for equality queries on encrypted fields. It uses the same encryption key and plaintext to generate the same encrypted data, ensuring that the same values will be encrypted the same way.
+- **Random Encryption**: This encryption method provides a higher level of security by using different values for each encryption, even with identical plaintext. It is suitable for fields that don't require searching or querying based on individual values.
 
 ## Key Management
 
 CSFLE requires the use of a separate Key Management System (KMS) to store and maintain encryption keys. MongoDB supports the following KMS providers:
 
-* AWS Key Management Service (KMS)
-* Azure Key Vault
-* Google Cloud KMS
-* Local Key Management (using a local master key)
+- AWS Key Management Service (KMS)
+- Azure Key Vault
+- Google Cloud KMS
+- Local Key Management (using a local master key)
 
 By using CSFLE in MongoDB, you can significantly enhance the security of your sensitive data and comply with regulatory standards such as GDPR, HIPAA, and PCI-DSS.

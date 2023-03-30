@@ -4,10 +4,10 @@ Syslogs, short for System Logs, are essential components in the world of cyberse
 
 ## Benefits of Syslogs
 
-* Centralized Logging: Syslogs are centralized repositories for log data, making it easier to monitor multiple devices and applications from a single location.
-* Troubleshooting & Analysis: The data from syslogs can be used to troubleshoot issues or discover potential security breaches, allowing for a faster resolution and improved overall network security.
-* Regulatory Compliance: Syslogs can help organizations meet industry-specific standards and guidelines by keeping a record of system events and data.
-* Efficient Storage: Centralized storage allows for efficient data management, reducing the need for manual log management across different devices.
+- Centralized Logging: Syslogs are centralized repositories for log data, making it easier to monitor multiple devices and applications from a single location.
+- Troubleshooting & Analysis: The data from syslogs can be used to troubleshoot issues or discover potential security breaches, allowing for a faster resolution and improved overall network security.
+- Regulatory Compliance: Syslogs can help organizations meet industry-specific standards and guidelines by keeping a record of system events and data.
+- Efficient Storage: Centralized storage allows for efficient data management, reducing the need for manual log management across different devices.
 
 ## Types of Syslog Messages
 

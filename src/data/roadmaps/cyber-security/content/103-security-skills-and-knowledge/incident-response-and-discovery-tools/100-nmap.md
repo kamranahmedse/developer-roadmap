@@ -1,6 +1,5 @@
 # nmap
 
-
 ## Nmap
 
 Nmap, short for "Network Mapper," is a powerful and widely used open-source tool for network discovery, scanning, and security auditing. Nmap was originally designed to rapidly scan large networks, but it also works well for scanning single hosts. Security professionals, network administrators, and cyber security enthusiasts alike use Nmap to identify available hosts and services on a network, reveal their version information, and explore network infrastructure.
@@ -14,7 +13,7 @@ Nmap offers a multitude of features that can help you gather information about y
 - **Version Detection** - Determining the software and version running on network devices.
 - **Operating System Detection** - Identifying the operating systems of scanned devices.
 - **Scriptable Interaction with the Target** - Using Nmap Scripting Engine (NSE) to automate tasks and extend functionality.
- 
+
 ## How It Works
 
 Nmap sends specially crafted packets to the target hosts and analyzes the received responses. Based on this information, it detects active hosts, their operating systems, and the services they are running. It can be used to scan for open ports, check for vulnerabilities, and gather valuable information about target devices.

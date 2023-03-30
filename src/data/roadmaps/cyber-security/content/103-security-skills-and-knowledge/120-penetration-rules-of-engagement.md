@@ -1,6 +1,6 @@
 # Penetration Testing Rules of Engagement
 
-Penetration testing, also known as ethical hacking, is an essential component of a strong cybersecurity program. Rules of engagement (RoE) for penetration testing define the scope, boundaries, and guidelines for conducting a successful penetration test. These rules are crucial to ensure lawful, efficient, and safe testing. 
+Penetration testing, also known as ethical hacking, is an essential component of a strong cybersecurity program. Rules of engagement (RoE) for penetration testing define the scope, boundaries, and guidelines for conducting a successful penetration test. These rules are crucial to ensure lawful, efficient, and safe testing.
 
 ## Key Components
 

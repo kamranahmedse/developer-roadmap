@@ -8,18 +8,18 @@ Spam refers to any unwanted, unsolicited, or irrelevant messaging sent over the 
 
 Spammers often use automated systems to send these messages to a large number of recipients. Some common characteristics of spam emails include:
 
-* Suspicious sender addresses
-* Generic greeting
-* Unusual or unexpected attachments or links
-* Urgent or threatening language
-* Requests for personal information
+- Suspicious sender addresses
+- Generic greeting
+- Unusual or unexpected attachments or links
+- Urgent or threatening language
+- Requests for personal information
 
 To protect yourself from spam, you should:
 
-* Set up effective email filters
-* Never share your email address publicly
-* Avoid clicking on suspicious links or attachments
-* Report spam to your email provider
+- Set up effective email filters
+- Never share your email address publicly
+- Avoid clicking on suspicious links or attachments
+- Report spam to your email provider
 
 ## Spim
 
@@ -27,17 +27,17 @@ Spim, or "spam over instant messaging," is similar to spam but occurs over insta
 
 Some common characteristics of spim messages include:
 
-* Unknown or suspicious sender accounts
-* Messages containing links or attachments
-* Unsolicited promotions or offers
-* Requests for personal information
-* Unexpected urgency or threats
+- Unknown or suspicious sender accounts
+- Messages containing links or attachments
+- Unsolicited promotions or offers
+- Requests for personal information
+- Unexpected urgency or threats
 
 To protect yourself from spim, you should:
 
-* Set your IM service's privacy settings to limit who can message you
-* Be cautious when clicking on links or attachments from unknown or suspicious accounts
-* Block or report spim accounts
-* Keep your IM client software updated
+- Set your IM service's privacy settings to limit who can message you
+- Be cautious when clicking on links or attachments from unknown or suspicious accounts
+- Block or report spim accounts
+- Keep your IM client software updated
 
 In conclusion, **spam** and **spim** are two distinct types of unwanted messages, with the primary difference being the medium through which they are delivered. Both can pose significant risks to your digital security, so it's crucial to be vigilant, maintain proper security measures, and educate yourself about the various attack types you may encounter.

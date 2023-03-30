@@ -5,6 +5,7 @@
 The **Offensive Security Certified Professional (OSCP)** is a highly respected and sought-after certification in the field of cybersecurity. This certification is designed to test your practical knowledge and skills in the identification and exploitation of vulnerabilities in a target environment, as well as your ability to effectively implement offensive security techniques to assess the security posture of networks and systems.
 
 ## Key Topics Covered:
+
 - Penetration testing methodologies
 - Advanced information gathering techniques
 - Buffer overflow attacks
@@ -26,6 +27,7 @@ To obtain the OSCP certification, you must successfully complete the 24-hour han
 Before attempting the exam, candidates must complete the accompanying training course, **Penetration Testing with Kali Linux (PWK)**, which provides the necessary knowledge and practical experience required for the OSCP exam.
 
 ## Why Pursue the OSCP Certification?
+
 - **Hands-on Approach:** OSCP emphasizes a practical, hands-on approach, ensuring that certified professionals possess both the theoretical knowledge and practical skills required to succeed in the cybersecurity field.
 - **Industry Recognition:** OSCP is widely recognized and respected within the cybersecurity community as a rigorous and demanding certification that validates a candidate's ability to perform under pressure.
 - **Career Advancement:** With the OSCP certification, you can demonstrate your advanced skills in offensive security techniques, making you a valuable asset to any security team and potentially opening up opportunities for career growth, higher salaries, and challenging roles in the industry.

@@ -4,7 +4,7 @@ Creating a professional and beautiful user interface (UI) is essential for a pos
 
 ## Color Scheme
 
-Choose a color scheme that complements your brand and the message you want to convey. Use colors that evoke emotions and are aesthetically pleasing. Aim for a balanced mix of primary, secondary, and accent colors. You can use online color palette generators or other resources to create a harmonious color scheme. 
+Choose a color scheme that complements your brand and the message you want to convey. Use colors that evoke emotions and are aesthetically pleasing. Aim for a balanced mix of primary, secondary, and accent colors. You can use online color palette generators or other resources to create a harmonious color scheme.
 
 ## Typography
 

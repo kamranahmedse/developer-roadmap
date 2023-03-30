@@ -1,6 +1,5 @@
 # Design System Examples
 
-
 Visit the following resources to learn more:
 
 - [Material Design (Google)](https://material.io/)

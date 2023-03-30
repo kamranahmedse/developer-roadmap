@@ -19,6 +19,7 @@ Infrared (IR) is a type of wireless communication technology that utilizes light
 While infrared connections are generally secure due to their limited range and inability to penetrate walls, they are still susceptible to attacks. An attacker with direct access to the transmission path can intercept, modify or inject data into the communication.
 
 To maintain security in infrared connections, consider the following precautions:
+
 - **Encryption:** Use encryption methods to protect sensitive data transmitted over infrared connections.
 - **Authentication:** Implement authentication mechanisms that confirm the identities of devices before allowing access.
 - **Physical security:** Ensure that devices using infrared communication are located in secure areas, limiting the possibility of tampering or eavesdropping.

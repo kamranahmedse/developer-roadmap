@@ -1,6 +1,6 @@
 # Understanding Human Decision Making
 
-Human decision making is the cognitive process through which individuals analyze information, evaluate alternatives, and select a course of action based on their preferences, goals, and desires. It plays a vital role in the field of UX design, as designers must understand how users make decisions in order to create intuitive and efficient interfaces. 
+Human decision making is the cognitive process through which individuals analyze information, evaluate alternatives, and select a course of action based on their preferences, goals, and desires. It plays a vital role in the field of UX design, as designers must understand how users make decisions in order to create intuitive and efficient interfaces.
 
 ## Factors Influencing Decision Making
 

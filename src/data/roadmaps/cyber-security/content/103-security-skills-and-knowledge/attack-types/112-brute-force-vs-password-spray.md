@@ -4,7 +4,7 @@ In this section, we will discuss two common techniques employed by cybercriminal
 
 ## Brute Force Attacks
 
-**Brute Force attacks** are a trial-and-error method used by attackers to discover the correct credential combinations (username and password) to gain unauthorized access to an account or system. This is done by systematically trying as many possibilities as possible until the correct combination is found. 
+**Brute Force attacks** are a trial-and-error method used by attackers to discover the correct credential combinations (username and password) to gain unauthorized access to an account or system. This is done by systematically trying as many possibilities as possible until the correct combination is found.
 
 In a Brute Force attack, the attacker usually utilizes automated tools to generate and test numerous password combinations. This strategy can be time-consuming, resource-intensive, and potentially detectable due to the massive number of login attempts made in a short period.
 

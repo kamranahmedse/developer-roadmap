@@ -14,7 +14,7 @@ tsc app.ts
 ```bash
 node app.js
 ```
-    
+
 Learn more from the following link:
 
 - [Running your TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html)

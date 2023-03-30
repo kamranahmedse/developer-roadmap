@@ -2,22 +2,22 @@
 title: "Guide to Let's Encrypt SSL Setup"
 description: "Learn how to protect your website using Let's Encrypt SSL Certificates."
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: "Guide to Let's Encrypt SSL Setup - roadmap.sh"
   description: "Learn how to protect your website using Let's Encrypt SSL Certificates."
 isNew: true
-type: "textual"
+type: 'textual'
 date: 2023-03-13
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "textual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'textual-guide'
+  - 'guide-sitemap'
 ---
 
 In this tutorial, I will guide you on creating a free Let's Encrypt SSL certificate for your website that gets automatically renewed. This process requires minimal to no configuration on your part. Let's get started!
@@ -76,17 +76,17 @@ This command will obtain an SSL certificate for the specified domain name, insta
 
 ## Auto-Renewal of SSL Certificate
 
-SSL certificate generated using certbot is valid for 3 months; after which you need to renew the certificate. Certbot automatically sets up the renewal for you so you don't have to worry about. 
+SSL certificate generated using certbot is valid for 3 months; after which you need to renew the certificate. Certbot automatically sets up the renewal for you so you don't have to worry about.
 
 For the renewal to work, you need to have a cronjob or a systemd timer set up. To check if the automatic renewal is active, you can use one of two methods:
 
-* Check cronjob to see if there is a certbot renewal cron job registered by running the following command:
+- Check cronjob to see if there is a certbot renewal cron job registered by running the following command:
 
   ```shell
   sudo crontab -l
   ```
 
-* If you don't find the cron job registered, check the systemd timer by running the following command.
+- If you don't find the cron job registered, check the systemd timer by running the following command.
 
   ```shell
   sudo systemctl list-timers

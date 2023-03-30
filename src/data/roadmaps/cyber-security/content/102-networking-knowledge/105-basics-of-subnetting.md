@@ -36,17 +36,17 @@ Let's suppose we have the network `192.168.1.0` with a subnet mask of `255.255.2
 
 - Our subnets will have the following network addresses:
 
-   - `192.168.1.0`
-   - `192.168.1.64`
-   - `192.168.1.128`
-   - `192.168.1.192`
+  - `192.168.1.0`
+  - `192.168.1.64`
+  - `192.168.1.128`
+  - `192.168.1.192`
 
 - The valid host ranges within each subnet are:
 
-   - `192.168.1.1 - 192.168.1.62`
-   - `192.168.1.65 - 192.168.1.126`
-   - `192.168.1.129 - 192.168.1.190`
-   - `192.168.1.193 - 192.168.1.254`
+  - `192.168.1.1 - 192.168.1.62`
+  - `192.168.1.65 - 192.168.1.126`
+  - `192.168.1.129 - 192.168.1.190`
+  - `192.168.1.193 - 192.168.1.254`
 
 - Allocate IP addresses from these host ranges to devices within their respective subnets, and configure devices with the correct subnet mask (`255.255.255.192`).
 

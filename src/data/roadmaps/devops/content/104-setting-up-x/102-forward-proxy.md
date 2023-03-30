@@ -4,9 +4,9 @@ Forward Proxy, often called proxy server is a server that sits in front of a gro
 
 **Common Uses:**
 
-* To block access to certain content
-* To protect client identity online
-* To provide restricted internet to organizations
+- To block access to certain content
+- To protect client identity online
+- To provide restricted internet to organizations
 
 Visit the following resources to learn more:
 

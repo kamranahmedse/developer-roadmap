@@ -3,13 +3,17 @@
 The Cue-Routine-Reward Model, also known as the Habit Loop, is a neurological framework that describes how habits are formed and maintained in our brains. By understanding this model, UX designers can create more engaging and addictive user experiences, encouraging users to come back to the product repeatedly. The model consists of three key components:
 
 - **Cue**: A stimulus, or trigger, that prompts your brain to start a habit. This can be anything from a notification on your phone to a daily routine or a specific location.
+
 ```
 Example: Receiving an email notification (Cue) prompts you to check your inbox.
 ```
+
 - **Routine**: The actual habit or default action you take in response to the cue. This is typically an automated behavior that occurs without much conscious thought.
+
 ```
 Example: After receiving the email notification (Cue), you open your email app and read the message (Routine).
 ```
+
 - **Reward**: The satisfaction or positive reinforcement your brain gets from completing the routine. This release of dopamine in the brain helps to strengthen and reinforce the habit over time.
 
 ```

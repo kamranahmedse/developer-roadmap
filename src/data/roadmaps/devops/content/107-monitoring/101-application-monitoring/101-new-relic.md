@@ -1,6 +1,6 @@
 # New Relic
 
-New Relic is where dev, ops, security and business teams solve software–performance problems with data. 
+New Relic is where dev, ops, security and business teams solve software–performance problems with data.
 
 Visit the following resources to learn more:
 

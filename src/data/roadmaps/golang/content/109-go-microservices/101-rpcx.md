@@ -1,6 +1,7 @@
 # Rpcx
 
 Rpcx is a RPC (Remote Procedure Call) framework like Alibaba Dubbo and Weibo Motan. Some of the advantages on using Rpcx:
+
 - Simple: easy to learn, easy to develop, easy to intergate and easy to deploy
 - Performance: high performance (>= grpc-go)
 - Cross-platform: support raw slice of bytes, JSON, Protobuf and MessagePack. Theoretically it can be used with java, php, python, c/c++, node.js, c# and other platforms

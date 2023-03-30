@@ -4,10 +4,10 @@ A **VLAN** or **Virtual Local Area Network** is a logical grouping of devices or
 
 ## Key Features of VLANs
 
-* **Isolation:** VLANs isolate traffic between different groups, helping to minimize the risk of unauthorized access to sensitive data.
-* **Scalability:** VLANs allow network administrators to grow and change networks with ease, without causing disruptions.
-* **Cost Effectiveness:** VLANs can reduce the need for additional hardware by reusing existing switches and networks for added functionality.
-* **Improved Performance:** By narrowing the broadcast domain, VLANs can improve network performance by reducing unnecessary traffic.
+- **Isolation:** VLANs isolate traffic between different groups, helping to minimize the risk of unauthorized access to sensitive data.
+- **Scalability:** VLANs allow network administrators to grow and change networks with ease, without causing disruptions.
+- **Cost Effectiveness:** VLANs can reduce the need for additional hardware by reusing existing switches and networks for added functionality.
+- **Improved Performance:** By narrowing the broadcast domain, VLANs can improve network performance by reducing unnecessary traffic.
 
 ## Types of VLANs
 

@@ -6,11 +6,11 @@ Software suites are widely used in professional and personal environments and pr
 
 Microsoft Office is the most widely used suite of applications, consisting of programs such as:
 
-- *Word*: A powerful word processor used for creating documents, reports, and letters.
-- *Excel*: A versatile spreadsheet application used for data analysis, calculations, and visualizations.
-- *PowerPoint*: A presentation software for designing and displaying slideshows.
-- *Outlook*: A comprehensive email and calendar management tool.
-- *OneNote*: A digital notebook for organizing and storing information.
+- _Word_: A powerful word processor used for creating documents, reports, and letters.
+- _Excel_: A versatile spreadsheet application used for data analysis, calculations, and visualizations.
+- _PowerPoint_: A presentation software for designing and displaying slideshows.
+- _Outlook_: A comprehensive email and calendar management tool.
+- _OneNote_: A digital notebook for organizing and storing information.
 
 Microsoft Office is available both as a standalone product and as part of the cloud-based Office 365 subscription, which includes additional features and collaboration options.
 
@@ -18,12 +18,12 @@ Microsoft Office is available both as a standalone product and as part of the cl
 
 Google Workspace is a cloud-based suite of productivity tools by Google, which includes widely known applications such as:
 
-- *Google Docs*: A collaborative word processor that seamlessly integrates with other Google services.
-- *Google Sheets*: A robust spreadsheet application with a wide array of functions and capabilities.
-- *Google Slides*: A user-friendly presentation tool that makes collaboration effortless.
-- *Google Drive*: A cloud storage service that allows for easy storage, sharing, and syncing of files.
-- *Gmail*: A popular email service with advanced filtering and search capabilities.
-- *Google Calendar*: A scheduling and event management application that integrates with other Google services.
+- _Google Docs_: A collaborative word processor that seamlessly integrates with other Google services.
+- _Google Sheets_: A robust spreadsheet application with a wide array of functions and capabilities.
+- _Google Slides_: A user-friendly presentation tool that makes collaboration effortless.
+- _Google Drive_: A cloud storage service that allows for easy storage, sharing, and syncing of files.
+- _Gmail_: A popular email service with advanced filtering and search capabilities.
+- _Google Calendar_: A scheduling and event management application that integrates with other Google services.
 
 Google Workspace is particularly popular for its real-time collaboration capabilities and ease of access through web browsers.
 
@@ -31,11 +31,11 @@ Google Workspace is particularly popular for its real-time collaboration capabil
 
 LibreOffice is a free, open-source suite of applications that offers a solid alternative to proprietary productivity suites. It includes tools such as:
 
-- *Writer*: A word processor that supports various document formats.
-- *Calc*: A powerful spreadsheet application with extensive formula and function libraries.
-- *Impress*: A presentation software that supports customizable templates and animations.
-- *Base*: A database management tool for creating and managing relational databases.
-- *Draw*: A vector graphics editor for creating and editing images and diagrams.
+- _Writer_: A word processor that supports various document formats.
+- _Calc_: A powerful spreadsheet application with extensive formula and function libraries.
+- _Impress_: A presentation software that supports customizable templates and animations.
+- _Base_: A database management tool for creating and managing relational databases.
+- _Draw_: A vector graphics editor for creating and editing images and diagrams.
 
 LibreOffice is compatible with various platforms, including Windows, macOS, and Linux, and provides excellent support for standard file formats.
 

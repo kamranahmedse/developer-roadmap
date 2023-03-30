@@ -1,6 +1,6 @@
 # localhost
 
-Localhost (also known as loopback address) is a term used to define a network address that is used by a device (usually a computer or a server) to refer to itself. In other words, it's a way for your device to establish a network connection to itself. The most commonly used IP address for localhost is `127.0.0.1`, which is reserved as a loopback address in IPv4 networks. For IPv6 networks, it's represented by `::1`. 
+Localhost (also known as loopback address) is a term used to define a network address that is used by a device (usually a computer or a server) to refer to itself. In other words, it's a way for your device to establish a network connection to itself. The most commonly used IP address for localhost is `127.0.0.1`, which is reserved as a loopback address in IPv4 networks. For IPv6 networks, it's represented by `::1`.
 
 ## Purpose and Usage of Localhost
 

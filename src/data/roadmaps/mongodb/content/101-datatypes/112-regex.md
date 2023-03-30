@@ -27,10 +27,10 @@ db.collection.find({ field: { $regex: /example/i } }); // Using $regex operator
 
 MongoDB supports the following regex flags to provide flexibility in pattern matching:
 
-* `i`: Case-insensitive match
-* `m`: Multi-line match
-* `x`: Ignore whitespace and comments in the pattern
-* `s`: Allow `.` to match all characters, including newlines
+- `i`: Case-insensitive match
+- `m`: Multi-line match
+- `x`: Ignore whitespace and comments in the pattern
+- `s`: Allow `.` to match all characters, including newlines
 
 Example:
 

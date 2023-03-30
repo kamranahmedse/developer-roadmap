@@ -4,7 +4,7 @@
 
 FTK Imager provides users with a variety of essential features, such as:
 
-- **Creating forensic images**: FTK Imager can create a forensically sound image of a computer's disk or other storage device in various formats, including raw (dd), E01, and AFF formats. 
+- **Creating forensic images**: FTK Imager can create a forensically sound image of a computer's disk or other storage device in various formats, including raw (dd), E01, and AFF formats.
 
 - **Previewing data**: It allows analysts to preview data stored on any imaging source, such as a hard drive, even before creating a forensic image so that they can determine if the source's data is relevant to the investigation.
 

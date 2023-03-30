@@ -16,9 +16,9 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route53](htt
   - Balance between varying cluster sizes
   - A/B testing
 - [Latency Based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency)
-- [Geolocation Based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-geo) 
+- [Geolocation Based](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-geo)
 
 To learn more, visit the following links:
 
 - [Getting started with Domain Name System](https://github.com/donnemartin/system-design-primer#domain-name-system)
-[What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)
+  [What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)

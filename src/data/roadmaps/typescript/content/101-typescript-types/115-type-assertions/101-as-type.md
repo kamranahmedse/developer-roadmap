@@ -6,7 +6,7 @@ For example:
 
 ```typescript
 let num = 42;
-let str = num as string; 
+let str = num as string;
 
 // str is now of type string, even though num is a number
 ```

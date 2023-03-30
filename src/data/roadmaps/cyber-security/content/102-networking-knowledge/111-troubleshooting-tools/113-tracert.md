@@ -13,9 +13,9 @@ The output will show a list of hops in sequential order, with each line represen
 
 When analyzing the results of a tracert command, consider the following:
 
-- *Hops*: These are the individual steps the data packets take to reach the destination. If the route appears excessively long, there may be an issue with the network configuration or an inefficient routing path.
-- *Round-trip Time (RTT)*: This measures how long it takes for data packets to travel from the source to the destination and back. If the RTT is consistently high or increases significantly between specific hops, there could be a network delay, bottleneck, or congestion.
-- *Request Timed Out*: If you see this error, it means that a data packet failed to reach a specific hop within the given time. This could be an indication of a connection failure, firewall blocking, or packet loss.
+- _Hops_: These are the individual steps the data packets take to reach the destination. If the route appears excessively long, there may be an issue with the network configuration or an inefficient routing path.
+- _Round-trip Time (RTT)_: This measures how long it takes for data packets to travel from the source to the destination and back. If the RTT is consistently high or increases significantly between specific hops, there could be a network delay, bottleneck, or congestion.
+- _Request Timed Out_: If you see this error, it means that a data packet failed to reach a specific hop within the given time. This could be an indication of a connection failure, firewall blocking, or packet loss.
 
 However, note that some routers may be configured to discard or de-prioritize ICMP echo requests (the packets used by tracert) due to security reasons or traffic management, which might result in incomplete or inaccurate tracert results.
 

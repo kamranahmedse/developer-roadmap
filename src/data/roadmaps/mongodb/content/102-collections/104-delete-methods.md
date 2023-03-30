@@ -9,9 +9,11 @@ The `deleteOne()` method is used to delete a single document from a collection. 
 Syntax: `db.collection.deleteOne(FILTER)`
 
 Example:
+
 ```javascript
-db.users.deleteOne({"firstName": "John"})
+db.users.deleteOne({ firstName: 'John' });
 ```
+
 This command will delete the first `users` document found with a `firstName` field equal to `"John"`.
 
 ## db.collection.deleteMany()
@@ -21,9 +23,11 @@ The `deleteMany()` method is used to remove multiple documents from a collection
 Syntax: `db.collection.deleteMany(FILTER)`
 
 Example:
+
 ```javascript
-db.users.deleteMany({"country": "Australia"})
+db.users.deleteMany({ country: 'Australia' });
 ```
+
 This command will delete all `users` documents with a `country` field equal to `"Australia"`.
 
 ## db.collection.remove()
@@ -33,9 +37,11 @@ The `remove()` method can be used to delete documents in a more flexible way, as
 Syntax: `db.collection.remove(FILTER, JUST_ONE)`
 
 Example:
+
 ```javascript
-db.users.remove({"age": {"$lt": 18}}, true)
+db.users.remove({ age: { $lt: 18 } }, true);
 ```
+
 This command would delete a single user document with an `age` field value less than 18.
 
 ## db.collection.drop()
@@ -45,9 +51,11 @@ In cases where you want to remove an entire collection, including the documents 
 Syntax: `db.collection.drop()`
 
 Example:
+
 ```javascript
-db.users.drop()
+db.users.drop();
 ```
+
 This command would delete the entire `users` collection and all related data.
 
 It's important to note that these methods will remove the affected documents permanently from the database, so use caution when executing delete commands. Keep in mind to keep backups or use version control to maintain data integrity throughout the lifecycle of your MongoDB database.

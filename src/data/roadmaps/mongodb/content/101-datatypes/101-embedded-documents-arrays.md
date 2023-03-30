@@ -55,7 +55,7 @@ Querying documents with embedded arrays is easy thanks to MongoDB's built-in arr
 For example, to find all users with a specific street address, you would use the following query:
 
 ```javascript
-db.users.find({'addresses.street': '123 Main St'})
+db.users.find({ 'addresses.street': '123 Main St' });
 ```
 
 Overall, Embedded Documents Arrays are a powerful feature in MongoDB, allowing you to store complex data relationships in a performant and efficient manner. Use them wisely to take full advantage of MongoDB's flexibility and scalability.

@@ -13,7 +13,7 @@ The `$eq` operator is used to match documents where the value of a field equals 
 Example:
 
 ```javascript
-db.collection.find({ age: { $eq: 25 } })
+db.collection.find({ age: { $eq: 25 } });
 ```
 
 This query will return all documents where the `age` field is equal to 25.
@@ -29,7 +29,7 @@ The `$ne` operator is used to match documents where the value of a field is not 
 Example:
 
 ```javascript
-db.collection.find({ age: { $ne: 25 } })
+db.collection.find({ age: { $ne: 25 } });
 ```
 
 This query will return all documents where the `age` field is not equal to 25.
@@ -45,7 +45,7 @@ The `$gt` operator is used to match documents where the value of a field is grea
 Example:
 
 ```javascript
-db.collection.find({ age: { $gt: 25 } })
+db.collection.find({ age: { $gt: 25 } });
 ```
 
 This query will return all documents where the `age` field is greater than 25.
@@ -61,7 +61,7 @@ The `$gte` operator is used to match documents where the value of a field is gre
 Example:
 
 ```javascript
-db.collection.find({ age: { $gte: 25 } })
+db.collection.find({ age: { $gte: 25 } });
 ```
 
 This query will return all documents where the `age` field is greater than or equal to 25.
@@ -77,7 +77,7 @@ The `$lt` operator is used to match documents where the value of a field is less
 Example:
 
 ```javascript
-db.collection.find({ age: { $lt: 25 } })
+db.collection.find({ age: { $lt: 25 } });
 ```
 
 This query will return all documents where the `age` field is less than 25.
@@ -93,7 +93,7 @@ The `$lte` operator is used to match documents where the value of a field is les
 Example:
 
 ```javascript
-db.collection.find({ age: { $lte: 25 } })
+db.collection.find({ age: { $lte: 25 } });
 ```
 
 This query will return all documents where the `age` field is less than or equal to 25.

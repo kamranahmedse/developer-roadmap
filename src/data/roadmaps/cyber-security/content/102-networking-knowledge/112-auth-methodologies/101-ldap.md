@@ -3,12 +3,14 @@
 LDAP is a protocol used to access directory services, i.e., a hierarchical database that holds information about various objects, such as users, groups, computer accounts, and more. In the context of cybersecurity, it's essential in storing information related to authentication, authorization, and user profiles. LDAP is primarily utilized in enterprise environments as a centralized system for managing user accounts and their permissions.
 
 **How LDAP works**
+
 - It is based on a client-server model, where the client sends a request to the server (usually an LDAP directory server), and the server responds accordingly.
 - LDAP servers store directory entries in a hierarchical (tree-like) structure, starting from the root (known as the "base DN") and following a series of branches down to individual entries.
 - Each entry in the LDAP directory has a distinguished name (DN), which uniquely identifies the entry in the hierarchy.
 
 **LDAP in Cyber Security**
 In cybersecurity, LDAP servers are often used for the following purposes:
+
 - **Authentication**: LDAP stores user account and password information, which can be used to authenticate users to access specific applications or resources.
 - **Authorization**: Using LDAP directory groups, you can manage access controls for users and grant or deny permissions based on their role or membership.
 - **User Management**: LDAP provides a single, centralized repository for managing user account information, making it easier to maintain consistent user data across multiple systems or applications.

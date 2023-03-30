@@ -1,23 +1,23 @@
 ---
-title: "Jump Servers: What, Why and How"
-description: "Learn what is a Jump Server and how to set it up for SSH access."
+title: 'Jump Servers: What, Why and How'
+description: 'Learn what is a Jump Server and how to set it up for SSH access.'
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
-  title: "Jump Servers: What, Why and How - roadmap.sh"
-  description: "Learn what is a Jump Server and how to set it up for SSH access."
+  title: 'Jump Servers: What, Why and How - roadmap.sh'
+  description: 'Learn what is a Jump Server and how to set it up for SSH access.'
 isNew: true
-type: "visual"
+type: 'visual'
 date: 2023-03-20
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "visual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'visual-guide'
+  - 'guide-sitemap'
 ---
 
 Given below is the demonstration of a sample production environment for a web application that consists of two different components, application server and database server.
@@ -34,7 +34,7 @@ A jump server is a server that is used to access other servers. It is also known
 
 In the above example, the application server is called the jump server.
 
-For example, you might have this infrastructure on AWS, where you have a custom VPC with two subnets. 
+For example, you might have this infrastructure on AWS, where you have a custom VPC with two subnets.
 
 - **Public Subnet:** Outside world can access
 - **Private Subnet:** Only accessible from within the VPC
@@ -51,7 +51,7 @@ We can easily SSH into the application server from the internet i.e.
 ssh -i ~/.ssh/mykey.pem ec2-user@3.112.5.67
 ```
 
-But the database server doesn't have a public IP address. So, we can't SSH into it from the internet. For example, following won't work 
+But the database server doesn't have a public IP address. So, we can't SSH into it from the internet. For example, following won't work
 
 ```bash
 # Won't work because the IP address is private
@@ -81,11 +81,11 @@ Warning: Identity file /home/ubuntu/.ssh/mykey.pem not accessible: No such file 
 ubuntu@192.168.1.0: Permission denied (publickey).
 ```
 
-What happened? The reason is that the private key is not present on the application server i.e. `~/.ssh/mykey.pem`. Now, there are two ways to solve this problem. 
+What happened? The reason is that the private key is not present on the application server i.e. `~/.ssh/mykey.pem`. Now, there are two ways to solve this problem.
 
 ### Solution 1 - Copy the Private Key to Server
 
-We can copy the private key from our local machine to the application server and use it there to access the database server. You can do that by running the following command on your local machine: 
+We can copy the private key from our local machine to the application server and use it there to access the database server. You can do that by running the following command on your local machine:
 
 ```bash
 scp -i path/to/key.pem examplefile yourusername@yourserver:/home/yourusername/

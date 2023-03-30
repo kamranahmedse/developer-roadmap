@@ -7,6 +7,7 @@ Cryptography plays a vital role in securing cyber systems from unauthorized acce
 A Private Key, also known as a Secret Key, is a confidential cryptographic key that is uniquely associated with an individual or an organization. It should be kept secret and not revealed to anyone, except the authorized person who owns it. The Private Key is used for decrypting data that was encrypted using the corresponding Public Key, or for signing digital documents, proving the identity of the signer.
 
 Key characteristics of Private Keys:
+
 - Confidential and not shared with others
 - Used for decryption or digital signing
 - Loss or theft of Private Key can lead to data breaches and compromise of sensitive information
@@ -16,6 +17,7 @@ Key characteristics of Private Keys:
 A Public Key is an openly available cryptographic key that is paired with a Private Key. Anyone can use the Public Key to encrypt data or to verify signatures, but only the person/organization with the corresponding Private Key can decrypt the encrypted data or create signatures. The Public Key can be distributed freely without compromising the security of the underlying cryptographic system.
 
 Key characteristics of Public Keys:
+
 - Publicly available and can be shared with anyone
 - Used for encryption or verifying digital signatures
 - Loss or theft of Public Key does not compromise sensitive information or communication security

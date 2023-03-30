@@ -3,6 +3,7 @@
 There are two approaches to ensuring a website is optimized for mobile, tablet, laptop and PC screens: responsive design and adaptive design. While both are intended to solve the same problem, they use different strategies.
 
 # What is responsive design?
+
 A website created with responsive design serves up the same site to every device, but that site is fluid and will change its layout and appearance based on the size and orientation of the device.
 
 Developers use CSS to ensure each page of the site can reformat based on the size of the user's viewport and only need to create one codebase for the site. They use something called breakpoints to tell the site when to adjust to accommodate different screen sizes.

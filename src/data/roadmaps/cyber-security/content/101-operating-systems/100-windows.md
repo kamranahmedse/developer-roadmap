@@ -6,7 +6,7 @@ Windows is a popular operating system (OS) developed by Microsoft Corporation. I
 
 - **Ease of use:** Windows is designed with a user-friendly interface, making it easy for users to navigate, manage files, and access applications.
 
-- **Compatibility:** Windows is compatible with a vast range of hardware and software, including most peripherals like printers, webcams, and more. 
+- **Compatibility:** Windows is compatible with a vast range of hardware and software, including most peripherals like printers, webcams, and more.
 
 - **Regular updates:** Microsoft provides regular updates for Windows, which helps maintain security, fix bugs, and enhance features.
 

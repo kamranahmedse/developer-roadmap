@@ -21,8 +21,13 @@ Let's assume we have the following documents in a `students` collection:
 
 ```json
 [
-  { "_id" : 1, "name" : "John Doe", "age" : 20, "subjects" : [ "Math", "Physics" ] },
-  { "_id" : 2, "name" : "Jane Smith", "age" : 23, "subjects" : [ "Chemistry", "Biology" ] }
+  { "_id": 1, "name": "John Doe", "age": 20, "subjects": ["Math", "Physics"] },
+  {
+    "_id": 2,
+    "name": "Jane Smith",
+    "age": 23,
+    "subjects": ["Chemistry", "Biology"]
+  }
 ]
 ```
 
@@ -34,22 +39,22 @@ db.students.aggregate([
     $project: {
       _id: 0,
       name: 1,
-      age: 1
-    }
-  }
-])
+      age: 1,
+    },
+  },
+]);
 ```
 
 Returned documents:
 
 ```json
 [
-  { "name" : "John Doe", "age" : 20 },
-  { "name" : "Jane Smith", "age" : 23 }
+  { "name": "John Doe", "age": 20 },
+  { "name": "Jane Smith", "age": 23 }
 ]
 ```
 
-Notice that the resulting documents do not include the "_id" and "subjects" fields.
+Notice that the resulting documents do not include the "\_id" and "subjects" fields.
 
 In the example below, we'll exclude the "subjects" field:
 
@@ -57,18 +62,18 @@ In the example below, we'll exclude the "subjects" field:
 db.students.aggregate([
   {
     $project: {
-      subjects: 0
-    }
-  }
-])
+      subjects: 0,
+    },
+  },
+]);
 ```
 
 Returned documents:
 
 ```json
 [
-  { "_id" : 1, "name" : "John Doe", "age" : 20 },
-  { "_id" : 2, "name" : "Jane Smith", "age" : 23 }
+  { "_id": 1, "name": "John Doe", "age": 20 },
+  { "_id": 2, "name": "Jane Smith", "age": 23 }
 ]
 ```
 

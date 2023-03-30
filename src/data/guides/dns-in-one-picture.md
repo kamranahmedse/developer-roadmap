@@ -1,23 +1,23 @@
 ---
-title: "DNS in One Picture"
-description: "Quick illustrative guide on how a website is found on the internet."
+title: 'DNS in One Picture'
+description: 'Quick illustrative guide on how a website is found on the internet.'
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
-  title: "DNS in One Picture - roadmap.sh"
-  description: "Quick illustrative guide on how a website is found on the internet."
+  title: 'DNS in One Picture - roadmap.sh'
+  description: 'Quick illustrative guide on how a website is found on the internet.'
 isNew: false
-type: "visual"
+type: 'visual'
 date: 2018-12-04
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "visual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'visual-guide'
+  - 'guide-sitemap'
 ---
 
 DNS or Domain Name System is one of the fundamental blocks of the internet. As a developer, you should have at-least the basic understanding of how it works. This article is a brief introduction to what is DNS and how it works.

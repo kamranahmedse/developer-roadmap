@@ -44,16 +44,16 @@ object MongoDBwithSpark {
       .config("spark.mongodb.input.uri", "mongodb://username:password@host/database.collection")
       .config("spark.mongodb.output.uri", "mongodb://username:password@host/database.collection")
       .getOrCreate()
-    
+
     // Load data from MongoDB into a DataFrame
     val df = MongoSpark.load(spark)
-    
+
     // Perform operations on DataFrame
     // ...
-    
+
     // Write the DataFrame back to MongoDB
     MongoSpark.save(df.write.mode("overwrite"))
-    
+
     // Stop the Spark session
     spark.stop()
   }

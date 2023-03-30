@@ -1,6 +1,6 @@
 # Pass the Hash
 
-Pass the hash (PtH) is a type of cyber attack that enables an attacker to authenticate to remote systems by using the underlying NTLM or LanMan hash of a user's password, rather than requiring the plaintext password itself. This type of attack exploits the fact that a password hash can be used for authentication instead of the actual password, giving an attacker access to a user's account without the need to crack the password itself. 
+Pass the hash (PtH) is a type of cyber attack that enables an attacker to authenticate to remote systems by using the underlying NTLM or LanMan hash of a user's password, rather than requiring the plaintext password itself. This type of attack exploits the fact that a password hash can be used for authentication instead of the actual password, giving an attacker access to a user's account without the need to crack the password itself.
 
 ## How does Pass the Hash work?
 
