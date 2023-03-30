@@ -1,0 +1,10 @@
+---
+import ProfileDetails from '../../components/Profile/profile-details';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Profile">
+  <div class="container">
+    <ProfileDetails client:idle />
+  </div>
+</BaseLayout>

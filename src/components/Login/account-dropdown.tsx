@@ -6,7 +6,7 @@ export default function AccountDropdown() {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
-    // If dropdown is open, close it.
+    // If user click outside the dropdown, and dropdown is open then close it.
     const handleOpen = () => {
       if (isOpen) setIsOpen(false);
     };
