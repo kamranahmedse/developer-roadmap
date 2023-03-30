@@ -19,9 +19,9 @@ const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
     showYouTubeAlert={true}
   />
 
-  <div class='bg-gray-100 pt-4 pb-14 sm:pt-8 sm:pb-16'>
+  <div class='flex bg-gray-100 pt-4 pb-14 sm:pt-8 sm:pb-16'>
     <div class='container'>
-      <div class='grid grid-cols-1 sm:grid-cols-2 gap-0.5 sm:gap-3'>
+      <div class='grid grid-cols-1 gap-0.5 sm:grid-cols-2 sm:gap-3'>
         {
           roleRoadmaps.map((roleRoadmap) => (
             <GridItem
