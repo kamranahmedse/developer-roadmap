@@ -24,10 +24,11 @@ Here are a few examples of how to work with Object IDs in MongoDB:
 **1. Inserting a document without specifying an `_id`:**
 
 ```javascript
-db.collection.insertOne({ "title": "Example" });
+db.collection.insertOne({ title: 'Example' });
 ```
 
 **Output:**
+
 ```javascript
 {
   "_id": ObjectId("60c4237a89293ddc1ef23245"),
@@ -38,7 +39,7 @@ db.collection.insertOne({ "title": "Example" });
 **2. Creating Object ID manually:**
 
 ```javascript
-const { ObjectId } = require("mongodb");
+const { ObjectId } = require('mongodb');
 const objectId = new ObjectId();
 ```
 

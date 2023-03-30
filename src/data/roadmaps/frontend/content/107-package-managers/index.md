@@ -10,5 +10,3 @@ Visit the following resources to learn more:
 - [NPM tutorial for Beginners](https://www.youtube.com/watch?v=2V1UUhBJ62Y)
 - [NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
 - [Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
-
-

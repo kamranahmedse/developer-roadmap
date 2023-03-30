@@ -11,6 +11,7 @@ The basic syntax of grep is as follows:
 ```
 grep [options] pattern [files/directories]
 ```
+
 - `options`: Modify the behavior of grep (e.g., case-insensitive search, display line numbers)
 - `pattern`: The search pattern, which can be a fixed string, a regular expression, or a combination of both
 - `files/directories`: The target files or directories to search

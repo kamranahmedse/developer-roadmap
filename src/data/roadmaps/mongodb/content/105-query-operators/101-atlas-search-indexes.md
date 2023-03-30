@@ -54,12 +54,12 @@ Here's an example of an Atlas Search Index query:
 ```javascript
 db.collection.find({
   $search: {
-    "text": {
-      "query": "mongodb atlas search",
-      "path": "title"
-    }
-  }
-})
+    text: {
+      query: 'mongodb atlas search',
+      path: 'title',
+    },
+  },
+});
 ```
 
 In this example, we perform a text search query on the "title" field in the given collection.

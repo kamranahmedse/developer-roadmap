@@ -27,15 +27,24 @@ function populatePageAds({
   const isConfiguredActive = isActive.toLowerCase() === 'yes';
 
   const currentDate = new Date();
-  const isDateInRange = currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
+  const isDateInRange =
+    currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
   const shouldShowAd = isConfiguredActive && isDateInRange;
 
-  const urlPart = pageUrl.replace('https://roadmap.sh/', '').replace(/\?.+?$/, '');
+  const urlPart = pageUrl
+    .replace('https://roadmap.sh/', '')
+    .replace(/\?.+?$/, '');
 
-  const parentDir = urlPart.startsWith('best-practices/') ? 'best-practices' : 'roadmaps';
+  const parentDir = urlPart.startsWith('best-practices/')
+    ? 'best-practices'
+    : 'roadmaps';
   const pageId = urlPart.replace(`${parentDir}/`, '');
 
-  const pageFilePath = path.join(__dirname, `../src/data/${parentDir}`, `${pageId}/${pageId}.md`);
+  const pageFilePath = path.join(
+    __dirname,
+    `../src/data/${parentDir}`,
+    `${pageId}/${pageId}.md`
+  );
 
   if (!fs.existsSync(pageFilePath)) {
     console.error(`Page file not found: ${pageFilePath}`);
@@ -48,7 +57,9 @@ function populatePageAds({
   const frontMatterRegex = /---\n([\s\S]*?)\n---/;
 
   const existingFrontmatter = pageFileContent.match(frontMatterRegex)[1];
-  const contentWithoutFrontmatter = pageFileContent.replace(frontMatterRegex, ``).trim();
+  const contentWithoutFrontmatter = pageFileContent
+    .replace(frontMatterRegex, ``)
+    .trim();
 
   let frontmatterObj = yaml.load(existingFrontmatter);
   delete frontmatterObj.sponsor;
@@ -77,7 +88,11 @@ function populatePageAds({
     frontmatterObj = Object.fromEntries(frontmatterValues);
   }
 
-  const newFrontmatter = yaml.dump(frontmatterObj, { lineWidth: 10000, forceQuotes: true, quotingType: '"' });
+  const newFrontmatter = yaml.dump(frontmatterObj, {
+    lineWidth: 10000,
+    forceQuotes: true,
+    quotingType: '"',
+  });
   const newContent = `---\n${newFrontmatter}---\n\n${contentWithoutFrontmatter}`;
 
   fs.writeFileSync(pageFilePath, newContent, 'utf8');

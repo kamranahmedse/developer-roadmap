@@ -1,25 +1,25 @@
 ---
-title: "Single Command Database Setup"
-description: "Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command"
+title: 'Single Command Database Setup'
+description: 'Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command'
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
-  title: "Single Command Database Setup - roadmap.sh"
-  description: "Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command"
+  title: 'Single Command Database Setup - roadmap.sh'
+  description: 'Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command'
 isNew: true
-type: "textual"
+type: 'textual'
 date: 2023-02-27
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'guide-sitemap'
 ---
 
-When you are working on a backend application, you are likely to need a database. You can either install it on your machine or use a Docker container. I prefer to use Docker containers because it is easier to setup and doesn't pollute my machine with unnecessary dependencies. 
+When you are working on a backend application, you are likely to need a database. You can either install it on your machine or use a Docker container. I prefer to use Docker containers because it is easier to setup and doesn't pollute my machine with unnecessary dependencies.
 
 This short guide will show you how to spin up a MySQL, PostgreSQL, or MongoDB instance on your local machine using docker. Feel free to submit a PR adding more databases.
 

@@ -4,10 +4,10 @@
 
 ## Uses
 
-* Query DNS servers to verify the configuration of domain names
-* Find the IP address of a specific domain name
-* Troubleshoot DNS-related issues and errors
-* Identify the authoritative DNS servers for a domain
+- Query DNS servers to verify the configuration of domain names
+- Find the IP address of a specific domain name
+- Troubleshoot DNS-related issues and errors
+- Identify the authoritative DNS servers for a domain
 
 ## How to Use
 
@@ -21,12 +21,12 @@
 
 Below are some of the most-commonly queried DNS record types:
 
-* **A**: Stands for 'Address'; returns the IPv4 address associated with a domain name
-* **AAAA**: Stands for 'Address', for IPv6; returns the IPv6 address associated with a domain name
-* **NS**: Stands for 'Name Server'; returns the authoritative DNS servers for a specific domain
-* **MX**: Stands for 'Mail Exchange'; returns the mail server(s) responsible for handling email for a specific domain
-* **CNAME**: Stands for 'Canonical Name'; returns the domain name that an alias is pointing to
-* **TXT**: Stands for 'Text'; returns additional text information that can be associated with a domain, like security policies (e.g., SPF)
+- **A**: Stands for 'Address'; returns the IPv4 address associated with a domain name
+- **AAAA**: Stands for 'Address', for IPv6; returns the IPv6 address associated with a domain name
+- **NS**: Stands for 'Name Server'; returns the authoritative DNS servers for a specific domain
+- **MX**: Stands for 'Mail Exchange'; returns the mail server(s) responsible for handling email for a specific domain
+- **CNAME**: Stands for 'Canonical Name'; returns the domain name that an alias is pointing to
+- **TXT**: Stands for 'Text'; returns additional text information that can be associated with a domain, like security policies (e.g., SPF)
 
 ## Example
 

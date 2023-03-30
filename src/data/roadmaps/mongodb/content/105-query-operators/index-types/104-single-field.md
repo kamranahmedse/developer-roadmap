@@ -7,7 +7,7 @@ In MongoDB, a single field index is an index that sorts and organizes the data b
 To create a single field index, you can use the `db.collection.createIndex()` function, specifying the field name and the sorting order (1 for ascending or -1 for descending order). For example:
 
 ```javascript
-db.users.createIndex({ "name": 1 });
+db.users.createIndex({ name: 1 });
 ```
 
 This command creates an ascending index on the `name` field of the `users` collection.
@@ -17,7 +17,7 @@ This command creates an ascending index on the `name` field of the `users` colle
 You can create a unique single-field index to prevent the insertion of duplicate values for a specific field. To create a unique index, include the `unique` option and set its value to `true`:
 
 ```javascript
-db.users.createIndex({ "email": 1 }, { unique: true });
+db.users.createIndex({ email: 1 }, { unique: true });
 ```
 
 This command ensures each document in the collection has a unique email value.
@@ -27,7 +27,7 @@ This command ensures each document in the collection has a unique email value.
 A sparse single field index is an index that only considers the documents with the indexed field. This type of index might not index all the documents in a collection, resulting in reduced index size and better performance. To create a sparse index, include the `sparse` option and set its value to `true`:
 
 ```javascript
-db.customers.createIndex({ "address.zipcode": 1 }, { sparse: true });
+db.customers.createIndex({ 'address.zipcode': 1 }, { sparse: true });
 ```
 
 This command creates a sparse index on the `zipcode` field of the `address` sub-document.

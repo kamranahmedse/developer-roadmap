@@ -30,7 +30,7 @@ For the advanced usage, supplying a specific starting position:
 To return only the first 3 elements of the `tags` field, use the following projection:
 
 ```javascript
-db.collection.find({}, { tags: { $slice: 3 } })
+db.collection.find({}, { tags: { $slice: 3 } });
 ```
 
 - Define a specific starting position:
@@ -38,7 +38,7 @@ db.collection.find({}, { tags: { $slice: 3 } })
 To return 3 elements of the `tags` field starting from the 5th element, use the following projection:
 
 ```javascript
-db.collection.find({}, { tags: { $slice: [4, 3] } })
+db.collection.find({}, { tags: { $slice: [4, 3] } });
 ```
 
 Keep in mind that the starting position uses a zero-based index, so the value '4' in the example above refers to the 5th element in the array.

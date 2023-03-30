@@ -6,10 +6,10 @@ In a Sealed Secrets workflow, secrets are encrypted using a public key and store
 
 Sealed Secrets is designed to be highly secure and easy to use, with a range of features for managing secrets, including:
 
-* Encryption: Sealed Secrets uses encryption algorithms and protocols, such as RSA, to securely store secrets.
-* Access controls: Sealed Secrets supports role-based access controls and multi-factor authentication to ensure that only authorized users or systems can access secrets.
-* Secret rotation: Sealed Secrets supports automatic secret rotation, allowing secrets to be regularly rotated to reduce the risk of unauthorized access.
-* Auditing: Sealed Secrets provides auditing capabilities, allowing administrators to track and monitor access to secrets.
+- Encryption: Sealed Secrets uses encryption algorithms and protocols, such as RSA, to securely store secrets.
+- Access controls: Sealed Secrets supports role-based access controls and multi-factor authentication to ensure that only authorized users or systems can access secrets.
+- Secret rotation: Sealed Secrets supports automatic secret rotation, allowing secrets to be regularly rotated to reduce the risk of unauthorized access.
+- Auditing: Sealed Secrets provides auditing capabilities, allowing administrators to track and monitor access to secrets.
 
 Sealed Secrets is commonly used in Kubernetes environments to securely store and manage secrets, and it is often used in conjunction with other tools, such as Helm, to automate the deployment and management of cloud-native applications.
 

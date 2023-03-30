@@ -6,9 +6,9 @@ Key exchange, also known as key establishment, is a process where two parties es
 
 Before diving into key exchange methods, let's briefly differentiate between symmetric and asymmetric encryption:
 
-* **Symmetric encryption** uses the same key for encryption and decryption. Examples include the Advanced Encryption Standard (AES) and Triple Data Encryption Algorithm (3DES). The main challenge in symmetric encryption is securely sharing the key between the involved parties.
+- **Symmetric encryption** uses the same key for encryption and decryption. Examples include the Advanced Encryption Standard (AES) and Triple Data Encryption Algorithm (3DES). The main challenge in symmetric encryption is securely sharing the key between the involved parties.
 
-* **Asymmetric encryption**, also known as public-key cryptography, uses two different keys - a private key and a public key. The private key is kept secret, while the public key is shared freely. You can encrypt a message using the recipient's public key, and only the corresponding private key can decrypt it. Examples of asymmetric encryption algorithms include RSA and Elliptic Curve Cryptography (ECC).
+- **Asymmetric encryption**, also known as public-key cryptography, uses two different keys - a private key and a public key. The private key is kept secret, while the public key is shared freely. You can encrypt a message using the recipient's public key, and only the corresponding private key can decrypt it. Examples of asymmetric encryption algorithms include RSA and Elliptic Curve Cryptography (ECC).
 
 ## Diffie-Hellman Key Exchange
 

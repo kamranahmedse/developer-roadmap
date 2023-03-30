@@ -6,6 +6,3 @@ Visit the following resources to learn more:
 
 - [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
 - [Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)
-
-
-

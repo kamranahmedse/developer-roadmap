@@ -17,24 +17,27 @@ hping is a versatile and powerful command-line based packet crafting tool that a
 Here are some example commands using hping:
 
 - Perform a traditional ping:
-   ```
-   hping3 -1 <target_IP>
-   ```
+
+  ```
+  hping3 -1 <target_IP>
+  ```
 
 - Perform a SYN flood attack:
-   ```
-   hping3 --flood -S -p <target_port> <target_IP>
-   ```
+
+  ```
+  hping3 --flood -S -p <target_port> <target_IP>
+  ```
 
 - Perform a traceroute using ICMP packets:
-   ```
-   hping3 --traceroute -V -1 <target_IP>
-   ```
+
+  ```
+  hping3 --traceroute -V -1 <target_IP>
+  ```
 
 - Perform a UDP scan of the first 100 ports:
-   ```
-   hping3 --udp -p 1-100 <target_IP>
-   ```
+  ```
+  hping3 --udp -p 1-100 <target_IP>
+  ```
 
 ## Summary
 

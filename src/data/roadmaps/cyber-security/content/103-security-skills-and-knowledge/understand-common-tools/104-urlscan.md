@@ -4,19 +4,19 @@ URLScan is a popular security tool that helps protect your web server from poten
 
 ## Key Features
 
-* **Analyzing Requests**: URLScan examines incoming HTTP requests to identify potentially malicious patterns or signs of an attack.
-* **Blocking URLs**: By filtering URLs with specific patterns or known bad signatures, URLScan helps protect your web server from harmful requests.
-* **Customizable Rules**: You can create custom rules tailored to your specific environment to provide a comprehensive security solution.
-* **Logging**: URLScan logs security-related events, allowing you to monitor and act on potential security threats.
+- **Analyzing Requests**: URLScan examines incoming HTTP requests to identify potentially malicious patterns or signs of an attack.
+- **Blocking URLs**: By filtering URLs with specific patterns or known bad signatures, URLScan helps protect your web server from harmful requests.
+- **Customizable Rules**: You can create custom rules tailored to your specific environment to provide a comprehensive security solution.
+- **Logging**: URLScan logs security-related events, allowing you to monitor and act on potential security threats.
 
 ## Usage in Cyber Security
 
 Some common use-cases for URLScan in the cyber security realm are:
 
-* **Prevent SQL Injection**: URLScan is capable of detecting requests that contain SQL-like patterns, helping to secure your web applications from SQL injection attacks.
-* **Mitigate XSS Attacks**: URLScan can be configured to deny requests with common cross-site scripting patterns or specific user-agent strings associated with known exploits.
-* **Control Access to Sensitive Directories**: By configuring URLScan to block access to specific directories or file types, you can reduce the risk of unauthorized access to sensitive files on your web server.
-* **Monitor Suspicious Activity**: Since URLScan provides detailed logs of security events, you can use this information to quickly identify and respond to potential security threats.
+- **Prevent SQL Injection**: URLScan is capable of detecting requests that contain SQL-like patterns, helping to secure your web applications from SQL injection attacks.
+- **Mitigate XSS Attacks**: URLScan can be configured to deny requests with common cross-site scripting patterns or specific user-agent strings associated with known exploits.
+- **Control Access to Sensitive Directories**: By configuring URLScan to block access to specific directories or file types, you can reduce the risk of unauthorized access to sensitive files on your web server.
+- **Monitor Suspicious Activity**: Since URLScan provides detailed logs of security events, you can use this information to quickly identify and respond to potential security threats.
 
 ## Conclusion
 

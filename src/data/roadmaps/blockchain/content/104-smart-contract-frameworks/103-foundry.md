@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Foundry Overview](https://book.getfoundry.sh/)
 - [Intro to Foundry](https://youtu.be/fNMfMxGxeag)
-

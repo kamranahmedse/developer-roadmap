@@ -16,7 +16,7 @@ mongo [options] [db address]
 
 ## MongoDB Atlas
 
-[MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is a fully-managed cloud-based database platform offering the best of MongoDB. Its intuitive interface provides an effortless deployment experience, automated backups, self-healing recovery, and many other features that make it an ideal choice for database management. 
+[MongoDB Atlas](https://www.mongodb.com/cloud/atlas) is a fully-managed cloud-based database platform offering the best of MongoDB. Its intuitive interface provides an effortless deployment experience, automated backups, self-healing recovery, and many other features that make it an ideal choice for database management.
 
 ## MongoDB APIs and Drivers
 

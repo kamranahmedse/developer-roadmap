@@ -10,7 +10,7 @@ To ensure cybersecurity, it's essential to understand the differences between tw
 - [Biometrics (fingerprint, facial recognition, etc.)](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5428991/)
 - [Security tokens or certificates](https://www.comodo.com/e-commerce/ssl-certificates/certificate.php)
 
-In simple terms, authentication answers the question, *"Who are you?"*
+In simple terms, authentication answers the question, _"Who are you?"_
 
 ## Authorization
 
@@ -24,7 +24,7 @@ Common methods of implementing authorization include:
 - [Access Control Lists (ACLs)](https://en.wikipedia.org/wiki/Access-control_list)
 - [Attribute-based access control (ABAC)](https://en.wikipedia.org/wiki/Attribute-based_access_control)
 
-In a nutshell, authorization answers the question, *"What are you allowed to do?"*
+In a nutshell, authorization answers the question, _"What are you allowed to do?"_
 
 ## Conclusion
 

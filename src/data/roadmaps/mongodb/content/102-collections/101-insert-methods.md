@@ -2,7 +2,7 @@
 
 In MongoDB, collections are used to store documents. To add data into these collections, MongoDB provides two primary insertion methods: `insertOne()` and `insertMany()`. In this section, we'll explore the usage and syntax of these methods, along with their options and some basic examples.
 
-##  insertOne()
+## insertOne()
 
 The `insertOne()` method is used to insert a single document into a collection. This method returns an `InsertOneResult` object, that shows the outcome of the operation.
 
@@ -31,12 +31,12 @@ db.collection.insertOne(
 
 ```javascript
 db.inventory.insertOne({
-   item: "book",
-   qty: 1
-})
+  item: 'book',
+  qty: 1,
+});
 ```
 
-##  insertMany()
+## insertMany()
 
 The `insertMany()` method is used to insert multiple documents into a collection at once. It returns an `InsertManyResult` object, displaying the status of the operation.
 
@@ -65,10 +65,10 @@ db.collection.insertMany(
 
 ```javascript
 db.inventory.insertMany([
-   { item: "pen", qty: 5 },
-   { item: "pencil", qty: 10 },
-   { item: "notebook", qty: 25 }
-])
+  { item: 'pen', qty: 5 },
+  { item: 'pencil', qty: 10 },
+  { item: 'notebook', qty: 25 },
+]);
 ```
 
 In conclusion, insert methods in MongoDB allow users to add documents to a collection with a few simple commands. By understanding the syntax and options available for `insertOne()` and `insertMany()`, we can efficiently store and manage data within MongoDB collections.

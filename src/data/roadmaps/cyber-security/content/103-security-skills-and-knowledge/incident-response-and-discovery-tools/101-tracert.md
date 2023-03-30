@@ -13,9 +13,11 @@ To use `tracert`, follow these simple steps:
 - Open the command prompt (Windows) or terminal (Linux/macOS).
 
 - Type `tracert` followed by the target's domain name or IP address, and press Enter. For example:
+
 ```
 tracert example.com
 ```
+
 - The trace will run, showing the details of each hop, latency, and hop's IP address or hostname in the output.
 
 ## Interpreting Tracert Results

@@ -20,4 +20,4 @@ NIDS identifies possible attacks or intrusions by comparing network activity aga
 
 In the event of a detected threat or policy violation, NIDS produces alerts and reports to provide administrators with crucial information about the event. Depending on the configuration, the system may also respond by blocking the suspicious traffic, isolating the affected device, or taking other pre-defined actions.
 
- Implementing NIDS as a part of your cyber security strategy is an essential step for ensuring the ongoing integrity and confidentiality of your network environment.
+Implementing NIDS as a part of your cyber security strategy is an essential step for ensuring the ongoing integrity and confidentiality of your network environment.

@@ -4,10 +4,10 @@ Gamification is a UX design pattern that involves incorporating elements of game
 
 ## Benefits of Gamification
 
-* **Increased engagement**: Gamification helps in capturing the user's attention and encourages them to spend more time interacting with the product.
-* **Motivation**: Game mechanics like points, badges, and leaderboards act as incentives, motivating users to perform a desired behavior or accomplish specific goals.
-* **Improved learning**: Gamification can make learning new concepts or skills more enjoyable, allowing users to better retain information.
-* **User retention**: By creating a sense of achievement and fostering friendly competition, gamification can inspire users to keep returning to the product.
+- **Increased engagement**: Gamification helps in capturing the user's attention and encourages them to spend more time interacting with the product.
+- **Motivation**: Game mechanics like points, badges, and leaderboards act as incentives, motivating users to perform a desired behavior or accomplish specific goals.
+- **Improved learning**: Gamification can make learning new concepts or skills more enjoyable, allowing users to better retain information.
+- **User retention**: By creating a sense of achievement and fostering friendly competition, gamification can inspire users to keep returning to the product.
 
 ## Key Elements of Gamification
 

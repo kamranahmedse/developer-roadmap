@@ -18,7 +18,7 @@ You can use the `Long` data type to store and query large integral values in you
 
 ```javascript
 db.collection.insert({
-  "largeValue": NumberLong("1234567890123456789")
+  largeValue: NumberLong('1234567890123456789'),
 });
 ```
 
@@ -26,7 +26,7 @@ To query documents that have a `Long` field with a specific value, you can use t
 
 ```javascript
 db.collection.find({
-  "largeValue": NumberLong("1234567890123456789")
+  largeValue: NumberLong('1234567890123456789'),
 });
 ```
 

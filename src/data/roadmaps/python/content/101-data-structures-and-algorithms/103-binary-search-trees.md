@@ -7,5 +7,3 @@ Visit the following resources to learn more:
 - [Tree Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=S2W3SXGPVyU)
 - [How to Implement Binary Search Tree in Python](https://www.section.io/engineering-education/implementing-binary-search-tree-using-python/)
 - [Problem Set](https://www.geeksforgeeks.org/binary-search-tree-data-structure/?ref=gcse)
-
-

@@ -14,6 +14,7 @@ MongoDB supports multi-document transactions, enabling you to perform multiple r
 The fundamental purpose of a transaction is to either execute **all** or **none** of its operations. This means that, in case any operation within the transaction fails, the entire transaction will be aborted, and the database will return to its initial state, thus ensuring data consistency.
 
 Transactions in MongoDB are essential to achieve the following **ACID** properties:
+
 - **Atomicity**: Ensures that either all the operations in the transaction are executed, or none are.
 - **Consistency**: Guarantees that, upon completing a transaction, the database remains in a consistent state.
 - **Isolation**: Secures that the operations within the transaction are isolated from other transactions being executed simultaneously.
@@ -34,9 +35,11 @@ session.startTransaction();
 
 try {
   // Perform various operations within the transaction
-  const operation1 = await collection1.insertOne(doc1, {session});
-  const operation2 = await collection2.updateOne(condition, update, {session});
-  const operation3 = await collection3.deleteOne(doc3, {session});
+  const operation1 = await collection1.insertOne(doc1, { session });
+  const operation2 = await collection2.updateOne(condition, update, {
+    session,
+  });
+  const operation3 = await collection3.deleteOne(doc3, { session });
 
   // Commit the transaction
   await session.commitTransaction();
@@ -52,6 +55,7 @@ try {
 ## Limitations
 
 While transactions provide immense benefits regarding data consistency and integrity, it is vital to be aware of some of its limitations:
+
 - They are available only in MongoDB versions 4.0 and above.
 - They can cause performance overhead, especially for write-heavy workloads.
 - In MongoDB clusters, transactions only support a maximum duration of 60 seconds.

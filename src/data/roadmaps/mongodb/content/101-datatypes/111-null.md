@@ -12,9 +12,9 @@ Here's an example to illustrate how to use the `null` data type in MongoDB:
 
 ```javascript
 db.users.insertOne({
-  "name": "Alice",
-  "email": "alice@example.com",
-  "phone": null
+  name: 'Alice',
+  email: 'alice@example.com',
+  phone: null,
 });
 ```
 

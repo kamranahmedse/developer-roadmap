@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Pyramid - Official Website](https://trypyramid.com/)
 - [Pyramid Documentation](https://docs.pyramid.com/en/latest/)
 - [Pyramid Framework Introduction](https://www.tutorialspoint.com/python_web_development_libraries/python_web_development_libraries_pyramid_framework.htm)
-

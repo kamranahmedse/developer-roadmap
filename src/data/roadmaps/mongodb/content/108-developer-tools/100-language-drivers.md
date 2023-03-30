@@ -1,6 +1,6 @@
 # Language Drivers
 
-Language drivers are essential tools for developers to interface with MongoDB. They are libraries provided by MongoDB to help developers work with MongoDB in their choice of programming language. With language drivers, you can perform various CRUD operations, manage authentication, and handle connections with the database effectively without worrying about low-level details. 
+Language drivers are essential tools for developers to interface with MongoDB. They are libraries provided by MongoDB to help developers work with MongoDB in their choice of programming language. With language drivers, you can perform various CRUD operations, manage authentication, and handle connections with the database effectively without worrying about low-level details.
 
 MongoDB supports a wide range of languages, and some of the most popular drivers are:
 

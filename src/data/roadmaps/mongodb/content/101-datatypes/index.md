@@ -2,11 +2,11 @@
 
 In MongoDB, data is stored in BSON format, which supports various data types. Understanding these data types is essential as they play a crucial role in schema design and query performance. The following is a brief summary of the different data types supported in MongoDB.
 
-##  ObjectId
+## ObjectId
 
 `ObjectId` is a 12-byte identifier used as a unique identifier for documents in a collection. It is the default value generated for the `_id` field, ensuring uniqueness within the collection.
 
-##  String
+## String
 
 `String` is used to store text data. It must be a valid UTF-8 encoded string.
 
@@ -16,7 +16,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Boolean
+## Boolean
 
 `Boolean` is used to store true or false values.
 
@@ -26,7 +26,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Integer
+## Integer
 
 `Integer` is used to store an integer value. MongoDB supports two integer types: 32-bit (`int`) and 64-bit (`long`).
 
@@ -36,7 +36,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Double
+## Double
 
 `Double` is used to store floating-point numbers.
 
@@ -46,7 +46,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Date
+## Date
 
 `Date` is used to store the date and time in Unix time format (milliseconds timestamp since January 1, 1970, 00:00:00 UTC).
 
@@ -56,7 +56,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Array
+## Array
 
 `Array` is used to store a list of values in a single field. The values can be of different data types.
 
@@ -66,7 +66,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Object
+## Object
 
 `Object` is used to store embedded documents, meaning a document can contain another document.
 
@@ -76,7 +76,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Null
+## Null
 
 `Null` is used to store a null value, representing the absence of a value or the field.
 
@@ -86,7 +86,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Binary Data
+## Binary Data
 
 `Binary Data` is used to store binary data or byte arrays.
 
@@ -96,7 +96,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Code
+## Code
 
 `Code` is used to store JavaScript code.
 
@@ -106,7 +106,7 @@ In MongoDB, data is stored in BSON format, which supports various data types. Un
 }
 ```
 
-##  Regular Expression
+## Regular Expression
 
 `Regular Expression` is used to store regular expressions.
 

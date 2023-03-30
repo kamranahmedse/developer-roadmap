@@ -21,8 +21,8 @@ Let's say we have a collection named `employees` and we want to skip the first 5
 ```javascript
 db.employees.aggregate([
   {
-    $skip: 5
-  }
+    $skip: 5,
+  },
 ]);
 ```
 

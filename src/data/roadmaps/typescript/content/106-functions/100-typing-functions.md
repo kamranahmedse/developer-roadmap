@@ -6,7 +6,7 @@ Function declaration with types:
 
 ```typescript
 function add(a: number, b: number): number {
-    return a + b;
+  return a + b;
 }
 ```
 
@@ -14,7 +14,7 @@ Arrow function with types:
 
 ```typescript
 const multiply = (a: number, b: number): number => {
-    return a * b;
+  return a * b;
 };
 ```
 
@@ -24,7 +24,7 @@ Function type:
 let divide: (a: number, b: number) => number;
 
 divide = (a, b) => {
-    return a / b;
+  return a / b;
 };
 ```
 

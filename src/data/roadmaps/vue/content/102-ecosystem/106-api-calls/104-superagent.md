@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Official Website](https://visionmedia.github.io/superagent/)
 - [GitHub Repository](https://github.com/visionmedia/superagent)
-

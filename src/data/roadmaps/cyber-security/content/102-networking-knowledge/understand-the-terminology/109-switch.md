@@ -3,6 +3,7 @@
 A **switch** is a networking device that connects devices together on a computer network. It filters and forwards data packets between different devices by using their MAC (Media Access Control) addresses to identify them. Switches play an essential role in managing traffic and ensuring that data reaches its intended destination efficiently.
 
 ## Key Features and Functions
+
 - **Intelligent Traffic Management:** Switches monitor the data packets as they travel through the network, only forwarding them to the devices that need to receive the data. This optimizes network performance and reduces congestion.
 - **Layer 2 Switching:** Switches operate at the data link layer (Layer 2) of the OSI (Open Systems Interconnection) model. They use MAC addresses to identify devices and determine the appropriate path for data packets.
 - **Broadcast Domains:** A switch creates separate collision domains, breaking up a single broadcast domain into multiple smaller ones, which helps minimize the impact of broadcast traffic on network performance.

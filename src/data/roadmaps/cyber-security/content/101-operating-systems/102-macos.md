@@ -1,10 +1,10 @@
 # MacOS
 
-**macOS** is a series of proprietary graphical operating systems developed and marketed by Apple Inc. It is the primary operating system for Apple's Mac computers. macOS is widely recognized for its sleek design, robust performance, and innovative features, making it one of the most popular operating systems globally. 
+**macOS** is a series of proprietary graphical operating systems developed and marketed by Apple Inc. It is the primary operating system for Apple's Mac computers. macOS is widely recognized for its sleek design, robust performance, and innovative features, making it one of the most popular operating systems globally.
 
 ## Key Features
 
-- **User-friendly interface**: macOS is known for its simple and intuitive user interface, which makes it easy for users to navigate and use the system efficiently. 
+- **User-friendly interface**: macOS is known for its simple and intuitive user interface, which makes it easy for users to navigate and use the system efficiently.
 
 - **Security**: macOS has several built-in security features, such as XProtect, Gatekeeper, and FileVault, to provide a secure computing environment. Additionally, macOS is based on UNIX, which is known for its strong security and stability.
 

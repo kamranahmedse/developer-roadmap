@@ -8,9 +8,9 @@ IP is a protocol that enables data exchange between computers over a network. Ea
 
 ## IPv4 and IPv6
 
-*IPv4*: It's the fourth version of IP, using 32-bit addresses and allowing a total of about 4.3 billion unique addresses.
+_IPv4_: It's the fourth version of IP, using 32-bit addresses and allowing a total of about 4.3 billion unique addresses.
 
-*IPv6*: To overcome the exhaustion of IPv4 addresses, IPv6 was introduced. It expands the number of unique addresses by using 128-bit addresses, providing a virtually limitless pool of addresses.
+_IPv6_: To overcome the exhaustion of IPv4 addresses, IPv6 was introduced. It expands the number of unique addresses by using 128-bit addresses, providing a virtually limitless pool of addresses.
 
 ## IP Address
 

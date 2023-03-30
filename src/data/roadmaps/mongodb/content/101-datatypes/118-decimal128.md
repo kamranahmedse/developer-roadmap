@@ -14,9 +14,9 @@ To specify a `Decimal128` value in MongoDB, use the `$numberDecimal` keyword fol
 
 ```javascript
 db.example.insertOne({
-  "amount": {
-    "$numberDecimal": "1234.567890123456789012345678901234"
-  }
+  amount: {
+    $numberDecimal: '1234.567890123456789012345678901234',
+  },
 });
 ```
 
@@ -25,7 +25,9 @@ Alternatively, with the help of the JavaScript BSON library, you can use the `De
 ```javascript
 const { Decimal128 } = require('bson');
 
-const decimalValue = Decimal128.fromString('1234.567890123456789012345678901234');
+const decimalValue = Decimal128.fromString(
+  '1234.567890123456789012345678901234'
+);
 db.example.insertOne({ amount: decimalValue });
 ```
 

@@ -1,6 +1,6 @@
 # Connection Types and their function
 
-In the realm of cyber security, understanding various connection types is crucial in maintaining a secure network environment. This section will provide you with an overview of different connection types commonly encountered in IT and their impact on security. 
+In the realm of cyber security, understanding various connection types is crucial in maintaining a secure network environment. This section will provide you with an overview of different connection types commonly encountered in IT and their impact on security.
 
 ## Wired Connections
 

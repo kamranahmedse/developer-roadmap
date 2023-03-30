@@ -1,6 +1,6 @@
 # Good Layout Rules
 
-In the world of UX design, a good layout is crucial to ensure your prototype is intuitive and user-friendly. By following these good layout rules, you can ensure your designs are efficient, attractive, and easy to navigate for users. 
+In the world of UX design, a good layout is crucial to ensure your prototype is intuitive and user-friendly. By following these good layout rules, you can ensure your designs are efficient, attractive, and easy to navigate for users.
 
 ## Consistency
 

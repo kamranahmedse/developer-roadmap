@@ -4,20 +4,20 @@
 
 ## Key Features
 
-* **iCloud Drive**: A secure space in the cloud where you can store your files and access them from any compatible device. You can also share files or entire folders with others.
-* **Photos**: Automatically stores and organizes all your photos and videos in iCloud. You can access them from any of your devices and even create shared photo albums for specific moments or events.
-* **Backup**: iCloud automatically backs up your iOS and iPadOS devices daily, ensuring that your data is safe and up-to-date. If you ever need to restore a device, iCloud Backup can help you get your data back quickly and easily.
-* **Find My**: This feature helps you locate your lost or stolen Apple devices by displaying their location on a map. Additionally, it allows you to remotely lock, erase, or play a sound on your lost device to protect your data.
-* **iCloud Keychain**: Securely stores and syncs your passwords and credit card information across all your Apple devices. It helps you generate strong passwords and autofill them when needed, making your online experience simple and more secure.
-* **Family Sharing**: Allows you to share various Apple services, like iCloud storage, Apple Music, and App Store purchases, with up to five family members. It also includes a shared family calendar and photo album.
+- **iCloud Drive**: A secure space in the cloud where you can store your files and access them from any compatible device. You can also share files or entire folders with others.
+- **Photos**: Automatically stores and organizes all your photos and videos in iCloud. You can access them from any of your devices and even create shared photo albums for specific moments or events.
+- **Backup**: iCloud automatically backs up your iOS and iPadOS devices daily, ensuring that your data is safe and up-to-date. If you ever need to restore a device, iCloud Backup can help you get your data back quickly and easily.
+- **Find My**: This feature helps you locate your lost or stolen Apple devices by displaying their location on a map. Additionally, it allows you to remotely lock, erase, or play a sound on your lost device to protect your data.
+- **iCloud Keychain**: Securely stores and syncs your passwords and credit card information across all your Apple devices. It helps you generate strong passwords and autofill them when needed, making your online experience simple and more secure.
+- **Family Sharing**: Allows you to share various Apple services, like iCloud storage, Apple Music, and App Store purchases, with up to five family members. It also includes a shared family calendar and photo album.
 
 ## Pricing and Storage Plans
 
 iCloud offers 5 GB of free storage. However, if you need more space, you can choose from the following paid storage plans:
 
-* 50 GB for $0.99 per month
-* 200 GB for $2.99 per month
-* 2 TB for $9.99 per month
+- 50 GB for $0.99 per month
+- 200 GB for $2.99 per month
+- 2 TB for $9.99 per month
 
 Pricing may vary based on your location.
 

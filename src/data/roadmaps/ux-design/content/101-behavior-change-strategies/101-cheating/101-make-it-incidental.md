@@ -1,6 +1,6 @@
 # Make it Incidental
 
-In UX design, making something incidental refers to subtly introducing a feature or element while the user is engaged in a different, primary task. The intention behind this approach is to avoid interrupting the user's flow, prevent them from feeling overwhelmed, and make the discovery of that feature feel more natural and serendipitous. 
+In UX design, making something incidental refers to subtly introducing a feature or element while the user is engaged in a different, primary task. The intention behind this approach is to avoid interrupting the user's flow, prevent them from feeling overwhelmed, and make the discovery of that feature feel more natural and serendipitous.
 
 ## Benefits of Making It Incidental
 

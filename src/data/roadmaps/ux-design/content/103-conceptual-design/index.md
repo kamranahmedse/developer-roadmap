@@ -7,9 +7,8 @@ In this stage, designers focus on gathering information, understanding the probl
 Key components of conceptual design include:
 
 - **Problem Definition**: Identify and describe the core problem or challenge that your design aims to address. This should include insights from user research, business objectives, and a clear design goal.
- 
+
 - **User Personas and Scenarios**: Develop representative user personas, providing demographic and behavioral information to help understand target user needs, motivations, and goals. Scenarios can then be created to illustrate how users might interact with the proposed solution in various contexts.
-  
 - **Information Architecture**: Define the high-level structure of the product or service, organizing content and features in a way that is easy for users to understand and navigate. This helps ensure that information is presented clearly and consistently throughout the experience.
 
 - **Sketches and Wireframes**: Create rough sketches or wireframes to visualize key aspects of the user interface and explore various design alternatives. These early prototypes can help identify potential issues and guide future design decisions.

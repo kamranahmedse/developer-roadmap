@@ -16,4 +16,3 @@ Vue CLI aims to be the standard tooling baseline for the Vue ecosystem. It ensur
 Visit the following resources to learn more:
 
 - [Vue CLI Guide](https://cli.vuejs.org/guide/)
-

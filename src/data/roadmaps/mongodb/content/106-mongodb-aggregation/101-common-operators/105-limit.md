@@ -17,7 +17,7 @@ Let's say we have a collection named `employees` and we want to limit the number
 ```javascript
 db.employees.aggregate([
   {
-    $limit: 5
-  }
+    $limit: 5,
+  },
 ]);
 ```

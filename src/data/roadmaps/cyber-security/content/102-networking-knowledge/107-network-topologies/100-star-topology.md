@@ -1,6 +1,6 @@
 # Star
 
-In a star network topology, all devices (nodes) are connected to a central device, called a hub or switch. The central device manages the data transmission between the devices connected to it, creating a star-like structure. 
+In a star network topology, all devices (nodes) are connected to a central device, called a hub or switch. The central device manages the data transmission between the devices connected to it, creating a star-like structure.
 
 ## Advantages
 

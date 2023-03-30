@@ -2,7 +2,8 @@
 
 In the realm of UX design, **Social Sharing** is a crucial pattern that allows users to share content from a website or app to various social media platforms. It helps in creating interaction between users and the content, engaging the audience and generating more traffic to the source.
 
-## Benefits of Social Sharing 
+## Benefits of Social Sharing
+
 - Increase in brand visibility and awareness
 - Drive more traffic to the website or app
 - Higher chances of content going viral
@@ -10,6 +11,7 @@ In the realm of UX design, **Social Sharing** is a crucial pattern that allows u
 - Improves organic search rankings
 
 ## Designing Effective Social Sharing Buttons
+
 - **Positioning**: Place the social sharing buttons at an easily accessible location on the page, e.g., top, bottom, or alongside the content.
 - **Size and Style**: Opt for clear and recognizable social icons that are easy to tap or click. Ensure their size is adequate to avoid any UX issues.
 - **Customization**: Tailor the design of social sharing buttons to complement your website or app's visual appeal.

@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply max-w-[830px] px-4 mx-auto;
+    @apply mx-auto max-w-[830px] px-4;
   }
 }
 
@@ -16,10 +16,10 @@ p > code {
   font-weight: normal !important;
 }
 
-.prose ul li>code:before,
-p>code:before,
-.prose ul li>code:after,
-p>code:after {
+.prose ul li > code:before,
+p > code:before,
+.prose ul li > code:after,
+p > code:after {
   content: '' !important;
 }
 

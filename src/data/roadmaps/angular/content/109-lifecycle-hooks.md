@@ -4,7 +4,7 @@ A component instance has a lifecycle that starts when Angular instantiates the c
 
 Your application can use lifecycle hook methods to tap into key events in the lifecycle of a component or directive to initialize new instances, initiate change detection when needed, respond to updates during change detection, and clean up before deletion of instances.
 
-The following life cycle hooks of angular are : 
+The following life cycle hooks of angular are :
 
 `OnChanges` , `OnInit` , `DoCheck` , `OnDestroy` , `AfterContentInit` , `AfterContentChecked` , `AfterViewInit` , `AfterViewChecked`
 

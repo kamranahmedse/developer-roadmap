@@ -4,9 +4,9 @@ A **hypervisor** is a software component that plays a vital role in virtualizati
 
 There are two primary types of hypervisors:
 
-- **Type 1 hypervisors** (*Bare-metal Hypervisors*) - These hypervisors run directly on the host's hardware, without the need for an underlying operating system, offering better performance and security. Examples of type 1 hypervisors include VMware ESXi, Microsoft Hyper-V, and Xen.
+- **Type 1 hypervisors** (_Bare-metal Hypervisors_) - These hypervisors run directly on the host's hardware, without the need for an underlying operating system, offering better performance and security. Examples of type 1 hypervisors include VMware ESXi, Microsoft Hyper-V, and Xen.
 
-- **Type 2 hypervisors** (*Hosted Hypervisors*) - These hypervisors run as an application on an existing operating system, which makes them less performant and potentially less secure. However, they are generally easier to set up and manage. Examples of type 2 hypervisors include Oracle VirtualBox, VMware Workstation, and Parallels Desktop.
+- **Type 2 hypervisors** (_Hosted Hypervisors_) - These hypervisors run as an application on an existing operating system, which makes them less performant and potentially less secure. However, they are generally easier to set up and manage. Examples of type 2 hypervisors include Oracle VirtualBox, VMware Workstation, and Parallels Desktop.
 
 ## Benefits of using a Hypervisor
 

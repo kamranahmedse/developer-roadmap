@@ -7,7 +7,7 @@ This class lets you perform tasks such as:
 - Define the upperBound and lowerBound values of an animation.
 - Create a fling animation effect using a physics simulation.
 
-By default, an AnimationController linearly produces values that range from 0.0 to 1.0, during a given duration. 
+By default, an AnimationController linearly produces values that range from 0.0 to 1.0, during a given duration.
 
 Learn more from the following links:
 

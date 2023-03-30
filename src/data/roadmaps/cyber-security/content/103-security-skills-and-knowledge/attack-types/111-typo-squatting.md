@@ -1,6 +1,6 @@
 # Typo Squatting
 
-**Typo Squatting**, also known as **URL hijacking** or **domain squatting**, is a malicious cyber-attack technique that targets internet users who mistakenly enter an incorrect website address into their web browsers. When this occurs, the users are directed to a fake website that closely resembles a legitimate one. The attackers create these fake websites by registering domain names similar to the target website, but with common typographical errors. The goal of typo squatting is often to spread malware, steal personal information or financial details, sell counterfeit products, or promote phishing scams. 
+**Typo Squatting**, also known as **URL hijacking** or **domain squatting**, is a malicious cyber-attack technique that targets internet users who mistakenly enter an incorrect website address into their web browsers. When this occurs, the users are directed to a fake website that closely resembles a legitimate one. The attackers create these fake websites by registering domain names similar to the target website, but with common typographical errors. The goal of typo squatting is often to spread malware, steal personal information or financial details, sell counterfeit products, or promote phishing scams.
 
 ## How Typo Squatting Works
 

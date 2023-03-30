@@ -21,7 +21,10 @@ function generateTopicUrl(filePath: string) {
  * @param topicUrl Topic URL for which breadcrumbs are required
  * @param topicFiles Topic file mapping to read the topic data from
  */
-function generateBreadcrumbs(topicUrl: string, topicFiles: Record<string, RoadmapTopicFileType>): BreadcrumbItem[] {
+function generateBreadcrumbs(
+  topicUrl: string,
+  topicFiles: Record<string, RoadmapTopicFileType>
+): BreadcrumbItem[] {
   // We need to collect all the pages with permalinks to generate breadcrumbs
   // e.g. /backend/internet/how-does-internet-work/http
   //      /backend
@@ -75,10 +78,15 @@ export interface RoadmapTopicFileType {
  * Gets all the topic files available for all the roadmaps
  * @returns Hashmap containing the topic slug and the topic file content
  */
-export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopicFileType>> {
-  const contentFiles = await import.meta.glob<string>('/src/data/roadmaps/*/content/**/*.md', {
-    eager: true,
-  });
+export async function getRoadmapTopicFiles(): Promise<
+  Record<string, RoadmapTopicFileType>
+> {
+  const contentFiles = await import.meta.glob<string>(
+    '/src/data/roadmaps/*/content/**/*.md',
+    {
+      eager: true,
+    }
+  );
 
   const mapping: Record<string, RoadmapTopicFileType> = {};
 
@@ -87,10 +95,13 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 
-    const [, roadmapId] = filePath.match(/^\/src\/data\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
+    const [, roadmapId] =
+      filePath.match(/^\/src\/data\/roadmaps\/(.+)?\/content\/(.+)?$/) || [];
     const topicUrl = generateTopicUrl(filePath);
 
-    const currentRoadmap = await import(`../data/roadmaps/${roadmapId}/${roadmapId}.md`);
+    const currentRoadmap = await import(
+      `../data/roadmaps/${roadmapId}/${roadmapId}.md`
+    );
 
     mapping[topicUrl] = {
       url: topicUrl,
@@ -104,7 +115,11 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
 
   // Populate breadcrumbs inside the mapping
   Object.keys(mapping).forEach((topicUrl) => {
-    const { roadmap: currentRoadmap, roadmapId, file: currentTopic } = mapping[topicUrl];
+    const {
+      roadmap: currentRoadmap,
+      roadmapId,
+      file: currentTopic,
+    } = mapping[topicUrl];
     const roadmapUrl = `/${roadmapId}`;
 
     // Breadcrumbs for the file
@@ -158,7 +173,9 @@ export async function getRoadmapTopicFiles(): Promise<Record<string, RoadmapTopi
 //   '/frontend/version-control-systems/basic-usage-of-git',
 //   '/frontend/version-control-systems'
 // ]
-async function sortTopics(topics: RoadmapTopicFileType[]): Promise<RoadmapTopicFileType[]> {
+async function sortTopics(
+  topics: RoadmapTopicFileType[]
+): Promise<RoadmapTopicFileType[]> {
   let sortedTopics: RoadmapTopicFileType[] = [];
 
   // For each of the topic, find its place in the sorted topics
@@ -193,10 +210,14 @@ async function sortTopics(topics: RoadmapTopicFileType[]): Promise<RoadmapTopicF
  * @param roadmapId Roadmap id for which you want the topics
  * @returns Promise<TopicFileType[]>
  */
-export async function getTopicsByRoadmapId(roadmapId: string): Promise<RoadmapTopicFileType[]> {
+export async function getTopicsByRoadmapId(
+  roadmapId: string
+): Promise<RoadmapTopicFileType[]> {
   const topicFileMapping = await getRoadmapTopicFiles();
   const allTopics = Object.values(topicFileMapping);
-  const roadmapTopics = allTopics.filter((topic) => topic.roadmapId === roadmapId);
+  const roadmapTopics = allTopics.filter(
+    (topic) => topic.roadmapId === roadmapId
+  );
 
   return sortTopics(roadmapTopics);
 }

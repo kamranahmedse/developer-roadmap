@@ -4,7 +4,7 @@ VLAN hopping is a common network-based attack that exploits the vulnerabilities 
 
 ## How VLAN Hopping Works
 
-There are two primary methods of VLAN hopping: 
+There are two primary methods of VLAN hopping:
 
 - **Switch Spoofing:** In this approach, an attacker configures their device to act as a switch and establish a trunk link with the actual network switch. Since trunk links are designed to carry traffic from multiple VLANs, the attacker can then access traffic from all the VLANs that are allowed on the trunk.
 

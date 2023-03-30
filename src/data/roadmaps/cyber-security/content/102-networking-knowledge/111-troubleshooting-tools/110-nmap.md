@@ -4,15 +4,15 @@
 
 ## Features of Nmap
 
-* **Host Discovery**: Nmap facilitates finding hosts on the network using various techniques such as ICMP echo requests, TCP SYN/ACK probes, and ARP scans.
+- **Host Discovery**: Nmap facilitates finding hosts on the network using various techniques such as ICMP echo requests, TCP SYN/ACK probes, and ARP scans.
 
-* **Port Scanning**: Nmap can identify open ports on target hosts, which can reveal potential security vulnerabilities and provide crucial information during a penetration test.
+- **Port Scanning**: Nmap can identify open ports on target hosts, which can reveal potential security vulnerabilities and provide crucial information during a penetration test.
 
-* **Service and Version Detection**: Nmap can detect the name and version of the services running on target hosts. This information helps to identify software that might be outdated or have known security flaws.
+- **Service and Version Detection**: Nmap can detect the name and version of the services running on target hosts. This information helps to identify software that might be outdated or have known security flaws.
 
-* **Operating System Detection**: Nmap can make intelligent guesses about the operating system of a target host, which can be useful for tuning your attack strategy based on the vulnerabilities of specific systems.
+- **Operating System Detection**: Nmap can make intelligent guesses about the operating system of a target host, which can be useful for tuning your attack strategy based on the vulnerabilities of specific systems.
 
-* **Scriptable**: Nmap has a built-in scripting engine (NSE) that allows users to write custom scripts for automating and extending its functionality.
+- **Scriptable**: Nmap has a built-in scripting engine (NSE) that allows users to write custom scripts for automating and extending its functionality.
 
 ## How to use Nmap
 
@@ -28,8 +28,8 @@ This command will perform a "ping scan" (`-sn`) on the specified IP range (`192.
 
 ## Important Notes
 
-* While Nmap is a valuable tool for cyber security professionals, it can also be used by malicious attackers to gather information about potential targets. It is essential to use Nmap responsibly and only on networks and systems that you have permission to scan.
+- While Nmap is a valuable tool for cyber security professionals, it can also be used by malicious attackers to gather information about potential targets. It is essential to use Nmap responsibly and only on networks and systems that you have permission to scan.
 
-* Scanning large networks can generate considerable traffic and may impact the performance of the target hosts. It is important to configure your scans appropriately and be mindful of potential network disruptions.
+- Scanning large networks can generate considerable traffic and may impact the performance of the target hosts. It is important to configure your scans appropriately and be mindful of potential network disruptions.
 
 For more information and usage examples, refer to the [official Nmap documentation](https://nmap.org/book/man.html).

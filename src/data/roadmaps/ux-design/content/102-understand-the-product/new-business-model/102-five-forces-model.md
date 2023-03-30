@@ -2,7 +2,7 @@
 
 **Five Forces Model**
 
-The *Five Forces Model* is a strategic framework developed by Harvard Business School professor Michael Porter. It is designed to analyze the competitive environment and help businesses understand the factors that influence competition, profitability, and overall industry attractiveness. This model is essential in UX design as it helps you identify opportunities, make informed decisions, and ultimately design products that satisfy users' needs and preferences.
+The _Five Forces Model_ is a strategic framework developed by Harvard Business School professor Michael Porter. It is designed to analyze the competitive environment and help businesses understand the factors that influence competition, profitability, and overall industry attractiveness. This model is essential in UX design as it helps you identify opportunities, make informed decisions, and ultimately design products that satisfy users' needs and preferences.
 
 The Five Forces Model consists of five components:
 
@@ -16,4 +16,4 @@ The Five Forces Model consists of five components:
 
 - **Bargaining Power of Buyers:** Lastly, this force examines the degree of control customers have over your product's price, features, and overall quality. Factors that affect buyer power include market size, consumer information availability, product differentiation, and price sensitivity. In UX design, it's crucial to align your product with user expectations and preferences, ensuring they perceive it as valuable and are less likely to seek alternatives.
 
-To effectively use the *Five Forces Model* in UX design, it's essential to research and understand these forces in your industry, act on insights, and continually reassess your position as the competitive landscape evolves. By doing so, you'll create a robust and sustainable UX strategy that satisfies both user needs and market demands.
+To effectively use the _Five Forces Model_ in UX design, it's essential to research and understand these forces in your industry, act on insights, and continually reassess your position as the competitive landscape evolves. By doing so, you'll create a robust and sustainable UX strategy that satisfies both user needs and market demands.

@@ -11,7 +11,7 @@ In this section, we'll explore the usage of the `$regex` operator and see how it
 The `$regex` operator can be used in the `find()` method, when searching through a collection of documents. It takes a pattern and searches for any documents that match the provided pattern. Here's a basic example:
 
 ```javascript
-db.collection.find({ fieldName: { $regex: "your-pattern" } });
+db.collection.find({ fieldName: { $regex: 'your-pattern' } });
 ```
 
 Replace `fieldName` with the name of the field you want to search and `your-pattern` with the regular expression pattern you want to match. This query will return any documents that contain the matching pattern in the specified field.
@@ -23,7 +23,7 @@ By default, the `$regex` operator is case-sensitive. If you want to perform a ca
 Here's an example:
 
 ```javascript
-db.collection.find({ fieldName: { $regex: "your-pattern", $options: "i" } });
+db.collection.find({ fieldName: { $regex: 'your-pattern', $options: 'i' } });
 ```
 
 In this example, the query will return any documents that contain the matching pattern in the specified field, regardless of the text case.
@@ -33,7 +33,7 @@ In this example, the query will return any documents that contain the matching p
 In Regular Expressions, some characters have special meanings, such as the period (`.`), asterisk (`*`), and plus sign (`+`). To search for these characters in your documents, you need to escape them with a backslash (`\`). For example, if you want to find documents that have a `+` sign in a field, you can use the following pattern:
 
 ```javascript
-db.collection.find({ fieldName: { $regex: "\\+" } });
+db.collection.find({ fieldName: { $regex: '\\+' } });
 ```
 
 In this example, the backslash escapes the `+` sign, telling the `$regex` operator to search for the literal character `+` in the documents.

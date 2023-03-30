@@ -11,11 +11,12 @@ MongoDB auditing enables you to capture detailed information about database even
 To enable auditing in MongoDB, you must use MongoDB Enterprise Advanced or an equivalent Atlas tier. Once you have the required version, you can enable auditing by modifying your `mongod` or `mongos` configuration file to include the `auditLog` option, specifying the format, destination, and filter criteria for the audit events.
 
 Example:
+
 ```yaml
 auditLog:
   destination: file
   format: JSON
-  path: "/path/to/audit/log/file.json"
+  path: '/path/to/audit/log/file.json'
   filter: "{ atype: { $in: ['authenticate', 'createUser', 'dropUser', 'revokeRolesFromUser'] }}"
 ```
 
@@ -31,6 +32,7 @@ MongoDB audit logs can be generated in two formats:
 
 To specify which events should be audited, you can provide a filter expression to the `auditLog.filter` configuration parameter.
 Example:
+
 ```yaml
 auditLog:
   filter: "{ atype: { $in: ['authCheck', 'createUser', 'dropUser', 'revokeRolesFromUser'] }}"

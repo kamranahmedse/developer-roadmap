@@ -4,9 +4,10 @@
 Each thread has its own program counter, stack, and set of registers. But the threads of a single process might share the same code and data/file.
 
 **Key Terminologies:**
-* `proc`
-* `fork`
-* `join`
+
+- `proc`
+- `fork`
+- `join`
 
 Visit the following resources to learn more:
 

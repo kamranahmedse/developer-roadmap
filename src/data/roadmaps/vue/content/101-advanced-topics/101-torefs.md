@@ -6,5 +6,3 @@ Visit the following resources to learn more:
 
 - [Reactivity API — toRefs](https://vuejs.org/api/reactivity-utilities.html#toref)
 - [Vue 3: Reactivity Made Easy (ref, reactive, toRefs... oh my!)](https://www.youtube.com/watch?v=sAj6tdVS2cA)
-
-
