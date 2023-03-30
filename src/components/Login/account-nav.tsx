@@ -1,26 +1,13 @@
-import Cookies from 'js-cookie';
-import { useEffect, useState } from 'preact/hooks';
-import { TOKEN_COOKIE_NAME } from '../../lib/utils';
 import { useAuth } from '../../hooks/use-auth';
 
 export default function AccountNavigation() {
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const { user, status } = useAuth();
+  const { user, isLoading } = useAuth();
 
-  useEffect(() => {
-    const token = Cookies.get(TOKEN_COOKIE_NAME);
-    if (token) {
-      setIsAuthenticated(true);
-    } else {
-      setIsAuthenticated(false);
-    }
-  }, []);
-
-  console.log('user', user, status);
+  console.log('user', user, isLoading);
 
   return (
     <div>
-      {isAuthenticated ? (
+      {user ? (
         <div>Authenticated: {user?.name}</div>
       ) : (
         <div>Not Authenticated</div>

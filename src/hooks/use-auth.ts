@@ -4,16 +4,14 @@ import Cookies from 'js-cookie';
 
 export const useAuth = () => {
   const [user, setUser] = useState<TokenPayload | null>(null);
-  const [status, setStatus] = useState<'loading' | 'success' | 'error'>(
-    'loading'
-  );
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const token = Cookies.get(TOKEN_COOKIE_NAME);
     const payload = token ? decodeToken(token) : null;
     setUser(payload);
-    setStatus('success');
+    setIsLoading(false);
   }, []);
 
-  return { user, status };
+  return { user, isLoading };
 };
