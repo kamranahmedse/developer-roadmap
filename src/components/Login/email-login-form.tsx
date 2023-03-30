@@ -6,6 +6,10 @@ import { TOKEN_COOKIE_NAME } from '../../lib/utils';
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
+  const [error, setError] = useState<{
+    message: string;
+    status: number;
+  } | null>(null);
 
   return (
     <form
@@ -29,6 +33,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
             window.location.href = '/';
           } else {
             console.log('error', json);
+            setError(json);
           }
         });
       }}
@@ -61,6 +66,11 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         value={password}
         onChange={(e) => setPassword(String((e.target as any).value))}
       />
+
+      {error && (
+        <div className="mt-2 text-sm text-red-500">{error.message}</div>
+      )}
+
       <button
         type="submit"
         className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:opacity-60"
