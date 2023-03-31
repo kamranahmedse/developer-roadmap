@@ -1,9 +1,8 @@
 ---
 import Popup from '../Popup/Popup.astro';
-import LoginComponent from './LoginComponent'
+import LoginComponent from './LoginCopmponent.astro';
 ---
 
 <Popup id='login-popup' title='' subtitle=''>
-  <LoginComponent client:only="preact" />
+  <LoginComponent />
 </Popup>
-

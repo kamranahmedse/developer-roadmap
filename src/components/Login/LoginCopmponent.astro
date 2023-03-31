@@ -1,0 +1,31 @@
+---
+import Divider from './Divider.astro';
+import GithubLogin from './GithubLogin.astro';
+import GoogleLogin from './GoogleLogin.astro';
+import EmailLoginForm from './email-login-form';
+---
+
+<div>
+  <div class='text-center'>
+    <h2 class='text-2xl font-semibold leading-5 text-slate-900'>
+      Welcome back
+    </h2>
+    <p class='mt-2 text-sm leading-4 text-slate-600'>
+      Please enter your details.
+    </p>
+  </div>
+
+  <div class='mt-10 space-y-2'>
+    <GithubLogin />
+    <GoogleLogin />
+  </div>
+
+  <Divider />
+
+  <EmailLoginForm client:load />
+
+  <div class='mt-6 text-center text-sm text-slate-600'>
+    Don't have an account?{' '}
+    <a href='/signup' class='font-medium text-[#4285f4]'> Sign up</a>
+  </div>
+</div>

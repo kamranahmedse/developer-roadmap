@@ -1,9 +1,10 @@
 ---
 import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
 import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
-import { Divider, GithubLoginButton } from '../components/Login/LoginComponent';
+import Divider from '../components/Login/Divider.astro';
+import GithubLogin from '../components/Login/GithubLogin.astro';
+import GoogleLogin from '../components/Login/GoogleLogin.astro';
 import EmailLoginForm from '../components/Login/email-login-form';
-import GoogleLoginButton from '../components/Login/google-login';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
 
@@ -29,8 +30,10 @@ import BaseLayout from '../layouts/BaseLayout.astro';
         </p>
       </div>
 
-      <GithubLoginButton />
-      <GoogleLoginButton client:load />
+      <div class='flex w-full flex-col items-stretch space-y-2'>
+        <GithubLogin />
+        <GoogleLogin />
+      </div>
 
       <Divider />
 

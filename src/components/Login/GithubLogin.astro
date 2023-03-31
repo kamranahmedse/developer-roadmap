@@ -1,0 +1,69 @@
+---
+import Icon from '../Icon.astro';
+import Spinner from '../Spinner.astro';
+---
+
+<button
+  class='inline-flex h-10 w-full items-center justify-center rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:opacity-60'
+  id='github-login-button'
+>
+  <Spinner className='text-black hidden' id='github-login-spinner' />
+  <div class='flex items-center' data-github-text>
+    <Icon icon='github' />
+    <span class='ml-2'>Continue with Github</span>
+  </div>
+</button>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+  const githubLoginButton = document.getElementById('github-login-button');
+  const githubLoginSpinner = document.getElementById('github-login-spinner');
+  const githubLoginText = document.querySelector('[data-github-text]');
+
+  githubLoginButton?.addEventListener('click', () => {
+    githubLoginSpinner?.classList.remove('hidden');
+    githubLoginText?.classList.add('hidden');
+    fetch('http://localhost:8080/v1-github-login', {
+      credentials: 'include',
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        githubLoginText?.classList.remove('hidden');
+        githubLoginSpinner?.classList.add('hidden');
+        window.location.href = data.loginUrl;
+      });
+  });
+
+  window.addEventListener('load', () => {
+    // Get all query params and send them to v1-github-callback
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    const state = urlParams.get('state');
+    const provider = urlParams.get('provider');
+
+    if (code && state && provider === 'github') {
+      githubLoginSpinner?.classList.remove('hidden');
+      githubLoginText?.classList.add('hidden');
+      fetch(
+        `http://localhost:8080/v1-github-callback${window.location.search}`,
+        {
+          method: 'GET',
+          credentials: 'include',
+        }
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.token) {
+            Cookies.set(TOKEN_COOKIE_NAME, data.token);
+            githubLoginText?.classList.remove('hidden');
+            githubLoginSpinner?.classList.add('hidden');
+            window.location.href = '/';
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  });
+</script>

@@ -1,0 +1,70 @@
+---
+import Icon from '../Icon.astro';
+import Spinner from '../Spinner.astro';
+---
+
+<button
+  class='inline-flex h-10 w-full items-center justify-center rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:opacity-60'
+  id='google-login-button'
+>
+  <Spinner className='text-black hidden' id='google-login-spinner' />
+  <div class='flex items-center' data-google-text>
+    <Icon icon='google' />
+    <span class='ml-2'>Continue with Google</span>
+  </div>
+</button>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+  const googleLoginButton = document.getElementById('google-login-button');
+  const googleLoginSpinner = document.getElementById('google-login-spinner');
+  const googleLoginText = document.querySelector('[data-google-text]');
+
+  googleLoginButton?.addEventListener('click', () => {
+    googleLoginSpinner?.classList.remove('hidden');
+    googleLoginText?.classList.add('hidden');
+    fetch('http://localhost:8080/v1-google-login', {
+      credentials: 'include',
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        googleLoginText?.classList.remove('hidden');
+        googleLoginSpinner?.classList.add('hidden');
+        window.location.href = data.loginUrl;
+      });
+  });
+
+  window.addEventListener('load', () => {
+    // Get all query params and send them to v1-google-callback
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    const state = urlParams.get('state');
+    const prompt = urlParams.get('prompt');
+    const provider = urlParams.get('provider');
+
+    if (code && state && prompt && provider === 'google') {
+      googleLoginSpinner?.classList.remove('hidden');
+      googleLoginText?.classList.add('hidden');
+      fetch(
+        `http://localhost:8080/v1-google-callback${window.location.search}`,
+        {
+          method: 'GET',
+          credentials: 'include',
+        }
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          if (data.token) {
+            Cookies.set(TOKEN_COOKIE_NAME, data.token);
+            googleLoginText?.classList.remove('hidden');
+            googleLoginSpinner?.classList.add('hidden');
+            window.location.href = '/';
+          }
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  });
+</script>
