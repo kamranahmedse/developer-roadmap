@@ -12,7 +12,7 @@ export default function AccountNavigation() {
     <div>
       {isLoading ? (
         <div className="flex h-10 w-32 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm text-white hover:from-blue-500 hover:to-blue-600">
-          <Spinner />
+          <Spinner className="text-white" />
         </div>
       ) : (
         <>
@@ -32,10 +32,10 @@ export default function AccountNavigation() {
   );
 }
 
-function Spinner() {
+export function Spinner({className}: {className?: string}) {
   return (
     <svg
-      className="h-5 w-5 animate-spin text-white"
+      className={`h-5 w-5 animate-spin ${className}`}
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
