@@ -14,24 +14,63 @@ import Spinner from '../Spinner.astro';
   </div>
 </button>
 
+<p class='hidden text-sm font-medium text-red-600' data-google-error></p>
+
 <script>
   import Cookies from 'js-cookie';
   import { TOKEN_COOKIE_NAME } from '../../lib/utils';
   const googleLoginButton = document.getElementById('google-login-button');
   const googleLoginSpinner = document.getElementById('google-login-spinner');
   const googleLoginText = document.querySelector('[data-google-text]');
+  const googleErrorText = document.querySelector('[data-google-error]');
+
+  function addSpinner() {
+    googleLoginText?.classList.add('hidden');
+    googleLoginSpinner?.classList.remove('hidden');
+  }
+
+  function toogleSpinner() {
+    googleLoginText?.classList.remove('hidden');
+    googleLoginSpinner?.classList.add('hidden');
+  }
+
+  function showError(err: Error) {
+    googleErrorText?.classList.remove('hidden');
+    if (googleErrorText) {
+      googleErrorText.innerHTML = err.message;
+    }
+  }
 
   googleLoginButton?.addEventListener('click', () => {
-    googleLoginSpinner?.classList.remove('hidden');
-    googleLoginText?.classList.add('hidden');
+    // Show spinner
+    addSpinner();
+
     fetch('http://localhost:8080/v1-google-login', {
       credentials: 'include',
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error('Something went wrong.');
+        }
+      })
       .then((data) => {
-        googleLoginText?.classList.remove('hidden');
-        googleLoginSpinner?.classList.add('hidden');
-        window.location.href = data.loginUrl;
+        // Remove spinner
+        toogleSpinner();
+        // Redirect to google login
+        if (data.loginUrl) {
+          window.location.href = data.loginUrl;
+        } else {
+          // Else throw error
+          throw new Error('Something went wrong.');
+        }
+      })
+      .catch((err: Error) => {
+        toogleSpinner();
+
+        // Show error in the UI
+        showError(err);
       });
   });
 
@@ -44,8 +83,9 @@ import Spinner from '../Spinner.astro';
     const provider = urlParams.get('provider');
 
     if (code && state && prompt && provider === 'google') {
-      googleLoginSpinner?.classList.remove('hidden');
-      googleLoginText?.classList.add('hidden');
+      // Show spinner
+      addSpinner();
+
       fetch(
         `http://localhost:8080/v1-google-callback${window.location.search}`,
         {
@@ -53,17 +93,30 @@ import Spinner from '../Spinner.astro';
           credentials: 'include',
         }
       )
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.token) {
-            Cookies.set(TOKEN_COOKIE_NAME, data.token);
-            googleLoginText?.classList.remove('hidden');
-            googleLoginSpinner?.classList.add('hidden');
-            window.location.href = '/';
+        .then((res) => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            throw new Error('Something went wrong.');
           }
         })
-        .catch((err) => {
-          console.log(err);
+        .then((data) => {
+          // Remove spinner
+          toogleSpinner();
+
+          // Set token in cookie and redirect to home
+          if (data.token) {
+            Cookies.set(TOKEN_COOKIE_NAME, data.token);
+
+            // Redirect to the page the user was on before login
+            history.go(-2);
+          } else {
+            throw new Error('Something went wrong.');
+          }
+        })
+        .catch((err: Error) => {
+          toogleSpinner();
+          showError(err);
         });
     }
   });
