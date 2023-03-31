@@ -1,6 +1,7 @@
 ---
 import Icon from './Icon.astro';
 import AccountNavigation from './Login/account-nav';
+import AccountNavigationAstro from './Login/account-navigation.astro';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -28,6 +29,7 @@ import AccountNavigation from './Login/account-nav';
       </li>
       <li>
         <AccountNavigation client:load />
+        <AccountNavigationAstro />
       </li>
     </ul>
 
