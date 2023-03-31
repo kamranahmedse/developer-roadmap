@@ -29,7 +29,7 @@ import Spinner from '../Spinner.astro';
     googleLoginSpinner?.classList.remove('hidden');
   }
 
-  function toogleSpinner() {
+  function hideSpinner() {
     googleLoginText?.classList.remove('hidden');
     googleLoginSpinner?.classList.add('hidden');
   }
@@ -57,7 +57,7 @@ import Spinner from '../Spinner.astro';
       })
       .then((data) => {
         // Remove spinner
-        toogleSpinner();
+        hideSpinner();
         // Redirect to google login
         if (data.loginUrl) {
           window.location.href = data.loginUrl;
@@ -67,7 +67,7 @@ import Spinner from '../Spinner.astro';
         }
       })
       .catch((err: Error) => {
-        toogleSpinner();
+        hideSpinner();
 
         // Show error in the UI
         showError(err);
@@ -102,7 +102,7 @@ import Spinner from '../Spinner.astro';
         })
         .then((data) => {
           // Remove spinner
-          toogleSpinner();
+          hideSpinner();
 
           // Set token in cookie and redirect to home
           if (data.token) {
@@ -115,7 +115,7 @@ import Spinner from '../Spinner.astro';
           }
         })
         .catch((err: Error) => {
-          toogleSpinner();
+          hideSpinner();
           showError(err);
         });
     }

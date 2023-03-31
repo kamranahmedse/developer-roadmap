@@ -14,24 +14,61 @@ import Spinner from '../Spinner.astro';
   </div>
 </button>
 
+<p class='hidden text-sm font-medium text-red-600' data-github-error></p>
+
 <script>
   import Cookies from 'js-cookie';
   import { TOKEN_COOKIE_NAME } from '../../lib/utils';
   const githubLoginButton = document.getElementById('github-login-button');
   const githubLoginSpinner = document.getElementById('github-login-spinner');
   const githubLoginText = document.querySelector('[data-github-text]');
+  const githubErrorText = document.querySelector('[data-github-error]');
+
+  function addSpinner() {
+    githubLoginText?.classList.add('hidden');
+    githubLoginSpinner?.classList.remove('hidden');
+  }
+
+  function hideSpinner() {
+    githubLoginText?.classList.remove('hidden');
+    githubLoginSpinner?.classList.add('hidden');
+  }
+
+  function showError(err: Error) {
+    githubErrorText?.classList.remove('hidden');
+    if (githubErrorText) {
+      githubErrorText.innerHTML = err.message;
+    }
+  }
 
   githubLoginButton?.addEventListener('click', () => {
-    githubLoginSpinner?.classList.remove('hidden');
-    githubLoginText?.classList.add('hidden');
+    addSpinner();
     fetch('http://localhost:8080/v1-github-login', {
       credentials: 'include',
     })
-      .then((res) => res.json())
+      .then((res) => {
+        if (res.ok) {
+          return res.json();
+        } else {
+          throw new Error('Something went wrong.');
+        }
+      })
       .then((data) => {
-        githubLoginText?.classList.remove('hidden');
-        githubLoginSpinner?.classList.add('hidden');
-        window.location.href = data.loginUrl;
+        // Remove spinner
+        hideSpinner();
+        // Redirect to google login
+        if (data.loginUrl) {
+          window.location.href = data.loginUrl;
+        } else {
+          // Else throw error
+          throw new Error('Something went wrong.');
+        }
+      })
+      .catch((err: Error) => {
+        hideSpinner();
+
+        // Show error in the UI
+        showError(err);
       });
   });
 
@@ -43,8 +80,7 @@ import Spinner from '../Spinner.astro';
     const provider = urlParams.get('provider');
 
     if (code && state && provider === 'github') {
-      githubLoginSpinner?.classList.remove('hidden');
-      githubLoginText?.classList.add('hidden');
+      addSpinner();
       fetch(
         `http://localhost:8080/v1-github-callback${window.location.search}`,
         {
@@ -52,17 +88,30 @@ import Spinner from '../Spinner.astro';
           credentials: 'include',
         }
       )
-        .then((res) => res.json())
-        .then((data) => {
-          if (data.token) {
-            Cookies.set(TOKEN_COOKIE_NAME, data.token);
-            githubLoginText?.classList.remove('hidden');
-            githubLoginSpinner?.classList.add('hidden');
-            window.location.href = '/';
+        .then((res) => {
+          if (res.ok) {
+            return res.json();
+          } else {
+            throw new Error('Something went wrong.');
           }
         })
-        .catch((err) => {
-          console.log(err);
+        .then((data) => {
+          // Remove spinner
+          hideSpinner();
+
+          // Set token in cookie and redirect to home
+          if (data.token) {
+            Cookies.set(TOKEN_COOKIE_NAME, data.token);
+
+            // Redirect to the page the user was on before login
+            history.go(-2);
+          } else {
+            throw new Error('Something went wrong.');
+          }
+        })
+        .catch((err: Error) => {
+          hideSpinner();
+          showError(err);
         });
     }
   });
