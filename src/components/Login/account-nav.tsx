@@ -1,6 +1,4 @@
-import Cookies from 'js-cookie';
 import { useAuth } from '../../hooks/use-auth';
-import { TOKEN_COOKIE_NAME } from '../../lib/utils';
 import AccountDropdown from './account-dropdown';
 
 export default function AccountNavigation() {
@@ -11,7 +9,7 @@ export default function AccountNavigation() {
   return (
     <div>
       {isLoading ? (
-        <div className="flex h-10 w-32 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm text-white hover:from-blue-500 hover:to-blue-600">
+        <div className="flex h-8 w-24 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm text-white hover:from-blue-500 hover:to-blue-600">
           <Spinner className="text-white" />
         </div>
       ) : (
@@ -20,10 +18,10 @@ export default function AccountNavigation() {
             <AccountDropdown />
           ) : (
             <a
-              className="flex h-10 w-32 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
+              className="flex h-8 w-24 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
               href="/signup"
             >
-              <span className="mr-2">Register</span>
+              <span>Register</span>
             </a>
           )}
         </>
@@ -32,7 +30,7 @@ export default function AccountNavigation() {
   );
 }
 
-export function Spinner({className}: {className?: string}) {
+export function Spinner({ className }: { className?: string }) {
   return (
     <svg
       className={`h-5 w-5 animate-spin ${className}`}

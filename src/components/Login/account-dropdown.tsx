@@ -18,10 +18,10 @@ export default function AccountDropdown() {
   return (
     <div className="relative">
       <button
-        className="flex h-10 w-32 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
+        className="flex h-8 w-24 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600"
         onClick={() => setIsOpen((p) => !p)}
       >
-        <span className="mr-2">Account</span>
+        <span>Account</span>
       </button>
 
       <div
