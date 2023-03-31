@@ -3,8 +3,17 @@ import ProfileDetails from '../../components/Profile/profile-details';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<BaseLayout title="Profile">
-  <div class="container">
+<BaseLayout title='Profile'>
+  <div class='container'>
     <ProfileDetails client:idle />
   </div>
 </BaseLayout>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+  if (!token) {
+    window.location.href = '/';
+  }
+</script>
