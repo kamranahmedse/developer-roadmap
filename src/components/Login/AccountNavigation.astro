@@ -1,0 +1,40 @@
+---
+import Spinner from '../Spinner.astro';
+import AccountDropdown from './AccountDropdown.astro';
+---
+
+<div>
+  <div
+    class='flex h-8 w-24 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm text-white hover:from-blue-500 hover:to-blue-600'
+    id='navigation-spinner'
+  >
+    <Spinner className='text-white' />
+  </div>
+
+  <AccountDropdown />
+
+  <a
+    id='register-button'
+    class='hidden flex h-8 w-24 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+    href='/signup'
+  >
+    <span>Register</span>
+  </a>
+</div>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+  const spinner = document.getElementById('navigation-spinner');
+  const registerButton = document.getElementById('register-button');
+  const accountDropdown = document.getElementById('account-dropdown');
+  spinner?.classList.add('hidden');
+
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+  
+  if (token) {
+    accountDropdown?.classList.remove('hidden');
+  } else {
+    registerButton?.classList.remove('hidden');
+  }
+</script>
