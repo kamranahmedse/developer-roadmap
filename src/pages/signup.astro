@@ -1,7 +1,11 @@
 ---
 import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
 import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
-import { Divider, GithubLoginButton, GoogleLoginButton } from '../components/Login/LoginComponent';
+import {
+  Divider,
+  GithubLoginButton,
+  GoogleLoginButton,
+} from '../components/Login/LoginComponent';
 import EmailLoginForm from '../components/Login/email-login-form';
 import BaseLayout from '../layouts/BaseLayout.astro';
 ---
@@ -14,28 +18,71 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <div class='container'>
     <div
-      class='py-12 sm:py-0 sm:min-h-[550px] sm:max-w-[400px] mx-auto flex items-start sm:items-center flex-col justify-start sm:justify-center'
+      class='mx-auto flex flex-col items-start justify-start py-12 sm:min-h-[550px] sm:max-w-[400px] sm:items-center sm:justify-center sm:py-0'
     >
-      <div class='mb-2 sm:mb-5 text-left sm:text-center'>
-        <h1 class='text-3xl sm:text-5xl font-semibold mb-2 sm:mb-4'>Signup</h1>
-        <p class='hidden sm:block text-md text-gray-600'>
-          Register yourself to receive occasional emails about new roadmaps, updates, guides and videos
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Signup</h1>
+        <p class='text-md hidden text-gray-600 sm:block'>
+          Register yourself to receive occasional emails about new roadmaps,
+          updates, guides and videos
         </p>
-        <p class='text-sm block sm:hidden text-gray-600'>
-          Register yourself for occasional updates about roadmaps, guides and videos.
+        <p class='block text-sm text-gray-600 sm:hidden'>
+          Register yourself for occasional updates about roadmaps, guides and
+          videos.
         </p>
       </div>
 
-      <div class="space-y-2 w-full">
+      <div class='w-full space-y-2'>
+        <button login-google>login with google</button>
+
         <GithubLoginButton />
         <GoogleLoginButton />
       </div>
 
       <Divider />
 
-			<EmailLoginForm client:load />
+      <EmailLoginForm client:load />
     </div>
   </div>
 
   <CaptchaScripts slot='after-footer' />
 </BaseLayout>
+
+<script>
+  document
+    .querySelector('button[login-google]')
+    ?.addEventListener('click', () => {
+      fetch('http://localhost:8080/v1-google-login', {
+        credentials: 'include',
+      })
+        .then((res) => res.json())
+        .then((data) => {
+          window.location.href = data.loginUrl;
+        });
+    });
+
+  window.addEventListener('load', () => {
+    // Get all query params and send them to v1-google-callback
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    const state = urlParams.get('state');
+    const prompt = urlParams.get('prompt');
+
+    if (code && state && prompt) {
+      fetch(
+        `http://localhost:8080/v1-google-callback${window.location.search}`,
+        {
+          method: 'get',
+          credentials: 'include',
+        }
+      )
+        .then((res) => res.json())
+        .then((data) => {
+          console.log(data);
+        })
+        .catch((err) => {
+          console.log(err);
+        });
+    }
+  });
+</script>
