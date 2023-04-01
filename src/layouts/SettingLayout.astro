@@ -1,0 +1,133 @@
+---
+import '../styles/global.css';
+import Navigation from '../components/Navigation.astro';
+import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
+import YouTubeBanner from '../components/YouTubeBanner.astro';
+import { siteConfig } from '../lib/config';
+import SettingSidebar from '../components/Setting/SettingSidebar.astro';
+
+export interface Props {
+  title: string;
+  redirectUrl?: string;
+  description?: string;
+  keywords?: string[];
+  noIndex?: boolean;
+  canonicalUrl?: string;
+  permalink?: string;
+  sponsor?: SponsorType;
+  jsonLd?: Record<string, unknown>[];
+}
+
+const {
+  title = siteConfig.title,
+  description = siteConfig.description,
+  keywords = siteConfig.keywords,
+  noIndex = false,
+  permalink = '',
+  canonicalUrl: givenCanonical = '',
+  sponsor,
+  jsonLd = [],
+  redirectUrl = '',
+} = Astro.props;
+
+// Remove trailing slashes to consider the page as canonical
+const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
+
+const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
+
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
+---
+
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='generator' content={Astro.generator} />
+    <meta name='commit' content={commitUrl} />
+    <title>{title}</title>
+    <meta name='description' content={description} />
+    <meta name='author' content='Kamran Ahmed' />
+    <meta name='keywords' content={keywords.join(', ')} />
+    {
+      redirectUrl && (
+        <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />
+      )
+    }
+    {noIndex && <meta name='robots' content='noindex' />}
+    <meta
+      name='viewport'
+      content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
+    />
+    <meta http-equiv='Content-Language' content='en' />
+
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:creator' content='@kamranahmedse' />
+
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <meta property='og:image' content='https://roadmap.sh/images/og-img.png' />
+    <meta property='og:image:alt' content='roadmap.sh' />
+    <meta property='og:site_name' content='roadmap.sh' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={currentPageAbsoluteUrl} />
+
+    <link rel='canonical' href={canonicalUrl} />
+
+    <meta name='mobile-web-app-capable' content='yes' />
+    <meta name='apple-mobile-web-app-capable' content='yes' />
+    <meta
+      name='apple-mobile-web-app-status-bar-style'
+      content='black-translucent'
+    />
+    <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
+    <meta name='application-name' content='roadmap.sh' />
+
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/manifest/apple-touch-icon.png'
+    />
+    <meta name='msapplication-TileColor' content='#101010' />
+    <meta name='theme-color' content='#848a9a' />
+
+    <link rel='manifest' href='/manifest/manifest.json' />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/manifest/icon32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/manifest/icon16.png'
+    />
+    <link
+      rel='shortcut icon'
+      href='/manifest/favicon.ico'
+      type='image/x-icon'
+    />
+
+    <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
+
+    <slot name='after-header' />
+    {
+      jsonLd.length > 0 && (
+        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
+      )
+    }
+  </head>
+  <body>
+    <slot name='page-header'>
+      <YouTubeBanner />
+      <Navigation />
+    </slot>
+
+    <slot />
+  </body>
+</html>

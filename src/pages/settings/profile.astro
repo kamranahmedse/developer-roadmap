@@ -1,10 +1,11 @@
 ---
+import SettingSidebar from '../../components/Setting/SettingSidebar.astro';
 import UpdateProfile from '../../components/Setting/UpdateProfile.astro';
-import BaseLayout from '../../layouts/BaseLayout.astro';
+import SettingLayout from '../../layouts/SettingLayout.astro';
 ---
 
-<BaseLayout title='Update Profile'>
-  <div class='container py-10'>
+<SettingLayout title='Update Profile'>
+  <SettingSidebar pageUrl='profile' name='Profile'>
     <UpdateProfile />
-  </div>
-</BaseLayout>
+  </SettingSidebar>
+</SettingLayout>
