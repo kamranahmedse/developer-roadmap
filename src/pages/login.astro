@@ -1,0 +1,54 @@
+---
+import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
+import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
+import Divider from '../components/Login/Divider.astro';
+import GithubLogin from '../components/Login/GithubLogin.astro';
+import GoogleLogin from '../components/Login/GoogleLogin.astro';
+import EmailLoginForm from '../components/Login/EmailLoginForm';
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title='Signup - roadmap.sh'
+  description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
+  permalink={'/signup'}
+  noIndex={true}
+>
+  <div class='container'>
+    <div
+      class='mx-auto flex flex-col items-start justify-start py-12 sm:min-h-[550px] sm:max-w-[400px] sm:items-center sm:justify-center sm:py-0'
+    >
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Signup</h1>
+        <p class='text-md hidden text-gray-600 sm:block'>
+          Register yourself to receive occasional emails about new roadmaps,
+          updates, guides and videos
+        </p>
+        <p class='block text-sm text-gray-600 sm:hidden'>
+          Register yourself for occasional updates about roadmaps, guides and
+          videos.
+        </p>
+      </div>
+
+      <div class='flex w-full flex-col items-stretch space-y-2'>
+        <GithubLogin />
+        <GoogleLogin />
+      </div>
+
+      <Divider />
+
+      <EmailLoginForm client:load />
+    </div>
+  </div>
+
+  <CaptchaScripts slot='after-footer' />
+</BaseLayout>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../lib/utils';
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+  if (token) {
+    window.location.href = '/';
+  }
+</script>

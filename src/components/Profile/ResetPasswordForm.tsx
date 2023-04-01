@@ -60,7 +60,7 @@ export default function ResetPasswordForm() {
 
     // TODO: Redirect to login page after 2 seconds
     setTimeout(() => {
-      window.location.href = '/';
+      window.location.href = '/login';
     }, 2000);
   };
 
