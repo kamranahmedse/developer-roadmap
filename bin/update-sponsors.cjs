@@ -91,7 +91,7 @@ function populatePageAds({
   const newFrontmatter = yaml.dump(frontmatterObj, {
     lineWidth: 10000,
     forceQuotes: true,
-    quotingType: '"',
+    quotingType: "'",
   });
   const newContent = `---\n${newFrontmatter}---\n\n${contentWithoutFrontmatter}`;
 

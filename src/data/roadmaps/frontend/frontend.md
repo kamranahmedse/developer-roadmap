@@ -11,15 +11,6 @@ tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral
 dimensions:
   width: 968
   height: 2822.1
-sponsor:
-  url: 'https://bit.ly/3YYcqdt'
-  title: 'Free eBook'
-  imageUrl: 'https://i.imgur.com/RCbFXOY.png'
-  description: 'Learn how to find a GraphQL architecture that scales with this free eBook from Apollo'
-  event:
-    category: 'SponsorClick'
-    action: 'Apollo Redirect'
-    label: 'Frontend / Apollo Link'
 schema:
   headline: 'Frontend Developer Roadmap'
   description: 'Learn how to become a Frontend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -70,3 +61,4 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
+

@@ -16,15 +16,6 @@ schema:
   imageUrl: 'https://roadmap.sh/roadmaps/react.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
-sponsor:
-  url: 'https://bit.ly/3YYcqdt'
-  title: 'Free eBook'
-  imageUrl: 'https://i.imgur.com/RCbFXOY.png'
-  description: 'Learn how to find a GraphQL architecture that scales with this free eBook from Apollo'
-  event:
-    category: 'SponsorClick'
-    action: 'Apollo Redirect'
-    label: 'React / Apollo Link'
 seo:
   title: 'React Developer Roadmap: Learn to become a React developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for react development. Learn to become a modern React developer by following the steps, skills, resources and guides listed in this roadmap.'
@@ -57,3 +48,4 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+

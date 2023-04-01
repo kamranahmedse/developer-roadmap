@@ -16,15 +16,6 @@ schema:
   imageUrl: 'https://roadmap.sh/roadmaps/python.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
-sponsor:
-  url: 'https://developer.fermyon.com/spin/python-components?utm_source=python&utm_medium=banner&utm_campaign=roadmap-sh'
-  title: 'Serverless Python Apps'
-  imageUrl: 'https://i.imgur.com/2ONZopb.jpg'
-  description: 'Go from blinking cursor to deployed serverless Python apps in 66 seconds with Fermyon Cloud.'
-  event:
-    category: 'SponsorClick'
-    action: 'Fermyon Redirect'
-    label: 'Python / Fermyon Link'
 seo:
   title: 'Learn to become a modern Python developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.'
@@ -55,3 +46,4 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+
