@@ -13,6 +13,14 @@ export default function ResetPasswordForm() {
     e.preventDefault();
     setIsLoading(true);
 
+    if (password !== passwordConfirm) {
+      setIsLoading(false);
+      return setMessage({
+        type: 'error',
+        message: 'Passwords do not match.',
+      });
+    }
+
     const urlParams = new URLSearchParams(window.location.search);
     const code = urlParams.get('code');
 
@@ -23,7 +31,11 @@ export default function ResetPasswordForm() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ password, passwordConfirm, code }),
+        body: JSON.stringify({
+          newPassword: password,
+          confirmPassword: passwordConfirm,
+          code,
+        }),
       }
     );
 
@@ -31,10 +43,11 @@ export default function ResetPasswordForm() {
 
     if (!res.ok) {
       setIsLoading(false);
-      return setMessage({
+      setMessage({
         type: 'error',
         message: data.message,
       });
+      return;
     }
 
     setIsLoading(false);
@@ -69,6 +82,7 @@ export default function ResetPasswordForm() {
         id="new-password"
         className="mt-2 mb-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         required
+        minLength={6}
         placeholder="Enter a new password"
         value={password}
         onChange={(e) => setPassword((e.target as HTMLInputElement).value)}
@@ -86,6 +100,7 @@ export default function ResetPasswordForm() {
         id="new-password-confirm"
         className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         required
+        minLength={6}
         placeholder="Confirm your new password"
         value={passwordConfirm}
         onChange={(e) =>
@@ -111,7 +126,29 @@ export default function ResetPasswordForm() {
         type="submit"
         className="mt-5 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 px-4 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
       >
-        Reset my password
+        {isLoading ? (
+          <svg
+            className={`h-5 w-5 animate-spin text-white`}
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+          >
+            <circle
+              className="stroke-[4px] opacity-25"
+              cx="12"
+              cy="12"
+              r="10"
+              stroke="currentColor"
+            ></circle>
+            <path
+              className="opacity-75"
+              fill="currentColor"
+              d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+            ></path>
+          </svg>
+        ) : (
+          'Reset my password'
+        )}
       </button>
     </form>
   );
