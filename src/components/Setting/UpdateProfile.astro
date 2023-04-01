@@ -3,7 +3,11 @@
   <p class='mt-2'>Manage settings for your roadmap.sh profile</p>
   <div class='mt-8 space-y-4'>
     <div class='flex w-full flex-col'>
-      <label for='name' class='text-sm leading-none text-slate-500'>Name</label>
+      <label
+        for='name'
+        class='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+        >Name</label
+      >
       <input
         type='text'
         name='name'
@@ -14,7 +18,9 @@
       />
     </div>
     <div class='flex w-full flex-col'>
-      <label for='email' class='text-sm leading-none text-slate-500'
+      <label
+        for='email'
+        class='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
         >Email</label
       >
       <input
@@ -37,7 +43,6 @@
         name='github'
         id='github'
         class='mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1'
-        required
         placeholder='arikchakma'
       />
     </div>
@@ -51,7 +56,6 @@
         name='linkedin'
         id='linkedin'
         class='mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1'
-        required
         placeholder='https://www.linkedin.com/in/arikchakma/'
       />
     </div>
@@ -65,7 +69,6 @@
         name='website'
         id='website'
         class='mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1'
-        required
         placeholder='https://arikko.dev'
       />
     </div>
