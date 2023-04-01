@@ -33,7 +33,7 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
             const json = await res.json();
             if (res.status === 200) {
               setMessage(
-                'We have sent you an email. Please verify your account to login.'
+                'We have sent you an email with the verification link. Please follow the instructions to login.'
               );
               setError(null);
               console.log(json);
