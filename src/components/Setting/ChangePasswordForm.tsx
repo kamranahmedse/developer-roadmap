@@ -58,9 +58,6 @@ export default function ChangePasswordForm() {
       });
   };
 
-  console.log(currentPassword, newPassword, newPasswordConfirmation);
-  console.log(`${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`);
-
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>

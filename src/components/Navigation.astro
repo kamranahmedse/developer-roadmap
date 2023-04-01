@@ -79,6 +79,12 @@ import AccountNavigation from './Login/AccountNavigation.astro';
             >Profile</a
           >
         </li>
+        <li id='settings-mobile-nav' class='hidden'>
+          <a
+            href='/settings/profile'
+            class='text-xl hover:text-blue-300 md:text-lg'>Settings</a
+          >
+        </li>
         <li id='logout-mobile-nav' class='hidden'>
           <button class='text-xl text-red-300 hover:text-red-400 md:text-lg'
             >Logout</button
@@ -104,6 +110,7 @@ import AccountNavigation from './Login/AccountNavigation.astro';
   const profileLink = document.getElementById('profile-mobile-nav');
   const logoutButton = document.getElementById('logout-mobile-nav');
   const registerLink = document.getElementById('register-mobile-nav');
+  const settingsLink = document.getElementById('settings-mobile-nav');
 
   const token = Cookies.get(TOKEN_COOKIE_NAME);
 
@@ -111,9 +118,11 @@ import AccountNavigation from './Login/AccountNavigation.astro';
     profileLink?.classList.remove('hidden');
     logoutButton?.classList.remove('hidden');
     registerLink?.classList.add('hidden');
+    settingsLink?.classList.remove('hidden');
   } else {
     profileLink?.classList.add('hidden');
     logoutButton?.classList.add('hidden');
+    settingsLink?.classList.add('hidden');
     registerLink?.classList.remove('hidden');
   }
 

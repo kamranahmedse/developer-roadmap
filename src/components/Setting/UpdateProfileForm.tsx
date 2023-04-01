@@ -28,9 +28,9 @@ export default function UpdateProfileForm() {
       headers,
       body: JSON.stringify({
         name,
-        github,
-        linkedin,
-        website,
+        github: github === '' ? undefined : github,
+        linkedin: linkedin === '' ? undefined : linkedin,
+        website: website === '' ? undefined : website,
       }),
     })
       .then(async (res) => {
