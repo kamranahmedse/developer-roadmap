@@ -1,0 +1,85 @@
+---
+import Spinner from '../components/Spinner.astro';
+import SettingLayout from '../layouts/SettingLayout.astro';
+---
+
+<SettingLayout title='Verify account'>
+  <div class='container py-16'>
+    <div class='mx-auto flex max-w-md flex-col items-center'>
+      <h2 class='mb-6 text-3xl font-bold sm:text-center sm:text-4xl'>
+        Verifying account
+      </h2>
+      <Spinner data-verification-spinner className='!h-10 !w-10' />
+
+      <p
+        class='hidden text-center text-sm text-red-500'
+        data-verification-error
+      >
+        Invalid verification code, please try again.
+      </p>
+
+      <p
+        class='mx-auto hidden max-w-sm text-center text-sm text-slate-500'
+        data-verification-success
+      >
+        If you are not redirected in a few seconds, please click the button
+        below.
+        <a href='/' class='text-slate-700 hover:text-slate-500'
+          >Redirect to home.</a
+        >
+      </p>
+    </div>
+  </div>
+</SettingLayout>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../lib/utils';
+
+  const spinner = document.querySelector('[data-verification-spinner]');
+  const error = document.querySelector('[data-verification-error]');
+  const success = document.querySelector('[data-verification-success]');
+
+  // Check if the user is logged in already or not
+  if (Cookies.get(TOKEN_COOKIE_NAME)) {
+    window.location.href = '/';
+  }
+
+  window.addEventListener('load', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+
+    if (code) {
+      fetch('http://localhost:8080/v1-verify-account', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          code,
+        }),
+      }).then(async (res) => {
+        // If the response is ok, then we can redirect the user to the home page and set the token
+        if (res.ok) {
+          spinner?.remove();
+          success?.classList.remove('hidden');
+          const json = await res.json();
+
+          if (json.token) {
+            Cookies.set(TOKEN_COOKIE_NAME, json.token);
+          } else {
+            Cookies.remove(TOKEN_COOKIE_NAME);
+          }
+
+          // After 3 seconds, redirect the user to the home page
+          setTimeout(() => {
+            window.location.href = '/';
+          }, 3000);
+        } else {
+          spinner?.remove();
+          error?.classList.remove('hidden');
+        }
+      });
+    }
+  });
+</script>

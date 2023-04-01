@@ -1,5 +1,9 @@
 ---
 const { className = '', ...rest } = Astro.props;
+
+export interface Props {
+  className?: string;
+}
 ---
 
 <svg
