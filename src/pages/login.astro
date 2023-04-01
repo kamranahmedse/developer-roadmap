@@ -16,17 +16,12 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <div class='container'>
     <div
-      class='mx-auto flex flex-col items-start justify-start py-12 sm:min-h-[550px] sm:max-w-[400px] sm:items-center sm:justify-center sm:py-0'
+      class='mx-auto flex flex-col items-start justify-start py-12 sm:max-w-[400px] sm:items-center sm:justify-center'
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
-        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Signup</h1>
-        <p class='text-md hidden text-gray-600 sm:block'>
-          Register yourself to receive occasional emails about new roadmaps,
-          updates, guides and videos
-        </p>
-        <p class='block text-sm text-gray-600 sm:hidden'>
-          Register yourself for occasional updates about roadmaps, guides and
-          videos.
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Login</h1>
+        <p class='text-md block text-gray-600 sm:block'>
+          Welcome back! Login to your account.
         </p>
       </div>
 
@@ -38,6 +33,11 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <Divider />
 
       <EmailLoginForm client:load />
+
+      <div class='mt-6 text-center text-sm text-slate-600'>
+        Don't have an account?{' '}
+        <a href='/signup' class='font-medium text-blue-700 hover:text-blue-600'> Sign up</a>
+      </div>
     </div>
   </div>
 
