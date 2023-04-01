@@ -74,11 +74,22 @@ import AccountNavigation from './Login/AccountNavigation.astro';
             >Videos</a
           >
         </li>
+        <li id='profile-mobile-nav' class='hidden'>
+          <a href='/profile' class='text-xl hover:text-blue-300 md:text-lg'
+            >Profile</a
+          >
+        </li>
+        <li id='logout-mobile-nav' class='hidden'>
+          <button class='text-xl text-red-300 hover:text-red-400 md:text-lg'
+            >Logout</button
+          >
+        </li>
         <li>
           <a
             href='/signup'
+            id='register-mobile-nav'
             class='text-xl text-red-300 hover:text-red-400 md:text-lg'
-            >Subscribe</a
+            >Register</a
           >
         </li>
       </ul>
@@ -87,6 +98,31 @@ import AccountNavigation from './Login/AccountNavigation.astro';
 </div>
 
 <script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../lib/utils';
+
+  const profileLink = document.getElementById('profile-mobile-nav');
+  const logoutButton = document.getElementById('logout-mobile-nav');
+  const registerLink = document.getElementById('register-mobile-nav');
+
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+
+  if (token) {
+    profileLink?.classList.remove('hidden');
+    logoutButton?.classList.remove('hidden');
+    registerLink?.classList.add('hidden');
+  } else {
+    profileLink?.classList.add('hidden');
+    logoutButton?.classList.add('hidden');
+    registerLink?.classList.remove('hidden');
+  }
+
+  // Remove the token cookie and redirect to the homepage
+  logoutButton?.addEventListener('click', () => {
+    Cookies.remove(TOKEN_COOKIE_NAME);
+    window.location.href = '/';
+  });
+
   document.querySelector('[show-mobile-nav]')?.addEventListener('click', () => {
     document.querySelector('[mobile-nav]')?.classList.remove('hidden');
   });
