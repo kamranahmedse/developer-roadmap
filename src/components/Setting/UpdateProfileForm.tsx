@@ -49,10 +49,12 @@ export default function UpdateProfileForm() {
         setIsLoading(false);
         setName(data.name);
         setEmail(data.email);
-        const { github, linkedin, website } = data.links;
-        setGithub(github);
-        setLinkedin(linkedin);
-        setWebsite(website);
+        if (data.links) {
+          const { github, linkedin, website } = data.links;
+          setGithub(github || '');
+          setLinkedin(linkedin || '');
+          setWebsite(website || '');
+        }
         setMessage({
           type: 'success',
           message: 'Profile updated successfully',
@@ -95,9 +97,9 @@ export default function UpdateProfileForm() {
 
           if (json.links) {
             const { github, linkedin, website } = json.links;
-            setGithub(github);
-            setLinkedin(linkedin);
-            setWebsite(website);
+            setGithub(github || '');
+            setLinkedin(linkedin || '');
+            setWebsite(website || '');
           }
         } else {
           throw new Error(json.message);
