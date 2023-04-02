@@ -1,17 +1,15 @@
 ---
-const { className = '', ...rest } = Astro.props;
+const { ...props } = Astro.props;
 
-export interface Props {
-  className?: string;
-}
+export type Props = astroHTML.JSX.HTMLAttributes & {};
 ---
 
 <svg
-  class={`animate-spin h-5 w-5 ${className}`}
   xmlns='http://www.w3.org/2000/svg'
   fill='none'
   viewBox='0 0 24 24'
-  {...rest}
+  class:list={[`animate-spin h-5 w-5`, props.class]}
+  {...props}
 >
   <circle
     class='stroke-[4px] opacity-25'
