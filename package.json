@@ -22,13 +22,13 @@
   "dependencies": {
     "@astrojs/sitemap": "^1.2.1",
     "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.1.7",
+    "astro": "^2.1.9",
     "astro-compress": "^1.1.35",
     "node-html-parser": "^6.1.5",
-    "npm-check-updates": "^16.8.0",
+    "npm-check-updates": "^16.9.0",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.4",
-    "tailwindcss": "^3.2.7"
+    "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.32.1",
