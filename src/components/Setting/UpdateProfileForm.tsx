@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
-import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Cookies from 'js-cookie';
 
 export default function UpdateProfileForm() {

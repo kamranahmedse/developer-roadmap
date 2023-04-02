@@ -1,7 +1,7 @@
 import Cookies from 'js-cookie';
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
-import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');

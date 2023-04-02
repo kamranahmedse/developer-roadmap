@@ -15,7 +15,7 @@ import AccountDropdown from './AccountDropdown.astro';
 
   <a
     id='register-button'
-    class='hidden flex h-8 w-24 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+    class='flex hidden h-8 w-24 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
     href='/signup'
   >
     <span>Register</span>
@@ -24,14 +24,14 @@ import AccountDropdown from './AccountDropdown.astro';
 
 <script>
   import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+  import { TOKEN_COOKIE_NAME } from '../../lib/constants';
   const spinner = document.getElementById('navigation-spinner');
   const registerButton = document.getElementById('register-button');
   const accountDropdown = document.getElementById('account-dropdown');
   spinner?.classList.add('hidden');
 
   const token = Cookies.get(TOKEN_COOKIE_NAME);
-  
+
   if (token) {
     accountDropdown?.classList.remove('hidden');
   } else {
