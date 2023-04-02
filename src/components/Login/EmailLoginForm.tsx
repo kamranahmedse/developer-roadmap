@@ -6,16 +6,31 @@ import { TOKEN_COOKIE_NAME } from '../../lib/utils';
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
-  const [showVerifiedError, setShowVerifiedError] = useState<boolean>(false);
-  const [message, setMessage] = useState<string>('');
 
-  const [error, setError] = useState<{
+  const [message, setMessage] = useState<{
+    type: 'success' | 'error' | 'verification' | 'warning';
     message: string;
-    status: number;
   } | null>(null);
 
   const handleFormSubmit = async (e: Event) => {
     e.preventDefault();
+    // Check if the verification-email-sent-at is less than 5 seconds ago
+    const verificationEmailSentAt = localStorage.getItem(
+      'verification-email-sent-at'
+    );
+
+    console.log(verificationEmailSentAt);
+
+    if (verificationEmailSentAt) {
+      const now = new Date();
+      if (Number(verificationEmailSentAt) > now.getTime()) {
+        return setMessage({
+          type: 'warning',
+          message: 'Please wait before sending another verification email.',
+        });
+      }
+    }
+
     const res = await fetch('http://localhost:8080/v1-login', {
       method: 'POST',
       headers: {
@@ -30,12 +45,11 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
     // If the response isn't ok, we'll throw an error
     if (json.type === 'user_not_verified') {
-      setError(null);
-      setMessage('');
-      setShowVerifiedError(true);
-      return;
-    } else {
-      setShowVerifiedError(false);
+      return setMessage({
+        type: 'verification',
+        message:
+          'Your account is not verified. Please click the verification link in your email. Or resend verification email.',
+      });
     }
 
     if (json.token) {
@@ -43,9 +57,9 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       Cookies.set(TOKEN_COOKIE_NAME, json.token);
       window.location.href = '/';
     } else {
-      setError({
+      setMessage({
+        type: 'error',
         message: json.message,
-        status: res.status,
       });
     }
   };
@@ -59,13 +73,10 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     if (verificationEmailSentAt) {
       const now = new Date();
       if (Number(verificationEmailSentAt) > now.getTime()) {
-        setMessage('');
-        setShowVerifiedError(false);
-        setError({
+        return setMessage({
+          type: 'warning',
           message: 'Please wait before sending another verification email.',
-          status: 429,
         });
-        return;
       }
     }
 
@@ -85,15 +96,16 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
     // If the response isn't ok, we'll throw an error
     if (!res.ok) {
-      setError({
+      return setMessage({
+        type: 'error',
         message: json.message,
-        status: res.status,
       });
     }
-
     // If the response is ok, we'll set the token in a cookie
-    setShowVerifiedError(false);
-    setMessage('Verification instructions have been sent to your email.');
+    setMessage({
+      type: 'success',
+      message: 'Verification instructions have been sent to your email.',
+    });
 
     // Current time + 5 seconds, save it to localStorage
     const now = new Date();
@@ -137,24 +149,32 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         onChange={(e) => setPassword(String((e.target as any).value))}
       />
 
-      {error && (
-        <div className="mt-2 text-sm text-red-500">{error.message}</div>
-      )}
-
-      {message && <div className="mt-2 text-sm text-slate-600">{message}</div>}
-
-      {showVerifiedError && (
-        <div className="mt-2 text-sm text-slate-600">
-          Your account is not verified. Please click the verification link in
-          your email. Or{' '}
-          <button
-            type="button"
-            className="text-blue-600 hover:text-blue-500"
-            onClick={handleResendVerificationEmail}
-          >
-            resend verification email.
-          </button>
-        </div>
+      {message && (
+        <>
+          {message.type === 'verification' ? (
+            <div className="mt-2 text-sm text-slate-600">
+              Your account is not verified. Please click the verification link
+              in your email. Or{' '}
+              <button
+                type="button"
+                className="text-blue-600 hover:text-blue-500"
+                onClick={handleResendVerificationEmail}
+              >
+                resend verification email.
+              </button>
+            </div>
+          ) : (
+            <div
+              className={`mt-2 rounded-lg p-2 ${
+                message.type === 'success' && 'bg-green-100 text-green-800'
+              } ${message.type === 'error' && 'bg-red-100 text-red-800'} ${
+                message.type === 'warning' && 'bg-yellow-100 text-yellow-800'
+              }`}
+            >
+              {message.message}
+            </div>
+          )}
+        </>
       )}
 
       <button
