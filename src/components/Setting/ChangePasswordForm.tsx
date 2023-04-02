@@ -9,8 +9,10 @@ export default function ChangePasswordForm() {
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [newPasswordConfirmation, setNewPasswordConfirmation] = useState('');
-  const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
+  const [message, setMessage] = useState<{
+    type: 'error' | 'success' | 'info';
+    message: string;
+  }>();
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (e: Event) => {
@@ -18,7 +20,10 @@ export default function ChangePasswordForm() {
     setIsLoading(true);
 
     if (newPassword !== newPasswordConfirmation) {
-      setError('New password and confirmation do not match');
+      setMessage({
+        type: 'error',
+        message: 'Passwords do not match',
+      });
       setIsLoading(false);
       return;
     }
@@ -54,11 +59,17 @@ export default function ChangePasswordForm() {
         setNewPassword('');
         setNewPasswordConfirmation('');
         fetchProfile();
-        setSuccessMessage('Password updated successfully');
+        setMessage({
+          type: 'success',
+          message: 'Password updated successfully',
+        });
       })
       .catch((err) => {
         setIsLoading(false);
-        setError(err.message);
+        setMessage({
+          type: 'error',
+          message: err.message,
+        });
       });
   };
 
@@ -88,7 +99,10 @@ export default function ChangePasswordForm() {
         throw new Error(json.message);
       }
     } catch (error: any) {
-      setError(error?.message || 'Something went wrong');
+      setMessage({
+        type: 'error',
+        message: error?.message || 'Something went wrong',
+      });
     }
     setIsLoading(false);
   }, []);
@@ -169,15 +183,17 @@ export default function ChangePasswordForm() {
           />
         </div>
 
-        {error && (
-          <div className="text-sm font-medium text-red-500">
-            <p>{error}</p>
-          </div>
-        )}
-
-        {successMessage && (
-          <div className="text-sm font-medium text-green-500">
-            <p>{successMessage}</p>
+        {message && (
+          <div
+            className={`mt-2 rounded-lg p-2 ${
+              message.type === 'error'
+                ? 'bg-red-100 text-red-700'
+                : message.type === 'success'
+                ? 'bg-green-100 text-green-700'
+                : 'bg-blue-100 text-blue-700'
+            }`}
+          >
+            {message.message}
           </div>
         )}
 
