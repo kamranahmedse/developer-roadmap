@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useCallback, useEffect, useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Cookies from 'js-cookie';
 
@@ -55,6 +55,9 @@ export default function UpdateProfileForm() {
           setLinkedin(linkedin || '');
           setWebsite(website || '');
         }
+
+        // Check if the user has changed their email
+        fetchProfile();
         setMessage({
           type: 'success',
           message: 'Profile updated successfully',
@@ -69,50 +72,58 @@ export default function UpdateProfileForm() {
       });
   };
 
+  const fetchProfile = useCallback(async () => {
+    // Set the loading state
+    setIsLoading(true);
+
+    // Create headers with the cookie
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append(
+      'Cookie',
+      `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
+    );
+
+    try {
+      const res = await fetch('http://localhost:8080/v1-me', {
+        method: 'POST',
+        credentials: 'include',
+        headers,
+      });
+
+      const json = await res.json();
+
+      if (json.status === 401) {
+        // If the user is not authenticated, redirect to the login page
+        // Clear the cookie
+        Cookies.remove(TOKEN_COOKIE_NAME);
+        window.location.href = '/login';
+      }
+
+      if (res.ok) {
+        setName(json.name);
+        setEmail(json.email);
+
+        if (json.links) {
+          const { github, linkedin, website } = json.links;
+          setGithub(github || '');
+          setLinkedin(linkedin || '');
+          setWebsite(website || '');
+        }
+      } else {
+        throw new Error(json.message);
+      }
+    } catch (error: any) {
+      setMessage({
+        type: 'error',
+        message: error?.message || 'Something went wrong',
+      });
+    }
+    setIsLoading(false);
+  }, []);
+
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
-    async function fetchProfile() {
-      // Set the loading state
-      setIsLoading(true);
-
-      // Create headers with the cookie
-      const headers = new Headers();
-      headers.append('Content-Type', 'application/json');
-      headers.append(
-        'Cookie',
-        `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
-      );
-
-      try {
-        const res = await fetch('http://localhost:8080/v1-me', {
-          method: 'POST',
-          credentials: 'include',
-          headers,
-        });
-
-        const json = await res.json();
-        if (res.ok) {
-          setName(json.name);
-          setEmail(json.email);
-
-          if (json.links) {
-            const { github, linkedin, website } = json.links;
-            setGithub(github || '');
-            setLinkedin(linkedin || '');
-            setWebsite(website || '');
-          }
-        } else {
-          throw new Error(json.message);
-        }
-      } catch (error: any) {
-        setMessage({
-          type: 'error',
-          message: error?.message || 'Something went wrong',
-        });
-      }
-      setIsLoading(false);
-    }
-
     fetchProfile();
   }, []);
 

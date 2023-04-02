@@ -93,6 +93,14 @@ export default function ChangePasswordForm() {
       });
 
       const json = await res.json();
+
+      if (json.status === 401) {
+        // If the user is not authenticated, redirect to the login page
+        // Clear the cookie
+        Cookies.remove(TOKEN_COOKIE_NAME);
+        window.location.href = '/login';
+      }
+
       if (res.ok) {
         setAuthProvider(json.authProvider);
       } else {
