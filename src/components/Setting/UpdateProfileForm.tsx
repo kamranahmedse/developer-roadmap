@@ -8,9 +8,12 @@ export default function UpdateProfileForm() {
   const [github, setGithub] = useState('');
   const [linkedin, setLinkedin] = useState('');
   const [website, setWebsite] = useState('');
-  const [error, setError] = useState('');
-  const [successMessage, setSuccessMessage] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+
+  const [message, setMessage] = useState<{
+    type: 'error' | 'success' | 'info';
+    message: string;
+  }>();
 
   const handleSubmit = (e: Event) => {
     e.preventDefault();
@@ -50,11 +53,17 @@ export default function UpdateProfileForm() {
         setGithub(github);
         setLinkedin(linkedin);
         setWebsite(website);
-        setSuccessMessage('Profile updated successfully');
+        setMessage({
+          type: 'success',
+          message: 'Profile updated successfully',
+        });
       })
       .catch((err) => {
         setIsLoading(false);
-        setError(err.message);
+        setMessage({
+          type: 'error',
+          message: err.message || 'Something went wrong',
+        });
       });
   };
 
@@ -94,7 +103,10 @@ export default function UpdateProfileForm() {
           throw new Error(json.message);
         }
       } catch (error: any) {
-        setError(error?.message || 'Something went wrong');
+        setMessage({
+          type: 'error',
+          message: error?.message || 'Something went wrong',
+        });
       }
       setIsLoading(false);
     }
@@ -188,14 +200,17 @@ export default function UpdateProfileForm() {
           />
         </div>
 
-        {error && (
-          <div className="text-sm font-medium text-red-500">
-            <span className="text-red-500">{error}</span>
-          </div>
-        )}
-        {successMessage && (
-          <div className="text-sm font-medium text-green-500">
-            <span className="text-green-500">{successMessage}</span>
+        {message && (
+          <div
+            className={`mt-2 rounded-lg p-2 ${
+              message.type === 'error'
+                ? 'bg-red-100 text-red-700'
+                : message.type === 'success'
+                ? 'bg-green-100 text-green-700'
+                : 'bg-blue-100 text-blue-700'
+            }`}
+          >
+            {message.message}
           </div>
         )}
 
