@@ -7,10 +7,11 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [name, setName] = useState<string>('');
-  const [message, setMessage] = useState<string | null>(null);
-  const [error, setError] = useState<{
+
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [message, setMessage] = useState<{
+    type: 'success' | 'error' | 'verification' | 'warning';
     message: string;
-    status: number;
   } | null>(null);
 
   return (
@@ -18,6 +19,7 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
       className="w-full"
       onSubmit={(e) => {
         e.preventDefault();
+        setIsLoading(true);
         fetch('http://localhost:8080/v1-register', {
           method: 'POST',
           headers: {
@@ -32,23 +34,26 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
           .then(async (res) => {
             const json = await res.json();
             if (res.status === 200) {
-              setMessage(
-                'We have sent you an email with the verification link. Please follow the instructions to login.'
-              );
-              setError(null);
-              console.log(json);
+              setName('');
+              setEmail('');
+              setPassword('');
+              setMessage({
+                type: 'success',
+                message:
+                  'We have sent you an email with the verification link. Please follow the instructions to login.',
+              });
             } else {
-              setMessage(null);
               const error = new Error(json.message) as any;
               error.status = res.status;
               throw error;
             }
+            setIsLoading(false);
           })
           .catch((err) => {
-            setMessage(null);
-            setError({
+            setIsLoading(false);
+            setMessage({
+              type: 'error',
               message: err.message,
-              status: 400,
             });
           });
       }}
@@ -96,13 +101,28 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
         onInput={(e) => setPassword(String((e.target as any).value))}
       />
 
-      {error && (
-        <div className="mt-2 text-sm text-red-500">{error.message}</div>
+      {message && (
+        <div
+          className={`mt-2 rounded-lg p-2 ${
+            message.type === 'error'
+              ? 'bg-red-100 text-red-700'
+              : message.type === 'success'
+              ? 'bg-green-100 text-green-700'
+              : 'bg-blue-100 text-blue-700'
+          }`}
+        >
+          {message.message}
+        </div>
       )}
-      {message && <div className="mt-2 text-sm text-green-500">{message}</div>}
 
       <button
         type="submit"
+        disabled={
+          email.length === 0 ||
+          password.length === 0 ||
+          name.length === 0 ||
+          isLoading
+        }
         className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:opacity-60"
       >
         Continue

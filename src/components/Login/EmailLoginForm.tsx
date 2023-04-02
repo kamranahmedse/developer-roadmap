@@ -7,6 +7,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
 
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [message, setMessage] = useState<{
     type: 'success' | 'error' | 'verification' | 'warning';
     message: string;
@@ -14,18 +15,21 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
   const handleFormSubmit = async (e: Event) => {
     e.preventDefault();
+    setIsLoading(true);
+    setMessage(null);
     // Check if the verification-email-sent-at is less than 5 seconds ago
     const verificationEmailSentAt = localStorage.getItem(
       'verification-email-sent-at'
     );
 
-    console.log(verificationEmailSentAt);
-
     if (verificationEmailSentAt) {
       const now = new Date();
       if (Number(verificationEmailSentAt) > now.getTime()) {
+        setIsLoading(false);
+        setEmail('');
+        setPassword('');
         return setMessage({
-          type: 'warning',
+          type: 'error',
           message: 'Please wait before sending another verification email.',
         });
       }
@@ -45,6 +49,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
     // If the response isn't ok, we'll throw an error
     if (json.type === 'user_not_verified') {
+      setIsLoading(false);
       return setMessage({
         type: 'verification',
         message:
@@ -62,9 +67,12 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         message: json.message,
       });
     }
+
+    setIsLoading(false);
   };
 
   const handleResendVerificationEmail = async () => {
+    setIsLoading(true);
     // Check if the verification-email-sent-at is less than 5 seconds ago
     const verificationEmailSentAt = localStorage.getItem(
       'verification-email-sent-at'
@@ -73,8 +81,9 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     if (verificationEmailSentAt) {
       const now = new Date();
       if (Number(verificationEmailSentAt) > now.getTime()) {
+        setIsLoading(false);
         return setMessage({
-          type: 'warning',
+          type: 'error',
           message: 'Please wait before sending another verification email.',
         });
       }
@@ -102,6 +111,8 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       });
     }
     // If the response is ok, we'll set the token in a cookie
+    setEmail('');
+    setPassword('');
     setMessage({
       type: 'success',
       message: 'Verification instructions have been sent to your email.',
@@ -116,6 +127,8 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       'verification-email-sent-at',
       now.getTime().toString()
     );
+
+    setIsLoading(false);
   };
 
   return (
@@ -152,12 +165,12 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       {message && (
         <>
           {message.type === 'verification' ? (
-            <div className="mt-2 text-sm text-slate-600">
+            <div className="mt-2 rounded-lg bg-yellow-100 p-2 text-sm text-yellow-800">
               Your account is not verified. Please click the verification link
               in your email. Or{' '}
               <button
                 type="button"
-                className="text-blue-600 hover:text-blue-500"
+                className="font-semibold text-yellow-900 hover:text-yellow-800"
                 onClick={handleResendVerificationEmail}
               >
                 resend verification email.
@@ -178,6 +191,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       )}
 
       <button
+        disabled={isLoading || !email || !password}
         type="submit"
         className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:opacity-60"
       >

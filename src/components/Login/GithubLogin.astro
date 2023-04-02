@@ -27,11 +27,17 @@ import Spinner from '../Spinner.astro';
   function addSpinner() {
     githubLoginText?.classList.add('hidden');
     githubLoginSpinner?.classList.remove('hidden');
+
+    // Disable button
+    githubLoginButton?.setAttribute('disabled', 'true');
   }
 
   function hideSpinner() {
     githubLoginText?.classList.remove('hidden');
     githubLoginSpinner?.classList.add('hidden');
+
+    // Enable button
+    githubLoginButton?.removeAttribute('disabled');
   }
 
   function showError(err: Error) {

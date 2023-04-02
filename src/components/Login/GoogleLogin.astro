@@ -29,11 +29,15 @@ import Spinner from '../Spinner.astro';
   function addSpinner() {
     googleLoginText?.classList.add('hidden');
     googleLoginSpinner?.classList.remove('hidden');
+    // Disable button
+    googleLoginButton?.setAttribute('disabled', 'true');
   }
 
   function hideSpinner() {
     googleLoginText?.classList.remove('hidden');
     googleLoginSpinner?.classList.add('hidden');
+    // Enable button
+    googleLoginButton?.setAttribute('disabled', 'true');
   }
 
   function showError(err: Error) {
