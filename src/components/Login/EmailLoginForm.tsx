@@ -130,7 +130,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         autoComplete="email"
         required
         className="block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm  outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        placeholder="Enter you email"
+        placeholder="john@example.com"
         value={email}
         onChange={(e) => setEmail(String((e.target as any).value))}
       />

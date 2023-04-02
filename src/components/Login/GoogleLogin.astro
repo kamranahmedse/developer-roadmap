@@ -7,7 +7,7 @@ import Spinner from '../Spinner.astro';
   class='inline-flex h-10 w-full items-center justify-center rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:opacity-60'
   id='google-login-button'
 >
-  <Spinner class='text-black hidden' data-google-login-spinner />
+  <Spinner class='hidden text-black' data-google-login-spinner />
   <div class='flex items-center' data-google-text>
     <Icon icon='google' />
     <span class='ml-2'>Continue with Google</span>
@@ -20,7 +20,7 @@ import Spinner from '../Spinner.astro';
   import Cookies from 'js-cookie';
   import { TOKEN_COOKIE_NAME } from '../../lib/utils';
   const googleLoginButton = document.getElementById('google-login-button');
-  const googleLoginSpinner = document.getElementById(
+  const googleLoginSpinner = document.querySelector(
     '[data-google-login-spinner]'
   );
   const googleLoginText = document.querySelector('[data-google-text]');
