@@ -1,9 +1,10 @@
-import { useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/utils';
 import Cookies from 'js-cookie';
 
 export default function UpdateProfileForm() {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [github, setGithub] = useState('');
   const [linkedin, setLinkedin] = useState('');
   const [website, setWebsite] = useState('');
@@ -43,11 +44,12 @@ export default function UpdateProfileForm() {
       })
       .then((data) => {
         setIsLoading(false);
-        setName('');
-        setGithub('');
-        setLinkedin('');
-        setWebsite('');
-        setError('');
+        setName(data.name);
+        setEmail(data.email);
+        const { github, linkedin, website } = data.links;
+        setGithub(github);
+        setLinkedin(linkedin);
+        setWebsite(website);
         setSuccessMessage('Profile updated successfully');
       })
       .catch((err) => {
@@ -55,6 +57,50 @@ export default function UpdateProfileForm() {
         setError(err.message);
       });
   };
+
+  // Make a request to the backend to fill in the form with the current values
+  useEffect(() => {
+    async function fetchProfile() {
+      // Set the loading state
+      setIsLoading(true);
+
+      // Create headers with the cookie
+      const headers = new Headers();
+      headers.append('Content-Type', 'application/json');
+      headers.append(
+        'Cookie',
+        `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
+      );
+
+      try {
+        const res = await fetch('http://localhost:8080/v1-me', {
+          method: 'POST',
+          credentials: 'include',
+          headers,
+        });
+
+        const json = await res.json();
+        if (res.ok) {
+          setName(json.name);
+          setEmail(json.email);
+
+          if (json.links) {
+            const { github, linkedin, website } = json.links;
+            setGithub(github);
+            setLinkedin(linkedin);
+            setWebsite(website);
+          }
+        } else {
+          throw new Error(json.message);
+        }
+      } catch (error: any) {
+        setError(error?.message || 'Something went wrong');
+      }
+      setIsLoading(false);
+    }
+
+    fetchProfile();
+  }, []);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -74,7 +120,7 @@ export default function UpdateProfileForm() {
             id="name"
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
-            placeholder="Arik Chakma"
+            placeholder="John Doe"
             value={name}
             onChange={(e) => setName((e.target as HTMLInputElement).value)}
           />
@@ -93,7 +139,8 @@ export default function UpdateProfileForm() {
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
-            placeholder="arik@roadmap.sh"
+            placeholder="john@example.com"
+            value={email}
           />
         </div>
 
@@ -106,7 +153,7 @@ export default function UpdateProfileForm() {
             name="github"
             id="github"
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://github.com/arikchakma"
+            placeholder="https://github.com/username"
             value={github}
             onChange={(e) => setGithub((e.target as HTMLInputElement).value)}
           />
@@ -120,7 +167,7 @@ export default function UpdateProfileForm() {
             name="linkedin"
             id="linkedin"
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://www.linkedin.com/in/arikchakma/"
+            placeholder="https://www.linkedin.com/in/username/"
             value={linkedin}
             onChange={(e) => setLinkedin((e.target as HTMLInputElement).value)}
           />
@@ -135,7 +182,7 @@ export default function UpdateProfileForm() {
             name="website"
             id="website"
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://arikko.dev"
+            placeholder="https://example.com"
             value={website}
             onChange={(e) => setWebsite((e.target as HTMLInputElement).value)}
           />
