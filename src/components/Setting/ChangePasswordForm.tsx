@@ -1,8 +1,11 @@
-import { useState } from 'preact/hooks';
+import { useCallback, useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/utils';
+import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 
 export default function ChangePasswordForm() {
+  const [authProvider, setAuthProvider] = useState<
+    'email' | 'google' | 'github' | null
+  >(null);
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [newPasswordConfirmation, setNewPasswordConfirmation] = useState('');
@@ -32,7 +35,7 @@ export default function ChangePasswordForm() {
       credentials: 'include',
       headers,
       body: JSON.stringify({
-        oldPassword: currentPassword,
+        oldPassword: authProvider === 'email' ? currentPassword : 'social-auth',
         password: newPassword,
         confirmPassword: newPasswordConfirmation,
       }),
@@ -50,6 +53,7 @@ export default function ChangePasswordForm() {
         setCurrentPassword('');
         setNewPassword('');
         setNewPasswordConfirmation('');
+        fetchProfile();
         setSuccessMessage('Password updated successfully');
       })
       .catch((err) => {
@@ -58,32 +62,70 @@ export default function ChangePasswordForm() {
       });
   };
 
+  const fetchProfile = useCallback(async () => {
+    // Set the loading state
+    setIsLoading(true);
+
+    // Create headers with the cookie
+    const headers = new Headers();
+    headers.append('Content-Type', 'application/json');
+    headers.append(
+      'Cookie',
+      `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
+    );
+
+    try {
+      const res = await fetch('http://localhost:8080/v1-me', {
+        method: 'POST',
+        credentials: 'include',
+        headers,
+      });
+
+      const json = await res.json();
+      if (res.ok) {
+        setAuthProvider(json.authProvider);
+      } else {
+        throw new Error(json.message);
+      }
+    } catch (error: any) {
+      setError(error?.message || 'Something went wrong');
+    }
+    setIsLoading(false);
+  }, []);
+
+  // Make a request to the backend to fill in the form with the current values
+  useEffect(() => {
+    fetchProfile();
+  }, []);
+
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
       <p className="mt-2">Manage settings for your account passwords</p>
       <div className="mt-8 space-y-4">
-        <div className="flex w-full flex-col">
-          <label
-            for="current-password"
-            className="text-sm leading-none text-slate-500"
-          >
-            Current Password
-          </label>
-          <input
-            type="password"
-            name="current-password"
-            id="current-password"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            required
-            minLength={6}
-            placeholder="Current password"
-            value={currentPassword}
-            onChange={(e) =>
-              setCurrentPassword((e.target as HTMLInputElement).value)
-            }
-          />
-        </div>
+        {authProvider === 'email' && (
+          <div className="flex w-full flex-col">
+            <label
+              for="current-password"
+              className="text-sm leading-none text-slate-500"
+            >
+              Current Password
+            </label>
+            <input
+              type="password"
+              name="current-password"
+              id="current-password"
+              className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              required
+              minLength={6}
+              placeholder="Current password"
+              value={currentPassword}
+              onChange={(e) =>
+                setCurrentPassword((e.target as HTMLInputElement).value)
+              }
+            />
+          </div>
+        )}
         <div className="flex w-full flex-col">
           <label
             for="new-password"
