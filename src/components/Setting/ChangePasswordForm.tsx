@@ -134,7 +134,7 @@ export default function ChangePasswordForm() {
               minLength={6}
               placeholder="Current password"
               value={currentPassword}
-              onChange={(e) =>
+              onInput={(e) =>
                 setCurrentPassword((e.target as HTMLInputElement).value)
               }
             />
@@ -156,7 +156,7 @@ export default function ChangePasswordForm() {
             minLength={6}
             placeholder="New password"
             value={newPassword}
-            onChange={(e) =>
+            onInput={(e) =>
               setNewPassword((e.target as HTMLInputElement).value)
             }
           />
@@ -177,7 +177,7 @@ export default function ChangePasswordForm() {
             minLength={6}
             placeholder="New password confirm"
             value={newPasswordConfirmation}
-            onChange={(e) =>
+            onInput={(e) =>
               setNewPasswordConfirmation((e.target as HTMLInputElement).value)
             }
           />

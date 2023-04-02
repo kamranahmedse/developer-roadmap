@@ -85,7 +85,7 @@ export default function ResetPasswordForm() {
         minLength={6}
         placeholder="Enter a new password"
         value={password}
-        onChange={(e) => setPassword((e.target as HTMLInputElement).value)}
+        onInput={(e) => setPassword((e.target as HTMLInputElement).value)}
       />
 
       <label
@@ -103,7 +103,7 @@ export default function ResetPasswordForm() {
         minLength={6}
         placeholder="Confirm your new password"
         value={passwordConfirm}
-        onChange={(e) =>
+        onInput={(e) =>
           setPasswordConfirm((e.target as HTMLInputElement).value)
         }
       />

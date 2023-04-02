@@ -134,7 +134,7 @@ export default function UpdateProfileForm() {
             required
             placeholder="John Doe"
             value={name}
-            onChange={(e) => setName((e.target as HTMLInputElement).value)}
+            onInput={(e) => setName((e.target as HTMLInputElement).value)}
           />
         </div>
         <div className="flex w-full flex-col">
@@ -167,7 +167,7 @@ export default function UpdateProfileForm() {
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://github.com/username"
             value={github}
-            onChange={(e) => setGithub((e.target as HTMLInputElement).value)}
+            onInput={(e) => setGithub((e.target as HTMLInputElement).value)}
           />
         </div>
         <div className="flex w-full flex-col">
@@ -181,7 +181,7 @@ export default function UpdateProfileForm() {
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://www.linkedin.com/in/username/"
             value={linkedin}
-            onChange={(e) => setLinkedin((e.target as HTMLInputElement).value)}
+            onInput={(e) => setLinkedin((e.target as HTMLInputElement).value)}
           />
         </div>
 
@@ -196,7 +196,7 @@ export default function UpdateProfileForm() {
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://example.com"
             value={website}
-            onChange={(e) => setWebsite((e.target as HTMLInputElement).value)}
+            onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
           />
         </div>
 

@@ -83,7 +83,7 @@ export default function ForgotPasswordForm() {
         required
         placeholder="john@example.com"
         value={email}
-        onChange={(e) => setEmail((e.target as HTMLInputElement).value)}
+        onInput={(e) => setEmail((e.target as HTMLInputElement).value)}
       />
 
       {message && (
