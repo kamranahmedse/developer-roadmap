@@ -39,7 +39,6 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-
 The intent of this guide is to give you an idea about the DBA landscape and to help guide your learning if you are confused. The roadmap is highly opinionated — neither, knowing everything listed in the roadmap, nor the order of items given in the roadmap is required to be followed in order to be a DBA.
 
 ## Learn basic RDBMS terms and concepts
