@@ -11,6 +11,15 @@ tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral
 dimensions:
   width: 968
   height: 2840.4
+sponsor:
+  url: 'https://liblab.com/blog/why-do-i-need-to-build-an-sdk?utm_source=roadmap_devops&utm_medium=edge_stack&utm_campaign=april23'
+  title: 'Why do I need an SDK?'
+  imageUrl: 'https://i.imgur.com/ZmuZUmS.png'
+  description: 'Enhance API adoption, developer experience, and security by providing SDKs for your APIs.'
+  event:
+    category: 'SponsorClick'
+    action: 'Liblab Redirect'
+    label: 'Backend / Liblab Link'
 schema:
   headline: 'Backend Developer Roadmap'
   description: 'Learn how to become a Backend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
