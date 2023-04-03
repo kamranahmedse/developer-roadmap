@@ -55,9 +55,6 @@ function addPageSponsor({
   imageUrl,
   adTitle,
   adDescription,
-  startDate,
-  endDate,
-  isActive,
 }) {
   const urlPart = pageUrl
     .replace('https://roadmap.sh/', '')
@@ -128,6 +125,9 @@ function addPageSponsor({
 removeAllSponsors('roadmaps');
 removeAllSponsors('best-practices');
 
+console.log('------------------------');
+console.log('Adding sponsors');
+console.log('------------------------');
 fetch(sheetUrl)
   .then((res) => res.json())
   .then((rawData) => {
@@ -149,7 +149,8 @@ fetch(sheetUrl)
 
       const isConfiguredActive = isActive?.toLowerCase() === 'yes';
       const currentDate = new Date();
-      const isDateInRange = currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
+      const isDateInRange =
+        currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
 
       if (!isConfiguredActive || !isDateInRange) {
         return;
