@@ -1,10 +1,17 @@
+---
+import Icon from '../Icon.astro';
+---
+
 <div class='relative block hidden' id='account-dropdown'>
   <button
-    class='flex h-8 w-24 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+    class='flex h-8 w-28 items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
     type='button'
     data-account-button
   >
-    <span>Account</span>
+    <span class='flex items-center gap-1'>
+      Account
+      <Icon icon='chevron-down' class='h-4 w-4 stroke-[3px]' />
+    </span>
   </button>
 
   <div
