@@ -4,7 +4,7 @@ import Spinner from '../Spinner.astro';
 ---
 
 <button
-  class='inline-flex h-10 w-full items-center justify-center rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:opacity-60'
+  class='inline-flex h-10 w-full items-center justify-center rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:opacity-60 disabled:cursor-not-allowed'
   id='google-login-button'
 >
   <Spinner class='hidden text-black' data-google-login-spinner />
@@ -62,8 +62,6 @@ import Spinner from '../Spinner.astro';
         }
       })
       .then((data) => {
-        // Remove spinner
-        hideSpinner();
         // Redirect to google login
         if (data.loginUrl) {
           window.location.href = data.loginUrl;
