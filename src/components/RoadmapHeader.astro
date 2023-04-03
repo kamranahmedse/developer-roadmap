@@ -1,7 +1,6 @@
 ---
 import DownloadPopup from './DownloadPopup.astro';
 import Icon from './Icon.astro';
-import LoginComponent from './Login/LoginComponent';
 import LoginPopup from './Login/LoginPopup.astro';
 import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
@@ -85,7 +84,7 @@ const isRoadmapReady = !isUpcoming;
                   ga-category='Subscription'
                   ga-action='Clicked Popup Opener'
                   ga-label='Download Roadmap Popup'
-                  href='/pdfs'
+                  href={`https://roadmap.sh/pdfs/roadmaps/${roadmapId}.pdf`}
                 >
                   <Icon icon='download' />
                   <span class='ml-2 hidden sm:inline'>Download</span>
