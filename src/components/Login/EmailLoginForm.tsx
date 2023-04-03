@@ -2,6 +2,7 @@ import Cookies from 'js-cookie';
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
+import Spinner from '../Spinner';
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
@@ -45,6 +46,11 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         password,
       }),
     });
+
+    // TODO: Remove this on production
+    // Simulate slow network - 2 seconds
+    // await new Promise((resolve) => setTimeout(resolve, 2000));
+
     const json = await res.json();
 
     // If the response isn't ok, we'll throw an error
@@ -195,7 +201,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         type="submit"
         className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:opacity-60"
       >
-        Continue
+        {isLoading ? <Spinner className="text-white" /> : 'Continue'}
       </button>
     </form>
   );

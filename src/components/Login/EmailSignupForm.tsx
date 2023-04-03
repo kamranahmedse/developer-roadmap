@@ -2,6 +2,7 @@ import Cookies from 'js-cookie';
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
+import Spinner from '../Spinner';
 
 const EmailSignupForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
@@ -125,7 +126,7 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
         }
         className="mt-3 inline-flex h-10 w-full items-center justify-center rounded-lg border border-slate-300 bg-black p-2 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:opacity-60"
       >
-        Continue
+        {isLoading ? <Spinner className="text-white" /> : 'Continue'}
       </button>
     </form>
   );
