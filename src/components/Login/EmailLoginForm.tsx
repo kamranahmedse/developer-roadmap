@@ -176,7 +176,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
               in your email. Or{' '}
               <button
                 type="button"
-                className="font-semibold text-yellow-900 hover:text-yellow-800"
+                className="font-semibold text-yellow-900 underline hover:text-yellow-800 hover:no-underline"
                 onClick={handleResendVerificationEmail}
               >
                 resend verification email.
