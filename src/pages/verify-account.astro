@@ -22,11 +22,7 @@ import SettingLayout from '../layouts/SettingLayout.astro';
         class='mx-auto hidden max-w-sm text-center text-sm text-slate-500'
         data-verification-success
       >
-        If you are not redirected in a few seconds, please click the button
-        below.
-        <a href='/' class='text-slate-700 hover:text-slate-500'
-          >Redirect to home.</a
-        >
+        Redirecting you to the home page.
       </p>
     </div>
   </div>
@@ -71,10 +67,8 @@ import SettingLayout from '../layouts/SettingLayout.astro';
             Cookies.remove(TOKEN_COOKIE_NAME);
           }
 
-          // After 3 seconds, redirect the user to the home page
-          setTimeout(() => {
-            window.location.href = '/';
-          }, 3000);
+          // Redirect the user to the home page
+          window.location.href = '/';
         } else {
           spinner?.remove();
           error?.classList.remove('hidden');
