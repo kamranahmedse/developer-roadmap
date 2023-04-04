@@ -100,5 +100,9 @@ const { contentContributionLink } = Astro.props;
   } else {
     loginMarkDone?.classList.remove('hidden');
     markDone?.classList.add('!hidden');
+    loginMarkDone?.addEventListener('click', () => {
+      // Close the overlay
+      document.getElementById('topic-overlay')?.classList.add('hidden');
+    });
   }
 </script>
