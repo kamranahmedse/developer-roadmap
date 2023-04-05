@@ -21,10 +21,10 @@ To obtain the CISM certification, candidates must:
 - **Study for the Exam**: Thorough exam preparation is essential for success. ISACA provides a range of study materials, including the [CISM Review Manual](https://www.isaca.org/bookstore), online question banks, and instructor-led courses.
 - **Take the Exam**: The CISM exam consists of 150 multiple-choice questions, and you have four hours to complete it. It covers four main domains:
 
-   - Information Security Governance
-   - Information Risk Management
-   - Information Security Program Development and Management
-   - Information Security Incident Management
+  - Information Security Governance
+  - Information Risk Management
+  - Information Security Program Development and Management
+  - Information Security Incident Management
 
 - **Maintain Your Certification**: Once you pass the exam and meet the experience requirements, you need to [apply for certification](https://www.isaca.org/credentialing/certified-information-security-manager/get-cism-certified). To maintain your CISM credential, you must earn Continuing Professional Education (CPE) hours and renew your certification every three years.
 

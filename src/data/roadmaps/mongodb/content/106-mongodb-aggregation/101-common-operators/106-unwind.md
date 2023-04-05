@@ -43,19 +43,17 @@ Consider a `sales` collection with the following sample document:
 If you want to calculate the total revenue for each individual order, you can use the `$unwind` operator to deconstruct the `orders` array:
 
 ```javascript
-db.sales.aggregate([
-  { $unwind: { path: "$orders" } }
-])
+db.sales.aggregate([{ $unwind: { path: '$orders' } }]);
 ```
 
 The output will be:
 
 ```javascript
 [
-  { _id: 1, item: "itemA", orders: { quantity: 2, unitPrice: 10 } },
-  { _id: 1, item: "itemA", orders: { quantity: 3, unitPrice: 20 } },
-  { _id: 1, item: "itemA", orders: { quantity: 1, unitPrice: 15 } }
-]
+  { _id: 1, item: 'itemA', orders: { quantity: 2, unitPrice: 10 } },
+  { _id: 1, item: 'itemA', orders: { quantity: 3, unitPrice: 20 } },
+  { _id: 1, item: 'itemA', orders: { quantity: 1, unitPrice: 15 } },
+];
 ```
 
 Now each document represents a single order, and you can easily perform further operations like calculating the revenue for each document.

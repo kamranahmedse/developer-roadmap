@@ -7,7 +7,6 @@ A **Wireless Local Area Network (WLAN)** is a type of local area network that us
 There are two main components in a WLAN:
 
 - **Wireless Access Point (WAP)**: A WAP is a networking device that enables wireless devices to connect to the network. It acts as a bridge between the devices and the wired network, converting RF signals into data that can travel through a wired connection.
-   
 - **Wireless Client**: Wireless clients are devices like laptops, smartphones, and tablets that are fitted with WLAN adapters. These adapters enable devices to send and receive wireless signals to connect with the WAP.
 
 ## Key WLAN Standards

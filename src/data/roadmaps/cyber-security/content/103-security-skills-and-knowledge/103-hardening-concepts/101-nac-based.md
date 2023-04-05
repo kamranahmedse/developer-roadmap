@@ -18,10 +18,10 @@ Network Access Control (NAC) based hardening is a crucial component in enhancing
 
 To get the most out of a NAC-based hardening approach, here are some best practices to consider:
 
-* **Develop a Comprehensive Access Control Policy:** Clearly define the roles, responsibilities, and access permissions within your organization, ensuring that users have the least privilege required to perform their job functions.
-* **Regularly Review and Update Policies:** As your organization evolves, so should your NAC policies. Regularly review and update policies to maintain alignment with organizational changes.
-* **Educate Users:** Educate end-users about the importance of security and their role in maintaining a secure network. Offer training on topics such as password management, avoiding phishing attacks, and identifying social engineering attempts.
-* **Ensure Comprehensive Coverage:** Ensure that your NAC solution covers all entry points to your network, including remote access, wireless networks, and guest access.
-* **Monitor and Respond to NAC Alerts:** NAC solutions generate alerts when suspicious activity is detected, such as an unauthorized device trying to connect to the network. Make sure you have a process in place to respond to these alerts in a timely manner.
+- **Develop a Comprehensive Access Control Policy:** Clearly define the roles, responsibilities, and access permissions within your organization, ensuring that users have the least privilege required to perform their job functions.
+- **Regularly Review and Update Policies:** As your organization evolves, so should your NAC policies. Regularly review and update policies to maintain alignment with organizational changes.
+- **Educate Users:** Educate end-users about the importance of security and their role in maintaining a secure network. Offer training on topics such as password management, avoiding phishing attacks, and identifying social engineering attempts.
+- **Ensure Comprehensive Coverage:** Ensure that your NAC solution covers all entry points to your network, including remote access, wireless networks, and guest access.
+- **Monitor and Respond to NAC Alerts:** NAC solutions generate alerts when suspicious activity is detected, such as an unauthorized device trying to connect to the network. Make sure you have a process in place to respond to these alerts in a timely manner.
 
 By implementing NAC-based hardening in your cybersecurity strategy, you protect your organization from threats and maintain secure access to critical resources.

@@ -19,5 +19,3 @@ Visit the following resources to learn more:
 - [Gradle Tutorial](https://www.tutorialspoint.com/gradle/index.htm)
 - [Gradle for absolute beginners](https://tomgregory.com/gradle-tutorial-for-complete-beginners/)
 - [Gradle Guides](https://gradle.org/guides/)
-
-

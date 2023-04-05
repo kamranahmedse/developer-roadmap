@@ -3,6 +3,7 @@
 Avoiding direct payments is a crucial aspect of UX design that can lead to favorable conscious evaluations from users. Direct payments refer to instances where users are required to pay for your product or service upfront, which can create a negative perception and less willingness to engage. By finding alternative ways to monetize or offer premium features, you can create an enjoyable experience and encourage users to appreciate and invest in your offerings without feeling forced.
 
 ## Why it Matters?
+
 - **Trust-Building**: When users are not asked to pay upfront or have no hidden costs, they are more likely to trust your product or service, increasing the likelihood of loyal customers.
 - **Accessibility**: Making your offerings available without direct payments ensures a larger and more diverse audience can experience the value your product provides, which can lead to increased traffic and eventual conversions.
 - **Reduced churn**: Users who do not feel "locked-in" by having to pay upfront are less likely to abandon your product or service in search of alternative solutions.

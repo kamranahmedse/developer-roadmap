@@ -4,7 +4,7 @@ When it comes to IP addresses, they are categorized in two major types: Public I
 
 ## Public IP Addresses
 
-A public IP address is a globally unique IP address that is assigned to a device or a network. This type of IP address is reachable over the Internet and enables devices to communicate with other devices, servers, and networks located anywhere in the world. 
+A public IP address is a globally unique IP address that is assigned to a device or a network. This type of IP address is reachable over the Internet and enables devices to communicate with other devices, servers, and networks located anywhere in the world.
 
 Here are some key features of public IP addresses:
 

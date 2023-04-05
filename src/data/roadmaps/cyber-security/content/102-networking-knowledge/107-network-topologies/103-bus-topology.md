@@ -1,6 +1,6 @@
 # Bus
 
-A **bus topology** is a type of network configuration where all the devices or nodes in the network are connected to a single, central cable known as the bus, backbone or trunk. This common shared path serves as the medium for data transmission and communication amongst the nodes. 
+A **bus topology** is a type of network configuration where all the devices or nodes in the network are connected to a single, central cable known as the bus, backbone or trunk. This common shared path serves as the medium for data transmission and communication amongst the nodes.
 
 ## How Bus Topology Works
 

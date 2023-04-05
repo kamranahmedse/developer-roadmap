@@ -4,9 +4,9 @@ Encryption at Rest refers to the process of encrypting data when it is stored wi
 
 ## Benefits
 
-* **Enhanced Security**: By encrypting the data, you make it more difficult for attackers to access sensitive information.
-* **Compliance**: Encryption at rest can help you meet various regulatory compliance requirements that mandate data protection.
-* **Reduced Risk**: If someone gains unauthorized access to the storage, they won't be able to read the encrypted data.
+- **Enhanced Security**: By encrypting the data, you make it more difficult for attackers to access sensitive information.
+- **Compliance**: Encryption at rest can help you meet various regulatory compliance requirements that mandate data protection.
+- **Reduced Risk**: If someone gains unauthorized access to the storage, they won't be able to read the encrypted data.
 
 ## How it Works in MongoDB
 
@@ -36,10 +36,10 @@ Example `mongod.conf` file:
 storage:
   wiredTiger:
     engineConfig:
-      encryptWith: "AES256-CBC"
+      encryptWith: 'AES256-CBC'
       encryptionKeyManager:
-        keyLocation: "/path/to/encryption/key"
-        keyManagement: "local"
+        keyLocation: '/path/to/encryption/key'
+        keyManagement: 'local'
 ```
 
 Start MongoDB with:

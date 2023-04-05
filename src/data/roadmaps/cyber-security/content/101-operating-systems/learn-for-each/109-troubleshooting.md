@@ -37,4 +37,4 @@ Mastering the art of troubleshooting is essential for successful cyber security 
 
 I hope this brief summary on troubleshooting has been informative and helps you further enhance your understanding of cyber security. Keep learning and good luck in your cyber security journey!
 
-*[Your Name Here], The Cyber Security Guide Author*
+_[Your Name Here], The Cyber Security Guide Author_

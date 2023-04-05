@@ -15,7 +15,9 @@ Examples of retryable read operations include:
 To enable retryable reads, use the following option in your client settings:
 
 ```javascript
-{retryReads: true}
+{
+  retryReads: true;
+}
 ```
 
 By default, newer versions of MongoDB (since v3.6) have retryable reads enabled.
@@ -34,7 +36,9 @@ Examples of retryable write operations include:
 To enable retryable writes, use the following option in your client settings:
 
 ```javascript
-{retryWrites: true}
+{
+  retryWrites: true;
+}
 ```
 
 By default, MongoDB has retryable writes enabled for replica sets and sharded clusters (since v4.0).

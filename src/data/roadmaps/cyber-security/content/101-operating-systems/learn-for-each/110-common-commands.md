@@ -2,7 +2,7 @@
 
 In this guide, we will cover essential common commands you need to know when starting your journey in cyber security. By becoming proficient in these commands, you will be able to navigate, analyze, and manage different aspects of systems and networks. The list will cover command prompts, shell commands, and other tools.
 
-*Please note this guide assumes you already have basic knowledge of command line interfaces (CLI)*
+_Please note this guide assumes you already have basic knowledge of command line interfaces (CLI)_
 
 ## Operating System Commands
 

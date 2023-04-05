@@ -4,7 +4,7 @@ MongoDB Connectors provide the integration between your application and the Mong
 
 In this section, we'll discuss some commonly used MongoDB Connectors and their main features.
 
-##  MongoDB BI Connector
+## MongoDB BI Connector
 
 The MongoDB BI (Business Intelligence) Connector allows you to connect MongoDB to third-party tools like Tableau or PowerBI, enabling users to create visualizations, reports, and dashboards using data stored in MongoDB. It translates incoming SQL queries into equivalent MongoDB queries, providing a seamless experience when working with your data.
 
@@ -14,7 +14,7 @@ Key Features:
 - Provides integration with popular BI tools
 - Supports various SQL-compatible clients
 
-##  MongoDB Kafka Connector
+## MongoDB Kafka Connector
 
 The MongoDB Kafka Connector lets you stream data between Apache Kafka and MongoDB, enabling you to build real-time, event-driven data pipelines that can process and analyze large volumes of data quickly. With this connector, you can use Kafka as the central event bus for your system and automatically persist the events in MongoDB as required.
 
@@ -24,7 +24,7 @@ Key Features:
 - Flexible and customizable pipelines
 - Scalable and fault-tolerant design
 
-##  MongoDB Connector for Spark
+## MongoDB Connector for Spark
 
 The MongoDB Connector for Spark enables you to use MongoDB as a data source or destination for Apache Spark, a powerful analytics engine designed for large-scale data processing. With this connector, you can leverage Spark's advanced capabilities like machine learning and graph processing on your MongoDB data.
 
@@ -34,7 +34,7 @@ Key Features:
 - Support for various Spark libraries like MLlib and GraphX
 - Parallel data processing for faster analytics
 
-##  MongoDB Language Drivers
+## MongoDB Language Drivers
 
 MongoDB provides a range of official and community-supported language drivers that allow developers to interact with MongoDB using their preferred programming language. Officially supported drivers include C, C++, C#, Go, Java, Node.js, PHP, Python, Ruby, Rust, Scala, and Swift. There are also many community-supported drivers for other languages and frameworks.
 

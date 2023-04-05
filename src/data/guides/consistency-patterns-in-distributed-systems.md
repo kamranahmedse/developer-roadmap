@@ -1,24 +1,24 @@
 ---
-title: "Consistency Patterns"
-description: "Everything you need to know about Week, Strong and Eventual Consistency"
+title: 'Consistency Patterns'
+description: 'Everything you need to know about Week, Strong and Eventual Consistency'
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
-  title: "Consistency Patterns - roadmap.sh"
-  description: "Everything you need to know about Week, Strong and Eventual Consistency"
+  title: 'Consistency Patterns - roadmap.sh'
+  description: 'Everything you need to know about Week, Strong and Eventual Consistency'
 isNew: true
-canonicalUrl: "https://cs.fyi/guide/consistency-patterns-week-strong-eventual/"
-type: "textual"
+canonicalUrl: 'https://cs.fyi/guide/consistency-patterns-week-strong-eventual/'
+type: 'textual'
 date: 2023-01-18
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "visual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'visual-guide'
+  - 'guide-sitemap'
 ---
 
 Before we talk about the Consistency Patterns, we should know what a distributed system is. Simply put, a distributed system is a system that consists of more than one components, and each component is responsible for one part of the application.
@@ -39,11 +39,11 @@ When working with distributed systems, we need to think about managing the data 
 
 ## Consistency Patterns
 
-Consistency patterns refer to the ways in which data is stored and managed in a distributed system and how that data is made available to users and applications. There are three main types of consistency patterns: 
+Consistency patterns refer to the ways in which data is stored and managed in a distributed system and how that data is made available to users and applications. There are three main types of consistency patterns:
 
-* Strong consistency
-* Weak consistency
-* Eventual Consistency
+- Strong consistency
+- Weak consistency
+- Eventual Consistency
 
 Each of these patterns has its own advantages and disadvantages, and the choice of which pattern to use will depend on the specific requirements of the application or system.
 
@@ -51,7 +51,7 @@ Each of these patterns has its own advantages and disadvantages, and the choice 
 
 > After an update is made to the data, it will be immediately visible to any subsequent read operations. The data is replicated in a synchronous manner, ensuring that all copies of the data are updated at the same time.
 
-In a strong consistency system, any updates to some data are immediately propagated to all locations. This ensures that all locations have the same version of the data, but it also means that the system is not highly available and has high latency. 
+In a strong consistency system, any updates to some data are immediately propagated to all locations. This ensures that all locations have the same version of the data, but it also means that the system is not highly available and has high latency.
 
 An example of strong consistency is a financial system where users can transfer money between accounts. The system is designed for **high data integrity**, so the data is stored in a single location and updates to that data are immediately propagated to all other locations. This ensures that all users and applications are working with the same, accurate data. For instance, when a user initiates a transfer of funds from one account to another, the system immediately updates the balance of both accounts and all other system components are immediately aware of the change. This ensures that all users can see the updated balance of both accounts and prevents any discrepancies.
 

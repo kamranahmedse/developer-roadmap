@@ -7,7 +7,10 @@ For example, the following is a recursive type that represents a linked list:
 ```typescript
 type LinkedList<T> = T & { next: LinkedList<T> };
 
-let list: LinkedList<number> = { value: 1, next: { value: 2, next: { value: 3, next: null } } };
+let list: LinkedList<number> = {
+  value: 1,
+  next: { value: 2, next: { value: 3, next: null } },
+};
 ```
 
 In this example, the `LinkedList` type is defined as a type that extends `T` and contains a property `next` of the same type `LinkedList<T>`. This allows us to create a linked list where each node contains a value of type `T` and a reference to the next node in the list.

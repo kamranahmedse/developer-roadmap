@@ -15,7 +15,7 @@ Syntax:
 Usage example:
 
 ```javascript
-db.collection.find({ "grades": { "$gte": 80 }}, { "name": 1, "grades.$": 1 })
+db.collection.find({ grades: { $gte: 80 } }, { name: 1, 'grades.$': 1 });
 ```
 
 This will return only the first `grades` element greater than or equal to 80 along with the `name` field.
@@ -33,7 +33,9 @@ Syntax:
 Usage example:
 
 ```javascript
-db.collection.find({ "subjects": { "$elemMatch": { "score": { "$gte": 80 }, "type": "exam" } } })
+db.collection.find({
+  subjects: { $elemMatch: { score: { $gte: 80 }, type: 'exam' } },
+});
 ```
 
 This will return documents that have at least one `subjects` element with a `score` greater than or equal to 80 and a `type` of "exam".
@@ -57,13 +59,13 @@ or
 Usage example:
 
 ```javascript
-db.collection.find({}, { "name": 1, "grades": { "$slice": 3 } })
+db.collection.find({}, { name: 1, grades: { $slice: 3 } });
 ```
 
 This will return the `name` field and the first 3 `grades` elements for all documents in the collection.
 
 ```javascript
-db.collection.find({}, { "name": 1, "grades": { "$slice": [ 1, 2 ] } })
+db.collection.find({}, { name: 1, grades: { $slice: [1, 2] } });
 ```
 
 This will return the `name` field and the 2 `grades` elements after skipping the first element for all documents in the collection.

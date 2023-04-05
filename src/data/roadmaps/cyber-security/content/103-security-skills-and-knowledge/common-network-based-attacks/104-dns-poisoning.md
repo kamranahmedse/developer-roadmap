@@ -4,9 +4,9 @@
 
 ## How DNS Poisoning Works
 
-The DNS is like the internet's phonebook; it translates human-readable domain names (e.g., www.example.com) into their corresponding IP addresses for computers to understand. This process involves a DNS resolver, which refers to a cached DNS database to find the correct IP address. In a DNS poisoning attack, an attacker exploits vulnerabilities in the DNS to inject false or malicious data into a DNS resolver's cache. 
+The DNS is like the internet's phonebook; it translates human-readable domain names (e.g., www.example.com) into their corresponding IP addresses for computers to understand. This process involves a DNS resolver, which refers to a cached DNS database to find the correct IP address. In a DNS poisoning attack, an attacker exploits vulnerabilities in the DNS to inject false or malicious data into a DNS resolver's cache.
 
-Here's a quick outline of the process: 
+Here's a quick outline of the process:
 
 - User requests the IP address for a legitimate website (e.g., www.example.com).
 - The DNS resolver sends a request to a DNS server to resolve the domain name into the IP address.

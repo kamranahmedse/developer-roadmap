@@ -18,12 +18,12 @@ Let's assume we have a "users" collection with documents that look like this:
 
 ```json
 {
-    "_id": 1,
-    "name": "John Doe",
-    "posts": [
-        { "title": "Sample Post 1", "views": 43 },
-        { "title": "Sample Post 2", "views": 89 }
-    ]
+  "_id": 1,
+  "name": "John Doe",
+  "posts": [
+    { "title": "Sample Post 1", "views": 43 },
+    { "title": "Sample Post 2", "views": 89 }
+  ]
 }
 ```
 
@@ -31,22 +31,22 @@ If you want to retrieve only the name and the total number of posts for each use
 
 ```javascript
 db.users.aggregate([
-    {
-        $project: {
-            name: 1,
-            totalPosts: { $size: "$posts" }
-        }
-    }
-])
+  {
+    $project: {
+      name: 1,
+      totalPosts: { $size: '$posts' },
+    },
+  },
+]);
 ```
 
 Here, we are including the `name` field and calculating the `totalPosts` value with the `$size` operator. The output will look like this:
 
 ```json
 {
-    "_id": 1,
-    "name": "John Doe",
-    "totalPosts": 2
+  "_id": 1,
+  "name": "John Doe",
+  "totalPosts": 2
 }
 ```
 
@@ -58,12 +58,12 @@ For example, if you only want to exclude the "posts" field, you can do that as f
 
 ```javascript
 db.users.aggregate([
-    {
-        $project: {
-            posts: 0
-        }
-    }
-])
+  {
+    $project: {
+      posts: 0,
+    },
+  },
+]);
 ```
 
 ## Conclusion

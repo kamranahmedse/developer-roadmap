@@ -4,17 +4,17 @@ Impersonation is a type of cyber attack where an attacker pretends to be a legit
 
 ## Types of Impersonation Attacks
 
-* **Phishing:** Attackers send emails appearing to be from legitimate sources, tricking the target into revealing sensitive information or downloading malware.
+- **Phishing:** Attackers send emails appearing to be from legitimate sources, tricking the target into revealing sensitive information or downloading malware.
 
-* **Spear phishing:** A more targeted form of phishing, where the attacker possesses specific information about their target and creates a personalized email.
+- **Spear phishing:** A more targeted form of phishing, where the attacker possesses specific information about their target and creates a personalized email.
 
-* **Whaling:** This attack targets high-ranking individuals like CEOs or CFOs, using a combination of personalized spear-phishing and social engineering to extract valuable information or conduct fraudulent transactions.
+- **Whaling:** This attack targets high-ranking individuals like CEOs or CFOs, using a combination of personalized spear-phishing and social engineering to extract valuable information or conduct fraudulent transactions.
 
-* **Caller ID spoofing:** Attackers manipulate phone numbers to appear as if they're coming from a legitimate source, often impersonating customer support agents or bank representatives to deceive targets into providing sensitive information.
+- **Caller ID spoofing:** Attackers manipulate phone numbers to appear as if they're coming from a legitimate source, often impersonating customer support agents or bank representatives to deceive targets into providing sensitive information.
 
-* **Man-in-the-middle (MITM) attacks:** Attackers insert themselves between the target user and a website or service, impersonating both ends of the communication to intercept sensitive data.
+- **Man-in-the-middle (MITM) attacks:** Attackers insert themselves between the target user and a website or service, impersonating both ends of the communication to intercept sensitive data.
 
-* **Social media impersonation:** Attackers create fake profiles that resemble trusted individuals or organizations in order to deceive their targets, gain information, or spread misinformation.
+- **Social media impersonation:** Attackers create fake profiles that resemble trusted individuals or organizations in order to deceive their targets, gain information, or spread misinformation.
 
 ## Ways to Prevent Impersonation Attacks
 

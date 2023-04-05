@@ -6,13 +6,13 @@ The Cisco Certified Network Associate (CCNA) certification is an entry-level cer
 
 As a CCNA candidate, you will learn the following concepts:
 
-* Network fundamentals: understanding the basics of networking technologies, such as how devices communicate and how data is transmitted
-* LAN switching technologies: understanding how switches work and how to configure them for optimal performance
-* IPv4 and IPv6 routing technologies: learning how routers process packets and route data between networks
-* WAN technologies: understanding Wide Area Networks (WANs) and how they are used to connect geographically dispersed networks
-* Infrastructure services: learning about DHCP, DNS, and other essential network services
-* Infrastructure security: understanding how to secure network devices and implement basic security measures
-* Infrastructure management: learning about SNMP, Syslog, and other tools for network monitoring and management
+- Network fundamentals: understanding the basics of networking technologies, such as how devices communicate and how data is transmitted
+- LAN switching technologies: understanding how switches work and how to configure them for optimal performance
+- IPv4 and IPv6 routing technologies: learning how routers process packets and route data between networks
+- WAN technologies: understanding Wide Area Networks (WANs) and how they are used to connect geographically dispersed networks
+- Infrastructure services: learning about DHCP, DNS, and other essential network services
+- Infrastructure security: understanding how to secure network devices and implement basic security measures
+- Infrastructure management: learning about SNMP, Syslog, and other tools for network monitoring and management
 
 ## CCNA Exam
 

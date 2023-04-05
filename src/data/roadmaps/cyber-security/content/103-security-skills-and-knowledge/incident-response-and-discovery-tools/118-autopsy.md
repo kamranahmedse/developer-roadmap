@@ -18,7 +18,7 @@ Autopsy is a versatile and powerful open-source digital forensics platform that 
 
 ## Installation and Usage
 
-Autopsy is available for download from its official website, [www.autopsy.com/download/](https://www.autopsy.com/download/), and can be installed on Windows, Linux, and macOS platforms. 
+Autopsy is available for download from its official website, [www.autopsy.com/download/](https://www.autopsy.com/download/), and can be installed on Windows, Linux, and macOS platforms.
 
 Once installed, creating a new case is easy. Follow these basic steps:
 
@@ -29,7 +29,7 @@ Once installed, creating a new case is easy. Follow these basic steps:
 - Configure data ingestion options and select specific modules of interest.
 - Click on "Finish" to begin the data analysis.
 
-As Autopsy completes its analysis, it will generate a comprehensive report that can be utilized for internal reporting, maintaining case records, or presenting evidence in legal proceedings. 
+As Autopsy completes its analysis, it will generate a comprehensive report that can be utilized for internal reporting, maintaining case records, or presenting evidence in legal proceedings.
 
 ## Conclusion
 

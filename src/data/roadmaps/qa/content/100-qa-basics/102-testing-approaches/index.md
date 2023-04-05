@@ -5,6 +5,7 @@ Proactive - An approach in which the test design process is initiated as early a
 Reactive - An approach in which the testing is not started until after design and coding are completed.
 
 Three approaches are commonly used to implement functional testing:
+
 - Black Box Testing
 - White Box Testing
 - Gray Box Testing

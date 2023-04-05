@@ -13,20 +13,15 @@ The `<sort order>` parameter can be either `1` or `-1`, which corresponds to asc
 For example, suppose we have a collection of documents containing information about books, and we want to sort the documents by the book's title in ascending order. We can use the following `$sort` operator:
 
 ```javascript
-db.books.aggregate([
-   { $sort : { title : 1 } }
-])
+db.books.aggregate([{ $sort: { title: 1 } }]);
 ```
 
 This will sort the documents by the `title` field in ascending order.
 
 We can also use the `$sort` operator to sort by multiple fields. For example, suppose we have a collection of documents containing information about students, and we want to sort the documents by the student's age in descending order and then by their name in ascending order. We can use the following `$sort` operator:
 
-
 ```javascript
-db.students.aggregate([
-   { $sort : { age : -1, name : 1 } }
-])
+db.students.aggregate([{ $sort: { age: -1, name: 1 } }]);
 ```
 
 This will sort the documents by the `age` field in descending order and then by the `name` field in ascending order.

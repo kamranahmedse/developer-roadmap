@@ -20,10 +20,12 @@ Here is a high-level overview of how local authentication works:
 ## Advantages and Disadvantages of Local Authentication
 
 ## Advantages
+
 - **Simplicity**: Local authentication is simple to set up, as it doesn't require any external authentication services or additional infrastructure.
 - **No Dependency on Internet Connectivity**: Since user credentials are stored locally, users can still authenticate even if there is no internet connection.
 
-##  Disadvantages
+## Disadvantages
+
 - **Scalability**: Managing and maintaining user accounts on individual systems becomes difficult when the number of systems and users increases.
 - **Increased Risk**: Information about user accounts, including passwords, may be stored in plain text, making them vulnerable to unauthorized access.
 - **Incomplete Security**: Local authentication alone may not provide sufficient security to protect sensitive information, necessitating the use of additional security measures such as secure socket layer (SSL) and two-factor authentication (2FA).

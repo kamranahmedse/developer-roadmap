@@ -5,6 +5,7 @@ The `validate` command is used to examine a MongoDB collection to verify and rep
 ## Usage
 
 The basic syntax of the `validate` command is as follows:
+
 ```javascript
 db.runCommand({validate: "<collection_name>", options...})
 ```
@@ -13,20 +14,22 @@ db.runCommand({validate: "<collection_name>", options...})
 
 ## Options
 
-* `full`: (default: false) When set to true, the `validate` command conducts a more thorough inspection of the collection, looking through all its extents, which are contiguous sections of the collection's data on disk. This option should be used with caution as it may impact read and write performance.
+- `full`: (default: false) When set to true, the `validate` command conducts a more thorough inspection of the collection, looking through all its extents, which are contiguous sections of the collection's data on disk. This option should be used with caution as it may impact read and write performance.
 
-* `background`: (default: false) When set to true, the `validate` command runs in the background, allowing other read and write operations on the collection to proceed concurrently. This option is beneficial for large collections, as it minimizes the impact on system performance.
+- `background`: (default: false) When set to true, the `validate` command runs in the background, allowing other read and write operations on the collection to proceed concurrently. This option is beneficial for large collections, as it minimizes the impact on system performance.
 
 ## Example
 
 Validate a collection named "products":
+
 ```javascript
-db.runCommand({validate: "products"})
+db.runCommand({ validate: 'products' });
 ```
 
 Validate the collection and perform a background and full check:
+
 ```javascript
-db.runCommand({validate: "products", background: true, full: true})
+db.runCommand({ validate: 'products', background: true, full: true });
 ```
 
 ## Output

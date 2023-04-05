@@ -26,15 +26,15 @@ To create a custom role, you can use the `db.createRole()` method. Here's an exa
 
 ```javascript
 db.createRole({
-  role: "customRole",
+  role: 'customRole',
   privileges: [
     {
-      resource: {db: "exampleDB", collection: ""},
-      actions: ["find", "insert", "update", "remove"]
-    }
+      resource: { db: 'exampleDB', collection: '' },
+      actions: ['find', 'insert', 'update', 'remove'],
+    },
   ],
-  roles: []
-})
+  roles: [],
+});
 ```
 
 In the example above, we created a custom role `customRole` with privileges that allow users with this role to perform `find`, `insert`, `update`, and `remove` operations on all collections within the `exampleDB` database.
@@ -45,13 +45,13 @@ To ensure that users have the appropriate level of access and permissions, you a
 
 ```javascript
 db.createUser({
-  user: "exampleUser",
-  pwd: "examplePassword",
+  user: 'exampleUser',
+  pwd: 'examplePassword',
   roles: [
-    {role: "read", db: "exampleDB"},
-    {role: "customRole", db: "exampleDB"}
-  ]
-})
+    { role: 'read', db: 'exampleDB' },
+    { role: 'customRole', db: 'exampleDB' },
+  ],
+});
 ```
 
 In this example, we created a new user `exampleUser` and assigned the built-in `read` role and a custom `customRole` role.

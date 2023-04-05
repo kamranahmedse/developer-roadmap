@@ -13,15 +13,15 @@ IPsec operates at the network layer, making it suitable for protecting various a
 
 IPsec primarily consists of two main components:
 
-* **AH (Authentication Header):** AH provides data integrity and authentication by adding an authentication header to each IP packet. It verifies that the packet has not been altered during transit by checking the integrity of the data and the identity of the sender.
+- **AH (Authentication Header):** AH provides data integrity and authentication by adding an authentication header to each IP packet. It verifies that the packet has not been altered during transit by checking the integrity of the data and the identity of the sender.
 
-* **ESP (Encapsulating Security Payload):** ESP provides confidentiality by encrypting the data in IP packets. This ensures that the packet's contents are safe from unauthorized access and tampering during transmission.
+- **ESP (Encapsulating Security Payload):** ESP provides confidentiality by encrypting the data in IP packets. This ensures that the packet's contents are safe from unauthorized access and tampering during transmission.
 
 IPsec also uses two primary modes of operation:
 
-* **Transport Mode:** In transport mode, IPsec is applied only to the payload of an IP packet. This mode is typically used for securing end-to-end communication between hosts.
+- **Transport Mode:** In transport mode, IPsec is applied only to the payload of an IP packet. This mode is typically used for securing end-to-end communication between hosts.
 
-* **Tunnel Mode:** In tunnel mode, IPsec is applied to the entire IP packet, including the header. This mode is commonly used in VPNs, where the entire packet is encapsulated, providing security between two networks.
+- **Tunnel Mode:** In tunnel mode, IPsec is applied to the entire IP packet, including the header. This mode is commonly used in VPNs, where the entire packet is encapsulated, providing security between two networks.
 
 ## IPsec in Practice
 

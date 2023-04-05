@@ -8,7 +8,7 @@ The union operator `|` is used to combine two or more types into a single type t
 
 ```typescript
 type stringOrNumber = string | number;
-let value: stringOrNumber = "hello";
+let value: stringOrNumber = 'hello';
 
 value = 42;
 ```
@@ -27,7 +27,7 @@ interface B {
 }
 
 type AB = A & B;
-let value: AB = { a: "hello", b: 42 };
+let value: AB = { a: 'hello', b: 42 };
 ```
 
 Learn more from the following links:

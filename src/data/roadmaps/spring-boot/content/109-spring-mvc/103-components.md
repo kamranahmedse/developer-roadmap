@@ -17,10 +17,3 @@ For more information, visit the following links:
 
 - [Spring Boot vs Spring MVC: How do They Compare?](https://rollbar.com/blog/spring-boot-vs-spring-mvc-how-do-they-compare/)
 - [Spring MVC components](http://makble.com/spring-mvc-components)
-
-
-
-
-
-
-

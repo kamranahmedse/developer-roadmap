@@ -8,12 +8,12 @@ Layered architecture is a common approach to designing scalable and maintainable
 
 While layered architecture has many benefits, it also has some drawbacks that should be considered. These include the following:
 
-* Complexity: Layered architecture can add complexity to an application, especially if it is not implemented carefully. This can make the application more difficult to understand and maintain.
+- Complexity: Layered architecture can add complexity to an application, especially if it is not implemented carefully. This can make the application more difficult to understand and maintain.
 
-* Performance: Layered architecture can potentially impact the performance of an application, because data has to be passed between the different layers. This can be especially problematic if the application has a large number of layers or if the layers are not optimized for performance.
+- Performance: Layered architecture can potentially impact the performance of an application, because data has to be passed between the different layers. This can be especially problematic if the application has a large number of layers or if the layers are not optimized for performance.
 
-* Tight coupling: If the layers in a layered architecture are not well-defined and loosely coupled, changes to one layer can potentially affect other layers, which can lead to maintainability issues.
+- Tight coupling: If the layers in a layered architecture are not well-defined and loosely coupled, changes to one layer can potentially affect other layers, which can lead to maintainability issues.
 
-* Overhead: Layered architecture can add overhead to an application, because data has to be passed between the different layers. This can potentially impact the performance and scalability of the application.
+- Overhead: Layered architecture can add overhead to an application, because data has to be passed between the different layers. This can potentially impact the performance and scalability of the application.
 
 Overall, while layered architecture has many benefits, it is important to carefully consider the potential drawbacks and make sure that the benefits outweigh the costs in your specific application.

@@ -12,7 +12,7 @@ TLS is the successor to SSL and is continually evolving with new versions and up
 
 ## How SSL/TLS Works
 
-SSL/TLS operates by encrypting the data transmitted between a client and a server, ensuring that the data cannot be easily intercepted or tampered with. The encryption is achieved using a combination of cryptographic algorithms, key exchanges, and digital certificates. 
+SSL/TLS operates by encrypting the data transmitted between a client and a server, ensuring that the data cannot be easily intercepted or tampered with. The encryption is achieved using a combination of cryptographic algorithms, key exchanges, and digital certificates.
 
 Here are the key steps in setting up an SSL/TLS connection:
 

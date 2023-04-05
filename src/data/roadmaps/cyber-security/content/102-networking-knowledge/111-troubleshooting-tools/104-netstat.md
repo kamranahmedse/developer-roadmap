@@ -4,17 +4,17 @@ Netstat, short for 'network statistics', is a command-line tool that provides va
 
 ## Key Features
 
-* **Network Connections:** Netstat can show open and active network connections, including inbound and outbound, as well as display the ports on which your system is currently listening.
-* **Routing Tables:** Netstat provides information about your system's routing tables, which can help you identify the path a packet takes to reach its destination.
-* **Network Interface Statistics:** Netstat displays statistics for network interfaces, covering details such as packets transmitted, packets received, errors, and more.
+- **Network Connections:** Netstat can show open and active network connections, including inbound and outbound, as well as display the ports on which your system is currently listening.
+- **Routing Tables:** Netstat provides information about your system's routing tables, which can help you identify the path a packet takes to reach its destination.
+- **Network Interface Statistics:** Netstat displays statistics for network interfaces, covering details such as packets transmitted, packets received, errors, and more.
 
 ## Common Netstat Commands
 
-* `netstat -a`: Displays all active connections and listening ports
-* `netstat -n`: Displays active connections without resolving hostnames (faster)
-* `netstat -r`: Displays the routing table
-* `netstat -i`: Displays network interfaces and their statistics
-* `netstat -s`: Displays network protocol statistics (TCP, UDP, ICMP)
+- `netstat -a`: Displays all active connections and listening ports
+- `netstat -n`: Displays active connections without resolving hostnames (faster)
+- `netstat -r`: Displays the routing table
+- `netstat -i`: Displays network interfaces and their statistics
+- `netstat -s`: Displays network protocol statistics (TCP, UDP, ICMP)
 
 ## Example Use Cases
 

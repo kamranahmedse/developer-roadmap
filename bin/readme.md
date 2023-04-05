@@ -1,4 +1,5 @@
 ## CLI Tools
+
 > A bunch of CLI scripts to make the development easier
 
 ## `roadmap-links.cjs`
@@ -34,5 +35,3 @@ For the content skeleton to be generated, we should have proper grouping, and th
 - Assign the name to the groups.
   - Group names have the format of `[sort]-[slug]` e.g. `100-internet`. Each group name should start with a number starting from 100 which helps with sorting of the directories and the files. Groups at the same level have the sequential sorting information.
   - Each groups children have a separate group and have the name similar to `[sort]-[parent-slug]:[child-slug]` where sort refers to the sorting of the `child-slug` and not the parent. Also parent-slug does not need to have the sorting information as a part of slug e.g. if parent was `100-internet` the children would be `100-internet:how-does-the-internet-work`, `101-internet:what-is-http`, `102-internet:browsers`.
-
-

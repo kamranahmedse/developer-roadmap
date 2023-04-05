@@ -1,6 +1,6 @@
 # Packet Captures
 
-Packet captures, also known as *pcaps*, refer to the interception and logging of network traffic. In a cybersecurity context, analyzing packet captures can provide valuable insight into network activity, potential threats, and vulnerabilities. This section will introduce you to the essentials of packet captures and introduce some popular tools used for capturing and analyzing network traffic.
+Packet captures, also known as _pcaps_, refer to the interception and logging of network traffic. In a cybersecurity context, analyzing packet captures can provide valuable insight into network activity, potential threats, and vulnerabilities. This section will introduce you to the essentials of packet captures and introduce some popular tools used for capturing and analyzing network traffic.
 
 ## Why are Packet Captures Important?
 

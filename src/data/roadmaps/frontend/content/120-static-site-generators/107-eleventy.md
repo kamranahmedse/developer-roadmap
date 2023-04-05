@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Official Website](https://www.11ty.dev/)
 - [A collection of 11ty starters, projects, plugins, and resources](https://11ty.rocks/)
 - [Introduction to Eleventy](https://www.youtube.com/watch?v=-dM6AmNmMFA)
-

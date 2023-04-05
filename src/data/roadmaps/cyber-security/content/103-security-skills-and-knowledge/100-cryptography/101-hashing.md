@@ -1,16 +1,16 @@
 # Hashing
 
-In this section, we will discuss the concept of *hashing*, an important cryptographic primitive, and its multiple applications in the realm of cyber security.
+In this section, we will discuss the concept of _hashing_, an important cryptographic primitive, and its multiple applications in the realm of cyber security.
 
 **What is Hashing?**
 
-A *hash function* is a mathematical algorithm that takes an input (or 'message') and returns a fixed-size string of bytes, usually in the form of a hexadecimal number. The output is called the *hash value* or simply, the *hash*. Some characteristics of a good hash function are:
+A _hash function_ is a mathematical algorithm that takes an input (or 'message') and returns a fixed-size string of bytes, usually in the form of a hexadecimal number. The output is called the _hash value_ or simply, the _hash_. Some characteristics of a good hash function are:
 
-- *Deterministic*: The same input will always result in the same hash output.
-- *Efficient*: The time taken to compute the hash should be as quick as possible.
-- *Avalanche Effect*: A tiny change in the input should result in a drastically different hash output.
-- *One-way Function*: It should be computationally infeasible to reverse-engineer the input from its hash output.
-- *Collision Resistance*: It should be extremely unlikely to find two different inputs that produce the same hash output.
+- _Deterministic_: The same input will always result in the same hash output.
+- _Efficient_: The time taken to compute the hash should be as quick as possible.
+- _Avalanche Effect_: A tiny change in the input should result in a drastically different hash output.
+- _One-way Function_: It should be computationally infeasible to reverse-engineer the input from its hash output.
+- _Collision Resistance_: It should be extremely unlikely to find two different inputs that produce the same hash output.
 
 **Common Hashing Algorithms**
 
@@ -24,12 +24,12 @@ There are several widely used hashing algorithms with different strengths and we
 
 Hashing is a versatile mechanism and serves many purposes in cyber security, such as:
 
-- *Data Integrity*: Hashing can be used to ensure that a file or piece of data hasn't been altered or tampered with. Comparing the hash value of the original and received data can determine if they match.
+- _Data Integrity_: Hashing can be used to ensure that a file or piece of data hasn't been altered or tampered with. Comparing the hash value of the original and received data can determine if they match.
 
-- *Password Storage*: Storing users' passwords as hashes makes it difficult for attackers to obtain the plain-text passwords even if they gain access to the stored hashes.
+- _Password Storage_: Storing users' passwords as hashes makes it difficult for attackers to obtain the plain-text passwords even if they gain access to the stored hashes.
 
-- *Digital Signatures*: Digital signatures often rely on cryptographic hash functions to verify the integrity and authenticity of a message or piece of data.
+- _Digital Signatures_: Digital signatures often rely on cryptographic hash functions to verify the integrity and authenticity of a message or piece of data.
 
-- *Proof of Work*: Hash functions are employed in consensus algorithms like the one used in Bitcoin mining, as they can solve computational challenges.
+- _Proof of Work_: Hash functions are employed in consensus algorithms like the one used in Bitcoin mining, as they can solve computational challenges.
 
 In conclusion, hashing is a crucial technique in ensuring data integrity and maintaining security in various areas of cyber security. Understanding and adopting secure hashing algorithms is an essential skill for any cyber security professional.

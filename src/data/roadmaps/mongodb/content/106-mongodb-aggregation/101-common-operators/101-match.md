@@ -25,6 +25,7 @@ Suppose you have a collection named `employees` with the following document stru
   "department": "HR"
 }
 ```
+
 You are asked to find employees aged above 30. To do this, you can use the `$match` operator as follows:
 
 ```python

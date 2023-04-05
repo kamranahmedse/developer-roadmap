@@ -21,7 +21,7 @@ When creating a document in a MongoDB collection, you can simply store the data 
 }
 ```
 
-In this example, `name`, `city`, and `description` are keys with string values: `"John Doe"`, `"New York"`, and `"A software developer working at XYZ company."`. 
+In this example, `name`, `city`, and `description` are keys with string values: `"John Doe"`, `"New York"`, and `"A software developer working at XYZ company."`.
 
 **Queries with strings:**
 
@@ -33,7 +33,7 @@ You can also perform various queries using strings in MongoDB. Some common query
 An example of a query with `$regex`:
 
 ```javascript
-db.collection.find({ "name": { "$regex": "J.*" } })
+db.collection.find({ name: { $regex: 'J.*' } });
 ```
 
 This query searches for all documents in the collection with a `name` field starting with the letter `"J"`.

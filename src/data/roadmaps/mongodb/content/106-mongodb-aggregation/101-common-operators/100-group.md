@@ -27,12 +27,12 @@ Suppose we have a collection called `orders`, which contains documents represent
 
 ```javascript
 [
-  { "_id": 1, "customer_id": "C1", "amount": 110 },
-  { "_id": 2, "customer_id": "C2", "amount": 150 },
-  { "_id": 3, "customer_id": "C1", "amount": 90 },
-  { "_id": 4, "customer_id": "C3", "amount": 200 },
-  { "_id": 5, "customer_id": "C2", "amount": 50 }
-]
+  { _id: 1, customer_id: 'C1', amount: 110 },
+  { _id: 2, customer_id: 'C2', amount: 150 },
+  { _id: 3, customer_id: 'C1', amount: 90 },
+  { _id: 4, customer_id: 'C3', amount: 200 },
+  { _id: 5, customer_id: 'C2', amount: 50 },
+];
 ```
 
 Now, let's group the data by `customer_id` and calculate each customer's total spent amount.
@@ -41,21 +41,21 @@ Now, let's group the data by `customer_id` and calculate each customer's total s
 db.orders.aggregate([
   {
     $group: {
-      _id: "$customer_id",
-      total_spent: { $sum: "$amount" }
-    }
-  }
-])
+      _id: '$customer_id',
+      total_spent: { $sum: '$amount' },
+    },
+  },
+]);
 ```
 
 This query would result in the following:
 
 ```javascript
 [
-  { "_id": "C1", "total_spent": 200 },
-  { "_id": "C2", "total_spent": 200 },
-  { "_id": "C3", "total_spent": 200 }
-]
+  { _id: 'C1', total_spent: 200 },
+  { _id: 'C2', total_spent: 200 },
+  { _id: 'C3', total_spent: 200 },
+];
 ```
 
 Using the `$group` operator, documents in the `orders` collection were grouped by `customer_id`, and the total spent amount for each customer was calculated using the `$sum` accumulator.

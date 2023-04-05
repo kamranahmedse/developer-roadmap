@@ -1,6 +1,6 @@
 # Modules
 
-In TypeScript, modules are used to organize and reuse code. There are two types of modules in TypeScript: 
+In TypeScript, modules are used to organize and reuse code. There are two types of modules in TypeScript:
 
 - Internal
 - External
@@ -14,9 +14,9 @@ Here is an example of how you can use internal modules in TypeScript:
 ```typescript
 // myModule.ts
 namespace MyModule {
-    export function doSomething() {
-        console.log("Doing something...");
-    }
+  export function doSomething() {
+    console.log('Doing something...');
+  }
 }
 
 // main.ts

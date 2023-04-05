@@ -15,7 +15,7 @@ SELECT * FROM users WHERE username = '$username' AND password = '$password'
 In this case, `$username` and `$password` are replaced with the values provided by the user. If an attacker enters the following input for the username field, they can manipulate the query to bypass the password check:
 
 ```
-' OR 1=1 -- 
+' OR 1=1 --
 ```
 
 The resulting query would look like:

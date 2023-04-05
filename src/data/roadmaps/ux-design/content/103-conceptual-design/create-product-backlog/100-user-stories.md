@@ -4,7 +4,7 @@ User stories are an essential component of UX design, particularly during the pr
 
 ## What are User Stories?
 
-A user story is a brief, informal description of a specific user's need or interaction with a product. They are written from the perspective of the user and typically follow this format: 
+A user story is a brief, informal description of a specific user's need or interaction with a product. They are written from the perspective of the user and typically follow this format:
 
 ```
 As a [type of user], I want to [perform an action or achieve a goal] so that [reason or benefit].

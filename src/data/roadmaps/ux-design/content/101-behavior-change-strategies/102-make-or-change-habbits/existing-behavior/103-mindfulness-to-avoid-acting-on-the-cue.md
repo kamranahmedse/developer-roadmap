@@ -8,13 +8,13 @@ Mindfulness is a powerful technique that can help designers and users alike to a
 
 - **Observe without judgment:** Take note of any compulsions or urges that arise while interacting with a product, but don't judge them as good or bad. Simply acknowledging their existence can help you understand your responses and make better choices in the future.
 
-- **Pause and reflect:** When you notice a cue, take a moment to pause and evaluate your options. Consider whether the action you're about to take is aligned with your goals or if it's something you'd like to change. 
+- **Pause and reflect:** When you notice a cue, take a moment to pause and evaluate your options. Consider whether the action you're about to take is aligned with your goals or if it's something you'd like to change.
 
 - **Respond with intention:** Once you've reflected on your options, make a conscious decision about your next action. This may mean going through with the original behavior, choosing a more desirable alternative, or refraining from acting entirely.
 
 ## Incorporating mindfulness techniques into your designs
 
-In addition to practicing mindfulness personally, consider how you can create designs that encourage users to be more mindful and avoid acting on unwanted cues. 
+In addition to practicing mindfulness personally, consider how you can create designs that encourage users to be more mindful and avoid acting on unwanted cues.
 
 - **Design for minimal distractions:** Aim to reduce visual clutter, unnecessary alerts, and anything that might pull users' attention away from the present moment.
 

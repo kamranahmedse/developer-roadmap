@@ -4,7 +4,7 @@ CIDR, or Classless Inter-Domain Routing, is a method of allocating IP addresses 
 
 ## How CIDR works
 
-CIDR achieves its goals by replacing the traditional Class A, B, and C addressing schemes with a system that allows for variable-length subnet masking (VLSM). In CIDR, an IP address and its subnet mask are written together as a single entity, referred to as a _CIDR notation_. 
+CIDR achieves its goals by replacing the traditional Class A, B, and C addressing schemes with a system that allows for variable-length subnet masking (VLSM). In CIDR, an IP address and its subnet mask are written together as a single entity, referred to as a _CIDR notation_.
 
 A CIDR notation looks like this: `192.168.1.0/24`. Here, `192.168.1.0` is the IP address, and `/24` represents the subnet mask. The number after the slash (/) is called the _prefix length_, which indicates how many bits of the subnet mask should be set to 1 (bitmask). The remaining bits of the subnet mask are set to 0.
 

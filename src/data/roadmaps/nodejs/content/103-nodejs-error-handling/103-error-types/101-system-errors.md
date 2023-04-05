@@ -1,6 +1,6 @@
 # System Errors
 
-Node.js generates system errors when exceptions occur within its runtime environment. These usually occur when an application violates an operating system constraint. 
+Node.js generates system errors when exceptions occur within its runtime environment. These usually occur when an application violates an operating system constraint.
 For example, a system error will occur if an application attempts to read a file that does not exist.
 
 Below are the system errors commonly encountered when writing a Node.js program
@@ -18,7 +18,6 @@ Below are the system errors commonly encountered when writing a Node.js program
 11. EPERM - Operation not permitted
 12. EPIPE - Broken Pipe
 13. ETIMEDOUT - Operation timed out
-
 
 Visit the following resources to learn more:
 

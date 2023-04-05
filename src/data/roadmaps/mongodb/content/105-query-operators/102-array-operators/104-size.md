@@ -15,7 +15,7 @@ Here's a brief summary of how to work with the `$size` operator:
 Assume we have a collection called `products` with documents containing an attribute `colors` which is an array type.
 
 ```javascript
-db.products.find( { "colors": { "$size": 5 } } )
+db.products.find({ colors: { $size: 5 } });
 ```
 
 This query will return all documents in the `products` collection that have exactly 5 elements in the `colors` array field.

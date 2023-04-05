@@ -14,7 +14,7 @@ The CompTIA A+ certification aims to test and validate foundational IT knowledge
 
 ## Exams
 
-To earn the CompTIA A+ certification, you'll need to pass two exams: 
+To earn the CompTIA A+ certification, you'll need to pass two exams:
 
 - **CompTIA A+ 220-1001 (Core 1)**: This exam covers topics like mobile devices, networking technology, hardware, virtualization, and cloud computing.
 - **CompTIA A+ 220-1002 (Core 2)**: This exam focuses on topics such as operating systems, security, software troubleshooting, and operational procedures.

@@ -29,7 +29,7 @@ To query objects in MongoDB, you can use dot notation to access nested fields. F
 
 ```javascript
 db.collection.find({
-  "address.city": "New York"
+  'address.city': 'New York',
 });
 ```
 
@@ -39,8 +39,8 @@ When updating documents with objects, it's important to use appropriate update o
 
 ```javascript
 db.collection.updateOne(
-  { "name": "Alice" },
-  { "$set": { "address.city": "Los Angeles" } }
+  { name: 'Alice' },
+  { $set: { 'address.city': 'Los Angeles' } }
 );
 ```
 

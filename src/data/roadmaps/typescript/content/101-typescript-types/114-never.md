@@ -14,7 +14,7 @@ function error(message: string): never {
 
 // Inferred return type is never
 function fail() {
-  return error("Something failed");
+  return error('Something failed');
 }
 
 // Function returning never must not have a reachable end point

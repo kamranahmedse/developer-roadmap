@@ -27,7 +27,7 @@ In MongoDB, Double data type is represented as BSON.Double - BSON being the bina
 When querying the stored data, you can explicitly cast the value as a Double:
 
 ```javascript
-db.my_collection.find({"value": {$type: "double"}})
+db.my_collection.find({ value: { $type: 'double' } });
 ```
 
 It's important to always remember that although MongoDB provides flexibility in terms of storage, it is crucial to understand the impact of using various data types on performance and storage efficiency.

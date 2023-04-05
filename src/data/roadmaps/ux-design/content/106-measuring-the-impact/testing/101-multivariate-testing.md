@@ -4,7 +4,7 @@ Multivariate testing is an advanced user testing method that allows designers to
 
 ## How it Works
 
-In a multivariate test, several design variations are presented to different groups of users simultaneously. The test seeks to measure the performance of each design variation utilizing clearly-defined metrics like conversion rates, number of clicks, or user engagement. Data is collected and analyzed to determine which variation has the greatest positive impact on those pre-identified metrics. 
+In a multivariate test, several design variations are presented to different groups of users simultaneously. The test seeks to measure the performance of each design variation utilizing clearly-defined metrics like conversion rates, number of clicks, or user engagement. Data is collected and analyzed to determine which variation has the greatest positive impact on those pre-identified metrics.
 
 ## Key Advantages
 
@@ -20,6 +20,6 @@ In a multivariate test, several design variations are presented to different gro
 
 ## Things to Consider
 
-Multivariate testing may require a larger user sample size compared to A/B testing, as more variations of the design are being analyzed. Additionally, this method works best when there is sufficient traffic or a high volume of user engagement. 
+Multivariate testing may require a larger user sample size compared to A/B testing, as more variations of the design are being analyzed. Additionally, this method works best when there is sufficient traffic or a high volume of user engagement.
 
 Keep in mind that while multivariate testing can provide valuable insights, it's important not to lose sight of the big picture. Focus on testing elements that are truly critical to your design goals and prioritize user feedback at every stage of the process.

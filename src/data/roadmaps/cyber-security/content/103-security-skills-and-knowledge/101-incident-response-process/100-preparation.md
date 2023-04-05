@@ -4,7 +4,7 @@ The **preparation** stage of the incident response process is crucial to ensure 
 
 ## Incident Response Plan
 
-An *Incident Response Plan* is a documented set of guidelines and procedures for identifying, investigating, and responding to security incidents. It should include the following components:
+An _Incident Response Plan_ is a documented set of guidelines and procedures for identifying, investigating, and responding to security incidents. It should include the following components:
 
 - **Roles and Responsibilities**: Define the roles within the incident response team and the responsibilities of each member.
 - **Incident Classification**: Establish criteria to classify incidents based on their severity, impact, and type.
@@ -14,7 +14,7 @@ An *Incident Response Plan* is a documented set of guidelines and procedures for
 
 ## Incident Response Team
 
-An *Incident Response Team* is a group of individuals within an organization that have been appointed to manage security incidents. The team should be comprised of members with diverse skillsets and backgrounds, including but not limited to:
+An _Incident Response Team_ is a group of individuals within an organization that have been appointed to manage security incidents. The team should be comprised of members with diverse skillsets and backgrounds, including but not limited to:
 
 - Security Analysts
 - Network Engineers

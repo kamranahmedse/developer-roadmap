@@ -6,8 +6,8 @@
 
 To use `$elemMatch`, you need to include it in your query with the syntax `{ <field>: { $elemMatch: { <query> } } }`.
 
-* `<field>`: The name of the array field for which you want to apply the `$elemMatch` operator.
-* `<query>`: A document containing the query conditions to be matched against the elements in the array.
+- `<field>`: The name of the array field for which you want to apply the `$elemMatch` operator.
+- `<query>`: A document containing the query conditions to be matched against the elements in the array.
 
 ## Example
 
@@ -36,16 +36,16 @@ Let's say you have a collection named `courseRecords` containing the following d
 If you want to find all the students who have scored 80 or above in Math and 70 or above in English, you can use `$elemMatch` as follows:
 
 ```javascript
-db.courseRecords.find( {
-  "grades": {
+db.courseRecords.find({
+  grades: {
     $elemMatch: {
-      "subject": "Math",
-      "score": { $gte: 80 },
-      "subject": "English",
-      "score": { $gte: 70 }
-    }
-  }
-} )
+      subject: 'Math',
+      score: { $gte: 80 },
+      subject: 'English',
+      score: { $gte: 70 },
+    },
+  },
+});
 ```
 
 This would return the records for Mary and Tom.

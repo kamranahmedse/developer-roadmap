@@ -11,7 +11,7 @@ In this section, we'll be exploring **query operators** in MongoDB. Query operat
 
 Let's explore each category in more detail.
 
-##  Comparison Operators
+## Comparison Operators
 
 Comparison operators allow you to compare the value of a field with specified values. Some common comparison operators are:
 
@@ -24,7 +24,7 @@ Comparison operators allow you to compare the value of a field with specified va
 - `$in`: Matches values that are in the specified array.
 - `$nin`: Matches values that are not in the specified array.
 
-##  Logical Operators
+## Logical Operators
 
 Logical operators provide ways to combine multiple query conditions. Some common logical operators include:
 
@@ -33,14 +33,14 @@ Logical operators provide ways to combine multiple query conditions. Some common
 - `$not`: Matches documents where the specified condition is not true.
 - `$nor`: Matches documents where none of the specified conditions are true.
 
-##  Element Operators
+## Element Operators
 
 Element operators target specific elements within documents, including:
 
 - `$exists`: Matches documents that have the specified field.
 - `$type`: Matches documents where the specified field is of the specified BSON type.
 
-##  Evaluation Operators
+## Evaluation Operators
 
 Evaluation operators perform operations on specific fields and values, such as regular expression searches or checking the size of arrays. Some examples include:
 
@@ -51,7 +51,7 @@ Evaluation operators perform operations on specific fields and values, such as r
 - `$text`: Performs text search on the content of indexed fields in the documents.
 - `$where`: Matches documents that satisfy a JavaScript expression.
 
-##  Array Operators
+## Array Operators
 
 Array operators are used to query or manipulate documents that contain arrays. Some common array operators include:
 
@@ -59,7 +59,7 @@ Array operators are used to query or manipulate documents that contain arrays. S
 - `$elemMatch`: Matches documents where an array field contains at least one element that matches the specified conditions.
 - `$size`: Matches documents where an array field contains a specified number of elements.
 
-##  Bitwise Operators
+## Bitwise Operators
 
 Bitwise operators allow you to perform bit manipulation on integer values. Some examples are:
 

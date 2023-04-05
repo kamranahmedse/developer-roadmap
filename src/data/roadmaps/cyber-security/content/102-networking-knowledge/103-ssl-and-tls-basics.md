@@ -12,9 +12,9 @@ TLS is an improved and more secure version of SSL, with TLS 1.0 being released a
 
 ## Key Components
 
-* **Encryption**: SSL and TLS use powerful algorithms to protect data through encryption, ensuring it's unreadable by anyone without the proper decryption keys.
-* **Authentication**: SSL/TLS digital certificates verify the identities of clients and servers, providing trust and authenticity.
-* **Integrity**: These security protocols use message authentication codes to ensure that the data sent between clients and servers has not been tampered with during transmission.
+- **Encryption**: SSL and TLS use powerful algorithms to protect data through encryption, ensuring it's unreadable by anyone without the proper decryption keys.
+- **Authentication**: SSL/TLS digital certificates verify the identities of clients and servers, providing trust and authenticity.
+- **Integrity**: These security protocols use message authentication codes to ensure that the data sent between clients and servers has not been tampered with during transmission.
 
 ## Handshake Process
 

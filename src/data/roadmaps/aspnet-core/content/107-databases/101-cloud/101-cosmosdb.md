@@ -1,7 +1,5 @@
 # CosmosDB
 
-
-
 For more information, visit the following resources:
 
 - [What is Azure Cosmos DB?](https://intellipaat.com/blog/what-is-azure-cosmos-db/)

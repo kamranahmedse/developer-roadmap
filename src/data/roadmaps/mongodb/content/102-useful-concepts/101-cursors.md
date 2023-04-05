@@ -15,7 +15,7 @@ const cursor = db.collection('myCollection').find();
 You can then iterate over the documents in the result set using the cursor's `forEach` method or other methods like `toArray()` or `next()`:
 
 ```javascript
-cursor.forEach(doc => {
+cursor.forEach((doc) => {
   console.log(doc);
 });
 ```
@@ -33,7 +33,8 @@ Cursors provide several methods that allow you to manipulate the result set and 
 You can chain these methods together to build complex queries:
 
 ```javascript
-const cursor = db.collection('myCollection')
+const cursor = db
+  .collection('myCollection')
   .find({ age: { $gt: 25 } })
   .sort('name', 1)
   .limit(10)

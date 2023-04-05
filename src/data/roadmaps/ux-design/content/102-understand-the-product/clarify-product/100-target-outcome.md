@@ -1,6 +1,6 @@
 # Target Outcome
 
-The target outcome is a clear, measurable, and time-bound objective that your product aims to achieve. It defines the desired results for your users and becomes the focal point for the entire product design process. A well-defined target outcome ensures that your UX design is aligned with your users' needs and your business goals. 
+The target outcome is a clear, measurable, and time-bound objective that your product aims to achieve. It defines the desired results for your users and becomes the focal point for the entire product design process. A well-defined target outcome ensures that your UX design is aligned with your users' needs and your business goals.
 
 Here are a few key elements to consider when defining your target outcome:
 

@@ -6,7 +6,7 @@ Artillery prioritizes developer productivity and happiness, and follows the "bat
 
 ## Features
 
-- Emulate complex user behavior with scenarios 
+- Emulate complex user behavior with scenarios
 - Load testing and smoke testing
 - Batteries included
 - Extensible & hackable

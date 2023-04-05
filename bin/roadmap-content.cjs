@@ -95,7 +95,9 @@ async function run() {
 
   const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
   const groups = roadmapJson?.mockup?.controls?.control?.filter(
-    (control) => control.typeID === '__group__' && !control.properties?.controlName?.startsWith('ext_link')
+    (control) =>
+      control.typeID === '__group__' &&
+      !control.properties?.controlName?.startsWith('ext_link')
   );
 
   if (!OPEN_AI_API_KEY) {
@@ -106,9 +108,14 @@ async function run() {
 
   for (let group of groups) {
     const topicId = group?.properties?.controlName;
-    const topicTitle = group?.children?.controls?.control?.find((control) => control?.typeID === 'Label')?.properties
-      ?.text;
-    const currTopicUrl = topicId.replace(/^\d+-/g, '/').replace(/:/g, '/');
+    const topicTitle = group?.children?.controls?.control?.find(
+      (control) => control?.typeID === 'Label'
+    )?.properties?.text;
+    const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
+    if (!currTopicUrl) {
+      continue;
+    }
+
     const contentFilePath = topicUrlToPathMapping[currTopicUrl];
 
     if (!contentFilePath) {

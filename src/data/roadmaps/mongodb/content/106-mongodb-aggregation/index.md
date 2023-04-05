@@ -12,10 +12,10 @@ Example of a simple aggregation pipeline:
 
 ```javascript
 db.collection.aggregate([
-   { $match: { status: "A" } },
-   { $group: { _id: "$cust_id", total: { $sum: "$amount" } } },
-   { $sort: { total: -1 } }
-])
+  { $match: { status: 'A' } },
+  { $group: { _id: '$cust_id', total: { $sum: '$amount' } } },
+  { $sort: { total: -1 } },
+]);
 ```
 
 ## Map-Reduce
@@ -26,13 +26,17 @@ Example of a simple map-reduce function:
 
 ```javascript
 db.collection.mapReduce(
-   function() { emit(this.cust_id, this.amount); },
-   function(key, values) { return Array.sum(values) },
-   {
-     query: { status: "A" },
-     out: "order_totals"
-   }
-)
+  function () {
+    emit(this.cust_id, this.amount);
+  },
+  function (key, values) {
+    return Array.sum(values);
+  },
+  {
+    query: { status: 'A' },
+    out: 'order_totals',
+  }
+);
 ```
 
 ## Single-Purpose Aggregation
@@ -42,7 +46,7 @@ MongoDB also supports single-purpose aggregation methods, such as `db.collection
 Example of db.collection.count():
 
 ```javascript
-db.collection.count({ status: "A" })
+db.collection.count({ status: 'A' });
 ```
 
 In conclusion, MongoDB Aggregation is a powerful feature that helps you extract, manipulate and aggregate data from your collections. By using aggregation pipelines, map-reduce functions or single-purpose aggregation methods, you can perform various data analysis tasks efficiently on your MongoDB dataset.
