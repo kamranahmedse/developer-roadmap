@@ -1,15 +1,19 @@
 ---
-import SkeletonLayout from '../layouts/SkeletonLayout.astro';
+import Icon from '../components/Icon.astro';
+import SettingLayout from '../layouts/SettingLayout.astro';
 ---
 
-<SkeletonLayout title='Verify Email'>
-  <section class='flex h-screen w-screen flex-col items-center justify-center'>
+<SettingLayout title='Verify Email'>
+  <section class='container py-20'>
     <div class='mx-auto max-w-md'>
-      <h2 class="text-2xl text-center font-semibold">Great, now verify your email</h2>
-      <div class='mt-10 space-y-5'>
+      <Icon icon='verify-letter' class='mx-auto h-40 w-40' />
+      <h2 class='mt-5 text-center text-2xl font-semibold'>
+        Great, now verify your email
+      </h2>
+      <div class='mt-5 space-y-6'>
         <p>
-          Check your inbox at <a class='font-bold underline'
-            >kamran@roadmap.sh</a
+          Check your inbox at <span class='font-bold' data-email-to
+            >john@example.com</span
           > and click the verification link inside to complete your registration.
           This link will expire shortly, so verify soon!
         </p>
@@ -18,9 +22,90 @@ import SkeletonLayout from '../layouts/SkeletonLayout.astro';
           <span class='font-bold'>Don't see an email?</span> Check your spam folder.
         </div>
         <div>
-          <span class='font-bold'>Link expired?</span> Resend verification email.
+          <span class='font-bold'>Link expired?</span>
+          <button
+            data-resend-button
+            class='text-blue-700 disabled:cursor-not-allowed'
+            disabled>Resend verification email.</button
+          >
         </div>
       </div>
+      <div data-message></div>
     </div>
   </section>
-</SkeletonLayout>
+</SettingLayout>
+
+<script>
+  import Cookies from 'js-cookie';
+  import { TOKEN_COOKIE_NAME } from '../lib/constants';
+  const emailTo = document.querySelector('[data-email-to]');
+  const resendButton = document.querySelector(
+    'button[data-resend-button]'
+  ) as HTMLButtonElement | null;
+  const message = document.querySelector(
+    '[data-message]'
+  ) as HTMLDivElement | null;
+
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+  let email = '';
+
+  window.addEventListener('load', () => {
+    // Get all query params and send them to v1-github-callback
+    const urlParams = new URLSearchParams(window.location.search);
+    email = urlParams.get('email') as string;
+
+    if (!email || token) {
+      // TODO: redirect to home page
+      return window.location.replace('/');
+    }
+
+    if (emailTo?.textContent) {
+      // Make resend button clickable
+      resendButton?.removeAttribute('disabled');
+      emailTo.textContent = email;
+    }
+  });
+
+  // Handle resend button click
+  resendButton?.addEventListener('click', async () => {
+    // Disable button
+    resendButton.setAttribute('disabled', 'true');
+
+    // Send request to resend email
+    try {
+      const res = await fetch(
+        'http://localhost:8080/v1-send-verification-email',
+        {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            email,
+          }),
+        }
+      );
+      const json = await res.json();
+
+      // If the response isn't ok, we'll throw an error
+      console.log(res);
+      if (!res.ok) {
+        throw new Error(json.message);
+      }
+
+      // If the response is ok, we'll show a success message
+      if (message?.innerHTML === '' || message?.innerHTML) {
+        message.innerHTML = `<div class="mt-2 rounded-lg p-2 bg-green-100 text-green-800">Verification instructions have been sent to your email.</div>`;
+      }
+      resendButton.removeAttribute('disabled');
+    } catch (error: any) {
+      console.error(error);
+
+      if (message?.innerHTML === '' || message?.innerHTML) {
+        message.innerHTML = `<div class="mt-2 rounded-lg p-2 bg-red-100 text-red-800">${error?.message}</div>`;
+      }
+      // Enable the resend button
+      resendButton.removeAttribute('disabled');
+    }
+  });
+</script>

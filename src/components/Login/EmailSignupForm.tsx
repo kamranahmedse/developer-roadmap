@@ -35,6 +35,7 @@ const EmailSignupForm: FunctionComponent<{}> = () => {
           .then(async (res) => {
             const json = await res.json();
             if (res.status === 200) {
+              window.location.href = `/verify?email=${email}`;
               setName('');
               setEmail('');
               setPassword('');
