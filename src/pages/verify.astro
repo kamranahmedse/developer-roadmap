@@ -1,0 +1,26 @@
+---
+import SkeletonLayout from '../layouts/SkeletonLayout.astro';
+---
+
+<SkeletonLayout title='Verify Email'>
+  <section class='flex h-screen w-screen flex-col items-center justify-center'>
+    <div class='mx-auto max-w-md'>
+      <h2 class="text-2xl text-center font-semibold">Great, now verify your email</h2>
+      <div class='mt-10 space-y-5'>
+        <p>
+          Check your inbox at <a class='font-bold underline'
+            >kamran@roadmap.sh</a
+          > and click the verification link inside to complete your registration.
+          This link will expire shortly, so verify soon!
+        </p>
+
+        <div>
+          <span class='font-bold'>Don't see an email?</span> Check your spam folder.
+        </div>
+        <div>
+          <span class='font-bold'>Link expired?</span> Resend verification email.
+        </div>
+      </div>
+    </div>
+  </section>
+</SkeletonLayout>
