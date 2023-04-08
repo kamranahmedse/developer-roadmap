@@ -1,6 +1,6 @@
 ---
-import Icon from './Icon.astro';
-import AccountNavigation from './Login/AccountNavigation.astro';
+import Icon from '../Icon.astro';
+import AccountDropdown from './AccountDropdown.astro';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -27,7 +27,15 @@ import AccountNavigation from './Login/AccountNavigation.astro';
         <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
       <li>
-        <AccountNavigation />
+        <AccountDropdown />
+
+        <a
+          data-guest-required
+          class='flex h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+          href='/signup'
+        >
+          <span>Register</span>
+        </a>
       </li>
     </ul>
 
@@ -35,7 +43,7 @@ import AccountNavigation from './Login/AccountNavigation.astro';
     <button
       class='block cursor-pointer text-gray-400 hover:text-gray-50 sm:hidden'
       aria-label='Menu'
-      show-mobile-nav
+      data-show-mobile-nav
     >
       <Icon icon='hamburger' />
     </button>
@@ -43,10 +51,10 @@ import AccountNavigation from './Login/AccountNavigation.astro';
     <!-- Mobile Navigation Items -->
     <div
       class='fixed top-0 bottom-0 left-0 right-0 z-40 flex hidden items-center bg-slate-900'
-      mobile-nav
+      data-mobile-nav
     >
       <button
-        close-mobile-nav
+        data-close-mobile-nav
         class='absolute top-6 right-6 block cursor-pointer text-gray-400 hover:text-gray-50'
         aria-label='Close Menu'
       >
@@ -76,12 +84,14 @@ import AccountNavigation from './Login/AccountNavigation.astro';
             Videos
           </a>
         </li>
-        <li id='profile-mobile-nav' class='hidden'>
+
+        <!-- Links for logged in users -->
+        <li data-auth-required class='hidden'>
           <a href='/profile' class='text-xl hover:text-blue-300 md:text-lg'>
             Profile
           </a>
         </li>
-        <li id='settings-mobile-nav' class='hidden'>
+        <li data-auth-required class='hidden'>
           <a
             href='/settings/profile'
             class='text-xl hover:text-blue-300 md:text-lg'
@@ -89,15 +99,18 @@ import AccountNavigation from './Login/AccountNavigation.astro';
             Settings
           </a>
         </li>
-        <li id='logout-mobile-nav' class='hidden'>
-          <button class='text-xl text-red-300 hover:text-red-400 md:text-lg'>
+        <li data-auth-required class='hidden'>
+          <button
+            data-logout-button
+            class='text-xl text-red-300 hover:text-red-400 md:text-lg'
+          >
             Logout
           </button>
         </li>
         <li>
           <a
+            data-guest-required
             href='/signup'
-            id='register-mobile-nav'
             class='text-xl text-red-300 hover:text-red-400 md:text-lg'
           >
             Register
@@ -108,42 +121,4 @@ import AccountNavigation from './Login/AccountNavigation.astro';
   </nav>
 </div>
 
-<script>
-  import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../lib/constants';
-
-  const profileLink = document.getElementById('profile-mobile-nav');
-  const logoutButton = document.getElementById('logout-mobile-nav');
-  const registerLink = document.getElementById('register-mobile-nav');
-  const settingsLink = document.getElementById('settings-mobile-nav');
-
-  const token = Cookies.get(TOKEN_COOKIE_NAME);
-
-  if (token) {
-    profileLink?.classList.remove('hidden');
-    logoutButton?.classList.remove('hidden');
-    registerLink?.classList.add('hidden');
-    settingsLink?.classList.remove('hidden');
-  } else {
-    profileLink?.classList.add('hidden');
-    logoutButton?.classList.add('hidden');
-    settingsLink?.classList.add('hidden');
-    registerLink?.classList.remove('hidden');
-  }
-
-  // Remove the token cookie and redirect to the homepage
-  logoutButton?.addEventListener('click', () => {
-    Cookies.remove(TOKEN_COOKIE_NAME);
-    window.location.href = '/';
-  });
-
-  document.querySelector('[show-mobile-nav]')?.addEventListener('click', () => {
-    document.querySelector('[mobile-nav]')?.classList.remove('hidden');
-  });
-
-  document
-    .querySelector('[close-mobile-nav]')
-    ?.addEventListener('click', () => {
-      document.querySelector('[mobile-nav]')?.classList.add('hidden');
-    });
-</script>
+<script src='./navigation.ts'></script>

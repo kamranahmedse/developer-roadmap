@@ -1,17 +1,18 @@
 ---
 ---
 
-<script src='./analytics.js'></script>
+<script src='./analytics.ts'></script>
 <script async src='https://www.googletagmanager.com/gtag/js?id=UA-139582634-1'
 ></script>
 <script is:inline>
   // @ts-nocheck
   window.dataLayer = window.dataLayer || [];
+
   function gtag() {
     dataLayer.push(arguments);
   }
-  gtag('js', new Date());
 
+  gtag('js', new Date());
   gtag('config', 'UA-139582634-1');
 
   document.addEventListener('click', (e) => {
