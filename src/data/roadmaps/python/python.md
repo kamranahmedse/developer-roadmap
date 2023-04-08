@@ -17,14 +17,14 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 sponsor:
-  url: 'https://developer.fermyon.com/spin/python-components?utm_source=python&utm_medium=banner&utm_campaign=roadmap-sh'
-  title: 'Serverless Python Apps'
-  imageUrl: 'https://i.imgur.com/2ONZopb.jpg'
-  description: 'Go from blinking cursor to deployed serverless Python apps in 66 seconds with Fermyon Cloud.'
+  url: 'https://www.honeycomb.io/blog/how-we-define-sre-work-as-team?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'Day in the Life of an SRE'
+  imageUrl: 'https://i.imgur.com/xANWBZQ.jpg'
+  description: 'Dive into the world of SRE work to better understand an SRE’s role in driving incident response.'
   event:
     category: 'SponsorClick'
-    action: 'Fermyon Redirect'
-    label: 'Python / Fermyon Link'
+    action: 'Honeycomb Redirect'
+    label: 'Python / Honeycomb Link'
 seo:
   title: 'Learn to become a modern Python developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for python development. Learn to become a modern Python developer by following the steps, skills, resources and guides listed in this roadmap.'
@@ -55,3 +55,4 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+

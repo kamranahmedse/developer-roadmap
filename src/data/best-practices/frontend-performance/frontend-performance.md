@@ -11,6 +11,15 @@ description: 'Detailed list of best practices to improve your frontend performan
 dimensions:
   width: 968
   height: 1270.89
+sponsor:
+  url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'Free eBook'
+  imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
+  description: 'Get this ebook to start your observability journey for quicker debugging & more time to innovate.'
+  event:
+    category: 'SponsorClick'
+    action: 'Honeycomb Redirect'
+    label: 'Frontend Performance / Honeycomb Link'
 schema:
   headline: 'Frontend Performance Best Practices'
   description: 'Detailed list of best practices to improve the frontend performance of your website. Each best practice carries further details and how to implement that best practice.'
@@ -27,3 +36,4 @@ seo:
     - 'frontend checklist'
     - 'make performant frontends'
 ---
+

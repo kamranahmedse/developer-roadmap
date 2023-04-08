@@ -1,5 +1,4 @@
 ---
-# jsonUrl: "/jsons/roadmaps/android.json"
 pdfUrl: '/pdfs/roadmaps/android.pdf'
 order: 4
 briefTitle: 'Android'
@@ -41,7 +40,6 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-
 The intent of this guide is to give you an idea about the Android development landscape and to help guide your learning if you are confused. Before we start, please note that the roadmap is opinionated, and you might have different opinions than those of the author. Having said that, [we would love to hear your opinions](https://github.com/kamranahmedse/developer-roadmap/issues/new) and incorporate them in the roadmap if suitable.
 
 There are multiple ways to develop applications for Android; you can go down the path of hybrid application development where [Flutter](https://flutter.dev/), [React-Native](https://reactnative.dev/), or [NativeScript](https://www.nativescript.org/) are the most common contenders. Flutter uses Dart, whereas React Native and Native Script rely on JavaScript. Answering the question of hybrid vs native is out of the scope of this roadmap. This roadmap is focused on native Android app development, but if you are interested in learning any hybrid framework, my personal preference is [React-Native](https://reactnative.dev) and I would recommend you check out the [Frontend Developer Roadmap](/frontend).

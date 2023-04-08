@@ -11,6 +11,15 @@ isNew: true
 dimensions:
   width: 968
   height: 1884.38
+sponsor:
+  url: 'https://liblab.com/blog/writing-files-to-github-with-octokit-and-typescript?utm_source=roadmap_typescript&utm_medium=edge_stack&utm_campaign=april23'
+  title: 'Automation with Octokit'
+  imageUrl: 'https://i.imgur.com/ZmuZUmS.png'
+  description: 'Automate file commits and repo management on GitHub with the Octokit SDK.'
+  event:
+    category: 'SponsorClick'
+    action: 'Liblab Redirect'
+    label: 'TypeScript / Liblab Link'
 schema:
   headline: 'TypeScript Roadmap'
   description: 'Learn everything about TypeScript with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -48,3 +57,4 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+

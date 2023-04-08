@@ -12,14 +12,14 @@ dimensions:
   width: 968
   height: 2474.06
 sponsor:
-  url: 'https://bit.ly/3YYcqdt'
-  title: 'Free eBook'
-  imageUrl: 'https://i.imgur.com/RCbFXOY.png'
-  description: 'Learn how to find a GraphQL architecture that scales with this free eBook from Apollo'
+  url: 'https://www.honeycomb.io/blog/building-platform-team?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'How to Lead a Platform Team'
+  imageUrl: 'https://i.imgur.com/XG7MEWs.jpg'
+  description: 'Master building & executing a top-performing platform engineering team with this guide.'
   event:
     category: 'SponsorClick'
-    action: 'Apollo Redirect'
-    label: 'Node.js / Apollo Link'
+    action: 'Honeycomb Redirect'
+    label: 'Node.js / Honeycomb Link'
 schema:
   headline: 'Node.js Roadmap'
   description: 'Learn Node.js with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -91,3 +91,4 @@ tags:
   - 'main-sitemap'
   - 'skill-roadmap'
 ---
+
