@@ -4,7 +4,7 @@ import Icon from '../Icon.astro';
 
 <div class='relative hidden' data-auth-required>
   <button
-    class='flex h-8 w-28 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-purple-700 py-2 px-4 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600'
+    class='flex h-8 w-28 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600'
     type='button'
     data-account-button
   >
@@ -19,6 +19,7 @@ import Icon from '../Icon.astro';
 
   <div
     class='absolute right-0 z-10 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
+    data-account-dropdown
   >
     <ul>
       <li class='px-1'>
@@ -41,12 +42,3 @@ import Icon from '../Icon.astro';
     </ul>
   </div>
 </div>
-
-<script>
-  const accountButton = document.querySelector('[data-account-button]');
-  const accountMenu = accountButton?.nextElementSibling;
-
-  accountButton?.addEventListener('click', () => {
-    accountMenu?.classList.toggle('hidden');
-  });
-</script>

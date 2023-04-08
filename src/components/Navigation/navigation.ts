@@ -23,6 +23,15 @@ function bindEvents() {
       document.querySelector('[data-mobile-nav]')?.classList.add('hidden');
     }
   });
+
+  document
+    .querySelector('[data-account-button]')
+    ?.addEventListener('click', (e) => {
+      e.stopPropagation();
+      document
+        .querySelector('[data-account-dropdown]')
+        ?.classList.toggle('hidden');
+    });
 }
 
 bindEvents();

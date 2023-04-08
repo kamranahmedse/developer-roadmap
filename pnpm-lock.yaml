@@ -2,12 +2,12 @@ lockfileVersion: 5.4
 
 specifiers:
   '@astrojs/preact': ^2.1.0
-  '@astrojs/sitemap': ^1.2.1
+  '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.1.1
-  '@playwright/test': ^1.32.1
+  '@playwright/test': ^1.32.2
   '@tailwindcss/typography': ^0.5.9
   '@types/js-cookie': ^3.0.3
-  astro: ^2.1.9
+  astro: ^2.2.1
   astro-compress: ^1.1.35
   gh-pages: ^5.0.0
   jose: ^4.13.1
@@ -15,19 +15,19 @@ specifiers:
   js-yaml: ^4.1.0
   markdown-it: ^13.0.1
   node-html-parser: ^6.1.5
-  npm-check-updates: ^16.9.0
+  npm-check-updates: ^16.10.7
   openai: ^3.2.1
-  preact: ^10.6.5
+  preact: ^10.13.2
   prettier: ^2.8.7
   prettier-plugin-astro: ^0.8.0
-  prettier-plugin-tailwindcss: ^0.2.6
+  prettier-plugin-tailwindcss: ^0.2.7
   rehype-external-links: ^2.0.1
   roadmap-renderer: ^1.0.4
   tailwindcss: ^3.3.1
 
 dependencies:
   '@astrojs/preact': 2.1.0_preact@10.13.2
-  '@astrojs/sitemap': 1.2.1
+  '@astrojs/sitemap': 1.2.2
   '@astrojs/tailwind': 3.1.1_6525wktvnrshh7tftflomd327i
   astro: 2.2.1
   astro-compress: 1.1.35
@@ -41,7 +41,7 @@ dependencies:
   tailwindcss: 3.3.1
 
 devDependencies:
-  '@playwright/test': 1.32.1
+  '@playwright/test': 1.32.2
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.1
   '@types/js-cookie': 3.0.3
   gh-pages: 5.0.0
@@ -50,7 +50,7 @@ devDependencies:
   openai: 3.2.1
   prettier: 2.8.7
   prettier-plugin-astro: 0.8.0
-  prettier-plugin-tailwindcss: 0.2.6_kb4gmvngxncp3puqxt3b6slppy
+  prettier-plugin-tailwindcss: 0.2.7_kb4gmvngxncp3puqxt3b6slppy
 
 packages:
 
@@ -138,8 +138,8 @@ packages:
       prismjs: 1.29.0
     dev: false
 
-  /@astrojs/sitemap/1.2.1:
-    resolution: {integrity: sha512-nlKP1qc1ENZ61w+ep5RdsObjYWso4QdLGC5WyzssnKkgVDijHT61s/tHFfBWHhxqdjcw4x1V1um/eSQZPDTR3Q==}
+  /@astrojs/sitemap/1.2.2:
+    resolution: {integrity: sha512-rjgFEPzETMVYgOMECIFP2vCkwzF9nLB31/6XWN548IeU/IlFgYR28RbsGTIjUElDak/9AF3jzjtzyldAZger3Q==}
     dependencies:
       sitemap: 7.1.1
       zod: 3.20.2
@@ -792,13 +792,13 @@ packages:
       tiny-glob: 0.2.9
       tslib: 2.4.1
 
-  /@playwright/test/1.32.1:
-    resolution: {integrity: sha512-FTwjCuhlm1qHUGf4hWjfr64UMJD/z0hXYbk+O387Ioe6WdyZQ+0TBDAc6P+pHjx2xCv1VYNgrKbYrNixFWy4Dg==}
+  /@playwright/test/1.32.2:
+    resolution: {integrity: sha512-nhaTSDpEdTTttdkDE8Z6K3icuG1DVRxrl98Qq0Lfc63SS9a2sjc9+x8ezysh7MzCKz6Y+nArml3/mmt+gqRmQQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 17.0.45
-      playwright-core: 1.32.1
+      playwright-core: 1.32.2
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -4182,8 +4182,8 @@ packages:
       find-up: 3.0.0
     dev: false
 
-  /playwright-core/1.32.1:
-    resolution: {integrity: sha512-KZYUQC10mXD2Am1rGlidaalNGYk3LU1vZqqNk0gT4XPty1jOqgup8KDP8l2CUlqoNKhXM5IfGjWgW37xvGllBA==}
+  /playwright-core/1.32.2:
+    resolution: {integrity: sha512-zD7aonO+07kOTthsrCR3YCVnDcqSHIJpdFUtZEMOb6//1Rc7/6mZDRdw+nlzcQiQltOOsiqI3rrSyn/SlyjnJQ==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -4338,8 +4338,8 @@ packages:
       synckit: 0.8.4
     dev: true
 
-  /prettier-plugin-tailwindcss/0.2.6_kb4gmvngxncp3puqxt3b6slppy:
-    resolution: {integrity: sha512-F+7XCl9RLF/LPrGdUMHWpsT6TM31JraonAUyE6eBmpqymFvDwyl0ETHsKFHP1NG+sEfv8bmKqnTxEbWQbHPlBA==}
+  /prettier-plugin-tailwindcss/0.2.7_kb4gmvngxncp3puqxt3b6slppy:
+    resolution: {integrity: sha512-jQopIOgjLpX+y8HeD56XZw7onupRTC0cw7eKKUimI7vhjkPF5/1ltW5LyqaPtSyc8HvEpvNZsvvsGFa2qpa59w==}
     engines: {node: '>=12.17.0'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
