@@ -4,5 +4,5 @@ Polygon, formerly known as the Matic Network, is a scaling solution that aims to
 
 Visit the following resources to learn more:
 
-- [Polygon whitepaper](https://polygon.technology/lightpaper-polygon.pdf)
+- [Polygon whitepaper](https://github.com/maticnetwork/whitepaper)
 - [Introduction to Polygon](https://wiki.polygon.technology/docs/develop/getting-started)
