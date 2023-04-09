@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [Vue.js Composables](https://vuejs.org/guide/reusability/composables.html)
 - [What is a Composable? (Vue 3)](https://www.youtube.com/watch?v=h8yveYCbFQM)
-

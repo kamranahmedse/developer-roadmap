@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Everything you need to know about Design Systems](https://uxdesign.cc/everything-you-need-to-know-about-design-systems-54b109851969)
 - [Design Systems 101](https://www.nngroup.com/articles/design-systems-101/)
 - [A comprehensive guide to design systems](https://www.invisionapp.com/inside-design/guide-to-design-systems/)
-

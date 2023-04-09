@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [Let’s learn how module bundlers work](https://www.freecodecamp.org/news/lets-learn-how-module-bundlers-work-and-then-write-one-ourselves-b2e3fe6c88ae/)
 - [Module Bundlers Explained](https://www.youtube.com/watch?v=5IG4UmULyoA)
-

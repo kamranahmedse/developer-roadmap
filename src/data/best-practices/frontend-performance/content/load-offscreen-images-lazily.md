@@ -11,5 +11,5 @@ It will improve the response time of the current page and then avoid loading unn
 - [verlok/lazyload: GitHub](https://github.com/verlok/lazyload)
 - [aFarkas/lazysizes: GitHub](https://github.com/aFarkas/lazysizes/)
 - [mfranzke/loading-attribute-polyfill: GitHub](https://github.com/mfranzke/loading-attribute-polyfill/)
-- [Lazy Loading Images and Video  |  Web Fundamentals  |  Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
+- [Lazy Loading Images and Video | Web Fundamentals | Google Developers](https://developers.google.com/web/fundamentals/performance/lazy-loading-guidance/images-and-video/)
 - [5 Brilliant Ways to Lazy Load Images For Faster Page Loads - Dynamic Drive Blog](http://blog.dynamicdrive.com/5-brilliant-ways-to-lazy-load-images-for-faster-page-loads/)

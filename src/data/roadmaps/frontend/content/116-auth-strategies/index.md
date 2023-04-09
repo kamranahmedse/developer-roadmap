@@ -19,5 +19,3 @@ Visit the following resources to learn more:
 - [JWT Authentication](https://roadmap.sh/guides/jwt-authentication)
 - [OAuth](https://roadmap.sh/guides/oauth)
 - [SSO - Single Sign On](https://roadmap.sh/guides/sso)
-
-

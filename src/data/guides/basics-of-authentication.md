@@ -1,23 +1,23 @@
 ---
-title: "Basics of Authentication"
-description: "Learn the basics of Authentication and Authorization"
+title: 'Basics of Authentication'
+description: 'Learn the basics of Authentication and Authorization'
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
-  title: "Basics of Authentication - roadmap.sh"
-  description: "Learn the basics of Authentication and Authorization"
+  title: 'Basics of Authentication - roadmap.sh'
+  description: 'Learn the basics of Authentication and Authorization'
 isNew: false
-type: "textual"
+type: 'textual'
 date: 2022-09-21
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "textual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'textual-guide'
+  - 'guide-sitemap'
 ---
 
 Our last video series was about data structures. We looked at the most common data structures, their use cases, pros and cons, and the different operations you could perform on each data structure.
@@ -79,6 +79,7 @@ Two-factor authentication is similar to multifactor authentication. The only dif
 Next we have the difference between authentication and authorization. This comes up a lot in the interviews, and beginners often confuse them.
 
 ### What is Authentication
+
 Authentication is the process of verifying the identity. For example, when you enter your credentials at a login screen, the application here identifies you through your credentials. So this is what the authentication is, the process of verifying the identity.
 
 In case of an authentication failure, for example, if you enter an invalid username and password, the HTTP response code is "Unauthorized" 401.

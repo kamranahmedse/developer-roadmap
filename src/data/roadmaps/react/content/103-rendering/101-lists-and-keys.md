@@ -5,5 +5,6 @@ When you render lists in React, you can use the `key` prop to specify a unique k
 Visit the following resources to learn more:
 
 - [Lists and Keys](https://reactjs.org/docs/lists-and-keys.html)
+- [Rendering Lists](https://react.dev/learn/rendering-lists)
 - [List components in React by Example](https://www.robinwieruch.de/react-list-component/)
 - [Why do we need the key prop in React?](https://www.robinwieruch.de/react-list-key/)

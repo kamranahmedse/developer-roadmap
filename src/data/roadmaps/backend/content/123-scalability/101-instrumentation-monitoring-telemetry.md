@@ -8,6 +8,6 @@ Telemetry is the process of continuously collecting data from different componen
 
 Visit the following resources to learn more:
 
-- [What is Instrumentation?](https://en.wikipedia.org/wiki/Instrumentation_(computer_programming))
+- [What is Instrumentation?](<https://en.wikipedia.org/wiki/Instrumentation_(computer_programming)>)
 - [What is Monitoring?](https://www.yottaa.com/performance-monitoring-backend-vs-front-end-solutions/)
 - [What is Telemetry?](https://www.sumologic.com/insight/what-is-telemetry/)

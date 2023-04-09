@@ -2,7 +2,6 @@
 
 GitLab offers a CI/CD service that can be used as a SaaS offering or self-managed using your own resources. You can use GitLab CI with any GitLab hosted repository, or any BitBucket Cloud or GitHub repository in the GitLab Premium self-managed, GitLab Premium SaaS and higher tiers.
 
-
 Visit the following resources to learn more:
 
 - [GitLab Website](https://gitlab.com/)

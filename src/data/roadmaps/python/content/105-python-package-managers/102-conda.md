@@ -7,4 +7,3 @@ Conda as a package manager helps you find and install packages. If you need a pa
 Visit the following resources to learn more:
 
 - [Conda Docs](https://docs.conda.io/en/latest/)
-

@@ -18,7 +18,7 @@ function add(a: number, b: number): number {
 }
 
 let result = add(1, 2);
-console.log(result);    // 3
+console.log(result); // 3
 ```
 
 Learn more from the following links:

@@ -1,19 +1,19 @@
 ---
-title: "What is Dependency Injection?"
-description: "Learn what is dependency injection and how to write better code with the help of it."
-duration: "3 minutes"
+title: 'What is Dependency Injection?'
+description: 'Learn what is dependency injection and how to write better code with the help of it.'
+duration: '3 minutes'
 isNew: false
 date: 2020-07-04
 author:
-  name: "Kamran Ahmed"
-  url: "https://twitter.com/kamranahmedse"
-  imageUrl: "/authors/kamranahmedse.jpeg"
+  name: 'Kamran Ahmed'
+  url: 'https://twitter.com/kamranahmedse'
+  imageUrl: '/authors/kamranahmedse.jpeg'
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "video"
-  - "video-sitemap"
+  - 'video'
+  - 'video-sitemap'
 ---
 
 <iframe class="w-full aspect-video mb-5" src="https://www.youtube.com/embed/0yc2UANSDiw" title="What is Dependency Injection?"></iframe>

@@ -2,7 +2,7 @@
 
 JavaScript has two primitive values used to signal absent or uninitialized value: `null` (absent) and `undefined` (unintialized).
 
-TypeScript has two corresponding *types* by the same names. How these types behave depends on whether you have the `strictNullChecks` option on.
+TypeScript has two corresponding _types_ by the same names. How these types behave depends on whether you have the `strictNullChecks` option on.
 
 With `strictNullChecks` off, values that might be `null` or `undefined` can still be accessed normally, and the values `null` and `undefined` can be assigned to a property of any type. This is similar to how languages without `null` checks (e.g. C#, Java) behave. The lack of checking for these values tends to be a major source of bugs; TypeScript always recommend people turn `strictNullChecks` on if it’s practical to do so in the codebase.
 
@@ -13,7 +13,7 @@ function doSomething(x: string | null) {
   if (x === null) {
     // do nothing
   } else {
-    console.log("Hello, " + x.toUpperCase());
+    console.log('Hello, ' + x.toUpperCase());
   }
 }
 ```

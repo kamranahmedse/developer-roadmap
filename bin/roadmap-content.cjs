@@ -1,12 +1,13 @@
 const fs = require('fs');
 const path = require('path');
 
-const CONTENT_DIR = path.join(__dirname, '../content');
-// Directory containing the roadmaps
-const ROADMAP_CONTENT_DIR = path.join(__dirname, '../src/data/roadmaps');
+const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
+const ALL_ROADMAPS_DIR = path.join(__dirname, '../src/data/roadmaps');
+const ROADMAP_JSON_DIR = path.join(__dirname, '../public/jsons/roadmaps');
+
 const roadmapId = process.argv[2];
 
-const allowedRoadmapIds = fs.readdirSync(ROADMAP_CONTENT_DIR);
+const allowedRoadmapIds = fs.readdirSync(ALL_ROADMAPS_DIR);
 if (!roadmapId) {
   console.error('roadmapId is required');
   process.exit(1);
@@ -18,146 +19,144 @@ if (!allowedRoadmapIds.includes(roadmapId)) {
   process.exit(1);
 }
 
-// Directory holding the roadmap content files
-const roadmapDirName = fs
-  .readdirSync(ROADMAP_CONTENT_DIR)
-  .find((dirName) => dirName.replace(/\d+-/, '') === roadmapId);
-
-if (!roadmapDirName) {
-  console.error('Roadmap directory not found');
-  process.exit(1);
-}
-
-const roadmapDirPath = path.join(ROADMAP_CONTENT_DIR, roadmapDirName);
-const roadmapContentDirPath = path.join(
-  ROADMAP_CONTENT_DIR,
-  roadmapDirName,
-  'content'
-);
-
-// If roadmap content already exists do not proceed as it would override the files
-if (fs.existsSync(roadmapContentDirPath)) {
-  console.error(`Roadmap content already exists @ ${roadmapContentDirPath}`);
-  process.exit(1);
-}
-
-function prepareDirTree(control, dirTree, dirSortOrders) {
-  // Directories are only created for groups
-  if (control.typeID !== '__group__') {
-    return;
-  }
-
-  // e.g. 104-testing-your-apps:other-options
-  const controlName = control?.properties?.controlName || '';
-  // e.g. 104
-  const sortOrder = controlName.match(/^\d+/)?.[0];
-
-  // No directory for a group without control name
-  if (!controlName || !sortOrder) {
-    return;
-  }
-
-  // e.g. testing-your-apps:other-options
-  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '');
-  // e.g. ['testing-your-apps', 'other-options']
-  const dirParts = controlNameWithoutSortOrder.split(':');
-
-  // Nest the dir path in the dirTree
-  let currDirTree = dirTree;
-  dirParts.forEach((dirPart) => {
-    currDirTree[dirPart] = currDirTree[dirPart] || {};
-    currDirTree = currDirTree[dirPart];
-  });
-
-  dirSortOrders[controlNameWithoutSortOrder] = Number(sortOrder);
-
-  const childrenControls = control.children.controls.control;
-  // No more children
-  if (childrenControls.length) {
-    childrenControls.forEach((childControl) => {
-      prepareDirTree(childControl, dirTree, dirSortOrders);
-    });
-  }
-
-  return { dirTree, dirSortOrders };
-}
-
-const roadmap = require(path.join(__dirname, `../public/jsons/roadmaps/${roadmapId}`));
-const controls = roadmap.mockup.controls.control;
-
-// Prepare the dir tree that we will be creating and also calculate the sort orders
-const dirTree = {};
-const dirSortOrders = {};
-
-controls.forEach((control) => {
-  prepareDirTree(control, dirTree, dirSortOrders);
+const ROADMAP_CONTENT_DIR = path.join(ALL_ROADMAPS_DIR, roadmapId, 'content');
+const { Configuration, OpenAIApi } = require('openai');
+const configuration = new Configuration({
+  apiKey: OPEN_AI_API_KEY,
 });
 
-/**
- * @param parentDir Parent directory in which directory is to be created
- * @param dirTree Nested dir tree to be created
- * @param sortOrders Mapping from groupName to sort order
- * @param filePaths The mapping from groupName to file path
- */
-function createDirTree(parentDir, dirTree, sortOrders, filePaths = {}) {
-  const childrenDirNames = Object.keys(dirTree);
-  const hasChildren = childrenDirNames.length !== 0;
+const openai = new OpenAIApi(configuration);
 
-  // @todo write test for this, yolo for now
-  const groupName = parentDir
-    .replace(roadmapContentDirPath, '') // Remove base dir path
-    .replace(/(^\/)|(\/$)/g, '') // Remove trailing slashes
-    .replace(/(^\d+?-)/g, '') // Remove sorting information
-    .replaceAll('/', ':') // Replace slashes with `:`
-    .replace(/:\d+-/, ':');
+function getFilesInFolder(folderPath, fileList = {}) {
+  const files = fs.readdirSync(folderPath);
 
-  const humanizedGroupName = groupName
-    .split(':')
-    .pop()
-    ?.replaceAll('-', ' ')
-    .replace(/^\w/, ($0) => $0.toUpperCase());
+  files.forEach((file) => {
+    const filePath = path.join(folderPath, file);
+    const stats = fs.statSync(filePath);
 
-  const sortOrder = sortOrders[groupName] || '';
+    if (stats.isDirectory()) {
+      getFilesInFolder(filePath, fileList);
+    } else if (stats.isFile()) {
+      const fileUrl = filePath
+        .replace(ROADMAP_CONTENT_DIR, '') // Remove the content folder
+        .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
+        .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
+        .replace(/\.md$/, ''); // Remove `.md` from the end of file
 
-  // Attach sorting information to dirname
-  // e.g. /roadmaps/100-frontend/content/internet
-  // ———> /roadmaps/100-frontend/content/103-internet
-  if (sortOrder) {
-    parentDir = parentDir.replace(/(.+?)([^\/]+)?$/, `$1${sortOrder}-$2`);
-  }
-
-  // If no children, create a file for this under the parent directory
-  if (!hasChildren) {
-    let fileName = `${parentDir}.md`;
-    fs.writeFileSync(fileName, `# ${humanizedGroupName}`);
-
-    filePaths[groupName || 'home'] = fileName.replace(CONTENT_DIR, '');
-    return filePaths;
-  }
-
-  // There *are* children, so create the parent as a directory
-  // and create `index.md` as the content file for this
-  fs.mkdirSync(parentDir);
-
-  let readmeFilePath = path.join(parentDir, 'index.md');
-  fs.writeFileSync(readmeFilePath, `# ${humanizedGroupName}`);
-
-  filePaths[groupName || 'home'] = readmeFilePath.replace(CONTENT_DIR, '');
-
-  // For each of the directory names, create a
-  // directory inside the given directory
-  childrenDirNames.forEach((dirName) => {
-    createDirTree(
-      path.join(parentDir, dirName),
-      dirTree[dirName],
-      dirSortOrders,
-      filePaths
-    );
+      fileList[fileUrl] = filePath;
+    }
   });
 
-  return filePaths;
+  return fileList;
 }
 
-// Create directories and get back the paths for created directories
-createDirTree(roadmapContentDirPath, dirTree, dirSortOrders);
-console.log('Created roadmap content directory structure');
+function writeTopicContent(currTopicUrl) {
+  const [parentTopic, childTopic] = currTopicUrl
+    .replace(/^\d+-/g, '/')
+    .replace(/:/g, '/')
+    .replace(/^\//, '')
+    .split('/')
+    .slice(-2)
+    .map((topic) => topic.replace(/-/g, ' '));
+
+  const roadmapTitle = roadmapId.replace(/-/g, ' ');
+
+  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
+  if (!childTopic) {
+    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
+  }
+
+  console.log(`Genearting '${childTopic || parentTopic}'...`);
+
+  return new Promise((resolve, reject) => {
+    openai
+      .createChatCompletion({
+        model: 'gpt-4',
+        messages: [
+          {
+            role: 'user',
+            content: prompt,
+          },
+        ],
+      })
+      .then((response) => {
+        const article = response.data.choices[0].message.content;
+
+        resolve(article);
+      })
+      .catch((err) => {
+        reject(err);
+      });
+  });
+}
+
+async function run() {
+  const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
+
+  const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
+  const groups = roadmapJson?.mockup?.controls?.control?.filter(
+    (control) =>
+      control.typeID === '__group__' &&
+      !control.properties?.controlName?.startsWith('ext_link')
+  );
+
+  if (!OPEN_AI_API_KEY) {
+    console.log('----------------------------------------');
+    console.log('OPEN_AI_API_KEY not found. Skipping openai api calls...');
+    console.log('----------------------------------------');
+  }
+
+  for (let group of groups) {
+    const topicId = group?.properties?.controlName;
+    const topicTitle = group?.children?.controls?.control?.find(
+      (control) => control?.typeID === 'Label'
+    )?.properties?.text;
+    const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
+    if (!currTopicUrl) {
+      continue;
+    }
+
+    const contentFilePath = topicUrlToPathMapping[currTopicUrl];
+
+    if (!contentFilePath) {
+      console.log(`Missing file for: ${currTopicUrl}`);
+      return;
+    }
+
+    const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
+    const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() === '';
+
+    if (!isFileEmpty) {
+      console.log(`Ignoring ${topicId}. Not empty.`);
+      continue;
+    }
+
+    let newFileContent = `# ${topicTitle}`;
+
+    if (!OPEN_AI_API_KEY) {
+      console.log(`Writing ${topicId}..`);
+      fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+      continue;
+    }
+
+    const topicContent = await writeTopicContent(currTopicUrl);
+    newFileContent += `\n\n${topicContent}`;
+
+    console.log(`Writing ${topicId}..`);
+    fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+
+    // console.log(currentFileContent);
+    // console.log(currTopicUrl);
+    // console.log(topicTitle);
+    // console.log(topicUrlToPathMapping[currTopicUrl]);
+  }
+}
+
+run()
+  .then(() => {
+    console.log('Done');
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

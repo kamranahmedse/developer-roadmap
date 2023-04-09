@@ -9,5 +9,3 @@ Visit the following links for more resources:
 - [What is Spring Cloud Gateway?](https://tanzu.vmware.com/developer/guides/scg-what-is/)
 - [Spring Cloud Gateway](https://spring.io/projects/spring-cloud-gateway)
 - [Exploring the New Spring Cloud Gateway](https://www.baeldung.com/spring-cloud-gateway)
-
-

@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [ConfigMaps Documentation](https://kubernetes.io/docs/concepts/configuration/configmap/)
 - [Tutorial - ConfigMap in Kubernetes](https://www.youtube.com/watch?v=BPrC_lgmcHQ)
+- [Kubernetes CRDs: What They Are and Why They Are Useful](https://thenewstack.io/kubernetes-crds-what-they-are-and-why-they-are-useful/)

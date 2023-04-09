@@ -9,7 +9,7 @@ function identity<T>(arg: T): T {
   return arg;
 }
 
-let output = identity<string>("Hello");  // type of output will be 'string'
+let output = identity<string>('Hello'); // type of output will be 'string'
 ```
 
 In this example, the `identity` function takes a single argument of any data type and returns the same data type. The actual data type is specified when the function is called by using `<string>` before the argument `"Hello"`.

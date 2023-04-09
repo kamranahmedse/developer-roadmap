@@ -1,7 +1,7 @@
 # String Methods
 
 Python does not have a character data type, a single character is simply a string with a length of 1. Square bracket can be used to access elements of the string.
-There are methods which can be used on a string to best utilize it's wide range of functionalities. 
+There are methods which can be used on a string to best utilize it's wide range of functionalities.
 Below Given resources can be utilised to learn more about them.
 
 Visit the following resources to learn more:

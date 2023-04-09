@@ -10,7 +10,3 @@ Visit the following resources to learn more:
 - [Arrays in Python](https://www.edureka.co/blog/arrays-in-python/)
 - [Array Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=QJNwK2uJyGs)
 - [Linked List Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=odW9FU8jPRQ)
-
-
-
-

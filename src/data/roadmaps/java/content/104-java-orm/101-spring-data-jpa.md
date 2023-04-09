@@ -9,4 +9,4 @@ Visit the following resources to learn more:
 - [Spring Data JPA Tutorial](https://www.javatpoint.com/spring-and-jpa-integration)
 - [Spring Boot – Spring Data JPA](https://www.geeksforgeeks.org/spring-boot-spring-data-jpa/)
 - [Spring Data JPA Tutorial](https://youtu.be/XszpXoII9Sg)
-- [Spring Boot Tutorial - Spring Data  JPA](https://youtu.be/8SGI_XS5OPw)
+- [Spring Boot Tutorial - Spring Data JPA](https://youtu.be/8SGI_XS5OPw)

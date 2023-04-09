@@ -13,77 +13,121 @@ if (!apiKey || !sheetId) {
 const sheetRange = 'A3:I1001';
 const sheetUrl = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/${sheetRange}?key=${apiKey}`;
 
-function populateRoadmapAds({
-  roadmapUrl,
+function removeAllSponsors(baseContentDir) {
+  console.log('------------------------');
+  console.log('Removing sponsors from: ', baseContentDir);
+  console.log('------------------------');
+  const dataDirPath = path.join(__dirname, '../src/data');
+  const contentDirPath = path.join(dataDirPath, baseContentDir);
+
+  const contentDir = fs.readdirSync(contentDirPath);
+  contentDir.forEach((content) => {
+    console.log('Removing sponsor from: ', content);
+
+    const pageFilePath = path.join(contentDirPath, content, `${content}.md`);
+    const pageFileContent = fs.readFileSync(pageFilePath, 'utf8');
+
+    const frontMatterRegex = /---\n([\s\S]*?)\n---/;
+
+    const existingFrontmatter = pageFileContent.match(frontMatterRegex)[1];
+    const contentWithoutFrontmatter = pageFileContent
+      .replace(frontMatterRegex, ``)
+      .trim();
+
+    let frontmatterObj = yaml.load(existingFrontmatter);
+    delete frontmatterObj.sponsor;
+
+    const newFrontmatter = yaml.dump(frontmatterObj, {
+      lineWidth: 10000,
+      forceQuotes: true,
+      quotingType: "'",
+    });
+    const newContent = `---\n${newFrontmatter}---\n${contentWithoutFrontmatter}`;
+
+    fs.writeFileSync(pageFilePath, newContent, 'utf8');
+  });
+}
+
+function addPageSponsor({
+  pageUrl,
   company,
   redirectUrl,
   imageUrl,
   adTitle,
   adDescription,
-  startDate,
-  endDate,
-  isActive,
 }) {
-  const isConfiguredActive = isActive.toLowerCase() === 'yes';
-
-  const currentDate = new Date();
-  const isDateInRange = currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
-  const shouldShowAd = isConfiguredActive && isDateInRange;
-
-  // get id from the roadmap URL
-  const roadmapId = roadmapUrl
-    .split('/')
-    .pop()
+  const urlPart = pageUrl
+    .replace('https://roadmap.sh/', '')
     .replace(/\?.+?$/, '');
 
-  const roadmapFilePath = path.join(__dirname, '../src/data/roadmaps', `${roadmapId}/${roadmapId}.md`);
+  const parentDir = urlPart.startsWith('best-practices/')
+    ? 'best-practices'
+    : 'roadmaps';
+  const pageId = urlPart.replace(`${parentDir}/`, '');
 
-  if (!fs.existsSync(roadmapFilePath)) {
-    console.error(`Roadmap file not found: ${roadmapFilePath}`);
+  const pageFilePath = path.join(
+    __dirname,
+    `../src/data/${parentDir}`,
+    `${pageId}/${pageId}.md`
+  );
+
+  if (!fs.existsSync(pageFilePath)) {
+    console.error(`Page file not found: ${pageFilePath}`);
     process.exit(1);
   }
 
-  console.log(`Updating roadmap: ${roadmapId}`);
-  const roadmapFileContent = fs.readFileSync(roadmapFilePath, 'utf8');
+  console.log(`Updating page: ${urlPart}`);
+  const pageFileContent = fs.readFileSync(pageFilePath, 'utf8');
 
   const frontMatterRegex = /---\n([\s\S]*?)\n---/;
 
-  const existingFrontmatter = roadmapFileContent.match(frontMatterRegex)[1];
-  const contentWithoutFrontmatter = roadmapFileContent.replace(frontMatterRegex, ``).trim();
+  const existingFrontmatter = pageFileContent.match(frontMatterRegex)[1];
+  const contentWithoutFrontmatter = pageFileContent
+    .replace(frontMatterRegex, ``)
+    .trim();
 
   let frontmatterObj = yaml.load(existingFrontmatter);
   delete frontmatterObj.sponsor;
 
-  if (shouldShowAd) {
-    const frontmatterValues = Object.entries(frontmatterObj);
-    const roadmapLabel = frontmatterObj.briefTitle;
+  const frontmatterValues = Object.entries(frontmatterObj);
+  const roadmapLabel = frontmatterObj.briefTitle;
 
-    // Insert sponsor data at 10 index i.e. after
-    // roadmap dimensions in the fronmatter
-    frontmatterValues.splice(10, 0, [
-      'sponsor',
-      {
-        url: redirectUrl,
-        title: adTitle,
-        imageUrl,
-        description: adDescription,
-        event: {
-          category: 'SponsorClick',
-          action: `${company} Redirect`,
-          label: `${roadmapLabel} / ${company} Link`,
-        },
+  // Insert sponsor data at 10 index i.e. after
+  // roadmap dimensions in the frontmatter
+  frontmatterValues.splice(10, 0, [
+    'sponsor',
+    {
+      url: redirectUrl,
+      title: adTitle,
+      imageUrl,
+      description: adDescription,
+      event: {
+        category: 'SponsorClick',
+        action: `${company} Redirect`,
+        label: `${roadmapLabel} / ${company} Link`,
       },
-    ]);
+    },
+  ]);
 
-    frontmatterObj = Object.fromEntries(frontmatterValues);
-  }
+  frontmatterObj = Object.fromEntries(frontmatterValues);
 
-  const newFrontmatter = yaml.dump(frontmatterObj, { lineWidth: 10000, forceQuotes: true, quotingType: '"' });
+  const newFrontmatter = yaml.dump(frontmatterObj, {
+    lineWidth: 10000,
+    forceQuotes: true,
+    quotingType: "'",
+  });
   const newContent = `---\n${newFrontmatter}---\n\n${contentWithoutFrontmatter}`;
 
-  fs.writeFileSync(roadmapFilePath, newContent, 'utf8');
+  fs.writeFileSync(pageFilePath, newContent, 'utf8');
 }
 
+// Remove sponsors from all roadmaps
+removeAllSponsors('roadmaps');
+removeAllSponsors('best-practices');
+
+console.log('------------------------');
+console.log('Adding sponsors');
+console.log('------------------------');
 fetch(sheetUrl)
   .then((res) => res.json())
   .then((rawData) => {
@@ -92,7 +136,7 @@ fetch(sheetUrl)
     rows.map((row) => {
       // prettier-ignore
       const [
-        roadmapUrl,
+        pageUrl,
         company,
         redirectUrl,
         imageUrl,
@@ -103,8 +147,17 @@ fetch(sheetUrl)
         isActive,
       ] = row;
 
-      populateRoadmapAds({
-        roadmapUrl,
+      const isConfiguredActive = isActive?.toLowerCase() === 'yes';
+      const currentDate = new Date();
+      const isDateInRange =
+        currentDate >= new Date(startDate) && currentDate <= new Date(endDate);
+
+      if (!isConfiguredActive || !isDateInRange) {
+        return;
+      }
+
+      addPageSponsor({
+        pageUrl,
         company,
         redirectUrl,
         imageUrl,
