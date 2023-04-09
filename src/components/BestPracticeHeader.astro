@@ -20,7 +20,7 @@ const isBestPracticeReady = !isUpcoming;
 
 <div class='border-b'>
   <div class='container relative py-5 sm:py-12'>
-    <div class='mt-0 mb-3 sm:mb-6'>
+    <div class='mb-3 mt-0 sm:mb-6'>
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
       </h1>
@@ -31,7 +31,7 @@ const isBestPracticeReady = !isUpcoming;
       <div class='flex gap-1 sm:gap-2'>
         <a
           href='/best-practices'
-          class='rounded-md bg-gray-500 py-1.5 px-3 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
+          class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
           aria-label='Back to All Best Practices'
         >
           &larr;<span class='hidden sm:inline'>&nbsp;All Best Practices</span>
@@ -40,9 +40,9 @@ const isBestPracticeReady = !isUpcoming;
         {
           isBestPracticeReady && (
             <button
-              id='download-button'
+              data-guest-required
               data-popup='login-popup'
-              class='inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+              class='hidden inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
               ga-category='Subscription'
               ga-action='Clicked Popup Opener'
@@ -57,13 +57,14 @@ const isBestPracticeReady = !isUpcoming;
         {
           isBestPracticeReady && (
             <a
-              id='download-link'
+              data-auth-required
               class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
               ga-category='Subscription'
               ga-action='Clicked Popup Opener'
               ga-label='Download Roadmap Popup'
-              href={`/best-practices/${bestPracticeId}.png`}
+              target="_blank"
+              href={`/pdfs/best-practices/${bestPracticeId}.pdf`}
             >
               <Icon icon='download' />
               <span class='ml-2 hidden sm:inline'>Download</span>
@@ -72,9 +73,9 @@ const isBestPracticeReady = !isUpcoming;
         }
 
         <button
-          id='subscribe-button'
+          data-guest-required
           data-popup='login-popup'
-          class='inline-flex items-center justify-center rounded-md bg-yellow-400 py-1.5 px-3 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+          class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
           aria-label='Subscribe for Updates'
           ga-category='Subscription'
           ga-action='Clicked Popup Opener'
@@ -104,19 +105,3 @@ const isBestPracticeReady = !isUpcoming;
     <BestPracticeHint bestPracticeId={bestPracticeId} />
   </div>
 </div>
-
-<script>
-  import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../lib/constants';
-
-  const subscribeButton = document.getElementById('subscribe-button');
-  const downloadButton = document.getElementById('download-button');
-  const downloadLink = document.getElementById('download-link');
-  const token = Cookies.get(TOKEN_COOKIE_NAME);
-
-  if (token) {
-    subscribeButton?.classList.add('hidden');
-    downloadButton?.classList.add('hidden');
-    downloadLink?.classList.remove('hidden');
-  }
-</script>
