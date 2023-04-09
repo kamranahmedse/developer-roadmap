@@ -23,7 +23,7 @@
     "@astrojs/preact": "^2.1.0",
     "@astrojs/sitemap": "^1.2.2",
     "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.2.1",
+    "astro": "2.2.0",
     "astro-compress": "^1.1.35",
     "jose": "^4.13.1",
     "js-cookie": "^3.0.1",

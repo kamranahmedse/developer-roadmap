@@ -1,14 +1,13 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation/Navigation.astro';
-import OpenSourceBanner from '../components/OpenSourceBanner.astro';
-import Footer from '../components/Footer.astro';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
-import Sponsor from '../components/Sponsor/Sponsor.astro';
-import YouTubeBanner from '../components/YouTubeBanner.astro';
-import { siteConfig } from '../lib/config';
 import Analytics from '../components/Analytics/Analytics.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation/Navigation.astro';
+import OpenSourceBanner from '../components/OpenSourceBanner.astro';
+import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
+import Sponsor from '../components/Sponsor/Sponsor.astro';
+import { siteConfig } from '../lib/config';
+import '../styles/global.css';
 
 export interface Props {
   title: string;
@@ -39,7 +38,9 @@ const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
 
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
 
-const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
 ---
 
 <!DOCTYPE html>
@@ -52,7 +53,11 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
-    {redirectUrl && <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />}
+    {
+      redirectUrl && (
+        <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />
+      )
+    }
     {noIndex && <meta name='robots' content='noindex' />}
     <meta
       name='viewport'
@@ -77,23 +82,48 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+    <meta
+      name='apple-mobile-web-app-status-bar-style'
+      content='black-translucent'
+    />
     <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
     <meta name='application-name' content='roadmap.sh' />
 
-    <link rel='apple-touch-icon' sizes='180x180' href='/manifest/apple-touch-icon.png' />
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/manifest/apple-touch-icon.png'
+    />
     <meta name='msapplication-TileColor' content='#101010' />
     <meta name='theme-color' content='#848a9a' />
 
     <link rel='manifest' href='/manifest/manifest.json' />
-    <link rel='icon' type='image/png' sizes='32x32' href='/manifest/icon32.png' />
-    <link rel='icon' type='image/png' sizes='16x16' href='/manifest/icon16.png' />
-    <link rel='shortcut icon' href='/manifest/favicon.ico' type='image/x-icon' />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/manifest/icon32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/manifest/icon16.png'
+    />
+    <link
+      rel='shortcut icon'
+      href='/manifest/favicon.ico'
+      type='image/x-icon'
+    />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
     <slot name='after-header' />
-    {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
+    {
+      jsonLd.length > 0 && (
+        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
+      )
+    }
   </head>
   <body>
     <slot name='page-header'>
@@ -106,9 +136,11 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
       <OpenSourceBanner />
       <Footer />
       {sponsor && <Sponsor sponsor={sponsor} />}
-      <slot name='after-footer' />
-      <Analytics />
-      <Authenticator />
     </slot>
+    
+    <Analytics />
+    <Authenticator />
+
+    <slot name='after-footer' />
   </body>
 </html>
