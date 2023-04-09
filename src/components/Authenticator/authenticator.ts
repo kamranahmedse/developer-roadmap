@@ -33,8 +33,8 @@ function handleGuest() {
  * Prepares the UI for the user who is logged out
  */
 function handleAuthenticated() {
-  showHideAuthElements('show');
   showHideGuestElements('hide');
+  showHideAuthElements('show');
 }
 
 function handleAuthRequired() {

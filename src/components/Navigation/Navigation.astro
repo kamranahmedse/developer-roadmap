@@ -26,6 +26,8 @@ import AccountDropdown from './AccountDropdown.astro';
       <li>
         <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
+    </ul>
+    <ul class='hidden w-[172px] h-8 items-center gap-5 sm:flex justify-end'>
       <li data-guest-required>
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
@@ -34,7 +36,7 @@ import AccountDropdown from './AccountDropdown.astro';
 
         <a
           data-guest-required
-          class='flex h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 py-2 px-4 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+          class='w-28 flex h-8 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
           href='/signup'
         >
           <span>Sign Up</span>
@@ -53,12 +55,12 @@ import AccountDropdown from './AccountDropdown.astro';
 
     <!-- Mobile Navigation Items -->
     <div
-      class='fixed top-0 bottom-0 left-0 right-0 z-40 flex hidden items-center bg-slate-900'
+      class='fixed bottom-0 left-0 right-0 top-0 z-40 flex hidden items-center bg-slate-900'
       data-mobile-nav
     >
       <button
         data-close-mobile-nav
-        class='absolute top-6 right-6 block cursor-pointer text-gray-400 hover:text-gray-50'
+        class='absolute right-6 top-6 block cursor-pointer text-gray-400 hover:text-gray-50'
         aria-label='Close Menu'
       >
         <Icon icon='close' />
