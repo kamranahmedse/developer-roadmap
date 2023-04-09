@@ -2,7 +2,6 @@
 
 Gmail-tester is a simple Node.js Gmail client which checks/returns email message(s) straight from any Gmail-powered account (both private and company).
 
-
 Visit the following resources to learn more:
 
 - [Gmail-tester Website](https://www.npmjs.com/package/gmail-tester)

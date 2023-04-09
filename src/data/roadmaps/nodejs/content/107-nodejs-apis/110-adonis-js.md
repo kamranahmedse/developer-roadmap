@@ -1,6 +1,6 @@
 # AdonisJS
 
-AdonisJS is a Node.js web framework focused on providing the best way to create a web app or an API server, inspired by Laravel. 
+AdonisJS is a Node.js web framework focused on providing the best way to create a web app or an API server, inspired by Laravel.
 
 Visit the following resources to learn more:
 

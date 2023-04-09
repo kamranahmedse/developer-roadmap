@@ -7,5 +7,3 @@ Visit the following resources to learn more:
 - [Greedy Algorithms - Geeks for Geeks](https://www.geeksforgeeks.org/greedy-algorithms/)
 - [Greedy Algorithms - Programiz](https://www.programiz.com/dsa/greedy-algorithm)
 - [Greedy Algorithms Tutorial – Solve Coding Challenges](https://www.youtube.com/watch?v=bC7o8P_Ste4)
-
-

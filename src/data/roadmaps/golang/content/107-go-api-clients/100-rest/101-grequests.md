@@ -1,9 +1,9 @@
 # Grequests
 
-
-Golang implementation of Python Grequests library(one of well known HTTP Library in Python). 
+Golang implementation of Python Grequests library(one of well known HTTP Library in Python).
 
 Features:
+
 - Responses can be serialized into JSON and XML
 - Easy file uploads
 - Easy file downloads

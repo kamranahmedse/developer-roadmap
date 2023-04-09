@@ -1,0 +1,7 @@
+app-dist
+dist
+.idea
+.github
+public
+node_modules
+pnpm-lock.yaml

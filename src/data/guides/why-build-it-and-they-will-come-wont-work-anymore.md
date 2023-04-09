@@ -1,34 +1,32 @@
 ---
-title: "Build it and they will come?"
-description: "Why “build it and they will come” alone won’t work anymore"
+title: 'Build it and they will come?'
+description: 'Why “build it and they will come” alone won’t work anymore'
 author:
-  name: "Peter Thaleikis"
-  url: "https://twitter.com/spekulatius1984"
-  imageUrl: "/authors/spekulatius.jpg"
+  name: 'Peter Thaleikis'
+  url: 'https://twitter.com/spekulatius1984'
+  imageUrl: '/authors/spekulatius.jpg'
 seo:
-  title: "Build it and they will come? - roadmap.sh"
-  description: "Why “build it and they will come” alone won’t work anymore"
+  title: 'Build it and they will come? - roadmap.sh'
+  description: 'Why “build it and they will come” alone won’t work anymore'
 isNew: false
-type: "textual"
+type: 'textual'
 date: 2021-05-04
 sitemap:
   priority: 0.7
-  changefreq: "weekly"
+  changefreq: 'weekly'
 tags:
-  - "guide"
-  - "textual-guide"
-  - "guide-sitemap"
+  - 'guide'
+  - 'textual-guide'
+  - 'guide-sitemap'
 ---
 
-We all have heard the mantra *"build it and they will come"* many times. Stories of people building a startup or project and seemingly stumbling upon a goldmine aren't few, but they aren't the rule. These stories are still the exception in the mass of launched projects and startups.
+We all have heard the mantra _"build it and they will come"_ many times. Stories of people building a startup or project and seemingly stumbling upon a goldmine aren't few, but they aren't the rule. These stories are still the exception in the mass of launched projects and startups.
 
 Before the [Wright brothers](https://en.wikipedia.org/wiki/Wright_brothers) built their Kitty Hawk, people generally believed heavy objects could not fly - physics simply forbade it. The idea of regularly boarding airplanes as we do it these days was unthinkable. It was considered an unrealistic daydream for humans to ever claim the sky. When the first airplanes took off, people were fascinated, of course. It was a topic people continued to talk about for ages. Technology had made something impossible possible. While the wording "build it and they will come" originated from the movie [Field of Dreams](https://en.wikipedia.org/wiki/Field_of_Dreams), this and similar historic events gave birth to the idea behind it.
 
 The engineers' and inventors' dreams came true: spend time doing what you love while success follows magically. The internet and web-standards democratized access to this dream. But with it, the idea behind it faded and became less and less powerful. In 2020, there are very strong signs the popular saying isn't correct anymore.
 
-
-Why doesn't "build it and they will come" work anymore?
--------------------------------------------------------
+## Why doesn't "build it and they will come" work anymore?
 
 There are a few reasons for working hard to make "build it and they will come" a thing of the past. This being said, it doesn't mean you can't succeed in building a side-project anymore. You've just got to adjust the way you are building it.
 
@@ -48,9 +46,7 @@ Besides building is easier than ever before and attention is in short supply, th
 
 Does sound pretty grim for inventors, developers, and engineers? Well, yes and no. We've got to tweak the approach to get in front of the eye of potential users and customers.
 
-
-How to market your project nowadays?
-------------------------------------
+## How to market your project nowadays?
 
 The very first step to improving the odds of success is [idea validation](https://peterthaleikis.com/business-idea-validation/). While this sounds fairly obvious, many engineers and developers still don't validate their ideas before starting to build the MVP. The result is another stale project and wasted effort. To succeed you need to work on marketing before you start building anything. In the link mentioned before, I describe my approach to validation and collecting useful marketing information at the same time.
 
@@ -78,14 +74,10 @@ Launching seems like this special moment when you release your project into the 
 
 Many developers plan to launch their product on a few sites and see where it takes their project from there on. This works well if your product goes viral by luck. A much more sustainable approach is constantly working a little on it. Marketing is most effective if done consistently. That holds true for blogging as well as most other forms of marketing. A simple approach to keep you on the path to marketing your project regularly is subscribing to a free [newsletter with small marketing opportunities](https://wheretopost.email). This way, you are regularly reminded and given bite-sized tasks to complete.
 
-
-Closing Words
--------------
+## Closing Words
 
 I hope the article helped you to wrap your head around the idea that building side-projects alone doesn't solve any issues anymore. If you like what you've just read and want to read more, please consider subscribing to [my newsletter](https://peterthaleikis.com/newsletter). I'll send out the occasional email about interesting new articles or side-projects.
 
-
-About the author
-----------------
+## About the author
 
 [Peter Thaleikis](https://peterthaleikis.com/) a software engineer and business owner. He has been developing web applications since around 2000. Before he started his own software development company [Bring Your Own Ideas Ltd.](https://bringyourownideas.com/), he has been a Lead Developer for multiple organizations.

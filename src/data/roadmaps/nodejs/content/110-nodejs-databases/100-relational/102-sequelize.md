@@ -3,6 +3,7 @@
 Sequelize is an easy-to-use and promise-based Node.js ORM tool for Postgres, MySQL, MariaDB, SQLite, DB2, Microsoft SQL Server, and Snowflake. It features solid transaction support, relations, eager and lazy loading, read replication and more.
 
 ## What is an ORM ?
+
 An ORM is known as Object Relational Mapper. This is a tool or a level of abstraction which maps(converts) data in a relational database into programmatic objects that can be manipulated by a programmer using a programming language(usually an OOP language). ORMs solely exist to map the details between two data sources which due to a mismatch cannot coexist together.
 
 Visit the following resources to learn more:

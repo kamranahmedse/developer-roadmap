@@ -6,5 +6,6 @@ Visit the following resources to learn more:
 
 - [Docker Website](https://www.docker.com/)
 - [Docker Documentation](https://docs.docker.com/)
+- [Learn Docker | Boot.dev](https://boot.dev/learn/learn-docker)
 - [Docker Tutorial for Beginners](https://www.youtube.com/watch?v=pTFZFxd4hOI)
 - [Docker Full Course for Beginners](https://www.youtube.com/watch?v=3c-iBn73dDE)

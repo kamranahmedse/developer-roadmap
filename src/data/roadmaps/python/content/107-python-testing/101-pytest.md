@@ -6,5 +6,3 @@ Visit the following resources to learn more:
 
 - [Official Docs](https://docs.pytest.org/)
 - [Pytest Tutorial](https://www.tutorialspoint.com/pytest/index.htm)
-
-

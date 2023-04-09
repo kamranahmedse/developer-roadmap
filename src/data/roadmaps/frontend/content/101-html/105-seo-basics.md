@@ -2,7 +2,6 @@
 
 SEO or Search Engine Optimization is the technique used to optimize your website for better rankings on search engines such as Google, Bing etc.
 
-
 Visit the following resources to learn more:
 
 - [Google Search Central — SEO Docs](https://developers.google.com/search/docs)

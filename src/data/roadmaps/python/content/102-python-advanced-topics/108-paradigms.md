@@ -12,4 +12,3 @@ Python's support for multiple paradigms makes it a versatile and flexible langua
 Visit the following resources to learn more:
 
 - [Programming Paradigms in Python](https://www.geeksforgeeks.org/programming-paradigms-in-python/)
-

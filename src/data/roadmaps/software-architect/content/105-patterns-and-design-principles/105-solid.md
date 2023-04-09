@@ -1,6 +1,5 @@
 # SOLID
 
-
 SOLID is a set of principles applied to object-oriented design (OOD) to create maintainable, understandable, and flexible code, while avoiding code smells and defects. The principles are:
 
 - Single Responsibility

@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [Python Generator Expressions](https://www.pythontutorial.net/advanced-python/python-generator-expressions/)
 - [List Comprehensions in Python and Generator Expressions](https://djangostars.com/blog/list-comprehensions-and-generator-expressions/)
 - [Python | Generator Expressions](https://www.geeksforgeeks.org/generator-expressions/)
-

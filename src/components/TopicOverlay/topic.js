@@ -15,9 +15,12 @@ export class Topic {
     this.activeTopicId = null;
 
     this.handleRoadmapTopicClick = this.handleRoadmapTopicClick.bind(this);
-    this.handleBestPracticeTopicClick = this.handleBestPracticeTopicClick.bind(this);
-    this.handleBestPracticeTopicToggle = this.handleBestPracticeTopicToggle.bind(this);
-    this.handleBestPracticeTopicPending = this.handleBestPracticeTopicPending.bind(this);
+    this.handleBestPracticeTopicClick =
+      this.handleBestPracticeTopicClick.bind(this);
+    this.handleBestPracticeTopicToggle =
+      this.handleBestPracticeTopicToggle.bind(this);
+    this.handleBestPracticeTopicPending =
+      this.handleBestPracticeTopicPending.bind(this);
 
     this.close = this.close.bind(this);
     this.resetDOM = this.resetDOM.bind(this);
@@ -178,7 +181,10 @@ export class Topic {
 
     this.resetDOM();
 
-    const topicUrl = `/best-practices/${bestPracticeId}/${topicId.replaceAll(':', '/')}`;
+    const topicUrl = `/best-practices/${bestPracticeId}/${topicId.replaceAll(
+      ':',
+      '/'
+    )}`;
 
     this.renderTopicFromUrl(topicUrl).then(() => null);
   }
@@ -210,24 +216,30 @@ export class Topic {
     const matchingElements = [];
 
     // Elements having sort order in the beginning of the group id
-    document.querySelectorAll(`[data-group-id$="-${topicId}"]`).forEach((element) => {
-      const foundGroupId = element?.dataset?.groupId || '';
-      const validGroupRegex = new RegExp(`^\\d+-${topicId}$`);
+    document
+      .querySelectorAll(`[data-group-id$="-${topicId}"]`)
+      .forEach((element) => {
+        const foundGroupId = element?.dataset?.groupId || '';
+        const validGroupRegex = new RegExp(`^\\d+-${topicId}$`);
 
-      if (validGroupRegex.test(foundGroupId)) {
-        matchingElements.push(element);
-      }
-    });
+        if (validGroupRegex.test(foundGroupId)) {
+          matchingElements.push(element);
+        }
+      });
 
     // Elements with exact match of the topic id
-    document.querySelectorAll(`[data-group-id="${topicId}"]`).forEach((element) => {
-      matchingElements.push(element);
-    });
+    document
+      .querySelectorAll(`[data-group-id="${topicId}"]`)
+      .forEach((element) => {
+        matchingElements.push(element);
+      });
 
     // Matching "check:XXXX" box of the topic
-    document.querySelectorAll(`[data-group-id="check:${topicId}"]`).forEach((element) => {
-      matchingElements.push(element);
-    });
+    document
+      .querySelectorAll(`[data-group-id="check:${topicId}"]`)
+      .forEach((element) => {
+        matchingElements.push(element);
+      });
 
     return matchingElements;
   }
@@ -258,29 +270,44 @@ export class Topic {
       return;
     }
 
-    const isClickedDone = e.target.id === this.markTopicDoneId || e.target.closest(`#${this.markTopicDoneId}`);
+    const isClickedDone =
+      e.target.id === this.markTopicDoneId ||
+      e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
       this.markAsDone(this.activeTopicId);
       this.close();
     }
 
-    const isClickedPending = e.target.id === this.markTopicPendingId || e.target.closest(`#${this.markTopicPendingId}`);
+    const isClickedPending =
+      e.target.id === this.markTopicPendingId ||
+      e.target.closest(`#${this.markTopicPendingId}`);
     if (isClickedPending) {
       this.markAsPending(this.activeTopicId);
       this.close();
     }
 
-    const isClickedClose = e.target.id === this.closeTopicId || e.target.closest(`#${this.closeTopicId}`);
+    const isClickedClose =
+      e.target.id === this.closeTopicId ||
+      e.target.closest(`#${this.closeTopicId}`);
     if (isClickedClose) {
       this.close();
     }
   }
 
   init() {
-    window.addEventListener('best-practice.topic.click', this.handleBestPracticeTopicClick);
-    window.addEventListener('best-practice.topic.toggle', this.handleBestPracticeTopicToggle);
+    window.addEventListener(
+      'best-practice.topic.click',
+      this.handleBestPracticeTopicClick
+    );
+    window.addEventListener(
+      'best-practice.topic.toggle',
+      this.handleBestPracticeTopicToggle
+    );
 
-    window.addEventListener('roadmap.topic.click', this.handleRoadmapTopicClick);
+    window.addEventListener(
+      'roadmap.topic.click',
+      this.handleRoadmapTopicClick
+    );
     window.addEventListener('click', this.handleOverlayClick);
     window.addEventListener('contextmenu', this.rightClickListener);
 

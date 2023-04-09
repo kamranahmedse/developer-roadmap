@@ -15,7 +15,7 @@ interface Square extends Shape {
 let square: Square = {
   width: 10,
   height: 10,
-  sideLength: 10
+  sideLength: 10,
 };
 ```
 

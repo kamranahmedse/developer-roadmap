@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Hash Table Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=jalSiaIi8j4)
 - [Hash Tables and Hashmaps in Python](https://www.edureka.co/blog/hash-tables-and-hashmaps-in-python/)
 - [Build a Hash Table in Python](https://realpython.com/python-hash-table/)
-
