@@ -49,7 +49,7 @@ export function VerificationEmailMessage() {
       </h2>
       <div class="text-sm sm:text-base">
         <p>
-          We have you an email at <span className="font-bold">{email}</span>.
+          We have sent you an email at <span className="font-bold">{email}</span>.
           Please click the link to verify your account. This link will expire
           shortly, so please verify soon!
         </p>
@@ -77,7 +77,7 @@ export function VerificationEmailMessage() {
           </>
         )}
 
-        {isEmailResent && <p class="text-green-700">Email sent!</p>}
+        {isEmailResent && <p class="text-green-700">Verification email has been sent!</p>}
       </div>
     </div>
   );

@@ -1,33 +1,34 @@
 ---
-import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
-import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
 import Divider from '../components/Login/Divider.astro';
-import GithubLogin from '../components/Login/GithubLogin.astro';
-import GoogleLogin from '../components/Login/GoogleLogin.astro';
-import EmailLoginForm from '../components/Login/EmailLoginForm';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
+import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
+import EmailLoginForm from '../components/AuthenticationFlow/EmailLoginForm';
+import SettingLayout from '../layouts/SettingLayout.astro';
 ---
 
-<BaseLayout
-  title='Signup - roadmap.sh'
+<SettingLayout
+  title='Login - roadmap.sh'
   description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
   permalink={'/signup'}
   noIndex={true}
 >
   <div class='container'>
     <div
-      class='mx-auto flex flex-col items-start justify-start py-12 sm:max-w-[400px] sm:items-center sm:justify-center'
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
-        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Login</h1>
-        <p class='text-md block text-gray-600 sm:block'>
-          Welcome back! Login to your account.
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Login</h1>
+        <p class='text-base hidden text-gray-600 sm:block leading-6 mb-3'>
+          Welcome back! Let's take you to your account.
+        </p>
+        <p class='block text-sm text-gray-600 mb-3 sm:hidden'>
+          Welcome back! Let's take you to your account.
         </p>
       </div>
 
-      <div class='flex w-full flex-col items-stretch space-y-2'>
-        <GithubLogin />
-        <GoogleLogin />
+      <div class='flex w-full flex-col gap-2'>
+        <GitHubButton client:load />
+        <GoogleButton client:load />
       </div>
 
       <Divider />
@@ -37,22 +38,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       <div class='mt-6 text-center text-sm text-slate-600'>
         Don't have an account?{' '}
         <a href='/signup' class='font-medium text-blue-700 hover:text-blue-600'>
-          Sign up</a
-        > / <a
-          href='/forgot-password'
-          class='font-medium text-blue-700 hover:text-blue-600'
-          >Forgot password?</a
-        >
+          Sign up
+        </a>
       </div>
     </div>
   </div>
-</BaseLayout>
-
-<script>
-  import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../lib/constants';
-  const token = Cookies.get(TOKEN_COOKIE_NAME);
-  if (token) {
-    window.location.href = '/';
-  }
-</script>
+</SettingLayout>

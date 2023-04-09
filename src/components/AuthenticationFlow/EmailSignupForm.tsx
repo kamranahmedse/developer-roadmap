@@ -19,13 +19,17 @@ const EmailSignupForm: FunctionComponent = () => {
       return;
     }
 
-    window.location.href = `/verification-pending?email=${encodeURIComponent(email)}`;
+    window.location.href = `/verification-pending?email=${encodeURIComponent(
+      email
+    )}`;
   };
 
   const onSubmit = (e: Event) => {
     e.preventDefault();
 
     setIsLoading(true);
+    setError('');
+
     fetch(`${import.meta.env.PUBLIC_API_URL}/v1-register`, {
       method: 'POST',
       headers: {
