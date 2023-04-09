@@ -28,7 +28,7 @@ import AccountDropdown from './AccountDropdown.astro';
       </li>
     </ul>
     <ul class='hidden w-[172px] h-8 items-center gap-5 sm:flex justify-end'>
-      <li data-guest-required>
+      <li data-guest-required class="hidden">
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
       <li>
@@ -36,7 +36,7 @@ import AccountDropdown from './AccountDropdown.astro';
 
         <a
           data-guest-required
-          class='w-28 flex h-8 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
+          class='hidden w-28 flex h-8 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
           href='/signup'
         >
           <span>Sign Up</span>
@@ -116,7 +116,7 @@ import AccountDropdown from './AccountDropdown.astro';
           <a
             data-guest-required
             href='/signup'
-            class='text-xl text-white md:text-lg'
+            class='text-xl text-white md:text-lg hidden'
           >
             Login
           </a>
@@ -125,7 +125,7 @@ import AccountDropdown from './AccountDropdown.astro';
           <a
             data-guest-required
             href='/signup'
-            class='text-xl text-green-300 hover:text-green-400 md:text-lg'
+            class='text-xl text-green-300 hover:text-green-400 md:text-lg hidden'
           >
             Sign Up
           </a>

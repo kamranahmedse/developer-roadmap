@@ -1,12 +1,20 @@
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 
+function easeInElement(el: Element) {
+  el.classList.add('opacity-0', 'transition-opacity', 'duration-300');
+  el.classList.remove('hidden');
+  setTimeout(() => {
+    el.classList.remove('opacity-0');
+  });
+}
+
 function showHideAuthElements(hideOrShow: 'hide' | 'show' = 'hide') {
   document.querySelectorAll('[data-auth-required]').forEach((el) => {
     if (hideOrShow === 'hide') {
       el.classList.add('hidden');
     } else {
-      el.classList.remove('hidden');
+      easeInElement(el);
     }
   });
 }
@@ -16,7 +24,7 @@ function showHideGuestElements(hideOrShow: 'hide' | 'show' = 'hide') {
     if (hideOrShow === 'hide') {
       el.classList.add('hidden');
     } else {
-      el.classList.remove('hidden');
+      easeInElement(el);
     }
   });
 }
