@@ -19,7 +19,7 @@ const EmailSignupForm: FunctionComponent = () => {
       return;
     }
 
-    window.location.href = `/verify?email=${email}`;
+    window.location.href = `/verification-pending?email=${encodeURIComponent(email)}`;
   };
 
   const onSubmit = (e: Event) => {

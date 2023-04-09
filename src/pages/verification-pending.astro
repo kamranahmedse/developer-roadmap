@@ -1,50 +1,26 @@
 ---
-import Icon from '../components/AstroIcon.astro';
+import AstroIcon from '../components/AstroIcon.astro';
 import SettingLayout from '../layouts/SettingLayout.astro';
+import { VerificationEmailMessage } from '../components/RegistrationFlow/VerificationEmailMessage';
 ---
 
 <SettingLayout title='Verify Email'>
-  <section class='container py-20'>
-    <div class='mx-auto max-w-md'>
-      <Icon icon='verify-letter' class='mx-auto h-40 w-40' />
-      <h2 class='mt-5 text-center text-2xl font-semibold'>
-        Great, now verify your email
-      </h2>
-      <div class='mt-5 space-y-6'>
-        <p>
-          Check your inbox at <span class='font-bold' data-email-to
-            >john@example.com</span
-          > and click the verification link inside to complete your registration.
-          This link will expire shortly, so verify soon!
-        </p>
-
-        <div>
-          <span class='font-bold'>Don't see an email?</span> Check your spam folder.
-        </div>
-        <div>
-          <span class='font-bold'>Link expired?</span>
-          <button
-            data-resend-button
-            class='text-blue-700 disabled:cursor-not-allowed'
-            disabled>Resend verification email.</button
-          >
-        </div>
-        <div data-message></div>
-      </div>
-    </div>
+  <section class='container py-8 sm:py-20'>
+    <VerificationEmailMessage client:load />
   </section>
 </SettingLayout>
 
 <script>
   import Cookies from 'js-cookie';
   import { TOKEN_COOKIE_NAME } from '../lib/constants';
+
   const emailTo = document.querySelector('[data-email-to]');
-  const resendButton = document.querySelector(
-    'button[data-resend-button]'
-  ) as HTMLButtonElement | null;
-  const message = document.querySelector(
-    '[data-message]'
-  ) as HTMLDivElement | null;
+  const resendButton = document.querySelector('button[data-resend-button]');
+  as;
+  HTMLButtonElement | null;
+  const message = document.querySelector('[data-message]');
+  as;
+  HTMLDivElement | null;
 
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   let email = '';
@@ -52,7 +28,9 @@ import SettingLayout from '../layouts/SettingLayout.astro';
   window.addEventListener('load', () => {
     // Get all query params and send them to v1-github-callback
     const urlParams = new URLSearchParams(window.location.search);
-    email = urlParams.get('email') as string;
+    email = urlParams.get('email');
+    as;
+    string;
 
     if (!email || token) {
       // TODO: redirect to home page
@@ -104,6 +82,7 @@ import SettingLayout from '../layouts/SettingLayout.astro';
       if (message?.innerHTML === '' || message?.innerHTML) {
         message.innerHTML = `<div class="mt-2 rounded-lg p-2 bg-red-100 text-red-800">${error?.message}</div>`;
       }
+
       // Enable the resend button
       resendButton.removeAttribute('disabled');
     }
