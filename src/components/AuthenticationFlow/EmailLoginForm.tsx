@@ -16,7 +16,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     setIsLoading(true);
     setError('');
 
-    const res = await fetch('http://localhost:8080/v1-login', {
+    const res = await fetch(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
