@@ -4,13 +4,13 @@ import Divider from '../components/Login/Divider.astro';
 import GoogleLogin from '../components/Login/GoogleLogin.astro';
 import EmailSignupForm from '../components/Login/EmailSignupForm';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { GitHubButton } from '../components/SocialAuth/GitHubButton';
-import { GoogleButton } from '../components/SocialAuth/GoogleButton';
+import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
+import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 ---
 
 <BaseLayout
   title='Signup - roadmap.sh'
-  description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
+  description='Create an account to track your progress, showcase your skillset'
   permalink={'/signup'}
   noIndex={true}
 >
@@ -19,13 +19,12 @@ import { GoogleButton } from '../components/SocialAuth/GoogleButton';
       class='mx-auto flex flex-col items-start justify-start py-12 sm:max-w-[400px] sm:items-center sm:justify-center'
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
-        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Signup</h1>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-4 sm:text-5xl'>Sign Up</h1>
         <p class='text-md hidden text-gray-600 sm:block'>
-          Register yourself to receive occasional emails about new roadmaps,
-          updates, guides and videos
+          Create an account to track your progress, showcase your skill-set and be a part of the community.
         </p>
-        <p class='block text-sm text-gray-600 sm:hidden'>
-          Register yourself for occasional updates about roadmaps, guides and
+        <p class='block text-sm text-gray-600 mb-3 sm:hidden'>
+          Create an account to track your progress, showcase your skill-set and be a part of the community.
           videos.
         </p>
       </div>
