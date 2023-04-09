@@ -6,6 +6,7 @@ import GithubLogin from '../components/Login/GithubLogin.astro';
 import GoogleLogin from '../components/Login/GoogleLogin.astro';
 import EmailSignupForm from '../components/Login/EmailSignupForm';
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { GitHubButton } from '../components/SocialAuth/GitHubButton';
 ---
 
 <BaseLayout
@@ -31,7 +32,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </div>
 
       <div class='flex w-full flex-col items-stretch space-y-2'>
-        <GithubLogin />
+        <GitHubButton client:load />
         <GoogleLogin />
       </div>
 

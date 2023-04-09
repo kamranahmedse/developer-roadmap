@@ -28,8 +28,8 @@
     "jose": "^4.13.1",
     "js-cookie": "^3.0.1",
     "node-html-parser": "^6.1.5",
-    "preact": "^10.13.2",
     "npm-check-updates": "^16.10.7",
+    "preact": "^10.13.2",
     "rehype-external-links": "^2.0.1",
     "roadmap-renderer": "^1.0.4",
     "tailwindcss": "^3.3.1"

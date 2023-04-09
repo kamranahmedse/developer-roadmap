@@ -1,8 +1,8 @@
 // https://astro.build/config
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import compress from 'astro-compress';
 import { defineConfig } from 'astro/config';
+import compress from 'astro-compress';
 import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 import preact from '@astrojs/preact';
@@ -28,7 +28,7 @@ export default defineConfig({
               'https://github.com/kamranahmedse',
               'https://thenewstack.io',
               'https://cs.fyi',
-              'https://roadmap.sh'
+              'https://roadmap.sh',
             ];
 
             if (whiteListedStarts.some((start) => href.startsWith(start))) {
@@ -58,6 +58,6 @@ export default defineConfig({
       css: false,
       js: false,
     }),
-		preact(),
+    preact(),
   ],
 });
