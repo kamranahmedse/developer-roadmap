@@ -2,7 +2,7 @@ import { useState } from 'preact/hooks';
 import Spinner from '../Spinner';
 import { httpPost } from '../../lib/http';
 
-export default function ForgotPasswordForm() {
+export function ForgotPasswordForm() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
