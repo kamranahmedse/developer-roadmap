@@ -1,9 +1,11 @@
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
+import { handleAuthRequired } from '../Authenticator/authenticator';
 
 function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
-  window.location.href = '/';
+  handleAuthRequired();
+  window.location.reload();
 }
 
 function bindEvents() {

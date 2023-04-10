@@ -45,7 +45,7 @@ function handleAuthenticated() {
   showHideAuthElements('show');
 }
 
-function handleAuthRequired() {
+export function handleAuthRequired() {
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (token) {
     handleAuthenticated();
