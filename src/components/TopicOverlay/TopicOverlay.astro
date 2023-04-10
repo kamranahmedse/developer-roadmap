@@ -11,7 +11,7 @@ const { contentContributionLink } = Astro.props;
 
 <div id='topic-overlay' class='hidden'>
   <div
-    class='fixed top-0 right-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 sm:max-w-[600px] sm:p-6'
+    class='fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 sm:max-w-[600px] sm:p-6'
     tabindex='-1'
     id='topic-body'
   >
@@ -20,33 +20,28 @@ const { contentContributionLink } = Astro.props;
     </div>
 
     <div id='topic-actions' class='mb-2 hidden'>
-      <button
-        data-popup='login-popup'
-        ga-category='TopicClick'
-        ga-action='topic/mark-completion'
-        ga-label='done'
-        class='inline-flex hidden items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700'
-        id='mark-topic-done-login'
-      >
-        <Icon icon='check' />
-        <span class='ml-2'>Mark as Done</span>
-      </button>
-      <button
-        id='mark-topic-done'
-        ga-category='TopicClick'
-        ga-action='topic/mark-completion'
-        ga-label='done'
-        class='inline-flex hidden items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700'
-      >
-        <Icon icon='check' />
-        <span class='ml-2'>Mark as Done</span>
-      </button>
+      <div data-guest-required class='hidden'>
+        <button
+          data-popup='login-popup'
+          class='inline-flex items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700'
+        >
+          <Icon icon='check' />
+          <span class='ml-2'>Mark as Done</span>
+        </button>
+      </div>
+
+      <div data-auth-required>
+        <button
+          id='mark-topic-done'
+          class='inline-flex hidden items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700'
+        >
+          <Icon icon='check' />
+          <span class='ml-2'>Mark as Done</span>
+        </button>
+      </div>
 
       <button
         id='mark-topic-pending'
-        ga-category='TopicClick'
-        ga-action='topic/mark-completion'
-        ga-label='pending'
         class='inline-flex hidden items-center rounded-md bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700'
       >
         <Icon icon='reset' />
@@ -56,7 +51,7 @@ const { contentContributionLink } = Astro.props;
       <button
         type='button'
         id='close-topic'
-        class='absolute top-2.5 right-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900'
+        class='absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900'
       >
         <Icon icon='close' />
       </button>
@@ -64,7 +59,7 @@ const { contentContributionLink } = Astro.props;
 
     <div
       id='topic-content'
-      class='prose prose-quoteless prose-h1:mt-7 prose-h1:mb-2.5 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mt-[10px] prose-h3:mb-[5px] prose-p:mt-0 prose-p:mb-2 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5'
+      class='prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5'
     >
     </div>
 
@@ -85,24 +80,3 @@ const { contentContributionLink } = Astro.props;
 </div>
 
 <script src='./topic.js'></script>
-<script>
-  import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../../lib/constants';
-
-  const markDone = document.getElementById('mark-topic-done');
-  const loginMarkDone = document.getElementById('mark-topic-done-login');
-
-  const token = Cookies.get(TOKEN_COOKIE_NAME);
-
-  if (token) {
-    loginMarkDone?.classList.add('hidden');
-    markDone?.classList.remove('hidden');
-  } else {
-    loginMarkDone?.classList.remove('hidden');
-    markDone?.classList.add('!hidden');
-    loginMarkDone?.addEventListener('click', () => {
-      // Close the overlay
-      document.getElementById('topic-overlay')?.classList.add('hidden');
-    });
-  }
-</script>
