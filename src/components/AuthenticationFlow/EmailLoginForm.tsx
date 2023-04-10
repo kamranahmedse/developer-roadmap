@@ -16,7 +16,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     setIsLoading(true);
     setError('');
 
-    const res = await fetch(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
+    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -25,27 +25,32 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         email,
         password,
       }),
-    });
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.type === 'user_not_verified') {
+          window.location.href = `/verification-pending?email=${encodeURIComponent(
+            email
+          )}`;
+          return;
+        }
 
-    const json = await res.json();
+        if (!data.token) {
+          setIsLoading(false);
+          setError(
+            data.message || 'Something went wrong. Please try again later.'
+          );
+          return;
+        }
 
-    if (json.type === 'user_not_verified') {
-      window.location.href = `/verification-pending?email=${encodeURIComponent(
-        email
-      )}`;
-      return;
-    }
-
-    if (!json.token) {
-      setIsLoading(false);
-      setError(json.message || 'Something went wrong. Please try again later.');
-
-      return;
-    }
-
-    // If the response is ok, we'll set the token in a cookie
-    Cookies.set(TOKEN_COOKIE_NAME, json.token);
-    window.location.href = '/';
+        // If the response is ok, we'll set the token in a cookie
+        Cookies.set(TOKEN_COOKIE_NAME, data.token);
+        window.location.href = '/';
+      })
+      .catch((err) => {
+        setIsLoading(false);
+        setError('Something went wrong. Please try again later.');
+      });
   };
 
   return (
@@ -86,7 +91,9 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         </a>
       </p>
 
-      {error && <p className="bg-red-100 text-red-800">{error}</p>}
+      {error && (
+        <p className="mb-2 rounded-md bg-red-100 p-2 text-red-800">{error}</p>
+      )}
 
       <button
         type="submit"

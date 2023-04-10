@@ -10,6 +10,7 @@ export const useAuth = () => {
   useEffect(() => {
     const token = Cookies.get(TOKEN_COOKIE_NAME);
     const payload = token ? decodeToken(token) : null;
+
     setUser(payload);
     setIsLoading(false);
   }, []);
