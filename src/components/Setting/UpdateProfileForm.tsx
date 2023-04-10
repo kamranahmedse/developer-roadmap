@@ -86,8 +86,8 @@ export function UpdateProfileForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-3xl font-bold sm:text-4xl">Update Profile</h2>
-      <p className="mt-2">Manage settings for your roadmap.sh profile</p>
+      <h2 className="text-3xl font-bold sm:text-4xl">Profile</h2>
+      <p className="mt-2">Update your profile details below.</p>
       <div className="mt-8 space-y-4">
         <div className="flex w-full flex-col">
           <label
