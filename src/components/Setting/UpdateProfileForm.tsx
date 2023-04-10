@@ -1,131 +1,87 @@
-import { useCallback, useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'preact/hooks';
+import { httpGet, httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
-import Spinner from '../Spinner';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
-export default function UpdateProfileForm() {
+export function UpdateProfileForm() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [github, setGithub] = useState('');
+  const [twitter, setTwitter] = useState('');
   const [linkedin, setLinkedin] = useState('');
   const [website, setWebsite] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
-  const [message, setMessage] = useState<{
-    type: 'error' | 'success' | 'info';
-    message: string;
-  }>();
+  const [error, setError] = useState('');
+  const [success, setSuccess] = useState('');
 
-  const handleSubmit = (e: Event) => {
+  const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
+    setError('');
+    setSuccess('');
 
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append(
-      'Cookie',
-      `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
+    const { response, error } = await httpPost(
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-profile`,
+      {
+        name,
+        github: github || undefined,
+        linkedin: linkedin || undefined,
+        twitter: twitter || undefined,
+        website: website || undefined,
+      }
     );
 
-    fetch('http://localhost:8080/v1-update-profile', {
-      method: 'POST',
-      credentials: 'include',
-      headers,
-      body: JSON.stringify({
-        name,
-        github: github === '' ? undefined : github,
-        linkedin: linkedin === '' ? undefined : linkedin,
-        website: website === '' ? undefined : website,
-      }),
-    })
-      .then(async (res) => {
-        const json = await res.json();
-        if (res.ok) {
-          return json;
-        } else {
-          throw new Error(json.message);
-        }
-      })
-      .then((data) => {
-        setIsLoading(false);
-        setName(data.name);
-        setEmail(data.email);
-        if (data.links) {
-          const { github, linkedin, website } = data.links;
-          setGithub(github || '');
-          setLinkedin(linkedin || '');
-          setWebsite(website || '');
-        }
+    if (error || !response) {
+      setIsLoading(false);
+      setError(error?.message || 'Something went wrong');
 
-        // Check if the user has changed their email
-        fetchProfile();
-        setMessage({
-          type: 'success',
-          message: 'Profile updated successfully',
-        });
-      })
-      .catch((err) => {
-        setIsLoading(false);
-        setMessage({
-          type: 'error',
-          message: err.message || 'Something went wrong',
-        });
-      });
+      return;
+    }
+
+    await loadProfile();
+    setSuccess('Profile updated successfully');
   };
 
-  const fetchProfile = useCallback(async () => {
+  const loadProfile = async () => {
     // Set the loading state
     setIsLoading(true);
 
-    // Create headers with the cookie
-    const headers = new Headers();
-    headers.append('Content-Type', 'application/json');
-    headers.append(
-      'Cookie',
-      `${TOKEN_COOKIE_NAME}=${Cookies.get(TOKEN_COOKIE_NAME)}`
+    const { error, response } = await httpGet(
+      `${import.meta.env.PUBLIC_API_URL}/v1-me`
     );
 
-    try {
-      const res = await fetch('http://localhost:8080/v1-me', {
-        method: 'POST',
-        credentials: 'include',
-        headers,
-      });
-
-      const json = await res.json();
-
-      if (json.status === 401) {
-        // If the user is not authenticated, redirect to the login page
-        // Clear the cookie
+    if (error || !response) {
+      if (error?.status === 401) {
         Cookies.remove(TOKEN_COOKIE_NAME);
-        window.location.href = '/login';
+        window.location.reload();
+
+        return;
       }
 
-      if (res.ok) {
-        setName(json.name);
-        setEmail(json.email);
+      setIsLoading(false);
+      setError(error?.message || 'Something went wrong');
 
-        if (json.links) {
-          const { github, linkedin, website } = json.links;
-          setGithub(github || '');
-          setLinkedin(linkedin || '');
-          setWebsite(website || '');
-        }
-      } else {
-        throw new Error(json.message);
-      }
-    } catch (error: any) {
-      setMessage({
-        type: 'error',
-        message: error?.message || 'Something went wrong',
-      });
+      return;
     }
+
+    const { name, email, links } = response;
+
+    setName(name);
+    setEmail(email);
+    setGithub(links?.github || '');
+    setLinkedin(links?.linkedin || '');
+    setTwitter(links?.twitter || '');
+    setWebsite(links?.website || '');
+
     setIsLoading(false);
-  }, []);
+  };
 
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
-    fetchProfile();
+    loadProfile().finally(() => {
+      // hide the page level loading indicator
+    });
   }, []);
 
   return (
@@ -144,7 +100,7 @@ export default function UpdateProfileForm() {
             type="text"
             name="name"
             id="name"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             placeholder="John Doe"
             value={name}
@@ -162,7 +118,7 @@ export default function UpdateProfileForm() {
             type="email"
             name="email"
             id="email"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
             placeholder="john@example.com"
@@ -178,12 +134,27 @@ export default function UpdateProfileForm() {
             type="text"
             name="github"
             id="github"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://github.com/username"
             value={github}
             onInput={(e) => setGithub((e.target as HTMLInputElement).value)}
           />
         </div>
+        <div className="flex w-full flex-col">
+          <label for="twitter" className="text-sm leading-none text-slate-500">
+            Twitter
+          </label>
+          <input
+            type="text"
+            name="twitter"
+            id="twitter"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="https://twitter.com/username"
+            value={twitter}
+            onInput={(e) => setTwitter((e.target as HTMLInputElement).value)}
+          />
+        </div>
+
         <div className="flex w-full flex-col">
           <label for="linkedin" className="text-sm leading-none text-slate-500">
             LinkedIn
@@ -192,7 +163,7 @@ export default function UpdateProfileForm() {
             type="text"
             name="linkedin"
             id="linkedin"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://www.linkedin.com/in/username/"
             value={linkedin}
             onInput={(e) => setLinkedin((e.target as HTMLInputElement).value)}
@@ -207,33 +178,29 @@ export default function UpdateProfileForm() {
             type="text"
             name="website"
             id="website"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             placeholder="https://example.com"
             value={website}
             onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
           />
         </div>
 
-        {message && (
-          <div
-            className={`mt-2 rounded-lg p-2 ${
-              message.type === 'error'
-                ? 'bg-red-100 text-red-700'
-                : message.type === 'success'
-                ? 'bg-green-100 text-green-700'
-                : 'bg-blue-100 text-blue-700'
-            }`}
-          >
-            {message.message}
-          </div>
+        {error && (
+          <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+        )}
+
+        {success && (
+          <p className="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
+            {success}
+          </p>
         )}
 
         <button
-          className="!mt-5 inline-flex h-10 min-w-[120px] items-center justify-center rounded-lg border border-slate-300 bg-black p-2 px-4 text-sm font-medium text-white outline-none transition duration-150 ease-in-out focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
           type="submit"
           disabled={isLoading}
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          {isLoading ? <Spinner className="text-white" /> : 'Update'}
+          {isLoading ? 'Please wait...' : 'Continue'}
         </button>
       </div>
     </form>

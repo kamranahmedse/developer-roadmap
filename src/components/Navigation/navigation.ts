@@ -2,7 +2,7 @@ import Cookies from 'js-cookie';
 import { handleAuthRequired } from '../Authenticator/authenticator';
 import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
-function logout() {
+export function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
   // Reloading will automatically redirect the user if required
   window.location.reload();

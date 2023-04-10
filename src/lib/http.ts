@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import {TOKEN_COOKIE_NAME} from "./jwt";
+import { TOKEN_COOKIE_NAME } from './jwt';
 
 type AppResponse = Record<string, any>;
 type FetchError = {
