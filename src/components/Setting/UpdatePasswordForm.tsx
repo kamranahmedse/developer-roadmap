@@ -13,7 +13,7 @@ export default function UpdatePasswordForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
@@ -88,7 +88,7 @@ export default function UpdatePasswordForm() {
   return (
     <form onSubmit={handleSubmit}>
       <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
-      <p className="mt-2">Manage settings for your account passwords</p>
+      <p className="mt-2">Use the form below to update your password.</p>
       <div className="mt-8 space-y-4">
         {authProvider === 'email' && (
           <div className="flex w-full flex-col">
