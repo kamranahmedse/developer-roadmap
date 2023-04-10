@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
-import { TokenPayload, decodeToken } from '../lib/utils';
+import { TokenPayload, decodeToken } from '../lib/jwt';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../lib/constants';
 

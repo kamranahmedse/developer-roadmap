@@ -1,0 +1,32 @@
+---
+import Popup from '../Popup/Popup.astro';
+import EmailLoginForm from './EmailLoginForm';
+import Divider from './Divider.astro';
+import { GitHubButton } from './GitHubButton';
+import { GoogleButton } from './GoogleButton';
+---
+
+<Popup id='login-popup' title='' subtitle=''>
+  <div class='text-center'>
+    <h2 class='mb-3 text-2xl font-semibold leading-5 text-slate-900'>
+      Login to your account
+    </h2>
+    <p class='mt-2 text-sm leading-4 text-slate-600'>
+      You must be logged in to perform this action.
+    </p>
+  </div>
+
+  <div class='mt-7 flex flex-col gap-2'>
+    <GitHubButton client:load />
+    <GoogleButton client:load />
+  </div>
+
+  <Divider />
+
+  <EmailLoginForm client:load />
+
+  <div class='mt-6 text-center text-sm text-slate-600'>
+    Don't have an account?{' '}
+    <a href='/signup' class='font-medium text-[#4285f4]'> Sign up</a>
+  </div>
+</Popup>

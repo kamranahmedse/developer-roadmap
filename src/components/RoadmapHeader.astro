@@ -1,7 +1,7 @@
 ---
 import DownloadPopup from './DownloadPopup.astro';
 import Icon from './AstroIcon.astro';
-import LoginPopup from './Login/LoginPopup.astro';
+import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import SubscribePopup from './SubscribePopup.astro';
@@ -62,34 +62,28 @@ const isRoadmapReady = !isUpcoming;
               </a>
 
               {isRoadmapReady && (
-                <button
-                  data-guest-required
-                  data-popup='login-popup'
-                  class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
-                  aria-label='Download Roadmap'
-                  ga-category='Subscription'
-                  ga-action='Clicked Popup Opener'
-                  ga-label='Download Roadmap Popup'
-                >
-                  <Icon icon='download' />
-                  <span class='ml-2 hidden sm:inline'>Download</span>
-                </button>
-              )}
+                <>
+                  <button
+                    data-guest-required
+                    data-popup='login-popup'
+                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+                    aria-label='Download Roadmap'
+                  >
+                    <Icon icon='download' />
+                    <span class='ml-2 hidden sm:inline'>Download</span>
+                  </button>
 
-              {isRoadmapReady && (
-                <a
-                  data-auth-required
-                  class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
-                  aria-label='Download Roadmap'
-                  ga-category='Subscription'
-                  ga-action='Clicked Popup Opener'
-                  ga-label='Download Roadmap Popup'
-                  target='_blank'
-                  href={`/pdfs/roadmaps/${roadmapId}.pdf`}
-                >
-                  <Icon icon='download' />
-                  <span class='ml-2 hidden sm:inline'>Download</span>
-                </a>
+                  <a
+                    data-auth-required
+                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+                    aria-label='Download Roadmap'
+                    target='_blank'
+                    href={`/pdfs/roadmaps/${roadmapId}.pdf`}
+                  >
+                    <Icon icon='download' />
+                    <span class='ml-2 hidden sm:inline'>Download</span>
+                  </a>
+                </>
               )}
 
               <button
@@ -97,9 +91,6 @@ const isRoadmapReady = !isUpcoming;
                 data-popup='login-popup'
                 class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
                 aria-label='Subscribe for Updates'
-                ga-category='Subscription'
-                ga-action='Clicked Popup Opener'
-                ga-label='Subscribe Roadmap Popup'
               >
                 <Icon icon='email' />
                 <span class='ml-2'>Subscribe</span>
