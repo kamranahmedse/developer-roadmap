@@ -4,7 +4,7 @@ import { handleAuthRequired } from '../Authenticator/authenticator';
 
 function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
-  handleAuthRequired();
+  // Reloading will automatically redirect the user if required
   window.location.reload();
 }
 

@@ -15,16 +15,17 @@ import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 >
   <div class='container'>
     <div
-      class='mx-auto flex flex-col items-start justify-start pt-10 sm:pt-20 pb-28 sm:max-w-[400px] sm:items-center sm:justify-center'
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
         <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Sign Up</h1>
-        <p class='text-base hidden text-gray-600 sm:block leading-6 mb-3'>
-          Create an account to track your progress, showcase your skill-set and be a part of the community.
+        <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community.
         </p>
-        <p class='block text-sm text-gray-600 mb-3 sm:hidden'>
-          Create an account to track your progress, showcase your skill-set and be a part of the community.
-          videos.
+        <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community. videos.
         </p>
       </div>
 
@@ -46,12 +47,3 @@ import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
     </div>
   </div>
 </SettingLayout>
-
-<script>
-  import Cookies from 'js-cookie';
-  import { TOKEN_COOKIE_NAME } from '../lib/constants';
-  const token = Cookies.get(TOKEN_COOKIE_NAME);
-  if (token) {
-    window.location.href = '/';
-  }
-</script>

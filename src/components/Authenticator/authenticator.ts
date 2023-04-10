@@ -29,20 +29,33 @@ function showHideGuestElements(hideOrShow: 'hide' | 'show' = 'hide') {
   });
 }
 
-/**
- * Prepares the UI for the user who is logged in
- */
+// Prepares the UI for the user who is logged in
 function handleGuest() {
+  const authenticatedRoutes = [
+    '/settings/profile',
+    '/settings/change-password',
+  ];
+
   showHideAuthElements('hide');
   showHideGuestElements('show');
+
+  // If the user is on an authenticated route, redirect them to the home page
+  if (authenticatedRoutes.includes(window.location.pathname)) {
+    window.location.href = '/';
+  }
 }
 
-/**
- * Prepares the UI for the user who is logged out
- */
+// Prepares the UI for the user who is logged out
 function handleAuthenticated() {
+  const guestRoutes = ['/login', '/signup'];
+
   showHideGuestElements('hide');
   showHideAuthElements('show');
+
+  // If the user is on a guest route, redirect them to the home page
+  if (guestRoutes.includes(window.location.pathname)) {
+    window.location.href = '/';
+  }
 }
 
 export function handleAuthRequired() {
