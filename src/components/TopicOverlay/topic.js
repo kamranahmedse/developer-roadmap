@@ -286,10 +286,12 @@ export class Topic {
       this.close();
     }
 
+    const isClickedPopupOpener =
+      e.target.dataset['popup'] || e.target.closest('button[data-popup]');
     const isClickedClose =
       e.target.id === this.closeTopicId ||
       e.target.closest(`#${this.closeTopicId}`);
-    if (isClickedClose) {
+    if (isClickedClose || isClickedPopupOpener) {
       this.close();
     }
   }
