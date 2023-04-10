@@ -3,7 +3,7 @@ import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Spinner from '../Spinner';
-import {httpPost} from "../../lib/http";
+import { httpPost } from '../../lib/http';
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
@@ -46,7 +46,10 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
         // If the response is ok, we'll set the token in a cookie
         Cookies.set(TOKEN_COOKIE_NAME, data.token);
-        window.location.href = '/';
+        // Refreshing will automatically redirect to the relevant page
+        // Doing this to avoid redirecting to home page from any pages
+        // such as roadmap, best-practice etc
+        window.location.reload();
       })
       .catch((err) => {
         setIsLoading(false);
