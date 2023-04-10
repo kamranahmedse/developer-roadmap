@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Spinner from '../Spinner';
+import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
 export default function ChangePasswordForm() {
   const [authProvider, setAuthProvider] = useState<

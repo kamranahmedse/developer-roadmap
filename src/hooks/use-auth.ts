@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
-import { TokenPayload, decodeToken } from '../lib/jwt';
+import {TokenPayload, decodeToken, TOKEN_COOKIE_NAME} from '../lib/jwt';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../lib/constants';
 
 export const useAuth = () => {
   const [user, setUser] = useState<TokenPayload | null>(null);

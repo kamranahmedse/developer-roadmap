@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
 import GoogleIcon from '../../icons/google.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
-import { TOKEN_COOKIE_NAME } from '../../lib/constants';
+import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
 type GoogleButtonProps = {};
 

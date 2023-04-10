@@ -3,7 +3,7 @@ import ErrorIcon from '../../icons/error.svg';
 
 import { useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/constants';
+import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);

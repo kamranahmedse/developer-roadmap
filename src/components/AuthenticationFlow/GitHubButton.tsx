@@ -2,8 +2,8 @@ import { useEffect, useState } from 'preact/hooks';
 
 import GitHubIcon from '../../icons/github.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
-import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Cookies from 'js-cookie';
+import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
 type GitHubButtonProps = {};
 

@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
-import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Cookies from 'js-cookie';
 import Spinner from '../Spinner';
+import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
 
 export default function UpdateProfileForm() {
   const [name, setName] = useState('');
