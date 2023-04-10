@@ -24,3 +24,4 @@ You can also create custom types in TypeScript using interfaces, classes, and ty
 Learn more from the following links:
 
 - [Transcript - Everyday Types](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html)
+- [Improve your TypeScript Skills with Type Challenges](https://thenewstack.io/improve-your-typescript-skills-with-type-challenges/)
