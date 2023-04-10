@@ -47,7 +47,14 @@ function handleGuest() {
 
 // Prepares the UI for the user who is logged out
 function handleAuthenticated() {
-  const guestRoutes = ['/login', '/signup'];
+  const guestRoutes = [
+    '/login',
+    '/signup',
+    '/verify-account',
+    '/verification-pending',
+    '/reset-password',
+    '/forgot-password',
+  ];
 
   showHideGuestElements('hide');
   showHideAuthElements('show');
