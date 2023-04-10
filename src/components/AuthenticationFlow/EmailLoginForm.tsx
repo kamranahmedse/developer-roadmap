@@ -3,6 +3,7 @@ import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/constants';
 import Spinner from '../Spinner';
+import {httpPost} from "../../lib/http";
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');

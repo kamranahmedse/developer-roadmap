@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import Spinner from '../Spinner';
-import { callPostApi } from '../../lib/http';
+import { httpPost } from '../../lib/http';
 
 export default function ForgotPasswordForm() {
   const [email, setEmail] = useState('');
@@ -13,7 +13,7 @@ export default function ForgotPasswordForm() {
     setIsLoading(true);
     setError('');
 
-    const { response, error } = await callPostApi(
+    const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-forgot-password`,
       {
         email,

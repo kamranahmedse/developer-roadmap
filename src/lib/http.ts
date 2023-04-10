@@ -2,14 +2,20 @@ import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from './constants';
 
 type AppResponse = Record<string, any>;
+type FetchError = {
+  status: number;
+  message: string;
+};
 
-type ApiReturn<ResponseType> = {
+type AppError = {
+  status: number;
+  message: string;
+  errors?: { message: string; location: string }[];
+};
+
+type ApiReturn<ResponseType, ErrorType> = {
   response?: ResponseType;
-  error?: {
-    status: number;
-    message: string;
-    errors?: { message: string; location: string }[];
-  };
+  error?: ErrorType | FetchError;
 };
 
 /**
@@ -18,10 +24,13 @@ type ApiReturn<ResponseType> = {
  * @param url
  * @param options
  */
-export async function callApi<ResponseType = AppResponse>(
+export async function httpCall<
+  ResponseType = AppResponse,
+  ErrorType = AppError
+>(
   url: string,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
   try {
     const response = await fetch(url, {
       credentials: 'include',
@@ -44,11 +53,7 @@ export async function callApi<ResponseType = AppResponse>(
 
     return {
       response: undefined,
-      error: {
-        status: response.status,
-        message: data.message || 'Something went wrong. Please try again later.',
-        errors: data.errors,
-      },
+      error: data as ErrorType,
     };
   } catch (error: any) {
     return {
@@ -56,68 +61,76 @@ export async function callApi<ResponseType = AppResponse>(
       error: {
         status: 0,
         message: error.message,
-        errors: [],
       },
     };
   }
 }
 
-export async function callPostApi<ResponseType = AppResponse>(
+export async function httpPost<
+  ResponseType = AppResponse,
+  ErrorType = AppError
+>(
   url: string,
   body: Record<string, any>,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
-  return callApi<ResponseType>(url, {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
+  return httpCall<ResponseType, ErrorType>(url, {
     ...options,
     method: 'POST',
     body: JSON.stringify(body),
   });
 }
 
-export async function callGetApi<ResponseType = AppResponse>(
+export async function httpGet<ResponseType = AppResponse, ErrorType = AppError>(
   url: string,
   queryParams?: Record<string, any>,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
   const searchParams = new URLSearchParams(queryParams).toString();
   const queryUrl = searchParams ? `${url}?${searchParams}` : url;
 
-  return callApi<ResponseType>(queryUrl, {
+  return httpCall<ResponseType, ErrorType>(queryUrl, {
     credentials: 'include',
     method: 'GET',
     ...options,
   });
 }
 
-export async function callPatchApi<ResponseType = AppResponse>(
+export async function httpPatch<
+  ResponseType = AppResponse,
+  ErrorType = AppError
+>(
   url: string,
   body: Record<string, any>,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
-  return callApi<ResponseType>(url, {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
+  return httpCall<ResponseType, ErrorType>(url, {
     ...options,
     method: 'PATCH',
     body: JSON.stringify(body),
   });
 }
 
-export async function callPutApi<ResponseType = AppResponse>(
+export async function httpPut<ResponseType = AppResponse, ErrorType = AppError>(
   url: string,
   body: Record<string, any>,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
-  return callApi<ResponseType>(url, {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
+  return httpCall<ResponseType, ErrorType>(url, {
     ...options,
     method: 'PUT',
     body: JSON.stringify(body),
   });
 }
 
-export async function callDeleteApi<ResponseType = AppResponse>(
+export async function httpDelete<
+  ResponseType = AppResponse,
+  ErrorType = AppError
+>(
   url: string,
   options?: RequestInit
-): Promise<ApiReturn<ResponseType>> {
-  return callApi<ResponseType>(url, {
+): Promise<ApiReturn<ResponseType, ErrorType>> {
+  return httpCall<ResponseType, ErrorType>(url, {
     ...options,
     method: 'DELETE',
   });
