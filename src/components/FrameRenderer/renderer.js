@@ -1,4 +1,6 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
+import { httpGet } from '../../lib/http';
+import { getUserResourceProgressApi } from '../../lib/progress-api';
 
 export class Renderer {
   constructor() {
@@ -42,6 +44,27 @@ export class Renderer {
     return true;
   }
 
+  async markToggleDone() {
+    const { response, error } = await getUserResourceProgressApi({
+      resourceId: this.resourceId,
+      resourceType: this.resourceType,
+    });
+
+    if (!response) {
+      console.error(error);
+      return;
+    }
+
+    const { done } = response;
+    done.forEach((topic) => {
+      const topicEl = document.querySelector(`[data-group-id$="-${topic}"]`);
+
+      if (topicEl) {
+        topicEl.classList.add('done');
+      }
+    });
+  }
+
   /**
    * @param { string } jsonUrl
    * @returns {Promise<SVGElement>}
@@ -52,22 +75,24 @@ export class Renderer {
       return null;
     }
 
-    this.containerEl.innerHTML = this.loaderHTML;
+    console.log(this.resourceType, this.resourceId);
 
-    return fetch(jsonUrl)
-      .then((res) => {
-        return res.json();
-      })
-      .then((json) => {
-        return wireframeJSONToSVG(json, {
-          fontURL: '/fonts/balsamiq.woff2',
-        });
-      })
-      .then((svg) => {
-        this.containerEl.replaceChildren(svg);
-      })
-      .catch((error) => {
-        const message = `
+    this.containerEl.innerHTML = this.loaderHTML;
+    return Promise.all([
+      fetch(jsonUrl)
+        .then((res) => {
+          return res.json();
+        })
+        .then((json) => {
+          return wireframeJSONToSVG(json, {
+            fontURL: '/fonts/balsamiq.woff2',
+          });
+        })
+        .then((svg) => {
+          this.containerEl.replaceChildren(svg);
+        })
+        .catch((error) => {
+          const message = `
           <strong>There was an error.</strong><br>
           
           Try loading the page again. or submit an issue on GitHub with following:<br><br>
@@ -75,8 +100,10 @@ export class Renderer {
           ${error.message} <br /> ${error.stack}
         `;
 
-        this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
-      });
+          this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
+        }),
+      this.markToggleDone(),
+    ]);
   }
 
   onDOMLoaded() {
@@ -167,6 +194,7 @@ export class Renderer {
         detail: {
           topicId: normalizedGroupId,
           resourceId: this.resourceId,
+          resourceType: this.resourceType,
         },
       })
     );
@@ -175,6 +203,7 @@ export class Renderer {
   init() {
     window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
     window.addEventListener('click', this.handleSvgClick);
+    // window.addEventListener('contextmenu', this.handleSvgClick);
   }
 }
 

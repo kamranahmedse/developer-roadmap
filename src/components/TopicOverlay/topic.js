@@ -65,16 +65,29 @@ export class Topic {
   }
 
   rightClickListener(e) {
+    console.log(e.detail);
     const groupId = e.target?.closest('g')?.dataset?.groupId;
     if (!groupId) {
       return;
     }
 
     e.preventDefault();
+
+    console.log(
+      'Right click on topic',
+      groupId,
+      this.activeResourceId,
+      this.activeResourceType
+    );
+
     if (this.isTopicDone(groupId)) {
-      this.markAsPending(groupId);
+      this.markAsPending(
+        groupId,
+        this.activeResourceId,
+        this.activeResourceType
+      );
     } else {
-      this.markAsDone(groupId);
+      this.markAsDone(groupId, this.activeResourceId, this.activeResourceType);
     }
   }
 
@@ -100,7 +113,8 @@ export class Topic {
 
   isTopicDone(topicId) {
     const normalizedGroup = topicId.replace(/^\d+-/, '');
-    return localStorage.getItem(normalizedGroup) === 'done';
+    const el = document.querySelector(`[data-group-id="${normalizedGroup}"]`);
+    return el?.classList.contains('done');
   }
 
   /**
@@ -192,6 +206,7 @@ export class Topic {
 
   handleRoadmapTopicClick(e) {
     const { resourceId: roadmapId, topicId } = e.detail;
+    console.log(e.detail);
     if (!topicId || !roadmapId) {
       console.log('Missing topic or roadmap: ', e.detail);
       return;
