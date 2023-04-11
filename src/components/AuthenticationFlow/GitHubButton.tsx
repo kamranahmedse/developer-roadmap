@@ -3,9 +3,12 @@ import { useEffect, useState } from 'preact/hooks';
 import GitHubIcon from '../../icons/github.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import Cookies from 'js-cookie';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 type GitHubButtonProps = {};
+
+const GITHUB_REDIRECT_AT = 'githubRedirectAt';
+const GITHUB_LAST_PAGE = 'githubLastPage';
 
 export function GitHubButton(props: GitHubButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
@@ -38,8 +41,25 @@ export function GitHubButton(props: GitHubButtonProps) {
           setError('Something went wrong. Please try again later.');
           setIsLoading(false);
         } else {
+          let redirectUrl = '/';
+          const gitHubRedirectAt = localStorage.getItem(GITHUB_REDIRECT_AT);
+          const lastPageBeforeGithub = localStorage.getItem(GITHUB_LAST_PAGE);
+
+          // If the social redirect is there and less than 30 seconds old
+          // redirect to the page that user was on before they clicked the github login button
+          if (gitHubRedirectAt && lastPageBeforeGithub) {
+            const socialRedirectAtTime = parseInt(gitHubRedirectAt, 10);
+            const now = Date.now();
+            const timeSinceRedirect = now - socialRedirectAtTime;
+
+            if (timeSinceRedirect < 30 * 1000) {
+              redirectUrl = lastPageBeforeGithub;
+            }
+          }
+
+          localStorage.removeItem(GITHUB_REDIRECT_AT);
           Cookies.set(TOKEN_COOKIE_NAME, data.token);
-          window.location.href = '/';
+          window.location.href = redirectUrl;
         }
       })
       .catch((err) => {
@@ -58,6 +78,13 @@ export function GitHubButton(props: GitHubButtonProps) {
       .then((data: any) => {
         // @todo proper typing for API response
         if (data.loginUrl) {
+          // For non authentication pages, we want to redirect back to the page
+          // the user was on before they clicked the social login button
+          if (!['/login', '/signup'].includes(window.location.pathname)) {
+            localStorage.setItem(GITHUB_REDIRECT_AT, Date.now().toString());
+            localStorage.setItem(GITHUB_LAST_PAGE, window.location.pathname);
+          }
+
           window.location.href = data.loginUrl;
         } else {
           setError('Something went wrong. Please try again later.');
