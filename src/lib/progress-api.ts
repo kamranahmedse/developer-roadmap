@@ -1,4 +1,4 @@
-import { httpPatch } from './http';
+import { httpGet, httpPatch } from './http';
 
 export async function toggleMarkResourceDoneApi({
   resourceId,
@@ -15,5 +15,20 @@ export async function toggleMarkResourceDoneApi({
     resourceId,
     resourceType,
     topicId,
+  });
+}
+
+export async function getUserResourceProgressApi({
+  resourceId,
+  resourceType,
+}: {
+  resourceId: string;
+  resourceType: 'roadmap' | 'best-practice';
+}) {
+  return await httpGet<{
+    done: string[];
+  }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`, {
+    resourceId,
+    resourceType,
   });
 }
