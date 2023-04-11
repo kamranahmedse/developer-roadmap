@@ -7,4 +7,5 @@ Visit the following resources to learn more:
 - [Atlassian Design System](https://atlassian.design/)
 - [Polaris Design System (Shopify)](https://polaris.shopify.com/)
 - [Gov.uk Design System](https://design-system.service.gov.uk/)
+- [Gov.br Design System](https://www.gov.br/ds/home)
 - [Collection of Open Source Design Systems](https://github.com/alexpate/awesome-design-systems)
