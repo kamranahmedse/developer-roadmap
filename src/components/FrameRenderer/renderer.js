@@ -44,7 +44,7 @@ export class Renderer {
     return true;
   }
 
-  async markToggleDone() {
+  async topicToggleDone() {
     const { response, error } = await getUserResourceProgressApi({
       resourceId: this.resourceId,
       resourceType: this.resourceType,
@@ -102,7 +102,7 @@ export class Renderer {
 
           this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
         }),
-      this.markToggleDone(),
+      this.topicToggleDone(),
     ]);
   }
 

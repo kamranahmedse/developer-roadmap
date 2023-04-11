@@ -113,7 +113,7 @@ export class Topic {
 
   isTopicDone(topicId) {
     const normalizedGroup = topicId.replace(/^\d+-/, '');
-    const el = document.querySelector(`[data-group-id="${normalizedGroup}"]`);
+    const el = document.querySelector(`[data-group-id$="-${normalizedGroup}"]`);
     return el?.classList.contains('done');
   }
 
