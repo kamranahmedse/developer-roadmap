@@ -153,9 +153,9 @@ export class Topic {
 
     const isDone = localStorage.getItem(topicId) === 'done';
     if (isDone) {
-      this.markAsPending(topicId);
+      this.markAsPending(topicId, bestPracticeId, 'best-practice');
     } else {
-      this.markAsDone(topicId);
+      this.markAsDone(topicId, bestPracticeId, 'best-practice');
     }
   }
 
@@ -166,7 +166,7 @@ export class Topic {
       return;
     }
 
-    this.markAsPending(topicId);
+    this.markAsPending(topicId, bestPracticeId, 'best-practice');
   }
 
   handleBestPracticeTopicClick(e) {
@@ -245,12 +245,15 @@ export class Topic {
     return matchingElements;
   }
 
-  async markAsDone(topicId) {
+  async markAsDone(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
+
+    console.log('Marking as done: ', updatedTopicId, resourceId, resourceType);
+
     const { response, error } = await toggleMarkResourceDoneApi({
-      resourceId: this.activeResourceId,
+      resourceId,
       topicId: updatedTopicId,
-      resourceType: this.activeResourceType,
+      resourceType,
     });
 
     if (response) {
@@ -263,13 +266,13 @@ export class Topic {
     }
   }
 
-  async markAsPending(topicId) {
+  async markAsPending(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
     const { response, error } = await toggleMarkResourceDoneApi({
-      resourceId: this.activeResourceId,
+      resourceId,
       topicId: updatedTopicId,
-      resourceType: this.activeResourceType,
+      resourceType,
     });
 
     if (response) {
@@ -294,7 +297,11 @@ export class Topic {
       e.target.id === this.markTopicDoneId ||
       e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
-      this.markAsDone(this.activeTopicId);
+      this.markAsDone(
+        this.activeTopicId,
+        this.activeResourceId,
+        this.activeResourceType
+      );
       // this.close();
     }
 
@@ -302,8 +309,12 @@ export class Topic {
       e.target.id === this.markTopicPendingId ||
       e.target.closest(`#${this.markTopicPendingId}`);
     if (isClickedPending) {
-      this.markAsPending(this.activeTopicId);
-      this.close();
+      this.markAsPending(
+        this.activeTopicId,
+        this.activeResourceId,
+        this.activeResourceType
+      );
+      // this.close();
     }
 
     const isClickedPopupOpener =
