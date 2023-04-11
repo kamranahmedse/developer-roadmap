@@ -1,3 +1,4 @@
+import { toggleMarkResourceDoneApi } from '../../lib/progress-api.ts';
 export class Topic {
   constructor() {
     this.overlayId = 'topic-overlay';
@@ -244,22 +245,41 @@ export class Topic {
     return matchingElements;
   }
 
-  markAsDone(topicId) {
+  async markAsDone(topicId) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
-    localStorage.setItem(updatedTopicId, 'done');
-
-    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
-      item?.classList?.add('done');
+    const { response, error } = await toggleMarkResourceDoneApi({
+      resourceId: this.activeResourceId,
+      topicId: updatedTopicId,
+      resourceType: this.activeResourceType,
     });
+
+    if (response) {
+      this.close();
+      this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
+        item?.classList?.add('done');
+      });
+    } else {
+      console.error(error);
+    }
   }
 
-  markAsPending(topicId) {
+  async markAsPending(topicId) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
-    localStorage.removeItem(updatedTopicId);
-    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
-      item?.classList?.remove('done');
+    const { response, error } = await toggleMarkResourceDoneApi({
+      resourceId: this.activeResourceId,
+      topicId: updatedTopicId,
+      resourceType: this.activeResourceType,
     });
+
+    if (response) {
+      this.close();
+      this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
+        item?.classList?.remove('done');
+      });
+    } else {
+      console.error(error);
+    }
   }
 
   handleOverlayClick(e) {
@@ -275,7 +295,7 @@ export class Topic {
       e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
       this.markAsDone(this.activeTopicId);
-      this.close();
+      // this.close();
     }
 
     const isClickedPending =
