@@ -7,3 +7,4 @@ Zustand is often used as an alternative to other state management libraries, suc
 Visit the following resources to learn more:
 
 - [Zustand - Official Website](https://github.com/pmndrs/zustand)
+- [Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)
