@@ -1,5 +1,4 @@
 import { useState } from 'preact/hooks';
-import Spinner from '../Spinner';
 import { httpPost } from '../../lib/http';
 
 export function ForgotPasswordForm() {

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'preact/hooks';
-import Spinner from '../Spinner';
 import { httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
 import {TOKEN_COOKIE_NAME} from "../../lib/jwt";

@@ -1,6 +1,7 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
-import { httpGet } from '../../lib/http';
-import { getUserResourceProgressApi } from '../../lib/progress-api';
+import Cookies from 'js-cookie';
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt.ts';
+import { httpGet } from '../../lib/http.ts';
 
 export class Renderer {
   constructor() {
@@ -44,11 +45,19 @@ export class Renderer {
     return true;
   }
 
-  async topicToggleDone() {
-    const { response, error } = await getUserResourceProgressApi({
-      resourceId: this.resourceId,
-      resourceType: this.resourceType,
-    });
+  async loadProgress() {
+    const token = Cookies.get(TOKEN_COOKIE_NAME);
+    if (!token) {
+      return;
+    }
+
+    const { response, error } = await httpGet(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`,
+      {
+        resourceId: this.resourceId,
+        resourceType: this.resourceType,
+      }
+    );
 
     if (!response) {
       console.error(error);
@@ -75,8 +84,6 @@ export class Renderer {
       return null;
     }
 
-    console.log(this.resourceType, this.resourceId);
-
     this.containerEl.innerHTML = this.loaderHTML;
     return Promise.all([
       fetch(jsonUrl)
@@ -102,7 +109,8 @@ export class Renderer {
 
           this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
         }),
-      this.topicToggleDone(),
+
+      this.loadProgress(),
     ]);
   }
 

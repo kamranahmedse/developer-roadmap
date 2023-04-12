@@ -1,4 +1,3 @@
-import { toggleMarkResourceDoneApi } from '../../lib/progress-api.ts';
 export class Topic {
   constructor() {
     this.overlayId = 'topic-overlay';
@@ -30,7 +29,6 @@ export class Topic {
     this.markAsDone = this.markAsDone.bind(this);
     this.markAsPending = this.markAsPending.bind(this);
     this.querySvgElementsByTopicId = this.querySvgElementsByTopicId.bind(this);
-    this.rightClickListener = this.rightClickListener.bind(this);
     this.isTopicDone = this.isTopicDone.bind(this);
 
     this.init = this.init.bind(this);
@@ -62,33 +60,6 @@ export class Topic {
 
   get overlayEl() {
     return document.getElementById(this.overlayId);
-  }
-
-  rightClickListener(e) {
-    console.log(e.detail);
-    const groupId = e.target?.closest('g')?.dataset?.groupId;
-    if (!groupId) {
-      return;
-    }
-
-    e.preventDefault();
-
-    console.log(
-      'Right click on topic',
-      groupId,
-      this.activeResourceId,
-      this.activeResourceType
-    );
-
-    if (this.isTopicDone(groupId)) {
-      this.markAsPending(
-        groupId,
-        this.activeResourceId,
-        this.activeResourceType
-      );
-    } else {
-      this.markAsDone(groupId, this.activeResourceId, this.activeResourceType);
-    }
   }
 
   resetDOM(hideOverlay = false) {
@@ -206,7 +177,6 @@ export class Topic {
 
   handleRoadmapTopicClick(e) {
     const { resourceId: roadmapId, topicId } = e.detail;
-    console.log(e.detail);
     if (!topicId || !roadmapId) {
       console.log('Missing topic or roadmap: ', e.detail);
       return;
@@ -263,13 +233,7 @@ export class Topic {
   async markAsDone(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
-    console.log('Marking as done: ', updatedTopicId, resourceId, resourceType);
-
-    const { response, error } = await toggleMarkResourceDoneApi({
-      resourceId,
-      topicId: updatedTopicId,
-      resourceType,
-    });
+    const { response, error } = {};
 
     if (response) {
       this.close();
@@ -284,11 +248,7 @@ export class Topic {
   async markAsPending(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
-    const { response, error } = await toggleMarkResourceDoneApi({
-      resourceId,
-      topicId: updatedTopicId,
-      resourceType,
-    });
+    const { response, error } = {};
 
     if (response) {
       this.close();
@@ -356,9 +316,8 @@ export class Topic {
       'roadmap.topic.click',
       this.handleRoadmapTopicClick
     );
-    window.addEventListener('click', this.handleOverlayClick);
-    window.addEventListener('contextmenu', this.rightClickListener);
 
+    window.addEventListener('click', this.handleOverlayClick);
     window.addEventListener('keydown', (e) => {
       if (e.key.toLowerCase() === 'escape') {
         this.close();

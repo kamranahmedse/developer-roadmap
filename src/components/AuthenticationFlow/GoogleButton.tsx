@@ -57,6 +57,7 @@ export function GoogleButton(props: GoogleButtonProps) {
           }
 
           localStorage.removeItem(GOOGLE_REDIRECT_AT);
+          localStorage.removeItem(GOOGLE_LAST_PAGE);
           Cookies.set(TOKEN_COOKIE_NAME, data.token);
           window.location.href = redirectUrl;
         }

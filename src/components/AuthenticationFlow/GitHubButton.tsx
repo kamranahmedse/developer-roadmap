@@ -58,6 +58,7 @@ export function GitHubButton(props: GitHubButtonProps) {
           }
 
           localStorage.removeItem(GITHUB_REDIRECT_AT);
+          localStorage.removeItem(GITHUB_LAST_PAGE);
           Cookies.set(TOKEN_COOKIE_NAME, data.token);
           window.location.href = redirectUrl;
         }
