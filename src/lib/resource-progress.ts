@@ -1,6 +1,7 @@
 import { httpGet, httpPatch } from './http';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from './jwt';
+import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
 
@@ -12,7 +13,7 @@ type TopicMeta = {
 
 export async function isTopicDone(topic: TopicMeta): Promise<boolean> {
   const { topicId, resourceType, resourceId } = topic;
-  const doneItems = await getUserResourceProgress(resourceType, resourceId);
+  const doneItems = await getResourceProgress(resourceType, resourceId);
 
   if (!doneItems) {
     return false;
@@ -41,9 +42,10 @@ export async function toggleMarkTopicDone(
     throw new Error(error?.message || 'Something went wrong');
   }
 
-  setUserResourceProgress(resourceType, resourceId, response.done);
+  setResourceProgress(resourceType, resourceId, response.done);
 }
-export async function getUserResourceProgress(
+
+export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
 ): Promise<string[]> {
@@ -92,12 +94,12 @@ async function loadFreshProgress(
     return [];
   }
 
-  setUserResourceProgress(resourceType, resourceId, response.done);
+  setResourceProgress(resourceType, resourceId, response.done);
 
   return response.done;
 }
 
-export function setUserResourceProgress(
+export function setResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string,
   done: string[]
@@ -109,4 +111,54 @@ export function setUserResourceProgress(
       timestamp: new Date().getTime(),
     })
   );
+}
+
+export function renderTopicProgress(topicId: string, isDone: boolean) {
+  const matchingElements: Element[] = [];
+
+  // Elements having sort order in the beginning of the group id
+  document
+    .querySelectorAll(`[data-group-id$="-${topicId}"]`)
+    .forEach((element: unknown) => {
+      const foundGroupId =
+        (element as HTMLOrSVGElement)?.dataset?.groupId || '';
+      const validGroupRegex = new RegExp(`^\\d+-${topicId}$`);
+
+      if (validGroupRegex.test(foundGroupId)) {
+        matchingElements.push(element);
+      }
+    });
+
+  // Elements with exact match of the topic id
+  document
+    .querySelectorAll(`[data-group-id="${topicId}"]`)
+    .forEach((element) => {
+      matchingElements.push(element);
+    });
+
+  // Matching "check:XXXX" box of the topic
+  document
+    .querySelectorAll(`[data-group-id="check:${topicId}"]`)
+    .forEach((element) => {
+      matchingElements.push(element);
+    });
+
+  matchingElements.forEach((element) => {
+    if (isDone) {
+      element.classList.add('done');
+    } else {
+      element.classList.remove('done');
+    }
+  });
+}
+
+export async function renderResourceProgress(
+  resourceType: ResourceType,
+  resourceId: string
+) {
+  const progress = await getResourceProgress(resourceType, resourceId);
+
+  progress.forEach((topicId) => {
+    renderTopicProgress(topicId, true);
+  });
 }

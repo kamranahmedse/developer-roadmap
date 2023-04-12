@@ -10,9 +10,10 @@ import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
   isTopicDone,
+  renderTopicProgress,
   ResourceType,
-  toggleMarkTopicDone,
-} from '../../lib/user-resource-progress';
+  toggleMarkTopicDone as toggleMarkTopicDoneApi,
+} from '../../lib/resource-progress';
 import { useKeydown } from '../../hooks/use-keydown';
 
 export function TopicDetail() {
@@ -32,22 +33,21 @@ export function TopicDetail() {
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
 
-  const toggleResourceProgress = (isDone: boolean) => {
+  const toggleMarkTopicDone = (isDone: boolean) => {
     setIsUpdatingProgress(true);
-    toggleMarkTopicDone({ topicId, resourceId, resourceType }, isDone)
+    toggleMarkTopicDoneApi({ topicId, resourceId, resourceType }, isDone)
       .then(() => {
         setIsDone(isDone);
         setIsActive(false);
+        renderTopicProgress(topicId, isDone);
       })
-      .catch(err => {
+      .catch((err) => {
         alert(err.message);
         console.error(err);
       })
       .finally(() => {
         setIsUpdatingProgress(false);
       });
-
-    console.log('toggle', isDone);
   };
 
   // Load the topic status when the topic detail is active
@@ -168,7 +168,7 @@ export function TopicDetail() {
                   {!isUpdatingProgress && !isDone && (
                     <button
                       className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-                      onClick={() => toggleResourceProgress(true)}
+                      onClick={() => toggleMarkTopicDone(true)}
                     >
                       <img alt="Check" class="h-4 w-4" src={CheckIcon} />
                       <span className="ml-2">Mark as Done</span>
@@ -178,7 +178,7 @@ export function TopicDetail() {
                   {!isUpdatingProgress && isDone && (
                     <button
                       className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
-                      onClick={() => toggleResourceProgress(false)}
+                      onClick={() => toggleMarkTopicDone(false)}
                     >
                       <img alt="Check" class="h-4" src={ResetIcon} />
                       <span className="ml-2">Mark as Pending</span>
