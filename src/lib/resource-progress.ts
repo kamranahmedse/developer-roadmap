@@ -49,15 +49,19 @@ export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
 ): Promise<string[]> {
+  // No need to load progress if user is not logged in
+  if (!Cookies.get(TOKEN_COOKIE_NAME)) {
+    return [];
+  }
+
   const progressKey = `${resourceType}-${resourceId}-progress`;
+
   const rawProgress = localStorage.getItem(progressKey);
   const progress = JSON.parse(rawProgress || 'null');
 
   const progressTimestamp = progress?.timestamp;
   const diff = new Date().getTime() - parseInt(progressTimestamp || '0', 10);
-  const isProgressExpired = diff > 10 * 60 * 1000; // 10 minutes
-
-  console.log(progressKey);
+  const isProgressExpired = diff > 15 * 60 * 1000; // 15 minutes
 
   if (!progress || isProgressExpired) {
     return loadFreshProgress(resourceType, resourceId);
@@ -79,13 +83,6 @@ async function loadFreshProgress(
   );
 
   if (error) {
-    if (error.status === 401) {
-      Cookies.remove(TOKEN_COOKIE_NAME);
-      window.location.reload();
-
-      return [];
-    }
-
     console.error(error);
     return [];
   }

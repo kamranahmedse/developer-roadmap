@@ -55,6 +55,12 @@ export async function httpCall<
       };
     }
 
+    // Logout user if token is invalid
+    if (data.status === 401) {
+      Cookies.remove(TOKEN_COOKIE_NAME);
+      window.location.reload();
+    }
+
     return {
       response: undefined,
       error: data as ErrorType,

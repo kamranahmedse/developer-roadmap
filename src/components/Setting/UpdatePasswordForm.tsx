@@ -59,13 +59,6 @@ export default function UpdatePasswordForm() {
     );
 
     if (error || !response) {
-      if (error?.status === 401) {
-        Cookies.remove(TOKEN_COOKIE_NAME);
-        window.location.reload();
-
-        return;
-      }
-
       setIsLoading(false);
       setError(error?.message || 'Something went wrong');
 
