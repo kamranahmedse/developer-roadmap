@@ -24,11 +24,11 @@ cursor.forEach((doc) => {
 
 Cursors provide several methods that allow you to manipulate the result set and control the query execution. Some key methods include:
 
-- **`count()`**: Returns the total number of documents in the result set.
-- **`limit(n)`**: Limits the number of documents retrieved to `n`.
-- **`skip(n)`**: Skips the first `n` documents in the result set.
-- **`sort(field, order)`**: Sorts the documents based on the specified field and order (1 for ascending, -1 for descending).
-- **`project(field)`**: Specifies the fields to include or exclude from the result documents.
+- `count()`: Returns the total number of documents in the result set.
+- `limit(n)`: Limits the number of documents retrieved to `n`.
+- `skip(n)`: Skips the first `n` documents in the result set.
+- `sort(field, order)`: Sorts the documents based on the specified field and order (1 for ascending, -1 for descending).
+- `project(field)`: Specifies the fields to include or exclude from the result documents.
 
 You can chain these methods together to build complex queries:
 
