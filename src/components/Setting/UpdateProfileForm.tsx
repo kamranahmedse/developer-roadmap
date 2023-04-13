@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { pageLoadingMessage } from '../../stores/page';
 
 export function UpdateProfileForm() {
   const [name, setName] = useState('');
@@ -10,7 +11,7 @@ export function UpdateProfileForm() {
   const [twitter, setTwitter] = useState('');
   const [linkedin, setLinkedin] = useState('');
   const [website, setWebsite] = useState('');
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
@@ -72,8 +73,9 @@ export function UpdateProfileForm() {
 
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
+    pageLoadingMessage.set('Loading profile');
     loadProfile().finally(() => {
-      // hide the page level loading indicator
+      pageLoadingMessage.set('');
     });
   }, []);
 

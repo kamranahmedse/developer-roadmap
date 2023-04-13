@@ -5,47 +5,47 @@ specifiers:
   '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.1.1
   '@nanostores/preact': ^0.3.1
-  '@playwright/test': ^1.32.2
+  '@playwright/test': ^1.32.3
   '@tailwindcss/typography': ^0.5.9
   '@types/js-cookie': ^3.0.3
-  astro: 2.2.0
+  astro: ^2.2.3
   astro-compress: ^1.1.35
   gh-pages: ^5.0.0
-  jose: ^4.13.1
+  jose: ^4.13.2
   js-cookie: ^3.0.1
   js-yaml: ^4.1.0
   markdown-it: ^13.0.1
   nanostores: ^0.7.4
   node-html-parser: ^6.1.5
-  npm-check-updates: ^16.10.7
+  npm-check-updates: ^16.10.8
   openai: ^3.2.1
   preact: ^10.13.2
   prettier: ^2.8.7
   prettier-plugin-astro: ^0.8.0
   prettier-plugin-tailwindcss: ^0.2.7
   rehype-external-links: ^2.0.1
-  roadmap-renderer: ^1.0.4
+  roadmap-renderer: ^1.0.5
   tailwindcss: ^3.3.1
 
 dependencies:
   '@astrojs/preact': 2.1.0_preact@10.13.2
   '@astrojs/sitemap': 1.2.2
-  '@astrojs/tailwind': 3.1.1_nfbnt7ricougkvppdwsf5maxzu
+  '@astrojs/tailwind': 3.1.1_ooi4vwztktmr2nba6g3hokplre
   '@nanostores/preact': 0.3.1_ntvucyavaortwycasiweu74jd4
-  astro: 2.2.0
+  astro: 2.2.3
   astro-compress: 1.1.35
-  jose: 4.13.1
+  jose: 4.13.2
   js-cookie: 3.0.1
   nanostores: 0.7.4
   node-html-parser: 6.1.5
-  npm-check-updates: 16.10.7
+  npm-check-updates: 16.10.8
   preact: 10.13.2
   rehype-external-links: 2.0.1
-  roadmap-renderer: 1.0.4
+  roadmap-renderer: 1.0.5
   tailwindcss: 3.3.1
 
 devDependencies:
-  '@playwright/test': 1.32.2
+  '@playwright/test': 1.32.3
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.1
   '@types/js-cookie': 3.0.3
   gh-pages: 5.0.0
@@ -91,13 +91,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.1.3_astro@2.2.0:
+  /@astrojs/markdown-remark/2.1.3_astro@2.2.3:
     resolution: {integrity: sha512-Di8Qbit9p7L7eqKklAJmiW9nVD+XMsNHpaNzCLduWjOonDu9fVgEzdjeDrTVCDtgrvkfhpAekuNXrp5+w4F91g==}
     peerDependencies:
       astro: ^2.2.0
     dependencies:
       '@astrojs/prism': 2.1.1
-      astro: 2.2.0
+      astro: 2.2.3
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -144,14 +144,14 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@astrojs/tailwind/3.1.1_nfbnt7ricougkvppdwsf5maxzu:
+  /@astrojs/tailwind/3.1.1_ooi4vwztktmr2nba6g3hokplre:
     resolution: {integrity: sha512-Wx/ZtVnmtfqHWGVzvUEYZm8rufVKVgDIef0q6fzwUxoT1EpTTwBkTbpnzooogewMLOh2eTscasGe3Ih2HC1wVA==}
     peerDependencies:
       astro: ^2.1.3
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.2.0
+      astro: 2.2.3
       autoprefixer: 10.4.14_postcss@8.4.21
       postcss: 8.4.21
       postcss-load-config: 4.0.1_postcss@8.4.21
@@ -792,13 +792,13 @@ packages:
       tiny-glob: 0.2.9
       tslib: 2.5.0
 
-  /@playwright/test/1.32.2:
-    resolution: {integrity: sha512-nhaTSDpEdTTttdkDE8Z6K3icuG1DVRxrl98Qq0Lfc63SS9a2sjc9+x8ezysh7MzCKz6Y+nArml3/mmt+gqRmQQ==}
+  /@playwright/test/1.32.3:
+    resolution: {integrity: sha512-BvWNvK0RfBriindxhLVabi8BRe3X0J9EVjKlcmhxjg4giWBD/xleLcg2dz7Tx0agu28rczjNIPQWznwzDwVsZQ==}
     engines: {node: '>=14'}
     hasBin: true
     dependencies:
       '@types/node': 18.15.11
-      playwright-core: 1.32.2
+      playwright-core: 1.32.3
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1168,8 +1168,8 @@ packages:
       terser: 5.16.5
     dev: false
 
-  /astro/2.2.0:
-    resolution: {integrity: sha512-7ggQHIyWadnjRY+Jo7nZmYF5xspeAWCjQV+fPkad7u86hj0qjhU+8WvCZI1q7cvJo9o0DMzaI+3vH1voIK7Czg==}
+  /astro/2.2.3:
+    resolution: {integrity: sha512-Pd67ZBoYxqeyHCZ0UpdmDZYNgcs7JTwc0NMzUScrH4y2hjSY4S8iwmNUtd9pf65gkxMpEbqfvQj06kLzgi4HZg==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     peerDependencies:
@@ -1180,7 +1180,7 @@ packages:
     dependencies:
       '@astrojs/compiler': 1.3.1
       '@astrojs/language-server': 0.28.3
-      '@astrojs/markdown-remark': 2.1.3_astro@2.2.0
+      '@astrojs/markdown-remark': 2.1.3_astro@2.2.3
       '@astrojs/telemetry': 2.1.0
       '@astrojs/webapi': 2.1.0
       '@babel/core': 7.21.4
@@ -2840,8 +2840,8 @@ packages:
     resolution: {integrity: sha512-8wb9Yw966OSxApiCt0K3yNJL8pnNeIv+OEq2YMidz4FKP6nonSRoOXc80iXY4JaN2FC11B9qsNmDsm+ZOfMROA==}
     dev: false
 
-  /jose/4.13.1:
-    resolution: {integrity: sha512-MSJQC5vXco5Br38mzaQKiq9mwt7lwj2eXpgpRyQYNHYt2lq1PjkWa7DLXX0WVcQLE9HhMh3jPiufS7fhJf+CLQ==}
+  /jose/4.13.2:
+    resolution: {integrity: sha512-GMUKtV+l05F6NY/06nM7rucHM6Ktvw6sxnyRqINBNWS/hCM/bBk7kanOEckRP8xtC/jzuGfTRVZvkjjuy+g4dA==}
     dev: false
 
   /js-cookie/3.0.1:
@@ -3819,8 +3819,8 @@ packages:
       npm-normalize-package-bin: 3.0.0
     dev: false
 
-  /npm-check-updates/16.10.7:
-    resolution: {integrity: sha512-hVJCULf8AoVob9FDvoC7hrkQGuWhWctE9k3sNmR+M6hxZJnlb+03Ph4G1w/pHmI5BGHoo+ZPJtVEXkJsA+JwPQ==}
+  /npm-check-updates/16.10.8:
+    resolution: {integrity: sha512-e+p3rUCvaU0iKOvi+/Xiyx+mLe9/aRTu9Zrc7+TR6H2q+uFgmXEwqbXYN9Ngqsta8gdTjpn751UD5MEOogO5cA==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
@@ -4202,8 +4202,8 @@ packages:
       find-up: 3.0.0
     dev: false
 
-  /playwright-core/1.32.2:
-    resolution: {integrity: sha512-zD7aonO+07kOTthsrCR3YCVnDcqSHIJpdFUtZEMOb6//1Rc7/6mZDRdw+nlzcQiQltOOsiqI3rrSyn/SlyjnJQ==}
+  /playwright-core/1.32.3:
+    resolution: {integrity: sha512-SB+cdrnu74ZIn5Ogh/8278ngEh9NEEV0vR4sJFmK04h2iZpybfbqBY0bX6+BLYWVdV12JLLI+JEFtSnYgR+mWg==}
     engines: {node: '>=14'}
     hasBin: true
     dev: true
@@ -4762,8 +4762,8 @@ packages:
       glob: 9.3.4
     dev: false
 
-  /roadmap-renderer/1.0.4:
-    resolution: {integrity: sha512-TS9jDZu/CzTqxv7QWnMZHgB89WzgLpaExXKcBIWQEKtXm9g9E45t7gijZst9qtRQ2E2+iplAxQz/eMuttq4wAQ==}
+  /roadmap-renderer/1.0.5:
+    resolution: {integrity: sha512-6YH00FD4aZQhtmAnIh+fr/PgdgF8diz0qtdWYVh5x7pce+dILjDG4yMXvT95dEZWZ4AxQ6mu54oeKTnpWY3ozA==}
     dev: false
 
   /rollup/3.20.2:
