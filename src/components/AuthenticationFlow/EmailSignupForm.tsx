@@ -1,5 +1,6 @@
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
+import { httpPost } from '../../lib/http';
 
 const EmailSignupForm: FunctionComponent = () => {
   const [email, setEmail] = useState('');
@@ -9,12 +10,26 @@ const EmailSignupForm: FunctionComponent = () => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const handleRegisterResponse = async (res: Response) => {
-    const json = await res.json();
+  const onSubmit = async (e: Event) => {
+    e.preventDefault();
 
-    if (!res.ok) {
-      setError(json.message || 'Something went wrong. Please try again later.');
+    setIsLoading(true);
+    setError('');
+
+    const { response, error } = await httpPost<{ status: 'ok' }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-register`,
+      {
+        email,
+        password,
+        name,
+      }
+    );
+
+    if (error || response?.status !== 'ok') {
       setIsLoading(false);
+      setError(
+        error?.message || 'Something went wrong. Please try again later.'
+      );
 
       return;
     }
@@ -22,30 +37,6 @@ const EmailSignupForm: FunctionComponent = () => {
     window.location.href = `/verification-pending?email=${encodeURIComponent(
       email
     )}`;
-  };
-
-  const onSubmit = (e: Event) => {
-    e.preventDefault();
-
-    setIsLoading(true);
-    setError('');
-
-    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-register`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-        password,
-        name,
-      }),
-    })
-      .then(handleRegisterResponse)
-      .catch((err) => {
-        setIsLoading(false);
-        setError('Something went wrong. Please try again later.');
-      });
   };
 
   return (

@@ -1,12 +1,14 @@
 import Cookies from 'js-cookie';
+import fp from '@fingerprintjs/fingerprintjs';
 import { TOKEN_COOKIE_NAME } from './jwt';
+
+type HttpOptionsType = RequestInit | { headers: Record<string, any> };
 
 type AppResponse = Record<string, any>;
 type FetchError = {
   status: number;
   message: string;
 };
-
 type AppError = {
   status: number;
   message: string;
@@ -29,9 +31,12 @@ export async function httpCall<
   ErrorType = AppError
 >(
   url: string,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   try {
+    const fingerprintPromise = await fp.load({ monitoring: false });
+    const fingerprint = await fingerprintPromise.get();
+
     const response = await fetch(url, {
       credentials: 'include',
       ...options,
@@ -39,6 +44,7 @@ export async function httpCall<
         'Content-Type': 'application/json',
         Accept: 'application/json',
         Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
+        'x-fp': fingerprint.visitorId,
         ...(options?.headers ?? {}),
       }),
     });
@@ -82,7 +88,7 @@ export async function httpPost<
 >(
   url: string,
   body: Record<string, any>,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   return httpCall<ResponseType, ErrorType>(url, {
     ...options,
@@ -94,7 +100,7 @@ export async function httpPost<
 export async function httpGet<ResponseType = AppResponse, ErrorType = AppError>(
   url: string,
   queryParams?: Record<string, any>,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   const searchParams = new URLSearchParams(queryParams).toString();
   const queryUrl = searchParams ? `${url}?${searchParams}` : url;
@@ -112,7 +118,7 @@ export async function httpPatch<
 >(
   url: string,
   body: Record<string, any>,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   return httpCall<ResponseType, ErrorType>(url, {
     ...options,
@@ -124,7 +130,7 @@ export async function httpPatch<
 export async function httpPut<ResponseType = AppResponse, ErrorType = AppError>(
   url: string,
   body: Record<string, any>,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   return httpCall<ResponseType, ErrorType>(url, {
     ...options,
@@ -138,7 +144,7 @@ export async function httpDelete<
   ErrorType = AppError
 >(
   url: string,
-  options?: RequestInit
+  options?: HttpOptionsType
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   return httpCall<ResponseType, ErrorType>(url, {
     ...options,

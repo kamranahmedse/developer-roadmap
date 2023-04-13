@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/preact': ^2.1.0
   '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.1.1
+  '@fingerprintjs/fingerprintjs': ^3.4.1
   '@nanostores/preact': ^0.3.1
   '@playwright/test': ^1.32.3
   '@tailwindcss/typography': ^0.5.9
@@ -31,6 +32,7 @@ dependencies:
   '@astrojs/preact': 2.1.0_preact@10.13.2
   '@astrojs/sitemap': 1.2.2
   '@astrojs/tailwind': 3.1.1_ooi4vwztktmr2nba6g3hokplre
+  '@fingerprintjs/fingerprintjs': 3.4.1
   '@nanostores/preact': 0.3.1_ntvucyavaortwycasiweu74jd4
   astro: 2.2.3
   astro-compress: 1.1.35
@@ -633,6 +635,12 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /@fingerprintjs/fingerprintjs/3.4.1:
+    resolution: {integrity: sha512-i3TqlaIdF+4qDHP6OStMtLXCnvnoo2C156rNPm9/kIglUtnLAF45+sGkZZmVQB+58dDF0mNpaiqvKHNSR8J1Hg==}
+    dependencies:
+      tslib: 2.5.0
+    dev: false
 
   /@gar/promisify/1.1.3:
     resolution: {integrity: sha512-k2Ty1JcVojjJFwrg/ThKi2ujJ7XNLYaFGNB/bWT9wGR+oSMJHMa5w+CUq6p/pVrKeNNgA7pCqEcjSnHVoqJQFw==}
