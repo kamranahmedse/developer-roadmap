@@ -2,7 +2,7 @@ import Cookies from 'js-cookie';
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
@@ -16,44 +16,32 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
     setIsLoading(true);
     setError('');
 
-    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-login`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+    const { response, error } = await httpPost<{ token: string }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-login`,
+      {
         email,
         password,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.type === 'user_not_verified') {
-          window.location.href = `/verification-pending?email=${encodeURIComponent(
-            email
-          )}`;
-          return;
-        }
+      }
+    );
 
-        if (!data.token) {
-          setIsLoading(false);
-          setError(
-            data.message || 'Something went wrong. Please try again later.'
-          );
-          return;
-        }
+    // Log the user in and reload the page
+    if (response?.token) {
+      Cookies.set(TOKEN_COOKIE_NAME, response.token);
+      window.location.reload();
 
-        // If the response is ok, we'll set the token in a cookie
-        Cookies.set(TOKEN_COOKIE_NAME, data.token);
-        // Refreshing will automatically redirect to the relevant page
-        // Doing this to avoid redirecting to home page from any pages
-        // such as roadmap, best-practice etc
-        window.location.reload();
-      })
-      .catch((err) => {
-        setIsLoading(false);
-        setError('Something went wrong. Please try again later.');
-      });
+      return;
+    }
+
+    // @todo use proper types
+    if ((error as any).type === 'user_not_verified') {
+      window.location.href = `/verification-pending?email=${encodeURIComponent(
+        email
+      )}`;
+      return;
+    }
+
+    setIsLoading(false);
+    setError(error?.message || 'Something went wrong. Please try again later.');
   };
 
   return (

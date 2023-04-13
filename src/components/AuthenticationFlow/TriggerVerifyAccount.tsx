@@ -3,7 +3,8 @@ import ErrorIcon from '../../icons/error.svg';
 
 import { useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { httpPost } from '../../lib/http';
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -12,22 +13,21 @@ export function TriggerVerifyAccount() {
   const triggerVerify = (code: string) => {
     setIsLoading(true);
 
-    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-verify-account`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
+    httpPost<{ token: string }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-verify-account`,
+      {
         code,
-      }),
-    })
-      .then((res) => res.json())
-      .then((data: any) => {
-        if (!data.token) {
-          throw new Error('Something went wrong. Please try again..');
+      }
+    )
+      .then(({ response, error }) => {
+        if (!response?.token) {
+          setError(error?.message || 'Something went wrong. Please try again.');
+          setIsLoading(false);
+
+          return;
         }
 
-        Cookies.set(TOKEN_COOKIE_NAME, data.token);
+        Cookies.set(TOKEN_COOKIE_NAME, response.token);
         window.location.href = '/';
       })
       .catch((err) => {

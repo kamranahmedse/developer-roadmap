@@ -3,6 +3,7 @@ import Cookies from 'js-cookie';
 import GoogleIcon from '../../icons/google.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { httpGet } from '../../lib/http';
 
 type GoogleButtonProps = {};
 
@@ -25,42 +26,39 @@ export function GoogleButton(props: GoogleButtonProps) {
     }
 
     setIsLoading(true);
-    fetch(
+    httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
-      }`,
-      {
-        method: 'GET',
-        credentials: 'include',
-      }
+      }`
     )
-      .then((res) => res.json())
-      .then((data: any) => {
-        if (!data.token) {
-          setError('Something went wrong. Please try again later.');
+      .then(({ response, error }) => {
+        if (!response?.token) {
+          setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
-        } else {
-          let redirectUrl = '/';
-          const googleRedirectAt = localStorage.getItem(GOOGLE_REDIRECT_AT);
-          const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
 
-          // If the social redirect is there and less than 30 seconds old
-          // redirect to the page that user was on before they clicked the github login button
-          if (googleRedirectAt && lastPageBeforeGoogle) {
-            const socialRedirectAtTime = parseInt(googleRedirectAt, 10);
-            const now = Date.now();
-            const timeSinceRedirect = now - socialRedirectAtTime;
-
-            if (timeSinceRedirect < 30 * 1000) {
-              redirectUrl = lastPageBeforeGoogle;
-            }
-          }
-
-          localStorage.removeItem(GOOGLE_REDIRECT_AT);
-          localStorage.removeItem(GOOGLE_LAST_PAGE);
-          Cookies.set(TOKEN_COOKIE_NAME, data.token);
-          window.location.href = redirectUrl;
+          return;
         }
+
+        let redirectUrl = '/';
+        const googleRedirectAt = localStorage.getItem(GOOGLE_REDIRECT_AT);
+        const lastPageBeforeGoogle = localStorage.getItem(GOOGLE_LAST_PAGE);
+
+        // If the social redirect is there and less than 30 seconds old
+        // redirect to the page that user was on before they clicked the github login button
+        if (googleRedirectAt && lastPageBeforeGoogle) {
+          const socialRedirectAtTime = parseInt(googleRedirectAt, 10);
+          const now = Date.now();
+          const timeSinceRedirect = now - socialRedirectAtTime;
+
+          if (timeSinceRedirect < 30 * 1000) {
+            redirectUrl = lastPageBeforeGoogle;
+          }
+        }
+
+        localStorage.removeItem(GOOGLE_REDIRECT_AT);
+        localStorage.removeItem(GOOGLE_LAST_PAGE);
+        Cookies.set(TOKEN_COOKIE_NAME, response.token);
+        window.location.href = redirectUrl;
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
@@ -70,26 +68,25 @@ export function GoogleButton(props: GoogleButtonProps) {
 
   const handleClick = () => {
     setIsLoading(true);
-    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-google-login`, {
-      credentials: 'include',
-      redirect: 'follow',
-    })
-      .then((res) => res.json())
-      .then((data: any) => {
-        // @todo proper typing for API response
-        if (data.loginUrl) {
-          // For non authentication pages, we want to redirect back to the page
-          // the user was on before they clicked the social login button
-          if (!['/login', '/signup'].includes(window.location.pathname)) {
-            localStorage.setItem(GOOGLE_REDIRECT_AT, Date.now().toString());
-            localStorage.setItem(GOOGLE_LAST_PAGE, window.location.pathname);
-          }
-
-          window.location.href = data.loginUrl;
-        } else {
-          setError('Something went wrong. Please try again later.');
+    httpGet<{ loginUrl: string }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-google-login`
+    )
+      .then(({ response, error }) => {
+        if (!response?.loginUrl) {
+          setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
+
+          return;
         }
+
+        // For non authentication pages, we want to redirect back to the page
+        // the user was on before they clicked the social login button
+        if (!['/login', '/signup'].includes(window.location.pathname)) {
+          localStorage.setItem(GOOGLE_REDIRECT_AT, Date.now().toString());
+          localStorage.setItem(GOOGLE_LAST_PAGE, window.location.pathname);
+        }
+
+        window.location.href = response.loginUrl;
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');

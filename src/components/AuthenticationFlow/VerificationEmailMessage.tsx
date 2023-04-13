@@ -1,5 +1,6 @@
 import VerifyLetterIcon from '../../icons/verify-letter.svg';
 import { useEffect, useState } from 'preact/hooks';
+import { httpPost } from '../../lib/http';
 
 export function VerificationEmailMessage() {
   const [email, setEmail] = useState('..');
@@ -14,18 +15,15 @@ export function VerificationEmailMessage() {
   }, []);
 
   const resendVerificationEmail = () => {
-    fetch(`${import.meta.env.PUBLIC_API_URL}/v1-send-verification-email`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({
-        email,
-      }),
+    httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-send-verification-email`, {
+      email,
     })
-      .then((res) => {
-        if (!res.ok) {
-          throw new Error('Something went wrong. Please try again later.');
+      .then(({ response, error }) => {
+        if (error) {
+          setIsEmailResent(false);
+          setError(error?.message || 'Something went wrong.');
+          setIsLoading(false);
+          return;
         }
 
         setIsEmailResent(true);
@@ -49,9 +47,10 @@ export function VerificationEmailMessage() {
       </h2>
       <div class="text-sm sm:text-base">
         <p>
-          We have sent you an email at <span className="font-bold">{email}</span>.
-          Please click the link to verify your account. This link will expire
-          shortly, so please verify soon!
+          We have sent you an email at{' '}
+          <span className="font-bold">{email}</span>. Please click the link to
+          verify your account. This link will expire shortly, so please verify
+          soon!
         </p>
 
         <hr class="my-4" />
@@ -77,7 +76,9 @@ export function VerificationEmailMessage() {
           </>
         )}
 
-        {isEmailResent && <p class="text-green-700">Verification email has been sent!</p>}
+        {isEmailResent && (
+          <p class="text-green-700">Verification email has been sent!</p>
+        )}
       </div>
     </div>
   );
