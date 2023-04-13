@@ -25,7 +25,7 @@ export async function isTopicDone(topic: TopicMeta): Promise<boolean> {
 export async function toggleMarkTopicDone(
   topic: TopicMeta,
   isDone: boolean
-): Promise<void> {
+): Promise<boolean> {
   const { topicId, resourceType, resourceId } = topic;
 
   const { response, error } = await httpPatch<{ done: string[] }>(
@@ -43,6 +43,8 @@ export async function toggleMarkTopicDone(
   }
 
   setResourceProgress(resourceType, resourceId, response.done);
+
+  return isDone;
 }
 
 export async function getResourceProgress(

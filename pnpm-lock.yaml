@@ -4,6 +4,7 @@ specifiers:
   '@astrojs/preact': ^2.1.0
   '@astrojs/sitemap': ^1.2.2
   '@astrojs/tailwind': ^3.1.1
+  '@nanostores/preact': ^0.3.1
   '@playwright/test': ^1.32.2
   '@tailwindcss/typography': ^0.5.9
   '@types/js-cookie': ^3.0.3
@@ -14,6 +15,7 @@ specifiers:
   js-cookie: ^3.0.1
   js-yaml: ^4.1.0
   markdown-it: ^13.0.1
+  nanostores: ^0.7.4
   node-html-parser: ^6.1.5
   npm-check-updates: ^16.10.7
   openai: ^3.2.1
@@ -29,10 +31,12 @@ dependencies:
   '@astrojs/preact': 2.1.0_preact@10.13.2
   '@astrojs/sitemap': 1.2.2
   '@astrojs/tailwind': 3.1.1_nfbnt7ricougkvppdwsf5maxzu
+  '@nanostores/preact': 0.3.1_ntvucyavaortwycasiweu74jd4
   astro: 2.2.0
   astro-compress: 1.1.35
   jose: 4.13.1
   js-cookie: 3.0.1
+  nanostores: 0.7.4
   node-html-parser: 6.1.5
   npm-check-updates: 16.10.7
   preact: 10.13.2
@@ -671,6 +675,17 @@ packages:
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
+    dev: false
+
+  /@nanostores/preact/0.3.1_ntvucyavaortwycasiweu74jd4:
+    resolution: {integrity: sha512-D5lC1tNhwlVURCFJUTlnRkQ3LRNt6Sc2XHByBwgHPaKLBUPJxAaNAL7kz2dAEhge1fk9dNXAexCdepwiIFodOQ==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    peerDependencies:
+      nanostores: ^0.7.0
+      preact: '>=10.0.0'
+    dependencies:
+      nanostores: 0.7.4
+      preact: 10.13.2
     dev: false
 
   /@nodelib/fs.scandir/2.1.5:
@@ -3695,6 +3710,11 @@ packages:
     resolution: {integrity: sha512-BGcqMMJuToF7i1rt+2PWSNVnWIkGCU78jBG3RxO/bZlnZPK2Cmi2QaffxGO/2RvWi9sL+FAiRiXMgsyxQ1DIDA==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
+
+  /nanostores/0.7.4:
+    resolution: {integrity: sha512-MBeUVt7NBcXqh7AGT+KSr3O0X/995CZsvcP2QEMP+PXFwb07qv3Vjyq+EX0yS8f12Vv3Tn2g/BvK/OZoMhJlOQ==}
+    engines: {node: ^14.0.0 || ^16.0.0 || >=18.0.0}
+    dev: false
 
   /napi-build-utils/1.0.2:
     resolution: {integrity: sha512-ONmRUqK7zj7DWX0D9ADe03wbwOBZxNAfF20PlGfCWQcD3+/MakShIHrMqx9YwPTfxDdF1zLeL+RGZiR9kGMLdg==}

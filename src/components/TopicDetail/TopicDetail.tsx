@@ -15,6 +15,8 @@ import {
   toggleMarkTopicDone as toggleMarkTopicDoneApi,
 } from '../../lib/resource-progress';
 import { useKeydown } from '../../hooks/use-keydown';
+import { useToggleTopic } from '../../hooks/use-toggle-topic';
+import { pageLoadingMessage } from '../../stores/page';
 
 export function TopicDetail() {
   const [isActive, setIsActive] = useState(false);
@@ -32,6 +34,20 @@ export function TopicDetail() {
   const [topicId, setTopicId] = useState('');
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
+
+  const showLoginPopup = () => {
+    const popupEl = document.querySelector(`#login-popup`);
+    if (!popupEl) {
+      return;
+    }
+
+    popupEl.classList.remove('hidden');
+    popupEl.classList.add('flex');
+    const focusEl = popupEl.querySelector<HTMLElement>('[autofocus]');
+    if (focusEl) {
+      focusEl.focus();
+    }
+  };
 
   const toggleMarkTopicDone = (isDone: boolean) => {
     setIsUpdatingProgress(true);
@@ -72,6 +88,39 @@ export function TopicDetail() {
 
   useKeydown('Escape', () => {
     setIsActive(false);
+  });
+
+  // Toggle topic is available even if the component UI is not active
+  // This is used on the best practice screen where we have the checkboxes
+  // to mark the topic as done/undone.
+  useToggleTopic(({ topicId, resourceType, resourceId }) => {
+    if (isGuest) {
+      showLoginPopup();
+      return;
+    }
+
+    pageLoadingMessage.set('Updating');
+
+    // Toggle the topic status
+    isTopicDone({ topicId, resourceId, resourceType })
+      .then((oldIsDone) => {
+        return toggleMarkTopicDoneApi(
+          {
+            topicId,
+            resourceId,
+            resourceType,
+          },
+          !oldIsDone
+        );
+      })
+      .then((newIsDone) => renderTopicProgress(topicId, newIsDone))
+      .catch((err) => {
+        alert(err.message);
+        console.error(err);
+      })
+      .finally(() => {
+        pageLoadingMessage.set('');
+      });
   });
 
   // Load the topic detail when the topic detail is active

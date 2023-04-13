@@ -7,9 +7,9 @@ type CallbackType = (data: {
   topicId: string;
 }) => void;
 
-export function useLoadTopic(callback: CallbackType) {
+export function useToggleTopic(callback: CallbackType) {
   useEffect(() => {
-    function handleTopicClick(e: any) {
+    function handleToggleTopic(e: any) {
       const { resourceType, resourceId, topicId } = e.detail;
 
       callback({
@@ -19,12 +19,12 @@ export function useLoadTopic(callback: CallbackType) {
       });
     }
 
-    window.addEventListener(`roadmap.topic.click`, handleTopicClick);
-    window.addEventListener(`best-practice.topic.click`, handleTopicClick);
-
+    window.addEventListener(`best-practice.topic.toggle`, handleToggleTopic);
     return () => {
-      window.removeEventListener(`roadmap.topic.click`, handleTopicClick);
-      window.removeEventListener(`best-practice.topic.click`, handleTopicClick);
+      window.removeEventListener(
+        `best-practice.topic.toggle`,
+        handleToggleTopic
+      );
     };
   }, []);
 }

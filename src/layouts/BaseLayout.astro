@@ -2,6 +2,7 @@
 import Analytics from '../components/Analytics/Analytics.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import Footer from '../components/Footer.astro';
+import { PageProgress } from '../components/PageProgress';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
@@ -137,9 +138,10 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
       <Footer />
       {sponsor && <Sponsor sponsor={sponsor} />}
     </slot>
-    
+
     <Analytics />
     <Authenticator />
+    <PageProgress client:load />
 
     <slot name='after-footer' />
   </body>

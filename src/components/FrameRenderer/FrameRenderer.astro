@@ -17,7 +17,9 @@ const { resourceId, resourceType, jsonUrl, dimensions = null } = Astro.props;
 
 <div
   id='resource-svg-wrap'
-  style={dimensions ? `--aspect-ratio:${dimensions.width}/${dimensions.height}` : null}
+  style={dimensions
+    ? `--aspect-ratio:${dimensions.width}/${dimensions.height}`
+    : null}
   data-resource-type={resourceType}
   data-resource-id={resourceId}
   data-json-url={jsonUrl}
