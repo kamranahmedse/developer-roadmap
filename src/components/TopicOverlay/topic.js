@@ -29,7 +29,6 @@ export class Topic {
     this.markAsDone = this.markAsDone.bind(this);
     this.markAsPending = this.markAsPending.bind(this);
     this.querySvgElementsByTopicId = this.querySvgElementsByTopicId.bind(this);
-    this.rightClickListener = this.rightClickListener.bind(this);
     this.isTopicDone = this.isTopicDone.bind(this);
 
     this.init = this.init.bind(this);
@@ -63,20 +62,6 @@ export class Topic {
     return document.getElementById(this.overlayId);
   }
 
-  rightClickListener(e) {
-    const groupId = e.target?.closest('g')?.dataset?.groupId;
-    if (!groupId) {
-      return;
-    }
-
-    e.preventDefault();
-    if (this.isTopicDone(groupId)) {
-      this.markAsPending(groupId);
-    } else {
-      this.markAsDone(groupId);
-    }
-  }
-
   resetDOM(hideOverlay = false) {
     if (hideOverlay) {
       this.overlayEl.classList.add('hidden');
@@ -99,7 +84,8 @@ export class Topic {
 
   isTopicDone(topicId) {
     const normalizedGroup = topicId.replace(/^\d+-/, '');
-    return localStorage.getItem(normalizedGroup) === 'done';
+    const el = document.querySelector(`[data-group-id$="-${normalizedGroup}"]`);
+    return el?.classList.contains('done');
   }
 
   /**
@@ -152,9 +138,9 @@ export class Topic {
 
     const isDone = localStorage.getItem(topicId) === 'done';
     if (isDone) {
-      this.markAsPending(topicId);
+      this.markAsPending(topicId, bestPracticeId, 'best-practice');
     } else {
-      this.markAsDone(topicId);
+      this.markAsDone(topicId, bestPracticeId, 'best-practice');
     }
   }
 
@@ -165,7 +151,7 @@ export class Topic {
       return;
     }
 
-    this.markAsPending(topicId);
+    this.markAsPending(topicId, bestPracticeId, 'best-practice');
   }
 
   handleBestPracticeTopicClick(e) {
@@ -244,22 +230,34 @@ export class Topic {
     return matchingElements;
   }
 
-  markAsDone(topicId) {
+  async markAsDone(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
-    localStorage.setItem(updatedTopicId, 'done');
 
-    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
-      item?.classList?.add('done');
-    });
+    const { response, error } = {};
+
+    if (response) {
+      this.close();
+      this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
+        item?.classList?.add('done');
+      });
+    } else {
+      console.error(error);
+    }
   }
 
-  markAsPending(topicId) {
+  async markAsPending(topicId, resourceId, resourceType) {
     const updatedTopicId = topicId.replace(/^\d+-/, '');
 
-    localStorage.removeItem(updatedTopicId);
-    this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
-      item?.classList?.remove('done');
-    });
+    const { response, error } = {};
+
+    if (response) {
+      this.close();
+      this.querySvgElementsByTopicId(updatedTopicId).forEach((item) => {
+        item?.classList?.remove('done');
+      });
+    } else {
+      console.error(error);
+    }
   }
 
   handleOverlayClick(e) {
@@ -274,22 +272,32 @@ export class Topic {
       e.target.id === this.markTopicDoneId ||
       e.target.closest(`#${this.markTopicDoneId}`);
     if (isClickedDone) {
-      this.markAsDone(this.activeTopicId);
-      this.close();
+      this.markAsDone(
+        this.activeTopicId,
+        this.activeResourceId,
+        this.activeResourceType
+      );
+      // this.close();
     }
 
     const isClickedPending =
       e.target.id === this.markTopicPendingId ||
       e.target.closest(`#${this.markTopicPendingId}`);
     if (isClickedPending) {
-      this.markAsPending(this.activeTopicId);
-      this.close();
+      this.markAsPending(
+        this.activeTopicId,
+        this.activeResourceId,
+        this.activeResourceType
+      );
+      // this.close();
     }
 
+    const isClickedPopupOpener =
+      e.target.dataset['popup'] || e.target.closest('button[data-popup]');
     const isClickedClose =
       e.target.id === this.closeTopicId ||
       e.target.closest(`#${this.closeTopicId}`);
-    if (isClickedClose) {
+    if (isClickedClose || isClickedPopupOpener) {
       this.close();
     }
   }
@@ -308,9 +316,8 @@ export class Topic {
       'roadmap.topic.click',
       this.handleRoadmapTopicClick
     );
-    window.addEventListener('click', this.handleOverlayClick);
-    window.addEventListener('contextmenu', this.rightClickListener);
 
+    window.addEventListener('click', this.handleOverlayClick);
     window.addEventListener('keydown', (e) => {
       if (e.key.toLowerCase() === 'escape') {
         this.close();

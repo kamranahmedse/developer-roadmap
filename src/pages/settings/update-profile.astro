@@ -1,0 +1,11 @@
+---
+import SettingSidebar from '../../components/Setting/SettingSidebar.astro';
+import { UpdateProfileForm } from '../../components/Setting/UpdateProfileForm';
+import SettingLayout from '../../layouts/SettingLayout.astro';
+---
+
+<SettingLayout title='Update Profile'>
+  <SettingSidebar pageUrl='profile' name='Profile'>
+    <UpdateProfileForm client:load />
+  </SettingSidebar>
+</SettingLayout>

@@ -1,0 +1,12 @@
+---
+import BaseLayout,{ Props as BaseLayoutProps } from './BaseLayout.astro';
+
+export interface Props extends BaseLayoutProps {}
+
+const props = Astro.props;
+---
+
+<BaseLayout {...props}>
+  <slot />
+  <div slot='page-footer'></div>
+</BaseLayout>

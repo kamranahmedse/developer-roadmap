@@ -1,0 +1,44 @@
+---
+import Icon from '../AstroIcon.astro';
+---
+
+<div class='relative hidden' data-auth-required>
+  <button
+    class='flex h-8 w-28 items-center justify-center rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600'
+    type='button'
+    data-account-button
+  >
+    <span class='inline-flex items-center gap-1.5'>
+      Account
+      <Icon
+        icon='chevron-down'
+        class='relative top-[0.5px] h-3 w-3 stroke-[3px]'
+      />
+    </span>
+  </button>
+
+  <div
+    class='absolute right-0 z-10 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
+    data-account-dropdown
+  >
+    <ul>
+      <li class='px-1'>
+        <a
+          href='/settings/update-profile'
+          class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
+        >
+          Settings
+        </a>
+      </li>
+      <li class='px-1'>
+        <button
+          class='block w-full rounded px-4 py-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700'
+          type='button'
+          data-logout-button
+        >
+          Logout
+        </button>
+      </li>
+    </ul>
+  </div>
+</div>

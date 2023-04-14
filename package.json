@@ -20,25 +20,33 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/sitemap": "^1.2.1",
+    "@astrojs/preact": "^2.1.0",
+    "@astrojs/sitemap": "^1.2.2",
     "@astrojs/tailwind": "^3.1.1",
-    "astro": "^2.1.9",
+    "@fingerprintjs/fingerprintjs": "^3.4.1",
+    "@nanostores/preact": "^0.3.1",
+    "astro": "^2.2.3",
     "astro-compress": "^1.1.35",
+    "jose": "^4.13.2",
+    "js-cookie": "^3.0.1",
+    "nanostores": "^0.7.4",
     "node-html-parser": "^6.1.5",
-    "npm-check-updates": "^16.9.0",
+    "npm-check-updates": "^16.10.8",
+    "preact": "^10.13.2",
     "rehype-external-links": "^2.0.1",
-    "roadmap-renderer": "^1.0.4",
+    "roadmap-renderer": "^1.0.5",
     "tailwindcss": "^3.3.1"
   },
   "devDependencies": {
-    "@playwright/test": "^1.32.1",
+    "@playwright/test": "^1.32.3",
     "@tailwindcss/typography": "^0.5.9",
+    "@types/js-cookie": "^3.0.3",
     "gh-pages": "^5.0.0",
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",
     "openai": "^3.2.1",
     "prettier": "^2.8.7",
     "prettier-plugin-astro": "^0.8.0",
-    "prettier-plugin-tailwindcss": "^0.2.6"
+    "prettier-plugin-tailwindcss": "^0.2.7"
   }
 }

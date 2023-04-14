@@ -1,5 +1,5 @@
-import type { MarkdownFileType } from './file';
-import type { RoadmapFrontmatter } from './roadmap';
+import type {MarkdownFileType} from './file';
+import type {RoadmapFrontmatter} from './roadmap';
 
 // Generates URL from the topic file path e.g.
 // -> /src/data/roadmaps/vue/content/102-ecosystem/102-ssr/101-nuxt-js.md
@@ -47,17 +47,15 @@ function generateBreadcrumbs(
     }
   }
 
-  const breadcrumbs = breadcrumbUrls.map((breadCrumbUrl): BreadcrumbItem => {
+  return breadcrumbUrls.map((breadCrumbUrl): BreadcrumbItem => {
     const topicFile = topicFiles[breadCrumbUrl];
 
     const topicFileContent = topicFile?.file;
 
     const firstHeading = topicFileContent?.getHeadings()?.[0];
 
-    return { title: firstHeading?.text, url: breadCrumbUrl };
+    return {title: firstHeading?.text, url: breadCrumbUrl};
   });
-
-  return breadcrumbs;
 }
 
 export type BreadcrumbItem = {
@@ -123,7 +121,7 @@ export async function getRoadmapTopicFiles(): Promise<
     const roadmapUrl = `/${roadmapId}`;
 
     // Breadcrumbs for the file
-    const breadcrumbs: BreadcrumbItem[] = [
+    mapping[topicUrl].breadcrumbs = [
       {
         title: 'Roadmaps',
         url: '/roadmaps',
@@ -138,8 +136,6 @@ export async function getRoadmapTopicFiles(): Promise<
       },
       ...generateBreadcrumbs(topicUrl, mapping),
     ];
-
-    mapping[topicUrl].breadcrumbs = breadcrumbs;
   });
 
   return mapping;

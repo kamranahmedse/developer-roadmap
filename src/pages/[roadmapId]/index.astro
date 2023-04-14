@@ -1,15 +1,17 @@
 ---
-import CaptchaScripts from '../../components/Captcha/CaptchaScripts.astro';
 import FAQs from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
-import TopicOverlay from '../../components/TopicOverlay/TopicOverlay.astro';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { generateArticleSchema, generateFAQSchema } from '../../lib/jsonld-schema';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
+import {
+  generateArticleSchema,
+  generateFAQSchema,
+} from '../../lib/jsonld-schema';
 import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
@@ -25,8 +27,12 @@ interface Params extends Record<string, string | undefined> {
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapFile = await import(`../../data/roadmaps/${roadmapId}/${roadmapId}.md`);
-const { faqs: roadmapFAQs = [] } = await import(`../../data/roadmaps/${roadmapId}/faqs.astro`);
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+const { faqs: roadmapFAQs = [] } = await import(
+  `../../data/roadmaps/${roadmapId}/faqs.astro`
+);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];
@@ -62,7 +68,14 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   jsonLd={jsonLdSchema}
 >
   <!-- Preload the font being used in the renderer -->
-  <link rel='preload' href='/fonts/balsamiq.woff2' as='font' type='font/woff2' crossorigin slot='after-header' />
+  <link
+    rel='preload'
+    href='/fonts/balsamiq.woff2'
+    as='font'
+    type='font/woff2'
+    crossorigin
+    slot='after-header'
+  />
 
   <RoadmapHeader
     title={roadmapData.title}
@@ -77,9 +90,12 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   <div class='bg-gray-50 pt-4 sm:pt-12'>
     {
       !roadmapData.isUpcoming && roadmapData.jsonUrl && (
-        <div class='max-w-[1000px] container relative'>
-          <ShareIcons description={roadmapData.briefDescription} pageUrl={`https://roadmap.sh/${roadmapId}`} />
-          <TopicOverlay contentContributionLink={contentContributionLink} />
+        <div class='container relative max-w-[1000px]'>
+          <ShareIcons
+            description={roadmapData.briefDescription}
+            pageUrl={`https://roadmap.sh/${roadmapId}`}
+          />
+          <TopicDetail client:load />
 
           <FrameRenderer
             resourceType={'roadmap'}
@@ -93,7 +109,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
 
     {
       !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
-        <div class='mt-0 sm:-mt-6 pb-14'>
+        <div class='mt-0 pb-14 sm:-mt-6'>
           <MarkdownFile>
             <roadmapFile.Content />
           </MarkdownFile>
@@ -105,7 +121,5 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
 
     <FAQs faqs={roadmapFAQs} />
     <RelatedRoadmaps roadmap={roadmapData} />
-
-    <CaptchaScripts slot='after-footer' />
   </div>
 </BaseLayout>

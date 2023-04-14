@@ -1,63 +1,49 @@
 ---
-import CaptchaFields from '../components/Captcha/CaptchaFields.astro';
-import CaptchaScripts from '../components/Captcha/CaptchaScripts.astro';
-import BaseLayout from '../layouts/BaseLayout.astro';
+import Divider from '../components/AuthenticationFlow/Divider.astro';
+import GoogleLogin from '../components/Login/GoogleLogin.astro';
+import EmailSignupForm from '../components/AuthenticationFlow/EmailSignupForm';
+import SettingLayout from '../layouts/SettingLayout.astro';
+import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
+import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 ---
 
-<BaseLayout
+<SettingLayout
   title='Signup - roadmap.sh'
-  description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
+  description='Create an account to track your progress, showcase your skillset'
   permalink={'/signup'}
   noIndex={true}
 >
   <div class='container'>
     <div
-      class='py-12 sm:py-0 sm:min-h-[550px] sm:max-w-[400px] mx-auto flex items-start sm:items-center flex-col justify-start sm:justify-center'
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
     >
-      <div class='mb-2 sm:mb-5 text-left sm:text-center'>
-        <h1 class='text-3xl sm:text-5xl font-semibold mb-2 sm:mb-4'>Signup</h1>
-        <p class='hidden sm:block text-md text-gray-600'>
-          Register yourself to receive occasional emails about new roadmaps, updates, guides and videos
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Sign Up</h1>
+        <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community.
         </p>
-        <p class='text-sm block sm:hidden text-gray-600'>
-          Register yourself for occasional updates about roadmaps, guides and videos.
+        <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
+          Create an account to track your progress, showcase your skill-set and
+          be a part of the community. videos.
         </p>
       </div>
 
-      <form
-        action='https://news.roadmap.sh/subscribe'
-        method='POST'
-        accept-charset='utf-8'
-        class='w-full'
-        captcha-form
-      >
-        <input type='hidden' name='gdpr' value='true' />
+      <div class='flex w-full flex-col items-stretch gap-2'>
+        <GitHubButton client:load />
+        <GoogleButton client:load />
+      </div>
 
-        <input
-          type='email'
-          required
-          name='email'
-          id='email'
-          autofocus
-          class='mt-1 block w-full mb-2 border-2 rounded-md py-2 sm:py-3 px-3 sm:px-3.5 text-md'
-          placeholder='Enter your email'
-        />
+      <Divider />
 
-        <CaptchaFields />
+      <EmailSignupForm client:load />
 
-        <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
-        <input type='hidden' name='subform' value='yes' />
-
-        <button
-          type='submit'
-          name='submit'
-          class='bg-gradient-to-r from-blue-500 to-blue-700 hover:from-blue-600 hover:to-blue-800 text-white py-2 sm:py-2.5 sm:px-5 rounded-md w-full text-md'
+      <div class='mt-6 text-center text-sm text-slate-600'>
+        Already have an account? <a
+          href='/login'
+          class='font-medium text-blue-700 hover:text-blue-600'>Login</a
         >
-          Subscribe
-        </button>
-      </form>
+      </div>
     </div>
   </div>
-
-  <CaptchaScripts slot='after-footer' />
-</BaseLayout>
+</SettingLayout>

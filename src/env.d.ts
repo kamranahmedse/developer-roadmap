@@ -2,6 +2,7 @@
 
 interface ImportMetaEnv {
   GITHUB_SHA: string;
+  PUBLIC_API_URL: string;
 }
 
 interface ImportMeta {

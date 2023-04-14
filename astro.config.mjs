@@ -1,11 +1,13 @@
 // https://astro.build/config
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import compress from 'astro-compress';
 import { defineConfig } from 'astro/config';
+import compress from 'astro-compress';
 import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
+import preact from '@astrojs/preact';
 
+// https://astro.build/config
 export default defineConfig({
   site: 'https://roadmap.sh/',
   markdown: {
@@ -56,5 +58,6 @@ export default defineConfig({
       css: false,
       js: false,
     }),
+    preact(),
   ],
 });

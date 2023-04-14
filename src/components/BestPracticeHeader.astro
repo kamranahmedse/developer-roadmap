@@ -1,7 +1,8 @@
 ---
 import BestPracticeHint from './BestPracticeHint.astro';
 import DownloadPopup from './DownloadPopup.astro';
-import Icon from './Icon.astro';
+import Icon from './AstroIcon.astro';
+import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import SubscribePopup from './SubscribePopup.astro';
 
 export interface Props {
@@ -15,23 +16,22 @@ const { title, description, bestPracticeId, isUpcoming = false } = Astro.props;
 const isBestPracticeReady = !isUpcoming;
 ---
 
-<DownloadPopup />
-<SubscribePopup />
+<LoginPopup />
 
 <div class='border-b'>
-  <div class='py-5 sm:py-12 container relative'>
-    <div class='mt-0 mb-3 sm:mb-6'>
-      <h1 class='text-2xl sm:text-4xl mb-0.5 sm:mb-2 font-bold'>
+  <div class='container relative py-5 sm:py-12'>
+    <div class='mb-3 mt-0 sm:mb-6'>
+      <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
       </h1>
-      <p class='text-gray-500 text-sm sm:text-lg'>{description}</p>
+      <p class='text-sm text-gray-500 sm:text-lg'>{description}</p>
     </div>
 
     <div class='flex justify-between'>
       <div class='flex gap-1 sm:gap-2'>
         <a
           href='/best-practices'
-          class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'
+          class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
           aria-label='Back to All Best Practices'
         >
           &larr;<span class='hidden sm:inline'>&nbsp;All Best Practices</span>
@@ -40,22 +40,42 @@ const isBestPracticeReady = !isUpcoming;
         {
           isBestPracticeReady && (
             <button
-              data-popup='download-popup'
-              class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
-              aria-label='Download Best Practice'
+              data-guest-required
+              data-popup='login-popup'
+              class='hidden inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+              aria-label='Download Roadmap'
               ga-category='Subscription'
               ga-action='Clicked Popup Opener'
-              ga-label='Download Best Practice Popup'
+              ga-label='Download Roadmap Popup'
             >
               <Icon icon='download' />
-              <span class='hidden sm:inline ml-2'>Download</span>
+              <span class='ml-2 hidden sm:inline'>Download</span>
             </button>
           )
         }
 
+        {
+          isBestPracticeReady && (
+            <a
+              data-auth-required
+              class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+              aria-label='Download Roadmap'
+              ga-category='Subscription'
+              ga-action='Clicked Popup Opener'
+              ga-label='Download Roadmap Popup'
+              target="_blank"
+              href={`/pdfs/best-practices/${bestPracticeId}.pdf`}
+            >
+              <Icon icon='download' />
+              <span class='ml-2 hidden sm:inline'>Download</span>
+            </a>
+          )
+        }
+
         <button
-          data-popup='subscribe-popup'
-          class='inline-flex items-center justify-center bg-yellow-400 py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-yellow-500'
+          data-guest-required
+          data-popup='login-popup'
+          class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
           aria-label='Subscribe for Updates'
           ga-category='Subscription'
           ga-action='Clicked Popup Opener'
@@ -71,7 +91,7 @@ const isBestPracticeReady = !isUpcoming;
           <a
             href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
             target='_blank'
-            class='inline-flex items-center justify-center bg-gray-500 text-white py-1.5 px-3 text-xs sm:text-sm font-medium rounded-md hover:bg-gray-600'
+            class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
             aria-label='Suggest Changes'
           >
             <Icon icon='comment' class='h-3 w-3' />

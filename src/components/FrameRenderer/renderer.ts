@@ -1,6 +1,18 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
+import {
+  renderResourceProgress,
+  ResourceType,
+} from '../../lib/resource-progress';
 
 export class Renderer {
+  resourceId: string;
+  resourceType: string;
+  jsonUrl: string;
+  loaderHTML: string | null;
+
+  containerId: string;
+  loaderId: string;
+
   constructor() {
     this.resourceId = '';
     this.resourceType = '';
@@ -32,12 +44,12 @@ export class Renderer {
     }
 
     // Clone it so we can use it later
-    this.loaderHTML = this.loaderEl.innerHTML;
+    this.loaderHTML = this.loaderEl!.innerHTML;
     const dataset = this.containerEl.dataset;
 
-    this.resourceType = dataset.resourceType;
-    this.resourceId = dataset.resourceId;
-    this.jsonUrl = dataset.jsonUrl;
+    this.resourceType = dataset.resourceType!;
+    this.resourceId = dataset.resourceId!;
+    this.jsonUrl = dataset.jsonUrl!;
 
     return true;
   }
@@ -46,13 +58,17 @@ export class Renderer {
    * @param { string } jsonUrl
    * @returns {Promise<SVGElement>}
    */
-  jsonToSvg(jsonUrl) {
+  jsonToSvg(jsonUrl: string) {
     if (!jsonUrl) {
       console.error('jsonUrl not defined in frontmatter');
       return null;
     }
 
-    this.containerEl.innerHTML = this.loaderHTML;
+    if (!this.containerEl) {
+      return null;
+    }
+
+    this.containerEl.innerHTML = this.loaderHTML!;
 
     return fetch(jsonUrl)
       .then((res) => {
@@ -64,9 +80,19 @@ export class Renderer {
         });
       })
       .then((svg) => {
-        this.containerEl.replaceChildren(svg);
+        this.containerEl?.replaceChildren(svg);
+      })
+      .then(() => {
+        return renderResourceProgress(
+          this.resourceType as ResourceType,
+          this.resourceId
+        );
       })
       .catch((error) => {
+        if (!this.containerEl) {
+          return;
+        }
+
         const message = `
           <strong>There was an error.</strong><br>
           
@@ -74,7 +100,6 @@ export class Renderer {
 
           ${error.message} <br /> ${error.stack}
         `;
-
         this.containerEl.innerHTML = `<div class="error py-5 text-center text-red-600 mx-auto">${message}</div>`;
       });
   }
@@ -94,16 +119,16 @@ export class Renderer {
     }
   }
 
-  switchRoadmap(newJsonUrl) {
-    const newJsonFileSlug = newJsonUrl.split('/').pop().replace('.json', '');
+  switchRoadmap(newJsonUrl: string) {
+    const newJsonFileSlug = newJsonUrl.split('/').pop()?.replace('.json', '');
 
     // Update the URL and attach the new roadmap type
     if (window?.history?.pushState) {
-      const url = new URL(window.location);
+      const url = new URL(window.location.href);
       const type = this.resourceType[0]; // r for roadmap, b for best-practices
 
       url.searchParams.delete(type);
-      url.searchParams.set(type, newJsonFileSlug);
+      url.searchParams.set(type, newJsonFileSlug!);
 
       window.history.pushState(null, '', url.toString());
     }
@@ -119,13 +144,13 @@ export class Renderer {
       label: `${newJsonFileSlug}`,
     });
 
-    this.jsonToSvg(newJsonUrl).then(() => {
-      this.containerEl.setAttribute('style', '');
+    this.jsonToSvg(newJsonUrl)?.then(() => {
+      this.containerEl?.setAttribute('style', '');
     });
   }
 
-  handleSvgClick(e) {
-    const targetGroup = e.target.closest('g') || {};
+  handleSvgClick(e: any) {
+    const targetGroup = e.target?.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
     if (!groupId) {
       return;
@@ -167,6 +192,7 @@ export class Renderer {
         detail: {
           topicId: normalizedGroupId,
           resourceId: this.resourceId,
+          resourceType: this.resourceType,
         },
       })
     );
@@ -175,6 +201,7 @@ export class Renderer {
   init() {
     window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
     window.addEventListener('click', this.handleSvgClick);
+    // window.addEventListener('contextmenu', this.handleSvgClick);
   }
 }
 
