@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 function easeInElement(el: Element) {
   el.classList.add('opacity-0', 'transition-opacity', 'duration-300');
@@ -74,4 +74,6 @@ export function handleAuthRequired() {
   }
 }
 
-handleAuthRequired();
+window.setTimeout(() => {
+  handleAuthRequired();
+}, 0);
