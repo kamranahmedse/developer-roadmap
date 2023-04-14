@@ -219,7 +219,7 @@ export function TopicDetail() {
                       className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
                       onClick={() => toggleMarkTopicDone(true)}
                     >
-                      <img alt="Check" class="h-4 w-4" src={CheckIcon} />
+                      <img alt="Check" src={CheckIcon} />
                       <span className="ml-2">Mark as Done</span>
                     </button>
                   )}
