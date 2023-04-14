@@ -94,8 +94,6 @@ export function GitHubButton(props: GitHubButtonProps) {
     window.location.href = response.loginUrl;
   };
 
-  return null;
-
   return (
     <>
       <button
