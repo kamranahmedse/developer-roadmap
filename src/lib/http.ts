@@ -44,7 +44,7 @@ export async function httpCall<
         'Content-Type': 'application/json',
         Accept: 'application/json',
         Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
-        'x-fp': fingerprint.visitorId,
+        'fp': fingerprint.visitorId,
         ...(options?.headers ?? {}),
       }),
     });
