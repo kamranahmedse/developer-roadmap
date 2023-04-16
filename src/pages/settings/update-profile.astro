@@ -4,7 +4,7 @@ import { UpdateProfileForm } from '../../components/Setting/UpdateProfileForm';
 import SettingLayout from '../../layouts/SettingLayout.astro';
 ---
 
-<SettingLayout title='Update Profile'>
+<SettingLayout title='Update Profile' noIndex={true}>
   <SettingSidebar pageUrl='profile' name='Profile'>
     <UpdateProfileForm client:load />
   </SettingSidebar>

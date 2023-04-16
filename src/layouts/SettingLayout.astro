@@ -6,7 +6,7 @@ export interface Props extends BaseLayoutProps {}
 const props = Astro.props;
 ---
 
-<BaseLayout {...props}>
+<BaseLayout {...props} noIndex={true}>
   <slot />
   <div slot='page-footer'></div>
 </BaseLayout>

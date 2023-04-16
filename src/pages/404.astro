@@ -7,7 +7,7 @@ const roadmapIds = await getRoadmapIds();
 const legacyRoadmapUrls = [...roadmapIds.map((id) => `/${id}/`), '/roadmaps/'];
 ---
 
-<BaseLayout title='Page not found' permalink={'/404'}>
+<BaseLayout title='Page not found' permalink={'/404'} noIndex={true}>
   <!-- Legacy roadmp pages handling -->
   <script slot='after-header' define:vars={{ legacyRoadmapUrls }}>
     // If it's a roadmap page and it ends with a slash

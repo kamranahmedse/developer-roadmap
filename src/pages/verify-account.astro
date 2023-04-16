@@ -3,7 +3,7 @@ import { TriggerVerifyAccount } from '../components/AuthenticationFlow/TriggerVe
 import SettingLayout from '../layouts/SettingLayout.astro';
 ---
 
-<SettingLayout title='Verify account'>
+<SettingLayout title='Verify account' noIndex={true}>
   <div class='container py-16'>
     <TriggerVerifyAccount client:load />
   </div>
