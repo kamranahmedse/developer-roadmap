@@ -6,7 +6,7 @@ In this section, we will dive deeper into the following topics:
 
 - [What is salting?](#what-is-salting)
 - [Why is salting important?](#why-is-salting-important)
-- [How dosalting work?](#how-does-salting-work)
+- [How does salting work?](#how-does-salting-work)
 - [Best practices for salting](#best-practices-for-salting)
 
 ---
