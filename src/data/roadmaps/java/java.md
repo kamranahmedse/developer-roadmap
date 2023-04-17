@@ -17,14 +17,14 @@ schema:
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 sponsor:
-  url: 'https://www.honeycomb.io/resources/platform-engineering-is-the-future-of-ops-thanks?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-  title: 'DevOps vs. Platform Ops'
-  imageUrl: 'https://i.imgur.com/kI8YCAA.jpg'
-  description: 'Explore the role of DevOps as platform engineering rises in the software development field.'
+  url: 'https://www.singlestore.com/resources/ebook-oreilly-chapters-sql-for-data-analysis-2021-11/?utm_source=roadmap&utm_medium=referral&utm_campaign=april2023'
+  title: 'SQL for Data Analysis'
+  imageUrl: 'https://i.imgur.com/WR9fpRj.png'
+  description: 'Learn Advanced Techniques for Transforming Data into Insights using SQL with this free eBook.'
   event:
     category: 'SponsorClick'
-    action: 'Honeycomb Redirect'
-    label: 'Java / Honeycomb Link'
+    action: 'SingleStore Redirect'
+    label: 'Java / SingleStore Link'
 seo:
   title: 'Learn to become a modern Java developer'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for java development. Learn to become a modern Java developer by following the steps, skills, resources and guides listed in this roadmap.'

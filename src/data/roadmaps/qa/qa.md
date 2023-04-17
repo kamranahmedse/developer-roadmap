@@ -12,10 +12,10 @@ dimensions:
   width: 968
   height: 2107.75
 sponsor:
-  url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-  title: 'Free eBook'
-  imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
-  description: 'Get this ebook to start your observability journey for quicker debugging & more time to innovate.'
+  url: 'https://www.honeycomb.io/resources/intercom-accelerates-developer-productivity?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'Observability Boosts Dev'
+  imageUrl: 'https://i.imgur.com/cEt0VAH.jpg'
+  description: 'Learn how Intercom leveraged observability for developer productivity, delivering better outcomes.'
   event:
     category: 'SponsorClick'
     action: 'Honeycomb Redirect'
