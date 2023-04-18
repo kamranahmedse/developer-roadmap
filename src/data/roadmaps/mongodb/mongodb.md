@@ -41,6 +41,7 @@ seo:
     - 'mongodb quiz'
     - 'mongodb interview questions'
 relatedRoadmaps:
+  - 'postgresql-dba'
   - 'backend'
   - 'nodejs'
   - 'system-design'

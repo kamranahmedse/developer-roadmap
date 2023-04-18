@@ -2,7 +2,7 @@
 jsonUrl: '/jsons/roadmaps/postgresql-dba.json'
 pdfUrl: '/pdfs/roadmaps/postgresql-dba.pdf'
 order: 5
-briefTitle: 'DBA'
+briefTitle: 'PostgreSQL'
 briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2023'
 title: 'PostgreSQL DBA'
 description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023'
@@ -33,6 +33,7 @@ seo:
     - 'database administrator quiz'
     - 'dba interview questions'
 relatedRoadmaps:
+  - 'mongodb'
   - 'backend'
   - 'devops'
 sitemap:
