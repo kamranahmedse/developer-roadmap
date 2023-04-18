@@ -10,7 +10,9 @@
 
 .prose ul li > code,
 p > code,
-a > code {
+a > code,
+strong > code,
+em > code {
   background: #ebebeb !important;
   color: currentColor !important;
   font-size: 14px;
