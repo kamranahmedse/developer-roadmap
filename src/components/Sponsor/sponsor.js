@@ -1,12 +1,12 @@
 import { sponsorHidden } from '../../stores/page';
 
-function showHideSponsor(isHidden) {
+function showHideSponsor(shouldHide) {
   const ad = document.querySelector('#sponsor-ad');
   if (!ad) {
     return;
   }
 
-  if (isHidden) {
+  if (shouldHide) {
     ad.classList.add('hidden');
     ad.classList.remove('flex');
   } else {

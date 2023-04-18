@@ -84,7 +84,6 @@ export function TopicDetail() {
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
     setIsActive(false);
-    sponsorHidden.set(false);
   });
 
   useKeydown('Escape', () => {
