@@ -1,5 +1,5 @@
 ---
-jsonUrl: '/jsons/roadmaps/postgresql.json'
+jsonUrl: '/jsons/roadmaps/postgresql-dba.json'
 pdfUrl: '/pdfs/roadmaps/postgresql-dba.pdf'
 order: 5
 briefTitle: 'DBA'
