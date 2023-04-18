@@ -1,0 +1,1 @@
+# Schema design patterns
