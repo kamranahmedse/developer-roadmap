@@ -1,74 +1,50 @@
-# Row-Level Security
+# Row Level Security (RLS)
 
-## Row Level Security
+Row Level Security (RLS) is a feature introduced in PostgreSQL 9.5 that allows you to control access to rows in a table based on a user or role's permissions. This level of granularity in data access provides an extra layer of security for protecting sensitive information from unauthorized access.
 
-Row Level Security (RLS) is a powerful feature introduced in PostgreSQL 9.5, which allows you to control access to individual rows in a database table based on specific policies. This level of granularity can help ensure that only authorized users can access, update or delete certain records in a table.
+## Enabling Row Level Security
 
-### When to use RLS
+To enable RLS, you need to set up policies for your table. A policy is a set of rules that define how users can read or modify table rows. First, enable RLS on the table using the `ALTER TABLE` command with the `FORCE ROW LEVEL SECURITY` option:
 
-Row Level Security is suitable when you want to provide access control to a more granular level, such as:
+```sql
+ALTER TABLE my_table FORCE ROW LEVEL SECURITY;
+```
 
-- Multi-tenant applications where each tenant should only see and modify their own data.
-- Applications dealing with sensitive information, requiring fine-grained access control to specific rows in a table.
+## Creating Policies
 
-### Steps to Implement Row Level Security
+To create a policy, use the `CREATE POLICY` command with a `USING` clause that specifies the conditions for allowing access to a row. Here's an example of a policy that allows users to read rows only if the user's `id` is equal to the `user_id` column in the table:
 
-1. **Enable RLS for a table**
+```sql
+CREATE POLICY my_policy ON my_table 
+FOR SELECT 
+USING (current_user_id() = user_id);
+```
 
-   To enable RLS for a table, you use the `ALTER TABLE` command with the `ENABLE ROW LEVEL SECURITY` option.
+You can also create policies for modifying rows by specifying the `FOR` action as `INSERT`, `UPDATE`, or `DELETE`.
 
-   ```
-   ALTER TABLE table_name ENABLE ROW LEVEL SECURITY;
-   ```
+## Example: Role-Based RLS
 
-2. **Create a security policy**
+Suppose you want to restrict access based on user roles. In this example, we have three roles: `admin`, `manager`, and `employee`. We want to give `admin` access to all rows, `manager` access to rows of their department, and `employee` access only to their own rows.
 
-   A security policy is a set of rules that define the conditions for access, modification or deletion of a row within the target table. You use the `CREATE POLICY` command to define a security policy.
+First, create policies for each role:
 
-   ```
-   CREATE POLICY policy_name
-   ON table_name
-   [USING (predicate_expression)]
-   [WITH CHECK (predicate_expression)];
-   ```
+```sql
+-- Admin Policy
+CREATE POLICY admin_policy ON my_table 
+FOR ALL 
+USING (current_role = 'admin');
 
-   - `USING (predicate_expression)`: Defines the condition for selecting rows (read access).
-   - `WITH CHECK (predicate_expression)`: Defines the condition for updating or deleting rows (write access).
+-- Manager Policy
+CREATE POLICY manager_policy ON my_table 
+FOR SELECT 
+USING (current_role = 'manager' AND department_id = current_department_id());
 
-3. **Apply the security policy**
+-- Employee Policy
+CREATE POLICY employee_policy ON my_table 
+FOR SELECT 
+USING (current_role = 'employee' AND user_id = current_user_id());
+```
 
-   A security policy can be applied globally, per role or per user. You use the `ALTER TABLE` command with the `FORCE ROW LEVEL SECURITY` option to apply the policy.
+With these policies in place, users with different roles will have access to rows as per their designated privileges.
 
-   ```
-   ALTER TABLE table_name FORCE ROW LEVEL SECURITY;
-   ```
-
-### Example
-
-Let's consider that we have a `invoices` table that contains invoice records for different customers. Suppose we want to restrict access to specific invoices by customer.
-
-1. Enable RLS for the `invoices` table:
-
-   ```
-   ALTER TABLE invoices ENABLE ROW LEVEL SECURITY;
-   ALTER TABLE invoices FORCE ROW LEVEL SECURITY;
-   ```
-
-2. Create a security policy:
-
-   ```
-   CREATE POLICY customer_access_policy
-   ON invoices
-   USING (customer_id = get_current_customer_id())
-   WITH CHECK (customer_id = get_current_customer_id());
-   ```
-
-   Here, we create a policy `customer_access_policy` with a predicate expression that checks if the `customer_id` matches the current customer's ID. The `get_current_customer_id()` function should be created to return the ID of the currently logged in customer.
-
-With this example, we have successfully implemented Row Level Security on the `invoices` table to ensure that customers only have access to their own invoices.
-
-### Limitations & Precautions
-
-- RLS policies are transparent to the end user and run behind the scenes, which means that a user may not be aware of the policy affecting the query results.
-- Be cautious when using `GRANT ALL` privileges on a table with enabled RLS. This will give a user access to not only the data, but also the ability to disable or alter the security policy.
-- RLS policies will only protect sensitive data if they're well-designed and thoughtful. If you're dealing with highly sensitive information, consider using additional security measures like encryption or database schema separation.
+In summary, Row Level Security is a powerful feature in PostgreSQL that helps you control access to your data at a granular level. By defining policies and conditions for each user or role, you can ensure that sensitive information is protected, and users only have access to the data they need.

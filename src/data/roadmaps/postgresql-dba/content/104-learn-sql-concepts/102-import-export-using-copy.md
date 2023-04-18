@@ -1,48 +1,55 @@
-# Import / Export using `COPY`
+# Import and Export using COPY
 
-## Import Export using COPY in PostgreSQL
+In PostgreSQL, one of the fastest and most efficient ways to import and export data is by using the `COPY` command. The `COPY` command allows you to import data from a file, or to export data to a file from a table or a query result.
 
-The `COPY` command in PostgreSQL provides a simple and efficient way to import and export data between a CSV (Comma Separated Values) file and a PostgreSQL database. It is an essential tool for any PostgreSQL DBA who wants to move data between different systems or quickly load large datasets.
+## Importing Data using COPY
 
-### Import Data using COPY
-
-To import data from a CSV file into a PostgreSQL table, you can use the following syntax:
+To import data from a file into a table, you can use the following syntax:
 
 ```sql
-COPY <table_name> (column1, column2, column3, ...)
-FROM '<file_path>'
-WITH (FORMAT csv, HEADER, DELIMITER ',', NULL '<null_value>', QUOTE '"', ESCAPE '\"', ENCODING '<encoding>');
+COPY <table_name> (column1, column2, ...)
+FROM '<file_path>' [OPTIONS];
 ```
 
-- `<table_name>`: The name of the table that you want to import the data into.
-- `(column1, column2, column3, ...)` : Specify the list of columns in the table that you want to populate with the data from the CSV.
-- `<file_path>`: The path to the CSV file.
-- `FORMAT csv`: Specifies that the file is in CSV format.
-- `HEADER`: Indicates that the first line of the file contains the column names for the dataset, omit this if there's no header.
-- `DELIMITER ','`: Specifies the character used to separate the fields in the CSV file (comma by default).
-- `NULL '<null_value>'`: Specifies the string that represents a `NULL` value in the CSV file (empty string by default).
-- `QUOTE '"'` : Specifies the character used to represent text data (double quote by default).
-- `ESCAPE '\"'` : Specifies the character used to escape any quotes within text data (double quote by default).
-- `ENCODING '<encoding>'`: Specifies the character encoding of the file (default is the server's encoding).
-
-### Export Data using COPY
-
-To export data from a PostgreSQL table to a CSV file, you can use the following syntax:
+For example, to import data from a CSV file named `data.csv` into a table called `employees` with columns `id`, `name`, and `salary`, you would use the following command:
 
 ```sql
-COPY (SELECT column1, column2, column3, ...
-      FROM <table_name>
-      WHERE ... )
-TO '<file_path>'
-WITH (FORMAT csv, HEADER, DELIMITER ',', NULL '<null_value>', QUOTE '"', ESCAPE '\"', ENCODING '<encoding>');
+COPY employees (id, name, salary)
+FROM '/path/to/data.csv'
+WITH (FORMAT csv, HEADER true);
 ```
 
-- `<table_name>`: The name of the table that you want to export the data from.
-- `SELECT column1, column2, column3, ...`: The columns that you want to export.
-- `WHERE ...`: Optional WHERE clause to filter the rows that you want to export.
-- `<file_path>`: The path where the CSV file will be created.
-- All other options are the same as in the import query.
+Here, we're specifying that the file is in CSV format and that the first row contains column headers.
 
-Keep in mind that the `COPY` command can only be used by a superuser or a user with the appropriate permissions. Also, the `COPY` command works only with server-side file paths, so ensure that the path is accessible by the PostgreSQL server.
+## Exporting Data using COPY
 
-In case you want to import/export data using client-side paths or work with other formats like JSON, you can use the `\copy` meta-command in the `psql` command-line interface, which has similar syntax but works with client-side paths.
+To export data from a table or a query result to a file, you can use the following syntax:
+
+```sql
+COPY (SELECT ... FROM <table_name> WHERE ...)
+TO '<file_path>' [OPTIONS];
+```
+
+For example, to export data from the `employees` table to a CSV file named `export.csv`, you would use the following command:
+
+```sql
+COPY (SELECT * FROM employees)
+TO '/path/to/export.csv'
+WITH (FORMAT csv, HEADER true);
+```
+
+Again, we're specifying that the file should be in CSV format and that the first row contains column headers.
+
+## COPY Options
+
+The `COPY` command offers several options, including:
+
+- `FORMAT`: data file format, e.g., `csv`, `text`, or `binary`
+- `HEADER`: whether the first row in the file is a header row, `true` or `false`
+- `DELIMITER`: field delimiter for the text and CSV formats, e.g., `','`
+- `QUOTE`: quote character, e.g., `'"'`
+- `NULL`: string representing a null value, e.g., `'\\N'`
+
+For a complete list of `COPY` options and their descriptions, refer to the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/sql-copy.html).
+
+Remember that to use the `COPY` command, you need to have the required privileges on the table and the file system. If you can't use the `COPY` command due to lack of privileges, consider using the `\copy` command in the `psql` client instead, which works similarly, but runs as the current user rather than the PostgreSQL server.

@@ -1,68 +1,75 @@
 # DDL Queries
 
-### DDL Queries
+DDL stands for Data Definition Language. DDL queries are a subset of SQL queries that are responsible for defining and managing the structure of your database, such as creating, altering, and deleting tables, constraints, and indexes. In this section, we will discuss the basic DDL statements: `CREATE`, `ALTER`, and `DROP`.
 
-In this section, we'll discuss DDL (Data Definition Language) queries in PostgreSQL. DDL queries are responsible for defining or manipulating the database table schema, like creating, altering, or deleting tables, columns, indexes, and other database objects.
+## CREATE
 
-#### CREATE TABLE
-
-The `CREATE TABLE` statement is used to create a new table with a defined schema. This query specifies the column names, data types, and any constraints that should be applied to the table.
+`CREATE` is used to create a new database object (e.g., table, index, sequence, etc.). The syntax for creating a table in PostgreSQL is as follows:
 
 ```sql
-CREATE TABLE users (
-  id SERIAL PRIMARY KEY,
-  first_name VARCHAR(100) NOT NULL,
-  last_name VARCHAR(100) NOT NULL,
-  email VARCHAR(255) UNIQUE NOT NULL,
-  created_at TIMESTAMP NOT NULL
+CREATE TABLE table_name (
+   column1 data_type constraints,
+   column2 data_type constraints,
+   ...
 );
 ```
 
-#### ALTER TABLE
-
-The `ALTER TABLE` statement is used to modify the structure of an existing table. You can use it to add, modify, or delete columns, as well as add or drop constraints.
-
--- Add a new column:
-```sql
-ALTER TABLE users
-ADD COLUMN phone VARCHAR(20);
-```
-
--- Modify an existing column:
-```sql
-ALTER TABLE users
-ALTER COLUMN email TYPE VARCHAR(200);
-```
-
--- Drop a column:
-```sql
-ALTER TABLE users
-DROP COLUMN phone;
-```
-
-#### DROP TABLE
-
-The `DROP TABLE` statement is used to delete a table and all its data permanently from the database.
+An example of creating a table named `employees` with columns `id`, `first_name`, and `last_name` would be:
 
 ```sql
-DROP TABLE users;
+CREATE TABLE employees (
+   id SERIAL PRIMARY KEY,
+   first_name VARCHAR(255) NOT NULL,
+   last_name VARCHAR(255) NOT NULL
+);
 ```
 
-#### CREATE INDEX
+## ALTER
 
-Indexes can speed up query executions by providing a more efficient way to look up data. The `CREATE INDEX` statement is used to create an index on a specific column.
+`ALTER` is used to modify an existing database object, such as adding or removing columns, changing data types, or adding constraints. The basic syntax for altering a table in PostgreSQL is:
 
 ```sql
-CREATE INDEX users_email_index
-ON users (email);
+ALTER TABLE table_name
+ACTION column_name data_type constraints;
 ```
 
-#### DROP INDEX
+Some examples of altering a table include:
 
-The `DROP INDEX` statement is used to delete an index.
+- Adding a column:
+
+  ```sql
+  ALTER TABLE employees
+  ADD COLUMN email VARCHAR(255) UNIQUE;
+  ```
+
+- Modifying a column's data type:
+
+  ```sql
+  ALTER TABLE employees
+  ALTER COLUMN email SET DATA TYPE TEXT;
+  ```
+
+- Removing a constraint:
+
+  ```sql
+  ALTER TABLE employees
+  DROP CONSTRAINT employees_email_key;
+  ```
+
+## DROP
+
+`DROP` is used to permanently delete a database object. The syntax for dropping a table in PostgreSQL is:
 
 ```sql
-DROP INDEX users_email_index;
+DROP TABLE table_name;
 ```
 
-In summary, DDL queries help in creating and managing database schema, creating, altering, and deleting tables and other database objects, and managing indexes for optimal performance. Remember that changes made using DDL queries are permanent, so be cautious when executing these statements.
+To delete the `employees` table created earlier:
+
+```sql
+DROP TABLE employees;
+```
+
+_Note_: Be cautious when using the `DROP` statement, as all data and schema associated with the deleted object will be lost permanently.
+
+In this section, we have covered the basic DDL queries in PostgreSQL, which allow you to create, modify, and delete database objects. Remember to always test your DDL statements before applying them to the production environment to avoid unintended consequences.

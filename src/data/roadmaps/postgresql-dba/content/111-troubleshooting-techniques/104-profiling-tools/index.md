@@ -1,68 +1,67 @@
-# Profiling Tools
+# Profiling Tools in PostgreSQL
 
-## Profiling Tools in PostgreSQL
+Profiling tools in PostgreSQL are essential for diagnosing and resolving performance issues, as well as optimizing and tuning your database system. This section of the guide will cover an overview of commonly used profiling tools in PostgreSQL and how they can be of assistance.
 
-Profiling is an essential task when it comes to PostgreSQL performance optimization. It allows DBAs and developers to understand the performance of their queries by identifying bottlenecks, detecting slow operations, and enabling better decision-making. In this section, we will discuss some of the profiling tools available for PostgreSQL.
+## EXPLAIN and EXPLAIN ANALYZE
 
-### 1. EXPLAIN and EXPLAIN ANALYZE
+`EXPLAIN` and `EXPLAIN ANALYZE` are built-in SQL commands that provide detailed information about the execution plan of a query. They can help in identifying slow or inefficient queries, as well as suggesting possible optimizations.
 
-`EXPLAIN` is a built-in utility in PostgreSQL that provides insight into the query planning and execution process. It shows the execution plan chosen by the query optimizer, helping you understand how the system will execute your query.
+- `EXPLAIN` shows the query plan without actually executing the query
+- `EXPLAIN ANALYZE` not only shows the query plan but also executes it, providing actual runtime statistics
 
-```sql
-EXPLAIN SELECT * FROM users WHERE last_name = 'Smith';
-```
-
-To get even more detailed information like actual execution times, use the `EXPLAIN ANALYZE` command instead:
+Example usage:
 
 ```sql
-EXPLAIN ANALYZE SELECT * FROM users WHERE last_name = 'Smith';
+EXPLAIN SELECT * FROM users WHERE username = 'john';
+EXPLAIN ANALYZE SELECT * FROM users WHERE username = 'john';
 ```
 
-### 2. pg_stat_statements
+## pg_stat_statement
 
-The `pg_stat_statements` module provides a means to track execution statistics of all SQL statements executed by a PostgreSQL server. To enable it, you need to adjust your `postgresql.conf` file and add `pg_stat_statements` to `shared_preload_libraries`.
+`pg_stat_statement` is a PostgreSQL extension that provides detailed statistics on query execution. It can help you identify slow queries, as well as analyze and optimize them. To use this extension, you must first enable it in your `postgresql.conf` and restart the server.
+
+Example configuration:
 
 ```ini
 shared_preload_libraries = 'pg_stat_statements'
+pg_stat_statements.track = all
 ```
 
-Then, after restarting your PostgreSQL server, you can query the `pg_stat_statements` view to see the execution statistics:
+Once the extension is enabled, you can query the `pg_stat_statements` view to get various statistics on query execution, including total execution time, mean execution time, and the number of times a query has been executed.
+
+Example query:
 
 ```sql
-SELECT query, total_time, calls, mean_time FROM pg_stat_statements ORDER BY total_time DESC;
+SELECT query, total_time, calls, mean_time
+FROM pg_stat_statements
+ORDER BY total_time DESC
+LIMIT 10;
 ```
 
-### 3. auto_explain
+## auto_explain
 
-The `auto_explain` module provides a way to automatically log the execution plans of slow queries. As with `pg_stat_statements`, the `auto_explain` module needs to be added to the `shared_preload_libraries` in `postgresql.conf`.
+`auto_explain` is another PostgreSQL extension that logs detailed execution plans for slow queries automatically, without requiring manual intervention. To enable this extension, update your `postgresql.conf` and restart the server.
+
+Example configuration:
 
 ```ini
 shared_preload_libraries = 'auto_explain'
+auto_explain.log_min_duration = 5000 -- logs query plans taking longer than 5s
 ```
 
-To use the `auto_explain` module, you need to set the `auto_explain.log_min_duration` configuration parameter, which defines the minimum duration in milliseconds that must be exceeded for the log to be written.
+After enabling `auto_explain`, slow queries will be automatically logged in your PostgreSQL log file along with their execution plans.
 
-```ini
-auto_explain.log_min_duration = '1000' # Log queries taking longer than 1 second to execute
+## pg_stat_activity
+
+`pg_stat_activity` is a built-in view in PostgreSQL that provides information on currently active queries, including their SQL text, state, and duration of execution. You can use this view to quickly identify long-running or problematic queries in your database.
+
+Example query:
+
+```sql
+SELECT pid, query, state, now() - query_start AS duration
+FROM pg_stat_activity
+WHERE state <> 'idle'
+ORDER BY duration DESC;
 ```
 
-### 4. pgBadger
-
-[pgBadger](https://github.com/darold/pgbadger) is an external tool for PostgreSQL log analysis. It is a Perl script that generates detailed and interactive reports, helping you quickly locate performance issues and optimize your queries. To use pgBadger, you need to enable query logging in your `postgresql.conf` and then run the pgBadger script, pointing it to your log file.
-
-```ini
-# Enable query logging in postgresql.conf
-logging_collector = on
-log_directory = 'pg_log'
-log_filename = 'postgresql-%F.log'
-log_line_prefix = '%t [%p]: [%l-1] user=%u, db=%d, app=%a, client=%h '
-log_statement = 'all'
-```
-
-Once query logging is enabled, you can run pgBadger to analyze the log files and generate detailed reports:
-
-```bash
-pgbadger /path/to/log/file -O /path/to/output/directory -f json
-```
-
-In conclusion, understanding and utilizing profiling tools is crucial for PostgreSQL performance optimization. With the help of tools like `EXPLAIN`, `pg_stat_statements`, `auto_explain`, and pgBadger, you can analyze and optimize your queries, ensuring smooth and efficient operation of your PostgreSQL database.
+In summary, profiling tools in PostgreSQL can be indispensable when it comes to identifying, analyzing, and optimizing slow or inefficient queries. By using these tools effectively, you can significantly improve the performance of your database system.

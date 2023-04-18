@@ -1,48 +1,87 @@
-# Queries
+# Queries in PostgreSQL
 
-## Queries
+Queries are the primary way to interact with a PostgreSQL database and retrieve or manipulate data stored within its tables. In this section, we will cover the fundamentals of querying in PostgreSQL - from basic `SELECT` statements to more advanced techniques like joins, subqueries, and aggregate functions.
 
-PostgreSQL, being an advanced and versatile relational database management system, offers various ways to efficiently perform queries on the data stored within its tables. In this section, we will cover some fundamental aspects, as well as best practices regarding query execution in PostgreSQL, ensuring you have a solid foundation for your PostgreSQL DBA journey.
+### Simple SELECT Statements
 
-### SELECT statement
-
-The `SELECT` statement is the central part of any query in SQL. This is used to retrieve data from one or more tables, based on specified conditions. A simple `SELECT` query would look like the snippet shown below:
+The most basic type of query is a simple `SELECT` statement. This allows you to retrieve data from one or more tables, and optionally filter or sort the results.
 
 ```sql
-SELECT column1, column2, ... columnN
+SELECT column1, column2, ...
 FROM table_name
-WHERE conditions;
+WHERE conditions
+ORDER BY column ASC/DESC;
+```
+For example, to select all records from the `users` table:
+
+```sql
+SELECT * FROM users;
 ```
 
-You can use various techniques to further improve the readability and optimization of your queries, such as joins, subqueries, aggregate functions, sorting, and limits.
+To select only the `name` and `email` columns for users with an `age` greater than 25:
 
-### Joins
-
-Joins combine data from two or more tables into a single result set. PostgreSQL supports various types of joins such as `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, and `FULL OUTER JOIN`. Make sure to choose the type of join that fits your use case in order to minimize performance overhead.
-
-### Subqueries
-
-Subqueries (or nested queries) are simply queries within queries. This can be useful when you need to manipulate or filter data based on the results of another query. Subqueries usually reside inside parentheses and can form part of several clauses, such as `SELECT`, `FROM`, and `WHERE`.
+```sql
+SELECT name, email FROM users WHERE age > 25;
+```
 
 ### Aggregate Functions
 
-PostgreSQL provides several built-in aggregate functions, which can be used to calculate values like the sum, count, average, minimum, or maximum based on a set of rows. Some commonly used aggregate functions are `SUM()`, `COUNT()`, `AVG()`, `MIN()`, and `MAX()`.
+PostgreSQL provides several aggregate functions that allow you to perform calculations on a set of records, such as counting the number of records, calculating the sum of a column, or finding the average value.
 
-### Sorting
+Some common aggregate functions include:
 
-To organize the output of a query, you can use the `ORDER BY` clause, which sorts the returned rows according to the specified column(s). By default, the ordering is ascending (`ASC`), but you can also choose descending order (`DESC`).
+- `COUNT()`: Count the number of rows
+- `SUM()`: Calculate the sum of a column's values
+- `AVG()`: Calculate the average value of a column
+- `MIN()`: Find the smallest value of a column
+- `MAX()`: Find the largest value of a column
 
-### Limiting Results
+Example: Find the total number of users and the average age:
 
-Sometimes, you might only need a certain number of results obtained from a query. You can use the `LIMIT` keyword, followed by the maximum number of rows you want to fetch, to achieve this. Additionally, you can use the `OFFSET` keyword to determine the starting point of the returned rows.
+```sql
+SELECT COUNT(*) AS user_count, AVG(age) AS average_age FROM users;
+```
 
-### Query Performance
+### Joins
 
-Write efficient queries by considering the following best practices:
+When you want to retrieve related data from multiple tables, you can use a `JOIN` in the query. There are various types of joins available, such as `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, and `FULL OUTER JOIN`.
 
-- Minimize the number of columns and rows you retrieve: Only select the columns and rows you need.
-- Use indexes: Ensure that the columns you filter or join on have proper indexes.
-- Make use of materialized views: Store complex query results in a separate table in order to reduce the overall computation time.
-- Parallelize large queries: Break down large queries into smaller parts and execute them in parallel to improve query performance.
+Syntax for a simple `INNER JOIN`:
 
-By maintaining best practices while implementing queries in PostgreSQL, you can effectively manage the execution process of your PostgreSQL Databases.
+```sql
+SELECT column1, column2, ...
+FROM table1
+JOIN table2
+ON table1.column = table2.column;
+```
+
+Example: Fetch user details along with their order details, assuming there are `users` and `orders` tables, and `orders` has a `user_id` foreign key:
+
+```sql
+SELECT users.name, users.email, orders.order_date, orders.total_amount
+FROM users
+JOIN orders
+ON users.id = orders.user_id;
+```
+
+### Subqueries
+
+Subqueries, also known as "nested queries" or "inner queries", allow you to use the result of a query as input for another query. Subqueries can be used with various SQL clauses, such as `SELECT`, `FROM`, `WHERE`, and `HAVING`.
+
+Syntax for a subquery:
+
+```sql
+SELECT column1, column2, ...
+FROM (SELECT ... FROM ...) AS subquery
+WHERE conditions;
+```
+
+Example: Find the average age of users who have placed orders from the `users` and `orders` tables:
+
+```sql
+SELECT AVG(age) AS average_age
+FROM users
+WHERE id IN (SELECT DISTINCT user_id FROM orders);
+```
+
+There's much more to explore with various types of queries, but this foundational knowledge will serve as a solid basis for further learning and experimentation.

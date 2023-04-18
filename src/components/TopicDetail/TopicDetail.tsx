@@ -1,11 +1,13 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
-import SpinnerIcon from '../../icons/spinner.svg';
 import CheckIcon from '../../icons/check.svg';
-import ResetIcon from '../../icons/reset.svg';
 import CloseIcon from '../../icons/close.svg';
+import ResetIcon from '../../icons/reset.svg';
+import SpinnerIcon from '../../icons/spinner.svg';
 
-import { useOutsideClick } from '../../hooks/use-outside-click';
+import { useKeydown } from '../../hooks/use-keydown';
 import { useLoadTopic } from '../../hooks/use-load-topic';
+import { useOutsideClick } from '../../hooks/use-outside-click';
+import { useToggleTopic } from '../../hooks/use-toggle-topic';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
@@ -14,9 +16,7 @@ import {
   ResourceType,
   toggleMarkTopicDone as toggleMarkTopicDoneApi,
 } from '../../lib/resource-progress';
-import { useKeydown } from '../../hooks/use-keydown';
-import { useToggleTopic } from '../../hooks/use-toggle-topic';
-import { pageLoadingMessage } from '../../stores/page';
+import { pageLoadingMessage, sponsorHidden } from '../../stores/page';
 
 export function TopicDetail() {
   const [isActive, setIsActive] = useState(false);
@@ -84,6 +84,7 @@ export function TopicDetail() {
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
     setIsActive(false);
+    sponsorHidden.set(false);
   });
 
   useKeydown('Escape', () => {
@@ -127,6 +128,7 @@ export function TopicDetail() {
   useLoadTopic(({ topicId, resourceType, resourceId }) => {
     setIsLoading(true);
     setIsActive(true);
+    sponsorHidden.set(true);
 
     setTopicId(topicId);
     setResourceType(resourceType);

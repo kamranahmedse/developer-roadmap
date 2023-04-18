@@ -1,56 +1,85 @@
-# Procedures and Functions
+# Procedures and Functions in PostgreSQL
 
-# Procedures and Functions
+In PostgreSQL, you can create stored procedures and functions to perform complex tasks using SQL and PL/pgSQL language. These are also known as *routines*. In this section, we'll discuss the basics of creating, using, and managing procedures and functions in PostgreSQL.
 
-In this section, we are going to discuss procedures and functions, two powerful tools for database administrators and developers in PostgreSQL. Procedures and functions are routines written using SQL or other procedural languages like PL/pgsql, which can be called/invoked to perform various tasks within the database. They allow you to encapsulate complex business logic, operations, and computations into reusable and manageable components. 
+### Functions
 
-## Procedures
+A function is a named, reusable piece of code that can be called with input parameters and returns a single value or a table. Functions can be written in various languages like PL/pgSQL, PL/Tcl, and others.
 
-Procedures, also known as Stored Procedures, were introduced in PostgreSQL 11. They are named groups of SQL statements and other control structures that can be executed on-demand. The primary difference between procedures and functions is that procedures do not return a value (except for out parameters) and support transaction control statements like COMMIT and ROLLBACK. 
+To create a function, you use the `CREATE FUNCTION` statement:
 
-Some key features of procedures are:
-
-- Can be written in SQL or other procedural languages like PL/pgSQL, PL/Tcl, PL/Python, etc.
-- Can have input, output, and input/output parameters.
-- Can perform operations with side effects, which are not allowed in functions (e.g., modifying the database schema).
-- Support transaction control statements like COMMIT and ROLLBACK for better control over the database.
-
-Creating a procedure:
+```sql
+CREATE FUNCTION function_name(parameter_list)
+RETURNS data_type
+LANGUAGE language_name
+AS $$
+-- function code
+$$;
 ```
+
+For example, a simple function that takes two integers as arguments and returns their sum:
+
+```sql
+CREATE FUNCTION add(a INTEGER, b INTEGER)
+RETURNS INTEGER
+LANGUAGE PL/pgSQL
+AS $$
+BEGIN
+    RETURN a + b;
+END;
+$$;
+```
+
+To call a function, you use the `SELECT` statement:
+
+```sql
+SELECT add(1, 2);  -- returns 3
+```
+
+### Procedures
+
+A procedure is similar to a function, but it doesn't return a value. Instead, it is used to perform actions such as modifying data in the database. In PostgreSQL, you use the `CREATE PROCEDURE` statement to create a procedure:
+
+```sql
 CREATE PROCEDURE procedure_name(parameter_list)
 LANGUAGE language_name
 AS $$
--- Procedure body
+-- procedure code
 $$;
 ```
-Calling a procedure:
-```
-CALL procedure_name(argument_list);
-```
 
-## Functions
+For example, a simple procedure to insert data into a table:
 
-Functions, also known as User-Defined Functions (UDFs) or Stored Functions, are similar to procedures but have some differences in their behavior and capabilities. Functions return a single value or a table (set of rows) as output and do not support transaction control statements.
-
-Some key features of functions are:
-
-- Can be written in SQL or other procedural languages like PL/pgSQL, PL/Tcl, PL/Python, etc.
-- Can have input and output parameters. The return type can be scalar, composite, or set of rows (table).
-- Can be used in SQL queries like any other built-in function.
-- Immutable, stable or volatile functions can be created providing additional control over function execution.
-
-Creating a function:
-```
-CREATE FUNCTION function_name(parameter_list)
-RETURNS return_type
-LANGUAGE language_name
+```sql
+CREATE PROCEDURE insert_data(first_name VARCHAR(50), last_name VARCHAR(50))
+LANGUAGE PL/pgSQL
 AS $$
--- Function body
+BEGIN
+    INSERT INTO people (first_name, last_name) VALUES (first_name, last_name);
+END;
 $$;
 ```
-Calling a function:
-```
-SELECT function_name(argument_list);
+
+To call a procedure, you use the `CALL` statement:
+
+```sql
+CALL insert_data('John', 'Doe');
 ```
 
-In this section, we discussed the differences between Procedures and Functions in PostgreSQL, their features, and how to create and call them. These features provide immense power to the PostgreSQL database, and mastering them is essential for any PostgreSQL DBA or developer.
+### Managing Routines
+
+You can manage your routines using the following statements:
+
+- `ALTER FUNCTION/PROCEDURE`: Modify the definition of an existing function or procedure
+- `DROP FUNCTION/PROCEDURE`: Remove a function or procedure from the database
+
+For example:
+
+```sql
+ALTER FUNCTION add(a INTEGER, b INTEGER)
+    RENAME TO add_numbers;
+    
+DROP FUNCTION add_numbers(a INTEGER, b INTEGER);
+```
+
+In this section, we've covered the basics of creating, using, and managing procedures and functions in PostgreSQL. These routines can help you simplify your code, improve maintainability, and optimize performance.

@@ -1,87 +1,45 @@
 # High Level Database Concepts
 
-# High-Level Database Concepts
+In this section, we will explore some of the most important high-level concepts that revolve around relational databases and PostgreSQL. These concepts are crucial for understanding the overall functionality and best practices in working with databases.
 
-In this section, we will discuss key high-level concepts that are crucial for understanding and effectively managing PostgreSQL databases. Let's dive in!
+## Data Models
 
-## Relational Database Management System (RDBMS)
+Data models are the foundation of any data management system. They define the structure in which data is stored, organized, and retrieved. The most prominent data models include:
 
-A Relational Database Management System (RDBMS) is a software system that allows you to create, update, and manage a relational database. Some popular RDBMSs include PostgreSQL, MySQL, Oracle, and SQL Server. In an RDBMS, data is organized in tables - consisting of rows and columns - and these tables are related to one another through keys.
+- **Relational Model:** This model organizes data into tables (also known as relations), where each table comprises rows and columns. The relations can be queried and manipulated using a language like SQL.
 
-### Tables
+- **Hierarchical Model:** In this model, data is organized in a tree-like structure, with parent-child relationships between the nodes. This model is suitable for scenarios where there is a clear hierarchical structure in the data.
 
-A table is a collection of related data, organized in *rows* and *columns*. Columns represent attributes or properties of the data, whereas rows represent individual records or instances of data.
+- **Network Model:** Similar to the hierarchical model, the network model also establishes relationships between the nodes but allows for more complex connections between them rather than just parent-child relationships.
 
-For example, consider a table representing `employees`. Each row would represent a single employee, and columns describe employee attributes such as `employee_id`, `first_name`, `last_name`, etc.
+## Database Management Systems (DBMS)
 
-### Columns
+A Database Management System (DBMS) is software that helps manage, control, and facilitate interactions with databases. DBMSes can be classified into various types based on their data models, such as the Relational Database Management System (RDBMS), Hierarchical DBMS, and Network DBMS.
 
-Columns are the attributes or properties that describe data within a table. They are also called fields, and each column has a specific name and data type.
+## SQL: Structured Query Language
 
-For example, in the `employees` table, we might have columns for employee details:
+SQL is the standard language used to communicate with RDBMSes, including PostgreSQL. With SQL, you can perform actions like creating, updating, deleting, and querying data in the database. SQL consists of multiple components:
 
-- `employee_id`: Integer, uniquely identifies an employee.
-- `first_name`: String, represents the employee's first name.
-- `last_name`: String, represents the employee's last name.
-- `dob`: Date, represents the employee's date of birth.
+- DDL (Data Definition Language): Used for defining and managing the structure of the database, like creating, altering, and deleting tables.
 
-### Rows
+- DML (Data Manipulation Language): Deals with manipulating the data stored in the tables, like adding, updating, or deleting records.
 
-Rows, also known as records, represent individual instances or entries in a table. They contain values for each of the columns in the table.
+- DCL (Data Control Language): Manages permissions and access control for the data, allowing you to grant or revoke access to specific users and roles.
 
-Continuing the `employees` table example, a row might contain the following data:
+## ACID Properties
 
-- `employee_id`: 1
-- `first_name`: "John"
-- `last_name`: "Doe"
-- `dob`: "1990-01-01"
+Relational databases adhere to the ACID properties, ensuring the following characteristics:
 
-### Keys
+- **Atomicity:** An operation (or transaction) should either be fully completed, or it should not be executed at all.
 
-Keys are used to establish relationships between tables and enforce constraints, such as ensuring uniqueness or referential integrity.
+- **Consistency:** The database should be consistent before and after a transaction. All constraints and business rules must be fulfilled and maintained.
 
-- **Primary Key**: A primary key uniquely identifies each record in a table. A table can only have one primary key, and its values must be unique and non-null.
-- **Foreign Key**: A foreign key refers to a primary key from another table, helping to establish relationships between tables and ensure referential integrity.
+- **Isolation:** Transactions should be isolated from each other, meaning their execution should not have any impact on other transactions in progress.
 
-## SQL (Structured Query Language)
+- **Durability:** Once committed, the changes made by a transaction must be permanent, even in the case of system failure or crash.
 
-SQL is the standard language used to interact with RDBMSs such as PostgreSQL. SQL allows you to perform a wide range of tasks including data definition, manipulation, control, and querying.
+## Normalization
 
-### Data Definition Language (DDL)
+Normalization is a process of systematically organizing data in the database to reduce redundancy, improve consistency, and ensure data integrity. The normalization rules are divided into several forms, such as First Normal Form (1NF), Second Normal Form (2NF), Third Normal Form (3NF), and so on. Each form imposes a set of constraints to achieve a higher degree of data organization and consistency.
 
-DDL includes statements for defining and altering the structure of database objects, such as tables, indexes, and views.
-
-Examples of DDL statements include:
-
-- `CREATE TABLE`: defines a new table in the database.
-- `ALTER TABLE`: modifies an existing table.
-- `DROP TABLE`: removes a table from the database.
-
-### Data Manipulation Language (DML)
-
-DML includes statements for managing the data stored within tables, such as inserting, updating, or deleting records.
-
-Examples of DML statements include:
-
-- `INSERT`: adds a new record to a table.
-- `UPDATE`: modifies an existing record in a table.
-- `DELETE`: removes a record from a table.
-
-### Data Query Language (DQL)
-
-DQL includes statements for obtaining information from the database, such as retrieving data or generating reports.
-
-Examples of DQL statements include:
-
-- `SELECT`: retrieves data from one or more tables or other database objects.
-
-### Data Control Language (DCL)
-
-DCL includes statements for managing user permissions and access control within the database.
-
-Examples of DCL statements include:
-
-- `GRANT`: gives a user specific privileges on a database object.
-- `REVOKE`: removes privileges on a database object from a user.
-
-In summary, understanding high-level database concepts such as tables, keys, and SQL is critical for effectively managing PostgreSQL databases. By gaining proficiency in these topics, you can more easily navigate and work with your database structures and data.
+Understanding and integrating these high-level database concepts will enable you to work efficiently with PostgreSQL and other RDBMSes while designing, developing, and maintaining databases.

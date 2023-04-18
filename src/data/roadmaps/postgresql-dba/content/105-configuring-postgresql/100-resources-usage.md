@@ -1,68 +1,33 @@
 # Resources Usage
 
-# Resource Usage in PostgreSQL
+In this section, we will discuss how to configure PostgreSQL to control its resource usage. This includes managing memory, CPU usage, and I/O operations. Proper resource allocation is crucial for optimizing database performance and maintaining a high level of query execution efficiency.
 
-Resource usage refers to the management of various resources such as memory, CPU, and disk usage while utilizing PostgreSQL. Effective management of these resources is crucial for achieving optimal performance and ensuring smooth operation of the database. In this section, we will discuss the key configuration parameters related to resource usage in PostgreSQL.
+## Memory Management
 
-## Memory Usage
+PostgreSQL can be configured to control its memory usage through the following parameters:
 
-PostgreSQL utilizes memory for several purposes such as caching, sorting, and connection handling. To manage memory usage efficiently, we need to focus on the following parameters:
+- **`shared_buffers`**: This parameter sets the amount of shared memory allocated for the shared buffer cache. It is used by all the database sessions to hold frequently-accessed database rows. Increasing `shared_buffers` may improve performance, but reserving too much memory may leave less room for other important system operations. The default value for this parameter is 32MB.
 
-### `shared_buffers`
+- **`work_mem`**: This parameter defines the amount of memory that can be used for internal sort operations and hash tables. Increasing `work_mem` may help speed up certain queries, but it can also lead to increased memory consumption if multiple queries are running concurrently. The default value is 4MB.
 
-This configuration parameter determines the amount of memory reserved for shared memory buffers. It is used by all PostgreSQL processes for various purposes, such as caching frequently accessed data. A recommended value is around 25% of the total system memory.
+- **`maintenance_work_mem`**: This parameter sets the amount of memory used for maintenance-related tasks, such as VACUUM, CREATE INDEX, and ALTER TABLE. Increasing `maintenance_work_mem` can improve the performance of these operations. The default value is 64MB.
 
-```ini
-shared_buffers = 4GB
-```
+- **`effective_cache_size`**: This parameter sets an estimate of the working memory available for caching purposes. It helps the planner to find the optimal query plan based on the cache size. The default value is 4GB. It's recommended to set this value to the total available memory on the system minus the memory reserved for other tasks.
 
-### `work_mem`
+## CPU Utilization
 
-`work_mem` sets the amount of memory used per query operation, such as sorting and hashing. Increasing this value allows more memory-intensive tasks to execute efficiently but may consume a lot of memory when executing multiple tasks concurrently. The appropriate value depends on the workload and available memory.
+PostgreSQL can control its CPU usage through the following parameters:
 
-```ini
-work_mem = 64MB
-```
+- **`max_parallel_workers_per_gather`**: This parameter defines the maximum number of parallel workers that can be started by a sequential scan or a join operation. Increasing this value can improve query performance in certain situations, but it might also lead to increased CPU usage. The default value is 2.
 
-### `maintenance_work_mem`
+- **`effective_io_concurrency`**: This parameter sets the expected number of concurrent I/O operations that can be executed efficiently by the storage subsystem. Higher values might improve the performance of bitmap heap scans, but too high values can cause additional CPU overhead. The default value is 1.
 
-This parameter sets the amount of memory used for maintenance tasks like VACUUM, CREATE INDEX, and ALTER TABLE. A higher value speeds up these operations but may consume more memory. 
+## I/O Operations
 
-```ini
-maintenance_work_mem = 256MB
-```
+PostgreSQL can control I/O operations through the following parameters:
 
-## CPU Usage
+- **`random_page_cost`**: This parameter sets the estimated cost of fetching a randomly accessed disk page. Lower values will make the planner more likely to choose an index scan over a sequential scan. The default value is 4.0.
 
-PostgreSQL uses the CPU for executing queries and performing maintenance tasks. The key configuration parameter related to CPU usage is:
+- **`seq_page_cost`**: This parameter sets the estimated cost of fetching a disk page in a sequential scan. Lower values will make the planner more likely to choose sequential scans over index scans. The default value is 1.0.
 
-### `max_parallel_workers`
-
-This parameter determines the maximum number of parallel workers that can be active concurrently. Parallel query execution can significantly speed up the processing time for large and complex queries by utilizing multiple CPU cores.
-
-```ini
-max_parallel_workers = 4
-```
-
-## Disk Usage
-
-PostgreSQL stores data and indexes on the disk. Efficient management of the disk space significantly affects the database's performance. The important parameters related to disk usage include:
-
-### `default_statistics_target`
-
-This parameter sets the default sample size for statistics collection by the ANALYZE command. A higher value can lead to more accurate query plans, but at the cost of increased disk space usage.
-
-```ini
-default_statistics_target = 50
-```
-
-### `checkpoint_timeout` and `max_wal_size`
-
-The Write Ahead Log (WAL) records changes to the database and is used for recovery in case of a crash. `checkpoint_timeout` sets the frequency of checkpoints, while `max_wal_size` controls the maximum size of the WAL files.
-
-```ini
-checkpoint_timeout = 5min
-max_wal_size = 2GB
-```
-
-These are just a few of the critical parameters you can configure to optimize the resource usage in PostgreSQL. Keep in mind that every workload is unique, and it is important to monitor and understand your database's performance to adjust the settings accordingly.
+By fine-tuning the above parameters, one can optimize PostgreSQL to make better use of the available resources and achieve enhanced performance. Be sure to test these changes and monitor their effects to find the most suitable configuration for your workload.

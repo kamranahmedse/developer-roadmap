@@ -1,37 +1,46 @@
-# Vacuums
+# Vacuuming in PostgreSQL
 
-## Vacuuming in PostgreSQL
+Vacuuming is an essential component in PostgreSQL maintenance tasks. By reclaiming storage, optimizing performance, and keeping the database lean, vacuuming helps maintain the health of your PostgreSQL system. This section will introduce you to the basics of vacuuming, its types, and how to configure it.
 
-Vacuuming is an essential housekeeping process in PostgreSQL that helps maintain the overall health and performance of the database. By design, PostgreSQL is a Multi-Version Concurrency Control (MVCC) system, which means that each transaction works with a snapshot of the database at a certain point in time. As a result, when a row is updated or deleted, a new version of the row is created, while the old version remains. This increases the size of the database and can lead to performance issues over time. Vacuuming reclaims storage occupied by dead rows and optimizes the performance of queries and the database as a whole.
+## Why Vacuum?
 
-In this section, we will discuss different types of vacuuming processes and how to configure them effectively in PostgreSQL.
+During the normal operation of PostgreSQL, database tuples (rows) are updated, deleted and added. This can lead to fragmentation, wasted space, and decreased efficiency. Vacuuming is used to:
 
-### Types of Vacuuming Processes
+- Reclaim storage space used by dead rows.
+- Update statistics for the query planner.
+- Make unused space available for return to the operating system.
+- Maintain the visibility map in indexed relations.
 
-There are three main types of vacuuming processes in PostgreSQL:
+## Types of Vacuum
 
-1. **Standard Vacuum:** This process reclaims storage space and optimizes the database by removing dead rows and updating internal statistics. It does not require any additional parameters and is invoked by the `VACUUM` command.
+In PostgreSQL, there are three vacuum types:
 
-2. **Full Vacuum:** This is a more aggressive and time-consuming version of the standard vacuum. It reclaims more storage space by compacting the table, but it may also lock the table during the process. This can be invoked by the `VACUUM FULL` command.
+- **Normal (manual) vacuum**: Simply removes dead row versions and makes space available for re-use inside individual tables.
+- **Full vacuum**: Performs a more thorough cleaning operation, reclaiming all dead row space and returning it to the operating system. It requires an exclusive table lock, making it less suitable for production environments.
+- **Auto-vacuum**: An automated version of the normal vacuum that acts based on internal parameters and statistics.
 
-3. **Analyze:** This process updates internal statistics about the distribution of rows and the size of the tables to optimize query planning. It does not free any storage space. This can be invoked by the `ANALYZE` command.
+## Configuring Auto-Vacuum
 
-### Configuring Vacuuming in PostgreSQL
+Auto-vacuum is an essential PostgreSQL feature and is enabled by default. You can adjust some settings for optimal system performance:
 
-PostgreSQL has an automatic background process called the "autovacuum" that takes care of standard vacuuming and analyzing operations. By default, the autovacuum is enabled, and it's recommended to keep it that way. However, it's essential to fine-tune its configuration for optimal performance. Here are some key configuration parameters related to vacuuming:
+- `autovacuum_vacuum_scale_factor`: Specifies the fraction of a table's total size that must be composed of dead tuples before a vacuum is launched. Default is `0.2` (20%).
+- `autovacuum_analyze_scale_factor`: Specifies the fraction of a table's total size that must be composed of changed tuples before an analyze operation is launched. Default is `0.1` (10%).
+- `autovacuum_vacuum_cost_limit`: Sets the cost limit value for vacuuming a single table. Higher cost limit values lead to more aggressive vacuuming. Default is `200`.
 
-- `autovacuum_vacuum_scale_factor`: This parameter determines the fraction of the table size that must no longer be useful (dead rows) before the table is vacuumed. The default value is `0.2`, meaning 20% of the table must be dead rows before the table is vacuumed.
+To disable auto-vacuum for a particular table, you can use the following command:
 
-- `autovacuum_analyze_scale_factor`: This parameter determines the fraction of the table size that must change (inserts, updates, or deletes) before the table is analyzed. The default value is `0.1`, meaning at least 10% of the table must have changed before the table is analyzed.
+```sql
+ALTER TABLE table_name SET (autovacuum_enabled = false);
+```
 
-- `maintenance_work_mem`: This parameter determines the amount of memory available for maintenance tasks like vacuuming. Increasing this value can speed up the vacuuming process. The default value is `64 MB`.
+## Manual Vacuuming
 
-- `vacuum_cost_limit`: This parameter is used by the cost-based vacuum delay feature, which can slow down the vacuuming process to reduce the impact on the overall performance of the system. The default value is `200`.
+For ad-hoc maintenance, you can still perform manual vacuum and vacuum full operations as desired:
 
-Remember that these parameter values should be adjusted based on your system's hardware, workload, and specific requirements.
+- Normal vacuum: `VACUUM table_name;`
+- Full vacuum: `VACUUM FULL table_name;`
+- Analyze table: `VACUUM ANALYZE table_name;`
 
-### Monitoring Vacuum Activity
+Keep in mind that running manual vacuum operations may temporarily impact performance due to resource consumption. Plan accordingly.
 
-You can monitor the vacuuming activities in your PostgreSQL database through the `pg_stat_user_tables` and `pg_stat_bgwriter` views. These views provide insights into the number of vacuum and analyze operations performed on each table and the overall effectiveness of the vacuuming process.
-
-In conclusion, vacuuming is a critical aspect of PostgreSQL administration that helps to clean up dead rows, update internal statistics, and optimize the database engine for better performance. As a PostgreSQL DBA, it's essential to understand the various types of vacuums, configure them appropriately, and monitor their activities. With proper vacuuming settings, you can achieve a more efficient and high-performing PostgreSQL database.
+In summary, vacuuming is a crucial part of PostgreSQL performance optimization and space management. By understanding its types, purposes and customization options, you can ensure your PostgreSQL system is always in tip-top shape.

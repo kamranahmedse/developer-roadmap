@@ -1,41 +1,45 @@
-# Low Level Internals
+# Low-Level Internals
 
-## Low-Level Internals
+In this section, we'll delve into some of the low-level internals of PostgreSQL – the inner workings that make this powerful database system function efficiently and effectively.
 
-As a PostgreSQL DBA, knowing about the low-level internals is crucial for troubleshooting, optimizing, and understanding the PostgreSQL architecture. In this section, we are going to explore some key low-level concepts and components such as storage layout, database pages, MVCC, and WAL.
+## Overview
 
-### Database Storage Layout
+While understanding these low-level details is not mandatory for most users, gaining insights into the internal mechanics can be helpful for more advanced users who want to optimize their database workloads, troubleshoot complex issues, or contribute to PostgreSQL development.
 
-PostgreSQL organizes its files on the disk in a hierarchical structure, with the following levels:
+## Storage and Disk Layout
 
-1. Data directory: This is the root directory where all data is stored. It's specified by the `data_directory` configuration option.
-2. Tablespaces: PostgreSQL allows you to define custom tablespaces database storage areas.
-3. Databases: Each PostgreSQL cluster has multiple databases, and you can have multiple schemas within a database.
-4. Files: Each database contains a set of files for tables, indexes, sequences, and other objects.
+PostgreSQL stores its data on disk in a format that is designed for efficiency and reliability. At a high level, the disk layout consists of the following components:
 
-### Database Pages
+- **Tablespaces**: Each tablespace corresponds to a directory on the file system where PostgreSQL stores its data files. PostgreSQL includes a default tablespace called `pg_default`, which is used to store system catalog tables and user data.
 
-Database pages are the smallest unit of storage in PostgreSQL. A page is the fixed-size block of data, usually 8KB. Each table and index is stored as a collection of pages. Here's how PostgreSQL manages database pages:
+- **Data Files**: Each relation (table, index, or sequence) has one or more data files associated with it. These files contain the actual data as well as metadata about the relation. The names of these files are derived from the object ID (OID) of the relation and are located within the tablespace directory.
 
-1. Table and index pages are managed by a parameter called `fillfactor`, which determines the space utilization within the page.
-2. The free space map (FSM) keeps track of free space available for each page in a table or index.
-3. The visibility map (VM) stores information about which tuples are visible to all active queries, helping in improving query performance.
+- **WAL (Write-Ahead Log)**: The Write-Ahead Log (WAL) is a crucial component that ensures data consistency and durability. It records all modifications to the database, including inserts, updates, and deletes. PostgreSQL writes WAL records to a separate set of log files before the actual data is updated on disk. In the event of a crash, the WAL can be used to recover the database to a consistent state.
 
-### Multi-Version Concurrency Control (MVCC)
+## Buffer Cache and Memory Management
 
-PostgreSQL uses MVCC to allow multiple transactions to access the database concurrently without affecting each other's operations. MVCC works by:
+PostgreSQL manages its memory using a combination of shared buffers, local buffers, and the operating system's cache. The main component in this architecture is the shared buffer cache, which is a shared memory area that stores frequently accessed data and metadata.  
 
-1. Assigning transaction IDs to each transaction.
-2. Storing transaction IDs within each row in the table (xmin and xmax) to track the creation and deletion of the corresponding rows.
-3. Keeping track of a snapshot of the database state for each transaction.
-4. Ensuring each transaction operates on its own snapshot of the data and concurrent write operations don't overwrite each other's changes.
+The database system utilizes the following components in managing memory:
 
-### Write-Ahead Logging (WAL)
+- **Buffer Cache**: PostgreSQL employs a buffer cache to store frequently accessed data and metadata to minimize disk I/O. When a user executes a query, the database first checks if the required data is present in the buffer cache. If not, the data is read from disk and stored in the cache.
 
-The Write-Ahead Logging (WAL) is an integral part of PostgreSQL's concurrency control and crash recovery mechanisms. It ensures data consistency and durability by writing changes to a log before they are applied to the actual data files. WAL helps in:
+- **Background Writer**: PostgreSQL uses a background writer process to flush dirty buffers (modified data) back to disk periodically. This allows the database to maintain a balance between in-memory data and on-disk storage, ensuring data consistency and durability.
 
-1. Maintaining a continuous archive of database changes.
-2. Providing a way to recover from a crash or failure by replaying the logged operations.
-3. Supporting replication and standby servers.
+- **Free Memory Manager**: The free memory manager handles the allocation and deallocation of shared memory for various tasks such as query plans, sort operations, and hash joins.
 
-Understanding these low-level internals provides a solid foundation for effective PostgreSQL administration and performance tuning. As a DBA, you should be able to leverage this knowledge for making informed decisions when working with PostgreSQL databases.
+## Query Processing and Execution
+
+The PostgreSQL query processing and execution pipeline comprises three main stages: Parsing, Rewriting, and Planning/Optimization. This pipeline enables the effective and efficient execution of SQL queries.
+
+- **Parsing**: The first step involves parsing the query text to construct a syntax tree. The parser identifies SQL keywords, expressions, and other elements, validating their syntax and performing initial semantic checks.
+
+- **Rewriting**: After parsing, PostgreSQL rewrites the query to apply any relevant rules and views. This stage simplifies and optimizes the query by eliminating unnecessary joins, subqueries, and other constructs.
+
+- **Planning and Optimization**: The planner generates an optimized, cost-based query execution plan based on available statistics about the database objects, such as table sizes and column distributions.
+
+- **Execution**: Finally, the executor runs the generated plan, retrieving or modifying data as necessary and returning the results to the user.
+
+## Conclusion
+
+Understanding PostgreSQL's low-level internals, such as its storage architecture, memory management, and query processing, can be beneficial for advanced users seeking to optimize their workloads or troubleshoot complex issues. However, it is important to note that the primary goal remains to effectively use and configure the database system for your specific needs. By gaining insights into these internal mechanics, we hope that you can better appreciate the power and flexibility PostgreSQL offers.

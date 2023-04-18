@@ -1,64 +1,64 @@
-# Per-user, Per-Database Settings
+# Per-User Per-Database Settings in PostgreSQL
 
-## Per User Per Database Settings
+PostgreSQL allows you to apply configuration settings on a per-user and per-database basis, providing fine-grained control to optimize performance and stability. This is particularly useful when you have multiple databases or users with different workloads and requirements. In this section, we'll dive into per-user per-database settings and provide examples of how to configure them.
 
-In PostgreSQL, you have the flexibility to configure settings on a per user and per database level. This means you can fine-tune the performance of your system, enhancing scalability and ensuring each user and database is tailored to its specific requirements.
+## Configuration
 
-### Why Use Per User Per Database Settings?
+You can set per-user per-database configurations by modifying the `postgresql.conf` file or using the `ALTER DATABASE` and `ALTER ROLE` SQL commands.
 
-There are several reasons you might want to use per user per database settings:
+### postgresql.conf
 
-1. **Isolation**: Certain users or databases may have specific requirements that should not affect other users or databases.
-2. **Resource Management**: You can allocate resources based on the needs of each user and database. This way, you prevent one user or database from consuming too many resources and ensure optimal performance for all.
-3. **Compliance**: In some cases, enforcing specific settings per user or database can be necessary for compliance or regulatory purposes.
-4. **Testing**: You can use different settings for testing purposes, for example, while testing new configurations or extensions before rolling them out to the production environment.
-
-### How to Implement Per User Per Database Settings
-
-You can implement per user per database settings by modifying the `postgresql.conf` file or using the `ALTER ROLE` and `ALTER DATABASE` statements. Below, we'll discuss both approaches.
-
-#### Using postgresql.conf
-
-In your `postgresql.conf` file, you can use the `include_dir` directive to include configuration files from a specified directory. For example:
+To set per-database and per-user configurations in `postgresql.conf`, use the following syntax:
 
 ```
-include_dir = 'per_db_conf'
+# For a specific database:
+dbname.key = value
+
+# For a specific user:
+username.key = value
+
+# For a specific user and database:
+username@dbname.key = value
 ```
 
-This will instruct PostgreSQL to load all configuration files from the `per_db_conf` directory. 
+Here, `dbname` refers to the database name, `username` to the user name, and `key` to the configuration parameter.
 
-You can create separate configuration files for each user and database, with contents like:
+For example, if you want to set `shared_buffers` for the database `app_db` and user `app_user`, you can do so by adding the following lines to `postgresql.conf`:
 
 ```
-# for user 'user1'
-override_user.user1 = 'user1.conf'
-
-# for database 'db1'
-override_db.db1 = 'db1.conf'
+app_db.shared_buffers = 128MB
+app_user.app_db.shared_buffers = 64MB
 ```
 
-Where `user1.conf` and `db1.conf` contain the specific settings for the user and database, respectively.
+### ALTER DATABASE and ALTER ROLE
 
-#### Using ALTER ROLE and ALTER DATABASE
+You can also set per-user per-database configuration parameters using the `ALTER DATABASE` and `ALTER ROLE` SQL commands. 
 
-You can also set configuration parameters directly for a user or database using the `ALTER ROLE` and `ALTER DATABASE` statements.
-
-For users:
+For example, to set the `temp_buffers` configuration parameter for the database `app_db`, you can run:
 
 ```sql
-ALTER ROLE user1 SET search_path = 'public, user1_schema';
-ALTER ROLE user1 SET work_mem = '32MB';
+ALTER DATABASE app_db SET temp_buffers = '64MB';
 ```
 
-For databases:
+And to set the `work_mem` configuration parameter for the user `app_user` in `app_db`, you can run:
 
 ```sql
-ALTER DATABASE db1 SET timezone = 'UTC';
-ALTER DATABASE db1 SET maintenance_work_mem = '64MB';
+ALTER ROLE app_user IN DATABASE app_db SET work_mem = '32MB';
 ```
 
-In this way, you can apply specific settings to each user or database as needed.
+**Note**: The `ALTER DATABASE` and `ALTER ROLE` SQL commands store the configuration settings in the `pg_db_role_setting` system catalog table. You can query this table to view the current settings.
 
-### Conclusion
+## Precedence
 
-Using per user per database settings is an effective way to manage resources and optimize the performance of your PostgreSQL environment. By taking advantage of this feature, you can ensure a balance between the needs of each user and database, which will provide a better overall experience for all. Remember to test the configurations and monitor their impact on your system to make any necessary adjustments over time.
+PostgreSQL has several levels of configuration setting precedence, which are applied in the following order:
+
+- Settings in the `postgresql.conf` file
+- Settings made with the `ALTER DATABASE` statement
+- Settings made with the `ALTER ROLE` statement
+- Settings made with the `ALTER ROLE IN DATABASE` statement
+
+Keep this precedence order in mind when configuring per-user and per-database settings to ensure the expected settings take effect.
+
+## Conclusion
+
+Per-user per-database settings in PostgreSQL offer an extra layer of control to fine-tune your database performance and resource allocation. By leveraging the `postgresql.conf` file or using SQL commands such as `ALTER DATABASE` and `ALTER ROLE`, you can configure different settings for different use cases and workloads, optimizing your PostgreSQL environment for your specific requirements.

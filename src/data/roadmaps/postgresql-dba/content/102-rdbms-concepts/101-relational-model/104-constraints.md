@@ -1,107 +1,80 @@
-# Constraints
-
 # Constraints in PostgreSQL
 
-Constraints are an integral part of the relational model in PostgreSQL. They are used to define rules and relationships between columns within a table, ensuring data integrity and consistency. Constraints allow you to enforce specific conditions on columns or tables and control the kind of data that can be stored within them. In this section, we will explore various types of constraints and their usage in PostgreSQL.
+Constraints are an essential part of the relational model, as they define rules that the data within the database must follow. They ensure that the data is consistent, accurate, and reliable. In this section, we'll explore various types of constraints in PostgreSQL and how to implement them.
 
-## Types of Constraints
+## Primary Key
 
-There are several types of constraints available in PostgreSQL:
-
-1. `NOT NULL`: It ensures that a column cannot have a NULL value.
-2. `UNIQUE`: It ensures that all values in a column are unique. No two rows can contain the same value in a unique column.
-3. `PRIMARY KEY`: It is a special type of UNIQUE constraint that uniquely identifies each row in a table. A primary key column cannot contain NULL values.
-4. `FOREIGN KEY`: It establishes a relationship between columns in different tables, ensuring that the data in one table corresponds to the data in another table.
-5. `CHECK`: It verifies that the data entered into a column satisfies a specific condition.
-
-## Defining Constraints
-
-Constraints can be defined at the column level or table level. You can define them when creating a table or add them later using the `ALTER TABLE` statement. Let's take a look at some examples:
-
-### NOT NULL
-
-To define a NOT NULL constraint when creating a table:
-
-```sql
-CREATE TABLE customers (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  email VARCHAR(255) NOT NULL
-);
-```
-
-### UNIQUE
-
-To define a UNIQUE constraint when creating a table:
+A primary key constraint is a column or a set of columns that uniquely identifies each row in a table. There can only be one primary key per table, and its value must be unique and non-null for each row.
 
 ```sql
 CREATE TABLE users (
   id SERIAL PRIMARY KEY,
-  username VARCHAR(50) NOT NULL UNIQUE,
-  email VARCHAR(255) NOT NULL UNIQUE
+  username VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL
 );
 ```
 
-### PRIMARY KEY
+## Foreign Key
 
-To define a PRIMARY KEY constraint when creating a table:
+A foreign key constraint ensures that a column or columns in a table refer to an existing row in another table. It helps maintain referential integrity between tables.
+
+```sql
+CREATE TABLE orders (
+  order_id SERIAL PRIMARY KEY,
+  user_id INTEGER,
+  product_id INTEGER,
+  FOREIGN KEY (user_id) REFERENCES users (id),
+  FOREIGN KEY (product_id) REFERENCES products (id)
+);
+```
+
+## Unique
+
+A unique constraint ensures that the values in a column or set of columns are unique across all rows in a table. In other words, it prevents duplicate entries in the specified column(s).
+
+```sql
+CREATE TABLE users (
+  id SERIAL PRIMARY KEY,
+  username VARCHAR(100) UNIQUE NOT NULL,
+  email VARCHAR(100) UNIQUE NOT NULL
+);
+```
+
+## Check
+
+A check constraint verifies that the values entered into a column meet a specific condition. It helps to maintain data integrity by restricting the values that can be inserted into a column.
 
 ```sql
 CREATE TABLE products (
-  id SERIAL PRIMARY KEY,
-  name VARCHAR(100) NOT NULL,
-  price NUMERIC NOT NULL
+  product_id SERIAL PRIMARY KEY,
+  product_name VARCHAR(100) NOT NULL,
+  price NUMERIC CHECK (price >= 0)
 );
 ```
 
-### FOREIGN KEY
+## Not Null
 
-To define a FOREIGN KEY constraint when creating a table:
+A NOT NULL constraint enforces that a column cannot contain a NULL value. This ensures that a value must be provided for the specified column when inserting or updating data in the table.
 
 ```sql
-CREATE TABLE orders (
+CREATE TABLE users (
   id SERIAL PRIMARY KEY,
-  customer_id INTEGER REFERENCES customers(id),
-  product_id INTEGER REFERENCES products(id),
-  quantity INTEGER NOT NULL
+  username VARCHAR(100) NOT NULL,
+  email VARCHAR(100) NOT NULL
 );
 ```
 
-### CHECK
+## Exclusion
 
-To define a CHECK constraint when creating a table:
+An exclusion constraint is a more advanced form of constraint that allows you to specify conditions that should not exist when comparing multiple rows in a table. It helps maintain data integrity by preventing conflicts in data.
 
 ```sql
-CREATE TABLE orders (
-  id SERIAL PRIMARY KEY,
-  customer_id INTEGER REFERENCES customers(id),
-  product_id INTEGER REFERENCES products(id),
-  quantity INTEGER CHECK(quantity > 0)
+CREATE TABLE reservation (
+  user_id INTEGER,
+  reserved_from TIMESTAMP NOT NULL,
+  reserved_to TIMESTAMP NOT NULL,
+  EXCLUDE USING gist (user_id WITH =, tsrange(reserved_from, reserved_to) WITH &&)
 );
 ```
 
-## Managing Constraints
-
-You can modify, disable or drop constraints using various `ALTER TABLE` statements. Some examples are:
-
-- Adding a UNIQUE constraint to an existing table:
-
-  ```sql
-  ALTER TABLE users ADD CONSTRAINT unique_email UNIQUE(email);
-  ```
-
-- Dropping a CHECK constraint:
-
-  ```sql
-  ALTER TABLE orders DROP CONSTRAINT check_quantity;
-  ```
-
-- Disabling a FOREIGN KEY constraint:
-
-  ```sql
-  ALTER TABLE orders ALTER CONSTRAINT fk_customer_id DEFERRABLE;
-  ```
-
-## Conclusion
-
-Constraints play a crucial role in maintaining data integrity and consistency within a PostgreSQL database. By understanding and utilizing various types of constraints, you can ensure that your database maintains a high level of quality and reliability.
+In conclusion, constraints are a vital aspect of managing data within PostgreSQL. By using the various constraint types, you can ensure that your data is accurate, consistent, and maintains its integrity over time.

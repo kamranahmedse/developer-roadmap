@@ -1,58 +1,76 @@
-# Practical Patterns and Antipatterns
+# Practical Patterns and Antipatterns for Queues in PostgreSQL
 
-# Practical Patterns and Antipatterns on Queues
-
-In this section, we will discuss practical patterns and antipatterns for working with queues in PostgreSQL. These concepts are important to understand in order to optimize and manage your queues efficiently.
+Using PostgreSQL for implementing queues is a common practice. Here, we will discuss some practical patterns and antipatterns that you should be aware of when working with queues in PostgreSQL.
 
 ## Patterns
 
-### 1. Using LISTEN/NOTIFY
+### Implementing a simple queue using SKIP LOCKED
 
-PostgreSQL has an interprocess communication (IPC) feature called `LISTEN` and `NOTIFY`, which allows clients or applications to subscribe to the database events. This can be used to create a lightweight pub-sub mechanism for handling queued tasks efficiently. Clients can `LISTEN` for events, while other parts of the system `NOTIFY` when new tasks are added to the queue. Here is an example implementation:
+A simple way to implement a queue is by using the `SKIP LOCKED` functionality that PostgreSQL offers. We use a table `jobs` to store our queue items:
 
 ```sql
--- Create a channel for communication
-LISTEN my_channel;
-
--- Emit a notification on the channel when there is a queued task
-NOTIFY my_channel, 'New task in the queue';
-
--- Listen for events in the application and consume queued tasks
--- some_application_code_here
+CREATE TABLE jobs (
+    id SERIAL PRIMARY KEY,
+    payload JSONB,
+    status VARCHAR(20) NOT NULL DEFAULT 'PENDING'
+);
 ```
 
-### 2. Prioritizing Queued Tasks
-
-When handling a queue of tasks in your PostgreSQL, it can be useful to prioritize these tasks based on certain attributes like importance or due dates. In such cases, use the `ORDER BY` clause in your queries to order the tasks based on priority. This can significantly improve the behavior of your queues and make them more responsive.
+Queue items can be inserted like this:
 
 ```sql
--- Fetch top-priority tasks from the queue
-SELECT *
-FROM task_queue
-WHERE status='queued'
-ORDER BY priority DESC, due_date ASC
+INSERT INTO jobs (payload) VALUES ('{"task": "do something"}');
+```
+
+And dequeued items can then be fetched like this:
+
+```sql
+BEGIN;
+SELECT * FROM jobs WHERE status = 'PENDING'
+ORDER BY id ASC
+FOR UPDATE SKIP LOCKED
 LIMIT 1;
+-- now do something with the dequeued job
+UPDATE jobs SET status = 'DONE' WHERE id = <dequeued_id>;
+COMMIT;
+```
+
+### Implementing a retry mechanism using a separate column
+
+In real-life situations, you might want to retry failed jobs in your queue. To do so, you can add a `retries` column to your jobs table:
+
+```sql
+ALTER TABLE jobs ADD COLUMN retries INT DEFAULT 3;
+```
+
+And modify the dequeue query to handle failed jobs:
+
+```sql
+BEGIN;
+SELECT * FROM jobs WHERE status = 'PENDING' OR (status = 'FAILED' AND retries > 0)
+ORDER BY id ASC
+FOR UPDATE SKIP LOCKED
+LIMIT 1;
+-- now do something with the dequeued job
+-- if successful:
+UPDATE jobs SET status = 'DONE' WHERE id = <dequeued_id>;
+-- if failed:
+UPDATE jobs SET status = 'FAILED', retries = retries - 1 WHERE id = <dequeued_id>;
+COMMIT;
 ```
 
 ## Antipatterns
 
-### 1. Polling for Pending Tasks
+### Polling for queue items
 
-A common antipattern when working with queues is polling the database for new or pending tasks in a loop. This approach can put unnecessary strain on your PostgreSQL, as the constant repetition of read queries can lead to increased load and diminished performance. Instead, consider using the aforementioned `LISTEN`/`NOTIFY` pattern, which reduces the need for constant polling of the database and improves efficiency.
+One common antipattern is polling the database for new queue items. This can be computationally expensive and can severely impact the performance of your overall implementation. Instead, consider using `SKIP LOCKED` as described earlier and make use of PostgreSQL's row-level locking mechanism.
 
-### 2. Using Queue as a Store of Everything
+### Using expensive data types for payload
 
-Another antipattern is using a queue as a storage for every task in the system, including those completed or in progress, which can cause performance issues due to the high number of rows in the queue table. Instead, use separate tables to store completed tasks and tasks in progress. This can lead to better separation of concerns, improving overall performance and database management.
+When inserting payload data into your jobs table, it's important to use suitable data types. For instance, storing payload data in a `JSONB` column can result in parsing and storing overhead. Depending on your use case, consider using simpler data types like `VARCHAR`, `INTEGER`, or even byte arrays.
 
-```sql
--- Move completed tasks to a separate table
-INSERT INTO completed_tasks
-SELECT *
-FROM task_queue
-WHERE status = 'completed';
+### Simultaneously dequeuing multiple items
 
-DELETE FROM task_queue
-WHERE status = 'completed';
-```
+While it might be tempting to dequeue multiple items at once to optimize performance, this can lead to inefficiencies and may cause your transactions to wait for locks. Instead, only dequeue a single item at a time using `LIMIT 1` in your query.
 
-By being aware of these patterns and antipatterns, you will be better equipped to efficiently work with queues in PostgreSQL. Applying these best practices will ensure smoother performance and improved database management.
+By following the practical patterns and avoiding the antipatterns, you can make your PostgreSQL-based queue implementation more efficient and functional.

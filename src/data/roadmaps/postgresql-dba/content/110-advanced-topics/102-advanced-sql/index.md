@@ -1,48 +1,25 @@
 # Advanced SQL
 
-### Advanced SQL
+In this section, we'll explore some of the more advanced features of SQL that can help you take your queries and data manipulation skills to the next level. These topics will provide you with the tools you need to work with complex data structures, optimize query performance, and fine-tune your database activities.
 
-As a PostgreSQL DBA, you will often encounter complex tasks that require a deeper understanding of SQL. In this section, we will cover some essential advanced SQL concepts that can help you manage your PostgreSQL database with greater efficiency and proficiency. You will learn about:
+Here are the main topics we'll cover in this Advanced SQL section:
 
-1. **Window Functions:** Window functions allow you to perform calculations across a set of rows related to the current row. This enables you to create more advanced calculations and aggregations. For instance, calculating a moving average or ranking the results.
+- **Subqueries**: Subqueries allow you to use the result of one query as input for another query. We'll discuss how to use subqueries in different parts of your main query, such as the SELECT, FROM, and WHERE clauses.
 
-   * `ROW_NUMBER()`: Assigns a unique number to each row within the result set.
-   * `RANK()` and `DENSE_RANK()`: Assigns a unique rank to each distinct row within the result set.
-   * `NTILE(n)`: Divides the result set into a specified number of buckets (n) and assigns a bucket number to each row.
-   * `LAG()` and `LEAD()`: Accesses data from a previous or following row within the result set.
-   * `FIRST_VALUE()` and `LAST_VALUE()`: Returns the first or last value within the defined window frame.
+- **Common Table Expressions (CTEs)**: CTEs are temporary result sets that can be referenced in a SELECT, INSERT, UPDATE, or DELETE statement. They are particularly useful for breaking down complex queries into simpler, more readable parts.
 
-2. **Common Table Expressions (CTEs):** CTEs allow you to write clean and organized SQL queries by breaking them down into smaller, more readable chunks. They can be used to create temporary tables, simplify complex queries, and write recursive queries.
+- **Window Functions**: Window functions enable you to perform calculations across a set of rows related to the current row. This is useful for tasks like ranking, cumulative sums, and moving averages.
 
-   Example: 
-   ```
-   WITH temp_data AS (
-       SELECT 
-           payment_date,
-           sum(amount) as daily_total
-       FROM
-           payment
-       GROUP BY
-           payment_date
-   )
-   SELECT
-       payment_date,
-       daily_total
-   FROM
-       temp_data
-   WHERE
-       daily_total > 100;
-   ```
+- **Pivot Tables**: Pivot tables help you reorganize data from long format to wide format (or vice versa). This can make it easier to analyze and summarize data in a meaningful way.
 
-3. **Pivot Tables:** Pivot tables allow you to efficiently summarize and analyze large amounts of data by transposing row data into columns and aggregating it. The `crosstab` function in the `tablefunc` module can be used to create pivot tables in PostgreSQL.
+- **Advanced Joins**: We'll dive deeper into SQL joins by exploring various types of joins such as Self Joins, Lateral Joins, and CROSS JOIN.
 
-4. **JSON Functions:** With PostgreSQL's extensive support for JSON data types, you can create, extract, modify and query JSON data using various JSON functions and operators.
+- **Full-Text Search**: Full-text search allows you to query natural language documents stored in your database. We'll look at using PostgreSQL’s built-in text search features, including the tsvector and tsquery data types, as well as text search functions and operators.
 
-   * `->`: Extract JSON value by key.
-   * `->>`: Extract JSON value by key and return it as text.
-   * `#>`: Extract JSON value by key or index path.
-   * `#>>`: Extract JSON value by key or index path and return it as text.
-   * `json_array_length()`: Get the length of a JSON array.
-   * `json_each()`, `json_each_text()` and `json_object_keys()`: Extract keys and values from a JSON object.
+- **Triggers**: Triggers are a way to automatically execute a specified function whenever certain events occur, such as INSERT, UPDATE, DELETE or TRUNCATE operations. We will look at creating triggers and understanding their use cases.
 
-That's a brief summary of some critical advanced SQL topics. By mastering these concepts, you will be better equipped to handle the challenges of managing your PostgreSQL database. Keep honing your SQL skills, and always keep learning!
+- **Stored Procedures**: Stored procedures are reusable, precompiled units of code that can be called by applications to perform specific database tasks. We'll discuss creating and invoking stored procedures, and we'll also touch on how they compare to functions in PostgreSQL.
+
+- **Performance Optimization**: To ensure your PostgreSQL database is running efficiently, it's essential to optimize query performance. We'll highlight some strategies, including indexing, query optimization, and server configuration, to improve efficiency and speed.
+
+By the end of this section on Advanced SQL, you should have a deeper understanding of these powerful SQL features and techniques that will help you manipulate, analyze, and maintain your data more effectively.

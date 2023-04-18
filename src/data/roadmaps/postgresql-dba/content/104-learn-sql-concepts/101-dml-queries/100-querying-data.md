@@ -1,12 +1,10 @@
 # Querying Data
 
-# Querying Data
+This section discusses various `DML` (Data Manipulation Language) queries for working with data in PostgreSQL. These queries allow you to work with data stored in tables, such as selecting, inserting, updating, and deleting data. We will focus on the essential SQL commands and their applications for PostgreSQL.
 
-In this section, we will discuss how to query data in PostgreSQL using Data Manipulation Language (DML) queries. These queries allow you to manipulate the data within the database, such as retrieving, inserting, updating, and deleting records. Understanding these queries is essential for every PostgreSQL Database Administrator.
+## SELECT
 
-## SELECT Statement
-
-The `SELECT` statement is the most basic and widely-used DML query for retrieving data from one or more tables. The basic syntax of the `SELECT` statement is as follows:
+The `SELECT` statement is used to retrieve data from one or more tables. You can select specific columns or retrieve all columns, filter records, sort records, or even join multiple tables together. Below is the basic syntax of a SELECT statement:
 
 ```sql
 SELECT column1, column2, ...
@@ -14,81 +12,61 @@ FROM table_name
 WHERE condition;
 ```
 
-- `column1, column2, ...`: A comma-separated list of columns to retrieve from the table.
-- `table_name`: The name of the table you want to query.
-- `condition` (optional): A filter to apply on the records to limit the result set.
+## Examples:
 
-### Examples
-
-1. Retrieve all columns from the "employees" table:
+- Selecting all columns from a table:
 
 ```sql
 SELECT * FROM employees;
 ```
 
-2. Retrieve "id", "name", and "salary" columns from the "employees" table:
+- Selecting specific columns from a table:
 
 ```sql
-SELECT id, name, salary FROM employees;
+SELECT first_name, last_name FROM employees;
 ```
 
-3. Retrieve "id" and "name" columns from the "employees" table with a condition: only employees with a salary greater than 50000:
+- Select records based on a condition:
 
 ```sql
-SELECT id, name FROM employees
-WHERE salary > 50000;
+SELECT * FROM employees WHERE salary > 40000;
 ```
 
-## JOIN Operation
-
-When you need to fetch data from more than one table having a relationship between them, you can use the `JOIN` operation. The basic syntax of the `JOIN` operation is as follows:
+- Order records in ascending or descending order:
 
 ```sql
-SELECT column1, column2, ...
-FROM table1
-JOIN table2
-ON table1.column = table2.column
-WHERE condition;
+SELECT first_name, last_name, salary FROM employees ORDER BY salary ASC;
 ```
 
-- `table1` and `table2`: The two tables you want to join based on a common column.
-- `table1.column = table2.column`: A condition that specifies the link between the tables.
+## INSERT
 
-### Examples
-
-1. Retrieve employee names and their department names, given the "employees" table has a "department_id" column and the "departments" table has "id" and "name" columns:
-
-```sql
-SELECT employees.name AS employee_name, departments.name AS department_name
-FROM employees
-JOIN departments
-ON employees.department_id = departments.id;
-```
-
-## INSERT Statement
-
-The `INSERT` statement is used to add new records to a table. The basic syntax of the `INSERT` statement is as follows:
+The `INSERT` statement is used to add new records to a table. You can specify the values for each column in the new record, or you can use a subquery to insert records from another table. Here is the basic syntax for an INSERT statement:
 
 ```sql
 INSERT INTO table_name (column1, column2, ...)
 VALUES (value1, value2, ...);
 ```
 
-- `column1, column2, ...`: A comma-separated list of columns that you want to insert values into.
-- `value1, value2, ...`: A comma-separated list of values that correspond to the specified columns.
+## Examples:
 
-### Example
-
-1. Insert a new employee into the "employees" table:
+- Inserting a single record:
 
 ```sql
-INSERT INTO employees (name, age, salary, department_id)
-VALUES ('John Doe', 30, 55000, 1);
+INSERT INTO employees (first_name, last_name, salary)
+VALUES ('John', 'Doe', 50000);
 ```
 
-## UPDATE Statement
+- Insert multiple records at once:
 
-The `UPDATE` statement is used to modify existing records in a table. The basic syntax of the `UPDATE` statement is as follows:
+```sql
+INSERT INTO employees (first_name, last_name, salary)
+VALUES ('John', 'Doe', 50000),
+       ('Jane', 'Doe', 55000);
+```
+
+## UPDATE
+
+The `UPDATE` statement is used to modify existing records in a table. You can set new values for individual columns or for all columns. Here is the basic syntax for an UPDATE statement:
 
 ```sql
 UPDATE table_name
@@ -96,37 +74,47 @@ SET column1 = value1, column2 = value2, ...
 WHERE condition;
 ```
 
-- `column1 = value1, column2 = value2, ...`: A comma-separated list of column-value pairs that indicate the changes to be made.
-- `condition` (optional): A filter to apply on the records to limit the updates.
+## Examples:
 
-### Example
-
-1. Update the salary of an employee with an "id" of 3:
+- Updating a single record:
 
 ```sql
 UPDATE employees
 SET salary = 60000
-WHERE id = 3;
+WHERE employee_id = 1;
 ```
 
-## DELETE Statement
+- Updating multiple records:
 
-The `DELETE` statement is used to remove records from a table. The basic syntax of the `DELETE` statement is as follows:
+```sql
+UPDATE employees
+SET salary = salary * 1.1
+WHERE salary < 50000;
+```
+
+## DELETE
+
+The `DELETE` statement is used to remove records from a table. You can delete one record or multiple records based on a condition. Here is the basic syntax for a DELETE statement:
 
 ```sql
 DELETE FROM table_name
 WHERE condition;
 ```
 
-- `condition` (optional): A filter to apply on the records to limit the deletions. If not provided, all records in the table will be deleted.
+## Examples:
 
-### Example
-
-1. Delete an employee with an "id" of 5 from the "employees" table:
+- Deleting a single record:
 
 ```sql
 DELETE FROM employees
-WHERE id = 5;
+WHERE employee_id = 1;
 ```
 
-In summary, DML queries are essential for managing and manipulating data in PostgreSQL databases. Mastering these queries and understanding the underlying principles is a crucial skill for any PostgreSQL Database Administrator.
+- Deleting multiple records:
+
+```sql
+DELETE FROM employees
+WHERE salary < 40000;
+```
+
+In this section, we covered various DML queries for querying data in PostgreSQL. Practice these queries to have a better understanding of how to work with data stored in tables. Don't forget that learning by doing is essential to mastering SQL and database management.

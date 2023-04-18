@@ -1,57 +1,86 @@
-# DML Queries
+# DML Queries in PostgreSQL
 
-## DML Queries
+In this section, we will be discussing Data Manipulation Language (DML) queries in PostgreSQL. DML queries are used to manage and modify data in tables. As an integral part of SQL, they allow us to perform various operations such as inserting, updating, and retrieving data. The main DML queries are as follows:
 
-Data Manipulation Language (DML) queries refer to the set of SQL statements that allow you to interact with your database data. DML queries enable you to perform basic operations such as inserting, updating, and retrieving information from your database. These queries are essential for any PostgreSQL DBA, as they are the foundation of interacting with the data stored in your system.
+## INSERT
 
-In this section, we will go over the fundamental DML queries and provide examples on how to use each one.
+The `INSERT` statement is used to add new rows to a table. The basic syntax for the `INSERT` command is:
 
-### SELECT
-
-The `SELECT` statement is used to query and retrieve data from your database. It allows you to fetch data from one or more tables and filter, sort, or group the results according to your requirements.
-
-Here's a simple example of a `SELECT` query:
-
-```sql
-SELECT first_name, last_name FROM employees;
+```
+INSERT INTO table_name (column1, column2,...)
+VALUES (value1, value2,...);
 ```
 
-This query retrieves the `first_name` and `last_name` columns from the `employees` table.
+For example, to insert a new row into a table named `employees` with columns `employee_id`, `first_name`, and `last_name`, we would use:
 
-### INSERT
-
-The `INSERT` statement is used to add new rows to a table. You can specify which columns the data should be inserted into, and provide the corresponding values.
-
-For example, to add a new employee record to a table, you would use the following query:
-
-```sql
-INSERT INTO employees (first_name, last_name, hire_date) VALUES ('John', 'Doe', '2022-01-01');
+```
+INSERT INTO employees (employee_id, first_name, last_name)
+VALUES (1, 'John', 'Doe');
 ```
 
-This query inserts a new row in the `employees` table with the values provided for the `first_name`, `last_name`, and `hire_date` columns.
+## UPDATE
 
-### UPDATE
+The `UPDATE` statement is used to modify existing data in a table. The basic syntax for the `UPDATE` command is:
 
-The `UPDATE` statement is used to modify existing data in your database. With this statement, you can change the values of specified columns for all rows that meet a certain condition.
-
-Here's an example of an `UPDATE` query:
-
-```sql
-UPDATE employees SET salary = salary * 1.1 WHERE last_name = 'Doe';
+```
+UPDATE table_name
+SET column1 = value1, column2 = value2,...
+WHERE condition;
 ```
 
-This query updates the `salary` column by increasing the current value by 10% for all employees with the last name 'Doe'.
+For example, to update the `first_name` of an employee with an `employee_id` of 1, we would use:
 
-### DELETE
-
-The `DELETE` statement allows you to remove rows from a table based on specified conditions.
-
-For example, if you wanted to delete all records of employees hired before 2022, you would use the following query:
-
-```sql
-DELETE FROM employees WHERE hire_date < '2022-01-01';
+```
+UPDATE employees
+SET first_name = 'Jane'
+WHERE employee_id = 1;
 ```
 
-This query deletes all rows from the `employees` table where the `hire_date` is earlier than January 1, 2022.
+Be cautious with `UPDATE` statements, as not specifying a `WHERE` condition might result in updating all rows in the table.
 
-In conclusion, DML queries are the cornerstone of any PostgreSQL DBA's toolkit. Familiarizing yourself with them is essential for managing and interacting with your database effectively.
+## DELETE
+
+The `DELETE` statement removes one or more rows from a table. The basic syntax for the `DELETE` command is:
+
+```
+DELETE FROM table_name
+WHERE condition;
+```
+
+For example, to remove an employee row with an `employee_id` of 1, we would use:
+
+```
+DELETE FROM employees
+WHERE employee_id = 1;
+```
+
+Similar to the `UPDATE` statement, not specifying a `WHERE` condition in `DELETE` might result in removing all rows from the table.
+
+## SELECT
+
+The `SELECT` statement is used to retrieve data from one or more tables. The basic syntax for the `SELECT` command is:
+
+```
+SELECT column1, column2,...
+FROM table_name
+WHERE condition;
+```
+
+For example, to retrieve the first name and last name of all employees, we would use:
+
+```
+SELECT first_name, last_name
+FROM employees;
+```
+
+To retrieve the first name and last name of employees with an `employee_id` greater than 10, we would use:
+
+```
+SELECT first_name, last_name
+FROM employees
+WHERE employee_id > 10;
+```
+
+You can also use various clauses such as `GROUP BY`, `HAVING`, `ORDER BY`, and `LIMIT` to further refine your `SELECT` queries.
+
+In summary, DML queries help you interact with the data stored in your PostgreSQL database. As you master these basic operations, you'll be able to effectively manage and modify your data according to your application's needs.

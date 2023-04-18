@@ -1,37 +1,40 @@
 # Physical Storage and File Layout
 
-### Physical Storage and File Layout
+In this section, we will delve into PostgreSQL's low-level implementation details, specifically its physical storage and file layout. Understanding these aspects will empower you with the knowledge to optimize your database, effectively allocate resources, and pinpoint potential bottlenecks or inefficiencies.
 
-PostgreSQL's data storage is managed at two main levels: databases and tables. Databases contain tables, while tables hold the actual data. Understanding the physical storage and file layout will help you optimize storage and improve performance, as well as assist you in any disaster recovery efforts. In this section, we'll discuss how PostgreSQL's data files are laid out on the file system and how the data is organized within those files.
+## Storage Model
 
-#### File System Layout
+PostgreSQL organizes information into a hierarchical structure as follows:
 
-Each PostgreSQL cluster has a unique data directory, known as `PGDATA`, which contains multiple subdirectories:
+- **Clusters**: Represents a complete PostgreSQL instance containing multiple databases managed by a single server process. A single server can manage multiple clusters, typically using different ports.
+- **Databases**: An individual database contains a set of schemas and is owned by one or more users.
+- **Schemas**: A namespace used to group tables, indexes, and other objects. Each schema is independent and can contain objects with the same names but different purposes.
+- **Tables**: Consists of rows and columns that store the actual data.
 
-- `base`: Stores the actual data files for all databases in the cluster. Each subdirectory here, identified by an OID (Object Identifier), corresponds to a specific database.
-- `global`: Contains cluster-wide information, such as the system catalog tables containing global metadata.
-- `pg_xlog` or `pg_wal` (depending on the PostgreSQL version): Stores WAL (Write-Ahead Logging) files. These files hold the transaction logs before they are replayed on the data files.
-- `pg_clog` or `pg_xact`: Contains transaction status records (commit or abort).
+## Table Storage
 
-#### Database Directories
+Tables are divided into fixed-size **blocks** (by default, 8 KB). Each block contains a set of **rows** (also called tuples), which can store one or more values. The maximum number of columns a table can have is 1664. Each row occupies a variable amount of space depending on the data it stores. To optimize storage, PostgreSQL employs techniques such as packing smaller rows into a single block and using TOAST (The Oversized-Attribute Storage Technique) tables to handle large values.
 
-Inside the `base` directory, each database has its own subdirectory named after its OID. For example, if a database has the OID `12345`, its data files will be located in the directory `base/12345`.
+## File Layout
 
-#### Table Files
+PostgreSQL stores its data in the `$PGDATA` directory, typically found under `/var/lib/postgresql/` in a Linux environment. Here's an overview of the main subdirectories:
 
-Each table in PostgreSQL has two main files associated with it:
+- **base/**: Holds the actual data files, with one subdirectory per database, identified by their OID (Object Identifier).
+  - e.g., `base/12345/`: Contains data files for database `12345`.
+- **global/**: Contains global objects such as roles and tablespaces that are shared across all databases in a cluster.
+- **pg_xlog/** or **pg_wal/** (depending on the PostgreSQL version): Stores Write-Ahead Log (WAL) files used for crash recovery and replication.
+- **pg_clog/** or **pg_xact/** (depending on the PostgreSQL version): Contains transaction status information.
 
-1. Main data file: Stores the actual data of the table in rows and pages. The file is named after the table's OID, for example, `12345`.
-2. Free Space Map (FSM) file: Tracks the free space available within the table's data file, allowing the server to optimize and reuse space. The file is named with the OID followed by `_fsm`, for example, `12345_fsm`.
+## Table Files
 
-Additionally, tables with indexes have the corresponding index files stored under the same directory. These files have the same naming conventions as the table files, but with the OID of the index.
+Inside a database's directory, you'll find files representing tables, indexes, sequences, and other objects. Naming follows the pattern `OID` with a suffix depending on the type of file:
 
-#### Data Organization
+- **OID**: Main data file for a table or index.
+- **OID_fsm**: Free Space Map (FSM) for a table or index, storing info about available space in table/index.
+- **OID_vm**: Visibility Map for a table, storing info about which rows are visible to transactions.
 
-Data in PostgreSQL's table files are structured in pages. Each table has a specific page size, typically 8KB, which can be altered during compile-time. Pages are the smallest unit of storage, and each page contains one or more rows (tuples). Rows cannot span multiple pages, so the maximum size of a row is determined by the page size.
+## TOAST Tables
 
-Each row of a table contains a tuple header and the actual data. The tuple header contains meta-information about the row (e.g., visibility, row length) and precedes the row data itself.
+For large values that can't fit into a regular table row, PostgreSQL uses TOAST tables. TOAST tables are stored alongside regular tables, but their files have an additional `_toast` in their names, e.g., `OID_toast`.
 
-### Conclusion
-
-Understanding PostgreSQL's physical storage and file layout is an essential aspect of being a PostgreSQL DBA. It allows you to better diagnose and manage your database's storage, troubleshoot performance issues, and devise disaster recovery strategies. By mastering these concepts, you're well on your way to becoming a proficient PostgreSQL administrator.
+In conclusion, understanding PostgreSQL's physical storage and file layout is essential for effective database performance tuning, resource allocation, and troubleshooting. With this knowledge, you are now better equipped to handle complex PostgreSQL tasks and optimizations. Happy database managing!

@@ -1,45 +1,51 @@
 # Transactions
 
-## Transactions
+Transactions are a fundamental concept in PostgreSQL, as well as in most other database management systems. A transaction is a sequence of one or more SQL statements that are executed as a single unit of work. Transactions help ensure that the database remains in a consistent state even when there are multiple users or operations occurring concurrently.
 
-A *transaction* is a single sequence of one or more SQL operations (queries, updates, or other data manipulations) that are executed as a single unit of work. They allow databases to remain in a consistent and predictable state even when multiple users are modifying the data concurrently.
+## Properties of Transactions
 
-In PostgreSQL, a transaction can be defined using the `BEGIN`, `COMMIT`, and `ROLLBACK` SQL statements. It's essential to understand the main concepts within transactions, such as the ACID properties, isolation levels, and concurrency issues. 
+Transactions in PostgreSQL follow the ACID properties, which are an essential aspect of database systems:
 
-### ACID Properties
+- **A**tomicity: A transaction should either be fully completed, or it should have no effect at all. If any part of a transaction fails, the entire transaction should be rolled back, and none of the changes made during the transaction should be permanent.
 
-Transactions provide ACID properties, which are essential for maintaining data consistency and integrity:
+- **C**onsistency: The database should always be in a consistent state before and after a transaction. This means that any constraints or rules defined in the database should be satisfied before a transaction begins and after it has been completed.
 
-1. **Atomicity**: A transaction is either fully completed or not executed at all. If any operation within the transaction fails, the entire transaction is aborted and rolled back.
+- **I**solation: Transactions should be isolated from each other. The effect of one transaction should not be visible to another until the transaction has been committed. This helps prevent conflicts and issues when multiple transactions are trying to modify the same data.
 
-2. **Consistency**: The database remains in a consistent state before and after each transaction. All constraints, rules, and triggers must be satisfied in every transaction's final state.
+- **D**urability: Once a transaction has been committed, its changes should be permanent. The database should maintain a log of committed transactions so that the system can recover the committed state in case of a failure or crash.
 
-3. **Isolation**: Each transaction occurs independently and does not affect other ongoing transactions. The state of the database during one transaction should not be visible to other concurrent transactions.
+## Transaction Control Statements
 
-4. **Durability**: Once a transaction is committed, the changes to the data are permanent, even in the case of system failure.
+In PostgreSQL, you can use the following transaction control statements to manage transactions:
 
-### Isolation Levels
+- `BEGIN`: Starts a new transaction.
 
-PostgreSQL offers different transaction isolation levels, which define the visibility of changes made by other concurrent transactions:
+- `COMMIT`: Ends the current transaction and makes all changes made during the transaction permanent.
 
-1. **Read Uncommitted**: The lowest level of isolation, allowing a transaction to see uncommitted changes made by other transactions. This level is not supported in PostgreSQL.
+- `ROLLBACK`: Reverts all changes made during the current transaction and ends the transaction.
 
-2. **Read Committed**: A transaction can only see changes committed before it started or those committed during its execution. This is the default isolation level in PostgreSQL.
+- `SAVEPOINT`: Creates a savepoint to which you can later roll back.
 
-3. **Repeatable Read**: A transaction sees a consistent snapshot of the database at the time the transaction begins, providing a higher level of isolation than Read Committed. 
+- `ROLLBACK TO savepoint`: Rolls back the transaction to the specified savepoint.
 
-4. **Serializable**: The highest level of isolation, ensuring that transactions will behave as if they were executed sequentially.
+- `RELEASE savepoint`: Releases a savepoint, which allows you to commit changes made since the savepoint.
 
-You can set the isolation level for a specific transaction using the `SET TRANSACTION` command, followed by the `ISOLATION LEVEL` keyword and the desired level.
+## Example Usage
 
-### Concurrency Issues
+Here's an example to illustrate the use of transactions:
 
-When running transactions concurrently, some issues may arise that can affect data consistency and integrity, such as:
+```sql
+BEGIN; -- Start a transaction
 
-- **Dirty Read**: A transaction reads data written by an uncommitted transaction.
-- **Non-repeatable Read**: A transaction reads the same data more than once, but the data is changed by another transaction during that time.
-- **Phantom Read**: A transaction reads a set of data that meets specific criteria, but another concurrent transaction adds or removes rows that meet the criteria.
+INSERT INTO employees (name, salary) VALUES ('Alice', 5000);
+INSERT INTO employees (name, salary) VALUES ('Bob', 6000);
 
-To prevent these issues, PostgreSQL uses a multi-version concurrency control (MVCC) model, ensuring that each transaction sees a consistent snapshot of the data and allowing high concurrency levels without the need for locks.
+-- Other SQL statements...
 
-By understanding transactions and their essential concepts, you can effectively manage data changes, ensuring data consistency and integrity in your PostgreSQL databases.
+COMMIT; -- Commit the transaction and make changes permanent
+
+-- In case of an issue, you can use ROLLBACK to revert changes
+ROLLBACK; -- Roll back the transaction and undo all changes
+```
+
+In conclusion, transactions are an essential feature in PostgreSQL when working with multiple users or operations that modify the database. By using transactions, you can ensure data consistency, prevent conflicts, and manage database changes effectively.

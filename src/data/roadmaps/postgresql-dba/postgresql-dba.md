@@ -7,6 +7,9 @@ briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2023'
 title: 'PostgreSQL DBA'
 description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023'
 hasTopics: true
+dimensions:
+  width: 969
+  height: 3050.89
 seo:
   title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.'

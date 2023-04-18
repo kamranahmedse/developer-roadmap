@@ -1,67 +1,55 @@
-# pgBadger
+# PgBadger
 
-## PgBadger - PostgreSQL Log Analyzer
+PgBadger is a PostgreSQL log analyzer built for speed with fully detailed reports from your PostgreSQL log file. It is a powerful open-source tool written in pure Perl language, which makes it compatible with major operating systems like macOS, Windows, and Linux. PgBadger is capable of providing valuable insights to users by parsing log files and generating HTML, CSV, or JSON reports. These features help identify any issue or bottleneck in a PostgreSQL instance.
 
-PgBadger is a powerful and easy-to-use PostgreSQL log analyzer that generates detailed reports and graphs using log data from your PostgreSQL database server. It helps database administrators (DBAs) identify performance bottlenecks, monitor queries, and optimize the overall performance of their PostgreSQL servers.
+## Key Features
 
-### Features of PgBadger
+* Fast log processing
+* Incremental log parsing
+* Real-time monitoring
+* Cross-platform support
+* Supports standard and CSV log formats
+* Customizable report format (HTML, CSV, or JSON)
+* Histograms and charts for visual data representation
 
-- **File formats:** Supports multiple log file formats such as syslog, stderr, and CSV logs.
-- **Incremental log parsing:** Can handle large log files by progressively analyzing the data, reducing the total time and memory usage.
-- **Advanced filtering options:** Allows you to filter log entries by date, time, user, database, client IP, or any query pattern.
-- **Fully customizable reports:** Offers numerous report templates, and allows you to create custom reports and charts to meet your specific analysis needs.
-- **Exportable reports:** Supports various output formats such as HTML, JSON, and CSV for easy sharing or further analysis.
-- **Multiline log entries:** Can automatically identify and handle multiline log entries and queries.
-- **Parallel log processing:** Takes advantage of multiple CPU cores to speed up log analysis.
+## Installation
 
-### Installing PgBadger
-
-You can install PgBadger using various package managers or build it from source. For Debian-based systems, you can install it with:
+To install PgBadger, you can download the latest release from [GitHub](https://github.com/darold/pgbadger) and follow the provided instructions or use package managers like `apt` for Debian/Ubuntu or `yum` for CentOS/RHEL based distributions.
 
 ```sh
+# For Debian/Ubuntu
 sudo apt-get install pgbadger
-```
 
-For RHEL/CentOS systems:
-
-```sh
+# For CentOS/RHEL
 sudo yum install pgbadger
 ```
 
-To build from source:
+## Usage
+
+To use PgBadger, point it to your PostgreSQL log file and specify an output file for the report.
 
 ```sh
-git clone https://github.com/dalibo/pgbadger.git
-cd pgbadger
-perl Makefile.PL
-make
-sudo make install
+pgbadger /path/to/postgresql.log -o report.html
 ```
 
-### Using PgBadger
-
-After installation, you can analyze your PostgreSQL logs using the following command:
+By default, PgBadger will generate an HTML report. However, you can also choose from other output formats (like CSV or JSON) using the `--format` option.
 
 ```sh
-pgbadger /path/to/postgresql.log -o output.html
+pgbadger /path/to/postgresql.log -o report.csv --format csv
 ```
 
-To analyze multiple log files:
+To incrementally analyze logs and add the results to a single report, use the `--last-parsed` and `--outfile` options.
 
 ```sh
-pgbadger /path/to/logdir/*.log -o output.html
+pgbadger /path/to/postgresql.log --last-parsed /path/to/last_parsed_ts --outfile /path/to/report.html
 ```
 
-To filter log entries by date range:
+For real-time monitoring of logs, use the `--daemon` mode with the `--syslog` or `--journalctl` options.
 
 ```sh
-pgbadger --begin='YYYY-MM-DD hh:mm:ss' --end='YYYY-MM-DD hh:mm:ss' postgresql.log -o output.html
+pgbadger --daemon --interval 60 --outfile /path/to/report.html --syslog postgresql
 ```
 
-For more options and configurations, refer to the [official PgBadger documentation](https://github.com/dalibo/pgbadger#pgbadger).
+## Conclusion
 
-**Note:** Make sure that your PostgreSQL server is configured to log essential information such as query durations, errors, connections, etc. PgBadger relies on log data to generate its reports, so accurate and detailed logging is crucial for effective analysis.
-
-### Summary
-
-In this section, we learned about PgBadger, a powerful log analyzer for PostgreSQL. By using PgBadger, DBAs can generate insightful reports and graphs to monitor and optimize the performance of their PostgreSQL servers.
+PgBadger is an incredibly useful tool for analyzing and monitoring PostgreSQL log files. Its wide range of features and compatibility with various platforms make it an invaluable asset to PostgreSQL users. By using PgBadger, you can effectively troubleshoot your PostgreSQL database issues and make data-driven decisions to optimize its performance.

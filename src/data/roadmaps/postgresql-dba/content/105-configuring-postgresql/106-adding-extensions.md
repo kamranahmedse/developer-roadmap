@@ -1,64 +1,53 @@
-# Adding Extra Extensions
+# Adding Extensions
 
-## Adding Extensions
+PostgreSQL provides various extensions to enhance its features and functionalities. Extensions are optional packages that can be loaded into your PostgreSQL database to provide additional functionality like new data types or functions. In this section, we will discuss how to add extensions in your PostgreSQL database.
 
-In PostgreSQL, extensions are packages that contain SQL objects such as functions, operators, and data types. These extensions serve to extend the capabilities of PostgreSQL and ease the development of applications. Some common extensions include PostGIS (for spatial data support), pgcrypto (for encryption support), and hstore (for key-value store support).
+## Pre-installed Extensions
 
-### Steps to Add an Extension
-
-1. **Install the Extension Package:** Before adding the extension to your PostgreSQL database, make sure the extension package is installed on your system. You can usually find these packages in your operating system's package manager.
-
-```sh
-# Example for Debian/Ubuntu-based systems
-sudo apt-get install postgresql-contrib
-```
-
-2. **Add the Extension to a Database:** Once the package is installed, connect to the database where you want to add the extension:
-
-```sh
-psql -U <username> -d <database_name>
-```
-
-Then, use the `CREATE EXTENSION` command to add the extension you want:
+PostgreSQL comes with some pre-installed extensions that can be enabled easily. To see the list of available extensions, you can run the following SQL command:
 
 ```sql
-CREATE EXTENSION IF NOT EXISTS <extension_name>;
+SELECT * FROM pg_available_extensions;
 ```
 
-For example, to add the `hstore` extension:
+This command will display a table with columns: `name`, `default_version`, `installed_version`, `comment`.
+
+## Enabling an Extension
+
+To enable an extension, you can use the `CREATE EXTENSION` command followed by the extension name. For example, to enable the `hstore` extension, which is used to enable key-value pairs data storage, you can run the following command:
 
 ```sql
-CREATE EXTENSION IF NOT EXISTS hstore;
+CREATE EXTENSION hstore;
 ```
 
-3. **Verify the Extension:** After adding the extension to your database, you can verify that it's been installed correctly by running the `SELECT` statement with `pg_available_extensions`:
+If you want to enable a specific version of the extension, you can use the `VERSION` keyword followed by the desired version:
 
 ```sql
-SELECT * FROM pg_available_extensions WHERE name = '<extension_name>';
+CREATE EXTENSION hstore VERSION '1.4';
 ```
 
-You should see the installed extension in the result.
+Remember that you might need to have the necessary privileges to create an extension. For example, you might need to be a superuser or have the `CREATEROLE` privilege.
 
-4. **Grant Usage Permissions:** Depending on your use case or the environment, you might need to grant usage permissions to specific users or roles:
+## Updating an Extension
+
+You can update an installed extension to a new version using the `ALTER EXTENSION` command. For example, to update the `hstore` extension to version '1.5', you can run the following command:
 
 ```sql
-GRANT USAGE ON SCHEMA <schema_name> TO <user_or_role>;
+ALTER EXTENSION hstore UPDATE TO '1.5';
 ```
 
-### Updating an Extension
+## Install Custom Extensions
 
-Extensions usually evolve over time, and you might need to update them to a newer version. To update an extension, use the `ALTER EXTENSION` command:
+You can also add custom extensions to your PostgreSQL instance. You can generally find the source code and installation instructions for custom extensions on GitHub or other open-source platforms. Custom extensions may require additional steps such as compiling the source code or updating `pg_config` during the installation process.
+
+## Removing an Extension
+
+If you no longer need an extension, you can remove it using the `DROP EXTENSION` command. For example, to remove the `hstore` extension, you can run the following command:
 
 ```sql
-ALTER EXTENSION <extension_name> UPDATE TO '<new_version>';
+DROP EXTENSION hstore;
 ```
 
-### Removing an Extension
+_Remember that removing an extension might lead to loss of data or functionality that was dependent on the extension._
 
-To remove an installed extension from your PostgreSQL database, use the `DROP EXTENSION` command:
-
-```sql
-DROP EXTENSION IF EXISTS <extension_name> [CASCADE];
-```
-
-_Adding extensions in PostgreSQL allows you to benefit from numerous additional functionalities, creating a more powerful and versatile database system. However, be cautious while installing extensions, as some of them might have security or stability implications._
+In this section, we covered how to add, enable, update, and remove PostgreSQL extensions. Using extensions can be a powerful way to add new features to your PostgreSQL database and customize your database's functionality according to your needs.

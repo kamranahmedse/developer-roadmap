@@ -12,7 +12,10 @@
 p > code,
 a > code,
 strong > code,
-em > code {
+em > code,
+h1 > code,
+h2 > code,
+h3 > code {
   background: #ebebeb !important;
   color: currentColor !important;
   font-size: 14px;

@@ -1,7 +1,8 @@
 # Important Note
 
-This roadmap is designed to help you learn the basics of PostgreSQL database administration. It is not intended to be a comprehensive guide to PostgreSQL administration, but rather a starting point for your journey. It is recommended that you supplement this roadmap with additional resources, hands-on practice, and community engagement to best enhance your understanding and skills in PostgreSQL administration.
+If you are just a beginner trying to learn PostgreSQL, don't get discouraged by looking at the content of this roadmap. It is designed for people who are already familiar with PostgreSQL. Just learn some basics of PostgreSQL and then come back to this roadmap when you are ready to skill up and learn more advanced topics. 
 
-This roadmap note is designed to guide you through these crucial topics, helping you gain competency in PostgreSQL database administration.
+If you are a beginner, you can start with the following resources:
 
-Keep in mind that this guide serves as an outline, and it is recommended to supplement it with additional resources, hands-on practice, and community engagement to best enhance your understanding and skills in PostgreSQL administration. Remember that learning is an ongoing process, and be prepared to adapt to new developments and updates within the PostgreSQL ecosystem.
+- [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
+- [PostgreSQL Exercises](https://pgexercises.com/)

@@ -1,61 +1,77 @@
 # Joining Tables
 
-## Joining Tables
+Joining tables is a fundamental operation in the world of databases. It allows you to combine information from multiple tables based on common columns. PostgreSQL provides various types of joins, such as Inner Join, Left Join, Right Join, and Full Outer Join. In this section, we will touch upon these types of joins and how you can use them in your DML queries.
 
-Joining tables is a fundamental concept in SQL databases, as it allows you to combine data from two or more tables based on a related column. In PostgreSQL, there are several types of joins that can be used to retrieve data from multiple tables, such as Inner Join, Left Join, Right Join, Full Outer Join, and Cross Join.
+## Inner Join
 
-### Inner Join
+An Inner Join returns only the rows with matching values in both tables. The basic syntax for an Inner Join is:
 
-An inner join returns rows from both tables that satisfy the given condition. It combines the columns of both tables where the specified condition is met. The syntax for inner join is:
-
-```sql
+```
 SELECT columns
 FROM table1
-JOIN table2
-ON table1.column = table2.column;
+JOIN table2 ON table1.column = table2.column;
 ```
 
-### Left Join (Left Outer Join)
-
-A left join returns all rows from the left table (table1) and the matched rows from the right table (table2). If no match is found, NULL values are returned for the right table's columns. The syntax for left join is:
+Example:
 
 ```sql
-SELECT columns
-FROM table1
-LEFT JOIN table2
-ON table1.column = table2.column;
+SELECT employees.id, employees.name, departments.name as department_name
+FROM employees
+JOIN departments ON employees.department_id = departments.id;
 ```
 
-### Right Join (Right Outer Join)
+## Left Join (Left Outer Join)
 
-A right join returns all rows from the right table (table2) and the matched rows from the left table (table1). If no match is found, NULL values are returned for the left table's columns. The syntax for right join is:
+A Left Join returns all the rows from the left table and the matching rows from the right table. If no match is found, NULL values are returned for columns from the right table. The syntax for a Left Join is:
+
+```
+SELECT columns
+FROM table1
+LEFT JOIN table2 ON table1.column = table2.column;
+```
+
+Example:
 
 ```sql
-SELECT columns
-FROM table1
-RIGHT JOIN table2
-ON table1.column = table2.column;
+SELECT employees.id, employees.name, departments.name as department_name
+FROM employees
+LEFT JOIN departments ON employees.department_id = departments.id;
 ```
 
-### Full Outer Join
+## Right Join (Right Outer Join)
 
-A full outer join returns all rows from both tables, with NULL values in columns where there's no match between the rows. The syntax for full outer join is:
+A Right Join returns all the rows from the right table and the matching rows from the left table. If no match is found, NULL values are returned for columns from the left table. The syntax for a Right Join is:
+
+```
+SELECT columns
+FROM table1
+RIGHT JOIN table2 ON table1.column = table2.column;
+```
+
+Example:
 
 ```sql
-SELECT columns
-FROM table1
-FULL OUTER JOIN table2
-ON table1.column = table2.column;
+SELECT employees.id, employees.name, departments.name as department_name
+FROM employees
+RIGHT JOIN departments ON employees.department_id = departments.id;
 ```
 
-### Cross Join
+## Full Outer Join
 
-A cross join returns the Cartesian product of both tables, which means it combines each row from the first table with every row of the second table. This type of join doesn't require a condition as it returns all possible combinations. The syntax for cross join is:
+A Full Outer Join returns all the rows from both tables when there is a match in either left or right table. If no match is found in one table, NULL values are returned for its columns. The syntax for a Full Outer Join is:
+
+```
+SELECT columns
+FROM table1
+FULL OUTER JOIN table2 ON table1.column = table2.column;
+```
+
+Example:
 
 ```sql
-SELECT columns
-FROM table1
-CROSS JOIN table2;
+SELECT employees.id, employees.name, departments.name as department_name
+FROM employees
+FULL OUTER JOIN departments ON employees.department_id = departments.id;
 ```
 
-In conclusion, joining tables is an essential technique to combine data from different tables based on common columns. With various types of joins available in PostgreSQL, you can utilize them to get the desired information efficiently.
+By understanding these various types of joins and their syntax, you can write complex DML queries in PostgreSQL to combine and retrieve information from multiple tables. Remember to always use the appropriate type of join based on your specific requirements.

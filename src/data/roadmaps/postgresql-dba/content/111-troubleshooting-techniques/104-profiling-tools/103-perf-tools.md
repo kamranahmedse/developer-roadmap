@@ -1,38 +1,30 @@
-# perf-tools
+# Profiling with Perf Tools
 
-## Perf Tools
+_Perf tools_ is a powerful and versatile toolset that can help you in profiling and analyzing the performance of your PostgreSQL instance. It provides various components that enable you to monitor the system-level performance, trace and analyze the control flow between different components, and gather performance data about specific parts of your PostgreSQL instance.
 
-Perf Tools is a powerful performance analysis tool provided by the Linux kernel. It is a collection of utilities that can help you analyze and report system-level performance data. These tools can be used to monitor and profile PostgreSQL database performance by tracking hardware events, kernel functions, or even user-space functions.
+In this section, we will briefly introduce the concept of perf tools, and discuss some of its features and components that can be helpful in profiling PostgreSQL.
 
-### Features of Perf Tools
+## What is Perf Tools?
 
-- **Event-based sampling**: Perf Tools can collect data based on various events, such as CPU cycles, cache hits and misses, branch instructions, etc. This information can be useful to identify performance bottlenecks.
+Perf tools is a suite of performance analysis tools that comes as part of the Linux kernel. It enables you to monitor various performance-related events happening in your system, such as CPU cycles, instructions executed, cache misses, and other hardware-related metrics. These tools can be helpful in understanding the bottlenecks and performance issues in your PostgreSQL instance and can be used to discover areas of improvement.
 
-- **Call graph profiling**: With Perf Tools, you can get detailed information about the call chain of a function, which can help identify problematic functions or code paths.
+In essence, perf tools provides two main components:
 
-- **Hardware and software event profiling**: Perf Tools supports profiling based on both hardware (CPU performance counters) and software events (kernel functions, user space functions).
+- **perf_events:** A kernel subsystem that provides performance monitoring by exposing CPU hardware counters and other low-level events.
+- **perf command-line tool:** A command-line interface that allows you to interact with perf_events to perform various profiling and tracing tasks.
 
-### Using Perf Tools with PostgreSQL
+## Using Perf Tools in Profiling PostgreSQL
 
-To analyze PostgreSQL performance using Perf Tools, you can follow these steps:
+Here are some of the key features of perf tools that can be used to profile and analyze the performance of your PostgreSQL instance:
 
-1. **Install Perf Tools**: Depending on your Linux distribution, you might need to install the `perf` package. On Debian-based systems, you can install it using the following command:
+- **Sampling and Counting:** Perf tools can be used to capture the performance data of your PostgreSQL processes by sampling or counting the events occurring during their execution. You can use the `perf record` command to collect samples, and `perf report` or `perf annotate` to analyze the recorded data.
 
-   ```
-   sudo apt-get install linux-tools-common
-   ```
+- **Time-based Profiling:** Perf tools can be used to perform time-based profiling, which involves analyzing the performance data over a fixed period. You can use the `perf top` command to get a live view of the most active functions in the PostgreSQL process.
 
-2. **Collect data with `perf record`**: Use the `perf record` command to collect performance data. For example, you can profile the PostgreSQL process by running:
+- **Call Graphs and Flame Graphs:** Perf tools can be used to generate call graphs or flame graphs, which provide a visual representation of the call stack and allow you to understand the relationship between different functions. You can create call graphs using the `perf callgraph` command, or use external tools like [FlameGraph](https://github.com/brendangregg/FlameGraph) to generate flame graphs from the perf data.
 
-   ```
-   sudo perf record -p <PID> -g -F 1000
-   ```
-   Replace `<PID>` with the process ID of your PostgreSQL instance. This command will sample data at a frequency of 1000 Hz and include call-graph information.
+- **Static Tracing:** Perf tools can be used to trace specific events or code paths in your PostgreSQL system, allowing you to better understand the inner workings of the system. You can use the `perf trace` command to trace specific events, or use the `perf probe` command to add custom trace points.
 
-3. **Analyze data with `perf report`**: After collecting performance data, use the `perf report` command to generate a report. This report will display the functions with the highest overhead, giving you an idea of where performance issues might be occurring.
+- **Dynamic Tracing:** Perf tools also supports dynamic tracing, which allows you to trace and analyze running processes without modifying their code. This can be particularly useful when profiling large or complex systems, such as PostgreSQL. You can use the `perf dynamic-trace` command to enable dynamic tracing on your PostgreSQL processes.
 
-You can find more detailed information and advanced usage options in the [official Perf documentation](https://perf.wiki.kernel.org/).
-
-### Conclusion
-
-Perf Tools is an invaluable tool for PostgreSQL DBAs to monitor and identify performance bottlenecks at the system level. By using Perf Tools, you can gain insights into the performance of both hardware and software, and optimize your PostgreSQL installation accordingly.
+In conclusion, perf tools is a powerful performance profiling tool available in Linux-based systems that can help you analyze the performance of your PostgreSQL instance. By understanding the key features and components of perf tools, you can make better decisions about improving the performance and efficiency of your PostgreSQL system.

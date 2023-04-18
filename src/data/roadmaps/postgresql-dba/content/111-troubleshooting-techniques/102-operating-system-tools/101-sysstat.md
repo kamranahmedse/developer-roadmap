@@ -1,23 +1,36 @@
-# sysstat
+# Sysstat
 
-## Sysstat
+[Sysstat](https://github.com/sysstat/sysstat) is a collection of performance monitoring tools for Linux. It collects various system statistics, such as CPU usage, memory usage, disk activity, network traffic, and more. System administrators can use these tools to monitor the performance of their servers and identify potential bottlenecks and areas for improvement.
 
-Sysstat is a collection of performance monitoring tools for Linux operating systems that are essential for any PostgreSQL DBA. These tools provide valuable insights into various system resources, including CPU, memory, I/O, and network usage. Sysstat's monitoring utilities not only help in diagnosing performance bottlenecks but also assist in capacity planning for a PostgreSQL server.
+## Key Features
 
-Some key tools within the Sysstat package include:
+* Collects various types of system data for performance analysis
+* Provides tools to view historical data, allowing for trend analysis and capacity planning
+* Customizable data collection intervals and output format
+* Support for scripting and integration with other tools
 
-- **iostat**: Provides detailed statistics on the I/O operations performed by storage devices, helping to identify any storage-related performance issues.
-- **mpstat**: Reports processor usage information for each available processor, core, or socket. This tool is useful in identifying CPU bottlenecks.
-- **pidstat**: Monitors the performance of individual tasks (processes) running on the system. It provides resource usage information (CPU, memory, etc.) for the specified processes, aiding in the diagnosis of issues with specific tasks.
-- **sar**: Collects, reports, and stores system activity data, enabling long-term trend analysis and historic performance reviews.
+## Main Components
 
-As a PostgreSQL DBA, you should familiarize yourself with these Sysstat tools and use them regularly to monitor and optimize the performance of your PostgreSQL servers.
+Sysstat includes several command-line utilities that collect and display system performance data. Some of the most important tools are:
 
-To install Sysstat on your operating system, use the appropriate package manager:
+* **sar**: System Activity Reporter, the central utility that collects, stores, and displays system statistics. It can be used in real-time or to analyze historical data.
+* **iostat**: Provides detailed statistics about disk I/O (input/output) for individual devices, partitions, or NFS mounts.
+* **mpstat**: Reports processor-related statistics, useful to monitor CPU usage by different processors or cores in a system.
+* **pidstat**: Reports statistics for Linux tasks (processes), including CPU, memory, and I/O usage.
+* **vmstat**: Displays information about system memory, processes, interrupts, and CPU activity.
 
-- Debian-based systems: `sudo apt-get install sysstat`
-- RHEL-based systems: `sudo yum install sysstat` or `sudo dnf install sysstat`
+## Using Sysstat with PostgreSQL
 
-Once installed, the Sysstat tools will be available for use in your terminal.
+Monitoring the performance of a PostgreSQL server is essential for optimizing its performance and ensuring its reliability. Sysstat tools can help you identify server resource usage, spot potential issues, and fine-tune your configuration.
 
-Remember that proactive monitoring of system resources via Sysstat can significantly improve the performance and reliability of your PostgreSQL servers. Regularly reviewing the data provided by these tools will help you spot trends, identify potential bottlenecks, and make informed decisions about resource allocation and system optimizations.
+For example, you can use _iostat_ to monitor the disk activity of your PostgreSQL data directory, which can help you identify slow storage devices or contention from other workloads.
+
+Using _mpstat_ and _pidstat_ can help you identify CPU-bound queries or contention between your PostgreSQL server and other processes running on the same system.
+
+And _vmstat_ can help you spot issues with memory usage, such as excessive swapping or memory pressure on the host system.
+
+## Further Reading
+
+* [Sysstat GitHub repository](https://github.com/sysstat/sysstat)
+* [Sysstat documentation](https://sysstat.readthedocs.io/en/latest/)
+* [Monitoring Linux performance with sysstat](https://www.redhat.com/sysadmin/linux-performance-sysstat)

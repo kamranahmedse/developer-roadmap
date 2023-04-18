@@ -1,75 +1,89 @@
-# PL/pgSQL
+# PL/pgSQL - Procedural Language for PostgreSQL
 
-## PL/pgSQL
+`PL/pgSQL` is a procedural language for the PostgreSQL database system that enables you to create stored procedures and functions using conditionals, loops, and other control structures, similar to a traditional programming language.
 
-PL/pgSQL is a procedural language for PostgreSQL that allows you to write complex functions, stored procedures, and triggers. It combines the flexibility of SQL commands with the procedural capabilities of traditional programming languages. This language helps you to take full control of your database by adding logic and conditions to your queries, resulting in better overall management and a more efficient use of resources.
+## Why PL/pgSQL?
 
-### Advantages of PL/pgSQL
+Using PL/pgSQL, you can perform complex operations on the server-side, reducing the need to transfer data between the server and client. This can significantly improve performance, and it enables you to encapsulate and modularize your logic within the database.
 
-1. **Performance**: PL/pgSQL functions are precompiled, which results in faster execution as compared to simple SQL commands.
-2. **Reusability**: You can create and reuse functions in other queries, reducing the duplication of code and simplifying your application logic.
-3. **Transaction Control**: PL/pgSQL allows you to control transactions, making it easier to handle complex data manipulation tasks.
-4. **Error Handling**: PL/pgSQL has error handling capabilities, such as `RAISE` and `EXCEPTION`, that provide better control in managing exceptions and errors.
+## Language Features
 
-### Creating a PL/pgSQL Function
+Here are some of the key features of PL/pgSQL:
 
-To create a PL/pgSQL function, use the `CREATE FUNCTION` statement with the `LANGUAGE plpgsql` option. PL/pgSQL functions follow the same structure: declaration, definition, and execution.
+* Easy to learn for those familiar with other procedural languages, such as PL/SQL (Oracle) or T-SQL (Microsoft SQL Server)
+* Provides standard programming constructs like variables, loops, conditionals, and exception handling
+* Supports the use of cursors for traversing query results
+* Can call other stored procedures and functions
+* Enables returning single values or result-sets as output
+* Highly extensible and supports custom user-defined data types
+* Offers transaction control within the code
 
-Here's an example of a simple PL/pgSQL function that calculates a user's age:
+## Creating Functions in PL/pgSQL 
+
+To create a new function, you use the `CREATE FUNCTION` statement. Here's a simple example of a PL/pgSQL function:
 
 ```sql
-CREATE FUNCTION calculate_age(birth_date DATE)
-  RETURNS INTEGER
-  LANGUAGE plpgsql
-AS $$
+CREATE FUNCTION add_numbers(integer, integer)
+RETURNS integer AS $$
 DECLARE
-  age INTEGER;
+  sum integer;
 BEGIN
-  age := EXTRACT(YEAR FROM AGE(NOW(), birth_date));
-  RETURN age;
+  sum := $1 + $2;
+  RETURN sum;
 END;
-$$;
+$$ LANGUAGE plpgsql;
 ```
 
-To call this function, use the SELECT statement:
+This function takes two integers as input parameters and returns their sum.
+
+## Using Functions inQueries
+
+You can use functions within queries like any other PostgreSQL function:
 
 ```sql
-SELECT calculate_age('1990-01-01');
+SELECT add_numbers(5, 10);
 ```
 
-### Control Structures
+This query would return `15`.
 
-PL/pgSQL supports various control structures such as loops, conditional statements, and exception handling. Here are some examples:
+## Error Handling and Exception Catches
 
-- **IF-THEN-ELSE**:
-
-```sql
-IF condition THEN
-  -- code to execute if condition is true
-ELSIF condition2 THEN
-  -- code to execute if condition2 is true
-ELSE
-  -- code to execute if all conditions are false
-END IF;
-```
-
-- **FOR LOOP**:
+PL/pgSQL supports error handling through the use of `EXCEPTION` blocks. Here's an example of a function that handles division by zero:
 
 ```sql
-FOR counter IN <start>..<end> BY <step> LOOP
-  -- code to be executed for each iteration
-END LOOP;
-```
-
-- **Exception Handling**:
-
-```sql
+CREATE FUNCTION safe_divide(numerator integer, denominator integer)
+RETURNS integer AS $$
+DECLARE
+  result integer;
 BEGIN
-  -- code to execute
-EXCEPTION
-  WHEN exception_type THEN
-    -- code to handle the exception
+  result := numerator / denominator;
+  RETURN result;
+EXCEPTION WHEN division_by_zero THEN
+  RAISE WARNING 'Division by zero occurred. Returning NULL';
+  RETURN NULL;
 END;
+$$ LANGUAGE plpgsql;
 ```
 
-By integrating PL/pgSQL into your PostgreSQL DBA skills, you can optimize the performance, security, and maintenance of your databases. As a result, you gain more control over complex data manipulation tasks, reduce errors, and improve the overall efficiency of your applications.
+## Triggers and PL/pgSQL
+
+You can also create triggers using PL/pgSQL. Triggers are user-defined functions that are invoked automatically when an event such as insert, update or delete occurs.
+
+Here's an example of a trigger function that logs the change of user's email address:
+
+```sql
+CREATE FUNCTION log_email_change()
+RETURNS trigger AS $$
+BEGIN
+  IF NEW.email <> OLD.email THEN
+    INSERT INTO user_email_changes (user_id, old_email, new_email)
+    VALUES (OLD.user_id, OLD.email, NEW.email);
+  END IF;
+  RETURN NEW;
+END;
+$$ LANGUAGE plpgsql;
+```
+
+## Conclusion
+
+PL/pgSQL is a powerful and versatile procedural language that brings traditional programming constructs to the PostgreSQL database. It enables you to perform complex operations on the server-side and is particularly useful for creating stored procedures, functions, and triggers.

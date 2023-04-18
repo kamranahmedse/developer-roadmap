@@ -1,49 +1,43 @@
 # Package Managers
 
-## Package Managers
+Package managers are essential tools that help you install, update, and manage software packages on your system. They keep track of dependencies, handle configuration files and ensure that the installation process is seamless for the end-user.
 
-Package managers are essential tools in the software world that simplify the process of installing, upgrading, configuring, and removing software packages in a consistent manner. In the context of our PostgreSQL DBA guide, specifically in the "installation and setup" topic, package managers can be used to quickly and easily install and manage PostgreSQL on different operating systems.
+In the context of PostgreSQL installation, different operating systems have different package managers.
 
-There are various package managers available depending on the type of operating system you are using. Here, we provide an overview of some widely used package managers and their corresponding operating systems:
+## APT (Debian/Ubuntu)
 
-### APT (Advanced Package Tool) - Debian-based systems
+For Debian-based systems like Ubuntu, the APT (Advanced Package Tool) package manager can be used to install and manage software packages. The APT ecosystem consists of a set of tools and libraries, such as `apt-get`, `apt-cache`, and `dpkg`. To install PostgreSQL using APT, first update the package list, and then install the `postgresql` package:
 
-APT is the default package manager for Debian-based systems like Ubuntu, Debian, and Linux Mint. It provides a simple way to install, remove, and upgrade software packages using commands like `apt-get` and `apt-cache`.
-
-Example command to install PostgreSQL on an APT-based system:
-
-```
+```bash
+sudo apt-get update
 sudo apt-get install postgresql
 ```
 
-### YUM (Yellowdog Updater Modified) - Red Hat-based systems
+## YUM (Fedora/CentOS/RHEL)
 
-YUM is the default package manager for Red Hat-based systems like Fedora, CentOS, and RHEL (Red Hat Enterprise Linux). Yum is built on top of RPM (Red Hat Package Manager), and provides advanced functionalities for managing package dependencies, repositories, and updates.
+For Fedora and its derivatives such as CentOS and RHEL, the YUM (Yellowdog Updater, Modified) package manager is widely used. YUM makes it easy to search, install, and update packages. To install PostgreSQL using YUM, first add the PostgreSQL repository, and then install the package:
 
-Example command to install PostgreSQL on a YUM-based system:
-
-```
-sudo yum install postgresql-server
-```
-
-### DNF (Dandified YUM) - Modern Red Hat-based systems
-
-DNF is the next-generation package manager for Fedora and other modern Red Hat-based systems that have replaced Yum. DNF aims to improve performance, simplify the codebase, and provide better package management features.
-
-Example command to install PostgreSQL on a DNF-based system:
-
-```
-sudo dnf install postgresql-server
+```bash
+sudo yum install https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm
+sudo yum install postgresql
 ```
 
-### Homebrew - macOS
+## Zypper (openSUSE)
 
-Homebrew is not a default package manager for macOS, but is widely used as an alternative to easily install and manage software packages on macOS. Homebrew has a wide range of packages available, including PostgreSQL.
+Zypper is the package manager for openSUSE and other SUSE-based distributions. It is similar to both APT and YUM, providing a simple and convenient way of managing software packages. To install PostgreSQL using Zypper, update the repository list, and then install the `postgresql` package:
 
-Example command to install PostgreSQL using Homebrew:
-
+```bash
+sudo zypper refresh
+sudo zypper install postgresql
 ```
+
+## Homebrew (macOS)
+
+Homebrew is a popular package manager for macOS, allowing users to install software on their Macs not available on the Apple App Store. To install PostgreSQL using Homebrew, first make sure you have Homebrew installed, and then install the `postgresql` package:
+
+```bash
+brew update
 brew install postgresql
 ```
 
-As you continue with the PostgreSQL DBA guide, remember to choose the appropriate package manager for your operating system to ensure a smooth installation and setup experience. If you are unsure about any steps or commands, consult the official documentation specific to your package manager for help.
+These examples demonstrate how package managers make it easy to install PostgreSQL on various systems. In general, package managers help simplify the installation and management of software, including keeping packages up-to-date and handling dependencies, making them an essential part of a successful PostgreSQL setup.

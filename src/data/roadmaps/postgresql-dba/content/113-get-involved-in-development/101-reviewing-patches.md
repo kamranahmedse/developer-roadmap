@@ -1,35 +1,26 @@
 # Reviewing Patches
 
-## Reviewing Patches
-
-One of the most valuable ways to contribute to PostgreSQL development is by reviewing patches submitted by other developers. Reviewing patches involves going through the submitted code changes, understanding the proposed functionality or bug fix, and ensuring that the patch meets the high-quality standards of the PostgreSQL project.
+One of the most valuable contributions to PostgreSQL is reviewing and testing patches submitted by other developers. This process ensures that every proposed change undergoes quality control, helps new contributors get involved and learn about PostgreSQL, and maintains the overall stability and reliability of the project.
 
 ### Why is reviewing patches important?
 
-- It helps to **maintain the quality** of the PostgreSQL codebase, as multiple developers scrutinizing the changes increase the chances of finding bugs or issues before the code is merged.
-- It provides **feedback** to the patch author, which helps them improve their patch as well as learn and grow as a developer.
-- It **reduces the workload** of the PostgreSQL committers, by catching issues before they reach the final stages of code review, ensuring that the code ultimately committed to the repository is of top quality.
+- Improves code quality by identifying bugs, security issues, and performance problems
+- Helps maintain consistency and adherence to project standards and best practices
+- Provides valuable feedback for developers working on new features and enhancements
+- Helps new contributors learn about PostgreSQL internals and progressively grow their expertise
 
-### How to Review Patches
+### How can I participate in reviewing patches?
 
-1. **Get familiar** with the PostgreSQL project: To review patches effectively, you need a strong understanding of PostgreSQL's codebase, coding style, and development process. Spend time studying the source code, documentation, mailing lists, and any other resources related to PostgreSQL development.
+- Subscribe to the [pgsql-hackers mailing list](https://www.postgresql.org/list/pgsql-hackers/) where patch discussions and reviews take place.
+- Browse the [commitfest schedule](https://commitfest.postgresql.org/) to stay informed about upcoming events and deadlines.
+- Choose a patch from the commitfest that interests you or that you feel confident to review.
+- Analyze the patch to ensure:
+   - Correctness: Does the patch work as intended and solve the problem it addresses?
+   - Performance: Does the patch avoid introducing performance regressions or trade-offs?
+   - Code quality: Is the code clean, modular, and maintainable? Does it adhere to PostgreSQL coding conventions?
+   - Documentation: Are the changes properly documented, and do they provide the necessary context for other developers?
+   - Test coverage: Are there appropriate tests covering the new code or changes?
+- Provide feedback on the patch, either by replying to the relevant mailing list thread or by commenting directly on the patch submission in the commitfest app. Be constructive and specific in your comments, and offer suggestions for improvement when possible.
+- Follow up on any discussion around your review and participate in ongoing improvements and iterations of the patch.
 
-2. **Choose and apply patches to review**: Patches are usually submitted via the PostgreSQL mailing lists or the project's commitfest application. Choose a patch you are interested in or feel comfortable reviewing, and apply it to a local copy of the PostgreSQL source code.
-
-3. **Analyze the patch**: Carefully go through the changes in the patch, understand the problem it is trying to solve, and how it intends to address the issue.
-
-4. **Check for code quality**: Ensure that the patch meets the coding standards of the PostgreSQL project. Check for coding style, proper use of comments, and appropriate error handling. Also, verify that the patch doesn't introduce new bugs or security vulnerabilities.
-
-5. **Check for performance impact**: Analyze the performance impact of the patch, considering both the best-case and the worst-case scenarios. Make sure it doesn't cause any significant performance regressions.
-
-6. **Verify tests and documentation**: Ensure that the patch includes appropriate tests, and that existing tests pass with the changes applied. Additionally, check if the patch includes relevant updates to the documentation.
-
-7. **Provide feedback**: After reviewing the patch, provide constructive feedback to the patch author. Report any issues found, suggest improvements, and elaborate on the aspects you liked about the patch. Feedback can be provided via the mailing list or the commitfest application.
-
-### Tips for Reviewing Patches
-
-- Be **respectful and constructive** in your feedback. Remember that you are helping a fellow developer and contributing to the PostgreSQL community.
-- Keep your feedback **focused on the code**, rather than the person who submitted the patch.
-- If you are unsure about any aspect of the patch, feel free to **ask questions** or seek guidance from more experienced PostgreSQL developers.
-
-By reviewing patches, you are not only helping to improve the PostgreSQL project but also growing your own knowledge and skills as a developer. Your efforts will be greatly appreciated by the PostgreSQL community, and you'll play a vital role in the ongoing success and growth of this widely-used open-source database system.
+Remember, reviewing patches is a collaborative process that relies on the input of many individuals. Your contributions are essential in maintaining the high quality and stability of the PostgreSQL project.

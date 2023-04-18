@@ -1,50 +1,57 @@
-# NULL
+# The Relational Model: Null Values
 
-### Null Values in PostgreSQL
+One of the important concepts in the relational model is the use of `NULL` values. `NULL` is a special marker used to indicate the absence of data, meaning that the field has no value assigned, or the value is simply unknown. It is important to note that `NULL` is not the same as an empty string or a zero value, it stands for the absence of any data.
 
-In the relational model, `null` is a special marker that signifies the absence of a value for a specific attribute. In other words, it represents the "unknown" or "undefined" state of a particular column in a relational database. This chapter will discuss the key aspects and implications of using null values in PostgreSQL.
+## Understanding NULL in PostgreSQL
 
-#### Why Null is important?
+In PostgreSQL, `NULL` plays a crucial role when dealing with missing or optional data. Let's explore some key points to understand how `NULL` values work in PostgreSQL:
 
-Often, in real-world databases, there might be situations where we do not have all the necessary information to complete a record. For instance, when a new customer registers for an online shopping platform, they might provide their name and email, but leave the optional phone number field blank. In such cases, PostgreSQL uses null to store such empty fields.
+## Representing Unknown or Missing Data
 
-#### Handling Null in PostgreSQL
+Consider the scenario where you have a table named `employees`, with columns like `name`, `email`, and `birthdate`. It's possible that some employees don't provide their birthdate or email address. In such cases, you can use `NULL` to indicate that the data is not available or unknown, like this:
 
-It is important to understand how to work with null values in PostgreSQL since they have their own unique set of rules, especially when it comes to querying data. Here are some important points to consider while dealing with null values:
+```sql
+INSERT INTO employees (name, email, birthdate) VALUES ('John Doe', NULL, '1990-01-01');
+```
 
-1. *Comparison Operators*: Comparing null values can be tricky. Regular comparison operators, such as '=' or '<>', will return null when used with a null value. To specifically check for null, use the `IS NULL` or `IS NOT NULL` condition.
+## NULL in Constraints and Unique Values
 
-   ```sql
-   SELECT * FROM customers WHERE phone_number IS NULL;
-   ```
+While creating a table, you can set constraints like `NOT NULL`, which ensures that a specific column must hold a value and cannot be left empty. If you try to insert a row with `NULL` in a `NOT NULL` column, PostgreSQL will raise an error. On the other hand, when using unique constraints, multiple `NULL` values are considered distinct, meaning you can have more than one `NULL` value even in a column with a unique constraint.
 
-2. *Aggregate Functions*: Most aggregate functions like `COUNT()`, `AVG()`, `SUM()` etc., ignore null values when applied to a set of records.
+## Comparing NULL Values
 
-   ```sql
-   SELECT AVG(salary) FROM employees WHERE department = 'HR';
-   ```
-   This query will return the average salary of non-null records in the HR department.
+When comparing `NULL` values, you cannot use the common comparison operators like `=`, `<>`, `<`, `>`, or `BETWEEN`. Instead, you should use the `IS NULL` and `IS NOT NULL` operators to check for the presence or absence of `NULL` values. The '=' operator will always return `NULL` when compared to any value, including another null value.
 
-3. *Null in Joins*: When using joins, records with null values in the join column will be ignored, unless you are using an outer join.
+Example:
 
-4. *Inserting Null values*: To insert a null value for a column while adding a new record to the table, use the `DEFAULT` keyword or simply leave the field value empty.
+```sql
+-- Find all employees without an email address
+SELECT * FROM employees WHERE email IS NULL;
 
-   ```sql
-   INSERT INTO customers (name, email, phone_number) VALUES ('John Doe', 'john@example.com', DEFAULT);
-   ```
+-- Find all employees with a birthdate assigned
+SELECT * FROM employees WHERE birthdate IS NOT NULL;
+```
 
-5. *Updating records with Null*: You can set a column value to null using an UPDATE query.
+## NULL in Aggregate Functions
 
-   ```sql
-   UPDATE customers SET phone_number = NULL WHERE email = 'john@example.com';
-   ```
+When dealing with aggregate functions like `SUM`, `AVG`, `COUNT`, etc., PostgreSQL ignores `NULL` values and only considers the non-null data.
 
-6. *Coalesce function*: To handle null values and provide a default value in case of null, you can use the `COALESCE()` function. It accepts a list of arguments and returns the first non-null value.
+Example:
 
-   ```sql
-   SELECT COALESCE(phone_number, 'N/A') as phone_number FROM customers;
-   ```
+```sql
+-- Calculate the average birth year of employees without including NULL values
+SELECT AVG(EXTRACT(YEAR FROM birthdate)) FROM employees;
+```
 
-#### Conclusion
+## Coalescing NULL values
 
-Understanding the concept of null values in PostgreSQL is essential as a DBA because they are commonly encountered while working with real-world data. Handling nulls correctly ensures accurate query results and maintains data integrity within the database. With this foundational knowledge on nulls, you now have a better grasp on its implications and can handle them more effectively in PostgreSQL.
+Sometimes, you may want to replace `NULL` values with default or placeholder values. PostgreSQL provides the `COALESCE` function, which allows you to do that easily.
+
+Example:
+
+```sql
+-- Replace NULL email addresses with 'N/A'
+SELECT name, COALESCE(email, 'N/A') as email, birthdate FROM employees;
+```
+
+In conclusion, `NULL` values play a crucial role in PostgreSQL and the relational model, as they allow you to represent missing or unknown data in a consistent way. Remember to handle `NULL` values appropriately with constraints, comparisons, and other operations to ensure accurate results and maintain data integrity.

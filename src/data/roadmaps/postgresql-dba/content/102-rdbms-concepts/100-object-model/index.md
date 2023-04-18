@@ -1,35 +1,67 @@
-# Object Model
+# Overview
 
-## Object Model in PostgreSQL
+PostgreSQL is an object-relational database management system (ORDBMS). That means it combines features of both relational (RDBMS) and object-oriented databases (OODBMS). The object model in PostgreSQL provides features like user-defined data types, inheritance, and polymorphism, which enhances its capabilities beyond a typical SQL-based RDBMS.
 
-In the context of the PostgreSQL DBA guide, the Object Model is an essential concept to grasp for managing and effectively utilizing the RDBMS. PostgreSQL, like other RDBMS, is built on the principles of the Object-Relational model, which basically means it has efficient mechanisms for managing and organizing database objects, such as tables, indexes, and procedures.
+## User-Defined Data Types
 
-### Key Database Objects
+One of the core features of the object model in PostgreSQL is the ability to create user-defined data types. User-defined data types allow users to extend the base functionality and use PostgreSQL to store complex and custom data structures. 
 
-PostgreSQL's object model includes several key database objects:
+These data types are known as Composite Types, which are created using the `CREATE TYPE` SQL command. For example, you can create a custom type for a 3D point:
 
-1. **Schema**: A namespace that logically organizes other database objects, such as tables and views. The schema allows multiple objects to have the same name across different schemas without any conflicts.
+```sql
+CREATE TYPE point_3d AS (
+    x REAL,
+    y REAL,
+    z REAL
+);
+```
 
-2. **Table**: It represents a collection of rows containing data with fixed columns that define the structure of the table.
+## Inheritance
 
-3. **Column**: A column is a defined set of data items of a specific type within a table.
+Another element of the object model in PostgreSQL is table inheritance. This feature allows you to define a table that inherits the columns, data types, and constraints of another table. Inheritance in PostgreSQL is a powerful mechanism to organize and reuse common data structures across multiple tables.
 
-4. **Index**: Indexes are database objects that allow efficient retrieval of rows in a table by providing a specific lookup on one or more columns.
+The syntax for creating a table that inherits another table is as follows:
 
-5. **View**: A view is a virtual table constructed from queries of one or more existing tables.
+```sql
+CREATE TABLE child_table_name ()
+    INHERITS (parent_table_name);
+```
 
-6. **Materialized View**: A Materialized View is a database object that contains the results of a query, similar to a view, but with the data cached locally for faster access.
+For example, consider a base table `person`:
 
-7. **Trigger**: A trigger is a procedural code that runs automatically based on certain specified events in the database. These events include any operations such as INSERT, UPDATE, DELETE, and TRUNCATE statements.
+```sql
+CREATE TABLE person (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(100),
+    last_name VARCHAR(100),
+    dob DATE
+);
+```
 
-8. **Stored Procedure**: A stored procedure is a user-defined function that is called by clients to execute some predefined operations.
+You can create an `employee` table that inherits the attributes of `person`:
 
-These are just a few of the most commonly used database objects in PostgreSQL. By understanding the roles and interdependencies of these objects, you can fully leverage the benefits that PostgreSQL offers as an advanced RDBMS.
+```sql
+CREATE TABLE employee ()
+    INHERITS (person);
+```
 
-### Object Identification
+The `employee` table now has all the columns of the `person` table, and you can add additional columns or constraints specific to the `employee` table.
 
-Each object in PostgreSQL can be uniquely identified by the combination of its name along with its schema and the owner credentials. PostgreSQL is case-sensitive for object names, and follows certain conventions for automatic case conversion.
+## Polymorphism
 
-PostgreSQL allows you to create your own custom data types and operators, thereby extending the functionality of the built-in types and operators. This extensibility helps in catering to any specific requirements of your application or organization.
+Polymorphism is another valuable feature of the PostgreSQL object model. Polymorphism allows you to create functions and operators that can accept and return multiple data types. This flexibility enables you to work with a variety of data types conveniently.
 
-In summary, the object model in PostgreSQL is an essential concept for managing RDBMS effectively. Understanding its key components and object-relational nature enables efficient organization and usage of database objects, which ultimately leads to better performance and maintainability in the long run.
+In PostgreSQL, two forms of polymorphism are supported:
+
+- Polymorphic Functions: Functions that can accept and return multiple data types.
+- Polymorphic Operators: Operators, which are essentially functions, that can work with multiple data types.
+
+For example, consider the following function which accepts anyelement type:
+
+```sql
+CREATE FUNCTION simple_add(x anyelement, y anyelement) RETURNS anyelement
+    AS 'SELECT x + y;'
+    LANGUAGE SQL;
+```
+
+This function can work with any data type that supports the addition operator.

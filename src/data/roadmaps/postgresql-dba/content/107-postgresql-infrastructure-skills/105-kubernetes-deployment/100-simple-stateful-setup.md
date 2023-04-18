@@ -1,35 +1,127 @@
 # Simple Stateful Setup
 
-## Simple Stateful Setup
+In this section, we will discuss the basics of setting up a simple stateful `PostgreSQL` deployment on `Kubernetes`. A stateful setup ensures that data is persistent across pod restarts and failures. `Kubernetes` manages stateful applications using `StatefulSets`, which provide guarantees about the ordering and uniqueness of pods.
 
-In this section, we will discuss a simple stateful setup for PostgreSQL in a Kubernetes environment. The main goal of this setup is to provide a resilient and highly available PostgreSQL deployment that can be managed and scaled easily.
+## Overview
+Here are the key components and steps involved in setting up a simple stateful `PostgreSQL` deployment on `Kubernetes`:
 
-### StatefulSets
+- **Create a Storage Class**: Define a `StorageClass` resource in `Kubernetes`, specifying the type of storage to be used and the access mode (read-write, read-only, etc.).
 
-PostgreSQL is a stateful application that requires persistent storage for data durability. Kubernetes provides a built-in abstraction called `StatefulSet` that solves this problem. A `StatefulSet` manages the deployment and scaling of a set of Pods, and provide guarantees about the ordering and uniqueness of these Pods.
+- **Create a Persistent Volume Claim**: Define a `PersistentVolumeClaim` (PVC) to request a specific amount of storage from the storage class for your `PostgreSQL` database.
 
-In our simple stateful setup, we'll use a single-replica `StatefulSet` to manage a single PostgreSQL instance. This will provide a basic level of fault tolerance, as a new Pod will be automatically created if the current instance fails.
+- **Create a ConfigMap**: Define a `ConfigMap` to store your database configuration settings (e.g., usernames, passwords, etc.), separate from your application code.
 
-### PersistentVolume and PersistentVolumeClaim
+- **Create a Secret**: Store sensitive data (e.g., database passwords) securely in a `Secret` object. The `Secret` will be mounted as a volume in the pod and the environment variables will be set.
 
-To ensure data persistence during Pod restarts, we will use Kubernetes `PersistentVolume` (PV) and `PersistentVolumeClaim` (PVC). A `PV` is a piece of storage in the cluster, while a `PVC` is a request for storage by a user. In our setup, we will create a PVC template, associated with the `StatefulSet`, that dynamically provisions a PV for each Pod.
+- **Create a StatefulSet**: Define a `StatefulSet` that manages the deployment of your `PostgreSQL` pods. Specify the container image, port, volumes (PVC and ConfigMap), and a startup script. It ensures the unique identifier for each pod and guarantees the order of pod creation/deletion.
 
-### ConfigMaps and Secrets
+## Step by Step Guide
 
-ConfigMaps and Secrets are used for managing configuration data in Kubernetes. We will use a `ConfigMap` to store PostgreSQL configuration files (e.g., `postgresql.conf` and `pg_hba.conf`) and a `Secret` to store sensitive information (e.g., PostgreSQL user and password).
+- **Storage Class**:
+   Create a YAML file for the `StorageClass` resource (e.g., `postgres-storage-class.yaml`):
+   ```yaml
+   apiVersion: storage.k8s.io/v1
+   kind: StorageClass
+   metadata:
+     name: postgres-storage
+   provisioner: kubernetes.io/gce-pd
+   parameters:
+     type: pd-standard
+   ```
+   Apply the file with `kubectl`: `kubectl apply -f postgres-storage-class.yaml`
 
-### Load Balancer and Services
+- **Persistent Volume Claim**:
+   Create a YAML file for the `PersistentVolumeClaim` resource (e.g., `postgres-pvc.yaml`):
+   ```yaml
+   apiVersion: v1
+   kind: PersistentVolumeClaim
+   metadata:
+     name: postgres-pvc
+   spec:
+     accessModes:
+       - ReadWriteOnce
+     resources:
+       requests:
+         storage: 10Gi
+     storageClassName: postgres-storage
+   ```
+   Apply the file with `kubectl`: `kubectl apply -f postgres-pvc.yaml`
 
-To expose our PostgreSQL instance to other services, we will use a Kubernetes `Service` with the type `LoadBalancer`. This service will route external traffic to the appropriate Pod, providing a stable IP address and DNS name.
+- **ConfigMap**:
+   Create a YAML file for the `ConfigMap` resource (e.g., `postgres-configmap.yaml`):
+   ```yaml
+   apiVersion: v1
+   kind: ConfigMap
+   metadata:
+     name: postgres-config
+   data:
+     POSTGRES_DB: mydatabase
+     POSTGRES_USER: myuser
+   ```
+   Apply the file with `kubectl`: `kubectl apply -f postgres-configmap.yaml`
 
-### Summary
+- **Secret**:
+   Create a YAML file for the `Secret` resource (e.g., `postgres-secret.yaml`):
+   ```yaml
+   apiVersion: v1
+   kind: Secret
+   metadata:
+     name: postgres-secret
+   type: Opaque
+   data:
+     POSTGRES_PASSWORD: cG9zdGdyZXNfcGFzc3dvcmQ=  # Base64 encoded value of the actual password
+   ```
+   Apply the file with `kubectl`: `kubectl apply -f postgres-secret.yaml`
 
-Our simple stateful setup for PostgreSQL in Kubernetes includes the following components:
+- **StatefulSet**:
+   Create a YAML file for the `StatefulSet` resource (e.g., `postgres-statefulset.yaml`):
+   ```yaml
+   apiVersion: apps/v1
+   kind: StatefulSet
+   metadata:
+     name: postgres
+   spec:
+     serviceName: "postgres"
+     replicas: 1
+     selector:
+       matchLabels:
+         app: postgres
+     template:
+       metadata:
+         labels:
+           app: postgres
+       spec:
+         containers:
+         - name: postgres
+           image: postgres:11
+           ports:
+           - containerPort: 5432
+           env:
+             - name: POSTGRES_DB
+               valueFrom:
+                 configMapKeyRef:
+                   name: postgres-config
+                   key: POSTGRES_DB
+             - name: POSTGRES_USER
+               valueFrom:
+                 configMapKeyRef:
+                   name: postgres-config
+                   key: POSTGRES_USER
+             - name: POSTGRES_PASSWORD
+               valueFrom:
+                 secretKeyRef:
+                   name: postgres-secret
+                   key: POSTGRES_PASSWORD
+           volumeMounts:
+           - name: postgres-data
+             mountPath: /var/lib/postgresql/data
+         volumes:
+         - name: postgres-data
+           persistentVolumeClaim:
+             claimName: postgres-pvc
+   ```
+   Apply the file with `kubectl`: `kubectl apply -f postgres-statefulset.yaml`
 
-- A single-replica StatefulSet to manage the PostgreSQL instance.
-- A PVC template to dynamically provision a PV for each Pod.
-- A ConfigMap to store PostgreSQL configuration files.
-- A Secret to store sensitive information.
-- A LoadBalancer Service to expose the PostgreSQL instance.
+Once all components have been created, `Kubernetes` will deploy a PostgreSQL stateful set with a persistent volume attached to the PostgreSQL pod, allowing the database to maintain its state.
 
-By using these components effectively, we can create a resilient, scalable, and easy-to-manage PostgreSQL deployment in Kubernetes.
+That's it! You now have a basic understanding of how to set up a simple stateful `PostgreSQL` deployment on `Kubernetes`. You can build on this foundation to create more complex deployments with multiple replicas, load balancing, and high availability.

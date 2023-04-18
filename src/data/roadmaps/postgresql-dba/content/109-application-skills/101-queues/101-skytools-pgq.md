@@ -1,36 +1,35 @@
 # Skytools PGQ
 
-# SkyTools PGQ: A Brief Summary
+Skytools is a set of tools developed by Skype to assist with using PostgreSQL databases. One of the key components of Skytools is PGQ, a queuing system built on top of PostgreSQL that provides efficient and reliable data processing.
 
-SkyTools is a collection of utilities, tools, and libraries for PostgreSQL, and PGQ (PostgreSQL Queue) is a part of SkyTools designed for queuing and processing large numbers of events in a performant and reliable manner. PGQ provides efficient, transactional queuing mechanism for PostgreSQL databases, allowing multiple queue consumers with different processing requirements to work concurrently.
+## How PGQ Works
 
-## Key Features
+PGQ utilizes PostgreSQL's built-in features to create a robust and high-performance queuing system. Data is inserted into an event queue using SQL statements, and processed by consumer applications. PGQ ensures data integrity and provides mechanisms to prevent data loss in case of failures.
 
-- **Event-based processing**: PGQ allows the creation of events that can be queued and processed by subscribers.
-- **Multiple queues**: It's possible to create multiple PGQ queues in a single database to handle different event types or to segregate event processing.
-- **Load management**: Through batching, PGQ can accumulate events in the queue before sending them to the queue consumers, reducing overall system load and improving performance.
-- **Transactional consistency**: PGQ ensures that events are only removed from the queue once they have been successfully processed by all attached consumers, thus avoiding data loss or inconsistency.
-- **Failover support**: In case of a failure, PGQ can be set up for automatic failover to a standby server, ensuring high availability of the queuing system.
+Here's a brief overview of some core concepts of PGQ:
 
-## PGQ Components
+- **Queue**: A queue is defined by the user as a table within the PostgreSQL database to store events. Events in the queue are processed in the order they are inserted.
+- **Event**: An event is a single unit of data containing a specific action and its associated data. Events are added to the queue by producer applications and processed by consumer applications.
+- **Producer**: A producer application adds events to the queue. Producers can be external applications or built using PL/pgSQL functions.
+- **Consumer**: A consumer application processes the events from the queue. Consumers can be implemented in any programming language capable of interfacing with the PostgreSQL database.
 
-Below are the main components in the PGQ ecosystem:
+## Benefits of Using PGQ
 
-1. **Producer**: The event generator which inserts events into the queue.
-2. **Queue**: This is where the events are stored in a reliable and transactional manner.
-3. **Ticker**: A background process that manages and maintains the queue.
-4. **Consumer**: The processing agent that subscribes to the queue, receives events, and performs required actions.
+Integrating PGQ into your PostgreSQL database solution provides several advantages:
 
-## Getting Started
+- **Scalability**: PGQ can handle a high volume of events, making it suitable for large databases and distributed systems.
+- **Fault-tolerance**: PGQ ensures a consistent and reliable event processing by preventing duplicate and lost events.
+- **Concurrency**: Multiple consumers can work on the same queue concurrently without affecting each other’s performance.
+- **Consistency**: With transactional support, PGQ guarantees the atomicity of event processing, ensuring both the event and its associated data modifications are in sync.
 
-To get started with SkyTools PGQ, you will need to install the SkyTools package and follow these basic steps:
+## Getting Started with PGQ
 
-1. **Create a database**: Create a new PostgreSQL database or use an existing one to store the PGQ schema and tables.
-2. **Install the PGQ extension**: Run the SQL scripts provided by the SkyTools package to set up the necessary tables and functions for PGQ.
-3. **Configure the ticker**: Set up the configuration file for the pgqadm ticker program and start the ticker process.
-4. **Create queues**: Use the PGQ API or utility scripts to create one or more queue(s) in the configured database.
-5. **Create consumers**: Implement your custom event processing logic as consumers and register them to the appropriate queue(s).
-6. **Produce events**: Insert events into the queue using the PGQ API or utility scripts.
-7. **Start the consumers**: Finally, start your queue consumer processes to begin processing the events in the queue.
+To start using Skytools PGQ, follow these basic steps:
 
-By implementing SkyTools PGQ in your PostgreSQL environment, you can efficiently process large volumes of events and ensure data consistency and reliability across multiple consumers.
+- [Download and install Skytools](https://github.com/pgq/skytools) on your system.
+- Create a queue in your PostgreSQL database using the provided functions, for example, `create_queue('queue_name')`.
+- Implement a producer to insert events into the queue using SQL statements or PL/pgSQL functions.
+- Implement a consumer to process the events from the queue. Skytools provides a Python library [`skytools.pgq`](http://skytools.projects.pgfoundry.org/docs/skytools-3.2/python-api.html) to facilitate consumer development.
+- Register your consumer application using the provided Skytools functions, for example, `register_consumer('queue_name', 'consumer_name')`.
+
+By incorporating PGQ into your PostgreSQL workflows, you'll gain a powerful and flexible queuing system that can help you manage and process your data with greater efficiency and reliability.

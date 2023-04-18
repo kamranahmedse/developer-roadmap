@@ -1,48 +1,57 @@
 # pg_restore
 
-### Pg_restore
+`pg_restore` is a powerful recovery tool in PostgreSQL, specifically designed to restore data and objects from a database backup created by the `pg_dump` utility. This command only works with backups in the `custom`, `directory`, and `tar` formats. It cannot restore backups in plain-text format, which are typically created using the `-Fp` option with `pg_dump`.
 
-`Pg_restore` is a powerful and essential utility provided by PostgreSQL for recovering your database from a previously created dump file. It can be used to restore an entire database or individual database objects, such as tables, indexes, and sequences.
+`pg_restore` can handle numerous scenarios, such as:
 
-#### Key Features
+- Restoring a full database backup
+- Selectively recovering specific database objects (tables, indexes, functions, etc.)
+- Remapping database object names or owners
+- Restoring to a different database server
 
-- Restores data from custom, tar, and directory format archival outputs.
-- Allows selective restoration of specific database objects.
-- Supports parallel restoration of large databases.
-- Displays a preview of the restoration process with the `-L` option.
+## Using pg_restore
 
-#### Usage
+The basic usage of `pg_restore` is as follows:
 
-The basic syntax to use `pg_restore` is given below:
-
-```
-pg_restore [options] [file-name]
+```bash
+pg_restore [options] [backup_file]
 ```
 
-Here, `options` represent different configuration flags, and `file-name` is the name of the backup file created using `pg_dump`.
+Here's an example of restoring a full database backup:
 
-##### Example
-
-To restore a database named `mydatabase` from a tar file named `mydatabase.tar`, you can use the following command:
-
-```
-pg_restore -U postgres -C -d mydatabase -v -Ft mydatabase.tar
+```sh
+pg_restore -U username -W -h host -p port -Ft -C -d dbname backup_file.tar
 ```
 
 In this example:
 
-- `-U` specifies the username for the PostgreSQL server (in this case, `postgres`).
-- `-C` creates the database before restoring.
-- `-d` selects the target database.
-- `-v` displays verbose output as the restoration progresses.
-- `-Ft` specifies that the backup format is tar.
+- `-U` specifies the user to connect as.
+- `-W` prompts for the password.
+- `-h` and `-p` specify the host and port, respectively.
+- `-Ft` indicates the file format (`t` for tar).
+- `-C` creates a new database before performing the restore.
+- `-d` specifies the target database.
 
-#### Important Notes
+## Selective Restore
 
-- Note that `pg_dump` and `pg_restore` must be used together as they are designed to complement each other for creating and restoring backup files. Using other tools or processes for restoration may lead to unreliable results.
+`pg_restore` allows you to selectively restore specific database objects. You need to use the `-L` option followed by the list of desired objects.
 
-- Please be aware of PostgreSQL version compatibility between the server where the dump was created and the target server being restored.
+To generate a list of objects in a backup file, use the `-l` option:
 
-- It is recommended to practice using `pg_restore` in a test environment before applying them to your production systems.
+```sh
+pg_restore -l backup_file.tar > object_list.txt
+```
 
-In conclusion, `pg_restore` is a powerful yet easy-to-use PostgreSQL utility designed to simplify the process of restoring your databases. Getting familiar with `pg_restore` and its options will help you be more confident in managing and maintaining the integrity of your data.
+Edit the `object_list.txt` file to keep only the objects you'd like to restore, and then use the following command:
+
+```sh
+pg_restore -U username -W -h host -p port -Ft -d dbname -L object_list.txt backup_file.tar
+```
+
+## Remapping Object Names and Owners
+
+`pg_restore` can also remap object names and owners using the `--tablespace-mapping`, `--role-mapping`, and other options. For more information, consult the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/app-pgrestore.html).
+
+## Summary
+
+`pg_restore` is an essential tool for recovering data from PostgreSQL backups created by `pg_dump`. It offers flexible options for restoring full backups, selecting objects to recover, and remapping object names and owners.

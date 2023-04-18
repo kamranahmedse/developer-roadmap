@@ -1,34 +1,56 @@
 # Vacuum Processing
 
-## Vacuum Processing
+Vacuum processing is an essential aspect of maintaining the performance and stability of a PostgreSQL database. PostgreSQL uses a storage technique called Multi-Version Concurrency Control (MVCC), which allows multiple transactions to access different versions of a database object simultaneously. This results in the creation of multiple "dead" rows whenever a row is updated or deleted. Vacuum processing helps in cleaning up these dead rows and reclaiming storage space, preventing the database from becoming bloated and inefficient.
 
-Vacuum processing plays a vital role in the maintenance and optimization of a PostgreSQL database. It helps to reclaim storage space, optimize the overall performance of the database, and maintain consistency in data.
+## Types of Vacuum Processing
 
-### Overview of Vacuum Processing
+- **Manual Vacuum**: Initiated by the user, a manual vacuum can be performed using the `VACUUM` SQL command. It scans the tables and indexes and removes dead rows where appropriate.
 
-In PostgreSQL, data is never physically removed from the database when a row is deleted or updated. Instead, the deleted or updated row is marked as "dead." As the database grows over time, these dead rows occupy a considerable amount of disk space, and slow down the overall performance of the database. This is where vacuum processing comes into play. It removes dead rows, reclaims storage, and optimizes the performance of the database.
+```sql
+VACUUM table_name;
+```
 
-### Types of Vacuum Processing
+- **Automatic Vacuum**: To automate the vacuuming process, PostgreSQL implements the *autovacuum daemon*. This background process starts upon initiating a PostgreSQL instance and operates on the entire cluster. It monitors and analyzes the database for bloated tables and reclaims storage space according to predefined settings in the `postgresql.conf` configuration file.
 
-There are two major types of vacuum processing:
+## Vacuum Processing Options
 
-1. **Standard Vacuum**: This operation scans the entire table, removes dead rows and frees up space for further use. However, it does not return the freed storage space back to the operating system but keeps it reserved for future usage by the same table. Standard vacuum operations can be performed manually or scheduled using the _autovacuum_ daemon.
+- **Vacuum**: The basic vacuum process removes dead rows and optimizes the free space in the database. However, it doesn't reclaim storage space or optimize the indexes for the underlying file system.
 
-2. **Vacuum Full**: This operation scans the entire table and removes dead rows, but goes a step further by compacting the table and returning the freed up space back to the operating system. Vacuum full is a more time-consuming and resource-intensive process, hence it should be used sparingly and ideally during low-traffic periods.
+```sql
+VACUUM table_name;
+```
 
-### Autovacuum
+- **Vacuum Full**: The `VACUUM FULL` command not only removes dead rows but also compacts the table and its indexes, reclaiming storage space for the file system. Be cautious with this command, as it might lock the table for a long time during the operation.
 
-Autovacuum is a built-in feature of PostgreSQL which essentially automates the process of database vacuuming. It monitors the database activity and automatically triggers standard vacuum and analyze operations when certain conditions are met:
+```sql
+VACUUM FULL table_name;
+```
 
-- When too much storage is occupied by dead rows.
-- When the database statistics used by the query planner become stale and inaccurate.
+- **Analyze**: The `ANALYZE` command updates the statistics about the distribution of the key values in the tables and indexes. These statistics help the PostgreSQL query planner to choose the most efficient execution plan for the queries.
 
-Apart from vacuuming, autovacuum also updates the statistics of the database to ensure optimal query execution plans.
+```sql
+ANALYZE table_name;
+```
 
-### Key Benefits of Vacuum Processing
+- **Vacuum Analyze**: Combining both `VACUUM` and `ANALYZE`, this command is useful when you want to perform vacuum processing and update the statistics simultaneously.
 
-- **Storage Space Reclamation**: Vacuum processing reclaims the storage space occupied by dead rows and ensures optimal utilization of disk space.
-- **Performance Optimization**: By removing dead rows and updating database statistics, vacuum processing helps in improving the overall performance of a PostgreSQL database.
-- **Consistency of Data**: Vacuum processing helps in avoiding database inconsistencies caused by dead rows accumulating in the database.
+```sql
+VACUUM ANALYZE table_name;
+```
 
-In conclusion, vacuum processing is an essential tool in managing and optimizing a PostgreSQL database, ensuring efficient space utilization and maintaining data consistency. Regular vacuuming of your PostgreSQL database, either manually or using autovacuum, is highly recommended for optimal database performance.
+- **Vacuum Freeze**: The `VACUUM FREEZE` command is primarily used for tables with a high update frequency. It marks all rows as "frozen," which means the transaction information is no longer needed for MVCC, reducing the need for subsequent vacuum processing.
+
+```sql
+VACUUM FREEZE table_name;
+```
+
+## Customizing Vacuum Processing
+
+Vacuum processing behavior can be adjusted by modifying the following configuration parameters in the `postgresql.conf` file:
+
+- `autovacuum_vacuum_scale_factor`: Controls the fraction of the table size to be reclaimed.
+- `autovacuum_analyze_scale_factor`: Controls the fraction of the table size to trigger an `ANALYZE`.
+- `vacuum_cost_limit`: Determines the maximum cost to be spent on vacuuming before a batch is terminated.
+- `autovacuum_vacuum_cost_limit`: Determines the maximum cost to be spent on vacuuming when done by the autovacuum daemon.
+
+In conclusion, vacuum processing is vital for keeping a PostgreSQL database healthy and performant. Understanding and regularly using vacuum processes ensures that your database remains efficient and maintainable.

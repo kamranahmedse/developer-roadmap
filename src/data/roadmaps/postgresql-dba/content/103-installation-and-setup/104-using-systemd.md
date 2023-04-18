@@ -1,63 +1,50 @@
-# Using `systemd`
+# Using systemd
 
-## Using Systemd for PostgreSQL
+In this section, we'll discuss how to manage PostgreSQL using `systemd`, which is the default service manager for many modern Linux distributions (such as CentOS, Ubuntu, and Debian). `systemd` enables you to start, stop, and check the status of PostgreSQL, as well as enable/disable automatic startup at boot time.
 
-Systemd is an init-based system manager for Linux that provides a standardized way of managing system processes. It is commonly used for starting, stopping, and controlling processes such as PostgreSQL, which can be installed as a service. In this section, we will explore how to manage PostgreSQL using systemd.
+## Starting, Stopping, and Restarting PostgreSQL
 
-### Installing PostgreSQL with systemd
+To start, stop, or restart PostgreSQL using `systemd`, you can use the `systemctl` command, as shown below:
 
-When installing PostgreSQL through various package managers (e.g., `apt` or `yum`), the installation process will typically configure the service to run using systemd. The PostgreSQL service should *not* be started manually. Instead, we control the service using systemd commands.
+- To start the PostgreSQL service, run:
+  ```
+  sudo systemctl start postgresql
+  ```
 
-### Start and Stop PostgreSQL via systemd
+- To stop the PostgreSQL service, run:
+  ```
+  sudo systemctl stop postgresql
+  ```
 
-To start PostgreSQL using systemd, run the following command:
+- To restart the PostgreSQL service, run:
+  ```
+  sudo systemctl restart postgresql
+  ```
 
-```
-sudo systemctl start postgresql
-```
+## Checking PostgreSQL Service Status
 
-To stop PostgreSQL using systemd, run the following command:
+To check the status of the PostgreSQL service, you can use the `systemctl status` command:
 
-```
-sudo systemctl stop postgresql
-```
-
-### Enable and Disable PostgreSQL auto-start
-
-To enable PostgreSQL to start automatically with the system, run the command:
-
-```
-sudo systemctl enable postgresql
-```
-
-To disable PostgreSQL auto-start, run the command:
-
-```
-sudo systemctl disable postgresql
-```
-
-### Check the PostgreSQL service status
-
-To check the status of the PostgreSQL service, use the following command:
-
-```
+```bash
 sudo systemctl status postgresql
 ```
 
-This command will show whether the PostgreSQL service is running, stopped or failed, and display relevant log messages from systemd journal.
+This command will display information about the PostgreSQL service, including its current state (active or inactive) and any recent logs.
 
-### Configuration and Log files
+## Enabling/Disabling PostgreSQL Startup at Boot
 
-Systemd manages the PostgreSQL service using a unit configuration file, typically located at `/etc/systemd/system/postgresql.service` or `/lib/systemd/system/postgresql.service`. It provides a standard way of defining how the PostgreSQL service is started, stopped, and restarted.
+To enable or disable the PostgreSQL service to start automatically at boot time, you can use the `systemctl enable` and `systemctl disable` commands, respectively:
 
-PostgreSQL log files can be accessed using the journalctl command:
+- To enable PostgreSQL to start at boot, run:
+  ```
+  sudo systemctl enable postgresql
+  ```
 
-```
-sudo journalctl -u postgresql --since "YYYY-MM-DD HH:MM:SS"
-```
+- To disable PostgreSQL from starting at boot, run:
+  ```
+  sudo systemctl disable postgresql
+  ```
 
-Replace the "YYYY-MM-DD HH:MM:SS" with the desired date and time to view logs since that specific time.
+## Conclusion
 
-### Conclusion
-
-Systemd provides a convenient and standardized approach to managing the PostgreSQL service on Linux. Understanding how to interact with the PostgreSQL service through systemd commands will help you efficiently manage your PostgreSQL installation and troubleshoot issues when they arise.
+In this section, we covered how to manage PostgreSQL using `systemd`. By using the `systemctl` command, you can start, stop, restart, and check the status of PostgreSQL, as well as enable or disable its automatic startup during boot.

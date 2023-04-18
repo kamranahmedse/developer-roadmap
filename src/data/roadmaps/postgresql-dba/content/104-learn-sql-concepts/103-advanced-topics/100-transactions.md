@@ -1,59 +1,78 @@
 # Transactions
 
-# Transactions
+Transactions are a fundamental concept in database management systems, allowing multiple statements to be executed within a single transaction context. In PostgreSQL, transactions provide ACID (Atomicity, Consistency, Isolation, and Durability) properties, which ensure that your data remains in a consistent state even during concurrent access or system crashes.
 
-Transactions are a crucial aspect of any database management system, and PostgreSQL is no exception. A transaction is a sequence of one or more SQL operations that constitute a single, logical unit of work. Transactions provide a consistent and reliable mechanism for safeguarding the integrity of the database when multiple operations are performed concurrently.
+In this section, we will discuss the following aspects of transactions in PostgreSQL:
 
-The primary goal of a transaction is to ensure that the database remains in a consistent state despite any errors or system crashes that may occur during its operation. To achieve this goal, PostgreSQL implements a set of properties known as **ACID**:
+- **Transaction Control**: How to start, commit, and rollback a transaction.
+- **Savepoints**: Creating and managing savepoints within a transaction.
+- **Concurrency Control**: Understanding isolation levels and concurrency issues.
+- **Locking**: How to acquire and release locks for concurrent access.
 
-- **A**tomicity: A transaction must be either fully completed or fully rolled back. There can be no partial transactions.
-- **C**onsistency: The database must always transition from one consistent state to another upon the completion of a transaction.
-- **I**solation: Each transaction must be completely isolated from other transactions running concurrently.
-- **D**urability: Once a transaction has been committed, its changes must be permanently saved in the database.
+## Transaction Control
 
-## Using Transactions in PostgreSQL
+Transactions in PostgreSQL can be controlled using the following SQL commands:
 
-To start a transaction, use the `BEGIN` statement:
+- `BEGIN`: Starts a new transaction.
+- `COMMIT`: Ends the current transaction and makes all changes permanent.
+- `ROLLBACK`: Ends the current transaction, discarding all changes made.
 
-```sql
-BEGIN;
-```
-
-You can then execute the SQL operations that form your transaction. For example, consider a simple banking scenario where you're transferring funds from one account to another:
-
-```sql
--- Subtract the transferred amount from the first account's balance
-UPDATE accounts SET balance = balance - 100 WHERE id = 1;
-
--- Add the transferred amount to the second account's balance
-UPDATE accounts SET balance = balance + 100 WHERE id = 2;
-```
-
-To commit the transaction and save the changes to the database permanently, use the `COMMIT` statement:
-
-```sql
-COMMIT;
-```
-
-If an error occurs during the transaction, or you need to cancel the transaction for any reason, you can roll back the transaction using the `ROLLBACK` statement:
-
-```sql
-ROLLBACK;
-```
-
-## Transaction Isolation Levels
-
-PostgreSQL provides multiple transaction isolation levels that govern the visibility of data changes made by one transaction to other concurrent transactions. The default isolation level in PostgreSQL is **Read Committed**. Other isolation levels include **Read Uncommitted**, **Repeatable Read**, and **Serializable**.
-
-To set the transaction isolation level for a specific transaction, use the `SET TRANSACTION` statement:
+Example:
 
 ```sql
 BEGIN;
-SET TRANSACTION ISOLATION LEVEL SERIALIZABLE;
--- Your SQL operations here
+-- Perform multiple SQL statements here
 COMMIT;
 ```
 
-Understanding and selecting the appropriate transaction isolation level is essential for achieving the desired balance between data consistency and application performance.
+## Savepoints
 
-In summary, transactions are a powerful mechanism that PostgreSQL offers to ensure data consistency and integrity when executing multiple operations on the database. By understanding and effectively using transactions, you can build robust and reliable database applications.
+Savepoints allow you to create intermediate points within a transaction, to which you can rollback without discarding the entire transaction. They are useful when you need to undo part of a transaction without affecting other parts of the transaction.
+
+```sql
+-- Start a transaction
+BEGIN;
+
+-- Perform some SQL statements
+
+-- Create a savepoint
+SAVEPOINT my_savepoint;
+
+-- Perform more SQL statements
+
+-- Rollback to the savepoint
+ROLLBACK TO my_savepoint;
+
+-- Continue working and commit the transaction
+COMMIT;
+```
+
+## Concurrency Control
+
+Isolation levels are used to control the visibility of data in a transaction with respect to other concurrent transactions. PostgreSQL supports four isolation levels:
+
+- `READ UNCOMMITTED`: Allows transactions to see uncommitted changes made by other transactions.
+- `READ COMMITTED`: Allows transactions to see changes made by other transactions only after they are committed.
+- `REPEATABLE READ`: Guarantees that a transaction sees a consistent view of data for the entire length of the transaction.
+- `SERIALIZABLE`: Enforces serial execution order of transactions, providing the highest level of isolation.
+
+You can set the transaction isolation level using the following command:
+
+```sql
+SET TRANSACTION ISOLATION LEVEL level_name;
+```
+
+## Locking
+
+Locks prevent multiple transactions from conflicting with each other when accessing shared resources. PostgreSQL provides various lock modes, such as `FOR UPDATE`, `FOR NO KEY UPDATE`, `FOR SHARE`, and `FOR KEY SHARE`.
+
+Example:
+
+```sql
+BEGIN;
+SELECT * FROM my_table WHERE id = 1 FOR UPDATE;
+-- Perform updates or deletions here
+COMMIT;
+```
+
+In summary, understanding and utilizing transactions in PostgreSQL is essential for ensuring data consistency and managing concurrent access to your data. By leveraging transaction control, savepoints, concurrency control, and locking, you can build robust and reliable applications that work seamlessly with PostgreSQL.

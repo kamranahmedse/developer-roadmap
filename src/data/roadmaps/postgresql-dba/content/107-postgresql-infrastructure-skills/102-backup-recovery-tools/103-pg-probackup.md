@@ -1,54 +1,54 @@
-# pg_probackup
+# Pg_probackup
 
-## pg_probackup
+`Pg_probackup` is a powerful and feature-rich backup and recovery tool for PostgreSQL databases. It provides a comprehensive solution for managing and restoring backups, ensuring the safety and reliability of your data. With support for both legacy and modern PostgreSQL features, `pg_probackup` is an essential tool for database administrators to maintain and safeguard their databases.
 
-`pg_probackup` is an advanced backup and recovery tool designed to work with PostgreSQL databases. This open-source utility provides efficient, reliable, and flexible backup solutions for PostgreSQL administrators, allowing them to create full, incremental, and differential backups, perform point-in-time recovery, and manage multiple backup instances.
+## Features
 
-### Features
+- **Full, Incremental, and Differential Backups**: Pg_probackup supports various backup types, giving you the flexibility to choose the best backup strategy for your specific needs.
+- **Backup Compression and Encryption**: Save storage space and protect sensitive data with built-in support for backup compression and encryption.
+- **Automatic Restore Point Creation**: Pg_probackup creates restore points automatically, so you can easily recover your database to any point in time.
+- **Backup Catalog and Retention Policies**: Manage your backups efficiently with a backup catalog and set up retention policies to automatically delete old backups.
+- **Parallel Backup and Recovery**: Speed up the backup and recovery process by performing operations in parallel.
+- **Validation and Verification**: Ensure the accuracy and consistency of your backups and recoveries with built-in validation and verification features.
 
-Some of the key features of `pg_probackup` include:
+## Usage
 
-1. **Backup Types**: Supports full, page-level incremental, and ptrack (block-level incremental) backups.
-2. **Backup Validation**: Ensures the consistency and correctness of the backups with built-in validation mechanisms.
-3. **Backup Compression**: Allows you to save storage space by compressing backup files.
-4. **Multi-threading**: Speeds up the backup and recovery process by taking advantage of multiple CPU cores.
-5. **Backup Retention**: Automatically deletes old backup files based on a retention policy.
-6. **Backup Management**: Manages multiple backup instances and performs various backup maintenance tasks.
-7. **Point-in-Time Recovery**: Allows you to recover the database to a specific point in time, based on transaction log (WAL) files.
-8. **Standby Support**: Allows you to perform backups from a standby database server.
-9. **Tablespaces**: Supports backing up and restoring PostgreSQL tablespaces.
-10. **Remote Mode**: Allows you to perform backup and recovery tasks on a remote PostgreSQL server.
+Pg_probackup can be installed by downloading the appropriate package for your operating system or building from the source code available on the [official repository](https://github.com/postgrespro/pg_probackup).
 
-### Installation
-
-To install `pg_probackup`, follow the steps outlined in the official documentation: [https://github.com/postgrespro/pg_probackup#installation](https://github.com/postgrespro/pg_probackup#installation)
-
-### Basic Usage
-
-Here's a brief overview of the basic commands used with `pg_probackup`:
-
-- To create a backup:
-
+For example, on Debian-based systems, you can install it using `apt`:
 ```
-pg_probackup backup -B /path/to/backup/catalog -D /path/to/datadir --instance your_instance_name --backup-mode=full --remote-proto=protocol --remote-host=host_address --remote-user=user_name
+sudo apt-get update
+sudo apt-get install pg-probackup
 ```
 
-- To restore a backup:
+Once installed, you can configure your PostgreSQL instance for backups by setting some configuration parameters in the `postgresql.conf` file, such as `archive_mode`, `wal_level`, and `archive_command`.
 
-```
-pg_probackup restore -B /path/to/backup/catalog -D /path/to/new/datadir --instance your_instance_name --recovery-target-time="YYYY-MM-DD HH:MI:SS"
-```
+You can then start using pg_probackup to create and manage your backups. Here are some basic commands to help you get started:
 
-- To validate a backup:
+- **Initialize Backup Catalog**
 
-```
-pg_probackup validate -B /path/to/backup/catalog --instance your_instance_name
+```bash
+pg_probackup init -B /path/to/backup/catalog
 ```
 
-- To manage backup retention:
+- **Create Full Backup**
 
-```
-pg_probackup delete -B /path/to/backup/catalog --instance your_instance_name --delete-expired --retention-redundancy=number_of_backups --retention-window=days
+```bash
+pg_probackup backup -B /path/to/backup/catalog --instance your_instance_name -b FULL --remote-proto=ssh --remote-host=your_remote_host --remote-port=your_remote_port --remote-path=/path/to/database --remote-user=your_remote_user -U your_pg_user -d your_dbname
 ```
 
-For more details and advanced usage, consult the official documentation: [https://postgrespro.com/docs/postgresql-14/pg-probackup](https://postgrespro.com/docs/postgresql-14/pg-probackup)
+- **Create Incremental Backup**
+
+```bash
+pg_probackup backup -B /path/to/backup/catalog --instance your_instance_name -b PTRACK --remote-proto=ssh --remote-host=your_remote_host --remote-port=your_remote_port --remote-path=/path/to/database --remote-user=your_remote_user -U your_pg_user -d your_dbname
+```
+
+- **Restore from Backup**
+
+```bash
+pg_probackup restore -B /path/to/backup/catalog --instance your_instance_name -D /path/to/restore/directory
+```
+
+For more detailed information and additional commands, you can refer to the [official documentation](https://pg-probackup.readthedocs.io/en/latest/index.html).
+
+With `pg_probackup`, you can ensure your PostgreSQL data is safe and recoverable, giving you peace of mind and making database management a breeze.

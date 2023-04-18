@@ -1,17 +1,34 @@
 # Golden Signals
 
-## Golden Signals
+Golden Signals are a set of metrics that help monitor application performance and health, particularly in distributed systems. These metrics are derived from Google's Site Reliability Engineering (SRE) practices and can be easily applied to PostgreSQL troubleshooting methods. By monitoring these four key signals – latency, traffic, errors, and saturation – you can gain a better understanding of your PostgreSQL database's overall performance and health, as well as quickly identify potential issues.
 
-Golden signals are a set of key performance indicators (KPIs) used to monitor, diagnose, and troubleshoot the health or performance of a system, such as a PostgreSQL database. These signals, originally defined by Google in the context of monitoring distributed systems, provide a high-level overview of a system's performance and help identify potential bottlenecks, issues, or anomalies. These indicators are essential for effective management of PostgreSQL databases and they are a crucial aspect of troubleshooting methods.
+## Latency
 
-The four primary golden signals for PostgreSQL databases are:
+Latency refers to the amount of time it takes for your PostgreSQL database to process and return a request. High or increasing latency might be an indication of performance issues or an overloaded system. To monitor latency, you can measure the time taken to execute queries or transactions.
 
-1. **Latency**: The time taken by a request to complete or the response time for a query or transaction. High latency may indicate issues in the network, slow server response, or a bottleneck within the database. Monitoring and diagnosing latency issues can help improve the performance and responsiveness of a PostgreSQL database.
+* **Query latency:** Measure the average time taken to execute SELECT queries.
+* **Transaction latency:** Measure the average time taken to complete a database transaction.
 
-2. **Traffic**: The total number of requests or workload arriving at the database server. High or unexpected levels of traffic can lead to increased resource consumption or contention, impacting overall responsiveness and performance. Careful monitoring of traffic enables proactive capacity planning, ensuring consistent performance during periods of high demand.
+## Traffic
 
-3. **Errors**: The rate at which requests or queries fail, either due to system issues, incorrect input data or application bugs. An increase in errors can disrupt normal application functionality, leading to degraded user experience or data integrity issues. Monitoring error rates closely and identifying patterns or trends can help quickly diagnose and fix underlying problems.
+Traffic represents the volume of requests and data flowing through your PostgreSQL database. Monitoring traffic can help you understand the load on your system and identify patterns that may lead to performance bottlenecks.
 
-4. **Saturation**: The utilization of system resources (e.g., CPU, memory, disk I/O, network) due to the current workload. Saturation is often the leading cause of performance bottlenecks, which can result in slow response times, increased latencies, or even complete system failure. By monitoring saturation levels, you can identify potential issues before they become critical, making it easier to execute capacity planning and optimize resource allocation.
+* **Queries per second:** Track the number of SELECT queries executed per second to analyze the read load on your database.
+* **Transactions per second:** Track the number of transactions executed per second to analyze the overall load on your database.
 
-In conclusion, the golden signals of latency, traffic, errors, and saturation provide a powerful framework for monitoring and troubleshooting PostgreSQL databases. By regularly checking and optimizing these key performance indicators, you can maintain a healthy and high-performing database environment, ensuring reliable application performance and data integrity.
+## Errors
+
+Errors are events where your PostgreSQL database fails to return the expected result or perform the desired action. Monitoring error rates can help you identify potential bugs, configuration issues, or other problems affecting your database's performance and reliability.
+
+* **Error rate:** Measure the percentage of errors encountered out of the total number of requests made to your PostgreSQL database.
+* **Error types:** Track the frequency of different error types (e.g., constraint violations, syntax errors, connection issues) to identify specific issues.
+
+## Saturation
+
+Saturation refers to the utilization of your PostgreSQL database's resources, such as CPU, memory, disk, and network. Monitoring saturation levels can help you identify when your database is nearing its limits and might be at risk of performance degradation or failure.
+
+* **CPU utilization:** Monitor the percentage of CPU usage by your PostgreSQL database to identify potential bottlenecks or performance issues.
+* **Memory usage:** Measure the amount of memory consumed by your PostgreSQL database to ensure it remains within acceptable limits and doesn't cause performance problems.
+* **Disk space:** Keep an eye on the available disk space for your PostgreSQL database to avoid running out of storage, which could impair its function or lead to data loss.
+
+By closely monitoring these four golden signals, you can better understand the performance and health of your PostgreSQL database and proactively address potential issues before they escalate. Adapting these metrics to your specific environment and use case will ensure smoother operation and increased reliability for your database.

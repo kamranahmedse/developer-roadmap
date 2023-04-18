@@ -1,56 +1,51 @@
-# Postgres System Views
+# System Views in PostgreSQL
 
-## System Views
+PostgreSQL provides a set of system views that allow you to gain insight into the internal workings of the database. These views can be extremely helpful for troubleshooting and performance tuning as they expose information about various database components such as tables, indexes, schemas, and more. In this section, we'll explore some of the essential system views and their usage to aid in troubleshooting.
 
-**System Views** in PostgreSQL are predefined schema tables that provide information about the database system catalogs. They act as a window into the internal workings of the PostgreSQL database engine, enabling you to gather valuable information for troubleshooting and performance tuning.
+### pg_stat_activity
 
-System views are essentially a user-friendly interface built on top of system catalogs. They simplify the process of querying the catalogs, allowing you to interact with them easily.
+The `pg_stat_activity` view provides a real-time snapshot of the current queries being executed by the PostgreSQL server. It can be used to identify long-running queries, locks, or idle sessions. Example usage:
 
-### Types of System Views
+```sql
+SELECT datname, usename, state, query 
+FROM pg_stat_activity;
+```
 
-PostgreSQL provides two types of system views:
+### pg_stat_user_tables
 
-1. **Information Schema (information_schema):** This is a collection of views that provide an SQL-standard compliant view of the metadata of the database. It includes details about tables, columns, data types, constraints, and more. The Information Schema is designed to be portable across different relational database management systems (RDBMS).
+This view shows statistics about user tables, such as the number of rows inserted, updated, or deleted, the number of sequential scans and index scans, and more. This information can help you identify performance bottlenecks related to specific tables. Example usage:
 
-2. **PostgreSQL System Catalogs (pg_catalog):** These are a set of views specific to PostgreSQL, which provide additional information about the database, beyond what is available in the Information Schema. The PostgreSQL System Catalogs include details about database objects, system settings, and configuration parameters.
+```sql
+SELECT relname, seq_scan, idx_scan, n_tup_ins, n_tup_upd, n_tup_del 
+FROM pg_stat_user_tables;
+```
 
-### Using System Views
+### pg_stat_user_indexes
 
-To access information from system views, you can simply run SQL queries on them. Below are some examples:
+The `pg_stat_user_indexes` view provides information about the usage of user indexes, such as the number of index scans and the number of rows fetched by them. It helps you identify inefficient or rarely-used indexes. Example usage:
 
-- To list all tables in the current database:
+```sql
+SELECT relname, indexrelname, idx_scan, idx_tup_read, idx_tup_fetch 
+FROM pg_stat_user_indexes;
+```
 
-  ```sql
-  SELECT * FROM information_schema.tables WHERE table_schema = 'public';
-  ```
+### pg_locks
 
-- To list all columns of a specific table:
+The `pg_locks` view displays information about the current locks held within the database. This view is particularly helpful when investigating issues related to deadlocks or contention. Example usage:
 
-  ```sql
-  SELECT column_name, data_type, character_maximum_length
-  FROM information_schema.columns
-  WHERE table_schema = 'public' AND table_name = 'your_table_name';
-  ```
+```sql
+SELECT locktype, relation::regclass, mode, granted, query 
+FROM pg_locks l
+JOIN pg_stat_activity a ON l.pid = a.pid;
+```
 
-- To retrieve a list of active database connections:
+### pg_stat_database
 
-  ```sql
-  SELECT * FROM pg_stat_activity;
-  ```
+This view provides general database-level statistics such as the number of connections, committed transactions, rollbacks, and more. It is useful for understanding the overall health and workload on your database. Example usage:
 
-- To view the configuration settings for the current database:
+```sql
+SELECT datname, numbackends, xact_commit, xact_rollback, tup_inserted, tup_updated, tup_deleted 
+FROM pg_stat_database;
+```
 
-  ```sql
-  SELECT * FROM pg_settings;
-  ```
-
-### Troubleshooting Techniques
-
-System views may contain a wealth of information that can help you troubleshoot various database-related issues, such as:
-
-- Identifying locks and blocked transactions
-- Analyzing and optimizing slow-running queries
-- Monitoring and adjusting database resources
-- Investigating schema and data inconsistencies
-
-In conclusion, using system views in PostgreSQL is an invaluable method of accessing internal information for troubleshooting and performance tuning. By leveraging these views, you can efficiently analyze and maintain your database system.
+These are just a few of the many system views available in PostgreSQL. By leveraging these views and their insights into database performance, you can diagnose and solve a variety of issues related to your database system. Be sure to consult the [official PostgreSQL documentation](https://www.postgresql.org/docs/current/monitoring-stats.html) for an exhaustive list of system views and their descriptions.

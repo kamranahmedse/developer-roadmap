@@ -59,7 +59,8 @@ function writeTopicContent(currTopicUrl) {
     .slice(-2)
     .map((topic) => topic.replace(/-/g, ' '));
 
-  const roadmapTitle = roadmapId.replace(/-/g, ' ');
+  // const roadmapTitle = roadmapId.replace(/-/g, ' ');
+  const roadmapTitle = 'PostgreSQL';
 
   let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
   if (!childTopic) {

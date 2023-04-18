@@ -1,41 +1,68 @@
 # Core Dumps
 
-## Core Dumps
+A core dump is a file that contains the memory image of a running process and its process status. It's typically generated when a program crashes or encounters an unrecoverable error, allowing developers to analyze the state of the program at the time of the crash. In the context of PostgreSQL, core dumps can help diagnose and fix issues with the database system.
 
-Core dumps are generated when a program running on your system crashes, mainly due to unexpected issues or bugs in the code. In PostgreSQL DBA environment, you may often deal with core dumps to debug and analyze issues related to database crashes. It is essential for a DBA to understand core dumps and know how to utilize them effectively when troubleshooting.
+In this section, we'll discuss:
 
-### What is a Core Dump?
+- Configuring PostgreSQL to generate core dumps
+- Analyzing core dumps
 
-A core dump is a file that contains the memory dump of a running process and its current in-memory state when it crashed. The file usually has valuable information, such as the process's memory, CPU registers, and other system information, that can help diagnose the cause of the crash.
+## Configuring PostgreSQL to Generate Core Dumps
 
-### Configuring Core Dumps in PostgreSQL
+By default, core dumps may be disabled on your system or have limited size restrictions. To enable core dumps in PostgreSQL, you'll need to modify the following operating system settings.
 
-By default, PostgreSQL may not generate core dumps. To enable core dumps in PostgreSQL, apply the following configuration settings in the `postgresql.conf` file:
+* **ulimit** - Set the core file size limit to "unlimited" for the PostgreSQL process by updating the `ulimit` configuration:
 
-```
-# Enable core dumps
-debug_assertions = on
-debug_level = on
-```
+  ```
+  ulimit -c unlimited
+  ```
 
-After modifying the configuration and restarting the PostgreSQL server, the system will generate core dumps when a crash occurs.
+* **sysctl** - Enable core dumps for setuid (user ID change on execution) programs. Edit `/etc/sysctl.conf` file (or create it if it doesn't exist) and add the following line:
 
-### Analyzing Core Dumps
+  ```
+  fs.suid_dumpable=2
+  ```
 
-Analyzing a core dump involves using a debugger tool, such as `gdb` or `lldb`. These tools can load the core dump file and allow you to examine the process's state when it crashed. You can examine the call stack, memory, and register contents to identify the root cause of the crash.
+  Apply changes by running:
 
-Here's an example of how to analyze a core dump using `gdb`:
+  ```
+  sysctl -p
+  ```
 
-```bash
-$ gdb /path/to/postgres/executable /path/to/core-dump/file
-```
+* **PostgreSQL configuration** - Set the `debug_assertions` configuration parameter to "on" in `postgresql.conf`:
 
-Once loaded, you can use various commands in the debugger to investigate the cause of the crash:
+  ```
+  debug_assertions = on
+  ```
 
-- `bt` or `backtrace`: Display the call stack of the crashed process
-- `list`: Show the source code where the crash occurred
-- `info registers`: Display the CPU register state at the time of the crash
+  Restart PostgreSQL for the changes to take effect.
 
-Analyzing core dumps can be a complex task, but it's an essential skill for PostgreSQL DBAs to diagnose and fix critical issues.
+## Analyzing Core Dumps
 
-It's important to note that the core dump files can get quite large, depending on the process's memory usage. Ensure your system has adequate disk space to store core dump files during the troubleshooting process. Additionally, core dumps may contain sensitive information, such as passwords or encryption keys, so handle the files with care and follow your organization's security policies.
+When a core dump occurs, it's saved in the current working directory of the PostgreSQL process. You can use debugging tools like `gdb` (GNU Debugger) to analyze the core dump.
+
+Here is a simple step-by-step guide to analyze a core dump using `gdb`:
+
+- Install `gdb` if it's not already installed on your system:
+
+   ```
+   sudo apt-get install gdb
+   ```
+
+- Locate the core dump file (usually named `core` or `core.<pid>`).
+
+- Run `gdb` with the PostgreSQL binary and the core dump file as arguments:
+
+   ```
+   gdb /path/to/postgres-binary /path/to/core-dump
+   ```
+
+- Once `gdb` starts, you can issue commands to examine the state of the program:
+
+   * `bt` (backtrace) - displays the call stack at the time of the crash
+   * `frame <number>` - select a specific frame in the call stack
+   * `info locals` - display local variables in the current frame
+
+- When you're done analyzing, exit `gdb` by entering the command `quit`.
+
+Remember, core dumps can contain sensitive information, such as table data or user passwords, so make sure to handle them securely and delete them when no longer needed.

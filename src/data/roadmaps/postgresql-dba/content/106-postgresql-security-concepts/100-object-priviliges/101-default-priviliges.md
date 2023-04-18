@@ -1,47 +1,56 @@
-# Default Privileges
+# Default Privileges in PostgreSQL
 
-## Default Privileges in PostgreSQL
+PostgreSQL allows you to define object privileges for various types of database objects. These privileges determine if a user can access and manipulate objects like tables, views, sequences, or functions. In this section, we will focus on understanding default privileges in PostgreSQL.
 
-Default privileges in PostgreSQL are the permissions that are automatically assigned to objects within a database when they are created. These privileges determine what actions can be performed on the objects and by which users or roles.
+## What are default privileges?
 
-### Understanding Default Privileges
+When an object is created in PostgreSQL, it is assigned a set of initial privileges. These initial privileges are known as _default privileges_. Default privileges are applied to objects created by a specific user, and can be configured to grant or restrict access to other users or groups.
 
-By default, PostgreSQL assigns certain privileges to the user or role that creates the object, as well as the public group. Here's a breakdown of default privileges assigned to different object types:
+The main purpose of default privileges is to simplify the process of granting the necessary access to objects for various database users. By configuring default privileges, you can control the level of access users have to database objects without having to manually assign privileges each time a new object is created.
 
-- **Tables**: The creator of a table gets all the privileges including SELECT, INSERT, UPDATE, DELETE, TRUNCATE, REFERENCES, and TRIGGER. The PUBLIC group doesn't have any privileges by default.
+## Configuring default privileges
 
-- **Sequences**: The user who created the sequence gets USAGE, SELECT, UPDATE privileges. Similarly, the PUBLIC group doesn't have any privileges by default.
+To configure default privileges, you can use the `ALTER DEFAULT PRIVILEGES` command. This command allows you to define the privileges that are granted or revoked by default for objects created by a specific user.
 
-- **Functions**: The creator of a function gets EXECUTE privilege, and the PUBLIC group gets no privileges by default.
-
-- **Types and Domains**: The user who creates the TYPE or DOMAIN gets USAGE privilege, and the PUBLIC group doesn't have any privileges by default.
-
-- **Schemas**: The creator of a schema gets CREATE, USAGE, and TEMPORARY privileges. The PUBLIC group gets only the USAGE privilege on the schema.
-
-### Modifying Default Privileges
-
-You can modify the default privileges for newly created objects by using the `ALTER DEFAULT PRIVILEGES` command. This command allows to specify roles or users, set the grant options, and specify the object we want to modify the default privileges for.
-
-#### Syntax
+Here's a basic syntax of the `ALTER DEFAULT PRIVILEGES` command:
 
 ```sql
 ALTER DEFAULT PRIVILEGES
     [ FOR { ROLE | USER } target_role [, ...] ]
     [ IN SCHEMA schema_name [, ...] ]
-    { GRANT | REVOKE [ GRANT OPTION FOR ] } privileges
-    ON { ALL TABLES | ALL SEQUENCES | ALL FUNCTIONS | ALL TYPES | ALL DOMAINS }
-    TO { [ GROUP ] role_name | PUBLIC } [, ...] [ WITH HIERARCHY ]
+    { GRANT | REVOKE } privs
+    [ GRANT OPTION ]
+    [ CASCADE | RESTRICT ]
 ```
 
-#### Example
+Let's go through some examples to better understand how to use this command:
 
-Here's an example of how to grant SELECT permission on all newly created tables to the role `readonly_user`:
+**Example 1:** Grant SELECT privilege on all tables created by user1 to user2:
 
 ```sql
-ALTER DEFAULT PRIVILEGES
-    IN SCHEMA public
-    GRANT SELECT ON TABLES
-    TO readonly_user;
+ALTER DEFAULT PRIVILEGES FOR USER user1
+    GRANT SELECT ON TABLES TO user2;
 ```
 
-Keep in mind that modifying default privileges only applies to future objects, not existing ones. If you want to modify the privileges of existing objects, you have to use the `GRANT` and `REVOKE` commands for each object explicitly.
+**Example 2:** Revoke INSERT privilege on all sequences created by user1 in schema 'public' from user3:
+
+```sql
+ALTER DEFAULT PRIVILEGES FOR USER user1
+    IN SCHEMA public
+    REVOKE INSERT ON SEQUENCES FROM user3;
+```
+
+## Resetting default privileges
+
+To reset the default privileges to the system defaults, you can simply revoke the previously granted privileges using the `ALTER DEFAULT PRIVILEGES` command along with the `REVOKE` clause.
+
+For example, to reset the default privileges on tables created by user1:
+
+```sql
+ALTER DEFAULT PRIVILEGES FOR USER user1
+    REVOKE ALL PRIVILEGES ON TABLES FROM PUBLIC;
+```
+
+## Summary
+
+In conclusion, default privileges in PostgreSQL are a convenient way to automatically grant or restrict users' access to database objects. You can control the default privileges using the `ALTER DEFAULT PRIVILEGES` command, making it easier to manage object-level permissions across your database for specific users or groups.

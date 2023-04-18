@@ -1,53 +1,59 @@
 # Using `pg_ctl`
 
-## Using `pg_ctl`
+`pg_ctl` is a command-line utility that enables you to manage a PostgreSQL database server. With `pg_ctl`, you can start, stop, and restart the PostgreSQL service, among other tasks. In this section, we'll discuss how to use `pg_ctl` effectively for managing your PostgreSQL installation.
 
-`pg_ctl` is a utility for managing PostgreSQL server processes. This tool allows you to start, stop, restart, and check the status of your PostgreSQL server. In this section, we will cover the basic usage of `pg_ctl` and some common scenarios where it is helpful.
-
-### Starting the PostgreSQL server
+## Start the PostgreSQL Server
 
 To start the PostgreSQL server, you can use the following command:
 
-```
-pg_ctl start -D /path/to/your/data/directory
-```
-
-Here, the `-D` flag specifies the location of your PostgreSQL data directory, which contains various configuration files and the database itself.
-
-### Stopping the PostgreSQL server
-
-To stop a running PostgreSQL server, use the following command:
-
-```
-pg_ctl stop -D /path/to/your/data/directory
+```bash
+pg_ctl start -D /path/to/your_data_directory
 ```
 
-### Restarting the PostgreSQL server
+Replace `/path/to/your_data_directory` with the path of your actual data directory. This command will start the PostgreSQL server process in the background.
 
-If you need to restart the server for any reason, such as applying new configuration changes, you can use the restart command:
+If you'd like to start the server in the foreground, you can use the `-l` flag followed by the path of the logfile:
 
-```
-pg_ctl restart -D /path/to/your/data/directory
-```
-
-### Checking the server status
-
-To check the status of your PostgreSQL server, use the status command:
-
-```
-pg_ctl status -D /path/to/your/data/directory
+```bash
+pg_ctl start -D /path/to/your_data_directory -l /path/to/logfile.log
 ```
 
-This command will display whether the server is running, its process ID (PID), and the location of the data directory.
+## Stop the PostgreSQL Server
 
-### Additional options
+To stop the PostgreSQL server, use the following command:
 
-`pg_ctl` offers additional options, such as controlling the wait time before stopping the server, or even running a new instance with a different configuration file. You can find the full list of options by running:
-
-```
-pg_ctl --help
+```bash
+pg_ctl stop -D /path/to/your_data_directory
 ```
 
-### Summary
+By default, this sends a `SIGTERM` signal to the server, which allows it to perform a fast shutdown. If you'd like to perform a smart or immediate shutdown, you can use the `-m` flag followed by the mode (i.e., `smart` or `immediate`):
 
-`pg_ctl` is a valuable tool for managing PostgreSQL server instances. It helps you start, stop, restart, and check the status of your PostgreSQL server easily. Familiarizing yourself with its usage will make your job easier as a PostgreSQL DBA.
+```bash
+pg_ctl stop -D /path/to/your_data_directory -m smart
+```
+
+## Restart the PostgreSQL Server
+
+Restarting the PostgreSQL server is done by stopping and starting the server again. You can use the following command to achieve that:
+
+```bash
+pg_ctl restart -D /path/to/your_data_directory
+```
+
+You can also specify a shutdown mode and a log file, just like when starting and stopping the server:
+
+```bash
+pg_ctl restart -D /path/to/your_data_directory -m smart -l /path/to/logfile.log
+```
+
+## Check the PostgreSQL Server Status
+
+To check the status of the PostgreSQL server, you can run the following command:
+
+```bash
+pg_ctl status -D /path/to/your_data_directory
+```
+
+This will provide you with information about the running PostgreSQL server, such as its process ID and hostname.
+
+In summary, `pg_ctl` is a powerful tool for managing your PostgreSQL installation. With it, you can start, stop, restart, and check the status of your PostgreSQL server. By mastering `pg_ctl`, you can ensure that your PostgreSQL server is running smoothly and efficiently.

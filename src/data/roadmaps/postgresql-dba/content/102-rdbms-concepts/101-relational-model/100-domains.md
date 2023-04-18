@@ -1,58 +1,50 @@
-# Domains
+# Domains in PostgreSQL
 
-## Domains
+Domains in PostgreSQL are essentially user-defined data types that can be created using the `CREATE DOMAIN` command. These custom data types allow you to apply constraints and validation rules to columns in your tables by defining a set of values that are valid for a particular attribute or field. This ensures consistency and data integrity within your relational database.
 
-In the relational model, a domain is a set of possible values, or a "type" that represents the characteristics of the data within columns of a table. Domains allow us to store, manipulate, and ensure the integrity of the data in a table. In PostgreSQL, a domain is a user-defined data type, which can consist of base types, composite types, and enumerated types, along with optional constraints such as NOT NULL and CHECK constraints.
+## Creating Domains
 
-Here is a brief summary of the key aspects of domains in PostgreSQL:
-
-### 1. Domain creation
-
-To create a domain, you can use the `CREATE DOMAIN` command, as follows:
+To create a custom domain, you need to define a name for your domain, specify its underlying data type, and set any constraints or default values you want to apply. The syntax for creating a new domain is:
 
 ```sql
-CREATE DOMAIN domain_name [AS] data_type
-[DEFAULT expression]
-[NOT NULL | NULL]
-[CHECK (constraint_expression)];
+CREATE DOMAIN domain_name AS underlying_data_type
+  [DEFAULT expression]
+  [NOT NULL]
+  [CHECK (condition)];
 ```
 
-For example, to create a domain for storing email addresses, you can use the following command:
+- `domain_name`: The name of the custom domain you want to create.
+- `underlying_data_type`: The existing PostgreSQL data type on which your domain is based.
+- `DEFAULT expression`: An optional default value for the domain when no value is provided.
+- `NOT NULL`: Determines whether null values are allowed in the domain. If set, null values are not allowed.
+- `CHECK (condition)`: Specifies a constraint that must be met for values in the domain.
+
+## Example
+
+Suppose you want to create a custom domain to store phone numbers. This domain should only accept valid 10-digit phone numbers as input. Here's an example of how you might define this domain:
 
 ```sql
-CREATE DOMAIN email_address AS varchar(255)
-NOT NULL
-CHECK (value ~* '^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+[.][A-Za-z]{2,4}$');
+CREATE DOMAIN phone_number AS VARCHAR(10)
+  NOT NULL
+  CHECK (VALUE ~ '^[0-9]{10}$');
 ```
 
-### 2. Domain usage
-
-Once you have created a domain, you can use it as a data type while defining the columns of a table. Here's an example:
+Now that your `phone_number` domain is created, you can use it when defining columns in your tables. For example:
 
 ```sql
-CREATE TABLE users (
+CREATE TABLE customers (
   id serial PRIMARY KEY,
-  first_name varchar(25) NOT NULL,
-  last_name varchar(25) NOT NULL,
-  email email_address
+  name VARCHAR(50) NOT NULL,
+  phone phone_number
 );
 ```
 
-### 3. Domain modification
+In this example, the `phone` column is based on the `phone_number` domain and will only accept values that pass the defined constraints.
 
-To modify an existing domain, you can use the `ALTER DOMAIN` command. This command allows you to add or drop constraints, change the default value, and rename the domain. Here's an example:
+## Modifying and Deleting Domains
 
-```sql
-ALTER DOMAIN email_address 
-SET DEFAULT 'example@example.com';
-```
+You can alter your custom domains by using the `ALTER DOMAIN` command. To delete a domain, you can use the `DROP DOMAIN` command. Be aware that dropping a domain may affect the tables with columns based on it.
 
-### 4. Domain deletion
+## Summary
 
-To delete a domain, you can use the `DROP DOMAIN` command. Be careful when doing this, as it will delete the domain even if it is still being used as a data type in a table:
-
-```sql
-DROP DOMAIN IF EXISTS email_address CASCADE;
-```
-
-By using domains, you can enforce data integrity, validation, and consistency throughout your database, while also making it easier to maintain and refactor your schema.
+Domains in PostgreSQL are a great way to enforce data integrity and consistency in your relational database. They allow you to create custom data types based on existing data types with added constraints, default values, and validation rules. By using domains, you can streamline your database schema and ensure that your data complies with your business rules or requirements.
