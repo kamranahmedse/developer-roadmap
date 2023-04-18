@@ -66,7 +66,7 @@ function writeTopicContent(currTopicUrl) {
     prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
   }
 
-  console.log(`Genearting '${childTopic || parentTopic}'...`);
+  console.log(`Generating '${childTopic || parentTopic}'...`);
 
   return new Promise((resolve, reject) => {
     openai
@@ -90,6 +90,52 @@ function writeTopicContent(currTopicUrl) {
   });
 }
 
+async function writeFileForGroup(group, topicUrlToPathMapping) {
+  const topicId = group?.properties?.controlName;
+  const topicTitle = group?.children?.controls?.control?.find(
+    (control) => control?.typeID === 'Label'
+  )?.properties?.text;
+  const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
+  if (!currTopicUrl) {
+    return;
+  }
+
+  const contentFilePath = topicUrlToPathMapping[currTopicUrl];
+
+  if (!contentFilePath) {
+    console.log(`Missing file for: ${currTopicUrl}`);
+    return;
+  }
+
+  const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
+  const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() === '';
+
+  if (!isFileEmpty) {
+    console.log(`Ignoring ${topicId}. Not empty.`);
+    return;
+  }
+
+  let newFileContent = `# ${topicTitle}`;
+
+  if (!OPEN_AI_API_KEY) {
+    console.log(`Writing ${topicId}..`);
+
+    fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+    return;
+  }
+
+  const topicContent = await writeTopicContent(currTopicUrl);
+  newFileContent += `\n\n${topicContent}`;
+
+  console.log(`Writing ${topicId}..`);
+  fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+
+  // console.log(currentFileContent);
+  // console.log(currTopicUrl);
+  // console.log(topicTitle);
+  // console.log(topicUrlToPathMapping[currTopicUrl]);
+}
+
 async function run() {
   const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
 
@@ -106,50 +152,13 @@ async function run() {
     console.log('----------------------------------------');
   }
 
+  const writePromises = [];
   for (let group of groups) {
-    const topicId = group?.properties?.controlName;
-    const topicTitle = group?.children?.controls?.control?.find(
-      (control) => control?.typeID === 'Label'
-    )?.properties?.text;
-    const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
-    if (!currTopicUrl) {
-      continue;
-    }
-
-    const contentFilePath = topicUrlToPathMapping[currTopicUrl];
-
-    if (!contentFilePath) {
-      console.log(`Missing file for: ${currTopicUrl}`);
-      return;
-    }
-
-    const currentFileContent = fs.readFileSync(contentFilePath, 'utf8');
-    const isFileEmpty = currentFileContent.replace(/^#.+/, ``).trim() === '';
-
-    if (!isFileEmpty) {
-      console.log(`Ignoring ${topicId}. Not empty.`);
-      continue;
-    }
-
-    let newFileContent = `# ${topicTitle}`;
-
-    if (!OPEN_AI_API_KEY) {
-      console.log(`Writing ${topicId}..`);
-      fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
-      continue;
-    }
-
-    const topicContent = await writeTopicContent(currTopicUrl);
-    newFileContent += `\n\n${topicContent}`;
-
-    console.log(`Writing ${topicId}..`);
-    fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
-
-    // console.log(currentFileContent);
-    // console.log(currTopicUrl);
-    // console.log(topicTitle);
-    // console.log(topicUrlToPathMapping[currTopicUrl]);
+    writePromises.push(writeFileForGroup(group, topicUrlToPathMapping));
   }
+
+  console.log('Waiting for all files to be written...');
+  await Promise.all(writePromises);
 }
 
 run()
