@@ -32,13 +32,6 @@ seo:
     - 'what is dba'
     - 'database administrator quiz'
     - 'dba interview questions'
-relatedRoadmaps:
-  - 'mongodb'
-  - 'backend'
-  - 'devops'
-sitemap:
-  priority: 1
-  changefreq: 'monthly'
 sponsor:
   url: 'https://www.singlestore.com/resources/ebook-oreilly-chapters-sql-for-data-analysis-2021-11/?utm_source=roadmap&utm_medium=referral&utm_campaign=april2023'
   title: 'SQL for Data Analysis'
@@ -47,7 +40,14 @@ sponsor:
   event:
     category: 'SponsorClick'
     action: 'SingleStore Redirect'
-    label: 'DBA / SingleStore Link'
+    label: 'PostgreSQL / SingleStore Link'
+relatedRoadmaps:
+  - 'mongodb'
+  - 'backend'
+  - 'devops'
+sitemap:
+  priority: 1
+  changefreq: 'monthly'
 tags:
   - 'roadmap'
   - 'main-sitemap'
