@@ -55,6 +55,35 @@ Example playbook for installing PostgreSQL on Ubuntu:
 
 In this example, the playbook installs the required packages, configures PostgreSQL using a custom `pg_hba.conf` file (from a Jinja2 template), and then reloads and restarts the PostgreSQL service.
 
+## pgLift for Ansible
+
+pgLift is a PostgreSQL automation tool that helps you manage your PostgreSQL servers and databases. It includes a set of Ansible modules that can be used to automate common tasks, such as creating databases, users, and extensions, or managing replication and backups.
+
+pgLift modules are available on [Ansible Galaxy](https://galaxy.ansible.com/pglift), and can be installed using the `ansible-galaxy` command:
+
+```bash
+ansible-galaxy collection install pglift.pglift
+```
+
+Once installed, you can use the modules in your playbooks:
+
+```yaml
+---
+- name: Create a database
+  hosts: all
+  become: yes
+  tasks:
+    - name: Create a database
+      pglift.pglift.postgresql_db:
+        name: mydb
+        owner: myuser
+        encoding: UTF8
+        lc_collate: en_US.UTF-8
+        lc_ctype: en_US.UTF-8
+        template: template0
+        state: present
+```
+
 ## Conclusion
 
 Ansible is a powerful configuration management tool that can greatly simplify the maintenance and deployment of PostgreSQL servers. By using Ansible playbooks and PostgreSQL modules, you can automate repetitive tasks, ensure consistent configurations, and reduce human error.
