@@ -1,8 +1,8 @@
 # Labeled Statements
 
-JavaScript label statements are used to prefix a label to an identifier. It can be used with `break` and `continue` statement to control the flow more precisely.
+JavaScript label statements are used to prefix a label with an identifier. It can be used with `break` and `continue` statements to control the flow more precisely.
 
-A label is simply an identifier followed by a colon`(:)` that is applied to a block of code.
+A label is simply an identifier followed by a colon `(:)` that is applied to a block of code.
 
 Visit the following resources to learn more:
 

@@ -1,6 +1,6 @@
 # Variable Declarations
 
-To use variables in JavaScript, we first need to create it i.e. declare a variable. To declare variables, we use one of the `var`, `let`, or `const` keywords.
+To use variables in JavaScript, we first need to create them i.e. declare a variable. To declare variables, we use one of the `var`, `let`, or `const` keywords.
 
 Visit the following resources to learn more:
 

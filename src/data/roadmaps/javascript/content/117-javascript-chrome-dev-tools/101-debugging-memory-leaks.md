@@ -1,6 +1,6 @@
 # Debugging Memory Leaks
 
-In JavaScript, memory leaks commonly occur within heap allocated memory, where short lived objects are attached to long lived ones and the Garbage Collector cannot safely de-allocate that memory as it is still referenced from the root set (the global object).
+In JavaScript, memory leaks commonly occur within heap-allocated memory, where short-lived objects are attached to long-lived ones and the Garbage Collector cannot safely de-allocate that memory as it is still referenced from the root set (the global object).
 
 Visit the following resources to learn more:
 

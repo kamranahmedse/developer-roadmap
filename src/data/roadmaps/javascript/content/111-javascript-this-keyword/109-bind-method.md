@@ -1,6 +1,6 @@
 # bind() method
 
-The `bind()` method return a new method that has its `this` keyword refers to the aspire object, with a given sequence of arguments which can be call later.
+The `bind()` method returns a new method that has its `this` keyword refers to the aspire object, with a given sequence of arguments that can be called later.
 
 Visit the following resources to learn more:
 

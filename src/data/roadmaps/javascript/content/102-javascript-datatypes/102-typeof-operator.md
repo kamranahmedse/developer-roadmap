@@ -1,6 +1,6 @@
 # TypeOf Operator
 
-You can use the typeOf operator to find the data type of a JavaScript variable.
+You can use the `typeOf` operator to find the data type of a JavaScript variable.
 
 Visit the following resources to learn more:
 

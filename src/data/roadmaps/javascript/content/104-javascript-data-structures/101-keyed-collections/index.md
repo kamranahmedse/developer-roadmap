@@ -1,6 +1,6 @@
 # Keyed Collections
 
-Keyed collections are data collections that are ordered by key not index. They are associative in nature. Map and set objects are keyed collections and are iterable in the order of insertion.
+Keyed collections are data collections that are ordered by key, not index. They are associative. Map and set objects are keyed collections and are iterable in the order of insertion.
 
 Visit the following resources to learn more:
 

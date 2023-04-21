@@ -2,7 +2,7 @@
 
 ## Scope
 
-A space or environment in which a particular variable or function can be accessed or used. Accessibility of this variable or function depends on where it is defined.
+A space or environment in which a particular variable or function can be accessed or used. The accessibility of this variable or function depends on where it is defined.
 
 JavaScript has the following kinds of scopes:
 

@@ -19,7 +19,7 @@ schema:
   dateModified: '2023-01-20'
 seo:
   title: 'JavaScript Developer Roadmap: Step by step guide to learn JavaScript'
-  description: 'Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources and guides listed in this roadmap.'
+  description: 'Community driven, articles, resources, guides, interview questions, quizzes for javascript development. Learn to become a modern JavaScript developer by following the steps, skills, resources, and guides listed in this roadmap.'
   keywords:
     - 'javascript guide 2023'
     - 'learn javascript'
