@@ -1,6 +1,6 @@
 # setTimeout
 
-The setTimeout runs a function after the specified period expires. Times are declared in milliseconds.
+The `setTimeout` runs a function after the specified period expires. Times are declared in milliseconds.
 
 Visit the following resources to learn more:
 
