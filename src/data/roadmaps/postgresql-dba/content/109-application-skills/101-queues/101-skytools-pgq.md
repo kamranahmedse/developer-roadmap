@@ -13,23 +13,4 @@ Here's a brief overview of some core concepts of PGQ:
 - **Producer**: A producer application adds events to the queue. Producers can be external applications or built using PL/pgSQL functions.
 - **Consumer**: A consumer application processes the events from the queue. Consumers can be implemented in any programming language capable of interfacing with the PostgreSQL database.
 
-## Benefits of Using PGQ
-
-Integrating PGQ into your PostgreSQL database solution provides several advantages:
-
-- **Scalability**: PGQ can handle a high volume of events, making it suitable for large databases and distributed systems.
-- **Fault-tolerance**: PGQ ensures a consistent and reliable event processing by preventing duplicate and lost events.
-- **Concurrency**: Multiple consumers can work on the same queue concurrently without affecting each other’s performance.
-- **Consistency**: With transactional support, PGQ guarantees the atomicity of event processing, ensuring both the event and its associated data modifications are in sync.
-
-## Getting Started with PGQ
-
-To start using Skytools PGQ, follow these basic steps:
-
-- [Download and install Skytools](https://github.com/pgq/skytools) on your system.
-- Create a queue in your PostgreSQL database using the provided functions, for example, `create_queue('queue_name')`.
-- Implement a producer to insert events into the queue using SQL statements or PL/pgSQL functions.
-- Implement a consumer to process the events from the queue. Skytools provides a Python library [`skytools.pgq`](http://skytools.projects.pgfoundry.org/docs/skytools-3.2/python-api.html) to facilitate consumer development.
-- Register your consumer application using the provided Skytools functions, for example, `register_consumer('queue_name', 'consumer_name')`.
-
-By incorporating PGQ into your PostgreSQL workflows, you'll gain a powerful and flexible queuing system that can help you manage and process your data with greater efficiency and reliability.
+- [PgQ — Generic Queue for PostgreSQL](https://github.com/pgq)
