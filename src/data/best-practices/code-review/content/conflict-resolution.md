@@ -1,0 +1,1 @@
+# Define a process for conflict resolution in code reviews.

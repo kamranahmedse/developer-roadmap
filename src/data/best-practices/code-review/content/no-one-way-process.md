@@ -1,0 +1,1 @@
+# Encourage communication/collaboration; avoid treating code reviews as a one-way process.

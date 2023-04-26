@@ -1,0 +1,1 @@
+# Use automation to speed up the code reviews (linting, sniffing etc)

@@ -1,0 +1,1 @@
+# Seek continuous improvement, not perfection.

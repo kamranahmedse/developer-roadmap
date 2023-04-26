@@ -1,0 +1,1 @@
+# Ensure that you understand the codebase and its architecture.

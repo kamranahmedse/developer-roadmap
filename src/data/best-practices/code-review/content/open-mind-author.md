@@ -1,0 +1,1 @@
+# Approach the review process with an open mind, and be willing to learn from and collaborate with other team members.

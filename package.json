@@ -17,6 +17,7 @@
     "roadmap-dirs": "node bin/roadmap-dirs.cjs",
     "roadmap-content": "node bin/roadmap-content.cjs",
     "best-practice-dirs": "node bin/best-practice-dirs.cjs",
+    "best-practice-content": "node bin/best-practice-content.cjs",
     "test:e2e": "playwright test"
   },
   "dependencies": {

@@ -1,0 +1,1 @@
+# Resolve conflicting opinions in a timely manner; don't let a PR sit around due to disagreement.

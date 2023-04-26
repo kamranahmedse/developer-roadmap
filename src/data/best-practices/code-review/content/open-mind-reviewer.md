@@ -1,0 +1,1 @@
+# Approach the process with an open mind; be willing to provide constructive feedback and collaborate to improve code quality

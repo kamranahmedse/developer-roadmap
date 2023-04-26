@@ -1,0 +1,1 @@
+# Stay consistent with the overall project design and architecture.

@@ -1,0 +1,1 @@
+# Consider using pair programming as an alternative or supplement to code reviews.

@@ -1,0 +1,1 @@
+# Use code reviews as an opportunity for knowledge sharing and learning.

@@ -2,24 +2,35 @@ const fs = require('fs');
 const path = require('path');
 
 const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
-const ALL_ROADMAPS_DIR = path.join(__dirname, '../src/data/roadmaps');
-const ROADMAP_JSON_DIR = path.join(__dirname, '../public/jsons/roadmaps');
+const ALL_BEST_PRACTICES_DIR = path.join(
+  __dirname,
+  '../src/data/best-practices'
+);
+const BEST_PRACTICE_JSON_DIR = path.join(
+  __dirname,
+  '../public/jsons/best-practices'
+);
 
-const roadmapId = process.argv[2];
+const bestPracticeId = process.argv[2];
+const bestPracticeTitle = bestPracticeId.replace(/-/g, ' ');
 
-const allowedRoadmapIds = fs.readdirSync(ALL_ROADMAPS_DIR);
-if (!roadmapId) {
-  console.error('roadmapId is required');
+const allowedBestPracticeIds = fs.readdirSync(ALL_BEST_PRACTICES_DIR);
+if (!bestPracticeId) {
+  console.error('bestPracticeId is required');
   process.exit(1);
 }
 
-if (!allowedRoadmapIds.includes(roadmapId)) {
-  console.error(`Invalid roadmap key ${roadmapId}`);
-  console.error(`Allowed keys are ${allowedRoadmapIds.join(', ')}`);
+if (!allowedBestPracticeIds.includes(bestPracticeId)) {
+  console.error(`Invalid bestPractice key ${bestPracticeId}`);
+  console.error(`Allowed keys are ${allowedBestPracticeIds.join(', ')}`);
   process.exit(1);
 }
 
-const ROADMAP_CONTENT_DIR = path.join(ALL_ROADMAPS_DIR, roadmapId, 'content');
+const BEST_PRACTICE_CONTENT_DIR = path.join(
+  ALL_BEST_PRACTICES_DIR,
+  bestPracticeId,
+  'content'
+);
 const { Configuration, OpenAIApi } = require('openai');
 const configuration = new Configuration({
   apiKey: OPEN_AI_API_KEY,
@@ -38,7 +49,7 @@ function getFilesInFolder(folderPath, fileList = {}) {
       getFilesInFolder(filePath, fileList);
     } else if (stats.isFile()) {
       const fileUrl = filePath
-        .replace(ROADMAP_CONTENT_DIR, '') // Remove the content folder
+        .replace(BEST_PRACTICE_CONTENT_DIR, '') // Remove the content folder
         .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
         .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
         .replace(/\.md$/, ''); // Remove `.md` from the end of file
@@ -50,23 +61,10 @@ function getFilesInFolder(folderPath, fileList = {}) {
   return fileList;
 }
 
-function writeTopicContent(currTopicUrl) {
-  const [parentTopic, childTopic] = currTopicUrl
-    .replace(/^\d+-/g, '/')
-    .replace(/:/g, '/')
-    .replace(/^\//, '')
-    .split('/')
-    .slice(-2)
-    .map((topic) => topic.replace(/-/g, ' '));
+function writeTopicContent(topicTitle) {
+  let prompt = `I am reading best-practices about "${bestPracticeTitle}". I want to know more about "${parentTopic}". Why is it important? Content should be in markdown. Behave as if you are the author of the best practices.`;
 
-  const roadmapTitle = roadmapId.replace(/-/g, ' ');
-
-  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
-  if (!childTopic) {
-    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief summary for that topic. Content should be in markdown. Behave as if you are the author of the guide.`;
-  }
-
-  console.log(`Generating '${childTopic || parentTopic}'...`);
+  console.log(`Generating '${topicTitle || parentTopic}'...`);
 
   return new Promise((resolve, reject) => {
     openai
@@ -95,8 +93,8 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
   const topicTitle = group?.children?.controls?.control?.find(
     (control) => control?.typeID === 'Label'
   )?.properties?.text;
-  const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
-  if (!currTopicUrl) {
+  const currTopicUrl = `/${topicId}`;
+  if (currTopicUrl.startsWith('/check:')) {
     return;
   }
 
@@ -104,6 +102,7 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 
   if (!contentFilePath) {
     console.log(`Missing file for: ${currTopicUrl}`);
+    process.exit(0);
     return;
   }
 
@@ -124,7 +123,7 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
     return;
   }
 
-  const topicContent = await writeTopicContent(currTopicUrl);
+  const topicContent = await writeTopicContent(topicTitle);
   newFileContent += `\n\n${topicContent}`;
 
   console.log(`Writing ${topicId}..`);
@@ -137,10 +136,13 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 }
 
 async function run() {
-  const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
+  const topicUrlToPathMapping = getFilesInFolder(BEST_PRACTICE_CONTENT_DIR);
 
-  const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
-  const groups = roadmapJson?.mockup?.controls?.control?.filter(
+  const bestPracticeJson = require(path.join(
+    BEST_PRACTICE_JSON_DIR,
+    `${bestPracticeId}.json`
+  ));
+  const groups = bestPracticeJson?.mockup?.controls?.control?.filter(
     (control) =>
       control.typeID === '__group__' &&
       !control.properties?.controlName?.startsWith('ext_link')
