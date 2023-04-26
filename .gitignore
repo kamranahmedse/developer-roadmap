@@ -24,3 +24,4 @@ pnpm-debug.log*
 /playwright-report/
 /playwright/.cache/
 tests-examples
+*.csv

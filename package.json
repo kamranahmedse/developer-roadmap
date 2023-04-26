@@ -41,6 +41,7 @@
     "@playwright/test": "^1.32.3",
     "@tailwindcss/typography": "^0.5.9",
     "@types/js-cookie": "^3.0.3",
+    "csv-parser": "^3.0.0",
     "gh-pages": "^5.0.0",
     "js-yaml": "^4.1.0",
     "markdown-it": "^13.0.1",

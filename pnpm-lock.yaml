@@ -11,6 +11,7 @@ specifiers:
   '@types/js-cookie': ^3.0.3
   astro: ^2.2.3
   astro-compress: ^1.1.35
+  csv-parser: ^3.0.0
   gh-pages: ^5.0.0
   jose: ^4.13.2
   js-cookie: ^3.0.1
@@ -50,6 +51,7 @@ devDependencies:
   '@playwright/test': 1.32.3
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.1
   '@types/js-cookie': 3.0.3
+  csv-parser: 3.0.0
   gh-pages: 5.0.0
   js-yaml: 4.1.0
   markdown-it: 13.0.1
@@ -1786,6 +1788,14 @@ packages:
     dependencies:
       css-tree: 2.2.1
     dev: false
+
+  /csv-parser/3.0.0:
+    resolution: {integrity: sha512-s6OYSXAK3IdKqYO33y09jhypG/bSDHPuyCme/IdEHfWpLf/jKcpitVFyOC6UemgGk8v7Q5u2XE0vvwmanxhGlQ==}
+    engines: {node: '>= 10'}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.8
+    dev: true
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -3605,7 +3615,6 @@ packages:
 
   /minimist/1.2.8:
     resolution: {integrity: sha512-2yyAR8qBkN3YuheJanUpWC5U3bb5osDywNB8RzDVlDwDHbocAJveqqj1u8+SVD7jkWT4yvsHCpWqqWqAxb0zCA==}
-    dev: false
 
   /minipass-collect/1.0.2:
     resolution: {integrity: sha512-6T6lH0H8OG9kITm/Jm6tdooIbogG9e0tLgpY6mphXSm/A9u8Nq1ryBG+Qspiub9LjWlBPsPS3tWQ/Botq4FdxA==}
