@@ -1,13 +1,13 @@
-## Verifying Code in the Production Environment
+# Verify the Change in Production.
 
-Verifying the deployed changes in production environment is critical to ensure your application's performance and stability, and helps avoid potential issues that might have not been evident during the testing phase. Always make sure that the code changes undergo thorough examination in the production environment during your code review process. Here are some reasons why this is important:
+Veryfing the change is a crucial step in the code review process that ensures the recently merged changes work correctly and do not cause any unexpected disruptions when deployed to the live production environment. Rigorous testing before deployment helps minimize the risks, but having an additional layer of validation post-deployment provides you with the confidence that your code changes are working as intended while interacting with real users and production data. To make sure of this, consider the following tips:
 
-- **Discovering Potential Issues**: Despite a code's functionality in testing and staging environments, some problems might only surface in the production environment. This check helps uncover such issues, which could have been missed otherwise.
+- Implement automated monitoring and alerting systems to keep track of your application's key performance indicators (KPIs) and notify you in case of a significant change in the metrics.
 
-- **Consistency with Existing Systems**: Verifying code in the production environment helps ensure that new changes are compatible with the existing systems, and that the changes don't introduce unexpected behaviors, crashes, or other issues in the live application.
+- Incorporate feature flags or toggles, allowing you to easily enable or disable specific changes in your code, making the process of identifying and resolving issues in production faster.
 
-- **Performance Assurance**: Live traffic and workloads in the production environment may be entirely different compared to the test environments. Thus, it is crucial to ensure that the new code performs well under real-life conditions too.
+- Perform smoke tests, which are quick and basic functional checks that help confirm the operational stability of your application after deploying new changes.
 
-- **Data-related Issues**: The production environment often involves real user data, which might differ from the test data used during development. By verifying the changes in the production environment, data-related issues can be taken care of, ensuring smooth operation for the end-users.
+- Observe user interaction through user analytics, bug reports, or direct feedback to assess whether the code change has had the intended impact and is positively affecting the user experience.
 
-- **Compliance and Security**: In many organizations, compliance and security are of utmost importance. Verifying that the code changes in the production environment adhere to the necessary regulations and security measures can prevent severe consequences like data leaks and security breaches.
+- Establish strategies for gradual deployment, such as canary or blue-green deployments, to minimize the potential impact of a problematic change on your entire user base and ensure smoother rollback if needed.

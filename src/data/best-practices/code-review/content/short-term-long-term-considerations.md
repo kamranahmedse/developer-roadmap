@@ -1,22 +1,10 @@
-# Keep the Short-term and Long-term Considerations in Mind
+# Short-term and long-term Considerations
 
-When conducting code reviews, it's essential to consider both short-term and long-term implications of the code changes being proposed. This approach helps ensure that the code remains manageable, scalable, and reliable in the long run while addressing immediate requirements.
+In a well-balanced code review, it is essential to keep both short-term and long-term considerations in mind. Short-term considerations focus on the immediate impact of the changes, such as bug fixes, performance improvements, and adherence to coding standards. On the other hand, long-term considerations are aimed at ensuring the code remains maintainable, scalable, and aligned with the broader architectural vision. As a code reviewer, it is your responsibility to strike a balance between these two aspects, making sure your feedback addresses immediate concerns without compromising the codebase's future health. Here are some tips to help you achieve this:
 
-### Why is it important?
-
-- **Short-term considerations** predominantly focus on the correctness, readability, security, and performance of the code changes. Addressing these aspects allows the project to move forward smoothly, avoids immediate bugs or performance issues, and helps other team members to understand and work with the code.
-
-- **Long-term considerations** involve evaluating the architectural impact, maintainability, and extensibility of the code changes. These aspects are crucial for the overall success of the project as they ensure that the codebase remains flexible and adaptable to future changes.
-
-Considering both short-term and long-term aspects in a code review ensures that the codebase remains robust and maintainable. This approach minimizes potential technical debt, while also fostering a development environment where all team members can contribute effectively.
-
-### Practical Tips
-
-- Encourage reviewers to consider the code's impact on the overall system architecture and any potential future changes.
-- Address potential performance bottlenecks or resource usage concerns that may grow with the scalability of the application.
-- Evaluate whether code changes adhere to the project's established design patterns, naming conventions, and best practices, to maintain consistency and readability.
-- Consider the robustness and resilience of the proposed code changes, especially in terms of error handling and edge case scenarios.
-- Analyze the changes' impact on testability, requiring thorough automated test coverage for critical parts of the codebase.
-- Assess the code's extensibility and modularity, which might include evaluating if the changes enable the easy addition or removal of features, or if they could be easily ported to other parts of the system.
-
-By keeping both short-term and long-term considerations in mind during code reviews, your team's codebase will be well-positioned for continued growth, improvement, and success.
+- Encourage the use of design patterns and architectural best practices that promote maintainability and adaptability.
+- Check for code readability and simplicity, as these contribute to easier future modifications.
+- Consider the impact of changes on existing and potential integrations, keeping in mind the system's overall extensibility.
+- Ensure new features or improvements are justified, avoiding the addition of unnecessary complexity that may hinder future development.
+- Encourage documentation for any non-trivial code or design decisions, which helps other developers understand the rationale behind the change and avoids potential issues down the line.
+- Consider if the proposed solution aligns with the team's overall coding practices, tech stack, and organizational goals, ensuring a coherent and unified codebase.

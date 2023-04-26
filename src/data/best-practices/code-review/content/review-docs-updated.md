@@ -1,15 +1,15 @@
-# Ensure that the Relevant Documentation has been Updated
+# Documentation is Updated
 
-Updating the relevant documentation is a crucial aspect of the code review process. This ensures that all team members, including future contributors, can understand the changes that have been made, how to use the modified code, and any potential effects of the changes. Below are key points on why this practice is important:
+Proper documentation serves as a guide for future developers, allowing them to easily understand, maintain and enhance the existing codebase. In addition, good documentation can also save time, mitigate confusion, and reduce errors among team members. To make sure that the relevant documentation is up-to-date and precise, follow these tips:
 
-- **Maintain Comprehensibility**: Updated documentation enables both the author and the reviewers to understand the code and its impact more easily. This clarity paves the way for constructive feedback, which ultimately results in improved code quality.
+- Require updated documentation as part of the code review process: Make it a standard practice for developers to submit updates to the relevant documentation along with their code changes.
 
-- **Promote Consistency**: Comprehensive and up-to-date documentation helps ensure that a consistent style and approach are followed throughout the codebase. This consistency is vital in making the code easy to read and maintain.
+- Check for consistency and accuracy: Review the updated documentation to ensure it accurately and clearly reflects the changes made in the code. This includes following naming conventions, correct syntax, and descriptions of the new features or functions.
 
-- **Save Time and Effort**: Whenever a team member modifies a part of the codebase, they should update the accompanying documentation. By doing so, developers can save time and effort that would otherwise be spent deciphering code that lacks proper documentation.
+- Assess whether there are any missing sections: Look for parts of the code that may have been altered or added but have not been documented. Make sure to remind the developer to provide appropriate documentation for these changes as well.
 
-- **Facilitates Onboarding and Collaboration**: Accurate, well-maintained documentation facilitates smooth onboarding for new team members and fosters collaboration among existing ones. Developers can confidently make changes to the code without worrying about unintended consequences, thanks to comprehensive documentation.
+- Encourage detailed comments in the code: Ensure that the contributors sufficiently explain their changes within the code itself. While not a strict replacement for external documentation, code comments are invaluable for understanding the intent behind the code.
 
-- **Helps with Code Maintenance**: By keeping documentation up-to-date, it becomes easier to perform ongoing maintenance tasks, such as bug fixes and feature enhancements. It further reduces the likelihood that future developers will inadvertently introduce new issues when making changes.
+- Keep documentation easy to maintain: Suggest using clear, concise language and a consistent format throughout the documentation, making it easier for team members to maintain and update as needed.
 
-In conclusion, ensuring the documentation is updated as part of the code review process is essential for maintaining coherent, accessible, and maintainable codebases. It enhances collaboration within the team and contributes to the overall success of the project.
+By following these tips, you will ensure that your team's documentation stays up-to-date, providing a valuable resource to support the continued quality and maintainability of your codebase.

@@ -1,15 +1,15 @@
-# Importance of Respectful and Professional Feedback in Code Reviews
+# Be Professional
 
-One of the key aspects of a successful code review revolves around the manner in which feedback is provided. It is essential for all reviewers to maintain a respectful and professional attitude while giving feedback, and avoid personal attacks or derogatory comments. Here are a few reasons why this is so important:
+When engaged in reviewing your peers' work, it's crucial to approach each comment and suggestion with tact and empathy, ensuring that your communication remains constructive and free from personal attacks or derogatory remarks. To make sure you abide by this best practice and foster a positive team dynamic, here are some tips to guide your feedback approach:
 
-- **Fosters a positive work environment**: A respectful and professional tone during code reviews contributes to a better team dynamic and work environment. It encourages open communication and fosters a sense of belonging and support among team members.
+- Focus on the code, not the person: Address the code changes and avoid directing comments towards the individual who submitted the code.
 
-- **Focuses on the code, not the person**: Code reviews should be focused on improving the codebase and identifying areas for improvement. By avoiding personal attacks or derogatory comments, reviewers can ensure that the feedback remains productive and directed towards the code itself instead of the individual who wrote it.
+- Use neutral language: Keep your language objective and non-inflammatory, steering clear of words or phrases that may be perceived as aggressive, dismissive, or condescending.
 
-- **Encourages learning and growth**: A respectful approach to feedback allows others to learn from their mistakes without feeling embarrassed or humiliated. It facilitates an environment where team members feel comfortable asking questions and seeking help, which is crucial for growth and development.
+- Be specific and clear: Offer feedback that is direct and actionable, outlining any areas of concern or suggested improvements with clarity and detail.
 
-- **Reduces defensiveness**: Personal attacks or derogatory comments may result in the receiver becoming defensive, which is counterproductive in the code review process. A respectful and professional tone helps to minimize defensive reactions, allowing for a more open and productive dialogue about the code.
+- Be open to questions and discussion: Encourage open dialogue by inviting questions or alternative viewpoints, demonstrating a willingness to listen and learn from others.
 
-- **Helps build trust and collaboration**: Providing professional and respectful feedback helps to build trust among team members. This trust, in turn, fosters a collaborative approach in tackling challenges and improving the codebase as a team.
+- Offer praise alongside critiques: Celebrate the successes of your team members, acknowledging their hard work and achievements as you address any issues or opportunities for growth.
 
-Remember that as a reviewer, your role is to help your colleagues improve their work, and ultimately, ensure the success of the project. By staying respectful and professional in your feedback, you contribute to a positive team dynamic and foster an environment that promotes learning, collaboration, and continuous improvement.
+- Remember the human element: Keep in mind that there's a person behind every code submission - remain empathetic, respectful, and patient throughout the code review process.

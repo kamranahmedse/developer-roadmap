@@ -1,23 +1,13 @@
-# Leave Comments to Suggest Improvements
+# Nitpick Comments
 
-During the code review process, it's essential to provide constructive feedback to the author of the code for possible improvements. These suggestions can help enhance code quality and readability, fostering a learning environment within the team. 
+I highly recommend leaving comments to suggest improvements, as this helps ensure high quality and maintainable code. However, it is important to differentiate between critical revisions and those elements that have room for improvement but can be considered as "nice to have." To indicate these less critical suggestions, we use the prefix "Nit." They convey that your suggestion is a minor point and helps the developer understand the reviewer's perspective on the importance of the suggestion. This allows them to prioritize their revisions effectively. Here are some tips to keep in mind:
 
-**Use "Nit" prefix for non-critical comments**
+- When leaving a comment or suggestion, consider whether it is critical to meeting the coding standards or offering a significant improvement to the code. If not, prefix your comment with "Nit."
 
-When providing feedback, it's important to distinguish between critical issues that must be resolved to meet the team's coding standards and non-critical suggestions that can be considered by the author. Using the term "Nit" before your comment helps in conveying that the suggestion is a "nitpick," which means it's optional or less important than other issues.
+- Encourage a balanced approach to comments, where you highlight both critical and non-critical suggestions. This allows the developer to address important aspects, while being aware of opportunities for improvement.
 
-By prefixing your comment with "Nit", you are effectively communicating the following:
+- When reviewing code, always ensure you give positive feedback as well. This points out what the developer is doing right, and offers motivation to continue doing great work.
 
-- **Prioritization**: It helps both the reviewer and the author in prioritizing the feedback. Critical issues should be addressed first, while non-critical suggestions can be considered later or even left unaddressed if necessary.
+- In your comments, be specific and clear about what needs improvement, keeping in mind that the developer may not have the same context as you. This will facilitate productive discussions and faster decision-making.
 
-- **Respect**: Using "Nit" shows respect for the author's work and acknowledges their effort, ensuring that you are focused on providing constructive criticism without being overly critical or dogmatic.
-
-- **Clear communication**: It helps in avoiding misunderstandings, reducing the chances of arguments or misinterpretations of your feedback. The author knows that this suggestion is not a hard requirement and they can decide whether to accept or ignore it.
-
-_Additional tip: Be mindful of the tone of your comments – try to keep the language respectful, supportive, and encourage a positive attitude._
-
-**Example:**
-
-Nit: Consider renaming this variable to `userCount` for better readability.
-
-By following this best practice, you can effectively contribute to the growth of the team's collective knowledge, and ensure a smoother code review process that leads to high-quality code.
+By following this practice, you create a healthy environment for code review that fosters open communication, learning, and improvement while making sure that critical standards are met.

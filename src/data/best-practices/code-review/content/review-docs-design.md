@@ -1,15 +1,15 @@
 # Review Documentation and Design Specifications
 
-One important aspect of a code review is to **review any documentation or design specifications related to the change** that is being introduced by the developer. This is crucial for several reasons:
+In the process of code review, it is of utmost importance to not only focus on the source code but also to review any associated documentation or design specifications related to the change. This ensures that the implementation adheres to the initial plan and provides a comprehensive understanding of the proposed modifications. To make sure you follow this best practice effectively, consider the following tips:
 
-- **Ensure Consistency**: Any changes to the codebase should align with the existing documentation and design specifications. Reviewing these documents helps to make sure that the implemented changes remain consistent with the intended design and functionality.
+- Familiarize yourself with the project's documentation standards and guidelines to evaluate if the submitted documents comply with these expectations.
 
-- **Verify Requirements**: Documentation and design specifications contain the requirements for the project or feature. Checking the code against these requirements ensures that the change meets the initial goals and objectives.
+- Compare the design specifications with the actual code changes to ensure that the implementation is consistent with the planned design.
 
-- **Facilitate Understanding**: Examining documentation or design specifications can help reviewers gain a better understanding of the change and its impact on the system. This leads to a more effective review process and better-informed decisions regarding the changes in question.
+- Look for any discrepancies or missing information in the documentation and design specifications. This can include gaps in explanation, assumptions, or unclear information that might lead to misunderstandings or inconsistencies in the implementation.
 
-- **Detect Issues Early**: By cross-validating the code against its corresponding documentation, reviewers can identify potential issues, discrepancies, or inconsistencies before they become bigger problems. This ensures more efficient development and helps avoid costly mistakes down the line.
+- Verify if the documentation accurately captures the impact of the change on other parts of the system, e.g., dependencies, performance, or security implications.
 
-- **Improve Documentation Quality**: A review of documentation and design specifications might reveal inaccuracies, uncertainties, or gaps that need to be addressed. In this way, code reviews play a vital role in maintaining the quality and clarity of project documentation, which benefits the entire development team.
+- Check if the documentation is updated to reflect any changes in the code, such as modifications to APIs, user interfaces, or functionality.
 
-In summary, reviewing documentation and design specifications during a code review is essential for ensuring consistency with the intended design, meeting project requirements, facilitating understanding of changes, detecting issues early and maintaining high-quality project documentation.
+Remember that reviewing documentation and design specifications helps ensure clarity and maintainability of the project, making it easier for everyone involved to contribute effectively.

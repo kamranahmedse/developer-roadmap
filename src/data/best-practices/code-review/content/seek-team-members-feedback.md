@@ -1,13 +1,11 @@
-# Seek Feedback from Other Team Members If You Are Unsure About the Changes
+# Seek Team Members' Feedback
 
-It is important to seek feedback from other team members when you are unsure about the changes for a few reasons:
+Seeking feedback from other team members is an essential aspect of the code review process when you are unsure about the changes made in the code. This collaborative approach not only helps in improving the quality of the code but also promotes knowledge sharing and learning among team members. To ensure that you effectively seek feedback, follow these tips:
 
-- **Diverse perspectives and experiences**: In a team, each member brings their own unique set of skills, experiences, and perspectives. By engaging others in the code review process, you are more likely to identify potential issues or improvements that you may have missed initially.
+- Don't hesitate to ask questions and present your doubts or concerns about the code changes openly.
+- Reach out to team members with specific expertise in the area of the code in question to gain valuable insights.
+- Use the commenting feature in your code review tool to highlight areas of the code that need clarification or further discussion.
+- Encourage an open and constructive discussion around the changes, while remaining respectful and receptive to diverse opinions.
+- Consider holding brief team meetings or code review sessions to discuss complex changes and ensure everyone is on the same page.
 
-- **Shared ownership and knowledge**: Encouraging the involvement of others in the code review process helps foster a sense of shared responsibility and ownership of the codebase. This practice also allows for better knowledge transfer between team members, ensuring that more than one person is familiar with any given part of the codebase.
-
-- **Reduced risk of bias**: As the author of a piece of code, it's natural to have certain biases or attachments to the implemented solution. Involving other team members in the code review process ensures that a fresh pair of eyes can review the code, providing feedback that might be less biased and more objective.
-
-- **Continuous learning and improvement**: By seeking feedback from other team members, both the reviewer and author can learn from one another's insight and experiences. This continuous learning process helps the entire team to grow, adapt, and improve over time.
-
-In conclusion, seeking feedback from other team members helps ensure a comprehensive, unbiased, informative, and robust code review process. By embracing this best practice, teams can benefit from collective knowledge and experiences, resulting in better-quality code, shared ownership, and continuous improvement.
+By incorporating these tips into your code review process, you will not only ensure effective feedback but also contribute to the overall improvement of your team's coding skills and products.

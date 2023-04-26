@@ -1,27 +1,10 @@
-# Team Wide Styleguide: The Absolute Authority in Styling
+# Team-wide style is followed
 
-One of the essential best practices in code review is to **verify changes against the team-wide styleguide instead of personal preferences**. This is important for several reasons:
+To achieve this, I recommend adopting a team-wide style guide, which serves as the authoritative reference for code styling within the project. As a reviewer, your role is to verify the changes against this guide, rather than imposing your personal preferences. This helps to reduce inconsistencies and foster a collaborative environment. To ensure the effective implementation of the style guide, consider the following tips:
 
-- **Consistency**: A styleguide ensures that the entire codebase follows a uniform style and structure. This makes it easier for every team member to understand and maintain the code.
-
-- **Efficiency**: Adhering to a shared styleguide eliminates the need for debates on styling preferences during code review. This significantly reduces review time and allows developers to focus on more important aspects, such as the correctness and the optimization of the code.
-
-- **Professionalism**: A well-crafted styleguide reflects a certain level of professionalism and maturity within the team. It represents the team's commitment to producing high-quality and maintainable code.
-
-- **Onboarding**: A team-wide styleguide acts as a valuable resource for new team members. It helps them quickly acclimate to the team’s coding standards and expectations.
-
-### Tips for an Effective Styleguide
-
-To fully reap the benefits of a shared styleguide, it's important to keep the following tips in mind:
-
-- **Collaboration**: Involve the entire team in creating and updating the styleguide. This ensures everyone's preferences and insights are considered, promoting acceptance and adherence.
-
-- **Clarity**: Write clear and concise guidelines that can be easily understood by all team members.
-
-- **Accessibility**: Make the styleguide easily accessible to the team, either by storing it in a shared repository or within the project's documentation.
-
-- **Automation**: Where possible, automate the enforcement of code style guidelines using linters, formatters, or other tools that can detect and correct violations.
-
-- **Regular Updates**: Revisit and update the styleguide periodically to ensure it remains relevant and adapts to any changes in the team, technology, or coding best practices.
-
-By establishing a team-wide styleguide as the ultimate authority in code styling, you'll create a more consistent, efficient, and productive coding environment for everyone involved.
+- Create a clear and concise style guide that covers all major aspects of code styling, such as naming conventions, indentation, and code organization.
+- Share the style guide with all team members and make sure everyone understands its requirements and follows them consistently.
+- Integrate automated linting tools and formatters into your development process to check and enforce code style automatically.
+- Provide dedicated workshops or training sessions to new team members on the style guide, so that they can quickly get up to speed with the team's preferred style.
+- During the code review process, focus on ensuring that the changes align with the style guide. If you find deviations, point them out and guide the developer towards the proper style.
+- Continuously review and update the style guide based on the team's changing needs and preferences. Encourage team members to suggest improvements and changes to make the guide more effective over time.

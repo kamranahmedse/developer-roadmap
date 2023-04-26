@@ -1,11 +1,13 @@
 # Address Author Concerns
 
-An important aspect of the code review process is ensuring that the author of the code feels heard and understood throughout the entire process. When they raise questions or concerns, there are three main reasons why addressing them is vital:
+In the code review process, it is essential for the reviewers not only to provide constructive feedback but also to address any questions or concerns that the author of the code may have. This enables a collaborative learning environment and ensures that both the author and the reviewer have a shared understanding of the code changes, resulting in a better final product. To make sure any questions or concerns are addressed, consider the following tips:
 
-- **Clarification**: Sometimes, the author may have questions about the changes suggested in the review. By addressing their questions, we ensure that they understand the motivation behind the suggestions and can implement them appropriately.
+- Encourage open communication: Foster a culture where the author feels comfortable asking questions or seeking clarifications without fear of being judged. A positive, supportive atmosphere will lead to more productive discussions and better outcomes.
+  
+- Be accessible: Make sure you as a reviewer are available to answer questions and provide assistance when needed. This may involve setting aside specific times for code review discussions or being responsive on communication channels.
 
-- **Learning opportunity**: As the reviewer, you may have valuable knowledge or experience that could benefit the author's growth as a developer. By addressing their concerns, you create a knowledge-sharing environment that fosters continuous learning.
+- Ask questions: During the code review, actively ask the author if they have any questions or concerns about the feedback provided. This can help identify potential areas of confusion and create opportunities for clarification and learning.
 
-- **Mutual understanding**: One of the main goals of code review is to reach a mutual understanding and agreement about the code. Addressing any questions or concerns raised by the author helps ensure that both parties are on the same page about the improvements needed and the reasoning behind them.
+- Provide clear explanations: When giving feedback, ensure your comments are clear and concise, so the author can understand the reasoning behind your suggestions. This can help prevent misunderstandings and encourage meaningful discussions.
 
-By focusing on addressing questions and concerns, we can create an inclusive code review process that benefits both the author and the reviewer, leading to better code quality and collaboration.
+- Follow up: After the code review is completed, follow up with the author to ensure they've understood the feedback and have no lingering questions or concerns. This will help reinforce the learning process and ensure a positive code review experience for both parties.

@@ -1,17 +1,19 @@
-# Write the Documentation for the Feature or Changes If Required
+# Documentation
 
-Documentation is an essential aspect of software development. Properly written documentation makes it easier for other developers to understand the purpose of the code, how it works, and how to use it. As the developer who wrote or made changes to the code, you have the most knowledge about it, and hence writing documentation can be highly beneficial for everyone involved in the project.
+It is important to keep your project's documentation up-to-date with every new feature or modifications made in your codebase. Comprehensive and well-maintained documentation plays a crucial role in the overall code review process, as it provides a clear understanding of the changes, their purpose, and their potential impact. This helps reviewers to efficiently assess the quality and relevance of your work. As the author of this guide, let me share some tips on how to ensure proper documentation during code review:
 
-Here are a few reasons why writing documentation is important:
+- Identify the need for documentation updates: Whenever you make changes or add new features to your codebase, assess their significance and the need for documentation updates.
 
-- **Ease of understanding**: Comprehensive documentation helps your team members understand your code better. It provides a clear understanding of the functionality, inputs, outputs, and potential edge cases of the new feature or changes.
+- Be concise and descriptive: When writing documentation, provide essential information about the feature or changes while highlighting the benefits, use cases, and any potential caveats.
 
-- **Saves time**: When the documentation is clear and concise, it saves time for other developers when they are reviewing your code or attempting to use it in the future. They won’t have to waste time trying to understand the purpose of your code, and they can spend more time focusing on other tasks.
+- Focus on clarity and simplicity: Use clear and straightforward language to communicate the ideas effectively, and avoid jargon or complex phrases that may confuse readers.
 
-- **Easier maintenance**: Documentation helps future developers easily maintain and modify the code. When implementation details are documented, it's easier for developers to spot potential issues, optimizing the code or fixing bugs.
+- Update relevant sections: Ensure you update all pertinent sections of the documentation, such as user guides, API references, and developer notes.
 
-- **Onboarding new team members**: Onboarding new developers to your project becomes much more manageable if there is documentation to go through. They can quickly gain insights into the codebase and start being productive sooner.
+- Include in-code comments: Add meaningful comments and explanations within your code to give context about the purpose and functionality of specific blocks or sections.
 
-- **Establishes best practices**: Writing documentation for your code encourages you to plan, structure, and think about the long-term effects of your code. This practice helps you avoid creating hard-to-understand code – ultimately improving the overall quality of the project.
+- Encourage review and feedback: During the code review process, ask your peers to provide feedback specifically on the documentation updates, ensuring they're accurately reflecting the changes and additions.
 
-So, take the time to write documentation for your code. It's a best practice that not only benefits others in the team but also helps you solidify your understanding of the code you wrote. Remember, good documentation is a sign of a developer who cares about the maintainability and long-term success of their code.
+- Maintain proper versioning: If your project utilizes versioning, make sure to document and update the corresponding versions affected by the changes.
+
+Following these tips will aid in crafting thorough and accurate documentation, making the code review process more efficient and ensuring your team is well-informed about your project's latest advancements.

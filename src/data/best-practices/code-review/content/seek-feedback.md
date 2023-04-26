@@ -1,15 +1,17 @@
-# Encourage Authors to Seek Feedback During Development Before Submitting a Formal Code Review
+# Seek feedback Early and Often
 
-It is important to encourage authors to seek feedback during the development phase, prior to submitting a formal code review, for several reasons:
+In the software development process, it is essential for developers to use efficient and effective practices to ensure that their code is of high quality. One such practice is encouraging authors to seek feedback during the development phase, even before submitting a formal code review. This proactiveness fosters a culture of continuous learning, open communication, and shared ownership. It also helps in identifying issues early on, which greatly improves the overall health of the codebase.
 
-- **Early Detection of Issues:** Discussing the code with peers while it's being developed can help identify potential problems, misconceptions or areas that may need clarification earlier in the process. This can lead to a more robust and stable codebase with fewer bugs and issues at the time of review, making the review process more efficient.
+To ensure that early feedback is sought and implemented, here are some tips to follow:
 
-- **Better Code Comprehension:** When developers seek feedback during development, it provides an opportunity for team members to understand the rationale behind their design choices and overall approach. This makes it easier for the reviewer to comprehend the code, leading to a more effective review process.
+- Encourage developers to ask for feedback: Remind the team that everyone's opinions and expertise matter, and offer an open environment for discussions.
 
-- **Shared Ownership:** When a developer discusses their code with others during development, it encourages shared ownership and responsibility for the quality of the final product. This can foster a more collaborative and supportive coding environment, leading to an overall improvement in team productivity and code quality.
+- Make collaboration tools accessible: Use tools and platforms that facilitate easy communication, sharing, and collaboration on code, such as Git, Slack, or code pairing sessions.
 
-- **Faster Resolution of Conflicts:** If disagreements arise about the direction or implementation of a feature, seeking feedback during development allows for earlier resolution of conflicts, reducing the chances of time-consuming and potentially contentious discussions during the formal code review process.
+- Provide guidance and mentoring: Senior developers should take the time to guide and mentor junior developers, review code snippets, and give feedback during the development phase.
 
-- **Continuous Learning and Improvement:** By discussing the code with peers as it's being developed, developers can absorb new ideas, best practices, and alternative solutions from their colleagues. This continuous exchange of feedback and ideas encourages growth and allows individual developers to improve their skills at a faster rate.
+- Promote pair programming: Encourage the practice of pair programming for complex tasks, as it helps in knowledge sharing and real-time feedback.
 
-In summary, encouraging authors to seek feedback during development helps promote a more collaborative environment, improves the overall comprehension of code, ensures early identification of issues, and fosters continuous learning and improvement. This ultimately results in a more efficient code review process and a higher quality codebase.
+- Regularly conduct code walkthroughs: Schedule periodic code walkthroughs or informal review sessions to ensure the team is in sync and everyone is aware of the progress.
+
+By fostering a culture of collaboration and continuous learning, you can maximize the potential of your team and ensure that your codebase remains healthy, maintainable, and efficient.

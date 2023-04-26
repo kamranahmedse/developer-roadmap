@@ -1,25 +1,13 @@
-# Break Down Complex Tasks into Smaller Easily Manageable PRs
+# Break it Down
 
-Breaking down complex tasks into smaller, easily manageable PRs (Pull Requests) is an essential best practice for code reviews. This approach has numerous benefits that lead to an improved code review process and enhanced code quality.
+Tackling large and complex tasks in software development can be overwhelming and time-consuming, not to mention the challenges it brings during the code review process. By breaking down these tasks into smaller, more manageable PRs (Pull Requests), we can ensure a smoother, faster, and more accurate code review. Smaller PRs are easier to understand, test, and merge which speeds up the development cycle and results in better code quality. Here are some tips to making sure your tasks are broken down into smaller PRs:
 
-### 1. Easier Reviews
+- Modularize your code - Make sure your code is divided into logical modules and functions, with each module serving a single responsibility.
 
-Smaller PRs are less intimidating and easier to review. They allow developers to quickly understand the changes made and provide more accurate and actionable feedback. This ultimately leads to increased collaboration and faster iterations.
+- Focus on one feature or bug fix per PR - Resist the temptation to fix multiple issues or implement several features within the same PR. This keeps the scope of the PR narrow and easier to review.
 
-### 2. Reduced Cognitive Load
+- Keep the changes incremental - If a task requires a significant amount of code changes, break it down into multiple PRs that can be built and tested independently.
 
-Smaller PRs alleviate cognitive load, allowing developers to focus on the specific task at hand. This helps reviewers maintain their undivided attention on understanding and evaluating specific parts of the change, resulting in a more thorough review.
+- Communicate with your team - Make sure your team members know which tasks have been broken down and the order in which they should be reviewed and merged.
 
-### 3. Streamlined Workflows
-
-Reduced PR size typically results in quicker approval and merging, which in turn accelerates the development process. Additionally, by breaking down complex tasks into smaller chunks, it becomes easier to track progress and to provide incremental updates to stakeholders.
-
-### 4. Reduced Risk of Merge Conflicts
-
-Larger PRs are more prone to potential merge conflicts, especially when multiple developers are working in parallel. Smaller PRs, on the other hand, minimize the risk of conflicts and can be quickly resolved if they arise.
-
-### 5. Easier Debugging
-
-Smaller PRs are typically easier to test, due to their focused scope. If a bug is found, it's easier to pinpoint the source of the issue in smaller PRs, providing a more efficient debugging process.
-
-In summary, breaking down complex tasks into smaller PRs improves the code review process by making it easier for the reviewer to understand and provide feedback. This best practice results in quicker approvals, reduced risk of merge conflicts, and ultimately, higher code quality.
+- Draft clear and concise PR descriptions - Outline the scope, purpose, and technical details of the PR, making it easier for reviewers to understand the changes and provide relevant feedback.

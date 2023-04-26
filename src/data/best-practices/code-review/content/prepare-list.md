@@ -1,23 +1,15 @@
-# Requirement-Based Checklist in Code Review
+# Prepare a List
 
-One of the best practices in code review is to **prepare a list of items that should have been covered in the changes, based on the requirements**. This is important for a number of reasons:
+In a code review process, it's essential to ensure that all the requirements or user stories for a specific feature or bug fix have been adequately addressed in the code changes submitted for review. To achieve this, preparing a checklist of items or requirements to be covered in the changes can help streamline the review process and ensure that nothing is missed. This not only improves the overall quality of the code but also saves time and effort in potential rework. In this section, we will go over some tips on how to create a list of items that should have been covered in the changes and ensure that the code complies with them.
 
-- **Clarity**: By preparing a list beforehand, it ensures that the reviewer has a clear understanding of the requirements and expectations from the changes. This helps in evaluating the code from a more informed perspective.
+- Familiarize yourself with the requirements: Thoroughly analyze the project's requirements documentation or user stories and identify the key components that need to be addressed in the code changes.
 
-- **Completeness**: It helps in verifying that all the necessary requirements have been addressed and implemented in the code changes. This checklist can be used as a reference to ensure no corner cases or requirements were overlooked during implementation.
+- Create a checklist: Based on the requirements, create a comprehensive checklist of items that must be covered in the code changes. Break complex requirements down into smaller tasks to ensure every aspect is addressed.
 
-- **Consistency**: Preparing a list of items based on requirements ensures consistency in code review. Different reviewers may focus on different aspects of the code, leading to inconsistent feedback. Creating a list of items that should be covered standardizes the review process and ensures everyone is on the same page.
+- Evaluate the code changes: As you review the code, cross-check with your checklist to ensure that each item has been taken into account. If anything is missing or not up to the mark, provide specific feedback in the review comments.
 
-- **Efficiency**: Listing out the requirements makes the code review process more efficient. Reviewers don't have to spend time trying to figure out what the code is trying to achieve - this context is readily available, and they can focus on evaluating the code itself.
+- Assess test coverage: Make sure that the code changes are supported by appropriate unit or integration tests, which cover the main requirements in the checklist. High-quality tests are crucial to prevent future regressions and ensure the code fulfills its intended purpose.
 
-- **Reducing Bias**: Having a list of items based on requirements helps to reduce bias in code review. By focusing on the actual requirements, it becomes easier for the reviewer to put personal preferences aside and stay objective in their evaluation.
+- Ensure clear communication: Share your requirements checklist with the developer at the start of the code review process. This will help them understand your expectations and provide a solid foundation for a smooth and constructive review.
 
-To create an effective requirement-based checklist for code review, consider the following steps:
-
-- Review the project documentation and understand the objectives of the changes being introduced.
-- Break down the requirements into concise and clear items that can be easily checked during the review process.
-- Organize these items into categories, such as functionality, security, performance, and code style.
-- Prioritize the items based on criticality, ensuring that the most important items are reviewed first.
-- Share the checklist with the team and update it as necessary when new requirements arise or existing ones change.
-
-In conclusion, developing a checklist based on requirements is a crucial best practice in code review. It ensures clarity, completeness, consistency, efficiency, and reduces bias in the review process, ultimately leading to better quality code and a more productive team.
+By creating and utilizing a requirements checklist, code reviewers can more effectively ensure that the submitted code changes adhere to the project's requirements and ultimately result in higher-quality software.

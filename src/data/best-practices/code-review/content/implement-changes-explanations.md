@@ -1,20 +1,17 @@
-# Implement the Suggested Changes and Provide Explanations Where Needed
+# Implement or Explain
 
-This best practice is important for several reasons:
+In the code review process, it is crucial to not only accept feedback but also to implement the suggested changes and provide clear explanations when needed. It demonstrates your willingness to collaborate and your commitment to enhance the quality of your code. In this section, we will discuss the importance of implementing these suggestions and provide tips on how to effectively communicate any additional context or reasons behind your approach.
 
-- **Maintain high-quality code** - Implementing the suggested changes from the code review helps ensure that the codebase remains clean, efficient, and maintainable.
+Tips to ensure this:
 
-- **Continuous improvement** - Resolving the issues raised during a code review promotes personal and team growth, which contributes to better software development practices.
+- Be open to feedback and be willing to accept constructive criticism that will improve your code.
 
-- **Mutual understanding** - Providing explanations for the implemented changes ensures that both the reviewer and the code author have a common understanding of the reasoning behind those changes. This can prevent potential issues and miscommunications in the future.
+- Take the time to thoroughly understand the suggested changes, and do not hesitate to ask for clarifications if necessary.
 
-- **Maximize the value of the review process** - Addressing the comments from the review and incorporating the feedback into the code ensures that the review process is valuable and time-effective.
+- When incorporating the changes, ensure your code remains consistent in structure and style, and adhere to the set guidelines.
 
-Remember to:
+- If you believe that certain suggestions are not appropriate, provide a clear and concise explanation, supported by technical or logical reasoning, to justify your decision.
 
-* Make the necessary changes in a timely manner to keep the codebase up to date and prevent conflicts.
-* Address all comments and suggestions, even if a change is not applied. If a suggested change is not implemented, provide a clear explanation why.
-* When providing explanations, be concise and clear, with a focus on ensuring the reviewer understands the reasoning.
-* Keep an open mind and be receptive to feedback, as it ultimately aims to improve the code and the overall project.
+- If you have made any updates that require further clarification, add comments to your code or respond to reviewers' comments to make your intention clear.
 
-By implementing the suggested changes and providing explanations where needed, you will ensure that your code review process is an efficient and effective method of maintaining high-quality code and promoting continuous improvement for your team.
+By emphasizing continuous improvement and effective communication, you will be able to create a positive code review process that benefits both you and your team members.
