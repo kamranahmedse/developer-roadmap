@@ -62,9 +62,9 @@ function getFilesInFolder(folderPath, fileList = {}) {
 }
 
 function writeTopicContent(topicTitle) {
-  let prompt = `I am reading best-practices about "${bestPracticeTitle}". I want to know more about "${parentTopic}". Why is it important? Content should be in markdown. Behave as if you are the author of the best practices.`;
+  let prompt = `I am reading a guide that has best practices about "${bestPracticeTitle}". I want to know more about "${topicTitle}". Why is it important? Give me the reply in markdown. Behave as if you are the author of the guide.`;
 
-  console.log(`Generating '${topicTitle || parentTopic}'...`);
+  console.log(`Generating '${topicTitle}'...`);
 
   return new Promise((resolve, reject) => {
     openai
