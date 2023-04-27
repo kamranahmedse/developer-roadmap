@@ -62,6 +62,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 
 We have also added a new form of visual content covering best practices:
 
+- [Code Review Best Practices](https://roadmap.sh/best-practices/code-review)
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
