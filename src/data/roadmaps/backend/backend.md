@@ -12,14 +12,14 @@ dimensions:
   width: 968
   height: 2840.4
 sponsor:
-  url: 'https://www.honeycomb.io/blog/how-we-define-sre-work-as-team?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-  title: 'Day in the Life of an SRE'
-  imageUrl: 'https://i.imgur.com/xANWBZQ.jpg'
-  description: 'Dive into the world of SRE work to better understand an SRE’s role in driving incident response.'
+  url: 'https://www.apollographql.com/tutorials/lift-off-part1?utm_campaign=2023-05-01_odyssey-lift-off-backend&utm_medium=display&utm_source=roadmap'
+  title: 'Free GraphQL Courses'
+  imageUrl: 'https://i.imgur.com/pZzroyL.png'
+  description: 'Level up your knowledge with interactive GraphQL trainings and earn a Graph Developer certification.'
   event:
     category: 'SponsorClick'
-    action: 'Honeycomb Redirect'
-    label: 'Backend / Honeycomb Link'
+    action: 'Apollo Redirect'
+    label: 'Backend / Apollo Link'
 schema:
   headline: 'Backend Developer Roadmap'
   description: 'Learn how to become a Backend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

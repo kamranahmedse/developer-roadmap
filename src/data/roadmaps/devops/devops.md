@@ -12,14 +12,14 @@ dimensions:
   width: 968
   height: 2527.46
 sponsor:
-  url: 'https://liblab.com/blog/why-do-i-need-to-build-an-sdk?utm_source=roadmap_devops&utm_medium=edge_stack&utm_campaign=april23'
-  title: 'Preferred Partner Content'
-  imageUrl: 'https://i.imgur.com/ntum19H.png'
-  description: 'Learn how to enhance API adoption, developer experience, and security by providing SDKs for your APIs.'
+  url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'Free eBook'
+  imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
+  description: 'Learn how to debug more quickly & get more time to innovate by starting your observability journey'
   event:
     category: 'SponsorClick'
-    action: 'Liblab Redirect'
-    label: 'DevOps / Liblab Link'
+    action: 'Honeycomb Redirect'
+    label: 'DevOps / Honeycomb Link'
 schema:
   headline: 'DevOps Roadmap'
   description: 'Learn to become a DevOps, SRE or get any other operations role with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

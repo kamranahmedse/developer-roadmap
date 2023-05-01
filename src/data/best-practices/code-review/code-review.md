@@ -28,4 +28,3 @@ seo:
     - 'quality code review'
     - 'code review process'
 ---
-

@@ -12,14 +12,14 @@ dimensions:
   width: 968
   height: 1669.8
 sponsor:
-  url: 'https://liblab.com/blog/using-github-graphql-api-with-github-actions?utm_source=roadmap_graphql&utm_medium=edge_stack&utm_campaign=april23'
-  title: 'Automate your Workflows'
-  imageUrl: 'https://i.imgur.com/ZmuZUmS.png'
-  description: 'Harness the power of GitHub Actions & GraphQL API for efficient project automation and management.'
+  url: 'https://www.apollographql.com/tutorials/lift-off-part1?utm_campaign=2023-05-01_odyssey-lift-off-graphql&utm_medium=display&utm_source=roadmap'
+  title: 'Free GraphQL Courses'
+  imageUrl: 'https://i.imgur.com/pZzroyL.png'
+  description: 'Level up your knowledge with interactive GraphQL trainings and earn a Graph Developer certification.'
   event:
     category: 'SponsorClick'
-    action: 'Liblab Redirect'
-    label: 'GraphQL / Liblab Link'
+    action: 'Apollo Redirect'
+    label: 'GraphQL / Apollo Link'
 schema:
   headline: 'GraphQL Roadmap'
   description: 'Learn how to use GraphQL with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

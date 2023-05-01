@@ -12,10 +12,10 @@ dimensions:
   width: 968
   height: 2822.1
 sponsor:
-  url: 'https://www.honeycomb.io/blog/an-engineering-managers-bill-of-rights-and-responsibilities?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-  title: 'Lead High-Impact Teams'
-  imageUrl: 'https://i.imgur.com/EBscW4C.jpg'
-  description: 'Learn what it takes to be a manager of a high-performance engineering team.'
+  url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
+  title: 'Free eBook'
+  imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
+  description: 'Learn how to debug more quickly & get more time to innovate by starting your observability journey'
   event:
     category: 'SponsorClick'
     action: 'Honeycomb Redirect'
