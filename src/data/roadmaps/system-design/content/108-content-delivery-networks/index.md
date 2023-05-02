@@ -11,4 +11,4 @@ Learn more about CDNs from the following links:
 
 - [Introduction to CDNs](https://github.com/donnemartin/system-design-primer#content-delivery-network)
 - [The Differences Between Push And Pull CDNs](http://www.travelblogadvice.com/technical/the-differences-between-push-and-pull-cdns/)
-- [Brief aout Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
+- [Brief about Content delivery network](https://en.wikipedia.org/wiki/Content_delivery_network)
