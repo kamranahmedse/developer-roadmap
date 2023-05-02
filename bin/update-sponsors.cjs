@@ -22,7 +22,7 @@ function removeAllSponsors(baseContentDir) {
 
   const contentDir = fs.readdirSync(contentDirPath);
   contentDir.forEach((content) => {
-    console.log('Removing sponsor from: ', content);
+    console.log('Removing sponsors from: ', content);
 
     const pageFilePath = path.join(contentDirPath, content, `${content}.md`);
     const pageFileContent = fs.readFileSync(pageFilePath, 'utf8');
@@ -35,7 +35,7 @@ function removeAllSponsors(baseContentDir) {
       .trim();
 
     let frontmatterObj = yaml.load(existingFrontmatter);
-    delete frontmatterObj.sponsor;
+    delete frontmatterObj.sponsors;
 
     const newFrontmatter = yaml.dump(frontmatterObj, {
       lineWidth: 10000,
@@ -87,27 +87,23 @@ function addPageSponsor({
     .trim();
 
   let frontmatterObj = yaml.load(existingFrontmatter);
-  delete frontmatterObj.sponsor;
+  const sponsors = frontmatterObj.sponsors || [];
 
   const frontmatterValues = Object.entries(frontmatterObj);
   const roadmapLabel = frontmatterObj.briefTitle;
 
+  sponsors.push({
+    url: redirectUrl,
+    title: adTitle,
+    imageUrl,
+    description: adDescription,
+    page: roadmapLabel,
+    company,
+  });
+
   // Insert sponsor data at 10 index i.e. after
   // roadmap dimensions in the frontmatter
-  frontmatterValues.splice(10, 0, [
-    'sponsor',
-    {
-      url: redirectUrl,
-      title: adTitle,
-      imageUrl,
-      description: adDescription,
-      event: {
-        category: 'SponsorClick',
-        action: `${company} Redirect`,
-        label: `${roadmapLabel} / ${company} Link`,
-      },
-    },
-  ]);
+  frontmatterValues.splice(10, 0, ['sponsors', sponsors]);
 
   frontmatterObj = Object.fromEntries(frontmatterValues);
 
