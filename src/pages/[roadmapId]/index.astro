@@ -5,14 +5,14 @@ import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
+import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import {
-  generateArticleSchema,
-  generateFAQSchema,
+generateArticleSchema,
+generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { getRoadmapIds, RoadmapFrontmatter } from '../../lib/roadmap';
+import { RoadmapFrontmatter,getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -63,7 +63,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   title={roadmapData?.seo?.title}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
-  sponsor={roadmapData.sponsor}
+  sponsors={roadmapData.sponsors}
   noIndex={roadmapData.isUpcoming}
   jsonLd={jsonLdSchema}
 >
@@ -95,7 +95,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
           />
-          <TopicDetail client:load />
+          <TopicDetail client:idle />
 
           <FrameRenderer
             resourceType={'roadmap'}

@@ -11,15 +11,13 @@ hasTopics: true
 dimensions:
   width: 968
   height: 1669.8
-sponsor:
-  url: 'https://www.apollographql.com/tutorials/lift-off-part1?utm_campaign=2023-05-01_odyssey-lift-off-graphql&utm_medium=display&utm_source=roadmap'
-  title: 'Free GraphQL Courses'
-  imageUrl: 'https://i.imgur.com/pZzroyL.png'
-  description: 'Level up your knowledge with interactive GraphQL trainings and earn a Graph Developer certification.'
-  event:
-    category: 'SponsorClick'
-    action: 'Apollo Redirect'
-    label: 'GraphQL / Apollo Link'
+sponsors:
+  - url: 'https://www.apollographql.com/tutorials/lift-off-part1?utm_campaign=2023-05-01_odyssey-lift-off-graphql&utm_medium=display&utm_source=roadmap'
+    title: 'Free GraphQL Courses'
+    imageUrl: 'https://i.imgur.com/pZzroyL.png'
+    description: 'Level up your knowledge with interactive GraphQL trainings and earn a Graph Developer certification.'
+    page: 'GraphQL'
+    company: 'Apollo'
 schema:
   headline: 'GraphQL Roadmap'
   description: 'Learn how to use GraphQL with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'

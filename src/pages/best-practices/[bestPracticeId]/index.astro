@@ -1,14 +1,14 @@
 ---
-import { TopicDetail } from '../../../components/TopicDetail/TopicDetail';
 import BestPracticeHeader from '../../../components/BestPracticeHeader.astro';
 import FrameRenderer from '../../../components/FrameRenderer/FrameRenderer.astro';
 import MarkdownFile from '../../../components/MarkdownFile.astro';
 import ShareIcons from '../../../components/ShareIcons/ShareIcons.astro';
+import { TopicDetail } from '../../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../../components/UpcomingForm.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import {
-  BestPracticeFrontmatter,
-  getBestPracticeIds,
+BestPracticeFrontmatter,
+getBestPracticeIds,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 
@@ -55,7 +55,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   title={bestPracticeData?.seo?.title}
   description={bestPracticeData.seo.description}
   keywords={bestPracticeData.seo.keywords}
-  sponsor={bestPracticeData.sponsor}
+  sponsors={bestPracticeData.sponsors}
   noIndex={bestPracticeData.isUpcoming}
   jsonLd={jsonLdSchema}
 >
@@ -85,7 +85,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
           />
 
-          <TopicDetail client:load />
+          <TopicDetail client:idle />
 
           <FrameRenderer
             resourceType={'best-practice'}

@@ -1,5 +1,5 @@
+import type { PageSponsorType } from '../components/PageSponsor';
 import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;
@@ -18,7 +18,7 @@ export interface RoadmapFrontmatter {
     width: number;
     height: number;
   };
-  sponsor?: SponsorType;
+  sponsors?: PageSponsorType[];
   seo: {
     title: string;
     description: string;

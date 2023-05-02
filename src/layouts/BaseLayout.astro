@@ -2,11 +2,10 @@
 import Analytics from '../components/Analytics/Analytics.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import Footer from '../components/Footer.astro';
-import { PageProgress } from '../components/PageProgress';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
-import Sponsor from '../components/Sponsor/Sponsor.astro';
+import { PageProgress } from '../components/PageProgress';
+import { PageSponsor,PageSponsorType } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 
@@ -18,7 +17,7 @@ export interface Props {
   noIndex?: boolean;
   canonicalUrl?: string;
   permalink?: string;
-  sponsor?: SponsorType;
+  sponsors?: PageSponsorType[];
   jsonLd?: Record<string, unknown>[];
 }
 
@@ -29,7 +28,7 @@ const {
   noIndex = false,
   permalink = '',
   canonicalUrl: givenCanonical = '',
-  sponsor,
+  sponsors,
   jsonLd = [],
   redirectUrl = '',
 } = Astro.props;
@@ -136,12 +135,12 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
     <slot name='page-footer'>
       <OpenSourceBanner />
       <Footer />
-      {sponsor && <Sponsor sponsor={sponsor} />}
     </slot>
 
     <Analytics />
     <Authenticator />
-    <PageProgress client:load />
+    <PageProgress client:idle />
+    <PageSponsor sponsors={sponsors || []} client:idle />
 
     <slot name='after-footer' />
   </body>

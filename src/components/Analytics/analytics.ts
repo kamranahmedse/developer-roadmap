@@ -1,4 +1,4 @@
-export {};
+export { };
 
 declare global {
   interface Window {
@@ -29,7 +29,7 @@ window.fireEvent = (props: GAEventType) => {
     return;
   }
 
-  if (window.__DEBUG__) {
+  if (import.meta.env.DEV) {
     console.log('Analytics event fired', props);
   }
 
