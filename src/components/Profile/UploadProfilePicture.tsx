@@ -121,9 +121,9 @@ export default function UploadProfilePicture({
             <img
               className="absolute inset-0 h-full w-full object-cover"
               src={
-                file?.preview ??
-                user.image ??
-                'https://d22sqt16nof9dt.cloudfront.net/1683071715132-1x3.jpeg'
+                file?.preview ||
+                user.image ||
+                'https://d22sqt16nof9dt.cloudfront.net/placeholder.png'
               }
               alt={file?.name ?? 'Profile picture'}
               loading="lazy"
