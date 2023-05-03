@@ -1,4 +1,3 @@
-import type { PageSponsorType } from '../components/PageSponsor';
 import type { MarkdownFileType } from './file';
 
 export interface BestPracticeFrontmatter {
@@ -15,7 +14,6 @@ export interface BestPracticeFrontmatter {
     width: number;
     height: number;
   };
-  sponsors?: PageSponsorType[];
   seo: {
     title: string;
     description: string;

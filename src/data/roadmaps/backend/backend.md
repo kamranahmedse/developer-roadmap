@@ -11,13 +11,6 @@ tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral
 dimensions:
   width: 968
   height: 2840.4
-sponsors:
-  - url: 'https://www.apollographql.com/tutorials/lift-off-part1?utm_campaign=2023-05-01_odyssey-lift-off-backend&utm_medium=display&utm_source=roadmap'
-    title: 'Free GraphQL Courses'
-    imageUrl: 'https://i.imgur.com/pZzroyL.png'
-    description: 'Level up your knowledge with interactive GraphQL trainings and earn a Graph Developer certification.'
-    page: 'Backend'
-    company: 'Apollo'
 schema:
   headline: 'Backend Developer Roadmap'
   description: 'Learn how to become a Backend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -69,4 +62,3 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-

@@ -18,7 +18,6 @@ export interface RoadmapFrontmatter {
     width: number;
     height: number;
   };
-  sponsors?: PageSponsorType[];
   seo: {
     title: string;
     description: string;

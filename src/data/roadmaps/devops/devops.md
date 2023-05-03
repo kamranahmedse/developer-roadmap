@@ -11,13 +11,6 @@ tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral
 dimensions:
   width: 968
   height: 2527.46
-sponsors:
-  - url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-    title: 'Free eBook'
-    imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
-    description: 'Learn how to debug more quickly & get more time to innovate by starting your observability journey'
-    page: 'DevOps'
-    company: 'Honeycomb'
 schema:
   headline: 'DevOps Roadmap'
   description: 'Learn to become a DevOps, SRE or get any other operations role with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
@@ -61,4 +54,3 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-

@@ -19,7 +19,6 @@ export interface Props {
   noIndex?: boolean;
   canonicalUrl?: string;
   permalink?: string;
-  sponsors?: PageSponsorType[];
   jsonLd?: Record<string, unknown>[];
 }
 
@@ -31,7 +30,6 @@ const {
   noIndex = false,
   permalink = '',
   canonicalUrl: givenCanonical = '',
-  sponsors,
   jsonLd = [],
   redirectUrl = '',
 } = Astro.props;
