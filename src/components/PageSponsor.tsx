@@ -53,10 +53,9 @@ export function PageSponsor(props: PageSponsorProps) {
     });
   };
 
-  // We load the sponsor after 1second of the page load
+  // We load the sponsor after 1 second of the page load
   useEffect(() => {
-    const timer = window.setTimeout(loadSponsor, 500);
-    return () => window.clearTimeout(timer);
+    loadSponsor();
   }, []);
 
   if ($isSponsorHidden || !sponsor) {
