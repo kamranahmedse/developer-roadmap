@@ -1,36 +1,57 @@
 import { useStore } from '@nanostores/preact';
 import { useEffect, useState } from 'preact/hooks';
 import CloseIcon from '../icons/close.svg';
+import { httpGet } from '../lib/http';
 import { sponsorHidden } from '../stores/page';
 
 export type PageSponsorType = {
-  url: string;
-  title: string;
-  imageUrl: string;
-  description: string;
   company: string;
-  page: string;
+  description: string;
+  imageUrl: string;
+  pageUrl: string;
+  title: string;
+  url: string;
+};
+
+type V1GetSponsorResponse = {
+  href?: string;
+  sponsor?: PageSponsorType;
 };
 
 type PageSponsorProps = {
-  sponsors?: PageSponsorType[];
+  gaPageIdentifier?: string;
 };
 
 export function PageSponsor(props: PageSponsorProps) {
-  const { sponsors = [] } = props;
+  const { gaPageIdentifier } = props;
   const $isSponsorHidden = useStore(sponsorHidden);
   const [sponsor, setSponsor] = useState<PageSponsorType>();
 
-  if (sponsors.length === 0) {
-    return null;
-  }
+  const loadSponsor = async () => {
+    const { response, error } = await httpGet<V1GetSponsorResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-sponsor`,
+      {
+        href: window.location.pathname,
+      }
+    );
 
-  function loadSponsor() {
-    console.log('loadSponsor');
+    if (error) {
+      console.error(error);
+      return;
+    }
 
-    const sponsorIndex = Math.floor(Math.random() * sponsors.length);
-    setSponsor(sponsors[sponsorIndex]);
-  }
+    if (!response?.sponsor) {
+      return;
+    }
+
+    setSponsor(response.sponsor);
+
+    window.fireEvent({
+      category: 'SponsorImpression',
+      action: `${response.sponsor?.company} Impression`,
+      label: `${gaPageIdentifier} / ${response.sponsor?.company} Link`,
+    });
+  };
 
   // We load the sponsor after 1second of the page load
   useEffect(() => {
@@ -42,7 +63,7 @@ export function PageSponsor(props: PageSponsorProps) {
     return null;
   }
 
-  const { url, title, imageUrl, description, company, page } = sponsor;
+  const { url, title, imageUrl, description, company, pageUrl } = sponsor;
 
   return (
     <a
@@ -54,7 +75,7 @@ export function PageSponsor(props: PageSponsorProps) {
         window.fireEvent({
           category: 'SponsorClick',
           action: `${company} Redirect`,
-          label: `${page} / ${company} Link`,
+          label: `${gaPageIdentifier} / ${company} Link`,
         });
       }}
     >

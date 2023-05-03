@@ -11,6 +11,8 @@ import '../styles/global.css';
 
 export interface Props {
   title: string;
+  // This isn't used anywhere except for the sponsor event labels
+  briefTitle?: string;
   redirectUrl?: string;
   description?: string;
   keywords?: string[];
@@ -23,6 +25,7 @@ export interface Props {
 
 const {
   title = siteConfig.title,
+  briefTitle,
   description = siteConfig.description,
   keywords = siteConfig.keywords,
   noIndex = false,
@@ -41,6 +44,12 @@ const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
 }`;
+
+// e.g. frontend:react or best-practices:frontend-performance
+const gaPageIdentifier = Astro.url.pathname
+  .replace(/^\//, '')
+  .replace(/\/$/, '')
+  .replace(/\//g, ':');
 ---
 
 <!DOCTYPE html>
@@ -140,7 +149,7 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
     <Analytics />
     <Authenticator />
     <PageProgress client:idle />
-    <PageSponsor sponsors={sponsors || []} client:idle />
+    <PageSponsor gaPageIdentifier={briefTitle || gaPageIdentifier} client:idle />
 
     <slot name='after-footer' />
   </body>
