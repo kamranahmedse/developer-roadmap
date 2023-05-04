@@ -1,37 +1,49 @@
 ---
-import CaptchaFields from './Captcha/CaptchaFields.astro';
 import Icon from './AstroIcon.astro';
 ---
 
-<div class='my-0 px-5 rounded-lg text-left sm:text-center sm:pb-10 pb-8'>
-  <div class='sm:max-w-[400px] mx-auto'>
+<div
+  class='my-0 rounded-lg px-5 pb-12 pt-5 text-left sm:pb-16 sm:pt-0 sm:text-center'
+>
+  <div class='mx-auto sm:max-w-[420px]'>
     <div class='hidden sm:block'><Icon icon='bell' /></div>
-    <h2 class='text-3xl mb-1 font-medium hidden sm:block'>Upcoming</h2>
-    <p class='text-gray-600 mb-0 sm:mb-5'>Please check back later or subscribe below.</p>
+    <h2 class='text-3xl font-semibold sm:mb-1 sm:font-medium'>Upcoming</h2>
+    <p class='mb-0 inline-flex hidden text-gray-600 sm:mb-5' data-auth-required>
+      You will be notified by email when the roadmap is ready.
+    </p>
+    <p
+      class='mb-0 inline-flex hidden text-gray-600 sm:mb-5'
+      data-guest-required
+    >
+      Please check back later or subscribe below.
+    </p>
 
-    <form action='https://news.roadmap.sh/subscribe' method='post' accept-charset='utf-8' captcha-form>
-      <input
-        type='email'
-        required
-        name='email'
-        id='email'
-        autofocus
-        class='mt-1 block w-full mb-2 border-2 rounded-md py-2 sm:py-3 px-3 sm:px-3.5 text-md'
-        placeholder='Enter your email'
-      />
-
-      <CaptchaFields />
-
-      <input type='hidden' name='list' value='tTqz1w7nexY3cWDpLnI88Q' />
-      <input type='hidden' name='subform' value='yes' />
-
-      <button
-        type='submit'
-        name='submit'
-        class='text-white bg-gradient-to-r from-amber-700 to-blue-800 hover:from-amber-800 hover:to-blue-900 font-regular rounded-md text-md px-5 py-2.5 w-full text-center'
-      >
-        Get Notified
-      </button>
-    </form>
+    <button
+      data-guest-required
+      data-popup='login-popup'
+      type='button'
+      name='submit'
+      class='font-regular text-md mt-5 hidden w-full rounded-md bg-gradient-to-r from-amber-700 to-blue-800 px-5 py-2.5 text-center text-white hover:from-amber-800 hover:to-blue-900 sm:mt-0'
+      aria-label='Get Notified'
+      ga-category='notification'
+      ga-action='Clicked Popup Opener'
+      ga-label='Get Notified Popup'
+    >
+      Get Notified
+    </button>
+    <button
+      data-auth-required
+      type='button'
+      disabled
+      name='submit'
+      class='font-regular text-md mt-5 flex hidden w-full items-center justify-center gap-2 rounded-md bg-gray-300 px-5 py-2.5 text-center text-gray-800'
+      aria-label='Get Notified'
+      ga-category='notification'
+      ga-action='Clicked Popup Opener'
+      ga-label='Get Notified Popup'
+    >
+      <Icon icon='check' />
+      Subscribed
+    </button>
   </div>
 </div>
