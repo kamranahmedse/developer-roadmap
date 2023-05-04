@@ -12,7 +12,7 @@ import Icon from './AstroIcon.astro';
       You will be notified by email when the roadmap is ready.
     </p>
     <p
-      class='mb-0 inline-flex hidden text-gray-600 sm:mb-5'
+      class='mb-0 inline-flex text-gray-600 sm:mb-5'
       data-guest-required
     >
       Please check back later or subscribe below.
@@ -23,27 +23,20 @@ import Icon from './AstroIcon.astro';
       data-popup='login-popup'
       type='button'
       name='submit'
-      class='font-regular text-md mt-5 hidden w-full rounded-md bg-gradient-to-r from-amber-700 to-blue-800 px-5 py-2.5 text-center text-white hover:from-amber-800 hover:to-blue-900 sm:mt-0'
+      class='font-regular text-md mt-5 w-full rounded-md bg-gray-700 px-5 py-2.5 text-center text-white hover:bg-black sm:mt-0'
       aria-label='Get Notified'
-      ga-category='notification'
-      ga-action='Clicked Popup Opener'
-      ga-label='Get Notified Popup'
     >
-      Get Notified
+      Notify me when ready!
     </button>
     <button
       data-auth-required
       type='button'
       disabled
       name='submit'
-      class='font-regular text-md mt-5 flex hidden w-full items-center justify-center gap-2 rounded-md bg-gray-300 px-5 py-2.5 text-center text-gray-800'
+      class='font-regular text-md mt-5 sm:mt-0 flex hidden w-full items-center justify-center gap-2 rounded-md bg-gray-300 px-5 py-2.5 text-center text-gray-800'
       aria-label='Get Notified'
-      ga-category='notification'
-      ga-action='Clicked Popup Opener'
-      ga-label='Get Notified Popup'
     >
-      <Icon icon='check' />
-      Subscribed
+      Please check back later
     </button>
   </div>
 </div>
