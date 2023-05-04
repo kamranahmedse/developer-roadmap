@@ -7,9 +7,7 @@ import Icon from './AstroIcon.astro';
 >
   <div class='mx-auto sm:max-w-[420px]'>
     <div class='hidden sm:block'><Icon icon='bell' /></div>
-    <h2 class='text-3xl font-semibold sm:mb-1 sm:font-medium'>
-      Upcoming
-    </h2>
+    <h2 class='text-3xl font-semibold sm:mb-1 sm:font-medium'>Upcoming</h2>
     <p class='mb-0 inline-flex hidden text-gray-600 sm:mb-5' data-auth-required>
       You will be notified by email when the roadmap is ready.
     </p>
@@ -32,6 +30,20 @@ import Icon from './AstroIcon.astro';
       ga-label='Get Notified Popup'
     >
       Get Notified
+    </button>
+    <button
+      data-auth-required
+      type='button'
+      disabled
+      name='submit'
+      class='font-regular text-md mt-5 flex hidden w-full items-center justify-center gap-2 rounded-md bg-gray-300 px-5 py-2.5 text-center text-gray-800'
+      aria-label='Get Notified'
+      ga-category='notification'
+      ga-action='Clicked Popup Opener'
+      ga-label='Get Notified Popup'
+    >
+      <Icon icon='check' />
+      Subscribed
     </button>
   </div>
 </div>
