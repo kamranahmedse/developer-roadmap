@@ -3,6 +3,7 @@ import {
   renderResourceProgress,
   ResourceType,
 } from '../../lib/resource-progress';
+import { httpPost } from '../../lib/http';
 
 export class Renderer {
   resourceId: string;
@@ -52,6 +53,24 @@ export class Renderer {
     this.jsonUrl = dataset.jsonUrl!;
 
     return true;
+  }
+
+  visitResource() {
+    const isDev = import.meta.env.DEV;
+    httpPost(import.meta.env.PUBLIC_API_URL + '/v1-visit', {
+      resourceId: this.resourceId,
+      resourceType: this.resourceType,
+    })
+      .then(() => {
+        if (isDev) {
+          console.log('Visit recorded');
+        }
+      })
+      .catch((error) => {
+        if (isDev) {
+          console.error(error);
+        }
+      });
   }
 
   /**
@@ -112,6 +131,7 @@ export class Renderer {
     const urlParams = new URLSearchParams(window.location.search);
     const roadmapType = urlParams.get('r');
 
+    this.visitResource()
     if (roadmapType) {
       this.switchRoadmap(`/jsons/roadmaps/${roadmapType}.json`);
     } else {
