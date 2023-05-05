@@ -1,4 +1,4 @@
-## Containers?
+# Containers
 
 Containers can be thought of as lightweight, stand-alone, and executable software packages that include everything needed to run a piece of software, including the code, runtime, libraries, environment variables, and config files. Containers isolate software from its surroundings, ensuring that it works uniformly across different environments.
 
