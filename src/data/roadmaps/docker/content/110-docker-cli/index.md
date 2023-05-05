@@ -4,27 +4,24 @@ The Docker CLI (Command Line Interface) is a powerful tool that allows you to in
 
 In this topic, we'll dive into some key aspects of Docker CLI, covering the following:
 
-### 1. Installation
+## 1. Installation
 
 To get started with Docker CLI, you need to have Docker installed on your machine. You can follow the official installation guide for your respective operating system from the [Docker documentation](https://docs.docker.com/get-docker/).
 
-### 2. Basic Commands
+## 2. Basic Commands
 
 Here are some essential Docker CLI commands to familiarize yourself with:
 
 - `docker run`: Create and start a container from a Docker image
-- `docker ps`: List running containers
-- `docker stop`: Stop a running container
-- `docker rm`: Remove a stopped container
-- `docker images`: List all available images on your system
-- `docker rmi`: Remove an image from your system
+- `docker container`: List running containers
+- `docker image`: List all available images on your system
 - `docker pull`: Pull an image from Docker Hub or another registry
 - `docker push`: Push an image to Docker Hub or another registry
 - `docker build`: Build an image from a Dockerfile
 - `docker exec`: Run a command in a running container
 - `docker logs`: Show logs of a container
 
-### 3. Docker Run Options
+## 3. Docker Run Options
 
 `docker run` is one of the most important commands in the Docker CLI. You can customize the behavior of a container using various options, such as:
 
@@ -36,13 +33,13 @@ Here are some essential Docker CLI commands to familiarize yourself with:
 - `--restart`: Specify the container's restart policy
 - `--rm`: Automatically remove the container when it exits
 
-### 4. Dockerfile
+## 4. Dockerfile
 
 A Dockerfile is a script containing instructions to build a Docker image. You can use the Docker CLI to build, update, and manage Docker images using a Dockerfile.
 
 Here is a simple example of a Dockerfile:
 
-```dockerfile
+```Dockerfile
 # Set the base image to use
 FROM alpine:3.7
 
@@ -65,7 +62,7 @@ To build the image, use the command:
 docker build -t my-image .
 ```
 
-### 5. Docker Compose
+## 5. Docker Compose
 
 Docker Compose is a CLI tool for defining and managing multi-container Docker applications using YAML files. It works together with the Docker CLI, offering a consistent way to manage multiple containers and their dependencies.
 

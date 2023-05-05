@@ -14,14 +14,3 @@ Unlike traditional virtualization, which emulates a complete operating system wi
 ## Containers and Docker
 
 Docker is a platform that simplifies the process of creating, deploying, and managing containers. It provides developers and administrators with a set of tools and APIs to manage containerized applications. With Docker, you can build and package application code, libraries, and dependencies into a container image, which can be distributed and run consistently in any environment that supports Docker.
-
-Some key components of the Docker platform include:
-
-- **Docker Engine**: The core component responsible for building, shipping, and running containerized applications.
-- **Docker Images**: Read-only templates that contain the application code, runtime, libraries, and all necessary dependencies.
-- **Docker Containers**: Instances of Docker Images that run the packaged application in isolated environments.
-- **Docker Hub**: A public registry that hosts Docker images, allowing developers to share and distribute their containerized applications.
-
-## Recap
-
-Containers provide a lightweight, portable, and consistent way to package and deploy applications. They help in reducing the complexities associated with managing dependencies, improving resource efficiency, and simplifying application management. Docker is a popular platform that makes it easy to create and manage containers in various environments, providing a consistent and efficient solution for modern application development and deployment.

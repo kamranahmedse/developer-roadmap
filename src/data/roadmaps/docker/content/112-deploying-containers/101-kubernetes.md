@@ -2,7 +2,7 @@
 
 Kubernetes (K8s) is an open-source orchestration platform used for automating the deployment, scaling, and management of containerized applications. While Docker provides the container runtime environment, Kubernetes extends that functionality with a powerful and flexible management framework.
 
-#### Key Concepts
+## Key Concepts
 
 - **Cluster**: A set of machines, called nodes, that run containerized applications in Kubernetes. A cluster can have multiple nodes for load balancing and fault tolerance.
 
@@ -14,7 +14,7 @@ Kubernetes (K8s) is an open-source orchestration platform used for automating th
 
 - **Deployment**: A high-level object that describes the desired state of a containerized application. Deployments manage the process of creating, updating, and scaling pods based on a specified container image.
 
-#### Why Use Kubernetes?
+## Why Use Kubernetes?
 
 Kubernetes plays a crucial role in managing containerized applications at scale, offering several advantages over traditional deployment mechanisms:
 
@@ -23,7 +23,7 @@ Kubernetes plays a crucial role in managing containerized applications at scale,
 - **Rolling updates & rollbacks**: Kubernetes makes it easy to update your applications by incrementally rolling out new versions of container images, without any downtime.
 - **Load balancing**: Services in Kubernetes distribute network traffic among container instances, offering a load balancing solution for your applications.
 
-#### Kubernetes vs. Docker Swarm
+## Kubernetes vs. Docker Swarm
 
 While both Kubernetes and Docker Swarm are orchestration platforms, they differ in terms of complexity, scalability, and ease of use. Kubernetes provides more advanced features, better scalability, and higher fault tolerance, but has a steeper learning curve. Docker Swarm, on the other hand, is simpler and more straightforward but lacks some advanced functionality.
 

@@ -1,12 +1,6 @@
 # Union Filesystems
 
-Union filesystems, also known as UnionFS, play a crucial role in the overall functioning of Docker. In this section, we will discuss what union filesystems are and how they contribute to the seamless operation of Docker containers.
-
-## Overview
-
-A union filesystem is a unique type of filesystem that creates a virtual, layered file structure by overlaying multiple directories. Instead of modifying the original file system or merging directories, UnionFS enables the simultaneous mounting of multiple directories on a single mount point while keeping their contents separate. This feature is especially beneficial in the context of Docker, as it allows us to manage and optimize storage performance by minimizing duplication and reducing the container image size.
-
-## Key Features of Union Filesystems
+Union filesystems, also known as UnionFS, play a crucial role in the overall functioning of Docker. It's a unique type of filesystem that creates a virtual, layered file structure by overlaying multiple directories. Instead of modifying the original file system or merging directories, UnionFS enables the simultaneous mounting of multiple directories on a single mount point while keeping their contents separate. This feature is especially beneficial in the context of Docker, as it allows us to manage and optimize storage performance by minimizing duplication and reducing the container image size.
 
 These are some of the essential features of union filesystems:
 
@@ -26,7 +20,3 @@ Docker supports multiple union filesystems that facilitate building and managing
 - [**OverlayFS (Overlay Filesystem)**](https://www.kernel.org/doc/html/latest/filesystems/overlayfs.html): OverlayFS is another union filesystem supported by Docker. It uses a simplified approach compared to AUFS to create and manage overlayed directories.
 - [**Btrfs (B-Tree Filesystem)**](https://btrfs.wiki.kernel.org/index.php/Main_Page): Btrfs, a modern file system, offers compatibility with union filesystems in addition to advanced storage features like snapshots and checksumming.
 - [**ZFS (Z File System)**](https://zfsonlinux.org/): ZFS is a high-capacity and robust storage platform that provides union filesystem features along with data protection, compression, and deduplication.
-
-## Conclusion
-
-Union filesystems play an integral role in the Docker ecosystem, enabling the creation of layered structures that facilitate efficient container operations, storage management, and optimization. By understanding the underlying technologies and concepts, such as layered organization and copy-on-write, you can effectively harness the power of union filesystems to manage and optimize container images.

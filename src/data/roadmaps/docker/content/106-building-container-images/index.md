@@ -1,12 +1,12 @@
 # Building Container Images
 
-In this section, we will discuss the process of building container images, which are the foundation of Docker containers. Container images are executable packages that include everything required to run an application: code, runtime, system tools, libraries, and settings. By building custom images, you can deploy applications seamlessly with all their dependencies on any Docker-supported platform.
+Container images are executable packages that include everything required to run an application: code, runtime, system tools, libraries, and settings. By building custom images, you can deploy applications seamlessly with all their dependencies on any Docker-supported platform.
 
 ## Dockerfile
 
 The key component in building a container image is the `Dockerfile`. It is essentially a script containing instructions on how to assemble a Docker image. Each instruction in the Dockerfile creates a new layer in the image, making it easier to track changes and minimize the image size. Here's a simple example of a Dockerfile:
 
-```
+```Dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.7-slim
 
@@ -41,10 +41,10 @@ This command tells Docker to build an image using the Dockerfile in the current 
 
 ## Inspecting Images and Layers
 
-After a successful build, you can inspect the created image using `docker images` command:
+After a successful build, you can inspect the created image using `docker image` command:
 
 ```sh
-docker images
+docker image ls
 ```
 
 To take a closer look at the individual layers of an image, use the `docker history` command:
@@ -52,6 +52,19 @@ To take a closer look at the individual layers of an image, use the `docker hist
 ```sh
 docker history your-image-name
 ```
+
+To view the layers of an image, you can also use the `docker inspect` command:
+
+```sh
+docker inspect your-image-name
+```
+
+To remove an image, use the `docker image rm` command:
+
+```sh
+docker image rm your-image-name
+```
+
 
 ## Pushing Images to a Registry
 
@@ -72,7 +85,5 @@ Finally, push the tagged image to the registry:
 ```sh
 docker push username/repository:tag
 ```
-
-## Conclusion
 
 Building container images is a crucial aspect of using Docker, as it enables you to package and deploy your applications with ease. By creating a Dockerfile with precise instructions, you can effortlessly build and distribute images across various platforms.

@@ -25,12 +25,8 @@ To install Docker Desktop on your machine, follow these steps:
    ```
    If the installation was successful, the command should output the Docker version information.
 
-### Getting Started
+Learn more from the following resources:
 
-After installing Docker Desktop, you can start using Docker right away. Here are a few resources to help you get started:
-
-- [Docker Desktop Documentation](https://docs.docker.com/desktop/): Official documentation for Docker Desktop, including installation instructions and product features.
-- [Docker Get Started Guide](https://docs.docker.com/get-started/): A beginner-friendly tutorial that covers the basics of Docker and how to use it to build, share, and run containerized applications.
-- [Docker Hub](https://hub.docker.com/): A repository of Docker images that can be downloaded and used in your own projects. Docker Hub is also integrated directly into Docker Desktop for easy access.
-
-Now that you have a basic understanding of Docker Desktop, you can continue exploring its features and benefits as a part of your Docker learning journey. Happy containerizing!
+- [Docker Desktop Documentation](https://docs.docker.com/desktop/)
+- [Docker Get Started Guide](https://docs.docker.com/get-started/)
+- [Docker Hub](https://hub.docker.com/)

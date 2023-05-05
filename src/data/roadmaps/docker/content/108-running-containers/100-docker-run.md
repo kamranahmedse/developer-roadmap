@@ -2,8 +2,6 @@
 
 In this section, we'll discuss the `docker run` command, which enables you to run Docker containers. The `docker run` command creates a new container from the specified image and starts it. 
 
-## Basic Syntax
-
 The basic syntax for the `docker run` command is as follows:
 
 ```bash
@@ -52,5 +50,3 @@ docker run -d --name=my-mysql -e MYSQL_ROOT_PASSWORD=secret -e MYSQL_DATABASE=my
 ```bash
 docker run -d --name=my-data -v /path/on/host:/path/in/container some-image
 ```
-
-In summary, using the `docker run` command, you can create and start new containers from images with various options to customize the container's behavior and settings. With a deep understanding of `docker run`, you can successfully deploy and manage your applications using Docker containers.

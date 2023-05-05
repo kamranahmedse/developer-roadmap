@@ -1,14 +1,10 @@
 # Interactive Test Environments with Docker
 
-In this section, we will discuss how to use Docker for setting up interactive test environments. Interactive test environments are useful when you want to explore and test software in isolated, controlled spaces without affecting your local machine.
-
-## Why use Docker for Interactive Test Environments?
-
 Docker allows you to create isolated, disposable environments that can be deleted once you're done with testing. This makes it much easier to work with third party software, test different dependencies or versions, and quickly experiment without the risk of damaging your local setup.
 
 ## Creating an Interactive Test Environment with Docker
 
-To demonstrate how to setup an interactive test environment, let's use the popular Python programming language as an example. We will use a public Python image available on [Docker Hub](https://hub.docker.com/_/python).
+To demonstrate how to setup an interactive test environment, let's use the Python programming language as an example. We will use a public Python image available on [Docker Hub](https://hub.docker.com/_/python).
 
 - To start an interactive test environment using the Python image, simply run the following command:
 

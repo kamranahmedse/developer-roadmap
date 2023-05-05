@@ -1,9 +1,5 @@
 # Docker and OCI
 
-In this section, we will discuss the relationship between Docker and the Open Container Initiative (OCI), as well as the important role they play in the container ecosystem.
-
-### Open Container Initiative
-
 The [Open Container Initiative (OCI)](https://opencontainers.org/) is a Linux Foundation project which aims at creating industry standards for container formats and runtimes. Its primary goal is to ensure the compatibility and interoperability of container environments through defined technical specifications.
 
 ### Docker's role in OCI
@@ -21,7 +17,5 @@ OCI has two main specifications:
 ### Compatibility between Docker and OCI
 
 Docker remains committed to supporting the OCI specifications and, since its involvement in OCI, has continuously updated its software to be compliant with OCI standards. Docker's containerd runtime and image format are fully compatible with OCI specifications, enabling Docker containers to be run by other OCI-compliant container runtimes and vice versa.
-
-### Conclusion
 
 In summary, Docker and the Open Container Initiative work together to maintain standardization and compatibility within the container industry. Docker has played a significant role in the development of the OCI specifications, ensuring that the container ecosystem remains healthy, interoperable, and accessible to a wide range of users and platforms across the industry.
