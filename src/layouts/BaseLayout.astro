@@ -5,7 +5,7 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
-import { PageSponsor,PageSponsorType } from '../components/PageSponsor';
+import { PageSponsor } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
 
@@ -147,7 +147,7 @@ const gaPageIdentifier = Astro.url.pathname
     <Analytics />
     <Authenticator />
     <PageProgress client:idle />
-    <PageSponsor gaPageIdentifier={briefTitle || gaPageIdentifier} client:idle />
+    <PageSponsor gaPageIdentifier={briefTitle || gaPageIdentifier} client:load />
 
     <slot name='after-footer' />
   </body>

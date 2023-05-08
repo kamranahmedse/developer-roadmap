@@ -53,9 +53,8 @@ export function PageSponsor(props: PageSponsorProps) {
     });
   };
 
-  // We load the sponsor after 1 second of the page load
   useEffect(() => {
-    loadSponsor();
+    window.setTimeout(loadSponsor, 500);
   }, []);
 
   if ($isSponsorHidden || !sponsor) {
@@ -81,8 +80,6 @@ export function PageSponsor(props: PageSponsorProps) {
       <span
         class="absolute right-1.5 top-1.5 text-gray-300 hover:text-gray-800"
         aria-label="Close"
-        aria-role="button"
-        close-sponsor
         onClick={(e) => {
           e.preventDefault();
           e.stopImmediatePropagation();
