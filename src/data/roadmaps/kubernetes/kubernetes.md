@@ -35,7 +35,7 @@ seo:
     - 'kubernetes development skills test'
     - 'kubernetes engineer roadmap'
     - 'kubernetes roadmap'
-    - 'become a kubernetes'
+    - 'become a kubernetes expert'
     - 'kubernetes career path'
     - 'learn kubernetes development'
     - 'what is kubernetes'
