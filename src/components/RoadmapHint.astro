@@ -9,7 +9,10 @@ export interface Props {
 const { roadmapId, tnsBannerLink = '' } = Astro.props;
 
 const hasTNSBanner = !!tnsBannerLink;
-const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const roadmapTitle =
+  roadmapId === 'devops'
+    ? 'DevOps'
+    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
 ---
 
 <div
@@ -23,16 +26,13 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
 >
   {
     hasTNSBanner && (
-      <div class='px-2 py-1.5 border-b bg-gray-100 hidden sm:block'>
+      <div class='hidden border-b bg-gray-100 px-2 py-1.5 sm:block'>
         <p class='text-sm'>
           Get the latest {roadmapTitle} news from our sister site{' '}
           <a
             href={tnsBannerLink}
             target='_blank'
             class='font-semibold underline'
-            ga-category='PartnerClick'
-            ga-action='TNS Referral'
-            ga-label='TNS Referral - Roadmap'
           >
             TheNewStack.io
           </a>
@@ -52,13 +52,16 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
     ]}
   >
     <p class='text-sm'>
-      <span class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'>New</span>
+      <span
+        class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
+        >New</span
+      >
       Resources are here, try clicking nodes
     </p>
 
     <a
       href={`/${roadmapId}/topics`}
-      class='inline-flex items-center justify-center py-1.5 text-sm font-medium rounded-md hover:text-black text-gray-500 px-1'
+      class='inline-flex items-center justify-center rounded-md px-1 py-1.5 text-sm font-medium text-gray-500 hover:text-black'
     >
       <Icon icon='search' />
       <span class='ml-2'>Search Topics</span>
@@ -66,8 +69,12 @@ const roadmapTitle = roadmapId === 'devops' ? 'DevOps' : `${roadmapId.charAt(0).
   </div>
 
   <!-- Mobile - Roadmap resources alert -->
-  <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'>
+  <p
+    class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
+  >
     Click roadmap items for resources or visit{' '}
-    <a href={`/${roadmapId}/topics`} class='text-blue-700 underline'> resources list</a>.
+    <a href={`/${roadmapId}/topics`} class='text-blue-700 underline'>
+      resources list</a
+    >.
   </p>
 </div>

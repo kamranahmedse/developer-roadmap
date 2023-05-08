@@ -124,6 +124,7 @@ const gaPageIdentifier = Astro.url.pathname
     />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
+    <link rel='dns-prefetch' href='https://api.roadmap.sh/' />
 
     <slot name='after-header' />
     {
@@ -144,11 +145,15 @@ const gaPageIdentifier = Astro.url.pathname
       <Footer />
     </slot>
 
-    <Analytics />
     <Authenticator />
     <PageProgress client:idle />
-    <PageSponsor gaPageIdentifier={briefTitle || gaPageIdentifier} client:load />
+    <PageSponsor
+      gaPageIdentifier={briefTitle || gaPageIdentifier}
+      client:load
+    />
 
     <slot name='after-footer' />
+
+    <Analytics />
   </body>
 </html>

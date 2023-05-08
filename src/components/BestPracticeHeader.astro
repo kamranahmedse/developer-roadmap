@@ -1,7 +1,7 @@
 ---
-import BestPracticeHint from './BestPracticeHint.astro';
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
+import BestPracticeHint from './BestPracticeHint.astro';
 
 export interface Props {
   title: string;
@@ -42,9 +42,6 @@ const isBestPracticeReady = !isUpcoming;
               data-popup='login-popup'
               class='hidden inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
-              ga-category='Subscription'
-              ga-action='Clicked Popup Opener'
-              ga-label='Download Roadmap Popup'
             >
               <Icon icon='download' />
               <span class='ml-2 hidden sm:inline'>Download</span>
@@ -58,9 +55,6 @@ const isBestPracticeReady = !isUpcoming;
               data-auth-required
               class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
-              ga-category='Subscription'
-              ga-action='Clicked Popup Opener'
-              ga-label='Download Roadmap Popup'
               target="_blank"
               href={`/pdfs/best-practices/${bestPracticeId}.pdf`}
             >
@@ -75,9 +69,6 @@ const isBestPracticeReady = !isUpcoming;
           data-popup='login-popup'
           class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
           aria-label='Subscribe for Updates'
-          ga-category='Subscription'
-          ga-action='Clicked Popup Opener'
-          ga-label='Subscribe Best Practice Popup'
         >
           <Icon icon='email' />
           <span class='ml-2'>Subscribe</span>
