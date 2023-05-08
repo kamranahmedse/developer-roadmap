@@ -3,6 +3,8 @@ import {
   renderResourceProgress,
   ResourceType,
 } from '../../lib/resource-progress';
+import { isLoggedIn } from '../../lib/jwt';
+import { httpPost } from '../../lib/http';
 
 export class Renderer {
   resourceId: string;
@@ -104,6 +106,19 @@ export class Renderer {
       });
   }
 
+  trackVisit() {
+    if (!isLoggedIn()) {
+      return;
+    }
+
+    window.setTimeout(() => {
+      httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
+        resourceId: this.resourceId,
+        resourceType: this.resourceType,
+      }).then(() => null);
+    }, 0);
+  }
+
   onDOMLoaded() {
     if (!this.prepareConfig()) {
       return;
@@ -111,6 +126,8 @@ export class Renderer {
 
     const urlParams = new URLSearchParams(window.location.search);
     const roadmapType = urlParams.get('r');
+
+    this.trackVisit();
 
     if (roadmapType) {
       this.switchRoadmap(`/jsons/roadmaps/${roadmapType}.json`);
