@@ -39,7 +39,7 @@ A Dockerfile is a script containing instructions to build a Docker image. You ca
 
 Here is a simple example of a Dockerfile:
 
-```Dockerfile
+```dockerfile
 # Set the base image to use
 FROM alpine:3.7
 

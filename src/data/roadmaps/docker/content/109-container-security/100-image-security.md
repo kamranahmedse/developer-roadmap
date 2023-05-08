@@ -48,7 +48,7 @@ Multi-stage builds allow you to use multiple `FROM` instructions within the same
 
 Here's an example Dockerfile using multi-stage builds:
 
-```Dockerfile
+```dockerfile
 # Build stage
 FROM node:12-alpine AS build
 WORKDIR /app

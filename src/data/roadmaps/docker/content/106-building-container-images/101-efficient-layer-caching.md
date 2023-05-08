@@ -8,7 +8,7 @@ Docker creates a new layer for each instruction (e.g., `RUN`, `COPY`, `ADD`, etc
 
 For example, consider the following Dockerfile:
 
-```Dockerfile
+```dockerfile
 FROM node:14
 
 WORKDIR /app

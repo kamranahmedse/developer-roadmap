@@ -6,7 +6,7 @@ Container images are executable packages that include everything required to run
 
 The key component in building a container image is the `Dockerfile`. It is essentially a script containing instructions on how to assemble a Docker image. Each instruction in the Dockerfile creates a new layer in the image, making it easier to track changes and minimize the image size. Here's a simple example of a Dockerfile:
 
-```Dockerfile
+```dockerfile
 # Use an official Python runtime as a parent image
 FROM python:3.7-slim
 

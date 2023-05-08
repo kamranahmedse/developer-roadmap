@@ -12,7 +12,7 @@ For example: If you're looking for a `Node.js` image, you can search for "node" 
 
 To use a third-party image in your Dockerfile, simply set the image name as the base image using the `FROM` directive. Here's an example using the official Node.js image:
 
-```Dockerfile
+```dockerfile
 FROM node:14
 
 # The rest of your Dockerfile...

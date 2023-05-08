@@ -54,7 +54,7 @@ export function PageSponsor(props: PageSponsorProps) {
   };
 
   useEffect(() => {
-    window.setTimeout(loadSponsor, 500);
+    window.setTimeout(loadSponsor);
   }, []);
 
   if ($isSponsorHidden || !sponsor) {
