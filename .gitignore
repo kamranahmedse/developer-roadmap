@@ -5,7 +5,7 @@ dist/
 # dependencies
 node_modules/
 
-bin/developer-roadmap
+scripts/developer-roadmap
 
 # logs
 npm-debug.log*
