@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import CheckIcon from '../../icons/check.svg';
+import ProgressIcon from '../../icons/progress.svg';
 import CloseIcon from '../../icons/close.svg';
 import ResetIcon from '../../icons/reset.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
@@ -11,10 +12,12 @@ import { useToggleTopic } from '../../hooks/use-toggle-topic';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
+  getTopicStatus,
   isTopicDone,
   renderTopicProgress,
+  ResourceProgressType,
   ResourceType,
-  toggleMarkTopicDone as toggleMarkTopicDoneApi,
+  updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
 import { pageLoadingMessage, sponsorHidden } from '../../stores/page';
 
@@ -24,6 +27,7 @@ export function TopicDetail() {
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
 
+  const [progress, setProgress] = useState<ResourceProgressType>('pending');
   const [isDone, setIsDone] = useState<boolean>();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
 
@@ -49,13 +53,24 @@ export function TopicDetail() {
     }
   };
 
-  const toggleMarkTopicDone = (isDone: boolean) => {
+  const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
     setIsUpdatingProgress(true);
-    toggleMarkTopicDoneApi({ topicId, resourceId, resourceType }, isDone)
+    updateResourceProgressApi(
+      {
+        topicId,
+        resourceId,
+        resourceType,
+      },
+      progress
+    )
       .then(() => {
-        setIsDone(isDone);
+        setProgress(progress);
         setIsActive(false);
-        renderTopicProgress(topicId, isDone);
+        renderTopicProgress(
+          topicId,
+          progress === 'done',
+          progress === 'learning'
+        );
       })
       .catch((err) => {
         alert(err.message);
@@ -73,10 +88,10 @@ export function TopicDetail() {
     }
 
     setIsUpdatingProgress(true);
-    isTopicDone({ topicId, resourceId, resourceType })
-      .then((status: boolean) => {
+    getTopicStatus({ topicId, resourceId, resourceType })
+      .then((status) => {
         setIsUpdatingProgress(false);
-        setIsDone(status);
+        setProgress(status);
       })
       .catch(console.error);
   }, [topicId, resourceId, resourceType]);
@@ -104,16 +119,19 @@ export function TopicDetail() {
     // Toggle the topic status
     isTopicDone({ topicId, resourceId, resourceType })
       .then((oldIsDone) => {
-        return toggleMarkTopicDoneApi(
+        return updateResourceProgressApi(
           {
             topicId,
             resourceId,
             resourceType,
           },
-          !oldIsDone
+          oldIsDone ? 'pending' : 'done'
         );
       })
-      .then((newIsDone) => renderTopicProgress(topicId, newIsDone))
+      .then((updatedResult) => {
+        const newIsDone = updatedResult.done.includes(topicId);
+        renderTopicProgress(topicId, newIsDone, false);
+      })
       .catch((err) => {
         alert(err.message);
         console.error(err);
@@ -193,14 +211,24 @@ export function TopicDetail() {
             {/* Actions for the topic */}
             <div className="mb-2">
               {isGuest && (
-                <button
-                  data-popup="login-popup"
-                  className="inline-flex items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-                  onClick={() => setIsActive(false)}
-                >
-                  <img alt="Check" class='w-3' src={CheckIcon} />
-                  <span className="ml-2">Mark as Done</span>
-                </button>
+                <div className="flex items-center gap-2">
+                  <button
+                    data-popup="login-popup"
+                    className="inline-flex items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
+                    onClick={() => setIsActive(false)}
+                  >
+                    <img alt="Check" class="w-3" src={CheckIcon} />
+                    <span className="ml-2">Mark as Done</span>
+                  </button>
+                  <button
+                    data-popup="login-popup"
+                    class="inline-flex items-center rounded-md bg-gray-800 p-1 px-2 text-sm text-white hover:bg-black"
+                    onClick={() => setIsActive(false)}
+                  >
+                    <img alt="Learning" class="w-3" src={ProgressIcon} />
+                    <span class="ml-2">In Progress</span>
+                  </button>
+                </div>
               )}
 
               {!isGuest && (
@@ -215,24 +243,53 @@ export function TopicDetail() {
                       <span className="ml-2">Updating Status..</span>
                     </button>
                   )}
-                  {!isUpdatingProgress && !isDone && (
-                    <button
-                      className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-                      onClick={() => toggleMarkTopicDone(true)}
-                    >
-                      <img alt="Check" class="w-3" src={CheckIcon} />
-                      <span className="ml-2">Mark as Done</span>
-                    </button>
+                  {!isUpdatingProgress && progress === 'pending' && (
+                    <div className="flex items-center gap-2">
+                      <button
+                        className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
+                        onClick={() => handleUpdateResourceProgress('done')}
+                      >
+                        <img alt="Check" class="w-3" src={CheckIcon} />
+                        <span className="ml-2">Mark as Done</span>
+                      </button>
+
+                      <button
+                        className="inline-flex items-center rounded-md border border-gray-800 bg-gray-800 p-1 px-2 text-sm text-white hover:bg-black"
+                        onClick={() => handleUpdateResourceProgress('learning')}
+                      >
+                        <img alt="Learning" class="w-3" src={ProgressIcon} />
+                        <span className="ml-2">In Progress</span>
+                      </button>
+                    </div>
                   )}
 
-                  {!isUpdatingProgress && isDone && (
+                  {!isUpdatingProgress && progress === 'done' && (
                     <button
                       className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
-                      onClick={() => toggleMarkTopicDone(false)}
+                      onClick={() => handleUpdateResourceProgress('pending')}
                     >
                       <img alt="Check" class="h-4" src={ResetIcon} />
                       <span className="ml-2">Mark as Pending</span>
                     </button>
+                  )}
+
+                  {!isUpdatingProgress && progress === 'learning' && (
+                    <div className="flex items-center gap-2">
+                      <button
+                        className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
+                        onClick={() => handleUpdateResourceProgress('done')}
+                      >
+                        <img alt="Check" class="w-3" src={CheckIcon} />
+                        <span className="ml-2">Mark as Done</span>
+                      </button>
+                      <button
+                        className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
+                        onClick={() => handleUpdateResourceProgress('pending')}
+                      >
+                        <img alt="Check" class="h-4" src={ResetIcon} />
+                        <span className="ml-2">Mark as Pending</span>
+                      </button>
+                    </div>
                   )}
                 </>
               )}

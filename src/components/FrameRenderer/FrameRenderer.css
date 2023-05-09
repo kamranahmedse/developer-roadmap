@@ -53,6 +53,14 @@ svg .done text {
   text-decoration: line-through;
 }
 
+svg .learning rect {
+  fill: #dad1fd !important;
+}
+
+svg .learning text {
+  text-decoration: underline;
+}
+
 svg .clickable-group.done[data-group-id^='check:'] rect {
   fill: gray !important;
   stroke: gray;
