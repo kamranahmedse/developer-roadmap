@@ -6,6 +6,6 @@ Replication is an availability pattern that involves having multiple copies of t
 
 - **Master-Slave replication:** In this type of replication, one server is designated as the "master" and handles all write operations, while multiple "slave" servers handle read operations. If the master fails, one of the slaves can be promoted to take its place. This type of replication is simpler to set up and maintain compared to Master-Master replication.
 
-Visi the following links for more resources:
+Visit the following links for more resources:
 
 - [Replication: Availability Pattern](https://github.com/donnemartin/system-design-primer#replication)
