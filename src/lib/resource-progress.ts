@@ -1,5 +1,5 @@
-import { httpGet, httpPost } from './http';
 import Cookies from 'js-cookie';
+import { httpGet, httpPost } from './http';
 import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
 
@@ -14,13 +14,10 @@ type TopicMeta = {
 
 export async function isTopicDone(topic: TopicMeta): Promise<boolean> {
   const { topicId, resourceType, resourceId } = topic;
-  const progressResult = await getResourceProgress(resourceType, resourceId);
+  const { done = [] } =
+    (await getResourceProgress(resourceType, resourceId)) || {};
 
-  if (!progressResult.done) {
-    return false;
-  }
-
-  return progressResult.done.includes(topicId);
+  return done?.includes(topicId);
 }
 
 export async function getTopicStatus(
@@ -29,11 +26,11 @@ export async function getTopicStatus(
   const { topicId, resourceType, resourceId } = topic;
   const progressResult = await getResourceProgress(resourceType, resourceId);
 
-  if (progressResult.done.includes(topicId)) {
+  if (progressResult?.done.includes(topicId)) {
     return 'done';
   }
 
-  if (progressResult.learning.includes(topicId)) {
+  if (progressResult?.learning.includes(topicId)) {
     return 'learning';
   }
 
@@ -152,9 +149,10 @@ export function setResourceProgress(
 
 export function renderTopicProgress(
   topicId: string,
-  isDone: boolean,
-  isLearning: boolean
+  topicProgress: ResourceProgressType
 ) {
+  const isLearning = topicProgress === 'learning';
+  const isDone = topicProgress === 'done';
   const matchingElements: Element[] = [];
 
   // Elements having sort order in the beginning of the group id
@@ -202,13 +200,14 @@ export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
 ) {
-  const progress = await getResourceProgress(resourceType, resourceId);
+  const { done = [], learning = [] } =
+    (await getResourceProgress(resourceType, resourceId)) || {};
 
-  progress.done.forEach((topicId) => {
-    renderTopicProgress(topicId, true, false);
+  done.forEach((topicId) => {
+    renderTopicProgress(topicId, 'done');
   });
 
-  progress.learning.forEach((topicId) => {
-    renderTopicProgress(topicId, false, true);
+  learning.forEach((topicId) => {
+    renderTopicProgress(topicId, 'learning');
   });
 }

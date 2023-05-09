@@ -65,11 +65,7 @@ export function TopicDetail() {
       .then(() => {
         setProgress(progress);
         setIsActive(false);
-        renderTopicProgress(
-          topicId,
-          progress === 'done',
-          progress === 'learning'
-        );
+        renderTopicProgress(topicId, progress);
       })
       .catch((err) => {
         alert(err.message);
@@ -117,19 +113,21 @@ export function TopicDetail() {
 
     // Toggle the topic status
     isTopicDone({ topicId, resourceId, resourceType })
-      .then((oldIsDone) => {
-        return updateResourceProgressApi(
+      .then((oldIsDone) =>
+        updateResourceProgressApi(
           {
             topicId,
             resourceId,
             resourceType,
           },
           oldIsDone ? 'pending' : 'done'
+        )
+      )
+      .then(({ done = [] }) => {
+        renderTopicProgress(
+          topicId,
+          done.includes(topicId) ? 'done' : 'pending'
         );
-      })
-      .then((updatedResult) => {
-        const newIsDone = updatedResult.done.includes(topicId);
-        renderTopicProgress(topicId, newIsDone, false);
       })
       .catch((err) => {
         alert(err.message);
