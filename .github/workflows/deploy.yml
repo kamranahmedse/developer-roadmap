@@ -4,6 +4,7 @@ on:
     branches: [ master ]
 env:
   PUBLIC_API_URL: "https://api.roadmap.sh"
+  PUBLIC_AVATAR_BASE_URL: "https://dodrc8eu8m09s.cloudfront.net/avatars"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   PAT: ${{ secrets.PAT }}
   CI: true
