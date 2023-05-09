@@ -187,8 +187,10 @@ export function renderTopicProgress(
   matchingElements.forEach((element) => {
     if (isDone) {
       element.classList.add('done');
+      element.classList.remove('learning');
     } else if (isLearning) {
       element.classList.add('learning');
+      element.classList.remove('done');
     } else {
       element.classList.remove('done');
       element.classList.remove('learning');
