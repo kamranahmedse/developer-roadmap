@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import CheckIcon from '../../icons/check.svg';
-import ProgressIcon from '../../icons/progress.svg';
 import CloseIcon from '../../icons/close.svg';
+import ProgressIcon from '../../icons/progress.svg';
 import ResetIcon from '../../icons/reset.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 
@@ -217,7 +217,7 @@ export function TopicDetail() {
                     onClick={() => setIsActive(false)}
                   >
                     <img alt="Check" class="w-3" src={CheckIcon} />
-                    <span className="ml-2">Mark as Done</span>
+                    <span className="ml-2">Done</span>
                   </button>
                   <button
                     data-popup="login-popup"
@@ -249,7 +249,7 @@ export function TopicDetail() {
                         onClick={() => handleUpdateResourceProgress('done')}
                       >
                         <img alt="Check" class="w-3" src={CheckIcon} />
-                        <span className="ml-2">Mark as Done</span>
+                        <span className="ml-2">Done</span>
                       </button>
 
                       <button
@@ -268,7 +268,7 @@ export function TopicDetail() {
                       onClick={() => handleUpdateResourceProgress('pending')}
                     >
                       <img alt="Check" class="h-4" src={ResetIcon} />
-                      <span className="ml-2">Mark as Pending</span>
+                      <span className="ml-2">Pending</span>
                     </button>
                   )}
 
@@ -279,14 +279,14 @@ export function TopicDetail() {
                         onClick={() => handleUpdateResourceProgress('done')}
                       >
                         <img alt="Check" class="w-3" src={CheckIcon} />
-                        <span className="ml-2">Mark as Done</span>
+                        <span className="ml-2">Done</span>
                       </button>
                       <button
                         className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
                         onClick={() => handleUpdateResourceProgress('pending')}
                       >
                         <img alt="Check" class="h-4" src={ResetIcon} />
-                        <span className="ml-2">Mark as Pending</span>
+                        <span className="ml-2">Pending</span>
                       </button>
                     </div>
                   )}
