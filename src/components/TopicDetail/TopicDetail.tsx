@@ -28,7 +28,6 @@ export function TopicDetail() {
   const [topicHtml, setTopicHtml] = useState('');
 
   const [progress, setProgress] = useState<ResourceProgressType>('pending');
-  const [isDone, setIsDone] = useState<boolean>();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
 
   const isGuest = useMemo(() => !isLoggedIn(), []);
@@ -222,11 +221,11 @@ export function TopicDetail() {
                   </button>
                   <button
                     data-popup="login-popup"
-                    class="inline-flex items-center rounded-md bg-gray-800 p-1 px-2 text-sm text-white hover:bg-black"
+                    className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
                     onClick={() => setIsActive(false)}
                   >
-                    <img alt="Learning" class="w-3" src={ProgressIcon} />
-                    <span class="ml-2">In Progress</span>
+                    <img alt="Learning" class="w-4" src={ProgressIcon} />
+                    <span className="ml-2">In Progress</span>
                   </button>
                 </div>
               )}
@@ -254,10 +253,10 @@ export function TopicDetail() {
                       </button>
 
                       <button
-                        className="inline-flex items-center rounded-md border border-gray-800 bg-gray-800 p-1 px-2 text-sm text-white hover:bg-black"
+                        className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
                         onClick={() => handleUpdateResourceProgress('learning')}
                       >
-                        <img alt="Learning" class="w-3" src={ProgressIcon} />
+                        <img alt="Learning" class="w-4" src={ProgressIcon} />
                         <span className="ml-2">In Progress</span>
                       </button>
                     </div>
