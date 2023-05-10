@@ -7,6 +7,7 @@ import { sponsorHidden } from '../stores/page';
 export type PageSponsorType = {
   company: string;
   description: string;
+  gaLabel: string;
   imageUrl: string;
   pageUrl: string;
   title: string;
@@ -49,7 +50,9 @@ export function PageSponsor(props: PageSponsorProps) {
     window.fireEvent({
       category: 'SponsorImpression',
       action: `${response.sponsor?.company} Impression`,
-      label: `${gaPageIdentifier} / ${response.sponsor?.company} Link`,
+      label:
+        response.sponsor.gaLabel ||
+        `${gaPageIdentifier} / ${response.sponsor?.company} Link`,
     });
   };
 
@@ -61,7 +64,8 @@ export function PageSponsor(props: PageSponsorProps) {
     return null;
   }
 
-  const { url, title, imageUrl, description, company, pageUrl } = sponsor;
+  const { url, title, imageUrl, description, company, gaLabel, pageUrl } =
+    sponsor;
 
   return (
     <a
@@ -73,7 +77,7 @@ export function PageSponsor(props: PageSponsorProps) {
         window.fireEvent({
           category: 'SponsorClick',
           action: `${company} Redirect`,
-          label: `${gaPageIdentifier} / ${company} Link`,
+          label: gaLabel || `${gaPageIdentifier} / ${company} Link`,
         });
       }}
     >
