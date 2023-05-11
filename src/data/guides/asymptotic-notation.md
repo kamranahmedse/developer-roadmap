@@ -3,7 +3,7 @@ title: 'Asymptotic Notation'
 description: 'Learn the basics of measuring the time and space complexity of algorithms'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Asymptotic Notation - roadmap.sh'

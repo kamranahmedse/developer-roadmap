@@ -3,7 +3,7 @@ title: 'SLIs, SLOs and SLAs'
 description: 'Learn what are different indicators for performance identification of any service.'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'SLIs, SLOs and SLAs - roadmap.sh'

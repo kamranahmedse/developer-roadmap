@@ -3,7 +3,7 @@ title: 'Journey to HTTP/2'
 description: 'The evolution of HTTP. How it all started and where we stand today'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Journey to HTTP/2 - roadmap.sh'

@@ -6,7 +6,7 @@ isNew: false
 date: 2021-11-25
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 sitemap:
   priority: 0.7

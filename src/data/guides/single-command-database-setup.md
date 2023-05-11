@@ -3,7 +3,7 @@ title: 'Single Command Database Setup'
 description: 'Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Single Command Database Setup - roadmap.sh'
