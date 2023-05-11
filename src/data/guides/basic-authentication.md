@@ -3,7 +3,7 @@ title: 'Basic Authentication'
 description: 'Understand what is basic authentication and how it is implemented'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Basic Authentication - roadmap.sh'

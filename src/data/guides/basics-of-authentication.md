@@ -3,7 +3,7 @@ title: 'Basics of Authentication'
 description: 'Learn the basics of Authentication and Authorization'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Basics of Authentication - roadmap.sh'

@@ -3,7 +3,7 @@ title: 'DHCP in One Picture'
 description: 'Here is what happens when a new device joins the network.'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'DHCP in One Picture - roadmap.sh'

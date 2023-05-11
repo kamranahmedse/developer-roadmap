@@ -3,7 +3,7 @@ title: 'SSO — Single Sign On'
 description: 'Learn the basics of SAML and understand how does Single Sign On work.'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'SSO — Single Sign On - roadmap.sh'

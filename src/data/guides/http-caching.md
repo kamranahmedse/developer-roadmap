@@ -3,7 +3,7 @@ title: 'HTTP Caching'
 description: 'Everything you need to know about web caching'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'HTTP Caching - roadmap.sh'
