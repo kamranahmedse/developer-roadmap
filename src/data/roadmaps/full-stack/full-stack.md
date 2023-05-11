@@ -6,6 +6,7 @@ briefTitle: 'Full Stack'
 briefDescription: 'Step by step guide to becoming a full stack developer in 2023'
 title: 'Full Stack Developer'
 description: 'Step by step guide to becoming a modern full stack developer in 2023'
+isNew: true
 hasTopics: true
 dimensions:
   width: 968
