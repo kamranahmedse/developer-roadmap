@@ -187,8 +187,13 @@ export function TopicDetail() {
     return null;
   }
 
-  const contributionDir = resourceType === 'roadmap' ? 'roadmaps' : 'best-practices';
+  const contributionDir =
+    resourceType === 'roadmap' ? 'roadmaps' : 'best-practices';
   const contributionUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/${contributionDir}/${resourceId}/content`;
+
+  const allowMarkingDone = ['pending', 'learning'].includes(progress);
+  const allowMarkingLearning = ['pending'].includes(progress);
+  const allowMarkingPending = ['done', 'learning'].includes(progress);
 
   return (
     <div>
@@ -218,7 +223,7 @@ export function TopicDetail() {
                     onClick={() => setIsActive(false)}
                   >
                     <img alt="Check" class="w-3" src={CheckIcon} />
-                    <span className="ml-2">Done</span>
+                    <span className="ml-2">Mark as Done</span>
                   </button>
                   <button
                     data-popup="login-popup"
@@ -232,7 +237,7 @@ export function TopicDetail() {
               )}
 
               {!isGuest && (
-                <>
+                <div class="flex items-center gap-2 rounded-md">
                   {isUpdatingProgress && (
                     <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
                       <img
@@ -243,55 +248,37 @@ export function TopicDetail() {
                       <span className="ml-2">Updating Status..</span>
                     </button>
                   )}
-                  {!isUpdatingProgress && progress === 'pending' && (
-                    <div className="flex items-center gap-2">
-                      <button
-                        className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-                        onClick={() => handleUpdateResourceProgress('done')}
-                      >
-                        <img alt="Check" class="w-3" src={CheckIcon} />
-                        <span className="ml-2">Done</span>
-                      </button>
 
-                      <button
-                        className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
-                        onClick={() => handleUpdateResourceProgress('learning')}
-                      >
-                        <img alt="Learning" class="w-4" src={ProgressIcon} />
-                        <span className="ml-2">In Progress</span>
-                      </button>
-                    </div>
+                  {!isUpdatingProgress && allowMarkingDone && (
+                    <button
+                      className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
+                      onClick={() => handleUpdateResourceProgress('done')}
+                    >
+                      <img alt="Check" class="w-3" src={CheckIcon} />
+                      <span className="ml-2">Mark as Done</span>
+                    </button>
                   )}
 
-                  {!isUpdatingProgress && progress === 'done' && (
+                  {!isUpdatingProgress && allowMarkingLearning && (
+                    <button
+                      className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
+                      onClick={() => handleUpdateResourceProgress('learning')}
+                    >
+                      <img alt="Learning" className="w-4" src={ProgressIcon} />
+                      <span className="ml-2">In Progress</span>
+                    </button>
+                  )}
+
+                  {!isUpdatingProgress && allowMarkingPending && (
                     <button
                       className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
                       onClick={() => handleUpdateResourceProgress('pending')}
                     >
                       <img alt="Check" class="h-4" src={ResetIcon} />
-                      <span className="ml-2">Pending</span>
+                      <span className="ml-2">Mark as Pending</span>
                     </button>
                   )}
-
-                  {!isUpdatingProgress && progress === 'learning' && (
-                    <div className="flex items-center gap-2">
-                      <button
-                        className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-                        onClick={() => handleUpdateResourceProgress('done')}
-                      >
-                        <img alt="Check" class="w-3" src={CheckIcon} />
-                        <span className="ml-2">Done</span>
-                      </button>
-                      <button
-                        className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
-                        onClick={() => handleUpdateResourceProgress('pending')}
-                      >
-                        <img alt="Check" class="h-4" src={ResetIcon} />
-                        <span className="ml-2">Pending</span>
-                      </button>
-                    </div>
-                  )}
-                </>
+                </div>
               )}
 
               <button
@@ -313,10 +300,14 @@ export function TopicDetail() {
 
             <p
               id="contrib-meta"
-              class="mt-10 border-t pt-3 text-sm text-gray-400 leading-relaxed"
+              class="mt-10 border-t pt-3 text-sm leading-relaxed text-gray-400"
             >
               Contribute links to learning resources about this topic{' '}
-              <a target="_blank" class="text-blue-700 underline" href={contributionUrl}>
+              <a
+                target="_blank"
+                class="text-blue-700 underline"
+                href={contributionUrl}
+              >
                 on GitHub repository.
               </a>
               .
