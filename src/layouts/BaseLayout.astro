@@ -18,6 +18,7 @@ export interface Props {
   keywords?: string[];
   noIndex?: boolean;
   canonicalUrl?: string;
+  initialLoadingMessage?: string;
   permalink?: string;
   jsonLd?: Record<string, unknown>[];
 }
@@ -32,6 +33,7 @@ const {
   canonicalUrl: givenCanonical = '',
   jsonLd = [],
   redirectUrl = '',
+  initialLoadingMessage = '',
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -148,7 +150,7 @@ const gaPageIdentifier = Astro.url.pathname
     </slot>
 
     <Authenticator />
-    <PageProgress client:idle />
+    <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <PageSponsor
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load

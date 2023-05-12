@@ -1,11 +1,22 @@
 import { useStore } from '@nanostores/preact';
-import { pageLoadingMessage } from '../stores/page';
+import { useIsFirstRender } from '../hooks/use-is-first-render';
 import SpinnerIcon from '../icons/spinner.svg';
+import { pageLoadingMessage } from '../stores/page';
 
-export function PageProgress() {
+export interface Props {
+  initialMessage: string;
+}
+
+export function PageProgress(props: Props) {
+  const { initialMessage } = props;
+
+  const isFirstRender = useIsFirstRender();
   const $pageLoadingMessage = useStore(pageLoadingMessage);
+
   if (!$pageLoadingMessage) {
-    return null;
+    if (!initialMessage || !isFirstRender) {
+      return null;
+    }
   }
 
   return (
@@ -19,7 +30,7 @@ export function PageProgress() {
             className="h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-4 sm:w-4"
           />
           <h1 className="ml-2">
-            {$pageLoadingMessage}
+            {$pageLoadingMessage || initialMessage}
             <span className="animate-pulse">...</span>
           </h1>
         </div>

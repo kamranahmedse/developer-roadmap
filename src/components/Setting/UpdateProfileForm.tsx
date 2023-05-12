@@ -74,7 +74,6 @@ export function UpdateProfileForm() {
 
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
-    pageLoadingMessage.set('Loading profile');
     loadProfile().finally(() => {
       pageLoadingMessage.set('');
     });

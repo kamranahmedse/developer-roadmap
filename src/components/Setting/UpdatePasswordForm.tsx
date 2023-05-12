@@ -1,6 +1,4 @@
-import { useCallback, useEffect, useState } from 'preact/hooks';
-import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageLoadingMessage } from '../../stores/page';
 
@@ -73,7 +71,6 @@ export default function UpdatePasswordForm() {
   };
 
   useEffect(() => {
-    pageLoadingMessage.set('Loading profile');
     loadProfile().finally(() => {
       pageLoadingMessage.set('');
     });
