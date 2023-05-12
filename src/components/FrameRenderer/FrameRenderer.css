@@ -57,6 +57,11 @@ svg .learning rect {
   fill: #dad1fd !important;
 }
 
+svg .learning rect[fill='rgb(51,51,51)'] + text,
+svg .done rect[fill='rgb(51,51,51)'] + text {
+  fill: black !important;
+}
+
 svg .learning text {
   text-decoration: underline;
 }

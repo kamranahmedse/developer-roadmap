@@ -9,6 +9,7 @@
 }
 
 .prose ul li > code,
+.prose ol li > code,
 p > code,
 a > code,
 strong > code,
