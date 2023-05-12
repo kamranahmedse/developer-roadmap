@@ -1,5 +1,15 @@
 # Terraform
 
-Terraform is an open-source infrastructure as code (IaC) tool that allows you to define, provision, and manage cloud infrastructure in a declarative manner. It is developed by HashiCorp and is written in the Go programming language. Terraform supports multiple cloud providers such as AWS, Google Cloud, Microsoft Azure, and many others. It uses a configuration language called HashiCorp Configuration Language (HCL) to write infrastructure definitions, and it maintains the state of your infrastructure in a state file.
+Terraform is an extremely popular open source Infrastructure as Code (IaC) tool that can be used with many different cloud and service provider APIs. Terraform focuses on an immutable approach to infrastructure, with a terraform state file center to tracking the status of your real world infrastructure.
 
-> —— In Progress ——
+Visit the following resources to learn more:
+
+- [Terraform Website](https://www.terraform.io/)
+- [Terraform Documentation](https://www.terraform.io/docs)
+- [Terraform Tutorials](https://learn.hashicorp.com/terraform)
+- [Intro to Terraform Video](https://www.youtube.com/watch?v=h970ZBgKINg&ab_channel=HashiCorp)
+- [Terraform CDK Website](https://www.terraform.io/cdktf)
+- [What is the CDKTF?](https://www.terraform.io/cdktf/concepts/cdktf-architecture)
+- [CDKTF Getting Started Guide](https://learn.hashicorp.com/tutorials/terraform/cdktf-install?in=terraform/cdktf)
+- [CDKTF Examples](https://www.terraform.io/cdktf/examples)
+- [How to Scale Your Terraform Infrastructure](https://thenewstack.io/how-to-scale-your-terraform-infrastructure/)

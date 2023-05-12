@@ -1,5 +1,10 @@
 # Ansible
 
-Ansible is an open-source automation tool that simplifies complex software management, deployment, and configuration processes. It helps automate day-to-day IT tasks by defining them as simple, human-readable YAML files (called 'playbooks') that can be shared and understood easily by the whole team.
+Ansible is an open-source configuration management, application deployment and provisioning tool that uses its own declarative language in YAML. Ansible is agentless, meaning you only need remote connections via SSH or Windows Remote Management via Powershell in order to function
 
-> —— In Progress ——
+Visit the following resources to learn more:
+
+- [Ansible Website](https://www.ansible.com/)
+- [Official Documentation](https://docs.ansible.com/)
+- [Ansible Getting Started Guide](https://www.ansible.com/resources/get-started)
+- [Ansible Full Course for Beginners](https://www.youtube.com/watch?v=9Ua2b06oAr4)
