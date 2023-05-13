@@ -16,6 +16,13 @@ export interface Props {
       <ul class='space-y-1'>
         <li>
           <a
+            href='/settings/activities'
+            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'activities' ? 'bg-slate-100' : ''}`
+            >Activity</a
+          >
+        </li>
+        <li>
+          <a
             href='/settings/update-profile'
             class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
             >Profile</a
@@ -31,7 +38,7 @@ export interface Props {
       </ul>
     </nav>
   </aside>
-  <div class='grow py-10 pl-0 md:p-10 md:pr-0'>
+  <div class='grow'>
     <div class='relative mb-5 md:hidden'>
       <button
         class='flex h-10 w-full items-center justify-between rounded-md bg-slate-800 px-2 text-center font-medium text-slate-100'
@@ -44,6 +51,13 @@ export interface Props {
         id='settings-menu-dropdown'
         class='absolute mt-1 hidden w-full space-y-1.5 rounded-md bg-white p-2 shadow-lg'
       >
+        <li>
+          <a
+            href='/settings/activities'
+            class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${pageUrl === 'activities' ? 'bg-slate-100' : ''}`
+            >Activity</a
+          >
+        </li>
         <li>
           <a
             href='/settings/update-profile'
