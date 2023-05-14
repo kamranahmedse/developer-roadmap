@@ -1,11 +1,11 @@
 ---
 import SettingSidebar from '../../components/Setting/SettingSidebar.astro';
-import UserActivities from '../../components/Setting/UserActivities.astro';
+import UserActivities from '../../components/Setting/UserActivities';
 import SettingLayout from '../../layouts/SettingLayout.astro';
 ---
 
-<SettingLayout title='User Activites' noIndex={true}>
-  <SettingSidebar pageUrl='activites' name='Activites'>
-    <UserActivities />
+<SettingLayout title='User Activities' noIndex={true}>
+  <SettingSidebar pageUrl='activities' name='Activities'>
+    <UserActivities client:load />
   </SettingSidebar>
 </SettingLayout>

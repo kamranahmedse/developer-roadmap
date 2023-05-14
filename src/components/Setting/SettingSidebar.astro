@@ -17,29 +17,34 @@ export interface Props {
         <li>
           <a
             href='/settings/activities'
-            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'activities' ? 'bg-slate-100' : ''}`
-            >Activity</a
+            class=`flex items-center gap-2 w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'activities' ? 'bg-slate-100' : ''}`
+            >
+            <Icon icon='list' class='h-4 w-4' />Activity</a
           >
         </li>
         <li>
           <a
             href='/settings/update-profile'
-            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
-            >Profile</a
+            class=`flex items-center gap-2 w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
+          >
+            <Icon icon='user' class='h-4 w-4' />
+            Profile</a
           >
         </li>
         <li>
           <a
             href='/settings/update-password'
-            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'change-password' ? 'bg-slate-100' : ''}`
-            >Security</a
+            class=`w-full flex items-center gap-2  rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'change-password' ? 'bg-slate-100' : ''}`
+          >
+            <Icon icon='cog' class='h-4 w-4' />
+            Security</a
           >
         </li>
       </ul>
     </nav>
   </aside>
   <div class='grow'>
-    <div class='relative mb-5 md:hidden mt-10'>
+    <div class='relative mb-5 mt-10 md:hidden'>
       <button
         class='flex h-10 w-full items-center justify-between rounded-md bg-slate-800 px-2 text-center font-medium text-slate-100'
         id='settings-menu'
@@ -49,7 +54,7 @@ export interface Props {
       </button>
       <ul
         id='settings-menu-dropdown'
-        class='absolute mt-1 hidden w-full space-y-1.5 rounded-md bg-white p-2 shadow-lg z-10'
+        class='absolute z-10 mt-1 hidden w-full space-y-1.5 rounded-md bg-white p-2 shadow-lg'
       >
         <li>
           <a
@@ -62,7 +67,8 @@ export interface Props {
           <a
             href='/settings/update-profile'
             class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
-            >Profile</a
+          >
+            Profile</a
           >
         </li>
         <li>

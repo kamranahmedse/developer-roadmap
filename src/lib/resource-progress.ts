@@ -42,6 +42,7 @@ export async function updateResourceProgress(
   progressType: ResourceProgressType
 ) {
   const { topicId, resourceType, resourceId } = topic;
+  const timestring = new Date().getTime();
 
   const { response, error } = await httpPost<{
     done: string[];
@@ -51,6 +52,7 @@ export async function updateResourceProgress(
     resourceType,
     resourceId,
     progress: progressType,
+    timestring,
   });
 
   if (error || !response?.done || !response?.learning) {
