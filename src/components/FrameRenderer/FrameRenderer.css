@@ -49,12 +49,16 @@ svg .done rect {
   fill: #cbcbcb !important;
 }
 
-svg .done text {
+svg .done text, svg .skipped text {
   text-decoration: line-through;
 }
 
 svg .learning rect {
   fill: #dad1fd !important;
+}
+
+svg .skipped rect {
+  fill: #ff665a !important;
 }
 
 svg .learning rect[fill='rgb(51,51,51)'] + text,
