@@ -30,9 +30,9 @@ const relatedRoadmapDetails = await getRoadmapsByIds(relatedRoadmaps);
         relatedRoadmapDetails.map((relatedRoadmap) => (
           <a
             href={`/${relatedRoadmap.id}`}
-            class='py-2 px-3.5 bg-white border rounded-md hover:bg-gray-50 flex flex-col sm:flex-row gap-0.5 sm:gap-0'
+            class='py-2 px-3.5 bg-white border rounded-md hover:bg-gray-50 flex flex-col sm:flex-row items-start sm:items-center gap-0.5 sm:gap-0'
           >
-            <span class='font-medium inline-block min-w-[150px]'>{relatedRoadmap.frontmatter.briefTitle}</span>
+            <span class='font-medium inline-block w-[150px]'>{relatedRoadmap.frontmatter.briefTitle}</span>
             <span class='text-gray-500'>{relatedRoadmap.frontmatter.briefDescription}</span>
           </a>
         ))
