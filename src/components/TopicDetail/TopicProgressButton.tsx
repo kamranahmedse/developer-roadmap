@@ -133,17 +133,6 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
               Done
             </button>
           )}
-          {allowMarkingPending && (
-            <button
-              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
-              onClick={() => handleUpdateResourceProgress('pending')}
-            >
-              <span
-                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
-              ></span>
-              Pending
-            </button>
-          )}
           {allowMarkingLearning && (
             <button
               class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
@@ -153,6 +142,17 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
                 class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
               ></span>
               In Progress
+            </button>
+          )}
+          {allowMarkingPending && (
+            <button
+              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              onClick={() => handleUpdateResourceProgress('pending')}
+            >
+              <span
+                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
+              ></span>
+              Pending
             </button>
           )}
           {allowMarkingSkipped && (

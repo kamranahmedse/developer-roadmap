@@ -58,7 +58,7 @@ svg .learning rect {
 }
 
 svg .skipped rect {
-  fill: #ff665a !important;
+  fill: #ff6e6e !important;
 }
 
 svg .learning rect[fill='rgb(51,51,51)'] + text,
