@@ -5,7 +5,7 @@ import CheckDarkIcon from '../../icons/check-badge.svg';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
 import CheckCircleIcon from '../../icons/check-circle.svg';
-import XIcon from '../../icons/close.svg';
+import XIcon from '../../icons/close-dark.svg';
 import ClockIcon from '../../icons/clock.svg';
 
 interface UserResourceProgressDocument {
