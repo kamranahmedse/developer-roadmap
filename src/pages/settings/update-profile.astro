@@ -4,7 +4,11 @@ import { UpdateProfileForm } from '../../components/Setting/UpdateProfileForm';
 import SettingLayout from '../../layouts/SettingLayout.astro';
 ---
 
-<SettingLayout title='Update Profile' noIndex={true}>
+<SettingLayout
+  title='Update Profile'
+  noIndex={true}
+  initialLoadingMessage={'Loading profile'}
+>
   <SettingSidebar pageUrl='profile' name='Profile'>
     <div class='py-10 pl-0 md:p-10 md:pr-0'>
       <UpdateProfileForm client:load />
