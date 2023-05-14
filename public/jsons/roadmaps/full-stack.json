@@ -1881,7 +1881,7 @@
           "x": "731",
           "y": "374",
           "properties": {
-            "controlName": "ext_link:roadmap.sh/frontend"
+            "controlName": "ext_link:roadmap.sh/backend"
           },
           "children": {
             "controls": {
@@ -1928,7 +1928,7 @@
           "x": "856",
           "y": "374",
           "properties": {
-            "controlName": "ext_link:roadmap.sh/frontend"
+            "controlName": "ext_link:roadmap.sh/devops"
           },
           "children": {
             "controls": {
