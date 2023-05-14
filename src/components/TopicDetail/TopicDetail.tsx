@@ -45,6 +45,7 @@ export function TopicDetail() {
     }
   };
 
+
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
     setIsActive(false);
@@ -169,6 +170,7 @@ export function TopicDetail() {
                 topicId={topicId}
                 resourceId={resourceId}
                 resourceType={resourceType}
+                onShowLoginPopup={showLoginPopup}
                 onClose={() => {
                   setIsActive(false);
                 }}

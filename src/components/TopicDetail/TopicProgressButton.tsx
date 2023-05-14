@@ -1,9 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import CheckIcon from '../../icons/check.svg';
 import DownIcon from '../../icons/down.svg';
-import ProgressIcon from '../../icons/progress.svg';
-import ResetIcon from '../../icons/reset.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import { isLoggedIn } from '../../lib/jwt';
 import {
@@ -19,6 +16,7 @@ type TopicProgressButtonProps = {
   resourceId: string;
   resourceType: ResourceType;
 
+  onShowLoginPopup: () => void;
   onClose: () => void;
 };
 
@@ -30,7 +28,7 @@ const statusColors: Record<ResourceProgressType, string> = {
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose } = props;
+  const { topicId, resourceId, resourceType, onClose, onShowLoginPopup } = props;
 
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
   const [progress, setProgress] = useState<ResourceProgressType>('pending');
@@ -59,6 +57,12 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   }, [topicId, resourceId, resourceType]);
 
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
+    if (isGuest) {
+      onClose();
+      onShowLoginPopup();
+      return;
+    }
+
     setIsUpdatingProgress(true);
     updateResourceProgress(
       {
@@ -167,63 +171,6 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
             </button>
           )}
         </div>
-      )}
-    </div>
-  );
-
-  if (isGuest) {
-    return (
-      <div className="flex items-center gap-2">
-        <button
-          data-popup="login-popup"
-          className="inline-flex items-center rounded-md bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-          onClick={onClose}
-        >
-          <img alt="Check" class="w-3" src={CheckIcon} />
-          <span className="ml-2">Mark as Done</span>
-        </button>
-        <button
-          data-popup="login-popup"
-          className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
-          onClick={onClose}
-        >
-          <img alt="Learning" class="w-4" src={ProgressIcon} />
-          <span className="ml-2">In Progress</span>
-        </button>
-      </div>
-    );
-  }
-
-  return (
-    <div class="flex items-center gap-2 rounded-md">
-      {allowMarkingDone && (
-        <button
-          className="inline-flex items-center rounded-md border border-green-600 bg-green-600 p-1 px-2 text-sm text-white hover:bg-green-700"
-          onClick={() => handleUpdateResourceProgress('done')}
-        >
-          <img alt="Check" class="w-3" src={CheckIcon} />
-          <span className="ml-1">Done</span>
-        </button>
-      )}
-
-      {allowMarkingLearning && (
-        <button
-          className="inline-flex items-center rounded-md bg-[#dad1fd] p-1 px-2 text-sm text-[#0E033B] hover:bg-[#C4B6FC]"
-          onClick={() => handleUpdateResourceProgress('learning')}
-        >
-          <img alt="Learning" className="w-4" src={ProgressIcon} />
-          <span className="ml-1">Doing</span>
-        </button>
-      )}
-
-      {allowMarkingPending && (
-        <button
-          className="inline-flex items-center rounded-md border border-red-600 bg-red-600 p-1 px-2 text-sm text-white hover:bg-red-700"
-          onClick={() => handleUpdateResourceProgress('pending')}
-        >
-          <img alt="Check" class="h-4" src={ResetIcon} />
-          <span className="ml-2">Pending</span>
-        </button>
       )}
     </div>
   );
