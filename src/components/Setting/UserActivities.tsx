@@ -4,6 +4,9 @@ import { pageLoadingMessage } from '../../stores/page';
 import CheckDarkIcon from '../../icons/check-badge.svg';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
+import CheckCircleIcon from '../../icons/check-circle.svg';
+import XIcon from '../../icons/close.svg';
+import ClockIcon from '../../icons/clock.svg';
 
 interface UserResourceProgressDocument {
   _id?: string;
@@ -19,8 +22,26 @@ interface UserResourceProgressDocument {
 type UserActivityResponse = {
   topicsCompletedToday: number;
   topicsCompleted: number;
+  topicsLearning: number;
   streak: number;
   learning: UserResourceProgressDocument[];
+  activities: {
+    type:
+      | 'roadmap-progress-done'
+      | 'best-practice-progress-done'
+      | 'roadmap-progress-learning'
+      | 'best-practice-progress-learning'
+      | 'roadmap-progress-pending'
+      | 'best-practice-progress-pending'
+      | 'roadmap-progress-skipped'
+      | 'best-practice-progress-skipped';
+    timestamp: Date;
+    metadata: {
+      resourceId?: string;
+      resourceType?: 'roadmap' | 'best-practice';
+      topicId?: string;
+    };
+  }[];
 };
 
 export default function UserActivities() {
@@ -53,18 +74,6 @@ export default function UserActivities() {
 
   return (
     <div>
-      {/* <div className="grid border-b border-gray-200">
-        <div className="p-5 pb-8 pt-10 text-center">
-          <div className="relative text-3xl font-semibold">
-            {data?.topicsCompleted || 0}
-            <sup className="absolute top-0 ml-0.5 text-sm font-normal leading-none text-gray-500">
-              +{data?.topicsCompletedToday || 0} today
-            </sup>
-          </div>
-          <p className="mt-1">Topics Completed</p>
-        </div>
-      </div> */}
-
       <div className="pl-0 pt-4 md:p-10 md:pb-0 md:pr-0">
         <div className="grid grid-cols-3 divide-x divide-gray-300">
           <div className="flex items-center gap-3">
@@ -84,10 +93,7 @@ export default function UserActivities() {
             <div>
               <h3 className="text-xs text-gray-600">Currently Learning</h3>
               <p className="mt-1 font-semibold leading-none">
-                {data?.topicsCompleted || 0}{' '}
-                <span className="text-xs font-normal text-gray-400">
-                  // +{data?.topicsCompletedToday || 0} today
-                </span>
+                {data?.topicsLearning || 0}
               </p>
             </div>
           </div>
@@ -97,9 +103,7 @@ export default function UserActivities() {
               <h3 className="text-xs text-gray-600">Learning Streak</h3>
               <p className="mt-1 font-semibold leading-none">
                 {data?.topicsCompleted || 0}{' '}
-                <span className="text-xs font-normal text-gray-400">
-                  today
-                </span>
+                <span className="text-xs font-normal text-gray-400">today</span>
               </p>
             </div>
           </div>
@@ -116,7 +120,57 @@ export default function UserActivities() {
             </div>
           ))}
         </div>
+
+        <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>
+        <ul className="mt-4 flex flex-col gap-2">
+          {data?.activities.map((activity) => (
+            <li>{formatActivity(activity)}</li>
+          ))}
+        </ul>
       </div>
+    </div>
+  );
+}
+
+function formatActivity(activity: UserActivityResponse['activities'][0]) {
+  const { type, timestamp, metadata } = activity;
+  const progress = type.split('-')[
+    metadata.resourceType === 'roadmap' ? 2 : 3
+  ] as 'done' | 'learning' | 'pending' | 'skipped';
+  const formatedDate = new Date(timestamp).toLocaleDateString('en-US', {
+    month: 'short',
+    day: 'numeric',
+  });
+  const resourceUrl =
+    metadata.resourceType === 'roadmap'
+      ? `/${metadata.resourceId}`
+      : `/best-practices/${metadata.resourceId}`;
+  const icon = {
+    done: CheckCircleIcon,
+    learning: ProgressDarkIcon,
+    pending: ClockIcon,
+    skipped: XIcon,
+  };
+  const status = {
+    done: 'Finished',
+    learning: 'Learning',
+    pending: 'Pending',
+    skipped: 'Skipped',
+  };
+
+  return (
+    <div className="flex items-center justify-between gap-2 rounded border border-gray-200 p-1">
+      <p className="flex items-center gap-2 text-sm">
+        <img src={icon[progress]} alt={progress} className="h-4 w-4" />
+        <p>
+          {status[progress]}{' '}
+          <a className="text-black hover:underline" href={resourceUrl}>
+            {metadata.resourceId}'s
+          </a>{' '}
+          <span>{metadata.topicId}</span>
+        </p>
+      </p>
+      <p className="text-xs text-gray-400">{formatedDate}</p>
     </div>
   );
 }
