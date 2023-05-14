@@ -40,7 +40,7 @@ export function UserActivity({
         <img src={icon[progress]} alt={progress} className="h-4 w-4" />
         <p>
           {status[progress]}{' '}
-          <a className="text-black hover:underline" href={resourceUrl}>
+          <a className="text-black underline hover:no-underline" href={resourceUrl}>
             {metadata.resourceId}'s
           </a>{' '}
           <span>{metadata.label}</span>
