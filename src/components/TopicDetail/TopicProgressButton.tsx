@@ -1,4 +1,5 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import DownIcon from '../../icons/down.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
@@ -28,7 +29,8 @@ const statusColors: Record<ResourceProgressType, string> = {
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose, onShowLoginPopup } = props;
+  const { topicId, resourceId, resourceType, onClose, onShowLoginPopup } =
+    props;
 
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
   const [progress, setProgress] = useState<ResourceProgressType>('pending');
@@ -55,6 +57,63 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
       })
       .catch(console.error);
   }, [topicId, resourceId, resourceType]);
+
+  // Mark as done
+  useKeydown(
+    'd',
+    () => {
+      if (progress === 'done') {
+        onClose();
+        return;
+      }
+
+      handleUpdateResourceProgress('done');
+    },
+    [progress]
+  );
+
+  // Mark as learning
+  useKeydown(
+    'l',
+    () => {
+      if (progress === 'learning') {
+        onClose();
+        return;
+      }
+
+      handleUpdateResourceProgress('learning');
+    },
+    [progress]
+  );
+
+  // Mark as learning
+  useKeydown(
+    's',
+    () => {
+      if (progress === 'skipped') {
+        onClose();
+        return;
+      }
+
+      handleUpdateResourceProgress('skipped');
+    },
+    [progress]
+  );
+
+  // Mark as pending
+  useKeydown(
+    'r',
+    () => {
+      console.log(progress);
+      if (progress === 'pending') {
+        onClose();
+        return;
+      }
+
+      handleUpdateResourceProgress('pending');
+    },
+    [progress]
+  );
 
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
     if (isGuest) {
@@ -86,10 +145,18 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
       });
   };
 
-  const allowMarkingSkipped = ['pending', 'learning', 'done'].includes(progress);
-  const allowMarkingDone = ['skipped', 'pending', 'learning'].includes(progress);
-  const allowMarkingLearning = ['done', 'skipped', 'pending'].includes(progress);
-  const allowMarkingPending = ['skipped', 'done', 'learning'].includes(progress);
+  const allowMarkingSkipped = ['pending', 'learning', 'done'].includes(
+    progress
+  );
+  const allowMarkingDone = ['skipped', 'pending', 'learning'].includes(
+    progress
+  );
+  const allowMarkingLearning = ['done', 'skipped', 'pending'].includes(
+    progress
+  );
+  const allowMarkingPending = ['skipped', 'done', 'learning'].includes(
+    progress
+  );
 
   if (isUpdatingProgress) {
     return (
@@ -123,51 +190,64 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       {showChangeStatus && (
         <div
-          className="absolute right-0 top-full mt-1 flex min-w-[128px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
+          className="absolute right-0 top-full mt-1 flex min-w-[160px] flex-col divide-y rounded-md border border-gray-200 bg-white shadow-md [&>button:first-child]:rounded-t-md [&>button:last-child]:rounded-b-md"
           ref={changeStatusRef!}
         >
           {allowMarkingDone && (
             <button
-              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('done')}
             >
-              <span
-                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
-              ></span>
-              Done
+              <span>
+                <span
+                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
+                ></span>
+                Done
+              </span>
+              <span class="text-xs text-gray-500">D</span>
             </button>
           )}
           {allowMarkingLearning && (
             <button
-              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('learning')}
             >
-              <span
-                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
-              ></span>
-              In Progress
+              <span>
+                <span
+                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
+                ></span>
+                In Progress
+              </span>
+
+              <span class="text-xs text-gray-500">L</span>
             </button>
           )}
           {allowMarkingPending && (
             <button
-              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('pending')}
             >
-              <span
-                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
-              ></span>
-              Pending
+              <span>
+                <span
+                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
+                ></span>
+                Reset
+              </span>
+              <span class="text-xs text-gray-500">R</span>
             </button>
           )}
           {allowMarkingSkipped && (
             <button
-              class="px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('skipped')}
             >
-              <span
-                class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
-              ></span>
-              Skip
+              <span>
+                <span
+                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
+                ></span>
+                Skip
+              </span>
+              <span class="text-xs text-gray-500">S</span>
             </button>
           )}
         </div>

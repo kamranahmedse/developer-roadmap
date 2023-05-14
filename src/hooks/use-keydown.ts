@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect } from 'preact/hooks';
 
-export function useKeydown(keyName: string, callback: any) {
+export function useKeydown(keyName: string, callback: any, deps: any[] = []) {
   useEffect(() => {
     const listener = (event: any) => {
       if (event.key.toLowerCase() === keyName.toLowerCase()) {
@@ -12,5 +12,5 @@ export function useKeydown(keyName: string, callback: any) {
     return () => {
       window.removeEventListener('keydown', listener);
     };
-  }, []);
+  }, deps);
 }
