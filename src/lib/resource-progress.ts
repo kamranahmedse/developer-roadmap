@@ -46,7 +46,6 @@ export async function updateResourceProgress(
   progressType: ResourceProgressType
 ) {
   const { topicId, resourceType, resourceId } = topic;
-  const timestring = new Date().getTime();
 
   const { response, error } = await httpPost<{
     done: string[];
@@ -57,7 +56,6 @@ export async function updateResourceProgress(
     resourceType,
     resourceId,
     progress: progressType,
-    timestring,
   });
 
   if (error || !response?.done || !response?.learning) {
@@ -69,7 +67,7 @@ export async function updateResourceProgress(
     resourceId,
     response.done,
     response.learning,
-    response.skipped,
+    response.skipped
   );
 
   return response;
@@ -78,7 +76,7 @@ export async function updateResourceProgress(
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
-): Promise<{ done: string[]; learning: string[], skipped: string[] }> {
+): Promise<{ done: string[]; learning: string[]; skipped: string[] }> {
   // No need to load progress if user is not logged in
   if (!Cookies.get(TOKEN_COOKIE_NAME)) {
     return {
@@ -131,7 +129,7 @@ async function loadFreshProgress(
     resourceId,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || [],
+    response?.skipped || []
   );
 
   return response;
@@ -142,7 +140,7 @@ export function setResourceProgress(
   resourceId: string,
   done: string[],
   learning: string[],
-  skipped: string [],
+  skipped: string[]
 ): void {
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
@@ -150,7 +148,6 @@ export function setResourceProgress(
       done,
       learning,
       skipped,
-      timestamp: new Date().getTime(),
     })
   );
 }
@@ -211,8 +208,11 @@ export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
 ) {
-  const { done = [], learning = [], skipped = [] } =
-    (await getResourceProgress(resourceType, resourceId)) || {};
+  const {
+    done = [],
+    learning = [],
+    skipped = [],
+  } = (await getResourceProgress(resourceType, resourceId)) || {};
 
   done.forEach((topicId) => {
     renderTopicProgress(topicId, 'done');

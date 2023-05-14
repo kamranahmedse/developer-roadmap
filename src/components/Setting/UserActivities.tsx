@@ -4,9 +4,7 @@ import { pageLoadingMessage } from '../../stores/page';
 import CheckDarkIcon from '../../icons/check-badge.svg';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
-import CheckCircleIcon from '../../icons/check-circle.svg';
-import XIcon from '../../icons/close-dark.svg';
-import ClockIcon from '../../icons/clock.svg';
+import { UserActivity } from './UserActivity';
 
 interface UserResourceProgressDocument {
   _id?: string;
@@ -19,7 +17,7 @@ interface UserResourceProgressDocument {
   updatedAt: Date;
 }
 
-type UserActivityResponse = {
+export type UserActivityResponse = {
   topicsCompletedToday: number;
   topicsCompleted: number;
   topicsLearning: number;
@@ -35,11 +33,12 @@ type UserActivityResponse = {
       | 'best-practice-progress-pending'
       | 'roadmap-progress-skipped'
       | 'best-practice-progress-skipped';
-    timestamp: Date;
+    createdAt: Date;
     metadata: {
       resourceId?: string;
       resourceType?: 'roadmap' | 'best-practice';
       topicId?: string;
+      label?: string;
     };
   }[];
 };
@@ -124,53 +123,12 @@ export default function UserActivities() {
         <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>
         <ul className="mt-4 flex flex-col gap-2">
           {data?.activities.map((activity) => (
-            <li>{formatActivity(activity)}</li>
+            <li>
+              <UserActivity activity={activity} />
+            </li>
           ))}
         </ul>
       </div>
-    </div>
-  );
-}
-
-function formatActivity(activity: UserActivityResponse['activities'][0]) {
-  const { type, timestamp, metadata } = activity;
-  const progress = type.split('-')[
-    metadata.resourceType === 'roadmap' ? 2 : 3
-  ] as 'done' | 'learning' | 'pending' | 'skipped';
-  const formatedDate = new Date(timestamp).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-  });
-  const resourceUrl =
-    metadata.resourceType === 'roadmap'
-      ? `/${metadata.resourceId}`
-      : `/best-practices/${metadata.resourceId}`;
-  const icon = {
-    done: CheckCircleIcon,
-    learning: ProgressDarkIcon,
-    pending: ClockIcon,
-    skipped: XIcon,
-  };
-  const status = {
-    done: 'Finished',
-    learning: 'Learning',
-    pending: 'Pending',
-    skipped: 'Skipped',
-  };
-
-  return (
-    <div className="flex items-center justify-between gap-2 rounded border border-gray-200 p-1">
-      <p className="flex items-center gap-2 text-sm">
-        <img src={icon[progress]} alt={progress} className="h-4 w-4" />
-        <p>
-          {status[progress]}{' '}
-          <a className="text-black hover:underline" href={resourceUrl}>
-            {metadata.resourceId}'s
-          </a>{' '}
-          <span>{metadata.topicId}</span>
-        </p>
-      </p>
-      <p className="text-xs text-gray-400">{formatedDate}</p>
     </div>
   );
 }
