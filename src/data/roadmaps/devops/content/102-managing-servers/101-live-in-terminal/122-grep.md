@@ -8,6 +8,7 @@ It has the following syntax:
 
 Visit the following resources to learn more:
 
+- [grep man pages](https://manrepository.com/grep/grep.1)
 - [What is Grep? with examples](https://www.geeksforgeeks.org/grep-command-in-unixlinux/)
 - [Detailed Manual](https://www.gnu.org/software/grep/manual/grep.html)
 - [Linux Crash Course - The grep Command](https://www.youtube.com/watch?v=Tc_jntovCM0)
