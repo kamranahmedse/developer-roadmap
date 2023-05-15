@@ -40,7 +40,7 @@ export function LearningProgress({
           {dayjs().to(dayjs(new Date(resource.updatedAt)))}
         </p>
       </div>
-      <div className="absolute -top-px inset-x-1 z-10 flex items-center gap-2">
+      <div className="absolute inset-x-1 -top-px z-10 flex items-center gap-2">
         <div className="h-px w-full rounded-full">
           <div
             className="h-px rounded-full bg-blue-600"
@@ -58,6 +58,25 @@ export function LearningProgress({
       >
         <img src={XIcon} alt="close" className="h-4 w-4" />
       </button>
+    </div>
+  );
+}
+
+export function LearningProgressSkeleton() {
+  return (
+    <div className={`relative rounded p-2 ring-1 ring-gray-200`}>
+      <div className="flex items-center justify-between">
+        <div className="h-6 w-1/2 rounded bg-gray-300" />
+      </div>
+      <div className="mt-2 flex items-center justify-between gap-2">
+        <div className="h-4 w-1/4 rounded bg-gray-300" />
+        <div className="h-4 w-1/4 rounded bg-gray-300" />
+      </div>
+      <div className="absolute inset-x-1 -top-px z-10 flex items-center gap-2">
+        <div className="h-px w-full rounded-full">
+          <div className="h-px rounded-full bg-gray-300" />
+        </div>
+      </div>
     </div>
   );
 }

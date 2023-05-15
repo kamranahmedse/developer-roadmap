@@ -57,3 +57,17 @@ export function UserActivity({
     </div>
   );
 }
+
+export function UserActivitySkeleton() {
+  return (
+    <div className="flex items-center justify-between gap-2 rounded border border-gray-200 p-1">
+      <div className="flex items-center gap-2 text-sm">
+        <div className="h-4 w-4 rounded-full bg-gray-200" />
+        <div className="h-4 w-24 rounded-full bg-gray-200" />
+      </div>
+      <div className="whitespace-nowrap text-xs text-gray-400">
+        <div className="h-4 w-12 rounded-full bg-gray-200" />
+      </div>
+    </div>
+  );
+}
