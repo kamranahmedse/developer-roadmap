@@ -14,3 +14,4 @@ Visit the following resources to learn more:
 - [Install Ubuntu Desktop Documentation](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
 - [Getting Started with Ubuntu Tutorials](https://itsfoss.com/getting-started-with-ubuntu/)
 - [The Linux Command Line by William Shotts](https://linuxcommand.org/tlcl.php)
+- [Online manual pages for Linux](https://manrepository.com/)
