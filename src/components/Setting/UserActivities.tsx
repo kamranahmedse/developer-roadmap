@@ -119,44 +119,53 @@ export default function UserActivities() {
           <div className="pl-0 pt-4 md:p-10 md:pr-0 md:pt-8">
             <div>
               <h4 className="text-2xl font-medium">Roadmaps</h4>
-              <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                {data?.learning.roadmap.map((item) => (
-                  <LearningProgress
-                    resource={item}
-                    key={item._id?.toString()}
-                  />
-                ))}
 
-                {data?.learning.roadmap.length === 0 && (
-                  <p>No roadmaps found. Start learning now!</p>
-                )}
-              </div>
+              {data?.learning.roadmap.length === 0 ? (
+                <p className="mt-2">No roadmaps found. Start learning now!</p>
+              ) : (
+                <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                  {data?.learning.roadmap.map((item) => (
+                    <LearningProgress
+                      resource={item}
+                      key={item._id?.toString()}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
 
             <div className="mt-5">
               <h4 className="text-2xl font-medium">Best Practices</h4>
-              <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                {data?.learning.bestPractice.map((item) => (
-                  <LearningProgress
-                    resource={item}
-                    key={item._id?.toString()}
-                  />
-                ))}
 
-                {data?.learning.bestPractice.length === 0 && (
-                  <p>No best practices found. Start learning now!</p>
-                )}
-              </div>
+              {data?.learning.bestPractice.length === 0 ? (
+                <p className="mt-2">
+                  No best practices found. Start learning now!
+                </p>
+              ) : (
+                <div className="mt-2 grid gap-2 sm:grid-cols-2">
+                  {data?.learning.bestPractice.map((item) => (
+                    <LearningProgress
+                      resource={item}
+                      key={item._id?.toString()}
+                    />
+                  ))}
+                </div>
+              )}
             </div>
 
             <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>
-            <ul className="mt-4 flex flex-col gap-2">
-              {data?.activities.map((activity) => (
-                <li>
-                  <UserActivity activity={activity} />
-                </li>
-              ))}
-            </ul>
+
+            {data?.activities.length === 0 ? (
+              <p className="mt-4">No activities found.</p>
+            ) : (
+              <ul className="mt-4 flex flex-col gap-2">
+                {data?.activities.map((activity) => (
+                  <li>
+                    <UserActivity activity={activity} />
+                  </li>
+                ))}
+              </ul>
+            )}
           </div>
         </div>
       )}
