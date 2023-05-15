@@ -16,6 +16,7 @@ export interface UserResourceProgressDocument {
   learning: string[];
   createdAt: Date;
   updatedAt: Date;
+  totalGroupCount: number;
 }
 
 export type UserActivityResponse = {
@@ -23,7 +24,10 @@ export type UserActivityResponse = {
   topicsCompleted: number;
   topicsLearning: number;
   streak: number;
-  learning: UserResourceProgressDocument[];
+  learning: {
+    roadmap: UserResourceProgressDocument[];
+    bestPractice: UserResourceProgressDocument[];
+  };
   activities: {
     type:
       | 'roadmap-progress-done'
@@ -111,11 +115,22 @@ export default function UserActivities() {
       </div>
 
       <div className="pl-0 pt-4 md:p-10 md:pr-0 md:pt-8">
-        <h3 className="text-2xl font-medium">Continue Learning</h3>
-        <div className="mt-4 flex flex-col gap-2">
-          {data?.learning.map((item) => (
-            <LearningProgress resource={item} key={item._id?.toString()} />
-          ))}
+        <div>
+          <h4 className="text-2xl font-medium">Roadmaps</h4>
+          <div className="mt-2 grid grid-cols-2 gap-2">
+            {data?.learning.roadmap.map((item) => (
+              <LearningProgress resource={item} key={item._id?.toString()} />
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-5">
+          <h4 className="text-2xl font-medium">Best Practices</h4>
+          <div className="mt-2 grid grid-cols-2 gap-2">
+            {data?.learning.bestPractice.map((item) => (
+              <LearningProgress resource={item} key={item._id?.toString()} />
+            ))}
+          </div>
         </div>
 
         <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>

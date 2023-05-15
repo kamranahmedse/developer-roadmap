@@ -50,7 +50,7 @@ export function UserActivity({
           <span>{metadata.label}</span>
         </p>
       </p>
-      <p className="text-xs text-gray-400">
+      <p className="text-xs text-gray-400 whitespace-nowrap">
         {dayjs().to(dayjs(new Date(createdAt)))}
       </p>
     </div>
