@@ -29,15 +29,7 @@ export type UserActivityResponse = {
     bestPractice: UserResourceProgressDocument[];
   };
   activities: {
-    type:
-      | 'roadmap-progress-done'
-      | 'best-practice-progress-done'
-      | 'roadmap-progress-learning'
-      | 'best-practice-progress-learning'
-      | 'roadmap-progress-pending'
-      | 'best-practice-progress-pending'
-      | 'roadmap-progress-skipped'
-      | 'best-practice-progress-skipped';
+    type: "done" | "learning" | "pending" | "skipped" | "cleared" | "completed";
     createdAt: Date;
     metadata: {
       resourceId?: string;
