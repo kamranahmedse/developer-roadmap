@@ -1,8 +1,12 @@
+import dayjs from 'dayjs';
+import relativeTime from 'dayjs/plugin/relativeTime';
 import type { UserActivityResponse } from './UserActivities';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import CheckCircleIcon from '../../icons/check-circle.svg';
 import XIcon from '../../icons/close-dark.svg';
 import ClockIcon from '../../icons/clock.svg';
+
+dayjs.extend(relativeTime);
 
 export function UserActivity({
   activity,
@@ -13,10 +17,7 @@ export function UserActivity({
   const progress = type.split('-')[
     metadata.resourceType === 'roadmap' ? 2 : 3
   ] as 'done' | 'learning' | 'pending' | 'skipped';
-  const formatedDate = new Date(createdAt).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-  });
+
   const resourceUrl =
     metadata.resourceType === 'roadmap'
       ? `/${metadata.resourceId}`
@@ -40,13 +41,18 @@ export function UserActivity({
         <img src={icon[progress]} alt={progress} className="h-4 w-4" />
         <p>
           {status[progress]}{' '}
-          <a className="text-black underline hover:no-underline" href={resourceUrl}>
+          <a
+            className="text-black underline hover:no-underline"
+            href={resourceUrl}
+          >
             {metadata.resourceId}'s
           </a>{' '}
           <span>{metadata.label}</span>
         </p>
       </p>
-      <p className="text-xs text-gray-400">{formatedDate}</p>
+      <p className="text-xs text-gray-400">
+        {dayjs().to(dayjs(new Date(createdAt)))}
+      </p>
     </div>
   );
 }

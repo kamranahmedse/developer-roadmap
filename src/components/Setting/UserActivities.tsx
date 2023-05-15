@@ -5,8 +5,9 @@ import CheckDarkIcon from '../../icons/check-badge.svg';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
 import { UserActivity } from './UserActivity';
+import { LearningProgress } from './LearningProgress';
 
-interface UserResourceProgressDocument {
+export interface UserResourceProgressDocument {
   _id?: string;
   userId: string;
   resourceId: string;
@@ -111,12 +112,9 @@ export default function UserActivities() {
 
       <div className="pl-0 pt-4 md:p-10 md:pr-0 md:pt-8">
         <h3 className="text-2xl font-medium">Continue Learning</h3>
-        <div className="mt-4 grid gap-2 sm:grid-cols-2 md:grid-cols-3">
+        <div className="mt-4 flex flex-col gap-2">
           {data?.learning.map((item) => (
-            <div className="rounded border border-gray-100 p-2">
-              <h4 className="font-medium">{item.resourceId}</h4>
-              <p className="text-sm">5/10 Completed</p>
-            </div>
+            <LearningProgress resource={item} key={item._id?.toString()} />
           ))}
         </div>
 

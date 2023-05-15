@@ -12,6 +12,7 @@ specifiers:
   astro: ^2.2.3
   astro-compress: ^1.1.42
   csv-parser: ^3.0.0
+  dayjs: ^1.11.7
   gh-pages: ^5.0.0
   jose: ^4.13.2
   js-cookie: ^3.0.1
@@ -37,6 +38,7 @@ dependencies:
   '@nanostores/preact': 0.3.1_ntvucyavaortwycasiweu74jd4
   astro: 2.3.3
   astro-compress: 1.1.42
+  dayjs: 1.11.7
   jose: 4.14.4
   js-cookie: 3.0.5
   nanostores: 0.7.4
@@ -2032,6 +2034,10 @@ packages:
     dependencies:
       minimist: 1.2.8
     dev: true
+
+  /dayjs/1.11.7:
+    resolution: {integrity: sha512-+Yw9U6YO5TQohxLcIkrXBeY73WP3ejHWVvx8XCk3gxvQDCTEmS48ZrSZCKciI7Bhl/uCMyxYtE9UqRILmFphkQ==}
+    dev: false
 
   /debug/4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
