@@ -29,10 +29,18 @@ export function LearningProgress({
 
     window.location.reload();
   };
+
+  const resourceUrl =
+    resource.resourceType === 'roadmap'
+      ? `/${resource.resourceId}`
+      : `/best-practices/${resource.resourceId}`;
+
   return (
     <div className={`relative rounded p-2 ring-1 ring-gray-200`}>
       <div className="flex items-center justify-between">
-        <h4 className="truncate font-medium">{resource.resourceId}</h4>
+        <a href={resourceUrl} className="truncate font-medium text-blue-700">
+          {resource.resourceId}
+        </a>
       </div>
       <div className="mt-2 flex items-center justify-between gap-2">
         <span className="whitespace-nowrap text-xs leading-none">
@@ -76,7 +84,7 @@ export function LearningProgressSkeleton() {
       </div>
       <div className="absolute inset-x-1 -top-px z-10 flex items-center gap-2">
         <div className="h-px w-full rounded-full">
-          <div className="h-px rounded-full bg-gray-300" />
+          <div className="h-px w-1/3 rounded-full bg-blue-300" />
         </div>
       </div>
     </div>
