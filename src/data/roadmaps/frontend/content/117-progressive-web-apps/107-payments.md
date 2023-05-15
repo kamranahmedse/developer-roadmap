@@ -9,6 +9,3 @@ The Payment Request API is supported by most modern web browsers and is designed
 Visit the following resources to learn more:
 
 - [Payment Request API - MDN](https://developer.mozilla.org/en-US/docs/Web/API/Payment_Request_API)
-
-
-

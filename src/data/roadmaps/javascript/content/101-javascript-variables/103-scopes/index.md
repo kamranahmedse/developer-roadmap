@@ -10,7 +10,6 @@ Function Scope: Variables declared within a function can only be used within tha
 
 Block Scope: A block is any part of JavaScript code bounded by '{}'. Variables declared within a block can not be accessed outside that block. This Scope is only provided by the `let` and `const` keywords. If you declare a variable within a block using the `var` keyword, it will NOT have Block Scope.
 
-
 Visit the following resources to learn more:
 
 - [JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)

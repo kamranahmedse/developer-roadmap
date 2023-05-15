@@ -4,9 +4,9 @@ A Reverse Proxy server is a type of proxy server that typically sits behind the 
 
 **Common Uses:**
 
-* Load balancing
-* Web acceleration
-* Security and anonymity
+- Load balancing
+- Web acceleration
+- Security and anonymity
 
 Visit the following resources to learn more:
 

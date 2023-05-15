@@ -7,9 +7,9 @@ Here's an example of how you can use namespaces in TypeScript:
 ```typescript
 // myNamespace.ts
 namespace MyNamespace {
-    export function doSomething() {
-        console.log("Doing something...");
-    }
+  export function doSomething() {
+    console.log('Doing something...');
+  }
 }
 
 // main.ts

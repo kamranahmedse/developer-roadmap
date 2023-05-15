@@ -49,8 +49,25 @@ svg .done rect {
   fill: #cbcbcb !important;
 }
 
-svg .done text {
+svg .done text, svg .skipped text {
   text-decoration: line-through;
+}
+
+svg .learning rect {
+  fill: #dad1fd !important;
+}
+
+svg .skipped rect {
+  fill: #496b69!important;
+}
+
+svg .learning rect[fill='rgb(51,51,51)'] + text,
+svg .done rect[fill='rgb(51,51,51)'] + text {
+  fill: black !important;
+}
+
+svg .learning text {
+  text-decoration: underline;
 }
 
 svg .clickable-group.done[data-group-id^='check:'] rect {

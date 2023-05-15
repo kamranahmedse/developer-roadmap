@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Using the Effect Hook](https://reactjs.org/docs/hooks-effect.html)
+- [Using the Effect Hook](https://react.dev/reference/react/useEffect)
 - [React useEffect Hook by Example](https://www.robinwieruch.de/react-useeffect-hook/)

@@ -1,6 +1,6 @@
 # Startup Management (init.d)
 
-`init.d` is a daemon which is the **first process** (PID = 1) of the Linux system. Then other processes, services, daemons, and threads are started by init. One can write their own scripts in *'/etc/init.d'* location to start services automatically on system boot. Services can be started and stopped manually by using `service` command.
+`init.d` is a daemon which is the **first process** (PID = 1) of the Linux system. Then other processes, services, daemons, and threads are started by init. One can write their own scripts in _'/etc/init.d'_ location to start services automatically on system boot. Services can be started and stopped manually by using `service` command.
 
 It has following syntax: `$ service [service_name] [action]` e.g. `$ service ssh start`
 

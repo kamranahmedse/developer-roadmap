@@ -5,4 +5,3 @@ When you build a dynamic website with Vue you'll most likely want it to be able 
 Visit the following resources to learn more:
 
 - [Event Handling in Vue.js](https://vuejs.org/guide/essentials/event-handling.html)
-

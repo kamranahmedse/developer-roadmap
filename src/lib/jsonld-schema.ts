@@ -10,7 +10,8 @@ type ArticleSchemaProps = {
 };
 
 export function generateArticleSchema(article: ArticleSchemaProps) {
-  const { url, headline, description, imageUrl, datePublished, dateModified } = article;
+  const { url, headline, description, imageUrl, datePublished, dateModified } =
+    article;
 
   return {
     '@context': 'https://schema.org',
@@ -25,7 +26,7 @@ export function generateArticleSchema(article: ArticleSchemaProps) {
     author: {
       '@type': 'Person',
       name: 'Kamran Ahmed',
-      url: 'https://twitter.com/kamranahmedse',
+      url: 'https://twitter.com/kamrify',
     },
     publisher: {
       '@type': 'Organization',

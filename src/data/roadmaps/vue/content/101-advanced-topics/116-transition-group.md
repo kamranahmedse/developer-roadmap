@@ -5,4 +5,3 @@
 Visit the following resources to learn more:
 
 - [TransitionGroup Component](https://vuejs.org/guide/built-ins/transition-group.html)
-

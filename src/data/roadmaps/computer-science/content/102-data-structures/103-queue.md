@@ -8,5 +8,3 @@ Visit the following resources to learn more:
 - [Queue in 3 Minutes](https://www.youtube.com/watch?v=D6gu-_tmEpQ)
 - [Queues - Coursera](https://www.coursera.org/lecture/data-structures/queues-EShpq)
 - [Circular Buffer - Wikipedia](https://en.wikipedia.org/wiki/Circular_buffer)
-
-

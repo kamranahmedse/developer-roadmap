@@ -1,6 +1,6 @@
 # Plugins
 
-Plugins are self-contained code that usually add app-level functionality to Vue. 
+Plugins are self-contained code that usually add app-level functionality to Vue.
 
 Visit the following resources to learn more:
 

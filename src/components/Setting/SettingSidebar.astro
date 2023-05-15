@@ -1,0 +1,81 @@
+---
+import Icon from '../AstroIcon.astro';
+const { pageUrl, name } = Astro.props;
+
+export interface Props {
+  pageUrl: string;
+  name: string;
+}
+---
+
+<div
+  class='container flex min-h-[calc(100vh-37px-70px)] items-stretch sm:min-h-[calc(100vh-37px-96px)]'
+>
+  <aside class='hidden w-56 border-r border-slate-200 py-10 pr-5 md:block'>
+    <nav>
+      <ul class='space-y-1'>
+        <li>
+          <a
+            href='/settings/update-profile'
+            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href='/settings/update-password'
+            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'change-password' ? 'bg-slate-100' : ''}`
+            >Security</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <div class='grow py-10 pl-0 md:p-10 md:pr-0'>
+    <div class='relative mb-5 md:hidden'>
+      <button
+        class='flex h-10 w-full items-center justify-between rounded-md bg-slate-800 px-2 text-center font-medium text-slate-100'
+        id='settings-menu'
+      >
+        {name}
+        <Icon icon='dropdown' />
+      </button>
+      <ul
+        id='settings-menu-dropdown'
+        class='absolute mt-1 hidden w-full space-y-1.5 rounded-md bg-white p-2 shadow-lg'
+      >
+        <li>
+          <a
+            href='/settings/update-profile'
+            class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${pageUrl === 'profile' ? 'bg-slate-100' : ''}`
+            >Profile</a
+          >
+        </li>
+        <li>
+          <a
+            href='/settings/update-password'
+            class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${pageUrl === 'change-password' ? 'bg-slate-100' : ''}`
+            >Change password</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <slot />
+  </div>
+</div>
+
+<script>
+  const menuButton = document.getElementById('settings-menu');
+  const menuDropdown = document.getElementById('settings-menu-dropdown');
+
+  menuButton?.addEventListener('click', () => {
+    menuDropdown?.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menuButton?.contains(e.target as Node)) {
+      menuDropdown?.classList.add('hidden');
+    }
+  });
+</script>
