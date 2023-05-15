@@ -3,6 +3,7 @@ import relativeTime from 'dayjs/plugin/relativeTime';
 import { httpPost } from '../../lib/http';
 import type { UserResourceProgressDocument } from './UserActivities';
 import XIcon from '../../icons/close.svg';
+import { pageLoadingMessage } from '../../stores/page';
 
 dayjs.extend(relativeTime);
 
@@ -12,6 +13,7 @@ export function LearningProgress({
   resource: UserResourceProgressDocument;
 }) {
   const handleClearProgress = async () => {
+    pageLoadingMessage.set('Clearing Progress');
     const { response, error } = await httpPost<{ status: 'ok' }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-clear-resource-progress`,
       {
