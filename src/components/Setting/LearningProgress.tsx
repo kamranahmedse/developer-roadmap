@@ -28,7 +28,7 @@ export function LearningProgress({
     window.location.reload();
   };
   return (
-    <div className={`rounded border border-gray-200 p-2 relative`}>
+    <div className={`relative rounded p-2 ring-1 ring-gray-200`}>
       <div className="flex items-center justify-between">
         <h4 className="truncate font-medium">{resource.resourceId}</h4>
       </div>
@@ -40,10 +40,10 @@ export function LearningProgress({
           {dayjs().to(dayjs(new Date(resource.updatedAt)))}
         </p>
       </div>
-      {/* <div className="mt-2 flex items-center gap-2">
-        <div className="h-2.5 w-full rounded-full bg-gray-200">
+      <div className="absolute -top-px inset-x-1 z-10 flex items-center gap-2">
+        <div className="h-px w-full rounded-full">
           <div
-            className="h-2.5 rounded-full bg-blue-600"
+            className="h-px rounded-full bg-blue-600"
             style={{
               width: `${
                 (resource.done.length / resource.totalGroupCount) * 100
@@ -51,11 +51,11 @@ export function LearningProgress({
             }}
           />
         </div>
-        <span className="whitespace-nowrap text-xs leading-none">
-          {resource.done.length} / {resource.totalGroupCount}
-        </span>
-      </div> */}
-      <button onClick={handleClearProgress} className="absolute right-1.5 top-1.5 inline-flex items-center rounded-lg bg-transparent p-1 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900">
+      </div>
+      <button
+        onClick={handleClearProgress}
+        className="absolute right-1.5 top-1.5 inline-flex items-center rounded-lg bg-transparent p-1 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+      >
         <img src={XIcon} alt="close" className="h-4 w-4" />
       </button>
     </div>
