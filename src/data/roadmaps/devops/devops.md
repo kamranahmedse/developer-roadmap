@@ -41,6 +41,8 @@ seo:
     - 'devops interview questions'
 relatedRoadmaps:
   - 'backend'
+  - 'docker'
+  - 'kubernetes'
   - 'python'
   - 'java'
   - 'golang'
