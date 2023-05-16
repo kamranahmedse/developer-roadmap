@@ -9,16 +9,18 @@ export interface Props {
 ---
 
 <div
-  class='container flex min-h-[calc(100vh-37px-70px)] items-stretch sm:min-h-[calc(100vh-37px-96px)]'
+  class='container flex min-h-[calc(100vh-70px)] items-stretch sm:min-h-[calc(100vh-96px)]'
 >
-  <aside class='hidden w-56 border-r border-slate-200 py-10 pr-5 md:block'>
+  <aside
+    class='hidden w-52 shrink-0 border-r border-slate-200 py-10 pr-5 md:block'
+  >
     <nav>
       <ul class='space-y-1'>
         <li>
           <a
             href='/settings/activities'
             class=`flex items-center gap-2 w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${pageUrl === 'activities' ? 'bg-slate-100' : ''}`
-            >
+          >
             <Icon icon='list' class='h-4 w-4' />Activity</a
           >
         </li>

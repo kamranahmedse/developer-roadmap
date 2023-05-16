@@ -36,6 +36,7 @@ export type UserActivityResponse = {
       resourceType?: 'roadmap' | 'best-practice';
       topicId?: string;
       label?: string;
+      title?: string;
     };
   }[];
 };

@@ -1,0 +1,44 @@
+---
+import type { RoadmapFileType } from '../lib/roadmap';
+const roadmapFilesMap = import.meta.glob<RoadmapFileType>(
+  '../data/roadmaps/*/*.md',
+  {
+    eager: true,
+  }
+);
+const bestPracticeFilesMap = import.meta.glob<RoadmapFileType>(
+  '../data/best-practices/*/*.md',
+  {
+    eager: true,
+  }
+);
+
+const roadmapFiles = Object.values(roadmapFilesMap);
+
+const roadmapsData = roadmapFiles.flatMap((roadmapFile) => {
+  const frontmatter = roadmapFile.frontmatter;
+  const id = roadmapFile?.file.split('/').at(-1)?.replace('.md', '');
+  return {
+    title: frontmatter.briefTitle,
+    id,
+  };
+});
+
+const bestPracticeFiles = Object.values(bestPracticeFilesMap);
+
+const bestPracticesData = bestPracticeFiles.flatMap((bestPracticeFile) => {
+  const frontmatter = bestPracticeFile.frontmatter;
+  const id = bestPracticeFile?.file.split('/').at(-1)?.replace('.md', '');
+  return {
+    title: frontmatter.briefTitle,
+    id,
+  };
+});
+
+const json = JSON.stringify({
+  roadmaps: roadmapsData,
+  bestPractices: bestPracticesData,
+});
+---
+
+{json}
