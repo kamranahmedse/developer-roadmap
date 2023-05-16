@@ -39,7 +39,7 @@ export function LearningProgress({
     <div className={`relative rounded p-2 ring-1 ring-gray-200`}>
       <div className="flex items-center justify-between">
         <a href={resourceUrl} className="truncate font-medium text-blue-700">
-          {resource.resourceId}
+          {resource.title}
         </a>
       </div>
       <div className="mt-2 flex items-center justify-between gap-2">

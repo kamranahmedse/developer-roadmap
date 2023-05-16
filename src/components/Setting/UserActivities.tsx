@@ -17,6 +17,7 @@ export interface UserResourceProgressDocument {
   createdAt: Date;
   updatedAt: Date;
   totalGroupCount: number;
+  title: string;
 }
 
 export type UserActivityResponse = {
@@ -157,9 +158,9 @@ export default function UserActivities() {
             <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>
 
             {data?.activities.length === 0 ? (
-              <p className="mt-4">No activities found.</p>
+              <p className="mt-2">No activities found.</p>
             ) : (
-              <ul className="mt-4 flex flex-col gap-2">
+              <ul className="mt-2 flex flex-col gap-2">
                 {data?.activities.map((activity) => (
                   <li>
                     <UserActivity activity={activity} />
