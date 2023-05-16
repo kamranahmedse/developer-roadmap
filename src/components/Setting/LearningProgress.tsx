@@ -1,7 +1,7 @@
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import { httpPost } from '../../lib/http';
-import type { UserResourceProgressDocument } from './UserActivities';
+import type { UserResourceProgressDocument } from './Dashboard';
 import XIcon from '../../icons/close.svg';
 import { pageLoadingMessage } from '../../stores/page';
 

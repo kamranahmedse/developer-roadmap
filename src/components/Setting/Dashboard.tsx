@@ -4,7 +4,7 @@ import { pageLoadingMessage } from '../../stores/page';
 import CheckDarkIcon from '../../icons/check-badge.svg';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
-import { UserActivity, UserActivitySkeleton } from './UserActivity';
+import { Activity, ActivitySkeleton } from './Activity';
 import { LearningProgress, LearningProgressSkeleton } from './LearningProgress';
 
 export interface UserResourceProgressDocument {
@@ -20,7 +20,7 @@ export interface UserResourceProgressDocument {
   title: string;
 }
 
-export type UserActivityResponse = {
+export type ActivityResponse = {
   topicsCompletedToday: number;
   topicsCompleted: number;
   topicsLearning: number;
@@ -29,27 +29,27 @@ export type UserActivityResponse = {
     roadmap: UserResourceProgressDocument[];
     bestPractice: UserResourceProgressDocument[];
   };
-  activities: {
-    type: 'done' | 'learning' | 'pending' | 'skipped' | 'cleared' | 'completed';
+  activity: {
+    type: 'done' | 'learning' | 'pending' | 'skipped';
     createdAt: Date;
     metadata: {
       resourceId?: string;
       resourceType?: 'roadmap' | 'best-practice';
       topicId?: string;
-      label?: string;
-      title?: string;
+      topicLabel?: string;
+      resourceTitle?: string;
     };
   }[];
 };
 
-export default function UserActivities() {
-  const [data, setData] = useState<UserActivityResponse>();
+export default function Dashboard() {
+  const [data, setData] = useState<ActivityResponse>();
   const [isLoading, setIsLoading] = useState(true);
 
   const loadActivities = useCallback(async () => {
     setIsLoading(true);
-    const { response, error } = await httpPost<UserActivityResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-user-activity`,
+    const { response, error } = await httpPost<ActivityResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-activity`,
       {
         timestring: new Date().toISOString(),
       }
@@ -157,13 +157,13 @@ export default function UserActivities() {
 
             <h3 className="mt-8 text-2xl font-medium">Recent Activities</h3>
 
-            {data?.activities.length === 0 ? (
+            {data?.activity.length === 0 ? (
               <p className="mt-2">No activities found.</p>
             ) : (
               <ul className="mt-2 flex flex-col gap-2">
-                {data?.activities.map((activity) => (
+                {data?.activity.map((activity) => (
                   <li>
-                    <UserActivity activity={activity} />
+                    <Activity activity={activity} />
                   </li>
                 ))}
               </ul>
@@ -228,16 +228,16 @@ function UserActivitiesSkeleton() {
         <div className="mt-8 h-8 w-1/3 rounded bg-gray-300" />
         <ul className="mt-4 flex flex-col gap-2">
           <li>
-            <UserActivitySkeleton />
+            <ActivitySkeleton />
           </li>
           <li>
-            <UserActivitySkeleton />
+            <ActivitySkeleton />
           </li>
           <li>
-            <UserActivitySkeleton />
+            <ActivitySkeleton />
           </li>
           <li>
-            <UserActivitySkeleton />
+            <ActivitySkeleton />
           </li>
         </ul>
       </div>

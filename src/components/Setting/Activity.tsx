@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
-import type { UserActivityResponse } from './UserActivities';
+import type { ActivityResponse } from './Dashboard';
 import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import CheckCircleIcon from '../../icons/check-circle.svg';
 import XIcon from '../../icons/close-dark.svg';
@@ -8,10 +8,10 @@ import ClockIcon from '../../icons/clock.svg';
 
 dayjs.extend(relativeTime);
 
-export function UserActivity({
+export function Activity({
   activity,
 }: {
-  activity: UserActivityResponse['activities'][0];
+  activity: ActivityResponse['activity'][0];
 }) {
   const { type, createdAt, metadata } = activity;
 
@@ -24,16 +24,12 @@ export function UserActivity({
     learning: ProgressDarkIcon,
     pending: ClockIcon,
     skipped: XIcon,
-    cleared: XIcon,
-    completed: CheckCircleIcon,
   };
   const status = {
     done: 'Finished',
     learning: 'Started',
     pending: 'Pending',
     skipped: 'Skipped',
-    cleared: 'Cleared',
-    completed: 'Completed',
   };
 
   return (
@@ -46,10 +42,10 @@ export function UserActivity({
             className="text-black underline hover:no-underline"
             href={resourceUrl}
           >
-            {metadata.title}
-            {metadata.label && `'s`}
+            {metadata.resourceTitle}
+            {metadata.topicLabel && `'s`}
           </a>{' '}
-          <span>{metadata.label}</span>
+          <span>{metadata.topicLabel}</span>
         </p>
       </p>
       <p className="whitespace-nowrap text-xs text-gray-400">
@@ -59,7 +55,7 @@ export function UserActivity({
   );
 }
 
-export function UserActivitySkeleton() {
+export function ActivitySkeleton() {
   return (
     <div className="flex items-center justify-between gap-2 rounded border border-gray-200 p-1">
       <div className="flex items-center gap-2 text-sm">
