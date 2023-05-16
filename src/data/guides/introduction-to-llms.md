@@ -26,6 +26,9 @@ Everyone these days is talking about LLMs, ChatGPT and what not. GitHub's [trend
 
 LLM stands for "Large Language Model." These are advanced AI systems designed to understand and generate human-like text based on the input they receive. These models have been trained on vast amounts of text data and can perform a wide range of language-related tasks, such as answering questions, carrying out conversations, summarizing text, translating languages, and much more.
 
+[![LLMS Visualized](/guides/llms.png)](https://twitter.com/kamrify/status/1658271217189634049)
+
+
 OpenAI has been a major contributor to this space in the past few years with their models and research. However, there are other players in the market as well e.g. Meta with their [OPT](https://huggingface.co/facebook/opt-66b), [OPT-IML](https://huggingface.co/facebook/opt-iml-30b) and [LLaMA](https://ai.facebook.com/blog/large-language-model-llama-meta-ai/) models, Google released [FLAN-T5](https://huggingface.co/google/flan-t5-xxl) and [BERT](https://huggingface.co/bert-base-uncased), [StableLM](https://github.com/stability-AI/stableLM/) by Stability AI, [Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) at Stanford and there are many [other opensource models as well](https://github.com/Hannibal046/Awesome-LLM).
 
 ## Training an LLM Model
@@ -60,7 +63,6 @@ Instruction Tuned LLMs = Base LLMs + Further Tuning + RLHF
 
 To build an Instruction Tuned LLM, a Base LLM is taken and is further trained using a large dataset covering sample "Instructions" and how the model should perform as a result of those instructions. The model is then fine-tuned using a technique called "Reinforcement Learning with Human Feedback" (RLHF) which allows the model to learn from human feedback and improve its performance over time.
 
-[![LLMS Visualized](/guides/llms.png)](https://twitter.com/kamrify/status/1658271217189634049)
 
 ## Conclusion
 
