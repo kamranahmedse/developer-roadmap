@@ -1,5 +1,4 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
-import { useStore } from '@nanostores/preact';
 import { httpPost } from '../../lib/http';
 import { pageLoadingMessage } from '../../stores/page';
 import CheckDarkIcon from '../../icons/check-badge.svg';
@@ -7,7 +6,6 @@ import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
 import { Activity, ActivitySkeleton } from './Activity';
 import { LearningProgress, LearningProgressSkeleton } from './LearningProgress';
-import { learningAtom } from '../../stores/learning';
 
 export interface UserResourceProgressDocument {
   _id?: string;
@@ -47,7 +45,10 @@ export type ActivityResponse = {
 export default function Dashboard() {
   const [data, setData] = useState<ActivityResponse>();
   const [isLoading, setIsLoading] = useState(true);
-  const learning = useStore(learningAtom);
+  const [learning, setLearning] = useState<ActivityResponse['learning']>({
+    roadmap: [],
+    bestPractice: [],
+  });
 
   const loadActivities = useCallback(async () => {
     setIsLoading(true);
@@ -67,7 +68,7 @@ export default function Dashboard() {
     }
 
     setData(response);
-    learningAtom.set(response.learning);
+    setLearning(response.learning);
     setIsLoading(false);
   }, []);
 
@@ -78,7 +79,21 @@ export default function Dashboard() {
     });
   }, [loadActivities]);
 
-  console.log(learning);
+  const removeResourceProgress = useCallback(
+    (resource: UserResourceProgressDocument) => {
+      const type =
+        resource.resourceType === 'roadmap' ? 'roadmap' : 'bestPractice';
+      setLearning((prev) => {
+        return {
+          ...learning,
+          [type]: learning[type].filter(
+            (item) => item._id?.toString() !== resource._id?.toString()
+          ),
+        };
+      });
+    },
+    []
+  );
 
   return (
     <>
@@ -138,6 +153,7 @@ export default function Dashboard() {
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   {learning.roadmap.map((item) => (
                     <LearningProgress
+                      removeResourceProgress={removeResourceProgress}
                       resource={item}
                       key={item._id?.toString()}
                     />
@@ -157,6 +173,7 @@ export default function Dashboard() {
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
                   {learning.bestPractice.map((item) => (
                     <LearningProgress
+                      removeResourceProgress={removeResourceProgress}
                       resource={item}
                       key={item._id?.toString()}
                     />

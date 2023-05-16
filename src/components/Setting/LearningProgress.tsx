@@ -4,14 +4,15 @@ import { httpPost } from '../../lib/http';
 import type { UserResourceProgressDocument } from './Dashboard';
 import XIcon from '../../icons/close.svg';
 import { pageLoadingMessage } from '../../stores/page';
-import { removeProgress } from '../../stores/learning';
 
 dayjs.extend(relativeTime);
 
 export function LearningProgress({
   resource,
+  removeResourceProgress,
 }: {
   resource: UserResourceProgressDocument;
+  removeResourceProgress: (resource: UserResourceProgressDocument) => void;
 }) {
   const handleClearProgress = async () => {
     pageLoadingMessage.set('Clearing Progress');
@@ -28,7 +29,7 @@ export function LearningProgress({
       return;
     }
 
-    removeProgress(resource);
+    removeResourceProgress(resource);
     pageLoadingMessage.set('');
   };
 
