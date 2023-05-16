@@ -36,7 +36,7 @@ export function LearningProgress({
       : `/best-practices/${resource.resourceId}`;
 
   return (
-    <div className={`relative rounded p-2 ring-1 ring-gray-200`}>
+    <div className="relative rounded p-2 shadow-[0_1px_3px_rgba(15,23,42,0.03),0_1px_2px_rgba(15,23,42,0.06)] ring-1 ring-gray-200">
       <div className="flex items-center justify-between">
         <a href={resourceUrl} className="truncate font-medium text-blue-700">
           {resource.title}
