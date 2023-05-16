@@ -46,7 +46,8 @@ export function UserActivity({
             className="text-black underline hover:no-underline"
             href={resourceUrl}
           >
-            {metadata.resourceId}'s
+            {metadata.resourceId}
+            {metadata.label && `'s`}
           </a>{' '}
           <span>{metadata.label}</span>
         </p>
