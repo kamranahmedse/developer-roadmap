@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useState } from 'preact/hooks';
+import { useStore } from '@nanostores/preact';
 import { httpPost } from '../../lib/http';
 import { pageLoadingMessage } from '../../stores/page';
 import CheckDarkIcon from '../../icons/check-badge.svg';
@@ -6,6 +7,7 @@ import ProgressDarkIcon from '../../icons/progress-dark.svg';
 import StarDarkIcon from '../../icons/star-dark.svg';
 import { Activity, ActivitySkeleton } from './Activity';
 import { LearningProgress, LearningProgressSkeleton } from './LearningProgress';
+import { learningAtom } from '../../stores/learning';
 
 export interface UserResourceProgressDocument {
   _id?: string;
@@ -45,6 +47,7 @@ export type ActivityResponse = {
 export default function Dashboard() {
   const [data, setData] = useState<ActivityResponse>();
   const [isLoading, setIsLoading] = useState(true);
+  const learning = useStore(learningAtom);
 
   const loadActivities = useCallback(async () => {
     setIsLoading(true);
@@ -59,7 +62,12 @@ export default function Dashboard() {
       return;
     }
 
+    if (!response) {
+      return;
+    }
+
     setData(response);
+    learningAtom.set(response.learning);
     setIsLoading(false);
   }, []);
 
@@ -69,6 +77,8 @@ export default function Dashboard() {
       pageLoadingMessage.set('');
     });
   }, [loadActivities]);
+
+  console.log(learning);
 
   return (
     <>
@@ -122,11 +132,11 @@ export default function Dashboard() {
             <div>
               <h4 className="text-2xl font-medium">Roadmaps</h4>
 
-              {data?.learning.roadmap.length === 0 ? (
+              {learning.roadmap.length === 0 ? (
                 <p className="mt-2">No roadmaps found. Start learning now!</p>
               ) : (
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                  {data?.learning.roadmap.map((item) => (
+                  {learning.roadmap.map((item) => (
                     <LearningProgress
                       resource={item}
                       key={item._id?.toString()}
@@ -139,13 +149,13 @@ export default function Dashboard() {
             <div className="mt-5">
               <h4 className="text-2xl font-medium">Best Practices</h4>
 
-              {data?.learning.bestPractice.length === 0 ? (
+              {learning.bestPractice.length === 0 ? (
                 <p className="mt-2">
                   No best practices found. Start learning now!
                 </p>
               ) : (
                 <div className="mt-2 grid gap-2 sm:grid-cols-2">
-                  {data?.learning.bestPractice.map((item) => (
+                  {learning.bestPractice.map((item) => (
                     <LearningProgress
                       resource={item}
                       key={item._id?.toString()}

@@ -4,6 +4,7 @@ import { httpPost } from '../../lib/http';
 import type { UserResourceProgressDocument } from './Dashboard';
 import XIcon from '../../icons/close.svg';
 import { pageLoadingMessage } from '../../stores/page';
+import { removeProgress } from '../../stores/learning';
 
 dayjs.extend(relativeTime);
 
@@ -27,7 +28,8 @@ export function LearningProgress({
       return;
     }
 
-    window.location.reload();
+    removeProgress(resource);
+    pageLoadingMessage.set('');
   };
 
   const resourceUrl =
