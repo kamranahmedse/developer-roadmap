@@ -2,7 +2,7 @@
 import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAllGuides, GuideFileType } from '../../lib/guide';
+import { getAllGuides,GuideFileType } from '../../lib/guide';
 
 export interface Props {
   guide: GuideFileType;
@@ -27,6 +27,8 @@ const { frontmatter: guideData } = guide;
   description={guideData.seo.description}
   permalink={`/guides/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
+  categoryLevel0={"Guides"}
+  categoryLevel1={guideData.title}
 >
   <GuideHeader guide={guide} />
 

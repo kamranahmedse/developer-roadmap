@@ -61,11 +61,13 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
-  briefTitle={roadmapData?.briefTitle}
+  briefTitle={roadmapData.briefTitle}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}
   jsonLd={jsonLdSchema}
+  categoryLevel0={'Roadmaps'}
+  categoryLevel1={roadmapData.briefTitle}
 >
   <!-- Preload the font being used in the renderer -->
   <link

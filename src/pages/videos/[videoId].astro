@@ -1,7 +1,7 @@
 ---
 import VideoHeader from '../../components/VideoHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAllVideos, VideoFileType } from '../../lib/video';
+import { getAllVideos,VideoFileType } from '../../lib/video';
 
 export interface Props {
   video: VideoFileType;
@@ -24,6 +24,8 @@ const { video } = Astro.props;
   title={video.frontmatter.title}
   description={video.frontmatter.description}
   permalink={`/videos/${videoId}`}
+  categoryLevel0={"Videos"}
+  categoryLevel1={video.frontmatter.title}
 >
   <VideoHeader video={video} />
 
