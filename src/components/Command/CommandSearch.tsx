@@ -9,20 +9,24 @@ type PagesResults = Record<
   }[]
 >;
 
-const pages = {
-  dashboard: {
+const pages = [
+  {
     title: 'Dashboard',
     url: '/settings/dashboard',
   },
-  profile: {
+  {
     title: 'Profile',
     url: '/settings/update-profile',
   },
-  security: {
+  {
     title: 'Security',
     url: '/settings/update-password',
   },
-};
+  {
+    title: 'Roadmaps',
+    url: '/roadmaps',
+  },
+];
 
 export default function CommandSearch() {
   const [search, setSearch] = useState<string>('');
@@ -45,9 +49,37 @@ export default function CommandSearch() {
     setPagesJson(pages);
   };
 
+  const searchByTitle = (title: string) => {
+    const results: PagesResults = {};
+
+    Object.keys(pagesJson).forEach((key) => {
+      const pages = pagesJson[key].filter((page) =>
+        page.title.toLowerCase().includes(title.toLowerCase())
+      );
+
+      if (pages.length > 0) {
+        results[key] = pages;
+      }
+    });
+
+    setSearchResults(results);
+  };
+
   useEffect(() => {
     getPages();
   }, []);
+
+  useEffect(() => {
+    if (search.length > 0) {
+      searchByTitle(search);
+    } else {
+      setSearchResults(null);
+    }
+
+    return () => {
+      setSearchResults(null);
+    };
+  }, [search]);
 
   return (
     <div className="rounded-lg border border-gray-200">
@@ -65,12 +97,55 @@ export default function CommandSearch() {
         />
       </div>
 
-      <div className="px-5 py-2">
-        <div>
-          <h5>Pages</h5>
-          <ul></ul>
+      {!searchResults && (
+        <div className="mt-3 px-3 py-3">
+          <h5 className="ml-2 text-xs font-medium text-gray-600">Pages</h5>
+          <ul className="mt-2 flex flex-col">
+            {pages.map((page) => (
+              <li key={page.title}>
+                <a
+                  href={page.url}
+                  className="block rounded p-2 text-sm hover:bg-gray-100"
+                >
+                  {page.title}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
-      </div>
+      )}
+
+      {searchResults && (
+        <div className="mt-3">
+          <ul className="divider-gray-300 flex flex-col divide-y">
+            {Object.keys(searchResults).map((key) => (
+              <li key={key} className="px-3 py-3">
+                <h6 className="ml-2 text-xs font-medium text-gray-600">
+                  {key}
+                </h6>
+                <ul className="mt-2 flex flex-col">
+                  {searchResults[key].map((page) => (
+                    <li key={page.title}>
+                      <a
+                        href={page.url}
+                        className="block rounded p-2 text-sm hover:bg-gray-100"
+                      >
+                        {page.title}
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
+          </ul>
+
+          {Object.keys(searchResults).length === 0 && (
+            <div className="px-5 py-3 text-sm text-gray-600">
+              No results found. Try searching for something else.
+            </div>
+          )}
+        </div>
+      )}
     </div>
   );
 }
