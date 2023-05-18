@@ -24,8 +24,6 @@ const { video } = Astro.props;
   title={video.frontmatter.title}
   description={video.frontmatter.description}
   permalink={`/videos/${videoId}`}
-  categoryLevel0={"Videos"}
-  categoryLevel1={video.frontmatter.title}
 >
   <VideoHeader video={video} />
 

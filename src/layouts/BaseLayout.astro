@@ -21,8 +21,6 @@ export interface Props {
   initialLoadingMessage?: string;
   permalink?: string;
   jsonLd?: Record<string, unknown>[];
-  categoryLevel0?: string;
-  categoryLevel1?: string;
 }
 
 const {
@@ -36,15 +34,11 @@ const {
   jsonLd = [],
   redirectUrl = '',
   initialLoadingMessage = '',
-  categoryLevel0 = '',
-  categoryLevel1 = '',
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
 const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
-
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
-
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
 }`;
@@ -159,10 +153,6 @@ const gaPageIdentifier = Astro.url.pathname
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
     />
-
-
-    { categoryLevel0 && <span id="category-level-0" class="hidden">{categoryLevel0}</span>}
-    { categoryLevel1 && <span id="category-level-1" class="hidden">{categoryLevel1}</span>}
 
     <slot name='after-footer' />
 

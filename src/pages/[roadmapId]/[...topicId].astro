@@ -31,8 +31,6 @@ const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as Roadma
   description={`Free resources to learn ${heading} in ${roadmap.briefTitle}. Everything you need to know about ${heading} and how it relates to ${roadmap.briefTitle}.`}
   noIndex={true}
   permalink={`/${roadmapId}/${topicId}`}
-  categoryLevel0={roadmap.briefTitle}
-  categoryLevel1={heading}
 >
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
   <div class='bg-gray-50'>
