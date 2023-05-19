@@ -9,7 +9,7 @@ export default function Command() {
 
   useEffect(() => {
     const openCommand = (e: KeyboardEvent) => {
-      if (e.metaKey && e.key === 'k') {
+      if (e.key === 'k' && (e.metaKey || e.ctrlKey)) {
         e.preventDefault();
         setIsOpen(true);
       } else if (e.key === 'Escape') {
