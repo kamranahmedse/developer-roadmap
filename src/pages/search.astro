@@ -1,11 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-import CommandSearch from '../components/Command/CommandSearch';
+import Command from '../components/Command/Command';
 ---
 
 <BaseLayout title='Search'>
-  <div class="p-10">
-    <CommandSearch client:load />
+  <div class='p-10'>
+    <Command client:only />
   </div>
 </BaseLayout>
