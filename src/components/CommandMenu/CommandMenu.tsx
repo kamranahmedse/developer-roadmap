@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { createPortal } from 'preact/compat';
+import { RefObject, createPortal } from 'preact/compat';
 import CommandSearch from './CommandSearch';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 
@@ -26,9 +26,7 @@ export default function Command() {
   }, [isOpen]);
 
   function handleTrapFocusKeydown(e: KeyboardEvent) {
-    const focusableElements = commandModalRef.current?.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    ) as NodeListOf<HTMLElement>;
+    const focusableElements = getFocusableElements(commandModalRef.current);
     let index: number = 0;
 
     if (e.key === 'Tab') {
@@ -44,94 +42,51 @@ export default function Command() {
           index = 0;
         }
       }
-
-      const selectedElement = focusableElements[index];
-      selectedElement.ariaSelected = 'true';
-
-      for (const element of focusableElements) {
-        if (element !== selectedElement) {
-          element.removeAttribute('aria-selected');
-        }
-      }
-      setActiveElementIndex(index);
-      setActiveElement(focusableElements[index]);
     } else if (e.key === 'ArrowUp') {
       e.preventDefault();
       index = activeElementIndex - 1;
       if (index < 0) {
         index = focusableElements.length - 1;
       }
-
-      const selectedElement = focusableElements[index];
-      selectedElement.ariaSelected = 'true';
-
-      for (const element of focusableElements) {
-        if (element !== selectedElement) {
-          element.removeAttribute('aria-selected');
-        }
-      }
-      setActiveElementIndex(index);
-      setActiveElement(focusableElements[index]);
     } else if (e.key === 'ArrowDown') {
       e.preventDefault();
       index = activeElementIndex + 1;
       if (index > focusableElements.length - 1) {
         index = 0;
       }
-
-      const selectedElement = focusableElements[index];
-      selectedElement.ariaSelected = 'true';
-
-      for (const element of focusableElements) {
-        if (element !== selectedElement) {
-          element.removeAttribute('aria-selected');
-        }
-      }
-      setActiveElementIndex(index);
-      setActiveElement(focusableElements[index]);
-    } else if (e.key === 'Enter') {
-      e.preventDefault();
-      if (activeElement?.id === 'command-search') return;
+    } else if (e.key === 'Enter' && activeElement?.id !== 'command-search') {
       activeElement?.click();
+    } else {
+      return;
     }
+
+    const selectedElement = focusableElements[index];
+    selectedElement.ariaSelected = 'true';
+
+    for (const element of focusableElements) {
+      if (element !== selectedElement) {
+        element.removeAttribute('aria-selected');
+      }
+    }
+
+    setActiveElementIndex(index);
+    setActiveElement(selectedElement);
   }
 
   useOutsideClick(commandModalRef, () => {
     setIsOpen(false);
   });
 
-  // Prevent scrolling when command menu is open
   useEffect(() => {
-    const focusableElements = commandModalRef.current?.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    ) as NodeListOf<HTMLElement>;
     if (isOpen) {
       document.body.style.overflow = 'hidden';
-      setActiveElement(focusableElements[1]);
-      setActiveElementIndex(1);
-
-      for (const element of focusableElements) {
-        element.removeAttribute('aria-selected');
-      }
-
-      const selectedElement = focusableElements[1];
-      selectedElement.ariaSelected = 'true';
     } else {
       document.body.style.overflow = 'auto';
-      setActiveElement(null);
-      setActiveElementIndex(0);
-
-      if (!focusableElements) return;
-      for (const element of focusableElements) {
-        element.removeAttribute('aria-selected');
-      }
     }
   }, [isOpen]);
 
   const handleSearchResultsFocus = () => {
-    const focusableElements = commandModalRef.current?.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    ) as NodeListOf<HTMLElement>;
+    const focusableElements = getFocusableElements(commandModalRef.current);
 
     const selectedElement = focusableElements[1];
     if (!selectedElement) return;
@@ -147,9 +102,7 @@ export default function Command() {
   };
 
   const handleHoverFocus = (e: MouseEvent) => {
-    const focusableElements = commandModalRef.current?.querySelectorAll(
-      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-    ) as NodeListOf<HTMLElement>;
+    const focusableElements = getFocusableElements(commandModalRef.current);
 
     const selectedElement = e.target as HTMLElement;
     selectedElement.ariaSelected = 'true';
@@ -195,4 +148,12 @@ export default function Command() {
         )}
     </>
   );
+}
+
+function getFocusableElements(parent: HTMLElement | any): HTMLElement[] {
+  return Array.from(
+    parent.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    )
+  ) as HTMLElement[];
 }

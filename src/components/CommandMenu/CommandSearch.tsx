@@ -101,7 +101,11 @@ export default function CommandSearch({
           value={search}
           onChange={(e) => {
             setSearch((e.target as HTMLInputElement).value);
-            searchByTitle((e.target as HTMLInputElement).value);
+            if ((e.target as HTMLInputElement).value.length > 0) {
+              searchByTitle((e.target as HTMLInputElement).value);
+            } else {
+              setSearchResults(null);
+            }
           }}
           className="w-full border-none bg-transparent py-1 pr-2 placeholder:text-gray-600 focus:outline-none focus:ring-0"
         />
