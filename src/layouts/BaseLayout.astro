@@ -7,7 +7,7 @@ import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
 import { PageSponsor } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
-import Command from '../components/Command/Command';
+import CommandMenu from '../components/CommandMenu/CommandMenu';
 import '../styles/global.css';
 
 export interface Props {
@@ -157,7 +157,7 @@ const gaPageIdentifier = Astro.url.pathname
 
     <slot name='after-footer' />
 
-    <Command client:only />
+    <CommandMenu client:only />
     <Analytics />
   </body>
 </html>

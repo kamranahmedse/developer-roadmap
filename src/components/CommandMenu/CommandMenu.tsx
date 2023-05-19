@@ -73,6 +73,15 @@ export default function Command() {
     setIsOpen(false);
   });
 
+  // Prevent scrolling when command menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  }, [isOpen]);
+
   return (
     <>
       {isOpen &&
