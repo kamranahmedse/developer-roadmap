@@ -44,6 +44,28 @@ export default function Command() {
           firstFocusableElement.focus();
         }
       }
+    } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
+      e.preventDefault();
+      const activeElement = document.activeElement as HTMLElement;
+      const activeElementIndex =
+        Array.from(focusableElements).indexOf(activeElement);
+      let nextElementIndex = 0;
+
+      if (e.key === 'ArrowDown') {
+        if (activeElementIndex === focusableElements.length - 1) {
+          nextElementIndex = focusableElements.length - 1;
+        } else {
+          nextElementIndex = activeElementIndex + 1;
+        }
+      } else if (e.key === 'ArrowUp') {
+        if (activeElementIndex === 0) {
+          nextElementIndex = 0;
+        } else {
+          nextElementIndex = activeElementIndex - 1;
+        }
+      }
+      const nextElement = focusableElements[nextElementIndex];
+      nextElement.focus();
     }
   }
 
