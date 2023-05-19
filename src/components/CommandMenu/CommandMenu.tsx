@@ -53,13 +53,13 @@ export default function Command() {
 
       if (e.key === 'ArrowDown') {
         if (activeElementIndex === focusableElements.length - 1) {
-          nextElementIndex = focusableElements.length - 1;
+          nextElementIndex = 0;
         } else {
           nextElementIndex = activeElementIndex + 1;
         }
       } else if (e.key === 'ArrowUp') {
         if (activeElementIndex === 0) {
-          nextElementIndex = 0;
+          nextElementIndex = focusableElements.length - 1;
         } else {
           nextElementIndex = activeElementIndex - 1;
         }

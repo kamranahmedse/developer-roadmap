@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from 'preact/hooks';
 import SearchIcon from '../../icons/search-dark.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
-import { DebounceInput } from './DebounceInput';
 
 type PagesResults = Record<
   string,
@@ -112,12 +111,13 @@ export default function CommandSearch() {
           alt="Search"
           className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`}
         />
-        <DebounceInput
+        <input
           ref={inputRef}
           type="text"
           placeholder="Search"
-          onChange={(value) => {
-            setSearch(value as string);
+          value={search}
+          onChange={(e) => {
+            setSearch((e.target as HTMLInputElement).value);
           }}
           className="w-full border-none bg-transparent py-1 pr-2 placeholder:text-gray-600 focus:outline-none focus:ring-0"
         />
