@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from 'preact/hooks';
 import SearchIcon from '../../icons/search-dark.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 
 type PagesResults = Record<
   string,
@@ -16,16 +15,8 @@ const pages = [
     url: '/',
   },
   {
-    title: 'Dashboard',
-    url: '/settings/dashboard',
-  },
-  {
-    title: 'Profile',
+    title: 'Account',
     url: '/settings/update-profile',
-  },
-  {
-    title: 'Security',
-    url: '/settings/update-password',
   },
   {
     title: 'Roadmaps',
@@ -47,11 +38,9 @@ const pages = [
 
 export default function CommandSearch() {
   const inputRef = useRef<HTMLInputElement>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [search, setSearch] = useState<string>('');
   const [pagesJson, setPagesJson] = useState<PagesResults>({});
   const [searchResults, setSearchResults] = useState<PagesResults | null>(null);
-  const icon = isLoading ? SpinnerIcon : SearchIcon;
 
   const getPages = async () => {
     const pagesJson = (
@@ -67,7 +56,6 @@ export default function CommandSearch() {
 
     const pages = JSON.parse(pagesJson);
     setPagesJson(pages);
-    setIsLoading(false);
   };
 
   const searchByTitle = (title: string) => {
@@ -106,11 +94,7 @@ export default function CommandSearch() {
   return (
     <div className="h-full rounded-lg border border-gray-200 bg-white shadow-md">
       <div className="flex items-center gap-2 border-b border-gray-200 px-5 py-2 font-normal">
-        <img
-          src={icon}
-          alt="Search"
-          className={`h-4 w-4 ${isLoading ? 'animate-spin' : ''}`}
-        />
+        <img src={SearchIcon} alt="Search" className={`h-4 w-4`} />
         <input
           ref={inputRef}
           type="text"
