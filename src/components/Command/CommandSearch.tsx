@@ -32,6 +32,18 @@ const pages = [
     title: 'Roadmaps',
     url: '/roadmaps',
   },
+  {
+    title: 'Best Practices',
+    url: '/best-practices',
+  },
+  {
+    title: 'Guides',
+    url: '/guides',
+  },
+  {
+    title: 'Videos',
+    url: '/videos',
+  },
 ];
 
 export default function CommandSearch() {
@@ -111,7 +123,7 @@ export default function CommandSearch() {
         />
       </div>
 
-      <div className="max-h-[40vh] min-h-fit overflow-y-scroll">
+      <div className="max-h-[50vh] min-h-fit overflow-y-scroll">
         {!searchResults && (
           <div className="mt-3 px-3 py-3">
             <h5 className="ml-2 text-xs font-medium text-gray-600">Pages</h5>
