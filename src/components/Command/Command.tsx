@@ -56,12 +56,12 @@ export default function Command() {
       {isOpen &&
         createPortal(
           <>
-            <div className="fixed inset-0 h-screen w-screen">
+            <div className="fixed inset-0 z-50 h-screen w-screen">
               <div className="absolute inset-0 bg-black opacity-50" />
               <div
                 ref={commandModalRef}
                 onKeyDown={handleTrapFocusKeydown}
-                className="absolute left-1/2 top-20 z-50 w-[80vw] max-w-md -translate-x-1/2"
+                className="absolute left-1/2 top-20 w-[80vw] max-w-md -translate-x-1/2"
                 tabIndex={-1}
               >
                 <CommandSearch />
