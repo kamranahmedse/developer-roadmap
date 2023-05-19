@@ -9,7 +9,6 @@ export default function Command() {
     const openCommand = (e: KeyboardEvent) => {
       if (e.metaKey && e.key === 'k') {
         e.preventDefault();
-        // Set focus on the input
         setIsOpen(true);
       } else if (e.key === 'Escape') {
         setIsOpen(false);
