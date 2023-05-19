@@ -118,12 +118,7 @@ export default function CommandSearch() {
             <ul className="mt-2 flex flex-col">
               {pages.map((page) => (
                 <li key={page.title}>
-                  <a
-                    href={page.url}
-                    className="block rounded p-2 text-sm hover:bg-gray-100"
-                  >
-                    {page.title}
-                  </a>
+                  <PageLink title={page.title} url={page.url} />
                 </li>
               ))}
             </ul>
@@ -158,13 +153,8 @@ export default function CommandSearch() {
                           break;
                       }
                       return (
-                        <li key={page.title}>
-                          <a
-                            href={url}
-                            className="block rounded p-2 text-sm hover:bg-gray-100"
-                          >
-                            {page.title}
-                          </a>
+                        <li key={url}>
+                          <PageLink title={page.title} url={url} />
                         </li>
                       );
                     })}
@@ -182,5 +172,16 @@ export default function CommandSearch() {
         )}
       </div>
     </div>
+  );
+}
+
+function PageLink({ title, url }: { title: string; url: string }) {
+  return (
+    <a
+      href={url}
+      className="block rounded p-2 text-sm hover:bg-gray-100 focus:outline-none focus-visible:bg-gray-100 focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+    >
+      {title}
+    </a>
   );
 }
