@@ -6,6 +6,8 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 export default function Command() {
   const commandModalRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState<boolean>(false);
+  const [activeElement, setActiveElement] = useState<HTMLElement | null>(null);
+  const [activeElementIndex, setActiveElementIndex] = useState<number>(0);
 
   useEffect(() => {
     const openCommand = (e: KeyboardEvent) => {
@@ -27,45 +29,70 @@ export default function Command() {
     const focusableElements = commandModalRef.current?.querySelectorAll(
       'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
     ) as NodeListOf<HTMLElement>;
-
-    const firstFocusableElement = focusableElements[0];
-    const lastFocusableElement =
-      focusableElements[focusableElements.length - 1];
+    let index: number = 0;
 
     if (e.key === 'Tab') {
+      e.preventDefault();
       if (e.shiftKey) {
-        if (document.activeElement === firstFocusableElement) {
-          e.preventDefault();
-          lastFocusableElement.focus();
+        index = activeElementIndex - 1;
+        if (index < 0) {
+          index = focusableElements.length - 1;
         }
       } else {
-        if (document.activeElement === lastFocusableElement) {
-          e.preventDefault();
-          firstFocusableElement.focus();
+        index = activeElementIndex + 1;
+        if (index > focusableElements.length - 1) {
+          index = 0;
         }
       }
-    } else if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-      e.preventDefault();
-      const activeElement = document.activeElement as HTMLElement;
-      const activeElementIndex =
-        Array.from(focusableElements).indexOf(activeElement);
-      let nextElementIndex = 0;
 
-      if (e.key === 'ArrowDown') {
-        if (activeElementIndex === focusableElements.length - 1) {
-          nextElementIndex = 0;
-        } else {
-          nextElementIndex = activeElementIndex + 1;
-        }
-      } else if (e.key === 'ArrowUp') {
-        if (activeElementIndex === 0) {
-          nextElementIndex = focusableElements.length - 1;
-        } else {
-          nextElementIndex = activeElementIndex - 1;
+      const selectedElement = focusableElements[index];
+      selectedElement.ariaSelected = 'true';
+
+      for (const element of focusableElements) {
+        if (element !== selectedElement) {
+          element.removeAttribute('aria-selected');
         }
       }
-      const nextElement = focusableElements[nextElementIndex];
-      nextElement.focus();
+      setActiveElementIndex(index);
+      setActiveElement(focusableElements[index]);
+    } else if (e.key === 'ArrowUp') {
+      e.preventDefault();
+      index = activeElementIndex - 1;
+      if (index < 0) {
+        index = focusableElements.length - 1;
+      }
+
+      const selectedElement = focusableElements[index];
+      selectedElement.ariaSelected = 'true';
+
+      for (const element of focusableElements) {
+        if (element !== selectedElement) {
+          element.removeAttribute('aria-selected');
+        }
+      }
+      setActiveElementIndex(index);
+      setActiveElement(focusableElements[index]);
+    } else if (e.key === 'ArrowDown') {
+      e.preventDefault();
+      index = activeElementIndex + 1;
+      if (index > focusableElements.length - 1) {
+        index = 0;
+      }
+
+      const selectedElement = focusableElements[index];
+      selectedElement.ariaSelected = 'true';
+
+      for (const element of focusableElements) {
+        if (element !== selectedElement) {
+          element.removeAttribute('aria-selected');
+        }
+      }
+      setActiveElementIndex(index);
+      setActiveElement(focusableElements[index]);
+    } else if (e.key === 'Enter') {
+      e.preventDefault();
+      if (activeElement?.id === 'command-search') return;
+      activeElement?.click();
     }
   }
 
@@ -75,12 +102,74 @@ export default function Command() {
 
   // Prevent scrolling when command menu is open
   useEffect(() => {
+    const focusableElements = commandModalRef.current?.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ) as NodeListOf<HTMLElement>;
     if (isOpen) {
       document.body.style.overflow = 'hidden';
+      setActiveElement(focusableElements[1]);
+      setActiveElementIndex(1);
+
+      for (const element of focusableElements) {
+        element.removeAttribute('aria-selected');
+      }
+
+      const selectedElement = focusableElements[1];
+      selectedElement.ariaSelected = 'true';
     } else {
       document.body.style.overflow = 'auto';
+      setActiveElement(null);
+      setActiveElementIndex(0);
+
+      if (!focusableElements) return;
+      for (const element of focusableElements) {
+        element.removeAttribute('aria-selected');
+      }
     }
   }, [isOpen]);
+
+  const handleSearchResultsFocus = () => {
+    const focusableElements = commandModalRef.current?.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ) as NodeListOf<HTMLElement>;
+
+    const selectedElement = focusableElements[1];
+    if (!selectedElement) return;
+    selectedElement.ariaSelected = 'true';
+
+    for (const element of focusableElements) {
+      if (element !== selectedElement) {
+        element.removeAttribute('aria-selected');
+      }
+    }
+    setActiveElementIndex(1);
+    setActiveElement(focusableElements[1]);
+  };
+
+  const handleHoverFocus = (e: MouseEvent) => {
+    const focusableElements = commandModalRef.current?.querySelectorAll(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    ) as NodeListOf<HTMLElement>;
+
+    const selectedElement = e.target as HTMLElement;
+    selectedElement.ariaSelected = 'true';
+
+    for (const element of focusableElements) {
+      if (element !== selectedElement) {
+        element.removeAttribute('aria-selected');
+      }
+    }
+
+    setActiveElementIndex(
+      Array.from(focusableElements).indexOf(selectedElement)
+    );
+    setActiveElement(selectedElement);
+  };
+
+  useEffect(() => {
+    // activeElement?.focus();
+    console.log(activeElement);
+  }, [activeElement]);
 
   return (
     <>
@@ -95,7 +184,10 @@ export default function Command() {
                 className="absolute left-1/2 top-20 w-[80vw] max-w-md -translate-x-1/2"
                 tabIndex={-1}
               >
-                <CommandSearch />
+                <CommandSearch
+                  handleSearchResultsFocus={handleSearchResultsFocus}
+                  handleHoverFocus={handleHoverFocus}
+                />
               </div>
             </div>
           </>,

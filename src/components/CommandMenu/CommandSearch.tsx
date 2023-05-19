@@ -36,7 +36,13 @@ const pages = [
   },
 ];
 
-export default function CommandSearch() {
+export default function CommandSearch({
+  handleSearchResultsFocus,
+  handleHoverFocus,
+}: {
+  handleSearchResultsFocus: () => void;
+  handleHoverFocus: (e: MouseEvent) => void;
+}) {
   const inputRef = useRef<HTMLInputElement>(null);
   const [search, setSearch] = useState<string>('');
   const [pagesJson, setPagesJson] = useState<PagesResults>({});
@@ -80,16 +86,8 @@ export default function CommandSearch() {
   }, []);
 
   useEffect(() => {
-    if (search.length > 0) {
-      searchByTitle(search);
-    } else {
-      setSearchResults(null);
-    }
-
-    return () => {
-      setSearchResults(null);
-    };
-  }, [search]);
+    handleSearchResultsFocus();
+  }, [searchResults]);
 
   return (
     <div className="h-full rounded-lg border border-gray-200 bg-white shadow-md">
@@ -97,11 +95,13 @@ export default function CommandSearch() {
         <img src={SearchIcon} alt="Search" className={`h-4 w-4`} />
         <input
           ref={inputRef}
+          id="command-search"
           type="text"
           placeholder="Search"
           value={search}
           onChange={(e) => {
             setSearch((e.target as HTMLInputElement).value);
+            searchByTitle((e.target as HTMLInputElement).value);
           }}
           className="w-full border-none bg-transparent py-1 pr-2 placeholder:text-gray-600 focus:outline-none focus:ring-0"
         />
@@ -114,7 +114,11 @@ export default function CommandSearch() {
             <ul className="mt-2 flex flex-col">
               {pages.map((page) => (
                 <li key={page.title}>
-                  <PageLink title={page.title} url={page.url} />
+                  <PageLink
+                    title={page.title}
+                    url={page.url}
+                    handleHoverFocus={handleHoverFocus}
+                  />
                 </li>
               ))}
             </ul>
@@ -150,7 +154,11 @@ export default function CommandSearch() {
                       }
                       return (
                         <li key={url}>
-                          <PageLink title={page.title} url={url} />
+                          <PageLink
+                            title={page.title}
+                            url={url}
+                            handleHoverFocus={handleHoverFocus}
+                          />
                         </li>
                       );
                     })}
@@ -171,11 +179,20 @@ export default function CommandSearch() {
   );
 }
 
-function PageLink({ title, url }: { title: string; url: string }) {
+function PageLink({
+  title,
+  url,
+  handleHoverFocus,
+}: {
+  title: string;
+  url: string;
+  handleHoverFocus: (e: MouseEvent) => void;
+}) {
   return (
     <a
       href={url}
-      className="block rounded p-2 text-sm hover:bg-gray-100 focus:outline-none focus-visible:bg-gray-100 focus-visible:ring-2 focus-visible:ring-gray-500 focus-visible:ring-offset-2 focus-visible:ring-offset-white"
+      onMouseOver={handleHoverFocus}
+      className="block rounded p-2 text-sm focus:outline-none aria-selected:bg-red-100"
     >
       {title}
     </a>
