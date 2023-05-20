@@ -1,1 +1,1 @@
-# Weighted terms
+# Weighted Terms
