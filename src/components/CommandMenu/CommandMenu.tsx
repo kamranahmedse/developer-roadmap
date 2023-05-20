@@ -38,6 +38,8 @@ export function CommandMenu() {
                 setActiveCounter(
                   canGoPrev ? activeCounter - 1 : pages.length - 1
                 );
+              } else if (e.key === 'Enter') {
+                // const activePage = pages[activeCounter]
               }
             }}
           />
