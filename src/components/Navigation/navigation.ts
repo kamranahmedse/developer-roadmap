@@ -34,6 +34,12 @@ function bindEvents() {
         .querySelector('[data-account-dropdown]')
         ?.classList.toggle('hidden');
     });
+
+  document
+      .querySelector('[data-command-menu]')
+      ?.addEventListener('click', () => {
+        window.dispatchEvent(new CustomEvent('command.k'));
+      });
 }
 
 bindEvents();

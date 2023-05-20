@@ -7,7 +7,6 @@ import AccountDropdown from './AccountDropdown.astro';
   <nav class='container flex items-center justify-between'>
     <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
       <Icon icon='logo' />
-      <span class='ml-3 hidden md:block'>roadmap.sh</span>
     </a>
 
     <!-- Desktop navigation items -->
@@ -25,6 +24,12 @@ import AccountDropdown from './AccountDropdown.astro';
       </li>
       <li>
         <a href='/videos' class='hidden lg:inline text-gray-400 hover:text-white'>Videos</a>
+      </li>
+      <li>
+        <button data-command-menu class="hidden lg:flex items-center gap-2 text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
+          <!-- <Icon icon='search' class='h-3 w-3' /> -->
+          ⌘ K
+        </span>
       </li>
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
