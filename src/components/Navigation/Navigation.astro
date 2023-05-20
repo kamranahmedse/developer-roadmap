@@ -1,13 +1,17 @@
 ---
 import Icon from '../AstroIcon.astro';
 import AccountDropdown from './AccountDropdown.astro';
+import CommandMenu from '../CommandMenu/CommandMenu';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
-    <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
+    <a
+      class='flex items-center text-lg font-medium text-white'
+      href='/'
+      aria-label='roadmap.sh'
+    >
       <Icon icon='logo' />
-      <span class='ml-3 hidden md:block'>roadmap.sh</span>
     </a>
 
     <!-- Desktop navigation items -->
@@ -21,10 +25,7 @@ import AccountDropdown from './AccountDropdown.astro';
         >
       </li>
       <li>
-        <a href='/guides' class='hidden lg:inline text-gray-400 hover:text-white'>Guides</a>
-      </li>
-      <li>
-        <a href='/videos' class='hidden lg:inline text-gray-400 hover:text-white'>Videos</a>
+        <CommandMenu client:load />
       </li>
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
