@@ -1,5 +1,11 @@
 import { useEffect, useState, useRef } from 'preact/hooks';
 import SearchIcon from '../../icons/search-dark.svg';
+import UserIcon from '../../icons/user.svg';
+import VideoIcon from '../../icons/video.svg';
+import GuideIcon from '../../icons/guide.svg';
+import HomeIcon from '../../icons/home.svg';
+import RoadmapIcon from '../../icons/roadmap.svg';
+import BestPractices from '../../icons/best-practices.svg';
 
 type PagesResults = Record<
   string,
@@ -13,26 +19,32 @@ const pages = [
   {
     title: 'Home',
     url: '/',
+    icon: HomeIcon,
   },
   {
     title: 'Account',
     url: '/settings/update-profile',
+    icon: UserIcon,
   },
   {
     title: 'Roadmaps',
     url: '/roadmaps',
+    icon: RoadmapIcon,
   },
   {
     title: 'Best Practices',
     url: '/best-practices',
+    icon: BestPractices,
   },
   {
     title: 'Guides',
     url: '/guides',
+    icon: GuideIcon,
   },
   {
     title: 'Videos',
     url: '/videos',
+    icon: VideoIcon,
   },
 ];
 
@@ -97,8 +109,9 @@ export default function CommandSearch({
           ref={inputRef}
           id="command-search"
           type="text"
-          placeholder="Search"
+          placeholder="Search..."
           value={search}
+          autoComplete={'off'}
           onChange={(e) => {
             setSearch((e.target as HTMLInputElement).value);
             if ((e.target as HTMLInputElement).value.length > 0) {
@@ -122,6 +135,7 @@ export default function CommandSearch({
                     title={page.title}
                     url={page.url}
                     handleHoverFocus={handleHoverFocus}
+                    icon={page.icon}
                   />
                 </li>
               ))}
@@ -187,17 +201,26 @@ function PageLink({
   title,
   url,
   handleHoverFocus,
+  icon,
 }: {
   title: string;
   url: string;
   handleHoverFocus: (e: MouseEvent) => void;
+  icon?: string;
 }) {
   return (
     <a
       href={url}
       onMouseOver={handleHoverFocus}
-      className="block rounded p-2 text-sm focus:outline-none aria-selected:bg-red-100"
+      className="block rounded p-2 text-sm focus:outline-none aria-selected:bg-gray-100"
     >
+      {icon && (
+        <img
+          src={icon}
+          alt={title}
+          className={`mr-2 inline-block h-4 w-4 align-middle`}
+        />
+      )}
       {title}
     </a>
   );
