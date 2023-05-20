@@ -13,7 +13,7 @@ function name(param1: type1, param2: type2, ...): returnType {
 > Function Expression Syntax:
 
 ```typescript
-function add(a: number, b: number): number {
+const add = function(a: number, b: number): number {
   return a + b;
 }
 
@@ -24,3 +24,5 @@ console.log(result); // 3
 Learn more from the following links:
 
 - [Functions in TypeScript](https://www.typescriptlang.org/docs/handbook/2/functions.html)
+- [Function expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/function)
+- [Functions declaration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/function)
