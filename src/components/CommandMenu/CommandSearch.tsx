@@ -48,13 +48,7 @@ const pages = [
   },
 ];
 
-export default function CommandSearch({
-  handleSearchResultsFocus,
-  handleHoverFocus,
-}: {
-  handleSearchResultsFocus: () => void;
-  handleHoverFocus: (e: MouseEvent) => void;
-}) {
+export default function CommandSearch() {
   const inputRef = useRef<HTMLInputElement>(null);
   const [search, setSearch] = useState<string>('');
   const [pagesJson, setPagesJson] = useState<PagesResults>({});
@@ -97,10 +91,6 @@ export default function CommandSearch({
     inputRef.current?.focus();
   }, []);
 
-  useEffect(() => {
-    handleSearchResultsFocus();
-  }, [searchResults]);
-
   return (
     <div className="h-full rounded-lg border border-gray-200 bg-white shadow-md">
       <div className="flex items-center gap-2 border-b border-gray-200 px-5 py-2 font-normal">
@@ -134,7 +124,6 @@ export default function CommandSearch({
                   <PageLink
                     title={page.title}
                     url={page.url}
-                    handleHoverFocus={handleHoverFocus}
                     icon={page.icon}
                   />
                 </li>
@@ -172,11 +161,7 @@ export default function CommandSearch({
                       }
                       return (
                         <li key={url}>
-                          <PageLink
-                            title={page.title}
-                            url={url}
-                            handleHoverFocus={handleHoverFocus}
-                          />
+                          <PageLink title={page.title} url={url} />
                         </li>
                       );
                     })}
@@ -200,18 +185,15 @@ export default function CommandSearch({
 function PageLink({
   title,
   url,
-  handleHoverFocus,
   icon,
 }: {
   title: string;
   url: string;
-  handleHoverFocus: (e: MouseEvent) => void;
   icon?: string;
 }) {
   return (
     <a
       href={url}
-      onMouseOver={handleHoverFocus}
       className="block rounded p-2 text-sm focus:outline-none aria-selected:bg-gray-100"
     >
       {icon && (
