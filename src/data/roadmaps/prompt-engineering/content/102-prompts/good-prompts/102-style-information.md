@@ -1,4 +1,4 @@
-## Style Information
+# Style Information
 
 By providing explicit instructions regarding the desired tone, you can influence the language model's writing style and ensure it aligns with your specific requirements.
 
