@@ -1,21 +1,47 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
+import BestPracticesIcon from '../../icons/best-practices.svg';
+import HomeIcon from '../../icons/home.svg';
+import UserIcon from '../../icons/user.svg';
+import RoadmapIcon from '../../icons/roadmap.svg';
+import GuideIcon from '../../icons/guide.svg';
+import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { useKeydown } from '../../hooks/use-keydown';
+import { isLoggedIn } from '../../lib/jwt';
 
 type PageType = {
   url: string;
   title: string;
   group: string;
+  icon?: string;
+  isProtected?: boolean;
 };
 
 const defaultPages: PageType[] = [
-  { url: '/', title: 'Home', group: 'Pages' },
-  { url: '/settings/update-profile', title: 'Account', group: 'Pages' },
-  { url: '/roadmaps', title: 'Roadmaps', group: 'Pages' },
-  { url: '/best-practices', title: 'Best Practices', group: 'Pages' },
-  { url: '/guides', title: 'Guides', group: 'Pages' },
-  { url: '/videos', title: 'Videos', group: 'Pages' },
+  { url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
+  {
+    url: '/settings/update-profile',
+    title: 'Account',
+    group: 'Pages',
+    icon: UserIcon,
+    isProtected: true,
+  },
+  { url: '/roadmaps', title: 'Roadmaps', group: 'Pages', icon: RoadmapIcon },
+  {
+    url: '/best-practices',
+    title: 'Best Practices',
+    group: 'Pages',
+    icon: BestPracticesIcon,
+  },
+  { url: '/guides', title: 'Guides', group: 'Pages', icon: GuideIcon },
+  { url: '/videos', title: 'Videos', group: 'Pages', icon: VideoIcon },
 ];
+
+function shouldShowPage(page: PageType) {
+  const isUser = isLoggedIn();
+
+  return !page.isProtected || isUser;
+}
 
 export function CommandMenu() {
   const inputRef = useRef<HTMLInputElement>(null);
@@ -41,20 +67,19 @@ export function CommandMenu() {
     if (allPages.length > 0) {
       return allPages;
     }
-
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
     if (!response) {
-      return defaultPages;
+      return defaultPages.filter(shouldShowPage);
     }
 
-    setAllPages([...defaultPages, ...response]);
+    setAllPages([...defaultPages, ...response].filter(shouldShowPage));
 
     return response;
   }
 
   useEffect(() => {
     if (!searchedText) {
-      setSearchResults(defaultPages);
+      setSearchResults(defaultPages.filter(shouldShowPage));
       return;
     }
 
@@ -87,7 +112,7 @@ export function CommandMenu() {
             type="text"
             value={searchedText}
             className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-0"
-            placeholder="Search anywhere .."
+            placeholder="Search roadmaps, guides or pages .."
             autocomplete="off"
             onInput={(e) => {
               const value = (e.target as HTMLInputElement).value.trim();
@@ -133,17 +158,20 @@ export function CommandMenu() {
                       <div class="border-b border-gray-100"></div>
                     )}
                     <a
-                      class={`block w-full rounded p-2 text-sm ${
+                      class={`flex w-full items-center rounded p-2 text-sm ${
                         counter === activeCounter ? 'bg-gray-100' : ''
                       }`}
                       onMouseOver={() => setActiveCounter(counter)}
                       href={page.url}
                     >
-                      {searchedText && (
+                      {!page.icon && (
                         <span class="mr-2 text-gray-400">{page.group}</span>
                       )}
-                      {!searchedText && (
-                        <span class="mr-2 text-gray-400">ICON</span>
+                      {page.icon && (
+                        <img
+                          src={page.icon}
+                          class="mr-2 h-4 w-4"
+                        />
                       )}
                       {page.title}
                     </a>
