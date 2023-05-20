@@ -22,12 +22,12 @@ export async function get() {
         group: 'Best Practices',
       })),
       ...guides.map((guide) => ({
-        url: `/${guide.id}`,
+        url: `/guides/${guide.id}`,
         title: guide.frontmatter.title,
         group: 'Guides',
       })),
       ...videos.map((guide) => ({
-        url: `/${guide.id}`,
+        url: `/videos/${guide.id}`,
         title: guide.frontmatter.title,
         group: 'Videos',
       })),
