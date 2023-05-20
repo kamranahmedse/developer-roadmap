@@ -1,5 +1,6 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { httpGet } from '../../lib/http';
+import { useKeydown } from '../../hooks/use-keydown';
 
 type PageType = {
   url: string;
@@ -9,7 +10,7 @@ type PageType = {
 
 const defaultPages: PageType[] = [
   { url: '/', title: 'Home', group: 'Pages' },
-  { url: '/profile', title: 'Account', group: 'Pages' },
+  { url: '/settings/update-profile', title: 'Account', group: 'Pages' },
   { url: '/roadmaps', title: 'Roadmaps', group: 'Pages' },
   { url: '/best-practices', title: 'Best Practices', group: 'Pages' },
   { url: '/guides', title: 'Guides', group: 'Pages' },
@@ -17,11 +18,24 @@ const defaultPages: PageType[] = [
 ];
 
 export function CommandMenu() {
-  const [isActive, setIsActive] = useState(true);
+  const inputRef = useRef<HTMLInputElement>(null);
+  const [isActive, setIsActive] = useState(false);
   const [allPages, setAllPages] = useState<PageType[]>([]);
   const [searchResults, setSearchResults] = useState<PageType[]>(defaultPages);
   const [searchedText, setSearchedText] = useState('');
   const [activeCounter, setActiveCounter] = useState(0);
+
+  useKeydown('mod_k', () => {
+    setIsActive(true);
+  });
+
+  useEffect(() => {
+    if (!isActive || !inputRef.current) {
+      return;
+    }
+
+    inputRef.current.focus();
+  }, [isActive]);
 
   async function getAllPages() {
     if (allPages.length > 0) {
@@ -68,6 +82,7 @@ export function CommandMenu() {
       <div className="relative top-0 h-full w-full max-w-lg p-2 sm:top-20 md:h-auto">
         <div className="relative rounded-lg bg-white shadow">
           <input
+            ref={inputRef}
             autofocus={true}
             type="text"
             value={searchedText}
