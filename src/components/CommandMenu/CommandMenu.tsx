@@ -62,6 +62,17 @@ export function CommandMenu() {
   });
 
   useEffect(() => {
+    function handleToggleTopic(e: any) {
+      setIsActive(true);
+    }
+
+    window.addEventListener(`command.k`, handleToggleTopic);
+    return () => {
+      window.removeEventListener(`command.k`, handleToggleTopic);
+    };
+  }, []);
+
+  useEffect(() => {
     if (!isActive || !inputRef.current) {
       return;
     }
