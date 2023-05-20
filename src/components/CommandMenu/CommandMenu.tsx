@@ -46,11 +46,13 @@ export function CommandMenu() {
 
     const normalizedSearchText = searchedText.trim().toLowerCase();
     getAllPages().then((unfilteredPages = defaultPages) => {
-      const filteredPages = unfilteredPages.filter((currPage: PageType) => {
-        return (
-          currPage.title.toLowerCase().indexOf(normalizedSearchText) !== -1
-        );
-      });
+      const filteredPages = unfilteredPages
+        .filter((currPage: PageType) => {
+          return (
+            currPage.title.toLowerCase().indexOf(normalizedSearchText) !== -1
+          );
+        })
+        .slice(0, 10);
 
       setActiveCounter(0);
       setSearchResults(filteredPages);
@@ -63,7 +65,7 @@ export function CommandMenu() {
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex h-full justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div className="relative top-20 h-full w-full max-w-lg p-2 md:h-auto">
+      <div className="relative top-0 sm:top-20 h-full w-full max-w-lg p-2 md:h-auto">
         <div className="relative rounded-lg bg-white shadow">
           <input
             autofocus={true}
@@ -87,6 +89,8 @@ export function CommandMenu() {
                 );
               } else if (e.key === 'Tab') {
                 e.preventDefault();
+              } else if (e.key === 'Escape') {
+                setIsActive(false);
               } else if (e.key === 'Enter') {
                 const activePage = searchResults[activeCounter];
                 if (activePage) {
@@ -98,23 +102,39 @@ export function CommandMenu() {
 
           <div class="px-2 py-2">
             <div className="flex flex-col">
-              {searchResults.map((page, counter) => (
-                <a
-                  class={`block w-full rounded p-2 text-sm ${
-                    counter === activeCounter ? 'bg-gray-100' : ''
-                  }`}
-                  onMouseOver={() => setActiveCounter(counter)}
-                  href={page.url}
-                >
-                  {searchedText && (
-                    <span class="mr-2 text-gray-400">{page.group}</span>
-                  )}
-                  {!searchedText && (
-                    <span class="mr-2 text-gray-400">ICON</span>
-                  )}
-                  {page.title}
-                </a>
-              ))}
+              {searchResults.length === 0 && (
+                <div class="p-5 text-center text-sm text-gray-400">
+                  No results found
+                </div>
+              )}
+
+              {searchResults.map((page, counter) => {
+                const prevPage = searchResults[counter - 1];
+                const groupChanged = prevPage && prevPage.group !== page.group;
+
+                return (
+                  <>
+                    {groupChanged && (
+                      <div class="border-b border-gray-100"></div>
+                    )}
+                    <a
+                      class={`block w-full rounded p-2 text-sm ${
+                        counter === activeCounter ? 'bg-gray-100' : ''
+                      }`}
+                      onMouseOver={() => setActiveCounter(counter)}
+                      href={page.url}
+                    >
+                      {searchedText && (
+                        <span class="mr-2 text-gray-400">{page.group}</span>
+                      )}
+                      {!searchedText && (
+                        <span class="mr-2 text-gray-400">ICON</span>
+                      )}
+                      {page.title}
+                    </a>
+                  </>
+                );
+              })}
             </div>
           </div>
         </div>
