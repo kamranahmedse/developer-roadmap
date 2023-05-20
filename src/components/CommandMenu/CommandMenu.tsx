@@ -65,7 +65,7 @@ export function CommandMenu() {
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex h-full justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div className="relative top-0 sm:top-20 h-full w-full max-w-lg p-2 md:h-auto">
+      <div className="relative top-0 h-full w-full max-w-lg p-2 sm:top-20 md:h-auto">
         <div className="relative rounded-lg bg-white shadow">
           <input
             autofocus={true}
