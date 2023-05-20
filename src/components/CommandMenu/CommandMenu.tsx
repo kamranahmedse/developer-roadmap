@@ -58,6 +58,7 @@ export function CommandMenu() {
   });
 
   useOutsideClick(modalRef, () => {
+    setSearchedText('');
     setIsActive(false);
   });
 
@@ -147,6 +148,7 @@ export function CommandMenu() {
               } else if (e.key === 'Tab') {
                 e.preventDefault();
               } else if (e.key === 'Escape') {
+                setSearchedText('');
                 setIsActive(false);
               } else if (e.key === 'Enter') {
                 const activePage = searchResults[activeCounter];
