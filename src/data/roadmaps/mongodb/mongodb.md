@@ -34,7 +34,6 @@ seo:
     - 'mongodb development skills test'
     - 'mongodb engineer roadmap'
     - 'mongodb roadmap'
-    - 'become a mongodb'
     - 'mongodb career path'
     - 'learn mongodb development'
     - 'what is mongodb'
