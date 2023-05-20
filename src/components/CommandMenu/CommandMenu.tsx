@@ -64,7 +64,8 @@ export default function Command() {
 
     const selectedElement = focusableElements[index];
     selectedElement.ariaSelected = 'true';
-    
+    selectedElement.focus();
+
     for (const element of focusableElements) {
       if (element !== selectedElement) {
         element.removeAttribute('aria-selected');
@@ -107,6 +108,9 @@ export default function Command() {
     const focusableElements = getFocusableElements(commandModalRef.current);
 
     const selectedElement = e.target as HTMLElement;
+    if (selectedElement === activeElement) {
+      return; // Skip updating active element if it's the same as the hovered element
+    }
     selectedElement.ariaSelected = 'true';
 
     for (const element of focusableElements) {
