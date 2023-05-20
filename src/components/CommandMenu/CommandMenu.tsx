@@ -25,10 +25,12 @@ export function CommandMenu() {
           <input
             type="text"
             value={searchedText}
-            class={
-              'w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-0'
-            }
+            className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-0"
             placeholder="Search anywhere .."
+            onInput={(e) => {
+              const value = (e.target as HTMLInputElement).value.trim();
+              setSearchedText(value);
+            }}
             onKeyDown={(e) => {
               if (e.key === 'ArrowDown') {
                 const canGoNext = activeCounter < pages.length - 1;
@@ -54,9 +56,12 @@ export function CommandMenu() {
                   onMouseOver={() => setActiveCounter(counter)}
                   href={page.href}
                 >
-
-                  {searchedText && <span class='text-gray-400 mr-2'>{ page.group }</span> }
-                  {!searchedText && <span class='text-gray-400 mr-2'>ICON</span> }
+                  {searchedText && (
+                    <span class="mr-2 text-gray-400">{page.group}</span>
+                  )}
+                  {!searchedText && (
+                    <span class="mr-2 text-gray-400">ICON</span>
+                  )}
                   {page.title}
                 </a>
               ))}

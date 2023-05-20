@@ -9,24 +9,28 @@ const videos = await getAllVideos();
 const roadmaps = await getRoadmapsByTag('roadmap');
 const bestPractices = await getAllBestPractices();
 
-const formattedData = {
-  Roadmaps: roadmaps.map((roadmap) => ({
+const formattedData = [
+  ...roadmaps.map((roadmap) => ({
     url: `/${roadmap.id}`,
     title: roadmap.frontmatter.briefTitle,
+    group: 'Roadmaps',
   })),
-  'Best Practices': bestPractices.map((bestPractice) => ({
+  ...bestPractices.map((bestPractice) => ({
     url: `/${bestPractice.id}`,
     title: bestPractice.frontmatter.briefTitle,
+    group: 'Best Practices',
   })),
-  Guides: guides.map((guide) => ({
+  ...guides.map((guide) => ({
     url: `/${guide.id}`,
     title: guide.frontmatter.title,
+    group: 'Guides',
   })),
-  Videos: videos.map((guide) => ({
+  ...videos.map((guide) => ({
     url: `/${guide.id}`,
     title: guide.frontmatter.title,
+    group: 'Videos',
   })),
-};
+];
 ---
 
 {JSON.stringify(formattedData)}
