@@ -59,7 +59,10 @@ export function GitHubButton(props: GitHubButtonProps) {
 
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
-        Cookies.set(TOKEN_COOKIE_NAME, response.token);
+        Cookies.set(TOKEN_COOKIE_NAME, response.token, {
+          path: '/',
+          expires: 30,
+        });
         window.location.href = redirectUrl;
       })
       .catch((err) => {
