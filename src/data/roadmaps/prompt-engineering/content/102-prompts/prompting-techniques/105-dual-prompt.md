@@ -9,7 +9,6 @@ Write me a guide about SEO.
 ```
 
 However, this prompt may result in a generic guide without giving you what you may need.
-```
 
 By adopting dual prompt, you will receive a more specific response that is tailored to your needs. For the above example, we could write our prompt in two prompts as follows:
 
