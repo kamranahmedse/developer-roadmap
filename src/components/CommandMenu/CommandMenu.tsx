@@ -67,6 +67,7 @@ export function CommandMenu() {
       setIsActive(true);
     }
 
+    getAllPages();
     window.addEventListener(`command.k`, handleToggleTopic);
     return () => {
       window.removeEventListener(`command.k`, handleToggleTopic);
