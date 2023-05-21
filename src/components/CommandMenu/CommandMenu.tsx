@@ -130,7 +130,7 @@ export function CommandMenu() {
             autofocus={true}
             type="text"
             value={searchedText}
-            className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-0"
+            className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-none"
             placeholder="Search roadmaps, guides or pages .."
             autocomplete="off"
             onInput={(e) => {
