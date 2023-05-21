@@ -61,6 +61,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [MongoDB Roadmap](https://roadmap.sh/mongodb)
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 - [Docker Roadmap](https://roadmap.sh/docker)
+- [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 
 We have also added a new form of visual content covering best practices:
 
