@@ -22,20 +22,4 @@ Here are a few strategies that can help you address biases in your prompts:
 3. **Counter-balancing**: If a bias is unavoidable due to the context or nature of the prompt, consider counter-balancing it by providing an alternative perspective or side to the argument.
 4. **Testing and Iterating**: Continuously test and iterate on your prompts, seeking feedback from a diverse group of reviewers to identify and correct potential biases.
 
-## Examples of Debiasing
-
-Here's an example to illustrate debiasing in prompt engineering:
-
-### Biased Prompt
-
-*Who are some popular male scientists?*
-
-This prompt assumes that scientists are more likely to be men. It also reinforces the stereotype that scientific achievements are primarily attributed to male scientists.
-
-### Debiased Prompt
-
-*Who are some popular scientists from diverse backgrounds and genders?*
-
-This prompt removes any implicit gender bias and encourages a more inclusive list of scientists, showcasing different backgrounds and genders while maintaining the focus on scientific achievements.
-
-By incorporating debiasing strategies into your prompt engineering process, you promote fairness, accountability, and neutrality in AI-generated content, supporting a more inclusive and ethical AI environment.
+Learn more at [learnprompting.org](https://learnprompting.org/docs/reliability/intro)

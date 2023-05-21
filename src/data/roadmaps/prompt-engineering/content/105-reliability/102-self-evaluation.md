@@ -2,12 +2,6 @@
 
 Self-evaluation is an essential aspect of the prompt engineering process. It involves the ability of an AI model to assess its own performance and determine the level of confidence it has in its responses. By properly incorporating self-evaluation, the AI can improve its reliability, as it will learn to identify its weaknesses and provide more accurate responses over time.
 
-## Importance of Self-Evaluation
-
-- **Identify weaknesses**: A good self-evaluation system helps the AI recognize areas where it provides less accurate or irrelevant responses, thus making it possible to improve the model during future training iterations.
-- **Enhance reliability**: Users are more likely to trust an AI model that understands its limitations and adjusts its responses accordingly.
-- **Continuous improvement**: As an AI model evaluates its performance, it becomes equipped with new information to learn from and improve upon, ultimately leading to better overall performance.
-
 ## Implementing Self-Evaluation
 
 When incorporating self-evaluation into an AI model, you should consider the following elements:
@@ -21,3 +15,5 @@ When incorporating self-evaluation into an AI model, you should consider the fol
 4. **Error monitoring**: Establish a system that continuously monitors the AI model's performance by tracking errors, outliers, and other unexpected results. This monitoring process should inform the self-evaluation mechanism and help the AI model adapt over time.
 
 By incorporating self-evaluation into your AI model, you can create a more reliable system that users will trust and appreciate. This, in turn, will lead to a greater sense of confidence in the AI model and its potential to solve real-world problems.
+
+Learn more at [learnprompting.org](https://learnprompting.org/docs/reliability/intro)

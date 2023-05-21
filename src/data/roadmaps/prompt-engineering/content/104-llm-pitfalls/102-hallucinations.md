@@ -1,6 +1,6 @@
 # Hallucinations
 
-Hallucinations are a common pitfall in Language Model (LM) outputs. Essentially, they occur when the LM generates text that is factually incorrect, nonsensical, or disconnected from the input prompt. These hallucinations can be problematic in the generated text, as they can mislead the users or cause misunderstandings.
+LLMs will frequently generate falsehoods when asked a question that they do not know the answer to. Sometimes they will state that they do not know the answer, but much of the time they will confidently give a wrong answer.
 
 ### Causes of Hallucinations
 

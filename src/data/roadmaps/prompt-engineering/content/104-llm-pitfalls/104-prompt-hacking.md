@@ -9,3 +9,5 @@ There are a few common techniques employed by users to attempt "prompt hacking,"
 3. **Asking leading questions**: Users can try to manipulate the model by asking highly biased or loaded questions, hoping to get a similar response from the model.
 
 To counteract prompt hacking, it's essential for developers and researchers to build in safety mechanisms such as content filters and carefully designed prompt templates to prevent the model from generating harmful or unwanted outputs. Constant monitoring, analysis, and improvement to the safety mitigations in place can help ensure the model's output aligns with the desired guidelines and behaves responsibly.
+
+Read more about prompt hacking here [Prompt Hacking](https://learnprompting.org/docs/category/-prompt-hacking).
