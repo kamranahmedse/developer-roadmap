@@ -1,10 +1,10 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
+import { httpPost } from '../../lib/http';
+import { isLoggedIn } from '../../lib/jwt';
 import {
   renderResourceProgress,
   ResourceType,
 } from '../../lib/resource-progress';
-import { isLoggedIn } from '../../lib/jwt';
-import { httpPost } from '../../lib/http';
 
 export class Renderer {
   resourceId: string;
@@ -176,7 +176,17 @@ export class Renderer {
     e.stopImmediatePropagation();
 
     if (/^ext_link/.test(groupId)) {
-      window.open(`https://${groupId.replace('ext_link:', '')}`);
+      const externalLink = groupId.replace('ext_link:', '');
+
+      if (!externalLink.startsWith('roadmap.sh')) {
+        window.fireEvent({
+          category: 'RoadmapExternalLink',
+          action: `${this.resourceType} / ${this.resourceId}`,
+          label: externalLink,
+        });
+      }
+
+      window.open(`https://${externalLink}`);
       return;
     }
 
