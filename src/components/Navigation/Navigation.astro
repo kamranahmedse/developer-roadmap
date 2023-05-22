@@ -19,17 +19,17 @@ import AccountDropdown from './AccountDropdown.astro';
           >Best Practices</a
         >
       </li>
-      <li>
-        <a href='/guides' class='hidden lg:inline text-gray-400 hover:text-white'>Guides</a>
+      <li class='hidden lg:inline'>
+        <a href='/guides' class='text-gray-400 hover:text-white'>Guides</a>
+      </li>
+      <li class='hidden lg:inline'>
+        <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
       <li>
-        <a href='/videos' class='hidden lg:inline text-gray-400 hover:text-white'>Videos</a>
-      </li>
-      <li>
-        <button data-command-menu class="hidden lg:flex items-center gap-2 text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
-          <!-- <Icon icon='search' class='h-3 w-3' /> -->
-          ⌘ K
-        </span>
+        <kbd data-command-menu class="hidden md:flex items-center text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
+          <!-- <Icon icon='search' class='h-3 w-3 mr-2' /> -->
+          <kbd class='font-sans mr-1'>⌘</kbd><kbd class='font-sans'>K</kbd>
+        </kbd>
       </li>
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
