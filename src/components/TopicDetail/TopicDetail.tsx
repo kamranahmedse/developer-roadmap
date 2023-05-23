@@ -147,7 +147,7 @@ export function TopicDetail() {
   const contributionUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/${contributionDir}/${resourceId}/content`;
 
   return (
-    <div>
+    <dialog>
       <div
         ref={topicRef}
         className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 sm:max-w-[600px] sm:p-6"
@@ -211,6 +211,6 @@ export function TopicDetail() {
         )}
       </div>
       <div class="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
-    </div>
+    </dialog>
   );
 }
