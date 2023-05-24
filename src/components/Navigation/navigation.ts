@@ -1,6 +1,5 @@
 import Cookies from 'js-cookie';
-import { handleAuthRequired } from '../Authenticator/authenticator';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from "../../lib/jwt";
 
 export function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
