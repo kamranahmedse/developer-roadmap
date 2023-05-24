@@ -1,14 +1,14 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
+import { useKeydown } from '../../hooks/use-keydown';
+import { useOutsideClick } from '../../hooks/use-outside-click';
 import BestPracticesIcon from '../../icons/best-practices.svg';
-import HomeIcon from '../../icons/home.svg';
-import UserIcon from '../../icons/user.svg';
-import RoadmapIcon from '../../icons/roadmap.svg';
 import GuideIcon from '../../icons/guide.svg';
+import HomeIcon from '../../icons/home.svg';
+import RoadmapIcon from '../../icons/roadmap.svg';
+import UserIcon from '../../icons/user.svg';
 import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
-import { useKeydown } from '../../hooks/use-keydown';
 import { isLoggedIn } from '../../lib/jwt';
-import { useOutsideClick } from '../../hooks/use-outside-click';
 
 type PageType = {
   url: string;
@@ -21,7 +21,7 @@ type PageType = {
 const defaultPages: PageType[] = [
   { url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
   {
-    url: '/settings/update-profile',
+    url: '/account/update-profile',
     title: 'Account',
     group: 'Pages',
     icon: UserIcon,

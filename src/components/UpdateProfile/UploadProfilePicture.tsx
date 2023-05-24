@@ -1,7 +1,6 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
-import { httpCall, httpPost } from '../../lib/http';
 
 interface PreviewFile extends File {
   preview: string;
@@ -131,7 +130,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
     <form
       onSubmit={handleSubmit}
       encType="multipart/form-data"
-      className="mt-8 flex flex-col gap-2"
+      className="flex flex-col gap-2"
     >
       <label htmlFor="avatar" className="text-sm leading-none text-slate-500">
         Profile Picture
