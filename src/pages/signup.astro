@@ -1,13 +1,12 @@
 ---
 import Divider from '../components/AuthenticationFlow/Divider.astro';
-import GoogleLogin from '../components/Login/GoogleLogin.astro';
 import EmailSignupForm from '../components/AuthenticationFlow/EmailSignupForm';
-import SettingLayout from '../layouts/SettingLayout.astro';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
+import AccountLayout from '../layouts/AccountLayout.astro';
 ---
 
-<SettingLayout
+<AccountLayout
   title='Signup - roadmap.sh'
   description='Create an account to track your progress, showcase your skillset'
   permalink={'/signup'}
@@ -46,4 +45,4 @@ import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
       </div>
     </div>
   </div>
-</SettingLayout>
+</AccountLayout>

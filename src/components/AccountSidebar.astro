@@ -1,0 +1,85 @@
+---
+import Icon from './AstroIcon.astro';
+
+const { activePageId, activePageTitle } = Astro.props;
+
+export interface Props {
+  activePageId: string;
+  activePageTitle: string;
+}
+---
+
+<div class='relative block mb-5 md:hidden p-4 border-b shadow-inner'>
+  <button
+    class='flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center font-medium text-gray-900'
+    id='settings-menu'
+  >
+    {activePageTitle}
+    <Icon icon='dropdown' />
+  </button>
+  <ul
+    id='settings-menu-dropdown'
+    class='absolute mt-1 hidden left-0 right-0 space-y-1.5 bg-white p-2 shadow-lg z-10'
+  >
+    <li>
+      <a
+        href='/account/update-profile'
+        class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${activePageId === 'profile' ? 'bg-slate-100' : ''}`
+        >Profile</a
+      >
+    </li>
+    <li>
+      <a
+        href='/account/update-password'
+        class=`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${activePageId === 'change-password' ? 'bg-slate-100' : ''}`
+        >Change password</a
+      >
+    </li>
+  </ul>
+</div>
+
+<div class='container flex min-h-screen items-stretch'>
+  <!-- Start Desktop Sidebar -->
+  <aside class='hidden w-56 border-r border-slate-200 py-10 pr-5 md:block'>
+    <nav>
+      <ul class='space-y-1'>
+        <li>
+          <a
+            href='/account/update-profile'
+            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${activePageId === 'profile' ? 'bg-slate-100' : ''}`
+          >
+            Profile
+          </a>
+        </li>
+        <li>
+          <a
+            href='/account/update-password'
+            class=`block w-full rounded px-2 py-1.5 font-regular text-slate-900 hover:bg-slate-100 ${activePageId === 'change-password' ? 'bg-slate-100' : ''}`
+          >
+            Security
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+  <!-- /End Desktop Sidebar -->
+
+  <div class='grow px-0 py-0 md:px-10 md:py-10'>
+    <slot />
+  </div>
+</div>
+
+<script>
+  const menuButton = document.getElementById('settings-menu');
+  const menuDropdown = document.getElementById('settings-menu-dropdown');
+
+  menuButton?.addEventListener('click', () => {
+    menuDropdown?.classList.toggle('hidden');
+  });
+
+  document.addEventListener('click', (e) => {
+    if (!menuButton?.contains(e.target as Node)) {
+      menuDropdown?.classList.add('hidden');
+    }
+  });
+</script>

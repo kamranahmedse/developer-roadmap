@@ -78,9 +78,11 @@ export default function UpdatePasswordForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
-      <p className="mt-2">Use the form below to update your password.</p>
-      <div className="mt-8 space-y-4">
+      <div class="hidden md:block mb-8">
+        <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
+        <p className="mt-2">Use the form below to update your password.</p>
+      </div>
+      <div className="space-y-4">
         {authProvider === 'email' && (
           <div className="flex w-full flex-col">
             <label
@@ -132,7 +134,7 @@ export default function UpdatePasswordForm() {
             for="new-password-confirmation"
             className="text-sm leading-none text-slate-500"
           >
-            New Password Confirm
+            Confirm New Password
           </label>
           <input
             type="password"
@@ -141,7 +143,7 @@ export default function UpdatePasswordForm() {
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
-            placeholder="New password confirm"
+            placeholder="Confirm New Password"
             value={newPasswordConfirmation}
             onInput={(e) =>
               setNewPasswordConfirmation((e.target as HTMLInputElement).value)

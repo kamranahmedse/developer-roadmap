@@ -1,12 +1,12 @@
 ---
 import Divider from '../components/AuthenticationFlow/Divider.astro';
+import EmailLoginForm from '../components/AuthenticationFlow/EmailLoginForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
-import EmailLoginForm from '../components/AuthenticationFlow/EmailLoginForm';
-import SettingLayout from '../layouts/SettingLayout.astro';
+import AccountLayout from '../layouts/AccountLayout.astro';
 ---
 
-<SettingLayout
+<AccountLayout
   title='Login - roadmap.sh'
   description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
   permalink={'/signup'}
@@ -38,4 +38,4 @@ import SettingLayout from '../layouts/SettingLayout.astro';
       </div>
     </div>
   </div>
-</SettingLayout>
+</AccountLayout>

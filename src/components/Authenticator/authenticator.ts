@@ -32,8 +32,8 @@ function showHideGuestElements(hideOrShow: 'hide' | 'show' = 'hide') {
 // Prepares the UI for the user who is logged in
 function handleGuest() {
   const authenticatedRoutes = [
-    '/settings/update-profile',
-    '/settings/update-password',
+    '/account/update-profile',
+    '/account/update-password',
   ];
 
   showHideAuthElements('hide');

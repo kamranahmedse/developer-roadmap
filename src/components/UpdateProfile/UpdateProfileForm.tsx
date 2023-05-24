@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageLoadingMessage } from '../../stores/page';
-import UploadProfilePicture from '../Profile/UploadProfilePicture';
+import UploadProfilePicture from './UploadProfilePicture';
 
 export function UpdateProfileForm() {
   const [name, setName] = useState('');
@@ -81,8 +81,10 @@ export function UpdateProfileForm() {
 
   return (
     <div>
-      <h2 className="text-3xl font-bold sm:text-4xl">Profile</h2>
-      <p className="mt-2">Update your profile details below.</p>
+      <div className="mb-8 hidden md:block">
+        <h2 className="text-3xl font-bold sm:text-4xl">Profile</h2>
+        <p className="mt-2">Update your profile details below.</p>
+      </div>
       <UploadProfilePicture
         avatarUrl={
           avatar
