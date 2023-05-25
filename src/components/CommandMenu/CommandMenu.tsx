@@ -21,7 +21,7 @@ type PageType = {
 const defaultPages: PageType[] = [
   { url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
   {
-    url: '/account/update-profile',
+    url: '/account',
     title: 'Account',
     group: 'Pages',
     icon: UserIcon,

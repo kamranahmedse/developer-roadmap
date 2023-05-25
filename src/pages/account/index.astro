@@ -1,41 +1,11 @@
 ---
 import AccountSidebar from '../../components/AccountSidebar.astro';
+import { ActivityPage } from '../../components/Activity/ActivityPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
 ---
 
-<AccountLayout title='Update Profile' noIndex={true}>
+<AccountLayout title='Update Profile' noIndex={true} initialLoadingMessage={'Loading activity'}>
   <AccountSidebar activePageId='activity' activePageTitle='Activity'>
-    <div class='mx-0 -mt-5 sm:-mx-10 md:-mt-10'>
-      <div class='flex gap-2 divide-x border-b'>
-        <div class='flex flex-1 flex-col px-4 pb-4 pt-5 text-center sm:pt-10'>
-          <h2 class='text-5xl font-bold'>30</h2>
-          <p class='mt-2 text-sm text-gray-400'>Topics Completed</p>
-        </div>
-        <div class='flex flex-1 flex-col px-4 pb-4 pt-5 text-center sm:pt-10'>
-          <h2 class='mb-1 text-5xl font-bold'>20</h2>
-          <p class='mt-2 text-sm text-gray-400'>Currently Learning</p>
-        </div>
-        <div class='flex flex-1 flex-col px-4 pb-4 pt-5 text-center sm:pt-10'>
-          <h2 class='mb-1 text-5xl font-bold'>2d</h2>
-          <p class='mt-2 text-sm text-gray-400'>Learning Streak</p>
-        </div>
-      </div>
-    </div>
-
-    <div class='-mx-10 border-b px-8 py-8'>
-      <h2 class='mb-3 text-xs uppercase text-gray-400'>Continue Learning</h2>
-      <div class='flex flex-col gap-2'>
-        <a
-          href='#'
-          class='relative flex items-center rounded-md border p-3 text-gray-600 group hover:border-gray-300 hover:text-black'
-        >
-          <span
-            class='absolute left-0 top-0 block h-full w-[50%] rounded-l-md bg-black/5 group-hover:bg-black/10'
-          ></span>
-          <span class='relative flex-1'>Frontend Roadmap</span>
-          <span class='text-sm text-gray-400'>5 / 142</span>
-        </a>
-      </div>
-    </div>
+    <ActivityPage client:load />
   </AccountSidebar>
 </AccountLayout>
