@@ -41,7 +41,7 @@ const sidebarLinks = [
 
 <div class='relative mb-5 block border-b p-4 shadow-inner md:hidden'>
   <button
-    class='flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center font-medium text-gray-900'
+    class='flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center text-gray-900 text-sm font-medium'
     id='settings-menu'
   >
     {activePageTitle}
@@ -56,11 +56,12 @@ const sidebarLinks = [
         <li>
           <a
             href={sidebarLink.href}
-            class={`block w-full rounded px-2 py-1.5 font-medium text-slate-900 hover:bg-slate-200 ${
+            class={`flex items-center w-full rounded px-3 py-1.5 text-slate-900 hover:bg-slate-200 text-sm ${
               activePageId === sidebarLink.id ? 'bg-slate-100' : ''
             }`}
           >
-            {sidebarLink.title}
+              <AstroIcon icon={sidebarLink.icon.glyph} class={`${sidebarLink.icon.classes} mr-2`} />
+              {sidebarLink.title}
           </a>
         </li>
       ))
@@ -82,7 +83,7 @@ const sidebarLinks = [
                   activePageId === sidebarLink.id ? 'text-black border-r-black bg-gray-100' : 'text-gray-500 hover:border-r-gray-300'
                 }`}
               >
-              <AstroIcon icon={sidebarLink.icon.glyph} class={`${sidebarLink.icon.classes} mr-0`} />
+                <AstroIcon icon={sidebarLink.icon.glyph} class={`${sidebarLink.icon.classes} mr-0`} />
                 {sidebarLink.title}
               </a>
             </li>
