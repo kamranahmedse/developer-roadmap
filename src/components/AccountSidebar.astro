@@ -9,21 +9,33 @@ export interface Props {
 }
 
 const sidebarLinks = [
-  {
-    href: '/account',
-    title: 'Activity',
-    id: 'activity',
-  },
-  {
-    href: '/account/update-profile',
-    title: 'Profile',
-    id: 'profile',
-  },
-  {
-    href: '/account/update-password',
-    title: 'Security',
-    id: 'change-password',
-  },
+    {
+        href: '/account',
+        title: 'Activity',
+        id: 'activity',
+        icon: {
+            glyph: 'analytics',
+            classes: 'h-3 w-4',
+        }
+    },
+    {
+        href: '/account/update-profile',
+        title: 'Profile',
+        id: 'profile',
+        icon: {
+            glyph: 'user',
+            classes: 'h-4 w-4',
+        }
+    },
+    { 
+        href: '/account/update-password',
+        title: 'Security',
+        id: 'change-password',
+        icon: {
+            glyph: 'security',
+            classes: 'h-4 w-4'
+        }
+    },
 ];
 ---
 
@@ -58,7 +70,7 @@ const sidebarLinks = [
 
 <div class='container flex min-h-screen items-stretch'>
   <!-- Start Desktop Sidebar -->
-  <aside class='hidden shrink-0 w-48 border-r border-slate-200 py-10 pr-5 md:block'>
+  <aside class='hidden shrink-0 w-44 border-r border-slate-200 py-10 md:block'>
     <nav>
       <ul class='space-y-1'>
         {
@@ -66,10 +78,11 @@ const sidebarLinks = [
             <li>
               <a
                 href={sidebarLink.href}
-                class={`font-regular flex w-full items-center gap-2 rounded px-2 py-1.5 text-slate-900 hover:underline ${
-                  activePageId === sidebarLink.id ? 'bg-slate-100 hover:no-underline' : ''
+                class={`font-regular flex w-full items-center gap-2 px-2 py-1.5 text-sm border-r-2 border-r-transparent ${
+                  activePageId === sidebarLink.id ? 'text-black border-r-black bg-gray-100' : 'text-gray-500 hover:border-r-gray-300'
                 }`}
               >
+              <AstroIcon icon={sidebarLink.icon.glyph} class={`${sidebarLink.icon.classes} mr-0`} />
                 {sidebarLink.title}
               </a>
             </li>
