@@ -101,7 +101,7 @@ export function ActivityPage() {
               Continue Following
             </h2>
             <div class="flex flex-col gap-3">
-              {learningRoadmaps.map((roadmap) => (
+              {learningRoadmaps.reverse().map((roadmap) => (
                 <ResourceProgress
                   doneCount={roadmap.done || 0}
                   learningCount={roadmap.learning || 0}
@@ -120,7 +120,7 @@ export function ActivityPage() {
                 />
               ))}
 
-              {learningBestPractices.map((bestPractice) => (
+              {learningBestPractices.reverse().map((bestPractice) => (
                 <ResourceProgress
                   doneCount={bestPractice.done || 0}
                   totalCount={bestPractice.total || 0}
