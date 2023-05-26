@@ -20,6 +20,7 @@ type ActivityResponse = {
       done: number;
       total: number;
       skipped: number;
+      updatedAt: string;
     }[];
     bestPractices: {
       title: string;
@@ -28,10 +29,13 @@ type ActivityResponse = {
       done: number;
       skipped: number;
       total: number;
+      updatedAt: string;
     }[];
   };
   streak: {
     count: number;
+    firstVisitAt: Date | null;
+    lastVisitAt: Date | null;
   };
   activity: {
     type: 'done' | 'learning' | 'pending' | 'skipped';
@@ -52,7 +56,7 @@ export function ActivityPage() {
 
   async function loadActivity() {
     const { error, response } = await httpGet<ActivityResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-activity`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-stats`
     );
 
     if (!response || error) {
@@ -105,6 +109,7 @@ export function ActivityPage() {
                   skippedCount={roadmap.skipped || 0}
                   resourceId={roadmap.id}
                   resourceType={'roadmap'}
+                  updatedAt={roadmap.updatedAt}
                   title={roadmap.title}
                   onCleared={() => {
                     pageLoadingMessage.set('Updating activity');
@@ -124,6 +129,7 @@ export function ActivityPage() {
                   skippedCount={bestPractice.skipped || 0}
                   resourceType={'best-practice'}
                   title={bestPractice.title}
+                  updatedAt={bestPractice.updatedAt}
                   onCleared={() => {
                     pageLoadingMessage.set('Updating activity');
                     loadActivity().finally(() => {

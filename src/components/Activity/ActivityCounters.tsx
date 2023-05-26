@@ -47,7 +47,7 @@ export function ActivityCounters(props: ActivityCountersType) {
         />
 
         <ActivityCounter
-          text={'Learning Streak'}
+          text={'Visit Streak'}
           count={`${streak?.count || 0}d`}
         />
       </div>

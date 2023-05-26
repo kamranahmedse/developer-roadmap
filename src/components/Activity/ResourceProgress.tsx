@@ -1,10 +1,12 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
+import { getRelativeTimeString } from '../../lib/date';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
   resourceId: string;
   title: string;
+  updatedAt: string;
   totalCount: number;
   doneCount: number;
   learningCount: number;
@@ -17,6 +19,7 @@ export function ResourceProgress(props: ResourceProgressType) {
   const [isConfirming, setIsConfirming] = useState(false);
 
   const {
+    updatedAt,
     resourceType,
     resourceId,
     title,
@@ -71,16 +74,30 @@ export function ResourceProgress(props: ResourceProgressType) {
             width: `${progressPercentage}%`,
           }}
         ></span>
-        <span className="relative  flex-1 cursor-pointer">{title}</span>
-        <span className="cursor-pointer text-sm  text-gray-400">
-          5 hours ago
+        <span className="relative  flex-1 cursor-pointer truncate">
+          {title}
+        </span>
+        <span className="ml-1 cursor-pointer text-sm text-gray-400">
+          {getRelativeTimeString(updatedAt)}
         </span>
       </a>
-      <p className="items-start sm:space-between flex flex-row rounded-b-md border border-t-0 px-2 py-2 text-xs text-gray-500">
-        <span className="flex-1 gap-1 flex">
-          <span>{doneCount} done</span> &bull;
-          { learningCount > 0 && <><span>{learningCount} in progress</span> &bull;</> }
-          { skippedCount > 0 && <><span>{skippedCount} skipped</span> &bull;</> }
+      <p className="sm:space-between flex flex-row items-start rounded-b-md border border-t-0 px-2 py-2 text-xs text-gray-500">
+        <span className="hidden flex-1 gap-1 sm:flex">
+          {doneCount > 0 && (
+            <>
+              <span>{doneCount} done</span> &bull;
+            </>
+          )}
+          {learningCount > 0 && (
+            <>
+              <span>{learningCount} in progress</span> &bull;
+            </>
+          )}
+          {skippedCount > 0 && (
+            <>
+              <span>{skippedCount} skipped</span> &bull;
+            </>
+          )}
           <span>{totalCount} total</span>
         </span>
         {!isConfirming && (
@@ -101,10 +118,19 @@ export function ResourceProgress(props: ResourceProgressType) {
 
         {isConfirming && (
           <span>
-            <span className='hidden sm:inline'>Are you sure?{' '}</span>
-            <span className='inline sm:hidden'>Sure?{' '}</span>
-            <button onClick={clearProgress} className="ml-1 mr-1 underline text-red-500 hover:text-red-800">Yes</button>{' '}
-            <button onClick={() => setIsConfirming(false)} className="underline text-red-500 hover:text-red-800">No</button>
+            Are you sure?{' '}
+            <button
+              onClick={clearProgress}
+              className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
+            >
+              Yes
+            </button>{' '}
+            <button
+              onClick={() => setIsConfirming(false)}
+              className="text-red-500 underline hover:text-red-800"
+            >
+              No
+            </button>
           </span>
         )}
       </p>

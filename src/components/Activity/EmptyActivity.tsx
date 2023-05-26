@@ -7,10 +7,10 @@ export function EmptyActivity() {
         <img
           alt="no roadmaps"
           src={CheckIcon}
-          class="mb-2 h-[120px] w-[120px] opacity-10"
+          class="mb-2 w-[60px] h-[60px] sm:h-[120px] sm:w-[120px] opacity-10"
         />
-        <h2 class="text-xl font-bold">No Progress</h2>
-        <p className="my-2 max-w-[400px] text-gray-500">
+        <h2 class="text-lg sm:text-xl font-bold">No Progress</h2>
+        <p className="my-1 sm:my-2 max-w-[400px] text-gray-500 text-sm sm:text-base">
           Progress will appear here as you start tracking your{' '}
           <a href="/roadmaps" class="mt-4 text-blue-500 hover:underline">
             Roadmaps
