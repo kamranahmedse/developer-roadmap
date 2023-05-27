@@ -27,7 +27,7 @@ const sidebarLinks = [
             classes: 'h-4 w-4',
         }
     },
-    { 
+    {
         href: '/account/update-password',
         title: 'Security',
         id: 'change-password',
@@ -79,8 +79,8 @@ const sidebarLinks = [
             <li>
               <a
                 href={sidebarLink.href}
-                class={`font-regular flex w-full items-center gap-2 px-2 py-1.5 text-sm border-r-2 border-r-transparent ${
-                  activePageId === sidebarLink.id ? 'text-black border-r-black bg-gray-100' : 'text-gray-500 hover:border-r-gray-300'
+                class={`font-regular flex w-full items-center gap-2 px-2 py-1.5 text-sm border-r-2 ${
+                  activePageId === sidebarLink.id ? 'text-black border-r-black bg-gray-100' : 'text-gray-500 border-r-transparent hover:border-r-gray-300'
                 }`}
               >
                 <AstroIcon icon={sidebarLink.icon.glyph} class={`${sidebarLink.icon.classes} mr-0`} />
