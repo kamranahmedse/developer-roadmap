@@ -61,7 +61,7 @@ An example of strong consistency is a financial system where users can transfer 
 
 In a weakly consistent system, updates to the data may not be immediately propagated. This can lead to inconsistencies and conflicts between different versions of the data, but it also allows for **high availability and low latency**.
 
-Another example of weak consistency is a gaming platform where users can play online multiplayer games. When a user plays a game, their actions are immediately visible to other players in the same data center, but if there was a lag or temporary connectoin loss, the actions may not be seen by some of the users and the game will continue. This can lead to inconsistencies between different versions of the game state, but it also allows for a high level of availability and low latency.
+Another example of weak consistency is a gaming platform where users can play online multiplayer games. When a user plays a game, their actions are immediately visible to other players in the same data center, but if there was a lag or temporary connection loss, the actions may not be seen by some of the users and the game will continue. This can lead to inconsistencies between different versions of the game state, but it also allows for a high level of availability and low latency.
 
 ### Eventual Consistency
 

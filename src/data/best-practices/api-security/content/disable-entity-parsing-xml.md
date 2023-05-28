@@ -1,4 +1,4 @@
-# Disable Entinty Parsing in XML
+# Disable Entity Parsing in XML
 
 > Disable entity parsing if you are parsing XML to avoid XXE attacks
 
