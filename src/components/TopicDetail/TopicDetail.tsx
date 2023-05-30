@@ -14,7 +14,7 @@ import {
   ResourceType,
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
-import { pageLoadingMessage, sponsorHidden } from '../../stores/page';
+import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 
 export function TopicDetail() {
@@ -64,7 +64,7 @@ export function TopicDetail() {
       return;
     }
 
-    pageLoadingMessage.set('Updating');
+    pageProgressMessage.set('Updating');
 
     // Toggle the topic status
     isTopicDone({ topicId, resourceId, resourceType })
@@ -89,7 +89,7 @@ export function TopicDetail() {
         console.error(err);
       })
       .finally(() => {
-        pageLoadingMessage.set('');
+        pageProgressMessage.set('');
       });
   });
 

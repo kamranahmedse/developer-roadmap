@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
-import { pageLoadingMessage } from '../../stores/page';
+import { pageProgressMessage } from '../../stores/page';
 import UploadProfilePicture from './UploadProfilePicture';
 
 export function UpdateProfileForm() {
@@ -75,7 +75,7 @@ export function UpdateProfileForm() {
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
     loadProfile().finally(() => {
-      pageLoadingMessage.set('');
+      pageProgressMessage.set('');
     });
   }, []);
 

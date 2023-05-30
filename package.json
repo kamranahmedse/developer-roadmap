@@ -30,7 +30,7 @@
     "astro-compress": "^1.1.46",
     "jose": "^4.14.4",
     "js-cookie": "^3.0.5",
-    "nanostores": "^0.8.1",
+    "nanostores": "^0.9.1",
     "node-html-parser": "^6.1.5",
     "npm-check-updates": "^16.10.12",
     "preact": "^10.15.1",

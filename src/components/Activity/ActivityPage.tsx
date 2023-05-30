@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { httpGet } from '../../lib/http';
 import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
-import { pageLoadingMessage } from '../../stores/page';
+import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
 
 type ActivityResponse = {
@@ -71,7 +71,7 @@ export function ActivityPage() {
 
   useEffect(() => {
     loadActivity().finally(() => {
-      pageLoadingMessage.set('');
+      pageProgressMessage.set('');
       setIsLoading(false);
     });
   }, []);
@@ -119,9 +119,9 @@ export function ActivityPage() {
                     updatedAt={roadmap.updatedAt}
                     title={roadmap.title}
                     onCleared={() => {
-                      pageLoadingMessage.set('Updating activity');
+                      pageProgressMessage.set('Updating activity');
                       loadActivity().finally(() => {
-                        pageLoadingMessage.set('');
+                        pageProgressMessage.set('');
                       });
                     }}
                   />
@@ -145,9 +145,9 @@ export function ActivityPage() {
                     title={bestPractice.title}
                     updatedAt={bestPractice.updatedAt}
                     onCleared={() => {
-                      pageLoadingMessage.set('Updating activity');
+                      pageProgressMessage.set('Updating activity');
                       loadActivity().finally(() => {
-                        pageLoadingMessage.set('');
+                        pageProgressMessage.set('');
                       });
                     }}
                   />

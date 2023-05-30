@@ -1,4 +1,4 @@
 import { atom } from 'nanostores';
 
-export const pageLoadingMessage = atom('');
+export const pageProgressMessage = atom('');
 export const sponsorHidden = atom(false);
