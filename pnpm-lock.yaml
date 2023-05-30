@@ -17,7 +17,7 @@ specifiers:
   js-cookie: ^3.0.5
   js-yaml: ^4.1.0
   markdown-it: ^13.0.1
-  nanostores: ^0.9.1
+  nanostores: ^0.8.1
   node-html-parser: ^6.1.5
   npm-check-updates: ^16.10.12
   openai: ^3.2.1
@@ -34,12 +34,12 @@ dependencies:
   '@astrojs/sitemap': 1.3.1
   '@astrojs/tailwind': 3.1.3_w4mihal45edfrnncnioktvfyqy
   '@fingerprintjs/fingerprintjs': 3.4.1
-  '@nanostores/preact': 0.5.0_m2wbkjxz7237icvaxqi7ignbgm
+  '@nanostores/preact': 0.5.0_jsxc2udxlr5p4sp4ibwq7kjqyu
   astro: 2.5.5
   astro-compress: 1.1.46
   jose: 4.14.4
   js-cookie: 3.0.5
-  nanostores: 0.9.1
+  nanostores: 0.8.1
   node-html-parser: 6.1.5
   npm-check-updates: 16.10.12
   preact: 10.15.1
@@ -689,14 +689,14 @@ packages:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
     dev: false
 
-  /@nanostores/preact/0.5.0_m2wbkjxz7237icvaxqi7ignbgm:
+  /@nanostores/preact/0.5.0_jsxc2udxlr5p4sp4ibwq7kjqyu:
     resolution: {integrity: sha512-Zq5DEAY+kIfwJ1NPd43D1mpsbISuiD6N/SuTHrt/8jUoifLwXaReaZMAnvkvbIGOgcB1Hy++A9jZix2taNNYxQ==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     peerDependencies:
       nanostores: ^0.9.0
       preact: '>=10.0.0'
     dependencies:
-      nanostores: 0.9.1
+      nanostores: 0.8.1
       preact: 10.15.1
     dev: false
 
@@ -3782,9 +3782,9 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /nanostores/0.9.1:
-    resolution: {integrity: sha512-DmAL3oTieICqnl2XVq5wegFE7EXIoPnIv1CNWNGEhXpwrHk7Prctch4/nX5x95i95WHdesI5sPeoNAUFpFsGtg==}
-    engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
+  /nanostores/0.8.1:
+    resolution: {integrity: sha512-1ZCfQtII2XeFDrtqXL2cdQ/diGrLxzRB3YMyQjn8m7GSGQrJfGST2iuqMpWnS/ZlifhtjgR/SX0Jy6Uij6lRLA==}
+    engines: {node: ^16.0.0 || >=18.0.0}
     dev: false
 
   /napi-build-utils/1.0.2:
