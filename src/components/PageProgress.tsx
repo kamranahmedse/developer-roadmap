@@ -14,6 +14,10 @@ export function PageProgress(props: Props) {
   const $pageProgressMessage = useStore(pageProgressMessage);
 
   useEffect(() => {
+    if ($pageProgressMessage === undefined) {
+      return;
+    }
+
     setMessage($pageProgressMessage);
   }, [$pageProgressMessage]);
 
