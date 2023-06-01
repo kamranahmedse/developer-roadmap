@@ -6,7 +6,7 @@ C++ is a general-purpose, high-performance programming language. It was develope
 
 Here are some basic components and concepts in C++ programming:
 
-### Including Libraries
+## Including Libraries
 
 In C++, we use the `#include` directive to include libraries or header files into our program. For example, to include the standard input/output library, we write:
 
@@ -14,7 +14,7 @@ In C++, we use the `#include` directive to include libraries or header files int
 #include <iostream>
 ```
 
-### Main Function
+## Main Function
 
 The entry point of a C++ program is the `main` function. Every C++ program must have a `main` function:
 
@@ -25,7 +25,7 @@ int main() {
 }
 ```
 
-### Input/Output
+## Input/Output
 
 To perform input and output operations in C++, we can use the built-in objects `std::cin` for input and `std::cout` for output, available in the `iostream` library. Here's an example of reading an integer and printing its value:
 
@@ -41,7 +41,7 @@ int main() {
 }
 ```
 
-### Variables and Data Types
+## Variables and Data Types
 
 C++ has several basic data types for representing integer, floating-point, and character values:
 
@@ -59,11 +59,11 @@ double z;
 char c;
 ```
 
-### Control Structures
+## Control Structures
 
 C++ provides control structures for conditional execution and iteration, such as `if`, `else`, `while`, `for`, and `switch` statements.
 
-#### If-Else Statement
+### If-Else Statement
 ```cpp
 if (condition) {
     // Code to execute if the condition is true
@@ -72,21 +72,21 @@ if (condition) {
 }
 ```
 
-#### While Loop
+### While Loop
 ```cpp
 while (condition) {
     // Code to execute while the condition is true
 }
 ```
 
-#### For Loop
+### For Loop
 ```cpp
 for (initialization; condition; update) {
     // Code to execute while the condition is true
 }
 ```
 
-#### Switch Statement
+### Switch Statement
 ```cpp
 switch (variable) {
     case value1:
@@ -101,7 +101,7 @@ switch (variable) {
 }
 ```
 
-### Functions
+## Functions
 
 Functions are reusable blocks of code that can be called with arguments to perform a specific task. Functions are defined with a return type, a name, a parameter list, and a body.
 

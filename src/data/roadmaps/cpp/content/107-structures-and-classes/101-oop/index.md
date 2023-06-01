@@ -2,7 +2,7 @@
 
 Object-oriented programming (OOP) is a programming paradigm that uses objects, which are instances of classes, to perform operations and interact with each other. In C++, you can achieve OOP through the use of classes and objects.
 
-### Classes
+## Classes
 
 A class is a blueprint for creating objects. It defines the structure (data members) and behavior (member functions) for a type of object. Here's an example of a simple class:
 
@@ -27,7 +27,7 @@ myDog.age = 3;
 myDog.bark(); // Output: Fido barks!
 ```
 
-### Encapsulation
+## Encapsulation
 
 Encapsulation is the concept of bundling data and functions that operate on that data within a single unit, such as a class. It helps to hide the internal implementation details of a class and expose only the necessary information and functionalities. In C++, you can use access specifiers like `public`, `private`, and `protected` to control the visibility and accessibility of class members. For example:
 
@@ -54,7 +54,7 @@ public:
 
 In this example, we've made the `name` and `age` data members `private` and added public member functions `setName` and `setAge` to modify them. This way, the internal data of the `Dog` class is protected and only accessible through the provided functions.
 
-### Inheritance
+## Inheritance
 
 Inheritance is the concept of deriving new classes from existing ones, which enables code reusability and organization. In C++, inheritance is achieved by using a colon `:` followed by the base class' access specifier and the base class name. For example:
 
@@ -82,7 +82,7 @@ myDog.breathe(); // Output: I can breathe
 myDog.bark(); // Output: Dog barks!
 ```
 
-### Polymorphism
+## Polymorphism
 
 Polymorphism allows you to use a single interface to represent different types. In C++, it's mainly achieved using function overloading, virtual functions, and overriding. For example:
 

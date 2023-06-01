@@ -4,7 +4,7 @@ Pybind11 is a lightweight header-only library that seamlessly integrates C++ cod
 
 Pybind11 helps in creating library extensions, bringing high-performance C++ code into Python programs, and using Python's flexibility for rapid development while still benefiting from the efficiency of C++.
 
-#### Code Examples
+### Code Examples
 
 Here are a few examples of Pybind11 for understanding the concept better:
 

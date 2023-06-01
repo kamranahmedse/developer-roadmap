@@ -4,7 +4,7 @@ Multithreading is the concurrent execution of multiple threads within a single p
 
 In C++, multithreading support is available through the `thread` library introduced in the C++11 standard.
 
-### Basic Thread Creation
+## Basic Thread Creation
 
 To create a new thread, include the `<thread>` header file and create an instance of `std::thread` that takes a function as an argument. The function will be executed in a new thread.
 
@@ -23,7 +23,7 @@ int main() {
 }
 ```
 
-### Thread with Arguments
+## Thread with Arguments
 
 You can pass arguments to the thread function by providing them as additional arguments to the `std::thread` constructor.
 
@@ -42,7 +42,7 @@ int main() {
 }
 ```
 
-### Mutex and Locks
+## Mutex and Locks
 
 When multiple threads access shared resources, there is a possibility of a data race. To avoid this, use mutex and locks to synchronize shared resource access.
 

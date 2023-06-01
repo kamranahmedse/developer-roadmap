@@ -6,7 +6,7 @@ The C++ Standard Template Library (STL) is a collection of header files that pro
 
 Containers are the data structures used for data storage and manipulation in C++. They are classified into four types: sequence containers, associative containers, unordered associative containers, and container adaptors.
 
-1. **Sequence Containers**: These are linear data structures that store elements in a sequential manner. Examples include:
+- **Sequence Containers**: These are linear data structures that store elements in a sequential manner. Examples include:
   - `std::vector`: A dynamic array that grows and shrinks at runtime.
     ```cpp
     std::vector<int> my_vector;
@@ -20,7 +20,7 @@ Containers are the data structures used for data storage and manipulation in C++
     std::deque<int> my_deque;
     ```
 
-2. **Associative Containers**: These containers store data in a sorted manner with unique keys. Examples include:
+- **Associative Containers**: These containers store data in a sorted manner with unique keys. Examples include:
   - `std::set`: A collection of unique elements sorted by keys.
     ```cpp
     std::set<int> my_set;
@@ -30,7 +30,7 @@ Containers are the data structures used for data storage and manipulation in C++
     std::map<std::string, int> my_map;
     ```
 
-3. **Unordered Associative Containers**: These containers store data in an unordered manner using hash tables. Examples include:
+- **Unordered Associative Containers**: These containers store data in an unordered manner using hash tables. Examples include:
   - `std::unordered_set`: A collection of unique elements in no specific order.
     ```cpp
     std::unordered_set<int> my_unordered_set;
@@ -40,7 +40,7 @@ Containers are the data structures used for data storage and manipulation in C++
     std::unordered_map<std::string, int> my_unordered_map;
     ```
 
-4. **Container Adaptors**: These are containers based on other existing containers. Examples include:
+- **Container Adaptors**: These are containers based on other existing containers. Examples include:
   - `std::stack`: A LIFO data structure based on deque or list.
     ```cpp
     std::stack<int> my_stack;

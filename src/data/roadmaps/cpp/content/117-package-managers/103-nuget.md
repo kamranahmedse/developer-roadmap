@@ -2,18 +2,18 @@
 
 [NuGet](https://www.nuget.org/) is a Microsoft-supported package manager for the .NET framework, mainly used in C# and other .NET languages, but also supports C++ projects with `PackageReference`. It allows you to easily add, update, and manage dependencies in your projects.
 
-#### Installation
+### Installation
 
 You can use NuGet either as a command-line tool or integrated in your preferred IDE like Visual Studio or Visual Studio Code. If you're using Visual Studio, it comes pre-installed. For other editors, you may need to download the command-line tool `nuget.exe`.
 
-#### Usage
+### Usage
 
 You can use NuGet to manage your C++ dependencies using the PackageReference format in vcxproj files:
 
-1. Tools > NuGet Package Manager > Manage NuGet Packages for Solution…
-2. Package source should be set to "nuget.org"
-3. Select the Projects tab
-4. Use the search box to find packages
+- Tools > NuGet Package Manager > Manage NuGet Packages for Solution…
+- Package source should be set to "nuget.org"
+- Select the Projects tab
+- Use the search box to find packages
 
 For example, to install a package called "PackageName" for all configurations:
 
@@ -26,7 +26,7 @@ For example, to install a package called "PackageName" for all configurations:
 </Project>
 ```
 
-#### NuGet Command-Line
+### NuGet Command-Line
 
 You can also use the command-line tool `nuget.exe` for more advanced scenarios or for specific needs.
 

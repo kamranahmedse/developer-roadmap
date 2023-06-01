@@ -4,9 +4,9 @@ C++ standards are a set of rules and guidelines that define the language's featu
 
 Here's a brief summary of the different C++ standards released to date:
 
-1. **C++98/C++03**: The first standardized version of C++, which introduced many features like templates, exceptions, and the Standard Template Library (STL). C++03 is a minor update to C++98 with some bug fixes and performance improvements.
+- **C++98/C++03**: The first standardized version of C++, which introduced many features like templates, exceptions, and the Standard Template Library (STL). C++03 is a minor update to C++98 with some bug fixes and performance improvements.
 
-2. **C++11**: A major upgrade to the language, which introduced features such as:
+- **C++11**: A major upgrade to the language, which introduced features such as:
    - Lambda expressions:
    ```cpp
    auto sum = [](int a, int b) -> int { return a + b; };
@@ -20,7 +20,7 @@ Here's a brief summary of the different C++ standards released to date:
    ```
    - Smart pointers like `std::shared_ptr` and `std::unique_ptr`.
  
-3. **C++14**: A minor update to C++11, which added features such as:
+- **C++14**: A minor update to C++11, which added features such as:
    - Generic lambda expressions:
    ```cpp
    auto generic_sum = [](auto a, auto b) { return a + b; };
@@ -30,7 +30,7 @@ Here's a brief summary of the different C++ standards released to date:
    int binary_number = 0b1010;
    ```
 
-4. **C++17**: Another major update that introduced features such as:
+- **C++17**: Another major update that introduced features such as:
    - `if` and `switch` with initializers:
    ```cpp
    if (auto it = my_map.find(key); it != my_map.end()) {
@@ -45,7 +45,7 @@ Here's a brief summary of the different C++ standards released to date:
    }
    ```
   
-5. **C++20**: The latest major update to the language, with features such as:
+- **C++20**: The latest major update to the language, with features such as:
    - Concepts:
    ```cpp
    template<typename T>

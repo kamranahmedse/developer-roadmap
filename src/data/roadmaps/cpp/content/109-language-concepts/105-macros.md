@@ -4,7 +4,7 @@ Macros are preprocessing directives in C++ used by the preprocessor to perform t
 
 Macros can be used to define constants, create function-like macros, or perform conditional compilation.
 
-### Constant Macros
+## Constant Macros
 
 Constant macros are used to define symbolic constants for use in code. They do not use any memory and are replaced by the preprocessor before the compilation process.
 
@@ -20,7 +20,7 @@ This macro defines a symbolic constant `PI`. You can use it in your code as if i
 double circumference = 2 * PI * radius;
 ```
 
-### Function-like Macros
+## Function-like Macros
 
 Function-like macros are similar to regular functions. They take a list of arguments and perform text substitution.
 
@@ -36,7 +36,7 @@ This macro defines a function-like macro `SQUARE` that calculates the square of 
 int square_of_five = SQUARE(5); // expands to ((5) * (5))
 ```
 
-### Conditional Compilation
+## Conditional Compilation
 
 Macros can be used for conditional compilation using the `#ifdef`, `#ifndef`, `#if`, `#else`, `#elif`, and `#endif` directives.
 

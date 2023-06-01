@@ -4,11 +4,11 @@ Package managers are tools that automate the process of installing, upgrading, a
 
 Some popular package managers used in the C++ ecosystem include:
 
-1. **Conan**
-2. **vcpkg**
-3. **C++ Archive Network (cppan)**
+- **Conan**
+- **vcpkg**
+- **C++ Archive Network (cppan)**
 
-### Conan
+## Conan
 
 [Conan](https://conan.io/) is an open-source, decentralized, cross-platform package manager for C and C++ developers. It simplifies managing dependencies and reusing code, which benefits multi-platform development projects.
 
@@ -18,7 +18,7 @@ For example, installing a library using Conan:
 conan install poco/1.9.4@
 ```
 
-### vcpkg
+## vcpkg
 
 [vcpkg](https://github.com/microsoft/vcpkg) is a cross-platform package manager created by Microsoft. It is an open-source library management system for C++ developers to build and manage their projects.
 
@@ -28,7 +28,7 @@ For example, installing a package using vcpkg:
 ./vcpkg install boost:x64-windows
 ```
 
-### C++ Archive Network (cppan)
+##C++ Archive Network (cppan)
 
 [cppan](https://cppan.org/) is a package manager and software repository for C++ developers, simplifying the process of managing and distributing C++ libraries and tools. It's now part of [build2](https://build2.org/), a build toolchain that provides a package manager.
 

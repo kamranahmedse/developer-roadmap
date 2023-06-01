@@ -26,10 +26,10 @@ After downloading and installing an IDE, you might need to configure it to use t
 
 Once you have your IDE and compiler set up, you can create a new C++ project and start writing code. In general, follow these steps to create a new C++ project:
 
-1. Open the IDE and create a new project.
-2. Select the project type (C++ Application or Console Application).
-3. Specify the project name and location.
-4. Let the IDE generate the main.cpp and build files (such as Makefile or CMakeLists.txt) for you.
+- Open the IDE and create a new project.
+- Select the project type (C++ Application or Console Application).
+- Specify the project name and location.
+- Let the IDE generate the main.cpp and build files (such as Makefile or CMakeLists.txt) for you.
 
 ## Example: Hello World in C++
 
@@ -50,8 +50,8 @@ Then, follow the IDE's instructions to build and run your program. You should se
 
 Setting up C++ involves:
 
-1. Installing a compiler (e.g. GCC, MinGW, or MSVC)
-2. Configuring an IDE (e.g. Visual Studio, Eclipse, or Code::Blocks)
-3. Creating a new C++ project and writing code
+- Installing a compiler (e.g. GCC, MinGW, or MSVC)
+- Configuring an IDE (e.g. Visual Studio, Eclipse, or Code::Blocks)
+- Creating a new C++ project and writing code
 
 By following these steps, you'll be ready to start developing C++ applications!

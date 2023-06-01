@@ -2,14 +2,14 @@
 
 `spdlog` is a fast, header-only, C++ logging library. It provides a simple and efficient way to add diagnostic logging to your C++ application.
 
-### Features:
+## Features:
 - Header-only, no need to build or link a library
 - Highly configurable, including support for custom log sinks (e.g. writing to a file or a database)
 - Asynchronous and synchronous logging modes
 - Preprocessor-based format string checks to catch bugs at compile-time
 - Easy to extend with custom formatters, sinks, and levels
 
-### Usage example:
+## Usage example:
 
 Include the `spdlog` header, create a logger object, and use it to log messages:
 
@@ -29,7 +29,7 @@ int main() {
 }
 ```
 
-### Custom sink example:
+## Custom sink example:
 
 Here's an example of creating a logger with a custom sink that writes to a text file:
 

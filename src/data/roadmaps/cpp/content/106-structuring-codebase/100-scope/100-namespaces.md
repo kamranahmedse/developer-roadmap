@@ -2,7 +2,7 @@
 
 In C++, a namespace is a named scope or container that is used to organize and enclose a collection of code elements, such as variables, functions, classes, and other namespaces. They are mainly used to divide and manage the code base, giving developers control over name collisions and the specialization of code.
 
-### Syntax
+## Syntax
 
 Here's the syntax for declaring a namespace:
 
@@ -12,11 +12,11 @@ namespace identifier {
 }
 ```
 
-### Using Namespaces
+## Using Namespaces
 
 To access elements within a namespace, you can use the scope resolution operator `::`. Here are some examples:
 
-#### Declaring and accessing a namespace
+### Declaring and accessing a namespace
 
 ```cpp
 #include <iostream>
@@ -34,7 +34,7 @@ int main() {
 }
 ```
 
-#### Nesting namespaces
+### Nesting namespaces
 
 Namespaces can be nested within other namespaces:
 
@@ -57,11 +57,11 @@ int main() {
 }
 ```
 
-### `using` Keyword
+##`using` Keyword
 
 You can use the `using` keyword to import namespaced elements into the current scope. However, this might lead to name conflicts if multiple namespaces have elements with the same name.
 
-#### Using a single element from a namespace
+### Using a single element from a namespace
 
 ```cpp
 #include <iostream>
@@ -80,7 +80,7 @@ int main() {
 }
 ```
 
-#### Using the entire namespace
+### Using the entire namespace
 
 ```cpp
 #include <iostream>

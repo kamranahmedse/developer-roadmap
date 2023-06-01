@@ -2,7 +2,7 @@
 
 C++ is a powerful, high-level, object-oriented programming language that offers several key language concepts. These concepts provide the foundation upon which you can build efficient, reliable, and maintainable programs. Here's a brief summary of some important language concepts in C++.
 
-### 1. Variables and Data Types
+## Variables and Data Types
 C++ provides various fundamental data types such as `int`, `float`, `double`, `char`, and `bool` to declare and manipulate variables in a program.
 
 Example:
@@ -14,7 +14,7 @@ char grade = 'A';
 bool isEmployed = true;
 ```
 
-### 2. Control Structures
+## Control Structures
 Control structures enable you to control the flow of execution of a program. Key control structures in C++ include:
 
 - Conditional statement: `if`, `else`, and `else if`
@@ -36,7 +36,7 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
-### 3. Functions
+## Functions
 Functions in C++ allow you to break down a large program into small, manageable, and reusable pieces of code.
 
 Example:
@@ -52,7 +52,7 @@ int main() {
 }
 ```
 
-### 4. Arrays and Vectors
+## Arrays and Vectors
 Arrays and Vectors are commonly used data structures to store and manipulate a collection of elements of the same datatype.
 
 Example:
@@ -64,7 +64,7 @@ int marks[] = {90, 80, 95, 85};
 vector<int> scores = {10, 20, 30, 40};
 ```
 
-### 5. Pointers
+## Pointers
 Pointers are variables that store memory addresses of other variables. They enable more efficient handling of memory, and are useful for working with dynamic data structures.
 
 Example:
@@ -73,7 +73,7 @@ int num = 10;
 int* p = &num; // p stores the address of num
 ```
 
-### 6. Structures and Classes
+## Structures and Classes
 Structures and Classes are user-defined data types that allow grouping of variables and functions under a single name.
 
 Example:
@@ -95,7 +95,7 @@ public:
 };
 ```
 
-### 7. Inheritance and Polymorphism
+## Inheritance and Polymorphism
 Inheritance is a mechanism that allows a class to inherit properties and methods from a base class. Polymorphism enables you to use a base class type to represent derived class objects.
 
 Example:
@@ -115,7 +115,7 @@ public:
 };
 ```
 
-### 8. Exception Handling
+## Exception Handling
 C++ provides a mechanism to handle exceptions(runtime errors) gracefully using `try`, `catch`, and `throw` constructs.
 
 Example:

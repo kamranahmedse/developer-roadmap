@@ -2,7 +2,7 @@
 
 Variadic templates are a feature in C++11 that allows you to define a template with a variable number of arguments. This is especially useful when you need to write a function or class that can accept different numbers and types of arguments.
 
-### Syntax
+## Syntax
 
 The syntax for variadic templates is very simple. To define a variadic template, use the `...` (ellipsis) notation:
 
@@ -12,9 +12,9 @@ template <typename... Args>
 
 This notation represents a parameter pack, which can contain zero or more arguments. You can use this parameter pack as a variable list of template parameters in your template definition.
 
-### Examples
+## Examples
 
-#### Summing Multiple Arguments Using Variadic Templates
+### Summing Multiple Arguments Using Variadic Templates
 
 ```cpp
 #include <iostream>
@@ -39,7 +39,7 @@ int main() {
 }
 ```
 
-#### Tuple Class Using Variadic Templates
+### Tuple Class Using Variadic Templates
 
 ```cpp
 template <typename... Types>

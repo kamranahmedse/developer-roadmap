@@ -4,7 +4,7 @@ In C++, data types are used to categorize different types of data that a program
 
 ## Fundamental Data Types
 
-### Integer (int)
+## Integer (int)
 Integers are whole numbers that can store both positive and negative values. The size of `int` depends on the system architecture (usually 4 bytes). 
 
 Example:
@@ -17,24 +17,24 @@ There are variants of `int` that can hold different ranges of numbers:
 - long (`long int`): Larger range than `int`.
 - long long (`long long int`): Even larger range than `long int`.
 
-### Floating-Point (float, double)
+## Floating-Point (float, double)
 Floating-point types represent real numbers, i.e., numbers with a decimal point. There are two main floating-point types:
 
-1. **float**: Provides single-precision floating-point numbers. It typically occupies 4 bytes of memory.
+- **float**: Provides single-precision floating-point numbers. It typically occupies 4 bytes of memory.
 
 Example:
 ```cpp
 float pi = 3.14f;
 ```
 
-2. **double**: Provides double-precision floating-point numbers. It consumes more memory (usually 8 bytes) but has a higher precision than `float`.
+- **double**: Provides double-precision floating-point numbers. It consumes more memory (usually 8 bytes) but has a higher precision than `float`.
 
 Example:
 ```cpp
 double pi_high_precision = 3.1415926535;
 ```
 
-### Character (char)
+## Character (char)
 Characters represent a single character, such as a letter, digit, or symbol. They are stored using the ASCII value of the symbol and typically occupy 1 byte of memory.
 
 Example:
@@ -42,7 +42,7 @@ Example:
 char letter = 'A';
 ```
 
-### Boolean (bool)
+## Boolean (bool)
 Booleans represent logical values: `true` or `false`. They usually occupy 1 byte of memory.
 
 Example:
@@ -54,7 +54,7 @@ bool is_cpp_great = true;
 
 Derived data types are types that are derived from fundamental data types. Some examples include:
 
-### Arrays
+## Arrays
 Arrays are used to store multiple values of the same data type in consecutive memory locations.
 
 Example:
@@ -62,7 +62,7 @@ Example:
 int numbers[5] = {1, 2, 3, 4, 5};
 ```
 
-### Pointers
+## Pointers
 Pointers are used to store the memory address of a variable.
 
 Example:
@@ -71,7 +71,7 @@ int num = 42;
 int* pNum = &num;
 ```
 
-### References
+## References
 References are an alternative way to share memory locations between variables, allowing you to create an alias for another variable.
 
 Example:
@@ -84,7 +84,7 @@ int& numRef = num;
 
 User-defined data types are types that are defined by the programmer, such as structures, classes, and unions.
 
-### Structures (struct)
+## Structures (struct)
 Structures are used to group variables of different data types together under a single name.
 
 Example:
@@ -98,7 +98,7 @@ struct Person {
 Person p1 = {"John Doe", 30, 5.9};
 ```
 
-### Classes (class)
+## Classes (class)
 Classes are similar to structures, but they can also have member functions and access specifiers.
 
 Example:
@@ -118,7 +118,7 @@ p1.name = "John Doe";
 p1.age = 30;
 ```
 
-### Unions (union)
+## Unions (union)
 Unions are used to store different data types in the same memory location.
 
 Example:

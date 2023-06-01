@@ -2,7 +2,7 @@
 
 RAII is a popular idiom in C++ that focuses on using the object's life cycle to manage resources. It encourages binding the resource lifetime to the scope of a corresponding object so that it's automatically acquired when an object is created and released when the object is destroyed. This helps in simplifying the code, avoiding leaks and managing resources efficiently.
 
-### Code Examples
+## Code Examples
 
 Here's an example of using RAII to manage resources, specifically a dynamically allocated array:
 

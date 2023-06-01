@@ -4,7 +4,7 @@ Logical operators are used to perform logical operations on the given expression
 
 C++ provides the following logical operators:
 
-1. **AND Operator (&&)**
+- **AND Operator (&&)**
    The AND operator checks if both the operands/conditions are true, then the expression is true. If any one of the conditions is false, the whole expression will be false.
    ```
    (expression1 && expression2)
@@ -16,7 +16,7 @@ C++ provides the following logical operators:
        cout << "Both values are positive." << endl;
    }
    ```
-2. **OR Operator (||)**
+- **OR Operator (||)**
    The OR operator checks if either of the operands/conditions are true, then the expression is true. If both the conditions are false, it will be false.
    ```
    (expression1 || expression2)
@@ -29,7 +29,7 @@ C++ provides the following logical operators:
    }
    ```
 
-3. **NOT Operator (!)**
+- **NOT Operator (!)**
    The NOT operator reverses the result of the condition/expression it is applied on. If the condition is true, the NOT operator will make it false and vice versa.
    ```
    !(expression)

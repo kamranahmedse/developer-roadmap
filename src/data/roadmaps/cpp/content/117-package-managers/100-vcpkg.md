@@ -2,17 +2,17 @@
 
 `vcpkg` is a cross-platform, open-source package manager for C and C++ libraries. Developed by Microsoft, it simplifies the process of acquiring and building open-source libraries for your projects. `vcpkg` supports various platforms including Windows, Linux, and macOS, enabling you to easily manage and integrate external libraries into your projects.
 
-### Installation
+## Installation
 
 To install `vcpkg`, follow these steps:
 
-1. Clone the repository:
+- Clone the repository:
 
    ```
    git clone https://github.com/Microsoft/vcpkg.git
    ```
 
-2. Change to the `vcpkg` directory and run the bootstrap script:
+- Change to the `vcpkg` directory and run the bootstrap script:
 
    - On Windows:
      
@@ -26,9 +26,9 @@ To install `vcpkg`, follow these steps:
      ./bootstrap-vcpkg.sh
      ```
 
-3. (Optional) Add the `vcpkg` executable to your `PATH` environment variable for easy access.
+- (Optional) Add the `vcpkg` executable to your `PATH` environment variable for easy access.
 
-### Basic usage
+## Basic usage
 
 Here are some basic examples of using `vcpkg`:
 

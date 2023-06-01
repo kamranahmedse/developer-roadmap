@@ -2,7 +2,7 @@
 
 Poco (also known as POCO C++ Libraries) is a collection of open-source class libraries, which simplifies the creation of network-centric, portable, and maintainable software in C++. 
 
-### Overview
+## Overview
 
 Poco library provides functionality for various areas, such as:
 
@@ -13,7 +13,7 @@ Poco library provides functionality for various areas, such as:
 - Data manipulation: Stream, ByteBuffer, Buffer, etc.
 - Multithreading and synchronization: Threads, Mutex, Event, and Condition
 
-### Code Example
+## Code Example
 
 Here's an example demonstrating an HTTP client using the Poco library:
 

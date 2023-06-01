@@ -6,7 +6,7 @@ C++ Containers are a part of the Standard Template Library (STL) that provide da
 
 Vectors are dynamic arrays that can resize themselves as needed. They store elements in a contiguous memory location, allowing fast random access using indices.
 
-### Example
+## Example
 
 ```cpp
 #include <iostream>
@@ -29,7 +29,7 @@ int main() {
 
 A list is a doubly-linked list that allows elements to be inserted or removed from any position in constant time. It does not support random access. Lists are better than vectors for scenarios where you need to insert or remove elements in the middle frequently.
 
-### Example
+## Example
 
 ```cpp
 #include <iostream>
@@ -52,7 +52,7 @@ int main() {
 
 A map is an associative container that stores key-value pairs. It supports the retrieval of values based on their keys. The keys are sorted in ascending order by default.
 
-### Example
+## Example
 
 ```cpp
 #include <iostream>
@@ -75,7 +75,7 @@ int main() {
 
 Similar to a map, an unordered map stores key-value pairs, but it is implemented using a hash table. This means unordered_map has faster average-case performance compared to map, since it does not maintain sorted order. However, worst-case performance can be worse than map.
 
-### Example
+## Example
 
 ```cpp
 #include <iostream>

@@ -4,7 +4,7 @@ Dynamic polymorphism is a programming concept in object-oriented languages like 
 
 Dynamic polymorphism is achieved through **virtual functions**, which are member functions of a base class marked with the `virtual` keyword. When you specify a virtual function in a base class, it can be overridden in any derived class to provide a different implementation.
 
-### Example
+## Example
 
 Here's an example in C++ demonstrating dynamic polymorphism.
 

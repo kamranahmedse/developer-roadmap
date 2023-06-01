@@ -2,7 +2,7 @@
 
 [Conan](https://conan.io/) is a popular package manager for C and C++ languages and is designed to be cross-platform, extensible, and easy to use. It allows developers to declare, manage, and fetch dependencies while automating the build process. Conan supports various build systems, such as CMake, Visual Studio, MSBuild, and more.
 
-### Installation
+## Installation
 
 To install Conan, you can use pip, the Python package manager:
 
@@ -10,9 +10,9 @@ To install Conan, you can use pip, the Python package manager:
 pip install conan
 ```
 
-### Basic Usage
+## Basic Usage
 
-1. Create a `conanfile.txt` file in your project root directory, specifying dependencies you need for your project:
+- Create a `conanfile.txt` file in your project root directory, specifying dependencies you need for your project:
 
 ```ini
 [requires]
@@ -22,21 +22,21 @@ boost/1.75.0
 cmake
 ```
 
-2. Run the `conan install` command to fetch and build required dependencies:
+- Run the `conan install` command to fetch and build required dependencies:
 
 ```bash
 mkdir build && cd build
 conan install ..
 ```
 
-3. Now build your project using your build system, for example CMake:
+- Now build your project using your build system, for example CMake:
 
 ```bash
 cmake .. -DCMAKE_BUILD_TYPE=Release
 cmake --build .
 ```
 
-### Creating Packages
+## Creating Packages
 
 To create a package in Conan, you need to write a `conanfile.py` file with package information and build instructions.
 

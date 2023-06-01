@@ -3,8 +3,8 @@
 The erase-remove idiom is a common C++ technique to efficiently remove elements from a container, particularly from standard sequence containers like `std::vector`, `std::list`, and `std::deque`. It leverages the standard library algorithms `std::remove` (or `std::remove_if`) and the member function `erase()`.
 
 The idiom consists of two steps:
-1. `std::remove` (or `std::remove_if`) moves the elements to be removed towards the end of the container and returns an iterator pointing to the first element to remove.
-2. `container.erase()` removes the elements from the container using the iterator obtained in the previous step.
+- `std::remove` (or `std::remove_if`) moves the elements to be removed towards the end of the container and returns an iterator pointing to the first element to remove.
+- `container.erase()` removes the elements from the container using the iterator obtained in the previous step.
 
 Here's an example:
 

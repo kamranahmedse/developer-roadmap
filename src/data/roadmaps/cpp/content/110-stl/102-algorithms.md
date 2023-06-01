@@ -4,11 +4,11 @@ The Standard Template Library (STL) in C++ provides a collection of generic algo
 
 ## Key Concepts
 
-### Sorting
+## Sorting
 
 Sorting refers to arranging a sequence of elements in a specific order. The STL provides several sorting algorithms, such as `std::sort`, `std::stable_sort`, and `std::partial_sort`.
 
-#### std::sort
+### std::sort
 
 `std::sort` is used to sort a range of elements [first, last) in non-descending order (by default). You can also use custom comparison functions or lambda expressions to change the sorting order.
 
@@ -30,11 +30,11 @@ int main() {
 }
 ```
 
-### Searching
+## Searching
 
 Searching refers to finding if a particular element is present within a given range of elements. STL provides various searching algorithms, such as `std::find`, `std::binary_search`, and `std::find_if`.
 
-#### std::find
+### std::find
 
 `std::find` is used to find the iterator of the first occurrence of a given value within the range [first, last).
 
@@ -58,11 +58,11 @@ int main() {
 }
 ```
 
-### Modifying Sequences
+## Modifying Sequences
 
 The STL also provides algorithms for modifying sequences, such as `std::remove`, `std::replace`, and `std::unique`.
 
-#### std::remove
+### std::remove
 
 `std::remove` is used to remove all instances of a value from a container within the given range [first, last). Note that the function does not resize the container after removing elements.
 

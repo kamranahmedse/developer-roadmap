@@ -4,7 +4,7 @@ Virtual Tables (or Vtable) are a mechanism used by C++ compilers to support dyna
 
 When a class contains a virtual function, the compiler creates a virtual table for that class. This table contains function pointers to the virtual functions defined in the class. Each object of that class has a pointer to its virtual table (_vptr_, virtual pointer), which is automatically initialized by the compiler during object construction.
 
-### Example
+## Example
 
 Let's consider the following example:
 

@@ -4,11 +4,11 @@ Debugger symbols are additional information embedded within the compiled program
 
 There are generally two types of debugging symbols:
 
-1. **Internal Debugging Symbols**: These symbols reside within the compiled binary code itself. When using internal debugging symbols, it is essential to note that the size of the binary increases, which may not be desirable for production environments.
+- **Internal Debugging Symbols**: These symbols reside within the compiled binary code itself. When using internal debugging symbols, it is essential to note that the size of the binary increases, which may not be desirable for production environments.
 
-2. **External Debugging Symbols**: The debugging symbols are kept in separate files apart from the binary code, usually with file extensions such as `.pdb` (Program Database) in Windows or `.dSYM` (DWARF Symbol Information) in macOS.
+- **External Debugging Symbols**: The debugging symbols are kept in separate files apart from the binary code, usually with file extensions such as `.pdb` (Program Database) in Windows or `.dSYM` (DWARF Symbol Information) in macOS.
 
-### Generating Debugger Symbols
+## Generating Debugger Symbols
 
 To generate debugger symbols in C++, you need to specify specific options during the compilation process. We will use `g++` compiler as an example.
 

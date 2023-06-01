@@ -6,7 +6,7 @@ Exit codes, also known as "return codes" or "status codes", are numeric values t
 
 In C++, you can return an exit code from the `main` function by using the `return` statement, or you can use the `exit()` function, which is part of the C++ Standard Library.
 
-### Example: Using return in `main`
+## Example: Using return in `main`
 
 ```cpp
 #include <iostream>
@@ -30,7 +30,7 @@ int main() {
 }
 ```
 
-### Example: Using the `exit()` function
+## Example: Using the `exit()` function
 
 ```cpp
 #include <iostream>

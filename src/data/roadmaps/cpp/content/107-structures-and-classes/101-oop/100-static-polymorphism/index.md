@@ -2,7 +2,7 @@
 
 Static polymorphism, also known as compile-time polymorphism, is a type of polymorphism that resolves the types and method calls at compile time rather than at runtime. This is commonly achieved through the use of function overloading and templates in C++.
 
-### Function Overloading
+## Function Overloading
 
 Function overloading is a way to create multiple functions with the same name but different parameter lists. The compiler determines the correct function to call based on the types and number of arguments used when the function is called.
 
@@ -32,7 +32,7 @@ int main() {
 }
 ```
 
-### Templates
+## Templates
 
 Templates are a powerful feature in C++ that allows you to create generic functions or classes. The actual code for specific types is generated at compile time, which avoids the overhead of runtime polymorphism. The use of templates is the main technique to achieve static polymorphism in C++.
 

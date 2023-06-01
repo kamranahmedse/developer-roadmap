@@ -2,11 +2,11 @@
 
 PyTorch C++ is the C++ API (Application Programming Interface) for PyTorch. It is also known as LibTorch, which is a library that provides almost all the functionality of PyTorch accessible through C++ language. The main goal of providing a C++ API is to enable high-performance integration with other deep learning platforms and enable seamless operation in enterprise and production-level systems.
 
-### Installation
+## Installation
 
 To use the PyTorch C++ API, you need to install the LibTorch distribution. Follow the instructions on the [official PyTorch C++ API page](https://pytorch.org/cppdocs/installing.html) to install the library based on your platform and requirements.
 
-### Example: Tensors
+## Example: Tensors
 
 ```cpp
 #include <iostream>
@@ -31,7 +31,7 @@ int main() {
 }
 ```
 
-### Example: Creating a Custom Module
+## Example: Creating a Custom Module
 
 ```cpp
 #include <iostream>

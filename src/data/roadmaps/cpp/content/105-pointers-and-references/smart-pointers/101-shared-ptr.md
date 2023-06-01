@@ -4,7 +4,7 @@ A `shared_ptr` is a type of smart pointer in C++ that allows multiple pointers t
 
 When using a `shared_ptr`, the reference counter is automatically incremented every time a new pointer is created, and decremented when each pointer goes out of scope. Once the reference counter reaches zero, the system will clean up the memory.
 
-### Code Example
+## Code Example
 
 Here's an example of how to use `shared_ptr`:
 

@@ -2,7 +2,7 @@
 
 CMake is a powerful cross-platform build system that generates build files, Makefiles, or workspaces for various platforms and compilers. Unlike the others build systems, CMake does not actually build the project, it only generates the files needed by build tools. CMake is widely used, particularly in C++ projects, for its ease of use and flexibility.
 
-### CMakeLists.txt
+## CMakeLists.txt
 
 CMake uses a file called `CMakeLists.txt` to define settings, source files, libraries, and other configurations. A typical `CMakeLists.txt` for a simple project would look like:
 
@@ -25,18 +25,18 @@ set_target_properties(${PROJECT_NAME} PROPERTIES
 )
 ```
 
-### Building with CMake
+## Building with CMake
 
 Here is an example of a simple build process using CMake:
 
-1. Create a new directory for the build.
+- Create a new directory for the build.
 
 ```sh
 mkdir build
 cd build
 ```
 
-2. Generate build files using CMake.
+- Generate build files using CMake.
 
 ```sh
 cmake ..
@@ -44,7 +44,7 @@ cmake ..
 
 In this example, `..` indicates the parent directory where `CMakeLists.txt` is located. The build files will be generated in the `build` directory.
 
-3. Build the project using the generated build files.
+- Build the project using the generated build files.
 
 ```sh
 make

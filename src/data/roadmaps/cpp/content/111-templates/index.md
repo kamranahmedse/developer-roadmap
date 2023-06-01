@@ -2,7 +2,7 @@
 
 Templates in C++ are a powerful feature that allows you to write generic code, meaning that you can write a single function or class that can work with different data types. This means you do not need to write separate functions or classes for each data type you want to work with.
 
-### Template Functions
+## Template Functions
 
 To create a template function, you use the `template` keyword followed by the type parameters or placeholders enclosed in angle brackets (`< >`). Then, you define your function as you normally would, using the type parameters to specify the generic types.
 
@@ -27,7 +27,7 @@ Or, you can let the compiler deduce the type for you:
 int result = max(10, 20);
 ```
 
-### Template Classes
+## Template Classes
 
 Similarly, you can create template classes using the `template` keyword. Here's an example of a simple template class that represents a pair of values:
 
@@ -48,7 +48,7 @@ To use this class, you need to specify the type parameters when creating an obje
 Pair<int, std::string> pair(1, "Hello");
 ```
 
-### Template Specialization
+## Template Specialization
 
 Sometimes, you may need special behavior for a specific data type. In this case, you can use template specialization. For example, you can specialize the `Pair` class for a specific type, like `char`:
 

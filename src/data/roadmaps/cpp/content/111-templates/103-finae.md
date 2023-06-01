@@ -4,7 +4,7 @@ SFINAE is a principle in C++ template metaprogramming that allows the compiler t
 
 The key idea behind SFINAE is that if a substitution error occurs, it is silently ignored, and the compiler continues to explore other template specializations or overloads. This allows you to write more flexible and generic code, as it enables you to have multiple specializations for different scenarios.
 
-### Code Example
+## Code Example
 
 Here's an example that demonstrates SFINAE in action:
 

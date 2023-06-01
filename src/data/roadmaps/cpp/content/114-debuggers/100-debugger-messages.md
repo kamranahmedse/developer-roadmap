@@ -2,9 +2,9 @@
 
 Debugger messages are notifications or alerts provided by a debugger to help you identify problems or errors in your C++ code. These messages can be warnings or error messages and can provide helpful information about the state of your program and specific issues encountered during the debugging process.
 
-### Types of Debugger Messages
+## Types of Debugger Messages
 
-1. **Error Messages:** Notify you about issues in the code that prevent the program from running or compiling correctly. These messages typically include information about the file and the line number where the error is detected, followed by a description of the issue.
+- **Error Messages:** Notify you about issues in the code that prevent the program from running or compiling correctly. These messages typically include information about the file and the line number where the error is detected, followed by a description of the issue.
 
    Example:
    ```
@@ -14,7 +14,7 @@ Debugger messages are notifications or alerts provided by a debugger to help you
         ^~~~
    ```
 
-2. **Warning Messages:** Inform you about potential issues or risky programming practices that may not necessarily cause errors but could lead to problems later on. Like error messages, warning messages usually include information about the file and line number where the issue is found, along with a description of the problem.
+- **Warning Messages:** Inform you about potential issues or risky programming practices that may not necessarily cause errors but could lead to problems later on. Like error messages, warning messages usually include information about the file and line number where the issue is found, along with a description of the problem.
 
    Example:
    ```
@@ -24,7 +24,7 @@ Debugger messages are notifications or alerts provided by a debugger to help you
                  ^
    ```
 
-3. **Informational Messages:** Provide general information about the execution of the program, such as breakpoints, watchpoints, and variable values. These messages can also reveal the current state of the program, including the call stack and the list of active threads.
+- **Informational Messages:** Provide general information about the execution of the program, such as breakpoints, watchpoints, and variable values. These messages can also reveal the current state of the program, including the call stack and the list of active threads.
 
    Example (*assuming you are using GDB as debugger*):
    ```
@@ -35,7 +35,7 @@ Debugger messages are notifications or alerts provided by a debugger to help you
    Breakpoint 1, main () at test.cpp:5
    5       int a = 5;
    ```
-### Code Examples
+## Code Examples
 
 To make use of debugger messages, you need to employ a debugger, such as GDB or Visual Studio Debugger, and include specific flags during the compilation process.
 

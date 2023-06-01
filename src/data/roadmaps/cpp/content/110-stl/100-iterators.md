@@ -4,7 +4,7 @@ Iterators are objects in the C++ Standard Library (`STL`) that help us traverse 
 
 There are different types of iterators which you would encounter depending on their use cases:
 
-1. **Input Iterator**: Used to read elements in a container only once, in a forward direction. They cannot modify elements.
+- **Input Iterator**: Used to read elements in a container only once, in a forward direction. They cannot modify elements.
 
 Example:
 
@@ -14,7 +14,7 @@ std::istream_iterator<int> input(std::cin);
 std::copy(input, std::istream_iterator<int>(), std::back_inserter(nums));
 ```
 
-2. **Output Iterator**: Used to write elements in a container only once, in a forward direction. They cannot re-write elements.
+- **Output Iterator**: Used to write elements in a container only once, in a forward direction. They cannot re-write elements.
 
 Example:
 
@@ -24,7 +24,7 @@ std::ostream_iterator<int> output(std::cout, ", ");
 std::copy(nums.begin(), nums.end(), output);
 ```
 
-3. **Forward Iterator**: Similar to input iterators but can be used for multiple passes over the elements in a container. They cannot move backward.
+- **Forward Iterator**: Similar to input iterators but can be used for multiple passes over the elements in a container. They cannot move backward.
 
 Example:
 
@@ -37,7 +37,7 @@ while (itr != nums.end()) {
 }
 ```
 
-4. **Bidirectional Iterator**: These iterators offer the ability to move both forward and backward in a container. List and set containers have bi-directional iterators.
+- **Bidirectional Iterator**: These iterators offer the ability to move both forward and backward in a container. List and set containers have bi-directional iterators.
 
 Example:
 
@@ -52,7 +52,7 @@ for (--itr; itr != nums.begin(); --itr) {
 }
 ```
 
-5. **Random Access Iterator**: These iterators provide the most flexible ways to access elements in a container. They can move forwards, backwards, jump directly to other elements, and access elements at a given index.
+- **Random Access Iterator**: These iterators provide the most flexible ways to access elements in a container. They can move forwards, backwards, jump directly to other elements, and access elements at a given index.
 
 Example:
 

@@ -4,7 +4,7 @@ Multiple inheritance is a feature in C++ where a class can inherit characteristi
 
 When a class inherits multiple base classes, it becomes a mixture of their properties and behaviors, and can override or extend them as needed.
 
-### Syntax
+## Syntax
 
 Here is the syntax to declare a class with multiple inheritance:
 
@@ -17,7 +17,7 @@ class DerivedClass : access-specifier BaseClass1, access-specifier BaseClass2, .
 
 The `DerivedClass` will inherit members from both `BaseClass1` and `BaseClass2`. The `access-specifier` (like `public`, `protected`, or `private`) determines the accessibility of the inherited members.
 
-### Example
+## Example
 
 Here is an example of multiple inheritance in action:
 
@@ -69,7 +69,7 @@ int main()
 }
 ```
 
-### Note
+## Note
 
 In some cases, multiple inheritance can lead to complications such as ambiguity and the "diamond problem". Ensure that you use multiple inheritance judiciously and maintain well-structured and modular classes to prevent issues.
 

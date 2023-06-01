@@ -2,7 +2,7 @@
 
 In C++, you can work with dates and times using the `chrono` library, which is part of the Standard Library (STL). The `chrono` library provides various data types and functions to represent and manipulate time durations, time points, and clocks.
 
-### Duration
+## Duration
 
 A `duration` represents a span of time, which can be expressed in various units such as seconds, minutes, hours, etc. To create a duration, use the `std::chrono::duration` template class. Common predefined duration types are:
 
@@ -24,7 +24,7 @@ int main() {
 }
 ```
 
-### Time Point
+## Time Point
 
 A `time_point` represents a specific point in time. It is usually created using a combination of duration and a clock. In C++, there are three clock types provided by the `chrono` library:
 
@@ -44,7 +44,7 @@ int main() {
 }
 ```
 
-### Clock
+## Clock
 
 A clock provides access to the current time. It consists of the following elements:
 
@@ -68,7 +68,7 @@ int main() {
 }
 ```
 
-### Converting Time Points to Calendar Time
+## Converting Time Points to Calendar Time
 
 To convert a time point to calendar representation, you can use the `std::chrono::system_clock::to_time_t` function.
 

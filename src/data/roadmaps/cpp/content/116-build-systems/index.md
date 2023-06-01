@@ -2,7 +2,7 @@
 
 A build system is a collection of tools and utilities that automate the process of compiling, linking, and executing source code files in a project. The primary goal of build systems is to manage the complexity of the compilation process and produce a build (executable or binary files) in the end. In C++ (cpp), some common build systems are:
 
-1. **GNU Make**: It is a popular build system that uses `Makefile` to define the build process. It checks the dependencies and timestamps of source files to determine which files need to be compiled and linked.
+- **GNU Make**: It is a popular build system that uses `Makefile` to define the build process. It checks the dependencies and timestamps of source files to determine which files need to be compiled and linked.
 
    Code example:
 
@@ -21,7 +21,7 @@ A build system is a collection of tools and utilities that automate the process 
        rm $(TARGET)
    ```
 
-2. **CMake**: It is a cross-platform build system that focuses on defining project dependencies and managing build environments. CMake generates build files (like Makefiles) for different platforms and allows developers to write source code once and then compile it for different target platforms.
+- **CMake**: It is a cross-platform build system that focuses on defining project dependencies and managing build environments. CMake generates build files (like Makefiles) for different platforms and allows developers to write source code once and then compile it for different target platforms.
 
    Code example:
 
@@ -34,7 +34,7 @@ A build system is a collection of tools and utilities that automate the process 
 
    add_executable(HelloWorld main.cpp)
    ```
-3. **Autotools**: Also known as GNU Build System, consists of the GNU Autoconf, Automake, and Libtool tools that enable developers to create portable software across different Unix-based systems. For a C++ project, you will need to create `configure.ac`, `Makefile.am` files with specific rules, and then run the following commands in the terminal to build the project:
+- **Autotools**: Also known as GNU Build System, consists of the GNU Autoconf, Automake, and Libtool tools that enable developers to create portable software across different Unix-based systems. For a C++ project, you will need to create `configure.ac`, `Makefile.am` files with specific rules, and then run the following commands in the terminal to build the project:
 
    ```
    autoreconf --install
@@ -43,7 +43,7 @@ A build system is a collection of tools and utilities that automate the process 
    make install
    ```
 
-4. **SCons**: This build system uses Python for build scripts, making it more expressive than GNU Make. It can also build for multiple platforms and configurations simultaneously.
+- **SCons**: This build system uses Python for build scripts, making it more expressive than GNU Make. It can also build for multiple platforms and configurations simultaneously.
 
    Code example:
 
@@ -53,7 +53,7 @@ A build system is a collection of tools and utilities that automate the process 
    env.Program(target="HelloWorld", source=["main.cpp"])
    ```
 
-5. **Ninja**: A small and focused build system that takes a list of build targets specified in a human-readable text file and builds them as fast as possible.
+- **Ninja**: A small and focused build system that takes a list of build targets specified in a human-readable text file and builds them as fast as possible.
 
    Code example:
 

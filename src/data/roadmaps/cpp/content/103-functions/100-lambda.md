@@ -21,7 +21,7 @@ Here is a basic syntax of a lambda function in C++:
 
 Here are a few examples to demonstrate the use of lambda functions in C++:
 
-1. Lambda function with no capture, parameters, or return type.
+- Lambda function with no capture, parameters, or return type.
 
 ```cpp
 auto printHello = []() {
@@ -30,7 +30,7 @@ auto printHello = []() {
 printHello(); // Output: Hello, World!
 ```
 
-2. Lambda function with parameters.
+- Lambda function with parameters.
 
 ```cpp
 auto add = [](int a, int b) {
@@ -39,7 +39,7 @@ auto add = [](int a, int b) {
 int result = add(3, 4); // result = 7
 ```
 
-3. Lambda function with capture-by-value.
+- Lambda function with capture-by-value.
 
 ```cpp
 int multiplier = 3;
@@ -49,7 +49,7 @@ auto times = [multiplier](int a) {
 int result = times(5); // result = 15
 ```
 
-4. Lambda function with capture-by-reference.
+- Lambda function with capture-by-reference.
 
 ```cpp
 int expiresInDays = 45;

@@ -7,28 +7,28 @@ Undefined behavior in C++ refers to a situation where a program's behavior canno
 
 Some common examples of Undefined Behavior are:
 
-1. **Uninitialized Variables**: Accessing the value of an uninitialized variable can lead to undefined behavior. The value of an uninitialized variable is arbitrary and depends on what was in the memory location before the variable was declared.
+- **Uninitialized Variables**: Accessing the value of an uninitialized variable can lead to undefined behavior. The value of an uninitialized variable is arbitrary and depends on what was in the memory location before the variable was declared.
 
    ```cpp
    int x;
    int y = x + 5; // Undefined behavior since x is uninitialized
    ```
    
-2. **Out-of-bounds Memory Access**: Accessing memory outside the boundaries of an array or buffer may result in undefined behavior.
+- **Out-of-bounds Memory Access**: Accessing memory outside the boundaries of an array or buffer may result in undefined behavior.
 
    ```cpp
    int arr[5];
    int val = arr[5]; // Undefined behavior since the valid indices are 0 to 4
    ```
 
-3. **Null Pointer Dereference**: Dereferencing a null pointer may lead to undefined behavior.
+- **Null Pointer Dereference**: Dereferencing a null pointer may lead to undefined behavior.
 
    ```cpp
    int *ptr = nullptr;
    int val = *ptr; // Undefined behavior since ptr is a null pointer
    ```
 
-4. **Division by Zero**: Performing a division operation by zero is undefined behavior in C++.
+- **Division by Zero**: Performing a division operation by zero is undefined behavior in C++.
 
    ```cpp
    int x = 5;

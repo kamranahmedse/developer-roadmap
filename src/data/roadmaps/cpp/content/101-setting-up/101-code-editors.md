@@ -2,11 +2,11 @@
 
 Code editors are programs specifically designed for editing, managing and writing source code. They offer a wide range of features that make the development process easier and faster. Here's a brief introduction to some of the most popular code editors for C++:
 
-1. **Visual Studio Code (VSCode)**: Visual Studio Code is a popular, free, open-source, and lightweight code editor developed by Microsoft. It has built-in support for C++, along with an extensive library of extensions and plugins.
+- **Visual Studio Code (VSCode)**: Visual Studio Code is a popular, free, open-source, and lightweight code editor developed by Microsoft. It has built-in support for C++, along with an extensive library of extensions and plugins.
 
-2. **Sublime Text**: Sublime Text is a cross-platform text editor that is quite popular among developers due to its speed and minimalist design. It supports C++ with the help of plugins and has a variety of themes and packages available for customization.
+- **Sublime Text**: Sublime Text is a cross-platform text editor that is quite popular among developers due to its speed and minimalist design. It supports C++ with the help of plugins and has a variety of themes and packages available for customization.
 
-3. **CLion**: CLion is an Integrated Development Environment (IDE) developed by JetBrains specifically for C and C++ developers. It provides advanced features like code completion, refactoring support, debugging, and more.
+- **CLion**: CLion is an Integrated Development Environment (IDE) developed by JetBrains specifically for C and C++ developers. It provides advanced features like code completion, refactoring support, debugging, and more.
 
 These are just a few examples, and there are many other code editors available, including Atom, Notepad++, and Geany. They all have their features and may suit different developers' needs. Finding the right code editor is often a matter of personal preference and workflow.
 

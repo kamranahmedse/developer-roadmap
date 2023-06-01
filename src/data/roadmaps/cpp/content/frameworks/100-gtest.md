@@ -2,24 +2,24 @@
 
 Google Test, also known as gtest or googletest, is a C++ testing framework developed by Google. It provides a user-friendly API for writing test cases and is designed for use in a range of applications, from simple unit tests to complex system-level tests. 
 
-### Getting Started with Google Test
+## Getting Started with Google Test
 
 To use Google Test in your project, follow these steps:
 
-1. Download the source code from the [GoogleTest GitHub repository](https://github.com/google/googletest).
-2. Build and install Google Test on your system. Instructions for various platforms can be found in the [README](https://github.com/google/googletest/blob/master/googletest/README.md) file.
-3. Include the necessary headers and link against the Google Test library in your project.
+- Download the source code from the [GoogleTest GitHub repository](https://github.com/google/googletest).
+- Build and install Google Test on your system. Instructions for various platforms can be found in the [README](https://github.com/google/googletest/blob/master/googletest/README.md) file.
+- Include the necessary headers and link against the Google Test library in your project.
 
-### Writing a Test with Google Test
+## Writing a Test with Google Test
 
 Here's an example of how to write a simple test using Google Test:
 
-1. **Include the necessary headers**
+- **Include the necessary headers**
    ```cpp
    #include "gtest/gtest.h"
    ```
 
-2. **Write the functions you want to test**
+- **Write the functions you want to test**
 
    Suppose we have a simple function to test:
    ```cpp
@@ -28,7 +28,7 @@ Here's an example of how to write a simple test using Google Test:
    }
    ```
 
-3. **Write the test cases**
+- **Write the test cases**
 
    To create a test case, use the `TEST()` macro, which takes two arguments: the test suite name and the test case name.
 
@@ -45,7 +45,7 @@ Here's an example of how to write a simple test using Google Test:
    }
    ```
 
-4. **Write a `main()` function**
+- **Write a `main()` function**
 
    In order to run the tests, include a `main()` function that initializes Google Test and runs the tests.
 
@@ -56,11 +56,11 @@ Here's an example of how to write a simple test using Google Test:
    }
    ```
 
-5. **Compile and run the tests**
+- **Compile and run the tests**
 
    Compile your test program with the Google Test library and run the test executable.
 
-### More Features
+## More Features
 
 Google Test offers a wide range of features to make testing easier, such as:
 

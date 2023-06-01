@@ -4,9 +4,9 @@ A **function** is a group of statements that perform a specific task, organized 
 
 There are mainly two types of functions in C++:
 
-1. **Standard library functions**: Pre-defined functions available in the C++ standard library, such as `printf()`, `scanf()`, `sqrt()`, and many more. These functions are part of the standard library, so you need to include the appropriate header file to use them.
+- **Standard library functions**: Pre-defined functions available in the C++ standard library, such as `printf()`, `scanf()`, `sqrt()`, and many more. These functions are part of the standard library, so you need to include the appropriate header file to use them.
 
-2. **User-defined functions**: Functions created by the programmer to perform a specific task. To create a user-defined function, you need to define the function and call it in your code.
+- **User-defined functions**: Functions created by the programmer to perform a specific task. To create a user-defined function, you need to define the function and call it in your code.
 
 ## Defining a Function
 

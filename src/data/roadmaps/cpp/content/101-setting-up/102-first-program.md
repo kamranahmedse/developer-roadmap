@@ -17,7 +17,7 @@ int main() {
 
 Let's break down the different components of this program:
 
-### Header Files & Preprocessor Directives
+## Header Files & Preprocessor Directives
 
 The first line of the program `#include <iostream>` is a [preprocessor directive](https://en.cppreference.com/w/cpp/preprocessor) that tells the compiler to include the header file `iostream`. Header files provide function and class declarations that we can use in our C++ programs.
 
@@ -25,7 +25,7 @@ The first line of the program `#include <iostream>` is a [preprocessor directive
 #include <iostream>
 ```
 
-### `main()` Function
+##`main()` Function
 
 In C++, the `main()` function serves as the entry point of your program. The operating system runs your program by calling this `main()` function. It should be defined only once in your program and must return an integer.
 
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-### Output to the Console
+## Output to the Console
 
 To output text to the console, we use the `std::cout` object and the insertion operator `<<`. In the "Hello, World!" example, we used the following line to print "Hello, World!" to the console:
 
@@ -47,7 +47,7 @@ std::cout << "Hello, World!" << std::endl;
 - `"Hello, World!"`: The string literal to print
 - `std::endl`: The "end line" manipulator that inserts a newline character and flushes the output buffer
 
-### Return Statement
+## Return Statement
 
 Lastly, the `return 0;` statement informs the operating system that the program executed successfully. Returning any other integer value indicates that an error occurred:
 

@@ -4,7 +4,7 @@ Function overloading is a type of static polymorphism in C++ where multiple func
 
 To overload a function, simply define another function with the same name but a different set of parameters. The compiler will automatically choose the correct function to call based on the provided arguments.
 
-### Examples
+## Examples
 
 Here's an example illustrating function overloading:
 

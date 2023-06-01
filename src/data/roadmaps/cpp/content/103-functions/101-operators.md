@@ -4,7 +4,7 @@ Operators in C++ are symbols that perform various operations on data, such as ar
 
 Here is a list of the commonly used operator types in C++:
 
-1. **Arithmetic Operators**: These are used for performing arithmetic operations like addition, subtraction, multiplication, and division.
+- **Arithmetic Operators**: These are used for performing arithmetic operations like addition, subtraction, multiplication, and division.
 
    - `+`: addition
      ```cpp
@@ -27,7 +27,7 @@ Here is a list of the commonly used operator types in C++:
      int remainder = 7 % 3; // remainder will be 1
      ```
 
-2. **Comparison (Relational) Operators**: These are used to compare two values and return true or false based on the comparison.
+- **Comparison (Relational) Operators**: These are used to compare two values and return true or false based on the comparison.
 
    - `==`: equal to
      ```cpp
@@ -54,7 +54,7 @@ Here is a list of the commonly used operator types in C++:
      bool isGreaterOrEqual = (5 >= 3); // isGreaterOrEqual will be true
      ```
 
-3. **Logical Operators**: These operators are used to perform logical operations such as AND (&&), OR (||), and NOT (!) on boolean values.
+- **Logical Operators**: These operators are used to perform logical operations such as AND (&&), OR (||), and NOT (!) on boolean values.
 
    - `&&`: logical AND
      ```cpp
@@ -69,7 +69,7 @@ Here is a list of the commonly used operator types in C++:
      bool result = !false; // result will be true
      ```
 
-4. **Assignment Operators**: These are used to assign values to variables.
+- **Assignment Operators**: These are used to assign values to variables.
 
    - `=`: simple assignment
      ```cpp

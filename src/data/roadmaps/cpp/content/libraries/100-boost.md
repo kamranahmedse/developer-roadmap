@@ -14,8 +14,8 @@ Here's a list of some popular Boost libraries:
 
 ## Usage
 
-1. First, download and install the Boost libraries according to the [documentation](https://www.boost.org/doc/libs/1_76_0/more/getting_started/index.html).
-2. After installation, include necessary headers in your C++ code and start using Boost facilities.
+- First, download and install the Boost libraries according to the [documentation](https://www.boost.org/doc/libs/1_76_0/more/getting_started/index.html).
+- After installation, include necessary headers in your C++ code and start using Boost facilities.
 
 Here's an example using `boost::filesystem` (*NOTE: Boost.Filesystem is now part of the C++17 standard library*):
 

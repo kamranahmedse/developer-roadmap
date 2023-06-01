@@ -2,7 +2,7 @@
 
 C++20 is the newest standard of the C++ programming language, which was officially published in December 2020. It introduces many new features, enhancements, and improvements over the previous standards. Here is a brief summary of some key features in C++20.
 
-1. **Concepts**: Concepts provide a way to specify constraints on template parameters, ensuring that they meet a specific set of requirements. This allows for better compile-time error messages and code readability.
+- **Concepts**: Concepts provide a way to specify constraints on template parameters, ensuring that they meet a specific set of requirements. This allows for better compile-time error messages and code readability.
 
    Example:
    ```
@@ -17,7 +17,7 @@ C++20 is the newest standard of the C++ programming language, which was official
    }
    ```
 
-2. **Ranges**: Ranges build on the iterator concept and provide a more usable and composable framework for dealing with sequences of values. They simplify the way algorithms can be applied to collections of data.
+- **Ranges**: Ranges build on the iterator concept and provide a more usable and composable framework for dealing with sequences of values. They simplify the way algorithms can be applied to collections of data.
 
    Example:
    ```
@@ -35,7 +35,7 @@ C++20 is the newest standard of the C++ programming language, which was official
    }
    ```
 
-3. **Coroutines**: Coroutines offer a way to split complex, long-running functions into smaller, more manageable chunks, allowing them to be suspended and resumed at specific points.
+- **Coroutines**: Coroutines offer a way to split complex, long-running functions into smaller, more manageable chunks, allowing them to be suspended and resumed at specific points.
 
    Example:
    ```
@@ -53,7 +53,7 @@ C++20 is the newest standard of the C++ programming language, which was official
    }
    ```
 
-4. **Lambdas with template parameters**: C++20 enables using `auto` as a lambda parameter, allowing for generic lambdas with templated parameters.
+- **Lambdas with template parameters**: C++20 enables using `auto` as a lambda parameter, allowing for generic lambdas with templated parameters.
 
    Example:
    ```
@@ -65,7 +65,7 @@ C++20 is the newest standard of the C++ programming language, which was official
    double res2 = sum(1.0, 2.0);    // double
    ```
 
-5. **Constexpr enhancements**: `constexpr` support is extended with additional features, such as `constexpr` dynamic allocations, `constexpr` try-catch blocks, and `constexpr` lambdas.
+- **Constexpr enhancements**: `constexpr` support is extended with additional features, such as `constexpr` dynamic allocations, `constexpr` try-catch blocks, and `constexpr` lambdas.
 
    Example:
    ```

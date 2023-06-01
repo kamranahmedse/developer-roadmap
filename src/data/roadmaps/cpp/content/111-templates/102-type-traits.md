@@ -9,7 +9,7 @@ Some common type traits are:
 - `std::is_function`: Checks if the given type is a function type.
 - `std::decay`: Applies decltype rules to the input type ( strips references, cv-qualifiers, etc. ).
 
-### Usage
+## Usage
 
 You can use type traits like this:
 
@@ -28,7 +28,7 @@ int main() {
 }
 ```
 
-### Composing Type Traits
+## Composing Type Traits
 
 Some type traits help you compose other traits or modify them, such as:
 

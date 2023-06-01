@@ -13,7 +13,7 @@ Catch2 is a modern, C++-native, test framework for unit tests, TDD, and BDD. It 
 
 ## Code examples
 
-### Basic test case
+## Basic test case
 
 ```cpp
 #define CATCH_CONFIG_MAIN  // Tells Catch to provide a main() function
@@ -28,7 +28,7 @@ TEST_CASE("Addition") {
 }
 ```
 
-### Sections
+## Sections
 
 ```cpp
 TEST_CASE("Sections example") {
@@ -46,7 +46,7 @@ TEST_CASE("Sections example") {
 }
 ```
 
-### BDD style
+## BDD style
 
 ```cpp
 SCENARIO("vector can be sized and resized", "[vector]") {
@@ -81,7 +81,7 @@ SCENARIO("vector can be sized and resized", "[vector]") {
 }
 ```
 
-### Matchers
+## Matchers
 
 ```cpp
 TEST_CASE("Matchers example") {

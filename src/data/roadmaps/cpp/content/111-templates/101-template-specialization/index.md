@@ -4,11 +4,11 @@ Template specialization is a way to customize or modify the behavior of a templa
 
 There are two main ways you can specialize a template:
 
-1. **Full specialization:** This occurs when you provide a specific implementation for a specific type or set of types.
+- **Full specialization:** This occurs when you provide a specific implementation for a specific type or set of types.
 
-2. **Partial specialization:** This occurs when you provide a more general implementation for a subset of types that match a certain pattern or condition.
+- **Partial specialization:** This occurs when you provide a more general implementation for a subset of types that match a certain pattern or condition.
 
-### Full Template Specialization
+## Full Template Specialization
 
 Full specialization is used when you want to create a separate implementation of a template for a specific type. To do this, you need to use keyword `template<>` followed by the function template with the desired specialized type.
 
@@ -35,7 +35,7 @@ int main() {
 }
 ```
 
-### Partial Template Specialization
+## Partial Template Specialization
 
 Partial specialization is used when you want to create a separate implementation of a template for a subset of types that match a certain pattern or condition.
 

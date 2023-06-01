@@ -4,7 +4,7 @@ Protocol Buffers, or protobuf, is a language and platform-neutral data serializa
 
 Here is a brief summary of protobuf and how to use it in C++:
 
-1. **Define your `.proto` file:** Create a `.proto` file that defines the structure of your messages.
+- **Define your `.proto` file:** Create a `.proto` file that defines the structure of your messages.
 
    *Example:*
 
@@ -18,7 +18,7 @@ Here is a brief summary of protobuf and how to use it in C++:
    }
    ```
 
-2. **Compile the `.proto` file:** You need to compile your `.proto` file to generate C++ classes for serialization and deserialization.
+- **Compile the `.proto` file:** You need to compile your `.proto` file to generate C++ classes for serialization and deserialization.
 
    *Example:*
 
@@ -28,7 +28,7 @@ Here is a brief summary of protobuf and how to use it in C++:
 
    This will generate two files: `person.pb.cc` and `person.pb.h` that contains the C++ class definitions.
 
-3. **Include protobuf library and generated files into your C++ code:** You'll need to include the protobuf library and the generated files in your main C++ code.
+- **Include protobuf library and generated files into your C++ code:** You'll need to include the protobuf library and the generated files in your main C++ code.
 
    *Example:*
 
@@ -68,7 +68,7 @@ Here is a brief summary of protobuf and how to use it in C++:
    }
    ```
 
-4. **Compile and link your C++ code:** Finally, compile your C++ code and link it to the protobuf library.
+- **Compile and link your C++ code:** Finally, compile your C++ code and link it to the protobuf library.
 
    *Example:*
 

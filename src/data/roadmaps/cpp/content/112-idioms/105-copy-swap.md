@@ -4,9 +4,9 @@ Copy-swap is a C++ idiom that leverages the copy constructor and swap function t
 
 Here's a brief summary:
 
-1. **Copy**: Create a local copy of the right-hand side object. This step leverages the copy constructor, providing exception safety and code reuse.
-2. **Swap**: Swap the contents of the left-hand side object with the temporary copy. This step typically involves swapping internal pointers or resources, without needing to copy the full contents again.
-3. **Destruction**: Destroy the temporary copy. This happens upon the exit of the assignment operator.
+- **Copy**: Create a local copy of the right-hand side object. This step leverages the copy constructor, providing exception safety and code reuse.
+- **Swap**: Swap the contents of the left-hand side object with the temporary copy. This step typically involves swapping internal pointers or resources, without needing to copy the full contents again.
+- **Destruction**: Destroy the temporary copy. This happens upon the exit of the assignment operator.
 
 Here's a code example for a simple `String` class:
 
@@ -30,8 +30,8 @@ class String {
 ```
 
 Using the copy-swap idiom:
-1. The right-hand side object is copied when passed by value to the assignment operator.
-2. The left-hand side object's contents are swapped with the temporary copy.
-3. The temporary copy is destroyed, releasing any resources that were previously held by the left-hand side object.
+- The right-hand side object is copied when passed by value to the assignment operator.
+- The left-hand side object's contents are swapped with the temporary copy.
+- The temporary copy is destroyed, releasing any resources that were previously held by the left-hand side object.
 
 This approach simplifies the implementation and provides strong exception safety, while reusing the copy constructor and destructor code.

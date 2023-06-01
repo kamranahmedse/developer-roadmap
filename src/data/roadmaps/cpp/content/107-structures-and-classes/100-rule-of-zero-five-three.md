@@ -23,9 +23,9 @@ In this example, MyResource is a simple structure that does not manage any resou
 
 The Rule of Three states that a class or structure that manages resources should define the following three special member functions:
 
-1. Destructor
-2. Copy constructor
-3. Copy assignment operator
+- Destructor
+- Copy constructor
+- Copy assignment operator
 
 These functions are necessary for proper resource management, such as releasing memory or correctly handling deep copies.
 
@@ -61,8 +61,8 @@ In this example, MyResource is a class that manages a resource (an array of inte
 
 The Rule of Five extends the Rule of Three to include two additional special member functions:
 
-1. Move constructor
-2. Move assignment operator
+- Move constructor
+- Move assignment operator
 
 Modern C++ introduces move semantics, which allows for more efficient handling of resources by transferring ownership without necessarily copying all the data.
 

@@ -4,7 +4,7 @@
 
 Keep in mind that using `const_cast` to modify a truly `const` variable can lead to undefined behavior, so it is best to use this feature only when absolutely necessary.
 
-### Example
+## Example
 
 Here's a code example showing how to use `const_cast`:
 

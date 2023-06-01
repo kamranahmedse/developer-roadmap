@@ -9,15 +9,15 @@ Orbit Profiler is a performance profiler for C++ applications. It is designed to
 - Callstacks collection
 - Frame-based measurements using scopes macros
 
-### Usage
+## Usage
 
-1. **Include OrbitProfiler.h**: First, you need to include the `OrbitProfiler.h` header file in your project:
+- **Include OrbitProfiler.h**: First, you need to include the `OrbitProfiler.h` header file in your project:
 
    ```cpp
    #include "OrbitProfiler.h"
    ```
 
-2. **Starting and Stopping the profiler**: Use `ORBET_START` and `ORBIT_STOP` to start and stop the profiler.
+- **Starting and Stopping the profiler**: Use `ORBET_START` and `ORBIT_STOP` to start and stop the profiler.
 
    ```cpp
    ORBIT_START();
@@ -25,7 +25,7 @@ Orbit Profiler is a performance profiler for C++ applications. It is designed to
    ORBIT_STOP();
    ```
 
-3. **Instrumenting scopes**: Use the `ORBET_SCOPE` macro to annotate the scope of the function you want to measure:
+- **Instrumenting scopes**: Use the `ORBET_SCOPE` macro to annotate the scope of the function you want to measure:
 
    ```cpp
    void ExampleFunction() {
@@ -34,9 +34,9 @@ Orbit Profiler is a performance profiler for C++ applications. It is designed to
    }
    ```
 
-4. **Visualizing the captured data**: Orbit Profiler provides a **Session View** that displays the captured data and allows you to navigate through the timeline, analyze data, and identify performance bottlenecks.
+- **Visualizing the captured data**: Orbit Profiler provides a **Session View** that displays the captured data and allows you to navigate through the timeline, analyze data, and identify performance bottlenecks.
 
-### Example
+## Example
 
 For demonstration purposes, consider the following example of a simple C++ application:
 

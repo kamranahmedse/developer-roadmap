@@ -4,7 +4,7 @@ Virtual methods are a key aspect of dynamic polymorphism in C++. They allow subc
 
 To declare a method as virtual, simply use the `virtual` keyword in the method's declaration in the base class. This tells the compiler that the method should be treated as a virtual method, allowing it to be overridden by derived classes.
 
-### Code Example
+## Code Example
 
 Here's an example demonstrating virtual methods:
 

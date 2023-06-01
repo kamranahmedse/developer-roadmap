@@ -8,11 +8,11 @@ Ranges v3 is a C++ library designed to work with ranges of values, rather than i
 
 Ranges v3 includes three main components:
 
-1. **Range adaptors:** These are composable algorithms that transform a range into a new range. They help to create lazy views over the data without actually modifying it.
+- **Range adaptors:** These are composable algorithms that transform a range into a new range. They help to create lazy views over the data without actually modifying it.
 
-2. **Action adaptors:** These are algorithms that modify a range in-place. For example, sorting or filtering elements in a container directly.
+- **Action adaptors:** These are algorithms that modify a range in-place. For example, sorting or filtering elements in a container directly.
 
-3. **Trait concepts and utility functions:** Provide tools for working with range types, like determining if a type is a range, getting the iterator type for a range, etc.
+- **Trait concepts and utility functions:** Provide tools for working with range types, like determining if a type is a range, getting the iterator type for a range, etc.
 
 ---
 
@@ -20,7 +20,7 @@ Ranges v3 includes three main components:
 
 Here are some code examples of using the Ranges v3 library:
 
-### Including the library
+## Including the library
 
 First, you need to include the appropriate header files from the library. To use the entire Ranges v3 library, you can simply include the `range/v3/all.hpp` header file:
 
@@ -28,7 +28,7 @@ First, you need to include the appropriate header files from the library. To use
 #include <range/v3/all.hpp>
 ```
 
-### Using range adaptors
+## Using range adaptors
 
 You can use range adaptors to manipulate and transform ranges. For example, you can use the `view::filter` and `view::transform` adaptors to create a new range containing only even numbers and then square them:
 
@@ -55,7 +55,7 @@ int main() {
 }
 ```
 
-### Using action adaptors
+## Using action adaptors
 
 Action adaptors are used to modify ranges in-place. For example, you can use the `action::sort` and `action::unique` adaptors to sort and remove duplicate elements from a container:
 
