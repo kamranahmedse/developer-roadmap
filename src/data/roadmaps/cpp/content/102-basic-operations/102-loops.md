@@ -84,4 +84,32 @@ int main() {
 }
 ```
 
-In summary, loops are an integral part of C++ programming that allow you to execute a block of code multiple times. The three types of loops in C++ are `for`, `while`, and `do-while`. Each type has its own specific use case and can be chosen depending on the desired behavior.
+## Range-for loop
+
+A `range-for` loop is used when you want to iterate over a whole sequence, without the need to specify the container type and without the explicitly declaration of an iterator and it's incrementation/decrementation, the automatically managed iterator will start at the beginning of the sequence and keep executing the loop body statements, incrementing at the end, until it reachs the last element of the sequence.
+
+Here's the syntax for a `range-for` loop:
+
+```cpp
+for (element : sequence) {
+    // block of code to execute
+}
+```
+
+For example:
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int numbers[] = {1, 2, 3, 4, 5};
+    for (auto number : numbers) {
+        cout << number << " ";
+    }
+    // Here, the sequence numbers has the values {1, 2, 3, 4, 5}, with indexes 0, 1, 2, 3, 4, the range-for loop will start at index 0 {1} until it reachs index 4 {5}, printing 1 2 3 4 5 to the screen.
+    return 0;
+}
+```
+
+In summary, loops are an integral part of C++ programming that allow you to execute a block of code multiple times. The four types of loops in C++ are `for`, `while`, `do-while` and `range-for`. Each type has its own specific use case and can be chosen depending on the desired behavior.
