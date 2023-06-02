@@ -16,10 +16,13 @@ import {
 } from '../../lib/resource-progress';
 import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
+import { ContributionForm } from './ContributionForm';
 
 export function TopicDetail() {
+  const [contributionAlertMessage, setContributionAlertMessage] = useState('');
   const [isActive, setIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isContributing, setIsContributing] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
 
@@ -45,14 +48,15 @@ export function TopicDetail() {
     }
   };
 
-
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
     setIsActive(false);
+    setIsContributing(false);
   });
 
   useKeydown('Escape', () => {
     setIsActive(false);
+    setIsContributing(false);
   });
 
   // Toggle topic is available even if the component UI is not active
@@ -99,6 +103,7 @@ export function TopicDetail() {
     setIsActive(true);
     sponsorHidden.set(true);
 
+    setContributionAlertMessage('');
     setTopicId(topicId);
     setResourceType(resourceType);
     setResourceId(resourceId);
@@ -142,10 +147,6 @@ export function TopicDetail() {
     return null;
   }
 
-  const contributionDir =
-    resourceType === 'roadmap' ? 'roadmaps' : 'best-practices';
-  const contributionUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/${contributionDir}/${resourceId}/content`;
-
   return (
     <div>
       <div
@@ -162,7 +163,22 @@ export function TopicDetail() {
           </div>
         )}
 
-        {!isLoading && !error && (
+        {!isLoading && isContributing && (
+          <ContributionForm
+            resourceType={resourceType}
+            resourceId={resourceId}
+            topicId={topicId}
+            onClose={(message?: string) => {
+              if (message) {
+                setContributionAlertMessage(message);
+              }
+
+              setIsContributing(false);
+            }}
+          />
+        )}
+
+        {!isContributing && !isLoading && !error && (
           <>
             {/* Actions for the topic */}
             <div className="mb-2">
@@ -173,6 +189,7 @@ export function TopicDetail() {
                 onShowLoginPopup={showLoginPopup}
                 onClose={() => {
                   setIsActive(false);
+                  setIsContributing(false);
                 }}
               />
 
@@ -180,7 +197,10 @@ export function TopicDetail() {
                 type="button"
                 id="close-topic"
                 className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
-                onClick={() => setIsActive(false)}
+                onClick={() => {
+                  setIsActive(false);
+                  setIsContributing(false);
+                }}
               >
                 <img alt="Close" class="h-5 w-5" src={CloseIcon} />
               </button>
@@ -193,20 +213,29 @@ export function TopicDetail() {
               dangerouslySetInnerHTML={{ __html: topicHtml }}
             ></div>
 
-            <p
-              id="contrib-meta"
-              class="mt-10 border-t pt-3 text-sm leading-relaxed text-gray-400"
-            >
-              Contribute links to learning resources about this topic{' '}
-              <a
-                target="_blank"
-                class="text-blue-700 underline"
-                href={contributionUrl}
+            {/* Contribution */}
+            <div className="mt-8 flex-1 border-t">
+              <p class="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
+                Contribute links to learning resources about this topic{' '}
+              </p>
+              <button
+                onClick={() => {
+                  if (isGuest) {
+                    setIsActive(false);
+                    showLoginPopup();
+                    return;
+                  }
+
+                  setIsContributing(true);
+                }}
+                disabled={!!contributionAlertMessage}
+                className="block w-full rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
               >
-                on GitHub repository.
-              </a>
-              .
-            </p>
+                {contributionAlertMessage
+                  ? contributionAlertMessage
+                  : 'Submit a Link'}
+              </button>
+            </div>
           </>
         )}
       </div>
