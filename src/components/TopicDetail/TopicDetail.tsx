@@ -233,7 +233,7 @@ export function TopicDetail() {
               >
                 {contributionAlertMessage
                   ? contributionAlertMessage
-                  : 'Submit a Learning Resource'}
+                  : 'Submit a Link'}
               </button>
             </div>
           </>
