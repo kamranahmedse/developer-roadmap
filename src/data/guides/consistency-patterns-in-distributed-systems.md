@@ -8,7 +8,7 @@ author:
 seo:
   title: 'Consistency Patterns - roadmap.sh'
   description: 'Everything you need to know about Week, Strong and Eventual Consistency'
-isNew: true
+isNew: false
 canonicalUrl: 'https://cs.fyi/guide/consistency-patterns-week-strong-eventual/'
 type: 'textual'
 date: 2023-01-18
