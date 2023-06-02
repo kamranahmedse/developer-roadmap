@@ -216,7 +216,7 @@ export function TopicDetail() {
             {/* Contribution */}
             <div className="mt-8 flex-1 border-t">
               <p class="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
-                Contribute links to learning resources about this topic{' '}
+                Help others learn by submitting links to learn more about this topic{' '}
               </p>
               <button
                 onClick={() => {
