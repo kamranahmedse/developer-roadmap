@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/code-review.json'
 pdfUrl: '/pdfs/roadmaps/code-review.pdf'
 order: 14
 briefTitle: 'Code Review'
-briefDescription: 'Learn what to review when conducting code reviews.'
+briefDescription: 'Learn what to focus on when conducting a code review.'
 title: 'Code Review Pyramid'
-description: 'Learn what to review when conducting code reviews.'
+description: 'Learn what to focus on when conducting a code review.'
 isNew: true
 hasTopics: true
 dimensions:
