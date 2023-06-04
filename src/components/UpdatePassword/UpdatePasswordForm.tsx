@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
-import { pageLoadingMessage } from '../../stores/page';
+import { pageProgressMessage } from '../../stores/page';
 
 export default function UpdatePasswordForm() {
   const [authProvider, setAuthProvider] = useState('');
@@ -72,7 +72,7 @@ export default function UpdatePasswordForm() {
 
   useEffect(() => {
     loadProfile().finally(() => {
-      pageLoadingMessage.set('');
+      pageProgressMessage.set('');
     });
   }, []);
 

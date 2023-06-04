@@ -34,6 +34,7 @@ function handleGuest() {
   const authenticatedRoutes = [
     '/account/update-profile',
     '/account/update-password',
+    '/account',
   ];
 
   showHideAuthElements('hide');

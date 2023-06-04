@@ -24,6 +24,10 @@ export async function getStaticPaths() {
 
 const { topicId } = Astro.params;
 const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as RoadmapTopicFileType;
+
+const gitHubBaseUrl = 'https://github.com/kamranahmedse/developer-roadmap/blob/master/src/data';
+const gitHubFullUrl = file.file.replace(/^.+\/src\/data/, `${gitHubBaseUrl}/`);
+const gitHubRelativeUrl = file.file.replace(/^.+\/src\/data/, 'src/data');
 ---
 
 <BaseLayout
@@ -40,6 +44,10 @@ const { file, breadcrumbs, roadmapId, roadmap, heading } = Astro.props as Roadma
       <main id='main-content'>
         <file.Content />
       </main>
+
+      <p class="border border-yellow-500 p-2 rounded-md text-sm bg-white">
+        Found any mistakes? Help us improve by <a id="gh-file-url" rel="nofollow" target="_blank" data-relative-url={gitHubRelativeUrl} href={gitHubFullUrl}>updating the file here.</a>.
+      </p>
     </div>
   </div>
 </BaseLayout>
