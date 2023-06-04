@@ -21,12 +21,12 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
-    "@astrojs/preact": "^2.2.0",
-    "@astrojs/sitemap": "^1.3.1",
+    "@astrojs/preact": "^2.2.1",
+    "@astrojs/sitemap": "^1.3.3",
     "@astrojs/tailwind": "^3.1.3",
     "@fingerprintjs/fingerprintjs": "^3.4.1",
     "@nanostores/preact": "^0.5.0",
-    "astro": "^2.5.5",
+    "astro": "^2.5.7",
     "astro-compress": "^1.1.46",
     "jose": "^4.14.4",
     "js-cookie": "^3.0.5",
@@ -48,7 +48,7 @@
     "markdown-it": "^13.0.1",
     "openai": "^3.2.1",
     "prettier": "^2.8.8",
-    "prettier-plugin-astro": "^0.9.1",
+    "prettier-plugin-astro": "^0.10.0",
     "prettier-plugin-tailwindcss": "^0.3.0"
   }
 }
