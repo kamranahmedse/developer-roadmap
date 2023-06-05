@@ -17,7 +17,7 @@ export async function getStaticPaths() {
         bestPracticeId,
       },
       props: {
-        bestPracticeJson: bestPracticeJson,
+        bestPracticeJson: bestPracticeJson?.default,
       },
     };
   });

@@ -14,7 +14,7 @@ export async function getStaticPaths() {
         roadmapId,
       },
       props: {
-        roadmapJson: roadmapJson,
+        roadmapJson: roadmapJson?.default,
       },
     };
   });
