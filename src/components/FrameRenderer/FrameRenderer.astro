@@ -5,14 +5,13 @@ import './FrameRenderer.css';
 export interface Props {
   resourceType: 'roadmap' | 'best-practice';
   resourceId: string;
-  jsonUrl: string;
   dimensions?: {
     width: number;
     height: number;
   };
 }
 
-const { resourceId, resourceType, jsonUrl, dimensions = null } = Astro.props;
+const { resourceId, resourceType, dimensions = null } = Astro.props;
 ---
 
 <div
@@ -22,7 +21,6 @@ const { resourceId, resourceType, jsonUrl, dimensions = null } = Astro.props;
     : null}
   data-resource-type={resourceType}
   data-resource-id={resourceId}
-  data-json-url={jsonUrl}
 >
   <div id='resource-loader'>
     <Loader />
