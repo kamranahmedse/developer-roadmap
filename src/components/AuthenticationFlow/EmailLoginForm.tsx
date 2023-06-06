@@ -3,6 +3,7 @@ import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import translations from '../../translations.json';
 
 const EmailLoginForm: FunctionComponent<{}> = () => {
   const [email, setEmail] = useState<string>('');
@@ -81,7 +82,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
           href="/forgot-password"
           className="text-blue-800 hover:text-blue-600"
         >
-          Reset your password?
+          {translations['login.resetPassword']}
         </a>
       </p>
 
@@ -94,7 +95,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         disabled={isLoading}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
-        {isLoading ? 'Please wait...' : 'Continue'}
+        {isLoading ? translations.pleaseWait : translations.continue}
       </button>
     </form>
   );

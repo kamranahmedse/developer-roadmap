@@ -4,6 +4,7 @@ import EmailSignupForm from '../components/AuthenticationFlow/EmailSignupForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 import AccountLayout from '../layouts/AccountLayout.astro';
+import translations from '../translations.json';
 ---
 
 <AccountLayout
@@ -17,14 +18,11 @@ import AccountLayout from '../layouts/AccountLayout.astro';
       class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[400px] sm:items-center sm:justify-center sm:pt-20'
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
-        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>Sign Up</h1>
-        <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
-          Create an account to track your progress, showcase your skill-set and
-          be a part of the community.
-        </p>
-        <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
-          Create an account to track your progress, showcase your skill-set and
-          be a part of the community. videos.
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>
+          {translations.signup}
+        </h1>
+        <p class='mb-3 text-base leading-6 text-gray-600'>
+          {translations['signup.tagline']}
         </p>
       </div>
 
@@ -38,9 +36,9 @@ import AccountLayout from '../layouts/AccountLayout.astro';
       <EmailSignupForm client:load />
 
       <div class='mt-6 text-center text-sm text-slate-600'>
-        Already have an account? <a
-          href='/login'
-          class='font-medium text-blue-700 hover:text-blue-600'>Login</a
+        {translations['signup.alreadyAccount']}
+        <a href='/login' class='font-medium text-blue-700 hover:text-blue-600'
+          >{translations.login}</a
         >
       </div>
     </div>

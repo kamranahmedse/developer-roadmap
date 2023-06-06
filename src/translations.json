@@ -18,6 +18,17 @@
   "devops": "DevOps",
   "kubernetes": "Kubernetes",
   "cloudNative": "Cloud-Native",
+  "continue": "Continue",
+  "pleaseWait": "Please wait...",
+  "activity": "Activity",
+  "security": "Security",
+  "name": "Name",
+  "email": "Email",
+  "github": "GitHub",
+  "twitter": "Twitter",
+  "linkedin": "LinkedIn",
+  "website": "Website",
+  "profilePicture": "Profile Picture",
 
   "hero.title": "Developer Roadmaps",
   "hero.tagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
@@ -29,5 +40,21 @@
   "joinDiscord": "Join on Discord",
 
   "footer.siteDescription": "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.",
-  "footer.tnsDescription": "The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development, deployment, and management."
+  "footer.tnsDescription": "The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development, deployment, and management.",
+
+  "login.tagline": "Welcome back! Let's take you to your account.",
+  "login.resetPassword": "Reset your password?",
+  "login.noAccount": "Don't have an account?",
+
+  "signup.tagline": "Create an account to track your progress, showcase your skill-set and be a part of the community.",
+  "signup.verifyEmail": "Continue to Verify Email",
+  "signup.alreadyAccount": "Already have an account?",
+
+  "profile.tagline": "Update your profile details below.",
+
+  "password.tagline": "Use the form below to update your password.",
+  "password.currentPassword": "Current Password",
+  "password.newPassword": "New Password",
+  "password.confirmPassword": "Confirm Password",
+  "password.updatePassword": "Update Password"
 }
