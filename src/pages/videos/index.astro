@@ -3,6 +3,7 @@ import VideoListItem from '../../components/VideoListItem.astro';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllVideos } from '../../lib/video';
+import translations from '../../translations.json';
 
 const videos = await getAllVideos();
 ---
@@ -12,9 +13,12 @@ const videos = await getAllVideos();
   description={'Graphical video demonstrations on software engineering topics.'}
   permalink={`/videos`}
 >
-  <SimplePageHeader title='Videos' description='Graphical video demonstrations on software engineering topics.' />
+  <SimplePageHeader
+    title={translations.videos}
+    description={translations['videos.tagline']}
+  />
 
-  <div class='pb-20 pt-2 bg-gray-50'>
+  <div class='bg-gray-50 pb-20 pt-2'>
     <div class='container'>
       <div class='mt-3 sm:my-5'>
         {videos.map((video) => <VideoListItem video={video} />)}

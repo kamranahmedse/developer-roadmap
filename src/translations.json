@@ -23,6 +23,12 @@
   "activity": "Activity",
   "security": "Security",
 
+  "developerRoadmaps": "Developer Roadmaps",
+  "roadmaps.tagline": "Step by step guides and paths to learn different tools or technologies.",
+  "bestPractices.tagline": "Best practices on different topics with detailed implementation guidelines.",
+  "guides.tagline": "Succinct graphical explanations to engineering topics.",
+  "videos.tagline": "Graphical video demonstrations on software engineering topics.",
+
   "name": "Name",
   "email": "Email",
   "github": "Github",
