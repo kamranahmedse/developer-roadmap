@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import translations from '../../translations.json';
 
 interface PreviewFile extends File {
   preview: string;
@@ -133,7 +134,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
       className="flex flex-col gap-2"
     >
       <label htmlFor="avatar" className="text-sm leading-none text-slate-500">
-        Profile Picture
+        {translations.profilePicture}
       </label>
       <div className="mb-2 mt-2 flex items-center gap-2">
         <label
@@ -193,7 +194,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
               className="flex h-9 min-w-[96px] items-center justify-center rounded-md border border-gray-300 text-sm font-medium text-black disabled:cursor-not-allowed disabled:opacity-60"
               disabled={isLoading}
             >
-              {isLoading ? 'Uploading..' : 'Upload'}
+              {isLoading ? translations.uploading : translations.upload}
             </button>
           </div>
         )}

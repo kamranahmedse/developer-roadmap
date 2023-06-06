@@ -22,13 +22,18 @@
   "pleaseWait": "Please wait...",
   "activity": "Activity",
   "security": "Security",
+
   "name": "Name",
   "email": "Email",
-  "github": "GitHub",
+  "github": "Github",
   "twitter": "Twitter",
   "linkedin": "LinkedIn",
   "website": "Website",
   "profilePicture": "Profile Picture",
+  "cancel": "Cancel",
+  "upload": "Upload",
+  "uploading": "Uploading...",
+
   "topicsCompleted": "Topics Completed",
   "currentlyLearning": "Currently Learning",
   "visitStreak": "Visit Streak",
@@ -44,6 +49,11 @@
   "no": "No",
   "noProgress": "No Progress",
   "noProgress.description": "Progress will appear here as you start tracking your Roadmaps or Best Practices progress.",
+
+  "currentPassword": "Current Password",
+  "newPassword": "New Password",
+  "confirmPassword": "Confirm Password",
+  "updatePassword": "Update Password",
 
   "hero.title": "Developer Roadmaps",
   "hero.tagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
@@ -67,9 +77,5 @@
 
   "profile.tagline": "Update your profile details below.",
 
-  "password.tagline": "Use the form below to update your password.",
-  "password.currentPassword": "Current Password",
-  "password.newPassword": "New Password",
-  "password.confirmPassword": "Confirm Password",
-  "password.updatePassword": "Update Password"
+  "security.tagline": "Use the form below to update your password."
 }
