@@ -50,9 +50,10 @@
   "noProgress": "No Progress",
   "noProgress.description": "Progress will appear here as you start tracking your Roadmaps or Best Practices progress.",
 
+  "password": "Password",
   "currentPassword": "Current Password",
   "newPassword": "New Password",
-  "confirmPassword": "Confirm Password",
+  "confirmNewPassword": "Confirm New Password",
   "updatePassword": "Update Password",
 
   "hero.title": "Developer Roadmaps",
@@ -77,5 +78,5 @@
 
   "profile.tagline": "Update your profile details below.",
 
-  "security.tagline": "Use the form below to update your password."
+  "password.tagline": "Use the form below to update your password."
 }
