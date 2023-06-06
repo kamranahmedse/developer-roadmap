@@ -16,3 +16,4 @@ Learn more from the following links:
 
 - [What is Software Architecture & Styles?](https://study.com/academy/lesson/software-architecture-styles-patterns-components.html)
 - [Types of Architectural Styles in Software Engineering](https://www.youtube.com/watch?v=2Pp0BcXN9YY)
+- [10 Architecture Patterns Used In Enterprise Software Development Today](https://www.youtube.com/watch?v=brt3ao8bvqy)
