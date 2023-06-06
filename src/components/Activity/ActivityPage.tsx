@@ -4,6 +4,7 @@ import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
+import translations from '../../translations.json';
 
 type ActivityResponse = {
   done: {
@@ -98,7 +99,7 @@ export function ActivityPage() {
         {(learningRoadmaps.length > 0 || learningBestPractices.length > 0) && (
           <>
             <h2 class="mb-3 text-xs uppercase text-gray-400">
-              Continue Following
+              {translations['continueFollowing']}
             </h2>
             <div class="flex flex-col gap-3">
               {learningRoadmaps

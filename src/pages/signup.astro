@@ -21,7 +21,10 @@ import translations from '../translations.json';
         <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>
           {translations.signup}
         </h1>
-        <p class='mb-3 text-base leading-6 text-gray-600'>
+        <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
+          {translations['signup.tagline']}
+        </p>
+        <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
           {translations['signup.tagline']}
         </p>
       </div>

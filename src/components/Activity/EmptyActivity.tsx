@@ -1,4 +1,5 @@
 import CheckIcon from '../../icons/roadmap.svg';
+import translations from '../../translations.json';
 
 export function EmptyActivity() {
   return (
@@ -7,10 +8,10 @@ export function EmptyActivity() {
         <img
           alt="no roadmaps"
           src={CheckIcon}
-          class="mb-2 w-[60px] h-[60px] sm:h-[120px] sm:w-[120px] opacity-10"
+          class="mb-2 h-[60px] w-[60px] opacity-10 sm:h-[120px] sm:w-[120px]"
         />
-        <h2 class="text-lg sm:text-xl font-bold">No Progress</h2>
-        <p className="my-1 sm:my-2 max-w-[400px] text-gray-500 text-sm sm:text-base">
+        <h2 class="text-lg font-bold sm:text-xl">{translations.noProgress}</h2>
+        <p className="my-1 max-w-[400px] text-sm text-gray-500 sm:my-2 sm:text-base">
           Progress will appear here as you start tracking your{' '}
           <a href="/roadmaps" class="mt-4 text-blue-500 hover:underline">
             Roadmaps

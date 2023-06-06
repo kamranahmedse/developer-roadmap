@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
+import translations from '../../translations.json';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -85,20 +86,31 @@ export function ResourceProgress(props: ResourceProgressType) {
         <span className="hidden flex-1 gap-1 sm:flex">
           {doneCount > 0 && (
             <>
-              <span>{doneCount} done</span> &bull;
+              <span>
+                {doneCount} {translations.done}
+              </span>{' '}
+              &bull;
             </>
           )}
           {learningCount > 0 && (
             <>
-              <span>{learningCount} in progress</span> &bull;
+              <span>
+                {learningCount} {translations.inProgress?.toLowerCase()}
+              </span>{' '}
+              &bull;
             </>
           )}
           {skippedCount > 0 && (
             <>
-              <span>{skippedCount} skipped</span> &bull;
+              <span>
+                {skippedCount} {translations.skipped?.toLowerCase()}
+              </span>{' '}
+              &bull;
             </>
           )}
-          <span>{totalCount} total</span>
+          <span>
+            {totalCount} {translations.total?.toLowerCase()}
+          </span>
         </span>
         {!isConfirming && (
           <button
@@ -108,28 +120,28 @@ export function ResourceProgress(props: ResourceProgressType) {
           >
             {!isClearing && (
               <>
-                Clear Progress <span>&times;</span>
+                {translations.clearProgress} <span>&times;</span>
               </>
             )}
 
-            {isClearing && 'Processing...'}
+            {isClearing && translations.processing}
           </button>
         )}
 
         {isConfirming && (
           <span>
-            Are you sure?{' '}
+            {translations.areYouSure}{' '}
             <button
               onClick={clearProgress}
               className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
             >
-              Yes
+              {translations.yes}
             </button>{' '}
             <button
               onClick={() => setIsConfirming(false)}
               className="text-red-500 underline hover:text-red-800"
             >
-              No
+              {translations.no}
             </button>
           </span>
         )}
