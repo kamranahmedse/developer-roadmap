@@ -54,8 +54,6 @@ if (roadmapData.schema) {
 if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
-
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps/${roadmapId}/content`;
 ---
 
 <BaseLayout
@@ -89,7 +87,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
 
   <div class='bg-gray-50 pt-4 sm:pt-12'>
     {
-      !roadmapData.isUpcoming && roadmapData.jsonUrl && (
+      !roadmapData.isUpcoming && roadmapData.briefTitle !== 'Android' && (
         <div class='container relative max-w-[1000px]'>
           <ShareIcons
             description={roadmapData.briefDescription}
@@ -100,7 +98,6 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
           <FrameRenderer
             resourceType={'roadmap'}
             resourceId={roadmapId}
-            jsonUrl={roadmapData.jsonUrl}
             dimensions={roadmapData.dimensions}
           />
         </div>
@@ -108,7 +105,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     }
 
     {
-      !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
+      !roadmapData.isUpcoming && roadmapData.briefTitle === 'Android' && (
         <div class='mt-0 pb-14 sm:-mt-6'>
           <MarkdownFile>
             <roadmapFile.Content />
