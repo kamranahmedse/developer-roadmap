@@ -1,5 +1,6 @@
 ---
 import Icon from './AstroIcon.astro';
+import translations from '../translations.json';
 ---
 
 <div class='bg-slate-900 py-6 pb-10 text-white sm:py-16'>
@@ -9,30 +10,30 @@ import Icon from './AstroIcon.astro';
     >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/roadmaps'>Roadmaps</a
+        href='/roadmaps'>{translations.roadmaps}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/best-practices'>Best Practices</a
+        href='/best-practices'>{translations.bestPractices}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/guides'>Guides</a
+        href='/guides'>{translations.guides}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/videos'>Videos</a
+        href='/videos'>{translations.videos}</a
       >
       <a
         target='_blank'
         rel='noopener noreferrer nofollow'
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='https://cottonbureau.com/people/roadmapsh'>Store</a
+        href='https://cottonbureau.com/people/roadmapsh'>{translations.store}</a
       >
       <a
         class='px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='https://youtube.com/theroadmap?sub_confirmation=1'
-        target='_blank'>YouTube</a
+        target='_blank'>{translations.youtube}</a
       >
     </p>
 
@@ -57,18 +58,19 @@ import Icon from './AstroIcon.astro';
           </a>
         </p>
         <p class='my-4 text-slate-300/60'>
-          Community created roadmaps, articles, resources and journeys to help
-          you choose your path and grow in your career.
+          {translations['footer.siteDescription']}
         </p>
         <div class='text-sm text-gray-400'>
           <p>
             &copy; roadmap.sh
             <span class='mx-1.5'>&middot;</span>
-            <a href='/about' class='hover:text-white'>FAQs</a>
+            <a href='/about' class='hover:text-white'>{translations.faqs}</a>
             <span class='mx-1.5'>&middot;</span>
-            <a href='/terms' class='hover:text-white'>Terms</a>
+            <a href='/terms' class='hover:text-white'>{translations.terms}</a>
             <span class='mx-1.5'>&middot;</span>
-            <a href='/privacy' class='hover:text-white'>Privacy</a>
+            <a href='/privacy' class='hover:text-white'
+              >{translations.privacy}</a
+            >
           </p>
         </div>
       </div>
@@ -84,27 +86,28 @@ import Icon from './AstroIcon.astro';
           />
         </a>
         <p class='my-4 text-slate-300/60'>
-          The leading DevOps resource for Kubernetes, cloud-native computing,
-          and the latest in at-scale development, deployment, and management.
+          {translations['footer.tnsDescription']}
         </p>
         <div class='text-sm text-gray-400'>
           <p>
             <a
               href='https://thenewstack.io/category/devops?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'>DevOps</a
+              class='text-gray-400 hover:text-white'>{translations.devops}</a
             >
             <span class='mx-1.5'>&middot;</span>
             <a
               href='https://thenewstack.io/category/kubernetes?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'>Kubernetes</a
+              class='text-gray-400 hover:text-white'
+              >{translations.kubernetes}</a
             >
             <span class='mx-1.5'>&middot;</span>
             <a
               href='https://thenewstack.io/category/cloud-native?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'>Cloud-Native</a
+              class='text-gray-400 hover:text-white'
+              >{translations.cloudNative}</a
             >
           </p>
         </div>

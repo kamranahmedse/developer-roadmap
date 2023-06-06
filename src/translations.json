@@ -1,0 +1,33 @@
+{
+  "home": "Home",
+  "roadmaps": "Roadmaps",
+  "bestPractices": "Best Practices",
+  "guides": "Guides",
+  "videos": "Videos",
+  "account": "Account",
+  "profile": "Profile",
+  "login": "Login",
+  "logout": "Logout",
+  "signup": "Sign Up",
+  "community": "Community",
+  "store": "Store",
+  "youtube": "YouTube",
+  "faqs": "FAQs",
+  "terms": "Terms",
+  "privacy": "Privacy",
+  "devops": "DevOps",
+  "kubernetes": "Kubernetes",
+  "cloudNative": "Cloud-Native",
+
+  "hero.title": "Developer Roadmaps",
+  "hero.tagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
+
+  "home.roleBasedRoadmaps": "Role based Roadmaps",
+  "home.skillBasedRoadmaps": "Skill based Roadmaps",
+
+  "footer.opensourceRank": "roadmap.sh is the 6th most starred project on GitHub and is visited by hundreds of thousands of developers every month.",
+  "joinDiscord": "Join on Discord",
+
+  "footer.siteDescription": "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.",
+  "footer.tnsDescription": "The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development, deployment, and management."
+}

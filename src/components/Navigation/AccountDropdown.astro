@@ -1,5 +1,6 @@
 ---
 import Icon from '../AstroIcon.astro';
+import translations from '../../translations.json';
 ---
 
 <div class='relative hidden' data-auth-required>
@@ -9,7 +10,7 @@ import Icon from '../AstroIcon.astro';
     data-account-button
   >
     <span class='inline-flex items-center gap-1.5'>
-      Account
+      {translations.account}
       <Icon
         icon='chevron-down'
         class='relative top-[0.5px] h-3 w-3 stroke-[3px]'
@@ -27,7 +28,7 @@ import Icon from '../AstroIcon.astro';
           href='/account'
           class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
         >
-          Profile
+          {translations.profile}
         </a>
       </li>
       <li class='px-1'>
@@ -36,7 +37,7 @@ import Icon from '../AstroIcon.astro';
           type='button'
           data-logout-button
         >
-          Logout
+          {translations.logout}
         </button>
       </li>
     </ul>

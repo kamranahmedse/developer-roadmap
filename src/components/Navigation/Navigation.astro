@@ -1,6 +1,7 @@
 ---
 import Icon from '../AstroIcon.astro';
 import AccountDropdown from './AccountDropdown.astro';
+import translations from '../../translations.json';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -12,18 +13,18 @@ import AccountDropdown from './AccountDropdown.astro';
     <!-- Desktop navigation items -->
     <ul class='hidden space-x-5 sm:flex sm:items-center'>
       <li>
-        <a href='/roadmaps' class='text-gray-400 hover:text-white'>Roadmaps</a>
+        <a href='/roadmaps' class='text-gray-400 hover:text-white'>{translations.roadmaps}</a>
       </li>
       <li>
         <a href='/best-practices' class='text-gray-400 hover:text-white'
-          >Best Practices</a
+          >{translations.bestPractices}</a
         >
       </li>
       <li class='hidden lg:inline'>
-        <a href='/guides' class='text-gray-400 hover:text-white'>Guides</a>
+        <a href='/guides' class='text-gray-400 hover:text-white'>{translations.guides}</a>
       </li>
       <li class='hidden lg:inline'>
-        <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
+        <a href='/videos' class='text-gray-400 hover:text-white'>{translations.videos}</a>
       </li>
       <li>
         <kbd data-command-menu class="hidden sm:flex items-center text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
@@ -34,7 +35,7 @@ import AccountDropdown from './AccountDropdown.astro';
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
       <li data-guest-required class='hidden'>
-        <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
+        <a href='/login' class='text-gray-400 hover:text-white'>{translations.login}</a>
       </li>
       <li>
         <AccountDropdown />
@@ -44,7 +45,7 @@ import AccountDropdown from './AccountDropdown.astro';
           class='flex hidden h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
           href='/signup'
         >
-          <span>Sign Up</span>
+          <span>{translations.signup}</span>
         </a>
       </li>
     </ul>
@@ -73,7 +74,7 @@ import AccountDropdown from './AccountDropdown.astro';
       <ul class='flex w-full flex-col items-center gap-2 md:gap-3'>
         <li>
           <a href='/roadmaps' class='text-xl hover:text-blue-300 md:text-lg'>
-            Roadmaps
+            {translations.roadmaps}
           </a>
         </li>
         <li>
@@ -81,17 +82,17 @@ import AccountDropdown from './AccountDropdown.astro';
             href='/best-practices'
             class='text-xl hover:text-blue-300 md:text-lg'
           >
-            Best Practices
+            {translations.bestPractices}
           </a>
         </li>
         <li>
           <a href='/guides' class='text-xl hover:text-blue-300 md:text-lg'>
-            Guides
+            {translations.guides}
           </a>
         </li>
         <li>
           <a href='/videos' class='text-xl hover:text-blue-300 md:text-lg'>
-            Videos
+            {translations.videos}
           </a>
         </li>
 
@@ -101,7 +102,7 @@ import AccountDropdown from './AccountDropdown.astro';
             href='/account'
             class='text-xl hover:text-blue-300 md:text-lg'
           >
-            Account
+            {translations.account}
           </a>
         </li>
         <li data-auth-required class='hidden'>
@@ -109,7 +110,7 @@ import AccountDropdown from './AccountDropdown.astro';
             data-logout-button
             class='text-xl text-red-300 hover:text-red-400 md:text-lg'
           >
-            Logout
+            {translations.logout}
           </button>
         </li>
         <li>
@@ -118,7 +119,7 @@ import AccountDropdown from './AccountDropdown.astro';
             href='/login'
             class='hidden text-xl text-white md:text-lg'
           >
-            Login
+            {translations.login}
           </a>
         </li>
         <li>
@@ -127,7 +128,7 @@ import AccountDropdown from './AccountDropdown.astro';
             href='/signup'
             class='hidden text-xl text-green-300 hover:text-green-400 md:text-lg'
           >
-            Sign Up
+            {translations.signup}
           </a>
         </li>
       </ul>

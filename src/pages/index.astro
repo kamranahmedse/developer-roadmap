@@ -7,6 +7,7 @@ import { getAllBestPractices } from '../lib/best-pratice';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
+import translations from '../translations.json';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
@@ -27,7 +28,7 @@ const videos = await getAllVideos();
         <h1
           class='text-2xl sm:text-5xl mb-2 sm:mb-4 font-bold bg-gradient-to-b from-amber-50 to-purple-500 text-transparent bg-clip-text'
         >
-          Developer Roadmaps
+          {translations['hero.title']}
         </h1>
 
         <p class='hidden sm:block text-gray-400 text-lg px-4'>
@@ -42,7 +43,7 @@ const videos = await getAllVideos();
     </div>
 
     <FeaturedItems
-      heading='Role based Roadmaps'
+      heading={translations['home.roleBasedRoadmaps']}
       featuredItems={roleRoadmaps.map((roadmapItem) => ({
         text: roadmapItem.frontmatter.briefTitle,
         url: `/${roadmapItem.id}`,
@@ -52,7 +53,7 @@ const videos = await getAllVideos();
     />
 
     <FeaturedItems
-      heading='Skill based Roadmaps'
+      heading={translations['home.skillBasedRoadmaps']}
       featuredItems={skillRoadmaps.map((roadmapItem) => ({
         text: roadmapItem.frontmatter.briefTitle === 'Go' ? 'Go Roadmap' : roadmapItem.frontmatter.briefTitle,
         url: `/${roadmapItem.id}`,
@@ -62,7 +63,7 @@ const videos = await getAllVideos();
     />
 
     <FeaturedItems
-      heading='Best Practices'
+      heading={translations.bestPractices}
       featuredItems={bestPractices.map((bestPractice) => ({
         text: bestPractice.frontmatter.briefTitle,
         url: `/best-practices/${bestPractice.id}`,
@@ -72,8 +73,8 @@ const videos = await getAllVideos();
     />
 
     <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
-      <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
-      <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
+      <FeaturedGuides heading={translations.guides} guides={guides.slice(0, 7)} />
+      <FeaturedVideos heading={translations.videos} videos={videos.slice(0, 7)} />
     </div>
   </div>
 </BaseLayout>

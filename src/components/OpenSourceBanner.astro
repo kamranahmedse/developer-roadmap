@@ -1,13 +1,14 @@
 ---
 import { getFormattedStars } from '../lib/github';
 import Icon from './AstroIcon.astro';
+import translations from '../translations.json';
 
 const starCount = await getFormattedStars('kamranahmedse/developer-roadmap');
 ---
 
 <div class='py-6 sm:py-16 border-b border-t text-left sm:text-center bg-white'>
   <div class='max-w-[600px] container'>
-    <h2 class='text-2xl sm:text-5xl font-bold'>Community</h2>
+    <h2 class='text-2xl sm:text-5xl font-bold'>{translations.community}</h2>
     <p class='text-gray-600 text-sm sm:text-lg leading-relaxed my-2.5 sm:my-5'>
       roadmap.sh is the <a
         href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
@@ -35,7 +36,7 @@ const starCount = await getFormattedStars('kamranahmedse/developer-roadmap');
         class='relative pointer inline-flex items-center border border-black py-1.5 px-3 rounded-lg text-sm hover:text-white hover:bg-black bg-white group'
       >
         <Icon icon='discord' class='h-[14px] mr-2 -ml-1 fill-current' />
-        Join on Discord
+        {translations.joinDiscord}
       </a>
     </div>
   </div>
