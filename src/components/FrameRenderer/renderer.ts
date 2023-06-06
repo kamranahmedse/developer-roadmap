@@ -51,7 +51,6 @@ export class Renderer {
 
     this.resourceType = dataset.resourceType!;
     this.resourceId = dataset.resourceId!;
-    this.jsonUrl = dataset.jsonUrl!;
 
     return true;
   }
@@ -130,13 +129,19 @@ export class Renderer {
     this.trackVisit();
 
     if (roadmapType) {
-      this.switchRoadmap(`/jsons/roadmaps/${roadmapType}.json`);
+      this.switchRoadmap(`/${roadmapType}.json`);
     } else {
-      this.jsonToSvg(this.jsonUrl);
+      this.jsonToSvg(
+        this.resourceType === 'roadmap'
+          ? `/${this.resourceId}.json`
+          : `/best-practices/${this.resourceId}.json`
+      );
     }
   }
 
   switchRoadmap(newJsonUrl: string) {
+    this.containerEl?.setAttribute('style', '');
+
     const newJsonFileSlug = newJsonUrl.split('/').pop()?.replace('.json', '');
 
     // Update the URL and attach the new roadmap type
@@ -145,25 +150,15 @@ export class Renderer {
       const type = this.resourceType[0]; // r for roadmap, b for best-practices
 
       url.searchParams.delete(type);
-      url.searchParams.set(type, newJsonFileSlug!);
+
+      if (newJsonFileSlug !== this.resourceId) {
+        url.searchParams.set(type, newJsonFileSlug!);
+      }
 
       window.history.pushState(null, '', url.toString());
     }
 
-    const pageType = this.resourceType.replace(/\b\w/g, (l) => l.toUpperCase());
-
-    window.fireEvent({
-      // RoadmapClick, BestPracticesClick, etc
-      category: `${pageType.replace('-', '')}Click`,
-      // roadmap/frontend/switch-version
-      action: `${this.resourceId}/switch-version`,
-      // roadmap/frontend/switch-version
-      label: `${newJsonFileSlug}`,
-    });
-
-    this.jsonToSvg(newJsonUrl)?.then(() => {
-      this.containerEl?.setAttribute('style', '');
-    });
+    this.jsonToSvg(newJsonUrl)?.then(() => {});
   }
 
   handleSvgClick(e: any) {
