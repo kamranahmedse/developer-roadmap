@@ -98,5 +98,20 @@
 
   "profile.tagline": "Update your profile details below.",
 
-  "password.tagline": "Use the form below to update your password."
+  "password.tagline": "Use the form below to update your password.",
+
+  "forgotPassword": "Forgot Password?",
+  "forgotPassword.tagline": "Enter your email address below and we will send you a link to reset your password.",
+
+  "resetPassword": "Reset Password",
+  "resetPassword.tagline": "Enter and confirm your new password below.",
+
+  "verifyingAccount": "Verifying your account",
+  "verifyingAccount.loading": "Please wait while we verify your account..",
+
+  "sendingEmail": "Sending the email..",
+  "verifyEmailMessage": "Verify your email address",
+  "verifyEmailMessage.description": "We have sent you an email at [-]. Please click the link to verify your account. This link will expire shortly, so please verify soon!",
+  "verifyEmailMessage.spam": "Please make sure to check your spam folder. If you still don't have the email click to resend verification email.",
+  "verifyEmailMessage.resent": "Verification email has been sent!"
 }
