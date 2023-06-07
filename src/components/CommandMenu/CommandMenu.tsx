@@ -9,6 +9,7 @@ import UserIcon from '../../icons/user.svg';
 import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
+import translations from '../../translations.json';
 
 type PageType = {
   url: string;
@@ -19,23 +20,38 @@ type PageType = {
 };
 
 const defaultPages: PageType[] = [
-  { url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
+  { url: '/', title: translations.home, group: 'Pages', icon: HomeIcon },
   {
     url: '/account',
-    title: 'Account',
+    title: translations.account,
     group: 'Pages',
     icon: UserIcon,
     isProtected: true,
   },
-  { url: '/roadmaps', title: 'Roadmaps', group: 'Pages', icon: RoadmapIcon },
+  {
+    url: '/roadmaps',
+    title: translations.roadmaps,
+    group: 'Pages',
+    icon: RoadmapIcon,
+  },
   {
     url: '/best-practices',
-    title: 'Best Practices',
+    title: translations.bestPractices,
     group: 'Pages',
     icon: BestPracticesIcon,
   },
-  { url: '/guides', title: 'Guides', group: 'Pages', icon: GuideIcon },
-  { url: '/videos', title: 'Videos', group: 'Pages', icon: VideoIcon },
+  {
+    url: '/guides',
+    title: translations.guides,
+    group: 'Pages',
+    icon: GuideIcon,
+  },
+  {
+    url: '/videos',
+    title: translations.videos,
+    group: 'Pages',
+    icon: VideoIcon,
+  },
 ];
 
 function shouldShowPage(page: PageType) {
