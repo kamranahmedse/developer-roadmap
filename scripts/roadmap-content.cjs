@@ -3,7 +3,6 @@ const path = require('path');
 
 const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
 const ALL_ROADMAPS_DIR = path.join(__dirname, '../src/data/roadmaps');
-const ROADMAP_JSON_DIR = path.join(__dirname, '../public/jsons/roadmaps');
 
 const roadmapId = process.argv[2];
 
@@ -139,7 +138,11 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 async function run() {
   const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
 
-  const roadmapJson = require(path.join(ROADMAP_JSON_DIR, `${roadmapId}.json`));
+  const roadmapJson = require(path.join(
+      ALL_ROADMAPS_DIR,
+      `${roadmapId}/${roadmapId}`
+  ));
+
   const groups = roadmapJson?.mockup?.controls?.control?.filter(
     (control) =>
       control.typeID === '__group__' &&
