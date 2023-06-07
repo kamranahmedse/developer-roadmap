@@ -11,6 +11,7 @@ import {
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
+import { t } from '../../helpers/translate';
 
 type TopicProgressButtonProps = {
   topicId: string;
@@ -176,7 +177,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
           ></span>
         </span>
         <span className="ml-2 capitalize">
-          {progress === 'learning' ? 'In Progress' : progress}
+          {progress === 'learning' ? t('inProgress') : t(progress)}
         </span>
       </span>
 
@@ -184,7 +185,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         className="inline-flex cursor-pointer items-center rounded-br-md rounded-tr-md border-l border-l-gray-300 bg-gray-100 p-1 px-2 text-sm text-black hover:bg-gray-200"
         onClick={() => setShowChangeStatus(true)}
       >
-        <span className="mr-0.5">Update Status</span>
+        <span className="mr-0.5">{t('updateStatus')}</span>
         <img alt="Check" class="h-4 w-4" src={DownIcon} />
       </button>
 
@@ -202,7 +203,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
                 <span
                   class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
                 ></span>
-                Done
+                {t('done')}
               </span>
               <span class="text-xs text-gray-500">D</span>
             </button>
@@ -216,7 +217,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
                 <span
                   class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
                 ></span>
-                In Progress
+                {t('inProgress')}
               </span>
 
               <span class="text-xs text-gray-500">L</span>
@@ -231,7 +232,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
                 <span
                   class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
                 ></span>
-                Reset
+                {t('reset')}
               </span>
               <span class="text-xs text-gray-500">R</span>
             </button>
@@ -245,7 +246,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
                 <span
                   class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
                 ></span>
-                Skip
+                {t('skip')}
               </span>
               <span class="text-xs text-gray-500">S</span>
             </button>

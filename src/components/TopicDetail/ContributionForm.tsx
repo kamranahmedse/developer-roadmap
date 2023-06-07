@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
+import { t } from '../../helpers/translate';
 
 type ContributionInputProps = {
   id: number;
@@ -49,7 +50,7 @@ function ContributionInput(props: ContributionInputProps) {
           focused === 'title' ? 'text-black' : 'text-gray-400'
         }`}
       >
-        Resource Title
+        {t('resourceTitle')}
       </p>
       <input
         ref={titleRef}
@@ -66,7 +67,7 @@ function ContributionInput(props: ContributionInputProps) {
           focused === 'link' ? 'text-black' : 'text-gray-400'
         }`}
       >
-        Resource Link
+        {t('resourceLink')}
       </p>
       <input
         type="url"
@@ -87,7 +88,7 @@ function ContributionInput(props: ContributionInputProps) {
             }}
             className="rounded-md text-sm font-semibold text-red-500 underline underline-offset-2 hover:text-red-800"
           >
-            - Remove Link
+            - {t('removeLink')}
           </button>
         )}
 
@@ -99,7 +100,7 @@ function ContributionInput(props: ContributionInputProps) {
             }}
             className="rounded-md text-sm font-semibold text-gray-600 underline underline-offset-2 hover:text-black"
           >
-            + Add another Link
+            + {t('addAnotherLink')}
           </button>
         )}
       </div>
@@ -154,14 +155,16 @@ export function ContributionForm(props: ContributionFormProps) {
   return (
     <div>
       <div className="mb-2 mt-2 rounded-md border bg-gray-100 p-3">
-        <h1 className="mb-2 text-2xl font-bold">Guidelines</h1>
+        <h1 className="mb-2 text-2xl font-bold">{t('guidelines')}</h1>
         <ul class="flex flex-col gap-1 text-sm text-gray-700">
-          <li>Content should only be in English.</li>
-          <li>Do not add things you have not evaluated personally.</li>
-          <li>It should strictly be relevant to the topic.</li>
-          <li>It should not be paid or behind a signup.</li>
+          <li>{t('Content should only be in English.')}</li>
+          <li>{t('Do not add things you have not evaluated personally.')}</li>
+          <li>{t('It should strictly be relevant to the topic.')}</li>
+          <li>{t('It should not be paid or behind a signup.')}</li>
           <li>
-            Quality over quantity. Smaller set of quality links is preferred.
+            {t(
+              'Quality over quantity. Smaller set of quality links is preferred.'
+            )}
           </li>
         </ul>
       </div>
@@ -208,7 +211,7 @@ export function ContributionForm(props: ContributionFormProps) {
             type="submit"
             className="block w-full rounded-md bg-gray-800 p-2 text-sm text-white hover:bg-black disabled:cursor-not-allowed disabled:bg-gray-400"
           >
-            {isSubmitting ? 'Please wait ...' : 'Submit'}
+            {isSubmitting ? t('pleaseWait') : t('submit')}
           </button>
           <button
             className="block w-full rounded-md border border-red-500 p-2 text-sm text-red-600 hover:bg-red-600 hover:text-white"
@@ -217,7 +220,7 @@ export function ContributionForm(props: ContributionFormProps) {
               onClose();
             }}
           >
-            Cancel
+            {t('cancel')}
           </button>
         </div>
       </form>
