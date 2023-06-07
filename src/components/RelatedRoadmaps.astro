@@ -1,5 +1,6 @@
 ---
 import { getRoadmapsByIds, RoadmapFrontmatter } from '../lib/roadmap';
+import translations from '../translations.json';
 
 export interface Props {
   roadmap: RoadmapFrontmatter;
@@ -17,10 +18,15 @@ const relatedRoadmapDetails = await getRoadmapsByIds(relatedRoadmaps);
 
 <div class='border-t bg-gray-100'>
   <div class='container'>
-    <div class='flex justify-between relative -top-5'>
-      <h1 class='text-md font-medium py-1 px-3 border bg-white rounded-md'>Related Roadmaps</h1>
-      <a href='/roadmaps' class='text-md font-medium py-1 px-3 border bg-white rounded-md hover:bg-gray-50'>
-        <span class='hidden sm:inline'>All Roadmaps &rarr;</span>
+    <div class='relative -top-5 flex justify-between'>
+      <h1 class='text-md rounded-md border bg-white px-3 py-1 font-medium'>
+        {translations.relatedRoadmaps}
+      </h1>
+      <a
+        href='/roadmaps'
+        class='text-md rounded-md border bg-white px-3 py-1 font-medium hover:bg-gray-50'
+      >
+        <span class='hidden sm:inline'>{translations.allRoadmaps} &rarr;</span>
         <span class='inline sm:hidden'>More &rarr;</span>
       </a>
     </div>
@@ -30,10 +36,14 @@ const relatedRoadmapDetails = await getRoadmapsByIds(relatedRoadmaps);
         relatedRoadmapDetails.map((relatedRoadmap) => (
           <a
             href={`/${relatedRoadmap.id}`}
-            class='py-2 px-3.5 bg-white border rounded-md hover:bg-gray-50 flex flex-col sm:flex-row gap-0.5 sm:gap-0'
+            class='flex flex-col gap-0.5 rounded-md border bg-white px-3.5 py-2 hover:bg-gray-50 sm:flex-row sm:gap-0'
           >
-            <span class='font-medium inline-block min-w-[150px]'>{relatedRoadmap.frontmatter.briefTitle}</span>
-            <span class='text-gray-500'>{relatedRoadmap.frontmatter.briefDescription}</span>
+            <span class='inline-block min-w-[150px] font-medium'>
+              {relatedRoadmap.frontmatter.briefTitle}
+            </span>
+            <span class='text-gray-500'>
+              {relatedRoadmap.frontmatter.briefDescription}
+            </span>
           </a>
         ))
       }

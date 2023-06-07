@@ -29,11 +29,15 @@
   "download": "Download",
   "subscribe": "Subscribe",
   "visualRoadmap": "Visual Roadmap",
+  "frequentlyAskedQuestions": "Frequently Asked Questions",
+  "relatedRoadmaps": "Related Roadmaps",
+  "new": "New",
 
   "developerRoadmaps": "Developer Roadmaps",
   "roadmaps.tagline": "Step by step guides and paths to learn different tools or technologies.",
   "roadmaps.tip.default": "Track your progress and learn by clicking roadmap items.",
   "roadmaps.tip.mob": "Track your progress and learn about the topics by clicking the roadmap items.",
+  "youtubeAlert": "Roadmap topics to be covered on YouTube",
 
   "bestPractices.tagline": "Best practices on different topics with detailed implementation guidelines.",
   "guides.tagline": "Succinct graphical explanations to engineering topics.",

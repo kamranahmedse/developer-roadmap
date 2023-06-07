@@ -1,12 +1,16 @@
+---
+import translations from '../translations.json';
+---
+
 <a
-    href="https://youtube.com/theroadmap?sub_confirmation=1"
-    target="_blank"
-    class="text-md hidden sm:flex items-center text-red-600 group hover:text-red-900"
+  href='https://youtube.com/theroadmap?sub_confirmation=1'
+  target='_blank'
+  class='text-md group hidden items-center text-red-600 hover:text-red-900 sm:flex'
 >
-    <span
-        class="bg-red-600 group-hover:bg-red-800 group-hover: px-1.5 py-0.5 rounded-sm text-white text-xs uppercase font-medium mr-2"
-        >New</span
-    >
-    <span class="underline mr-1">Roadmap topics to be covered on YouTube</span>
-    <span>&raquo;</span>
+  <span
+    class='group-hover: mr-2 rounded-sm bg-red-600 px-1.5 py-0.5 text-xs font-medium uppercase text-white group-hover:bg-red-800'
+    >{translations.new}</span
+  >
+  <span class='mr-1 underline'>{translations.youtubeAlert}</span>
+  <span>&raquo;</span>
 </a>
