@@ -91,6 +91,7 @@
   "guidesTagline": "Succinct graphical explanations to engineering topics.",
   "videosTagline": "Graphical video demonstrations on software engineering topics.",
 
+  "fullName": "Full Name",
   "name": "Name",
   "email": "Email",
   "github": "Github",
@@ -213,5 +214,17 @@
   "pageNotFoundDescription": "Sorry, we couldn't find the page you are looking for.",
   "homePage": "Homepage",
   "verifyEmail": "Verify Email",
-  "verifyAccount": "Verify Account"
+  "verifyAccount": "Verify Account",
+
+  "Search roadmaps, guides or pages ..": "Search roadmaps, guides or pages ..",
+  "e.g. Introduction to RESTful APIs": "e.g. Introduction to RESTful APIs",
+  "e.g. https://roadmap.sh/guides/some-url": "e.g. https://roadmap.sh/guides/some-url",
+  "Search for a topic": "Search for a topic",
+
+  "johnDoe": "John Doe",
+  "emailExample": "john@example.com",
+  "githubPlaceholder": "https://github.com/username",
+  "twitterPlaceholder": "https://twitter.com/username",
+  "linkedinPlaceholder": "https://linkedin.com/in/username",
+  "websitePlaceholder": "https://example.com",
 }

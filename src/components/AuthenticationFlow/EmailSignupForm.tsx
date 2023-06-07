@@ -53,7 +53,7 @@ const EmailSignupForm: FunctionComponent = () => {
         max={50}
         required
         className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        placeholder="Full Name"
+        placeholder={t('fullName')}
         value={name}
         onInput={(e) => setName(String((e.target as any).value))}
       />
@@ -66,7 +66,7 @@ const EmailSignupForm: FunctionComponent = () => {
         autoComplete="email"
         required
         className="block w-full rounded-lg border border-gray-300 px-3 py-2  outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        placeholder="Email Address"
+        placeholder={t('emailAddress')}
         value={email}
         onInput={(e) => setEmail(String((e.target as any).value))}
       />
@@ -81,7 +81,7 @@ const EmailSignupForm: FunctionComponent = () => {
         max={50}
         required
         className="block w-full rounded-lg border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        placeholder="Password"
+        placeholder={t('password')}
         value={password}
         onInput={(e) => setPassword(String((e.target as any).value))}
       />

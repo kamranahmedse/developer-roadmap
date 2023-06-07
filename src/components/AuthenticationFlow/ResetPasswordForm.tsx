@@ -68,7 +68,7 @@ export default function ResetPasswordForm() {
         className="mb-2 mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         required
         minLength={6}
-        placeholder="New Password"
+        placeholder={t('newPassword')}
         value={password}
         onInput={(e) => setPassword((e.target as HTMLInputElement).value)}
       />
@@ -78,7 +78,7 @@ export default function ResetPasswordForm() {
         className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none transition duration-150 ease-in-out placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         required
         minLength={6}
-        placeholder="Confirm New Password"
+        placeholder={t('confirmNewPassword')}
         value={passwordConfirm}
         onInput={(e) =>
           setPasswordConfirm((e.target as HTMLInputElement).value)

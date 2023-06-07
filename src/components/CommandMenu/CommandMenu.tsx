@@ -147,7 +147,7 @@ export function CommandMenu() {
             type="text"
             value={searchedText}
             className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-none"
-            placeholder="Search roadmaps, guides or pages .."
+            placeholder={t("Search roadmaps, guides or pages ..")}
             autocomplete="off"
             onInput={(e) => {
               const value = (e.target as HTMLInputElement).value.trim();

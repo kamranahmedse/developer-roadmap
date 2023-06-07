@@ -59,7 +59,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         autoComplete="email"
         required
         className="block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        placeholder="Email Address"
+        placeholder={t("emailAddress")}
         value={email}
         onInput={(e) => setEmail(String((e.target as any).value))}
       />
@@ -71,7 +71,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         type="password"
         autoComplete="current-password"
         required
-        placeholder="Password"
+        placeholder={t("password")}
         className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         value={password}
         onInput={(e) => setPassword(String((e.target as any).value))}

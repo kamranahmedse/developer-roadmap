@@ -1,19 +1,22 @@
 ---
 import Icon from '../AstroIcon.astro';
+import { t } from '../../helpers/translate';
 ---
 
 <script src='./topics.js'></script>
 
-<div class='sm:-mb-[68px] mt-5 sm:mt-6 relative'>
+<div class='relative mt-5 sm:-mb-[68px] sm:mt-6'>
   <input
     autofocus
     type='text'
     id='search-topic-input'
-    class='border border-gray-300 text-gray-900 text-sm sm:text-md rounded-md focus:ring-blue-500 focus:border-blue-500 block w-full px-2.5 sm:px-3 py-2'
-    placeholder='Search for a topic'
+    class='sm:text-md block w-full rounded-md border border-gray-300 px-2.5 py-2 text-sm text-gray-900 focus:border-blue-500 focus:ring-blue-500 sm:px-3'
+    placeholder={t('Search for a topic')}
   />
 
-  <span class='absolute top-1/2 -translate-y-1/2 right-4 flex items-center text-sm text-gray-500'>
+  <span
+    class='absolute right-4 top-1/2 flex -translate-y-1/2 items-center text-sm text-gray-500'
+  >
     <Icon icon='search' />
   </span>
 </div>

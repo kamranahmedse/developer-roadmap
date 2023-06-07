@@ -57,7 +57,7 @@ function ContributionInput(props: ContributionInputProps) {
         type="text"
         required
         className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-none"
-        placeholder="e.g. Introduction to RESTful APIs"
+        placeholder={t('e.g. Introduction to RESTful APIs')}
         onFocus={() => setFocused('title')}
         onBlur={() => setFocused('')}
         onChange={(e) => setTitle((e.target as any).value)}
@@ -73,7 +73,7 @@ function ContributionInput(props: ContributionInputProps) {
         type="url"
         required
         className="block w-full rounded-md border p-2 text-sm focus:border-gray-400 focus:outline-none"
-        placeholder="e.g. https://roadmap.sh/guides/some-url"
+        placeholder={t('e.g. https://roadmap.sh/guides/some-url')}
         onFocus={() => setFocused('link')}
         onBlur={() => setFocused('')}
         onChange={(e) => setLink((e.target as any).value)}

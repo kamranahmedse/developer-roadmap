@@ -100,7 +100,7 @@ export default function UpdatePasswordForm() {
               className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-100"
               required
               minLength={6}
-              placeholder="Current password"
+              placeholder={t('currentPassword')}
               value={currentPassword}
               onInput={(e) =>
                 setCurrentPassword((e.target as HTMLInputElement).value)
@@ -123,7 +123,7 @@ export default function UpdatePasswordForm() {
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
-            placeholder="New password"
+            placeholder={t('newPassword')}
             value={newPassword}
             onInput={(e) =>
               setNewPassword((e.target as HTMLInputElement).value)
@@ -144,7 +144,7 @@ export default function UpdatePasswordForm() {
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
-            placeholder="Confirm New Password"
+            placeholder={t('confirmNewPassword')}
             value={newPasswordConfirmation}
             onInput={(e) =>
               setNewPasswordConfirmation((e.target as HTMLInputElement).value)

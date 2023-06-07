@@ -107,7 +107,7 @@ export function UpdateProfileForm() {
             id="name"
             className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
-            placeholder="John Doe"
+            placeholder={t('johnDoe')}
             value={name}
             onInput={(e) => setName((e.target as HTMLInputElement).value)}
           />
@@ -126,7 +126,7 @@ export function UpdateProfileForm() {
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             disabled
-            placeholder="john@example.com"
+            placeholder={t('emailExample')}
             value={email}
           />
         </div>
@@ -140,7 +140,7 @@ export function UpdateProfileForm() {
             name="github"
             id="github"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://github.com/username"
+            placeholder={t('githubPlaceholder')}
             value={github}
             onInput={(e) => setGithub((e.target as HTMLInputElement).value)}
           />
@@ -154,7 +154,7 @@ export function UpdateProfileForm() {
             name="twitter"
             id="twitter"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://twitter.com/username"
+            placeholder={t('twitterPlaceholder')}
             value={twitter}
             onInput={(e) => setTwitter((e.target as HTMLInputElement).value)}
           />
@@ -169,7 +169,7 @@ export function UpdateProfileForm() {
             name="linkedin"
             id="linkedin"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://www.linkedin.com/in/username/"
+            placeholder={t('linkedinPlaceholder')}
             value={linkedin}
             onInput={(e) => setLinkedin((e.target as HTMLInputElement).value)}
           />
@@ -184,7 +184,7 @@ export function UpdateProfileForm() {
             name="website"
             id="website"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://example.com"
+            placeholder={t('websitePlaceholder')}
             value={website}
             onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
           />
