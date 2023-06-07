@@ -3,7 +3,7 @@ import GuideListItem from '../../components/GuideListItem.astro';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides } from '../../lib/guide';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 const guides = await getAllGuides();
 ---
@@ -13,10 +13,7 @@ const guides = await getAllGuides();
   description={'Detailed guides on Software Engineering Topics'}
   permalink={`/guides`}
 >
-  <SimplePageHeader
-    title={translations.guides}
-    description={translations['guides.tagline']}
-  />
+  <SimplePageHeader title={t('guides')} description={t('guides.tagline')} />
 
   <div class='bg-gray-50 pb-20 pt-2'>
     <div class='container'>

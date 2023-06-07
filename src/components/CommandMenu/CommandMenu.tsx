@@ -9,7 +9,7 @@ import UserIcon from '../../icons/user.svg';
 import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 type PageType = {
   url: string;
@@ -20,35 +20,35 @@ type PageType = {
 };
 
 const defaultPages: PageType[] = [
-  { url: '/', title: translations.home, group: 'Pages', icon: HomeIcon },
+  { url: '/', title: t('home'), group: 'Pages', icon: HomeIcon },
   {
     url: '/account',
-    title: translations.account,
+    title: t('account'),
     group: 'Pages',
     icon: UserIcon,
     isProtected: true,
   },
   {
     url: '/roadmaps',
-    title: translations.roadmaps,
+    title: t('roadmaps'),
     group: 'Pages',
     icon: RoadmapIcon,
   },
   {
     url: '/best-practices',
-    title: translations.bestPractices,
+    title: t('bestPractices'),
     group: 'Pages',
     icon: BestPracticesIcon,
   },
   {
     url: '/guides',
-    title: translations.guides,
+    title: t('guides'),
     group: 'Pages',
     icon: GuideIcon,
   },
   {
     url: '/videos',
-    title: translations.videos,
+    title: t('videos'),
     group: 'Pages',
     icon: VideoIcon,
   },

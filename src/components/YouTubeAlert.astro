@@ -1,5 +1,5 @@
 ---
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 ---
 
 <a
@@ -9,8 +9,8 @@ import translations from '../translations.json';
 >
   <span
     class='group-hover: mr-2 rounded-sm bg-red-600 px-1.5 py-0.5 text-xs font-medium uppercase text-white group-hover:bg-red-800'
-    >{translations.new}</span
+    >{t('new')}</span
   >
-  <span class='mr-1 underline'>{translations.youtubeAlert}</span>
+  <span class='mr-1 underline'>{t('youtubeAlert')}</span>
   <span>&raquo;</span>
 </a>

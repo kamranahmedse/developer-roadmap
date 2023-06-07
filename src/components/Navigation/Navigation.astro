@@ -1,41 +1,54 @@
 ---
 import Icon from '../AstroIcon.astro';
 import AccountDropdown from './AccountDropdown.astro';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
-    <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
+    <a
+      class='flex items-center text-lg font-medium text-white'
+      href='/'
+      aria-label='roadmap.sh'
+    >
       <Icon icon='logo' />
     </a>
 
     <!-- Desktop navigation items -->
     <ul class='hidden space-x-5 sm:flex sm:items-center'>
       <li>
-        <a href='/roadmaps' class='text-gray-400 hover:text-white'>{translations.roadmaps}</a>
+        <a href='/roadmaps' class='text-gray-400 hover:text-white'
+          >{t('roadmaps')}</a
+        >
       </li>
       <li>
         <a href='/best-practices' class='text-gray-400 hover:text-white'
-          >{translations.bestPractices}</a
+          >{t('bestPractices')}</a
         >
       </li>
       <li class='hidden lg:inline'>
-        <a href='/guides' class='text-gray-400 hover:text-white'>{translations.guides}</a>
+        <a href='/guides' class='text-gray-400 hover:text-white'
+          >{t('guides')}</a
+        >
       </li>
       <li class='hidden lg:inline'>
-        <a href='/videos' class='text-gray-400 hover:text-white'>{translations.videos}</a>
+        <a href='/videos' class='text-gray-400 hover:text-white'
+          >{t('videos')}</a
+        >
       </li>
       <li>
-        <kbd data-command-menu class="hidden sm:flex items-center text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
-           <Icon icon='search' class='h-3 w-3 mr-2' />
-          <kbd class='font-sans mr-1'>⌘</kbd><kbd class='font-sans'>K</kbd>
+        <kbd
+          data-command-menu
+          class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 sm:flex'
+        >
+          <Icon icon='search' class='mr-2 h-3 w-3' />
+          <kbd class='mr-1 font-sans'>⌘</kbd><kbd class='font-sans'>K</kbd>
         </kbd>
       </li>
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
       <li data-guest-required class='hidden'>
-        <a href='/login' class='text-gray-400 hover:text-white'>{translations.login}</a>
+        <a href='/login' class='text-gray-400 hover:text-white'>{t('login')}</a>
       </li>
       <li>
         <AccountDropdown />
@@ -45,7 +58,7 @@ import translations from '../../translations.json';
           class='flex hidden h-8 w-28 cursor-pointer items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-blue-700 px-4 py-2 text-sm font-medium text-white hover:from-blue-500 hover:to-blue-600'
           href='/signup'
         >
-          <span>{translations.signup}</span>
+          <span>{t('signup')}</span>
         </a>
       </li>
     </ul>
@@ -74,7 +87,7 @@ import translations from '../../translations.json';
       <ul class='flex w-full flex-col items-center gap-2 md:gap-3'>
         <li>
           <a href='/roadmaps' class='text-xl hover:text-blue-300 md:text-lg'>
-            {translations.roadmaps}
+            {t('roadmaps')}
           </a>
         </li>
         <li>
@@ -82,27 +95,24 @@ import translations from '../../translations.json';
             href='/best-practices'
             class='text-xl hover:text-blue-300 md:text-lg'
           >
-            {translations.bestPractices}
+            {t('bestPractices')}
           </a>
         </li>
         <li>
           <a href='/guides' class='text-xl hover:text-blue-300 md:text-lg'>
-            {translations.guides}
+            {t('guides')}
           </a>
         </li>
         <li>
           <a href='/videos' class='text-xl hover:text-blue-300 md:text-lg'>
-            {translations.videos}
+            {t('videos')}
           </a>
         </li>
 
         <!-- Links for logged in users -->
         <li data-auth-required class='hidden'>
-          <a
-            href='/account'
-            class='text-xl hover:text-blue-300 md:text-lg'
-          >
-            {translations.account}
+          <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
+            {t('account')}
           </a>
         </li>
         <li data-auth-required class='hidden'>
@@ -110,7 +120,7 @@ import translations from '../../translations.json';
             data-logout-button
             class='text-xl text-red-300 hover:text-red-400 md:text-lg'
           >
-            {translations.logout}
+            {t('logout')}
           </button>
         </li>
         <li>
@@ -119,7 +129,7 @@ import translations from '../../translations.json';
             href='/login'
             class='hidden text-xl text-white md:text-lg'
           >
-            {translations.login}
+            {t('login')}
           </a>
         </li>
         <li>
@@ -128,7 +138,7 @@ import translations from '../../translations.json';
             href='/signup'
             class='hidden text-xl text-green-300 hover:text-green-400 md:text-lg'
           >
-            {translations.signup}
+            {t('signup')}
           </a>
         </li>
       </ul>

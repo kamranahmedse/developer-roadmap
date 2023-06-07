@@ -1,7 +1,7 @@
 import type { FunctionComponent } from 'preact';
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 const EmailSignupForm: FunctionComponent = () => {
   const [email, setEmail] = useState('');
@@ -95,9 +95,7 @@ const EmailSignupForm: FunctionComponent = () => {
         disabled={isLoading}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
-        {isLoading
-          ? translations.pleaseWait
-          : translations['signup.verifyEmail']}
+        {isLoading ? t('pleaseWait') : t('signup.verifyEmail')}
       </button>
     </form>
   );

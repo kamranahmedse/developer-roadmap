@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import UploadProfilePicture from './UploadProfilePicture';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export function UpdateProfileForm() {
   const [name, setName] = useState('');
@@ -83,10 +83,8 @@ export function UpdateProfileForm() {
   return (
     <div>
       <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          {translations.profile}
-        </h2>
-        <p className="mt-2">{translations['profile.tagline']}</p>
+        <h2 className="text-3xl font-bold sm:text-4xl">{t('profile')}</h2>
+        <p className="mt-2">{t('profile.tagline')}</p>
       </div>
       <UploadProfilePicture
         avatarUrl={
@@ -101,7 +99,7 @@ export function UpdateProfileForm() {
             for="name"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
-            {translations.name}
+            {t('name')}
           </label>
           <input
             type="text"
@@ -119,7 +117,7 @@ export function UpdateProfileForm() {
             for="email"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
-            {translations.email}
+            {t('email')}
           </label>
           <input
             type="email"
@@ -135,7 +133,7 @@ export function UpdateProfileForm() {
 
         <div className="flex w-full flex-col">
           <label for="github" className="text-sm leading-none text-slate-500">
-            {translations['github']}
+            {t('github')}
           </label>
           <input
             type="text"
@@ -149,7 +147,7 @@ export function UpdateProfileForm() {
         </div>
         <div className="flex w-full flex-col">
           <label for="twitter" className="text-sm leading-none text-slate-500">
-            {translations.twitter}
+            {t('twitter')}
           </label>
           <input
             type="text"
@@ -164,7 +162,7 @@ export function UpdateProfileForm() {
 
         <div className="flex w-full flex-col">
           <label for="linkedin" className="text-sm leading-none text-slate-500">
-            {translations.linkedin}
+            {t('linkedin')}
           </label>
           <input
             type="text"
@@ -179,7 +177,7 @@ export function UpdateProfileForm() {
 
         <div className="flex w-full flex-col">
           <label for="website" className="text-sm leading-none text-slate-500">
-            {translations.website}
+            {t('website')}
           </label>
           <input
             type="text"
@@ -207,7 +205,7 @@ export function UpdateProfileForm() {
           disabled={isLoading}
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          {isLoading ? translations.pleaseWait : translations.continue}
+          {isLoading ? t('pleaseWait') : t('continue')}
         </button>
       </form>
     </div>

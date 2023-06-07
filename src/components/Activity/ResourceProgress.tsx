@@ -1,7 +1,7 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -87,7 +87,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           {doneCount > 0 && (
             <>
               <span>
-                {doneCount} {translations.done}
+                {doneCount} {t('done')}
               </span>{' '}
               &bull;
             </>
@@ -95,7 +95,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           {learningCount > 0 && (
             <>
               <span>
-                {learningCount} {translations.inProgress?.toLowerCase()}
+                {learningCount} {t('inProgress')?.toLowerCase()}
               </span>{' '}
               &bull;
             </>
@@ -103,13 +103,13 @@ export function ResourceProgress(props: ResourceProgressType) {
           {skippedCount > 0 && (
             <>
               <span>
-                {skippedCount} {translations.skipped?.toLowerCase()}
+                {skippedCount} {t('skipped')?.toLowerCase()}
               </span>{' '}
               &bull;
             </>
           )}
           <span>
-            {totalCount} {translations.total?.toLowerCase()}
+            {totalCount} {t('total')?.toLowerCase()}
           </span>
         </span>
         {!isConfirming && (
@@ -120,28 +120,28 @@ export function ResourceProgress(props: ResourceProgressType) {
           >
             {!isClearing && (
               <>
-                {translations.clearProgress} <span>&times;</span>
+                {t('clearProgress')} <span>&times;</span>
               </>
             )}
 
-            {isClearing && translations.processing}
+            {isClearing && t('processing')}
           </button>
         )}
 
         {isConfirming && (
           <span>
-            {translations.areYouSure}{' '}
+            {t('areYouSure')}{' '}
             <button
               onClick={clearProgress}
               className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
             >
-              {translations.yes}
+              {t('yes')}
             </button>{' '}
             <button
               onClick={() => setIsConfirming(false)}
               className="text-red-500 underline hover:text-red-800"
             >
-              {translations.no}
+              {t('no')}
             </button>
           </span>
         )}

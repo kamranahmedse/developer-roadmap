@@ -5,7 +5,7 @@ import { useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpPost } from '../../lib/http';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -71,10 +71,10 @@ export function TriggerVerifyAccount() {
           />
         )}
         <h2 className="mb-1 mt-4 text-center text-xl font-semibold sm:mb-3 sm:mt-4 sm:text-2xl">
-          {translations.verifyingAccount}
+          {t('verifyingAccount')}
         </h2>
         <div className="text-sm sm:text-base">
-          {isLoading && <p>{translations['verifyingAccount.loading']}</p>}
+          {isLoading && <p>{t('verifyingAccount.loading')}</p>}
           {error && <p class="text-red-700">{error}</p>}
         </div>
       </div>

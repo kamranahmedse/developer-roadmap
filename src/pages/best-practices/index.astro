@@ -3,7 +3,7 @@ import GridItem from '../../components/GridItem.astro';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllBestPractices } from '../../lib/best-pratice';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 const bestPractices = await getAllBestPractices();
 ---
@@ -14,8 +14,8 @@ const bestPractices = await getAllBestPractices();
   permalink={'/best-practices'}
 >
   <SimplePageHeader
-    title={translations.bestPractices}
-    description={translations['bestPractices.tagline']}
+    title={t('bestPractices')}
+    description={t('bestPractices.tagline')}
   />
 
   <div class='bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>

@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export default function UpdatePasswordForm() {
   const [authProvider, setAuthProvider] = useState('');
@@ -80,10 +80,8 @@ export default function UpdatePasswordForm() {
   return (
     <form onSubmit={handleSubmit}>
       <div class="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          {translations.password}
-        </h2>
-        <p className="mt-2">{translations['password.tagline']}</p>
+        <h2 className="text-3xl font-bold sm:text-4xl">{t('password')}</h2>
+        <p className="mt-2">{t('password.tagline')}</p>
       </div>
       <div className="space-y-4">
         {authProvider === 'email' && (
@@ -92,7 +90,7 @@ export default function UpdatePasswordForm() {
               for="current-password"
               className="text-sm leading-none text-slate-500"
             >
-              {translations.currentPassword}
+              {t('currentPassword')}
             </label>
             <input
               disabled={authProvider !== 'email'}
@@ -116,7 +114,7 @@ export default function UpdatePasswordForm() {
             for="new-password"
             className="text-sm leading-none text-slate-500"
           >
-            {translations.newPassword}
+            {t('newPassword')}
           </label>
           <input
             type="password"
@@ -137,7 +135,7 @@ export default function UpdatePasswordForm() {
             for="new-password-confirmation"
             className="text-sm leading-none text-slate-500"
           >
-            {translations.confirmNewPassword}
+            {t('confirmNewPassword')}
           </label>
           <input
             type="password"
@@ -169,7 +167,7 @@ export default function UpdatePasswordForm() {
           disabled={isLoading}
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          {isLoading ? translations.pleaseWait : translations.updatePassword}
+          {isLoading ? t('pleaseWait') : t('updatePassword')}
         </button>
       </div>
     </form>

@@ -1,4 +1,4 @@
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 type ActivityCountersType = {
   done: {
@@ -37,17 +37,17 @@ export function ActivityCounters(props: ActivityCountersType) {
     <div class="mx-0 -mt-5 sm:-mx-10 md:-mt-10">
       <div class="flex flex-col gap-0 divide-x-0 divide-y border-b sm:flex-row sm:gap-2 sm:divide-x sm:divide-y-0">
         <ActivityCounter
-          text={translations.topicsCompleted}
+          text={t('topicsCompleted')}
           count={`${done?.total || 0}`}
         />
 
         <ActivityCounter
-          text={translations.currentlyLearning}
+          text={t('currentlyLearning')}
           count={`${learning?.total || 0}`}
         />
 
         <ActivityCounter
-          text={translations.visitStreak}
+          text={t('visitStreak')}
           count={`${streak?.count || 0}d`}
         />
       </div>

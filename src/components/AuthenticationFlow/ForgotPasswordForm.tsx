@@ -1,6 +1,6 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export function ForgotPasswordForm() {
   const [email, setEmail] = useState('');
@@ -58,7 +58,7 @@ export function ForgotPasswordForm() {
         disabled={isLoading}
         className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
-        {isLoading ? translations.pleaseWait : translations.continue}
+        {isLoading ? t('pleaseWait') : t('continue')}
       </button>
     </form>
   );

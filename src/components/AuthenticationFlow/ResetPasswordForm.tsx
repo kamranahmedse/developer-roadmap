@@ -2,7 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export default function ResetPasswordForm() {
   const [code, setCode] = useState('');
@@ -94,7 +94,7 @@ export default function ResetPasswordForm() {
         disabled={isLoading}
         className="mt-2 inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
-        {isLoading ? translations.pleaseWait : translations.resetPassword}
+        {isLoading ? t('pleaseWait') : t('resetPassword')}
       </button>
     </form>
   );

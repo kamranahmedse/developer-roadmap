@@ -32,6 +32,9 @@
   "frequentlyAskedQuestions": "Frequently Asked Questions",
   "relatedRoadmaps": "Related Roadmaps",
   "new": "New",
+  "go": "Go",
+  "goRoadmap": "Go Roadmap",
+  "more": "More",
 
   "developerRoadmaps": "Developer Roadmaps",
   "roadmaps.tagline": "Step by step guides and paths to learn different tools or technologies.",
@@ -78,6 +81,7 @@
 
   "hero.title": "Developer Roadmaps",
   "hero.tagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
+  "hero.tagline.mob": "Community created roadmaps, guides and articles to help developers grow in their career.",
 
   "home.roleBasedRoadmaps": "Role based Roadmaps",
   "home.skillBasedRoadmaps": "Skill based Roadmaps",

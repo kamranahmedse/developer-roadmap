@@ -1,6 +1,6 @@
 ---
 import { getRoadmapsByIds, RoadmapFrontmatter } from '../lib/roadmap';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 
 export interface Props {
   roadmap: RoadmapFrontmatter;
@@ -20,14 +20,14 @@ const relatedRoadmapDetails = await getRoadmapsByIds(relatedRoadmaps);
   <div class='container'>
     <div class='relative -top-5 flex justify-between'>
       <h1 class='text-md rounded-md border bg-white px-3 py-1 font-medium'>
-        {translations.relatedRoadmaps}
+        {t('relatedRoadmaps')}
       </h1>
       <a
         href='/roadmaps'
         class='text-md rounded-md border bg-white px-3 py-1 font-medium hover:bg-gray-50'
       >
-        <span class='hidden sm:inline'>{translations.allRoadmaps} &rarr;</span>
-        <span class='inline sm:hidden'>More &rarr;</span>
+        <span class='hidden sm:inline'>{t('allRoadmaps')} &rarr;</span>
+        <span class='inline sm:hidden'>{t('more')} &rarr;</span>
       </a>
     </div>
 

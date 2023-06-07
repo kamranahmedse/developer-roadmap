@@ -3,7 +3,7 @@ import GridItem from '../components/GridItem.astro';
 import SimplePageHeader from '../components/SimplePageHeader.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapsByTag } from '../lib/roadmap';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
@@ -15,8 +15,8 @@ const skillRoadmaps = await getRoadmapsByTag('skill-roadmap');
   permalink={'/roadmaps'}
 >
   <SimplePageHeader
-    title={translations.developerRoadmaps}
-    description={translations['roadmaps.tagline']}
+    title={t('developerRoadmaps')}
+    description={t('roadmaps.tagline')}
     showYouTubeAlert={true}
   />
 

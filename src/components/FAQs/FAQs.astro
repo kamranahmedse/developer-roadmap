@@ -2,7 +2,7 @@
 import { markdownToHtml } from '../../lib/markdown';
 import Answer from './Answer.astro';
 import Question from './Question.astro';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export type FAQType = {
   question: string;
@@ -26,7 +26,7 @@ if (faqs.length === 0) {
       <h1
         class='rounded-md border bg-white px-3 py-1 text-sm font-medium sm:text-base'
       >
-        {translations.frequentlyAskedQuestions}
+        {t('frequentlyAskedQuestions')}
       </h1>
     </div>
 

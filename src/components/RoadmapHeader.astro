@@ -5,7 +5,7 @@ import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 
 export interface Props {
   title: string;
@@ -53,12 +53,10 @@ const isRoadmapReady = !isUpcoming;
               <a
                 href='/roadmaps'
                 class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-                aria-label={`Back to ${translations.allRoadmaps}`}
+                aria-label={`Back to ${t('allRoadmaps')}`}
               >
                 &larr;
-                <span class='hidden sm:inline'>
-                  &nbsp;{translations.allRoadmaps}
-                </span>
+                <span class='hidden sm:inline'>&nbsp;{t('allRoadmaps')}</span>
               </a>
 
               {isRoadmapReady && (
@@ -70,9 +68,7 @@ const isRoadmapReady = !isUpcoming;
                     aria-label='Download Roadmap'
                   >
                     <Icon icon='download' />
-                    <span class='ml-2 hidden sm:inline'>
-                      {translations.download}
-                    </span>
+                    <span class='ml-2 hidden sm:inline'>{t('download')}</span>
                   </button>
 
                   <a
@@ -83,9 +79,7 @@ const isRoadmapReady = !isUpcoming;
                     href={`/pdfs/roadmaps/${roadmapId}.pdf`}
                   >
                     <Icon icon='download' />
-                    <span class='ml-2 hidden sm:inline'>
-                      {translations.download}
-                    </span>
+                    <span class='ml-2 hidden sm:inline'>{t('download')}</span>
                   </a>
                 </>
               )}
@@ -97,7 +91,7 @@ const isRoadmapReady = !isUpcoming;
                 aria-label='Subscribe for Updates'
               >
                 <Icon icon='email' />
-                <span class='ml-2'>{translations.subscribe}</span>
+                <span class='ml-2'>{t('subscribe')}</span>
               </button>
             </>
           )
@@ -111,7 +105,7 @@ const isRoadmapReady = !isUpcoming;
               aria-label='Back to Visual Roadmap'
             >
               &larr;
-              <span class='inline'>&nbsp;{translations.visualRoadmap }</span>
+              <span class='inline'>&nbsp;{t('visualRoadmap')}</span>
             </a>
           )
         }
@@ -123,15 +117,13 @@ const isRoadmapReady = !isUpcoming;
             href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
             target='_blank'
             class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-            aria-label={translations['suggestChanges.default']}
+            aria-label={t('suggestChanges.default')}
           >
             <Icon icon='comment' class='h-3 w-3' />
             <span class='ml-2 hidden sm:inline'>
-              {translations['suggestChanges.default']}
+              {t('suggestChanges.default')}
             </span>
-            <span class='ml-2 inline sm:hidden'>
-              {translations['suggestChanges.mob']}
-            </span>
+            <span class='ml-2 inline sm:hidden'>{t('suggestChanges.mob')}</span>
           </a>
         )
       }

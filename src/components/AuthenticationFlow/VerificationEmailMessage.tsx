@@ -1,7 +1,7 @@
 import VerifyLetterIcon from '../../icons/verify-letter.svg';
 import { useEffect, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
-import translations from '../../translations.json';
+import { t } from '../../helpers/translate';
 
 export function VerificationEmailMessage() {
   const [email, setEmail] = useState('..');
@@ -44,7 +44,7 @@ export function VerificationEmailMessage() {
         class="mx-auto mb-4 h-20 w-40 sm:h-40"
       />
       <h2 class="my-2 text-center text-xl font-semibold sm:my-5 sm:text-2xl">
-        {translations.verifyEmailMessage}
+        {t('verifyEmailMessage')}
       </h2>
       <div class="text-sm sm:text-base">
         <p>
@@ -58,9 +58,7 @@ export function VerificationEmailMessage() {
 
         {!isEmailResent && (
           <>
-            {isLoading && (
-              <p className="text-gray-400">{translations.sendingEmail}</p>
-            )}
+            {isLoading && <p className="text-gray-400">{t('sendingEmail')}</p>}
             {!isLoading && !error && (
               <p>
                 Please make sure to check your spam folder. If you still don't
@@ -80,9 +78,7 @@ export function VerificationEmailMessage() {
         )}
 
         {isEmailResent && (
-          <p class="text-green-700">
-            {translations['verifyEmailMessage.resent']}
-          </p>
+          <p class="text-green-700">{t('verifyEmailMessage.resent')}</p>
         )}
       </div>
     </div>

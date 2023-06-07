@@ -1,6 +1,6 @@
 ---
 import Icon from './AstroIcon.astro';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 ---
 
 <div class='bg-slate-900 py-6 pb-10 text-white sm:py-16'>
@@ -10,30 +10,30 @@ import translations from '../translations.json';
     >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/roadmaps'>{translations.roadmaps}</a
+        href='/roadmaps'>{t('roadmaps')}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/best-practices'>{translations.bestPractices}</a
+        href='/best-practices'>{t('bestPractices')}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/guides'>{translations.guides}</a
+        href='/guides'>{t('guides')}</a
       >
       <a
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='/videos'>{translations.videos}</a
+        href='/videos'>{t('videos')}</a
       >
       <a
         target='_blank'
         rel='noopener noreferrer nofollow'
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='https://cottonbureau.com/people/roadmapsh'>{translations.store}</a
+        href='https://cottonbureau.com/people/roadmapsh'>{t('store')}</a
       >
       <a
         class='px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='https://youtube.com/theroadmap?sub_confirmation=1'
-        target='_blank'>{translations.youtube}</a
+        target='_blank'>{t('youtube')}</a
       >
     </p>
 
@@ -58,19 +58,17 @@ import translations from '../translations.json';
           </a>
         </p>
         <p class='my-4 text-slate-300/60'>
-          {translations['footer.siteDescription']}
+          {t('footer.siteDescription')}
         </p>
         <div class='text-sm text-gray-400'>
           <p>
             &copy; roadmap.sh
             <span class='mx-1.5'>&middot;</span>
-            <a href='/about' class='hover:text-white'>{translations.faqs}</a>
+            <a href='/about' class='hover:text-white'>{t('faqs')}</a>
             <span class='mx-1.5'>&middot;</span>
-            <a href='/terms' class='hover:text-white'>{translations.terms}</a>
+            <a href='/terms' class='hover:text-white'>{t('terms')}</a>
             <span class='mx-1.5'>&middot;</span>
-            <a href='/privacy' class='hover:text-white'
-              >{translations.privacy}</a
-            >
+            <a href='/privacy' class='hover:text-white'>{t('privacy')}</a>
           </p>
         </div>
       </div>
@@ -86,28 +84,26 @@ import translations from '../translations.json';
           />
         </a>
         <p class='my-4 text-slate-300/60'>
-          {translations['footer.tnsDescription']}
+          {t('footer.tnsDescription')}
         </p>
         <div class='text-sm text-gray-400'>
           <p>
             <a
               href='https://thenewstack.io/category/devops?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'>{translations.devops}</a
+              class='text-gray-400 hover:text-white'>{t('devops')}</a
             >
             <span class='mx-1.5'>&middot;</span>
             <a
               href='https://thenewstack.io/category/kubernetes?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'
-              >{translations.kubernetes}</a
+              class='text-gray-400 hover:text-white'>{t('kubernetes')}</a
             >
             <span class='mx-1.5'>&middot;</span>
             <a
               href='https://thenewstack.io/category/cloud-native?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
               target='_blank'
-              class='text-gray-400 hover:text-white'
-              >{translations.cloudNative}</a
+              class='text-gray-400 hover:text-white'>{t('cloudNative')}</a
             >
           </p>
         </div>

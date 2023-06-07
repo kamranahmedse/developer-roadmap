@@ -4,7 +4,7 @@ import EmailSignupForm from '../components/AuthenticationFlow/EmailSignupForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 import AccountLayout from '../layouts/AccountLayout.astro';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 ---
 
 <AccountLayout
@@ -19,13 +19,13 @@ import translations from '../translations.json';
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
         <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>
-          {translations.signup}
+          {t('signup')}
         </h1>
         <p class='mb-3 hidden text-base leading-6 text-gray-600 sm:block'>
-          {translations['signup.tagline']}
+          {t('signup.tagline')}
         </p>
         <p class='mb-3 block text-sm text-gray-600 sm:hidden'>
-          {translations['signup.tagline']}
+          {t('signup.tagline')}
         </p>
       </div>
 
@@ -39,9 +39,9 @@ import translations from '../translations.json';
       <EmailSignupForm client:load />
 
       <div class='mt-6 text-center text-sm text-slate-600'>
-        {translations['signup.alreadyAccount']}
+        {t('signup.alreadyAccount')}
         <a href='/login' class='font-medium text-blue-700 hover:text-blue-600'
-          >{translations.login}</a
+          >{t('login')}</a
         >
       </div>
     </div>

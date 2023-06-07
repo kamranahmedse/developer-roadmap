@@ -4,7 +4,7 @@ import EmailLoginForm from '../components/AuthenticationFlow/EmailLoginForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
 import AccountLayout from '../layouts/AccountLayout.astro';
-import translations from '../translations.json';
+import { t } from '../helpers/translate';
 ---
 
 <AccountLayout
@@ -19,10 +19,10 @@ import translations from '../translations.json';
     >
       <div class='mb-2 text-left sm:mb-5 sm:text-center'>
         <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>
-          {translations.login}
+          {t('login')}
         </h1>
         <p class='mb-3 text-base leading-6 text-gray-600'>
-          {translations['login.tagline']}
+          {t('login.tagline')}
         </p>
       </div>
 
@@ -36,9 +36,9 @@ import translations from '../translations.json';
       <EmailLoginForm client:load />
 
       <div class='mt-6 text-center text-sm text-slate-600'>
-        {translations['login.noAccount']}{' '}
+        {t('login.noAccount')}{' '}
         <a href='/signup' class='font-medium text-blue-700 hover:text-blue-600'>
-          {translations.signup}
+          {t('signup')}
         </a>
       </div>
     </div>
