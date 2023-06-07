@@ -74,8 +74,8 @@ export function TriggerVerifyAccount() {
           {t('verifyingAccount')}
         </h2>
         <div className="text-sm sm:text-base">
-          {isLoading && <p>{t('verifyingAccount.loading')}</p>}
-          {error && <p class="text-red-700">{error}</p>}
+          {isLoading && <p>{t('verifyingAccountLoading')}</p>}
+          {error && <p class="text-red-700">{t(error)}</p>}
         </div>
       </div>
     </div>

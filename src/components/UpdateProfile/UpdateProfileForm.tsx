@@ -84,7 +84,7 @@ export function UpdateProfileForm() {
     <div>
       <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">{t('profile')}</h2>
-        <p className="mt-2">{t('profile.tagline')}</p>
+        <p className="mt-2">{t('profileTagline')}</p>
       </div>
       <UploadProfilePicture
         avatarUrl={
@@ -191,12 +191,14 @@ export function UpdateProfileForm() {
         </div>
 
         {error && (
-          <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+          <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
+            {t(error)}
+          </p>
         )}
 
         {success && (
           <p className="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
-            {success}
+            {t(success)}
           </p>
         )}
 

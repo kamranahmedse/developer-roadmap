@@ -22,7 +22,7 @@ export function VerificationEmailMessage() {
       .then(({ response, error }) => {
         if (error) {
           setIsEmailResent(false);
-          setError(error?.message || 'Something went wrong.');
+          setError(error?.message || t('Something went wrong.'));
           setIsLoading(false);
           return;
         }
@@ -32,7 +32,7 @@ export function VerificationEmailMessage() {
       .catch(() => {
         setIsEmailResent(false);
         setIsLoading(false);
-        setError('Something went wrong. Please try again later.');
+        setError(t('Something went wrong. Please try again later.'));
       });
   };
 
@@ -44,14 +44,13 @@ export function VerificationEmailMessage() {
         class="mx-auto mb-4 h-20 w-40 sm:h-40"
       />
       <h2 class="my-2 text-center text-xl font-semibold sm:my-5 sm:text-2xl">
-        {t('verifyEmailMessage')}
+        {t('verifyEmailTitle')}
       </h2>
       <div class="text-sm sm:text-base">
         <p>
-          We have sent you an email at{' '}
-          <span className="font-bold">{email}</span>. Please click the link to
-          verify your account. This link will expire shortly, so please verify
-          soon!
+          {t('verifyEmailSend', {
+            Email: email,
+          })}
         </p>
 
         <hr class="my-4" />
@@ -61,14 +60,13 @@ export function VerificationEmailMessage() {
             {isLoading && <p className="text-gray-400">{t('sendingEmail')}</p>}
             {!isLoading && !error && (
               <p>
-                Please make sure to check your spam folder. If you still don't
-                have the email click to{' '}
+                {t('verifyEmailCheckSpam')}{' '}
                 <button
                   disabled={!email}
                   className="inline text-blue-700"
                   onClick={resendVerificationEmail}
                 >
-                  resend verification email.
+                  {t('resendVerificationEmail')}
                 </button>
               </p>
             )}
@@ -78,7 +76,7 @@ export function VerificationEmailMessage() {
         )}
 
         {isEmailResent && (
-          <p class="text-green-700">{t('verifyEmailMessage.resent')}</p>
+          <p class="text-green-700">{t('verifyEmailResent')}</p>
         )}
       </div>
     </div>

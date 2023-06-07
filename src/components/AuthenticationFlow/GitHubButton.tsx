@@ -5,6 +5,7 @@ import SpinnerIcon from '../../icons/spinner.svg';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
+import { t } from '../../helpers/translate';
 
 type GitHubButtonProps = {};
 
@@ -109,10 +110,10 @@ export function GitHubButton(props: GitHubButtonProps) {
           alt="GitHub"
           class={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
         />
-        Continue with GitHub
+        {t('continueWithGitHub')}
       </button>
       {error && (
-        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{error}</p>
+        <p className="mb-2 mt-1 text-sm font-medium text-red-600">{t(error)}</p>
       )}
     </>
   );

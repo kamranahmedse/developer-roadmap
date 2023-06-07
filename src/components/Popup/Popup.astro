@@ -1,5 +1,6 @@
 ---
 import Icon from '../AstroIcon.astro';
+import { t } from '../../helpers/translate';
 
 export interface Props {
   id: string;
@@ -24,7 +25,7 @@ const { id, title, subtitle } = Astro.props;
         class='absolute top-3 right-2.5 text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center popup-close'
       >
         <Icon icon='close' />
-        <span class='sr-only'>Close popup</span>
+        <span class='sr-only'>{t("closePopup")}</span>
       </button>
       <div class='p-5'>
         <h3 class='text-2xl mb-0.5 font-medium'>

@@ -138,7 +138,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         renderTopicProgress(topicId, progress);
       })
       .catch((err) => {
-        alert(err.message);
+        alert(t(err.message));
         console.error(err);
       })
       .finally(() => {
@@ -163,7 +163,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
     return (
       <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
         <img alt="Check" class="h-4 w-4 animate-spin" src={SpinnerIcon} />
-        <span className="ml-2">Updating Status..</span>
+        <span className="ml-2">{t('updatingStatus')}</span>
       </button>
     );
   }

@@ -2,10 +2,15 @@
 import AccountSidebar from '../../components/AccountSidebar.astro';
 import { ActivityPage } from '../../components/Activity/ActivityPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
+import { t } from '../../helpers/translate';
 ---
 
-<AccountLayout title='Update Profile' noIndex={true} initialLoadingMessage={'Loading activity'}>
-  <AccountSidebar activePageId='activity' activePageTitle='Activity'>
+<AccountLayout
+  title={t('Update Profile')}
+  noIndex={true}
+  initialLoadingMessage={t('loadingActivity')}
+>
+  <AccountSidebar activePageId='activity' activePageTitle={t('activity')}>
     <ActivityPage client:load />
   </AccountSidebar>
 </AccountLayout>

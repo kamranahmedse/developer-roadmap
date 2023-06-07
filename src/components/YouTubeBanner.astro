@@ -1,20 +1,22 @@
 ---
 import Icon from './AstroIcon.astro';
+import { t } from '../helpers/translate';
 ---
 
 <!-- sticky top-0 -->
-<div class='border-b border-b-yellow-300 z-20 flex h-[37px]' youtube-banner>
+<div class='z-20 flex h-[37px] border-b border-b-yellow-300' youtube-banner>
   <a
     href='https://youtube.com/theroadmap?sub_confirmation=1'
     target='_blank'
-    class='flex bg-yellow-200 text-center flex-1 items-center justify-center text-sm hover:bg-yellow-300 outline-0'
+    class='flex flex-1 items-center justify-center bg-yellow-200 text-center text-sm outline-0 hover:bg-yellow-300'
   >
-    <Icon icon='youtube' class='mr-2' /> We now have a YouTube Channel.&nbsp;<span class='hidden sm:inline'
-      >Subscribe for the video content.</span
+    <Icon icon='youtube' class='mr-2' />
+    {t('We now have a YouTube Channel.')}&nbsp;<span class='hidden sm:inline'
+      >{t('Subscribe for the video content.')}</span
     >
   </a>
   <button
-    class='text-yellow-500 bg-yellow-200 hover:text-yellow-900 hover:bg-yellow-400 outline-0 px-2'
+    class='bg-yellow-200 px-2 text-yellow-500 outline-0 hover:bg-yellow-400 hover:text-yellow-900'
     aria-label='Close'
     close-youtube-banner
   >
@@ -23,7 +25,9 @@ import Icon from './AstroIcon.astro';
 </div>
 
 <script>
-  document.querySelector('[close-youtube-banner]')?.addEventListener('click', () => {
-    document.querySelector('[youtube-banner]')?.remove();
-  });
+  document
+    .querySelector('[close-youtube-banner]')
+    ?.addEventListener('click', () => {
+      document.querySelector('[youtube-banner]')?.remove();
+    });
 </script>

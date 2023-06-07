@@ -1,5 +1,6 @@
 ---
 import type { BreadcrumbItem } from '../lib/roadmap-topic';
+import { t } from '../helpers/translate';
 
 export interface Props {
   breadcrumbs: BreadcrumbItem[];
@@ -11,7 +12,7 @@ const { breadcrumbs, roadmapId } = Astro.props;
 
 <div class='py-7 pb-6'>
   <!-- Desktop breadcrumbs -->
-  <p class='text-gray-500 container hidden sm:block'>
+  <p class='container hidden text-gray-500 sm:block'>
     {
       breadcrumbs.map((breadcrumb, counter) => {
         const isLast = counter === breadcrumbs.length - 1;
@@ -35,10 +36,10 @@ const { breadcrumbs, roadmapId } = Astro.props;
   <!-- Mobile breadcrums -->
   <p class='container block sm:hidden'>
     <a
-      class='bg-gray-500 py-1.5 px-3 rounded-md text-white text-xs sm:text-sm font-medium hover:bg-gray-600'
+      class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
       href={`/${roadmapId}`}
     >
-      &larr; Back to Topics List
+      &larr; {t('backtoTopicList')}
     </a>
   </p>
 </div>

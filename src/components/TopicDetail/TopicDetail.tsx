@@ -17,6 +17,7 @@ import {
 import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
+import { t } from '../../helpers/translate';
 
 export function TopicDetail() {
   const [contributionAlertMessage, setContributionAlertMessage] = useState('');
@@ -68,7 +69,7 @@ export function TopicDetail() {
       return;
     }
 
-    pageProgressMessage.set('Updating');
+    pageProgressMessage.set(t('Updating'));
 
     // Toggle the topic status
     isTopicDone({ topicId, resourceId, resourceType })
@@ -216,7 +217,7 @@ export function TopicDetail() {
             {/* Contribution */}
             <div className="mt-8 flex-1 border-t">
               <p class="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
-                Help others learn by submitting links to learn more about this topic{' '}
+                {t('submitLinkDescription')}{' '}
               </p>
               <button
                 onClick={() => {
@@ -233,7 +234,7 @@ export function TopicDetail() {
               >
                 {contributionAlertMessage
                   ? contributionAlertMessage
-                  : 'Submit a Link'}
+                  : t('submitALink')}
               </button>
             </div>
           </>

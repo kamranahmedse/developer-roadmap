@@ -9,13 +9,13 @@ const bestPractices = await getAllBestPractices();
 ---
 
 <BaseLayout
-  title='Best Practices'
+  title={t('bestPractices')}
   description={'Best practices on different topics with detailed implementation guidelines'}
   permalink={'/best-practices'}
 >
   <SimplePageHeader
     title={t('bestPractices')}
-    description={t('bestPractices.tagline')}
+    description={t('bestPracticesTagline')}
   />
 
   <div class='bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>

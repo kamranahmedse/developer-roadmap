@@ -3,6 +3,7 @@ import { useEffect, useState } from 'preact/hooks';
 import CloseIcon from '../icons/close.svg';
 import { httpGet } from '../lib/http';
 import { sponsorHidden } from '../stores/page';
+import { t } from '../helpers/translate';
 
 export type PageSponsorType = {
   company: string;
@@ -103,7 +104,7 @@ export function PageSponsor(props: PageSponsorProps) {
           <span class="mb-0.5 block font-semibold">{title}</span>
           <span class="block text-gray-500">{description}</span>
         </span>
-        <span class="sponsor-footer">Partner Content</span>
+        <span class="sponsor-footer">{t("partnerContent")}</span>
       </span>
     </a>
   );

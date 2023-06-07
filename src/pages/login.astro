@@ -8,7 +8,7 @@ import { t } from '../helpers/translate';
 ---
 
 <AccountLayout
-  title='Login - roadmap.sh'
+  title={`${t("login")} - roadmap.sh`}
   description='Register yourself to receive occasional emails about new roadmaps, updates, guides and videos'
   permalink={'/signup'}
   noIndex={true}
@@ -22,7 +22,7 @@ import { t } from '../helpers/translate';
           {t('login')}
         </h1>
         <p class='mb-3 text-base leading-6 text-gray-600'>
-          {t('login.tagline')}
+          {t('loginTagline')}
         </p>
       </div>
 
@@ -36,7 +36,7 @@ import { t } from '../helpers/translate';
       <EmailLoginForm client:load />
 
       <div class='mt-6 text-center text-sm text-slate-600'>
-        {t('login.noAccount')}{' '}
+        {t('loginNoAccount')}{' '}
         <a href='/signup' class='font-medium text-blue-700 hover:text-blue-600'>
           {t('signup')}
         </a>

@@ -18,7 +18,7 @@ const videos = await getAllVideos();
 ---
 
 <BaseLayout
-  title='Developer Roadmaps - roadmap.sh'
+  title={`${t('developerRoadmaps')} - roadmap.sh`}
   description={'Community driven roadmaps, articles and guides for developers to grow in their career.'}
   permalink={'/'}
 >
@@ -30,21 +30,21 @@ const videos = await getAllVideos();
         <h1
           class='mb-2 bg-gradient-to-b from-amber-50 to-purple-500 bg-clip-text text-2xl font-bold text-transparent sm:mb-4 sm:text-5xl'
         >
-          {t('hero.title')}
+          {t('heroTitle')}
         </h1>
 
         <p class='hidden px-4 text-lg text-gray-400 sm:block'>
-          {t('hero.tagline')}
+          {t('heroTagline')}
         </p>
 
         <p class='text-md block px-0 text-gray-400 sm:hidden'>
-          {t('hero.tagline.mob')}
+          {t('heroTaglineMob')}
         </p>
       </div>
     </div>
 
     <FeaturedItems
-      heading={t('home.roleBasedRoadmaps')}
+      heading={t('roleBasedRoadmaps')}
       featuredItems={roleRoadmaps.map((roadmapItem) => ({
         text: roadmapItem.frontmatter.briefTitle,
         url: `/${roadmapItem.id}`,
@@ -54,7 +54,7 @@ const videos = await getAllVideos();
     />
 
     <FeaturedItems
-      heading={t('home.skillBasedRoadmaps')}
+      heading={t('skillBasedRoadmaps')}
       featuredItems={skillRoadmaps.map((roadmapItem) => ({
         text:
           roadmapItem.frontmatter.briefTitle === t('go')

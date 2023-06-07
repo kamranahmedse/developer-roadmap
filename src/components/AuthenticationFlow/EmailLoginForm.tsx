@@ -51,7 +51,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
   return (
     <form className="w-full" onSubmit={handleFormSubmit}>
       <label htmlFor="email" className="sr-only">
-        Email address
+        {t('emailAddress')}
       </label>
       <input
         name="email"
@@ -64,15 +64,15 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         onInput={(e) => setEmail(String((e.target as any).value))}
       />
       <label htmlFor="password" className="sr-only">
-        Password
+        {t('password')}
       </label>
       <input
         name="password"
         type="password"
         autoComplete="current-password"
         required
-        className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         placeholder="Password"
+        className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         value={password}
         onInput={(e) => setPassword(String((e.target as any).value))}
       />
@@ -82,12 +82,14 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
           href="/forgot-password"
           className="text-blue-800 hover:text-blue-600"
         >
-          {t('login.resetPassword')}
+          {t('loginResetPassword')}
         </a>
       </p>
 
       {error && (
-        <p className="mb-2 rounded-md bg-red-100 p-2 text-red-800">{error}</p>
+        <p className="mb-2 rounded-md bg-red-100 p-2 text-red-800">
+          {t(error)}
+        </p>
       )}
 
       <button

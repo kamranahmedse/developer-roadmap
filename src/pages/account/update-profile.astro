@@ -2,14 +2,15 @@
 import AccountSidebar from '../../components/AccountSidebar.astro';
 import { UpdateProfileForm } from '../../components/UpdateProfile/UpdateProfileForm';
 import AccountLayout from '../../layouts/AccountLayout.astro';
+import { t } from '../../helpers/translate';
 ---
 
 <AccountLayout
-  title='Update Profile'
+  title={t('updateProfile')}
   noIndex={true}
-  initialLoadingMessage={'Loading profile'}
+  initialLoadingMessage={t('loadingProfile')}
 >
-  <AccountSidebar activePageId='profile' activePageTitle='Profile'>
+  <AccountSidebar activePageId='profile' activePageTitle={t('profile')}>
     <UpdateProfileForm client:load />
   </AccountSidebar>
 </AccountLayout>

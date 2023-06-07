@@ -1,20 +1,28 @@
 ---
+import { t } from '../helpers/translate';
 export interface Props {
   bestPracticeId: string;
 }
 ---
 
-<div class='mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 sm:-mb-[65px]'>
+<div class='mb-0 mt-4 rounded-md border-0 sm:-mb-[65px] sm:mt-7 sm:border'>
   <!-- Desktop: Roadmap Resources - Alert -->
-  <div class='hidden sm:flex justify-between px-2 bg-white items-center rounded-md p-1.5'>
+  <div
+    class='hidden items-center justify-between rounded-md bg-white p-1.5 px-2 sm:flex'
+  >
     <p class='text-sm'>
-      <span class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'>Tip</span>
-      Click the best practices for details and resources
+      <span
+        class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
+        >{t('tip')}</span
+      >
+      {t('tipTagline')}
     </p>
   </div>
 
   <!-- Mobile - Roadmap resources alert -->
-  <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'>
-    Click the best practices for details and resources
+  <p
+    class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
+  >
+    {t('tipTagline')}
   </p>
 </div>

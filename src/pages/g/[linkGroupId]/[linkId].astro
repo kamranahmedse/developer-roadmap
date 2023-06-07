@@ -2,6 +2,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
 import { getAllLinkGroups } from '../../../lib/link-group';
+import { t } from '../../../helpers/translate';
 
 export async function getStaticPaths() {
   const linkGroups = await getAllLinkGroups();
@@ -31,9 +32,9 @@ const fullUrl = linkGroup.frontmatter[linkId!];
 
 <SkeletonLayout title='Redirecting..' noIndex={true} redirectUrl={fullUrl}>
   <div class='p-8'>
-    <h2 class='text-xl font-bold'>Redirecting ..</h2>
-    <p>Click the link below if you are not redirected automatically.</p>
+    <h2 class='text-xl font-bold'>{t('redirecting')}</h2>
+    <p>{t('redirectingDescription')}</p>
 
-    <p><a href={fullUrl} class='underline text-blue-700'>{fullUrl}</a></p>
+    <p><a href={fullUrl} class='text-blue-700 underline'>{fullUrl}</a></p>
   </div>
 </SkeletonLayout>

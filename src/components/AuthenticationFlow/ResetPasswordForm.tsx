@@ -86,7 +86,9 @@ export default function ResetPasswordForm() {
       />
 
       {error && (
-        <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+        <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
+          {t(error)}
+        </p>
       )}
 
       <button

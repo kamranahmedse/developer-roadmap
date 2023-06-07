@@ -43,7 +43,7 @@ const EmailSignupForm: FunctionComponent = () => {
   return (
     <form className="flex w-full flex-col gap-2" onSubmit={onSubmit}>
       <label htmlFor="name" className="sr-only">
-        Name
+        {t('name')}
       </label>
       <input
         name="name"
@@ -58,7 +58,7 @@ const EmailSignupForm: FunctionComponent = () => {
         onInput={(e) => setName(String((e.target as any).value))}
       />
       <label htmlFor="email" className="sr-only">
-        Email address
+        {t('emailAddress')}
       </label>
       <input
         name="email"
@@ -71,7 +71,7 @@ const EmailSignupForm: FunctionComponent = () => {
         onInput={(e) => setEmail(String((e.target as any).value))}
       />
       <label htmlFor="password" className="sr-only">
-        Password
+        {t('password')}
       </label>
       <input
         name="password"
@@ -87,7 +87,7 @@ const EmailSignupForm: FunctionComponent = () => {
       />
 
       {error && (
-        <p className="rounded-lg bg-red-100 p-2 text-red-700">{error}.</p>
+        <p className="rounded-lg bg-red-100 p-2 text-red-700">{t(error)}.</p>
       )}
 
       <button
@@ -95,7 +95,7 @@ const EmailSignupForm: FunctionComponent = () => {
         disabled={isLoading}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
-        {isLoading ? t('pleaseWait') : t('signup.verifyEmail')}
+        {isLoading ? t('pleaseWait') : t('signupVerifyEmail')}
       </button>
     </form>
   );

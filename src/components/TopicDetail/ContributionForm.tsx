@@ -145,7 +145,7 @@ export function ContributionForm(props: ContributionFormProps) {
     setIsSubmitting(false);
 
     if (!response || error) {
-      alert(error?.message || 'Something went wrong. Please try again.');
+      alert(t(error?.message || 'Something went wrong. Please try again.'));
       return;
     }
 

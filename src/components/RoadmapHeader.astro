@@ -117,13 +117,11 @@ const isRoadmapReady = !isUpcoming;
             href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
             target='_blank'
             class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
-            aria-label={t('suggestChanges.default')}
+            aria-label={t('suggestChanges')}
           >
             <Icon icon='comment' class='h-3 w-3' />
-            <span class='ml-2 hidden sm:inline'>
-              {t('suggestChanges.default')}
-            </span>
-            <span class='ml-2 inline sm:hidden'>{t('suggestChanges.mob')}</span>
+            <span class='ml-2 hidden sm:inline'>{t('suggestChanges')}</span>
+            <span class='ml-2 inline sm:hidden'>{t('suggestChangesMob')}</span>
           </a>
         )
       }

@@ -29,13 +29,15 @@ const roadmapTitle =
     hasTNSBanner && (
       <div class='hidden border-b bg-gray-100 px-2 py-1.5 sm:block'>
         <p class='text-sm'>
-          Get the latest {roadmapTitle} news from our sister site{' '}
+          {t('latestNewsFromSisterSite', {
+            roadmapTitle,
+          })}{' '}
           <a
             href={tnsBannerLink}
             target='_blank'
             class='font-semibold underline'
           >
-            TheNewStack.io
+            {t('TheNewStack')}
           </a>
         </p>
       </div>
@@ -57,7 +59,7 @@ const roadmapTitle =
         class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
         >{t('new')}</span
       >
-      {t('roadmaps.tip.default')}
+      {t('roadmapsTipDefault')}
     </p>
 
     <a
@@ -73,6 +75,6 @@ const roadmapTitle =
   <p
     class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
   >
-    {t('roadmaps.tip.mob')}
+    {t('roadmapsTipMob')}
   </p>
 </div>

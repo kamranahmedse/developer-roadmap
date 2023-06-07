@@ -61,7 +61,7 @@ export function ActivityPage() {
     );
 
     if (!response || error) {
-      console.error('Error loading activity');
+      console.error(t('Error loading activity'));
       console.error(error);
 
       return;

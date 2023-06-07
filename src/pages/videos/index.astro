@@ -9,11 +9,11 @@ const videos = await getAllVideos();
 ---
 
 <BaseLayout
-  title='Illustrated Videos - roadmap.sh'
+  title={`${t('illustratedVideos')} - roadmap.sh`}
   description={'Graphical video demonstrations on software engineering topics.'}
   permalink={`/videos`}
 >
-  <SimplePageHeader title={t('videos')} description={t('videos.tagline')} />
+  <SimplePageHeader title={t('videos')} description={t('videosTagline')} />
 
   <div class='bg-gray-50 pb-20 pt-2'>
     <div class='container'>

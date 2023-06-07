@@ -162,7 +162,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
                 inputRef.current?.click();
               }}
             >
-              Edit
+              {t('edit')}
             </button>
           )}
         </label>
@@ -187,7 +187,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
               className="flex h-9 min-w-[96px] items-center justify-center rounded-md border border-red-300 bg-red-100 text-sm font-medium text-red-700 disabled:cursor-not-allowed disabled:opacity-60"
               disabled={isLoading}
             >
-              Cancel
+              {t('cancel')}
             </button>
             <button
               type="submit"
@@ -200,7 +200,9 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
         )}
       </div>
       {error && (
-        <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+        <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
+          {t(error)}
+        </p>
       )}
     </form>
   );

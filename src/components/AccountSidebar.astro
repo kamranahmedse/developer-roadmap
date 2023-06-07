@@ -1,5 +1,6 @@
 ---
 import AstroIcon from './AstroIcon.astro';
+import { t } from '../helpers/translate';
 
 const { activePageId, activePageTitle } = Astro.props;
 
@@ -11,7 +12,7 @@ export interface Props {
 const sidebarLinks = [
     {
         href: '/account',
-        title: 'Activity',
+        title: t("activity"),
         id: 'activity',
         icon: {
             glyph: 'analytics',
@@ -20,7 +21,7 @@ const sidebarLinks = [
     },
     {
         href: '/account/update-profile',
-        title: 'Profile',
+        title: t("profile"),
         id: 'profile',
         icon: {
             glyph: 'user',
@@ -29,7 +30,7 @@ const sidebarLinks = [
     },
     {
         href: '/account/update-password',
-        title: 'Security',
+        title: t("security"),
         id: 'change-password',
         icon: {
             glyph: 'security',

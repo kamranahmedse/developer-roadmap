@@ -9,11 +9,11 @@ const guides = await getAllGuides();
 ---
 
 <BaseLayout
-  title='Guides - roadmap.sh'
+  title={`${t("guides")} - roadmap.sh`}
   description={'Detailed guides on Software Engineering Topics'}
   permalink={`/guides`}
 >
-  <SimplePageHeader title={t('guides')} description={t('guides.tagline')} />
+  <SimplePageHeader title={t('guides')} description={t('guidesTagline')} />
 
   <div class='bg-gray-50 pb-20 pt-2'>
     <div class='container'>

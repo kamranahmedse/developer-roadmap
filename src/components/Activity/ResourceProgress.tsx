@@ -42,7 +42,7 @@ export function ResourceProgress(props: ResourceProgressType) {
     );
 
     if (error || !response) {
-      alert('Error clearing progress. Please try again.');
+      alert(t('Error clearing progress. Please try again.'));
       console.error(error);
       setIsClearing(false);
       return;
@@ -86,7 +86,7 @@ export function ResourceProgress(props: ResourceProgressType) {
         <span className="hidden flex-1 gap-1 sm:flex">
           {doneCount > 0 && (
             <>
-              <span>
+              <span className="lowercase">
                 {doneCount} {t('done')}
               </span>{' '}
               &bull;
@@ -94,22 +94,22 @@ export function ResourceProgress(props: ResourceProgressType) {
           )}
           {learningCount > 0 && (
             <>
-              <span>
-                {learningCount} {t('inProgress')?.toLowerCase()}
+              <span className="lowercase">
+                {learningCount} {t('inProgress')}
               </span>{' '}
               &bull;
             </>
           )}
           {skippedCount > 0 && (
             <>
-              <span>
-                {skippedCount} {t('skipped')?.toLowerCase()}
+              <span className="lowercase">
+                {skippedCount} {t('skipped')}
               </span>{' '}
               &bull;
             </>
           )}
-          <span>
-            {totalCount} {t('total')?.toLowerCase()}
+          <span className="lowercase">
+            {totalCount} {t('total')}
           </span>
         </span>
         {!isConfirming && (

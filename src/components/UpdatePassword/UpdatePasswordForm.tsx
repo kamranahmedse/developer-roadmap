@@ -81,7 +81,7 @@ export default function UpdatePasswordForm() {
     <form onSubmit={handleSubmit}>
       <div class="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">{t('password')}</h2>
-        <p className="mt-2">{t('password.tagline')}</p>
+        <p className="mt-2">{t('passwordTagline')}</p>
       </div>
       <div className="space-y-4">
         {authProvider === 'email' && (
@@ -153,12 +153,12 @@ export default function UpdatePasswordForm() {
         </div>
 
         {error && (
-          <p class="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+          <p class="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{t(error)}</p>
         )}
 
         {success && (
           <p class="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
-            {success}
+            {t(success)}
           </p>
         )}
 

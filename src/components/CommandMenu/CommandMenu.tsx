@@ -20,36 +20,36 @@ type PageType = {
 };
 
 const defaultPages: PageType[] = [
-  { url: '/', title: t('home'), group: 'Pages', icon: HomeIcon },
+  { url: '/', title: t('home'), group: t('Pages'), icon: HomeIcon },
   {
     url: '/account',
     title: t('account'),
-    group: 'Pages',
+    group: t('Pages'),
     icon: UserIcon,
     isProtected: true,
   },
   {
     url: '/roadmaps',
     title: t('roadmaps'),
-    group: 'Pages',
+    group: t('Pages'),
     icon: RoadmapIcon,
   },
   {
     url: '/best-practices',
     title: t('bestPractices'),
-    group: 'Pages',
+    group: t('Pages'),
     icon: BestPracticesIcon,
   },
   {
     url: '/guides',
     title: t('guides'),
-    group: 'Pages',
+    group: t('Pages'),
     icon: GuideIcon,
   },
   {
     url: '/videos',
     title: t('videos'),
-    group: 'Pages',
+    group: t('Pages'),
     icon: VideoIcon,
   },
 ];
@@ -201,7 +201,7 @@ export function CommandMenu() {
                       href={page.url}
                     >
                       {!page.icon && (
-                        <span class="mr-2 text-gray-400">{page.group}</span>
+                        <span class="mr-2 text-gray-400">{t(page.group)}</span>
                       )}
                       {page.icon && (
                         <img src={page.icon} class="mr-2 h-4 w-4" />

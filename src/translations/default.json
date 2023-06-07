@@ -2,7 +2,13 @@
   "home": "Home",
   "roadmaps": "Roadmaps",
   "bestPractices": "Best Practices",
+  "Pages": "Pages",
+  "Roadmaps": "Roadmaps",
+  "Best Practices": "Best Practices",
+  "Guides": "Guides",
+  "Videos": "Videos",
   "guides": "Guides",
+  "guide": "Guide",
   "videos": "Videos",
   "account": "Account",
   "profile": "Profile",
@@ -23,8 +29,8 @@
   "activity": "Activity",
   "security": "Security",
   "searchTopics": "Search Topics",
-  "suggestChanges.default": "Suggest Changes",
-  "suggestChanges.mob": "Suggest",
+  "suggestChanges": "Suggest Changes",
+  "suggestChangesMob": "Suggest",
   "allRoadmaps": "All Roadmaps",
   "download": "Download",
   "subscribe": "Subscribe",
@@ -40,16 +46,50 @@
   "updateStatus": "Update Status",
   "reset": "Reset",
   "submit": "Submit",
+  "by": "By",
+  "@kamrify": "@kamrify",
+  "Kamran Ahmed": "Kamran Ahmed",
+  "roadmap.sh": "roadmap.sh",
+  "viewAllGuides": "View All Guides",
+  "viewAllVideos": "View All Videos",
+  "tip": "Tip",
+  "illustratedVideos": "Illustrated Video",
+  "progress": "progress",
+  "emailAddress": "Email address",
+  "closePopup": "Close popup",
+  "updating": "Updating",
+
+  "We now have a YouTube Channel.": "We now have a YouTube Channel.",
+  "Subscribe for the video content.": "Subscribe for the video content.",
+
+  "Progress will appear here as you start tracking your": "Progress will appear here as you start tracking your",
+  "or": "or",
+
+  "tipTagline": "Click the best practices for details and resources",
+  "backtoTopicList": "Back to Topics List",
+  "partnerContent": "Partner Content",
+  "visitInteractiveVersion": "Click to visit the interactive version of",
+  "visitComplete": "Visit complete",
+  "upcoming": "Upcoming",
+  "notifyMeWhenReady": "Notify me when ready!",
+  "Please check back later": "Please check back later",
+
+  "You will be notified by email when the roadmap is ready.": "You will be notified by email when the roadmap is ready.",
+  "Please check back later or subscribe below.": "Please check back later or subscribe below.",
 
   "developerRoadmaps": "Developer Roadmaps",
-  "roadmaps.tagline": "Step by step guides and paths to learn different tools or technologies.",
-  "roadmaps.tip.default": "Track your progress and learn by clicking roadmap items.",
-  "roadmaps.tip.mob": "Track your progress and learn about the topics by clicking the roadmap items.",
+  "roadmapTagline": "Step by step guides and paths to learn different tools or technologies.",
+  "roadmapsTipDefault": "Track your progress and learn by clicking roadmap items.",
+  "roadmapsTipMob": "Track your progress and learn about the topics by clicking the roadmap items.",
   "youtubeAlert": "Roadmap topics to be covered on YouTube",
+  "allBestPractices": "All Best Practices",
 
-  "bestPractices.tagline": "Best practices on different topics with detailed implementation guidelines.",
-  "guides.tagline": "Succinct graphical explanations to engineering topics.",
-  "videos.tagline": "Graphical video demonstrations on software engineering topics.",
+  "latestNewsFromSisterSite": "Get the latest [roadmapTitle] news from our sister site",
+  "TheNewStack": "TheNewStack.io",
+
+  "bestPracticesTagline": "Best practices on different topics with detailed implementation guidelines.",
+  "guidesTagline": "Succinct graphical explanations to engineering topics.",
+  "videosTagline": "Graphical video demonstrations on software engineering topics.",
 
   "name": "Name",
   "email": "Email",
@@ -76,7 +116,7 @@
   "yes": "Yes",
   "no": "No",
   "noProgress": "No Progress",
-  "noProgress.description": "Progress will appear here as you start tracking your Roadmaps or Best Practices progress.",
+  "noProgressDescription": "Progress will appear here as you start tracking your Roadmaps or Best Practices progress.",
 
   "password": "Password",
   "currentPassword": "Current Password",
@@ -84,47 +124,51 @@
   "confirmNewPassword": "Confirm New Password",
   "updatePassword": "Update Password",
 
-  "hero.title": "Developer Roadmaps",
-  "hero.tagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
-  "hero.tagline.mob": "Community created roadmaps, guides and articles to help developers grow in their career.",
+  "heroTitle": "Developer Roadmaps",
+  "heroTagline": "roadmap.sh is a community effort to create roadmaps, guides and other educational content to help guide developers in picking up the path and guide their learnings.",
+  "heroTaglineMob": "Community created roadmaps, guides and articles to help developers grow in their career.",
 
-  "home.roleBasedRoadmaps": "Role based Roadmaps",
-  "home.skillBasedRoadmaps": "Skill based Roadmaps",
+  "roleBasedRoadmaps": "Role based Roadmaps",
+  "skillBasedRoadmaps": "Skill based Roadmaps",
 
-  "footer.opensourceRank": "roadmap.sh is the 6th most starred project on GitHub and is visited by hundreds of thousands of developers every month.",
+  "opensourceRank": "roadmap.sh is the 6th most starred project on GitHub and is visited by hundreds of thousands of developers every month.",
+  "githubStars": "GitHub Stars",
   "joinDiscord": "Join on Discord",
 
-  "footer.siteDescription": "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.",
-  "footer.tnsDescription": "The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development, deployment, and management.",
+  "footerSiteDescription": "Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your career.",
+  "footerTnsDescription": "The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development, deployment, and management.",
 
-  "login.tagline": "Welcome back! Let's take you to your account.",
-  "login.resetPassword": "Reset your password?",
-  "login.noAccount": "Don't have an account?",
+  "loginTagline": "Welcome back! Let's take you to your account.",
+  "loginResetPassword": "Reset your password?",
+  "loginNoAccount": "Don't have an account?",
 
-  "signup.tagline": "Create an account to track your progress, showcase your skill-set and be a part of the community.",
-  "signup.verifyEmail": "Continue to Verify Email",
-  "signup.alreadyAccount": "Already have an account?",
+  "signupTagline": "Create an account to track your progress, showcase your skill-set and be a part of the community.",
+  "signupVerifyEmail": "Continue to Verify Email",
+  "signupAlreadyAccount": "Already have an account?",
 
-  "profile.tagline": "Update your profile details below.",
+  "profileTagline": "Update your profile details below.",
 
-  "password.tagline": "Use the form below to update your password.",
+  "passwordTagline": "Use the form below to update your password.",
 
   "forgotPassword": "Forgot Password?",
-  "forgotPassword.tagline": "Enter your email address below and we will send you a link to reset your password.",
+  "forgotPasswordTagline": "Enter your email address below and we will send you a link to reset your password.",
 
   "resetPassword": "Reset Password",
-  "resetPassword.tagline": "Enter and confirm your new password below.",
+  "resetPasswordTagline": "Enter and confirm your new password below.",
 
   "verifyingAccount": "Verifying your account",
-  "verifyingAccount.loading": "Please wait while we verify your account..",
+  "verifyingAccountLoading": "Please wait while we verify your account..",
 
   "sendingEmail": "Sending the email..",
-  "verifyEmailMessage": "Verify your email address",
-  "verifyEmailMessage.description": "We have sent you an email at [-]. Please click the link to verify your account. This link will expire shortly, so please verify soon!",
-  "verifyEmailMessage.spam": "Please make sure to check your spam folder. If you still don't have the email click to resend verification email.",
-  "verifyEmailMessage.resent": "Verification email has been sent!",
+  "verifyEmailTitle": "Verify your email address",
+  "verifyEmailSend": "We have sent you an email at [Email]. Please click the link to verify your account. This link will expire shortly, so please verify soon!",
+  "verifyEmailCheckSpam": "Please make sure to check your spam folder. If you still don't have the email then",
+  "resendVerificationEmail": "resend verification email.",
+  "verifyEmailResent": "Verification email has been sent!",
 
-  "submitLink.description": "Help others learn by submitting links to learn more about this topic",
+  "Check your email for a link to reset your password.": "Check your email for a link to reset your password.",
+
+  "submitLinkDescription": "Help others learn by submitting links to learn more about this topic",
   "submitALink": "Submit a Link",
   "resourceTitle": "Resource Title",
   "resourceLink": "Resource Link",
@@ -135,5 +179,39 @@
   "Do not add things you have not evaluated personally.": "Do not add things you have not evaluated personally.",
   "It should strictly be relevant to the topic.": "It should strictly be relevant to the topic.",
   "It should not be paid or behind a signup.": "It should not be paid or behind a signup.",
-  "Quality over quantity. Smaller set of quality links is preferred.": "Quality over quantity. Smaller set of quality links is preferred."
+  "Quality over quantity. Smaller set of quality links is preferred.": "Quality over quantity. Smaller set of quality links is preferred.",
+
+  "Error clearing progress. Please try again.": "Error clearing progress. Please try again.",
+  "Error loading activity": "Error loading activity",
+  "Something went wrong. Please try again later.": "Something went wrong. Please try again later.",
+  "Passwords do not match.": "Passwords do not match.",
+
+  "Something went wrong.": "Something went wrong.",
+
+  "Improve this Guide": "Improve this Guide",
+
+  "continueWithGitHub": "continueWithContinue with GitHub",
+  "continueWithGoogle": "Continue with Google",
+  "loginToYourAccount": "Login to your account",
+  "loginToYourAccountTagline": "You must be logged in to perform this action.",
+
+  "updatingStatus": "Updating Status..",
+  "edit": "Edit",
+  "updateProfile": "Update Profile",
+  "loadingActivity": "Loading Activity",
+
+  "changePassword": "Change Password",
+  "loadingProfile": "Loading Profile",
+
+  "foundMistake": "Found any mistakes? Help us improve by",
+  "updateFile": "updating the file here.",
+
+  "redirecting": "Redirecting..",
+  "redirectingDescription": "Click the link below if you are not redirected automatically.",
+
+  "pageNotFound": "Page Not Found",
+  "pageNotFoundDescription": "Sorry, we couldn't find the page you are looking for.",
+  "homePage": "Homepage",
+  "verifyEmail": "Verify Email",
+  "verifyAccount": "Verify Account"
 }

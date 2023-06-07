@@ -4,15 +4,16 @@ import EmailLoginForm from './EmailLoginForm';
 import Divider from './Divider.astro';
 import { GitHubButton } from './GitHubButton';
 import { GoogleButton } from './GoogleButton';
+import { t } from '../../helpers/translate';
 ---
 
 <Popup id='login-popup' title='' subtitle=''>
   <div class='text-center'>
     <h2 class='mb-3 text-2xl font-semibold leading-5 text-slate-900'>
-      Login to your account
+      {t('loginToYourAccount')}
     </h2>
     <p class='mt-2 text-sm leading-4 text-slate-600'>
-      You must be logged in to perform this action.
+      {t('loginToYourAccountTagline')}
     </p>
   </div>
 
@@ -26,7 +27,7 @@ import { GoogleButton } from './GoogleButton';
   <EmailLoginForm client:load />
 
   <div class='mt-6 text-center text-sm text-slate-600'>
-    Don't have an account?{' '}
-    <a href='/signup' class='font-medium text-[#4285f4]'>Sign up</a>
+    {t('loginNoAccount')}{' '}
+    <a href='/signup' class='font-medium text-[#4285f4]'>{t('signup')}</a>
   </div>
 </Popup>

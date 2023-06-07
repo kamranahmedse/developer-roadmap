@@ -2,6 +2,7 @@
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import BestPracticeHint from './BestPracticeHint.astro';
+import { t } from '../helpers/translate';
 
 export interface Props {
   title: string;
@@ -32,7 +33,9 @@ const isBestPracticeReady = !isUpcoming;
           class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
           aria-label='Back to All Best Practices'
         >
-          &larr;<span class='hidden sm:inline'>&nbsp;All Best Practices</span>
+          &larr;<span class='hidden sm:inline'
+            >&nbsp;{t('allBestPractices')}</span
+          >
         </a>
 
         {
@@ -40,11 +43,11 @@ const isBestPracticeReady = !isUpcoming;
             <button
               data-guest-required
               data-popup='login-popup'
-              class='hidden inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+              class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
             >
               <Icon icon='download' />
-              <span class='ml-2 hidden sm:inline'>Download</span>
+              <span class='ml-2 hidden sm:inline'>{t('download')}</span>
             </button>
           )
         }
@@ -55,11 +58,11 @@ const isBestPracticeReady = !isUpcoming;
               data-auth-required
               class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
               aria-label='Download Roadmap'
-              target="_blank"
+              target='_blank'
               href={`/pdfs/best-practices/${bestPracticeId}.pdf`}
             >
               <Icon icon='download' />
-              <span class='ml-2 hidden sm:inline'>Download</span>
+              <span class='ml-2 hidden sm:inline'>{t('download')}</span>
             </a>
           )
         }
@@ -71,7 +74,7 @@ const isBestPracticeReady = !isUpcoming;
           aria-label='Subscribe for Updates'
         >
           <Icon icon='email' />
-          <span class='ml-2'>Subscribe</span>
+          <span class='ml-2'>{t('subscribe')}</span>
         </button>
       </div>
 
@@ -84,8 +87,8 @@ const isBestPracticeReady = !isUpcoming;
             aria-label='Suggest Changes'
           >
             <Icon icon='comment' class='h-3 w-3' />
-            <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
-            <span class='ml-2 inline sm:hidden'>Suggest</span>
+            <span class='ml-2 hidden sm:inline'>{t("suggestChanges")}</span>
+            <span class='ml-2 inline sm:hidden'>{t("suggestChangesMob")}</span>
           </a>
         )
       }

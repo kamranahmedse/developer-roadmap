@@ -1,5 +1,6 @@
 ---
 import type { RoadmapFileType } from '../lib/roadmap';
+import { t } from '../helpers/translate';
 
 export interface Props {
   url: string;
@@ -25,7 +26,7 @@ const { url, title, description, isNew } = Astro.props;
   {
     isNew && (
       <span class='absolute bottom-1 right-1 bg-yellow-300 text-yellow-900 text-xs font-medium px-1 sm:px-1.5 py-0.5 rounded-sm uppercase'>
-        New
+        {t("new")}
       </span>
     )
   }

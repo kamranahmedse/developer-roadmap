@@ -43,13 +43,13 @@ export function ForgotPasswordForm() {
 
       {error && (
         <p className="mt-2 rounded-lg bg-red-100 p-2 text-sm text-red-700">
-          {error}
+          {t(error)}
         </p>
       )}
 
       {success && (
         <p className="mt-2 rounded-lg bg-green-100 p-2 text-sm text-green-700">
-          {success}
+          {t(success)}
         </p>
       )}
 
