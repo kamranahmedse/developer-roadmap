@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [What is OpenID](https://openid.net/connect/)
 - [OAuth vs OpenID](https://securew2.com/blog/oauth-vs-openid-which-is-better)
 - [An Illustrated Guide to OAuth and OpenID Connect](https://www.youtube.com/watch?v=t18YB3xDfXI)
+- [OAuth 2.0 and OpenID Connect (in plain English)](https://www.youtube.com/watch?v=996oiexhze0)
