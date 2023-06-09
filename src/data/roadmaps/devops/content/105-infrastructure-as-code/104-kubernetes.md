@@ -11,3 +11,5 @@ Visit the following resources to learn more:
 - [Kubernetes Crash Course for Absolute Beginners](https://www.youtube.com/watch?v=s_o8dwzRlu4)
 - [Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care](https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/)
 - [Kubernetes: An Overview](https://thenewstack.io/kubernetes-an-overview/)
+- [Kubernetes Tutorials by Kubernetes](https://kubernetes.io/docs/tutorials/)
+- [Fast Kubernetes course with practical labs](https://github.com/omerbsezer/fast-kubernetes)
