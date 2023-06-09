@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [Official Website](https://nodejs.dev/en/learn/)
 - [What is Node.js?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
 - [How Node.js Works?](https://www.youtube.com/watch?v=jOupHNvDIq8)
+- [Node.js Concept](https://dev.to/cassiocappellari/basic-concepts-of-node-js-pch)
