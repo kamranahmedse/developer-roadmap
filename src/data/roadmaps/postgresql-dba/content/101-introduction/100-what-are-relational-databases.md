@@ -28,3 +28,5 @@ Relational databases offer several advantages in terms of efficiency, flexibilit
 - **Querying**: The SQL (Structured Query Language) is used for querying, updating, and managing relational databases, providing a powerful and standardized way to access and manipulate the data.
 
 In summary, relational databases are a powerful and versatile tool for storing and managing structured data. Their ability to represent relationships among data and to ensure data integrity make them the backbone of many applications and services.
+
+- [Relational Databases: concept and history](https://www.ibm.com/topics/relational-databases)
