@@ -7,10 +7,7 @@ Ubuntu is a free and open-source Linux distribution based on Debian. Ubuntu is a
 Visit the following resources to learn more:
 
 - [Debian Website](https://www.debian.org/)
-- [Official Debian Documentation](https://www.debian.org/doc/)
-- [Debian Installation Guide](https://www.debian.org/releases/stable/installmanual)
 - [Ubuntu Website](https://ubuntu.com/)
-- [Ubuntu Documentation](https://help.ubuntu.com/)
-- [Install Ubuntu Desktop Documentation](https://ubuntu.com/tutorials/install-ubuntu-desktop#1-overview)
-- [Getting Started with Ubuntu Tutorials](https://itsfoss.com/getting-started-with-ubuntu/)
+- [Learn the ways of Linux-fu, for free](https://linuxjourney.com/)
+- [Linux Operating System - Crash Course for Beginners](https://www.youtube.com/watch?v=ROjZy1WbCIA)
 - [The Linux Command Line by William Shotts](https://linuxcommand.org/tlcl.php)

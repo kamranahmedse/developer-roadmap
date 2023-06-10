@@ -1675,7 +1675,7 @@
           "x": "574",
           "y": "1640",
           "properties": {
-            "controlName": "json:jsons/roadmaps/frontend.json"
+            "controlName": "json:frontend.json"
           },
           "children": {
             "controls": {
