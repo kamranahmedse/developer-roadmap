@@ -1,0 +1,2448 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "4658",
+          "typeID": "Arrow",
+          "zOrder": "8",
+          "w": "1",
+          "h": "274",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "237",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 273.8013976527985
+            }
+          }
+        },
+        {
+          "ID": "4659",
+          "typeID": "Label",
+          "zOrder": "9",
+          "measuredW": "116",
+          "measuredH": "40",
+          "x": "782",
+          "y": "179",
+          "properties": {
+            "size": "32",
+            "text": "DevOps"
+          }
+        },
+        {
+          "ID": "4668",
+          "typeID": "Canvas",
+          "zOrder": "10",
+          "w": "350",
+          "h": "141",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1050",
+          "y": "51"
+        },
+        {
+          "ID": "4669",
+          "typeID": "Label",
+          "zOrder": "11",
+          "measuredW": "314",
+          "measuredH": "25",
+          "x": "1064",
+          "y": "68",
+          "properties": {
+            "size": "17",
+            "text": "Find the detailed version of this roadmap"
+          }
+        },
+        {
+          "ID": "4670",
+          "typeID": "Label",
+          "zOrder": "12",
+          "measuredW": "319",
+          "measuredH": "25",
+          "x": "1064",
+          "y": "96",
+          "properties": {
+            "size": "17",
+            "text": "along with resources and other roadmaps"
+          }
+        },
+        {
+          "ID": "4671",
+          "typeID": "__group__",
+          "zOrder": "13",
+          "measuredW": "320",
+          "measuredH": "45",
+          "w": "320",
+          "h": "45",
+          "x": "1065",
+          "y": "132",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "320",
+                  "h": "45",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "4273622",
+                    "color": "4273622"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "181",
+                  "measuredH": "29",
+                  "w": "181",
+                  "h": "29",
+                  "x": "65",
+                  "y": "8",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "105",
+                          "measuredH": "28",
+                          "x": "76",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "45",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "2",
+                          "measuredW": "5",
+                          "measuredH": "28",
+                          "x": "48",
+                          "y": "0",
+                          "properties": {
+                            "bold": "true",
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          }
+                        },
+                        {
+                          "ID": "3",
+                          "typeID": "Label",
+                          "zOrder": "3",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "55",
+                          "y": "1",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        },
+                        {
+                          "ID": "4",
+                          "typeID": "Label",
+                          "zOrder": "4",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "63",
+                          "y": "1",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4675",
+          "typeID": "__group__",
+          "zOrder": "14",
+          "measuredW": "332",
+          "measuredH": "50",
+          "w": "332",
+          "h": "50",
+          "x": "676",
+          "y": "323",
+          "properties": {
+            "controlName": "100-language"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "332",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "249",
+                  "measuredH": "25",
+                  "x": "41",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Learn a Programming Language"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4677",
+          "typeID": "__group__",
+          "zOrder": "15",
+          "measuredW": "163",
+          "measuredH": "49",
+          "w": "163",
+          "h": "49",
+          "x": "1107",
+          "y": "296",
+          "properties": {
+            "controlName": "100-language:python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "153",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "53",
+                  "measuredH": "25",
+                  "x": "50",
+                  "y": "12",
+                  "properties": {
+                    "text": "Python",
+                    "size": "17"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "__group__",
+                  "zOrder": "2",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "139",
+                  "y": "13",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Icon",
+                          "zOrder": "2",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            },
+                            "color": "3700253"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4679",
+          "typeID": "__group__",
+          "zOrder": "16",
+          "measuredW": "164",
+          "measuredH": "47",
+          "w": "164",
+          "h": "47",
+          "x": "1107",
+          "y": "350",
+          "properties": {
+            "controlName": "103-language:go"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "152",
+                  "h": "47",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "textColor": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "23",
+                  "measuredH": "25",
+                  "x": "64",
+                  "y": "11",
+                  "properties": {
+                    "size": "17",
+                    "text": "Go"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "__group__",
+                  "zOrder": "2",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "140",
+                  "y": "12",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            },
+                            "color": "3700253"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4681",
+          "typeID": "Arrow",
+          "zOrder": "17",
+          "w": "1",
+          "h": "115",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "44",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "2848996",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.06060606060606233
+            },
+            "p1": {
+              "x": 0.5,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 114.9603156901461
+            }
+          }
+        },
+        {
+          "ID": "4850",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "h": "26",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "972",
+          "y": "354",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "2848996",
+            "p0": {
+              "x": 150.42424242424227,
+              "y": 25.545454545454504
+            },
+            "p1": {
+              "x": 0.32960554306205536,
+              "y": -0.04777244271561415
+            },
+            "p2": {
+              "x": 0.42424242424237946,
+              "y": -0.21212121212124657
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "4871",
+          "typeID": "Canvas",
+          "zOrder": "18",
+          "w": "420",
+          "h": "151",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "194",
+          "y": "51"
+        },
+        {
+          "ID": "4872",
+          "typeID": "__group__",
+          "zOrder": "19",
+          "measuredW": "374",
+          "measuredH": "47",
+          "w": "374",
+          "h": "47",
+          "x": "214",
+          "y": "140",
+          "properties": {
+            "controlName": "json:devops.json"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "374",
+                  "h": "47",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "3355443",
+                    "color": "3355443"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "203",
+                  "measuredH": "26",
+                  "x": "85",
+                  "y": "11",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "18",
+                    "text": "Visit the Detailed Version"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4873",
+          "typeID": "Label",
+          "zOrder": "20",
+          "measuredW": "370",
+          "measuredH": "26",
+          "x": "214",
+          "y": "74",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "If you already have some DevOps experience,"
+          }
+        },
+        {
+          "ID": "4874",
+          "typeID": "Label",
+          "zOrder": "21",
+          "measuredW": "338",
+          "measuredH": "26",
+          "x": "214",
+          "y": "104",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "visit the detailed version with more topics."
+          }
+        },
+        {
+          "ID": "4875",
+          "typeID": "Arrow",
+          "zOrder": "7",
+          "w": "142",
+          "h": "25",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "971",
+          "y": "319",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "2848996",
+            "p0": {
+              "x": 142.33333333333326,
+              "y": -0.06060606060606233
+            },
+            "p1": {
+              "x": 0.4364276286845581,
+              "y": 0.06401231852177729
+            },
+            "p2": {
+              "x": -0.09090909090912191,
+              "y": 24.181818181818187
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "4877",
+          "typeID": "Label",
+          "zOrder": "22",
+          "measuredW": "438",
+          "measuredH": "26",
+          "x": "898",
+          "y": "493",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "You can pick any programming language. The purpose"
+          }
+        },
+        {
+          "ID": "4878",
+          "typeID": "Label",
+          "zOrder": "23",
+          "measuredW": "431",
+          "measuredH": "26",
+          "x": "898",
+          "y": "525",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "behind the language is to be able to write automation"
+          }
+        },
+        {
+          "ID": "4879",
+          "typeID": "Label",
+          "zOrder": "24",
+          "measuredW": "288",
+          "measuredH": "26",
+          "x": "898",
+          "y": "557",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "scripts to automate repetitive tasks."
+          }
+        },
+        {
+          "ID": "4880",
+          "typeID": "Label",
+          "zOrder": "25",
+          "measuredW": "356",
+          "measuredH": "32",
+          "x": "898",
+          "y": "445",
+          "properties": {
+            "color": "4985136",
+            "size": "24",
+            "text": "Pick any Programming Language"
+          }
+        },
+        {
+          "ID": "4881",
+          "typeID": "Arrow",
+          "zOrder": "26",
+          "w": "1",
+          "h": "79",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "529",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 79.12121212121212
+            }
+          }
+        },
+        {
+          "ID": "4882",
+          "typeID": "Arrow",
+          "zOrder": "27",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "766",
+          "y": "567",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            }
+          }
+        },
+        {
+          "ID": "4883",
+          "typeID": "Label",
+          "zOrder": "28",
+          "measuredW": "451",
+          "measuredH": "26",
+          "x": "173",
+          "y": "307",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "DevOps is all about bringing developers and operations"
+          }
+        },
+        {
+          "ID": "4884",
+          "typeID": "Label",
+          "zOrder": "29",
+          "measuredW": "473",
+          "measuredH": "26",
+          "x": "151",
+          "y": "338",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "teams together to improve software delivery. The key focus"
+          }
+        },
+        {
+          "ID": "4885",
+          "typeID": "Label",
+          "zOrder": "30",
+          "measuredW": "422",
+          "measuredH": "26",
+          "x": "202",
+          "y": "369",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "areas are automation, infrastructure and monitoring."
+          }
+        },
+        {
+          "ID": "4886",
+          "typeID": "Label",
+          "zOrder": "31",
+          "measuredW": "185",
+          "measuredH": "32",
+          "x": "439",
+          "y": "259",
+          "properties": {
+            "color": "4985136",
+            "size": "24",
+            "text": "What is DevOps?"
+          }
+        },
+        {
+          "ID": "4888",
+          "typeID": "Label",
+          "zOrder": "32",
+          "measuredW": "400",
+          "measuredH": "26",
+          "x": "224",
+          "y": "418",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "For further details, have a look at the FAQs below."
+          }
+        },
+        {
+          "ID": "4889",
+          "typeID": "__group__",
+          "zOrder": "33",
+          "measuredW": "102",
+          "measuredH": "49",
+          "w": "102",
+          "h": "49",
+          "x": "676",
+          "y": "543",
+          "properties": {
+            "controlName": "100-operating-systems:linux:ubuntu"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "102",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "41",
+                  "measuredH": "25",
+                  "x": "30",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Linux"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4890",
+          "typeID": "Label",
+          "zOrder": "34",
+          "measuredW": "473",
+          "measuredH": "26",
+          "x": "151",
+          "y": "496",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn about the file system, package managers, managing"
+          }
+        },
+        {
+          "ID": "4891",
+          "typeID": "Label",
+          "zOrder": "35",
+          "measuredW": "469",
+          "measuredH": "26",
+          "x": "155",
+          "y": "526",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "services, checking logs, bash scripting, permissions, pipes"
+          }
+        },
+        {
+          "ID": "4892",
+          "typeID": "Label",
+          "zOrder": "36",
+          "measuredW": "437",
+          "measuredH": "26",
+          "x": "187",
+          "y": "556",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "output redirection, common tools for text manipulation"
+          }
+        },
+        {
+          "ID": "4894",
+          "typeID": "Label",
+          "zOrder": "37",
+          "measuredW": "429",
+          "measuredH": "26",
+          "x": "197",
+          "y": "586",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "process monitoring, networking tools, CLI editors etc."
+          }
+        },
+        {
+          "ID": "4895",
+          "typeID": "Label",
+          "zOrder": "38",
+          "measuredW": "388",
+          "measuredH": "26",
+          "x": "236",
+          "y": "633",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Pick Ubuntu if you have a little to no experience."
+          }
+        },
+        {
+          "ID": "4896",
+          "typeID": "Arrow",
+          "zOrder": "39",
+          "w": "1",
+          "h": "97",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "624",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 97.35494995908607
+            }
+          }
+        },
+        {
+          "ID": "4897",
+          "typeID": "Arrow",
+          "zOrder": "40",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "656",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            },
+            "color": "3700253"
+          }
+        },
+        {
+          "ID": "4898",
+          "typeID": "__group__",
+          "zOrder": "41",
+          "measuredW": "238",
+          "measuredH": "49",
+          "w": "238",
+          "h": "49",
+          "x": "898",
+          "y": "632",
+          "properties": {
+            "controlName": "108-networking-protocols"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "__group__",
+                  "zOrder": "0",
+                  "measuredW": "238",
+                  "measuredH": "49",
+                  "w": "238",
+                  "h": "49",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "controlName": "103-networking-protocols"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "TextArea",
+                          "zOrder": "0",
+                          "w": "238",
+                          "h": "49",
+                          "measuredW": "200",
+                          "measuredH": "140",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16776960"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "197",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Networking and Protocols"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4899",
+          "typeID": "Label",
+          "zOrder": "42",
+          "measuredW": "467",
+          "measuredH": "26",
+          "x": "898",
+          "y": "742",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn about DNS, TCP/IP Protocols, SSH, ports, gateways,"
+          }
+        },
+        {
+          "ID": "4900",
+          "typeID": "Label",
+          "zOrder": "43",
+          "measuredW": "338",
+          "measuredH": "26",
+          "x": "898",
+          "y": "771",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "routing, ip addressing, and subnetting etc."
+          }
+        },
+        {
+          "ID": "4901",
+          "typeID": "Label",
+          "zOrder": "44",
+          "measuredW": "474",
+          "measuredH": "26",
+          "x": "898",
+          "y": "818",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "This will come in handy with deployments / troubleshooting"
+          }
+        },
+        {
+          "ID": "4902",
+          "typeID": "Arrow",
+          "zOrder": "45",
+          "w": "1",
+          "h": "117",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "738",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 117.34935324061723
+            }
+          }
+        },
+        {
+          "ID": "4903",
+          "typeID": "Arrow",
+          "zOrder": "46",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "766",
+          "y": "788",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            }
+          }
+        },
+        {
+          "ID": "4904",
+          "typeID": "__group__",
+          "zOrder": "47",
+          "measuredW": "102",
+          "measuredH": "49",
+          "w": "102",
+          "h": "49",
+          "x": "676",
+          "y": "764",
+          "properties": {
+            "controlName": "103-containers:docker"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "102",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Docker"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4905",
+          "typeID": "Label",
+          "zOrder": "48",
+          "measuredW": "425",
+          "measuredH": "26",
+          "x": "199",
+          "y": "725",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn about containerization. Be comfortable writing"
+          }
+        },
+        {
+          "ID": "4906",
+          "typeID": "Label",
+          "zOrder": "49",
+          "measuredW": "472",
+          "measuredH": "26",
+          "x": "152",
+          "y": "755",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Docker files. Learn about troubleshooting. Get familiar with"
+          }
+        },
+        {
+          "ID": "4907",
+          "typeID": "Label",
+          "zOrder": "50",
+          "measuredW": "442",
+          "measuredH": "26",
+          "x": "182",
+          "y": "785",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Alpine Linux. Learn about networking, storage, security."
+          }
+        },
+        {
+          "ID": "4908",
+          "typeID": "Label",
+          "zOrder": "51",
+          "measuredW": "457",
+          "measuredH": "26",
+          "x": "167",
+          "y": "831",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Learn docker networking, storage, security, performance."
+          }
+        },
+        {
+          "ID": "4909",
+          "typeID": "Arrow",
+          "zOrder": "52",
+          "w": "1",
+          "h": "107",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "870",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999983,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 106.92694925075432
+            }
+          }
+        },
+        {
+          "ID": "4910",
+          "typeID": "__group__",
+          "zOrder": "53",
+          "measuredW": "102",
+          "measuredH": "49",
+          "w": "102",
+          "h": "49",
+          "x": "676",
+          "y": "909",
+          "properties": {
+            "controlName": "100-version-control-systems:git"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "102",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "22",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Git"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4911",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "79",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "759",
+          "y": "933",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": -0.35538425356764947,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 79,
+              "y": -0.36363636363637397
+            }
+          }
+        },
+        {
+          "ID": "4912",
+          "typeID": "Label",
+          "zOrder": "54",
+          "measuredW": "424",
+          "measuredH": "26",
+          "x": "200",
+          "y": "903",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "DevOps teams usually practice \"git ops,\" i.e., making "
+          }
+        },
+        {
+          "ID": "4914",
+          "typeID": "Label",
+          "zOrder": "55",
+          "measuredW": "454",
+          "measuredH": "26",
+          "x": "170",
+          "y": "933",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "changes to your CI/CD pipeline, infrastructure, or server"
+          }
+        },
+        {
+          "ID": "4915",
+          "typeID": "Label",
+          "zOrder": "56",
+          "measuredW": "432",
+          "measuredH": "26",
+          "x": "192",
+          "y": "964",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "provisioning will involve making a pull request against"
+          }
+        },
+        {
+          "ID": "4916",
+          "typeID": "Label",
+          "zOrder": "57",
+          "measuredW": "239",
+          "measuredH": "26",
+          "x": "385",
+          "y": "994",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "the appropriate git repository."
+          }
+        },
+        {
+          "ID": "4917",
+          "typeID": "Label",
+          "zOrder": "58",
+          "measuredW": "342",
+          "measuredH": "26",
+          "x": "282",
+          "y": "1044",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "Learn about git, create your GitHub profile."
+          }
+        },
+        {
+          "ID": "4919",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "105",
+          "measuredH": "49",
+          "w": "105",
+          "h": "49",
+          "x": "898",
+          "y": "990",
+          "properties": {
+            "controlName": "100-cloud-providers:aws"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "105",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "36",
+                  "measuredH": "25",
+                  "x": "35",
+                  "y": "12",
+                  "properties": {
+                    "text": "AWS",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4920",
+          "typeID": "Arrow",
+          "zOrder": "60",
+          "w": "1",
+          "h": "133",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "988",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 133.20096811109102
+            }
+          }
+        },
+        {
+          "ID": "4921",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "840",
+          "y": "1015",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "4924",
+          "typeID": "Label",
+          "zOrder": "61",
+          "measuredW": "415",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1067",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Pick one of the cloud providers AWS, GCP or Azure."
+          }
+        },
+        {
+          "ID": "4925",
+          "typeID": "Label",
+          "zOrder": "62",
+          "measuredW": "436",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1096",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Start with core services e.g. in AWS VPC, EC2, S3, IAM"
+          }
+        },
+        {
+          "ID": "4926",
+          "typeID": "Label",
+          "zOrder": "63",
+          "measuredW": "414",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1124",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "and later RDS, Route53, Cloudwatch, ECS, EKS etc."
+          }
+        },
+        {
+          "ID": "4927",
+          "typeID": "Label",
+          "zOrder": "64",
+          "measuredW": "420",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1165",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Create and deploy some dummy application to AWS."
+          }
+        },
+        {
+          "ID": "4928",
+          "typeID": "__group__",
+          "zOrder": "65",
+          "measuredW": "123",
+          "measuredH": "49",
+          "w": "123",
+          "h": "49",
+          "x": "664",
+          "y": "1157",
+          "properties": {
+            "controlName": "103-infrastructure-provisioning:terraform"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "123",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "75",
+                  "measuredW": "75",
+                  "measuredH": "25",
+                  "x": "24",
+                  "y": "12",
+                  "properties": {
+                    "text": "Terraform",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4930",
+          "typeID": "Arrow",
+          "zOrder": "66",
+          "w": "1",
+          "h": "110",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "1134",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999999999999997,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 110.23786879464456
+            }
+          }
+        },
+        {
+          "ID": "4931",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "79",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "758",
+          "y": "1181",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": -0.35538425356764947,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 79,
+              "y": -0.36363636363637397
+            }
+          }
+        },
+        {
+          "ID": "4933",
+          "typeID": "Label",
+          "zOrder": "67",
+          "measuredW": "460",
+          "measuredH": "26",
+          "x": "164",
+          "y": "1141",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn what “Infrastructure as Code” means. Learn about"
+          }
+        },
+        {
+          "ID": "4934",
+          "typeID": "Label",
+          "zOrder": "68",
+          "measuredW": "439",
+          "measuredH": "26",
+          "x": "185",
+          "y": "1171",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "terraform and how to automate infrastructure creation."
+          }
+        },
+        {
+          "ID": "4936",
+          "typeID": "Label",
+          "zOrder": "69",
+          "measuredW": "437",
+          "measuredH": "26",
+          "x": "187",
+          "y": "1223",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "If you deployed an application to AWS in previous step"
+          }
+        },
+        {
+          "ID": "4937",
+          "typeID": "Label",
+          "zOrder": "70",
+          "measuredW": "444",
+          "measuredH": "26",
+          "x": "180",
+          "y": "1253",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "destroy the infrastructure and create it using terraform."
+          }
+        },
+        {
+          "ID": "4938",
+          "typeID": "Arrow",
+          "zOrder": "71",
+          "w": "1",
+          "h": "75",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "1254",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 75.17754491730079
+            }
+          }
+        },
+        {
+          "ID": "4940",
+          "typeID": "__group__",
+          "zOrder": "72",
+          "measuredW": "108",
+          "measuredH": "49",
+          "w": "108",
+          "h": "49",
+          "x": "898",
+          "y": "1259",
+          "properties": {
+            "controlName": "100-configuration-management:ansible"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "108",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "25",
+                  "x": "26",
+                  "y": "11",
+                  "properties": {
+                    "text": "Ansible",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4941",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "1284",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "4942",
+          "typeID": "Label",
+          "zOrder": "73",
+          "measuredW": "436",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1343",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn what is configuration management. Understand"
+          }
+        },
+        {
+          "ID": "4943",
+          "typeID": "Label",
+          "zOrder": "74",
+          "measuredW": "458",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1373",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "roles, playbooks, inventory management and automation."
+          }
+        },
+        {
+          "ID": "4944",
+          "typeID": "Label",
+          "zOrder": "75",
+          "measuredW": "382",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1418",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Write some automation scripts e.g. db backups."
+          }
+        },
+        {
+          "ID": "4945",
+          "typeID": "Arrow",
+          "zOrder": "76",
+          "w": "1",
+          "h": "110",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "1341",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999999999999997,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 110.23786879464456
+            }
+          }
+        },
+        {
+          "ID": "4946",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "152",
+          "measuredH": "49",
+          "w": "152",
+          "h": "49",
+          "x": "655",
+          "y": "1361",
+          "properties": {
+            "controlName": "102-ci-cd:github-actions"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "152",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "114",
+                  "measuredH": "25",
+                  "x": "19",
+                  "y": "12",
+                  "properties": {
+                    "text": "GitHub Actions",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4947",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "79",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "758",
+          "y": "1385",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3700253",
+            "p0": {
+              "x": -0.35538425356764947,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 79,
+              "y": -0.36363636363637397
+            }
+          }
+        },
+        {
+          "ID": "4949",
+          "typeID": "Label",
+          "zOrder": "78",
+          "measuredW": "470",
+          "measuredH": "26",
+          "x": "154",
+          "y": "1336",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "Learn about the concepts of CI/CD and how to implement"
+          }
+        },
+        {
+          "ID": "4950",
+          "typeID": "Label",
+          "zOrder": "79",
+          "measuredW": "465",
+          "measuredH": "26",
+          "x": "159",
+          "y": "1367",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "in your projects using some CI/CD tool. There are several"
+          }
+        },
+        {
+          "ID": "4951",
+          "typeID": "Label",
+          "zOrder": "80",
+          "measuredW": "423",
+          "measuredH": "26",
+          "x": "201",
+          "y": "1398",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "options available in this space, you can pick any one."
+          }
+        },
+        {
+          "ID": "4952",
+          "typeID": "Label",
+          "zOrder": "81",
+          "measuredW": "428",
+          "measuredH": "26",
+          "x": "198",
+          "y": "1448",
+          "properties": {
+            "size": "18",
+            "color": "3700253",
+            "text": "Integrate CI/CD into your apps using GitHub Actions."
+          }
+        },
+        {
+          "ID": "4953",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "107",
+          "measuredH": "49",
+          "w": "107",
+          "h": "49",
+          "x": "898",
+          "y": "1501",
+          "properties": {
+            "controlName": "105-setting-up-x:nginx"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "107",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "45",
+                  "measuredH": "25",
+                  "x": "31",
+                  "y": "12",
+                  "properties": {
+                    "text": "Nginx",
+                    "size": "17"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4954",
+          "typeID": "Arrow",
+          "zOrder": "83",
+          "w": "1",
+          "h": "390",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "839",
+          "y": "1463",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 390.42124399183035
+            }
+          }
+        },
+        {
+          "ID": "4955",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "72",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "842",
+          "y": "1525",
+          "properties": {
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.27272727272725206,
+              "y": -0.36363636363637397
+            },
+            "p1": {
+              "x": 0.4999999999999999,
+              "y": 0
+            },
+            "p2": {
+              "x": 72,
+              "y": -0.36363636363637397
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "4956",
+          "typeID": "Label",
+          "zOrder": "84",
+          "measuredW": "467",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1586",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "nginx is commonly used for web serving, reverse proxying,"
+          }
+        },
+        {
+          "ID": "4957",
+          "typeID": "Label",
+          "zOrder": "85",
+          "measuredW": "424",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1616",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "caching, load balancing, media streaming, and more."
+          }
+        },
+        {
+          "ID": "4958",
+          "typeID": "Label",
+          "zOrder": "86",
+          "measuredW": "369",
+          "measuredH": "26",
+          "x": "898",
+          "y": "1664",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Learn the basic config options, TLS setup etc."
+          }
+        },
+        {
+          "ID": "4959",
+          "typeID": "Arrow",
+          "zOrder": "87",
+          "w": "1",
+          "h": "71",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "835",
+          "y": "1978",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "40463",
+            "p0": {
+              "x": 0,
+              "y": -0.05210330899694782
+            },
+            "p1": {
+              "x": 0.5000000000000007,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 71
+            }
+          }
+        },
+        {
+          "ID": "4960",
+          "typeID": "Arrow",
+          "zOrder": "88",
+          "w": "2",
+          "h": "89",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "834",
+          "y": "2131",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "p0": {
+              "x": 1,
+              "y": 88
+            },
+            "p1": {
+              "x": 0.4072427393330943,
+              "y": 0.00953746862674794
+            },
+            "p2": {
+              "x": 1,
+              "y": 0
+            },
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "40463"
+          }
+        },
+        {
+          "ID": "4961",
+          "typeID": "TextArea",
+          "zOrder": "89",
+          "w": "499",
+          "h": "118",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "585",
+          "y": "2044"
+        },
+        {
+          "ID": "4962",
+          "typeID": "Label",
+          "zOrder": "90",
+          "measuredW": "431",
+          "measuredH": "25",
+          "x": "619",
+          "y": "2063",
+          "properties": {
+            "size": "17",
+            "text": "Look at the detailed version for what else you don’t know"
+          }
+        },
+        {
+          "ID": "4963",
+          "typeID": "__group__",
+          "zOrder": "91",
+          "measuredW": "430",
+          "measuredH": "44",
+          "w": "430",
+          "h": "44",
+          "x": "620",
+          "y": "2098",
+          "properties": {
+            "controlName": "json:devops.json"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "430",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "141",
+                  "measuredH": "25",
+                  "x": "144",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "DevOps Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "4964",
+          "typeID": "TextArea",
+          "zOrder": "92",
+          "w": "613",
+          "h": "246",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "532",
+          "y": "1731"
+        },
+        {
+          "ID": "4965",
+          "typeID": "Label",
+          "zOrder": "93",
+          "measuredW": "532",
+          "measuredH": "26",
+          "x": "564",
+          "y": "1797",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "At this point, you should have enough knowledge to find a junior to"
+          }
+        },
+        {
+          "ID": "4966",
+          "typeID": "Label",
+          "zOrder": "94",
+          "measuredW": "516",
+          "measuredH": "26",
+          "x": "564",
+          "y": "1827",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "mid-level (maybe even senior) DevOps position at any company"
+          }
+        },
+        {
+          "ID": "4967",
+          "typeID": "Label",
+          "zOrder": "95",
+          "measuredW": "350",
+          "measuredH": "26",
+          "x": "564",
+          "y": "1857",
+          "properties": {
+            "color": "4985136",
+            "size": "18",
+            "text": "depending on the depth of your knowledge."
+          }
+        },
+        {
+          "ID": "4968",
+          "typeID": "Label",
+          "zOrder": "96",
+          "measuredW": "116",
+          "measuredH": "32",
+          "x": "564",
+          "y": "1753",
+          "properties": {
+            "color": "4985136",
+            "size": "24",
+            "text": "Job Ready"
+          }
+        },
+        {
+          "ID": "4969",
+          "typeID": "Label",
+          "zOrder": "97",
+          "measuredW": "536",
+          "measuredH": "26",
+          "x": "564",
+          "y": "1899",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "Deepen your pool of knowledge  and keep building projects till you"
+          }
+        },
+        {
+          "ID": "4970",
+          "typeID": "Label",
+          "zOrder": "98",
+          "measuredW": "360",
+          "measuredH": "26",
+          "x": "564",
+          "y": "1928",
+          "properties": {
+            "size": "18",
+            "color": "10027263",
+            "text": "find a job. Your job will teach you a lot as well."
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 9 copy 3",
+      "order": 1000127.6123092113,
+      "parentID": null,
+      "notes": null
+    },
+    "branchID": "Master",
+    "resourceID": "A1A5999B-9C79-4DA0-ACC2-6623475C4F5B",
+    "mockupH": "2176",
+    "mockupW": "1249",
+    "measuredW": "1400",
+    "measuredH": "2220",
+    "version": "1.0"
+  },
+  "groupOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "dependencies": [],
+  "projectID": "file:///Users/kamranahmed/Desktop/AWS%20Roadmap.bmpr"
+}
