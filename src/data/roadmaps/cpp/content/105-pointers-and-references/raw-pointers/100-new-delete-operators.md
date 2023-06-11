@@ -2,7 +2,7 @@
 
 Raw pointers in C++ are low-level constructs that directly hold a memory address. They can be used for manually allocating memory, creating dynamic arrays, and passing values efficiently, among other things.
 
-##`new` Operator
+## `new` Operator
 
 The `new` operator is used to allocate memory on the heap. The memory allocated using `new` remains available until you explicitly deallocate it using the corresponding `delete` operator.
 
@@ -13,7 +13,7 @@ int* ptr = new int; // Dynamically allocates an int on the heap
 *ptr = 42; // Assigns the value 42 to the allocated int
 ```
 
-##`delete` Operator
+## `delete` Operator
 
 The `delete` operator is used to deallocate memory that has been allocated using `new`. After memory is deallocated, it's available to be reallocated for other purposes. Failing to properly deallocate memory can lead to memory leaks.
 
@@ -26,7 +26,7 @@ int* ptr = new int; // Dynamically allocates an int on the heap
 delete ptr; // Deallocates the memory assigned to ptr
 ```
 
-##`new[]` and `delete[]` Operators
+## `new[]` and `delete[]` Operators
 
 The `new[]` and `delete[]` operators are used for allocating and deallocating memory for an array of objects. The syntax for `new[]` and `delete[]` is very similar to that of `new` and `delete`.
 
