@@ -1,6 +1,9 @@
+import { useIsCopied } from '../../hooks/use-is-copied';
 import type { BadgeProps } from './RoadCardPage';
 
 export function LongBadge({ badgeUrl }: BadgeProps) {
+  const { isCopied, handleCopy } = useIsCopied();
+
   return (
     <div className="col-span-2">
       <a
@@ -17,17 +20,19 @@ export function LongBadge({ badgeUrl }: BadgeProps) {
       </a>
 
       <div className="mt-3 grid grid-cols-2 gap-2">
-        <button className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75">
-          Download
-        </button>
         <a
           className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75"
-          href={badgeUrl}
-          target="_blank"
-          rel="noopener noreferrer"
+          href={badgeUrl + '?type=png'}
+          download
         >
-          Copy Link
+          Download
         </a>
+        <button
+          className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75"
+          onClick={() => handleCopy(badgeUrl)}
+        >
+          {isCopied ? 'Copied!' : 'Copy Link'}
+        </button>
       </div>
     </div>
   );

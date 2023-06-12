@@ -5,6 +5,7 @@ import { WideBadge } from './WideBadge';
 import { LongBadge } from './LongBadge';
 
 import CopyIcon from '../../icons/copy.svg';
+import { useIsCopied } from '../../hooks/use-is-copied';
 
 export type BadgeProps = {
   badgeUrl: string;
@@ -12,7 +13,8 @@ export type BadgeProps = {
 
 export function RoadCardPage() {
   const [selectedBadge, setSelectedBadge] = useState<'long' | 'wide'>('long');
-  const [isCopied, setIsCopied] = useState(false);
+  const { isCopied, handleCopy } = useIsCopied();
+
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (!token) {
     return null;
@@ -35,21 +37,6 @@ export function RoadCardPage() {
   />
 </a>
   `.trim();
-
-  const handleCopyEmbed = () => {
-    navigator.clipboard.writeText(textareaContent);
-    setIsCopied(true);
-  };
-
-  useEffect(() => {
-    let timeout: ReturnType<typeof setTimeout>;
-    if (isCopied) {
-      timeout = setTimeout(() => {
-        setIsCopied(false);
-      }, 2000);
-    }
-    return () => clearTimeout(timeout);
-  }, [isCopied]);
 
   return (
     <>
@@ -98,11 +85,11 @@ export function RoadCardPage() {
         {selectedBadge === 'wide' && <WideBadge badgeUrl={badgeUrl} />}
 
         <div className={`${selectedBadge === 'long' && 'col-span-3'}`}>
-          <div className="flex items-center gap-2 text-xs uppercase text-gray-400 leading-none">
+          <div className="flex items-center gap-2 text-xs uppercase leading-none text-gray-400">
             Embed
             <button
               className="flex items-center"
-              onClick={handleCopyEmbed}
+              onClick={() => handleCopy(textareaContent)}
             >
               <img src={CopyIcon} alt="Copy" className="inline-block h-4 w-4" />
               {isCopied && <span className="ml-2 text-green-500">Copied!</span>}
