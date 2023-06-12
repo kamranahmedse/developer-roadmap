@@ -27,12 +27,12 @@ export function RoadCardPage() {
 
   const textareaContent = `
   <a
-  href="${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${user.id}"
+  href="${import.meta.env.PUBLIC_API_URL}/v1-badge/${selectedBadge}/${user.id}"
   target="_blank"
   rel="noopener noreferrer"
 >
   <img
-    src="${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${user.id}"
+    src="${import.meta.env.PUBLIC_API_URL}/v1-badge/${selectedBadge}/${user.id}"
     alt="Road Card"
   />
 </a>
@@ -40,7 +40,7 @@ export function RoadCardPage() {
 
   return (
     <>
-      <div className="mb-8">
+      <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Grab your #RoadCard</h2>
         <p className="mt-2">
           Pick a badge and share your progress with the world.
@@ -76,15 +76,15 @@ export function RoadCardPage() {
       </div>
 
       <div
-        className={`${selectedBadge === 'long' && 'grid grid-cols-5 gap-6'} ${
-          selectedBadge === 'wide' && 'flex flex-col gap-6'
-        }`}
+        className={`${
+          selectedBadge === 'long' && 'grid gap-6 sm:grid-cols-5'
+        } ${selectedBadge === 'wide' && 'flex flex-col gap-6'}`}
       >
         {selectedBadge === 'long' && <LongBadge badgeUrl={badgeUrl} />}
 
         {selectedBadge === 'wide' && <WideBadge badgeUrl={badgeUrl} />}
 
-        <div className={`${selectedBadge === 'long' && 'col-span-3'}`}>
+        <div className={`${selectedBadge === 'long' && 'sm:col-span-3'}`}>
           <div className="flex items-center gap-2 text-xs uppercase leading-none text-gray-400">
             Embed
             <button

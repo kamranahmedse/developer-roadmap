@@ -97,6 +97,19 @@ export function ActivityPage() {
 
         {(learningRoadmaps.length > 0 || learningBestPractices.length > 0) && (
           <>
+            <a
+              href="/account/road-card"
+              className="text-md group mb-7 hidden items-center text-red-600 hover:text-red-900 sm:flex"
+            >
+              <span class="mr-2 rounded-sm bg-red-600 px-1.5 py-0.5 text-xs font-medium uppercase text-white group-hover:bg-red-800">
+                New
+              </span>
+              <span className="mr-1 underline">
+                Share your progress with others using a{' '}
+                <span className="font-medium">#RoadCard</span>
+              </span>
+              <span>»</span>
+            </a>
             <h2 class="mb-3 text-xs uppercase text-gray-400">
               Continue Following
             </h2>
