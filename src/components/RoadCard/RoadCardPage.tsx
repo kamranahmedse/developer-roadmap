@@ -1,14 +1,27 @@
+import { useEffect, useState } from 'preact/hooks';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME, decodeToken } from '../../lib/jwt';
+import { WideBadge } from './WideBadge';
+import { LongBadge } from './LongBadge';
+
+import CopyIcon from '../../icons/copy.svg';
+
+export type BadgeProps = {
+  badgeUrl: string;
+};
 
 export function RoadCardPage() {
+  const [selectedBadge, setSelectedBadge] = useState<'long' | 'wide'>('long');
+  const [isCopied, setIsCopied] = useState(false);
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (!token) {
     return null;
   }
-
   const user = decodeToken(token);
-  console.log(user);
+
+  const badgeUrl = `${
+    import.meta.env.PUBLIC_API_URL
+  }/v1-badge/${selectedBadge}/${user.id}`;
 
   const textareaContent = `
   <a
@@ -23,8 +36,23 @@ export function RoadCardPage() {
 </a>
   `.trim();
 
+  const handleCopyEmbed = () => {
+    navigator.clipboard.writeText(textareaContent);
+    setIsCopied(true);
+  };
+
+  useEffect(() => {
+    let timeout: ReturnType<typeof setTimeout>;
+    if (isCopied) {
+      timeout = setTimeout(() => {
+        setIsCopied(false);
+      }, 2000);
+    }
+    return () => clearTimeout(timeout);
+  }, [isCopied]);
+
   return (
-    <div>
+    <>
       <div className="mb-8">
         <h2 className="text-3xl font-bold sm:text-4xl">Grab your #RoadCard</h2>
         <p className="mt-2">
@@ -32,41 +60,54 @@ export function RoadCardPage() {
         </p>
       </div>
 
-      <div className="grid grid-cols-5 gap-6">
-        <div className="col-span-2">
-          <a
-            href={`${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${user.id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="block w-full hover:cursor-pointer"
-          >
-            <img
-              src={`${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${user.id}`}
-              alt="Road Card"
-              width={300}
-              height={390}
-              className="aspect-[1/1.3]"
-            />
-          </a>
-
-          <div className="mt-3 grid grid-cols-2 gap-2">
-            <button className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75">
-              Download
+      <div>
+        <div className="mb-10 flex items-center border-b">
+          <div className="flex items-center">
+            <button
+              className={`relative top-px flex items-center justify-center px-3 py-2 leading-none shadow-gray-600 ${
+                selectedBadge === 'long'
+                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
+                  : 'text-gray-600'
+              }`}
+              onClick={() => setSelectedBadge('long')}
+            >
+              Long
             </button>
-            <a
-              className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75"
-              href={`${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${
-                user.id
+
+            <button
+              className={`relative top-px flex items-center justify-center px-3 py-2 leading-none shadow-gray-600 ${
+                selectedBadge === 'wide'
+                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
+                  : 'text-gray-600'
               }`}
-              target="_blank"
-              rel="noopener noreferrer"
+              onClick={() => setSelectedBadge('wide')}
             >
-              Copy Link
-            </a>
+              Wide
+            </button>
           </div>
         </div>
-        <div className="col-span-3">
-          <span className="">Embed</span>
+      </div>
+
+      <div
+        className={`${selectedBadge === 'long' && 'grid grid-cols-5 gap-6'} ${
+          selectedBadge === 'wide' && 'flex flex-col gap-6'
+        }`}
+      >
+        {selectedBadge === 'long' && <LongBadge badgeUrl={badgeUrl} />}
+
+        {selectedBadge === 'wide' && <WideBadge badgeUrl={badgeUrl} />}
+
+        <div className={`${selectedBadge === 'long' && 'col-span-3'}`}>
+          <div className="flex items-center gap-2 text-xs uppercase text-gray-400 leading-none">
+            Embed
+            <button
+              className="flex items-center"
+              onClick={handleCopyEmbed}
+            >
+              <img src={CopyIcon} alt="Copy" className="inline-block h-4 w-4" />
+              {isCopied && <span className="ml-2 text-green-500">Copied!</span>}
+            </button>
+          </div>
           <textarea
             className="no-scrollbar mt-3 h-32 w-full rounded-md border border-gray-300 bg-gray-50 p-3 text-gray-900"
             readOnly
@@ -86,65 +127,6 @@ export function RoadCardPage() {
           </p>
         </div>
       </div>
-
-      <div className="mt-6 flex flex-col gap-6">
-        <div className="col-span-3">
-          <a
-            href={`${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${user.id}`}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="relative block aspect-[2.63/1] w-full hover:cursor-pointer"
-          >
-            <img
-              src={`${import.meta.env.PUBLIC_API_URL}/v1-badge/wide/${user.id}`}
-              alt="Road Card"
-              className="absolute left-0 top-0 h-full w-full object-cover"
-            />
-          </a>
-
-          <div className="mt-3 grid grid-cols-2 gap-2">
-            <a
-              href={`${import.meta.env.PUBLIC_API_URL}/v1-badge/wide/${
-                user.id
-              }`}
-              download={`${user.name}-road-card.`}
-              className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75"
-            >
-              Download
-            </a>
-            <a
-              className="flex h-7 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-xs font-medium leading-none hover:opacity-75"
-              href={`${import.meta.env.PUBLIC_API_URL}/v1-badge/long/${
-                user.id
-              }`}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Copy Link
-            </a>
-          </div>
-        </div>
-        <div className="col-span-2">
-          <span className="">Embed</span>
-          <textarea
-            className="no-scrollbar mt-3 h-32 w-full rounded-md border border-gray-300 bg-gray-50 p-3 text-gray-900"
-            readOnly
-          >
-            {textareaContent}
-          </textarea>
-          <p className="mt-3">
-            You can include it on your website or follow the instructions to{' '}
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 underline hover:no-underline"
-            >
-              include it on your GitHub profile.
-            </a>
-          </p>
-        </div>
-      </div>
-    </div>
+    </>
   );
 }
