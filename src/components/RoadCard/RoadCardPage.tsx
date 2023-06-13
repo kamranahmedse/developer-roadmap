@@ -7,6 +7,42 @@ import { LongBadge } from './LongBadge';
 import CopyIcon from '../../icons/copy.svg';
 import { useCopyText } from '../../hooks/use-copy-text';
 
+type EditorProps = {
+  title: string;
+  text: string;
+};
+
+function Editor(props: EditorProps) {
+  const { text, title } = props;
+
+  const { isCopied, copyText } = useCopyText();
+
+  return (
+    <div className="flex flex-grow flex-col overflow-hidden rounded border border-gray-300 bg-gray-50">
+      <div className="flex items-center justify-between gap-2 border-b border-gray-300 px-3 py-2">
+        <span className="text-xs uppercase leading-none text-gray-400">
+          {title}
+        </span>
+        <button className="flex items-center" onClick={() => copyText(text)}>
+          {isCopied && (
+            <span className="mr-1 text-xs leading-none text-green-500">
+              Copied!
+            </span>
+          )}
+
+          <img src={CopyIcon} alt="Copy" className="inline-block h-4 w-4" />
+        </button>
+      </div>
+      <textarea
+        className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-sm text-gray-900"
+        readOnly
+      >
+        {text}
+      </textarea>
+    </div>
+  );
+}
+
 export type BadgeProps = {
   badgeUrl: string;
 };
@@ -31,9 +67,9 @@ export function RoadCardPage() {
   }/v1-badge/${selectedBadge}/${user.id}?variant=${selectedVariant}`;
 
   const textareaContent = `
-  <a href="${badgeUrl}"><img src="${badgeUrl}" alt="${user?.name}${
-    user?.name && "'s"
-  } Road Card"/></a>
+<a href="${badgeUrl}">
+  <img src="${badgeUrl}" alt="${user?.name}${user?.name && "'s"} Road Card"/>
+</a>
     `.trim();
 
   const markdownSnippet = `
@@ -50,7 +86,7 @@ export function RoadCardPage() {
       </div>
 
       <div>
-        <div className="mb-10 flex items-center border-b">
+        <div className="mb-6 flex items-center border-b">
           <div className="flex items-center">
             <button
               className={`relative top-px flex items-center justify-center px-3 py-2 leading-none shadow-gray-600 ${
@@ -120,77 +156,23 @@ export function RoadCardPage() {
           </div>
 
           <div
-            className={`${
-              selectedBadge === 'wide' && 'grid grid-cols-2 gap-4'
+            className={`mt-4 flex gap-2 ${
+              selectedBadge === 'long' && 'flex-col'
             }`}
           >
-            <div className="mt-6 overflow-hidden rounded border border-gray-300 bg-gray-50">
-              <div className="flex items-center justify-between gap-2 border-b border-gray-300 p-3">
-                <span className="text-xs uppercase leading-none text-gray-400">
-                  Markdown
-                </span>
-                <button
-                  className="flex items-center"
-                  onClick={() => handleMarkdownCopy(markdownSnippet)}
-                >
-                  {isMarkdownCopied && (
-                    <span className="mr-2 text-xs leading-none text-green-500">
-                      Copied!
-                    </span>
-                  )}
-                  <img
-                    src={CopyIcon}
-                    alt="Copy"
-                    className="inline-block h-4 w-4"
-                  />
-                </button>
-              </div>
-              <textarea
-                className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-gray-900"
-                readOnly
-              >
-                {markdownSnippet}
-              </textarea>
-            </div>
-            <div className="mt-6 overflow-hidden rounded border border-gray-300 bg-gray-50">
-              <div className="flex items-center justify-between gap-2 border-b border-gray-300 p-3">
-                <span className="text-xs uppercase leading-none text-gray-400">
-                  Embed
-                </span>
-                <button
-                  className="flex items-center"
-                  onClick={() => copyText(textareaContent)}
-                >
-                  {isCopied && (
-                    <span className="mr-2 text-xs leading-none text-green-500">
-                      Copied!
-                    </span>
-                  )}
-                  <img
-                    src={CopyIcon}
-                    alt="Copy"
-                    className="inline-block h-4 w-4"
-                  />
-                </button>
-              </div>
-              <textarea
-                className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-gray-900"
-                readOnly
-              >
-                {textareaContent}
-              </textarea>
-            </div>
+            <Editor title={'HTML'} text={textareaContent} />
+            <Editor title={'Markdown'} text={markdownSnippet} />
           </div>
 
-          <p className="mt-3">
-            You can include it on your website or follow the instructions to{' '}
+          <p className="mt-3 rounded-md border p-2 text-sm">
+            Add this badge to your{' '}
             <a
-              href="#"
+              href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-600 underline hover:no-underline"
+              className="text-blue-600 underline hover:text-blue-800"
             >
-              include it on your GitHub profile.
+              GitHub profile readme.
             </a>
           </p>
         </div>
