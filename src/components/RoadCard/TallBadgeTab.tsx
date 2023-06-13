@@ -26,7 +26,7 @@ export function TallBadgeTab() {
       <div className="sm:col-span-3 mt-6 sm:mt-0">
         <div>
           <span className="text-xs uppercase leading-none text-gray-400">
-            Variation
+            Variant
           </span>
 
           <div className="mt-2 flex items-center gap-2">
