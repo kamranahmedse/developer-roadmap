@@ -1,7 +1,8 @@
 import { httpGet } from './http';
 import { isLoggedIn } from './jwt';
 
-type UserProgressResponse = {
+export type UserProgressResponse = {
+  resourceTitle: string;
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
   done: number;

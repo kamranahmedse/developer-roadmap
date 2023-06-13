@@ -1,10 +1,16 @@
 import { useState } from 'preact/hooks';
 import { useAuth } from '../../hooks/use-auth';
 import { WideBadge } from './WideBadge';
-import { Editor, getBadgeLink } from './RoadCardPage';
+import { Editor } from './RoadCardPage';
 import { GithubReadmeBanner } from './GithubReadmeBanner';
+import { getBadgeLink } from '../../helper/get-badge-link';
+import type { RoadmapOptionProps } from './RoadmapSelect';
 
-export default function WideBadgeTab() {
+export function WideBadgeTab({
+  selectedRoadmaps,
+}: {
+  selectedRoadmaps: RoadmapOptionProps[];
+}) {
   const [selectedVariant, setSelectedVariant] = useState<'dark' | 'light'>(
     'dark'
   );
@@ -17,6 +23,7 @@ export default function WideBadgeTab() {
     user,
     variant: selectedVariant,
     badge: 'wide',
+    roadmaps: selectedRoadmaps,
   });
 
   return (
@@ -28,18 +35,16 @@ export default function WideBadgeTab() {
 
         <div className="mt-2 flex items-center gap-2">
           <button
-            className={`flex h-7 items-center justify-center rounded-lg border border-gray-200 px-3 text-sm leading-none hover:opacity-80 ${
-              selectedVariant === 'dark' && 'border-gray-300 bg-gray-100'
-            }`}
+            className={`flex h-7 items-center justify-center rounded-lg border border-gray-200 px-3 text-sm leading-none hover:opacity-80 ${selectedVariant === 'dark' && 'border-gray-300 bg-gray-100'
+              }`}
             onClick={() => setSelectedVariant('dark')}
           >
             Dark
           </button>
 
           <button
-            className={`flex h-7 items-center justify-center rounded-lg border border-gray-200 px-3 text-sm leading-none hover:opacity-80 ${
-              selectedVariant === 'light' && 'border-gray-300 bg-gray-100'
-            }`}
+            className={`flex h-7 items-center justify-center rounded-lg border border-gray-200 px-3 text-sm leading-none hover:opacity-80 ${selectedVariant === 'light' && 'border-gray-300 bg-gray-100'
+              }`}
             onClick={() => setSelectedVariant('light')}
           >
             Light

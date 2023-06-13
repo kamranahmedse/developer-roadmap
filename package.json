@@ -34,6 +34,7 @@
     "node-html-parser": "^6.1.5",
     "npm-check-updates": "^16.10.12",
     "preact": "^10.15.1",
+    "react-select": "^5.7.3",
     "rehype-external-links": "^2.1.0",
     "roadmap-renderer": "^1.0.6",
     "tailwindcss": "^3.3.2"
@@ -50,5 +51,11 @@
     "prettier": "^2.8.8",
     "prettier-plugin-astro": "^0.10.0",
     "prettier-plugin-tailwindcss": "^0.3.0"
+  },
+  "pnpm": {
+    "overrides": {
+      "react": "npm:@preact/compat@latest",
+      "react-dom": "npm:@preact/compat@latest"
+    }
   }
 }
