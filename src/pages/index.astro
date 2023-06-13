@@ -23,20 +23,24 @@ const videos = await getAllVideos();
 >
   <div class='bg-gradient-to-b from-slate-900 to-black'>
     <div class='border-b border-b-[#1e293c]'>
-      <div class='container text-left sm:text-center py-6 pb-14 sm:py-20 px-6 sm:px-0'>
+      <div
+        class='container px-6 py-6 pb-14 text-left sm:px-0 sm:py-20 sm:text-center'
+      >
         <h1
-          class='text-2xl sm:text-5xl mb-2 sm:mb-4 font-bold bg-gradient-to-b from-amber-50 to-purple-500 text-transparent bg-clip-text'
+          class='mb-2 bg-gradient-to-b from-amber-50 to-purple-500 bg-clip-text text-2xl font-bold text-transparent sm:mb-4 sm:text-5xl'
         >
           Developer Roadmaps
         </h1>
 
-        <p class='hidden sm:block text-gray-400 text-lg px-4'>
-          <span class='font-medium text-gray-400'>roadmap.sh</span> is a community effort to create roadmaps, guides and
-          other educational content to help guide developers in picking up the path and guide their learnings.
+        <p class='hidden px-4 text-lg text-gray-400 sm:block'>
+          <span class='font-medium text-gray-400'>roadmap.sh</span> is a community
+          effort to create roadmaps, guides and other educational content to help
+          guide developers in picking up the path and guide their learnings.
         </p>
 
-        <p class='block sm:hidden text-gray-400 text-md px-0'>
-          Community created roadmaps, guides and articles to help developers grow in their career.
+        <p class='text-md block px-0 text-gray-400 sm:hidden'>
+          Community created roadmaps, guides and articles to help developers
+          grow in their career.
         </p>
       </div>
     </div>
@@ -54,7 +58,10 @@ const videos = await getAllVideos();
     <FeaturedItems
       heading='Skill based Roadmaps'
       featuredItems={skillRoadmaps.map((roadmapItem) => ({
-        text: roadmapItem.frontmatter.briefTitle === 'Go' ? 'Go Roadmap' : roadmapItem.frontmatter.briefTitle,
+        text:
+          roadmapItem.frontmatter.briefTitle === 'Go'
+            ? 'Go Roadmap'
+            : roadmapItem.frontmatter.briefTitle,
         url: `/${roadmapItem.id}`,
         isNew: roadmapItem.frontmatter.isNew,
         isUpcoming: roadmapItem.frontmatter.isUpcoming,
@@ -71,9 +78,11 @@ const videos = await getAllVideos();
       }))}
     />
 
-    <div class='grid grid-cols-1 gap-7 sm:gap-16 bg-gray-50 py-7 sm:py-16'>
+    <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
       <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
       <FeaturedVideos heading='Videos' videos={videos.slice(0, 7)} />
     </div>
   </div>
+
+  <script src='../lib/home-progress.ts'></script>
 </BaseLayout>
