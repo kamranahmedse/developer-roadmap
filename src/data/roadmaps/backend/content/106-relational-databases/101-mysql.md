@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [W3Schools - MySQL tutorial ](https://www.w3schools.com/mySQl/default.asp)
 - [MySQL tutorial for beginners](https://www.youtube.com/watch?v=7S_tz1z_5bA)
 - [MySQL for Developers](https://planetscale.com/courses/mysql-for-developers/introduction/course-introduction)
+- [MySQL Tutorial](https://www.mysqltutorial.org/)
