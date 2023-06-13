@@ -50,7 +50,7 @@ export default function WideBadgeTab() {
           </div>
         </div>
 
-        <div className={`mt-4 flex gap-2`}>
+        <div className={`mt-4 flex flex-col gap-3 sm:flex-row`}>
           <Editor title={'HTML'} text={textareaContent} />
           <Editor title={'Markdown'} text={markdownSnippet} />
         </div>

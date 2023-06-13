@@ -2,14 +2,14 @@ import { useState } from 'preact/hooks';
 
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
-import { LongBadgeTab } from './LongBadgeTab';
+import { TallBadgeTab } from './TallBadgeTab';
 import WideBadgeTab from './WideBadgeTab';
 import CopyIcon from '../../icons/copy.svg';
 
 export type GetBadgeLinkProps = {
   user: ReturnType<typeof useAuth>;
   variant: 'dark' | 'light';
-  badge: 'long' | 'wide';
+  badge: 'tall' | 'wide';
 };
 
 export function getBadgeLink({ user, variant, badge }: GetBadgeLinkProps) {
@@ -45,7 +45,7 @@ export function Editor(props: EditorProps) {
   const { isCopied, copyText } = useCopyText();
 
   return (
-    <div className="flex flex-grow flex-col overflow-hidden rounded border border-gray-300 bg-gray-50">
+    <div className="flex flex-grow flex-col overflow-hidden rounded border border-gray-300 bg-gray-50 w-full">
       <div className="flex items-center justify-between gap-2 border-b border-gray-300 px-3 py-2">
         <span className="text-xs uppercase leading-none text-gray-400">
           {title}
@@ -75,7 +75,7 @@ export type BadgeProps = {
 };
 
 export function RoadCardPage() {
-  const [selectedBadge, setSelectedBadge] = useState<'long' | 'wide'>('long');
+  const [selectedBadge, setSelectedBadge] = useState<'tall' | 'wide'>('tall');
 
   const user = useAuth();
   if (!user) {
@@ -96,15 +96,15 @@ export function RoadCardPage() {
           <div className="flex items-center">
             <button
               className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
-                selectedBadge === 'long'
+                selectedBadge === 'tall'
                   ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
                   : 'text-gray-600'
               }`}
               onClick={() => {
-                setSelectedBadge('long');
+                setSelectedBadge('tall');
               }}
             >
-              Long
+              Tall
             </button>
 
             <button
@@ -123,7 +123,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      {selectedBadge === 'long' && <LongBadgeTab />}
+      {selectedBadge === 'tall' && <TallBadgeTab />}
       {selectedBadge === 'wide' && <WideBadgeTab />}
     </>
   );
