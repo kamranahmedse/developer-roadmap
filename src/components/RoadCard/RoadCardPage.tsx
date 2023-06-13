@@ -4,44 +4,8 @@ import { TOKEN_COOKIE_NAME, decodeToken } from '../../lib/jwt';
 import { WideBadge } from './WideBadge';
 import { LongBadge } from './LongBadge';
 
-import CopyIcon from '../../icons/copy.svg';
 import { useCopyText } from '../../hooks/use-copy-text';
-
-type EditorProps = {
-  title: string;
-  text: string;
-};
-
-function Editor(props: EditorProps) {
-  const { text, title } = props;
-
-  const { isCopied, copyText } = useCopyText();
-
-  return (
-    <div className="flex flex-grow flex-col overflow-hidden rounded border border-gray-300 bg-gray-50">
-      <div className="flex items-center justify-between gap-2 border-b border-gray-300 px-3 py-2">
-        <span className="text-xs uppercase leading-none text-gray-400">
-          {title}
-        </span>
-        <button className="flex items-center" onClick={() => copyText(text)}>
-          {isCopied && (
-            <span className="mr-1 text-xs leading-none text-green-500">
-              Copied!
-            </span>
-          )}
-
-          <img src={CopyIcon} alt="Copy" className="inline-block h-4 w-4" />
-        </button>
-      </div>
-      <textarea
-        className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-sm text-gray-900"
-        readOnly
-      >
-        {text}
-      </textarea>
-    </div>
-  );
-}
+import {Editor} from "../Editor";
 
 export type BadgeProps = {
   badgeUrl: string;
@@ -164,7 +128,7 @@ export function RoadCardPage() {
             <Editor title={'Markdown'} text={markdownSnippet} />
           </div>
 
-          <p className="mt-3 rounded-md border p-2 text-sm">
+          <p className="mt-3 rounded-md border p-2 px-3 text-sm">
             Add this badge to your{' '}
             <a
               href="https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-github-profile/customizing-your-profile/managing-your-profile-readme"
@@ -172,7 +136,7 @@ export function RoadCardPage() {
               rel="noopener noreferrer"
               className="text-blue-600 underline hover:text-blue-800"
             >
-              GitHub profile readme.
+              GitHub profile.
             </a>
           </p>
         </div>
