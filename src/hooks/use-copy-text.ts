@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'preact/hooks';
 
-export function useIsCopied() {
+export function useCopyText() {
   const [isCopied, setIsCopied] = useState(false);
 
-  const handleCopy = (text: string) => {
-    navigator.clipboard.writeText(text);
+  const copyText = (text: string) => {
+    navigator.clipboard.writeText(text).then();
     setIsCopied(true);
   };
 
@@ -18,5 +18,5 @@ export function useIsCopied() {
     return () => clearTimeout(timeout);
   }, [isCopied]);
 
-  return { isCopied, handleCopy };
+  return { isCopied, copyText };
 }

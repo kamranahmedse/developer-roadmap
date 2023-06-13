@@ -5,7 +5,7 @@ import { WideBadge } from './WideBadge';
 import { LongBadge } from './LongBadge';
 
 import CopyIcon from '../../icons/copy.svg';
-import { useIsCopied } from '../../hooks/use-is-copied';
+import { useCopyText } from '../../hooks/use-copy-text';
 
 export type BadgeProps = {
   badgeUrl: string;
@@ -16,9 +16,9 @@ export function RoadCardPage() {
   const [selectedVariant, setSelectedVariant] = useState<'dark' | 'light'>(
     'dark'
   );
-  const { isCopied, handleCopy } = useIsCopied();
-  const { isCopied: isMarkdownCopied, handleCopy: handleMarkdownCopy } =
-    useIsCopied();
+  const { isCopied, copyText } = useCopyText();
+  const { isCopied: isMarkdownCopied, copyText: handleMarkdownCopy } =
+    useCopyText();
 
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (!token) {
@@ -159,7 +159,7 @@ export function RoadCardPage() {
                 </span>
                 <button
                   className="flex items-center"
-                  onClick={() => handleCopy(textareaContent)}
+                  onClick={() => copyText(textareaContent)}
                 >
                   {isCopied && (
                     <span className="mr-2 text-xs leading-none text-green-500">
