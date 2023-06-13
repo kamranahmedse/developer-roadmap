@@ -43,9 +43,9 @@ export function RoadCardPage() {
   return (
     <>
       <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">Grab your #RoadCard</h2>
-        <p className="mt-2">
-          Pick a badge and share your progress with the world.
+        <h2 className="text-3xl font-bold sm:text-4xl">Road Card</h2>
+        <p className="mt-2 text-gray-400">
+          Grab your #RoadCard and share your progress with others.
         </p>
       </div>
 
@@ -53,7 +53,7 @@ export function RoadCardPage() {
         <div className="mb-6 flex items-center border-b">
           <div className="flex items-center">
             <button
-              className={`relative top-px flex items-center justify-center px-3 py-2 leading-none shadow-gray-600 ${
+              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
                 selectedBadge === 'long'
                   ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
                   : 'text-gray-600'
@@ -67,7 +67,7 @@ export function RoadCardPage() {
             </button>
 
             <button
-              className={`relative top-px flex items-center justify-center px-3 py-2 leading-none shadow-gray-600 ${
+              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
                 selectedBadge === 'wide'
                   ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
                   : 'text-gray-600'

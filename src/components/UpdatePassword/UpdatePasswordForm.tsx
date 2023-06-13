@@ -80,7 +80,7 @@ export default function UpdatePasswordForm() {
     <form onSubmit={handleSubmit}>
       <div class="hidden md:block mb-8">
         <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
-        <p className="mt-2">Use the form below to update your password.</p>
+        <p className="mt-2 text-gray-400">Use the form below to update your password.</p>
       </div>
       <div className="space-y-4">
         {authProvider === 'email' && (
