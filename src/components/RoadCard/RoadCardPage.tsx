@@ -17,6 +17,8 @@ export function RoadCardPage() {
     'dark'
   );
   const { isCopied, handleCopy } = useIsCopied();
+  const { isCopied: isMarkdownCopied, handleCopy: handleMarkdownCopy } =
+    useIsCopied();
 
   const token = Cookies.get(TOKEN_COOKIE_NAME);
   if (!token) {
@@ -29,17 +31,14 @@ export function RoadCardPage() {
   }/v1-badge/${selectedBadge}/${user.id}?variant=${selectedVariant}`;
 
   const textareaContent = `
-  <a
-  href="${import.meta.env.PUBLIC_API_URL}/v1-badge/${selectedBadge}/${user.id}"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <img
-    src="${import.meta.env.PUBLIC_API_URL}/v1-badge/${selectedBadge}/${user.id}"
-    alt="Road Card"
-  />
-</a>
-  `.trim();
+  <a href="${badgeUrl}"><img src="${badgeUrl}" alt="${user?.name}${
+    user?.name && "'s"
+  } Road Card"/></a>
+    `.trim();
+
+  const markdownSnippet = `
+[![${user?.name}${user?.name && "'s"} Road Card](${badgeUrl})](${badgeUrl})
+    `.trim();
 
   return (
     <>
@@ -119,34 +118,70 @@ export function RoadCardPage() {
               </button>
             </div>
           </div>
-          <div className="mt-6 overflow-hidden rounded border border-gray-300 bg-gray-50">
-            <div className="flex items-center justify-between gap-2 border-b border-gray-300 p-3">
-              <span className="text-xs uppercase leading-none text-gray-400">
-                Embed
-              </span>
-              <button
-                className="flex items-center"
-                onClick={() => handleCopy(textareaContent)}
+
+          <div
+            className={`${
+              selectedBadge === 'wide' && 'grid grid-cols-2 gap-4'
+            }`}
+          >
+            <div className="mt-6 overflow-hidden rounded border border-gray-300 bg-gray-50">
+              <div className="flex items-center justify-between gap-2 border-b border-gray-300 p-3">
+                <span className="text-xs uppercase leading-none text-gray-400">
+                  Markdown
+                </span>
+                <button
+                  className="flex items-center"
+                  onClick={() => handleMarkdownCopy(markdownSnippet)}
+                >
+                  {isMarkdownCopied && (
+                    <span className="mr-2 text-xs leading-none text-green-500">
+                      Copied!
+                    </span>
+                  )}
+                  <img
+                    src={CopyIcon}
+                    alt="Copy"
+                    className="inline-block h-4 w-4"
+                  />
+                </button>
+              </div>
+              <textarea
+                className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-gray-900"
+                readOnly
               >
-                {isCopied && (
-                  <span className="mr-2 text-xs leading-none text-green-500">
-                    Copied!
-                  </span>
-                )}
-                <img
-                  src={CopyIcon}
-                  alt="Copy"
-                  className="inline-block h-4 w-4"
-                />
-              </button>
+                {markdownSnippet}
+              </textarea>
             </div>
-            <textarea
-              className="no-scrollbar block h-32 w-full bg-gray-200/70 p-3 text-gray-900"
-              readOnly
-            >
-              {textareaContent}
-            </textarea>
+            <div className="mt-6 overflow-hidden rounded border border-gray-300 bg-gray-50">
+              <div className="flex items-center justify-between gap-2 border-b border-gray-300 p-3">
+                <span className="text-xs uppercase leading-none text-gray-400">
+                  Embed
+                </span>
+                <button
+                  className="flex items-center"
+                  onClick={() => handleCopy(textareaContent)}
+                >
+                  {isCopied && (
+                    <span className="mr-2 text-xs leading-none text-green-500">
+                      Copied!
+                    </span>
+                  )}
+                  <img
+                    src={CopyIcon}
+                    alt="Copy"
+                    className="inline-block h-4 w-4"
+                  />
+                </button>
+              </div>
+              <textarea
+                className="no-scrollbar block h-12 w-full overflow-x-auto whitespace-nowrap bg-gray-200/70 p-3 text-gray-900"
+                readOnly
+              >
+                {textareaContent}
+              </textarea>
+            </div>
           </div>
+
           <p className="mt-3">
             You can include it on your website or follow the instructions to{' '}
             <a
