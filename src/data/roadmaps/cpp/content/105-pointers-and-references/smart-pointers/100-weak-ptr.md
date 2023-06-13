@@ -46,3 +46,5 @@ int main() {
 ```
 
 In this example, we create a `shared_ptr` named `shared` that manages a `MyClass` object. By assigning it to a `weak_ptr` named `weak`, we store a non-owning reference to the object. Inside the inner scope, we create a new `shared_ptr` named `sharedFromWeak` using `weak.lock()` to safely use the object. After the inner scope, the `MyClass` object is destroyed since `shared` goes out of scope, and any further attempt to create a `shared_ptr` from `weak` will fail as the object is already destroyed.
+
+- [CPP Reference](https://en.cppreference.com/w/cpp/memory/weak_ptr)
