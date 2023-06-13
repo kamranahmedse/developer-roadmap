@@ -1,3 +1,4 @@
+import { downloadImage } from '../../helper/download-image';
 import { useCopyText } from '../../hooks/use-copy-text';
 import type { BadgeProps } from './RoadCardPage';
 
@@ -20,15 +21,16 @@ export function LongBadge({ badgeUrl }: BadgeProps) {
       </a>
 
       <div className="mt-3 grid grid-cols-2 gap-2">
-        <a
+        <button
           className="flex h-8 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-sm font-medium leading-none hover:opacity-75"
-          href={badgeUrl + '&type=png'}
-          download
+          onClick={() =>
+            downloadImage({ url: badgeUrl, name: 'road-card', scale: 4 })
+          }
         >
           Download
-        </a>
+        </button>
         <button
-          className="flex h-8 items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-sm font-medium leading-none cursor-pointer hover:opacity-75"
+          className="flex h-8 cursor-pointer items-center justify-center whitespace-nowrap rounded border border-gray-300 bg-gray-50 px-2 text-sm font-medium leading-none hover:opacity-75"
           onClick={() => copyText(badgeUrl)}
         >
           {isCopied ? 'Copied!' : 'Copy Link'}
