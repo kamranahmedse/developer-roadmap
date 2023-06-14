@@ -75,10 +75,10 @@ export function FavoriteRoadmaps() {
   }
 
   useEffect(() => {
-    showProgressContainer();
     loadProgress().finally(() => {
       setIsLoading(false);
     });
+    showProgressContainer();
   }, []);
 
   if (isPreparing) {
