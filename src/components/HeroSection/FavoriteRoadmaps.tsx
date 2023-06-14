@@ -28,8 +28,11 @@ function renderProgress(progressList: UserProgressResponse) {
     const totalDone = progress.done + progress.skipped;
     const percentageDone = (totalDone / progress.total) * 100;
 
-    const progressBar: HTMLElement = element.querySelector('[data-progress]')!;
-    progressBar.style.width = `${percentageDone}%`;
+    const progressBar: HTMLElement | null =
+      element.querySelector('[data-progress]');
+    if (progressBar) {
+      progressBar.style.width = `${percentageDone}%`;
+    }
   });
 }
 
@@ -86,7 +89,9 @@ export function FavoriteRoadmaps() {
 
   return (
     <div
-      class={`min-h-[192px] flex bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${hasProgress && `border-t border-t-[#1e293c]`}`}
+      class={`flex min-h-[192px] bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${
+        hasProgress && `border-t border-t-[#1e293c]`
+      }`}
     >
       <div className="container min-h-full">
         {!isLoading && progress.length == 0 && <EmptyProgress />}
