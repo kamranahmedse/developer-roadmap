@@ -1,22 +1,31 @@
-import type { RoadmapOptionProps } from "../components/RoadCard/RoadmapSelect";
-import type { useAuth } from "../hooks/use-auth";
+import type { RoadmapOptionProps } from '../components/RoadCard/RoadmapSelect';
+import type { useAuth } from '../hooks/use-auth';
 
 export type GetBadgeLinkProps = {
   user: ReturnType<typeof useAuth>;
   variant: 'dark' | 'light';
   badge: 'tall' | 'wide';
-  roadmaps?: RoadmapOptionProps[]
+  roadmaps?: RoadmapOptionProps[];
 };
 
-export function getBadgeLink({ user, variant, badge, roadmaps }: GetBadgeLinkProps) {
-  const badgeUrl = new URL(`${import.meta.env.PUBLIC_API_URL}/v1-badge/${badge}/${user?.id}`);
+export function getBadgeLink({
+  user,
+  variant,
+  badge,
+  roadmaps,
+}: GetBadgeLinkProps) {
+  const badgeUrl = new URL(
+    `${import.meta.env.PUBLIC_API_URL}/v1-badge/${badge}/${user?.id}`
+  );
   if (variant) {
     badgeUrl.searchParams.set('variant', variant);
   }
-  if (roadmaps && roadmaps?.length > 0) {
-    for (const roadmap of roadmaps) {
-      badgeUrl.searchParams.append('roadmaps', roadmap.value);
-    }
+  const isRoadmapArray = roadmaps && Array.isArray(roadmaps) && roadmaps.length;
+  if (isRoadmapArray) {
+    badgeUrl.searchParams.set(
+      'roadmaps',
+      roadmaps.map(({ value }) => value).join(',')
+    );
   }
   const textareaContent = `
   <a href="${badgeUrl}">
@@ -24,8 +33,9 @@ export function getBadgeLink({ user, variant, badge, roadmaps }: GetBadgeLinkPro
   </a>
       `.trim();
   const markdownSnippet = `
-      [![${user?.name}${user?.name && "'s"
-    } Road Card](${badgeUrl})](${badgeUrl})
+      [![${user?.name}${
+    user?.name && "'s"
+  } Road Card](${badgeUrl})](${badgeUrl})
           `.trim();
 
   return {
