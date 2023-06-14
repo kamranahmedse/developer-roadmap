@@ -14,7 +14,7 @@ type RoadmapHintProgressProps = {
 
 export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
   const [containerOpacity, setContainerOpacity] = useState(0);
-  const [progressBarWidth, setProgressBarWidth] = useState(0);
+  const [showProgressBar, setShowProgressBar] = useState(false);
   const [progress, setProgress] = useState<RoadmapProgress>();
   const $progress = useStore(roadmapProgress);
   const roadmapKey = `roadmap-${roadmapId}-progress`;
@@ -31,8 +31,7 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
 
       setTimeout(() => {
         setContainerOpacity(100);
-        const { total, done } = $progress[roadmapKey];
-        setProgressBarWidth(Math.round((done / total) * 100));
+        setShowProgressBar(true);
       }, 50);
     }, 0);
   }
@@ -57,12 +56,14 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
     total: totalCount,
   } = progress;
 
+  const progressBarWidth = Math.round((progress.done / progress.total) * 100);
+
   return (
     <>
       <div
         className={`relative z-10 w-full transition-opacity duration-500 opacity-${containerOpacity}`}
       >
-        <div className="flex w-full items-center justify-between">
+        <div className="flex w-full items-center justify-between text-sm text-gray-500">
           <div>
             <span className="hidden flex-1 gap-1 sm:flex">
               {doneCount > 0 && (
@@ -88,7 +89,6 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
               resourceType: 'roadmap',
               resourceId: roadmapId,
               onCleared: async () => {
-                setProgressBarWidth(0);
                 clearResourceProgress('roadmap', roadmapId);
               },
             }}
@@ -99,7 +99,7 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
       <div
         className="absolute inset-0 w-0 bg-gray-100 transition-[opacity_width] duration-500"
         style={{
-          width: `${progressBarWidth}%`,
+          width: `${showProgressBar && progressBarWidth}%`,
           opacity: containerOpacity,
         }}
       />
