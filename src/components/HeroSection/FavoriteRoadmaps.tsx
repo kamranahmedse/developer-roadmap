@@ -56,7 +56,7 @@ export function FavoriteRoadmaps() {
       setTimeout(() => {
         setContainerOpacity(100);
       }, 50);
-    }, 300);
+    }, 0);
   }
 
   async function loadProgress() {
@@ -71,13 +71,16 @@ export function FavoriteRoadmaps() {
     }
 
     setProgress(progressList);
+    setIsLoading(false);
+    showProgressContainer();
+
+    // render progress on featured items
     renderProgress(progressList);
   }
 
   useEffect(() => {
     loadProgress().finally(() => {
       setIsLoading(false);
-      showProgressContainer();
     });
   }, []);
 
