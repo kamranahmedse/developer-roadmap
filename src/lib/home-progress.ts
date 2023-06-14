@@ -37,21 +37,12 @@ async function renderProgress() {
     const totalDone = progress.done + progress.skipped;
     const percentageDone = (totalDone / progress.total) * 100;
 
-    const progressBar = document.createElement('div');
-    progressBar.style.backgroundColor = 'rgb(23 42 58)';
-    progressBar.style.position = 'absolute';
+    const progressBar: HTMLElement = element.querySelector('[data-progress]')!;
     progressBar.style.width = `${percentageDone}%`;
-    progressBar.style.height = '100%';
-    progressBar.style.bottom = '0';
-    progressBar.style.left = '0';
-    progressBar.style.top = '0';
-    progressBar.style.zIndex = '1';
-
-    element.appendChild(progressBar);
   });
 }
 
 // on DOM load
 window.addEventListener('DOMContentLoaded', () => {
-    window.setTimeout(renderProgress, 0);
+  window.setTimeout(renderProgress, 0);
 });
