@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
+import { ResourceClearProgress } from './ResourceClearProgress';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -15,9 +16,6 @@ type ResourceProgressType = {
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
-  const [isClearing, setIsClearing] = useState(false);
-  const [isConfirming, setIsConfirming] = useState(false);
-
   const {
     updatedAt,
     resourceType,
@@ -29,30 +27,6 @@ export function ResourceProgress(props: ResourceProgressType) {
     skippedCount,
     onCleared,
   } = props;
-
-  async function clearProgress() {
-    setIsClearing(true);
-    const { error, response } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-clear-resource-progress`,
-      {
-        resourceId,
-        resourceType,
-      }
-    );
-
-    if (error || !response) {
-      alert('Error clearing progress. Please try again.');
-      console.error(error);
-      setIsClearing(false);
-      return;
-    }
-
-    localStorage.removeItem(`${resourceType}-${resourceId}-progress`);
-    console.log(`${resourceType}-${resourceId}-progress`);
-    setIsClearing(false);
-    setIsConfirming(false);
-    onCleared();
-  }
 
   const url =
     resourceType === 'roadmap'
@@ -100,39 +74,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           )}
           <span>{totalCount} total</span>
         </span>
-        {!isConfirming && (
-          <button
-            className="text-red-500 hover:text-red-800"
-            onClick={() => setIsConfirming(true)}
-            disabled={isClearing}
-          >
-            {!isClearing && (
-              <>
-                Clear Progress <span>&times;</span>
-              </>
-            )}
-
-            {isClearing && 'Processing...'}
-          </button>
-        )}
-
-        {isConfirming && (
-          <span>
-            Are you sure?{' '}
-            <button
-              onClick={clearProgress}
-              className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
-            >
-              Yes
-            </button>{' '}
-            <button
-              onClick={() => setIsConfirming(false)}
-              className="text-red-500 underline hover:text-red-800"
-            >
-              No
-            </button>
-          </span>
-        )}
+        <ResourceClearProgress {...{ resourceType, resourceId, onCleared }} />
       </p>
     </div>
   );

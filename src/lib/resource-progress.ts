@@ -2,6 +2,7 @@ import Cookies from 'js-cookie';
 import { httpGet, httpPost } from './http';
 import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
+import { roadmapProgress } from '../stores/roadmap';
 
 export type ResourceType = 'roadmap' | 'best-practice';
 export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped';
@@ -62,12 +63,16 @@ export async function updateResourceProgress(
     throw new Error(error?.message || 'Something went wrong');
   }
 
+  const progressKey = `${resourceType}-${resourceId}-progress`;
+  const total = roadmapProgress.get()?.[progressKey]?.total || 0;
+
   setResourceProgress(
     resourceType,
     resourceId,
+    total,
     response.done,
     response.learning,
-    response.skipped,
+    response.skipped
   );
 
   return response;
@@ -76,13 +81,19 @@ export async function updateResourceProgress(
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
-): Promise<{ done: string[]; learning: string[], skipped: string[] }> {
+): Promise<{
+  done: string[];
+  learning: string[];
+  skipped: string[];
+  total: number;
+}> {
   // No need to load progress if user is not logged in
   if (!Cookies.get(TOKEN_COOKIE_NAME)) {
     return {
       done: [],
       learning: [],
       skipped: [],
+      total: 0,
     };
   }
 
@@ -110,6 +121,7 @@ async function loadFreshProgress(
     done: string[];
     learning: string[];
     skipped: string[];
+    total: number;
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`, {
     resourceType,
     resourceId,
@@ -118,6 +130,7 @@ async function loadFreshProgress(
   if (error || !response) {
     console.error(error);
     return {
+      total: 0,
       done: [],
       learning: [],
       skipped: [],
@@ -127,9 +140,10 @@ async function loadFreshProgress(
   setResourceProgress(
     resourceType,
     resourceId,
+    response?.total || 0,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || [],
+    response?.skipped || []
   );
 
   return response;
@@ -138,13 +152,21 @@ async function loadFreshProgress(
 export function setResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string,
+  total: number,
   done: string[],
   learning: string[],
-  skipped: string [],
+  skipped: string[]
 ): void {
+  roadmapProgress.setKey(`${resourceType}-${resourceId}-progress`, {
+    done: done.length,
+    learning: learning.length,
+    skipped: skipped.length,
+    total,
+  });
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
     JSON.stringify({
+      total,
       done,
       learning,
       skipped,
@@ -209,8 +231,18 @@ export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
 ) {
-  const { done = [], learning = [], skipped = [] } =
-    (await getResourceProgress(resourceType, resourceId)) || {};
+  const {
+    done = [],
+    learning = [],
+    skipped = [],
+    total = 0,
+  } = (await getResourceProgress(resourceType, resourceId)) || {};
+  roadmapProgress.setKey(`${resourceType}-${resourceId}-progress`, {
+    done: done.length,
+    learning: learning.length,
+    skipped: skipped.length,
+    total,
+  });
 
   done.forEach((topicId) => {
     renderTopicProgress(topicId, 'done');
@@ -222,5 +254,31 @@ export async function renderResourceProgress(
 
   skipped.forEach((topicId) => {
     renderTopicProgress(topicId, 'skipped');
+  });
+}
+
+export function clearResourceProgress(
+  resourceType: ResourceType,
+  resourceId: string
+) {
+  const progressKey = `${resourceType}-${resourceId}-progress`;
+  const totalCount = roadmapProgress.get()?.[progressKey]?.total || 0;
+  localStorage.removeItem(`${resourceType}-${resourceId}-progress`);
+  roadmapProgress.setKey(progressKey, {
+    done: 0,
+    learning: 0,
+    skipped: 0,
+    total: totalCount,
+  });
+
+  const matchingElements: Element[] = [];
+
+  // Elements having sort order in the beginning of the
+  document.querySelectorAll('[data-group-id]').forEach((element: unknown) => {
+    matchingElements.push(element);
+  });
+
+  matchingElements.forEach((element) => {
+    element.classList.remove('done', 'skipped', 'learning');
   });
 }
