@@ -6,7 +6,7 @@ In the typical React dataflow, props are the only way that parent components int
 
 Visit the following resources to learn more:
 
-- [Refs and DOM](https://reactjs.org/docs/refs-and-the-dom.html)
+- [Refs and DOM](https://react.dev/learn/referencing-values-with-refs)
 - [Referencing Values with Refs](https://react.dev/learn/referencing-values-with-refs)
 - [Manipulating the DOM with Refs](https://react.dev/learn/manipulating-the-dom-with-refs)
 - [Examples of using refs in React](https://www.robinwieruch.de/react-ref/)
