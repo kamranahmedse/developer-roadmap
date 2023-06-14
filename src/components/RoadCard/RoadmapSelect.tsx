@@ -70,6 +70,7 @@ export function RoadmapSelect({
         options={options}
         onChange={onChange}
         value={selectedRoadmaps}
+        placeholder="Select roadmaps"
         unstyled
         styles={{
           input: (base) => ({

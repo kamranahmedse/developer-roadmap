@@ -20,8 +20,7 @@ export function getBadgeLink({
   if (variant) {
     badgeUrl.searchParams.set('variant', variant);
   }
-  const isRoadmapArray = roadmaps && Array.isArray(roadmaps) && roadmaps.length;
-  if (isRoadmapArray) {
+  if (roadmaps?.length) {
     badgeUrl.searchParams.set(
       'roadmaps',
       roadmaps.map(({ value }) => value).join(',')
