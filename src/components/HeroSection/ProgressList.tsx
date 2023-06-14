@@ -9,13 +9,14 @@ export function ProgressList(props: ProgressListProps) {
   const { progress } = props;
 
   return (
-    <div className="relative pt-7 pb-12">
-      <p className="mb-4 flex items-center text-center text-sm text-gray-400">
+    <div className="relative pt-4 sm:pt-7 pb-12">
+      <p className="mb-4 flex items-center text-sm text-gray-400">
         <CheckIcon additionalClasses={'mr-1.5 w-[14px] h-[14px]'} />
-        Your favorite roadmaps and tracked progress.
+        <span className='hidden sm:inline'>Your progress and favorite roadmaps.</span>
+        <span className='inline sm:hidden'>Your progress and favorite roadmaps.</span>
       </p>
 
-      <div className="grid grid-cols-3 gap-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2">
         {progress.map((resource) => {
           const url =
             resource.resourceType === 'roadmap'

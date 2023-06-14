@@ -86,7 +86,7 @@ export function FavoriteRoadmaps() {
 
   return (
     <div
-      class={`min-h-auto flex bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${hasProgress && `border-t border-t-[#1e293c]`}`}
+      class={`min-h-[192px] flex bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${hasProgress && `border-t border-t-[#1e293c]`}`}
     >
       <div className="container min-h-full">
         {!isLoading && progress.length == 0 && <EmptyProgress />}
