@@ -11,7 +11,7 @@ export function LongBadge({ badgeUrl }: BadgeProps) {
         href={badgeUrl}
         target="_blank"
         rel="noopener noreferrer"
-        className="relative block aspect-[300/392] w-full hover:cursor-pointer"
+        className="relative block aspect-[422/551] w-full hover:cursor-pointer"
       >
         <img
           src={badgeUrl}

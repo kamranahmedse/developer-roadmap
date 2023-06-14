@@ -8,7 +8,7 @@ import CopyIcon from '../../icons/copy.svg';
 import { RoadmapSelect, RoadmapSelectProps } from './RoadmapSelect';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import type { UserProgressResponse } from '../../lib/home-progress';
+import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps';
 
 type EditorProps = {
   title: string;
@@ -62,35 +62,6 @@ export function RoadCardPage() {
     return null;
   }
 
-  const fetchProgress = async () => {
-    const { response: progressList, error } =
-      await httpGet<UserProgressResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
-      );
-
-    if (error || !progressList) {
-      return;
-    }
-
-    const enrichedRoadmaps = [];
-    for (const progress of progressList) {
-      if (progress.resourceType !== 'roadmap') return;
-
-      enrichedRoadmaps.push({
-        label: progress.resourceTitle,
-        value: progress.resourceId,
-      });
-    }
-
-    setProgress(enrichedRoadmaps);
-  };
-
-  useEffect(() => {
-    fetchProgress().finally(() => {
-      pageProgressMessage.set('');
-    });
-  }, []);
-
   return (
     <>
       <div className="mb-8 hidden md:block">
@@ -104,10 +75,11 @@ export function RoadCardPage() {
         <div className="mb-6 flex items-center border-b">
           <div className="flex items-center">
             <button
-              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${selectedBadge === 'tall'
-                ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
-                : 'text-gray-600'
-                }`}
+              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
+                selectedBadge === 'tall'
+                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
+                  : 'text-gray-600'
+              }`}
               onClick={() => {
                 setSelectedBadge('tall');
               }}
@@ -116,10 +88,11 @@ export function RoadCardPage() {
             </button>
 
             <button
-              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${selectedBadge === 'wide'
-                ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
-                : 'text-gray-600'
-                }`}
+              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
+                selectedBadge === 'wide'
+                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
+                  : 'text-gray-600'
+              }`}
               onClick={() => {
                 setSelectedBadge('wide');
               }}
@@ -137,8 +110,12 @@ export function RoadCardPage() {
       />
 
       <div className="mt-6">
-        {selectedBadge === 'tall' && <TallBadgeTab selectedRoadmaps={selectedRoadmaps} />}
-        {selectedBadge === 'wide' && <WideBadgeTab selectedRoadmaps={selectedRoadmaps} />}
+        {selectedBadge === 'tall' && (
+          <TallBadgeTab selectedRoadmaps={selectedRoadmaps} />
+        )}
+        {selectedBadge === 'wide' && (
+          <WideBadgeTab selectedRoadmaps={selectedRoadmaps} />
+        )}
       </div>
     </>
   );
