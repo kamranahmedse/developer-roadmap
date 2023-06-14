@@ -1,0 +1,28 @@
+---
+import { FavoriteRoadmaps } from './FavoriteRoadmaps';
+---
+
+<div class='relative min-h-auto min-h-[192px] sm:min-h-[281px] border-b border-b-[#1e293c]'>
+  <div
+    class='container px-6 py-6 pb-14 text-left sm:px-0 sm:py-20 sm:text-center transition-opacity duration-300'
+    id='hero-text'
+  >
+    <h1
+      class='mb-2 bg-gradient-to-b from-amber-50 to-purple-500 bg-clip-text text-2xl font-bold text-transparent sm:mb-4 sm:text-5xl'
+    >
+      Developer Roadmaps
+    </h1>
+
+    <p class='hidden px-4 text-lg text-gray-400 sm:block'>
+      <span class='font-medium text-gray-400'>roadmap.sh</span> is a community effort
+      to create roadmaps, guides and other educational content to help guide developers
+      in picking up a path and guide their learnings.
+    </p>
+
+    <p class='text-md block px-0 text-gray-400 sm:hidden'>
+      Community created roadmaps, guides and articles to help developers grow in
+      their career.
+    </p>
+  </div>
+  <FavoriteRoadmaps client:only client:authenticated />
+</div>

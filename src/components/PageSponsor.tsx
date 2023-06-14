@@ -29,6 +29,18 @@ export function PageSponsor(props: PageSponsorProps) {
   const [sponsor, setSponsor] = useState<PageSponsorType>();
 
   const loadSponsor = async () => {
+    const currentPath = window.location.pathname;
+    if (
+      currentPath === '/' ||
+      currentPath === '/best-practices' ||
+      currentPath === '/roadmaps' ||
+      currentPath.startsWith('/guides') ||
+      currentPath.startsWith('/videos') ||
+      currentPath.startsWith('/account')
+    ) {
+      return;
+    }
+
     const { response, error } = await httpGet<V1GetSponsorResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-sponsor`,
       {
