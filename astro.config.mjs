@@ -75,6 +75,8 @@ export default defineConfig({
       css: false,
       js: false,
     }),
-    preact(),
+    preact({
+      compat: true,
+    }),
   ],
 });

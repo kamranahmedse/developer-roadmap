@@ -1,0 +1,15 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { RoadCardPage } from '../../components/RoadCard/RoadCardPage';
+---
+
+<AccountLayout
+  title='Road Card'
+  noIndex={true}
+  initialLoadingMessage='Preparing card..'
+>
+  <AccountSidebar activePageId='road-card' activePageTitle='Road Card'>
+    <RoadCardPage client:load />
+  </AccountSidebar>
+</AccountLayout>
