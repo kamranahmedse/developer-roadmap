@@ -44,12 +44,12 @@ export function RoadCardPage() {
 
   return (
     <>
-      <div className="mb-5 flex items-start gap-4 pt-2">
+      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b pt-2 pb-4">
         <StepCounter step={1} />
         <div>
           <StepLabel label="Pick progress to show (Max. 4)" />
 
-          <div className="flex min-h-[30px] flex-wrap">
+          <div className="flex flex-wrap">
             <RoadmapSelect
               selectedRoadmaps={roadmaps}
               setSelectedRoadmaps={setRoadmaps}
@@ -58,7 +58,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="mb-5 flex items-start gap-4">
+      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
         <StepCounter step={2} />
         <div>
           <StepLabel label="Select Mode (Dark vs Light)" />
@@ -85,7 +85,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="mb-5 flex items-start gap-4">
+      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
         <StepCounter step={3} />
         <div>
           <StepLabel label="Select Version" />
@@ -111,7 +111,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="mb-5 flex items-start gap-4">
+      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
         <StepCounter step={4} />
         <div class="flex-grow">
           <StepLabel label="Share your #RoadCard with others" />

@@ -33,37 +33,36 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
   }, []);
 
   const canSelectMore = selectedRoadmaps.length < 4;
+  const allProgress = progressList?.filter(
+    (progress) => progress.resourceType === 'roadmap'
+  ) || [];
 
   return (
     <div className="flex flex-wrap gap-1">
-      {progressList
-        ?.filter((progress) => progress.resourceType === 'roadmap')
-        .map((progress) => {
-          const isSelected = selectedRoadmaps.includes(progress.resourceId);
-          const canSelect = isSelected || canSelectMore;
+      {allProgress?.length === 0 && <p className={'text-sm text-gray-400 italic'}>No progress tracked so far.</p>}
+      {allProgress?.map((progress) => {
+        const isSelected = selectedRoadmaps.includes(progress.resourceId);
+        const canSelect = isSelected || canSelectMore;
 
-          return (
-            <SelectionButton
-              text={progress.resourceTitle}
-              isDisabled={!canSelect}
-              isSelected={isSelected}
-              onClick={() => {
-                if (isSelected) {
-                  setSelectedRoadmaps(
-                    selectedRoadmaps.filter(
-                      (roadmap) => roadmap !== progress.resourceId
-                    )
-                  );
-                } else if (selectedRoadmaps.length < 4) {
-                  setSelectedRoadmaps([
-                    ...selectedRoadmaps,
-                    progress.resourceId,
-                  ]);
-                }
-              }}
-            />
-          );
-        })}
+        return (
+          <SelectionButton
+            text={progress.resourceTitle}
+            isDisabled={!canSelect}
+            isSelected={isSelected}
+            onClick={() => {
+              if (isSelected) {
+                setSelectedRoadmaps(
+                  selectedRoadmaps.filter(
+                    (roadmap) => roadmap !== progress.resourceId
+                  )
+                );
+              } else if (selectedRoadmaps.length < 4) {
+                setSelectedRoadmaps([...selectedRoadmaps, progress.resourceId]);
+              }
+            }}
+          />
+        );
+      })}
     </div>
   );
 }
