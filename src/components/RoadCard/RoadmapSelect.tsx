@@ -3,11 +3,6 @@ import { useEffect, useState } from 'preact/hooks';
 import { pageProgressMessage } from '../../stores/page';
 import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps';
 
-export type RoadmapOptionProps = {
-  value: string;
-  label: string;
-};
-
 export function RoadmapSelect() {
   const [progressList, setProgressList] = useState<UserProgressResponse>();
 
@@ -30,17 +25,14 @@ export function RoadmapSelect() {
   }, []);
 
   return (
-    <div>
-      <div className="relative">
-        <input
-          type="text"
-          className="mb-0.5 w-full rounded-md border p-2 text-sm focus:outline-0 focus:ring-0"
-          placeholder="Pick roadmaps"
-        />
-        <div className="top-full absolute rounded-md"></div>
-      </div>
-
-      <div className="mt-1 text-xs text-gray-500">Select up to 4 roadmaps</div>
+    <div className="flex flex-wrap gap-1">
+      {progressList
+        ?.filter((progress) => progress.resourceType === 'roadmap')
+        .map((progress) => (
+          <button className="rounded-md border p-1 px-2 text-sm">
+            {progress.resourceTitle}
+          </button>
+        ))}
     </div>
   );
 }

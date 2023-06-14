@@ -1,14 +1,29 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useState } from 'preact/hooks';
 
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
 import { TallBadgeTab } from './TallBadgeTab';
 import { WideBadgeTab } from './WideBadgeTab';
 import CopyIcon from '../../icons/copy.svg';
-import { RoadmapSelect, RoadmapSelectProps } from './RoadmapSelect';
-import { httpGet } from '../../lib/http';
-import { pageProgressMessage } from '../../stores/page';
-import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps';
+import { RoadmapSelect } from './RoadmapSelect';
+
+type StepCounterProps = {
+  step: number;
+};
+
+function StepCounter(props: StepCounterProps) {
+  const { step } = props;
+
+  return (
+    <span
+      className={
+        'flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-gray-300 text-white'
+      }
+    >
+      {step}
+    </span>
+  );
+}
 
 type EditorProps = {
   title: string;
@@ -51,71 +66,80 @@ export type BadgeProps = {
 };
 
 export function RoadCardPage() {
-  const [selectedBadge, setSelectedBadge] = useState<'tall' | 'wide'>('tall');
-  const [progress, setProgress] = useState<RoadmapSelectProps['options']>([]);
-  const [selectedRoadmaps, setSelectedRoadmap] = useState<
-    RoadmapSelectProps['options']
-  >([]);
-
+  const [version, setVersion] = useState<'tall' | 'wide'>('tall');
+  const [variant, setVariant] = useState<'dark' | 'light'>('dark');
   const user = useAuth();
   if (!user) {
     return null;
   }
 
+  const badgeUrl = new URL(
+    `${import.meta.env.PUBLIC_API_URL}/v1-badge/${version}/${user?.id}`
+  );
+
+  badgeUrl.searchParams.set('variant', variant);
+
   return (
     <>
-      <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">Road Card</h2>
-        <p className="mt-2 text-gray-400">
-          Grab your #RoadCard and share your progress with others.
-        </p>
+      <div className="mb-4 flex items-start gap-4">
+        <StepCounter step={1} />
+        <div>
+          <span className="mb-3 flex items-center gap-2 text-sm leading-none text-gray-400">
+            Select progress to show (maximum 4 items)
+          </span>
+
+          <div className="flex min-h-[30px] flex-wrap">
+            <RoadmapSelect />
+          </div>
+        </div>
       </div>
 
-      <div>
-        <div className="mb-6 flex items-center border-b">
-          <div className="flex items-center">
-            <button
-              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
-                selectedBadge === 'tall'
-                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
-                  : 'text-gray-600'
-              }`}
-              onClick={() => {
-                setSelectedBadge('tall');
-              }}
-            >
-              Tall
-            </button>
+      <div className="mb-4 flex items-start gap-4">
+        <StepCounter step={2} />
+        <div>
+          <span className="mb-3 flex items-center gap-2 text-sm leading-none text-gray-400">
+            Select Mode (Dark vs Light)
+          </span>
 
-            <button
-              className={`relative top-px flex items-center justify-center px-3 pb-3 leading-none shadow-gray-600 ${
-                selectedBadge === 'wide'
-                  ? 'shadow-[inset_0_-1px_0_var(--tw-shadow-color)]'
-                  : 'text-gray-600'
-              }`}
-              onClick={() => {
-                setSelectedBadge('wide');
-              }}
-            >
-              Wide
+          <div className="flex gap-2">
+            <button className="rounded-md border p-1 px-2 text-sm">Dark</button>
+            <button className="rounded-md border p-1 px-2 text-sm">
+              Light
             </button>
           </div>
         </div>
       </div>
 
-      <RoadmapSelect
-        options={progress}
-        selectedRoadmaps={selectedRoadmaps}
-        setSelectedRoadmap={setSelectedRoadmap}
-      />
+      <div className="mb-4 flex items-start gap-4">
+        <StepCounter step={3} />
+        <div>
+          <span className="mb-3 flex items-center gap-2 text-sm leading-none text-gray-400">
+            Select Variant
+          </span>
 
-      <div className="mt-6">
-        {selectedBadge === 'tall' && (
-          <TallBadgeTab selectedRoadmaps={selectedRoadmaps} />
-        )}
-        {selectedBadge === 'wide' && (
-          <WideBadgeTab selectedRoadmaps={selectedRoadmaps} />
-        )}
+          <div className="flex gap-2">
+            <button className="rounded-md border p-1 px-2 text-sm">Tall</button>
+            <button className="rounded-md border p-1 px-2 text-sm">Wide</button>
+          </div>
+        </div>
+      </div>
+
+      <div className="mb-4 flex items-start gap-4">
+        <StepCounter step={4} />
+        <div>
+          <span className="mb-3 flex items-center gap-2 text-sm leading-none text-gray-400">
+            Share your #RoadCard with others
+          </span>
+
+          <a
+            href={badgeUrl.toString()}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block w-[270px] hover:cursor-pointer"
+          >
+            <img src={badgeUrl.toString()} alt="RoadCard" />
+          </a>
+        </div>
       </div>
     </>
   );

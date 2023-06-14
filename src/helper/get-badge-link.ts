@@ -1,11 +1,10 @@
-import type { RoadmapOptionProps } from '../components/RoadCard/RoadmapSelect';
 import type { useAuth } from '../hooks/use-auth';
 
 export type GetBadgeLinkProps = {
   user: ReturnType<typeof useAuth>;
   variant: 'dark' | 'light';
   badge: 'tall' | 'wide';
-  roadmaps?: RoadmapOptionProps[];
+  roadmaps?: string[];
 };
 
 export function getBadgeLink({
@@ -20,12 +19,11 @@ export function getBadgeLink({
   if (variant) {
     badgeUrl.searchParams.set('variant', variant);
   }
+
   if (roadmaps?.length) {
-    badgeUrl.searchParams.set(
-      'roadmaps',
-      roadmaps.map(({ value }) => value).join(',')
-    );
+    badgeUrl.searchParams.set('roadmaps', roadmaps.join(','));
   }
+
   const textareaContent = `
   <a href="${badgeUrl}">
     <img src="${badgeUrl}" alt="${user?.name}${user?.name && "'s"} Road Card"/>
