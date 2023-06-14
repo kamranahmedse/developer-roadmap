@@ -14,3 +14,5 @@ Unlike traditional virtualization, which emulates a complete operating system wi
 ## Containers and Docker
 
 Docker is a platform that simplifies the process of creating, deploying, and managing containers. It provides developers and administrators with a set of tools and APIs to manage containerized applications. With Docker, you can build and package application code, libraries, and dependencies into a container image, which can be distributed and run consistently in any environment that supports Docker.
+
+- [What is a container?](https://www.docker.com/resources/what-container/)
