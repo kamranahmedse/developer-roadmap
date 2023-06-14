@@ -6,11 +6,11 @@ specifiers:
   '@astrojs/tailwind': ^3.1.3
   '@fingerprintjs/fingerprintjs': ^3.4.1
   '@nanostores/preact': ^0.5.0
-  '@playwright/test': ^1.34.3
+  '@playwright/test': ^1.35.0
   '@tailwindcss/typography': ^0.5.9
   '@types/js-cookie': ^3.0.3
-  astro: ^2.5.7
-  astro-compress: ^1.1.46
+  astro: ^2.6.3
+  astro-compress: ^1.1.47
   csv-parser: ^3.0.0
   gh-pages: ^5.0.0
   jose: ^4.14.4
@@ -32,11 +32,11 @@ specifiers:
 dependencies:
   '@astrojs/preact': 2.2.1_preact@10.15.1
   '@astrojs/sitemap': 1.3.3
-  '@astrojs/tailwind': 3.1.3_cyxi2rbbvaq22julk2hkhgjf7u
+  '@astrojs/tailwind': 3.1.3_v3vh2dd4sag23uewccz5c4ppyu
   '@fingerprintjs/fingerprintjs': 3.4.1
   '@nanostores/preact': 0.5.0_m2wbkjxz7237icvaxqi7ignbgm
-  astro: 2.5.7
-  astro-compress: 1.1.46
+  astro: 2.6.3
+  astro-compress: 1.1.47
   jose: 4.14.4
   js-cookie: 3.0.5
   nanostores: 0.9.1
@@ -48,7 +48,7 @@ dependencies:
   tailwindcss: 3.3.2
 
 devDependencies:
-  '@playwright/test': 1.34.3
+  '@playwright/test': 1.35.0
   '@tailwindcss/typography': 0.5.9_tailwindcss@3.3.2
   '@types/js-cookie': 3.0.3
   csv-parser: 3.0.0
@@ -74,12 +74,12 @@ packages:
       '@jridgewell/trace-mapping': 0.3.18
     dev: false
 
-  /@astrojs/compiler/1.4.2:
-    resolution: {integrity: sha512-xoRp7JpiMZPK/beUcZEM5kM44Z/h20wwwQcl54duPqQMyySG9vZ5xMM6dYiQmn7b3XzpZs0cT6TRDoJJ5gwHAQ==}
-    dev: false
-
   /@astrojs/compiler/1.5.0:
     resolution: {integrity: sha512-k04X/7nlMklU0HQUScxbCTf5n8/Vr+0U0bawb9QWulWxd6qJf3FmBrNATgTYiltjB4pc5HBqmmttAfFi7m4lLg==}
+
+  /@astrojs/internal-helpers/0.1.0:
+    resolution: {integrity: sha512-OSwvoFkTqVowiyP+codQeQZWoq/HOwY32x17NxDglWoCx2sdyXzplDZoVV4/3odmSEY6/A+48WMl5qkjmP1CXw==}
+    dev: false
 
   /@astrojs/language-server/1.0.0:
     resolution: {integrity: sha512-oEw7AwJmzjgy6HC9f5IdrphZ1GVgfV/+7xQuyf52cpTiRWd/tJISK3MsKP0cDkVlfodmNABNFnAaAWuLZEiiiA==}
@@ -101,13 +101,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.2.1_astro@2.5.7:
+  /@astrojs/markdown-remark/2.2.1_astro@2.6.3:
     resolution: {integrity: sha512-VF0HRv4GpC1XEMLnsKf6jth7JSmlt9qpqP0josQgA2eSpCIAC/Et+y94mgdBIZVBYH/yFnMoIxgKVe93xfO2GA==}
     peerDependencies:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.5.7
+      astro: 2.6.3
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -154,14 +154,14 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@astrojs/tailwind/3.1.3_cyxi2rbbvaq22julk2hkhgjf7u:
+  /@astrojs/tailwind/3.1.3_v3vh2dd4sag23uewccz5c4ppyu:
     resolution: {integrity: sha512-10S1omrv5K5HRVAZ0fBgN5vQykn2HRL332LAVFyBASMn1Ff6gDfSK+CPUeUu94eZUOEaPnECLK8EHAqZ8iY9CA==}
     peerDependencies:
       astro: ^2.5.0
       tailwindcss: ^3.0.24
     dependencies:
       '@proload/core': 0.3.3
-      astro: 2.5.7
+      astro: 2.6.3
       autoprefixer: 10.4.14_postcss@8.4.23
       postcss: 8.4.23
       postcss-load-config: 4.0.1_postcss@8.4.23
@@ -968,13 +968,13 @@ packages:
       tslib: 2.5.0
     dev: false
 
-  /@playwright/test/1.34.3:
-    resolution: {integrity: sha512-zPLef6w9P6T/iT6XDYG3mvGOqOyb6eHaV9XtkunYs0+OzxBtrPAAaHotc0X+PJ00WPPnLfFBTl7mf45Mn8DBmw==}
-    engines: {node: '>=14'}
+  /@playwright/test/1.35.0:
+    resolution: {integrity: sha512-6qXdd5edCBynOwsz1YcNfgX8tNWeuS9fxy5o59D0rvHXxRtjXRebB4gE4vFVfEMXl/z8zTnAzfOs7aQDEs8G4Q==}
+    engines: {node: '>=16'}
     hasBin: true
     dependencies:
       '@types/node': 18.16.3
-      playwright-core: 1.34.3
+      playwright-core: 1.35.0
     optionalDependencies:
       fsevents: 2.3.2
     dev: true
@@ -1330,21 +1330,21 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /astro-compress/1.1.46:
-    resolution: {integrity: sha512-5PiZsCOlYO04jATC/XlpdMT6869QLsbpSNoihutUxkdWpDpoXwNMyxxXsL7QljdXHyFg6XmTDpxOODxvqerVWA==}
+  /astro-compress/1.1.47:
+    resolution: {integrity: sha512-UBhhDfZffcPVdDFA4v42G68BdcNL6ZlYoXZdHTappiLWDvZPlhRmK6iuwya3SAGl4La4kqKCfNSqwKbG3agdBQ==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
       csso: 5.0.5
-      files-pipe: 0.0.6
+      files-pipe: 0.0.7
       html-minifier-terser: 7.2.0
       sharp: 0.32.1
       svgo: 3.0.2
-      terser: 5.17.6
+      terser: 5.17.7
     dev: false
 
-  /astro/2.5.7:
-    resolution: {integrity: sha512-qYKMIN4tXAOAsm10vU4f+Q7LfC05JmEbQiJmSBqIEhp+wnQcEUFkGLrHMSsps3oBzMtjErUdDDW5tGJcn5eVlA==}
+  /astro/2.6.3:
+    resolution: {integrity: sha512-gJoBX+t11qAeYDjterGEaQZx7qqlGOigWhE0zkcEBv4zy7l4IpKx6nGGUNzD/l8x6WomZxkdZROsOsiEaWSJmQ==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     peerDependencies:
@@ -1353,17 +1353,18 @@ packages:
       sharp:
         optional: true
     dependencies:
-      '@astrojs/compiler': 1.4.2
+      '@astrojs/compiler': 1.5.0
+      '@astrojs/internal-helpers': 0.1.0
       '@astrojs/language-server': 1.0.0
-      '@astrojs/markdown-remark': 2.2.1_astro@2.5.7
+      '@astrojs/markdown-remark': 2.2.1_astro@2.6.3
       '@astrojs/telemetry': 2.1.1
       '@astrojs/webapi': 2.2.0
       '@babel/core': 7.22.1
-      '@babel/generator': 7.21.5
-      '@babel/parser': 7.21.5
+      '@babel/generator': 7.22.3
+      '@babel/parser': 7.22.4
       '@babel/plugin-transform-react-jsx': 7.21.5_@babel+core@7.22.1
-      '@babel/traverse': 7.21.5
-      '@babel/types': 7.21.5
+      '@babel/traverse': 7.22.4
+      '@babel/types': 7.22.4
       '@types/babel__core': 7.20.0
       '@types/yargs-parser': 21.0.0
       acorn: 8.8.2
@@ -1374,7 +1375,7 @@ packages:
       cookie: 0.5.0
       debug: 4.3.4
       deepmerge-ts: 4.3.0
-      devalue: 4.3.0
+      devalue: 4.3.2
       diff: 5.1.0
       es-module-lexer: 1.2.1
       esbuild: 0.17.18
@@ -2056,8 +2057,8 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /devalue/4.3.0:
-    resolution: {integrity: sha512-n94yQo4LI3w7erwf84mhRUkUJfhLoCZiLyoOZ/QFsDbcWNZePrLwbQpvZBUG2TNxwV3VjCKPxkiiQA6pe3TrTA==}
+  /devalue/4.3.2:
+    resolution: {integrity: sha512-KqFl6pOgOW+Y6wJgu80rHpo2/3H07vr8ntR9rkkFIRETewbf5GaYYcakYfiKz89K+sLsuPkQIZaXDMjUObZwWg==}
     dev: false
 
   /didyoumean/1.2.2:
@@ -2316,8 +2317,8 @@ packages:
       trim-repeated: 1.0.0
     dev: true
 
-  /files-pipe/0.0.6:
-    resolution: {integrity: sha512-izHIHcqKEM0V2nw3FvzAqL0nx3IiZ2RC7k4eczIhlJ4X5JWJsxVl4c6b+Uid3zvNd6RiPxjFerbFcodFXMPHBw==}
+  /files-pipe/0.0.7:
+    resolution: {integrity: sha512-BkXQoAEo1X3RqmEucIBLL1ddc/LM3lqsf5ipIf/bRrUTn3SQZWhThgpIl1/ma2VNesB2hBoY+CB0rrZ3b1tQhA==}
     dependencies:
       deepmerge-ts: 5.1.0
       fast-glob: 3.2.12
@@ -2790,7 +2791,7 @@ packages:
       entities: 4.5.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.17.6
+      terser: 5.17.7
     dev: false
 
   /html-void-elements/2.0.1:
@@ -4446,9 +4447,9 @@ packages:
       find-up: 3.0.0
     dev: false
 
-  /playwright-core/1.34.3:
-    resolution: {integrity: sha512-2pWd6G7OHKemc5x1r1rp8aQcpvDh7goMBZlJv6Co5vCNLVcQJdhxRL09SGaY6HcyHH9aT4tiynZabMofVasBYw==}
-    engines: {node: '>=14'}
+  /playwright-core/1.35.0:
+    resolution: {integrity: sha512-muMXyPmIx/2DPrCHOD1H1ePT01o7OdKxKj2ebmCAYvqhUy+Y1bpal7B0rdoxros7YrXI294JT/DWw2LqyiqTPA==}
+    engines: {node: '>=16'}
     hasBin: true
     dev: true
 
@@ -5486,8 +5487,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /terser/5.17.6:
-    resolution: {integrity: sha512-V8QHcs8YuyLkLHsJO5ucyff1ykrLVsR4dNnS//L5Y3NiSXpbK1J+WMVUs67eI0KTxs9JtHhgEQpXQVHlHI92DQ==}
+  /terser/5.17.7:
+    resolution: {integrity: sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
