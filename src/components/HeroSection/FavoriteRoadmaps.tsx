@@ -38,7 +38,7 @@ function renderProgress(progressList: UserProgressResponse) {
 
 export function FavoriteRoadmaps() {
   const [isPreparing, setIsPreparing] = useState(true);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState<UserProgressResponse>([]);
   const [containerOpacity, setContainerOpacity] = useState(0);
 
@@ -77,8 +77,8 @@ export function FavoriteRoadmaps() {
   useEffect(() => {
     loadProgress().finally(() => {
       setIsLoading(false);
+      showProgressContainer();
     });
-    showProgressContainer();
   }, []);
 
   if (isPreparing) {
@@ -94,8 +94,8 @@ export function FavoriteRoadmaps() {
       }`}
     >
       <div className="container min-h-full">
-        {!isLoading && progress.length == 0 && <EmptyProgress />}
         {isLoading && <EmptyProgress title="Loading progress .." />}
+        {!isLoading && progress.length == 0 && <EmptyProgress />}
         {!isLoading && progress.length > 0 && (
           <ProgressList progress={progress} />
         )}
