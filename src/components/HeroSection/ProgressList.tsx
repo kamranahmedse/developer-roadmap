@@ -9,7 +9,7 @@ export function ProgressList(props: ProgressListProps) {
   const { progress } = props;
 
   return (
-    <div className="relative py-7">
+    <div className="relative pt-7 pb-12">
       <p className="mb-4 flex items-center text-center text-sm text-gray-400">
         <CheckIcon additionalClasses={'mr-1.5 w-[14px] h-[14px]'} />
         Your favorite roadmaps and tracked progress.
