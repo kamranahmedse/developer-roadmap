@@ -2,32 +2,38 @@ import { useStore } from '@nanostores/preact';
 import { RoadmapProgress, roadmapProgress } from '../../stores/roadmap';
 import { useEffect, useState } from 'preact/hooks';
 import { ResourceClearProgress } from '../Activity/ResourceClearProgress';
-import {
-  clearResourceProgress,
-  getResourceProgress,
-  renderResourceProgress,
-} from '../../lib/resource-progress';
+import { clearResourceProgress } from '../../lib/resource-progress';
 
 type RoadmapHintProgressProps = {
-  roadmapId: string;
+  resourceId: string;
+  resourceType: 'roadmap' | 'best-practice';
 };
 
-export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
+export function RoadmapHintProgress({
+  resourceId,
+  resourceType,
+}: RoadmapHintProgressProps) {
   const [containerOpacity, setContainerOpacity] = useState(0);
   const [showProgressBar, setShowProgressBar] = useState(false);
   const [progress, setProgress] = useState<RoadmapProgress>();
   const $progress = useStore(roadmapProgress);
-  const roadmapKey = `roadmap-${roadmapId}-progress`;
+  const roadmapKey = `${resourceType}-${resourceId}-progress`;
 
   function showProgressContainer() {
-    const heroEl = document.getElementById('roadmap-hint')!;
-    if (!heroEl) {
+    const heroEl = document.querySelectorAll('#roadmap-hint');
+    const resourceProgressEl = document.getElementById('resource-progress');
+    if (!heroEl || !resourceProgressEl) {
       return;
     }
 
-    heroEl.classList.add('opacity-0');
+    for (const el of Array.from(heroEl)) {
+      el.classList.add('opacity-0');
+    }
     setTimeout(() => {
-      heroEl.parentElement?.removeChild(heroEl);
+      for (const el of Array.from(heroEl)) {
+        el.parentElement?.removeChild(el);
+      }
+      resourceProgressEl.classList.remove('hidden');
 
       setTimeout(() => {
         setContainerOpacity(100);
@@ -65,7 +71,7 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
       >
         <div className="flex w-full items-center justify-between text-sm text-gray-500">
           <div>
-            <span className="hidden flex-1 gap-1 sm:flex">
+            <span className="flex flex-1 gap-1">
               {doneCount > 0 && (
                 <>
                   <span>{doneCount} done</span> &bull;
@@ -86,10 +92,10 @@ export function RoadmapHintProgress({ roadmapId }: { roadmapId: string }) {
           </div>
           <ResourceClearProgress
             {...{
-              resourceType: 'roadmap',
-              resourceId: roadmapId,
+              resourceType: resourceType,
+              resourceId: resourceId,
               onCleared: async () => {
-                clearResourceProgress('roadmap', roadmapId);
+                clearResourceProgress(resourceType, resourceId);
               },
             }}
           />

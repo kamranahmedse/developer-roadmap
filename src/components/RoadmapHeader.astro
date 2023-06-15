@@ -1,7 +1,7 @@
 ---
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
-import RoadmapHint from './RoadmapHint/RoadmapHint.astro';
+import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
@@ -126,7 +126,7 @@ const isRoadmapReady = !isUpcoming;
     </div>
 
     <!-- Desktop: Roadmap Resources - Alert -->
-    {hasTopics && <RoadmapHint roadmapId={roadmapId} />}
+    {hasTopics && <RoadmapHint roadmapId={roadmapId} tnsBannerLink={tnsBannerLink} />}
 
     {hasSearch && <TopicSearch />}
   </div>

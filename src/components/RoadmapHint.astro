@@ -45,23 +45,31 @@ const roadmapTitle =
   <!-- Desktop: Roadmap Resources - Alert -->
   <div
     class:list={[
-      'hidden sm:flex justify-between px-2 bg-white items-center',
+      'hidden relative overflow-hidden border text-sm rounded-md sm:border-0 flex justify-between px-2 h-8 bg-white items-center',
+      {
+        'sm:rounded-bl-md sm:rounded-br-md sm:rounded-t-none': hasTNSBanner,
+        'sm:rounded-md': !hasTNSBanner,
+      },
+    ]}
+    id='resource-progress'
+  >
+    <RoadmapHintProgress
+      resourceId={roadmapId}
+      resourceType='roadmap'
+      client:authenticated
+    />
+  </div>
+  <div
+    id='roadmap-hint'
+    class:list={[
+      'hidden relative overflow-hidden sm:flex justify-between px-2 h-8 bg-white items-center',
       {
         'rounded-bl-md rounded-br-md': hasTNSBanner,
         'rounded-md': !hasTNSBanner,
       },
     ]}
   >
-    <a
-      href={`/${roadmapId}/topics`}
-      class='inline-flex items-center justify-center rounded-md px-1 py-1.5 text-sm font-medium text-gray-500 hover:text-black'
-    >
-      <Icon icon='search' />
-      <span class='ml-2'>Search Topics</span>
-    </a>
-
-    <p class='text-sm' id='roadmap-hint'>
-      <RoadmapHintProgress roadmapId={roadmapId} client:authenticated />
+    <p class='text-sm'>
       <span
         class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
         >New</span
@@ -72,6 +80,7 @@ const roadmapTitle =
 
   <!-- Mobile - Roadmap resources alert -->
   <p
+    id='roadmap-hint'
     class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
   >
     Track your progress and learn about the topics by clicking the roadmap
