@@ -63,13 +63,15 @@ export function RoadmapHintProgress({
   } = progress;
 
   const progressBarWidth = Math.round((progress.done / progress.total) * 100);
+  const shouldShowClearProgress =
+    doneCount > 0 || learningCount > 0 || skippedCount > 0;
 
   return (
     <>
       <div
         className={`relative z-10 w-full transition-opacity duration-500 opacity-${containerOpacity}`}
       >
-        <div className="flex w-full items-center justify-between text-sm text-gray-500">
+        <div className="flex w-full items-center justify-between text-sm">
           <div>
             <span className="flex flex-1 gap-1">
               {doneCount > 0 && (
@@ -90,15 +92,17 @@ export function RoadmapHintProgress({
               <span>{totalCount} total</span>
             </span>
           </div>
-          <ResourceClearProgress
-            {...{
-              resourceType: resourceType,
-              resourceId: resourceId,
-              onCleared: async () => {
-                clearResourceProgress(resourceType, resourceId);
-              },
-            }}
-          />
+          {shouldShowClearProgress && (
+            <ResourceClearProgress
+              {...{
+                resourceType: resourceType,
+                resourceId: resourceId,
+                onCleared: async () => {
+                  clearResourceProgress(resourceType, resourceId);
+                },
+              }}
+            />
+          )}
         </div>
       </div>
 
