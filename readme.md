@@ -30,9 +30,9 @@ Roadmaps are now interactive, you can click the nodes to read more about the top
 
 Here is the list of available roadmaps with more being actively worked upon.
 
-- [Frontend Roadmap](https://roadmap.sh/frontend)
+- [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
 - [Backend Roadmap](https://roadmap.sh/backend)
-- [DevOps Roadmap](https://roadmap.sh/devops)
+- [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
 - [Full Stack Roadmap](https://roadmap.sh/full-stack)
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [QA Roadmap](https://roadmap.sh/qa)

@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [Python Wikipedia](<https://en.wikipedia.org/wiki/Python_(programming_language)>)
 - [Googles Python Class](https://developers.google.com/edu/python)
 - [W3Schools - Python Tutorial](https://www.w3schools.com/python)
+- [Python](https://www.kaggle.com/learn/python)

@@ -1,4 +1,4 @@
-import CheckIcon from '../../icons/roadmap.svg';
+import RoadmapIcon from '../../icons/roadmap.svg';
 
 export function EmptyActivity() {
   return (
@@ -6,7 +6,7 @@ export function EmptyActivity() {
       <div class="flex flex-col items-center p-7 text-center">
         <img
           alt="no roadmaps"
-          src={CheckIcon}
+          src={RoadmapIcon}
           class="mb-2 w-[60px] h-[60px] sm:h-[120px] sm:w-[120px] opacity-10"
         />
         <h2 class="text-lg sm:text-xl font-bold">No Progress</h2>

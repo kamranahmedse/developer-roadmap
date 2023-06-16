@@ -83,7 +83,7 @@ export function UpdateProfileForm() {
     <div>
       <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Profile</h2>
-        <p className="mt-2">Update your profile details below.</p>
+        <p className="mt-2 text-gray-400">Update your profile details below.</p>
       </div>
       <UploadProfilePicture
         avatarUrl={

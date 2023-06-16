@@ -5,3 +5,4 @@ The callback hell is when we try to write asynchronous JavaScript in a way where
 Visit the following resources to learn more:
 
 - [Callback Hell](http://callbackhell.com/)
+- [Callbacks in Callbacks - Pyramid of Doom](https://javascript.info/callbacks#pyramid-of-doom)

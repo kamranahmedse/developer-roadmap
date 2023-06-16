@@ -8,3 +8,4 @@ Learn more from the following links:
 
 - [System Design: Latency vs Throughput](https://cs.fyi/guide/latency-vs-throughput/)
 - [Understanding Latency versus Throughput](https://community.cadence.com/cadence_blogs_8/b/fv/posts/understanding-latency-vs-throughput)
+- [Latency and Throughput - MIT Video](https://www.youtube.com/watch?v=3hiv4mnlgcw)
