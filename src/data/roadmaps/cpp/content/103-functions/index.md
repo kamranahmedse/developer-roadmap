@@ -72,3 +72,5 @@ int multiplyNumbers(int x, int y) {
 ```
 
 In this example, we use a function prototype for `multiplyNumbers()` before defining it. This way, we can call the function from the `main()` function even though it hasn't been defined yet in the code.
+
+- [introduction to functions in c++](https://www.learncpp.com/cpp-tutorial/introduction-to-functions/)
