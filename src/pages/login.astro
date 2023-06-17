@@ -3,6 +3,7 @@ import Divider from '../components/AuthenticationFlow/Divider.astro';
 import EmailLoginForm from '../components/AuthenticationFlow/EmailLoginForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
 import { GoogleButton } from '../components/AuthenticationFlow/GoogleButton';
+import { LinkedInButton } from '../components/AuthenticationFlow/LinkedInButton';
 import AccountLayout from '../layouts/AccountLayout.astro';
 ---
 
@@ -24,6 +25,7 @@ import AccountLayout from '../layouts/AccountLayout.astro';
       <div class='flex w-full flex-col gap-2'>
         <GitHubButton client:load />
         <GoogleButton client:load />
+        <LinkedInButton client:load />
       </div>
 
       <Divider />
