@@ -18,6 +18,10 @@
   }
 }
 
+svg {
+  user-select: none;
+}
+
 blockquote p:before {
   display: none;
 }

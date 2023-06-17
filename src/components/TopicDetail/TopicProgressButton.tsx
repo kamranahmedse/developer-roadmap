@@ -12,13 +12,13 @@ import {
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
+import { showLoginPopup } from '../../lib/popup';
 
 type TopicProgressButtonProps = {
   topicId: string;
   resourceId: string;
   resourceType: ResourceType;
 
-  onShowLoginPopup: () => void;
   onClose: () => void;
 };
 
@@ -30,7 +30,7 @@ const statusColors: Record<ResourceProgressType, string> = {
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose, onShowLoginPopup } =
+  const { topicId, resourceId, resourceType, onClose } =
     props;
 
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
@@ -119,7 +119,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
     if (isGuest) {
       onClose();
-      onShowLoginPopup();
+      showLoginPopup();
       return;
     }
 

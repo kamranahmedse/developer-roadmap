@@ -5,6 +5,7 @@ import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
+import ProgressHelpPopup from './ProgressHelpPopup.astro';
 
 export interface Props {
   title: string;
@@ -32,6 +33,7 @@ const isRoadmapReady = !isUpcoming;
 ---
 
 <LoginPopup />
+<ProgressHelpPopup />
 
 <div class='border-b'>
   <div class='container relative py-5 sm:py-12'>

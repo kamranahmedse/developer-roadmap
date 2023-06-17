@@ -1,4 +1,5 @@
 ---
+import AstroIcon from './AstroIcon.astro';
 export interface Props {
   isSecondaryBanner?: boolean;
 }
@@ -37,21 +38,31 @@ const { isSecondaryBanner = false } = Astro.props;
     >
     <span><span data-progress-total>0</span> Total</span>
   </p>
+
+  <button
+    data-popup='progress-help'
+    class='flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black'
+    data-progress-nums
+  >
+    <AstroIcon icon='question' />
+    Track Progress
+  </button>
 </div>
 
 <p
   data-progress-nums-container
-  class='relative block rounded-md border bg-white px-2 py-1.5 text-sm text-sm text-gray-700 sm:hidden striped-loader bg-white -mb-2'
+  class='striped-loader relative -mb-2 flex items-center justify-between rounded-md border bg-white bg-white px-2 py-1.5 text-sm text-sm text-gray-700 sm:hidden'
 >
-  <span data-progress-nums class='opacity-0 transition-opacity duration-300'>
-    <span
-      class='mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
-    >
-      <span data-progress-percentage>0</span>% Done
-    </span>
-
-    <span>
-      <span data-progress-done>0</span> of <span data-progress-total>0</span> Done
-    </span>
+  <span data-progress-nums class='opacity-0 transition-opacity duration-300 text-gray-500'>
+    <span data-progress-done>0</span> of <span data-progress-total>0</span> Done
   </span>
+
+  <button
+    data-popup='progress-help'
+    class='flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black'
+    data-progress-nums
+  >
+    <AstroIcon icon='question' />
+    Track Progress
+  </button>
 </p>
