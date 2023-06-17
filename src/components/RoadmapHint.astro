@@ -2,6 +2,7 @@
 import { ClearProgress } from './Activity/ClearProgress';
 import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
+import ResourceProgressStats from './ResourceProgressStats.astro';
 
 export interface Props {
   roadmapId: string;
@@ -43,32 +44,5 @@ const roadmapTitle =
     )
   }
 
-  <!-- Desktop: Roadmap Resources - Alert -->
-  <div id="progress-nums-container"
-    class:list={[
-      'hidden sm:flex justify-between px-2 bg-white items-center py-1.5 relative striped-loader bg-white',
-      {
-        'rounded-bl-md rounded-br-md': hasTNSBanner,
-        'rounded-md': !hasTNSBanner,
-      },
-    ]}
-  >
-    <p class='text-sm flex opacity-0 transition-opacity duration-300' id="progress-nums">
-      <span class="font-medium py-0.5 rounded-sm text-xs uppercase bg-yellow-200 px-1 text-yellow-900 mr-2.5">
-        <span class="progress-percentage">0</span>% Done
-      </span>
-
-      <span><span class="progress-done">0</span> completed</span><span class="mx-1.5 text-gray-400">&middot;</span>
-      <span><span class="progress-learning">0</span> learning</span><span class="mx-1.5 text-gray-400">&middot;</span>
-      <span><span class="progress-skipped">0</span> skipped</span><span class="mx-1.5 text-gray-400">&middot;</span>
-      <span><span class="progress-total">0</span> Total</span>
-    </p>
-  </div>
-
-  <!-- Mobile - Roadmap resources alert -->
-  <p
-    class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
-  >
-    Track your progress and learn about the topics by clicking the roadmap items.
-  </p>
+  <ResourceProgressStats isSecondaryBanner={hasTNSBanner} />
 </div>

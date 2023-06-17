@@ -1,0 +1,57 @@
+---
+export interface Props {
+  isSecondaryBanner?: boolean;
+}
+
+const { isSecondaryBanner = false } = Astro.props;
+---
+
+<div
+  data-progress-nums-container
+  class:list={[
+    'hidden sm:flex justify-between px-2 bg-white items-center py-1.5 relative striped-loader bg-white',
+    {
+      'rounded-bl-md rounded-br-md': isSecondaryBanner,
+      'rounded-md': !isSecondaryBanner,
+    },
+  ]}
+>
+  <p
+    class='flex text-sm opacity-0 transition-opacity duration-300'
+    data-progress-nums
+  >
+    <span
+      class='mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
+    >
+      <span data-progress-percentage>0</span>% Done
+    </span>
+
+    <span><span data-progress-done>0</span> completed</span><span
+      class='mx-1.5 text-gray-400'>&middot;</span
+    >
+    <span><span data-progress-learning>0</span> in progress</span><span
+      class='mx-1.5 text-gray-400'>&middot;</span
+    >
+    <span><span data-progress-skipped>0</span> skipped</span><span
+      class='mx-1.5 text-gray-400'>&middot;</span
+    >
+    <span><span data-progress-total>0</span> Total</span>
+  </p>
+</div>
+
+<p
+  data-progress-nums-container
+  class='relative block rounded-md border bg-white px-2 py-1.5 text-sm text-sm text-gray-700 sm:hidden striped-loader bg-white -mb-2'
+>
+  <span data-progress-nums class='opacity-0 transition-opacity duration-300'>
+    <span
+      class='mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
+    >
+      <span data-progress-percentage>0</span>% Done
+    </span>
+
+    <span>
+      <span data-progress-done>0</span> of <span data-progress-total>0</span> Done
+    </span>
+  </span>
+</p>

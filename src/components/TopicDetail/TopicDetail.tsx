@@ -10,6 +10,7 @@ import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
   isTopicDone,
+  refreshProgressCounters,
   renderTopicProgress,
   ResourceType,
   updateResourceProgress as updateResourceProgressApi,
@@ -87,6 +88,7 @@ export function TopicDetail() {
           topicId,
           done.includes(topicId) ? 'done' : 'pending'
         );
+        refreshProgressCounters();
       })
       .catch((err) => {
         alert(err.message);

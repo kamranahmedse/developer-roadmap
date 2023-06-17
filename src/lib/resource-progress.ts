@@ -67,7 +67,7 @@ export async function updateResourceProgress(
     resourceId,
     response.done,
     response.learning,
-    response.skipped,
+    response.skipped
   );
 
   return response;
@@ -76,7 +76,7 @@ export async function updateResourceProgress(
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
-): Promise<{ done: string[]; learning: string[], skipped: string[] }> {
+): Promise<{ done: string[]; learning: string[]; skipped: string[] }> {
   // No need to load progress if user is not logged in
   if (!Cookies.get(TOKEN_COOKIE_NAME)) {
     return {
@@ -129,7 +129,7 @@ async function loadFreshProgress(
     resourceId,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || [],
+    response?.skipped || []
   );
 
   return response;
@@ -140,7 +140,7 @@ export function setResourceProgress(
   resourceId: string,
   done: string[],
   learning: string[],
-  skipped: string [],
+  skipped: string[]
 ): void {
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
@@ -209,8 +209,11 @@ export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
 ) {
-  const { done = [], learning = [], skipped = [] } =
-    (await getResourceProgress(resourceType, resourceId)) || {};
+  const {
+    done = [],
+    learning = [],
+    skipped = [],
+  } = (await getResourceProgress(resourceType, resourceId)) || {};
 
   done.forEach((topicId) => {
     renderTopicProgress(topicId, 'done');
@@ -228,9 +231,11 @@ export async function renderResourceProgress(
 }
 
 export function refreshProgressCounters() {
-  const progressNumsContainer = document.getElementById('progress-nums-container');
-  const progressNums = document.getElementById('progress-nums');
-  if (!progressNumsContainer || !progressNums) {
+  const progressNumsContainers = document.querySelectorAll(
+    '[data-progress-nums-container]'
+  );
+  const progressNums = document.querySelectorAll('[data-progress-nums]');
+  if (progressNumsContainers.length === 0 || progressNums.length === 0) {
     return;
   }
 
@@ -241,43 +246,80 @@ export function refreshProgressCounters() {
   const roadmapSwitchers = document.querySelectorAll(
     '[data-group-id^="json:"]'
   ).length;
+  const checkBoxes = document.querySelectorAll(
+    '[data-group-id^="check:"]'
+  ).length;
 
-  const totalItems = totalClickable - externalLinks - roadmapSwitchers;
-  const totalDone = document.querySelectorAll('.clickable-group.done').length;
+  const totalCheckBoxesDone = document.querySelectorAll(
+    '[data-group-id^="check:"].done'
+  ).length;
+  const totalCheckBoxesLearning = document.querySelectorAll(
+    '[data-group-id^="check:"].learning'
+  ).length;
+  const totalCheckBoxesSkipped = document.querySelectorAll(
+    '[data-group-id^="check:"].skipped'
+  ).length;
+
+  const totalItems =
+    totalClickable - externalLinks - roadmapSwitchers - checkBoxes;
+
+  const totalDone =
+    document.querySelectorAll('.clickable-group.done').length -
+    totalCheckBoxesDone;
   const totalLearning = document.querySelectorAll(
     '.clickable-group.learning'
-  ).length;
+  ).length - totalCheckBoxesLearning;
   const totalSkipped = document.querySelectorAll(
     '.clickable-group.skipped'
-  ).length;
+  ).length - totalCheckBoxesSkipped;
 
-  const doneCountEl = document.querySelector('.progress-done');
-  if (doneCountEl) {
-    doneCountEl.innerHTML = `${totalDone}`;
+  const doneCountEls = document.querySelectorAll('[data-progress-done]');
+  if (doneCountEls.length > 0) {
+    doneCountEls.forEach(
+      (doneCountEl) => (doneCountEl.innerHTML = `${totalDone}`)
+    );
   }
 
-  const learningCountEl = document.querySelector('.progress-learning');
-  if (learningCountEl) {
-    learningCountEl.innerHTML = `${totalLearning}`;
+  const learningCountEls = document.querySelectorAll(
+    '[data-progress-learning]'
+  );
+  if (learningCountEls.length > 0) {
+    learningCountEls.forEach(
+      (learningCountEl) => (learningCountEl.innerHTML = `${totalLearning}`)
+    );
   }
 
-  const skippedCountEl = document.querySelector('.progress-skipped');
-  if (skippedCountEl) {
-    skippedCountEl.innerHTML = `${totalSkipped}`;
+  const skippedCountEls = document.querySelectorAll('[data-progress-skipped]');
+  if (skippedCountEls.length > 0) {
+    skippedCountEls.forEach(
+      (skippedCountEl) => (skippedCountEl.innerHTML = `${totalSkipped}`)
+    );
   }
 
-  const totalCountEl = document.querySelector('.progress-total');
-  if (totalCountEl) {
-    totalCountEl.innerHTML = `${totalItems}`;
+  const totalCountEls = document.querySelectorAll('[data-progress-total]');
+  if (totalCountEls.length > 0) {
+    totalCountEls.forEach(
+      (totalCountEl) => (totalCountEl.innerHTML = `${totalItems}`)
+    );
   }
 
-  const progressPercentage = Math.round(((totalDone + totalSkipped) / totalItems) * 100);
-  const progressPercentageEl = document.querySelector('.progress-percentage');
-  if (progressPercentageEl) {
-    progressPercentageEl.innerHTML = `${progressPercentage}`;
+  const progressPercentage = Math.round(
+    ((totalDone + totalSkipped) / totalItems) * 100
+  );
+  const progressPercentageEls = document.querySelectorAll(
+    '[data-progress-percentage]'
+  );
+  if (progressPercentageEls.length > 0) {
+    progressPercentageEls.forEach(
+      (progressPercentageEl) =>
+        (progressPercentageEl.innerHTML = `${progressPercentage}`)
+    );
   }
 
-  progressNumsContainer.classList.remove('striped-loader')
-  progressNums.classList.remove('opacity-0');
-  progressNums.classList.remove('opacity-100');
+  progressNumsContainers.forEach((progressNumsContainer) =>
+    progressNumsContainer.classList.remove('striped-loader')
+  );
+  progressNums.forEach((progressNum) => {
+    progressNum.classList.remove('opacity-0');
+  });
 }
