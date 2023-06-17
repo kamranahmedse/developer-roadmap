@@ -8,6 +8,7 @@ import {
   ResourceProgressType,
   ResourceType,
   getTopicStatus,
+  refreshProgressCounters,
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
@@ -135,6 +136,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         setProgress(progress);
         onClose();
         renderTopicProgress(topicId, progress);
+        refreshProgressCounters();
       })
       .catch((err) => {
         alert(err.message);

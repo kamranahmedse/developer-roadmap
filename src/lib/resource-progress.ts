@@ -223,4 +223,61 @@ export async function renderResourceProgress(
   skipped.forEach((topicId) => {
     renderTopicProgress(topicId, 'skipped');
   });
+
+  refreshProgressCounters();
+}
+
+export function refreshProgressCounters() {
+  const progressNumsContainer = document.getElementById('progress-nums-container');
+  const progressNums = document.getElementById('progress-nums');
+  if (!progressNumsContainer || !progressNums) {
+    return;
+  }
+
+  const totalClickable = document.querySelectorAll('.clickable-group').length;
+  const externalLinks = document.querySelectorAll(
+    '[data-group-id^="ext_link:"]'
+  ).length;
+  const roadmapSwitchers = document.querySelectorAll(
+    '[data-group-id^="json:"]'
+  ).length;
+
+  const totalItems = totalClickable - externalLinks - roadmapSwitchers;
+  const totalDone = document.querySelectorAll('.clickable-group.done').length;
+  const totalLearning = document.querySelectorAll(
+    '.clickable-group.learning'
+  ).length;
+  const totalSkipped = document.querySelectorAll(
+    '.clickable-group.skipped'
+  ).length;
+
+  const doneCountEl = document.querySelector('.progress-done');
+  if (doneCountEl) {
+    doneCountEl.innerHTML = `${totalDone}`;
+  }
+
+  const learningCountEl = document.querySelector('.progress-learning');
+  if (learningCountEl) {
+    learningCountEl.innerHTML = `${totalLearning}`;
+  }
+
+  const skippedCountEl = document.querySelector('.progress-skipped');
+  if (skippedCountEl) {
+    skippedCountEl.innerHTML = `${totalSkipped}`;
+  }
+
+  const totalCountEl = document.querySelector('.progress-total');
+  if (totalCountEl) {
+    totalCountEl.innerHTML = `${totalItems}`;
+  }
+
+  const progressPercentage = Math.round(((totalDone + totalSkipped) / totalItems) * 100);
+  const progressPercentageEl = document.querySelector('.progress-percentage');
+  if (progressPercentageEl) {
+    progressPercentageEl.innerHTML = `${progressPercentage}`;
+  }
+
+  progressNumsContainer.classList.remove('striped-loader')
+  progressNums.classList.remove('opacity-0');
+  progressNums.classList.remove('opacity-100');
 }
