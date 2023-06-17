@@ -2,6 +2,7 @@
 import Icon from './AstroIcon.astro';
 import LoginPopup from './AuthenticationFlow/LoginPopup.astro';
 import BestPracticeHint from './BestPracticeHint.astro';
+import ProgressHelpPopup from './ProgressHelpPopup.astro';
 
 export interface Props {
   title: string;
@@ -15,6 +16,7 @@ const isBestPracticeReady = !isUpcoming;
 ---
 
 <LoginPopup />
+<ProgressHelpPopup />
 
 <div class='border-b'>
   <div class='container relative py-5 sm:py-12'>

@@ -6,7 +6,7 @@ briefTitle: 'MongoDB'
 briefDescription: 'Step by step guide to learning MongoDB in 2023'
 title: 'MongoDB Roadmap'
 description: 'Step by step guide to learning MongoDB in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968
