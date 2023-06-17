@@ -4,6 +4,7 @@ import EmailLoginForm from './EmailLoginForm';
 import Divider from './Divider.astro';
 import { GitHubButton } from './GitHubButton';
 import { GoogleButton } from './GoogleButton';
+import { LinkedInButton } from './LinkedInButton';
 ---
 
 <Popup id='login-popup' title='' subtitle=''>
@@ -19,6 +20,7 @@ import { GoogleButton } from './GoogleButton';
   <div class='mt-7 flex flex-col gap-2'>
     <GitHubButton client:load />
     <GoogleButton client:load />
+    <LinkedInButton client:load />
   </div>
 
   <Divider />
