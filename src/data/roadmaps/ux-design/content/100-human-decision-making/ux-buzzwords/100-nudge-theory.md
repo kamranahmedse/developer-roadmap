@@ -10,3 +10,5 @@ In the context of UX design, nudge theory can be applied in various ways to infl
 - **Timely interventions**: Providing guidance or prompts at the right moment in the user's journey. For example, offering help when a user encounters a complex task or reminding them of the benefits of completing a process when their motivation may be wavering.
 
 When applying nudge theory in UX design, it's crucial to maintain a balance between encouraging positive behaviors and respecting user autonomy. Designers should aim to empower users with meaningful choices and useful information, rather than manipulating or deceiving them.
+
+- [Nudge Theory Explained with Examples (on YouTube)](https://www.youtube.com/watch?v=u3yxxteiyya&ab_channel=epm)
