@@ -76,7 +76,7 @@ export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
       }
       className={`${
         isFavorite ? '' : 'opacity-30 hover:opacity-100'
-      } absolute right-1.5 top-1.5 z-10`}
+      } absolute right-1.5 top-1.5 z-30`}
     >
       {isLoading ? (
         <Spinner />
