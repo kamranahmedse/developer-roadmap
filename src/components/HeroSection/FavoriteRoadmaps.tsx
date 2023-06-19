@@ -27,7 +27,7 @@ function renderProgress(progressList: UserProgressResponse) {
     }
 
     window.dispatchEvent(
-      new CustomEvent('toggle-fav', {
+      new CustomEvent('mark-favorite', {
         detail: {
           resourceId: progress.resourceId,
           resourceType: progress.resourceType,
