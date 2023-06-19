@@ -7,6 +7,7 @@ export type UserProgressResponse = {
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
   resourceTitle: string;
+  isFavorite: boolean;
   done: number;
   learning: number;
   skipped: number;
@@ -24,6 +25,16 @@ function renderProgress(progressList: UserProgressResponse) {
     if (!element) {
       return;
     }
+
+    window.dispatchEvent(
+      new CustomEvent('toggle-fav', {
+        detail: {
+          resourceId: progress.resourceId,
+          resourceType: progress.resourceType,
+          isFavorite: progress.isFavorite,
+        },
+      })
+    );
 
     const totalDone = progress.done + progress.skipped;
     const percentageDone = (totalDone / progress.total) * 100;
