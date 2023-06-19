@@ -4,8 +4,13 @@ import { pageProgressMessage } from '../../stores/page';
 import heart from '../../icons/heart.svg';
 import heartFilled from '../../icons/heart-filled.svg';
 
-export default function MarkFavorite({ url }: { url: string }) {
-  const [isFavorite, setIsFavorite] = useState(false);
+type MarkFavoriteType = {
+  url: string;
+  favorit?: boolean;
+};
+
+export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
+  const [isFavorite, setIsFavorite] = useState(favorit ?? false);
   const icon = isFavorite ? heartFilled : heart;
   const resourceType = url.includes('best-practices')
     ? 'best-practice'
@@ -24,9 +29,16 @@ export default function MarkFavorite({ url }: { url: string }) {
     );
 
     if (error) {
-      alert('Failed to update favorite status');
+      pageProgressMessage.set('');
+      return alert('Failed to update favorite status');
     }
     setIsFavorite((p) => !p);
+    window.dispatchEvent(new CustomEvent('update-favorite-list', {}));
+    window.dispatchEvent(
+      new CustomEvent('toggle-fav', {
+        detail: { resourceId, resourceType, isFavorite: !isFavorite },
+      })
+    );
     pageProgressMessage.set('');
   };
 
@@ -37,14 +49,12 @@ export default function MarkFavorite({ url }: { url: string }) {
         resourceType: type,
         isFavorite: fav,
       } = (e as CustomEvent).detail;
-      console.log(id, type, fav);
       if (id === resourceId && type === resourceType) {
         setIsFavorite(fav);
       }
     };
 
     window.addEventListener('toggle-fav', listener);
-
     return () => {
       window.removeEventListener('toggle-fav', listener);
     };

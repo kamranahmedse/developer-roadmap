@@ -71,7 +71,6 @@ export function FavoriteRoadmaps() {
   }
 
   async function loadProgress() {
-    setIsLoading(true);
     const { response: progressList, error } =
       await httpGet<UserProgressResponse>(
         `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
@@ -90,9 +89,18 @@ export function FavoriteRoadmaps() {
   }
 
   useEffect(() => {
+    setIsLoading(true);
     loadProgress().finally(() => {
       setIsLoading(false);
     });
+  }, []);
+
+  useEffect(() => {
+    const listener = () => {
+      loadProgress();
+    };
+    window.addEventListener('update-favorite-list', listener);
+    return () => window.removeEventListener('update-favorite-list', listener);
   }, []);
 
   if (isPreparing) {

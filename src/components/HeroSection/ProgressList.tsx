@@ -1,6 +1,6 @@
 import type { UserProgressResponse } from './FavoriteRoadmaps';
 import { CheckIcon } from './CheckIcon';
-import MarkFavorite from '../FeaturedItems/MarkFavorite';
+import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 
 type ProgressListProps = {
   progress: UserProgressResponse;
@@ -42,7 +42,7 @@ export function ProgressList(props: ProgressListProps) {
                 class="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
                 style={{ width: `${percentageDone}%` }}
               ></span>
-              <MarkFavorite url={url} />
+              <MarkFavorite url={url} favorit={resource.isFavorite} />
             </a>
           );
         })}
