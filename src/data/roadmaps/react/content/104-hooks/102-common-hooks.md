@@ -23,4 +23,4 @@ Visit the following resources to learn more:
 - [useContext Hook by Example](https://www.robinwieruch.de/react-usecontext-hook/)
 - [useReducer Hook by Example](https://www.robinwieruch.de/react-usereducer-hook/)
 - [useReducer vs useState Hook](https://www.robinwieruch.de/react-usereducer-vs-usestate/)
-- [useDefferedValue Hook video](https://www.youtube.com/watch?v=jcgmedd6iwa)
+- [useDefferedValue Hook video](https://www.youtube.com/watch?v=jCGMedd6IWA)
