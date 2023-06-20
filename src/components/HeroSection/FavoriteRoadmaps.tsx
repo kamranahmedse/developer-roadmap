@@ -96,11 +96,8 @@ export function FavoriteRoadmaps() {
   }, []);
 
   useEffect(() => {
-    const listener = () => {
-      loadProgress();
-    };
-    window.addEventListener('update-favorite-list', listener);
-    return () => window.removeEventListener('update-favorite-list', listener);
+    window.addEventListener('refresh-favorites', loadProgress);
+    return () => window.removeEventListener('refresh-favorites', loadProgress);
   }, []);
 
   if (isPreparing) {

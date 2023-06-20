@@ -44,7 +44,7 @@ export function ProgressList(props: ProgressListProps) {
               ></span>
               <MarkFavorite
                 url={url}
-                favorit={resource.isFavorite}
+                favorite={resource.isFavorite}
               />
             </a>
           );

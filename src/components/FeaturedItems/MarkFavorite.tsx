@@ -1,30 +1,37 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpPatch } from '../../lib/http';
-import heart from '../../icons/heart.svg';
-import heartFilled from '../../icons/heart-filled.svg';
-import { useAuth } from '../../hooks/use-auth';
+import type { ResourceType } from '../../lib/resource-progress';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
+import { FavoriteIcon } from './FavoriteIcon';
 
 type MarkFavoriteType = {
   url: string;
-  favorit?: boolean;
+  favorite?: boolean;
 };
 
-export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
+export function MarkFavorite({ url, favorite }: MarkFavoriteType) {
   const [isLoading, setIsLoading] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(favorit ?? false);
-  const user = useAuth();
-  const icon = isFavorite ? heartFilled : heart;
-  const resourceType = url.includes('best-practices')
+  const [isFavorite, setIsFavorite] = useState(favorite ?? false);
+  const resourceType: ResourceType = url.includes('best-practices')
     ? 'best-practice'
     : 'roadmap';
   const resourceId = url.split('/').pop()!;
 
-  const toggleFavoriteHandler = async (e: Event) => {
+  async function toggleFavoriteHandler(e: Event) {
     e.preventDefault();
-    if (isLoading) return;
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    if (isLoading) {
+      return;
+    }
+
     setIsLoading(true);
 
-    const { response, error } = await httpPatch<{ status: 'ok' }>(
+    const { error } = await httpPatch<{ status: 'ok' }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-mark-favorite`,
       {
         resourceType,
@@ -37,14 +44,11 @@ export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
       return alert('Failed to update favorite status');
     }
 
-    window.dispatchEvent(new CustomEvent('update-favorite-list', {}));
-    window.dispatchEvent(
-      new CustomEvent('mark-favorite', {
-        detail: { resourceId, resourceType, isFavorite: !isFavorite },
-      })
-    );
+    window.dispatchEvent(new CustomEvent('refresh-favorites', {}));
+
+    setIsFavorite(!isFavorite);
     setIsLoading(false);
-  };
+  }
 
   useEffect(() => {
     const listener = (e: Event) => {
@@ -66,23 +70,13 @@ export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
 
   return (
     <button
-      {
-        ...(user ? {
-          onClick: toggleFavoriteHandler
-        }: {
-          'data-guest-required': true,
-          'data-popup': 'login-popup'
-        })
-      }
+      onClick={toggleFavoriteHandler}
+      tabIndex={-1}
       className={`${
         isFavorite ? '' : 'opacity-30 hover:opacity-100'
-      } absolute right-1.5 top-1.5 z-30`}
+      } absolute right-1.5 top-1.5 z-30 focus:outline-0`}
     >
-      {isLoading ? (
-        <Spinner />
-      ) : (
-        <img src={icon} alt="Mark Favorite" className="h-3 w-3" />
-      )}
+      {isLoading ? <Spinner /> : <FavoriteIcon isFavorite={isFavorite} />}
     </button>
   );
 }
@@ -90,7 +84,7 @@ export function MarkFavorite({ url, favorit }: MarkFavoriteType) {
 function Spinner() {
   return (
     <svg
-      className="h-3 w-3 animate-spin"
+      className="h-3.5 w-3.5 animate-spin"
       viewBox="0 0 93 93"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
