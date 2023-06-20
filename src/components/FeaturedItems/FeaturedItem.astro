@@ -26,7 +26,11 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
     {text}
   </span>
 
-  <MarkFavorite url={url} client:idle />
+  <MarkFavorite
+    resourceId={url.split('/').pop()!}
+    resourceType={url.includes('best-practices') ? 'best-practice' : 'roadmap'}
+    client:load
+  />
 
   {
     isNew && (

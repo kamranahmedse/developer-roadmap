@@ -71,6 +71,8 @@ export function FavoriteRoadmaps() {
   }
 
   async function loadProgress() {
+    setIsLoading(true);
+
     const { response: progressList, error } =
       await httpGet<UserProgressResponse>(
         `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
@@ -89,7 +91,6 @@ export function FavoriteRoadmaps() {
   }
 
   useEffect(() => {
-    setIsLoading(true);
     loadProgress().finally(() => {
       setIsLoading(false);
     });
@@ -113,10 +114,9 @@ export function FavoriteRoadmaps() {
       }`}
     >
       <div className="container min-h-full">
-        {isLoading && <EmptyProgress title="Loading progress .." />}
         {!isLoading && progress.length == 0 && <EmptyProgress />}
-        {!isLoading && progress.length > 0 && (
-          <ProgressList progress={progress} />
+        {progress.length > 0 && (
+          <ProgressList progress={progress} isLoading={isLoading} />
         )}
       </div>
     </div>
