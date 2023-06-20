@@ -1,5 +1,6 @@
 ---
 import Analytics from '../components/Analytics/Analytics.astro';
+import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import { CommandMenu } from '../components/CommandMenu/CommandMenu';
 import Footer from '../components/Footer.astro';
@@ -149,6 +150,7 @@ const gaPageIdentifier = Astro.url.pathname
     </slot>
 
     <Authenticator />
+    <LoginPopup />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <PageSponsor

@@ -1,4 +1,6 @@
 ---
+import AstroIcon from '../AstroIcon.astro';
+import { MarkFavorite } from './MarkFavorite';
 export interface FeaturedItemType {
   isUpcoming?: boolean;
   isNew?: boolean;
@@ -20,16 +22,22 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
   ]}
   href={url}
 >
-  <span class='text-slate-400 relative z-20'>
+  <span class='relative z-20 text-slate-400'>
     {text}
   </span>
 
+  <MarkFavorite
+    resourceId={url.split('/').pop()!}
+    resourceType={url.includes('best-practices') ? 'best-practice' : 'roadmap'}
+    client:load
+  />
+
   {
     isNew && (
-      <span class='absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-purple-300 flex items-center'>
-        <span class='flex h-2 w-2 mr-1.5'>
-          <span class='animate-ping absolute inline-flex h-2 w-2 rounded-full bg-purple-400 opacity-75' />
-          <span class='relative inline-flex rounded-full h-2 w-2 bg-purple-500' />
+      <span class='absolute bottom-1.5 right-2 flex items-center rounded-br rounded-tl text-xs font-medium text-purple-300'>
+        <span class='mr-1.5 flex h-2 w-2'>
+          <span class='absolute inline-flex h-2 w-2 animate-ping rounded-full bg-purple-400 opacity-75' />
+          <span class='relative inline-flex h-2 w-2 rounded-full bg-purple-500' />
         </span>
         New
       </span>
@@ -38,14 +46,17 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
 
   {
     isUpcoming && (
-      <span class='absolute bottom-1.5 right-2 text-xs font-medium rounded-br rounded-tl text-slate-500 flex items-center'>
-        <span class='flex h-2 w-2 mr-1.5'>
-          <span class='animate-ping absolute inline-flex h-2 w-2 rounded-full bg-slate-500 opacity-75' />
-          <span class='relative inline-flex rounded-full h-2 w-2 bg-slate-600' />
+      <span class='absolute bottom-1.5 right-2 flex items-center rounded-br rounded-tl text-xs font-medium text-slate-500'>
+        <span class='mr-1.5 flex h-2 w-2'>
+          <span class='absolute inline-flex h-2 w-2 animate-ping rounded-full bg-slate-500 opacity-75' />
+          <span class='relative inline-flex h-2 w-2 rounded-full bg-slate-600' />
         </span>
         Upcoming
       </span>
     )
   }
-  <span data-progress class="z-10 bg-[#172a3a] absolute top-0 left-0 bottom-0 duration-300 transition-[width] w-0"></span>
+  <span
+    data-progress
+    class='absolute bottom-0 left-0 top-0 z-10 w-0 bg-[#172a3a] transition-[width] duration-300'
+  ></span>
 </a>

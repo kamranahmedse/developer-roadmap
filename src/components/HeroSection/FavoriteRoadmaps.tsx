@@ -7,6 +7,7 @@ export type UserProgressResponse = {
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
   resourceTitle: string;
+  isFavorite: boolean;
   done: number;
   learning: number;
   skipped: number;
@@ -24,6 +25,16 @@ function renderProgress(progressList: UserProgressResponse) {
     if (!element) {
       return;
     }
+
+    window.dispatchEvent(
+      new CustomEvent('mark-favorite', {
+        detail: {
+          resourceId: progress.resourceId,
+          resourceType: progress.resourceType,
+          isFavorite: progress.isFavorite,
+        },
+      })
+    );
 
     const totalDone = progress.done + progress.skipped;
     const percentageDone = (totalDone / progress.total) * 100;
@@ -61,6 +72,7 @@ export function FavoriteRoadmaps() {
 
   async function loadProgress() {
     setIsLoading(true);
+
     const { response: progressList, error } =
       await httpGet<UserProgressResponse>(
         `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
@@ -84,6 +96,11 @@ export function FavoriteRoadmaps() {
     });
   }, []);
 
+  useEffect(() => {
+    window.addEventListener('refresh-favorites', loadProgress);
+    return () => window.removeEventListener('refresh-favorites', loadProgress);
+  }, []);
+
   if (isPreparing) {
     return null;
   }
@@ -97,10 +114,9 @@ export function FavoriteRoadmaps() {
       }`}
     >
       <div className="container min-h-full">
-        {isLoading && <EmptyProgress title="Loading progress .." />}
         {!isLoading && progress.length == 0 && <EmptyProgress />}
-        {!isLoading && progress.length > 0 && (
-          <ProgressList progress={progress} />
+        {progress.length > 0 && (
+          <ProgressList progress={progress} isLoading={isLoading} />
         )}
       </div>
     </div>
