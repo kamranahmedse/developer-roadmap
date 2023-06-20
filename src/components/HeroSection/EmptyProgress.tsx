@@ -1,4 +1,4 @@
-import { CheckIcon } from './CheckIcon';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
 
 type EmptyProgressProps = {
     title?: string;

@@ -1,5 +1,5 @@
 import type { UserProgressResponse } from './FavoriteRoadmaps';
-import { CheckIcon } from './CheckIcon';
+import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { Spinner } from '../ReactIcons/Spinner';
 
