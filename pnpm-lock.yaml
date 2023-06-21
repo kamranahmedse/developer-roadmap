@@ -11,6 +11,8 @@ specifiers:
   '@types/js-cookie': ^3.0.3
   astro: ^2.6.3
   astro-compress: ^1.1.47
+  chart.js: ^4.3.0
+  chartjs-plugin-datalabels: ^2.2.0
   csv-parser: ^3.0.0
   gh-pages: ^5.0.0
   jose: ^4.14.4
@@ -37,6 +39,8 @@ dependencies:
   '@nanostores/preact': 0.5.0_m2wbkjxz7237icvaxqi7ignbgm
   astro: 2.6.4
   astro-compress: 1.1.47
+  chart.js: 4.3.0
+  chartjs-plugin-datalabels: 2.2.0_chart.js@4.3.0
   jose: 4.14.4
   js-cookie: 3.0.5
   nanostores: 0.9.1
@@ -695,6 +699,10 @@ packages:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
+
+  /@kurkle/color/0.3.2:
+    resolution: {integrity: sha512-fuscdXJ9G1qb7W8VdHi+IwRqij3lBkosAm4ydQtEmbY58OzHXqQhvlxqEkoz0yssNVn38bcpRWgA9PP+OGoisw==}
+    dev: false
 
   /@ljharb/has-package-exports-patterns/0.0.2:
     resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
@@ -1551,6 +1559,21 @@ packages:
 
   /character-entities/2.0.2:
     resolution: {integrity: sha512-shx7oQ0Awen/BRIdkjkvz54PnEEI/EjwXDSIZp86/KKdbafHh1Df/RYGBhn4hbe2+uKC9FnT5UCEdyPz3ai9hQ==}
+    dev: false
+
+  /chart.js/4.3.0:
+    resolution: {integrity: sha512-ynG0E79xGfMaV2xAHdbhwiPLczxnNNnasrmPEXriXsPJGjmhOBYzFVEsB65w2qMDz+CaBJJuJD0inE/ab/h36g==}
+    engines: {pnpm: '>=7'}
+    dependencies:
+      '@kurkle/color': 0.3.2
+    dev: false
+
+  /chartjs-plugin-datalabels/2.2.0_chart.js@4.3.0:
+    resolution: {integrity: sha512-14ZU30lH7n89oq+A4bWaJPnAG8a7ZTk7dKf48YAzMvJjQtjrgg5Dpk9f+LbjCF6bpx3RAGTeL13IXpKQYyRvlw==}
+    peerDependencies:
+      chart.js: '>=3.0.0'
+    dependencies:
+      chart.js: 4.3.0
     dev: false
 
   /chokidar/3.5.3:

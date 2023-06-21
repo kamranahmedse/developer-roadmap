@@ -28,6 +28,8 @@
     "@nanostores/preact": "^0.5.0",
     "astro": "^2.6.3",
     "astro-compress": "^1.1.47",
+    "chart.js": "^4.3.0",
+    "chartjs-plugin-datalabels": "^2.2.0",
     "jose": "^4.14.4",
     "js-cookie": "^3.0.5",
     "nanostores": "^0.9.1",

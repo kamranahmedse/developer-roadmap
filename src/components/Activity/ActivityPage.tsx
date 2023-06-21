@@ -1,4 +1,6 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { Chart as ChartJS, ChartTypeRegistry } from 'chart.js/auto';
+import ChartDataLabels from 'chartjs-plugin-datalabels'
 import { httpGet } from '../../lib/http';
 import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
@@ -50,8 +52,15 @@ type ActivityResponse = {
   }[];
 };
 
+type ChartLegendItem = {
+  title: string;
+  color: string;
+}
+
 export function ActivityPage() {
+  const canvasRef = useRef<HTMLCanvasElement>(null);
   const [activity, setActivity] = useState<ActivityResponse>();
+  const [chartLegend, setChartLegend] = useState<ChartLegendItem[]>([]);
   const [isLoading, setIsLoading] = useState(true);
 
   async function loadActivity() {
@@ -83,6 +92,56 @@ export function ActivityPage() {
     return null;
   }
 
+  const chartData = useMemo(() => {
+    return {
+      labels: [...learningRoadmaps, ...learningBestPractices].map(resource => resource.title),
+      data: [...learningRoadmaps, ...learningBestPractices].map(resource => resource.done)
+    }
+  }, [activity])
+
+  useEffect(() => {
+    let chart: ChartJS<"pie", number[], string> | null = null
+    const ctx = canvasRef.current?.getContext('2d');
+    if (!ctx) {
+      return;
+    }
+
+    if (!chart) {
+      chart = new ChartJS(ctx, {
+        type: 'pie',
+        data: {
+          labels: chartData.labels,
+          datasets: [{
+            data: chartData.data,
+            hoverOffset: 4
+          }]
+        },
+        options: {
+          responsive: true,
+          maintainAspectRatio: true,
+          plugins: {
+            legend: {
+              display: false
+            },
+          }
+        }
+      });
+    }
+    const legendItems = chart?.legend?.legendItems || []
+    const enrichedLegendItems = legendItems.map((item, index) => {
+      return {
+        title: item.text,
+        color: item.fillStyle?.toString() || ''
+      }
+    })
+    console.log(enrichedLegendItems)
+    setChartLegend(enrichedLegendItems)
+
+    return () => {
+      chart?.destroy();
+    };
+  }, [chartData]);
+
   return (
     <>
       <ActivityCounters
@@ -90,6 +149,35 @@ export function ActivityPage() {
         learning={activity?.learning || { today: 0, total: 0 }}
         streak={activity?.streak || { count: 0 }}
       />
+
+      <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+        <div className="bg-white shadow-lg rounded-2xl p-8">
+          <h2 className="font-medium">Knowledge Structure</h2>
+          <div className="grid grid-cols-4 gap-5 mt-6">
+            <div className="w-full aspect-square flex items-center justify-center h-full">
+              <canvas
+                ref={canvasRef}
+              />
+            </div>
+
+            <div className="col-span-3">
+              <div className="flex flex-col gap-1.5 justify-center h-full">
+                {chartLegend.map((data) => (
+                  <div className="flex items-center gap-2">
+                    <div
+                      style={{
+                        background: `${data.color}`
+                      }}
+                      className="w-3 h-3 rounded-full"
+                    />
+                    <span className="text-xs text-gray-500">{data.title}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div class="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
         {learningRoadmaps.length === 0 &&
