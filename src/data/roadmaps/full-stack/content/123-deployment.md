@@ -1,6 +1,6 @@
 # Deployment
 
-Now that you know the basics of AWS, you should be able to deploy your application to AWS. You don't need to use al the AWS services, here is what you can probably get started with:
+Now that you know the basics of AWS, you should be able to deploy your application to AWS. You don't need to use all the AWS services, here is what you can probably get started with:
 
 - Setup an EC2 instance using any AMI (e.g. latest version of Ubuntu)
 - SSH into the EC2 instance using the key pair you created
