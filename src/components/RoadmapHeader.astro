@@ -41,17 +41,15 @@ const isRoadmapReady = !isUpcoming;
     <YouTubeAlert />
 
     <div class="mb-3 mt-0 sm:mb-4 sm:mt-4">
-      <div class="flex items-center gap-3">
-        <h1 class="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl">
-          {title}
-        </h1>
+      <h1 class="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl">
+        {title}
         <MarkFavorite
           resourceId={roadmapId}
           resourceType="roadmap"
-          className="text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[1] [&>svg]:stroke-gray-500 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4"
+          className="text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[1] [&>svg]:stroke-gray-500 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 ml-2"
           client:load
         />
-      </div>
+      </h1>
       <p class="text-sm text-gray-500 sm:text-lg">{description}</p>
     </div>
 

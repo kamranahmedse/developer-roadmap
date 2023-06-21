@@ -22,17 +22,15 @@ const isBestPracticeReady = !isUpcoming;
 <div class="border-b">
   <div class="container relative py-5 sm:py-12">
     <div class="mb-3 mt-0 sm:mb-6">
-      <div class="flex items-center gap-3">
-        <h1 class="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl">
-          {title}
-        </h1>
+      <h1 class="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl">
+        {title}
         <MarkFavorite
           resourceId={bestPracticeId}
           resourceType="best-practice"
-          className="text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[1] [&>svg]:stroke-gray-500 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4"
+          className="text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[1] [&>svg]:stroke-gray-500 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 ml-2"
           client:load
         />
-      </div>
+      </h1>
       <p class="text-sm text-gray-500 sm:text-lg">{description}</p>
     </div>
 
@@ -88,16 +86,16 @@ const isBestPracticeReady = !isUpcoming;
 
       {
         isBestPracticeReady && (
-            <a
-              href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
-              target="_blank"
-              class="inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
-              aria-label="Suggest Changes"
-            >
-              <Icon icon="comment" class="h-3 w-3" />
-              <span class="ml-2 hidden sm:inline">Suggest Changes</span>
-              <span class="ml-2 inline sm:hidden">Suggest</span>
-            </a>
+          <a
+            href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
+            target="_blank"
+            class="inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
+            aria-label="Suggest Changes"
+          >
+            <Icon icon="comment" class="h-3 w-3" />
+            <span class="ml-2 hidden sm:inline">Suggest Changes</span>
+            <span class="ml-2 inline sm:hidden">Suggest</span>
+          </a>
         )
       }
     </div>
