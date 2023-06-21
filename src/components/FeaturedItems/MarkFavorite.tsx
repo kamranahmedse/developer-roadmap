@@ -10,9 +10,15 @@ type MarkFavoriteType = {
   resourceType: ResourceType;
   resourceId: string;
   favorite?: boolean;
+  className?: string;
 };
 
-export function MarkFavorite({ resourceId, resourceType, favorite }: MarkFavoriteType) {
+export function MarkFavorite({
+  resourceId,
+  resourceType,
+  favorite,
+  className,
+}: MarkFavoriteType) {
   const [isLoading, setIsLoading] = useState(false);
   const [isFavorite, setIsFavorite] = useState(favorite ?? false);
 
@@ -70,6 +76,10 @@ export function MarkFavorite({ resourceId, resourceType, favorite }: MarkFavorit
       } = (e as CustomEvent).detail;
       if (id === resourceId && type === resourceType) {
         setIsFavorite(fav);
+        localStorage.setItem(
+          `${resourceType}-${resourceId}-favorite`,
+          fav ? '1' : '0'
+        );
       }
     };
 
@@ -83,9 +93,9 @@ export function MarkFavorite({ resourceId, resourceType, favorite }: MarkFavorit
     <button
       onClick={toggleFavoriteHandler}
       tabIndex={-1}
-      className={`${
-        isFavorite ? '' : 'opacity-30 hover:opacity-100'
-      } absolute right-1.5 top-1.5 z-30 focus:outline-0`}
+      className={`${isFavorite ? '' : 'opacity-30 hover:opacity-100'} ${
+        className || 'absolute right-1.5 top-1.5 z-30 focus:outline-0'
+      }`}
     >
       {isLoading ? <Spinner /> : <FavoriteIcon isFavorite={isFavorite} />}
     </button>
