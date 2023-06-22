@@ -19,8 +19,12 @@ export function MarkFavorite({
   favorite,
   className,
 }: MarkFavoriteType) {
+  const localStorageKey = `${resourceType}-${resourceId}-favorite`;
+
   const [isLoading, setIsLoading] = useState(false);
-  const [isFavorite, setIsFavorite] = useState(favorite ?? false);
+  const [isFavorite, setIsFavorite] = useState(
+    favorite ?? localStorage.getItem(localStorageKey) === '1'
+  );
 
   async function toggleFavoriteHandler(e: Event) {
     e.preventDefault();
@@ -76,10 +80,7 @@ export function MarkFavorite({
       } = (e as CustomEvent).detail;
       if (id === resourceId && type === resourceType) {
         setIsFavorite(fav);
-        localStorage.setItem(
-          `${resourceType}-${resourceId}-favorite`,
-          fav ? '1' : '0'
-        );
+        localStorage.setItem(localStorageKey, fav ? '1' : '0');
       }
     };
 
