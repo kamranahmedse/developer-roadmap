@@ -51,6 +51,7 @@ export async function updateResourceProgress(
     done: string[];
     learning: string[];
     skipped: string[];
+    isFavorite: boolean;
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-update-resource-progress`, {
     topicId,
     resourceType,
@@ -87,6 +88,10 @@ export async function getResourceProgress(
   }
 
   const progressKey = `${resourceType}-${resourceId}-progress`;
+  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
+
+  const rawIsFavorite = localStorage.getItem(isFavoriteKey);
+  const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
 
   const rawProgress = localStorage.getItem(progressKey);
   const progress = JSON.parse(rawProgress || 'null');
@@ -99,6 +104,17 @@ export async function getResourceProgress(
     return loadFreshProgress(resourceType, resourceId);
   }
 
+  // Dispatch event to update favorite status in the MarkFavorite component
+  window.dispatchEvent(
+    new CustomEvent('mark-favorite', {
+      detail: {
+        resourceType,
+        resourceId,
+        isFavorite
+      }
+    })
+  );
+
   return progress;
 }
 
@@ -110,6 +126,7 @@ async function loadFreshProgress(
     done: string[];
     learning: string[];
     skipped: string[];
+    isFavorite: boolean;
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`, {
     resourceType,
     resourceId,
@@ -129,7 +146,18 @@ async function loadFreshProgress(
     resourceId,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || []
+    response?.skipped || [],
+  );
+
+  // Dispatch event to update favorite status in the MarkFavorite component
+  window.dispatchEvent(
+    new CustomEvent('mark-favorite', {
+      detail: {
+        resourceType,
+        resourceId,
+        isFavorite: response.isFavorite
+      }
+    })
   );
 
   return response;
@@ -140,7 +168,7 @@ export function setResourceProgress(
   resourceId: string,
   done: string[],
   learning: string[],
-  skipped: string[]
+  skipped: string[],
 ): void {
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
