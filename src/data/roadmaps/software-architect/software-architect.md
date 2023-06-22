@@ -43,7 +43,6 @@ relatedRoadmaps:
   - 'backend'
   - 'software-design-architecture'
   - 'python'
-  - 'python'
   - 'nodejs'
   - 'golang'
   - 'java'
