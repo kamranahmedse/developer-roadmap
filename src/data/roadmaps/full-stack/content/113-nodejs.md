@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [Learn Node.js Official Website](https://nodejs.dev/en/learn/)
 - [Node.JS Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
 - [Node.js and Express.js Full Course](https://www.youtube.com/watch?v=Oe421EPjeBE)
-- [Node.js Full Course](https://youtu.be/f2eqecitbl8)
