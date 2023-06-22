@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Electron Website](https://www.electronjs.org/)
 - [Electron Docs](https://www.electronjs.org/docs/latest/)
+- [Create a Desktop App With JavaScript & Electron](https://youtu.be/ml743nrkmhw)
