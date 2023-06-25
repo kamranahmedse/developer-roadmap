@@ -64,9 +64,7 @@ For Apache, you might see an error stating `The requested apache plugin does not
 sudo apt-get update
 sudo apt-get install python-certbot-apache
 ```
-
-or
-
+or, in some Linux terminals e.g. CentOS:
 ```shell
 sudo apt-get update
 sudo apt-get install python3-certbot-apache 
@@ -76,7 +74,6 @@ Then re-run:
 ```shell
 sudo certbot --apache
 ```
-
 
 You will be asked to enter your email address and agree to the terms of service. You will also be asked to enter the domain name for which you want to obtain the SSL certificate. You can also specify multiple domain names if you want to secure multiple domains with a single certificate.
 
