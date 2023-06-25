@@ -59,6 +59,25 @@ You can either run the following command for the interactive mode where you will
 sudo certbot --nginx
 ```
 
+For Apache, you might see an error stating `The requested apache plugin does not appear to be installed `. Try installing this package:
+```shell
+sudo apt-get update
+sudo apt-get install python-certbot-apache
+```
+
+or
+
+```shell
+sudo apt-get update
+sudo apt-get install python3-certbot-apache 
+```
+
+Then re-run:
+```shell
+sudo certbot --apache
+```
+
+
 You will be asked to enter your email address and agree to the terms of service. You will also be asked to enter the domain name for which you want to obtain the SSL certificate. You can also specify multiple domain names if you want to secure multiple domains with a single certificate.
 
 Alternatively, you can run the following command to obtain the SSL certificate in a non-interactive mode where you will not be asked any questions. This is useful if you want to automate the process.
