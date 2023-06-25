@@ -25,7 +25,7 @@ The first line of the program `#include <iostream>` is a [preprocessor directive
 #include <iostream>
 ```
 
-##`main()` Function
+## `main()` Function
 
 In C++, the `main()` function serves as the entry point of your program. The operating system runs your program by calling this `main()` function. It should be defined only once in your program and must return an integer.
 
