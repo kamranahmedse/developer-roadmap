@@ -1,0 +1,1 @@
+# Optimizing flatlist config
