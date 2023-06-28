@@ -1,8 +1,10 @@
 # Component Life Cycle
 
-Each component has several “lifecycle methods” that you can override to run code at particular times in the process. You can use this [lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) as a cheat sheet. In the list below, commonly used lifecycle methods are marked as bold. The rest of them exist for relatively rare use cases.
+React components have a lifecycle consisting of three phases: Mounting, Updating, and Unmounting along with several “lifecycle methods” that you can override to run code at particular times in the process. You can use this [lifecycle diagram](https://projects.wojtekmaj.pl/react-lifecycle-methods-diagram/) as a cheat sheet.
+
+It is not recommended to use lifecycle methods manually. Instead, use the useEffect hook with functional components.
 
 Visit the following resources to learn more:
 
-- [The Component Lifecycle](https://reactjs.org/docs/react-component.html#the-component-lifecycle)
+- [Class Component](https://react.dev/reference/react/Component)
 - [Lifecycle of Reactive Effects](https://react.dev/learn/lifecycle-of-reactive-effects)
