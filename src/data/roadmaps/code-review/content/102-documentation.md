@@ -1,5 +1,5 @@
 # Questions to Ask
 
-- New features reasonably documented?
-- Are the relevant kinds of does covered: README, API docs, user quide, reference docs, etc?
-- Are docs understandable, are there no significant typos and grammar mistakes?
+- Are the new features reasonably documented?
+- Are all relevant types of documentation covered, such as README, API docs, user guide, reference docs, etc?
+- Is the documentation understandable and free of significant typos and grammar mistakes?
