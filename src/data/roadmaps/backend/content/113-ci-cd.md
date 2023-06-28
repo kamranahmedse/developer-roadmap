@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [A Primer: Continuous Integration and Continuous Delivery (CI/CD)](https://thenewstack.io/a-primer-continuous-integration-and-continuous-delivery-ci-cd/)
 - [3 Ways to Use Automation in CI/CD Pipelines](https://thenewstack.io/3-ways-to-use-automation-in-ci-cd-pipelines/)
 - [Articles about CI/CD](https://thenewstack.io/category/ci-cd/)
+- [Top 5 CI/CD Best Practices for DevOps Teams](https://buddy.works/guides/ci-cd-best-practices-devops)
