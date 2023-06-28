@@ -6,7 +6,7 @@ briefTitle: 'GraphQL'
 briefDescription: 'Step by Step guide to learn GraphQL in 2023'
 title: 'GraphQL'
 description: 'Step by step guide to learn GraphQL in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

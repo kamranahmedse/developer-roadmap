@@ -1,3 +1,5 @@
+.idea
+
 # build output
 dist/
 .output/

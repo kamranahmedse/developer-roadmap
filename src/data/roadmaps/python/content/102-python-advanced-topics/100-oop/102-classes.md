@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [Classes in Python](https://docs.python.org/3/tutorial/classes.html)
 - [Python Classes and Objects](https://www.geeksforgeeks.org/python-classes-and-objects/)
 - [Python Classes and Objects](https://www.w3schools.com/python/python_classes.asp)
+- [Python OOP Tutorial](https://www.youtube.com/watch?v=zda-z5jzlym&list=pl-osie80tetsqhiuoqkhwlxsibidseytc)

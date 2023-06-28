@@ -46,3 +46,5 @@ int main() {
 In the above program, we define a simple function `add` and a class `Calculator` with a member function `multiply`. The `main` function demonstrates how to use these to perform basic arithmetic.
 
 - [C++ Tutorial for Beginners - Full Course](https://www.youtube.com/watch?v=vlnpwxzdw4y)
+- [w3schools C++ tutorial](https://www.w3schools.com/cpp/)
+- [Learn C++](https://www.learncpp.com/)

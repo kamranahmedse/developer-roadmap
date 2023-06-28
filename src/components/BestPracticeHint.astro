@@ -1,20 +1,10 @@
 ---
+import ResourceProgressStats from './ResourceProgressStats.astro';
 export interface Props {
   bestPracticeId: string;
 }
 ---
 
 <div class='mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 sm:-mb-[65px]'>
-  <!-- Desktop: Roadmap Resources - Alert -->
-  <div class='hidden sm:flex justify-between px-2 bg-white items-center rounded-md p-1.5'>
-    <p class='text-sm'>
-      <span class='text-yellow-900 bg-yellow-200 py-0.5 px-1 text-xs rounded-sm font-medium uppercase mr-0.5'>Tip</span>
-      Click the best practices for details and resources
-    </p>
-  </div>
-
-  <!-- Mobile - Roadmap resources alert -->
-  <p class='block sm:hidden text-sm border border-yellow-500 text-yellow-700 rounded-md py-1.5 px-2 bg-white relative'>
-    Click the best practices for details and resources
-  </p>
+  <ResourceProgressStats />
 </div>

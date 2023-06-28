@@ -10,6 +10,7 @@ import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
   isTopicDone,
+  refreshProgressCounters,
   renderTopicProgress,
   ResourceType,
   updateResourceProgress as updateResourceProgressApi,
@@ -17,6 +18,7 @@ import {
 import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
+import { showLoginPopup } from '../../lib/popup';
 
 export function TopicDetail() {
   const [contributionAlertMessage, setContributionAlertMessage] = useState('');
@@ -33,20 +35,6 @@ export function TopicDetail() {
   const [topicId, setTopicId] = useState('');
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
-
-  const showLoginPopup = () => {
-    const popupEl = document.querySelector(`#login-popup`);
-    if (!popupEl) {
-      return;
-    }
-
-    popupEl.classList.remove('hidden');
-    popupEl.classList.add('flex');
-    const focusEl = popupEl.querySelector<HTMLElement>('[autofocus]');
-    if (focusEl) {
-      focusEl.focus();
-    }
-  };
 
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
@@ -87,6 +75,7 @@ export function TopicDetail() {
           topicId,
           done.includes(topicId) ? 'done' : 'pending'
         );
+        refreshProgressCounters();
       })
       .catch((err) => {
         alert(err.message);
@@ -186,7 +175,6 @@ export function TopicDetail() {
                 topicId={topicId}
                 resourceId={resourceId}
                 resourceType={resourceType}
-                onShowLoginPopup={showLoginPopup}
                 onClose={() => {
                   setIsActive(false);
                   setIsContributing(false);

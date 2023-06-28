@@ -47,8 +47,9 @@ export function ResourceProgress(props: ResourceProgressType) {
       return;
     }
 
+    localStorage.removeItem(`${resourceType}-${resourceId}-favorite`);
     localStorage.removeItem(`${resourceType}-${resourceId}-progress`);
-    console.log(`${resourceType}-${resourceId}-progress`);
+
     setIsClearing(false);
     setIsConfirming(false);
     onCleared();

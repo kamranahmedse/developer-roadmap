@@ -16,7 +16,7 @@ For new roadmaps, submit a roadmap by providing [a textual roadmap similar to th
 
 For the existing roadmaps, please follow the details listed for the nature of contribution:
 
-- **Fixing Typos** — Make your changes in the [roadmap JSON file](https://github.com/kamranahmedse/developer-roadmap/tree/master/public/jsons)
+- **Fixing Typos** — Make your changes in the [roadmap JSON file](https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps)
 - **Adding or Removing Nodes** — Please open an issue with your suggestion.
 
 **Note:** Please note that our goal is not to have the biggest list of items. Our goal is to list items or skills most relevant today.

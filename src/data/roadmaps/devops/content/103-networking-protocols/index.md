@@ -7,6 +7,7 @@ Here are some of the resources to learn about SSH:
 - [SSH Intro](https://www.baeldung.com/cs/ssh-intro)
 - [What is SSH?](https://www.ssh.com/academy/ssh/protocol)
 - [SFTP using SSH](https://www.goanywhere.com/blog/how-sftp-works)
+- [OpenSSH Full Guide](https://www.youtube.com/watch?v=ys5zh7kexve)
 
 Visit the following to learn about SSL/TLS:
 
@@ -33,5 +34,3 @@ Here are some resources to learn about DNS:
 - [HOw DNS works (comic)](https://howdns.works/)
 - [DNS and How does it Work?](https://www.youtube.com/watch?v=Wj0od2ag5sk)
 - [DNS Records](https://www.youtube.com/watch?v=7lxgpKh_fRY)
-
-

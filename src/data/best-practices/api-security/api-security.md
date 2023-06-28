@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/best-practices/api-security.pdf'
 order: 2
 briefTitle: 'API Security'
 briefDescription: 'API Security Best Practices'
-isNew: true
+isNew: false
 isUpcoming: false
 title: 'API Security Best Practices'
 description: 'Detailed list of best practices to make your APIs secure'

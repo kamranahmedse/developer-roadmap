@@ -7,7 +7,7 @@ briefDescription: 'Step by step guide to becoming a Spring Boot Developer in 202
 title: 'Spring Boot Developer'
 description: 'Step by step guide to becoming a Spring Boot developer in 2023'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 1245.52

@@ -5,3 +5,4 @@
 Learn more from the following links:
 
 - [Actor Model Architecture](https://awesome-architecture.com/actor-model-architecture/actor-model-architecture/)
+- [Inversion of Control](https://stackoverflow.com/a/72826245)
