@@ -3,10 +3,11 @@
 Exponential algorithms are those that grow at a rate of 2^n. This means that for each additional input, the algorithm will take twice as long to run. The following function is an example of an exponential algorithm:
 
 ```python
-def exponential(n):
-    if n == 0:
-        return 1
-    return 2 * exponential(n - 1)
+def fibonacci(n):
+    if((n==1) or (n==2)):
+        return  1
+    if(n > 2):
+        return fibonacci(n-1) + fibonacci(n-2)
 ```
 
 As you can see, the algorithm's runtime grows exponentially. For each additional input, the algorithm will take twice as long to run.
