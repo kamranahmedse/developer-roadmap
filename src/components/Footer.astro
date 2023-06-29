@@ -2,45 +2,53 @@
 import Icon from './AstroIcon.astro';
 ---
 
-<div class='py-6 sm:py-16 pb-10 bg-slate-900 text-white'>
+<div class='bg-slate-900 py-6 pb-10 text-white sm:py-16'>
   <div class='container'>
-    <p class='text-gray-400 font-medium flex flex-col sm:flex-row gap-0 sm:gap-4 mb-8 sm:mb-16 justify-center'>
+    <p
+      class='mb-8 flex flex-col justify-center gap-0 font-medium text-gray-400 sm:mb-16 sm:flex-row sm:gap-4'
+    >
       <a
-        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='/roadmaps'>Roadmaps</a
       >
       <a
-        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
+        href='/best-practices'>Best Practices</a
+      >
+      <a
+        class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='/guides'>Guides</a
       >
       <a
-        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='/videos'>Videos</a
       >
       <a
-        class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='/about'>About</a
+        target='_blank'
+        rel='noopener noreferrer nofollow'
+        class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
+        href='https://cottonbureau.com/people/roadmapsh'>Store</a
       >
       <a
-        class='transition-colors px-2 py-1.5 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
+        class='px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='https://youtube.com/theroadmap?sub_confirmation=1'
         target='_blank'>YouTube</a
       >
     </p>
 
-    <div class='flex flex-col sm:flex-row justify-between gap-12'>
+    <div class='flex flex-col justify-between gap-12 sm:flex-row'>
       <div class='max-w-[365px]'>
-        <p class='flex items-center text-md'>
+        <p class='text-md flex items-center'>
           <a
-            class='font-medium text-lg inline-flex items-center text-white transition-colors hover:text-gray-400'
+            class='inline-flex items-center text-lg font-medium text-white transition-colors hover:text-gray-400'
             href='/'
           >
             <Icon icon='logo' />
             <span class='ml-2'>roadmap.sh</span>
           </a>
-          <span class='text-gray-400 mx-2'>by</span>
+          <span class='mx-2 text-gray-400'>by</span>
           <a
-            class='bg-blue-600 text-sm py-1 px-1.5 font-regular hover:bg-blue-700 rounded-md'
+            class='font-regular rounded-md bg-blue-600 px-1.5 py-1 text-sm hover:bg-blue-700'
             href='https://twitter.com/intent/user?screen_name=kamrify'
             target='_blank'
           >
@@ -48,11 +56,11 @@ import Icon from './AstroIcon.astro';
             <span class='inline sm:hidden'>Kamran Ahmed</span>
           </a>
         </p>
-        <p class='text-slate-300/60 my-4'>
-          Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your
-          career.
+        <p class='my-4 text-slate-300/60'>
+          Community created roadmaps, articles, resources and journeys to help
+          you choose your path and grow in your career.
         </p>
-        <div class='text-gray-400 text-sm'>
+        <div class='text-sm text-gray-400'>
           <p>
             &copy; roadmap.sh
             <span class='mx-1.5'>&middot;</span>
@@ -65,21 +73,21 @@ import Icon from './AstroIcon.astro';
         </div>
       </div>
 
-      <div class='text-left sm:text-right max-w-[365px]'>
+      <div class='max-w-[365px] text-left sm:text-right'>
         <a href='https://thenewstack.io' target='_blank'>
           <img
             src='/images/tns-sm.png'
             alt='ThewNewStack'
-            class='my-1.5 mr-auto sm:mr-0 sm:ml-auto'
+            class='my-1.5 mr-auto sm:ml-auto sm:mr-0'
             width='200'
             height='24.8'
           />
         </a>
-        <p class='text-slate-300/60 my-4'>
-          The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development,
-          deployment, and management.
+        <p class='my-4 text-slate-300/60'>
+          The leading DevOps resource for Kubernetes, cloud-native computing,
+          and the latest in at-scale development, deployment, and management.
         </p>
-        <div class='text-gray-400 text-sm'>
+        <div class='text-sm text-gray-400'>
           <p>
             <a
               href='https://thenewstack.io/category/devops?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'

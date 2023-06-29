@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { BestPracticeTopicFileType, getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
+import { BestPracticeTopicFileType,getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getAllBestPracticeTopicFiles();

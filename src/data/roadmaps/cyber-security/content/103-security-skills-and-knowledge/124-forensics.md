@@ -18,3 +18,5 @@ Professionals working in digital forensics need a solid understanding of various
 - Effective communication abilities to convey technical findings to non-technical stakeholders
 
 Overall, digital forensics is a crucial component of cybersecurity as it helps organizations respond effectively to cyber attacks, identify vulnerabilities, and take appropriate steps to safeguard their digital assets.
+
+- [Introduction to Digital Forensics (TryHackMe)](https://tryhackme.com/room/introdigitalforensics)

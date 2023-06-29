@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
-import {TOKEN_COOKIE_NAME} from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 export default function ResetPasswordForm() {
   const [code, setCode] = useState('');
@@ -53,7 +53,10 @@ export default function ResetPasswordForm() {
     }
 
     const token = response.token;
-    Cookies.set(TOKEN_COOKIE_NAME, token);
+    Cookies.set(TOKEN_COOKIE_NAME, token, {
+      path: '/',
+      expires: 30,
+    });
     window.location.href = '/';
   };
 

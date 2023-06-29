@@ -57,7 +57,10 @@ export function GoogleButton(props: GoogleButtonProps) {
 
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
         localStorage.removeItem(GOOGLE_LAST_PAGE);
-        Cookies.set(TOKEN_COOKIE_NAME, response.token);
+        Cookies.set(TOKEN_COOKIE_NAME, response.token, {
+          path: '/',
+          expires: 30,
+        });
         window.location.href = redirectUrl;
       })
       .catch((err) => {

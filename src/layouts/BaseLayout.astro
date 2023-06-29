@@ -1,6 +1,8 @@
 ---
 import Analytics from '../components/Analytics/Analytics.astro';
+import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
+import { CommandMenu } from '../components/CommandMenu/CommandMenu';
 import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
@@ -38,9 +40,7 @@ const {
 
 // Remove trailing slashes to consider the page as canonical
 const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
-
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
-
 const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
   import.meta.env.GITHUB_SHA
 }`;
@@ -150,6 +150,8 @@ const gaPageIdentifier = Astro.url.pathname
     </slot>
 
     <Authenticator />
+    <LoginPopup />
+    <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <PageSponsor
       gaPageIdentifier={briefTitle || gaPageIdentifier}

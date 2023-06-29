@@ -47,6 +47,7 @@ seo:
     - 'frontend developer quiz'
     - 'frontend developer interview questions'
 relatedRoadmaps:
+  - 'full-stack'
   - 'javascript'
   - 'nodejs'
   - 'react'

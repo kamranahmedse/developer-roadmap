@@ -26,3 +26,5 @@ To enhance user decision-making experience, consider the following principles:
 - **Defaults**: Use smart defaults to help users make decisions in a context-appropriate manner, which could range from pre-filled forms to suggested options.
 
 Understanding human decision making and incorporating these principles into UX design will enable designers to create more intuitive, enjoyable, and efficient user experiences.
+
+- [Types of Cognitive Bias](https://www.youtube.com/watch?v=wewgbir_riw)

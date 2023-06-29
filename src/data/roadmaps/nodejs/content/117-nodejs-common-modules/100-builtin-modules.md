@@ -17,7 +17,7 @@ Built-in modules are already installed with `Node.js`, so you don't need to inst
 - **crypto**: to handle OpenSSL cryptographic functions.
 - **Buffer**: provides APIs to handling streams of binary data.
 - **DNS**: enables name resolution.
-- **events**: for handling existing events and creating custon events.
+- **events**: for handling existing events and creating custom events.
 - **child_processes**: provides the ability to spawn subprocesses.
 - **REPL**: provides a Read-Eval-Print-Loop (REPL) implementation that is available both as a standalone program or includible in other applications.
 - **readline**: provides an interface for reading data from a Readable stream one line at a time.

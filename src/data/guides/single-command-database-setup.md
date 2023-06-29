@@ -8,7 +8,7 @@ author:
 seo:
   title: 'Single Command Database Setup - roadmap.sh'
   description: 'Learn how to run MySQL, PostgreSQL, or MongoDB in Docker with single Command'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2023-02-27
 sitemap:

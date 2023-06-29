@@ -30,15 +30,17 @@ Roadmaps are now interactive, you can click the nodes to read more about the top
 
 Here is the list of available roadmaps with more being actively worked upon.
 
-- [Frontend Roadmap](https://roadmap.sh/frontend)
+- [Frontend Roadmap](https://roadmap.sh/frontend) / [Frontend Beginner Roadmap](https://roadmap.sh/frontend?r=frontend-beginner)
 - [Backend Roadmap](https://roadmap.sh/backend)
-- [DevOps Roadmap](https://roadmap.sh/devops)
+- [DevOps Roadmap](https://roadmap.sh/devops) / [DevOps Beginner Roadmap](https://roadmap.sh/devops?r=devops-beginner)
+- [Full Stack Roadmap](https://roadmap.sh/full-stack)
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [TypeScript Roadmap](https://roadmap.sh/typescript)
+- [C++ Roadmap](https://roadmap.sh/cpp)
 - [React Roadmap](https://roadmap.sh/react)
 - [Vue Roadmap](https://roadmap.sh/vue)
 - [Angular Roadmap](https://roadmap.sh/angular)
@@ -60,6 +62,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [MongoDB Roadmap](https://roadmap.sh/mongodb)
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 - [Docker Roadmap](https://roadmap.sh/docker)
+- [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 
 We have also added a new form of visual content covering best practices:
 

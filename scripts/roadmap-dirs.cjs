@@ -84,8 +84,9 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
 
 const roadmap = require(path.join(
   __dirname,
-  `../public/jsons/roadmaps/${roadmapId}`
+  `../src/data/roadmaps/${roadmapId}/${roadmapId}`
 ));
+
 const controls = roadmap.mockup.controls.control;
 
 // Prepare the dir tree that we will be creating and also calculate the sort orders

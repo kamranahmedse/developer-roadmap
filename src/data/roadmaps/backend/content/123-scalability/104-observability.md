@@ -1,6 +1,6 @@
 # Observability
 
-In sofware development, observability is the measure of how well we can understand a system from the work it does, and how to make it better.
+In software development, observability is the measure of how well we can understand a system from the work it does, and how to make it better.
 
 So what makes a system to be "observable"? It is its ability of producing and collecting metrics, logs and traces in order for us to understand what happens under the hood and identify issues and bottlenecks faster.
 

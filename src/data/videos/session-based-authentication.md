@@ -2,7 +2,7 @@
 title: 'Session Based Authentication'
 description: 'Learn everything you need to know about session authentication'
 duration: '2 minutes'
-isNew: true
+isNew: false
 date: 2022-11-02
 author:
   name: 'Kamran Ahmed'

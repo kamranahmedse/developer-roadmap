@@ -26,7 +26,10 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
 
     // Log the user in and reload the page
     if (response?.token) {
-      Cookies.set(TOKEN_COOKIE_NAME, response.token);
+      Cookies.set(TOKEN_COOKIE_NAME, response.token, {
+        path: '/',
+        expires: 30,
+      });
       window.location.reload();
 
       return;

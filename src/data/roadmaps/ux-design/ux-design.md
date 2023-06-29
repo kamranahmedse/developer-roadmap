@@ -6,7 +6,7 @@ briefTitle: 'UX Design'
 briefDescription: 'Step by step guide to becoming a UX Designer in 2023'
 title: 'UX Design'
 description: 'Step by step guide to becoming a UX Designer in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

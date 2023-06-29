@@ -13,3 +13,5 @@ Block Scope: A block is any part of JavaScript code bounded by '{}'. Variables d
 Visit the following resources to learn more:
 
 - [JavaScript Scope](https://www.w3schools.com/js/js_scope.asp)
+- [javascript scope](https://wesbos.com/javascript/03-the-tricky-bits/scope)
+- [Understanding Global Local Function Block Scope](https://www.youtube.com/watch?v=_e96w6ivhng)

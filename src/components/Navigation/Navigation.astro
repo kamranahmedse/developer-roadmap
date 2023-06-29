@@ -5,9 +5,12 @@ import AccountDropdown from './AccountDropdown.astro';
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
-    <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
+    <a
+      class='flex items-center text-lg font-medium text-white'
+      href='/'
+      aria-label='roadmap.sh'
+    >
       <Icon icon='logo' />
-      <span class='ml-3 hidden md:block'>roadmap.sh</span>
     </a>
 
     <!-- Desktop navigation items -->
@@ -20,11 +23,20 @@ import AccountDropdown from './AccountDropdown.astro';
           >Best Practices</a
         >
       </li>
-      <li>
-        <a href='/guides' class='hidden lg:inline text-gray-400 hover:text-white'>Guides</a>
+      <li class='hidden lg:inline'>
+        <a href='/guides' class='text-gray-400 hover:text-white'>Guides</a>
+      </li>
+      <li class='hidden lg:inline'>
+        <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
       <li>
-        <a href='/videos' class='hidden lg:inline text-gray-400 hover:text-white'>Videos</a>
+        <kbd
+          data-command-menu
+          class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 sm:flex'
+        >
+          <Icon icon='search' class='mr-2 h-3 w-3' />
+          <kbd class='mr-1 font-sans'>⌘</kbd><kbd class='font-sans'>K</kbd>
+        </kbd>
       </li>
     </ul>
     <ul class='hidden h-8 w-[172px] items-center justify-end gap-5 sm:flex'>
@@ -92,11 +104,8 @@ import AccountDropdown from './AccountDropdown.astro';
 
         <!-- Links for logged in users -->
         <li data-auth-required class='hidden'>
-          <a
-            href='/settings/update-profile'
-            class='text-xl hover:text-blue-300 md:text-lg'
-          >
-            Settings
+          <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
+            Account
           </a>
         </li>
         <li data-auth-required class='hidden'>
@@ -110,7 +119,7 @@ import AccountDropdown from './AccountDropdown.astro';
         <li>
           <a
             data-guest-required
-            href='/signup'
+            href='/login'
             class='hidden text-xl text-white md:text-lg'
           >
             Login

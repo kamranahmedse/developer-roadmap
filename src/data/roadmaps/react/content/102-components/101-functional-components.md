@@ -4,8 +4,7 @@ Functional components are some of the more common components that will come acro
 
 Visit the following resources to learn more:
 
-- [Components and Props](https://reactjs.org/docs/components-and-props.html#function-and-class-components)
+- [Functional Components and Props](https://react.dev/reference/react/component)
 - [Your first component](https://react.dev/learn/your-first-component)
 - [Passing props to a component](https://react.dev/learn/passing-props-to-a-component)
-- [Functional Components in React (1)](https://www.geeksforgeeks.org/reactjs-functional-components/)
-- [Functional Components in React (2)](https://www.robinwieruch.de/react-function-component/)
+- [Functional Components in React](https://www.robinwieruch.de/react-function-component/)

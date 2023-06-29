@@ -7,7 +7,7 @@ briefDescription: 'Everything you need to learn about TypeScript in 2023'
 title: 'TypeScript'
 description: 'Everything you need to learn about TypeScript in 2023'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 1884.38

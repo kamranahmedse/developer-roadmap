@@ -2,7 +2,6 @@ import type { PageSponsorType } from '../components/PageSponsor';
 import type { MarkdownFileType } from './file';
 
 export interface RoadmapFrontmatter {
-  jsonUrl: string;
   pdfUrl: string;
   order: number;
   briefTitle: string;
