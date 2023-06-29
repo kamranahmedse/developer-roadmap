@@ -4,7 +4,7 @@ Factorial complexity algorithms have a runtime of `O(n!)`. This is the worst cas
 
 ```python
 def factorial(n):
-    if n == 1:
+    if n == 0:
         return 1
     sum=0
     for i in range(n):
