@@ -4,7 +4,7 @@ Before you can start programming in C++, you will need to have a compiler instal
 ### Windows
 For Windows, one popular option is to install the [Microsoft Visual Studio IDE](https://visualstudio.microsoft.com/vs/), which includes the Microsoft Visual C++ compiler.
 
-Alternatively, you can also install the [MinGW-w64](https://mingw-w64.org/doku.php) compiler, which is a Windows port of the GNU Compiler Collection (GCC). To install MinGW-w64, follow these steps:
+Alternatively, you can also install the [MinGW-w64](https://mingw-w64.org/) compiler, which is a Windows port of the GNU Compiler Collection (GCC). To install MinGW-w64, follow these steps:
 
 - Download the installer from [here](https://sourceforge.net/projects/mingw-w64/files/).
 - Run the installer and select your desired architecture, version, and install location.
