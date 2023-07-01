@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [HTML Best Practices – How to Build a Better HTML-Based Website](https://www.freecodecamp.org/news/html-best-practices/)
 - [Semantic HTML: What It Is and How It Improves Your Site](https://blog.hubspot.com/website/semantic-html)
 - [Semantic Markup](https://html.com/semantic-markup)
+- [Semantic HTML - web.dev](https://web.dev/learn/html/semantic-html/)

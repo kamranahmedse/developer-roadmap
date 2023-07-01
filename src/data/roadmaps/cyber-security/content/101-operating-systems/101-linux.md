@@ -31,3 +31,6 @@ While Linux is inherently secure, there are best practices to enhance your syste
 - Implement a Security-Enhanced Linux (SELinux) policy: SELinux provides a mandatory access control (MAC) system that restricts user and process access to system resources.
 
 By understanding Linux's features and best practices, you can leverage its powerful capabilities and robust security features to enhance your computing environment's performance and safety.
+
+- [Learn Linux](https://linuxjourney.com/)
+- [Introduction to Linux](https://youtu.be/sWbUDq4S6Y8)

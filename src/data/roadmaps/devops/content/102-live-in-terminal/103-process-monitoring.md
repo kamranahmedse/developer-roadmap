@@ -26,12 +26,8 @@ htop is a cross-platform ncurses-based process. It is similar to top, but allows
 - [htop Documentation](https://www.man7.org/linux/man-pages/man1/htop.1.html)
 - [htop Cheat Sheet](https://www.maketecheasier.com/power-user-guide-htop/)
 
-The top program periodically displays a sorted list of system processes. The default sorting key is pid, but other keys can be used instead. Various output options are available.
-
-- [top Documentation](https://man7.org/linux/man-pages/man1/top.1.html)
-- [top Cheat Sheet](https://gist.github.com/ericandrewlewis/4983670c508b2f6b181703df43438c37)
-
 Lsof lists on its standard output file information about files opened by processes.
 
 - [lsof Cheat Sheet](https://neverendingsecurity.wordpress.com/2015/04/13/lsof-commands-cheatsheet/)
 - [lsof Documentation](https://man7.org/linux/man-pages/man8/lsof.8.html)
+- [Linux Crash Course - The lsof Command](https://www.youtube.com/watch?v=n9nZ1ellaV0)

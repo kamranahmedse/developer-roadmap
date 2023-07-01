@@ -61,5 +61,5 @@ updateDays(30); // expiresInDays = 30
 
 Note that, when using the capture by reference, any change made to the captured variable *inside* the lambda function will affect its value in the surrounding scope.
 
-- [Lambdas in C++](https://youtu.be/mwgmbbz0y8c)
+- [Lambdas in C++](https://youtu.be/MH8mLFqj-n8)
 - [Lambda Expressions](https://en.cppreference.com/w/cpp/language/lambda)

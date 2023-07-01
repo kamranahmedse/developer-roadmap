@@ -9,3 +9,4 @@ Visit the following resources to learn more:
 - [Interactive HTML Course](https://github.com/denysdovhan/learnyouhtml)
 - [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
 - [HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+- [HTML and CSS Full Course - Beginner To Pro](https://www.youtube.com/watch?v=g3e-cpl7ofc)

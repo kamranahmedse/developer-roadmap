@@ -18,6 +18,10 @@
   }
 }
 
+svg {
+  user-select: none;
+}
+
 blockquote p:before {
   display: none;
 }
@@ -62,4 +66,22 @@ a > code:before {
       hsla(0, 0%, 0%, 0.025) 10px
     )
     hsla(203, 11%, 95%, 0.4);
+}
+
+.striped-loader {
+  background-image: repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 5px,
+          hsla(0, 0%, 0%, 0.025) 5px,
+          hsla(0, 0%, 0%, 0.025) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
+@keyframes barberpole {
+  100% {
+    background-position: 100% 100%;
+  }
 }

@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [Learn the ways of Linux-fu, for free](https://linuxjourney.com/)
 - [Linux Operating System - Crash Course for Beginners](https://www.youtube.com/watch?v=ROjZy1WbCIA)
 - [The Linux Command Line by William Shotts](https://linuxcommand.org/tlcl.php)
+- [r/linuxupskillchallenge](https://www.reddit.com/r/linuxupskillchallenge/)

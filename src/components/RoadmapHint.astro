@@ -1,5 +1,8 @@
 ---
+import { ClearProgress } from './Activity/ClearProgress';
+import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
+import ResourceProgressStats from './ResourceProgressStats.astro';
 
 export interface Props {
   roadmapId: string;
@@ -41,37 +44,5 @@ const roadmapTitle =
     )
   }
 
-  <!-- Desktop: Roadmap Resources - Alert -->
-  <div
-    class:list={[
-      'hidden sm:flex justify-between px-2 bg-white items-center',
-      {
-        'rounded-bl-md rounded-br-md': hasTNSBanner,
-        'rounded-md': !hasTNSBanner,
-      },
-    ]}
-  >
-    <p class='text-sm'>
-      <span
-        class='mr-0.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900'
-        >New</span
-      >
-      Track your progress and learn by clicking roadmap items.
-    </p>
-
-    <a
-      href={`/${roadmapId}/topics`}
-      class='inline-flex items-center justify-center rounded-md px-1 py-1.5 text-sm font-medium text-gray-500 hover:text-black'
-    >
-      <Icon icon='search' />
-      <span class='ml-2'>Search Topics</span>
-    </a>
-  </div>
-
-  <!-- Mobile - Roadmap resources alert -->
-  <p
-    class='relative block rounded-md border border-yellow-500 bg-white px-2 py-1.5 text-sm text-yellow-700 sm:hidden'
-  >
-    Track your progress and learn about the topics by clicking the roadmap items.
-  </p>
+  <ResourceProgressStats isSecondaryBanner={hasTNSBanner} />
 </div>

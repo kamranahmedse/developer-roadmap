@@ -2,13 +2,19 @@ import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { httpPost } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
+  refreshProgressCounters,
   renderResourceProgress,
+  renderTopicProgress,
+  ResourceProgressType,
   ResourceType,
+  updateResourceProgress,
 } from '../../lib/resource-progress';
+import { pageProgressMessage } from '../../stores/page';
+import { showLoginPopup } from '../../lib/popup';
 
 export class Renderer {
   resourceId: string;
-  resourceType: string;
+  resourceType: ResourceType | string;
   jsonUrl: string;
   loaderHTML: string | null;
 
@@ -28,8 +34,10 @@ export class Renderer {
     this.onDOMLoaded = this.onDOMLoaded.bind(this);
     this.jsonToSvg = this.jsonToSvg.bind(this);
     this.handleSvgClick = this.handleSvgClick.bind(this);
+    this.handleSvgRightClick = this.handleSvgRightClick.bind(this);
     this.prepareConfig = this.prepareConfig.bind(this);
     this.switchRoadmap = this.switchRoadmap.bind(this);
+    this.updateTopicStatus = this.updateTopicStatus.bind(this);
   }
 
   get loaderEl() {
@@ -161,6 +169,53 @@ export class Renderer {
     this.jsonToSvg(newJsonUrl)?.then(() => {});
   }
 
+  updateTopicStatus(topicId: string, newStatus: ResourceProgressType) {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
+    pageProgressMessage.set('Updating progress');
+    updateResourceProgress(
+      {
+        resourceId: this.resourceId,
+        resourceType: this.resourceType as ResourceType,
+        topicId,
+      },
+      newStatus
+    )
+      .then(() => {
+        renderTopicProgress(topicId, newStatus);
+        refreshProgressCounters();
+      })
+      .catch((err) => {
+        alert('Something went wrong, please try again.');
+        console.error(err);
+      })
+      .finally(() => {
+        pageProgressMessage.set('');
+      });
+
+    return;
+  }
+
+  handleSvgRightClick(e: any) {
+    const targetGroup = e.target?.closest('g') || {};
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
+    }
+
+    e.preventDefault();
+
+    const isCurrentStatusDone = targetGroup.classList.contains('done');
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+    this.updateTopicStatus(
+        normalizedGroupId,
+        !isCurrentStatusDone ? 'done' : 'pending'
+      );
+  }
+
   handleSvgClick(e: any) {
     const targetGroup = e.target?.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
@@ -209,6 +264,28 @@ export class Renderer {
     // Remove sorting prefix from groupId
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
 
+    const isCurrentStatusLearning = targetGroup.classList.contains('learning');
+    const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
+
+    if (e.shiftKey) {
+      e.preventDefault();
+      this.updateTopicStatus(
+        normalizedGroupId,
+        !isCurrentStatusLearning ? 'learning' : 'pending'
+      );
+      return;
+    }
+
+    if (e.altKey) {
+      e.preventDefault();
+      this.updateTopicStatus(
+        normalizedGroupId,
+        !isCurrentStatusSkipped ? 'skipped' : 'pending'
+      );
+
+      return;
+    }
+
     window.dispatchEvent(
       new CustomEvent(`${this.resourceType}.topic.click`, {
         detail: {
@@ -223,7 +300,7 @@ export class Renderer {
   init() {
     window.addEventListener('DOMContentLoaded', this.onDOMLoaded);
     window.addEventListener('click', this.handleSvgClick);
-    // window.addEventListener('contextmenu', this.handleSvgClick);
+    window.addEventListener('contextmenu', this.handleSvgRightClick);
   }
 }
 
