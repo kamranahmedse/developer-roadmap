@@ -3,23 +3,23 @@ lockfileVersion: 5.4
 specifiers:
   '@astrojs/preact': ^2.2.1
   '@astrojs/sitemap': ^1.3.3
-  '@astrojs/tailwind': ^3.1.3
+  '@astrojs/tailwind': ^4.0.0
   '@fingerprintjs/fingerprintjs': ^3.4.1
   '@nanostores/preact': ^0.5.0
   '@playwright/test': ^1.35.1
   '@tailwindcss/typography': ^0.5.9
   '@types/js-cookie': ^3.0.3
-  astro: ^2.6.6
-  astro-compress: ^1.1.47
+  astro: ^2.7.2
+  astro-compress: ^1.1.48
   csv-parser: ^3.0.0
   gh-pages: ^5.0.0
   jose: ^4.14.4
   js-cookie: ^3.0.5
   js-yaml: ^4.1.0
   markdown-it: ^13.0.1
-  nanostores: ^0.9.2
+  nanostores: ^0.9.3
   node-html-parser: ^6.1.5
-  npm-check-updates: ^16.10.12
+  npm-check-updates: ^16.10.13
   openai: ^3.3.0
   preact: ^10.15.1
   prettier: ^2.8.8
@@ -32,16 +32,16 @@ specifiers:
 dependencies:
   '@astrojs/preact': 2.2.1_preact@10.15.1
   '@astrojs/sitemap': 1.3.3
-  '@astrojs/tailwind': 3.1.3_nqn7iohbkhifv3v6vivhcsj3ue
+  '@astrojs/tailwind': 4.0.0_a3qnhxzemyxr5osg4jfemvtwdm
   '@fingerprintjs/fingerprintjs': 3.4.1
-  '@nanostores/preact': 0.5.0_goi3tttstrh6kq4nibjxbyzyja
-  astro: 2.6.6
-  astro-compress: 1.1.47
+  '@nanostores/preact': 0.5.0_tmit4cngkqvi52v5urzblk5j6u
+  astro: 2.7.2
+  astro-compress: 1.1.48
   jose: 4.14.4
   js-cookie: 3.0.5
-  nanostores: 0.9.2
+  nanostores: 0.9.3
   node-html-parser: 6.1.5
-  npm-check-updates: 16.10.12
+  npm-check-updates: 16.10.13
   preact: 10.15.1
   rehype-external-links: 2.1.0
   roadmap-renderer: 1.0.6
@@ -77,8 +77,8 @@ packages:
   /@astrojs/compiler/1.5.1:
     resolution: {integrity: sha512-iIGKu/uzB8sJ5VveQf0eHrVPPFEcrvSlp4qShYMOuY2aMmK2RVXQlX9dUjtmBQ+NAokfIOb7fwCutvH+p13l+g==}
 
-  /@astrojs/internal-helpers/0.1.0:
-    resolution: {integrity: sha512-OSwvoFkTqVowiyP+codQeQZWoq/HOwY32x17NxDglWoCx2sdyXzplDZoVV4/3odmSEY6/A+48WMl5qkjmP1CXw==}
+  /@astrojs/internal-helpers/0.1.1:
+    resolution: {integrity: sha512-+LySbvFbjv2nO2m/e78suleQOGEru4Cnx73VsZbrQgB2u7A4ddsQg3P2T0zC0e10jgcT+c6nNlKeLpa6nRhQIg==}
     dev: false
 
   /@astrojs/language-server/1.0.8:
@@ -100,13 +100,13 @@ packages:
       vscode-uri: 3.0.7
     dev: false
 
-  /@astrojs/markdown-remark/2.2.1_astro@2.6.6:
+  /@astrojs/markdown-remark/2.2.1_astro@2.7.2:
     resolution: {integrity: sha512-VF0HRv4GpC1XEMLnsKf6jth7JSmlt9qpqP0josQgA2eSpCIAC/Et+y94mgdBIZVBYH/yFnMoIxgKVe93xfO2GA==}
     peerDependencies:
       astro: ^2.5.0
     dependencies:
       '@astrojs/prism': 2.1.2
-      astro: 2.6.6
+      astro: 2.7.2
       github-slugger: 1.5.0
       import-meta-resolve: 2.2.2
       rehype-raw: 6.1.1
@@ -153,14 +153,13 @@ packages:
       zod: 3.21.4
     dev: false
 
-  /@astrojs/tailwind/3.1.3_nqn7iohbkhifv3v6vivhcsj3ue:
-    resolution: {integrity: sha512-10S1omrv5K5HRVAZ0fBgN5vQykn2HRL332LAVFyBASMn1Ff6gDfSK+CPUeUu94eZUOEaPnECLK8EHAqZ8iY9CA==}
+  /@astrojs/tailwind/4.0.0_a3qnhxzemyxr5osg4jfemvtwdm:
+    resolution: {integrity: sha512-HmCAXFFes7MUBt5ihdfH1goa8QyGkHejIpz6Z4XBKK9VNYY9G2E3brCn8+pNn5zAOzcwl3FYcuH2AiOa/NGoMQ==}
     peerDependencies:
-      astro: ^2.5.0
+      astro: ^2.6.5
       tailwindcss: ^3.0.24
     dependencies:
-      '@proload/core': 0.3.3
-      astro: 2.6.6
+      astro: 2.7.2
       autoprefixer: 10.4.14_postcss@8.4.24
       postcss: 8.4.24
       postcss-load-config: 4.0.1_postcss@8.4.24
@@ -696,18 +695,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.0
       '@jridgewell/sourcemap-codec': 1.4.14
 
-  /@ljharb/has-package-exports-patterns/0.0.2:
-    resolution: {integrity: sha512-4/RWEeXDO6bocPONheFe6gX/oQdP/bEpv0oL4HqjPP5DCenBSt0mHgahppY49N0CpsaqffdwPq+TlX9CYOq2Dw==}
-    dev: false
-
-  /@nanostores/preact/0.5.0_goi3tttstrh6kq4nibjxbyzyja:
+  /@nanostores/preact/0.5.0_tmit4cngkqvi52v5urzblk5j6u:
     resolution: {integrity: sha512-Zq5DEAY+kIfwJ1NPd43D1mpsbISuiD6N/SuTHrt/8jUoifLwXaReaZMAnvkvbIGOgcB1Hy++A9jZix2taNNYxQ==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     peerDependencies:
       nanostores: ^0.9.0
       preact: '>=10.0.0'
     dependencies:
-      nanostores: 0.9.2
+      nanostores: 0.9.3
       preact: 10.15.1
     dev: false
 
@@ -733,7 +728,7 @@ packages:
     resolution: {integrity: sha512-7kZUAaLscfgbwBQRbvdMYaZOWyMEcPTH/tJjnyAWJ/dvvs9Ef+CERx/qJb9GExJpl1qipaDGn7KqHnFGGixd0w==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /@npmcli/git/4.1.0:
@@ -746,7 +741,7 @@ packages:
       proc-log: 3.0.0
       promise-inflight: 1.0.1
       promise-retry: 2.0.1
-      semver: 7.5.2
+      semver: 7.5.3
       which: 3.0.1
     transitivePeerDependencies:
       - bluebird
@@ -848,13 +843,6 @@ packages:
     dependencies:
       '@preact/signals-core': 1.3.0
       preact: 10.15.1
-    dev: false
-
-  /@proload/core/0.3.3:
-    resolution: {integrity: sha512-7dAFWsIK84C90AMl24+N/ProHKm4iw0akcnoKjRvbfHifJZBLhaDsDus1QJmhG12lXj4e/uB/8mB/0aduCW+NQ==}
-    dependencies:
-      deepmerge: 4.3.1
-      escalade: 3.1.1
     dev: false
 
   /@sigstore/protobuf-specs/0.1.0:
@@ -1179,8 +1167,8 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /astro-compress/1.1.47:
-    resolution: {integrity: sha512-UBhhDfZffcPVdDFA4v42G68BdcNL6ZlYoXZdHTappiLWDvZPlhRmK6iuwya3SAGl4La4kqKCfNSqwKbG3agdBQ==}
+  /astro-compress/1.1.48:
+    resolution: {integrity: sha512-oQVCAcJ0/A+8iX1l8ozrpkCZKihX+1tPAJ1cKTqAHpljMNqgVYJsR3b3rw05U9KFsYOF2sNugKoFM0OLu5fZdg==}
     dependencies:
       '@types/csso': 5.0.0
       '@types/html-minifier-terser': 7.0.0
@@ -1189,11 +1177,11 @@ packages:
       html-minifier-terser: 7.2.0
       sharp: 0.32.1
       svgo: 3.0.2
-      terser: 5.17.7
+      terser: 5.18.2
     dev: false
 
-  /astro/2.6.6:
-    resolution: {integrity: sha512-npeTXVaSOWKYYF6Znj6Yfxfq+WIFZ9u/Q+vtFP3nXbl7/XimvE+LbmWoK+hPFBOXC/KRLHxqQSltXJX5ALFmFg==}
+  /astro/2.7.2:
+    resolution: {integrity: sha512-2+vjXeVGU04aecs0mm93Qx9KdeVDw4OTeBIijs2Z+QLoe4RUYZnkqx5gR70VNfnoMdXoPp7+wB+ARcb0+ee/yg==}
     engines: {node: '>=16.12.0', npm: '>=6.14.0'}
     hasBin: true
     peerDependencies:
@@ -1203,9 +1191,9 @@ packages:
         optional: true
     dependencies:
       '@astrojs/compiler': 1.5.1
-      '@astrojs/internal-helpers': 0.1.0
+      '@astrojs/internal-helpers': 0.1.1
       '@astrojs/language-server': 1.0.8
-      '@astrojs/markdown-remark': 2.2.1_astro@2.6.6
+      '@astrojs/markdown-remark': 2.2.1_astro@2.7.2
       '@astrojs/telemetry': 2.1.1
       '@astrojs/webapi': 2.2.0
       '@babel/core': 7.22.5
@@ -1244,13 +1232,11 @@ packages:
       preferred-pm: 3.0.3
       prompts: 2.4.2
       rehype: 12.0.1
-      semver: 7.5.2
+      semver: 7.5.3
       server-destroy: 1.0.1
       shiki: 0.14.2
-      slash: 4.0.0
       string-width: 5.1.2
       strip-ansi: 7.1.0
-      supports-esm: 1.0.0
       tsconfig-resolver: 3.0.1
       typescript: 5.1.3
       unist-util-visit: 4.1.2
@@ -1437,7 +1423,7 @@ packages:
   /builtins/5.0.1:
     resolution: {integrity: sha512-qwVpFEHNfhYJIzNRBvd2C1kyo6jz3ZSMPyyuR47OPdiKWlbYnZNyDWuyR175qDnAJLiCo5fBBqPb3RiXgWlkOQ==}
     dependencies:
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /bundle-name/3.0.0:
@@ -1840,11 +1826,6 @@ packages:
   /deepmerge-ts/5.1.0:
     resolution: {integrity: sha512-eS8dRJOckyo9maw9Tu5O5RUi/4inFLrnoLkBe3cPfDMx3WZioXtmOew4TXQaxq7Rhl4xjDtR7c6x8nNTxOvbFw==}
     engines: {node: '>=16.0.0'}
-    dev: false
-
-  /deepmerge/4.3.1:
-    resolution: {integrity: sha512-3sUqbMEc77XqpdNO7FRyRog+eW3ph+GYCbj+rK+uYyRMuwsVy0rMiVtPn+QJlKFvWP/1PYpapqYn0Me2knFn+A==}
-    engines: {node: '>=0.10.0'}
     dev: false
 
   /default-browser-id/3.0.0:
@@ -2533,12 +2514,6 @@ packages:
     engines: {node: '>=8'}
     dev: false
 
-  /has-package-exports/1.3.0:
-    resolution: {integrity: sha512-e9OeXPQnmPhYoJ63lXC4wWe34TxEGZDZ3OQX9XRqp2VwsfLl3bQBy7VehLnd34g3ef8CmYlBLGqEMKXuz8YazQ==}
-    dependencies:
-      '@ljharb/has-package-exports-patterns': 0.0.2
-    dev: false
-
   /has-unicode/2.0.1:
     resolution: {integrity: sha512-8Rf9Y83NBReMnx0gFzA8JImQACstCYWUplepDa9xprwwtmgEZUF0h/i5xSA625zB/I37EtrswSST6OXxwaaIJQ==}
     dev: false
@@ -2670,7 +2645,7 @@ packages:
       entities: 4.5.0
       param-case: 3.0.4
       relateurl: 0.2.7
-      terser: 5.17.7
+      terser: 5.18.2
     dev: false
 
   /html-void-elements/2.0.1:
@@ -3805,8 +3780,8 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-  /nanostores/0.9.2:
-    resolution: {integrity: sha512-wfKlqLGtOYV9+qzGveqDOSWZUBgTeMr/g+JzfV/GofXQ//0wp0cgHF+QBVlmNH/JW9YA9QN+vR6N0vpniPpARA==}
+  /nanostores/0.9.3:
+    resolution: {integrity: sha512-KobZjcVyNndNrb5DAjfs0WG0lRcZu5Q1BOrfTOxokFLi25zFrWPjg+joXC6kuDqNfSt9fQwppyjUBkRPtsL+8w==}
     engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
     dev: false
 
@@ -3836,7 +3811,7 @@ packages:
     resolution: {integrity: sha512-iwXuFrMAcFVi/ZoZiqq8BzAdsLw9kxDfTC0HMyjXfSL/6CSDAGD5UmR7azrAgWV1zKYq7dUUMj4owusBWKLsiQ==}
     engines: {node: '>=10'}
     dependencies:
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /node-addon-api/6.1.0:
@@ -3856,7 +3831,7 @@ packages:
       nopt: 6.0.0
       npmlog: 6.0.2
       rimraf: 3.0.2
-      semver: 7.5.2
+      semver: 7.5.3
       tar: 6.1.15
       which: 2.0.2
     transitivePeerDependencies:
@@ -3888,7 +3863,7 @@ packages:
     dependencies:
       hosted-git-info: 6.1.1
       is-core-module: 2.12.1
-      semver: 7.5.2
+      semver: 7.5.3
       validate-npm-package-license: 3.0.4
     dev: false
 
@@ -3913,8 +3888,8 @@ packages:
       npm-normalize-package-bin: 3.0.1
     dev: false
 
-  /npm-check-updates/16.10.12:
-    resolution: {integrity: sha512-js/Gg9+5RTyOQZnmFcPswLxf4sK/H5AE/8bl4tkleLJTC1gXhQqqELUFwXqppNvx488aXxN52ZY9k9MSSvEW2A==}
+  /npm-check-updates/16.10.13:
+    resolution: {integrity: sha512-ZsWrtHnaMkcxAaCtDFEr8i7jgM0Bz2AYsnsJlmxISgltG8ie43bWC6G9icxFKfYSLeJJtcj/Yw1Mq5f8GL2F3g==}
     engines: {node: '>=14.14'}
     hasBin: true
     dependencies:
@@ -3957,7 +3932,7 @@ packages:
     resolution: {integrity: sha512-dH3GmQL4vsPtld59cOn8uY0iOqRmqKvV+DLGwNXV/Q7MDgD2QfOADWd/mFXcIE5LVhYYGjA3baz6W9JneqnuCw==}
     engines: {node: ^14.17.0 || ^16.13.0 || >=18.0.0}
     dependencies:
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /npm-normalize-package-bin/3.0.1:
@@ -3971,7 +3946,7 @@ packages:
     dependencies:
       hosted-git-info: 6.1.1
       proc-log: 3.0.0
-      semver: 7.5.2
+      semver: 7.5.3
       validate-npm-package-name: 5.0.0
     dev: false
 
@@ -3989,7 +3964,7 @@ packages:
       npm-install-checks: 6.1.1
       npm-normalize-package-bin: 3.0.1
       npm-package-arg: 10.1.0
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /npm-registry-fetch/14.0.5:
@@ -4161,7 +4136,7 @@ packages:
       got: 12.6.1
       registry-auth-token: 5.0.2
       registry-url: 6.0.1
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /pacote/15.1.1:
@@ -4920,7 +4895,7 @@ packages:
     resolution: {integrity: sha512-0Ju4+6A8iOnpL/Thra7dZsSlOHYAHIeMxfhWQRI1/VLcT3WDBZKKtQt/QkBOsiIN9ZpuvHE6cGZ0x4glCMmfiA==}
     engines: {node: '>=12'}
     dependencies:
-      semver: 7.5.2
+      semver: 7.5.3
     dev: false
 
   /semver-utils/1.1.4:
@@ -4933,6 +4908,14 @@ packages:
 
   /semver/7.5.2:
     resolution: {integrity: sha512-SoftuTROv/cRjCze/scjGyiDtcUyxw1rgYQSZY7XTmtR5hX+dm76iDbTH8TkLPHCQmlbQVSSbNZCPM2hb0knnQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+    dependencies:
+      lru-cache: 6.0.0
+    dev: false
+
+  /semver/7.5.3:
+    resolution: {integrity: sha512-QBlUtyVk/5EeHbi7X0fw6liDZc7BBmEaSYn01fMU1OUYbf6GPsbTtd8WmnqbI20SeycoHSeiybkE/q1Q+qlThQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -4956,7 +4939,7 @@ packages:
       detect-libc: 2.0.1
       node-addon-api: 6.1.0
       prebuild-install: 7.1.1
-      semver: 7.5.2
+      semver: 7.5.3
       simple-get: 4.0.1
       tar-fs: 2.1.1
       tunnel-agent: 0.6.0
@@ -5041,11 +5024,6 @@ packages:
   /slash/3.0.0:
     resolution: {integrity: sha512-g9Q1haeby36OSStwb4ntCGGGaKsaVSjQ68fBxoQcutl5fS1vuY18H3wSt3jFyFtrkx+Kz0V1G85A4MyAdDMi2Q==}
     engines: {node: '>=8'}
-    dev: false
-
-  /slash/4.0.0:
-    resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
-    engines: {node: '>=12'}
     dev: false
 
   /smart-buffer/4.2.0:
@@ -5263,12 +5241,6 @@ packages:
       has-flag: 4.0.0
     dev: false
 
-  /supports-esm/1.0.0:
-    resolution: {integrity: sha512-96Am8CDqUaC0I2+C/swJ0yEvM8ZnGn4unoers/LSdE4umhX7mELzqyLzx3HnZAluq5PXIsGMKqa7NkqaeHMPcg==}
-    dependencies:
-      has-package-exports: 1.3.0
-    dev: false
-
   /supports-preserve-symlinks-flag/1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
@@ -5357,8 +5329,8 @@ packages:
       yallist: 4.0.0
     dev: false
 
-  /terser/5.17.7:
-    resolution: {integrity: sha512-/bi0Zm2C6VAexlGgLlVxA0P2lru/sdLyfCVaRMfKVo9nWxbmz7f/sD8VPybPeSUJaJcwmCJis9pBIhcVcG1QcQ==}
+  /terser/5.18.2:
+    resolution: {integrity: sha512-Ah19JS86ypbJzTzvUCX7KOsEIhDaRONungA4aYBjEP3JZRf4ocuDzTg4QWZnPn9DEMiMYGJPiSOy7aykoCc70w==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
@@ -5606,7 +5578,7 @@ packages:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.1.0
-      semver: 7.5.2
+      semver: 7.5.3
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
     dev: false
