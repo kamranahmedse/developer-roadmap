@@ -1,11 +1,13 @@
 ---
 import AstroIcon from './AstroIcon.astro';
+import { TeamSidebar } from './TeamSidebar';
 
-const { activePageId, activePageTitle } = Astro.props;
+const { activePageId, activePageTitle, type = 'account' } = Astro.props;
 
 export interface Props {
   activePageId: string;
   activePageTitle: string;
+  type?: 'team' | 'account';
 }
 
 const sidebarLinks = [
@@ -132,7 +134,15 @@ const sidebarLinks = [
   </aside>
   <!-- /End Desktop Sidebar -->
 
-  <div class='grow px-0 py-0 md:px-10 md:py-10'>
+  <div
+    class:list={[
+      'grow',
+      type === 'account' && 'px-0 py-0 md:px-10 md:py-10',
+      type === 'team' && '',
+    ]}
+  >
+    <TeamSidebar />
+
     <slot />
   </div>
 </div>
