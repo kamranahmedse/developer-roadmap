@@ -14156,6 +14156,440 @@
             "size": "18",
             "text": "version listing learning tips and ideas."
           }
+        },
+        {
+          "ID": "1233",
+          "typeID": "Canvas",
+          "zOrder": "256",
+          "w": "420",
+          "h": "275",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "162",
+          "y": "367"
+        },
+        {
+          "ID": "1234",
+          "typeID": "Label",
+          "zOrder": "257",
+          "measuredW": "175",
+          "measuredH": "28",
+          "x": "188",
+          "y": "396",
+          "properties": {
+            "size": "20",
+            "text": "Related Roadmaps"
+          }
+        },
+        {
+          "ID": "1235",
+          "typeID": "__group__",
+          "zOrder": "258",
+          "measuredW": "212",
+          "measuredH": "27",
+          "w": "212",
+          "h": "27",
+          "x": "190",
+          "y": "440",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/kubernetes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "179",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "Kubernetes Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1236",
+          "typeID": "__group__",
+          "zOrder": "259",
+          "measuredW": "176",
+          "measuredH": "27",
+          "w": "176",
+          "h": "27",
+          "x": "190",
+          "y": "476",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/docker"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "143",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "Docker Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1237",
+          "typeID": "__group__",
+          "zOrder": "260",
+          "measuredW": "173",
+          "measuredH": "27",
+          "w": "173",
+          "h": "27",
+          "x": "190",
+          "y": "512",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "140",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "Python Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1238",
+          "typeID": "__group__",
+          "zOrder": "261",
+          "measuredW": "189",
+          "measuredH": "27",
+          "w": "189",
+          "h": "27",
+          "x": "190",
+          "y": "548",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "156",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "Backend Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1239",
+          "typeID": "__group__",
+          "zOrder": "262",
+          "measuredW": "194",
+          "measuredH": "27",
+          "w": "194",
+          "h": "27",
+          "x": "190",
+          "y": "585",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "161",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "AWS Best Practices"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
         }
       ]
     },
