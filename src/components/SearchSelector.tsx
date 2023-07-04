@@ -65,7 +65,9 @@ export function SearchSelector({
               canGoPrev ? activeCounter - 1 : searchResults.length - 1
             );
           } else if (e.key === 'Tab') {
-            e.preventDefault();
+            if (isActive) {
+              e.preventDefault();
+            }
           } else if (e.key === 'Escape') {
             setSearchedText('');
             setIsActive(false);
@@ -95,9 +97,8 @@ export function SearchSelector({
                 <>
                   <button
                     type="button"
-                    class={`flex w-full items-center rounded p-2 text-sm ${
-                      counter === activeCounter ? 'bg-gray-200' : ''
-                    }`}
+                    class={`flex w-full items-center rounded p-2 text-sm ${counter === activeCounter ? 'bg-gray-200' : ''
+                      }`}
                     onMouseOver={() => setActiveCounter(counter)}
                     onClick={() => {
                       onSelect(result);
