@@ -41,3 +41,4 @@ To protect yourself and your devices, follow these best practices:
 By understanding the potential security risks associated with WiFi connections and following these best practices, you can enjoy the convenience, flexibility, and mobility of WiFi while ensuring a secure browsing experience.
 
 - [Wireless Networks - Howstuffworks](https://computer.howstuffworks.com/wireless-network.htm)
+- [That's How Wi-Fi Works](https://youtu.be/hePLDVbULZc)

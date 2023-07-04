@@ -10,6 +10,4 @@ The main benefits of using TypeScript include:
 - Backwards Compatibility
 
 Learn more from the following links:
-
-- [Overview of TypeScript](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
-- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/typescript-from-scratch.html)
+- [TypeScript Handbook](https://www.typescriptlang.org/docs/handbook/intro.html)

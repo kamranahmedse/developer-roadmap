@@ -65,9 +65,8 @@ export function MarkFavorite({
         },
       })
     );
-    window.dispatchEvent(new CustomEvent('refresh-favorites', {}));
 
-    setIsFavorite(!isFavorite);
+    window.dispatchEvent(new CustomEvent('refresh-favorites', {}));
     setIsLoading(false);
   }
 

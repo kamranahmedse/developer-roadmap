@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 - [Composition vs Inheritance](https://reactjs.org/docs/composition-vs-inheritance.html)
 - [How to perform component composition in React](https://www.robinwieruch.de/react-component-composition/)
 - [Achieving Reusability With React Composition](https://formidable.com/blog/2021/react-composition/)
+- [Passing JSX as children](https://react.dev/learn/passing-props-to-a-component#passing-jsx-as-children)
