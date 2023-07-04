@@ -10,7 +10,7 @@ import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 
-type PageType = {
+export type PageType = {
   url: string;
   title: string;
   group: string;
@@ -178,9 +178,8 @@ export function CommandMenu() {
                       <div class="border-b border-gray-100"></div>
                     )}
                     <a
-                      class={`flex w-full items-center rounded p-2 text-sm ${
-                        counter === activeCounter ? 'bg-gray-100' : ''
-                      }`}
+                      class={`flex w-full items-center rounded p-2 text-sm ${counter === activeCounter ? 'bg-gray-100' : ''
+                        }`}
                       onMouseOver={() => setActiveCounter(counter)}
                       href={page.url}
                     >

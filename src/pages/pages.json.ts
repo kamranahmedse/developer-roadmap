@@ -12,21 +12,25 @@ export async function get() {
   return {
     body: JSON.stringify([
       ...roadmaps.map((roadmap) => ({
+        id: roadmap.id,
         url: `/${roadmap.id}`,
         title: roadmap.frontmatter.briefTitle,
         group: 'Roadmaps',
       })),
       ...bestPractices.map((bestPractice) => ({
+        id: bestPractice.id,
         url: `/best-practices/${bestPractice.id}`,
         title: bestPractice.frontmatter.briefTitle,
         group: 'Best Practices',
       })),
       ...guides.map((guide) => ({
+        id: guide.id,
         url: `/guides/${guide.id}`,
         title: guide.frontmatter.title,
         group: 'Guides',
       })),
       ...videos.map((guide) => ({
+        id: guide.id,
         url: `/videos/${guide.id}`,
         title: guide.frontmatter.title,
         group: 'Videos',

@@ -94,6 +94,7 @@ const sidebarLinks = [
 <div class='container flex min-h-screen items-stretch'>
   <!-- Start Desktop Sidebar -->
   <aside class='hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block'>
+    <a href='/team/create-team'>Create Team</a>
     <nav>
       <ul class='space-y-1'>
         {
@@ -138,11 +139,10 @@ const sidebarLinks = [
     class:list={[
       'grow',
       type === 'account' && 'px-0 py-0 md:px-10 md:py-10',
-      type === 'team' && '',
+      type === 'team' && 'flex w-full',
     ]}
   >
-    <TeamSidebar />
-
+    {type === 'team' && <TeamSidebar />}
     <slot />
   </div>
 </div>
