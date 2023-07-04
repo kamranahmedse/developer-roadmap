@@ -33,7 +33,7 @@ function showHideGuestElements(hideOrShow: 'hide' | 'show' = 'hide') {
 function handleGuest() {
   const authenticatedRoutes = [
     '/account/update-profile',
-    '/account/update-password',
+    '/account/settings',
     '/account/road-card',
     '/account',
   ];
