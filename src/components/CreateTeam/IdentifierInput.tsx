@@ -1,5 +1,6 @@
 import { useState } from 'preact/hooks';
 import { httpGet } from '../../lib/http';
+import slugify from 'slugify';
 
 export function IdentiferInput({
   value,
@@ -53,11 +54,13 @@ export function IdentiferInput({
         value={value}
         onInput={(e) => {
           setMessage('');
-          onChange((e.target as HTMLInputElement).value);
+          const value = (e.target as HTMLInputElement).value;
+          onChange(slugify(value));
         }}
-        onBlur={(e) =>
-          checkUniqueIdentifier((e.target as HTMLInputElement).value)
-        }
+        onBlur={(e) => {
+          const value = (e.target as HTMLInputElement).value;
+          checkUniqueIdentifier(slugify(value));
+        }}
       />
 
       {value && (
@@ -67,9 +70,8 @@ export function IdentiferInput({
           )}
           {!isLoading && message && (
             <div
-              className={`mt-2 text-xs ${
-                isUniqueIdentifier ? 'text-green-500' : 'text-red-500'
-              }`}
+              className={`mt-2 text-xs ${isUniqueIdentifier ? 'text-green-500' : 'text-red-500'
+                }`}
             >
               {message}
             </div>
