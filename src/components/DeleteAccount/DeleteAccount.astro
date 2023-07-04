@@ -1,0 +1,16 @@
+---
+import DeleteAccountPopup from "./DeleteAccountPopup.astro";
+---
+<DeleteAccountPopup />
+
+<h2 class='text-xl font-bold sm:text-2xl'>Delete Account</h2>
+<p class='mt-2 text-gray-400'>
+  Permanently remove your account from the roadmap.sh. This cannot be undone and all your progress and data will be lost.
+</p>
+
+<button
+  data-popup='delete-account-popup'
+  class="mt-4 w-full rounded-lg bg-red-600 py-2 text-base font-regular text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+>
+  Delete Account
+</button>

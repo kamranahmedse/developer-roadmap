@@ -1,22 +1,23 @@
-import { useState } from 'preact/hooks';
-import Cookies from 'js-cookie';
+import {useEffect, useState} from 'preact/hooks';
 import { httpDelete } from '../../lib/http';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
-import { hideDeleteAccountPopup } from './DeleteAccount';
-
-const DELETE_ACCOUNT_VERIFICATION = 'delete my account';
+import { logout } from '../Navigation/navigation';
 
 export function DeleteAccountForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [deleteAccount, setDeleteAccount] = useState('');
+  const [confirmationText, setConfirmationText] = useState('');
+
+  useEffect(() => {
+    setError('');
+    setConfirmationText('');
+  }, [])
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
 
-    if (deleteAccount !== DELETE_ACCOUNT_VERIFICATION) {
+    if (confirmationText.toUpperCase() !== 'DELETE') {
       setError('Verification text does not match');
       setIsLoading(false);
       return;
@@ -32,38 +33,33 @@ export function DeleteAccountForm() {
       return;
     }
 
-    Cookies.remove(TOKEN_COOKIE_NAME);
-    window.location.href = '/';
+    logout();
   };
 
   const handleClosePopup = () => {
     setIsLoading(false);
     setError('');
-    setDeleteAccount('');
+    setConfirmationText('');
 
-    hideDeleteAccountPopup();
+    const deleteAccountPopup = document.getElementById('delete-account-popup');
+    deleteAccountPopup?.classList.add('hidden');
+    deleteAccountPopup?.classList.remove('flex');
   };
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="delete-account" className="text-sm text-gray-500">
-          To verify, type{' '}
-          <span className="font-medium text-gray-600">
-            {DELETE_ACCOUNT_VERIFICATION}
-          </span>{' '}
-          below:
-        </label>
+      <div className="my-4">
         <input
           type="text"
           name="delete-account"
           id="delete-account"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+          className="mt-2 block w-full rounded-md border border-gray-300 py-2 px-3 outline-none placeholder:text-gray-400 focus:border-gray-400"
+          placeholder={'Type "delete" to confirm'}
           required
           autoFocus
-          value={deleteAccount}
+          value={confirmationText}
           onInput={(e) =>
-            setDeleteAccount((e.target as HTMLInputElement).value)
+            setConfirmationText((e.target as HTMLInputElement).value)
           }
         />
         {error && (
@@ -71,21 +67,21 @@ export function DeleteAccountForm() {
         )}
       </div>
 
-      <div className="mt-6 flex items-center justify-between gap-2">
+      <div className="flex items-center gap-2">
         <button
           type="button"
           disabled={isLoading}
           onClick={handleClosePopup}
-          className="flex h-10 items-center justify-center rounded-md bg-gray-100 px-4 py-2 text-sm font-medium text-black shadow-sm hover:bg-gray-100/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-200 disabled:pointer-events-none disabled:opacity-50"
+          className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
         >
           Cancel
         </button>
         <button
           type="submit"
-          disabled={isLoading}
-          className="flex h-10 items-center justify-center rounded-md bg-red-500 px-4 py-2 text-sm font-medium text-white shadow-sm hover:bg-red-500/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-200 disabled:pointer-events-none disabled:opacity-50"
+          disabled={isLoading || confirmationText.toUpperCase() !== 'DELETE'}
+          className="flex-grow cursor-pointer rounded-lg bg-red-500 py-2 text-white disabled:opacity-40"
         >
-          {isLoading ? 'Please wait...' : 'Delete Account'}
+          {isLoading ? 'Please wait ..' : 'Confirm'}
         </button>
       </div>
     </form>

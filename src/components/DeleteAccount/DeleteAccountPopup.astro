@@ -3,22 +3,15 @@ import Popup from '../Popup/Popup.astro';
 import { DeleteAccountForm } from './DeleteAccountForm';
 ---
 
-<Popup id='delete-account-popup' title='' subtitle=''>
+<Popup id='delete-account-popup' title='Delete Account' subtitle=''>
   <div class='-mt-2.5'>
-    <h2 class='mb-3 text-2xl font-semibold leading-5 text-gray-900'>
-      Delete Account
-    </h2>
-    <p class='text-sm text-gray-600'>
-      Deleting your account will remove all your data from our servers
-      (including your progress).
-    </p>
-    <p class='rounded-md bg-yellow-300 p-2 text-xs text-yellow-800 mt-6'>
-      <span class='font-medium'>Warning:</span> This action is not reversible. Please
-      be certain.
+    <p>
+      This will permanently delete your account and all your associated data
+      including your progress.
     </p>
 
-    <div class='mt-6 flex flex-col gap-1.5'>
-      <DeleteAccountForm client:load />
-    </div>
+    <p class="text-black font-medium -mb-2 mt-3 text-base">Please type "delete" to confirm.</p>
+
+    <DeleteAccountForm client:only />
   </div>
 </Popup>

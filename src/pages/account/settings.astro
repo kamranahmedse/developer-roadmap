@@ -2,8 +2,7 @@
 import AccountSidebar from '../../components/AccountSidebar.astro';
 import UpdatePasswordForm from '../../components/UpdatePassword/UpdatePasswordForm';
 import AccountLayout from '../../layouts/AccountLayout.astro';
-import { DeleteAccount } from '../../components/DeleteAccount/DeleteAccount';
-import DeleteAccountPopup from '../../components/DeleteAccount/DeleteAccountPopup.astro';
+import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
 ---
 
 <AccountLayout
@@ -14,9 +13,7 @@ import DeleteAccountPopup from '../../components/DeleteAccount/DeleteAccountPopu
 >
   <AccountSidebar activePageId='settings' activePageTitle='Settings'>
     <UpdatePasswordForm client:load />
-    <hr class='my-10' />
-    <DeleteAccount client:load />
+    <hr class='my-8' />
+    <DeleteAccount />
   </AccountSidebar>
-
-  <DeleteAccountPopup />
 </AccountLayout>
