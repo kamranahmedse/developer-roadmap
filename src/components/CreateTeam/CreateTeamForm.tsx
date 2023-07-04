@@ -2,19 +2,40 @@ import { useState } from 'preact/hooks';
 import { IdentiferInput } from './IdentifierInput';
 import { ResourceSelector } from './ResourceSelector';
 import type { SelectorDataType } from '../SearchSelector';
+import { httpPost } from '../../lib/http';
 
 export function CreateTeamForm() {
   const [name, setName] = useState('');
   const [website, setWebsite] = useState('');
-  const [type, setType] = useState<'company' | 'learning_club'>();
+  const [type, setType] = useState<'company' | 'learning_club'>('company');
   const [identifier, setIdentifier] = useState('');
   const [roadmaps, setRoadmaps] = useState<SelectorDataType[]>([]);
   const [bestPractices, setBestPractices] = useState<SelectorDataType[]>([]);
 
-  console.log(roadmaps);
+  const handleSubmit = async (e: Event) => {
+    e.preventDefault();
+    const { response, error } = await httpPost(
+      `${import.meta.env.PUBLIC_API_URL}/v1-create-team`, {
+      name,
+      website,
+      type,
+      identifier,
+      roadmapIds: roadmaps.map((r) => r.id),
+      bestPracticeIds: bestPractices.map((r) => r.id),
+    })
+
+    if (error) {
+      console.error(error);
+      return;
+    }
+
+    if (response) {
+      console.log(response);
+    }
+  };
 
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <div className="flex w-full flex-col">
         <label for="name" className="text-sm leading-none text-slate-500">
           Name
