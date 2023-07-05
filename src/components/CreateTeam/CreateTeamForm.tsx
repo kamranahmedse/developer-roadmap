@@ -22,6 +22,7 @@ export function CreateTeamForm() {
       website,
       type,
       identifier,
+      ...(type === 'company' && { teamSize }),
       roadmapIds: roadmaps.map((r) => r.id),
       bestPracticeIds: bestPractices.map((r) => r.id),
     })

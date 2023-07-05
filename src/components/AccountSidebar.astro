@@ -1,8 +1,9 @@
 ---
 import AstroIcon from './AstroIcon.astro';
 import { TeamSidebar } from './TeamSidebar';
+import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 
-const { activePageId, activePageTitle, type = 'account' } = Astro.props;
+const { activePageId, activePageTitle } = Astro.props;
 
 export interface Props {
   activePageId: string;
@@ -94,7 +95,8 @@ const sidebarLinks = [
 <div class='container flex min-h-screen items-stretch'>
   <!-- Start Desktop Sidebar -->
   <aside class='hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block'>
-    <a href='/team/create-team'>Create Team</a>
+    <TeamDropdown client:load />
+    <hr class='my-4' />
     <nav>
       <ul class='space-y-1'>
         {
@@ -135,14 +137,7 @@ const sidebarLinks = [
   </aside>
   <!-- /End Desktop Sidebar -->
 
-  <div
-    class:list={[
-      'grow',
-      type === 'account' && 'px-0 py-0 md:px-10 md:py-10',
-      type === 'team' && 'flex w-full',
-    ]}
-  >
-    {type === 'team' && <TeamSidebar />}
+  <div class='grow px-0 py-0 md:px-10 md:py-10'>
     <slot />
   </div>
 </div>
