@@ -41,7 +41,7 @@ export function IdentiferInput({
 
   return (
     <div className="mt-4 flex w-full flex-col">
-      <label for="identifier" className="text-sm leading-none text-slate-500">
+      <label for="identifier" className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'>
         Identifier
       </label>
       <input
