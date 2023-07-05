@@ -23,8 +23,8 @@ export function CreateTeamForm() {
       type,
       identifier,
       ...(type === 'company' && { teamSize }),
-      roadmapIds: roadmaps.map((r) => r.id),
-      bestPracticeIds: bestPractices.map((r) => r.id),
+      roadmapIds: roadmaps.map((r) => r.id).join(','),
+      bestPracticeIds: bestPractices.map((r) => r.id).join(','),
     })
 
     if (error) {

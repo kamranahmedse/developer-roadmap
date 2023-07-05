@@ -10,13 +10,13 @@ export interface TeamDocument {
   website?: string;
   type: 'company' | 'learning_club';
   teamSize?:
-    | '0-1'
-    | '2-10'
-    | '11-50'
-    | '51-200'
-    | '201-500'
-    | '501-1000'
-    | '1000+';
+  | '0-1'
+  | '2-10'
+  | '11-50'
+  | '51-200'
+  | '201-500'
+  | '501-1000'
+  | '1000+';
   identifier: string;
   roadmapIds?: string[];
   bestPracticeIds?: string[];
@@ -46,9 +46,9 @@ export function TeamDropdown() {
   }, []);
 
   return (
-    <div className="relative">
+    <div className="relative mr-2">
       <button
-        className="flex w-full cursor-pointer items-center justify-between rounded-l border border-r-0 p-2 text-sm hover:bg-gray-100"
+        className="flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
         onClick={() => setShowDropdown(!showDropdown)}
       >
         <span>
