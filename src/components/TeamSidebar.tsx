@@ -1,6 +1,6 @@
-import { useEffect, useState } from 'preact/hooks';
-import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 import type { FunctionalComponent } from 'preact';
+import { TeamDropdown } from './TeamDropdown/TeamDropdown';
+import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
 
 export const TeamSidebar: FunctionalComponent<{
@@ -37,7 +37,7 @@ export const TeamSidebar: FunctionalComponent<{
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          {/* <AstroIcon icon='dropdown' /> */}
+          <img src={ChevronDown} class="h-4 w-4" />
         </button>
         <ul
           id="settings-menu-dropdown"

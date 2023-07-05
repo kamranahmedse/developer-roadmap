@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 
 export type SelectorDataType = {
   id: string;
@@ -18,6 +18,8 @@ export function SearchSelector({
   searchInputId?: string;
   placeholder?: string;
 }) {
+  const searchInputRef = useRef<HTMLInputElement>(null);
+  const dropdownRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
   const [searchResults, setSearchResults] = useState<SelectorDataType[]>([]);
   const [searchedText, setSearchedText] = useState('');
@@ -25,8 +27,6 @@ export function SearchSelector({
 
   useEffect(() => {
     if (searchedText.length === 0) {
-      setIsActive(false);
-      setSearchResults([]);
       return;
     }
 
@@ -37,14 +37,39 @@ export function SearchSelector({
       })
       .slice(0, 5);
 
-    setIsActive(true);
     setSearchResults(results);
     setActiveCounter(0);
   }, [searchedText]);
 
+  useEffect(() => {
+    setSearchResults(defaultData.slice(0, 5));
+  }, [defaultData])
+
+  useEffect(() => {
+    if (isActive) {
+      const handleOutsideClick = (e: MouseEvent) => {
+        if (
+          dropdownRef.current &&
+          !dropdownRef.current.contains(e.target as Node) &&
+          searchInputRef.current &&
+          !searchInputRef.current.contains(e.target as Node)
+        ) {
+          setIsActive(false);
+        }
+      };
+
+      document.addEventListener('mousedown', handleOutsideClick);
+
+      return () => {
+        document.removeEventListener('mousedown', handleOutsideClick);
+      };
+    }
+  }, [isActive]);
+
   return (
     <div className="relative">
       <input
+        ref={searchInputRef}
         type="text"
         id={searchInputId}
         value={searchedText}
@@ -54,6 +79,9 @@ export function SearchSelector({
         onInput={(e) => {
           const value = (e.target as HTMLInputElement).value.trim();
           setSearchedText(value);
+        }}
+        onFocus={() => {
+          setIsActive(true);
         }}
         onKeyDown={(e) => {
           if (e.key === 'ArrowDown') {
@@ -84,7 +112,10 @@ export function SearchSelector({
       />
 
       {isActive && (
-        <div class="absolute top-14 z-50 w-full rounded-md bg-gray-100 px-2 py-2">
+        <div
+          class="absolute top-full mt-2 z-50 w-full rounded-md bg-gray-100 px-2 py-2"
+          ref={dropdownRef}
+        >
           <div className="flex flex-col">
             {searchResults.length === 0 && (
               <div class="p-5 text-center text-sm text-gray-400">

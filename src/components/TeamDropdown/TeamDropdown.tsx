@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
-import ChevronDown from '../../icons/chevron-down-dark.svg';
+import ChevronDown from '../../icons/dropdown.svg';
 import { httpGet } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
 

@@ -74,7 +74,7 @@ export function ResourceSelector({
             {resources.map((resource) => (
               <div className="flex items-center rounded-md border p-2">
                 <div className="text-sm leading-none text-slate-500">
-                  {resource.id}
+                  {resource.title}
                 </div>
                 <button
                   type="button"
