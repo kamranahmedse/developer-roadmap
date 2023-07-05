@@ -99,7 +99,7 @@ export function CreateTeamForm() {
               required={type === 'company'}
               defaultValue={teamSize}
               onChange={(e) =>
-                setType((e.target as HTMLSelectElement).value as any)
+                setTeamSize((e.target as HTMLSelectElement).value as any)
               }
             >
               <option value="" selected>Select team size</option>
