@@ -1,0 +1,11 @@
+---
+import { TeamSidebar } from '../../../components/TeamSidebar';
+import { TeamSettingsPage } from '../../../components/TeamSettings/TeamSettingsPage';
+import AccountLayout from '../../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout title='Team Settings' noIndex={true}>
+  <TeamSidebar activePageId='settings' client:load>
+    <TeamSettingsPage client:load />
+  </TeamSidebar>
+</AccountLayout>

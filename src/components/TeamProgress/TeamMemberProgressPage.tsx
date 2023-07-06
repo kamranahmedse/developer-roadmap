@@ -3,7 +3,7 @@ import { useParams } from "../../hooks/use-params";
 import { httpGet } from "../../lib/http";
 import type { TeamMember } from "./TeamProgressPage";
 import { ResourceProgress } from "../Activity/ResourceProgress";
-import type { TeamDocument } from "../CreateTeam/CreateTeamForm";
+import type { TeamDocument } from "../CreateTeam/TeamActionForm";
 
 export function TeamMemberProgressPage() {
   const [teamMember, setTeamMember] = useState<TeamMember | null>(null);
@@ -46,7 +46,7 @@ export function TeamMemberProgressPage() {
         <span>{team?.name}</span>/<span>{teamMember?.name}</span>
       </p>
     </div>
-    <div className="mt-6">
+    <div className="mt-6 space-y-3">
       {
         teamMember?.progress.map((progress) => {
           return <ResourceProgress key={progress.resourceId}

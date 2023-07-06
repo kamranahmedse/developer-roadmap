@@ -18,14 +18,24 @@ export interface TeamDocument {
   updatedAt: Date;
 }
 
-export function CreateTeamForm() {
-  const [name, setName] = useState('');
-  const [website, setWebsite] = useState('');
-  const [type, setType] = useState<'company' | 'learning_club'>();
-  const [teamSize, setTeamSize] = useState();
-  const [identifier, setIdentifier] = useState('');
-  const [roadmaps, setRoadmaps] = useState<SelectorDataType[]>([]);
-  const [bestPractices, setBestPractices] = useState<SelectorDataType[]>([]);
+type TeamActionForm = {
+  type: 'create' | 'update';
+  team?: TeamDocument;
+}
+
+export function TeamActionForm({
+  type,
+  team
+}: TeamActionForm) {
+  const [name, setName] = useState(team?.name ?? '');
+  const [website, setWebsite] = useState(team?.website ?? '');
+  const [teamType, setTeamType] = useState<'company' | 'learning_club' | null>(
+    team?.type ?? null
+  );
+  const [teamSize, setTeamSize] = useState(team?.teamSize ?? '');
+  const [identifier, setIdentifier] = useState(team?.identifier ?? '');
+  const [roadmaps, setRoadmaps] = useState<string[]>([]);
+  const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = ["0-1", "2-10", "11-50", "51-200", "201-500", "501-1000", "1000+"]
 
   const handleSubmit = async (e: Event) => {
@@ -36,9 +46,9 @@ export function CreateTeamForm() {
       website,
       type,
       identifier,
-      ...(type === 'company' && { teamSize }),
-      roadmapIds: roadmaps.map((r) => r.id).join(','),
-      bestPracticeIds: bestPractices.map((r) => r.id).join(','),
+      ...(teamType === 'company' && { teamSize }),
+      roadmapIds: roadmaps.join(','),
+      bestPracticeIds: bestPractices.join(','),
     })
 
     if (error) {
@@ -92,7 +102,7 @@ export function CreateTeamForm() {
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           defaultValue={type}
           onChange={(e) =>
-            setType((e.target as HTMLSelectElement).value as any)
+            setTeamType((e.target as HTMLSelectElement).value as any)
           }
         >
           <option value="" selected>Select type</option>
@@ -102,7 +112,7 @@ export function CreateTeamForm() {
       </div>
 
       {
-        type === 'company' && (
+        teamType === 'company' && (
           <div className="mt-4 flex w-full flex-col">
             <label for="team-size" className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'>
               Team size
@@ -111,7 +121,7 @@ export function CreateTeamForm() {
               name="team-size"
               id="team-size"
               className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-              required={type === 'company'}
+              required={teamType === 'company'}
               defaultValue={teamSize}
               onChange={(e) =>
                 setTeamSize((e.target as HTMLSelectElement).value as any)
@@ -129,13 +139,13 @@ export function CreateTeamForm() {
       <IdentiferInput value={identifier} onChange={setIdentifier} />
       <ResourceSelector
         type="Roadmaps"
-        resources={roadmaps}
-        setResources={setRoadmaps}
+        resourcesIds={roadmaps}
+        setResourcesIds={setRoadmaps}
       />
       <ResourceSelector
         type="Best Practices"
-        resources={bestPractices}
-        setResources={setBestPractices}
+        resourcesIds={bestPractices}
+        setResourcesIds={setBestPractices}
       />
 
       <div className="mt-4 flex w-full flex-col">

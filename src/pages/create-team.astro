@@ -1,11 +1,11 @@
 ---
 import AccountSidebar from '../components/AccountSidebar.astro';
 import AccountLayout from '../layouts/AccountLayout.astro';
-import { CreateTeamForm } from '../components/CreateTeam/CreateTeamForm';
+import { TeamActionForm } from '../components/CreateTeam/TeamActionForm';
 ---
 
 <AccountLayout title='Create Team' noIndex={true}>
   <AccountSidebar activePageId='create-team' activePageTitle='Create Team'>
-    <CreateTeamForm client:load />
+    <TeamActionForm type='create' client:load />
   </AccountSidebar>
 </AccountLayout>

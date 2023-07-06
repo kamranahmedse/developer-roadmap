@@ -1,0 +1,17 @@
+---
+import Popup from '../Popup/Popup.astro';
+import { InviteMemberForm } from './InviteMemberForm';
+---
+
+<Popup id='invite-member-popup' title='' subtitle=''>
+  <div>
+    <h2 class='mb-3 text-2xl font-semibold leading-5 text-slate-900'>
+      Invite a member
+    </h2>
+    <p class='mt-2 text-sm leading-4 text-slate-600'>
+      Invite a member to your team by entering their email address below.
+    </p>
+  </div>
+
+  <InviteMemberForm client:only />
+</Popup>

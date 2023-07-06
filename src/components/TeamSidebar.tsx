@@ -50,9 +50,8 @@ export const TeamSidebar: FunctionalComponent<{
               <li>
                 <a
                   href={sidebarLink.href}
-                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
-                    isActive ? 'bg-slate-100' : ''
-                  }`}
+                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${isActive ? 'bg-slate-100' : ''
+                    }`}
                 >
                   {sidebarLink.title}
                 </a>
@@ -75,11 +74,10 @@ export const TeamSidebar: FunctionalComponent<{
                   <li>
                     <a
                       href={sidebarLink.href}
-                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${
-                        isActive
-                          ? 'border-r-black bg-gray-100 text-black'
-                          : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
-                      }`}
+                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${isActive
+                        ? 'border-r-black bg-gray-100 text-black'
+                        : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
+                        }`}
                     >
                       <span class="flex flex-grow items-center">
                         {sidebarLink.title}

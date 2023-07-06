@@ -30,6 +30,7 @@ export function SearchSelector({
       return;
     }
 
+    setIsActive(true);
     const normalizedSearchedText = searchedText.trim().toLowerCase();
     const results = defaultData
       .filter((data) => {
@@ -55,6 +56,8 @@ export function SearchSelector({
           !searchInputRef.current.contains(e.target as Node)
         ) {
           setIsActive(false);
+          setSearchedText('');
+          setSearchResults(defaultData.slice(0, 5));
         }
       };
 
@@ -82,6 +85,7 @@ export function SearchSelector({
         }}
         onFocus={() => {
           setIsActive(true);
+          setSearchResults(defaultData.slice(0, 5));
         }}
         onKeyDown={(e) => {
           if (e.key === 'ArrowDown') {

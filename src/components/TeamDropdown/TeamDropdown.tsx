@@ -52,7 +52,7 @@ export function TeamDropdown() {
         onClick={() => setShowDropdown(!showDropdown)}
       >
         <span>
-          {teamList.find((team) => team._id === teamId)?.name || 'Select Team'}
+          {teamList.find((team) => team._id === teamId)?.name || 'Personal Account'}
         </span>
         <img src={ChevronDown} className="h-4 w-4" />
       </button>
@@ -60,6 +60,14 @@ export function TeamDropdown() {
       {showDropdown && (
         <div className="absolute top-full z-50 mt-2 w-full rounded-md bg-slate-800 px-2 py-2 text-white shadow-md">
           <ul>
+            <li>
+              <a
+                className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                href="/account"
+              >
+                Personal Account
+              </a>
+            </li>
             {teamList.map((team) => (
               <li>
                 <a

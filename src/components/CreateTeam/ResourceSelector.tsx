@@ -10,12 +10,12 @@ interface DataType extends PageType {
 
 export function ResourceSelector({
   type,
-  resources,
-  setResources,
+  resourcesIds,
+  setResourcesIds,
 }: {
   type: 'Roadmaps' | 'Best Practices';
-  resources: SelectorDataType[];
-  setResources: (resources: SelectorDataType[]) => void;
+  resourcesIds: string[];
+  setResourcesIds: (resourcesIds: string[]) => void;
 }) {
   const [defaultData, setDefaultData] = useState<SelectorDataType[]>([]);
 
@@ -42,11 +42,11 @@ export function ResourceSelector({
   }
 
   const onSelect = (value: SelectorDataType) => {
-    if (resources.find((resource) => resource.id === value.id)) {
+    if (resourcesIds.includes(value.id)) {
       return;
     }
 
-    setResources([...resources, value]);
+    setResourcesIds([...resourcesIds, value.id]);
   };
 
   useEffect(() => {
@@ -69,22 +69,22 @@ export function ResourceSelector({
           searchInputId={type.replaceAll(' ', '-').toLowerCase()}
           inputClassName="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         />
-        {resources.length > 0 && (
+        {resourcesIds.length > 0 && (
           <div className="mt-4 flex flex-wrap gap-2">
-            {resources.map((resource) => (
+            {resourcesIds.map((resource) => (
               <div className="flex items-center rounded-md border p-2">
                 <div className="text-sm leading-none text-slate-500">
-                  {resource.title}
+                  {defaultData.find((d) => d.id === resource)?.title}
                 </div>
                 <button
                   type="button"
                   className="ml-2"
                   onClick={() => {
-                    const filteredResources = resources.filter(
-                      (r) => r.id !== resource.id
+                    const filteredResources = resourcesIds.filter(
+                      (r) => r !== resource
                     );
 
-                    setResources(filteredResources);
+                    setResourcesIds(filteredResources);
                   }}
                 >
                   <img src={XIcon} alt="Remove" className="h-3 w-3" />
