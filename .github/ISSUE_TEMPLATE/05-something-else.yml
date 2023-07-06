@@ -1,6 +1,6 @@
 name: "🤷‍♂️ ​ ​Something else"
 description: If none of the above templates fit your needs, please use this template to submit your issue.
-labels: [roadmap contribution]
+labels: []
 assignees: []
 body:
   - type: textarea
