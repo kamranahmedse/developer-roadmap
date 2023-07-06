@@ -3,10 +3,6 @@ description: Report an issue or possible bug
 labels: [bug]
 assignees: []
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for taking the time to fill out this bug report! Before you start, please make sure that you could reproduce it in incognito.
   - type: input
     id: url
     attributes:

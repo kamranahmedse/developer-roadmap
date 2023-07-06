@@ -1,0 +1,37 @@
+name: "🙏 Submit a Roadmap"
+description: Help us launch a new roadmap with your expertise.
+labels: [roadmap contribution]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to submit a roadmap! Please fill out the information below and we'll get back to you as soon as we can.
+  - type: input
+    id: roadmap-title
+    attributes:
+      label: What is the title of the roadmap you are submitting?
+      placeholder: https://roadmap.sh
+    validations:
+      required: true
+  - type: dropdown
+    id: browsers
+    attributes:
+      label: Is this roadmap prepared by you or someone else?
+      options:
+        - I prepared this roadmap
+        - I found this roadmap online (please provide a link below)
+  - type: textarea
+    id: roadmap-description
+    attributes:
+      label: Roadmap Items
+      description: Please submit a nested list of items for the roadmap. You can use markdown to format the list. Here is an [example of roadmap items list.](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5).
+      placeholder: |
+          - Item 1
+            - Subitem 1
+            - Subitem 2
+          - Item 2
+            - Subitem 1
+            - Subitem 2
+    validations:
+      required: true
