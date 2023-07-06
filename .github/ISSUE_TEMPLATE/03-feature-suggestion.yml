@@ -3,13 +3,6 @@ description: Is there a feature you'd like to see on Roadmap.sh? Let us know!
 labels: [feature request]
 assignees: []
 body:
-  - type: input
-    id: feature-title
-    attributes:
-      label: Feature Title
-      description: Please provide a short title for the feature you are suggesting.
-    validations:
-      required: true
   - type: textarea
     id: feature-description
     attributes:
