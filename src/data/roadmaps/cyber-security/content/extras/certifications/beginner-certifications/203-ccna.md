@@ -21,3 +21,5 @@ To obtain the CCNA certification, you will need to pass a single exam, currently
 ## Why CCNA?
 
 A CCNA certification can provide you with a solid foundation in networking and open doors to various career opportunities, such as network administrator, network engineer, or security specialist roles. Many employers value CCNA-certified professionals for their validated skills in working with Cisco networking products and their understanding of networking fundamentals. Additionally, attaining a CCNA certification can serve as a stepping stone towards more advanced Cisco certifications, such as the Cisco Certified Network Professional (CCNP) and the Cisco Certified Internetwork Expert (CCIE).
+
+- [Free CCNA 200-301 | Complete Course 2023 by Jeremy's IT Lab](https://www.youtube.com/playlist?list=PLxbwE86jKRgMpuZuLBivzlM8s2Dk5lXBQ)
