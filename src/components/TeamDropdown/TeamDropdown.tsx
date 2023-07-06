@@ -2,27 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import ChevronDown from '../../icons/dropdown.svg';
 import { httpGet } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
-
-export interface TeamDocument {
-  _id?: string;
-  name: string;
-  creatorId: string;
-  website?: string;
-  type: 'company' | 'learning_club';
-  teamSize?:
-  | '0-1'
-  | '2-10'
-  | '11-50'
-  | '51-200'
-  | '201-500'
-  | '501-1000'
-  | '1000+';
-  identifier: string;
-  roadmapIds?: string[];
-  bestPracticeIds?: string[];
-  createdAt: Date;
-  updatedAt: Date;
-}
+import type { TeamDocument } from '../CreateTeam/TeamActionForm';
 
 export function TeamDropdown() {
   const [showDropdown, setShowDropdown] = useState(false);

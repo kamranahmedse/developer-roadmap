@@ -1,8 +1,8 @@
 import { useState } from 'preact/hooks';
 import { IdentiferInput } from './IdentifierInput';
 import { ResourceSelector } from './ResourceSelector';
-import type { SelectorDataType } from '../SearchSelector';
-import { httpPost } from '../../lib/http';
+import { httpPost, httpPut } from '../../lib/http';
+import { Spinner } from '../ReactIcons/Spinner';
 
 export interface TeamDocument {
   _id?: string;
@@ -29,35 +29,64 @@ export function TeamActionForm({
 }: TeamActionForm) {
   const [name, setName] = useState(team?.name ?? '');
   const [website, setWebsite] = useState(team?.website ?? '');
-  const [teamType, setTeamType] = useState<'company' | 'learning_club' | null>(
-    team?.type ?? null
-  );
+  const [teamType, setTeamType] = useState(team?.type ?? '');
   const [teamSize, setTeamSize] = useState(team?.teamSize ?? '');
   const [identifier, setIdentifier] = useState(team?.identifier ?? '');
-  const [roadmaps, setRoadmaps] = useState<string[]>([]);
-  const [bestPractices, setBestPractices] = useState<string[]>([]);
+  const [roadmaps, setRoadmaps] = useState<string[]>(team?.roadmapIds ?? [])
+  const [bestPractices, setBestPractices] = useState<string[]>(team?.bestPracticeIds ?? [])
+  const [isLoading, setIsLoading] = useState(false);
   const validTeamSizes = ["0-1", "2-10", "11-50", "51-200", "201-500", "501-1000", "1000+"]
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
-    const { response, error } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-create-team`, {
-      name,
-      website,
-      type,
-      identifier,
-      ...(teamType === 'company' && { teamSize }),
-      roadmapIds: roadmaps.join(','),
-      bestPracticeIds: bestPractices.join(','),
-    })
-
-    if (error) {
-      console.error(error);
+    setIsLoading(true);
+    if (!name || !teamType || !identifier) {
+      setIsLoading(false);
       return;
     }
 
-    if (response) {
-      console.log(response);
+    if (type === 'create') {
+      const { response, error } = await httpPost(
+        `${import.meta.env.PUBLIC_API_URL}/v1-create-team`, {
+        name,
+        website,
+        type: teamType,
+        identifier,
+        ...(teamType === 'company' && { teamSize }),
+        roadmapIds: roadmaps.join(','),
+        bestPracticeIds: bestPractices.join(','),
+      })
+
+      if (error) {
+        console.error(error);
+        setIsLoading(false);
+        return;
+      }
+
+      if (response) {
+        window.location.href = `/team/progress?teamId=${response._id}`;
+      }
+    } else if (type === 'update') {
+      const { response, error } = await httpPut(
+        `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team?._id}`, {
+        name,
+        website,
+        type: teamType,
+        identifier,
+        ...(teamType === 'company' && { teamSize }),
+        roadmapIds: roadmaps.join(','),
+        bestPracticeIds: bestPractices.join(','),
+      })
+
+      if (error) {
+        setIsLoading(false);
+        console.error(error);
+        return;
+      }
+
+      if (response) {
+        window.location.href = `/team/progress?teamId=${team?._id}`;
+      }
     }
   };
 
@@ -100,7 +129,7 @@ export function TeamActionForm({
           name="type"
           id="type"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          defaultValue={type}
+          value={teamType}
           onChange={(e) =>
             setTeamType((e.target as HTMLSelectElement).value as any)
           }
@@ -122,7 +151,7 @@ export function TeamActionForm({
               id="team-size"
               className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
               required={teamType === 'company'}
-              defaultValue={teamSize}
+              value={teamSize}
               onChange={(e) =>
                 setTeamSize((e.target as HTMLSelectElement).value as any)
               }
@@ -153,7 +182,7 @@ export function TeamActionForm({
           type="submit"
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          Create
+          {isLoading ? <Spinner /> : type === 'create' ? 'Create' : 'Update'}
         </button>
       </div>
     </form >
