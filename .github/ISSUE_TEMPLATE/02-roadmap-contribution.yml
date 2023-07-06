@@ -1,4 +1,4 @@
-name: "🙏 Submit a Roadmap"
+name: "🙏 ​ ​ Submit a Roadmap"
 description: Help us launch a new roadmap with your expertise.
 labels: [roadmap contribution]
 assignees: []
@@ -11,7 +11,7 @@ body:
     id: roadmap-title
     attributes:
       label: What is the title of the roadmap you are submitting?
-      placeholder: https://roadmap.sh
+      placeholder: e.g. Roadmap to learn Data Science
     validations:
       required: true
   - type: dropdown
@@ -25,7 +25,7 @@ body:
     id: roadmap-description
     attributes:
       label: Roadmap Items
-      description: Please submit a nested list of items for the roadmap. You can use markdown to format the list. Here is an [example of roadmap items list.](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5).
+      description: Please submit a nested list of items which we can convert into the visual. Here is an [example of roadmap items list.](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5).
       placeholder: |
           - Item 1
             - Subitem 1
