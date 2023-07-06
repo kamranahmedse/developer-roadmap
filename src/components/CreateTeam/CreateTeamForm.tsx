@@ -4,6 +4,20 @@ import { ResourceSelector } from './ResourceSelector';
 import type { SelectorDataType } from '../SearchSelector';
 import { httpPost } from '../../lib/http';
 
+export interface TeamDocument {
+  _id?: string;
+  name: string;
+  creatorId: string;
+  website?: string;
+  type: "company" | "learning_club";
+  teamSize?: "0-1" | "2-10" | "11-50" | "51-200" | "201-500" | "501-1000" | "1000+";
+  identifier: string;
+  roadmapIds?: string[];
+  bestPracticeIds?: string[];
+  createdAt: Date;
+  updatedAt: Date;
+}
+
 export function CreateTeamForm() {
   const [name, setName] = useState('');
   const [website, setWebsite] = useState('');

@@ -13,7 +13,7 @@ export type UserProgress = {
   total: number;
   updatedAt: string;
 };
-type TeamMember = {
+export type TeamMember = {
   _id: string;
   role: string;
   name: string;
@@ -49,7 +49,11 @@ export function TeamProgressPage() {
     {
       teamMembers.map(member => {
         return (
-          <div className="border p-4 rounded-md" key={member._id}>
+          <a
+            className="border p-4 rounded-md hover:bg-gray-50"
+            key={member._id}
+            href={`/team/progress/member?teamId=${teamId}&memberId=${member._id}`}
+          >
             {
               member.progress.map(progress => {
                 return (
@@ -61,7 +65,7 @@ export function TeamProgressPage() {
                       {/* Progress bar */}
                       <div className="grow relative rounded overflow-hidden">
                         <div className="h-2 bg-gray-100 w-full" />
-                        <div style={{ width: `${progress.done / progress.total * 100}%` }} className="absolute top-0 left-0 h-full bg-gray-400 w-full" />
+                        <div style={{ width: `${progress.done / progress.total * 100}% ` }} className="absolute top-0 left-0 h-full bg-gray-400 w-full" />
                       </div>
                       <span className="text-xs text-gray-500">
                         {progress.done} / {progress.total}
@@ -74,7 +78,7 @@ export function TeamProgressPage() {
             <div className="mt-3">
               {member.name}
             </div>
-          </div>
+          </a>
         )
       })
     }

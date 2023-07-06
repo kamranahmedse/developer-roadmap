@@ -1,0 +1,11 @@
+---
+import { TeamSidebar } from '../../../components/TeamSidebar';
+import { TeamMemberProgressPage } from '../../../components/TeamProgress/TeamMemberProgressPage';
+import AccountLayout from '../../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout title='Team Progress' noIndex={true}>
+  <TeamSidebar activePageId='progress' client:load>
+    <TeamMemberProgressPage client:load />
+  </TeamSidebar>
+</AccountLayout>
