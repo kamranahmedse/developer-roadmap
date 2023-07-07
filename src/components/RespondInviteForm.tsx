@@ -9,21 +9,6 @@ export function RespondInviteForm() {
   const [error, setError] = useState('');
   const { inviteId } = useParams<{ inviteId: string }>();
 
-  // async function getInvitation() {
-  //   const { response, error } = await httpGet(
-  //     `${import.meta.env.PUBLIC_API_URL}/v1-get-invitation/${inviteId}`
-  //   );
-  //   if (error || !response) {
-  //     setError(error?.message || 'Something went wrong')
-  //     return;
-  //   }
-
-  //   const teamName = document.getElementById('team-name');
-  //   if (teamName) {
-  //     teamName.innerText = response.name;
-  //   }
-  // }
-
   function showRespondContainer() {
     const respondEl = document.getElementById('respond-invite')!;
     if (!respondEl) {
@@ -54,8 +39,11 @@ export function RespondInviteForm() {
       return;
     }
 
-    console.log(response);
-    setIsLoading(false);
+    if (status === 'reject') {
+      window.location.href = '/';
+      return;
+    }
+    window.location.href = `/team/progress?teamId=${response.teamId}`;
   }
 
   useEffect(() => {
