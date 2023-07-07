@@ -1,5 +1,6 @@
 ---
 import Icon from '../AstroIcon.astro';
+import { NotificationBadge } from './NotificationBadge';
 ---
 
 <div class='relative hidden' data-auth-required>
@@ -41,4 +42,6 @@ import Icon from '../AstroIcon.astro';
       </li>
     </ul>
   </div>
+
+  <NotificationBadge client:load />
 </div>
