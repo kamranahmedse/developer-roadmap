@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { useParams } from '../../hooks/use-params';
 import { httpGet } from '../../lib/http';
+import { MemberActionDropdown } from './MemberActionDropdown';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -57,13 +58,13 @@ export function TeamMembersPage() {
 
         <div className="space-y-2">
           {teamMembers.map((teamMember) => (
-            <div className="grid w-full grid-cols-4 gap-2">
+            <div className="grid w-full grid-cols-4 gap-2 items-center">
               <span className="col-span-2 flex flex-col">
                 <span>{teamMember.name}</span>
                 {teamMember.invitedEmail}
               </span>
               <span>{teamMember.status}</span>
-              <span>Action</span>
+              <MemberActionDropdown member={teamMember} />
             </div>
           ))}
         </div>
