@@ -33,7 +33,7 @@ OpenAI has been a major contributor to this space in the past few years with the
 
 ## Training an LLM Model
 
-On a high level, training an LLM model involves three steps i.e. data collection, training and evaluation. 
+On a high level, training an LLM model involves three steps i.e. data collection, training and evaluation.
 
 - **Data Collection** The first step is to collect the data that will be used to train the model. The data can be collected from various sources such as Wikipedia, news articles, books, websites etc.
 
@@ -63,11 +63,8 @@ Instruction Tuned LLMs = Base LLMs + Further Tuning + RLHF
 
 To build an Instruction Tuned LLM, a Base LLM is taken and is further trained using a large dataset covering sample "Instructions" and how the model should perform as a result of those instructions. The model is then fine-tuned using a technique called "Reinforcement Learning with Human Feedback" (RLHF) which allows the model to learn from human feedback and improve its performance over time.
 
-
 ## Conclusion
 
 LLMs are a powerful tool that can be used to solve a wide range of language-related tasks. They are being used in various industries such as healthcare, finance, education etc. to automate processes and improve efficiency. LLMs have the potential to revolutionize the way we interact with computers and make our lives easier.
 
 And that's it for this guide. We have some exciting AI related content coming up in the next few weeks. Stay tuned!
-
-
