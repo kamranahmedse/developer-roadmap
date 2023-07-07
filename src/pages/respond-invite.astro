@@ -1,0 +1,41 @@
+---
+import AccountLayout from '../layouts/AccountLayout.astro';
+import { RespondInviteForm } from '../components/RespondInviteForm';
+---
+
+<AccountLayout title='Respond Invite' noIndex={true}>
+  <div class='container'>
+    <div
+      class='mx-auto flex flex-col items-start justify-start pb-28 pt-10 sm:max-w-[500px] sm:items-center sm:justify-center sm:pt-20'
+    >
+      <div class='mb-2 text-left sm:mb-5 sm:text-center'>
+        <h1 class='mb-2 text-3xl font-semibold sm:mb-5 sm:text-5xl'>
+          You have an Invitation
+        </h1>
+        <p class='mb-3 text-base leading-6 text-gray-600'>
+          You have been invited to join the team <strong id='team-name'
+            >ACME</strong
+          >.
+        </p>
+      </div>
+
+      <div class='mx-auto w-full sm:max-w-md transition-opacity duration-500' id='respond-invite'>
+        <div class='flex w-full items-center gap-2'>
+          <button
+            data-popup='login-popup'
+            type='button'
+            class='flex-grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center'
+          >
+            Login to respond
+          </button>
+        </div>
+      </div>
+
+      <RespondInviteForm client:authenticated />
+
+      <div class='mt-6 text-center text-sm'>
+        If you don't want to join, you can ignore this invitation or reject it.
+      </div>
+    </div>
+  </div>
+</AccountLayout>
