@@ -130,4 +130,4 @@ int main() {
 This basic introduction to C++ should provide you with a good foundation for further learning. Explore more topics such as classes, objects, inheritance, polymorphism, templates, and the Standard Template Library (STL) to deepen your understanding of C++ and start writing more advanced programs.
 
 - [LearnC++](https://www.learncpp.com/)
-- [C++ Full Course by freeCodeCamp](https://www.youtube.com/watch?v=vlnpwxzdw4y)
+- [C++ Full Course by freeCodeCamp](https://youtu.be/vLnPwxZdW4Y)
