@@ -8,6 +8,9 @@ interface PreviewFile extends File {
 
 type UploadProfilePictureProps = {
   avatarUrl: string;
+  type: 'avatar' | 'logo';
+  label: string;
+  teamId?: string;
 };
 
 function getDimensions(file: File) {
@@ -48,7 +51,7 @@ async function validateImage(file: File): Promise<string | null> {
 }
 
 export default function UploadProfilePicture(props: UploadProfilePictureProps) {
-  const { avatarUrl } = props;
+  const { avatarUrl, teamId, type } = props;
 
   const [file, setFile] = useState<PreviewFile | null>(null);
   const [error, setError] = useState('');
@@ -91,14 +94,26 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
     formData.append('avatar', file);
 
     // FIXME: Use `httpCall` helper instead of fetch
-    const res = await fetch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-upload-profile-picture`,
-      {
-        method: 'POST',
-        body: formData,
-        credentials: 'include',
-      }
-    );
+    let res: Response;
+    if (type === 'avatar') {
+      res = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-upload-profile-picture`,
+        {
+          method: 'POST',
+          body: formData,
+          credentials: 'include',
+        }
+      );
+    } else {
+      res = await fetch(
+        `${import.meta.env.PUBLIC_API_URL}/v1-upload-team-logo/${teamId}`,
+        {
+          method: 'POST',
+          body: formData,
+          credentials: 'include',
+        }
+      );
+    }
 
     if (res.ok) {
       window.location.reload();
@@ -133,7 +148,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
       className="flex flex-col gap-2"
     >
       <label htmlFor="avatar" className="text-sm leading-none text-slate-500">
-        Profile Picture
+        {props.label}
       </label>
       <div className="mb-2 mt-2 flex items-center gap-2">
         <label

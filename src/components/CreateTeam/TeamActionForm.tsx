@@ -4,14 +4,23 @@ import { ResourceSelector } from './ResourceSelector';
 import { httpPost, httpPut } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner';
 import { useAuth } from '../../hooks/use-auth';
+import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
 
 export interface TeamDocument {
   _id?: string;
   name: string;
+  avatar?: string;
   creatorId: string;
   website?: string;
-  type: "company" | "learning_club";
-  teamSize?: "0-1" | "2-10" | "11-50" | "51-200" | "201-500" | "501-1000" | "1000+";
+  type: 'company' | 'learning_club';
+  teamSize?:
+  | '0-1'
+  | '2-10'
+  | '11-50'
+  | '51-200'
+  | '201-500'
+  | '501-1000'
+  | '1000+';
   identifier: string;
   roadmapIds?: string[];
   bestPracticeIds?: string[];
@@ -22,24 +31,33 @@ export interface TeamDocument {
 type TeamActionForm = {
   type: 'create' | 'update';
   team?: TeamDocument;
-}
+};
 
-export function TeamActionForm({
-  type,
-  team
-}: TeamActionForm) {
+export function TeamActionForm({ type, team }: TeamActionForm) {
   const [name, setName] = useState(team?.name ?? '');
+  const [avatar, setAvatar] = useState(team?.avatar ?? '');
   const [website, setWebsite] = useState(team?.website ?? '');
   const [teamType, setTeamType] = useState(team?.type ?? '');
   const [teamSize, setTeamSize] = useState(team?.teamSize ?? '');
   const [identifier, setIdentifier] = useState(team?.identifier ?? '');
-  const [roadmaps, setRoadmaps] = useState<string[]>(team?.roadmapIds ?? [])
-  const [bestPractices, setBestPractices] = useState<string[]>(team?.bestPracticeIds ?? [])
+  const [roadmaps, setRoadmaps] = useState<string[]>(team?.roadmapIds ?? []);
+  const [bestPractices, setBestPractices] = useState<string[]>(
+    team?.bestPracticeIds ?? []
+  );
   const [isLoading, setIsLoading] = useState(false);
-  const validTeamSizes = ["0-1", "2-10", "11-50", "51-200", "201-500", "501-1000", "1000+"]
+  const validTeamSizes = [
+    '0-1',
+    '2-10',
+    '11-50',
+    '51-200',
+    '201-500',
+    '501-1000',
+    '1000+',
+  ];
 
   const user = useAuth();
   const isCreator = user?.id === team?.creatorId;
+  const isDisabled = !isCreator && type === 'update';
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
@@ -51,15 +69,17 @@ export function TeamActionForm({
 
     if (type === 'create') {
       const { response, error } = await httpPost(
-        `${import.meta.env.PUBLIC_API_URL}/v1-create-team`, {
-        name,
-        website,
-        type: teamType,
-        identifier,
-        ...(teamType === 'company' && { teamSize }),
-        roadmapIds: roadmaps.join(','),
-        bestPracticeIds: bestPractices.join(','),
-      })
+        `${import.meta.env.PUBLIC_API_URL}/v1-create-team`,
+        {
+          name,
+          website,
+          type: teamType,
+          identifier,
+          ...(teamType === 'company' && { teamSize }),
+          roadmapIds: roadmaps.join(','),
+          bestPracticeIds: bestPractices.join(','),
+        }
+      );
 
       if (error) {
         console.error(error);
@@ -72,15 +92,17 @@ export function TeamActionForm({
       }
     } else if (type === 'update') {
       const { response, error } = await httpPut(
-        `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team?._id}`, {
-        name,
-        website,
-        type: teamType,
-        identifier,
-        ...(teamType === 'company' && { teamSize }),
-        roadmapIds: roadmaps.join(','),
-        bestPracticeIds: bestPractices.join(','),
-      })
+        `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team?._id}`,
+        {
+          name,
+          website,
+          type: teamType,
+          identifier,
+          ...(teamType === 'company' && { teamSize }),
+          roadmapIds: roadmaps.join(','),
+          bestPracticeIds: bestPractices.join(','),
+        }
+      );
 
       if (error) {
         setIsLoading(false);
@@ -96,8 +118,20 @@ export function TeamActionForm({
 
   return (
     <form onSubmit={handleSubmit}>
+      {type === 'update' && (
+        <UploadProfilePicture type="logo" label="Upload team logo"
+          avatarUrl={
+            avatar
+              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+              : '/images/default-avatar.png'
+          }
+          teamId={team?._id?.toString()} />
+      )}
       <div className="flex w-full flex-col">
-        <label for="name" className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'>
+        <label
+          for="name"
+          className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+        >
           Name
         </label>
         <input
@@ -106,7 +140,7 @@ export function TeamActionForm({
           id="name"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="roadmap.sh"
-          disabled={!isCreator}
+          disabled={isDisabled}
           required
           value={name}
           onInput={(e) => setName((e.target as HTMLInputElement).value)}
@@ -122,58 +156,70 @@ export function TeamActionForm({
           id="website"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="https://roadmap.sh"
-          disabled={!isCreator}
+          disabled={isDisabled}
           value={website}
           onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
         />
       </div>
       <div className="mt-4 flex w-full flex-col">
-        <label for="type" className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'>
+        <label
+          for="type"
+          className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'
+        >
           Type
         </label>
         <select
           name="type"
           id="type"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          disabled={!isCreator}
+          disabled={isDisabled}
           value={teamType}
           onChange={(e) =>
             setTeamType((e.target as HTMLSelectElement).value as any)
           }
         >
-          <option value="" selected>Select type</option>
+          <option value="" selected>
+            Select type
+          </option>
           <option value="company">Company</option>
           <option value="learning_club">Learning Club</option>
         </select>
       </div>
 
-      {
-        teamType === 'company' && (
-          <div className="mt-4 flex w-full flex-col">
-            <label for="team-size" className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'>
-              Team size
-            </label>
-            <select
-              name="team-size"
-              id="team-size"
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-              required={teamType === 'company'}
-              disabled={!isCreator}
-              value={teamSize}
-              onChange={(e) =>
-                setTeamSize((e.target as HTMLSelectElement).value as any)
-              }
-            >
-              <option value="" selected>Select team size</option>
-              {validTeamSizes.map((size) => (
-                <option value={size}>{size} people</option>
-              ))}
-            </select>
-          </div>
-        )
-      }
+      {teamType === 'company' && (
+        <div className="mt-4 flex w-full flex-col">
+          <label
+            for="team-size"
+            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+          >
+            Team size
+          </label>
+          <select
+            name="team-size"
+            id="team-size"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            required={teamType === 'company'}
+            disabled={isDisabled}
+            value={teamSize}
+            onChange={(e) =>
+              setTeamSize((e.target as HTMLSelectElement).value as any)
+            }
+          >
+            <option value="" selected>
+              Select team size
+            </option>
+            {validTeamSizes.map((size) => (
+              <option value={size}>{size} people</option>
+            ))}
+          </select>
+        </div>
+      )}
 
-      <IdentiferInput value={identifier} onChange={setIdentifier} disbabled={!isCreator} />
+      <IdentiferInput
+        value={identifier}
+        onChange={setIdentifier}
+        disbabled={isDisabled}
+      />
       <ResourceSelector
         type="Roadmaps"
         resourcesIds={roadmaps}
@@ -189,11 +235,11 @@ export function TeamActionForm({
         <button
           type="submit"
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-          disabled={!isCreator || isLoading}
+          disabled={isDisabled || isLoading}
         >
           {isLoading ? <Spinner /> : type === 'create' ? 'Create' : 'Update'}
         </button>
       </div>
-    </form >
+    </form>
   );
 }
