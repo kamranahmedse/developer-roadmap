@@ -2,6 +2,7 @@ import { useEffect, useState } from 'preact/hooks';
 import { useParams } from '../../hooks/use-params';
 import { httpGet } from '../../lib/http';
 import { MemberActionDropdown } from './MemberActionDropdown';
+import { useAuth } from '../../hooks/use-auth';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -21,6 +22,7 @@ interface TeamMemberList extends TeamMemberDocument {
 export function TeamMembersPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
   const { teamId } = useParams<{ teamId: string }>();
+  const user = useAuth();
   async function getTeamMemberList() {
     const { response, error } = await httpGet<TeamMemberList[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`
@@ -47,13 +49,16 @@ export function TeamMembersPage() {
     };
   }, [teamId]);
 
+  const isCreator = teamMembers.find(
+    (teamMember) => teamMember.userId === user?.id
+  )?.role === 'creator';
+
   return (
     <div>
       <div>
         <div className="grid w-full grid-cols-4 gap-2 text-sm text-gray-500">
           <span className="col-span-2">Name</span>
           <span>Status</span>
-          <span>Action</span>
         </div>
 
         <div className="space-y-2">
@@ -64,7 +69,9 @@ export function TeamMembersPage() {
                 {teamMember.invitedEmail}
               </span>
               <span>{teamMember.status}</span>
-              <MemberActionDropdown member={teamMember} />
+              {isCreator &&
+                <MemberActionDropdown member={teamMember} />
+              }
             </div>
           ))}
         </div>

@@ -1,6 +1,6 @@
 import { useState } from "preact/hooks"
 import type { TeamMemberDocument } from "./TeamMembersPage"
-import { httpDelete } from "../../lib/http";
+import { httpDelete, httpPatch } from "../../lib/http";
 
 export function MemberActionDropdown({
   member
@@ -25,15 +25,32 @@ export function MemberActionDropdown({
     window.location.reload();
   }
 
+  async function resendInvite() {
+    const { response, error } = await httpPatch(
+      `${import.meta.env.PUBLIC_API_URL}/v1-resend-invite/${member.teamId}/${member._id}`,
+      {}
+    );
+
+    if (error || !response) {
+      setIsLoading(false);
+      alert(error?.message || 'Something went wrong');
+      return;
+    }
+
+    window.location.reload();
+  }
+
   const actions = [
     {
       name: 'Delete',
       handleClick: deleteMember
     },
-    {
-      name: 'Resend Invite',
-      handleClick: () => { }
-    }
+    ...(['rejected', 'invited'].includes(member.status) ? [
+      {
+        name: 'Resend Invite',
+        handleClick: resendInvite
+      }
+    ] : []),
   ]
   return (
     <div className="relative">
