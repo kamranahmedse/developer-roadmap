@@ -5,12 +5,14 @@ export function NotificationBadge() {
   const [notifyCount, setNotifyCount] = useState(0)
 
   function updateNotificationCount(count: number) {
-    const notifyCountEl = document.getElementById('notification-count')
+    const notifyCountEl = document.querySelectorAll('#notification-count')
     if (!notifyCountEl) {
       return
     }
 
-    notifyCountEl.innerText = count.toString()
+    notifyCountEl.forEach(el => {
+      el.innerHTML = count.toString()
+    })
   }
 
   async function getNotificationCount() {

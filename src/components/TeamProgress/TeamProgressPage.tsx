@@ -1,6 +1,7 @@
 import { useEffect, useState } from "preact/hooks";
 import { useTeamId } from "../../hooks/use-team-id";
 import { httpGet } from "../../lib/http";
+import { pageProgressMessage } from "../../stores/page";
 
 export type UserProgress = {
   resourceTitle: string;
@@ -24,6 +25,7 @@ export type TeamMember = {
 
 export function TeamProgressPage() {
   const { teamId } = useTeamId();
+  const [isPreparing, setIsPreparing] = useState(true);
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
   async function getAllProgress() {
@@ -42,8 +44,15 @@ export function TeamProgressPage() {
     if (!teamId) {
       return;
     }
-    getAllProgress();
+    getAllProgress().finally(() => {
+      pageProgressMessage.set('');
+      setIsPreparing(false);
+    })
   }, [teamId]);
+
+  if (isPreparing) {
+    return null
+  }
 
   return <div className="grid grid-cols-2 gap-2">
     {

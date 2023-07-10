@@ -7,6 +7,7 @@ import { IdentiferInput } from '../CreateTeam/IdentifierInput';
 import { ResourceSelector } from '../CreateTeam/ResourceSelector';
 import { useParams } from '../../hooks/use-params';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
+import { pageProgressMessage } from '../../stores/page';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -89,7 +90,9 @@ export function UpdateTeamForm() {
     if (!teamId) {
       return;
     }
-    loadTeam();
+    loadTeam().finally(() => {
+      pageProgressMessage.set('');
+    })
   }, [teamId]);
 
   return (

@@ -4,7 +4,7 @@ import { TeamProgressPage } from '../../../components/TeamProgress/TeamProgressP
 import AccountLayout from '../../../layouts/AccountLayout.astro';
 ---
 
-<AccountLayout title='Team Progress' noIndex={true}>
+<AccountLayout title='Team Progress' noIndex={true} initialLoadingMessage='Loading Progress'>
   <TeamSidebar activePageId='progress' client:load>
     <TeamProgressPage client:load />
   </TeamSidebar>

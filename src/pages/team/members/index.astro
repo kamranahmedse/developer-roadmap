@@ -5,7 +5,7 @@ import AccountLayout from '../../../layouts/AccountLayout.astro';
 import InviteMemberPopup from '../../../components/TeamMembers/InviteMemberPopup.astro';
 ---
 
-<AccountLayout title='Team Members' noIndex={true}>
+<AccountLayout title='Team Members' noIndex={true} initialLoadingMessage='Loading Members'>
   <TeamSidebar activePageId='members' client:load>
     <TeamMembersPage client:load />
   </TeamSidebar>

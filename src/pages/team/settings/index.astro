@@ -5,7 +5,7 @@ import AccountLayout from '../../../layouts/AccountLayout.astro';
 import DeleteTeam from '../../../components/DeleteTeam/DeleteTeam.astro';
 ---
 
-<AccountLayout title='Team Settings' noIndex={true}>
+<AccountLayout title='Team Settings' noIndex={true} initialLoadingMessage='Loading Settings'>
   <TeamSidebar activePageId='settings' client:load>
     <UpdateTeamForm client:load />
     <hr class='my-8' />

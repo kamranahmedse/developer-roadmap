@@ -1,6 +1,7 @@
 import { useState } from "preact/hooks"
 import type { TeamMemberDocument } from "./TeamMembersPage"
 import { httpDelete, httpPatch } from "../../lib/http";
+import ChevronDownIcon from "../../icons/chevron-down.svg";
 
 export function MemberActionDropdown({
   member
@@ -56,8 +57,10 @@ export function MemberActionDropdown({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
+        className="flex items-center text-sm"
       >
         Actions
+        <img src={ChevronDownIcon} className="ml-2 w-3 h-3" />
       </button>
 
       {

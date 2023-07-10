@@ -3,7 +3,8 @@ import { useParams } from "../../hooks/use-params";
 import { httpGet } from "../../lib/http";
 import type { TeamMember } from "./TeamProgressPage";
 import { ResourceProgress } from "../Activity/ResourceProgress";
-import type { TeamDocument } from "../CreateTeam/TeamActionForm";
+import type { TeamDocument } from "../CreateTeam/CreateTeamForm";
+import { pageProgressMessage } from "../../stores/page";
 
 export function TeamMemberProgressPage() {
   const [teamMember, setTeamMember] = useState<TeamMember | null>(null);
@@ -33,7 +34,9 @@ export function TeamMemberProgressPage() {
     if (!teamId || !memberId) {
       return;
     }
-    getTeamMember();
+    getTeamMember().finally(() => {
+      pageProgressMessage.set('');
+    })
   }, [teamId, memberId]);
 
   if (!teamMember || !team) {

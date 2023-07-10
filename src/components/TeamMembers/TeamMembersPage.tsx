@@ -3,6 +3,7 @@ import { useParams } from '../../hooks/use-params';
 import { httpGet } from '../../lib/http';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { useAuth } from '../../hooks/use-auth';
+import { pageProgressMessage } from '../../stores/page';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -20,6 +21,7 @@ interface TeamMemberList extends TeamMemberDocument {
 }
 
 export function TeamMembersPage() {
+  const [isPreparing, setIsPreparing] = useState(true);
   const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
   const { teamId } = useParams<{ teamId: string }>();
   const user = useAuth();
@@ -32,7 +34,6 @@ export function TeamMembersPage() {
       return;
     }
 
-    console.log(response);
     setTeamMembers(response);
   }
 
@@ -41,7 +42,10 @@ export function TeamMembersPage() {
       return;
     }
 
-    getTeamMemberList();
+    getTeamMemberList().finally(() => {
+      setIsPreparing(false);
+      pageProgressMessage.set('');
+    })
     window.addEventListener('invite-member', getTeamMemberList);
 
     return () => {
@@ -53,6 +57,10 @@ export function TeamMembersPage() {
     (teamMember) => teamMember.userId === user?.id
   )?.role === 'creator';
 
+  if (isPreparing) {
+    return null;
+  }
+
   return (
     <div>
       <div>
@@ -61,7 +69,7 @@ export function TeamMembersPage() {
           <span>Status</span>
         </div>
 
-        <div className="space-y-2">
+        <div className="space-y-3 mt-4">
           {teamMembers.map((teamMember) => (
             <div className="grid w-full grid-cols-4 gap-2 items-center">
               <span className="col-span-2 flex flex-col">
@@ -69,7 +77,7 @@ export function TeamMembersPage() {
                 {teamMember.invitedEmail}
               </span>
               <span>{teamMember.status}</span>
-              {isCreator &&
+              {(isCreator && teamMember.userId !== user?.id) &&
                 <MemberActionDropdown member={teamMember} />
               }
             </div>
