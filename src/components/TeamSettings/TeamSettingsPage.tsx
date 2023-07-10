@@ -1,7 +1,7 @@
 import { useEffect, useState } from "preact/hooks"
 import { useParams } from "../../hooks/use-params"
-import { TeamActionForm, TeamDocument } from "../CreateTeam/TeamActionForm"
 import { httpGet } from "../../lib/http"
+import { UpdateTeamForm } from "./UpdateTeamForm"
 
 export function TeamSettingsPage() {
   const [team, setTeam] = useState<TeamDocument | null>(null)
@@ -21,13 +21,9 @@ export function TeamSettingsPage() {
     getTeamDetails();
   }, [teamId])
 
-  if (!team) {
-    return null
-  }
-
   return (
     <div>
-      <TeamActionForm team={team} type="update" />
+      <UpdateTeamForm />
     </div>
   )
 }

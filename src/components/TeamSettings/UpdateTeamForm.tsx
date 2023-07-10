@@ -1,50 +1,24 @@
-import { useState } from 'preact/hooks';
-import { IdentiferInput } from './IdentifierInput';
-import { ResourceSelector } from './ResourceSelector';
-import { httpPost, httpPut } from '../../lib/http';
+import { useEffect, useState } from 'preact/hooks';
+import { httpGet, httpPut } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner';
 import { useAuth } from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
+import { IdentiferInput } from '../CreateTeam/IdentifierInput';
+import { ResourceSelector } from '../CreateTeam/ResourceSelector';
+import { useParams } from '../../hooks/use-params';
+import type { TeamDocument } from '../CreateTeam/TeamActionForm';
 
-export interface TeamDocument {
-  _id?: string;
-  name: string;
-  avatar?: string;
-  creatorId: string;
-  website?: string;
-  type: 'company' | 'learning_club';
-  teamSize?:
-  | '0-1'
-  | '2-10'
-  | '11-50'
-  | '51-200'
-  | '201-500'
-  | '501-1000'
-  | '1000+';
-  identifier: string;
-  roadmapIds?: string[];
-  bestPracticeIds?: string[];
-  createdAt: Date;
-  updatedAt: Date;
-}
-
-type TeamActionForm = {
-  type: 'create' | 'update';
-  team?: TeamDocument;
-};
-
-export function TeamActionForm({ type, team }: TeamActionForm) {
-  const [name, setName] = useState(team?.name ?? '');
-  const [avatar, setAvatar] = useState(team?.avatar ?? '');
-  const [website, setWebsite] = useState(team?.website ?? '');
-  const [teamType, setTeamType] = useState(team?.type ?? '');
-  const [teamSize, setTeamSize] = useState(team?.teamSize ?? '');
-  const [identifier, setIdentifier] = useState(team?.identifier ?? '');
-  const [roadmaps, setRoadmaps] = useState<string[]>(team?.roadmapIds ?? []);
-  const [bestPractices, setBestPractices] = useState<string[]>(
-    team?.bestPracticeIds ?? []
-  );
+export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState('');
+  const [name, setName] = useState('');
+  const [avatar, setAvatar] = useState('');
+  const [website, setWebsite] = useState('');
+  const [teamType, setTeamType] = useState('');
+  const [teamSize, setTeamSize] = useState('');
+  const [identifier, setIdentifier] = useState('');
+  const [roadmaps, setRoadmaps] = useState<string[]>([]);
+  const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = [
     '0-1',
     '2-10',
@@ -54,10 +28,9 @@ export function TeamActionForm({ type, team }: TeamActionForm) {
     '501-1000',
     '1000+',
   ];
-
+  const [isDisabled, setIsDisabled] = useState(false);
+  const { teamId } = useParams<{ teamId: string }>();
   const user = useAuth();
-  const isCreator = user?.id === team?.creatorId;
-  const isDisabled = !isCreator && type === 'update';
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
@@ -66,67 +39,71 @@ export function TeamActionForm({ type, team }: TeamActionForm) {
       setIsLoading(false);
       return;
     }
-
-    if (type === 'create') {
-      const { response, error } = await httpPost(
-        `${import.meta.env.PUBLIC_API_URL}/v1-create-team`,
-        {
-          name,
-          website,
-          type: teamType,
-          identifier,
-          ...(teamType === 'company' && { teamSize }),
-          roadmapIds: roadmaps.join(','),
-          bestPracticeIds: bestPractices.join(','),
-        }
-      );
-
-      if (error) {
-        console.error(error);
-        setIsLoading(false);
-        return;
+    const { response, error } = await httpPut(
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${teamId}`,
+      {
+        name,
+        website,
+        type: teamType,
+        identifier,
+        ...(teamType === 'company' && { teamSize }),
+        roadmapIds: roadmaps.join(','),
+        bestPracticeIds: bestPractices.join(','),
       }
+    );
 
-      if (response) {
-        window.location.href = `/team/progress?teamId=${response._id}`;
-      }
-    } else if (type === 'update') {
-      const { response, error } = await httpPut(
-        `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team?._id}`,
-        {
-          name,
-          website,
-          type: teamType,
-          identifier,
-          ...(teamType === 'company' && { teamSize }),
-          roadmapIds: roadmaps.join(','),
-          bestPracticeIds: bestPractices.join(','),
-        }
-      );
+    if (error) {
+      setIsLoading(false);
+      console.error(error);
+      return;
+    }
 
-      if (error) {
-        setIsLoading(false);
-        console.error(error);
-        return;
-      }
-
-      if (response) {
-        window.location.href = `/team/progress?teamId=${team?._id}`;
-      }
+    if (response) {
+      await loadTeam();
     }
   };
 
+  async function loadTeam() {
+    const { response, error } = await httpGet<TeamDocument>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`
+    );
+    if (error || !response) {
+      console.log(error);
+      return;
+    }
+
+    setName(response.name);
+    setAvatar(response.avatar || '');
+    setWebsite(response.website || '');
+    setTeamType(response.type);
+    setIdentifier(response.identifier);
+    setRoadmaps(response.roadmapIds || []);
+    setBestPractices(response.bestPracticeIds || []);
+    if (response.teamSize) {
+      setTeamSize(response.teamSize);
+    }
+    setIsDisabled(response.creatorId !== user?.id);
+  }
+
+  useEffect(() => {
+    if (!teamId) {
+      return;
+    }
+    loadTeam();
+  }, [teamId]);
+
   return (
     <form onSubmit={handleSubmit}>
-      {type === 'update' && (
-        <UploadProfilePicture type="logo" label="Upload team logo"
-          avatarUrl={
-            avatar
-              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-              : '/images/default-avatar.png'
-          }
-          teamId={team?._id?.toString()} />
-      )}
+      <UploadProfilePicture
+        type="logo"
+        label="Upload team logo"
+        avatarUrl={
+          avatar
+            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+            : '/images/default-avatar.png'
+        }
+        teamId={teamId}
+      />
       <div className="flex w-full flex-col">
         <label
           for="name"
@@ -237,7 +214,7 @@ export function TeamActionForm({ type, team }: TeamActionForm) {
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
           disabled={isDisabled || isLoading}
         >
-          {isLoading ? <Spinner /> : type === 'create' ? 'Create' : 'Update'}
+          {isLoading ? <Spinner /> : 'Update'}
         </button>
       </div>
     </form>

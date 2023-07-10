@@ -1,11 +1,14 @@
 ---
 import { TeamSidebar } from '../../../components/TeamSidebar';
-import { TeamSettingsPage } from '../../../components/TeamSettings/TeamSettingsPage';
+import { UpdateTeamForm } from '../../../components/TeamSettings/UpdateTeamForm';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
+import DeleteTeam from '../../../components/DeleteTeam/DeleteTeam.astro';
 ---
 
 <AccountLayout title='Team Settings' noIndex={true}>
   <TeamSidebar activePageId='settings' client:load>
-    <TeamSettingsPage client:load />
+    <UpdateTeamForm client:load />
+    <hr class='my-8' />
+    <DeleteTeam />
   </TeamSidebar>
 </AccountLayout>

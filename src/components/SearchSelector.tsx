@@ -27,6 +27,7 @@ export function SearchSelector({
 
   useEffect(() => {
     if (searchedText.length === 0) {
+      setSearchResults(defaultData.slice(0, 5));
       return;
     }
 
