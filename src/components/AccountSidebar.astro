@@ -1,6 +1,5 @@
 ---
 import AstroIcon from './AstroIcon.astro';
-import { TeamSidebar } from './TeamSidebar';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 
 const { activePageId, activePageTitle } = Astro.props;
@@ -39,16 +38,6 @@ const sidebarLinks = [
     isNew: false,
     icon: {
       glyph: 'user',
-      classes: 'h-4 w-4',
-    },
-  },
-  {
-    href: '/account/notification',
-    title: 'Notification',
-    id: 'notification',
-    isNew: false,
-    icon: {
-      glyph: 'notification',
       classes: 'h-4 w-4',
     },
   },

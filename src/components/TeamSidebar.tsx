@@ -2,6 +2,9 @@ import type { FunctionalComponent } from 'preact';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
+import TeamProgress from '../icons/team-progress.svg';
+import SettingsIcon from '../icons/cog.svg';
+import GroupIcon from '../icons/group.svg';
 
 export const TeamSidebar: FunctionalComponent<{
   activePageId: string;
@@ -13,16 +16,19 @@ export const TeamSidebar: FunctionalComponent<{
       title: 'Progress',
       href: `/team/progress?teamId=${teamId}`,
       id: 'progress',
+      icon: TeamProgress,
     },
     {
       title: 'Members',
       href: `/team/members?teamId=${teamId}`,
       id: 'members',
+      icon: GroupIcon,
     },
     {
       title: 'Settings',
       href: `/team/settings?teamId=${teamId}`,
       id: 'settings',
+      icon: SettingsIcon,
     },
   ];
 
@@ -50,9 +56,11 @@ export const TeamSidebar: FunctionalComponent<{
               <li>
                 <a
                   href={sidebarLink.href}
-                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${isActive ? 'bg-slate-100' : ''
-                    }`}
+                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+                    isActive ? 'bg-slate-100' : ''
+                  }`}
                 >
+                  <img src={sidebarLink.icon} className="mr-2 h-4 w-4" />
                   {sidebarLink.title}
                 </a>
               </li>
@@ -74,12 +82,14 @@ export const TeamSidebar: FunctionalComponent<{
                   <li>
                     <a
                       href={sidebarLink.href}
-                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${isActive
-                        ? 'border-r-black bg-gray-100 text-black'
-                        : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
-                        }`}
+                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${
+                        isActive
+                          ? 'border-r-black bg-gray-100 text-black'
+                          : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
+                      }`}
                     >
                       <span class="flex flex-grow items-center">
+                        <img src={sidebarLink.icon} className="mr-2 h-4 w-4" />
                         {sidebarLink.title}
                       </span>
                     </a>
