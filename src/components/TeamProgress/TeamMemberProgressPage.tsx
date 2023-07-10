@@ -5,6 +5,7 @@ import type { TeamMember } from "./TeamProgressPage";
 import { ResourceProgress } from "../Activity/ResourceProgress";
 import type { TeamDocument } from "../CreateTeam/CreateTeamForm";
 import { pageProgressMessage } from "../../stores/page";
+import { EmptyActivity } from "../Activity/EmptyActivity";
 
 export function TeamMemberProgressPage() {
   const [teamMember, setTeamMember] = useState<TeamMember | null>(null);
@@ -65,6 +66,8 @@ export function TeamMemberProgressPage() {
           />
         })
       }
+
+      {teamMember?.progress.length === 0 && <EmptyActivity />}
     </div>
   </div>;
 }
