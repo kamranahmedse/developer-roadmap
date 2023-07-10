@@ -102,17 +102,17 @@ export function UpdateTeamForm() {
           Update your team information.
         </p>
       </div>
+      <UploadProfilePicture
+        type="logo"
+        label="Upload team logo"
+        avatarUrl={
+          avatar
+            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+            : '/images/default-avatar.png'
+        }
+        teamId={teamId}
+      />
       <form onSubmit={handleSubmit}>
-        <UploadProfilePicture
-          type="logo"
-          label="Upload team logo"
-          avatarUrl={
-            avatar
-              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-              : '/images/default-avatar.png'
-          }
-          teamId={teamId}
-        />
         <div className="flex w-full flex-col mt-4">
           <label
             for="name"
