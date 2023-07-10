@@ -111,5 +111,6 @@ export function TeamProgressPage() {
           )
         })}
       </div>
-    </div>)
+    </div>
+  )
 }

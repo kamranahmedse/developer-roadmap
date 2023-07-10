@@ -1,5 +1,7 @@
 import { useState } from 'preact/hooks';
 import { getRelativeTimeString } from '../../lib/date';
+import { ProgressMapModal } from './ProgressMapModal';
+import { useParams } from '../../hooks/use-params';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -24,6 +26,7 @@ export function TeamResourceProgress(props: ResourceProgressType) {
     skippedCount,
   } = props;
 
+  const { teamId, memberId } = useParams<{ teamId: string, memberId: string }>();
   const url =
     resourceType === 'roadmap'
       ? `/${resourceId}`
@@ -71,7 +74,12 @@ export function TeamResourceProgress(props: ResourceProgressType) {
           <span>{totalCount} total</span>
         </span>
 
-        <button className="hover:underline">View Progress on Map</button>
+        <ProgressMapModal {...{
+          teamId,
+          memberId,
+          resourceType,
+          resourceId,
+        }} />
       </div>
     </div>
   );
