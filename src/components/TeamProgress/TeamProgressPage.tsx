@@ -33,7 +33,7 @@ export function TeamProgressPage() {
       data: TeamMember[];
     }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`);
     if (error || !response?.data) {
-      console.log(error);
+      alert(error?.message || 'Failed to get team progress');
       return;
     }
 
