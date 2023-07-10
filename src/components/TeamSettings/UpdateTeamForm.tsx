@@ -6,7 +6,7 @@ import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
 import { IdentiferInput } from '../CreateTeam/IdentifierInput';
 import { ResourceSelector } from '../CreateTeam/ResourceSelector';
 import { useParams } from '../../hooks/use-params';
-import type { TeamDocument } from '../CreateTeam/TeamActionForm';
+import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -93,130 +93,140 @@ export function UpdateTeamForm() {
   }, [teamId]);
 
   return (
-    <form onSubmit={handleSubmit}>
-      <UploadProfilePicture
-        type="logo"
-        label="Upload team logo"
-        avatarUrl={
-          avatar
-            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
-            : '/images/default-avatar.png'
-        }
-        teamId={teamId}
-      />
-      <div className="flex w-full flex-col">
-        <label
-          for="name"
-          className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-        >
-          Name
-        </label>
-        <input
-          type="text"
-          name="name"
-          id="name"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          placeholder="roadmap.sh"
-          disabled={isDisabled}
-          required
-          value={name}
-          onInput={(e) => setName((e.target as HTMLInputElement).value)}
-        />
+    <div>
+      <div className="mb-8 hidden md:block">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Team
+        </h2>
+        <p className="mt-2 text-gray-400">
+          Update your team information.
+        </p>
       </div>
-      <div className="mt-4 flex w-full flex-col">
-        <label for="website" className="text-sm leading-none text-slate-500">
-          Website
-        </label>
-        <input
-          type="text"
-          name="website"
-          id="website"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          placeholder="https://roadmap.sh"
-          disabled={isDisabled}
-          value={website}
-          onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
-        />
-      </div>
-      <div className="mt-4 flex w-full flex-col">
-        <label
-          for="type"
-          className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'
-        >
-          Type
-        </label>
-        <select
-          name="type"
-          id="type"
-          className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          disabled={isDisabled}
-          value={teamType}
-          onChange={(e) =>
-            setTeamType((e.target as HTMLSelectElement).value as any)
+      <form onSubmit={handleSubmit}>
+        <UploadProfilePicture
+          type="logo"
+          label="Upload team logo"
+          avatarUrl={
+            avatar
+              ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+              : '/images/default-avatar.png'
           }
-        >
-          <option value="" selected>
-            Select type
-          </option>
-          <option value="company">Company</option>
-          <option value="learning_club">Learning Club</option>
-        </select>
-      </div>
-
-      {teamType === 'company' && (
-        <div className="mt-4 flex w-full flex-col">
+          teamId={teamId}
+        />
+        <div className="flex w-full flex-col mt-4">
           <label
-            for="team-size"
+            for="name"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
-            Team size
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="roadmap.sh"
+            disabled={isDisabled}
+            required
+            value={name}
+            onInput={(e) => setName((e.target as HTMLInputElement).value)}
+          />
+        </div>
+        <div className="mt-4 flex w-full flex-col">
+          <label for="website" className="text-sm leading-none text-slate-500">
+            Website
+          </label>
+          <input
+            type="text"
+            name="website"
+            id="website"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="https://roadmap.sh"
+            disabled={isDisabled}
+            value={website}
+            onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
+          />
+        </div>
+        <div className="mt-4 flex w-full flex-col">
+          <label
+            for="type"
+            className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'
+          >
+            Type
           </label>
           <select
-            name="team-size"
-            id="team-size"
+            name="type"
+            id="type"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            required={teamType === 'company'}
             disabled={isDisabled}
-            value={teamSize}
+            value={teamType}
             onChange={(e) =>
-              setTeamSize((e.target as HTMLSelectElement).value as any)
+              setTeamType((e.target as HTMLSelectElement).value as any)
             }
           >
             <option value="" selected>
-              Select team size
+              Select type
             </option>
-            {validTeamSizes.map((size) => (
-              <option value={size}>{size} people</option>
-            ))}
+            <option value="company">Company</option>
+            <option value="learning_club">Learning Club</option>
           </select>
         </div>
-      )}
 
-      <IdentiferInput
-        value={identifier}
-        onChange={setIdentifier}
-        disbabled={isDisabled}
-      />
-      <ResourceSelector
-        type="Roadmaps"
-        resourcesIds={roadmaps}
-        setResourcesIds={setRoadmaps}
-      />
-      <ResourceSelector
-        type="Best Practices"
-        resourcesIds={bestPractices}
-        setResourcesIds={setBestPractices}
-      />
+        {teamType === 'company' && (
+          <div className="mt-4 flex w-full flex-col">
+            <label
+              for="team-size"
+              className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+            >
+              Team size
+            </label>
+            <select
+              name="team-size"
+              id="team-size"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              required={teamType === 'company'}
+              disabled={isDisabled}
+              value={teamSize}
+              onChange={(e) =>
+                setTeamSize((e.target as HTMLSelectElement).value as any)
+              }
+            >
+              <option value="" selected>
+                Select team size
+              </option>
+              {validTeamSizes.map((size) => (
+                <option value={size}>{size} people</option>
+              ))}
+            </select>
+          </div>
+        )}
 
-      <div className="mt-4 flex w-full flex-col">
-        <button
-          type="submit"
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-          disabled={isDisabled || isLoading}
-        >
-          {isLoading ? <Spinner /> : 'Update'}
-        </button>
-      </div>
-    </form>
+        <IdentiferInput
+          value={identifier}
+          onChange={setIdentifier}
+          disbabled={isDisabled}
+        />
+        <ResourceSelector
+          type="Roadmaps"
+          resourcesIds={roadmaps}
+          setResourcesIds={setRoadmaps}
+        />
+        <ResourceSelector
+          type="Best Practices"
+          resourcesIds={bestPractices}
+          setResourcesIds={setBestPractices}
+        />
+
+        <div className="mt-4 flex w-full flex-col">
+          <button
+            type="submit"
+            className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+            disabled={isDisabled || isLoading}
+          >
+            {isLoading ? <Spinner /> : 'Update'}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 }
