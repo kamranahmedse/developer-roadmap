@@ -13,6 +13,7 @@ import '../styles/global.css';
 
 export interface Props {
   title: string;
+  ogImageUrl?: string;
   // This isn't used anywhere except for the sponsor event labels
   briefTitle?: string;
   redirectUrl?: string;
@@ -29,6 +30,7 @@ const {
   title = siteConfig.title,
   briefTitle,
   description = siteConfig.description,
+  ogImageUrl = 'https://roadmap.sh/images/og-img.png',
   keywords = siteConfig.keywords,
   noIndex = false,
   permalink = '',
@@ -79,7 +81,7 @@ const gaPageIdentifier = Astro.url.pathname
 
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
-    <meta property='og:image' content='https://roadmap.sh/images/og-img.png' />
+    <meta property='og:image' content={ogImageUrl || 'https://roadmap.sh/images/og-img.png'} />
     <meta property='og:image:alt' content='roadmap.sh' />
     <meta property='og:site_name' content='roadmap.sh' />
     <meta property='og:title' content={title} />

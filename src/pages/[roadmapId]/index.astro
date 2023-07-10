@@ -60,6 +60,7 @@ if (roadmapFAQs.length) {
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
+  ogImageUrl={roadmapData?.seo?.ogImageUrl || 'https://roadmap.sh/images/og-img.png'}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}
