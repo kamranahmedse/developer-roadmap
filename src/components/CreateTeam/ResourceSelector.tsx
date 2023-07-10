@@ -79,7 +79,7 @@ export function ResourceSelector({
           resourcesIds.length > 0 && (
             <div className="mt-4 flex flex-wrap gap-2">
               {resourcesIds.map((resource) => (
-                <div className="flex items-center rounded-md border p-2">
+                <div className="flex items-center rounded-md border p-2 min-h-[32px]">
                   <div className="text-sm leading-none text-slate-500">
                     {defaultData.find((d) => d.id === resource)?.title}
                   </div>

@@ -57,15 +57,15 @@ export function MemberActionDropdown({
     <div className="relative">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center text-sm"
+        className="flex items-center"
       >
         Actions
-        <img src={ChevronDownIcon} className="ml-2 w-3 h-3" />
+        <img src={ChevronDownIcon} className="ml-1.5 w-4 h-4" />
       </button>
 
       {
         isOpen && (
-          <div className="absolute top-full right-0 z-50 mt-1 w-full rounded-md bg-slate-800 px-2 py-2 text-white shadow-md align-right">
+          <div className="absolute top-full right-0 z-50 mt-1 w-32 rounded-md bg-slate-800 px-2 py-2 text-white shadow-md align-right">
             <ul>
               {
                 actions.map((action, index) => {

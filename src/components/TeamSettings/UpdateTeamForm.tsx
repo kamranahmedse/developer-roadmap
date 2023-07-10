@@ -12,12 +12,14 @@ import { pageProgressMessage } from '../../stores/page';
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [message, setMessage] = useState('');
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [website, setWebsite] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
   const [identifier, setIdentifier] = useState('');
+  const [canMemberSendInvite, setCanMemberSendInvite] = useState(false);
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = [
@@ -36,16 +38,20 @@ export function UpdateTeamForm() {
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
+    setError('');
+    setMessage('');
     if (!name || !teamType || !identifier) {
       setIsLoading(false);
       return;
     }
+
     const { response, error } = await httpPut(
       `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${teamId}`,
       {
         name,
         website,
         type: teamType,
+        canMemberSendInvite,
         identifier,
         ...(teamType === 'company' && { teamSize }),
         roadmapIds: roadmaps.join(','),
@@ -55,12 +61,16 @@ export function UpdateTeamForm() {
 
     if (error) {
       setIsLoading(false);
-      console.error(error);
+      setError(error.message || 'Something went wrong');
+      setMessage('');
       return;
     }
 
     if (response) {
       await loadTeam();
+      setIsLoading(false);
+      setMessage('Team updated successfully');
+      setError('');
     }
   };
 
@@ -78,6 +88,7 @@ export function UpdateTeamForm() {
     setWebsite(response.website || '');
     setTeamType(response.type);
     setIdentifier(response.identifier);
+    setCanMemberSendInvite(response.canMemberSendInvite);
     setRoadmaps(response.roadmapIds || []);
     setBestPractices(response.bestPracticeIds || []);
     if (response.teamSize) {
@@ -221,9 +232,33 @@ export function UpdateTeamForm() {
         />
 
         <div className="mt-4 flex w-full flex-col">
+          <label
+            for="can-member-send-invite"
+            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+          >Can team members invite new members?</label>
+
+          <div className="flex gap-2 items-center mt-2">
+            <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(true)}>
+              Yes
+            </button>
+            <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${!canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(false)}>
+              No
+            </button>
+          </div>
+        </div>
+
+        {error && (
+          <p className="mt-4 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+        )}
+
+        {message && (
+          <p className="mt-4 rounded-lg bg-green-100 p-2 text-green-700">{message}</p>
+        )}
+
+        <div className="mt-4 flex w-full flex-col">
           <button
             type="submit"
-            className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+            className="inline-flex w-full h-11 items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
             disabled={isDisabled || isLoading}
           >
             {isLoading ? <Spinner /> : 'Update'}

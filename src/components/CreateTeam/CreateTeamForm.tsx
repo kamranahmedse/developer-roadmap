@@ -11,6 +11,7 @@ export interface TeamDocument {
   creatorId: string;
   website?: string;
   type: 'company' | 'learning_club';
+  canMemberSendInvite: boolean;
   teamSize?:
   | '0-1'
   | '2-10'
@@ -32,6 +33,7 @@ export function CreateTeamForm() {
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
   const [identifier, setIdentifier] = useState('');
+  const [canMemberSendInvite, setCanMemberSendInvite] = useState(false);
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [bestPractices, setBestPractices] = useState<string[]>([]);
   const [isLoading, setIsLoading] = useState(false);
@@ -60,6 +62,7 @@ export function CreateTeamForm() {
         website,
         type: teamType,
         identifier,
+        canMemberSendInvite,
         ...(teamType === 'company' && { teamSize }),
         roadmapIds: roadmaps.join(','),
         bestPracticeIds: bestPractices.join(','),
@@ -184,9 +187,25 @@ export function CreateTeamForm() {
       />
 
       <div className="mt-4 flex w-full flex-col">
+        <label
+          for="can-member-send-invite"
+          className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+        >Can team members invite new members?</label>
+
+        <div className="flex gap-2 items-center mt-2">
+          <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(true)}>
+            Yes
+          </button>
+          <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${!canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(false)}>
+            No
+          </button>
+        </div>
+      </div>
+
+      <div className="mt-4 flex w-full flex-col">
         <button
           type="submit"
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black h-11 p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
           disabled={isLoading}
         >
           {isLoading ? <Spinner /> : 'Create'}
