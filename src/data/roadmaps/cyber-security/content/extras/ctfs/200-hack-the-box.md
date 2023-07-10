@@ -25,3 +25,6 @@ Hack The Box (HTB) is a popular online platform designed for security enthusiast
 - **Submit Flags and Write-ups:** Upon solving a challenge, submit the flags you found to gain points and secure your spot on the leaderboard. Additionally, once a box is retired from the platform, you can create and share write-ups of your solution technique with the community.
 
 Hack The Box is an excellent resource for anyone looking to enhance their cybersecurity skills or explore the ethical hacking domain. Whether you're a beginner or a seasoned expert, HTB offers an engaging and collaborative environment to learn and grow as a cybersecurity professional.
+
+- [HackTheBox website](https://www.hackthebox.com/)
+- [HTB Academy ](https://academy.hackthebox.com/)

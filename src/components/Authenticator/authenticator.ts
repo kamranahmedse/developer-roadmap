@@ -35,6 +35,7 @@ function handleGuest() {
     '/account/update-profile',
     '/account/notification',
     '/account/update-password',
+    '/account/settings',
     '/account/road-card',
     '/account',
     '/team/progress',

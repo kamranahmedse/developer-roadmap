@@ -65,4 +65,4 @@ As the digital world is constantly evolving, so too are cyber threats. Therefore
 
 By honing these basic IT skills, you will be better prepared to navigate and protect your digital life, as well as making the most of the technology at your fingertips.
 
-- [IT skills Training for beginners | Complete Course](https://youtu.be/on6dsip5yw0)
+- [IT skills Training for beginners | Complete Course](https://www.youtube.com/watch?v=On6dsIp5yw0)

@@ -1,0 +1,17 @@
+---
+import Popup from '../Popup/Popup.astro';
+import { DeleteAccountForm } from './DeleteAccountForm';
+---
+
+<Popup id='delete-account-popup' title='Delete Account' subtitle=''>
+  <div class='-mt-2.5'>
+    <p>
+      This will permanently delete your account and all your associated data
+      including your progress.
+    </p>
+
+    <p class="text-black font-medium -mb-2 mt-3 text-base">Please type "delete" to confirm.</p>
+
+    <DeleteAccountForm client:only />
+  </div>
+</Popup>

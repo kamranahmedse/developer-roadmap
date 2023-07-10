@@ -33,7 +33,7 @@ OpenAI has been a major contributor to this space in the past few years with the
 
 ## Training an LLM Model
 
-On a high level, training an LLM model involves thre steps i.e. data collection, training and evaluation. 
+On a high level, training an LLM model involves three steps i.e. data collection, training and evaluation. 
 
 - **Data Collection** The first step is to collect the data that will be used to train the model. The data can be collected from various sources such as Wikipedia, news articles, books, websites etc.
 

@@ -150,7 +150,9 @@ const gaPageIdentifier = Astro.url.pathname
     </slot>
 
     <Authenticator />
-    <LoginPopup />
+    <slot name="login-popup">
+      <LoginPopup />
+    </slot>
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <PageSponsor
