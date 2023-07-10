@@ -2,6 +2,7 @@ import { useEffect, useState } from "preact/hooks";
 import { useTeamId } from "../../hooks/use-team-id";
 import { httpGet } from "../../lib/http";
 import { pageProgressMessage } from "../../stores/page";
+import { getRelativeTimeString } from "../../lib/date";
 
 export type UserProgress = {
   resourceTitle: string;
@@ -21,6 +22,7 @@ export type TeamMember = {
   email: string;
   avatar: string;
   progress: UserProgress[];
+  updatedAt: string;
 }
 
 export function TeamProgressPage() {
@@ -54,53 +56,60 @@ export function TeamProgressPage() {
     return null
   }
 
-  return <div className="grid grid-cols-2 gap-2">
-    {
-      teamMembers.map(member => {
-        return (
-          <a
-            className="border p-4 rounded-md hover:bg-gray-50 h-full"
-            key={member._id}
-            href={`/team/progress/member?teamId=${teamId}&memberId=${member._id}`}
-          >
-            <div className="flex flex-col justify-between h-full">
-              <div>
-                {
-                  member.progress.map(progress => {
-                    return (
-                      <div>
-                        <span className="text-sm">
-                          {progress.resourceTitle}
-                        </span>
-                        <div className="flex items-center gap-2">
-                          {/* Progress bar */}
-                          <div className="grow relative rounded overflow-hidden">
-                            <div className="h-2 bg-gray-100 w-full" />
-                            <div style={{ width: `${progress.done / progress.total * 100}% ` }} className="absolute top-0 left-0 h-full bg-gray-400 w-full" />
-                          </div>
-                          <span className="text-xs text-gray-500">
-                            {progress.done} / {progress.total}
-                          </span>
-                        </div>
+  return (
+    <div>
+      <div className="mb-8 hidden md:block">
+        <h2 className="text-3xl font-bold sm:text-4xl">
+          Team Members
+        </h2>
+      </div>
+      <div className="grid grid-cols-2 gap-4">
+        {teamMembers.map(member => {
+          return (
+            <div
+              className="border rounded-md h-full flex flex-col min-h-[270px]"
+              key={member._id}
+            >
+              <div className="flex items-center gap-3 p-3 border-b">
+                <img src={
+                  member.avatar
+                    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
+                    : '/images/default-avatar.png'} alt={member.name || ''} className="w-8 h-8 rounded-full" />
+                <div className="grow">
+                  <h3>{member.name}</h3>
+                  <p className="text-sm truncate">{member.email}</p>
+                </div>
+              </div>
+              <div className="flex grow flex-col p-3 border-b space-y-2">
+                {member.progress.map(progress => {
+                  return (
+                    <div className="relative border rounded-md overflow-hidden p-2">
+                      <div className="relative z-10 text-sm flex items-center justify-between">
+                        <h3>{progress.resourceTitle}</h3>
+                        <span className="text-xs">{progress.done} / {progress.total}</span>
                       </div>
-                    )
-                  })
-                }
-                {
-                  member.progress.length === 0 && (
-                    <div className="text-gray-500">
-                      No progress
+                      <div className="absolute inset-0 bg-gray-100"
+                        style={{
+                          width: `${progress.done / progress.total * 100}%`,
+                        }}
+                      />
                     </div>
                   )
-                }
+                })}
+                {member.progress.length === 0 && (
+                  <div className="text-gray-500">
+                    No progress
+                  </div>
+                )}
               </div>
-              <div className="mt-3">
-                {member.name}
+
+              <div className="p-3 flex items-center justify-between text-sm">
+                <span>{getRelativeTimeString(member?.updatedAt)}</span>
+                <a href={`/team/progress/member?teamId=${teamId}&memberId=${member._id}`} className="ml-3 hover:underline">View Details</a>
               </div>
             </div>
-          </a>
-        )
-      })
-    }
-  </div>;
+          )
+        })}
+      </div>
+    </div>)
 }
