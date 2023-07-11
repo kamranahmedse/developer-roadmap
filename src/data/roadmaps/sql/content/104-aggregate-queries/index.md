@@ -7,7 +7,8 @@ SQL aggregate functions are inbuilt functions that are used to perform some calc
 **1. COUNT()**
    
 Counts the number of rows. 
-   ```
+
+   ```sql
    SELECT COUNT(column_name) 
    FROM table_name 
    WHERE condition;
@@ -17,7 +18,7 @@ Counts the number of rows.
    
 Returns the sum of a numeric column.
    
-   ```
+   ```sql
    SELECT SUM(column_name) 
    FROM table_name 
    WHERE condition;
@@ -26,7 +27,8 @@ Returns the sum of a numeric column.
 **3. AVG()**
    
 Returns the average value of a numeric column.
-   ```
+
+   ```sql
    SELECT AVG(column_name) 
    FROM table_name 
    WHERE condition;
@@ -35,7 +37,8 @@ Returns the average value of a numeric column.
 **4. MIN()**
    
 Returns the smallest value of the selected column.
-   ```
+
+   ```sql
    SELECT MIN(column_name) 
    FROM table_name 
    WHERE condition;
@@ -44,7 +47,8 @@ Returns the smallest value of the selected column.
 **5. MAX()**
    
 Returns the largest value of the selected column.
-   ```
+
+   ```sql
    SELECT MAX(column_name) 
    FROM table_name 
    WHERE condition;
@@ -56,7 +60,7 @@ These functions ignore NULL values.
 
 To separate the results into groups of accumulated data, you can use the GROUP BY clause.
    
-```
+```sql
 SELECT column1, aggregate_function(column2)
 FROM table
 GROUP BY column1;
@@ -73,8 +77,4 @@ GROUP BY column1
 HAVING conditions;
 ```
 
-## Conclusion
-
-Aggregate queries are simply a way of summarizing information in your database. Although they are a powerful tool, they can become complex very quickly, especially if you start nesting them together or combining multiple aggregate functions in a single query. 
-
-> Note: The real power of aggregate functions comes when you combine them with the WHERE or HAVING clause, allowing you to filter the data that you are summarizing.
+Aggregate queries are simply a way of summarizing information in your database. Although they are a powerful tool, they can become complex very quickly, especially if you start nesting them together or combining multiple aggregate functions in a single query.
