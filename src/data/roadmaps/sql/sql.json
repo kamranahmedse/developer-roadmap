@@ -529,7 +529,7 @@
           "x": "1211",
           "y": "503",
           "properties": {
-            "controlName": "102-introduction:postgresql-vs-others"
+            "controlName": "102-introduction:sql-vs-nosql"
           },
           "children": {
             "controls": {
@@ -2258,7 +2258,7 @@
           "x": "868",
           "y": "495",
           "properties": {
-            "controlName": "100-intro"
+            "controlName": "100-introduction"
           },
           "children": {
             "controls": {
