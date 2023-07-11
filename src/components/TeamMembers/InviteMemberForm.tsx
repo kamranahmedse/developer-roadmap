@@ -1,12 +1,13 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpDelete, httpPost } from '../../lib/http';
 import { useParams } from '../../hooks/use-params';
+import {useTeamId} from "../../hooks/use-team-id";
 
 export function InviteMemberForm() {
   const [email, setEmail] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const { teamId } = useParams<{ teamId: string }>();
+  const { teamId } = useTeamId();
 
   useEffect(() => {
     setError('');

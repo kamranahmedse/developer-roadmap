@@ -7,7 +7,6 @@ const { activePageId, activePageTitle } = Astro.props;
 export interface Props {
   activePageId: string;
   activePageTitle: string;
-  type?: 'team' | 'account';
 }
 
 const sidebarLinks = [
@@ -76,6 +75,17 @@ const sidebarLinks = [
     id='settings-menu-dropdown'
     class='absolute left-0 right-0 z-10 mt-1 hidden space-y-1.5 bg-white p-2 shadow-lg'
   >
+    <li>
+      <a
+        href='/team'
+        class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+          activePageId === 'team' ? 'bg-slate-100' : ''
+        }`}
+      >
+        <AstroIcon icon={'users'} class={`h-4 w-4 mr-2`} />
+        Teams
+      </a>
+    </li>
     {
       sidebarLinks.map((sidebarLink) => {
         const isActive = activePageId === sidebarLink.id;
@@ -103,7 +113,9 @@ const sidebarLinks = [
 
 <div class='container flex min-h-screen items-stretch'>
   <!-- Start Desktop Sidebar -->
-  <aside class='hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block'>
+  <aside
+    class='hidden w-[195px] shrink-0 border-r border-slate-200 py-10 md:block'
+  >
     <TeamDropdown client:load />
     <hr class='my-4' />
     <nav>
@@ -131,7 +143,12 @@ const sidebarLinks = [
                   </span>
 
                   {sidebarLink.id === 'notification' && (
-                    <span class='relative mr-1 flex items-center' id="notification-count">0</span>
+                    <span
+                      class='relative mr-1 flex items-center'
+                      id='notification-count'
+                    >
+                      0
+                    </span>
                   )}
 
                   {sidebarLink.isNew && !isActive && (

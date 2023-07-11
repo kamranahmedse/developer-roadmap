@@ -8,6 +8,7 @@ import { ResourceSelector } from '../CreateTeam/ResourceSelector';
 import { useParams } from '../../hooks/use-params';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../../stores/page';
+import {useTeamId} from "../../hooks/use-team-id";
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -32,7 +33,7 @@ export function UpdateTeamForm() {
     '1000+',
   ];
   const [isDisabled, setIsDisabled] = useState(false);
-  const { teamId } = useParams<{ teamId: string }>();
+  const { teamId } = useTeamId();
   const user = useAuth();
 
   const handleSubmit = async (e: Event) => {
@@ -124,7 +125,7 @@ export function UpdateTeamForm() {
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
             : '/images/default-avatar.png'
         }
-        teamId={teamId}
+        teamId={teamId!}
       />
       <form onSubmit={handleSubmit}>
         <div className="flex w-full flex-col mt-4">

@@ -105,7 +105,7 @@ export function TeamProgressPage() {
 
               <div className="p-3 flex items-center justify-between text-sm">
                 <span>{getRelativeTimeString(member?.updatedAt)}</span>
-                <a href={`/team/progress/member?teamId=${teamId}&memberId=${member._id}`} className="ml-3 hover:underline">View Details</a>
+                <a href={`/team/progress/member?t=${teamId}&memberId=${member._id}`} className="ml-3 hover:underline">View Details</a>
               </div>
             </div>
           )

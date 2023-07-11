@@ -6,6 +6,7 @@ import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { LeaveTeamButton } from './LeaveTeamButton';
+import {useTeamId} from "../../hooks/use-team-id";
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -28,7 +29,7 @@ export function TeamMembersPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
   const [team, setTeam] = useState<TeamDocument>();
 
-  const { teamId } = useParams<{ teamId: string }>();
+  const { teamId} = useTeamId();
   const user = useAuth();
 
   async function loadTeam() {

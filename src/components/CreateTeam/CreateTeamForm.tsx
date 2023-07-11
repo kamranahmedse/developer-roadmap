@@ -76,7 +76,7 @@ export function CreateTeamForm() {
     }
 
     if (response) {
-      window.location.href = `/team/progress?teamId=${response._id}`;
+      window.location.href = `/team/progress?t=${response._id}`;
     }
   };
 

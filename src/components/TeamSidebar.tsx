@@ -14,19 +14,19 @@ export const TeamSidebar: FunctionalComponent<{
   const sidebarLinks = [
     {
       title: 'Progress',
-      href: `/team/progress?teamId=${teamId}`,
+      href: `/team/progress?t=${teamId}`,
       id: 'progress',
       icon: TeamProgress,
     },
     {
       title: 'Members',
-      href: `/team/members?teamId=${teamId}`,
+      href: `/team/members?t=${teamId}`,
       id: 'members',
       icon: GroupIcon,
     },
     {
       title: 'Settings',
-      href: `/team/settings?teamId=${teamId}`,
+      href: `/team/settings?t=${teamId}`,
       id: 'settings',
       icon: SettingsIcon,
     },

@@ -2,12 +2,13 @@ import { useEffect, useState } from 'preact/hooks';
 import { httpDelete } from '../../lib/http';
 import { useParams } from '../../hooks/use-params';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
+import {useTeamId} from "../../hooks/use-team-id";
 
 export function DeleteTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const [confirmationText, setConfirmationText] = useState('');
-  const { teamId } = useParams<{ teamId: string }>();
+  const { teamId } = useTeamId();
 
   useEffect(() => {
     setError('');
