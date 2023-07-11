@@ -95,7 +95,7 @@ npm install
 npm run dev
 ```
 
-Note: Cloning the entire repository results in a ≈1.7GB download. If you don't need the entire history you can use the `depth` parameter to reduce clone size.
+Note: use the `depth` parameter to reduce the clone size and speed up the clone.
 
 ```sh
 git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
