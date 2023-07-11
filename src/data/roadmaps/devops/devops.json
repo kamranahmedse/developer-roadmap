@@ -14438,7 +14438,7 @@
           "x": "190",
           "y": "548",
           "properties": {
-            "controlName": "ext_link:roadmap.sh/python"
+            "controlName": "ext_link:roadmap.sh/backend"
           },
           "children": {
             "controls": {
@@ -14520,7 +14520,7 @@
           "x": "190",
           "y": "585",
           "properties": {
-            "controlName": "ext_link:roadmap.sh/python"
+            "controlName": "ext_link:roadmap.sh/best-practices/aws"
           },
           "children": {
             "controls": {
