@@ -95,6 +95,12 @@ npm install
 npm run dev
 ```
 
+Note: Cloning the entire repository results in a ≈1.7GB download. If you don't need the entire history you can use the `depth` parameter to reduce clone size.
+
+```sh
+git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
+```
+
 ## Contribution
 
 > Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
