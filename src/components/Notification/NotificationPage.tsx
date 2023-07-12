@@ -68,7 +68,7 @@ export function NotificationPage() {
         notifications.length === 0 && (
           <div className="flex items-center justify-center mt-6">
             <p className="text-gray-400">
-              No notifications, you can <a href="/create-team" className="text-blue-500 underline hover:no-underline">create a team</a> and invite your friends to join.
+              No notifications, you can <a href="/team/new" className="text-blue-500 underline hover:no-underline">create a team</a> and invite your friends to join.
             </p>
           </div>
         )

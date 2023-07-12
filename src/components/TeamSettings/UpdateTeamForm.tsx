@@ -3,7 +3,6 @@ import { httpGet, httpPut } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner';
 import { useAuth } from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
-import { IdentiferInput } from '../CreateTeam/IdentifierInput';
 import { ResourceSelector } from '../CreateTeam/ResourceSelector';
 import { useParams } from '../../hooks/use-params';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
@@ -19,7 +18,6 @@ export function UpdateTeamForm() {
   const [website, setWebsite] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
-  const [identifier, setIdentifier] = useState('');
   const [canMemberSendInvite, setCanMemberSendInvite] = useState(false);
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [bestPractices, setBestPractices] = useState<string[]>([]);
@@ -41,7 +39,7 @@ export function UpdateTeamForm() {
     setIsLoading(true);
     setError('');
     setMessage('');
-    if (!name || !teamType || !identifier) {
+    if (!name || !teamType) {
       setIsLoading(false);
       return;
     }
@@ -53,7 +51,6 @@ export function UpdateTeamForm() {
         website,
         type: teamType,
         canMemberSendInvite,
-        identifier,
         ...(teamType === 'company' && { teamSize }),
         roadmapIds: roadmaps.join(','),
         bestPracticeIds: bestPractices.join(','),
@@ -88,7 +85,6 @@ export function UpdateTeamForm() {
     setAvatar(response.avatar || '');
     setWebsite(response.website || '');
     setTeamType(response.type);
-    setIdentifier(response.identifier);
     setCanMemberSendInvite(response.canMemberSendInvite);
     setRoadmaps(response.roadmapIds || []);
     setBestPractices(response.bestPracticeIds || []);
@@ -216,11 +212,6 @@ export function UpdateTeamForm() {
           </div>
         )}
 
-        <IdentiferInput
-          value={identifier}
-          onChange={setIdentifier}
-          disbabled={isDisabled}
-        />
         <ResourceSelector
           type="Roadmaps"
           resourcesIds={roadmaps}

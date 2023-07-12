@@ -6,6 +6,7 @@ import GuideIcon from '../../icons/guide.svg';
 import HomeIcon from '../../icons/home.svg';
 import RoadmapIcon from '../../icons/roadmap.svg';
 import UserIcon from '../../icons/user.svg';
+import GroupIcon from '../../icons/group.svg';
 import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
@@ -25,6 +26,13 @@ const defaultPages: PageType[] = [
     title: 'Account',
     group: 'Pages',
     icon: UserIcon,
+    isProtected: true,
+  },
+  {
+    url: '/team',
+    title: 'Teams',
+    group: 'Pages',
+    icon: GroupIcon,
     isProtected: true,
   },
   { url: '/roadmaps', title: 'Roadmaps', group: 'Pages', icon: RoadmapIcon },

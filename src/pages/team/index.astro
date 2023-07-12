@@ -10,7 +10,7 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
   noIndex={true}
   initialLoadingMessage={'Loading teams'}
 >
-  <AccountSidebar activePageId='team' activePageTitle='Teams'>
+  <AccountSidebar hasDesktopSidebar={false} activePageId='team' activePageTitle='Teams'>
     <TeamsList client:load />
   </AccountSidebar>
 </AccountLayout>

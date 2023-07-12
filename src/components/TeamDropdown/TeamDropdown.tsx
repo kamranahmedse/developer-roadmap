@@ -102,7 +102,7 @@ export function TeamDropdown() {
           </ul>
           <a
             className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
-            href="/create-team"
+            href="/team/new"
           >
             <span>+</span>
             <span>New Team</span>

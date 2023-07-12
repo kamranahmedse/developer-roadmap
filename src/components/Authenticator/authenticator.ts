@@ -38,6 +38,8 @@ function handleGuest() {
     '/account/settings',
     '/account/road-card',
     '/account',
+    '/team',
+    '/team/new',
     '/team/progress',
     '/team/members',
     '/team/settings'

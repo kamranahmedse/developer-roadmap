@@ -31,7 +31,7 @@ export function TeamsList() {
   }, []);
 
   return (
-    <div className="relative mr-2">
+    <div className="relative max-w-[500px] mx-auto">
       <div className="w-full px-2 py-2">
         <div className={'mb-8 hidden md:block'}>
           <h2 className={'text-3xl font-bold sm:text-4xl'}>Teams</h2>
@@ -89,9 +89,9 @@ export function TeamsList() {
         </ul>
         <a
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-          href="/create-team"
+          href="/team/new"
         >
-          <span>+</span>
+          <span class='mr-2'>+</span>
           <span>New Team</span>
         </a>
       </div>
