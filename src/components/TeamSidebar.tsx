@@ -5,10 +5,13 @@ import { useTeamId } from '../hooks/use-team-id';
 import TeamProgress from '../icons/team-progress.svg';
 import SettingsIcon from '../icons/cog.svg';
 import GroupIcon from '../icons/group.svg';
+import { useState } from 'preact/hooks';
 
 export const TeamSidebar: FunctionalComponent<{
   activePageId: string;
 }> = ({ activePageId, children }) => {
+  const [menuShown, setMenuShown] = useState(false);
+
   const { teamId } = useTeamId();
 
   const sidebarLinks = [
@@ -38,35 +41,51 @@ export const TeamSidebar: FunctionalComponent<{
         <button
           class="flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center text-sm font-medium text-gray-900"
           id="settings-menu"
+          aria-haspopup="true"
+          aria-expanded="true"
+          onClick={() => setMenuShown(!menuShown)}
         >
           {
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          <img src={ChevronDown} class="h-4 w-4" />
+          <img alt='menu' src={ChevronDown} class="h-4 w-4" />
         </button>
-        <ul
-          id="settings-menu-dropdown"
-          class="absolute left-0 right-0 z-10 mt-1 hidden space-y-1.5 bg-white p-2 shadow-lg"
-        >
-          {sidebarLinks.map((sidebarLink) => {
-            const isActive = activePageId === sidebarLink.id;
-
-            return (
-              <li>
-                <a
-                  href={sidebarLink.href}
+        {menuShown && (
+          <ul
+            id="settings-menu-dropdown"
+            class="absolute left-0 right-0 z-50 mt-1 space-y-1.5 bg-white p-2 shadow-lg"
+          >
+            <li>
+              <a
+                  href='/team'
                   class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
-                    isActive ? 'bg-slate-100' : ''
+                      activePageId === 'team' ? 'bg-slate-100' : ''
                   }`}
-                >
-                  <img src={sidebarLink.icon} className="mr-2 h-4 w-4" />
-                  {sidebarLink.title}
-                </a>
-              </li>
-            );
-          })}
-        </ul>
+              >
+                <img alt={'teams'} src={GroupIcon} class={`h-4 w-4 mr-2`} />
+                Other Teams
+              </a>
+            </li>
+            {sidebarLinks.map((sidebarLink) => {
+              const isActive = activePageId === sidebarLink.id;
+
+              return (
+                <li>
+                  <a
+                    href={sidebarLink.href}
+                    class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+                      isActive ? 'bg-slate-100' : ''
+                    }`}
+                  >
+                    <img alt={'menu icon'} src={sidebarLink.icon} className="mr-2 h-4 w-4" />
+                    {sidebarLink.title}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        )}
       </div>
 
       <div class="container flex min-h-screen items-stretch">
@@ -89,7 +108,7 @@ export const TeamSidebar: FunctionalComponent<{
                       }`}
                     >
                       <span class="flex flex-grow items-center">
-                        <img src={sidebarLink.icon} className="mr-2 h-4 w-4" />
+                        <img alt='menu icon' src={sidebarLink.icon} className="mr-2 h-4 w-4" />
                         {sidebarLink.title}
                       </span>
                     </a>
