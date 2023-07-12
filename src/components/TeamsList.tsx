@@ -7,23 +7,21 @@ import { useOutsideClick } from '../hooks/use-outside-click';
 import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../stores/page';
 
-type TeamListResponse = {
-  data: TeamDocument[];
-};
+type TeamListResponse = TeamDocument[];
 
 export function TeamsList() {
   const [teamList, setTeamList] = useState<TeamDocument[]>([]);
   const user = useAuth();
   async function getAllTeam() {
     const { response, error } = await httpGet<TeamListResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-team`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
     );
-    if (error || !response?.data) {
+    if (error || !response) {
       alert(error?.message || 'Something went wrong');
       return;
     }
 
-    setTeamList(response?.data);
+    setTeamList(response);
   }
 
   useEffect(() => {

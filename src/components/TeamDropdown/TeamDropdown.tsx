@@ -30,15 +30,13 @@ export function TeamDropdown() {
   });
 
   async function getAllTeams() {
-    const { response, error } = await httpGet<{
-      data: TeamDocument[];
-    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-team`);
-    if (error || !response?.data) {
+    const { response, error } = await httpGet<TeamDocument[]>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`);
+    if (error || !response) {
       alert(error?.message || 'Something went wrong');
       return;
     }
 
-    setTeamList(response?.data);
+    setTeamList(response);
   }
 
   useEffect(() => {
