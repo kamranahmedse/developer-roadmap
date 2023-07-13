@@ -2,6 +2,7 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import type { ValidTeamType } from './Step0';
+import type { TeamDocument } from './CreateTeamForm';
 
 export const validTeamSizes = [
   '0-1',
@@ -16,13 +17,14 @@ export const validTeamSizes = [
 export type ValidTeamSize = (typeof validTeamSizes)[number];
 
 type Step1Props = {
+  team?: TeamDocument;
   selectedTeamType: ValidTeamType;
-  onStepComplete: (teamId: string) => void;
+  onStepComplete: (team: TeamDocument) => void;
   onBack: () => void;
 };
 
 export function Step1(props: Step1Props) {
-  const { selectedTeamType, onBack, onStepComplete } = props;
+  const { team, selectedTeamType, onBack, onStepComplete } = props;
   const [error, setError] = useState('');
 
   const nameRef = useRef<HTMLElement>(null);
@@ -37,13 +39,17 @@ export function Step1(props: Step1Props) {
 
   const [isLoading, setIsLoading] = useState(false);
 
-  const [name, setName] = useState('');
-  const [website, setWebsite] = useState('');
-  const [linkedInUrl, setLinkedInUrl] = useState('');
-  const [gitHubUrl, setGitHubUrl] = useState('');
-  const [teamSize, setTeamSize] = useState<ValidTeamSize>();
+  const [name, setName] = useState(team?.name || '');
+  const [website, setWebsite] = useState(team?.links.website || '');
+  const [linkedInUrl, setLinkedInUrl] = useState(team?.links.linkedIn || '');
+  const [gitHubUrl, setGitHubUrl] = useState(team?.links.github || '');
+  const [teamSize, setTeamSize] = useState<ValidTeamSize>(
+    team?.teamSize || ('' as any)
+  );
 
-  const [canMemberSendInvite, setCanMemberSendInvite] = useState(false);
+  const [canMemberSendInvite, setCanMemberSendInvite] = useState(
+    team?.canMemberSendInvite
+  );
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
@@ -76,7 +82,7 @@ export function Step1(props: Step1Props) {
       return;
     }
 
-    onStepComplete(response._id);
+    onStepComplete(response as TeamDocument);
   };
 
   return (

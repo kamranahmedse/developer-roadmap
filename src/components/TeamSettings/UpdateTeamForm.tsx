@@ -1,12 +1,11 @@
-import { useEffect, useState } from 'preact/hooks';
-import { httpGet, httpPut } from '../../lib/http';
-import { Spinner } from '../ReactIcons/Spinner';
-import { useAuth } from '../../hooks/use-auth';
+import {useEffect, useState} from 'preact/hooks';
+import {httpGet, httpPut} from '../../lib/http';
+import {Spinner} from '../ReactIcons/Spinner';
+import {useAuth} from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
-import { ResourceSelector } from '../CreateTeam/ResourceSelector';
-import { useParams } from '../../hooks/use-params';
-import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
-import { pageProgressMessage } from '../../stores/page';
+import {ResourceSelector} from '../CreateTeam/ResourceSelector';
+import type {TeamDocument} from '../CreateTeam/CreateTeamForm';
+import {pageProgressMessage} from '../../stores/page';
 import {useTeamId} from "../../hooks/use-team-id";
 
 export function UpdateTeamForm() {
@@ -86,8 +85,6 @@ export function UpdateTeamForm() {
     setWebsite(response.website || '');
     setTeamType(response.type);
     setCanMemberSendInvite(response.canMemberSendInvite);
-    setRoadmaps(response.roadmapIds || []);
-    setBestPractices(response.bestPracticeIds || []);
     if (response.teamSize) {
       setTeamSize(response.teamSize);
     }

@@ -6,6 +6,6 @@ import { CreateTeamForm } from '../../components/CreateTeam/CreateTeamForm';
 
 <AccountLayout title='Create Team' noIndex={true}>
   <AccountSidebar hasDesktopSidebar={false}  activePageId='create-team' activePageTitle='Create Team'>
-    <CreateTeamForm client:load />
+    <CreateTeamForm client:only />
   </AccountSidebar>
 </AccountLayout>
