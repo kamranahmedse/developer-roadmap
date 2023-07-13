@@ -3,6 +3,7 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import type { ValidTeamType } from './Step0';
 import type { TeamDocument } from './CreateTeamForm';
+import { NextButton } from './NextButton';
 
 export const validTeamSizes = [
   '0-1',
@@ -40,9 +41,9 @@ export function Step1(props: Step1Props) {
   const [isLoading, setIsLoading] = useState(false);
 
   const [name, setName] = useState(team?.name || '');
-  const [website, setWebsite] = useState(team?.links.website || '');
-  const [linkedInUrl, setLinkedInUrl] = useState(team?.links.linkedIn || '');
-  const [gitHubUrl, setGitHubUrl] = useState(team?.links.github || '');
+  const [website, setWebsite] = useState(team?.links?.website || '');
+  const [linkedInUrl, setLinkedInUrl] = useState(team?.links?.linkedIn || '');
+  const [gitHubUrl, setGitHubUrl] = useState(team?.links?.github || '');
   const [teamSize, setTeamSize] = useState<ValidTeamSize>(
     team?.teamSize || ('' as any)
   );
@@ -243,25 +244,12 @@ export function Step1(props: Step1Props) {
           <span className="mr-1">&larr;</span>
           Previous Step
         </button>
-        <button
-          type="submit"
-          disabled={isLoading}
-          className={
-            'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
-          }
-        >
-          {isLoading ? (
-            <span className={'flex items-center justify-center'}>
-              <Spinner />
-              <span className="ml-2">Creating Team</span>
-            </span>
-          ) : (
-            <>
-              Next Step
-              <span className="ml-1">&rarr;</span>
-            </>
-          )}
-        </button>
+        <NextButton
+          isLoading={isLoading}
+          text={'Next Step'}
+          type={'submit'}
+          loadingMessage={'Creating team ..'}
+        />
       </div>
     </form>
   );

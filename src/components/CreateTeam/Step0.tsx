@@ -1,5 +1,9 @@
 import BuildingIcon from '../../icons/building.svg';
 import UsersIcon from '../../icons/users.svg';
+import type { TeamDocument } from './CreateTeamForm';
+import { httpPut } from '../../lib/http';
+import { useState } from 'preact/hooks';
+import { NextButton } from './NextButton';
 
 export const validTeamTypes = [
   {
@@ -19,13 +23,51 @@ export const validTeamTypes = [
 export type ValidTeamType = (typeof validTeamTypes)[number]['value'];
 
 type Step0Props = {
+  team?: TeamDocument;
   selectedTeamType: ValidTeamType;
   setSelectedTeamType: (teamType: ValidTeamType) => void;
   onStepComplete: () => void;
 };
 
 export function Step0(props: Step0Props) {
-  const { selectedTeamType, onStepComplete, setSelectedTeamType } = props;
+  const { team, selectedTeamType, onStepComplete, setSelectedTeamType } = props;
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState<string>();
+
+  async function onNextClick() {
+    if (!team) {
+      onStepComplete();
+      return;
+    }
+
+    setIsLoading(true);
+    setError('');
+
+    const { response, error } = await httpPut(
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team._id}`,
+      {
+        name: team.name,
+        website: team?.links?.website || undefined,
+        type: selectedTeamType,
+        canMemberSendInvite: team.canMemberSendInvite,
+        gitHubUrl: team?.links?.github || undefined,
+        ...(selectedTeamType === 'company' && {
+          teamSize: team.teamSize,
+          linkedInUrl: team?.links?.linkedIn || undefined,
+        }),
+      }
+    );
+
+    if (error || !response) {
+      setIsLoading(false);
+      setError(error?.message || 'Something went wrong');
+      return;
+    }
+
+    setIsLoading(false);
+    setError('');
+    onStepComplete();
+  }
 
   return (
     <>
@@ -55,6 +97,10 @@ export function Step0(props: Step0Props) {
           </button>
         ))}
       </div>
+
+      {/*Error message*/}
+      {error && <div className="mt-4 text-sm text-red-500">{error}</div>}
+
       <div className="mt-4 flex flex-row items-center justify-between gap-2">
         <a
           href="/account"
@@ -64,16 +110,13 @@ export function Step0(props: Step0Props) {
         >
           Cancel
         </a>
-        <button
-          onClick={() => onStepComplete()}
-          disabled={!selectedTeamType}
-          className={
-            'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-20'
-          }
-        >
-          Next Step&nbsp;
-          <span className="ml-1">&rarr;</span>
-        </button>
+        <NextButton
+          type={'button'}
+          onClick={onNextClick}
+          isLoading={isLoading}
+          text={'Next Step'}
+          loadingMessage={'Updating team ..'}
+        />
       </div>
     </>
   );

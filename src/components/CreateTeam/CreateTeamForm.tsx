@@ -81,6 +81,7 @@ export function CreateTeamForm() {
   if (stepIndex === 0) {
     stepForm = (
       <Step0
+        team={team}
         selectedTeamType={selectedTeamType}
         setSelectedTeamType={setSelectedTeamType}
         onStepComplete={() => {
