@@ -1,11 +1,11 @@
-import {useEffect, useState} from 'preact/hooks';
-import {Stepper} from '../Stepper';
-import {Step0, ValidTeamType} from './Step0';
-import {Step1, ValidTeamSize} from './Step1';
-import {Step2} from './Step2';
-import {httpGet} from '../../lib/http';
-import {getUrlParams} from '../../lib/browser';
-import {pageProgressMessage} from "../../stores/page";
+import { useEffect, useState } from 'preact/hooks';
+import { Stepper } from '../Stepper';
+import { Step0, ValidTeamType } from './Step0';
+import { Step1, ValidTeamSize } from './Step1';
+import { Step2 } from './Step2';
+import { httpGet } from '../../lib/http';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
+import { pageProgressMessage } from '../../stores/page';
 
 export interface TeamDocument {
   _id?: string;
@@ -13,10 +13,10 @@ export interface TeamDocument {
   avatar?: string;
   creatorId: string;
   links: {
-    website?: string
+    website?: string;
     github?: string;
     linkedIn?: string;
-  },
+  };
   website?: string;
   type: ValidTeamType;
   canMemberSendInvite: boolean;
@@ -85,44 +85,51 @@ export function CreateTeamForm() {
         selectedTeamType={selectedTeamType}
         setSelectedTeamType={setSelectedTeamType}
         onStepComplete={() => {
+          if (team?._id) {
+            setUrlParams({ t: team._id, s: '1' });
+          }
+
           setCompletedSteps([0]);
           setStepIndex(1);
         }}
       />
     );
   } else if (stepIndex === 1) {
-    console.log(team, selectedTeamType);
     stepForm = (
       <Step1
         team={team}
-        onBack={() => setStepIndex(0)}
+        onBack={() => {
+          if (team?._id) {
+            setUrlParams({ t: team._id, s: '0' });
+          }
+
+          setStepIndex(0);
+        }}
         onStepComplete={(team: TeamDocument) => {
           const createdTeamId = team._id!;
 
-          // Update the URL and attach the new roadmap type
-          if (window?.history?.pushState) {
-            const url = new URL(window.location.href);
+          setUrlParams({ t: createdTeamId, s: '2' });
 
-            url.searchParams.delete('t');
-            url.searchParams.delete('s');
-            url.searchParams.set('t', createdTeamId);
-            url.searchParams.set('s', '2');
-
-            window.history.pushState(null, '', url.toString());
-
-            setCompletedSteps([0, 1]);
-            setStepIndex(2);
-            setTeam(team);
-          } else {
-            window.location.href = `/team/new?t=${createdTeamId}&s=2`;
-          }
+          setCompletedSteps([0, 1]);
+          setStepIndex(2);
+          setTeam(team);
         }}
+
         selectedTeamType={selectedTeamType}
       />
     );
   } else if (stepIndex === 2) {
     stepForm = (
-      <Step2 onBack={() => setStepIndex(1)} onNext={() => setStepIndex(3)} />
+      <Step2
+        onBack={() => {
+          if (team) {
+            setUrlParams({ t: team._id!, s: '1' });
+          }
+
+          setStepIndex(1);
+        }}
+        onNext={() => setStepIndex(3)}
+      />
     );
   }
 
