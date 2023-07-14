@@ -17,7 +17,6 @@ export interface TeamDocument {
     github?: string;
     linkedIn?: string;
   };
-  website?: string;
   type: ValidTeamType;
   canMemberSendInvite: boolean;
   teamSize?: ValidTeamSize;

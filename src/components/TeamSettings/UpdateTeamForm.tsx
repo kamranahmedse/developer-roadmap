@@ -82,7 +82,7 @@ export function UpdateTeamForm() {
 
     setName(response.name);
     setAvatar(response.avatar || '');
-    setWebsite(response.website || '');
+    setWebsite(response?.links?.website || '');
     setTeamType(response.type);
     setCanMemberSendInvite(response.canMemberSendInvite);
     if (response.teamSize) {

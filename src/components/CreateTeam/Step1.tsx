@@ -1,6 +1,5 @@
-import { Spinner } from '../ReactIcons/Spinner';
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { httpPost } from '../../lib/http';
+import { AppError, httpPost, httpPut } from '../../lib/http';
 import type { ValidTeamType } from './Step0';
 import type { TeamDocument } from './CreateTeamForm';
 import { NextButton } from './NextButton';
@@ -60,30 +59,72 @@ export function Step1(props: Step1Props) {
       return;
     }
 
-    const { response, error } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-create-team`,
-      {
-        name,
-        website: website || undefined,
-        type: selectedTeamType,
-        canMemberSendInvite,
-        gitHubUrl: gitHubUrl || undefined,
-        ...(selectedTeamType === 'company' && {
-          teamSize,
-          linkedInUrl: linkedInUrl || undefined,
-        }),
-        roadmapIds: [],
-        bestPracticeIds: [],
+    let response: TeamDocument | undefined;
+    let error: AppError | undefined;
+
+    if (!team?._id) {
+      ({ response, error } = await httpPost(
+        `${import.meta.env.PUBLIC_API_URL}/v1-create-team`,
+        {
+          name,
+          website: website || undefined,
+          type: selectedTeamType,
+          canMemberSendInvite,
+          gitHubUrl: gitHubUrl || undefined,
+          ...(selectedTeamType === 'company' && {
+            teamSize,
+            linkedInUrl: linkedInUrl || undefined,
+          }),
+          roadmapIds: [],
+          bestPracticeIds: [],
+        }
+      ));
+
+      if (error || !response?._id) {
+        setError(error?.message || 'Something went wrong. Please try again.');
+        setIsLoading(false);
+        return;
       }
-    );
 
-    if (error || !response?._id) {
-      setError(error?.message || 'Something went wrong. Please try again.');
-      setIsLoading(false);
-      return;
+      onStepComplete(response as TeamDocument);
+    } else {
+      ({ response, error } = await httpPut(
+        `${import.meta.env.PUBLIC_API_URL}/v1-update-team/${team._id}`,
+        {
+          name,
+          website: website || undefined,
+          type: selectedTeamType,
+          canMemberSendInvite,
+          gitHubUrl: gitHubUrl || undefined,
+          ...(selectedTeamType === 'company' && {
+            teamSize,
+            linkedInUrl: linkedInUrl || undefined,
+          }),
+          roadmapIds: [],
+          bestPracticeIds: [],
+        }
+      ));
+
+      if (error || (response as any)?.status !== 'ok') {
+        setError(error?.message || 'Something went wrong. Please try again.');
+        setIsLoading(false);
+        return;
+      }
+
+      onStepComplete({
+        ...team,
+        name,
+        _id: team._id,
+        links: {
+          website: website || team?.links?.website,
+          linkedIn: linkedInUrl || team?.links?.linkedIn,
+          github: gitHubUrl || team?.links?.github,
+        },
+        type: selectedTeamType,
+        canMemberSendInvite: canMemberSendInvite!,
+        teamSize: teamSize!,
+      });
     }
-
-    onStepComplete(response as TeamDocument);
   };
 
   return (

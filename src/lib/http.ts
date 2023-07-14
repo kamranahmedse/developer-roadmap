@@ -5,11 +5,13 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 type HttpOptionsType = RequestInit | { headers: Record<string, any> };
 
 type AppResponse = Record<string, any>;
-type FetchError = {
+
+export type FetchError = {
   status: number;
   message: string;
 };
-type AppError = {
+
+export type AppError = {
   status: number;
   message: string;
   errors?: { message: string; location: string }[];
