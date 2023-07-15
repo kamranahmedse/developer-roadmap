@@ -1,20 +1,23 @@
 import { RoadmapSelector } from './RoadmapSelector';
 import { useEffect, useState } from 'preact/hooks';
 import { Spinner } from '../ReactIcons/Spinner';
+import type { TeamDocument } from './CreateTeamForm';
 
 type Step2Props = {
+  team?: TeamDocument;
   onBack: () => void;
   onNext: () => void;
 };
 
 export function Step2(props: Step2Props) {
-  const { onBack, onNext } = props;
+  const { team, onBack, onNext } = props;
 
   const [selectedRoadmaps, setSelectedRoadmaps] = useState<string[]>([]);
 
   return (
     <>
       <RoadmapSelector
+        team={team}
         selectedRoadmapIds={selectedRoadmaps}
         setSelectedRoadmapIds={setSelectedRoadmaps}
       />

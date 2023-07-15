@@ -1,18 +1,23 @@
 import { useEffect, useState } from 'preact/hooks';
 import { SearchSelector, OptionType } from '../SearchSelector';
-import { httpGet } from '../../lib/http';
+import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import XIcon from '../../icons/close-dark.svg';
 import SearchIcon from '../../icons/search.svg';
+import { pageProgressMessage } from '../../stores/page';
+import type { TeamDocument } from './CreateTeamForm';
 
 type RoadmapSelectorProps = {
+  team?: TeamDocument;
   selectedRoadmapIds: string[];
   setSelectedRoadmapIds: (resourcesIds: string[]) => void;
 };
 
 export function RoadmapSelector(props: RoadmapSelectorProps) {
-  const { selectedRoadmapIds, setSelectedRoadmapIds } = props;
+  const { selectedRoadmapIds, setSelectedRoadmapIds, team } = props;
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
+
+  const [error, setError] = useState<string>('');
 
   async function getData() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -37,12 +42,30 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     return response;
   }
 
-  const onSelect = (value: OptionType) => {
-    if (selectedRoadmapIds.includes(value.value)) {
+  const addTeamResource = async (roadmapId: string) => {
+    if (!team?._id) {
       return;
     }
 
-    setSelectedRoadmapIds([...selectedRoadmapIds, value.value]);
+    pageProgressMessage.set(`Adding roadmap to team`);
+    const { error, response } = await httpPut(
+      `${import.meta.env.PUBLIC_API_URL}/v1-configure-team-resource/${
+        team._id
+      }`,
+      {
+        teamId: team._id,
+        resourceId: roadmapId,
+        resourceType: 'roadmap',
+        removed: [],
+      }
+    );
+
+    if (error || !response) {
+      setError(error?.message || 'Error adding roadmap');
+      return;
+    }
+
+    console.log('done');
   };
 
   useEffect(() => {
@@ -62,11 +85,22 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
         <SearchSelector
           placeholder={`Search Roadmaps`}
-          onSelect={onSelect}
-          options={allRoadmaps.map((roadmap) => ({
-            value: roadmap.id,
-            label: roadmap.title,
-          }))}
+          onSelect={(option) => {
+            const roadmapId = option.value;
+            addTeamResource(roadmapId)
+              .then(() => {
+                setSelectedRoadmapIds([...selectedRoadmapIds, roadmapId]);
+              })
+              .finally(() => {
+                pageProgressMessage.set('');
+              });
+          }}
+          options={allRoadmaps
+            .filter((roadmap) => !selectedRoadmapIds.includes(roadmap.id))
+            .map((roadmap) => ({
+              value: roadmap.id,
+              label: roadmap.title,
+            }))}
           searchInputId={'roadmap-input'}
           inputClassName="mt-2 block w-full rounded-md border px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         />
