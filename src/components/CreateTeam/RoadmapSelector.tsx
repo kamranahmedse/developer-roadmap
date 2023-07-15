@@ -1,11 +1,11 @@
-import {useEffect, useState} from 'preact/hooks';
-import {SearchSelector} from '../SearchSelector';
-import {httpGet, httpPut} from '../../lib/http';
-import type {PageType} from '../CommandMenu/CommandMenu';
+import { useEffect, useState } from 'preact/hooks';
+import { SearchSelector } from '../SearchSelector';
+import { httpGet, httpPut } from '../../lib/http';
+import type { PageType } from '../CommandMenu/CommandMenu';
 import XIcon from '../../icons/close-dark.svg';
 import SearchIcon from '../../icons/search.svg';
-import {pageProgressMessage} from '../../stores/page';
-import type {TeamDocument} from './CreateTeamForm';
+import { pageProgressMessage } from '../../stores/page';
+import type { TeamDocument } from './CreateTeamForm';
 
 type RoadmapSelectorProps = {
   team?: TeamDocument;
@@ -88,6 +88,21 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
   }
 
+  async function onRemove(resourceId: string) {
+    pageProgressMessage.set('Removing roadmap');
+
+    deleteResource(resourceId)
+      .then(() => {
+        const filteredResources = selectedRoadmapIds.filter(
+          (r) => r !== resourceId
+        );
+        setSelectedRoadmapIds(filteredResources);
+      })
+      .finally(() => {
+        pageProgressMessage.set('');
+      });
+  }
+
   async function addTeamResource(roadmapId: string) {
     if (!team?._id) {
       return;
@@ -110,8 +125,6 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       setError(error?.message || 'Error adding roadmap');
       return;
     }
-
-    console.log('done');
   }
 
   useEffect(() => {
@@ -168,37 +181,47 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         )}
 
         {selectedRoadmapIds.length > 0 && (
-          <div className="mt-4 flex flex-wrap gap-2">
-            {selectedRoadmapIds.map((resourceId) => (
-              <div className="flex min-h-[32px] items-center rounded-md border p-2">
-                <div className="text-sm leading-none text-slate-500">
-                  {
-                    allRoadmaps.find((roadmap) => roadmap.id === resourceId)
-                      ?.title
-                  }
-                </div>
-                <button
-                  type="button"
-                  className="ml-2"
-                  onClick={() => {
-                    pageProgressMessage.set('Removing roadmap');
+          <div className="mt-4 grid grid-cols-3 flex-wrap gap-2.5">
+            {selectedRoadmapIds.map((resourceId) => {
+              const roadmapTitle = allRoadmaps.find(
+                (roadmap) => roadmap.id === resourceId
+              )?.title;
 
-                    deleteResource(resourceId)
-                      .then(() => {
-                        const filteredResources = selectedRoadmapIds.filter(
-                          (r) => r !== resourceId
-                        );
-                        setSelectedRoadmapIds(filteredResources);
-                      })
-                      .finally(() => {
-                        pageProgressMessage.set('');
-                      });
-                  }}
-                >
-                  <img src={XIcon} alt="Remove" className="h-3 w-3" />
-                </button>
-              </div>
-            ))}
+              return (
+                <div className="flex flex-col items-start rounded-md border border-gray-300">
+                  <div className={'w-full px-3 pb-2 pt-4'}>
+                    <span className="block text-base font-medium leading-none text-black mb-0.5">
+                      {roadmapTitle}
+                    </span>
+                    <span className={'text-xs leading-none text-gray-400/80 italic'}>
+                      No changes made ..
+                    </span>
+                  </div>
+
+                  <div className={'flex w-full justify-between p-3'}>
+                    <button
+                      type="button"
+                      className={
+                        'text-xs text-gray-500 underline hover:text-black'
+                      }
+                      onClick={() => alert("implementing")}
+                    >
+                      Make Changes
+                    </button>
+
+                    <button
+                      type="button"
+                      className={
+                        'text-xs text-red-500 underline hover:text-black'
+                      }
+                      onClick={() => onRemove(resourceId)}
+                    >
+                      Remove
+                    </button>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         )}
       </div>
