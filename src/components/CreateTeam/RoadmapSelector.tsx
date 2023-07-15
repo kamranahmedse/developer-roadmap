@@ -1,11 +1,11 @@
-import { useEffect, useState } from 'preact/hooks';
-import { SearchSelector, OptionType } from '../SearchSelector';
-import { httpGet, httpPut } from '../../lib/http';
-import type { PageType } from '../CommandMenu/CommandMenu';
+import {useEffect, useState} from 'preact/hooks';
+import {SearchSelector} from '../SearchSelector';
+import {httpGet, httpPut} from '../../lib/http';
+import type {PageType} from '../CommandMenu/CommandMenu';
 import XIcon from '../../icons/close-dark.svg';
 import SearchIcon from '../../icons/search.svg';
-import { pageProgressMessage } from '../../stores/page';
-import type { TeamDocument } from './CreateTeamForm';
+import {pageProgressMessage} from '../../stores/page';
+import type {TeamDocument} from './CreateTeamForm';
 
 type RoadmapSelectorProps = {
   team?: TeamDocument;
@@ -18,6 +18,30 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
 
   const [error, setError] = useState<string>('');
+
+  async function loadTeamResourceConfig(teamId: string) {
+    const { error, response } = await httpGet(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
+    );
+    if (error || !Array.isArray(response)) {
+      const message = error?.message || 'Error loading team resource config';
+      setError(message);
+      return;
+    }
+
+    setSelectedRoadmapIds(response.map((resource) => resource.resourceId));
+  }
+
+  useEffect(() => {
+    if (!team?._id) {
+      return;
+    }
+
+    pageProgressMessage.set('Fetching skill config');
+    loadTeamResourceConfig(team._id).finally(() => {
+      pageProgressMessage.set('');
+    });
+  }, [team]);
 
   async function getData() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -42,14 +66,36 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     return response;
   }
 
-  const addTeamResource = async (roadmapId: string) => {
+  async function deleteResource(roadmapId: string) {
+    if (!team?._id) {
+      return;
+    }
+
+    pageProgressMessage.set(`Deleting roadmap from team`);
+    const { error, response } = await httpPut(
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
+        team._id
+      }`,
+      {
+        resourceId: roadmapId,
+        resourceType: 'roadmap',
+      }
+    );
+
+    if (error || !response) {
+      setError(error?.message || 'Error deleting roadmap');
+      return;
+    }
+  }
+
+  async function addTeamResource(roadmapId: string) {
     if (!team?._id) {
       return;
     }
 
     pageProgressMessage.set(`Adding roadmap to team`);
     const { error, response } = await httpPut(
-      `${import.meta.env.PUBLIC_API_URL}/v1-configure-team-resource/${
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-team-resource-config/${
         team._id
       }`,
       {
@@ -66,7 +112,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     console.log('done');
-  };
+  }
 
   useEffect(() => {
     getData().finally();
@@ -84,7 +130,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         </div>
 
         <SearchSelector
-          placeholder={`Search Roadmaps`}
+          placeholder={`Search Roadmaps ..`}
           onSelect={(option) => {
             const roadmapId = option.value;
             addTeamResource(roadmapId)
@@ -135,11 +181,18 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   type="button"
                   className="ml-2"
                   onClick={() => {
-                    const filteredResources = selectedRoadmapIds.filter(
-                      (r) => r !== resourceId
-                    );
+                    pageProgressMessage.set('Removing roadmap');
 
-                    setSelectedRoadmapIds(filteredResources);
+                    deleteResource(resourceId)
+                      .then(() => {
+                        const filteredResources = selectedRoadmapIds.filter(
+                          (r) => r !== resourceId
+                        );
+                        setSelectedRoadmapIds(filteredResources);
+                      })
+                      .finally(() => {
+                        pageProgressMessage.set('');
+                      });
                   }}
                 >
                   <img src={XIcon} alt="Remove" className="h-3 w-3" />
