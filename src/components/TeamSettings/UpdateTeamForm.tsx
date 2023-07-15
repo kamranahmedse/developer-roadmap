@@ -3,7 +3,7 @@ import {httpGet, httpPut} from '../../lib/http';
 import {Spinner} from '../ReactIcons/Spinner';
 import {useAuth} from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
-import {ResourceSelector} from '../CreateTeam/ResourceSelector';
+import {RoadmapSelector} from '../CreateTeam/RoadmapSelector';
 import type {TeamDocument} from '../CreateTeam/CreateTeamForm';
 import {pageProgressMessage} from '../../stores/page';
 import {useTeamId} from "../../hooks/use-team-id";
@@ -209,15 +209,15 @@ export function UpdateTeamForm() {
           </div>
         )}
 
-        <ResourceSelector
+        <RoadmapSelector
           type="Roadmaps"
-          resourcesIds={roadmaps}
-          setResourcesIds={setRoadmaps}
+          selectedRoadmapIds={roadmaps}
+          setSelectedRoadmapIds={setRoadmaps}
         />
-        <ResourceSelector
+        <RoadmapSelector
           type="Best Practices"
-          resourcesIds={bestPractices}
-          setResourcesIds={setBestPractices}
+          selectedRoadmapIds={bestPractices}
+          setSelectedRoadmapIds={setBestPractices}
         />
 
         <div className="mt-4 flex w-full flex-col">

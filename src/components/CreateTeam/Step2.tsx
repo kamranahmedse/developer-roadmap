@@ -1,5 +1,5 @@
-import { ResourceSelector } from './ResourceSelector';
-import { useState } from 'preact/hooks';
+import { RoadmapSelector } from './RoadmapSelector';
+import { useEffect, useState } from 'preact/hooks';
 import { Spinner } from '../ReactIcons/Spinner';
 
 type Step2Props = {
@@ -11,20 +11,12 @@ export function Step2(props: Step2Props) {
   const { onBack, onNext } = props;
 
   const [selectedRoadmaps, setSelectedRoadmaps] = useState<string[]>([]);
-  const [bestPractices, setBestPractices] = useState<string[]>([]);
 
   return (
     <>
-      <ResourceSelector
-        type="Roadmaps"
-        resourcesIds={selectedRoadmaps}
-        setResourcesIds={setSelectedRoadmaps}
-      />
-
-      <ResourceSelector
-        type="Best Practices"
-        resourcesIds={bestPractices}
-        setResourcesIds={setBestPractices}
+      <RoadmapSelector
+        selectedRoadmapIds={selectedRoadmaps}
+        setSelectedRoadmapIds={setSelectedRoadmaps}
       />
 
       <div className="mt-4 flex flex-row items-center justify-between gap-2">
@@ -40,7 +32,7 @@ export function Step2(props: Step2Props) {
         </button>
         <button
           type="submit"
-          disabled={false}
+          disabled={selectedRoadmaps.length <= 0}
           className={
             'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
           }

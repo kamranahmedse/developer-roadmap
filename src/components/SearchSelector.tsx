@@ -1,19 +1,19 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 
-export type SelectorDataType = {
-  id: string;
-  title: string;
+export type OptionType = {
+  value: string;
+  label: string;
 };
 
 export function SearchSelector({
-  defaultData,
+  options,
   onSelect,
   inputClassName,
   searchInputId,
   placeholder,
 }: {
-  defaultData: SelectorDataType[];
-  onSelect: (data: SelectorDataType) => void;
+  options: OptionType[];
+  onSelect: (data: OptionType) => void;
   inputClassName?: string;
   searchInputId?: string;
   placeholder?: string;
@@ -21,21 +21,21 @@ export function SearchSelector({
   const searchInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isActive, setIsActive] = useState(false);
-  const [searchResults, setSearchResults] = useState<SelectorDataType[]>([]);
+  const [searchResults, setSearchResults] = useState<OptionType[]>([]);
   const [searchedText, setSearchedText] = useState('');
   const [activeCounter, setActiveCounter] = useState(0);
 
   useEffect(() => {
     if (searchedText.length === 0) {
-      setSearchResults(defaultData.slice(0, 5));
+      setSearchResults(options.slice(0, 5));
       return;
     }
 
     setIsActive(true);
     const normalizedSearchedText = searchedText.trim().toLowerCase();
-    const results = defaultData
+    const results = options
       .filter((data) => {
-        return data.title.toLowerCase().indexOf(normalizedSearchedText) !== -1;
+        return data.label.toLowerCase().indexOf(normalizedSearchedText) !== -1;
       })
       .slice(0, 5);
 
@@ -44,8 +44,8 @@ export function SearchSelector({
   }, [searchedText]);
 
   useEffect(() => {
-    setSearchResults(defaultData.slice(0, 5));
-  }, [defaultData])
+    setSearchResults(options.slice(0, 5));
+  }, [options]);
 
   useEffect(() => {
     if (isActive) {
@@ -58,7 +58,7 @@ export function SearchSelector({
         ) {
           setIsActive(false);
           setSearchedText('');
-          setSearchResults(defaultData.slice(0, 5));
+          setSearchResults(options.slice(0, 5));
         }
       };
 
@@ -86,7 +86,7 @@ export function SearchSelector({
         }}
         onFocus={() => {
           setIsActive(true);
-          setSearchResults(defaultData.slice(0, 5));
+          setSearchResults(options.slice(0, 5));
         }}
         onKeyDown={(e) => {
           if (e.key === 'ArrowDown') {
@@ -118,7 +118,7 @@ export function SearchSelector({
 
       {isActive && (
         <div
-          class="absolute top-full mt-2 z-50 w-full rounded-md bg-gray-100 px-2 py-2"
+          class="absolute top-full z-50 mt-2 w-full rounded-md bg-gray-100 px-2 py-2"
           ref={dropdownRef}
         >
           <div className="flex flex-col">
@@ -133,8 +133,9 @@ export function SearchSelector({
                 <>
                   <button
                     type="button"
-                    class={`flex w-full items-center rounded p-2 text-sm ${counter === activeCounter ? 'bg-gray-200' : ''
-                      }`}
+                    class={`flex w-full items-center rounded p-2 text-sm ${
+                      counter === activeCounter ? 'bg-gray-200' : ''
+                    }`}
                     onMouseOver={() => setActiveCounter(counter)}
                     onClick={() => {
                       onSelect(result);
@@ -142,7 +143,7 @@ export function SearchSelector({
                       setIsActive(false);
                     }}
                   >
-                    {result.title}
+                    {result.label}
                   </button>
                 </>
               );
