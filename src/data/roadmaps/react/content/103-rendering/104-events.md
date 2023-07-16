@@ -9,5 +9,4 @@ Visit the following resources to learn more:
 
 - [Responding to Events](https://react.dev/learn/responding-to-events)
 - [React Event Object (Synthetic Event)](https://react.dev/reference/react-dom/components/common#react-event-object)
-- [Responding to Events](https://react.dev/learn/responding-to-events)
 - [React Event Handler](https://www.robinwieruch.de/react-event-handler/)
