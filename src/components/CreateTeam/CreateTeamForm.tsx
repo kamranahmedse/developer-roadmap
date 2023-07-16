@@ -48,10 +48,13 @@ export function CreateTeamForm() {
       return;
     }
 
+    const requiredStepIndexNumber = parseInt(requiredStepIndex as string, 10);
+    const completedSteps = Array(requiredStepIndexNumber).fill(1).map((_, counter) => counter)
+
     setTeam(response);
     setSelectedTeamType(response.type);
-    setCompletedSteps([0, 1]);
-    setStepIndex(parseInt(requiredStepIndex as string, 10));
+    setCompletedSteps(completedSteps);
+    setStepIndex(requiredStepIndexNumber);
 
     pageProgressMessage.set('Fetching skill config');
     await loadTeamResourceConfig(teamIdToFetch);
@@ -149,7 +152,11 @@ export function CreateTeamForm() {
 
           setStepIndex(1);
         }}
-        onNext={() => setStepIndex(3)}
+        onNext={() => {
+          setUrlParams({ t: teamId!, s: '3' });
+          setCompletedSteps([0, 1, 2]);
+          setStepIndex(3);
+        }}
       />
     );
   }

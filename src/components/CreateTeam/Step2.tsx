@@ -1,5 +1,5 @@
-import {RoadmapSelector, TeamResourceConfig} from './RoadmapSelector';
-import type {TeamDocument} from './CreateTeamForm';
+import { RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
+import type { TeamDocument } from './CreateTeamForm';
 
 type Step2Props = {
   team: TeamDocument;
@@ -10,7 +10,8 @@ type Step2Props = {
 };
 
 export function Step2(props: Step2Props) {
-  const { team, onBack, onNext, teamResourceConfig, setTeamResourceConfig } = props;
+  const { team, onBack, onNext, teamResourceConfig, setTeamResourceConfig } =
+    props;
 
   return (
     <>
@@ -34,6 +35,7 @@ export function Step2(props: Step2Props) {
         <button
           type="submit"
           disabled={teamResourceConfig.length === 0}
+          onClick={onNext}
           className={
             'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
           }
