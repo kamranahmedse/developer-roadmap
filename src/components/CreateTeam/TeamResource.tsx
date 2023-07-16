@@ -30,9 +30,9 @@ export function TeamResource(props: ProgressMapProps) {
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
 
+  const [isLoading, setIsLoading] = useState(true);
   const [isUpdating, setIsUpdating] = useState(false);
 
-  const [error, setError] = useState('');
   const [removedItems, setRemovedItems] =
     useState<string[]>(defaultRemovedItems);
 
@@ -41,7 +41,7 @@ export function TeamResource(props: ProgressMapProps) {
       const groupEl = e.target.closest('.clickable-group');
       const groupId = groupEl?.dataset?.groupId;
 
-      if (!groupId || groupId.startsWith('ext_link')) {
+      if (!groupId) {
         return;
       }
 
@@ -112,7 +112,7 @@ export function TeamResource(props: ProgressMapProps) {
     );
 
     if (error || !response) {
-      setError(error?.message || 'Error adding roadmap');
+      alert(error?.message || 'Error adding roadmap');
       return;
     }
 
@@ -133,7 +133,9 @@ export function TeamResource(props: ProgressMapProps) {
 
     renderResource(resourceJsonUrl).catch((err) => {
       console.error(err);
-      setError('Something went wrong. Please try again!');
+      alert('Something went wrong. Please try again!');
+    }).finally(() => {
+      setIsLoading(false);
     });
   }, []);
 
@@ -179,18 +181,16 @@ export function TeamResource(props: ProgressMapProps) {
               </button>
             </div>
           </div>
-          <div id="resource-map" ref={containerEl} className="px-4">
-            {!error && (
-              <div class="flex w-full justify-center">
-                <Spinner
-                  isDualRing={false}
-                  className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
-                />
-              </div>
-            )}
+          <div ref={containerEl} className="px-4"></div>
 
-            {error && <div className={'text-red-500'}>{error}</div>}
-          </div>
+          {isLoading && (
+            <div class="flex w-full justify-center">
+              <Spinner
+                isDualRing={false}
+                className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
+              />
+            </div>
+          )}
         </div>
       </div>
     </div>
