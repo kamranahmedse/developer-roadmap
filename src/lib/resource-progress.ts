@@ -4,7 +4,7 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
-export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped';
+export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped' | 'removed';
 
 type TopicMeta = {
   topicId: string;
@@ -188,6 +188,8 @@ export function renderTopicProgress(
   const isLearning = topicProgress === 'learning';
   const isSkipped = topicProgress === 'skipped';
   const isDone = topicProgress === 'done';
+  const isRemoved = topicProgress === 'removed';
+
   const matchingElements: Element[] = [];
 
   // Elements having sort order in the beginning of the group id
@@ -217,6 +219,7 @@ export function renderTopicProgress(
       matchingElements.push(element);
     });
 
+  console.log(matchingElements, isDone, isLearning, isSkipped, isRemoved);
   matchingElements.forEach((element) => {
     if (isDone) {
       element.classList.add('done');
@@ -227,8 +230,11 @@ export function renderTopicProgress(
     } else if (isSkipped) {
       element.classList.add('skipped');
       element.classList.remove('done', 'learning');
+    } else if (isRemoved) {
+      element.classList.add('removed');
+      element.classList.remove('done', 'learning', 'skipped');
     } else {
-      element.classList.remove('done', 'skipped', 'learning');
+      element.classList.remove('done', 'skipped', 'learning', 'removed');
     }
   });
 }

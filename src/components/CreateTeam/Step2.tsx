@@ -2,17 +2,41 @@ import { RoadmapSelector } from './RoadmapSelector';
 import { useEffect, useState } from 'preact/hooks';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { TeamDocument } from './CreateTeamForm';
+import { httpGet } from '../../lib/http';
+import { pageProgressMessage } from '../../stores/page';
 
 type Step2Props = {
-  team?: TeamDocument;
+  team: TeamDocument;
   onBack: () => void;
   onNext: () => void;
 };
 
 export function Step2(props: Step2Props) {
   const { team, onBack, onNext } = props;
-
   const [selectedRoadmaps, setSelectedRoadmaps] = useState<string[]>([]);
+
+  async function loadTeamResourceConfig(teamId: string) {
+    const { error, response } = await httpGet(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
+    );
+    if (error || !Array.isArray(response)) {
+      console.error(error);
+      return;
+    }
+
+    setSelectedRoadmaps(response.map((resource) => resource.resourceId));
+  }
+
+  useEffect(() => {
+    if (!team?._id) {
+      return;
+    }
+
+    pageProgressMessage.set('Fetching skill config');
+    loadTeamResourceConfig(team._id).finally(() => {
+      pageProgressMessage.set('');
+    });
+  }, [team]);
 
   return (
     <>

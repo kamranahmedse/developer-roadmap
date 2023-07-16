@@ -119,7 +119,7 @@ export function CreateTeamForm() {
   } else if (stepIndex === 2) {
     stepForm = (
       <Step2
-        team={team}
+        team={team!}
         onBack={() => {
           if (team) {
             setUrlParams({ t: team._id!, s: '1' });

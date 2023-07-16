@@ -6,9 +6,10 @@ import XIcon from '../../icons/close-dark.svg';
 import SearchIcon from '../../icons/search.svg';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
+import { TeamResource } from './TeamResource';
 
 type RoadmapSelectorProps = {
-  team?: TeamDocument;
+  team: TeamDocument;
   selectedRoadmapIds: string[];
   setSelectedRoadmapIds: (resourcesIds: string[]) => void;
 };
@@ -17,37 +18,14 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   const { selectedRoadmapIds, setSelectedRoadmapIds, team } = props;
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
 
+  const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [error, setError] = useState<string>('');
-
-  async function loadTeamResourceConfig(teamId: string) {
-    const { error, response } = await httpGet(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
-    );
-    if (error || !Array.isArray(response)) {
-      const message = error?.message || 'Error loading team resource config';
-      setError(message);
-      return;
-    }
-
-    setSelectedRoadmapIds(response.map((resource) => resource.resourceId));
-  }
-
-  useEffect(() => {
-    if (!team?._id) {
-      return;
-    }
-
-    pageProgressMessage.set('Fetching skill config');
-    loadTeamResourceConfig(team._id).finally(() => {
-      pageProgressMessage.set('');
-    });
-  }, [team]);
 
   async function getData() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
 
     if (error) {
-      alert(error.message);
+      setError(error.message || 'Something went wrong. Please try again!');
       return;
     }
 
@@ -133,6 +111,15 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
   return (
     <div>
+      {changingRoadmapId && (
+        <TeamResource
+          onClose={() => setChangingRoadmapId('')}
+          resourceId={changingRoadmapId}
+          resourceType={'roadmap'}
+          teamId={team?._id!}
+        />
+      )}
+
       <div className="mt-4 flex w-full flex-col">
         <div className="mb-1 mt-2">
           <h2 className="mb-2 text-2xl font-bold">Select Roadmaps</h2>
@@ -190,10 +177,12 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
               return (
                 <div className="flex flex-col items-start rounded-md border border-gray-300">
                   <div className={'w-full px-3 pb-2 pt-4'}>
-                    <span className="block text-base font-medium leading-none text-black mb-0.5">
+                    <span className="mb-0.5 block text-base font-medium leading-none text-black">
                       {roadmapTitle}
                     </span>
-                    <span className={'text-xs leading-none text-gray-400/80 italic'}>
+                    <span
+                      className={'text-xs italic leading-none text-gray-400/80'}
+                    >
                       No changes made ..
                     </span>
                   </div>
@@ -204,7 +193,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                       className={
                         'text-xs text-gray-500 underline hover:text-black'
                       }
-                      onClick={() => alert("implementing")}
+                      onClick={() => setChangingRoadmapId(resourceId)}
                     >
                       Make Changes
                     </button>
