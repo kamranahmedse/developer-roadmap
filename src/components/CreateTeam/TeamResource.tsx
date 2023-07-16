@@ -131,12 +131,14 @@ export function TeamResource(props: ProgressMapProps) {
       return;
     }
 
-    renderResource(resourceJsonUrl).catch((err) => {
-      console.error(err);
-      alert('Something went wrong. Please try again!');
-    }).finally(() => {
-      setIsLoading(false);
-    });
+    renderResource(resourceJsonUrl)
+      .catch((err) => {
+        console.error(err);
+        alert('Something went wrong. Please try again!');
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, []);
 
   return (

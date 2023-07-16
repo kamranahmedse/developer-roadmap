@@ -1,42 +1,16 @@
-import { RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
-import { useEffect, useState } from 'preact/hooks';
-import type { TeamDocument } from './CreateTeamForm';
-import { httpGet } from '../../lib/http';
-import { pageProgressMessage } from '../../stores/page';
+import {RoadmapSelector, TeamResourceConfig} from './RoadmapSelector';
+import type {TeamDocument} from './CreateTeamForm';
 
 type Step2Props = {
   team: TeamDocument;
+  teamResourceConfig: TeamResourceConfig;
+  setTeamResourceConfig: (config: TeamResourceConfig) => void;
   onBack: () => void;
   onNext: () => void;
 };
 
 export function Step2(props: Step2Props) {
-  const { team, onBack, onNext } = props;
-  const [teamResourceConfig, setTeamResourceConfig] =
-    useState<TeamResourceConfig>([]);
-
-  async function loadTeamResourceConfig(teamId: string) {
-    const { error, response } = await httpGet<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
-    );
-    if (error || !Array.isArray(response)) {
-      console.error(error);
-      return;
-    }
-
-    setTeamResourceConfig(response);
-  }
-
-  useEffect(() => {
-    if (!team?._id || teamResourceConfig.length > 0) {
-      return;
-    }
-
-    pageProgressMessage.set('Fetching skill config');
-    loadTeamResourceConfig(team._id).finally(() => {
-      pageProgressMessage.set('');
-    });
-  }, [team]);
+  const { team, onBack, onNext, teamResourceConfig, setTeamResourceConfig } = props;
 
   return (
     <>

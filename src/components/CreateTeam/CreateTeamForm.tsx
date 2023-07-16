@@ -6,6 +6,7 @@ import { Step2 } from './Step2';
 import { httpGet } from '../../lib/http';
 import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
+import type { TeamResourceConfig } from './RoadmapSelector';
 
 export interface TeamDocument {
   _id?: string;
@@ -32,6 +33,7 @@ export function CreateTeamForm() {
 
   const [loadingTeam, setLoadingTeam] = useState(!!teamId && !team?._id);
   const [stepIndex, setStepIndex] = useState(0);
+
   async function loadTeam(
     teamIdToFetch: string,
     requiredStepIndex: number | string
@@ -50,6 +52,24 @@ export function CreateTeamForm() {
     setSelectedTeamType(response.type);
     setCompletedSteps([0, 1]);
     setStepIndex(parseInt(requiredStepIndex as string, 10));
+
+    pageProgressMessage.set('Fetching skill config');
+    await loadTeamResourceConfig(teamIdToFetch);
+  }
+
+  const [teamResourceConfig, setTeamResourceConfig] =
+    useState<TeamResourceConfig>([]);
+
+  async function loadTeamResourceConfig(teamId: string) {
+    const { error, response } = await httpGet<TeamResourceConfig>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
+    );
+    if (error || !Array.isArray(response)) {
+      console.error(error);
+      return;
+    }
+
+    setTeamResourceConfig(response);
   }
 
   useEffect(() => {
@@ -120,6 +140,8 @@ export function CreateTeamForm() {
     stepForm = (
       <Step2
         team={team!}
+        teamResourceConfig={teamResourceConfig}
+        setTeamResourceConfig={setTeamResourceConfig}
         onBack={() => {
           if (team) {
             setUrlParams({ t: team._id!, s: '1' });

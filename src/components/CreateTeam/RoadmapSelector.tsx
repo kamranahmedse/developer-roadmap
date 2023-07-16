@@ -180,7 +180,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
               ({ resourceId, removed: removedTopics }) => {
                 const roadmapTitle = allRoadmaps.find(
                   (roadmap) => roadmap.id === resourceId
-                )?.title;
+                )?.title || '...';
 
                 return (
                   <div className="flex flex-col items-start rounded-md border border-gray-300">
