@@ -6,16 +6,26 @@ import { renderTopicProgress } from '../../lib/resource-progress';
 import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
+import type { TeamResourceConfig } from './RoadmapSelector';
 
 export type ProgressMapProps = {
   teamId: string;
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
+  defaultRemovedItems?: string[];
+  setTeamResourceConfig: (config: TeamResourceConfig) => void;
   onClose: () => void;
 };
 
 export function TeamResource(props: ProgressMapProps) {
-  const { resourceId, resourceType, teamId, onClose } = props;
+  const {
+    defaultRemovedItems = [],
+    resourceId,
+    resourceType,
+    teamId,
+    setTeamResourceConfig,
+    onClose,
+  } = props;
 
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
@@ -23,7 +33,8 @@ export function TeamResource(props: ProgressMapProps) {
   const [isUpdating, setIsUpdating] = useState(false);
 
   const [error, setError] = useState('');
-  const [removedItems, setRemovedItems] = useState<string[]>([]);
+  const [removedItems, setRemovedItems] =
+    useState<string[]>(defaultRemovedItems);
 
   useEffect(() => {
     function onTopicClick(e: any) {
@@ -59,25 +70,6 @@ export function TeamResource(props: ProgressMapProps) {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }
 
-  async function renderTeamResourceConfig() {
-    const apiEndpoint = `${
-      import.meta.env.PUBLIC_API_URL
-    }/v1-get-team-resource-config/${teamId}`;
-
-    const { response, error } = await httpGet<{
-      removed: string[];
-    }>(`${apiEndpoint}?resourceType=${resourceType}&resourceId=${resourceId}`);
-    if (error || !response) {
-      setError(error?.message || 'Failed to get team progress');
-      return;
-    }
-
-    const { removed = [] } = response;
-    removed.forEach((topicId: string) => {
-      renderTopicProgress(topicId, 'removed');
-    });
-  }
-
   async function renderResource(jsonUrl: string) {
     const res = await fetch(jsonUrl);
     const json = await res.json();
@@ -87,7 +79,10 @@ export function TeamResource(props: ProgressMapProps) {
 
     containerEl.current?.replaceChildren(svg);
 
-    await renderTeamResourceConfig();
+    // Render team configuration
+    removedItems.forEach((topicId: string) => {
+      renderTopicProgress(topicId, 'removed');
+    });
   }
 
   useKeydown('Escape', () => {
@@ -104,7 +99,7 @@ export function TeamResource(props: ProgressMapProps) {
     }
 
     setIsUpdating(true);
-    const { error, response } = await httpPut(
+    const { error, response } = await httpPut<TeamResourceConfig>(
       `${
         import.meta.env.PUBLIC_API_URL
       }/v1-update-team-resource-config/${teamId}`,
@@ -121,6 +116,7 @@ export function TeamResource(props: ProgressMapProps) {
       return;
     }
 
+    setTeamResourceConfig(response);
     onClose();
   }
 

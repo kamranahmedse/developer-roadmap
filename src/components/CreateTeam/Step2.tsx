@@ -1,6 +1,5 @@
-import { RoadmapSelector } from './RoadmapSelector';
+import { RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
 import { useEffect, useState } from 'preact/hooks';
-import { Spinner } from '../ReactIcons/Spinner';
 import type { TeamDocument } from './CreateTeamForm';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
@@ -13,10 +12,11 @@ type Step2Props = {
 
 export function Step2(props: Step2Props) {
   const { team, onBack, onNext } = props;
-  const [selectedRoadmaps, setSelectedRoadmaps] = useState<string[]>([]);
+  const [teamResourceConfig, setTeamResourceConfig] =
+    useState<TeamResourceConfig>([]);
 
   async function loadTeamResourceConfig(teamId: string) {
-    const { error, response } = await httpGet(
+    const { error, response } = await httpGet<TeamResourceConfig>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
     );
     if (error || !Array.isArray(response)) {
@@ -24,11 +24,11 @@ export function Step2(props: Step2Props) {
       return;
     }
 
-    setSelectedRoadmaps(response.map((resource) => resource.resourceId));
+    setTeamResourceConfig(response);
   }
 
   useEffect(() => {
-    if (!team?._id) {
+    if (!team?._id || teamResourceConfig.length > 0) {
       return;
     }
 
@@ -42,8 +42,8 @@ export function Step2(props: Step2Props) {
     <>
       <RoadmapSelector
         team={team}
-        selectedRoadmapIds={selectedRoadmaps}
-        setSelectedRoadmapIds={setSelectedRoadmaps}
+        teamResourceConfig={teamResourceConfig}
+        setTeamResourceConfig={setTeamResourceConfig}
       />
 
       <div className="mt-4 flex flex-row items-center justify-between gap-2">
@@ -59,7 +59,7 @@ export function Step2(props: Step2Props) {
         </button>
         <button
           type="submit"
-          disabled={selectedRoadmaps.length <= 0}
+          disabled={teamResourceConfig.length === 0}
           className={
             'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
           }

@@ -2,22 +2,27 @@ import { useEffect, useState } from 'preact/hooks';
 import { SearchSelector } from '../SearchSelector';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import XIcon from '../../icons/close-dark.svg';
 import SearchIcon from '../../icons/search.svg';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
 import { TeamResource } from './TeamResource';
 
+export type TeamResourceConfig = {
+  resourceId: string;
+  resourceType: string;
+  removed: string[];
+}[];
+
 type RoadmapSelectorProps = {
   team: TeamDocument;
-  selectedRoadmapIds: string[];
-  setSelectedRoadmapIds: (resourcesIds: string[]) => void;
+  teamResourceConfig: TeamResourceConfig;
+  setTeamResourceConfig: (config: TeamResourceConfig) => void;
 };
 
 export function RoadmapSelector(props: RoadmapSelectorProps) {
-  const { selectedRoadmapIds, setSelectedRoadmapIds, team } = props;
-  const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
+  const { team, teamResourceConfig = [], setTeamResourceConfig } = props;
 
+  const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [error, setError] = useState<string>('');
 
@@ -50,7 +55,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     pageProgressMessage.set(`Deleting roadmap from team`);
-    const { error, response } = await httpPut(
+    const { error, response } = await httpPut<TeamResourceConfig>(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
         team._id
       }`,
@@ -64,21 +69,16 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       setError(error?.message || 'Error deleting roadmap');
       return;
     }
+
+    setTeamResourceConfig(response);
   }
 
   async function onRemove(resourceId: string) {
     pageProgressMessage.set('Removing roadmap');
 
-    deleteResource(resourceId)
-      .then(() => {
-        const filteredResources = selectedRoadmapIds.filter(
-          (r) => r !== resourceId
-        );
-        setSelectedRoadmapIds(filteredResources);
-      })
-      .finally(() => {
-        pageProgressMessage.set('');
-      });
+    deleteResource(resourceId).finally(() => {
+      pageProgressMessage.set('');
+    });
   }
 
   async function addTeamResource(roadmapId: string) {
@@ -87,7 +87,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     }
 
     pageProgressMessage.set(`Adding roadmap to team`);
-    const { error, response } = await httpPut(
+    const { error, response } = await httpPut<TeamResourceConfig>(
       `${import.meta.env.PUBLIC_API_URL}/v1-update-team-resource-config/${
         team._id
       }`,
@@ -103,6 +103,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       setError(error?.message || 'Error adding roadmap');
       return;
     }
+
+    setTeamResourceConfig(response);
   }
 
   useEffect(() => {
@@ -117,6 +119,11 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           resourceId={changingRoadmapId}
           resourceType={'roadmap'}
           teamId={team?._id!}
+          setTeamResourceConfig={setTeamResourceConfig}
+          defaultRemovedItems={
+            teamResourceConfig.find((c) => c.resourceId === changingRoadmapId)
+              ?.removed || []
+          }
         />
       )}
 
@@ -133,16 +140,16 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           placeholder={`Search Roadmaps ..`}
           onSelect={(option) => {
             const roadmapId = option.value;
-            addTeamResource(roadmapId)
-              .then(() => {
-                setSelectedRoadmapIds([...selectedRoadmapIds, roadmapId]);
-              })
-              .finally(() => {
-                pageProgressMessage.set('');
-              });
+            addTeamResource(roadmapId).finally(() => {
+              pageProgressMessage.set('');
+            });
           }}
           options={allRoadmaps
-            .filter((roadmap) => !selectedRoadmapIds.includes(roadmap.id))
+            .filter((roadmap) => {
+              return !teamResourceConfig
+                .map((c) => c.resourceId)
+                .includes(roadmap.id);
+            })
             .map((roadmap) => ({
               value: roadmap.id,
               label: roadmap.title,
@@ -151,7 +158,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           inputClassName="mt-2 block w-full rounded-md border px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
         />
 
-        {!selectedRoadmapIds.length && (
+        {!teamResourceConfig.length && (
           <div className="mt-4 rounded-md border px-4 py-12 text-center text-sm text-gray-700">
             <img
               alt={'search'}
@@ -167,50 +174,57 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           </div>
         )}
 
-        {selectedRoadmapIds.length > 0 && (
+        {teamResourceConfig.length > 0 && (
           <div className="mt-4 grid grid-cols-3 flex-wrap gap-2.5">
-            {selectedRoadmapIds.map((resourceId) => {
-              const roadmapTitle = allRoadmaps.find(
-                (roadmap) => roadmap.id === resourceId
-              )?.title;
+            {teamResourceConfig.map(
+              ({ resourceId, removed: removedTopics }) => {
+                const roadmapTitle = allRoadmaps.find(
+                  (roadmap) => roadmap.id === resourceId
+                )?.title;
 
-              return (
-                <div className="flex flex-col items-start rounded-md border border-gray-300">
-                  <div className={'w-full px-3 pb-2 pt-4'}>
-                    <span className="mb-0.5 block text-base font-medium leading-none text-black">
-                      {roadmapTitle}
-                    </span>
-                    <span
-                      className={'text-xs italic leading-none text-gray-400/80'}
-                    >
-                      No changes made ..
-                    </span>
+                return (
+                  <div className="flex flex-col items-start rounded-md border border-gray-300">
+                    <div className={'w-full px-3 pb-2 pt-4'}>
+                      <span className="mb-0.5 block text-base font-medium leading-none text-black">
+                        {roadmapTitle}
+                      </span>
+                      {removedTopics.length > 0 ? (
+                        <span className={'text-xs leading-none text-gray-900'}>
+                          {removedTopics.length} topic
+                          {removedTopics.length > 1 ? 's' : ''} removed
+                        </span>
+                      ) : (
+                        <span className="text-xs italic leading-none text-gray-400/60">
+                          No changes made ..
+                        </span>
+                      )}
+                    </div>
+
+                    <div className={'flex w-full justify-between p-3'}>
+                      <button
+                        type="button"
+                        className={
+                          'text-xs text-gray-500 underline hover:text-black focus:outline-none'
+                        }
+                        onClick={() => setChangingRoadmapId(resourceId)}
+                      >
+                        Make Changes
+                      </button>
+
+                      <button
+                        type="button"
+                        className={
+                          'text-xs text-red-500 underline hover:text-black'
+                        }
+                        onClick={() => onRemove(resourceId)}
+                      >
+                        Remove
+                      </button>
+                    </div>
                   </div>
-
-                  <div className={'flex w-full justify-between p-3'}>
-                    <button
-                      type="button"
-                      className={
-                        'text-xs text-gray-500 underline hover:text-black'
-                      }
-                      onClick={() => setChangingRoadmapId(resourceId)}
-                    >
-                      Make Changes
-                    </button>
-
-                    <button
-                      type="button"
-                      className={
-                        'text-xs text-red-500 underline hover:text-black'
-                      }
-                      onClick={() => onRemove(resourceId)}
-                    >
-                      Remove
-                    </button>
-                  </div>
-                </div>
-              );
-            })}
+                );
+              }
+            )}
           </div>
         )}
       </div>
