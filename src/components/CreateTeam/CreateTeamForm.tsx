@@ -7,6 +7,7 @@ import { httpGet } from '../../lib/http';
 import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamResourceConfig } from './RoadmapSelector';
+import { Step3 } from './Step3';
 
 export interface TeamDocument {
   _id?: string;
@@ -49,14 +50,15 @@ export function CreateTeamForm() {
     }
 
     const requiredStepIndexNumber = parseInt(requiredStepIndex as string, 10);
-    const completedSteps = Array(requiredStepIndexNumber).fill(1).map((_, counter) => counter)
+    const completedSteps = Array(requiredStepIndexNumber)
+      .fill(1)
+      .map((_, counter) => counter);
 
     setTeam(response);
     setSelectedTeamType(response.type);
     setCompletedSteps(completedSteps);
     setStepIndex(requiredStepIndexNumber);
 
-    pageProgressMessage.set('Fetching skill config');
     await loadTeamResourceConfig(teamIdToFetch);
   }
 
@@ -156,6 +158,23 @@ export function CreateTeamForm() {
           setUrlParams({ t: teamId!, s: '3' });
           setCompletedSteps([0, 1, 2]);
           setStepIndex(3);
+        }}
+      />
+    );
+  } else if (stepIndex === 3) {
+    stepForm = (
+      <Step3
+        team={team}
+        onBack={() => {
+          if (team) {
+            setUrlParams({ t: team._id!, s: '2' });
+          }
+
+          setStepIndex(2);
+        }}
+        onNext={() => {
+          setCompletedSteps([0, 1, 2, 3]);
+          setStepIndex(4);
         }}
       />
     );
