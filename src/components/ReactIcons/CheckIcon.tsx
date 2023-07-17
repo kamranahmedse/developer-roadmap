@@ -7,7 +7,7 @@ export function CheckIcon(props: CheckIconProps) {
 
   return (
     <svg
-      className={`relative ${additionalClasses}]`}
+      className={`relative ${additionalClasses}`}
       stroke="currentColor"
       fill="currentColor"
       stroke-width="0"

@@ -8,6 +8,7 @@ import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { Step3 } from './Step3';
+import { Step4 } from './Step4';
 
 export interface TeamDocument {
   _id?: string;
@@ -173,11 +174,17 @@ export function CreateTeamForm() {
           setStepIndex(2);
         }}
         onNext={() => {
+          if (team) {
+            setUrlParams({ t: team._id!, s: '4' });
+          }
+
           setCompletedSteps([0, 1, 2, 3]);
           setStepIndex(4);
         }}
       />
     );
+  } else if (stepIndex === 4) {
+    stepForm = <Step4 team={team!} />;
   }
 
   return (
