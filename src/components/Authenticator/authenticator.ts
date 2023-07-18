@@ -39,8 +39,9 @@ function handleGuest() {
     '/account/road-card',
     '/account',
     '/team',
-    '/team/new',
     '/team/progress',
+    '/team/roadmaps',
+    '/team/new',
     '/team/members',
     '/team/settings'
   ];

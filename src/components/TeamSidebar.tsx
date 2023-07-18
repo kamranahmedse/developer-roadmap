@@ -4,6 +4,7 @@ import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
 import TeamProgress from '../icons/team-progress.svg';
 import SettingsIcon from '../icons/cog.svg';
+import MapIcon from '../icons/map.svg';
 import GroupIcon from '../icons/group.svg';
 import { useState } from 'preact/hooks';
 
@@ -20,6 +21,12 @@ export const TeamSidebar: FunctionalComponent<{
       href: `/team/progress?t=${teamId}`,
       id: 'progress',
       icon: TeamProgress,
+    },
+    {
+      title: 'Roadmaps',
+      href: `/team/roadmaps?t=${teamId}`,
+      id: 'roadmaps',
+      icon: MapIcon,
     },
     {
       title: 'Members',

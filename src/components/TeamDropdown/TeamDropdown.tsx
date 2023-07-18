@@ -116,7 +116,7 @@ export function TeamDropdown() {
             {teamList.map((team) => {
               let pageLink = '';
               if (team.status === 'invited') {
-                pageLink = `/respond-invite?inviteId=${team.memberId}`;
+                pageLink = `/respond-invite?i=${team.memberId}`;
               } else if (team.status === 'joined') {
                 pageLink = `/team/progress?t=${team._id}`;
               }
@@ -131,7 +131,7 @@ export function TeamDropdown() {
                     className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                     href={`${pageLink}`}
                   >
-                    <span className="truncate">{team.name}</span>
+                    <span className="truncate flex-grow">{team.name}</span>
                     {pendingTeamIds.includes(team._id) && (
                       <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
                         Invite

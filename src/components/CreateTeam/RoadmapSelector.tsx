@@ -127,107 +127,95 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         />
       )}
 
-      <div className="mt-4 flex w-full flex-col">
-        <div className="mb-1 mt-2">
-          <h2 className="mb-2 text-2xl font-bold">Select Roadmaps</h2>
-          <p className="text-sm text-gray-700">
-            Picks the roadmaps to be made available to your team for tracking.
-            You can always add more later.
+      <SearchSelector
+        placeholder={`Search Roadmaps ..`}
+        onSelect={(option) => {
+          const roadmapId = option.value;
+          addTeamResource(roadmapId).finally(() => {
+            pageProgressMessage.set('');
+          });
+        }}
+        options={allRoadmaps
+          .filter((roadmap) => {
+            return !teamResourceConfig
+              .map((c) => c.resourceId)
+              .includes(roadmap.id);
+          })
+          .map((roadmap) => ({
+            value: roadmap.id,
+            label: roadmap.title,
+          }))}
+        searchInputId={'roadmap-input'}
+        inputClassName="mt-2 block w-full rounded-md border px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+      />
+
+      {!teamResourceConfig.length && (
+        <div className="mt-4 rounded-md border px-4 py-12 text-center text-sm text-gray-700">
+          <img
+            alt={'search'}
+            src={SearchIcon}
+            className={'mx-auto mb-5 h-[42px] w-[42px] opacity-10'}
+          />
+          <span className="block text-lg font-semibold text-black">
+            No roadmaps selected.
+          </span>
+          <p className={'text-sm text-gray-400'}>
+            Please search and add roadmaps from above
           </p>
         </div>
+      )}
 
-        <SearchSelector
-          placeholder={`Search Roadmaps ..`}
-          onSelect={(option) => {
-            const roadmapId = option.value;
-            addTeamResource(roadmapId).finally(() => {
-              pageProgressMessage.set('');
-            });
-          }}
-          options={allRoadmaps
-            .filter((roadmap) => {
-              return !teamResourceConfig
-                .map((c) => c.resourceId)
-                .includes(roadmap.id);
-            })
-            .map((roadmap) => ({
-              value: roadmap.id,
-              label: roadmap.title,
-            }))}
-          searchInputId={'roadmap-input'}
-          inputClassName="mt-2 block w-full rounded-md border px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-        />
+      {teamResourceConfig.length > 0 && (
+        <div className="mt-4 grid grid-cols-3 flex-wrap gap-2.5">
+          {teamResourceConfig.map(({ resourceId, removed: removedTopics }) => {
+            const roadmapTitle =
+              allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||
+              '...';
 
-        {!teamResourceConfig.length && (
-          <div className="mt-4 rounded-md border px-4 py-12 text-center text-sm text-gray-700">
-            <img
-              alt={'search'}
-              src={SearchIcon}
-              className={'mx-auto mb-5 h-[42px] w-[42px] opacity-10'}
-            />
-            <span className="block text-lg font-semibold text-black">
-              No roadmaps selected.
-            </span>
-            <p className={'text-sm text-gray-400'}>
-              Please search and add roadmaps from above
-            </p>
-          </div>
-        )}
+            return (
+              <div className="flex flex-col items-start rounded-md border border-gray-300">
+                <div className={'w-full px-3 pb-2 pt-4'}>
+                  <span className="mb-0.5 block text-base font-medium leading-none text-black">
+                    {roadmapTitle}
+                  </span>
+                  {removedTopics.length > 0 ? (
+                    <span className={'text-xs leading-none text-gray-900'}>
+                      {removedTopics.length} topic
+                      {removedTopics.length > 1 ? 's' : ''} removed
+                    </span>
+                  ) : (
+                    <span className="text-xs italic leading-none text-gray-400/60">
+                      No changes made ..
+                    </span>
+                  )}
+                </div>
 
-        {teamResourceConfig.length > 0 && (
-          <div className="mt-4 grid grid-cols-3 flex-wrap gap-2.5">
-            {teamResourceConfig.map(
-              ({ resourceId, removed: removedTopics }) => {
-                const roadmapTitle = allRoadmaps.find(
-                  (roadmap) => roadmap.id === resourceId
-                )?.title || '...';
+                <div className={'flex w-full justify-between p-3'}>
+                  <button
+                    type="button"
+                    className={
+                      'text-xs text-gray-500 underline hover:text-black focus:outline-none'
+                    }
+                    onClick={() => setChangingRoadmapId(resourceId)}
+                  >
+                    Make Changes
+                  </button>
 
-                return (
-                  <div className="flex flex-col items-start rounded-md border border-gray-300">
-                    <div className={'w-full px-3 pb-2 pt-4'}>
-                      <span className="mb-0.5 block text-base font-medium leading-none text-black">
-                        {roadmapTitle}
-                      </span>
-                      {removedTopics.length > 0 ? (
-                        <span className={'text-xs leading-none text-gray-900'}>
-                          {removedTopics.length} topic
-                          {removedTopics.length > 1 ? 's' : ''} removed
-                        </span>
-                      ) : (
-                        <span className="text-xs italic leading-none text-gray-400/60">
-                          No changes made ..
-                        </span>
-                      )}
-                    </div>
-
-                    <div className={'flex w-full justify-between p-3'}>
-                      <button
-                        type="button"
-                        className={
-                          'text-xs text-gray-500 underline hover:text-black focus:outline-none'
-                        }
-                        onClick={() => setChangingRoadmapId(resourceId)}
-                      >
-                        Make Changes
-                      </button>
-
-                      <button
-                        type="button"
-                        className={
-                          'text-xs text-red-500 underline hover:text-black'
-                        }
-                        onClick={() => onRemove(resourceId)}
-                      >
-                        Remove
-                      </button>
-                    </div>
-                  </div>
-                );
-              }
-            )}
-          </div>
-        )}
-      </div>
+                  <button
+                    type="button"
+                    className={
+                      'text-xs text-red-500 underline hover:text-black'
+                    }
+                    onClick={() => onRemove(resourceId)}
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+      )}
     </div>
   );
 }
