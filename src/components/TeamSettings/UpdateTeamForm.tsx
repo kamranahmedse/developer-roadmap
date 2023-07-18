@@ -1,11 +1,11 @@
-import {useEffect, useState} from 'preact/hooks';
-import {httpGet, httpPut} from '../../lib/http';
-import {Spinner} from '../ReactIcons/Spinner';
-import {useAuth} from '../../hooks/use-auth';
+import { useEffect, useState } from 'preact/hooks';
+import { httpGet, httpPut } from '../../lib/http';
+import { Spinner } from '../ReactIcons/Spinner';
+import { useAuth } from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
-import type {TeamDocument} from '../CreateTeam/CreateTeamForm';
-import {pageProgressMessage} from '../../stores/page';
-import {useTeamId} from '../../hooks/use-team-id';
+import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
+import { pageProgressMessage } from '../../stores/page';
+import { useTeamId } from '../../hooks/use-team-id';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,7 +16,6 @@ export function UpdateTeamForm() {
   const [website, setWebsite] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
-  const [canMemberSendInvite, setCanMemberSendInvite] = useState(false);
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = [
@@ -49,7 +48,6 @@ export function UpdateTeamForm() {
         name,
         website,
         type: teamType,
-        canMemberSendInvite,
         ...(teamType === 'company' && { teamSize }),
         roadmapIds: roadmaps.join(','),
         bestPracticeIds: bestPractices.join(','),
@@ -86,7 +84,6 @@ export function UpdateTeamForm() {
     setAvatar(response.avatar || '');
     setWebsite(response?.links?.website || '');
     setTeamType(response.type);
-    setCanMemberSendInvite(response.canMemberSendInvite);
     if (response.teamSize) {
       setTeamSize(response.teamSize);
     }
@@ -206,36 +203,6 @@ export function UpdateTeamForm() {
             </select>
           </div>
         )}
-
-        <div className="mt-4 flex w-full flex-col">
-          <label
-            for="can-member-send-invite"
-            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-          >
-            Can team members invite new members?
-          </label>
-
-          <div className="mt-2 flex items-center gap-2">
-            <button
-              type="button"
-              className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
-                canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
-              }`}
-              onClick={() => setCanMemberSendInvite(true)}
-            >
-              Yes
-            </button>
-            <button
-              type="button"
-              className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
-                !canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
-              }`}
-              onClick={() => setCanMemberSendInvite(false)}
-            >
-              No
-            </button>
-          </div>
-        </div>
 
         {error && (
           <p className="mt-4 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>

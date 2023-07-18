@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import ChevronDown from '../../icons/dropdown.svg';
 import { httpGet } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
-import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { useAuth } from '../../hooks/use-auth';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Spinner } from '../ReactIcons/Spinner';
@@ -15,6 +14,7 @@ type TeamListResponse = {
   _id: string;
   name: string;
   avatar?: string;
+  roadmaps: string[];
   role: AllowedRoles;
   status: AllowedMemberStatus;
   memberId: string;
@@ -114,10 +114,17 @@ export function TeamDropdown() {
               </a>
             </li>
             {teamList.map((team) => {
-              const pageLink =
-                team.status === 'invited'
-                  ? `/respond-invite?inviteId=${team.memberId}`
-                  : `/team/progress?t=${team._id}`;
+              let pageLink = '';
+              if (team.status === 'invited') {
+                pageLink = `/respond-invite?inviteId=${team.memberId}`;
+              } else if (team.status === 'joined') {
+                pageLink = `/team/progress?t=${team._id}`;
+              }
+
+              if (team.roadmaps.length === 0) {
+                pageLink = `/team/new?t=${team._id}&s=2`;
+              }
+
               return (
                 <li>
                   <a
@@ -128,6 +135,12 @@ export function TeamDropdown() {
                     {pendingTeamIds.includes(team._id) && (
                       <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
                         Invite
+                      </span>
+                    )}
+
+                    {team.roadmaps.length === 0 && (
+                      <span className="flex rounded-md bg-gray-500 px-2 text-xs text-white">
+                        Draft
                       </span>
                     )}
                   </a>

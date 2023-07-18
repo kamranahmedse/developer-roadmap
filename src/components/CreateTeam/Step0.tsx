@@ -49,7 +49,6 @@ export function Step0(props: Step0Props) {
         name: team.name,
         website: team?.links?.website || undefined,
         type: selectedTeamType,
-        canMemberSendInvite: team.canMemberSendInvite,
         gitHubUrl: team?.links?.github || undefined,
         ...(selectedTeamType === 'company' && {
           teamSize: team.teamSize,

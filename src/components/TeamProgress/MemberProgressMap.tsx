@@ -8,7 +8,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 
-export type MemberProgressModal = {
+export type ProgressMapProps = {
   teamId: string;
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
@@ -17,7 +17,7 @@ export type MemberProgressModal = {
   onClose: () => void;
 };
 
-export function MemberProgressModal(props: MemberProgressModal) {
+export function MemberProgressMap(props: ProgressMapProps) {
   const {
     defaultRemovedItems = [],
     resourceId,

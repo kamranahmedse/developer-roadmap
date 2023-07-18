@@ -47,10 +47,6 @@ export function Step1(props: Step1Props) {
     team?.teamSize || ('' as any)
   );
 
-  const [canMemberSendInvite, setCanMemberSendInvite] = useState(
-    team?.canMemberSendInvite
-  );
-
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
@@ -69,7 +65,6 @@ export function Step1(props: Step1Props) {
           name,
           website: website || undefined,
           type: selectedTeamType,
-          canMemberSendInvite,
           gitHubUrl: gitHubUrl || undefined,
           ...(selectedTeamType === 'company' && {
             teamSize,
@@ -94,7 +89,6 @@ export function Step1(props: Step1Props) {
           name,
           website: website || undefined,
           type: selectedTeamType,
-          canMemberSendInvite,
           gitHubUrl: gitHubUrl || undefined,
           ...(selectedTeamType === 'company' && {
             teamSize,
@@ -121,7 +115,6 @@ export function Step1(props: Step1Props) {
           github: gitHubUrl || team?.links?.github,
         },
         type: selectedTeamType,
-        canMemberSendInvite: canMemberSendInvite!,
         teamSize: teamSize!,
       });
     }
@@ -237,42 +230,6 @@ export function Step1(props: Step1Props) {
           </select>
         </div>
       )}
-
-      <div className="mt-4 flex w-full flex-col">
-        <label
-          for="can-member-send-invite"
-          className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-        >
-          Can team members invite new members to the team?
-        </label>
-
-        <div className="mt-2 flex items-center gap-2">
-          <button
-            type="button"
-            className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
-              canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
-            }`}
-            onClick={() => setCanMemberSendInvite(true)}
-          >
-            Yes
-          </button>
-          <button
-            type="button"
-            className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
-              !canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
-            }`}
-            onClick={() => setCanMemberSendInvite(false)}
-          >
-            No
-          </button>
-        </div>
-
-        {error && (
-          <p className="mb-2 mt-4 border-l-4 border-red-400 pl-2 text-base text-red-500">
-            {error}
-          </p>
-        )}
-      </div>
 
       <div className="mt-4 flex flex-row items-center justify-between gap-2">
         <button
