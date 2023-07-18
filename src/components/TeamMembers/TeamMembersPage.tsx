@@ -6,15 +6,17 @@ import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { LeaveTeamButton } from './LeaveTeamButton';
-import {useTeamId} from "../../hooks/use-team-id";
+import { useTeamId } from '../../hooks/use-team-id';
+import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
+import type { AllowedMemberStatus } from '../TeamDropdown/TeamDropdown';
 
 export interface TeamMemberDocument {
   _id?: string;
   userId?: string;
   invitedEmail?: string;
   teamId: string;
-  role: 'creator' | 'member';
-  status: 'invited' | 'joined' | 'rejected' | 'accepted';
+  role: AllowedRoles;
+  status: AllowedMemberStatus;
   createdAt: Date;
   updatedAt: Date;
 }
@@ -29,7 +31,7 @@ export function TeamMembersPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
   const [team, setTeam] = useState<TeamDocument>();
 
-  const { teamId} = useTeamId();
+  const { teamId } = useTeamId();
   const user = useAuth();
 
   async function loadTeam() {
@@ -66,7 +68,7 @@ export function TeamMembersPage() {
     Promise.all([loadTeam(), getTeamMemberList()]).finally(() => {
       setIsPreparing(false);
       pageProgressMessage.set('');
-    })
+    });
 
     window.addEventListener('invite-member', getTeamMemberList);
 
@@ -75,10 +77,6 @@ export function TeamMembersPage() {
     };
   }, [teamId]);
 
-  const isCreator = teamMembers.find(
-    (teamMember) => teamMember.userId === user?.id
-  )?.role === 'creator';
-
   if (isPreparing) {
     return null;
   }
@@ -86,53 +84,60 @@ export function TeamMembersPage() {
   return (
     <div>
       <div>
-        <div className="border rounded-t-md rounded-b-sm">
-          <div className="p-3 border-b flex items-center justify-between gap-2">
+        <div className="rounded-b-sm rounded-t-md border">
+          <div className="flex items-center justify-between gap-2 border-b p-3">
             <p className="text-sm">
               {teamMembers.length} people in the {team?.name} team.
             </p>
             <LeaveTeamButton teamId={team?._id!} />
           </div>
-          {
-            teamMembers.map((member, index) => {
-              return (
-                <div className={`flex items-center gap-2 justify-between p-3 ${index === 0 ? '' : 'border-t'}`}>
-                  <div className="flex items-center gap-3">
-                    <img src={
+          {teamMembers.map((member, index) => {
+            return (
+              <div
+                className={`flex items-center justify-between gap-2 p-3 ${
+                  index === 0 ? '' : 'border-t'
+                }`}
+              >
+                <div className="flex items-center gap-3">
+                  <img
+                    src={
                       member.avatar
-                        ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${member.avatar}`
+                        ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
+                            member.avatar
+                          }`
                         : '/images/default-avatar.png'
-                    } alt={member.name || ''} className="w-10 h-10 rounded-full" />
-                    <div>
-                      <h3>{member.name}</h3>
-                      <p className="text-sm">{member.invitedEmail}</p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-center text-sm">
-                    {(isCreator && member.userId !== user?.id) &&
-                      <>
-                        <MemberActionDropdown member={member} />
-                        <span aria-hidden="true" class="select-none px-1.5">·</span>
-                      </>
                     }
-                    <span>{member.status}</span>
-                    <span aria-hidden="true" class="select-none px-1.5">·</span>
-                    <span>{member.role}</span>
+                    alt={member.name || ''}
+                    className="h-10 w-10 rounded-full"
+                  />
+                  <div>
+                    <h3>{member.name}</h3>
+                    <p className="text-sm">{member.invitedEmail}</p>
                   </div>
                 </div>
-              )
-            })
-          }
+
+                <div className="flex items-center text-sm">
+                  <span>{member.status}</span>
+                  <span aria-hidden="true" class="select-none px-1.5">
+                    ·
+                  </span>
+                  <span>{member.role}</span>
+                  {member.userId !== user?.id && (
+                    <MemberActionDropdown member={member} />
+                  )}
+                </div>
+              </div>
+            );
+          })}
         </div>
       </div>
 
-      {(team?.canMemberSendInvite || isCreator) && (
+      {team?.canMemberSendInvite && (
         <div className="mt-8">
           <button
             disabled={teamMembers.length >= 25}
             data-popup="invite-member-popup"
-            className="flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100 disabled:bg-gray-100 disabled:opacity-75 disabled:cursor-not-allowed"
+            className="flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:opacity-75"
           >
             + Invite Member
           </button>
@@ -140,7 +145,8 @@ export function TeamMembersPage() {
       )}
       {teamMembers.length >= 25 && (
         <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
-          You have reached the maximum number of members in a team. Please reach out to us if you need more.
+          You have reached the maximum number of members in a team. Please reach
+          out to us if you need more.
         </p>
       )}
     </div>
