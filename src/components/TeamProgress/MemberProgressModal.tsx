@@ -149,7 +149,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
               </p>
             </div>
             <p class="-mx-4 mb-3 flex items-center justify-center border-b border-t py-2 text-sm">
-              <span class="mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+              <span class="mr-2.5 hidden rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900 sm:block">
                 <span>{progressPercentage}</span>% Done
               </span>
 
@@ -192,7 +192,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className="popup-close absolute right-2.5 top-3 ml-auto block inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 sm:hidden"
+            className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 sm:hidden"
             onClick={onClose}
           >
             <img src={CloseIcon} className="h-4 w-4" />
