@@ -7,6 +7,7 @@ import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import { renderTopicProgress } from '../../lib/resource-progress';
+import CloseIcon from '../../icons/close.svg';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -132,7 +133,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white shadow"
         >
           <div className="p-4">
-            <div className="mt-4 mb-5">
+            <div className="mb-5 mt-4">
               <h2 className={'mb-1 text-center text-2xl font-bold'}>
                 {member.name}'s Progress
               </h2>
@@ -188,6 +189,15 @@ export function MemberProgressModal(props: ProgressMapProps) {
               />
             </div>
           )}
+
+          <button
+            type="button"
+            className="popup-close absolute right-2.5 top-3 ml-auto block inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 sm:hidden"
+            onClick={onClose}
+          >
+            <img src={CloseIcon} className="h-4 w-4" />
+            <span class="sr-only">Close modal</span>
+          </button>
         </div>
       </div>
     </div>

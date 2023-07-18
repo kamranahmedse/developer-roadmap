@@ -89,6 +89,10 @@ export function TeamVersions(props: TeamVersionsProps) {
     });
   }, [selectedTeamVersion]);
 
+  if (!teamVersions.length) {
+    return null;
+  }
+
   return (
     <div
       className={`relative transition-opacity duration-500 opacity-${containerOpacity}`}

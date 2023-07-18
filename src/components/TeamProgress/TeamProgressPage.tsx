@@ -72,7 +72,7 @@ export function TeamProgressPage() {
           Click on a progress bar to see more details.
         </p>
       </div>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid min-[520px]:grid-cols-2 gap-4">
         {teamMembers.map((member) => (
           <MemberProgressItem teamId={teamId} member={member} />
         ))}
