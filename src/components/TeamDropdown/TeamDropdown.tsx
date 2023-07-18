@@ -88,7 +88,7 @@ export function TeamDropdown() {
                   : '/images/default-avatar.png'
               }
               alt=""
-              className="h-4 w-4 rounded-full"
+              className="h-4 w-4 rounded-full object-cover"
             />
           )}
           <span className="truncate">
