@@ -103,10 +103,10 @@ export function MemberProgressModal(props: ProgressMapProps) {
           skipped = [],
         } = memberProgress;
 
-        removed.forEach((id: string) => renderTopicProgress(id, 'removed'));
         done.forEach((id: string) => renderTopicProgress(id, 'done'));
         learning.forEach((id: string) => renderTopicProgress(id, 'learning'));
         skipped.forEach((id: string) => renderTopicProgress(id, 'skipped'));
+        removed.forEach((id: string) => renderTopicProgress(id, 'removed'));
       })
       .catch((err) => {
         console.error(err);
