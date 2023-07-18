@@ -239,6 +239,13 @@ export function renderTopicProgress(
   });
 }
 
+export function clearResourceProgress(topicProgress: ResourceProgressType) {
+  const clickableElements = document.querySelectorAll('.clickable-group')
+  for (const clickableElement of clickableElements) {
+    clickableElement.classList.remove(topicProgress);
+  }
+}
+
 export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
