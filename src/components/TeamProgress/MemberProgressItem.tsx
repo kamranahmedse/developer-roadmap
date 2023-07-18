@@ -1,12 +1,18 @@
-import type { TeamMember, UserProgress } from './TeamProgressPage';
+import type { GetTeamResponse, TeamMember } from './TeamProgressPage';
 import { useState } from 'preact/hooks';
 
 type MemberProgressItemProps = {
+  team: GetTeamResponse;
   member: TeamMember;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
-  const { member } = props;
-  const memberProgress = member.progress;
+  const { member, team } = props;
+
+  const teamRoadmapIds = team.roadmaps.map((roadmap) => roadmap.id);
+  const memberProgress = member.progress.filter((progress) => {
+    return teamRoadmapIds.includes(progress.resourceId);
+  });
+
   const [showAll, setShowAll] = useState(false);
 
   return (
@@ -30,8 +36,8 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             <p className="truncate text-sm text-gray-500">{member.email}</p>
           </div>
         </div>
-        <div className="relative flex grow flex-col space-y-2 border-b p-3">
-          {(showAll ? member.progress : member.progress.slice(0, 4)).map(
+        <div className="relative flex grow flex-col space-y-2 p-3">
+          {(showAll ? memberProgress : memberProgress.slice(0, 4)).map(
             (progress) => {
               return (
                 <button
@@ -40,7 +46,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                 >
                   <span className="relative z-10 flex items-center justify-between text-sm">
                     <span>{progress.resourceTitle}</span>
-                    <span className="text-xs">
+                    <span className="text-xs text-gray-400">
                       {progress.done} / {progress.total}
                     </span>
                   </span>
