@@ -6,7 +6,7 @@ import { renderTopicProgress } from '../../lib/resource-progress';
 import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
-import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
+import type { TeamResourceConfig } from './RoadmapSelector';
 
 export type ProgressMapProps = {
   teamId: string;
@@ -17,7 +17,7 @@ export type ProgressMapProps = {
   onClose: () => void;
 };
 
-export function MemberProgressMap(props: ProgressMapProps) {
+export function UpdateTeamResourceModal(props: ProgressMapProps) {
   const {
     defaultRemovedItems = [],
     resourceId,
@@ -148,7 +148,7 @@ export function MemberProgressMap(props: ProgressMapProps) {
           ref={popupBodyEl}
           class="popup-body relative rounded-lg bg-white shadow"
         >
-          <div className={'sticky top-0 mb-3 bg-gray-900 p-3'}>
+          <div className={'sticky top-0 mb-3 bg-black p-4 border-4 border-white rounded-2xl'}>
             <p className="mb-2 text-gray-300">
               Click and select the items to remove from the roadmap.
             </p>

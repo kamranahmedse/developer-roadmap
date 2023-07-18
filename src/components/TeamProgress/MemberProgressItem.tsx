@@ -1,22 +1,33 @@
-import type { GetTeamResponse, TeamMember } from './TeamProgressPage';
+import type { TeamMember } from './TeamProgressPage';
 import { useState } from 'preact/hooks';
+import { MemberProgressModal } from './MemberProgressModal';
 
 type MemberProgressItemProps = {
-  team: GetTeamResponse;
+  teamId: string;
   member: TeamMember;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
-  const { member, team } = props;
+  const { member, teamId } = props;
 
-  const teamRoadmapIds = team.roadmaps.map((roadmap) => roadmap.id);
-  const memberProgress = member.progress.filter((progress) => {
-    return teamRoadmapIds.includes(progress.resourceId);
-  });
+  const memberProgress = member.progress;
 
+  const [detailResourceId, setDetailResourceId] = useState<string | null>(null);
   const [showAll, setShowAll] = useState(false);
 
   return (
     <>
+      {detailResourceId && (
+        <MemberProgressModal
+          member={member}
+          teamId={teamId}
+          resourceId={detailResourceId}
+          resourceType={'roadmap'}
+          onClose={() => {
+            setDetailResourceId(null);
+          }}
+        />
+      )}
+
       <div
         className="flex h-full min-h-[270px] flex-col rounded-md border"
         key={member._id}
@@ -41,7 +52,8 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             (progress) => {
               return (
                 <button
-                  className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black"
+                  onClick={() => setDetailResourceId(progress.resourceId)}
+                  className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
                   key={progress.resourceId}
                 >
                   <span className="relative z-10 flex items-center justify-between text-sm">

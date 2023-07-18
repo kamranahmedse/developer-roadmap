@@ -5,7 +5,7 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import SearchIcon from '../../icons/search.svg';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
-import { TeamResource } from './TeamResource';
+import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 
 export type TeamResourceConfig = {
   resourceId: string;
@@ -114,7 +114,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   return (
     <div>
       {changingRoadmapId && (
-        <TeamResource
+        <UpdateTeamResourceModal
           onClose={() => setChangingRoadmapId('')}
           resourceId={changingRoadmapId}
           resourceType={'roadmap'}

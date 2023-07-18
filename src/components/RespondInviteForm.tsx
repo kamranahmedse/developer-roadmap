@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'preact/hooks';
-import { useParams } from '../hooks/use-params';
 import { httpGet, httpPatch } from '../lib/http';
 import BuildingIcon from '../icons/building.svg';
 import ErrorIcon from '../icons/error.svg';
@@ -8,7 +7,6 @@ import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import type { AllowedRoles } from './CreateTeam/RoleDropdown';
 import type { AllowedMemberStatus } from './TeamDropdown/TeamDropdown';
 import { isLoggedIn } from '../lib/jwt';
-import { Spinner } from './ReactIcons/Spinner';
 import { showLoginPopup } from '../lib/popup';
 import { getUrlParams } from '../lib/browser';
 
@@ -27,7 +25,7 @@ type InvitationResponse = {
 };
 
 export function RespondInviteForm() {
-  const { inviteId } = getUrlParams();
+  const { i: inviteId } = getUrlParams();
 
   const [isLoadingInvite, setIsLoadingInvite] = useState(true);
   const [error, setError] = useState('');

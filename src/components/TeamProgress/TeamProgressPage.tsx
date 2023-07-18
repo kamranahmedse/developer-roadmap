@@ -3,7 +3,6 @@ import { useTeamId } from '../../hooks/use-team-id';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressItem } from './MemberProgressItem';
-import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -27,22 +26,11 @@ export type TeamMember = {
   updatedAt: string;
 };
 
-export type GetTeamResponse = TeamDocument & {
-  roadmaps: {
-    id: string;
-    title: string;
-    originalTopicCount: number;
-    removedTopicCount: number;
-    totalTopicCount: number;
-  }[];
-};
-
 export function TeamProgressPage() {
   const { teamId } = useTeamId();
   const [isLoading, setIsLoading] = useState(true);
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
-  const [team, setTeam] = useState<GetTeamResponse | null>(null);
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<{
@@ -56,25 +44,12 @@ export function TeamProgressPage() {
     setTeamMembers(response.data);
   }
 
-  async function getTeam() {
-    const { response, error } = await httpGet<GetTeamResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`
-    );
-
-    if (error || !response) {
-      alert(error?.message || 'Failed to get team progress');
-      return;
-    }
-
-    setTeam(response);
-  }
-
   useEffect(() => {
     if (!teamId) {
       return;
     }
 
-    Promise.any([getTeam(), getTeamProgress()]).finally(() => {
+    getTeamProgress().finally(() => {
       pageProgressMessage.set('');
       setIsLoading(false);
     });
@@ -82,6 +57,11 @@ export function TeamProgressPage() {
 
   if (isLoading) {
     return null;
+  }
+
+  if (!teamId) {
+    window.location.href = '/';
+    return;
   }
 
   return (
@@ -94,7 +74,7 @@ export function TeamProgressPage() {
       </div>
       <div className="grid grid-cols-2 gap-4">
         {teamMembers.map((member) => (
-          <MemberProgressItem team={team!} member={member} />
+          <MemberProgressItem teamId={teamId} member={member} />
         ))}
       </div>
     </div>
