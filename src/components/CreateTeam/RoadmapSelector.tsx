@@ -26,7 +26,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [error, setError] = useState<string>('');
 
-  async function getData() {
+  async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
 
     if (error) {
@@ -54,7 +54,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       return;
     }
 
-    pageProgressMessage.set(`Deleting roadmap from team`);
+    pageProgressMessage.set(`Deleting resource`);
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
         team._id
@@ -108,7 +108,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   }
 
   useEffect(() => {
-    getData().finally();
+    loadAllRoadmaps().finally();
   }, []);
 
   return (

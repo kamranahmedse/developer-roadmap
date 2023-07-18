@@ -66,12 +66,7 @@ export function TeamProgressPage() {
 
   return (
     <div>
-      <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">Progress</h2>
-        <p className="mt-2 text-gray-400">
-          Click on a progress bar to see more details.
-        </p>
-      </div>
+
       <div className="grid gap-4 sm:grid-cols-2">
         {teamMembers.map((member) => (
           <MemberProgressItem teamId={teamId} member={member} />
