@@ -5,6 +5,7 @@ import { httpGet } from '../../lib/http';
 import DropdownIcon from '../../icons/dropdown.svg';
 import {
   clearResourceProgress,
+  refreshProgressCounters,
   renderTopicProgress,
 } from '../../lib/resource-progress';
 import { renderResourceProgress } from '../../lib/resource-progress';
@@ -39,6 +40,7 @@ export function TeamVersions(props: TeamVersionsProps) {
       })}`
     );
     if (error || !response) {
+      // @TODO: Handle error
       alert('Failed to load team versions.');
     } else {
       setTeamVersions(response);
@@ -73,14 +75,17 @@ export function TeamVersions(props: TeamVersionsProps) {
   }, [teamId]);
 
   useEffect(() => {
-    clearResourceProgress('removed');
+    clearResourceProgress();
     if (!selectedTeamVersion) {
       renderResourceProgress(resourceType, resourceId);
       return;
     }
 
-    selectedTeamVersion.config.removed.forEach((topic) => {
-      renderTopicProgress(topic, 'removed');
+    renderResourceProgress(resourceType, resourceId).then(() => {
+      selectedTeamVersion.config.removed.forEach((topic) => {
+        renderTopicProgress(topic, 'removed');
+      });
+      refreshProgressCounters();
     });
   }, [selectedTeamVersion]);
 

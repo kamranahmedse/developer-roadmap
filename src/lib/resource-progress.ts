@@ -239,10 +239,10 @@ export function renderTopicProgress(
   });
 }
 
-export function clearResourceProgress(topicProgress: ResourceProgressType) {
+export function clearResourceProgress() {
   const clickableElements = document.querySelectorAll('.clickable-group')
   for (const clickableElement of clickableElements) {
-    clickableElement.classList.remove(topicProgress);
+    clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
   }
 }
 
@@ -301,8 +301,11 @@ export function refreshProgressCounters() {
     '[data-group-id^="check:"].skipped'
   ).length;
 
+  const totalRemoved = document.querySelectorAll(
+    '.clickable-group.removed'
+  ).length;
   const totalItems =
-    totalClickable - externalLinks - roadmapSwitchers - checkBoxes;
+    totalClickable - externalLinks - roadmapSwitchers - checkBoxes - totalRemoved;
 
   const totalDone =
     document.querySelectorAll('.clickable-group.done').length -
