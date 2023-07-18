@@ -206,14 +206,18 @@ export class Renderer {
       return;
     }
 
+    if (targetGroup.classList.contains('removed')) {
+      return;
+    }
+
     e.preventDefault();
 
     const isCurrentStatusDone = targetGroup.classList.contains('done');
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
     this.updateTopicStatus(
-        normalizedGroupId,
-        !isCurrentStatusDone ? 'done' : 'pending'
-      );
+      normalizedGroupId,
+      !isCurrentStatusDone ? 'done' : 'pending'
+    );
   }
 
   handleSvgClick(e: any) {
@@ -224,6 +228,10 @@ export class Renderer {
     }
 
     e.stopImmediatePropagation();
+
+    if (targetGroup.classList.contains('removed')) {
+      return;
+    }
 
     if (/^ext_link/.test(groupId)) {
       const externalLink = groupId.replace('ext_link:', '');

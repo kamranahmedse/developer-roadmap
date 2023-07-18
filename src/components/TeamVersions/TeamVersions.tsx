@@ -130,7 +130,7 @@ export function TeamVersions(props: TeamVersionsProps) {
           className="absolute left-0 top-full z-50 mt-1 w-full overflow-hidden rounded-md border bg-white py-0.5 shadow-md"
         >
           <button
-            className="flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm"
+            className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${!selectedTeamVersion ? 'bg-gray-100' : 'bg-white'}`}
             onClick={() => {
               setSelectedTeamVersion(null);
               setIsDropdownOpen(false);
@@ -138,9 +138,6 @@ export function TeamVersions(props: TeamVersionsProps) {
           >
             <div className="flex w-full items-center justify-between">
               <div>Personal</div>
-              {!selectedTeamVersion && (
-                <div className="h-2 w-2 flex-shrink-0 rounded-full bg-green-500" />
-              )}
             </div>
           </button>
           {teamVersions.map((team) => {
