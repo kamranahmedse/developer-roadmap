@@ -132,10 +132,22 @@ export function MemberProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white shadow"
         >
           <div className="p-4">
-            <h2 className={'mb-3 text-center text-2xl font-bold'}>
-              {member.name}'s Progress
-            </h2>
-            <p class="-mx-4 flex items-center justify-center border-b border-t py-2 text-sm">
+            <div className="mt-4 mb-5">
+              <h2 className={'mb-1 text-center text-2xl font-bold'}>
+                {member.name}'s Progress
+              </h2>
+              <p className={'text-center text-gray-500'}>
+                You are looking at {member.name}'s progress.{' '}
+                <a
+                  href={`/${resourceId}?t=${teamId}`}
+                  className="text-blue-600 underline"
+                >
+                  View your progress
+                </a>
+                .
+              </p>
+            </div>
+            <p class="-mx-4 mb-3 flex items-center justify-center border-b border-t py-2 text-sm">
               <span class="mr-2.5 rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
@@ -148,10 +160,17 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 <span data-progress-learning="">{memberLearning}</span> in
                 progress
               </span>
-              <span class="mx-1.5 text-gray-400">·</span>
-              <span>
-                <span data-progress-skipped="">{memberSkipped}</span> skipped
-              </span>
+
+              {memberSkipped > 0 && (
+                <>
+                  <span class="mx-1.5 text-gray-400">·</span>
+                  <span>
+                    <span data-progress-skipped="">{memberSkipped}</span>{' '}
+                    skipped
+                  </span>
+                </>
+              )}
+
               <span class="mx-1.5 text-gray-400">·</span>
               <span>
                 <span data-progress-total="">{memberTotal}</span> Total
