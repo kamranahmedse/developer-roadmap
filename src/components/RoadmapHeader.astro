@@ -121,8 +121,9 @@ const isRoadmapReady = !isUpcoming;
         <TeamVersions
           resourceType='roadmap'
           resourceId={roadmapId}
-          client:authenticated
+          client:only
         />
+
         {
           isRoadmapReady && (
             <a

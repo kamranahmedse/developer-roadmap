@@ -219,7 +219,6 @@ export function renderTopicProgress(
       matchingElements.push(element);
     });
 
-  console.log(matchingElements, isDone, isLearning, isSkipped, isRemoved);
   matchingElements.forEach((element) => {
     if (isDone) {
       element.classList.add('done');

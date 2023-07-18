@@ -8,6 +8,12 @@ export function getUrlParams() {
   return paramsObj;
 }
 
+export function deleteUrlParam(key: string) {
+  const url = new URL(window.location.href);
+  url.searchParams.delete(key);
+  window.history.pushState(null, '', url.toString());
+}
+
 export function setUrlParams(params: Record<string, string>) {
   const url = new URL(window.location.href);
 
