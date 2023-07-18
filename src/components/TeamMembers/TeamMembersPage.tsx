@@ -132,17 +132,16 @@ export function TeamMembersPage() {
         </div>
       </div>
 
-      {team?.canMemberSendInvite && (
-        <div className="mt-8">
-          <button
-            disabled={teamMembers.length >= 25}
-            data-popup="invite-member-popup"
-            className="flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:opacity-75"
-          >
-            + Invite Member
-          </button>
-        </div>
-      )}
+      <div className="mt-8">
+        <button
+          disabled={teamMembers.length >= 25}
+          data-popup="invite-member-popup"
+          className="flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:opacity-75"
+        >
+          + Invite Member
+        </button>
+      </div>
+
       {teamMembers.length >= 25 && (
         <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
           You have reached the maximum number of members in a team. Please reach
