@@ -49,7 +49,7 @@ export const TeamSidebar: FunctionalComponent<{
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          <img alt='menu' src={ChevronDown} class="h-4 w-4" />
+          <img alt="menu" src={ChevronDown} class="h-4 w-4" />
         </button>
         {menuShown && (
           <ul
@@ -58,12 +58,12 @@ export const TeamSidebar: FunctionalComponent<{
           >
             <li>
               <a
-                  href='/team'
-                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
-                      activePageId === 'team' ? 'bg-slate-100' : ''
-                  }`}
+                href="/team"
+                class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+                  activePageId === 'team' ? 'bg-slate-100' : ''
+                }`}
               >
-                <img alt={'teams'} src={GroupIcon} class={`h-4 w-4 mr-2`} />
+                <img alt={'teams'} src={GroupIcon} class={`mr-2 h-4 w-4`} />
                 Other Teams
               </a>
             </li>
@@ -78,7 +78,11 @@ export const TeamSidebar: FunctionalComponent<{
                       isActive ? 'bg-slate-100' : ''
                     }`}
                   >
-                    <img alt={'menu icon'} src={sidebarLink.icon} className="mr-2 h-4 w-4" />
+                    <img
+                      alt={'menu icon'}
+                      src={sidebarLink.icon}
+                      className="mr-2 h-4 w-4"
+                    />
                     {sidebarLink.title}
                   </a>
                 </li>
@@ -108,7 +112,11 @@ export const TeamSidebar: FunctionalComponent<{
                       }`}
                     >
                       <span class="flex flex-grow items-center">
-                        <img alt='menu icon' src={sidebarLink.icon} className="mr-2 h-4 w-4" />
+                        <img
+                          alt="menu icon"
+                          src={sidebarLink.icon}
+                          className="mr-2 h-4 w-4"
+                        />
                         {sidebarLink.title}
                       </span>
                     </a>

@@ -42,16 +42,6 @@ const sidebarLinks = [
     },
   },
   {
-    href: '/account/notification',
-    title: 'Notification',
-    id: 'notification',
-    isNew: false,
-    icon: {
-      glyph: 'notification',
-      classes: 'h-4 w-4',
-    },
-  },
-  {
     href: '/account/settings',
     title: 'Settings',
     id: 'settings',
@@ -141,15 +131,6 @@ const sidebarLinks = [
                       />
                       {sidebarLink.title}
                     </span>
-
-                    {sidebarLink.id === 'notification' && (
-                      <span
-                        class='relative mr-1 flex items-center'
-                        id='notification-count'
-                      >
-                        0
-                      </span>
-                    )}
 
                     {sidebarLink.isNew && !isActive && (
                       <span class='relative mr-1 flex items-center'>

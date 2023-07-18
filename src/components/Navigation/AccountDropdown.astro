@@ -1,6 +1,5 @@
 ---
 import Icon from '../AstroIcon.astro';
-import { NotificationBadge } from '../Notification/NotificationBadge';
 ---
 
 <div class='relative hidden' data-auth-required>
@@ -19,7 +18,7 @@ import { NotificationBadge } from '../Notification/NotificationBadge';
   </button>
 
   <div
-    class='absolute right-0 z-10 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
+    class='absolute right-0 z-50 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
     data-account-dropdown
   >
     <ul>
@@ -29,15 +28,6 @@ import { NotificationBadge } from '../Notification/NotificationBadge';
           class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
         >
           Profile
-        </a>
-      </li>
-      <li class='px-1'>
-        <a
-          href='/account/notification'
-          class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700 flex items-center justify-between gap-1'
-        >
-          Notification
-          <span class='relative mr-1 flex items-center' id="notification-count">0</span>
         </a>
       </li>
       <li class='px-1'>
@@ -51,6 +41,4 @@ import { NotificationBadge } from '../Notification/NotificationBadge';
       </li>
     </ul>
   </div>
-
-  <NotificationBadge client:authenticated />
 </div>

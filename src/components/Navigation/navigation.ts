@@ -17,6 +17,7 @@ function bindEvents() {
 
     // If the user clicks on the logout button, remove the token cookie
     if (dataset.logoutButton !== undefined) {
+      e.preventDefault();
       logout();
     } else if (dataset.showMobileNav !== undefined) {
       document.querySelector('[data-mobile-nav]')?.classList.remove('hidden');

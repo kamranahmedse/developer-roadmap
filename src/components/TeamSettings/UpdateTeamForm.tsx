@@ -3,10 +3,9 @@ import {httpGet, httpPut} from '../../lib/http';
 import {Spinner} from '../ReactIcons/Spinner';
 import {useAuth} from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
-import {RoadmapSelector} from '../CreateTeam/RoadmapSelector';
 import type {TeamDocument} from '../CreateTeam/CreateTeamForm';
 import {pageProgressMessage} from '../../stores/page';
-import {useTeamId} from "../../hooks/use-team-id";
+import {useTeamId} from '../../hooks/use-team-id';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,6 +29,7 @@ export function UpdateTeamForm() {
     '1000+',
   ];
   const [isDisabled, setIsDisabled] = useState(false);
+  const [team, setTeam] = useState<TeamDocument | null>(null);
   const { teamId } = useTeamId();
   const user = useAuth();
 
@@ -80,6 +80,8 @@ export function UpdateTeamForm() {
       return;
     }
 
+    setTeam(response);
+
     setName(response.name);
     setAvatar(response.avatar || '');
     setWebsite(response?.links?.website || '');
@@ -97,18 +99,14 @@ export function UpdateTeamForm() {
     }
     loadTeam().finally(() => {
       pageProgressMessage.set('');
-    })
+    });
   }, [teamId]);
 
   return (
     <div>
       <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">
-          Team
-        </h2>
-        <p className="mt-2 text-gray-400">
-          Update your team information.
-        </p>
+        <h2 className="text-3xl font-bold sm:text-4xl">Team</h2>
+        <p className="mt-2 text-gray-400">Update your team information.</p>
       </div>
       <UploadProfilePicture
         type="logo"
@@ -121,7 +119,7 @@ export function UpdateTeamForm() {
         teamId={teamId!}
       />
       <form onSubmit={handleSubmit}>
-        <div className="flex w-full flex-col mt-4">
+        <div className="mt-4 flex w-full flex-col">
           <label
             for="name"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
@@ -209,28 +207,31 @@ export function UpdateTeamForm() {
           </div>
         )}
 
-        <RoadmapSelector
-          type="Roadmaps"
-          selectedRoadmapIds={roadmaps}
-          setSelectedRoadmapIds={setRoadmaps}
-        />
-        <RoadmapSelector
-          type="Best Practices"
-          selectedRoadmapIds={bestPractices}
-          setSelectedRoadmapIds={setBestPractices}
-        />
-
         <div className="mt-4 flex w-full flex-col">
           <label
             for="can-member-send-invite"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-          >Can team members invite new members?</label>
+          >
+            Can team members invite new members?
+          </label>
 
-          <div className="flex gap-2 items-center mt-2">
-            <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(true)}>
+          <div className="mt-2 flex items-center gap-2">
+            <button
+              type="button"
+              className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
+                canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
+              }`}
+              onClick={() => setCanMemberSendInvite(true)}
+            >
               Yes
             </button>
-            <button type="button" className={`inline-flex items-center px-4 py-1.5 border border-gray-300 rounded-md text-sm focus:outline-none ${!canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'}`} onClick={() => setCanMemberSendInvite(false)}>
+            <button
+              type="button"
+              className={`inline-flex items-center rounded-md border border-gray-300 px-4 py-1.5 text-sm focus:outline-none ${
+                !canMemberSendInvite ? 'bg-gray-200' : 'bg-white opacity-75'
+              }`}
+              onClick={() => setCanMemberSendInvite(false)}
+            >
               No
             </button>
           </div>
@@ -241,13 +242,15 @@ export function UpdateTeamForm() {
         )}
 
         {message && (
-          <p className="mt-4 rounded-lg bg-green-100 p-2 text-green-700">{message}</p>
+          <p className="mt-4 rounded-lg bg-green-100 p-2 text-green-700">
+            {message}
+          </p>
         )}
 
         <div className="mt-4 flex w-full flex-col">
           <button
             type="submit"
-            className="inline-flex w-full h-11 items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+            className="inline-flex h-11 w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
             disabled={isDisabled || isLoading}
           >
             {isLoading ? <Spinner /> : 'Update'}

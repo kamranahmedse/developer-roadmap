@@ -27,7 +27,8 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
     setIsLoading(true);
     httpGet<{ token: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${window.location.search
+      `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
+        window.location.search
       }`
     )
       .then(({ response, error }) => {
@@ -83,9 +84,14 @@ export function LinkedInButton(props: LinkedInButtonProps) {
 
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
-        if (!['/login', '/signup', '/respond-invite'].includes(window.location.pathname)) {
+        if (!['/login', '/signup'].includes(window.location.pathname)) {
+          const pagePath =
+            window.location.pathname === '/respond-invite'
+              ? window.location.pathname + window.location.search
+              : window.location.pathname;
+
           localStorage.setItem(LINKEDIN_REDIRECT_AT, Date.now().toString());
-          localStorage.setItem(LINKEDIN_LAST_PAGE, window.location.pathname);
+          localStorage.setItem(LINKEDIN_LAST_PAGE, pagePath);
         }
 
         window.location.href = response.loginUrl;

@@ -6,13 +6,26 @@ import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { useAuth } from '../../hooks/use-auth';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Spinner } from '../ReactIcons/Spinner';
+import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
+
+const allowedStatus = ['invited', 'joined', 'rejected'] as const;
+export type AllowedMemberStatus = (typeof allowedStatus)[number];
+
+type TeamListResponse = {
+  _id: string;
+  name: string;
+  avatar?: string;
+  role: AllowedRoles;
+  status: AllowedMemberStatus;
+  memberId: string;
+};
 
 export function TeamDropdown() {
   const dropdownRef = useRef<HTMLDivElement>(null);
   const [isLoading, setIsLoading] = useState(true);
 
   const [showDropdown, setShowDropdown] = useState(false);
-  const [teamList, setTeamList] = useState<TeamDocument[]>([]);
+  const [teamList, setTeamList] = useState<TeamListResponse[]>([]);
 
   const { teamId } = useTeamId();
   const user = useAuth();
@@ -30,7 +43,9 @@ export function TeamDropdown() {
   });
 
   async function getAllTeams() {
-    const { response, error } = await httpGet<TeamDocument[]>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`);
+    const { response, error } = await httpGet<TeamListResponse[]>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+    );
     if (error || !response) {
       alert(error?.message || 'Something went wrong');
       return;
@@ -46,12 +61,21 @@ export function TeamDropdown() {
     });
   }, []);
 
+  const pendingTeamIds = teamList
+    .filter((team) => team.status === 'invited')
+    .map((team) => team._id);
+
   return (
     <div className="relative mr-2">
       <button
         className="flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
         onClick={() => setShowDropdown(!showDropdown)}
       >
+        {pendingTeamIds.length > 0 && (
+          <span className="absolute -left-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-medium text-white">
+            {pendingTeamIds.length}
+          </span>
+        )}
         <div className="flex items-center gap-2">
           {isLoading && <Spinner className="h-4 w-4" isDualRing={false} />}
           {!isLoading && (
@@ -68,7 +92,7 @@ export function TeamDropdown() {
             />
           )}
           <span className="truncate">
-            {!isLoading && selectedLabel }
+            {!isLoading && selectedLabel}
             {isLoading && 'Loading ..'}
           </span>
         </div>
@@ -89,16 +113,27 @@ export function TeamDropdown() {
                 <span className="truncate">Personal Account</span>
               </a>
             </li>
-            {teamList.map((team) => (
-              <li>
-                <a
-                  className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
-                  href={`/team/progress?t=${team._id}`}
-                >
-                  <span className="truncate">{team.name}</span>
-                </a>
-              </li>
-            ))}
+            {teamList.map((team) => {
+              const pageLink =
+                team.status === 'invited'
+                  ? `/respond-invite?inviteId=${team.memberId}`
+                  : `/team/progress?t=${team._id}`;
+              return (
+                <li>
+                  <a
+                    className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                    href={`${pageLink}`}
+                  >
+                    <span className="truncate">{team.name}</span>
+                    {pendingTeamIds.includes(team._id) && (
+                      <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
+                        Invite
+                      </span>
+                    )}
+                  </a>
+                </li>
+              );
+            })}
           </ul>
           <a
             className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
