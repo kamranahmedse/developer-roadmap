@@ -83,26 +83,33 @@ export function TeamProgressPage() {
     return;
   }
 
-  const groupByRoadmap: GroupByRoadmap[] =
-    currentTeam?.roadmaps.map((roadmap) => {
-      const members =
-        teamMembers.map((member) => {
-          const memberProgress =
-            member.progress.find(
-              (progress) => progress.resourceId === roadmap
-            ) || undefined;
-          return {
-            member: member,
-            progress: memberProgress,
-          };
-        }) || [];
-      return {
-        resourceId: roadmap,
-        resourceTitle: members?.[0].progress?.resourceTitle || '',
-        resourceType: 'roadmap',
-        members,
-      };
-    }) || [];
+  const groupByRoadmap: GroupByRoadmap[] = [];
+  for (const roadmap of currentTeam?.roadmaps || []) {
+    const members: GroupByRoadmap['members'] = [];
+    for (const member of teamMembers) {
+      const progress = member.progress.find(
+        (progress) => progress.resourceId === roadmap
+      );
+      if (!progress) {
+        continue;
+      }
+      members.push({
+        member,
+        progress,
+      });
+    }
+
+    if (!members.length) {
+      continue;
+    }
+
+    groupByRoadmap.push({
+      resourceId: roadmap,
+      resourceTitle: members?.[0].progress?.resourceTitle || '',
+      resourceType: 'roadmap',
+      members,
+    });
+  }
 
   return (
     <div>
