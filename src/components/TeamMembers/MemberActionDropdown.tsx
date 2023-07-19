@@ -6,8 +6,12 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 
 export function MemberActionDropdown({
   member,
+  onUpdateMember,
+  onDeleteMember,
   isDisabled = false,
 }: {
+  onDeleteMember: () => void;
+  onUpdateMember: () => void;
   isDisabled: boolean;
   member: TeamMemberDocument;
 }) {
@@ -18,23 +22,6 @@ export function MemberActionDropdown({
   useOutsideClick(menuRef, () => {
     setIsOpen(false);
   });
-
-  async function deleteMember() {
-    const { response, error } = await httpDelete(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-member/${member.teamId}/${
-        member._id
-      }`,
-      {}
-    );
-
-    if (error || !response) {
-      setIsLoading(false);
-      alert(error?.message || 'Something went wrong');
-      return;
-    }
-
-    window.location.reload();
-  }
 
   async function resendInvite() {
     const { response, error } = await httpPatch(
@@ -56,7 +43,17 @@ export function MemberActionDropdown({
   const actions = [
     {
       name: 'Delete',
-      handleClick: deleteMember,
+      handleClick: () => {
+        onDeleteMember();
+        setIsOpen(false);
+      },
+    },
+    {
+      name: 'Update Role',
+      handleClick: () => {
+        onUpdateMember();
+        setIsOpen(false);
+      },
     },
     ...(['invited'].includes(member.status)
       ? [

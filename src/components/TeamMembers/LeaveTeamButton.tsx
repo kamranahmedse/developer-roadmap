@@ -31,7 +31,7 @@ export function LeaveTeamButton(props: LeaveTeamButtonProps) {
       disabled={isLoading}
       onClick={leaveTeam}
       className="bg-gray-50 text-red-600 text-sm font-medium px-2 leading-none py-1.5 rounded-md border border-gray-200 h-7 flex items-center justify-center min-w-[95px]">
-      {isLoading ? <Spinner /> : 'Leave team'}
+      {isLoading ? <Spinner isDualRing={false} /> : 'Leave team'}
     </button>
   )
 

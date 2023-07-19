@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
-import { httpGet } from '../../lib/http';
+import { httpDelete, httpGet } from '../../lib/http';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
@@ -9,6 +9,7 @@ import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
 import type { AllowedMemberStatus } from '../TeamDropdown/TeamDropdown';
 import { InviteMemberPopup } from './InviteMemberPopup';
 import { getUrlParams } from '../../lib/browser';
+import { UpdateMemberPopup } from './UpdateMemberPopup';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -21,15 +22,16 @@ export interface TeamMemberDocument {
   updatedAt: Date;
 }
 
-interface TeamMemberList extends TeamMemberDocument {
+interface TeamMemberItem extends TeamMemberDocument {
   name: string;
   avatar: string;
 }
 
 export function TeamMembersPage() {
   const { t: teamId } = getUrlParams();
+  const [memberToUpdate, setMemberToUpdate] = useState<TeamMemberItem>();
   const [isInvitingMember, setIsInvitingMember] = useState(false);
-  const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
+  const [teamMembers, setTeamMembers] = useState<TeamMemberItem[]>([]);
   const [team, setTeam] = useState<TeamDocument>();
 
   const user = useAuth();
@@ -49,7 +51,7 @@ export function TeamMembersPage() {
   }
 
   async function getTeamMemberList() {
-    const { response, error } = await httpGet<TeamMemberList[]>(
+    const { response, error } = await httpGet<TeamMemberItem[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`
     );
     if (error || !response) {
@@ -70,10 +72,46 @@ export function TeamMembersPage() {
     });
   }, [teamId]);
 
+  async function deleteMember(teamId: string, memberId: string) {
+    pageProgressMessage.set('Deleting member');
+    const { response, error } = await httpDelete(
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-delete-member/${teamId}/${memberId}`,
+      {}
+    );
+
+    if (error || !response) {
+      alert(error?.message || 'Something went wrong');
+      return;
+    }
+
+    await getTeamMemberList();
+  }
+
   return (
     <div>
+      {memberToUpdate && (
+        <UpdateMemberPopup
+          member={memberToUpdate}
+          onUpdated={() => {
+            pageProgressMessage.set('Refreshing members');
+            getTeamMemberList().finally(() => {
+              pageProgressMessage.set('');
+            });
+            setMemberToUpdate(undefined);
+          }}
+          onClose={() => {
+            setMemberToUpdate(undefined);
+          }}
+        />
+      )}
       {isInvitingMember && (
         <InviteMemberPopup
+          onInvited={() => {
+            getTeamMemberList().then(() => null);
+            setIsInvitingMember(false);
+          }}
           onClose={() => {
             setIsInvitingMember(false);
           }}
@@ -138,15 +176,27 @@ export function TeamMembersPage() {
                 <div className="flex items-center text-sm">
                   <span
                     className={`rounded-full px-2 py-0.5 text-xs capitalize ${
-                      ['admin', 'manager'].includes(member.role)
-                        ? 'bg-blue-100 text-blue-700'
+                      ['admin'].includes(member.role)
+                        ? 'bg-blue-100 text-blue-700 '
                         : 'bg-gray-100 text-gray-700 '
+                    } ${
+                      ['manager'].includes(member.role)
+                        ? 'bg-green-100 text-green-700'
+                        : ''
                     }`}
                   >
                     {member.role}
                   </span>
                   <MemberActionDropdown
+                    onDeleteMember={() => {
+                      deleteMember(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
                     isDisabled={member.userId === user?.id}
+                    onUpdateMember={() => {
+                      setMemberToUpdate(member);
+                    }}
                     member={member}
                   />
                 </div>

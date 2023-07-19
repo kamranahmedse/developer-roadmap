@@ -1,37 +1,35 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
-import { httpPost } from '../../lib/http';
+import { httpPost, httpPut } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { AllowedRoles, RoleDropdown } from '../CreateTeam/RoleDropdown';
+import type { TeamMemberDocument } from './TeamMembersPage';
 
 type InviteMemberPopupProps = {
-  onInvited: () => void;
+  member: TeamMemberDocument;
+  onUpdated: () => void;
   onClose: () => void;
 };
 
-export function InviteMemberPopup(props: InviteMemberPopupProps) {
-  const { onClose, onInvited } = props;
+export function UpdateMemberPopup(props: InviteMemberPopupProps) {
+  const { onClose, onUpdated, member } = props;
 
   const popupBodyRef = useRef<HTMLDivElement>(null);
-  const emailRef = useRef<HTMLInputElement>(null);
-  const [selectedRole, setSelectedRole] = useState<AllowedRoles>('member');
-  const [email, setEmail] = useState('');
+  const [selectedRole, setSelectedRole] = useState<AllowedRoles>(member.role);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
   const { teamId } = useTeamId();
-
-  useEffect(() => {
-    emailRef?.current?.focus();
-  }, []);
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
 
-    const { response, error } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-invite-member/${teamId}`,
-      { email, role: selectedRole }
+    const { response, error } = await httpPut(
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-member-role/${teamId}/${
+        member._id
+      }`,
+      { role: selectedRole }
     );
 
     if (error || !response) {
@@ -41,8 +39,7 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
     }
 
     setIsLoading(false);
-    handleClosePopup();
-    onInvited();
+    onUpdated();
   };
 
   const handleClosePopup = () => {
@@ -61,25 +58,16 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
           ref={popupBodyRef}
           class="popup-body relative rounded-lg bg-white p-4 shadow"
         >
-          <h3 class="mb-1.5 text-2xl font-medium">Invite Member</h3>
+          <h3 class="mb-1.5 text-2xl font-medium">Update Role</h3>
           <p className="mb-3 text-sm leading-none text-gray-400">
-            Enter the email and role below to invite a member.
+            Select the role to update for this member
           </p>
 
           <form onSubmit={handleSubmit}>
             <div className="my-4 flex flex-col gap-2">
-              <input
-                ref={emailRef}
-                type="email"
-                name="invite-member"
-                id="invite-member"
-                className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
-                placeholder="Enter email address"
-                required
-                autoFocus
-                value={email}
-                onInput={(e) => setEmail((e.target as HTMLInputElement).value)}
-              />
+              <span className="mt-2 block w-full rounded-md bg-gray-100 p-2">
+                {member.invitedEmail}
+              </span>
 
               <div className="flex h-[42px] w-full flex-col">
                 <RoleDropdown
@@ -107,10 +95,10 @@ export function InviteMemberPopup(props: InviteMemberPopupProps) {
               </button>
               <button
                 type="submit"
-                disabled={isLoading || !email}
+                disabled={isLoading || !selectedRole}
                 class="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
               >
-                {isLoading ? 'Please wait ..' : 'Invite'}
+                {isLoading ? 'Please wait ..' : 'Update Role'}
               </button>
             </div>
           </form>
