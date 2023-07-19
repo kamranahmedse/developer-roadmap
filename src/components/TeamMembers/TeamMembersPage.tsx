@@ -10,6 +10,8 @@ import type { AllowedMemberStatus } from '../TeamDropdown/TeamDropdown';
 import { InviteMemberPopup } from './InviteMemberPopup';
 import { getUrlParams } from '../../lib/browser';
 import { UpdateMemberPopup } from './UpdateMemberPopup';
+import { useStore } from '@nanostores/preact';
+import { $canManageCurrentTeam } from '../../stores/team';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -29,6 +31,9 @@ interface TeamMemberItem extends TeamMemberDocument {
 
 export function TeamMembersPage() {
   const { t: teamId } = getUrlParams();
+
+  const canManageCurrentTeam = useStore($canManageCurrentTeam);
+
   const [memberToUpdate, setMemberToUpdate] = useState<TeamMemberItem>();
   const [isInvitingMember, setIsInvitingMember] = useState(false);
   const [teamMembers, setTeamMembers] = useState<TeamMemberItem[]>([]);
@@ -120,9 +125,7 @@ export function TeamMembersPage() {
       <div>
         <div className="rounded-b-sm rounded-t-md border">
           <div className="flex items-center justify-between gap-2 border-b p-3">
-            <p className="text-sm">
-              {teamMembers.length} people in the team.
-            </p>
+            <p className="text-sm">{teamMembers.length} people in the team.</p>
             <LeaveTeamButton teamId={team?._id!} />
           </div>
           {teamMembers.map((member, index) => {
@@ -187,18 +190,20 @@ export function TeamMembersPage() {
                   >
                     {member.role}
                   </span>
-                  <MemberActionDropdown
-                    onDeleteMember={() => {
-                      deleteMember(teamId, member._id!).finally(() => {
-                        pageProgressMessage.set('');
-                      });
-                    }}
-                    isDisabled={member.userId === user?.id}
-                    onUpdateMember={() => {
-                      setMemberToUpdate(member);
-                    }}
-                    member={member}
-                  />
+                  {canManageCurrentTeam && (
+                    <MemberActionDropdown
+                      onDeleteMember={() => {
+                        deleteMember(teamId, member._id!).finally(() => {
+                          pageProgressMessage.set('');
+                        });
+                      }}
+                      isDisabled={member.userId === user?.id}
+                      onUpdateMember={() => {
+                        setMemberToUpdate(member);
+                      }}
+                      member={member}
+                    />
+                  )}
                 </div>
               </div>
             );
@@ -206,17 +211,19 @@ export function TeamMembersPage() {
         </div>
       </div>
 
-      <div className="mt-4">
-        <button
-          disabled={teamMembers.length >= 25}
-          onClick={() => setIsInvitingMember(true)}
-          className="block w-full rounded-md border border-dashed border-gray-300 py-2 text-sm transition-colors hover:border-gray-600 hover:bg-gray-50 focus:outline-0"
-        >
-          + Invite Member
-        </button>
-      </div>
+      {canManageCurrentTeam && (
+        <div className="mt-4">
+          <button
+            disabled={teamMembers.length >= 25}
+            onClick={() => setIsInvitingMember(true)}
+            className="block w-full rounded-md border border-dashed border-gray-300 py-2 text-sm transition-colors hover:border-gray-600 hover:bg-gray-50 focus:outline-0"
+          >
+            + Invite Member
+          </button>
+        </div>
+      )}
 
-      {teamMembers.length >= 25 && (
+      {teamMembers.length >= 25 && canManageCurrentTeam && (
         <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
           You have reached the maximum number of members in a team. Please reach
           out to us if you need more.

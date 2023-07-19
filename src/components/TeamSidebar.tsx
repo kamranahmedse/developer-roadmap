@@ -7,11 +7,14 @@ import SettingsIcon from '../icons/cog.svg';
 import MapIcon from '../icons/map.svg';
 import GroupIcon from '../icons/group.svg';
 import { useState } from 'preact/hooks';
+import { useStore } from '@nanostores/preact';
+import { $canManageCurrentTeam } from '../stores/team';
 
 export const TeamSidebar: FunctionalComponent<{
   activePageId: string;
 }> = ({ activePageId, children }) => {
   const [menuShown, setMenuShown] = useState(false);
+  const canManageCurrentTeam = useStore($canManageCurrentTeam);
 
   const { teamId } = useTeamId();
 

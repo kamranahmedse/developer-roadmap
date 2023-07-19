@@ -9,9 +9,13 @@ import PlusIcon from '../icons/plus.svg';
 import type { PageType } from './CommandMenu/CommandMenu';
 import { UpdateTeamResourceModal } from './CreateTeam/UpdateTeamResourceModal';
 import { AddTeamRoadmap } from './AddTeamRoadmap';
+import { useStore } from '@nanostores/preact';
+import { $canManageCurrentTeam } from '../stores/team';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
+
+  const canManageCurrentTeam = useStore($canManageCurrentTeam);
 
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
@@ -165,7 +169,7 @@ export function TeamRoadmaps() {
 
           return (
             <div className="flex flex-col items-start rounded-md border border-gray-300">
-              <div className={'w-full px-3 pb-2 pt-4'}>
+              <div className={'w-full px-3 py-4'}>
                 <a
                   href={`/${resourceId}?t=${teamId}`}
                   className="group mb-0.5 flex items-center justify-between text-base font-medium leading-none text-black"
@@ -191,73 +195,77 @@ export function TeamRoadmaps() {
                 )}
               </div>
 
-              <div className={'flex w-full justify-between p-3'}>
-                <button
-                  type="button"
-                  className={
-                    'text-xs text-gray-500 underline hover:text-black focus:outline-none'
-                  }
-                  onClick={() => {
-                    setRemovingRoadmapId('');
-                    setChangingRoadmapId(resourceId);
-                  }}
-                >
-                  Make Changes
-                </button>
-
-                {removingRoadmapId !== resourceId && (
+              { canManageCurrentTeam && (
+                <div className={'flex w-full justify-between pt-2 pb-3 px-3'}>
                   <button
                     type="button"
                     className={
-                      'text-xs text-red-500 underline hover:text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:text-red-500'
+                      'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                     }
-                    disabled={resourceConfigs.length === 1}
-                    onClick={() => setRemovingRoadmapId(resourceId)}
-                    title={
-                      resourceConfigs.length === 1
-                        ? 'You must have at least one roadmap.'
-                        : 'Delete roadmap from team'
-                    }
+                    onClick={() => {
+                      setRemovingRoadmapId('');
+                      setChangingRoadmapId(resourceId);
+                    }}
                   >
-                    Remove
+                    Make Changes
                   </button>
-                )}
 
-                {removingRoadmapId === resourceId && (
-                  <span className="text-xs">
-                    Are you sure?{' '}
+                  {removingRoadmapId !== resourceId && (
                     <button
-                      onClick={() => onRemove(resourceId)}
-                      className="mx-0.5 text-red-500 underline underline-offset-1"
+                      type="button"
+                      className={
+                        'text-xs text-red-500 underline hover:text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:text-red-500'
+                      }
+                      disabled={resourceConfigs.length === 1}
+                      onClick={() => setRemovingRoadmapId(resourceId)}
+                      title={
+                        resourceConfigs.length === 1
+                          ? 'You must have at least one roadmap.'
+                          : 'Delete roadmap from team'
+                      }
                     >
-                      Yes
-                    </button>{' '}
-                    <button
-                      onClick={() => setRemovingRoadmapId('')}
-                      className="text-red-500 underline underline-offset-1"
-                    >
-                      No
+                      Remove
                     </button>
-                  </span>
-                )}
-              </div>
+                  )}
+
+                  {removingRoadmapId === resourceId && (
+                    <span className="text-xs">
+                      Are you sure?{' '}
+                      <button
+                        onClick={() => onRemove(resourceId)}
+                        className="mx-0.5 text-red-500 underline underline-offset-1"
+                      >
+                        Yes
+                      </button>{' '}
+                      <button
+                        onClick={() => setRemovingRoadmapId('')}
+                        className="text-red-500 underline underline-offset-1"
+                      >
+                        No
+                      </button>
+                    </span>
+                  )}
+                </div>
+              )}
             </div>
           );
         })}
 
-        <button
-          onClick={() => setIsAddingRoadmap(true)}
-          className="group flex min-h-[110px] flex-col items-center justify-center rounded-md border border-dashed border-gray-300 transition-colors hover:border-gray-600 hover:bg-gray-50"
-        >
-          <img
-            alt="add"
-            src={PlusIcon}
-            className="mb-1 h-6 w-6 opacity-20 transition-opacity group-hover:opacity-100"
-          />
-          <span className="text-sm text-gray-400 transition-colors focus:outline-none group-hover:text-black">
-            Add Roadmap
-          </span>
-        </button>
+        {canManageCurrentTeam && (
+          <button
+            onClick={() => setIsAddingRoadmap(true)}
+            className="group flex min-h-[110px] flex-col items-center justify-center rounded-md border border-dashed border-gray-300 transition-colors hover:border-gray-600 hover:bg-gray-50"
+          >
+            <img
+              alt="add"
+              src={PlusIcon}
+              className="mb-1 h-6 w-6 opacity-20 transition-opacity group-hover:opacity-100"
+            />
+            <span className="text-sm text-gray-400 transition-colors focus:outline-none group-hover:text-black">
+              Add Roadmap
+            </span>
+          </button>
+        )}
       </div>
     </div>
   );
