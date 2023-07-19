@@ -1,5 +1,5 @@
 import { useStore } from '@nanostores/preact';
-import { ToastMessage, ToastType, toastMessage } from '../stores/toast';
+import { ToastMessage, ToastType, $toastMessage } from '../stores/toast';
 import { useEffect, useState } from 'preact/hooks';
 import CloseIcon from '../icons/close.svg';
 
@@ -7,7 +7,7 @@ export interface Props {}
 
 export function Toaster(props: Props) {
   const [message, setMessage] = useState<ToastMessage | undefined>(undefined);
-  const $toastMessage = useStore(toastMessage);
+  const toastMessage = useStore($toastMessage);
 
   const styles: Record<ToastType, string> = {
     error: 'bg-red-500 hover:bg-[rgb(239,68,68)] border-white text-white',
@@ -16,11 +16,11 @@ export function Toaster(props: Props) {
   };
 
   useEffect(() => {
-    if ($toastMessage === undefined) {
+    if (toastMessage === undefined) {
       return;
     }
 
-    setMessage($toastMessage);
+    setMessage(toastMessage);
 
     const removeMessage = setTimeout(() => {
       setMessage(undefined);
@@ -29,7 +29,7 @@ export function Toaster(props: Props) {
     return () => {
       clearTimeout(removeMessage);
     };
-  }, [$toastMessage]);
+  }, [toastMessage]);
 
   if (!message) {
     return null;
@@ -49,7 +49,7 @@ export function Toaster(props: Props) {
             className="absolute right-2.5 top-2 ml-auto hidden items-center rounded-lg bg-transparent p-1.5 text-sm text-white hover:bg-white/20 group-hover:inline-flex"
             onClick={() => setMessage(undefined)}
           >
-            <img src={CloseIcon} className="h-4 w-4" />
+            <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
             <span class="sr-only">Close toast</span>
           </button>
         </div>

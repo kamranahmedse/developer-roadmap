@@ -6,4 +6,4 @@ export type ToastMessage = {
   message: string;
 };
 
-export const toastMessage = atom<ToastMessage | undefined>(undefined);
+export const $toastMessage = atom<ToastMessage | undefined>(undefined);

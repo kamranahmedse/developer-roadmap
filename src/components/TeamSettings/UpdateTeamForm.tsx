@@ -6,9 +6,12 @@ import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../../stores/page';
 import { useTeamId } from '../../hooks/use-team-id';
+import { DeleteTeamPopup } from '../DeleteTeamPopup';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
+  const [isDeleting, setIsDeleting] = useState(false);
+
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
   const [name, setName] = useState('');
@@ -224,6 +227,29 @@ export function UpdateTeamForm() {
           </button>
         </div>
       </form>
+
+      <hr class="my-8" />
+
+      {isDeleting && (
+        <DeleteTeamPopup
+          onClose={() => {
+            setIsDeleting(false);
+          }}
+        />
+      )}
+
+      <h2 class="text-xl font-bold sm:text-2xl">Delete Team</h2>
+      <p class="mt-2 text-gray-400">
+        Permanently delete this team and all of its resources.
+      </p>
+
+      <button
+        onClick={() => setIsDeleting(true)}
+        data-popup="delete-team-popup"
+        class="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+      >
+        Delete Team
+      </button>
     </div>
   );
 }
