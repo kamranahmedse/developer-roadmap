@@ -142,7 +142,7 @@ export function TeamRoadmaps() {
           onClose={() => setIsAddingRoadmap(false)}
         />
       )}
-      <div className={'grid grid-cols-1 gap-2 sm:grid-cols-2'}>
+      <div className={'grid grid-cols-1 gap-3 sm:grid-cols-2'}>
         {changingRoadmapId && (
           <UpdateTeamResourceModal
             onClose={() => setChangingRoadmapId('')}

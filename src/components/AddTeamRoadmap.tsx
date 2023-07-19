@@ -86,7 +86,13 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                 {selectedRoadmapTitle} Added
               </h3>
               <p className="mb-4 text-sm leading-none text-gray-400">
-                Use the button below to make changes to the roadmap.
+                <button
+                  onClick={() => onMakeChanges(selectedRoadmap)}
+                  className="underline underline-offset-2 hover:text-gray-900"
+                >
+                  Click here
+                </button>{' '}
+                to make changes to the roadmap.
               </p>
 
               <div class="flex items-center gap-2">
@@ -98,11 +104,15 @@ export function AddTeamRoadmap(props: AddTeamRoadmapProps) {
                   Done
                 </button>
                 <button
-                  onClick={() => onMakeChanges(selectedRoadmap)}
+                  onClick={() => {
+                    setSelectedRoadmap('');
+                    setError('');
+                    setIsLoading(false);
+                  }}
                   type="button"
                   class="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white"
                 >
-                  Make Changes
+                  + Add More
                 </button>
               </div>
             </div>
