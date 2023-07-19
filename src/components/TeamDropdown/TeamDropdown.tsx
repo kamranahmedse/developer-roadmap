@@ -8,6 +8,7 @@ import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
 import { $currentTeam, $teamList } from '../../stores/team';
 import { useStore } from '@nanostores/preact';
 import { useTeamId } from '../../hooks/use-team-id';
+import { useToast } from '../../hooks/use-toast';
 
 const allowedStatus = ['invited', 'joined', 'rejected'] as const;
 export type AllowedMemberStatus = (typeof allowedStatus)[number];
@@ -31,6 +32,7 @@ export function TeamDropdown() {
   const teamList = useStore($teamList);
   const currentTeam = useStore($currentTeam);
 
+  const toast = useToast();
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [isLoading, setIsLoading] = useState(true);
@@ -48,7 +50,7 @@ export function TeamDropdown() {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
     );
     if (error || !response) {
-      alert(error?.message || 'Something went wrong');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 

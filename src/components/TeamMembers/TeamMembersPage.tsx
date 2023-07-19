@@ -12,6 +12,7 @@ import { getUrlParams } from '../../lib/browser';
 import { UpdateMemberPopup } from './UpdateMemberPopup';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../../stores/team';
+import { useToast } from '../../hooks/use-toast';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -32,6 +33,7 @@ interface TeamMemberItem extends TeamMemberDocument {
 export function TeamMembersPage() {
   const { t: teamId } = getUrlParams();
 
+  const toast = useToast();
   const canManageCurrentTeam = useStore($canManageCurrentTeam);
 
   const [memberToUpdate, setMemberToUpdate] = useState<TeamMemberItem>();
@@ -46,7 +48,7 @@ export function TeamMembersPage() {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`
     );
     if (error || !response) {
-      alert(error?.message || 'Failed to load team');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 
@@ -60,7 +62,7 @@ export function TeamMembersPage() {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-list/${teamId}`
     );
     if (error || !response) {
-      alert(error?.message || 'Failed to load team member list');
+      toast.error(error?.message || 'Failed to load team member list');
       return;
     }
 
@@ -87,7 +89,7 @@ export function TeamMembersPage() {
     );
 
     if (error || !response) {
-      alert(error?.message || 'Something went wrong');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 
