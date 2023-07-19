@@ -5,6 +5,7 @@ import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { FavoriteIcon } from './FavoriteIcon';
 import { Spinner } from '../ReactIcons/Spinner';
+import { useToast } from '../../hooks/use-toast';
 
 type MarkFavoriteType = {
   resourceType: ResourceType;
@@ -21,6 +22,7 @@ export function MarkFavorite({
 }: MarkFavoriteType) {
   const localStorageKey = `${resourceType}-${resourceId}-favorite`;
 
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isFavorite, setIsFavorite] = useState(
     favorite ?? localStorage.getItem(localStorageKey) === '1'
@@ -49,7 +51,8 @@ export function MarkFavorite({
 
     if (error) {
       setIsLoading(false);
-      return alert('Failed to update favorite status');
+      toast.error('Failed to update favorite status');
+      return;
     }
 
     // Dispatching an event instead of setting the state because

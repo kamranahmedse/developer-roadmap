@@ -7,6 +7,7 @@ import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamResourceConfig } from './RoadmapSelector';
+import { useToast } from '../../hooks/use-toast';
 
 export type ProgressMapProps = {
   teamId: string;
@@ -30,6 +31,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
 
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [isUpdating, setIsUpdating] = useState(false);
 
@@ -112,7 +114,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
     );
 
     if (error || !response) {
-      alert(error?.message || 'Error adding roadmap');
+      toast.error(error?.message || 'Error adding roadmap');
       return;
     }
 
@@ -134,7 +136,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
     renderResource(resourceJsonUrl)
       .catch((err) => {
         console.error(err);
-        alert('Something went wrong. Please try again!');
+        toast.error('Something went wrong. Please try again!');
       })
       .finally(() => {
         setIsLoading(false);
@@ -148,7 +150,11 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
           ref={popupBodyEl}
           class="popup-body relative rounded-lg bg-white shadow"
         >
-          <div className={'sticky top-0 mb-3 bg-black p-4 border-4 border-white rounded-2xl'}>
+          <div
+            className={
+              'sticky top-0 mb-3 rounded-2xl border-4 border-white bg-black p-4'
+            }
+          >
             <p className="mb-2 text-gray-300">
               Click and select the items to remove from the roadmap.
             </p>

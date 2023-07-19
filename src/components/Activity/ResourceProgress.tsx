@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
+import { useToast } from '../../hooks/use-toast';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -17,6 +18,7 @@ type ResourceProgressType = {
 
 export function ResourceProgress(props: ResourceProgressType) {
   const { showClearButton = true } = props;
+  const toast = useToast();
   const [isClearing, setIsClearing] = useState(false);
   const [isConfirming, setIsConfirming] = useState(false);
 
@@ -43,7 +45,7 @@ export function ResourceProgress(props: ResourceProgressType) {
     );
 
     if (error || !response) {
-      alert('Error clearing progress. Please try again.');
+      toast.error('Error clearing progress. Please try again.');
       console.error(error);
       setIsClearing(false);
       return;

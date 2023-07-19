@@ -8,6 +8,7 @@ import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import { renderTopicProgress } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
+import { useToast } from '../../hooks/use-toast';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -33,6 +34,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   const [memberProgress, setMemberProgress] =
     useState<MemberProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
+  const toast = useToast();
 
   let resourceJsonUrl = 'https://roadmap.sh';
   if (resourceType === 'roadmap') {
@@ -53,7 +55,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`
     );
     if (error || !response) {
-      alert(error?.message || 'Failed to get member progress');
+      toast.error(error?.message || 'Failed to get member progress');
       return;
     }
 
@@ -110,7 +112,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       })
       .catch((err) => {
         console.error(err);
-        alert('Something went wrong. Please try again!');
+        toast.error(err?.message || 'Something went wrong. Please try again!');
       })
       .finally(() => {
         setIsLoading(false);

@@ -1,12 +1,14 @@
 import { useState } from "preact/hooks";
 import { httpDelete } from "../../lib/http";
 import { Spinner } from "../ReactIcons/Spinner";
+import { useToast } from "../../hooks/use-toast";
 
 type LeaveTeamButtonProps = {
   teamId: string;
 };
 
 export function LeaveTeamButton(props: LeaveTeamButtonProps) {
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const { teamId } = props;
 
@@ -19,7 +21,7 @@ export function LeaveTeamButton(props: LeaveTeamButtonProps) {
 
     if (error || !response) {
       setIsLoading(false);
-      alert(error?.message || 'Something went wrong');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 

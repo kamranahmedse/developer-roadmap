@@ -3,6 +3,7 @@ import type { TeamMemberDocument } from './TeamMembersPage';
 import { httpDelete, httpPatch } from '../../lib/http';
 import MoreIcon from '../../icons/more-vertical.svg';
 import { useOutsideClick } from '../../hooks/use-outside-click';
+import { useToast } from '../../hooks/use-toast';
 
 export function MemberActionDropdown({
   member,
@@ -15,6 +16,7 @@ export function MemberActionDropdown({
   isDisabled: boolean;
   member: TeamMemberDocument;
 }) {
+  const toast = useToast();
   const menuRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -33,7 +35,7 @@ export function MemberActionDropdown({
 
     if (error || !response) {
       setIsLoading(false);
-      alert(error?.message || 'Something went wrong');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 
