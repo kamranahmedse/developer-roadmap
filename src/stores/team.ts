@@ -1,28 +1,15 @@
 import { atom, computed } from 'nanostores';
 import type { UserTeamItem } from '../components/TeamDropdown/TeamDropdown';
-import { getUrlParams } from '../lib/browser';
 
-export const $userTeamList = atom<UserTeamItem[]>([]);
-export const $userCurrentTeam = computed($userTeamList, (list) => {
-  const { t: teamId } = getUrlParams();
+export const $teamList = atom<UserTeamItem[]>([]);
+export const $currentTeam = atom<UserTeamItem | undefined>();
 
-  return list.find((item) => item._id === teamId);
-});
+export const $currentTeamRole = computed($currentTeam, (team) => team?.role);
 
-export const $userCurrentTeamId = computed(
-  $userCurrentTeam,
-  (team) => team?._id
-);
-
-export const $userCurrentTeamRole = computed(
-  $userCurrentTeam,
-  (team) => team?.role
-);
-
-export const $isCurrentTeamAdmin = computed($userCurrentTeamRole, (role) =>
+export const $isCurrentTeamAdmin = computed($currentTeamRole, (role) =>
   ['admin'].includes(role!)
 );
 
-export const $canManageCurrentTeam = computed($userCurrentTeamRole, (role) =>
+export const $canManageCurrentTeam = computed($currentTeamRole, (role) =>
   ['admin', 'manager'].includes(role!)
 );
