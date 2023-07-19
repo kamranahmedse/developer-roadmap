@@ -121,7 +121,7 @@ export function TeamMembersPage() {
         <div className="rounded-b-sm rounded-t-md border">
           <div className="flex items-center justify-between gap-2 border-b p-3">
             <p className="text-sm">
-              {teamMembers.length} people in the {team?.name} team.
+              {teamMembers.length} people in the team.
             </p>
             <LeaveTeamButton teamId={team?._id!} />
           </div>

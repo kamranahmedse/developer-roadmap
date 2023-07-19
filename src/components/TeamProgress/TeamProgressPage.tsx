@@ -33,15 +33,13 @@ export function TeamProgressPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
   async function getTeamProgress() {
-    const { response, error } = await httpGet<{
-      data: TeamMember[];
-    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`);
-    if (error || !response?.data) {
+    const { response, error } = await httpGet<TeamMember[]>(`${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`);
+    if (error || !response) {
       alert(error?.message || 'Failed to get team progress');
       return;
     }
 
-    setTeamMembers(response.data);
+    setTeamMembers(response);
   }
 
   useEffect(() => {
