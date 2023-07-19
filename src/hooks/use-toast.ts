@@ -1,9 +1,6 @@
-import { useStore } from '@nanostores/preact';
 import { $toastMessage } from '../stores/toast';
 
 export function useToast() {
-  const $toastMessage = useStore($toastMessage);
-
   function success(message: string) {
     $toastMessage.set({ type: 'success', message });
   }
