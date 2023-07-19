@@ -4,12 +4,14 @@ import { pageProgressMessage } from '../../stores/page';
 import type { TeamMemberDocument } from '../TeamMembers/TeamMembersPage';
 import XIcon from '../../icons/close-dark.svg';
 import AcceptIcon from '../../icons/accept.svg';
+import { useToast } from '../../hooks/use-toast';
 
 interface NotificationList extends TeamMemberDocument {
   name: string;
 }
 
 export function NotificationPage() {
+  const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [notifications, setNotifications] = useState<NotificationList[]>([]);
   const [error, setError] = useState('');
@@ -19,7 +21,7 @@ export function NotificationPage() {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-invitation-list`
     );
     if (error || !response) {
-      alert(error?.message || 'Something went wrong');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 

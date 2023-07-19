@@ -80,7 +80,6 @@ export function TeamVersions(props: TeamVersionsProps) {
     );
 
     if (error || !response) {
-      // @TODO: Handle error
       toast.error(error?.message || 'Failed to load team versions.');
       return;
     }

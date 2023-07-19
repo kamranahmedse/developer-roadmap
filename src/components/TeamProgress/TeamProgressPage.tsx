@@ -3,6 +3,7 @@ import { useTeamId } from '../../hooks/use-team-id';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressItem } from './MemberProgressItem';
+import { useToast } from '../../hooks/use-toast';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -29,13 +30,14 @@ export type TeamMember = {
 export function TeamProgressPage() {
   const { teamId } = useTeamId();
   const [isLoading, setIsLoading] = useState(true);
+  const toast = useToast();
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(`${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`);
     if (error || !response) {
-      alert(error?.message || 'Failed to get team progress');
+      toast.error(error?.message || 'Failed to get team progress');
       return;
     }
 
