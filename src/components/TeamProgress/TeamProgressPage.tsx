@@ -113,14 +113,7 @@ export function TeamProgressPage() {
 
   return (
     <div>
-      <div>
-        <h1 className="text-2xl font-bold">Team progress</h1>
-        <p className="text-gray-500">
-          See how your team is progressing through the roadmaps.
-        </p>
-      </div>
-
-      <div className="mt-8 flex items-center gap-2">
+      <div className="flex items-center gap-2">
         <button
           className={`rounded-md border p-1 px-2 text-sm ${
             selectedGrouping === 'member' ? ' border-gray-500 bg-gray-300 ' : ''
