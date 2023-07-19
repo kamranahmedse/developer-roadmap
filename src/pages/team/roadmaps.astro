@@ -1,14 +1,11 @@
 ---
 import { TeamSidebar } from '../../components/TeamSidebar';
 import { TeamRoadmaps } from '../../components/TeamRoadmaps';
-import { TeamMembersPage } from '../../components/TeamMembers/TeamMembersPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
-import InviteMemberPopup from '../../components/TeamMembers/InviteMemberPopup.astro';
 ---
 
 <AccountLayout title='Roadmaps' noIndex={true} initialLoadingMessage='Loading Roadmaps'>
   <TeamSidebar activePageId='roadmaps' client:load>
     <TeamRoadmaps client:only />
   </TeamSidebar>
-  <InviteMemberPopup />
 </AccountLayout>

@@ -23,12 +23,13 @@ const allowedRoles = [
 export type AllowedRoles = (typeof allowedRoles)[number]['value'];
 
 type RoleDropdownProps = {
+  className?: string;
   selectedRole: string;
   setSelectedRole: (role: AllowedRoles) => void;
 };
 
 export function RoleDropdown(props: RoleDropdownProps) {
-  const { selectedRole, setSelectedRole } = props;
+  const { selectedRole, setSelectedRole, className = 'w-[120px]' } = props;
   const dropdownRef = useRef(null);
 
   const [activeRoleIndex, setActiveRoleIndex] = useState(0);
@@ -39,7 +40,7 @@ export function RoleDropdown(props: RoleDropdownProps) {
   });
 
   return (
-    <div className={'relative w-[120px]'}>
+    <div className={`relative ${className}`}>
       <button
         type={'button'}
         onKeyDown={(e) => {
@@ -84,7 +85,11 @@ export function RoleDropdown(props: RoleDropdownProps) {
           isMenuOpen ? 'border-gray-300 bg-gray-100' : ''
         }`}
       >
-        <span className={`capitalize ${selectedRole === 'admin' ? 'text-blue-600' : ''} ${selectedRole === 'manager' ? 'text-cyan-600' : ''}`}>
+        <span
+          className={`capitalize ${
+            selectedRole === 'admin' ? 'text-blue-600' : ''
+          } ${selectedRole === 'manager' ? 'text-cyan-600' : ''}`}
+        >
           {selectedRole || 'Select Role'}
         </span>
         <ChevronDownIcon

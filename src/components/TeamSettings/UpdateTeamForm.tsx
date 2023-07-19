@@ -171,7 +171,7 @@ export function UpdateTeamForm() {
               Select type
             </option>
             <option value="company">Company</option>
-            <option value="learning_club">Learning Club</option>
+            <option value="study_group">Study Group</option>
           </select>
         </div>
 

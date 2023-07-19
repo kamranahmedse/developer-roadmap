@@ -1,14 +1,14 @@
 import { useEffect, useState } from 'preact/hooks';
-import { useParams } from '../../hooks/use-params';
 import { httpGet } from '../../lib/http';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { LeaveTeamButton } from './LeaveTeamButton';
-import { useTeamId } from '../../hooks/use-team-id';
 import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
 import type { AllowedMemberStatus } from '../TeamDropdown/TeamDropdown';
+import { InviteMemberPopup } from './InviteMemberPopup';
+import { getUrlParams } from '../../lib/browser';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -27,11 +27,11 @@ interface TeamMemberList extends TeamMemberDocument {
 }
 
 export function TeamMembersPage() {
-  const [isPreparing, setIsPreparing] = useState(true);
+  const { t: teamId } = getUrlParams();
+  const [isInvitingMember, setIsInvitingMember] = useState(false);
   const [teamMembers, setTeamMembers] = useState<TeamMemberList[]>([]);
   const [team, setTeam] = useState<TeamDocument>();
 
-  const { teamId } = useTeamId();
   const user = useAuth();
 
   async function loadTeam() {
@@ -66,23 +66,19 @@ export function TeamMembersPage() {
     }
 
     Promise.all([loadTeam(), getTeamMemberList()]).finally(() => {
-      setIsPreparing(false);
       pageProgressMessage.set('');
     });
-
-    window.addEventListener('invite-member', getTeamMemberList);
-
-    return () => {
-      window.removeEventListener('invite-member', getTeamMemberList);
-    };
   }, [teamId]);
-
-  if (isPreparing) {
-    return null;
-  }
 
   return (
     <div>
+      {isInvitingMember && (
+        <InviteMemberPopup
+          onClose={() => {
+            setIsInvitingMember(false);
+          }}
+        />
+      )}
       <div>
         <div className="rounded-b-sm rounded-t-md border">
           <div className="flex items-center justify-between gap-2 border-b p-3">
@@ -96,7 +92,7 @@ export function TeamMembersPage() {
               <div
                 className={`flex items-center justify-between gap-2 p-3 ${
                   index === 0 ? '' : 'border-t'
-                }`}
+                } ${member.status === 'invited' ? 'bg-gray-50' : ''}`}
               >
                 <div className="flex items-center gap-3">
                   <img
@@ -111,20 +107,48 @@ export function TeamMembersPage() {
                     className="h-10 w-10 rounded-full"
                   />
                   <div>
-                    <h3>{member.name}</h3>
-                    <p className="text-sm">{member.invitedEmail}</p>
+                    <div className="flex items-center">
+                      <h3 className="flex items-center font-medium">
+                        {member.name}
+                        {member.userId === user?.id && (
+                          <span className="ml-2 text-xs font-normal text-blue-500">
+                            You
+                          </span>
+                        )}
+                      </h3>
+                      <div className="ml-2 flex items-center gap-0.5">
+                        {member.status === 'invited' && (
+                          <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs text-yellow-700">
+                            Invited
+                          </span>
+                        )}
+                        {member.status === 'rejected' && (
+                          <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs text-red-700">
+                            Rejected
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                    <p className="text-sm text-gray-500">
+                      {member.invitedEmail}
+                    </p>
                   </div>
                 </div>
 
                 <div className="flex items-center text-sm">
-                  <span>{member.status}</span>
-                  <span aria-hidden="true" class="select-none px-1.5">
-                    ·
+                  <span
+                    className={`rounded-full px-2 py-0.5 text-xs capitalize ${
+                      ['admin', 'manager'].includes(member.role)
+                        ? 'bg-blue-100 text-blue-700'
+                        : 'bg-gray-100 text-gray-700 '
+                    }`}
+                  >
+                    {member.role}
                   </span>
-                  <span>{member.role}</span>
-                  {member.userId !== user?.id && (
-                    <MemberActionDropdown member={member} />
-                  )}
+                  <MemberActionDropdown
+                    isDisabled={member.userId === user?.id}
+                    member={member}
+                  />
                 </div>
               </div>
             );
@@ -132,11 +156,11 @@ export function TeamMembersPage() {
         </div>
       </div>
 
-      <div className="mt-8">
+      <div className="mt-4">
         <button
           disabled={teamMembers.length >= 25}
-          data-popup="invite-member-popup"
-          className="flex w-full items-center justify-center rounded-md border px-4 py-2 text-sm font-medium hover:bg-gray-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:opacity-75"
+          onClick={() => setIsInvitingMember(true)}
+          className="block w-full rounded-md border border-dashed border-gray-300 py-2 text-sm transition-colors hover:border-gray-600 hover:bg-gray-50 focus:outline-0"
         >
           + Invite Member
         </button>

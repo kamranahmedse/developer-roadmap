@@ -2,12 +2,14 @@
 import { TeamSidebar } from '../../components/TeamSidebar';
 import { TeamMembersPage } from '../../components/TeamMembers/TeamMembersPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
-import InviteMemberPopup from '../../components/TeamMembers/InviteMemberPopup.astro';
 ---
 
-<AccountLayout title='Team Members' noIndex={true} initialLoadingMessage='Loading Members'>
+<AccountLayout
+  title='Team Members'
+  noIndex={true}
+  initialLoadingMessage='Loading members'
+>
   <TeamSidebar activePageId='members' client:load>
-    <TeamMembersPage client:load />
+    <TeamMembersPage client:only />
   </TeamSidebar>
-  <InviteMemberPopup />
 </AccountLayout>

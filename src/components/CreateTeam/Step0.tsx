@@ -13,8 +13,8 @@ export const validTeamTypes = [
     description: 'Use roadmap.sh for your company',
   },
   {
-    value: 'learning_club',
-    label: 'Learning Club',
+    value: 'study_group',
+    label: 'Study Group',
     icon: UsersIcon,
     description: 'Invite your friends and learn together',
   },

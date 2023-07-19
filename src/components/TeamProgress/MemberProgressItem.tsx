@@ -9,7 +9,9 @@ type MemberProgressItemProps = {
 export function MemberProgressItem(props: MemberProgressItemProps) {
   const { member, teamId } = props;
 
-  const memberProgress = member.progress;
+  const memberProgress = member?.progress?.sort((a, b) => {
+    return b.done - a.done;
+  });
 
   const [detailResourceId, setDetailResourceId] = useState<string | null>(null);
   const [showAll, setShowAll] = useState(false);
