@@ -140,6 +140,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
               <p className={'text-center text-gray-500'}>
                 You are looking at {member.name}'s progress.{' '}
                 <a
+                  target={'_blank'}
                   href={`/${resourceId}?t=${teamId}`}
                   className="text-blue-600 underline"
                 >
