@@ -13,6 +13,7 @@ import { deleteUrlParam, getUrlParams, setUrlParams } from '../../lib/browser';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { isLoggedIn } from '../../lib/jwt';
+import { useAuth } from '../../hooks/use-auth';
 
 type TeamVersionsProps = {
   resourceId: string;
@@ -31,6 +32,7 @@ export function TeamVersions(props: TeamVersionsProps) {
   }
 
   const { resourceId, resourceType } = props;
+  const user = useAuth();
   const teamDropdownRef = useRef<HTMLDivElement>(null);
 
   const [isPreparing, setIsPreparing] = useState(true);
@@ -40,6 +42,20 @@ export function TeamVersions(props: TeamVersionsProps) {
   const [selectedTeamVersion, setSelectedTeamVersion] = useState<
     TeamVersionsResponse[0] | null
   >(null);
+  let shouldShowAvatar = true;
+  const selectedAvatar = selectedTeamVersion
+    ? selectedTeamVersion.team.avatar
+    : user?.avatar;
+  const selectedLabel = selectedTeamVersion
+    ? selectedTeamVersion.team.name
+    : user?.name;
+  if (selectedTeamVersion?.team.avatar) {
+    shouldShowAvatar = true;
+  } else if (!selectedTeamVersion && user?.avatar) {
+    shouldShowAvatar = true;
+  } else {
+    shouldShowAvatar = false;
+  }
 
   useOutsideClick(teamDropdownRef, () => {
     setIsDropdownOpen(false);
@@ -114,57 +130,88 @@ export function TeamVersions(props: TeamVersionsProps) {
 
   return (
     <div
-      className={`relative transition-opacity duration-500 opacity-${containerOpacity}`}
+      className={`relative h-7 transition-opacity duration-500 sm:h-auto opacity-${containerOpacity}`}
     >
       <button
-        className="inline-flex h-7 items-center justify-between gap-1 rounded-md border px-3 py-1.5 text-xs font-medium hover:bg-gray-50 focus:outline-0 sm:h-8 sm:w-40 sm:text-sm"
+        className="inline-flex h-7 items-center justify-between gap-1 rounded-md border px-1.5 py-1.5 text-xs font-medium hover:bg-gray-50 focus:outline-0 sm:h-8 sm:w-40 sm:px-3 sm:text-sm"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
-        <span className="truncate">
-          {selectedTeamVersion?.team.name || 'Team Versions'}
-        </span>
-        <img alt="Dropdown" src={DropdownIcon} class="h-3 w-3 sm:h-4 sm:w-4" />
+        <div className="hidden w-full items-center justify-between sm:flex">
+          <span className="truncate">
+            {selectedTeamVersion?.team.name || 'Team Versions'}
+          </span>
+          <img
+            alt="Dropdown"
+            src={DropdownIcon}
+            class="h-3 w-3 sm:h-4 sm:w-4"
+          />
+        </div>
+        <div className="sm:hidden">
+          {shouldShowAvatar ? (
+            <img
+              src={
+                selectedAvatar
+                  ? `${
+                      import.meta.env.PUBLIC_AVATAR_BASE_URL
+                    }/${selectedAvatar}`
+                  : '/images/default-avatar.png'
+              }
+              alt={`${selectedLabel} Avatar`}
+              className="h-5 w-5 rounded-full object-cover"
+            />
+          ) : (
+            <span className="flex h-5 w-5 items-center justify-center rounded-full bg-gray-200 text-xs">
+              {selectedLabel?.charAt(0).toUpperCase()}
+            </span>
+          )}
+        </div>
       </button>
 
       {isDropdownOpen && (
-        <div
-          ref={teamDropdownRef}
-          className="absolute left-0 top-full z-50 mt-1 w-full overflow-hidden rounded-md border bg-white py-0.5 shadow-md"
-        >
-          <button
-            className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
-              !selectedTeamVersion ? 'bg-gray-100' : 'bg-white'
-            }`}
-            onClick={() => {
-              setSelectedTeamVersion(null);
-              setIsDropdownOpen(false);
-            }}
+        <>
+          <div
+            className="fixed inset-0 z-40 block bg-black/20 sm:hidden"
+            aria-hidden="true"
+          />
+          <div
+            ref={teamDropdownRef}
+            className="fixed bottom-0 left-0 z-50 mt-1 h-fit w-full overflow-hidden rounded-md bg-white py-0.5 shadow-md sm:absolute sm:left-0 sm:right-0 sm:top-full sm:border"
           >
-            <div className="flex w-full items-center justify-between">
-              <span className="truncate">Personal</span>
-            </div>
-          </button>
-          {teamVersions.map((team) => {
-            const isSelectedTeam =
-              selectedTeamVersion?.team._id === team.team._id;
+            <button
+              className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
+                !selectedTeamVersion ? 'bg-gray-100' : 'bg-white'
+              }`}
+              onClick={() => {
+                setSelectedTeamVersion(null);
+                setIsDropdownOpen(false);
+              }}
+            >
+              <div className="flex w-full items-center justify-between">
+                <span className="truncate">Personal</span>
+              </div>
+            </button>
+            {teamVersions.map((team) => {
+              const isSelectedTeam =
+                selectedTeamVersion?.team._id === team.team._id;
 
-            return (
-              <button
-                className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
-                  isSelectedTeam ? 'bg-gray-100' : 'bg-white'
-                }`}
-                onClick={() => {
-                  setSelectedTeamVersion(team);
-                  setIsDropdownOpen(false);
-                }}
-              >
-                <div className="flex w-full items-center justify-between">
-                  <span className="truncate">{team.team.name}</span>
-                </div>
-              </button>
-            );
-          })}
-        </div>
+              return (
+                <button
+                  className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
+                    isSelectedTeam ? 'bg-gray-100' : 'bg-white'
+                  }`}
+                  onClick={() => {
+                    setSelectedTeamVersion(team);
+                    setIsDropdownOpen(false);
+                  }}
+                >
+                  <div className="flex w-full items-center justify-between">
+                    <span className="truncate">{team.team.name}</span>
+                  </div>
+                </button>
+              );
+            })}
+          </div>
+        </>
       )}
     </div>
   );
