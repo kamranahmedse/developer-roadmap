@@ -117,11 +117,13 @@ export function TeamVersions(props: TeamVersionsProps) {
       className={`relative transition-opacity duration-500 opacity-${containerOpacity}`}
     >
       <button
-        className="inline-flex h-8 w-40 items-center justify-between rounded-md border px-3 py-1.5 text-xs font-medium hover:bg-gray-50 focus:outline-0 sm:text-sm"
+        className="inline-flex h-7 items-center justify-between gap-1 rounded-md border px-3 py-1.5 text-xs font-medium hover:bg-gray-50 focus:outline-0 sm:h-8 sm:w-40 sm:text-sm"
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
       >
-        {selectedTeamVersion?.team.name || 'Team Versions'}
-        <img alt="Dropdown" src={DropdownIcon} class="h-4 w-4" />
+        <span className="truncate">
+          {selectedTeamVersion?.team.name || 'Team Versions'}
+        </span>
+        <img alt="Dropdown" src={DropdownIcon} class="h-3 w-3 sm:h-4 sm:w-4" />
       </button>
 
       {isDropdownOpen && (
@@ -139,7 +141,7 @@ export function TeamVersions(props: TeamVersionsProps) {
             }}
           >
             <div className="flex w-full items-center justify-between">
-              <div>Personal</div>
+              <span className="truncate">Personal</span>
             </div>
           </button>
           {teamVersions.map((team) => {
@@ -157,7 +159,7 @@ export function TeamVersions(props: TeamVersionsProps) {
                 }}
               >
                 <div className="flex w-full items-center justify-between">
-                  <div>{team.team.name}</div>
+                  <span className="truncate">{team.team.name}</span>
                 </div>
               </button>
             );

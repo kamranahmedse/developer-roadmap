@@ -52,7 +52,7 @@ const isRoadmapReady = !isUpcoming;
       <p class='text-sm text-gray-500 sm:text-lg'>{description}</p>
     </div>
 
-    <div class='flex justify-between'>
+    <div class='flex justify-between gap-2 sm:gap-0'>
       <div class='flex gap-1 sm:gap-2'>
         {
           !hasSearch && (
@@ -117,7 +117,7 @@ const isRoadmapReady = !isUpcoming;
         }
       </div>
 
-      <div class="flex itesm-center gap-2">
+      <div class='flex items-center gap-1 sm:gap-2'>
         <TeamVersions
           resourceType='roadmap'
           resourceId={roadmapId}
