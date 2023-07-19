@@ -94,14 +94,14 @@ export function TeamVersions(props: TeamVersionsProps) {
     clearResourceProgress();
     if (!selectedTeamVersion) {
       deleteUrlParam('t');
-      renderResourceProgress(resourceType, resourceId);
+      renderResourceProgress(resourceType, resourceId).then();
       return;
     }
 
     setUrlParams({ t: selectedTeamVersion.team._id! });
 
     renderResourceProgress(resourceType, resourceId).then(() => {
-      selectedTeamVersion.config.removed.forEach((topic) => {
+      selectedTeamVersion.config?.removed?.forEach((topic) => {
         renderTopicProgress(topic, 'removed');
       });
       refreshProgressCounters();
@@ -130,7 +130,9 @@ export function TeamVersions(props: TeamVersionsProps) {
           className="absolute left-0 top-full z-50 mt-1 w-full overflow-hidden rounded-md border bg-white py-0.5 shadow-md"
         >
           <button
-            className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${!selectedTeamVersion ? 'bg-gray-100' : 'bg-white'}`}
+            className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
+              !selectedTeamVersion ? 'bg-gray-100' : 'bg-white'
+            }`}
             onClick={() => {
               setSelectedTeamVersion(null);
               setIsDropdownOpen(false);
