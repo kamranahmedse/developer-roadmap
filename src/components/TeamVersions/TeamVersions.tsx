@@ -14,6 +14,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { isLoggedIn } from '../../lib/jwt';
 import { useAuth } from '../../hooks/use-auth';
+import { useToast } from '../../hooks/use-toast';
 
 type TeamVersionsProps = {
   resourceId: string;
@@ -33,6 +34,7 @@ export function TeamVersions(props: TeamVersionsProps) {
 
   const { resourceId, resourceType } = props;
   const user = useAuth();
+  const toast = useToast();
   const teamDropdownRef = useRef<HTMLDivElement>(null);
 
   const [isPreparing, setIsPreparing] = useState(true);
@@ -49,6 +51,8 @@ export function TeamVersions(props: TeamVersionsProps) {
   const selectedLabel = selectedTeamVersion
     ? selectedTeamVersion.team.name
     : user?.name;
+
+  // Show avatar if team has one, or if user has one otherwise use first letter of name
   if (selectedTeamVersion?.team.avatar) {
     shouldShowAvatar = true;
   } else if (!selectedTeamVersion && user?.avatar) {
@@ -77,7 +81,7 @@ export function TeamVersions(props: TeamVersionsProps) {
 
     if (error || !response) {
       // @TODO: Handle error
-      console.error(error?.message || 'Failed to load team versions.');
+      toast.error(error?.message || 'Failed to load team versions.');
       return;
     }
 
@@ -166,7 +170,6 @@ export function TeamVersions(props: TeamVersionsProps) {
           )}
         </div>
       </button>
-
       {isDropdownOpen && (
         <>
           <div
