@@ -5,8 +5,9 @@ import { useAuth } from '../../hooks/use-auth';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
-import { $userCurrentTeam, $userTeamList } from '../../stores/team';
+import { $currentTeam, $teamList } from '../../stores/team';
 import { useStore } from '@nanostores/preact';
+import { useTeamId } from '../../hooks/use-team-id';
 import { useToast } from '../../hooks/use-toast';
 
 const allowedStatus = ['invited', 'joined', 'rejected'] as const;
@@ -26,9 +27,10 @@ export type TeamListResponse = UserTeamItem[];
 
 export function TeamDropdown() {
   const user = useAuth();
+  const { teamId } = useTeamId();
 
-  const teamList = useStore($userTeamList);
-  const currentTeam = useStore($userCurrentTeam);
+  const teamList = useStore($teamList);
+  const currentTeam = useStore($currentTeam);
 
   const toast = useToast();
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -52,8 +54,16 @@ export function TeamDropdown() {
       return;
     }
 
-    $userTeamList.set(response);
+    $teamList.set(response);
   }
+
+  useEffect(() => {
+    if (!teamId || !teamList) {
+      return;
+    }
+
+    $currentTeam.set(teamList.find((team) => team._id === teamId));
+  }, [teamList, teamId]);
 
   useEffect(() => {
     setIsLoading(true);
