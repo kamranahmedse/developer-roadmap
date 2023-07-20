@@ -2,13 +2,14 @@ import { useState } from 'preact/hooks';
 import type { GroupByRoadmap, TeamMember } from './TeamProgressPage';
 import { MemberProgressModal } from './MemberProgressModal';
 import { getUrlParams } from '../../lib/browser';
+import ExternalLinkIcon from '../../icons/external-link.svg';
 
 type GroupRoadmapItemProps = {
   roadmap: GroupByRoadmap;
 };
 
 export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
-  const { members, resourceTitle } = props.roadmap;
+  const { members, resourceTitle, resourceId } = props.roadmap;
   const { t: teamId } = getUrlParams();
 
   const [showAll, setShowAll] = useState(false);
@@ -31,8 +32,19 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
       )}
       <div className="flex h-full min-h-[270px] flex-col rounded-md border">
         <div className="flex items-center gap-3 border-b p-3">
-          <div className="flex min-w-0 flex-grow flex-col">
+          <div className="flex min-w-0 flex-grow items-center justify-between">
             <h3 className="truncate font-medium">{resourceTitle}</h3>
+            <a
+              href={`/${resourceId}?t=${teamId}`}
+              className="group mb-0.5 flex shrink-0 items-center justify-between text-base font-medium leading-none text-black"
+              target={'_blank'}
+            >
+              <img
+                alt={'link'}
+                src={ExternalLinkIcon}
+                className="ml-2 h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
+              />
+            </a>
           </div>
         </div>
         <div className="relative flex grow flex-col space-y-2 p-3">
@@ -47,17 +59,18 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                   setSelectedMember(member.member);
                 }}
               >
-                <span className="relative z-10 flex items-center justify-between text-sm">
-                  <span>{member?.member?.name}</span>
-                  <span className="text-xs text-gray-400">
+                <span className="relative z-10 flex items-center justify-between gap-1 text-sm">
+                  <span className="truncate">{member?.member?.name}</span>
+                  <span className="shrink-0 text-xs text-gray-400">
                     {member?.progress?.done} / {member?.progress?.total}
                   </span>
                 </span>
                 <span
                   className="absolute inset-0 bg-gray-100 group-hover:bg-gray-200"
                   style={{
-                    width: `${(member?.progress?.done / member?.progress?.total) * 100
-                      }%`,
+                    width: `${
+                      (member?.progress?.done / member?.progress?.total) * 100
+                    }%`,
                   }}
                 />
               </button>

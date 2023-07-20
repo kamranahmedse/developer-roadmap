@@ -7,6 +7,8 @@ import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/preact';
 import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
+import { setUrlParams } from '../../lib/browser';
+import { getUrlParams } from '../../lib/browser';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -42,6 +44,8 @@ export type GroupByRoadmap = {
 
 export function TeamProgressPage() {
   const { teamId } = useTeamId();
+  const { gb: groupBy } = getUrlParams();
+
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
   const currentTeam = useStore($currentTeam);
@@ -49,7 +53,7 @@ export function TeamProgressPage() {
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
   const [selectedGrouping, setSelectedGrouping] = useState<
     'roadmap' | 'member'
-  >('member');
+  >(groupBy || 'member');
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(
@@ -82,6 +86,14 @@ export function TeamProgressPage() {
     window.location.href = '/';
     return;
   }
+
+  useEffect(() => {
+    if (!selectedGrouping) {
+      return;
+    }
+
+    setUrlParams({ gb: selectedGrouping });
+  }, [selectedGrouping]);
 
   const groupByRoadmap: GroupByRoadmap[] = [];
   for (const roadmap of currentTeam?.roadmaps || []) {
