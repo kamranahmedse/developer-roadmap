@@ -9,6 +9,7 @@ import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
 import { setUrlParams } from '../../lib/browser';
 import { getUrlParams } from '../../lib/browser';
+import { $toastMessage } from '../../stores/toast';
 
 export type UserProgress = {
   resourceTitle: string;

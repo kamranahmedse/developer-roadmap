@@ -1,6 +1,6 @@
 import { atom } from 'nanostores';
 
-export type ToastType = 'success' | 'error' | 'info';
+export type ToastType = 'success' | 'error' | 'info' | 'warning' | 'loading';
 export type ToastMessage = {
   type: ToastType;
   message: string;

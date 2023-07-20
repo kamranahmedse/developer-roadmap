@@ -11,5 +11,13 @@ export function useToast() {
     $toastMessage.set({ type: 'info', message });
   }
 
-  return { success, error, info, $toastMessage };
+  function warning(message: string) {
+    $toastMessage.set({ type: 'warning', message });
+  }
+
+  function loading(message: string) {
+    $toastMessage.set({ type: 'loading', message });
+  }
+
+  return { success, error, info, warning, loading, $toastMessage };
 }

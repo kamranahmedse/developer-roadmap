@@ -7,8 +7,9 @@ import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../../stores/page';
 import { useTeamId } from '../../hooks/use-team-id';
 import { DeleteTeamPopup } from '../DeleteTeamPopup';
-import {$currentTeam, $isCurrentTeamAdmin} from '../../stores/team';
+import { $currentTeam, $isCurrentTeamAdmin } from '../../stores/team';
 import { useStore } from '@nanostores/preact';
+import { useToast } from '../../hooks/use-toast';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
@@ -16,8 +17,8 @@ export function UpdateTeamForm() {
 
   const isCurrentTeamAdmin = useStore($isCurrentTeamAdmin);
 
-  const [error, setError] = useState('');
-  const [message, setMessage] = useState('');
+  const toast = useToast();
+
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [website, setWebsite] = useState('');
@@ -44,8 +45,6 @@ export function UpdateTeamForm() {
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
     setIsLoading(true);
-    setError('');
-    setMessage('');
     if (!name || !teamType) {
       setIsLoading(false);
       return;
@@ -65,16 +64,14 @@ export function UpdateTeamForm() {
 
     if (error) {
       setIsLoading(false);
-      setError(error.message || 'Something went wrong');
-      setMessage('');
+      toast.error(error.message || 'Something went wrong');
       return;
     }
 
     if (response) {
       await loadTeam();
       setIsLoading(false);
-      setMessage('Team updated successfully');
-      setError('');
+      toast.success('Team updated successfully');
     }
   };
 
@@ -206,16 +203,6 @@ export function UpdateTeamForm() {
           </div>
         )}
 
-        {error && (
-          <p className="mt-4 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
-        )}
-
-        {message && (
-          <p className="mt-4 rounded-lg bg-green-100 p-2 text-green-700">
-            {message}
-          </p>
-        )}
-
         <div className="mt-4 flex w-full flex-col">
           <button
             type="submit"
@@ -227,10 +214,10 @@ export function UpdateTeamForm() {
         </div>
       </form>
 
-      { !isCurrentTeamAdmin && (
-      <p className="mt-2 rounded-lg bg-red-50 p-2 text-red-700 border border-red-300 text-sm">
-        Only team admins can update team information.
-      </p>
+      {!isCurrentTeamAdmin && (
+        <p className="mt-2 rounded-lg border border-red-300 bg-red-50 p-2 text-sm text-red-700">
+          Only team admins can update team information.
+        </p>
       )}
 
       {isCurrentTeamAdmin && (
@@ -239,6 +226,7 @@ export function UpdateTeamForm() {
           {isDeleting && (
             <DeleteTeamPopup
               onClose={() => {
+                toast.success('Team deleted successfully');
                 setIsDeleting(false);
               }}
             />

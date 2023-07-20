@@ -93,6 +93,7 @@ export function TeamMembersPage() {
       return;
     }
 
+    toast.success('Member has been deleted');
     await getTeamMemberList();
   }
 
@@ -107,6 +108,7 @@ export function TeamMembersPage() {
               pageProgressMessage.set('');
             });
             setMemberToUpdate(undefined);
+            toast.success('Member has been updated');
           }}
           onClose={() => {
             setMemberToUpdate(undefined);
@@ -116,6 +118,7 @@ export function TeamMembersPage() {
       {isInvitingMember && (
         <InviteMemberPopup
           onInvited={() => {
+            toast.success('Invite sent');
             getTeamMemberList().then(() => null);
             setIsInvitingMember(false);
           }}

@@ -1,58 +1,66 @@
 import { useStore } from '@nanostores/preact';
-import { ToastMessage, ToastType, $toastMessage } from '../stores/toast';
-import { useEffect, useState } from 'preact/hooks';
-import CloseIcon from '../icons/close.svg';
+import { $toastMessage } from '../stores/toast';
+import { useEffect } from 'preact/hooks';
+import { CheckIcon } from './ReactIcons/CheckIcon';
+import { ErrorIcon } from './ReactIcons/ErrorIcon';
+import { WarningIcon } from './ReactIcons/WarningIcon';
+import { InfoIcon } from './ReactIcons/InfoIcon';
+import { Spinner } from './ReactIcons/Spinner';
 
 export interface Props {}
 
 export function Toaster(props: Props) {
-  const [message, setMessage] = useState<ToastMessage | undefined>(undefined);
   const toastMessage = useStore($toastMessage);
-
-  const styles: Record<ToastType, string> = {
-    error: 'bg-red-500 hover:bg-[rgb(239,68,68)] border-white text-white',
-    success: 'bg-white hover:bg-gray-100 border-gray-200 text-black',
-    info: 'bg-orange-500 hover:bg-orange-600 border-orange-200 text-white',
-  };
 
   useEffect(() => {
     if (toastMessage === undefined) {
       return;
     }
 
-    setMessage(toastMessage);
-
     const removeMessage = setTimeout(() => {
-      setMessage(undefined);
-    }, 5000);
+      if (toastMessage?.type !== 'loading') {
+        $toastMessage.set(undefined);
+      }
+    }, 2500);
 
     return () => {
       clearTimeout(removeMessage);
     };
   }, [toastMessage]);
 
-  if (!message) {
+  if (!toastMessage) {
     return null;
   }
 
   return (
-    <div>
-      <div className="fixed bottom-4 left-0 z-50 flex w-full animate-fade-slide-up items-center justify-center">
-        <div
-          className={`group relative flex w-full min-w-0 max-w-md items-center rounded-md border p-4 pr-6 shadow-md ${
-            styles[message?.type]
-          }`}
-        >
-          <div>{message?.message}</div>
-          <button
-            type="button"
-            className="absolute right-2.5 top-2 ml-auto hidden items-center rounded-lg bg-transparent p-1.5 text-sm text-white hover:bg-white/20 group-hover:inline-flex"
-            onClick={() => setMessage(undefined)}
-          >
-            <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
-            <span class="sr-only">Close toast</span>
-          </button>
-        </div>
+    <div
+      onClick={() => {
+        $toastMessage.set(undefined);
+      }}
+      className={`fixed bottom-5 left-1/2 max-w-[300px] animate-fade-slide-up`}
+    >
+      <div
+        className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pl-4 pr-5 text-black shadow-md hover:bg-gray-50`}
+      >
+        {toastMessage.type === 'success' && (
+          <CheckIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-green-500" />
+        )}
+
+        {toastMessage.type === 'error' && (
+          <ErrorIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-red-500" />
+        )}
+
+        {toastMessage.type === 'warning' && (
+          <WarningIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-orange-500" />
+        )}
+
+        {toastMessage.type === 'info' && (
+          <InfoIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-blue-500" />
+        )}
+
+        {toastMessage.type === 'loading' && <Spinner isDualRing={false} />}
+
+        <span className="flex-grow text-base">{toastMessage.message}</span>
       </div>
     </div>
   );

@@ -11,15 +11,17 @@ import { UpdateTeamResourceModal } from './CreateTeam/UpdateTeamResourceModal';
 import { AddTeamRoadmap } from './AddTeamRoadmap';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../stores/team';
+import {useToast} from "../hooks/use-toast";
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
 
   const canManageCurrentTeam = useStore($canManageCurrentTeam);
 
+  const toast = useToast();
+
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
-  const [error, setError] = useState('');
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [team, setTeam] = useState<TeamDocument>();
   const [resourceConfigs, setResourceConfigs] = useState<TeamResourceConfig>(
@@ -31,7 +33,7 @@ export function TeamRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
 
     if (error) {
-      setError(error.message || 'Something went wrong. Please try again!');
+      toast.error(error.message || 'Something went wrong');
       return;
     }
 
@@ -107,10 +109,11 @@ export function TeamRoadmaps() {
     );
 
     if (error || !response) {
-      setError(error?.message || 'Error deleting roadmap');
+      toast.error(error?.message || 'Something went wrong');
       return;
     }
 
+    toast.success('Roadmap removed');
     setResourceConfigs(response);
   }
 
