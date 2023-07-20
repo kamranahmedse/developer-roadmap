@@ -42,6 +42,11 @@ export type GroupByRoadmap = {
   }[];
 };
 
+const groupingTypes = [
+  { label: 'Members', value: 'member' },
+  { label: 'Roadmaps', value: 'roadmap' },
+] as const;
+
 export function TeamProgressPage() {
   const { teamId } = useTeamId();
   const { gb: groupBy } = getUrlParams();
@@ -126,24 +131,18 @@ export function TeamProgressPage() {
   return (
     <div>
       <div className="flex items-center gap-2">
-        <button
-          className={`rounded-md border p-1 px-2 text-sm ${
-            selectedGrouping === 'member' ? ' border-gray-500 bg-gray-300 ' : ''
-          }`}
-          onClick={() => setSelectedGrouping('member')}
-        >
-          Members
-        </button>
-        <button
-          className={`rounded-md border p-1 px-2 text-sm ${
-            selectedGrouping === 'roadmap'
-              ? ' border-gray-500 bg-gray-300 '
-              : ''
-          }`}
-          onClick={() => setSelectedGrouping('roadmap')}
-        >
-          Group by Roadmap
-        </button>
+        {groupingTypes.map((grouping) => (
+          <button
+            className={`rounded-md border p-1 px-2 text-sm ${
+              selectedGrouping === grouping.value
+                ? ' border-gray-400 bg-gray-200 '
+                : ''
+            }`}
+            onClick={() => setSelectedGrouping(grouping.value)}
+          >
+            {grouping.label}
+          </button>
+        ))}
       </div>
 
       <div className="mt-6">
