@@ -7,9 +7,10 @@ interface PreviewFile extends File {
 }
 
 type UploadProfilePictureProps = {
+  isDisabled?: boolean;
   avatarUrl: string;
   type: 'avatar' | 'logo';
-  label: string;
+  label?: string;
   teamId?: string;
 };
 
@@ -51,7 +52,7 @@ async function validateImage(file: File): Promise<string | null> {
 }
 
 export default function UploadProfilePicture(props: UploadProfilePictureProps) {
-  const { avatarUrl, teamId, type } = props;
+  const { avatarUrl, teamId, type, isDisabled = false } = props;
 
   const [file, setFile] = useState<PreviewFile | null>(null);
   const [error, setError] = useState('');
@@ -147,9 +148,11 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
       encType="multipart/form-data"
       className="flex flex-col gap-2"
     >
-      <label htmlFor="avatar" className="text-sm leading-none text-slate-500">
-        {props.label}
-      </label>
+      {props.label && (
+        <label htmlFor="avatar" className="text-sm leading-none text-slate-500">
+          {props.label}
+        </label>
+      )}
       <div className="mb-2 mt-2 flex items-center gap-2">
         <label
           htmlFor="avatar"
@@ -167,8 +170,9 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
             />
           </div>
 
-          {!file && (
+          {!file && !isDisabled && (
             <button
+              disabled={isDisabled}
               type="button"
               className="absolute bottom-1 right-0 rounded bg-gray-600 px-2 py-1 text-xs leading-none text-gray-50 ring-2 ring-white"
               onClick={() => {
@@ -181,6 +185,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
           )}
         </label>
         <input
+          disabled={isDisabled}
           ref={inputRef}
           id="avatar"
           type="file"
@@ -199,14 +204,14 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
                 inputRef.current?.value && (inputRef.current.value = '');
               }}
               className="flex h-9 min-w-[96px] items-center justify-center rounded-md border border-red-300 bg-red-100 text-sm font-medium text-red-700 disabled:cursor-not-allowed disabled:opacity-60"
-              disabled={isLoading}
+              disabled={isLoading || isDisabled}
             >
               Cancel
             </button>
             <button
               type="submit"
               className="flex h-9 min-w-[96px] items-center justify-center rounded-md border border-gray-300 text-sm font-medium text-black disabled:cursor-not-allowed disabled:opacity-60"
-              disabled={isLoading}
+              disabled={isLoading || isDisabled}
             >
               {isLoading ? 'Uploading..' : 'Upload'}
             </button>

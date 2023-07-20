@@ -198,7 +198,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                     }
                     onClick={() => setChangingRoadmapId(resourceId)}
                   >
-                    Make Changes
+                    Customize
                   </button>
 
                   <button

@@ -7,10 +7,14 @@ import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../../stores/page';
 import { useTeamId } from '../../hooks/use-team-id';
 import { DeleteTeamPopup } from '../DeleteTeamPopup';
+import {$currentTeam, $isCurrentTeamAdmin} from '../../stores/team';
+import { useStore } from '@nanostores/preact';
 
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
+
+  const isCurrentTeamAdmin = useStore($isCurrentTeamAdmin);
 
   const [error, setError] = useState('');
   const [message, setMessage] = useState('');
@@ -31,9 +35,11 @@ export function UpdateTeamForm() {
     '1000+',
   ];
   const [isDisabled, setIsDisabled] = useState(false);
-  const [team, setTeam] = useState<TeamDocument | null>(null);
   const { teamId } = useTeamId();
-  const user = useAuth();
+
+  useEffect(() => {
+    setIsDisabled(!isCurrentTeamAdmin);
+  }, [isCurrentTeamAdmin]);
 
   const handleSubmit = async (e: Event) => {
     e.preventDefault();
@@ -81,8 +87,6 @@ export function UpdateTeamForm() {
       return;
     }
 
-    setTeam(response);
-
     setName(response.name);
     setAvatar(response.avatar || '');
     setWebsite(response?.links?.website || '');
@@ -90,7 +94,6 @@ export function UpdateTeamForm() {
     if (response.teamSize) {
       setTeamSize(response.teamSize);
     }
-    setIsDisabled(response.creatorId !== user?.id);
   }
 
   useEffect(() => {
@@ -104,13 +107,9 @@ export function UpdateTeamForm() {
 
   return (
     <div>
-      <div className="mb-8 hidden md:block">
-        <h2 className="text-3xl font-bold sm:text-4xl">Team</h2>
-        <p className="mt-2 text-gray-400">Update your team information.</p>
-      </div>
       <UploadProfilePicture
+        isDisabled={isDisabled}
         type="logo"
-        label="Upload team logo"
         avatarUrl={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
@@ -228,28 +227,36 @@ export function UpdateTeamForm() {
         </div>
       </form>
 
-      <hr class="my-8" />
-
-      {isDeleting && (
-        <DeleteTeamPopup
-          onClose={() => {
-            setIsDeleting(false);
-          }}
-        />
+      { !isCurrentTeamAdmin && (
+      <p className="mt-2 rounded-lg bg-red-50 p-2 text-red-700 border border-red-300 text-sm">
+        Only team admins can update team information.
+      </p>
       )}
 
-      <h2 class="text-xl font-bold sm:text-2xl">Delete Team</h2>
-      <p class="mt-2 text-gray-400">
-        Permanently delete this team and all of its resources.
-      </p>
+      {isCurrentTeamAdmin && (
+        <>
+          <hr class="my-8" />
+          {isDeleting && (
+            <DeleteTeamPopup
+              onClose={() => {
+                setIsDeleting(false);
+              }}
+            />
+          )}
+          <h2 class="text-xl font-bold sm:text-2xl">Delete Team</h2>
+          <p class="mt-2 text-gray-400">
+            Permanently delete this team and all of its resources.
+          </p>
 
-      <button
-        onClick={() => setIsDeleting(true)}
-        data-popup="delete-team-popup"
-        class="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
-      >
-        Delete Team
-      </button>
+          <button
+            onClick={() => setIsDeleting(true)}
+            data-popup="delete-team-popup"
+            class="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+          >
+            Delete Team
+          </button>
+        </>
+      )}
     </div>
   );
 }

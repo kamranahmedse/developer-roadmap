@@ -207,7 +207,7 @@ export function TeamRoadmaps() {
                       setChangingRoadmapId(resourceId);
                     }}
                   >
-                    Make Changes
+                    Customize
                   </button>
 
                   {removingRoadmapId !== resourceId && (
