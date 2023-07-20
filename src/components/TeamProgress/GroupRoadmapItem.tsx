@@ -59,12 +59,25 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                   setSelectedMember(member.member);
                 }}
               >
-                <span className="relative z-10 flex items-center justify-between gap-1 text-sm">
-                  <span className="truncate">{member?.member?.name}</span>
+                <div className="relative z-10 flex items-center justify-between gap-1 text-sm">
+                  <div className="flex items-center gap-2">
+                    <img
+                      src={
+                        member.member.avatar
+                          ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
+                              member.member.avatar
+                            }`
+                          : '/images/default-avatar.png'
+                      }
+                      alt={member.member.name || ''}
+                      className="h-5 w-5 shrink-0 rounded-full"
+                    />
+                    <span className="truncate">{member?.member?.name}</span>
+                  </div>
                   <span className="shrink-0 text-xs text-gray-400">
                     {member?.progress?.done} / {member?.progress?.total}
                   </span>
-                </span>
+                </div>
                 <span
                   className="absolute inset-0 bg-gray-100 group-hover:bg-gray-200"
                   style={{
