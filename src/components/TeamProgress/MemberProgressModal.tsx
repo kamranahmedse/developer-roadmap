@@ -135,11 +135,15 @@ export function MemberProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white shadow"
         >
           <div className="p-4">
-            <div className="mb-5 mt-4">
-              <h2 className={'mb-1 text-center text-2xl font-bold'}>
+            <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
+              <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
                 {member.name}'s Progress
               </h2>
-              <p className={'text-center text-gray-500'}>
+              <p
+                className={
+                  'hidden text-xs text-gray-500 sm:text-sm md:block md:text-base'
+                }
+              >
                 You are looking at {member.name}'s progress.{' '}
                 <a
                   target={'_blank'}
@@ -150,9 +154,28 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 </a>
                 .
               </p>
+              <p className={'block text-gray-500 md:hidden'}>
+                View your progress&nbsp;
+                <a
+                  target={'_blank'}
+                  href={`/${resourceId}?t=${teamId}`}
+                  className="text-blue-600 underline"
+                >
+                  on the roadmap page.
+                </a>
+              </p>
             </div>
-            <p class="-mx-4 mb-3 flex items-center justify-center border-b border-t py-2 text-sm">
-              <span class="mr-2.5 hidden rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900 sm:block">
+            <p class="-mx-4 mb-3 flex items-center justify-start border-b border-t py-2 text-sm sm:hidden px-4">
+              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+                <span>{progressPercentage}</span>% Done
+              </span>
+
+              <span>
+                <span>{memberDone}</span> of <span>{memberTotal}</span> done
+              </span>
+            </p>
+            <p class="-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex">
+              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
 

@@ -19,7 +19,7 @@ export function Toaster(props: Props) {
 
     const removeMessage = setTimeout(() => {
       if (toastMessage?.type !== 'loading') {
-        $toastMessage.set(undefined);
+        // $toastMessage.set(undefined);
       }
     }, 2500);
 
@@ -37,25 +37,25 @@ export function Toaster(props: Props) {
       onClick={() => {
         $toastMessage.set(undefined);
       }}
-      className={`fixed bottom-5 left-1/2 max-w-[300px] animate-fade-slide-up`}
+      className={`fixed bottom-5 left-1/2 max-w-[300px] animate-fade-slide-up min-w-[300px] sm:min-w-[auto] z-50`}
     >
       <div
         className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pl-4 pr-5 text-black shadow-md hover:bg-gray-50`}
       >
         {toastMessage.type === 'success' && (
-          <CheckIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-green-500" />
+          <CheckIcon additionalClasses="h-5 w-5 shrink-0 relative top-[0.5px] text-green-500" />
         )}
 
         {toastMessage.type === 'error' && (
-          <ErrorIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-red-500" />
+          <ErrorIcon additionalClasses="h-5 w-5 shrink-0 relative top-[0.5px] text-red-500" />
         )}
 
         {toastMessage.type === 'warning' && (
-          <WarningIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-orange-500" />
+          <WarningIcon additionalClasses="h-5 w-5 shrink-0 relative top-[0.5px] text-orange-500" />
         )}
 
         {toastMessage.type === 'info' && (
-          <InfoIcon additionalClasses="h-5 w-5 relative top-[0.5px] text-blue-500" />
+          <InfoIcon additionalClasses="h-5 w-5 shrink-0 relative top-[0.5px] text-blue-500" />
         )}
 
         {toastMessage.type === 'loading' && <Spinner isDualRing={false} />}

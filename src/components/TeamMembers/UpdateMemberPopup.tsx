@@ -58,13 +58,13 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
           ref={popupBodyRef}
           class="popup-body relative rounded-lg bg-white p-4 shadow"
         >
-          <h3 class="mb-1.5 text-2xl font-medium">Update Role</h3>
-          <p className="mb-3 text-sm leading-none text-gray-400">
+          <h3 class="mb-1.5 text-xl sm:text-2xl font-medium">Update Role</h3>
+          <p className="mb-3 text-sm leading-none text-gray-400 hidden sm:block">
             Select the role to update for this member
           </p>
 
           <form onSubmit={handleSubmit}>
-            <div className="my-4 flex flex-col gap-2">
+            <div className="mt-0 sm:mt-4 my-4 flex flex-col gap-2">
               <span className="mt-2 block w-full rounded-md bg-gray-100 p-2">
                 {member.invitedEmail}
               </span>

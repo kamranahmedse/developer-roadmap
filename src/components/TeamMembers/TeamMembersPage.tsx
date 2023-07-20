@@ -13,6 +13,7 @@ import { UpdateMemberPopup } from './UpdateMemberPopup';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../../stores/team';
 import { useToast } from '../../hooks/use-toast';
+import { MemberRoleBadge } from './RoleBadge';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -130,7 +131,12 @@ export function TeamMembersPage() {
       <div>
         <div className="rounded-b-sm rounded-t-md border">
           <div className="flex items-center justify-between gap-2 border-b p-3">
-            <p className="text-sm">{teamMembers.length} people in the team.</p>
+            <p className="hidden text-sm sm:block">
+              {teamMembers.length} people in the team.
+            </p>
+            <p className="block text-sm sm:hidden">
+              {teamMembers.length} members
+            </p>
             <LeaveTeamButton teamId={team?._id!} />
           </div>
           {teamMembers.map((member, index) => {
@@ -150,14 +156,17 @@ export function TeamMembersPage() {
                         : '/images/default-avatar.png'
                     }
                     alt={member.name || ''}
-                    className="h-10 w-10 rounded-full"
+                    className="hidden h-10 w-10 rounded-full sm:block"
                   />
                   <div>
+                    <span class={'mb-1 block sm:hidden'}>
+                      <MemberRoleBadge role={member.role} />
+                    </span>
                     <div className="flex items-center">
                       <h3 className="flex items-center font-medium">
                         {member.name}
                         {member.userId === user?.id && (
-                          <span className="ml-2 text-xs font-normal text-blue-500">
+                          <span className="ml-2 hidden text-xs font-normal text-blue-500 sm:inline">
                             You
                           </span>
                         )}
@@ -182,18 +191,8 @@ export function TeamMembersPage() {
                 </div>
 
                 <div className="flex items-center text-sm">
-                  <span
-                    className={`rounded-full px-2 py-0.5 text-xs capitalize ${
-                      ['admin'].includes(member.role)
-                        ? 'bg-blue-100 text-blue-700 '
-                        : 'bg-gray-100 text-gray-700 '
-                    } ${
-                      ['manager'].includes(member.role)
-                        ? 'bg-green-100 text-green-700'
-                        : ''
-                    }`}
-                  >
-                    {member.role}
+                  <span class={'hidden sm:block'}>
+                    <MemberRoleBadge role={member.role} />
                   </span>
                   {canManageCurrentTeam && (
                     <MemberActionDropdown
