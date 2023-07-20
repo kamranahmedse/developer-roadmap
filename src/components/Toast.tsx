@@ -19,7 +19,7 @@ export function Toaster(props: Props) {
 
     const removeMessage = setTimeout(() => {
       if (toastMessage?.type !== 'loading') {
-        // $toastMessage.set(undefined);
+        $toastMessage.set(undefined);
       }
     }, 2500);
 
