@@ -9,10 +9,10 @@ import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../components/UpcomingForm.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
-generateArticleSchema,
-generateFAQSchema,
+  generateArticleSchema,
+  generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { RoadmapFrontmatter,getRoadmapIds } from '../../lib/roadmap';
+import { RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -60,7 +60,8 @@ if (roadmapFAQs.length) {
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
-  ogImageUrl={roadmapData?.seo?.ogImageUrl || 'https://roadmap.sh/images/og-img.png'}
+  ogImageUrl={roadmapData?.seo?.ogImageUrl ||
+    'https://roadmap.sh/images/og-img.png'}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}

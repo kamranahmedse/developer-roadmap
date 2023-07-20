@@ -1,6 +1,7 @@
 import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
+import { useToast } from '../../hooks/use-toast';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -11,10 +12,13 @@ type ResourceProgressType = {
   doneCount: number;
   learningCount: number;
   skippedCount: number;
-  onCleared: () => void;
+  onCleared?: () => void;
+  showClearButton?: boolean;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
+  const { showClearButton = true } = props;
+  const toast = useToast();
   const [isClearing, setIsClearing] = useState(false);
   const [isConfirming, setIsConfirming] = useState(false);
 
@@ -41,7 +45,7 @@ export function ResourceProgress(props: ResourceProgressType) {
     );
 
     if (error || !response) {
-      alert('Error clearing progress. Please try again.');
+      toast.error('Error clearing progress. Please try again.');
       console.error(error);
       setIsClearing(false);
       return;
@@ -52,7 +56,9 @@ export function ResourceProgress(props: ResourceProgressType) {
 
     setIsClearing(false);
     setIsConfirming(false);
-    onCleared();
+    if (onCleared) {
+      onCleared();
+    }
   }
 
   const url =
@@ -101,38 +107,42 @@ export function ResourceProgress(props: ResourceProgressType) {
           )}
           <span>{totalCount} total</span>
         </span>
-        {!isConfirming && (
-          <button
-            className="text-red-500 hover:text-red-800"
-            onClick={() => setIsConfirming(true)}
-            disabled={isClearing}
-          >
-            {!isClearing && (
-              <>
-                Clear Progress <span>&times;</span>
-              </>
+        {showClearButton && (
+          <>
+            {!isConfirming && (
+              <button
+                className="text-red-500 hover:text-red-800"
+                onClick={() => setIsConfirming(true)}
+                disabled={isClearing}
+              >
+                {!isClearing && (
+                  <>
+                    Clear Progress <span>&times;</span>
+                  </>
+                )}
+
+                {isClearing && 'Processing...'}
+              </button>
             )}
 
-            {isClearing && 'Processing...'}
-          </button>
-        )}
-
-        {isConfirming && (
-          <span>
-            Are you sure?{' '}
-            <button
-              onClick={clearProgress}
-              className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
-            >
-              Yes
-            </button>{' '}
-            <button
-              onClick={() => setIsConfirming(false)}
-              className="text-red-500 underline hover:text-red-800"
-            >
-              No
-            </button>
-          </span>
+            {isConfirming && (
+              <span>
+                Are you sure?{' '}
+                <button
+                  onClick={clearProgress}
+                  className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
+                >
+                  Yes
+                </button>{' '}
+                <button
+                  onClick={() => setIsConfirming(false)}
+                  className="text-red-500 underline hover:text-red-800"
+                >
+                  No
+                </button>
+              </span>
+            )}
+          </>
         )}
       </p>
     </div>

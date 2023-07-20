@@ -13,6 +13,7 @@ import {
   updateResourceProgress,
 } from '../../lib/resource-progress';
 import { showLoginPopup } from '../../lib/popup';
+import { useToast } from '../../hooks/use-toast';
 
 type TopicProgressButtonProps = {
   topicId: string;
@@ -27,12 +28,13 @@ const statusColors: Record<ResourceProgressType, string> = {
   learning: 'bg-yellow-500',
   pending: 'bg-gray-300',
   skipped: 'bg-black',
+  removed: ''
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose } =
-    props;
+  const { topicId, resourceId, resourceType, onClose } = props;
 
+  const toast = useToast();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
   const [progress, setProgress] = useState<ResourceProgressType>('pending');
   const [showChangeStatus, setShowChangeStatus] = useState(false);
@@ -139,7 +141,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         refreshProgressCounters();
       })
       .catch((err) => {
-        alert(err.message);
+        toast.error(err.message || 'Error updating progress');
         console.error(err);
       })
       .finally(() => {

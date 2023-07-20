@@ -50,6 +50,9 @@ dependencies:
   roadmap-renderer:
     specifier: ^1.0.6
     version: 1.0.6
+  slugify:
+    specifier: ^1.6.6
+    version: 1.6.6
   tailwindcss:
     specifier: ^3.3.2
     version: 3.3.2
@@ -5075,6 +5078,11 @@ packages:
   /slash@4.0.0:
     resolution: {integrity: sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==}
     engines: {node: '>=12'}
+    dev: false
+
+  /slugify@1.6.6:
+    resolution: {integrity: sha512-h+z7HKHYXj6wJU+AnS/+IH8Uh9fdcX1Lrhg1/VMdf9PwoBQXFcXiAdsy2tSK0P6gKwJLXp02r90ahUCqHk9rrw==}
+    engines: {node: '>=8.0.0'}
     dev: false
 
   /smart-buffer@4.2.0:

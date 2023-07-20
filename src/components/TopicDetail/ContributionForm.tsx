@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
+import { useToast } from '../../hooks/use-toast';
 
 type ContributionInputProps = {
   id: number;
@@ -116,6 +117,7 @@ type ContributionFormProps = {
 
 export function ContributionForm(props: ContributionFormProps) {
   const { onClose, resourceType, resourceId, topicId } = props;
+  const toast = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [links, setLinks] = useState<
     { id: number; title: string; link: string }[]
@@ -144,7 +146,7 @@ export function ContributionForm(props: ContributionFormProps) {
     setIsSubmitting(false);
 
     if (!response || error) {
-      alert(error?.message || 'Something went wrong. Please try again.');
+      toast.error(error?.message || 'Something went wrong. Please try again.');
       return;
     }
 

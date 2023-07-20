@@ -85,8 +85,13 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
+          const pagePath =
+            window.location.pathname === '/respond-invite'
+              ? window.location.pathname + window.location.search
+              : window.location.pathname;
+
           localStorage.setItem(LINKEDIN_REDIRECT_AT, Date.now().toString());
-          localStorage.setItem(LINKEDIN_LAST_PAGE, window.location.pathname);
+          localStorage.setItem(LINKEDIN_LAST_PAGE, pagePath);
         }
 
         window.location.href = response.loginUrl;

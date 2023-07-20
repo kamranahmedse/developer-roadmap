@@ -5,7 +5,7 @@ import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
 
-type ActivityResponse = {
+export type ActivityResponse = {
   done: {
     today: number;
     total: number;

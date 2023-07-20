@@ -79,6 +79,19 @@ svg .clickable-group.done[data-group-id^='check:'] rect {
   user-select: none;
 }
 
+svg .removed rect {
+  fill: #fdfdfd !important;
+  stroke: #c4c4c4 !important;
+}
+
+svg .removed text {
+  fill: #9c9c9c !important;
+}
+
+svg .removed g, svg .removed circle, svg .removed path {
+    opacity: 0;
+}
+
 /************************************
     Aspect ratio implementation
   *************************************/

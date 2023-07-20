@@ -7,6 +7,7 @@ import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import { PageProgress } from '../components/PageProgress';
+import { Toaster } from '../components/Toast';
 import { PageSponsor } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
@@ -155,6 +156,7 @@ const gaPageIdentifier = Astro.url.pathname
     <slot name="login-popup">
       <LoginPopup />
     </slot>
+    <Toaster client:idle />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />
     <PageSponsor

@@ -86,6 +86,8 @@ export function UpdateProfileForm() {
         <p className="mt-2 text-gray-400">Update your profile details below.</p>
       </div>
       <UploadProfilePicture
+        type="avatar"
+        label="Profile picture"
         avatarUrl={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
