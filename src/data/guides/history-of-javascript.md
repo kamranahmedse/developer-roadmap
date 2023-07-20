@@ -20,11 +20,11 @@ tags:
   - 'guide-sitemap'
 ---
 
-Around 10 years ago, Jeff Atwood (the founder of stackoverflow) made a case that JavaScript is going to be the future and he coined the “Atwood Law” which states that _Any application that can be written in JavaScript will eventually be written in JavaScript_. Fast-forward to today, 10 years later, if you look at it it rings truer than ever. JavaScript is continuing to gain more and more adoption.
+Around 10 years ago, Jeff Atwood (the founder of stackoverflow) made a case that JavaScript is going to be the future and he coined the “Atwood Law” which states that _Any application that can be written in JavaScript will eventually be written in JavaScript_. Fast-forward to today, 10 years later, if you look at it rings truer than ever. JavaScript is continuing to gain more and more adoption.
 
 ### JavaScript is announced
 
-JavaScript was initially created by [Brendan Eich](https://twitter.com/BrendanEich) of NetScape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially it was named `Mocha` by the creator, which was later renamed to `LiveScript`. In 1996, about a year later after the release, NetScape decided to rename it to be `JavaScript` with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript.
+JavaScript was initially created by [Brendan Eich](https://twitter.com/BrendanEich) of Netscape and was first announced in a press release by Netscape in 1995. It has a bizarre history of naming; initially it was named `Mocha` by the creator, which was later renamed to `LiveScript`. In 1996, about a year later after the release, NetScape decided to rename it to be `JavaScript` with hopes of capitalizing on the Java community (although JavaScript did not have any relationship with Java) and released Netscape 2.0 with the official support of JavaScript.
 
 ### ES1, ES2 and ES3
 
@@ -40,7 +40,21 @@ Google, Microsoft, Yahoo and other disputers of ES4 came together and decided to
 
 ### Release of ES6 — ECMAScript 2015
 
-After a few years of the release of ES5, things started to change, TC39 (the committee under ECMA international responsible for ECMAScript standardization) kept working on the next version of ECMAScript (ES6) which was originally named ES Harmony, before being eventually released with the name ES2015. ES2015 adds significant features and syntactic sugar to allow writing complex applications. Some of the features that ES6 has to offer, include Classes, Modules, Arrows, Enhanced object literals, Template strings, Destructuring, Default param values + rest + spread, Let and Const, Iterators + for..of, Generators, Maps + Sets, Proxies, Symbols, Promises, math + number + string + array + object APIs [etc](http://es6-features.org/#Constants)
+After a few years of the release of ES5, things started to change, TC39 (the committee under ECMA international responsible for ECMAScript standardization) kept working on the next version of ECMAScript (ES6) which was originally named ES Harmony, before being eventually released with the name ES2015. ES2015 adds significant features and syntactic sugar to allow writing complex applications. Some of the features that ES6 has to offer include
+
+- Classes, Modules, Arrows
+- Enhanced object literals
+- Template strings
+- Destructuring
+- Default and rest parameters
+- Spread operator
+- `let` and `const`
+- Iterators  `for..of`
+- Generators
+- `map` and `set`
+- Proxies and Symbols
+- Promises
+- Math, Number, String, Array, Object APIs and [etc](http://es6-features.org/#Constants)
 
 Browser support for ES6 is still scarce but everything that ES6 has to offer is still available to developers by transpiling the ES6 code to ES5. With the release of 6th version of ECMAScript, TC39 decided to move to yearly model of releasing updates to ECMAScript so to make sure that the new features are added as soon as they are approved and we don’t have to wait for the full specification to be drafted and approved — thus 6th version of ECMAScript was renamed as ECMAScript 2015 or ES2015 before the release in June 2015. And the next versions of ECMAScript were decided to published in June of every year.
 
@@ -63,7 +77,7 @@ The eighth version of ECMAScript was released in June 2017. The key highlight of
 
 ### What is ESNext then?
 
-ESNext is a dynamic name that refers to whatever the current version of ECMAScript is at the given time. For example, at the time of this writing `ES2017` or `ES8` is `ESNext`.
+ESNext is a dynamic name that refers to whatever the current version of ECMAScript is at the given time. For example, at the time of this writing `ES2017` or `ES8` is the current `ESNext`.
 
 ### What does the future hold?
 
