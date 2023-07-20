@@ -105,7 +105,6 @@ export const TeamSidebar: FunctionalComponent<{
       <div class="container flex min-h-screen items-stretch">
         <aside class="hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block">
           <TeamDropdown />
-          <hr class="my-4" />
           <nav>
             <ul class="space-y-1">
               {sidebarLinks.map((sidebarLink) => {

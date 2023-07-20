@@ -76,6 +76,14 @@ export function TeamDropdown() {
     .filter((team) => team.status === 'invited')
     .map((team) => team._id);
 
+  if (
+    !user?.email.endsWith('@insightpartners.com') &&
+    !user?.email.endsWith('@roadmap.sh') &&
+    !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com'].includes(user?.email!)
+  ) {
+    return null;
+  }
+
   return (
     <div className="relative mr-2">
       <button
@@ -168,6 +176,8 @@ export function TeamDropdown() {
           </a>
         </div>
       )}
+
+      <hr class='my-4' />
     </div>
   );
 }
