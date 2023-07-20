@@ -94,8 +94,6 @@ export function Step1(props: Step1Props) {
             teamSize,
             linkedInUrl: linkedInUrl || undefined,
           }),
-          roadmapIds: [],
-          bestPracticeIds: [],
         }
       ));
 

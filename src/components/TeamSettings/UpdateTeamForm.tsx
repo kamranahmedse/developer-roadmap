@@ -22,6 +22,8 @@ export function UpdateTeamForm() {
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [website, setWebsite] = useState('');
+  const [linkedIn, setLinkedIn] = useState('');
+  const [gitHub, setGitHub] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
@@ -56,9 +58,11 @@ export function UpdateTeamForm() {
         name,
         website,
         type: teamType,
-        ...(teamType === 'company' && { teamSize }),
-        roadmapIds: roadmaps.join(','),
-        bestPracticeIds: bestPractices.join(','),
+        gitHubUrl: gitHub || undefined,
+        ...(teamType === 'company' && {
+          teamSize,
+          linkedInUrl: linkedIn || undefined,
+        }),
       }
     );
 
@@ -87,6 +91,8 @@ export function UpdateTeamForm() {
     setName(response.name);
     setAvatar(response.avatar || '');
     setWebsite(response?.links?.website || '');
+    setLinkedIn(response?.links?.linkedIn || '');
+    setGitHub(response?.links?.github || '');
     setTeamType(response.type);
     if (response.teamSize) {
       setTeamSize(response.teamSize);
@@ -147,6 +153,41 @@ export function UpdateTeamForm() {
             disabled={isDisabled}
             value={website}
             onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
+          />
+        </div>
+        {teamType === 'company' && (
+          <div className="mt-4 flex w-full flex-col">
+            <label
+              for="linkedIn"
+              className="text-sm leading-none text-slate-500"
+            >
+              LinkedIn URL
+            </label>
+            <input
+              type="text"
+              name="linkedIn"
+              id="linkedIn"
+              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              placeholder="https://linkedin.com/company/roadmapsh"
+              disabled={isDisabled}
+              value={linkedIn}
+              onInput={(e) => setLinkedIn((e.target as HTMLInputElement).value)}
+            />
+          </div>
+        )}
+        <div className="mt-4 flex w-full flex-col">
+          <label for="gitHub" className="text-sm leading-none text-slate-500">
+            GitHub URL
+          </label>
+          <input
+            type="text"
+            name="gitHub"
+            id="gitHub"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            placeholder="https://github.com/roadmapsh"
+            disabled={isDisabled}
+            value={gitHub}
+            onInput={(e) => setGitHub((e.target as HTMLInputElement).value)}
           />
         </div>
         <div className="mt-4 flex w-full flex-col">
