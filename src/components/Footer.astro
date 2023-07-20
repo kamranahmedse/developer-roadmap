@@ -1,4 +1,5 @@
 ---
+import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
 ---
 
@@ -24,10 +25,8 @@ import Icon from './AstroIcon.astro';
         href='/videos'>Videos</a
       >
       <a
-        target='_blank'
-        rel='noopener noreferrer nofollow'
         class='border-b border-b-gray-700 px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
-        href='https://cottonbureau.com/people/roadmapsh'>Store</a
+        href='/about'>FAQs</a
       >
       <a
         class='px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
@@ -64,11 +63,24 @@ import Icon from './AstroIcon.astro';
           <p>
             &copy; roadmap.sh
             <span class='mx-1.5'>&middot;</span>
-            <a href='/about' class='hover:text-white'>FAQs</a>
-            <span class='mx-1.5'>&middot;</span>
             <a href='/terms' class='hover:text-white'>Terms</a>
             <span class='mx-1.5'>&middot;</span>
             <a href='/privacy' class='hover:text-white'>Privacy</a>
+            <span class='mx-1.5'>&middot;</span>
+            <a
+              href='https://youtube.com/theroadmap?sub_confirmation=1'
+              target='_blank'
+              class='hover:text-white'
+            >
+              <AstroIcon icon='youtube' class='inline-block h-4 w-4' />
+            </a>
+            <a
+              href='https://twitter.com/roadmapsh'
+              target='_blank'
+              class='ml-1.5 hover:text-white'
+            >
+              <AstroIcon icon='twitter-fill' class='inline-block h-3.5 w-3.5 fill-current' />
+            </a>
           </p>
         </div>
       </div>
