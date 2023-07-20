@@ -58,7 +58,7 @@ export function TeamRoadmaps() {
     );
 
     if (error || !response) {
-      alert('Error loading team');
+      toast.error('Error loading team');
       window.location.href = '/account';
       return;
     }

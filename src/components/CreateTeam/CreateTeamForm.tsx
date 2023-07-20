@@ -9,6 +9,7 @@ import { pageProgressMessage } from '../../stores/page';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { Step3 } from './Step3';
 import { Step4 } from './Step4';
+import {useToast} from "../../hooks/use-toast";
 
 export interface TeamDocument {
   _id?: string;
@@ -31,6 +32,7 @@ export function CreateTeamForm() {
   // Can't use hook `useParams` because it runs asynchronously
   const { s: queryStepIndex, t: teamId } = getUrlParams();
 
+  const toast = useToast();
   const [team, setTeam] = useState<TeamDocument>();
 
   const [loadingTeam, setLoadingTeam] = useState(!!teamId && !team?._id);
@@ -45,7 +47,7 @@ export function CreateTeamForm() {
     );
 
     if (error || !response) {
-      alert('Error loading team');
+      toast.error(error?.message || 'Error loading team');
       window.location.href = '/account';
       return;
     }
