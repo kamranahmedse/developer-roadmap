@@ -44,7 +44,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             alt={member.name || ''}
             className="h-8 w-8 rounded-full"
           />
-          <div className="flex min-w-0 flex-grow flex-col">
+          <div className="inline-grid">
             <h3 className="truncate font-medium">{member.name}</h3>
             <p className="truncate text-sm text-gray-500">{member.email}</p>
           </div>
@@ -59,8 +59,10 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                   key={progress.resourceId}
                 >
                   <span className="relative z-10 flex items-center justify-between text-sm">
-                    <span>{progress.resourceTitle}</span>
-                    <span className="text-xs text-gray-400">
+                    <span className="inline-grid">
+                    <span className={'truncate'}>{progress.resourceTitle}</span>
+                    </span>
+                    <span className="text-xs text-gray-400 shrink-0 ml-1.5">
                       {progress.done} / {progress.total}
                     </span>
                   </span>
