@@ -28,7 +28,7 @@ For example, installing a package using vcpkg:
 ./vcpkg install boost:x64-windows
 ```
 
-##C++ Archive Network (cppan)
+## C++ Archive Network (cppan)
 
 [cppan](https://cppan.org/) is a package manager and software repository for C++ developers, simplifying the process of managing and distributing C++ libraries and tools. It's now part of [build2](https://build2.org/), a build toolchain that provides a package manager.
 
