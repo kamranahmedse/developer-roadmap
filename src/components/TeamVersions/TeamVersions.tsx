@@ -44,6 +44,8 @@ export function TeamVersions(props: TeamVersionsProps) {
   const [selectedTeamVersion, setSelectedTeamVersion] = useState<
     TeamVersionsResponse[0] | null
   >(null);
+  const [shouldStartLoading, setShouldStartLoading] = useState(false);
+
   let shouldShowAvatar = true;
   const selectedAvatar = selectedTeamVersion
     ? selectedTeamVersion.team.avatar
@@ -88,6 +90,7 @@ export function TeamVersions(props: TeamVersionsProps) {
     if (teamId) {
       const foundVersion = response.find((v) => v.team._id === teamId) || null;
       setSelectedTeamVersion(foundVersion);
+      setShouldStartLoading(true);
     }
 
     setTimeout(() => {
@@ -110,7 +113,10 @@ export function TeamVersions(props: TeamVersionsProps) {
   }
 
   useEffect(() => {
-    clearResourceProgress();
+    if (!shouldStartLoading) {
+      return;
+    }
+    clearResourceProgress('removed');
     if (!selectedTeamVersion) {
       deleteUrlParam('t');
       renderResourceProgress(resourceType, resourceId).then();
@@ -125,6 +131,7 @@ export function TeamVersions(props: TeamVersionsProps) {
       });
       refreshProgressCounters();
     });
+    setShouldStartLoading(true);
   }, [selectedTeamVersion]);
 
   if (!teamVersions.length) {
@@ -204,6 +211,7 @@ export function TeamVersions(props: TeamVersionsProps) {
                   onClick={() => {
                     setSelectedTeamVersion(team);
                     setIsDropdownOpen(false);
+                    setShouldStartLoading(true);
                   }}
                 >
                   <div className="flex w-full items-center justify-between">

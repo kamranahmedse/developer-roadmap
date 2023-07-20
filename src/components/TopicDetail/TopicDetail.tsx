@@ -9,9 +9,9 @@ import { useToggleTopic } from '../../hooks/use-toggle-topic';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import {
-  isTopicDone,
   refreshProgressCounters,
   renderTopicProgress,
+  ResourceProgressType,
   ResourceType,
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
@@ -35,6 +35,7 @@ export function TopicDetail() {
 
   // Details of the currently loaded topic
   const [topicId, setTopicId] = useState('');
+  const [resourceStatus, setResourceStatus] = useState<ResourceProgressType>('pending')
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
 
@@ -52,7 +53,7 @@ export function TopicDetail() {
   // Toggle topic is available even if the component UI is not active
   // This is used on the best practice screen where we have the checkboxes
   // to mark the topic as done/undone.
-  useToggleTopic(({ topicId, resourceType, resourceId }) => {
+  useToggleTopic(({ topicId, resourceType, resourceId, status }) => {
     if (isGuest) {
       showLoginPopup();
       return;
@@ -60,18 +61,14 @@ export function TopicDetail() {
 
     pageProgressMessage.set('Updating');
 
-    // Toggle the topic status
-    isTopicDone({ topicId, resourceId, resourceType })
-      .then((oldIsDone) =>
-        updateResourceProgressApi(
-          {
-            topicId,
-            resourceId,
-            resourceType,
-          },
-          oldIsDone ? 'pending' : 'done'
-        )
-      )
+    updateResourceProgressApi(
+      {
+        topicId,
+        resourceId,
+        resourceType,
+      },
+      status === 'done' ? 'pending' : 'done'
+    )
       .then(({ done = [] }) => {
         renderTopicProgress(
           topicId,
@@ -86,10 +83,11 @@ export function TopicDetail() {
       .finally(() => {
         pageProgressMessage.set('');
       });
+    return;
   });
 
   // Load the topic detail when the topic detail is active
-  useLoadTopic(({ topicId, resourceType, resourceId }) => {
+  useLoadTopic(({ topicId, resourceType, resourceId, status }) => {
     setIsLoading(true);
     setIsActive(true);
     sponsorHidden.set(true);
@@ -98,6 +96,7 @@ export function TopicDetail() {
     setTopicId(topicId);
     setResourceType(resourceType);
     setResourceId(resourceId);
+    setResourceStatus(status);
 
     const topicPartial = topicId.replaceAll(':', '/');
     const topicUrl =
@@ -177,6 +176,7 @@ export function TopicDetail() {
                 topicId={topicId}
                 resourceId={resourceId}
                 resourceType={resourceType}
+                status={resourceStatus}
                 onClose={() => {
                   setIsActive(false);
                   setIsContributing(false);
@@ -206,7 +206,8 @@ export function TopicDetail() {
             {/* Contribution */}
             <div className="mt-8 flex-1 border-t">
               <p class="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
-                Help others learn by submitting links to learn more about this topic{' '}
+                Help others learn by submitting links to learn more about this
+                topic{' '}
               </p>
               <button
                 onClick={() => {

@@ -7,7 +7,6 @@ import { isLoggedIn } from '../../lib/jwt';
 import {
   ResourceProgressType,
   ResourceType,
-  getTopicStatus,
   refreshProgressCounters,
   renderTopicProgress,
   updateResourceProgress,
@@ -19,6 +18,7 @@ type TopicProgressButtonProps = {
   topicId: string;
   resourceId: string;
   resourceType: ResourceType;
+  status: ResourceProgressType;
 
   onClose: () => void;
 };
@@ -32,11 +32,12 @@ const statusColors: Record<ResourceProgressType, string> = {
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose } = props;
+  const { topicId, resourceId, resourceType, status, onClose } = props;
+  console.log(status)
 
   const toast = useToast();
-  const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
-  const [progress, setProgress] = useState<ResourceProgressType>('pending');
+  const [isUpdatingProgress, setIsUpdatingProgress] = useState(false);
+  const [progress, setProgress] = useState<ResourceProgressType>(status);
   const [showChangeStatus, setShowChangeStatus] = useState(false);
 
   const changeStatusRef = useRef<HTMLDivElement>(null);
@@ -46,20 +47,6 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   });
 
   const isGuest = useMemo(() => !isLoggedIn(), []);
-
-  useEffect(() => {
-    if (!topicId || !resourceId || !resourceType) {
-      return;
-    }
-
-    setIsUpdatingProgress(true);
-    getTopicStatus({ topicId, resourceId, resourceType })
-      .then((status) => {
-        setIsUpdatingProgress(false);
-        setProgress(status);
-      })
-      .catch(console.error);
-  }, [topicId, resourceId, resourceType]);
 
   // Mark as done
   useKeydown(

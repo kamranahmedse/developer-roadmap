@@ -228,8 +228,18 @@ export class Renderer {
     }
 
     e.stopImmediatePropagation();
+    let status: ResourceProgressType = 'pending';
+    if (targetGroup.classList.contains('done')) {
+      status = 'done';
+    } else if (targetGroup.classList.contains('learning')) {
+      status = 'learning';
+    } else if (targetGroup.classList.contains('skipped')) {
+      status = 'skipped';
+    } else if (targetGroup.classList.contains('removed')) {
+      status = 'removed';
+    }
 
-    if (targetGroup.classList.contains('removed')) {
+    if (status === 'removed') {
       return;
     }
 
@@ -263,6 +273,7 @@ export class Renderer {
             topicId: groupId.replace('check:', ''),
             resourceType: this.resourceType,
             resourceId: this.resourceId,
+            status,
           },
         })
       );
@@ -300,6 +311,7 @@ export class Renderer {
           topicId: normalizedGroupId,
           resourceId: this.resourceId,
           resourceType: this.resourceType,
+          status,
         },
       })
     );

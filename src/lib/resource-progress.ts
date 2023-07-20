@@ -4,42 +4,18 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
-export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped' | 'removed';
+export type ResourceProgressType =
+  | 'done'
+  | 'learning'
+  | 'pending'
+  | 'skipped'
+  | 'removed';
 
 type TopicMeta = {
   topicId: string;
   resourceType: ResourceType;
   resourceId: string;
 };
-
-export async function isTopicDone(topic: TopicMeta): Promise<boolean> {
-  const { topicId, resourceType, resourceId } = topic;
-  const { done = [] } =
-    (await getResourceProgress(resourceType, resourceId)) || {};
-
-  return done?.includes(topicId);
-}
-
-export async function getTopicStatus(
-  topic: TopicMeta
-): Promise<ResourceProgressType> {
-  const { topicId, resourceType, resourceId } = topic;
-  const progressResult = await getResourceProgress(resourceType, resourceId);
-
-  if (progressResult?.done?.includes(topicId)) {
-    return 'done';
-  }
-
-  if (progressResult?.learning?.includes(topicId)) {
-    return 'learning';
-  }
-
-  if (progressResult?.skipped?.includes(topicId)) {
-    return 'skipped';
-  }
-
-  return 'pending';
-}
 
 export async function updateResourceProgress(
   topic: TopicMeta,
@@ -63,14 +39,6 @@ export async function updateResourceProgress(
     throw new Error(error?.message || 'Something went wrong');
   }
 
-  setResourceProgress(
-    resourceType,
-    resourceId,
-    response.done,
-    response.learning,
-    response.skipped
-  );
-
   return response;
 }
 
@@ -87,35 +55,7 @@ export async function getResourceProgress(
     };
   }
 
-  const progressKey = `${resourceType}-${resourceId}-progress`;
-  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
-
-  const rawIsFavorite = localStorage.getItem(isFavoriteKey);
-  const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
-
-  const rawProgress = localStorage.getItem(progressKey);
-  const progress = JSON.parse(rawProgress || 'null');
-
-  const progressTimestamp = progress?.timestamp;
-  const diff = new Date().getTime() - parseInt(progressTimestamp || '0', 10);
-  const isProgressExpired = diff > 15 * 60 * 1000; // 15 minutes
-
-  if (!progress || isProgressExpired) {
-    return loadFreshProgress(resourceType, resourceId);
-  }
-
-  // Dispatch event to update favorite status in the MarkFavorite component
-  window.dispatchEvent(
-    new CustomEvent('mark-favorite', {
-      detail: {
-        resourceType,
-        resourceId,
-        isFavorite
-      }
-    })
-  );
-
-  return progress;
+  return loadFreshProgress(resourceType, resourceId);
 }
 
 async function loadFreshProgress(
@@ -138,16 +78,9 @@ async function loadFreshProgress(
       done: [],
       learning: [],
       skipped: [],
+      isFavorite: false,
     };
   }
-
-  setResourceProgress(
-    resourceType,
-    resourceId,
-    response?.done || [],
-    response?.learning || [],
-    response?.skipped || [],
-  );
 
   // Dispatch event to update favorite status in the MarkFavorite component
   window.dispatchEvent(
@@ -155,30 +88,12 @@ async function loadFreshProgress(
       detail: {
         resourceType,
         resourceId,
-        isFavorite: response.isFavorite
-      }
+        isFavorite: response.isFavorite,
+      },
     })
   );
 
   return response;
-}
-
-export function setResourceProgress(
-  resourceType: 'roadmap' | 'best-practice',
-  resourceId: string,
-  done: string[],
-  learning: string[],
-  skipped: string[],
-): void {
-  localStorage.setItem(
-    `${resourceType}-${resourceId}-progress`,
-    JSON.stringify({
-      done,
-      learning,
-      skipped,
-      timestamp: new Date().getTime(),
-    })
-  );
 }
 
 export function renderTopicProgress(
@@ -238,10 +153,10 @@ export function renderTopicProgress(
   });
 }
 
-export function clearResourceProgress() {
-  const clickableElements = document.querySelectorAll('.clickable-group')
+export function clearResourceProgress(progress: ResourceProgressType) {
+  const clickableElements = document.querySelectorAll('.clickable-group');
   for (const clickableElement of clickableElements) {
-    clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
+    clickableElement.classList.remove(progress);
   }
 }
 
@@ -304,17 +219,21 @@ export function refreshProgressCounters() {
     '.clickable-group.removed'
   ).length;
   const totalItems =
-    totalClickable - externalLinks - roadmapSwitchers - checkBoxes - totalRemoved;
+    totalClickable -
+    externalLinks -
+    roadmapSwitchers -
+    checkBoxes -
+    totalRemoved;
 
   const totalDone =
     document.querySelectorAll('.clickable-group.done').length -
     totalCheckBoxesDone;
-  const totalLearning = document.querySelectorAll(
-    '.clickable-group.learning'
-  ).length - totalCheckBoxesLearning;
-  const totalSkipped = document.querySelectorAll(
-    '.clickable-group.skipped'
-  ).length - totalCheckBoxesSkipped;
+  const totalLearning =
+    document.querySelectorAll('.clickable-group.learning').length -
+    totalCheckBoxesLearning;
+  const totalSkipped =
+    document.querySelectorAll('.clickable-group.skipped').length -
+    totalCheckBoxesSkipped;
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {

@@ -20,12 +20,11 @@ export function MarkFavorite({
   favorite,
   className,
 }: MarkFavoriteType) {
-  const localStorageKey = `${resourceType}-${resourceId}-favorite`;
 
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isFavorite, setIsFavorite] = useState(
-    favorite ?? localStorage.getItem(localStorageKey) === '1'
+    favorite || false
   );
 
   async function toggleFavoriteHandler(e: Event) {
@@ -82,7 +81,6 @@ export function MarkFavorite({
       } = (e as CustomEvent).detail;
       if (id === resourceId && type === resourceType) {
         setIsFavorite(fav);
-        localStorage.setItem(localStorageKey, fav ? '1' : '0');
       }
     };
 

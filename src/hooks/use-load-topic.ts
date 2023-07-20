@@ -1,21 +1,26 @@
 import { useEffect } from 'preact/hooks';
-import type { ResourceType } from '../lib/resource-progress';
+import type {
+  ResourceProgressType,
+  ResourceType,
+} from '../lib/resource-progress';
 
 type CallbackType = (data: {
   resourceType: ResourceType;
   resourceId: string;
   topicId: string;
+  status: ResourceProgressType;
 }) => void;
 
 export function useLoadTopic(callback: CallbackType) {
   useEffect(() => {
     function handleTopicClick(e: any) {
-      const { resourceType, resourceId, topicId } = e.detail;
-
+      const { resourceType, resourceId, topicId, status } = e.detail;
+      console.log('handleTopicClick', e.detail);
       callback({
         resourceType,
         resourceId,
         topicId,
+        status,
       });
     }
 
