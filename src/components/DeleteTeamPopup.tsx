@@ -4,6 +4,7 @@ import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import { useTeamId } from '../hooks/use-team-id';
 import { useOutsideClick } from '../hooks/use-outside-click';
 import { useKeydown } from '../hooks/use-keydown';
+import { useToast } from '../hooks/use-toast';
 
 type DeleteTeamPopupProps = {
   onClose: () => void;
@@ -12,6 +13,7 @@ type DeleteTeamPopupProps = {
 export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
   const { onClose } = props;
 
+  const toast = useToast();
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const inputEl = useRef<HTMLInputElement>(null);
 
@@ -53,6 +55,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
       return;
     }
 
+    toast.success('Team deleted successfully');
     window.location.href = '/account';
   };
 
@@ -72,9 +75,9 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
             ref={popupBodyEl}
             class="popup-body relative rounded-lg bg-white p-4 shadow"
           >
-            <p>
-              This will permanently delete your account and all your associated
-              data including your progress.
+            <h2 class="text-2xl font-semibold text-black">Delete Team</h2>
+            <p className="text-gray-500">
+              This will permanently delete your team and all associated data.
             </p>
 
             <p class="-mb-2 mt-3 text-base font-medium text-black">
