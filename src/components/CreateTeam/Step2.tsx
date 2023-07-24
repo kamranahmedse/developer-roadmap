@@ -1,5 +1,6 @@
-import { RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
+import {RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
 import type { TeamDocument } from './CreateTeamForm';
+import { useState } from 'preact/hooks';
 
 type Step2Props = {
   team: TeamDocument;
@@ -12,6 +13,7 @@ type Step2Props = {
 export function Step2(props: Step2Props) {
   const { team, onBack, onNext, teamResourceConfig, setTeamResourceConfig } =
     props;
+  const [showSelectRoadmapModal, setShowSelectRoadmapModal] = useState(false);
 
   return (
     <>
