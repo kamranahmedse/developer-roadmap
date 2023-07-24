@@ -79,7 +79,7 @@ export function TeamDropdown() {
   if (
     !user?.email.endsWith('@insightpartners.com') &&
     !user?.email.endsWith('@roadmap.sh') &&
-    !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com'].includes(user?.email!)
+    !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com', 'stephen.chetcuti@gmail.com'].includes(user?.email!)
   ) {
     return null;
   }
