@@ -150,7 +150,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
             No roadmaps selected.
           </span>
           <p className={'text-sm text-gray-400'}>
-            Please search and add roadmaps from above
+            Please search and add roadmaps from below
           </p>
           <div className="mt-4 flex justify-center">
             <button
