@@ -1,8 +1,6 @@
 import { useEffect, useState } from 'preact/hooks';
-import { SearchSelector } from '../SearchSelector';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import SearchIcon from '../../icons/search.svg';
 import PlusIcon from '../../icons/plus.svg';
 import PlusWhiteIcon from '../../icons/plus-white.svg';
 import { pageProgressMessage } from '../../stores/page';
