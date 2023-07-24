@@ -2,9 +2,9 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import type { TeamResourceConfig } from './RoadmapSelector';
+import CloseIcon from '../../icons/close.svg';
 
 export type SelectRoadmapModalProps = {
   teamId: string;
@@ -59,6 +59,14 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
           ref={popupBodyEl}
           class="popup-body relative mt-4 overflow-hidden rounded-lg bg-white shadow"
         >
+          <button
+            type="button"
+            className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+            onClick={onClose}
+          >
+            <img src={CloseIcon} className="h-4 w-4" />
+            <span class="sr-only">Close modal</span>
+          </button>
           <input
             type="text"
             placeholder="Search roadmaps"
@@ -66,57 +74,38 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             value={searchText}
             onInput={(e) => setSearchText((e.target as HTMLInputElement).value)}
           />
-
-          <div className="flex min-h-[20vh] flex-wrap gap-2.5 border-t p-4">
-            {searchResults.map((roadmap) => {
-              const isSelected = teamResourceConfig.find(
-                (r) => r.resourceId === roadmap.id
-              );
-              return (
-                <div
-                  className={`flex items-center rounded-md border ${
-                    isSelected && 'bg-gray-100'
-                  }`}
-                >
-                  <span className="px-4">{roadmap.title}</span>
-                  <button
-                    className="flex h-8 w-8 items-center justify-center border-l p-1 leading-none hover:bg-gray-100"
-                    onClick={() => {
-                      if (isSelected) {
-                        onRoadmapRemove(roadmap.id);
-                      } else {
-                        onRoadmapAdd(roadmap.id);
-                      }
-                    }}
+          <div className="min-h-[200px]">
+            <div className="flex flex-wrap items-center gap-2.5 border-t p-4">
+              {searchResults.map((roadmap) => {
+                const isSelected = teamResourceConfig.find(
+                  (r) => r.resourceId === roadmap.id
+                );
+                return (
+                  <div
+                    className={`flex items-center rounded-md border ${
+                      isSelected && 'bg-gray-100'
+                    }`}
                   >
-                    {isSelected ? '-' : '+'}
-                  </button>
-                </div>
-              );
-            })}
-            {searchResults.length === 0 && (
-              <div className="text-gray-400">No roadmaps found</div>
-            )}
-          </div>
-
-          <div className="flex items-center justify-between gap-2 border-t">
-            <button
-              className="px-4 py-2 hover:bg-gray-100"
-              onClick={() => {
-                onClose();
-              }}
-            >
-              Close
-            </button>
-
-            <button
-              className="border-l px-4 py-2 hover:bg-gray-100"
-              onClick={() => {
-                onClose();
-              }}
-            >
-              Apply Selection
-            </button>
+                    <span className="px-4">{roadmap.title}</span>
+                    <button
+                      className="flex h-8 w-8 items-center justify-center border-l p-1 leading-none hover:bg-gray-100"
+                      onClick={() => {
+                        if (isSelected) {
+                          onRoadmapRemove(roadmap.id);
+                        } else {
+                          onRoadmapAdd(roadmap.id);
+                        }
+                      }}
+                    >
+                      {isSelected ? '-' : '+'}
+                    </button>
+                  </div>
+                );
+              })}
+              {searchResults.length === 0 && (
+                <div className="text-gray-400">No roadmaps found</div>
+              )}
+            </div>
           </div>
         </div>
       </div>
