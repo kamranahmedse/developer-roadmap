@@ -267,7 +267,6 @@ export function UpdateTeamForm() {
           {isDeleting && (
             <DeleteTeamPopup
               onClose={() => {
-                toast.success('Team deleted successfully');
                 setIsDeleting(false);
               }}
             />
