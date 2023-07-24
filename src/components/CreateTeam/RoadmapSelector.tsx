@@ -58,7 +58,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
     pageProgressMessage.set(`Deleting resource`);
     const { error, response } = await httpPut<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${team._id
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
+        team._id
       }`,
       {
         resourceId: roadmapId,
@@ -89,7 +90,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
     pageProgressMessage.set(`Adding roadmap to team`);
     const { error, response } = await httpPut<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-update-team-resource-config/${team._id
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-team-resource-config/${
+        team._id
       }`,
       {
         teamId: team._id,
@@ -138,8 +140,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
             });
           }}
           onRoadmapRemove={(roadmapId) => {
-            onRemove(roadmapId).finally(() => {
-            });
+            onRemove(roadmapId).finally(() => {});
           }}
         />
       )}
@@ -154,14 +155,10 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           </p>
           <div className="mt-4 flex justify-center">
             <button
-              className="group bg-black justify-center rounded-md px-4 py-2 flex items-center gap-2 transition-opacity hover:opacity-70"
+              className="group flex items-center justify-center gap-2 rounded-md bg-black px-4 py-2 transition-opacity hover:opacity-70"
               onClick={() => setShowSelectRoadmapModal(true)}
             >
-              <img
-                alt="add"
-                src={PlusWhiteIcon}
-                className="h-5 w-5"
-              />
+              <img alt="add" src={PlusWhiteIcon} className="h-5 w-5" />
               <span className="text-sm text-white focus:outline-none">
                 Add Roadmaps
               </span>
