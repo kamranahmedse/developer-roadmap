@@ -87,10 +87,10 @@ export function Step0(props: Step0Props) {
                 validTeamType.value === selectedTeamType ? 'opacity-100' : ''
               }`}
             />
-            <span className="mb-1.5 block text-2xl font-bold">
+            <span className="mb-2 block text-2xl font-bold">
               {validTeamType.label}
             </span>
-            <span className="text-sm text-gray-500">
+            <span className="text-sm text-gray-500 leading-[21px]">
               {validTeamType.description}
             </span>
           </button>
