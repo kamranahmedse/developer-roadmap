@@ -155,12 +155,6 @@ export function TeamDropdown() {
                         Invite
                       </span>
                     )}
-
-                    {team.roadmaps.length === 0 && (
-                      <span className="flex rounded-md bg-gray-500 px-2 text-xs text-white">
-                        Draft
-                      </span>
-                    )}
                   </a>
                 </li>
               );

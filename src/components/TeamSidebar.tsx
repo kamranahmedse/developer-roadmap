@@ -8,13 +8,14 @@ import MapIcon from '../icons/map.svg';
 import GroupIcon from '../icons/group.svg';
 import { useState } from 'preact/hooks';
 import { useStore } from '@nanostores/preact';
-import { $canManageCurrentTeam } from '../stores/team';
+import { $canManageCurrentTeam, $currentTeam } from '../stores/team';
+import { WarningIcon } from './ReactIcons/WarningIcon';
 
 export const TeamSidebar: FunctionalComponent<{
   activePageId: string;
 }> = ({ activePageId, children }) => {
   const [menuShown, setMenuShown] = useState(false);
-  const canManageCurrentTeam = useStore($canManageCurrentTeam);
+  const currentTeam = useStore($currentTeam);
 
   const { teamId } = useTeamId();
 
@@ -30,6 +31,7 @@ export const TeamSidebar: FunctionalComponent<{
       href: `/team/roadmaps?t=${teamId}`,
       id: 'roadmaps',
       icon: MapIcon,
+      hasWarning: currentTeam?.roadmaps?.length === 0,
     },
     {
       title: 'Members',
@@ -120,13 +122,21 @@ export const TeamSidebar: FunctionalComponent<{
                           : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
                       }`}
                     >
-                      <span class="flex flex-grow items-center">
-                        <img
-                          alt="menu icon"
-                          src={sidebarLink.icon}
-                          className="mr-2 h-4 w-4"
-                        />
-                        {sidebarLink.title}
+                      <span class="flex flex-grow items-center justify-between">
+                        <span className="flex">
+                          <img
+                            alt="menu icon"
+                            src={sidebarLink.icon}
+                            className="mr-2 h-4 w-4"
+                          />
+                          {sidebarLink.title}
+                        </span>
+                        {sidebarLink.hasWarning && (
+                          <span class="relative mr-1 flex items-center">
+                            <span class="relative rounded-full bg-red-200 p-1 text-xs" />
+                            <span class="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-red-400 p-1 text-xs" />
+                          </span>
+                        )}
                       </span>
                     </a>
                   </li>
