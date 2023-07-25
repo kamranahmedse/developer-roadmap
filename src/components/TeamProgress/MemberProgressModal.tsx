@@ -6,9 +6,18 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
-import { renderTopicProgress } from '../../lib/resource-progress';
+import {
+  ResourceProgressType,
+  ResourceType,
+  renderTopicProgress,
+  updateResourceProgress,
+} from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
+import { useAuth } from '../../hooks/use-auth';
+import { pageProgressMessage } from '../../stores/page';
+import { ProgressHint } from './ProgressHint';
+import QuestionIcon from '../../icons/question.svg';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -27,10 +36,13 @@ type MemberProgressResponse = {
 
 export function MemberProgressModal(props: ProgressMapProps) {
   const { resourceId, member, resourceType, teamId, onClose } = props;
+  const user = useAuth();
+  const isCurrentUser = user?.email === member.email;
 
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
 
+  const [showProgressHint, setShowProgressHint] = useState(false);
   const [memberProgress, setMemberProgress] =
     useState<MemberProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
@@ -75,10 +87,16 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   useKeydown('Escape', () => {
+    if (showProgressHint) {
+      return;
+    }
     onClose();
   });
 
   useOutsideClick(popupBodyEl, () => {
+    if (showProgressHint) {
+      return;
+    }
     onClose();
   });
 
@@ -119,10 +137,128 @@ export function MemberProgressModal(props: ProgressMapProps) {
       });
   }, []);
 
+  function updateTopicStatus(topicId: string, newStatus: ResourceProgressType) {
+    if (!resourceId || !resourceType || !isCurrentUser) {
+      return;
+    }
+
+    pageProgressMessage.set('Updating progress');
+    updateResourceProgress(
+      {
+        resourceId: resourceId,
+        resourceType: resourceType as ResourceType,
+        topicId,
+      },
+      newStatus
+    )
+      .then(() => {
+        renderTopicProgress(topicId, newStatus);
+        getMemberProgress(teamId, member._id, resourceType, resourceId).then(
+          (data) => {
+            setMemberProgress(data);
+          }
+        );
+      })
+      .catch((err) => {
+        alert('Something went wrong, please try again.');
+        console.error(err);
+      })
+      .finally(() => {
+        pageProgressMessage.set('');
+      });
+
+    return;
+  }
+
+  async function handleRightClick(e: MouseEvent) {
+    const targetGroup = (e.target as HTMLElement)?.closest('g');
+    if (!targetGroup) {
+      return;
+    }
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
+    }
+
+    if (targetGroup.classList.contains('removed')) {
+      return;
+    }
+
+    e.preventDefault();
+    const isCurrentStatusDone = targetGroup.classList.contains('done');
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+    updateTopicStatus(
+      normalizedGroupId,
+      !isCurrentStatusDone ? 'done' : 'pending'
+    );
+  }
+
+  async function handleClick(e: MouseEvent) {
+    const targetGroup = (e.target as HTMLElement)?.closest('g');
+    if (!targetGroup) {
+      return;
+    }
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
+    }
+
+    if (targetGroup.classList.contains('removed')) {
+      return;
+    }
+
+    e.preventDefault();
+    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+
+    const isCurrentStatusLearning = targetGroup.classList.contains('learning');
+    const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
+
+    if (e.shiftKey) {
+      e.preventDefault();
+      updateTopicStatus(
+        normalizedGroupId,
+        !isCurrentStatusLearning ? 'learning' : 'pending'
+      );
+      return;
+    }
+
+    if (e.altKey) {
+      e.preventDefault();
+      updateTopicStatus(
+        normalizedGroupId,
+        !isCurrentStatusSkipped ? 'skipped' : 'pending'
+      );
+
+      return;
+    }
+  }
+
+  useEffect(() => {
+    if (!isCurrentUser || !containerEl.current) {
+      return;
+    }
+
+    containerEl.current?.addEventListener('contextmenu', handleRightClick);
+    containerEl.current?.addEventListener('click', handleClick);
+
+    return () => {
+      containerEl.current?.removeEventListener('contextmenu', handleRightClick);
+      containerEl.current?.removeEventListener('click', handleClick);
+    };
+  }, []);
+
+  const removedTopics = memberProgress?.removed || [];
+  const memberDone =
+    memberProgress?.done.filter((id) => !removedTopics.includes(id)).length ||
+    0;
+  const memberLearning =
+    memberProgress?.learning.filter((id) => !removedTopics.includes(id))
+      .length || 0;
+  const memberSkipped =
+    memberProgress?.skipped.filter((id) => !removedTopics.includes(id))
+      .length || 0;
+
   const currProgress = member.progress.find((p) => p.resourceId === resourceId);
-  const memberDone = currProgress?.done || 0;
-  const memberLearning = currProgress?.learning || 0;
-  const memberSkipped = currProgress?.skipped || 0;
   const memberTotal = currProgress?.total || 0;
 
   const progressPercentage = Math.round((memberDone / memberTotal) * 100);
@@ -134,6 +270,13 @@ export function MemberProgressModal(props: ProgressMapProps) {
           ref={popupBodyEl}
           class="popup-body relative rounded-lg bg-white shadow"
         >
+          {showProgressHint && (
+            <ProgressHint
+              onClose={() => {
+                setShowProgressHint(false);
+              }}
+            />
+          )}
           <div className="p-4">
             <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
               <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
@@ -165,44 +308,51 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 </a>
               </p>
             </div>
-            <p class="-mx-4 mb-3 flex items-center justify-start border-b border-t py-2 text-sm sm:hidden px-4">
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
-                <span>{progressPercentage}</span>% Done
-              </span>
+            <div class="-mx-4 mb-3 flex items-center justify-between border-b border-t py-2 text-sm">
+              <div className="flex items-center pl-4 sm:hidden">
+                <span>
+                  <span>{memberDone}</span> of <span>{memberTotal}</span> done
+                </span>
+              </div>
+              <div className="hidden items-center pl-4 sm:flex">
+                <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+                  <span>{progressPercentage}</span>% Done
+                </span>
 
-              <span>
-                <span>{memberDone}</span> of <span>{memberTotal}</span> done
-              </span>
-            </p>
-            <p class="-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex">
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
-                <span>{progressPercentage}</span>% Done
-              </span>
+                <span>
+                  <span>{memberDone}</span> completed
+                </span>
+                <span class="mx-1.5 text-gray-400">·</span>
+                <span>
+                  <span data-progress-learning="">{memberLearning}</span> in
+                  progress
+                </span>
 
-              <span>
-                <span>{memberDone}</span> completed
-              </span>
-              <span class="mx-1.5 text-gray-400">·</span>
-              <span>
-                <span data-progress-learning="">{memberLearning}</span> in
-                progress
-              </span>
+                {memberSkipped > 0 && (
+                  <>
+                    <span class="mx-1.5 text-gray-400">·</span>
+                    <span>
+                      <span data-progress-skipped="">{memberSkipped}</span>{' '}
+                      skipped
+                    </span>
+                  </>
+                )}
 
-              {memberSkipped > 0 && (
-                <>
-                  <span class="mx-1.5 text-gray-400">·</span>
-                  <span>
-                    <span data-progress-skipped="">{memberSkipped}</span>{' '}
-                    skipped
-                  </span>
-                </>
-              )}
-
-              <span class="mx-1.5 text-gray-400">·</span>
-              <span>
-                <span data-progress-total="">{memberTotal}</span> Total
-              </span>
-            </p>
+                <span class="mx-1.5 text-gray-400">·</span>
+                <span>
+                  <span data-progress-total="">{memberTotal}</span> Total
+                </span>
+              </div>
+              <button
+                onClick={() => {
+                  setShowProgressHint(true);
+                }}
+                class="mr-4 flex items-center gap-1 text-sm font-medium text-black opacity-60 transition-opacity hover:opacity-100"
+              >
+                <img src={QuestionIcon} className="h-4 w-4" />
+                Track Progress
+              </button>
+            </div>
           </div>
 
           <div ref={containerEl} className="px-4 pb-2"></div>

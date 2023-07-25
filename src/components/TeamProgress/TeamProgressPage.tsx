@@ -9,7 +9,6 @@ import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
 import { setUrlParams } from '../../lib/browser';
 import { getUrlParams } from '../../lib/browser';
-import { $toastMessage } from '../../stores/toast';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -78,10 +77,12 @@ export function TeamProgressPage() {
       return;
     }
 
-    getTeamProgress().finally(() => {
-      pageProgressMessage.set('');
-      setIsLoading(false);
-    });
+    getTeamProgress().then(
+      () => {
+        pageProgressMessage.set('');
+        setIsLoading(false);
+      }
+    );
   }, [teamId]);
 
   if (isLoading) {
@@ -134,11 +135,10 @@ export function TeamProgressPage() {
       <div className="flex items-center gap-2">
         {groupingTypes.map((grouping) => (
           <button
-            className={`rounded-md border p-1 px-2 text-sm ${
-              selectedGrouping === grouping.value
-                ? ' border-gray-400 bg-gray-200 '
-                : ''
-            }`}
+            className={`rounded-md border p-1 px-2 text-sm ${selectedGrouping === grouping.value
+              ? ' border-gray-400 bg-gray-200 '
+              : ''
+              }`}
             onClick={() => setSelectedGrouping(grouping.value)}
           >
             {grouping.label}
