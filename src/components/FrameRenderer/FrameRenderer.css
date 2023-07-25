@@ -122,3 +122,7 @@ svg .removed g, svg .removed circle, svg .removed path {
     height: 100%;
   }
 }
+
+/*.clickable-group:hover {*/
+/*  cursor: url(/images/cursors/add.svg) 5 5, move;*/
+/*}*/
