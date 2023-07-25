@@ -1,11 +1,12 @@
 import { useEffect, useState } from 'preact/hooks';
-import { SearchSelector } from '../SearchSelector';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import SearchIcon from '../../icons/search.svg';
+import PlusIcon from '../../icons/plus.svg';
+import PlusWhiteIcon from '../../icons/plus-white.svg';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
+import { SelectRoadmapModal } from './SelectRoadmapModal';
 
 export type TeamResourceConfig = {
   resourceId: string;
@@ -22,6 +23,7 @@ type RoadmapSelectorProps = {
 export function RoadmapSelector(props: RoadmapSelectorProps) {
   const { team, teamResourceConfig = [], setTeamResourceConfig } = props;
 
+  const [showSelectRoadmapModal, setShowSelectRoadmapModal] = useState(false);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [error, setError] = useState<string>('');
@@ -126,42 +128,42 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           }
         />
       )}
-
-      <SearchSelector
-        placeholder={`Search Roadmaps ..`}
-        onSelect={(option) => {
-          const roadmapId = option.value;
-          addTeamResource(roadmapId).finally(() => {
-            pageProgressMessage.set('');
-          });
-        }}
-        options={allRoadmaps
-          .filter((roadmap) => {
-            return !teamResourceConfig
-              .map((c) => c.resourceId)
-              .includes(roadmap.id);
-          })
-          .map((roadmap) => ({
-            value: roadmap.id,
-            label: roadmap.title,
-          }))}
-        searchInputId={'roadmap-input'}
-        inputClassName="mt-2 block w-full rounded-md border px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-      />
+      {showSelectRoadmapModal && (
+        <SelectRoadmapModal
+          onClose={() => setShowSelectRoadmapModal(false)}
+          teamResourceConfig={teamResourceConfig}
+          allRoadmaps={allRoadmaps}
+          teamId={team?._id!}
+          onRoadmapAdd={(roadmapId) => {
+            addTeamResource(roadmapId).finally(() => {
+              pageProgressMessage.set('');
+            });
+          }}
+          onRoadmapRemove={(roadmapId) => {
+            onRemove(roadmapId).finally(() => {});
+          }}
+        />
+      )}
 
       {!teamResourceConfig.length && (
         <div className="mt-4 rounded-md border px-4 py-12 text-center text-sm text-gray-700">
-          <img
-            alt={'search'}
-            src={SearchIcon}
-            className={'mx-auto mb-5 h-[42px] w-[42px] opacity-10'}
-          />
           <span className="block text-lg font-semibold text-black">
             No roadmaps selected.
           </span>
           <p className={'text-sm text-gray-400'}>
-            Please search and add roadmaps from above
+            Please search and add roadmaps from below
           </p>
+          <div className="mt-4 flex justify-center">
+            <button
+              className="group flex items-center justify-center gap-2 rounded-md bg-black px-4 py-2 transition-opacity hover:opacity-70"
+              onClick={() => setShowSelectRoadmapModal(true)}
+            >
+              <img alt="add" src={PlusWhiteIcon} className="h-5 w-5" />
+              <span className="text-sm text-white focus:outline-none">
+                Add Roadmaps
+              </span>
+            </button>
+          </div>
         </div>
       )}
 
@@ -214,6 +216,19 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
               </div>
             );
           })}
+          <button
+            className="group flex min-h-[110px] flex-col items-center justify-center rounded-md border border-dashed border-gray-300 px-8 transition-colors hover:border-gray-600 hover:bg-gray-50"
+            onClick={() => setShowSelectRoadmapModal(true)}
+          >
+            <img
+              alt="add"
+              src={PlusIcon}
+              className="mb-1 h-6 w-6 opacity-20 transition-opacity group-hover:opacity-100"
+            />
+            <span className="text-sm text-gray-400 transition-colors focus:outline-none group-hover:text-black">
+              Add Roadmaps
+            </span>
+          </button>
         </div>
       )}
     </div>
