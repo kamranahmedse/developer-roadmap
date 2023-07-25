@@ -71,14 +71,11 @@ export function TeamProgressPage() {
       toast.error(error?.message || 'Failed to get team progress');
       return;
     }
-    const userProgress = response.find((member) => member.email === user?.email);
-    if (userProgress) {
-      const index = response.indexOf(userProgress);
-      response.splice(index, 1);
-      response.unshift(userProgress);
-    }
 
-    setTeamMembers(response);
+    const currentUserProgress = response.find((member) => member.email === user?.email)
+    const otherUserProgresses = response.filter(member => member.email !== user?.email);
+    const allUserProgresses = currentUserProgress ? [currentUserProgress, ...otherUserProgresses] : otherUserProgresses;
+    setTeamMembers(allUserProgresses);
   }
 
   useEffect(() => {
