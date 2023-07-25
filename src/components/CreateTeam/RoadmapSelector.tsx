@@ -6,6 +6,7 @@ import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
+import { NotDropdown } from './NotDropdown';
 
 export type TeamResourceConfig = {
   resourceId: string;
@@ -144,34 +145,14 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         />
       )}
 
-      <div
-        className="mt-3 flex cursor-text items-center justify-between rounded-md border border-gray-300 px-3 py-2.5 hover:border-gray-400/50 hover:bg-gray-50"
-        role="button"
-        onClick={() => {
-          setShowSelectRoadmapModal(true);
-        }}
-      >
-        {teamResourceConfig.length > 0 && (
-          <div className="flex flex-col">
-            <p className="mb-1.5 text-base font-medium text-gray-800">
-              {teamResourceConfig.length} roadmaps selected
-            </p>
-            <p className="text-sm text-gray-400">
-              Click to add or change selection
-            </p>
-          </div>
-        )}
-
-        {!teamResourceConfig.length && (
-          <div className="flex flex-col">
-            <p className="text-base text-gray-400">Click to select roadmaps</p>
-          </div>
-        )}
-
-        <img
-          alt={'roadmap'}
-          src={ChevronDownIcon}
-          className={'relative top-[1px] h-[17px] w-[17px] opacity-40'}
+      <div className="mt-3">
+        <NotDropdown
+          onClick={() => {
+            setShowSelectRoadmapModal(true);
+          }}
+          selectedCount={teamResourceConfig.length}
+          singularName={'roadmap'}
+          pluralName={'roadmaps'}
         />
       </div>
 

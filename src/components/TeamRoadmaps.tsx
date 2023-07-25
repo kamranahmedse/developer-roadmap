@@ -213,6 +213,19 @@ export function TeamRoadmaps() {
   return (
     <div>
       {addRoadmapModal}
+      <div className="mb-3 flex items-center justify-between">
+        <span className={'text-gray-400'}>
+          {resourceConfigs.length} roadmap(s) selected
+        </span>
+        {canManageCurrentTeam && (
+          <button
+            className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 underline hover:bg-gray-100 hover:text-gray-900"
+            onClick={() => setIsAddingRoadmap(true)}
+          >
+            Add / Remove Roadmaps
+          </button>
+        )}
+      </div>
       <div className={'grid grid-cols-1 gap-3 sm:grid-cols-2'}>
         {changingRoadmapId && (
           <UpdateTeamResourceModal
