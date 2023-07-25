@@ -163,8 +163,8 @@ export function TeamMembersPage() {
                       <MemberRoleBadge role={member.role} />
                     </span>
                     <div className="flex items-center">
-                      <h3 className="flex items-center font-medium">
-                        {member.name}
+                      <h3 className="inline-grid grid-cols-[auto_auto] items-center font-medium">
+                        <span className="truncate">{member.name}</span>
                         {member.userId === user?.id && (
                           <span className="ml-2 hidden text-xs font-normal text-blue-500 sm:inline">
                             You

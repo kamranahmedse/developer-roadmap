@@ -95,7 +95,7 @@ export function TeamDropdown() {
             {pendingTeamIds.length}
           </span>
         )}
-        <div className="flex items-center gap-2">
+        <div className="inline-grid grid-cols-[16px_auto] items-center gap-1.5 mr-1.5">
           {isLoading && <Spinner className="h-4 w-4" isDualRing={false} />}
           {!isLoading && (
             <img
@@ -149,7 +149,7 @@ export function TeamDropdown() {
                     className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                     href={`${pageLink}`}
                   >
-                    <span className="flex-grow truncate">{team.name}</span>
+                    <span className="flex-grow min-w-0 truncate">{team.name}</span>
                     {pendingTeamIds.includes(team._id) && (
                       <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
                         Invite

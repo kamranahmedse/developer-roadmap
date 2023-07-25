@@ -72,10 +72,17 @@ export function TeamProgressPage() {
       return;
     }
 
-    const currentUserProgress = response.find((member) => member.email === user?.email)
-    const otherUserProgresses = response.filter(member => member.email !== user?.email);
-    const allUserProgresses = currentUserProgress ? [currentUserProgress, ...otherUserProgresses] : otherUserProgresses;
-    setTeamMembers(allUserProgresses);
+    setTeamMembers(
+      response.sort((a, b) => {
+        if (a.email === user?.email) {
+          return -1;
+        }
+        if (b.email === user?.email) {
+          return 1;
+        }
+        return 0;
+      })
+    );
   }
 
   useEffect(() => {
@@ -139,10 +146,11 @@ export function TeamProgressPage() {
       <div className="flex items-center gap-2">
         {groupingTypes.map((grouping) => (
           <button
-            className={`rounded-md border p-1 px-2 text-sm ${selectedGrouping === grouping.value
-              ? ' border-gray-400 bg-gray-200 '
-              : ''
-              }`}
+            className={`rounded-md border p-1 px-2 text-sm ${
+              selectedGrouping === grouping.value
+                ? ' border-gray-400 bg-gray-200 '
+                : ''
+            }`}
             onClick={() => setSelectedGrouping(grouping.value)}
           >
             {grouping.label}
@@ -163,7 +171,11 @@ export function TeamProgressPage() {
         {selectedGrouping === 'member' && (
           <div className="grid gap-4 sm:grid-cols-2">
             {teamMembers.map((member) => (
-              <MemberProgressItem teamId={teamId} member={member} />
+              <MemberProgressItem
+                teamId={teamId}
+                member={member}
+                isMyProgress={member?.email === user?.email}
+              />
             ))}
           </div>
         )}
