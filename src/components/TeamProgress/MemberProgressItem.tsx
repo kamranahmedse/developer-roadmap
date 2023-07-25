@@ -60,7 +60,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                 >
                   <span className="relative z-10 flex items-center justify-between text-sm">
                     <span className="inline-grid">
-                    <span className={'truncate'}>{progress.resourceTitle}</span>
+                      <span className={'truncate'}>{progress.resourceTitle}</span>
                     </span>
                     <span className="text-xs text-gray-400 shrink-0 ml-1.5">
                       {progress.done} / {progress.total}

@@ -10,6 +10,7 @@ import { GroupRoadmapItem } from './GroupRoadmapItem';
 import { setUrlParams } from '../../lib/browser';
 import { getUrlParams } from '../../lib/browser';
 import { $toastMessage } from '../../stores/toast';
+import { useAuth } from '../../hooks/use-auth';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -55,6 +56,7 @@ export function TeamProgressPage() {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
   const currentTeam = useStore($currentTeam);
+  const user = useAuth();
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
   const [selectedGrouping, setSelectedGrouping] = useState<
@@ -70,7 +72,10 @@ export function TeamProgressPage() {
       return;
     }
 
-    setTeamMembers(response);
+    const currentUserProgress = response.find((member) => member.email === user?.email)
+    const otherUserProgresses = response.filter(member => member.email !== user?.email);
+    const allUserProgresses = currentUserProgress ? [currentUserProgress, ...otherUserProgresses] : otherUserProgresses;
+    setTeamMembers(allUserProgresses);
   }
 
   useEffect(() => {
@@ -134,11 +139,10 @@ export function TeamProgressPage() {
       <div className="flex items-center gap-2">
         {groupingTypes.map((grouping) => (
           <button
-            className={`rounded-md border p-1 px-2 text-sm ${
-              selectedGrouping === grouping.value
-                ? ' border-gray-400 bg-gray-200 '
-                : ''
-            }`}
+            className={`rounded-md border p-1 px-2 text-sm ${selectedGrouping === grouping.value
+              ? ' border-gray-400 bg-gray-200 '
+              : ''
+              }`}
             onClick={() => setSelectedGrouping(grouping.value)}
           >
             {grouping.label}

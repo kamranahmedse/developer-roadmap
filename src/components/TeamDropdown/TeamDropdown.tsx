@@ -101,9 +101,8 @@ export function TeamDropdown() {
             <img
               src={
                 selectedAvatar
-                  ? `${
-                      import.meta.env.PUBLIC_AVATAR_BASE_URL
-                    }/${selectedAvatar}`
+                  ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL
+                  }/${selectedAvatar}`
                   : '/images/default-avatar.png'
               }
               alt=""
