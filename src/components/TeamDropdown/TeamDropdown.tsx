@@ -76,13 +76,13 @@ export function TeamDropdown() {
     .filter((team) => team.status === 'invited')
     .map((team) => team._id);
 
-  if (
-    !user?.email.endsWith('@insightpartners.com') &&
-    !user?.email.endsWith('@roadmap.sh') &&
-    !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com', 'stephen.chetcuti@gmail.com'].includes(user?.email!)
-  ) {
-    return null;
-  }
+  // if (
+  //   !user?.email.endsWith('@insightpartners.com') &&
+  //   !user?.email.endsWith('@roadmap.sh') &&
+  //   !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com', 'stephen.chetcuti@gmail.com'].includes(user?.email!)
+  // ) {
+  //   return null;
+  // }
 
   return (
     <div className="relative mr-2">
@@ -101,9 +101,8 @@ export function TeamDropdown() {
             <img
               src={
                 selectedAvatar
-                  ? `${
-                      import.meta.env.PUBLIC_AVATAR_BASE_URL
-                    }/${selectedAvatar}`
+                  ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL
+                  }/${selectedAvatar}`
                   : '/images/default-avatar.png'
               }
               alt=""
