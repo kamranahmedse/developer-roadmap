@@ -5,10 +5,12 @@ import type { TeamDocument } from './CreateTeamForm';
 import { NextButton } from './NextButton';
 
 export const validTeamSizes = [
-  '0-1',
-  '2-10',
-  '11-50',
-  '51-200',
+  '1-5',
+  '6-10',
+  '11-25',
+  '26-50',
+  '51-100',
+  '101-200',
   '201-500',
   '501-1000',
   '1000+',
@@ -134,7 +136,7 @@ export function Step1(props: Step1Props) {
           autofocus={true}
           id="name"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-          placeholder="roadmap.sh"
+          placeholder="Roadmap Inc."
           disabled={isLoading}
           required
           value={name}
@@ -167,7 +169,7 @@ export function Step1(props: Step1Props) {
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
           <label for="website" className="text-sm leading-none text-slate-500">
-            LinkedIn URL
+            Company LinkedIn URL
           </label>
           <input
             type="url"
@@ -206,7 +208,7 @@ export function Step1(props: Step1Props) {
             for="team-size"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
-            Company Size
+            Tech Team Size
           </label>
           <select
             name="team-size"
@@ -226,6 +228,12 @@ export function Step1(props: Step1Props) {
               <option value={size}>{size} people</option>
             ))}
           </select>
+        </div>
+      )}
+
+      {error && (
+        <div className="mt-4 flex w-full flex-col">
+          <span className="text-sm text-red-500">{error}</span>
         </div>
       )}
 
