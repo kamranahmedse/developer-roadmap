@@ -10,13 +10,13 @@ export const validTeamTypes = [
     value: 'company',
     label: 'Company',
     icon: BuildingIcon,
-    description: 'Use roadmap.sh for your company',
+    description: 'Track the skills and learning progress of the tech team at your company',
   },
   {
     value: 'study_group',
     label: 'Study Group',
     icon: UsersIcon,
-    description: 'Invite your friends and learn together',
+    description: 'Invite your friends or course-mates and track your learning progress together',
   },
 ] as const;
 
@@ -87,7 +87,7 @@ export function Step0(props: Step0Props) {
                 validTeamType.value === selectedTeamType ? 'opacity-100' : ''
               }`}
             />
-            <span className="mb-1 block text-2xl font-bold">
+            <span className="mb-1.5 block text-2xl font-bold">
               {validTeamType.label}
             </span>
             <span className="text-sm text-gray-500">
