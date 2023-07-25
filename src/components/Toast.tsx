@@ -37,7 +37,7 @@ export function Toaster(props: Props) {
       onClick={() => {
         $toastMessage.set(undefined);
       }}
-      className={`fixed bottom-5 left-1/2 max-w-[300px] animate-fade-slide-up min-w-[300px] sm:min-w-[auto] z-50`}
+      className={`fixed bottom-5 left-1/2 z-50 min-w-[300px] max-w-[300px] animate-fade-slide-up sm:min-w-[auto]`}
     >
       <div
         className={`flex -translate-x-1/2 transform cursor-pointer items-center gap-2 rounded-md border border-gray-200 bg-white py-3 pl-4 pr-5 text-black shadow-md hover:bg-gray-50`}

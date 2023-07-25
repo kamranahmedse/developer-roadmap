@@ -139,10 +139,6 @@ export function TeamDropdown() {
                 pageLink = `/team/progress?t=${team._id}`;
               }
 
-              if (team.roadmaps.length === 0) {
-                pageLink = `/team/new?t=${team._id}&s=2`;
-              }
-
               return (
                 <li>
                   <a

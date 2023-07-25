@@ -5,13 +5,14 @@ import type { TeamResourceConfig } from './CreateTeam/RoadmapSelector';
 import { httpGet, httpPut } from '../lib/http';
 import { pageProgressMessage } from '../stores/page';
 import ExternalLinkIcon from '../icons/external-link.svg';
+import RoadmapIcon from '../icons/roadmap.svg';
 import PlusIcon from '../icons/plus.svg';
 import type { PageType } from './CommandMenu/CommandMenu';
 import { UpdateTeamResourceModal } from './CreateTeam/UpdateTeamResourceModal';
-import { AddTeamRoadmap } from './AddTeamRoadmap';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../stores/team';
-import {useToast} from "../hooks/use-toast";
+import { useToast } from '../hooks/use-toast';
+import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -20,6 +21,7 @@ export function TeamRoadmaps() {
 
   const toast = useToast();
 
+  const [isLoading, setIsLoading] = useState(true);
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
@@ -83,12 +85,14 @@ export function TeamRoadmaps() {
       return;
     }
 
+    setIsLoading(true);
     Promise.all([
       loadTeam(teamId),
       loadTeamResourceConfig(teamId),
       loadAllRoadmaps(),
     ]).finally(() => {
       pageProgressMessage.set('');
+      setIsLoading(false);
     });
   }, [teamId]);
 
@@ -97,6 +101,7 @@ export function TeamRoadmaps() {
       return;
     }
 
+    toast.loading('Deleting roadmap');
     pageProgressMessage.set(`Deleting roadmap from team`);
     const { error, response } = await httpPut<TeamResourceConfig>(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
@@ -117,6 +122,35 @@ export function TeamRoadmaps() {
     setResourceConfigs(response);
   }
 
+  async function onAdd(roadmapId: string) {
+    if (!teamId) {
+      return;
+    }
+
+    toast.loading('Adding roadmap');
+    pageProgressMessage.set('Adding roadmap');
+    setIsLoading(true);
+    const { error, response } = await httpPut<TeamResourceConfig>(
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-update-team-resource-config/${teamId}`,
+      {
+        teamId: teamId,
+        resourceId: roadmapId,
+        resourceType: 'roadmap',
+        removed: [],
+      }
+    );
+
+    if (error || !response) {
+      toast.error(error?.message || 'Error adding roadmap');
+      return;
+    }
+
+    setResourceConfigs(response);
+    toast.success('Roadmap added');
+  }
+
   async function onRemove(resourceId: string) {
     pageProgressMessage.set('Removing roadmap');
 
@@ -129,26 +163,56 @@ export function TeamRoadmaps() {
     return null;
   }
 
+  const addRoadmapModal = isAddingRoadmap && (
+    <SelectRoadmapModal
+      onClose={() => setIsAddingRoadmap(false)}
+      teamResourceConfig={resourceConfigs}
+      allRoadmaps={allRoadmaps}
+      teamId={teamId}
+      onRoadmapAdd={(roadmapId) => {
+        onAdd(roadmapId).finally(() => {
+          pageProgressMessage.set('');
+        });
+      }}
+      onRoadmapRemove={(roadmapId) => {
+        if (confirm('Are you sure you want to remove this roadmap?')) {
+          onRemove(roadmapId).finally(() => {});
+        }
+      }}
+    />
+  );
+
+  if (resourceConfigs.length === 0 && !isLoading) {
+    return (
+      <div className="flex flex-col items-center p-4 py-20">
+        {addRoadmapModal}
+        <img
+          alt="roadmap"
+          src={RoadmapIcon}
+          className="mb-4 h-24 w-24 opacity-10"
+        />
+        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
+        <p className="text-base text-gray-500">
+          {canManageCurrentTeam
+            ? 'Add a roadmap to start tracking your team'
+            : 'Ask your team admin to add some roadmaps'}
+        </p>
+
+        {canManageCurrentTeam && (
+          <button
+            className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
+            onClick={() => setIsAddingRoadmap(true)}
+          >
+            Add roadmap
+          </button>
+        )}
+      </div>
+    );
+  }
+
   return (
     <div>
-      {isAddingRoadmap && (
-        <AddTeamRoadmap
-          onMakeChanges={(roadmapId) => {
-            setChangingRoadmapId(roadmapId);
-            setIsAddingRoadmap(false);
-          }}
-          teamId={team?._id!}
-          setResourceConfigs={setResourceConfigs}
-          allRoadmaps={allRoadmaps}
-          availableRoadmaps={allRoadmaps.filter((r) => {
-            const isAlreadyAdded = resourceConfigs.find(
-              (c) => c.resourceId === r.id
-            );
-            return !isAlreadyAdded;
-          })}
-          onClose={() => setIsAddingRoadmap(false)}
-        />
-      )}
+      {addRoadmapModal}
       <div className={'grid grid-cols-1 gap-3 sm:grid-cols-2'}>
         {changingRoadmapId && (
           <UpdateTeamResourceModal
@@ -198,8 +262,8 @@ export function TeamRoadmaps() {
                 )}
               </div>
 
-              { canManageCurrentTeam && (
-                <div className={'flex w-full justify-between pt-2 pb-3 px-3'}>
+              {canManageCurrentTeam && (
+                <div className={'flex w-full justify-between px-3 pb-3 pt-2'}>
                   <button
                     type="button"
                     className={
@@ -219,13 +283,7 @@ export function TeamRoadmaps() {
                       className={
                         'text-xs text-red-500 underline hover:text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:text-red-500'
                       }
-                      disabled={resourceConfigs.length === 1}
                       onClick={() => setRemovingRoadmapId(resourceId)}
-                      title={
-                        resourceConfigs.length === 1
-                          ? 'You must have at least one roadmap.'
-                          : 'Delete roadmap from team'
-                      }
                     >
                       Remove
                     </button>

@@ -14,13 +14,13 @@ export type TeamResourceConfig = {
 }[];
 
 type RoadmapSelectorProps = {
-  team: TeamDocument;
+  teamId: string;
   teamResourceConfig: TeamResourceConfig;
   setTeamResourceConfig: (config: TeamResourceConfig) => void;
 };
 
 export function RoadmapSelector(props: RoadmapSelectorProps) {
-  const { team, teamResourceConfig = [], setTeamResourceConfig } = props;
+  const { teamId, teamResourceConfig = [], setTeamResourceConfig } = props;
 
   const [showSelectRoadmapModal, setShowSelectRoadmapModal] = useState(false);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
@@ -51,15 +51,15 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   }
 
   async function deleteResource(roadmapId: string) {
-    if (!team?._id) {
+    if (!teamId) {
       return;
     }
 
     pageProgressMessage.set(`Deleting resource`);
     const { error, response } = await httpPut<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-team-resource-config/${
-        team._id
-      }`,
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-delete-team-resource-config/${teamId}`,
       {
         resourceId: roadmapId,
         resourceType: 'roadmap',
@@ -83,17 +83,17 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   }
 
   async function addTeamResource(roadmapId: string) {
-    if (!team?._id) {
+    if (!teamId) {
       return;
     }
 
     pageProgressMessage.set(`Adding roadmap to team`);
     const { error, response } = await httpPut<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-update-team-resource-config/${
-        team._id
-      }`,
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-update-team-resource-config/${teamId}`,
       {
-        teamId: team._id,
+        teamId: teamId,
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
@@ -119,7 +119,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           onClose={() => setChangingRoadmapId('')}
           resourceId={changingRoadmapId}
           resourceType={'roadmap'}
-          teamId={team?._id!}
+          teamId={teamId}
           setTeamResourceConfig={setTeamResourceConfig}
           defaultRemovedItems={
             teamResourceConfig.find((c) => c.resourceId === changingRoadmapId)
@@ -132,7 +132,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           onClose={() => setShowSelectRoadmapModal(false)}
           teamResourceConfig={teamResourceConfig}
           allRoadmaps={allRoadmaps}
-          teamId={team?._id!}
+          teamId={teamId}
           onRoadmapAdd={(roadmapId) => {
             addTeamResource(roadmapId).finally(() => {
               pageProgressMessage.set('');
