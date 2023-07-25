@@ -343,15 +343,17 @@ export function MemberProgressModal(props: ProgressMapProps) {
                   <span data-progress-total="">{memberTotal}</span> Total
                 </span>
               </div>
-              <button
-                onClick={() => {
-                  setShowProgressHint(true);
-                }}
-                class="mr-4 flex items-center gap-1 text-sm font-medium text-black opacity-60 transition-opacity hover:opacity-100"
-              >
-                <img src={QuestionIcon} className="h-4 w-4" />
-                Track Progress
-              </button>
+              {isCurrentUser && (
+                <button
+                  onClick={() => {
+                    setShowProgressHint(true);
+                  }}
+                  class="mr-4 flex items-center gap-1 text-sm font-medium text-black opacity-60 transition-opacity hover:opacity-100"
+                >
+                  <img src={QuestionIcon} className="h-4 w-4" />
+                  Track Progress
+                </button>
+              )}
             </div>
           </div>
 
