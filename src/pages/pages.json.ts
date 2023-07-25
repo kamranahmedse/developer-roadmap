@@ -16,6 +16,9 @@ export async function get() {
         url: `/${roadmap.id}`,
         title: roadmap.frontmatter.briefTitle,
         group: 'Roadmaps',
+        metadata: {
+          tags: roadmap.frontmatter.tags,
+        },
       })),
       ...bestPractices.map((bestPractice) => ({
         id: bestPractice.id,

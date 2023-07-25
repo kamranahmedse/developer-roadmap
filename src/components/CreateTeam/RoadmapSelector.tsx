@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import PlusIcon from '../../icons/plus.svg';
-import PlusWhiteIcon from '../../icons/plus-white.svg';
+import ChevronDownIcon from '../../icons/chevron-down.svg';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from './CreateTeamForm';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
@@ -145,26 +144,41 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         />
       )}
 
-      {!teamResourceConfig.length && (
-        <div className="mt-4 rounded-md border px-4 py-12 text-center text-sm text-gray-700">
-          <span className="block text-lg font-semibold text-black">
-            No roadmaps selected.
-          </span>
-          <p className={'text-sm text-gray-400'}>
-            Please search and add roadmaps from below
-          </p>
-          <div className="mt-4 flex justify-center">
-            <button
-              className="group flex items-center justify-center gap-2 rounded-md bg-black px-4 py-2 transition-opacity hover:opacity-70"
-              onClick={() => setShowSelectRoadmapModal(true)}
-            >
-              <img alt="add" src={PlusWhiteIcon} className="h-5 w-5" />
-              <span className="text-sm text-white focus:outline-none">
-                Add Roadmaps
-              </span>
-            </button>
+      <div
+        className="mt-3 flex cursor-text items-center justify-between rounded-md border border-gray-300 px-3 py-2.5 hover:border-gray-400/50 hover:bg-gray-50"
+        role="button"
+        onClick={() => {
+          setShowSelectRoadmapModal(true);
+        }}
+      >
+        {teamResourceConfig.length > 0 && (
+          <div className="flex flex-col">
+            <p className="mb-1.5 text-base font-medium text-gray-800">
+              {teamResourceConfig.length} roadmaps selected
+            </p>
+            <p className="text-sm text-gray-400">
+              Click to add or change selection
+            </p>
           </div>
-        </div>
+        )}
+
+        {!teamResourceConfig.length && (
+          <div className="flex flex-col">
+            <p className="text-base text-gray-400">Click to select roadmaps</p>
+          </div>
+        )}
+
+        <img
+          alt={'roadmap'}
+          src={ChevronDownIcon}
+          className={'relative top-[1px] h-[17px] w-[17px] opacity-40'}
+        />
+      </div>
+
+      {!teamResourceConfig.length && (
+        <p className={'mb-3 mt-2 text-base text-gray-400'}>
+          No roadmaps selected.
+        </p>
       )}
 
       {teamResourceConfig.length > 0 && (
@@ -216,19 +230,6 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
               </div>
             );
           })}
-          <button
-            className="group flex min-h-[110px] flex-col items-center justify-center rounded-md border border-dashed border-gray-300 px-8 transition-colors hover:border-gray-600 hover:bg-gray-50"
-            onClick={() => setShowSelectRoadmapModal(true)}
-          >
-            <img
-              alt="add"
-              src={PlusIcon}
-              className="mb-1 h-6 w-6 opacity-20 transition-opacity group-hover:opacity-100"
-            />
-            <span className="text-sm text-gray-400 transition-colors focus:outline-none group-hover:text-black">
-              Add Roadmaps
-            </span>
-          </button>
         </div>
       )}
     </div>

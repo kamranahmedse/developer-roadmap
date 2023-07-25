@@ -17,10 +17,9 @@ export function Step2(props: Step2Props) {
     <>
       <div className="mt-4 flex w-full flex-col">
         <div className="mb-1 mt-2">
-          <h2 className="mb-2 text-2xl font-bold">Select Roadmaps</h2>
+          <h2 className="mb-1.5 text-2xl font-bold">Select Roadmaps</h2>
           <p className="text-sm text-gray-700">
-            Picks the roadmaps to be made available to your team for tracking.
-            You can always add more later.
+            You can always add and customize your roadmaps later.
           </p>
         </div>
 
