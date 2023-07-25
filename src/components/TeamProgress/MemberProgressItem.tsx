@@ -1,7 +1,6 @@
 import type { TeamMember } from './TeamProgressPage';
 import { useState } from 'preact/hooks';
 import { MemberProgressModal } from './MemberProgressModal';
-import { useAuth } from '../../hooks/use-auth';
 
 type MemberProgressItemProps = {
   teamId: string;
@@ -9,8 +8,6 @@ type MemberProgressItemProps = {
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
   const { member, teamId } = props;
-  const user = useAuth();
-  const isCurrentUser = user?.email === member.email;
 
   const memberProgress = member?.progress?.sort((a, b) => {
     return b.done - a.done;
@@ -34,7 +31,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
       )}
 
       <div
-        className={`flex h-full min-h-[270px] flex-col rounded-md border ${isCurrentUser && 'border-yellow-500'}`}
+        className="flex h-full min-h-[270px] flex-col rounded-md border"
         key={member._id}
       >
         <div className="flex items-center gap-3 border-b p-3">
