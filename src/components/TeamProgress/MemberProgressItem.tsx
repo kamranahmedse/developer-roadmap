@@ -5,9 +5,10 @@ import { MemberProgressModal } from './MemberProgressModal';
 type MemberProgressItemProps = {
   teamId: string;
   member: TeamMember;
+  isMyProgress?: boolean;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
-  const { member, teamId } = props;
+  const { member, teamId, isMyProgress = false } = props;
 
   const memberProgress = member?.progress?.sort((a, b) => {
     return b.done - a.done;
@@ -31,10 +32,10 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
       )}
 
       <div
-        className="flex h-full min-h-[270px] flex-col rounded-md border"
+        className={`flex h-full min-h-[270px] flex-col overflow-hidden rounded-md border`}
         key={member._id}
       >
-        <div className="flex items-center gap-3 border-b p-3">
+        <div className={`relative flex items-center gap-3 border-b p-3`}>
           <img
             src={
               member.avatar
@@ -44,8 +45,18 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             alt={member.name || ''}
             className="h-8 w-8 rounded-full"
           />
-          <div className="inline-grid">
-            <h3 className="truncate font-medium">{member.name}</h3>
+          <div className="inline-grid w-full">
+            {!isMyProgress && (
+              <h3 className="truncate font-medium">{member.name}</h3>
+            )}
+            {isMyProgress && (
+              <div className="inline-grid grid-cols-[auto,32px] items-center gap-1.5">
+                <h3 className="truncate font-medium">{member.name}</h3>
+                <span className="rounded-md bg-red-500 py-0.5 px-1 text-xs text-white">
+                  You
+                </span>
+              </div>
+            )}
             <p className="truncate text-sm text-gray-500">{member.email}</p>
           </div>
         </div>

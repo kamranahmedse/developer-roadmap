@@ -7,8 +7,8 @@ import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/preact';
 import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
-import { setUrlParams } from '../../lib/browser';
-import { getUrlParams } from '../../lib/browser';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
+import { useAuth } from '../../hooks/use-auth';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -54,6 +54,7 @@ export function TeamProgressPage() {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
   const currentTeam = useStore($currentTeam);
+  const user = useAuth();
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
   const [selectedGrouping, setSelectedGrouping] = useState<
@@ -69,7 +70,17 @@ export function TeamProgressPage() {
       return;
     }
 
-    setTeamMembers(response);
+    setTeamMembers(
+      response.sort((a, b) => {
+        if (a.email === user?.email) {
+          return -1;
+        }
+        if (b.email === user?.email) {
+          return 1;
+        }
+        return 0;
+      })
+    );
   }
 
   useEffect(() => {
@@ -159,7 +170,11 @@ export function TeamProgressPage() {
         {selectedGrouping === 'member' && (
           <div className="grid gap-4 sm:grid-cols-2">
             {teamMembers.map((member) => (
-              <MemberProgressItem teamId={teamId} member={member} />
+              <MemberProgressItem
+                teamId={teamId}
+                member={member}
+                isMyProgress={member?.email === user?.email}
+              />
             ))}
           </div>
         )}

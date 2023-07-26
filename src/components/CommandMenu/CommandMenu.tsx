@@ -18,6 +18,7 @@ export type PageType = {
   group: string;
   icon?: string;
   isProtected?: boolean;
+  metadata?: Record<string, any>;
 };
 
 const defaultPages: PageType[] = [
