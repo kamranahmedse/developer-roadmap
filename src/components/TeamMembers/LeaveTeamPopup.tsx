@@ -45,7 +45,7 @@ export function LeaveTeamPopup(props: LeaveTeamPopupProps) {
       return;
     }
 
-    window.location.href = '/account';
+    window.location.href = '/account?c=tl';
   };
 
   const handleClosePopup = () => {
