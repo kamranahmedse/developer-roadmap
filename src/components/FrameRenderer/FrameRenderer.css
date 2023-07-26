@@ -49,7 +49,8 @@ svg .done rect {
   fill: #cbcbcb !important;
 }
 
-svg .done text, svg .skipped text {
+svg .done text,
+svg .skipped text {
   text-decoration: line-through;
 }
 
@@ -58,7 +59,7 @@ svg .learning rect {
 }
 
 svg .skipped rect {
-  fill: #496b69!important;
+  fill: #496b69 !important;
 }
 
 svg .learning rect[fill='rgb(51,51,51)'] + text,
@@ -88,8 +89,10 @@ svg .removed text {
   fill: #9c9c9c !important;
 }
 
-svg .removed g, svg .removed circle, svg .removed path {
-    opacity: 0;
+svg .removed g,
+svg .removed circle,
+svg .removed path {
+  opacity: 0;
 }
 
 /************************************
@@ -122,6 +125,13 @@ svg .removed g, svg .removed circle, svg .removed path {
     height: 100%;
   }
 }
+
+/*#resource-svg-wrap g:not([class]),*/
+/*#resource-svg-wrap circle,*/
+/*#resource-svg-wrap path[stroke='#fff'],*/
+/*#resource-svg-wrap g[data-group-id$="-note"]{*/
+/*  display: none;*/
+/*}*/
 
 /*.clickable-group:hover {*/
 /*  cursor: url(/images/cursors/add.svg) 5 5, move;*/
