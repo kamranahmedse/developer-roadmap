@@ -52,7 +52,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             {isMyProgress && (
               <div className="inline-grid grid-cols-[auto,32px] items-center gap-1.5">
                 <h3 className="truncate font-medium">{member.name}</h3>
-                <span className="rounded-md bg-red-500 text-center py-0.5 text-xs text-white">
+                <span className="rounded-md bg-red-500 py-0.5 px-1 text-xs text-white">
                   You
                 </span>
               </div>

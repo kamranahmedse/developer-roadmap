@@ -59,7 +59,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
 
             return (
               <button
-                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none`}
+                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none ${isMyProgress ? 'border-green-500 hover:border-green-600' : ''}`}
                 key={member?.member._id}
                 onClick={() => {
                   setDetailResourceId(member?.progress?.resourceId!);
@@ -81,11 +81,6 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                     />
                     <span className="inline-grid grid-cols-[auto,32px] items-center">
                       <span className="truncate mr-[5px]">{member?.member?.name}</span>
-                      {isMyProgress && (
-                        <span className="rounded-md bg-red-500 py-0.25 text-center text-[11px] text-white mr-[5px]">
-                          You
-                        </span>
-                      )}
                     </span>
                   </span>
                   <span className="shrink-0 text-xs text-gray-400">
@@ -93,7 +88,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                   </span>
                 </span>
                 <span
-                  className="absolute inset-0 bg-gray-100 group-hover:bg-gray-200"
+                  className={`absolute inset-0 ${isMyProgress ? 'bg-green-100 group-hover:bg-green-200' : 'bg-gray-100 group-hover:bg-gray-200'}`}
                   style={{
                     width: `${
                       (member?.progress?.done / member?.progress?.total) * 100

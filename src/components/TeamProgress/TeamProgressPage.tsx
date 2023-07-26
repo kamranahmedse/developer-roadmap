@@ -7,9 +7,7 @@ import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/preact';
 import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
-import { setUrlParams } from '../../lib/browser';
-import { getUrlParams } from '../../lib/browser';
-import { $toastMessage } from '../../stores/toast';
+import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 
 export type UserProgress = {
