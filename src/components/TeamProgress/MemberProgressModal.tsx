@@ -16,7 +16,6 @@ import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
-import { ProgressHint } from './ProgressHint';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -307,13 +306,6 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 </li>
               </ul>
             </div>
-          )}
-          {showProgressHint && (
-            <ProgressHint
-              onClose={() => {
-                setShowProgressHint(false);
-              }}
-            />
           )}
           <div className="p-4">
             {!isCurrentUser && (
