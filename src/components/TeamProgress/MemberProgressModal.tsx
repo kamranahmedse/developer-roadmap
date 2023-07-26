@@ -279,8 +279,35 @@ export function MemberProgressModal(props: ProgressMapProps) {
       <div class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          class="popup-body relative rounded-lg bg-white shadow"
+          class="popup-body relative rounded-lg bg-white shadow pt-[1px]"
         >
+          {isCurrentUser && (
+            <div className="sticky top-1 mx-1 mt-1 mb-0 rounded-xl bg-gray-900 p-4 text-gray-300">
+              <h2 className={'text-base mb-1.5'}>
+                Follow the Instructions below to update your progress
+              </h2>
+              <ul className="flex flex-col gap-1">
+                <li className="leading-loose">
+                  <kbd className="rounded-md bg-yellow-200 px-2 py-1.5 text-xs text-gray-900">
+                    Right Mouse Click
+                  </kbd>{' '}
+                  on a topic to mark as{' '}
+                  <span className={'font-medium text-white'}>Done</span>.
+                </li>
+                <li className="leading-loose">
+                  <kbd className="rounded-md bg-yellow-200 px-2 py-1.5 text-xs text-gray-900">
+                    Shift
+                  </kbd>{' '}
+                  +{' '}
+                  <kbd className="rounded-md bg-yellow-200 px-2 py-1.5 text-xs text-gray-900">
+                    Click
+                  </kbd>{' '}
+                  on a topic to mark as{' '}
+                  <span className="font-medium text-white">In progress</span>.
+                </li>
+              </ul>
+            </div>
+          )}
           {showProgressHint && (
             <ProgressHint
               onClose={() => {
@@ -289,24 +316,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
             />
           )}
           <div className="p-4">
-            {isCurrentUser ? (
-              <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
-                <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
-                  Update Your Progress
-                </h2>
-                <p className={'text-gray-500'}>
-                  Follow the{' '}
-                  <button
-                    className="inline-flex items-center text-blue-600 underline"
-                    onClick={() => {
-                      setShowProgressHint(true);
-                    }}
-                  >
-                    instructions to update your progress
-                  </button>{' '}
-                </p>
-              </div>
-            ) : (
+            {!isCurrentUser && (
               <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
                 <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
                   {member.name}'s Progress
@@ -396,7 +406,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 sm:hidden"
+            className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${isCurrentUser ? 'hover:bg-gray-800' : 'hover:bg-gray-100'}`}
             onClick={onClose}
           >
             <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
