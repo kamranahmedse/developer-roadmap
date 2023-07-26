@@ -1,37 +1,25 @@
 import { useState } from 'preact/hooks';
 import type { GroupByRoadmap, TeamMember } from './TeamProgressPage';
-import { MemberProgressModal } from './MemberProgressModal';
 import { getUrlParams } from '../../lib/browser';
 import ExternalLinkIcon from '../../icons/external-link.svg';
 import { useAuth } from '../../hooks/use-auth';
 
 type GroupRoadmapItemProps = {
   roadmap: GroupByRoadmap;
+  onShowResourceProgress: (member: TeamMember, resourceId: string) => void;
 };
 
 export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
+  const { onShowResourceProgress } = props;
   const { members, resourceTitle, resourceId } = props.roadmap;
+
   const { t: teamId } = getUrlParams();
   const user = useAuth();
 
   const [showAll, setShowAll] = useState(false);
-  const [detailResourceId, setDetailResourceId] = useState<string | null>(null);
-  const [selectedMember, setSelectedMember] = useState<TeamMember | null>(null);
 
   return (
     <>
-      {detailResourceId && (
-        <MemberProgressModal
-          member={selectedMember!}
-          teamId={teamId}
-          resourceId={detailResourceId}
-          resourceType={'roadmap'}
-          onClose={() => {
-            setDetailResourceId(null);
-            setSelectedMember(null);
-          }}
-        />
-      )}
       <div className="flex h-full min-h-[270px] flex-col rounded-md border">
         <div className="flex items-center gap-3 border-b p-3">
           <div className="flex min-w-0 flex-grow items-center justify-between">
@@ -59,11 +47,15 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
 
             return (
               <button
-                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none ${isMyProgress ? 'border-green-500 hover:border-green-600' : ''}`}
+                className={`group relative w-full overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none ${
+                  isMyProgress ? 'border-green-500 hover:border-green-600' : ''
+                }`}
                 key={member?.member._id}
                 onClick={() => {
-                  setDetailResourceId(member?.progress?.resourceId!);
-                  setSelectedMember(member.member);
+                  onShowResourceProgress(
+                    member.member,
+                    member.progress?.resourceId!
+                  );
                 }}
               >
                 <span className="relative z-10 flex items-center justify-between gap-1 text-sm">
@@ -80,7 +72,9 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                       className="h-5 w-5 shrink-0 rounded-full"
                     />
                     <span className="inline-grid grid-cols-[auto,32px] items-center">
-                      <span className="truncate mr-[5px]">{member?.member?.name}</span>
+                      <span className="mr-[5px] truncate">
+                        {member?.member?.name}
+                      </span>
                     </span>
                   </span>
                   <span className="shrink-0 text-xs text-gray-400">
@@ -88,7 +82,11 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                   </span>
                 </span>
                 <span
-                  className={`absolute inset-0 ${isMyProgress ? 'bg-green-100 group-hover:bg-green-200' : 'bg-gray-100 group-hover:bg-gray-200'}`}
+                  className={`absolute inset-0 ${
+                    isMyProgress
+                      ? 'bg-green-100 group-hover:bg-green-200'
+                      : 'bg-gray-100 group-hover:bg-gray-200'
+                  }`}
                   style={{
                     width: `${
                       (member?.progress?.done / member?.progress?.total) * 100

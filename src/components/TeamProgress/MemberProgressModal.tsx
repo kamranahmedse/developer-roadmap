@@ -7,9 +7,9 @@ import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import {
+  renderTopicProgress,
   ResourceProgressType,
   ResourceType,
-  renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
@@ -17,8 +17,6 @@ import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import { ProgressHint } from './ProgressHint';
-import QuestionIcon from '../../icons/question.svg';
-import { InfoIcon } from '../ReactIcons/InfoIcon';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -26,6 +24,7 @@ export type ProgressMapProps = {
   resourceId: string;
   resourceType: 'roadmap' | 'best-practice';
   onClose: () => void;
+  onShowMyProgress: () => void;
 };
 
 type MemberProgressResponse = {
@@ -36,7 +35,14 @@ type MemberProgressResponse = {
 };
 
 export function MemberProgressModal(props: ProgressMapProps) {
-  const { resourceId, member, resourceType, teamId, onClose } = props;
+  const {
+    resourceId,
+    member,
+    resourceType,
+    onShowMyProgress,
+    teamId,
+    onClose,
+  } = props;
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
 
@@ -112,6 +118,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       return;
     }
 
+    setIsLoading(true);
     Promise.all([
       renderResource(resourceJsonUrl),
       getMemberProgress(teamId, member._id, resourceType, resourceId),
@@ -136,7 +143,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       .finally(() => {
         setIsLoading(false);
       });
-  }, []);
+  }, [member]);
 
   function updateTopicStatus(topicId: string, newStatus: ResourceProgressType) {
     if (!resourceId || !resourceType || !isCurrentUser) {
@@ -176,18 +183,21 @@ export function MemberProgressModal(props: ProgressMapProps) {
     if (!targetGroup) {
       return;
     }
+
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
     if (!groupId) {
       return;
     }
 
     if (targetGroup.classList.contains('removed')) {
+      e.preventDefault();
       return;
     }
 
     e.preventDefault();
     const isCurrentStatusDone = targetGroup.classList.contains('done');
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
+
     updateTopicStatus(
       normalizedGroupId,
       !isCurrentStatusDone ? 'done' : 'pending'
@@ -235,7 +245,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   useEffect(() => {
-    if (!isCurrentUser || !containerEl.current) {
+    if (!member || !containerEl.current) {
       return;
     }
 
@@ -246,7 +256,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       containerEl.current?.removeEventListener('contextmenu', handleRightClick);
       containerEl.current?.removeEventListener('click', handleClick);
     };
-  }, []);
+  }, [member]);
 
   const removedTopics = memberProgress?.removed || [];
   const memberDone =
@@ -282,19 +292,18 @@ export function MemberProgressModal(props: ProgressMapProps) {
             {isCurrentUser ? (
               <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
                 <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
-                  Your Progress
+                  Update Your Progress
                 </h2>
                 <p className={'text-gray-500'}>
-                  You can{' '}
+                  Follow the{' '}
                   <button
                     className="inline-flex items-center text-blue-600 underline"
                     onClick={() => {
                       setShowProgressHint(true);
                     }}
                   >
-                    follow these instructions
+                    instructions to update your progress
                   </button>{' '}
-                  to update your progress below.
                 </p>
               </div>
             ) : (
@@ -308,28 +317,29 @@ export function MemberProgressModal(props: ProgressMapProps) {
                   }
                 >
                   You are looking at {member.name}'s progress.{' '}
-                  <a
-                    target={'_blank'}
-                    href={`/${resourceId}?t=${teamId}`}
+                  <button
                     className="text-blue-600 underline"
+                    onClick={onShowMyProgress}
                   >
                     View your progress
-                  </a>
+                  </button>
                   .
                 </p>
                 <p className={'block text-gray-500 md:hidden'}>
-                  View your progress&nbsp;
-                  <a
-                    target={'_blank'}
-                    href={`/${resourceId}?t=${teamId}`}
+                  <button
                     className="text-blue-600 underline"
+                    onClick={onShowMyProgress}
                   >
-                    on the roadmap page.
-                  </a>
+                    View your progress.
+                  </button>
                 </p>
               </div>
             )}
-            <p class="-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden">
+            <p
+              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
+                isLoading ? 'striped-loader' : ''
+              }`}
+            >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
@@ -338,7 +348,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 <span>{memberDone}</span> of <span>{memberTotal}</span> done
               </span>
             </p>
-            <p class="-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex">
+            <p
+              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+                isLoading ? 'striped-loader' : ''
+              }`}
+            >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
@@ -385,7 +399,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
             className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900 sm:hidden"
             onClick={onClose}
           >
-            <img src={CloseIcon} className="h-4 w-4" />
+            <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
             <span class="sr-only">Close modal</span>
           </button>
         </div>

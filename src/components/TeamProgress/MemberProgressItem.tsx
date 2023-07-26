@@ -1,36 +1,22 @@
 import type { TeamMember } from './TeamProgressPage';
 import { useState } from 'preact/hooks';
-import { MemberProgressModal } from './MemberProgressModal';
 
 type MemberProgressItemProps = {
-  teamId: string;
   member: TeamMember;
+  onShowResourceProgress: (resourceId: string) => void;
   isMyProgress?: boolean;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
-  const { member, teamId, isMyProgress = false } = props;
+  const { member, onShowResourceProgress, isMyProgress = false } = props;
 
   const memberProgress = member?.progress?.sort((a, b) => {
     return b.done - a.done;
   });
 
-  const [detailResourceId, setDetailResourceId] = useState<string | null>(null);
   const [showAll, setShowAll] = useState(false);
 
   return (
     <>
-      {detailResourceId && (
-        <MemberProgressModal
-          member={member}
-          teamId={teamId}
-          resourceId={detailResourceId}
-          resourceType={'roadmap'}
-          onClose={() => {
-            setDetailResourceId(null);
-          }}
-        />
-      )}
-
       <div
         className={`flex h-full min-h-[270px] flex-col overflow-hidden rounded-md border`}
         key={member._id}
@@ -52,7 +38,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             {isMyProgress && (
               <div className="inline-grid grid-cols-[auto,32px] items-center gap-1.5">
                 <h3 className="truncate font-medium">{member.name}</h3>
-                <span className="rounded-md bg-red-500 py-0.5 px-1 text-xs text-white">
+                <span className="rounded-md bg-red-500 px-1 py-0.5 text-xs text-white">
                   You
                 </span>
               </div>
@@ -65,7 +51,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             (progress) => {
               return (
                 <button
-                  onClick={() => setDetailResourceId(progress.resourceId)}
+                  onClick={() => onShowResourceProgress(progress.resourceId)}
                   className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
                   key={progress.resourceId}
                 >

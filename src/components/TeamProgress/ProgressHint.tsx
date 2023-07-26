@@ -15,11 +15,12 @@ export function ProgressHint(props: ProgressHintProps) {
   useKeydown('Escape', () => {
     onClose();
   });
+
   return (
     <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div className="relative flex h-full w-full items-center justify-center">
         <div
-          className="relative w-full max-w-lg rounded-md border border-yellow-300 bg-yellow-50 px-3 py-3 text-gray-500"
+          className="relative w-full max-w-lg rounded-md bg-yellow-50 px-3 py-3 text-gray-500"
           ref={containerEl}
         >
           <span className="mb-1.5 block text-xs font-medium uppercase text-green-600">
