@@ -1,3 +1,4 @@
+import { MailIcon } from "../ReactIcons/MailIcon";
 import { MemberActionDropdown } from "./MemberActionDropdown";
 import { MemberRoleBadge } from "./RoleBadge";
 import type { TeamMemberItem } from "./TeamMembersPage";
@@ -14,7 +15,7 @@ type TeamMemberProps = {
 
 export function TeamMemberItem(props: TeamMemberProps) {
   const { member, index, teamId, onUpdateMember, canManageCurrentTeam, userId, handleDeleteMember } = props;
-  const hasProgress = member.progress.length > 0;
+  const showNoProgress = member.progress.length === 0 && member.status === 'joined';
 
   return (
     <div
@@ -40,7 +41,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
             <h3 className="inline-grid grid-cols-[auto_auto_auto] items-center font-medium">
               <span className="truncate">{member.name}</span>
               {
-                !hasProgress && (
+                showNoProgress && (
                   <span className="ml-2 text-xs font-normal bg-gray-600 text-white rounded-full sm:inline px-2 py-0.5">
                     No Progress
                   </span>
@@ -72,6 +73,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
       </div>
 
       <div className="flex items-center text-sm">
+        {/* <SendProgressReminder /> */}
         <span class={'hidden sm:block'}>
           <MemberRoleBadge role={member.role} />
         </span>
@@ -85,5 +87,14 @@ export function TeamMemberItem(props: TeamMemberProps) {
         )}
       </div>
     </div>
+  )
+}
+
+function SendProgressReminder() {
+  return (
+    <button className="rounded-full whitespace-nowrap px-2 py-0.5 text-xs bg-orange-100 text-orange-700 flex items-center gap-1.5 mr-2">
+      <MailIcon className="h-3 w-3" />
+      Send Reminder
+    </button>
   )
 }
