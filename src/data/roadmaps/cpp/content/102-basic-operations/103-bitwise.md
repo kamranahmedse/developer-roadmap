@@ -65,5 +65,5 @@ int result = 5 >> 1; // result will be 2 (0000 0101 >> 1 = 0000 0010)
 ```
 
 These were the most common bitwise operations in C++. Remember to use them carefully and understand their behavior when applied to specific data types and scenarios.
-- [Intro to Binary and Bitwise Operators in C++](https://youtu.be/kxwrt7og0gi)
-- [Bitwise AND (&), OR (|), XOR (^) and NOT (~) in C++](https://youtu.be/hoqhw6_1naa)
+- [Intro to Binary and Bitwise Operators in C++](https://youtu.be/KXwRt7og0gI)
+- [Bitwise AND (&), OR (|), XOR (^) and NOT (~) in C++](https://youtu.be/HoQhw6_1NAA)
