@@ -9,10 +9,12 @@ export function MemberActionDropdown({
   member,
   onUpdateMember,
   onDeleteMember,
+  onResendInvite,
   isDisabled = false,
 }: {
   onDeleteMember: () => void;
   onUpdateMember: () => void;
+  onResendInvite: () => void;
   isDisabled: boolean;
   member: TeamMemberDocument;
 }) {
@@ -24,22 +26,6 @@ export function MemberActionDropdown({
   useOutsideClick(menuRef, () => {
     setIsOpen(false);
   });
-
-  async function resendInvite() {
-    const { response, error } = await httpPatch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-resend-invite/${member.teamId}/${member._id
-      }`,
-      {}
-    );
-
-    if (error || !response) {
-      setIsLoading(false);
-      toast.error(error?.message || 'Something went wrong');
-      return;
-    }
-
-    window.location.reload();
-  }
 
   const actions = [
     {
@@ -58,11 +44,14 @@ export function MemberActionDropdown({
     },
     ...(['invited'].includes(member.status)
       ? [
-        {
-          name: 'Resend Invite',
-          handleClick: resendInvite,
-        },
-      ]
+          {
+            name: 'Resend Invite',
+            handleClick: () => {
+              onResendInvite();
+              setIsOpen(false);
+            },
+          },
+        ]
       : []),
   ];
   return (

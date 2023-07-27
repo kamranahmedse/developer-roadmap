@@ -12,13 +12,14 @@ type TeamMemberProps = {
   handleDeleteMember: () => void;
   onUpdateMember: () => void;
   handleSendReminder: () => void;
+  onResendInvite: () => void;
 };
 
 export function TeamMemberItem(props: TeamMemberProps) {
   const {
     member,
     index,
-    teamId,
+    onResendInvite,
     onUpdateMember,
     canManageCurrentTeam,
     userId,
@@ -100,6 +101,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
         </span>
         {canManageCurrentTeam && (
           <MemberActionDropdown
+            onResendInvite={onResendInvite}
             onDeleteMember={handleDeleteMember}
             isDisabled={member.userId === userId}
             onUpdateMember={onUpdateMember}

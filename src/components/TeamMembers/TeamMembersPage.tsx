@@ -112,6 +112,23 @@ export function TeamMembersPage() {
     await getTeamMemberList();
   }
 
+  async function resendInvite(teamId: string, memberId: string) {
+    pageProgressMessage.set('Resending Invite');
+    const { response, error } = await httpPatch(
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-resend-invite/${teamId}/${memberId}`,
+      {}
+    );
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      return;
+    }
+
+    toast.success('Invite has been sent');
+  }
+
   async function handleSendReminder(teamId: string, memberId: string) {
     pageProgressMessage.set('Sending Reminder');
     const { response, error } = await httpPatch(
@@ -188,6 +205,11 @@ export function TeamMembersPage() {
                 index={index}
                 teamId={teamId}
                 userId={user?.id!}
+                onResendInvite={() => {
+                  resendInvite(teamId, member._id!).finally(() => {
+                    pageProgressMessage.set('');
+                  });
+                }}
                 canManageCurrentTeam={canManageCurrentTeam}
                 handleDeleteMember={() => {
                   deleteMember(teamId, member._id!).finally(() => {
@@ -219,6 +241,11 @@ export function TeamMembersPage() {
                     index={index}
                     teamId={teamId}
                     userId={user?.id!}
+                    onResendInvite={() => {
+                      resendInvite(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
                     canManageCurrentTeam={canManageCurrentTeam}
                     handleDeleteMember={() => {
                       deleteMember(teamId, member._id!).finally(() => {
@@ -252,6 +279,11 @@ export function TeamMembersPage() {
                     index={index}
                     teamId={teamId}
                     userId={user?.id!}
+                    onResendInvite={() => {
+                      resendInvite(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
                     canManageCurrentTeam={canManageCurrentTeam}
                     handleDeleteMember={() => {
                       deleteMember(teamId, member._id!).finally(() => {
