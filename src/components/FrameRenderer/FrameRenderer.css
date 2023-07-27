@@ -126,12 +126,12 @@ svg .removed path {
   }
 }
 
-/*#resource-svg-wrap g:not([class]),*/
-/*#resource-svg-wrap circle,*/
-/*#resource-svg-wrap path[stroke='#fff'],*/
-/*#resource-svg-wrap g[data-group-id$="-note"]{*/
-/*  display: none;*/
-/*}*/
+#customized-roadmap #resource-svg-wrap g:not([class]),
+#customized-roadmap #resource-svg-wrap circle,
+#customized-roadmap #resource-svg-wrap path[stroke='#fff'],
+#customized-roadmap #resource-svg-wrap g[data-group-id$="-note"]{
+  display: none;
+}
 
 /*.clickable-group:hover {*/
 /*  cursor: url(/images/cursors/add.svg) 5 5, move;*/

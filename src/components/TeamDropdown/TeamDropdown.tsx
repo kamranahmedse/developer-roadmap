@@ -9,6 +9,7 @@ import { $currentTeam, $teamList } from '../../stores/team';
 import { useStore } from '@nanostores/preact';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useToast } from '../../hooks/use-toast';
+import type {ValidTeamType} from "../CreateTeam/Step0";
 
 const allowedStatus = ['invited', 'joined', 'rejected'] as const;
 export type AllowedMemberStatus = (typeof allowedStatus)[number];
@@ -18,6 +19,7 @@ export type UserTeamItem = {
   name: string;
   avatar?: string;
   roadmaps: string[];
+  type: ValidTeamType;
   role: AllowedRoles;
   status: AllowedMemberStatus;
   memberId: string;
