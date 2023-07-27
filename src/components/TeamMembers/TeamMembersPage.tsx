@@ -14,6 +14,7 @@ import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../../stores/team';
 import { useToast } from '../../hooks/use-toast';
 import { MemberRoleBadge } from './RoleBadge';
+import { TeamMemberItem } from './TeamMemberItem';
 
 export interface TeamMemberDocument {
   _id?: string;
@@ -26,9 +27,23 @@ export interface TeamMemberDocument {
   updatedAt: Date;
 }
 
-interface TeamMemberItem extends TeamMemberDocument {
+export interface UserResourceProgressDocument {
+  _id?: string;
+  userId: string;
+  resourceId: string;
+  resourceType: 'roadmap' | 'best-practice';
+  isFavorite?: boolean;
+  done: string[];
+  learning: string[];
+  skipped: string[];
+  createdAt: Date;
+  updatedAt: Date;
+}
+
+export interface TeamMemberItem extends TeamMemberDocument {
   name: string;
   avatar: string;
+  progress: UserResourceProgressDocument[];
 }
 
 export function TeamMembersPage() {
@@ -83,8 +98,7 @@ export function TeamMembersPage() {
   async function deleteMember(teamId: string, memberId: string) {
     pageProgressMessage.set('Deleting member');
     const { response, error } = await httpDelete(
-      `${
-        import.meta.env.PUBLIC_API_URL
+      `${import.meta.env.PUBLIC_API_URL
       }/v1-delete-member/${teamId}/${memberId}`,
       {}
     );
@@ -97,6 +111,16 @@ export function TeamMembersPage() {
     toast.success('Member has been deleted');
     await getTeamMemberList();
   }
+
+  const joinedMembers = teamMembers.filter(
+    (member) => member.status === 'joined'
+  );
+  const invitedMembers = teamMembers.filter(
+    (member) => member.status === 'invited'
+  );
+  const rejectedMembers = teamMembers.filter(
+    (member) => member.status === 'rejected'
+  );
 
   return (
     <div>
@@ -139,80 +163,83 @@ export function TeamMembersPage() {
             </p>
             <LeaveTeamButton teamId={team?._id!} />
           </div>
-          {teamMembers.map((member, index) => {
+          {joinedMembers.map((member, index) => {
             return (
-              <div
-                className={`flex items-center justify-between gap-2 p-3 ${
-                  index === 0 ? '' : 'border-t'
-                } ${member.status === 'invited' ? 'bg-gray-50' : ''}`}
-              >
-                <div className="flex items-center gap-3">
-                  <img
-                    src={
-                      member.avatar
-                        ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
-                            member.avatar
-                          }`
-                        : '/images/default-avatar.png'
-                    }
-                    alt={member.name || ''}
-                    className="hidden h-10 w-10 rounded-full sm:block"
-                  />
-                  <div>
-                    <span class={'mb-1 block sm:hidden'}>
-                      <MemberRoleBadge role={member.role} />
-                    </span>
-                    <div className="flex items-center">
-                      <h3 className="inline-grid grid-cols-[auto_auto] items-center font-medium">
-                        <span className="truncate">{member.name}</span>
-                        {member.userId === user?.id && (
-                          <span className="ml-2 hidden text-xs font-normal text-blue-500 sm:inline">
-                            You
-                          </span>
-                        )}
-                      </h3>
-                      <div className="ml-2 flex items-center gap-0.5">
-                        {member.status === 'invited' && (
-                          <span className="rounded-full bg-yellow-100 px-2 py-0.5 text-xs text-yellow-700">
-                            Invited
-                          </span>
-                        )}
-                        {member.status === 'rejected' && (
-                          <span className="rounded-full bg-red-100 px-2 py-0.5 text-xs text-red-700">
-                            Rejected
-                          </span>
-                        )}
-                      </div>
-                    </div>
-                    <p className="text-sm text-gray-500">
-                      {member.invitedEmail}
-                    </p>
-                  </div>
-                </div>
+              <TeamMemberItem
+                key={index}
+                member={member}
+                index={index}
+                teamId={teamId}
+                userId={user?.id!}
+                canManageCurrentTeam={canManageCurrentTeam}
+                handleDeleteMember={() => {
+                  deleteMember(teamId, member._id!).finally(() => {
+                    pageProgressMessage.set('');
+                  });
+                }}
+                onUpdateMember={() => {
+                  setMemberToUpdate(member);
+                }}
+              />
+            );
+          })}
+        </div>
 
-                <div className="flex items-center text-sm">
-                  <span class={'hidden sm:block'}>
-                    <MemberRoleBadge role={member.role} />
-                  </span>
-                  {canManageCurrentTeam && (
-                    <MemberActionDropdown
-                      onDeleteMember={() => {
+        {invitedMembers.length > 0 && (<div className="mt-6">
+          <h3 className="font-medium text-xl">Invited Members</h3>
+          <div className="rounded-b-sm rounded-t-md border mt-2">
+            {invitedMembers.map((member, index) => {
+              return (
+                <TeamMemberItem
+                  key={index}
+                  member={member}
+                  index={index}
+                  teamId={teamId}
+                  userId={user?.id!}
+                  canManageCurrentTeam={canManageCurrentTeam}
+                  handleDeleteMember={() => {
+                    deleteMember(teamId, member._id!).finally(() => {
+                      pageProgressMessage.set('');
+                    });
+                  }}
+                  onUpdateMember={() => {
+                    setMemberToUpdate(member);
+                  }}
+                />
+              );
+            })}
+          </div>
+        </div>)}
+
+        {
+          rejectedMembers.length > 0 && (
+            <div className="mt-6">
+              <h3 className="font-medium text-xl">Rejected Members</h3>
+              <div className="rounded-b-sm rounded-t-md border mt-2">
+                {rejectedMembers.map((member, index) => {
+                  return (
+                    <TeamMemberItem
+                      key={index}
+                      member={member}
+                      index={index}
+                      teamId={teamId}
+                      userId={user?.id!}
+                      canManageCurrentTeam={canManageCurrentTeam}
+                      handleDeleteMember={() => {
                         deleteMember(teamId, member._id!).finally(() => {
                           pageProgressMessage.set('');
                         });
                       }}
-                      isDisabled={member.userId === user?.id}
                       onUpdateMember={() => {
                         setMemberToUpdate(member);
                       }}
-                      member={member}
                     />
-                  )}
-                </div>
+                  );
+                })}
               </div>
-            );
-          })}
-        </div>
+            </div>
+          )
+        }
       </div>
 
       {canManageCurrentTeam && (
