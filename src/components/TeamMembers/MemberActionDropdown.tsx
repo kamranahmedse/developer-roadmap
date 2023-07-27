@@ -27,8 +27,7 @@ export function MemberActionDropdown({
 
   async function resendInvite() {
     const { response, error } = await httpPatch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-resend-invite/${member.teamId}/${
-        member._id
+      `${import.meta.env.PUBLIC_API_URL}/v1-resend-invite/${member.teamId}/${member._id
       }`,
       {}
     );
@@ -59,11 +58,11 @@ export function MemberActionDropdown({
     },
     ...(['invited'].includes(member.status)
       ? [
-          {
-            name: 'Resend Invite',
-            handleClick: resendInvite,
-          },
-        ]
+        {
+          name: 'Resend Invite',
+          handleClick: resendInvite,
+        },
+      ]
       : []),
   ];
   return (
