@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
-import { httpDelete, httpGet } from '../../lib/http';
+import { httpDelete, httpGet, httpPatch } from '../../lib/http';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
@@ -94,11 +94,11 @@ export function TeamMembersPage() {
       pageProgressMessage.set('');
     });
   }, [teamId]);
-
   async function deleteMember(teamId: string, memberId: string) {
     pageProgressMessage.set('Deleting member');
     const { response, error } = await httpDelete(
-      `${import.meta.env.PUBLIC_API_URL
+      `${
+        import.meta.env.PUBLIC_API_URL
       }/v1-delete-member/${teamId}/${memberId}`,
       {}
     );
@@ -110,6 +110,23 @@ export function TeamMembersPage() {
 
     toast.success('Member has been deleted');
     await getTeamMemberList();
+  }
+
+  async function handleSendReminder(teamId: string, memberId: string) {
+    pageProgressMessage.set('Sending Reminder');
+    const { response, error } = await httpPatch(
+      `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-send-progress-reminder/${teamId}/${memberId}`,
+      {}
+    );
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      return;
+    }
+
+    toast.success('Reminder has been sent');
   }
 
   const joinedMembers = teamMembers.filter(
@@ -180,66 +197,81 @@ export function TeamMembersPage() {
                 onUpdateMember={() => {
                   setMemberToUpdate(member);
                 }}
+                handleSendReminder={() => {
+                  handleSendReminder(teamId, member._id!).finally(() => {
+                    pageProgressMessage.set('');
+                  });
+                }}
               />
             );
           })}
         </div>
 
-        {invitedMembers.length > 0 && (<div className="mt-6">
-          <h3 className="font-medium text-xl">Invited Members</h3>
-          <div className="rounded-b-sm rounded-t-md border mt-2">
-            {invitedMembers.map((member, index) => {
-              return (
-                <TeamMemberItem
-                  key={index}
-                  member={member}
-                  index={index}
-                  teamId={teamId}
-                  userId={user?.id!}
-                  canManageCurrentTeam={canManageCurrentTeam}
-                  handleDeleteMember={() => {
-                    deleteMember(teamId, member._id!).finally(() => {
-                      pageProgressMessage.set('');
-                    });
-                  }}
-                  onUpdateMember={() => {
-                    setMemberToUpdate(member);
-                  }}
-                />
-              );
-            })}
-          </div>
-        </div>)}
-
-        {
-          rejectedMembers.length > 0 && (
-            <div className="mt-6">
-              <h3 className="font-medium text-xl">Rejected Members</h3>
-              <div className="rounded-b-sm rounded-t-md border mt-2">
-                {rejectedMembers.map((member, index) => {
-                  return (
-                    <TeamMemberItem
-                      key={index}
-                      member={member}
-                      index={index}
-                      teamId={teamId}
-                      userId={user?.id!}
-                      canManageCurrentTeam={canManageCurrentTeam}
-                      handleDeleteMember={() => {
-                        deleteMember(teamId, member._id!).finally(() => {
-                          pageProgressMessage.set('');
-                        });
-                      }}
-                      onUpdateMember={() => {
-                        setMemberToUpdate(member);
-                      }}
-                    />
-                  );
-                })}
-              </div>
+        {invitedMembers.length > 0 && (
+          <div className="mt-6">
+            <h3 className="text-xl font-medium">Invited Members</h3>
+            <div className="mt-2 rounded-b-sm rounded-t-md border">
+              {invitedMembers.map((member, index) => {
+                return (
+                  <TeamMemberItem
+                    key={index}
+                    member={member}
+                    index={index}
+                    teamId={teamId}
+                    userId={user?.id!}
+                    canManageCurrentTeam={canManageCurrentTeam}
+                    handleDeleteMember={() => {
+                      deleteMember(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                    onUpdateMember={() => {
+                      setMemberToUpdate(member);
+                    }}
+                    handleSendReminder={() => {
+                      handleSendReminder(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                  />
+                );
+              })}
             </div>
-          )
-        }
+          </div>
+        )}
+
+        {rejectedMembers.length > 0 && (
+          <div className="mt-6">
+            <h3 className="text-xl font-medium">Rejected Members</h3>
+            <div className="mt-2 rounded-b-sm rounded-t-md border">
+              {rejectedMembers.map((member, index) => {
+                return (
+                  <TeamMemberItem
+                    key={index}
+                    member={member}
+                    index={index}
+                    teamId={teamId}
+                    userId={user?.id!}
+                    canManageCurrentTeam={canManageCurrentTeam}
+                    handleDeleteMember={() => {
+                      deleteMember(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                    onUpdateMember={() => {
+                      setMemberToUpdate(member);
+                    }}
+                    handleSendReminder={() => {
+                      handleSendReminder(teamId, member._id!).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                  />
+                );
+              })}
+            </div>
+          </div>
+        )}
       </div>
 
       {canManageCurrentTeam && (
