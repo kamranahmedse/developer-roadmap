@@ -2,6 +2,8 @@ import { MailIcon } from '../ReactIcons/MailIcon';
 import { MemberActionDropdown } from './MemberActionDropdown';
 import { MemberRoleBadge } from './RoleBadge';
 import type { TeamMemberItem } from './TeamMembersPage';
+import { $canManageCurrentTeam } from '../../stores/team';
+import { useStore } from '@nanostores/preact';
 
 type TeamMemberProps = {
   member: TeamMemberItem;
@@ -9,9 +11,9 @@ type TeamMemberProps = {
   index: number;
   teamId: string;
   canManageCurrentTeam: boolean;
-  handleDeleteMember: () => void;
+  onDeleteMember: () => void;
   onUpdateMember: () => void;
-  handleSendReminder: () => void;
+  onSendProgressReminder: () => void;
   onResendInvite: () => void;
 };
 
@@ -23,16 +25,17 @@ export function TeamMemberItem(props: TeamMemberProps) {
     onUpdateMember,
     canManageCurrentTeam,
     userId,
-    handleDeleteMember,
-    handleSendReminder,
+    onDeleteMember,
+    onSendProgressReminder,
   } = props;
 
-  const showNoProgress =
-    member.progress.length === 0 && member.status === 'joined';
-  const showReminder =
-    member.progress.length === 0 &&
+  const canManageTeam = useStore($canManageCurrentTeam);
+  const showNoProgressBadge = !member.hasProgress && member.status === 'joined';
+  const allowProgressReminder =
+    canManageTeam &&
+    !member.hasProgress &&
     member.status === 'joined' &&
-    !(member.userId === userId);
+    member.userId !== userId;
 
   return (
     <div
@@ -53,15 +56,12 @@ export function TeamMemberItem(props: TeamMemberProps) {
         <div>
           <div className="mb-1 flex items-center gap-2 sm:hidden">
             <MemberRoleBadge role={member.role} />
-            {showReminder && (
-              <SendProgressReminder handleSendReminder={handleSendReminder} />
-            )}
           </div>
           <div className="flex items-center">
             <h3 className="inline-grid grid-cols-[auto_auto_auto] items-center font-medium">
               <span className="truncate">{member.name}</span>
-              {showNoProgress && (
-                <span className="ml-2 rounded-full bg-gray-600 px-2 py-0.5 text-xs font-normal text-white sm:inline">
+              {showNoProgressBadge && (
+                <span className="ml-2 rounded-full bg-red-400 px-2 py-0.5 text-xs font-normal text-white">
                   No Progress
                 </span>
               )}
@@ -91,18 +91,16 @@ export function TeamMemberItem(props: TeamMemberProps) {
       </div>
 
       <div className="flex shrink-0 items-center text-sm">
-        {showReminder && (
-          <span className="hidden sm:block">
-            <SendProgressReminder handleSendReminder={handleSendReminder} />
-          </span>
-        )}
         <span class={'hidden sm:block'}>
           <MemberRoleBadge role={member.role} />
         </span>
         {canManageCurrentTeam && (
           <MemberActionDropdown
+            allowUpdateRole={member.status !== 'rejected'}
+            allowProgressReminder={allowProgressReminder}
             onResendInvite={onResendInvite}
-            onDeleteMember={handleDeleteMember}
+            onSendProgressReminder={onSendProgressReminder}
+            onDeleteMember={onDeleteMember}
             isDisabled={member.userId === userId}
             onUpdateMember={onUpdateMember}
             member={member}
@@ -123,10 +121,10 @@ function SendProgressReminder(props: SendProgressReminderProps) {
   return (
     <button
       onClick={handleSendReminder}
-      className="mr-2 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-orange-100 px-2 py-0.5 text-xs text-orange-700"
+      className="ml-2 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-orange-100 px-2 py-0.5 text-xs text-orange-700"
     >
       <MailIcon className="h-3 w-3" />
-      <span>Reminder</span>
+      <span>Remind</span>
     </button>
   );
 }

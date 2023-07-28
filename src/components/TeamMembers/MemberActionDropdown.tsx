@@ -1,9 +1,9 @@
 import { useRef, useState } from 'preact/hooks';
 import type { TeamMemberDocument } from './TeamMembersPage';
-import { httpDelete, httpPatch } from '../../lib/http';
 import MoreIcon from '../../icons/more-vertical.svg';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useToast } from '../../hooks/use-toast';
+import { MailIcon } from '../ReactIcons/MailIcon';
 
 export function MemberActionDropdown({
   member,
@@ -11,14 +11,19 @@ export function MemberActionDropdown({
   onDeleteMember,
   onResendInvite,
   isDisabled = false,
+  onSendProgressReminder,
+  allowProgressReminder = false,
+  allowUpdateRole = true,
 }: {
   onDeleteMember: () => void;
   onUpdateMember: () => void;
   onResendInvite: () => void;
+  onSendProgressReminder: () => void;
   isDisabled: boolean;
+  allowProgressReminder: boolean;
+  allowUpdateRole: boolean;
   member: TeamMemberDocument;
 }) {
-  const toast = useToast();
   const menuRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -35,13 +40,28 @@ export function MemberActionDropdown({
         setIsOpen(false);
       },
     },
-    {
-      name: 'Update Role',
-      handleClick: () => {
-        onUpdateMember();
-        setIsOpen(false);
-      },
-    },
+    ...(allowUpdateRole
+      ? [
+          {
+            name: 'Update Role',
+            handleClick: () => {
+              onUpdateMember();
+              setIsOpen(false);
+            },
+          },
+        ]
+      : []),
+    ...(allowProgressReminder
+      ? [
+          {
+            name: 'Send Progress Reminder',
+            handleClick: () => {
+              onSendProgressReminder();
+              setIsOpen(false);
+            },
+          },
+        ]
+      : []),
     ...(['invited'].includes(member.status)
       ? [
           {
@@ -67,7 +87,7 @@ export function MemberActionDropdown({
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-0 top-full z-50 mt-1 w-32 rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+          className="align-right absolute right-0 top-full z-50 mt-1 w-[200px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
         >
           <ul>
             {actions.map((action, index) => {

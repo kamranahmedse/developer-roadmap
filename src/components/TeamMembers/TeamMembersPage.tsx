@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpDelete, httpGet, httpPatch } from '../../lib/http';
-import { MemberActionDropdown } from './MemberActionDropdown';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
@@ -13,7 +12,6 @@ import { UpdateMemberPopup } from './UpdateMemberPopup';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam } from '../../stores/team';
 import { useToast } from '../../hooks/use-toast';
-import { MemberRoleBadge } from './RoleBadge';
 import { TeamMemberItem } from './TeamMemberItem';
 
 export interface TeamMemberDocument {
@@ -43,7 +41,7 @@ export interface UserResourceProgressDocument {
 export interface TeamMemberItem extends TeamMemberDocument {
   name: string;
   avatar: string;
-  progress: UserResourceProgressDocument[];
+  hasProgress: boolean;
 }
 
 export function TeamMembersPage() {
@@ -187,7 +185,7 @@ export function TeamMembersPage() {
         />
       )}
       <div>
-        <div className="rounded-b-sm rounded-t-md border">
+        <div className="rounded-md border">
           <div className="flex items-center justify-between gap-2 border-b p-3">
             <p className="hidden text-sm sm:block">
               {teamMembers.length} people in the team.
@@ -211,7 +209,7 @@ export function TeamMembersPage() {
                   });
                 }}
                 canManageCurrentTeam={canManageCurrentTeam}
-                handleDeleteMember={() => {
+                onDeleteMember={() => {
                   deleteMember(teamId, member._id!).finally(() => {
                     pageProgressMessage.set('');
                   });
@@ -219,7 +217,7 @@ export function TeamMembersPage() {
                 onUpdateMember={() => {
                   setMemberToUpdate(member);
                 }}
-                handleSendReminder={() => {
+                onSendProgressReminder={() => {
                   handleSendReminder(teamId, member._id!).finally(() => {
                     pageProgressMessage.set('');
                   });
@@ -231,8 +229,8 @@ export function TeamMembersPage() {
 
         {invitedMembers.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-xl font-medium">Invited Members</h3>
-            <div className="mt-2 rounded-b-sm rounded-t-md border">
+            <h3 className="text-xs uppercase text-gray-400">Invited Members</h3>
+            <div className="mt-2 rounded-md border">
               {invitedMembers.map((member, index) => {
                 return (
                   <TeamMemberItem
@@ -247,7 +245,7 @@ export function TeamMembersPage() {
                       });
                     }}
                     canManageCurrentTeam={canManageCurrentTeam}
-                    handleDeleteMember={() => {
+                    onDeleteMember={() => {
                       deleteMember(teamId, member._id!).finally(() => {
                         pageProgressMessage.set('');
                       });
@@ -255,7 +253,7 @@ export function TeamMembersPage() {
                     onUpdateMember={() => {
                       setMemberToUpdate(member);
                     }}
-                    handleSendReminder={() => {
+                    onSendProgressReminder={() => {
                       handleSendReminder(teamId, member._id!).finally(() => {
                         pageProgressMessage.set('');
                       });
@@ -269,7 +267,7 @@ export function TeamMembersPage() {
 
         {rejectedMembers.length > 0 && (
           <div className="mt-6">
-            <h3 className="text-xl font-medium">Rejected Members</h3>
+            <h3 className="text-xs uppercase text-gray-400">Rejected Invites</h3>
             <div className="mt-2 rounded-b-sm rounded-t-md border">
               {rejectedMembers.map((member, index) => {
                 return (
@@ -285,7 +283,7 @@ export function TeamMembersPage() {
                       });
                     }}
                     canManageCurrentTeam={canManageCurrentTeam}
-                    handleDeleteMember={() => {
+                    onDeleteMember={() => {
                       deleteMember(teamId, member._id!).finally(() => {
                         pageProgressMessage.set('');
                       });
@@ -293,7 +291,7 @@ export function TeamMembersPage() {
                     onUpdateMember={() => {
                       setMemberToUpdate(member);
                     }}
-                    handleSendReminder={() => {
+                    onSendProgressReminder={() => {
                       handleSendReminder(teamId, member._id!).finally(() => {
                         pageProgressMessage.set('');
                       });
