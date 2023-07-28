@@ -237,7 +237,7 @@ export function Step1(props: Step1Props) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-row items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col md:flex-row items-center justify-between gap-2">
         <button
           type="button"
           onClick={onBack}

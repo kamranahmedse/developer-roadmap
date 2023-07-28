@@ -76,7 +76,7 @@ export function Step3(props: Step3Props) {
   return (
     <form className="mt-4 flex w-full flex-col" onSubmit={onSubmit}>
       <div class="mb-1 mt-2">
-        <h2 class="mb-2 text-2xl font-bold">Invite your Team</h2>
+        <h2 class="mb-1 md:mb-2 text-lg md:text-2xl font-bold">Invite your Team</h2>
         <p class="text-sm text-gray-700">
           Use the form below to invite your team members to your team. You can
           also invite them later.
@@ -85,7 +85,7 @@ export function Step3(props: Step3Props) {
       <div className="mt-4 flex flex-col gap-1">
         {users.map((user, userCounter) => {
           return (
-            <div className="flex flex-row gap-2" key={user.id}>
+            <div className="flex flex-col sm:flex-row gap-2" key={user.id}>
               <input
                 ref={userCounter === users.length - 1 ? emailInputRef : null}
                 autofocus={true}
@@ -163,7 +163,7 @@ export function Step3(props: Step3Props) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-row items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col sm:flex-row items-stretch md:items-center justify-between gap-2">
         <button
           type="button"
           onClick={onBack}
@@ -179,7 +179,7 @@ export function Step3(props: Step3Props) {
             type="button"
             onClick={onNext}
             className={
-              'rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black'
+              'rounded-md flex-grow md:flex-auto border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black'
             }
           >
             Skip for Now

@@ -163,7 +163,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       )}
 
       {teamResourceConfig.length > 0 && (
-        <div className="mt-4 grid grid-cols-3 flex-wrap gap-2.5">
+        <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 flex-wrap gap-2.5">
           {teamResourceConfig.map(({ resourceId, removed: removedTopics }) => {
             const roadmapTitle =
               allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||

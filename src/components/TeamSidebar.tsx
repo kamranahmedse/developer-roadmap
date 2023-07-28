@@ -76,7 +76,7 @@ export const TeamSidebar: FunctionalComponent<{
                 }`}
               >
                 <img alt={'teams'} src={GroupIcon} class={`mr-2 h-4 w-4`} />
-                Teams
+                Personal Account / Teams
               </a>
             </li>
             {sidebarLinks.map((sidebarLink) => {

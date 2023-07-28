@@ -8,6 +8,8 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
+import { useStore } from '@nanostores/preact';
+import { $currentTeam } from '../../stores/team';
 
 export type ProgressMapProps = {
   teamId: string;
@@ -37,6 +39,8 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
 
   const [removedItems, setRemovedItems] =
     useState<string[]>(defaultRemovedItems);
+
+  const currentTeam = useStore($currentTeam);
 
   useEffect(() => {
     function onTopicClick(e: any) {
@@ -147,6 +151,11 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
     <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
+          id={
+            currentTeam?.type === 'company'
+              ? 'customized-roadmap'
+              : 'original-roadmap'
+          }
           ref={popupBodyEl}
           class="popup-body relative rounded-lg bg-white shadow"
         >
@@ -189,7 +198,7 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
               </button>
             </div>
           </div>
-          <div ref={containerEl} className="px-4"></div>
+          <div id="resource-svg-wrap" ref={containerEl} className="px-4"></div>
 
           {isLoading && (
             <div class="flex w-full justify-center">

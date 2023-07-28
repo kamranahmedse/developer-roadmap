@@ -17,7 +17,7 @@ export function Step2(props: Step2Props) {
     <>
       <div className="mt-4 flex w-full flex-col">
         <div className="mb-1 mt-2">
-          <h2 className="mb-1.5 text-2xl font-bold">Select Roadmaps</h2>
+          <h2 className="mb-1 md:mb-1.5 text-lg md:text-2xl font-bold">Select Roadmaps</h2>
           <p className="text-sm text-gray-700">
             You can always add and customize your roadmaps later.
           </p>
@@ -30,7 +30,7 @@ export function Step2(props: Step2Props) {
         />
       </div>
 
-      <div className="mt-4 flex flex-row items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2">
         <button
           type="button"
           onClick={onBack}
@@ -41,17 +41,29 @@ export function Step2(props: Step2Props) {
           <span className="mr-1">&larr;</span>
           Previous Step
         </button>
-        <button
-          type="submit"
-          disabled={teamResourceConfig.length === 0}
-          onClick={onNext}
-          className={
-            'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
-          }
-        >
-          Next Step
-          <span className="ml-1">&rarr;</span>
-        </button>
+
+        <div className={'flex gap-2'}>
+          <button
+            type="button"
+            onClick={onNext}
+            className={
+              'flex-grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto'
+            }
+          >
+            Skip for Now
+          </button>
+          <button
+            type="submit"
+            disabled={teamResourceConfig.length === 0}
+            onClick={onNext}
+            className={
+              'rounded-md border bg-black px-4 py-2 text-white disabled:opacity-50'
+            }
+          >
+            Next Step
+            <span className="ml-1">&rarr;</span>
+          </button>
+        </div>
       </div>
     </>
   );

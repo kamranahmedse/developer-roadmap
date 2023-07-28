@@ -16,6 +16,8 @@ import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
+import { useStore } from '@nanostores/preact';
+import { $currentTeam } from '../../stores/team';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -44,6 +46,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   } = props;
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
+  const currentTeam = useStore($currentTeam);
 
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
@@ -275,14 +278,17 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
   return (
     <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
-      <div class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
+      <div
+        id={currentTeam?.type === 'company' ? 'customized-roadmap' : 'original-roadmap'}
+        class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
+      >
         <div
           ref={popupBodyEl}
-          class="popup-body relative rounded-lg bg-white shadow pt-[1px]"
+          class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           {isCurrentUser && (
-            <div className="sticky top-1 mx-1 mt-1 mb-0 rounded-xl bg-gray-900 p-4 text-gray-300">
-              <h2 className={'text-base mb-1.5'}>
+            <div className="sticky top-1 mx-1 mb-0 mt-1 rounded-xl bg-gray-900 p-4 text-gray-300">
+              <h2 className={'mb-1.5 text-base'}>
                 Follow the Instructions below to update your progress
               </h2>
               <ul className="flex flex-col gap-1">
@@ -385,7 +391,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
             </p>
           </div>
 
-          <div ref={containerEl} className="px-4 pb-2"></div>
+          <div
+            id="resource-svg-wrap"
+            ref={containerEl}
+            className="px-4 pb-2"
+          ></div>
 
           {isLoading && (
             <div class="flex w-full justify-center">
@@ -398,7 +408,9 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${isCurrentUser ? 'hover:bg-gray-800' : 'hover:bg-gray-100'}`}
+            className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${
+              isCurrentUser ? 'hover:bg-gray-800' : 'hover:bg-gray-100'
+            }`}
             onClick={onClose}
           >
             <img alt={'close'} src={CloseIcon} className="h-4 w-4" />

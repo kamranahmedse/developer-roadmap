@@ -86,10 +86,7 @@ export function RoleDropdown(props: RoleDropdownProps) {
         }`}
       >
         <span
-          className={`capitalize ${
-            selectedRole === 'admin' ? 'text-blue-600' : ''
-          } ${selectedRole === 'manager' ? 'text-cyan-600' : ''}`}
-        >
+          className={`capitalize`}>
           {selectedRole || 'Select Role'}
         </span>
         <ChevronDownIcon
