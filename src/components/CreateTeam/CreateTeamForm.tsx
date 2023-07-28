@@ -190,14 +190,14 @@ export function CreateTeamForm() {
   }
 
   return (
-    <div className={'mx-auto max-w-[700px] py-6'}>
-      <div className={'mb-8 flex flex-col items-center'}>
-        <h1 className={'text-4xl font-bold'}>Create Team</h1>
-        <p className={'mt-2 text-gray-500'}>
+    <div className={'mx-auto max-w-[700px] py-1 md:py-6'}>
+      <div className={'mb-3 md:mb-8 pb-3 md:pb-0 border-b md:border-b-0 flex flex-col items-start md:items-center'}>
+        <h1 className={'text-xl md:text-4xl font-bold'}>Create Team</h1>
+        <p className={'mt-1 md:mt-2 text-sm md:text-base text-gray-500'}>
           Complete the steps below to create your team
         </p>
       </div>
-      <div className="mb-8 mt-8 flex w-full">
+      <div className="mb-8 mt-8 hidden sm:flex w-full">
         <Stepper
           activeIndex={stepIndex}
           completeSteps={completedSteps}

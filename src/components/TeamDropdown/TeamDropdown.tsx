@@ -9,7 +9,7 @@ import { $currentTeam, $teamList } from '../../stores/team';
 import { useStore } from '@nanostores/preact';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useToast } from '../../hooks/use-toast';
-import type {ValidTeamType} from "../CreateTeam/Step0";
+import type { ValidTeamType } from '../CreateTeam/Step0';
 
 const allowedStatus = ['invited', 'joined', 'rejected'] as const;
 export type AllowedMemberStatus = (typeof allowedStatus)[number];
@@ -81,94 +81,102 @@ export function TeamDropdown() {
   if (
     !user?.email.endsWith('@insightpartners.com') &&
     !user?.email.endsWith('@roadmap.sh') &&
-    !['arikchangma@gmail.com', 'kamranahmed.se@gmail.com', 'stephen.chetcuti@gmail.com'].includes(user?.email!)
+    ![
+      'arikchangma@gmail.com',
+      'kamranahmed.se@gmail.com',
+      'stephen.chetcuti@gmail.com',
+    ].includes(user?.email!)
   ) {
     return null;
   }
 
   return (
-    <div className="relative mr-2">
-      <button
-        className="flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
-        onClick={() => setShowDropdown(!showDropdown)}
-      >
-        {pendingTeamIds.length > 0 && (
-          <span className="absolute -left-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-medium text-white">
-            {pendingTeamIds.length}
-          </span>
-        )}
-        <div className="inline-grid grid-cols-[16px_auto] items-center gap-1.5 mr-1.5">
-          {isLoading && <Spinner className="h-4 w-4" isDualRing={false} />}
-          {!isLoading && (
-            <img
-              src={
-                selectedAvatar
-                  ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL
-                  }/${selectedAvatar}`
-                  : '/images/default-avatar.png'
-              }
-              alt=""
-              className="h-4 w-4 rounded-full object-cover"
-            />
-          )}
-          <span className="truncate">
-            {!isLoading && selectedLabel}
-            {isLoading && 'Loading ..'}
-          </span>
-        </div>
-        <img alt={'show dropdown'} src={ChevronDown} className="h-4 w-4" />
-      </button>
-
-      {showDropdown && (
-        <div
-          ref={dropdownRef}
-          className="absolute top-full z-50 mt-2 w-full rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+    <>
+      <div className="relative mr-2">
+        <button
+          className="flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
+          onClick={() => setShowDropdown(!showDropdown)}
         >
-          <ul>
-            <li>
-              <a
-                className="flex w-full cursor-pointer items-center gap-2 truncate rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
-                href="/account"
-              >
-                <span className="truncate">Personal Account</span>
-              </a>
-            </li>
-            {teamList.map((team) => {
-              let pageLink = '';
-              if (team.status === 'invited') {
-                pageLink = `/respond-invite?i=${team.memberId}`;
-              } else if (team.status === 'joined') {
-                pageLink = `/team/progress?t=${team._id}`;
-              }
+          {pendingTeamIds.length > 0 && (
+            <span className="absolute -left-1.5 -top-1.5 flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs font-medium text-white">
+              {pendingTeamIds.length}
+            </span>
+          )}
+          <div className="mr-1.5 inline-grid grid-cols-[16px_auto] items-center gap-1.5">
+            {isLoading && <Spinner className="h-4 w-4" isDualRing={false} />}
+            {!isLoading && (
+              <img
+                src={
+                  selectedAvatar
+                    ? `${
+                        import.meta.env.PUBLIC_AVATAR_BASE_URL
+                      }/${selectedAvatar}`
+                    : '/images/default-avatar.png'
+                }
+                alt=""
+                className="h-4 w-4 rounded-full object-cover"
+              />
+            )}
+            <span className="truncate">
+              {!isLoading && selectedLabel}
+              {isLoading && 'Loading ..'}
+            </span>
+          </div>
+          <img alt={'show dropdown'} src={ChevronDown} className="h-4 w-4" />
+        </button>
 
-              return (
-                <li>
-                  <a
-                    className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
-                    href={`${pageLink}`}
-                  >
-                    <span className="flex-grow min-w-0 truncate">{team.name}</span>
-                    {pendingTeamIds.includes(team._id) && (
-                      <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
-                        Invite
-                      </span>
-                    )}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-          <a
-            className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
-            href="/team/new"
+        {showDropdown && (
+          <div
+            ref={dropdownRef}
+            className="absolute top-full z-50 mt-2 w-full rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
           >
-            <span>+</span>
-            <span>New Team</span>
-          </a>
-        </div>
-      )}
+            <ul>
+              <li>
+                <a
+                  className="flex w-full cursor-pointer items-center gap-2 truncate rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  href="/account"
+                >
+                  <span className="truncate">Personal Account</span>
+                </a>
+              </li>
+              {teamList.map((team) => {
+                let pageLink = '';
+                if (team.status === 'invited') {
+                  pageLink = `/respond-invite?i=${team.memberId}`;
+                } else if (team.status === 'joined') {
+                  pageLink = `/team/progress?t=${team._id}`;
+                }
 
-      <hr class='my-4' />
-    </div>
+                return (
+                  <li>
+                    <a
+                      className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                      href={`${pageLink}`}
+                    >
+                      <span className="min-w-0 flex-grow truncate">
+                        {team.name}
+                      </span>
+                      {pendingTeamIds.includes(team._id) && (
+                        <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
+                          Invite
+                        </span>
+                      )}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+            <a
+              className="mt-2 flex w-full cursor-pointer items-center justify-center gap-2 rounded bg-gray-100 p-2 text-sm font-medium text-slate-800 hover:opacity-90"
+              href="/team/new"
+            >
+              <span>+</span>
+              <span>New Team</span>
+            </a>
+          </div>
+        )}
+      </div>
+      <hr class="my-4" />
+    </>
   );
 }
