@@ -19,3 +19,5 @@ When implementing defaulting, keep the following guidelines in mind:
 - **Regularly review and adjust**: As your user base or product evolves, it's essential to review and adjust your default settings to ensure they remain relevant and helpful to users.
 
 In summary, defaulting is a powerful UX design technique that, when used thoughtfully, can streamline user interactions and lead to better usability and user satisfaction.
+
+- [The Power of Defaults](https://www.nngroup.com/articles/the-power-of-defaults/)
