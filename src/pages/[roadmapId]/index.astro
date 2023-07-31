@@ -7,6 +7,7 @@ import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../components/UpcomingForm.astro';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
   generateArticleSchema,
@@ -117,6 +118,11 @@ if (roadmapFAQs.length) {
     }
 
     {roadmapData.isUpcoming && <UpcomingForm />}
+    <UserProgressModal
+      resourceId={roadmapId}
+      resourceType='roadmap'
+      client:only
+    />
 
     <FAQs faqs={roadmapFAQs} />
     <RelatedRoadmaps roadmap={roadmapData} />
