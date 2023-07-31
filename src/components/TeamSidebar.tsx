@@ -4,6 +4,7 @@ import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
 import TeamProgress from '../icons/team-progress.svg';
 import SettingsIcon from '../icons/cog.svg';
+import ChatIcon from '../icons/chat.svg';
 import MapIcon from '../icons/map.svg';
 import GroupIcon from '../icons/group.svg';
 import { useState } from 'preact/hooks';
@@ -18,6 +19,8 @@ export const TeamSidebar: FunctionalComponent<{
   const currentTeam = useStore($currentTeam);
 
   const { teamId } = useTeamId();
+
+  const feedbackFormLink = 'https://forms.gle/g9h6yEqsG4y1hQUv5';
 
   const sidebarLinks = [
     {
@@ -100,6 +103,21 @@ export const TeamSidebar: FunctionalComponent<{
                 </li>
               );
             })}
+
+            <li>
+              <a
+                  href={feedbackFormLink}
+                  target={'_blank'}
+                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
+              >
+                <img
+                    alt={'menu icon'}
+                    src={ChatIcon}
+                    className="mr-2 h-4 w-4"
+                />
+                Send Feedback
+              </a>
+            </li>
           </ul>
         )}
       </div>
@@ -127,7 +145,7 @@ export const TeamSidebar: FunctionalComponent<{
                           <img
                             alt="menu icon"
                             src={sidebarLink.icon}
-                            className="mr-2 h-4 w-4"
+                            className="relative top-[2px] mr-2 h-4 w-4"
                           />
                           {sidebarLink.title}
                         </span>
@@ -143,6 +161,11 @@ export const TeamSidebar: FunctionalComponent<{
                 );
               })}
             </ul>
+
+            <a href={feedbackFormLink} target={'_blank'} className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-gray-500 text-sm hover:text-black transition-colors hover:border-gray-300 hover:bg-gray-50">
+              <img src={ChatIcon} className="mr-2 h-4 w-4" />
+              Send Feedback
+            </a>
           </nav>
         </aside>
         <div className="grow px-0 py-0 md:px-10 md:py-10">{children}</div>
