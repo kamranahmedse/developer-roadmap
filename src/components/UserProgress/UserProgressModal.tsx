@@ -13,7 +13,7 @@ import { useAuth } from '../../hooks/use-auth';
 
 export type ProgressMapProps = {
   resourceId: string;
-  resourceType: ResourceType
+  resourceType: ResourceType;
 };
 
 type UserProgressResponse = {
@@ -34,7 +34,7 @@ export function UserProgressModal(props: ProgressMapProps) {
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const { uid: userId } = getUrlParams();
-  const currentUser = useAuth()
+  const currentUser = useAuth();
 
   if (!userId || currentUser?.id === userId) {
     deleteUrlParam('uid');
@@ -60,7 +60,8 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceId: string
   ) {
     const { error, response } = await httpGet<UserProgressResponse>(
-      `${import.meta.env.PUBLIC_API_URL
+      `${
+        import.meta.env.PUBLIC_API_URL
       }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
     );
     if (error || !response) {
@@ -174,7 +175,7 @@ export function UserProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           <div className="p-4">
-            <div className="mb-5 mt-0 min-h-[28px] text-left md:h-[60px] md:mt-4 md:text-center">
+            <div className="mb-5 mt-0 min-h-[28px] text-left md:mt-4 md:h-[60px] md:text-center">
               {isLoading && (
                 <div class="flex w-full justify-center">
                   <Spinner
@@ -199,8 +200,9 @@ export function UserProgressModal(props: ProgressMapProps) {
               )}
             </div>
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${isLoading ? 'striped-loader' : ''
-                }`}
+              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
+                isLoading ? 'striped-loader' : ''
+              }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -211,8 +213,9 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
             </p>
             <p
-              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${isLoading ? 'striped-loader' : ''
-                }`}
+              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+                isLoading ? 'striped-loader' : ''
+              }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -223,8 +226,7 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
               <span class="mx-1.5 text-gray-400">·</span>
               <span>
-                <span>{userLearning}</span> in
-                progress
+                <span>{userLearning}</span> in progress
               </span>
 
               {userSkipped > 0 && (

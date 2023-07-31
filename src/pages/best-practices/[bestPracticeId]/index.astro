@@ -8,8 +8,8 @@ import UpcomingForm from '../../../components/UpcomingForm.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { UserProgressModal } from '../../../components/UserProgress/UserProgressModal';
 import {
-BestPracticeFrontmatter,
-getBestPracticeIds,
+  BestPracticeFrontmatter,
+  getBestPracticeIds,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 
@@ -107,10 +107,10 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   </div>
 
   <UserProgressModal
-  resourceId={bestPracticeId}
-  resourceType='best-practice'
-  client:only
-/>
+    resourceId={bestPracticeId}
+    resourceType='best-practice'
+    client:only
+  />
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}
 </BaseLayout>
