@@ -58,7 +58,8 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceId: string
   ) {
     const { error, response } = await httpGet<UserProgressResponse>(
-      `${import.meta.env.PUBLIC_API_URL
+      `${
+        import.meta.env.PUBLIC_API_URL
       }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
     );
     if (error || !response) {
@@ -128,10 +129,11 @@ export function UserProgressModal(props: ProgressMapProps) {
       });
   }, [userId]);
 
-  const user = useMemo(() => userResponse, [userResponse])
+  const user = useMemo(() => userResponse, [userResponse]);
   const userProgressTotal = user?.progress?.total || 0;
   const userDone = user?.progress?.done?.length || 0;
-  const progressPercentage = Math.round((userDone / userProgressTotal) * 100) || 0
+  const progressPercentage =
+    Math.round((userDone / userProgressTotal) * 100) || 0;
   const userLearning = user?.progress?.learning?.length || 0;
   const userSkipped = user?.progress?.skipped?.length || 0;
 
@@ -147,21 +149,34 @@ export function UserProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           <div className="p-4">
-            <div className="mb-5 mt-0 text-left md:mt-4 md:text-center">
-              <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
-                {user?.user.name}'s Progress
-              </h2>
-              <p
-                className={
-                  'hidden text-xs text-gray-500 sm:text-sm md:block md:text-base'
-                }
-              >
-                You are looking at {user?.user.name}'s progress.
-              </p>
+            <div className="mb-5 mt-0 min-h-[28px] text-left sm:h-[60px] md:mt-4 md:text-center">
+              {isLoading && (
+                <div class="flex w-full justify-center">
+                  <Spinner
+                    isDualRing={false}
+                    className="h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
+                  />
+                </div>
+              )}
+              {!isLoading && (
+                <>
+                  <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
+                    {user?.user.name}'s Progress
+                  </h2>
+                  <p
+                    className={
+                      'hidden text-xs text-gray-500 sm:text-sm md:block md:text-base'
+                    }
+                  >
+                    You are looking at {user?.user.name}'s progress.
+                  </p>
+                </>
+              )}
             </div>
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${isLoading ? 'striped-loader' : ''
-                }`}
+              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
+                isLoading ? 'striped-loader' : ''
+              }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -172,8 +187,9 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
             </p>
             <p
-              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${isLoading ? 'striped-loader' : ''
-                }`}
+              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+                isLoading ? 'striped-loader' : ''
+              }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
