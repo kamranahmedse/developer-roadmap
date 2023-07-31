@@ -1,6 +1,6 @@
 # Beam Search
 
-Beam search is widely used for language generation tasks and involves keeping the k most likely hypotheses at each step during decoding. The final output is determined based on the highest probability among these hypotheses. The parameter k, known as the "beam size," is critical in this process.
+Beam search is widely used for language generation tasks and involves keeping the k most likely hypotheses at each step during decoding. The final output is based on the highest probability among these hypotheses. The parameter k, known as the "beam size," is critical in this process.
 
 With a higher k, you get a more probable hypothesis. Note that when k=1, we talk about “greedy search” since we only keep the most probable hypothesis at each time step.
 By default, in most applications, k is arbitrarily set between 1 and 10. Values that may seem very low.
