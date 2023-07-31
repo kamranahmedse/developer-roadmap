@@ -9,6 +9,7 @@ import { renderTopicProgress } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
+import { useAuth } from '../../hooks/use-auth';
 
 export type ProgressMapProps = {
   resourceId: string;
@@ -19,8 +20,6 @@ type UserProgressResponse = {
   user: {
     _id: string;
     name: string;
-    email: string;
-    avatar: string;
   };
   progress: {
     total: number;
@@ -35,10 +34,13 @@ export function UserProgressModal(props: ProgressMapProps) {
   const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const { uid: userId } = getUrlParams();
+  const currentUser = useAuth()
 
-  if (!userId) {
+  if (!userId || currentUser?.id === userId) {
+    deleteUrlParam('uid');
     return null;
   }
+
   const [showModal, setShowModal] = useState(userId ? true : false);
 
   const [userResponse, setUserResponse] = useState<UserProgressResponse>();
@@ -58,8 +60,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceId: string
   ) {
     const { error, response } = await httpGet<UserProgressResponse>(
-      `${
-        import.meta.env.PUBLIC_API_URL
+      `${import.meta.env.PUBLIC_API_URL
       }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
     );
     if (error || !response) {
@@ -129,6 +130,30 @@ export function UserProgressModal(props: ProgressMapProps) {
       });
   }, [userId]);
 
+  async function handleClick(e: MouseEvent) {
+    const targetGroup = (e.target as HTMLElement)?.closest('g');
+    if (!targetGroup) {
+      return;
+    }
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
+    }
+    e.preventDefault();
+    e.stopPropagation();
+    return;
+  }
+
+  useEffect(() => {
+    if (!containerEl.current) {
+      return;
+    }
+    containerEl.current.addEventListener('click', handleClick);
+    return () => {
+      containerEl.current?.removeEventListener('click', handleClick);
+    };
+  }, [containerEl.current]);
+
   const user = useMemo(() => userResponse, [userResponse]);
   const userProgressTotal = user?.progress?.total || 0;
   const userDone = user?.progress?.done?.length || 0;
@@ -149,7 +174,7 @@ export function UserProgressModal(props: ProgressMapProps) {
           class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           <div className="p-4">
-            <div className="mb-5 mt-0 min-h-[28px] text-left sm:h-[60px] md:mt-4 md:text-center">
+            <div className="mb-5 mt-0 min-h-[28px] text-left md:h-[60px] md:mt-4 md:text-center">
               {isLoading && (
                 <div class="flex w-full justify-center">
                   <Spinner
@@ -174,9 +199,8 @@ export function UserProgressModal(props: ProgressMapProps) {
               )}
             </div>
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
-                isLoading ? 'striped-loader' : ''
-              }`}
+              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${isLoading ? 'striped-loader' : ''
+                }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -187,9 +211,8 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
             </p>
             <p
-              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
-                isLoading ? 'striped-loader' : ''
-              }`}
+              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${isLoading ? 'striped-loader' : ''
+                }`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -200,7 +223,7 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
               <span class="mx-1.5 text-gray-400">·</span>
               <span>
-                <span data-progress-learning="">{userLearning}</span> in
+                <span>{userLearning}</span> in
                 progress
               </span>
 
@@ -208,14 +231,14 @@ export function UserProgressModal(props: ProgressMapProps) {
                 <>
                   <span class="mx-1.5 text-gray-400">·</span>
                   <span>
-                    <span data-progress-skipped="">{userSkipped}</span> skipped
+                    <span>{userSkipped}</span> skipped
                   </span>
                 </>
               )}
 
               <span class="mx-1.5 text-gray-400">·</span>
               <span>
-                <span data-progress-total="">{userProgressTotal}</span> Total
+                <span>{userProgressTotal}</span> Total
               </span>
             </p>
           </div>
