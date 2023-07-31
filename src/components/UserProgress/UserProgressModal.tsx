@@ -5,7 +5,7 @@ import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
-import { renderTopicProgress } from '../../lib/resource-progress';
+import { ResourceType, renderTopicProgress } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
@@ -13,7 +13,7 @@ import { useAuth } from '../../hooks/use-auth';
 
 export type ProgressMapProps = {
   resourceId: string;
-  resourceType: 'roadmap' | 'best-practice';
+  resourceType: ResourceType
 };
 
 type UserProgressResponse = {
