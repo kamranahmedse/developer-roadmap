@@ -46,9 +46,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     <button
       className={`flex items-center gap-1 text-sm font-medium ${
         isCopied ? 'text-green-500' : 'text-gray-500 hover:text-black'
-      }
-      ${className}
-      `}
+      } ${className}`}
       onClick={handleCopyLink}
     >
       {isCopied ? (
