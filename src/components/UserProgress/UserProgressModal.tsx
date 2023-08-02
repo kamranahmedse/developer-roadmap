@@ -1,15 +1,15 @@
 import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
-import { Spinner } from '../ReactIcons/Spinner';
 import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
-import { ResourceType, renderTopicProgress } from '../../lib/resource-progress';
+import { renderTopicProgress, ResourceType } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
+import { Spinner } from '../ReactIcons/Spinner';
 
 export type ProgressMapProps = {
   resourceId: string;
@@ -30,24 +30,29 @@ type UserProgressResponse = {
 };
 
 export function UserProgressModal(props: ProgressMapProps) {
+  const { s: userId } = getUrlParams();
   const { resourceId, resourceType } = props;
-  const containerEl = useRef<HTMLDivElement>(null);
-  const popupBodyEl = useRef<HTMLDivElement>(null);
-  const { uid: userId } = getUrlParams();
-  const currentUser = useAuth();
 
+  const resourceSvgEl = useRef<HTMLDivElement>(null);
+  const popupBodyEl = useRef<HTMLDivElement>(null);
+
+  const currentUser = useAuth();
   if (!userId || currentUser?.id === userId) {
-    deleteUrlParam('uid');
+    deleteUrlParam('s');
     return null;
   }
 
-  const [showModal, setShowModal] = useState(userId ? true : false);
+  const [showModal, setShowModal] = useState(!!userId);
+  const [resourceSvg, setResourceSvg] = useState<SVGElement | null>(null);
+  const [progressResponse, setProgressResponse] =
+    useState<UserProgressResponse>();
 
-  const [userResponse, setUserResponse] = useState<UserProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  let resourceJsonUrl = 'https://roadmap.sh';
+  let resourceJsonUrl = import.meta.env.DEV
+    ? 'http://localhost:3000'
+    : 'https://roadmap.sh';
   if (resourceType === 'roadmap') {
     resourceJsonUrl += `/${resourceId}.json`;
   } else {
@@ -58,33 +63,31 @@ export function UserProgressModal(props: ProgressMapProps) {
     userId: string,
     resourceType: string,
     resourceId: string
-  ) {
+  ): Promise<UserProgressResponse | undefined> {
     const { error, response } = await httpGet<UserProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
       }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
     );
+
     if (error || !response) {
       toast.error(error?.message || 'Failed to get member progress');
-      return;
+
+      return undefined;
     }
 
-    setUserResponse(response);
     return response;
   }
 
-  async function renderResource(jsonUrl: string) {
-    const res = await fetch(jsonUrl);
-    const json = await res.json();
-    const svg = await wireframeJSONToSVG(json, {
+  async function getRoadmapSVG(jsonUrl: string): Promise<SVGElement> {
+    const { error, response: roadmapJson } = await httpGet(jsonUrl);
+    return await wireframeJSONToSVG(roadmapJson, {
       fontURL: '/fonts/balsamiq.woff2',
     });
-
-    containerEl.current?.replaceChildren(svg);
   }
 
   function onClose() {
-    deleteUrlParam('uid');
+    deleteUrlParam('s');
     setShowModal(false);
   }
 
@@ -97,30 +100,18 @@ export function UserProgressModal(props: ProgressMapProps) {
   });
 
   useEffect(() => {
-    if (
-      !containerEl.current ||
-      !resourceJsonUrl ||
-      !resourceId ||
-      !resourceType
-    ) {
+    if (!resourceJsonUrl || !resourceId || !resourceType) {
       return;
     }
 
     setIsLoading(true);
     Promise.all([
-      renderResource(resourceJsonUrl),
+      getRoadmapSVG(resourceJsonUrl),
       getUserProgress(userId, resourceType, resourceId),
     ])
-      .then(([_, user = {}]) => {
-        const { progress } = user;
-        const { done, learning, skipped } = progress || {
-          done: [],
-          learning: [],
-          skipped: [],
-        };
-        done?.forEach((id: string) => renderTopicProgress(id, 'done'));
-        learning?.forEach((id: string) => renderTopicProgress(id, 'learning'));
-        skipped?.forEach((id: string) => renderTopicProgress(id, 'skipped'));
+      .then(([svg, user]) => {
+        setResourceSvg(svg);
+        setProgressResponse(user);
       })
       .catch((err) => {
         console.error(err);
@@ -131,78 +122,107 @@ export function UserProgressModal(props: ProgressMapProps) {
       });
   }, [userId]);
 
-  async function handleClick(e: MouseEvent) {
-    const targetGroup = (e.target as HTMLElement)?.closest('g');
-    if (!targetGroup) {
-      return;
-    }
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
-      return;
-    }
-    e.preventDefault();
-    e.stopPropagation();
-    return;
-  }
-
   useEffect(() => {
-    if (!containerEl.current) {
+    console.log(resourceSvg, progressResponse, popupBodyEl);
+    if (!resourceSvg || !progressResponse?.user || !popupBodyEl?.current) {
       return;
     }
-    containerEl.current.addEventListener('click', handleClick);
-    return () => {
-      containerEl.current?.removeEventListener('click', handleClick);
-    };
-  }, [containerEl.current]);
 
-  const user = useMemo(() => userResponse, [userResponse]);
-  const userProgressTotal = user?.progress?.total || 0;
-  const userDone = user?.progress?.done?.length || 0;
+    const { progress } = progressResponse;
+    const { done, learning, skipped } = progress || {
+      done: [],
+      learning: [],
+      skipped: [],
+    };
+
+    const popupBody = popupBodyEl?.current;
+
+    done?.forEach((id: string) => renderTopicProgress(id, 'done', popupBody));
+    learning?.forEach((id: string) =>
+      renderTopicProgress(id, 'learning', popupBody)
+    );
+    skipped?.forEach((id: string) =>
+      renderTopicProgress(id, 'skipped', popupBody)
+    );
+  }, [progressResponse, resourceSvg, popupBodyEl]);
+
+  // Disable clicks on the progress SVG
+  useEffect(() => {
+    function handleClick(e: any) {
+      const closestSvg = e.target.closest('#user-progress-modal');
+      if (!closestSvg) {
+        return;
+      }
+
+      e.preventDefault();
+      e.stopPropagation();
+    }
+
+    document?.addEventListener('click', handleClick);
+    document?.addEventListener('touchstart', handleClick);
+    document?.addEventListener('contextmenu', handleClick);
+    return () => {
+      document?.addEventListener('click', handleClick);
+    };
+  }, []);
+
+  const user = progressResponse?.user;
+  const progress = progressResponse?.progress;
+
+  const userProgressTotal = progress?.total || 0;
+  const userDone = progress?.done?.length || 0;
   const progressPercentage =
     Math.round((userDone / userProgressTotal) * 100) || 0;
-  const userLearning = user?.progress?.learning?.length || 0;
-  const userSkipped = user?.progress?.skipped?.length || 0;
+  const userLearning = progress?.learning?.length || 0;
+  const userSkipped = progress?.skipped?.length || 0;
 
   if (!showModal) {
     return null;
   }
 
+  const loadingMessage =  isLoading ? (
+      <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+        <div class="relative mx-auto flex h-full w-full items-center justify-center">
+          <div className="popup-body relative rounded-lg bg-white p-5 shadow">
+            <div className="flex items-center">
+              <Spinner className="h-6 w-6" isDualRing={false} />
+              <span className="ml-3 text-lg font-semibold">
+                Loading user progress...
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+  ) : null;
+
   return (
-    <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div
+      id={'user-progress-modal'}
+      class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+    >
       <div class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
+          class={`popup-body relative rounded-lg bg-white pt-[1px] shadow`}
         >
+          { loadingMessage ? loadingMessage : null}
+
+          <div className={`${loadingMessage ? 'hidden' : ''}`}>
           <div className="p-4">
-            <div className="mb-5 mt-0 min-h-[28px] text-left md:mt-4 md:h-[60px] md:text-center">
-              {isLoading && (
-                <div class="flex w-full justify-center">
-                  <Spinner
-                    isDualRing={false}
-                    className="h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
-                  />
-                </div>
-              )}
-              {!isLoading && (
-                <>
-                  <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
-                    {user?.user.name}'s Progress
-                  </h2>
-                  <p
-                    className={
-                      'hidden text-xs text-gray-500 sm:text-sm md:block md:text-base'
-                    }
-                  >
-                    You are looking at {user?.user.name}'s progress.
-                  </p>
-                </>
-              )}
+            <div className="mb-5 mt-0 min-h-[28px] text-left sm:text-center md:mt-4 md:h-[60px]">
+              <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
+                {user?.name}'s Progress
+              </h2>
+              <p
+                className={
+                  'hidden text-xs text-gray-500 sm:text-sm md:block md:text-base'
+                }
+              >
+                You can close this popup and start tracking your progress.
+              </p>
             </div>
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
-                isLoading ? 'striped-loader' : ''
-              }`}
+              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden`}
             >
               <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
@@ -246,19 +266,11 @@ export function UserProgressModal(props: ProgressMapProps) {
           </div>
 
           <div
-            id="resource-svg-wrap"
-            ref={containerEl}
+            ref={resourceSvgEl}
             className="px-4 pb-2"
+            dangerouslySetInnerHTML={{ __html: resourceSvg?.outerHTML || '' }}
           ></div>
-
-          {isLoading && (
-            <div class="flex w-full justify-center">
-              <Spinner
-                isDualRing={false}
-                className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
-              />
-            </div>
-          )}
+          </div>
 
           <button
             type="button"
