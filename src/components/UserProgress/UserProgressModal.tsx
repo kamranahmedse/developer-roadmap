@@ -5,15 +5,11 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
 import type { ResourceType } from '../../lib/resource-progress';
+import { topicSelectorAll } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
-import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { Spinner } from '../ReactIcons/Spinner';
-import {
-  renderTopicProgress,
-  topicSelectorAll,
-} from '../../lib/resource-progress';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 
 export type ProgressMapProps = {
@@ -54,7 +50,6 @@ export function UserProgressModal(props: ProgressMapProps) {
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
-  const toast = useToast();
 
   let resourceJsonUrl = import.meta.env.DEV
     ? 'http://localhost:3000'

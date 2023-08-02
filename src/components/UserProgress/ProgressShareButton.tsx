@@ -1,6 +1,5 @@
 import { useAuth } from '../../hooks/use-auth';
 import { useCopyText } from '../../hooks/use-copy-text';
-import { useToast } from '../../hooks/use-toast';
 import type { ResourceType } from '../../lib/resource-progress';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ShareIcon } from '../ReactIcons/ShareIcon';
@@ -23,7 +22,6 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
 
   const user = useAuth();
   const { copyText, isCopied } = useCopyText();
-  const toast = useToast();
 
   function handleCopyLink() {
     const isDev = import.meta.env.DEV;
@@ -39,7 +37,6 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
 
     newUrl.searchParams.set('s', user?.id || '');
     copyText(newUrl.toString());
-    toast.success('Progress link copied to clipboard.');
   }
 
   if (!user) {
