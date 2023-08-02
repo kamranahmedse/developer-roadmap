@@ -10,6 +10,11 @@ import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { Spinner } from '../ReactIcons/Spinner';
+import {
+  renderTopicProgress,
+  topicSelectorAll,
+} from '../../lib/resource-progress';
+import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 
 export type ProgressMapProps = {
   resourceId: string;
@@ -48,6 +53,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     useState<UserProgressResponse>();
 
   const [isLoading, setIsLoading] = useState(true);
+  const [error, setError] = useState('');
   const toast = useToast();
 
   let resourceJsonUrl = import.meta.env.DEV
@@ -71,16 +77,20 @@ export function UserProgressModal(props: ProgressMapProps) {
     );
 
     if (error || !response) {
-      toast.error(error?.message || 'Failed to get member progress');
-
-      return undefined;
+      throw error || new Error('Something went wrong. Please try again!');
     }
 
     return response;
   }
 
-  async function getRoadmapSVG(jsonUrl: string): Promise<SVGElement> {
+  async function getRoadmapSVG(
+    jsonUrl: string
+  ): Promise<SVGElement | undefined> {
     const { error, response: roadmapJson } = await httpGet(jsonUrl);
+    if (error || !roadmapJson) {
+      throw error || new Error('Something went wrong. Please try again!');
+    }
+
     return await wireframeJSONToSVG(roadmapJson, {
       fontURL: '/fonts/balsamiq.woff2',
     });
@@ -88,6 +98,7 @@ export function UserProgressModal(props: ProgressMapProps) {
 
   function onClose() {
     deleteUrlParam('s');
+    setError('');
     setShowModal(false);
   }
 
@@ -110,12 +121,48 @@ export function UserProgressModal(props: ProgressMapProps) {
       getUserProgress(userId, resourceType, resourceId),
     ])
       .then(([svg, user]) => {
+        if (!user || !svg) {
+          return;
+        }
+
+        const { progress } = user;
+        const { done, learning, skipped } = progress || {
+          done: [],
+          learning: [],
+          skipped: [],
+        };
+
+        done?.forEach((topicId: string) => {
+          topicSelectorAll(topicId, svg).forEach((el) => {
+            el.classList.add('done');
+          });
+        });
+
+        learning?.forEach((topicId: string) => {
+          topicSelectorAll(topicId, svg).forEach((el) => {
+            el.classList.add('learning');
+          });
+        });
+
+        skipped?.forEach((topicId: string) => {
+          topicSelectorAll(topicId, svg).forEach((el) => {
+            el.classList.add('skipped');
+          });
+        });
+
+        svg.querySelectorAll('.clickable-group').forEach((el) => {
+          el.classList.remove('clickable-group');
+        });
+
+        svg.querySelectorAll('[data-group-id]').forEach((el) => {
+          el.removeAttribute('data-group-id');
+        });
+
         setResourceSvg(svg);
         setProgressResponse(user);
       })
       .catch((err) => {
-        console.error(err);
-        toast.error(err?.message || 'Something went wrong. Please try again!');
+        setError(err?.message || 'Something went wrong. Please try again!');
       })
       .finally(() => {
         setIsLoading(false);
@@ -156,16 +203,27 @@ export function UserProgressModal(props: ProgressMapProps) {
     return null;
   }
 
-  if (isLoading) {
+  if (isLoading || error) {
     return (
       <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
         <div class="relative mx-auto flex h-full w-full items-center justify-center">
           <div className="popup-body relative rounded-lg bg-white p-5 shadow">
             <div className="flex items-center">
-              <Spinner className="h-6 w-6" isDualRing={false} />
-              <span className="ml-3 text-lg font-semibold">
-                Loading user progress...
-              </span>
+              {isLoading && (
+                <>
+                  <Spinner className="h-6 w-6" isDualRing={false} />
+                  <span className="ml-3 text-lg font-semibold">
+                    Loading user progress...
+                  </span>
+                </>
+              )}
+
+              {error && (
+                <>
+                  <ErrorIcon additionalClasses="h-6 w-6 text-red-500" />
+                  <span className="ml-3 text-lg font-semibold">{error}</span>
+                </>
+              )}
             </div>
           </div>
         </div>

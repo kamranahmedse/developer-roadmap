@@ -4,7 +4,12 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
-export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped' | 'removed';
+export type ResourceProgressType =
+  | 'done'
+  | 'learning'
+  | 'pending'
+  | 'skipped'
+  | 'removed';
 
 type TopicMeta = {
   topicId: string;
@@ -110,8 +115,8 @@ export async function getResourceProgress(
       detail: {
         resourceType,
         resourceId,
-        isFavorite
-      }
+        isFavorite,
+      },
     })
   );
 
@@ -146,7 +151,7 @@ async function loadFreshProgress(
     resourceId,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || [],
+    response?.skipped || []
   );
 
   // Dispatch event to update favorite status in the MarkFavorite component
@@ -155,8 +160,8 @@ async function loadFreshProgress(
       detail: {
         resourceType,
         resourceId,
-        isFavorite: response.isFavorite
-      }
+        isFavorite: response.isFavorite,
+      },
     })
   );
 
@@ -168,7 +173,7 @@ export function setResourceProgress(
   resourceId: string,
   done: string[],
   learning: string[],
-  skipped: string[],
+  skipped: string[]
 ): void {
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
@@ -181,19 +186,14 @@ export function setResourceProgress(
   );
 }
 
-export function renderTopicProgress(
+export function topicSelectorAll(
   topicId: string,
-  topicProgress: ResourceProgressType
-) {
-  const isLearning = topicProgress === 'learning';
-  const isSkipped = topicProgress === 'skipped';
-  const isDone = topicProgress === 'done';
-  const isRemoved = topicProgress === 'removed';
-
+  parentElement: Document | SVGElement = document
+): Element[] {
   const matchingElements: Element[] = [];
 
   // Elements having sort order in the beginning of the group id
-  document
+  parentElement
     .querySelectorAll(`[data-group-id$="-${topicId}"]`)
     .forEach((element: unknown) => {
       const foundGroupId =
@@ -206,18 +206,32 @@ export function renderTopicProgress(
     });
 
   // Elements with exact match of the topic id
-  document
+  parentElement
     .querySelectorAll(`[data-group-id="${topicId}"]`)
     .forEach((element) => {
       matchingElements.push(element);
     });
 
   // Matching "check:XXXX" box of the topic
-  document
+  parentElement
     .querySelectorAll(`[data-group-id="check:${topicId}"]`)
     .forEach((element) => {
       matchingElements.push(element);
     });
+
+  return matchingElements;
+}
+
+export function renderTopicProgress(
+  topicId: string,
+  topicProgress: ResourceProgressType
+) {
+  const isLearning = topicProgress === 'learning';
+  const isSkipped = topicProgress === 'skipped';
+  const isDone = topicProgress === 'done';
+  const isRemoved = topicProgress === 'removed';
+
+  const matchingElements: Element[] = topicSelectorAll(topicId);
 
   matchingElements.forEach((element) => {
     if (isDone) {
@@ -239,7 +253,7 @@ export function renderTopicProgress(
 }
 
 export function clearResourceProgress() {
-  const clickableElements = document.querySelectorAll('.clickable-group')
+  const clickableElements = document.querySelectorAll('.clickable-group');
   for (const clickableElement of clickableElements) {
     clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
   }
@@ -304,17 +318,21 @@ export function refreshProgressCounters() {
     '.clickable-group.removed'
   ).length;
   const totalItems =
-    totalClickable - externalLinks - roadmapSwitchers - checkBoxes - totalRemoved;
+    totalClickable -
+    externalLinks -
+    roadmapSwitchers -
+    checkBoxes -
+    totalRemoved;
 
   const totalDone =
     document.querySelectorAll('.clickable-group.done').length -
     totalCheckBoxesDone;
-  const totalLearning = document.querySelectorAll(
-    '.clickable-group.learning'
-  ).length - totalCheckBoxesLearning;
-  const totalSkipped = document.querySelectorAll(
-    '.clickable-group.skipped'
-  ).length - totalCheckBoxesSkipped;
+  const totalLearning =
+    document.querySelectorAll('.clickable-group.learning').length -
+    totalCheckBoxesLearning;
+  const totalSkipped =
+    document.querySelectorAll('.clickable-group.skipped').length -
+    totalCheckBoxesSkipped;
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {
