@@ -169,26 +169,6 @@ export function UserProgressModal(props: ProgressMapProps) {
       });
   }, [userId]);
 
-  // Disable clicks on the progress SVG
-  useEffect(() => {
-    function handleClick(e: any) {
-      const closestSvg = e.target.closest('#user-progress-modal');
-      if (!closestSvg) {
-        return;
-      }
-
-      e.preventDefault();
-      e.stopPropagation();
-    }
-
-    document?.addEventListener('click', handleClick);
-    document?.addEventListener('touchstart', handleClick);
-    document?.addEventListener('contextmenu', handleClick);
-    return () => {
-      document?.addEventListener('click', handleClick);
-    };
-  }, []);
-
   const user = progressResponse?.user;
   const progress = progressResponse?.progress;
 
