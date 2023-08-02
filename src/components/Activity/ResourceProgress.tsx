@@ -108,7 +108,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           )}
           <span>{totalCount} total</span>
         </span>
-        <div className="flex w-full items-center justify-between gap-3 sm:w-auto sm:justify-start">
+        <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-start">
           <ProgressShareButton
             resourceType={resourceType}
             resourceId={resourceId}
@@ -116,6 +116,8 @@ export function ResourceProgress(props: ResourceProgressType) {
             shareIconClassName="w-2.5 h-2.5 stroke-2"
             checkIconClassName="w-2.5 h-2.5"
           />
+          <span className={'hidden sm:block'}>&bull;</span>
+
           {showClearButton && (
             <>
               {!isConfirming && (
