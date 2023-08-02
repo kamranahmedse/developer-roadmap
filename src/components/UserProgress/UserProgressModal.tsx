@@ -1,10 +1,10 @@
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'preact/hooks';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
-import { renderTopicProgress, ResourceType } from '../../lib/resource-progress';
+import type { ResourceType } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
@@ -122,30 +122,6 @@ export function UserProgressModal(props: ProgressMapProps) {
       });
   }, [userId]);
 
-  useEffect(() => {
-    console.log(resourceSvg, progressResponse, popupBodyEl);
-    if (!resourceSvg || !progressResponse?.user || !popupBodyEl?.current) {
-      return;
-    }
-
-    const { progress } = progressResponse;
-    const { done, learning, skipped } = progress || {
-      done: [],
-      learning: [],
-      skipped: [],
-    };
-
-    const popupBody = popupBodyEl?.current;
-
-    done?.forEach((id: string) => renderTopicProgress(id, 'done', popupBody));
-    learning?.forEach((id: string) =>
-      renderTopicProgress(id, 'learning', popupBody)
-    );
-    skipped?.forEach((id: string) =>
-      renderTopicProgress(id, 'skipped', popupBody)
-    );
-  }, [progressResponse, resourceSvg, popupBodyEl]);
-
   // Disable clicks on the progress SVG
   useEffect(() => {
     function handleClick(e: any) {
@@ -180,7 +156,8 @@ export function UserProgressModal(props: ProgressMapProps) {
     return null;
   }
 
-  const loadingMessage =  isLoading ? (
+  if (isLoading) {
+    return (
       <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
         <div class="relative mx-auto flex h-full w-full items-center justify-center">
           <div className="popup-body relative rounded-lg bg-white p-5 shadow">
@@ -193,7 +170,8 @@ export function UserProgressModal(props: ProgressMapProps) {
           </div>
         </div>
       </div>
-  ) : null;
+    );
+  }
 
   return (
     <div
@@ -205,9 +183,6 @@ export function UserProgressModal(props: ProgressMapProps) {
           ref={popupBodyEl}
           class={`popup-body relative rounded-lg bg-white pt-[1px] shadow`}
         >
-          { loadingMessage ? loadingMessage : null}
-
-          <div className={`${loadingMessage ? 'hidden' : ''}`}>
           <div className="p-4">
             <div className="mb-5 mt-0 min-h-[28px] text-left sm:text-center md:mt-4 md:h-[60px]">
               <h2 className={'mb-1 text-lg font-bold md:text-2xl'}>
@@ -270,7 +245,6 @@ export function UserProgressModal(props: ProgressMapProps) {
             className="px-4 pb-2"
             dangerouslySetInnerHTML={{ __html: resourceSvg?.outerHTML || '' }}
           ></div>
-          </div>
 
           <button
             type="button"
