@@ -30,17 +30,21 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     const newUrl = new URL(
       isDev ? 'http://localhost:3000' : 'https://roadmap.sh'
     );
+
     if (resourceType === 'roadmap') {
       newUrl.pathname = `/${resourceId}`;
     } else {
       newUrl.pathname = `/best-practices/${resourceId}`;
     }
-    newUrl.searchParams.set('uid', user?.id || '');
+
+    newUrl.searchParams.set('s', user?.id || '');
     copyText(newUrl.toString());
-    toast.success('Link copied to clipboard');
+    toast.success('Progress link copied to clipboard.');
   }
 
-  if (!user) return null;
+  if (!user) {
+    return null;
+  }
 
   return (
     <button
