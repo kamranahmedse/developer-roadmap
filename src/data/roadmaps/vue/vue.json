@@ -5487,12 +5487,12 @@
                           "zOrder": "2",
                           "measuredW": "35",
                           "measuredH": "28",
-                          "x": "76",
+                          "x": "65",
                           "y": "8",
                           "properties": {
                             "color": "16777215",
                             "size": "20",
-                            "text": "http"
+                            "text": "https"
                           }
                         },
                         {
