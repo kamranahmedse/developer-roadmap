@@ -1,0 +1,15 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { FriendsPage } from '../../components/Friends/FriendsPage';
+---
+
+<AccountLayout
+  title='Friends'
+  noIndex={true}
+  initialLoadingMessage='Loading friends'
+>
+  <AccountSidebar activePageId='friends' activePageTitle='Friends'>
+    <FriendsPage client:load />
+  </AccountSidebar>
+</AccountLayout>

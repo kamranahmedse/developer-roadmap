@@ -37,13 +37,14 @@ function handleGuest() {
     '/account/update-password',
     '/account/settings',
     '/account/road-card',
+    '/account/friends',
     '/account',
     '/team',
     '/team/progress',
     '/team/roadmaps',
     '/team/new',
     '/team/members',
-    '/team/settings'
+    '/team/settings',
   ];
 
   showHideAuthElements('hide');
