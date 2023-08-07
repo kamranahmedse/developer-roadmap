@@ -10,6 +10,7 @@ import { DeleteUserIcon } from './ReactIcons/DeleteUserIcon';
 import { useToast } from '../hooks/use-toast';
 import { useAuth } from '../hooks/use-auth';
 import { AddedUserIcon } from './ReactIcons/AddedUserIcon';
+import {StopIcon} from "./ReactIcons/StopIcon";
 
 export type FriendshipStatus =
   | 'none'
@@ -243,11 +244,9 @@ export function Befriend() {
                   <button
                     className="ml-2 text-red-700 underline"
                     onClick={() => {
-                      deleteFriend(user.id, 'Friend removed').finally(
-                        () => {
-                          pageProgressMessage.set('');
-                        }
-                      );
+                      deleteFriend(user.id, 'Friend removed').finally(() => {
+                        pageProgressMessage.set('');
+                      });
                     }}
                   >
                     Yes
@@ -286,6 +285,15 @@ export function Befriend() {
                 >
                   Click here to Accept
                 </button>
+              </span>
+            </>
+          )}
+
+          {user.status === 'got_rejected' && (
+            <>
+              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-500 px-3 py-2 text-center text-red-500">
+                <StopIcon additionalClasses="mr-2 h-4 w-4" />
+                Request Rejected
               </span>
             </>
           )}
