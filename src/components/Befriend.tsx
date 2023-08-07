@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'preact/hooks';
 import { httpDelete, httpGet, httpPatch, httpPost } from '../lib/http';
-import ErrorIcon from '../icons/error.svg';
 import { pageProgressMessage } from '../stores/page';
 import { isLoggedIn } from '../lib/jwt';
 import { showLoginPopup } from '../lib/popup';
@@ -10,7 +9,8 @@ import { DeleteUserIcon } from './ReactIcons/DeleteUserIcon';
 import { useToast } from '../hooks/use-toast';
 import { useAuth } from '../hooks/use-auth';
 import { AddedUserIcon } from './ReactIcons/AddedUserIcon';
-import {StopIcon} from "./ReactIcons/StopIcon";
+import { StopIcon } from './ReactIcons/StopIcon';
+import { ErrorIcon } from './ReactIcons/ErrorIcon';
 
 export type FriendshipStatus =
   | 'none'
@@ -106,11 +106,7 @@ export function Befriend() {
   if (!user) {
     return (
       <div className="container text-center">
-        <img
-          alt={'error'}
-          src={ErrorIcon}
-          className="mx-auto mb-4 mt-24 w-20 opacity-20"
-        />
+        <ErrorIcon additionalClasses="mx-auto mb-4 mt-24 w-20 opacity-20" />
 
         <h2 className={'mb-1 text-2xl font-bold'}>Error</h2>
         <p class="mb-4 text-base leading-6 text-gray-600">
