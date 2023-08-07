@@ -91,7 +91,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
       const pagePath =
-        window.location.pathname === '/respond-invite'
+        ['/respond-invite', '/befriend'].includes(window.location.pathname)
           ? window.location.pathname + window.location.search
           : window.location.pathname;
 

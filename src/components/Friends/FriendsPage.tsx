@@ -1,23 +1,22 @@
-import { useEffect, useState } from 'preact/hooks';
-import CopyIcon from '../../icons/copy.svg';
+import { useEffect } from 'preact/hooks';
 import UserPlus from '../../icons/user-plus.svg';
 import { pageProgressMessage } from '../../stores/page';
 import { useAuth } from '../../hooks/use-auth';
-import {EmptyFriends} from "./EmptyFriends";
+import { EmptyFriends } from './EmptyFriends';
 
 export function FriendsPage() {
-  const user = useAuth();
-
   useEffect(() => {
     pageProgressMessage.set('');
   }, []);
 
+  const user = useAuth();
   const baseUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
     : 'https://roadmap.sh';
   const befriendUrl = `${baseUrl}/befriend?u=${user?.id}`;
 
-  return <EmptyFriends />
+  return <EmptyFriends befriendUrl={befriendUrl} />;
+
   return (
     <div>
       <div className="mb-4 flex items-center justify-between">

@@ -12,6 +12,7 @@ export interface Props {}
 
 const messageCodes: Record<string, string> = {
   tl: 'Successfully left the team',
+  fs: 'Friend request sent',
 };
 
 export function Toaster(props: Props) {
