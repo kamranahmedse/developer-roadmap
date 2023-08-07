@@ -9,6 +9,7 @@ import { CheckIcon } from './ReactIcons/CheckIcon';
 import { DeleteUserIcon } from './ReactIcons/DeleteUserIcon';
 import { useToast } from '../hooks/use-toast';
 import { useAuth } from '../hooks/use-auth';
+import { AddedUserIcon } from './ReactIcons/AddedUserIcon';
 
 export type FriendshipStatus =
   | 'none'
@@ -170,7 +171,7 @@ export function Befriend() {
 
           {user.status === 'sent' && (
             <>
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 bg-gray-100 px-3 py-2 text-center text-black">
+              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
                 <CheckIcon additionalClasses="mr-2 h-4 w-4" />
                 Request Sent
               </span>
@@ -195,6 +196,134 @@ export function Befriend() {
                     className="ml-2 text-red-700 underline"
                     onClick={() => {
                       deleteFriend(user.id, 'Friend request withdrawn').finally(
+                        () => {
+                          pageProgressMessage.set('');
+                        }
+                      );
+                    }}
+                  >
+                    Yes
+                  </button>{' '}
+                  <button
+                    onClick={() => {
+                      setIsConfirming(false);
+                    }}
+                    className="ml-2 text-red-600 underline"
+                  >
+                    No
+                  </button>
+                </span>
+              )}
+            </>
+          )}
+
+          {user.status === 'accepted' && (
+            <>
+              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
+                <AddedUserIcon additionalClasses="mr-2 h-5 w-5" />
+                You are friends
+              </span>
+
+              {!isConfirming && (
+                <button
+                  onClick={() => {
+                    setIsConfirming(true);
+                  }}
+                  type="button"
+                  class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-red-600 px-3 py-2 text-center text-white hover:bg-red-700"
+                >
+                  <DeleteUserIcon additionalClasses="mr-2 h-[19px] w-[19px]" />
+                  Remove Friend
+                </button>
+              )}
+
+              {isConfirming && (
+                <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                  Are you sure?{' '}
+                  <button
+                    className="ml-2 text-red-700 underline"
+                    onClick={() => {
+                      deleteFriend(user.id, 'Friend removed').finally(
+                        () => {
+                          pageProgressMessage.set('');
+                        }
+                      );
+                    }}
+                  >
+                    Yes
+                  </button>{' '}
+                  <button
+                    onClick={() => {
+                      setIsConfirming(false);
+                    }}
+                    className="ml-2 text-red-600 underline"
+                  >
+                    No
+                  </button>
+                </span>
+              )}
+            </>
+          )}
+
+          {user.status === 'rejected' && (
+            <>
+              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-gray-300 px-3 py-2 text-center text-black">
+                <DeleteUserIcon additionalClasses="mr-2 h-4 w-4" />
+                Request Rejected
+              </span>
+
+              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                Changed your mind?{' '}
+                <button
+                  className="ml-2 text-red-700 underline"
+                  onClick={() => {
+                    addFriend(user.id, 'Friend request accepted').finally(
+                      () => {
+                        pageProgressMessage.set('');
+                      }
+                    );
+                  }}
+                >
+                  Click here to Accept
+                </button>
+              </span>
+            </>
+          )}
+
+          {user.status === 'received' && (
+            <>
+              <button
+                onClick={() => {
+                  addFriend(user.id, 'Friend request accepted').finally(() => {
+                    pageProgressMessage.set('');
+                  });
+                }}
+                class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border  border-gray-800 bg-gray-800 px-3 py-2 text-center text-white hover:bg-black"
+              >
+                <CheckIcon additionalClasses="mr-2 h-4 w-4" />
+                Accept Request
+              </button>
+
+              {!isConfirming && (
+                <button
+                  onClick={() => {
+                    setIsConfirming(true);
+                  }}
+                  type="button"
+                  class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-white px-3 py-2 text-center text-red-600 hover:bg-red-100"
+                >
+                  <DeleteUserIcon additionalClasses="mr-2 h-[19px] w-[19px]" />
+                  Reject Request
+                </button>
+              )}
+
+              {isConfirming && (
+                <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                  Are you sure?{' '}
+                  <button
+                    className="ml-2 text-red-700 underline"
+                    onClick={() => {
+                      deleteFriend(user.id, 'Friend request rejected').finally(
                         () => {
                           pageProgressMessage.set('');
                         }
