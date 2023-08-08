@@ -8,6 +8,7 @@ import { useToast } from '../../hooks/use-toast';
 import { EmptyFriends } from './EmptyFriends';
 import { FriendProgressItem } from './FriendProgressItem';
 import UserIcon from '../../icons/user.svg';
+import { UserProgressModal } from '../UserProgress/UserProgressModal';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -44,6 +45,11 @@ const groupingTypes: GroupingType[] = [
 
 export function FriendsPage() {
   const toast = useToast();
+
+  const [showFriendProgress, setShowFriendProgress] = useState<{
+    resourceId: string;
+    friend: ListFriendsResponse[0];
+  }>();
 
   const [isLoading, setIsLoading] = useState(true);
   const [friends, setFriends] = useState<ListFriendsResponse>([]);
@@ -102,6 +108,15 @@ export function FriendsPage() {
 
   return (
     <div>
+      {showFriendProgress && (
+        <UserProgressModal
+          userId={showFriendProgress.friend.userId}
+          resourceId={showFriendProgress.resourceId}
+          resourceType={'roadmap'}
+          onClose={() => setShowFriendProgress(undefined)}
+        />
+      )}
+
       <div className="mb-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
           {groupingTypes.map((grouping) => {
@@ -140,7 +155,12 @@ export function FriendsPage() {
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
-              onShowResourceProgress={(resourceId) => {}}
+              onShowResourceProgress={(resourceId) => {
+                setShowFriendProgress({
+                  resourceId,
+                  friend,
+                });
+              }}
               key={friend.userId}
               onReload={() => {
                 pageProgressMessage.set('Reloading friends ..');

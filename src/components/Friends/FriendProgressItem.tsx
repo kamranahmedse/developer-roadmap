@@ -221,7 +221,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                 'flex w-full flex-grow flex-col items-center justify-center px-4'
               }
             >
-              <AddUserIcon additionalClasses="mr-2 h-10 w-10 mb-1 text-green-500" />
+              <AddUserIcon additionalClasses="mr-2 h-8 w-8 mb-1 text-green-500" />
               <span className="mb-3 text-green-600">Request Received</span>
 
               <button

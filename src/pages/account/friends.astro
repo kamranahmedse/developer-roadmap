@@ -10,6 +10,6 @@ import { FriendsPage } from '../../components/Friends/FriendsPage';
   initialLoadingMessage='Loading friends'
 >
   <AccountSidebar activePageId='friends' activePageTitle='Friends'>
-    <FriendsPage client:load />
+    <FriendsPage client:only />
   </AccountSidebar>
 </AccountLayout>

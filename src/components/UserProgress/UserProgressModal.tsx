@@ -13,8 +13,10 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
 
 export type ProgressMapProps = {
+  userId?: string;
   resourceId: string;
   resourceType: ResourceType;
+  onClose?: () => void;
 };
 
 type UserProgressResponse = {
@@ -31,8 +33,13 @@ type UserProgressResponse = {
 };
 
 export function UserProgressModal(props: ProgressMapProps) {
-  const { s: userId } = getUrlParams();
-  const { resourceId, resourceType } = props;
+  const {
+    resourceId,
+    resourceType,
+    userId: propUserId,
+    onClose: onModalClose,
+  } = props;
+  const { s: userId = propUserId } = getUrlParams();
 
   const resourceSvgEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
@@ -95,6 +102,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     deleteUrlParam('s');
     setError('');
     setShowModal(false);
+    onModalClose?.();
   }
 
   useKeydown('Escape', () => {
