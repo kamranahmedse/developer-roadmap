@@ -32,3 +32,5 @@ When it comes to deciding between NAS and SAN, there are several factors to cons
 - **Data Management**: While NAS solutions excel in handling file-based storage, SANs provide better support for block-level storage and can deliver improved performance for virtualized environments and database applications.
 
 It's essential to evaluate your organization's specific needs and requirements to determine which storage solution is the most appropriate fit. As you expand your knowledge in cyber security, a solid understanding of both NAS and SAN technologies will prove invaluable in implementing secure and efficient data storage systems.
+
+- [NAS vs SAN](https://youtu.be/3yZDDr0JKVc)
