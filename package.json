@@ -27,7 +27,7 @@
     "@fingerprintjs/fingerprintjs": "^3.4.1",
     "@nanostores/preact": "^0.5.0",
     "astro": "^2.6.6",
-    "astro-compress": "^1.1.47",
+    "@otterlord/astro-compress": "^1.1.48",
     "jose": "^4.14.4",
     "js-cookie": "^3.0.5",
     "nanostores": "^0.9.2",
