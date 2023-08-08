@@ -85,10 +85,6 @@ export function FriendsPage() {
     : 'https://roadmap.sh';
   const befriendUrl = `${baseUrl}/befriend?u=${user?.id}`;
 
-  if (friends.length === 0) {
-    return <EmptyFriends befriendUrl={befriendUrl} />;
-  }
-
   const selectedGroupingType = groupingTypes.find(
     (grouping) => grouping.value === selectedGrouping
   );

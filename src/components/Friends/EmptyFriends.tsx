@@ -19,8 +19,8 @@ export function EmptyFriends(props: EmptyFriendsProps) {
           class="mb-2 h-[60px] w-[60px] opacity-10 sm:h-[120px] sm:w-[120px]"
         />
         <h2 class="text-lg font-bold sm:text-xl">Invite your Friends</h2>
-        <p className="mb-4 mt-1 max-w-[400px] text-sm leading-loose text-gray-500">
-          Invite your friends to join you on your learning journey.
+        <p className="mb-4 mt-1 max-w-[400px] text-sm leading-relaxed text-gray-500">
+          Share the unique link below with your friends to track their skills and progress.
         </p>
 
         <div class="flex w-full max-w-[352px] items-center justify-center gap-2 rounded-lg border-2 p-1 text-sm">
@@ -35,7 +35,7 @@ export function EmptyFriends(props: EmptyFriendsProps) {
             readonly
           />
           <button
-            class={`flex items-center justify-center gap-1 rounded-md border-0 p-2 px-3 text-sm text-black ${
+            class={`flex items-center justify-center gap-1 rounded-md border-0 p-2 px-4 text-sm text-black ${
               isCopied
                 ? 'bg-green-300 hover:bg-green-300'
                 : 'bg-gray-200 hover:bg-gray-300'

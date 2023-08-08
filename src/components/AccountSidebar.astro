@@ -1,6 +1,7 @@
 ---
 import AstroIcon from './AstroIcon.astro';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
+import { SidebarFriendsCounter } from './Friends/SidebarFriendsCounter';
 
 export interface Props {
   activePageId: string;
@@ -142,11 +143,17 @@ const sidebarLinks = [
                       {sidebarLink.title}
                     </span>
 
-                    {sidebarLink.isNew && !isActive && (
-                      <span class='relative mr-1 flex items-center'>
-                        <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
-                        <span class='absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
-                      </span>
+                    {sidebarLink.isNew &&
+                      sidebarLink.id !== 'friends' &&
+                      !isActive && (
+                        <span class='relative mr-1 flex items-center'>
+                          <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
+                          <span class='absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
+                        </span>
+                      )}
+
+                    {sidebarLink.id === 'friends' && (
+                      <SidebarFriendsCounter client:load />
                     )}
                   </a>
                 </li>
@@ -159,7 +166,12 @@ const sidebarLinks = [
   }
   <!-- /End Desktop Sidebar -->
 
-  <div class:list={['grow px-0 py-0 md:py-10', { 'md:px-10': hasDesktopSidebar, 'md:px-5': !hasDesktopSidebar }]}>
+  <div
+    class:list={[
+      'grow px-0 py-0 md:py-10',
+      { 'md:px-10': hasDesktopSidebar, 'md:px-5': !hasDesktopSidebar },
+    ]}
+  >
     <slot />
   </div>
 </div>
