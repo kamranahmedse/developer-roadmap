@@ -238,22 +238,46 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
                 Request Sent
               </span>
             </div>
-            <span class="flex cursor-default items-center justify-center border-t py-2 text-center text-sm">
-              <button
-                className="ml-2 flex items-center font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
-                onClick={() => {
-                  deleteFriend(
-                    friend.userId,
-                    'Friend request withdrawn'
-                  ).finally(() => {
-                    pageProgressMessage.set('');
-                  });
-                }}
-              >
-                <TrashIcon className="mr-1 h-4 w-4" />
-                Withdraw Request
-              </button>
-            </span>
+            <>
+              {isConfirming !== 'sent' && (
+                <button
+                  className="flex w-full items-center justify-center border-t py-2 text-sm font-medium text-red-700 hover:bg-red-50/50 hover:text-red-500"
+                  onClick={() => {
+                    setIsConfirming('sent');
+                  }}
+                >
+                  <TrashIcon className="mr-1 h-4 w-4" />
+                  Withdraw Request
+                </button>
+              )}
+
+              {isConfirming === 'sent' && (
+                <span className="flex w-full items-center justify-center border-t py-2 text-sm text-red-700">
+                  Are you sure?{' '}
+                  <button
+                    className="ml-2 font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
+                    onClick={() => {
+                      deleteFriend(
+                        friend.userId,
+                        'Friend request withdrawn'
+                      ).finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                  >
+                    Yes
+                  </button>{' '}
+                  <button
+                    className="ml-2 font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
+                    onClick={() => {
+                      setIsConfirming(undefined);
+                    }}
+                  >
+                    No
+                  </button>
+                </span>
+              )}
+            </>
           </>
         )}
 
