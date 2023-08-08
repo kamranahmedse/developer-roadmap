@@ -17,6 +17,8 @@ type FriendProgressItemProps = {
 export function FriendProgressItem(props: FriendProgressItemProps) {
   const { friend, onShowResourceProgress, onReload } = props;
   const toast = useToast();
+  const [isConfirming, setIsConfirming] =
+    useState<ListFriendsResponse[0]['status']>();
 
   async function deleteFriend(userId: string, successMessage: string) {
     pageProgressMessage.set('Please wait...');
@@ -79,54 +81,95 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
           </div>
         </div>
         {friend.status === 'accepted' && (
-          <div className="relative flex grow flex-col space-y-2 p-3">
-            {(showAll ? roadmaps : roadmaps.slice(0, 4)).map((progress) => {
-              return (
+          <>
+            <div className="relative flex grow flex-col space-y-2 p-3">
+              {(showAll ? roadmaps : roadmaps.slice(0, 4)).map((progress) => {
+                return (
+                  <button
+                    onClick={() => onShowResourceProgress(progress.resourceId)}
+                    className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
+                    key={progress.resourceId}
+                  >
+                    <span className="relative z-10 flex items-center justify-between text-sm">
+                      <span className="inline-grid">
+                        <span className={'truncate'}>{progress.title}</span>
+                      </span>
+                      <span className="ml-1.5 shrink-0 text-xs text-gray-400">
+                        {progress.done} / {progress.total}
+                      </span>
+                    </span>
+                    <span
+                      className="absolute inset-0 bg-gray-100 group-hover:bg-gray-200"
+                      style={{
+                        width: `${(progress.done / progress.total) * 100}%`,
+                      }}
+                    />
+                  </button>
+                );
+              })}
+
+              {roadmaps.length > 4 && !showAll && (
                 <button
-                  onClick={() => onShowResourceProgress(progress.resourceId)}
-                  className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
-                  key={progress.resourceId}
+                  onClick={() => setShowAll(true)}
+                  className={'text-xs text-gray-400 underline'}
                 >
-                  <span className="relative z-10 flex items-center justify-between text-sm">
-                    <span className="inline-grid">
-                      <span className={'truncate'}>{progress.title}</span>
-                    </span>
-                    <span className="ml-1.5 shrink-0 text-xs text-gray-400">
-                      {progress.done} / {progress.total}
-                    </span>
-                  </span>
-                  <span
-                    className="absolute inset-0 bg-gray-100 group-hover:bg-gray-200"
-                    style={{
-                      width: `${(progress.done / progress.total) * 100}%`,
-                    }}
-                  />
+                  + {roadmaps.length - 4} more
                 </button>
-              );
-            })}
+              )}
 
-            {roadmaps.length > 4 && !showAll && (
-              <button
-                onClick={() => setShowAll(true)}
-                className={'text-sm text-gray-400 underline'}
-              >
-                + {roadmaps.length - 4} more
-              </button>
-            )}
+              {showAll && (
+                <button
+                  onClick={() => setShowAll(false)}
+                  className={'text-sm text-gray-400 underline'}
+                >
+                  - Show less
+                </button>
+              )}
 
-            {showAll && (
-              <button
-                onClick={() => setShowAll(false)}
-                className={'text-sm text-gray-400 underline'}
-              >
-                - Show less
-              </button>
-            )}
+              {roadmaps.length === 0 && (
+                <div className="text-sm text-gray-500">No progress</div>
+              )}
+            </div>
+            <>
+              {isConfirming !== 'accepted' && (
+                <button
+                  className="flex w-full items-center justify-center border-t py-2 text-sm font-medium text-red-700 hover:bg-red-50/50 hover:text-red-500"
+                  onClick={() => {
+                    setIsConfirming('accepted');
+                  }}
+                >
+                  <TrashIcon className="mr-1 h-4 w-4" />
+                  Remove Friend
+                </button>
+              )}
 
-            {roadmaps.length === 0 && (
-              <div className="text-sm text-gray-500">No progress</div>
-            )}
-          </div>
+              {isConfirming === 'accepted' && (
+                <span className="flex w-full items-center justify-center border-t py-2 text-sm text-red-700">
+                  Are you sure?{' '}
+                  <button
+                    className="ml-2 font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
+                    onClick={() => {
+                      deleteFriend(friend.userId, 'Friend removed').finally(
+                        () => {
+                          pageProgressMessage.set('');
+                        }
+                      );
+                    }}
+                  >
+                    Yes
+                  </button>{' '}
+                  <button
+                    className="ml-2 font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
+                    onClick={() => {
+                      setIsConfirming(undefined);
+                    }}
+                  >
+                    No
+                  </button>
+                </span>
+              )}
+            </>
+          </>
         )}
 
         {friend.status === 'rejected' && (

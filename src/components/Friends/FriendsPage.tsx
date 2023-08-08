@@ -9,6 +9,7 @@ import { EmptyFriends } from './EmptyFriends';
 import { FriendProgressItem } from './FriendProgressItem';
 import UserIcon from '../../icons/user.svg';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
+import { InviteFriendPopup } from './InviteFriendPopup';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -45,6 +46,8 @@ const groupingTypes: GroupingType[] = [
 
 export function FriendsPage() {
   const toast = useToast();
+
+  const [showInviteFriendPopup, setShowInviteFriendPopup] = useState(false);
 
   const [showFriendProgress, setShowFriendProgress] = useState<{
     resourceId: string;
@@ -108,6 +111,13 @@ export function FriendsPage() {
 
   return (
     <div>
+      {showInviteFriendPopup && (
+        <InviteFriendPopup
+          befriendUrl={befriendUrl}
+          onClose={() => setShowInviteFriendPopup(false)}
+        />
+      )}
+
       {showFriendProgress && (
         <UserProgressModal
           userId={showFriendProgress.friend.userId}
@@ -117,7 +127,7 @@ export function FriendsPage() {
         />
       )}
 
-      <div className="mb-4 flex items-center justify-between">
+      <div className="mb-4 flex flex-col items-stretch justify-between gap-2 sm:flex-row sm:items-center sm:gap-0">
         <div className="flex items-center gap-2">
           {groupingTypes.map((grouping) => {
             let requestCount = 0;
@@ -131,7 +141,7 @@ export function FriendsPage() {
                   selectedGrouping === grouping.value
                     ? ' border-gray-400 bg-gray-200 '
                     : ''
-                }`}
+                } w-full sm:w-auto`}
                 onClick={() => setSelectedGrouping(grouping.value)}
               >
                 {grouping.label}
@@ -144,14 +154,19 @@ export function FriendsPage() {
             );
           })}
         </div>
-        <button class="flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100">
+        <button
+          onClick={() => {
+            setShowInviteFriendPopup(true);
+          }}
+          class="flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100"
+        >
           <AddUserIcon additionalClasses="w-4 h-4" />
           Invite Friends
         </button>
       </div>
 
       {filteredFriends.length > 0 && (
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
@@ -188,7 +203,12 @@ export function FriendsPage() {
           <p className="text-sm text-gray-500">
             Invite your friends to join you on Roadmap
           </p>
-          <button className="mt-4 flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100">
+          <button
+            onClick={() => {
+              setShowInviteFriendPopup(true);
+            }}
+            className="mt-4 flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100"
+          >
             <AddUserIcon additionalClasses="w-4 h-4" />
             Invite Friends
           </button>
