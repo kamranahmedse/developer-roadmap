@@ -6,6 +6,6 @@ Razor Pages are useful for building simple, self-contained web pages that do not
 
 For more information, visit the following links:
 
-- [Basics of Razor Pagess](https://www.jetbrains.com/dotnet/guide/tutorials/basics/razor-pages/)
+- [Basics of Razor Pages](https://www.jetbrains.com/dotnet/guide/tutorials/basics/razor-pages/)
 - [Get started with Razor Pages in ASP.NET Core](https://learn.microsoft.com/en-us/aspnet/core/tutorials/razor-pages/?view=aspnetcore-7.0)
 - [What Is Razor Pages?](https://www.learnrazorpages.com/)
