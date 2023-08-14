@@ -14,7 +14,7 @@ Isolation is crucial for ensuring the robustness and security of containerized e
 Implementing best practices and specific security patterns during the development, deployment, and operation of containers is essential to maintaining a secure environment.
 
 - **Least Privilege**: Containers should be run with the least possible privilege, granting only the minimal permissions required for the application.
-- **Immutable Infrastructure**: Containers should be treated as immutable units - once built, they should not be altered. Any change should come by deploying a new container from an updated image.
+- **Immutable Infrastructure**: Containers should be treated as immutable units - once created, they should not be altered. Any change should come by deploying a new container from an updated image.
 - **Version Control**: Images should be version-controlled and stored in a secure container registry.
 
 ## Secure Access Controls
