@@ -49,6 +49,11 @@ export function Befriend() {
       return;
     }
 
+    if (response.status === 'accepted') {
+      window.location.href = '/account/friends?c=fa';
+      return;
+    }
+
     setUser(response);
   }
 
@@ -78,8 +83,12 @@ export function Befriend() {
       return;
     }
 
+    if (response.status === 'accepted') {
+      window.location.href = '/account/friends?c=fa';
+      return;
+    }
+
     setUser(response);
-    toast.success(successMessage);
   }
 
   async function deleteFriend(userId: string, successMessage: string) {
