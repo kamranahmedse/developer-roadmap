@@ -11,12 +11,14 @@ import { useState } from 'preact/hooks';
 import { useStore } from '@nanostores/preact';
 import { $canManageCurrentTeam, $currentTeam } from '../stores/team';
 import { WarningIcon } from './ReactIcons/WarningIcon';
+import { SubmitFeedbackPopup } from './Feedback/SubmitFeedbackPopup';
 
 export const TeamSidebar: FunctionalComponent<{
   activePageId: string;
 }> = ({ activePageId, children }) => {
   const [menuShown, setMenuShown] = useState(false);
   const currentTeam = useStore($currentTeam);
+  const [showFeedbackPopup, setShowFeedbackPopup] = useState(true);
 
   const { teamId } = useTeamId();
 
@@ -74,9 +76,8 @@ export const TeamSidebar: FunctionalComponent<{
             <li>
               <a
                 href="/team"
-                class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
-                  activePageId === 'team' ? 'bg-slate-100' : ''
-                }`}
+                class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${activePageId === 'team' ? 'bg-slate-100' : ''
+                  }`}
               >
                 <img alt={'teams'} src={GroupIcon} class={`mr-2 h-4 w-4`} />
                 Personal Account / Teams
@@ -89,9 +90,8 @@ export const TeamSidebar: FunctionalComponent<{
                 <li>
                   <a
                     href={sidebarLink.href}
-                    class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
-                      isActive ? 'bg-slate-100' : ''
-                    }`}
+                    class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${isActive ? 'bg-slate-100' : ''
+                      }`}
                   >
                     <img
                       alt={'menu icon'}
@@ -105,22 +105,24 @@ export const TeamSidebar: FunctionalComponent<{
             })}
 
             <li>
-              <a
-                  href={feedbackFormLink}
-                  target={'_blank'}
-                  class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
+              <button
+                className={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
+                onClick={() => setShowFeedbackPopup(true)}
               >
                 <img
-                    alt={'menu icon'}
-                    src={ChatIcon}
-                    className="mr-2 h-4 w-4"
+                  alt={'menu icon'}
+                  src={ChatIcon}
+                  className="mr-2 h-4 w-4"
                 />
                 Send Feedback
-              </a>
+              </button>
             </li>
           </ul>
         )}
       </div>
+      {showFeedbackPopup && <SubmitFeedbackPopup onClose={() => {
+        setShowFeedbackPopup(false);
+      }} />}
 
       <div class="container flex min-h-screen items-stretch">
         <aside class="hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block">
@@ -134,11 +136,10 @@ export const TeamSidebar: FunctionalComponent<{
                   <li>
                     <a
                       href={sidebarLink.href}
-                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${
-                        isActive
-                          ? 'border-r-black bg-gray-100 text-black'
-                          : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
-                      }`}
+                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${isActive
+                        ? 'border-r-black bg-gray-100 text-black'
+                        : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
+                        }`}
                     >
                       <span class="flex flex-grow items-center justify-between">
                         <span className="flex">
@@ -162,10 +163,12 @@ export const TeamSidebar: FunctionalComponent<{
               })}
             </ul>
 
-            <a href={feedbackFormLink} target={'_blank'} className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-gray-500 text-sm hover:text-black transition-colors hover:border-gray-300 hover:bg-gray-50">
+            <button className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-gray-500 text-sm hover:text-black transition-colors hover:border-gray-300 hover:bg-gray-50"
+              onClick={() => setShowFeedbackPopup(true)}
+            >
               <img src={ChatIcon} className="mr-2 h-4 w-4" />
               Send Feedback
-            </a>
+            </button>
           </nav>
         </aside>
         <div className="grow px-0 py-0 md:px-10 md:py-10">{children}</div>
