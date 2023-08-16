@@ -52,7 +52,7 @@ Refers to the time it takes for browser to respond to user's first interaction
 
 Refers to the unexpected layout shifts while user is browsing
 
-> The flicker or sudden changes on the webpage (e.g., due to asynchronous loading of the content, loading of an image or video with unknown dimensions).
+> Flickering or sudden changes on the webpage (e.g., due to asynchronous loading of the content, loading of an image or video with unknown dimensions).
 
 |  Good  | Average | Poor |
 |  ----  | ------- | ---- |
