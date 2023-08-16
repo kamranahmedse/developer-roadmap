@@ -52,11 +52,11 @@ Refers to the time it takes for browser to respond to user's first interaction
 
 Refers to the unexpected layout shifts while user is browsing
 
-> The flicker or suddden changes on the webpage (e.g., due to asynchronous loading of the content, loading of an image or video with unknown dimensions).
+> The flicker or sudden changes on the webpage (e.g., due to asynchronous loading of the content, loading of an image or video with unknown dimensions).
 
 |  Good  | Average | Poor |
 |  ----  | ------- | ---- |
-| < 0.1 |   < 0.25  | > 0.25s |
+| < 0.1 |   < 0.25  | > 0.25 |
 
 
 ## How to measure Web Vitals
