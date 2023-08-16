@@ -1,5 +1,5 @@
-import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
+import type { MarkdownFileType } from './File';
+
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;
@@ -18,7 +18,6 @@ export interface RoadmapFrontmatter {
     width: number;
     height: number;
   };
-  sponsor?: SponsorType;
   seo: {
     title: string;
     description: string;
@@ -91,7 +90,10 @@ export async function getRoadmapById(id: string): Promise<RoadmapFileType> {
 
   const roadmapFile = Object.values(roadmapFilesMap).find((roadmapFile) => {
     return roadmapPathToId(roadmapFile.file) === id;
+
   });
+
+  
 
   if (!roadmapFile) {
     throw new Error(`Roadmap with ID ${id} not found`);

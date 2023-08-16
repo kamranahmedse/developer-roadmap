@@ -1,1 +1,0 @@
-# Cloud skills and knowledge

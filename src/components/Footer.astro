@@ -1,29 +1,30 @@
 ---
 import Icon from './Icon.astro';
+import Aicbe1 from '../icons/aicbe_wthout_txt.svg';
 ---
 
-<div class='py-6 sm:py-16 pb-10 bg-slate-900 text-white'>
+<div class='py-6 sm:py-16 pb-10 bg-gray-900 text-white'>
   <div class='container'>
     <p class='text-gray-400 font-medium flex flex-col sm:flex-row gap-0 sm:gap-4 mb-8 sm:mb-16 justify-center'>
       <a
         class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='/roadmaps'>Roadmaps</a
+        href='/roadmaps'>Resources</a
       >
       <a
         class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='/guides'>Guides</a
+        href='https://tinyurl.com/kgxcommunities'>Community</a
       >
       <a
         class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='/videos'>Videos</a
+        href='/'>Events</a
       >
       <a
         class='transition-colors px-2 py-1.5 border-b border-b-gray-700 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='/about'>About</a
+        href='https://www.linkedin.com/in/dev-ansh-r/'>About</a
       >
       <a
-        class='transition-colors px-2 py-1.5 sm:border-b-0 sm:py-0 sm:px-0 hover:text-white'
-        href='https://youtube.com/theroadmap?sub_confirmation=1'
+        class='transition-colors px-2 py-1.5 sm:border-b-0 sm:py-0 sm:px-0 hover:text-[#ff0000]'
+        href='https://youtube.com/playlist?list=PLxI06TjqRkocGFg_LPCNJ0R-anM8ELngh'
         target='_blank'>YouTube</a
       >
     </p>
@@ -33,82 +34,49 @@ import Icon from './Icon.astro';
         <p class='flex items-center text-md'>
           <a
             class='font-medium text-lg inline-flex items-center text-white transition-colors hover:text-gray-400'
-            href='/'
+            href='https://www.linkedin.com/company/kgx/'
           >
             <Icon icon='logo' />
-            <span class='ml-2'>roadmap.sh</span>
+            <span class='ml-2'>KGXperience</span>
           </a>
           <span class='text-gray-400 mx-2'>by</span>
           <a
             class='bg-blue-600 text-sm py-1 px-1.5 font-regular hover:bg-blue-700 rounded-md'
-            href='https://twitter.com/intent/user?screen_name=kamranahmedse'
+            href='https://github.com/nivu'
             target='_blank'
           >
-            <span class='hidden sm:inline'>@kamranahmedse</span>
-            <span class='inline sm:hidden'>Kamran Ahmed</span>
+            <span class='hidden sm:inline'>@nivu</span>
+            <span class='inline sm:hidden'>Navaneeth malingan</span>
           </a>
         </p>
         <p class='text-slate-300/60 my-4'>
-          Community created roadmaps, articles, resources and journeys to help you choose your path and grow in your
-          career.
+          " KGXperience is a community that believes in curating and tinkering with innovation and state of art technologies."
         </p>
-        <div class='text-gray-400 text-sm'>
-          <p>
-            &copy; roadmap.sh
-            <span class='mx-1.5'>&middot;</span>
-            <a href='/about' class='hover:text-white'>FAQs</a>
-            <span class='mx-1.5'>&middot;</span>
-            <a href='/terms' class='hover:text-white'>Terms</a>
-            <span class='mx-1.5'>&middot;</span>
-            <a href='/privacy' class='hover:text-white'>Privacy</a>
-          </p>
-        </div>
       </div>
 
-      <div class='text-left sm:text-right max-w-[365px]'>
-        <a href='https://thenewstack.io' target='_blank'>
-          <img
-            src='/images/tns-sm.png'
-            alt='ThewNewStack'
-            class='my-1.5 mr-auto sm:mr-0 sm:ml-auto'
-            width='200'
-            height='24.8'
-          />
-        </a>
-        <p class='text-slate-300/60 my-4'>
-          The leading DevOps resource for Kubernetes, cloud-native computing, and the latest in at-scale development,
-          deployment, and management.
+      <div class='text-left sm:text-left max-w-[365px]'>
+        <p class='flex items-center text-md'>
+          <a
+            class='font-medium text-lg inline-flex items-center text-white transition-colors hover:text-gray-400'
+            href='https://www.linkedin.com/company/aicbe/'>
+
+            <Icon icon="aicbe_wthout_txt" />
+            <span class='ml-2'>AICoimbatore</span>
+          </a>
+          <span class='text-gray-400 mx-2'>by</span>
+          <a
+            class='bg-blue-600 text-sm py-1 px-1.5 font-regular hover:bg-blue-700 rounded-md'
+            href='https://github.com/dev-ansh-r'
+            target='_blank'
+          >
+            <span class='hidden sm:inline'>@devansh</span>
+            <span class='inline sm:hidden'>Devansh Shukla</span>
+          </a>
         </p>
-        <div class='text-gray-400 text-sm'>
-          <p>
-            <a
-              href='https://thenewstack.io/category/devops?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
-              target='_blank'
-              ga-category='PartnerClick'
-              ga-action='TNS Referral'
-              ga-label='TNS Referral - Footer'
-              class='text-gray-400 hover:text-white'>DevOps</a
-            >
-            <span class='mx-1.5'>&middot;</span>
-            <a
-              href='https://thenewstack.io/category/kubernetes?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
-              target='_blank'
-              ga-category='PartnerClick'
-              ga-action='TNS Referral'
-              ga-label='TNS Referral - Footer'
-              class='text-gray-400 hover:text-white'>Kubernetes</a
-            >
-            <span class='mx-1.5'>&middot;</span>
-            <a
-              href='https://thenewstack.io/category/cloud-native?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Footer'
-              target='_blank'
-              ga-category='PartnerClick'
-              ga-action='TNS Referral'
-              ga-label='TNS Referral - Footer'
-              class='text-gray-400 hover:text-white'>Cloud-Native</a
-            >
-          </p>
-        </div>
+        <p class='text-slate-300/60 my-4'>
+          " Our mission is to offer world-class AI education to anyone in Tamilnadu for free."
+        </p>
+      </div>
       </div>
     </div>
   </div>
