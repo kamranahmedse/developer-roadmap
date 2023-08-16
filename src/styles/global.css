@@ -36,12 +36,13 @@
   text-transform: uppercase;
   padding: 3px 10px;
   display: block;
+  
   background: repeating-linear-gradient(
       -45deg,
       transparent,
       transparent 5px,
-      hsla(0, 0%, 0%, 0.025) 5px,
+      hsla(0, 100%, 50%, 0.025) 5px,
       hsla(0, 0%, 0%, 0.025) 10px
     )
-    hsla(203, 11%, 95%, 0.4);
+    hsla(325, 100%, 48%, 0.4);
 }

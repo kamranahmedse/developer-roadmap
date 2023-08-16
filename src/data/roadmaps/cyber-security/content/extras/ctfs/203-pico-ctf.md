@@ -1,1 +1,0 @@
-# Pico ctf

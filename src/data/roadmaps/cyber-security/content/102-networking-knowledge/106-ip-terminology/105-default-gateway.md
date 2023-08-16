@@ -1,1 +1,0 @@
-# Default gateway

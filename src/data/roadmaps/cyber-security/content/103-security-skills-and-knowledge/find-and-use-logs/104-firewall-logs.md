@@ -1,1 +1,0 @@
-# Firewall logs

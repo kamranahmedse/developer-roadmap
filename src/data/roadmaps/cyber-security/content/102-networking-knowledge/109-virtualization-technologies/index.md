@@ -1,1 +1,0 @@
-# Virtualization technologies
