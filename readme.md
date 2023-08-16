@@ -5,9 +5,8 @@
 Roadmap is designed on balsmiq cloud and the resources are collected from field experts and developers.
 
 <p align="center">
-  <img src="src/icons/logo.svg" height="200">
-  <img src="src/icons/aicbe1.svg" height="90">
-  <h2 align="center"></h2>
+  <img src="src/icons/logo.svg" height="170">
+  <img src="src/icons/aicbe_wthout_txt.svg" height="170">
 </p>
 
 <br>
