@@ -1,1 +1,0 @@
-# Parrot os

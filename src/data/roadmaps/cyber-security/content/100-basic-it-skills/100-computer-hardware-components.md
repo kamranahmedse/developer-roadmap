@@ -1,1 +1,0 @@
-# Computer hardware components

@@ -1,1 +1,0 @@
-# Hardening concepts

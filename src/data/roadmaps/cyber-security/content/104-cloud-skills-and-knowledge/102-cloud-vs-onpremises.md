@@ -1,1 +1,0 @@
-# Cloud vs onpremises

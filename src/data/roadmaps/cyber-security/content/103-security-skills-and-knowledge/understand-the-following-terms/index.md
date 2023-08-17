@@ -1,1 +1,0 @@
-# Understand the following terms
