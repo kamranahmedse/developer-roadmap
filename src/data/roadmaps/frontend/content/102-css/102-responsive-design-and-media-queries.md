@@ -10,4 +10,3 @@ Visit the following resources to learn more:
 - [The guide to responsive web design in 2022](https://webflow.com/blog/responsive-web-design)
 - [5 simple tips to making responsive layouts the easy way](https://www.youtube.com/watch?v=VQraviuwbzU)
 - [Introduction To Responsive Web Design](https://www.youtube.com/watch?v=srvUrASNj0s)
-- [Useful & Responsive Layouts, no Media Queries required](https://youtu.be/p3_xn2zp1ty)
