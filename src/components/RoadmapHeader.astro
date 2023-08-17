@@ -5,7 +5,6 @@ import RoadmapHint from './RoadmapHint.astro';
 import RoadmapNote from './RoadmapNote.astro';
 import SubscribePopup from './SubscribePopup.astro';
 import TopicSearch from './TopicSearch/TopicSearch.astro';
-import YouTubeAlert from './YouTubeAlert.astro';
 
 export interface Props {
   title: string;
@@ -28,7 +27,6 @@ const isRoadmapReady = !isUpcoming;
 
 <div class='border-b'>
   <div class='py-5 sm:py-12 container relative'>
-    <YouTubeAlert />
 
     <div class='mt-0 mb-3 sm:mb-4 sm:mt-4'>
       <h1 class='text-2xl sm:text-4xl mb-0.5 sm:mb-2 font-bold'>

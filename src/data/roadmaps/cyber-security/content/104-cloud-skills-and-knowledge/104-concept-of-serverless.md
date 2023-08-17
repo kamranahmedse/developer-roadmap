@@ -1,1 +1,0 @@
-# Concept of serverless

@@ -1,1 +1,0 @@
-# Zero trust

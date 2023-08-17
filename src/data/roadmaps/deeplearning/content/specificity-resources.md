@@ -1,11 +1,7 @@
-# Specificity resources
+# Specificity
 
-## what is specificity resources?
 Specificity itself can be described as the algorithm/model’s ability to predict a true negative of each category available. In literature, it is also known simply as the true negative rate. Formally it can be calculated by the equation below
-
 Specificity = TN / TN + FP (True Negative/True Negative + False Positive)
-
-Visit the following resources to learn more:
 
 - [Introduction to specificity resources](https://www.analyticsvidhya.com/blog/2021/06/classification-problem-relation-between-sensitivity-specificity-and-accuracy/)
 - [Fundamentals of specificity resources](https://www.youtube.com/watch?v=vP06aMoz4v8)

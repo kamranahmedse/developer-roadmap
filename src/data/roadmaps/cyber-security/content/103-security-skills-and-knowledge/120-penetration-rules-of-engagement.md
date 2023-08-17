@@ -1,1 +1,0 @@
-# Penetration rules of engagement
