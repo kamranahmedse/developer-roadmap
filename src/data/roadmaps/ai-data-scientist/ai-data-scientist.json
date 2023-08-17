@@ -3,7 +3,128 @@
     "controls": {
       "control": [
         {
-          "ID": "1635",
+          "ID": "1815",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "1",
+          "h": "318",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "741",
+          "y": "2009",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0.449227353503602
+            },
+            "p1": {
+              "x": 0.443862401254973,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 318.753280831113
+            }
+          }
+        },
+        {
+          "ID": "1816",
+          "typeID": "__group__",
+          "zOrder": "1",
+          "measuredW": "567",
+          "measuredH": "49",
+          "w": "567",
+          "h": "49",
+          "x": "824",
+          "y": "2295",
+          "properties": {
+            "controlName": "ext_link:github.com/gerdm/prml"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "567",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "16770457",
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "480",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "GitHub Repository with Notes and Code from the eBook Above"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1817",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "660",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "740",
+          "y": "2011",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 660.5574478869448,
+              "y": -0.4296378094934994
+            },
+            "p1": {
+              "x": 0.443862401254972,
+              "y": -0.00008403832147459263
+            },
+            "p2": {
+              "x": 0.06544714726589973,
+              "y": -0.42963780949344255
+            }
+          }
+        },
+        {
+          "ID": "1818",
+          "typeID": "Label",
+          "zOrder": "3",
+          "measuredW": "262",
+          "measuredH": "40",
+          "x": "206",
+          "y": "295",
+          "properties": {
+            "size": "32",
+            "text": "Machine Learning"
+          }
+        },
+        {
+          "ID": "1819",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "1",
@@ -34,7 +155,7 @@
           }
         },
         {
-          "ID": "1636",
+          "ID": "1820",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "1",
@@ -64,20 +185,7 @@
           }
         },
         {
-          "ID": "1657",
-          "typeID": "Label",
-          "zOrder": "3",
-          "measuredW": "262",
-          "measuredH": "40",
-          "x": "206",
-          "y": "295",
-          "properties": {
-            "size": "32",
-            "text": "Machine Learning"
-          }
-        },
-        {
-          "ID": "1815",
+          "ID": "1821",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "1110",
@@ -107,7 +215,7 @@
           }
         },
         {
-          "ID": "1816",
+          "ID": "1822",
           "typeID": "TextArea",
           "zOrder": "7",
           "w": "216",
@@ -121,7 +229,7 @@
           }
         },
         {
-          "ID": "1817",
+          "ID": "1823",
           "typeID": "Label",
           "zOrder": "8",
           "measuredW": "100",
@@ -134,7 +242,7 @@
           }
         },
         {
-          "ID": "1818",
+          "ID": "1824",
           "typeID": "__group__",
           "zOrder": "9",
           "measuredW": "30",
@@ -165,7 +273,7 @@
           }
         },
         {
-          "ID": "1819",
+          "ID": "1825",
           "typeID": "__group__",
           "zOrder": "10",
           "measuredW": "429",
@@ -198,7 +306,7 @@
           }
         },
         {
-          "ID": "1820",
+          "ID": "1826",
           "typeID": "__group__",
           "zOrder": "11",
           "measuredW": "495",
@@ -246,14 +354,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "105",
+                  "measuredW": "65",
                   "measuredH": "25",
-                  "x": "375",
+                  "x": "412",
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Free Courses",
-                    "color": "10027263"
+                    "color": "10027263",
+                    "text": "Courses"
                   }
                 }
               ]
@@ -261,7 +369,7 @@
           }
         },
         {
-          "ID": "1824",
+          "ID": "1827",
           "typeID": "__group__",
           "zOrder": "12",
           "measuredW": "30",
@@ -292,7 +400,7 @@
           }
         },
         {
-          "ID": "1825",
+          "ID": "1828",
           "typeID": "__group__",
           "zOrder": "13",
           "measuredW": "181",
@@ -325,7 +433,7 @@
           }
         },
         {
-          "ID": "1826",
+          "ID": "1829",
           "typeID": "__group__",
           "zOrder": "14",
           "measuredW": "495",
@@ -372,14 +480,14 @@
                   "ID": "4",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "383",
+                  "x": "421",
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Free Course",
-                    "color": "10027263"
+                    "color": "10027263",
+                    "text": "Course"
                   }
                 }
               ]
@@ -387,7 +495,7 @@
           }
         },
         {
-          "ID": "1838",
+          "ID": "1830",
           "typeID": "TextArea",
           "zOrder": "15",
           "w": "154",
@@ -401,7 +509,7 @@
           }
         },
         {
-          "ID": "1840",
+          "ID": "1831",
           "typeID": "Label",
           "zOrder": "16",
           "measuredW": "70",
@@ -414,7 +522,7 @@
           }
         },
         {
-          "ID": "1842",
+          "ID": "1832",
           "typeID": "__group__",
           "zOrder": "17",
           "measuredW": "30",
@@ -445,7 +553,7 @@
           }
         },
         {
-          "ID": "1843",
+          "ID": "1833",
           "typeID": "__group__",
           "zOrder": "18",
           "measuredW": "127",
@@ -478,7 +586,7 @@
           }
         },
         {
-          "ID": "1845",
+          "ID": "1834",
           "typeID": "__group__",
           "zOrder": "19",
           "measuredW": "467",
@@ -525,14 +633,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "357",
+                  "x": "397",
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Free Course",
-                    "color": "10027263"
+                    "color": "10027263",
+                    "text": "Course"
                   }
                 }
               ]
@@ -540,7 +648,7 @@
           }
         },
         {
-          "ID": "1846",
+          "ID": "1835",
           "typeID": "__group__",
           "zOrder": "20",
           "measuredW": "30",
@@ -571,7 +679,7 @@
           }
         },
         {
-          "ID": "1847",
+          "ID": "1836",
           "typeID": "__group__",
           "zOrder": "21",
           "measuredW": "171",
@@ -604,7 +712,7 @@
           }
         },
         {
-          "ID": "1849",
+          "ID": "1837",
           "typeID": "Label",
           "zOrder": "22",
           "measuredW": "22",
@@ -618,7 +726,7 @@
           }
         },
         {
-          "ID": "1852",
+          "ID": "1838",
           "typeID": "__group__",
           "zOrder": "23",
           "measuredW": "467",
@@ -665,14 +773,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "356",
+                  "x": "397",
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Free Course",
-                    "color": "10027263"
+                    "color": "10027263",
+                    "text": "Course"
                   }
                 }
               ]
@@ -680,7 +788,7 @@
           }
         },
         {
-          "ID": "1853",
+          "ID": "1839",
           "typeID": "__group__",
           "zOrder": "24",
           "measuredW": "30",
@@ -711,7 +819,7 @@
           }
         },
         {
-          "ID": "1854",
+          "ID": "1840",
           "typeID": "__group__",
           "zOrder": "25",
           "measuredW": "221",
@@ -744,7 +852,7 @@
           }
         },
         {
-          "ID": "1855",
+          "ID": "1841",
           "typeID": "__group__",
           "zOrder": "26",
           "measuredW": "467",
@@ -791,14 +899,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "358",
+                  "x": "398",
                   "y": "12",
                   "properties": {
                     "size": "17",
-                    "text": "Free Course",
-                    "color": "10027263"
+                    "color": "10027263",
+                    "text": "Course"
                   }
                 }
               ]
@@ -806,7 +914,7 @@
           }
         },
         {
-          "ID": "1856",
+          "ID": "1842",
           "typeID": "__group__",
           "zOrder": "27",
           "measuredW": "30",
@@ -837,7 +945,7 @@
           }
         },
         {
-          "ID": "1857",
+          "ID": "1843",
           "typeID": "__group__",
           "zOrder": "28",
           "measuredW": "97",
@@ -870,7 +978,7 @@
           }
         },
         {
-          "ID": "1858",
+          "ID": "1844",
           "typeID": "__group__",
           "zOrder": "29",
           "measuredW": "467",
@@ -932,7 +1040,7 @@
           }
         },
         {
-          "ID": "1859",
+          "ID": "1845",
           "typeID": "__group__",
           "zOrder": "30",
           "measuredW": "467",
@@ -994,7 +1102,7 @@
           }
         },
         {
-          "ID": "1860",
+          "ID": "1846",
           "typeID": "__group__",
           "zOrder": "31",
           "measuredW": "30",
@@ -1025,7 +1133,7 @@
           }
         },
         {
-          "ID": "1861",
+          "ID": "1847",
           "typeID": "__group__",
           "zOrder": "32",
           "measuredW": "233",
@@ -1058,7 +1166,7 @@
           }
         },
         {
-          "ID": "1862",
+          "ID": "1848",
           "typeID": "__group__",
           "zOrder": "33",
           "measuredW": "467",
@@ -1120,7 +1228,7 @@
           }
         },
         {
-          "ID": "1864",
+          "ID": "1849",
           "typeID": "__group__",
           "zOrder": "34",
           "measuredW": "467",
@@ -1182,7 +1290,7 @@
           }
         },
         {
-          "ID": "1865",
+          "ID": "1850",
           "typeID": "__group__",
           "zOrder": "35",
           "measuredW": "467",
@@ -1244,7 +1352,7 @@
           }
         },
         {
-          "ID": "1866",
+          "ID": "1851",
           "typeID": "__group__",
           "zOrder": "36",
           "measuredW": "467",
@@ -1306,7 +1414,7 @@
           }
         },
         {
-          "ID": "1867",
+          "ID": "1852",
           "typeID": "__group__",
           "zOrder": "37",
           "measuredW": "467",
@@ -1368,7 +1476,7 @@
           }
         },
         {
-          "ID": "1868",
+          "ID": "1853",
           "typeID": "__group__",
           "zOrder": "38",
           "measuredW": "30",
@@ -1399,7 +1507,7 @@
           }
         },
         {
-          "ID": "1869",
+          "ID": "1854",
           "typeID": "__group__",
           "zOrder": "39",
           "measuredW": "121",
@@ -1432,7 +1540,7 @@
           }
         },
         {
-          "ID": "1870",
+          "ID": "1855",
           "typeID": "__group__",
           "zOrder": "40",
           "measuredW": "459",
@@ -1494,7 +1602,7 @@
           }
         },
         {
-          "ID": "1871",
+          "ID": "1856",
           "typeID": "__group__",
           "zOrder": "41",
           "measuredW": "459",
@@ -1556,7 +1664,7 @@
           }
         },
         {
-          "ID": "1872",
+          "ID": "1857",
           "typeID": "Arrow",
           "zOrder": "42",
           "w": "1",
@@ -1586,7 +1694,7 @@
           }
         },
         {
-          "ID": "1874",
+          "ID": "1858",
           "typeID": "Label",
           "zOrder": "43",
           "measuredW": "22",
@@ -1600,7 +1708,7 @@
           }
         },
         {
-          "ID": "1875",
+          "ID": "1859",
           "typeID": "Label",
           "zOrder": "44",
           "measuredW": "14",
@@ -1614,7 +1722,7 @@
           }
         },
         {
-          "ID": "1877",
+          "ID": "1860",
           "typeID": "Label",
           "zOrder": "45",
           "measuredW": "14",
@@ -1628,7 +1736,7 @@
           }
         },
         {
-          "ID": "1879",
+          "ID": "1861",
           "typeID": "Arrow",
           "zOrder": "46",
           "w": "591",
@@ -1658,7 +1766,7 @@
           }
         },
         {
-          "ID": "1880",
+          "ID": "1862",
           "typeID": "Label",
           "zOrder": "47",
           "measuredW": "20",
@@ -1672,7 +1780,7 @@
           }
         },
         {
-          "ID": "1882",
+          "ID": "1863",
           "typeID": "Arrow",
           "zOrder": "48",
           "w": "1",
@@ -1702,7 +1810,7 @@
           }
         },
         {
-          "ID": "1887",
+          "ID": "1864",
           "typeID": "Label",
           "zOrder": "49",
           "measuredW": "17",
@@ -1716,7 +1824,7 @@
           }
         },
         {
-          "ID": "1888",
+          "ID": "1865",
           "typeID": "Arrow",
           "zOrder": "50",
           "w": "638",
@@ -1746,7 +1854,7 @@
           }
         },
         {
-          "ID": "1890",
+          "ID": "1866",
           "typeID": "Label",
           "zOrder": "51",
           "measuredW": "20",
@@ -1760,7 +1868,7 @@
           }
         },
         {
-          "ID": "1891",
+          "ID": "1867",
           "typeID": "TextArea",
           "zOrder": "52",
           "w": "169",
@@ -1774,7 +1882,7 @@
           }
         },
         {
-          "ID": "1892",
+          "ID": "1868",
           "typeID": "Label",
           "zOrder": "53",
           "measuredW": "107",
@@ -1787,7 +1895,7 @@
           }
         },
         {
-          "ID": "1895",
+          "ID": "1869",
           "typeID": "__group__",
           "zOrder": "54",
           "measuredW": "30",
@@ -1818,7 +1926,7 @@
           }
         },
         {
-          "ID": "1896",
+          "ID": "1870",
           "typeID": "__group__",
           "zOrder": "55",
           "measuredW": "281",
@@ -1851,7 +1959,7 @@
           }
         },
         {
-          "ID": "1897",
+          "ID": "1871",
           "typeID": "__group__",
           "zOrder": "56",
           "measuredW": "495",
@@ -1913,7 +2021,7 @@
           }
         },
         {
-          "ID": "1898",
+          "ID": "1872",
           "typeID": "__group__",
           "zOrder": "57",
           "measuredW": "30",
@@ -1944,7 +2052,7 @@
           }
         },
         {
-          "ID": "1899",
+          "ID": "1873",
           "typeID": "__group__",
           "zOrder": "58",
           "measuredW": "396",
@@ -1977,7 +2085,7 @@
           }
         },
         {
-          "ID": "1900",
+          "ID": "1874",
           "typeID": "__group__",
           "zOrder": "59",
           "measuredW": "495",
@@ -2039,7 +2147,7 @@
           }
         },
         {
-          "ID": "1901",
+          "ID": "1875",
           "typeID": "__group__",
           "zOrder": "60",
           "measuredW": "495",
@@ -2086,14 +2194,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "385",
+                  "x": "424",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2101,7 +2209,7 @@
           }
         },
         {
-          "ID": "1902",
+          "ID": "1876",
           "typeID": "__group__",
           "zOrder": "61",
           "measuredW": "495",
@@ -2148,14 +2256,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "385",
+                  "x": "425",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2163,7 +2271,7 @@
           }
         },
         {
-          "ID": "1903",
+          "ID": "1877",
           "typeID": "__group__",
           "zOrder": "62",
           "measuredW": "495",
@@ -2210,14 +2318,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "57",
                   "measuredH": "25",
-                  "x": "385",
+                  "x": "423",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Tutorial"
+                    "text": "Tutorial"
                   }
                 }
               ]
@@ -2225,7 +2333,7 @@
           }
         },
         {
-          "ID": "1904",
+          "ID": "1878",
           "typeID": "__group__",
           "zOrder": "63",
           "measuredW": "495",
@@ -2272,14 +2380,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "57",
                   "measuredH": "25",
-                  "x": "386",
+                  "x": "419",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Tutorial"
+                    "text": "Tutorial"
                   }
                 }
               ]
@@ -2287,7 +2395,7 @@
           }
         },
         {
-          "ID": "1905",
+          "ID": "1879",
           "typeID": "__group__",
           "zOrder": "64",
           "measuredW": "495",
@@ -2334,14 +2442,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "57",
                   "measuredH": "25",
-                  "x": "386",
+                  "x": "419",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Tutorial"
+                    "text": "Tutorial"
                   }
                 }
               ]
@@ -2349,7 +2457,7 @@
           }
         },
         {
-          "ID": "1906",
+          "ID": "1880",
           "typeID": "__group__",
           "zOrder": "65",
           "measuredW": "495",
@@ -2411,7 +2519,7 @@
           }
         },
         {
-          "ID": "1907",
+          "ID": "1881",
           "typeID": "__group__",
           "zOrder": "66",
           "measuredW": "495",
@@ -2458,14 +2566,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "388",
+                  "x": "420",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2473,7 +2581,7 @@
           }
         },
         {
-          "ID": "1908",
+          "ID": "1882",
           "typeID": "Arrow",
           "zOrder": "67",
           "w": "1",
@@ -2503,7 +2611,7 @@
           }
         },
         {
-          "ID": "1909",
+          "ID": "1883",
           "typeID": "Label",
           "zOrder": "68",
           "measuredW": "14",
@@ -2517,7 +2625,7 @@
           }
         },
         {
-          "ID": "1910",
+          "ID": "1884",
           "typeID": "Label",
           "zOrder": "69",
           "measuredW": "14",
@@ -2531,7 +2639,7 @@
           }
         },
         {
-          "ID": "1911",
+          "ID": "1885",
           "typeID": "Arrow",
           "zOrder": "70",
           "w": "1221",
@@ -2561,7 +2669,7 @@
           }
         },
         {
-          "ID": "1912",
+          "ID": "1886",
           "typeID": "TextArea",
           "zOrder": "71",
           "w": "183",
@@ -2575,7 +2683,7 @@
           }
         },
         {
-          "ID": "1913",
+          "ID": "1887",
           "typeID": "Label",
           "zOrder": "72",
           "measuredW": "55",
@@ -2588,7 +2696,7 @@
           }
         },
         {
-          "ID": "1914",
+          "ID": "1888",
           "typeID": "__group__",
           "zOrder": "73",
           "measuredW": "30",
@@ -2619,7 +2727,7 @@
           }
         },
         {
-          "ID": "1915",
+          "ID": "1889",
           "typeID": "__group__",
           "zOrder": "74",
           "measuredW": "343",
@@ -2652,7 +2760,7 @@
           }
         },
         {
-          "ID": "1916",
+          "ID": "1890",
           "typeID": "__group__",
           "zOrder": "75",
           "measuredW": "444",
@@ -2699,14 +2807,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "329",
+                  "x": "371",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2714,7 +2822,7 @@
           }
         },
         {
-          "ID": "1917",
+          "ID": "1891",
           "typeID": "__group__",
           "zOrder": "76",
           "measuredW": "444",
@@ -2761,14 +2869,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "330",
+                  "x": "367",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2776,7 +2884,7 @@
           }
         },
         {
-          "ID": "1918",
+          "ID": "1892",
           "typeID": "__group__",
           "zOrder": "77",
           "measuredW": "441",
@@ -2825,7 +2933,7 @@
                   "zOrder": "2",
                   "measuredW": "164",
                   "measuredH": "25",
-                  "x": "260",
+                  "x": "265",
                   "y": "12",
                   "properties": {
                     "size": "17",
@@ -2838,7 +2946,7 @@
           }
         },
         {
-          "ID": "1919",
+          "ID": "1893",
           "typeID": "__group__",
           "zOrder": "78",
           "measuredW": "444",
@@ -2885,14 +2993,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "128",
+                  "measuredW": "87",
                   "measuredH": "25",
-                  "x": "301",
+                  "x": "340",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Challenges"
+                    "text": "Challenges"
                   }
                 }
               ]
@@ -2900,7 +3008,7 @@
           }
         },
         {
-          "ID": "1920",
+          "ID": "1894",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "444",
@@ -2947,14 +3055,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "330",
+                  "x": "371",
                   "y": "12",
                   "properties": {
                     "color": "10027263",
                     "size": "17",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -2962,7 +3070,7 @@
           }
         },
         {
-          "ID": "1921",
+          "ID": "1895",
           "typeID": "__group__",
           "zOrder": "80",
           "measuredW": "30",
@@ -2993,7 +3101,7 @@
           }
         },
         {
-          "ID": "1922",
+          "ID": "1896",
           "typeID": "__group__",
           "zOrder": "81",
           "measuredW": "363",
@@ -3026,7 +3134,7 @@
           }
         },
         {
-          "ID": "1923",
+          "ID": "1897",
           "typeID": "__group__",
           "zOrder": "82",
           "measuredW": "30",
@@ -3057,7 +3165,7 @@
           }
         },
         {
-          "ID": "1924",
+          "ID": "1898",
           "typeID": "__group__",
           "zOrder": "83",
           "measuredW": "97",
@@ -3090,7 +3198,7 @@
           }
         },
         {
-          "ID": "1925",
+          "ID": "1899",
           "typeID": "__group__",
           "zOrder": "84",
           "measuredW": "444",
@@ -3137,14 +3245,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "332",
+                  "x": "366",
                   "y": "13",
                   "properties": {
                     "color": "10027263",
                     "size": "17",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3152,7 +3260,7 @@
           }
         },
         {
-          "ID": "1927",
+          "ID": "1900",
           "typeID": "Label",
           "zOrder": "85",
           "measuredW": "22",
@@ -3166,7 +3274,7 @@
           }
         },
         {
-          "ID": "1928",
+          "ID": "1901",
           "typeID": "TextArea",
           "zOrder": "86",
           "w": "301",
@@ -3180,7 +3288,7 @@
           }
         },
         {
-          "ID": "1929",
+          "ID": "1902",
           "typeID": "Label",
           "zOrder": "87",
           "measuredW": "244",
@@ -3193,7 +3301,7 @@
           }
         },
         {
-          "ID": "1930",
+          "ID": "1903",
           "typeID": "__group__",
           "zOrder": "88",
           "measuredW": "30",
@@ -3224,7 +3332,7 @@
           }
         },
         {
-          "ID": "1931",
+          "ID": "1904",
           "typeID": "__group__",
           "zOrder": "89",
           "measuredW": "430",
@@ -3257,7 +3365,7 @@
           }
         },
         {
-          "ID": "1932",
+          "ID": "1905",
           "typeID": "__group__",
           "zOrder": "90",
           "measuredW": "546",
@@ -3304,14 +3412,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "438",
+                  "x": "478",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3319,7 +3427,7 @@
           }
         },
         {
-          "ID": "1933",
+          "ID": "1906",
           "typeID": "__group__",
           "zOrder": "91",
           "measuredW": "546",
@@ -3366,14 +3474,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "438",
+                  "x": "476",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3381,7 +3489,7 @@
           }
         },
         {
-          "ID": "1934",
+          "ID": "1907",
           "typeID": "__group__",
           "zOrder": "92",
           "measuredW": "546",
@@ -3428,14 +3536,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "438",
+                  "x": "476",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3443,7 +3551,7 @@
           }
         },
         {
-          "ID": "1936",
+          "ID": "1908",
           "typeID": "Label",
           "zOrder": "93",
           "measuredW": "22",
@@ -3457,7 +3565,7 @@
           }
         },
         {
-          "ID": "1939",
+          "ID": "1909",
           "typeID": "Arrow",
           "zOrder": "94",
           "w": "1",
@@ -3487,7 +3595,7 @@
           }
         },
         {
-          "ID": "1941",
+          "ID": "1910",
           "typeID": "Label",
           "zOrder": "95",
           "measuredW": "14",
@@ -3501,7 +3609,7 @@
           }
         },
         {
-          "ID": "1942",
+          "ID": "1911",
           "typeID": "TextArea",
           "zOrder": "96",
           "w": "208",
@@ -3515,7 +3623,7 @@
           }
         },
         {
-          "ID": "1943",
+          "ID": "1912",
           "typeID": "Label",
           "zOrder": "97",
           "measuredW": "140",
@@ -3528,37 +3636,7 @@
           }
         },
         {
-          "ID": "1944",
-          "typeID": "Arrow",
-          "zOrder": "2",
-          "w": "660",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "740",
-          "y": "2011",
-          "properties": {
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 660.5574478869448,
-              "y": -0.4296378094934994
-            },
-            "p1": {
-              "x": 0.443862401254972,
-              "y": -0.00008403832147459263
-            },
-            "p2": {
-              "x": 0.06544714726589973,
-              "y": -0.42963780949344255
-            }
-          }
-        },
-        {
-          "ID": "1945",
+          "ID": "1913",
           "typeID": "Label",
           "zOrder": "98",
           "measuredW": "20",
@@ -3572,7 +3650,7 @@
           }
         },
         {
-          "ID": "1947",
+          "ID": "1914",
           "typeID": "__group__",
           "zOrder": "99",
           "measuredW": "30",
@@ -3603,7 +3681,7 @@
           }
         },
         {
-          "ID": "1948",
+          "ID": "1915",
           "typeID": "__group__",
           "zOrder": "100",
           "measuredW": "562",
@@ -3636,7 +3714,7 @@
           }
         },
         {
-          "ID": "1949",
+          "ID": "1916",
           "typeID": "__group__",
           "zOrder": "101",
           "measuredW": "569",
@@ -3683,14 +3761,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "460",
+                  "x": "499",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3698,7 +3776,7 @@
           }
         },
         {
-          "ID": "1950",
+          "ID": "1917",
           "typeID": "__group__",
           "zOrder": "102",
           "measuredW": "567",
@@ -3745,14 +3823,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "97",
+                  "measuredW": "56",
                   "measuredH": "25",
-                  "x": "458",
+                  "x": "498",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Course"
+                    "text": "Course"
                   }
                 }
               ]
@@ -3760,7 +3838,7 @@
           }
         },
         {
-          "ID": "1951",
+          "ID": "1918",
           "typeID": "__group__",
           "zOrder": "103",
           "measuredW": "567",
@@ -3807,14 +3885,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "91",
+                  "measuredW": "50",
                   "measuredH": "25",
-                  "x": "464",
+                  "x": "502",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free eBook"
+                    "text": "eBook"
                   }
                 }
               ]
@@ -3822,85 +3900,7 @@
           }
         },
         {
-          "ID": "1952",
-          "typeID": "__group__",
-          "zOrder": "1",
-          "measuredW": "567",
-          "measuredH": "49",
-          "w": "567",
-          "h": "49",
-          "x": "824",
-          "y": "2295",
-          "properties": {
-            "controlName": "ext_link:github.com/gerdm/prml"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "567",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "borderColor": "16770457",
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "480",
-                  "measuredH": "25",
-                  "x": "20",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "GitHub Repository with Notes and Code from the eBook Above"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "1953",
-          "typeID": "Arrow",
-          "zOrder": "0",
-          "w": "1",
-          "h": "318",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "741",
-          "y": "2009",
-          "properties": {
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "10027263",
-            "p0": {
-              "x": 0,
-              "y": 0.449227353503602
-            },
-            "p1": {
-              "x": 0.443862401254973,
-              "y": -0.00008403832147459165
-            },
-            "p2": {
-              "x": 0,
-              "y": 318.753280831113
-            }
-          }
-        },
-        {
-          "ID": "1954",
+          "ID": "1919",
           "typeID": "Label",
           "zOrder": "104",
           "measuredW": "14",
@@ -3914,7 +3914,7 @@
           }
         },
         {
-          "ID": "1956",
+          "ID": "1920",
           "typeID": "Arrow",
           "zOrder": "105",
           "w": "562",
@@ -3944,7 +3944,7 @@
           }
         },
         {
-          "ID": "1957",
+          "ID": "1921",
           "typeID": "TextArea",
           "zOrder": "106",
           "w": "192",
@@ -3958,7 +3958,7 @@
           }
         },
         {
-          "ID": "1958",
+          "ID": "1922",
           "typeID": "Label",
           "zOrder": "107",
           "measuredW": "115",
@@ -3971,7 +3971,7 @@
           }
         },
         {
-          "ID": "1959",
+          "ID": "1923",
           "typeID": "__group__",
           "zOrder": "108",
           "measuredW": "30",
@@ -4002,7 +4002,7 @@
           }
         },
         {
-          "ID": "1960",
+          "ID": "1924",
           "typeID": "__group__",
           "zOrder": "109",
           "measuredW": "642",
@@ -4035,7 +4035,7 @@
           }
         },
         {
-          "ID": "1961",
+          "ID": "1925",
           "typeID": "__group__",
           "zOrder": "110",
           "measuredW": "444",
@@ -4082,14 +4082,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "105",
+                  "measuredW": "65",
                   "measuredH": "25",
-                  "x": "323",
+                  "x": "363",
                   "y": "13",
                   "properties": {
                     "color": "10027263",
                     "size": "17",
-                    "text": "Free Courses"
+                    "text": "Courses"
                   }
                 }
               ]
@@ -4097,7 +4097,7 @@
           }
         },
         {
-          "ID": "1962",
+          "ID": "1926",
           "typeID": "__group__",
           "zOrder": "111",
           "measuredW": "444",
@@ -4144,14 +4144,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "80",
+                  "measuredW": "50",
                   "measuredH": "25",
-                  "x": "348",
+                  "x": "378",
                   "y": "13",
                   "properties": {
                     "color": "10027263",
                     "size": "17",
-                    "text": "Free Book"
+                    "text": "eBook"
                   }
                 }
               ]
@@ -4159,7 +4159,7 @@
           }
         },
         {
-          "ID": "1963",
+          "ID": "1927",
           "typeID": "__group__",
           "zOrder": "112",
           "measuredW": "444",
@@ -4221,7 +4221,7 @@
           }
         },
         {
-          "ID": "1964",
+          "ID": "1928",
           "typeID": "__group__",
           "zOrder": "113",
           "measuredW": "444",
@@ -4283,7 +4283,7 @@
           }
         },
         {
-          "ID": "1965",
+          "ID": "1929",
           "typeID": "Arrow",
           "zOrder": "114",
           "w": "1",
@@ -4313,7 +4313,7 @@
           }
         },
         {
-          "ID": "1966",
+          "ID": "1930",
           "typeID": "Label",
           "zOrder": "115",
           "measuredW": "14",
@@ -4327,7 +4327,7 @@
           }
         },
         {
-          "ID": "1968",
+          "ID": "1931",
           "typeID": "Arrow",
           "zOrder": "116",
           "w": "649",
@@ -4357,7 +4357,7 @@
           }
         },
         {
-          "ID": "1969",
+          "ID": "1932",
           "typeID": "Arrow",
           "zOrder": "117",
           "w": "1",
@@ -4387,7 +4387,7 @@
           }
         },
         {
-          "ID": "1970",
+          "ID": "1933",
           "typeID": "Label",
           "zOrder": "118",
           "measuredW": "22",
@@ -4401,7 +4401,7 @@
           }
         },
         {
-          "ID": "1975",
+          "ID": "1934",
           "typeID": "Label",
           "zOrder": "119",
           "measuredW": "20",
@@ -4415,7 +4415,7 @@
           }
         },
         {
-          "ID": "1976",
+          "ID": "1935",
           "typeID": "Label",
           "zOrder": "120",
           "measuredW": "17",
@@ -4429,7 +4429,7 @@
           }
         },
         {
-          "ID": "1978",
+          "ID": "1936",
           "typeID": "Arrow",
           "zOrder": "121",
           "w": "553",
@@ -4459,7 +4459,7 @@
           }
         },
         {
-          "ID": "1979",
+          "ID": "1937",
           "typeID": "TextArea",
           "zOrder": "122",
           "w": "126",
@@ -4473,7 +4473,7 @@
           }
         },
         {
-          "ID": "1980",
+          "ID": "1938",
           "typeID": "Label",
           "zOrder": "123",
           "measuredW": "56",
@@ -4486,7 +4486,7 @@
           }
         },
         {
-          "ID": "1983",
+          "ID": "1939",
           "typeID": "__group__",
           "zOrder": "124",
           "measuredW": "30",
@@ -4517,7 +4517,7 @@
           }
         },
         {
-          "ID": "1984",
+          "ID": "1940",
           "typeID": "__group__",
           "zOrder": "125",
           "measuredW": "247",
@@ -4550,7 +4550,7 @@
           }
         },
         {
-          "ID": "1985",
+          "ID": "1941",
           "typeID": "__group__",
           "zOrder": "126",
           "measuredW": "408",
@@ -4597,14 +4597,14 @@
                   "ID": "2",
                   "typeID": "Label",
                   "zOrder": "2",
-                  "measuredW": "105",
+                  "measuredW": "65",
                   "measuredH": "25",
-                  "x": "286",
+                  "x": "328",
                   "y": "12",
                   "properties": {
                     "size": "17",
                     "color": "10027263",
-                    "text": "Free Courses"
+                    "text": "Courses"
                   }
                 }
               ]
@@ -4612,7 +4612,7 @@
           }
         },
         {
-          "ID": "1986",
+          "ID": "1942",
           "typeID": "Arrow",
           "zOrder": "127",
           "w": "1",
@@ -4642,7 +4642,7 @@
           }
         },
         {
-          "ID": "1990",
+          "ID": "1943",
           "typeID": "Label",
           "zOrder": "128",
           "measuredW": "14",
@@ -4656,7 +4656,7 @@
           }
         },
         {
-          "ID": "1991",
+          "ID": "1944",
           "typeID": "Arrow",
           "zOrder": "129",
           "w": "649",
@@ -4686,7 +4686,7 @@
           }
         },
         {
-          "ID": "1992",
+          "ID": "1945",
           "typeID": "Arrow",
           "zOrder": "130",
           "w": "1",
@@ -4715,7 +4715,7 @@
           }
         },
         {
-          "ID": "1994",
+          "ID": "1946",
           "typeID": "Label",
           "zOrder": "131",
           "measuredW": "22",
@@ -4729,7 +4729,7 @@
           }
         },
         {
-          "ID": "1995",
+          "ID": "1947",
           "typeID": "Label",
           "zOrder": "132",
           "measuredW": "20",
@@ -4743,7 +4743,7 @@
           }
         },
         {
-          "ID": "2001",
+          "ID": "1948",
           "typeID": "Label",
           "zOrder": "133",
           "measuredW": "187",
@@ -4756,7 +4756,7 @@
           }
         },
         {
-          "ID": "2002",
+          "ID": "1949",
           "typeID": "Arrow",
           "zOrder": "134",
           "w": "1",
@@ -4787,7 +4787,7 @@
           }
         },
         {
-          "ID": "2004",
+          "ID": "1950",
           "typeID": "__group__",
           "zOrder": "135",
           "measuredW": "365",
@@ -4891,20 +4891,7 @@
           }
         },
         {
-          "ID": "2018",
-          "typeID": "Label",
-          "zOrder": "139",
-          "measuredW": "31",
-          "measuredH": "26",
-          "x": "729",
-          "y": "324",
-          "properties": {
-            "size": "18",
-            "text": "and"
-          }
-        },
-        {
-          "ID": "2019",
+          "ID": "1951",
           "typeID": "__group__",
           "zOrder": "136",
           "measuredW": "473",
@@ -4958,7 +4945,7 @@
           }
         },
         {
-          "ID": "2020",
+          "ID": "1952",
           "typeID": "__group__",
           "zOrder": "137",
           "measuredW": "151",
@@ -4992,7 +4979,7 @@
           }
         },
         {
-          "ID": "2021",
+          "ID": "1953",
           "typeID": "__group__",
           "zOrder": "138",
           "measuredW": "128",
@@ -5026,7 +5013,20 @@
           }
         },
         {
-          "ID": "2024",
+          "ID": "1954",
+          "typeID": "Label",
+          "zOrder": "139",
+          "measuredW": "31",
+          "measuredH": "26",
+          "x": "729",
+          "y": "324",
+          "properties": {
+            "size": "18",
+            "text": "and"
+          }
+        },
+        {
+          "ID": "1955",
           "typeID": "__group__",
           "zOrder": "140",
           "measuredW": "248",
@@ -5060,7 +5060,7 @@
           }
         },
         {
-          "ID": "2025",
+          "ID": "1956",
           "typeID": "__group__",
           "zOrder": "141",
           "measuredW": "16",
@@ -5093,7 +5093,7 @@
           }
         },
         {
-          "ID": "2026",
+          "ID": "1957",
           "typeID": "__group__",
           "zOrder": "142",
           "measuredW": "467",
@@ -5156,7 +5156,7 @@
           }
         },
         {
-          "ID": "2028",
+          "ID": "1958",
           "typeID": "Arrow",
           "zOrder": "143",
           "w": "87",
@@ -5189,13 +5189,13 @@
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1 copy 7",
-      "order": 1000012.8824803841,
+      "name": "New Wireframe 1",
+      "order": 1000000,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "12FAF139-182F-497E-951C-8F7B6F7F66C7",
+    "resourceID": "BFEFC928-2756-4044-9FAF-3CD2D8DBA3C9",
     "mockupH": "2890",
     "mockupW": "1241",
     "measuredW": "1413",
