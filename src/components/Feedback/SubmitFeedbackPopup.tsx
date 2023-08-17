@@ -53,7 +53,6 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
       return;
     }
 
-    toast.success('Team feedback submitted successfully');
     setIsSuccess(true);
   };
 
@@ -74,16 +73,17 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
         >
           {!isSuccess && (
             <>
-              <h2 class="text-2xl font-semibold text-black">
+              <h2 class="text-xl font-semibold mb-1 text-black">
                 Enter your feedback
               </h2>
+              <p className={'text-sm text-gray-500'}>Help us improve your experience.</p>
               <form onSubmit={handleSubmit}>
                 <div className="my-4">
                   <textarea
                     ref={inputEl}
                     name="submit-feedback"
                     id="submit-feedback"
-                    className="mt-2 block min-h-[150px] w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
+                    className="mt-2 block min-h-[150px] w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 resize-none"
                     placeholder="Enter your feedback"
                     required
                     autoFocus
@@ -93,7 +93,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
                     }
                   />
                   {error && (
-                    <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">
+                    <p className="mt-2 rounded-md bg-red-100 p-2 text-red-700">
                       {error}
                     </p>
                   )}
@@ -104,14 +104,14 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
                     type="button"
                     disabled={isLoading}
                     onClick={handleClosePopup}
-                    className="flex-grow cursor-pointer rounded-lg bg-gray-200 py-2 text-center"
+                    className="flex-grow cursor-pointer rounded-md bg-gray-200 py-2 text-center"
                   >
                     Cancel
                   </button>
                   <button
                     disabled={isLoading}
                     type="submit"
-                    className="flex-grow cursor-pointer rounded-lg bg-black py-2 text-white disabled:opacity-40"
+                    className="flex-grow cursor-pointer rounded-md bg-black py-2 text-white disabled:opacity-40"
                   >
                     {isLoading ? 'Please wait ..' : 'Send'}
                   </button>
@@ -122,7 +122,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
 
           {isSuccess && (
             <div className="flex w-full flex-col items-center">
-              <CheckIcon additionalClasses="w-16 h-16 text-green-500" />
+              <CheckIcon additionalClasses="w-14 h-14 text-green-500 mt-4" />
               <h1 className="mt-4 text-xl font-semibold text-black sm:text-2xl">
                 Feedback Submitted
               </h1>
@@ -132,7 +132,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
               <button
                 type="button"
                 onClick={handleClosePopup}
-                className="mt-8 w-full flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
+                className="mt-4 w-full flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
               >
                 Close
               </button>
