@@ -28,6 +28,9 @@ svg .clickable-group:hover > [fill='rgb(255,255,0)'] {
 svg .clickable-group:hover > [fill='rgb(255,229,153)'] {
   fill: #f3c950;
 }
+svg .clickable-group:hover > [stroke='rgb(255,229,153)'] {
+  stroke: #f3c950;
+}
 
 svg .clickable-group:hover > [fill='rgb(153,153,153)'] {
   fill: #646464;
@@ -47,6 +50,7 @@ svg .clickable-group:hover > [fill='rgb(255,217,102)'] {
 
 svg .done rect {
   fill: #cbcbcb !important;
+  stroke: #cbcbcb !important;
 }
 
 svg .done text,
@@ -73,7 +77,7 @@ svg .learning text {
 
 svg .clickable-group.done[data-group-id^='check:'] rect {
   fill: gray !important;
-  stroke: gray;
+  stroke: gray !important;
 }
 
 .clickable-group rect {
@@ -129,7 +133,7 @@ svg .removed path {
 #customized-roadmap #resource-svg-wrap g:not([class]),
 #customized-roadmap #resource-svg-wrap circle,
 #customized-roadmap #resource-svg-wrap path[stroke='#fff'],
-#customized-roadmap #resource-svg-wrap g[data-group-id$="-note"]{
+#customized-roadmap #resource-svg-wrap g[data-group-id$='-note'] {
   display: none;
 }
 

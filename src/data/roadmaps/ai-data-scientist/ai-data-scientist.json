@@ -1,0 +1,5211 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "1635",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "1",
+          "h": "82",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "336",
+          "y": "187",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.46592710722921993
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 81.15918378573792
+            }
+          }
+        },
+        {
+          "ID": "1636",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "1",
+          "h": "104",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "336",
+          "y": "367",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.2549239398819054
+            },
+            "p1": {
+              "x": 0.44386240125497245,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 103.5703621905065
+            }
+          }
+        },
+        {
+          "ID": "1657",
+          "typeID": "Label",
+          "zOrder": "3",
+          "measuredW": "262",
+          "measuredH": "40",
+          "x": "206",
+          "y": "295",
+          "properties": {
+            "size": "32",
+            "text": "Machine Learning"
+          }
+        },
+        {
+          "ID": "1815",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "w": "1110",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "296",
+          "y": "470",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 1109.5477088002983,
+              "y": 0.5703621905065006
+            },
+            "p1": {
+              "x": 0.44386240125497217,
+              "y": -0.0000840383214745918
+            },
+            "p2": {
+              "x": 0,
+              "y": 0.5703621905065006
+            }
+          }
+        },
+        {
+          "ID": "1816",
+          "typeID": "TextArea",
+          "zOrder": "7",
+          "w": "216",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "268",
+          "y": "447",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1817",
+          "typeID": "Label",
+          "zOrder": "8",
+          "measuredW": "100",
+          "measuredH": "25",
+          "x": "326",
+          "y": "460",
+          "properties": {
+            "size": "17",
+            "text": "Mathematics"
+          }
+        },
+        {
+          "ID": "1818",
+          "typeID": "__group__",
+          "zOrder": "9",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "224",
+          "y": "536",
+          "properties": {
+            "controlName": "check:linear-algebra-calc-mathana"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1819",
+          "typeID": "__group__",
+          "zOrder": "10",
+          "measuredW": "429",
+          "measuredH": "28",
+          "w": "429",
+          "h": "28",
+          "x": "269",
+          "y": "537",
+          "properties": {
+            "controlName": "linear-algebra-calc-mathana"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "429",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Linear Algebra, Calculus, Mathematical Analysis"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1820",
+          "typeID": "__group__",
+          "zOrder": "11",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "269",
+          "y": "573",
+          "properties": {
+            "controlName": "ext_link:coursera.org/specializations/mathematics-machine-learning#courses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "16770457",
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "w": "268",
+                  "measuredW": "268",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Mathematics for Machine Learning"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "105",
+                  "measuredH": "25",
+                  "x": "375",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Free Courses",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1824",
+          "typeID": "__group__",
+          "zOrder": "12",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "222",
+          "y": "640",
+          "properties": {
+            "controlName": "check:diff-calculus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1825",
+          "typeID": "__group__",
+          "zOrder": "13",
+          "measuredW": "181",
+          "measuredH": "28",
+          "w": "181",
+          "h": "28",
+          "x": "268",
+          "y": "641",
+          "properties": {
+            "controlName": "diff-calculus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "181",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Differential Calculus"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1826",
+          "typeID": "__group__",
+          "zOrder": "14",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "268",
+          "y": "678",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/algebra-and-differential-calculus-for-data-science#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "330",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Algebra and Differential Calculus"
+                  }
+                },
+                {
+                  "ID": "4",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "383",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Free Course",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1838",
+          "typeID": "TextArea",
+          "zOrder": "15",
+          "w": "154",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "895",
+          "y": "444",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1840",
+          "typeID": "Label",
+          "zOrder": "16",
+          "measuredW": "70",
+          "measuredH": "25",
+          "x": "938",
+          "y": "456",
+          "properties": {
+            "size": "17",
+            "text": "Statistics"
+          }
+        },
+        {
+          "ID": "1842",
+          "typeID": "__group__",
+          "zOrder": "17",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "536",
+          "properties": {
+            "controlName": "check:stats-clt"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1843",
+          "typeID": "__group__",
+          "zOrder": "18",
+          "measuredW": "127",
+          "measuredH": "28",
+          "w": "127",
+          "h": "28",
+          "x": "893",
+          "y": "537",
+          "properties": {
+            "controlName": "stats-clt"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "127",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Statistics, CLT"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1845",
+          "typeID": "__group__",
+          "zOrder": "19",
+          "measuredW": "467",
+          "measuredH": "49",
+          "w": "467",
+          "h": "49",
+          "x": "893",
+          "y": "572",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/stanford-statistics#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "16770457",
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "265",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Introduction to Statistics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "357",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Free Course",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1846",
+          "typeID": "__group__",
+          "zOrder": "20",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "636",
+          "properties": {
+            "controlName": "check:hypothesis-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1847",
+          "typeID": "__group__",
+          "zOrder": "21",
+          "measuredW": "171",
+          "measuredH": "28",
+          "w": "171",
+          "h": "28",
+          "x": "893",
+          "y": "637",
+          "properties": {
+            "controlName": "hypothesis-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "171",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Hypothesis Testing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1849",
+          "typeID": "Label",
+          "zOrder": "22",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "645",
+          "y": "453",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1852",
+          "typeID": "__group__",
+          "zOrder": "23",
+          "measuredW": "467",
+          "measuredH": "49",
+          "w": "467",
+          "h": "49",
+          "x": "894",
+          "y": "676",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/statistical-analysis-hypothesis-testing-sas#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "224",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Hypothesis Testing"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "356",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Free Course",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1853",
+          "typeID": "__group__",
+          "zOrder": "24",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "740",
+          "properties": {
+            "controlName": "check:probability-sampling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1854",
+          "typeID": "__group__",
+          "zOrder": "25",
+          "measuredW": "221",
+          "measuredH": "28",
+          "w": "221",
+          "h": "28",
+          "x": "893",
+          "y": "741",
+          "properties": {
+            "controlName": "probability-sampling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "221",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Probability and Sampling"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1855",
+          "typeID": "__group__",
+          "zOrder": "26",
+          "measuredW": "467",
+          "measuredH": "49",
+          "w": "467",
+          "h": "49",
+          "x": "894",
+          "y": "782",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/probability-statistics#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "265",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Probability and Statistics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "358",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Free Course",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1856",
+          "typeID": "__group__",
+          "zOrder": "27",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "852",
+          "properties": {
+            "controlName": "check:ab-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1857",
+          "typeID": "__group__",
+          "zOrder": "28",
+          "measuredW": "97",
+          "measuredH": "28",
+          "w": "97",
+          "h": "28",
+          "x": "893",
+          "y": "853",
+          "properties": {
+            "controlName": "ab-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "97",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "AB Testing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1858",
+          "typeID": "__group__",
+          "zOrder": "29",
+          "measuredW": "467",
+          "measuredH": "49",
+          "w": "467",
+          "h": "49",
+          "x": "894",
+          "y": "894",
+          "properties": {
+            "controlName": "ext_link:vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#1e3b"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "294",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Practitioner’s Guide to Statistical Tests"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "406",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Article",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1859",
+          "typeID": "__group__",
+          "zOrder": "30",
+          "measuredW": "467",
+          "measuredH": "49",
+          "w": "467",
+          "h": "49",
+          "x": "894",
+          "y": "948",
+          "properties": {
+            "controlName": "ext_link:towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "201",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Experiment Design Article"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "407",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Article",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1860",
+          "typeID": "__group__",
+          "zOrder": "31",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "1021",
+          "properties": {
+            "controlName": "check:increasing-test-sensitivity"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1861",
+          "typeID": "__group__",
+          "zOrder": "32",
+          "measuredW": "233",
+          "measuredH": "28",
+          "w": "233",
+          "h": "28",
+          "x": "893",
+          "y": "1022",
+          "properties": {
+            "controlName": "increasing-test-sensitivity"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "233",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Increasing Test Sensitivity"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1862",
+          "typeID": "__group__",
+          "zOrder": "33",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "893",
+          "y": "1066",
+          "properties": {
+            "controlName": "ext_link:splitmetrics.com/resources/minimum-detectable-effect-mde/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "208",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Minimum Detectable Effect"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "405",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Article",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1864",
+          "typeID": "__group__",
+          "zOrder": "34",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "893",
+          "y": "1114",
+          "properties": {
+            "controlName": "ext_link:kdd.org/kdd2016/papers/files/adp0945-xieA.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "247",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper: Improving Test Sensitivity"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "408",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1865",
+          "typeID": "__group__",
+          "zOrder": "35",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "893",
+          "y": "1163",
+          "properties": {
+            "controlName": "ext_link:exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "286",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper: Improving Sensitivity (CUPED)"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "407",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1866",
+          "typeID": "__group__",
+          "zOrder": "36",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "893",
+          "y": "1212",
+          "properties": {
+            "controlName": "ext_link:booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "182",
+                  "measuredH": "25",
+                  "x": "15",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "CUPED at Booking.com"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "404",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Article",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1867",
+          "typeID": "__group__",
+          "zOrder": "37",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "893",
+          "y": "1260",
+          "properties": {
+            "controlName": "ext_link:doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "139",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Doordash: CUPAC"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "404",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Article",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1868",
+          "typeID": "__group__",
+          "zOrder": "38",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "848",
+          "y": "1381",
+          "properties": {
+            "controlName": "check:ratio-metrics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1869",
+          "typeID": "__group__",
+          "zOrder": "39",
+          "measuredW": "121",
+          "measuredH": "28",
+          "w": "121",
+          "h": "28",
+          "x": "893",
+          "y": "1384",
+          "properties": {
+            "controlName": "ratio-metrics"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "121",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Ratio Metrics"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1870",
+          "typeID": "__group__",
+          "zOrder": "40",
+          "measuredW": "459",
+          "measuredH": "51",
+          "w": "459",
+          "h": "51",
+          "x": "893",
+          "y": "1425",
+          "properties": {
+            "controlName": "ext_link:arxiv.org/pdf/1803.06336.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "459",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "328",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Microsoft: Delta Method in Metric Analytics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "392",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1871",
+          "typeID": "__group__",
+          "zOrder": "41",
+          "measuredW": "459",
+          "measuredH": "51",
+          "w": "459",
+          "h": "51",
+          "x": "893",
+          "y": "1481",
+          "properties": {
+            "controlName": "ext_link:stat.cmu.edu/~hseltman/files/ratio.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "459",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "157",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper: Ratio Metrics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "399",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1872",
+          "typeID": "Arrow",
+          "zOrder": "42",
+          "w": "1",
+          "h": "1092",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1405",
+          "y": "471",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.2549239398819054
+            },
+            "p1": {
+              "x": 0.4438624012549726,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 0,
+              "y": 1091.776390878193
+            }
+          }
+        },
+        {
+          "ID": "1874",
+          "typeID": "Label",
+          "zOrder": "43",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "1214",
+          "y": "452",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1875",
+          "typeID": "Label",
+          "zOrder": "44",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "1399",
+          "y": "575",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1877",
+          "typeID": "Label",
+          "zOrder": "45",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "1399",
+          "y": "1165",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1879",
+          "typeID": "Arrow",
+          "zOrder": "46",
+          "w": "591",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "815",
+          "y": "1563",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 590.5477088002983,
+              "y": -0.42963780949344255
+            },
+            "p1": {
+              "x": 0.443862401254972,
+              "y": -0.00008403832147459245
+            },
+            "p2": {
+              "x": -0.44733485616939106,
+              "y": -0.42963780949344255
+            }
+          }
+        },
+        {
+          "ID": "1880",
+          "typeID": "Label",
+          "zOrder": "47",
+          "measuredW": "20",
+          "measuredH": "36",
+          "x": "1124",
+          "y": "1544",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": "<"
+          }
+        },
+        {
+          "ID": "1882",
+          "typeID": "Arrow",
+          "zOrder": "48",
+          "w": "1",
+          "h": "739",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "815",
+          "y": "824",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.005640088012569322
+            },
+            "p1": {
+              "x": 0.4438624012549726,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 738.7763908781931
+            }
+          }
+        },
+        {
+          "ID": "1887",
+          "typeID": "Label",
+          "zOrder": "49",
+          "measuredW": "17",
+          "measuredH": "40",
+          "x": "806",
+          "y": "1206",
+          "properties": {
+            "color": "10027263",
+            "size": "32",
+            "text": "^"
+          }
+        },
+        {
+          "ID": "1888",
+          "typeID": "Arrow",
+          "zOrder": "50",
+          "w": "638",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "178",
+          "y": "824",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 637.8303948146445,
+              "y": -0.42963780949344255
+            },
+            "p1": {
+              "x": 0.4438624012549716,
+              "y": -0.00008403832147459225
+            },
+            "p2": {
+              "x": 0.07160674601669825,
+              "y": -0.42963780949344255
+            }
+          }
+        },
+        {
+          "ID": "1890",
+          "typeID": "Label",
+          "zOrder": "51",
+          "measuredW": "20",
+          "measuredH": "36",
+          "x": "609",
+          "y": "805",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": "<"
+          }
+        },
+        {
+          "ID": "1891",
+          "typeID": "TextArea",
+          "zOrder": "52",
+          "w": "169",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "259",
+          "y": "798",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1892",
+          "typeID": "Label",
+          "zOrder": "53",
+          "measuredW": "107",
+          "measuredH": "25",
+          "x": "291",
+          "y": "811",
+          "properties": {
+            "size": "17",
+            "text": "Econometrics"
+          }
+        },
+        {
+          "ID": "1895",
+          "typeID": "__group__",
+          "zOrder": "54",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "214",
+          "y": "887",
+          "properties": {
+            "controlName": "check:econometrics-pre-req"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1896",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "281",
+          "measuredH": "28",
+          "w": "281",
+          "h": "28",
+          "x": "259",
+          "y": "888",
+          "properties": {
+            "controlName": "econometrics-pre-req"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "281",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Pre-requisites of Econometrics"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1897",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "924",
+          "properties": {
+            "controlName": "ext_link:bookdown.org/ts_robinson1994/10EconometricTheorems/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "238",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Fundamentals of econometrics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "40",
+                  "measuredH": "25",
+                  "x": "441",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Book"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1898",
+          "typeID": "__group__",
+          "zOrder": "57",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "214",
+          "y": "997",
+          "properties": {
+            "controlName": "check:regression-time-series-fitting-distr"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1899",
+          "typeID": "__group__",
+          "zOrder": "58",
+          "measuredW": "396",
+          "measuredH": "28",
+          "w": "396",
+          "h": "28",
+          "x": "259",
+          "y": "998",
+          "properties": {
+            "controlName": "regression-time-series-fitting-distr"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "396",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Regressions, time series, fitting distributions"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1900",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1037",
+          "properties": {
+            "controlName": "ext_link:academia.edu/33062577/Dougherty_Intro_to_Econometrics_4th_ed_small"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "166",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Intro to Econometrics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "40",
+                  "measuredH": "25",
+                  "x": "441",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Book"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1901",
+          "typeID": "__group__",
+          "zOrder": "60",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1092",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/erasmus-econometrics#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "186",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Econometrics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "385",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1902",
+          "typeID": "__group__",
+          "zOrder": "61",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1167",
+          "properties": {
+            "controlName": "ext_link:kaggle.com/learn/time-series"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "217",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Kaggle — Learn Time Series"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "385",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1903",
+          "typeID": "__group__",
+          "zOrder": "62",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1221",
+          "properties": {
+            "controlName": "ext_link:kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts#Hierarchical-time-series"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "223",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Kaggle — Time Series Basics"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "385",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Tutorial"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1904",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1275",
+          "properties": {
+            "controlName": "ext_link:machinelearningmastery.com/arima-for-time-series-forecasting-with-python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "226",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "ARIMA Model for Time Series"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "386",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Tutorial"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1905",
+          "typeID": "__group__",
+          "zOrder": "64",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1329",
+          "properties": {
+            "controlName": "ext_link:machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "152",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Time Series Models"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "386",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Tutorial"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1906",
+          "typeID": "__group__",
+          "zOrder": "65",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1383",
+          "properties": {
+            "controlName": "ext_link:github.com/stalkermustang/bcdc_ds_takehome"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "231",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Forecasting Task with Solution"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "156",
+                  "measuredH": "25",
+                  "x": "328",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "OpenSource Project"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1907",
+          "typeID": "__group__",
+          "zOrder": "66",
+          "measuredW": "495",
+          "measuredH": "49",
+          "w": "495",
+          "h": "49",
+          "x": "259",
+          "y": "1454",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/linear-regression-business-statistics#about"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "495",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "221",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Coursera: Linear Regression"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "388",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1908",
+          "typeID": "Arrow",
+          "zOrder": "67",
+          "w": "1",
+          "h": "803",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "179",
+          "y": "825",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.2549239398819054
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459167
+            },
+            "p2": {
+              "x": 0,
+              "y": 803.0351039153877
+            }
+          }
+        },
+        {
+          "ID": "1909",
+          "typeID": "Label",
+          "zOrder": "68",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "172",
+          "y": "973",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1910",
+          "typeID": "Label",
+          "zOrder": "69",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "172",
+          "y": "1268",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1911",
+          "typeID": "Arrow",
+          "zOrder": "70",
+          "w": "1221",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "179",
+          "y": "1630",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 1221.5693816144649,
+              "y": 0.5703621905065575
+            },
+            "p1": {
+              "x": 0.4438624012549721,
+              "y": -0.00008403832147459216
+            },
+            "p2": {
+              "x": 0.21977869000261308,
+              "y": 0.5703621905065575
+            }
+          }
+        },
+        {
+          "ID": "1912",
+          "typeID": "TextArea",
+          "zOrder": "71",
+          "w": "183",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "243",
+          "y": "1605",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1913",
+          "typeID": "Label",
+          "zOrder": "72",
+          "measuredW": "55",
+          "measuredH": "25",
+          "x": "307",
+          "y": "1618",
+          "properties": {
+            "size": "17",
+            "text": "Coding"
+          }
+        },
+        {
+          "ID": "1914",
+          "typeID": "__group__",
+          "zOrder": "73",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "201",
+          "y": "1695",
+          "properties": {
+            "controlName": "check:learn-python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1915",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "343",
+          "measuredH": "28",
+          "w": "343",
+          "h": "28",
+          "x": "246",
+          "y": "1696",
+          "properties": {
+            "controlName": "learn-python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "343",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Learn Python Programming Language"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1916",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "444",
+          "measuredH": "49",
+          "w": "444",
+          "h": "49",
+          "x": "245",
+          "y": "1744",
+          "properties": {
+            "controlName": "ext_link:kaggle.com/learn/python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "170",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Learn Python - Kaggle"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "329",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1917",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "444",
+          "measuredH": "49",
+          "w": "444",
+          "h": "49",
+          "x": "245",
+          "y": "1798",
+          "properties": {
+            "controlName": "ext_link:developers.google.com/edu/python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "171",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Google's Python Class"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "330",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1918",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "441",
+          "measuredH": "49",
+          "w": "441",
+          "h": "49",
+          "x": "245",
+          "y": "1916",
+          "properties": {
+            "controlName": "ext_link:leetcode.com/explore/learn/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "441",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "165",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Algorithmic Exercises"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "164",
+                  "measuredH": "25",
+                  "x": "260",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Tutorial + Challenges"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1919",
+          "typeID": "__group__",
+          "zOrder": "78",
+          "measuredW": "444",
+          "measuredH": "49",
+          "w": "444",
+          "h": "49",
+          "x": "245",
+          "y": "1971",
+          "properties": {
+            "controlName": "ext_link:leetcode.com/studyplan"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "175",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Study Plans - Leetcode"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "128",
+                  "measuredH": "25",
+                  "x": "301",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Challenges"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1920",
+          "typeID": "__group__",
+          "zOrder": "79",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "245",
+          "y": "2027",
+          "properties": {
+            "controlName": "ext_link:coursera.org/specializations/algorithms#courses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "192",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Algorithms Specialization"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "330",
+                  "y": "12",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1921",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "201",
+          "y": "1875",
+          "properties": {
+            "controlName": "check:learn-dsa"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1922",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "363",
+          "measuredH": "28",
+          "w": "363",
+          "h": "28",
+          "x": "246",
+          "y": "1876",
+          "properties": {
+            "controlName": "learn-dsa"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "363",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Data Structures and Algorithms (Python)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1923",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "201",
+          "y": "2103",
+          "properties": {
+            "controlName": "check:learn-sql"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1924",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "97",
+          "measuredH": "28",
+          "w": "97",
+          "h": "28",
+          "x": "246",
+          "y": "2104",
+          "properties": {
+            "controlName": "learn-sql"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "97",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Learn SQL"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1925",
+          "typeID": "__group__",
+          "zOrder": "84",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "245",
+          "y": "2144",
+          "properties": {
+            "controlName": "ext_link:sqltutorial.org"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "95",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "SQL Tutorial"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "332",
+                  "y": "13",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1927",
+          "typeID": "Label",
+          "zOrder": "85",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "603",
+          "y": "1613",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1928",
+          "typeID": "TextArea",
+          "zOrder": "86",
+          "w": "301",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "801",
+          "y": "1604",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1929",
+          "typeID": "Label",
+          "zOrder": "87",
+          "measuredW": "244",
+          "measuredH": "25",
+          "x": "830",
+          "y": "1617",
+          "properties": {
+            "size": "17",
+            "text": "Exploratory Data Analysis (EDA)"
+          }
+        },
+        {
+          "ID": "1930",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "754",
+          "y": "1695",
+          "properties": {
+            "controlName": "check:data-understanding"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1931",
+          "typeID": "__group__",
+          "zOrder": "89",
+          "measuredW": "430",
+          "measuredH": "28",
+          "w": "430",
+          "h": "28",
+          "x": "799",
+          "y": "1696",
+          "properties": {
+            "controlName": "data-understanding"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "430",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Data understanding, Data Analysis, Vizualisation"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1932",
+          "typeID": "__group__",
+          "zOrder": "90",
+          "measuredW": "546",
+          "measuredH": "49",
+          "w": "546",
+          "h": "49",
+          "x": "800",
+          "y": "1739",
+          "properties": {
+            "controlName": "ext_link:coursera.org/projects/exploratory-data-analysis-python-pandas"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "546",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "383",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Exploratory Data Analysis With Python and Pandas"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "438",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1933",
+          "typeID": "__group__",
+          "zOrder": "91",
+          "measuredW": "546",
+          "measuredH": "49",
+          "w": "546",
+          "h": "49",
+          "x": "801",
+          "y": "1794",
+          "properties": {
+            "controlName": "ext_link:coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning#syllabus"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "546",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "362",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Exploratory Data Analysis for Machine Learning"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "438",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1934",
+          "typeID": "__group__",
+          "zOrder": "92",
+          "measuredW": "546",
+          "measuredH": "49",
+          "w": "546",
+          "h": "49",
+          "x": "801",
+          "y": "1850",
+          "properties": {
+            "controlName": "ext_link:coursera.org/projects/exploratory-data-analysis-seaborn"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "546",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "297",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Exploratory Data Analysis with Seaborn"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "438",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1936",
+          "typeID": "Label",
+          "zOrder": "93",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "1237",
+          "y": "1613",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1939",
+          "typeID": "Arrow",
+          "zOrder": "94",
+          "w": "1",
+          "h": "378",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1401",
+          "y": "1630",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.2549239398819054
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 377.8869773267736
+            }
+          }
+        },
+        {
+          "ID": "1941",
+          "typeID": "Label",
+          "zOrder": "95",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "1395",
+          "y": "1805",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1942",
+          "typeID": "TextArea",
+          "zOrder": "96",
+          "w": "208",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "822",
+          "y": "1986",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1943",
+          "typeID": "Label",
+          "zOrder": "97",
+          "measuredW": "140",
+          "measuredH": "25",
+          "x": "856",
+          "y": "1999",
+          "properties": {
+            "size": "17",
+            "text": "Machine Learning"
+          }
+        },
+        {
+          "ID": "1944",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "660",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "740",
+          "y": "2011",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 660.5574478869448,
+              "y": -0.4296378094934994
+            },
+            "p1": {
+              "x": 0.443862401254972,
+              "y": -0.00008403832147459263
+            },
+            "p2": {
+              "x": 0.06544714726589973,
+              "y": -0.42963780949344255
+            }
+          }
+        },
+        {
+          "ID": "1945",
+          "typeID": "Label",
+          "zOrder": "98",
+          "measuredW": "20",
+          "measuredH": "36",
+          "x": "1212",
+          "y": "1993",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": "<"
+          }
+        },
+        {
+          "ID": "1947",
+          "typeID": "__group__",
+          "zOrder": "99",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "777",
+          "y": "2071",
+          "properties": {
+            "controlName": "check:classic-advanced-ml"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1948",
+          "typeID": "__group__",
+          "zOrder": "100",
+          "measuredW": "562",
+          "measuredH": "28",
+          "w": "562",
+          "h": "28",
+          "x": "824",
+          "y": "2073",
+          "properties": {
+            "controlName": "classic-advanced-ml"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "562",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Classic ML (Sup. and Unsup.) Advanced ML (Ensembles, NNs)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1949",
+          "typeID": "__group__",
+          "zOrder": "101",
+          "measuredW": "569",
+          "measuredH": "49",
+          "w": "569",
+          "h": "49",
+          "x": "824",
+          "y": "2121",
+          "properties": {
+            "controlName": "ext_link:mlcourse.ai/book/topic01/topic01_intro.html"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "569",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "402",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Open Machine Learning Course - OpenDataScience"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "460",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1950",
+          "typeID": "__group__",
+          "zOrder": "102",
+          "measuredW": "567",
+          "measuredH": "49",
+          "w": "567",
+          "h": "49",
+          "x": "824",
+          "y": "2175",
+          "properties": {
+            "controlName": "ext_link:coursera.org/specializations/machine-learning-introduction#courses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "567",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "250",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Machine Learning Specialization"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "97",
+                  "measuredH": "25",
+                  "x": "458",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Course"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1951",
+          "typeID": "__group__",
+          "zOrder": "103",
+          "measuredW": "567",
+          "measuredH": "49",
+          "w": "567",
+          "h": "49",
+          "x": "824",
+          "y": "2242",
+          "properties": {
+            "controlName": "ext_link:microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "567",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "391",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Pattern Recognition & ML by Christopher m. bishop"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "91",
+                  "measuredH": "25",
+                  "x": "464",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free eBook"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1952",
+          "typeID": "__group__",
+          "zOrder": "1",
+          "measuredW": "567",
+          "measuredH": "49",
+          "w": "567",
+          "h": "49",
+          "x": "824",
+          "y": "2295",
+          "properties": {
+            "controlName": "ext_link:github.com/gerdm/prml"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "567",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "borderColor": "16770457",
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "480",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "GitHub Repository with Notes and Code from the eBook Above"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1953",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "1",
+          "h": "318",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "741",
+          "y": "2009",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0.449227353503602
+            },
+            "p1": {
+              "x": 0.443862401254973,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 318.753280831113
+            }
+          }
+        },
+        {
+          "ID": "1954",
+          "typeID": "Label",
+          "zOrder": "104",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "735",
+          "y": "2175",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1956",
+          "typeID": "Arrow",
+          "zOrder": "105",
+          "w": "562",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "178",
+          "y": "2328",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 562.1113082938997,
+              "y": -0.4296378094936699
+            },
+            "p1": {
+              "x": 0.4438624012549721,
+              "y": -0.0000840383214745926
+            },
+            "p2": {
+              "x": 0.07314291181455701,
+              "y": -0.4296378094936699
+            }
+          }
+        },
+        {
+          "ID": "1957",
+          "typeID": "TextArea",
+          "zOrder": "106",
+          "w": "192",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "257",
+          "y": "2302",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1958",
+          "typeID": "Label",
+          "zOrder": "107",
+          "measuredW": "115",
+          "measuredH": "25",
+          "x": "295",
+          "y": "2315",
+          "properties": {
+            "size": "17",
+            "text": "Deep Learning"
+          }
+        },
+        {
+          "ID": "1959",
+          "typeID": "__group__",
+          "zOrder": "108",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "214",
+          "y": "2385",
+          "properties": {
+            "controlName": "check:fully-connected-nn"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1960",
+          "typeID": "__group__",
+          "zOrder": "109",
+          "measuredW": "642",
+          "measuredH": "28",
+          "w": "642",
+          "h": "28",
+          "x": "258",
+          "y": "2387",
+          "properties": {
+            "controlName": "fully-connected-nn"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "642",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Fully connected NN, CNN, RNN, LSTM, Transformers, Transfer Learning"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1961",
+          "typeID": "__group__",
+          "zOrder": "110",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "258",
+          "y": "2435",
+          "properties": {
+            "controlName": "ext_link:coursera.org/specializations/deep-learning#courses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "226",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "13",
+                  "properties": {
+                    "size": "17",
+                    "text": "Deep Learning Specialization"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "105",
+                  "measuredH": "25",
+                  "x": "323",
+                  "y": "13",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Free Courses"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1962",
+          "typeID": "__group__",
+          "zOrder": "111",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "258",
+          "y": "2491",
+          "properties": {
+            "controlName": "ext_link:deeplearningbook.org"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "159",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "13",
+                  "properties": {
+                    "size": "17",
+                    "text": "Deep Learning Book"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "80",
+                  "measuredH": "25",
+                  "x": "348",
+                  "y": "13",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Free Book"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1963",
+          "typeID": "__group__",
+          "zOrder": "112",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "258",
+          "y": "2548",
+          "properties": {
+            "controlName": "ext_link:arxiv.org/pdf/1706.03762.pdf"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "182",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "13",
+                  "properties": {
+                    "size": "17",
+                    "text": "Attention is all you need"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "381",
+                  "y": "13",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Paper"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1964",
+          "typeID": "__group__",
+          "zOrder": "113",
+          "measuredW": "444",
+          "measuredH": "51",
+          "w": "444",
+          "h": "51",
+          "x": "258",
+          "y": "2605",
+          "properties": {
+            "controlName": "ext_link:jalammar.github.io/illustrated-transformer/"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "444",
+                  "h": "51",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "208",
+                  "measuredH": "25",
+                  "x": "17",
+                  "y": "13",
+                  "properties": {
+                    "size": "17",
+                    "text": "The Illustrated Transformer"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "49",
+                  "measuredH": "25",
+                  "x": "377",
+                  "y": "13",
+                  "properties": {
+                    "color": "10027263",
+                    "size": "17",
+                    "text": "Article"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1965",
+          "typeID": "Arrow",
+          "zOrder": "114",
+          "w": "1",
+          "h": "387",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "179",
+          "y": "2329",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.005640088012569322
+            },
+            "p1": {
+              "x": 0.44386240125497306,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 0,
+              "y": 386.82503815326254
+            }
+          }
+        },
+        {
+          "ID": "1966",
+          "typeID": "Label",
+          "zOrder": "115",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "173",
+          "y": "2534",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1968",
+          "typeID": "Arrow",
+          "zOrder": "116",
+          "w": "649",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "178",
+          "y": "2716",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 648.6514707649372,
+              "y": -0.4296378094936699
+            },
+            "p1": {
+              "x": 0.4438624012549717,
+              "y": -0.00008403832147459245
+            },
+            "p2": {
+              "x": 0.07314291181455701,
+              "y": -0.4296378094936699
+            }
+          }
+        },
+        {
+          "ID": "1969",
+          "typeID": "Arrow",
+          "zOrder": "117",
+          "w": "1",
+          "h": "228",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "829",
+          "y": "2488",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.053257099628808646
+            },
+            "p1": {
+              "x": 0.443862401254973,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 0,
+              "y": 228.02385404487768
+            }
+          }
+        },
+        {
+          "ID": "1970",
+          "typeID": "Label",
+          "zOrder": "118",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "492",
+          "y": "2698",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1975",
+          "typeID": "Label",
+          "zOrder": "119",
+          "measuredW": "20",
+          "measuredH": "36",
+          "x": "608",
+          "y": "2309",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": "<"
+          }
+        },
+        {
+          "ID": "1976",
+          "typeID": "Label",
+          "zOrder": "120",
+          "measuredW": "17",
+          "measuredH": "40",
+          "x": "821",
+          "y": "2613",
+          "properties": {
+            "color": "10027263",
+            "size": "32",
+            "text": "^"
+          }
+        },
+        {
+          "ID": "1978",
+          "typeID": "Arrow",
+          "zOrder": "121",
+          "w": "553",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "829",
+          "y": "2488",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 552.851666703077,
+              "y": -0.4296378094932152
+            },
+            "p1": {
+              "x": 0.4438624012549721,
+              "y": -0.00008403832147459259
+            },
+            "p2": {
+              "x": -0.3241012151029281,
+              "y": -0.42963780949344255
+            }
+          }
+        },
+        {
+          "ID": "1979",
+          "typeID": "TextArea",
+          "zOrder": "122",
+          "w": "126",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "879",
+          "y": "2463",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1980",
+          "typeID": "Label",
+          "zOrder": "123",
+          "measuredW": "56",
+          "measuredH": "25",
+          "x": "914",
+          "y": "2475",
+          "properties": {
+            "size": "17",
+            "text": "MLOps"
+          }
+        },
+        {
+          "ID": "1983",
+          "typeID": "__group__",
+          "zOrder": "124",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "881",
+          "y": "2549",
+          "properties": {
+            "controlName": "check:deployment-models"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1984",
+          "typeID": "__group__",
+          "zOrder": "125",
+          "measuredW": "247",
+          "measuredH": "28",
+          "w": "247",
+          "h": "28",
+          "x": "928",
+          "y": "2551",
+          "properties": {
+            "controlName": "deployment-models"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "247",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Deployment models, CI/CD"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1985",
+          "typeID": "__group__",
+          "zOrder": "126",
+          "measuredW": "408",
+          "measuredH": "49",
+          "w": "408",
+          "h": "49",
+          "x": "928",
+          "y": "2596",
+          "properties": {
+            "controlName": "ext_link:coursera.org/specializations/machine-learning-engineering-for-production-mlops#courses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "408",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "167",
+                  "measuredH": "25",
+                  "x": "16",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "MLOps Specialization"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "105",
+                  "measuredH": "25",
+                  "x": "286",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "color": "10027263",
+                    "text": "Free Courses"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1986",
+          "typeID": "Arrow",
+          "zOrder": "127",
+          "w": "1",
+          "h": "332",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1382",
+          "y": "2488",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.053257099628808646
+            },
+            "p1": {
+              "x": 0.44386240125497306,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 0,
+              "y": 331.5
+            }
+          }
+        },
+        {
+          "ID": "1990",
+          "typeID": "Label",
+          "zOrder": "128",
+          "measuredW": "14",
+          "measuredH": "36",
+          "x": "1376",
+          "y": "2648",
+          "properties": {
+            "size": "28",
+            "text": "v",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1991",
+          "typeID": "Arrow",
+          "zOrder": "129",
+          "w": "649",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "733",
+          "y": "2820",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 649.2721696380759,
+              "y": -0.4296378094932152
+            },
+            "p1": {
+              "x": 0.443862401254972,
+              "y": -0.00008403832147459266
+            },
+            "p2": {
+              "x": -0.04237734310993346,
+              "y": -0.4296378094932152
+            }
+          }
+        },
+        {
+          "ID": "1992",
+          "typeID": "Arrow",
+          "zOrder": "130",
+          "w": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "733",
+          "y": "2820",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.053257099628808646
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459167
+            },
+            "p2": {
+              "x": 0,
+              "y": 100
+            }
+          }
+        },
+        {
+          "ID": "1994",
+          "typeID": "Label",
+          "zOrder": "131",
+          "measuredW": "22",
+          "measuredH": "36",
+          "x": "1159",
+          "y": "2471",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": ">"
+          }
+        },
+        {
+          "ID": "1995",
+          "typeID": "Label",
+          "zOrder": "132",
+          "measuredW": "20",
+          "measuredH": "36",
+          "x": "1018",
+          "y": "2802",
+          "properties": {
+            "color": "10027263",
+            "size": "28",
+            "text": "<"
+          }
+        },
+        {
+          "ID": "2001",
+          "typeID": "Label",
+          "zOrder": "133",
+          "measuredW": "187",
+          "measuredH": "36",
+          "x": "651",
+          "y": "2935",
+          "properties": {
+            "size": "28",
+            "text": "Keep Learning"
+          }
+        },
+        {
+          "ID": "2002",
+          "typeID": "Arrow",
+          "zOrder": "134",
+          "w": "1",
+          "h": "63",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "732",
+          "y": "2987",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": -0.053257099628808646
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 0,
+              "y": 63
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "2004",
+          "typeID": "__group__",
+          "zOrder": "135",
+          "measuredW": "365",
+          "measuredH": "141",
+          "w": "365",
+          "h": "141",
+          "x": "1044",
+          "y": "230",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "365",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "333",
+                  "measuredH": "26",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "text": "Find the detailed version of this roadmap",
+                    "size": "18"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "337",
+                  "measuredH": "26",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "text": "along with resources and other roadmaps",
+                    "size": "18"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "338",
+                  "measuredH": "49",
+                  "w": "338",
+                  "h": "49",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "338",
+                          "h": "49",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "w": "172",
+                          "measuredW": "172",
+                          "measuredH": "28",
+                          "x": "83",
+                          "y": "11",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https://roadmap.sh"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2018",
+          "typeID": "Label",
+          "zOrder": "139",
+          "measuredW": "31",
+          "measuredH": "26",
+          "x": "729",
+          "y": "324",
+          "properties": {
+            "size": "18",
+            "text": "and"
+          }
+        },
+        {
+          "ID": "2019",
+          "typeID": "__group__",
+          "zOrder": "136",
+          "measuredW": "473",
+          "measuredH": "140",
+          "w": "473",
+          "h": "140",
+          "x": "554",
+          "y": "231",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "473",
+                  "h": "140",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "147",
+                  "measuredH": "26",
+                  "x": "16",
+                  "y": "21",
+                  "properties": {
+                    "size": "18",
+                    "text": "This roadmap was"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "437",
+                  "measuredH": "26",
+                  "x": "16",
+                  "y": "53",
+                  "properties": {
+                    "size": "18",
+                    "text": "Careem (an Uber company). Shout out to the creators"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2020",
+          "typeID": "__group__",
+          "zOrder": "137",
+          "measuredW": "151",
+          "measuredH": "26",
+          "w": "151",
+          "h": "26",
+          "x": "570",
+          "y": "324",
+          "properties": {
+            "controlName": "ext_link:twitter.com/mohamadtweets"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "151",
+                  "measuredH": "26",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "@mohamadtweets",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2021",
+          "typeID": "__group__",
+          "zOrder": "138",
+          "measuredW": "128",
+          "measuredH": "26",
+          "w": "128",
+          "h": "26",
+          "x": "769",
+          "y": "324",
+          "properties": {
+            "controlName": "ext_link:twitter.com/BulatShkanov"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "128",
+                  "measuredH": "26",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "@BulatShkanov",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2024",
+          "typeID": "__group__",
+          "zOrder": "140",
+          "measuredW": "248",
+          "measuredH": "26",
+          "w": "248",
+          "h": "26",
+          "x": "724",
+          "y": "252",
+          "properties": {
+            "controlName": "ext_link:bit.ly/careem-ai-ds"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "248",
+                  "measuredH": "26",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "created by the AI and DS team",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2025",
+          "typeID": "__group__",
+          "zOrder": "141",
+          "measuredW": "16",
+          "measuredH": "26",
+          "w": "16",
+          "h": "26",
+          "x": "977",
+          "y": "252",
+          "properties": {
+            "controlName": "ext_link:bit.ly/careem-ai-ds"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "16",
+                  "measuredH": "26",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "at"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2026",
+          "typeID": "__group__",
+          "zOrder": "142",
+          "measuredW": "467",
+          "measuredH": "43",
+          "w": "467",
+          "h": "43",
+          "x": "894",
+          "y": "1309",
+          "properties": {
+            "controlName": "ext_link:researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "467",
+                  "h": "43",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457",
+                    "borderColor": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "152",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Netflix: Stratification"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "w": "47",
+                  "measuredW": "46",
+                  "measuredH": "25",
+                  "x": "404",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Paper",
+                    "color": "10027263"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2028",
+          "typeID": "Arrow",
+          "zOrder": "143",
+          "w": "87",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "689",
+          "y": "3076",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 86.93011808835644,
+              "y": 0.15918378573792324
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459175
+            },
+            "p2": {
+              "x": 0,
+              "y": 0.15918378573792324
+            },
+            "color": "16777215"
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 1 copy 7",
+      "order": 1000012.8824803841,
+      "parentID": null,
+      "notes": ""
+    },
+    "branchID": "Master",
+    "resourceID": "12FAF139-182F-497E-951C-8F7B6F7F66C7",
+    "mockupH": "2890",
+    "mockupW": "1241",
+    "measuredW": "1413",
+    "measuredH": "3077",
+    "version": "1.0"
+  },
+  "groupOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "dependencies": [],
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/New%20Project%201.bmpr"
+}

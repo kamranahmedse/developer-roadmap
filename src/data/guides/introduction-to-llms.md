@@ -8,7 +8,7 @@ author:
 seo:
   title: 'Introduction to LLMs - roadmap.sh'
   description: 'What are LLMs, how does ChatGPT and other LLMs work?'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2023-05-16
 sitemap:

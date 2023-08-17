@@ -6,7 +6,7 @@ title: 'React Native Developer'
 description: 'Step by step guide to becoming a React Native developer in 2023'
 pdfUrl: '/pdfs/roadmaps/react-native.pdf'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 2333.39

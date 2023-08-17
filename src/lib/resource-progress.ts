@@ -325,7 +325,7 @@ export function refreshProgressCounters() {
     totalRemoved;
 
   const totalDone =
-    document.querySelectorAll('.clickable-group.done').length -
+    document.querySelectorAll('.clickable-group.done:not([data-group-id^="ext_link:"])').length -
     totalCheckBoxesDone;
   const totalLearning =
     document.querySelectorAll('.clickable-group.learning').length -

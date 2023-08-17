@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/roadmaps/cpp.pdf'
 order: 10
 briefTitle: 'C++'
 briefDescription: 'Step by step guide to becoming a C++ Developer in 2023'
-title: 'C++ Developer'
+title: 'C++ Developer Roadmap'
 description: 'Step by step guide to becoming a C++ developer in 2023'
 isNew: true
 hasTopics: true
@@ -18,10 +18,9 @@ schema:
   datePublished: '2023-06-01'
   dateModified: '2023-06-01'
 seo:
-  title: 'Learn to become a modern C++ developer'
+  title: 'C++ Developer Roadmap'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for C++ development. Learn to become a modern C++ developer by following the steps, skills, resources and guides listed in this roadmap.'
   keywords:
-    - 'guide to becoming a c++ developer'
     - 'guide to becoming a c++ developer'
     - 'c++ developer'
     - 'c++ engineer'
