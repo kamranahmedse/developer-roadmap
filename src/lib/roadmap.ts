@@ -17,6 +17,7 @@ export interface RoadmapFrontmatter {
     width: number;
     height: number;
   };
+
   schema?: {
     headline: string;
     description: string;
