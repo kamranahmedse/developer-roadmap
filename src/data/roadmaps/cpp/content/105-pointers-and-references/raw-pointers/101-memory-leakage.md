@@ -22,7 +22,7 @@ For example, this code will not have a memory leak:
 #include <memory>
 
 void no_memory_leak() {
-    std::shared_ptr<int> ptr = std::make_shared<int[]>(100); // Allocating memory in the heap for an array of integers using shared_ptr
+    std::shared_ptr<int[]> ptr = std::make_shared<int[]>(100); // Allocating memory in the heap for an array of integers using shared_ptr
     // Some code...
 } // shared_ptr goes out of scope and it will automatically deallocate the memory block assigned to it.
 ```
