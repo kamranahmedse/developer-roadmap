@@ -7,6 +7,7 @@ export type TokenPayload = {
   id: string;
   email: string;
   name: string;
+  avatar: string;
 };
 
 export function decodeToken(token: string): TokenPayload {

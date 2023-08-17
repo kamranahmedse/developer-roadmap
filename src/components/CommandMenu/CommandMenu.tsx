@@ -6,36 +6,67 @@ import GuideIcon from '../../icons/guide.svg';
 import HomeIcon from '../../icons/home.svg';
 import RoadmapIcon from '../../icons/roadmap.svg';
 import UserIcon from '../../icons/user.svg';
+import GroupIcon from '../../icons/group.svg';
 import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 
-type PageType = {
+export type PageType = {
+  id: string;
   url: string;
   title: string;
   group: string;
   icon?: string;
   isProtected?: boolean;
+  metadata?: Record<string, any>;
 };
 
 const defaultPages: PageType[] = [
-  { url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
+  { id: 'home', url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
   {
+    id: 'account',
     url: '/account',
     title: 'Account',
     group: 'Pages',
     icon: UserIcon,
     isProtected: true,
   },
-  { url: '/roadmaps', title: 'Roadmaps', group: 'Pages', icon: RoadmapIcon },
   {
+    id: 'team',
+    url: '/team',
+    title: 'Teams',
+    group: 'Pages',
+    icon: GroupIcon,
+    isProtected: true,
+  },
+  {
+    id: 'roadmaps',
+    url: '/roadmaps',
+    title: 'Roadmaps',
+    group: 'Pages',
+    icon: RoadmapIcon,
+  },
+  {
+    id: 'best-practices',
     url: '/best-practices',
     title: 'Best Practices',
     group: 'Pages',
     icon: BestPracticesIcon,
   },
-  { url: '/guides', title: 'Guides', group: 'Pages', icon: GuideIcon },
-  { url: '/videos', title: 'Videos', group: 'Pages', icon: VideoIcon },
+  {
+    id: 'guides',
+    url: '/guides',
+    title: 'Guides',
+    group: 'Pages',
+    icon: GuideIcon,
+  },
+  {
+    id: 'videos',
+    url: '/videos',
+    title: 'Videos',
+    group: 'Pages',
+    icon: VideoIcon,
+  },
 ];
 
 function shouldShowPage(page: PageType) {
@@ -188,7 +219,7 @@ export function CommandMenu() {
                         <span class="mr-2 text-gray-400">{page.group}</span>
                       )}
                       {page.icon && (
-                        <img src={page.icon} class="mr-2 h-4 w-4" />
+                        <img alt={page.title} src={page.icon} class="mr-2 h-4 w-4" />
                       )}
                       {page.title}
                     </a>

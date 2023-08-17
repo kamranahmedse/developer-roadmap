@@ -5,11 +5,13 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 type HttpOptionsType = RequestInit | { headers: Record<string, any> };
 
 type AppResponse = Record<string, any>;
-type FetchError = {
+
+export type FetchError = {
   status: number;
   message: string;
 };
-type AppError = {
+
+export type AppError = {
   status: number;
   message: string;
   errors?: { message: string; location: string }[];
@@ -44,7 +46,7 @@ export async function httpCall<
         'Content-Type': 'application/json',
         Accept: 'application/json',
         Authorization: `Bearer ${Cookies.get(TOKEN_COOKIE_NAME)}`,
-        'fp': fingerprint.visitorId,
+        fp: fingerprint.visitorId,
         ...(options?.headers ?? {}),
       }),
     });
@@ -65,6 +67,12 @@ export async function httpCall<
     if (data.status === 401) {
       Cookies.remove(TOKEN_COOKIE_NAME);
       window.location.reload();
+      return { response: undefined, error: data as ErrorType };
+    }
+
+    if (data.status === 403) {
+      window.location.href = '/account';
+      return { response: undefined, error: data as ErrorType };
     }
 
     return {

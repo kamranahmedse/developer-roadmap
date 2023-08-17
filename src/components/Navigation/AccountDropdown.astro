@@ -18,7 +18,7 @@ import Icon from '../AstroIcon.astro';
   </button>
 
   <div
-    class='absolute right-0 z-10 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
+    class='absolute right-0 z-50 mt-2 hidden w-48 rounded-md bg-slate-800 py-1 shadow-xl'
     data-account-dropdown
   >
     <ul>
@@ -28,6 +28,22 @@ import Icon from '../AstroIcon.astro';
           class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
         >
           Profile
+        </a>
+      </li>
+      <li class='px-1'>
+        <a
+          href='/account/friends'
+          class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
+        >
+          Friends
+        </a>
+      </li>
+      <li class='px-1'>
+        <a
+          href='/team'
+          class='block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700'
+        >
+          Teams
         </a>
       </li>
       <li class='px-1'>

@@ -1,8 +1,15 @@
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from "../../lib/jwt";
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 export function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
+
+  // @FIXME: fix the domain name in the cookie created by the API
+  Cookies.remove(TOKEN_COOKIE_NAME, {
+    path: '/',
+    domain: 'api.roadmap.sh',
+  });
+
   // Reloading will automatically redirect the user if required
   window.location.reload();
 }
@@ -17,6 +24,7 @@ function bindEvents() {
 
     // If the user clicks on the logout button, remove the token cookie
     if (dataset.logoutButton !== undefined) {
+      e.preventDefault();
       logout();
     } else if (dataset.showMobileNav !== undefined) {
       document.querySelector('[data-mobile-nav]')?.classList.remove('hidden');
@@ -35,10 +43,10 @@ function bindEvents() {
     });
 
   document
-      .querySelector('[data-command-menu]')
-      ?.addEventListener('click', () => {
-        window.dispatchEvent(new CustomEvent('command.k'));
-      });
+    .querySelector('[data-command-menu]')
+    ?.addEventListener('click', () => {
+      window.dispatchEvent(new CustomEvent('command.k'));
+    });
 }
 
 bindEvents();

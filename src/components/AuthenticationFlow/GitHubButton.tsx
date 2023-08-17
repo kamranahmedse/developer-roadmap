@@ -90,8 +90,13 @@ export function GitHubButton(props: GitHubButtonProps) {
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
+      const pagePath =
+        ['/respond-invite', '/befriend'].includes(window.location.pathname)
+          ? window.location.pathname + window.location.search
+          : window.location.pathname;
+
       localStorage.setItem(GITHUB_REDIRECT_AT, Date.now().toString());
-      localStorage.setItem(GITHUB_LAST_PAGE, window.location.pathname);
+      localStorage.setItem(GITHUB_LAST_PAGE, pagePath);
     }
 
     window.location.href = response.loginUrl;

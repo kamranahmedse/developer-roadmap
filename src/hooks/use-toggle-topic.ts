@@ -19,6 +19,7 @@ export function useToggleTopic(callback: CallbackType) {
       });
     }
 
+    window.addEventListener(`roadmap.topic.toggle`, handleToggleTopic);
     window.addEventListener(`best-practice.topic.toggle`, handleToggleTopic);
     return () => {
       window.removeEventListener(

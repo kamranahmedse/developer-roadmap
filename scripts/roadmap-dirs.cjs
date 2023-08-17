@@ -53,12 +53,12 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
   const sortOrder = controlName.match(/^\d+/)?.[0];
 
   // No directory for a group without control name
-  if (!controlName || !sortOrder) {
+  if (!controlName || (!sortOrder && !controlName.startsWith('check:'))) {
     return;
   }
 
   // e.g. testing-your-apps:other-options
-  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '');
+  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '').replace(/^check:/, '');
   // e.g. ['testing-your-apps', 'other-options']
   const dirParts = controlNameWithoutSortOrder.split(':');
 

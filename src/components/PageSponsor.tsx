@@ -36,7 +36,8 @@ export function PageSponsor(props: PageSponsorProps) {
       currentPath === '/roadmaps' ||
       currentPath.startsWith('/guides') ||
       currentPath.startsWith('/videos') ||
-      currentPath.startsWith('/account')
+      currentPath.startsWith('/account') ||
+      currentPath.startsWith('/team')
     ) {
       return;
     }

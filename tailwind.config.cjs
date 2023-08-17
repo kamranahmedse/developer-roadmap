@@ -11,6 +11,21 @@ module.exports = {
           },
         },
       },
+      keyframes: {
+        'fade-slide-up': {
+          '0%': {
+            opacity: '0',
+            transform: 'translateY(20px)',
+          },
+          '100%': {
+            opacity: '1',
+            transform: 'translateY(0)',
+          },
+        },
+      },
+      animation: {
+        'fade-slide-up': 'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+      },
     },
     container: {
       center: true,

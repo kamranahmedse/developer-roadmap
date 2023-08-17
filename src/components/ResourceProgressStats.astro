@@ -1,10 +1,14 @@
 ---
+import type { ResourceType } from '../lib/resource-progress';
 import AstroIcon from './AstroIcon.astro';
+import { ProgressShareButton } from './UserProgress/ProgressShareButton';
 export interface Props {
+  resourceId: string;
+  resourceType: ResourceType;
   isSecondaryBanner?: boolean;
 }
 
-const { isSecondaryBanner = false } = Astro.props;
+const { isSecondaryBanner = false, resourceId, resourceType } = Astro.props;
 ---
 
 <div
@@ -27,42 +31,62 @@ const { isSecondaryBanner = false } = Astro.props;
       <span data-progress-percentage>0</span>% Done
     </span>
 
-    <span><span data-progress-done>0</span> completed</span><span
-      class='mx-1.5 text-gray-400'>&middot;</span
-    >
-    <span><span data-progress-learning>0</span> in progress</span><span
-      class='mx-1.5 text-gray-400'>&middot;</span
-    >
-    <span><span data-progress-skipped>0</span> skipped</span><span
-      class='mx-1.5 text-gray-400'>&middot;</span
-    >
-    <span><span data-progress-total>0</span> Total</span>
+    <span class='itesm-center hidden md:flex'>
+      <span><span data-progress-done>0</span> completed</span><span
+        class='mx-1.5 text-gray-400'>&middot;</span
+      >
+      <span><span data-progress-learning>0</span> in progress</span><span
+        class='mx-1.5 text-gray-400'>&middot;</span
+      >
+      <span><span data-progress-skipped>0</span> skipped</span><span
+        class='mx-1.5 text-gray-400'>&middot;</span
+      >
+      <span><span data-progress-total>0</span> Total</span>
+    </span>
+    <span class='md:hidden'>
+      <span data-progress-done>0</span> of <span data-progress-total>0</span> Done
+    </span>
   </p>
 
-  <button
-    data-popup='progress-help'
-    class='flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black'
+  <div
+    class='flex items-center gap-3 opacity-0 transition-opacity duration-300'
     data-progress-nums
   >
-    <AstroIcon icon='question' />
-    Track Progress
-  </button>
+    <ProgressShareButton
+      resourceId={resourceId}
+      resourceType={resourceType}
+      client:load
+    />
+    <button
+      data-popup='progress-help'
+      class='flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black'
+      data-progress-nums
+    >
+      <AstroIcon icon='question' />
+      Track Progress
+    </button>
+  </div>
 </div>
 
-<p
+<div
   data-progress-nums-container
-  class='striped-loader relative -mb-2 flex items-center justify-between rounded-md border bg-white bg-white px-2 py-1.5 text-sm text-sm text-gray-700 sm:hidden'
+  class='striped-loader relative -mb-2 flex items-center justify-between rounded-md border bg-white px-2 py-1.5 text-sm text-gray-700 sm:hidden'
 >
-  <span data-progress-nums class='opacity-0 transition-opacity duration-300 text-gray-500'>
+  <span
+    data-progress-nums
+    class='text-gray-500 opacity-0 transition-opacity duration-300'
+  >
     <span data-progress-done>0</span> of <span data-progress-total>0</span> Done
   </span>
 
-  <button
-    data-popup='progress-help'
-    class='flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black'
+  <div
+    class='flex items-center gap-2 opacity-0 transition-opacity duration-300'
     data-progress-nums
   >
-    <AstroIcon icon='question' />
-    Track Progress
-  </button>
-</p>
+    <ProgressShareButton
+      resourceId={resourceId}
+      resourceType={resourceType}
+      client:load
+    />
+  </div>
+</div>

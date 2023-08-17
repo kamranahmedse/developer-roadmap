@@ -19,6 +19,7 @@ import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
 import { showLoginPopup } from '../../lib/popup';
+import { useToast } from '../../hooks/use-toast';
 
 export function TopicDetail() {
   const [contributionAlertMessage, setContributionAlertMessage] = useState('');
@@ -27,6 +28,7 @@ export function TopicDetail() {
   const [isContributing, setIsContributing] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
+  const toast = useToast();
 
   const isGuest = useMemo(() => !isLoggedIn(), []);
   const topicRef = useRef<HTMLDivElement>(null);
@@ -78,7 +80,7 @@ export function TopicDetail() {
         refreshProgressCounters();
       })
       .catch((err) => {
-        alert(err.message);
+        toast.error(err.message);
         console.error(err);
       })
       .finally(() => {

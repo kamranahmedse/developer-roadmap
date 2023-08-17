@@ -1,7 +1,3 @@
-# JOIN Queries
-
-Absolutely, here's a brief summary about SQL JOIN Queries:
-
 # SQL JOIN Queries
 
 JOIN clause is used to combine rows from two or more tables, based on a related column between them.

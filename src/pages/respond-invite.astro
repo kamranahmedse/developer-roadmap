@@ -1,0 +1,14 @@
+---
+import AccountLayout from '../layouts/AccountLayout.astro';
+import { RespondInviteForm } from '../components/RespondInviteForm';
+import LoginPopup from "../components/AuthenticationFlow/LoginPopup.astro";
+---
+
+<AccountLayout
+  title='Respond Invite'
+  noIndex={true}
+  initialLoadingMessage={'Loading invite'}
+>
+  <LoginPopup />
+  <RespondInviteForm client:only />
+</AccountLayout>

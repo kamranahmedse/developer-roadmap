@@ -5,4 +5,4 @@ The Blackboard architectural pattern is a software design pattern that allows fo
 Learn more from the following links:
 
 - [Overview of Blackboard (design pattern)](<https://en.wikipedia.org/wiki/Blackboard_(design_pattern)>)
-- [](http://www.openloop.com/softwareEngineering/patterns/architecturePattern/arch_Blackboard.htm)
+- [Architectural Patterns: Blackboard](http://www.openloop.com/softwareEngineering/patterns/architecturePattern/arch_Blackboard.htm)

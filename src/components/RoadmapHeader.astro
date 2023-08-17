@@ -7,6 +7,7 @@ import TopicSearch from './TopicSearch/TopicSearch.astro';
 import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
+import { TeamVersions } from './TeamVersions/TeamVersions';
 
 export interface Props {
   title: string;
@@ -36,67 +37,67 @@ const isRoadmapReady = !isUpcoming;
 <LoginPopup />
 <ProgressHelpPopup />
 
-<div class="border-b">
-  <div class="container relative py-5 sm:py-12">
-    <div class="mb-3 mt-0 sm:mb-4">
-      <h1 class="mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl">
+<div class='border-b'>
+  <div class='container relative py-5 sm:py-12'>
+    <div class='mb-3 mt-0 sm:mb-4'>
+      <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
         <MarkFavorite
           resourceId={roadmapId}
-          resourceType="roadmap"
-          className="text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[0.4] [&>svg]:stroke-gray-400 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 sm:[&>svg]:h-5 sm:[&>svg]:w-5 ml-1.5 relative focus:outline-0"
+          resourceType='roadmap'
+          className='text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[0.4] [&>svg]:stroke-gray-400 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 sm:[&>svg]:h-5 sm:[&>svg]:w-5 ml-1.5 relative focus:outline-0'
           client:load
         />
       </h1>
-      <p class="text-sm text-gray-500 sm:text-lg">{description}</p>
+      <p class='text-sm text-gray-500 sm:text-lg'>{description}</p>
     </div>
 
-    <div class="flex justify-between">
-      <div class="flex gap-1 sm:gap-2">
+    <div class='flex justify-between gap-2 sm:gap-0'>
+      <div class='flex gap-1 sm:gap-2'>
         {
           !hasSearch && (
             <>
               <a
-                href="/roadmaps"
-                class="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
-                aria-label="Back to All Roadmaps"
+                href='/roadmaps'
+                class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
+                aria-label='Back to All Roadmaps'
               >
-                &larr;<span class="hidden sm:inline">&nbsp;All Roadmaps</span>
+                &larr;<span class='hidden sm:inline'>&nbsp;All Roadmaps</span>
               </a>
 
               {isRoadmapReady && (
                 <>
                   <button
                     data-guest-required
-                    data-popup="login-popup"
-                    class="inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm"
-                    aria-label="Download Roadmap"
+                    data-popup='login-popup'
+                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+                    aria-label='Download Roadmap'
                   >
-                    <Icon icon="download" />
-                    <span class="ml-2 hidden sm:inline">Download</span>
+                    <Icon icon='download' />
+                    <span class='ml-2 hidden sm:inline'>Download</span>
                   </button>
 
                   <a
                     data-auth-required
-                    class="inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm"
-                    aria-label="Download Roadmap"
-                    target="_blank"
+                    class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+                    aria-label='Download Roadmap'
+                    target='_blank'
                     href={`/pdfs/roadmaps/${roadmapId}.pdf`}
                   >
-                    <Icon icon="download" />
-                    <span class="ml-2 hidden sm:inline">Download</span>
+                    <Icon icon='download' />
+                    <span class='ml-2 hidden sm:inline'>Download</span>
                   </a>
                 </>
               )}
 
               <button
                 data-guest-required
-                data-popup="login-popup"
-                class="inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm"
-                aria-label="Subscribe for Updates"
+                data-popup='login-popup'
+                class='inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm'
+                aria-label='Subscribe for Updates'
               >
-                <Icon icon="email" />
-                <span class="ml-2">Subscribe</span>
+                <Icon icon='email' />
+                <span class='ml-2'>Subscribe</span>
               </button>
             </>
           )
@@ -106,30 +107,38 @@ const isRoadmapReady = !isUpcoming;
           hasSearch && (
             <a
               href={`/${roadmapId}`}
-              class="rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
-              aria-label="Back to Visual Roadmap"
+              class='rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
+              aria-label='Back to Visual Roadmap'
             >
               &larr;
-              <span class="inline">&nbsp;Visual Roadmap</span>
+              <span class='inline'>&nbsp;Visual Roadmap</span>
             </a>
           )
         }
       </div>
 
-      {
-        isRoadmapReady && (
-          <a
-            href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
-            target="_blank"
-            class="inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
-            aria-label="Suggest Changes"
-          >
-            <Icon icon="comment" class="h-3 w-3" />
-            <span class="ml-2 hidden sm:inline">Suggest Changes</span>
-            <span class="ml-2 inline sm:hidden">Suggest</span>
-          </a>
-        )
-      }
+      <div class='flex items-center gap-1 sm:gap-2'>
+        <TeamVersions
+          resourceType='roadmap'
+          resourceId={roadmapId}
+          client:only
+        />
+
+        {
+          isRoadmapReady && (
+            <a
+              href={`https://github.com/kamranahmedse/developer-roadmap/issues/new?title=[Suggestion] ${title}`}
+              target='_blank'
+              class='inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm'
+              aria-label='Suggest Changes'
+            >
+              <Icon icon='comment' class='h-3 w-3' />
+              <span class='ml-2 hidden sm:inline'>Suggest Changes</span>
+              <span class='ml-2 inline sm:hidden'>Suggest</span>
+            </a>
+          )
+        }
+      </div>
     </div>
 
     <!-- Desktop: Roadmap Resources - Alert -->

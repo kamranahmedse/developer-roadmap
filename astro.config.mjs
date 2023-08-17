@@ -72,8 +72,8 @@ export default defineConfig({
       serialize: serializeSitemap,
     }),
     compress({
-      css: false,
-      js: false,
+      CSS: false,
+      JavaScript: false,
     }),
     preact(),
   ],
