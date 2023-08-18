@@ -50,6 +50,9 @@ svg .clickable-group:hover > [fill='rgb(255,217,102)'] {
 
 svg .done rect {
   fill: #cbcbcb !important;
+}
+
+svg .done rect[stroke="rgb(255,229,153)"] {
   stroke: #cbcbcb !important;
 }
 

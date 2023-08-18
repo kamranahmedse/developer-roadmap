@@ -3,15 +3,15 @@
     "controls": {
       "control": [
         {
-          "ID": "1815",
+          "ID": "1959",
           "typeID": "Arrow",
           "zOrder": "0",
           "w": "1",
           "h": "318",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "741",
-          "y": "2009",
+          "x": "751",
+          "y": "2019",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -33,15 +33,15 @@
           }
         },
         {
-          "ID": "1816",
+          "ID": "1960",
           "typeID": "__group__",
           "zOrder": "1",
           "measuredW": "567",
           "measuredH": "49",
           "w": "567",
           "h": "49",
-          "x": "824",
-          "y": "2295",
+          "x": "834",
+          "y": "2305",
           "properties": {
             "controlName": "ext_link:github.com/gerdm/prml"
           },
@@ -81,15 +81,15 @@
           }
         },
         {
-          "ID": "1817",
+          "ID": "1961",
           "typeID": "Arrow",
           "zOrder": "2",
           "w": "660",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "740",
-          "y": "2011",
+          "x": "750",
+          "y": "2021",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -111,28 +111,28 @@
           }
         },
         {
-          "ID": "1818",
+          "ID": "1962",
           "typeID": "Label",
           "zOrder": "3",
-          "measuredW": "262",
+          "measuredW": "302",
           "measuredH": "40",
-          "x": "206",
-          "y": "295",
+          "x": "201",
+          "y": "305",
           "properties": {
             "size": "32",
-            "text": "Machine Learning"
+            "text": "AI and Data Scientist"
           }
         },
         {
-          "ID": "1819",
+          "ID": "1963",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "1",
           "h": "82",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "336",
-          "y": "187",
+          "x": "346",
+          "y": "197",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -155,15 +155,15 @@
           }
         },
         {
-          "ID": "1820",
+          "ID": "1964",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "1",
           "h": "104",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "336",
-          "y": "367",
+          "x": "346",
+          "y": "377",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -185,15 +185,15 @@
           }
         },
         {
-          "ID": "1821",
+          "ID": "1965",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "1110",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "296",
-          "y": "470",
+          "x": "306",
+          "y": "480",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -215,42 +215,42 @@
           }
         },
         {
-          "ID": "1822",
+          "ID": "1966",
           "typeID": "TextArea",
           "zOrder": "7",
           "w": "216",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "268",
-          "y": "447",
+          "x": "278",
+          "y": "457",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1823",
+          "ID": "1967",
           "typeID": "Label",
           "zOrder": "8",
           "measuredW": "100",
           "measuredH": "25",
-          "x": "326",
-          "y": "460",
+          "x": "336",
+          "y": "470",
           "properties": {
             "size": "17",
             "text": "Mathematics"
           }
         },
         {
-          "ID": "1824",
+          "ID": "1968",
           "typeID": "__group__",
           "zOrder": "9",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "224",
-          "y": "536",
+          "x": "234",
+          "y": "546",
           "properties": {
             "controlName": "check:linear-algebra-calc-mathana"
           },
@@ -273,15 +273,15 @@
           }
         },
         {
-          "ID": "1825",
+          "ID": "1969",
           "typeID": "__group__",
           "zOrder": "10",
           "measuredW": "429",
           "measuredH": "28",
           "w": "429",
           "h": "28",
-          "x": "269",
-          "y": "537",
+          "x": "279",
+          "y": "547",
           "properties": {
             "controlName": "linear-algebra-calc-mathana"
           },
@@ -306,15 +306,15 @@
           }
         },
         {
-          "ID": "1826",
+          "ID": "1970",
           "typeID": "__group__",
           "zOrder": "11",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "269",
-          "y": "573",
+          "x": "279",
+          "y": "583",
           "properties": {
             "controlName": "ext_link:coursera.org/specializations/mathematics-machine-learning#courses"
           },
@@ -369,15 +369,15 @@
           }
         },
         {
-          "ID": "1827",
+          "ID": "1971",
           "typeID": "__group__",
           "zOrder": "12",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "222",
-          "y": "640",
+          "x": "232",
+          "y": "650",
           "properties": {
             "controlName": "check:diff-calculus"
           },
@@ -400,15 +400,15 @@
           }
         },
         {
-          "ID": "1828",
+          "ID": "1972",
           "typeID": "__group__",
           "zOrder": "13",
           "measuredW": "181",
           "measuredH": "28",
           "w": "181",
           "h": "28",
-          "x": "268",
-          "y": "641",
+          "x": "278",
+          "y": "651",
           "properties": {
             "controlName": "diff-calculus"
           },
@@ -433,15 +433,15 @@
           }
         },
         {
-          "ID": "1829",
+          "ID": "1973",
           "typeID": "__group__",
           "zOrder": "14",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "268",
-          "y": "678",
+          "x": "278",
+          "y": "688",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/algebra-and-differential-calculus-for-data-science#syllabus"
           },
@@ -495,42 +495,42 @@
           }
         },
         {
-          "ID": "1830",
+          "ID": "1974",
           "typeID": "TextArea",
           "zOrder": "15",
           "w": "154",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "895",
-          "y": "444",
+          "x": "905",
+          "y": "454",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1831",
+          "ID": "1975",
           "typeID": "Label",
           "zOrder": "16",
           "measuredW": "70",
           "measuredH": "25",
-          "x": "938",
-          "y": "456",
+          "x": "948",
+          "y": "466",
           "properties": {
             "size": "17",
             "text": "Statistics"
           }
         },
         {
-          "ID": "1832",
+          "ID": "1976",
           "typeID": "__group__",
           "zOrder": "17",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "536",
+          "x": "858",
+          "y": "546",
           "properties": {
             "controlName": "check:stats-clt"
           },
@@ -553,15 +553,15 @@
           }
         },
         {
-          "ID": "1833",
+          "ID": "1977",
           "typeID": "__group__",
           "zOrder": "18",
           "measuredW": "127",
           "measuredH": "28",
           "w": "127",
           "h": "28",
-          "x": "893",
-          "y": "537",
+          "x": "903",
+          "y": "547",
           "properties": {
             "controlName": "stats-clt"
           },
@@ -586,15 +586,15 @@
           }
         },
         {
-          "ID": "1834",
+          "ID": "1978",
           "typeID": "__group__",
           "zOrder": "19",
           "measuredW": "467",
           "measuredH": "49",
           "w": "467",
           "h": "49",
-          "x": "893",
-          "y": "572",
+          "x": "903",
+          "y": "582",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/stanford-statistics#syllabus"
           },
@@ -648,15 +648,15 @@
           }
         },
         {
-          "ID": "1835",
+          "ID": "1979",
           "typeID": "__group__",
           "zOrder": "20",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "636",
+          "x": "858",
+          "y": "646",
           "properties": {
             "controlName": "check:hypothesis-testing"
           },
@@ -679,15 +679,15 @@
           }
         },
         {
-          "ID": "1836",
+          "ID": "1980",
           "typeID": "__group__",
           "zOrder": "21",
           "measuredW": "171",
           "measuredH": "28",
           "w": "171",
           "h": "28",
-          "x": "893",
-          "y": "637",
+          "x": "903",
+          "y": "647",
           "properties": {
             "controlName": "hypothesis-testing"
           },
@@ -712,13 +712,13 @@
           }
         },
         {
-          "ID": "1837",
+          "ID": "1981",
           "typeID": "Label",
           "zOrder": "22",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "645",
-          "y": "453",
+          "x": "655",
+          "y": "463",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -726,15 +726,15 @@
           }
         },
         {
-          "ID": "1838",
+          "ID": "1982",
           "typeID": "__group__",
           "zOrder": "23",
           "measuredW": "467",
           "measuredH": "49",
           "w": "467",
           "h": "49",
-          "x": "894",
-          "y": "676",
+          "x": "904",
+          "y": "686",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/statistical-analysis-hypothesis-testing-sas#syllabus"
           },
@@ -788,15 +788,15 @@
           }
         },
         {
-          "ID": "1839",
+          "ID": "1983",
           "typeID": "__group__",
           "zOrder": "24",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "740",
+          "x": "858",
+          "y": "750",
           "properties": {
             "controlName": "check:probability-sampling"
           },
@@ -819,15 +819,15 @@
           }
         },
         {
-          "ID": "1840",
+          "ID": "1984",
           "typeID": "__group__",
           "zOrder": "25",
           "measuredW": "221",
           "measuredH": "28",
           "w": "221",
           "h": "28",
-          "x": "893",
-          "y": "741",
+          "x": "903",
+          "y": "751",
           "properties": {
             "controlName": "probability-sampling"
           },
@@ -852,15 +852,15 @@
           }
         },
         {
-          "ID": "1841",
+          "ID": "1985",
           "typeID": "__group__",
           "zOrder": "26",
           "measuredW": "467",
           "measuredH": "49",
           "w": "467",
           "h": "49",
-          "x": "894",
-          "y": "782",
+          "x": "904",
+          "y": "792",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/probability-statistics#syllabus"
           },
@@ -914,15 +914,15 @@
           }
         },
         {
-          "ID": "1842",
+          "ID": "1986",
           "typeID": "__group__",
           "zOrder": "27",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "852",
+          "x": "858",
+          "y": "862",
           "properties": {
             "controlName": "check:ab-testing"
           },
@@ -945,15 +945,15 @@
           }
         },
         {
-          "ID": "1843",
+          "ID": "1987",
           "typeID": "__group__",
           "zOrder": "28",
           "measuredW": "97",
           "measuredH": "28",
           "w": "97",
           "h": "28",
-          "x": "893",
-          "y": "853",
+          "x": "903",
+          "y": "863",
           "properties": {
             "controlName": "ab-testing"
           },
@@ -978,15 +978,15 @@
           }
         },
         {
-          "ID": "1844",
+          "ID": "1988",
           "typeID": "__group__",
           "zOrder": "29",
           "measuredW": "467",
           "measuredH": "49",
           "w": "467",
           "h": "49",
-          "x": "894",
-          "y": "894",
+          "x": "904",
+          "y": "904",
           "properties": {
             "controlName": "ext_link:vkteam.medium.com/practitioners-guide-to-statistical-tests-ed2d580ef04f#1e3b"
           },
@@ -1040,15 +1040,15 @@
           }
         },
         {
-          "ID": "1845",
+          "ID": "1989",
           "typeID": "__group__",
           "zOrder": "30",
           "measuredW": "467",
           "measuredH": "49",
           "w": "467",
           "h": "49",
-          "x": "894",
-          "y": "948",
+          "x": "904",
+          "y": "958",
           "properties": {
             "controlName": "ext_link:towardsdatascience.com/step-by-step-for-planning-an-a-b-test-ef3c93143c0b"
           },
@@ -1102,15 +1102,15 @@
           }
         },
         {
-          "ID": "1846",
+          "ID": "1990",
           "typeID": "__group__",
           "zOrder": "31",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "1021",
+          "x": "858",
+          "y": "1031",
           "properties": {
             "controlName": "check:increasing-test-sensitivity"
           },
@@ -1133,15 +1133,15 @@
           }
         },
         {
-          "ID": "1847",
+          "ID": "1991",
           "typeID": "__group__",
           "zOrder": "32",
           "measuredW": "233",
           "measuredH": "28",
           "w": "233",
           "h": "28",
-          "x": "893",
-          "y": "1022",
+          "x": "903",
+          "y": "1032",
           "properties": {
             "controlName": "increasing-test-sensitivity"
           },
@@ -1166,15 +1166,15 @@
           }
         },
         {
-          "ID": "1848",
+          "ID": "1992",
           "typeID": "__group__",
           "zOrder": "33",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "893",
-          "y": "1066",
+          "x": "903",
+          "y": "1076",
           "properties": {
             "controlName": "ext_link:splitmetrics.com/resources/minimum-detectable-effect-mde/"
           },
@@ -1228,15 +1228,15 @@
           }
         },
         {
-          "ID": "1849",
+          "ID": "1993",
           "typeID": "__group__",
           "zOrder": "34",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "893",
-          "y": "1114",
+          "x": "903",
+          "y": "1124",
           "properties": {
             "controlName": "ext_link:kdd.org/kdd2016/papers/files/adp0945-xieA.pdf"
           },
@@ -1290,15 +1290,15 @@
           }
         },
         {
-          "ID": "1850",
+          "ID": "1994",
           "typeID": "__group__",
           "zOrder": "35",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "893",
-          "y": "1163",
+          "x": "903",
+          "y": "1173",
           "properties": {
             "controlName": "ext_link:exp-platform.com/Documents/2013-02-CUPED-ImprovingSensitivityOfControlledExperiments.pdf"
           },
@@ -1352,15 +1352,15 @@
           }
         },
         {
-          "ID": "1851",
+          "ID": "1995",
           "typeID": "__group__",
           "zOrder": "36",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "893",
-          "y": "1212",
+          "x": "903",
+          "y": "1222",
           "properties": {
             "controlName": "ext_link:booking.ai/how-booking-com-increases-the-power-of-online-experiments-with-cuped-995d186fff1d"
           },
@@ -1414,15 +1414,15 @@
           }
         },
         {
-          "ID": "1852",
+          "ID": "1996",
           "typeID": "__group__",
           "zOrder": "37",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "893",
-          "y": "1260",
+          "x": "903",
+          "y": "1270",
           "properties": {
             "controlName": "ext_link:doordash.engineering/2020/06/08/improving-experimental-power-through-control-using-predictions-as-covariate-cupac/"
           },
@@ -1476,15 +1476,15 @@
           }
         },
         {
-          "ID": "1853",
+          "ID": "1997",
           "typeID": "__group__",
           "zOrder": "38",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "848",
-          "y": "1381",
+          "x": "858",
+          "y": "1391",
           "properties": {
             "controlName": "check:ratio-metrics"
           },
@@ -1507,15 +1507,15 @@
           }
         },
         {
-          "ID": "1854",
+          "ID": "1998",
           "typeID": "__group__",
           "zOrder": "39",
           "measuredW": "121",
           "measuredH": "28",
           "w": "121",
           "h": "28",
-          "x": "893",
-          "y": "1384",
+          "x": "903",
+          "y": "1394",
           "properties": {
             "controlName": "ratio-metrics"
           },
@@ -1540,15 +1540,15 @@
           }
         },
         {
-          "ID": "1855",
+          "ID": "1999",
           "typeID": "__group__",
           "zOrder": "40",
           "measuredW": "459",
           "measuredH": "51",
           "w": "459",
           "h": "51",
-          "x": "893",
-          "y": "1425",
+          "x": "903",
+          "y": "1435",
           "properties": {
             "controlName": "ext_link:arxiv.org/pdf/1803.06336.pdf"
           },
@@ -1602,15 +1602,15 @@
           }
         },
         {
-          "ID": "1856",
+          "ID": "2000",
           "typeID": "__group__",
           "zOrder": "41",
           "measuredW": "459",
           "measuredH": "51",
           "w": "459",
           "h": "51",
-          "x": "893",
-          "y": "1481",
+          "x": "903",
+          "y": "1491",
           "properties": {
             "controlName": "ext_link:stat.cmu.edu/~hseltman/files/ratio.pdf"
           },
@@ -1664,15 +1664,15 @@
           }
         },
         {
-          "ID": "1857",
+          "ID": "2001",
           "typeID": "Arrow",
           "zOrder": "42",
           "w": "1",
           "h": "1092",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1405",
-          "y": "471",
+          "x": "1415",
+          "y": "481",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -1694,13 +1694,13 @@
           }
         },
         {
-          "ID": "1858",
+          "ID": "2002",
           "typeID": "Label",
           "zOrder": "43",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "1214",
-          "y": "452",
+          "x": "1224",
+          "y": "462",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -1708,13 +1708,13 @@
           }
         },
         {
-          "ID": "1859",
+          "ID": "2003",
           "typeID": "Label",
           "zOrder": "44",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "1399",
-          "y": "575",
+          "x": "1409",
+          "y": "585",
           "properties": {
             "size": "28",
             "text": "v",
@@ -1722,13 +1722,13 @@
           }
         },
         {
-          "ID": "1860",
+          "ID": "2004",
           "typeID": "Label",
           "zOrder": "45",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "1399",
-          "y": "1165",
+          "x": "1409",
+          "y": "1175",
           "properties": {
             "size": "28",
             "text": "v",
@@ -1736,15 +1736,15 @@
           }
         },
         {
-          "ID": "1861",
+          "ID": "2005",
           "typeID": "Arrow",
           "zOrder": "46",
           "w": "591",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "815",
-          "y": "1563",
+          "x": "825",
+          "y": "1573",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -1766,13 +1766,13 @@
           }
         },
         {
-          "ID": "1862",
+          "ID": "2006",
           "typeID": "Label",
           "zOrder": "47",
           "measuredW": "20",
           "measuredH": "36",
-          "x": "1124",
-          "y": "1544",
+          "x": "1134",
+          "y": "1554",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -1780,15 +1780,15 @@
           }
         },
         {
-          "ID": "1863",
+          "ID": "2007",
           "typeID": "Arrow",
           "zOrder": "48",
           "w": "1",
           "h": "739",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "815",
-          "y": "824",
+          "x": "825",
+          "y": "834",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -1810,13 +1810,13 @@
           }
         },
         {
-          "ID": "1864",
+          "ID": "2008",
           "typeID": "Label",
           "zOrder": "49",
           "measuredW": "17",
           "measuredH": "40",
-          "x": "806",
-          "y": "1206",
+          "x": "816",
+          "y": "1216",
           "properties": {
             "color": "10027263",
             "size": "32",
@@ -1824,15 +1824,15 @@
           }
         },
         {
-          "ID": "1865",
+          "ID": "2009",
           "typeID": "Arrow",
           "zOrder": "50",
           "w": "638",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "178",
-          "y": "824",
+          "x": "188",
+          "y": "834",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -1854,13 +1854,13 @@
           }
         },
         {
-          "ID": "1866",
+          "ID": "2010",
           "typeID": "Label",
           "zOrder": "51",
           "measuredW": "20",
           "measuredH": "36",
-          "x": "609",
-          "y": "805",
+          "x": "619",
+          "y": "815",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -1868,42 +1868,42 @@
           }
         },
         {
-          "ID": "1867",
+          "ID": "2011",
           "typeID": "TextArea",
           "zOrder": "52",
           "w": "169",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "259",
-          "y": "798",
+          "x": "269",
+          "y": "808",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1868",
+          "ID": "2012",
           "typeID": "Label",
           "zOrder": "53",
           "measuredW": "107",
           "measuredH": "25",
-          "x": "291",
-          "y": "811",
+          "x": "301",
+          "y": "821",
           "properties": {
             "size": "17",
             "text": "Econometrics"
           }
         },
         {
-          "ID": "1869",
+          "ID": "2013",
           "typeID": "__group__",
           "zOrder": "54",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "214",
-          "y": "887",
+          "x": "224",
+          "y": "897",
           "properties": {
             "controlName": "check:econometrics-pre-req"
           },
@@ -1926,15 +1926,15 @@
           }
         },
         {
-          "ID": "1870",
+          "ID": "2014",
           "typeID": "__group__",
           "zOrder": "55",
           "measuredW": "281",
           "measuredH": "28",
           "w": "281",
           "h": "28",
-          "x": "259",
-          "y": "888",
+          "x": "269",
+          "y": "898",
           "properties": {
             "controlName": "econometrics-pre-req"
           },
@@ -1959,15 +1959,15 @@
           }
         },
         {
-          "ID": "1871",
+          "ID": "2015",
           "typeID": "__group__",
           "zOrder": "56",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "924",
+          "x": "269",
+          "y": "934",
           "properties": {
             "controlName": "ext_link:bookdown.org/ts_robinson1994/10EconometricTheorems/"
           },
@@ -2021,15 +2021,15 @@
           }
         },
         {
-          "ID": "1872",
+          "ID": "2016",
           "typeID": "__group__",
           "zOrder": "57",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "214",
-          "y": "997",
+          "x": "224",
+          "y": "1007",
           "properties": {
             "controlName": "check:regression-time-series-fitting-distr"
           },
@@ -2052,15 +2052,15 @@
           }
         },
         {
-          "ID": "1873",
+          "ID": "2017",
           "typeID": "__group__",
           "zOrder": "58",
           "measuredW": "396",
           "measuredH": "28",
           "w": "396",
           "h": "28",
-          "x": "259",
-          "y": "998",
+          "x": "269",
+          "y": "1008",
           "properties": {
             "controlName": "regression-time-series-fitting-distr"
           },
@@ -2085,15 +2085,15 @@
           }
         },
         {
-          "ID": "1874",
+          "ID": "2018",
           "typeID": "__group__",
           "zOrder": "59",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1037",
+          "x": "269",
+          "y": "1047",
           "properties": {
             "controlName": "ext_link:academia.edu/33062577/Dougherty_Intro_to_Econometrics_4th_ed_small"
           },
@@ -2147,15 +2147,15 @@
           }
         },
         {
-          "ID": "1875",
+          "ID": "2019",
           "typeID": "__group__",
           "zOrder": "60",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1092",
+          "x": "269",
+          "y": "1102",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/erasmus-econometrics#syllabus"
           },
@@ -2209,15 +2209,15 @@
           }
         },
         {
-          "ID": "1876",
+          "ID": "2020",
           "typeID": "__group__",
           "zOrder": "61",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1167",
+          "x": "269",
+          "y": "1177",
           "properties": {
             "controlName": "ext_link:kaggle.com/learn/time-series"
           },
@@ -2271,15 +2271,15 @@
           }
         },
         {
-          "ID": "1877",
+          "ID": "2021",
           "typeID": "__group__",
           "zOrder": "62",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1221",
+          "x": "269",
+          "y": "1231",
           "properties": {
             "controlName": "ext_link:kaggle.com/code/jagangupta/time-series-basics-exploring-traditional-ts#Hierarchical-time-series"
           },
@@ -2333,15 +2333,15 @@
           }
         },
         {
-          "ID": "1878",
+          "ID": "2022",
           "typeID": "__group__",
           "zOrder": "63",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1275",
+          "x": "269",
+          "y": "1285",
           "properties": {
             "controlName": "ext_link:machinelearningmastery.com/arima-for-time-series-forecasting-with-python"
           },
@@ -2395,15 +2395,15 @@
           }
         },
         {
-          "ID": "1879",
+          "ID": "2023",
           "typeID": "__group__",
           "zOrder": "64",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1329",
+          "x": "269",
+          "y": "1339",
           "properties": {
             "controlName": "ext_link:machinelearningmastery.com/time-series-forecasting-methods-in-python-cheat-sheet/"
           },
@@ -2457,15 +2457,15 @@
           }
         },
         {
-          "ID": "1880",
+          "ID": "2024",
           "typeID": "__group__",
           "zOrder": "65",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1383",
+          "x": "269",
+          "y": "1393",
           "properties": {
             "controlName": "ext_link:github.com/stalkermustang/bcdc_ds_takehome"
           },
@@ -2519,15 +2519,15 @@
           }
         },
         {
-          "ID": "1881",
+          "ID": "2025",
           "typeID": "__group__",
           "zOrder": "66",
           "measuredW": "495",
           "measuredH": "49",
           "w": "495",
           "h": "49",
-          "x": "259",
-          "y": "1454",
+          "x": "269",
+          "y": "1464",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/linear-regression-business-statistics#about"
           },
@@ -2581,15 +2581,15 @@
           }
         },
         {
-          "ID": "1882",
+          "ID": "2026",
           "typeID": "Arrow",
           "zOrder": "67",
           "w": "1",
           "h": "803",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "179",
-          "y": "825",
+          "x": "189",
+          "y": "835",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -2611,13 +2611,13 @@
           }
         },
         {
-          "ID": "1883",
+          "ID": "2027",
           "typeID": "Label",
           "zOrder": "68",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "172",
-          "y": "973",
+          "x": "182",
+          "y": "983",
           "properties": {
             "size": "28",
             "text": "v",
@@ -2625,13 +2625,13 @@
           }
         },
         {
-          "ID": "1884",
+          "ID": "2028",
           "typeID": "Label",
           "zOrder": "69",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "172",
-          "y": "1268",
+          "x": "182",
+          "y": "1278",
           "properties": {
             "size": "28",
             "text": "v",
@@ -2639,15 +2639,15 @@
           }
         },
         {
-          "ID": "1885",
+          "ID": "2029",
           "typeID": "Arrow",
           "zOrder": "70",
           "w": "1221",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "179",
-          "y": "1630",
+          "x": "189",
+          "y": "1640",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -2669,42 +2669,42 @@
           }
         },
         {
-          "ID": "1886",
+          "ID": "2030",
           "typeID": "TextArea",
           "zOrder": "71",
           "w": "183",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "243",
-          "y": "1605",
+          "x": "253",
+          "y": "1615",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1887",
+          "ID": "2031",
           "typeID": "Label",
           "zOrder": "72",
           "measuredW": "55",
           "measuredH": "25",
-          "x": "307",
-          "y": "1618",
+          "x": "317",
+          "y": "1628",
           "properties": {
             "size": "17",
             "text": "Coding"
           }
         },
         {
-          "ID": "1888",
+          "ID": "2032",
           "typeID": "__group__",
           "zOrder": "73",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "201",
-          "y": "1695",
+          "x": "211",
+          "y": "1705",
           "properties": {
             "controlName": "check:learn-python"
           },
@@ -2727,15 +2727,15 @@
           }
         },
         {
-          "ID": "1889",
+          "ID": "2033",
           "typeID": "__group__",
           "zOrder": "74",
           "measuredW": "343",
           "measuredH": "28",
           "w": "343",
           "h": "28",
-          "x": "246",
-          "y": "1696",
+          "x": "256",
+          "y": "1706",
           "properties": {
             "controlName": "learn-python"
           },
@@ -2760,15 +2760,15 @@
           }
         },
         {
-          "ID": "1890",
+          "ID": "2034",
           "typeID": "__group__",
           "zOrder": "75",
           "measuredW": "444",
           "measuredH": "49",
           "w": "444",
           "h": "49",
-          "x": "245",
-          "y": "1744",
+          "x": "255",
+          "y": "1754",
           "properties": {
             "controlName": "ext_link:kaggle.com/learn/python"
           },
@@ -2822,15 +2822,15 @@
           }
         },
         {
-          "ID": "1891",
+          "ID": "2035",
           "typeID": "__group__",
           "zOrder": "76",
           "measuredW": "444",
           "measuredH": "49",
           "w": "444",
           "h": "49",
-          "x": "245",
-          "y": "1798",
+          "x": "255",
+          "y": "1808",
           "properties": {
             "controlName": "ext_link:developers.google.com/edu/python"
           },
@@ -2884,15 +2884,15 @@
           }
         },
         {
-          "ID": "1892",
+          "ID": "2036",
           "typeID": "__group__",
           "zOrder": "77",
           "measuredW": "441",
           "measuredH": "49",
           "w": "441",
           "h": "49",
-          "x": "245",
-          "y": "1916",
+          "x": "255",
+          "y": "1926",
           "properties": {
             "controlName": "ext_link:leetcode.com/explore/learn/"
           },
@@ -2946,15 +2946,15 @@
           }
         },
         {
-          "ID": "1893",
+          "ID": "2037",
           "typeID": "__group__",
           "zOrder": "78",
           "measuredW": "444",
           "measuredH": "49",
           "w": "444",
           "h": "49",
-          "x": "245",
-          "y": "1971",
+          "x": "255",
+          "y": "1981",
           "properties": {
             "controlName": "ext_link:leetcode.com/studyplan"
           },
@@ -3008,15 +3008,15 @@
           }
         },
         {
-          "ID": "1894",
+          "ID": "2038",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "245",
-          "y": "2027",
+          "x": "255",
+          "y": "2037",
           "properties": {
             "controlName": "ext_link:coursera.org/specializations/algorithms#courses"
           },
@@ -3070,15 +3070,15 @@
           }
         },
         {
-          "ID": "1895",
+          "ID": "2039",
           "typeID": "__group__",
           "zOrder": "80",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "201",
-          "y": "1875",
+          "x": "211",
+          "y": "1885",
           "properties": {
             "controlName": "check:learn-dsa"
           },
@@ -3101,15 +3101,15 @@
           }
         },
         {
-          "ID": "1896",
+          "ID": "2040",
           "typeID": "__group__",
           "zOrder": "81",
           "measuredW": "363",
           "measuredH": "28",
           "w": "363",
           "h": "28",
-          "x": "246",
-          "y": "1876",
+          "x": "256",
+          "y": "1886",
           "properties": {
             "controlName": "learn-dsa"
           },
@@ -3134,15 +3134,15 @@
           }
         },
         {
-          "ID": "1897",
+          "ID": "2041",
           "typeID": "__group__",
           "zOrder": "82",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "201",
-          "y": "2103",
+          "x": "211",
+          "y": "2113",
           "properties": {
             "controlName": "check:learn-sql"
           },
@@ -3165,15 +3165,15 @@
           }
         },
         {
-          "ID": "1898",
+          "ID": "2042",
           "typeID": "__group__",
           "zOrder": "83",
           "measuredW": "97",
           "measuredH": "28",
           "w": "97",
           "h": "28",
-          "x": "246",
-          "y": "2104",
+          "x": "256",
+          "y": "2114",
           "properties": {
             "controlName": "learn-sql"
           },
@@ -3198,15 +3198,15 @@
           }
         },
         {
-          "ID": "1899",
+          "ID": "2043",
           "typeID": "__group__",
           "zOrder": "84",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "245",
-          "y": "2144",
+          "x": "255",
+          "y": "2154",
           "properties": {
             "controlName": "ext_link:sqltutorial.org"
           },
@@ -3260,13 +3260,13 @@
           }
         },
         {
-          "ID": "1900",
+          "ID": "2044",
           "typeID": "Label",
           "zOrder": "85",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "603",
-          "y": "1613",
+          "x": "613",
+          "y": "1623",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -3274,42 +3274,42 @@
           }
         },
         {
-          "ID": "1901",
+          "ID": "2045",
           "typeID": "TextArea",
           "zOrder": "86",
           "w": "301",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "801",
-          "y": "1604",
+          "x": "811",
+          "y": "1614",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1902",
+          "ID": "2046",
           "typeID": "Label",
           "zOrder": "87",
           "measuredW": "244",
           "measuredH": "25",
-          "x": "830",
-          "y": "1617",
+          "x": "840",
+          "y": "1627",
           "properties": {
             "size": "17",
             "text": "Exploratory Data Analysis (EDA)"
           }
         },
         {
-          "ID": "1903",
+          "ID": "2047",
           "typeID": "__group__",
           "zOrder": "88",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "754",
-          "y": "1695",
+          "x": "764",
+          "y": "1705",
           "properties": {
             "controlName": "check:data-understanding"
           },
@@ -3332,15 +3332,15 @@
           }
         },
         {
-          "ID": "1904",
+          "ID": "2048",
           "typeID": "__group__",
           "zOrder": "89",
           "measuredW": "430",
           "measuredH": "28",
           "w": "430",
           "h": "28",
-          "x": "799",
-          "y": "1696",
+          "x": "809",
+          "y": "1706",
           "properties": {
             "controlName": "data-understanding"
           },
@@ -3365,15 +3365,15 @@
           }
         },
         {
-          "ID": "1905",
+          "ID": "2049",
           "typeID": "__group__",
           "zOrder": "90",
           "measuredW": "546",
           "measuredH": "49",
           "w": "546",
           "h": "49",
-          "x": "800",
-          "y": "1739",
+          "x": "810",
+          "y": "1749",
           "properties": {
             "controlName": "ext_link:coursera.org/projects/exploratory-data-analysis-python-pandas"
           },
@@ -3427,15 +3427,15 @@
           }
         },
         {
-          "ID": "1906",
+          "ID": "2050",
           "typeID": "__group__",
           "zOrder": "91",
           "measuredW": "546",
           "measuredH": "49",
           "w": "546",
           "h": "49",
-          "x": "801",
-          "y": "1794",
+          "x": "811",
+          "y": "1804",
           "properties": {
             "controlName": "ext_link:coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning#syllabus"
           },
@@ -3489,15 +3489,15 @@
           }
         },
         {
-          "ID": "1907",
+          "ID": "2051",
           "typeID": "__group__",
           "zOrder": "92",
           "measuredW": "546",
           "measuredH": "49",
           "w": "546",
           "h": "49",
-          "x": "801",
-          "y": "1850",
+          "x": "811",
+          "y": "1860",
           "properties": {
             "controlName": "ext_link:coursera.org/projects/exploratory-data-analysis-seaborn"
           },
@@ -3551,13 +3551,13 @@
           }
         },
         {
-          "ID": "1908",
+          "ID": "2052",
           "typeID": "Label",
           "zOrder": "93",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "1237",
-          "y": "1613",
+          "x": "1247",
+          "y": "1623",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -3565,15 +3565,15 @@
           }
         },
         {
-          "ID": "1909",
+          "ID": "2053",
           "typeID": "Arrow",
           "zOrder": "94",
           "w": "1",
           "h": "378",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1401",
-          "y": "1630",
+          "x": "1411",
+          "y": "1640",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -3595,13 +3595,13 @@
           }
         },
         {
-          "ID": "1910",
+          "ID": "2054",
           "typeID": "Label",
           "zOrder": "95",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "1395",
-          "y": "1805",
+          "x": "1405",
+          "y": "1815",
           "properties": {
             "size": "28",
             "text": "v",
@@ -3609,40 +3609,40 @@
           }
         },
         {
-          "ID": "1911",
+          "ID": "2055",
           "typeID": "TextArea",
           "zOrder": "96",
           "w": "208",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "822",
-          "y": "1986",
+          "x": "832",
+          "y": "1996",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1912",
+          "ID": "2056",
           "typeID": "Label",
           "zOrder": "97",
           "measuredW": "140",
           "measuredH": "25",
-          "x": "856",
-          "y": "1999",
+          "x": "866",
+          "y": "2009",
           "properties": {
             "size": "17",
             "text": "Machine Learning"
           }
         },
         {
-          "ID": "1913",
+          "ID": "2057",
           "typeID": "Label",
           "zOrder": "98",
           "measuredW": "20",
           "measuredH": "36",
-          "x": "1212",
-          "y": "1993",
+          "x": "1222",
+          "y": "2003",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -3650,15 +3650,15 @@
           }
         },
         {
-          "ID": "1914",
+          "ID": "2058",
           "typeID": "__group__",
           "zOrder": "99",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "777",
-          "y": "2071",
+          "x": "787",
+          "y": "2081",
           "properties": {
             "controlName": "check:classic-advanced-ml"
           },
@@ -3681,15 +3681,15 @@
           }
         },
         {
-          "ID": "1915",
+          "ID": "2059",
           "typeID": "__group__",
           "zOrder": "100",
           "measuredW": "562",
           "measuredH": "28",
           "w": "562",
           "h": "28",
-          "x": "824",
-          "y": "2073",
+          "x": "834",
+          "y": "2083",
           "properties": {
             "controlName": "classic-advanced-ml"
           },
@@ -3714,15 +3714,15 @@
           }
         },
         {
-          "ID": "1916",
+          "ID": "2060",
           "typeID": "__group__",
           "zOrder": "101",
           "measuredW": "569",
           "measuredH": "49",
           "w": "569",
           "h": "49",
-          "x": "824",
-          "y": "2121",
+          "x": "834",
+          "y": "2131",
           "properties": {
             "controlName": "ext_link:mlcourse.ai/book/topic01/topic01_intro.html"
           },
@@ -3776,15 +3776,15 @@
           }
         },
         {
-          "ID": "1917",
+          "ID": "2061",
           "typeID": "__group__",
           "zOrder": "102",
           "measuredW": "567",
           "measuredH": "49",
           "w": "567",
           "h": "49",
-          "x": "824",
-          "y": "2175",
+          "x": "834",
+          "y": "2185",
           "properties": {
             "controlName": "ext_link:coursera.org/specializations/machine-learning-introduction#courses"
           },
@@ -3838,15 +3838,15 @@
           }
         },
         {
-          "ID": "1918",
+          "ID": "2062",
           "typeID": "__group__",
           "zOrder": "103",
           "measuredW": "567",
           "measuredH": "49",
           "w": "567",
           "h": "49",
-          "x": "824",
-          "y": "2242",
+          "x": "834",
+          "y": "2252",
           "properties": {
             "controlName": "ext_link:microsoft.com/en-us/research/uploads/prod/2006/01/Bishop-Pattern-Recognition-and-Machine-Learning-2006.pdf"
           },
@@ -3900,13 +3900,13 @@
           }
         },
         {
-          "ID": "1919",
+          "ID": "2063",
           "typeID": "Label",
           "zOrder": "104",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "735",
-          "y": "2175",
+          "x": "745",
+          "y": "2185",
           "properties": {
             "size": "28",
             "text": "v",
@@ -3914,15 +3914,15 @@
           }
         },
         {
-          "ID": "1920",
+          "ID": "2064",
           "typeID": "Arrow",
           "zOrder": "105",
           "w": "562",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "178",
-          "y": "2328",
+          "x": "188",
+          "y": "2338",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -3944,42 +3944,42 @@
           }
         },
         {
-          "ID": "1921",
+          "ID": "2065",
           "typeID": "TextArea",
           "zOrder": "106",
           "w": "192",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "257",
-          "y": "2302",
+          "x": "267",
+          "y": "2312",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1922",
+          "ID": "2066",
           "typeID": "Label",
           "zOrder": "107",
           "measuredW": "115",
           "measuredH": "25",
-          "x": "295",
-          "y": "2315",
+          "x": "305",
+          "y": "2325",
           "properties": {
             "size": "17",
             "text": "Deep Learning"
           }
         },
         {
-          "ID": "1923",
+          "ID": "2067",
           "typeID": "__group__",
           "zOrder": "108",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "214",
-          "y": "2385",
+          "x": "224",
+          "y": "2395",
           "properties": {
             "controlName": "check:fully-connected-nn"
           },
@@ -4002,15 +4002,15 @@
           }
         },
         {
-          "ID": "1924",
+          "ID": "2068",
           "typeID": "__group__",
           "zOrder": "109",
           "measuredW": "642",
           "measuredH": "28",
           "w": "642",
           "h": "28",
-          "x": "258",
-          "y": "2387",
+          "x": "268",
+          "y": "2397",
           "properties": {
             "controlName": "fully-connected-nn"
           },
@@ -4035,15 +4035,15 @@
           }
         },
         {
-          "ID": "1925",
+          "ID": "2069",
           "typeID": "__group__",
           "zOrder": "110",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "258",
-          "y": "2435",
+          "x": "268",
+          "y": "2445",
           "properties": {
             "controlName": "ext_link:coursera.org/specializations/deep-learning#courses"
           },
@@ -4097,15 +4097,15 @@
           }
         },
         {
-          "ID": "1926",
+          "ID": "2070",
           "typeID": "__group__",
           "zOrder": "111",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "258",
-          "y": "2491",
+          "x": "268",
+          "y": "2501",
           "properties": {
             "controlName": "ext_link:deeplearningbook.org"
           },
@@ -4159,15 +4159,15 @@
           }
         },
         {
-          "ID": "1927",
+          "ID": "2071",
           "typeID": "__group__",
           "zOrder": "112",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "258",
-          "y": "2548",
+          "x": "268",
+          "y": "2558",
           "properties": {
             "controlName": "ext_link:arxiv.org/pdf/1706.03762.pdf"
           },
@@ -4221,15 +4221,15 @@
           }
         },
         {
-          "ID": "1928",
+          "ID": "2072",
           "typeID": "__group__",
           "zOrder": "113",
           "measuredW": "444",
           "measuredH": "51",
           "w": "444",
           "h": "51",
-          "x": "258",
-          "y": "2605",
+          "x": "268",
+          "y": "2615",
           "properties": {
             "controlName": "ext_link:jalammar.github.io/illustrated-transformer/"
           },
@@ -4283,15 +4283,15 @@
           }
         },
         {
-          "ID": "1929",
+          "ID": "2073",
           "typeID": "Arrow",
           "zOrder": "114",
           "w": "1",
           "h": "387",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "179",
-          "y": "2329",
+          "x": "189",
+          "y": "2339",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4313,13 +4313,13 @@
           }
         },
         {
-          "ID": "1930",
+          "ID": "2074",
           "typeID": "Label",
           "zOrder": "115",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "173",
-          "y": "2534",
+          "x": "183",
+          "y": "2544",
           "properties": {
             "size": "28",
             "text": "v",
@@ -4327,15 +4327,15 @@
           }
         },
         {
-          "ID": "1931",
+          "ID": "2075",
           "typeID": "Arrow",
           "zOrder": "116",
           "w": "649",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "178",
-          "y": "2716",
+          "x": "188",
+          "y": "2726",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4357,15 +4357,15 @@
           }
         },
         {
-          "ID": "1932",
+          "ID": "2076",
           "typeID": "Arrow",
           "zOrder": "117",
           "w": "1",
           "h": "228",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "829",
-          "y": "2488",
+          "x": "839",
+          "y": "2498",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4387,13 +4387,13 @@
           }
         },
         {
-          "ID": "1933",
+          "ID": "2077",
           "typeID": "Label",
           "zOrder": "118",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "492",
-          "y": "2698",
+          "x": "502",
+          "y": "2708",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -4401,13 +4401,13 @@
           }
         },
         {
-          "ID": "1934",
+          "ID": "2078",
           "typeID": "Label",
           "zOrder": "119",
           "measuredW": "20",
           "measuredH": "36",
-          "x": "608",
-          "y": "2309",
+          "x": "618",
+          "y": "2319",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -4415,13 +4415,13 @@
           }
         },
         {
-          "ID": "1935",
+          "ID": "2079",
           "typeID": "Label",
           "zOrder": "120",
           "measuredW": "17",
           "measuredH": "40",
-          "x": "821",
-          "y": "2613",
+          "x": "831",
+          "y": "2623",
           "properties": {
             "color": "10027263",
             "size": "32",
@@ -4429,15 +4429,15 @@
           }
         },
         {
-          "ID": "1936",
+          "ID": "2080",
           "typeID": "Arrow",
           "zOrder": "121",
           "w": "553",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "829",
-          "y": "2488",
+          "x": "839",
+          "y": "2498",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4459,42 +4459,42 @@
           }
         },
         {
-          "ID": "1937",
+          "ID": "2081",
           "typeID": "TextArea",
           "zOrder": "122",
           "w": "126",
           "h": "50",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "879",
-          "y": "2463",
+          "x": "889",
+          "y": "2473",
           "properties": {
             "color": "16776960"
           }
         },
         {
-          "ID": "1938",
+          "ID": "2082",
           "typeID": "Label",
           "zOrder": "123",
           "measuredW": "56",
           "measuredH": "25",
-          "x": "914",
-          "y": "2475",
+          "x": "924",
+          "y": "2485",
           "properties": {
             "size": "17",
             "text": "MLOps"
           }
         },
         {
-          "ID": "1939",
+          "ID": "2083",
           "typeID": "__group__",
           "zOrder": "124",
           "measuredW": "30",
           "measuredH": "30",
           "w": "30",
           "h": "30",
-          "x": "881",
-          "y": "2549",
+          "x": "891",
+          "y": "2559",
           "properties": {
             "controlName": "check:deployment-models"
           },
@@ -4517,15 +4517,15 @@
           }
         },
         {
-          "ID": "1940",
+          "ID": "2084",
           "typeID": "__group__",
           "zOrder": "125",
           "measuredW": "247",
           "measuredH": "28",
           "w": "247",
           "h": "28",
-          "x": "928",
-          "y": "2551",
+          "x": "938",
+          "y": "2561",
           "properties": {
             "controlName": "deployment-models"
           },
@@ -4550,15 +4550,15 @@
           }
         },
         {
-          "ID": "1941",
+          "ID": "2085",
           "typeID": "__group__",
           "zOrder": "126",
           "measuredW": "408",
           "measuredH": "49",
           "w": "408",
           "h": "49",
-          "x": "928",
-          "y": "2596",
+          "x": "938",
+          "y": "2606",
           "properties": {
             "controlName": "ext_link:coursera.org/specializations/machine-learning-engineering-for-production-mlops#courses"
           },
@@ -4612,15 +4612,15 @@
           }
         },
         {
-          "ID": "1942",
+          "ID": "2086",
           "typeID": "Arrow",
           "zOrder": "127",
           "w": "1",
           "h": "332",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1382",
-          "y": "2488",
+          "x": "1392",
+          "y": "2498",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4642,13 +4642,13 @@
           }
         },
         {
-          "ID": "1943",
+          "ID": "2087",
           "typeID": "Label",
           "zOrder": "128",
           "measuredW": "14",
           "measuredH": "36",
-          "x": "1376",
-          "y": "2648",
+          "x": "1386",
+          "y": "2658",
           "properties": {
             "size": "28",
             "text": "v",
@@ -4656,15 +4656,15 @@
           }
         },
         {
-          "ID": "1944",
+          "ID": "2088",
           "typeID": "Arrow",
           "zOrder": "129",
           "w": "649",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "733",
-          "y": "2820",
+          "x": "743",
+          "y": "2830",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4686,14 +4686,14 @@
           }
         },
         {
-          "ID": "1945",
+          "ID": "2089",
           "typeID": "Arrow",
           "zOrder": "130",
           "w": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "733",
-          "y": "2820",
+          "x": "743",
+          "y": "2830",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4715,13 +4715,13 @@
           }
         },
         {
-          "ID": "1946",
+          "ID": "2090",
           "typeID": "Label",
           "zOrder": "131",
           "measuredW": "22",
           "measuredH": "36",
-          "x": "1159",
-          "y": "2471",
+          "x": "1169",
+          "y": "2481",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -4729,13 +4729,13 @@
           }
         },
         {
-          "ID": "1947",
+          "ID": "2091",
           "typeID": "Label",
           "zOrder": "132",
           "measuredW": "20",
           "measuredH": "36",
-          "x": "1018",
-          "y": "2802",
+          "x": "1028",
+          "y": "2812",
           "properties": {
             "color": "10027263",
             "size": "28",
@@ -4743,28 +4743,28 @@
           }
         },
         {
-          "ID": "1948",
+          "ID": "2092",
           "typeID": "Label",
           "zOrder": "133",
           "measuredW": "187",
           "measuredH": "36",
-          "x": "651",
-          "y": "2935",
+          "x": "661",
+          "y": "2945",
           "properties": {
             "size": "28",
             "text": "Keep Learning"
           }
         },
         {
-          "ID": "1949",
+          "ID": "2093",
           "typeID": "Arrow",
           "zOrder": "134",
           "w": "1",
           "h": "63",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "732",
-          "y": "2987",
+          "x": "742",
+          "y": "2997",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -4787,15 +4787,15 @@
           }
         },
         {
-          "ID": "1950",
+          "ID": "2094",
           "typeID": "__group__",
           "zOrder": "135",
           "measuredW": "365",
           "measuredH": "141",
           "w": "365",
           "h": "141",
-          "x": "1044",
-          "y": "230",
+          "x": "1054",
+          "y": "240",
           "children": {
             "controls": {
               "control": [
@@ -4891,15 +4891,15 @@
           }
         },
         {
-          "ID": "1951",
+          "ID": "2095",
           "typeID": "__group__",
           "zOrder": "136",
           "measuredW": "473",
           "measuredH": "140",
           "w": "473",
           "h": "140",
-          "x": "554",
-          "y": "231",
+          "x": "564",
+          "y": "241",
           "children": {
             "controls": {
               "control": [
@@ -4945,15 +4945,15 @@
           }
         },
         {
-          "ID": "1952",
+          "ID": "2096",
           "typeID": "__group__",
           "zOrder": "137",
           "measuredW": "151",
           "measuredH": "26",
           "w": "151",
           "h": "26",
-          "x": "570",
-          "y": "324",
+          "x": "580",
+          "y": "334",
           "properties": {
             "controlName": "ext_link:twitter.com/mohamadtweets"
           },
@@ -4979,15 +4979,15 @@
           }
         },
         {
-          "ID": "1953",
+          "ID": "2097",
           "typeID": "__group__",
           "zOrder": "138",
           "measuredW": "128",
           "measuredH": "26",
           "w": "128",
           "h": "26",
-          "x": "769",
-          "y": "324",
+          "x": "779",
+          "y": "334",
           "properties": {
             "controlName": "ext_link:twitter.com/BulatShkanov"
           },
@@ -5013,28 +5013,28 @@
           }
         },
         {
-          "ID": "1954",
+          "ID": "2098",
           "typeID": "Label",
           "zOrder": "139",
           "measuredW": "31",
           "measuredH": "26",
-          "x": "729",
-          "y": "324",
+          "x": "739",
+          "y": "334",
           "properties": {
             "size": "18",
             "text": "and"
           }
         },
         {
-          "ID": "1955",
+          "ID": "2099",
           "typeID": "__group__",
           "zOrder": "140",
           "measuredW": "248",
           "measuredH": "26",
           "w": "248",
           "h": "26",
-          "x": "724",
-          "y": "252",
+          "x": "734",
+          "y": "262",
           "properties": {
             "controlName": "ext_link:bit.ly/careem-ai-ds"
           },
@@ -5060,15 +5060,15 @@
           }
         },
         {
-          "ID": "1956",
+          "ID": "2100",
           "typeID": "__group__",
           "zOrder": "141",
           "measuredW": "16",
           "measuredH": "26",
           "w": "16",
           "h": "26",
-          "x": "977",
-          "y": "252",
+          "x": "987",
+          "y": "262",
           "properties": {
             "controlName": "ext_link:bit.ly/careem-ai-ds"
           },
@@ -5093,15 +5093,15 @@
           }
         },
         {
-          "ID": "1957",
+          "ID": "2101",
           "typeID": "__group__",
           "zOrder": "142",
           "measuredW": "467",
           "measuredH": "43",
           "w": "467",
           "h": "43",
-          "x": "894",
-          "y": "1309",
+          "x": "904",
+          "y": "1319",
           "properties": {
             "controlName": "ext_link:researchgate.net/publication/305997925_Improving_the_Sensitivity_of_Online_Controlled_Experiments_Case_Studies_at_Netflix"
           },
@@ -5156,15 +5156,15 @@
           }
         },
         {
-          "ID": "1958",
+          "ID": "2102",
           "typeID": "Arrow",
           "zOrder": "143",
           "w": "87",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "689",
-          "y": "3076",
+          "x": "699",
+          "y": "3086",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -5198,8 +5198,8 @@
     "resourceID": "BFEFC928-2756-4044-9FAF-3CD2D8DBA3C9",
     "mockupH": "2890",
     "mockupW": "1241",
-    "measuredW": "1413",
-    "measuredH": "3077",
+    "measuredW": "1423",
+    "measuredH": "3087",
     "version": "1.0"
   },
   "groupOffset": {
