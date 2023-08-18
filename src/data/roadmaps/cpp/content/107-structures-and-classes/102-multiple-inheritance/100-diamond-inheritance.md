@@ -7,39 +7,37 @@ To resolve this ambiguity, you can use virtual inheritance. A virtual base class
 *Example:*
 
 ```cpp
-#include<iostream>
-using namespace std;
+#include <iostream>
 
 class Base {
 public:
     void print() {
-        cout << "Base class" << endl;
+        std::cout << "Base class" << std::endl;
     }
 };
 
 class Derived1 : virtual public Base {
 public:
     void derived1Print() {
-        cout << "Derived1 class" << endl;
+        std::cout << "Derived1 class" << std::endl;
     }
 };
 
 class Derived2 : virtual public Base {
 public:
     void derived2Print() {
-        cout << "Derived2 class" << endl;
+        std::cout << "Derived2 class" << std::endl;
     }
 };
 
 class Derived3 : public Derived1, public Derived2 {
 public:
     void derived3Print() {
-        cout << "Derived3 class" << endl;
+        std::cout << "Derived3 class" << std::endl;
     }
 };
 
-int main()
-{
+int main() {
     Derived3 d3;
     d3.print(); // Now, there is no ambiguity in calling the base class function
     d3.derived1Print();
