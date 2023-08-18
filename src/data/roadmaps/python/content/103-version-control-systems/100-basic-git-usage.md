@@ -4,6 +4,6 @@
 
 Visit the following resources to learn more:
 
-- [Version Control System Introduction](https://www.youtube.com/watch?v=zbKdDsNNOhg)
 - [Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
-- [Learn Git in 20 Minutes](https://youtu.be/Y9XZQO1n_7c?t=21)
+- [Learn Git with Tutorials, News and Tips - Atlassian](https://www.atlassian.com/git)
+- [Git Cheat Sheet](https://cs.fyi/guide/git-cheatsheet)

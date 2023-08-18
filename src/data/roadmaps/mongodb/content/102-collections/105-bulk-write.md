@@ -1,1 +1,0 @@
-# Bulk write

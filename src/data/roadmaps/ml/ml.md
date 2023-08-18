@@ -1,8 +1,8 @@
 ---
 jsonUrl: "/jsons/roadmaps/ml.json"
 pdfUrl: "/pdfs/roadmaps/ml.pdf"
-order: 2
-briefTitle: "ml"
+order: 14
+briefTitle: "Machine Learning"
 briefDescription: "Step by step guide to becoming a ml developer in 2023"
 title: "Machine Learning Developer"
 description: "Step by step guide to becoming a modern ml developer in 2023"

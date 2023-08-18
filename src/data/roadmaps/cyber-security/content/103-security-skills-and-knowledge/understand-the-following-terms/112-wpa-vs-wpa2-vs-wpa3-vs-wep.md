@@ -1,1 +1,0 @@
-# Wpa vs wpa2 vs wpa3 vs wep

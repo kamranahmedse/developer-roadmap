@@ -1,1 +1,0 @@
-# Sql vs nosql

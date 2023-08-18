@@ -1,11 +1,7 @@
 ---
 import '../styles/global.css';
 import Navigation from '../components/Navigation.astro';
-import OpenSourceBanner from '../components/OpenSourceBanner.astro';
 import Footer from '../components/Footer.astro';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
-import Sponsor from '../components/Sponsor/Sponsor.astro';
-import YouTubeBanner from '../components/YouTubeBanner.astro';
 import { siteConfig } from '../lib/config';
 import Analytics from '../components/Analytics/Analytics.astro';
 
@@ -17,7 +13,6 @@ export interface Props {
   noIndex?: boolean;
   canonicalUrl?: string;
   permalink?: string;
-  sponsor?: SponsorType;
   jsonLd?: Record<string, unknown>[];
 }
 
@@ -28,7 +23,6 @@ const {
   noIndex = false,
   permalink = '',
   canonicalUrl: givenCanonical = '',
-  sponsor,
   jsonLd = [],
   redirectUrl = '',
 } = Astro.props;
@@ -85,27 +79,24 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta name='theme-color' content='#848a9a' />
 
     <link rel='manifest' href='/manifest/manifest.json' />
-    <link rel='icon' type='image/png' sizes='32x32' href='/manifest/icon32.png' />
-    <link rel='icon' type='image/png' sizes='16x16' href='/manifest/icon16.png' />
-    <link rel='shortcut icon' href='/manifest/favicon.ico' type='image/x-icon' />
+    <!-- <link rel='icon' type='image/png' sizes='32x32' href='/manifest/logo.svg' /> -->
+    <!-- <link rel='icon' type='image/png' sizes='16x16' href='/manifest/logo.svg' /> -->
+    <!-- <link rel='shortcut icon' href='../icons/logo.svg' type='image/x-icon' /> -->
 
-    <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
+    <link rel='icon' href='/manifest/logo.svg' type='image/x-icon' />
 
     <slot name='after-header' />
     {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
   </head>
   <body>
     <slot name='page-header'>
-      <YouTubeBanner />
       <Navigation />
     </slot>
 
     <slot />
 
     <slot name='page-footer'>
-      <OpenSourceBanner />
       <Footer />
-      {sponsor && <Sponsor sponsor={sponsor} />}
       <slot name='after-footer' />
       <Analytics />
     </slot>

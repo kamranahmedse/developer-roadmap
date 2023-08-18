@@ -1,1 +1,0 @@
-# Ftp vs sftp

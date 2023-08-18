@@ -1,1 +1,0 @@
-# Navigating using gui and cli
