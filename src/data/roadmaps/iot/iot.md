@@ -7,25 +7,14 @@ briefDescription: "Step by step guide to becoming a iot developer in 2023"
 title: "IoT Developer"
 description: "Step by step guide to becoming a modern iot developer in 2023"
 hasTopics: true
-tnsBannerLink: "https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert"
 dimensions:
-  width: 968
-  height: 2840.4
-sponsor:
-  url: "https://www.fermyon.com/spin?utm_source=iot&utm_medium=banner&utm_campaign=roadmap-sh"
-  title: "Serverless iot Apps"
-  imageUrl: "https://i.imgur.com/2ONZopb.jpg"
-  description: "Go from blinking cursor to deployed serverless iot apps in 66 seconds with Fermyon Cloud."
-  event:
-    category: "SponsorClick"
-    action: "Fermyon Redirect"
-    label: "iot / Fermyon Link"
+  width: 940
+  height: 2540.4
 schema:
   headline: "iot Developer Roadmap"
   description: "Learn how to become a iot Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place."
-  imageUrl: "https://roadmap.sh/roadmaps/iot.png"
-  datePublished: "2023-01-05"
-  dateModified: "2023-01-20"
+  datePublished: "2023-08-17"
+  dateModified: "2023-08-17"
 seo:
   title: "iot Developer Roadmap"
   description: "Learn to become a modern iot developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern iot development."
