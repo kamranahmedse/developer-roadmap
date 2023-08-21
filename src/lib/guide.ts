@@ -1,4 +1,4 @@
-import type { MarkdownFileType } from './file';
+import type { MarkdownFileType } from './File';
 
 export interface GuideFrontmatter {
   title: string;

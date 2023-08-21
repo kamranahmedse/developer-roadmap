@@ -6,5 +6,3 @@ Visit the following resources to learn more:
 
 - [Elasticsearch Website](https://www.elastic.co/elasticsearch/)
 - [Elasticsearch Documentation](https://www.elastic.co/guide/index.html)
-
-

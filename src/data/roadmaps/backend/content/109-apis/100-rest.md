@@ -1,6 +1,6 @@
 # REST
 
-REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. 
+REST, or REpresentational State Transfer, is an architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other.
 
 Visit the following resources to learn more:
 

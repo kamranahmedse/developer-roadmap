@@ -1,4 +1,4 @@
-import type { MarkdownFileType } from './File';
+import type { MarkdownFileType } from './file';
 
 export interface RoadmapFrontmatter {
   jsonUrl: string;
