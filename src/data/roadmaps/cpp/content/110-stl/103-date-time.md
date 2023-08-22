@@ -19,7 +19,7 @@ A `duration` represents a span of time, which can be expressed in various units 
 int main() {
     std::chrono::seconds sec(5);
     std::chrono::minutes min(2);
-    std(chrono)::hours hr(1);
+    std::chrono::hours hr(1);
     return 0;
 }
 ```
