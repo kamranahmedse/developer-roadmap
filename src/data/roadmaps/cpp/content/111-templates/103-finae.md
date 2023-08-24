@@ -12,14 +12,23 @@ Here's an example that demonstrates SFINAE in action:
 #include <iostream>
 #include <type_traits>
 
-template <typename T, typename = std::enable_if_t<std::is_arithmetic<T>::value>>
-void foo(T t) {
-    std::cout << "Called when T is arithmetic" << std::endl;
-}
+template <typename T, typename = void>
+struct foo_impl {
+    void operator()(T t) {
+        std::cout << "Called when T is not arithmetic" << std::endl;
+    }
+};
 
-template <typename T, typename = std::enable_if_t<!std::is_arithmetic<T>::value>>
+template <typename T>
+struct foo_impl<T, std::enable_if_t<std::is_arithmetic<T>::value>> {
+    void operator()(T t) {
+        std::cout << "Called when T is arithmetic" << std::endl;
+    }
+};
+
+template <typename T>
 void foo(T t) {
-    std::cout << "Called when T is not arithmetic" << std::endl;
+    foo_impl<T>()(t);
 }
 
 int main() {
@@ -31,6 +40,6 @@ int main() {
 }
 ```
 
-In this example, we define two `foo` function template specializations. The first one is enabled when `T` is an arithmetic type, while the second one is enabled when `T` is not an arithmetic type. The `std::enable_if_t` inside the template parameter list allows us to control which specialization is valid for a given type of `T`.
+In this example, we define two `foo_impl` functions are specialized based on the boolean value of `std::is_arithmetic<T>`. The first one is enabled when `T` is an arithmetic type, while the second one is enabled when `T` is not an arithmetic type. The `foo` function then calls the appropriate `foo_impl` specialization based on the result of the type trait.
 
 When calling `foo(a)` with an integer, the first specialization is selected, and when calling `foo(s)` with a string, the second specialization is selected. If there is no valid specialization, the code would fail to compile.
