@@ -10,4 +10,4 @@ Visit the following resources to learn more:
 - [Python Data Types](https://www.w3schools.com/python/python_datatypes.asp)
 - [Basic Data Types in Python](https://realpython.com/python-data-types/)
 - [Python for Beginners: Data Types](https://thenewstack.io/python-for-beginners-data-types/)
-- [Python Variables - Python Tutorial for Beginners with Examples | Mosh](https://www.youtube.com/watch?v=cqt33yu9py8)
+- [Python Variables - Python Tutorial for Beginners with Examples | Mosh](https://www.youtube.com/watch?v=cQT33yu9pY8)
