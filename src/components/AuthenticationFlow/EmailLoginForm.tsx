@@ -29,6 +29,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       Cookies.set(TOKEN_COOKIE_NAME, response.token, {
         path: '/',
         expires: 30,
+        domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
       });
       window.location.reload();
 

@@ -4,12 +4,6 @@ import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 export function logout() {
   Cookies.remove(TOKEN_COOKIE_NAME);
 
-  // @FIXME: fix the domain name in the cookie created by the API
-  Cookies.remove(TOKEN_COOKIE_NAME, {
-    path: '/',
-    domain: 'api.roadmap.sh',
-  });
-
   // Reloading will automatically redirect the user if required
   window.location.reload();
 }
