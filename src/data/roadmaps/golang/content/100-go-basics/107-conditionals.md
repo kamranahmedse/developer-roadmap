@@ -11,4 +11,5 @@ Visit the following resources to learn more:
 - [Effective Go: if statement](https://go.dev/doc/effective_go#if)
 - [Basic conditional patterns](https://yourbasic.org/golang/if-else-statement/)
 - [Go by Example: If-Else](https://gobyexample.com/if-else)
-- [Golang programs switch case](https://www.golangprograms.com/golang-if-else-statements.html)
+- [Golang programs If-Else statement](https://www.golangprograms.com/golang-if-else-statements.html)
+- [Golang programs switch case](https://www.golangprograms.com/golang-switch-case-statements.html)
