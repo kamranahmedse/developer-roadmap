@@ -2,7 +2,10 @@ import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 export function logout() {
-  Cookies.remove(TOKEN_COOKIE_NAME);
+  Cookies.remove(TOKEN_COOKIE_NAME, {
+    path: '/',
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
 
   // Reloading will automatically redirect the user if required
   window.location.reload();
