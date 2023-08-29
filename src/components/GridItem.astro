@@ -13,18 +13,20 @@ const { url, title, description, isNew } = Astro.props;
 
 <a
   href={url}
-  class='bg-gradient-to-r from-slate-900 to-amber-900 hover:from-stone-900 hover:to-stone-900 hover:bg-gray-100 flex flex-col p-2.5 sm:p-5 rounded-md sm:rounded-lg border border-gray-200 relative h-full'
+  class='relative group hover:bg-gray-50 flex h-full flex-col rounded-md border border-gray-200 bg-white p-2.5 hover:border-gray-400/50 sm:rounded-lg sm:p-5'
 >
   <span
-    class='font-regular sm:font-medium text-md sm:text-xl hover:text-gray-50 text-gray-200 sm:text-gray-100 mb-0 sm:mb-1.5'
+    class='font-semibold text-md mb-0 text-gray-900 hover:text-black sm:mb-1.5 sm:text-xl'
   >
     {title}
   </span>
-  <span class='text-sm leading-normal text-gray-400 hidden sm:block'>{description}</span>
+  <span class='hidden text-sm leading-normal text-gray-400 sm:block group-hover:text-gray-500'
+    >{description}</span
+  >
 
   {
     isNew && (
-      <span class='absolute bottom-1 right-1 bg-yellow-300 text-yellow-900 text-xs font-medium px-1 sm:px-1.5 py-0.5 rounded-sm uppercase'>
+      <span class='absolute bottom-1 right-1 rounded-sm bg-yellow-300 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900 sm:px-1.5'>
         New
       </span>
     )
