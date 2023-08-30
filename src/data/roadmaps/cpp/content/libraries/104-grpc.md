@@ -10,7 +10,7 @@ In gRPC, you start by defining service definitions and message structures in `.p
 
 Here's an example of how that might look:
 
-```protobuf
+```proto
 syntax = "proto3";
 
 package example;
