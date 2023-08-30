@@ -1,0 +1,115 @@
+---
+import GridItem from '../../components/GridItem.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Footer from '../../components/Footer.astro';
+import AstroIcon from "../../components/AstroIcon.astro";
+
+export async function getStaticPaths() {
+  return [
+    {
+      params: { quizId: 'frontend' },
+      props: {},
+    },
+  ];
+}
+---
+
+<BaseLayout
+  title='Questions'
+  description={'Step by step guides and paths to learn different tools or technologies'}
+  permalink={'/roadmaps'}
+  noIndex={true}
+>
+  <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
+    <div class='container max-w-[700px]'>
+      <div class='mb-5 mt-2 text-center sm:mb-10 sm:mt-8'>
+        <h1
+          class='my-2 text-3xl font-bold sm:my-5 sm:text-5xl'
+        >
+          Frontend Questions
+        </h1>
+        <p class='text-gray-500 text-xl'>
+          Test, rate and improve your frontend knowledge with these questions.
+        </p>
+      </div>
+
+      <div class='gap-3 text-center mb-40'>
+        <!-- Progress bar -->
+        <div class='mb-5 rounded-lg border border-gray-300 p-6 bg-white'>
+          <div class='mb-3 flex items-center text-gray-600'>
+            <div class='relative w-full flex-1 rounded-xl bg-gray-200 p-1'>
+              <div
+                class='absolute bottom-0 left-0 top-0 w-[30%] rounded-xl bg-slate-800'
+              >
+              </div>
+            </div>
+            <span class='ml-3 text-sm'>5 / 100</span>
+          </div>
+
+          <div
+            class='relative -left-1 flex flex-col gap-2 text-sm text-black sm:flex-row sm:gap-3'
+          >
+            <span class='flex items-center'>
+              <AstroIcon icon='check-current' class='h-3 text-gray-800 mr-1.5' />
+              <span>Already knew</span>
+              <span class='ml-2 text-gray-400'>44 <span class='sm:inline hidden'>Questions</span></span
+              >
+            </span>
+
+            <span class='flex items-center'>
+              <AstroIcon icon='question' class='h-4 mr-1.5' />
+              Didn't Know
+              <span class='ml-2 text-gray-500'
+                >20 <span class='sm:inline hidden'>Questions</span></span
+              >
+            </span>
+
+            <button class='flex items-center text-red-500 hover:text-red-400'>
+              <AstroIcon icon='reset' class='h-3 sm:h-4 text-red-400' />
+              <span class='ml-0.5 sm:ml-1'>Restart Progress</span>
+            </button>
+          </div>
+        </div>
+
+        <div class='relative mb-4 h-[400px] w-full overflow-hidden rounded-2xl'>
+          <div
+            class='flex h-full w-full items-center justify-center bg-gray-800'
+          >
+            <p class='animate-pulse text-2xl text-white duration-200'>
+              Please wait ..
+            </p>
+          </div>
+        </div>
+
+        <div class='flex flex-col gap-3 sm:flex-row'>
+          <button
+            data-next-question='know'
+            class='flex flex-1 items-center rounded-xl bg-gray-800 p-3 text-gray-400 transition-colors hover:bg-gray-700 hover:text-gray-200'
+          >
+            <AstroIcon icon='check' class='mr-1 h-4' />
+            Already Know that
+          </button>
+          <button
+            data-next-question='dont-know'
+            class='flex flex-1 items-center rounded-xl bg-gray-800 p-3 text-gray-400 transition-colors hover:bg-gray-700 hover:text-gray-200'
+          >
+            <AstroIcon icon='bulb' class='mr-2 h-5' />
+            Didn't Know that
+          </button>
+          <button
+            data-next-question='skip'
+            class='flex flex-1 items-center rounded-xl border border-red-500 p-3 text-red-400 hover:bg-red-500 hover:text-gray-900'
+          >
+            <AstroIcon icon='skip' class='mr-2 h-4' />
+            Skip Question
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div slot='page-footer'>
+    <Footer />
+  </div>
+</BaseLayout>

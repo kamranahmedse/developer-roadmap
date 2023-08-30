@@ -1,0 +1,49 @@
+---
+import GridItem from '../../components/GridItem.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title='Questions'
+  description={'Step by step guides and paths to learn different tools or technologies'}
+  permalink={'/roadmaps'}
+  noIndex={true}
+>
+  <SimplePageHeader
+    title='Questions'
+    description='Quizzes to help you test and improve your knowledge and skill up'
+    showYouTubeAlert={false}
+  />
+
+  <div class='flex bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>
+    <div class='container'>
+      <div class='grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3'>
+        <GridItem
+          url={`/questions/frontend`}
+          isNew={false}
+          title={'Frontend Development'}
+          description={'25 Questions &middot; 5 topics'}
+        />
+        <GridItem
+          url={`/questions/backend`}
+          isNew={false}
+          title={'Backend Development'}
+          description={'25 Questions &middot; 5 topics'}
+        />
+        <GridItem
+          url={`/questions/devops`}
+          isNew={false}
+          title={'DevOps Engineering'}
+          description={'25 Questions &middot; 5 topics'}
+        />
+        <GridItem
+          url={`/questions/javascript`}
+          isNew={false}
+          title={'JavaScript'}
+          description={'25 Questions &middot; 5 topics'}
+        />
+      </div>
+    </div>
+  </div>
+</BaseLayout>
