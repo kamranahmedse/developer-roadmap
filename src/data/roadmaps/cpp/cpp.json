@@ -13995,10 +13995,10 @@
         {
           "ID": "4739",
           "typeID": "__group__",
-          "zOrder": "219",
-          "measuredW": "87",
+          "zOrder": "233",
+          "measuredW": "198",
           "measuredH": "47",
-          "w": "87",
+          "w": "198",
           "h": "47",
           "x": "1054",
           "y": "3062",
@@ -14012,7 +14012,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "76",
+                  "w": "185",
                   "h": "47",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -14026,9 +14026,9 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "45",
+                  "measuredW": "100",
                   "measuredH": "25",
-                  "x": "26",
+                  "x": "70",
                   "y": "11",
                   "properties": {
                     "size": "17",
@@ -14472,102 +14472,7 @@
             }
           }
         },
-        {
-          "ID": "4744",
-          "typeID": "__group__",
-          "zOrder": "224",
-          "measuredW": "118",
-          "measuredH": "47",
-          "w": "118",
-          "h": "47",
-          "x": "1145",
-          "y": "3062",
-          "properties": {
-            "controlName": "105-libraries:tensorflow"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "107",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "78",
-                  "measuredH": "25",
-                  "x": "12",
-                  "y": "11",
-                  "properties": {
-                    "size": "17",
-                    "text": "tensorflow"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "__group__",
-                  "zOrder": "2",
-                  "measuredW": "24",
-                  "measuredH": "24",
-                  "w": "24",
-                  "h": "24",
-                  "x": "94",
-                  "y": "12",
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Icon",
-                          "zOrder": "0",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "16777215",
-                            "icon": {
-                              "ID": "circle",
-                              "size": "small"
-                            }
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Icon",
-                          "zOrder": "1",
-                          "measuredW": "24",
-                          "measuredH": "24",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "icon": {
-                              "ID": "check-circle",
-                              "size": "small"
-                            },
-                            "color": "10066329"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
+
         {
           "ID": "4745",
           "typeID": "__group__",
