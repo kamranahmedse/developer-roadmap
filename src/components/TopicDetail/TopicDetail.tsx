@@ -92,6 +92,7 @@ export function TopicDetail() {
   useLoadTopic(({ topicId, resourceType, resourceId }) => {
     setIsLoading(true);
     setIsActive(true);
+    setError('');
     sponsorHidden.set(true);
 
     setContributionAlertMessage('');
@@ -117,6 +118,7 @@ export function TopicDetail() {
       .then(({ response }) => {
         if (!response) {
           setError('Topic not found.');
+          setIsLoading(false);
           return;
         }
 
@@ -151,6 +153,34 @@ export function TopicDetail() {
               alt="Loading"
               className="h-6 w-6 animate-spin fill-blue-600 text-gray-200 sm:h-12 sm:w-12"
             />
+          </div>
+        )}
+
+        {!isContributing && !isLoading && error && (
+          <div class="items-center justify-center gap-7 py-2 md:py-4">
+            <div className="mb-2">
+              <button
+                type="button"
+                id="close-topic"
+                className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                onClick={() => {
+                  setIsActive(false);
+                  setIsContributing(false);
+                  setError('')
+                }}
+              >
+                <img alt="Close" class="h-5 w-5" src={CloseIcon} />
+              </button>
+            </div>
+
+            <div class="text-left md:text-left">
+              <h1 class="bg-gradient-to-t from-black to-gray-600 bg-clip-text text-2xl font-extrabold leading-normal text-transparent md:text-5xl md:leading-normal">
+                {error}
+              </h1>
+              <p class="text-md mb-2 md:text-xl">
+                Sorry, we are facing some techinal issue. Come back later.
+              </p>
+            </div>
           </div>
         )}
 
@@ -190,6 +220,7 @@ export function TopicDetail() {
                 onClick={() => {
                   setIsActive(false);
                   setIsContributing(false);
+                  setError('')
                 }}
               >
                 <img alt="Close" class="h-5 w-5" src={CloseIcon} />
