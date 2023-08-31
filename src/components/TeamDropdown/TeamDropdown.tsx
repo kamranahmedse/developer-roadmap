@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import ChevronDown from '../../icons/dropdown.svg';
 import { httpGet } from '../../lib/http';
 import { useAuth } from '../../hooks/use-auth';
@@ -6,7 +6,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { AllowedRoles } from '../CreateTeam/RoleDropdown';
 import { $currentTeam, $teamList } from '../../stores/team';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useToast } from '../../hooks/use-toast';
 import type { ValidTeamType } from '../CreateTeam/Step0';
@@ -103,10 +103,10 @@ export function TeamDropdown() {
           <span>Choose Team</span>
 
           {shouldShowTeamsIndicator && (
-            <span class="mr-1 inline-flex h-1 w-1 items-center justify-center font-medium text-blue-300">
-              <span class="relative flex items-center">
-                <span class="relative rounded-full bg-gray-200 p-1 text-xs" />
-                <span class="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs" />
+            <span className="mr-1 inline-flex h-1 w-1 items-center justify-center font-medium text-blue-300">
+              <span className="relative flex items-center">
+                <span className="relative rounded-full bg-gray-200 p-1 text-xs" />
+                <span className="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs" />
               </span>
             </span>
           )}
@@ -166,7 +166,7 @@ export function TeamDropdown() {
                 }
 
                 return (
-                  <li>
+                  <li key={team?._id}>
                     <a
                       className="flex w-full cursor-pointer items-center gap-2 rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                       href={`${pageLink}`}
@@ -194,7 +194,7 @@ export function TeamDropdown() {
           </div>
         )}
       </div>
-      <hr class="my-4" />
+      <hr className="my-4" />
     </>
   );
 }

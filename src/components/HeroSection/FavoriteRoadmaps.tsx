@@ -1,7 +1,8 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { EmptyProgress } from './EmptyProgress';
 import { httpGet } from '../../lib/http';
 import { ProgressList } from './ProgressList';
+import {isLoggedIn} from "../../lib/jwt";
 
 export type UserProgressResponse = {
   resourceId: string;
@@ -48,6 +49,11 @@ function renderProgress(progressList: UserProgressResponse) {
 }
 
 export function FavoriteRoadmaps() {
+  const isAuthenticated = isLoggedIn();
+  if (!isAuthenticated) {
+    return null;
+  }
+
   const [isPreparing, setIsPreparing] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
   const [progress, setProgress] = useState<UserProgressResponse>([]);
@@ -109,7 +115,7 @@ export function FavoriteRoadmaps() {
 
   return (
     <div
-      class={`flex min-h-[192px] bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${
+      className={`flex min-h-[192px] bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${
         hasProgress && `border-t border-t-[#1e293c]`
       }`}
     >

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "preact/hooks";
+import { useEffect, useState } from "react";
 
 export function useParams<T = Record<string, any>>(): T {
   const [params, setParams] = useState<T>({} as T);

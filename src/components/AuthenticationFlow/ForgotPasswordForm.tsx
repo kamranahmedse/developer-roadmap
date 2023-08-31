@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 
 export function ForgotPasswordForm() {
@@ -29,7 +29,7 @@ export function ForgotPasswordForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} class="w-full">
+    <form onSubmit={handleSubmit} className="w-full">
       <input
         type="email"
         name="email"

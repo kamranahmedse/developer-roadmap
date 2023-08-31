@@ -1,5 +1,5 @@
 import { httpGet } from '../../lib/http';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { pageProgressMessage } from '../../stores/page';
 import type { UserProgressResponse } from '../HeroSection/FavoriteRoadmaps';
 import { SelectionButton } from './SelectionButton';
@@ -33,19 +33,24 @@ export function RoadmapSelect(props: RoadmapSelectProps) {
   }, []);
 
   const canSelectMore = selectedRoadmaps.length < 4;
-  const allProgress = progressList?.filter(
-    (progress) => progress.resourceType === 'roadmap'
-  ) || [];
+  const allProgress =
+    progressList?.filter((progress) => progress.resourceType === 'roadmap') ||
+    [];
 
   return (
     <div className="flex flex-wrap gap-1">
-      {allProgress?.length === 0 && <p className={'text-sm text-gray-400 italic'}>No progress tracked so far.</p>}
+      {allProgress?.length === 0 && (
+        <p className={'text-sm italic text-gray-400'}>
+          No progress tracked so far.
+        </p>
+      )}
       {allProgress?.map((progress) => {
         const isSelected = selectedRoadmaps.includes(progress.resourceId);
         const canSelect = isSelected || canSelectMore;
 
         return (
           <SelectionButton
+            key={progress.resourceId}
             text={progress.resourceTitle}
             isDisabled={!canSelect}
             isSelected={isSelected}

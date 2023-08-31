@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
@@ -113,7 +113,7 @@ export function RoadCardPage() {
 
       <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
         <StepCounter step={4} />
-        <div class="flex-grow">
+        <div className="flex-grow">
           <StepLabel label="Share your #RoadCard with others" />
           <div className={'rounded-md border bg-gray-50 p-2 text-center'}>
             <a

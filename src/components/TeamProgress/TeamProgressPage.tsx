@@ -1,10 +1,9 @@
-import { useEffect, useState } from 'preact/hooks';
-import { useTeamId } from '../../hooks/use-team-id';
+import { useEffect, useState } from 'react';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressItem } from './MemberProgressItem';
 import { useToast } from '../../hooks/use-toast';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../../stores/team';
 import { GroupRoadmapItem } from './GroupRoadmapItem';
 import { getUrlParams, setUrlParams } from '../../lib/browser';
@@ -49,8 +48,7 @@ const groupingTypes = [
 ] as const;
 
 export function TeamProgressPage() {
-  const { teamId } = useTeamId();
-  const { gb: groupBy } = getUrlParams();
+  const { t: teamId, gb: groupBy } = getUrlParams();
 
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
@@ -100,15 +98,6 @@ export function TeamProgressPage() {
     });
   }, [teamId]);
 
-  if (isLoading) {
-    return null;
-  }
-
-  if (!teamId) {
-    window.location.href = '/';
-    return;
-  }
-
   useEffect(() => {
     if (!selectedGrouping) {
       return;
@@ -145,6 +134,15 @@ export function TeamProgressPage() {
     });
   }
 
+  if (!teamId) {
+    window.location.href = '/';
+    return;
+  }
+
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <div>
       {showMemberProgress && (
@@ -170,6 +168,7 @@ export function TeamProgressPage() {
       <div className="flex items-center gap-2">
         {groupingTypes.map((grouping) => (
           <button
+            key={grouping.value}
             className={`rounded-md border p-1 px-2 text-sm ${
               selectedGrouping === grouping.value
                 ? ' border-gray-400 bg-gray-200 '
@@ -205,6 +204,7 @@ export function TeamProgressPage() {
           <div className="grid gap-4 sm:grid-cols-2">
             {teamMembers.map((member) => (
               <MemberProgressItem
+                key={member._id}
                 member={member}
                 isMyProgress={member?.email === user?.email}
                 onShowResourceProgress={(resourceId) => {

@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { Stepper } from '../Stepper';
 import { Step0, ValidTeamType } from './Step0';
 import { Step1, ValidTeamSize } from './Step1';

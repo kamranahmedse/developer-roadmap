@@ -2,7 +2,7 @@ import BuildingIcon from '../../icons/building.svg';
 import UsersIcon from '../../icons/users.svg';
 import type { TeamDocument } from './CreateTeamForm';
 import { httpPut } from '../../lib/http';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { NextButton } from './NextButton';
 
 export const validTeamTypes = [

@@ -6,6 +6,6 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
 
 <AccountLayout title='Update Profile' noIndex={true} initialLoadingMessage={'Loading activity'}>
   <AccountSidebar activePageId='activity' activePageTitle='Activity'>
-    <ActivityPage client:load />
+    <ActivityPage client:only="react" />
   </AccountSidebar>
 </AccountLayout>

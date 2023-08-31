@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'preact/hooks';
+import { useState, useEffect, useRef } from 'react';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { httpGet } from '../../lib/http';
@@ -44,7 +44,8 @@ export function TeamVersions(props: TeamVersionsProps) {
   const [selectedTeamVersion, setSelectedTeamVersion] = useState<
     TeamVersionsResponse[0] | null
   >(null);
-  let shouldShowAvatar = true;
+
+  let shouldShowAvatar: boolean;
   const selectedAvatar = selectedTeamVersion
     ? selectedTeamVersion.team.avatar
     : user?.avatar;
@@ -55,10 +56,8 @@ export function TeamVersions(props: TeamVersionsProps) {
   // Show avatar if team has one, or if user has one otherwise use first letter of name
   if (selectedTeamVersion?.team.avatar) {
     shouldShowAvatar = true;
-  } else if (!selectedTeamVersion && user?.avatar) {
-    shouldShowAvatar = true;
   } else {
-    shouldShowAvatar = false;
+    shouldShowAvatar = !!(!selectedTeamVersion && user?.avatar);
   }
 
   useOutsideClick(teamDropdownRef, () => {
@@ -105,10 +104,6 @@ export function TeamVersions(props: TeamVersionsProps) {
     });
   }, []);
 
-  if (isPreparing) {
-    return null;
-  }
-
   useEffect(() => {
     clearResourceProgress();
     if (!selectedTeamVersion) {
@@ -126,6 +121,10 @@ export function TeamVersions(props: TeamVersionsProps) {
       refreshProgressCounters();
     });
   }, [selectedTeamVersion]);
+
+  if (isPreparing) {
+    return null;
+  }
 
   if (!teamVersions.length) {
     return null;
@@ -145,8 +144,8 @@ export function TeamVersions(props: TeamVersionsProps) {
           </span>
           <img
             alt="Dropdown"
-            src={DropdownIcon}
-            class="h-3 w-3 sm:h-4 sm:w-4"
+            src={DropdownIcon as any}
+            className="h-3 w-3 sm:h-4 sm:w-4"
           />
         </div>
         <div className="sm:hidden">
@@ -192,12 +191,13 @@ export function TeamVersions(props: TeamVersionsProps) {
                 <span className="truncate">Personal</span>
               </div>
             </button>
-            {teamVersions.map((team) => {
+            {teamVersions.map((team: TeamVersionsResponse[0]) => {
               const isSelectedTeam =
                 selectedTeamVersion?.team._id === team.team._id;
 
               return (
                 <button
+                  key={team?.team?._id}
                   className={`flex h-8 w-full items-center justify-between px-3 py-1.5 text-xs font-medium hover:bg-gray-100 sm:text-sm ${
                     isSelectedTeam ? 'bg-gray-100' : 'bg-white'
                   }`}

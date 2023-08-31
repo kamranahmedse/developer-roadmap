@@ -1,5 +1,5 @@
-import { useEffect, useState } from 'preact/hooks';
-import { httpDelete, httpGet, httpPatch, httpPost } from '../lib/http';
+import { useEffect, useState } from 'react';
+import { httpDelete, httpGet, httpPost } from '../lib/http';
 import { pageProgressMessage } from '../stores/page';
 import { isLoggedIn } from '../lib/jwt';
 import { showLoginPopup } from '../lib/popup';
@@ -118,7 +118,7 @@ export function Befriend() {
         <ErrorIcon additionalClasses="mx-auto mb-4 mt-24 w-20 opacity-20" />
 
         <h2 className={'mb-1 text-2xl font-bold'}>Error</h2>
-        <p class="mb-4 text-base leading-6 text-gray-600">
+        <p className="mb-4 text-base leading-6 text-gray-600">
           {error || 'There was a problem, please try again.'}
         </p>
 
@@ -149,13 +149,13 @@ export function Befriend() {
       />
 
       <h2 className={'mb-1 text-3xl font-bold'}>{user.name}</h2>
-      <p class="mb-6 text-base leading-6 text-gray-600">
+      <p className="mb-6 text-base leading-6 text-gray-600">
         After you add {user.name} as a friend, you will be able to view each
         other's skills and progress.
       </p>
 
-      <div class="mx-auto w-full duration-500 sm:max-w-md">
-        <div class="flex w-full flex-col items-center gap-2">
+      <div className="mx-auto w-full duration-500 sm:max-w-md">
+        <div className="flex w-full flex-col items-center gap-2">
           {user.status === 'none' && (
             <button
               disabled={isMe}
@@ -169,7 +169,7 @@ export function Befriend() {
                 });
               }}
               type="button"
-              class="w-full flex-grow cursor-pointer rounded-lg bg-black px-3 py-2 text-center text-white disabled:cursor-not-allowed disabled:opacity-40"
+              className="w-full flex-grow cursor-pointer rounded-lg bg-black px-3 py-2 text-center text-white disabled:cursor-not-allowed disabled:opacity-40"
             >
               {isMe ? "You can't add yourself" : 'Add Friend'}
             </button>
@@ -177,7 +177,7 @@ export function Befriend() {
 
           {user.status === 'sent' && (
             <>
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
+              <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
                 <CheckIcon additionalClasses="mr-2 h-4 w-4" />
                 Request Sent
               </span>
@@ -188,7 +188,7 @@ export function Befriend() {
                     setIsConfirming(true);
                   }}
                   type="button"
-                  class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-red-600 px-3 py-2 text-center text-white hover:bg-red-700"
+                  className="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-red-600 px-3 py-2 text-center text-white hover:bg-red-700"
                 >
                   <DeleteUserIcon additionalClasses="mr-2 h-[19px] w-[19px]" />
                   Withdraw Request
@@ -196,7 +196,7 @@ export function Befriend() {
               )}
 
               {isConfirming && (
-                <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
                   Are you sure?{' '}
                   <button
                     className="ml-2 text-red-700 underline"
@@ -225,7 +225,7 @@ export function Befriend() {
 
           {user.status === 'accepted' && (
             <>
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
+              <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border  border-gray-300 px-3 py-2 text-center text-black">
                 <AddedUserIcon additionalClasses="mr-2 h-5 w-5" />
                 You are friends
               </span>
@@ -236,7 +236,7 @@ export function Befriend() {
                     setIsConfirming(true);
                   }}
                   type="button"
-                  class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-red-600 px-3 py-2 text-center text-white hover:bg-red-700"
+                  className="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-red-600 px-3 py-2 text-center text-white hover:bg-red-700"
                 >
                   <DeleteUserIcon additionalClasses="mr-2 h-[19px] w-[19px]" />
                   Remove Friend
@@ -244,7 +244,7 @@ export function Befriend() {
               )}
 
               {isConfirming && (
-                <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
                   Are you sure?{' '}
                   <button
                     className="ml-2 text-red-700 underline"
@@ -271,12 +271,12 @@ export function Befriend() {
 
           {user.status === 'rejected' && (
             <>
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-gray-300 px-3 py-2 text-center text-black">
+              <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-gray-300 px-3 py-2 text-center text-black">
                 <DeleteUserIcon additionalClasses="mr-2 h-4 w-4" />
                 Request Rejected
               </span>
 
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+              <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
                 Changed your mind?{' '}
                 <button
                   className="ml-2 text-red-700 underline"
@@ -296,7 +296,7 @@ export function Befriend() {
 
           {user.status === 'got_rejected' && (
             <>
-              <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-500 px-3 py-2 text-center text-red-500">
+              <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-500 px-3 py-2 text-center text-red-500">
                 <StopIcon additionalClasses="mr-2 h-4 w-4" />
                 Request Rejected
               </span>
@@ -311,7 +311,7 @@ export function Befriend() {
                     pageProgressMessage.set('');
                   });
                 }}
-                class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border  border-gray-800 bg-gray-800 px-3 py-2 text-center text-white hover:bg-black"
+                className="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border  border-gray-800 bg-gray-800 px-3 py-2 text-center text-white hover:bg-black"
               >
                 <CheckIcon additionalClasses="mr-2 h-4 w-4" />
                 Accept Request
@@ -323,7 +323,7 @@ export function Befriend() {
                     setIsConfirming(true);
                   }}
                   type="button"
-                  class="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-white px-3 py-2 text-center text-red-600 hover:bg-red-100"
+                  className="flex w-full flex-grow cursor-pointer items-center justify-center rounded-lg border border-red-600 bg-white px-3 py-2 text-center text-red-600 hover:bg-red-100"
                 >
                   <DeleteUserIcon additionalClasses="mr-2 h-[19px] w-[19px]" />
                   Reject Request
@@ -331,7 +331,7 @@ export function Befriend() {
               )}
 
               {isConfirming && (
-                <span class="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
+                <span className="flex w-full flex-grow cursor-default items-center justify-center rounded-lg border border-red-600 px-3 py-2.5 text-center text-sm text-red-600">
                   Are you sure?{' '}
                   <button
                     className="ml-2 text-red-700 underline"

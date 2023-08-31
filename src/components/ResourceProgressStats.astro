@@ -55,7 +55,7 @@ const { isSecondaryBanner = false, resourceId, resourceType } = Astro.props;
     <ProgressShareButton
       resourceId={resourceId}
       resourceType={resourceType}
-      client:load
+      client:only="react"
     />
     <button
       data-popup='progress-help'
@@ -86,7 +86,7 @@ const { isSecondaryBanner = false, resourceId, resourceType } = Astro.props;
     <ProgressShareButton
       resourceId={resourceId}
       resourceType={resourceType}
-      client:load
+      client:only="react"
     />
   </div>
 </div>

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { FormEvent, useEffect, useRef, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -13,7 +13,6 @@ type SubmitFeedbackPopupProps = {
 export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
   const { onClose } = props;
 
-  const toast = useToast();
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const inputEl = useRef<HTMLTextAreaElement>(null);
 
@@ -35,7 +34,7 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
     inputEl.current?.focus();
   }, []);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -65,25 +64,27 @@ export function SubmitFeedbackPopup(props: SubmitFeedbackPopupProps) {
   };
 
   return (
-    <div class="fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+    <div className="fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+      <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          class="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow"
         >
           {!isSuccess && (
             <>
-              <h2 class="text-xl font-semibold mb-1 text-black">
+              <h2 className="mb-1 text-xl font-semibold text-black">
                 Enter your feedback
               </h2>
-              <p className={'text-sm text-gray-500'}>Help us improve your experience.</p>
+              <p className={'text-sm text-gray-500'}>
+                Help us improve your experience.
+              </p>
               <form onSubmit={handleSubmit}>
                 <div className="my-4">
                   <textarea
                     ref={inputEl}
                     name="submit-feedback"
                     id="submit-feedback"
-                    className="mt-2 block min-h-[150px] w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 resize-none"
+                    className="mt-2 block min-h-[150px] w-full resize-none rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400"
                     placeholder="Enter your feedback"
                     required
                     autoFocus

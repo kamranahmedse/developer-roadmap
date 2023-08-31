@@ -3,7 +3,7 @@ import { MemberActionDropdown } from './MemberActionDropdown';
 import { MemberRoleBadge } from './RoleBadge';
 import type { TeamMemberItem } from './TeamMembersPage';
 import { $canManageCurrentTeam } from '../../stores/team';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 
 type TeamMemberProps = {
   member: TeamMemberItem;
@@ -91,7 +91,7 @@ export function TeamMemberItem(props: TeamMemberProps) {
       </div>
 
       <div className="flex shrink-0 items-center text-sm">
-        <span class={'hidden sm:block'}>
+        <span className={'hidden sm:block'}>
           <MemberRoleBadge role={member.role} />
         </span>
         {canManageCurrentTeam && (

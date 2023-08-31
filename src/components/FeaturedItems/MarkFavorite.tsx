@@ -1,4 +1,5 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
+import type { MouseEvent } from "react";
 import { httpPatch } from '../../lib/http';
 import type { ResourceType } from '../../lib/resource-progress';
 import { isLoggedIn } from '../../lib/jwt';
@@ -20,15 +21,16 @@ export function MarkFavorite({
   favorite,
   className,
 }: MarkFavoriteType) {
+  const isAuthenticated = isLoggedIn();
   const localStorageKey = `${resourceType}-${resourceId}-favorite`;
 
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isFavorite, setIsFavorite] = useState(
-    favorite ?? localStorage.getItem(localStorageKey) === '1'
+      isAuthenticated ? (favorite ?? localStorage.getItem(localStorageKey) === '1') : false
   );
 
-  async function toggleFavoriteHandler(e: Event) {
+  async function toggleFavoriteHandler(e: MouseEvent<HTMLButtonElement>) {
     e.preventDefault();
     if (!isLoggedIn()) {
       showLoginPopup();

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import { Spinner } from '../ReactIcons/Spinner';
 import '../FrameRenderer/FrameRenderer.css';
@@ -16,7 +16,7 @@ import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../../stores/team';
 
 export type ProgressMapProps = {
@@ -277,14 +277,14 @@ export function MemberProgressModal(props: ProgressMapProps) {
   const progressPercentage = Math.round((memberDone / memberTotal) * 100);
 
   return (
-    <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+    <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
         id={currentTeam?.type === 'company' ? 'customized-roadmap' : 'original-roadmap'}
-        class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
+        className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div
           ref={popupBodyEl}
-          class="popup-body relative rounded-lg bg-white pt-[1px] shadow"
+          className="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           {isCurrentUser && (
             <div className="sticky top-1 mx-1 mb-0 mt-1 rounded-xl bg-gray-900 p-4 text-gray-300">
@@ -344,11 +344,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
               </div>
             )}
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
+              className={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden ${
                 isLoading ? 'striped-loader' : ''
               }`}
             >
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+              <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
 
@@ -357,18 +357,18 @@ export function MemberProgressModal(props: ProgressMapProps) {
               </span>
             </p>
             <p
-              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+              className={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
                 isLoading ? 'striped-loader' : ''
               }`}
             >
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+              <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
 
               <span>
                 <span>{memberDone}</span> completed
               </span>
-              <span class="mx-1.5 text-gray-400">·</span>
+              <span className="mx-1.5 text-gray-400">·</span>
               <span>
                 <span data-progress-learning="">{memberLearning}</span> in
                 progress
@@ -376,7 +376,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
               {memberSkipped > 0 && (
                 <>
-                  <span class="mx-1.5 text-gray-400">·</span>
+                  <span className="mx-1.5 text-gray-400">·</span>
                   <span>
                     <span data-progress-skipped="">{memberSkipped}</span>{' '}
                     skipped
@@ -384,7 +384,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
                 </>
               )}
 
-              <span class="mx-1.5 text-gray-400">·</span>
+              <span className="mx-1.5 text-gray-400">·</span>
               <span>
                 <span data-progress-total="">{memberTotal}</span> Total
               </span>
@@ -398,7 +398,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
           ></div>
 
           {isLoading && (
-            <div class="flex w-full justify-center">
+            <div className="flex w-full justify-center">
               <Spinner
                 isDualRing={false}
                 className="mb-4 mt-2 h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-8 sm:w-8"
@@ -414,7 +414,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
             onClick={onClose}
           >
             <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
-            <span class="sr-only">Close modal</span>
+            <span className="sr-only">Close modal</span>
           </button>
         </div>
       </div>

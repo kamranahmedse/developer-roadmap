@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 interface PreviewFile extends File {
@@ -60,7 +60,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
 
   const inputRef = useRef<HTMLInputElement>(null);
 
-  const onImageChange = async (e: Event) => {
+  const onImageChange = async (e: ChangeEvent<HTMLInputElement>) => {
     setError('');
 
     const file = (e.target as HTMLInputElement).files?.[0];
@@ -81,7 +81,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
     );
   };
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setError('');
     setIsLoading(true);

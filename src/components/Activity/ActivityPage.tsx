@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpGet } from '../../lib/http';
 import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
@@ -91,16 +91,16 @@ export function ActivityPage() {
         streak={activity?.streak || { count: 0 }}
       />
 
-      <div class="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+      <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
         {learningRoadmaps.length === 0 &&
           learningBestPractices.length === 0 && <EmptyActivity />}
 
         {(learningRoadmaps.length > 0 || learningBestPractices.length > 0) && (
           <>
-            <h2 class="mb-3 text-xs uppercase text-gray-400">
+            <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
             </h2>
-            <div class="flex flex-col gap-3">
+            <div className="flex flex-col gap-3">
               {learningRoadmaps
                 .sort((a, b) => {
                   const updatedAtA = new Date(a.updatedAt);
@@ -110,6 +110,7 @@ export function ActivityPage() {
                 })
                 .map((roadmap) => (
                   <ResourceProgress
+                      key={roadmap.id}
                     doneCount={roadmap.done || 0}
                     learningCount={roadmap.learning || 0}
                     totalCount={roadmap.total || 0}

@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import type { PageType } from '../CommandMenu/CommandMenu';
@@ -68,11 +68,11 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
   );
 
   return (
-    <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
-      <div class="relative mx-auto h-full w-full max-w-2xl p-4 md:h-auto">
+    <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+      <div className="relative mx-auto h-full w-full max-w-2xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          class="popup-body relative mt-4 overflow-hidden rounded-lg bg-white shadow"
+          className="popup-body relative mt-4 overflow-hidden rounded-lg bg-white shadow"
         >
           <button
             type="button"
@@ -80,7 +80,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             onClick={onClose}
           >
             <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
-            <span class="sr-only">Close modal</span>
+            <span className="sr-only">Close modal</span>
           </button>
           <input
             ref={searchInputEl}

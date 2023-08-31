@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { wireframeJSONToSVG } from 'roadmap-renderer';
 import '../FrameRenderer/FrameRenderer.css';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -43,12 +43,7 @@ export function UserProgressModal(props: ProgressMapProps) {
 
   const resourceSvgEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
-
   const currentUser = useAuth();
-  if (!userId || currentUser?.id === userId) {
-    deleteUrlParam('s');
-    return null;
-  }
 
   const [showModal, setShowModal] = useState(!!userId);
   const [resourceSvg, setResourceSvg] = useState<SVGElement | null>(null);
@@ -114,7 +109,7 @@ export function UserProgressModal(props: ProgressMapProps) {
   });
 
   useEffect(() => {
-    if (!resourceJsonUrl || !resourceId || !resourceType) {
+    if (!resourceJsonUrl || !resourceId || !resourceType || !userId) {
       return;
     }
 
@@ -182,14 +177,19 @@ export function UserProgressModal(props: ProgressMapProps) {
   const userLearning = progress?.learning?.length || 0;
   const userSkipped = progress?.skipped?.length || 0;
 
+  if (!userId || currentUser?.id === userId) {
+    deleteUrlParam('s');
+    return null;
+  }
+
   if (!showModal) {
     return null;
   }
 
   if (isLoading || error) {
     return (
-      <div class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
-        <div class="relative mx-auto flex h-full w-full items-center justify-center">
+      <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
+        <div className="relative mx-auto flex h-full w-full items-center justify-center">
           <div className="popup-body relative rounded-lg bg-white p-5 shadow">
             <div className="flex items-center">
               {isLoading && (
@@ -217,12 +217,12 @@ export function UserProgressModal(props: ProgressMapProps) {
   return (
     <div
       id={'user-progress-modal'}
-      class="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
+      className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"
     >
-      <div class="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
+      <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
         <div
           ref={popupBodyEl}
-          class={`popup-body relative rounded-lg bg-white pt-[1px] shadow`}
+          className={`popup-body relative rounded-lg bg-white pt-[1px] shadow`}
         >
           <div className="p-4">
             <div className="mb-5 mt-0 min-h-[28px] text-left sm:text-center md:mt-4 md:h-[60px]">
@@ -238,9 +238,9 @@ export function UserProgressModal(props: ProgressMapProps) {
               </p>
             </div>
             <p
-              class={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden`}
+              className={`-mx-4 mb-3 flex items-center justify-start border-b border-t px-4 py-2 text-sm sm:hidden`}
             >
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+              <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
 
@@ -249,32 +249,32 @@ export function UserProgressModal(props: ProgressMapProps) {
               </span>
             </p>
             <p
-              class={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
+              className={`-mx-4 mb-3 hidden items-center justify-center border-b border-t py-2 text-sm sm:flex ${
                 isLoading ? 'striped-loader' : ''
               }`}
             >
-              <span class="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
+              <span className="mr-2.5 block rounded-sm bg-yellow-200 px-1 py-0.5 text-xs font-medium uppercase text-yellow-900">
                 <span>{progressPercentage}</span>% Done
               </span>
 
               <span>
                 <span>{userDone}</span> completed
               </span>
-              <span class="mx-1.5 text-gray-400">·</span>
+              <span className="mx-1.5 text-gray-400">·</span>
               <span>
                 <span>{userLearning}</span> in progress
               </span>
 
               {userSkipped > 0 && (
                 <>
-                  <span class="mx-1.5 text-gray-400">·</span>
+                  <span className="mx-1.5 text-gray-400">·</span>
                   <span>
                     <span>{userSkipped}</span> skipped
                   </span>
                 </>
               )}
 
-              <span class="mx-1.5 text-gray-400">·</span>
+              <span className="mx-1.5 text-gray-400">·</span>
               <span>
                 <span>{userProgressTotal}</span> Total
               </span>
@@ -292,8 +292,8 @@ export function UserProgressModal(props: ProgressMapProps) {
             className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
-            <span class="sr-only">Close modal</span>
+            <img alt={'close'} src={CloseIcon as any} className="h-4 w-4" />
+            <span className="sr-only">Close modal</span>
           </button>
         </div>
       </div>

@@ -1,7 +1,7 @@
 import SpinnerIcon from '../../icons/spinner.svg';
 import ErrorIcon from '../../icons/error.svg';
 
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpPost } from '../../lib/http';
@@ -60,7 +60,7 @@ export function TriggerVerifyAccount() {
           <img
             alt={'Please wait.'}
             src={SpinnerIcon}
-            class={'mx-auto h-16 w-16 animate-spin'}
+            className={'mx-auto h-16 w-16 animate-spin'}
           />
         )}
         {error && (
@@ -75,7 +75,7 @@ export function TriggerVerifyAccount() {
         </h2>
         <div className="text-sm sm:text-base">
           {isLoading && <p>Please wait while we verify your account..</p>}
-          {error && <p class="text-red-700">{error}</p>}
+          {error && <p className="text-red-700">{error}</p>}
         </div>
       </div>
     </div>

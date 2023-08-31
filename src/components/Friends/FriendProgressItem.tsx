@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import type { ListFriendsResponse } from './FriendsPage';
 import { DeleteUserIcon } from '../ReactIcons/DeleteUserIcon';
 import { pageProgressMessage } from '../../stores/page';
@@ -177,12 +177,12 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
             <div
               className={'flex w-full flex-grow items-center justify-center'}
             >
-              <span class=" flex flex-col items-center text-red-500">
+              <span className=" flex flex-col items-center text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Rejected
               </span>
             </div>
-            <span class="flex cursor-default items-center justify-center border-t py-2 text-center text-sm">
+            <span className="flex cursor-default items-center justify-center border-t py-2 text-center text-sm">
               Changed your mind?{' '}
               <button
                 className="ml-2 font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
@@ -205,12 +205,12 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
             <div
               className={'flex w-full flex-grow items-center justify-center'}
             >
-              <span class=" flex flex-col items-center text-sm text-red-500">
+              <span className=" flex flex-col items-center text-sm text-red-500">
                 <DeleteUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Rejected
               </span>
             </div>
-            <span class="flex cursor-default items-center justify-center border-t py-2.5 text-center text-sm">
+            <span className="flex cursor-default items-center justify-center border-t py-2.5 text-center text-sm">
               <button
                 className="ml-2 flex items-center font-medium text-red-700 underline underline-offset-2 hover:text-red-500"
                 onClick={() => {
@@ -233,7 +233,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
             <div
               className={'flex w-full flex-grow items-center justify-center'}
             >
-              <span class=" flex flex-col items-center text-green-500">
+              <span className=" flex flex-col items-center text-green-500">
                 <AddedUserIcon additionalClasses="mr-2 h-8 w-8 mb-1" />
                 Request Sent
               </span>

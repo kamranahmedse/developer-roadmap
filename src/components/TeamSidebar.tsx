@@ -1,4 +1,3 @@
-import type { FunctionalComponent } from 'preact';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
@@ -7,14 +6,18 @@ import SettingsIcon from '../icons/cog.svg';
 import ChatIcon from '../icons/chat.svg';
 import MapIcon from '../icons/map.svg';
 import GroupIcon from '../icons/group.svg';
-import { useState } from 'preact/hooks';
-import { useStore } from '@nanostores/preact';
+import { useState } from 'react';
+import type { ReactNode } from 'react';
+import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../stores/team';
 import { SubmitFeedbackPopup } from './Feedback/SubmitFeedbackPopup';
 
-export const TeamSidebar: FunctionalComponent<{
+type TeamSidebarProps = {
   activePageId: string;
-}> = ({ activePageId, children }) => {
+  children: ReactNode;
+};
+
+export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
   const [menuShown, setMenuShown] = useState(false);
   const currentTeam = useStore($currentTeam);
   const [showFeedbackPopup, setShowFeedbackPopup] = useState(false);
@@ -51,9 +54,9 @@ export const TeamSidebar: FunctionalComponent<{
 
   return (
     <>
-      <div class="relative mb-5 block border-b p-4 shadow-inner md:hidden">
+      <div className="relative mb-5 block border-b p-4 shadow-inner md:hidden">
         <button
-          class="flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center text-sm font-medium text-gray-900"
+          className="flex h-10 w-full items-center justify-between rounded-md border bg-white px-2 text-center text-sm font-medium text-gray-900"
           id="settings-menu"
           aria-haspopup="true"
           aria-expanded="true"
@@ -63,21 +66,21 @@ export const TeamSidebar: FunctionalComponent<{
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          <img alt="menu" src={ChevronDown} class="h-4 w-4" />
+          <img alt="menu" src={ChevronDown} className="h-4 w-4" />
         </button>
         {menuShown && (
           <ul
             id="settings-menu-dropdown"
-            class="absolute left-0 right-0 z-50 mt-1 space-y-1.5 bg-white p-2 shadow-lg"
+            className="absolute left-0 right-0 z-50 mt-1 space-y-1.5 bg-white p-2 shadow-lg"
           >
             <li>
               <a
                 href="/team"
-                class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+                className={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
                   activePageId === 'team' ? 'bg-slate-100' : ''
                 }`}
               >
-                <img alt={'teams'} src={GroupIcon} class={`mr-2 h-4 w-4`} />
+                <img alt={'teams'} src={GroupIcon} className={`mr-2 h-4 w-4`} />
                 Personal Account / Teams
               </a>
             </li>
@@ -85,10 +88,10 @@ export const TeamSidebar: FunctionalComponent<{
               const isActive = activePageId === sidebarLink.id;
 
               return (
-                <li>
+                <li key={sidebarLink.id}>
                   <a
                     href={sidebarLink.href}
-                    class={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
+                    className={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200 ${
                       isActive ? 'bg-slate-100' : ''
                     }`}
                   >
@@ -127,25 +130,25 @@ export const TeamSidebar: FunctionalComponent<{
         />
       )}
 
-      <div class="container flex min-h-screen items-stretch">
-        <aside class="hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block">
+      <div className="container flex min-h-screen items-stretch">
+        <aside className="hidden w-44 shrink-0 border-r border-slate-200 py-10 md:block">
           <TeamDropdown />
           <nav>
-            <ul class="space-y-1">
+            <ul className="space-y-1">
               {sidebarLinks.map((sidebarLink) => {
                 const isActive = activePageId === sidebarLink.id;
 
                 return (
-                  <li>
+                  <li key={sidebarLink.id}>
                     <a
                       href={sidebarLink.href}
-                      class={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${
+                      className={`font-regular flex w-full items-center border-r-2 px-2 py-1.5 text-sm ${
                         isActive
                           ? 'border-r-black bg-gray-100 text-black'
                           : 'border-r-transparent text-gray-500 hover:border-r-gray-300'
                       }`}
                     >
-                      <span class="flex flex-grow items-center justify-between">
+                      <span className="flex flex-grow items-center justify-between">
                         <span className="flex">
                           <img
                             alt="menu icon"
@@ -155,9 +158,9 @@ export const TeamSidebar: FunctionalComponent<{
                           {sidebarLink.title}
                         </span>
                         {sidebarLink.hasWarning && (
-                          <span class="relative mr-1 flex items-center">
-                            <span class="relative rounded-full bg-red-200 p-1 text-xs" />
-                            <span class="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-red-400 p-1 text-xs" />
+                          <span className="relative mr-1 flex items-center">
+                            <span className="relative rounded-full bg-red-200 p-1 text-xs" />
+                            <span className="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-red-400 p-1 text-xs" />
                           </span>
                         )}
                       </span>
@@ -171,7 +174,7 @@ export const TeamSidebar: FunctionalComponent<{
               className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-sm text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-black"
               onClick={() => setShowFeedbackPopup(true)}
             >
-              <img src={ChatIcon} className="mr-2 h-4 w-4" />
+              <img alt={'feedback'} src={ChatIcon} className="mr-2 h-4 w-4" />
               Send Feedback
             </button>
           </nav>
@@ -180,4 +183,4 @@ export const TeamSidebar: FunctionalComponent<{
       </div>
     </>
   );
-};
+}

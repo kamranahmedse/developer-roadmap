@@ -1,6 +1,6 @@
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { $toastMessage } from '../stores/toast';
-import { useEffect } from 'preact/hooks';
+import { useEffect } from 'react';
 import { CheckIcon } from './ReactIcons/CheckIcon';
 import { ErrorIcon } from './ReactIcons/ErrorIcon';
 import { WarningIcon } from './ReactIcons/WarningIcon';

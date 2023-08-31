@@ -57,7 +57,7 @@ export async function getAllBestPracticeTopicFiles(): Promise<
       url: topicUrl,
       heading: firstHeading?.text,
       file: fileContent,
-      bestPractice: currentBestPractice.frontmatter,
+      bestPractice: currentBestPractice?.frontmatter,
       bestPracticeId: bestPracticeId,
     };
   }

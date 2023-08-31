@@ -1,5 +1,5 @@
 import VerifyLetterIcon from '../../icons/verify-letter.svg';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
 export function VerificationEmailMessage() {
@@ -39,13 +39,13 @@ export function VerificationEmailMessage() {
     <div className="mx-auto max-w-md text-center">
       <img
         alt="Verify Email"
-        src={VerifyLetterIcon}
-        class="mx-auto mb-4 h-20 w-40 sm:h-40"
+        src={VerifyLetterIcon as any}
+        className="mx-auto mb-4 h-20 w-40 sm:h-40"
       />
-      <h2 class="my-2 text-center text-xl font-semibold sm:my-5 sm:text-2xl">
+      <h2 className="my-2 text-center text-xl font-semibold sm:my-5 sm:text-2xl">
         Verify your email address
       </h2>
-      <div class="text-sm sm:text-base">
+      <div className="text-sm sm:text-base">
         <p>
           We have sent you an email at{' '}
           <span className="font-bold">{email}</span>. Please click the link to
@@ -53,7 +53,7 @@ export function VerificationEmailMessage() {
           soon!
         </p>
 
-        <hr class="my-4" />
+        <hr className="my-4" />
 
         {!isEmailResent && (
           <>
@@ -72,12 +72,12 @@ export function VerificationEmailMessage() {
               </p>
             )}
 
-            {error && <p class="text-red-700">{error}</p>}
+            {error && <p className="text-red-700">{error}</p>}
           </>
         )}
 
         {isEmailResent && (
-          <p class="text-green-700">Verification email has been sent!</p>
+          <p className="text-green-700">Verification email has been sent!</p>
         )}
       </div>
     </div>

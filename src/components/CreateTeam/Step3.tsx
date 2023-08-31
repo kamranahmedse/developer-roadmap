@@ -2,7 +2,7 @@ import type { TeamDocument } from './CreateTeamForm';
 import { NextButton } from './NextButton';
 import { TrashIcon } from '../ReactIcons/TrashIcon';
 import { AllowedRoles, RoleDropdown } from './RoleDropdown';
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
 type Step3Props = {
@@ -75,9 +75,9 @@ export function Step3(props: Step3Props) {
 
   return (
     <form className="mt-4 flex w-full flex-col" onSubmit={onSubmit}>
-      <div class="mb-1 mt-2">
-        <h2 class="mb-1 md:mb-2 text-lg md:text-2xl font-bold">Invite your Team</h2>
-        <p class="text-sm text-gray-700">
+      <div className="mb-1 mt-2">
+        <h2 className="mb-1 md:mb-2 text-lg md:text-2xl font-bold">Invite your Team</h2>
+        <p className="text-sm text-gray-700">
           Use the form below to invite your team members to your team. You can
           also invite them later.
         </p>
@@ -88,7 +88,7 @@ export function Step3(props: Step3Props) {
             <div className="flex flex-col sm:flex-row gap-2" key={user.id}>
               <input
                 ref={userCounter === users.length - 1 ? emailInputRef : null}
-                autofocus={true}
+                autoFocus={true}
                 type="email"
                 name="email"
                 required
