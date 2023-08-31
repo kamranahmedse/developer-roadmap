@@ -30,7 +30,7 @@ jobs:
           labels: |
             dependencies
             automated pr
-          reviewers: kamranahmedse
+          reviewers: kgex
           commit-message: "chore: update dependencies to latest"
           title: "Upgrade dependencies to latest"
           body: |

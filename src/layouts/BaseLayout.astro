@@ -32,7 +32,7 @@ const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
 
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
 
-const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
+const commitUrl = `https://github.com/kgex/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
 ---
 
 <!DOCTYPE html>
@@ -52,6 +52,19 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
       content='width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0'
     />
     <meta http-equiv='Content-Language' content='en' />
+<!-- 
+    <meta name='twitter:card' content='summary_large_image' />
+    <meta name='twitter:creator' content='@kamranahmedse' />
+
+    <meta property='og:image:width' content='1200' />
+    <meta property='og:image:height' content='630' />
+    <meta property='og:image' content='https://roadmap.sh/images/og-img.png' />
+    <meta property='og:image:alt' content='roadmap.sh' />
+    <meta property='og:site_name' content='roadmap.sh' />
+    <meta property='og:title' content={title} />
+    <meta property='og:description' content={description} />
+    <meta property='og:type' content='website' />
+    <meta property='og:url' content={currentPageAbsoluteUrl} /> -->
 
     <link rel='canonical' href={canonicalUrl} />
 
@@ -67,10 +80,10 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
 
     <link rel='manifest' href='/manifest/manifest.json' />
     <!-- <link rel='icon' type='image/png' sizes='32x32' href='/manifest/logo.svg' /> -->
-    <!-- <link rel='icon' type='image/png' sizes='16x16' href='/manifest/logo.svg' /> -->
+    <link rel='icon' type='image/png' sizes='16x16' href='/manifest/logo.svg' />
     <!-- <link rel='shortcut icon' href='../icons/logo.svg' type='image/x-icon' /> -->
 
-    <link rel='icon' href='/manifest/logo.svg' type='image/x-icon' />
+    <!-- <link rel='icon' href='/manifest/logo.svg' type='image/x-icon' /> -->
 
     <slot name='after-header' />
     {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}

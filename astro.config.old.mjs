@@ -23,10 +23,7 @@ export default defineConfig({
               '/',
               '#',
               'mailto:',
-              'https://github.com/kamranahmedse',
-              'https://thenewstack.io',
-              'https://cs.fyi',
-              'https://roadmap.sh'
+              'https://github.com/kgex',
             ];
 
             if (whiteListedStarts.some((start) => href.startsWith(start))) {

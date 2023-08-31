@@ -35,7 +35,7 @@ jobs:
           labels: |
             sponsors
             automated pr
-          reviewers: kamranahmedse
+          reviewers: kgex
           commit-message: 'chore: update sponsors'
           title: 'Update Sponsor Banners'
           body: |

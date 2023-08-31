@@ -25,7 +25,7 @@ export function generateArticleSchema(article: ArticleSchemaProps) {
     author: {
       '@type': 'Person',
       name: 'Kamran Ahmed',
-      url: 'https://twitter.com/kamranahmedse',
+      url: 'https://twitter.com/kgex',
     },
     publisher: {
       '@type': 'Organization',
