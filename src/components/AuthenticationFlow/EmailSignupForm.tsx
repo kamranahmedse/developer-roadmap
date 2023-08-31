@@ -1,8 +1,7 @@
-import type { FunctionComponent } from 'preact';
-import { useState } from 'react';
+import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
-const EmailSignupForm: FunctionComponent = () => {
+export function EmailSignupForm() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -10,7 +9,7 @@ const EmailSignupForm: FunctionComponent = () => {
   const [error, setError] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
-  const onSubmit = async (e: Event) => {
+  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setIsLoading(true);
@@ -98,6 +97,4 @@ const EmailSignupForm: FunctionComponent = () => {
       </button>
     </form>
   );
-};
-
-export default EmailSignupForm;
+}

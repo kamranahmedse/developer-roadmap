@@ -29,26 +29,26 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
       title: 'Progress',
       href: `/team/progress?t=${teamId}`,
       id: 'progress',
-      icon: TeamProgress,
+      icon: TeamProgress.src,
     },
     {
       title: 'Roadmaps',
       href: `/team/roadmaps?t=${teamId}`,
       id: 'roadmaps',
-      icon: MapIcon,
+      icon: MapIcon.src,
       hasWarning: currentTeam?.roadmaps?.length === 0,
     },
     {
       title: 'Members',
       href: `/team/members?t=${teamId}`,
       id: 'members',
-      icon: GroupIcon,
+      icon: GroupIcon.src,
     },
     {
       title: 'Settings',
       href: `/team/settings?t=${teamId}`,
       id: 'settings',
-      icon: SettingsIcon,
+      icon: SettingsIcon.src,
     },
   ];
 
@@ -66,7 +66,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          <img alt="menu" src={ChevronDown} className="h-4 w-4" />
+          <img alt="menu" src={ChevronDown.src} className="h-4 w-4" />
         </button>
         {menuShown && (
           <ul
@@ -80,7 +80,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                   activePageId === 'team' ? 'bg-slate-100' : ''
                 }`}
               >
-                <img alt={'teams'} src={GroupIcon} className={`mr-2 h-4 w-4`} />
+                <img alt={'teams'} src={GroupIcon.src} className={`mr-2 h-4 w-4`} />
                 Personal Account / Teams
               </a>
             </li>
@@ -113,7 +113,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
               >
                 <img
                   alt={'menu icon'}
-                  src={ChatIcon}
+                  src={ChatIcon.src}
                   className="mr-2 h-4 w-4"
                 />
                 Send Feedback
@@ -174,7 +174,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
               className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-sm text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-black"
               onClick={() => setShowFeedbackPopup(true)}
             >
-              <img alt={'feedback'} src={ChatIcon} className="mr-2 h-4 w-4" />
+              <img alt={'feedback'} src={ChatIcon.src} className="mr-2 h-4 w-4" />
               Send Feedback
             </button>
           </nav>

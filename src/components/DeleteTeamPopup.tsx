@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { type FormEvent, useEffect, useRef, useState } from 'react';
 import { httpDelete } from '../lib/http';
 import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import { useTeamId } from '../hooks/use-team-id';
@@ -34,7 +34,7 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
     inputEl.current?.focus();
   }, []);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');

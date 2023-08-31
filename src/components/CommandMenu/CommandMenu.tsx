@@ -22,13 +22,13 @@ export type PageType = {
 };
 
 const defaultPages: PageType[] = [
-  { id: 'home', url: '/', title: 'Home', group: 'Pages', icon: HomeIcon },
+  { id: 'home', url: '/', title: 'Home', group: 'Pages', icon: HomeIcon.src },
   {
     id: 'account',
     url: '/account',
     title: 'Account',
     group: 'Pages',
-    icon: UserIcon,
+    icon: UserIcon.src,
     isProtected: true,
   },
   {
@@ -36,7 +36,7 @@ const defaultPages: PageType[] = [
     url: '/team',
     title: 'Teams',
     group: 'Pages',
-    icon: GroupIcon,
+    icon: GroupIcon.src,
     isProtected: true,
   },
   {
@@ -44,28 +44,28 @@ const defaultPages: PageType[] = [
     url: '/roadmaps',
     title: 'Roadmaps',
     group: 'Pages',
-    icon: RoadmapIcon,
+    icon: RoadmapIcon.src,
   },
   {
     id: 'best-practices',
     url: '/best-practices',
     title: 'Best Practices',
     group: 'Pages',
-    icon: BestPracticesIcon,
+    icon: BestPracticesIcon.src,
   },
   {
     id: 'guides',
     url: '/guides',
     title: 'Guides',
     group: 'Pages',
-    icon: GuideIcon,
+    icon: GuideIcon.src,
   },
   {
     id: 'videos',
     url: '/videos',
     title: 'Videos',
     group: 'Pages',
-    icon: VideoIcon,
+    icon: VideoIcon.src,
   },
 ];
 
@@ -221,7 +221,7 @@ export function CommandMenu() {
                       {page.icon && (
                         <img
                           alt={page.title}
-                          src={page.icon as any}
+                          src={page.icon}
                           className="mr-2 h-4 w-4"
                         />
                       )}

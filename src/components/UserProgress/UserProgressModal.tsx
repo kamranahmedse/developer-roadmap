@@ -292,7 +292,7 @@ export function UserProgressModal(props: ProgressMapProps) {
             className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon as any} className="h-4 w-4" />
+            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
             <span className="sr-only">Close modal</span>
           </button>
         </div>

@@ -141,7 +141,7 @@ export function Befriend() {
   const isMe = currentUser?.id === user.id;
 
   return (
-    <div className="container max-w-[400px] text-center">
+    <div className="container !max-w-[400px] text-center">
       <img
         alt={'join team'}
         src={userAvatar}

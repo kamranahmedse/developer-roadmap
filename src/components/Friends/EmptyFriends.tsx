@@ -15,7 +15,7 @@ export function EmptyFriends(props: EmptyFriendsProps) {
       <div className="mx-auto flex flex-col items-center p-7 text-center">
         <img
           alt="no friends"
-          src={UserPlusIcon as any}
+          src={UserPlusIcon.src}
           className="mb-2 h-[60px] w-[60px] opacity-10 sm:h-[120px] sm:w-[120px]"
         />
         <h2 className="text-lg font-bold sm:text-xl">Invite your Friends</h2>
@@ -44,7 +44,7 @@ export function EmptyFriends(props: EmptyFriendsProps) {
               copyText(befriendUrl);
             }}
           >
-            <img src={CopyIcon as any} className="h-4 w-4" alt="Invite Friends" />
+            <img src={CopyIcon.src} className="h-4 w-4" alt="Invite Friends" />
             {isCopied ? 'Copied' : 'Copy'}
           </button>
         </div>

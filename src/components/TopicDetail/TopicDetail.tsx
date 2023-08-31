@@ -12,9 +12,9 @@ import {
   isTopicDone,
   refreshProgressCounters,
   renderTopicProgress,
-  ResourceType,
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
+import type { ResourceType } from '../../lib/resource-progress';
 import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
@@ -147,7 +147,7 @@ export function TopicDetail() {
         {isLoading && (
           <div className="flex w-full justify-center">
             <img
-              src={SpinnerIcon as any}
+              src={SpinnerIcon.src}
               alt="Loading"
               className="h-6 w-6 animate-spin fill-blue-600 text-gray-200 sm:h-12 sm:w-12"
             />
@@ -192,7 +192,7 @@ export function TopicDetail() {
                   setIsContributing(false);
                 }}
               >
-                <img alt="Close" className="h-5 w-5" src={CloseIcon as any} />
+                <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
               </button>
             </div>
 
@@ -206,7 +206,8 @@ export function TopicDetail() {
             {/* Contribution */}
             <div className="mt-8 flex-1 border-t">
               <p className="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
-                Help others learn by submitting links to learn more about this topic{' '}
+                Help others learn by submitting links to learn more about this
+                topic{' '}
               </p>
               <button
                 onClick={() => {

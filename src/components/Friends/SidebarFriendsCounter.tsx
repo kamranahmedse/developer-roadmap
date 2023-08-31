@@ -1,5 +1,4 @@
 import { httpGet } from '../../lib/http';
-import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
 import { useEffect, useState } from 'react';
 
 type GetFriendCountsResponse = {

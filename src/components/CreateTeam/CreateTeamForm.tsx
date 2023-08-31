@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Stepper } from '../Stepper';
-import { Step0, ValidTeamType } from './Step0';
-import { Step1, ValidTeamSize } from './Step1';
+import { Step0, type ValidTeamType } from './Step0';
+import { Step1, type ValidTeamSize } from './Step1';
 import { Step2 } from './Step2';
 import { httpGet } from '../../lib/http';
 import { getUrlParams, setUrlParams } from '../../lib/browser';

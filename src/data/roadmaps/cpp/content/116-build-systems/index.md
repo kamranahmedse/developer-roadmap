@@ -6,7 +6,7 @@ A build system is a collection of tools and utilities that automate the process 
 
    Code example:
 
-   ```Makefile
+   ```
    # Makefile
    CXX = g++
    CPPFLAGS = -Wall -std=c++11
@@ -25,7 +25,7 @@ A build system is a collection of tools and utilities that automate the process 
 
    Code example:
 
-   ```CMake
+   ```
    # CMakeLists.txt
    cmake_minimum_required(VERSION 3.10)
    project(HelloWorld)

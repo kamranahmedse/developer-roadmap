@@ -188,7 +188,7 @@ export function FriendsPage() {
       {filteredFriends.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12">
           <img
-            src={UserIcon}
+            src={UserIcon.src}
             alt="Empty Friends"
             className="mb-3 w-12 opacity-20"
           />

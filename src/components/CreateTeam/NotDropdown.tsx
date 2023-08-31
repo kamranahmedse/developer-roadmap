@@ -39,7 +39,7 @@ export function NotDropdown(props: NotDropdownProps) {
 
       <img
         alt={singularName}
-        src={ChevronDownIcon}
+        src={ChevronDownIcon.src}
         className={'relative top-[1px] h-[17px] w-[17px] opacity-40'}
       />
     </div>

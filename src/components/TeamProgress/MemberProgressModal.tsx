@@ -8,8 +8,8 @@ import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import {
   renderTopicProgress,
-  ResourceProgressType,
-  ResourceType,
+  type ResourceProgressType,
+  type ResourceType,
   updateResourceProgress,
 } from '../../lib/resource-progress';
 import CloseIcon from '../../icons/close.svg';
@@ -413,7 +413,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
             }`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon} className="h-4 w-4" />
+            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
             <span className="sr-only">Close modal</span>
           </button>
         </div>

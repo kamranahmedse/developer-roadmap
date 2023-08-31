@@ -87,7 +87,7 @@ export function RespondInviteForm() {
       <div className="container text-center">
         <img
           alt={'error'}
-          src={ErrorIcon}
+          src={ErrorIcon.src}
           className="mx-auto mb-4 mt-24 w-20 opacity-20"
         />
 
@@ -112,7 +112,7 @@ export function RespondInviteForm() {
     <div className="container text-center">
       <img
         alt={'join team'}
-        src={BuildingIcon}
+        src={BuildingIcon.src}
         className="mx-auto mb-4 mt-24 w-20 opacity-20"
       />
 

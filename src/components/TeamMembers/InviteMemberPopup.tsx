@@ -1,8 +1,8 @@
-import { FormEvent, useEffect, useRef, useState } from 'react';
+import { type FormEvent, useEffect, useRef, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import { AllowedRoles, RoleDropdown } from '../CreateTeam/RoleDropdown';
+import { type AllowedRoles, RoleDropdown } from '../CreateTeam/RoleDropdown';
 
 type InviteMemberPopupProps = {
   onInvited: () => void;

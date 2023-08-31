@@ -1,4 +1,4 @@
-import {useEffect, useState} from 'react';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpDelete } from '../../lib/http';
 import { logout } from '../Navigation/navigation';
 
@@ -10,9 +10,9 @@ export function DeleteAccountForm() {
   useEffect(() => {
     setError('');
     setConfirmationText('');
-  }, [])
+  }, []);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -53,7 +53,7 @@ export function DeleteAccountForm() {
           type="text"
           name="delete-account"
           id="delete-account"
-          className="mt-2 block w-full rounded-md border border-gray-300 py-2 px-3 outline-none placeholder:text-gray-400 focus:border-gray-400"
+          className="mt-2 block w-full rounded-md border border-gray-300 px-3 py-2 outline-none placeholder:text-gray-400 focus:border-gray-400"
           placeholder={'Type "delete" to confirm'}
           required
           autoFocus

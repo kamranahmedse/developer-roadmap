@@ -45,22 +45,6 @@ export default defineConfig({
     format: 'file',
   },
   integrations: [
-    {
-      name: 'client-authenticated',
-      hooks: {
-        'astro:config:setup'(options) {
-          options.addClientDirective({
-            name: 'authenticated',
-            entrypoint: fileURLToPath(
-              new URL(
-                './src/directives/client-authenticated.mjs',
-                import.meta.url
-              )
-            ),
-          });
-        },
-      },
-    },
     tailwind({
       config: {
         applyBaseStyles: false,
@@ -71,6 +55,7 @@ export default defineConfig({
       serialize: serializeSitemap,
     }),
     compress({
+      HTML: false,
       CSS: false,
       JavaScript: false,
     }),

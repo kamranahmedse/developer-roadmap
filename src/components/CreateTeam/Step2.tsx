@@ -1,4 +1,4 @@
-import { RoadmapSelector, TeamResourceConfig } from './RoadmapSelector';
+import { RoadmapSelector, type TeamResourceConfig } from './RoadmapSelector';
 import type { TeamDocument } from './CreateTeamForm';
 
 type Step2Props = {

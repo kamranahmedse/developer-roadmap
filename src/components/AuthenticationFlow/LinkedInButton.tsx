@@ -86,10 +86,11 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
-          const pagePath =
-            ['/respond-invite', '/befriend'].includes(window.location.pathname)
-              ? window.location.pathname + window.location.search
-              : window.location.pathname;
+          const pagePath = ['/respond-invite', '/befriend'].includes(
+            window.location.pathname
+          )
+            ? window.location.pathname + window.location.search
+            : window.location.pathname;
 
           localStorage.setItem(LINKEDIN_REDIRECT_AT, Date.now().toString());
           localStorage.setItem(LINKEDIN_LAST_PAGE, pagePath);
@@ -111,7 +112,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         onClick={handleClick}
       >
         <img
-          src={icon as any}
+          src={icon.src}
           alt="Google"
           className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
         />

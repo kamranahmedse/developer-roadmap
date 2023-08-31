@@ -146,7 +146,7 @@ export function RoadCardPage() {
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
               onClick={() => copyText(badgeUrl.toString())}
             >
-              <img alt="Copy" src={CopyIcon} className="mr-1" />
+              <img alt="Copy" src={CopyIcon.src} className="mr-1" />
 
               {isCopied ? 'Copied!' : 'Copy Link'}
             </button>

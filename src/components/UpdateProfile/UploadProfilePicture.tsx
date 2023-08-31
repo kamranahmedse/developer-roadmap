@@ -1,5 +1,5 @@
 import Cookies from 'js-cookie';
-import { ChangeEvent, FormEvent, useEffect, useRef, useState } from 'react';
+import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 interface PreviewFile extends File {

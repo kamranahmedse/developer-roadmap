@@ -101,7 +101,7 @@ export function PageSponsor(props: PageSponsorProps) {
           sponsorHidden.set(true);
         }}
       >
-        <img alt="Close" className="h-4 w-4" src={CloseIcon as any} />
+        <img alt="Close" className="h-4 w-4" src={CloseIcon.src} />
       </span>
       <img
         src={imageUrl}

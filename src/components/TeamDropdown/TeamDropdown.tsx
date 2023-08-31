@@ -140,7 +140,7 @@ export function TeamDropdown() {
               {isLoading && 'Loading ..'}
             </span>
           </div>
-          <img alt={'show dropdown'} src={ChevronDown} className="h-4 w-4" />
+          <img alt={'show dropdown'} src={ChevronDown.src} className="h-4 w-4" />
         </button>
 
         {showDropdown && (
