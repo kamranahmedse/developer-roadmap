@@ -144,7 +144,7 @@ export function TeamVersions(props: TeamVersionsProps) {
           </span>
           <img
             alt="Dropdown"
-            src={DropdownIcon as any}
+            src={DropdownIcon.src}
             className="h-3 w-3 sm:h-4 sm:w-4"
           />
         </div>

@@ -91,14 +91,14 @@ export function NotificationPage() {
                 className="inline-flex border p-1 rounded hover:bg-gray-50 disabled:opacity-75"
                 onClick={() => respondInvitation('accept', notification?._id!)}
               >
-                <img src={AcceptIcon} className="h-4 w-4" />
+                <img src={AcceptIcon.src} className="h-4 w-4" />
               </button>
               <button type="button"
                 disabled={isLoading}
                 className="inline-flex border p-1 rounded hover:bg-gray-50 disabled:opacity-75"
                 onClick={() => respondInvitation('reject', notification?._id!)}
               >
-                <img src={XIcon} className="h-4 w-4" />
+                <img alt={'Close'} src={XIcon.src} className="h-4 w-4" />
               </button>
             </div>
           </div>

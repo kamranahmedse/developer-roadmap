@@ -1,5 +1,5 @@
-import VerifyLetterIcon from '../../icons/verify-letter.svg';
 import { useEffect, useState } from 'react';
+import VerifyLetterIcon from '../../icons/verify-letter.svg';
 import { httpPost } from '../../lib/http';
 
 export function VerificationEmailMessage() {
@@ -39,7 +39,7 @@ export function VerificationEmailMessage() {
     <div className="mx-auto max-w-md text-center">
       <img
         alt="Verify Email"
-        src={VerifyLetterIcon as any}
+        src={VerifyLetterIcon.src}
         className="mx-auto mb-4 h-20 w-40 sm:h-40"
       />
       <h2 className="my-2 text-center text-xl font-semibold sm:my-5 sm:text-2xl">

@@ -12,7 +12,7 @@
 
 The basic syntax for `pg_ctlcluster` is as follows:
 
-```text
+```
 pg_ctlcluster <version> <cluster name> <action> [<options>]
 ```
 

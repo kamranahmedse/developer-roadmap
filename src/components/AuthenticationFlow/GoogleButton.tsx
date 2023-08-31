@@ -111,7 +111,7 @@ export function GoogleButton(props: GoogleButtonProps) {
         onClick={handleClick}
       >
         <img
-          src={icon as any}
+          src={icon.src}
           alt="Google"
           className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
         />

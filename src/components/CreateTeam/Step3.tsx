@@ -1,7 +1,7 @@
 import type { TeamDocument } from './CreateTeamForm';
 import { NextButton } from './NextButton';
 import { TrashIcon } from '../ReactIcons/TrashIcon';
-import { AllowedRoles, RoleDropdown } from './RoleDropdown';
+import { type AllowedRoles, RoleDropdown } from './RoleDropdown';
 import { useEffect, useRef, useState } from 'react';
 import { httpPost } from '../../lib/http';
 

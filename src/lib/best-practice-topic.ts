@@ -64,19 +64,3 @@ export async function getAllBestPracticeTopicFiles(): Promise<
 
   return mapping;
 }
-
-/**
- * Gets the the topics for a given best practice
- *
- * @param bestPracticeId BestPractice id for which you want the topics
- *
- * @returns Promise<TopicFileType[]>
- */
-export async function getTopicsByBestPracticeId(
-  bestPracticeId: string
-): Promise<BestPracticeTopicFileType[]> {
-  const topicFileMapping = await getAllBestPracticeTopicFiles();
-  const allTopics = Object.values(topicFileMapping);
-
-  return allTopics.filter((topic) => topic.bestPracticeId === bestPracticeId);
-}

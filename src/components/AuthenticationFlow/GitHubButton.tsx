@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-
 import GitHubIcon from '../../icons/github.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import Cookies from 'js-cookie';
@@ -91,10 +90,11 @@ export function GitHubButton(props: GitHubButtonProps) {
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
-      const pagePath =
-        ['/respond-invite', '/befriend'].includes(window.location.pathname)
-          ? window.location.pathname + window.location.search
-          : window.location.pathname;
+      const pagePath = ['/respond-invite', '/befriend'].includes(
+        window.location.pathname
+      )
+        ? window.location.pathname + window.location.search
+        : window.location.pathname;
 
       localStorage.setItem(GITHUB_REDIRECT_AT, Date.now().toString());
       localStorage.setItem(GITHUB_LAST_PAGE, pagePath);
@@ -111,7 +111,7 @@ export function GitHubButton(props: GitHubButtonProps) {
         onClick={handleClick}
       >
         <img
-          src={icon as any}
+          src={icon.src}
           alt="GitHub"
           className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
         />

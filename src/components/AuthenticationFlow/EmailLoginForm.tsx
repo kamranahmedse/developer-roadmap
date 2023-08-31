@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
-const EmailLoginForm = () => {
+export function EmailLoginForm() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState('');
@@ -99,6 +99,4 @@ const EmailLoginForm = () => {
       </button>
     </form>
   );
-};
-
-export default EmailLoginForm;
+}

@@ -8,16 +8,21 @@ import UpcomingForm from '../../../components/UpcomingForm.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { UserProgressModal } from '../../../components/UserProgress/UserProgressModal';
 import {
+  type BestPracticeFileType,
   BestPracticeFrontmatter,
+  getAllBestPractices,
   getBestPracticeIds,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 
 export async function getStaticPaths() {
-  const bestPracticeIds = await getBestPracticeIds();
+  const bestPractices = await getAllBestPractices();
 
-  return bestPracticeIds.map((bestPracticeId) => ({
-    params: { bestPracticeId },
+  return bestPractices.map((bestPractice: BestPracticeFileType) => ({
+    params: { bestPracticeId: bestPractice.id },
+    props: {
+      bestPractice: bestPractice,
+    },
   }));
 }
 
@@ -25,12 +30,13 @@ interface Params extends Record<string, string | undefined> {
   bestPracticeId: string;
 }
 
+interface Props {
+  bestPractice: BestPracticeFileType;
+}
+
 const { bestPracticeId } = Astro.params as Params;
-const bestPracticeFile = await import(
-  `../../../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`
-);
-const bestPracticeData =
-  bestPracticeFile.frontmatter as BestPracticeFrontmatter;
+const { bestPractice } = Astro.props as Props;
+const bestPracticeData = bestPractice.frontmatter as BestPracticeFrontmatter;
 
 let jsonLdSchema = [];
 
@@ -78,7 +84,7 @@ if (bestPracticeData.schema) {
   <div class='bg-gray-50 py-4 sm:py-12'>
     {
       !bestPracticeData.isUpcoming && bestPracticeData.jsonUrl && (
-        <div class='container relative max-w-[1000px]'>
+        <div class='container relative !max-w-[1000px]'>
           <ShareIcons
             description={bestPracticeData.briefDescription}
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
@@ -98,7 +104,7 @@ if (bestPracticeData.schema) {
     {
       !bestPracticeData.isUpcoming && !bestPracticeData.jsonUrl && (
         <MarkdownFile>
-          <bestPracticeFile.Content />
+          <bestPractice.Content />
         </MarkdownFile>
       )
     }
@@ -107,7 +113,7 @@ if (bestPracticeData.schema) {
   <UserProgressModal
     resourceId={bestPracticeId}
     resourceType='best-practice'
-    client:only="react"
+    client:only='react'
   />
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}

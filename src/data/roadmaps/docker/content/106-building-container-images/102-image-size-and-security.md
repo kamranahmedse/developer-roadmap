@@ -46,7 +46,7 @@ When building container images, it's essential to be aware of both image size an
 
 - **Use `.dockerignore` file:** Use a `.dockerignore` file to exclude unnecessary files from the build context that might cause cache invalidation and increase the final image size.
 
-    ```dockerignore
+    ```
     node_modules
     npm-debug.log
     ```

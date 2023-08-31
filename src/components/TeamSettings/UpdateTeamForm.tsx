@@ -1,4 +1,4 @@
-import { FormEvent, useEffect, useState } from 'react';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPut } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
@@ -9,7 +9,6 @@ import { DeleteTeamPopup } from '../DeleteTeamPopup';
 import { $isCurrentTeamAdmin } from '../../stores/team';
 import { useStore } from '@nanostores/react';
 import { useToast } from '../../hooks/use-toast';
-
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -25,8 +24,6 @@ export function UpdateTeamForm() {
   const [gitHub, setGitHub] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
-  const [roadmaps, setRoadmaps] = useState<string[]>([]);
-  const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = [
     '0-1',
     '2-10',

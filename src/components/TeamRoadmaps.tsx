@@ -188,7 +188,7 @@ export function TeamRoadmaps() {
         {addRoadmapModal}
         <img
           alt="roadmap"
-          src={RoadmapIcon}
+          src={RoadmapIcon.src}
           className="mb-4 h-24 w-24 opacity-10"
         />
         <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
@@ -259,7 +259,7 @@ export function TeamRoadmaps() {
 
                   <img
                     alt={'link'}
-                    src={ExternalLinkIcon}
+                    src={ExternalLinkIcon.src}
                     className="ml-2 h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
                   />
                 </a>
@@ -332,7 +332,7 @@ export function TeamRoadmaps() {
           >
             <img
               alt="add"
-              src={PlusIcon}
+              src={PlusIcon.src}
               className="mb-1 h-6 w-6 opacity-20 transition-opacity group-hover:opacity-100"
             />
             <span className="text-sm text-gray-400 transition-colors focus:outline-none group-hover:text-black">
