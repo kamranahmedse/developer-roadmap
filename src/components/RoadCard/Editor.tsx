@@ -34,9 +34,8 @@ export function Editor(props: EditorProps) {
           e.target.select();
           copyText(e.target.value);
         }}
-      >
-        {text}
-      </textarea>
+        value={text}
+      />
     </div>
   );
 }

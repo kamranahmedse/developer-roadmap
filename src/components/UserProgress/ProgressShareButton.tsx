@@ -3,6 +3,7 @@ import { useCopyText } from '../../hooks/use-copy-text';
 import type { ResourceType } from '../../lib/resource-progress';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ShareIcon } from '../ReactIcons/ShareIcon';
+import { isLoggedIn } from '../../lib/jwt';
 
 type ProgressShareButtonProps = {
   resourceId: string;

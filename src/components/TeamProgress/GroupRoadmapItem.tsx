@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import type { GroupByRoadmap, TeamMember } from './TeamProgressPage';
 import { getUrlParams } from '../../lib/browser';
 import ExternalLinkIcon from '../../icons/external-link.svg';

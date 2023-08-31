@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
-import { httpPost, httpPut } from '../../lib/http';
+import { FormEvent, useRef, useState } from 'react';
+import { httpPut } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { AllowedRoles, RoleDropdown } from '../CreateTeam/RoleDropdown';
@@ -20,7 +20,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
   const [error, setError] = useState('');
   const { teamId } = useTeamId();
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -52,19 +52,21 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div class="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+      <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
-          class="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow"
         >
-          <h3 class="mb-1.5 text-xl sm:text-2xl font-medium">Update Role</h3>
-          <p className="mb-3 text-sm leading-none text-gray-400 hidden sm:block">
+          <h3 className="mb-1.5 text-xl font-medium sm:text-2xl">
+            Update Role
+          </h3>
+          <p className="mb-3 hidden text-sm leading-none text-gray-400 sm:block">
             Select the role to update for this member
           </p>
 
           <form onSubmit={handleSubmit}>
-            <div className="mt-0 sm:mt-4 my-4 flex flex-col gap-2">
+            <div className="my-4 mt-0 flex flex-col gap-2 sm:mt-4">
               <span className="mt-2 block w-full rounded-md bg-gray-100 p-2">
                 {member.invitedEmail}
               </span>
@@ -96,7 +98,7 @@ export function UpdateMemberPopup(props: InviteMemberPopupProps) {
               <button
                 type="submit"
                 disabled={isLoading || !selectedRole}
-                class="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
+                className="flex-grow cursor-pointer rounded-lg bg-black py-2 text-center text-white disabled:opacity-40"
               >
                 {isLoading ? 'Please wait ..' : 'Update Role'}
               </button>

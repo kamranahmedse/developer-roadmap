@@ -1,5 +1,5 @@
 import { getUrlParams } from '../lib/browser';
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import type { TeamResourceConfig } from './CreateTeam/RoadmapSelector';
 import { httpGet, httpPut } from '../lib/http';
@@ -9,7 +9,7 @@ import RoadmapIcon from '../icons/roadmap.svg';
 import PlusIcon from '../icons/plus.svg';
 import type { PageType } from './CommandMenu/CommandMenu';
 import { UpdateTeamResourceModal } from './CreateTeam/UpdateTeamResourceModal';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { $canManageCurrentTeam } from '../stores/team';
 import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
@@ -248,7 +248,7 @@ export function TeamRoadmaps() {
             '...';
 
           return (
-            <div className="flex flex-col items-start rounded-md border border-gray-300">
+            <div key={resourceId} className="flex flex-col items-start rounded-md border border-gray-300">
               <div className={'w-full px-3 py-4'}>
                 <a
                   href={`/${resourceId}?t=${teamId}`}

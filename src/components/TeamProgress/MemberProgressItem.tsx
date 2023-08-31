@@ -1,5 +1,5 @@
 import type { TeamMember } from './TeamProgressPage';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 
 type MemberProgressItemProps = {
   member: TeamMember;
@@ -29,7 +29,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                 : '/images/default-avatar.png'
             }
             alt={member.name || ''}
-            className="h-8 w-8 rounded-full"
+            className="min-w-[32px] min-h-[32px] h-8 w-8 rounded-full"
           />
           <div className="inline-grid w-full">
             {!isMyProgress && (

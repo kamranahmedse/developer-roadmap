@@ -1,4 +1,4 @@
-import { useRef, useState } from 'preact/hooks';
+import { useRef, useState } from 'react';
 import type { TeamMemberDocument } from './TeamMembersPage';
 import MoreIcon from '../../icons/more-vertical.svg';
 import { useOutsideClick } from '../../hooks/use-outside-click';

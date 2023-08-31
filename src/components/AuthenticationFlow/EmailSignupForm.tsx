@@ -1,5 +1,5 @@
 import type { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 
 const EmailSignupForm: FunctionComponent = () => {

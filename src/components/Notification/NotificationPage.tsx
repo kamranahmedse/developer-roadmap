@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpGet, httpPatch, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamMemberDocument } from '../TeamMembers/TeamMembersPage';
@@ -62,7 +62,7 @@ export function NotificationPage() {
 
   return (
     <div>
-      <div class="mb-8 hidden md:block">
+      <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Notification</h2>
         <p className="mt-2 text-gray-400">Manage your notifications</p>
       </div>

@@ -44,7 +44,7 @@ export function ProgressList(props: ProgressListProps) {
               <span className="relative z-20">{resource.resourceTitle}</span>
 
               <span
-                class="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
+                className="absolute bottom-0 left-0 top-0 z-10 bg-[#172a3a]"
                 style={{ width: `${percentageDone}%` }}
               ></span>
               <MarkFavorite

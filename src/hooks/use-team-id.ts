@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 export function useTeamId() {
   const [teamId, setTeamId] = useState<string | null>(null);

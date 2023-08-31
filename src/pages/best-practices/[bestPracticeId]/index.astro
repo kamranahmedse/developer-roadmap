@@ -47,8 +47,6 @@ if (bestPracticeData.schema) {
     })
   );
 }
-
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/best-practices/${bestPracticeId}/content`;
 ---
 
 <BaseLayout
@@ -109,7 +107,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
   <UserProgressModal
     resourceId={bestPracticeId}
     resourceType='best-practice'
-    client:only
+    client:only="react"
   />
 
   {bestPracticeData.isUpcoming && <UpcomingForm />}

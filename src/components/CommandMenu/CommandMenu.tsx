@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import BestPracticesIcon from '../../icons/best-practices.svg';
@@ -158,12 +158,12 @@ export function CommandMenu() {
         <div className="relative rounded-lg bg-white shadow" ref={modalRef}>
           <input
             ref={inputRef}
-            autofocus={true}
+            autoFocus={true}
             type="text"
             value={searchedText}
             className="w-full rounded-t-md border-b p-4 text-sm focus:bg-gray-50 focus:outline-none"
             placeholder="Search roadmaps, guides or pages .."
-            autocomplete="off"
+            autoComplete="off"
             onInput={(e) => {
               const value = (e.target as HTMLInputElement).value.trim();
               setSearchedText(value);
@@ -191,39 +191,43 @@ export function CommandMenu() {
             }}
           />
 
-          <div class="px-2 py-2">
+          <div className="px-2 py-2">
             <div className="flex flex-col">
               {searchResults.length === 0 && (
-                <div class="p-5 text-center text-sm text-gray-400">
+                <div className="p-5 text-center text-sm text-gray-400">
                   No results found
                 </div>
               )}
 
-              {searchResults.map((page, counter) => {
+              {searchResults.map((page: PageType, counter: number) => {
                 const prevPage = searchResults[counter - 1];
                 const groupChanged = prevPage && prevPage.group !== page.group;
 
                 return (
-                  <>
+                  <Fragment key={page.id}>
                     {groupChanged && (
-                      <div class="border-b border-gray-100"></div>
+                      <div className="border-b border-gray-100"></div>
                     )}
                     <a
-                      class={`flex w-full items-center rounded p-2 text-sm ${
+                      className={`flex w-full items-center rounded p-2 text-sm ${
                         counter === activeCounter ? 'bg-gray-100' : ''
                       }`}
                       onMouseOver={() => setActiveCounter(counter)}
                       href={page.url}
                     >
                       {!page.icon && (
-                        <span class="mr-2 text-gray-400">{page.group}</span>
+                        <span className="mr-2 text-gray-400">{page.group}</span>
                       )}
                       {page.icon && (
-                        <img alt={page.title} src={page.icon} class="mr-2 h-4 w-4" />
+                        <img
+                          alt={page.title}
+                          src={page.icon as any}
+                          className="mr-2 h-4 w-4"
+                        />
                       )}
                       {page.title}
                     </a>
-                  </>
+                  </Fragment>
                 );
               })}
             </div>

@@ -1,5 +1,5 @@
 import { ChevronDownIcon } from '../ReactIcons/ChevronDownIcon';
-import { useRef, useState } from 'preact/hooks';
+import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 
 const allowedRoles = [

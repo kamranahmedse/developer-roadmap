@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { LeaveTeamPopup } from './LeaveTeamPopup';
 
 type LeaveTeamButtonProps = {

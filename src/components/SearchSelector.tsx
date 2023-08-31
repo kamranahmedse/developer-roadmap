@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 
 export type OptionType = {
   value: string;
@@ -118,12 +118,12 @@ export function SearchSelector({
 
       {isActive && (
         <div
-          class="absolute top-full z-50 mt-2 w-full rounded-md bg-gray-100 px-2 py-2"
+          className="absolute top-full z-50 mt-2 w-full rounded-md bg-gray-100 px-2 py-2"
           ref={dropdownRef}
         >
           <div className="flex flex-col">
             {searchResults.length === 0 && (
-              <div class="p-5 text-center text-sm text-gray-400">
+              <div className="p-5 text-center text-sm text-gray-400">
                 No results found
               </div>
             )}
@@ -133,7 +133,7 @@ export function SearchSelector({
                 <>
                   <button
                     type="button"
-                    class={`flex w-full items-center rounded p-2 text-sm ${
+                    className={`flex w-full items-center rounded p-2 text-sm ${
                       counter === activeCounter ? 'bg-gray-200' : ''
                     }`}
                     onMouseOver={() => setActiveCounter(counter)}

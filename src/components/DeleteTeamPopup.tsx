@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { httpDelete } from '../lib/http';
 import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import { useTeamId } from '../hooks/use-team-id';
@@ -69,18 +69,18 @@ export function DeleteTeamPopup(props: DeleteTeamPopupProps) {
 
   return (
     <>
-      <div class="fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-        <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+      <div className="fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+        <div className="relative h-full w-full max-w-md p-4 md:h-auto">
           <div
             ref={popupBodyEl}
-            class="popup-body relative rounded-lg bg-white p-4 shadow"
+            className="popup-body relative rounded-lg bg-white p-4 shadow"
           >
-            <h2 class="text-2xl font-semibold text-black">Delete Team</h2>
+            <h2 className="text-2xl font-semibold text-black">Delete Team</h2>
             <p className="text-gray-500">
               This will permanently delete your team and all associated data.
             </p>
 
-            <p class="-mb-2 mt-3 text-base font-medium text-black">
+            <p className="-mb-2 mt-3 text-base font-medium text-black">
               Please type "delete" to confirm.
             </p>
             <form onSubmit={handleSubmit}>

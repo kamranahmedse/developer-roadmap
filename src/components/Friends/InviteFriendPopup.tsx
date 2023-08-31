@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'preact/hooks';
+import { useEffect, useRef } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import CopyIcon from '../../icons/copy.svg';
 import { useCopyText } from '../../hooks/use-copy-text';
@@ -22,13 +22,13 @@ export function InviteFriendPopup(props: InviteFriendPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div class="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+      <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
-          class="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow"
         >
-          <h3 class="mb-1.5 text-xl font-medium sm:text-2xl">Invite URL</h3>
+          <h3 className="mb-1.5 text-xl font-medium sm:text-2xl">Invite URL</h3>
           <p className="mb-3 hidden text-sm leading-none text-gray-400 sm:block">
             Share the link below with your friends to invite them.
           </p>
@@ -44,7 +44,7 @@ export function InviteFriendPopup(props: InviteFriendPopupProps) {
               }}
             />
             <button
-              class={`flex items-center justify-center gap-1 rounded-md border-0 px-3 py-2.5 text-sm text-black ${
+              className={`flex items-center justify-center gap-1 rounded-md border-0 px-3 py-2.5 text-sm text-black ${
                 isCopied
                   ? 'bg-green-300 hover:bg-green-300'
                   : 'bg-gray-200 hover:bg-gray-300'

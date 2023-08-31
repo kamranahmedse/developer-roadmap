@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { httpDelete } from '../../lib/http';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -59,13 +59,13 @@ export function LeaveTeamPopup(props: LeaveTeamPopupProps) {
   useOutsideClick(popupBodyRef, handleClosePopup);
 
   return (
-    <div class="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div class="relative h-full w-full max-w-md p-4 md:h-auto">
+    <div className="popup fixed left-0 right-0 top-0 z-50 flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+      <div className="relative h-full w-full max-w-md p-4 md:h-auto">
         <div
           ref={popupBodyRef}
-          class="popup-body relative rounded-lg bg-white p-4 shadow"
+          className="popup-body relative rounded-lg bg-white p-4 shadow"
         >
-          <h2 class="text-2xl font-semibold text-black">
+          <h2 className="text-2xl font-semibold text-black">
             Leave Team
           </h2>
           <p className="text-gray-500">

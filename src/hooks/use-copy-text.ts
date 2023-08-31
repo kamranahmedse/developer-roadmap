@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 
 export function useCopyText() {
   const [isCopied, setIsCopied] = useState(false);

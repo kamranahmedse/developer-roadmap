@@ -29,7 +29,7 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
   <MarkFavorite
     resourceId={url.split('/').pop()!}
     resourceType={url.includes('best-practices') ? 'best-practice' : 'roadmap'}
-    client:load
+    client:only="react"
   />
 
   {

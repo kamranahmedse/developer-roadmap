@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import ChevronDown from '../icons/dropdown.svg';
 import { httpGet } from '../lib/http';
 import { useTeamId } from '../hooks/use-team-id';
@@ -33,7 +33,7 @@ export function TeamsList() {
   }, []);
 
   return (
-    <div className="relative max-w-[500px] mx-auto">
+    <div className="relative mx-auto max-w-[500px]">
       <div className="w-full px-2 py-2">
         <div className={'mb-8 hidden md:block'}>
           <h2 className={'text-3xl font-bold sm:text-4xl'}>Teams</h2>
@@ -41,7 +41,7 @@ export function TeamsList() {
             Here are the teams you are part of
           </p>
         </div>
-        <ul class="mb-3 flex flex-col gap-1">
+        <ul className="mb-3 flex flex-col gap-1">
           <li>
             <a
               className="flex w-full cursor-pointer items-center justify-between gap-2 truncate rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
@@ -65,7 +65,7 @@ export function TeamsList() {
             </a>
           </li>
           {teamList.map((team) => (
-            <li>
+            <li key={team._id}>
               <a
                 className="flex w-full cursor-pointer items-center justify-between gap-2 rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
                 href={`/team/progress?t=${team._id}`}
@@ -93,7 +93,7 @@ export function TeamsList() {
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
           href="/team/new"
         >
-          <span class='mr-2'>+</span>
+          <span className="mr-2">+</span>
           <span>New Team</span>
         </a>
       </div>

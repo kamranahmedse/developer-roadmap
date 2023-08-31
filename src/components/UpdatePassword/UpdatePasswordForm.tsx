@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 
@@ -13,7 +13,7 @@ export default function UpdatePasswordForm() {
 
   const [isLoading, setIsLoading] = useState(true);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -78,15 +78,17 @@ export default function UpdatePasswordForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div class="hidden md:block mb-8">
+      <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Password</h2>
-        <p className="mt-2 text-gray-400">Use the form below to update your password.</p>
+        <p className="mt-2 text-gray-400">
+          Use the form below to update your password.
+        </p>
       </div>
       <div className="space-y-4">
         {authProvider === 'email' && (
           <div className="flex w-full flex-col">
             <label
-              for="current-password"
+              htmlFor="current-password"
               className="text-sm leading-none text-slate-500"
             >
               Current Password
@@ -96,6 +98,7 @@ export default function UpdatePasswordForm() {
               type="password"
               name="current-password"
               id="current-password"
+              autoComplete={"current-password"}
               className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-100"
               required
               minLength={6}
@@ -110,7 +113,7 @@ export default function UpdatePasswordForm() {
 
         <div className="flex w-full flex-col">
           <label
-            for="new-password"
+            htmlFor="new-password"
             className="text-sm leading-none text-slate-500"
           >
             New Password
@@ -119,6 +122,7 @@ export default function UpdatePasswordForm() {
             type="password"
             name="new-password"
             id="new-password"
+            autoComplete={"new-password"}
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
@@ -131,7 +135,7 @@ export default function UpdatePasswordForm() {
         </div>
         <div className="flex w-full flex-col">
           <label
-            for="new-password-confirmation"
+            htmlFor="new-password-confirmation"
             className="text-sm leading-none text-slate-500"
           >
             Confirm New Password
@@ -141,6 +145,7 @@ export default function UpdatePasswordForm() {
             name="new-password-confirmation"
             id="new-password-confirmation"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            autoComplete={"new-password"}
             required
             minLength={6}
             placeholder="Confirm New Password"
@@ -152,11 +157,11 @@ export default function UpdatePasswordForm() {
         </div>
 
         {error && (
-          <p class="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
+          <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
         )}
 
         {success && (
-          <p class="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
+          <p className="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
             {success}
           </p>
         )}

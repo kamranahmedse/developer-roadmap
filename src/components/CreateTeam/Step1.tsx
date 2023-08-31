@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
+import { useEffect, useRef, useState } from 'react';
 import { AppError, httpPost, httpPut } from '../../lib/http';
 import type { ValidTeamType } from './Step0';
 import type { TeamDocument } from './CreateTeamForm';
@@ -133,7 +133,7 @@ export function Step1(props: Step1Props) {
           type="text"
           name="name"
           ref={nameRef as any}
-          autofocus={true}
+          autoFocus={true}
           id="name"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="Roadmap Inc."
