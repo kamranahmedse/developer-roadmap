@@ -4,6 +4,7 @@ import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Footer from '../../components/Footer.astro';
 import AstroIcon from "../../components/AstroIcon.astro";
+import { QuestionsList } from '../../components/Questions/QuestionsList';
 
 export async function getStaticPaths() {
   return [
@@ -34,74 +35,7 @@ export async function getStaticPaths() {
         </p>
       </div>
 
-      <div class='gap-3 text-center mb-40'>
-        <!-- Progress bar -->
-        <div class='mb-5 rounded-lg border border-gray-300 p-6 bg-white'>
-          <div class='mb-3 flex items-center text-gray-600'>
-            <div class='relative w-full flex-1 rounded-xl bg-gray-200 p-1'>
-              <div
-                class='absolute bottom-0 left-0 top-0 w-[30%] rounded-xl bg-slate-800'
-              >
-              </div>
-            </div>
-            <span class='ml-3 text-sm'>5 / 100</span>
-          </div>
-
-          <div
-            class='relative -left-1 flex flex-col gap-2 text-sm text-black sm:flex-row sm:gap-3'
-          >
-            <span class='flex items-center'>
-              <AstroIcon icon='check-current' class='h-3 text-gray-800 mr-1.5' />
-              <span>Already knew</span>
-              <span class='bg-gray-200/80 px-1.5 rounded-md ml-2 text-black font-medium'>44 Questions</span>
-            </span>
-
-            <span class='flex items-center'>
-              <AstroIcon icon='question' class='h-4 mr-1.5' />
-              <span>Didn't Know</span>
-              <span class='bg-gray-200/80 px-1.5 rounded-md ml-2 text-black font-medium'>20 Questions</span>
-            </span>
-
-            <button class='flex items-center text-red-600 hover:text-red-900'>
-              <AstroIcon icon='reset' class='h-3 sm:h-4' />
-              <span class='ml-0.5 sm:ml-1'>Reset Progress</span>
-            </button>
-          </div>
-        </div>
-
-        <div class='relative mb-4 h-[400px] w-full overflow-hidden rounded-lg bg-white border border-gray-300'>
-          <div
-            class='flex h-full w-full items-center justify-center'
-          >
-            <p class='animate-pulse text-2xl text-black duration-100'>
-              Please wait ..
-            </p>
-          </div>
-        </div>
-
-        <div class='flex flex-col gap-3 sm:flex-row'>
-          <button
-            class='flex flex-1 items-center rounded-xl bg-white border border-gray-300 py-3 px-4 text-black transition-colors hover:bg-black hover:border-black hover:text-white'
-          >
-            <AstroIcon icon='check-current' class='mr-2 h-4 text-current' />
-            Already Know that
-          </button>
-          <button
-            data-next-question='dont-know'
-            class='flex flex-1 items-center rounded-xl bg-white border border-gray-300 py-3 px-4 text-black transition-colors hover:bg-black hover:border-black hover:text-white'
-          >
-            <AstroIcon icon='bulb' class='mr-2 h-5 text-current' />
-            Didn't Know that
-          </button>
-          <button
-            data-next-question='skip'
-            class='flex flex-1 items-center rounded-xl border border-red-600 p-3 text-red-600 hover:bg-red-600 hover:text-white'
-          >
-            <AstroIcon icon='skip' class='mr-2 h-4' />
-            Skip Question
-          </button>
-        </div>
-      </div>
+      <QuestionsList client:load />
     </div>
   </div>
 
