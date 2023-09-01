@@ -13,7 +13,7 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
