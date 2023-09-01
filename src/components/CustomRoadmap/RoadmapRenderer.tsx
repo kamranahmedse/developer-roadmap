@@ -22,6 +22,8 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   return { nodeId, nodeType, targetGroup };
 }
 
+const allowedNodeTypes = ['topic', 'subtopic', 'button']
+
 export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapRef = useRef<HTMLDivElement>(null);
@@ -29,21 +31,39 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const handleSvgClick = useCallback((e: MouseEvent) => {
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType) return;
+    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) return;
 
-    console.log(`Clicked on node ${nodeId} of type ${nodeType}`);
+    if (nodeType === 'button') {
+      const link = targetGroup?.dataset?.link || '';
+      const isExternalLink = link.startsWith('http');
+      if (isExternalLink) {
+        window.open(link, '_blank');
+      } else {
+        window.location.href = link;
+      }
+      return;
+    }
 
     if (e.shiftKey) {
       e.preventDefault();
       console.log(`Shift clicked on node ${nodeId} of type ${nodeType}`);
       return;
-    }
-
-    if (e.altKey) {
+    } else if (e.altKey) {
       e.preventDefault();
       console.log(`Alt clicked on node ${nodeId} of type ${nodeType}`);
       return;
     }
+
+    window.dispatchEvent(
+      new CustomEvent('roadmap.node.click', {
+        detail: {
+          topicId: nodeId,
+          resourceId: roadmap?._id,
+          resourceType: 'roadmap',
+          isCustomRoadmap: true,
+        },
+      })
+    );
   }, []);
 
   const handleSvgRightClick = useCallback((e: MouseEvent) => {
@@ -57,17 +77,14 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   }, []);
 
   useEffect(() => {
-    const roadmapEl = roadmapRef.current;
-    if (!roadmapEl) return;
-
-    roadmapEl.addEventListener('click', handleSvgClick);
-    roadmapEl.addEventListener('contextmenu', handleSvgRightClick);
+    window.addEventListener('click', handleSvgClick);
+    window.addEventListener('contextmenu', handleSvgRightClick);
 
     return () => {
-      roadmapEl.removeEventListener('click', handleSvgClick);
-      roadmapEl.removeEventListener('contextmenu', handleSvgRightClick);
+      window.removeEventListener('click', handleSvgClick);
+      window.removeEventListener('contextmenu', handleSvgRightClick);
     };
-  }, [roadmapRef.current]);
+  }, []);
 
   return (
     <div className="bg-gray-50 pb-8 pt-4 sm:pt-12">

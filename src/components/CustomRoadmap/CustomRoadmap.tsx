@@ -4,6 +4,7 @@ import { getUrlParams } from '../../lib/browser';
 import { httpGet } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { RoadmapRenderer } from './RoadmapRenderer';
+import { TopicDetail } from '../TopicDetail/TopicDetail';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -24,6 +25,22 @@ export interface RoadmapDocument {
   edges: any[];
   createdAt: Date;
   updatedAt: Date;
+}
+
+export const allowedLinkTypes = ["video", "article", "opensource", "course", "website", "podcast"] as const;
+export type AllowedLinkTypes = (typeof allowedLinkTypes)[number];
+export interface RoadmapContentDocument {
+  _id?: string;
+  roadmapId: string;
+  nodeId: string;
+  title: string;
+  description: string;
+  links: {
+    id: string;
+    type: AllowedLinkTypes;
+    title: string;
+    url: string;
+  }[];
 }
 
 function hideLoader() {
@@ -74,6 +91,8 @@ export function CustomRoadmap() {
         roadmapId={roadmap?._id!}
       />
       <RoadmapRenderer roadmap={roadmap!} />
+
+      <TopicDetail />
     </>
   );
 }

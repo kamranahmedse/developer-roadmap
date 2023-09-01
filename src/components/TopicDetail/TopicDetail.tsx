@@ -20,6 +20,8 @@ import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
+import type { RoadmapContentDocument } from '../CustomRoadmap/CustomRoadmap';
+import { markdownToHtml } from '../../lib/markdown';
 
 export function TopicDetail() {
   const [contributionAlertMessage, setContributionAlertMessage] = useState('');
@@ -89,7 +91,7 @@ export function TopicDetail() {
   });
 
   // Load the topic detail when the topic detail is active
-  useLoadTopic(({ topicId, resourceType, resourceId }) => {
+  useLoadTopic(({ topicId, resourceType, resourceId, isCustomRoadmap }) => {
     setIsLoading(true);
     setIsActive(true);
     sponsorHidden.set(true);
@@ -100,18 +102,24 @@ export function TopicDetail() {
     setResourceId(resourceId);
 
     const topicPartial = topicId.replaceAll(':', '/');
-    const topicUrl =
+    let topicUrl =
       resourceType === 'roadmap'
         ? `/${resourceId}/${topicPartial}`
         : `/best-practices/${resourceId}/${topicPartial}`;
 
-    httpGet<string>(
+    if (isCustomRoadmap) {
+      topicUrl = `${import.meta.env.PUBLIC_API_URL}/v1-get-node-content/${resourceId}/${topicId}`
+    }
+
+    httpGet<string | RoadmapContentDocument>(
       topicUrl,
       {},
       {
-        headers: {
-          Accept: 'text/html',
-        },
+        ...(!isCustomRoadmap && {
+          headers: {
+            Accept: 'text/html',
+          },
+        })
       }
     )
       .then(({ response }) => {
@@ -119,11 +127,15 @@ export function TopicDetail() {
           setError('Topic not found.');
           return;
         }
-
-        // It's full HTML with page body, head etc.
-        // We only need the inner HTML of the #main-content
-        const node = new DOMParser().parseFromString(response, 'text/html');
-        const topicHtml = node?.getElementById('main-content')?.outerHTML || '';
+        let topicHtml = '';
+        if (!isCustomRoadmap) {
+          // It's full HTML with page body, head etc.
+          // We only need the inner HTML of the #main-content
+          const node = new DOMParser().parseFromString(response as string, 'text/html');
+          topicHtml = node?.getElementById('main-content')?.outerHTML || '';
+        } else {
+          topicHtml = markdownToHtml((response as RoadmapContentDocument)?.description || '', false);
+        }
 
         setIsLoading(false);
         setTopicHtml(topicHtml);
