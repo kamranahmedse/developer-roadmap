@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { httpGet, httpPost } from './http';
 import { TOKEN_COOKIE_NAME } from './jwt';
+// @ts-ignore
 import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
@@ -205,19 +206,13 @@ export function topicSelectorAll(
       }
     });
 
-  // Elements with exact match of the topic id
-  parentElement
-    .querySelectorAll(`[data-group-id="${topicId}"]`)
-    .forEach((element) => {
-      matchingElements.push(element);
-    });
-
-  // Matching "check:XXXX" box of the topic
-  parentElement
-    .querySelectorAll(`[data-group-id="check:${topicId}"]`)
-    .forEach((element) => {
-      matchingElements.push(element);
-    });
+  getMatchingElements([
+    `[data-group-id="${topicId}"]`, // Elements with exact match of the topic id
+    `[data-group-id="check:${topicId}"]`, // Matching "check:XXXX" box of the topic
+    `[data-node-id="${topicId}"]`, // Matching custom roadmap nodes
+  ]).forEach((element) => {
+    matchingElements.push(element);
+  });
 
   return matchingElements;
 }
@@ -253,8 +248,12 @@ export function renderTopicProgress(
 }
 
 export function clearResourceProgress() {
-  const clickableElements = document.querySelectorAll('.clickable-group');
-  for (const clickableElement of clickableElements) {
+  const matchingElements = getMatchingElements([
+    '.clickable-group',
+    '[data-type="topic"]',
+    '[data-type="subtopic"]',
+  ]);
+  for (const clickableElement of matchingElements) {
     clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
   }
 }
@@ -284,6 +283,16 @@ export async function renderResourceProgress(
   refreshProgressCounters();
 }
 
+function getMatchingElements(quries: string[]): Element[] {
+  const matchingElements: Element[] = [];
+  quries.forEach((query) => {
+    document.querySelectorAll(query).forEach((element) => {
+      matchingElements.push(element);
+    });
+  });
+  return matchingElements;
+}
+
 export function refreshProgressCounters() {
   const progressNumsContainers = document.querySelectorAll(
     '[data-progress-nums-container]'
@@ -293,7 +302,12 @@ export function refreshProgressCounters() {
     return;
   }
 
-  const totalClickable = document.querySelectorAll('.clickable-group').length;
+  const totalClickable = getMatchingElements([
+    '.clickable-group',
+    '[data-type="topic"]',
+    '[data-type="subtopic"]',
+  ]).length;
+
   const externalLinks = document.querySelectorAll(
     '[data-group-id^="ext_link:"]'
   ).length;
@@ -324,15 +338,18 @@ export function refreshProgressCounters() {
     checkBoxes -
     totalRemoved;
 
-  const totalDone =
-    document.querySelectorAll('.clickable-group.done:not([data-group-id^="ext_link:"])').length -
-    totalCheckBoxesDone;
-  const totalLearning =
-    document.querySelectorAll('.clickable-group.learning').length -
-    totalCheckBoxesLearning;
-  const totalSkipped =
-    document.querySelectorAll('.clickable-group.skipped').length -
-    totalCheckBoxesSkipped;
+  const totalDone = getMatchingElements([
+    '.clickable-group.done:not([data-group-id^="ext_link:"])',
+    '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
+  ]).length - totalCheckBoxesDone;
+  const totalLearning = getMatchingElements([
+    '.clickable-group.learning',
+    '[data-node-id].learning',
+  ]).length - totalCheckBoxesLearning;
+  const totalSkipped = getMatchingElements([
+    '.clickable-group.skipped',
+    '[data-node-id].skipped',
+  ]).length - totalCheckBoxesSkipped;
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {

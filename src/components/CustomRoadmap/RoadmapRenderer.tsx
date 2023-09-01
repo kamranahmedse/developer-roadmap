@@ -16,7 +16,7 @@ type RoadmapNodeDetails = {
 function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   const targetGroup = (svgElement?.closest('g') as SVGElement) || {};
 
-  const nodeId = targetGroup?.dataset?.id;
+  const nodeId = targetGroup?.dataset?.nodeId;
   const nodeType = targetGroup?.dataset?.type;
   if (!nodeId || !nodeType) return null;
 
