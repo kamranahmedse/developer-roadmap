@@ -53,30 +53,27 @@ export async function getStaticPaths() {
             <span class='flex items-center'>
               <AstroIcon icon='check-current' class='h-3 text-gray-800 mr-1.5' />
               <span>Already knew</span>
-              <span class='ml-2 text-gray-400'>44 <span class='sm:inline hidden'>Questions</span></span
-              >
+              <span class='bg-gray-200/80 px-1.5 rounded-md ml-2 text-black font-medium'>44 Questions</span>
             </span>
 
             <span class='flex items-center'>
               <AstroIcon icon='question' class='h-4 mr-1.5' />
-              Didn't Know
-              <span class='ml-2 text-gray-500'
-                >20 <span class='sm:inline hidden'>Questions</span></span
-              >
+              <span>Didn't Know</span>
+              <span class='bg-gray-200/80 px-1.5 rounded-md ml-2 text-black font-medium'>20 Questions</span>
             </span>
 
-            <button class='flex items-center text-red-500 hover:text-red-400'>
-              <AstroIcon icon='reset' class='h-3 sm:h-4 text-red-400' />
-              <span class='ml-0.5 sm:ml-1'>Restart Progress</span>
+            <button class='flex items-center text-red-600 hover:text-red-900'>
+              <AstroIcon icon='reset' class='h-3 sm:h-4' />
+              <span class='ml-0.5 sm:ml-1'>Reset Progress</span>
             </button>
           </div>
         </div>
 
-        <div class='relative mb-4 h-[400px] w-full overflow-hidden rounded-2xl'>
+        <div class='relative mb-4 h-[400px] w-full overflow-hidden rounded-lg bg-white border border-gray-300'>
           <div
-            class='flex h-full w-full items-center justify-center bg-gray-800'
+            class='flex h-full w-full items-center justify-center'
           >
-            <p class='animate-pulse text-2xl text-white duration-200'>
+            <p class='animate-pulse text-2xl text-black duration-100'>
               Please wait ..
             </p>
           </div>
@@ -84,22 +81,21 @@ export async function getStaticPaths() {
 
         <div class='flex flex-col gap-3 sm:flex-row'>
           <button
-            data-next-question='know'
-            class='flex flex-1 items-center rounded-xl bg-gray-800 p-3 text-gray-400 transition-colors hover:bg-gray-700 hover:text-gray-200'
+            class='flex flex-1 items-center rounded-xl bg-white border border-gray-300 py-3 px-4 text-black transition-colors hover:bg-black hover:border-black hover:text-white'
           >
-            <AstroIcon icon='check' class='mr-1 h-4' />
+            <AstroIcon icon='check-current' class='mr-2 h-4 text-current' />
             Already Know that
           </button>
           <button
             data-next-question='dont-know'
-            class='flex flex-1 items-center rounded-xl bg-gray-800 p-3 text-gray-400 transition-colors hover:bg-gray-700 hover:text-gray-200'
+            class='flex flex-1 items-center rounded-xl bg-white border border-gray-300 py-3 px-4 text-black transition-colors hover:bg-black hover:border-black hover:text-white'
           >
-            <AstroIcon icon='bulb' class='mr-2 h-5' />
+            <AstroIcon icon='bulb' class='mr-2 h-5 text-current' />
             Didn't Know that
           </button>
           <button
             data-next-question='skip'
-            class='flex flex-1 items-center rounded-xl border border-red-500 p-3 text-red-400 hover:bg-red-500 hover:text-gray-900'
+            class='flex flex-1 items-center rounded-xl border border-red-600 p-3 text-red-600 hover:bg-red-600 hover:text-white'
           >
             <AstroIcon icon='skip' class='mr-2 h-4' />
             Skip Question
