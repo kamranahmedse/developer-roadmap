@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
 import type { RoadmapDocument } from './CustomRoadmap';
+import './RoadmapRenderer.css';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -22,7 +23,7 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   return { nodeId, nodeType, targetGroup };
 }
 
-const allowedNodeTypes = ['topic', 'subtopic', 'button']
+const allowedNodeTypes = ['topic', 'subtopic', 'button'];
 
 export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;

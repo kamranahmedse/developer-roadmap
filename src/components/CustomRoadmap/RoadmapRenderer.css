@@ -1,0 +1,22 @@
+svg text tspan {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+svg > g[data-type='topic'],
+svg > g[data-type='subtopic'],
+svg > g[data-type='button'] {
+  cursor: pointer;
+}
+
+svg > g[data-type='topic']:hover > rect {
+  fill: #d6d700;
+}
+
+svg > g[data-type='subtopic']:hover > rect {
+  fill: #f3c950;
+}
+svg > g[data-type='button']:hover {
+  opacity: 0.8;
+}
