@@ -1,6 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { RoadmapRenderer } from '../../components/CustomRoadmap/RoadmapRenderer';
+import { CustomRoadmap } from '../../components/CustomRoadmap/CustomRoadmap';
 import Loader from '../../components/Loader.astro';
 ---
 
@@ -10,7 +10,7 @@ import Loader from '../../components/Loader.astro';
       <div class='flex grow items-center justify-center' data-roadmap-loader>
         <Loader />
       </div>
-      <RoadmapRenderer client:only='react' />
+      <CustomRoadmap client:only='react' />
     </div>
   </div>
 </BaseLayout>

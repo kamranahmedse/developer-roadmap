@@ -1,89 +1,82 @@
-import { useEffect, useState } from 'react';
-import { useToast } from '../../hooks/use-toast';
-import { getUrlParams } from '../../lib/browser';
-import { httpGet } from '../../lib/http';
+import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
-import { RoadmapHeader } from './RoadmapHeader';
+import type { RoadmapDocument } from './CustomRoadmap';
 
-export const allowedRoadmapVisibility = [
-  'me',
-  'friends',
-  'team',
-  'public',
-] as const;
-export type AllowedRoadmapVisibility =
-  (typeof allowedRoadmapVisibility)[number];
-export interface RoadmapDocument {
-  _id?: string;
-  title: string;
-  description?: string;
-  creatorId: string;
-  teamId?: string;
-  visibility: AllowedRoadmapVisibility;
-  nodes: any[];
-  edges: any[];
-  createdAt: Date;
-  updatedAt: Date;
+type RoadmapRendererProps = {
+  roadmap: RoadmapDocument;
+};
+
+type RoadmapNodeDetails = {
+  nodeId: string;
+  nodeType: string;
+  targetGroup: SVGElement;
+};
+
+function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
+  const targetGroup = (svgElement?.closest('g') as SVGElement) || {};
+
+  const nodeId = targetGroup?.dataset?.id;
+  const nodeType = targetGroup?.dataset?.type;
+  if (!nodeId || !nodeType) return null;
+
+  return { nodeId, nodeType, targetGroup };
 }
 
-function hideLoader() {
-  const loaderEl = document.querySelector(
-    '[data-roadmap-loader]'
-  ) as HTMLElement;
-  if (loaderEl) {
-    loaderEl.remove();
-  }
-}
+export function RoadmapRenderer(props: RoadmapRendererProps) {
+  const { roadmap } = props;
+  const roadmapRef = useRef<HTMLDivElement>(null);
 
-export function RoadmapRenderer() {
-  const { id } = getUrlParams() as { id: string };
+  const handleSvgClick = useCallback((e: MouseEvent) => {
+    const target = e.target as SVGElement;
+    const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
+    if (!nodeId || !nodeType) return;
 
-  const toast = useToast();
-  const [isLoading, setIsLoading] = useState(true);
-  const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
+    console.log(`Clicked on node ${nodeId} of type ${nodeType}`);
 
-  async function getRoadmap() {
-    setIsLoading(true);
-    const { response, error } = await httpGet<RoadmapDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`
-    );
-
-    if (error || !response) {
-      toast.error(error?.message || 'Something went wrong');
+    if (e.shiftKey) {
+      e.preventDefault();
+      console.log(`Shift clicked on node ${nodeId} of type ${nodeType}`);
       return;
     }
 
-    setRoadmap(response);
-    setIsLoading(false);
-  }
-
-  useEffect(() => {
-    getRoadmap().finally(() => {
-      hideLoader();
-    });
+    if (e.altKey) {
+      e.preventDefault();
+      console.log(`Alt clicked on node ${nodeId} of type ${nodeType}`);
+      return;
+    }
   }, []);
 
-  console.log(roadmap?.nodes);
+  const handleSvgRightClick = useCallback((e: MouseEvent) => {
+    e.preventDefault();
 
-  if (isLoading) {
-    return null;
-  }
+    const target = e.target as SVGElement;
+    const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
+    if (!nodeId || !nodeType) return;
+
+    console.log(`Right clicked on node ${nodeId} of type ${nodeType}`);
+  }, []);
+
+  useEffect(() => {
+    const roadmapEl = roadmapRef.current;
+    if (!roadmapEl) return;
+
+    roadmapEl.addEventListener('click', handleSvgClick);
+    roadmapEl.addEventListener('contextmenu', handleSvgRightClick);
+
+    return () => {
+      roadmapEl.removeEventListener('click', handleSvgClick);
+      roadmapEl.removeEventListener('contextmenu', handleSvgRightClick);
+    };
+  }, [roadmapRef.current]);
 
   return (
-    <>
-      <RoadmapHeader
-        title={roadmap?.title!}
-        description={roadmap?.description!}
-        roadmapId={roadmap?._id!}
-      />
-
-      <div className="bg-gray-50 pb-8 pt-4 sm:pt-12">
-        <div className="container !max-w-[1000px]">
-          <Renderer
-            roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
-          />
-        </div>
+    <div className="bg-gray-50 pb-8 pt-4 sm:pt-12">
+      <div className="container !max-w-[1000px]">
+        <Renderer
+          ref={roadmapRef}
+          roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
+        />
       </div>
-    </>
+    </div>
   );
 }
