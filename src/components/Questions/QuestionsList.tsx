@@ -4,6 +4,7 @@ import { QuestionsProgress } from './QuestionsProgress';
 import { CheckCircle, SkipForward, Sparkles } from 'lucide-react';
 import { QuestionCard } from './QuestionCard';
 import { QuestionLoader } from './QuestionLoader';
+import { isLoggedIn } from '../../lib/jwt';
 
 type ConfettiPosition = {
   x: number;
@@ -14,6 +15,7 @@ type ConfettiPosition = {
 
 export function QuestionsList() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [givenAnswers, setGivenAnswers] = useState<string[]>([]);
   const [confettiPos, setConfettiPos] = useState<undefined | ConfettiPosition>(
     undefined
   );
@@ -22,7 +24,9 @@ export function QuestionsList() {
 
   return (
     <div className="mb-40 gap-3 text-center">
-      <QuestionsProgress />
+      <QuestionsProgress
+        showLoginAlert={!isLoggedIn() && givenAnswers.length !== 0}
+      />
 
       {confettiPos && (
         <ReactConfetti
@@ -66,6 +70,8 @@ export function QuestionsList() {
               w: alreadyKnowRect?.width || 0,
               h: alreadyKnowRect?.height || 0,
             });
+
+            setGivenAnswers((prev) => [...prev, 'alreadyKnow']);
           }}
           className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white"
         >

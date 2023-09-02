@@ -22,10 +22,10 @@ export function QuestionCard() {
 
     // if the user has scrolled down and the top of the answer is not
     // visible, scroll to the top of the answer
-    const questionTop = questionRef.current?.getBoundingClientRect().top || 0;
+    const questionTop = (questionRef.current?.getBoundingClientRect().top || 0) - 147;
     if (questionTop < 0) {
       window.scrollTo({
-        top: window.scrollY + questionTop - 100,
+        top: window.scrollY + questionTop - 10,
       });
     }
   }, [isAnswerVisible]);
