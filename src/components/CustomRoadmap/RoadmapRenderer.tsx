@@ -2,6 +2,7 @@ import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
 import type { RoadmapDocument } from './CustomRoadmap';
 import './RoadmapRenderer.css';
+import { renderResourceProgress } from '../../lib/resource-progress';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -93,6 +94,9 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
         <Renderer
           ref={roadmapRef}
           roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
+          onRendered={() =>
+            renderResourceProgress('roadmap', roadmap._id!).then()
+          }
         />
       </div>
     </div>
