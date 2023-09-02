@@ -20,3 +20,26 @@ svg > g[data-type='subtopic']:hover > rect {
 svg > g[data-type='button']:hover {
   opacity: 0.8;
 }
+
+svg .done rect {
+  fill: #cbcbcb !important;
+}
+
+svg .done rect[stroke='rgb(255,229,153)'] {
+  stroke: #cbcbcb !important;
+}
+
+svg .done text,
+svg .skipped text {
+  text-decoration: line-through;
+}
+
+svg > g[data-type='topic'].learning > rect + text,
+svg > g[data-type='topic'].done > rect + text {
+  fill: black;
+}
+
+svg > g[data-type='subtipic'].done > rect + text,
+svg > g[data-type='subtipic'].learning > rect + text {
+  fill: #cbcbcb;
+}

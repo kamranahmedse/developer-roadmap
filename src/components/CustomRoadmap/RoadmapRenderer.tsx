@@ -2,7 +2,9 @@ import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
 import type { RoadmapDocument } from './CustomRoadmap';
 import './RoadmapRenderer.css';
-import { renderResourceProgress } from '../../lib/resource-progress';
+import { renderResourceProgress, updateResourceProgress, type ResourceProgressType, renderTopicProgress, refreshProgressCounters } from '../../lib/resource-progress';
+import { pageProgressMessage } from '../../stores/page';
+import { useToast } from '../../hooks/use-toast';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -30,6 +32,33 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapRef = useRef<HTMLDivElement>(null);
 
+  const toast = useToast()
+
+  async function updateTopicStatus(topicId: string, newStatus: ResourceProgressType) {
+    pageProgressMessage.set('Updating progress');
+    updateResourceProgress(
+      {
+        resourceId: roadmap._id!,
+        resourceType: 'roadmap',
+        topicId,
+      },
+      newStatus
+    )
+      .then(() => {
+        renderTopicProgress(topicId, newStatus);
+      })
+      .catch((err) => {
+        toast.error('Something went wrong, please try again.');
+        console.error(err);
+      })
+      .finally(() => {
+        pageProgressMessage.set('');
+        refreshProgressCounters();
+      });
+
+    return;
+  }
+
   const handleSvgClick = useCallback((e: MouseEvent) => {
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
@@ -46,13 +75,16 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
       return;
     }
 
+    const isCurrentStatusLearning = targetGroup?.classList.contains('learning');
+    const isCurrentStatusSkipped = targetGroup?.classList.contains('skipped');
+
     if (e.shiftKey) {
       e.preventDefault();
-      console.log(`Shift clicked on node ${nodeId} of type ${nodeType}`);
+      updateTopicStatus(nodeId, isCurrentStatusLearning ? 'pending' : 'learning')
       return;
     } else if (e.altKey) {
       e.preventDefault();
-      console.log(`Alt clicked on node ${nodeId} of type ${nodeType}`);
+      updateTopicStatus(nodeId, isCurrentStatusSkipped ? 'pending' : 'skipped')
       return;
     }
 
@@ -75,16 +107,18 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
     if (!nodeId || !nodeType) return;
 
-    console.log(`Right clicked on node ${nodeId} of type ${nodeType}`);
+    const isCurrentStatusDone = targetGroup?.classList.contains('done');
+    updateTopicStatus(nodeId, isCurrentStatusDone ? 'pending' : 'done')
   }, []);
 
   useEffect(() => {
-    window.addEventListener('click', handleSvgClick);
-    window.addEventListener('contextmenu', handleSvgRightClick);
+    if (!roadmapRef?.current) return;
+    roadmapRef?.current?.addEventListener('click', handleSvgClick);
+    roadmapRef?.current?.addEventListener('contextmenu', handleSvgRightClick);
 
     return () => {
-      window.removeEventListener('click', handleSvgClick);
-      window.removeEventListener('contextmenu', handleSvgRightClick);
+      roadmapRef?.current?.removeEventListener('click', handleSvgClick);
+      roadmapRef?.current?.removeEventListener('contextmenu', handleSvgRightClick);
     };
   }, []);
 

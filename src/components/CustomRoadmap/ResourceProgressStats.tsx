@@ -1,3 +1,4 @@
+import { HelpCircle } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ResourceType } from '../../lib/resource-progress';
 import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
@@ -66,6 +67,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
             className="flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black"
             data-progress-nums
           >
+            <HelpCircle className="h-3.5 w-3.5 stroke-[2.5px]" />
             Track Progress
           </button>
         </div>
