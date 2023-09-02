@@ -43,7 +43,7 @@ export interface RoadmapContentDocument {
   }[];
 }
 
-function hideLoader() {
+export function hideRoadmapLoader() {
   const loaderEl = document.querySelector(
     '[data-roadmap-loader]'
   ) as HTMLElement;
@@ -75,7 +75,7 @@ export function CustomRoadmap() {
 
   useEffect(() => {
     getRoadmap().finally(() => {
-      hideLoader();
+      hideRoadmapLoader();
     });
   }, []);
 

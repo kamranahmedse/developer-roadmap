@@ -105,7 +105,11 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
 
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType) return;
+    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) return;
+
+    if (nodeType === 'button') {
+      return;
+    }
 
     const isCurrentStatusDone = targetGroup?.classList.contains('done');
     updateTopicStatus(nodeId, isCurrentStatusDone ? 'pending' : 'done')
