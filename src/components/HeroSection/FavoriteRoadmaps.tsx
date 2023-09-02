@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { EmptyProgress } from './EmptyProgress';
 import { httpGet } from '../../lib/http';
-import { HeroRoadmaps } from './HeroRoadmaps.tsx';
+import { HeroRoadmaps } from './HeroRoadmaps';
 import {isLoggedIn} from "../../lib/jwt";
 
 export type UserProgressResponse = {
@@ -122,7 +122,7 @@ export function FavoriteRoadmaps() {
       <div className="container min-h-full">
         {!isLoading && progress.length == 0 && <EmptyProgress />}
         {progress.length > 0 && (
-          <HeroRoadmaps progress={progress} isLoading={isLoading} />
+          <HeroRoadmaps customRoadmaps={[]} progress={progress} isLoading={isLoading} />
         )}
       </div>
     </div>
