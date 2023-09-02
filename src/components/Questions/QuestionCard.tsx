@@ -16,17 +16,17 @@ export function QuestionCard() {
       if (answerHeight > questionHeight) {
         questionRef.current!.style.height = `${answerHeight}px`;
       }
-
-      // if the user has scrolled down and the top of the answer is not
-      // visible, scroll to the top of the answer
-      const questionTop = questionRef.current?.getBoundingClientRect().top || 0;
-      if (questionTop < 0) {
-        window.scrollTo({
-          top: window.scrollY + questionTop - 100,
-        });
-      }
     } else {
       questionRef.current!.style.height = `auto`;
+    }
+
+    // if the user has scrolled down and the top of the answer is not
+    // visible, scroll to the top of the answer
+    const questionTop = questionRef.current?.getBoundingClientRect().top || 0;
+    if (questionTop < 0) {
+      window.scrollTo({
+        top: window.scrollY + questionTop - 100,
+      });
     }
   }, [isAnswerVisible]);
 
@@ -70,10 +70,23 @@ export function QuestionCard() {
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptatum, quod, quas, quia, voluptates voluptate quibusdam
-            voluptatibus quos quae quidem. Quisqu
+            voluptatibus quos quae quidem. Quisqu<br />
+            <br />
+            Quisquam voluptatum, quod, quas, quia, voluptates voluptate
+            quibusdam voluptatibus quos quae quidem. Quisquam voluptatum, quod,
+            quas, quia, voluptates voluptate quibusdam voluptatibus quos quae
+            quidem. Quisquam voluptatum, quod, quas, quia, voluptates voluptate
+            quibusdam voluptatibus quos quae quidem.
+            <br />
+            <br />
+            Quisquam voluptatum, quod, quas, quia, voluptates voluptate
+            quibusdam voluptatibus quos quae quidem. Quisquam voluptatum, quod,
+            quas, quia, voluptates voluptate quibusdam voluptatibus quos quae
+            quidem. Quisquam voluptatum, quod, quas, quia, voluptates voluptate
+            quibusdam voluptatibus quos quae quidem.
           </p>
         </div>
-        <div className="text-center mt-7">
+        <div className="mt-7 text-center">
           <button
             onClick={() => {
               setIsAnswerVisible(false);
