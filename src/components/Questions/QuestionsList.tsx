@@ -1,12 +1,22 @@
-import { QuestionsProgress } from './QuestionsProgress';
-import { CheckCircle, SkipForward, Sparkles } from 'lucide-react';
 import { useRef, useState } from 'react';
 import ReactConfetti from 'react-confetti';
+import { QuestionsProgress } from './QuestionsProgress';
+import { CheckCircle, SkipForward, Sparkles } from 'lucide-react';
+import { QuestionCard } from './QuestionCard';
+import { QuestionLoader } from './QuestionLoader';
+
+type ConfettiPosition = {
+  x: number;
+  y: number;
+  w: number;
+  h: number;
+};
 
 export function QuestionsList() {
-  const [confettiPos, setConfettiPos] = useState<
-    undefined | { x: number; y: number; w: number; h: number }
-  >(undefined);
+  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [confettiPos, setConfettiPos] = useState<undefined | ConfettiPosition>(
+    undefined
+  );
 
   const alreadyKnowRef = useRef<HTMLButtonElement>(null);
 
@@ -16,12 +26,14 @@ export function QuestionsList() {
 
       {confettiPos && (
         <ReactConfetti
-          numberOfPieces={20}
+          height={document.body.scrollHeight}
+          numberOfPieces={40}
           recycle={false}
-          onConfettiComplete={() => {
+          onConfettiComplete={(confettiInstance) => {
+            confettiInstance?.reset();
             setConfettiPos(undefined);
           }}
-          initialVelocityX={2}
+          initialVelocityX={4}
           initialVelocityY={8}
           tweenDuration={25}
           confettiSource={{
@@ -33,12 +45,9 @@ export function QuestionsList() {
         />
       )}
 
-      <div className="relative mb-4 h-[400px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white">
-        <div className="flex h-full w-full items-center justify-center">
-          <p className="animate-pulse text-2xl text-black duration-100">
-            Please wait ..
-          </p>
-        </div>
+      <div className="relative mb-4 flex min-h-[400px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white">
+        <QuestionCard />
+        {isLoading && <QuestionLoader />}
       </div>
 
       <div className="flex flex-col gap-3 sm:flex-row">
