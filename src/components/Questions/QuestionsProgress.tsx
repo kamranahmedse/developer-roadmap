@@ -1,8 +1,15 @@
-import {Check, CheckCircle, Lightbulb, PartyPopper, RotateCcw, Sparkles} from 'lucide-react';
+import {
+  Check,
+  CheckCircle,
+  Lightbulb,
+  PartyPopper,
+  RotateCcw,
+  Sparkles,
+} from 'lucide-react';
 
 export function QuestionsProgress() {
   return (
-    <div className="mb-5 rounded-lg border border-gray-300 bg-white p-6">
+    <div className="mb-5 rounded-lg border border-gray-300 bg-white p-6 overflow-hidden">
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div className="absolute bottom-0 left-0 top-0 w-[30%] rounded-xl bg-slate-800"></div>
@@ -32,6 +39,13 @@ export function QuestionsProgress() {
           Reset Progress
         </button>
       </div>
+
+      <p className="-mx-6 mt-6 -mb-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
+        You progress will not be saved. Please{' '}
+        <button className="underline-offset-3 font-medium underline">
+          login to save your progress.
+        </button>
+      </p>
     </div>
   );
 }

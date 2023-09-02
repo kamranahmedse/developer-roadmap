@@ -72,9 +72,7 @@ export function QuestionsList() {
           <CheckCircle className="mr-1 h-4 text-current" />
           Already Know that
         </button>
-        <button
-          className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white"
-        >
+        <button className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white">
           <Sparkles className="mr-1 h-4 text-current" />
           Didn't Know that
         </button>
