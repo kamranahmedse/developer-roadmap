@@ -73,7 +73,6 @@ export function QuestionsList() {
           Already Know that
         </button>
         <button
-          data-next-question="dont-know"
           className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white"
         >
           <Sparkles className="mr-1 h-4 text-current" />

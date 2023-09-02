@@ -43,7 +43,7 @@ export function QuestionCard() {
         </div>
 
         <div className="mx-auto flex max-w-[550px] flex-1 items-center justify-center py-8">
-          <p className="text-3xl leading-normal text-black">
+          <p className="text-3xl leading-normal text-black font-semibold">
             What do you think is the output of the following code?
           </p>
         </div>
@@ -66,24 +66,11 @@ export function QuestionCard() {
           isAnswerVisible ? 'top-0 min-h-[398px]' : 'top-full'
         }`}
       >
-        <div className="mx-auto flex max-w-[600px] flex-grow items-center py-0 px-5 text-2xl leading-normal">
+        <div className="mx-auto flex max-w-[600px] flex-grow items-center py-0 px-5 text-xl leading-normal">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
             voluptatum, quod, quas, quia, voluptates voluptate quibusdam
-            voluptatibus quos quae quidem. Quisqu<br />
-            <br />
-            Quisquam voluptatum, quod, quas, quia, voluptates voluptate
-            quibusdam voluptatibus quos quae quidem. Quisquam voluptatum, quod,
-            quas, quia, voluptates voluptate quibusdam voluptatibus quos quae
-            quidem. Quisquam voluptatum, quod, quas, quia, voluptates voluptate
-            quibusdam voluptatibus quos quae quidem.
-            <br />
-            <br />
-            Quisquam voluptatum, quod, quas, quia, voluptates voluptate
-            quibusdam voluptatibus quos quae quidem. Quisquam voluptatum, quod,
-            quas, quia, voluptates voluptate quibusdam voluptatibus quos quae
-            quidem. Quisquam voluptatum, quod, quas, quia, voluptates voluptate
-            quibusdam voluptatibus quos quae quidem.
+            voluptatibus quos quae quidem. Quisqu
           </p>
         </div>
         <div className="mt-7 text-center">
