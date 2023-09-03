@@ -1,43 +1,72 @@
-import { CheckCircle, RotateCcw, Sparkles } from 'lucide-react';
+import { CheckCircle, RotateCcw, SkipForward, Sparkles } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 
 type QuestionsProgressProps = {
   isLoading?: boolean;
   showLoginAlert?: boolean;
+  knowCount?: number;
+  didNotKnowCount?: number;
+  totalCount?: number;
+  skippedCount?: number;
 };
 
 export function QuestionsProgress(props: QuestionsProgressProps) {
-  const { showLoginAlert, isLoading = false } = props;
+  const {
+    showLoginAlert,
+    isLoading = false,
+    knowCount = 0,
+    didNotKnowCount = 0,
+    totalCount = 0,
+    skippedCount = 0,
+  } = props;
+
+  const totalSolved = knowCount + didNotKnowCount + skippedCount;
+  const donePercentage = (totalSolved / totalCount) * 100;
 
   return (
     <div className="mb-5 overflow-hidden rounded-lg border border-gray-300 bg-white p-6">
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
-          <div className="absolute bottom-0 left-0 top-0 w-[30%] rounded-xl bg-slate-800"></div>
+          <div
+            className="absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800"
+            style={{
+              width: `${donePercentage}%`,
+            }}
+          />
         </div>
-        <span className="ml-3 text-sm">5 / 100</span>
+        <span className="ml-3 text-sm">
+          {totalSolved} / {totalCount}
+        </span>
       </div>
 
       <div className="relative -left-1 flex flex-col gap-2 text-sm text-black sm:flex-row sm:gap-3">
         <span className="flex items-center">
           <CheckCircle className="mr-1 h-4" />
-          <span>Already knew</span>
+          <span>Knew</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            44 Questions
+            {knowCount} Questions
           </span>
         </span>
 
         <span className="flex items-center">
           <Sparkles className="mr-1 h-4" />
-          <span>Didn't Know</span>
+          <span>Learnt</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            20 Questions
+            {didNotKnowCount} Questions
+          </span>
+        </span>
+
+        <span className="flex items-center">
+          <SkipForward className="mr-1 h-4" />
+          <span>Skipped</span>
+          <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
+            {skippedCount} Questions
           </span>
         </span>
 
         <button className="flex items-center text-red-600 hover:text-red-900">
           <RotateCcw className="mr-1 h-4" />
-          Reset Progress
+          Reset
         </button>
       </div>
 

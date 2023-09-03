@@ -12,6 +12,7 @@ import { useToast } from '../../hooks/use-toast';
 type UserQuestionProgress = {
   know: string[];
   didNotKnow: string[];
+  skipped: string[];
 };
 
 type QuestionsListProps = {
@@ -20,13 +21,11 @@ type QuestionsListProps = {
 };
 
 export function QuestionsList(props: QuestionsListProps) {
-  const { questions: defaultQuestions, groupId } = props;
+  const { questions: unshuffledQuestions, groupId } = props;
 
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
-  const [isUpdatingStatus, setIsUpdatingStatus] = useState(false);
-
   const [confettiEl, setConfettiEl] = useState<HTMLElement | null>(null);
 
   const [questions, setQuestions] = useState<QuestionType[]>();
@@ -72,33 +71,37 @@ export function QuestionsList(props: QuestionsListProps) {
 
     const knownQuestions = userProgress?.know || [];
     const didNotKnowQuestions = userProgress?.didNotKnow || [];
+    const skippedQuestions = userProgress?.skipped || [];
 
-    const pendingQuestions = defaultQuestions.filter((question) => {
+    const pendingQuestions = unshuffledQuestions.filter((question) => {
       return (
         !knownQuestions.includes(question.id) &&
-        !didNotKnowQuestions.includes(question.id)
+        !didNotKnowQuestions.includes(question.id) &&
+        !skippedQuestions.includes(question.id)
       );
     });
 
     // Shuffle and set pending questions
     setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
-    setQuestions(defaultQuestions);
+    setQuestions(unshuffledQuestions);
 
     setIsLoading(false);
   }
 
   async function updateQuestionStatus(
-    status: 'know' | 'dontKnow',
+    status: 'know' | 'dontKnow' | 'skip',
     questionId: string
   ) {
-    setIsUpdatingStatus(true);
-    let newProgress = userProgress || { know: [], didNotKnow: [] };
+    setIsLoading(true);
+    let newProgress = userProgress || { know: [], didNotKnow: [], skipped: [] };
 
     if (!isLoggedIn()) {
       if (status === 'know') {
         newProgress.know.push(questionId);
-      } else {
+      } else if (status == 'dontKnow') {
         newProgress.didNotKnow.push(questionId);
+      } else if (status == 'skip') {
+        newProgress.skipped.push(questionId);
       }
     } else {
       const { response, error } = await httpPut<UserQuestionProgress>(
@@ -120,16 +123,17 @@ export function QuestionsList(props: QuestionsListProps) {
 
     setUserProgress(newProgress);
     setPendingQuestions(pendingQuestions.filter((q) => q.id !== questionId));
-    setIsUpdatingStatus(false);
+    setIsLoading(false);
   }
 
   useEffect(() => {
     loadQuestions().then(() => null);
-  }, [defaultQuestions]);
+  }, [unshuffledQuestions]);
 
   const knownCount = userProgress?.know.length || 0;
   const didNotKnowCount = userProgress?.didNotKnow.length || 0;
-  const hasProgress = knownCount > 0 || didNotKnowCount > 0;
+  const skippedCount = userProgress?.skipped.length || 0;
+  const hasProgress = knownCount > 0 || didNotKnowCount > 0 || skippedCount > 0;
 
   const currQuestion = pendingQuestions[0];
 
@@ -143,6 +147,10 @@ export function QuestionsList(props: QuestionsListProps) {
       />
 
       <QuestionsProgress
+        knowCount={knownCount}
+        didNotKnowCount={didNotKnowCount}
+        skippedCount={skippedCount}
+        totalCount={unshuffledQuestions?.length || questions?.length}
         isLoading={isLoading}
         showLoginAlert={!isLoggedIn() && hasProgress}
       />
@@ -154,7 +162,7 @@ export function QuestionsList(props: QuestionsListProps) {
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <button
-          disabled={isLoading || isUpdatingStatus}
+          disabled={isLoading}
           ref={alreadyKnowRef}
           onClick={(e) => {
             showConfetti(alreadyKnowRef.current);
@@ -173,14 +181,17 @@ export function QuestionsList(props: QuestionsListProps) {
               () => null
             );
           }}
-          disabled={isLoading || isUpdatingStatus}
+          disabled={isLoading}
           className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
           <Sparkles className="mr-1 h-4 text-current" />
           Didn't Know that
         </button>
         <button
-          disabled={isLoading || isUpdatingStatus}
+          onClick={() => {
+            updateQuestionStatus('skip', currQuestion.id).finally(() => null);
+          }}
+          disabled={isLoading}
           data-next-question="skip"
           className="flex flex-1 items-center rounded-xl border border-red-600 p-3 text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
