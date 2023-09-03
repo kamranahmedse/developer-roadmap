@@ -1,4 +1,5 @@
 import { cn } from '../../lib/classname';
+import type { AllowedRoadmapVisibility } from './CustomRoadmap';
 import { ResourceProgressStats } from './ResourceProgressStats';
 
 type RoadmapHintProps = {
@@ -6,6 +7,7 @@ type RoadmapHintProps = {
   roadmapTitle: string;
   hasTNSBanner?: boolean;
   tnsBannerLink?: string;
+  visibility?: AllowedRoadmapVisibility;
 };
 
 export function RoadmapHint(props: RoadmapHintProps) {
@@ -14,6 +16,7 @@ export function RoadmapHint(props: RoadmapHintProps) {
     roadmapId,
     hasTNSBanner = false,
     tnsBannerLink = '',
+    visibility,
   } = props;
 
   return (
@@ -42,6 +45,7 @@ export function RoadmapHint(props: RoadmapHintProps) {
         isSecondaryBanner={hasTNSBanner}
         resourceId={roadmapId}
         resourceType="roadmap"
+        visibility={visibility}
       />
     </div>
   );

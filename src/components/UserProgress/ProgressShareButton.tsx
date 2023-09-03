@@ -4,6 +4,7 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ShareIcon } from '../ReactIcons/ShareIcon';
 import { isLoggedIn } from '../../lib/jwt';
+import { cn } from '../../lib/classname';
 
 type ProgressShareButtonProps = {
   resourceId: string;
@@ -11,6 +12,8 @@ type ProgressShareButtonProps = {
   className?: string;
   shareIconClassName?: string;
   checkIconClassName?: string;
+  disabled?: boolean;
+  shareUrl?: string;
 };
 export function ProgressShareButton(props: ProgressShareButtonProps) {
   const {
@@ -19,12 +22,18 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     className,
     shareIconClassName,
     checkIconClassName,
+    disabled,
+    shareUrl,
   } = props;
 
   const user = useAuth();
   const { copyText, isCopied } = useCopyText();
 
   function handleCopyLink() {
+    if (shareUrl) {
+      copyText(shareUrl);
+      return;
+    }
     const isDev = import.meta.env.DEV;
     const newUrl = new URL(
       isDev ? 'http://localhost:3000' : 'https://roadmap.sh'
@@ -46,10 +55,13 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
 
   return (
     <button
-      className={`flex items-center gap-1 text-sm font-medium ${
-        isCopied ? 'text-green-500' : 'text-gray-500 hover:text-black'
-      } ${className}`}
+      className={cn(
+        'flex items-center gap-1 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-70',
+        isCopied ? 'text-green-500' : 'text-gray-500 hover:text-black',
+        className
+      )}
       onClick={handleCopyLink}
+      disabled={!disabled}
     >
       {isCopied ? (
         <>

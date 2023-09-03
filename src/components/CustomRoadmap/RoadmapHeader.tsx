@@ -1,13 +1,17 @@
+import { Pencil } from 'lucide-react';
 import { RoadmapHint } from './RoadmapHint';
+import type { AllowedRoadmapVisibility } from './CustomRoadmap';
 
 type RoadmapHeaderProps = {
   title: string;
   description: string;
   roadmapId: string;
+  allowEdit?: boolean;
+  visibility?: AllowedRoadmapVisibility;
 };
 
 export function RoadmapHeader(props: RoadmapHeaderProps) {
-  const { title, description, roadmapId } = props;
+  const { title, description, roadmapId, allowEdit, visibility } = props;
 
   return (
     <div className="border-b">
@@ -28,6 +32,16 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             >
               &larr;<span className="hidden sm:inline">&nbsp;All Roadmaps</span>
             </a>
+            {allowEdit && (
+              <a
+                href={`${import.meta.env.PUBLIC_EDITOR_APP_URL}/${roadmapId}`}
+                className="flex items-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium text-black hover:bg-yellow-500 sm:text-sm"
+                aria-label="Edit current Roadmap"
+              >
+                <Pencil className="h-3 w-3 stroke-[2.5]" />
+                <span className="hidden sm:inline">&nbsp;Edit Roadmap</span>
+              </a>
+            )}
 
             <button
               data-guest-required
@@ -44,6 +58,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
           roadmapTitle={title}
           hasTNSBanner={false}
           roadmapId={roadmapId}
+          visibility={visibility}
         />
       </div>
     </div>

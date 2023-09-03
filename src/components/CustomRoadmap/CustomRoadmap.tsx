@@ -5,6 +5,7 @@ import { httpGet } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
+import { useAuth } from '../../hooks/use-auth';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -27,7 +28,14 @@ export interface RoadmapDocument {
   updatedAt: Date;
 }
 
-export const allowedLinkTypes = ["video", "article", "opensource", "course", "website", "podcast"] as const;
+export const allowedLinkTypes = [
+  'video',
+  'article',
+  'opensource',
+  'course',
+  'website',
+  'podcast',
+] as const;
 export type AllowedLinkTypes = (typeof allowedLinkTypes)[number];
 export interface RoadmapContentDocument {
   _id?: string;
@@ -54,6 +62,7 @@ export function hideRoadmapLoader() {
 export function CustomRoadmap() {
   const { id } = getUrlParams() as { id: string };
 
+  const user = useAuth();
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
@@ -83,12 +92,16 @@ export function CustomRoadmap() {
     return null;
   }
 
+  console.log(roadmap)
+
   return (
     <>
       <RoadmapHeader
         title={roadmap?.title!}
         description={roadmap?.description!}
         roadmapId={roadmap?._id!}
+        allowEdit={user?.id === roadmap?.creatorId}
+        visibility={roadmap?.visibility!}
       />
       <RoadmapRenderer roadmap={roadmap!} />
 

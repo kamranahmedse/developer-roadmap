@@ -2,15 +2,25 @@ import { HelpCircle } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ResourceType } from '../../lib/resource-progress';
 import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
+import type { AllowedRoadmapVisibility } from './CustomRoadmap';
+import { useAuth } from '../../hooks/use-auth';
 
 type ResourceProgressStatsProps = {
   resourceId: string;
   resourceType: ResourceType;
   isSecondaryBanner?: boolean;
+  visibility?: AllowedRoadmapVisibility;
 };
 
 export function ResourceProgressStats(props: ResourceProgressStatsProps) {
-  const { resourceId, resourceType, isSecondaryBanner = false } = props;
+  const {
+    resourceId,
+    resourceType,
+    isSecondaryBanner = false,
+    visibility,
+  } = props;
+  const user = useAuth();
+
   return (
     <>
       <div
@@ -59,6 +69,8 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           data-progress-nums
         >
           <ProgressShareButton
+            disabled={visibility === 'me'}
+            shareUrl={`https://roadmap.sh/r?id=${resourceId}&s=${user?.id}`}
             resourceId={resourceId}
             resourceType={resourceType}
           />
@@ -90,6 +102,8 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           data-progress-nums
         >
           <ProgressShareButton
+            disabled={visibility === 'me'}
+            shareUrl={`https://roadmap.sh/r?id=${resourceId}&s=${user?.id}`}
             resourceId={resourceId}
             resourceType={resourceType}
           />
