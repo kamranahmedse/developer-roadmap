@@ -32,6 +32,9 @@ dependencies:
   astro-compress:
     specifier: ^2.0.8
     version: 2.0.8
+  dracula-prism:
+    specifier: ^2.1.13
+    version: 2.1.13
   jose:
     specifier: ^4.14.4
     version: 4.14.4
@@ -50,6 +53,9 @@ dependencies:
   npm-check-updates:
     specifier: ^16.10.12
     version: 16.10.12
+  prismjs:
+    specifier: ^1.29.0
+    version: 1.29.0
   react:
     specifier: ^18.0.0
     version: 18.0.0
@@ -82,6 +88,9 @@ devDependencies:
   '@types/js-cookie':
     specifier: ^3.0.3
     version: 3.0.3
+  '@types/prismjs':
+    specifier: ^1.26.0
+    version: 1.26.0
   csv-parser:
     specifier: ^3.0.0
     version: 3.0.0
@@ -1230,6 +1239,10 @@ packages:
     resolution: {integrity: sha512-SuT16Q1K51EAVPz1K29DJ/sXjhSQ0zjvsypYJ6tlwVsRV9jwW5Adq2ch8Dq8kDBCkYnELS7N7VNCSB5nC56t/g==}
     dev: false
 
+  /@types/prismjs@1.26.0:
+    resolution: {integrity: sha512-ZTaqn/qSqUuAq1YwvOFQfVW1AR/oQJlLSZVustdjwI+GZ8kr0MSHBj0tsXPW1EqHubx50gtBEjbPGsdZwQwCjQ==}
+    dev: true
+
   /@types/prop-types@15.7.5:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: false
@@ -2098,6 +2111,10 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       is-obj: 2.0.0
+    dev: false
+
+  /dracula-prism@2.1.13:
+    resolution: {integrity: sha512-mgm8Nr/X0RGUz/wpha88dKN/xw0QIGK8BQmWXrzgtOp9be+qcKiFEa2J5SQ3+/WNvL5sPPtNQXPL+Vy//Q8+dg==}
     dev: false
 
   /dset@3.1.2:

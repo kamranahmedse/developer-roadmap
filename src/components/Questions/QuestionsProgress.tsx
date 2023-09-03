@@ -2,11 +2,12 @@ import { CheckCircle, RotateCcw, Sparkles } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 
 type QuestionsProgressProps = {
+  isLoading?: boolean;
   showLoginAlert?: boolean;
 };
 
 export function QuestionsProgress(props: QuestionsProgressProps) {
-  const { showLoginAlert } = props;
+  const { showLoginAlert, isLoading = false } = props;
 
   return (
     <div className="mb-5 overflow-hidden rounded-lg border border-gray-300 bg-white p-6">
