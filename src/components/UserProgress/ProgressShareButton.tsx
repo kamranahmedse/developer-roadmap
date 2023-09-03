@@ -61,7 +61,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
         className
       )}
       onClick={handleCopyLink}
-      disabled={!disabled}
+      disabled={disabled}
     >
       {isCopied ? (
         <>
