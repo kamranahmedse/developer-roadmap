@@ -48,7 +48,7 @@ const { frontmatter } = questionGroup;
         </p>
       </div>
 
-      <QuestionsList questions={questionGroup.questions} client:load />
+      <QuestionsList groupId={questionGroup.id} questions={questionGroup.questions} client:load />
     </div>
   </div>
 

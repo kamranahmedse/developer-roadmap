@@ -9,12 +9,13 @@ type ConfettiPosition = {
 };
 
 type ConfettiProps = {
-  element: HTMLElement | null;
-  onDone: () => void;
+  pieces?: number;
+  element?: HTMLElement | null;
+  onDone?: () => void;
 };
 
 export function Confetti(props: ConfettiProps) {
-  const { element, onDone } = props;
+  const { element = document.body, onDone = () => null, pieces = 40 } = props;
 
   const [confettiPos, setConfettiPos] = useState<
     undefined | ConfettiPosition
@@ -48,7 +49,7 @@ export function Confetti(props: ConfettiProps) {
   return (
     <ReactConfetti
       height={document.body.scrollHeight}
-      numberOfPieces={40}
+      numberOfPieces={pieces}
       recycle={false}
       onConfettiComplete={(confettiInstance) => {
         setConfettiPos(undefined);
@@ -56,7 +57,7 @@ export function Confetti(props: ConfettiProps) {
       }}
       initialVelocityX={4}
       initialVelocityY={8}
-      tweenDuration={25}
+      tweenDuration={10}
       confettiSource={{
         x: confettiPos.x,
         y: confettiPos.y,
