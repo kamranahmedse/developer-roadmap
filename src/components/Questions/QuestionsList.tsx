@@ -36,6 +36,17 @@ export function QuestionsList(props: QuestionsListProps) {
   const alreadyKnowRef = useRef<HTMLButtonElement>(null);
   const didNotKnowRef = useRef<HTMLButtonElement>(null);
 
+  function showConfetti(el: HTMLElement | null) {
+    // If confetti is already showing, remove that first
+    if (confettiEl) {
+      setConfettiEl(null);
+    }
+
+    window.setTimeout(() => {
+      setConfettiEl(el);
+    }, 0);
+  }
+
   async function fetchUserProgress(): Promise<
     UserQuestionProgress | undefined
   > {
@@ -146,7 +157,7 @@ export function QuestionsList(props: QuestionsListProps) {
           disabled={isLoading || isUpdatingStatus}
           ref={alreadyKnowRef}
           onClick={(e) => {
-            setConfettiEl(alreadyKnowRef.current);
+            showConfetti(alreadyKnowRef.current);
             updateQuestionStatus('know', currQuestion.id).finally(() => null);
           }}
           className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
@@ -157,7 +168,7 @@ export function QuestionsList(props: QuestionsListProps) {
         <button
           ref={didNotKnowRef}
           onClick={() => {
-            setConfettiEl(didNotKnowRef.current);
+            showConfetti(didNotKnowRef.current);
             updateQuestionStatus('dontKnow', currQuestion.id).finally(
               () => null
             );

@@ -20,12 +20,7 @@ export function Confetti(props: ConfettiProps) {
     undefined | ConfettiPosition
   >();
 
-  useEffect(() => {
-    if (!element) {
-      setConfettiPos(undefined);
-      return;
-    }
-
+  function populateConfettiPosition(element: HTMLElement) {
     const elRect = element.getBoundingClientRect();
 
     // set confetti position, keeping in mind the scroll values
@@ -35,6 +30,15 @@ export function Confetti(props: ConfettiProps) {
       w: elRect?.width || 0,
       h: elRect?.height || 0,
     });
+  }
+
+  useEffect(() => {
+    if (!element) {
+      setConfettiPos(undefined);
+      return;
+    }
+
+    populateConfettiPosition(element);
   }, [element]);
 
   if (!confettiPos) {
@@ -47,7 +51,6 @@ export function Confetti(props: ConfettiProps) {
       numberOfPieces={40}
       recycle={false}
       onConfettiComplete={(confettiInstance) => {
-        confettiInstance?.reset();
         setConfettiPos(undefined);
         onDone();
       }}
