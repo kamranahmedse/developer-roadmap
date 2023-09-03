@@ -11,9 +11,11 @@ import { useToast } from '../../hooks/use-toast';
 
 type UserQuestionProgress = {
   know: string[];
-  didNotKnow: string[];
-  skipped: string[];
+  dontKnow: string[];
+  skip: string[];
 };
+
+type ProgressType = keyof UserQuestionProgress;
 
 type QuestionsListProps = {
   groupId: string;
@@ -70,14 +72,14 @@ export function QuestionsList(props: QuestionsListProps) {
     setUserProgress(userProgress);
 
     const knownQuestions = userProgress?.know || [];
-    const didNotKnowQuestions = userProgress?.didNotKnow || [];
-    const skippedQuestions = userProgress?.skipped || [];
+    const didNotKnowQuestions = userProgress?.dontKnow || [];
+    const skipQuestions = userProgress?.skip || [];
 
     const pendingQuestions = unshuffledQuestions.filter((question) => {
       return (
         !knownQuestions.includes(question.id) &&
         !didNotKnowQuestions.includes(question.id) &&
-        !skippedQuestions.includes(question.id)
+        !skipQuestions.includes(question.id)
       );
     });
 
@@ -88,20 +90,75 @@ export function QuestionsList(props: QuestionsListProps) {
     setIsLoading(false);
   }
 
+  async function resetProgress(type: ProgressType | 'all' = 'all') {
+    let knownQuestions = userProgress?.know || [];
+    let didNotKnowQuestions = userProgress?.dontKnow || [];
+    let skipQuestions = userProgress?.skip || [];
+
+    if (!isLoggedIn()) {
+      if (type === 'know') {
+        knownQuestions = [];
+      } else if (type === 'dontKnow') {
+        didNotKnowQuestions = [];
+      } else if (type === 'skip') {
+        skipQuestions = [];
+      } else if (type === 'all') {
+        knownQuestions = [];
+        didNotKnowQuestions = [];
+        skipQuestions = [];
+      }
+    } else {
+      setIsLoading(true);
+
+      const { response, error } = await httpPut<UserQuestionProgress>(
+        `/v1-reset-question-progress/${groupId}`,
+        {
+          type,
+        }
+      );
+
+      if (error) {
+        toast.error(error.message || 'Error resetting progress');
+        return;
+      }
+
+      knownQuestions = response?.know || [];
+      didNotKnowQuestions = response?.dontKnow || [];
+      skipQuestions = response?.skip || [];
+    }
+
+    const pendingQuestions = unshuffledQuestions.filter((question) => {
+      return (
+        !knownQuestions.includes(question.id) &&
+        !didNotKnowQuestions.includes(question.id) &&
+        !skipQuestions.includes(question.id)
+      );
+    });
+
+    setUserProgress({
+      know: knownQuestions,
+      dontKnow: didNotKnowQuestions,
+      skip: skipQuestions,
+    });
+
+    setPendingQuestions(pendingQuestions.sort(() => Math.random() - 0.5));
+    setIsLoading(false);
+  }
+
   async function updateQuestionStatus(
-    status: 'know' | 'dontKnow' | 'skip',
+    status: ProgressType,
     questionId: string
   ) {
     setIsLoading(true);
-    let newProgress = userProgress || { know: [], didNotKnow: [], skipped: [] };
+    let newProgress = userProgress || { know: [], dontKnow: [], skip: [] };
 
     if (!isLoggedIn()) {
       if (status === 'know') {
         newProgress.know.push(questionId);
       } else if (status == 'dontKnow') {
-        newProgress.didNotKnow.push(questionId);
+        newProgress.dontKnow.push(questionId);
       } else if (status == 'skip') {
-        newProgress.skipped.push(questionId);
+        newProgress.skip.push(questionId);
       }
     } else {
       const { response, error } = await httpPut<UserQuestionProgress>(
@@ -130,10 +187,10 @@ export function QuestionsList(props: QuestionsListProps) {
     loadQuestions().then(() => null);
   }, [unshuffledQuestions]);
 
-  const knownCount = userProgress?.know.length || 0;
-  const didNotKnowCount = userProgress?.didNotKnow.length || 0;
-  const skippedCount = userProgress?.skipped.length || 0;
-  const hasProgress = knownCount > 0 || didNotKnowCount > 0 || skippedCount > 0;
+  const knowCount = userProgress?.know.length || 0;
+  const dontKnowCount = userProgress?.dontKnow.length || 0;
+  const skipCount = userProgress?.skip.length || 0;
+  const hasProgress = knowCount > 0 || dontKnowCount > 0 || skipCount > 0;
 
   const currQuestion = pendingQuestions[0];
 
@@ -147,12 +204,15 @@ export function QuestionsList(props: QuestionsListProps) {
       />
 
       <QuestionsProgress
-        knowCount={knownCount}
-        didNotKnowCount={didNotKnowCount}
-        skippedCount={skippedCount}
+        knowCount={knowCount}
+        didNotKnowCount={dontKnowCount}
+        skippedCount={skipCount}
         totalCount={unshuffledQuestions?.length || questions?.length}
         isLoading={isLoading}
         showLoginAlert={!isLoggedIn() && hasProgress}
+        onResetClick={() => {
+          resetProgress('all').finally(() => null);
+        }}
       />
 
       <div className="relative mb-4 flex min-h-[400px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white">

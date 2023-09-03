@@ -8,6 +8,7 @@ type QuestionsProgressProps = {
   didNotKnowCount?: number;
   totalCount?: number;
   skippedCount?: number;
+  onResetClick?: () => void;
 };
 
 export function QuestionsProgress(props: QuestionsProgressProps) {
@@ -18,6 +19,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
     didNotKnowCount = 0,
     totalCount = 0,
     skippedCount = 0,
+    onResetClick = () => null,
   } = props;
 
   const totalSolved = knowCount + didNotKnowCount + skippedCount;
@@ -64,7 +66,11 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           </span>
         </span>
 
-        <button className="flex items-center text-red-600 hover:text-red-900">
+        <button
+          disabled={isLoading}
+          onClick={onResetClick}
+          className="flex items-center text-red-600 transition-opacity duration-300 hover:text-red-900 disabled:opacity-50"
+        >
           <RotateCcw className="mr-1 h-4" />
           Reset
         </button>
