@@ -80,7 +80,7 @@ export function QuestionsList(props: QuestionsListProps) {
     setIsLoading(false);
   }
 
-  async function resetProgress(type: QuestionProgressType | 'all' = 'all') {
+  async function resetProgress(type: QuestionProgressType | 'reset' = 'reset') {
     let knownQuestions = userProgress?.know || [];
     let didNotKnowQuestions = userProgress?.dontKnow || [];
     let skipQuestions = userProgress?.skip || [];
@@ -92,7 +92,7 @@ export function QuestionsList(props: QuestionsListProps) {
         didNotKnowQuestions = [];
       } else if (type === 'skip') {
         skipQuestions = [];
-      } else if (type === 'all') {
+      } else if (type === 'reset') {
         knownQuestions = [];
         didNotKnowQuestions = [];
         skipQuestions = [];
@@ -105,7 +105,7 @@ export function QuestionsList(props: QuestionsListProps) {
           import.meta.env.PUBLIC_API_URL
         }/v1-reset-question-progress/${groupId}`,
         {
-          type,
+          status: type,
         }
       );
 
@@ -207,7 +207,7 @@ export function QuestionsList(props: QuestionsListProps) {
         isLoading={isLoading}
         showLoginAlert={!isLoggedIn() && hasProgress}
         onResetClick={() => {
-          resetProgress('all').finally(() => null);
+          resetProgress('reset').finally(() => null);
         }}
       />
 
@@ -231,7 +231,7 @@ export function QuestionsList(props: QuestionsListProps) {
             knowCount={knowCount}
             didNotKnowCount={dontKnowCount}
             skippedCount={skipCount}
-            onReset={(type: QuestionProgressType | 'all') => {
+            onReset={(type: QuestionProgressType | 'reset') => {
               resetProgress(type).finally(() => null);
             }}
           />
@@ -241,8 +241,8 @@ export function QuestionsList(props: QuestionsListProps) {
       </div>
 
       <div
-        className={`flex flex-col gap-3 sm:flex-row ${
-          hasFinished ? 'invisible' : 'visible'
+        className={`flex flex-col gap-3 transition-opacity duration-300 sm:flex-row ${
+          hasFinished ? 'opacity-0' : 'opacity-100'
         }`}
       >
         <button

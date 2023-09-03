@@ -30,7 +30,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div
-            className="absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800"
+            className="absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800 transition-[width] duration-400"
             style={{
               width: `${donePercentage}%`,
             }}

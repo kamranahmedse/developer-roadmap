@@ -23,7 +23,7 @@ function ProgressStatButton(props: ProgressStatButtonProps) {
     <button
       disabled={isDisabled}
       onClick={onClick}
-      className="group relative flex flex-1 items-center overflow-hidden rounded-xl border border-gray-300 bg-white py-3 px-4 text-black disabled:pointer-events-none disabled:opacity-50"
+      className="group relative flex flex-1 items-center overflow-hidden rounded-xl border border-gray-300 bg-white py-3 px-4 text-black disabled:pointer-events-none disabled:opacity-50 hover:border-black transition-colors"
     >
       {icon}
       <span className="flex flex-grow justify-between">
@@ -32,7 +32,7 @@ function ProgressStatButton(props: ProgressStatButtonProps) {
       </span>
 
       <span className="absolute top-full left-0 right-0 flex h-full items-center justify-center border border-black bg-black text-white transition-all duration-200 group-hover:top-0">
-        Restart
+        Restart Asking
       </span>
     </button>
   );
@@ -43,7 +43,7 @@ type QuestionFinishedProps = {
   didNotKnowCount: number;
   skippedCount: number;
   totalCount: number;
-  onReset: (type: QuestionProgressType | 'all') => void;
+  onReset: (type: QuestionProgressType | 'reset') => void;
 };
 
 export function QuestionFinished(props: QuestionFinishedProps) {
@@ -85,7 +85,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
       </div>
       <div className="mt-2 text-sm">
         <button
-          onClick={() => onReset('all')}
+          onClick={() => onReset('reset')}
           className="flex items-center gap-0.5 text-red-700 hover:text-black"
         >
           <RefreshCcw className="mr-1 h-4" />
