@@ -198,7 +198,7 @@ export function QuestionsList(props: QuestionsListProps) {
   const hasFinished = !isLoading && hasProgress && !currQuestion;
 
   return (
-    <div className="mb-40 gap-3 text-center">
+    <div className="mb-0 sm:mb-40 gap-3 text-center">
       <QuestionsProgress
         knowCount={knowCount}
         didNotKnowCount={dontKnowCount}
@@ -223,7 +223,7 @@ export function QuestionsList(props: QuestionsListProps) {
 
       <div
         ref={containerRef}
-        className="relative mb-4 flex min-h-[400px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white"
+        className="relative mb-4 flex min-h-[250px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white sm:min-h-[400px]"
       >
         {hasFinished && (
           <QuestionFinished
@@ -241,16 +241,18 @@ export function QuestionsList(props: QuestionsListProps) {
       </div>
 
       <div
-        className={`flex flex-col gap-3 transition-opacity duration-300 sm:flex-row ${
+        className={`flex flex-col gap-1 sm:gap-3 transition-opacity duration-300 sm:flex-row ${
           hasFinished ? 'opacity-0' : 'opacity-100'
         }`}
       >
         <button
           disabled={isLoading || !currQuestion}
           onClick={(e) => {
+            e.stopPropagation();
+            e.preventDefault()
             updateQuestionStatus('know', currQuestion.id).finally(() => null);
           }}
-          className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-gray-300 bg-white text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
           <CheckCircle className="mr-1 h-4 text-current" />
           Already Know that
@@ -262,7 +264,7 @@ export function QuestionsList(props: QuestionsListProps) {
             );
           }}
           disabled={isLoading || !currQuestion}
-          className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-gray-300 bg-white text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
           <Sparkles className="mr-1 h-4 text-current" />
           Didn't Know that
@@ -273,7 +275,7 @@ export function QuestionsList(props: QuestionsListProps) {
           }}
           disabled={isLoading || !currQuestion}
           data-next-question="skip"
-          className="flex flex-1 items-center rounded-xl border border-red-600 p-3 text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-red-600 text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
           <SkipForward className="mr-1 h-4" />
           Skip Question

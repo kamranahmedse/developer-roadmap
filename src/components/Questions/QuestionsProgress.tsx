@@ -26,11 +26,11 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
   const donePercentage = (totalSolved / totalCount) * 100;
 
   return (
-    <div className="mb-5 overflow-hidden rounded-lg border border-gray-300 bg-white p-6">
+    <div className="mb-3 sm:mb-5 overflow-hidden rounded-lg border border-gray-300 bg-white p-4 sm:p-6">
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div
-            className="absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800 transition-[width] duration-400"
+            className="duration-400 absolute bottom-0 left-0 top-0 rounded-xl bg-slate-800 transition-[width]"
             style={{
               width: `${donePercentage}%`,
             }}
@@ -46,7 +46,9 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <CheckCircle className="mr-1 h-4" />
           <span>Knew</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className='tabular-nums'>{knowCount}</span> Questions
+            <span className="tabular-nums">{knowCount}</span>{' '}
+            <span className="hidden lg:inline">Questions</span>
+            <span className="inline sm:hidden">Questions</span>
           </span>
         </span>
 
@@ -54,7 +56,9 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <Sparkles className="mr-1 h-4" />
           <span>Learnt</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className='tabular-nums'>{didNotKnowCount}</span> Questions
+            <span className="tabular-nums">{didNotKnowCount}</span>{' '}
+            <span className="hidden lg:inline">Questions</span>
+            <span className="inline sm:hidden">Questions</span>
           </span>
         </span>
 
@@ -62,7 +66,9 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <SkipForward className="mr-1 h-4" />
           <span>Skipped</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            <span className='tabular-nums'>{skippedCount}</span> Questions
+            <span className="tabular-nums">{skippedCount}</span>{' '}
+            <span className="hidden lg:inline">Questions</span>
+            <span className="inline sm:hidden">Questions</span>
           </span>
         </span>
 
@@ -73,6 +79,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
         >
           <RotateCcw className="mr-1 h-4" />
           Reset
+          <span className='inline lg:hidden'>Progress</span>
         </button>
       </div>
 

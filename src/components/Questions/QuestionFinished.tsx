@@ -23,7 +23,7 @@ function ProgressStatButton(props: ProgressStatButtonProps) {
     <button
       disabled={isDisabled}
       onClick={onClick}
-      className="group relative flex flex-1 items-center overflow-hidden rounded-xl border border-gray-300 bg-white py-3 px-4 text-black disabled:pointer-events-none disabled:opacity-50 hover:border-black transition-colors"
+      className="group relative text-sm sm:text-base flex flex-1 items-center overflow-hidden rounded-md sm:rounded-xl border border-gray-300 bg-white py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black disabled:pointer-events-none disabled:opacity-50"
     >
       {icon}
       <span className="flex flex-grow justify-between">
@@ -51,16 +51,18 @@ export function QuestionFinished(props: QuestionFinishedProps) {
     props;
 
   return (
-    <div className="relative flex flex-grow flex-col items-center justify-center">
-      <PartyPopper className="mb-4 h-24 w-24 text-gray-300" />
-      <h1 className="text-2xl font-semibold text-gray-700">
+    <div className="relative flex flex-grow flex-col items-center justify-center px-4 sm:px-0">
+      <PartyPopper className="mb-4 mt-10 h-14 w-14 text-gray-300 sm:mt-0 sm:h-24 sm:w-24" />
+      <h1 className="text-lg font-semibold text-gray-700 sm:text-2xl">
         Questions Finished
       </h1>
-      <p className="mt-2 text-gray-500">
-        Click below revisit specific or all questions
+      <p className="mt-0 text-sm text-gray-500 sm:mt-2 sm:text-base">
+        Click below revisit{' '}
+        <span className="hidden sm:inline">specific or all questions</span>{' '}
+        <span className="inline sm:hidden">questions</span>
       </p>
 
-      <div className="mt-5 mb-5 flex w-full flex-col gap-3 px-2 sm:flex-row sm:px-16">
+      <div className="mt-5 mb-5 flex w-full flex-col gap-1.5 sm:gap-3 px-2 sm:flex-row sm:px-16">
         <ProgressStatButton
           icon={<ThumbsUp className="mr-1 h-4" />}
           label="Knew"
@@ -83,10 +85,10 @@ export function QuestionFinished(props: QuestionFinishedProps) {
           onClick={() => onReset('skip')}
         />
       </div>
-      <div className="mt-2 text-sm">
+      <div className="mt-2 mb-4 sm:mb-0 text-sm">
         <button
           onClick={() => onReset('reset')}
-          className="flex items-center gap-0.5 text-red-700 hover:text-black"
+          className="flex items-center gap-0.5 text-red-700 hover:text-black text-sm sm:text-base"
         >
           <RefreshCcw className="mr-1 h-4" />
           Restart Asking
