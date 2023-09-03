@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { Fragment, useEffect, useRef, useState } from 'react';
 import type { QuestionType } from '../../lib/question-group';
 import { markdownToHtml } from '../../lib/markdown';
 import Prism from 'prismjs';
@@ -58,12 +58,12 @@ export function QuestionCard(props: QuestionCardProps) {
             const totalTopics = question.topics?.length || 0;
 
             return (
-              <>
+              <Fragment key={topic}>
                 <span className="capitalize">{topic}</span>
                 {counter !== totalTopics - 1 && (
                   <span className="mx-2">&middot;</span>
                 )}
-              </>
+              </Fragment>
             );
           })}
         </div>

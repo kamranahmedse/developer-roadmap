@@ -46,7 +46,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <CheckCircle className="mr-1 h-4" />
           <span>Knew</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            {knowCount} Questions
+            <span className='tabular-nums'>{knowCount}</span> Questions
           </span>
         </span>
 
@@ -54,7 +54,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <Sparkles className="mr-1 h-4" />
           <span>Learnt</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            {didNotKnowCount} Questions
+            <span className='tabular-nums'>{didNotKnowCount}</span> Questions
           </span>
         </span>
 
@@ -62,7 +62,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
           <SkipForward className="mr-1 h-4" />
           <span>Skipped</span>
           <span className="ml-2 rounded-md bg-gray-200/80 px-1.5 font-medium text-black">
-            {skippedCount} Questions
+            <span className='tabular-nums'>{skippedCount}</span> Questions
           </span>
         </span>
 
