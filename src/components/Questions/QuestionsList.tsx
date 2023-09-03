@@ -8,6 +8,7 @@ import type { QuestionType } from '../../lib/question-group';
 import { Confetti } from '../Confetti';
 import { httpGet, httpPut } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
+import { QuestionFinished } from './QuestionFinished';
 
 type UserQuestionProgress = {
   know: string[];
@@ -15,7 +16,7 @@ type UserQuestionProgress = {
   skip: string[];
 };
 
-type ProgressType = keyof UserQuestionProgress;
+export type QuestionProgressType = keyof UserQuestionProgress;
 
 type QuestionsListProps = {
   groupId: string;
@@ -90,7 +91,7 @@ export function QuestionsList(props: QuestionsListProps) {
     setIsLoading(false);
   }
 
-  async function resetProgress(type: ProgressType | 'all' = 'all') {
+  async function resetProgress(type: QuestionProgressType | 'all' = 'all') {
     let knownQuestions = userProgress?.know || [];
     let didNotKnowQuestions = userProgress?.dontKnow || [];
     let skipQuestions = userProgress?.skip || [];
@@ -146,7 +147,7 @@ export function QuestionsList(props: QuestionsListProps) {
   }
 
   async function updateQuestionStatus(
-    status: ProgressType,
+    status: QuestionProgressType,
     questionId: string
   ) {
     setIsLoading(true);
@@ -216,13 +217,24 @@ export function QuestionsList(props: QuestionsListProps) {
       />
 
       <div className="relative mb-4 flex min-h-[400px] w-full overflow-hidden rounded-lg border border-gray-300 bg-white">
-        {!isLoading && <QuestionCard question={currQuestion} />}
+        {!isLoading && hasProgress && !currQuestion && (
+          <QuestionFinished
+            totalCount={unshuffledQuestions?.length || questions?.length || 0}
+            knowCount={knowCount}
+            didNotKnowCount={dontKnowCount}
+            skippedCount={skipCount}
+            onReset={(type: QuestionProgressType | 'all') => {
+              resetProgress(type).finally(() => null);
+            }}
+          />
+        )}
+        {!isLoading && currQuestion && <QuestionCard question={currQuestion} />}
         {isLoading && <QuestionLoader />}
       </div>
 
       <div className="flex flex-col gap-3 sm:flex-row">
         <button
-          disabled={isLoading}
+          disabled={isLoading || !currQuestion}
           ref={alreadyKnowRef}
           onClick={(e) => {
             showConfetti(alreadyKnowRef.current);
@@ -241,7 +253,7 @@ export function QuestionsList(props: QuestionsListProps) {
               () => null
             );
           }}
-          disabled={isLoading}
+          disabled={isLoading || !currQuestion}
           className="flex flex-1 items-center rounded-xl border border-gray-300 bg-white py-3 px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
           <Sparkles className="mr-1 h-4 text-current" />
@@ -251,7 +263,7 @@ export function QuestionsList(props: QuestionsListProps) {
           onClick={() => {
             updateQuestionStatus('skip', currQuestion.id).finally(() => null);
           }}
-          disabled={isLoading}
+          disabled={isLoading || !currQuestion}
           data-next-question="skip"
           className="flex flex-1 items-center rounded-xl border border-red-600 p-3 text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50"
         >
