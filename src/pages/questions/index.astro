@@ -2,6 +2,9 @@
 import GridItem from '../../components/GridItem.astro';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllQuestionGroups } from '../../lib/question-group';
+
+const questionGroups = await getAllQuestionGroups();
 ---
 
 <BaseLayout
@@ -19,30 +22,16 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
   <div class='flex bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>
     <div class='container'>
       <div class='grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3'>
-        <GridItem
-          url={`/questions/frontend`}
-          isNew={false}
-          title={'Frontend Development'}
-          description={'25 Questions &middot; 5 topics'}
-        />
-        <GridItem
-          url={`/questions/backend`}
-          isNew={false}
-          title={'Backend Development'}
-          description={'25 Questions &middot; 5 topics'}
-        />
-        <GridItem
-          url={`/questions/devops`}
-          isNew={false}
-          title={'DevOps Engineering'}
-          description={'25 Questions &middot; 5 topics'}
-        />
-        <GridItem
-          url={`/questions/javascript`}
-          isNew={false}
-          title={'JavaScript'}
-          description={'25 Questions &middot; 5 topics'}
-        />
+        {
+          questionGroups.map((questionGroup) => (
+            <GridItem
+              url={`/questions/${questionGroup.id}`}
+              isNew={questionGroup.frontmatter.isNew}
+              title={questionGroup.frontmatter.title}
+              description={`${questionGroup.questions.length} Questions &middot; ${questionGroup.allTopics.length} topics`}
+            />
+          ))
+        }
       </div>
     </div>
   </div>

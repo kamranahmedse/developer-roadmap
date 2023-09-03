@@ -3,39 +3,52 @@ import GridItem from '../../components/GridItem.astro';
 import SimplePageHeader from '../../components/SimplePageHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Footer from '../../components/Footer.astro';
-import AstroIcon from "../../components/AstroIcon.astro";
+import AstroIcon from '../../components/AstroIcon.astro';
 import { QuestionsList } from '../../components/Questions/QuestionsList';
 
-export async function getStaticPaths() {
-  return [
-    {
-      params: { questionGroupId: 'frontend' },
-      props: {},
-    },
-  ];
+import {
+  getAllQuestionGroups,
+  type QuestionGroupType,
+} from '../../lib/question-group';
+
+export interface Props {
+  questionGroup: QuestionGroupType;
 }
+export async function getStaticPaths() {
+  const questionGroups = await getAllQuestionGroups();
+
+  return questionGroups.map((questionGroup) => {
+    return {
+      params: { questionGroupId: questionGroup.id },
+      props: { questionGroup },
+    };
+  });
+}
+
+const { questionGroup } = Astro.props;
+const { frontmatter } = questionGroup;
 ---
 
 <BaseLayout
-  title='Questions'
-  description={'Step by step guides and paths to learn different tools or technologies'}
-  permalink={'/roadmaps'}
+  title={frontmatter.seo.title}
+  briefTitle={frontmatter.briefTitle}
+  description={frontmatter.seo.description}
+  keywords={frontmatter.seo.keywords}
+  permalink={`/questions/${questionGroup.id}`}
   noIndex={true}
 >
   <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
     <div class='container !max-w-[700px]'>
       <div class='mb-5 mt-2 text-center sm:mb-10 sm:mt-8'>
-        <h1
-          class='my-2 text-3xl font-bold sm:my-5 sm:text-5xl'
-        >
-          Frontend Questions
+        <h1 class='my-2 text-3xl font-bold sm:my-5 sm:text-5xl'>
+          {frontmatter.title}
         </h1>
-        <p class='text-gray-500 text-xl'>
-          Test, rate and improve your frontend knowledge with these questions.
+        <p class='text-xl text-gray-500'>
+          {frontmatter.description}
         </p>
       </div>
 
-      <QuestionsList client:load />
+      <QuestionsList questions={questionGroup.questions} client:load />
     </div>
   </div>
 

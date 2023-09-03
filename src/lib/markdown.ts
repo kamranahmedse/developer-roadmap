@@ -1,10 +1,12 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
 
-export function markdownToHtml(markdown: string, inline: boolean = true): string {
+export function markdownToHtml(markdown: string, isInline = true): string {
   const md = new MarkdownIt();
-  if (!inline) {
+
+  if (isInline) {
+    return md.renderInline(markdown);
+  } else {
     return md.render(markdown);
   }
-  return md.renderInline(markdown);
 }

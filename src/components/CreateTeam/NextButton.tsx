@@ -21,7 +21,7 @@ export function NextButton(props: NextButtonProps) {
 
   return (
     <button
-      type={type}
+      type={type as any}
       onClick={onClick}
       disabled={isLoading}
       className={
