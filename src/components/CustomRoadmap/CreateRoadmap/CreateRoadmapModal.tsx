@@ -18,12 +18,17 @@ export const allowedRoadmapVisibility = [
 ] as const;
 export type AllowedRoadmapVisibility =
   (typeof allowedRoadmapVisibility)[number];
+export const allowedCustomRoadmapType = ['role', 'skill'] as const;
+export type AllowedCustomRoadmapType =
+  (typeof allowedCustomRoadmapType)[number];
+
 export interface RoadmapDocument {
   _id?: string;
   title: string;
   description?: string;
   creatorId: string;
   teamId?: string;
+  type: AllowedCustomRoadmapType;
   visibility: AllowedRoadmapVisibility;
   nodes: any[];
   edges: any[];
@@ -41,6 +46,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
+  const [type, setType] = useState<AllowedCustomRoadmapType>('role');
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -55,6 +61,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
       {
         title,
         description,
+        type,
         nodes: [],
         edges: [],
       }
@@ -133,6 +140,32 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             <div className="absolute bottom-2 right-2 text-xs text-gray-400">
               {description.length}/80
             </div>
+          </div>
+        </div>
+        <div className="mt-4">
+          <label
+            htmlFor="type"
+            className="block text-xs uppercase text-gray-400"
+          >
+            Type
+          </label>
+          <div className="mt-1">
+            <select
+              id="type"
+              name="type"
+              required
+              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+              value={type}
+              onChange={(e) =>
+                setType(e.target.value as AllowedCustomRoadmapType)
+              }
+            >
+              {allowedCustomRoadmapType.map((type) => (
+                <option key={type} value={type}>
+                  {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
+                </option>
+              ))}
+            </select>
           </div>
         </div>
         <div className="mt-4 flex gap-2">
