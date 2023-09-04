@@ -1,4 +1,5 @@
-import { atom } from 'nanostores';
+import { atom, computed } from 'nanostores';
+import { type RoadmapDocument } from '../components/CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 export const isCreatingRoadmap = atom<boolean>(false);
 export function showCreateRoadmapModal() {
@@ -7,3 +8,9 @@ export function showCreateRoadmapModal() {
 export function hideCreateRoadmapModal() {
   isCreatingRoadmap.set(false);
 }
+
+export const currentRoadmap = atom<RoadmapDocument | undefined>(undefined);
+export const isCurrentRoadmapPersonal = computed(
+  currentRoadmap,
+  (roadmap) => roadmap?.teamId === undefined
+);

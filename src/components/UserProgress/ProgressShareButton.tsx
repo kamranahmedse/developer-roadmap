@@ -3,7 +3,6 @@ import { useCopyText } from '../../hooks/use-copy-text';
 import type { ResourceType } from '../../lib/resource-progress';
 import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { ShareIcon } from '../ReactIcons/ShareIcon';
-import { isLoggedIn } from '../../lib/jwt';
 import { cn } from '../../lib/classname';
 
 type ProgressShareButtonProps = {
@@ -12,8 +11,6 @@ type ProgressShareButtonProps = {
   className?: string;
   shareIconClassName?: string;
   checkIconClassName?: string;
-  canShare?: boolean;
-  shareUrl?: string;
 };
 export function ProgressShareButton(props: ProgressShareButtonProps) {
   const {
@@ -22,18 +19,12 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     className,
     shareIconClassName,
     checkIconClassName,
-    canShare,
-    shareUrl,
   } = props;
 
   const user = useAuth();
   const { copyText, isCopied } = useCopyText();
 
   function handleCopyLink() {
-    if (shareUrl) {
-      copyText(shareUrl);
-      return;
-    }
     const isDev = import.meta.env.DEV;
     const newUrl = new URL(
       isDev ? 'http://localhost:3000' : 'https://roadmap.sh'
@@ -61,7 +52,6 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
         className
       )}
       onClick={handleCopyLink}
-      disabled={!canShare}
     >
       {isCopied ? (
         <>

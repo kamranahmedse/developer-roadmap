@@ -7,6 +7,7 @@ import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { useAuth } from '../../hooks/use-auth';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
+import { currentRoadmap } from '../../stores/roadmap';
 
 export const allowedLinkTypes = [
   'video',
@@ -59,6 +60,7 @@ export function CustomRoadmap() {
     }
 
     setRoadmap(response);
+    currentRoadmap.set(response);
     setIsLoading(false);
   }
 
@@ -79,7 +81,6 @@ export function CustomRoadmap() {
         description={roadmap?.description!}
         roadmapId={roadmap?._id!}
         allowEdit={user?.id === roadmap?.creatorId}
-        visibility={roadmap?.visibility!}
       />
       <RoadmapRenderer roadmap={roadmap!} />
 

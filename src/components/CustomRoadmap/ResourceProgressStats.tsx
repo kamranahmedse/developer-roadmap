@@ -2,27 +2,35 @@ import { HelpCircle } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ResourceType } from '../../lib/resource-progress';
 import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
-import type { AllowedRoadmapVisibility } from './CustomRoadmap';
+import { useState } from 'react';
+import { ShareRoadmapModal } from './ShareRoadmapModal';
+import { useStore } from '@nanostores/react';
+import { currentRoadmap, isCurrentRoadmapPersonal } from '../../stores/roadmap';
+import { ShareIcon } from '../ReactIcons/ShareIcon';
 
 type ResourceProgressStatsProps = {
   resourceId: string;
   resourceType: ResourceType;
   isSecondaryBanner?: boolean;
-  canShare?: boolean;
-  shareLink?: string;
 };
 
 export function ResourceProgressStats(props: ResourceProgressStatsProps) {
-  const {
-    resourceId,
-    resourceType,
-    isSecondaryBanner = false,
-    canShare,
-    shareLink,
-  } = props;
+  const { resourceId, resourceType, isSecondaryBanner = false } = props;
+  const [isSharing, setIsSharing] = useState(false);
+  const $currentRoadmap = useStore(currentRoadmap);
+  const $isCurrentRoadmapPersonal = useStore(isCurrentRoadmapPersonal);
 
   return (
     <>
+      {isSharing && (
+        <ShareRoadmapModal
+          onClose={() => setIsSharing(false)}
+          roadmapId={$currentRoadmap?._id!}
+          title={$currentRoadmap?.title!}
+          visibility={$currentRoadmap?.visibility!}
+          isTeamRoadmap={!$isCurrentRoadmapPersonal}
+        />
+      )}
       <div
         data-progress-nums-container
         className={cn(
@@ -68,12 +76,14 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex items-center gap-3 opacity-0 transition-opacity duration-300"
           data-progress-nums
         >
-          <ProgressShareButton
-            canShare={canShare}
-            shareUrl={shareLink}
-            resourceId={resourceId}
-            resourceType={resourceType}
-          />
+          <button
+            className={cn(
+              'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
+            )}
+            onClick={() => setIsSharing(true)}
+          >
+            <ShareIcon className="h-3.5 w-3.5 stroke-[2.5px]" /> Share Progress
+          </button>
           <button
             data-popup="progress-help"
             className="flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black"
@@ -101,12 +111,14 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex items-center gap-2 opacity-0 transition-opacity duration-300"
           data-progress-nums
         >
-          <ProgressShareButton
-            canShare={canShare}
-            shareUrl={shareLink}
-            resourceId={resourceId}
-            resourceType={resourceType}
-          />
+          <button
+            className={cn(
+              'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
+            )}
+            onClick={() => setIsSharing(true)}
+          >
+            <ShareIcon className="h-3.5 w-3.5 stroke-[2.5px]" /> Share Progress
+          </button>
         </div>
       </div>
     </>

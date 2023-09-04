@@ -1,5 +1,4 @@
 import { cn } from '../../lib/classname';
-import type { AllowedRoadmapVisibility } from './CustomRoadmap';
 import { ResourceProgressStats } from './ResourceProgressStats';
 
 type RoadmapHintProps = {
@@ -7,8 +6,6 @@ type RoadmapHintProps = {
   roadmapTitle: string;
   hasTNSBanner?: boolean;
   tnsBannerLink?: string;
-  canShare?: boolean;
-  shareLink?: string;
 };
 
 export function RoadmapHint(props: RoadmapHintProps) {
@@ -17,13 +14,11 @@ export function RoadmapHint(props: RoadmapHintProps) {
     roadmapId,
     hasTNSBanner = false,
     tnsBannerLink = '',
-    shareLink,
-    canShare,
   } = props;
 
   return (
     <div
-      className={cn('mt-4 mb-0 rounded-md border-0 sm:mt-7 sm:border', {
+      className={cn('mb-0 mt-4 rounded-md border-0 sm:mt-7 sm:border', {
         'sm:-mb-[82px]': hasTNSBanner,
         'sm:-mb-[65px]': !hasTNSBanner,
       })}
@@ -47,8 +42,6 @@ export function RoadmapHint(props: RoadmapHintProps) {
         isSecondaryBanner={hasTNSBanner}
         resourceId={roadmapId}
         resourceType="roadmap"
-        shareLink={shareLink}
-        canShare={canShare}
       />
     </div>
   );
