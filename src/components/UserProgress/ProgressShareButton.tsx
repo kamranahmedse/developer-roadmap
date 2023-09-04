@@ -12,7 +12,7 @@ type ProgressShareButtonProps = {
   className?: string;
   shareIconClassName?: string;
   checkIconClassName?: string;
-  disabled?: boolean;
+  canShare?: boolean;
   shareUrl?: string;
 };
 export function ProgressShareButton(props: ProgressShareButtonProps) {
@@ -22,7 +22,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     className,
     shareIconClassName,
     checkIconClassName,
-    disabled,
+    canShare,
     shareUrl,
   } = props;
 
@@ -61,7 +61,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
         className
       )}
       onClick={handleCopyLink}
-      disabled={disabled}
+      disabled={!canShare}
     >
       {isCopied ? (
         <>

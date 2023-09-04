@@ -7,7 +7,8 @@ type RoadmapHintProps = {
   roadmapTitle: string;
   hasTNSBanner?: boolean;
   tnsBannerLink?: string;
-  visibility?: AllowedRoadmapVisibility;
+  canShare?: boolean;
+  shareLink?: string;
 };
 
 export function RoadmapHint(props: RoadmapHintProps) {
@@ -16,7 +17,8 @@ export function RoadmapHint(props: RoadmapHintProps) {
     roadmapId,
     hasTNSBanner = false,
     tnsBannerLink = '',
-    visibility,
+    shareLink,
+    canShare,
   } = props;
 
   return (
@@ -45,7 +47,8 @@ export function RoadmapHint(props: RoadmapHintProps) {
         isSecondaryBanner={hasTNSBanner}
         resourceId={roadmapId}
         resourceType="roadmap"
-        visibility={visibility}
+        shareLink={shareLink}
+        canShare={canShare}
       />
     </div>
   );
