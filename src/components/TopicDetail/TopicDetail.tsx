@@ -20,11 +20,24 @@ import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
-import type { RoadmapContentDocument } from '../CustomRoadmap/CustomRoadmap';
+import type {
+  AllowedLinkTypes,
+  RoadmapContentDocument,
+} from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
+import { cn } from '../../lib/classname';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
+};
+
+const linkTypes: Record<AllowedLinkTypes, string> = {
+  article: 'bg-yellow-400',
+  course: 'bg-green-400',
+  opensource: 'bg-blue-400',
+  podcast: 'bg-purple-400',
+  video: 'bg-pink-300',
+  website: 'bg-red-300',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
@@ -232,32 +245,30 @@ export function TopicDetail(props: TopicDetailProps) {
             ></div>
 
             {links.length > 0 && (
-              <div className="mt-6 border-t">
-                <p className="mb-2 mt-4 text-sm leading-relaxed text-gray-400">
-                  Visit the following resources to learn more:
-                </p>
-                <ol className="list-decimal">
-                  {links.map((link) => {
-                    return (
-                      <li className="ml-5 marker:text-gray-400">
-                        <span>
+              <ul className="mt-6 space-y-1">
+                {links.map((link) => {
+                  return (
+                    <li>
+                      <a
+                        href={link.url}
+                        target="_blank"
+                        className="font-medium underline"
+                      >
+                        <span
+                          className={cn(
+                            'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
+                            linkTypes[link.type]
+                          )}
+                        >
                           {link.type.charAt(0).toUpperCase() +
                             link.type.slice(1)}
-                          :{' '}
                         </span>
-                        <a
-                          href={link.url}
-                          target="_blank"
-                          rel="noreferrer"
-                          className="text-blue-600 underline hover:text-blue-500 hover:no-underline"
-                        >
-                          {link.title}
-                        </a>
-                      </li>
-                    );
-                  })}
-                </ol>
-              </div>
+                        {link.title}
+                      </a>
+                    </li>
+                  );
+                })}
+              </ul>
             )}
 
             {/* Contribution */}
