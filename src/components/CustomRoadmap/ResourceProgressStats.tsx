@@ -69,7 +69,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           data-progress-nums
         >
           <ProgressShareButton
-            disabled={canShare}
+            canShare={canShare}
             shareUrl={shareLink}
             resourceId={resourceId}
             resourceType={resourceType}
