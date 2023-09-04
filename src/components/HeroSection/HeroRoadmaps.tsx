@@ -3,7 +3,9 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { ResourceType } from '../../lib/resource-progress';
-import { MapIcon } from 'lucide-react';
+import { MapIcon, Plus } from 'lucide-react';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmapModal';
+import { useState } from 'react';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -86,8 +88,13 @@ export function HeroRoadmaps(props: ProgressListProps) {
     showCustomRoadmaps = false,
   } = props;
 
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
+
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
       {
         <HeroTitle
           icon={
@@ -130,30 +137,43 @@ export function HeroRoadmaps(props: ProgressListProps) {
           {customRoadmaps.length === 0 && (
             <p className="rounded-md border border-dashed border-gray-800 p-2 text-sm text-gray-600">
               You haven't created any custom roadmaps yet.{' '}
-              <button className="text-gray-500 underline underline-offset-2 hover:text-gray-400">
+              <button
+                className="text-gray-500 underline underline-offset-2 hover:text-gray-400"
+                onClick={() => setIsCreatingRoadmap(true)}
+              >
                 Create one!
               </button>
             </p>
           )}
 
-          <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {customRoadmaps.map((customRoadmap) => {
-              return (
-                <HeroRoadmap
-                  resourceId={customRoadmap.resourceId}
-                  resourceType={'roadmap'}
-                  resourceTitle={customRoadmap.resourceTitle}
-                  percentageDone={
-                    ((customRoadmap.skipped + customRoadmap.done) /
-                      customRoadmap.total) *
-                    100
-                  }
-                  url={`/r?id=${customRoadmap.resourceId}`}
-                  allowFavorite={false}
-                />
-              );
-            })}
-          </div>
+          {customRoadmaps.length > 0 && (
+            <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
+              {customRoadmaps.map((customRoadmap) => {
+                return (
+                  <HeroRoadmap
+                    resourceId={customRoadmap.resourceId}
+                    resourceType={'roadmap'}
+                    resourceTitle={customRoadmap.resourceTitle}
+                    percentageDone={
+                      ((customRoadmap.skipped + customRoadmap.done) /
+                        customRoadmap.total) *
+                      100
+                    }
+                    url={`/r?id=${customRoadmap.resourceId}`}
+                    allowFavorite={false}
+                  />
+                );
+              })}
+
+              <button
+                className="flex items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-800 p-3 text-sm text-gray-400 hover:border-gray-600 hover:bg-gray-900 hover:text-gray-300"
+                onClick={() => setIsCreatingRoadmap(true)}
+              >
+                <Plus className="h-4 w-4" />
+                Create a new roadmap
+              </button>
+            </div>
+          )}
         </div>
       )}
     </div>
