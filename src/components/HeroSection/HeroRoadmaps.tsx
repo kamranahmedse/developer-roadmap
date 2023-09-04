@@ -4,8 +4,8 @@ import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { ResourceType } from '../../lib/resource-progress';
 import { MapIcon, Plus } from 'lucide-react';
-import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmapModal';
-import { useState } from 'react';
+import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
+import { showCreateRoadmapModal } from '../../stores/roadmap';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -88,13 +88,8 @@ export function HeroRoadmaps(props: ProgressListProps) {
     showCustomRoadmaps = false,
   } = props;
 
-  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
-
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
-      {isCreatingRoadmap && (
-        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
-      )}
       {
         <HeroTitle
           icon={
@@ -139,7 +134,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
               You haven't created any custom roadmaps yet.{' '}
               <button
                 className="text-gray-500 underline underline-offset-2 hover:text-gray-400"
-                onClick={() => setIsCreatingRoadmap(true)}
+                onClick={showCreateRoadmapModal}
               >
                 Create one!
               </button>
@@ -151,6 +146,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
               {customRoadmaps.map((customRoadmap) => {
                 return (
                   <HeroRoadmap
+                    key={customRoadmap.resourceId}
                     resourceId={customRoadmap.resourceId}
                     resourceType={'roadmap'}
                     resourceTitle={customRoadmap.resourceTitle}
@@ -165,13 +161,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                 );
               })}
 
-              <button
-                className="flex items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-800 p-3 text-sm text-gray-400 hover:border-gray-600 hover:bg-gray-900 hover:text-gray-300"
-                onClick={() => setIsCreatingRoadmap(true)}
-              >
-                <Plus className="h-4 w-4" />
-                Create a new roadmap
-              </button>
+              <CreateRoadmapButton />
             </div>
           )}
         </div>

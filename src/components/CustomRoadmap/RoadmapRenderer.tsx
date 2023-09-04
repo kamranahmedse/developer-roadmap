@@ -1,10 +1,10 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
-import type { RoadmapDocument } from './CustomRoadmap';
 import './RoadmapRenderer.css';
 import { renderResourceProgress, updateResourceProgress, type ResourceProgressType, renderTopicProgress, refreshProgressCounters } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
+import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;

@@ -1,16 +1,15 @@
 import { useEffect, useState } from 'react';
 import { httpDelete, httpGet } from '../../lib/http';
-import { type RoadmapDocument } from './CustomRoadmap';
 import { pageProgressMessage } from '../../stores/page';
 import { ExternalLinkIcon, Plus } from 'lucide-react';
-import { CreateRoadmapModal } from './CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
+import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
+import { showCreateRoadmapModal } from '../../stores/roadmap';
 
 export function RoadmapListPage() {
   const [roadmapList, setRoadmapList] = useState<RoadmapDocument[]>([]);
 
   const toast = useToast();
-  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
   const [removingRoadmapId, setRemovingRoadmapId] = useState('');
 
   async function loadRoadmapList() {
@@ -56,16 +55,13 @@ export function RoadmapListPage() {
 
   return (
     <div>
-      {isCreatingRoadmap && (
-        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
-      )}
       <div className="mb-3 flex items-center justify-between">
         <span className={'text-gray-400'}>
           {roadmapList.length} custom roadmap(s)
         </span>
         <button
           className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-          onClick={() => setIsCreatingRoadmap(true)}
+          onClick={showCreateRoadmapModal}
         >
           <Plus size={16} />
           Create Roadmap

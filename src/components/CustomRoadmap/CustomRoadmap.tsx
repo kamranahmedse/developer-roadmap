@@ -6,27 +6,7 @@ import { RoadmapHeader } from './RoadmapHeader';
 import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { useAuth } from '../../hooks/use-auth';
-
-export const allowedRoadmapVisibility = [
-  'me',
-  'friends',
-  'team',
-  'public',
-] as const;
-export type AllowedRoadmapVisibility =
-  (typeof allowedRoadmapVisibility)[number];
-export interface RoadmapDocument {
-  _id?: string;
-  title: string;
-  description?: string;
-  creatorId: string;
-  teamId?: string;
-  visibility: AllowedRoadmapVisibility;
-  nodes: any[];
-  edges: any[];
-  createdAt: Date;
-  updatedAt: Date;
-}
+import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 
 export const allowedLinkTypes = [
   'video',
