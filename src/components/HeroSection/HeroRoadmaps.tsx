@@ -74,7 +74,7 @@ export function HeroTitle(props: ProgressTitleProps) {
 type ProgressListProps = {
   progress: UserProgressResponse;
   showCustomRoadmaps?: boolean;
-  customRoadmaps: any[]; // @fixme implement this
+  customRoadmaps: UserProgressResponse;
   isLoading?: boolean;
 };
 
@@ -82,7 +82,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
   const {
     progress,
     isLoading = false,
-    customRoadmaps = [{} /* @fixme implement this */],
+    customRoadmaps,
     showCustomRoadmaps = false,
   } = props;
 
@@ -137,16 +137,22 @@ export function HeroRoadmaps(props: ProgressListProps) {
           )}
 
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {customRoadmaps.map((customRoadmap) => (
-              <HeroRoadmap
-                resourceId={'343434'}
-                resourceType={'roadmap'}
-                resourceTitle={'Frontend Roadmap Revised'}
-                percentageDone={50}
-                url={`/r?${'34343434'}`}
-                allowFavorite={false}
-              />
-            ))}
+            {customRoadmaps.map((customRoadmap) => {
+              return (
+                <HeroRoadmap
+                  resourceId={customRoadmap.resourceId}
+                  resourceType={'roadmap'}
+                  resourceTitle={customRoadmap.resourceTitle}
+                  percentageDone={
+                    ((customRoadmap.skipped + customRoadmap.done) /
+                      customRoadmap.total) *
+                    100
+                  }
+                  url={`/r?id=${customRoadmap.resourceId}`}
+                  allowFavorite={false}
+                />
+              );
+            })}
           </div>
         </div>
       )}

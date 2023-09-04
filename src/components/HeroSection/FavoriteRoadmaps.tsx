@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { EmptyProgress } from './EmptyProgress';
 import { httpGet } from '../../lib/http';
 import { HeroRoadmaps } from './HeroRoadmaps';
-import {isLoggedIn} from "../../lib/jwt";
+import { isLoggedIn } from '../../lib/jwt';
 
 export type UserProgressResponse = {
   resourceId: string;
@@ -48,6 +48,11 @@ function renderProgress(progressList: UserProgressResponse) {
   });
 }
 
+type ProgressResponse = {
+  default: UserProgressResponse;
+  custom: UserProgressResponse;
+};
+
 export function FavoriteRoadmaps() {
   const isAuthenticated = isLoggedIn();
   if (!isAuthenticated) {
@@ -56,7 +61,10 @@ export function FavoriteRoadmaps() {
 
   const [isPreparing, setIsPreparing] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [progress, setProgress] = useState<UserProgressResponse>([]);
+  const [progress, setProgress] = useState<ProgressResponse>({
+    default: [],
+    custom: [],
+  });
   const [containerOpacity, setContainerOpacity] = useState(0);
 
   function showProgressContainer() {
@@ -79,10 +87,9 @@ export function FavoriteRoadmaps() {
   async function loadProgress() {
     setIsLoading(true);
 
-    const { response: progressList, error } =
-      await httpGet<UserProgressResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-get-user-all-progress`
-      );
+    const { response: progressList, error } = await httpGet<ProgressResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-hero-roadmaps`
+    );
 
     if (error || !progressList) {
       return;
@@ -93,7 +100,8 @@ export function FavoriteRoadmaps() {
     showProgressContainer();
 
     // render progress on featured items
-    renderProgress(progressList);
+    renderProgress(progressList.default);
+    renderProgress(progressList.custom);
   }
 
   useEffect(() => {
@@ -111,7 +119,8 @@ export function FavoriteRoadmaps() {
     return null;
   }
 
-  const hasProgress = progress.length > 0;
+  const hasProgress =
+    progress?.default?.length > 0 || progress?.custom?.length > 0;
 
   return (
     <div
@@ -120,9 +129,16 @@ export function FavoriteRoadmaps() {
       }`}
     >
       <div className="container min-h-full">
-        {!isLoading && progress.length == 0 && <EmptyProgress />}
-        {progress.length > 0 && (
-          <HeroRoadmaps customRoadmaps={[]} progress={progress} isLoading={isLoading} />
+        {!isLoading &&
+          progress?.default?.length == 0 &&
+          progress?.custom?.length == 0 && <EmptyProgress />}
+        {hasProgress && (
+          <HeroRoadmaps
+            showCustomRoadmaps={progress.custom.length > 0}
+            customRoadmaps={progress.custom}
+            progress={progress.default}
+            isLoading={isLoading}
+          />
         )}
       </div>
     </div>
