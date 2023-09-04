@@ -96,7 +96,7 @@ if (roadmapFAQs.length) {
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
           />
-          <TopicDetail client:idle />
+          <TopicDetail client:idle canSubmitContribution={true} />
 
           <FrameRenderer
             resourceType={'roadmap'}
@@ -121,7 +121,7 @@ if (roadmapFAQs.length) {
     <UserProgressModal
       resourceId={roadmapId}
       resourceType='roadmap'
-      client:only="react"
+      client:only='react'
     />
 
     <FAQs faqs={roadmapFAQs} />

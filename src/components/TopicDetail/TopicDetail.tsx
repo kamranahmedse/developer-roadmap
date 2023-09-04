@@ -23,13 +23,20 @@ import { useToast } from '../../hooks/use-toast';
 import type { RoadmapContentDocument } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
 
-export function TopicDetail() {
+type TopicDetailProps = {
+  canSubmitContribution: boolean;
+};
+
+export function TopicDetail(props: TopicDetailProps) {
+  const { canSubmitContribution } = props;
+
   const [contributionAlertMessage, setContributionAlertMessage] = useState('');
   const [isActive, setIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isContributing, setIsContributing] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
+  const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
   const isGuest = useMemo(() => !isLoggedIn(), []);
@@ -108,7 +115,9 @@ export function TopicDetail() {
         : `/best-practices/${resourceId}/${topicPartial}`;
 
     if (isCustomRoadmap) {
-      topicUrl = `${import.meta.env.PUBLIC_API_URL}/v1-get-node-content/${resourceId}/${topicId}`
+      topicUrl = `${
+        import.meta.env.PUBLIC_API_URL
+      }/v1-get-node-content/${resourceId}/${topicId}`;
     }
 
     httpGet<string | RoadmapContentDocument>(
@@ -119,7 +128,7 @@ export function TopicDetail() {
           headers: {
             Accept: 'text/html',
           },
-        })
+        }),
       }
     )
       .then(({ response }) => {
@@ -131,10 +140,17 @@ export function TopicDetail() {
         if (!isCustomRoadmap) {
           // It's full HTML with page body, head etc.
           // We only need the inner HTML of the #main-content
-          const node = new DOMParser().parseFromString(response as string, 'text/html');
+          const node = new DOMParser().parseFromString(
+            response as string,
+            'text/html'
+          );
           topicHtml = node?.getElementById('main-content')?.outerHTML || '';
         } else {
-          topicHtml = markdownToHtml((response as RoadmapContentDocument)?.description || '', false);
+          setLinks((response as RoadmapContentDocument)?.links || []);
+          topicHtml = markdownToHtml(
+            (response as RoadmapContentDocument)?.description || '',
+            false
+          );
         }
 
         setIsLoading(false);
@@ -215,30 +231,61 @@ export function TopicDetail() {
               dangerouslySetInnerHTML={{ __html: topicHtml }}
             ></div>
 
-            {/* Contribution */}
-            <div className="mt-8 flex-1 border-t">
-              <p className="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
-                Help others learn by submitting links to learn more about this
-                topic{' '}
-              </p>
-              <button
-                onClick={() => {
-                  if (isGuest) {
-                    setIsActive(false);
-                    showLoginPopup();
-                    return;
-                  }
+            {links.length > 0 && (
+              <div className="mt-6 border-t">
+                <p className="mb-2 mt-4 text-sm leading-relaxed text-gray-400">
+                  Visit the following resources to learn more:
+                </p>
+                <ol className="list-decimal">
+                  {links.map((link) => {
+                    return (
+                      <li className="ml-5 marker:text-gray-400">
+                        <span>
+                          {link.type.charAt(0).toUpperCase() +
+                            link.type.slice(1)}
+                          :{' '}
+                        </span>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="text-blue-600 underline hover:text-blue-500 hover:no-underline"
+                        >
+                          {link.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ol>
+              </div>
+            )}
 
-                  setIsContributing(true);
-                }}
-                disabled={!!contributionAlertMessage}
-                className="block w-full rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
-              >
-                {contributionAlertMessage
-                  ? contributionAlertMessage
-                  : 'Submit a Link'}
-              </button>
-            </div>
+            {/* Contribution */}
+            {canSubmitContribution && (
+              <div className="mt-8 flex-1 border-t">
+                <p className="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
+                  Help others learn by submitting links to learn more about this
+                  topic{' '}
+                </p>
+                <button
+                  onClick={() => {
+                    if (isGuest) {
+                      setIsActive(false);
+                      showLoginPopup();
+                      return;
+                    }
+
+                    setIsContributing(true);
+                  }}
+                  disabled={!!contributionAlertMessage}
+                  className="block w-full rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                >
+                  {contributionAlertMessage
+                    ? contributionAlertMessage
+                    : 'Submit a Link'}
+                </button>
+              </div>
+            )}
           </>
         )}
       </div>

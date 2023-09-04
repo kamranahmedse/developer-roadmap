@@ -92,8 +92,6 @@ export function CustomRoadmap() {
     return null;
   }
 
-  console.log(roadmap)
-
   return (
     <>
       <RoadmapHeader
@@ -105,7 +103,7 @@ export function CustomRoadmap() {
       />
       <RoadmapRenderer roadmap={roadmap!} />
 
-      <TopicDetail />
+      <TopicDetail canSubmitContribution={false} />
     </>
   );
 }
