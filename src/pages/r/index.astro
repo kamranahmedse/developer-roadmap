@@ -2,9 +2,11 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { CustomRoadmap } from '../../components/CustomRoadmap/CustomRoadmap';
 import Loader from '../../components/Loader.astro';
+import ProgressHelpPopup from '../../components/ProgressHelpPopup.astro';
 ---
 
 <BaseLayout title='Roadmaps'>
+  <ProgressHelpPopup />
   <div>
     <div class='flex min-h-[300px] flex-col'>
       <div class='flex grow items-center justify-center' data-roadmap-loader>

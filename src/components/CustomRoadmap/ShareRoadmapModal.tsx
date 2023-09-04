@@ -95,7 +95,9 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
   return (
     <Modal onClose={onClose}>
       <div className="p-4 pb-0">
-        <h1>Share {title}</h1>
+        <h1 className="text-lg font-medium leading-5 text-gray-900">
+          Share {title}
+        </h1>
       </div>
 
       <ul className="mt-4 border-t">
