@@ -32,12 +32,12 @@ type TopicDetailProps = {
 };
 
 const linkTypes: Record<AllowedLinkTypes, string> = {
-  article: 'bg-yellow-400',
-  course: 'bg-green-400',
-  opensource: 'bg-blue-400',
-  podcast: 'bg-purple-400',
-  video: 'bg-pink-300',
-  website: 'bg-red-300',
+  article: 'bg-yellow-200',
+  course: 'bg-green-200',
+  opensource: 'bg-blue-200',
+  podcast: 'bg-purple-200',
+  video: 'bg-pink-200',
+  website: 'bg-red-200',
 };
 
 export function TopicDetail(props: TopicDetailProps) {
