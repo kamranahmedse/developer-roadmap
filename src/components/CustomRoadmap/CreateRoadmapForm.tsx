@@ -29,7 +29,7 @@ export function CreateRoadmapForm(props: CreateRoadmapFormProps) {
 
     setIsLoading(true);
     const { response, error } = await httpPost<RoadmapDocument>(
-      '/v1-create-roadmap',
+      `${import.meta.env.PUBLIC_API_URL}/v1-create-roadmap`,
       {
         title,
         description,
@@ -120,7 +120,7 @@ export function CreateRoadmapForm(props: CreateRoadmapFormProps) {
           {isLoading ? (
             <Loader2 size={16} className="animate-spin" />
           ) : (
-            'Create Roadmap'
+            'Create'
           )}
         </button>
       </div>
