@@ -5,6 +5,16 @@ import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
 
+type ProgressResponse = {
+  updatedAt: string;
+  title: string;
+  id: string;
+  learning: number;
+  skipped: number;
+  done: number;
+  total: number;
+};
+
 export type ActivityResponse = {
   done: {
     today: number;
@@ -13,24 +23,9 @@ export type ActivityResponse = {
   learning: {
     today: number;
     total: number;
-    roadmaps: {
-      title: string;
-      id: string;
-      learning: number;
-      done: number;
-      total: number;
-      skipped: number;
-      updatedAt: string;
-    }[];
-    bestPractices: {
-      title: string;
-      id: string;
-      learning: number;
-      done: number;
-      skipped: number;
-      total: number;
-      updatedAt: string;
-    }[];
+    roadmaps: ProgressResponse[];
+    bestPractices: ProgressResponse[];
+    customs: ProgressResponse[];
   };
   streak: {
     count: number;
@@ -78,6 +73,7 @@ export function ActivityPage() {
 
   const learningRoadmaps = activity?.learning.roadmaps || [];
   const learningBestPractices = activity?.learning.bestPractices || [];
+  const learningCustoms = activity?.learning.customs || [];
 
   if (isLoading) {
     return null;
@@ -93,9 +89,12 @@ export function ActivityPage() {
 
       <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
         {learningRoadmaps.length === 0 &&
-          learningBestPractices.length === 0 && <EmptyActivity />}
+          learningBestPractices.length === 0 &&
+          learningCustoms.length === 0 && <EmptyActivity />}
 
-        {(learningRoadmaps.length > 0 || learningBestPractices.length > 0) && (
+        {(learningRoadmaps.length > 0 ||
+          learningBestPractices.length > 0 ||
+          learningCustoms.length > 0) && (
           <>
             <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
@@ -110,7 +109,7 @@ export function ActivityPage() {
                 })
                 .map((roadmap) => (
                   <ResourceProgress
-                      key={roadmap.id}
+                    key={roadmap.id}
                     doneCount={roadmap.done || 0}
                     learningCount={roadmap.learning || 0}
                     totalCount={roadmap.total || 0}
@@ -137,6 +136,7 @@ export function ActivityPage() {
                 })
                 .map((bestPractice) => (
                   <ResourceProgress
+                    key={bestPractice.id}
                     doneCount={bestPractice.done || 0}
                     totalCount={bestPractice.total || 0}
                     learningCount={bestPractice.learning || 0}
@@ -145,6 +145,33 @@ export function ActivityPage() {
                     resourceType={'best-practice'}
                     title={bestPractice.title}
                     updatedAt={bestPractice.updatedAt}
+                    onCleared={() => {
+                      pageProgressMessage.set('Updating activity');
+                      loadActivity().finally(() => {
+                        pageProgressMessage.set('');
+                      });
+                    }}
+                  />
+                ))}
+              {learningCustoms
+                .sort((a, b) => {
+                  const updatedAtA = new Date(a.updatedAt);
+                  const updatedAtB = new Date(b.updatedAt);
+
+                  return updatedAtB.getTime() - updatedAtA.getTime();
+                })
+                .map((roadmap) => (
+                  <ResourceProgress
+                    key={roadmap.id}
+                    isCustomRoadmap
+                    doneCount={roadmap.done || 0}
+                    totalCount={roadmap.total || 0}
+                    learningCount={roadmap.learning || 0}
+                    resourceId={roadmap.id}
+                    skippedCount={roadmap.skipped || 0}
+                    resourceType="roadmap"
+                    title={roadmap.title}
+                    updatedAt={roadmap.updatedAt}
                     onCleared={() => {
                       pageProgressMessage.set('Updating activity');
                       loadActivity().finally(() => {

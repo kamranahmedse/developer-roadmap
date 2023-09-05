@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { ShareRoadmapModal } from './ShareRoadmapModal';
 import { useStore } from '@nanostores/react';
 import { canEditCurrentRoadmap } from '../../stores/roadmap';
-import { ShareIcon } from '../ReactIcons/ShareIcon';
 
 type ResourceProgressStatsProps = {
   resourceId: string;
