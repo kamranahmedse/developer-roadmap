@@ -90,7 +90,7 @@ export function CustomRoadmap() {
       <UserProgressModal
         resourceId={roadmap?._id!}
         resourceType="roadmap"
-        json={{ nodes: roadmap?.nodes, edges: roadmap?.edges }}
+        isCustomRoadmap={true}
       />
     </>
   );

@@ -18,7 +18,7 @@ export type ProgressMapProps = {
   resourceId: string;
   resourceType: ResourceType;
   onClose?: () => void;
-  json?: any;
+  isCustomRoadmap?: boolean;
 };
 
 type UserProgressResponse = {
@@ -40,7 +40,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceType,
     userId: propUserId,
     onClose: onModalClose,
-    json,
+    isCustomRoadmap,
   } = props;
   const { s: userId = propUserId } = getUrlParams();
 
@@ -65,6 +65,12 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }
 
+  if (isCustomRoadmap) {
+    resourceJsonUrl = `${
+      import.meta.env.PUBLIC_API_URL
+    }/v1-get-roadmap/${resourceId}`;
+  }
+
   async function getUserProgress(
     userId: string,
     resourceType: string,
@@ -86,14 +92,17 @@ export function UserProgressModal(props: ProgressMapProps) {
   async function getRoadmapSVG(
     jsonUrl: string
   ): Promise<SVGElement | undefined> {
-    if (json) {
-      return await renderFlowJSON(json);
-    }
     const { error, response: roadmapJson } = await httpGet(jsonUrl);
     if (error || !roadmapJson) {
       throw error || new Error('Something went wrong. Please try again!');
     }
 
+    if (isCustomRoadmap) {
+      return await renderFlowJSON({
+        nodes: roadmapJson?.nodes || [],
+        edges: roadmapJson?.edges || [],
+      });
+    }
     return await wireframeJSONToSVG(roadmapJson, {
       fontURL: '/fonts/balsamiq.woff2',
     });

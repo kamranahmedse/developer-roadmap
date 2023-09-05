@@ -30,6 +30,7 @@ export type ListFriendsResponse = {
   status: FriendshipStatus;
   roadmaps: FriendResourceProgress[];
   bestPractices: FriendResourceProgress[];
+  customs: FriendResourceProgress[];
 }[];
 
 type GroupingType = {
@@ -52,6 +53,7 @@ export function FriendsPage() {
   const [showFriendProgress, setShowFriendProgress] = useState<{
     resourceId: string;
     friend: ListFriendsResponse[0];
+    isCustomRoadmap?: boolean;
   }>();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -120,6 +122,7 @@ export function FriendsPage() {
           resourceId={showFriendProgress.resourceId}
           resourceType={'roadmap'}
           onClose={() => setShowFriendProgress(undefined)}
+          isCustomRoadmap={showFriendProgress.isCustomRoadmap}
         />
       )}
 
@@ -167,10 +170,11 @@ export function FriendsPage() {
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
-              onShowResourceProgress={(resourceId) => {
+              onShowResourceProgress={(resourceId, isCustomRoadmap) => {
                 setShowFriendProgress({
                   resourceId,
                   friend,
+                  isCustomRoadmap,
                 });
               }}
               key={friend.userId}
