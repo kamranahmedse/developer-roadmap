@@ -8,6 +8,7 @@ import { TopicDetail } from '../TopicDetail/TopicDetail';
 import { useAuth } from '../../hooks/use-auth';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
+import { UserProgressModal } from '../UserProgress/UserProgressModal';
 
 export const allowedLinkTypes = [
   'video',
@@ -86,6 +87,11 @@ export function CustomRoadmap() {
       <RoadmapHeader />
       <RoadmapRenderer roadmap={roadmap!} />
       <TopicDetail canSubmitContribution={false} />
+      <UserProgressModal
+        resourceId={roadmap?._id!}
+        resourceType="roadmap"
+        json={{ nodes: roadmap?.nodes, edges: roadmap?.edges }}
+      />
     </>
   );
 }

@@ -206,11 +206,14 @@ export function topicSelectorAll(
       }
     });
 
-  getMatchingElements([
-    `[data-group-id="${topicId}"]`, // Elements with exact match of the topic id
-    `[data-group-id="check:${topicId}"]`, // Matching "check:XXXX" box of the topic
-    `[data-node-id="${topicId}"]`, // Matching custom roadmap nodes
-  ]).forEach((element) => {
+  getMatchingElements(
+    [
+      `[data-group-id="${topicId}"]`, // Elements with exact match of the topic id
+      `[data-group-id="check:${topicId}"]`, // Matching "check:XXXX" box of the topic
+      `[data-node-id="${topicId}"]`, // Matching custom roadmap nodes
+    ],
+    parentElement
+  ).forEach((element) => {
     matchingElements.push(element);
   });
 
@@ -283,10 +286,13 @@ export async function renderResourceProgress(
   refreshProgressCounters();
 }
 
-function getMatchingElements(quries: string[]): Element[] {
+function getMatchingElements(
+  quries: string[],
+  parentElement: Document | SVGElement = document
+): Element[] {
   const matchingElements: Element[] = [];
   quries.forEach((query) => {
-    document.querySelectorAll(query).forEach((element) => {
+    parentElement.querySelectorAll(query).forEach((element) => {
       matchingElements.push(element);
     });
   });
@@ -338,18 +344,19 @@ export function refreshProgressCounters() {
     checkBoxes -
     totalRemoved;
 
-  const totalDone = getMatchingElements([
-    '.clickable-group.done:not([data-group-id^="ext_link:"])',
-    '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
-  ]).length - totalCheckBoxesDone;
-  const totalLearning = getMatchingElements([
-    '.clickable-group.learning',
-    '[data-node-id].learning',
-  ]).length - totalCheckBoxesLearning;
-  const totalSkipped = getMatchingElements([
-    '.clickable-group.skipped',
-    '[data-node-id].skipped',
-  ]).length - totalCheckBoxesSkipped;
+  const totalDone =
+    getMatchingElements([
+      '.clickable-group.done:not([data-group-id^="ext_link:"])',
+      '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
+    ]).length - totalCheckBoxesDone;
+  const totalLearning =
+    getMatchingElements([
+      '.clickable-group.learning',
+      '[data-node-id].learning',
+    ]).length - totalCheckBoxesLearning;
+  const totalSkipped =
+    getMatchingElements(['.clickable-group.skipped', '[data-node-id].skipped'])
+      .length - totalCheckBoxesSkipped;
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {

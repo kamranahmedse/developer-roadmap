@@ -11,12 +11,14 @@ import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import { renderFlowJSON } from '../../../renderer/renderer';
 
 export type ProgressMapProps = {
   userId?: string;
   resourceId: string;
   resourceType: ResourceType;
   onClose?: () => void;
+  json?: any;
 };
 
 type UserProgressResponse = {
@@ -38,6 +40,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceType,
     userId: propUserId,
     onClose: onModalClose,
+    json,
   } = props;
   const { s: userId = propUserId } = getUrlParams();
 
@@ -83,6 +86,9 @@ export function UserProgressModal(props: ProgressMapProps) {
   async function getRoadmapSVG(
     jsonUrl: string
   ): Promise<SVGElement | undefined> {
+    if (json) {
+      return await renderFlowJSON(json);
+    }
     const { error, response: roadmapJson } = await httpGet(jsonUrl);
     if (error || !roadmapJson) {
       throw error || new Error('Something went wrong. Please try again!');
@@ -154,6 +160,14 @@ export function UserProgressModal(props: ProgressMapProps) {
 
         svg.querySelectorAll('[data-group-id]').forEach((el) => {
           el.removeAttribute('data-group-id');
+        });
+
+        svg.querySelectorAll('[data-node-id]').forEach((el) => {
+          el.removeAttribute('data-node-id');
+        });
+
+        svg.querySelectorAll('[data-type]').forEach((el) => {
+          el.removeAttribute('data-type');
         });
 
         setResourceSvg(svg);
