@@ -44,7 +44,6 @@ export function hideRoadmapLoader() {
 export function CustomRoadmap() {
   const { id } = getUrlParams() as { id: string };
 
-  const user = useAuth();
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
