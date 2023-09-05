@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { getUrlParams } from '../../lib/browser';
-import { httpGet } from '../../lib/http';
+import { httpGet, type AppError, type FetchError } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
@@ -47,6 +47,7 @@ export function CustomRoadmap() {
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
+  const [error, setError] = useState<AppError | FetchError | undefined>();
 
   async function getRoadmap() {
     setIsLoading(true);
@@ -56,6 +57,8 @@ export function CustomRoadmap() {
 
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
+      setError(error);
+      setIsLoading(false);
       return;
     }
 
@@ -74,16 +77,14 @@ export function CustomRoadmap() {
     return null;
   }
 
+  if (error) {
+    return <div>Something went wrong</div>;
+  }
+
   return (
     <>
-      <RoadmapHeader
-        title={roadmap?.title!}
-        description={roadmap?.description!}
-        roadmapId={roadmap?._id!}
-        allowEdit={user?.id === roadmap?.creatorId}
-      />
+      <RoadmapHeader />
       <RoadmapRenderer roadmap={roadmap!} />
-
       <TopicDetail canSubmitContribution={false} />
     </>
   );

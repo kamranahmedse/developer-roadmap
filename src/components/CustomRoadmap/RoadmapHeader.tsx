@@ -1,15 +1,13 @@
 import { Pencil } from 'lucide-react';
 import { RoadmapHint } from './RoadmapHint';
+import { useStore } from '@nanostores/react';
+import { canEditCurrentRoadmap, currentRoadmap } from '../../stores/roadmap';
 
-type RoadmapHeaderProps = {
-  title: string;
-  description: string;
-  roadmapId: string;
-  allowEdit?: boolean;
-};
+type RoadmapHeaderProps = {};
 
 export function RoadmapHeader(props: RoadmapHeaderProps) {
-  const { title, description, roadmapId, allowEdit } = props;
+  const $canEditCurrentRoadmap = useStore(canEditCurrentRoadmap);
+  const { title, description, _id: roadmapId } = useStore(currentRoadmap) || {};
 
   return (
     <div className="border-b">
@@ -41,7 +39,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             </button>
           </div>
           <div>
-            {allowEdit && (
+            {$canEditCurrentRoadmap && (
               <a
                 href={`${import.meta.env.PUBLIC_EDITOR_APP_URL}/${roadmapId}`}
                 className="inline-flex items-center justify-center rounded-md bg-gray-500 px-3 py-1.5 text-xs font-medium text-white hover:bg-gray-600 sm:text-sm"
@@ -55,9 +53,9 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
         </div>
 
         <RoadmapHint
-          roadmapTitle={title}
+          roadmapTitle={title!}
           hasTNSBanner={false}
-          roadmapId={roadmapId}
+          roadmapId={roadmapId!}
         />
       </div>
     </div>

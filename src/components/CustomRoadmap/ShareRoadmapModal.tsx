@@ -7,38 +7,34 @@ import { httpPatch } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
+import { currentRoadmap, isCurrentRoadmapPersonal } from '../../stores/roadmap';
+import { useStore } from '@nanostores/react';
 
 type ShareRoadmapModalProps = {
-  roadmapId: string;
-  title: string;
-  isTeamRoadmap: boolean;
-  visibility: AllowedRoadmapVisibility;
   onClose: () => void;
 };
 
 export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
-  const {
-    roadmapId,
-    title,
-    visibility: defaultVisibility,
-    onClose,
-    isTeamRoadmap,
-  } = props;
+  const { onClose } = props;
 
   const user = useAuth();
   const toast = useToast();
+  const $currentRoadmap = useStore(currentRoadmap);
+  const $isCurrentRoadmapPersonal = useStore(isCurrentRoadmapPersonal);
+  const roadmapId = $currentRoadmap?._id!;
+
   const { copyText, isCopied } = useCopyText();
-  const [visibility, setVisibility] = useState(defaultVisibility);
+  const [visibility, setVisibility] = useState($currentRoadmap?.visibility);
   const [isLoading, setIsLoading] = useState(false);
 
   async function updateVisibility(newVisibility: AllowedRoadmapVisibility) {
     setIsLoading(true);
     const { response, error } = await httpPatch(
-      `${
-        import.meta.env.PUBLIC_API_URL
-      }/v1-update-roadmap-visibility/${roadmapId}`,
+      `${import.meta.env.PUBLIC_API_URL}/v1-update-roadmap-visibility/${
+        $currentRoadmap?._id
+      }`,
       {
-        visibility,
+        visibility: newVisibility,
       }
     );
 
@@ -52,6 +48,10 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
     setIsLoading(false);
     toast.success('Visibility updated');
     setVisibility(newVisibility);
+    currentRoadmap.set({
+      ...$currentRoadmap!,
+      visibility: newVisibility,
+    });
   }
 
   function handleCopy() {
@@ -75,7 +75,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
       label: 'Anyone with the link',
       command: () => updateVisibility('public'),
     },
-    ...(isTeamRoadmap
+    ...(!isCurrentRoadmapPersonal
       ? [
           {
             id: 'team',
@@ -96,7 +96,7 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
     <Modal onClose={onClose}>
       <div className="p-4 pb-0">
         <h1 className="text-lg font-medium leading-5 text-gray-900">
-          Share {title}
+          Updating {$currentRoadmap?.title}
         </h1>
       </div>
 

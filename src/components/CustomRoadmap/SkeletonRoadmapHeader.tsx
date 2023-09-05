@@ -30,7 +30,7 @@ export function SkeletonRoadmapHeader() {
             <button
               data-guest-required
               data-popup="login-popup"
-              className="inline-flex hidden items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm"
+              className="inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm"
               aria-label="Subscribe for Updates"
             >
               <span className="ml-2">Subscribe</span>
