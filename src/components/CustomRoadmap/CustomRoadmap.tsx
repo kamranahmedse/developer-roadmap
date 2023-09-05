@@ -61,6 +61,8 @@ export function CustomRoadmap() {
       setIsLoading(false);
       return;
     }
+    
+    document.title = `${response.title} - Roadmap.sh`;
 
     setRoadmap(response);
     currentRoadmap.set(response);
