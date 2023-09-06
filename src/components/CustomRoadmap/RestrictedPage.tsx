@@ -7,13 +7,39 @@ type RestrictedPageProps = {
 
 export function RestrictedPage(props: RestrictedPageProps) {
   const { error } = props;
+
+  if (error.status === 404) {
+    return (
+      <ErrorMessage
+        icon={<ShieldBan className="h-16 w-16" />}
+        title="Roadmap not found"
+        message="The roadmap you are looking for does not exist or has been deleted."
+      />
+    );
+  }
+
+  return (
+    <ErrorMessage
+      icon={<ShieldBan className="h-16 w-16" />}
+      title="Restricted Access"
+      message={error?.message}
+    />
+  );
+}
+
+type ErrorMessageProps = {
+  title: string;
+  message: string;
+  icon: React.ReactNode;
+};
+
+function ErrorMessage(props: ErrorMessageProps) {
+  const { title, message, icon } = props;
   return (
     <div className="flex grow flex-col items-center justify-center">
-      <ShieldBan className="h-16 w-16" />
-      <h2 className="mt-4 text-2xl font-semibold">Restricted Access</h2>
-      <p>
-        {error?.message || 'This roadmap is not available for public access.'}
-      </p>
+      {icon}
+      <h2 className="mt-4 text-2xl font-semibold">{title}</h2>
+      <p>{message || 'This roadmap is not available for public access.'}</p>
 
       <a
         href="/"

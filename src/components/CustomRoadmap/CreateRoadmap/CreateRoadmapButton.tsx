@@ -12,7 +12,7 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
   const { className } = props;
   function toggleCreateRoadmapHandler() {
     if (!isLoggedIn()) {
-      showLoginPopup();
+      return showLoginPopup();
     }
     showCreateRoadmapModal();
   }
