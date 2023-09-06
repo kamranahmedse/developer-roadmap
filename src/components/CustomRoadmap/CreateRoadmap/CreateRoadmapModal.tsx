@@ -82,9 +82,11 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     }
 
     toast.success('Roadmap created successfully');
-    window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
-      response?._id
-    }`;
+    window.open(
+      `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response?._id}`,
+      '_blank'
+    );
+    hideCreateRoadmapModal();
   }
 
   useEffect(() => {

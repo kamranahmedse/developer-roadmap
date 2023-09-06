@@ -14,7 +14,7 @@ import { $canManageCurrentTeam } from '../stores/team';
 import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
-import { isCreatingRoadmap } from '../stores/roadmap';
+import { showCreateRoadmapModal } from '../stores/roadmap';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -174,7 +174,7 @@ export function TeamRoadmaps() {
         setIsPickingOptions(false);
       }}
       showCreateCustomRoadmapModal={() => {
-        isCreatingRoadmap.set(true);
+        showCreateRoadmapModal();
         setIsPickingOptions(false);
       }}
     />
