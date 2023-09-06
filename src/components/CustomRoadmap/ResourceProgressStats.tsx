@@ -74,7 +74,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
               )}
               onClick={() => setIsSharing(true)}
             >
-              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Update Visibility
+              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Sharing Options
             </button>
           )}
           <button
@@ -111,7 +111,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
               )}
               onClick={() => setIsSharing(true)}
             >
-              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Update Visibility
+              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Sharing Options
             </button>
           )}
         </div>
