@@ -9,6 +9,7 @@ import { useAuth } from '../../hooks/use-auth';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
+import { RestrictedPage } from './RestrictedPage';
 
 export const allowedLinkTypes = [
   'video',
@@ -61,7 +62,7 @@ export function CustomRoadmap() {
       setIsLoading(false);
       return;
     }
-    
+
     document.title = `${response.title} - Roadmap.sh`;
 
     setRoadmap(response);
@@ -80,7 +81,7 @@ export function CustomRoadmap() {
   }
 
   if (error) {
-    return <div>Something went wrong</div>;
+    return <RestrictedPage error={error} />;
   }
 
   return (
