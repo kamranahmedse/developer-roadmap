@@ -1,23 +1,44 @@
 import { useState } from 'react';
+import { useStore } from '@nanostores/react';
+import { Check, Copy, Loader2 } from 'lucide-react';
+
 import { Modal } from '../Modal';
 import type { AllowedRoadmapVisibility } from './CreateRoadmap/CreateRoadmapModal';
-import { Check, Copy, Loader2 } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import { httpPatch } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { useCopyText } from '../../hooks/use-copy-text';
-import { useAuth } from '../../hooks/use-auth';
 import { currentRoadmap, isCurrentRoadmapPersonal } from '../../stores/roadmap';
-import { useStore } from '@nanostores/react';
 
 type ShareRoadmapModalProps = {
   onClose: () => void;
 };
 
+export const allowedVisibilityLabels: {
+  id: AllowedRoadmapVisibility;
+  label: string;
+}[] = [
+  {
+    id: 'me',
+    label: 'Only visible to me',
+  },
+  {
+    id: 'public',
+    label: 'Anyone with the link',
+  },
+  {
+    id: 'team',
+    label: 'Visible to team members',
+  },
+  {
+    id: 'friends',
+    label: 'Only friends can view',
+  },
+];
+
 export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
   const { onClose } = props;
 
-  const user = useAuth();
   const toast = useToast();
   const $currentRoadmap = useStore(currentRoadmap);
   const $isCurrentRoadmapPersonal = useStore(isCurrentRoadmapPersonal);
@@ -63,34 +84,6 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
     copyText(url.toString());
   }
 
-  const allowedVisibilities = [
-    {
-      id: 'me',
-      label: 'Only visible to me',
-      command: () => updateVisibility('me'),
-    },
-    {
-      id: 'public',
-      label: 'Anyone with the link',
-      command: () => updateVisibility('public'),
-    },
-    ...(!isCurrentRoadmapPersonal
-      ? [
-          {
-            id: 'team',
-            label: 'Visible to team members',
-            command: () => updateVisibility('team'),
-          },
-        ]
-      : [
-          {
-            id: 'friends',
-            label: 'Only friends can view',
-            command: () => updateVisibility('friends'),
-          },
-        ]),
-  ];
-
   return (
     <Modal onClose={onClose}>
       <div className="p-4 pb-0">
@@ -100,28 +93,36 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
       </div>
 
       <ul className="mt-4 border-t">
-        {allowedVisibilities.map((v) => (
-          <li key={v.id}>
-            <button
-              disabled={v.id === visibility || isLoading}
-              key={v.id}
-              className={cn(
-                'relative flex w-full items-center border-b p-2.5 px-4 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900 disabled:cursor-not-allowed',
-                v.id === visibility &&
-                  'bg-gray-900 text-white hover:bg-gray-900 hover:text-white'
-              )}
-              onClick={v.command}
-            >
-              {v.label}
+        {allowedVisibilityLabels.map((v) => {
+          if (v.id === 'team' && $isCurrentRoadmapPersonal) {
+            return null;
+          } else if (v.id === 'friends' && !$isCurrentRoadmapPersonal) {
+            return null;
+          }
 
-              {v.id === visibility && (
-                <span className="absolute bottom-0 right-0 top-0 flex w-8 items-center justify-center">
-                  <span className="h-2 w-2 rounded-full bg-green-500" />
-                </span>
-              )}
-            </button>
-          </li>
-        ))}
+          return (
+            <li key={v.id}>
+              <button
+                disabled={v.id === visibility || isLoading}
+                key={v.id}
+                className={cn(
+                  'relative flex w-full items-center border-b p-2.5 px-4 text-sm text-gray-700 hover:bg-gray-200 hover:text-gray-900 disabled:cursor-not-allowed',
+                  v.id === visibility &&
+                    'bg-gray-900 text-white hover:bg-gray-900 hover:text-white'
+                )}
+                onClick={() => updateVisibility(v.id)}
+              >
+                {v.label}
+
+                {v.id === visibility && (
+                  <span className="absolute bottom-0 right-0 top-0 flex w-8 items-center justify-center">
+                    <span className="h-2 w-2 rounded-full bg-green-500" />
+                  </span>
+                )}
+              </button>
+            </li>
+          );
+        })}
       </ul>
 
       <div className="flex items-center justify-between p-4">

@@ -106,6 +106,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
 
                   return (
                     <SelectRoadmapModalItem
+                      key={roadmap.id}
                       title={roadmap.title}
                       isSelected={isSelected}
                       onClick={() => {
@@ -131,6 +132,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
 
                 return (
                   <SelectRoadmapModalItem
+                    key={roadmap.id}
                     title={roadmap.title}
                     isSelected={isSelected}
                     onClick={() => {

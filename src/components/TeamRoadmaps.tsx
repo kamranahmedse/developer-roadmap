@@ -13,6 +13,8 @@ import { useStore } from '@nanostores/react';
 import { $canManageCurrentTeam } from '../stores/team';
 import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
+import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
+import { isCreatingRoadmap } from '../stores/roadmap';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -23,6 +25,7 @@ export function TeamRoadmaps() {
 
   const [isLoading, setIsLoading] = useState(true);
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
+  const [isPickingOptions, setIsPickingOptions] = useState(false);
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [team, setTeam] = useState<TeamDocument>();
@@ -163,6 +166,20 @@ export function TeamRoadmaps() {
     return null;
   }
 
+  const pickRoadmapOptionModal = isPickingOptions && (
+    <PickRoadmapOptionModal
+      onClose={() => setIsPickingOptions(false)}
+      showDefaultRoadmapsModal={() => {
+        setIsAddingRoadmap(true);
+        setIsPickingOptions(false);
+      }}
+      showCreateCustomRoadmapModal={() => {
+        isCreatingRoadmap.set(true);
+        setIsPickingOptions(false);
+      }}
+    />
+  );
+
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
@@ -185,6 +202,7 @@ export function TeamRoadmaps() {
   if (resourceConfigs.length === 0 && !isLoading) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
+        {pickRoadmapOptionModal}
         {addRoadmapModal}
         <img
           alt="roadmap"
@@ -201,7 +219,7 @@ export function TeamRoadmaps() {
         {canManageCurrentTeam && (
           <button
             className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
-            onClick={() => setIsAddingRoadmap(true)}
+            onClick={() => setIsPickingOptions(true)}
           >
             Add roadmap
           </button>
@@ -212,6 +230,7 @@ export function TeamRoadmaps() {
 
   return (
     <div>
+      {pickRoadmapOptionModal}
       {addRoadmapModal}
       <div className="mb-3 flex items-center justify-between">
         <span className={'text-gray-400'}>
@@ -220,7 +239,7 @@ export function TeamRoadmaps() {
         {canManageCurrentTeam && (
           <button
             className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 underline hover:bg-gray-100 hover:text-gray-900"
-            onClick={() => setIsAddingRoadmap(true)}
+            onClick={() => setIsPickingOptions(true)}
           >
             Add / Remove Roadmaps
           </button>
@@ -248,7 +267,10 @@ export function TeamRoadmaps() {
             '...';
 
           return (
-            <div key={resourceId} className="flex flex-col items-start rounded-md border border-gray-300">
+            <div
+              key={resourceId}
+              className="flex flex-col items-start rounded-md border border-gray-300"
+            >
               <div className={'w-full px-3 py-4'}>
                 <a
                   href={`/${resourceId}?t=${teamId}`}
@@ -327,7 +349,7 @@ export function TeamRoadmaps() {
 
         {canManageCurrentTeam && (
           <button
-            onClick={() => setIsAddingRoadmap(true)}
+            onClick={() => setIsPickingOptions(true)}
             className="group flex min-h-[110px] flex-col items-center justify-center rounded-md border border-dashed border-gray-300 transition-colors hover:border-gray-600 hover:bg-gray-50"
           >
             <img

@@ -9,6 +9,8 @@ import {
   hideCreateRoadmapModal,
   isCreatingRoadmap,
 } from '../../../stores/roadmap';
+import { $currentTeam } from '../../../stores/team';
+import { allowedVisibilityLabels } from '../ShareRoadmapModal';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -40,6 +42,7 @@ interface CreateRoadmapModalProps {}
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const $isCreatingRoadmap = useStore(isCreatingRoadmap);
+  const currentTeam = useStore($currentTeam);
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
 
@@ -47,6 +50,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [type, setType] = useState<AllowedCustomRoadmapType>('role');
+  const [visibility, setVisibility] = useState<AllowedRoadmapVisibility>('me');
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -62,6 +66,10 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         title,
         description,
         type,
+        ...(currentTeam?._id && {
+          teamId: currentTeam?._id,
+        }),
+        visibility,
         nodes: [],
         edges: [],
       }
@@ -82,6 +90,12 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   useEffect(() => {
     titleRef.current?.focus();
   }, [$isCreatingRoadmap]);
+
+  useEffect(() => {
+    if (currentTeam) {
+      setVisibility('team');
+    }
+  }, [currentTeam]);
 
   if (!$isCreatingRoadmap) {
     return null;
@@ -168,6 +182,42 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             </select>
           </div>
         </div>
+
+        <div className="mt-4">
+          <label
+            htmlFor="visibility"
+            className="block text-xs uppercase text-gray-400"
+          >
+            Visibility
+          </label>
+          <div className="mt-1">
+            <select
+              id="visibility"
+              name="visibility"
+              required
+              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+              value={visibility}
+              onChange={(e) =>
+                setVisibility(e.target.value as AllowedRoadmapVisibility)
+              }
+            >
+              {allowedVisibilityLabels.map((visibility) => {
+                if (visibility.id === 'team' && !currentTeam?._id) {
+                  return null;
+                } else if (visibility.id === 'friends' && currentTeam?._id) {
+                  return null;
+                }
+
+                return (
+                  <option key={visibility.id} value={visibility.id}>
+                    {visibility.label}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        </div>
+
         <div className="mt-4 flex gap-2">
           <button
             onClick={hideCreateRoadmapModal}
