@@ -8,8 +8,8 @@ export function SkeletonRoadmapHeader() {
         </div>
 
         <div className="flex justify-between gap-2 sm:gap-0">
-          <div className="h-7 w-24 animate-pulse rounded-md bg-gray-300 sm:h-8" />
-          <div className="h-7 w-24 animate-pulse rounded-md bg-gray-300 sm:h-8" />
+          <div className="h-7 w-32 animate-pulse rounded-md bg-gray-300 sm:h-8" />
+          <div className="h-7 w-32 animate-pulse rounded-md bg-gray-300 sm:h-8" />
         </div>
 
         <div className="mb-0 mt-4 rounded-md border-0 sm:-mb-[65px] sm:mt-7 sm:border">
