@@ -60,7 +60,6 @@ export function ShareRoadmapModal(props: ShareRoadmapModalProps) {
       isDev ? 'http://localhost:3000/r' : 'https://roadmap.sh/r'
     );
     url.searchParams.set('id', roadmapId);
-    url.searchParams.set('s', user?.id!);
     copyText(url.toString());
   }
 
