@@ -1,10 +1,10 @@
 import { useEffect, useRef, useState } from 'react';
 import { Loader2 } from 'lucide-react';
+import { useStore } from '@nanostores/react';
 import { Modal } from '../../Modal';
 import { useToast } from '../../../hooks/use-toast';
 import { httpPost } from '../../../lib/http';
 import { cn } from '../../../lib/classname';
-import { useStore } from '@nanostores/react';
 import {
   hideCreateRoadmapModal,
   isCreatingRoadmap,
@@ -53,7 +53,10 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [visibility, setVisibility] = useState<AllowedRoadmapVisibility>('me');
   const isInvalidDescription = description?.trim().length > 80;
 
-  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(
+    e: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement>,
+    redirect: boolean = true
+  ) {
     e.preventDefault();
     if (title.trim() === '' || isInvalidDescription) {
       return;
@@ -82,10 +85,17 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     }
 
     toast.success('Roadmap created successfully');
-    window.open(
-      `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response?._id}`,
-      '_blank'
-    );
+    if (redirect) {
+      window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
+        response?._id
+      }`;
+      return;
+    }
+    setTitle('');
+    setDescription('');
+    setType('role');
+    setVisibility('me');
+    setIsLoading(false);
     hideCreateRoadmapModal();
   }
 
@@ -104,7 +114,11 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   }
 
   return (
-    <Modal onClose={hideCreateRoadmapModal} bodyClassName="p-4">
+    <Modal
+      onClose={hideCreateRoadmapModal}
+      bodyClassName="p-4"
+      wrapperClassName={cn(teamId && 'max-w-lg')}
+    >
       <div className="mb-4">
         <h2 className="text-lg font-medium text-gray-900">Create Roadmap</h2>
         <p className="mt-1 text-sm text-gray-500">
@@ -158,87 +172,131 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             </div>
           </div>
         </div>
-        <div className="mt-4">
-          <label
-            htmlFor="type"
-            className="block text-xs uppercase text-gray-400"
-          >
-            Type
-          </label>
-          <div className="mt-1">
-            <select
-              id="type"
-              name="type"
-              required
-              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
-              value={type}
-              onChange={(e) =>
-                setType(e.target.value as AllowedCustomRoadmapType)
-              }
-            >
-              {allowedCustomRoadmapType.map((type) => (
-                <option key={type} value={type}>
-                  {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
-                </option>
-              ))}
-            </select>
-          </div>
-        </div>
 
-        <div className="mt-4">
-          <label
-            htmlFor="visibility"
-            className="block text-xs uppercase text-gray-400"
-          >
-            Visibility
-          </label>
-          <div className="mt-1">
-            <select
-              id="visibility"
-              name="visibility"
-              required
-              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
-              value={visibility}
-              onChange={(e) =>
-                setVisibility(e.target.value as AllowedRoadmapVisibility)
-              }
+        <div
+          className={cn(
+            'mt-4 grid gap-4',
+            teamId ? 'grid-cols-2' : 'grid-cols-1'
+          )}
+        >
+          <div className="">
+            <label
+              htmlFor="type"
+              className="block text-xs uppercase text-gray-400"
             >
-              {allowedVisibilityLabels.map((visibility) => {
-                if (visibility.id === 'team' && !teamId) {
-                  return null;
-                } else if (visibility.id === 'friends' && teamId) {
-                  return null;
+              Type
+            </label>
+            <div className="mt-1">
+              <select
+                id="type"
+                name="type"
+                required
+                className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+                value={type}
+                onChange={(e) =>
+                  setType(e.target.value as AllowedCustomRoadmapType)
                 }
-
-                return (
-                  <option key={visibility.id} value={visibility.id}>
-                    {visibility.label}
+              >
+                {allowedCustomRoadmapType.map((type) => (
+                  <option key={type} value={type}>
+                    {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
                   </option>
-                );
-              })}
-            </select>
+                ))}
+              </select>
+            </div>
+          </div>
+
+          <div className="">
+            <label
+              htmlFor="visibility"
+              className="block text-xs uppercase text-gray-400"
+            >
+              Visibility
+            </label>
+            <div className="mt-1">
+              <select
+                id="visibility"
+                name="visibility"
+                required
+                className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+                value={visibility}
+                onChange={(e) =>
+                  setVisibility(e.target.value as AllowedRoadmapVisibility)
+                }
+              >
+                {allowedVisibilityLabels.map((visibility) => {
+                  if (visibility.id === 'team' && !teamId) {
+                    return null;
+                  } else if (visibility.id === 'friends' && teamId) {
+                    return null;
+                  }
+
+                  return (
+                    <option key={visibility.id} value={visibility.id}>
+                      {visibility.label}
+                    </option>
+                  );
+                })}
+              </select>
+            </div>
           </div>
         </div>
 
-        <div className="mt-4 flex gap-2">
+        <div
+          className={cn('mt-4 flex justify-between gap-2', teamId && 'mt-8')}
+        >
           <button
             onClick={hideCreateRoadmapModal}
-            className="block h-9 w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100"
+            type="button"
+            className={cn(
+              'block h-9 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100',
+              !teamId && 'w-full'
+            )}
           >
             Cancel
           </button>
-          <button
-            disabled={isLoading}
-            type="submit"
-            className="flex h-9 w-full items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800"
-          >
-            {isLoading ? (
-              <Loader2 size={16} className="animate-spin" />
-            ) : (
-              'Create'
+
+          <div className={cn('flex items-center gap-2', !teamId && 'w-full')}>
+            {teamId && (
+              <button
+                disabled={isLoading}
+                type="button"
+                onClick={(e) => handleSubmit(e, false)}
+                className="flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800"
+              >
+                {isLoading ? (
+                  <Loader2 size={16} className="animate-spin" />
+                ) : (
+                  'Save as Placeholder'
+                )}
+              </button>
             )}
-          </button>
+
+            <button
+              disabled={isLoading}
+              type="submit"
+              className={cn(
+                'flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800',
+                !teamId && 'w-full'
+              )}
+            >
+              {isLoading ? (
+                <Loader2 size={16} className="animate-spin" />
+              ) : teamId ? (
+                'Continue to Editor'
+              ) : (
+                'Create'
+              )}
+            </button>
+          </div>
         </div>
+        {teamId && (
+          <p className="mt-4 rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600">
+            Preparing the roadmap might take some time, so feel free to save it
+            as a placeholder and anyone with the role <strong>admin</strong> or{' '}
+            <strong>manager</strong> can prepare it later.
+          </p>
+        )}
       </form>
     </Modal>
   );
