@@ -134,7 +134,7 @@ export function FavoriteRoadmaps() {
           progress?.custom?.length == 0 && <EmptyProgress />}
         {hasProgress && (
           <HeroRoadmaps
-            showCustomRoadmaps={progress.custom.length > 0}
+            showCustomRoadmaps={true}
             customRoadmaps={progress.custom}
             progress={progress.default}
             isLoading={isLoading}

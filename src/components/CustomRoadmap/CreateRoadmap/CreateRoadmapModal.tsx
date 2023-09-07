@@ -9,8 +9,8 @@ import {
   hideCreateRoadmapModal,
   isCreatingRoadmap,
 } from '../../../stores/roadmap';
-import { $currentTeam } from '../../../stores/team';
 import { allowedVisibilityLabels } from '../ShareRoadmapModal';
+import { getUrlParams } from '../../../lib/browser';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -42,7 +42,7 @@ interface CreateRoadmapModalProps {}
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const $isCreatingRoadmap = useStore(isCreatingRoadmap);
-  const currentTeam = useStore($currentTeam);
+  const { t: teamId } = getUrlParams() as { t: string };
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
 
@@ -66,8 +66,8 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         title,
         description,
         type,
-        ...(currentTeam?._id && {
-          teamId: currentTeam?._id,
+        ...(teamId && {
+          teamId,
         }),
         visibility,
         nodes: [],
@@ -94,10 +94,10 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   }, [$isCreatingRoadmap]);
 
   useEffect(() => {
-    if (currentTeam) {
+    if (teamId) {
       setVisibility('team');
     }
-  }, [currentTeam]);
+  }, [teamId]);
 
   if (!$isCreatingRoadmap) {
     return null;
@@ -204,9 +204,9 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               }
             >
               {allowedVisibilityLabels.map((visibility) => {
-                if (visibility.id === 'team' && !currentTeam?._id) {
+                if (visibility.id === 'team' && !teamId) {
                   return null;
-                } else if (visibility.id === 'friends' && currentTeam?._id) {
+                } else if (visibility.id === 'friends' && teamId) {
                   return null;
                 }
 
