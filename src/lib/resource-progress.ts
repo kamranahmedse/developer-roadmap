@@ -388,9 +388,8 @@ export function refreshProgressCounters() {
     );
   }
 
-  const progressPercentage = Math.round(
-    ((totalDone + totalSkipped) / totalItems) * 100
-  );
+  const progressPercentage =
+    Math.round(((totalDone + totalSkipped) / totalItems) * 100) || 0;
   const progressPercentageEls = document.querySelectorAll(
     '[data-progress-percentage]'
   );

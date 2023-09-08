@@ -312,7 +312,7 @@ export function TeamRoadmaps() {
         )}
 
         {resourceConfigs.map((resourceConfig) => {
-          const { resourceId, removed: removedTopics } = resourceConfig;
+          const { resourceId, removed: removedTopics, topics } = resourceConfig;
           let roadmapTitle = '';
           const customRoadmap = allCustomRoadmaps.find(
             (roadmap) => roadmap._id === resourceId
@@ -325,7 +325,6 @@ export function TeamRoadmaps() {
               '...';
           }
 
-          const isOnlyVisibleToMe = customRoadmap?.visibility === 'me';
           const url = customRoadmap
             ? `/r?id=${resourceId}`
             : `/${resourceId}?t=${teamId}`;
@@ -352,14 +351,24 @@ export function TeamRoadmaps() {
                     className="ml-auto h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
                   />
                 </a>
-                {removedTopics.length > 0 ? (
+                {removedTopics.length > 0 || (topics && topics > 0) ? (
                   <span className={'text-xs leading-none text-gray-900'}>
-                    {removedTopics.length} topic
-                    {removedTopics.length > 1 ? 's' : ''} removed
+                    {customRoadmap ? (
+                      <>
+                        {topics} topic{topics && topics > 1 ? 's' : ''}
+                      </>
+                    ) : (
+                      <>
+                        {removedTopics.length} topic
+                        {removedTopics.length > 1 ? 's' : ''} removed
+                      </>
+                    )}
                   </span>
                 ) : (
                   <span className="text-xs italic leading-none text-gray-400/60">
-                    No changes made ..
+                    {customRoadmap
+                      ? 'Placeholder roadmap'
+                      : 'No changes made ..'}
                   </span>
                 )}
               </div>
