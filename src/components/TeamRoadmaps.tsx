@@ -186,6 +186,30 @@ export function TeamRoadmaps() {
     });
   }
 
+  useEffect(() => {
+    function handleCustomRoadmapCreated(event: Event) {
+      const { roadmapId } = (event as CustomEvent)?.detail;
+      if (!roadmapId) {
+        return;
+      }
+      loadAllCustomRoadmaps().finally(() => {});
+      onAdd(roadmapId).finally(() => {
+        pageProgressMessage.set('');
+      });
+    }
+    window.addEventListener(
+      'custom-roadmap-created',
+      handleCustomRoadmapCreated
+    );
+
+    return () => {
+      window.removeEventListener(
+        'custom-roadmap-created',
+        handleCustomRoadmapCreated
+      );
+    };
+  }, []);
+
   if (!team) {
     return null;
   }

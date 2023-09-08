@@ -16,6 +16,7 @@ export type TeamResourceConfig = {
   resourceId: string;
   resourceType: string;
   removed: string[];
+  topics?: number;
 }[];
 
 type RoadmapSelectorProps = {
@@ -226,84 +227,93 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
       {teamResourceConfig.length > 0 && (
         <div className="mt-10 grid grid-cols-1 flex-wrap gap-2.5 sm:grid-cols-3">
-          {teamResourceConfig.map(({ resourceId, removed: removedTopics }) => {
-            let roadmapTitle = '';
-            const isCustomRoadmap = allCustomRoadmaps.find(
-              (roadmap) => roadmap._id?.toString() === resourceId
-            );
-            if (isCustomRoadmap) {
-              roadmapTitle = isCustomRoadmap.title || '...';
-            } else {
-              roadmapTitle =
-                allRoadmaps.find((roadmap) => roadmap.id === resourceId)
-                  ?.title || '...';
-            }
+          {teamResourceConfig.map(
+            ({ resourceId, removed: removedTopics, topics }) => {
+              let roadmapTitle = '';
+              let hintText = '';
+              const isCustomRoadmap = allCustomRoadmaps.find(
+                (roadmap) => roadmap._id?.toString() === resourceId
+              );
+              if (isCustomRoadmap) {
+                roadmapTitle = isCustomRoadmap.title || '...';
+                if (topics && topics > 0) {
+                  hintText = `${topics} node${topics > 1 ? 's' : ''}`;
+                } else {
+                  hintText = 'Placeholder roadmap';
+                }
+              } else {
+                roadmapTitle =
+                  allRoadmaps.find((roadmap) => roadmap.id === resourceId)
+                    ?.title || '...';
+                hintText = 'No changes made ..';
+              }
 
-            const isOnlyVisibleToMe = isCustomRoadmap?.visibility === 'me';
+              const isOnlyVisibleToMe = isCustomRoadmap?.visibility === 'me';
 
-            return (
-              <div
-                className="flex flex-col items-start rounded-md border border-gray-300"
-                key={resourceId}
-              >
-                <div className={'w-full px-3 pb-2 pt-4'}>
-                  <span className="mb-0.5 block text-base font-medium leading-none text-black">
-                    {roadmapTitle}
-                    {isOnlyVisibleToMe && (
-                      <span className="ml-1.5 inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-50 p-0.5 px-1.5 text-xs font-normal text-red-500">
-                        <LockIcon className="inline-block h-3 w-3" />
-                        Only me
+              return (
+                <div
+                  className="flex flex-col items-start rounded-md border border-gray-300"
+                  key={resourceId}
+                >
+                  <div className={'w-full px-3 pb-2 pt-4'}>
+                    <span className="mb-0.5 block text-base font-medium leading-none text-black">
+                      {roadmapTitle}
+                      {isOnlyVisibleToMe && (
+                        <span className="ml-1.5 inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-50 p-0.5 px-1.5 text-xs font-normal text-red-500">
+                          <LockIcon className="inline-block h-3 w-3" />
+                          Only me
+                        </span>
+                      )}
+                    </span>
+                    {removedTopics.length > 0 ? (
+                      <span className={'text-xs leading-none text-gray-900'}>
+                        {removedTopics.length} topic
+                        {removedTopics.length > 1 ? 's' : ''} removed
+                      </span>
+                    ) : (
+                      <span className="text-xs italic leading-none text-gray-400/60">
+                        {hintText}
                       </span>
                     )}
-                  </span>
-                  {removedTopics.length > 0 ? (
-                    <span className={'text-xs leading-none text-gray-900'}>
-                      {removedTopics.length} topic
-                      {removedTopics.length > 1 ? 's' : ''} removed
-                    </span>
-                  ) : (
-                    <span className="text-xs italic leading-none text-gray-400/60">
-                      No changes made ..
-                    </span>
-                  )}
-                </div>
+                  </div>
 
-                <div className={'flex w-full justify-between p-3'}>
-                  <button
-                    type="button"
-                    className={
-                      'text-xs text-gray-500 underline hover:text-black focus:outline-none'
-                    }
-                    onClick={() => {
-                      if (isCustomRoadmap) {
-                        // Open the roadmap in a new tab
-                        window.open(
-                          `${
-                            import.meta.env.PUBLIC_EDITOR_APP_URL
-                          }/${resourceId}`,
-                          '_blank'
-                        );
-                        return;
+                  <div className={'flex w-full justify-between p-3'}>
+                    <button
+                      type="button"
+                      className={
+                        'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                       }
-                      setChangingRoadmapId(resourceId);
-                    }}
-                  >
-                    Customize
-                  </button>
+                      onClick={() => {
+                        if (isCustomRoadmap) {
+                          // Open the roadmap in a new tab
+                          window.open(
+                            `${
+                              import.meta.env.PUBLIC_EDITOR_APP_URL
+                            }/${resourceId}`,
+                            '_blank'
+                          );
+                          return;
+                        }
+                        setChangingRoadmapId(resourceId);
+                      }}
+                    >
+                      Customize
+                    </button>
 
-                  <button
-                    type="button"
-                    className={
-                      'text-xs text-red-500 underline hover:text-black'
-                    }
-                    onClick={() => onRemove(resourceId)}
-                  >
-                    Remove
-                  </button>
+                    <button
+                      type="button"
+                      className={
+                        'text-xs text-red-500 underline hover:text-black'
+                      }
+                      onClick={() => onRemove(resourceId)}
+                    >
+                      Remove
+                    </button>
+                  </div>
                 </div>
-              </div>
-            );
-          })}
+              );
+            }
+          )}
         </div>
       )}
     </div>
