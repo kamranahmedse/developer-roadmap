@@ -15,8 +15,11 @@ import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
 import { showCreateRoadmapModal } from '../stores/roadmap';
-import type { RoadmapDocument } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { LockIcon } from 'lucide-react';
+import type {
+  AllowedRoadmapVisibility,
+  RoadmapDocument,
+} from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { Globe, LockIcon, Users } from 'lucide-react';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -311,19 +314,19 @@ export function TeamRoadmaps() {
         {resourceConfigs.map((resourceConfig) => {
           const { resourceId, removed: removedTopics } = resourceConfig;
           let roadmapTitle = '';
-          const isCustomRoadmap = allCustomRoadmaps.find(
+          const customRoadmap = allCustomRoadmaps.find(
             (roadmap) => roadmap._id === resourceId
           );
-          if (isCustomRoadmap) {
-            roadmapTitle = isCustomRoadmap.title || '...';
+          if (customRoadmap) {
+            roadmapTitle = customRoadmap.title || '...';
           } else {
             roadmapTitle =
               allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||
               '...';
           }
 
-          const isOnlyVisibleToMe = isCustomRoadmap?.visibility === 'me';
-          const url = isCustomRoadmap
+          const isOnlyVisibleToMe = customRoadmap?.visibility === 'me';
+          const url = customRoadmap
             ? `/r?id=${resourceId}`
             : `/${resourceId}?t=${teamId}`;
 
@@ -339,11 +342,8 @@ export function TeamRoadmaps() {
                   target={'_blank'}
                 >
                   {roadmapTitle}
-                  {isOnlyVisibleToMe && (
-                    <span className="inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-50 p-0.5 px-1.5 text-xs font-normal text-red-500">
-                      <LockIcon className="inline-block h-3 w-3" />
-                      Only me
-                    </span>
+                  {customRoadmap && (
+                    <VisibilityLabel visibility={customRoadmap?.visibility!} />
                   )}
 
                   <img
@@ -372,7 +372,7 @@ export function TeamRoadmaps() {
                       'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                     }
                     onClick={() => {
-                      if (isCustomRoadmap) {
+                      if (customRoadmap) {
                         // Open the roadmap in a new tab
                         window.open(
                           `${
@@ -441,5 +441,45 @@ export function TeamRoadmaps() {
         )}
       </div>
     </div>
+  );
+}
+
+type VisibilityLabelProps = {
+  visibility: AllowedRoadmapVisibility;
+};
+function VisibilityLabel(props: VisibilityLabelProps) {
+  const { visibility } = props;
+  const details = {
+    public: {
+      color: 'bg-green-50 text-green-500 border-green-300',
+      icon: Globe,
+      label: 'Public',
+    },
+    me: {
+      color: 'bg-red-50 text-red-500 border-red-300',
+      icon: LockIcon,
+      label: 'Only me',
+    },
+    team: {
+      color: 'bg-blue-50 text-blue-500 border-blue-300',
+      icon: Users,
+      label: 'Team',
+    },
+    friends: {
+      color: 'bg-yellow-50 text-yellow-500 border-yellow-300',
+      icon: Users,
+      label: 'Friends',
+    },
+  };
+
+  const { label, icon: Icon, color } = details[visibility];
+
+  return (
+    <span
+      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border p-0.5 px-1.5 text-xs font-normal ${color}`}
+    >
+      <Icon className="inline-block h-3 w-3" />
+      {label}
+    </span>
   );
 }
