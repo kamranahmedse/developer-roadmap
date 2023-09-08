@@ -1,12 +1,9 @@
 import { useEffect, useState } from 'react';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
-import ChevronDownIcon from '../../icons/chevron-down.svg';
 import { pageProgressMessage } from '../../stores/page';
-import type { TeamDocument } from './CreateTeamForm';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
-import { NotDropdown } from './NotDropdown';
 import { HardDrive, LockIcon, PackagePlus } from 'lucide-react';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
@@ -230,25 +227,18 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           {teamResourceConfig.map(
             ({ resourceId, removed: removedTopics, topics }) => {
               let roadmapTitle = '';
-              let hintText = '';
-              const isCustomRoadmap = allCustomRoadmaps.find(
+              const customRoadmap = allCustomRoadmaps.find(
                 (roadmap) => roadmap._id?.toString() === resourceId
               );
-              if (isCustomRoadmap) {
-                roadmapTitle = isCustomRoadmap.title || '...';
-                if (topics && topics > 0) {
-                  hintText = `${topics} node${topics > 1 ? 's' : ''}`;
-                } else {
-                  hintText = 'Placeholder roadmap';
-                }
+              if (customRoadmap) {
+                roadmapTitle = customRoadmap.title || '...';
               } else {
                 roadmapTitle =
                   allRoadmaps.find((roadmap) => roadmap.id === resourceId)
                     ?.title || '...';
-                hintText = 'No changes made ..';
               }
 
-              const isOnlyVisibleToMe = isCustomRoadmap?.visibility === 'me';
+              const isOnlyVisibleToMe = customRoadmap?.visibility === 'me';
 
               return (
                 <div
@@ -265,14 +255,24 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                         </span>
                       )}
                     </span>
-                    {removedTopics.length > 0 ? (
+                    {removedTopics.length > 0 || (topics && topics > 0) ? (
                       <span className={'text-xs leading-none text-gray-900'}>
-                        {removedTopics.length} topic
-                        {removedTopics.length > 1 ? 's' : ''} removed
+                        {customRoadmap ? (
+                          <>
+                            {topics} topic{topics && topics > 1 ? 's' : ''}
+                          </>
+                        ) : (
+                          <>
+                            {removedTopics.length} topic
+                            {removedTopics.length > 1 ? 's' : ''} removed
+                          </>
+                        )}
                       </span>
                     ) : (
                       <span className="text-xs italic leading-none text-gray-400/60">
-                        {hintText}
+                        {customRoadmap
+                          ? 'Placeholder roadmap'
+                          : 'No changes made ..'}
                       </span>
                     )}
                   </div>
@@ -284,7 +284,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                         'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                       }
                       onClick={() => {
-                        if (isCustomRoadmap) {
+                        if (customRoadmap) {
                           // Open the roadmap in a new tab
                           window.open(
                             `${
