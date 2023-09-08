@@ -15,6 +15,8 @@ import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
 import { showCreateRoadmapModal } from '../stores/roadmap';
+import type { RoadmapDocument } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { LockIcon } from 'lucide-react';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -33,6 +35,9 @@ export function TeamRoadmaps() {
     []
   );
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
+  const [allCustomRoadmaps, setAllCustomRoadmaps] = useState<RoadmapDocument[]>(
+    []
+  );
 
   async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -54,6 +59,24 @@ export function TeamRoadmaps() {
       });
 
     setAllRoadmaps(allRoadmaps);
+    return response;
+  }
+
+  async function loadAllCustomRoadmaps() {
+    const { error, response } = await httpGet<RoadmapDocument[]>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-roadmap-list/${teamId}`
+    );
+
+    if (error) {
+      toast.error(error.message || 'Something went wrong. Please try again!');
+      return;
+    }
+
+    if (!response) {
+      return [];
+    }
+
+    setAllCustomRoadmaps(response);
     return response;
   }
 
@@ -93,6 +116,7 @@ export function TeamRoadmaps() {
       loadTeam(teamId),
       loadTeamResourceConfig(teamId),
       loadAllRoadmaps(),
+      loadAllCustomRoadmaps(),
     ]).finally(() => {
       pageProgressMessage.set('');
       setIsLoading(false);
@@ -262,9 +286,22 @@ export function TeamRoadmaps() {
 
         {resourceConfigs.map((resourceConfig) => {
           const { resourceId, removed: removedTopics } = resourceConfig;
-          const roadmapTitle =
-            allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||
-            '...';
+          let roadmapTitle = '';
+          const isCustomRoadmap = allCustomRoadmaps.find(
+            (roadmap) => roadmap._id === resourceId
+          );
+          if (isCustomRoadmap) {
+            roadmapTitle = isCustomRoadmap.title || '...';
+          } else {
+            roadmapTitle =
+              allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||
+              '...';
+          }
+
+          const isOnlyVisibleToMe = isCustomRoadmap?.visibility === 'me';
+          const url = isCustomRoadmap
+            ? `/r?id=${resourceId}`
+            : `/${resourceId}?t=${teamId}`;
 
           return (
             <div
@@ -273,16 +310,22 @@ export function TeamRoadmaps() {
             >
               <div className={'w-full px-3 py-4'}>
                 <a
-                  href={`/${resourceId}?t=${teamId}`}
-                  className="group mb-0.5 flex items-center justify-between text-base font-medium leading-none text-black"
+                  href={url}
+                  className="group mb-0.5 flex items-center gap-2 text-base font-medium leading-none text-black"
                   target={'_blank'}
                 >
                   {roadmapTitle}
+                  {isOnlyVisibleToMe && (
+                    <span className="inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-50 p-0.5 px-1.5 text-xs font-normal text-red-500">
+                      <LockIcon className="inline-block h-3 w-3" />
+                      Only me
+                    </span>
+                  )}
 
                   <img
                     alt={'link'}
                     src={ExternalLinkIcon.src}
-                    className="ml-2 h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
+                    className="ml-auto h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
                   />
                 </a>
                 {removedTopics.length > 0 ? (
@@ -305,6 +348,16 @@ export function TeamRoadmaps() {
                       'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                     }
                     onClick={() => {
+                      if (isCustomRoadmap) {
+                        // Open the roadmap in a new tab
+                        window.open(
+                          `${
+                            import.meta.env.PUBLIC_EDITOR_APP_URL
+                          }/${resourceId}`,
+                          '_blank'
+                        );
+                        return;
+                      }
                       setRemovingRoadmapId('');
                       setChangingRoadmapId(resourceId);
                     }}

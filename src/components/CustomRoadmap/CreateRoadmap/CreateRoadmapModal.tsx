@@ -96,6 +96,17 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     setType('role');
     setVisibility('me');
     setIsLoading(false);
+
+    // This event is used to refresh the roadmap list in the dashboard
+    // after creating a new roadmap as a placeholder.
+    window.dispatchEvent(
+      new CustomEvent('custom-roadmap-created', {
+        detail: {
+          roadmapId: response?._id,
+        },
+      })
+    );
+
     hideCreateRoadmapModal();
   }
 

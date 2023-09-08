@@ -82,7 +82,7 @@ export function Step0(props: Step0Props) {
           >
             <img
               alt={validTeamType.label}
-              src={validTeamType.icon}
+              src={validTeamType.icon.src}
               className={`mb-3 h-12 w-12 opacity-10 ${
                 validTeamType.value === selectedTeamType ? 'opacity-100' : ''
               }`}
