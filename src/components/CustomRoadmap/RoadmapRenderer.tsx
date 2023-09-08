@@ -1,10 +1,17 @@
 import { useCallback, useEffect, useRef } from 'react';
 import { Renderer } from '../../../renderer';
 import './RoadmapRenderer.css';
-import { renderResourceProgress, updateResourceProgress, type ResourceProgressType, renderTopicProgress, refreshProgressCounters } from '../../lib/resource-progress';
+import {
+  renderResourceProgress,
+  updateResourceProgress,
+  type ResourceProgressType,
+  renderTopicProgress,
+  refreshProgressCounters,
+} from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
+import { EmptyRoadmap } from './EmptyRoadmap';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -16,7 +23,9 @@ type RoadmapNodeDetails = {
   targetGroup: SVGElement;
 };
 
-export function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
+export function getNodeDetails(
+  svgElement: SVGElement
+): RoadmapNodeDetails | null {
   const targetGroup = (svgElement?.closest('g') as SVGElement) || {};
 
   const nodeId = targetGroup?.dataset?.nodeId;
@@ -32,9 +41,12 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapRef = useRef<HTMLDivElement>(null);
 
-  const toast = useToast()
+  const toast = useToast();
 
-  async function updateTopicStatus(topicId: string, newStatus: ResourceProgressType) {
+  async function updateTopicStatus(
+    topicId: string,
+    newStatus: ResourceProgressType
+  ) {
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
       {
@@ -62,7 +74,8 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const handleSvgClick = useCallback((e: MouseEvent) => {
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType)) return;
+    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
+      return;
 
     if (nodeType === 'button') {
       const link = targetGroup?.dataset?.link || '';
@@ -80,11 +93,14 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
 
     if (e.shiftKey) {
       e.preventDefault();
-      updateTopicStatus(nodeId, isCurrentStatusLearning ? 'pending' : 'learning')
+      updateTopicStatus(
+        nodeId,
+        isCurrentStatusLearning ? 'pending' : 'learning'
+      );
       return;
     } else if (e.altKey) {
       e.preventDefault();
-      updateTopicStatus(nodeId, isCurrentStatusSkipped ? 'pending' : 'skipped')
+      updateTopicStatus(nodeId, isCurrentStatusSkipped ? 'pending' : 'skipped');
       return;
     }
 
@@ -105,14 +121,15 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
 
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType)) return;
+    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
+      return;
 
     if (nodeType === 'button') {
       return;
     }
 
     const isCurrentStatusDone = targetGroup?.classList.contains('done');
-    updateTopicStatus(nodeId, isCurrentStatusDone ? 'pending' : 'done')
+    updateTopicStatus(nodeId, isCurrentStatusDone ? 'pending' : 'done');
   }, []);
 
   useEffect(() => {
@@ -122,20 +139,27 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
 
     return () => {
       roadmapRef?.current?.removeEventListener('click', handleSvgClick);
-      roadmapRef?.current?.removeEventListener('contextmenu', handleSvgRightClick);
+      roadmapRef?.current?.removeEventListener(
+        'contextmenu',
+        handleSvgRightClick
+      );
     };
   }, []);
 
   return (
-    <div className="bg-gray-50 pb-8 pt-4 sm:pt-12">
+    <div className="flex grow bg-gray-50 pb-8 pt-4 sm:pt-12">
       <div className="container !max-w-[1000px]">
-        <Renderer
-          ref={roadmapRef}
-          roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
-          onRendered={() =>
-            renderResourceProgress('roadmap', roadmap._id!).then()
-          }
-        />
+        {roadmap?.nodes?.length > 0 ? (
+          <Renderer
+            ref={roadmapRef}
+            roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
+            onRendered={() =>
+              renderResourceProgress('roadmap', roadmap._id!).then()
+            }
+          />
+        ) : (
+          <EmptyRoadmap />
+        )}
       </div>
     </div>
   );
