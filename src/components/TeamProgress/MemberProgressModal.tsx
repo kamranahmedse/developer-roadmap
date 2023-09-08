@@ -18,6 +18,11 @@ import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../../stores/team';
+import { renderFlowJSON } from '../../../renderer/renderer';
+import {
+  allowedClickableNodeTypes,
+  getNodeDetails,
+} from '../CustomRoadmap/RoadmapRenderer';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -26,6 +31,7 @@ export type ProgressMapProps = {
   resourceType: 'roadmap' | 'best-practice';
   onClose: () => void;
   onShowMyProgress: () => void;
+  isCustomRoadmap?: boolean;
 };
 
 type MemberProgressResponse = {
@@ -43,6 +49,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     onShowMyProgress,
     teamId,
     onClose,
+    isCustomRoadmap,
   } = props;
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
@@ -62,6 +69,12 @@ export function MemberProgressModal(props: ProgressMapProps) {
     resourceJsonUrl += `/${resourceId}.json`;
   } else {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
+  }
+
+  if (isCustomRoadmap) {
+    resourceJsonUrl = `${
+      import.meta.env.PUBLIC_API_URL
+    }/v1-get-roadmap/${resourceId}`;
   }
 
   async function getMemberProgress(
@@ -86,11 +99,28 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   async function renderResource(jsonUrl: string) {
-    const res = await fetch(jsonUrl);
-    const json = await res.json();
-    const svg = await wireframeJSONToSVG(json, {
-      fontURL: '/fonts/balsamiq.woff2',
+    const res = await fetch(jsonUrl, {
+      ...(isCustomRoadmap && {
+        credentials: 'include',
+      }),
     });
+    const json = await res.json();
+    let svg: SVGElement | null = null;
+    if (isCustomRoadmap) {
+      svg = await renderFlowJSON(
+        {
+          nodes: json.nodes,
+          edges: json.edges,
+        },
+        {
+          fontURL: '/fonts/balsamiq.woff2',
+        }
+      );
+    } else {
+      svg = await wireframeJSONToSVG(json, {
+        fontURL: '/fonts/balsamiq.woff2',
+      });
+    }
 
     containerEl.current?.replaceChildren(svg);
   }
@@ -186,9 +216,28 @@ export function MemberProgressModal(props: ProgressMapProps) {
       return;
     }
 
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
-      return;
+    let topicId = '';
+    if (isCustomRoadmap) {
+      const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
+      if (
+        !nodeId ||
+        !nodeType ||
+        !allowedClickableNodeTypes.includes(nodeType)
+      ) {
+        return;
+      }
+
+      if (nodeType === 'button') {
+        return;
+      }
+
+      topicId = nodeId;
+    } else {
+      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+      if (!groupId) {
+        return;
+      }
+      topicId = groupId.replace(/^\d+-/, '');
     }
 
     if (targetGroup.classList.contains('removed')) {
@@ -197,13 +246,9 @@ export function MemberProgressModal(props: ProgressMapProps) {
     }
 
     e.preventDefault();
-    const isCurrentStatusDone = targetGroup.classList.contains('done');
-    const normalizedGroupId = groupId.replace(/^\d+-/, '');
+    const isCurrentStatusDone = targetGroup?.classList.contains('done');
 
-    updateTopicStatus(
-      normalizedGroupId,
-      !isCurrentStatusDone ? 'done' : 'pending'
-    );
+    updateTopicStatus(topicId, !isCurrentStatusDone ? 'done' : 'pending');
   }
 
   async function handleClick(e: MouseEvent) {
@@ -211,9 +256,28 @@ export function MemberProgressModal(props: ProgressMapProps) {
     if (!targetGroup) {
       return;
     }
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
-      return;
+    let topicId = '';
+    if (isCustomRoadmap) {
+      const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
+      if (
+        !nodeId ||
+        !nodeType ||
+        !allowedClickableNodeTypes.includes(nodeType)
+      ) {
+        return;
+      }
+
+      if (nodeType === 'button') {
+        return;
+      }
+
+      topicId = nodeId;
+    } else {
+      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+      if (!groupId) {
+        return;
+      }
+      topicId = groupId.replace(/^\d+-/, '');
     }
 
     if (targetGroup.classList.contains('removed')) {
@@ -221,15 +285,13 @@ export function MemberProgressModal(props: ProgressMapProps) {
     }
 
     e.preventDefault();
-    const normalizedGroupId = groupId.replace(/^\d+-/, '');
-
     const isCurrentStatusLearning = targetGroup.classList.contains('learning');
     const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
 
     if (e.shiftKey) {
       e.preventDefault();
       updateTopicStatus(
-        normalizedGroupId,
+        topicId,
         !isCurrentStatusLearning ? 'learning' : 'pending'
       );
       return;
@@ -238,7 +300,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     if (e.altKey) {
       e.preventDefault();
       updateTopicStatus(
-        normalizedGroupId,
+        topicId,
         !isCurrentStatusSkipped ? 'skipped' : 'pending'
       );
 
@@ -279,7 +341,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
   return (
     <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
-        id={currentTeam?.type === 'company' ? 'customized-roadmap' : 'original-roadmap'}
+        id={
+          currentTeam?.type === 'company'
+            ? 'customized-roadmap'
+            : 'original-roadmap'
+        }
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div

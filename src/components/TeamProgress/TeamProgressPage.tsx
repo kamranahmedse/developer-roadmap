@@ -20,6 +20,7 @@ export type UserProgress = {
   skipped: number;
   total: number;
   updatedAt: string;
+  isCustomRoadmap?: boolean;
 };
 
 export type TeamMember = {
@@ -58,6 +59,7 @@ export function TeamProgressPage() {
   const [showMemberProgress, setShowMemberProgress] = useState<{
     resourceId: string;
     member: TeamMember;
+    isCustomRoadmap?: boolean;
   }>();
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
@@ -151,6 +153,7 @@ export function TeamProgressPage() {
           teamId={teamId}
           resourceId={showMemberProgress.resourceId}
           resourceType={'roadmap'}
+          isCustomRoadmap={showMemberProgress.isCustomRoadmap}
           onClose={() => {
             setShowMemberProgress(undefined);
           }}
@@ -207,10 +210,11 @@ export function TeamProgressPage() {
                 key={member._id}
                 member={member}
                 isMyProgress={member?.email === user?.email}
-                onShowResourceProgress={(resourceId) => {
+                onShowResourceProgress={(resourceId, isCustomRoadmap) => {
                   setShowMemberProgress({
                     resourceId,
                     member,
+                    isCustomRoadmap
                   });
                 }}
               />

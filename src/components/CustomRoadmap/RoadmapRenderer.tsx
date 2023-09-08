@@ -16,7 +16,7 @@ type RoadmapNodeDetails = {
   targetGroup: SVGElement;
 };
 
-function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
+export function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   const targetGroup = (svgElement?.closest('g') as SVGElement) || {};
 
   const nodeId = targetGroup?.dataset?.nodeId;
@@ -26,7 +26,7 @@ function getNodeDetails(svgElement: SVGElement): RoadmapNodeDetails | null {
   return { nodeId, nodeType, targetGroup };
 }
 
-const allowedNodeTypes = ['topic', 'subtopic', 'button'];
+export const allowedClickableNodeTypes = ['topic', 'subtopic', 'button'];
 
 export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
@@ -62,7 +62,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const handleSvgClick = useCallback((e: MouseEvent) => {
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) return;
+    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType)) return;
 
     if (nodeType === 'button') {
       const link = targetGroup?.dataset?.link || '';
@@ -105,7 +105,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
 
     const target = e.target as SVGElement;
     const { nodeId, nodeType, targetGroup } = getNodeDetails(target) || {};
-    if (!nodeId || !nodeType || !allowedNodeTypes.includes(nodeType)) return;
+    if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType)) return;
 
     if (nodeType === 'button') {
       return;
