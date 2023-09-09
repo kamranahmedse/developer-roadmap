@@ -37,6 +37,7 @@ export type GroupByRoadmap = {
   resourceId: string;
   resourceTitle: string;
   resourceType: string;
+  isCustomRoadmap?: boolean;
   members: {
     member: TeamMember;
     progress: UserProgress | undefined;
@@ -110,6 +111,7 @@ export function TeamProgressPage() {
 
   const groupByRoadmap: GroupByRoadmap[] = [];
   for (const roadmap of currentTeam?.roadmaps || []) {
+    let isCustomRoadmap = false;
     const members: GroupByRoadmap['members'] = [];
     for (const member of teamMembers) {
       const progress = member.progress.find(
@@ -118,6 +120,10 @@ export function TeamProgressPage() {
       if (!progress) {
         continue;
       }
+      if (progress.isCustomRoadmap && !isCustomRoadmap) {
+        isCustomRoadmap = true;
+      }
+
       members.push({
         member,
         progress,
@@ -133,6 +139,7 @@ export function TeamProgressPage() {
       resourceTitle: members?.[0].progress?.resourceTitle || '',
       resourceType: 'roadmap',
       members,
+      isCustomRoadmap,
     });
   }
 
@@ -163,6 +170,7 @@ export function TeamProgressPage() {
               member: teamMembers.find(
                 (member) => member.email === user?.email
               )!,
+              isCustomRoadmap: showMemberProgress.isCustomRoadmap,
             });
           }}
         />
@@ -196,6 +204,7 @@ export function TeamProgressPage() {
                     setShowMemberProgress({
                       resourceId,
                       member,
+                      isCustomRoadmap: roadmap.isCustomRoadmap,
                     });
                   }}
                 />
@@ -214,7 +223,7 @@ export function TeamProgressPage() {
                   setShowMemberProgress({
                     resourceId,
                     member,
-                    isCustomRoadmap
+                    isCustomRoadmap,
                   });
                 }}
               />
