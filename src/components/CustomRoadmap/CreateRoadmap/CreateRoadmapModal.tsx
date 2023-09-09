@@ -58,7 +58,12 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     redirect: boolean = true
   ) {
     e.preventDefault();
-    if (title.trim() === '' || isInvalidDescription) {
+    if (isLoading) {
+      return;
+    }
+
+    if (title.trim() === '' || isInvalidDescription || !type || !visibility) {
+      toast.error('Please fill all the fields');
       return;
     }
 
