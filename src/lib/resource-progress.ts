@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import { httpGet, httpPost } from './http';
-import { TOKEN_COOKIE_NAME } from './jwt';
+import { TOKEN_COOKIE_NAME, getUser } from './jwt';
 // @ts-ignore
 import Element = astroHTML.JSX.Element;
 
@@ -93,8 +93,9 @@ export async function getResourceProgress(
     };
   }
 
-  const progressKey = `${resourceType}-${resourceId}-progress`;
-  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
+  const userId = getUser()?.id;
+  const progressKey = `${resourceType}-${resourceId}-${userId}-progress`;
+  const isFavoriteKey = `${resourceType}-${resourceId}-${userId}-favorite`;
 
   const rawIsFavorite = localStorage.getItem(isFavoriteKey);
   const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
@@ -176,8 +177,9 @@ export function setResourceProgress(
   learning: string[],
   skipped: string[]
 ): void {
+  const userId = getUser()?.id;
   localStorage.setItem(
-    `${resourceType}-${resourceId}-progress`,
+    `${resourceType}-${resourceId}-${userId}-progress`,
     JSON.stringify({
       done,
       learning,
