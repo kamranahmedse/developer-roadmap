@@ -187,7 +187,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         <div
           className={cn(
             'mt-4 grid gap-4',
-            teamId ? 'grid-cols-2' : 'grid-cols-1'
+            teamId ? 'sm:grid-cols-2' : 'sm:grid-cols-1'
           )}
         >
           <div className="">
@@ -288,7 +288,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               type="submit"
               className={cn(
                 'flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800',
-                !teamId && 'w-full'
+                teamId ? 'hidden sm:flex' : 'w-full'
               )}
             >
               {isLoading ? (
@@ -302,11 +302,17 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
           </div>
         </div>
         {teamId && (
-          <p className="mt-4 rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600">
-            Preparing the roadmap might take some time, so feel free to save it
-            as a placeholder and anyone with the role <strong>admin</strong> or{' '}
-            <strong>manager</strong> can prepare it later.
-          </p>
+          <>
+            <p className="mt-4 hidden rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600 sm:block">
+              Preparing the roadmap might take some time, so feel free to save
+              it as a placeholder and anyone with the role{' '}
+              <strong>admin</strong> or <strong>manager</strong> can prepare it
+              later.
+            </p>
+            <p className="mt-4 rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600 sm:hidden">
+              Create a placeholder now and prepare it later.
+            </p>
+          </>
         )}
       </form>
     </Modal>
