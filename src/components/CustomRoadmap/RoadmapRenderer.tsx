@@ -12,6 +12,8 @@ import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { EmptyRoadmap } from './EmptyRoadmap';
+import { isLoggedIn } from '../../lib/jwt';
+import { httpPost } from '../../lib/http';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -40,6 +42,7 @@ export const allowedClickableNodeTypes = ['topic', 'subtopic', 'button'];
 export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapRef = useRef<HTMLDivElement>(null);
+  const roadmapId = roadmap._id!;
 
   const toast = useToast();
 
@@ -50,7 +53,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
       {
-        resourceId: roadmap._id!,
+        resourceId: roadmapId,
         resourceType: 'roadmap',
         topicId,
       },
@@ -69,6 +72,14 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
       });
 
     return;
+  }
+
+  async function trackVisit() {
+    if (!isLoggedIn()) return;
+    await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
+      resourceId: roadmapId,
+      resourceType: 'roadmap',
+    });
   }
 
   const handleSvgClick = useCallback((e: MouseEvent) => {
@@ -153,9 +164,10 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
           <Renderer
             ref={roadmapRef}
             roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
-            onRendered={() =>
-              renderResourceProgress('roadmap', roadmap._id!).then()
-            }
+            onRendered={() => {
+              renderResourceProgress('roadmap', roadmapId).then();
+              trackVisit().then();
+            }}
           />
         ) : (
           <EmptyRoadmap />
