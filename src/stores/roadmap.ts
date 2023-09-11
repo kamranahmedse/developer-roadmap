@@ -15,10 +15,7 @@ export const isCurrentRoadmapPersonal = computed(
   currentRoadmap,
   (roadmap) => roadmap?.teamId === undefined
 );
-export const canEditCurrentRoadmap = computed(currentRoadmap, (roadmap) => {
-  const user = getUser();
-  if (!user) {
-    return false;
-  }
-  return roadmap?.creatorId === user.id;
-});
+export const canManageCurrentRoadmap = computed(
+  currentRoadmap,
+  (roadmap) => roadmap?.canManage
+);

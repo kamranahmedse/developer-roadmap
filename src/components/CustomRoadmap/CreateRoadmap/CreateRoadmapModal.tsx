@@ -36,6 +36,7 @@ export interface RoadmapDocument {
   edges: any[];
   createdAt: Date;
   updatedAt: Date;
+  canManage: boolean;
 }
 
 interface CreateRoadmapModalProps {}

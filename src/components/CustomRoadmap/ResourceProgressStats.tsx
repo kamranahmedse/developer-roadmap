@@ -4,7 +4,7 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { useState } from 'react';
 import { ShareRoadmapModal } from './ShareRoadmapModal';
 import { useStore } from '@nanostores/react';
-import { canEditCurrentRoadmap } from '../../stores/roadmap';
+import { canManageCurrentRoadmap } from '../../stores/roadmap';
 
 type ResourceProgressStatsProps = {
   resourceId: string;
@@ -15,11 +15,11 @@ type ResourceProgressStatsProps = {
 export function ResourceProgressStats(props: ResourceProgressStatsProps) {
   const { isSecondaryBanner = false } = props;
   const [isSharing, setIsSharing] = useState(false);
-  const $canEditCurrentRoadmap = useStore(canEditCurrentRoadmap);
+  const $canManageCurrentRoadmap = useStore(canManageCurrentRoadmap);
 
   return (
     <>
-      {isSharing && $canEditCurrentRoadmap && (
+      {isSharing && $canManageCurrentRoadmap && (
         <ShareRoadmapModal onClose={() => setIsSharing(false)} />
       )}
       <div
@@ -67,7 +67,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex items-center gap-3 opacity-0 transition-opacity duration-300"
           data-progress-nums
         >
-          {$canEditCurrentRoadmap && (
+          {$canManageCurrentRoadmap && (
             <button
               className={cn(
                 'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
@@ -104,7 +104,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex items-center gap-2 opacity-0 transition-opacity duration-300"
           data-progress-nums
         >
-          {$canEditCurrentRoadmap && (
+          {$canManageCurrentRoadmap && (
             <button
               className={cn(
                 'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
