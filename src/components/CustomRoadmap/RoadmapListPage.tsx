@@ -5,6 +5,7 @@ import { ExternalLinkIcon, Plus } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
+import RoadmapIcon from '../../icons/roadmap.svg';
 
 export function RoadmapListPage() {
   const [roadmapList, setRoadmapList] = useState<RoadmapDocument[]>([]);
@@ -52,6 +53,29 @@ export function RoadmapListPage() {
       pageProgressMessage.set('');
     });
   }, []);
+
+  if (roadmapList.length === 0) {
+    return (
+      <div className="flex flex-col items-center p-4 py-20">
+        <img
+          alt="roadmap"
+          src={RoadmapIcon.src}
+          className="mb-4 h-24 w-24 opacity-10"
+        />
+        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
+        <p className="text-base text-gray-500">
+          Create a roadmap to get started
+        </p>
+
+        <button
+          className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
+          onClick={showCreateRoadmapModal}
+        >
+          Add roadmap
+        </button>
+      </div>
+    );
+  }
 
   return (
     <div>
