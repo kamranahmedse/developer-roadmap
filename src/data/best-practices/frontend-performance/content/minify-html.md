@@ -6,6 +6,6 @@ Removing all unnecessary spaces, comments and attributes will reduce the size of
 
 Most of the frameworks have plugins to facilitate the minification of the webpages. You can use a bunch of NPM modules that can do the job for you automatically.
 
-- [HTML minifier | Minify Code](http://minifycode.com/html-minifier/)
+- [HTML minifier | Code Beautify](https://codebeautify.org/minify-html)
 - [Online HTML Compressor](http://refresh-sf.com)
 - [Experimenting with HTML minifier — Perfection Kills](http://perfectionkills.com/experimenting-with-html-minifier/#use_short_doctype)
