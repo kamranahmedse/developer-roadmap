@@ -5,7 +5,10 @@ Recursive types in TypeScript are a way to define a type that references itself.
 For example, the following is a recursive type that represents a linked list:
 
 ```typescript
-type LinkedList<T> = T & { next: LinkedList<T> };
+type LinkedList<T> = {
+  value: T;
+  next: LinkedList<T> | null;
+};
 
 let list: LinkedList<number> = {
   value: 1,
