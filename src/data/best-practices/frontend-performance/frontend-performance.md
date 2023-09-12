@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/best-practices/frontend-performance.pdf'
 order: 1
 briefTitle: 'Frontend Performance'
 briefDescription: 'Frontend Performance Best Practices'
-isNew: true
+isNew: false
 isUpcoming: false
 title: 'Frontend Performance Best Practices'
 description: 'Detailed list of best practices to improve your frontend performance'

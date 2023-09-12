@@ -57,7 +57,6 @@ export async function getBestPracticeIds() {
 /**
  * Gets all the best practice files
  *
- * @param tag Tag assigned to best practice
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {

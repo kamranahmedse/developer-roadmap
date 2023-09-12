@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [Comprehensive Rust by Google - Learn Rust in 4 Days](https://google.github.io/comprehensive-rust/)
 - [Microsoft Learn Course](https://learn.microsoft.com/en-us/training/paths/rust-first-steps/)
 - [Quick Rust Guide](https://sivanaikk.github.io/rust/)
+- [Rust Katas - Small, interactive Rust exercises](https://rustlings.cool/)

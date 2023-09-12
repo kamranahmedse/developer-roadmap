@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/best-practices/code-review.pdf'
 order: 2
 briefTitle: 'Code Reviews'
 briefDescription: 'Code Review Best Practices'
-isNew: true
+isNew: false
 isUpcoming: false
 title: 'Code Review Best Practices'
 description: 'Detailed list of best practices for effective code reviews and quality'

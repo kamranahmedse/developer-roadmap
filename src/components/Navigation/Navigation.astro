@@ -5,7 +5,11 @@ import AccountDropdown from './AccountDropdown.astro';
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
   <nav class='container flex items-center justify-between'>
-    <a class='flex items-center text-lg font-medium text-white' href='/' aria-label="roadmap.sh">
+    <a
+      class='flex items-center text-lg font-medium text-white'
+      href='/'
+      aria-label='roadmap.sh'
+    >
       <Icon icon='logo' />
     </a>
 
@@ -26,9 +30,12 @@ import AccountDropdown from './AccountDropdown.astro';
         <a href='/videos' class='text-gray-400 hover:text-white'>Videos</a>
       </li>
       <li>
-        <kbd data-command-menu class="hidden sm:flex items-center text-gray-400 border border-gray-800 rounded-md px-2.5 py-1 text-sm hover:bg-gray-800 hover:cursor-pointer">
-           <Icon icon='search' class='h-3 w-3 mr-2' />
-          <kbd class='font-sans mr-1'>⌘</kbd><kbd class='font-sans'>K</kbd>
+        <kbd
+          data-command-menu
+          class='hidden items-center rounded-md border border-gray-800 px-2.5 py-1 text-sm text-gray-400 hover:cursor-pointer hover:bg-gray-800 sm:flex'
+        >
+          <Icon icon='search' class='mr-2 h-3 w-3' />
+          <kbd class='mr-1 font-sans'>⌘</kbd><kbd class='font-sans'>K</kbd>
         </kbd>
       </li>
     </ul>
@@ -97,10 +104,7 @@ import AccountDropdown from './AccountDropdown.astro';
 
         <!-- Links for logged in users -->
         <li data-auth-required class='hidden'>
-          <a
-            href='/account'
-            class='text-xl hover:text-blue-300 md:text-lg'
-          >
+          <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
             Account
           </a>
         </li>

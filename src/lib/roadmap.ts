@@ -1,8 +1,6 @@
-import type { PageSponsorType } from '../components/PageSponsor';
 import type { MarkdownFileType } from './file';
 
 export interface RoadmapFrontmatter {
-  jsonUrl: string;
   pdfUrl: string;
   order: number;
   briefTitle: string;
@@ -21,6 +19,7 @@ export interface RoadmapFrontmatter {
   seo: {
     title: string;
     description: string;
+    ogImageUrl?: string;
     keywords: string[];
   };
   schema?: {

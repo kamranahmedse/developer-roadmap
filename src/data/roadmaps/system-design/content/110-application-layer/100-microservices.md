@@ -8,3 +8,4 @@ To learn more, visit the following links:
 
 - [Introduction to Microservices](https://aws.amazon.com/microservices/)
 - [Microservices - Wikipedia](https://en.wikipedia.org/wiki/Microservices)
+- [Microservices](https://martinfowler.com/articles/microservices.html)

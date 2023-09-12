@@ -1,6 +1,6 @@
 # MFU Cache
 
-MFU Cache is a variation of the LRU Cache. The difference is that instead of deleting the least recently used entry, the MFU Cache deletes the least frequently used entry.
+MFU Cache is another cache algorithm. The difference is that instead of deleting the least frequently used entry, the MFU Cache deletes the most frequently used entry.
 
 Visit the following resources to learn more:
 

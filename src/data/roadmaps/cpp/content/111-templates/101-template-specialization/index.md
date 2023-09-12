@@ -23,7 +23,7 @@ void printData(const T& data) {
 }
 
 template <>
-void printData(const char*& data) {
+void printData(const char* const & data) {
     std::cout << "Specialized template for const char*: " << data << std::endl;
 }
 

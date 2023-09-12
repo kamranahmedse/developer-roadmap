@@ -7,12 +7,13 @@ import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
 import { TopicDetail } from '../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../components/UpcomingForm.astro';
+import { UserProgressModal } from '../../components/UserProgress/UserProgressModal';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import {
-generateArticleSchema,
-generateFAQSchema,
+  generateArticleSchema,
+  generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { RoadmapFrontmatter,getRoadmapIds } from '../../lib/roadmap';
+import { RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
   const roadmapIds = await getRoadmapIds();
@@ -54,14 +55,14 @@ if (roadmapData.schema) {
 if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
-
-const contentContributionLink = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/roadmaps/${roadmapId}/content`;
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
+  ogImageUrl={roadmapData?.seo?.ogImageUrl ||
+    'https://roadmap.sh/images/og-img.png'}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}
@@ -89,8 +90,8 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
 
   <div class='bg-gray-50 pt-4 sm:pt-12'>
     {
-      !roadmapData.isUpcoming && roadmapData.jsonUrl && (
-        <div class='container relative max-w-[1000px]'>
+      !roadmapData.isUpcoming && roadmapData.briefTitle !== 'Android' && (
+        <div class='container relative !max-w-[1000px]'>
           <ShareIcons
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
@@ -100,7 +101,6 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
           <FrameRenderer
             resourceType={'roadmap'}
             resourceId={roadmapId}
-            jsonUrl={roadmapData.jsonUrl}
             dimensions={roadmapData.dimensions}
           />
         </div>
@@ -108,7 +108,7 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     }
 
     {
-      !roadmapData.isUpcoming && !roadmapData.jsonUrl && (
+      !roadmapData.isUpcoming && roadmapData.briefTitle === 'Android' && (
         <div class='mt-0 pb-14 sm:-mt-6'>
           <MarkdownFile>
             <roadmapFile.Content />
@@ -118,6 +118,11 @@ const contentContributionLink = `https://github.com/kamranahmedse/developer-road
     }
 
     {roadmapData.isUpcoming && <UpcomingForm />}
+    <UserProgressModal
+      resourceId={roadmapId}
+      resourceType='roadmap'
+      client:only="react"
+    />
 
     <FAQs faqs={roadmapFAQs} />
     <RelatedRoadmaps roadmap={roadmapData} />

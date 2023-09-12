@@ -33,3 +33,5 @@ Availability ensures that systems and information are accessible and functional 
 - Backups: Regularly saving copies of your data to prevent loss in case of a catastrophe, such as a hardware failure, malware attack, or natural disaster.
 
 In summary, the CIA Triad is an essential aspect of cybersecurity, providing a clear framework to evaluate and implement security measures. By ensuring confidentiality, integrity, and availability, you create a robust and secure environment for your information and systems.
+
+- [What is the CIA Triad (Varonis)?](https://www.varonis.com/blog/cia-triad)

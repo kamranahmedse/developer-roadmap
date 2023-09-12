@@ -6,7 +6,7 @@ briefTitle: 'System Design'
 briefDescription: 'Guide to learn system Design'
 title: 'System Design'
 description: 'Everything you need to know about designing large scale systems.'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

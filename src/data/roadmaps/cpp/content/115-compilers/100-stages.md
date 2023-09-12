@@ -39,10 +39,10 @@ The third stage is converting the compiler's intermediate representation into as
 
 **Code Example (x86 Assembly):**
 
-```assembly
-    mov eax, 10
-    mov ebx, 20
-    add eax, ebx
+```
+mov eax, 10
+mov ebx, 20
+add eax, ebx
 ```
 
 ## Linking

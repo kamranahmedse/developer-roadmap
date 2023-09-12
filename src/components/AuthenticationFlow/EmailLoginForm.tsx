@@ -1,17 +1,17 @@
 import Cookies from 'js-cookie';
-import type { FunctionComponent } from 'preact';
-import { useState } from 'preact/hooks';
+import type { FormEvent } from 'react';
+import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
-const EmailLoginForm: FunctionComponent<{}> = () => {
+export function EmailLoginForm() {
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState('');
 
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
-  const handleFormSubmit = async (e: Event) => {
+  const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -29,6 +29,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       Cookies.set(TOKEN_COOKIE_NAME, response.token, {
         path: '/',
         expires: 30,
+        domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
       });
       window.location.reload();
 
@@ -76,7 +77,7 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
         onInput={(e) => setPassword(String((e.target as any).value))}
       />
 
-      <p class="mb-3 mt-2 text-sm text-gray-500">
+      <p className="mb-3 mt-2 text-sm text-gray-500">
         <a
           href="/forgot-password"
           className="text-blue-800 hover:text-blue-600"
@@ -98,6 +99,4 @@ const EmailLoginForm: FunctionComponent<{}> = () => {
       </button>
     </form>
   );
-};
-
-export default EmailLoginForm;
+}

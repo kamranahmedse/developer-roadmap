@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
-
+import { useEffect, useState } from 'react';
 import GitHubIcon from '../../icons/github.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import Cookies from 'js-cookie';
@@ -62,6 +61,7 @@ export function GitHubButton(props: GitHubButtonProps) {
         Cookies.set(TOKEN_COOKIE_NAME, response.token, {
           path: '/',
           expires: 30,
+          domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
         });
         window.location.href = redirectUrl;
       })
@@ -90,8 +90,14 @@ export function GitHubButton(props: GitHubButtonProps) {
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
+      const pagePath = ['/respond-invite', '/befriend'].includes(
+        window.location.pathname
+      )
+        ? window.location.pathname + window.location.search
+        : window.location.pathname;
+
       localStorage.setItem(GITHUB_REDIRECT_AT, Date.now().toString());
-      localStorage.setItem(GITHUB_LAST_PAGE, window.location.pathname);
+      localStorage.setItem(GITHUB_LAST_PAGE, pagePath);
     }
 
     window.location.href = response.loginUrl;
@@ -100,14 +106,14 @@ export function GitHubButton(props: GitHubButtonProps) {
   return (
     <>
       <button
-        class="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
+        className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
         disabled={isLoading}
         onClick={handleClick}
       >
         <img
-          src={icon}
+          src={icon.src}
           alt="GitHub"
-          class={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
+          className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
         />
         Continue with GitHub
       </button>

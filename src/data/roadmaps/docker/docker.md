@@ -6,7 +6,7 @@ briefTitle: 'Docker'
 briefDescription: 'Step by step guide to learning Docker in 2023'
 title: 'Docker Roadmap'
 description: 'Step by step guide to learning Docker in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968
@@ -29,6 +29,9 @@ seo:
     - 'docker roadmap 2023'
     - 'guide to learning docker'
     - 'docker roadmap'
+    - 'docker learning path'
+    - 'docker learning roadmap'
+    - 'container roadmap'
     - 'docker'
     - 'docker learning guide'
     - 'docker skills'

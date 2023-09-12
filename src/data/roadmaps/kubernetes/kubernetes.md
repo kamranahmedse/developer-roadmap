@@ -6,7 +6,7 @@ briefTitle: 'Kubernetes'
 briefDescription: 'Step by step guide to learning Kubernetes in 2023'
 title: 'Kubernetes Roadmap'
 description: 'Step by step guide to learning Kubernetes in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io/kubernetes?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
 dimensions:

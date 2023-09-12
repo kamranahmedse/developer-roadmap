@@ -68,3 +68,5 @@ You can deploy a PostgreSQL application on Kubernetes by following these steps:
 - **Scale your deployment** - You can easily scale your PostgreSQL application by changing the number of replicas in the deployment file, then updating it using `kubectl apply -f deployment.yaml`.
 
 By following these steps, you can successfully deploy and manage a PostgreSQL application using the Kubernetes deployment system.
+
+- [Run PostgreSQL. The Kubernetes way](https://cloudnative-pg.io/)

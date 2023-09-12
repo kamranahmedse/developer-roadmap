@@ -1,23 +1,24 @@
-import { useEffect, useMemo, useRef, useState } from 'preact/hooks';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import DownIcon from '../../icons/down.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 import { isLoggedIn } from '../../lib/jwt';
 import {
-  ResourceProgressType,
-  ResourceType,
   getTopicStatus,
+  refreshProgressCounters,
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
+import type { ResourceProgressType, ResourceType } from '../../lib/resource-progress';
+import { showLoginPopup } from '../../lib/popup';
+import { useToast } from '../../hooks/use-toast';
 
 type TopicProgressButtonProps = {
   topicId: string;
   resourceId: string;
   resourceType: ResourceType;
 
-  onShowLoginPopup: () => void;
   onClose: () => void;
 };
 
@@ -26,12 +27,13 @@ const statusColors: Record<ResourceProgressType, string> = {
   learning: 'bg-yellow-500',
   pending: 'bg-gray-300',
   skipped: 'bg-black',
+  removed: ''
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
-  const { topicId, resourceId, resourceType, onClose, onShowLoginPopup } =
-    props;
+  const { topicId, resourceId, resourceType, onClose } = props;
 
+  const toast = useToast();
   const [isUpdatingProgress, setIsUpdatingProgress] = useState(true);
   const [progress, setProgress] = useState<ResourceProgressType>('pending');
   const [showChangeStatus, setShowChangeStatus] = useState(false);
@@ -118,7 +120,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
     if (isGuest) {
       onClose();
-      onShowLoginPopup();
+      showLoginPopup();
       return;
     }
 
@@ -135,9 +137,10 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         setProgress(progress);
         onClose();
         renderTopicProgress(topicId, progress);
+        refreshProgressCounters();
       })
       .catch((err) => {
-        alert(err.message);
+        toast.error(err.message || 'Error updating progress');
         console.error(err);
       })
       .finally(() => {
@@ -161,7 +164,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   if (isUpdatingProgress) {
     return (
       <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
-        <img alt="Check" class="h-4 w-4 animate-spin" src={SpinnerIcon} />
+        <img alt="Check" className="h-4 w-4 animate-spin" src={SpinnerIcon.src} />
         <span className="ml-2">Updating Status..</span>
       </button>
     );
@@ -170,9 +173,9 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   return (
     <div className="relative inline-flex rounded-md border border-gray-300">
       <span className="inline-flex cursor-default items-center  p-1 px-2 text-sm text-black">
-        <span class="flex h-2 w-2">
+        <span className="flex h-2 w-2">
           <span
-            class={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
+            className={`relative inline-flex h-2 w-2 rounded-full ${statusColors[progress]}`}
           ></span>
         </span>
         <span className="ml-2 capitalize">
@@ -185,7 +188,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         onClick={() => setShowChangeStatus(true)}
       >
         <span className="mr-0.5">Update Status</span>
-        <img alt="Check" class="h-4 w-4" src={DownIcon} />
+        <img alt="Check" className="h-4 w-4" src={DownIcon.src} />
       </button>
 
       {showChangeStatus && (
@@ -195,59 +198,59 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         >
           {allowMarkingDone && (
             <button
-              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('done')}
             >
               <span>
                 <span
-                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
+                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['done']}`}
                 ></span>
                 Done
               </span>
-              <span class="text-xs text-gray-500">D</span>
+              <span className="text-xs text-gray-500">D</span>
             </button>
           )}
           {allowMarkingLearning && (
             <button
-              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('learning')}
             >
               <span>
                 <span
-                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
+                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['learning']}`}
                 ></span>
                 In Progress
               </span>
 
-              <span class="text-xs text-gray-500">L</span>
+              <span className="text-xs text-gray-500">L</span>
             </button>
           )}
           {allowMarkingPending && (
             <button
-              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('pending')}
             >
               <span>
                 <span
-                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
+                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['pending']}`}
                 ></span>
                 Reset
               </span>
-              <span class="text-xs text-gray-500">R</span>
+              <span className="text-xs text-gray-500">R</span>
             </button>
           )}
           {allowMarkingSkipped && (
             <button
-              class="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
+              className="inline-flex justify-between px-3 py-1.5 text-left text-sm text-gray-800 hover:bg-gray-100"
               onClick={() => handleUpdateResourceProgress('skipped')}
             >
               <span>
                 <span
-                  class={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
+                  className={`mr-2 inline-block h-2 w-2 rounded-full ${statusColors['skipped']}`}
                 ></span>
                 Skip
               </span>
-              <span class="text-xs text-gray-500">S</span>
+              <span className="text-xs text-gray-500">S</span>
             </button>
           )}
         </div>

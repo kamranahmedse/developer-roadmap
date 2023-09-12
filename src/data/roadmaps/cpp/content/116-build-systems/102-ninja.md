@@ -4,7 +4,7 @@ Ninja is a small build system with a focus on speed. It is designed to handle la
 
 Ninja build files are typically named `build.ninja` and contain rules, build statements, and variable declarations. Here's a simple example of a Ninja build file for a C++ project:
 
-```ninja
+```
 # Variable declarations
 cxx = g++
 cflags = -Wall -Wextra -std=c++17

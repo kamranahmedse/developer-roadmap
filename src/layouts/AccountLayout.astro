@@ -1,5 +1,5 @@
 ---
-import BaseLayout,{ Props as BaseLayoutProps } from './BaseLayout.astro';
+import BaseLayout, { Props as BaseLayoutProps } from './BaseLayout.astro';
 
 export interface Props extends BaseLayoutProps {}
 
@@ -8,5 +8,6 @@ const props = Astro.props;
 
 <BaseLayout {...props} noIndex={true}>
   <slot />
+  <div slot='login-popup'></div>
   <div slot='page-footer'></div>
 </BaseLayout>

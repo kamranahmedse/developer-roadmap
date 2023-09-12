@@ -4,15 +4,16 @@ import FeaturedItem, { FeaturedItemType } from './FeaturedItem.astro';
 export interface Props {
   featuredItems: FeaturedItemType[];
   heading: string;
+  allowBookmark?: boolean;
 }
 
-const { featuredItems, heading } = Astro.props;
+const { featuredItems, heading, allowBookmark = true } = Astro.props;
 ---
 
 <div class='relative border-b border-b-[#1e293c] py-10 sm:py-14'>
   <div class='container'>
     <h2
-      class='text-md font-regular absolute flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 -top-[17px] sm:left-1/2 sm:-translate-x-1/2'
+      class='text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2'
     >
       {heading}
     </h2>
@@ -22,6 +23,7 @@ const { featuredItems, heading } = Astro.props;
         featuredItems.map((featuredItem) => (
           <li>
             <FeaturedItem
+              allowBookmark={allowBookmark}
               text={featuredItem.text}
               url={featuredItem.url}
               isNew={featuredItem.isNew}

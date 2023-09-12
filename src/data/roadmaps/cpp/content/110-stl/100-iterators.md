@@ -37,6 +37,19 @@ while (itr != nums.end()) {
 }
 ```
 
+**Reverse Iterator**: Similar to input iterators but can be used for multiple passes over the elements in a container. They cannot move forward.
+
+Example:
+
+```cpp
+std::list<int> nums = {1, 2, 3, 4};
+std::list<int>::reverse_iterator itr = nums.rbegin();
+while (itr != nums.rend()) {
+    std::cout << *itr << " ";
+    ++itr;
+}
+```
+
 - **Bidirectional Iterator**: These iterators offer the ability to move both forward and backward in a container. List and set containers have bi-directional iterators.
 
 Example:

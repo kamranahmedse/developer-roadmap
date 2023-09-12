@@ -11,4 +11,4 @@ Visit the following resources to learn more:
 - [Exploring JS: JavaScript books for programmers](https://exploringjs.com/)
 - [JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c?t=2)
 - [Build a Netflix Landing Page Clone with HTML, CSS & JS](https://youtu.be/P7t13SGytRk?t=22)
-- [Learn Javascript - Full course for bignners>](https://www.youtube.com/watch?v=PkZNo7MFNFg)
+- [Learn JavaScript - Full Course for Beginners](https://www.youtube.com/watch?v=PkZNo7MFNFg)

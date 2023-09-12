@@ -53,12 +53,12 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
   const sortOrder = controlName.match(/^\d+/)?.[0];
 
   // No directory for a group without control name
-  if (!controlName || !sortOrder) {
+  if (!controlName || (!sortOrder && !controlName.startsWith('check:'))) {
     return;
   }
 
   // e.g. testing-your-apps:other-options
-  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '');
+  const controlNameWithoutSortOrder = controlName.replace(/^\d+-/, '').replace(/^check:/, '');
   // e.g. ['testing-your-apps', 'other-options']
   const dirParts = controlNameWithoutSortOrder.split(':');
 
@@ -84,8 +84,9 @@ function prepareDirTree(control, dirTree, dirSortOrders) {
 
 const roadmap = require(path.join(
   __dirname,
-  `../public/jsons/roadmaps/${roadmapId}`
+  `../src/data/roadmaps/${roadmapId}/${roadmapId}`
 ));
+
 const controls = roadmap.mockup.controls.control;
 
 // Prepare the dir tree that we will be creating and also calculate the sort orders

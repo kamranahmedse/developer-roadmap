@@ -85,7 +85,7 @@ int& numRef = num;
 User-defined data types are types that are defined by the programmer, such as structures, classes, and unions.
 
 ## Structures (struct)
-Structures are used to group variables of different data types together under a single name.
+Structures are used to store different data tyes under a single variable and accessibility of member variables and methods are public.
 
 Example:
 ```cpp
@@ -99,7 +99,7 @@ Person p1 = {"John Doe", 30, 5.9};
 ```
 
 ## Classes (class)
-Classes are similar to structures, but they can also have member functions and access specifiers.
+Classes are similar to structures, but the accessibility of the member data and function are governed by access specifiers. By default access to members of a class is private.
 
 Example:
 ```cpp

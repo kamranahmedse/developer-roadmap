@@ -28,7 +28,7 @@ Here are some basic commands to help you interact with your PostgreSQL database 
 
 - To execute an SQL query, simply type it at the prompt followed by a semicolon (`;`), and hit enter. For example:
 
-  ```SQL
+  ```sql
   mydb=> SELECT * FROM mytable;
   ```
 

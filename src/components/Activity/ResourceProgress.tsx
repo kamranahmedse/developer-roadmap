@@ -1,6 +1,8 @@
-import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
+import { useToast } from '../../hooks/use-toast';
+import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
+import { useState } from 'react';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -11,10 +13,13 @@ type ResourceProgressType = {
   doneCount: number;
   learningCount: number;
   skippedCount: number;
-  onCleared: () => void;
+  onCleared?: () => void;
+  showClearButton?: boolean;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
+  const { showClearButton = true } = props;
+  const toast = useToast();
   const [isClearing, setIsClearing] = useState(false);
   const [isConfirming, setIsConfirming] = useState(false);
 
@@ -41,17 +46,20 @@ export function ResourceProgress(props: ResourceProgressType) {
     );
 
     if (error || !response) {
-      alert('Error clearing progress. Please try again.');
+      toast.error('Error clearing progress. Please try again.');
       console.error(error);
       setIsClearing(false);
       return;
     }
 
+    localStorage.removeItem(`${resourceType}-${resourceId}-favorite`);
     localStorage.removeItem(`${resourceType}-${resourceId}-progress`);
-    console.log(`${resourceType}-${resourceId}-progress`);
+
     setIsClearing(false);
     setIsConfirming(false);
-    onCleared();
+    if (onCleared) {
+      onCleared();
+    }
   }
 
   const url =
@@ -81,7 +89,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           {getRelativeTimeString(updatedAt)}
         </span>
       </a>
-      <p className="sm:space-between flex flex-row items-start rounded-b-md border border-t-0 px-2 py-2 text-xs text-gray-500">
+      <div className="sm:space-between flex flex-row items-start rounded-b-md border border-t-0 px-2 py-2 text-xs text-gray-500">
         <span className="hidden flex-1 gap-1 sm:flex">
           {doneCount > 0 && (
             <>
@@ -100,40 +108,55 @@ export function ResourceProgress(props: ResourceProgressType) {
           )}
           <span>{totalCount} total</span>
         </span>
-        {!isConfirming && (
-          <button
-            className="text-red-500 hover:text-red-800"
-            onClick={() => setIsConfirming(true)}
-            disabled={isClearing}
-          >
-            {!isClearing && (
-              <>
-                Clear Progress <span>&times;</span>
-              </>
-            )}
+        <div className="flex w-full items-center justify-between gap-2 sm:w-auto sm:justify-start">
+          <ProgressShareButton
+            resourceType={resourceType}
+            resourceId={resourceId}
+            className="text-xs font-normal"
+            shareIconClassName="w-2.5 h-2.5 stroke-2"
+            checkIconClassName="w-2.5 h-2.5"
+          />
+          <span className={'hidden sm:block'}>&bull;</span>
 
-            {isClearing && 'Processing...'}
-          </button>
-        )}
+          {showClearButton && (
+            <>
+              {!isConfirming && (
+                <button
+                  className="text-red-500 hover:text-red-800"
+                  onClick={() => setIsConfirming(true)}
+                  disabled={isClearing}
+                >
+                  {!isClearing && (
+                    <>
+                      Clear Progress <span>&times;</span>
+                    </>
+                  )}
 
-        {isConfirming && (
-          <span>
-            Are you sure?{' '}
-            <button
-              onClick={clearProgress}
-              className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
-            >
-              Yes
-            </button>{' '}
-            <button
-              onClick={() => setIsConfirming(false)}
-              className="text-red-500 underline hover:text-red-800"
-            >
-              No
-            </button>
-          </span>
-        )}
-      </p>
+                  {isClearing && 'Processing...'}
+                </button>
+              )}
+
+              {isConfirming && (
+                <span>
+                  Are you sure?{' '}
+                  <button
+                    onClick={clearProgress}
+                    className="ml-1 mr-1 text-red-500 underline hover:text-red-800"
+                  >
+                    Yes
+                  </button>{' '}
+                  <button
+                    onClick={() => setIsConfirming(false)}
+                    className="text-red-500 underline hover:text-red-800"
+                  >
+                    No
+                  </button>
+                </span>
+              )}
+            </>
+          )}
+        </div>
+      </div>
     </div>
   );
 }

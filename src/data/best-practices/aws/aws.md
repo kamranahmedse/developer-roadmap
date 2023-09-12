@@ -4,7 +4,7 @@ pdfUrl: '/pdfs/best-practices/aws.pdf'
 order: 3
 briefTitle: 'AWS'
 briefDescription: 'AWS Best Practices'
-isNew: true
+isNew: false
 isUpcoming: false
 title: 'AWS Best Practices'
 description: 'Detailed list of best practices for Amazon Web Services (AWS)'

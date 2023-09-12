@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import UploadProfilePicture from './UploadProfilePicture';
@@ -16,7 +16,7 @@ export function UpdateProfileForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -83,9 +83,11 @@ export function UpdateProfileForm() {
     <div>
       <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Profile</h2>
-        <p className="mt-2">Update your profile details below.</p>
+        <p className="mt-2 text-gray-400">Update your profile details below.</p>
       </div>
       <UploadProfilePicture
+        type="avatar"
+        label="Profile picture"
         avatarUrl={
           avatar
             ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
@@ -95,7 +97,7 @@ export function UpdateProfileForm() {
       <form className="mt-4 space-y-4" onSubmit={handleSubmit}>
         <div className="flex w-full flex-col">
           <label
-            for="name"
+            htmlFor="name"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Name
@@ -113,7 +115,7 @@ export function UpdateProfileForm() {
         </div>
         <div className="flex w-full flex-col">
           <label
-            for="email"
+            htmlFor="email"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Email
@@ -131,7 +133,10 @@ export function UpdateProfileForm() {
         </div>
 
         <div className="flex w-full flex-col">
-          <label for="github" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="github"
+            className="text-sm leading-none text-slate-500"
+          >
             Github
           </label>
           <input
@@ -145,7 +150,10 @@ export function UpdateProfileForm() {
           />
         </div>
         <div className="flex w-full flex-col">
-          <label for="twitter" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="twitter"
+            className="text-sm leading-none text-slate-500"
+          >
             Twitter
           </label>
           <input
@@ -160,7 +168,10 @@ export function UpdateProfileForm() {
         </div>
 
         <div className="flex w-full flex-col">
-          <label for="linkedin" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="linkedin"
+            className="text-sm leading-none text-slate-500"
+          >
             LinkedIn
           </label>
           <input
@@ -175,7 +186,10 @@ export function UpdateProfileForm() {
         </div>
 
         <div className="flex w-full flex-col">
-          <label for="website" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="website"
+            className="text-sm leading-none text-slate-500"
+          >
             Website
           </label>
           <input

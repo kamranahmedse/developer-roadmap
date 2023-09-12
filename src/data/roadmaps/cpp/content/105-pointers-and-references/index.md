@@ -19,6 +19,20 @@ int *ptr = &num;  // Pointer 'ptr' now points to the memory address of 'num'
 int value = *ptr; // Value now contains the value of the variable that 'ptr' points to (i.e., 10)
 ```
 
+**Function pointer:**
+
+```cpp
+int add(int a, int b)
+{
+  return a + b;
+}
+
+int main()
+{   int (*funcptr) (int, int) = add; // Pointer 'funcptr' now points to the functions 'add'
+  funcptr(4, 5); // Return 9
+}
+``` 
+
 ## References
 
 A reference is an alias for an existing variable, meaning it's a different name for the same memory location. Unlike pointers, references cannot be null, and they must be initialized when they are declared. Once a reference is initialized, it cannot be changed to refer to another variable.

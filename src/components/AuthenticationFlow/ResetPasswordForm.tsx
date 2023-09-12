@@ -1,9 +1,9 @@
-import { useEffect, useState } from 'preact/hooks';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
-export default function ResetPasswordForm() {
+export function ResetPasswordForm() {
   const [code, setCode] = useState('');
   const [password, setPassword] = useState('');
   const [passwordConfirm, setPasswordConfirm] = useState('');
@@ -21,7 +21,7 @@ export default function ResetPasswordForm() {
     }
   }, []);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
 
@@ -56,6 +56,7 @@ export default function ResetPasswordForm() {
     Cookies.set(TOKEN_COOKIE_NAME, token, {
       path: '/',
       expires: 30,
+      domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
     });
     window.location.href = '/';
   };

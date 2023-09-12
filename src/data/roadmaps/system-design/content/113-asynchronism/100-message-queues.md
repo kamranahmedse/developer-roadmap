@@ -18,3 +18,4 @@ To learn more, visit the following links:
 - [RabbitMQ in Message Queues](https://www.rabbitmq.com/)
 - [Overview of Amazon SQS](https://aws.amazon.com/sqs/)
 - [Apache Kafka](https://kafka.apache.org/)
+- [RabbitMQ for beginners](https://www.cloudamqp.com/blog/part1-rabbitmq-for-beginners-what-is-rabbitmq.html)

@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [Blockchain Explained](https://www.investopedia.com/terms/b/blockchain.asp)
 - [How does a blockchain work?](https://youtu.be/SSo_EIwHSd4)
 - [What Is a Blockchain? | Blockchain Basics for Developers](https://youtu.be/4ff9esY_4aU)
+- [An Elementary and Slightly Distilled Introduction to Blockchain](https://markpetherbridge.co.uk/blog/an-elementary-and-slightly-distilled-introduction-to-blockchain/)

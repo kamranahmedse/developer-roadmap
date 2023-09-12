@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
 export function ForgotPasswordForm() {
@@ -7,7 +7,7 @@ export function ForgotPasswordForm() {
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     setError('');
@@ -29,7 +29,7 @@ export function ForgotPasswordForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} class="w-full">
+    <form onSubmit={handleSubmit} className="w-full">
       <input
         type="email"
         name="email"

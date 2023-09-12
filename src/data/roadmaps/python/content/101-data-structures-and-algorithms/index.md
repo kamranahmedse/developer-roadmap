@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Learn DS & Algorithms](https://www.programiz.com/dsa)
 - [Data Structures Illustrated](https://www.youtube.com/playlist?list=PLkZYeFmDuaN2-KUIv-mvbjfKszIGJ4FaY)
+- [DSA Course by Google](https://www.udacity.com/course/data-structures-and-algorithms-in-python--ud513)

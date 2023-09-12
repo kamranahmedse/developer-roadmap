@@ -27,3 +27,5 @@ Apple takes the security of iCloud very seriously and has implemented multiple l
 - **Secure Tokens**: Apple uses secure tokens for authentication, which means that your iCloud password is not stored on your devices or on Apple's servers.
 
 Overall, iCloud is a convenient and secure way for Apple device users to store and synchronize their data across devices. This cloud-based service offers numerous features to ensure seamless access and enhanced protection for user data.
+
+- [All about iCloud](https://www.intego.com/mac-security-blog/everything-you-can-do-with-icloud-the-complete-guide/)

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Iterators in Python](https://www.w3schools.com/python/python_iterators.asp)
 - [Python Iterators](https://www.geeksforgeeks.org/iterators-in-python/)
+- [Python Iterators](https://www.programiz.com/python-programming/iterator)

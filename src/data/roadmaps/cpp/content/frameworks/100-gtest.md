@@ -7,7 +7,7 @@ Google Test, also known as gtest or googletest, is a C++ testing framework devel
 To use Google Test in your project, follow these steps:
 
 - Download the source code from the [GoogleTest GitHub repository](https://github.com/google/googletest).
-- Build and install Google Test on your system. Instructions for various platforms can be found in the [README](https://github.com/google/googletest/blob/master/googletest/README.md) file.
+- Build and install Google Test on your system. Instructions for various platforms can be found in the [README](https://github.com/google/googletest/blob/main/googletest/README.md) file.
 - Include the necessary headers and link against the Google Test library in your project.
 
 ## Writing a Test with Google Test
@@ -72,4 +72,4 @@ Google Test offers a wide range of features to make testing easier, such as:
 
 - **Death Tests**: Google Test allows you to write tests that verify if your code terminates correctly or with the expected error message.
 
-For more information about Google Test and its features, refer to the [official documentation](https://github.com/google/googletest/blob/master/googletest/docs/primer.md).
+For more information about Google Test and its features, refer to the [official documentation](https://github.com/google/googletest/blob/main/docs/primer.md).

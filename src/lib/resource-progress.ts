@@ -4,7 +4,12 @@ import { TOKEN_COOKIE_NAME } from './jwt';
 import Element = astroHTML.JSX.Element;
 
 export type ResourceType = 'roadmap' | 'best-practice';
-export type ResourceProgressType = 'done' | 'learning' | 'pending' | 'skipped';
+export type ResourceProgressType =
+  | 'done'
+  | 'learning'
+  | 'pending'
+  | 'skipped'
+  | 'removed';
 
 type TopicMeta = {
   topicId: string;
@@ -51,6 +56,7 @@ export async function updateResourceProgress(
     done: string[];
     learning: string[];
     skipped: string[];
+    isFavorite: boolean;
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-update-resource-progress`, {
     topicId,
     resourceType,
@@ -67,7 +73,7 @@ export async function updateResourceProgress(
     resourceId,
     response.done,
     response.learning,
-    response.skipped,
+    response.skipped
   );
 
   return response;
@@ -76,7 +82,7 @@ export async function updateResourceProgress(
 export async function getResourceProgress(
   resourceType: 'roadmap' | 'best-practice',
   resourceId: string
-): Promise<{ done: string[]; learning: string[], skipped: string[] }> {
+): Promise<{ done: string[]; learning: string[]; skipped: string[] }> {
   // No need to load progress if user is not logged in
   if (!Cookies.get(TOKEN_COOKIE_NAME)) {
     return {
@@ -87,6 +93,10 @@ export async function getResourceProgress(
   }
 
   const progressKey = `${resourceType}-${resourceId}-progress`;
+  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
+
+  const rawIsFavorite = localStorage.getItem(isFavoriteKey);
+  const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
 
   const rawProgress = localStorage.getItem(progressKey);
   const progress = JSON.parse(rawProgress || 'null');
@@ -99,6 +109,17 @@ export async function getResourceProgress(
     return loadFreshProgress(resourceType, resourceId);
   }
 
+  // Dispatch event to update favorite status in the MarkFavorite component
+  window.dispatchEvent(
+    new CustomEvent('mark-favorite', {
+      detail: {
+        resourceType,
+        resourceId,
+        isFavorite,
+      },
+    })
+  );
+
   return progress;
 }
 
@@ -110,6 +131,7 @@ async function loadFreshProgress(
     done: string[];
     learning: string[];
     skipped: string[];
+    isFavorite: boolean;
   }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-user-resource-progress`, {
     resourceType,
     resourceId,
@@ -129,7 +151,18 @@ async function loadFreshProgress(
     resourceId,
     response?.done || [],
     response?.learning || [],
-    response?.skipped || [],
+    response?.skipped || []
+  );
+
+  // Dispatch event to update favorite status in the MarkFavorite component
+  window.dispatchEvent(
+    new CustomEvent('mark-favorite', {
+      detail: {
+        resourceType,
+        resourceId,
+        isFavorite: response.isFavorite,
+      },
+    })
   );
 
   return response;
@@ -140,7 +173,7 @@ export function setResourceProgress(
   resourceId: string,
   done: string[],
   learning: string[],
-  skipped: string [],
+  skipped: string[]
 ): void {
   localStorage.setItem(
     `${resourceType}-${resourceId}-progress`,
@@ -153,17 +186,14 @@ export function setResourceProgress(
   );
 }
 
-export function renderTopicProgress(
+export function topicSelectorAll(
   topicId: string,
-  topicProgress: ResourceProgressType
-) {
-  const isLearning = topicProgress === 'learning';
-  const isSkipped = topicProgress === 'skipped';
-  const isDone = topicProgress === 'done';
+  parentElement: Document | SVGElement = document
+): Element[] {
   const matchingElements: Element[] = [];
 
   // Elements having sort order in the beginning of the group id
-  document
+  parentElement
     .querySelectorAll(`[data-group-id$="-${topicId}"]`)
     .forEach((element: unknown) => {
       const foundGroupId =
@@ -176,18 +206,32 @@ export function renderTopicProgress(
     });
 
   // Elements with exact match of the topic id
-  document
+  parentElement
     .querySelectorAll(`[data-group-id="${topicId}"]`)
     .forEach((element) => {
       matchingElements.push(element);
     });
 
   // Matching "check:XXXX" box of the topic
-  document
+  parentElement
     .querySelectorAll(`[data-group-id="check:${topicId}"]`)
     .forEach((element) => {
       matchingElements.push(element);
     });
+
+  return matchingElements;
+}
+
+export function renderTopicProgress(
+  topicId: string,
+  topicProgress: ResourceProgressType
+) {
+  const isLearning = topicProgress === 'learning';
+  const isSkipped = topicProgress === 'skipped';
+  const isDone = topicProgress === 'done';
+  const isRemoved = topicProgress === 'removed';
+
+  const matchingElements: Element[] = topicSelectorAll(topicId);
 
   matchingElements.forEach((element) => {
     if (isDone) {
@@ -199,18 +243,31 @@ export function renderTopicProgress(
     } else if (isSkipped) {
       element.classList.add('skipped');
       element.classList.remove('done', 'learning');
+    } else if (isRemoved) {
+      element.classList.add('removed');
+      element.classList.remove('done', 'learning', 'skipped');
     } else {
-      element.classList.remove('done', 'skipped', 'learning');
+      element.classList.remove('done', 'skipped', 'learning', 'removed');
     }
   });
+}
+
+export function clearResourceProgress() {
+  const clickableElements = document.querySelectorAll('.clickable-group');
+  for (const clickableElement of clickableElements) {
+    clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
+  }
 }
 
 export async function renderResourceProgress(
   resourceType: ResourceType,
   resourceId: string
 ) {
-  const { done = [], learning = [], skipped = [] } =
-    (await getResourceProgress(resourceType, resourceId)) || {};
+  const {
+    done = [],
+    learning = [],
+    skipped = [],
+  } = (await getResourceProgress(resourceType, resourceId)) || {};
 
   done.forEach((topicId) => {
     renderTopicProgress(topicId, 'done');
@@ -222,5 +279,108 @@ export async function renderResourceProgress(
 
   skipped.forEach((topicId) => {
     renderTopicProgress(topicId, 'skipped');
+  });
+
+  refreshProgressCounters();
+}
+
+export function refreshProgressCounters() {
+  const progressNumsContainers = document.querySelectorAll(
+    '[data-progress-nums-container]'
+  );
+  const progressNums = document.querySelectorAll('[data-progress-nums]');
+  if (progressNumsContainers.length === 0 || progressNums.length === 0) {
+    return;
+  }
+
+  const totalClickable = document.querySelectorAll('.clickable-group').length;
+  const externalLinks = document.querySelectorAll(
+    '[data-group-id^="ext_link:"]'
+  ).length;
+  const roadmapSwitchers = document.querySelectorAll(
+    '[data-group-id^="json:"]'
+  ).length;
+  const checkBoxes = document.querySelectorAll(
+    '[data-group-id^="check:"]'
+  ).length;
+
+  const totalCheckBoxesDone = document.querySelectorAll(
+    '[data-group-id^="check:"].done'
+  ).length;
+  const totalCheckBoxesLearning = document.querySelectorAll(
+    '[data-group-id^="check:"].learning'
+  ).length;
+  const totalCheckBoxesSkipped = document.querySelectorAll(
+    '[data-group-id^="check:"].skipped'
+  ).length;
+
+  const totalRemoved = document.querySelectorAll(
+    '.clickable-group.removed'
+  ).length;
+  const totalItems =
+    totalClickable -
+    externalLinks -
+    roadmapSwitchers -
+    checkBoxes -
+    totalRemoved;
+
+  const totalDone =
+    document.querySelectorAll('.clickable-group.done:not([data-group-id^="ext_link:"])').length -
+    totalCheckBoxesDone;
+  const totalLearning =
+    document.querySelectorAll('.clickable-group.learning').length -
+    totalCheckBoxesLearning;
+  const totalSkipped =
+    document.querySelectorAll('.clickable-group.skipped').length -
+    totalCheckBoxesSkipped;
+
+  const doneCountEls = document.querySelectorAll('[data-progress-done]');
+  if (doneCountEls.length > 0) {
+    doneCountEls.forEach(
+      (doneCountEl) => (doneCountEl.innerHTML = `${totalDone}`)
+    );
+  }
+
+  const learningCountEls = document.querySelectorAll(
+    '[data-progress-learning]'
+  );
+  if (learningCountEls.length > 0) {
+    learningCountEls.forEach(
+      (learningCountEl) => (learningCountEl.innerHTML = `${totalLearning}`)
+    );
+  }
+
+  const skippedCountEls = document.querySelectorAll('[data-progress-skipped]');
+  if (skippedCountEls.length > 0) {
+    skippedCountEls.forEach(
+      (skippedCountEl) => (skippedCountEl.innerHTML = `${totalSkipped}`)
+    );
+  }
+
+  const totalCountEls = document.querySelectorAll('[data-progress-total]');
+  if (totalCountEls.length > 0) {
+    totalCountEls.forEach(
+      (totalCountEl) => (totalCountEl.innerHTML = `${totalItems}`)
+    );
+  }
+
+  const progressPercentage = Math.round(
+    ((totalDone + totalSkipped) / totalItems) * 100
+  );
+  const progressPercentageEls = document.querySelectorAll(
+    '[data-progress-percentage]'
+  );
+  if (progressPercentageEls.length > 0) {
+    progressPercentageEls.forEach(
+      (progressPercentageEl) =>
+        (progressPercentageEl.innerHTML = `${progressPercentage}`)
+    );
+  }
+
+  progressNumsContainers.forEach((progressNumsContainer) =>
+    progressNumsContainer.classList.remove('striped-loader')
+  );
+  progressNums.forEach((progressNum) => {
+    progressNum.classList.remove('opacity-0');
   });
 }

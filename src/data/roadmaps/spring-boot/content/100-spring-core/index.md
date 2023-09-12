@@ -12,3 +12,4 @@ You can learn more about Spring Core from the links below:
 - [Official Documentation](https://spring.io/why-spring)
 - [Getting Started with Spring](https://spring.io/guides/gs/spring-boot/)
 - [Spring Core Tutorial](https://www.tutorialspoint.com/spring/index.htm)
+- [Spring Framework](https://www.youtube.com/playlist?list=PLC97BDEFDCDD169D7)

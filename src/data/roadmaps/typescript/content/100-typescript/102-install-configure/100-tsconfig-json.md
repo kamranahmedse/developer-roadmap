@@ -20,8 +20,8 @@ Given below is the sample `tsconfig.json` file:
     "strict": true,
     "outDir": "./dist",
     "rootDir": "./src",
-    "exclude": ["node_modules"]
   },
+  "exclude": ["node_modules"],
   "include": ["src"]
 }
 ```
