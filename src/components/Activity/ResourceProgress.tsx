@@ -1,8 +1,8 @@
-import { useState } from 'preact/hooks';
 import { httpPost } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
 import { useToast } from '../../hooks/use-toast';
 import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
+import { useState } from 'react';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';

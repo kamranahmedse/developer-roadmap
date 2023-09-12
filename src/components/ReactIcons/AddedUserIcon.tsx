@@ -14,9 +14,9 @@ export function AddedUserIcon(props: CheckIconProps) {
       fill="none"
       className={`relative ${additionalClasses}`}
       stroke="currentColor"
-      stroke-width="2"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
     >
       <path d="M14 19a6 6 0 0 0-12 0" />
       <circle cx="8" cy="9" r="4" />

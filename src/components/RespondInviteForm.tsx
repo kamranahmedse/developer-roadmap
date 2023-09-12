@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpGet, httpPatch } from '../lib/http';
 import BuildingIcon from '../icons/building.svg';
 import ErrorIcon from '../icons/error.svg';
@@ -87,12 +87,12 @@ export function RespondInviteForm() {
       <div className="container text-center">
         <img
           alt={'error'}
-          src={ErrorIcon}
+          src={ErrorIcon.src}
           className="mx-auto mb-4 mt-24 w-20 opacity-20"
         />
 
         <h2 className={'mb-1 text-2xl font-bold'}>Error</h2>
-        <p class="mb-4 text-base leading-6 text-gray-600">
+        <p className="mb-4 text-base leading-6 text-gray-600">
           {error || 'There was a problem, please try again.'}
         </p>
 
@@ -112,24 +112,24 @@ export function RespondInviteForm() {
     <div className="container text-center">
       <img
         alt={'join team'}
-        src={BuildingIcon}
+        src={BuildingIcon.src}
         className="mx-auto mb-4 mt-24 w-20 opacity-20"
       />
 
       <h2 className={'mb-1 text-2xl font-bold'}>Join Team</h2>
-      <p class="mb-3 text-base leading-6 text-gray-600">
+      <p className="mb-3 text-base leading-6 text-gray-600">
         You have been invited to join the team{' '}
         <strong id="team-name">{invite?.team?.name}</strong>.
       </p>
 
       {!isAuthenticated && (
-        <div class="mx-auto w-full duration-500 sm:max-w-md">
-          <div class="flex w-full items-center gap-2">
+        <div className="mx-auto w-full duration-500 sm:max-w-md">
+          <div className="flex w-full items-center gap-2">
             <button
               onClick={() => showLoginPopup()}
               data-popup="login-popup"
               type="button"
-              class="flex-grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
+              className="flex-grow cursor-pointer rounded-lg bg-gray-200 px-3 py-2 text-center"
             >
               Login to respond
             </button>

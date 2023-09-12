@@ -10,5 +10,5 @@ import LoginPopup from "../components/AuthenticationFlow/LoginPopup.astro";
   initialLoadingMessage={'Loading invite'}
 >
   <LoginPopup />
-  <RespondInviteForm client:only />
+  <RespondInviteForm client:only="react" />
 </AccountLayout>

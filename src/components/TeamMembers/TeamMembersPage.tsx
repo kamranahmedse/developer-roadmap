@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpDelete, httpGet, httpPatch } from '../../lib/http';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
@@ -9,7 +9,7 @@ import type { AllowedMemberStatus } from '../TeamDropdown/TeamDropdown';
 import { InviteMemberPopup } from './InviteMemberPopup';
 import { getUrlParams } from '../../lib/browser';
 import { UpdateMemberPopup } from './UpdateMemberPopup';
-import { useStore } from '@nanostores/preact';
+import { useStore } from '@nanostores/react';
 import { $canManageCurrentTeam } from '../../stores/team';
 import { useToast } from '../../hooks/use-toast';
 import { TeamMemberItem } from './TeamMemberItem';

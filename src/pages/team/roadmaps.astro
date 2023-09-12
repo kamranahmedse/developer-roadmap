@@ -6,6 +6,6 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
 
 <AccountLayout title='Roadmaps' noIndex={true} initialLoadingMessage='Loading Roadmaps'>
   <TeamSidebar activePageId='roadmaps' client:load>
-    <TeamRoadmaps client:only />
+    <TeamRoadmaps client:only="react" />
   </TeamSidebar>
 </AccountLayout>

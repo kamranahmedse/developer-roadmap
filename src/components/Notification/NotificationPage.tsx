@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpGet, httpPatch, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamMemberDocument } from '../TeamMembers/TeamMembersPage';
@@ -62,7 +62,7 @@ export function NotificationPage() {
 
   return (
     <div>
-      <div class="mb-8 hidden md:block">
+      <div className="mb-8 hidden md:block">
         <h2 className="text-3xl font-bold sm:text-4xl">Notification</h2>
         <p className="mt-2 text-gray-400">Manage your notifications</p>
       </div>
@@ -91,14 +91,14 @@ export function NotificationPage() {
                 className="inline-flex border p-1 rounded hover:bg-gray-50 disabled:opacity-75"
                 onClick={() => respondInvitation('accept', notification?._id!)}
               >
-                <img src={AcceptIcon} className="h-4 w-4" />
+                <img src={AcceptIcon.src} className="h-4 w-4" />
               </button>
               <button type="button"
                 disabled={isLoading}
                 className="inline-flex border p-1 rounded hover:bg-gray-50 disabled:opacity-75"
                 onClick={() => respondInvitation('reject', notification?._id!)}
               >
-                <img src={XIcon} className="h-4 w-4" />
+                <img alt={'Close'} src={XIcon.src} className="h-4 w-4" />
               </button>
             </div>
           </div>

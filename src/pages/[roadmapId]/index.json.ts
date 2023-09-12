@@ -20,8 +20,11 @@ export async function getStaticPaths() {
   });
 }
 
-export const get: APIRoute = async function ({ params, request, props }) {
-  return {
-    body: JSON.stringify(props.roadmapJson),
-  };
+export const GET: APIRoute = async function ({ params, request, props }) {
+  return new Response(JSON.stringify(props.roadmapJson), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 };

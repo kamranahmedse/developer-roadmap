@@ -34,7 +34,7 @@ export function Stepper(props: StepperProps) {
                 />
               )}
               {!isComplete && (
-                <span class="mr-2 font-semibold">{stepCounter + 1}</span>
+                <span className="mr-2 font-semibold">{stepCounter + 1}</span>
               )}
               <span className="flex flex-grow">{step.label}</span>
             </li>

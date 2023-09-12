@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [Python Decorators](https://www.datacamp.com/tutorial/decorators-python)
 - [Decorators in Python](https://www.geeksforgeeks.org/decorators-in-python/)
 - [Decorators in Python](https://www.youtube.com/watch?v=FXUUSfJO_J4)
-- [Python Decorators in 1 Minute](https://www.youtube.com/watch?v=be-l7xu8po4)
+- [Python Decorators in 1 Minute](https://www.youtube.com/watch?v=BE-L7xu8pO4)

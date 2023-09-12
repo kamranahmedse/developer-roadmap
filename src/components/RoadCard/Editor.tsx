@@ -24,7 +24,7 @@ export function Editor(props: EditorProps) {
             </span>
           )}
 
-          <img src={CopyIcon} alt="Copy" className="inline-block h-4 w-4" />
+          <img src={CopyIcon.src} alt="Copy" className="inline-block h-4 w-4" />
         </button>
       </div>
       <textarea
@@ -34,9 +34,8 @@ export function Editor(props: EditorProps) {
           e.target.select();
           copyText(e.target.value);
         }}
-      >
-        {text}
-      </textarea>
+        value={text}
+      />
     </div>
   );
 }

@@ -1,5 +1,5 @@
-import { useEffect, useRef, useState } from 'preact/hooks';
-import { AppError, httpPost, httpPut } from '../../lib/http';
+import { type FormEvent, useEffect, useRef, useState } from 'react';
+import { type AppError, httpPost, httpPut } from '../../lib/http';
 import type { ValidTeamType } from './Step0';
 import type { TeamDocument } from './CreateTeamForm';
 import { NextButton } from './NextButton';
@@ -49,7 +49,7 @@ export function Step1(props: Step1Props) {
     team?.teamSize || ('' as any)
   );
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     if (!name || !selectedTeamType) {
@@ -124,7 +124,7 @@ export function Step1(props: Step1Props) {
     <form onSubmit={handleSubmit}>
       <div className="flex w-full flex-col">
         <label
-          for="name"
+          htmlFor="name"
           className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
         >
           {selectedTeamType === 'company' ? 'Company Name' : 'Group Name'}
@@ -133,7 +133,7 @@ export function Step1(props: Step1Props) {
           type="text"
           name="name"
           ref={nameRef as any}
-          autofocus={true}
+          autoFocus={true}
           id="name"
           className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
           placeholder="Roadmap Inc."
@@ -147,7 +147,7 @@ export function Step1(props: Step1Props) {
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
           <label
-            for="website"
+            htmlFor="website"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Website
@@ -168,7 +168,7 @@ export function Step1(props: Step1Props) {
 
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
-          <label for="website" className="text-sm leading-none text-slate-500">
+          <label htmlFor="website" className="text-sm leading-none text-slate-500">
             Company LinkedIn URL
           </label>
           <input
@@ -187,7 +187,7 @@ export function Step1(props: Step1Props) {
       )}
 
       <div className="mt-4 flex w-full flex-col">
-        <label for="website" className="text-sm leading-none text-slate-500">
+        <label htmlFor="website" className="text-sm leading-none text-slate-500">
           GitHub Organization URL
         </label>
         <input
@@ -205,7 +205,7 @@ export function Step1(props: Step1Props) {
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
           <label
-            for="team-size"
+            htmlFor="team-size"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Tech Team Size
@@ -237,7 +237,7 @@ export function Step1(props: Step1Props) {
         </div>
       )}
 
-      <div className="mt-4 flex flex-col md:flex-row items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col items-center justify-between gap-2 md:flex-row">
         <button
           type="button"
           onClick={onBack}

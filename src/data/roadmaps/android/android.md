@@ -75,8 +75,7 @@ We have also listed down some free resources which you can use for the items lis
 - [Data Structures and Algorithms](https://www.studytonight.com/data-structures/introduction-to-data-structures). Also [check this](https://www.tutorialspoint.com/data_structures_algorithms/index.htm).
 - [Kotlin Data Structures](https://kotlinlang.org/docs/reference/collections-overview.html)
 - [Algorithms and Data Structures in Kotlin](https://github.com/bmaslakov/kotlin-algorithm-club)
-- [Gradle](https://docs.gradle.org/current/userguide/what_is_gradle.html)
-- [Getting started with Gradle](https://docs.gradle.org/current/userguide/getting_started.html)
+- [Getting started with Gradle](https://docs.gradle.org/current/userguide/userguide.html)
   Note: Android Studio comes with a working installation of Gradle, so you don’t need to install Gradle separately in that case.
 
 ## Version Control Systems

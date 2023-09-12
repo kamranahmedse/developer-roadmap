@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import type { GroupByRoadmap, TeamMember } from './TeamProgressPage';
 import { getUrlParams } from '../../lib/browser';
 import ExternalLinkIcon from '../../icons/external-link.svg';
@@ -31,7 +31,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
             >
               <img
                 alt={'link'}
-                src={ExternalLinkIcon}
+                src={ExternalLinkIcon.src}
                 className="ml-2 h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
               />
             </a>

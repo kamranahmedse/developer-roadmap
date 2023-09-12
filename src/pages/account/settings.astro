@@ -12,7 +12,7 @@ import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
   initialLoadingMessage={'Loading settings'}
 >
   <AccountSidebar activePageId='settings' activePageTitle='Settings'>
-    <UpdatePasswordForm client:load />
+    <UpdatePasswordForm client:only="react" />
     <hr class='my-8' />
     <DeleteAccount />
   </AccountSidebar>

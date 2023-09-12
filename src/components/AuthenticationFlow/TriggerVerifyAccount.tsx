@@ -1,10 +1,9 @@
-import SpinnerIcon from '../../icons/spinner.svg';
-import ErrorIcon from '../../icons/error.svg';
-
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpPost } from '../../lib/http';
+import ErrorIcon from '../../icons/error.svg';
+import SpinnerIcon from '../../icons/spinner.svg';
+import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -59,14 +58,14 @@ export function TriggerVerifyAccount() {
         {isLoading && (
           <img
             alt={'Please wait.'}
-            src={SpinnerIcon}
-            class={'mx-auto h-16 w-16 animate-spin'}
+            src={SpinnerIcon.src}
+            className={'mx-auto h-16 w-16 animate-spin'}
           />
         )}
         {error && (
           <img
             alt={'Please wait.'}
-            src={ErrorIcon}
+            src={ErrorIcon.src}
             className={'mx-auto h-16 w-16'}
           />
         )}
@@ -75,7 +74,7 @@ export function TriggerVerifyAccount() {
         </h2>
         <div className="text-sm sm:text-base">
           {isLoading && <p>Please wait while we verify your account..</p>}
-          {error && <p class="text-red-700">{error}</p>}
+          {error && <p className="text-red-700">{error}</p>}
         </div>
       </div>
     </div>

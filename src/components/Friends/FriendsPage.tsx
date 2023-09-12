@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { pageProgressMessage } from '../../stores/page';
 import { useAuth } from '../../hooks/use-auth';
 import { AddUserIcon } from '../ReactIcons/AddUserIcon';
@@ -133,6 +133,7 @@ export function FriendsPage() {
 
             return (
               <button
+                key={grouping.value}
                 className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
                   selectedGrouping === grouping.value
                     ? ' border-gray-400 bg-gray-200 '
@@ -154,7 +155,7 @@ export function FriendsPage() {
           onClick={() => {
             setShowInviteFriendPopup(true);
           }}
-          class="flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100"
+          className="flex items-center justify-center gap-1.5 rounded-md border border-gray-400 bg-gray-50 p-1 px-2 text-sm hover:border-gray-500 hover:bg-gray-100"
         >
           <AddUserIcon additionalClasses="w-4 h-4" />
           Invite Friends
@@ -187,7 +188,7 @@ export function FriendsPage() {
       {filteredFriends.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12">
           <img
-            src={UserIcon}
+            src={UserIcon.src}
             alt="Empty Friends"
             className="mb-3 w-12 opacity-20"
           />

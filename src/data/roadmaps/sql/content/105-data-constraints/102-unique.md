@@ -2,7 +2,7 @@
 
 The `UNIQUE` constraint ensures that all values in a column are different; that is, each value in the column should occur only once.
 
-Both the `UNIQUE` and `PRIMARY KEY` constraints provide a guarantee for uniqueness for a column or set of columns. However, a primary key can contain only `NULL`, and each table can have only one primary key. On the other hand, a `UNIQUE` constraint allows for one `NULL` value, and a table can have multiple `UNIQUE` constraints.
+Both the `UNIQUE` and `PRIMARY KEY` constraints provide a guarantee for uniqueness for a column or set of columns. However, a primary key cannot contain `NULL` since it uniquely identifies each row, and each table can have only one primary key. On the other hand, a `UNIQUE` constraint allows for one `NULL` value, and a table can have multiple `UNIQUE` constraints.
 
 ## Syntax
 ```sql

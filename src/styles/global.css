@@ -4,7 +4,7 @@
 
 @layer components {
   .container {
-    @apply mx-auto max-w-[830px] px-4;
+    @apply mx-auto !max-w-[830px] px-4;
   }
 
   /* Chrome, Safari and Opera */

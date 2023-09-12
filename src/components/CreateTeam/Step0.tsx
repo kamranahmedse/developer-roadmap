@@ -2,20 +2,20 @@ import BuildingIcon from '../../icons/building.svg';
 import UsersIcon from '../../icons/users.svg';
 import type { TeamDocument } from './CreateTeamForm';
 import { httpPut } from '../../lib/http';
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 import { NextButton } from './NextButton';
 
 export const validTeamTypes = [
   {
     value: 'company',
     label: 'Company',
-    icon: BuildingIcon,
+    icon: BuildingIcon.src,
     description: 'Track the skills and learning progress of the tech team at your company',
   },
   {
     value: 'study_group',
     label: 'Study Group',
-    icon: UsersIcon,
+    icon: UsersIcon.src,
     description: 'Invite your friends or course-mates and track your learning progress together',
   },
 ] as const;

@@ -17,5 +17,5 @@ Visit the following resources to learn more:
 - [HTTP Crash Course & Exploration](https://www.youtube.com/watch?v=iYM2zFP3Zn0)
 - [What is HTTPS?](https://www.cloudflare.com/en-gb/learning/ssl/what-is-https/)
 - [Why HTTPS Matters](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/why-https)
-- [Enabling HTTPS on Your Servers](https://developers.google.com/web/fundamentals/security/encrypt-in-transit/enable-https)
+- [Enabling HTTPS on Your Servers](https://web.dev/enable-https/)
 - [How HTTPS works (comic)](https://howhttps.works/)

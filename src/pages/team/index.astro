@@ -1,7 +1,6 @@
 ---
 import AccountSidebar from '../../components/AccountSidebar.astro';
 import { TeamsList } from '../../components/TeamsList';
-import { ActivityPage } from '../../components/Activity/ActivityPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
 ---
 
@@ -11,6 +10,6 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
   initialLoadingMessage={'Loading teams'}
 >
   <AccountSidebar hasDesktopSidebar={false} activePageId='team' activePageTitle='Teams'>
-    <TeamsList client:load />
+    <TeamsList client:only="react" />
   </AccountSidebar>
 </AccountLayout>

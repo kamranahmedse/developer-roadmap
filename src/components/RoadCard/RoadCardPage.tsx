@@ -1,4 +1,4 @@
-import { useState } from 'preact/hooks';
+import { useState } from 'react';
 
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
@@ -113,7 +113,7 @@ export function RoadCardPage() {
 
       <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
         <StepCounter step={4} />
-        <div class="flex-grow">
+        <div className="flex-grow">
           <StepLabel label="Share your #RoadCard with others" />
           <div className={'rounded-md border bg-gray-50 p-2 text-center'}>
             <a
@@ -146,7 +146,7 @@ export function RoadCardPage() {
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
               onClick={() => copyText(badgeUrl.toString())}
             >
-              <img alt="Copy" src={CopyIcon} className="mr-1" />
+              <img alt="Copy" src={CopyIcon.src} className="mr-1" />
 
               {isCopied ? 'Copied!' : 'Copy Link'}
             </button>

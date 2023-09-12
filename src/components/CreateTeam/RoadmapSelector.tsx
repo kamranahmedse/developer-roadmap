@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'preact/hooks';
+import { useEffect, useState } from 'react';
 import { httpGet, httpPut } from '../../lib/http';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import ChevronDownIcon from '../../icons/chevron-down.svg';

@@ -10,6 +10,6 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
   initialLoadingMessage='Loading members'
 >
   <TeamSidebar activePageId='members' client:load>
-    <TeamMembersPage client:only />
+    <TeamMembersPage client:only="react" />
   </TeamSidebar>
 </AccountLayout>

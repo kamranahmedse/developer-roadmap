@@ -1,16 +1,14 @@
-import { useEffect, useState } from 'preact/hooks';
+import { type FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPut } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner';
-import { useAuth } from '../../hooks/use-auth';
 import UploadProfilePicture from '../UpdateProfile/UploadProfilePicture';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../../stores/page';
 import { useTeamId } from '../../hooks/use-team-id';
 import { DeleteTeamPopup } from '../DeleteTeamPopup';
-import { $currentTeam, $isCurrentTeamAdmin } from '../../stores/team';
-import { useStore } from '@nanostores/preact';
+import { $isCurrentTeamAdmin } from '../../stores/team';
+import { useStore } from '@nanostores/react';
 import { useToast } from '../../hooks/use-toast';
-
 export function UpdateTeamForm() {
   const [isLoading, setIsLoading] = useState(false);
   const [isDeleting, setIsDeleting] = useState(false);
@@ -26,8 +24,6 @@ export function UpdateTeamForm() {
   const [gitHub, setGitHub] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
-  const [roadmaps, setRoadmaps] = useState<string[]>([]);
-  const [bestPractices, setBestPractices] = useState<string[]>([]);
   const validTeamSizes = [
     '0-1',
     '2-10',
@@ -44,7 +40,7 @@ export function UpdateTeamForm() {
     setIsDisabled(!isCurrentTeamAdmin);
   }, [isCurrentTeamAdmin]);
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
     if (!name || !teamType) {
@@ -123,7 +119,7 @@ export function UpdateTeamForm() {
       <form onSubmit={handleSubmit}>
         <div className="mt-4 flex w-full flex-col">
           <label
-            for="name"
+            htmlFor="name"
             className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
           >
             Name
@@ -142,7 +138,7 @@ export function UpdateTeamForm() {
         </div>
         <div className="mt-4 flex w-full flex-col">
           <label
-            for="website"
+            htmlFor="website"
             className={`text-sm leading-none text-slate-500 ${
               teamType === 'company' ? 'after:content-["*"]' : ''
             }`}
@@ -164,7 +160,7 @@ export function UpdateTeamForm() {
         {teamType === 'company' && (
           <div className="mt-4 flex w-full flex-col">
             <label
-              for="linkedIn"
+              htmlFor="linkedIn"
               className="text-sm leading-none text-slate-500"
             >
               LinkedIn URL
@@ -182,7 +178,10 @@ export function UpdateTeamForm() {
           </div>
         )}
         <div className="mt-4 flex w-full flex-col">
-          <label for="gitHub" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="gitHub"
+            className="text-sm leading-none text-slate-500"
+          >
             GitHub URL
           </label>
           <input
@@ -198,7 +197,7 @@ export function UpdateTeamForm() {
         </div>
         <div className="mt-4 flex w-full flex-col">
           <label
-            for="type"
+            htmlFor="type"
             className='text-sm leading-none text-slate-500  after:text-red-400 after:content-["*"]'
           >
             Type
@@ -208,12 +207,12 @@ export function UpdateTeamForm() {
             id="type"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             disabled={isDisabled}
-            value={teamType}
+            value={teamType || ''}
             onChange={(e) =>
               setTeamType((e.target as HTMLSelectElement).value as any)
             }
           >
-            <option value="" selected>
+            <option value="">
               Select type
             </option>
             <option value="company">Company</option>
@@ -224,7 +223,7 @@ export function UpdateTeamForm() {
         {teamType === 'company' && (
           <div className="mt-4 flex w-full flex-col">
             <label
-              for="team-size"
+              htmlFor="team-size"
               className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
             >
               Team size
@@ -269,7 +268,7 @@ export function UpdateTeamForm() {
 
       {isCurrentTeamAdmin && (
         <>
-          <hr class="my-8" />
+          <hr className="my-8" />
           {isDeleting && (
             <DeleteTeamPopup
               onClose={() => {
@@ -277,15 +276,15 @@ export function UpdateTeamForm() {
               }}
             />
           )}
-          <h2 class="text-xl font-bold sm:text-2xl">Delete Team</h2>
-          <p class="mt-2 text-gray-400">
+          <h2 className="text-xl font-bold sm:text-2xl">Delete Team</h2>
+          <p className="mt-2 text-gray-400">
             Permanently delete this team and all of its resources.
           </p>
 
           <button
             onClick={() => setIsDeleting(true)}
             data-popup="delete-team-popup"
-            class="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+            className="font-regular mt-4 w-full rounded-lg bg-red-600 py-2 text-base text-white outline-none focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
           >
             Delete Team
           </button>

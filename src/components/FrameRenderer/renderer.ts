@@ -5,10 +5,9 @@ import {
   refreshProgressCounters,
   renderResourceProgress,
   renderTopicProgress,
-  ResourceProgressType,
-  ResourceType,
   updateResourceProgress,
 } from '../../lib/resource-progress';
+import type { ResourceProgressType, ResourceType } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
 

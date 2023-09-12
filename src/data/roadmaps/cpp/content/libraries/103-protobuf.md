@@ -8,7 +8,7 @@ Here is a brief summary of protobuf and how to use it in C++:
 
    *Example:*
 
-   ```protobuf
+   ```
    syntax = "proto3";
    
    message Person {
