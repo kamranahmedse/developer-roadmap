@@ -1,6 +1,6 @@
 # YARP
 
-YARP (Yet Another Robot Platform) is an open-source software framework for robotics and computer vision, focused on providing a simple and efficient way to create and manage multi-modal robotic systems. It provides a set of libraries and tools to handle the low-level communication and control of robotic devices, such as cameras, motors, and sensors, as well as high-level functionalities such as image processing, object recognition, and control algorithms.
+YARP is a library to help create reverse proxy servers that are high-performance, production-ready, and highly customizable. YARP is built on .NET using the infrastructure from ASP.NET and .NET (.NET 6 and newer). The key differentiator for YARP is that it's been designed to be easily customized and tweaked via .NET code to match the specific needs of each deployment scenario. YARP is designed with customizability as a primary scenario rather than requiring you to break out to script or rebuild the library from source.
 
 To learn more, visit the following links:
 
