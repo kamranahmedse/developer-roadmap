@@ -1,22 +1,45 @@
 import { useEffect, useState } from 'react';
-import { httpDelete, httpGet } from '../../lib/http';
+import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import { ExternalLinkIcon, Plus } from 'lucide-react';
-import { useToast } from '../../hooks/use-toast';
 import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
-import { showCreateRoadmapModal } from '../../stores/roadmap';
-import RoadmapIcon from '../../icons/roadmap.svg';
+import { PersonalRoadmapList } from './PersonalRoadmapList';
+import type { ListFriendsResponse } from '../Friends/FriendsPage';
+import { useToast } from '../../hooks/use-toast';
+import { SharedRoadmapList } from './SharedRoadmapList';
+import type { FriendshipStatus } from '../Befriend';
+
+export type FriendUserType = {
+  id: string;
+  name: string;
+  avatar: string;
+  status: FriendshipStatus;
+};
 
 export type GetRoadmapListResponse = {
   personalRoadmaps: RoadmapDocument[];
-  sharedRoadmaps: RoadmapDocument[];
+  sharedRoadmaps: (RoadmapDocument & {
+    creator: FriendUserType;
+  })[];
 };
 
-export function RoadmapListPage() {
-  const [roadmapList, setRoadmapList] = useState<RoadmapDocument[]>([]);
+type TabType = {
+  label: string;
+  value: 'personal' | 'shared';
+};
 
+const tabTypes: TabType[] = [
+  { label: 'Personal', value: 'personal' },
+  { label: 'Shared', value: 'shared' },
+];
+
+export function RoadmapListPage() {
   const toast = useToast();
-  const [removingRoadmapId, setRemovingRoadmapId] = useState('');
+
+  const [activeTab, setActiveTab] = useState<TabType['value']>('personal');
+  const [allRoadmaps, setAllRoadmaps] = useState<GetRoadmapListResponse>({
+    personalRoadmaps: [],
+    sharedRoadmaps: [],
+  });
 
   async function loadRoadmapList() {
     const { response, error } = await httpGet<GetRoadmapListResponse>(
@@ -25,32 +48,16 @@ export function RoadmapListPage() {
 
     if (error || !response) {
       console.error(error);
-    }
-
-    setRoadmapList(response?.personalRoadmaps || []);
-  }
-
-  async function deleteRoadmap(roadmapId: string) {
-    const { response, error } = await httpDelete<RoadmapDocument[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-roadmap/${roadmapId}`
-    );
-
-    if (error || !response) {
-      console.error(error);
       toast.error(error?.message || 'Something went wrong, please try again');
+      return;
     }
 
-    setRoadmapList((roadmaps) =>
-      roadmaps.filter((roadmap) => roadmap._id !== roadmapId)
+    setAllRoadmaps(
+      response! || {
+        personalRoadmaps: [],
+        sharedRoadmaps: [],
+      }
     );
-  }
-
-  async function onRemove(roadmapId: string) {
-    pageProgressMessage.set('Deleting roadmap');
-
-    deleteRoadmap(roadmapId).finally(() => {
-      pageProgressMessage.set('');
-    });
   }
 
   useEffect(() => {
@@ -59,114 +66,42 @@ export function RoadmapListPage() {
     });
   }, []);
 
-  if (roadmapList.length === 0) {
-    return (
-      <div className="flex flex-col items-center p-4 py-20">
-        <img
-          alt="roadmap"
-          src={RoadmapIcon.src}
-          className="mb-4 h-24 w-24 opacity-10"
-        />
-        <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
-        <p className="text-base text-gray-500">
-          Create a roadmap to get started
-        </p>
-
-        <button
-          className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
-          onClick={showCreateRoadmapModal}
-        >
-          Add roadmap
-        </button>
-      </div>
-    );
-  }
-
   return (
     <div>
-      <div className="mb-3 flex items-center justify-between">
-        <span className={'text-gray-400'}>
-          {roadmapList.length} custom roadmap(s)
-        </span>
-        <button
-          className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-          onClick={showCreateRoadmapModal}
-        >
-          <Plus size={16} />
-          Create Roadmap
-        </button>
-      </div>
-      <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-        {roadmapList.map((roadmap) => {
-          const roadmapId = roadmap._id?.toString()!;
-          const editLink = `${
-            import.meta.env.PUBLIC_EDITOR_APP_URL
-          }/${roadmapId}`;
-
+      <div className="flex items-center gap-2">
+        {tabTypes.map((tab) => {
           return (
-            <li
-              key={roadmap._id}
-              className="flex flex-col items-start rounded-md border border-gray-300"
+            <button
+              key={tab.value}
+              className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
+                activeTab === tab.value ? ' border-gray-400 bg-gray-200 ' : ''
+              } w-full sm:w-auto`}
+              onClick={() => setActiveTab(tab.value)}
             >
-              <div className={'w-full px-3 py-4'}>
-                <a
-                  href={`/r?id=${roadmap._id}`}
-                  className="group mb-0.5 flex items-center justify-between text-base font-medium leading-none text-black"
-                  target={'_blank'}
-                >
-                  {roadmap.title}
-
-                  <ExternalLinkIcon
-                    size={16}
-                    className="ml-2 opacity-20 transition-opacity group-hover:opacity-100"
-                  />
-                </a>
-              </div>
-
-              <div className={'flex w-full justify-between px-3 pb-3 pt-2'}>
-                <a
-                  href={editLink}
-                  className={
-                    'text-xs text-gray-500 underline hover:text-black focus:outline-none'
-                  }
-                >
-                  Edit
-                </a>
-
-                {removingRoadmapId !== roadmap._id?.toString() && (
-                  <button
-                    type="button"
-                    className={
-                      'text-xs text-red-500 underline hover:text-black focus:outline-none disabled:cursor-not-allowed disabled:opacity-40 disabled:hover:text-red-500'
-                    }
-                    onClick={() => setRemovingRoadmapId(roadmapId)}
-                  >
-                    Delete
-                  </button>
-                )}
-
-                {removingRoadmapId === roadmapId && (
-                  <span className="text-xs">
-                    Are you sure?{' '}
-                    <button
-                      onClick={() => onRemove(roadmapId)}
-                      className="mx-0.5 text-red-500 underline underline-offset-1"
-                    >
-                      Yes
-                    </button>{' '}
-                    <button
-                      onClick={() => setRemovingRoadmapId('')}
-                      className="text-red-500 underline underline-offset-1"
-                    >
-                      No
-                    </button>
-                  </span>
-                )}
-              </div>
-            </li>
+              {tab.label}
+            </button>
           );
         })}
-      </ul>
+      </div>
+
+      <div className="mt-4">
+        {activeTab === 'personal' && (
+          <PersonalRoadmapList
+            roadmaps={allRoadmaps?.personalRoadmaps}
+            onDelete={(roadmapId) => {
+              setAllRoadmaps({
+                ...allRoadmaps,
+                personalRoadmaps: allRoadmaps.personalRoadmaps.filter(
+                  (r) => r._id !== roadmapId
+                ),
+              });
+            }}
+          />
+        )}
+        {activeTab === 'shared' && (
+          <SharedRoadmapList roadmaps={allRoadmaps?.sharedRoadmaps} />
+        )}
+      </div>
     </div>
   );
 }

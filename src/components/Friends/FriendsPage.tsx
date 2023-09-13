@@ -10,7 +10,6 @@ import { FriendProgressItem } from './FriendProgressItem';
 import UserIcon from '../../icons/user.svg';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
-import { SharedRoadmapList } from './SharedRoadmapList';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -32,12 +31,11 @@ export type ListFriendsResponse = {
   status: FriendshipStatus;
   roadmaps: FriendResourceProgress[];
   bestPractices: FriendResourceProgress[];
-  customs: FriendResourceProgress[];
 }[];
 
 type GroupingType = {
   label: string;
-  value: 'active' | 'requests' | 'sent' | 'roadmap';
+  value: 'active' | 'requests' | 'sent';
   statuses: FriendshipStatus[];
 };
 
@@ -45,7 +43,6 @@ const groupingTypes: GroupingType[] = [
   { label: 'Active', value: 'active', statuses: ['accepted'] },
   { label: 'Requests', value: 'requests', statuses: ['received', 'rejected'] },
   { label: 'Sent', value: 'sent', statuses: ['sent', 'got_rejected'] },
-  { label: 'Roadmaps', value: 'roadmap', statuses: [] },
 ];
 
 export function FriendsPage() {
@@ -168,7 +165,7 @@ export function FriendsPage() {
         </button>
       </div>
 
-      {selectedGrouping !== 'roadmap' && filteredFriends.length > 0 && (
+      {filteredFriends.length > 0 && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {filteredFriends.map((friend) => (
             <FriendProgressItem
@@ -192,7 +189,7 @@ export function FriendsPage() {
         </div>
       )}
 
-      {filteredFriends.length === 0 && selectedGrouping !== 'roadmap' && (
+      {filteredFriends.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12">
           <img
             src={UserIcon.src}
@@ -217,12 +214,6 @@ export function FriendsPage() {
             Invite Friends
           </button>
         </div>
-      )}
-
-      {selectedGrouping === 'roadmap' && (
-        <SharedRoadmapList
-          friends={friends.filter((friend) => friend.status === 'accepted')}
-        />
       )}
     </div>
   );

@@ -55,8 +55,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
     onReload();
   }
 
-  const allRoadmaps = [...(friend?.roadmaps || []), ...(friend?.customs || [])];
-  const roadmaps = allRoadmaps.sort((a, b) => {
+  const roadmaps = (friend?.roadmaps || []).sort((a, b) => {
     return b.done - a.done;
   });
 
