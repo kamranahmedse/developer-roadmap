@@ -37,6 +37,7 @@ export interface RoadmapDocument {
   createdAt: Date;
   updatedAt: Date;
   canManage: boolean;
+  isCustomResource: boolean;
 }
 
 interface CreateRoadmapModalProps {}

@@ -7,6 +7,11 @@ import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
 import RoadmapIcon from '../../icons/roadmap.svg';
 
+export type GetRoadmapListResponse = {
+  personalRoadmaps: RoadmapDocument[];
+  sharedRoadmaps: RoadmapDocument[];
+};
+
 export function RoadmapListPage() {
   const [roadmapList, setRoadmapList] = useState<RoadmapDocument[]>([]);
 
@@ -14,7 +19,7 @@ export function RoadmapListPage() {
   const [removingRoadmapId, setRemovingRoadmapId] = useState('');
 
   async function loadRoadmapList() {
-    const { response, error } = await httpGet<RoadmapDocument[]>(
+    const { response, error } = await httpGet<GetRoadmapListResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-user-roadmap-list`
     );
 
@@ -22,7 +27,7 @@ export function RoadmapListPage() {
       console.error(error);
     }
 
-    setRoadmapList(response!);
+    setRoadmapList(response?.personalRoadmaps || []);
   }
 
   async function deleteRoadmap(roadmapId: string) {

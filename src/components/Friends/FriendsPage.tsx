@@ -10,12 +10,14 @@ import { FriendProgressItem } from './FriendProgressItem';
 import UserIcon from '../../icons/user.svg';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
+import { SharedRoadmapList } from './SharedRoadmapList';
 
 type FriendResourceProgress = {
   updatedAt: string;
   title: string;
   resourceId: string;
   resourceType: string;
+  isCustomResource: boolean;
   learning: number;
   skipped: number;
   done: number;
@@ -35,7 +37,7 @@ export type ListFriendsResponse = {
 
 type GroupingType = {
   label: string;
-  value: 'active' | 'requests' | 'sent';
+  value: 'active' | 'requests' | 'sent' | 'roadmap';
   statuses: FriendshipStatus[];
 };
 
@@ -43,6 +45,7 @@ const groupingTypes: GroupingType[] = [
   { label: 'Active', value: 'active', statuses: ['accepted'] },
   { label: 'Requests', value: 'requests', statuses: ['received', 'rejected'] },
   { label: 'Sent', value: 'sent', statuses: ['sent', 'got_rejected'] },
+  { label: 'Roadmaps', value: 'roadmap', statuses: [] },
 ];
 
 export function FriendsPage() {
@@ -53,7 +56,7 @@ export function FriendsPage() {
   const [showFriendProgress, setShowFriendProgress] = useState<{
     resourceId: string;
     friend: ListFriendsResponse[0];
-    isCustomRoadmap?: boolean;
+    isCustomResource?: boolean;
   }>();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -122,7 +125,7 @@ export function FriendsPage() {
           resourceId={showFriendProgress.resourceId}
           resourceType={'roadmap'}
           onClose={() => setShowFriendProgress(undefined)}
-          isCustomRoadmap={showFriendProgress.isCustomRoadmap}
+          isCustomResource={showFriendProgress.isCustomResource}
         />
       )}
 
@@ -165,16 +168,16 @@ export function FriendsPage() {
         </button>
       </div>
 
-      {filteredFriends.length > 0 && (
+      {selectedGrouping !== 'roadmap' && filteredFriends.length > 0 && (
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
-              onShowResourceProgress={(resourceId, isCustomRoadmap) => {
+              onShowResourceProgress={(resourceId, isCustomResource) => {
                 setShowFriendProgress({
                   resourceId,
                   friend,
-                  isCustomRoadmap,
+                  isCustomResource,
                 });
               }}
               key={friend.userId}
@@ -189,7 +192,7 @@ export function FriendsPage() {
         </div>
       )}
 
-      {filteredFriends.length === 0 && (
+      {filteredFriends.length === 0 && selectedGrouping !== 'roadmap' && (
         <div className="flex flex-col items-center justify-center py-12">
           <img
             src={UserIcon.src}
@@ -214,6 +217,12 @@ export function FriendsPage() {
             Invite Friends
           </button>
         </div>
+      )}
+
+      {selectedGrouping === 'roadmap' && (
+        <SharedRoadmapList
+          friends={friends.filter((friend) => friend.status === 'accepted')}
+        />
       )}
     </div>
   );

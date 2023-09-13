@@ -31,7 +31,7 @@ export type ProgressMapProps = {
   resourceType: 'roadmap' | 'best-practice';
   onClose: () => void;
   onShowMyProgress: () => void;
-  isCustomRoadmap?: boolean;
+  isCustomResource?: boolean;
 };
 
 type MemberProgressResponse = {
@@ -49,7 +49,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     onShowMyProgress,
     teamId,
     onClose,
-    isCustomRoadmap,
+    isCustomResource,
   } = props;
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
@@ -71,7 +71,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }
 
-  if (isCustomRoadmap) {
+  if (isCustomResource) {
     resourceJsonUrl = `${
       import.meta.env.PUBLIC_API_URL
     }/v1-get-roadmap/${resourceId}`;
@@ -100,13 +100,13 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
   async function renderResource(jsonUrl: string) {
     const res = await fetch(jsonUrl, {
-      ...(isCustomRoadmap && {
+      ...(isCustomResource && {
         credentials: 'include',
       }),
     });
     const json = await res.json();
     let svg: SVGElement | null = null;
-    if (isCustomRoadmap) {
+    if (isCustomResource) {
       svg = await renderFlowJSON(
         {
           nodes: json.nodes,
@@ -217,7 +217,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
     }
 
     let topicId = '';
-    if (isCustomRoadmap) {
+    if (isCustomResource) {
       const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
       if (
         !nodeId ||
@@ -257,7 +257,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       return;
     }
     let topicId = '';
-    if (isCustomRoadmap) {
+    if (isCustomResource) {
       const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
       if (
         !nodeId ||

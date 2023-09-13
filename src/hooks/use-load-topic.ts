@@ -5,19 +5,24 @@ type CallbackType = (data: {
   resourceType: ResourceType;
   resourceId: string;
   topicId: string;
-  isCustomRoadmap: boolean;
+  isCustomResource: boolean;
 }) => void;
 
 export function useLoadTopic(callback: CallbackType) {
   useEffect(() => {
     function handleTopicClick(e: any) {
-      const { resourceType, resourceId, topicId, isCustomRoadmap = false } = e.detail;
+      const {
+        resourceType,
+        resourceId,
+        topicId,
+        isCustomResource = false,
+      } = e.detail;
 
       callback({
         resourceType,
         resourceId,
         topicId,
-        isCustomRoadmap
+        isCustomResource,
       });
     }
 

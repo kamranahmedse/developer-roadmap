@@ -10,7 +10,10 @@ import { AddUserIcon } from '../ReactIcons/AddUserIcon';
 
 type FriendProgressItemProps = {
   friend: ListFriendsResponse[0];
-  onShowResourceProgress: (resourceId: string, isCustomRoadmap?: boolean) => void;
+  onShowResourceProgress: (
+    resourceId: string,
+    isCustomResource?: boolean
+  ) => void;
   onReload: () => void;
 };
 
@@ -85,16 +88,12 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
           <>
             <div className="relative flex grow flex-col space-y-2 p-3">
               {(showAll ? roadmaps : roadmaps.slice(0, 4)).map((progress) => {
-                const isCustomRoadmap =
-                  friend.customs?.findIndex(
-                    (c) => c.resourceId === progress.resourceId
-                  ) !== -1;
                 return (
                   <button
                     onClick={() =>
                       onShowResourceProgress(
                         progress.resourceId,
-                        isCustomRoadmap
+                        progress.isCustomResource
                       )
                     }
                     className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"

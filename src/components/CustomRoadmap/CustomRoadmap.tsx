@@ -92,7 +92,7 @@ export function CustomRoadmap() {
       <UserProgressModal
         resourceId={roadmap?._id!}
         resourceType="roadmap"
-        isCustomRoadmap={true}
+        isCustomResource={true}
       />
     </>
   );

@@ -18,7 +18,7 @@ export type ProgressMapProps = {
   resourceId: string;
   resourceType: ResourceType;
   onClose?: () => void;
-  isCustomRoadmap?: boolean;
+  isCustomResource?: boolean;
 };
 
 type UserProgressResponse = {
@@ -40,7 +40,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceType,
     userId: propUserId,
     onClose: onModalClose,
-    isCustomRoadmap,
+    isCustomResource,
   } = props;
   const { s: userId = propUserId } = getUrlParams();
 
@@ -65,7 +65,7 @@ export function UserProgressModal(props: ProgressMapProps) {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
   }
 
-  if (isCustomRoadmap) {
+  if (isCustomResource) {
     resourceJsonUrl = `${
       import.meta.env.PUBLIC_API_URL
     }/v1-get-roadmap/${resourceId}`;
@@ -97,7 +97,7 @@ export function UserProgressModal(props: ProgressMapProps) {
       throw error || new Error('Something went wrong. Please try again!');
     }
 
-    if (isCustomRoadmap) {
+    if (isCustomResource) {
       return await renderFlowJSON({
         nodes: roadmapJson?.nodes || [],
         edges: roadmapJson?.edges || [],

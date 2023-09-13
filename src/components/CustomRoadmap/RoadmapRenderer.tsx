@@ -121,7 +121,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
           topicId: nodeId,
           resourceId: roadmap?._id,
           resourceType: 'roadmap',
-          isCustomRoadmap: true,
+          isCustomResource: true,
         },
       })
     );

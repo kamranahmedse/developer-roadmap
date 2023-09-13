@@ -16,11 +16,11 @@ type ResourceProgressType = {
   skippedCount: number;
   onCleared?: () => void;
   showClearButton?: boolean;
-  isCustomRoadmap?: boolean;
+  isCustomResource: boolean;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
-  const { showClearButton = true, isCustomRoadmap } = props;
+  const { showClearButton = true, isCustomResource } = props;
   const toast = useToast();
   const [isClearing, setIsClearing] = useState(false);
   const [isConfirming, setIsConfirming] = useState(false);
@@ -70,7 +70,8 @@ export function ResourceProgress(props: ResourceProgressType) {
     resourceType === 'roadmap'
       ? `/${resourceId}`
       : `/best-practices/${resourceId}`;
-  if (isCustomRoadmap) {
+
+  if (isCustomResource) {
     url = `/r?id=${resourceId}`;
   }
 
@@ -119,7 +120,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           <ProgressShareButton
             resourceType={resourceType}
             resourceId={resourceId}
-            isCustomRoadmap={isCustomRoadmap}
+            isCustomResource={isCustomResource}
             className="text-xs font-normal"
             shareIconClassName="w-2.5 h-2.5 stroke-2"
             checkIconClassName="w-2.5 h-2.5"

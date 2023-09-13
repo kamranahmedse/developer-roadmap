@@ -5,7 +5,7 @@ type MemberProgressItemProps = {
   member: TeamMember;
   onShowResourceProgress: (
     resourceId: string,
-    isCustomRoadmap: boolean
+    isCustomResource: boolean
   ) => void;
   isMyProgress?: boolean;
 };
@@ -57,7 +57,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                   onClick={() =>
                     onShowResourceProgress(
                       progress.resourceId,
-                      progress.isCustomRoadmap!
+                      progress.isCustomResource!
                     )
                   }
                   className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"

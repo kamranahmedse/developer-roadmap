@@ -20,7 +20,7 @@ export type UserProgress = {
   skipped: number;
   total: number;
   updatedAt: string;
-  isCustomRoadmap?: boolean;
+  isCustomResource?: boolean;
 };
 
 export type TeamMember = {
@@ -37,7 +37,7 @@ export type GroupByRoadmap = {
   resourceId: string;
   resourceTitle: string;
   resourceType: string;
-  isCustomRoadmap?: boolean;
+  isCustomResource?: boolean;
   members: {
     member: TeamMember;
     progress: UserProgress | undefined;
@@ -60,7 +60,7 @@ export function TeamProgressPage() {
   const [showMemberProgress, setShowMemberProgress] = useState<{
     resourceId: string;
     member: TeamMember;
-    isCustomRoadmap?: boolean;
+    isCustomResource?: boolean;
   }>();
 
   const [teamMembers, setTeamMembers] = useState<TeamMember[]>([]);
@@ -111,7 +111,7 @@ export function TeamProgressPage() {
 
   const groupByRoadmap: GroupByRoadmap[] = [];
   for (const roadmap of currentTeam?.roadmaps || []) {
-    let isCustomRoadmap = false;
+    let isCustomResource = false;
     const members: GroupByRoadmap['members'] = [];
     for (const member of teamMembers) {
       const progress = member.progress.find(
@@ -120,8 +120,8 @@ export function TeamProgressPage() {
       if (!progress) {
         continue;
       }
-      if (progress.isCustomRoadmap && !isCustomRoadmap) {
-        isCustomRoadmap = true;
+      if (progress.isCustomResource && !isCustomResource) {
+        isCustomResource = true;
       }
 
       members.push({
@@ -139,7 +139,7 @@ export function TeamProgressPage() {
       resourceTitle: members?.[0].progress?.resourceTitle || '',
       resourceType: 'roadmap',
       members,
-      isCustomRoadmap,
+      isCustomResource,
     });
   }
 
@@ -160,7 +160,7 @@ export function TeamProgressPage() {
           teamId={teamId}
           resourceId={showMemberProgress.resourceId}
           resourceType={'roadmap'}
-          isCustomRoadmap={showMemberProgress.isCustomRoadmap}
+          isCustomResource={showMemberProgress.isCustomResource}
           onClose={() => {
             setShowMemberProgress(undefined);
           }}
@@ -170,7 +170,7 @@ export function TeamProgressPage() {
               member: teamMembers.find(
                 (member) => member.email === user?.email
               )!,
-              isCustomRoadmap: showMemberProgress.isCustomRoadmap,
+              isCustomResource: showMemberProgress.isCustomResource,
             });
           }}
         />
@@ -204,7 +204,7 @@ export function TeamProgressPage() {
                     setShowMemberProgress({
                       resourceId,
                       member,
-                      isCustomRoadmap: roadmap.isCustomRoadmap,
+                      isCustomResource: roadmap.isCustomResource,
                     });
                   }}
                 />
@@ -219,11 +219,11 @@ export function TeamProgressPage() {
                 key={member._id}
                 member={member}
                 isMyProgress={member?.email === user?.email}
-                onShowResourceProgress={(resourceId, isCustomRoadmap) => {
+                onShowResourceProgress={(resourceId, isCustomResource) => {
                   setShowMemberProgress({
                     resourceId,
                     member,
-                    isCustomRoadmap,
+                    isCustomResource,
                   });
                 }}
               />

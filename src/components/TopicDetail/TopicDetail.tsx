@@ -111,7 +111,7 @@ export function TopicDetail(props: TopicDetailProps) {
   });
 
   // Load the topic detail when the topic detail is active
-  useLoadTopic(({ topicId, resourceType, resourceId, isCustomRoadmap }) => {
+  useLoadTopic(({ topicId, resourceType, resourceId, isCustomResource }) => {
     setIsLoading(true);
     setIsActive(true);
     sponsorHidden.set(true);
@@ -127,7 +127,7 @@ export function TopicDetail(props: TopicDetailProps) {
         ? `/${resourceId}/${topicPartial}`
         : `/best-practices/${resourceId}/${topicPartial}`;
 
-    if (isCustomRoadmap) {
+    if (isCustomResource) {
       topicUrl = `${
         import.meta.env.PUBLIC_API_URL
       }/v1-get-node-content/${resourceId}/${topicId}`;
@@ -137,7 +137,7 @@ export function TopicDetail(props: TopicDetailProps) {
       topicUrl,
       {},
       {
-        ...(!isCustomRoadmap && {
+        ...(!isCustomResource && {
           headers: {
             Accept: 'text/html',
           },
@@ -150,7 +150,7 @@ export function TopicDetail(props: TopicDetailProps) {
           return;
         }
         let topicHtml = '';
-        if (!isCustomRoadmap) {
+        if (!isCustomResource) {
           // It's full HTML with page body, head etc.
           // We only need the inner HTML of the #main-content
           const node = new DOMParser().parseFromString(

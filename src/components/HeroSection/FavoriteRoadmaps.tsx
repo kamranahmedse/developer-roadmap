@@ -14,6 +14,7 @@ export type UserProgressResponse = {
   skipped: number;
   total: number;
   updatedAt: Date;
+  isCustomResource: boolean;
 }[];
 
 function renderProgress(progressList: UserProgressResponse) {
@@ -48,10 +49,7 @@ function renderProgress(progressList: UserProgressResponse) {
   });
 }
 
-type ProgressResponse = {
-  default: UserProgressResponse;
-  custom: UserProgressResponse;
-};
+type ProgressResponse = UserProgressResponse;
 
 export function FavoriteRoadmaps() {
   const isAuthenticated = isLoggedIn();
@@ -61,10 +59,7 @@ export function FavoriteRoadmaps() {
 
   const [isPreparing, setIsPreparing] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [progress, setProgress] = useState<ProgressResponse>({
-    default: [],
-    custom: [],
-  });
+  const [progress, setProgress] = useState<ProgressResponse>([]);
   const [containerOpacity, setContainerOpacity] = useState(0);
 
   function showProgressContainer() {
@@ -100,8 +95,7 @@ export function FavoriteRoadmaps() {
     showProgressContainer();
 
     // render progress on featured items
-    renderProgress(progressList.default);
-    renderProgress(progressList.custom);
+    renderProgress(progressList);
   }
 
   useEffect(() => {
@@ -119,8 +113,9 @@ export function FavoriteRoadmaps() {
     return null;
   }
 
-  const hasProgress =
-    progress?.default?.length > 0 || progress?.custom?.length > 0;
+  const hasProgress = progress?.length > 0;
+  const customRoadmaps = progress?.filter((p) => p.isCustomResource);
+  const defaultRoadmaps = progress?.filter((p) => !p.isCustomResource);
 
   return (
     <div
@@ -129,14 +124,12 @@ export function FavoriteRoadmaps() {
       }`}
     >
       <div className="container min-h-full">
-        {!isLoading &&
-          progress?.default?.length == 0 &&
-          progress?.custom?.length == 0 && <EmptyProgress />}
+        {!isLoading && progress?.length == 0 && <EmptyProgress />}
         {hasProgress && (
           <HeroRoadmaps
             showCustomRoadmaps={true}
-            customRoadmaps={progress.custom}
-            progress={progress.default}
+            customRoadmaps={customRoadmaps}
+            progress={defaultRoadmaps}
             isLoading={isLoading}
           />
         )}

@@ -13,7 +13,7 @@ export function hideCreateRoadmapModal() {
 export const currentRoadmap = atom<RoadmapDocument | undefined>(undefined);
 export const isCurrentRoadmapPersonal = computed(
   currentRoadmap,
-  (roadmap) => roadmap?.teamId === undefined
+  (roadmap) => !roadmap?.teamId
 );
 export const canManageCurrentRoadmap = computed(
   currentRoadmap,

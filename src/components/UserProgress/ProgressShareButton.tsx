@@ -11,7 +11,7 @@ type ProgressShareButtonProps = {
   className?: string;
   shareIconClassName?: string;
   checkIconClassName?: string;
-  isCustomRoadmap?: boolean;
+  isCustomResource?: boolean;
 };
 export function ProgressShareButton(props: ProgressShareButtonProps) {
   const {
@@ -20,7 +20,7 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
     className,
     shareIconClassName,
     checkIconClassName,
-    isCustomRoadmap,
+    isCustomResource,
   } = props;
 
   const user = useAuth();
@@ -32,9 +32,9 @@ export function ProgressShareButton(props: ProgressShareButtonProps) {
       isDev ? 'http://localhost:3000' : 'https://roadmap.sh'
     );
 
-    if (resourceType === 'roadmap' && !isCustomRoadmap) {
+    if (resourceType === 'roadmap' && !isCustomResource) {
       newUrl.pathname = `/${resourceId}`;
-    } else if (resourceType === 'best-practice' && !isCustomRoadmap) {
+    } else if (resourceType === 'best-practice' && !isCustomResource) {
       newUrl.pathname = `/best-practices/${resourceId}`;
     } else {
       newUrl.pathname = `/r`;
