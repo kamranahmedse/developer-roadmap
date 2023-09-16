@@ -12,6 +12,10 @@ export interface RoadmapFrontmatter {
   isUpcoming: boolean;
   tnsBannerLink?: string;
   note?: string;
+  question?: {
+    title: string;
+    description: string;
+  };
   dimensions?: {
     width: number;
     height: number;

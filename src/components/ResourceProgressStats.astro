@@ -5,10 +5,10 @@ import { ProgressShareButton } from './UserProgress/ProgressShareButton';
 export interface Props {
   resourceId: string;
   resourceType: ResourceType;
-  isSecondaryBanner?: boolean;
+  hasSecondaryBanner?: boolean;
 }
 
-const { isSecondaryBanner = false, resourceId, resourceType } = Astro.props;
+const { hasSecondaryBanner = false, resourceId, resourceType } = Astro.props;
 ---
 
 <div
@@ -16,8 +16,8 @@ const { isSecondaryBanner = false, resourceId, resourceType } = Astro.props;
   class:list={[
     'hidden sm:flex justify-between px-2 bg-white items-center py-1.5 relative striped-loader bg-white',
     {
-      'rounded-bl-md rounded-br-md': isSecondaryBanner,
-      'rounded-md': !isSecondaryBanner,
+      'rounded-tl-md rounded-tr-md': hasSecondaryBanner,
+      'rounded-md': !hasSecondaryBanner,
     },
   ]}
 >

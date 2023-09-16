@@ -1,47 +1,57 @@
 ---
 import AstroIcon from './AstroIcon.astro';
 import Icon from './AstroIcon.astro';
+import { RoadmapTitleQuestion } from './RoadmapTitleQuestion.tsx';
 import ResourceProgressStats from './ResourceProgressStats.astro';
 
 export interface Props {
   roadmapId: string;
   tnsBannerLink?: string;
+  titleQuestion?: string;
+  titleAnswer?: string;
 }
 
-const { roadmapId, tnsBannerLink = '' } = Astro.props;
-
-const hasTNSBanner = !!tnsBannerLink;
-const roadmapTitle =
-  roadmapId === 'devops'
-    ? 'DevOps'
-    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+const {
+  roadmapId,
+  titleQuestion = '',
+  titleAnswer = '',
+  tnsBannerLink,
+} = Astro.props;
+const hasTitleQuestion = titleQuestion && titleAnswer;
+const hasTnsBanner = !!tnsBannerLink;
 ---
 
 <div
   class:list={[
-    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0',
-    {
-      'sm:-mb-[82px]': hasTNSBanner,
-      'sm:-mb-[65px]': !hasTNSBanner,
-    },
+    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 bg-white',
+    ...(hasTnsBanner
+      ? [
+          {
+            'sm:-mb-[103px]': hasTitleQuestion,
+            'sm:-mb-[81px]': !hasTitleQuestion,
+          },
+        ]
+      : [
+          {
+            'sm:-mb-[88px]': hasTitleQuestion,
+            'sm:-mb-[65px]': !hasTitleQuestion,
+          },
+        ]),
   ]}
 >
+  <ResourceProgressStats
+    resourceId={roadmapId}
+    resourceType='roadmap'
+    hasSecondaryBanner={hasTitleQuestion}
+  />
+
   {
-    hasTNSBanner && (
-      <div class='hidden border-b bg-gray-100 px-2 py-1.5 sm:block'>
-        <p class='text-sm'>
-          Get the latest {roadmapTitle} news from our sister site{' '}
-          <a
-            href={tnsBannerLink}
-            target='_blank'
-            class='font-semibold underline'
-          >
-            TheNewStack.io
-          </a>
-        </p>
-      </div>
+    hasTitleQuestion && (
+      <RoadmapTitleQuestion
+        client:load
+        question={titleQuestion}
+        answer={titleAnswer}
+      />
     )
   }
-
-  <ResourceProgressStats isSecondaryBanner={hasTNSBanner} resourceId={roadmapId} resourceType='roadmap' />
 </div>
