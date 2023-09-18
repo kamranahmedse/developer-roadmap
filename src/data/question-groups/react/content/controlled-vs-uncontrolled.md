@@ -1,3 +1,14 @@
-JSX stands for JavaScript XML and it is an extension to the JavaScript language syntax. It is used with React to describe what the user interface should look like. By using JSX, we can write HTML structures in the same file that contains JavaScript code. This makes the code easier to understand and debug.
+A Controlled Component is one that takes its current value through props and notifies changes through callbacks like `onChange`. A parent component "controls" it by handling the callback and managing its own state and passing the new values as props to the controlled component. You could also call this a "dumb component".
 
-It is basically a syntactic sugar around `React.createElement()` function.
+A Uncontrolled Component is one that stores its own state internally, and you query the DOM using a `ref` to find its current value when you need it. This is a bit more like traditional HTML.
+
+Most native React form components support both controlled and uncontrolled usage:
+
+```jsx
+// Controlled:
+<input type="text" value={value} onChange={handleChange} />
+
+// Uncontrolled:
+<input type="text" defaultValue="foo" ref={inputRef} />
+// Use `inputRef.current.value` to read the current value of <input>
+```

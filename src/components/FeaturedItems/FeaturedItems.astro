@@ -6,9 +6,15 @@ export interface Props {
   featuredItems: FeaturedItemType[];
   heading: string;
   showCreateRoadmap?: boolean;
+  allowBookmark?: boolean;
 }
 
-const { featuredItems, heading, showCreateRoadmap } = Astro.props;
+const {
+  featuredItems,
+  heading,
+  showCreateRoadmap,
+  allowBookmark = true,
+} = Astro.props;
 ---
 
 <div class='relative border-b border-b-[#1e293c] py-10 sm:py-14'>
@@ -24,6 +30,7 @@ const { featuredItems, heading, showCreateRoadmap } = Astro.props;
         featuredItems.map((featuredItem) => (
           <li>
             <FeaturedItem
+              allowBookmark={allowBookmark}
               text={featuredItem.text}
               url={featuredItem.url}
               isNew={featuredItem.isNew}

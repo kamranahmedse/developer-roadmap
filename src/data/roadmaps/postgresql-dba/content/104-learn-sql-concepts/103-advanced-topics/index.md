@@ -55,7 +55,7 @@ This query retrieves the entire hierarchy of categories using a recursive CTE.
 PostgreSQL has support for JSON and JSONB data types. JSON functions enable you to create, manipulate, and query JSON data directly in your SQL queries.
 
 ```sql
-SELECT json_object('name', name, 'age', age) as json_data
+SELECT json_build_object('name', name, 'age', age) as json_data
 FROM users;
 ```
 

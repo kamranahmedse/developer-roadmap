@@ -7,6 +7,10 @@
     @apply mx-auto !max-w-[830px] px-4;
   }
 
+  .badge {
+    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white
+  }
+
   /* Chrome, Safari and Opera */
   .no-scrollbar::-webkit-scrollbar {
     display: none;

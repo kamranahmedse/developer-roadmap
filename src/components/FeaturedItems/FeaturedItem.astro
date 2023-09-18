@@ -6,11 +6,18 @@ export interface FeaturedItemType {
   isNew?: boolean;
   url: string;
   text: string;
+  allowBookmark?: boolean;
 }
 
 export interface Props extends FeaturedItemType {}
 
-const { isUpcoming = false, isNew = false, text, url } = Astro.props;
+const {
+  isUpcoming = false,
+  isNew = false,
+  text,
+  url,
+  allowBookmark = true,
+} = Astro.props;
 ---
 
 <a
@@ -26,11 +33,17 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
     {text}
   </span>
 
-  <MarkFavorite
-    resourceId={url.split('/').pop()!}
-    resourceType={url.includes('best-practices') ? 'best-practice' : 'roadmap'}
-    client:only="react"
-  />
+  {
+    allowBookmark && (
+      <MarkFavorite
+        resourceId={url.split('/').pop()!}
+        resourceType={
+          url.includes('best-practices') ? 'best-practice' : 'roadmap'
+        }
+        client:only='react'
+      />
+    )
+  }
 
   {
     isNew && (

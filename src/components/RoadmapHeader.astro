@@ -8,6 +8,7 @@ import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { TeamVersions } from './TeamVersions/TeamVersions';
+import { RoadmapFrontmatter } from '../lib/roadmap';
 
 export interface Props {
   title: string;
@@ -17,6 +18,7 @@ export interface Props {
   roadmapId: string;
   isUpcoming?: boolean;
   hasSearch?: boolean;
+  question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
 }
 
@@ -29,25 +31,43 @@ const {
   hasSearch = false,
   note,
   hasTopics = false,
+  question,
 } = Astro.props;
 
 const isRoadmapReady = !isUpcoming;
+
+const roadmapTitle =
+  roadmapId === 'devops'
+    ? 'DevOps'
+    : `${roadmapId.charAt(0).toUpperCase()}${roadmapId.slice(1)}`;
+
+const hasTnsBanner = !!tnsBannerLink;
 ---
 
 <LoginPopup />
 <ProgressHelpPopup />
 
-<div class='border-b'>
-  <div class='container relative py-5 sm:py-12'>
+<div class='relative border-b'>
+  <div
+    class:list={[
+      'container relative py-5',
+      {
+        'sm:py-16': hasTnsBanner,
+        'sm:py-12': !hasTnsBanner,
+      },
+    ]}
+  >
     <div class='mb-3 mt-0 sm:mb-4'>
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
-        <MarkFavorite
-          resourceId={roadmapId}
-          resourceType='roadmap'
-          className='text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[0.4] [&>svg]:stroke-gray-400 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 sm:[&>svg]:h-5 sm:[&>svg]:w-5 ml-1.5 relative focus:outline-0'
-          client:only="react"
-        />
+        <span class='relative top-0 sm:-top-1'>
+          <MarkFavorite
+            resourceId={roadmapId}
+            resourceType='roadmap'
+            className='text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[0.4] [&>svg]:stroke-gray-400 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 sm:[&>svg]:h-4 sm:[&>svg]:w-4 ml-1.5 relative focus:outline-0'
+            client:only='react'
+          />
+        </span>
       </h1>
       <p class='text-sm text-gray-500 sm:text-lg'>{description}</p>
     </div>
@@ -121,7 +141,7 @@ const isRoadmapReady = !isUpcoming;
         <TeamVersions
           resourceType='roadmap'
           resourceId={roadmapId}
-          client:only="react"
+          client:only='react'
         />
 
         {
@@ -144,12 +164,31 @@ const isRoadmapReady = !isUpcoming;
     <!-- Desktop: Roadmap Resources - Alert -->
     {
       hasTopics && (
-        <RoadmapHint roadmapId={roadmapId} tnsBannerLink={tnsBannerLink} />
+        <RoadmapHint
+          tnsBannerLink={tnsBannerLink}
+          titleQuestion={question?.title}
+          titleAnswer={question?.description}
+          roadmapId={roadmapId}
+        />
       )
     }
 
     {hasSearch && <TopicSearch />}
   </div>
+
+  {
+    tnsBannerLink && (
+      <div class='absolute left-0 right-0 top-0 hidden border-b border-b-gray-200 px-2 py-1.5 sm:block'>
+        <p class='py-0.5 text-center text-sm'>
+          <span class='badge mr-1'>Partner</span>
+          Get the latest {roadmapTitle} news from our sister site{' '}
+          <a href={tnsBannerLink} target='_blank' class='font-medium underline'>
+            TheNewStack.io
+          </a>
+        </p>
+      </div>
+    )
+  }
 </div>
 
 {note && <RoadmapNote text={note} />}
