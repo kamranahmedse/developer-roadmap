@@ -1,7 +1,7 @@
-import {ChevronDown, ChevronUp, GraduationCap} from 'lucide-react';
+import { ChevronDown, ChevronUp, GraduationCap } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click';
-import {markdownToHtml} from "../lib/markdown";
+import { markdownToHtml } from '../lib/markdown';
 
 type RoadmapTitleQuestionProps = {
   question: string;
@@ -24,40 +24,47 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
         <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"></div>
       )}
       <h2
-        className="z-50 flex cursor-pointer items-center px-2 py-2 "
+        className="z-50 flex cursor-pointer items-center px-2 py-2.5 font-medium text-base"
         aria-expanded={isAnswerVisible ? 'true' : 'false'}
         onClick={(e) => {
           e.preventDefault();
           setIsAnswerVisible(!isAnswerVisible);
         }}
       >
-        <span className="flex flex-grow">
-          <GraduationCap className="mr-2 inline-block h-5 w-5" />
-            { question }
+        <span className="flex items-center flex-grow">
+          <GraduationCap className="mr-2 inline-block h-6 w-6" />
+          {question}
         </span>
         <span className="flex-shrink-0 text-gray-400">
           <ChevronDown className={`inline-block h-5 w-5`} />
         </span>
       </h2>
 
-      {isAnswerVisible && (
-        <div
-          className="absolute left-0 right-0 top-0 z-50 mt-0 rounded-md border bg-white"
-          ref={ref}
-        >
-          <h2 className="flex items-center px-[7px] pt-[7px] pb-[8px] text-sm font-medium border-b cursor-pointer" onClick={() => setIsAnswerVisible(false)}>
+      <div
+        className={`absolute left-0 right-0 top-0 z-50 mt-0 rounded-md border bg-white ${
+          isAnswerVisible ? 'block' : 'hidden'
+        }`}
+        ref={ref}
+      >
+        {isAnswerVisible && (
+          <h2
+            className="flex cursor-pointer items-center border-b px-[7px] py-[9px] text-base font-medium"
+            onClick={() => setIsAnswerVisible(false)}
+          >
             <span className="flex flex-grow items-center">
-              <GraduationCap className="mr-2 inline-block h-5 w-5" />
-                { question }
+              <GraduationCap className="mr-2 inline-block h-6 w-6" />
+              {question}
             </span>
             <span className="flex-shrink-0 text-gray-400">
               <ChevronUp className={`inline-block h-5 w-5`} />
             </span>
           </h2>
-          <div className='p-3 text-base bg-gray-100 [&>h2]:text-lg [&>h2]:font-semibold [&>h2]:mb-1 [&>h2]:mt-5 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p:last-child]:mb-0 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed' dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}>
-          </div>
-        </div>
-      )}
+        )}
+        <div
+          className="bg-gray-100 [&>p]:text-gray-800 p-3 text-base [&>h2]:mb-1 [&>h2]:mt-5 [&>h2]:text-base [&>h2]:font-semibold [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed"
+          dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}
+        ></div>
+      </div>
     </div>
   );
 }
