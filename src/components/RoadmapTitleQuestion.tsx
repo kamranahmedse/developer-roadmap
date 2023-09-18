@@ -61,7 +61,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
           </h2>
         )}
         <div
-          className="bg-gray-100 [&>p]:text-gray-800 p-3 text-base [&>h2]:mb-1 [&>h2]:mt-5 [&>h2]:text-base [&>h2]:font-semibold [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed"
+          className="bg-gray-100 [&>p]:text-gray-800 p-3 text-base [&>h2]:mb-2 [&>h2]:mt-5 [&>h2]:text-[17px] [&>h2]:font-medium [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed"
           dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}
         ></div>
       </div>
