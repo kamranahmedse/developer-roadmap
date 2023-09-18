@@ -45,7 +45,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
           className="absolute left-0 right-0 top-0 z-50 mt-0 rounded-md border bg-white"
           ref={ref}
         >
-          <p className="flex items-center px-[7px] pt-[7px] pb-[8px] text-sm font-medium border-b cursor-pointer" onClick={() => setIsAnswerVisible(false)}>
+          <h2 className="flex items-center px-[7px] pt-[7px] pb-[8px] text-sm font-medium border-b cursor-pointer" onClick={() => setIsAnswerVisible(false)}>
             <span className="flex flex-grow items-center">
               <GraduationCap className="mr-2 inline-block h-5 w-5" />
                 { question }
@@ -53,7 +53,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
             <span className="flex-shrink-0 text-gray-400">
               <ChevronUp className={`inline-block h-5 w-5`} />
             </span>
-          </p>
+          </h2>
           <div className='p-3 text-base bg-gray-100 [&>h2]:text-lg [&>h2]:font-semibold [&>h2]:mb-1 [&>h2]:mt-5 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p:last-child]:mb-0 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed' dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}>
           </div>
         </div>
