@@ -177,13 +177,36 @@ questions:
   - question: What are fragments in React?
     answer: |
       React doesn't allow returning multiple elements from a component. You can use fragments to return multiple elements.
-      
+
       Fragments in React allow for a group of elements to be returned from a component's render method without adding an extra node to the DOM. They are useful when you want to return multiple elements without wrapping them in a parent container.
     topics:
       - 'Core'
       - 'Beginner'
   - question: What is `createPortal`?
     answer: create-portal.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is Concurrent React (Concurrent Mode)?
+    answer: |
+      Concurrent React, previously referred to as Concurrent Mode, is a set of new features in React 18 that allows React to interrupt the rendering process to consider more urgent tasks, making it possible for React to be more responsive to user input and produce smoother user experiences. It lets React keep the UI responsive while rendering large component trees by splitting the rendering work into smaller chunks and spreading it over multiple frames.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the new `startTransition` API?
+    answer: |
+      The `startTransition` API in React 18 allows developers to mark certain updates as **transitions** so they can be deprioritized, allowing other, more urgent updates to be processed first. This ensures that the UI remains responsive during updates that might take some time, like data fetching.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the purpose of `flushSync` in React?
+    answer: flush-sync.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the `renderToString` in React?
+    answer: |
+      The `renderToString` function in React is part of the `react-dom/server` package and is used to render React components on the server-side to a static HTML string. It is commonly used for server-side rendering (SSR) in React.
     topics:
       - 'Core'
       - 'Intermediate'
