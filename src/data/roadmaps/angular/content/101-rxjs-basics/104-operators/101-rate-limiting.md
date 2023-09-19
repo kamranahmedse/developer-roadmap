@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [throttleTime](https://rxjs.dev/api/operators/throttleTime)
 - [sampleTime](https://rxjs.dev/api/operators/sampleTime)
 - [auditTime](https://rxjs.dev/api/operators/auditTime)
-- [Blogs and tutorials on RxJS](https://blog.angular-university.io/rxjs-better-performance-with-the-rxjs-audittime-operator/)
+- [Blogs and tutorials on RxJS](https://medium.com/@jan.benscheid/rxjs-rate-limiting-and-the-quest-for-the-perfect-throttle-836612c88eb7)
