@@ -52,11 +52,6 @@ questions:
     topics:
       - 'State'
       - 'Beginner'
-  - question: What is the purpose of callback function as an argument of setState()?
-    answer: set-state.md
-    topics:
-      - 'State'
-      - 'Beginner'
   - question: What is the difference between controlled and uncontrolled components?
     answer: controlled-vs-uncontrolled.md
     topics:
@@ -96,8 +91,8 @@ questions:
       - 'Intermediate'
   - question: What is React Fiber?
     answer: |
-        React fiber is the reconciliation engine that replaced the core algorithm in React v16. It is a rewrite of the core algorithm, responsible for scheduling what gets rendered on screen. It is a set of algorithms for efficiently updating the UI.
-        Here is a [bit-outdated but quite good article about React Fiber](https://github.com/acdlite/react-fiber-architecture).
+      React fiber is the reconciliation engine that replaced the core algorithm in React v16. It is a rewrite of the core algorithm, responsible for scheduling what gets rendered on screen. It is a set of algorithms for efficiently updating the UI.
+      Here is a [bit-outdated but quite good article about React Fiber](https://github.com/acdlite/react-fiber-architecture).
     topics:
       - 'Core'
       - 'Advanced'
@@ -179,4 +174,17 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: What are fragments in React?
+    answer: |
+      React doesn't allow returning multiple elements from a component. You can use fragments to return multiple elements.
+      
+      Fragments in React allow for a group of elements to be returned from a component's render method without adding an extra node to the DOM. They are useful when you want to return multiple elements without wrapping them in a parent container.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is `createPortal`?
+    answer: create-portal.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
