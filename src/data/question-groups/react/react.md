@@ -210,4 +210,31 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: What are Server Components in React?
+    answer: |
+      Server Components in React 18 are a new type of component that allows developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is `React.lazy` loading in React?
+    answer: Lazy loading is a technique in React that allows you to load components only when they are needed, reducing the initial bundle size and improving performance.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: How do you implement `React.lazy`` loading for a component in React?
+    answer: lazy-loading.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is `Suspense` in React?
+    answer: |
+      Suspense is a component in React that lets you specify the fallback content to display while waiting for a component to load. It is used in conjunction with `React.lazy()` to lazily load components.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What are inline conditional expressions in React?
+    answer: inline-conditionals.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
