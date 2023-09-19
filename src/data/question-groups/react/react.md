@@ -237,4 +237,34 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: How React Virtual DOM works?
+    answer: virtual-dom.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is a Controlled Component in React?
+    answer: A Controlled component is one in which React's state mechanisms, such as `useState` or `useReducer`, manage the component's state. The value of the component is controlled by React, and changes to it are managed through functions like `onChange`.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is an Uncontrolled Component in React?
+    answer: An Uncontrolled component is one in which the component's state is managed internally. You can use a `ref` to access the DOM node and get its current value.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How do Server Components differ from Client Components?
+    answer: Server Components are rendered on the server and do not require client-side JavaScript for rendering. While Server Components and Client components can coexist in the same app, Server Components can import and render Client components. However, Client components cannot directly import and render Server Components; they can do so only via props.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Can React Server Components be mixed with Client components?
+    answer: Yes, React Server Components can seamlessly integrate with client components. This allows developers to leverage the benefits of Server Components while maintaining client-side interactivity where needed.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How do React Server Components handle data fetching?
+    answer: Server Components can directly access backend resources, databases, or filesystems to fetch data during rendering, eliminating the need for a separate API layer for data fetching.
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
