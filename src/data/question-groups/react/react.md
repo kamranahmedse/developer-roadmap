@@ -307,4 +307,9 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: How to render a list in React?
+    answer: render-list.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
