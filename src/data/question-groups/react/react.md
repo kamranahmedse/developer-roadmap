@@ -182,98 +182,66 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
-  - question: What is `createPortal`?
+  - question: What are portals in React?
     answer: create-portal.md
     topics:
       - 'Core'
       - 'Intermediate'
   - question: What is Concurrent React (Concurrent Mode)?
     answer: |
-      Concurrent React, previously referred to as Concurrent Mode, is a set of new features in React 18 that allows React to interrupt the rendering process to consider more urgent tasks, making it possible for React to be more responsive to user input and produce smoother user experiences. It lets React keep the UI responsive while rendering large component trees by splitting the rendering work into smaller chunks and spreading it over multiple frames.
+      Concurrent React, previously referred to as Concurrent Mode, is a set of new features in React that allows React to interrupt the rendering process to consider more urgent tasks, making it possible for React to be more responsive to user input and produce smoother user experiences. It lets React keep the UI responsive while rendering large component trees by splitting the rendering work into smaller chunks and spreading it over multiple frames.
     topics:
-      - 'Core'
+      - 'Performance'
       - 'Intermediate'
-  - question: What is the new `startTransition` API?
-    answer: |
-      The `startTransition` API in React 18 allows developers to mark certain updates as **transitions** so they can be deprioritized, allowing other, more urgent updates to be processed first. This ensures that the UI remains responsive during updates that might take some time, like data fetching.
+  - question: What is the `useTransition` hook?
+    answer: use-transition.md
     topics:
-      - 'Core'
+      - 'Performance'
       - 'Intermediate'
   - question: What is the purpose of `flushSync` in React?
     answer: flush-sync.md
     topics:
       - 'Core'
       - 'Intermediate'
-  - question: What is the `renderToString` in React?
+  - question: How to render React components as static HTML string?
     answer: |
       The `renderToString` function in React is part of the `react-dom/server` package and is used to render React components on the server-side to a static HTML string. It is commonly used for server-side rendering (SSR) in React.
     topics:
-      - 'Core'
+      - 'SSR'
       - 'Intermediate'
   - question: What are Server Components in React?
     answer: |
-      Server Components in React 18 are a new type of component that allows developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
+      Server Components in allow developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
     topics:
-      - 'Core'
+      - 'SSR'
       - 'Intermediate'
-  - question: What is `React.lazy` loading in React?
-    answer: Lazy loading is a technique in React that allows you to load components only when they are needed, reducing the initial bundle size and improving performance.
-    topics:
-      - 'Core'
-      - 'Intermediate'
-  - question: How do you implement `React.lazy`` loading for a component in React?
+  - question: How to lazy load components in React?
     answer: lazy-loading.md
     topics:
-      - 'Core'
+      - 'Performance'
       - 'Intermediate'
   - question: What is `Suspense` in React?
-    answer: |
-      Suspense is a component in React that lets you specify the fallback content to display while waiting for a component to load. It is used in conjunction with `React.lazy()` to lazily load components.
+    answer: suspense.md
     topics:
-      - 'Core'
+      - 'UX'
       - 'Intermediate'
-  - question: What are inline conditional expressions in React?
-    answer: inline-conditionals.md
-    topics:
-      - 'Core'
-      - 'Beginner'
   - question: How React Virtual DOM works?
     answer: virtual-dom.md
     topics:
       - 'Core'
       - 'Intermediate'
-  - question: What is a Controlled Component in React?
-    answer: A Controlled component is one in which React's state mechanisms, such as `useState` or `useReducer`, manage the component's state. The value of the component is controlled by React, and changes to it are managed through functions like `onChange`.
-    topics:
-      - 'Core'
-      - 'Beginner'
-  - question: What is an Uncontrolled Component in React?
-    answer: An Uncontrolled component is one in which the component's state is managed internally. You can use a `ref` to access the DOM node and get its current value.
-    topics:
-      - 'Core'
-      - 'Beginner'
   - question: How do Server Components differ from Client Components?
-    answer: Server Components are rendered on the server and do not require client-side JavaScript for rendering. While Server Components and Client components can coexist in the same app, Server Components can import and render Client components. However, Client components cannot directly import and render Server Components; they can do so only via props.
+    answer: Server Components are rendered on the server and do not require client-side JavaScript for rendering. While Server Components and Client components can coexist in the same app, Server Components can import and render Client components.
     topics:
-      - 'Core'
-      - 'Beginner'
-  - question: Can React Server Components be mixed with Client components?
-    answer: Yes, React Server Components can seamlessly integrate with client components. This allows developers to leverage the benefits of Server Components while maintaining client-side interactivity where needed.
-    topics:
-      - 'Core'
+      - 'SSR'
       - 'Beginner'
   - question: How do React Server Components handle data fetching?
     answer: Server Components can directly access backend resources, databases, or filesystems to fetch data during rendering, eliminating the need for a separate API layer for data fetching.
     topics:
-      - 'Core'
+      - 'SSR'
       - 'Beginner'
-  - question: Describe the Client Component's lifecycle.
+  - question: What's the component's lifecycle in React?
     answer: component-lifecycle.md
-    topics:
-      - 'Core'
-      - 'Beginner'
-  - question: What is a dependency array in React?
-    answer: In React, a dependency array is commonly used with the `useEffect`, `useMemo`, and `useCallback` hooks to specify the dependencies of the hook. The hook will only be executed or re-executed if the dependencies have changed since the last render.
     topics:
       - 'Core'
       - 'Beginner'
@@ -292,15 +260,10 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
-  - question: What is the primary purpose of the `react-dom` package?
-    answer: The primary purpose of the `react-dom` package is to provide DOM-specific methods to render and manipulate React components in both the browser and server environments. It serves as the entry point to the DOM and server renderers for React.
-    topics:
-      - 'Core'
-      - 'Intermediate'
   - question: Why you shouldn't use `index` as a key in React lists and iterators?
     answer: Using `index` as a key can negatively impact performance and may cause issues with the component state. When the list items change due to additions, deletions, or reordering, using indexes can lead to unnecessary re-renders or even incorrect UI updates. React uses keys to identify elements in the list, and if the key is just an index, it might reuse component instances and state inappropriately. Especially in cases where the list is dynamic or items can be reordered, it's recommended to use unique and stable identifiers as keys to ensure consistent behavior.
     topics:
-      - 'Core'
+      - 'Performance'
       - 'Beginner'
   - question: What is the naming convention for React components?
     answer: In React, the naming convention for components is to use PascalCase, meaning the first letter of each word in the component's name should be capitalized. For example, `UserProfile`, `SidebarItem`, or `NavigationMenu`. This convention differentiates custom React components from regular HTML tags in JSX, as React treats elements starting with a lowercase letter as DOM tags and those starting with a capital letter as custom components.
@@ -312,14 +275,14 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
-  - question: What are `use client` and `use server` Directives in React 18?
-    answer: In React 18, `use client` and `use server` are directives. The `use client` directive marks source files whose components are intended to execute only on the client. Conversely, `use server` marks server-side functions that can be invoked from client-side code.
+  - question: What are `use client` and `use server` directives?
+    answer: The `use client` directive marks source files whose components are intended to execute only on the client. Conversely, `use server` marks server-side functions that can be invoked from client-side code.
     topics:
-      - 'Core'
+      - 'SSR'
       - 'Intermediate'
   - question: Can you use hooks in Server Components?
     answer: No, hooks are not supported in Server Components. Hooks are a client-side feature and are not supported in Server Components. However, you can use hooks in client components and import them into Server Components.
     topics:
-      - 'Core'
+      - 'SSR'
       - 'Intermediate'
 ---

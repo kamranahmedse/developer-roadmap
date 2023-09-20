@@ -1,30 +1,32 @@
 In React functional components, lifecycle-like behaviors are achieved using hooks:
 
-1. **Mounting and Cleanup:**
-   Utilizing the useEffect hook with an empty dependency array ([]) ensures the hook runs after the component mounts to the DOM.
+## Mounting and Unmounting
 
-   ```js
-   useEffect(() => {
-     // do something after component mounts
-     return () => {
-       // do something before component unmounts
-     };
-   }, []);
-   ```
+Utilizing the useEffect hook with an empty dependency array ([]) ensures the hook runs after the component mounts to the DOM.
 
-   The cleanup function returned within the useEffect callback offers a mechanism for handling tasks when the component is about to **unmount**.
+```js
+useEffect(() => {
+  // do something after component mounts
+  return () => {
+    // do something before component unmounts
+  };
+}, []);
+```
 
-2. **Updating:**
-   The useEffect hook, when invoked without a dependency array or with specific dependencies, executes after every render or when specified prop/state changes are detected.
+The cleanup function returned within the useEffect callback offers a mechanism for handling tasks when the component is about to **unmount**.
 
-   ```js
-   useEffect(() => {
-     // do something after every render
-   });
-   ```
+## Updates
 
-   ```js
-   useEffect(() => {
-     // do something after specific prop/state changes
-   }, [state1, state2]);
-   ```
+The useEffect hook, when invoked without a dependency array or with specific dependencies, executes after every render or when specified prop/state changes are detected.
+
+```js
+useEffect(() => {
+  // do something after every render
+});
+```
+
+```js
+useEffect(() => {
+  // do something after specific prop/state changes
+}, [state1, state2]);
+```
