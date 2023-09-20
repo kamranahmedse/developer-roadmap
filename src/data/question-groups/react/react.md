@@ -272,4 +272,9 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What is a dependency array in React?
+    answer: In React, a dependency array is commonly used with the `useEffect`, `useMemo`, and `useCallback` hooks to specify the dependencies of the hook. The hook will only be executed or re-executed if the dependencies have changed since the last render.
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
