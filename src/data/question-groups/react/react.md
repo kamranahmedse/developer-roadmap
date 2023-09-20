@@ -277,4 +277,19 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: How to write a comment in React?
+    answer: |
+      You can write a comment in JSX by wrapping it in curly braces and using JavaScript's multi-line comment syntax.
+      ```js
+      {/* This is a comment */}
+      ```
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is the difference between stateful and stateless components?
+    answer: |
+      The main difference between stateful and stateless components is one has state and the other doesn't. Stateful components keep track of changes to their state and re-render themselves when the state changes. Stateless components, on the other hand, render whatever is passed to them via `props` or always render the same thing.
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
