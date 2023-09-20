@@ -312,4 +312,14 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What are `use client` and `use server` Directives in React 18?
+    answer: In React 18, `use client` and `use server` are directives. The `use client` directive marks source files whose components are intended to execute only on the client. Conversely, `use server` marks server-side functions that can be invoked from client-side code.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: Can you use hooks in Server Components?
+    answer: No, hooks are not supported in Server Components. Hooks are a client-side feature and are not supported in Server Components. However, you can use hooks in client components and import them into Server Components.
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
