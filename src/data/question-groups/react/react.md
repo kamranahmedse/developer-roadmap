@@ -285,4 +285,9 @@ questions:
     topics:
       - 'SSR'
       - 'Intermediate'
+  - question: How to create a Custom hook in React?
+    answer: custom-hook.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
