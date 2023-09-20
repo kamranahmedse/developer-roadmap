@@ -267,4 +267,9 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: Describe the Client Component's lifecycle.
+    answer: component-lifecycle.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
