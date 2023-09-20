@@ -292,4 +292,19 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What is the primary purpose of the `react-dom` package?
+    answer: The primary purpose of the `react-dom` package is to provide DOM-specific methods to render and manipulate React components in both the browser and server environments. It serves as the entry point to the DOM and server renderers for React.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: Why you shouldn't use `index` as a key in React lists and iterators?
+    answer: Using `index` as a key can negatively impact performance and may cause issues with the component state. When the list items change due to additions, deletions, or reordering, using indexes can lead to unnecessary re-renders or even incorrect UI updates. React uses keys to identify elements in the list, and if the key is just an index, it might reuse component instances and state inappropriately. Especially in cases where the list is dynamic or items can be reordered, it's recommended to use unique and stable identifiers as keys to ensure consistent behavior.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is the naming convention for React components?
+    answer: In React, the naming convention for components is to use PascalCase, meaning the first letter of each word in the component's name should be capitalized. For example, `UserProfile`, `SidebarItem`, or `NavigationMenu`. This convention differentiates custom React components from regular HTML tags in JSX, as React treats elements starting with a lowercase letter as DOM tags and those starting with a capital letter as custom components.
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
