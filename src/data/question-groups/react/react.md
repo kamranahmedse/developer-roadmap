@@ -295,4 +295,9 @@ questions:
     topics:
       - 'SSR'
       - 'Intermediate'
+  - question: What is Strict Mode in React and why is it useful?
+    answer: strict-mode.md
+    topics:
+      - 'Debugging'
+      - 'Intermediate'
 ---
