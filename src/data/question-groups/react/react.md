@@ -300,4 +300,9 @@ questions:
     topics:
       - 'Debugging'
       - 'Intermediate'
+  - question: How do you investigate a slow React app and identify performance bottlenecks?
+    answer: investigate-slow-app.md
+    topics:
+      - 'Performance'
+      - 'Intermediate'
 ---
