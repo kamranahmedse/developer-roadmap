@@ -6,5 +6,5 @@ Conditional rendering in React works the same way conditions work in JavaScript.
 
 Visit the following resources to learn more:
 
-- [Conditional Rendering](https://reactjs.org/docs/conditional-rendering.html)
+- [Conditional Rendering](https://react.dev/learn/conditional-rendering)
 - [Different techniques for conditional rendering in React](https://www.robinwieruch.de/conditional-rendering-react/)

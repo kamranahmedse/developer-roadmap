@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [Docker Documentation](https://docs.docker.com/)
 - [What is Docker | AWS ](https://aws.amazon.com/docker/)
-- [Learn Docker | Boot.dev](https://boot.dev/learn/learn-docker)
+- [Complete Docker Course - From BEGINNER to PRO!](https://www.youtube.com/watch?v=RqTEHSBrYFw)
 - [Docker Tutorial](https://youtu.be/3c-iBn73dDE)
 - [Docker simplified in 55 seconds](https://youtu.be/vP_4DlOH1G4)

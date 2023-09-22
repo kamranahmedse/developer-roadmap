@@ -3,7 +3,7 @@ title: 'OAuth — Open Authorization'
 description: 'Learn and understand what is OAuth and how it works'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'OAuth — Open Authorization - roadmap.sh'

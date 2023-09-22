@@ -19,6 +19,7 @@ export class Popup {
       return;
     }
 
+    e.preventDefault();
     popupEl.classList.remove('hidden');
     popupEl.classList.add('flex');
     const focusEl = popupEl.querySelector('[autofocus]');
