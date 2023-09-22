@@ -196,7 +196,7 @@ questions:
     answer: use-transition.md
     topics:
       - 'Performance'
-      - 'Intermediate'
+      - 'Advanced'
   - question: What is the purpose of `flushSync` in React?
     answer: flush-sync.md
     topics:
