@@ -201,7 +201,7 @@ questions:
     answer: flush-sync.md
     topics:
       - 'Core'
-      - 'Intermediate'
+      - 'Advanced'
   - question: How to render React components as static HTML string?
     answer: |
       The `renderToString` function in React is part of the `react-dom/server` package and is used to render React components on the server-side to a static HTML string. It is commonly used for server-side rendering (SSR) in React.
