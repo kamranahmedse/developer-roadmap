@@ -60,15 +60,15 @@ const videos = await getAllVideos();
       }))}
     />
 
-    <!--<FeaturedItems-->
-    <!--  heading='Questions'-->
-    <!--  allowBookmark={false}-->
-    <!--  featuredItems={questionGroups.map((questionGroup) => ({-->
-    <!--    text: questionGroup.frontmatter.briefTitle,-->
-    <!--    url: `/questions/${questionGroup.id}`,-->
-    <!--    isNew: questionGroup.frontmatter.isNew,-->
-    <!--  }))}-->
-    <!--/>-->
+    <FeaturedItems
+      heading='Questions'
+      allowBookmark={false}
+      featuredItems={questionGroups.map((questionGroup) => ({
+        text: questionGroup.frontmatter.briefTitle,
+        url: `/questions/${questionGroup.id}`,
+        isNew: questionGroup.frontmatter.isNew,
+      }))}
+    />
 
     <div class='grid grid-cols-1 gap-7 bg-gray-50 py-7 sm:gap-16 sm:py-16'>
       <FeaturedGuides heading='Guides' guides={guides.slice(0, 7)} />
