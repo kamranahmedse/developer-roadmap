@@ -169,22 +169,140 @@ questions:
       - 'Performance'
       - 'Intermediate'
   - question: Explain the concept of error boundaries in React.
-    answer: |
-      Error boundaries are special React components that catch JavaScript errors during rendering, in lifecycle methods, and during the constructor of whole tree below them. They are used to handle errors gracefully by displaying a fallback UI and preventing the entire application from crashing due to unhandled errors.
+    answer: error-boundaries.md
     topics:
       - 'Core'
       - 'Advanced'
   - question: What are fragments in React?
     answer: |
       React doesn't allow returning multiple elements from a component. You can use fragments to return multiple elements.
-      
+
       Fragments in React allow for a group of elements to be returned from a component's render method without adding an extra node to the DOM. They are useful when you want to return multiple elements without wrapping them in a parent container.
     topics:
       - 'Core'
       - 'Beginner'
-  - question: What is `createPortal`?
+  - question: What are portals in React?
     answer: create-portal.md
     topics:
       - 'Core'
+      - 'Intermediate'
+  - question: What is Concurrent React (Concurrent Mode)?
+    answer: |
+      Concurrent React, previously referred to as Concurrent Mode, is a set of new features in React that allows React to interrupt the rendering process to consider more urgent tasks, making it possible for React to be more responsive to user input and produce smoother user experiences. It lets React keep the UI responsive while rendering large component trees by splitting the rendering work into smaller chunks and spreading it over multiple frames.
+    topics:
+      - 'Performance'
+      - 'Intermediate'
+  - question: What is the `useTransition` hook?
+    answer: use-transition.md
+    topics:
+      - 'Performance'
+      - 'Advanced'
+  - question: What is the purpose of `flushSync` in React?
+    answer: flush-sync.md
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: How to render React components as static HTML string?
+    answer: |
+      The `renderToString` function in React is part of the `react-dom/server` package and is used to render React components on the server-side to a static HTML string. It is commonly used for server-side rendering (SSR) in React.
+    topics:
+      - 'SSR'
+      - 'Intermediate'
+  - question: What are Server Components in React?
+    answer: |
+      Server Components in allow developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
+    topics:
+      - 'SSR'
+      - 'Intermediate'
+  - question: How to lazy load components in React?
+    answer: lazy-loading.md
+    topics:
+      - 'Performance'
+      - 'Intermediate'
+  - question: What is `Suspense` in React?
+    answer: suspense.md
+    topics:
+      - 'UX'
+      - 'Intermediate'
+  - question: How React Virtual DOM works?
+    answer: virtual-dom.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: How do Server Components differ from Client Components?
+    answer: Server Components are rendered on the server and do not require client-side JavaScript for rendering. While Server Components and Client components can coexist in the same app, Server Components can import and render Client components.
+    topics:
+      - 'SSR'
+      - 'Beginner'
+  - question: How do React Server Components handle data fetching?
+    answer: Server Components can directly access backend resources, databases, or filesystems to fetch data during rendering, eliminating the need for a separate API layer for data fetching.
+    topics:
+      - 'SSR'
+      - 'Beginner'
+  - question: What's the component's lifecycle in React?
+    answer: component-lifecycle.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to write a comment in React?
+    answer: |
+      You can write a comment in JSX by wrapping it in curly braces and using JavaScript's multi-line comment syntax.
+      ```js
+      {/* This is a comment */}
+      ```
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is the difference between stateful and stateless components?
+    answer: |
+      The main difference between stateful and stateless components is one has state and the other doesn't. Stateful components keep track of changes to their state and re-render themselves when the state changes. Stateless components, on the other hand, render whatever is passed to them via `props` or always render the same thing.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Why you shouldn't use `index` as a key in React lists and iterators?
+    answer: Using `index` as a key can negatively impact performance and may cause issues with the component state. When the list items change due to additions, deletions, or reordering, using indexes can lead to unnecessary re-renders or even incorrect UI updates. React uses keys to identify elements in the list, and if the key is just an index, it might reuse component instances and state inappropriately. Especially in cases where the list is dynamic or items can be reordered, it's recommended to use unique and stable identifiers as keys to ensure consistent behavior.
+    topics:
+      - 'Performance'
+      - 'Beginner'
+  - question: What is the naming convention for React components?
+    answer: In React, the naming convention for components is to use PascalCase, meaning the first letter of each word in the component's name should be capitalized. For example, `UserProfile`, `SidebarItem`, or `NavigationMenu`. This convention differentiates custom React components from regular HTML tags in JSX, as React treats elements starting with a lowercase letter as DOM tags and those starting with a capital letter as custom components.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to render a list in React?
+    answer: render-list.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What are `use client` and `use server` directives?
+    answer: The `use client` directive marks source files whose components are intended to execute only on the client. Conversely, `use server` marks server-side functions that can be invoked from client-side code.
+    topics:
+      - 'SSR'
+      - 'Intermediate'
+  - question: Can you use hooks in Server Components?
+    answer: No, hooks are not supported in Server Components. Hooks are a client-side feature and are not supported in Server Components. However, you can use hooks in client components and import them into Server Components.
+    topics:
+      - 'SSR'
+      - 'Intermediate'
+  - question: How to create a Custom hook in React?
+    answer: custom-hook.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is Hydration in React?
+    answer: |
+      Hydration is the process of using client-side JavaScript to add interactivity to the markup generated by the server. When you use server-side rendering, the server returns a static HTML representation of the component tree. Once this reaches the browser, in order to make it interactive, React "hydrates" the static content, turning it into a fully interactive application.
+    topics:
+      - 'SSR'
+      - 'Intermediate'
+  - question: What is Strict Mode in React and why is it useful?
+    answer: strict-mode.md
+    topics:
+      - 'Debugging'
+      - 'Intermediate'
+  - question: How do you investigate a slow React app and identify performance bottlenecks?
+    answer: investigate-slow-app.md
+    topics:
+      - 'Performance'
       - 'Intermediate'
 ---
