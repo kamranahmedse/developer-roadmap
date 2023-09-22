@@ -2,7 +2,7 @@ React differs from HTML in that it uses a synthetic event system instead of dire
 
 The events such as `onClick`, `onSubmit`, `onFocus`, etc. are all camel-cased to be consistent with the naming convention in JavaScript. React event handlers are written inside curly braces:
 
-```jsx
+```javascript
 function activateLasers(e) {
     e.preventDefault();
     console.log('The button was clicked.');

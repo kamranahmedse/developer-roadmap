@@ -94,7 +94,7 @@ export function QuestionCard(props: QuestionCardProps) {
       >
         {!question.isLongAnswer && (
           <div
-            className={`mx-auto flex max-w-[600px] flex-grow flex-col items-center justify-center py-0 px-5 text-center text-base leading-normal sm:text-xl`}
+            className={`mx-auto flex max-w-[600px] flex-grow flex-col items-center justify-center py-0 px-5 text-center text-base [&>p]:leading-snug sm:text-xl`}
             dangerouslySetInnerHTML={{
               __html: markdownToHtml(question.answer, false),
             }}
