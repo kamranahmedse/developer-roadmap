@@ -12,4 +12,4 @@ Throttling is an important aspect of cloud design, as it helps to ensure that re
 
 Visit the following resources to learn more:
 
-- [Throttling - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/throttling/)
+- [Throttling - AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/2022-03-31/framework/rel_mitigate_interaction_failure_throttle_requests.html)
