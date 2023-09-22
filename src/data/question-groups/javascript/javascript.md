@@ -23,4 +23,29 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What is the difference between `var`, `let`, and `const` in JavaScript?
+    answer: In JavaScript, `var` is function-scoped and was traditionally used to declare variables. `let` and `const` are block-scoped. The key difference between `let` and `const` is that `let` allows for reassignment while `const` creates a read-only reference.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the difference between `null` and `undefined`?
+    answer: The `null` is an assignment value. It can be assigned to a variable as a representation of no value. But the `undefined` is a primitive value that represents the absence of a value, or a variable that has not been assigned a value.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the difference between `==` and `===`?
+    answer: equality-operator.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What are the different ways to declare a variable in JavaScript?
+    answer: There are three ways to declare a variable in JavaScript `var`, `let`, and `const`.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What are Scopes in JavaScript?
+    answer: A scope is a set of variables, objects, and functions that you have access to. There are three types of scopes in JavaScript. Which are Global Scope, Function Scope (Local Scope), and Block Scope.
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
