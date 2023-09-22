@@ -35,3 +35,5 @@ The **Application layer** is the interface between the user and the communicatio
 Each of these layers interacts with the adjacent layers to pass data packets back and forth. Understanding the OCI model is crucial for addressing potential security threats and vulnerabilities that can occur at each layer. By implementing strong network security measures at each layer, you can minimize the risk of cyber attacks and keep your data safe.
 
 In the next section, we will discuss network protocols and how they play an essential role in network communication and security.
+
+- [What is OSI Model?](https://www.youtube.com/watch?v=Ilk7UXzV_Qc&ab_channel=RealPars)

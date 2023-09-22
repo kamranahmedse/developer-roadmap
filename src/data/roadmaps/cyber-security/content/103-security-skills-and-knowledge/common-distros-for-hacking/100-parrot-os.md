@@ -17,3 +17,5 @@ Parrot OS, also known as Parrot Security OS, is a powerful Linux-based distribut
 - **Reverse Engineering**: The OS also includes tools for reverse engineering, assisting security professionals in examining and analyzing software or malware designs.
 
 Overall, Parrot OS is a reliable, versatile, and user-friendly cyber security distribution, ideal for both beginners and advanced users engaged in ethical hacking, penetration testing, and digital forensics.
+
+- [Link to Download Parrot OS ](https://www.parrotsec.org/download/)

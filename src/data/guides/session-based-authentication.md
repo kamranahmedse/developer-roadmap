@@ -3,7 +3,7 @@ title: 'Session Based Authentication'
 description: 'Learn what is Session Based Authentication and how to implement it in Node.js'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Session Based Authentication - roadmap.sh'

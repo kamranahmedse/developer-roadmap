@@ -40,3 +40,5 @@ The Purple Team bridges the gap between the Blue Team and Red Team, helping to c
 - Foster a culture of continuous improvement and collaboration
 
 By investing in Blue, Red, and Purple Team efforts, organizations can achieve a more robust and resilient security posture, capable of withstanding and adapting to ever-evolving threats.
+
+- [Red Team Fundamentals (TryHackMe)](https://tryhackme.com/room/redteamfundamentals)

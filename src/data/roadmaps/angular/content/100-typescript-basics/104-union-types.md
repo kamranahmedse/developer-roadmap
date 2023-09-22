@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html)
 - [Union Type video for Beginners](https://www.youtube.com/watch?v=uxjpm4W5pCo)
+- [Union Types - typescriptlang](https://www.typescriptlang.org/docs/handbook/2/everyday-types.html#union-types)

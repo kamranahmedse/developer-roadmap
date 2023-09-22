@@ -13,12 +13,9 @@ function name(param1: type1, param2: type2, ...): returnType {
 > Function Expression Syntax:
 
 ```typescript
-function add(a: number, b: number): number {
-  return a + b;
-}
-
-let result = add(1, 2);
-console.log(result); // 3
+let name = function(param1: type1, param2: type2, ...): returnType {
+  return value;
+};
 ```
 
 Learn more from the following links:

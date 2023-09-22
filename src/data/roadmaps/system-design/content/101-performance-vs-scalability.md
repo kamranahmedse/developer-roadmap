@@ -11,3 +11,4 @@ To learn more, visit the following links:
 
 - [Scalability, Availability & Stability Patterns](https://www.slideshare.net/jboner/scalability-availability-stability-patterns/)
 - [A Word on Scalability](https://www.allthingsdistributed.com/2006/03/a_word_on_scalability.html)
+- [Performance vs Scalability](https://blog.professorbeekums.com/performance-vs-scalability/)

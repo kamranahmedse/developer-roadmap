@@ -22,3 +22,5 @@ Understanding and configuring subnet masks correctly is crucial in cybersecurity
 - Improve the overall network stability and monitoring capabilities
 
 To determine the appropriate subnet mask for different requirements, you can use various subnetting tools available online. Proper management of subnet masks is crucial for maintaining a secure, efficient, and well-functioning network.
+
+- [Wildcard mask](https://en.wikipedia.org/wiki/Wildcard_mask)

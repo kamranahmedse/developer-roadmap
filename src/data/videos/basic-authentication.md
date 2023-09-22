@@ -2,11 +2,11 @@
 title: 'Basic Authentication'
 description: 'Learn everything you need to know about basic authentication'
 duration: '5 minutes'
-isNew: true
+isNew: false
 date: 2022-10-01
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 sitemap:
   priority: 0.7

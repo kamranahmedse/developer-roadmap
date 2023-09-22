@@ -8,3 +8,5 @@ Visit the following resources to learn more:
 
 - [Zustand - Official Website](https://github.com/pmndrs/zustand)
 - [Working with Zustand](https://tkdodo.eu/blog/working-with-zustand)
+- [Zustand - Official Documentation](https://docs.pmnd.rs/zustand/getting-started/introduction)
+- [pmndrs/zustand](https://github.com/pmndrs/zustand)
