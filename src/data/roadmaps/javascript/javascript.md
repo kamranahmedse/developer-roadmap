@@ -6,7 +6,7 @@ briefTitle: 'JavaScript'
 briefDescription: 'Step by step guide to learn JavaScript in 2023'
 title: 'JavaScript Roadmap'
 description: 'Step by step guide to learn JavaScript in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

@@ -1,0 +1,10 @@
+---
+import { VerificationEmailMessage } from '../components/AuthenticationFlow/VerificationEmailMessage';
+import AccountLayout from '../layouts/AccountLayout.astro';
+---
+
+<AccountLayout title='Verify Email' noIndex={true}>
+  <section class='container py-8 sm:py-20'>
+    <VerificationEmailMessage client:load />
+  </section>
+</AccountLayout>

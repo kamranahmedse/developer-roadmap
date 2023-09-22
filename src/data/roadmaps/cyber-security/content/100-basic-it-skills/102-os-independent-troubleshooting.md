@@ -41,3 +41,6 @@ Logs are records of system events, application behavior, and user activity, whic
 - **Leverage log-analysis tools**: Utilize specialized tools or scripts to help parse, filter, and analyze large or complex log files.
 
 In conclusion, developing OS-independent troubleshooting skills allows you to effectively diagnose and resolve issues on any system. By following a structured approach, understanding common symptoms, and utilizing the appropriate tools, you can minimize downtime and maintain the security and efficiency of your organization's IT systems.
+
+- [How to identify 9 signs of Operating System.](https://bro4u.com/blog/how-to-identify-9-signs-of-operating-system)
+- [Trouble shooting guide](https://cdnsm5-ss6.sharpschool.com/userfiles/servers/server_20856499/file/teacher%20pages/lindsay%20dolezal/it%20essentials/5.6.pdf)

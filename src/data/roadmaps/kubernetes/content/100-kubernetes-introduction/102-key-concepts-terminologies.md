@@ -15,3 +15,4 @@ Learn more from the following links:
 - [Concepts of Kubernetes](https://kubernetes.io/docs/concepts/)
 - [What Is Kubernetes?](https://www.youtube.com/watch?v=QJ4fODH6DXI)
 - [Kubernetes Explained by Experts in 2 Minutes](https://youtu.be/XfBrtNZ2OCw)
+- [Understand Kubernetes terminology](https://about.gitlab.com/blog/2020/07/30/kubernetes-terminology/)

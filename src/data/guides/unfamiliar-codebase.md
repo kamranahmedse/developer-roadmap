@@ -3,7 +3,7 @@ title: 'Unfamiliar Codebase'
 description: 'Tips on getting familiar with an unfamiliar codebase'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Unfamiliar Codebase - roadmap.sh'

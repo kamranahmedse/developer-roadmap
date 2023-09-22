@@ -32,3 +32,5 @@ To ensure cyber security with permissions, follow these best practices:
 - **Implement Security Training**: Educate users about the importance of permissions and their responsibilities to maintain a secure environment.
 
 By understanding permissions and following best practices, you can enhance cyber security and minimize the risk of unauthorized access and data breaches.
+
+- [Linux File Permissions (Linux Journey)](https://linuxjourney.com/lesson/file-permissions)

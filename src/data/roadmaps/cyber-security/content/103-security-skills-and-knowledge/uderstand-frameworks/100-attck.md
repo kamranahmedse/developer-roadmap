@@ -25,3 +25,5 @@ By understanding the possible threats detailed in the ATT&CK framework and incor
 - Train your team in identifying and responding to typical attack patterns
 
 In summary, the ATT&CK framework is an invaluable resource for understanding the techniques and methods used by adversaries in real-world cyber attacks. As an author of a cyber security guide, ensuring that you are familiar with ATT&CK can help you build a more effective, comprehensive, and robust security strategy to keep your organization safe.
+
+- [Link to MITRE ATT&CK](https://attack.mitre.org/)

@@ -66,3 +66,5 @@ Input devices, such as a mouse, keyboard, or scanner, are used to interact with 
 - Output devices present information to the user.
 
 By understanding these essential computer hardware components, you can enhance your knowledge of how a computer functions and improve your IT troubleshooting and maintenance skills. Happy computing!
+
+- [What does what in your computer? Computer parts Explained](https://youtu.be/ExxFxD4OSZ0)

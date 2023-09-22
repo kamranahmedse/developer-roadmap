@@ -7,6 +7,6 @@ When CSS files are minified, the content is loaded faster and less data is sent 
 Use tools to minify your files automatically before or during your build or your deployment.
 
 - [cssnano: A modular minifier based on the PostCSS ecosystem. - cssnano](https://cssnano.co/)
-- [CSS Minfier](https://goonlinetools.com/css-minifier/)
+- [CSS Minifier](https://goonlinetools.com/css-minifier/)
 - [@neutrinojs/style-minify - npm](https://www.npmjs.com/package/@neutrinojs/style-minify)
 - [Online CSS Compressor](http://refresh-sf.com)

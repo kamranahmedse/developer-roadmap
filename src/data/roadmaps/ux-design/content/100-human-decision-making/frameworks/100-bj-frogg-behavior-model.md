@@ -1,4 +1,4 @@
-# BJ Fogg’s Behavior Model
+# BJ Fogg's Behavior Model
 
 B.J. Fogg, a renowned psychologist, and researcher at Stanford University, proposed the [Fogg Behavior Model (FBM)](https://www.behaviormodel.org/). This insightful model helps UX designers understand and influence user behavior by focusing on three core elements. These key factors are motivation, ability, and triggers.
 
@@ -9,3 +9,5 @@ B.J. Fogg, a renowned psychologist, and researcher at Stanford University, propo
 - **Triggers**: Triggers are the cues, notifications, or prompts that signal users to take an action. For an action to occur, triggers should be presented at the right time when the user has adequate motivation and ability.
 
 UX designers should strive to find the balance between these three factors to facilitate the desired user behavior. By understanding your audience and their needs, implementing clear and concise triggers, and minimizing the effort required for action, the FBM can be an effective tool for designing user-centered products.
+
+- [meaning of BJ fogg's behavior model](https://behaviormodel.org/)

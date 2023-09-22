@@ -6,5 +6,5 @@ It sets up your development environment so that you can use the latest JavaScrip
 
 Visit the following resources to learn more:
 
-- [Official Website](https://create-react-app.dev/docs/getting-started)
+- [Official Docs](https://react.dev/learn/start-a-new-react-project)
 - [Advanced: Custom Setup with Webpack](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)

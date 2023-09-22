@@ -3,7 +3,7 @@ title: 'Scaling Databases'
 description: 'Learn the ups and downs of different database scaling strategies'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Scaling Databases - roadmap.sh'

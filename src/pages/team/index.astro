@@ -1,0 +1,15 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import { TeamsList } from '../../components/TeamsList';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Update Profile'
+  noIndex={true}
+  initialLoadingMessage={'Loading teams'}
+>
+  <AccountSidebar hasDesktopSidebar={false} activePageId='team' activePageTitle='Teams'>
+    <TeamsList client:only="react" />
+  </AccountSidebar>
+</AccountLayout>

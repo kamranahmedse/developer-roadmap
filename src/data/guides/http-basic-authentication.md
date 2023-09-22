@@ -3,7 +3,7 @@ title: 'HTTP Basic Authentication'
 description: 'Learn what is HTTP Basic Authentication and how to implement it in Node.js'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'HTTP Basic Authentication - roadmap.sh'
