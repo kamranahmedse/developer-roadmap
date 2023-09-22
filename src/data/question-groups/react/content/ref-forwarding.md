@@ -1,6 +1,6 @@
 By default, each component’s DOM nodes are private. However, sometimes it’s useful to expose a DOM node to the parent—for example, to allow focusing it. To opt in, wrap your component definition into `forwardRef()`:
 
-```jsx
+```javascript
 import { forwardRef } from 'react';
 
 const MyInput = forwardRef(function MyInput(props, ref) {
@@ -16,7 +16,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 
 You will receive a `ref` as the second argument after props. Pass it to the DOM node that you want to expose:
 
-```jsx
+```javascript
 import { forwardRef } from 'react';
 
 const MyInput = forwardRef(function MyInput(props, ref) {
@@ -32,7 +32,7 @@ const MyInput = forwardRef(function MyInput(props, ref) {
 
 This lets the parent Form component access their `<input>` DOM node exposed by `MyInput`:
 
-```jsx
+```javascript
 function Form() {
   const ref = useRef(null);
 
