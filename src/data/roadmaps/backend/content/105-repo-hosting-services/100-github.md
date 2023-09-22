@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 - [Git vs. GitHub: Whats the difference?](https://www.youtube.com/watch?v=wpISo9TNjfU)
 - [Git and GitHub for Beginners](https://www.youtube.com/watch?v=RGOj5yH7evk)
 - [Git and GitHub - CS50 Beyond 2019](https://www.youtube.com/watch?v=eulnSXkhE7I)
+- [Learn Git Branching](https://learngitbranching.js.org/?locale=en_us)

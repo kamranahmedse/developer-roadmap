@@ -8,27 +8,25 @@ title: 'Frontend Developer'
 description: 'Step by step guide to becoming a modern frontend developer in 2023'
 hasTopics: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
+question:
+  title: 'What is Frontend Development?'
+  description: |
+    Front-end development is the development of visual and interactive elements of a website that users interact with directly. It's a combination of HTML, CSS and [JavaScript](/javascript), where HTML provides the structure, CSS the styling and layout, and JavaScript the dynamic behaviour and interactivity.
+    
+    ## What does a Frontend Developer do?
+    As a front-end developer, you'll be responsible for creating the user interface of a website, to ensure it looks good and is easy to use, with great focus on design principles and user experience. You'll be working closely with designers, back-end developers, and project managers to make sure the final product meets the client's needs and provides the best possible experience for the end-users.
 dimensions:
   width: 968
-  height: 2822.1
-sponsor:
-  url: 'https://info.honeycomb.io/observability-engineering-oreilly-book-2022?utm_medium=paid-sponsorship&utm_source=insight-partners&utm_campaign=plg_insightpartners_paidsponsorship'
-  title: 'Free eBook'
-  imageUrl: 'https://i.imgur.com/zS1FMNo.jpg'
-  description: 'Get this ebook to start your observability journey for quicker debugging & more time to innovate.'
-  event:
-    category: 'SponsorClick'
-    action: 'Honeycomb Redirect'
-    label: 'Frontend / Honeycomb Link'
+  height: 2587.63
 schema:
-  headline: 'Frontend Developer Roadmap'
-  description: 'Learn how to become a Frontend Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  headline: 'Frontend Developer Roadmap: What is Frontend Development?'
+  description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
   imageUrl: 'https://roadmap.sh/roadmaps/frontend.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
 seo:
-  title: 'Frontend Developer Roadmap'
-  description: 'Learn to become a modern frontend developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern frontend development.'
+  title: 'Frontend Developer Roadmap: What is Frontend Development?'
+  description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
   keywords:
     - 'javascript roadmap 2023'
     - 'frontend roadmap 2023'
@@ -56,6 +54,7 @@ seo:
     - 'frontend developer quiz'
     - 'frontend developer interview questions'
 relatedRoadmaps:
+  - 'full-stack'
   - 'javascript'
   - 'nodejs'
   - 'react'
@@ -70,4 +69,3 @@ tags:
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-

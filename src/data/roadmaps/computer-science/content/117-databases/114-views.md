@@ -5,5 +5,5 @@ Views in SQL are kind of virtual tables. A view also has rows and columns as the
 Visit the following resources to learn more:
 
 - [SQL | Views](https://www.geeksforgeeks.org/sql-views/)
-- [Datbase Views](https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-views)
+- [Database Views](https://www.ibm.com/docs/en/eamfoc/7.6.0?topic=structure-views)
 - [SQL Views - Wikipedia](<https://en.wikipedia.org/wiki/View_(SQL)>)

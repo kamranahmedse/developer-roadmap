@@ -44,3 +44,5 @@ To protect against LoLBAS-based attacks, organizations should consider taking th
 LoLBAS present a significant challenge to cyber security, as they blend in with legitimate system activities. However, overcoming this challenge is possible through a combination of proactive monitoring, system hardening, and user education.
 
 Ensure you are well prepared to identify and mitigate LoLBAS attacks by following the recommendations provided in this guide. Stay vigilant and stay secure!
+
+- [LOLBAS project](https://lolbas-project.github.io/#)

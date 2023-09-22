@@ -6,7 +6,7 @@ briefTitle: 'Computer Science'
 briefDescription: 'Curriculum with free resources for a self-taught developer.'
 title: 'Computer Science'
 description: 'Computer Science curriculum with free resources for a self-taught developer.'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

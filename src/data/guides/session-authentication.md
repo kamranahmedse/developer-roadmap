@@ -3,7 +3,7 @@ title: 'Session Based Authentication'
 description: 'Understand what is session based authentication and how it is implemented'
 author:
   name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamranahmedse'
+  url: 'https://twitter.com/kamrify'
   imageUrl: '/authors/kamranahmedse.jpeg'
 seo:
   title: 'Session Based Authentication - roadmap.sh'

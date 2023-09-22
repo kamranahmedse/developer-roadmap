@@ -27,3 +27,6 @@ A VPN is a secure tunnel that creates a private network connection over a public
 P2P is a decentralized connection type where devices connect directly with each other, without the need for a central server. P2P is commonly used for file-sharing services and can pose significant security risks if utilized without adequate security measures in place. To minimize risks, avoid using untrusted P2P services and refrain from sharing sensitive information on such networks.
 
 In summary, understanding and managing different connection types is an essential aspect of cyber security. By using secure connections and taking preventive measures, you can reduce the risk of unauthorized access, data breaches, and other malicious activities.
+
+- [Connection & Service Types Pt. 1](https://youtu.be/TzEMiD2mc-Q)
+- [Connection & Services Types Pt. 2 ](https://youtu.be/4N3M1aKzoyQ)

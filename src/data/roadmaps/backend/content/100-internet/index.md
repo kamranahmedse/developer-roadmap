@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 - [Introduction to Internet](/guides/what-is-internet)
 - [How does the Internet work?](https://www.youtube.com/watch?v=x3c1ih2NJEg)
 - [How the Internet Works in 5 Minutes](https://www.youtube.com/watch?v=7_LPdttKXPc)
+- [Computer Network | Google IT Support Certificate](https://www.youtube.com/watch?v=Z_hU2zm4_S8)

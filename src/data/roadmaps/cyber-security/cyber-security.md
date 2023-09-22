@@ -6,7 +6,7 @@ briefTitle: 'Cyber Security'
 briefDescription: 'Step by step guide to becoming a Cyber Security Expert in 2023'
 title: 'Cyber Security Expert'
 description: 'Step by step guide to becoming a Cyber Security Expert in 2023'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

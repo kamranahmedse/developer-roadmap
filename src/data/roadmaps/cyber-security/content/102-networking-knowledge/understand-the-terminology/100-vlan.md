@@ -24,3 +24,5 @@ VLANs are created and managed through network switches that support VLAN configu
 VLANs play a crucial role in network security; however, they are not foolproof. VLAN hopping and unauthorized access can still occur if proper measures, such as Private VLANs and Access Control Lists (ACLs), are not implemented to secure the network.
 
 In summary, VLANs offer a flexible and secure way to manage and segment networks based on needs and requirements. By understanding their purpose, types, and security considerations, network administrators can efficiently use VLANs to improve overall network performance and security.
+
+- [VLAN Explained](https://www.youtube.com/watch?v=jC6MJTh9fRE)

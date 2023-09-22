@@ -1,5 +1,4 @@
 import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 
 export interface BestPracticeFrontmatter {
   jsonUrl: string;
@@ -15,7 +14,6 @@ export interface BestPracticeFrontmatter {
     width: number;
     height: number;
   };
-  sponsor?: SponsorType;
   seo: {
     title: string;
     description: string;
@@ -59,7 +57,6 @@ export async function getBestPracticeIds() {
 /**
  * Gets all the best practice files
  *
- * @param tag Tag assigned to best practice
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {

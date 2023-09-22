@@ -1,0 +1,16 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import { NotificationPage } from '../../components/Notification/NotificationPage';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Notification'
+  description=''
+  noIndex={true}
+  initialLoadingMessage={'Loading notification'}
+>
+  <AccountSidebar activePageId='notification' activePageTitle='Notification'>
+    <NotificationPage client:load />
+  </AccountSidebar>
+</AccountLayout>

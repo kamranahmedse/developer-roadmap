@@ -1,11 +1,15 @@
 ---
+jsonUrl: '/jsons/roadmaps/postgresql-dba.json'
 pdfUrl: '/pdfs/roadmaps/postgresql-dba.pdf'
 order: 5
-briefTitle: 'DBA'
+briefTitle: 'PostgreSQL'
 briefDescription: 'Step by step guide to become a PostgreSQL DBA in 2023'
 title: 'PostgreSQL DBA'
 description: 'Step by step guide to becoming a modern PostgreSQL DB Administrator in 2023'
-hasTopics: false
+hasTopics: true
+dimensions:
+  width: 969
+  height: 3050.89
 seo:
   title: 'DBA Roadmap: Learn to become a database administrator with PostgreSQL'
   description: 'Community driven, articles, resources, guides, interview questions, quizzes for DevOps. Learn to become a modern DevOps engineer by following the steps, skills, resources and guides listed in this roadmap.'
@@ -29,26 +33,17 @@ seo:
     - 'database administrator quiz'
     - 'dba interview questions'
 relatedRoadmaps:
+  - 'mongodb'
   - 'backend'
   - 'devops'
 sitemap:
   priority: 1
   changefreq: 'monthly'
-sponsor:
-  url: 'https://www.singlestore.com/resources/ebook-oreilly-chapters-sql-for-data-analysis-2021-11/?utm_source=roadmap&utm_medium=referral&utm_campaign=april2023'
-  title: 'SQL for Data Analysis'
-  imageUrl: 'https://i.imgur.com/WR9fpRj.png'
-  description: 'Learn Advanced Techniques for Transforming Data into Insights using SQL with this free eBook.'
-  event:
-    category: 'SponsorClick'
-    action: 'SingleStore Redirect'
-    label: 'DBA / SingleStore Link'
 tags:
   - 'roadmap'
   - 'main-sitemap'
   - 'role-roadmap'
 ---
-
 The intent of this guide is to give you an idea about the DBA landscape and to help guide your learning if you are confused. The roadmap is highly opinionated — neither, knowing everything listed in the roadmap, nor the order of items given in the roadmap is required to be followed in order to be a DBA.
 
 ## Learn basic RDBMS terms and concepts

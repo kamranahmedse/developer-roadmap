@@ -1,8 +1,6 @@
 import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 
 export interface RoadmapFrontmatter {
-  jsonUrl: string;
   pdfUrl: string;
   order: number;
   briefTitle: string;
@@ -14,14 +12,18 @@ export interface RoadmapFrontmatter {
   isUpcoming: boolean;
   tnsBannerLink?: string;
   note?: string;
+  question?: {
+    title: string;
+    description: string;
+  };
   dimensions?: {
     width: number;
     height: number;
   };
-  sponsor?: SponsorType;
   seo: {
     title: string;
     description: string;
+    ogImageUrl?: string;
     keywords: string[];
   };
   schema?: {
