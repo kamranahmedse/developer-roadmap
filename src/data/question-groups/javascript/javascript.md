@@ -138,4 +138,9 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: What is callback hell in JavaScript?
+    answer: callback-hell.md
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
