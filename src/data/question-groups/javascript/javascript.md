@@ -158,4 +158,14 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What is Event Capturing in JavaScript?
+    answer: Event capturing is the first phase of event propagation. In this phase, the event is captured by the outermost element and propagated to the inner elements. It is also known as trickling. It is the opposite of event bubbling.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is the spread operator in JavaScript?
+    answer: spread-operator.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
