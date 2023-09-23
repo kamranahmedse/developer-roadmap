@@ -2,7 +2,7 @@ Pure components re-render only when the props passed to the component changes. F
 
 To create a pure component, you can use the `memo` function from React. It is a higher order component which takes a component as an argument and returns a new component. The new component renders only if the props change.
 
-```jsx
+```javascript
 import React, { memo } from 'react';
 
 const ChildComponent = ({ name }) => {

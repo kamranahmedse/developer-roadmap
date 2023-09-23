@@ -2,6 +2,7 @@ import { Fragment, useEffect, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import BestPracticesIcon from '../../icons/best-practices.svg';
+import ClipboardIcon from '../../icons/clipboard.svg';
 import GuideIcon from '../../icons/guide.svg';
 import HomeIcon from '../../icons/home.svg';
 import RoadmapIcon from '../../icons/roadmap.svg';
@@ -52,6 +53,13 @@ const defaultPages: PageType[] = [
     title: 'Best Practices',
     group: 'Pages',
     icon: BestPracticesIcon.src,
+  },
+  {
+    id: 'questions',
+    url: '/questions',
+    title: 'Questions',
+    group: 'Pages',
+    icon: ClipboardIcon.src,
   },
   {
     id: 'guides',
