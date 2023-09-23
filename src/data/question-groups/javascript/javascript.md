@@ -103,4 +103,14 @@ questions:
     topics:
       - 'OOP'
       - 'Advanced'
+  - question: What is IIFE in JavaScript?
+    answer: iife.md
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: What is Inheritance in JavaScript?
+    answer: inheritance.md
+    topics:
+      - 'OOP'
+      - 'Advanced'
 ---
