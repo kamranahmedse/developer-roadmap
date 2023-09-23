@@ -53,4 +53,39 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: How to implement your own Custom Event in JavaScript?
+    answer: custom-event.md
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: What is a closure in JavaScript?
+    answer: closure.md
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: Does Arrow functions have their own `this`?
+    answer: No, arrow functions do not have their own `this`. Instead, they inherit the `this` of the enclosing lexical scope.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: Does `map()` method mutate the original array?
+    answer: map-method.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: Does `forEach()` method return a new array?
+    answer: for-each-method.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: How to use `filter()` method?
+    answer: filter-method.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the difference between `map()` and `forEach()` methods?
+    answer: The `map()` method creates a new array with the results of calling a provided function on every element in the calling array. Whereas, the `forEach()` method executes a provided function once for each array element.
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
