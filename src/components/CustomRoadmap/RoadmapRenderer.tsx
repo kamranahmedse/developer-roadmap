@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Renderer } from '../../../renderer';
 import './RoadmapRenderer.css';
 import {
@@ -45,6 +45,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   const roadmapId = roadmap._id!;
 
   const toast = useToast();
+  const [hideRenderer, setHideRenderer] = useState(false);
 
   async function updateTopicStatus(
     topicId: string,
@@ -72,14 +73,6 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
       });
 
     return;
-  }
-
-  async function trackVisit() {
-    if (!isLoggedIn()) return;
-    await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
-      resourceId: roadmapId,
-      resourceType: 'roadmap',
-    });
   }
 
   const handleSvgClick = useCallback((e: MouseEvent) => {
@@ -160,18 +153,19 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
   return (
     <div className="flex grow bg-gray-50 pb-8 pt-4 sm:pt-12">
       <div className="container !max-w-[1000px]">
-        {roadmap?.nodes?.length > 0 ? (
-          <Renderer
-            ref={roadmapRef}
-            roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
-            onRendered={() => {
-              renderResourceProgress('roadmap', roadmapId).then();
-              trackVisit().then();
-            }}
-          />
-        ) : (
-          <EmptyRoadmap />
-        )}
+        <Renderer
+          ref={roadmapRef}
+          roadmap={{ nodes: roadmap?.nodes!, edges: roadmap?.edges! }}
+          onRendered={() => {
+            renderResourceProgress('roadmap', roadmapId).then(() => {
+              if (roadmap?.nodes?.length === 0) {
+                setHideRenderer(true);
+                roadmapRef?.current?.classList.add('hidden');
+              }
+            });
+          }}
+        />
+        {hideRenderer && <EmptyRoadmap />}
       </div>
     </div>
   );

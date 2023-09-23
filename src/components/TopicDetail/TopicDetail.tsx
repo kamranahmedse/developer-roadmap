@@ -26,6 +26,7 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
+import { FileText } from 'lucide-react';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
@@ -49,6 +50,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [isContributing, setIsContributing] = useState(false);
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
+  const [topicTitle, setTopicTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
@@ -160,6 +162,7 @@ export function TopicDetail(props: TopicDetailProps) {
           topicHtml = node?.getElementById('main-content')?.outerHTML || '';
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
+          setTopicTitle((response as RoadmapContentDocument)?.title || '');
           topicHtml = markdownToHtml(
             (response as RoadmapContentDocument)?.description || '',
             false
@@ -178,6 +181,8 @@ export function TopicDetail(props: TopicDetailProps) {
   if (!isActive) {
     return null;
   }
+
+  const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
 
   return (
     <div>
@@ -238,11 +243,22 @@ export function TopicDetail(props: TopicDetailProps) {
             </div>
 
             {/* Topic Content */}
-            <div
-              id="topic-content"
-              className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5"
-              dangerouslySetInnerHTML={{ __html: topicHtml }}
-            ></div>
+            {hasContent ? (
+              <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
+                <h1>{topicTitle}</h1>
+                <div
+                  id="topic-content"
+                  dangerouslySetInnerHTML={{ __html: topicHtml }}
+                />
+              </div>
+            ) : (
+              <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
+                <FileText className="h-16 w-16 text-gray-300" />
+                <p className="mt-2 text-lg font-medium text-gray-500">
+                  Empty Content
+                </p>
+              </div>
+            )}
 
             {links.length > 0 && (
               <ul className="mt-6 space-y-1">
