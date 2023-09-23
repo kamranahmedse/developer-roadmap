@@ -128,4 +128,14 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: What is a JavaScript promise?
+    answer: A Promise in JavaScript represents a value that may not be available yet but will be at some point. Promises provide a way to handle asynchronous operations, offering methods like `.then()` and `.catch()` to register callbacks for success and failure.
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: What is the purpose of the `async/await` in JavaScript?
+    answer: The `async/await`, introduced in ES2017, provides a more readable and cleaner way to handle asynchronous operations compared to callbacks and promises. An `async` function always returns a promise, and within such a function, you can use `await` to pause execution until a promise settles.
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
