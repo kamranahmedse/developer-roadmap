@@ -168,4 +168,14 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: Is Java and JavaScript the same?
+    answer: No, Java and JavaScript are distinct languages. Their similarity in name is coincidental, much like `car` and `carpet`. Java is often used for backend and mobile apps, while JavaScript powers web interactivity and backend.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is `preventDefault()` method in JavaScript?
+    answer: prevent-default.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
