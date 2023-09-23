@@ -1,15 +1,21 @@
 import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { getUrlParams } from '../../lib/browser';
-import { httpGet, type AppError, type FetchError } from '../../lib/http';
+import {
+  httpGet,
+  type AppError,
+  type FetchError,
+  httpPost,
+} from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
-import { useAuth } from '../../hooks/use-auth';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { RestrictedPage } from './RestrictedPage';
+import { isLoggedIn } from '../../lib/jwt';
+import type { InvalidPrerenderExport } from 'astro/dist/core/errors/errors-data';
 
 export const allowedLinkTypes = [
   'video',
@@ -42,6 +48,7 @@ export function hideRoadmapLoader() {
     loaderEl.remove();
   }
 }
+
 export function CustomRoadmap() {
   const { id } = getUrlParams() as { id: string };
 
@@ -70,10 +77,19 @@ export function CustomRoadmap() {
     setIsLoading(false);
   }
 
+  async function trackVisit() {
+    if (!isLoggedIn()) return;
+    await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
+      resourceId: id,
+      resourceType: 'roadmap',
+    });
+  }
+
   useEffect(() => {
     getRoadmap().finally(() => {
       hideRoadmapLoader();
     });
+    trackVisit().then();
   }, []);
 
   if (isLoading) {
