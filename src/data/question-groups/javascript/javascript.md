@@ -113,4 +113,19 @@ questions:
     topics:
       - 'OOP'
       - 'Advanced'
+  - question: What is Map in JavaScript?
+    answer: map.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is Set in JavaScript?
+    answer: set.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How you can find unique values in an array?
+    answer: find-unique-array-values.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
