@@ -88,4 +88,19 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: How to use `reduce()` method?
+    answer: reduce-method.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is the difference between `map()` and `reduce()` methods?
+    answer: The `map()` method creates a new array with the results of calling a provided function on every element in the calling array. Whereas, the `reduce()` method executes a reducer function (that you provide) on each element of the array, resulting in a single output value.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is Prototype Chain in JavaScript?
+    answer: prototype-chain.md
+    topics:
+      - 'OOP'
+      - 'Advanced'
 ---
