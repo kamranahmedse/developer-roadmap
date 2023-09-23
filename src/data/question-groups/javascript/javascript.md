@@ -143,4 +143,19 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: How to enable strict mode in JavaScript?
+    answer: To enable strict mode in JavaScript, you need to add the following line at the top of the file or function `'use strict';`.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Explain `alert()`, `prompt()`, and `confirm()` methods in JavaScript?
+    answer: alert-prompt-confirm.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: How to handle event bubbling in JavaScript?
+    answer: event-bubbling.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
