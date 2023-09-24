@@ -211,4 +211,24 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: What is Type Casting?
+    answer: Type conversion (or typecasting) means transfer of data from one data type to another. Implicit conversion happens when the compiler (for compiled languages) or runtime (for script languages like `JavaScript`) automatically converts data types.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What are Explicit binding in JavaScript?
+    answer: explicit-binding.md
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: How to run a piece of code after a specific time interval?
+    answer: set-interval.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to run a piece of code only once after a specific time?
+    answer: set-timeout.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
