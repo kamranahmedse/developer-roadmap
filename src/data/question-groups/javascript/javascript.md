@@ -231,4 +231,9 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What are Labelled Statements in JavaScript?
+    answer: labelled-statements.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
