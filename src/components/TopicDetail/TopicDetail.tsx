@@ -26,7 +26,7 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { FileText } from 'lucide-react';
+import { Ban, FileText } from 'lucide-react';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
@@ -114,6 +114,7 @@ export function TopicDetail(props: TopicDetailProps) {
 
   // Load the topic detail when the topic detail is active
   useLoadTopic(({ topicId, resourceType, resourceId, isCustomResource }) => {
+    setError('');
     setIsLoading(true);
     setIsActive(true);
     sponsorHidden.set(true);
@@ -149,6 +150,7 @@ export function TopicDetail(props: TopicDetailProps) {
       .then(({ response }) => {
         if (!response) {
           setError('Topic not found.');
+          setIsLoading(false);
           return;
         }
         let topicHtml = '';
@@ -245,7 +247,7 @@ export function TopicDetail(props: TopicDetailProps) {
             {/* Topic Content */}
             {hasContent ? (
               <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
-                <h1>{topicTitle}</h1>
+                {topicTitle && <h1>{topicTitle}</h1>}
                 <div
                   id="topic-content"
                   dangerouslySetInnerHTML={{ __html: topicHtml }}
@@ -314,6 +316,14 @@ export function TopicDetail(props: TopicDetailProps) {
               </div>
             )}
           </>
+        )}
+
+        {/* Error */}
+        {error && (
+          <div className="flex h-full flex-col items-center justify-center">
+            <Ban className="h-16 w-16 text-red-300" />
+            <p className="mt-2 text-lg font-medium text-red-500">{error}</p>
+          </div>
         )}
       </div>
       <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
