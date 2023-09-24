@@ -206,4 +206,9 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: How to make an Object immutable in JavaScript?
+    answer: immutable-object.md
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
