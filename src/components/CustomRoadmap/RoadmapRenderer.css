@@ -6,6 +6,7 @@ svg text tspan {
 
 svg > g[data-type='topic'],
 svg > g[data-type='subtopic'],
+svg > g > g[data-type='link-item'],
 svg > g[data-type='button'] {
   cursor: pointer;
 }

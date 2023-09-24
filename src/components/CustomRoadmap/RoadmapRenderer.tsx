@@ -37,7 +37,12 @@ export function getNodeDetails(
   return { nodeId, nodeType, targetGroup };
 }
 
-export const allowedClickableNodeTypes = ['topic', 'subtopic', 'button'];
+export const allowedClickableNodeTypes = [
+  'topic',
+  'subtopic',
+  'button',
+  'link-item',
+];
 
 export function RoadmapRenderer(props: RoadmapRendererProps) {
   const { roadmap } = props;
@@ -81,7 +86,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
     if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
       return;
 
-    if (nodeType === 'button') {
+    if (nodeType === 'button' || nodeType === 'link-item') {
       const link = targetGroup?.dataset?.link || '';
       const isExternalLink = link.startsWith('http');
       if (isExternalLink) {
@@ -128,7 +133,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
     if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
       return;
 
-    if (nodeType === 'button') {
+    if (nodeType === 'button' || nodeType === 'link-item') {
       return;
     }
 
