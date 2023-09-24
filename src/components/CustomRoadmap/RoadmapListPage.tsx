@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react';
 import { httpGet } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
+import {
+  CreateRoadmapModal,
+  type RoadmapDocument,
+} from './CreateRoadmap/CreateRoadmapModal';
 import { PersonalRoadmapList } from './PersonalRoadmapList';
 import type { ListFriendsResponse } from '../Friends/FriendsPage';
 import { useToast } from '../../hooks/use-toast';
@@ -35,6 +38,9 @@ const tabTypes: TabType[] = [
 export function RoadmapListPage() {
   const toast = useToast();
 
+  const [isLoading, setIsLoading] = useState(true);
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
+
   const [activeTab, setActiveTab] = useState<TabType['value']>('personal');
   const [allRoadmaps, setAllRoadmaps] = useState<GetRoadmapListResponse>({
     personalRoadmaps: [],
@@ -42,6 +48,7 @@ export function RoadmapListPage() {
   });
 
   async function loadRoadmapList() {
+    setIsLoading(true);
     const { response, error } = await httpGet<GetRoadmapListResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-user-roadmap-list`
     );
@@ -62,26 +69,43 @@ export function RoadmapListPage() {
 
   useEffect(() => {
     loadRoadmapList().finally(() => {
+      setIsLoading(false);
       pageProgressMessage.set('');
     });
   }, []);
 
+  if (isLoading) {
+    return null;
+  }
+
   return (
     <div>
-      <div className="flex items-center gap-2">
-        {tabTypes.map((tab) => {
-          return (
-            <button
-              key={tab.value}
-              className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
-                activeTab === tab.value ? ' border-gray-400 bg-gray-200 ' : ''
-              } w-full sm:w-auto`}
-              onClick={() => setActiveTab(tab.value)}
-            >
-              {tab.label}
-            </button>
-          );
-        })}
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
+
+      <div className="flex items-center justify-between mb-6">
+        <div className="flex items-center gap-2">
+          {tabTypes.map((tab) => {
+            return (
+              <button
+                key={tab.value}
+                className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
+                  activeTab === tab.value ? ' border-gray-400 bg-gray-200 ' : ''
+                } w-full sm:w-auto`}
+                onClick={() => setActiveTab(tab.value)}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
+        </div>
+        <button
+          className={`relative flex w-full items-center justify-center rounded-md border p-1 px-3 text-sm sm:w-auto`}
+          onClick={() => setIsCreatingRoadmap(true)}
+        >
+          + Create Roadmap
+        </button>
       </div>
 
       <div className="mt-4">

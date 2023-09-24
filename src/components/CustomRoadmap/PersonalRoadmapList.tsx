@@ -18,8 +18,6 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
   const { roadmaps: roadmapList, onDelete } = props;
 
   const toast = useToast();
-  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
-
   async function deleteRoadmap(roadmapId: string) {
     const { response, error } = await httpDelete<RoadmapDocument[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-delete-roadmap/${roadmapId}`
@@ -28,8 +26,11 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
     if (error || !response) {
       console.error(error);
       toast.error(error?.message || 'Something went wrong, please try again');
+
+      return;
     }
 
+    toast.success('Roadmap deleted');
     onDelete(roadmapId);
   }
 
@@ -40,6 +41,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
       pageProgressMessage.set('');
     });
   }
+
 
   if (roadmapList.length === 0) {
     return (
@@ -53,33 +55,16 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
         <p className="text-base text-gray-500">
           Create a roadmap to get started
         </p>
-
-        <button
-          className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
-          onClick={() => setIsCreatingRoadmap(true)}
-        >
-          Add roadmap
-        </button>
       </div>
     );
   }
 
   return (
     <div>
-      {isCreatingRoadmap && (
-        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
-      )}
       <div className="mb-3 flex items-center justify-between">
-        <span className={'text-gray-400'}>
+        <span className={'text-gray-400 text-sm'}>
           {roadmapList.length} custom roadmap(s)
         </span>
-        <button
-          className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-          onClick={() => setIsCreatingRoadmap(true)}
-        >
-          <Plus size={16} />
-          Create Roadmap
-        </button>
       </div>
       <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2">
         {roadmapList.map((roadmap) => {

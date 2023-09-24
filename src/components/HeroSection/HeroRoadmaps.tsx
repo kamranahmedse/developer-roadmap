@@ -3,9 +3,10 @@ import { CheckIcon } from '../ReactIcons/CheckIcon';
 import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { ResourceType } from '../../lib/resource-progress';
-import { MapIcon, Plus } from 'lucide-react';
+import { MapIcon } from 'lucide-react';
 import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
-import { showCreateRoadmapModal } from '../../stores/roadmap';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { useState } from 'react';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -88,8 +89,13 @@ export function HeroRoadmaps(props: ProgressListProps) {
     showCustomRoadmaps = false,
   } = props;
 
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
+
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
       {
         <HeroTitle
           icon={
@@ -134,7 +140,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
               You haven't created any custom roadmaps yet.{' '}
               <button
                 className="text-gray-500 underline underline-offset-2 hover:text-gray-400"
-                onClick={showCreateRoadmapModal}
+                onClick={() => setIsCreatingRoadmap(true)}
               >
                 Create one!
               </button>

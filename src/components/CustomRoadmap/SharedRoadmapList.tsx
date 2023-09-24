@@ -1,4 +1,4 @@
-import { ExternalLinkIcon, Plus } from 'lucide-react';
+import { ExternalLinkIcon, Map, Plus } from 'lucide-react';
 import RoadmapIcon from '../../icons/roadmap.svg';
 import type { GetRoadmapListResponse } from './RoadmapListPage';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
@@ -39,12 +39,11 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
   if (sharedRoadmaps.length === 0) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
-        <img
-          alt="roadmap"
-          src={RoadmapIcon.src}
-          className="mb-4 h-24 w-24 opacity-10"
-        />
+        <Map className="mb-4 h-24 w-24 opacity-10" />
         <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
+        <p className="text-base text-gray-500">
+          Roadmaps from your friends will appear here
+        </p>
       </div>
     );
   }
@@ -52,16 +51,9 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
   return (
     <div>
       <div className="mb-3 flex items-center justify-between">
-        <span className={'text-gray-400'}>
+        <span className={'text-sm text-gray-400'}>
           {sharedRoadmaps.length} shared roadmap(s)
         </span>
-        <button
-          className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-          onClick={showCreateRoadmapModal}
-        >
-          <Plus size={16} />
-          Create Roadmap
-        </button>
       </div>
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <ul>
@@ -79,18 +71,23 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
                         : '/images/default-avatar.png'
                     }
                     alt={creator.name || ''}
-                    className="h-6 w-6 rounded-full"
+                    className="h-8 w-8 rounded-full"
                   />
-                  <h3 className="truncate font-medium">{creator.name}</h3>
+                  <div>
+                    <h3 className="truncate font-medium">{creator.name}</h3>
+                    <p className="truncate text-sm text-gray-500">
+                      {group?.roadmaps?.length || 0} shared roadmap(s)
+                    </p>
+                  </div>
                 </div>
 
                 <ul className="w-full">
-                  {group.roadmaps.map((roadmap) => {
+                  {group?.roadmaps?.map((roadmap) => {
                     return (
                       <li className="relative flex w-full border-t">
                         <a
                           href={`/r?id=${roadmap._id}`}
-                          className="group inline-grid w-full grid-cols-[auto,16px] items-center justify-between gap-2 p-3 text-base font-medium leading-none text-black hover:bg-gray-100"
+                          className="group inline-grid w-full grid-cols-[auto,16px] items-center justify-between gap-2 p-3 text-base font-semibold leading-none text-black hover:bg-gray-100"
                           target={'_blank'}
                         >
                           <span className="w-full truncate">
