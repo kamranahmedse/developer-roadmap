@@ -196,4 +196,14 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: What is the difference between `Map` and `WeakMap` in JavaScript?
+    answer: The `Map` object holds key-value pairs and remembers the original insertion order of the keys. Whereas, the `WeakMap` object is a collection of key/value pairs in which the keys are weakly referenced. You can use any data type as a key or value in a `Map` whereas in `WeakMap` you can only use objects as keys. The `WeakMap` is not iterable whereas `Map` is. In `WeakMap` it holds the weak reference to the original object which means if there are no other references to an object stored in the `WeakMap`, those objects can be garbage collected.
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: Garbage collection in JavaScript?
+    answer: The JavaScript engine uses automatic garbage collection. JavaScript automatically manages memory by freeing up space used by objects no longer needed. This algorithm is called Mark and Sweep, which is performed periodically by the JavaScript engine.
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
