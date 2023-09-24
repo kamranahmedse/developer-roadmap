@@ -319,11 +319,24 @@ export function TopicDetail(props: TopicDetailProps) {
         )}
 
         {/* Error */}
-        {error && (
-          <div className="flex h-full flex-col items-center justify-center">
-            <Ban className="h-16 w-16 text-red-300" />
-            <p className="mt-2 text-lg font-medium text-red-500">{error}</p>
-          </div>
+        {!isContributing && !isLoading && error && (
+          <>
+            <button
+              type="button"
+              id="close-topic"
+              className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+              onClick={() => {
+                setIsActive(false);
+                setIsContributing(false);
+              }}
+            >
+              <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
+            </button>
+            <div className="flex h-full flex-col items-center justify-center">
+              <Ban className="h-16 w-16 text-red-500" />
+              <p className="mt-2 text-lg font-medium text-red-500">{error}</p>
+            </div>
+          </>
         )}
       </div>
       <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
