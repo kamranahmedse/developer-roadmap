@@ -221,11 +221,11 @@ export function Step1(props: Step1Props) {
               setTeamSize((e.target as HTMLSelectElement).value as any)
             }
           >
-            <option value="" selected>
+            <option value="">
               Select team size
             </option>
             {validTeamSizes.map((size) => (
-              <option value={size}>{size} people</option>
+              <option key={size} value={size}>{size} people</option>
             ))}
           </select>
         </div>

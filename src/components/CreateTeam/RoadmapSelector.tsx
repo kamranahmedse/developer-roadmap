@@ -4,10 +4,11 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
-import { HardDrive, LockIcon, PackagePlus } from 'lucide-react';
+import { HardDrive, LockIcon, Map, PackagePlus } from 'lucide-react';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 export type TeamResourceConfig = {
   resourceId: string;
@@ -32,6 +33,8 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     []
   );
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState<boolean>(false);
+
   const [error, setError] = useState<string>('');
 
   async function loadAllRoadmaps() {
@@ -194,9 +197,16 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         />
       )}
 
-      <div className="mt-3 flex items-center gap-4">
+      <div className="my-3 flex items-center gap-4">
+        {isCreatingRoadmap && (
+          <CreateRoadmapModal
+            teamId={teamId}
+            visibility={'team'}
+            onClose={() => setIsCreatingRoadmap(false)}
+          />
+        )}
         <button
-          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black font-medium text-white hover:opacity-70"
+          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black text-white hover:opacity-70"
           onClick={() => {
             setShowSelectRoadmapModal(true);
           }}
@@ -205,11 +215,13 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           Pick from our roadmaps
         </button>
 
-        <span className="text-xl font-medium">or</span>
+        <span className="text-base text-gray-400">or</span>
 
         <button
-          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black font-medium text-white hover:opacity-70"
-          onClick={showCreateRoadmapModal}
+          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black text-white hover:opacity-70"
+          onClick={() => {
+            setIsCreatingRoadmap(true);
+          }}
         >
           <PackagePlus className="h-4 w-4 stroke-[2.5]" />
           Create from scratch
@@ -217,13 +229,33 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       </div>
 
       {!teamResourceConfig.length && (
-        <p className={'mb-3 mt-2 text-base text-gray-400'}>
-          No roadmaps selected.
-        </p>
+        <div className="flex min-h-[240px] flex-col items-center justify-center rounded-lg border">
+          <Map className="mb-2 h-12 w-12 text-gray-300" />
+          <p className={'text-lg font-semibold'}>No roadmaps selected.</p>
+          <p className={'text-base text-gray-400'}>
+            Pick from{' '}
+            <span
+              onClick={() => setShowSelectRoadmapModal(true)}
+              className="cursor-pointer underline"
+            >
+              our roadmaps
+            </span>{' '}
+            or{' '}
+            <span
+              onClick={() => {
+                setIsCreatingRoadmap(true);
+              }}
+              className="cursor-pointer underline"
+            >
+              create a new one
+            </span>
+            .
+          </p>
+        </div>
       )}
 
       {teamResourceConfig.length > 0 && (
-        <div className="mt-10 grid grid-cols-1 flex-wrap gap-2.5 sm:grid-cols-3">
+        <div className="mb-3 grid grid-cols-1 flex-wrap gap-2.5 sm:grid-cols-3">
           {teamResourceConfig.map(
             ({ resourceId, removed: removedTopics, topics }) => {
               let roadmapTitle = '';

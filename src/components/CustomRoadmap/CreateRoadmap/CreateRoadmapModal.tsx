@@ -44,14 +44,14 @@ export interface RoadmapDocument {
 
 interface CreateRoadmapModalProps {
   onClose: () => void;
+  teamId?: string;
   type?: AllowedCustomRoadmapType;
   visibility?: AllowedRoadmapVisibility;
 }
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
-  const { onClose, type: defaultType = 'role', visibility: defaultVisibility = 'public' } = props;
+  const { onClose, teamId, type: defaultType = 'role', visibility: defaultVisibility = 'public' } = props;
 
-  const { teamId } = useTeamId();
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
 
@@ -108,7 +108,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     setTitle('');
     setDescription('');
     setType('role');
-    setVisibility('me');
+    setVisibility('public');
     setIsLoading(false);
 
     // This event is used to refresh the roadmap list in the dashboard
@@ -127,12 +127,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   useEffect(() => {
     titleRef.current?.focus();
   }, []);
-
-  useEffect(() => {
-    if (teamId) {
-      setVisibility('team');
-    }
-  }, [teamId]);
 
   return (
     <Modal
