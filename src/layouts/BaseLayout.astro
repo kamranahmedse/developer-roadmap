@@ -11,7 +11,6 @@ import { Toaster } from '../components/Toast';
 import { PageSponsor } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
-import { CreateRoadmapModal } from '../components/CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 export interface Props {
   title: string;
@@ -160,7 +159,7 @@ const gaPageIdentifier = Astro.url.pathname
     <slot name='login-popup'>
       <LoginPopup />
     </slot>
-    <CreateRoadmapModal client:only='react' />
+
     <Toaster client:only='react' />
     <CommandMenu client:idle />
     <PageProgress initialMessage={initialLoadingMessage} client:idle />

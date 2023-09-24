@@ -1,16 +1,18 @@
-import { useEffect, useRef, useState } from 'react';
+import {
+  type FormEvent,
+  type MouseEvent,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { Loader2 } from 'lucide-react';
-import { useStore } from '@nanostores/react';
 import { Modal } from '../../Modal';
 import { useToast } from '../../../hooks/use-toast';
 import { httpPost } from '../../../lib/http';
 import { cn } from '../../../lib/classname';
-import {
-  hideCreateRoadmapModal,
-  isCreatingRoadmap,
-} from '../../../stores/roadmap';
+import { hideCreateRoadmapModal } from '../../../stores/roadmap';
 import { allowedVisibilityLabels } from '../ShareRoadmapModal';
-import { getUrlParams } from '../../../lib/browser';
+import { useTeamId } from '../../../hooks/use-team-id';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -40,23 +42,28 @@ export interface RoadmapDocument {
   isCustomResource: boolean;
 }
 
-interface CreateRoadmapModalProps {}
+interface CreateRoadmapModalProps {
+  onClose: () => void;
+  type?: AllowedCustomRoadmapType;
+  visibility?: AllowedRoadmapVisibility;
+}
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
-  const $isCreatingRoadmap = useStore(isCreatingRoadmap);
-  const { t: teamId } = getUrlParams() as { t: string };
+  const { onClose, type: defaultType = 'role', visibility: defaultVisibility = 'public' } = props;
+
+  const { teamId } = useTeamId();
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(false);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [type, setType] = useState<AllowedCustomRoadmapType>('role');
-  const [visibility, setVisibility] = useState<AllowedRoadmapVisibility>('me');
+  const [type, setType] = useState<AllowedCustomRoadmapType>(defaultType);
+  const [visibility, setVisibility] = useState<AllowedRoadmapVisibility>(defaultVisibility);
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(
-    e: React.FormEvent<HTMLFormElement> | React.MouseEvent<HTMLButtonElement>,
+    e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement>,
     redirect: boolean = true
   ) {
     e.preventDefault();
@@ -106,20 +113,20 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
 
     // This event is used to refresh the roadmap list in the dashboard
     // after creating a new roadmap as a placeholder.
-    window.dispatchEvent(
-      new CustomEvent('custom-roadmap-created', {
-        detail: {
-          roadmapId: response?._id,
-        },
-      })
-    );
+    // window.dispatchEvent(
+    //   new CustomEvent('custom-roadmap-created', {
+    //     detail: {
+    //       roadmapId: response?._id,
+    //     },
+    //   })
+    // );
 
     hideCreateRoadmapModal();
   }
 
   useEffect(() => {
     titleRef.current?.focus();
-  }, [$isCreatingRoadmap]);
+  }, []);
 
   useEffect(() => {
     if (teamId) {
@@ -127,13 +134,9 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     }
   }, [teamId]);
 
-  if (!$isCreatingRoadmap) {
-    return null;
-  }
-
   return (
     <Modal
-      onClose={hideCreateRoadmapModal}
+      onClose={onClose}
       bodyClassName="p-4"
       wrapperClassName={cn(teamId && 'max-w-lg')}
     >
@@ -264,7 +267,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
           className={cn('mt-4 flex justify-between gap-2', teamId && 'mt-8')}
         >
           <button
-            onClick={hideCreateRoadmapModal}
+            onClick={onClose}
             type="button"
             className={cn(
               'block h-9 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100',

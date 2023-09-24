@@ -1,12 +1,13 @@
-import { useEffect, useState } from 'react';
-import { httpDelete, httpGet } from '../../lib/http';
+import { useState } from 'react';
+import { httpDelete } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import { ExternalLinkIcon, Plus } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
-import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
-import { showCreateRoadmapModal } from '../../stores/roadmap';
+import {
+  CreateRoadmapModal,
+  type RoadmapDocument,
+} from './CreateRoadmap/CreateRoadmapModal';
 import RoadmapIcon from '../../icons/roadmap.svg';
-import type { ListFriendsResponse } from '../Friends/FriendsPage';
 
 type PersonalRoadmapListType = {
   roadmaps: RoadmapDocument[];
@@ -17,7 +18,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
   const { roadmaps: roadmapList, onDelete } = props;
 
   const toast = useToast();
-  const [removingRoadmapId, setRemovingRoadmapId] = useState('');
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
   async function deleteRoadmap(roadmapId: string) {
     const { response, error } = await httpDelete<RoadmapDocument[]>(
@@ -55,7 +56,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
 
         <button
           className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
-          onClick={showCreateRoadmapModal}
+          onClick={() => setIsCreatingRoadmap(true)}
         >
           Add roadmap
         </button>
@@ -65,13 +66,16 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
 
   return (
     <div>
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
       <div className="mb-3 flex items-center justify-between">
         <span className={'text-gray-400'}>
           {roadmapList.length} custom roadmap(s)
         </span>
         <button
           className="flex items-center gap-1.5 rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-900"
-          onClick={showCreateRoadmapModal}
+          onClick={() => setIsCreatingRoadmap(true)}
         >
           <Plus size={16} />
           Create Roadmap

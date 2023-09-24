@@ -1,14 +1,15 @@
-import { useRef } from 'react';
+import { type ReactNode, useRef } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click';
 import { useKeydown } from '../hooks/use-keydown';
 import { cn } from '../lib/classname';
 
 type ModalProps = {
   onClose: () => void;
-  children: React.ReactNode;
+  children: ReactNode;
   bodyClassName?: string;
   wrapperClassName?: string;
 };
+
 export function Modal(props: ModalProps) {
   const { onClose, children, bodyClassName, wrapperClassName } = props;
 

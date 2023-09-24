@@ -42,7 +42,13 @@ const {
       {
         showCreateRoadmap && (
           <li>
-            <CreateRoadmapButton client:load className='min-h-[54px]' />
+            <CreateRoadmapButton
+              client:load
+              className='min-h-[54px]'
+              type={
+                heading.toLowerCase().indexOf('role') > -1 ? 'role' : 'skill'
+              }
+            />
           </li>
         )
       }

@@ -27,7 +27,7 @@ const sidebarLinks = [
     href: '/account/friends',
     title: 'Friends',
     id: 'friends',
-    isNew: true,
+    isNew: false,
     icon: {
       glyph: 'users',
       classes: 'h-4 w-4',
@@ -168,7 +168,6 @@ const sidebarLinks = [
                     </span>
 
                     {sidebarLink.isNew &&
-                      sidebarLink.id !== 'friends' &&
                       !isActive && (
                         <span class='relative mr-1 flex items-center'>
                           <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
