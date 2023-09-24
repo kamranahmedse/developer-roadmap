@@ -57,6 +57,7 @@ questions:
     answer: custom-event.md
     topics:
       - 'Core'
+      - 'DOM'
       - 'Advanced'
   - question: What is a closure in JavaScript?
     answer: closure.md
@@ -162,6 +163,7 @@ questions:
     answer: Event capturing is the first phase of event propagation. In this phase, the event is captured by the outermost element and propagated to the inner elements. It is also known as trickling. It is the opposite of event bubbling.
     topics:
       - 'Core'
+      - 'DOM'
       - 'Beginner'
   - question: What is the spread operator in JavaScript?
     answer: spread-operator.md
@@ -177,5 +179,21 @@ questions:
     answer: prevent-default.md
     topics:
       - 'Core'
+      - 'DOM'
       - 'Intermediate'
+  - question: What is Hoisting in JavaScript?
+    answer: hoisting.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What is DOM?
+    answer: The Document Object Model (DOM) is a programming interface for HTML and XML documents. It represents the page so that programs can change the document structure, style, and content. The DOM represents the document as nodes and objects.
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: Difference between `Promise.all()` and `Promise.allSettled()`?
+    answer: promise-all-vs-all-settled.md
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
