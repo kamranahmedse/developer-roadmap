@@ -1,7 +1,6 @@
 import { ExternalLinkIcon, Map, Plus } from 'lucide-react';
 import RoadmapIcon from '../../icons/roadmap.svg';
 import type { GetRoadmapListResponse } from './RoadmapListPage';
-import { showCreateRoadmapModal } from '../../stores/roadmap';
 
 type GroupByCreator = {
   creator: GetRoadmapListResponse['sharedRoadmaps'][number]['creator'];

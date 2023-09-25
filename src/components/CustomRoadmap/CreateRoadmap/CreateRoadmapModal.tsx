@@ -10,9 +10,7 @@ import { Modal } from '../../Modal';
 import { useToast } from '../../../hooks/use-toast';
 import { httpPost } from '../../../lib/http';
 import { cn } from '../../../lib/classname';
-import { hideCreateRoadmapModal } from '../../../stores/roadmap';
 import { allowedVisibilityLabels } from '../ShareRoadmapModal';
-import { useTeamId } from '../../../hooks/use-team-id';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -126,18 +124,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     setType('role');
     setVisibility('public');
     setIsLoading(false);
-
-    // This event is used to refresh the roadmap list in the dashboard
-    // after creating a new roadmap as a placeholder.
-    // window.dispatchEvent(
-    //   new CustomEvent('custom-roadmap-created', {
-    //     detail: {
-    //       roadmapId: response?._id,
-    //     },
-    //   })
-    // );
-
-    hideCreateRoadmapModal();
   }
 
   useEffect(() => {

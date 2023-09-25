@@ -14,9 +14,9 @@ import { $canManageCurrentTeam } from '../stores/team';
 import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
-import { showCreateRoadmapModal } from '../stores/roadmap';
 import type { AllowedRoadmapVisibility } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { Globe, LockIcon, Users } from 'lucide-react';
+import { CreateRoadmapModal } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -29,6 +29,7 @@ export function TeamRoadmaps() {
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [isPickingOptions, setIsPickingOptions] = useState(false);
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [team, setTeam] = useState<TeamDocument>();
   const [teamResources, setTeamResources] = useState<TeamResourceConfig>([]);
@@ -199,7 +200,7 @@ export function TeamRoadmaps() {
         setIsPickingOptions(false);
       }}
       showCreateCustomRoadmapModal={() => {
-        showCreateRoadmapModal();
+        setIsCreatingRoadmap(true);
         setIsPickingOptions(false);
       }}
     />
@@ -220,6 +221,19 @@ export function TeamRoadmaps() {
         if (confirm('Are you sure you want to remove this roadmap?')) {
           onRemove(roadmapId).finally(() => {});
         }
+      }}
+    />
+  );
+
+  const createRoadmapModal = isCreatingRoadmap && (
+    <CreateRoadmapModal
+      teamId={teamId}
+      onClose={() => {
+        setIsCreatingRoadmap(false);
+      }}
+      onCreated={() => {
+        loadTeamResourceConfig(teamId).finally(() => null);
+        setIsCreatingRoadmap(false);
       }}
     />
   );
@@ -257,6 +271,7 @@ export function TeamRoadmaps() {
     <div>
       {pickRoadmapOptionModal}
       {addRoadmapModal}
+      {createRoadmapModal}
       <div className="mb-3 flex items-center justify-between">
         <span className={'text-gray-400'}>
           {teamResources.length} roadmap(s) selected
