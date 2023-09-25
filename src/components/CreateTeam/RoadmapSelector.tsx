@@ -5,13 +5,14 @@ import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
 import { Map, Shapes } from 'lucide-react';
-import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import type {AllowedRoadmapVisibility, RoadmapDocument} from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
 
 export type TeamResourceConfig = {
   isCustomResource: boolean;
   title: string;
+  visibility?: AllowedRoadmapVisibility;
   resourceId: string;
   resourceType: string;
   removed: string[];

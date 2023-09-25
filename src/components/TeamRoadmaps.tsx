@@ -15,10 +15,7 @@ import { useToast } from '../hooks/use-toast';
 import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
 import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
 import { showCreateRoadmapModal } from '../stores/roadmap';
-import type {
-  AllowedRoadmapVisibility,
-  RoadmapDocument,
-} from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import type { AllowedRoadmapVisibility } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { Globe, LockIcon, Users } from 'lucide-react';
 
 export function TeamRoadmaps() {
@@ -36,9 +33,6 @@ export function TeamRoadmaps() {
   const [team, setTeam] = useState<TeamDocument>();
   const [teamResources, setTeamResources] = useState<TeamResourceConfig>([]);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
-  const [allCustomRoadmaps, setAllCustomRoadmaps] = useState<RoadmapDocument[]>(
-    []
-  );
 
   async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -60,24 +54,6 @@ export function TeamRoadmaps() {
       });
 
     setAllRoadmaps(allRoadmaps);
-    return response;
-  }
-
-  async function loadAllCustomRoadmaps() {
-    const { error, response } = await httpGet<RoadmapDocument[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-roadmap-list/${teamId}`
-    );
-
-    if (error) {
-      toast.error(error.message || 'Something went wrong. Please try again!');
-      return;
-    }
-
-    if (!response) {
-      return [];
-    }
-
-    setAllCustomRoadmaps(response);
     return response;
   }
 
@@ -117,7 +93,6 @@ export function TeamRoadmaps() {
       loadTeam(teamId),
       loadTeamResourceConfig(teamId),
       loadAllRoadmaps(),
-      loadAllCustomRoadmaps(),
     ]).finally(() => {
       pageProgressMessage.set('');
       setIsLoading(false);
@@ -193,7 +168,8 @@ export function TeamRoadmaps() {
       if (!roadmapId) {
         return;
       }
-      loadAllCustomRoadmaps().finally(() => {});
+
+      loadAllRoadmaps().finally(() => {});
       onAdd(roadmapId).finally(() => {
         pageProgressMessage.set('');
       });
@@ -310,21 +286,16 @@ export function TeamRoadmaps() {
         )}
 
         {teamResources.map((resourceConfig) => {
-          const { resourceId, removed: removedTopics, topics } = resourceConfig;
-          const customRoadmap = allCustomRoadmaps.find(
-            (roadmap) => roadmap._id === resourceId
-          );
+          const {
+            title: roadmapTitle,
+            visibility,
+            isCustomResource,
+            resourceId,
+            removed: removedTopics,
+            topics,
+          } = resourceConfig;
 
-          let roadmapTitle = '';
-          if (customRoadmap) {
-            roadmapTitle = customRoadmap.title || '...';
-          } else {
-            roadmapTitle =
-              allRoadmaps.find((roadmap) => roadmap.id === resourceId)?.title ||
-              '...';
-          }
-
-          const url = customRoadmap
+          const url = isCustomResource
             ? `/r?id=${resourceId}`
             : `/${resourceId}?t=${teamId}`;
 
@@ -333,9 +304,9 @@ export function TeamRoadmaps() {
               key={resourceId}
               className="flex flex-col items-start rounded-md border border-gray-300"
             >
-              {customRoadmap && customRoadmap.visibility === 'me' && (
-                <div className='px-3 pt-3 -mb-1'>
-                  <VisibilityLabel visibility={customRoadmap?.visibility!} />
+              {visibility === 'me' && (
+                <div className="-mb-1 px-3 pt-3">
+                  <VisibilityLabel visibility={visibility!} />
                 </div>
               )}
               <div className={'w-full flex-grow px-3 py-4'}>
@@ -353,7 +324,7 @@ export function TeamRoadmaps() {
                 </a>
                 {removedTopics.length > 0 || (topics && topics > 0) ? (
                   <span className={'text-xs leading-none text-gray-900'}>
-                    {customRoadmap ? (
+                    {isCustomResource ? (
                       <>
                         {topics} topic{topics && topics > 1 ? 's' : ''}
                       </>
@@ -366,7 +337,7 @@ export function TeamRoadmaps() {
                   </span>
                 ) : (
                   <span className="text-xs italic leading-none text-gray-400/60">
-                    {customRoadmap
+                    {isCustomResource
                       ? 'Placeholder roadmap'
                       : 'No changes made ..'}
                   </span>
@@ -381,7 +352,7 @@ export function TeamRoadmaps() {
                       'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                     }
                     onClick={() => {
-                      if (customRoadmap) {
+                      if (isCustomResource) {
                         // Open the roadmap in a new tab
                         window.open(
                           `${
