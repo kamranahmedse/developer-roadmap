@@ -288,4 +288,14 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: What is Event Loop in JavaScript?
+    answer: The Event loop is one the most important aspect to understand in JavaScript. It is the mechanism that allows JavaScript to perform non-blocking operations. It is the reason why we can use asynchronous code in JavaScript. The Event loop is a loop that constantly checks if there are any tasks that need to be executed. If there are, it will execute them. If there are no tasks to execute, it will wait for new tasks to arrive.
+    topics:
+      - 'Core'
+      - 'Advanced'
+  - question: How does Event Loop work in JavaScript?
+    answer: event-loop.md
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
