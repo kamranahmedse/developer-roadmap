@@ -293,7 +293,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
                 disabled={isLoading}
                 type="button"
                 onClick={(e) => handleSubmit(e, false)}
-                className="flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800"
+                className="flex h-9 items-center justify-center rounded-md border border-black bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:bg-black focus:bg-black hover:text-white focus:text-white"
               >
                 {isLoading ? (
                   <Loader2 size={16} className="animate-spin" />
@@ -324,7 +324,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         {teamId && (
           <>
             <p className="mt-4 hidden rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600 sm:block">
-              Preparing the roadmap might take some time, so feel free to save
+              Preparing the roadmap might take some time, feel free to save
               it as a placeholder and anyone with the role{' '}
               <strong>admin</strong> or <strong>manager</strong> can prepare it
               later.

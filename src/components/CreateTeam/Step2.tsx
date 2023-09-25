@@ -25,8 +25,8 @@ export function Step2(props: Step2Props) {
 
         <RoadmapSelector
           teamId={team._id!}
-          teamResourceConfig={teamResourceConfig}
-          setTeamResourceConfig={setTeamResourceConfig}
+          teamResources={teamResourceConfig}
+          setTeamResources={setTeamResourceConfig}
         />
       </div>
 

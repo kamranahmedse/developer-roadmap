@@ -4,11 +4,10 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
-import { HardDrive, LockIcon, Map, PackagePlus, Shapes } from 'lucide-react';
-import { showCreateRoadmapModal } from '../../stores/roadmap';
+import { LockIcon, Map, Shapes } from 'lucide-react';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { useToast } from '../../hooks/use-toast';
 
 export type TeamResourceConfig = {
   resourceId: string;
@@ -19,14 +18,15 @@ export type TeamResourceConfig = {
 
 type RoadmapSelectorProps = {
   teamId: string;
-  teamResourceConfig: TeamResourceConfig;
-  setTeamResourceConfig: (config: TeamResourceConfig) => void;
+  teamResources: TeamResourceConfig;
+  setTeamResources: (config: TeamResourceConfig) => void;
 };
 
 export function RoadmapSelector(props: RoadmapSelectorProps) {
-  const { teamId, teamResourceConfig = [], setTeamResourceConfig } = props;
+  const { teamId, teamResources = [], setTeamResources } = props;
 
   const toast = useToast();
+  const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [showSelectRoadmapModal, setShowSelectRoadmapModal] = useState(false);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
   const [allCustomRoadmaps, setAllCustomRoadmaps] = useState<RoadmapDocument[]>(
@@ -100,7 +100,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       return;
     }
 
-    setTeamResourceConfig(response);
+    setTeamResources(response);
   }
 
   async function onRemove(resourceId: string) {
@@ -134,7 +134,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       return;
     }
 
-    setTeamResourceConfig(response);
+    setTeamResources(response);
   }
 
   useEffect(() => {
@@ -161,9 +161,9 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
           resourceId={changingRoadmapId}
           resourceType={'roadmap'}
           teamId={teamId}
-          setTeamResourceConfig={setTeamResourceConfig}
+          setTeamResourceConfig={setTeamResources}
           defaultRemovedItems={
-            teamResourceConfig.find((c) => c.resourceId === changingRoadmapId)
+            teamResources.find((c) => c.resourceId === changingRoadmapId)
               ?.removed || []
           }
         />
@@ -171,7 +171,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       {showSelectRoadmapModal && (
         <SelectRoadmapModal
           onClose={() => setShowSelectRoadmapModal(false)}
-          teamResourceConfig={teamResourceConfig}
+          teamResourceConfig={teamResources}
           allRoadmaps={allRoadmaps}
           teamId={teamId}
           onRoadmapAdd={(roadmapId) => {
@@ -221,7 +221,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         </button>
       </div>
 
-      {!teamResourceConfig.length && (
+      {!teamResources.length && (
         <div className="flex min-h-[240px] flex-col items-center justify-center rounded-lg border">
           <Map className="mb-2 h-12 w-12 text-gray-300" />
           <p className={'text-lg font-semibold'}>No roadmaps selected.</p>
@@ -247,9 +247,9 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         </div>
       )}
 
-      {teamResourceConfig.length > 0 && (
+      {teamResources.length > 0 && (
         <div className="mb-3 grid grid-cols-1 flex-wrap gap-2.5 sm:grid-cols-3">
-          {teamResourceConfig.map(
+          {teamResources.map(
             ({ resourceId, removed: removedTopics, topics }) => {
               let roadmapTitle = '';
               const customRoadmap = allCustomRoadmaps.find(
@@ -267,24 +267,19 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
 
               return (
                 <div
-                  className="flex flex-col items-start rounded-md border border-gray-300"
+                  className="relative flex flex-col items-start overflow-hidden rounded-md border border-gray-300"
                   key={resourceId}
                 >
                   <div className={'w-full px-3 pb-2 pt-4'}>
                     <span className="mb-0.5 block text-base font-medium leading-none text-black">
                       {roadmapTitle}
-                      {isOnlyVisibleToMe && (
-                        <span className="ml-1.5 inline-flex items-center gap-1.5 rounded-md border border-red-300 bg-red-50 p-0.5 px-1.5 text-xs font-normal text-red-500">
-                          <LockIcon className="inline-block h-3 w-3" />
-                          Only me
-                        </span>
-                      )}
                     </span>
                     {removedTopics.length > 0 || (topics && topics > 0) ? (
-                      <span className={'text-xs leading-none text-gray-900'}>
+                      <span className={'text-xs leading-none text-gray-400'}>
                         {customRoadmap ? (
                           <>
-                            {topics} topic{topics && topics > 1 ? 's' : ''}
+                            Custom &middot; {topics} topic
+                            {topics && topics > 1 ? 's' : ''}
                           </>
                         ) : (
                           <>
@@ -296,45 +291,69 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                     ) : (
                       <span className="text-xs italic leading-none text-gray-400/60">
                         {customRoadmap
-                          ? 'Placeholder roadmap'
+                          ? 'Placeholder roadmap.'
                           : 'No changes made ..'}
                       </span>
                     )}
                   </div>
 
-                  <div className={'flex w-full justify-between p-3'}>
-                    <button
-                      type="button"
+                  {removingRoadmapId === resourceId && (
+                    <div
                       className={
-                        'text-xs text-gray-500 underline hover:text-black focus:outline-none'
+                        'flex w-full items-center justify-end p-3 text-sm'
                       }
-                      onClick={() => {
-                        if (customRoadmap) {
-                          // Open the roadmap in a new tab
-                          window.open(
-                            `${
-                              import.meta.env.PUBLIC_EDITOR_APP_URL
-                            }/${resourceId}`,
-                            '_blank'
-                          );
-                          return;
+                    >
+                      <span className="text-xs text-gray-500">
+                        Are you sure?{' '}
+                        <button
+                          onClick={() => onRemove(resourceId)}
+                          className="mx-0.5 text-red-500 underline underline-offset-1"
+                        >
+                          Yes
+                        </button>{' '}
+                        <button
+                          onClick={() => setRemovingRoadmapId('')}
+                          className="text-red-500 underline underline-offset-1"
+                        >
+                          No
+                        </button>
+                      </span>
+                    </div>
+                  )}
+                  {(!removingRoadmapId || removingRoadmapId !== resourceId) && (
+                    <div className={'flex w-full justify-between p-3'}>
+                      <button
+                        type="button"
+                        className={
+                          'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                         }
-                        setChangingRoadmapId(resourceId);
-                      }}
-                    >
-                      Customize
-                    </button>
+                        onClick={() => {
+                          if (customRoadmap) {
+                            window.open(
+                              `${
+                                import.meta.env.PUBLIC_EDITOR_APP_URL
+                              }/${resourceId}`,
+                              '_blank'
+                            );
+                            return;
+                          }
+                          setChangingRoadmapId(resourceId);
+                        }}
+                      >
+                        Customize
+                      </button>
 
-                    <button
-                      type="button"
-                      className={
-                        'text-xs text-red-500 underline hover:text-black'
-                      }
-                      onClick={() => onRemove(resourceId)}
-                    >
-                      Remove
-                    </button>
-                  </div>
+                      <button
+                        type="button"
+                        className={
+                          'text-xs text-red-500 underline hover:text-black'
+                        }
+                        onClick={() => setRemovingRoadmapId(resourceId)}
+                      >
+                        Remove
+                      </button>
+                    </div>
+                  )}
                 </div>
               );
             }
