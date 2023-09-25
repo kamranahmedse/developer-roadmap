@@ -34,9 +34,7 @@ export function TeamRoadmaps() {
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [team, setTeam] = useState<TeamDocument>();
-  const [resourceConfigs, setResourceConfigs] = useState<TeamResourceConfig>(
-    []
-  );
+  const [teamResources, setTeamResources] = useState<TeamResourceConfig>([]);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
   const [allCustomRoadmaps, setAllCustomRoadmaps] = useState<RoadmapDocument[]>(
     []
@@ -106,7 +104,7 @@ export function TeamRoadmaps() {
       return;
     }
 
-    setResourceConfigs(response);
+    setTeamResources(response);
   }
 
   useEffect(() => {
@@ -149,7 +147,7 @@ export function TeamRoadmaps() {
     }
 
     toast.success('Roadmap removed');
-    setResourceConfigs(response);
+    setTeamResources(response);
   }
 
   async function onAdd(roadmapId: string) {
@@ -177,7 +175,7 @@ export function TeamRoadmaps() {
       return;
     }
 
-    setResourceConfigs(response);
+    setTeamResources(response);
     toast.success('Roadmap added');
   }
 
@@ -234,7 +232,7 @@ export function TeamRoadmaps() {
   const addRoadmapModal = isAddingRoadmap && (
     <SelectRoadmapModal
       onClose={() => setIsAddingRoadmap(false)}
-      teamResourceConfig={resourceConfigs}
+      teamResourceConfig={teamResources}
       allRoadmaps={allRoadmaps}
       teamId={teamId}
       onRoadmapAdd={(roadmapId) => {
@@ -250,7 +248,7 @@ export function TeamRoadmaps() {
     />
   );
 
-  if (resourceConfigs.length === 0 && !isLoading) {
+  if (teamResources.length === 0 && !isLoading) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
         {pickRoadmapOptionModal}
@@ -285,7 +283,7 @@ export function TeamRoadmaps() {
       {addRoadmapModal}
       <div className="mb-3 flex items-center justify-between">
         <span className={'text-gray-400'}>
-          {resourceConfigs.length} roadmap(s) selected
+          {teamResources.length} roadmap(s) selected
         </span>
         {canManageCurrentTeam && (
           <button
@@ -303,20 +301,21 @@ export function TeamRoadmaps() {
             resourceId={changingRoadmapId}
             resourceType={'roadmap'}
             teamId={team?._id!}
-            setTeamResourceConfig={setResourceConfigs}
+            setTeamResourceConfig={setTeamResources}
             defaultRemovedItems={
-              resourceConfigs.find((c) => c.resourceId === changingRoadmapId)
+              teamResources.find((c) => c.resourceId === changingRoadmapId)
                 ?.removed || []
             }
           />
         )}
 
-        {resourceConfigs.map((resourceConfig) => {
+        {teamResources.map((resourceConfig) => {
           const { resourceId, removed: removedTopics, topics } = resourceConfig;
-          let roadmapTitle = '';
           const customRoadmap = allCustomRoadmaps.find(
             (roadmap) => roadmap._id === resourceId
           );
+
+          let roadmapTitle = '';
           if (customRoadmap) {
             roadmapTitle = customRoadmap.title || '...';
           } else {
@@ -334,17 +333,18 @@ export function TeamRoadmaps() {
               key={resourceId}
               className="flex flex-col items-start rounded-md border border-gray-300"
             >
-              <div className={'w-full px-3 py-4'}>
+              {customRoadmap && customRoadmap.visibility === 'me' && (
+                <div className='px-3 pt-3 -mb-1'>
+                  <VisibilityLabel visibility={customRoadmap?.visibility!} />
+                </div>
+              )}
+              <div className={'w-full flex-grow px-3 py-4'}>
                 <a
                   href={url}
-                  className="group mb-0.5 flex items-center gap-2 text-base font-medium leading-none text-black"
+                  className="group mb-0.5 flex items-center gap-2 text-base font-medium leading-tight text-black"
                   target={'_blank'}
                 >
                   {roadmapTitle}
-                  {customRoadmap && (
-                    <VisibilityLabel visibility={customRoadmap?.visibility!} />
-                  )}
-
                   <img
                     alt={'link'}
                     src={ExternalLinkIcon.src}
@@ -472,7 +472,7 @@ function VisibilityLabel(props: VisibilityLabelProps) {
     team: {
       color: 'bg-blue-50 text-blue-500 border-blue-300',
       icon: Users,
-      label: 'Team',
+      label: 'Team can View',
     },
     friends: {
       color: 'bg-yellow-50 text-yellow-500 border-yellow-300',
