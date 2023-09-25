@@ -236,4 +236,14 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: Difference between `defer` and `async` attributes in JavaScript?
+    answer: defer-vs-async.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: What is Increment operator in JavaScript?
+    answer: increment-operator.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
