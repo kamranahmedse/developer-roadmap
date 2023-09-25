@@ -4,7 +4,7 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
-import { HardDrive, LockIcon, Map, PackagePlus } from 'lucide-react';
+import { HardDrive, LockIcon, Map, PackagePlus, Shapes } from 'lucide-react';
 import { showCreateRoadmapModal } from '../../stores/roadmap';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
@@ -141,29 +141,17 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
     Promise.all([loadAllRoadmaps(), loadAllCustomRoadmaps()]).finally(() => {});
   }, []);
 
-  useEffect(() => {
-    function handleCustomRoadmapCreated(event: Event) {
-      const { roadmapId } = (event as CustomEvent)?.detail;
-      if (!roadmapId) {
-        return;
-      }
-      loadAllCustomRoadmaps().finally(() => {});
-      addTeamResource(roadmapId).finally(() => {
-        pageProgressMessage.set('');
-      });
+  function handleCustomRoadmapCreated(roadmap: RoadmapDocument) {
+    const { _id: roadmapId } = roadmap;
+    if (!roadmapId) {
+      return;
     }
-    window.addEventListener(
-      'custom-roadmap-created',
-      handleCustomRoadmapCreated
-    );
 
-    return () => {
-      window.removeEventListener(
-        'custom-roadmap-created',
-        handleCustomRoadmapCreated
-      );
-    };
-  }, []);
+    loadAllCustomRoadmaps().finally(() => {});
+    addTeamResource(roadmapId).finally(() => {
+      pageProgressMessage.set('');
+    });
+  }
 
   return (
     <div>
@@ -203,28 +191,33 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
             teamId={teamId}
             visibility={'team'}
             onClose={() => setIsCreatingRoadmap(false)}
+            onCreated={(roadmap: RoadmapDocument) => {
+              handleCustomRoadmapCreated(roadmap);
+              setIsCreatingRoadmap(false);
+            }}
           />
         )}
+
         <button
-          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black text-white hover:opacity-70"
+          className="flex h-10 grow items-center justify-center gap-2 rounded-md border border-black bg-white text-black transition-colors hover:bg-black hover:text-white"
           onClick={() => {
             setShowSelectRoadmapModal(true);
           }}
         >
-          <HardDrive className="h-4 w-4 stroke-[2.5]" />
+          <Map className="h-4 w-4 stroke-[2.5]" />
           Pick from our roadmaps
         </button>
 
         <span className="text-base text-gray-400">or</span>
 
         <button
-          className="flex h-10 grow items-center justify-center gap-2 rounded-md bg-black text-white hover:opacity-70"
+          className="flex h-10 grow items-center justify-center gap-2 rounded-md border border-black bg-white text-black transition-colors hover:bg-black hover:text-white"
           onClick={() => {
             setIsCreatingRoadmap(true);
           }}
         >
-          <PackagePlus className="h-4 w-4 stroke-[2.5]" />
-          Create from scratch
+          <Shapes className="h-4 w-4 stroke-[2.5]" />
+          Create Custom Roadmap
         </button>
       </div>
 

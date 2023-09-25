@@ -44,13 +44,20 @@ export interface RoadmapDocument {
 
 interface CreateRoadmapModalProps {
   onClose: () => void;
+  onCreated?: (roadmap: RoadmapDocument) => void;
   teamId?: string;
   type?: AllowedCustomRoadmapType;
   visibility?: AllowedRoadmapVisibility;
 }
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
-  const { onClose, teamId, type: defaultType = 'role', visibility: defaultVisibility = 'public' } = props;
+  const {
+    onClose,
+    onCreated,
+    teamId,
+    type: defaultType = 'role',
+    visibility: defaultVisibility = 'public',
+  } = props;
 
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
@@ -59,7 +66,8 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [type, setType] = useState<AllowedCustomRoadmapType>(defaultType);
-  const [visibility, setVisibility] = useState<AllowedRoadmapVisibility>(defaultVisibility);
+  const [visibility, setVisibility] =
+    useState<AllowedRoadmapVisibility>(defaultVisibility);
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(
@@ -105,6 +113,14 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
       }`;
       return;
     }
+
+    if (onCreated) {
+      onCreated(response as RoadmapDocument);
+      return;
+    }
+
+    onClose();
+
     setTitle('');
     setDescription('');
     setType('role');
@@ -272,7 +288,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
           </button>
 
           <div className={cn('flex items-center gap-2', !teamId && 'w-full')}>
-            {teamId && (
+            {teamId && !isLoading && (
               <button
                 disabled={isLoading}
                 type="button"
