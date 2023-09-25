@@ -298,4 +298,29 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: Is it possible to run JavaScript outside the browser?
+    answer: Yes, it is possible to run JavaScript outside the browser. There are several ways to run JavaScript outside the browser. You can use **Node.js**, **Deno**, **Bun**, or any other JavaScript runtime environment.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Is it possible to run 2 lines of code at the same time in JavaScript?
+    answer: No, it is not possible to run 2 lines of code at the same time in JavaScript. JavaScript is a single-threaded language, which means that it can only execute one line of code at a time. However, it is possible to run 2 lines of code at the same time using asynchronous code.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Is JavaScript a compiled or interpreted language?
+    answer: JavaScript is an interpreted language. This means that the JavaScript code is not compiled before it is executed. Instead, the JavaScript engine interprets the code at runtime.
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Are references copied in JavaScript?
+    answer: No, references are not copied in JavaScript. When you assign an object to a variable, the variable will contain a reference to the object. If you assign the variable to another variable, the second variable will also contain a reference to the object. If you change the object using one of the variables, the change will be visible using the other variable.
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: What are Heap and Stack in JavaScript?
+    answer: heap-and-stack.md
+    topics:
+      - 'Core'
+      - 'Advanced'
 ---
