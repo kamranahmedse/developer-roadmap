@@ -246,4 +246,29 @@ questions:
     topics:
       - 'Core'
       - 'Beginner'
+  - question: How to accept variable number of arguments in a JavaScript function?
+    answer: variable-number-of-arguments.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
+  - question: How to define multiline strings in JavaScript?
+    answer: In order to define multiline strings in JavaScript, you need to use template literals. Template literals are enclosed by the backtick (```` ` ` ````) character instead of double or single quotes. Template literals can contain placeholders. These are indicated by the dollar sign and curly braces (``` `${expression}` ```).
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Uses of `break` and `continue` statements in JavaScript?
+    answer: break-and-continue.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to parse JSON in JavaScript?
+    answer: parse-json.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to debug JavaScript code?
+    answer: debug-javascript.md
+    topics:
+      - 'Core'
+      - 'Beginner'
 ---
