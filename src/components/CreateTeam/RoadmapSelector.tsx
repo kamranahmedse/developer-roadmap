@@ -4,12 +4,14 @@ import type { PageType } from '../CommandMenu/CommandMenu';
 import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
-import { LockIcon, Map, Shapes } from 'lucide-react';
+import { Map, Shapes } from 'lucide-react';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
 
 export type TeamResourceConfig = {
+  isCustomResource: boolean;
+  title: string;
   resourceId: string;
   resourceType: string;
   removed: string[];
@@ -29,9 +31,6 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [showSelectRoadmapModal, setShowSelectRoadmapModal] = useState(false);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
-  const [allCustomRoadmaps, setAllCustomRoadmaps] = useState<RoadmapDocument[]>(
-    []
-  );
   const [changingRoadmapId, setChangingRoadmapId] = useState<string>('');
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState<boolean>(false);
 
@@ -58,24 +57,6 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       });
 
     setAllRoadmaps(allRoadmaps);
-    return response;
-  }
-
-  async function loadAllCustomRoadmaps() {
-    const { error, response } = await httpGet<RoadmapDocument[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-roadmap-list/${teamId}`
-    );
-
-    if (error) {
-      toast.error(error.message || 'Something went wrong. Please try again!');
-      return;
-    }
-
-    if (!response) {
-      return [];
-    }
-
-    setAllCustomRoadmaps(response);
     return response;
   }
 
@@ -138,7 +119,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
   }
 
   useEffect(() => {
-    Promise.all([loadAllRoadmaps(), loadAllCustomRoadmaps()]).finally(() => {});
+    loadAllRoadmaps().finally(() => {});
   }, []);
 
   function handleCustomRoadmapCreated(roadmap: RoadmapDocument) {
@@ -147,7 +128,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       return;
     }
 
-    loadAllCustomRoadmaps().finally(() => {});
+    loadAllRoadmaps().finally(() => {});
     addTeamResource(roadmapId).finally(() => {
       pageProgressMessage.set('');
     });
@@ -250,33 +231,25 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       {teamResources.length > 0 && (
         <div className="mb-3 grid grid-cols-1 flex-wrap gap-2.5 sm:grid-cols-3">
           {teamResources.map(
-            ({ resourceId, removed: removedTopics, topics }) => {
-              let roadmapTitle = '';
-              const customRoadmap = allCustomRoadmaps.find(
-                (roadmap) => roadmap._id?.toString() === resourceId
-              );
-              if (customRoadmap) {
-                roadmapTitle = customRoadmap.title || '...';
-              } else {
-                roadmapTitle =
-                  allRoadmaps.find((roadmap) => roadmap.id === resourceId)
-                    ?.title || '...';
-              }
-
-              const isOnlyVisibleToMe = customRoadmap?.visibility === 'me';
-
+            ({
+              isCustomResource,
+              title: roadmapTitle,
+              resourceId,
+              removed: removedTopics,
+              topics,
+            }) => {
               return (
                 <div
                   className="relative flex flex-col items-start overflow-hidden rounded-md border border-gray-300"
                   key={resourceId}
                 >
-                  <div className={'w-full px-3 pb-2 pt-4'}>
-                    <span className="mb-0.5 block text-base font-medium leading-none text-black">
+                  <div className={'w-full px-3 pb-2 pt-4 flex-grow'}>
+                    <span className="mb-0.5 block text-base font-medium leading-snug text-black">
                       {roadmapTitle}
                     </span>
                     {removedTopics.length > 0 || (topics && topics > 0) ? (
                       <span className={'text-xs leading-none text-gray-400'}>
-                        {customRoadmap ? (
+                        {isCustomResource ? (
                           <>
                             Custom &middot; {topics} topic
                             {topics && topics > 1 ? 's' : ''}
@@ -290,7 +263,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                       </span>
                     ) : (
                       <span className="text-xs italic leading-none text-gray-400/60">
-                        {customRoadmap
+                        {isCustomResource
                           ? 'Placeholder roadmap.'
                           : 'No changes made ..'}
                       </span>
@@ -328,7 +301,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                           'text-xs text-gray-500 underline hover:text-black focus:outline-none'
                         }
                         onClick={() => {
-                          if (customRoadmap) {
+                          if (isCustomResource) {
                             window.open(
                               `${
                                 import.meta.env.PUBLIC_EDITOR_APP_URL
