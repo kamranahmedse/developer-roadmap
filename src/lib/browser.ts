@@ -10,6 +10,10 @@ export function getUrlParams() {
 
 export function deleteUrlParam(key: string) {
   const url = new URL(window.location.href);
+  if (!url.searchParams.has(key)) {
+    return;
+  }
+
   url.searchParams.delete(key);
   window.history.pushState(null, '', url.toString());
 }
