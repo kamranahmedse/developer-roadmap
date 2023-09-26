@@ -25,9 +25,19 @@ module.exports = {
             transform: 'translateY(0)',
           },
         },
+        'fade-in': {
+          '0%': {
+            opacity: '0',
+          },
+          '100%': {
+            opacity: '1',
+          },
+        },
       },
       animation: {
-        'fade-slide-up': 'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+        'fade-slide-up':
+          'fade-slide-up 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
+        'fade-in': 'fade-in 0.2s cubic-bezier(0.4, 0, 0.2, 1) forwards',
       },
     },
     container: {
