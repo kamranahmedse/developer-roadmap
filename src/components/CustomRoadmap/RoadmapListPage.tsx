@@ -6,7 +6,6 @@ import {
   type RoadmapDocument,
 } from './CreateRoadmap/CreateRoadmapModal';
 import { PersonalRoadmapList } from './PersonalRoadmapList';
-import type { ListFriendsResponse } from '../Friends/FriendsPage';
 import { useToast } from '../../hooks/use-toast';
 import { SharedRoadmapList } from './SharedRoadmapList';
 import type { FriendshipStatus } from '../Befriend';
@@ -32,7 +31,7 @@ type TabType = {
 
 const tabTypes: TabType[] = [
   { label: 'Personal', value: 'personal' },
-  { label: 'Shared', value: 'shared' },
+  { label: 'Shared by Friends', value: 'shared' },
 ];
 
 export function RoadmapListPage() {
@@ -84,7 +83,7 @@ export function RoadmapListPage() {
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
-      <div className="flex items-center justify-between mb-6">
+      <div className="mb-6 flex items-center justify-between">
         <div className="flex items-center gap-2">
           {tabTypes.map((tab) => {
             return (
