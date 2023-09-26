@@ -39,7 +39,11 @@ export function UserProgressModal(props: ProgressMapProps) {
     userId: propUserId,
     onClose: onModalClose,
   } = props;
+
   const { s: userId = propUserId } = getUrlParams();
+  if (!userId) {
+    return null;
+  }
 
   const resourceSvgEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
@@ -97,7 +101,12 @@ export function UserProgressModal(props: ProgressMapProps) {
     deleteUrlParam('s');
     setError('');
     setShowModal(false);
-    onModalClose?.();
+
+    if (onModalClose) {
+      onModalClose();
+    } else {
+      window.location.reload();
+    }
   }
 
   useKeydown('Escape', () => {
@@ -177,7 +186,7 @@ export function UserProgressModal(props: ProgressMapProps) {
   const userLearning = progress?.learning?.length || 0;
   const userSkipped = progress?.skipped?.length || 0;
 
-  if (!userId || currentUser?.id === userId) {
+  if (currentUser?.id === userId) {
     deleteUrlParam('s');
     return null;
   }
