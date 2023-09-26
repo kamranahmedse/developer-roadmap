@@ -388,4 +388,9 @@ questions:
     topics:
       - 'Core'
       - 'Intermediate'
+  - question: How to get viewport dimensions in JavaScript?
+    answer: You can use `window.innerWidth` and `window.innerHeight` to get the viewport dimensions.
+    topics:
+      - 'DOM'
+      - 'Beginner'
 ---
