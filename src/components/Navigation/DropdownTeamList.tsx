@@ -54,13 +54,13 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
     <>
       <div className="flex items-center justify-between px-2">
         <button
-          className="mt-1 flex h-5 w-5 items-center justify-center rounded hover:bg-slate-50/10"
+          className="mt-1 flex h-5 w-5 items-center justify-center rounded text-slate-400 hover:bg-slate-50/10 hover:text-slate-50"
           onClick={() => setIsTeamsOpen(false)}
         >
           <ChevronLeft className="h-4 w-4 stroke-[2.5px]" />
         </button>
         <a
-          className="mt-1 flex h-5 w-5 items-center justify-center rounded hover:bg-slate-50/10"
+          className="mt-1 flex h-5 w-5 items-center justify-center rounded text-slate-400 hover:bg-slate-50/10 hover:text-slate-50"
           href="/team/new"
         >
           <Plus className="h-4 w-4 stroke-[2.5px]" />
