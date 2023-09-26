@@ -323,4 +323,49 @@ questions:
     topics:
       - 'Core'
       - 'Advanced'
+  - question: What is Comma Operator in JavaScript?
+    answer: comma-operator.md
+    topics:
+      - 'Operator'
+      - 'Intermediate'
+  - question: What is Nullish Coalescing Operator?
+    answer: nullish-coalescing-operator.md
+    topics:
+      - 'Operator'
+      - 'Beginner'
+  - question: What are the Logical Operators in JavaScript?
+    answer: logical-operators.md
+    topics:
+      - 'Operator'
+      - 'Beginner'
+  - question: How to create Infinite Loop in JavaScript?
+    answer: infinite-loop.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to use `do...while` loop in JavaScript?
+    answer: do-while-loop.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: Switch case statement in JavaScript?
+    answer: switch-case.md
+    topics:
+      - 'Core'
+      - 'Beginner'
+  - question: How to select DOM elements using `querySelector()` and `querySelectorAll()`?
+    answer: query-selector.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: How to create a new Element in DOM?
+    answer: create-element.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: Difference between `appendChild()` and `insertBefore()`?
+    answer: append-child-vs-insert-before.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
 ---
