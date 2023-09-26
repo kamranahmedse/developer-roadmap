@@ -368,4 +368,24 @@ questions:
     topics:
       - 'DOM'
       - 'Beginner'
+  - question: How to remove an Element from DOM?
+    answer: remove-element.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: How to scroll to the top of the page using JavaScript?
+    answer: scroll-to-top.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: How to measure dimensions of an Element?
+    answer: measure-dimensions.md
+    topics:
+      - 'DOM'
+      - 'Beginner'
+  - question: Can you merge multiple arrays in JavaScript?
+    answer: merge-arrays.md
+    topics:
+      - 'Core'
+      - 'Intermediate'
 ---
