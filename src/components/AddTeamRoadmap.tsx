@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click';
-import { OptionType, SearchSelector } from './SearchSelector';
+import { type OptionType, SearchSelector } from './SearchSelector';
 import type { PageType } from './CommandMenu/CommandMenu';
 import { CheckIcon } from './ReactIcons/CheckIcon';
 import { httpPut } from '../lib/http';
