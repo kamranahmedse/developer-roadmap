@@ -82,16 +82,9 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
               <li key={team._id} className="px-1">
                 <a
                   href={pageLink}
-                  className="block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                  className="block truncate rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
-                  <span className="min-w-0 flex-grow truncate">
-                    {team.name}
-                  </span>
-                  {pendingTeamIds.includes(team._id) && (
-                    <span className="flex rounded-md bg-red-500 px-2 text-xs text-white">
-                      Invite
-                    </span>
-                  )}
+                  {team.name}
                 </a>
               </li>
             );
