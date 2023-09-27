@@ -17,7 +17,7 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
   const toast = useToast();
   const teamList = useStore($teamList);
 
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   async function getAllTeams() {
     if (teamList.length > 0) {
@@ -42,9 +42,9 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
 
   const loadingIndicator = isLoading && (
     <div className="mt-2 flex animate-pulse flex-col gap-1 px-1 text-center">
-      <div className="h-[36px] rounded-md bg-gray-700"></div>
-      <div className="h-[36px] rounded-md bg-gray-700"></div>
-      <div className="h-[36px] rounded-md bg-gray-700"></div>
+      <div className="h-[35px] rounded-md bg-gray-700"></div>
+      <div className="h-[35px] rounded-md bg-gray-700"></div>
+      <div className="h-[35px] rounded-md bg-gray-700"></div>
     </div>
   );
 
