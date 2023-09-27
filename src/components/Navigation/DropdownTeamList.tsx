@@ -1,10 +1,11 @@
-import { ChevronLeft, Loader2, Plus } from 'lucide-react';
+import { ChevronLeft, Loader2, Plus, Users } from 'lucide-react';
 import { $teamList } from '../../stores/team';
 import { httpGet } from '../../lib/http';
 import type { TeamListResponse } from '../TeamDropdown/TeamDropdown';
 import { useToast } from '../../hooks/use-toast';
 import { useStore } from '@nanostores/react';
 import { useEffect, useState } from 'react';
+import { Spinner } from '../ReactIcons/Spinner';
 
 type DropdownTeamListProps = {
   setIsTeamsOpen: (isOpen: boolean) => void;
@@ -32,21 +33,18 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
       return;
     }
 
-    setIsLoading(false);
     $teamList.set(response);
   }
 
   useEffect(() => {
-    getAllTeams();
+    getAllTeams().finally(() => setIsLoading(false));
   }, []);
 
-  const pendingTeamIds = teamList
-    .filter((team) => team.status === 'invited')
-    .map((team) => team._id);
-
   const loadingIndicator = isLoading && (
-    <div className="flex items-center justify-center py-2">
-      <Loader2 className="h-5 w-5 animate-spin stroke-[2.5px]" />
+    <div className="mt-2 flex animate-pulse flex-col gap-1 px-1 text-center">
+      <div className="mx-2 h-[36px] rounded-md bg-gray-700"></div>
+      <div className="mx-2 h-[36px] rounded-md bg-gray-700"></div>
+      <div className="mx-2 h-[36px] rounded-md bg-gray-700"></div>
     </div>
   );
 
@@ -91,13 +89,18 @@ export function DropdownTeamList(props: DropdownTeamListProps) {
           })}
 
           {teamList.length === 0 && !isLoading && (
-            <li className="px-1">
-              <a
-                href="/team/new"
-                className="block rounded border border-dashed border-slate-600 px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
-              >
-                Create Team
-              </a>
+            <li className="mt-2 px-1 text-center">
+              <p className="block rounded px-4 py-2 text-sm font-medium text-slate-500">
+                <Users className="mx-auto mb-2 h-7 w-7 text-slate-600" />
+                No teams found.{' '}
+                <a
+                  className="font-medium text-slate-400 underline underline-offset-2 hover:text-slate-300"
+                  href="/team/new"
+                >
+                  Create a team
+                </a>
+                .
+              </p>
             </li>
           )}
         </ul>

@@ -13,7 +13,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="px-1">
         <a
           href="/account"
-          className="block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="block rounded pl-4 pr-2 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           Profile
         </a>
@@ -21,14 +21,14 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       <li className="px-1">
         <a
           href="/account/friends"
-          className="block rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="block rounded pl-4 pr-2 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           Friends
         </a>
       </li>
       <li className="px-1">
         <button
-          className="group flex w-full items-center justify-between rounded px-4 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="group flex w-full items-center justify-between rounded pl-4 pr-2 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
           onClick={() => setIsTeamsOpen(true)}
         >
           Teams
@@ -37,7 +37,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
       </li>
       <li className="px-1">
         <button
-          className="block w-full rounded px-4 py-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
+          className="block w-full rounded pl-4 pr-2 py-2 text-left text-sm font-medium text-slate-100 hover:bg-slate-700"
           type="button"
           onClick={logout}
         >

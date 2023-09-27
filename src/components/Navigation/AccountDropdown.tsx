@@ -1,12 +1,20 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import { ChevronDown } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt';
 import { AccountDropdownList } from './AccountDropdownList';
 import { DropdownTeamList } from './DropdownTeamList';
+import { useOutsideClick } from '../../hooks/use-outside-click';
 
 export function AccountDropdown() {
+  const dropdownRef = useRef(null);
+
   const [showDropdown, setShowDropdown] = useState(false);
   const [isTeamsOpen, setIsTeamsOpen] = useState(false);
+
+  useOutsideClick(dropdownRef, () => {
+    setShowDropdown(false);
+    setIsTeamsOpen(false);
+  });
 
   if (!isLoggedIn()) {
     return null;
@@ -28,7 +36,10 @@ export function AccountDropdown() {
       </button>
 
       {showDropdown && (
-        <div className="absolute right-0 z-50 mt-2 min-h-[152px] w-48 rounded-md bg-slate-800 py-1 shadow-xl">
+        <div
+          ref={dropdownRef}
+          className="absolute right-0 z-50 mt-2 min-h-[152px] w-48 rounded-md bg-slate-800 py-1 shadow-xl"
+        >
           {isTeamsOpen ? (
             <DropdownTeamList setIsTeamsOpen={setIsTeamsOpen} />
           ) : (
