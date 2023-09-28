@@ -39,7 +39,6 @@ export function TeamRoadmaps() {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
-  const [removingRoadmapId, setRemovingRoadmapId] = useState<string>('');
   const [isPickingOptions, setIsPickingOptions] = useState(false);
   const [isAddingRoadmap, setIsAddingRoadmap] = useState(false);
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
@@ -261,7 +260,10 @@ export function TeamRoadmaps() {
     (c: TeamResourceConfig[0]) => !c.isCustomResource
   );
 
-  const hasRoadmaps = customRoadmaps.length > 0 || defaultRoadmaps.length > 0 || (placeholderRoadmaps.length > 0 && canManageCurrentTeam);
+  const hasRoadmaps =
+    customRoadmaps.length > 0 ||
+    defaultRoadmaps.length > 0 ||
+    (placeholderRoadmaps.length > 0 && canManageCurrentTeam);
   if (!hasRoadmaps && !isLoading) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
@@ -415,7 +417,10 @@ export function TeamRoadmaps() {
                   <div className="mr-1 flex items-center justify-start sm:justify-end">
                     {canManageCurrentTeam && (
                       <RoadmapActionDropdown
-                        onEdit={() => {
+                        onUpdateSharing={() => {
+                          alert('TODO @ARIK');
+                        }}
+                        onCustomize={() => {
                           window.open(editorLink, '_blank');
                         }}
                         onDelete={() => {
@@ -496,7 +501,7 @@ export function TeamRoadmaps() {
                   <div className="mr-1 flex items-center justify-start sm:justify-end">
                     {canManageCurrentTeam && (
                       <RoadmapActionDropdown
-                        onEdit={() => {
+                        onCustomize={() => {
                           setChangingRoadmapId(resourceConfig.resourceId);
                         }}
                         onDelete={() => {

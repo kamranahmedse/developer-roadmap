@@ -1,15 +1,16 @@
 import MoreIcon from '../../icons/more-vertical.svg';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import {MoreVertical, PenSquare, Trash2} from 'lucide-react';
+import { Lock, MoreVertical, Shapes, Trash2 } from 'lucide-react';
 
 type RoadmapActionDropdownProps = {
   onDelete?: () => void;
-  onEdit?: () => void;
+  onCustomize?: () => void;
+  onUpdateSharing?: () => void;
 };
 
 export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
-  const { onDelete, onEdit } = props;
+  const { onDelete, onUpdateSharing, onCustomize } = props;
 
   const menuRef = useRef<HTMLDivElement>(null);
   const [isOpen, setIsOpen] = useState(false);
@@ -31,7 +32,7 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
       <button
         disabled={false}
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center sm:hidden gap-1 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none"
+        className="flex items-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none sm:hidden"
       >
         <MoreVertical size={14} />
         Options
@@ -40,20 +41,34 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-auto sm:right-0 top-full z-50 mt-1 w-[100px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+          className="align-right absolute right-auto top-full z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md sm:right-0"
         >
           <ul>
-            {onEdit && (
+            {onUpdateSharing && (
               <li>
                 <button
                   onClick={() => {
                     setIsOpen(false);
-                    onEdit();
+                    onUpdateSharing();
                   }}
                   className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
                 >
-                  <PenSquare size={14} className="mr-2" />
-                  Edit
+                  <Lock size={14} className="mr-2" />
+                  Sharing
+                </button>
+              </li>
+            )}
+            {onCustomize && (
+              <li>
+                <button
+                  onClick={() => {
+                    setIsOpen(false);
+                    onCustomize();
+                  }}
+                  className="flex w-full cursor-pointer items-center rounded p-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+                >
+                  <Shapes size={14} className="mr-2" />
+                  Customize
                 </button>
               </li>
             )}
