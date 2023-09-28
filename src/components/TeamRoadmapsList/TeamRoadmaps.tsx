@@ -16,10 +16,8 @@ import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmap
 import {
   ExternalLink,
   Globe,
-  Info,
   LockIcon,
   type LucideIcon,
-  MapIcon,
   Package,
   PackageMinus,
   PenSquare,
@@ -27,9 +25,8 @@ import {
   Users,
 } from 'lucide-react';
 import { RoadmapActionDropdown } from './RoadmapActionDropdown';
-import { Tooltip } from '../Tooltip';
-import { InfoIcon } from '../ReactIcons/InfoIcon';
 import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
+import { ShareSettings } from '../ShareSettings/ShareSettings';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -46,6 +43,9 @@ export function TeamRoadmaps() {
   const [team, setTeam] = useState<TeamDocument>();
   const [teamResources, setTeamResources] = useState<TeamResourceConfig>([]);
   const [allRoadmaps, setAllRoadmaps] = useState<PageType[]>([]);
+  const [selectedResource, setSelectedResource] = useState<
+    TeamResourceConfig[0] | null
+  >(null);
 
   async function loadAllRoadmaps() {
     const { error, response } = await httpGet<PageType[]>(`/pages.json`);
@@ -309,12 +309,38 @@ export function TeamRoadmaps() {
     />
   );
 
+  const shareSettingsModal = selectedResource && (
+    <ShareSettings
+      visibility={selectedResource.visibility!}
+      sharedTeamMemberIds={selectedResource.sharedTeamMemberIds!}
+      sharedFriendIds={selectedResource.sharedFriendIds!}
+      teamId={teamId}
+      roadmapId={selectedResource.resourceId}
+      onShareSettingsUpdate={(shareSettings) => {
+        setTeamResources((prev) => {
+          return prev.map((c) => {
+            if (c.resourceId !== selectedResource.resourceId) {
+              return c;
+            }
+
+            return {
+              ...c,
+              ...shareSettings,
+            };
+          });
+        })
+      }}
+      onClose={() => setSelectedResource(null)}
+    />
+  );
+
   return (
     <div>
       {pickRoadmapOptionModal}
       {addRoadmapModal}
       {createRoadmapModal}
       {customizeRoadmapModal}
+      {shareSettingsModal}
 
       {canManageCurrentTeam && placeholderRoadmaps.length > 0 && (
         <div className="mb-5">
@@ -346,6 +372,9 @@ export function TeamRoadmaps() {
                     {canManageCurrentTeam && (
                       <div className="flex items-center justify-start gap-2 sm:justify-end">
                         <RoadmapActionDropdown
+                          onUpdateSharing={() => {
+                            setSelectedResource(resourceConfig);
+                          }}
                           onDelete={() => {
                             if (
                               confirm(
@@ -418,7 +447,7 @@ export function TeamRoadmaps() {
                     {canManageCurrentTeam && (
                       <RoadmapActionDropdown
                         onUpdateSharing={() => {
-                          alert('TODO @ARIK');
+                          setSelectedResource(resourceConfig);
                         }}
                         onCustomize={() => {
                           window.open(editorLink, '_blank');

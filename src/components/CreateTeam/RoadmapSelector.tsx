@@ -20,6 +20,8 @@ export type TeamResourceConfig = {
   resourceType: string;
   removed: string[];
   topics?: number;
+  sharedTeamMemberIds: string[];
+  sharedFriendIds: string[];
 }[];
 
 type RoadmapSelectorProps = {

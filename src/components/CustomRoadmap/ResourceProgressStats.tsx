@@ -4,7 +4,8 @@ import type { ResourceType } from '../../lib/resource-progress';
 import { useState } from 'react';
 import { ShareRoadmapModal } from './ShareRoadmapModal';
 import { useStore } from '@nanostores/react';
-import { canManageCurrentRoadmap } from '../../stores/roadmap';
+import { canManageCurrentRoadmap, currentRoadmap } from '../../stores/roadmap';
+import { ShareSettings } from '../ShareSettings/ShareSettings';
 
 type ResourceProgressStatsProps = {
   resourceId: string;
@@ -14,13 +15,29 @@ type ResourceProgressStatsProps = {
 
 export function ResourceProgressStats(props: ResourceProgressStatsProps) {
   const { isSecondaryBanner = false } = props;
+
   const [isSharing, setIsSharing] = useState(false);
+
   const $canManageCurrentRoadmap = useStore(canManageCurrentRoadmap);
+  const $currentRoadmap = useStore(currentRoadmap);
 
   return (
     <>
-      {isSharing && $canManageCurrentRoadmap && (
-        <ShareRoadmapModal onClose={() => setIsSharing(false)} />
+      {isSharing && $canManageCurrentRoadmap && $currentRoadmap && (
+        <ShareSettings
+          visibility={$currentRoadmap?.visibility}
+          teamId={$currentRoadmap?.teamId}
+          roadmapId={$currentRoadmap?._id!}
+          sharedFriendIds={$currentRoadmap?.sharedFriendIds || []}
+          sharedTeamMemberIds={$currentRoadmap?.sharedTeamMemberIds || []}
+          onClose={() => setIsSharing(false)}
+          onShareSettingsUpdate={(settings) => {
+            currentRoadmap.set({
+              ...$currentRoadmap,
+              ...settings,
+            });
+          }}
+        />
       )}
       <div
         data-progress-nums-container

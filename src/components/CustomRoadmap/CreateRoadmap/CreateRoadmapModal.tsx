@@ -32,6 +32,8 @@ export interface RoadmapDocument {
   teamId?: string;
   type: AllowedCustomRoadmapType;
   visibility: AllowedRoadmapVisibility;
+  sharedFriendIds?: string[];
+  sharedTeamMemberIds?: string[];
   nodes: any[];
   edges: any[];
   createdAt: Date;
