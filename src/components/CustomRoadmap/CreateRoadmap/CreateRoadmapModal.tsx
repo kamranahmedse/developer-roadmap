@@ -49,13 +49,7 @@ interface CreateRoadmapModalProps {
 }
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
-  const {
-    onClose,
-    onCreated,
-    teamId,
-    type: defaultType = 'role',
-    visibility: defaultVisibility = 'public',
-  } = props;
+  const { onClose, onCreated, teamId, type: defaultType = 'role' } = props;
 
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
@@ -64,8 +58,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
   const [type, setType] = useState<AllowedCustomRoadmapType>(defaultType);
-  const [visibility, setVisibility] =
-    useState<AllowedRoadmapVisibility>(defaultVisibility);
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(
@@ -77,7 +69,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
       return;
     }
 
-    if (title.trim() === '' || isInvalidDescription || !type || !visibility) {
+    if (title.trim() === '' || isInvalidDescription || !type) {
       toast.error('Please fill all the fields');
       return;
     }
@@ -92,7 +84,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         ...(teamId && {
           teamId,
         }),
-        visibility,
         nodes: [],
         edges: [],
       }
@@ -122,7 +113,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
     setTitle('');
     setDescription('');
     setType('role');
-    setVisibility('public');
     setIsLoading(false);
   }
 
@@ -190,72 +180,30 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
           </div>
         </div>
 
-        <div
-          className={cn(
-            'mt-4 grid gap-4',
-            teamId ? 'sm:grid-cols-2' : 'sm:grid-cols-1'
-          )}
-        >
-          <div className="">
-            <label
-              htmlFor="type"
-              className="block text-xs uppercase text-gray-400"
+        <div className="">
+          <label
+            htmlFor="type"
+            className="block text-xs uppercase text-gray-400"
+          >
+            Type
+          </label>
+          <div className="mt-1">
+            <select
+              id="type"
+              name="type"
+              required
+              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+              value={type}
+              onChange={(e) =>
+                setType(e.target.value as AllowedCustomRoadmapType)
+              }
             >
-              Type
-            </label>
-            <div className="mt-1">
-              <select
-                id="type"
-                name="type"
-                required
-                className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
-                value={type}
-                onChange={(e) =>
-                  setType(e.target.value as AllowedCustomRoadmapType)
-                }
-              >
-                {allowedCustomRoadmapType.map((type) => (
-                  <option key={type} value={type}>
-                    {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
-                  </option>
-                ))}
-              </select>
-            </div>
-          </div>
-
-          <div className="">
-            <label
-              htmlFor="visibility"
-              className="block text-xs uppercase text-gray-400"
-            >
-              Visibility
-            </label>
-            <div className="mt-1">
-              <select
-                id="visibility"
-                name="visibility"
-                required
-                className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
-                value={visibility}
-                onChange={(e) =>
-                  setVisibility(e.target.value as AllowedRoadmapVisibility)
-                }
-              >
-                {allowedVisibilityLabels.map((visibility) => {
-                  if (visibility.id === 'team' && !teamId) {
-                    return null;
-                  } else if (visibility.id === 'friends' && teamId) {
-                    return null;
-                  }
-
-                  return (
-                    <option key={visibility.id} value={visibility.id}>
-                      {visibility.label}
-                    </option>
-                  );
-                })}
-              </select>
-            </div>
+              {allowedCustomRoadmapType.map((type) => (
+                <option key={type} value={type}>
+                  {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
+                </option>
+              ))}
+            </select>
           </div>
         </div>
 
@@ -279,7 +227,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
                 disabled={isLoading}
                 type="button"
                 onClick={(e) => handleSubmit(e, false)}
-                className="flex h-9 items-center justify-center rounded-md border border-black bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:bg-black focus:bg-black hover:text-white focus:text-white"
+                className="flex h-9 items-center justify-center rounded-md border border-black bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:bg-black hover:text-white focus:bg-black focus:text-white"
               >
                 {isLoading ? (
                   <Loader2 size={16} className="animate-spin" />
@@ -310,10 +258,9 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         {teamId && (
           <>
             <p className="mt-4 hidden rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600 sm:block">
-              Preparing the roadmap might take some time, feel free to save
-              it as a placeholder and anyone with the role{' '}
-              <strong>admin</strong> or <strong>manager</strong> can prepare it
-              later.
+              Preparing the roadmap might take some time, feel free to save it
+              as a placeholder and anyone with the role <strong>admin</strong>{' '}
+              or <strong>manager</strong> can prepare it later.
             </p>
             <p className="mt-4 rounded-md border border-orange-200 bg-orange-50 p-2.5 text-sm text-orange-600 sm:hidden">
               Create a placeholder now and prepare it later.
