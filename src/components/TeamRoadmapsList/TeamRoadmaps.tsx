@@ -1,23 +1,31 @@
-import { getUrlParams } from '../lib/browser';
+import { getUrlParams } from '../../lib/browser';
 import { useEffect, useState } from 'react';
-import type { TeamDocument } from './CreateTeam/CreateTeamForm';
-import type { TeamResourceConfig } from './CreateTeam/RoadmapSelector';
-import { httpGet, httpPut } from '../lib/http';
-import { pageProgressMessage } from '../stores/page';
-import ExternalLinkIcon from '../icons/external-link.svg';
-import RoadmapIcon from '../icons/roadmap.svg';
-import PlusIcon from '../icons/plus.svg';
-import type { PageType } from './CommandMenu/CommandMenu';
-import { UpdateTeamResourceModal } from './CreateTeam/UpdateTeamResourceModal';
+import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
+import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
+import { httpGet, httpPut } from '../../lib/http';
+import { pageProgressMessage } from '../../stores/page';
+import ExternalLinkIcon from '../../icons/external-link.svg';
+import RoadmapIcon from '../../icons/roadmap.svg';
+import PlusIcon from '../../icons/plus.svg';
+import type { PageType } from '../CommandMenu/CommandMenu';
+import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
 import { useStore } from '@nanostores/react';
-import { $canManageCurrentTeam } from '../stores/team';
-import { useToast } from '../hooks/use-toast';
-import { SelectRoadmapModal } from './CreateTeam/SelectRoadmapModal';
-import { PickRoadmapOptionModal } from './TeamRoadmaps/PickRoadmapOptionModal';
-import type { AllowedRoadmapVisibility } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import {Component, ExternalLink, Globe, LockIcon, PenSquare, Users} from 'lucide-react';
-import { CreateRoadmapModal } from './CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
-import { canManageCurrentRoadmap } from '../stores/roadmap';
+import { $canManageCurrentTeam, $currentTeam } from '../../stores/team';
+import { useToast } from '../../hooks/use-toast';
+import { SelectRoadmapModal } from '../CreateTeam/SelectRoadmapModal';
+import { PickRoadmapOptionModal } from '../TeamRoadmaps/PickRoadmapOptionModal';
+import type { AllowedRoadmapVisibility } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import {
+  ExternalLink,
+  Globe,
+  LockIcon,
+  type LucideIcon,
+  PenSquare,
+  Shapes,
+  Users,
+} from 'lucide-react';
+import { RoadmapActionDropdown } from './RoadmapActionDropdown';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -213,12 +221,12 @@ export function TeamRoadmaps() {
       teamResourceConfig={teamResources}
       allRoadmaps={allRoadmaps}
       teamId={teamId}
-      onRoadmapAdd={(roadmapId) => {
+      onRoadmapAdd={(roadmapId: string) => {
         onAdd(roadmapId).finally(() => {
           pageProgressMessage.set('');
         });
       }}
-      onRoadmapRemove={(roadmapId) => {
+      onRoadmapRemove={(roadmapId: string) => {
         if (confirm('Are you sure you want to remove this roadmap?')) {
           onRemove(roadmapId).finally(() => {});
         }
@@ -271,12 +279,14 @@ export function TeamRoadmaps() {
   }
 
   const placeholderRoadmaps = teamResources.filter(
-    (c) => c.isCustomResource && !c.topics
+    (c: TeamResourceConfig[0]) => c.isCustomResource && !c.topics
   );
   const customRoadmaps = teamResources.filter(
-    (c) => c.isCustomResource && c.topics
+    (c: TeamResourceConfig[0]) => c.isCustomResource && c.topics
   );
-  const defaultRoadmaps = teamResources.filter((c) => !c.isCustomResource);
+  const defaultRoadmaps = teamResources.filter(
+    (c: TeamResourceConfig[0]) => !c.isCustomResource
+  );
 
   console.log({ placeholderRoadmaps, customRoadmaps, defaultRoadmaps });
 
@@ -292,56 +302,55 @@ export function TeamRoadmaps() {
             Placeholder Roadmaps
           </h3>
           <div className="flex flex-col divide-y rounded-md border">
-            {placeholderRoadmaps.map((resourceConfig) => {
-              return (
-                <div className="flex justify-between p-2">
-                  <div>
-                    <p className="text-base font-medium leading-tight text-black">
-                      {resourceConfig.title}
-                    </p>
-                    <span className="text-xs italic leading-none text-gray-400/60">
-                      Placeholder roadmap
-                    </span>
-                  </div>
-
-                  {canManageCurrentTeam && (
-                    <div className="mr-1 flex items-center justify-between gap-3">
-                      <button
-                        type="button"
-                        className={
-                          'text-xs text-red-500 underline hover:text-black focus:outline-none'
-                        }
-                        onClick={() => {
-                          if (
-                            confirm(
-                              'Are you sure you want to remove this roadmap?'
-                            )
-                          ) {
-                            onRemove(resourceConfig.resourceId).finally(
-                              () => {}
-                            );
-                          }
-                        }}
-                      >
-                        Remove
-                      </button>
-                      <a
-                        href={`${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
-                          resourceConfig.resourceId
-                        }`}
-                        className={
-                          'flex gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
-                        }
-                        target={'_blank'}
-                      >
-                        <PenSquare className="inline-block h-4 w-4" />
-                        Create Roadmap
-                      </a>
+            {placeholderRoadmaps.map(
+              (resourceConfig: TeamResourceConfig[0]) => {
+                return (
+                  <div
+                    className="grid grid-cols-1 sm:grid-cols-[auto_173px] p-2.5"
+                    key={resourceConfig.resourceId}
+                  >
+                    <div className='grid mb-3 sm:mb-0'>
+                      <p className="text-base font-medium leading-tight text-black truncate mb-1.5">
+                        {resourceConfig.title}
+                      </p>
+                      <span className="text-xs italic leading-none text-gray-400/60">
+                        Placeholder roadmap
+                      </span>
                     </div>
-                  )}
-                </div>
-              );
-            })}
+
+                    {canManageCurrentTeam && (
+                      <div className="flex items-center justify-start sm:justify-end gap-2">
+                        <RoadmapActionDropdown
+                          onDelete={() => {
+                            if (
+                              confirm(
+                                'Are you sure you want to remove this roadmap?'
+                              )
+                            ) {
+                              onRemove(resourceConfig.resourceId).finally(
+                                () => {}
+                              );
+                            }
+                          }}
+                        />
+                        <a
+                          href={`${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
+                            resourceConfig.resourceId
+                          }`}
+                          className={
+                            'flex gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
+                          }
+                          target={'_blank'}
+                        >
+                          <PenSquare className="inline-block h-4 w-4" />
+                          Create Roadmap
+                        </a>
+                      </div>
+                    )}
+                  </div>
+                );
+              }
+            )}
           </div>
         </div>
       )}
@@ -352,54 +361,56 @@ export function TeamRoadmaps() {
             Custom Roadmaps
           </h3>
           <div className="flex flex-col divide-y rounded-md border">
-            {customRoadmaps.map((resourceConfig) => {
+            {customRoadmaps.map((resourceConfig: TeamResourceConfig[0]) => {
+              const editorLink = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
+                resourceConfig.resourceId
+              }`;
+
               return (
-                <div className="flex justify-between p-2">
-                  <div>
-                    <p className="text-base font-medium leading-tight text-black">
+                <div className="grid grid-cols-1 sm:grid-cols-[auto_110px] p-2.5">
+                  <div className="grid grid-cols-1 mb-3 sm:mb-0">
+                    <p className="mb-1.5 truncate text-base font-medium leading-tight text-black">
                       {resourceConfig.title}
                     </p>
-                    <span className="text-xs leading-none text-gray-400">
-                      <Component size={16} className="inline-block h-4 w-4" />
-                      {resourceConfig.topics} topic &middot; <VisibilityBadge visibility={resourceConfig.visibility!} />
+                    <span className="flex items-center text-xs leading-none text-gray-400">
+                      <VisibilityBadge
+                        visibility={resourceConfig.visibility!}
+                      />
+                      <span className="mx-2 font-semibold">&middot;</span>
+                      <Shapes size={16} className="mr-1 inline-block h-4 w-4" />
+                      {resourceConfig.topics} topic
                     </span>
                   </div>
-                  <div className="mr-1 flex items-center justify-between gap-3">
-                    <button
-                      type="button"
-                      className={
-                        'text-xs text-red-500 underline hover:text-black focus:outline-none'
-                      }
-                      onClick={() => {
-                        if (
-                          confirm(
-                            'Are you sure you want to remove this roadmap?'
-                          )
-                        ) {
-                          onRemove(resourceConfig.resourceId).finally(() => {});
-                        }
-                      }}
-                    >
-                      Remove
-                    </button>
+                  <div className="mr-1 flex items-center justify-start sm:justify-end">
+                    {canManageCurrentTeam && (
+                      <RoadmapActionDropdown
+                        onEdit={() => {
+                          window.open(editorLink, '_blank');
+                        }}
+                        onDelete={() => {
+                          if (
+                            confirm(
+                              'Are you sure you want to remove this roadmap?'
+                            )
+                          ) {
+                            onRemove(resourceConfig.resourceId).finally(
+                              () => {}
+                            );
+                          }
+                        }}
+                      />
+                    )}
 
-                    <button
-                      type="button"
+                    <a
+                      href={`/r?id=${resourceConfig.resourceId}`}
                       className={
-                        'flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
+                        'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
                       }
-                      onClick={() => {
-                        window.open(
-                          `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
-                            resourceConfig.resourceId
-                          }`,
-                          '_blank'
-                        );
-                      }}
+                      target={'_blank'}
                     >
                       <ExternalLink className="inline-block h-4 w-4" />
                       Visit
-                    </button>
+                    </a>
                   </div>
                 </div>
               );
@@ -430,13 +441,14 @@ export function TeamRoadmaps() {
             teamId={team?._id!}
             setTeamResourceConfig={setTeamResources}
             defaultRemovedItems={
-              teamResources.find((c) => c.resourceId === changingRoadmapId)
-                ?.removed || []
+              teamResources.find(
+                (c: TeamResourceConfig[0]) => c.resourceId === changingRoadmapId
+              )?.removed || []
             }
           />
         )}
 
-        {teamResources.map((resourceConfig) => {
+        {teamResources.map((resourceConfig: TeamResourceConfig[0]) => {
           const {
             title: roadmapTitle,
             visibility,
@@ -579,37 +591,39 @@ type VisibilityLabelProps = {
   visibility: AllowedRoadmapVisibility;
 };
 
-const visibilityDetails = {
+const visibilityDetails: Record<
+  AllowedRoadmapVisibility,
+  {
+    icon: LucideIcon;
+    label: string;
+  }
+> = {
   public: {
-    color: 'bg-green-50 text-green-500 border-green-300',
     icon: Globe,
     label: 'Public',
   },
   me: {
-    color: 'bg-red-50 text-red-500 border-red-300',
     icon: LockIcon,
     label: 'Only me',
   },
   team: {
-    color: 'bg-blue-50 text-blue-500 border-blue-300',
     icon: Users,
     label: 'Team can View',
   },
   friends: {
-    color: 'bg-yellow-50 text-yellow-500 border-yellow-300',
     icon: Users,
     label: 'Friends',
   },
-}
+} as const;
 
 function VisibilityBadge(props: VisibilityLabelProps) {
   const { visibility } = props;
 
-  const { label, icon: Icon, color } = visibilityDetails[visibility];
+  const { label, icon: Icon } = visibilityDetails[visibility];
 
   return (
     <span
-      className={`inline-flex items-center gap-1.5 whitespace-nowrap rounded-md border p-0.5 px-1.5 text-xs font-normal ${color}`}
+      className={`inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-normal`}
     >
       <Icon className="inline-block h-3 w-3" />
       {label}
