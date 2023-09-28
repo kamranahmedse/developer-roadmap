@@ -24,7 +24,7 @@ export function PickRoadmapOptionModal(props: PickRoadmapOptionModalProps) {
           onClick={showDefaultRoadmapsModal}
         >
           <Map className="mr-2 inline-block" size={20} />
-          Use a Default Roadmap      
+          Use a Default Roadmap
         </button>
         <button
           className="text-base flex items-center rounded-md border border-gray-300 p-2 px-4 text-left font-medium hover:bg-gray-100"
