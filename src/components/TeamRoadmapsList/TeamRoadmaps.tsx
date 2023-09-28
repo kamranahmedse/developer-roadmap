@@ -19,6 +19,7 @@ import {
   Info,
   LockIcon,
   type LucideIcon,
+  MapIcon,
   Package,
   PackageMinus,
   PenSquare,
@@ -28,7 +29,7 @@ import {
 import { RoadmapActionDropdown } from './RoadmapActionDropdown';
 import { Tooltip } from '../Tooltip';
 import { InfoIcon } from '../ReactIcons/InfoIcon';
-import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal.tsx';
+import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -250,7 +251,18 @@ export function TeamRoadmaps() {
     />
   );
 
-  if (teamResources.length === 0 && !isLoading) {
+  const placeholderRoadmaps = teamResources.filter(
+    (c: TeamResourceConfig[0]) => c.isCustomResource && !c.topics
+  );
+  const customRoadmaps = teamResources.filter(
+    (c: TeamResourceConfig[0]) => c.isCustomResource && c.topics
+  );
+  const defaultRoadmaps = teamResources.filter(
+    (c: TeamResourceConfig[0]) => !c.isCustomResource
+  );
+
+  const hasRoadmaps = customRoadmaps.length > 0 || defaultRoadmaps.length > 0 || (placeholderRoadmaps.length > 0 && canManageCurrentTeam);
+  if (!hasRoadmaps && !isLoading) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
         {pickRoadmapOptionModal}
@@ -281,16 +293,6 @@ export function TeamRoadmaps() {
     );
   }
 
-  const placeholderRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => c.isCustomResource && !c.topics
-  );
-  const customRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => c.isCustomResource && c.topics
-  );
-  const defaultRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => !c.isCustomResource
-  );
-
   const customizeRoadmapModal = changingRoadmapId && (
     <UpdateTeamResourceModal
       onClose={() => setChangingRoadmapId('')}
@@ -312,17 +314,16 @@ export function TeamRoadmaps() {
       {createRoadmapModal}
       {customizeRoadmapModal}
 
-      {placeholderRoadmaps.length > 0 && (
+      {canManageCurrentTeam && placeholderRoadmaps.length > 0 && (
         <div className="mb-5">
-          <h3 className="mb-2 flex items-center text-xs uppercase text-gray-400">
-            Placeholder Roadmaps
-            <span className="group relative ml-2 normal-case">
-              <Info size={16} className="inline-block h-4 w-4" />
-              <Tooltip position="top-center">
-                Roadmaps that you can customize and add to your team.{' '}
-              </Tooltip>
-            </span>
-          </h3>
+          <div className="mb-2 flex items-center justify-between">
+            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+              <span className="flex">Placeholder Roadmaps</span>
+              <span className="normal-case">
+                Total {placeholderRoadmaps.length} roadmap(s)
+              </span>
+            </h3>
+          </div>
           <div className="flex flex-col divide-y rounded-md border">
             {placeholderRoadmaps.map(
               (resourceConfig: TeamResourceConfig[0]) => {
@@ -379,9 +380,14 @@ export function TeamRoadmaps() {
 
       {customRoadmaps.length > 0 && (
         <div className="mb-5">
-          <h3 className="mb-2 text-xs uppercase text-gray-400">
-            Custom Roadmaps
-          </h3>
+          <div className="mb-2 flex items-center justify-between">
+            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+              <span className="flex">Custom Roadmaps</span>
+              <span className="normal-case">
+                Total {customRoadmaps.length} roadmap(s)
+              </span>
+            </h3>
+          </div>
           <div className="flex flex-col divide-y rounded-md border">
             {customRoadmaps.map((resourceConfig: TeamResourceConfig[0]) => {
               const editorLink = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
@@ -446,16 +452,14 @@ export function TeamRoadmaps() {
 
       {defaultRoadmaps.length > 0 && (
         <div>
-          <h3 className="mb-2 flex items-center text-xs uppercase text-gray-400">
-            Default Roadmaps
-            <span className="group relative normal-case">
-              <Info className="ml-1.5 h-4 w-4 stroke-[2px]" />
-              <Tooltip position="top-center">
-                Roadmaps created by{' '}
-                <span className="strong text-purple-300">roadmap.sh</span> team
-              </Tooltip>
-            </span>
-          </h3>
+          <div className="mb-2 flex items-center justify-between">
+            <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+              <span className="flex">Default Roadmaps</span>
+              <span className="normal-case">
+                Total {defaultRoadmaps.length} roadmap(s)
+              </span>
+            </h3>
+          </div>
           <div className="flex flex-col divide-y rounded-md border">
             {defaultRoadmaps.map((resourceConfig: TeamResourceConfig[0]) => {
               return (
@@ -524,6 +528,17 @@ export function TeamRoadmaps() {
               );
             })}
           </div>
+        </div>
+      )}
+
+      {canManageCurrentTeam && (
+        <div className="mt-5">
+          <button
+            className="block w-full rounded-md border border-dashed border-gray-300 py-2 text-sm transition-colors hover:border-gray-600 hover:bg-gray-50 focus:outline-0"
+            onClick={() => setIsPickingOptions(true)}
+          >
+            + Add new Roadmap
+          </button>
         </div>
       )}
     </div>
