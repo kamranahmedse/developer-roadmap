@@ -5,7 +5,10 @@ import { pageProgressMessage } from '../../stores/page';
 import { UpdateTeamResourceModal } from './UpdateTeamResourceModal';
 import { SelectRoadmapModal } from './SelectRoadmapModal';
 import { Map, Shapes } from 'lucide-react';
-import type {AllowedRoadmapVisibility, RoadmapDocument} from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import type {
+  AllowedRoadmapVisibility,
+  RoadmapDocument,
+} from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { useToast } from '../../hooks/use-toast';
 
@@ -171,7 +174,6 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         {isCreatingRoadmap && (
           <CreateRoadmapModal
             teamId={teamId}
-            visibility={'team'}
             onClose={() => setIsCreatingRoadmap(false)}
             onCreated={(roadmap: RoadmapDocument) => {
               handleCustomRoadmapCreated(roadmap);
@@ -244,7 +246,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   className="relative flex flex-col items-start overflow-hidden rounded-md border border-gray-300"
                   key={resourceId}
                 >
-                  <div className={'w-full px-3 pb-2 pt-4 flex-grow'}>
+                  <div className={'w-full flex-grow px-3 pb-2 pt-4'}>
                     <span className="mb-0.5 block text-base font-medium leading-snug text-black">
                       {roadmapTitle}
                     </span>

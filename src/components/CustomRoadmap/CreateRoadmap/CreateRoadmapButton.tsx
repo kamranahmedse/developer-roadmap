@@ -12,11 +12,10 @@ import { useState } from 'react';
 type CreateRoadmapButtonProps = {
   className?: string;
   type?: AllowedCustomRoadmapType;
-  visibility?: AllowedRoadmapVisibility;
 };
 
 export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
-  const { className, type, visibility } = props;
+  const { className, type } = props;
 
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
@@ -33,7 +32,6 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
       {isCreatingRoadmap && (
         <CreateRoadmapModal
           type={type}
-          visibility={visibility}
           onClose={() => {
             setIsCreatingRoadmap(false);
           }}
