@@ -59,7 +59,7 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
           {groupByCreator.map((group) => {
             const creator = group.creator;
             return (
-              <li className="flex flex-col items-start overflow-hidden rounded-md border border-gray-300">
+              <li key={creator.id} className="flex flex-col items-start overflow-hidden rounded-md border border-gray-300">
                 <div className="relative flex w-full items-center gap-3 p-3">
                   <img
                     src={
@@ -83,7 +83,7 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
                 <ul className="w-full">
                   {group?.roadmaps?.map((roadmap) => {
                     return (
-                      <li className="relative flex w-full border-t">
+                      <li key={roadmap._id} className="relative flex w-full border-t">
                         <a
                           href={`/r?id=${roadmap._id}`}
                           className="group inline-grid w-full grid-cols-[auto,16px] items-center justify-between gap-2 py-2 px-3 text-sm text-gray-600 hover:bg-gray-100 hover:text-black transition-colors"

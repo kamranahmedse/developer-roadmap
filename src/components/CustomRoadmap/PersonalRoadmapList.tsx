@@ -1,12 +1,9 @@
 import { useState } from 'react';
 import { httpDelete } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import { ExternalLinkIcon, Plus } from 'lucide-react';
+import { ExternalLinkIcon } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
-import {
-  CreateRoadmapModal,
-  type RoadmapDocument,
-} from './CreateRoadmap/CreateRoadmapModal';
+import { type RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import RoadmapIcon from '../../icons/roadmap.svg';
 
 type PersonalRoadmapListType = {
