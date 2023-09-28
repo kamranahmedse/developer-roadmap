@@ -10,3 +10,5 @@ Visit the following resources to learn more:
 - [NPM tutorial for Beginners](https://www.youtube.com/watch?v=2V1UUhBJ62Y)
 - [NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)
 - [Yarn Crash Course](https://www.youtube.com/watch?v=g9_6KmiBISk)
+- [BUN 1.0](https://bun.sh/)
+- [BUN Crash Course](https://www.youtube.com/watch?v=U4JVw8K19uY&t=190s)
