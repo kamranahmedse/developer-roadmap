@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Users } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { UserItem } from './UserItem';
-import { httpGet } from '../../lib/http';
+import { Users2 } from 'lucide-react';
+import {httpGet} from "../../lib/http";
 
 export type FriendshipStatus =
   | 'none'
@@ -34,7 +34,6 @@ export type ListFriendsResponse = {
 }[];
 
 type ShareFriendListProps = {
-  defaultSharedFriendIds: string[];
   setFriends: (friends: ListFriendsResponse) => void;
   friends: ListFriendsResponse;
   sharedFriendIds: string[];
@@ -42,13 +41,7 @@ type ShareFriendListProps = {
 };
 
 export function ShareFriendList(props: ShareFriendListProps) {
-  const {
-    setFriends,
-    friends,
-    sharedFriendIds,
-    setSharedFriendIds,
-    defaultSharedFriendIds,
-  } = props;
+  const { setFriends, friends, sharedFriendIds, setSharedFriendIds } = props;
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -68,12 +61,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
       return;
     }
 
-    setSharedFriendIds(
-      defaultSharedFriendIds.length > 0
-        ? defaultSharedFriendIds
-        : response.map((friend) => friend.userId?.toString()!)
-    );
-    setFriends(response);
+    setFriends(response.filter((friend) => friend.status === 'accepted'));
   }
 
   useEffect(() => {
@@ -82,18 +70,14 @@ export function ShareFriendList(props: ShareFriendListProps) {
     });
   }, []);
 
-  const acceptedFriends = friends.filter(
-    (friend) => friend.status === 'accepted'
-  );
-
   const loadingFriends = isLoading && (
     <ul className="mt-2 grid grid-cols-3 gap-1.5">
       {[...Array(3)].map((_, idx) => (
         <li
           key={idx}
-          className="flex animate-pulse items-center gap-2 rounded-md border p-2"
+          className="flex animate-pulse items-center gap-2.5 rounded-md border p-2"
         >
-          <div className="h-8 w-8 shrink-0 rounded-full bg-gray-200" />
+          <div className="relative top-[1px] h-10 w-10 shrink-0 rounded-full bg-gray-200" />
           <div className="inline-grid w-full">
             <div className="h-5 w-2/4 rounded bg-gray-200" />
             <div className="mt-1 h-5 w-3/4 rounded bg-gray-200" />
@@ -105,17 +89,17 @@ export function ShareFriendList(props: ShareFriendListProps) {
 
   return (
     <>
-      {(acceptedFriends.length > 0 || isLoading) && (
+      {(friends.length > 0 || isLoading) && (
         <div className="flex items-center justify-between gap-2">
-          <p>Select Friends</p>
+          <p className="text-sm">Select Friends to share the roadmap with</p>
 
-          <label className="flex items-center gap-2">
+          <label className="flex items-center gap-2 text-sm">
             <input
               type="checkbox"
-              checked={sharedFriendIds.length === acceptedFriends.length}
+              checked={sharedFriendIds.length === friends.length}
               onChange={(e) => {
                 if (e.target.checked) {
-                  setSharedFriendIds(acceptedFriends.map((f) => f.userId));
+                  setSharedFriendIds(friends.map((f) => f.userId));
                 } else {
                   setSharedFriendIds([]);
                 }
@@ -127,9 +111,9 @@ export function ShareFriendList(props: ShareFriendListProps) {
       )}
 
       {loadingFriends}
-      {acceptedFriends.length > 0 && !isLoading && (
+      {friends.length > 0 && !isLoading && (
         <ul className="mt-2 grid grid-cols-3 gap-1.5">
-          {acceptedFriends.map((friend) => {
+          {friends.map((friend) => {
             const isSelected = sharedFriendIds?.includes(friend.userId);
             return (
               <li key={friend.userId}>
@@ -156,10 +140,19 @@ export function ShareFriendList(props: ShareFriendListProps) {
         </ul>
       )}
 
-      {acceptedFriends.length === 0 && !isLoading && (
-        <div className="flex grow flex-col items-center justify-center gap-2">
-          <Users className="h-12 w-12 text-gray-500" />
-          <p className="text-gray-500">You haven't added any friends yet.</p>
+      {friends.length === 0 && !isLoading && (
+        <div className="flex h-full flex-grow flex-col items-center justify-center rounded-md border bg-gray-50 text-center">
+          <Users2 className="mb-3 h-10 w-10 text-gray-300" />
+          <p className="font-semibold text-gray-500">
+            You do not have any friends yet. <br />{' '}
+            <a
+              target="_blank"
+              className="underline underline-offset-2"
+              href={`${import.meta.env.PUBLIC_ROADMAP_WEB_URL}/account/friends`}
+            >
+              Invite your friends to share roadmaps with.
+            </a>
+          </p>
         </div>
       )}
     </>

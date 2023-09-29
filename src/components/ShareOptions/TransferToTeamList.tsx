@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
-import { Users2 } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
-import type { GetUserTeamsResponse } from './ShareSettingsModal';
+import { Users2 } from 'lucide-react';
+import type { GetUserTeamsResponse } from '../ShareSettings/ShareSettingsModal';
 import { httpGet } from '../../lib/http';
 import { cn } from '../../lib/classname';
 
@@ -60,7 +60,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
   return (
     <>
       {(teams.length > 0 || isLoading) && (
-        <p>Select a team to transfer this roadmap</p>
+        <p className="text-sm">Select a team to transfer this roadmap to</p>
       )}
 
       {loadingTeams}
@@ -73,8 +73,8 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
               <li key={team._id}>
                 <button
                   className={cn(
-                    'relative flex w-full items-center gap-2 rounded-md border p-2',
-                    isSelected && 'bg-gray-800 text-white'
+                    'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5',
+                    isSelected && 'border-gray-500 bg-gray-100 text-black'
                   )}
                   onClick={() => {
                     setSelectedTeamId(team._id);
@@ -89,10 +89,10 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
                         : '/images/default-avatar.png'
                     }
                     alt={team.name || ''}
-                    className="h-6 w-6 rounded-full"
+                    className="h-6 w-6 shrink-0 rounded-full"
                   />
                   <div className="inline-grid w-full">
-                    <h3 className="truncate text-left font-medium">
+                    <h3 className="truncate text-left font-normal">
                       {team.name}
                     </h3>
                   </div>

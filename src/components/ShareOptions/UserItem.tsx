@@ -1,4 +1,4 @@
-import { cn } from "../../lib/classname";
+import { cn } from '../../lib/classname';
 
 type UserItemProps = {
   user: {
@@ -16,8 +16,8 @@ export function UserItem(props: UserItemProps) {
   return (
     <button
       className={cn(
-        'relative flex w-full items-center gap-2 rounded-md border p-2',
-        isSelected && 'bg-gray-800 text-white'
+        'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5',
+        isSelected && 'border-gray-500 bg-gray-300 text-black'
       )}
       onClick={onClick}
     >
@@ -28,14 +28,14 @@ export function UserItem(props: UserItemProps) {
             : '/images/default-avatar.png'
         }
         alt={user.name || ''}
-        className="h-8 w-8 rounded-full"
+        className="relative top-[1px] h-10 w-10 shrink-0 rounded-full"
       />
       <div className="inline-grid w-full">
-        <h3 className="truncate text-left font-medium">{user.name}</h3>
+        <h3 className="truncate text-left font-semibold">{user.name}</h3>
         <p
           className={cn(
             'truncate text-left text-sm text-gray-500',
-            isSelected && 'text-gray-300'
+            isSelected && 'text-gray-700'
           )}
         >
           {user.email}

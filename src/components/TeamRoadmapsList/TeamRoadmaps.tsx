@@ -26,7 +26,7 @@ import {
 } from 'lucide-react';
 import { RoadmapActionDropdown } from './RoadmapActionDropdown';
 import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
-import { ShareSettings } from '../ShareSettings/ShareSettings';
+import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -310,7 +310,7 @@ export function TeamRoadmaps() {
   );
 
   const shareSettingsModal = selectedResource && (
-    <ShareSettings
+    <ShareOptionsModal
       visibility={selectedResource.visibility!}
       sharedTeamMemberIds={selectedResource.sharedTeamMemberIds!}
       sharedFriendIds={selectedResource.sharedFriendIds!}

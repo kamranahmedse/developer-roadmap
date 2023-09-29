@@ -10,11 +10,9 @@ type CopyRoadmapLinkProps = {
 export function CopyRoadmapLink(props: CopyRoadmapLinkProps) {
   const { roadmapId, onClose } = props;
 
-  const baseUrl = import.meta.env.DEV
-    ? 'http://localhost:3000'
-    : 'https://roadmap.sh';
-
-  const shareLink = `${baseUrl}/r?id=${roadmapId}`;
+  const shareLink = `${
+    import.meta.env.PUBLIC_ROADMAP_WEB_URL
+  }/r?id=${roadmapId}`;
   const { copyText, isCopied } = useCopyText();
 
   return (
@@ -54,7 +52,7 @@ export function CopyRoadmapLink(props: CopyRoadmapLinkProps) {
         </button>
         <button
           className={cn(
-            'flex w-full border border-black items-center justify-center gap-1.5 rounded px-4 py-2 text-sm font-medium hover:bg-gray-100'
+            'flex w-full items-center justify-center gap-1.5 rounded border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100'
           )}
           onClick={onClose}
         >

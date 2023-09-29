@@ -32,7 +32,6 @@ export interface TeamMemberList extends TeamMemberDocument {
 }
 
 type ShareTeamMemberListProps = {
-  defaultSharedMemberIds: string[];
   teamId: string;
   setMembers: (members: TeamMemberList[]) => void;
   members: TeamMemberList[];
@@ -47,7 +46,6 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
     sharedTeamMemberIds,
     setSharedTeamMemberIds,
     teamId,
-    defaultSharedMemberIds,
   } = props;
 
   const toast = useToast();
@@ -70,11 +68,6 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
     }
 
     setMembers(response);
-    setSharedTeamMemberIds(
-      defaultSharedMemberIds.length > 0
-        ? defaultSharedMemberIds
-        : response.map((member) => member._id!.toString())
-    );
   }
 
   useEffect(() => {
@@ -84,11 +77,11 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
   }, []);
 
   const loadingMembers = isLoading && (
-    <ul className="mt-2 grid grid-cols-3 gap-1.5">
+    <ul className="mt-2 grid grid-cols-3 gap-2.5">
       {[...Array(3)].map((_, idx) => (
         <li
           key={idx}
-          className="flex animate-pulse items-center gap-2 rounded-md border p-2"
+          className="flex min-h-[62px] animate-pulse items-center gap-2 rounded-md border p-2"
         >
           <div className="h-8 w-8 shrink-0 rounded-full bg-gray-200" />
           <div className="inline-grid w-full">
@@ -104,7 +97,7 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
     <>
       {(members.length > 0 || isLoading) && (
         <div className="flex items-center justify-between gap-2">
-          <p>Select Members</p>
+          <p className="text-sm">Select Members</p>
 
           <label className="flex items-center gap-2">
             <input
@@ -125,7 +118,7 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
 
       {loadingMembers}
       {members?.length > 0 && !isLoading && (
-        <ul className="mt-2 grid grid-cols-3 gap-1.5">
+        <ul className="mt-2 grid grid-cols-3 gap-2.5">
           {members?.map((member) => {
             const isSelected = sharedTeamMemberIds?.includes(
               member._id?.toString()!
