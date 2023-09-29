@@ -1,6 +1,6 @@
 # Data Understanding, Analysis and Visualization
 
-- [Exploratory Data Analysis With Python and Pandas](https://www.coursera.org/projects/exploratory-data-analysis-python-pandas)
-- [Exploratory Data Analysis for Machine Learning](https://www.coursera.org/learn/ibm-exploratory-data-analysis-for-machine-learning#syllabus)
-- [Exploratory Data Analysis with Seaborn](https://www.coursera.org/projects/exploratory-data-analysis-seaborn)
+- [Exploratory Data Analysis With Python and Pandas](https://imp.i384100.net/AWAv4R)
+- [Exploratory Data Analysis for Machine Learning](https://imp.i384100.net/GmQMLE)
+- [Exploratory Data Analysis with Seaborn](https://imp.i384100.net/ZQmMgR)
 

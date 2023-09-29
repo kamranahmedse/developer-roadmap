@@ -1,4 +1,4 @@
 # Statistics, CLT
 
-- [Introduction to Statistics](https://coursera.org/learn/stanford-statistics#syllabus)
+- [Introduction to Statistics](https://imp.i384100.net/3eRv4v)
 
