@@ -328,7 +328,7 @@ export function TeamRoadmaps() {
               ...shareSettings,
             };
           });
-        })
+        });
       }}
       onClose={() => setSelectedResource(null)}
     />
@@ -437,6 +437,8 @@ export function TeamRoadmaps() {
                     <span className="flex items-center text-xs leading-none text-gray-400">
                       <VisibilityBadge
                         visibility={resourceConfig.visibility!}
+                        sharedTeamMemberIds={resourceConfig.sharedTeamMemberIds}
+                        sharedFriendIds={resourceConfig.sharedFriendIds}
                       />
                       <span className="mx-2 font-semibold">&middot;</span>
                       <Shapes size={16} className="mr-1 inline-block h-4 w-4" />
@@ -581,6 +583,8 @@ export function TeamRoadmaps() {
 
 type VisibilityLabelProps = {
   visibility: AllowedRoadmapVisibility;
+  sharedTeamMemberIds?: string[];
+  sharedFriendIds?: string[];
 };
 
 const visibilityDetails: Record<
@@ -600,16 +604,16 @@ const visibilityDetails: Record<
   },
   team: {
     icon: Users,
-    label: 'Team can View',
+    label: 'Team Member(s)',
   },
   friends: {
     icon: Users,
-    label: 'Friends',
+    label: 'Friend(s)',
   },
 } as const;
 
 function VisibilityBadge(props: VisibilityLabelProps) {
-  const { visibility } = props;
+  const { visibility, sharedTeamMemberIds = [], sharedFriendIds = [] } = props;
 
   const { label, icon: Icon } = visibilityDetails[visibility];
 
@@ -618,7 +622,15 @@ function VisibilityBadge(props: VisibilityLabelProps) {
       className={`inline-flex items-center gap-1.5 whitespace-nowrap text-xs font-normal`}
     >
       <Icon className="inline-block h-3 w-3" />
-      {label}
+      <div className="flex items-center">
+        {visibility === 'team' && sharedTeamMemberIds?.length > 0 && (
+          <span className="mr-1">{sharedTeamMemberIds.length}</span>
+        )}
+        {visibility === 'friends' && sharedFriendIds?.length > 0 && (
+          <span className="mr-1">{sharedFriendIds.length}</span>
+        )}
+        {label}
+      </div>
     </span>
   );
 }

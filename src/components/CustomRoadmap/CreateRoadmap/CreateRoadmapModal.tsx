@@ -182,7 +182,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
           </div>
         </div>
 
-        <div className="">
+        <div className="mt-4">
           <label
             htmlFor="type"
             className="block text-xs uppercase text-gray-400"

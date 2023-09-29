@@ -1,10 +1,9 @@
 import { useEffect, useState } from 'react';
-import { useToast } from '../../hooks/use-toast';
 import { getUrlParams } from '../../lib/browser';
 import {
-  httpGet,
   type AppError,
   type FetchError,
+  httpGet,
   httpPost,
 } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
@@ -15,7 +14,6 @@ import { currentRoadmap } from '../../stores/roadmap';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { RestrictedPage } from './RestrictedPage';
 import { isLoggedIn } from '../../lib/jwt';
-import type { InvalidPrerenderExport } from 'astro/dist/core/errors/errors-data';
 
 export const allowedLinkTypes = [
   'video',
@@ -25,7 +23,9 @@ export const allowedLinkTypes = [
   'website',
   'podcast',
 ] as const;
+
 export type AllowedLinkTypes = (typeof allowedLinkTypes)[number];
+
 export interface RoadmapContentDocument {
   _id?: string;
   roadmapId: string;
@@ -52,7 +52,6 @@ export function hideRoadmapLoader() {
 export function CustomRoadmap() {
   const { id } = getUrlParams() as { id: string };
 
-  const toast = useToast();
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
   const [error, setError] = useState<AppError | FetchError | undefined>();
@@ -64,7 +63,6 @@ export function CustomRoadmap() {
     );
 
     if (error || !response) {
-      toast.error(error?.message || 'Something went wrong');
       setError(error);
       setIsLoading(false);
       return;
