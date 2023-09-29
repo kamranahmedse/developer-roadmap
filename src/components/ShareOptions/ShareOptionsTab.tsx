@@ -91,7 +91,7 @@ export function ShareOptionTabs(props: ShareOptionTabsProps) {
             onClick={() => {
               handleClick('team');
             }}
-            className='border-red-300 text-red-600 hover:bg-red-50 data-[active="true"]:border-red-600 data-[active="true"]:bg-red-600 data-[active="true"]:text-white'
+            className='border-red-300 text-red-600 hover:border-red-200 hover:bg-red-50 data-[active="true"]:border-red-600 data-[active="true"]:bg-red-600 data-[active="true"]:text-white'
           />
         </div>
       )}

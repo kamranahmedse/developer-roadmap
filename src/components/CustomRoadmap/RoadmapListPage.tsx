@@ -18,8 +18,11 @@ export type FriendUserType = {
 };
 
 export type GetRoadmapListResponse = {
-  personalRoadmaps: RoadmapDocument[];
+  personalRoadmaps: (RoadmapDocument & {
+    topics: number;
+  })[];
   sharedRoadmaps: (RoadmapDocument & {
+    topics: number;
     creator: FriendUserType;
   })[];
 };
@@ -111,6 +114,7 @@ export function RoadmapListPage() {
         {activeTab === 'personal' && (
           <PersonalRoadmapList
             roadmaps={allRoadmaps?.personalRoadmaps}
+            setAllRoadmaps={setAllRoadmaps}
             onDelete={(roadmapId) => {
               setAllRoadmaps({
                 ...allRoadmaps,
