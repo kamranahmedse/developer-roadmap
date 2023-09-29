@@ -27,6 +27,7 @@ import type {
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
 import { Ban, FileText } from 'lucide-react';
+import { getUrlParams } from '../../lib/browser';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
@@ -54,6 +55,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
+  const { sc } = getUrlParams() as { sc: string };
   const isGuest = useMemo(() => !isLoggedIn(), []);
   const topicRef = useRef<HTMLDivElement>(null);
 
@@ -133,7 +135,7 @@ export function TopicDetail(props: TopicDetailProps) {
     if (isCustomResource) {
       topicUrl = `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-node-content/${resourceId}/${topicId}`;
+      }/v1-get-node-content/${resourceId}/${topicId}${sc ? `?sc=${sc}` : ''}`;
     }
 
     httpGet<string | RoadmapContentDocument>(

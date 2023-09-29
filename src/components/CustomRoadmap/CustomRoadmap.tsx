@@ -50,7 +50,7 @@ export function hideRoadmapLoader() {
 }
 
 export function CustomRoadmap() {
-  const { id } = getUrlParams() as { id: string };
+  const { id, sc } = getUrlParams() as { id: string; sc: string };
 
   const [isLoading, setIsLoading] = useState(true);
   const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
@@ -58,8 +58,16 @@ export function CustomRoadmap() {
 
   async function getRoadmap() {
     setIsLoading(true);
-    const { response, error } = await httpGet<RoadmapDocument>(
+
+    const roadmapUrl = new URL(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`
+    );
+    if (sc) {
+      roadmapUrl.searchParams.set('sc', sc);
+    }
+
+    const { response, error } = await httpGet<RoadmapDocument>(
+      roadmapUrl.toString()
     );
 
     if (error || !response) {
@@ -68,7 +76,7 @@ export function CustomRoadmap() {
       return;
     }
 
-    document.title = `${response.title} - Roadmap.sh`;
+    document.title = `${response.title} - roadmap.sh`;
 
     setRoadmap(response);
     currentRoadmap.set(response);
