@@ -1,4 +1,4 @@
-import { HelpCircle, Lock } from 'lucide-react';
+import { HelpCircle } from 'lucide-react';
 import { cn } from '../../lib/classname';
 import type { ResourceType } from '../../lib/resource-progress';
 import { useState } from 'react';
@@ -83,16 +83,6 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           className="flex items-center gap-3 opacity-0 transition-opacity duration-300"
           data-progress-nums=""
         >
-          {$canManageCurrentRoadmap && (
-            <button
-              className={cn(
-                'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
-              )}
-              onClick={() => setIsSharing(true)}
-            >
-              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Sharing Options
-            </button>
-          )}
           <button
             data-popup="progress-help"
             className="flex items-center gap-1 text-sm font-medium text-gray-500 opacity-0 transition-opacity hover:text-black"
@@ -115,22 +105,6 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           <span data-progress-done="">0</span> of{' '}
           <span data-progress-total="">0</span> Done
         </span>
-
-        <div
-          className="flex items-center gap-2 opacity-0 transition-opacity duration-300"
-          data-progress-nums=""
-        >
-          {$canManageCurrentRoadmap && (
-            <button
-              className={cn(
-                'flex items-center gap-1 text-sm font-medium text-gray-500 hover:text-black disabled:cursor-not-allowed disabled:opacity-70'
-              )}
-              onClick={() => setIsSharing(true)}
-            >
-              <Lock className="h-3.5 w-3.5 stroke-[2.5px]" /> Sharing Options
-            </button>
-          )}
-        </div>
       </div>
     </>
   );

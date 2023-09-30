@@ -1,15 +1,14 @@
-import MoreIcon from '../../icons/more-vertical.svg';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Lock, MoreVertical, Shapes, Trash2 } from 'lucide-react';
 
-type RoadmapActionDropdownProps = {
+type RoadmapActionButtonProps = {
   onDelete?: () => void;
   onCustomize?: () => void;
   onUpdateSharing?: () => void;
 };
 
-export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
+export function RoadmapActionButton(props: RoadmapActionButtonProps) {
   const { onDelete, onUpdateSharing, onCustomize } = props;
 
   const menuRef = useRef<HTMLDivElement>(null);
@@ -24,23 +23,16 @@ export function RoadmapActionDropdown(props: RoadmapActionDropdownProps) {
       <button
         disabled={false}
         onClick={() => setIsOpen(!isOpen)}
-        className="hidden items-center opacity-60 transition-opacity hover:opacity-100 disabled:cursor-not-allowed disabled:opacity-30 sm:flex"
+        className="inline-flex items-center justify-center rounded-md bg-gray-500 py-1.5 pl-2 pr-2 text-xs font-medium text-white hover:bg-gray-600 sm:pl-1.5 sm:pr-3 sm:text-sm"
       >
-        <img alt="menu" src={MoreIcon.src} className="h-4 w-4" />
-      </button>
-      <button
-        disabled={false}
-        onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none sm:hidden"
-      >
-        <MoreVertical size={14} />
-        Options
+        <MoreVertical className="mr-0 h-4 w-4 stroke-[2.5] sm:mr-1.5" />
+        <span className="hidden sm:inline">Actions</span>
       </button>
 
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-auto top-full z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md sm:right-0"
+          className="align-right absolute right-0 top-full z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
         >
           <ul>
             {onUpdateSharing && (

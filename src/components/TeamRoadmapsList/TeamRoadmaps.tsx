@@ -612,7 +612,7 @@ const visibilityDetails: Record<
   },
 } as const;
 
-function VisibilityBadge(props: VisibilityLabelProps) {
+export function VisibilityBadge(props: VisibilityLabelProps) {
   const { visibility, sharedTeamMemberIds = [], sharedFriendIds = [] } = props;
 
   const { label, icon: Icon } = visibilityDetails[visibility];
