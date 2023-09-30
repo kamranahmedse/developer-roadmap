@@ -21,4 +21,4 @@ Services such as [CloudFlare](https://www.cloudflare.com/dns/) and [Route53](htt
 To learn more, visit the following links:
 
 - [Getting started with Domain Name System](https://github.com/donnemartin/system-design-primer#domain-name-system)
-  [What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)
+- [What is DNS?](https://www.cloudflare.com/learning/dns/what-is-dns/)
