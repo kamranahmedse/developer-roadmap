@@ -110,21 +110,3 @@ export function TeamMemberItem(props: TeamMemberProps) {
     </div>
   );
 }
-
-type SendProgressReminderProps = {
-  handleSendReminder: () => void;
-};
-
-function SendProgressReminder(props: SendProgressReminderProps) {
-  const { handleSendReminder } = props;
-
-  return (
-    <button
-      onClick={handleSendReminder}
-      className="ml-2 flex items-center gap-1.5 whitespace-nowrap rounded-full bg-orange-100 px-2 py-0.5 text-xs text-orange-700"
-    >
-      <MailIcon className="h-3 w-3" />
-      <span>Remind</span>
-    </button>
-  );
-}

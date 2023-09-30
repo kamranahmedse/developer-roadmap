@@ -1,6 +1,6 @@
 ---
 import Icon from '../AstroIcon.astro';
-import AccountDropdown from './AccountDropdown.astro';
+import { AccountDropdown } from './AccountDropdown';
 ---
 
 <div class='bg-slate-900 py-5 text-white sm:py-8'>
@@ -24,7 +24,8 @@ import AccountDropdown from './AccountDropdown.astro';
         >
       </li>
       <li class='hidden lg:inline'>
-        <a href='/questions' class='text-gray-400 hover:text-white'>Questions</a>
+        <a href='/questions' class='text-gray-400 hover:text-white'>Questions</a
+        >
       </li>
       <li class='hidden lg:inline'>
         <a href='/guides' class='text-gray-400 hover:text-white'>Guides</a>
@@ -44,7 +45,7 @@ import AccountDropdown from './AccountDropdown.astro';
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
       <li>
-        <AccountDropdown />
+        <AccountDropdown client:only="react" />
 
         <a
           data-guest-required
@@ -106,6 +107,11 @@ import AccountDropdown from './AccountDropdown.astro';
         <li data-auth-required class='hidden'>
           <a href='/account' class='text-xl hover:text-blue-300 md:text-lg'>
             Account
+          </a>
+        </li>
+        <li data-auth-required class='hidden'>
+          <a href='/team' class='text-xl hover:text-blue-300 md:text-lg'>
+            Teams
           </a>
         </li>
         <li data-auth-required class='hidden'>

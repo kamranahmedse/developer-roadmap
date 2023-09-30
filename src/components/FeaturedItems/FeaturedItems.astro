@@ -1,13 +1,20 @@
 ---
-import FeaturedItem, { FeaturedItemType } from './FeaturedItem.astro';
+import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
+import FeaturedItem, { type FeaturedItemType } from './FeaturedItem.astro';
 
 export interface Props {
   featuredItems: FeaturedItemType[];
   heading: string;
+  showCreateRoadmap?: boolean;
   allowBookmark?: boolean;
 }
 
-const { featuredItems, heading, allowBookmark = true } = Astro.props;
+const {
+  featuredItems,
+  heading,
+  showCreateRoadmap,
+  allowBookmark = true,
+} = Astro.props;
 ---
 
 <div class='relative border-b border-b-[#1e293c] py-10 sm:py-14'>
@@ -31,6 +38,19 @@ const { featuredItems, heading, allowBookmark = true } = Astro.props;
             />
           </li>
         ))
+      }
+      {
+        showCreateRoadmap && (
+          <li>
+            <CreateRoadmapButton
+              client:load
+              className='min-h-[54px]'
+              type={
+                heading.toLowerCase().indexOf('role') > -1 ? 'role' : 'skill'
+              }
+            />
+          </li>
+        )
       }
     </ul>
   </div>

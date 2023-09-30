@@ -3,7 +3,10 @@ import { useState } from 'react';
 
 type MemberProgressItemProps = {
   member: TeamMember;
-  onShowResourceProgress: (resourceId: string) => void;
+  onShowResourceProgress: (
+    resourceId: string,
+    isCustomResource: boolean
+  ) => void;
   isMyProgress?: boolean;
 };
 export function MemberProgressItem(props: MemberProgressItemProps) {
@@ -29,7 +32,7 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
                 : '/images/default-avatar.png'
             }
             alt={member.name || ''}
-            className="min-w-[32px] min-h-[32px] h-8 w-8 rounded-full"
+            className="h-8 min-h-[32px] w-8 min-w-[32px] rounded-full"
           />
           <div className="inline-grid w-full">
             {!isMyProgress && (
@@ -51,7 +54,12 @@ export function MemberProgressItem(props: MemberProgressItemProps) {
             (progress) => {
               return (
                 <button
-                  onClick={() => onShowResourceProgress(progress.resourceId)}
+                  onClick={() =>
+                    onShowResourceProgress(
+                      progress.resourceId,
+                      progress.isCustomResource!
+                    )
+                  }
                   className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
                   key={progress.resourceId}
                 >

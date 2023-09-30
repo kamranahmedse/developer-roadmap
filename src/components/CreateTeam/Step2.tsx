@@ -17,7 +17,9 @@ export function Step2(props: Step2Props) {
     <>
       <div className="mt-4 flex w-full flex-col">
         <div className="mb-1 mt-2">
-          <h2 className="mb-1 md:mb-1.5 text-lg md:text-2xl font-bold">Select Roadmaps</h2>
+          <h2 className="mb-1 text-lg font-bold md:mb-1.5 md:text-2xl">
+            Select Roadmaps
+          </h2>
           <p className="text-sm text-gray-700">
             You can always add and customize your roadmaps later.
           </p>
@@ -25,12 +27,12 @@ export function Step2(props: Step2Props) {
 
         <RoadmapSelector
           teamId={team._id!}
-          teamResourceConfig={teamResourceConfig}
-          setTeamResourceConfig={setTeamResourceConfig}
+          teamResources={teamResourceConfig}
+          setTeamResources={setTeamResourceConfig}
         />
       </div>
 
-      <div className="mt-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col items-stretch justify-between gap-2 md:flex-row md:items-center">
         <button
           type="button"
           onClick={onBack}
@@ -46,8 +48,9 @@ export function Step2(props: Step2Props) {
           <button
             type="button"
             onClick={onNext}
+            disabled={teamResourceConfig.length !== 0}
             className={
-              'flex-grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto'
+              'flex-grow rounded-md border border-gray-300 bg-white px-4 py-2 text-gray-500 hover:border-gray-400 hover:text-black md:flex-auto disabled:opacity-50 disabled:pointer-events-none'
             }
           >
             Skip for Now

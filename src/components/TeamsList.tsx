@@ -1,21 +1,16 @@
-import { useEffect, useRef, useState } from 'react';
-import ChevronDown from '../icons/dropdown.svg';
+import { useEffect, useState } from 'react';
 import { httpGet } from '../lib/http';
-import { useTeamId } from '../hooks/use-team-id';
 import { useAuth } from '../hooks/use-auth';
-import { useOutsideClick } from '../hooks/use-outside-click';
-import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import { pageProgressMessage } from '../stores/page';
 import { useToast } from '../hooks/use-toast';
-
-type TeamListResponse = TeamDocument[];
+import { type UserTeamItem } from './TeamDropdown/TeamDropdown';
 
 export function TeamsList() {
-  const [teamList, setTeamList] = useState<TeamDocument[]>([]);
+  const [teamList, setTeamList] = useState<UserTeamItem[]>([]);
   const user = useAuth();
   const toast = useToast();
   async function getAllTeam() {
-    const { response, error } = await httpGet<TeamListResponse>(
+    const { response, error } = await httpGet<UserTeamItem[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
     );
     if (error || !response) {
@@ -64,30 +59,39 @@ export function TeamsList() {
               <span>&rarr;</span>
             </a>
           </li>
-          {teamList.map((team) => (
-            <li key={team._id}>
-              <a
-                className="flex w-full cursor-pointer items-center justify-between gap-2 rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
-                href={`/team/progress?t=${team._id}`}
-              >
-                <span className="flex flex-grow items-center gap-2">
-                  <img
-                    src={
-                      team.avatar
-                        ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
-                            team.avatar
-                          }`
-                        : '/images/default-avatar.png'
-                    }
-                    alt={team.name || ''}
-                    className="h-6 w-6 rounded-full"
-                  />
-                  <span className="truncate">{team.name}</span>
-                </span>
-                <span>&rarr;</span>
-              </a>
-            </li>
-          ))}
+          {teamList.map((team) => {
+            let pageLink = '';
+            if (team.status === 'invited') {
+              pageLink = `/respond-invite?i=${team.memberId}`;
+            } else if (team.status === 'joined') {
+              pageLink = `/team/progress?t=${team._id}`;
+            }
+
+            return (
+              <li key={team._id}>
+                <a
+                  className="flex w-full cursor-pointer items-center justify-between gap-2 rounded border p-2 text-sm font-medium hover:border-gray-300 hover:bg-gray-50"
+                  href={pageLink}
+                >
+                  <span className="flex flex-grow items-center gap-2">
+                    <img
+                      src={
+                        team.avatar
+                          ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${
+                              team.avatar
+                            }`
+                          : '/images/default-avatar.png'
+                      }
+                      alt={team.name || ''}
+                      className="h-6 w-6 rounded-full"
+                    />
+                    <span className="truncate">{team.name}</span>
+                  </span>
+                  <span>&rarr;</span>
+                </a>
+              </li>
+            );
+          })}
         </ul>
         <a
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"

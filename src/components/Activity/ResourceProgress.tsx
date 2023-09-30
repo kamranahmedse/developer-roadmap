@@ -3,6 +3,7 @@ import { getRelativeTimeString } from '../../lib/date';
 import { useToast } from '../../hooks/use-toast';
 import { ProgressShareButton } from '../UserProgress/ProgressShareButton';
 import { useState } from 'react';
+import { getUser } from '../../lib/jwt';
 
 type ResourceProgressType = {
   resourceType: 'roadmap' | 'best-practice';
@@ -15,13 +16,16 @@ type ResourceProgressType = {
   skippedCount: number;
   onCleared?: () => void;
   showClearButton?: boolean;
+  isCustomResource: boolean;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
-  const { showClearButton = true } = props;
+  const { showClearButton = true, isCustomResource } = props;
   const toast = useToast();
   const [isClearing, setIsClearing] = useState(false);
   const [isConfirming, setIsConfirming] = useState(false);
+
+  const userId = getUser()?.id;
 
   const {
     updatedAt,
@@ -52,8 +56,8 @@ export function ResourceProgress(props: ResourceProgressType) {
       return;
     }
 
-    localStorage.removeItem(`${resourceType}-${resourceId}-favorite`);
-    localStorage.removeItem(`${resourceType}-${resourceId}-progress`);
+    localStorage.removeItem(`${resourceType}-${resourceId}-${userId}-favorite`);
+    localStorage.removeItem(`${resourceType}-${resourceId}-${userId}-progress`);
 
     setIsClearing(false);
     setIsConfirming(false);
@@ -62,10 +66,14 @@ export function ResourceProgress(props: ResourceProgressType) {
     }
   }
 
-  const url =
+  let url =
     resourceType === 'roadmap'
       ? `/${resourceId}`
       : `/best-practices/${resourceId}`;
+
+  if (isCustomResource) {
+    url = `/r?id=${resourceId}`;
+  }
 
   const totalMarked = doneCount + skippedCount;
   const progressPercentage = Math.round((totalMarked / totalCount) * 100);
@@ -112,6 +120,7 @@ export function ResourceProgress(props: ResourceProgressType) {
           <ProgressShareButton
             resourceType={resourceType}
             resourceId={resourceId}
+            isCustomResource={isCustomResource}
             className="text-xs font-normal"
             shareIconClassName="w-2.5 h-2.5 stroke-2"
             checkIconClassName="w-2.5 h-2.5"

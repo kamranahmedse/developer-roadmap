@@ -1,7 +1,10 @@
 ---
 import RoadmapBanner from '../../components/RoadmapBanner.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getRoadmapTopicFiles,RoadmapTopicFileType } from '../../lib/roadmap-topic';
+import {
+  getRoadmapTopicFiles,
+  type RoadmapTopicFileType,
+} from '../../lib/roadmap-topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getRoadmapTopicFiles();
@@ -22,9 +25,11 @@ export async function getStaticPaths() {
 }
 
 const { topicId } = Astro.params;
-const { file, roadmapId, roadmap, heading } = Astro.props as RoadmapTopicFileType;
+const { file, roadmapId, roadmap, heading } =
+  Astro.props as RoadmapTopicFileType;
 
-const gitHubBaseUrl = 'https://github.com/kamranahmedse/developer-roadmap/blob/master/src/data';
+const gitHubBaseUrl =
+  'https://github.com/kamranahmedse/developer-roadmap/blob/master/src/data';
 const gitHubFullUrl = file.file.replace(/^.+\/src\/data/, `${gitHubBaseUrl}/`);
 const gitHubRelativeUrl = file.file.replace(/^.+\/src\/data/, 'src/data');
 ---
@@ -37,14 +42,21 @@ const gitHubRelativeUrl = file.file.replace(/^.+\/src\/data/, 'src/data');
 >
   <RoadmapBanner roadmapId={roadmapId} roadmap={roadmap} />
   <div class='bg-gray-50'>
-
-    <div class='container pb-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
+    <div
+      class='container prose pb-16 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0 prose-p:mt-0'
+    >
       <main id='main-content'>
         <file.Content />
       </main>
 
-      <p class="border border-yellow-500 p-2 rounded-md text-sm bg-white">
-        Found any mistakes? Help us improve by <a id="gh-file-url" rel="nofollow" target="_blank" data-relative-url={gitHubRelativeUrl} href={gitHubFullUrl}>updating the file here.</a>.
+      <p class='rounded-md border border-yellow-500 bg-white p-2 text-sm'>
+        Found any mistakes? Help us improve by <a
+          id='gh-file-url'
+          rel='nofollow'
+          target='_blank'
+          data-relative-url={gitHubRelativeUrl}
+          href={gitHubFullUrl}>updating the file here.</a
+        >.
       </p>
     </div>
   </div>

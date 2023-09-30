@@ -27,6 +27,7 @@ jobs:
         pnpm install
     - name: Generate meta and build
       run: |
+        npm run generate-renderer
         npm run build
         touch ./dist/.nojekyll
         echo 'roadmap.sh' > ./dist/CNAME

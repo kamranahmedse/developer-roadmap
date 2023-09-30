@@ -21,3 +21,13 @@ export function isLoggedIn() {
 
   return !!token;
 }
+
+export function getUser() {
+  const token = Cookies.get(TOKEN_COOKIE_NAME);
+
+  if (!token) {
+    return null;
+  }
+
+  return decodeToken(token);
+}

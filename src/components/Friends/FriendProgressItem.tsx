@@ -10,7 +10,10 @@ import { AddUserIcon } from '../ReactIcons/AddUserIcon';
 
 type FriendProgressItemProps = {
   friend: ListFriendsResponse[0];
-  onShowResourceProgress: (resourceId: string) => void;
+  onShowResourceProgress: (
+    resourceId: string,
+    isCustomResource?: boolean
+  ) => void;
   onReload: () => void;
 };
 
@@ -52,7 +55,7 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
     onReload();
   }
 
-  const roadmaps = (friend.roadmaps || []).sort((a, b) => {
+  const roadmaps = (friend?.roadmaps || []).sort((a, b) => {
     return b.done - a.done;
   });
 
@@ -86,7 +89,12 @@ export function FriendProgressItem(props: FriendProgressItemProps) {
               {(showAll ? roadmaps : roadmaps.slice(0, 4)).map((progress) => {
                 return (
                   <button
-                    onClick={() => onShowResourceProgress(progress.resourceId)}
+                    onClick={() =>
+                      onShowResourceProgress(
+                        progress.resourceId,
+                        progress.isCustomResource
+                      )
+                    }
                     className="group relative overflow-hidden rounded-md border p-2 hover:border-gray-300 hover:text-black focus:outline-none"
                     key={progress.resourceId}
                   >

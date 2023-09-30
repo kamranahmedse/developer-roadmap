@@ -1,4 +1,5 @@
 .idea
+.temp
 
 # build output
 dist/
@@ -27,3 +28,7 @@ pnpm-debug.log*
 /playwright/.cache/
 tests-examples
 *.csv
+
+/renderer/*
+!/renderer/index.tsx
+!/renderer/renderer.ts
