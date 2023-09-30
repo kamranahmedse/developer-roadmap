@@ -10,9 +10,11 @@ type CopyRoadmapLinkProps = {
 export function CopyRoadmapLink(props: CopyRoadmapLinkProps) {
   const { roadmapId, onClose } = props;
 
-  const shareLink = `${
-    import.meta.env.PUBLIC_ROADMAP_WEB_URL
-  }/r?id=${roadmapId}`;
+  const baseUrl = import.meta.env.DEV
+    ? 'http://localhost:3000'
+    : 'https://roadmap.sh';
+  const shareLink = `${baseUrl}/r?id=${roadmapId}`;
+
   const { copyText, isCopied } = useCopyText();
 
   return (
