@@ -1,13 +1,13 @@
 import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { Users2 } from 'lucide-react';
-import type { GetUserTeamsResponse } from '../ShareSettings/ShareSettingsModal';
 import { httpGet } from '../../lib/http';
 import { cn } from '../../lib/classname';
+import type { UserTeamItem } from '../TeamDropdown/TeamDropdown';
 
 type TransferToTeamListProps = {
-  teams: GetUserTeamsResponse[];
-  setTeams: (teams: GetUserTeamsResponse[]) => void;
+  teams: UserTeamItem[];
+  setTeams: (teams: UserTeamItem[]) => void;
 
   selectedTeamId: string | null;
   setSelectedTeamId: (teamId: string | null) => void;
@@ -25,7 +25,7 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
       return;
     }
 
-    const { response, error } = await httpGet<GetUserTeamsResponse[]>(
+    const { response, error } = await httpGet<UserTeamItem[]>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
     );
     if (error || !response) {
