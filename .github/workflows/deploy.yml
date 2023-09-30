@@ -7,7 +7,6 @@ env:
   PUBLIC_EDITOR_APP_URL: "https://draw.roadmap.sh"
   PUBLIC_AVATAR_BASE_URL: "https://dodrc8eu8m09s.cloudfront.net/avatars"
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  PAT: ${{ secrets.PAT }}
   CI: true
 jobs:
   build:
@@ -19,15 +18,13 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 18
-    - name: Prepare Draw Repository
-      run: |
-        git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
     - uses: pnpm/action-setup@v2.2.2
       with:
         version: 7.13.4
     - name: Setup Environment
       run: |
         pnpm install
+    - run: git config --global url."https://${{ secrets.GH_PAT }}@github.com/".insteadOf ssh://git@github.com/
     - name: Generate meta and build
       run: |
         npm run generate-renderer
