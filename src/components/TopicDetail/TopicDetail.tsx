@@ -55,7 +55,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
-  const { sc } = getUrlParams() as { sc: string };
+  const { secret } = getUrlParams() as { secret: string };
   const isGuest = useMemo(() => !isLoggedIn(), []);
   const topicRef = useRef<HTMLDivElement>(null);
 
@@ -135,7 +135,9 @@ export function TopicDetail(props: TopicDetailProps) {
     if (isCustomResource) {
       topicUrl = `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-node-content/${resourceId}/${topicId}${sc ? `?sc=${sc}` : ''}`;
+      }/v1-get-node-content/${resourceId}/${topicId}${
+        secret ? `?secret=${secret}` : ''
+      }`;
     }
 
     httpGet<string | RoadmapContentDocument>(
