@@ -18,6 +18,7 @@
     "roadmap-content": "node scripts/roadmap-content.cjs",
     "best-practice-dirs": "node scripts/best-practice-dirs.cjs",
     "best-practice-content": "node scripts/best-practice-content.cjs",
+    "generate-renderer": "sh scripts/generate-renderer.sh",
     "test:e2e": "playwright test"
   },
   "dependencies": {
@@ -30,10 +31,12 @@
     "@types/react-dom": "^18.0.6",
     "astro": "^3.0.5",
     "astro-compress": "^2.0.8",
+    "clsx": "^2.0.0",
     "dracula-prism": "^2.1.13",
     "jose": "^4.14.4",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.274.0",
+    "nanoid": "^4.0.2",
     "nanostores": "^0.9.2",
     "node-html-parser": "^6.1.5",
     "npm-check-updates": "^16.10.12",
@@ -41,9 +44,11 @@
     "react": "^18.0.0",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.0.0",
+    "reactflow": "^11.8.3",
     "rehype-external-links": "^2.1.0",
     "roadmap-renderer": "^1.0.6",
     "slugify": "^1.6.6",
+    "tailwind-merge": "^1.14.0",
     "tailwindcss": "^3.3.3"
   },
   "devDependencies": {

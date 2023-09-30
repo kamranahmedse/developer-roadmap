@@ -9,9 +9,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { UserProgressModal } from '../../../components/UserProgress/UserProgressModal';
 import {
   type BestPracticeFileType,
-  BestPracticeFrontmatter,
+  type BestPracticeFrontmatter,
   getAllBestPractices,
-  getBestPracticeIds,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 
@@ -90,7 +89,7 @@ if (bestPracticeData.schema) {
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
           />
 
-          <TopicDetail client:idle />
+          <TopicDetail client:idle canSubmitContribution={true} />
 
           <FrameRenderer
             resourceType={'best-practice'}

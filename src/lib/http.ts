@@ -71,7 +71,7 @@ export async function httpCall<
     }
 
     if (data.status === 403) {
-      window.location.href = '/account';
+      // window.location.href = '/account'; // @fixme redirect option should be configurable
       return { response: undefined, error: data as ErrorType };
     }
 

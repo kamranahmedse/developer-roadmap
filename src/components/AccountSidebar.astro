@@ -2,6 +2,7 @@
 import AstroIcon from './AstroIcon.astro';
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
 import { SidebarFriendsCounter } from './Friends/SidebarFriendsCounter';
+import { Map } from 'lucide-react';
 
 export interface Props {
   activePageId: string;
@@ -26,10 +27,21 @@ const sidebarLinks = [
     href: '/account/friends',
     title: 'Friends',
     id: 'friends',
+    isNew: false,
+    icon: {
+      glyph: 'users',
+      classes: 'h-4 w-4',
+    },
+  },
+  {
+    href: '/account/roadmaps',
+    title: 'Roadmaps',
+    id: 'roadmaps',
     isNew: true,
     icon: {
       glyph: 'users',
       classes: 'h-4 w-4',
+      component: Map,
     },
   },
   {
@@ -100,10 +112,16 @@ const sidebarLinks = [
                 isActive ? 'bg-slate-100' : ''
               }`}
             >
-              <AstroIcon
-                icon={sidebarLink.icon.glyph}
-                class={`${sidebarLink.icon.classes} mr-2`}
-              />
+              {sidebarLink.icon.component ? (
+                <sidebarLink.icon.component
+                  className={`${sidebarLink.icon.classes} mr-2`}
+                />
+              ) : (
+                <AstroIcon
+                  icon={sidebarLink.icon.glyph}
+                  class={`${sidebarLink.icon.classes} mr-2`}
+                />
+              )}
               {sidebarLink.title}
             </a>
           </li>
@@ -136,15 +154,20 @@ const sidebarLinks = [
                     }`}
                   >
                     <span class='flex flex-grow items-center'>
-                      <AstroIcon
-                        icon={sidebarLink.icon.glyph}
-                        class={`${sidebarLink.icon.classes} mr-2`}
-                      />
+                      {sidebarLink.icon.component ? (
+                        <sidebarLink.icon.component
+                          className={`${sidebarLink.icon.classes} mr-2`}
+                        />
+                      ) : (
+                        <AstroIcon
+                          icon={sidebarLink.icon.glyph}
+                          class={`${sidebarLink.icon.classes} mr-2`}
+                        />
+                      )}
                       {sidebarLink.title}
                     </span>
 
                     {sidebarLink.isNew &&
-                      sidebarLink.id !== 'friends' &&
                       !isActive && (
                         <span class='relative mr-1 flex items-center'>
                           <span class='relative rounded-full bg-gray-200 p-1 text-xs' />

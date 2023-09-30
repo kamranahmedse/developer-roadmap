@@ -29,12 +29,7 @@ export function SidebarFriendsCounter() {
 
   const pendingCount = friendCounts?.receivedCount || 0;
   if (!pendingCount) {
-    return (
-      <span className="relative mr-1 flex items-center">
-        <span className="relative rounded-full bg-gray-200 p-1 text-xs" />
-        <span className="absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs" />
-      </span>
-    );
+    return null;
   }
 
   return (

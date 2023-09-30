@@ -10,13 +10,15 @@ export const validTeamTypes = [
     value: 'company',
     label: 'Company',
     icon: BuildingIcon.src,
-    description: 'Track the skills and learning progress of the tech team at your company',
+    description:
+      'Track the skills and learning progress of the tech team at your company',
   },
   {
     value: 'study_group',
     label: 'Study Group',
     icon: UsersIcon.src,
-    description: 'Invite your friends or course-mates and track your learning progress together',
+    description:
+      'Invite your friends or course-mates and track your learning progress together',
   },
 ] as const;
 
@@ -70,10 +72,11 @@ export function Step0(props: Step0Props) {
 
   return (
     <>
-      <div className={'flex flex-col sm:flex-row gap-3'}>
+      <div className={'flex flex-col gap-3 sm:flex-row'}>
         {validTeamTypes.map((validTeamType) => (
           <button
-            className={`flex flex-grow flex-col items-center rounded-lg border px-5 py-12 ${
+            key={validTeamType.value}
+            className={`flex flex-grow flex-col items-center rounded-lg border px-5 pt-12 pb-10 ${
               validTeamType.value == selectedTeamType
                 ? 'border-gray-400 bg-gray-100'
                 : 'border-gray-300 hover:border-gray-400 hover:bg-gray-50'
@@ -81,6 +84,7 @@ export function Step0(props: Step0Props) {
             onClick={() => setSelectedTeamType(validTeamType.value)}
           >
             <img
+              key={validTeamType.value}
               alt={validTeamType.label}
               src={validTeamType.icon}
               className={`mb-3 h-12 w-12 opacity-10 ${
@@ -90,7 +94,7 @@ export function Step0(props: Step0Props) {
             <span className="mb-2 block text-2xl font-bold">
               {validTeamType.label}
             </span>
-            <span className="text-sm text-gray-500 leading-[21px]">
+            <span className="text-sm leading-[21px] text-gray-500">
               {validTeamType.description}
             </span>
           </button>
@@ -100,11 +104,11 @@ export function Step0(props: Step0Props) {
       {/*Error message*/}
       {error && <div className="mt-4 text-sm text-red-500">{error}</div>}
 
-      <div className="mt-4 flex flex-col md:flex-row items-stretch md:items-center justify-between gap-2">
+      <div className="mt-4 flex flex-col items-stretch justify-between gap-2 md:flex-row md:items-center">
         <a
           href="/account"
           className={
-            'rounded-md border border-red-400 bg-white px-8 py-2 text-red-500 text-center'
+            'rounded-md border border-red-400 bg-white px-8 py-2 text-center text-red-500'
           }
         >
           Cancel

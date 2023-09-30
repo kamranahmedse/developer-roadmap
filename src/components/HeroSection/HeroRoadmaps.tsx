@@ -4,6 +4,9 @@ import { MarkFavorite } from '../FeaturedItems/MarkFavorite';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { ResourceType } from '../../lib/resource-progress';
 import { MapIcon } from 'lucide-react';
+import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import { useState } from 'react';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -73,21 +76,20 @@ export function HeroTitle(props: ProgressTitleProps) {
 
 type ProgressListProps = {
   progress: UserProgressResponse;
-  showCustomRoadmaps?: boolean;
-  customRoadmaps: any[]; // @fixme implement this
+  customRoadmaps: UserProgressResponse;
   isLoading?: boolean;
 };
 
 export function HeroRoadmaps(props: ProgressListProps) {
-  const {
-    progress,
-    isLoading = false,
-    customRoadmaps = [{} /* @fixme implement this */],
-    showCustomRoadmaps = false,
-  } = props;
+  const { progress, isLoading = false, customRoadmaps } = props;
+
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
       {
         <HeroTitle
           icon={
@@ -118,38 +120,50 @@ export function HeroRoadmaps(props: ProgressListProps) {
         ))}
       </div>
 
-      {showCustomRoadmaps && (
-        <div className="mt-5">
-          {
-            <HeroTitle
-              icon={<MapIcon className="mr-1.5 h-[14px] w-[14px]" />}
-              title="Your custom roadmaps"
-            />
-          }
+      <div className="mt-5">
+        {
+          <HeroTitle
+            icon={<MapIcon className="mr-1.5 h-[14px] w-[14px]" />}
+            title="Your custom roadmaps"
+          />
+        }
 
-          {customRoadmaps.length === 0 && (
-            <p className="rounded-md border border-dashed border-gray-800 p-2 text-sm text-gray-600">
-              You haven't created any custom roadmaps yet.{' '}
-              <button className="text-gray-500 underline underline-offset-2 hover:text-gray-400">
-                Create one!
-              </button>
-            </p>
-          )}
+        {customRoadmaps.length === 0 && (
+          <p className="rounded-md border border-dashed border-gray-800 p-2 text-sm text-gray-600">
+            You haven't created any custom roadmaps yet.{' '}
+            <button
+              className="text-gray-500 underline underline-offset-2 hover:text-gray-400"
+              onClick={() => setIsCreatingRoadmap(true)}
+            >
+              Create one!
+            </button>
+          </p>
+        )}
 
+        {customRoadmaps.length > 0 && (
           <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
-            {customRoadmaps.map((customRoadmap) => (
-              <HeroRoadmap
-                resourceId={'343434'}
-                resourceType={'roadmap'}
-                resourceTitle={'Frontend Roadmap Revised'}
-                percentageDone={50}
-                url={`/r?${'34343434'}`}
-                allowFavorite={false}
-              />
-            ))}
+            {customRoadmaps.map((customRoadmap) => {
+              return (
+                <HeroRoadmap
+                  key={customRoadmap.resourceId}
+                  resourceId={customRoadmap.resourceId}
+                  resourceType={'roadmap'}
+                  resourceTitle={customRoadmap.resourceTitle}
+                  percentageDone={
+                    ((customRoadmap.skipped + customRoadmap.done) /
+                      customRoadmap.total) *
+                    100
+                  }
+                  url={`/r?id=${customRoadmap.resourceId}`}
+                  allowFavorite={false}
+                />
+              );
+            })}
+
+            <CreateRoadmapButton />
           </div>
-        </div>
-      )}
+        )}
+      </div>
     </div>
   );
 }

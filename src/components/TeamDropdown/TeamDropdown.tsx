@@ -112,7 +112,7 @@ export function TeamDropdown() {
           )}
         </span>
         <button
-          className="flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
+          className="relative flex w-full cursor-pointer items-center justify-between rounded border p-2 text-sm hover:bg-gray-100"
           onClick={() => setShowDropdown(!showDropdown)}
         >
           {pendingTeamIds.length > 0 && (

@@ -5,6 +5,17 @@ import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
 
+type ProgressResponse = {
+  updatedAt: string;
+  title: string;
+  id: string;
+  learning: number;
+  skipped: number;
+  done: number;
+  total: number;
+  isCustomResource: boolean;
+};
+
 export type ActivityResponse = {
   done: {
     today: number;
@@ -13,24 +24,9 @@ export type ActivityResponse = {
   learning: {
     today: number;
     total: number;
-    roadmaps: {
-      title: string;
-      id: string;
-      learning: number;
-      done: number;
-      total: number;
-      skipped: number;
-      updatedAt: string;
-    }[];
-    bestPractices: {
-      title: string;
-      id: string;
-      learning: number;
-      done: number;
-      skipped: number;
-      total: number;
-      updatedAt: string;
-    }[];
+    roadmaps: ProgressResponse[];
+    bestPractices: ProgressResponse[];
+    customs: ProgressResponse[];
   };
   streak: {
     count: number;
@@ -110,7 +106,8 @@ export function ActivityPage() {
                 })
                 .map((roadmap) => (
                   <ResourceProgress
-                      key={roadmap.id}
+                    key={roadmap.id}
+                    isCustomResource={roadmap.isCustomResource}
                     doneCount={roadmap.done || 0}
                     learningCount={roadmap.learning || 0}
                     totalCount={roadmap.total || 0}
@@ -137,6 +134,8 @@ export function ActivityPage() {
                 })
                 .map((bestPractice) => (
                   <ResourceProgress
+                    isCustomResource={bestPractice.isCustomResource}
+                    key={bestPractice.id}
                     doneCount={bestPractice.done || 0}
                     totalCount={bestPractice.total || 0}
                     learningCount={bestPractice.learning || 0}

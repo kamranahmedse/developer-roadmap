@@ -1,3 +1,4 @@
+import { Fragment } from 'react';
 import { CheckIcon } from './ReactIcons/CheckIcon';
 
 type StepperStep = {
@@ -15,14 +16,14 @@ export function Stepper(props: StepperProps) {
   const { steps, activeIndex = 0, completeSteps = [] } = props;
 
   return (
-    <ol className="flex w-full items-center text-gray-500">
+    <ol className="flex w-full items-center text-gray-500" key="stepper">
       {steps.map((step, stepCounter) => {
         const isComplete = completeSteps.includes(stepCounter);
         const isActive = activeIndex === stepCounter;
-        const isLast = stepCounter === (steps.length - 1);
+        const isLast = stepCounter === steps.length - 1;
 
         return (
-          <>
+          <Fragment key={stepCounter}>
             <li
               className={`flex items-center ${
                 isComplete || isActive ? 'text-black' : 'text-gray-400'
@@ -43,7 +44,7 @@ export function Stepper(props: StepperProps) {
                 <span className={'h-1 w-full'} />
               </li>
             )}
-          </>
+          </Fragment>
         );
       })}
     </ol>

@@ -16,6 +16,7 @@ type FriendResourceProgress = {
   title: string;
   resourceId: string;
   resourceType: string;
+  isCustomResource: boolean;
   learning: number;
   skipped: number;
   done: number;
@@ -52,6 +53,7 @@ export function FriendsPage() {
   const [showFriendProgress, setShowFriendProgress] = useState<{
     resourceId: string;
     friend: ListFriendsResponse[0];
+    isCustomResource?: boolean;
   }>();
 
   const [isLoading, setIsLoading] = useState(true);
@@ -120,6 +122,7 @@ export function FriendsPage() {
           resourceId={showFriendProgress.resourceId}
           resourceType={'roadmap'}
           onClose={() => setShowFriendProgress(undefined)}
+          isCustomResource={showFriendProgress.isCustomResource}
         />
       )}
 
@@ -167,10 +170,11 @@ export function FriendsPage() {
           {filteredFriends.map((friend) => (
             <FriendProgressItem
               friend={friend}
-              onShowResourceProgress={(resourceId) => {
+              onShowResourceProgress={(resourceId, isCustomResource) => {
                 setShowFriendProgress({
                   resourceId,
                   friend,
+                  isCustomResource,
                 });
               }}
               key={friend.userId}

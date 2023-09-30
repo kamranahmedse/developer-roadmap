@@ -1,4 +1,8 @@
 export function getUrlParams() {
+  if (typeof window === 'undefined') {
+    return {};
+  }
+
   const params = new URLSearchParams(window.location.search);
   const paramsObj: Record<string, any> = {};
   for (const [key, value] of params.entries()) {
@@ -9,6 +13,10 @@ export function getUrlParams() {
 }
 
 export function deleteUrlParam(key: string) {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
   const url = new URL(window.location.href);
   if (!url.searchParams.has(key)) {
     return;
@@ -19,6 +27,10 @@ export function deleteUrlParam(key: string) {
 }
 
 export function setUrlParams(params: Record<string, string>) {
+  if (typeof window === 'undefined') {
+    return;
+  }
+
   const url = new URL(window.location.href);
 
   for (const [key, value] of Object.entries(params)) {

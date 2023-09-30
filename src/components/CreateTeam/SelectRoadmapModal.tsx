@@ -100,12 +100,13 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             {roleBasedRoadmaps.length > 0 && (
               <div className="mb-5 flex flex-wrap items-center gap-2">
                 {roleBasedRoadmaps.map((roadmap) => {
-                  const isSelected = !!teamResourceConfig.find(
+                  const isSelected = !!teamResourceConfig?.find(
                     (r) => r.resourceId === roadmap.id
                   );
 
                   return (
                     <SelectRoadmapModalItem
+                      key={roadmap.id}
                       title={roadmap.title}
                       isSelected={isSelected}
                       onClick={() => {
@@ -131,6 +132,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
 
                 return (
                   <SelectRoadmapModalItem
+                    key={roadmap.id}
                     title={roadmap.title}
                     isSelected={isSelected}
                     onClick={() => {
