@@ -2,8 +2,6 @@ import { useRef, useState } from 'react';
 import type { TeamMemberDocument } from './TeamMembersPage';
 import MoreIcon from '../../icons/more-vertical.svg';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import { useToast } from '../../hooks/use-toast';
-import { MailIcon } from '../ReactIcons/MailIcon';
 
 export function MemberActionDropdown({
   member,
@@ -33,13 +31,6 @@ export function MemberActionDropdown({
   });
 
   const actions = [
-    {
-      name: 'Delete',
-      handleClick: () => {
-        onDeleteMember();
-        setIsOpen(false);
-      },
-    },
     ...(allowUpdateRole
       ? [
           {
@@ -73,6 +64,13 @@ export function MemberActionDropdown({
           },
         ]
       : []),
+    {
+      name: 'Delete',
+      handleClick: () => {
+        onDeleteMember();
+        setIsOpen(false);
+      },
+    },
   ];
   return (
     <div className="relative">
