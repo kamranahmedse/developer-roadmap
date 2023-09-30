@@ -3,7 +3,7 @@
 set -e
 
 rm -rf .temp
-git clone git@github.com:roadmapsh/web-draw.git .temp/web-draw
+git clone https://"$PAT"@github.com/roadmapsh/web-draw.git .temp/web-draw
 
 rm -rf renderer
 mkdir renderer
