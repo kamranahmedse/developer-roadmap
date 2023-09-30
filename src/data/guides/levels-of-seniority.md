@@ -31,6 +31,9 @@ Different organizations might have different seniority titles but they mainly fa
 - Junior Developer
 - Mid Level Developer
 - Senior Developer
+- Staff Engineer
+- Principal Engineer
+- Distinguised Engineer
 
 ### Junior Developer
 
@@ -89,6 +92,72 @@ Senior developers are the next level after the Mid-level developers. They are th
 - They have the ability to take on large ill-defined problems, define them, break them up, and execute the pieces. A senior developer can take something big and abstract, and run with it. They will come up with a few options, discuss them with the team and implement them.
 - They have respect for the code that was written before them. They are generous when passing judgment on the architecture or the design decisions made in the codebase. They approach inheriting legacy code with an "opportunity mindset" rather than a complaining one.
 - They know how to give feedback without hurting anyone.
+
+### Staff Engineers
+
+The role of a Staff Engineer can vary from company to company but is commonly found in FAANG tech companies or financial institutions. In companies like Google, Staff Engineers write specialized software solutions used internally to address unique and complex organizational challenges. These solutions are often not accessible outside the company and are tailored to specific needs. Here are some examples:
+
+- Google's Piper is an internal build system that compiles and manages source code across the company. It's used to build and maintain the vast array of software that powers Google's services.
+
+- While Hadoop popularized the concept of MapReduce, Google developed its own internal version long before. MapReduce is used for processing large-scale data across Google's infrastructure and serves as the basis for many data processing tools used within the company.
+
+Here's what Staff Engineers typically do:
+
+- They possess extensive knowledge and skills in multiple domains such as operating systems, database internals, data structures and algorithms, and cloud technologies. They leverage this expertise to create internal software solutions that align with company policies.
+
+- Many Staff Engineers actively contribute to open-source projects like Apache and Spark, as well as various software solutions used in building distributed systems.
+
+- They provide technical leadership within their teams and often across the organization. They help define technical strategies, guide architectural decisions, and ensure that projects align with the company's technical goals.
+
+- They foster innovation within the organization by exploring and introducing new technologies, practices, and approaches to solve complex technical challenges.
+
+- They mediate technical disputes and conflicts within teams, finding solutions that align with the project's goals and technical vision.
+
+- They possess a deep understanding of the business side of their work and align technical decisions with the organization's strategic goals.
+
+- Staff Engineers have a broader impact on the organization's technical direction, whereas Senior Developers typically focus on specific projects.
+
+- Staff Engineers provide more extensive technical leadership, including mentoring, coaching, and influencing the technical culture of the organization.
+
+- While both roles prioritize code quality, Staff Engineers typically have a broader oversight role, conducting technical reviews and providing guidance.
+
+### Principal Engineer
+
+Principal Software Engineers are highly experienced professionals in the field of software development. While roles and responsibilities may vary from one organization to another, Principal Software Engineers typically have additional responsibilities and a broader scope of influence. Here's what Principal Software Engineers typically do:
+
+- Principal Software Engineers frequently engage in research and innovation activities. They explore cutting-edge technologies and assess their potential applications within the organization.
+
+- They represent the organization in external technical communities and may contribute to open-source projects. They are often regarded as thought leaders in their domain.
+
+- They continue to mentor and coach engineers at all levels but may also lead initiatives to foster a strong technical culture throughout the organization.
+
+- They are often involved in strategic decision-making beyond the technical domain, collaborating with senior leadership on business and technical alignment.
+
+- They are frequently called upon to address the most complex and critical technical challenges, often spanning multiple projects or teams.
+
+- They play a role in building a robust technical community within the organization, fostering collaboration and knowledge-sharing among engineers.
+
+- They help drive and manage technical transformations, ensuring that changes are adopted smoothly and effectively throughout the organization.
+
+- They exemplify and promote a strong technical culture within the organization, emphasizing the importance of continuous learning, innovation, and technical excellence.
+
+### Distinguished Engineer
+
+Distinguished Engineer is a prestigious and often the highest technical rank within a technology organization. While the exact responsibilities can vary between companies, Distinguished Engineers typically have unique roles and responsibilities that set them apart from other engineers. Here's what Distinguished Engineers might do that others may not do to the same extent:
+
+- They are recognized as industry experts and thought leaders, often contributing to research, publishing papers, and speaking at conferences. Their expertise extends beyond their organization, and they are seen as influential figures in the industry.
+
+- They often represent their organization in external technical communities, industry consortiums, and standards bodies. They may also contribute to open-source projects and collaborate with peers across the tech landscape.
+
+- They engage in groundbreaking research and innovation activities, exploring emerging technologies and assessing their potential impact on the organization and the industry.
+
+- They bridge the gap between technical and non-technical stakeholders, collaborating with senior leadership on both business and technical strategy. They ensure that technical decisions align with the organization's overarching goals.
+
+- They often have a global impact, shaping the technical landscape not only within their organization but also influencing the broader tech community.
+
+- They address the most complex, high-impact, and mission-critical technical challenges, sometimes requiring groundbreaking solutions or paradigm shifts.
+
+- They foster a strong technical community and culture within the organization, emphasizing the importance of technical excellence, innovation, and continuous learning.
 
 ### Conclusion
 
