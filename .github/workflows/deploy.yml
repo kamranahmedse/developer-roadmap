@@ -19,7 +19,9 @@ jobs:
     - uses: actions/setup-node@v1
       with:
         node-version: 18
-    - run: git config --global url."https://${{ secrets.PAT }}@github.com/".insteadOf ssh://git@github.com/
+    - name: Prepare Draw Repository
+      run: |
+        git clone https://${{ secrets.PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
     - uses: pnpm/action-setup@v2.2.2
       with:
         version: 7.13.4

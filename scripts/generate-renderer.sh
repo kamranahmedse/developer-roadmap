@@ -2,8 +2,11 @@
 
 set -e
 
-rm -rf .temp
-git clone https://"$PAT"@github.com/roadmapsh/web-draw.git .temp/web-draw
+# ignore cloning if .temp/web-draw already exists
+if [ ! -d ".temp/web-draw" ]; then
+  mkdir -p .temp
+  git clone git@github.com:roadmapsh/web-draw.git .temp/web-draw
+fi
 
 rm -rf renderer
 mkdir renderer
@@ -23,9 +26,6 @@ find renderer -type f \( -name "*.ts" -o -name "*.tsx" \) -print0 | while IFS= r
     echo "Added @ts-nocheck to $file"
   fi
 done
-
-# remove the temporary directory
-rm -rf .temp
 
 # ignore the worktree changes for the renderer directory
 git update-index --skip-worktree renderer/*
