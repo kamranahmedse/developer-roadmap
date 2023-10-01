@@ -7,19 +7,22 @@ C++ is a statically typed language, which means that it uses static typing to de
 Here's a simple code example to demonstrate static typing in C++:
 
 ```cpp
+
 #include <iostream>
+#include <string>
 
 int main() {
-    int num = 42;        // 'num' is statically typed as an integer
-    double pi = 3.14159; // 'pi' is statically typed as a double
+    int num1 = 42;      // 'num1' is statically typed as an integer
+    std:: string name = "John"; // 'name' is statically typed as a string
 
-    num = pi; // This assignment would cause a compile-time error as the types don't match
+    // Attempting to assign an incompatible data type will result in a compile-time error
+    num1 = name; // This line will cause a compile-time error because you can't assign a int to an string
 
-    std::cout << "The value of num is: " << num << std::endl;
-    std::cout << "The value of pi is: " << pi << std::endl;
+    std::cout << "The value of num1 is: " << num1 << std::endl;
+    std::cout << "The value of name is: " << name << std::endl;
 
     return 0;
 }
 ```
 
-In the code above, the variable `num` is statically typed as an `int`, and `pi` is statically typed as a `double`. If you attempt to assign the value of `pi` to `num`, you'll get a compile-time error. This is because the static typing system ensures that variables are only used with compatible data types.
+In the code above, the variable num1 is statically typed as an int, and name is statically typed as a string. If you attempt to assign the value of num1 to name, you'll get a compile-time error. This is because the static typing system ensures that variables are only used with compatible data types.
