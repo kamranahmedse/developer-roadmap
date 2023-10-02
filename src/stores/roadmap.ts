@@ -1,7 +1,7 @@
 import { atom, computed } from 'nanostores';
-import { type RoadmapDocument } from '../components/CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+import type { GetRoadmapResponse } from '../components/CustomRoadmap/CustomRoadmap';
 
-export const currentRoadmap = atom<RoadmapDocument | undefined>(undefined);
+export const currentRoadmap = atom<GetRoadmapResponse | undefined>(undefined);
 export const isCurrentRoadmapPersonal = computed(
   currentRoadmap,
   (roadmap) => !roadmap?.teamId
