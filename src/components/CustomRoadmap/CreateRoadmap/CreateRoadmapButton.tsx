@@ -46,7 +46,7 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
         onClick={toggleCreateRoadmapHandler}
       >
         <Plus size={16} />
-        Create a new roadmap
+        Create your own Roadmap
       </button>
     </>
   );
