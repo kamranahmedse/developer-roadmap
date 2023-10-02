@@ -40,6 +40,17 @@ export interface RoadmapContentDocument {
   }[];
 }
 
+export type CreatorType = {
+  id: string;
+  name: string;
+  avatar: string;
+};
+
+export type GetRoadmapResponse = RoadmapDocument & {
+  canManage: boolean;
+  creator?: CreatorType;
+};
+
 export function hideRoadmapLoader() {
   const loaderEl = document.querySelector(
     '[data-roadmap-loader]'
@@ -53,7 +64,7 @@ export function CustomRoadmap() {
   const { id, secret } = getUrlParams() as { id: string; secret: string };
 
   const [isLoading, setIsLoading] = useState(true);
-  const [roadmap, setRoadmap] = useState<RoadmapDocument | null>(null);
+  const [roadmap, setRoadmap] = useState<GetRoadmapResponse | null>(null);
   const [error, setError] = useState<AppError | FetchError | undefined>();
 
   async function getRoadmap() {
@@ -66,7 +77,7 @@ export function CustomRoadmap() {
       roadmapUrl.searchParams.set('secret', secret);
     }
 
-    const { response, error } = await httpGet<RoadmapDocument>(
+    const { response, error } = await httpGet<GetRoadmapResponse>(
       roadmapUrl.toString()
     );
 

@@ -2,14 +2,18 @@ export function SkeletonRoadmapHeader() {
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
-        <div className="mb-3 mt-0 sm:mb-4">
+        <div className="flex items-center gap-1.5">
+          <div className="h-5 w-5 animate-pulse rounded-full bg-gray-300" />
+          <div className="h-5 w-2/12 animate-pulse rounded-md bg-gray-200" />
+        </div>
+        <div className="mb-3 mt-4 sm:mb-4">
           <div className="h-8 w-1/2 animate-pulse rounded-md bg-gray-300 sm:mb-2 sm:h-10" />
           <div className="mt-0.5 h-5 w-1/3 animate-pulse rounded-md bg-gray-200 sm:h-7" />
         </div>
 
         <div className="flex justify-between gap-2 sm:gap-0">
-          <div className="h-7 w-[35.04px] sm:w-32 animate-pulse rounded-md bg-gray-300 sm:h-8" />
-          <div className="h-7 w-[32px] sm:w-[89.73px] animate-pulse rounded-md bg-gray-300 sm:h-8" />
+          <div className="h-7 w-[35.04px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-32" />
+          <div className="h-7 w-[32px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-[89.73px]" />
         </div>
 
         <div className="mb-0 mt-4 rounded-md border-0 sm:-mb-[65px] sm:mt-7 sm:border">
