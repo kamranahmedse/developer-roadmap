@@ -14,24 +14,12 @@ body:
       placeholder: e.g. Roadmap to learn Data Science
     validations:
       required: true
-  - type: dropdown
-    id: browsers
-    attributes:
-      label: Is this roadmap prepared by you or someone else?
-      options:
-        - I prepared this roadmap
-        - I found this roadmap online (please provide a link below)
   - type: textarea
     id: roadmap-description
     attributes:
-      label: Roadmap Items
-      description: Please submit a nested list of items which we can convert into the visual. Here is an [example of roadmap items list.](https://gist.github.com/kamranahmedse/98758d2c73799b3a6ce17385e4c548a5).
+      label: Roadmap Link
+      description: Please create the roadmap [using our roadmap editor](https://twitter.com/kamrify/status/1708293162693767426) and submit the roadmap link.
       placeholder: |
-          - Item 1
-            - Subitem 1
-            - Subitem 2
-          - Item 2
-            - Subitem 1
-            - Subitem 2
+          https://roadmap.sh/xyz
     validations:
       required: true
