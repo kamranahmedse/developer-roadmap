@@ -40,17 +40,6 @@ export interface RoadmapContentDocument {
   }[];
 }
 
-export type CreatorType = {
-  id: string;
-  name: string;
-  avatar: string;
-};
-
-export type GetRoadmapResponse = RoadmapDocument & {
-  canManage: boolean;
-  creator?: CreatorType;
-};
-
 export function hideRoadmapLoader() {
   const loaderEl = document.querySelector(
     '[data-roadmap-loader]'

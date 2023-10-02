@@ -15,12 +15,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   const $canManageCurrentRoadmap = useStore(canManageCurrentRoadmap);
   const $currentRoadmap = useStore(currentRoadmap);
 
-  const {
-    title,
-    description,
-    _id: roadmapId,
-    creator,
-  } = useStore(currentRoadmap) || {};
+  const { title, description, _id: roadmapId } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
   const toast = useToast();
@@ -66,13 +61,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
-        <div className="flex items-center gap-1.5">
-          <img src={avatarUrl} className="h-5 w-5 rounded-full" />
-          <h3 className="text-sm font-medium">
-            {creator?.name || 'Anonymous'}
-          </h3>
-        </div>
-        <div className="mb-3 mt-4 sm:mb-4">
+        <div className="mb-3 mt-0 sm:mb-4">
           <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
           <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
             {description}
