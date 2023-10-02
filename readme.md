@@ -9,8 +9,8 @@
     <a href="https://roadmap.sh/best-practices">
     	<img src="https://img.shields.io/badge/%E2%9C%A8-Best%20Practices-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="best practices" />
     </a>
-    <a href="https://youtube.com/theroadmap?sub_confirmation=1">
-    	<img src="https://img.shields.io/badge/%E2%9C%A8-Videos-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="videos" />
+    <a href="https://roadmap.sh/questions">
+    	<img src="https://img.shields.io/badge/%E2%9C%A8-Questions-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="videos" />
     </a>
     <a href="https://www.youtube.com/channel/UCA0H2KIWgWTwpTFjSxp0now?sub_confirmation=1">
     	<img src="https://img.shields.io/badge/%E2%9C%A8-YouTube%20Channel-0a0a0a.svg?style=flat&colorA=0a0a0a" alt="roadmaps" />
