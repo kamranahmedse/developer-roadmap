@@ -33,27 +33,31 @@ export interface TeamMemberList extends TeamMemberDocument {
 
 type ShareTeamMemberListProps = {
   teamId: string;
-  setMembers: (members: TeamMemberList[]) => void;
-  members: TeamMemberList[];
+  title?: string;
   sharedTeamMemberIds: string[];
   setSharedTeamMemberIds: (sharedTeamMemberIds: string[]) => void;
+
+  membersCache: Map<string, TeamMemberList[]>;
+  isTeamMembersLoading: boolean;
+  setIsTeamMembersLoading: (isLoading: boolean) => void;
 };
 
 export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
   const {
-    setMembers,
-    members,
+    teamId,
+    title = 'Select Members',
     sharedTeamMemberIds,
     setSharedTeamMemberIds,
-    teamId,
+
+    membersCache,
+    isTeamMembersLoading: isLoading,
+    setIsTeamMembersLoading: setIsLoading,
   } = props;
 
   const toast = useToast();
 
-  const [isLoading, setIsLoading] = useState(true);
-
   async function loadTeamMembers() {
-    if (members?.length > 0) {
+    if (membersCache.has(teamId)) {
       return;
     }
 
@@ -67,21 +71,21 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
       return;
     }
 
-    setMembers(response);
+    membersCache.set(teamId, response);
   }
 
   useEffect(() => {
     loadTeamMembers().finally(() => {
       setIsLoading(false);
     });
-  }, []);
+  }, [teamId]);
 
   const loadingMembers = isLoading && (
     <ul className="mt-2 grid grid-cols-3 gap-2.5">
       {[...Array(3)].map((_, idx) => (
         <li
           key={idx}
-          className="flex min-h-[62px] animate-pulse items-center gap-2 rounded-md border p-2"
+          className="flex min-h-[66px] animate-pulse items-center gap-2 rounded-md border p-2"
         >
           <div className="h-8 w-8 shrink-0 rounded-full bg-gray-200" />
           <div className="inline-grid w-full">
@@ -93,11 +97,13 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
     </ul>
   );
 
+  const members = membersCache.get(teamId) || [];
+
   return (
     <>
       {(members.length > 0 || isLoading) && (
         <div className="flex items-center justify-between gap-2">
-          <p className="text-sm">Select Members</p>
+          <p className="text-sm">{title}</p>
 
           <label className="flex items-center gap-2">
             <input

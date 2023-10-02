@@ -1,4 +1,4 @@
-import { type ReactNode, useCallback, useState } from 'react';
+import { type ReactNode, useCallback, useState, useMemo } from 'react';
 import { Globe2, Loader2, Lock } from 'lucide-react';
 import { type ListFriendsResponse, ShareFriendList } from './ShareFriendList';
 import { TransferToTeamList } from './TransferToTeamList';
@@ -49,7 +49,10 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const [isSettingsUpdated, setIsSettingsUpdated] = useState(false);
   const [friends, setFriends] = useState<ListFriendsResponse>([]);
   const [teams, setTeams] = useState<UserTeamItem[]>([]);
-  const [members, setMembers] = useState<TeamMemberList[]>([]);
+
+  // Using global team members loading state to avoid glitchy UI when switching between teams
+  const [isTeamMembersLoading, setIsTeamMembersLoading] = useState(false);
+  const membersCache = useMemo(() => new Map<string, TeamMemberList[]>(), []);
 
   const [visibility, setVisibility] = useState(defaultVisibility);
   const [sharedTeamMemberIds, setSharedTeamMemberIds] = useState<string[]>(
@@ -118,7 +121,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   };
 
   const handleTransferToTeam = useCallback(
-    async (teamId: string) => {
+    async (teamId: string, sharedTeamMemberIds: string[]) => {
       if (!roadmapId) {
         return;
       }
@@ -128,6 +131,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         `${import.meta.env.PUBLIC_API_URL}/v1-transfer-roadmap/${roadmapId}`,
         {
           teamId,
+          sharedTeamMemberIds,
         }
       );
 
@@ -187,6 +191,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
               defaultSharedFriendIds.length > 0 ? defaultSharedFriendIds : []
             );
           } else if (visibility === 'team' && teamId) {
+            setIsTeamMembersLoading(true);
             setSharedTeamMemberIds(
               defaultSharedMemberIds?.length > 0 ? defaultSharedMemberIds : []
             );
@@ -225,14 +230,6 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             setSharedFriendIds={setSharedFriendIds}
           />
         )}
-        {canTransferRoadmap && (
-          <TransferToTeamList
-            teams={teams}
-            setTeams={setTeams}
-            selectedTeamId={selectedTeamId}
-            setSelectedTeamId={setSelectedTeamId}
-          />
-        )}
 
         {/* For Team Roadmap */}
         {visibility === 'team' && teamId && (
@@ -240,9 +237,43 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             teamId={teamId}
             sharedTeamMemberIds={sharedTeamMemberIds}
             setSharedTeamMemberIds={setSharedTeamMemberIds}
-            members={members}
-            setMembers={setMembers}
+            membersCache={membersCache}
+            isTeamMembersLoading={isTeamMembersLoading}
+            setIsTeamMembersLoading={setIsTeamMembersLoading}
           />
+        )}
+
+        {canTransferRoadmap && (
+          <>
+            <TransferToTeamList
+              teams={teams}
+              setTeams={setTeams}
+              selectedTeamId={selectedTeamId}
+              setSelectedTeamId={setSelectedTeamId}
+              isTeamMembersLoading={isTeamMembersLoading}
+              setIsTeamMembersLoading={setIsTeamMembersLoading}
+              onTeamChange={() => {
+                setIsTeamMembersLoading(true);
+                setSharedTeamMemberIds([]);
+              }}
+            />
+            {selectedTeamId && (
+              <>
+                <hr className="-mx-4 my-4" />
+                <div className="mb-4">
+                  <ShareTeamMemberList
+                    title="Select who can access this roadmap. You can change this later."
+                    teamId={selectedTeamId!}
+                    sharedTeamMemberIds={sharedTeamMemberIds}
+                    setSharedTeamMemberIds={setSharedTeamMemberIds}
+                    membersCache={membersCache}
+                    isTeamMembersLoading={isTeamMembersLoading}
+                    setIsTeamMembersLoading={setIsTeamMembersLoading}
+                  />
+                </div>
+              </>
+            )}
+          </>
         )}
       </div>
 
@@ -255,17 +286,23 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
           Close
         </button>
 
-        {canTransferRoadmap ? (
+        {canTransferRoadmap && (
           <UpdateAction
-            disabled={isUpdateDisabled || isLoading}
+            disabled={
+              isUpdateDisabled || isLoading || sharedTeamMemberIds.length === 0
+            }
             onClick={() => {
-              handleTransferToTeam(selectedTeamId!).then(() => null);
+              handleTransferToTeam(selectedTeamId!, sharedTeamMemberIds).then(
+                () => null
+              );
             }}
           >
             {isLoading && <Loader2 className="h-4 w-4 animate-spin" />}
             Transfer
           </UpdateAction>
-        ) : (
+        )}
+
+        {!canTransferRoadmap && (
           <UpdateAction
             disabled={isUpdateDisabled || isLoading}
             onClick={() => {
