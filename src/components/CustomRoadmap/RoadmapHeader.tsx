@@ -72,7 +72,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             {creator?.name || 'Anonymous'}
           </h3>
         </div>
-        <div className="mb-3 mt-0 mt-4 sm:mb-4">
+        <div className="mb-3 mt-4 sm:mb-4">
           <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
           <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
             {description}
