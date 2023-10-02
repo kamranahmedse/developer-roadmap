@@ -49,6 +49,7 @@ export type CreatorType = {
 export type GetRoadmapResponse = RoadmapDocument & {
   canManage: boolean;
   creator?: CreatorType;
+  team?: CreatorType;
 };
 
 export function hideRoadmapLoader() {

@@ -20,6 +20,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     description,
     _id: roadmapId,
     creator,
+    team,
   } = useStore(currentRoadmap) || {};
 
   const [isSharing, setIsSharing] = useState(false);
@@ -66,12 +67,29 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
-        <div className="flex items-center gap-1.5">
-          <img src={avatarUrl} className="h-5 w-5 rounded-full" />
-          <h3 className="text-sm font-medium">
-            {creator?.name || 'Anonymous'}
-          </h3>
-        </div>
+        {creator?.name && (
+          <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
+            <img
+              alt={creator.name}
+              src={avatarUrl}
+              className="h-5 w-5 rounded-full"
+            />
+            <span>
+              Created by&nbsp;
+              <span className="font-semibold text-gray-900">
+                {creator?.name}
+              </span>
+              {team && (
+                <>
+                  &nbsp;in&nbsp;
+                  <span className="font-semibold text-gray-900">
+                    {team?.name}
+                  </span>
+                </>
+              )}
+            </span>
+          </div>
+        )}
         <div className="mb-3 mt-4 sm:mb-4">
           <h1 className="text-2xl font-bold sm:mb-2 sm:text-4xl">{title}</h1>
           <p className="mt-0.5 text-sm text-gray-500 sm:text-lg">
