@@ -1,0 +1,80 @@
+import { Check, CheckCircle, Copy, Sparkles } from 'lucide-react';
+import { useCopyText } from '../../hooks/use-copy-text.ts';
+import { cn } from '../../lib/classname.ts';
+
+export function TeamPricing() {
+  const { isCopied, copyText } = useCopyText();
+  const teamEmail = 'teams@roadmap.sh';
+
+  return (
+      <div className="py-4 sm:py-8 md:py-12 border-t">
+      <div className="container">
+        <h2 className="mb-1 sm:mb-1.5 md:mb-2 text-xl sm:text-2xl md:text-3xl font-bold">Beta Pricing</h2>
+        <p className="mb-4 sm:mb-8 text-base sm:text-lg text-gray-600">
+          We are currently in beta and are offering free access to all features.
+        </p>
+
+        <div className="flex flex-col sm:flex-row gap-6 sm:gap-4">
+          <div className="relative flex flex-col items-center justify-center gap-2 overflow-hidden rounded-xl border border-purple-500">
+            <div className="px-8 pb-2 pt-5 sm:pt-4 text-center">
+              <h3 className="mb-1 text-2xl font-bold">Free</h3>
+              <p className="text-sm text-gray-500">No credit card required</p>
+              <p className="flex items-start justify-center gap-1 py-6 text-3xl">
+                <span className="text-base text-gray-600">$</span>
+                <span className="text-5xl font-bold">0</span>
+              </p>
+
+              <a
+                href="/signup"
+                className="block rounded-md bg-purple-600 px-6 py-2 text-center text-sm font-medium leading-6 text-white shadow transition hover:bg-gray-700 hover:shadow-lg focus:outline-none"
+              >
+                Sign up for free
+              </a>
+            </div>
+            <div className="flex w-full flex-col gap-1 border-t px-8 py-5 sm:py-3 text-center">
+              <p className="text-gray-600">Roles and Permissions</p>
+              <p className="text-gray-600">Custom Roadmaps</p>
+              <p className="text-gray-600">Progress Tracking</p>
+              <p className="text-gray-600">Team Insights</p>
+              <p className="text-gray-600">Onboarding support</p>
+            </div>
+          </div>
+          <div className="flex py-8 flex-grow flex-col items-center justify-center rounded-md border border-gray-300">
+            <img alt={'waving hand'} src={'/images/team-promo/contact.png'} className="mb-3 h-40" />
+            <p className="mb-2 font-medium text-gray-500">
+              Questions? We are here to help!
+            </p>
+            <p className="text-gray-600">
+              <button
+                onClick={() => {
+                  copyText(teamEmail);
+                }}
+                className={cn(
+                  'relative flex items-center justify-between gap-3 overflow-hidden rounded-md border border-black bg-white px-4 py-2 text-black hover:bg-gray-100'
+                )}
+              >
+                {teamEmail}
+                <Copy
+                  className="relative top-[1px] ml-2 inline-block text-black transition-opacity"
+                  size={16}
+                />
+
+                <span
+                  className={cn(
+                    'absolute bottom-0 left-0 right-0 flex items-center justify-center bg-black text-white transition-all',
+                    {
+                      'top-full': !isCopied,
+                      'top-0': isCopied,
+                    }
+                  )}
+                >
+                  Email copied!
+                </span>
+              </button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}

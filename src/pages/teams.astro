@@ -1,0 +1,14 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { TeamHeroBanner } from '../components/TeamMarketing/TeamHeroBanner';
+import { TeamTools } from '../components/TeamMarketing/TeamTools';
+import { TeamDemo } from '../components/TeamMarketing/TeamDemo';
+import { TeamPricing } from '../components/TeamMarketing/TeamPricing';
+---
+
+<BaseLayout title='Roadmaps for teams' permalink={'/teams'}>
+  <TeamHeroBanner />
+  <TeamTools />
+  <TeamDemo client:load />
+  <TeamPricing client:load />
+</BaseLayout>
