@@ -1,9 +1,9 @@
 import { CheckCircle, CheckCircle2, CheckIcon } from 'lucide-react';
 
 const featureList = [
-  'Invite your team members',
-  'Create custom roadmaps for your teams',
+  'Create custom roadmaps for your team',
   "Plan, track and document your team's skills and growth",
+  'Invite your team members',
   "Get insights on your team's skills and growth",
 ];
 
@@ -56,7 +56,7 @@ export function TeamHeroBanner() {
           <img
             alt={'team roadmaps'}
             className="hidden h-64 md:block lg:h-80"
-            src="/images/team-promo/hero.png"
+            src="/images/team-promo/hero-img.png"
           />
         </div>
       </div>

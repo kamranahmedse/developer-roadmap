@@ -23,7 +23,7 @@ const demoItems = [
   {
     title: 'Team Dashboard',
     description:
-      'Keep an eye on the team progress through <span class="font-semibold">team dashboard</span>',
+      'Keep an eye on the team progress through <span class="font-semibold">team dashboards</span>',
     image: '/images/team-promo/team-dashboard.png',
   },
   {

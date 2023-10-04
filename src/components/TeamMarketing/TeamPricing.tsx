@@ -11,7 +11,7 @@ export function TeamPricing() {
       <div className="container">
         <h2 className="mb-1 sm:mb-1.5 md:mb-2 text-xl sm:text-2xl md:text-3xl font-bold">Beta Pricing</h2>
         <p className="mb-4 sm:mb-8 text-base sm:text-lg text-gray-600">
-          We are currently in beta and are offering free access to all features.
+          We are currently in public beta and are offering free access to all features.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-6 sm:gap-4">
