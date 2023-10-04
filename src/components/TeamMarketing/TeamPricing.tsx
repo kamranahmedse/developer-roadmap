@@ -35,7 +35,7 @@ export function TeamPricing() {
               <p className="text-black font-semibold">All the features</p>
               <p className="text-gray-600">Roles and Permissions</p>
               <p className="text-gray-600">Custom Roadmaps</p>
-              <p className="text-gray-600">All Sharing Settings</p>
+              <p className="text-gray-600">Sharing Options</p>
               <p className="text-gray-600">Progress Tracking</p>
               <p className="text-gray-600">Team Insights</p>
               <p className="text-gray-600">Onboarding support</p>

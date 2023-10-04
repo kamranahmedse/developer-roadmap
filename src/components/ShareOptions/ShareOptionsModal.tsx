@@ -191,7 +191,6 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
               defaultSharedFriendIds.length > 0 ? defaultSharedFriendIds : []
             );
           } else if (visibility === 'team' && teamId) {
-            setIsTeamMembersLoading(true);
             setSharedTeamMemberIds(
               defaultSharedMemberIds?.length > 0 ? defaultSharedMemberIds : []
             );
@@ -253,7 +252,6 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
               isTeamMembersLoading={isTeamMembersLoading}
               setIsTeamMembersLoading={setIsTeamMembersLoading}
               onTeamChange={() => {
-                setIsTeamMembersLoading(true);
                 setSharedTeamMemberIds([]);
               }}
             />
