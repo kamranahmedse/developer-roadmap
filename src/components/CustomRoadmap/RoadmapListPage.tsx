@@ -86,13 +86,13 @@ export function RoadmapListPage() {
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
-      <div className="mb-6 flex items-center justify-between">
-        <div className="flex items-center gap-2">
+      <div className="mb-6 flex flex-col justify-between gap-2 sm:flex-row sm:items-center sm:gap-0">
+        <div className="flex grow items-center gap-2">
           {tabTypes.map((tab) => {
             return (
               <button
                 key={tab.value}
-                className={`relative flex items-center justify-center rounded-md border p-1 px-3 text-sm ${
+                className={`relative flex w-full items-center justify-center whitespace-nowrap rounded-md border p-1 px-3 text-sm sm:w-auto ${
                   activeTab === tab.value ? ' border-gray-400 bg-gray-200 ' : ''
                 } w-full sm:w-auto`}
                 onClick={() => setActiveTab(tab.value)}

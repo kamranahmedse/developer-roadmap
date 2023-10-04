@@ -11,10 +11,22 @@ type TransferToTeamListProps = {
 
   selectedTeamId: string | null;
   setSelectedTeamId: (teamId: string | null) => void;
+
+  isTeamMembersLoading: boolean;
+  setIsTeamMembersLoading: (isLoading: boolean) => void;
+  onTeamChange: (teamId: string | null) => void;
 };
 
 export function TransferToTeamList(props: TransferToTeamListProps) {
-  const { teams, setTeams, selectedTeamId, setSelectedTeamId } = props;
+  const {
+    teams,
+    setTeams,
+    selectedTeamId,
+    setSelectedTeamId,
+    isTeamMembersLoading,
+    setIsTeamMembersLoading,
+    onTeamChange,
+  } = props;
 
   const toast = useToast();
 
@@ -73,11 +85,17 @@ export function TransferToTeamList(props: TransferToTeamListProps) {
               <li key={team._id}>
                 <button
                   className={cn(
-                    'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5',
+                    'relative flex w-full items-center gap-2.5 rounded-lg border p-2.5 disabled:cursor-not-allowed disabled:opacity-70',
                     isSelected && 'border-gray-500 bg-gray-100 text-black'
                   )}
+                  disabled={isTeamMembersLoading}
                   onClick={() => {
-                    setSelectedTeamId(team._id);
+                    if (isSelected) {
+                      setSelectedTeamId(null);
+                    } else {
+                      setSelectedTeamId(team._id);
+                    }
+                    onTeamChange(team._id);
                   }}
                 >
                   <img
