@@ -2,12 +2,18 @@ import { Check, CheckCircle, Copy, Sparkles } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 import { cn } from '../../lib/classname.ts';
 import { isLoggedIn } from '../../lib/jwt.ts';
+import { fireTeamCreationClick } from './TeamHeroBanner.tsx';
+import { useEffect, useState } from 'react';
 
 export function TeamPricing() {
   const { isCopied, copyText } = useCopyText();
   const teamEmail = 'teams@roadmap.sh';
 
-  const isAuthenticated = isLoggedIn();
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
+
+  useEffect(() => {
+    setIsAuthenticated(isLoggedIn());
+  }, []);
 
   return (
     <div className="border-t py-4 sm:py-8 md:py-12">
@@ -32,6 +38,7 @@ export function TeamPricing() {
 
               <a
                 onClick={() => {
+                  fireTeamCreationClick();
                   if (isAuthenticated) {
                     return;
                   }

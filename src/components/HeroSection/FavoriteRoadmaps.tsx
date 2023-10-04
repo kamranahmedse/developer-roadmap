@@ -119,20 +119,23 @@ export function FavoriteRoadmaps() {
 
   return (
     <div
-      className={`flex min-h-[192px] bg-gradient-to-b transition-opacity duration-500 sm:min-h-[280px] opacity-${containerOpacity} ${
-        hasProgress && `border-t border-t-[#1e293c]`
-      }`}
+      className={`transition-opacity duration-500  opacity-${containerOpacity}`}
     >
-      <div className="container min-h-full">
-        {!isLoading && progress?.length == 0 && <EmptyProgress />}
-        {hasProgress && (
-          <HeroRoadmaps
-            showCustomRoadmaps={true}
-            customRoadmaps={customRoadmaps}
-            progress={defaultRoadmaps}
-            isLoading={isLoading}
-          />
-        )}
+      <div
+        className={`flex min-h-[192px] bg-gradient-to-b sm:min-h-[280px] ${
+          hasProgress && `border-t border-t-[#1e293c]`
+        }`}
+      >
+        <div className="container min-h-full">
+          {!isLoading && progress?.length == 0 && <EmptyProgress />}
+          {hasProgress && (
+            <HeroRoadmaps
+              customRoadmaps={customRoadmaps}
+              progress={defaultRoadmaps}
+              isLoading={isLoading}
+            />
+          )}
+        </div>
       </div>
     </div>
   );

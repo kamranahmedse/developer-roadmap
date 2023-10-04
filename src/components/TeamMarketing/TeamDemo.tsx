@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
 import { isLoggedIn } from '../../lib/jwt.ts';
+import { fireTeamCreationClick } from './TeamHeroBanner.tsx';
 
 const demoItems = [
   {
@@ -56,7 +57,11 @@ export function TeamDemo() {
   const [hasViewed, setHasViewed] = useState<number[]>([0]);
   const [activeItem, setActiveItem] = useState(demoItems[0]);
 
-  const isAuthenticated = isLoggedIn();
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
+
+  useEffect(() => {
+    setIsAuthenticated(isLoggedIn());
+  }, []);
 
   return (
     <div className="hidden border-t py-12 sm:block">
@@ -122,6 +127,7 @@ export function TeamDemo() {
               <div className="flex flex-row items-center gap-2">
                 <a
                   onClick={() => {
+                    fireTeamCreationClick();
                     if (isAuthenticated) {
                       return;
                     }
@@ -138,6 +144,7 @@ export function TeamDemo() {
                     or &nbsp;
                     <a
                       onClick={() => {
+                        fireTeamCreationClick();
                         localStorage.setItem('authRedirect', '/team/new');
                       }}
                       href="/login"

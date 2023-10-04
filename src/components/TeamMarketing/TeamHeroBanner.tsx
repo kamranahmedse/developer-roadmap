@@ -1,5 +1,6 @@
 import { CheckCircle, CheckCircle2, CheckIcon } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt.ts';
+import { useEffect, useState } from 'react';
 
 const featureList = [
   'Create custom roadmaps for your team',
@@ -8,8 +9,21 @@ const featureList = [
   "Get insights on your team's skills and growth",
 ];
 
+export function fireTeamCreationClick() {
+  window.fireEvent({
+    category: 'FeatureClick',
+    action: `Pages / Teams`,
+    label: 'Create your Team',
+  });
+}
+
 export function TeamHeroBanner() {
-  const isAuthenticated = isLoggedIn();
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean>();
+
+  useEffect(() => {
+    setIsAuthenticated(isLoggedIn());
+  }, []);
+
   return (
     <div className="bg-white py-8 lg:py-12">
       <div className="container">
@@ -34,11 +48,7 @@ export function TeamHeroBanner() {
             <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
               <a
                 onClick={() => {
-                  if (isAuthenticated) {
-                    return;
-                  }
-
-                  localStorage.setItem('authRedirect', '/team/new');
+                  fireTeamCreationClick();
                 }}
                 href={isAuthenticated ? '/team/new' : '/signup'}
                 className="flex w-full items-center justify-center rounded-lg border border-transparent bg-purple-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700 sm:w-auto sm:text-base"
@@ -52,6 +62,7 @@ export function TeamHeroBanner() {
                     <a
                       href="/login"
                       onClick={() => {
+                        fireTeamCreationClick();
                         localStorage.setItem('authRedirect', '/team/new');
                       }}
                       className="text-purple-600 underline  hover:text-purple-700"
@@ -62,6 +73,7 @@ export function TeamHeroBanner() {
                   <a
                     href="/login"
                     onClick={() => {
+                      fireTeamCreationClick();
                       localStorage.setItem('authRedirect', '/team/new');
                     }}
                     className="flex w-full items-center justify-center rounded-lg border border-purple-600 px-5 py-2 text-base text-sm font-medium text-purple-600 hover:bg-blue-700 sm:hidden sm:text-base"
