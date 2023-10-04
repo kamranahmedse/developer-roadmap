@@ -1,4 +1,5 @@
 import { CheckCircle, CheckCircle2, CheckIcon } from 'lucide-react';
+import { isLoggedIn } from '../../lib/jwt.ts';
 
 const featureList = [
   'Create custom roadmaps for your team',
@@ -8,12 +9,13 @@ const featureList = [
 ];
 
 export function TeamHeroBanner() {
+  const isAuthenticated = isLoggedIn();
   return (
     <div className="bg-white py-8 lg:py-12">
       <div className="container">
         <div className="flex flex-row items-center justify-start text-left lg:justify-between">
           <div className="flex flex-grow flex-col">
-            <h1 className="mb-0.5 sm:mb-2.5 text-2xl sm:text-4xl font-bold lg:mb-4 lg:text-5xl">
+            <h1 className="mb-0.5 text-2xl font-bold sm:mb-2.5 sm:text-4xl lg:mb-4 lg:text-5xl">
               Roadmaps for Teams
             </h1>
             <p className="mb-4 text-base leading-normal text-gray-600 sm:mb-0 sm:leading-none lg:text-lg">
@@ -31,26 +33,43 @@ export function TeamHeroBanner() {
 
             <div className="flex flex-col items-start gap-2 sm:flex-row sm:items-center">
               <a
-                href="/signup"
+                onClick={() => {
+                  if (isAuthenticated) {
+                    return;
+                  }
+
+                  localStorage.setItem('authRedirect', '/team/new');
+                }}
+                href={isAuthenticated ? '/team/new' : '/signup'}
                 className="flex w-full items-center justify-center rounded-lg border border-transparent bg-purple-600 px-5 py-2 text-sm font-medium text-white hover:bg-blue-700 sm:w-auto sm:text-base"
               >
                 Create your Team
               </a>
-              <span className="ml-1 hidden text-base sm:inline">
-                or &nbsp;
-                <a
-                  href="/login"
-                  className="text-purple-600 underline  hover:text-purple-700"
-                >
-                  Login to your account
-                </a>
-              </span>
-              <a
-                href="/login"
-                className="flex w-full items-center justify-center rounded-lg border border-purple-600 px-5 py-2 text-base text-sm font-medium text-purple-600 hover:bg-blue-700 sm:hidden sm:text-base"
-              >
-                Login to your account
-              </a>
+              {!isAuthenticated && (
+                <>
+                  <span className="ml-1 hidden text-base sm:inline">
+                    or &nbsp;
+                    <a
+                      href="/login"
+                      onClick={() => {
+                        localStorage.setItem('authRedirect', '/team/new');
+                      }}
+                      className="text-purple-600 underline  hover:text-purple-700"
+                    >
+                      Login to your account
+                    </a>
+                  </span>
+                  <a
+                    href="/login"
+                    onClick={() => {
+                      localStorage.setItem('authRedirect', '/team/new');
+                    }}
+                    className="flex w-full items-center justify-center rounded-lg border border-purple-600 px-5 py-2 text-base text-sm font-medium text-purple-600 hover:bg-blue-700 sm:hidden sm:text-base"
+                  >
+                    Login to your account
+                  </a>
+                </>
+              )}
             </div>
           </div>
           <img

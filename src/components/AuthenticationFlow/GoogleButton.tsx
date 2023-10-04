@@ -55,6 +55,12 @@ export function GoogleButton(props: GoogleButtonProps) {
           }
         }
 
+        const authRedirectUrl = localStorage.getItem('authRedirect');
+        if (authRedirectUrl) {
+          localStorage.removeItem('authRedirect');
+          redirectUrl = authRedirectUrl;
+        }
+
         localStorage.removeItem(GOOGLE_REDIRECT_AT);
         localStorage.removeItem(GOOGLE_LAST_PAGE);
         Cookies.set(TOKEN_COOKIE_NAME, response.token, {
@@ -86,10 +92,11 @@ export function GoogleButton(props: GoogleButtonProps) {
         // For non authentication pages, we want to redirect back to the page
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
-          const pagePath =
-            ['/respond-invite', '/befriend'].includes(window.location.pathname)
-              ? window.location.pathname + window.location.search
-              : window.location.pathname;
+          const pagePath = ['/respond-invite', '/befriend'].includes(
+            window.location.pathname
+          )
+            ? window.location.pathname + window.location.search
+            : window.location.pathname;
 
           localStorage.setItem(GOOGLE_REDIRECT_AT, Date.now().toString());
           localStorage.setItem(GOOGLE_LAST_PAGE, pagePath);

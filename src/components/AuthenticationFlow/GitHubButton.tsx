@@ -56,6 +56,12 @@ export function GitHubButton(props: GitHubButtonProps) {
           }
         }
 
+        const authRedirectUrl = localStorage.getItem('authRedirect');
+        if (authRedirectUrl) {
+          localStorage.removeItem('authRedirect');
+          redirectUrl = authRedirectUrl;
+        }
+
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
         Cookies.set(TOKEN_COOKIE_NAME, response.token, {

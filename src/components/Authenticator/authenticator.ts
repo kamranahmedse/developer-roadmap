@@ -73,7 +73,10 @@ function handleAuthenticated() {
 
   // If the user is on a guest route, redirect them to the home page
   if (guestRoutes.includes(window.location.pathname)) {
-    window.location.href = '/';
+    const authRedirect = window.localStorage.getItem('authRedirect') || '/';
+    window.localStorage.removeItem('authRedirect');
+
+    window.location.href = authRedirect;
   }
 }
 

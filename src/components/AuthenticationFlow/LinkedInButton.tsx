@@ -55,6 +55,12 @@ export function LinkedInButton(props: LinkedInButtonProps) {
           }
         }
 
+        const authRedirectUrl = localStorage.getItem('authRedirect');
+        if (authRedirectUrl) {
+          localStorage.removeItem('authRedirect');
+          redirectUrl = authRedirectUrl;
+        }
+
         localStorage.removeItem(LINKEDIN_REDIRECT_AT);
         localStorage.removeItem(LINKEDIN_LAST_PAGE);
         Cookies.set(TOKEN_COOKIE_NAME, response.token, {
