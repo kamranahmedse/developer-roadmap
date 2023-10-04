@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { cn } from '../../lib/classname.ts';
+import { isLoggedIn } from '../../lib/jwt.ts';
 
 const demoItems = [
   {
@@ -55,8 +56,10 @@ export function TeamDemo() {
   const [hasViewed, setHasViewed] = useState<number[]>([0]);
   const [activeItem, setActiveItem] = useState(demoItems[0]);
 
+  const isAuthenticated = isLoggedIn();
+
   return (
-    <div className="border-t py-12 hidden sm:block">
+    <div className="hidden border-t py-12 sm:block">
       <div className="container">
         <h2 className="mb-2 text-3xl font-bold">See how it works</h2>
         <p>Here is a sneak peek of what you can do today (more coming soon!)</p>
@@ -71,10 +74,7 @@ export function TeamDemo() {
                 <span key={item.title} className="relative flex items-center">
                   <span
                     onClick={() => {
-                      setHasViewed([
-                          ...hasViewed,
-                          counter
-                      ])
+                      setHasViewed([...hasViewed, counter]);
                       setActiveItem(item);
                     }}
                     className={cn('z-50 cursor-pointer rounded-full p-[6px]', {
@@ -82,13 +82,18 @@ export function TeamDemo() {
                       'bg-gray-300 hover:bg-gray-400': item !== activeItem,
                     })}
                   />
-                  {!hasAlreadyViewed && <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-gray-400 opacity-75"></span> }
+                  {!hasAlreadyViewed && (
+                    <span className="pointer-events-none absolute inline-flex h-full w-full animate-ping rounded-full bg-gray-400 opacity-75"></span>
+                  )}
                 </span>
               );
             }
 
             return (
-              <span key={item.title} className=" rounded-full bg-black px-3 py-0.5 text-sm text-white">
+              <span
+                key={item.title}
+                className=" rounded-full bg-black px-3 py-0.5 text-sm text-white"
+              >
                 {activeItem.title}
               </span>
             );
@@ -116,20 +121,32 @@ export function TeamDemo() {
               </p>
               <div className="flex flex-row items-center gap-2">
                 <a
-                  href="/signup"
+                  onClick={() => {
+                    if (isAuthenticated) {
+                      return;
+                    }
+
+                    localStorage.setItem('authRedirect', '/team/new');
+                  }}
+                  href={isAuthenticated ? '/team/new' : '/signup'}
                   className="inline-flex items-center justify-center rounded-lg border border-transparent bg-purple-600 px-5 py-2 text-base font-medium text-white hover:bg-purple-700"
                 >
                   Create your Team
                 </a>
-                <span className="ml-1 text-base">
-                  or &nbsp;
-                  <a
-                    href="/login"
-                    className="text-purple-600 underline  hover:text-purple-700"
-                  >
-                    Login to your account
-                  </a>
-                </span>
+                {!isAuthenticated && (
+                  <span className="ml-1 text-base">
+                    or &nbsp;
+                    <a
+                      onClick={() => {
+                        localStorage.setItem('authRedirect', '/team/new');
+                      }}
+                      href="/login"
+                      className="text-purple-600 underline  hover:text-purple-700"
+                    >
+                      Login to your account
+                    </a>
+                  </span>
+                )}
               </div>
             </div>
           )}

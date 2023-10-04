@@ -27,9 +27,26 @@ import { AccountDropdown } from './AccountDropdown';
         <a href='/questions' class='text-gray-400 hover:text-white'>Questions</a
         >
       </li>
-      <lif>
-        <a href='/teams' class='text-gray-400 hover:text-white'>Teams</a>
-      </lif>
+      <li>
+        <a href='/teams' class='group relative text-blue-300 hover:text-white'>
+          Teams
+          <span
+            class='ml-0.5 hidden rounded-sm border-black bg-blue-300 px-1 py-0.5 text-xs font-semibold uppercase text-black group-hover:bg-white md:inline'
+          >
+            New
+          </span>
+
+          <span class='inline md:hidden absolute -right-[11px] top-0'>
+            <span class='relative flex h-2 w-2'>
+              <span
+                class='absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75'
+              ></span>
+              <span class='relative inline-flex h-2 w-2 rounded-full bg-sky-500'
+              ></span>
+            </span>
+          </span>
+        </a>
+      </li>
       <li>
         <kbd
           data-command-menu
@@ -45,7 +62,7 @@ import { AccountDropdown } from './AccountDropdown';
         <a href='/login' class='text-gray-400 hover:text-white'>Login</a>
       </li>
       <li>
-        <AccountDropdown client:only="react" />
+        <AccountDropdown client:only='react' />
 
         <a
           data-guest-required
