@@ -41,11 +41,27 @@ const defaultPages: PageType[] = [
     isProtected: true,
   },
   {
+    id: 'friends',
+    url: '/account/friends',
+    title: 'Friends',
+    group: 'Pages',
+    icon: GroupIcon.src,
+    isProtected: true,
+  },
+  {
     id: 'roadmaps',
     url: '/roadmaps',
     title: 'Roadmaps',
     group: 'Pages',
     icon: RoadmapIcon.src,
+  },
+  {
+    id: 'account-roadmaps',
+    url: '/account/roadmaps',
+    title: 'Custom Roadmaps',
+    group: 'Pages',
+    icon: RoadmapIcon.src,
+    isProtected: true,
   },
   {
     id: 'best-practices',

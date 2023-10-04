@@ -27,6 +27,14 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
         </a>
       </li>
       <li className="px-1">
+        <a
+          href="/account/roadmaps"
+          className="block rounded pl-4 pr-2 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
+        >
+          Roadmaps
+        </a>
+      </li>
+      <li className="px-1">
         <button
           className="group flex w-full items-center justify-between rounded pl-4 pr-2 py-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
           onClick={() => setIsTeamsOpen(true)}
