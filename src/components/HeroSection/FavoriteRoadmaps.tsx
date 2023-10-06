@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { EmptyProgress } from './EmptyProgress';
 import { httpGet } from '../../lib/http';
-import { HeroRoadmaps } from './HeroRoadmaps';
+import { HeroRoadmaps, type HeroTeamRoadmaps } from './HeroRoadmaps';
 import { isLoggedIn } from '../../lib/jwt';
+import type { AllowedMemberRoles } from '../ShareOptions/ShareTeamMemberList.tsx';
 
 export type UserProgressResponse = {
   resourceId: string;
@@ -15,6 +16,11 @@ export type UserProgressResponse = {
   total: number;
   updatedAt: Date;
   isCustomResource: boolean;
+  team?: {
+    name: string;
+    id: string;
+    role: AllowedMemberRoles;
+  };
 }[];
 
 function renderProgress(progressList: UserProgressResponse) {
@@ -114,8 +120,22 @@ export function FavoriteRoadmaps() {
   }
 
   const hasProgress = progress?.length > 0;
-  const customRoadmaps = progress?.filter((p) => p.isCustomResource);
+  const customRoadmaps = progress?.filter(
+    (p) => p.isCustomResource && !p.team?.name
+  );
   const defaultRoadmaps = progress?.filter((p) => !p.isCustomResource);
+  const teamRoadmaps: HeroTeamRoadmaps = progress
+    ?.filter((p) => p.isCustomResource && p.team?.name)
+    .reduce((acc: HeroTeamRoadmaps, curr) => {
+      const currTeam = curr.team!;
+      if (!acc[currTeam.name]) {
+        acc[currTeam.name] = [];
+      }
+
+      acc[currTeam.name].push(curr);
+
+      return acc;
+    }, {});
 
   return (
     <div
@@ -130,6 +150,7 @@ export function FavoriteRoadmaps() {
           {!isLoading && progress?.length == 0 && <EmptyProgress />}
           {hasProgress && (
             <HeroRoadmaps
+              teamRoadmaps={teamRoadmaps}
               customRoadmaps={customRoadmaps}
               progress={defaultRoadmaps}
               isLoading={isLoading}

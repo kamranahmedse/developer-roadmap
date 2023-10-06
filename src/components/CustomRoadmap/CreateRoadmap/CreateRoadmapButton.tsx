@@ -12,10 +12,12 @@ import { useState } from 'react';
 type CreateRoadmapButtonProps = {
   className?: string;
   type?: AllowedCustomRoadmapType;
+  text?: string;
+  teamId?: string;
 };
 
 export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
-  const { className, type } = props;
+  const { teamId, className, type, text = 'Create your own Roadmap' } = props;
 
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
@@ -31,6 +33,7 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
     <>
       {isCreatingRoadmap && (
         <CreateRoadmapModal
+          teamId={teamId}
           type={type}
           onClose={() => {
             setIsCreatingRoadmap(false);
@@ -46,7 +49,7 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
         onClick={toggleCreateRoadmapHandler}
       >
         <Plus size={16} />
-        Create your own Roadmap
+        {text}
       </button>
     </>
   );
