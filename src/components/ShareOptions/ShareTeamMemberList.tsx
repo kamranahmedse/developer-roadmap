@@ -71,7 +71,9 @@ export function ShareTeamMemberList(props: ShareTeamMemberListProps) {
       return;
     }
 
-    membersCache.set(teamId, response);
+    const joinedMembers =
+      response?.filter((member) => member.status === 'joined') || [];
+    membersCache.set(teamId, joinedMembers);
   }
 
   useEffect(() => {
