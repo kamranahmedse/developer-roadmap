@@ -2,6 +2,6 @@
 
 - [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/)
 - [Attention is All you Need](https://arxiv.org/pdf/1706.03762.pdf)
-- [Deep Learning Book](https://www.deeplearningbook.org/)
+- [Deep Learning Book](https://pt.d2l.ai/index.html)
 - [Deep Learning Specialization](https://imp.i384100.net/Wq9MV3)
 
