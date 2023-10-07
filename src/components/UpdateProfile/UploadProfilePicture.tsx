@@ -111,7 +111,6 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
     if (error || !response) {
       setError(error?.message || 'Something went wrong');
       setIsLoading(false);
-      return;
     }
 
     // Logout user if token is invalid
