@@ -1,6 +1,7 @@
 import Cookies from 'js-cookie';
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { httpPost } from '../../lib/http';
 
 interface PreviewFile extends File {
   preview: string;
@@ -90,47 +91,37 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
       return;
     }
 
-    const formData = new FormData();
-    formData.append('name', 'avatar');
-    formData.append('avatar', file);
+    const profileData: Record<string, any> = {
+      'name': 'avatar',
+      'avatar': file
+    };
 
-    // FIXME: Use `httpCall` helper instead of fetch
-    let res: Response;
-    if (type === 'avatar') {
-      res = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-upload-profile-picture`,
-        {
-          method: 'POST',
-          body: formData,
-          credentials: 'include',
-        }
-      );
+    let uploadPictureUrl: string;
+    if (type == 'avatar') {
+      uploadPictureUrl = `${import.meta.env.PUBLIC_API_URL}/v1-upload-profile-picture`;
     } else {
-      res = await fetch(
-        `${import.meta.env.PUBLIC_API_URL}/v1-upload-team-logo/${teamId}`,
-        {
-          method: 'POST',
-          body: formData,
-          credentials: 'include',
-        }
-      );
+      uploadPictureUrl = `${import.meta.env.PUBLIC_API_URL}/v1-upload-team-logo/${teamId}`
     }
 
-    if (res.ok) {
+    const {response, error} = await httpPost(
+      uploadPictureUrl,
+      profileData
+    );
+
+    if (error || !response) {
+      setError(error?.message || 'Something went wrong');
+      setIsLoading(false);
+    }
+
+    // Logout user if token is invalid
+    if (error?.status === 401) {
+      Cookies.remove(TOKEN_COOKIE_NAME);
       window.location.reload();
       return;
     }
-
-    const data = await res.json();
-
-    setError(data?.message || 'Something went wrong');
-    setIsLoading(false);
-
-    // Logout user if token is invalid
-    if (data.status === 401) {
-      Cookies.remove(TOKEN_COOKIE_NAME);
-      window.location.reload();
-    }
+    
+    window.location.reload();
+    return;
   };
 
   useEffect(() => {
