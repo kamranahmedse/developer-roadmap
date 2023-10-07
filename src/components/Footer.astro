@@ -31,7 +31,8 @@ import Icon from './AstroIcon.astro';
       <a
         class='px-2 py-1.5 transition-colors hover:text-white sm:border-b-0 sm:px-0 sm:py-0'
         href='https://youtube.com/theroadmap?sub_confirmation=1'
-        target='_blank'>YouTube</a>
+        target='_blank'>YouTube</a
+      >
     </p>
 
     <div class='flex flex-col justify-between gap-12 sm:flex-row'>
@@ -67,20 +68,30 @@ import Icon from './AstroIcon.astro';
             <a href='/privacy' class='hover:text-white'>Privacy</a>
             <span class='mx-1.5'>&middot;</span>
             <a
-              aria-label="Subscribe to YouTube channel"
+              aria-label='Write us an email'
+              href='mailto:info@roadmap.sh'
+              class='hover:text-white'
+            >
+              <AstroIcon icon='letter' class='inline-block h-5 w-5' />
+            </a>
+            <a
+              aria-label='Subscribe to YouTube channel'
               href='https://youtube.com/theroadmap?sub_confirmation=1'
               target='_blank'
-              class='hover:text-white'
+              class='ml-2 hover:text-white'
             >
               <AstroIcon icon='youtube' class='inline-block h-5 w-5' />
             </a>
             <a
-              aria-label="Follow on Twitter"
+              aria-label='Follow on Twitter'
               href='https://twitter.com/roadmapsh'
               target='_blank'
               class='ml-2 hover:text-white'
             >
-              <AstroIcon icon='twitter-fill' class='inline-block h-5 w-5 fill-current' />
+              <AstroIcon
+                icon='twitter-fill'
+                class='inline-block h-5 w-5 fill-current'
+              />
             </a>
           </p>
         </div>
