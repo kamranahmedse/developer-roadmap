@@ -170,7 +170,7 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
             });
           }}
         />
-        {hideRenderer && <EmptyRoadmap />}
+        {hideRenderer && <EmptyRoadmap roadmapId={roadmapId} />}
       </div>
     </div>
   );
