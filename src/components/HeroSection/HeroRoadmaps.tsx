@@ -192,7 +192,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
         const canManageTeam = ['admin', 'manager'].includes(currentTeam?.role!);
 
         return (
-          <div className="mt-5">
+          <div className="mt-5" key={teamName}>
             {
               <HeroTitle
                 icon={<Users2 className="mr-1.5 h-[14px] w-[14px]" />}
