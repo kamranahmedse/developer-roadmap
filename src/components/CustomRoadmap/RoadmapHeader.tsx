@@ -145,7 +145,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                 target="_blank"
                 className="inline-flex items-center justify-center rounded-md bg-gray-500 py-1.5 pl-2 pr-2 text-xs font-medium text-white hover:bg-gray-600 sm:px-3 sm:text-sm"
               >
-                <Shapes className="mr-0 mr-1.5 h-4 w-4 stroke-[2.5]" />
+                <Shapes className="mr-1.5 h-4 w-4 stroke-[2.5]" />
                 <span className="hidden sm:inline-block">Edit Roadmap</span>
                 <span className="sm:hidden">Edit</span>
               </a>
@@ -153,7 +153,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                 onClick={() => setIsSharing(true)}
                 className="inline-flex items-center justify-center rounded-md bg-gray-500 py-1.5 pl-2 pr-2 text-xs font-medium text-white hover:bg-gray-600 sm:px-3 sm:text-sm"
               >
-                <Lock className="mr-0 mr-1.5 h-4 w-4 stroke-[2.5]" />
+                <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
                 <span className="hidden sm:inline-block">Share Roadmap</span>
                 <span className="sm:hidden">Share</span>
               </button>
