@@ -311,6 +311,7 @@ export function TeamRoadmaps() {
 
   const shareSettingsModal = selectedResource && (
     <ShareOptionsModal
+      description={selectedResource.description!}
       visibility={selectedResource.visibility!}
       sharedTeamMemberIds={selectedResource.sharedTeamMemberIds!}
       sharedFriendIds={selectedResource.sharedFriendIds!}
