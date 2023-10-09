@@ -29,6 +29,7 @@ export interface RoadmapDocument {
   description?: string;
   creatorId: string;
   teamId?: string;
+  isDiscoverable: boolean;
   type: AllowedCustomRoadmapType;
   visibility: AllowedRoadmapVisibility;
   sharedFriendIds?: string[];

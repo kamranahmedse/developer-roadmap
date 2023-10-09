@@ -24,6 +24,7 @@ export type OnShareSettingsUpdate = (options: {
 type ShareOptionsModalProps = {
   onClose: () => void;
   visibility: AllowedRoadmapVisibility;
+  isDiscoverable?: boolean;
   sharedFriendIds?: string[];
   sharedTeamMemberIds?: string[];
   teamId?: string;
@@ -37,6 +38,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const {
     roadmapId,
     onClose,
+    isDiscoverable: defaultIsDiscoverable = false,
     visibility: defaultVisibility,
     sharedTeamMemberIds: defaultSharedMemberIds = [],
     sharedFriendIds: defaultSharedFriendIds = [],
@@ -57,7 +59,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const membersCache = useMemo(() => new Map<string, TeamMemberList[]>(), []);
 
   const [visibility, setVisibility] = useState(defaultVisibility);
-  const [isDiscoverable, setIsDiscoverable] = useState(false);
+  const [isDiscoverable, setIsDiscoverable] = useState(defaultIsDiscoverable);
   const [sharedTeamMemberIds, setSharedTeamMemberIds] = useState<string[]>(
     defaultSharedMemberIds
   );

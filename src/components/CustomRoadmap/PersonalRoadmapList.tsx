@@ -60,6 +60,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
 
   const shareSettingsModal = selectedRoadmap && (
     <ShareOptionsModal
+      isDiscoverable={selectedRoadmap.isDiscoverable}
       description={selectedRoadmap.description}
       visibility={selectedRoadmap.visibility}
       sharedFriendIds={selectedRoadmap.sharedFriendIds}

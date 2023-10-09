@@ -121,6 +121,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             <div className="flex items-center gap-2">
               {isSharing && $currentRoadmap && (
                 <ShareOptionsModal
+                  isDiscoverable={$currentRoadmap.isDiscoverable}
                   description={$currentRoadmap?.description}
                   visibility={$currentRoadmap?.visibility}
                   teamId={$currentRoadmap?.teamId}
