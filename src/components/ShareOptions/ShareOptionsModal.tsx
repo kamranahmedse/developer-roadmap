@@ -7,7 +7,7 @@ import {
   ShareTeamMemberList,
   type TeamMemberList,
 } from './ShareTeamMemberList';
-import { CopyRoadmapLink } from './CopyRoadmapLink';
+import { ShareSuccess } from './ShareSuccess';
 import { useToast } from '../../hooks/use-toast';
 import type { AllowedRoadmapVisibility } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { httpPatch } from '../../lib/http';
@@ -28,6 +28,7 @@ type ShareOptionsModalProps = {
   sharedTeamMemberIds?: string[];
   teamId?: string;
   roadmapId?: string;
+  description?: string;
 
   onShareSettingsUpdate: OnShareSettingsUpdate;
 };
@@ -41,6 +42,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
     sharedFriendIds: defaultSharedFriendIds = [],
     teamId,
     onShareSettingsUpdate,
+    description,
   } = props;
 
   const toast = useToast();
@@ -156,7 +158,12 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         wrapperClassName="max-w-lg"
         bodyClassName="p-4 flex flex-col"
       >
-        <CopyRoadmapLink roadmapId={roadmapId!} onClose={onClose} />
+        <ShareSuccess
+          visibility={visibility}
+          roadmapId={roadmapId!}
+          description={description}
+          onClose={onClose}
+        />
       </Modal>
     );
   }

@@ -1,0 +1,115 @@
+import { CheckCircle, Copy, Facebook, Linkedin, Twitter } from 'lucide-react';
+import { useCopyText } from '../../hooks/use-copy-text';
+import { cn } from '../../lib/classname';
+import type { AllowedRoadmapVisibility } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
+
+type ShareSuccessProps = {
+  roadmapId: string;
+  onClose: () => void;
+  visibility: AllowedRoadmapVisibility;
+  description?: string;
+};
+
+export function ShareSuccess(props: ShareSuccessProps) {
+  const { roadmapId, onClose, description, visibility } = props;
+
+  const baseUrl = import.meta.env.DEV
+    ? 'http://localhost:3000'
+    : 'https://roadmap.sh';
+  const shareLink = `${baseUrl}/r?id=${roadmapId}`;
+
+  const { copyText, isCopied } = useCopyText();
+
+  const socialShareLinks = [
+    {
+      title: 'Twitter',
+      href: `https://twitter.com/intent/tweet?text=${description}&url=${shareLink}`,
+      icon: Twitter,
+    },
+    {
+      title: 'Facebook',
+      href: `https://www.facebook.com/sharer/sharer.php?quote=${description}&u=${shareLink}`,
+      icon: Facebook,
+    },
+    {
+      title: 'Linkedin',
+      href: `https://www.linkedin.com/sharing/share-offsite/?url=${shareLink}`,
+      icon: Linkedin,
+    },
+  ];
+
+  return (
+    <div className="flex grow flex-col justify-center">
+      <div className="mt-5 flex grow flex-col items-center justify-center gap-1.5">
+        <CheckCircle className="h-14 w-14 text-green-500" />
+        <h3 className="text-xl font-medium">Sharing Settings Updated</h3>
+      </div>
+
+      <input
+        type="text"
+        className="mt-6 w-full rounded-md border bg-gray-50 p-2 px-2.5 text-gray-700 focus:outline-none"
+        value={shareLink}
+        readOnly
+        onClick={(e) => {
+          e.currentTarget.select();
+          copyText(shareLink);
+        }}
+      />
+      <p className="mt-1 text-sm text-gray-400">
+        You can share the above link with anyone who has access
+      </p>
+
+      {visibility === 'public' && (
+        <>
+          <div className="-mx-4 mt-4 flex items-center gap-1.5">
+            <span className="h-px grow bg-gray-300" />
+            <span className="text-sm uppercase text-gray-600">Or</span>
+            <span className="h-px grow bg-gray-300" />
+          </div>
+
+          <div className="mt-4 flex items-center gap-2">
+            <span className="text-sm text-gray-600">Share on</span>
+            <ul className="flex items-center gap-1.5">
+              {socialShareLinks.map((socialShareLink) => (
+                <li key={socialShareLink.title}>
+                  <a
+                    href={socialShareLink.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex h-8 w-8 items-center justify-center gap-1.5 rounded-md border bg-gray-50 text-sm text-gray-700 hover:bg-gray-100 focus:outline-none"
+                  >
+                    <socialShareLink.icon className="h-4 w-4" />
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </>
+      )}
+
+      <div className="mt-4 flex flex-col items-center justify-end gap-2">
+        <button
+          className={cn(
+            'flex w-full items-center justify-center gap-1.5 rounded bg-black px-4 py-2.5 text-sm font-medium text-white hover:opacity-80',
+            isCopied && 'bg-green-300 text-green-800'
+          )}
+          disabled={isCopied}
+          onClick={() => {
+            copyText(shareLink);
+          }}
+        >
+          <Copy className="h-3.5 w-3.5 stroke-[2.5]" />
+          {isCopied ? 'Copied' : 'Copy'}
+        </button>
+        <button
+          className={cn(
+            'flex w-full items-center justify-center gap-1.5 rounded border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100'
+          )}
+          onClick={onClose}
+        >
+          Close
+        </button>
+      </div>
+    </div>
+  );
+}

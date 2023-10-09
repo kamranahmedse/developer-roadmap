@@ -24,6 +24,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
     <>
       {isSharing && $canManageCurrentRoadmap && $currentRoadmap && (
         <ShareOptionsModal
+          description={$currentRoadmap?.description}
           visibility={$currentRoadmap?.visibility}
           teamId={$currentRoadmap?.teamId}
           roadmapId={$currentRoadmap?._id!}

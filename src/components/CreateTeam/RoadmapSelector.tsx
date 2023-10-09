@@ -15,6 +15,7 @@ import { useToast } from '../../hooks/use-toast';
 export type TeamResourceConfig = {
   isCustomResource: boolean;
   title: string;
+  description?: string;
   visibility?: AllowedRoadmapVisibility;
   resourceId: string;
   resourceType: string;
