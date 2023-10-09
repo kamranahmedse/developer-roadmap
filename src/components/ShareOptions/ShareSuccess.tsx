@@ -63,12 +63,12 @@ export function ShareSuccess(props: ShareSuccessProps) {
         <>
           <div className="-mx-4 mt-4 flex items-center gap-1.5">
             <span className="h-px grow bg-gray-300" />
-            <span className="text-sm uppercase text-gray-600">Or</span>
+            <span className="text-xs uppercase text-gray-400 px-2">Or</span>
             <span className="h-px grow bg-gray-300" />
           </div>
 
           <div className="mt-4 flex items-center gap-2">
-            <span className="text-sm text-gray-600">Share on</span>
+            <span className="text-sm text-gray-600">Share with others on</span>
             <ul className="flex items-center gap-1.5">
               {socialShareLinks.map((socialShareLink) => (
                 <li key={socialShareLink.title}>
@@ -99,7 +99,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
           }}
         >
           <Copy className="h-3.5 w-3.5 stroke-[2.5]" />
-          {isCopied ? 'Copied' : 'Copy'}
+          {isCopied ? 'Copied' : 'Copy URL'}
         </button>
         <button
           className={cn(
