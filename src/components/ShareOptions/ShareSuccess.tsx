@@ -65,7 +65,6 @@ export function ShareSuccess(props: ShareSuccessProps) {
             <span className="h-px grow bg-gray-300" />
             <span className="text-sm uppercase text-gray-600">Or</span>
             <span className="h-px grow bg-gray-300" />
-            vi
           </div>
 
           <div className="mt-4 flex items-center gap-2">
