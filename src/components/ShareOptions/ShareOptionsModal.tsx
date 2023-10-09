@@ -1,4 +1,10 @@
-import { type ReactNode, useCallback, useState, useMemo } from 'react';
+import {
+  type ReactNode,
+  useCallback,
+  useState,
+  useMemo,
+  useEffect,
+} from 'react';
 import { Globe2, Loader2, Lock } from 'lucide-react';
 import { type ListFriendsResponse, ShareFriendList } from './ShareFriendList';
 import { TransferToTeamList } from './TransferToTeamList';
@@ -124,7 +130,12 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
 
     setIsLoading(false);
     setIsSettingsUpdated(true);
-    onShareSettingsUpdate({ isDiscoverable, sharedFriendIds, visibility, sharedTeamMemberIds });
+    onShareSettingsUpdate({
+      isDiscoverable,
+      sharedFriendIds,
+      visibility,
+      sharedTeamMemberIds,
+    });
   };
 
   const handleTransferToTeam = useCallback(
@@ -212,6 +223,8 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             setSharedFriendIds([]);
             setSharedTeamMemberIds([]);
           }
+
+          setIsDiscoverable(visibility === 'public');
         }}
       />
 
