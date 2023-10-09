@@ -1,4 +1,4 @@
-import { CircleSlash } from 'lucide-react';
+import {CircleSlash, PenSquare, Shapes} from 'lucide-react';
 
 type EmptyRoadmapProps = {
   roadmapId: string;
@@ -18,8 +18,9 @@ export function EmptyRoadmap(props: EmptyRoadmapProps) {
         {canManage && (
           <a
             href={editUrl}
-            className="mt-4 rounded-lg bg-black px-4 py-2 font-medium text-white hover:bg-gray-900"
+            className="mt-4 rounded-md bg-gray-500 px-4 py-2 font-medium text-white hover:bg-gray-600 flex items-center"
           >
+            <Shapes className="inline-block mr-2 h-4 w-4" />
             Edit Roadmap
           </a>
         )}
