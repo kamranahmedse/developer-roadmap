@@ -12,8 +12,6 @@ import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { EmptyRoadmap } from './EmptyRoadmap';
-import { isLoggedIn } from '../../lib/jwt';
-import { httpPost } from '../../lib/http';
 
 type RoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -170,7 +168,9 @@ export function RoadmapRenderer(props: RoadmapRendererProps) {
             });
           }}
         />
-        {hideRenderer && <EmptyRoadmap />}
+        {hideRenderer && (
+          <EmptyRoadmap roadmapId={roadmapId} canManage={roadmap.canManage} />
+        )}
       </div>
     </div>
   );

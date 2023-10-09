@@ -55,6 +55,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const membersCache = useMemo(() => new Map<string, TeamMemberList[]>(), []);
 
   const [visibility, setVisibility] = useState(defaultVisibility);
+  const [isDiscoverable, setIsDiscoverable] = useState(false);
   const [sharedTeamMemberIds, setSharedTeamMemberIds] = useState<string[]>(
     defaultSharedMemberIds
   );
@@ -107,6 +108,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         visibility,
         sharedFriendIds,
         sharedTeamMemberIds,
+        isDiscoverable,
       }
     );
 
@@ -132,6 +134,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         {
           teamId,
           sharedTeamMemberIds,
+          isDiscoverable,
         }
       );
 
@@ -167,7 +170,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         onClose();
       }}
       wrapperClassName="max-w-3xl"
-      bodyClassName="p-4 flex flex-col min-h-[400px]"
+      bodyClassName="p-4 flex flex-col min-h-[440px]"
     >
       <div className="mb-4">
         <h3 className="mb-1 text-xl font-semibold">Update Sharing Settings</h3>
@@ -275,6 +278,18 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         )}
       </div>
 
+      {visibility !== 'me' && (
+        <>
+          <hr className="-mx-4 my-4" />
+          <div className="mb-2">
+            <DiscoveryCheckbox
+              isDiscoverable={isDiscoverable}
+              setIsDiscoverable={setIsDiscoverable}
+            />
+          </div>
+        </>
+      )}
+
       <div className="mt-2 flex items-center justify-between gap-1.5">
         <button
           className="flex items-center justify-center gap-1.5 rounded-md border px-3.5 py-1.5 hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-75"
@@ -342,5 +357,27 @@ function UpdateAction(props: {
     >
       {children}
     </button>
+  );
+}
+
+type DiscoveryCheckboxProps = {
+  isDiscoverable: boolean;
+  setIsDiscoverable: (isDiscoverable: boolean) => void;
+};
+
+function DiscoveryCheckbox(props: DiscoveryCheckboxProps) {
+  const { isDiscoverable, setIsDiscoverable } = props;
+
+  return (
+    <label className="group flex items-center gap-1.5">
+      <input
+        type="checkbox"
+        checked={isDiscoverable}
+        onChange={(e) => setIsDiscoverable(e.target.checked)}
+      />
+      <span className="text-sm text-gray-500 group-hover:text-gray-700">
+        Include on discovery page (when launched)
+      </span>
+    </label>
   );
 }

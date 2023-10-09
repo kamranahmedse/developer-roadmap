@@ -10,7 +10,6 @@ import { Modal } from '../../Modal';
 import { useToast } from '../../../hooks/use-toast';
 import { httpPost } from '../../../lib/http';
 import { cn } from '../../../lib/classname';
-import { allowedVisibilityLabels } from '../ShareRoadmapModal';
 
 export const allowedRoadmapVisibility = [
   'me',
@@ -46,12 +45,11 @@ interface CreateRoadmapModalProps {
   onClose: () => void;
   onCreated?: (roadmap: RoadmapDocument) => void;
   teamId?: string;
-  type?: AllowedCustomRoadmapType;
   visibility?: AllowedRoadmapVisibility;
 }
 
 export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
-  const { onClose, onCreated, teamId, type: defaultType = 'role' } = props;
+  const { onClose, onCreated, teamId } = props;
 
   const titleRef = useRef<HTMLInputElement>(null);
   const toast = useToast();
@@ -59,7 +57,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [type, setType] = useState<AllowedCustomRoadmapType>(defaultType);
   const isInvalidDescription = description?.trim().length > 80;
 
   async function handleSubmit(
@@ -71,7 +68,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
       return;
     }
 
-    if (title.trim() === '' || isInvalidDescription || !type) {
+    if (title.trim() === '' || isInvalidDescription) {
       toast.error('Please fill all the fields');
       return;
     }
@@ -82,7 +79,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
       {
         title,
         description,
-        type,
         ...(teamId && {
           teamId,
         }),
@@ -114,7 +110,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
 
     setTitle('');
     setDescription('');
-    setType('role');
     setIsLoading(false);
   }
 
@@ -179,33 +174,6 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             <div className="absolute bottom-2 right-2 text-xs text-gray-400">
               {description.length}/80
             </div>
-          </div>
-        </div>
-
-        <div className="mt-4">
-          <label
-            htmlFor="type"
-            className="block text-xs uppercase text-gray-400"
-          >
-            Type
-          </label>
-          <div className="mt-1">
-            <select
-              id="type"
-              name="type"
-              required
-              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
-              value={type}
-              onChange={(e) =>
-                setType(e.target.value as AllowedCustomRoadmapType)
-              }
-            >
-              {allowedCustomRoadmapType.map((type) => (
-                <option key={type} value={type}>
-                  {type.charAt(0).toUpperCase() + type.slice(1)} Based Roadmap
-                </option>
-              ))}
-            </select>
           </div>
         </div>
 

@@ -2,22 +2,17 @@ import { Plus } from 'lucide-react';
 import { isLoggedIn } from '../../../lib/jwt';
 import { showLoginPopup } from '../../../lib/popup';
 import { cn } from '../../../lib/classname';
-import {
-  type AllowedCustomRoadmapType,
-  type AllowedRoadmapVisibility,
-  CreateRoadmapModal,
-} from './CreateRoadmapModal';
+import { CreateRoadmapModal } from './CreateRoadmapModal';
 import { useState } from 'react';
 
 type CreateRoadmapButtonProps = {
   className?: string;
-  type?: AllowedCustomRoadmapType;
   text?: string;
   teamId?: string;
 };
 
 export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
-  const { teamId, className, type, text = 'Create your own Roadmap' } = props;
+  const { teamId, className, text = 'Create your own Roadmap' } = props;
 
   const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
@@ -34,7 +29,6 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
       {isCreatingRoadmap && (
         <CreateRoadmapModal
           teamId={teamId}
-          type={type}
           onClose={() => {
             setIsCreatingRoadmap(false);
           }}
