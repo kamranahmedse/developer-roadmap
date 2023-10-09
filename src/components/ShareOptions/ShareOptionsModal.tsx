@@ -16,6 +16,7 @@ import { cn } from '../../lib/classname';
 import type { UserTeamItem } from '../TeamDropdown/TeamDropdown';
 
 export type OnShareSettingsUpdate = (options: {
+  isDiscoverable: boolean;
   visibility: AllowedRoadmapVisibility;
   sharedTeamMemberIds: string[];
   sharedFriendIds: string[];
@@ -123,7 +124,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
 
     setIsLoading(false);
     setIsSettingsUpdated(true);
-    onShareSettingsUpdate({ sharedFriendIds, visibility, sharedTeamMemberIds });
+    onShareSettingsUpdate({ isDiscoverable, sharedFriendIds, visibility, sharedTeamMemberIds });
   };
 
   const handleTransferToTeam = useCallback(
@@ -329,6 +330,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             disabled={isUpdateDisabled || isLoading}
             onClick={() => {
               handleShareChange({
+                isDiscoverable,
                 visibility,
                 sharedTeamMemberIds:
                   visibility === 'team' ? sharedTeamMemberIds : [],
