@@ -61,9 +61,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       return;
     }
 
-    console.log(target);
     const isCurrentStatusDone = target?.classList.contains('done');
-    console.log(target?.classList, isCurrentStatusDone);
     updateTopicStatus(node.id, isCurrentStatusDone ? 'pending' : 'done');
   }, []);
 
@@ -127,6 +125,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       style={{
         height: measuredHeight,
       }}
+      className="min-h-screen"
       onRendered={(wrapperRef) => {
         renderResourceProgress('roadmap', roadmapId).then(() => {});
       }}

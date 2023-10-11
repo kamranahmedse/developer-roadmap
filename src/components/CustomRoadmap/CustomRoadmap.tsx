@@ -7,7 +7,6 @@ import {
   httpPost,
 } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
-import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
