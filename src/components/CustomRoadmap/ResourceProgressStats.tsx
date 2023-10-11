@@ -43,7 +43,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
       <div
         data-progress-nums-container=""
         className={cn(
-          'striped-loader relative hidden items-center justify-between bg-white px-2 py-1.5 sm:flex',
+          'striped-loader relative z-50 hidden items-center justify-between bg-white px-2 py-1.5 sm:flex',
           {
             'rounded-bl-md rounded-br-md': isSecondaryBanner,
             'rounded-md': !isSecondaryBanner,

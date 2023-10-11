@@ -89,6 +89,9 @@ dependencies:
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
+  zustand:
+    specifier: ^4.4.3
+    version: 4.4.3(@types/react@18.0.21)(react@18.0.0)
 
 devDependencies:
   '@playwright/test':
@@ -1078,7 +1081,7 @@ packages:
       classcat: 5.0.4
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -1094,7 +1097,7 @@ packages:
       classcat: 5.0.4
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -1116,7 +1119,7 @@ packages:
       d3-zoom: 3.0.0
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -1136,7 +1139,7 @@ packages:
       d3-zoom: 3.0.0
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -1154,7 +1157,7 @@ packages:
       d3-selection: 3.0.0
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -1170,7 +1173,7 @@ packages:
       classcat: 5.0.4
       react: 18.0.0
       react-dom: 18.0.0(react@18.0.0)
-      zustand: 4.4.1(@types/react@18.0.21)(react@18.0.0)
+      zustand: 4.4.3(@types/react@18.0.21)(react@18.0.0)
     transitivePeerDependencies:
       - '@types/react'
       - immer
@@ -6323,8 +6326,8 @@ packages:
     resolution: {integrity: sha512-wvWkphh5WQsJbVk1tbx1l1Ly4yg+XecD+Mq280uBGt9wa5BKSWf4Mhp6GmrkPixhMxmabYY7RbzlwVP32pbGCg==}
     dev: false
 
-  /zustand@4.4.1(@types/react@18.0.21)(react@18.0.0):
-    resolution: {integrity: sha512-QCPfstAS4EBiTQzlaGP1gmorkh/UL1Leaj2tdj+zZCZ/9bm0WS7sI2wnfD5lpOszFqWJ1DcPnGoY8RDL61uokw==}
+  /zustand@4.4.3(@types/react@18.0.21)(react@18.0.0):
+    resolution: {integrity: sha512-oRy+X3ZazZvLfmv6viIaQmtLOMeij1noakIsK/Y47PWYhT8glfXzQ4j0YcP5i0P0qI1A4rIB//SGROGyZhx91A==}
     engines: {node: '>=12.7.0'}
     peerDependencies:
       '@types/react': '>=16.8'
