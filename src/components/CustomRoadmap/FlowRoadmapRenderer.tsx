@@ -11,7 +11,12 @@ import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Node } from 'reactflow';
 import { useCallback, type MouseEvent, useMemo } from 'react';
-import { calculateDimensions } from '../../../editor/utils/roadmap';
+import {
+  INITIAL_DESKTOP_ZOOM,
+  INITIAL_MOBILE_ZOOM,
+  calculateDimensions,
+} from '../../../editor/utils/roadmap';
+import { isMobile } from '../../../editor/utils/is-mobile';
 
 type FlowRoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -21,9 +26,18 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapId = String(roadmap._id!);
 
+  const initialZoom = useMemo(
+    () => (isMobile() ? INITIAL_MOBILE_ZOOM : INITIAL_DESKTOP_ZOOM),
+    []
+  );
+
   const toast = useToast();
   const { measuredHeight } = useMemo(
-    () => calculateDimensions(roadmap?.nodes || [], 100),
+    () =>
+      calculateDimensions({
+        nodes: roadmap?.nodes,
+        padding: 100,
+      }),
     [roadmap?.nodes]
   );
 
@@ -123,9 +137,9 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
     <ReadonlyEditor
       roadmap={roadmap}
       style={{
-        height: measuredHeight,
+        height: measuredHeight * initialZoom,
       }}
-      className="min-h-screen"
+      className="min-h-[400px]"
       onRendered={(wrapperRef) => {
         renderResourceProgress('roadmap', roadmapId).then(() => {});
       }}
