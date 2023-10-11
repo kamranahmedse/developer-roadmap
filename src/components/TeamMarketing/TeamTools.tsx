@@ -7,7 +7,7 @@ const toolsList = [
   {
     imageUrl: '/images/team-promo/progress-tracking.png',
     title: 'Progress tracking',
-    description: 'Track the and compare the progress of team members.',
+    description: 'Track and compare the progress of team members.',
   },
   {
     imageUrl: '/images/team-promo/onboarding.png',
