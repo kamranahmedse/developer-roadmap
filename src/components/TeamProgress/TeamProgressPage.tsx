@@ -9,6 +9,7 @@ import { GroupRoadmapItem } from './GroupRoadmapItem';
 import { getUrlParams, setUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { MemberProgressModal } from './MemberProgressModal';
+import { MemberCustomProgressModal } from './MemberCustomProgressModal';
 
 export type UserProgress = {
   resourceTitle: string;
@@ -152,10 +153,15 @@ export function TeamProgressPage() {
     return null;
   }
 
+  const ProgressModal =
+    showMemberProgress && !showMemberProgress.isCustomResource
+      ? MemberProgressModal
+      : MemberCustomProgressModal;
+
   return (
     <div>
       {showMemberProgress && (
-        <MemberProgressModal
+        <ProgressModal
           member={showMemberProgress.member}
           teamId={teamId}
           resourceId={showMemberProgress.resourceId}
