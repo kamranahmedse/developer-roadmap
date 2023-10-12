@@ -5,6 +5,7 @@ import {
   type MouseEvent,
   useMemo,
   useRef,
+  type RefObject,
 } from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
 import '../FrameRenderer/FrameRenderer.css';
@@ -369,7 +370,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
                   initial: initialZoom,
                 }}
                 className="min-h-[400px]"
-                onRendered={(wrapperRef) => {
+                onRendered={() => {
                   const {
                     removed = [],
                     done = [],
@@ -387,9 +388,6 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
                   removed.forEach((id: string) =>
                     renderTopicProgress(id, 'removed')
                   );
-                }}
-                onTopicClick={(e) => {
-                  e.preventDefault();
                 }}
                 onTopicRightClick={handleTopicRightClick}
                 onTopicShiftClick={handleTopicShiftClick}

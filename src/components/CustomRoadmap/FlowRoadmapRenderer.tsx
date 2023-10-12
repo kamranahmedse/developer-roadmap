@@ -140,7 +140,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         height: measuredHeight * initialZoom,
       }}
       className="min-h-[400px]"
-      onRendered={(wrapperRef) => {
+      onRendered={() => {
         renderResourceProgress('roadmap', roadmapId).then(() => {});
       }}
       onTopicClick={handleTopicClick}

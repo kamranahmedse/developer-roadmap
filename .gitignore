@@ -30,6 +30,10 @@ tests-examples
 *.csv
 
 /editor/*
+!/editor/utils/
+!/editor/readonly-editor.tsx
+!/editor/utils/roadmap.ts
+!/editor/utils/is-mobile.ts
 /renderer/*
 !/renderer/index.tsx
 !/renderer/renderer.ts
