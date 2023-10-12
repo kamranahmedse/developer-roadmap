@@ -191,7 +191,7 @@ export function setResourceProgress(
 
 export function topicSelectorAll(
   topicId: string,
-  parentElement: Document | SVGElement = document
+  parentElement: Document | SVGElement | HTMLDivElement = document
 ): Element[] {
   const matchingElements: Element[] = [];
 
@@ -293,7 +293,7 @@ export async function renderResourceProgress(
 
 function getMatchingElements(
   quries: string[],
-  parentElement: Document | SVGElement = document
+  parentElement: Document | SVGElement | HTMLDivElement = document
 ): Element[] {
   const matchingElements: Element[] = [];
   quries.forEach((query) => {

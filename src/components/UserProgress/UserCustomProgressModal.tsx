@@ -1,6 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
-import { wireframeJSONToSVG } from 'roadmap-renderer';
-import '../FrameRenderer/FrameRenderer.css';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
@@ -11,6 +9,10 @@ import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon } from '../ReactIcons/ErrorIcon';
+import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
+import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { isMobile } from '../../../editor/utils/is-mobile';
+import { calculateDimensions } from '../../../editor/utils/roadmap';
 
 export type ProgressMapProps = {
   userId?: string;
@@ -33,12 +35,13 @@ type UserProgressResponse = {
   };
 };
 
-export function UserProgressModal(props: ProgressMapProps) {
+export function UserCustomProgressModal(props: ProgressMapProps) {
   const {
     resourceId,
     resourceType,
     userId: propUserId,
     onClose: onModalClose,
+    isCustomResource,
   } = props;
 
   const { s: userId = propUserId } = getUrlParams();
@@ -50,22 +53,24 @@ export function UserProgressModal(props: ProgressMapProps) {
   const popupBodyEl = useRef<HTMLDivElement>(null);
   const currentUser = useAuth();
 
+  const [roadmap, setRoadmap] = useState<GetRoadmapResponse | null>(null);
   const [showModal, setShowModal] = useState(!!userId);
-  const [resourceSvg, setResourceSvg] = useState<SVGElement | null>(null);
   const [progressResponse, setProgressResponse] =
     useState<UserProgressResponse>();
 
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
-  let resourceJsonUrl = import.meta.env.DEV
-    ? 'http://localhost:3000'
-    : 'https://roadmap.sh';
-  if (resourceType === 'roadmap') {
-    resourceJsonUrl += `/${resourceId}.json`;
-  } else {
-    resourceJsonUrl += `/best-practices/${resourceId}.json`;
-  }
+  const initialZoom = useMemo(() => (isMobile() ? 0.35 : 0.7), []);
+
+  const { measuredHeight } = useMemo(
+    () =>
+      calculateDimensions({
+        nodes: roadmap?.nodes || [],
+        padding: 100,
+      }),
+    [roadmap?.nodes]
+  );
 
   async function getUserProgress(
     userId: string,
@@ -85,17 +90,16 @@ export function UserProgressModal(props: ProgressMapProps) {
     return response;
   }
 
-  async function getRoadmapSVG(
-    jsonUrl: string
-  ): Promise<SVGElement | undefined> {
-    const { error, response: roadmapJson } = await httpGet(jsonUrl);
-    if (error || !roadmapJson) {
+  async function getRoadmapSVG(): Promise<GetRoadmapResponse> {
+    const { error, response: roadmapData } = await httpGet<GetRoadmapResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`
+    );
+    if (error || !roadmapData) {
       throw error || new Error('Something went wrong. Please try again!');
     }
 
-    return await wireframeJSONToSVG(roadmapJson, {
-      fontURL: '/fonts/balsamiq.woff2',
-    });
+    setRoadmap(roadmapData);
+    return roadmapData;
   }
 
   function onClose() {
@@ -119,54 +123,20 @@ export function UserProgressModal(props: ProgressMapProps) {
   });
 
   useEffect(() => {
-    if (!resourceJsonUrl || !resourceId || !resourceType || !userId) {
+    if (!resourceId || !resourceType || !userId) {
       return;
     }
 
     setIsLoading(true);
     Promise.all([
-      getRoadmapSVG(resourceJsonUrl),
+      getRoadmapSVG(),
       getUserProgress(userId, resourceType, resourceId),
     ])
-      .then(([svg, user]) => {
-        if (!user || !svg) {
+      .then(([_, user]) => {
+        if (!user) {
           return;
         }
 
-        const { progress } = user;
-        const { done, learning, skipped } = progress || {
-          done: [],
-          learning: [],
-          skipped: [],
-        };
-
-        done?.forEach((topicId: string) => {
-          topicSelectorAll(topicId, svg).forEach((el) => {
-            el.classList.add('done');
-          });
-        });
-
-        learning?.forEach((topicId: string) => {
-          topicSelectorAll(topicId, svg).forEach((el) => {
-            el.classList.add('learning');
-          });
-        });
-
-        skipped?.forEach((topicId: string) => {
-          topicSelectorAll(topicId, svg).forEach((el) => {
-            el.classList.add('skipped');
-          });
-        });
-
-        svg.querySelectorAll('.clickable-group').forEach((el) => {
-          el.classList.remove('clickable-group');
-        });
-
-        svg.querySelectorAll('[data-group-id]').forEach((el) => {
-          el.removeAttribute('data-group-id');
-        });
-
-        setResourceSvg(svg);
         setProgressResponse(user);
       })
       .catch((err) => {
@@ -291,11 +261,51 @@ export function UserProgressModal(props: ProgressMapProps) {
             </p>
           </div>
 
-          <div
-            ref={resourceSvgEl}
-            className="px-4 pb-2"
-            dangerouslySetInnerHTML={{ __html: resourceSvg?.outerHTML || '' }}
-          ></div>
+          <div ref={resourceSvgEl} className="px-4 pb-2">
+            <ReadonlyEditor
+              roadmap={roadmap!}
+              style={{
+                height: measuredHeight * initialZoom,
+              }}
+              zoom={{
+                initial: initialZoom,
+              }}
+              className="min-h-[400px]"
+              onRendered={(wrapperRef) => {
+                const {
+                  done = [],
+                  learning = [],
+                  skipped = [],
+                } = progressResponse?.progress || {};
+
+                done?.forEach((topicId: string) => {
+                  topicSelectorAll(topicId, wrapperRef?.current!).forEach(
+                    (el) => {
+                      el.classList.add('done');
+                    }
+                  );
+                });
+
+                learning?.forEach((topicId: string) => {
+                  topicSelectorAll(topicId, wrapperRef?.current!).forEach(
+                    (el) => {
+                      el.classList.add('learning');
+                    }
+                  );
+                });
+
+                skipped?.forEach((topicId: string) => {
+                  topicSelectorAll(topicId, wrapperRef?.current!).forEach(
+                    (el) => {
+                      el.classList.add('skipped');
+                    }
+                  );
+                });
+              }}
+              fontFamily="Balsamiq Sans"
+              fontURL="/fonts/balsamiq.woff2"
+            />
+          </div>
 
           <button
             type="button"

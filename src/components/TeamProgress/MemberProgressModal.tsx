@@ -16,13 +16,7 @@ import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
-import { useStore } from '@nanostores/react';
-import { $currentTeam } from '../../stores/team';
 import { renderFlowJSON } from '../../../renderer/renderer';
-import {
-  allowedClickableNodeTypes,
-  getNodeDetails,
-} from '../CustomRoadmap/RoadmapRenderer';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -49,7 +43,6 @@ export function MemberProgressModal(props: ProgressMapProps) {
     onShowMyProgress,
     teamId,
     onClose,
-    isCustomResource,
   } = props;
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
@@ -68,12 +61,6 @@ export function MemberProgressModal(props: ProgressMapProps) {
     resourceJsonUrl += `/${resourceId}.json`;
   } else {
     resourceJsonUrl += `/best-practices/${resourceId}.json`;
-  }
-
-  if (isCustomResource) {
-    resourceJsonUrl = `${
-      import.meta.env.PUBLIC_API_URL
-    }/v1-get-roadmap/${resourceId}`;
   }
 
   async function getMemberProgress(
@@ -98,28 +85,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
   }
 
   async function renderResource(jsonUrl: string) {
-    const res = await fetch(jsonUrl, {
-      ...(isCustomResource && {
-        credentials: 'include',
-      }),
-    });
+    const res = await fetch(jsonUrl, {});
     const json = await res.json();
-    let svg: SVGElement | null = null;
-    if (isCustomResource) {
-      svg = await renderFlowJSON(
-        {
-          nodes: json.nodes,
-          edges: json.edges,
-        },
-        {
-          fontURL: '/fonts/balsamiq.woff2',
-        }
-      );
-    } else {
-      svg = await wireframeJSONToSVG(json, {
-        fontURL: '/fonts/balsamiq.woff2',
-      });
-    }
+    const svg: SVGElement | null = await wireframeJSONToSVG(json, {
+      fontURL: '/fonts/balsamiq.woff2',
+    });
 
     containerEl.current?.replaceChildren(svg);
   }
@@ -215,29 +185,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
       return;
     }
 
-    let topicId = '';
-    if (isCustomResource) {
-      const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
-      if (
-        !nodeId ||
-        !nodeType ||
-        !allowedClickableNodeTypes.includes(nodeType)
-      ) {
-        return;
-      }
-
-      if (nodeType === 'button') {
-        return;
-      }
-
-      topicId = nodeId;
-    } else {
-      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-      if (!groupId) {
-        return;
-      }
-      topicId = groupId.replace(/^\d+-/, '');
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
     }
+    const topicId = groupId.replace(/^\d+-/, '');
 
     if (targetGroup.classList.contains('removed')) {
       e.preventDefault();
@@ -255,29 +207,11 @@ export function MemberProgressModal(props: ProgressMapProps) {
     if (!targetGroup) {
       return;
     }
-    let topicId = '';
-    if (isCustomResource) {
-      const { nodeId, nodeType } = getNodeDetails(e.target as SVGElement) || {};
-      if (
-        !nodeId ||
-        !nodeType ||
-        !allowedClickableNodeTypes.includes(nodeType)
-      ) {
-        return;
-      }
-
-      if (nodeType === 'button') {
-        return;
-      }
-
-      topicId = nodeId;
-    } else {
-      const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-      if (!groupId) {
-        return;
-      }
-      topicId = groupId.replace(/^\d+-/, '');
+    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+    if (!groupId) {
+      return;
     }
+    const topicId = groupId.replace(/^\d+-/, '');
 
     if (targetGroup.classList.contains('removed')) {
       return;
@@ -340,7 +274,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
   return (
     <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
-        id={isCustomResource ? 'original-roadmap' : 'customized-roadmap'}
+        id={'customized-roadmap'}
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div

@@ -23,11 +23,7 @@ import { pageProgressMessage } from '../../stores/page';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
 import { ReadonlyEditor } from '../../../editor/readonly-editor';
 import type { Node } from 'reactflow';
-import {
-  INITIAL_DESKTOP_ZOOM,
-  INITIAL_MOBILE_ZOOM,
-  calculateDimensions,
-} from '../../../editor/utils/roadmap';
+import { calculateDimensions } from '../../../editor/utils/roadmap';
 import { isMobile } from '../../../editor/utils/is-mobile';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -57,7 +53,6 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
     onShowMyProgress,
     teamId,
     onClose,
-    isCustomResource,
   } = props;
 
   const user = useAuth();
@@ -70,10 +65,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  const initialZoom = useMemo(
-    () => (isMobile() ? INITIAL_MOBILE_ZOOM : INITIAL_DESKTOP_ZOOM),
-    []
-  );
+  const initialZoom = useMemo(() => (isMobile() ? 0.35 : 0.7), []);
 
   const { measuredHeight } = useMemo(
     () =>
@@ -252,7 +244,10 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
-      <div className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto">
+      <div
+        id="original-roadmap"
+        className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
+      >
         <div
           className="relative rounded-lg bg-white pt-[1px] shadow"
           ref={popupBodyEl}
@@ -369,6 +364,9 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
                 roadmap={roadmap!}
                 style={{
                   height: measuredHeight * initialZoom,
+                }}
+                zoom={{
+                  initial: initialZoom,
                 }}
                 className="min-h-[400px]"
                 onRendered={(wrapperRef) => {

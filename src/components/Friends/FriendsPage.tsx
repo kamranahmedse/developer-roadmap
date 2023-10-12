@@ -10,6 +10,7 @@ import { FriendProgressItem } from './FriendProgressItem';
 import UserIcon from '../../icons/user.svg';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
+import { UserCustomProgressModal } from '../UserProgress/UserCustomProgressModal';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -107,6 +108,25 @@ export function FriendsPage() {
     return <EmptyFriends befriendUrl={befriendUrl} />;
   }
 
+  const progressModal =
+    showFriendProgress && showFriendProgress?.isCustomResource ? (
+      <UserCustomProgressModal
+        userId={showFriendProgress?.friend.userId}
+        resourceId={showFriendProgress.resourceId}
+        resourceType="roadmap"
+        isCustomResource={true}
+        onClose={() => setShowFriendProgress(undefined)}
+      />
+    ) : (
+      <UserProgressModal
+        userId={showFriendProgress?.friend.userId}
+        resourceId={showFriendProgress?.resourceId!}
+        resourceType={'roadmap'}
+        onClose={() => setShowFriendProgress(undefined)}
+        isCustomResource={showFriendProgress?.isCustomResource}
+      />
+    );
+
   return (
     <div>
       {showInviteFriendPopup && (
@@ -116,15 +136,7 @@ export function FriendsPage() {
         />
       )}
 
-      {showFriendProgress && (
-        <UserProgressModal
-          userId={showFriendProgress.friend.userId}
-          resourceId={showFriendProgress.resourceId}
-          resourceType={'roadmap'}
-          onClose={() => setShowFriendProgress(undefined)}
-          isCustomResource={showFriendProgress.isCustomResource}
-        />
-      )}
+      {showFriendProgress && progressModal}
 
       <div className="mb-4 flex flex-col items-stretch justify-between gap-2 sm:flex-row sm:items-center sm:gap-0">
         <div className="flex items-center gap-2">
