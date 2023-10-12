@@ -33,6 +33,7 @@ tests-examples
 !/editor/utils/
 !/editor/readonly-editor.tsx
 !/editor/utils/roadmap.ts
+!/editor/utils/font.ts
 !/editor/utils/is-mobile.ts
 /renderer/*
 !/renderer/index.tsx
