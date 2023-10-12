@@ -28,6 +28,9 @@ find editor -type f \( -name "*.ts" -o -name "*.tsx" \) -print0 | while IFS= rea
 done
 
 
+# add files to git so that `fatal` errors don't occur
+git add editor/*
 
 # ignore the worktree changes for the editor directory
-git update-index --skip-worktree editor/*
+find editor -type f -exec git update-index --assume-unchanged '{}' \;
+
