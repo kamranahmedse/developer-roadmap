@@ -67,12 +67,17 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
 
-We have also added a new form of visual content covering best practices:
+There are also interactive best practices:
 
 - [Code Review Best Practices](https://roadmap.sh/best-practices/code-review)
 - [Frontend Performance Best Practices](https://roadmap.sh/best-practices/frontend-performance)
 - [API Security Best Practices](https://roadmap.sh/best-practices/api-security)
 - [AWS Best Practices](https://roadmap.sh/best-practices/aws)
+
+..and questions to help you test, rate and improve your knowledge
+
+- [JavaScript Questions](https://roadmap.sh/questions/javascript)
+- [React Questions](https://roadmap.sh/questions/react)
 
 ![](https://i.imgur.com/waxVImv.png)
 
