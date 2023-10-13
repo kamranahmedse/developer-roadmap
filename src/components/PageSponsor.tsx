@@ -105,7 +105,7 @@ export function PageSponsor(props: PageSponsorProps) {
       </span>
       <img
         src={imageUrl}
-        className="block h-[150px] w-[104.89px] object-contain lg:h-[169px] lg:w-[118.18px]"
+        className="block h-[150px] object-fill lg:h-[169px] lg:w-[118.18px]"
         alt="Sponsor Banner"
       />
       <span className="flex flex-1 flex-col justify-between text-sm">
