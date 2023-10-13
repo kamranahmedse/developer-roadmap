@@ -145,7 +145,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="title"
               id="title"
               required
-              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+              className="block text-black w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
               placeholder="Enter Title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -165,7 +165,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="description"
               required
               className={cn(
-                'block h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm',
+                'block text-black h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm',
                 isInvalidDescription && 'border-red-300 bg-red-100'
               )}
               placeholder="Enter Description"
