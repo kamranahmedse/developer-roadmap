@@ -10,13 +10,15 @@ import {
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Node } from 'reactflow';
-import { useCallback, type MouseEvent, useMemo } from 'react';
+import { useCallback, type MouseEvent, useMemo, useState, useRef } from 'react';
 import {
   INITIAL_DESKTOP_ZOOM,
   INITIAL_MOBILE_ZOOM,
   calculateDimensions,
 } from '../../../editor/utils/roadmap';
 import { isMobile } from '../../../editor/utils/is-mobile';
+import { EmptyRoadmap } from './EmptyRoadmap';
+import { cn } from '../../lib/classname';
 
 type FlowRoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -25,6 +27,9 @@ type FlowRoadmapRendererProps = {
 export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
   const { roadmap } = props;
   const roadmapId = String(roadmap._id!);
+
+  const [hideRenderer, setHideRenderer] = useState(false);
+  const editorWrapperRef = useRef<HTMLDivElement>(null);
 
   const initialZoom = useMemo(
     () => (isMobile() ? INITIAL_MOBILE_ZOOM : INITIAL_DESKTOP_ZOOM),
@@ -134,23 +139,44 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
   }, []);
 
   return (
-    <ReadonlyEditor
-      roadmap={roadmap}
-      style={{
-        height: measuredHeight * initialZoom,
-      }}
-      className="min-h-[400px]"
-      onRendered={() => {
-        renderResourceProgress('roadmap', roadmapId).then(() => {});
-      }}
-      onTopicClick={handleTopicClick}
-      onTopicRightClick={handleTopicRightClick}
-      onTopicShiftClick={handleTopicShiftClick}
-      onTopicAltClick={handleTopicAltClick}
-      onButtonNodeClick={handleLinkClick}
-      onLinkClick={handleLinkClick}
-      fontFamily="Balsamiq Sans"
-      fontURL="/fonts/balsamiq.woff2"
-    />
+    <>
+      {hideRenderer && (
+        <EmptyRoadmap
+          roadmapId={roadmapId}
+          canManage={roadmap.canManage}
+          className="grow"
+        />
+      )}
+      <ReadonlyEditor
+        ref={editorWrapperRef}
+        roadmap={roadmap}
+        style={{
+          height: measuredHeight * initialZoom,
+        }}
+        className={cn(
+          roadmap?.nodes?.length === 0
+            ? 'grow'
+            : isMobile()
+            ? 'min-h-0'
+            : 'min-h-[1000px]'
+        )}
+        onRendered={() => {
+          renderResourceProgress('roadmap', roadmapId).then(() => {
+            if (roadmap?.nodes?.length === 0) {
+              setHideRenderer(true);
+              editorWrapperRef?.current?.classList.add('hidden');
+            }
+          });
+        }}
+        onTopicClick={handleTopicClick}
+        onTopicRightClick={handleTopicRightClick}
+        onTopicShiftClick={handleTopicShiftClick}
+        onTopicAltClick={handleTopicAltClick}
+        onButtonNodeClick={handleLinkClick}
+        onLinkClick={handleLinkClick}
+        fontFamily="Balsamiq Sans"
+        fontURL="/fonts/balsamiq.woff2"
+      />
+    </>
   );
 }
