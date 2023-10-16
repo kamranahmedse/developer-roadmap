@@ -8,10 +8,17 @@ type ShareSuccessProps = {
   onClose: () => void;
   visibility: AllowedRoadmapVisibility;
   description?: string;
+  isSharingWithOthers?: boolean;
 };
 
 export function ShareSuccess(props: ShareSuccessProps) {
-  const { roadmapId, onClose, description, visibility } = props;
+  const {
+    roadmapId,
+    onClose,
+    description,
+    visibility,
+    isSharingWithOthers = false,
+  } = props;
 
   const baseUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
@@ -42,7 +49,11 @@ export function ShareSuccess(props: ShareSuccessProps) {
     <div className="flex grow flex-col justify-center">
       <div className="mt-5 flex grow flex-col items-center justify-center gap-1.5">
         <CheckCircle className="h-14 w-14 text-green-500" />
-        <h3 className="text-xl font-medium">Sharing Settings Updated</h3>
+        {isSharingWithOthers ? (
+          <h3 className="text-xl font-medium">Sharing with Others</h3>
+        ) : (
+          <h3 className="text-xl font-medium">Sharing Settings Updated</h3>
+        )}
       </div>
 
       <input
@@ -55,15 +66,21 @@ export function ShareSuccess(props: ShareSuccessProps) {
           copyText(shareLink);
         }}
       />
-      <p className="mt-1 text-sm text-gray-400">
-        You can share the above link with anyone who has access
-      </p>
+      {isSharingWithOthers ? (
+        <p className="mt-1 text-sm text-gray-400">
+          You can share the above link with anyone
+        </p>
+      ) : (
+        <p className="mt-1 text-sm text-gray-400">
+          You can share the above link with anyone who has access
+        </p>
+      )}
 
       {visibility === 'public' && (
         <>
           <div className="-mx-4 mt-4 flex items-center gap-1.5">
             <span className="h-px grow bg-gray-300" />
-            <span className="text-xs uppercase text-gray-400 px-2">Or</span>
+            <span className="px-2 text-xs uppercase text-gray-400">Or</span>
             <span className="h-px grow bg-gray-300" />
           </div>
 
