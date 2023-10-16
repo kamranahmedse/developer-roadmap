@@ -7,6 +7,7 @@ import {
   Globe,
   LockIcon,
   Users,
+  PenSquare,
 } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import {
@@ -142,7 +143,7 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
 
   return (
     <li
-      className="grid grid-cols-1 p-2.5 sm:grid-cols-[auto_110px]"
+      className="grid grid-cols-1 p-2.5 sm:grid-cols-[auto_172px]"
       key={roadmap._id!}
     >
       <div className="mb-3 grid grid-cols-1 sm:mb-0">
@@ -183,6 +184,16 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         >
           <ExternalLink className="inline-block h-4 w-4" />
           Visit
+        </a>
+        <a
+          href={editorLink}
+          className={
+            'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-none'
+          }
+          target={'_blank'}
+        >
+          <PenSquare className="inline-block h-4 w-4" />
+          Edit
         </a>
       </div>
     </li>

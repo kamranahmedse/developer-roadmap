@@ -487,7 +487,7 @@ export function TeamRoadmaps() {
                     </a>
                     {canManageCurrentTeam && (
                       <a
-                        href={`/r?id=${resourceConfig.resourceId}`}
+                        href={editorLink}
                         className={
                           'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-none'
                         }
