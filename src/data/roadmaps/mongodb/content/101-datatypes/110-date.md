@@ -20,10 +20,10 @@ When inserting a document with a Date field, you can store the date value as fol
 db.events.insertOne({ title: 'Sample Event', eventDate: new Date() });
 ```
 
-You can also specifically store the current date and time using MongoDB's `$currentDate` operator:
+You can also set the value of a field to the current date, either as a 'Date' or 'timestamp' using MongoDB's `$currentDate` operator:
 
 ```javascript
-db.events.insertOne({
+db.events.update({
   title: 'Sample Event',
   eventDate: { $currentDate: { $type: 'date' } },
 });
