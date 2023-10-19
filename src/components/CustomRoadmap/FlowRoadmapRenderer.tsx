@@ -1,4 +1,4 @@
-import { ReadonlyEditor } from '@roadmapsh/web-draw/src/editor/readonly-editor';
+import { ReadonlyEditor } from '../../../editor/readonly-editor';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import {
   renderResourceProgress,
@@ -11,12 +11,6 @@ import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Node } from 'reactflow';
 import { useCallback, type MouseEvent, useMemo, useState, useRef } from 'react';
-import {
-  INITIAL_DESKTOP_ZOOM,
-  INITIAL_MOBILE_ZOOM,
-  calculateDimensions,
-} from '@roadmapsh/web-draw/src/editor/utils/roadmap';
-import { isMobile } from '@roadmapsh/web-draw/src/editor/utils/is-mobile';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
 
@@ -31,20 +25,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
   const [hideRenderer, setHideRenderer] = useState(false);
   const editorWrapperRef = useRef<HTMLDivElement>(null);
 
-  const initialZoom = useMemo(
-    () => (isMobile() ? INITIAL_MOBILE_ZOOM : INITIAL_DESKTOP_ZOOM),
-    [],
-  );
-
   const toast = useToast();
-  const { measuredHeight } = useMemo(
-    () =>
-      calculateDimensions({
-        nodes: roadmap?.nodes,
-        padding: 100,
-      }),
-    [roadmap?.nodes],
-  );
 
   async function updateTopicStatus(
     topicId: string,
@@ -150,15 +131,10 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
       <ReadonlyEditor
         ref={editorWrapperRef}
         roadmap={roadmap}
-        style={{
-          height: measuredHeight * initialZoom,
-        }}
         className={cn(
           roadmap?.nodes?.length === 0
             ? 'grow'
-            : isMobile()
-            ? 'min-h-0'
-            : 'min-h-[1000px]',
+            : 'min-h-0 max-md:min-h-[1000px]',
         )}
         onRendered={() => {
           renderResourceProgress('roadmap', roadmapId).then(() => {

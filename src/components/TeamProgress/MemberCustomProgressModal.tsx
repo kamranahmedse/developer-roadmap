@@ -3,9 +3,7 @@ import {
   useEffect,
   useState,
   type MouseEvent,
-  useMemo,
   useRef,
-  type RefObject,
 } from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
 import '../FrameRenderer/FrameRenderer.css';
@@ -22,10 +20,8 @@ import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '@roadmapsh/web-draw/src/editor/readonly-editor';
+import { ReadonlyEditor } from '../../../editor/readonly-editor';
 import type { Node } from 'reactflow';
-import { calculateDimensions } from '@roadmapsh/web-draw/src/editor/utils/roadmap';
-import { isMobile } from '@roadmapsh/web-draw/src/editor/utils/is-mobile';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
@@ -67,17 +63,6 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  const initialZoom = useMemo(() => (isMobile() ? 0.35 : 0.7), []);
-
-  const { measuredHeight } = useMemo(
-    () =>
-      calculateDimensions({
-        nodes: roadmap?.nodes || [],
-        padding: 100,
-      }),
-    [roadmap?.nodes]
-  );
-
   useKeydown('Escape', () => onClose());
   useOutsideClick(popupBodyEl, () => onClose());
 
@@ -85,12 +70,12 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
     teamId: string,
     memberId: string,
     resourceType: string,
-    resourceId: string
+    resourceId: string,
   ) {
     const { error, response } = await httpGet<MemberProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`
+      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to get member progress');
@@ -104,7 +89,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
 
   async function getRoadmap() {
     const { response, error } = await httpGet<GetRoadmapResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`,
     );
 
     if (error || !response) {
@@ -149,14 +134,14 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
         resourceType: resourceType as ResourceType,
         topicId,
       },
-      newStatus
+      newStatus,
     )
       .then(() => {
         renderTopicProgress(topicId, newStatus);
         getMemberProgress(teamId, member._id, resourceType, resourceId).then(
           (data) => {
             setMemberProgress(data);
-          }
+          },
         );
       })
       .catch((err) => {
@@ -197,7 +182,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
     const isCurrentStatusLearning = target?.classList.contains('learning');
     updateTopicStatus(
       node.id,
-      isCurrentStatusLearning ? 'pending' : 'learning'
+      isCurrentStatusLearning ? 'pending' : 'learning',
     );
   }, []);
 
@@ -250,13 +235,8 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
           {!isLoading && roadmap && (
             <div className="px-4 pb-2">
               <ReadonlyEditor
+                variant="modal"
                 roadmap={roadmap!}
-                style={{
-                  height: measuredHeight * initialZoom,
-                }}
-                zoom={{
-                  initial: initialZoom,
-                }}
                 className="min-h-[400px]"
                 onRendered={() => {
                   const {
@@ -268,13 +248,13 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
 
                   done.forEach((id: string) => renderTopicProgress(id, 'done'));
                   learning.forEach((id: string) =>
-                    renderTopicProgress(id, 'learning')
+                    renderTopicProgress(id, 'learning'),
                   );
                   skipped.forEach((id: string) =>
-                    renderTopicProgress(id, 'skipped')
+                    renderTopicProgress(id, 'skipped'),
                   );
                   removed.forEach((id: string) =>
-                    renderTopicProgress(id, 'removed')
+                    renderTopicProgress(id, 'removed'),
                   );
                 }}
                 onTopicRightClick={handleTopicRightClick}

@@ -28,3 +28,5 @@ pnpm-debug.log*
 /playwright/.cache/
 tests-examples
 *.csv
+
+/editor/*

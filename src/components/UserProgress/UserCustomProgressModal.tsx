@@ -8,9 +8,7 @@ import CloseIcon from '../../icons/close.svg';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '@roadmapsh/web-draw/src/editor/readonly-editor';
-import { isMobile } from '@roadmapsh/web-draw/src/editor/utils/is-mobile';
-import { calculateDimensions } from '@roadmapsh/web-draw/src/editor/utils/roadmap';
+import { ReadonlyEditor } from '../../../editor/readonly-editor';
 import { ProgressLoadingError } from './ProgressLoadingError';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 
@@ -61,26 +59,15 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState('');
 
-  const initialZoom = useMemo(() => (isMobile() ? 0.35 : 0.7), []);
-
-  const { measuredHeight } = useMemo(
-    () =>
-      calculateDimensions({
-        nodes: roadmap?.nodes || [],
-        padding: 100,
-      }),
-    [roadmap?.nodes]
-  );
-
   async function getUserProgress(
     userId: string,
     resourceType: string,
-    resourceId: string
+    resourceId: string,
   ): Promise<UserProgressResponse | undefined> {
     const { error, response } = await httpGet<UserProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
+      }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`,
     );
 
     if (error || !response) {
@@ -92,7 +79,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
 
   async function getRoadmapSVG(): Promise<GetRoadmapResponse> {
     const { error, response: roadmapData } = await httpGet<GetRoadmapResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`,
     );
     if (error || !roadmapData) {
       throw error || new Error('Something went wrong. Please try again!');
@@ -177,13 +164,8 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
 
           <div ref={resourceSvgEl} className="px-4 pb-2">
             <ReadonlyEditor
+              variant="modal"
               roadmap={roadmap!}
-              style={{
-                height: measuredHeight * initialZoom,
-              }}
-              zoom={{
-                initial: initialZoom,
-              }}
               className="min-h-[400px]"
               onRendered={(wrapperRef: RefObject<HTMLDivElement>) => {
                 const {
@@ -196,7 +178,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
                   topicSelectorAll(topicId, wrapperRef?.current!).forEach(
                     (el) => {
                       el.classList.add('done');
-                    }
+                    },
                   );
                 });
 
@@ -204,7 +186,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
                   topicSelectorAll(topicId, wrapperRef?.current!).forEach(
                     (el) => {
                       el.classList.add('learning');
-                    }
+                    },
                   );
                 });
 
@@ -212,7 +194,7 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
                   topicSelectorAll(topicId, wrapperRef?.current!).forEach(
                     (el) => {
                       el.classList.add('skipped');
-                    }
+                    },
                   );
                 });
               }}
