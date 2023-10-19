@@ -82,7 +82,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               </span>
               {team && (
                 <>
-                  &nbsp;in&nbsp;
+                  &nbsp;from&nbsp;
                   <span className="font-semibold text-gray-900">
                     {team?.name}
                   </span>
