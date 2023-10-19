@@ -4,12 +4,14 @@ import { isLoggedIn } from '../../lib/jwt';
 import { AccountDropdownList } from './AccountDropdownList';
 import { DropdownTeamList } from './DropdownTeamList';
 import { useOutsideClick } from '../../hooks/use-outside-click';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
 export function AccountDropdown() {
   const dropdownRef = useRef(null);
 
   const [showDropdown, setShowDropdown] = useState(false);
   const [isTeamsOpen, setIsTeamsOpen] = useState(false);
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
   useOutsideClick(dropdownRef, () => {
     setShowDropdown(false);
@@ -22,6 +24,14 @@ export function AccountDropdown() {
 
   return (
     <div className="relative z-50 animate-fade-in">
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal
+          onClose={() => {
+            setIsCreatingRoadmap(false);
+          }}
+        />
+      )}
+
       <button
         className="flex h-8 w-40 items-center justify-center gap-1.5 rounded-full bg-gradient-to-r from-purple-500 to-purple-700 px-4 py-2 text-sm font-medium text-white hover:from-purple-500 hover:to-purple-600"
         onClick={() => {
@@ -43,7 +53,13 @@ export function AccountDropdown() {
           {isTeamsOpen ? (
             <DropdownTeamList setIsTeamsOpen={setIsTeamsOpen} />
           ) : (
-            <AccountDropdownList setIsTeamsOpen={setIsTeamsOpen} />
+            <AccountDropdownList
+              onCreateRoadmap={() => {
+                setIsCreatingRoadmap(true);
+                setShowDropdown(false);
+              }}
+              setIsTeamsOpen={setIsTeamsOpen}
+            />
           )}
         </div>
       )}
