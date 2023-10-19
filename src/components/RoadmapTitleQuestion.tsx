@@ -24,14 +24,14 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
         <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50"></div>
       )}
       <h2
-        className="z-50 flex cursor-pointer items-center px-2 py-2.5 font-medium text-base"
+        className="z-50 flex cursor-pointer items-center px-2 py-2.5 text-base font-medium"
         aria-expanded={isAnswerVisible ? 'true' : 'false'}
         onClick={(e) => {
           e.preventDefault();
           setIsAnswerVisible(!isAnswerVisible);
         }}
       >
-        <span className="flex items-center flex-grow">
+        <span className="flex flex-grow items-center">
           <GraduationCap className="mr-2 inline-block h-6 w-6" />
           {question}
         </span>
@@ -61,7 +61,7 @@ export function RoadmapTitleQuestion(props: RoadmapTitleQuestionProps) {
           </h2>
         )}
         <div
-          className="bg-gray-100 [&>p]:text-gray-800 p-3 text-base [&>h2]:mb-2 [&>h2]:mt-5 [&>h2]:text-[17px] [&>h2]:font-medium [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed"
+          className="bg-gray-100 p-3 text-base [&>h2]:mb-2 [&>h2]:mt-5 [&>h2]:text-[17px] [&>h2]:font-medium [&>p:last-child]:mb-0 [&>p>a]:font-semibold [&>p>a]:underline [&>p>a]:underline-offset-2 [&>p]:mb-3 [&>p]:font-normal [&>p]:leading-relaxed [&>p]:text-gray-800"
           dangerouslySetInnerHTML={{ __html: markdownToHtml(answer, false) }}
         ></div>
       </div>

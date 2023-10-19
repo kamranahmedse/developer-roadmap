@@ -8,9 +8,9 @@ import CloseIcon from '../../icons/close.svg';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
-import { isMobile } from '../../../editor/utils/is-mobile';
-import { calculateDimensions } from '../../../editor/utils/roadmap';
+import { ReadonlyEditor } from '@roadmapsh/web-draw/src/editor/readonly-editor';
+import { isMobile } from '@roadmapsh/web-draw/src/editor/utils/is-mobile';
+import { calculateDimensions } from '@roadmapsh/web-draw/src/editor/utils/roadmap';
 import { ProgressLoadingError } from './ProgressLoadingError';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 

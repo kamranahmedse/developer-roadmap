@@ -13,6 +13,6 @@ module.exports = {
   ],
   plugins: [
     require.resolve('prettier-plugin-astro'),
-    require('prettier-plugin-tailwindcss'),
+    'prettier-plugin-tailwindcss',
   ],
 };

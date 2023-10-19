@@ -26,7 +26,7 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
   const donePercentage = (totalSolved / totalCount) * 100;
 
   return (
-    <div className="mb-3 sm:mb-5 overflow-hidden rounded-lg border border-gray-300 bg-white p-4 sm:p-6">
+    <div className="mb-3 overflow-hidden rounded-lg border border-gray-300 bg-white p-4 sm:mb-5 sm:p-6">
       <div className="mb-3 flex items-center text-gray-600">
         <div className="relative w-full flex-1 rounded-xl bg-gray-200 p-1">
           <div
@@ -79,12 +79,12 @@ export function QuestionsProgress(props: QuestionsProgressProps) {
         >
           <RotateCcw className="mr-1 h-4" />
           Reset
-          <span className='inline lg:hidden'>Progress</span>
+          <span className="inline lg:hidden">Progress</span>
         </button>
       </div>
 
       {showLoginAlert && (
-        <p className="-mx-6 mt-6 -mb-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
+        <p className="-mx-6 -mb-6 mt-6 border-t bg-yellow-100 py-3 text-sm text-yellow-900">
           You progress is not saved. Please{' '}
           <button
             onClick={() => {

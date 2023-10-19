@@ -1,4 +1,4 @@
-import { Check, CheckCircle, Copy, Sparkles } from 'lucide-react';
+import { Copy } from 'lucide-react';
 import { useCopyText } from '../../hooks/use-copy-text.ts';
 import { cn } from '../../lib/classname.ts';
 import { isLoggedIn } from '../../lib/jwt.ts';
@@ -76,7 +76,7 @@ export function TeamPricing() {
                   copyText(teamEmail);
                 }}
                 className={cn(
-                  'relative flex items-center justify-between gap-3 overflow-hidden rounded-md border border-black bg-white px-4 py-2 text-black hover:bg-gray-100'
+                  'relative flex items-center justify-between gap-3 overflow-hidden rounded-md border border-black bg-white px-4 py-2 text-black hover:bg-gray-100',
                 )}
               >
                 {teamEmail}
@@ -91,7 +91,7 @@ export function TeamPricing() {
                     {
                       'top-full': !isCopied,
                       'top-0': isCopied,
-                    }
+                    },
                   )}
                 >
                   Email copied!

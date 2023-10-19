@@ -28,14 +28,3 @@ pnpm-debug.log*
 /playwright/.cache/
 tests-examples
 *.csv
-
-/editor/*
-!/editor/readonly-editor.tsx
-/editor/utils/*
-!/editor/utils/roadmap.ts
-!/editor/utils/font.ts
-!/editor/utils/is-mobile.ts
-
-/renderer/*
-!/renderer/index.tsx
-!/renderer/renderer.ts

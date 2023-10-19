@@ -46,7 +46,7 @@ export function QuestionsList(props: QuestionsListProps) {
     const { response, error } = await httpGet<UserQuestionProgress>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-user-question-progress/${groupId}`
+      }/v1-get-user-question-progress/${groupId}`,
     );
 
     if (error) {
@@ -106,7 +106,7 @@ export function QuestionsList(props: QuestionsListProps) {
         }/v1-reset-question-progress/${groupId}`,
         {
           status: type,
-        }
+        },
       );
 
       if (error) {
@@ -139,7 +139,7 @@ export function QuestionsList(props: QuestionsListProps) {
 
   async function updateQuestionStatus(
     status: QuestionProgressType,
-    questionId: string
+    questionId: string,
   ) {
     setIsLoading(true);
     let newProgress = userProgress || { know: [], dontKnow: [], skip: [] };
@@ -161,7 +161,7 @@ export function QuestionsList(props: QuestionsListProps) {
           status,
           questionId,
           questionGroupId: groupId,
-        }
+        },
       );
 
       if (error || !response) {
@@ -173,7 +173,7 @@ export function QuestionsList(props: QuestionsListProps) {
     }
 
     const updatedQuestionList = pendingQuestions.filter(
-      (q) => q.id !== questionId
+      (q) => q.id !== questionId,
     );
 
     setUserProgress(newProgress);
@@ -198,7 +198,7 @@ export function QuestionsList(props: QuestionsListProps) {
   const hasFinished = !isLoading && hasProgress && !currQuestion;
 
   return (
-    <div className="mb-0 sm:mb-40 gap-3 text-center">
+    <div className="mb-0 gap-3 text-center sm:mb-40">
       <QuestionsProgress
         knowCount={knowCount}
         didNotKnowCount={dontKnowCount}
@@ -241,7 +241,7 @@ export function QuestionsList(props: QuestionsListProps) {
       </div>
 
       <div
-        className={`flex flex-col gap-1 sm:gap-3 transition-opacity duration-300 sm:flex-row ${
+        className={`flex flex-col gap-1 transition-opacity duration-300 sm:flex-row sm:gap-3 ${
           hasFinished ? 'opacity-0' : 'opacity-100'
         }`}
       >
@@ -249,10 +249,10 @@ export function QuestionsList(props: QuestionsListProps) {
           disabled={isLoading || !currQuestion}
           onClick={(e) => {
             e.stopPropagation();
-            e.preventDefault()
+            e.preventDefault();
             updateQuestionStatus('know', currQuestion.id).finally(() => null);
           }}
-          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-gray-300 bg-white text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
           <CheckCircle className="mr-1 h-4 text-current" />
           Already Know that
@@ -260,11 +260,11 @@ export function QuestionsList(props: QuestionsListProps) {
         <button
           onClick={() => {
             updateQuestionStatus('dontKnow', currQuestion.id).finally(
-              () => null
+              () => null,
             );
           }}
           disabled={isLoading || !currQuestion}
-          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-gray-300 bg-white text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black hover:bg-black hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
           <Sparkles className="mr-1 h-4 text-current" />
           Didn't Know that
@@ -275,7 +275,7 @@ export function QuestionsList(props: QuestionsListProps) {
           }}
           disabled={isLoading || !currQuestion}
           data-next-question="skip"
-          className="flex flex-1 items-center rounded-md sm:rounded-lg border border-red-600 text-sm sm:text-base py-2 px-2 sm:py-3 sm:px-4 text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50"
+          className="flex flex-1 items-center rounded-md border border-red-600 px-2 py-2 text-sm text-red-600 hover:bg-red-600 hover:text-white disabled:pointer-events-none disabled:opacity-50 sm:rounded-lg sm:px-4 sm:py-3 sm:text-base"
         >
           <SkipForward className="mr-1 h-4" />
           Skip Question

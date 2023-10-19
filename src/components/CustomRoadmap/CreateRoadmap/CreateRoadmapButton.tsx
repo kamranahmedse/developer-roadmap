@@ -38,7 +38,7 @@ export function CreateRoadmapButton(props: CreateRoadmapButtonProps) {
       <button
         className={cn(
           'flex h-full w-full items-center justify-center gap-1 overflow-hidden rounded-md border border-dashed border-gray-800 p-3 text-sm text-gray-400 hover:border-gray-600 hover:bg-gray-900 hover:text-gray-300',
-          className
+          className,
         )}
         onClick={toggleCreateRoadmapHandler}
       >

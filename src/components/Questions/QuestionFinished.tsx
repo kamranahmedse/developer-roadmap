@@ -23,7 +23,7 @@ function ProgressStatButton(props: ProgressStatButtonProps) {
     <button
       disabled={isDisabled}
       onClick={onClick}
-      className="group relative text-sm sm:text-base flex flex-1 items-center overflow-hidden rounded-md sm:rounded-xl border border-gray-300 bg-white py-2 px-2 sm:py-3 sm:px-4 text-black transition-colors hover:border-black disabled:pointer-events-none disabled:opacity-50"
+      className="group relative flex flex-1 items-center overflow-hidden rounded-md border border-gray-300 bg-white px-2 py-2 text-sm text-black transition-colors hover:border-black disabled:pointer-events-none disabled:opacity-50 sm:rounded-xl sm:px-4 sm:py-3 sm:text-base"
     >
       {icon}
       <span className="flex flex-grow justify-between">
@@ -31,7 +31,7 @@ function ProgressStatButton(props: ProgressStatButtonProps) {
         <span>{count}</span>
       </span>
 
-      <span className="absolute top-full left-0 right-0 flex h-full items-center justify-center border border-black bg-black text-white transition-all duration-200 group-hover:top-0">
+      <span className="absolute left-0 right-0 top-full flex h-full items-center justify-center border border-black bg-black text-white transition-all duration-200 group-hover:top-0">
         Restart Asking
       </span>
     </button>
@@ -62,7 +62,7 @@ export function QuestionFinished(props: QuestionFinishedProps) {
         <span className="inline sm:hidden">questions</span>
       </p>
 
-      <div className="mt-5 mb-5 flex w-full flex-col gap-1.5 sm:gap-3 px-2 sm:flex-row sm:px-16">
+      <div className="mb-5 mt-5 flex w-full flex-col gap-1.5 px-2 sm:flex-row sm:gap-3 sm:px-16">
         <ProgressStatButton
           icon={<ThumbsUp className="mr-1 h-4" />}
           label="Knew"
@@ -85,10 +85,10 @@ export function QuestionFinished(props: QuestionFinishedProps) {
           onClick={() => onReset('skip')}
         />
       </div>
-      <div className="mt-2 mb-4 sm:mb-0 text-sm">
+      <div className="mb-4 mt-2 text-sm sm:mb-0">
         <button
           onClick={() => onReset('reset')}
-          className="flex items-center gap-0.5 text-red-700 hover:text-black text-sm sm:text-base"
+          className="flex items-center gap-0.5 text-sm text-red-700 hover:text-black sm:text-base"
         >
           <RefreshCcw className="mr-1 h-4" />
           Restart Asking

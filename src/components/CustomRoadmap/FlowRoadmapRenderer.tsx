@@ -1,4 +1,4 @@
-import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import { ReadonlyEditor } from '@roadmapsh/web-draw/src/editor/readonly-editor';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import {
   renderResourceProgress,
@@ -15,8 +15,8 @@ import {
   INITIAL_DESKTOP_ZOOM,
   INITIAL_MOBILE_ZOOM,
   calculateDimensions,
-} from '../../../editor/utils/roadmap';
-import { isMobile } from '../../../editor/utils/is-mobile';
+} from '@roadmapsh/web-draw/src/editor/utils/roadmap';
+import { isMobile } from '@roadmapsh/web-draw/src/editor/utils/is-mobile';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
 
@@ -33,7 +33,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
 
   const initialZoom = useMemo(
     () => (isMobile() ? INITIAL_MOBILE_ZOOM : INITIAL_DESKTOP_ZOOM),
-    []
+    [],
   );
 
   const toast = useToast();
@@ -43,12 +43,12 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         nodes: roadmap?.nodes,
         padding: 100,
       }),
-    [roadmap?.nodes]
+    [roadmap?.nodes],
   );
 
   async function updateTopicStatus(
     topicId: string,
-    newStatus: ResourceProgressType
+    newStatus: ResourceProgressType,
   ) {
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
@@ -57,7 +57,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         resourceType: 'roadmap',
         topicId,
       },
-      newStatus
+      newStatus,
     )
       .then(() => {
         renderTopicProgress(topicId, newStatus);
@@ -93,7 +93,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
     const isCurrentStatusLearning = target?.classList.contains('learning');
     updateTopicStatus(
       node.id,
-      isCurrentStatusLearning ? 'pending' : 'learning'
+      isCurrentStatusLearning ? 'pending' : 'learning',
     );
   }, []);
 
@@ -121,7 +121,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
           resourceType: 'roadmap',
           isCustomResource: true,
         },
-      })
+      }),
     );
   }, []);
 
@@ -158,7 +158,7 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
             ? 'grow'
             : isMobile()
             ? 'min-h-0'
-            : 'min-h-[1000px]'
+            : 'min-h-[1000px]',
         )}
         onRendered={() => {
           renderResourceProgress('roadmap', roadmapId).then(() => {

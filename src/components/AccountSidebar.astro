@@ -97,7 +97,7 @@ const sidebarLinks = [
         }`}
       >
         <AstroIcon icon={'users'} class={`h-4 w-4 mr-2`} />
-        Teams
+         Teams
       </a>
     </li>
     {
@@ -167,13 +167,12 @@ const sidebarLinks = [
                       {sidebarLink.title}
                     </span>
 
-                    {sidebarLink.isNew &&
-                      !isActive && (
-                        <span class='relative mr-1 flex items-center'>
-                          <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
-                          <span class='absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
-                        </span>
-                      )}
+                    {sidebarLink.isNew && !isActive && (
+                      <span class='relative mr-1 flex items-center'>
+                        <span class='relative rounded-full bg-gray-200 p-1 text-xs' />
+                        <span class='absolute bottom-0 left-0 right-0 top-0 animate-ping rounded-full bg-gray-400 p-1 text-xs' />
+                      </span>
+                    )}
 
                     {sidebarLink.id === 'friends' && (
                       <SidebarFriendsCounter client:load />
