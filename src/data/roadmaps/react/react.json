@@ -1327,7 +1327,7 @@
           "x": "279",
           "y": "426",
           "properties": {
-            "controlName": "101-cli-tools:create-react-app"
+            "controlName": "101-cli-tools:create-next-app"
           },
           "children": {
             "controls": {
@@ -1356,7 +1356,7 @@
                   "y": "10",
                   "properties": {
                     "size": "17",
-                    "text": "Create React App"
+                    "text": "Create Next App"
                   }
                 },
                 {
