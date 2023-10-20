@@ -148,7 +148,7 @@ export function ShareFriendList(props: ShareFriendListProps) {
             <a
               target="_blank"
               className="underline underline-offset-2"
-              href={`${import.meta.env.PUBLIC_ROADMAP_WEB_URL}/account/friends`}
+              href={`/account/friends`}
             >
               Invite your friends to share roadmaps with.
             </a>
