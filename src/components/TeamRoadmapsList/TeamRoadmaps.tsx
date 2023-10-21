@@ -27,6 +27,7 @@ import {
 import { RoadmapActionDropdown } from './RoadmapActionDropdown';
 import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
 import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
+import { cn } from '../../lib/classname';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -428,7 +429,12 @@ export function TeamRoadmaps() {
 
               return (
                 <div
-                  className="grid grid-cols-1 p-2.5 sm:grid-cols-[auto_110px]"
+                  className={cn(
+                    'grid grid-cols-1 p-2.5',
+                    canManageCurrentTeam
+                      ? 'sm:grid-cols-[auto_172px]'
+                      : 'sm:grid-cols-[auto_110px]'
+                  )}
                   key={resourceConfig.resourceId}
                 >
                   <div className="mb-3 grid grid-cols-1 sm:mb-0">
@@ -479,6 +485,18 @@ export function TeamRoadmaps() {
                       <ExternalLink className="inline-block h-4 w-4" />
                       Visit
                     </a>
+                    {canManageCurrentTeam && (
+                      <a
+                        href={editorLink}
+                        className={
+                          'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-none'
+                        }
+                        target={'_blank'}
+                      >
+                        <PenSquare className="inline-block h-4 w-4" />
+                        Edit
+                      </a>
+                    )}
                   </div>
                 </div>
               );
