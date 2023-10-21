@@ -8,13 +8,13 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useToggleTopic } from '../../hooks/use-toggle-topic';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
+import type { ResourceType } from '../../lib/resource-progress';
 import {
   isTopicDone,
   refreshProgressCounters,
   renderTopicProgress,
   updateResourceProgress as updateResourceProgressApi,
 } from '../../lib/resource-progress';
-import type { ResourceType } from '../../lib/resource-progress';
 import { pageProgressMessage, sponsorHidden } from '../../stores/page';
 import { TopicProgressButton } from './TopicProgressButton';
 import { ContributionForm } from './ContributionForm';
@@ -95,13 +95,13 @@ export function TopicDetail(props: TopicDetailProps) {
             resourceId,
             resourceType,
           },
-          oldIsDone ? 'pending' : 'done'
-        )
+          oldIsDone ? 'pending' : 'done',
+        ),
       )
       .then(({ done = [] }) => {
         renderTopicProgress(
           topicId,
-          done.includes(topicId) ? 'done' : 'pending'
+          done.includes(topicId) ? 'done' : 'pending',
         );
         refreshProgressCounters();
       })
@@ -149,7 +149,7 @@ export function TopicDetail(props: TopicDetailProps) {
             Accept: 'text/html',
           },
         }),
-      }
+      },
     )
       .then(({ response }) => {
         if (!response) {
@@ -163,7 +163,7 @@ export function TopicDetail(props: TopicDetailProps) {
           // We only need the inner HTML of the #main-content
           const node = new DOMParser().parseFromString(
             response as string,
-            'text/html'
+            'text/html',
           );
           topicHtml = node?.getElementById('main-content')?.outerHTML || '';
         } else {
@@ -171,7 +171,7 @@ export function TopicDetail(props: TopicDetailProps) {
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
           topicHtml = markdownToHtml(
             (response as RoadmapContentDocument)?.description || '',
-            false
+            false,
           );
         }
 
@@ -279,7 +279,7 @@ export function TopicDetail(props: TopicDetailProps) {
                         <span
                           className={cn(
                             'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
-                            linkTypes[link.type]
+                            linkTypes[link.type],
                           )}
                         >
                           {link.type.charAt(0).toUpperCase() +

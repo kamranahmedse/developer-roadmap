@@ -21,7 +21,7 @@ export function EmailLoginForm() {
       {
         email,
         password,
-      }
+      },
     );
 
     // Log the user in and reload the page
@@ -39,7 +39,7 @@ export function EmailLoginForm() {
     // @todo use proper types
     if ((error as any).type === 'user_not_verified') {
       window.location.href = `/verification-pending?email=${encodeURIComponent(
-        email
+        email,
       )}`;
       return;
     }

@@ -62,7 +62,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
 
   async function handleSubmit(
     e: FormEvent<HTMLFormElement> | MouseEvent<HTMLButtonElement>,
-    redirect: boolean = true
+    redirect: boolean = true,
   ) {
     e.preventDefault();
     if (isLoading) {
@@ -85,7 +85,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
         }),
         nodes: [],
         edges: [],
-      }
+      },
     );
 
     if (error) {
@@ -96,9 +96,9 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
 
     toast.success('Roadmap created successfully');
     if (redirect) {
-      window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${
-        response?._id
-      }`;
+      window.location.href = `${
+        import.meta.env.PUBLIC_EDITOR_APP_URL
+      }/${response?._id}`;
       return;
     }
 
@@ -186,7 +186,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
             type="button"
             className={cn(
               'block h-9 rounded-md border border-gray-200 bg-white px-4 py-2 text-sm font-medium text-black outline-none hover:border-gray-300 hover:bg-gray-50 focus:border-gray-300 focus:bg-gray-100',
-              !teamId && 'w-full'
+              !teamId && 'w-full',
             )}
           >
             Cancel
@@ -213,7 +213,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               type="submit"
               className={cn(
                 'flex h-9 items-center justify-center rounded-md border border-transparent bg-black px-4 py-2 text-sm font-medium text-white outline-none hover:bg-gray-800 focus:bg-gray-800',
-                teamId ? 'hidden sm:flex' : 'w-full'
+                teamId ? 'hidden sm:flex' : 'w-full',
               )}
             >
               {isLoading ? (

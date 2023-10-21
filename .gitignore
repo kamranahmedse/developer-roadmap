@@ -29,6 +29,5 @@ pnpm-debug.log*
 tests-examples
 *.csv
 
-/renderer/*
-!/renderer/index.tsx
-!/renderer/renderer.ts
+/editor/*
+!/editor/readonly-editor.tsx

@@ -1,4 +1,4 @@
-import { CheckCircle, CheckCircle2, CheckIcon } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 import { isLoggedIn } from '../../lib/jwt.ts';
 import { useEffect, useState } from 'react';
 

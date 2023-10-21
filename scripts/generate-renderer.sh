@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+-#!/usr/bin/env bash
 
 set -e
 
@@ -8,17 +8,17 @@ if [ ! -d ".temp/web-draw" ]; then
   git clone git@github.com:roadmapsh/web-draw.git .temp/web-draw
 fi
 
-rm -rf renderer
-mkdir renderer
+rm -rf editor
+mkdir editor
 
-# copy the files at /src/editor/renderer/* to /renderer
+# copy the files at /src/editor/* to /editor
 # while replacing any existing files
-cp -rf .temp/web-draw/src/editor/renderer/* renderer
+cp -rf .temp/web-draw/src/editor/* editor
 
 # Add @ts-nocheck to the top of each ts and tsx file
 # so that the typescript compiler doesn't complain
 # about the missing types
-find renderer -type f \( -name "*.ts" -o -name "*.tsx" \) -print0 | while IFS= read -r -d '' file; do
+find editor -type f \( -name "*.ts" -o -name "*.tsx" \) -print0 | while IFS= read -r -d '' file; do
   if [ -f "$file" ]; then
     echo "// @ts-nocheck" > temp
     cat "$file" >> temp
@@ -28,6 +28,5 @@ find renderer -type f \( -name "*.ts" -o -name "*.tsx" \) -print0 | while IFS= r
 done
 
 
-
-# ignore the worktree changes for the renderer directory
-git update-index --skip-worktree renderer/*
+# ignore the worktree changes for the editor directory
+git update-index --assume-unchanged editor/readonly-editor.tsx

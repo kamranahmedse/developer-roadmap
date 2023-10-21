@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}'],
+  content: [
+      './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}',
+      './editor/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}'
+  ],
   future: {
     hoverOnlyWhenSupported: true,
   },

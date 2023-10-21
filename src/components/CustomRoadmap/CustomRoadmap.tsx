@@ -7,13 +7,12 @@ import {
   httpPost,
 } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
-import { RoadmapRenderer } from './RoadmapRenderer';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
-import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { RestrictedPage } from './RestrictedPage';
 import { isLoggedIn } from '../../lib/jwt';
+import { FlowRoadmapRenderer } from './FlowRoadmapRenderer';
 
 export const allowedLinkTypes = [
   'video',
@@ -121,13 +120,8 @@ export function CustomRoadmap() {
   return (
     <>
       <RoadmapHeader />
-      <RoadmapRenderer roadmap={roadmap!} />
+      <FlowRoadmapRenderer roadmap={roadmap!} />
       <TopicDetail canSubmitContribution={false} />
-      <UserProgressModal
-        resourceId={roadmap?._id!}
-        resourceType="roadmap"
-        isCustomResource={true}
-      />
     </>
   );
 }

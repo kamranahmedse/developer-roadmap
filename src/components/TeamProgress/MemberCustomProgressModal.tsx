@@ -1,9 +1,12 @@
-import { useEffect, useRef, useState } from 'react';
-import { wireframeJSONToSVG } from 'roadmap-renderer';
+import {
+  useCallback,
+  useEffect,
+  useState,
+  type MouseEvent,
+  useRef,
+} from 'react';
 import { Spinner } from '../ReactIcons/Spinner';
 import '../FrameRenderer/FrameRenderer.css';
-import { useOutsideClick } from '../../hooks/use-outside-click';
-import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamMember } from './TeamProgressPage';
 import { httpGet } from '../../lib/http';
 import {
@@ -16,6 +19,11 @@ import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
+import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
+import { ReadonlyEditor } from '../../../editor/readonly-editor';
+import type { Node } from 'reactflow';
+import { useKeydown } from '../../hooks/use-keydown';
+import { useOutsideClick } from '../../hooks/use-outside-click';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
 
 export type ProgressMapProps = {
@@ -28,14 +36,14 @@ export type ProgressMapProps = {
   isCustomResource?: boolean;
 };
 
-type MemberProgressResponse = {
+export type MemberProgressResponse = {
   removed: string[];
   done: string[];
   learning: string[];
   skipped: string[];
 };
 
-export function MemberProgressModal(props: ProgressMapProps) {
+export function MemberCustomProgressModal(props: ProgressMapProps) {
   const {
     resourceId,
     member,
@@ -44,35 +52,30 @@ export function MemberProgressModal(props: ProgressMapProps) {
     teamId,
     onClose,
   } = props;
+
   const user = useAuth();
   const isCurrentUser = user?.email === member.email;
 
-  const containerEl = useRef<HTMLDivElement>(null);
   const popupBodyEl = useRef<HTMLDivElement>(null);
-
-  const [showProgressHint, setShowProgressHint] = useState(false);
+  const [roadmap, setRoadmap] = useState<GetRoadmapResponse | null>(null);
   const [memberProgress, setMemberProgress] =
     useState<MemberProgressResponse>();
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  let resourceJsonUrl = 'https://roadmap.sh';
-  if (resourceType === 'roadmap') {
-    resourceJsonUrl += `/${resourceId}.json`;
-  } else {
-    resourceJsonUrl += `/best-practices/${resourceId}.json`;
-  }
+  useKeydown('Escape', () => onClose());
+  useOutsideClick(popupBodyEl, () => onClose());
 
   async function getMemberProgress(
     teamId: string,
     memberId: string,
     resourceType: string,
-    resourceId: string
+    resourceId: string,
   ) {
     const { error, response } = await httpGet<MemberProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`
+      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to get member progress');
@@ -84,59 +87,32 @@ export function MemberProgressModal(props: ProgressMapProps) {
     return response;
   }
 
-  async function renderResource(jsonUrl: string) {
-    const res = await fetch(jsonUrl, {});
-    const json = await res.json();
-    const svg: SVGElement | null = await wireframeJSONToSVG(json, {
-      fontURL: '/fonts/balsamiq.woff2',
-    });
+  async function getRoadmap() {
+    const { response, error } = await httpGet<GetRoadmapResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${resourceId}`,
+    );
 
-    containerEl.current?.replaceChildren(svg);
+    if (error || !response) {
+      toast.error(error?.message || 'Failed to load roadmap');
+      return;
+    }
+
+    setRoadmap(response);
+
+    return response;
   }
 
-  useKeydown('Escape', () => {
-    if (showProgressHint) {
-      return;
-    }
-    onClose();
-  });
-
-  useOutsideClick(popupBodyEl, () => {
-    if (showProgressHint) {
-      return;
-    }
-    onClose();
-  });
-
   useEffect(() => {
-    if (
-      !containerEl.current ||
-      !resourceJsonUrl ||
-      !resourceId ||
-      !resourceType ||
-      !teamId
-    ) {
+    if (!resourceId || !resourceType || !teamId) {
       return;
     }
 
     setIsLoading(true);
     Promise.all([
-      renderResource(resourceJsonUrl),
+      getRoadmap(),
       getMemberProgress(teamId, member._id, resourceType, resourceId),
     ])
-      .then(([_, memberProgress = {}]) => {
-        const {
-          removed = [],
-          done = [],
-          learning = [],
-          skipped = [],
-        } = memberProgress;
-
-        done.forEach((id: string) => renderTopicProgress(id, 'done'));
-        learning.forEach((id: string) => renderTopicProgress(id, 'learning'));
-        skipped.forEach((id: string) => renderTopicProgress(id, 'skipped'));
-        removed.forEach((id: string) => renderTopicProgress(id, 'removed'));
-      })
+      .then(() => {})
       .catch((err) => {
         console.error(err);
         toast.error(err?.message || 'Something went wrong. Please try again!');
@@ -158,14 +134,14 @@ export function MemberProgressModal(props: ProgressMapProps) {
         resourceType: resourceType as ResourceType,
         topicId,
       },
-      newStatus
+      newStatus,
     )
       .then(() => {
         renderTopicProgress(topicId, newStatus);
         getMemberProgress(teamId, member._id, resourceType, resourceId).then(
           (data) => {
             setMemberProgress(data);
-          }
+          },
         );
       })
       .catch((err) => {
@@ -179,91 +155,73 @@ export function MemberProgressModal(props: ProgressMapProps) {
     return;
   }
 
-  async function handleRightClick(e: MouseEvent) {
-    const targetGroup = (e.target as HTMLElement)?.closest('g');
-    if (!targetGroup) {
+  const handleTopicRightClick = useCallback((e: MouseEvent, node: Node) => {
+    if (!isCurrentUser) {
       return;
     }
 
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
-      return;
-    }
-    const topicId = groupId.replace(/^\d+-/, '');
-
-    if (targetGroup.classList.contains('removed')) {
-      e.preventDefault();
+    const target = e?.currentTarget as HTMLDivElement;
+    if (!target) {
       return;
     }
 
-    e.preventDefault();
-    const isCurrentStatusDone = targetGroup?.classList.contains('done');
+    const isCurrentStatusDone = target?.classList.contains('done');
+    updateTopicStatus(node.id, isCurrentStatusDone ? 'pending' : 'done');
+  }, []);
 
-    updateTopicStatus(topicId, !isCurrentStatusDone ? 'done' : 'pending');
-  }
-
-  async function handleClick(e: MouseEvent) {
-    const targetGroup = (e.target as HTMLElement)?.closest('g');
-    if (!targetGroup) {
-      return;
-    }
-    const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
-    if (!groupId) {
-      return;
-    }
-    const topicId = groupId.replace(/^\d+-/, '');
-
-    if (targetGroup.classList.contains('removed')) {
+  const handleTopicShiftClick = useCallback((e: MouseEvent, node: Node) => {
+    if (!isCurrentUser) {
       return;
     }
 
-    e.preventDefault();
-    const isCurrentStatusLearning = targetGroup.classList.contains('learning');
-    const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
-
-    if (e.shiftKey) {
-      e.preventDefault();
-      updateTopicStatus(
-        topicId,
-        !isCurrentStatusLearning ? 'learning' : 'pending'
-      );
+    const target = e?.currentTarget as HTMLDivElement;
+    if (!target) {
       return;
     }
 
-    if (e.altKey) {
-      e.preventDefault();
-      updateTopicStatus(
-        topicId,
-        !isCurrentStatusSkipped ? 'skipped' : 'pending'
-      );
+    const isCurrentStatusLearning = target?.classList.contains('learning');
+    updateTopicStatus(
+      node.id,
+      isCurrentStatusLearning ? 'pending' : 'learning',
+    );
+  }, []);
 
-      return;
-    }
-  }
-
-  useEffect(() => {
-    if (!member || !containerEl.current) {
+  const handleTopicAltClick = useCallback((e: MouseEvent, node: Node) => {
+    if (!isCurrentUser) {
       return;
     }
 
-    containerEl.current?.addEventListener('contextmenu', handleRightClick);
-    containerEl.current?.addEventListener('click', handleClick);
+    const target = e?.currentTarget as HTMLDivElement;
+    if (!target) {
+      return;
+    }
 
-    return () => {
-      containerEl.current?.removeEventListener('contextmenu', handleRightClick);
-      containerEl.current?.removeEventListener('click', handleClick);
-    };
-  }, [member]);
+    const isCurrentStatusSkipped = target?.classList.contains('skipped');
+    updateTopicStatus(node.id, isCurrentStatusSkipped ? 'pending' : 'skipped');
+  }, []);
+
+  const handleLinkClick = useCallback((linkId: string, href: string) => {
+    if (!href || !isCurrentUser) {
+      return;
+    }
+
+    const isExternalLink = href.startsWith('http');
+    if (isExternalLink) {
+      window.open(href, '_blank');
+    } else {
+      window.location.href = href;
+    }
+  }, []);
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 h-full items-center justify-center overflow-y-auto overflow-x-hidden overscroll-contain bg-black/50">
       <div
-        id={'customized-roadmap'}
+        id="original-roadmap"
         className="relative mx-auto h-full w-full max-w-4xl p-4 md:h-auto"
       >
         <div
+          className="relative rounded-lg bg-white pt-[1px] shadow"
           ref={popupBodyEl}
-          className="popup-body relative rounded-lg bg-white pt-[1px] shadow"
         >
           <MemberProgressModalHeader
             resourceId={resourceId}
@@ -274,11 +232,41 @@ export function MemberProgressModal(props: ProgressMapProps) {
             isLoading={isLoading}
           />
 
-          <div
-            id={'resource-svg-wrap'}
-            ref={containerEl}
-            className="px-4 pb-2"
-          ></div>
+          {!isLoading && roadmap && (
+            <div className="px-4 pb-2">
+              <ReadonlyEditor
+                variant="modal"
+                roadmap={roadmap!}
+                className="min-h-[400px]"
+                onRendered={() => {
+                  const {
+                    removed = [],
+                    done = [],
+                    learning = [],
+                    skipped = [],
+                  } = memberProgress || {};
+
+                  done.forEach((id: string) => renderTopicProgress(id, 'done'));
+                  learning.forEach((id: string) =>
+                    renderTopicProgress(id, 'learning'),
+                  );
+                  skipped.forEach((id: string) =>
+                    renderTopicProgress(id, 'skipped'),
+                  );
+                  removed.forEach((id: string) =>
+                    renderTopicProgress(id, 'removed'),
+                  );
+                }}
+                onTopicRightClick={handleTopicRightClick}
+                onTopicShiftClick={handleTopicShiftClick}
+                onTopicAltClick={handleTopicAltClick}
+                onButtonNodeClick={handleLinkClick}
+                onLinkClick={handleLinkClick}
+                fontFamily="Balsamiq Sans"
+                fontURL="/fonts/balsamiq.woff2"
+              />
+            </div>
+          )}
 
           {isLoading && (
             <div className="flex w-full justify-center">
@@ -291,7 +279,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
 
           <button
             type="button"
-            className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${
+            className={`absolute right-2.5 top-3 z-50 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden ${
               isCurrentUser ? 'hover:bg-gray-800' : 'hover:bg-gray-100'
             }`}
             onClick={onClose}

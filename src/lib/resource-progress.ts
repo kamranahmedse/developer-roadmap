@@ -191,7 +191,7 @@ export function setResourceProgress(
 
 export function topicSelectorAll(
   topicId: string,
-  parentElement: Document | SVGElement = document
+  parentElement: Document | SVGElement | HTMLDivElement = document
 ): Element[] {
   const matchingElements: Element[] = [];
 
@@ -213,6 +213,7 @@ export function topicSelectorAll(
       `[data-group-id="${topicId}"]`, // Elements with exact match of the topic id
       `[data-group-id="check:${topicId}"]`, // Matching "check:XXXX" box of the topic
       `[data-node-id="${topicId}"]`, // Matching custom roadmap nodes
+      `[data-id="${topicId}"]`, // Matching custom roadmap nodes
     ],
     parentElement
   ).forEach((element) => {
@@ -257,6 +258,8 @@ export function clearResourceProgress() {
     '.clickable-group',
     '[data-type="topic"]',
     '[data-type="subtopic"]',
+    '.react-flow__node-topic',
+    '.react-flow__node-subtopic',
   ]);
   for (const clickableElement of matchingElements) {
     clickableElement.classList.remove('done', 'skipped', 'learning', 'removed');
@@ -290,7 +293,7 @@ export async function renderResourceProgress(
 
 function getMatchingElements(
   quries: string[],
-  parentElement: Document | SVGElement = document
+  parentElement: Document | SVGElement | HTMLDivElement = document
 ): Element[] {
   const matchingElements: Element[] = [];
   quries.forEach((query) => {
@@ -314,6 +317,8 @@ export function refreshProgressCounters() {
     '.clickable-group',
     '[data-type="topic"]',
     '[data-type="subtopic"]',
+    '.react-flow__node-topic',
+    '.react-flow__node-subtopic',
   ]).length;
 
   const externalLinks = document.querySelectorAll(
@@ -350,15 +355,20 @@ export function refreshProgressCounters() {
     getMatchingElements([
       '.clickable-group.done:not([data-group-id^="ext_link:"])',
       '[data-node-id].done', // All data-node-id=*.done elements are custom roadmap nodes
+      '[data-id].done', // All data-id=*.done elements are custom roadmap nodes
     ]).length - totalCheckBoxesDone;
   const totalLearning =
     getMatchingElements([
       '.clickable-group.learning',
       '[data-node-id].learning',
+      '[data-id].learning',
     ]).length - totalCheckBoxesLearning;
   const totalSkipped =
-    getMatchingElements(['.clickable-group.skipped', '[data-node-id].skipped'])
-      .length - totalCheckBoxesSkipped;
+    getMatchingElements([
+      '.clickable-group.skipped',
+      '[data-node-id].skipped',
+      '[data-id].skipped',
+    ]).length - totalCheckBoxesSkipped;
 
   const doneCountEls = document.querySelectorAll('[data-progress-done]');
   if (doneCountEls.length > 0) {
