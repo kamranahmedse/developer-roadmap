@@ -19,12 +19,11 @@ if (!allowedRoadmapIds.includes(roadmapId)) {
 }
 
 const ROADMAP_CONTENT_DIR = path.join(ALL_ROADMAPS_DIR, roadmapId, 'content');
-const { Configuration, OpenAIApi } = require('openai');
-const configuration = new Configuration({
+const OpenAI = require('openai');
+
+const openai = new OpenAI({
   apiKey: OPEN_AI_API_KEY,
 });
-
-const openai = new OpenAIApi(configuration);
 
 function getFilesInFolder(folderPath, fileList = {}) {
   const files = fs.readdirSync(folderPath);
@@ -60,16 +59,16 @@ function writeTopicContent(currTopicUrl) {
 
   const roadmapTitle = roadmapId.replace(/-/g, ' ');
 
-  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief summary of that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output. Also include the code examples if applicable to this topic.`;
+  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief paragraph for that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output.`;
   if (!childTopic) {
-    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me with a brief summary of that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output. Also include the code examples if applicable to this topic.`;
+    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief paragraph for that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output.`;
   }
 
   console.log(`Generating '${childTopic || parentTopic}'...`);
 
   return new Promise((resolve, reject) => {
-    openai
-      .createChatCompletion({
+    openai.chat.completions
+      .create({
         model: 'gpt-4',
         messages: [
           {
@@ -79,7 +78,7 @@ function writeTopicContent(currTopicUrl) {
         ],
       })
       .then((response) => {
-        const article = response.data.choices[0].message.content;
+        const article = response.choices[0].message.content;
 
         resolve(article);
       })
@@ -92,7 +91,7 @@ function writeTopicContent(currTopicUrl) {
 async function writeFileForGroup(group, topicUrlToPathMapping) {
   const topicId = group?.properties?.controlName;
   const topicTitle = group?.children?.controls?.control?.find(
-    (control) => control?.typeID === 'Label'
+    (control) => control?.typeID === 'Label',
   )?.properties?.text;
   const currTopicUrl = topicId?.replace(/^\d+-/g, '/')?.replace(/:/g, '/');
   if (!currTopicUrl) {
@@ -138,15 +137,14 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
 async function run() {
   const topicUrlToPathMapping = getFilesInFolder(ROADMAP_CONTENT_DIR);
 
-  const roadmapJson = require(path.join(
-      ALL_ROADMAPS_DIR,
-      `${roadmapId}/${roadmapId}`
-  ));
+  const roadmapJson = require(
+    path.join(ALL_ROADMAPS_DIR, `${roadmapId}/${roadmapId}`),
+  );
 
   const groups = roadmapJson?.mockup?.controls?.control?.filter(
     (control) =>
       control.typeID === '__group__' &&
-      !control.properties?.controlName?.startsWith('ext_link')
+      !control.properties?.controlName?.startsWith('ext_link'),
   );
 
   if (!OPEN_AI_API_KEY) {
