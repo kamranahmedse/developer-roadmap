@@ -61,6 +61,14 @@ const hasTnsBanner = !!tnsBannerLink;
     ]}
   >
     <div class='mb-3 mt-0 sm:mb-4'>
+      {
+        isForkable && (
+          <div class='mb-2'>
+            <CreateVersion client:load roadmapId={roadmapId} />
+          </div>
+        )
+      }
+
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
         <span class='relative top-0 sm:-top-1'>
@@ -138,10 +146,6 @@ const hasTnsBanner = !!tnsBannerLink;
             </a>
           )
         }
-
-        <div data-auth-required class='inline hidden'>
-          <CreateVersion client:load roadmapId={roadmapId} />
-        </div>
       </div>
 
       <div class='flex items-center gap-1 sm:gap-2'>
