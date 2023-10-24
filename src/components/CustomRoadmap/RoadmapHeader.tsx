@@ -174,7 +174,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
                 </a>
                 <button
                   onClick={() => setIsSharing(true)}
-                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium  text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
+                  className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:px-3 sm:text-sm"
                 >
                   <Lock className="mr-1.5 h-4 w-4 stroke-[2.5]" />
                   Sharing
