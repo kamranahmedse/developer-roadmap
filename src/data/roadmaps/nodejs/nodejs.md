@@ -75,6 +75,8 @@ relatedRoadmaps:
   - 'system-design'
   - 'graphql'
   - 'frontend'
+relatedQuestions:
+  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'

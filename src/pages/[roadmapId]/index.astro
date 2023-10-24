@@ -48,7 +48,7 @@ if (roadmapData.schema) {
       datePublished: roadmapSchema.datePublished,
       dateModified: roadmapSchema.dateModified,
       imageUrl: roadmapSchema.imageUrl,
-    })
+    }),
   );
 }
 
@@ -116,6 +116,7 @@ if (roadmapFAQs.length) {
     />
 
     <FAQs faqs={roadmapFAQs} />
+
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>
 </BaseLayout>
