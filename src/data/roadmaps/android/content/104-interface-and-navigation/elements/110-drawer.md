@@ -1,1 +1,3 @@
 # Drawer
+
+The `Drawer` in Android is a slide-out menu that enables users to navigate between different parts of an application. It is usually triggered by a hamburger icon in the app's top-left corner. The `Drawer` can contain a list of options, subheadings, and separators to articulate the app's structure. In Android, this component can be implemented using `DrawerLayout` and `NavigationView`. The `DrawerLayout` is the parent component and `NavigationView` is typically placed within the `DrawerLayout`. One key thing to note is that the `Drawer` should not be used as the only means of navigating through an application, according to Android's design guidelines.

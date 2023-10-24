@@ -1,1 +1,3 @@
-# Bottom sheet
+# Bottom Sheet
+
+The **Bottom Sheet** is a popular UI component within the Android development environment. This interface element acts like a drawer that slides up from the bottom of the screen to reveal more content or options. There are two types of bottom sheets in Android: "persistent" and "modal". The persistent bottom sheet shows in-app content that supplements the primary screen content, remaining visible even when the user interacts with the primary surface. On the other hand, the modal bottom sheet is a simple menu presenting a list of options, often used for sharing content, navigating, or for user-editable content. It can be dismissed by the user and does not remain visible when the user interacts with the primary surface.

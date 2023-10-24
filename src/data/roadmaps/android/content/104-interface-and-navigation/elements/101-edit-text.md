@@ -1,1 +1,3 @@
-# Edit text
+# EditText
+
+`EditText` is a common element used in Android development. It's a fundamental component for accepting user input in simple form or dialog. It allows users to modify text within its bounding box, much like what a TextField does in more general programming languages. If you have used a form or a webpage that allows you to input text, it was probably created with an EditText or similar control. You can customize an `EditText` in various ways including size, color, initial text, and hint text. You can also listen for changes in the text in an EditText, apply filters, specify input types, and more. The `android:text` attribute lets you pre-fill the EditText with text, and `android:hint` provides hint text when the EditText is empty.

@@ -1,1 +1,3 @@
 # Buttons
+
+Buttons in Android are user interactions that trigger certain programmable actions. They are part of the `View` class in Android, making them an essential part of user interfaces. Android provides different types of buttons such as `Button`, `ToggleButton`, `RadioButton`, `CheckBox`, `Switch`, `ImageButton`, and `FloatingActionButton`. Each of these serves a different purpose and provides varied interactivity options. Their behavior and appearance can be customized in terms of different properties such as text, ID, color, etc. They can be programmed in the XML layout files or dynamically in the Java/Kotlin code.

@@ -1,1 +1,3 @@
-# Image view
+# ImageView
+
+An `ImageView` is a class used in Android for displaying an image file. It inherits from 'View' class and extends the ability of views to show images. Images can be loaded from various sources such as a resource file, drawable, or a URL, with varying scale types. This class also provides methods to manage the image scale type, define padding, set tint, and manipulate the color filter. It's important to note that `ImageView` should be used in moderation as it is resource-intensive and could degrade app performance if used excessively.

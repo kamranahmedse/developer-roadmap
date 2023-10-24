@@ -1,1 +1,3 @@
-# List view
+# ListView
+
+`ListView` in Android is a view which groups several items and displays them in vertical scrollable list. The list items are automatically inserted to the list using an `Adapter` that pulls content from a source such as an array or database query and converts each item result into a view that's placed into the list. It is widely used in android apps as it offers an easy way to display a list of data in an organized manner. Functions such as `setAdapter(Adapter)` to specify data source, `setOnItemClickListener(OnItemClickListener)` to listen for click events on items, and `setOnScrollListener(OnScrollListener)` to listen for scroll events, provide further control over the list behavior.

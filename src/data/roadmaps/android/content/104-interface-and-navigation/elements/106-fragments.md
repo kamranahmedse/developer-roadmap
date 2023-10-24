@@ -1,1 +1,3 @@
 # Fragments
+
+In Android, **Fragments** represent a behavior or a part of the user interface in an Activity. They are modular sections of an activity, which are reusable in different activities. They contribute to making an application adaptive to different devices with varied screen sizes. A fragment has its own lifecycle, receives its own input events, and can be added or removed while the activity is running. While they exist within the context of an activity, they can also be used independently to encapsulate functionality for easier development and reuse. Multiple fragments can combine in a single activity to build a multi-pane UI.

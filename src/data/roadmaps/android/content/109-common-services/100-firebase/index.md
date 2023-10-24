@@ -1,1 +1,3 @@
 # Firebase
+
+`Firebase` is a Backend-as-a-Service (BaaS) app development platform that provides hosted backend services such as a real-time database, cloud storage, authentication, crash reporting, machine learning, remote configuration, and hosting for your static files. It provides an API that allows developers to store and sync data across multiple clients. Firebase includes a responsive client library to bind application data to your user interface and backend services for authentication systems, analytics, database management, etc. Firebase simplifies application development all while ensuring server-side effectiveness.

@@ -1,1 +1,3 @@
 # Frame
+
+The `FrameLayout` in Android is a layout manager that pinpoints its children to the top left corner of the layout. This means that all children will be piled up on each other at the same top left corner, which might not be visually appealing. However, it can be useful in some specific designs, where you desire to overlay one view on top of another. Additionally, `FrameLayout` allows you to control the positioning of items in the frame by configuring the `gravity` property. However, bear in mind that this layout does not provide any visual structure – you may need to use `padding` or `margin` to create spaces between the elements in the frame.

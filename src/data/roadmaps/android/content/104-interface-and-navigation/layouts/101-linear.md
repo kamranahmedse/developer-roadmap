@@ -1,1 +1,3 @@
 # Linear
+
+`Linear Layout` in Android is a layout where all elements are aligned in a linear fashion - either horizontally or vertically. Each element inside a `LinearLayout` takes up space according to its size. In a vertical layout, elements can occupy the full width and a certain height, whereas in a horizontal layout, elements can occupy the full height and a certain width. This is extremely useful if you want to align elements in a single direction. You provide the orientation of a `LinearLayout` using the `android:orientation` attribute.
