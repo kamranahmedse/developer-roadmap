@@ -71,7 +71,6 @@ export function CreateVersion(props: CreateVersionProps) {
       import.meta.env.PUBLIC_EDITOR_APP_URL
     }/${response?.roadmapId}`;
 
-    setIsCreating(false);
     window.open(roadmapEditorUrl, '_blank');
   }
 
@@ -122,7 +121,7 @@ export function CreateVersion(props: CreateVersionProps) {
   return (
     <button
       disabled={isCreating}
-      className="flex items-center justify-center rounded-md border bg-gray-50 px-2.5 py-1 text-xs font-medium text-black hover:bg-gray-200 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:hover:bg-gray-100 max-sm:hidden sm:text-sm"
+      className="flex items-center justify-center rounded-md border border-gray-300 bg-gray-50 px-2.5 py-1 text-xs font-medium text-black hover:bg-gray-200 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:hover:bg-gray-100 max-sm:hidden sm:text-sm"
       onClick={() => {
         if (!isLoggedIn()) {
           showLoginPopup();

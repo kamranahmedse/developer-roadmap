@@ -74,7 +74,7 @@
       "type": "title",
       "position": {
         "x": -209.5,
-        "y": -102.59925177765109
+        "y": -62.59925177765109
       },
       "selected": false,
       "data": {
@@ -90,7 +90,7 @@
       "dragging": false,
       "positionAbsolute": {
         "x": -209.5,
-        "y": -102.59925177765109
+        "y": -62.59925177765109
       },
       "focusable": true
     },
@@ -1436,12 +1436,12 @@
     },
     {
       "width": 20,
-      "height": 150,
+      "height": 67,
       "id": "LEijbLyxg4RyutKEM2Y5g",
       "type": "vertical",
       "position": {
         "x": -137,
-        "y": -252.5992517776511
+        "y": -129.5992517776511
       },
       "selected": false,
       "data": {
@@ -1450,17 +1450,22 @@
           "strokeDasharray": "0.8 8",
           "strokeLinecap": "round",
           "strokeWidth": 3.5,
-          "stroke": "black"
+          "stroke": "#0A33FF"
         },
         "oldId": "xD07fJ1NmNeAarVCEfubU"
       },
       "zIndex": 999,
       "positionAbsolute": {
         "x": -137,
-        "y": -252.5992517776511
+        "y": -129.5992517776511
       },
       "dragging": false,
-      "focusable": true
+      "focusable": true,
+      "style": {
+        "width": 20,
+        "height": 67
+      },
+      "resizing": false
     },
     {
       "width": 176,
@@ -3876,7 +3881,7 @@
       "selected": false,
       "data": {
         "label": "Performance Best Practices",
-        "href": "",
+        "href": "https://roadmap.sh/best-practices/frontend-performance",
         "color": "#ffffff",
         "backgroundColor": "#4136d6",
         "style": {
