@@ -22,4 +22,4 @@ To learn more, visit the following links:
 
 - [NGINX Architecture](https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/)
 - [HAProxy Architecture Guide](http://www.haproxy.org/download/1.2/doc/architecture.txt)
-- [Scalability](http://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
+- [Scalability](https://web.archive.org/web/20220530193911/https://www.lecloud.net/post/7295452622/scalability-for-dummies-part-1-clones)
