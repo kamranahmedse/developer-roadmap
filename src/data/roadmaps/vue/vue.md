@@ -49,6 +49,8 @@ relatedRoadmaps:
   - 'react'
   - 'angular'
   - 'nodejs'
+relatedQuestions:
+  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'
