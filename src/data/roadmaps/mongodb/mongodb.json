@@ -493,7 +493,7 @@
           "x": "899",
           "y": "1850",
           "properties": {
-            "controlName": "104-query-operators:index-types:single-field"
+            "controlName": "104-performance-optimization:index-types:single-field"
           },
           "children": {
             "controls": {
@@ -540,7 +540,7 @@
           "x": "899",
           "y": "1899",
           "properties": {
-            "controlName": "103-query-operators:index-types:compound"
+            "controlName": "103-performance-optimization:index-types:compound"
           },
           "children": {
             "controls": {
@@ -587,7 +587,7 @@
           "x": "899",
           "y": "1948",
           "properties": {
-            "controlName": "102-query-operators:index-types:text"
+            "controlName": "102-performance-optimization:index-types:text"
           },
           "children": {
             "controls": {
@@ -634,7 +634,7 @@
           "x": "899",
           "y": "1997",
           "properties": {
-            "controlName": "101-query-operators:index-types:geospatial"
+            "controlName": "101-performance-optimization:index-types:geospatial"
           },
           "children": {
             "controls": {
@@ -681,7 +681,7 @@
           "x": "899",
           "y": "2045",
           "properties": {
-            "controlName": "100-query-operators:index-types:expiring"
+            "controlName": "100-performance-optimization:index-types:expiring"
           },
           "children": {
             "controls": {
@@ -3740,7 +3740,7 @@
           "x": "873",
           "y": "1712",
           "properties": {
-            "controlName": "105-query-operators"
+            "controlName": "105-performance-optimization"
           },
           "children": {
             "controls": {
@@ -3787,7 +3787,7 @@
           "x": "886",
           "y": "1795",
           "properties": {
-            "controlName": "100-query-operators:indexes"
+            "controlName": "100-performance-optimization:indexes"
           },
           "children": {
             "controls": {
@@ -3834,7 +3834,7 @@
           "x": "886",
           "y": "2144",
           "properties": {
-            "controlName": "101-query-operators:atlas-search-indexes"
+            "controlName": "101-performance-optimization:atlas-search-indexes"
           },
           "children": {
             "controls": {
@@ -3881,7 +3881,7 @@
           "x": "886",
           "y": "2194",
           "properties": {
-            "controlName": "102-query-operators:query-optimization"
+            "controlName": "102-performance-optimization:query-optimization"
           },
           "children": {
             "controls": {

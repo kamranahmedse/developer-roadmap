@@ -8,7 +8,8 @@ import YouTubeAlert from './YouTubeAlert.astro';
 import ProgressHelpPopup from './ProgressHelpPopup.astro';
 import { MarkFavorite } from './FeaturedItems/MarkFavorite';
 import { TeamVersions } from './TeamVersions/TeamVersions';
-import { RoadmapFrontmatter } from '../lib/roadmap';
+import { CreateVersion } from './CreateVersion/CreateVersion';
+import { type RoadmapFrontmatter } from '../lib/roadmap';
 
 export interface Props {
   title: string;
@@ -20,6 +21,7 @@ export interface Props {
   hasSearch?: boolean;
   question?: RoadmapFrontmatter['question'];
   hasTopics?: boolean;
+  isForkable?: boolean;
 }
 
 const {
@@ -32,6 +34,7 @@ const {
   note,
   hasTopics = false,
   question,
+  isForkable = false,
 } = Astro.props;
 
 const isRoadmapReady = !isUpcoming;
@@ -58,13 +61,21 @@ const hasTnsBanner = !!tnsBannerLink;
     ]}
   >
     <div class='mb-3 mt-0 sm:mb-4'>
+      {
+        isForkable && (
+          <div class='mb-2'>
+            <CreateVersion client:load roadmapId={roadmapId} />
+          </div>
+        )
+      }
+
       <h1 class='mb-0.5 text-2xl font-bold sm:mb-2 sm:text-4xl'>
         {title}
         <span class='relative top-0 sm:-top-1'>
           <MarkFavorite
             resourceId={roadmapId}
             resourceType='roadmap'
-            className='text-gray-500 !opacity-100 hover:text-gray-600 [&>svg]:stroke-[0.4] [&>svg]:stroke-gray-400 hover:[&>svg]:stroke-gray-600 [&>svg]:h-4 [&>svg]:w-4 sm:[&>svg]:h-4 sm:[&>svg]:w-4 ml-1.5 relative focus:outline-0'
+            className='relative ml-1.5 text-gray-500 !opacity-100 hover:text-gray-600 focus:outline-0 [&>svg]:h-4 [&>svg]:w-4 [&>svg]:stroke-gray-400 [&>svg]:stroke-[0.4] hover:[&>svg]:stroke-gray-600 sm:[&>svg]:h-4 sm:[&>svg]:w-4'
             client:only='react'
           />
         </span>
