@@ -81,7 +81,7 @@ export function CreateVersion(props: CreateVersionProps) {
     );
   }
 
-  if (!isLoading && userVersion) {
+  if (!isLoading && userVersion?._id) {
     return (
       <div className={'flex items-center'}>
         <a
