@@ -61,6 +61,9 @@ relatedRoadmaps:
   - 'angular'
   - 'vue'
   - 'design-system'
+relatedQuestions:
+  - 'javascript'
+  - 'react'
 sitemap:
   priority: 1
   changefreq: 'monthly'
