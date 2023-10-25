@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import CloseIcon from '../../icons/close.svg';
 import SpinnerIcon from '../../icons/spinner.svg';
 
@@ -184,6 +184,10 @@ export function TopicDetail(props: TopicDetailProps) {
       });
   });
 
+  useEffect(() => {
+    if (isActive) topicRef?.current?.focus();
+  }, [isActive]);
+
   if (!isActive) {
     return null;
   }
@@ -194,7 +198,8 @@ export function TopicDetail(props: TopicDetailProps) {
     <div className={'relative z-50'}>
       <div
         ref={topicRef}
-        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 sm:max-w-[600px] sm:p-6"
+        tabIndex={0}
+        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoading && (
           <div className="flex w-full justify-center">
