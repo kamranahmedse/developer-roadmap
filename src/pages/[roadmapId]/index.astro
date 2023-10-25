@@ -92,7 +92,7 @@ if (roadmapFAQs.length) {
 
   <div class='bg-gray-50 pt-4 sm:pt-12'>
     {
-      !roadmapData.isUpcoming && roadmapData.briefTitle !== 'Android' && (
+      !roadmapData.isUpcoming && (
         <div class='container relative !max-w-[1000px]'>
           <ShareIcons
             description={roadmapData.briefDescription}
@@ -109,16 +109,6 @@ if (roadmapFAQs.length) {
       )
     }
 
-    {
-      !roadmapData.isUpcoming && roadmapData.briefTitle === 'Android' && (
-        <div class='mt-0 pb-14 sm:-mt-6'>
-          <MarkdownFile>
-            <roadmapFile.Content />
-          </MarkdownFile>
-        </div>
-      )
-    }
-
     {roadmapData.isUpcoming && <UpcomingForm />}
     <UserProgressModal
       resourceId={roadmapId}
@@ -127,6 +117,7 @@ if (roadmapFAQs.length) {
     />
 
     <FAQs faqs={roadmapFAQs} />
+
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>
 </BaseLayout>

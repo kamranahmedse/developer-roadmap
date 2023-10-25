@@ -32,7 +32,7 @@ blockquote p:before {
 
 .prose ul li > code,
 .prose ol li > code,
-p > code,
+p code,
 a > code,
 strong > code,
 em > code,

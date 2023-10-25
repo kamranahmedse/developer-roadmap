@@ -23,7 +23,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
       <button
         disabled={false}
         onClick={() => setIsOpen(!isOpen)}
-        className="inline-flex items-center justify-center rounded-md bg-gray-500 py-1.5 pl-2 pr-2 text-xs font-medium text-white hover:bg-gray-600 sm:pl-1.5 sm:pr-3 sm:text-sm"
+        className="inline-flex items-center justify-center rounded-md border border-gray-300 bg-white py-1.5 pl-2 pr-2 text-xs font-medium text-black hover:border-gray-300 hover:bg-gray-300 sm:pl-1.5 sm:pr-3 sm:text-sm"
       >
         <MoreVertical className="mr-0 h-4 w-4 stroke-[2.5] sm:mr-1.5" />
         <span className="hidden sm:inline">Actions</span>
@@ -32,7 +32,7 @@ export function RoadmapActionButton(props: RoadmapActionButtonProps) {
       {isOpen && (
         <div
           ref={menuRef}
-          className="align-right absolute right-0 top-full z-50 mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md"
+          className="align-right absolute right-0 top-full mt-1 w-[140px] rounded-md bg-slate-800 px-2 py-2 text-white shadow-md z-[9999]"
         >
           <ul>
             {onUpdateSharing && (

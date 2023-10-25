@@ -35,6 +35,7 @@ export interface RoadmapFrontmatter {
     imageUrl: string;
   };
   relatedRoadmaps: string[];
+  relatedQuestions: string[];
   sitemap: {
     priority: number;
     changefreq: string;
@@ -122,5 +123,9 @@ export async function getRoadmapById(id: string): Promise<RoadmapFileType> {
 export async function getRoadmapsByIds(
   ids: string[],
 ): Promise<RoadmapFileType[]> {
+  if (!ids?.length) {
+    return [];
+  }
+
   return Promise.all(ids.map((id) => getRoadmapById(id)));
 }

@@ -54,7 +54,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
       `/src/data/question-groups/*/*.md`,
       {
         eager: true,
-      }
+      },
     );
 
   const answerFilesMap = await import.meta.glob<string>(
@@ -63,7 +63,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
     {
       eager: true,
       as: 'raw',
-    }
+    },
   );
 
   return Object.values(questionGroupFilesMap)
@@ -115,4 +115,33 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
       };
     })
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+}
+
+export async function getQuestionGroupsByIds(
+  ids: string[],
+): Promise<{ id: string; title: string; description: string }[]> {
+  if (!ids?.length) {
+    return [];
+  }
+
+  const questionGroupFilesMap = import.meta.glob<
+    MarkdownFileType<RawQuestionGroupFrontmatter>
+  >(`/src/data/question-groups/*/*.md`, {
+    eager: true,
+  });
+
+  return Object.values(questionGroupFilesMap)
+    .map((group) => {
+      const fileId = group?.file?.split('/')?.pop()?.replace('.md', '');
+      const frontmatter = group.frontmatter;
+
+      return {
+        id: fileId!,
+        title: frontmatter.briefTitle,
+        description: `${frontmatter.questions.length} Questions`,
+      };
+    })
+    .filter((group) => {
+      return ids.includes(group.id);
+    });
 }
