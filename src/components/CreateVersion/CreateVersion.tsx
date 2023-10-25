@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { httpGet, httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { isLoggedIn } from '../../lib/jwt';
-import { GitFork, Layers2, Loader2, Map } from 'lucide-react';
+import { GitFork, Loader2, Map } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 import type { RoadmapDocument } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
@@ -67,11 +67,9 @@ export function CreateVersion(props: CreateVersionProps) {
       return;
     }
 
-    const roadmapEditorUrl = `${
+    window.location.href = `${
       import.meta.env.PUBLIC_EDITOR_APP_URL
     }/${response?.roadmapId}`;
-
-    window.open(roadmapEditorUrl, '_blank');
   }
 
   if (isLoading) {
