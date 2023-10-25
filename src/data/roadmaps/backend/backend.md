@@ -63,6 +63,8 @@ relatedRoadmaps:
   - 'javascript'
   - 'nodejs'
   - 'postgresql-dba'
+relatedQuestions:
+  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'

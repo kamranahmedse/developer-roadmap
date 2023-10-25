@@ -40,6 +40,9 @@ relatedRoadmaps:
   - 'vue'
   - 'nodejs'
   - 'design-system'
+relatedQuestions:
+  - 'react'
+  - 'javascript'
 sitemap:
   priority: 1
   changefreq: 'monthly'
