@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { isLoggedIn } from '../../lib/jwt';
-import { Layers2, Loader2 } from 'lucide-react';
+import { GitFork, Layers2, Loader2 } from 'lucide-react';
 import { showLoginPopup } from '../../lib/popup';
 
 type CreateVersionProps = {
@@ -14,6 +14,7 @@ export function CreateVersion(props: CreateVersionProps) {
 
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
+  const [isConfirming, setIsConfirming] = useState(false);
 
   async function createVersion() {
     if (isLoading || !roadmapId) {
@@ -45,18 +46,47 @@ export function CreateVersion(props: CreateVersionProps) {
     window.open(roadmapEditorUrl, '_blank');
   }
 
+  if (isConfirming) {
+    return (
+      <p className="flex h-[30px] items-center text-sm text-red-500">
+        Create and edit a custom roadmap from this?
+        <button
+          onClick={() => {
+            setIsConfirming(false);
+            createVersion().finally(() => null);
+          }}
+          className="ml-2 font-semibold underline underline-offset-2"
+        >
+          Yes
+        </button>
+        <span className="text-xs">&nbsp;/&nbsp;</span>
+        <button
+          className="font-semibold underline underline-offset-2"
+          onClick={() => setIsConfirming(false)}
+        >
+          No
+        </button>
+      </p>
+    );
+  }
+
   return (
     <button
       disabled={isLoading}
-      className="inline-flex h-full items-center justify-center rounded-md border bg-gray-50 px-3 py-1.5 text-xs font-medium text-black hover:bg-gray-200 disabled:cursor-not-allowed disabled:bg-gray-200 disabled:hover:bg-gray-200 max-sm:hidden sm:text-sm"
-      onClick={createVersion}
+      className="flex items-center justify-center rounded-md border bg-gray-50 px-2.5 py-1 text-xs font-medium text-black hover:bg-gray-200 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:hover:bg-gray-100 max-sm:hidden sm:text-sm"
+      onClick={() => setIsConfirming(true)}
     >
       {isLoading ? (
-        <Loader2 className="mr-2 h-3 w-3 animate-spin stroke-[2.5]" />
+        <>
+          <Loader2 className="mr-2 h-3 w-3 animate-spin stroke-[2.5]" />
+          Please wait ..
+        </>
       ) : (
-        <Layers2 className="mr-2 h-3 w-3 stroke-[2.5]" />
+        <>
+          <GitFork className="mr-1.5" size="16px" />
+          Create your own Version
+        </>
       )}
-      Create your own Version
     </button>
   );
 }
