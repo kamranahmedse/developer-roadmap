@@ -176,24 +176,24 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
         />
 
         <a
-          href={`/r?id=${roadmap._id}`}
-          className={
-            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
-          }
-          target={'_blank'}
-        >
-          <ExternalLink className="inline-block h-4 w-4" />
-          Visit
-        </a>
-        <a
           href={editorLink}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-gray-800 bg-gray-900 px-2.5 py-1.5 text-xs text-white hover:bg-gray-800 focus:outline-none'
+            'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2.5 py-1.5 text-xs text-black hover:bg-gray-50 focus:outline-none'
           }
           target={'_blank'}
         >
           <PenSquare className="inline-block h-4 w-4" />
           Edit
+        </a>
+        <a
+          href={`/r?id=${roadmap._id}`}
+          className={
+            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs hover:bg-blue-50 focus:outline-none text-blue-600'
+          }
+          target={'_blank'}
+        >
+          <ExternalLink className="inline-block h-4 w-4" />
+          Visit
         </a>
       </div>
     </li>
