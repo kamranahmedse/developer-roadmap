@@ -39,6 +39,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Python Roadmap](https://roadmap.sh/python)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
+- [Game Developer Roadmap](https://roadmap.sh/game-developer)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [TypeScript Roadmap](https://roadmap.sh/typescript)
