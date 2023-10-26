@@ -1,1 +1,5 @@
-# Gjk
+# GJK
+
+The **GJK algorithm** (Gilbert–Johnson–Keerthi) is a computational geometry algorithm that is widely used to detect collisions between convex objects in video games and simulations. The primary role of this algorithm is to assess the intersection between two convex shapes. What makes it unique and widely used is its efficiency and accuracy even when dealing with complex three-dimensional shapes. It uses the concept of "Minkowski Difference" to simplify its calculations and determine if two shapes are intersecting.
+
+The algorithm works iteratively, beginning with a single point (the origin) and progressing by adding vertices from the Minkowski Difference, each time refining a simple 'guess' about the direction of the nearest point to the origin until it either concludes that the shapes intersect (the origin is inside the Minkowski difference), or until it can't progress further, in which case the shapes are confirmed not to intersect. This makes it an incredibly powerful and useful tool for game developers.

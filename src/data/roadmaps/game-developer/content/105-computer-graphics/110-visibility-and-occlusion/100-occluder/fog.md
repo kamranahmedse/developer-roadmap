@@ -1,1 +1,3 @@
 # Fog
+
+In the framework of game development, **fog** is a visual technique applied effectively for various artistic and optimization purposes. Aesthetically, it's used to simulate different atmospheric effects such as smoke, fog, mist, and dust. Fog can also be utilized to conceal or lessen the details of distant objects, hence reducing the rendering load on the system. This technique is often called "distance fog". Moreover, specialized types of fog like "volumetric fog" add a three-dimensional feel to the game, making the lighting atmosphere more immersive and realistic. Note that fog settings and effects can be adjusted based on different game engines, such as Unreal Engine, Unity, or Godot.

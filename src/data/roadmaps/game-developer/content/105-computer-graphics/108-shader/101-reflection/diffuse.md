@@ -1,1 +1,3 @@
 # Diffuse
+
+**Diffuse** shading is one of the fundamental aspects within a game's graphics system. It is a property of light that allows it to scatter in an infinite number of directions after striking a surface, resulting in a soft, washed-out, and non-specular appearance. This type of reflection is visible from all angles regardless of the viewer's perspective, giving objects in video games a more realistic, three-dimensional look. It's essential for modeling the way light hits flat, matte, or non-shiny surfaces like cloth or rough stone. Factors such as the angle of incidence and the light's intensity do influence the brightness of the diffuse reflection.

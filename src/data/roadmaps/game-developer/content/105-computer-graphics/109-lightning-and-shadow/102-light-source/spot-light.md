@@ -1,1 +1,3 @@
-# Spot light
+# Spot Light
+
+A **Spot Light** is a type of light source used in game development, often utilized to create focused, directional lighting within a specific radius, imitating real-world sources like a flashlight or a stage spotlight. The two primary properties of a spot light are its cone angle and its fall-off. The cone angle determines the size of the illuminated area, while the fall-off controls how quickly the light diminishes towards the edges of the light cone. Spotlights can create dramatic effects and are essential in driving attention towards specific game elements or areas due to their constrained, targeted lighting.

@@ -1,1 +1,3 @@
 # Light
+
+Lighting in game development is crucial for creating an immersive and realistic gaming experience. There are several types of light sources, including directional light, point light, and spotlights. Directional light simulates sun or moonlight with parallel rays illuminating the game world. Point light emanates from a single point in all directions, similar to a light bulb. Spotlights produce a cone of light, similar to a flashlight or a stage spotlight. Then, there's Ambient light which creates a base level of light that hits every surface equally, regardless of its orientation or position, making sure no area is ever in complete darkness. These different sources of light can be manipulated to create the desired mood and aesthetic in a scene.

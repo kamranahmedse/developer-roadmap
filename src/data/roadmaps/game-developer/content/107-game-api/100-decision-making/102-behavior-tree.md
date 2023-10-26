@@ -1,1 +1,3 @@
-# Behavior tree
+# Behavior Tree
+
+The **Behavior Tree** is a decision-making system used in game development, primarily for AI character behavior. These trees help define the actions an AI character will take, based on predefined tasks and conditions. The tree structure starts from a single root, branching out to nodes that represent these decisions or tasks. The tasks can be simple, such as moving from one point to another, or can be complex decisions like whether to attack or retreat. This kind of structure is advantageous because it is easy to add, remove, or modify tasks without breaking the tree or affecting other tasks. This makes it highly flexible and easy to manage, irrespective of the complexity of the tasks.

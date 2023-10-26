@@ -1,1 +1,3 @@
 # Cascaded
+
+"Cascaded" refers to the Cascaded Shadow Maps (CSM) technique implemented in graphical computations. It involves the procedure of dividing the view frustum, the portion of a 3D space visualized on the screen, into several sub-frustums or "cascades". Each cascade corresponds to a different shadow map, allowing various levels of details for shadows in a single render. Each cascade uses a different region of the shadow map texture, facilitating the ability to provide finer shadow detail close to the camera and coarser detail as the distance from the camera increases. This technique helps in the efficient utilization of shadow map resolution and improves visual quality by reducing aliasing artifacts in the distance.

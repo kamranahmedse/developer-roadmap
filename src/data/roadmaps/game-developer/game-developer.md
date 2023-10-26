@@ -6,6 +6,7 @@ briefDescription: 'Roadmap to becoming a Game Developer in 2023'
 title: 'Game Developer'
 description: 'Roadmap to becoming a Game Developer in 2023'
 hasTopics: true
+isNew: true
 dimensions:
   width: 968
   height: 2104.59

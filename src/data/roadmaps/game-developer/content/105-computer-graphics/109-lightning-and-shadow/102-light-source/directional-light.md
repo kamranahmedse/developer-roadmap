@@ -1,1 +1,3 @@
-# Directional light
+# Directional Light
+
+`Directional light` is a type of light commonly utilized in 3D game development. As the name suggests, this form of light appears to be coming from a specific direction, much as sunlight does in reality. In actuality, it extends infinitely in a single direction and doesn't emanate from a specific source like point or spotlights do. This property allows it to illuminate all objects within a scene uniformly. Directional light is particularly useful for replicating large and distant light sources such as the sun or moon.

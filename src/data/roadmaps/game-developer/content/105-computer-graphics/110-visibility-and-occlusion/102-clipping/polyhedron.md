@@ -1,1 +1,3 @@
 # Polyhedron
+
+A **Polyhedron** is a three-dimensional geometric shape, whose faces are polygons. These are bound by straight lines creating a closed shape with flat surfaces and straight edges. Each of the corners or vertices of these shapes meets an equal number of edges. Some common examples include the cube, the pyramid, and the prism. Each polyhedron has a set of properties including volume, surface area and the number of vertices, edges, and faces. The sum of the angles of the polygonal faces gives the total angular defect of the polyhedron. These are fundamental elements in 3D modeling and graphics rendering within the field of game development.

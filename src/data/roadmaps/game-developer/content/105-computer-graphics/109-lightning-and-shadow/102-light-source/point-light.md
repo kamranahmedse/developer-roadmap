@@ -1,1 +1,3 @@
-# Point light
+# Point Light
+
+A `Point Light` is a common light source within game development. It simulates a light radiating from a single point equally in all directions, like a light bulb in a room. Because it emits light in all directions, a point light affects every object, regardless of its orientation towards the light source. Additionally, a point light has a location in space and no directional vector, unlike a directional or spot light. It's worth noting that although point lights have an associated range or radius beyond which their intensity is zero, they can consume more computation resources compared to other types of light sources due to their influence over a larger area of the scene. Hence, careful planning is required when using point lights.

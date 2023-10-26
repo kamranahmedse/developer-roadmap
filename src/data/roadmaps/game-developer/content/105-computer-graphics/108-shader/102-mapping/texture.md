@@ -1,1 +1,4 @@
 # Texture
+
+
+**Texture** refers to the 2D artwork added on a 3D model to give it a convincing and detailed appearance in video games. These textures can represent various properties like color, reflectivity, light absorption, transparency, etc., depending on the needs of the game. Textures can be created through various methods like drawing, painting, or photography and then manipulated digitally. Depending on the topological structure of the 3D model, it can be directly textured (in case of UV maps) or through procedural methods. Different types of textures like albedo/diffuse, specular, normal/bump, displacement are used to achieve different visual effects. The texturing process is a crucial step in game development as it greatly enhances the realism and appeal of the 3D environment and characters.
