@@ -74,7 +74,7 @@ export function CreateVersion(props: CreateVersionProps) {
 
   if (isLoading) {
     return (
-      <div className="h-[30px] w-[206px] animate-pulse rounded-md bg-gray-300"></div>
+      <div className="h-[30px] w-[312px] animate-pulse rounded-md bg-gray-300"></div>
     );
   }
 
@@ -86,7 +86,7 @@ export function CreateVersion(props: CreateVersionProps) {
           className="flex items-center rounded-md border border-blue-400 bg-gray-50 px-2.5 py-1 text-xs font-medium text-blue-600 hover:bg-blue-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:hover:bg-gray-100 max-sm:hidden sm:text-sm"
         >
           <Map size="15px" className="mr-1.5" />
-          Visit your own version
+          Visit your own version of this Roadmap
         </a>
       </div>
     );
@@ -95,7 +95,7 @@ export function CreateVersion(props: CreateVersionProps) {
   if (isConfirming) {
     return (
       <p className="flex h-[30px] items-center text-sm text-red-500">
-        Create and edit a custom roadmap from this?
+        Create and edit a custom roadmap from this roadmap?
         <button
           onClick={() => {
             setIsConfirming(false);
@@ -137,7 +137,7 @@ export function CreateVersion(props: CreateVersionProps) {
       ) : (
         <>
           <GitFork className="mr-1.5" size="16px" />
-          Create your own Version
+          Create your own version of this roadmap
         </>
       )}
     </button>
