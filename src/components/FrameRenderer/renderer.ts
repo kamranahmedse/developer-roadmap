@@ -10,6 +10,7 @@ import {
 import type { ResourceProgressType, ResourceType } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
+import {replaceChildren} from "../../lib/dom.ts";
 
 export class Renderer {
   resourceId: string;
@@ -88,7 +89,8 @@ export class Renderer {
         });
       })
       .then((svg) => {
-        this.containerEl?.replaceChildren(svg);
+        replaceChildren(this.containerEl!, svg);
+        // this.containerEl?.replaceChildren(svg);
       })
       .then(() => {
         return renderResourceProgress(

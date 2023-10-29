@@ -17,6 +17,7 @@ import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
+import {replaceChildren} from "../../lib/dom.ts";
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -91,7 +92,8 @@ export function MemberProgressModal(props: ProgressMapProps) {
       fontURL: '/fonts/balsamiq.woff2',
     });
 
-    containerEl.current?.replaceChildren(svg);
+    replaceChildren(containerEl.current!, svg);
+    // containerEl.current?.replaceChildren(svg);
   }
 
   useKeydown('Escape', () => {
