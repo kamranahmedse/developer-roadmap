@@ -7,10 +7,13 @@ import {
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
-import type { ResourceProgressType, ResourceType } from '../../lib/resource-progress';
+import type {
+  ResourceProgressType,
+  ResourceType,
+} from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
-import {replaceChildren} from "../../lib/dom.ts";
+import { replaceChildren } from '../../lib/dom.ts';
 
 export class Renderer {
   resourceId: string;
@@ -95,7 +98,7 @@ export class Renderer {
       .then(() => {
         return renderResourceProgress(
           this.resourceType as ResourceType,
-          this.resourceId
+          this.resourceId,
         );
       })
       .catch((error) => {
@@ -143,7 +146,7 @@ export class Renderer {
       this.jsonToSvg(
         this.resourceType === 'roadmap'
           ? `/${this.resourceId}.json`
-          : `/best-practices/${this.resourceId}.json`
+          : `/best-practices/${this.resourceId}.json`,
       );
     }
   }
@@ -183,7 +186,7 @@ export class Renderer {
         resourceType: this.resourceType as ResourceType,
         topicId,
       },
-      newStatus
+      newStatus,
     )
       .then(() => {
         renderTopicProgress(topicId, newStatus);
@@ -217,7 +220,7 @@ export class Renderer {
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
     this.updateTopicStatus(
       normalizedGroupId,
-      !isCurrentStatusDone ? 'done' : 'pending'
+      !isCurrentStatusDone ? 'done' : 'pending',
     );
   }
 
@@ -243,9 +246,12 @@ export class Renderer {
           action: `${this.resourceType} / ${this.resourceId}`,
           label: externalLink,
         });
+
+        window.open(`https://${externalLink}`);
+      } else {
+        window.location.href = `https://${externalLink}`;
       }
 
-      window.open(`https://${externalLink}`);
       return;
     }
 
@@ -265,7 +271,7 @@ export class Renderer {
             resourceType: this.resourceType,
             resourceId: this.resourceId,
           },
-        })
+        }),
       );
       return;
     }
@@ -280,7 +286,7 @@ export class Renderer {
       e.preventDefault();
       this.updateTopicStatus(
         normalizedGroupId,
-        !isCurrentStatusLearning ? 'learning' : 'pending'
+        !isCurrentStatusLearning ? 'learning' : 'pending',
       );
       return;
     }
@@ -289,7 +295,7 @@ export class Renderer {
       e.preventDefault();
       this.updateTopicStatus(
         normalizedGroupId,
-        !isCurrentStatusSkipped ? 'skipped' : 'pending'
+        !isCurrentStatusSkipped ? 'skipped' : 'pending',
       );
 
       return;
@@ -302,7 +308,7 @@ export class Renderer {
           resourceId: this.resourceId,
           resourceType: this.resourceType,
         },
-      })
+      }),
     );
   }
 

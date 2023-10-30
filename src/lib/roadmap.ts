@@ -8,7 +8,8 @@ export interface RoadmapFrontmatter {
   title: string;
   description: string;
   hasTopics: boolean;
-  isForkable: boolean;
+  isForkable?: boolean;
+  isHidden: boolean;
   isNew: boolean;
   isUpcoming: boolean;
   tnsBannerLink?: string;
