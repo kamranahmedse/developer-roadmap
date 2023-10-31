@@ -1,0 +1,3 @@
+# Server Side
+
+The term "server-side" refers to operations that are performed by the server in a client-server relationship in a computer network. In games, the server-side is responsible for the logic and rules of the game, data persistence, security, and synchronization of the game state among all connected clients. It essentially handles all processing that isn't done on the client-side. Code run on the server-side can be written in various programming languages, but it's often in PHP, Ruby, Python, .NET, Java, or JavaScript (Node.js). Knowing server-side programming is critical for any game developer to create maintainable, scalable, and secure online games.

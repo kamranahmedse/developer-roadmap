@@ -1,0 +1,3 @@
+# Byte Manipulation
+
+`Byte manipulation`, in the context of socket programming, often refers to the ability to directly interact and manage bytes of data. This could involve creating, modifying, or reading individual bytes or groups of bytes. Common operations include shifting (moving bytes to the left or right), masking (using a binary AND operation to make certain bits 0), and bitwise operations (working with the individual bits within a byte). Byte manipulation commonly takes place in server side game development when dealing with network data or working with specific binary protocols. The ability to accurately manipulate bytes is an essential skill when handling and optimizing the transfer of data between a server and a client.

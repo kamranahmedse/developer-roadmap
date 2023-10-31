@@ -1,0 +1,3 @@
+# Key-Value
+
+In server-side game development, a **key-value** database is a type of non-relational database that uses a simple key-value method to store data. A key-value database stores data as a collection of key-value pairs in which a key serves as a unique identifier. Both keys and values can be anything, ranging from simple objects to complex compound objects. `Key` uniquely identifies a pair within the database; `Value` holds the data and is directly associated with its key. Different types of key-value databases offer different types of ways to deal with data, like handling data types, manipulating arrays, and more. Unlike relational databases, key-value databases do not require a fixed data model and are schema-free.

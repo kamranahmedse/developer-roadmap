@@ -1,0 +1,3 @@
+# REST
+
+REST or Representational State Transfer is an architectural style used in web development. REST systems interact through standard operations on web resource's identified through URIs. It utilizes a stateless, client-server, cacheable communication protocol -- virtually always HTTP. In REST architecture, a client sends a request to the server in order to retrieve or modify data. This data can be identified by a URI and has a specific media type (JSON, XML etc). A key feature of REST is that it's stateless, meaning the server does not keep any data between two requests. While the client holds session state. REST is often used in mobile applications, social networking websites, and automated business processes.

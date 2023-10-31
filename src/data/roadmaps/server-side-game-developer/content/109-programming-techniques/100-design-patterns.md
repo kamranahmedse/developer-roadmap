@@ -1,0 +1,3 @@
+# Design Patterns
+
+Design Patterns represent best practices developed by experienced software engineers. They are reusable solutions to common problems that occur in software design and fulfill the requirement to decouple the system as much as possible. Design patterns categorize into Creational, Structural, and Behavioural types. Creational type includes patterns like Singleton, Prototype and Factory; Structural includes Adapter, Composite, and Proxy; Behavioural includes Observer, Strategy, Template, and Visitor. Every design pattern has its own particular structure defined that programmers can follow to solve a particular design problem in your programming code.

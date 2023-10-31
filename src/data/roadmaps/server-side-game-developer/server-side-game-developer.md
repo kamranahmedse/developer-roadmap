@@ -8,6 +8,9 @@ description: 'Roadmap to becoming a Server Side Game Developer in 2023'
 hasTopics: true
 isNew: true
 isHidden: true
+dimensions:
+  width: 968
+  height: 2618.02
 schema:
   headline: 'Server Side Game Developer Roadmap'
   description: 'Learn what Server Side Game Development is, what server side game developers do and how to become one using our community-driven roadmap.'
