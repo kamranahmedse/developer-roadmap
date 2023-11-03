@@ -77,7 +77,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
               <div className="flex w-[20px] items-center justify-center">
                 <Twitter size="16px" className="text-slate-400" />
               </div>
-              Share on Twitter
+              Twitter
             </a>
             <a
               href={fbUrl}
