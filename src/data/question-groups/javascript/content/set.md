@@ -1,4 +1,4 @@
-Set is another data structure in JavaScript which is similar to `Array` but the values are unique. It is a collection of elements where each element is stored as a value without any keys.
+A set is a specialized data structure that functions similarly to an `Array`; however, its primary feature is that it enforces the uniqueness of its elements. 
 
 ```js
 const roadmap = new Set();
