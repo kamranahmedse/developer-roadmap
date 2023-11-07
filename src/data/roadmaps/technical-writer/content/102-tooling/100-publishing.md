@@ -1,1 +1,3 @@
-# Publishing
+# Publishing Tools
+
+When discussing the realm of tooling in technical writing, publishing plays a significant role. It involves the final process of making the documentation accessible to users. There are various tools used for publishing like Adobe FrameMaker, MadCap Flare, Jekyll, etc, which support different formats like PDF, HTML, ePubs, etc. They could also include features for version control, collaboration, and content reuse. This not only makes the content accessible to the users but also ensures that the documentation is kept consistent and up-to-date.

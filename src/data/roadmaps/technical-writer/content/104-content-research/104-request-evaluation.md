@@ -1,1 +1,3 @@
-# Request evaluation
+# Support Request Evaluation
+
+`Request Evaluation` in the context of a technical writer refers to the process of assessing or defining the requirements and the scope of a given writing project. It includes assessing information sources, understanding the objectives of the document, defining the target audience, understanding regulatory specifications if any, and considering the timelines and deadlines. This stage is critical in giving the writer a comprehensive understanding of what is expected from the project, thereby equipping them to structure an efficient content strategy.

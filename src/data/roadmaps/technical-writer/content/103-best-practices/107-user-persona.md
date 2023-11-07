@@ -1,1 +1,3 @@
-# User persona
+# User Persona
+
+User Persona is a significant and efficient tool used by technical writers to address their audience effectively. It is a fictional character, a typical member of the target audience who is characterized by behavior patterns, goals, skills, attitudes, etc. The persona is built based on the data about real users. It serves to help technical writers visualize the audience, understand their needs and expectations, ensure that the content is clearly understood, and enhance the overall readability. User Personas allow writers to design effective communication strategies and create more user-centered documentation, making information easy to find, understand, and use.

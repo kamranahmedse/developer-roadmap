@@ -1,1 +1,3 @@
-# Written communication
+# Written Communication Proficiency
+
+Written communication is a critical asset in a technical writer's skill set. This skill is not just about having a good command of grammar and vocabulary, but also the ability to convey complex information in an understandable, clear and concise manner. A proficient technical writer should know how to structure their content appropriately, maintain a consistent tone and voice, and use illustrative examples to make the concepts more relatable for the audience. Accuracy is essential in written communication as technical writing often involves descriptions of intricate processes or use-cases where there is no margin for error. Understanding the nuances of different writing styles and adapting to the intended audience's comprehension level are also a part of effective written communication.

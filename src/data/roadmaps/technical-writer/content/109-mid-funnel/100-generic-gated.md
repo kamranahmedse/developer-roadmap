@@ -1,1 +1,3 @@
-# Generic gated
+# Generic Gated Content
+
+"Generic Gated" refers to the type of content, usually informative or educational, that requires a user to provide certain information, like an email address, before gaining access to it. It's a strategy frequently used by businesses to generate leads. This can include a range of content, such as white papers, ebooks, webinars, or research reports. This strategy helps businesses capture the contact information of potential customers who scale through the top of the funnel content and have shown interest in the mid funnel "Generic Gated" content. These potential customers are individuals who could likely convert to customers, making them valuable leads.

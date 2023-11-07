@@ -1,1 +1,3 @@
-# Research tools
+# Research Tools
+
+In the work of a technical writer, **Research Tools** are critical, as they aid in sourcing, verifying, and organizing information needed for creating technical documents. Various specific tools are available, depending on the information you're seeking. For instance, scientific papers may be searched using **Google Scholar** or specialized databases like **PubMed**. **Semantic Scholar** can help find academic papers across many disciplines. For less formal online sources, **Google Alert** can be set up to watch for new information on a specific topic. Further, **Evernote** can be used to compile and manage information from multiple sources. For organizing and evaluating data, tools like **Microsoft Excel**, **Tableau**, or **Google Sheets** can be employed. Please remember that the choice of tool will depend on your subject, the type of information you need, and how you want to manage and present that information.

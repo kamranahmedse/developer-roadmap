@@ -1,1 +1,3 @@
-# Seo keywords
+# SEO Keywords
+
+"SEO Keywords" are the words and phrases in your web content that allow people to find your site via search engines such as Google. When used effectively, they can dramatically increase the visibility of your content, making it easier for those who are looking for information on your topic to find you. Used in titles, subheadings, meta descriptions, image descriptions, URL structures, and throughout the webinar, these keywords make it evident what the content is about. For maximizing effectivity, the SEO Keyword should align closely with the content topic, be relevant to your target audience, and be phrases that people commonly search for. An important aspect to note is that keyword stuffing, the practice of overloading content with keywords in an unnatural manner, is heavily penalized by search engines. Keywords usage should be strategic and the content should always prioritize providing value to the reader.

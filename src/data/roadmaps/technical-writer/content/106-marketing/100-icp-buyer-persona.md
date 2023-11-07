@@ -1,1 +1,3 @@
-# Icp buyer persona
+# ICP and Buyer Persona
+
+The **ICP (Ideal Customer Profile)** and **Buyer Persona** are key concepts in marketing and sales. The **ICP** refers to a hypothetical company which perfectly meets the selling organization's product/service. It's a detailed description of their ideal target company, taking into account factors such as industry, size, budget, pain points, needs, and challenges. On the other hand, a **Buyer Persona** is a semi-fictional representation of your ideal customer, often based on market research and real data about existing customers. While ICP targets companies as a whole, a buyer persona focuses on individuals, giving insights into customer behaviors, goals, skills, attitudes, and demographic information. Both constructs help tailor marketing efforts to attract the right audience and convert them into customers.

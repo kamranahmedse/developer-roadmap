@@ -1,1 +1,3 @@
-# Buyer journey
+# Buyer Journey and Content Funnel
+
+The **Buyer Journey** refers to the process a customer goes through from the moment they become aware of a need or desire until the point of purchase. It is often categorized into three main stages: Awareness, Consideration, and Decision. In the _Awareness_ stage, the customer realizes they have a problem or need. During the _Consideration_ stage, they evaluate different options to satisfy that need. Finally, in the _Decision_ stage, they choose a specific solution. Understanding the buyer journey is instrumental for businesses, as it helps them tailor their marketing strategies to the right audience at the right time.

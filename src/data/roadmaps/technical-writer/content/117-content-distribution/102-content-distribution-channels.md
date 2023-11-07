@@ -1,1 +1,3 @@
-# Content distribution channels
+# Content Distribution Channels
+
+Content distribution channels refer to the mediums through which content creators disseminate their work to reach their chosen audience. Broadly, these channels can be divided into three categories: owned, earned, and paid. Owned channels are those controlled by the content creators themselves, such as their websites, blogs or email newsletters. Earned channels are ones where others distribute the content on the creator's behalf out of their own desire, such as shares on social media or word-of-mouth recommendations. Paid channels, as the name implies, are those where content creators pay to have their work distributed, such as through sponsored posts or advertisements on social media, promotional emails, or paid search results in search engines.

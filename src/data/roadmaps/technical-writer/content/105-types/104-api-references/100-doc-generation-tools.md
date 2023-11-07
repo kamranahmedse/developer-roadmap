@@ -1,1 +1,3 @@
-# Doc generation tools
+# Document Generation Tools
+
+API documentation generation tools are software applications that create API documentation directly from the source code. This streamlines the process for developers and also ensures that the documentation stays updated with the code changes. Examples of these tools include Doxygen, Sphinx, Javadoc, Swagger UI, and Slate. Doxygen works with several programming languages including C++, Python, and Java. Sphinx is often used for Python. Javadoc is specifically for Java code. Swagger UI lets you visually interact with your API’s resources without having any of the implementation logic in place. Slate generates static HTML that looks great, is responsive, and can be easily hosted on sites like Github.

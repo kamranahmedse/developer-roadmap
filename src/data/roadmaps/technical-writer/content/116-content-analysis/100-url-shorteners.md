@@ -1,1 +1,3 @@
-# Url shorteners
+# Link Shorteners and Tracking
+
+URL shorteners, as the name suggests, are tools that allow you to shorten the length of any given URL. These can be extremely handy, especially in situations where you're dealing with very long and complex URLs with several parameters. A few examples of these tools include Bit.ly, TinyURL, and Google URL Shortener (now defunct, replaced by Firebase Dynamic Links). They work by creating a unique short link for your long URL, and then redirecting anyone who clicks on it to the original link. This simplifies the URL and makes it easier to share with others, either verbally or digitally. While these tools are straightforward to use, it's always a good idea to familiarize yourself with how they work and any associated privacy or security implications. Markdown is not particularly required for URL shorteners as they take any kind of link, regardless of the content.

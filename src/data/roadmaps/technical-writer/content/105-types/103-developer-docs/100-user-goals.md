@@ -1,1 +1,5 @@
-# User goals
+# User Goals
+
+## User Goals
+
+User goals pertain to the actions that a user wants to perform or the outcomes they hope to achieve with a certain product or service. For technical writers in the context of developer docs, understanding user goals is critical as it drives the creation of accurate, relevant, and effective documentation. Whether it's installing a software, using an API, debugging an issue, or learning advanced functionalities, these goals should guide all aspects of document planning and writing. It is essential to isolate these goals through user feedback, surveys, or usability testing to produce documentation that improves user-product interaction and problem-solving processes, making users more self-sufficient. From a developer's perspective, user goals may involve tasks related to code implementation, product integration, problem troubleshooting, and more.

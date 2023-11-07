@@ -1,1 +1,3 @@
-# Api definition
+# API Definitions
+
+API stands for Application Programming Interface. Essentially, it's a set of rules and protocols for building and integrating application software. APIs allow different software programs to communicate with each other, acting as a bridge between them. They define the kinds of calls or requests that can be made between applications, how to make them, the data formats that should be used, and the conventions to follow. APIs can be used for web-based services, operating systems, databases, or software libraries. They are designed to provide a consistent experience, simplify programming, and support modularity and scalability. APIs often come in the form of a library that includes specifications for routines, data structures, object classes, and protocols used to communicate between the consumer and the provider of the API.

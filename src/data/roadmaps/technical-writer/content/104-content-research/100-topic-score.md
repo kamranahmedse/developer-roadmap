@@ -1,1 +1,3 @@
-# Topic score
+# Topic Score
+
+`Topic Score` is a computational study that calculates how well a particular content piece covers a specified topic. Usually measured on a scale of 0 to 100, it uses different metrics such as keyword usage, semantic relevance, depth of topic coverage, among others. The higher the topic score, the more comprehensively your content is considered to cover the targeted topic. It can be beneficial for content strategists and technical writers to focus on target keywords in order to improve overall content quality and boost SEO performance.

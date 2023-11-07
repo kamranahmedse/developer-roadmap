@@ -1,1 +1,3 @@
-# Content objectives
+# Content Objectives and Intent
+
+Content objectives refer to the identified goals or targets that a technical writer aims to fulfill with a piece of content. Often, these goals are aligned with the overall project aims and may include educating users, providing clear instructions, or explaining a specific topic in a digestible format. It is important for technical writers to define their content objectives clearly, in order to tailor their writing approach, style, and structure accordingly. Moreover, content objectives serve as a guide in creating, reviewing, and revising the content to ensure that it meets the intended purpose. Therefore, content objectives serve as the underlying basis, which significantly influences the quality of the final content output.

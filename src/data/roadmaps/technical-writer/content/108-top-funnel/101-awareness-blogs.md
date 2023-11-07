@@ -1,1 +1,3 @@
-# Awareness blogs
+# Awareness Blog Posts
+
+"Awareness blogs" is a commonly used term in digital marketing, particularly concerning "top funnel" strategies. As the phrase implies, these blogs are designed to create, increase, or maintain awareness of a particular topic, issue, or brand. These articles typically contain knowledgeable content that highlights key information and facts, often aiming to educate the reader and provide value. The goal isn't to hard sell a product or service, but rather to softly introduce what the business, product, or service is about. As a technical writer, you may be asked to write these types of posts to raise awareness of a brand, product, service, or concept, aiming at attracting potential customers and maintaining the engagement of existing ones.

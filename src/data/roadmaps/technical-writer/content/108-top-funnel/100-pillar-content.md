@@ -1,1 +1,3 @@
-# Pillar content
+# Pillar Content
+
+"Pillar content" is a comprehensive piece of content on a specific topic or theme that can be broken down into many smaller related sections. This could range from an extensive blog post, to an e-book or a guide. The main intention of creating pillar content is to share highly valuable and in-depth information about a particular subject. It forms the core or the 'pillar' of your content strategy. Supporting contents or 'cluster contents', which are essentially various sub-topics related to the pillar content, link back to this main pillar, creating a content cluster. These cluster content pieces can be blog posts, podcasts, infographics, or videos, etc., which keep your audience engaged and drives them back to your pillar content. Pillar content not only positions you as an authority in your field but also improves your SEO rankings.

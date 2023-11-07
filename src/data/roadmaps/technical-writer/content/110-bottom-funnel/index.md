@@ -1,1 +1,3 @@
-# Bottom funnel
+# Bottom-funnel Content
+
+"Bottom funnel" refers to the final stage in the marketing funnel where potential customers are ready to make a purchase. This phase typically includes actions like negotiations, sales calls, and the final transaction. For a technical writer, understanding the "bottom funnel" can be crucial as it could influence the type of technical content they create. For instance, they might need to create in-depth product guides, FAQs, or troubleshooting articles that potential customers could use during the decision-making process. The main goal during the "bottom funnel" stage is to convince the potential customer to finalize their purchase and become an actual customer.

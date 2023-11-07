@@ -1,1 +1,3 @@
-# Support content
+# Developer Support Content
+
+"Support content" is another critical aspect of technical writing. It is the material that assists users in troubleshooting issues, understanding complex topics, or learning how to use a product or service independently. An integral part of user assistance, support content often takes the form of FAQs, tutorial articles, video demonstrations, manuals, or help guides. It caters to the end-users' immediate and long-term needs, helping them navigate and maximize the use of a product or service. For example, if a user encounters a problem using a software, instead of reaching out to technical support, they might refer to support content, such as a how-to guide or an instructional video, to resolve the issue independently. Clear, easy-to-follow, and accessible support content significantly enhances user experience and satisfaction.

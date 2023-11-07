@@ -1,1 +1,3 @@
 # Tutorials
+
+`Tutorials` fall under the bottom-funnel content in technical writing. They are usually step-by-step guides designed to help users achieve a specific task using a software, hardware, or system. Tutorials can take various forms, including written step-by-step instructions, annotated screenshots, videos, or even interactive modules where users can practice what they are learning in real-time. They are more hands-on and practical, often tackling real-world scenarios to ensure that users can transfer what they learn directly to their context. Tutorials are usually concise, clear and orientated towards specific tasks, this makes them accessible and user-friendly for people with varying levels of expertise.

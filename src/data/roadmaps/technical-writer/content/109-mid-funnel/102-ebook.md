@@ -1,1 +1,3 @@
-# Ebook
+# E-Book
+
+`Ebooks` are longer-form content that allows a business or individual to delve deeper into a specific subject matter. They typically range from 10 to 100 pages and offer more comprehensive content than a blog post or an infographic. An ebook might consist of a multitude of different components, like a table of contents, chapters, headers, body content, and images. Despite their length, they should be designed for easy reading, considering they are usually downloaded and read on a customer’s own time. They work especially well for technical subjects that need more in-depth explanations, diagrams, or step-by-step guides for understanding the topic effectively. Because they are more substantial, they are usually gated - this means that the reader would need to provide their contact details or other information to access the download link.

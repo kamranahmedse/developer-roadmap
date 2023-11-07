@@ -1,1 +1,3 @@
-# Tech expertise
+# Technology Expertise
+
+**Tech Expertise**: The technical expertise of a technical writer mainly refers to their understanding of the technology or the topic they are writing about. It encompasses their ability to efficiently understand complex technical processes, terminologies, and products, and translate them into simpler, more understandable language. This understanding might be based on their formal education in technical disciplines, personal interest, or gained experience in the industry. It's worth noting that tech expertise is not about being a subject matter expert on every technical field, but rather having the skills to comprehend and interpret information accurately. It involves the use of various software tools, Research and Development (R&D), and sometimes coding. This proficiency allows technical writers to create thorough, accurate, user-friendly documents and manuals.

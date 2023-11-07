@@ -1,1 +1,3 @@
-# Conversion tracking
+# Conversion Tracking
+
+`Conversion Tracking` is a powerful tool in online marketing and business analytics. It allows you to identify how well your campaign, ads, prompts, or any other initiative is working by tracking how users interact and convert on your site or app. `Conversion` can be actions such as signing up for a newsletter, downloading a file, making a purchase, or any other key performance indicator (KPI) for your project. Essentially, `Conversion Tracking` involves placing a piece of code, often known as a pixel, on your website or app. Once a user performs an action that you've defined as a 'conversion', this pixel is triggered and records the action. By implementing conversion tracking across different digital platforms, you can effectively decode user behavior, and use these insights to optimize your ongoing and future campaigns for better performance.
