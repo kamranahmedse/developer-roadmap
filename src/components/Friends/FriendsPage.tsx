@@ -10,7 +10,7 @@ import { FriendProgressItem } from './FriendProgressItem';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
 import { UserCustomProgressModal } from '../UserProgress/UserCustomProgressModal';
-import { UserIcon } from '../ReactIcons/UserIcon.tsx';
+import {UserIcon} from "lucide-react";
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -203,7 +203,7 @@ export function FriendsPage() {
 
       {filteredFriends.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12">
-          <UserIcon className="mb-3 w-12 opacity-20" />
+          <UserIcon size={'60px'} className="mb-3 w-12 opacity-20" />
 
           <h2 className="text-lg font-semibold">
             {selectedGrouping === 'active' && 'No friends yet'}
