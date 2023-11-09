@@ -13,6 +13,7 @@ import type { Node } from 'reactflow';
 import { useCallback, type MouseEvent, useMemo, useState, useRef } from 'react';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
+import { totalRoadmapNodes } from '../../stores/roadmap.ts';
 
 type FlowRoadmapRendererProps = {
   roadmap: RoadmapDocument;
@@ -138,6 +139,12 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         )}
         onRendered={() => {
           renderResourceProgress('roadmap', roadmapId).then(() => {
+            totalRoadmapNodes.set(
+              roadmap?.nodes?.filter((node) => {
+                return ['topic', 'subtopic'].includes(node.type);
+              }).length || 0,
+            );
+
             if (roadmap?.nodes?.length === 0) {
               setHideRenderer(true);
               editorWrapperRef?.current?.classList.add('hidden');

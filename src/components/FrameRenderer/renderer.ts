@@ -218,6 +218,11 @@ export class Renderer {
 
     const isCurrentStatusDone = targetGroup.classList.contains('done');
     const normalizedGroupId = groupId.replace(/^\d+-/, '');
+
+    if (normalizedGroupId.startsWith('ext_link:')) {
+      return;
+    }
+
     this.updateTopicStatus(
       normalizedGroupId,
       !isCurrentStatusDone ? 'done' : 'pending',
