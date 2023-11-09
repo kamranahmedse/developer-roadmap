@@ -1,4 +1,4 @@
-import ChevronDownIcon from '../../icons/chevron-down.svg';
+import { ChevronDownIcon } from '../ReactIcons/ChevronDownIcon';
 
 type NotDropdownProps = {
   onClick: () => void;
@@ -37,11 +37,7 @@ export function NotDropdown(props: NotDropdownProps) {
         </div>
       )}
 
-      <img
-        alt={singularName}
-        src={ChevronDownIcon.src}
-        className={'relative top-[1px] h-[17px] w-[17px] opacity-40'}
-      />
+      <ChevronDownIcon className="relative top-[1px] h-[17px] w-[17px] opacity-40" />
     </div>
   );
 }

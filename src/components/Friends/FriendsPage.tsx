@@ -7,10 +7,10 @@ import type { FriendshipStatus } from '../Befriend';
 import { useToast } from '../../hooks/use-toast';
 import { EmptyFriends } from './EmptyFriends';
 import { FriendProgressItem } from './FriendProgressItem';
-import UserIcon from '../../icons/user.svg';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
 import { UserCustomProgressModal } from '../UserProgress/UserCustomProgressModal';
+import { UserIcon } from '../ReactIcons/UserIcon.tsx';
 
 type FriendResourceProgress = {
   updatedAt: string;
@@ -64,7 +64,7 @@ export function FriendsPage() {
 
   async function loadFriends() {
     const { response, error } = await httpGet<ListFriendsResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-list-friends`
+      `${import.meta.env.PUBLIC_API_URL}/v1-list-friends`,
     );
 
     if (error || !response) {
@@ -89,15 +89,15 @@ export function FriendsPage() {
   const befriendUrl = `${baseUrl}/befriend?u=${user?.id}`;
 
   const selectedGroupingType = groupingTypes.find(
-    (grouping) => grouping.value === selectedGrouping
+    (grouping) => grouping.value === selectedGrouping,
   );
 
-  const filteredFriends = friends.filter((friend) =>
-    selectedGroupingType?.statuses.includes(friend.status)
+  const filteredFriends = friends.filter(
+    (friend) => selectedGroupingType?.statuses.includes(friend.status),
   );
 
   const receivedRequests = friends.filter(
-    (friend) => friend.status === 'received'
+    (friend) => friend.status === 'received',
   );
 
   if (isLoading) {
@@ -203,11 +203,8 @@ export function FriendsPage() {
 
       {filteredFriends.length === 0 && (
         <div className="flex flex-col items-center justify-center py-12">
-          <img
-            src={UserIcon.src}
-            alt="Empty Friends"
-            className="mb-3 w-12 opacity-20"
-          />
+          <UserIcon className="mb-3 w-12 opacity-20" />
+
           <h2 className="text-lg font-semibold">
             {selectedGrouping === 'active' && 'No friends yet'}
             {selectedGrouping === 'sent' && 'No requests sent'}

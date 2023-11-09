@@ -14,11 +14,11 @@ import {
   type AllowedRoadmapVisibility,
   type RoadmapDocument,
 } from './CreateRoadmap/CreateRoadmapModal';
-import RoadmapIcon from '../../icons/roadmap.svg';
 import { PersonalRoadmapActionDropdown } from './PersonalRoadmapActionDropdown';
 import type { GetRoadmapListResponse } from './RoadmapListPage';
 import { useState, type Dispatch, type SetStateAction } from 'react';
 import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
+import {RoadmapIcon} from "../ReactIcons/RoadmapIcon.tsx";
 
 type PersonalRoadmapListType = {
   roadmaps: GetRoadmapListResponse['personalRoadmaps'];
@@ -91,11 +91,8 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
   if (roadmapList.length === 0) {
     return (
       <div className="flex flex-col items-center p-4 py-20">
-        <img
-          alt="roadmap"
-          src={RoadmapIcon.src}
-          className="mb-4 h-24 w-24 opacity-10"
-        />
+        <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
+
         <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
         <p className="text-base text-gray-500">
           Create a roadmap to get started

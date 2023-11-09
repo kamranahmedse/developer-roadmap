@@ -25,6 +25,7 @@ import type { Node } from 'reactflow';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
+import { X } from 'lucide-react';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -284,7 +285,7 @@ export function MemberCustomProgressModal(props: ProgressMapProps) {
             }`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
+            <X className="h-4 w-4" />
             <span className="sr-only">Close modal</span>
           </button>
         </div>

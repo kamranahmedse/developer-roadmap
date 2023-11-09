@@ -4,7 +4,6 @@ import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { httpGet, httpPut } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
-import RoadmapIcon from '../../icons/roadmap.svg';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import { useStore } from '@nanostores/react';
 import { $canManageCurrentTeam } from '../../stores/team';
@@ -28,6 +27,7 @@ import { RoadmapActionDropdown } from './RoadmapActionDropdown';
 import { UpdateTeamResourceModal } from '../CreateTeam/UpdateTeamResourceModal';
 import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
 import { cn } from '../../lib/classname';
+import { RoadmapIcon } from '../ReactIcons/RoadmapIcon.tsx';
 
 export function TeamRoadmaps() {
   const { t: teamId } = getUrlParams();
@@ -73,7 +73,7 @@ export function TeamRoadmaps() {
 
   async function loadTeam(teamIdToFetch: string) {
     const { response, error } = await httpGet<TeamDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamIdToFetch}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamIdToFetch}`,
     );
 
     if (error || !response) {
@@ -87,7 +87,7 @@ export function TeamRoadmaps() {
 
   async function loadTeamResourceConfig(teamId: string) {
     const { error, response } = await httpGet<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`,
     );
     if (error || !Array.isArray(response)) {
       console.error(error);
@@ -127,7 +127,7 @@ export function TeamRoadmaps() {
       {
         resourceId: roadmapId,
         resourceType: 'roadmap',
-      }
+      },
     );
 
     if (error || !response) {
@@ -156,7 +156,7 @@ export function TeamRoadmaps() {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
-      }
+      },
     );
 
     if (error || !response) {
@@ -190,13 +190,13 @@ export function TeamRoadmaps() {
     }
     window.addEventListener(
       'custom-roadmap-created',
-      handleCustomRoadmapCreated
+      handleCustomRoadmapCreated,
     );
 
     return () => {
       window.removeEventListener(
         'custom-roadmap-created',
-        handleCustomRoadmapCreated
+        handleCustomRoadmapCreated,
       );
     };
   }, []);
@@ -252,13 +252,13 @@ export function TeamRoadmaps() {
   );
 
   const placeholderRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => c.isCustomResource && !c.topics
+    (c: TeamResourceConfig[0]) => c.isCustomResource && !c.topics,
   );
   const customRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => c.isCustomResource && c.topics
+    (c: TeamResourceConfig[0]) => c.isCustomResource && c.topics,
   );
   const defaultRoadmaps = teamResources.filter(
-    (c: TeamResourceConfig[0]) => !c.isCustomResource
+    (c: TeamResourceConfig[0]) => !c.isCustomResource,
   );
 
   const hasRoadmaps =
@@ -272,11 +272,8 @@ export function TeamRoadmaps() {
         {addRoadmapModal}
         {createRoadmapModal}
 
-        <img
-          alt="roadmap"
-          src={RoadmapIcon.src}
-          className="mb-4 h-24 w-24 opacity-10"
-        />
+        <RoadmapIcon className="mb-4 h-24 w-24 opacity-10" />
+
         <h3 className="mb-1 text-2xl font-bold text-gray-900">No roadmaps</h3>
         <p className="text-base text-gray-500">
           {canManageCurrentTeam
@@ -380,11 +377,11 @@ export function TeamRoadmaps() {
                           onDelete={() => {
                             if (
                               confirm(
-                                'Are you sure you want to remove this roadmap?'
+                                'Are you sure you want to remove this roadmap?',
                               )
                             ) {
                               onRemove(resourceConfig.resourceId).finally(
-                                () => {}
+                                () => {},
                               );
                             }
                           }}
@@ -405,7 +402,7 @@ export function TeamRoadmaps() {
                     )}
                   </div>
                 );
-              }
+              },
             )}
           </div>
         </div>
@@ -433,7 +430,7 @@ export function TeamRoadmaps() {
                     'grid grid-cols-1 p-2.5',
                     canManageCurrentTeam
                       ? 'sm:grid-cols-[auto_172px]'
-                      : 'sm:grid-cols-[auto_110px]'
+                      : 'sm:grid-cols-[auto_110px]',
                   )}
                   key={resourceConfig.resourceId}
                 >
@@ -464,11 +461,11 @@ export function TeamRoadmaps() {
                         onDelete={() => {
                           if (
                             confirm(
-                              'Are you sure you want to remove this roadmap?'
+                              'Are you sure you want to remove this roadmap?',
                             )
                           ) {
                             onRemove(resourceConfig.resourceId).finally(
-                              () => {}
+                              () => {},
                             );
                           }
                         }}
@@ -557,11 +554,11 @@ export function TeamRoadmaps() {
                         onDelete={() => {
                           if (
                             confirm(
-                              'Are you sure you want to remove this roadmap?'
+                              'Are you sure you want to remove this roadmap?',
                             )
                           ) {
                             onRemove(resourceConfig.resourceId).finally(
-                              () => {}
+                              () => {},
                             );
                           }
                         }}
