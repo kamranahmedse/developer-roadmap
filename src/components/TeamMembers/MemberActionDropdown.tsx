@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import type { TeamMemberDocument } from './TeamMembersPage';
-import MoreIcon from '../../icons/more-vertical.svg';
 import { useOutsideClick } from '../../hooks/use-outside-click';
+import { MoreVerticalIcon } from '../ReactIcons/MoreVerticalIcon.tsx';
 
 export function MemberActionDropdown({
   member,
@@ -79,7 +79,7 @@ export function MemberActionDropdown({
         onClick={() => setIsOpen(!isOpen)}
         className="ml-2 flex items-center opacity-60 transition-opacity hover:opacity-100 disabled:cursor-not-allowed disabled:opacity-30"
       >
-        <img alt="menu" src={MoreIcon.src} className="h-4 w-4" />
+        <MoreVerticalIcon className="h-4 w-4" />
       </button>
 
       {isOpen && (
