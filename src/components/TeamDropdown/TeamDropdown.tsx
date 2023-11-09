@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import ChevronDown from '../../icons/dropdown.svg';
 import { httpGet } from '../../lib/http';
 import { useAuth } from '../../hooks/use-auth';
 import { useOutsideClick } from '../../hooks/use-outside-click';
@@ -10,6 +9,7 @@ import { useStore } from '@nanostores/react';
 import { useTeamId } from '../../hooks/use-team-id';
 import { useToast } from '../../hooks/use-toast';
 import type { ValidTeamType } from '../CreateTeam/Step0';
+import { DropdownIcon } from '../ReactIcons/DropdownIcon.tsx';
 
 const allowedStatus = ['invited', 'joined', 'rejected'] as const;
 export type AllowedMemberStatus = (typeof allowedStatus)[number];
@@ -44,7 +44,7 @@ export function TeamDropdown() {
     if (shouldShowTeamIndicator) {
       localStorage.setItem(
         'viewedTeamsCount',
-        (viewedTeamsCountNumber + 1).toString()
+        (viewedTeamsCountNumber + 1).toString(),
       );
     }
   }, []);
@@ -67,7 +67,7 @@ export function TeamDropdown() {
 
   async function getAllTeams() {
     const { response, error } = await httpGet<TeamListResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-teams`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -140,7 +140,7 @@ export function TeamDropdown() {
               {isLoading && 'Loading ..'}
             </span>
           </div>
-          <img alt={'show dropdown'} src={ChevronDown.src} className="h-4 w-4" />
+          <DropdownIcon className={'h-4 w-4'} />
         </button>
 
         {showDropdown && (
