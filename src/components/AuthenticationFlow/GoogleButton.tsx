@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
-import GoogleIcon from '../../icons/google.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 
 type GoogleButtonProps = {};
 
@@ -13,7 +13,6 @@ const GOOGLE_LAST_PAGE = 'googleLastPage';
 export function GoogleButton(props: GoogleButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const icon = isLoading ? SpinnerIcon : GoogleIcon;
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -29,7 +28,7 @@ export function GoogleButton(props: GoogleButtonProps) {
     httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-google-callback${
         window.location.search
-      }`
+      }`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -79,7 +78,7 @@ export function GoogleButton(props: GoogleButtonProps) {
   const handleClick = () => {
     setIsLoading(true);
     httpGet<{ loginUrl: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-google-login`
+      `${import.meta.env.PUBLIC_API_URL}/v1-google-login`,
     )
       .then(({ response, error }) => {
         if (!response?.loginUrl) {
@@ -93,7 +92,7 @@ export function GoogleButton(props: GoogleButtonProps) {
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
           const pagePath = ['/respond-invite', '/befriend'].includes(
-            window.location.pathname
+            window.location.pathname,
           )
             ? window.location.pathname + window.location.search
             : window.location.pathname;
@@ -117,11 +116,11 @@ export function GoogleButton(props: GoogleButtonProps) {
         disabled={isLoading}
         onClick={handleClick}
       >
-        <img
-          src={icon.src}
-          alt="Google"
-          className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
-        />
+        {isLoading ? (
+          <Spinner className={'h-[18px] w-[18px]'} isDualRing={false} />
+        ) : (
+          <GoogleIcon className={'h-[18px] w-[18px]'} />
+        )}
         Continue with Google
       </button>
       {error && (
