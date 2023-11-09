@@ -158,13 +158,7 @@ export function TopicDetail(props: TopicDetailProps) {
         }
         let topicHtml = '';
         if (!isCustomResource) {
-          // It's full HTML with page body, head etc.
-          // We only need the inner HTML of the #main-content
-          const node = new DOMParser().parseFromString(
-            response as string,
-            'text/html',
-          );
-          topicHtml = node?.getElementById('main-content')?.outerHTML || '';
+          topicHtml = response as string;
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
