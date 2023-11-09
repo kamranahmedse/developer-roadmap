@@ -1,16 +1,16 @@
 import { TeamDropdown } from './TeamDropdown/TeamDropdown';
-import ChevronDown from '../icons/dropdown.svg';
 import { useTeamId } from '../hooks/use-team-id';
-import TeamProgress from '../icons/team-progress.svg';
-import SettingsIcon from '../icons/cog.svg';
 import ChatIcon from '../icons/chat.svg';
-import MapIcon from '../icons/map.svg';
-import GroupIcon from '../icons/group.svg';
-import { useState } from 'react';
 import type { ReactNode } from 'react';
+import { useState } from 'react';
 import { useStore } from '@nanostores/react';
 import { $currentTeam } from '../stores/team';
 import { SubmitFeedbackPopup } from './Feedback/SubmitFeedbackPopup';
+import { ChevronDownIcon } from './ReactIcons/ChevronDownIcon.tsx';
+import { GroupIcon } from './ReactIcons/GroupIcon.tsx';
+import { TeamProgressIcon } from './ReactIcons/TeamProgressIcon.tsx';
+import { MapIcon, MessageCircle } from 'lucide-react';
+import { CogIcon } from './ReactIcons/CogIcon.tsx';
 
 type TeamSidebarProps = {
   activePageId: string;
@@ -29,26 +29,26 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
       title: 'Progress',
       href: `/team/progress?t=${teamId}`,
       id: 'progress',
-      icon: TeamProgress.src,
+      icon: TeamProgressIcon,
     },
     {
       title: 'Roadmaps',
       href: `/team/roadmaps?t=${teamId}`,
       id: 'roadmaps',
-      icon: MapIcon.src,
+      icon: MapIcon,
       hasWarning: currentTeam?.roadmaps?.length === 0,
     },
     {
       title: 'Members',
       href: `/team/members?t=${teamId}`,
       id: 'members',
-      icon: GroupIcon.src,
+      icon: GroupIcon,
     },
     {
       title: 'Settings',
       href: `/team/settings?t=${teamId}`,
       id: 'settings',
-      icon: SettingsIcon.src,
+      icon: CogIcon,
     },
   ];
 
@@ -66,7 +66,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
             sidebarLinks.find((sidebarLink) => sidebarLink.id === activePageId)
               ?.title
           }
-          <img alt="menu" src={ChevronDown.src} className="h-4 w-4" />
+          <ChevronDownIcon className="h-4 w-4" />
         </button>
         {menuShown && (
           <ul
@@ -80,7 +80,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                   activePageId === 'team' ? 'bg-slate-100' : ''
                 }`}
               >
-                <img alt={'teams'} src={GroupIcon.src} className={`mr-2 h-4 w-4`} />
+                <GroupIcon className="mr-2 h-4 w-4" />
                 Personal Account / Teams
               </a>
             </li>
@@ -95,11 +95,8 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                       isActive ? 'bg-slate-100' : ''
                     }`}
                   >
-                    <img
-                      alt={'menu icon'}
-                      src={sidebarLink.icon}
-                      className="mr-2 h-4 w-4"
-                    />
+                    {<sidebarLink.icon className="mr-2 h-4 w-4" />}
+
                     {sidebarLink.title}
                   </a>
                 </li>
@@ -111,11 +108,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                 className={`flex w-full items-center rounded px-3 py-1.5 text-sm text-slate-900 hover:bg-slate-200`}
                 onClick={() => setShowFeedbackPopup(true)}
               >
-                <img
-                  alt={'menu icon'}
-                  src={ChatIcon.src}
-                  className="mr-2 h-4 w-4"
-                />
+                <MessageCircle className="mr-2 h-4 w-4" />
                 Send Feedback
               </button>
             </li>
@@ -150,11 +143,8 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
                     >
                       <span className="flex flex-grow items-center justify-between">
                         <span className="flex">
-                          <img
-                            alt="menu icon"
-                            src={sidebarLink.icon}
-                            className="relative top-[2px] mr-2 h-4 w-4"
-                          />
+                          {<sidebarLink.icon className="mr-2 h-4 w-4" />}
+
                           {sidebarLink.title}
                         </span>
                         {sidebarLink.hasWarning && (
@@ -174,7 +164,7 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
               className="mr-3 mt-4 flex items-center justify-center rounded-md border p-2 text-sm text-gray-500 transition-colors hover:border-gray-300 hover:bg-gray-50 hover:text-black"
               onClick={() => setShowFeedbackPopup(true)}
             >
-              <img alt={'feedback'} src={ChatIcon.src} className="mr-2 h-4 w-4" />
+              <MessageCircle className="mr-2 h-4 w-4" />
               Send Feedback
             </button>
           </nav>
