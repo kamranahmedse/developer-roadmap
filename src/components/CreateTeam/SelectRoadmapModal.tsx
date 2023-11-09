@@ -3,8 +3,8 @@ import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import type { PageType } from '../CommandMenu/CommandMenu';
 import type { TeamResourceConfig } from './RoadmapSelector';
-import CloseIcon from '../../icons/close.svg';
 import { SelectRoadmapModalItem } from './SelectRoadmapModalItem';
+import { XIcon } from 'lucide-react';
 
 export type SelectRoadmapModalProps = {
   teamId: string;
@@ -60,11 +60,11 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
     setSearchResults(searchResults);
   }, [searchText, allRoadmaps]);
 
-  const roleBasedRoadmaps = searchResults.filter((roadmap) =>
-    roadmap?.metadata?.tags?.includes('role-roadmap')
+  const roleBasedRoadmaps = searchResults.filter(
+    (roadmap) => roadmap?.metadata?.tags?.includes('role-roadmap'),
   );
-  const skillBasedRoadmaps = searchResults.filter((roadmap) =>
-    roadmap?.metadata?.tags?.includes('skill-roadmap')
+  const skillBasedRoadmaps = searchResults.filter(
+    (roadmap) => roadmap?.metadata?.tags?.includes('skill-roadmap'),
   );
 
   return (
@@ -79,7 +79,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             className="popup-close absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-100 hover:text-gray-900"
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
+            <XIcon className="h-4 w-4" />
             <span className="sr-only">Close modal</span>
           </button>
           <input
@@ -101,7 +101,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
               <div className="mb-5 flex flex-wrap items-center gap-2">
                 {roleBasedRoadmaps.map((roadmap) => {
                   const isSelected = !!teamResourceConfig?.find(
-                    (r) => r.resourceId === roadmap.id
+                    (r) => r.resourceId === roadmap.id,
                   );
 
                   return (
@@ -127,7 +127,7 @@ export function SelectRoadmapModal(props: SelectRoadmapModalProps) {
             <div className="flex flex-wrap items-center gap-2">
               {skillBasedRoadmaps.map((roadmap) => {
                 const isSelected = !!teamResourceConfig.find(
-                  (r) => r.resourceId === roadmap.id
+                  (r) => r.resourceId === roadmap.id,
                 );
 
                 return (
