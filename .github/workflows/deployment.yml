@@ -1,4 +1,4 @@
-name: Deployment to GH Pages
+name: App Deployment
 on:
   push:
     branches: [ master ]
