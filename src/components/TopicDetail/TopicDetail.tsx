@@ -1,6 +1,4 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
-import CloseIcon from '../../icons/close.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 
 import { useKeydown } from '../../hooks/use-keydown';
 import { useLoadTopic } from '../../hooks/use-load-topic';
@@ -26,8 +24,9 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { Ban, FileText } from 'lucide-react';
+import { Ban, FileText, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
+import { Spinner } from '../ReactIcons/Spinner';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
@@ -203,10 +202,10 @@ export function TopicDetail(props: TopicDetailProps) {
       >
         {isLoading && (
           <div className="flex w-full justify-center">
-            <img
-              src={SpinnerIcon.src}
-              alt="Loading"
-              className="h-6 w-6 animate-spin fill-blue-600 text-gray-200 sm:h-12 sm:w-12"
+            <Spinner
+              outerFill="#d1d5db"
+              className="h-6 w-6 sm:h-12 sm:w-12"
+              innerFill="#2563eb"
             />
           </div>
         )}
@@ -249,7 +248,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   setIsContributing(false);
                 }}
               >
-                <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
+                <X className="h-5 w-5" />
               </button>
             </div>
 
@@ -339,7 +338,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 setIsContributing(false);
               }}
             >
-              <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
+              <X className="h-5 w-5" />
             </button>
             <div className="flex h-full flex-col items-center justify-center">
               <Ban className="h-16 w-16 text-red-500" />
