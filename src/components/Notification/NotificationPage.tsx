@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react';
 import { httpGet, httpPatch } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import type { TeamMemberDocument } from '../TeamMembers/TeamMembersPage';
-import XIcon from '../../icons/close-dark.svg';
 import { useToast } from '../../hooks/use-toast';
 import { AcceptIcon } from '../ReactIcons/AcceptIcon.tsx';
+import { XIcon } from 'lucide-react';
 
 interface NotificationList extends TeamMemberDocument {
   name: string;
@@ -114,7 +114,7 @@ export function NotificationPage() {
                 className="inline-flex rounded border p-1 hover:bg-gray-50 disabled:opacity-75"
                 onClick={() => respondInvitation('reject', notification?._id!)}
               >
-                <img alt={'Close'} src={XIcon.src} className="h-4 w-4" />
+                <XIcon className="h-4 w-4" />
               </button>
             </div>
           </div>
