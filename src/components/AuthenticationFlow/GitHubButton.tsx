@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
-import GitHubIcon from '../../icons/github.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
+import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
 
 type GitHubButtonProps = {};
 
@@ -13,7 +13,6 @@ const GITHUB_LAST_PAGE = 'githubLastPage';
 export function GitHubButton(props: GitHubButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const icon = isLoading ? SpinnerIcon : GitHubIcon;
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -29,7 +28,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-callback${
         window.location.search
-      }`
+      }`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -81,12 +80,12 @@ export function GitHubButton(props: GitHubButtonProps) {
     setIsLoading(true);
 
     const { response, error } = await httpGet<{ loginUrl: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-github-login`
+      `${import.meta.env.PUBLIC_API_URL}/v1-github-login`,
     );
 
     if (error || !response?.loginUrl) {
       setError(
-        error?.message || 'Something went wrong. Please try again later.'
+        error?.message || 'Something went wrong. Please try again later.',
       );
 
       setIsLoading(false);
@@ -97,7 +96,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
       const pagePath = ['/respond-invite', '/befriend'].includes(
-        window.location.pathname
+        window.location.pathname,
       )
         ? window.location.pathname + window.location.search
         : window.location.pathname;
@@ -116,11 +115,11 @@ export function GitHubButton(props: GitHubButtonProps) {
         disabled={isLoading}
         onClick={handleClick}
       >
-        <img
-          src={icon.src}
-          alt="GitHub"
-          className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
-        />
+        {isLoading ? (
+          <Spinner className={'h-[18px] w-[18px]'} isDualRing={false} />
+        ) : (
+          <GitHubIcon className={'h-[18px] w-[18px]'} />
+        )}
         Continue with GitHub
       </button>
       {error && (
