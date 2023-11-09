@@ -1,7 +1,5 @@
 import { useEffect, useState } from 'react';
 import { httpGet, httpPatch } from '../lib/http';
-import BuildingIcon from '../icons/building.svg';
-import ErrorIcon from '../icons/error.svg';
 import { pageProgressMessage } from '../stores/page';
 import type { TeamDocument } from './CreateTeam/CreateTeamForm';
 import type { AllowedRoles } from './CreateTeam/RoleDropdown';
@@ -9,6 +7,8 @@ import type { AllowedMemberStatus } from './TeamDropdown/TeamDropdown';
 import { isLoggedIn } from '../lib/jwt';
 import { showLoginPopup } from '../lib/popup';
 import { getUrlParams } from '../lib/browser';
+import { ErrorIcon2 } from './ReactIcons/ErrorIcon2';
+import { BuildingIcon } from './ReactIcons/BuildingIcon';
 
 type InvitationResponse = {
   team: TeamDocument;
@@ -85,11 +85,7 @@ export function RespondInviteForm() {
   if (!invite) {
     return (
       <div className="container text-center">
-        <img
-          alt={'error'}
-          src={ErrorIcon.src}
-          className="mx-auto mb-4 mt-24 w-20 opacity-20"
-        />
+        <ErrorIcon2 className="mx-auto mb-4 mt-24 w-20 opacity-20" />
 
         <h2 className={'mb-1 text-2xl font-bold'}>Error</h2>
         <p className="mb-4 text-base leading-6 text-gray-600">
@@ -110,11 +106,7 @@ export function RespondInviteForm() {
 
   return (
     <div className="container text-center">
-      <img
-        alt={'join team'}
-        src={BuildingIcon.src}
-        className="mx-auto mb-4 mt-24 w-20 opacity-20"
-      />
+      <BuildingIcon className="mx-auto mb-4 mt-24 w-20 opacity-20" />
 
       <h2 className={'mb-1 text-2xl font-bold'}>Join Team</h2>
       <p className="mb-3 text-base leading-6 text-gray-600">
