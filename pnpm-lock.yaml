@@ -27,7 +27,7 @@ dependencies:
     specifier: ^18.2.14
     version: 18.2.14
   astro:
-    specifier: ^3.3.3
+    specifier: ^3.3.0
     version: 3.3.3(typescript@5.3.0-dev.20231021)
   astro-compress:
     specifier: ^2.1.5

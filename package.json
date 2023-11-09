@@ -1,7 +1,7 @@
 {
   "name": "roadmap.sh",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "astro dev --port 3000",
@@ -29,7 +29,7 @@
     "@nanostores/react": "^0.7.1",
     "@types/react": "^18.2.31",
     "@types/react-dom": "^18.2.14",
-    "astro": "^3.3.3",
+    "astro": "^3.3.0",
     "astro-compress": "^2.1.5",
     "clsx": "^2.0.0",
     "dracula-prism": "^2.1.13",
