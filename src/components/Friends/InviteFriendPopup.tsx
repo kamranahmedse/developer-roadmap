@@ -1,8 +1,8 @@
 import type { MouseEvent } from 'react';
 import { useRef } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import CopyIcon from '../../icons/copy.svg';
 import { useCopyText } from '../../hooks/use-copy-text';
+import { Copy } from 'lucide-react';
 
 type InviteFriendPopupProps = {
   befriendUrl: string;
@@ -54,11 +54,7 @@ export function InviteFriendPopup(props: InviteFriendPopupProps) {
                 copyText(befriendUrl);
               }}
             >
-              <img
-                src={CopyIcon.src}
-                className="h-4 w-4"
-                alt="Invite Friends"
-              />
+              <Copy className="h-4 w-4" />
               {isCopied ? 'Copied' : 'Copy URL'}
             </button>
           </div>
