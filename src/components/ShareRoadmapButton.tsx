@@ -3,6 +3,7 @@ import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click.ts';
 import { useCopyText } from '../hooks/use-copy-text.ts';
 import { cn } from '../lib/classname.ts';
+import { TwitterIcon } from './ReactIcons/TwitterIcon.tsx';
 
 type ShareRoadmapButtonProps = {
   description: string;
@@ -62,7 +63,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
                 copyText(pageUrl);
                 setIsDropdownOpen(false);
               }}
-              className="flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
                 <Copy size="15px" className="text-slate-400" />
@@ -72,17 +73,17 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
             <a
               href={twitterUrl}
               target={'_blank'}
-              className="mt-1 flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="mt-1 flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
-                <Twitter size="16px" className="text-slate-400" />
+                <TwitterIcon className="h-[16px] text-slate-400" />
               </div>
               Twitter
             </a>
             <a
               href={fbUrl}
               target={'_blank'}
-              className="flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
                 <Facebook size="16px" className="text-slate-400" />
@@ -92,7 +93,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
             <a
               href={hnUrl}
               target={'_blank'}
-              className="flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
                 <img
@@ -106,7 +107,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
             <a
               href={redditUrl}
               target={'_blank'}
-              className="flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
                 <img
@@ -120,7 +121,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
             <a
               href={linkedinUrl}
               target={'_blank'}
-              className="flex w-full items-center rounded-sm gap-2 px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
             >
               <div className="flex w-[20px] items-center justify-center">
                 <Linkedin size="16px" className="text-slate-400" />
