@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
-import CloseIcon from '../icons/close.svg';
 import { httpGet } from '../lib/http';
 import { sponsorHidden } from '../stores/page';
 import { useStore } from '@nanostores/react';
+import { X } from 'lucide-react';
 
 export type PageSponsorType = {
   company: string;
@@ -46,7 +46,7 @@ export function PageSponsor(props: PageSponsorProps) {
       `${import.meta.env.PUBLIC_API_URL}/v1-get-sponsor`,
       {
         href: window.location.pathname,
-      }
+      },
     );
 
     if (error) {
@@ -101,7 +101,7 @@ export function PageSponsor(props: PageSponsorProps) {
           sponsorHidden.set(true);
         }}
       >
-        <img alt="Close" className="h-4 w-4" src={CloseIcon.src} />
+        <X className="h-4 w-4" />
       </span>
       <img
         src={imageUrl}
