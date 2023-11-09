@@ -1,35 +1,47 @@
-import { Fragment, useEffect, useRef, useState } from 'react';
+import {
+  Fragment,
+  type ReactElement,
+  useEffect,
+  useRef,
+  useState,
+} from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import BestPracticesIcon from '../../icons/best-practices.svg';
-import ClipboardIcon from '../../icons/clipboard.svg';
-import GuideIcon from '../../icons/guide.svg';
-import HomeIcon from '../../icons/home.svg';
-import RoadmapIcon from '../../icons/roadmap.svg';
-import UserIcon from '../../icons/user.svg';
-import GroupIcon from '../../icons/group.svg';
-import VideoIcon from '../../icons/video.svg';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
+import { BestPracticesIcon } from '../ReactIcons/BestPracticesIcon.tsx';
+import { UserIcon } from '../ReactIcons/UserIcon.tsx';
+import { GroupIcon } from '../ReactIcons/GroupIcon.tsx';
+import { RoadmapIcon } from '../ReactIcons/RoadmapIcon.tsx';
+import { ClipboardIcon } from '../ReactIcons/ClipboardIcon.tsx';
+import { GuideIcon } from '../ReactIcons/GuideIcon.tsx';
+import { HomeIcon } from '../ReactIcons/HomeIcon.tsx';
+import { VideoIcon } from '../ReactIcons/VideoIcon.tsx';
 
 export type PageType = {
   id: string;
   url: string;
   title: string;
   group: string;
-  icon?: string;
+  icon?: ReactElement;
   isProtected?: boolean;
   metadata?: Record<string, any>;
 };
 
 const defaultPages: PageType[] = [
-  { id: 'home', url: '/', title: 'Home', group: 'Pages', icon: HomeIcon.src },
+  {
+    id: 'home',
+    url: '/',
+    title: 'Home',
+    group: 'Pages',
+    icon: <HomeIcon className="mr-2 h-4 w-4 stroke-2" />,
+  },
   {
     id: 'account',
     url: '/account',
     title: 'Account',
     group: 'Pages',
-    icon: UserIcon.src,
+    icon: <UserIcon className="mr-2 h-4 w-4 stroke-2" />,
     isProtected: true,
   },
   {
@@ -37,7 +49,7 @@ const defaultPages: PageType[] = [
     url: '/team',
     title: 'Teams',
     group: 'Pages',
-    icon: GroupIcon.src,
+    icon: <GroupIcon className="mr-2 h-4 w-4 stroke-2" />,
     isProtected: true,
   },
   {
@@ -45,7 +57,7 @@ const defaultPages: PageType[] = [
     url: '/account/friends',
     title: 'Friends',
     group: 'Pages',
-    icon: GroupIcon.src,
+    icon: <GroupIcon className="mr-2 h-4 w-4 stroke-2" />,
     isProtected: true,
   },
   {
@@ -53,14 +65,14 @@ const defaultPages: PageType[] = [
     url: '/roadmaps',
     title: 'Roadmaps',
     group: 'Pages',
-    icon: RoadmapIcon.src,
+    icon: <RoadmapIcon className="mr-2 h-4 w-4 stroke-2" />,
   },
   {
     id: 'account-roadmaps',
     url: '/account/roadmaps',
     title: 'Custom Roadmaps',
     group: 'Pages',
-    icon: RoadmapIcon.src,
+    icon: <RoadmapIcon className="mr-2 h-4 w-4 stroke-2" />,
     isProtected: true,
   },
   {
@@ -68,28 +80,28 @@ const defaultPages: PageType[] = [
     url: '/best-practices',
     title: 'Best Practices',
     group: 'Pages',
-    icon: BestPracticesIcon.src,
+    icon: <BestPracticesIcon className="mr-2 h-4 w-4 stroke-2" />,
   },
   {
     id: 'questions',
     url: '/questions',
     title: 'Questions',
     group: 'Pages',
-    icon: ClipboardIcon.src,
+    icon: <ClipboardIcon className="mr-2 h-4 w-4 stroke-2" />,
   },
   {
     id: 'guides',
     url: '/guides',
     title: 'Guides',
     group: 'Pages',
-    icon: GuideIcon.src,
+    icon: <GuideIcon className="mr-2 h-4 w-4 stroke-2" />,
   },
   {
     id: 'videos',
     url: '/videos',
     title: 'Videos',
     group: 'Pages',
-    icon: VideoIcon.src,
+    icon: <VideoIcon className="mr-2 h-4 w-4 stroke-2" />,
   },
 ];
 
@@ -199,7 +211,7 @@ export function CommandMenu() {
               } else if (e.key === 'ArrowUp') {
                 const canGoPrev = activeCounter > 0;
                 setActiveCounter(
-                  canGoPrev ? activeCounter - 1 : searchResults.length - 1
+                  canGoPrev ? activeCounter - 1 : searchResults.length - 1,
                 );
               } else if (e.key === 'Tab') {
                 e.preventDefault();
@@ -242,13 +254,7 @@ export function CommandMenu() {
                       {!page.icon && (
                         <span className="mr-2 text-gray-400">{page.group}</span>
                       )}
-                      {page.icon && (
-                        <img
-                          alt={page.title}
-                          src={page.icon}
-                          className="mr-2 h-4 w-4"
-                        />
-                      )}
+                      {page.icon && page.icon}
                       {page.title}
                     </a>
                   </Fragment>
