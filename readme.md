@@ -67,6 +67,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 
 There are also interactive best practices:
 
