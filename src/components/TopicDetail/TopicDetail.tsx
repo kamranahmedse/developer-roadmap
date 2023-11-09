@@ -165,7 +165,7 @@ export function TopicDetail(props: TopicDetailProps) {
             response as string,
             'text/html',
           );
-          topicHtml = node?.getElementById('main-content')?.outerHTML || '';
+          topicHtml = response;
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
