@@ -1,7 +1,7 @@
 import { useStore } from '@nanostores/react';
-import SpinnerIcon from '../icons/spinner.svg';
 import { pageProgressMessage } from '../stores/page';
 import { useEffect, useState } from 'react';
+import { Spinner } from './ReactIcons/Spinner';
 
 export interface Props {
   initialMessage: string;
@@ -30,10 +30,10 @@ export function PageProgress(props: Props) {
       {/* Tailwind based spinner for full page */}
       <div className="fixed left-0 top-0 z-50 flex h-full w-full items-center justify-center bg-white bg-opacity-75">
         <div className="flex  items-center justify-center rounded-md border bg-white px-4 py-2 ">
-          <img
-            src={SpinnerIcon.src}
-            alt="Loading"
-            className="h-4 w-4 animate-spin fill-blue-600 text-gray-200 sm:h-4 sm:w-4"
+          <Spinner
+            className="h-4 w-4 sm:h-4 sm:w-4"
+            outerFill="#e5e7eb"
+            innerFill="#2563eb"
           />
           <h1 className="ml-2">
             {message}
