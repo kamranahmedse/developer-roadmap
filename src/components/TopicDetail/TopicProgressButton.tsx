@@ -1,8 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
-import DownIcon from '../../icons/down.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 import { isLoggedIn } from '../../lib/jwt';
 import {
   getTopicStatus,
@@ -10,9 +8,14 @@ import {
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
-import type { ResourceProgressType, ResourceType } from '../../lib/resource-progress';
+import type {
+  ResourceProgressType,
+  ResourceType,
+} from '../../lib/resource-progress';
 import { showLoginPopup } from '../../lib/popup';
 import { useToast } from '../../hooks/use-toast';
+import { Spinner } from '../ReactIcons/Spinner';
+import { ChevronDown } from 'lucide-react';
 
 type TopicProgressButtonProps = {
   topicId: string;
@@ -27,7 +30,7 @@ const statusColors: Record<ResourceProgressType, string> = {
   learning: 'bg-yellow-500',
   pending: 'bg-gray-300',
   skipped: 'bg-black',
-  removed: ''
+  removed: '',
 };
 
 export function TopicProgressButton(props: TopicProgressButtonProps) {
@@ -71,7 +74,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       handleUpdateResourceProgress('done');
     },
-    [progress]
+    [progress],
   );
 
   // Mark as learning
@@ -85,7 +88,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       handleUpdateResourceProgress('learning');
     },
-    [progress]
+    [progress],
   );
 
   // Mark as learning
@@ -99,7 +102,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       handleUpdateResourceProgress('skipped');
     },
-    [progress]
+    [progress],
   );
 
   // Mark as pending
@@ -114,7 +117,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
 
       handleUpdateResourceProgress('pending');
     },
-    [progress]
+    [progress],
   );
 
   const handleUpdateResourceProgress = (progress: ResourceProgressType) => {
@@ -131,7 +134,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         resourceId,
         resourceType,
       },
-      progress
+      progress,
     )
       .then(() => {
         setProgress(progress);
@@ -149,22 +152,22 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
   };
 
   const allowMarkingSkipped = ['pending', 'learning', 'done'].includes(
-    progress
+    progress,
   );
   const allowMarkingDone = ['skipped', 'pending', 'learning'].includes(
-    progress
+    progress,
   );
   const allowMarkingLearning = ['done', 'skipped', 'pending'].includes(
-    progress
+    progress,
   );
   const allowMarkingPending = ['skipped', 'done', 'learning'].includes(
-    progress
+    progress,
   );
 
   if (isUpdatingProgress) {
     return (
       <button className="inline-flex cursor-default items-center rounded-md border border-gray-300 bg-white p-1 px-2 text-sm text-black">
-        <img alt="Check" className="h-4 w-4 animate-spin" src={SpinnerIcon.src} />
+        <Spinner className="h-4 w-4" />
         <span className="ml-2">Updating Status..</span>
       </button>
     );
@@ -188,7 +191,7 @@ export function TopicProgressButton(props: TopicProgressButtonProps) {
         onClick={() => setShowChangeStatus(true)}
       >
         <span className="mr-0.5">Update Status</span>
-        <img alt="Check" className="h-4 w-4" src={DownIcon.src} />
+        <ChevronDown className="h-4 w-4" />
       </button>
 
       {showChangeStatus && (

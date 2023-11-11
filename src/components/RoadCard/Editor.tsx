@@ -1,5 +1,5 @@
 import { useCopyText } from '../../hooks/use-copy-text';
-import CopyIcon from '../../icons/copy.svg';
+import { CopyIcon } from 'lucide-react';
 
 type EditorProps = {
   title: string;
@@ -20,11 +20,11 @@ export function Editor(props: EditorProps) {
         <button className="flex items-center" onClick={() => copyText(text)}>
           {isCopied && (
             <span className="mr-1 text-xs leading-none text-gray-700">
-              Copied!
+              Copied!&nbsp;
             </span>
           )}
 
-          <img src={CopyIcon.src} alt="Copy" className="inline-block h-4 w-4" />
+          <CopyIcon className="inline-block h-4 w-4" />
         </button>
       </div>
       <textarea

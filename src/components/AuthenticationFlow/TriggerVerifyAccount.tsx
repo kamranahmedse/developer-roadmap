@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 import { httpPost } from '../../lib/http';
-import ErrorIcon from '../../icons/error.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { Spinner } from '../ReactIcons/Spinner';
+import { ErrorIcon2 } from '../ReactIcons/ErrorIcon2';
 
 export function TriggerVerifyAccount() {
   const [isLoading, setIsLoading] = useState(true);
@@ -16,7 +16,7 @@ export function TriggerVerifyAccount() {
       `${import.meta.env.PUBLIC_API_URL}/v1-verify-account`,
       {
         code,
-      }
+      },
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -55,20 +55,8 @@ export function TriggerVerifyAccount() {
   return (
     <div className="mx-auto flex max-w-md flex-col items-center pt-0 sm:pt-12">
       <div className="mx-auto max-w-md text-center">
-        {isLoading && (
-          <img
-            alt={'Please wait.'}
-            src={SpinnerIcon.src}
-            className={'mx-auto h-16 w-16 animate-spin'}
-          />
-        )}
-        {error && (
-          <img
-            alt={'Please wait.'}
-            src={ErrorIcon.src}
-            className={'mx-auto h-16 w-16'}
-          />
-        )}
+        {isLoading && <Spinner className="mx-auto h-16 w-16" />}
+        {error && <ErrorIcon2 className="mx-auto h-16 w-16" />}
         <h2 className="mb-1 mt-4 text-center text-xl font-semibold sm:mb-3 sm:mt-4 sm:text-2xl">
           Verifying your account
         </h2>

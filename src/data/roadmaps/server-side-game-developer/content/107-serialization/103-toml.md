@@ -1,0 +1,3 @@
+# TOML
+
+`TOML`, which stands for Tom's Obvious, Minimal Language, is a configuration file format that is easy to read due to its straightforward and simple syntax. The language is designed to be unambiguous and lean, intending to make it easy for a machine to parse. It supports basic data types, such as Integer, String, Boolean, and Float, Date-Time, Array, and Table. Unlike other similar file formats, `TOML` provides a more structured hierarchy. You can use `TOML` for configuration, serialization, and other similar tasks in game development.

@@ -2,13 +2,13 @@ import { useState } from 'react';
 
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useAuth } from '../../hooks/use-auth';
-import CopyIcon from '../../icons/copy.svg';
 import { RoadmapSelect } from './RoadmapSelect';
 import { GitHubReadmeBanner } from './GitHubReadmeBanner';
 import { downloadImage } from '../../helper/download-image';
 import { SelectionButton } from './SelectionButton';
 import { StepCounter } from './StepCounter';
 import { Editor } from './Editor';
+import { CopyIcon } from 'lucide-react';
 
 type StepLabelProps = {
   label: string;
@@ -34,7 +34,7 @@ export function RoadCardPage() {
   }
 
   const badgeUrl = new URL(
-    `${import.meta.env.PUBLIC_API_URL}/v1-badge/${version}/${user?.id}`
+    `${import.meta.env.PUBLIC_API_URL}/v1-badge/${version}/${user?.id}`,
   );
 
   badgeUrl.searchParams.set('variant', variant);
@@ -44,7 +44,7 @@ export function RoadCardPage() {
 
   return (
     <>
-      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b pt-2 pb-4">
+      <div className="mx-0 flex items-start gap-4 border-b px-0 pb-4 pt-2 sm:-mx-10 sm:px-10">
         <StepCounter step={1} />
         <div>
           <StepLabel label="Pick progress to show (Max. 4)" />
@@ -58,7 +58,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
+      <div className="mx-0 flex items-start gap-4 border-b px-0 py-4 sm:-mx-10 sm:px-10">
         <StepCounter step={2} />
         <div>
           <StepLabel label="Select Mode (Dark vs Light)" />
@@ -85,7 +85,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
+      <div className="mx-0 flex items-start gap-4 border-b px-0 py-4 sm:-mx-10 sm:px-10">
         <StepCounter step={3} />
         <div>
           <StepLabel label="Select Version" />
@@ -111,7 +111,7 @@ export function RoadCardPage() {
         </div>
       </div>
 
-      <div className="flex items-start gap-4 mx-0 sm:-mx-10 px-0 sm:px-10 border-b py-4">
+      <div className="mx-0 flex items-start gap-4 border-b px-0 py-4 sm:-mx-10 sm:px-10">
         <StepCounter step={4} />
         <div className="flex-grow">
           <StepLabel label="Share your #RoadCard with others" />
@@ -146,7 +146,7 @@ export function RoadCardPage() {
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
               onClick={() => copyText(badgeUrl.toString())}
             >
-              <img alt="Copy" src={CopyIcon.src} className="mr-1" />
+              <CopyIcon size={16} className="inline-block h-4 w-4 mr-1" />
 
               {isCopied ? 'Copied!' : 'Copy Link'}
             </button>

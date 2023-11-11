@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import type { GroupByRoadmap, TeamMember } from './TeamProgressPage';
 import { getUrlParams } from '../../lib/browser';
-import ExternalLinkIcon from '../../icons/external-link.svg';
 import { useAuth } from '../../hooks/use-auth';
+import { LucideExternalLink } from 'lucide-react';
 
 type GroupRoadmapItemProps = {
   roadmap: GroupByRoadmap;
@@ -33,11 +33,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
               className="group mb-0.5 flex shrink-0 items-center justify-between text-base font-medium leading-none text-black"
               target={'_blank'}
             >
-              <img
-                alt={'link'}
-                src={ExternalLinkIcon.src}
-                className="ml-2 h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100"
-              />
+              <LucideExternalLink className="h-4 w-4 opacity-20 transition-opacity group-hover:opacity-100" />
             </a>
           </div>
         </div>
@@ -58,7 +54,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
                 onClick={() => {
                   onShowResourceProgress(
                     member.member,
-                    member.progress?.resourceId!
+                    member.progress?.resourceId!,
                   );
                 }}
               >

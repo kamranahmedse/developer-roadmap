@@ -1,22 +1,22 @@
-import BuildingIcon from '../../icons/building.svg';
-import UsersIcon from '../../icons/users.svg';
 import type { TeamDocument } from './CreateTeamForm';
 import { httpPut } from '../../lib/http';
 import { useState } from 'react';
 import { NextButton } from './NextButton';
+import { BuildingIcon } from '../ReactIcons/BuildingIcon.tsx';
+import { UsersIcon } from '../ReactIcons/UsersIcon.tsx';
 
 export const validTeamTypes = [
   {
     value: 'company',
     label: 'Company',
-    icon: BuildingIcon.src,
+    icon: BuildingIcon,
     description:
       'Track the skills and learning progress of the tech team at your company',
   },
   {
     value: 'study_group',
     label: 'Study Group',
-    icon: UsersIcon.src,
+    icon: UsersIcon,
     description:
       'Invite your friends or course-mates and track your learning progress together',
   },
@@ -56,7 +56,7 @@ export function Step0(props: Step0Props) {
           teamSize: team.teamSize,
           linkedInUrl: team?.links?.linkedIn || undefined,
         }),
-      }
+      },
     );
 
     if (error || !response) {
@@ -76,21 +76,20 @@ export function Step0(props: Step0Props) {
         {validTeamTypes.map((validTeamType) => (
           <button
             key={validTeamType.value}
-            className={`flex flex-grow flex-col items-center rounded-lg border px-5 pt-12 pb-10 ${
+            className={`flex flex-grow flex-col items-center rounded-lg border px-5 pb-10 pt-12 ${
               validTeamType.value == selectedTeamType
                 ? 'border-gray-400 bg-gray-100'
                 : 'border-gray-300 hover:border-gray-400 hover:bg-gray-50'
             }`}
             onClick={() => setSelectedTeamType(validTeamType.value)}
           >
-            <img
-              key={validTeamType.value}
-              alt={validTeamType.label}
-              src={validTeamType.icon}
-              className={`mb-3 h-12 w-12 opacity-10 ${
-                validTeamType.value === selectedTeamType ? 'opacity-100' : ''
-              }`}
-            />
+            {
+              <validTeamType.icon
+                className={`mb-3 h-12 w-12 opacity-10 ${
+                  validTeamType.value === selectedTeamType ? 'opacity-100' : ''
+                }`}
+              />
+            }
             <span className="mb-2 block text-2xl font-bold">
               {validTeamType.label}
             </span>

@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import type { TeamDocument } from '../CreateTeam/CreateTeamForm';
 import type { TeamResourceConfig } from '../CreateTeam/RoadmapSelector';
 import { httpGet } from '../../lib/http';
-import DropdownIcon from '../../icons/dropdown.svg';
+// import DropdownIcon from '../../icons/dropdown.svg';
 import {
   clearResourceProgress,
   refreshProgressCounters,
@@ -15,6 +15,7 @@ import { useKeydown } from '../../hooks/use-keydown';
 import { isLoggedIn } from '../../lib/jwt';
 import { useAuth } from '../../hooks/use-auth';
 import { useToast } from '../../hooks/use-toast';
+import { DropdownIcon } from '../ReactIcons/DropdownIcon';
 
 type TeamVersionsProps = {
   resourceId: string;
@@ -75,7 +76,7 @@ export function TeamVersions(props: TeamVersionsProps) {
       }/v1-get-team-versions?${new URLSearchParams({
         resourceId,
         resourceType,
-      })}`
+      })}`,
     );
 
     if (error || !response) {
@@ -142,11 +143,7 @@ export function TeamVersions(props: TeamVersionsProps) {
           <span className="truncate">
             {selectedTeamVersion?.team.name || 'Team Versions'}
           </span>
-          <img
-            alt="Dropdown"
-            src={DropdownIcon.src}
-            className="h-3 w-3 sm:h-4 sm:w-4"
-          />
+          <DropdownIcon className="h-3 w-3 sm:h-4 sm:w-4" />
         </div>
         <div className="sm:hidden">
           {shouldShowAvatar ? (

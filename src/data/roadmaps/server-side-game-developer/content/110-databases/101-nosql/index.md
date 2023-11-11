@@ -1,0 +1,3 @@
+# NoSQL
+
+**NoSQL** is a type of database that provides a mechanism for storage and retrieval of data which is modeled using means other than the tabular relations used in relational databases. NoSQL databases are ideal for big data and real-time web applications. They are flexible as they allow rapid development from changes. Some popular NoSQL databases include MongoDB, Apache Cassandra, Redis, Couchbase and HBase. While they may all be classified as NoSQL, they are all different in terms of their data model, with some being document-oriented, others key-value stores, wide-column stores, or graph databases. It's important to consider each one's data model when choosing a database for your application.

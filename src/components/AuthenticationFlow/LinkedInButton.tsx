@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
-import LinkedIn from '../../icons/linkedin.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 
 type LinkedInButtonProps = {};
 
@@ -13,7 +13,6 @@ const LINKEDIN_LAST_PAGE = 'linkedInLastPage';
 export function LinkedInButton(props: LinkedInButtonProps) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const icon = isLoading ? SpinnerIcon : LinkedIn;
 
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search);
@@ -29,7 +28,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
     httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
         window.location.search
-      }`
+      }`,
     )
       .then(({ response, error }) => {
         if (!response?.token) {
@@ -79,7 +78,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
   const handleClick = () => {
     setIsLoading(true);
     httpGet<{ loginUrl: string }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-login`
+      `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-login`,
     )
       .then(({ response, error }) => {
         if (!response?.loginUrl) {
@@ -93,7 +92,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         // the user was on before they clicked the social login button
         if (!['/login', '/signup'].includes(window.location.pathname)) {
           const pagePath = ['/respond-invite', '/befriend'].includes(
-            window.location.pathname
+            window.location.pathname,
           )
             ? window.location.pathname + window.location.search
             : window.location.pathname;
@@ -117,11 +116,11 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         disabled={isLoading}
         onClick={handleClick}
       >
-        <img
-          src={icon.src}
-          alt="Google"
-          className={`h-[18px] w-[18px] ${isLoading ? 'animate-spin' : ''}`}
-        />
+        {isLoading ? (
+          <Spinner className={'h-[18px] w-[18px]'} isDualRing={false} />
+        ) : (
+          <LinkedInIcon className={'h-[18px] w-[18px]'} />
+        )}
         Continue with LinkedIn
       </button>
       {error && (

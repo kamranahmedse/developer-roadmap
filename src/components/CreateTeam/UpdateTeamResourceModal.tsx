@@ -8,6 +8,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { useToast } from '../../hooks/use-toast';
+import {replaceChildren} from "../../lib/dom.ts";
 
 export type ProgressMapProps = {
   teamId: string;
@@ -81,7 +82,8 @@ export function UpdateTeamResourceModal(props: ProgressMapProps) {
       fontURL: '/fonts/balsamiq.woff2',
     });
 
-    containerEl.current?.replaceChildren(svg);
+    replaceChildren(containerEl.current!, svg);
+    // containerEl.current?.replaceChildren(svg);
 
     // Render team configuration
     removedItems.forEach((topicId: string) => {

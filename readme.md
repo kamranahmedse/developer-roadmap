@@ -39,6 +39,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Python Roadmap](https://roadmap.sh/python)
 - [Software Architect Roadmap](https://roadmap.sh/software-architect)
+- [Game Developer Roadmap](https://roadmap.sh/game-developer) / [Server Side Game Developer](https://roadmap.sh/server-side-game-developer)
 - [Software Design and Architecture Roadmap](https://roadmap.sh/software-design-architecture)
 - [JavaScript Roadmap](https://roadmap.sh/javascript)
 - [TypeScript Roadmap](https://roadmap.sh/typescript)
@@ -66,6 +67,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [UX Design Roadmap](https://roadmap.sh/ux-design)
 - [Docker Roadmap](https://roadmap.sh/docker)
 - [Prompt Engineering Roadmap](https://roadmap.sh/prompt-engineering)
+- [Technical Writer Roadmap](https://roadmap.sh/technical-writer)
 
 There are also interactive best practices:
 

@@ -1,6 +1,4 @@
-import { useMemo, useRef, useState } from 'react';
-import CloseIcon from '../../icons/close.svg';
-import SpinnerIcon from '../../icons/spinner.svg';
+import { useEffect, useMemo, useRef, useState } from 'react';
 
 import { useKeydown } from '../../hooks/use-keydown';
 import { useLoadTopic } from '../../hooks/use-load-topic';
@@ -26,8 +24,9 @@ import type {
 } from '../CustomRoadmap/CustomRoadmap';
 import { markdownToHtml } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
-import { Ban, FileText } from 'lucide-react';
+import { Ban, FileText, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
+import { Spinner } from '../ReactIcons/Spinner';
 
 type TopicDetailProps = {
   canSubmitContribution: boolean;
@@ -159,13 +158,7 @@ export function TopicDetail(props: TopicDetailProps) {
         }
         let topicHtml = '';
         if (!isCustomResource) {
-          // It's full HTML with page body, head etc.
-          // We only need the inner HTML of the #main-content
-          const node = new DOMParser().parseFromString(
-            response as string,
-            'text/html',
-          );
-          topicHtml = node?.getElementById('main-content')?.outerHTML || '';
+          topicHtml = response as string;
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
@@ -184,6 +177,10 @@ export function TopicDetail(props: TopicDetailProps) {
       });
   });
 
+  useEffect(() => {
+    if (isActive) topicRef?.current?.focus();
+  }, [isActive]);
+
   if (!isActive) {
     return null;
   }
@@ -194,14 +191,15 @@ export function TopicDetail(props: TopicDetailProps) {
     <div className={'relative z-50'}>
       <div
         ref={topicRef}
-        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 sm:max-w-[600px] sm:p-6"
+        tabIndex={0}
+        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoading && (
           <div className="flex w-full justify-center">
-            <img
-              src={SpinnerIcon.src}
-              alt="Loading"
-              className="h-6 w-6 animate-spin fill-blue-600 text-gray-200 sm:h-12 sm:w-12"
+            <Spinner
+              outerFill="#d1d5db"
+              className="h-6 w-6 sm:h-12 sm:w-12"
+              innerFill="#2563eb"
             />
           </div>
         )}
@@ -244,7 +242,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   setIsContributing(false);
                 }}
               >
-                <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
+                <X className="h-5 w-5" />
               </button>
             </div>
 
@@ -334,7 +332,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 setIsContributing(false);
               }}
             >
-              <img alt="Close" className="h-5 w-5" src={CloseIcon.src} />
+              <X className="h-5 w-5" />
             </button>
             <div className="flex h-full flex-col items-center justify-center">
               <Ban className="h-16 w-16 text-red-500" />

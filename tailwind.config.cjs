@@ -1,8 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
-      './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}',
-      './editor/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}'
+    './src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}',
+    './editor/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue,svg}',
   ],
   future: {
     hoverOnlyWhenSupported: true,
@@ -21,11 +21,11 @@ module.exports = {
         'fade-slide-up': {
           '0%': {
             opacity: '0',
-            transform: 'translateY(20px)',
+            transform: 'translateX(var(--tw-translate-x, 0)) translateY(20px)',
           },
           '100%': {
             opacity: '1',
-            transform: 'translateY(0)',
+            transform: 'translateX(var(--tw-translate-x, 0)) translateY(0)',
           },
         },
         'fade-in': {

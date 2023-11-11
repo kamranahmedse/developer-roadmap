@@ -12,11 +12,12 @@ import {
   type ResourceType,
   updateResourceProgress,
 } from '../../lib/resource-progress';
-import CloseIcon from '../../icons/close.svg';
 import { useToast } from '../../hooks/use-toast';
 import { useAuth } from '../../hooks/use-auth';
 import { pageProgressMessage } from '../../stores/page';
 import { MemberProgressModalHeader } from './MemberProgressModalHeader';
+import { replaceChildren } from '../../lib/dom.ts';
+import { XIcon } from 'lucide-react';
 
 export type ProgressMapProps = {
   member: TeamMember;
@@ -67,12 +68,12 @@ export function MemberProgressModal(props: ProgressMapProps) {
     teamId: string,
     memberId: string,
     resourceType: string,
-    resourceId: string
+    resourceId: string,
   ) {
     const { error, response } = await httpGet<MemberProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`
+      }/v1-get-member-resource-progress/${teamId}/${memberId}?resourceType=${resourceType}&resourceId=${resourceId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to get member progress');
@@ -91,7 +92,8 @@ export function MemberProgressModal(props: ProgressMapProps) {
       fontURL: '/fonts/balsamiq.woff2',
     });
 
-    containerEl.current?.replaceChildren(svg);
+    replaceChildren(containerEl.current!, svg);
+    // containerEl.current?.replaceChildren(svg);
   }
 
   useKeydown('Escape', () => {
@@ -158,14 +160,14 @@ export function MemberProgressModal(props: ProgressMapProps) {
         resourceType: resourceType as ResourceType,
         topicId,
       },
-      newStatus
+      newStatus,
     )
       .then(() => {
         renderTopicProgress(topicId, newStatus);
         getMemberProgress(teamId, member._id, resourceType, resourceId).then(
           (data) => {
             setMemberProgress(data);
-          }
+          },
         );
       })
       .catch((err) => {
@@ -225,7 +227,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       e.preventDefault();
       updateTopicStatus(
         topicId,
-        !isCurrentStatusLearning ? 'learning' : 'pending'
+        !isCurrentStatusLearning ? 'learning' : 'pending',
       );
       return;
     }
@@ -234,7 +236,7 @@ export function MemberProgressModal(props: ProgressMapProps) {
       e.preventDefault();
       updateTopicStatus(
         topicId,
-        !isCurrentStatusSkipped ? 'skipped' : 'pending'
+        !isCurrentStatusSkipped ? 'skipped' : 'pending',
       );
 
       return;
@@ -296,7 +298,8 @@ export function MemberProgressModal(props: ProgressMapProps) {
             }`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
+            <XIcon className="h-4 w-4" />
+
             <span className="sr-only">Close modal</span>
           </button>
         </div>

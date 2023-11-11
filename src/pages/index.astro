@@ -29,26 +29,30 @@ const videos = await getAllVideos();
 
     <FeaturedItems
       heading='Role based Roadmaps'
-      featuredItems={roleRoadmaps.map((roadmapItem) => ({
-        text: roadmapItem.frontmatter.briefTitle,
-        url: `/${roadmapItem.id}`,
-        isNew: roadmapItem.frontmatter.isNew,
-        isUpcoming: roadmapItem.frontmatter.isUpcoming,
-      }))}
+      featuredItems={roleRoadmaps
+        .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+        .map((roadmapItem) => ({
+          text: roadmapItem.frontmatter.briefTitle,
+          url: `/${roadmapItem.id}`,
+          isNew: roadmapItem.frontmatter.isNew,
+          isUpcoming: roadmapItem.frontmatter.isUpcoming,
+        }))}
       showCreateRoadmap={true}
     />
 
     <FeaturedItems
       heading='Skill based Roadmaps'
-      featuredItems={skillRoadmaps.map((roadmapItem) => ({
-        text:
-          roadmapItem.frontmatter.briefTitle === 'Go'
-            ? 'Go Roadmap'
-            : roadmapItem.frontmatter.briefTitle,
-        url: `/${roadmapItem.id}`,
-        isNew: roadmapItem.frontmatter.isNew,
-        isUpcoming: roadmapItem.frontmatter.isUpcoming,
-      }))}
+      featuredItems={skillRoadmaps
+        .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
+        .map((roadmapItem) => ({
+          text:
+            roadmapItem.frontmatter.briefTitle === 'Go'
+              ? 'Go Roadmap'
+              : roadmapItem.frontmatter.briefTitle,
+          url: `/${roadmapItem.id}`,
+          isNew: roadmapItem.frontmatter.isNew,
+          isUpcoming: roadmapItem.frontmatter.isUpcoming,
+        }))}
       showCreateRoadmap={true}
     />
 

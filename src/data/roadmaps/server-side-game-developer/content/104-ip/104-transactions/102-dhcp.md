@@ -1,0 +1,3 @@
+# DHCP
+
+DHCP, or Dynamic Host Configuration Protocol, is an internet protocol that enables automatic assignment of IP addresses to devices on a network. Its key role in network systems is to eliminate the manual task of assigning IP addresses in a large network. DHCP can be implemented in small, medium, or large networks encompassing hundreds of computers or even more. It involves a DHCP server, which is responsible for allocating IP addresses and controlling the process. This server maintains a pool of IP addresses, which it assigns to devices as they connect to the network. DHCP also handles release and renewal of these IP addresses as devices leave and rejoin the network.

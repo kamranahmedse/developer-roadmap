@@ -6,11 +6,11 @@ import { useKeydown } from '../../hooks/use-keydown';
 import { httpGet } from '../../lib/http';
 import type { ResourceType } from '../../lib/resource-progress';
 import { topicSelectorAll } from '../../lib/resource-progress';
-import CloseIcon from '../../icons/close.svg';
 import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import { ProgressLoadingError } from './ProgressLoadingError';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
+import { X } from 'lucide-react';
 
 export type ProgressMapProps = {
   userId?: string;
@@ -70,12 +70,12 @@ export function UserProgressModal(props: ProgressMapProps) {
   async function getUserProgress(
     userId: string,
     resourceType: string,
-    resourceId: string
+    resourceId: string,
   ): Promise<UserProgressResponse | undefined> {
     const { error, response } = await httpGet<UserProgressResponse>(
       `${
         import.meta.env.PUBLIC_API_URL
-      }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`
+      }/v1-get-user-progress/${userId}?resourceType=${resourceType}&resourceId=${resourceId}`,
     );
 
     if (error || !response) {
@@ -86,7 +86,7 @@ export function UserProgressModal(props: ProgressMapProps) {
   }
 
   async function getRoadmapSVG(
-    jsonUrl: string
+    jsonUrl: string,
   ): Promise<SVGElement | undefined> {
     const { error, response: roadmapJson } = await httpGet(jsonUrl);
     if (error || !roadmapJson) {
@@ -216,7 +216,7 @@ export function UserProgressModal(props: ProgressMapProps) {
             className={`absolute right-2.5 top-3 ml-auto inline-flex items-center rounded-lg bg-gray-100 bg-transparent p-1.5 text-sm text-gray-400 hover:text-gray-900 lg:hidden`}
             onClick={onClose}
           >
-            <img alt={'close'} src={CloseIcon.src} className="h-4 w-4" />
+            <X className="h-4 w-4" />
             <span className="sr-only">Close modal</span>
           </button>
         </div>

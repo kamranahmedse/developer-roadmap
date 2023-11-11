@@ -1,7 +1,7 @@
-import MoreIcon from '../../icons/more-vertical.svg';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Lock, MoreVertical, Shapes, Trash2 } from 'lucide-react';
+import { MoreVerticalIcon } from '../ReactIcons/MoreVerticalIcon.tsx';
 
 type PersonalRoadmapActionDropdownProps = {
   onDelete?: () => void;
@@ -9,7 +9,9 @@ type PersonalRoadmapActionDropdownProps = {
   onUpdateSharing?: () => void;
 };
 
-export function PersonalRoadmapActionDropdown(props: PersonalRoadmapActionDropdownProps) {
+export function PersonalRoadmapActionDropdown(
+  props: PersonalRoadmapActionDropdownProps,
+) {
   const { onDelete, onUpdateSharing, onCustomize } = props;
 
   const menuRef = useRef<HTMLDivElement>(null);
@@ -26,7 +28,7 @@ export function PersonalRoadmapActionDropdown(props: PersonalRoadmapActionDropdo
         onClick={() => setIsOpen(!isOpen)}
         className="hidden items-center opacity-60 transition-opacity hover:opacity-100 disabled:cursor-not-allowed disabled:opacity-30 sm:flex"
       >
-        <img alt="menu" src={MoreIcon.src} className="h-4 w-4" />
+        <MoreVerticalIcon className={'h-4 w-4'} />
       </button>
 
       <button
