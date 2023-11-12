@@ -96,7 +96,7 @@ export async function getResourceProgress(
 
   const userId = getUser()?.id;
   const progressKey = `${resourceType}-${resourceId}-${userId}-progress`;
-  const isFavoriteKey = `${resourceType}-${resourceId}-${userId}-favorite`;
+  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
 
   const rawIsFavorite = localStorage.getItem(isFavoriteKey);
   const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
