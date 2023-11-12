@@ -1,6 +1,6 @@
 ---
-import BaseLayout from '../../../layouts/BaseLayout.astro';
-import { BestPracticeTopicFileType,getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
+import { getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
+import type { BestPracticeTopicFileType } from '../../../lib/best-practice-topic';
 
 export async function getStaticPaths() {
   const topicPathMapping = await getAllBestPracticeTopicFiles();
@@ -20,21 +20,7 @@ export async function getStaticPaths() {
   });
 }
 
-const { topicId } = Astro.params;
-const { file, bestPracticeId, bestPractice, heading } = Astro.props as BestPracticeTopicFileType;
+const { file } = Astro.props as BestPracticeTopicFileType;
 ---
 
-<BaseLayout
-  title={`${heading} - roadmap.sh`}
-  description={`Free resources to learn ${heading} in ${bestPractice.briefTitle}. Everything you need to know about ${heading} and how it realtes to ${bestPractice.briefTitle}.`}
-  noIndex={true}
-  permalink={`/best-practices/${bestPracticeId}/${topicId}`}
->
-  <div class='bg-gray-50'>
-    <div class='container py-16 prose prose-p:mt-0 prose-h1:mb-4 prose-h2:mb-3 prose-h2:mt-0'>
-      <main id='main-content'>
-        <file.Content />
-      </main>
-    </div>
-  </div>
-</BaseLayout>
+<file.Content />
