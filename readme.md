@@ -53,6 +53,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Android Roadmap](https://roadmap.sh/android)
 - [Flutter Roadmap](https://roadmap.sh/flutter)
 - [Go Roadmap](https://roadmap.sh/golang)
+- [Rust Roadmap](https://roadmap.sh/rust)
 - [Java Roadmap](https://roadmap.sh/java)
 - [Spring Boot Roadmap](https://roadmap.sh/spring-boot)
 - [Design System Roadmap](https://roadmap.sh/design-system)
