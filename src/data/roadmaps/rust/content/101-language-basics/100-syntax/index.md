@@ -1,1 +1,3 @@
-# Syntax
+# Syntax and Semantics
+
+Rust's syntax aims for readability and avoids visual clutter. It places a great deal of importance on forward compatibility, even when it occasionally hinders feature additions. Most Rust syntax is based on the same basic principles. Understanding a handful of concepts allows a broad understanding of the structure of most Rust programs. Some of these concepts include item declarations and pattern matching. In Rust, you typically declare an item once and then refer to it by its name. Pattern matching is a fundamental and powerful part of Rust’s syntax, allowing you to branch your code based on the structure of data, not just its value or type.

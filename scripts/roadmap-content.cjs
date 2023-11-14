@@ -59,9 +59,9 @@ function writeTopicContent(currTopicUrl) {
 
   const roadmapTitle = roadmapId.replace(/-/g, ' ');
 
-  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief paragraph for that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output.`;
+  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief paragraph for that. Your output should be strictly markdown. Do not include anything other than the description in your output. I already know the benefits of each so do not add benefits in the output.`;
   if (!childTopic) {
-    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief paragraph for that. Content should be in markdown. I already know the benefits of each so do not add benefits in the output.`;
+    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief paragraph for that. Your output should be strictly markdown. Do not include anything other than the description in your output. I already know the benefits of each so do not add benefits in the output.`;
   }
 
   console.log(`Generating '${childTopic || parentTopic}'...`);
