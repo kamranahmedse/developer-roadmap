@@ -27,8 +27,13 @@ export async function getStaticPaths() {
 export const partial = true;
 
 const { topicId } = Astro.params;
-const { file, roadmapId, roadmap, heading } =
+const { file, url, roadmapId, roadmap, heading } =
   Astro.props as RoadmapTopicFileType;
+
+const fileWithoutBasePath = file.file?.replace(/.+?\/src\/data/, '/src/data');
+const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
 ---
+
+<div data-github-url={gitHubUrl}></div>
 
 <file.Content />

@@ -45,6 +45,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const { canSubmitContribution } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
+  const [contributionUrl, setContributionUrl] = useState('');
   const [isActive, setIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [isContributing, setIsContributing] = useState(false);
@@ -160,8 +161,13 @@ export function TopicDetail(props: TopicDetailProps) {
             topicHtml,
             'text/html',
           );
-          const links = topicDom.querySelectorAll('a');
 
+          const links = topicDom.querySelectorAll('a');
+          const contributionUrl =
+            topicDom.querySelector('[data-github-url]')?.dataset?.githubUrl ||
+            '';
+
+          setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
@@ -190,8 +196,6 @@ export function TopicDetail(props: TopicDetailProps) {
   }
 
   const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
-  const dataDir = resourceType === 'roadmap' ? 'roadmaps' : 'best-practices';
-  const githubBaseUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/${dataDir}/${resourceId}/content`;
 
   return (
     <div className={'relative z-50'}>
@@ -281,7 +285,7 @@ export function TopicDetail(props: TopicDetailProps) {
             )}
 
             {/* Contribution */}
-            {canSubmitContribution && !hasEnoughLinks && (
+            {canSubmitContribution && !hasEnoughLinks && contributionUrl && (
               <div className="mt-8 flex-1 border-t">
                 <p className="mb-2 mt-2 text-sm leading-relaxed text-gray-400">
                   Help us improve this introduction and submit a link to a good
@@ -289,7 +293,7 @@ export function TopicDetail(props: TopicDetailProps) {
                   understand this topic better.
                 </p>
                 <a
-                  href={githubBaseUrl}
+                  href={contributionUrl}
                   target={'_blank'}
                   className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                 >
