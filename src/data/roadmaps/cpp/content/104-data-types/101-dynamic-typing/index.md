@@ -58,3 +58,4 @@ int main() {
 ```
 
 Keep in mind that both `void*` pointers and `std::any` have performance implications due to the additional type checking and casting that take place during runtime. They should be used carefully and only when absolutely necessary.
+- [Dynamic C++](https://accu.org/journals/overload/21/115/fabijanic_1855/#:~:text=Dynamic%20means%20they%20are%20attached,is%20a%20statically%20typed%20language.&text=This%20classification%20has%20to%20do%20with%20'loopholes'%20the%20programming%20language,system%20to%20be%20'subverted'.)
