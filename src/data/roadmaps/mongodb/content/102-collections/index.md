@@ -20,6 +20,7 @@ To create a collection in MongoDB, you can choose from two methods:
 - **Explicit Creation**: Use the `db.createCollection(name, options)` method to create a collection with specific options:
   ```javascript
   db.createCollection('users', { capped: true, size: 100000, max: 5000 });
+  **capped**: boolean. If true, enables a capped collection. Capped collection is a fixed size collection that automatically overwrites its oldest entries when it reached its maximum size. If you specify true, you need to specify size parameter also.
   ```
 
 ## Managing Collections
