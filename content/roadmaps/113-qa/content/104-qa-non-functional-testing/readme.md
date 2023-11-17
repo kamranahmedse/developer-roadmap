@@ -1,1 +1,0 @@
-# Qa non functional testing

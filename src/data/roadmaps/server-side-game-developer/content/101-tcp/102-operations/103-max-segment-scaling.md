@@ -1,0 +1,3 @@
+# Max Segment Scaling
+
+`Max Segment Scaling (MSS)` is a TCP feature that defines the maximum amount of data that can be received in a single TCP segment. It is specified during the TCP connection establishment phase. The MSS is calculated as the data link layer Maximum Transmission Unit (MTU) minus the size of the TCP and IP headers. The mechanism helps to avoid fragmentation at the IP layer, ensuring the data packets sent are optimal for the network path taken, preventing potential transmission inefficiencies or packet loss issues.

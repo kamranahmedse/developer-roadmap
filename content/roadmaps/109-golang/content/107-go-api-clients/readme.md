@@ -1,1 +1,0 @@
-# Go api clients

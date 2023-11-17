@@ -1,0 +1,41 @@
+name: App Deployment
+on:
+  push:
+    branches: [ master ]
+env:
+  PUBLIC_API_URL: "https://api.roadmap.sh"
+  PUBLIC_EDITOR_APP_URL: "https://draw.roadmap.sh"
+  PUBLIC_AVATAR_BASE_URL: "https://dodrc8eu8m09s.cloudfront.net/avatars"
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  CI: true
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: false
+    - uses: actions/setup-node@v1
+      with:
+        node-version: 18
+    - name: Prepare Draw Repository
+      run: |
+        git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
+    - uses: pnpm/action-setup@v2.2.2
+      with:
+        version: 7.13.4
+    - name: Setup Environment
+      run: |
+        pnpm install
+    - name: Generate meta and build
+      run: |
+        npm run generate-renderer
+        npm run build
+        touch ./dist/.nojekyll
+        echo 'roadmap.sh' > ./dist/CNAME
+    - name: Deploy to GH Pages
+      run: |
+        git config user.email "kamranahmed.se@gmail.com"
+        git config user.name "Kamran Ahmed"
+        git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
+        npm run deploy

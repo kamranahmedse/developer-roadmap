@@ -1,0 +1,3 @@
+# Congestion Control
+
+`Congestion Control` is a critical aspect of any network, particularly in server-side game development where real-time data transfer is a must. It refers to techniques and mechanisms that can prevent too much data from filling the network. This excessive data, also known as network congestion, can lead to packet loss, delay in data transfer, and ultimately a poor gaming experience. Congestion control algorithms, such as TCP congestion control algorithms, are implemented to avoid such situations. They adjust the data packet transmission rate based on the perceived network congestion, reducing the rate when congestion is detected and increasing it when the network is less congested.

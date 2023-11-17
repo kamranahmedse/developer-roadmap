@@ -1,1 +1,0 @@
-# Swas pwas jamstack

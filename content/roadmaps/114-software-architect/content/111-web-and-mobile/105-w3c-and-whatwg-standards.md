@@ -1,1 +1,0 @@
-# W3c and whatwg standards

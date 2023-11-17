@@ -1,1 +1,0 @@
-# Cqrs eventual consistency

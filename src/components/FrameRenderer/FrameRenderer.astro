@@ -1,0 +1,33 @@
+---
+import Loader from '../Loader.astro';
+import './FrameRenderer.css';
+import { ProgressNudge } from "./ProgressNudge";
+
+export interface Props {
+  resourceType: 'roadmap' | 'best-practice';
+  resourceId: string;
+  dimensions?: {
+    width: number;
+    height: number;
+  };
+}
+
+const { resourceId, resourceType, dimensions = null } = Astro.props;
+---
+
+<div
+  id='resource-svg-wrap'
+  style={dimensions
+    ? `--aspect-ratio:${dimensions.width}/${dimensions.height}`
+    : null}
+  data-resource-type={resourceType}
+  data-resource-id={resourceId}
+>
+  <div id='resource-loader'>
+    <Loader />
+  </div>
+</div>
+
+<ProgressNudge resourceId={resourceId} resourceType={resourceType} client:only="react" />
+
+<script src='./renderer.ts'></script>

@@ -1,0 +1,15 @@
+---
+import { TeamSidebar } from '../../components/TeamSidebar';
+import { UpdateTeamForm } from '../../components/TeamSettings/UpdateTeamForm';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Team Settings'
+  noIndex={true}
+  initialLoadingMessage='Loading Settings'
+>
+  <TeamSidebar activePageId='settings' client:load>
+    <UpdateTeamForm client:load />
+  </TeamSidebar>
+</AccountLayout>

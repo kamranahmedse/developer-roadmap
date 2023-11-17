@@ -1,1 +1,0 @@
-# Secrets management

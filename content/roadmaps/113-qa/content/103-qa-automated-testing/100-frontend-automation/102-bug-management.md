@@ -1,1 +1,0 @@
-# Bug management

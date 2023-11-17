@@ -1,0 +1,57 @@
+---
+import AstroIcon from './AstroIcon.astro';
+import Icon from './AstroIcon.astro';
+import { RoadmapTitleQuestion } from './RoadmapTitleQuestion.tsx';
+import ResourceProgressStats from './ResourceProgressStats.astro';
+
+export interface Props {
+  roadmapId: string;
+  tnsBannerLink?: string;
+  titleQuestion?: string;
+  titleAnswer?: string;
+}
+
+const {
+  roadmapId,
+  titleQuestion = '',
+  titleAnswer = '',
+  tnsBannerLink,
+} = Astro.props;
+const hasTitleQuestion = titleQuestion && titleAnswer;
+const hasTnsBanner = !!tnsBannerLink;
+---
+
+<div
+  class:list={[
+    'mt-4 sm:mt-7 border-0 sm:border rounded-md mb-0 bg-white',
+    ...(hasTnsBanner
+      ? [
+          {
+            'sm:-mb-[110px]': hasTitleQuestion,
+            'sm:-mb-[81px]': !hasTitleQuestion,
+          },
+        ]
+      : [
+          {
+            'sm:-mb-[88px]': hasTitleQuestion,
+            'sm:-mb-[65px]': !hasTitleQuestion,
+          },
+        ]),
+  ]}
+>
+  <ResourceProgressStats
+    resourceId={roadmapId}
+    resourceType='roadmap'
+    hasSecondaryBanner={hasTitleQuestion}
+  />
+
+  {
+    hasTitleQuestion && (
+      <RoadmapTitleQuestion
+        client:load
+        question={titleQuestion}
+        answer={titleAnswer}
+      />
+    )
+  }
+</div>

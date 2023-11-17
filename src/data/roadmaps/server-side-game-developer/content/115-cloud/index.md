@@ -1,0 +1,3 @@
+# Cloud
+
+The **cloud** refers to servers that are accessed over the Internet, and the software and databases that run on those servers. By using cloud technology, data can be accessed from anywhere via the Internet, rather than from a local server or a personal computer. Cloud services are typically provided by different companies, such as Google, Amazon, and Microsoft. There are three main types of cloud computing: Infrastructure as a Service (IaaS), Platform as a Service (PaaS) and Software as a Service (SaaS). Examples of the cloud in gaming include multiplayer online games, game streaming and digital distribution platforms. The cloud is also used in game development for testing, development, and distribution of games.

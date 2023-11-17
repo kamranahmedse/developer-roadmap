@@ -1,0 +1,51 @@
+---
+import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
+import FeaturedItem, { type FeaturedItemType } from './FeaturedItem.astro';
+
+export interface Props {
+  featuredItems: FeaturedItemType[];
+  heading: string;
+  showCreateRoadmap?: boolean;
+  allowBookmark?: boolean;
+}
+
+const {
+  featuredItems,
+  heading,
+  showCreateRoadmap,
+  allowBookmark = true,
+} = Astro.props;
+---
+
+<div class='relative border-b border-b-[#1e293c] py-10 sm:py-14'>
+  <div class='container'>
+    <h2
+      class='text-md font-regular absolute -top-[17px] flex rounded-lg border border-[#1e293c] bg-slate-900 px-3 py-1 text-slate-400 sm:left-1/2 sm:-translate-x-1/2'
+    >
+      {heading}
+    </h2>
+
+    <ul class='grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3'>
+      {
+        featuredItems.map((featuredItem) => (
+          <li>
+            <FeaturedItem
+              allowBookmark={allowBookmark}
+              text={featuredItem.text}
+              url={featuredItem.url}
+              isNew={featuredItem.isNew}
+              isUpcoming={featuredItem.isUpcoming}
+            />
+          </li>
+        ))
+      }
+      {
+        showCreateRoadmap && (
+          <li>
+            <CreateRoadmapButton client:load className='min-h-[54px]' />
+          </li>
+        )
+      }
+    </ul>
+  </div>
+</div>

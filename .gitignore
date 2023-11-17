@@ -1,36 +1,33 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
-out
+.idea
+.temp
+
+# build output
+dist/
+.output/
 
 # dependencies
-/node_modules
-/.pnp
-.pnp.js
+node_modules/
 
-# testing
-/coverage
+scripts/developer-roadmap
 
-# next.js
-/.next/
-/out/
-
-# production
-/build
-
-# misc
-.idea
-.DS_Store
-*.pem
-
-# debug
+# logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 
-# local env files
-.env.local
-.env.development.local
-.env.test.local
-.env.production.local
 
-# vercel
-.vercel
+# environment variables
+.env
+.env.production
+
+# macOS-specific files
+.DS_Store
+/test-results/
+/playwright-report/
+/playwright/.cache/
+tests-examples
+*.csv
+
+/editor/*
+!/editor/readonly-editor.tsx

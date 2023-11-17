@@ -1,0 +1,7 @@
+# RPC / REST
+
+RPC (Remote Procedure Call) and REST (Representational State Transfer) are two different approaches to client-server communication. RPC is a procedure-oriented service, where the client sends a request to the server invoking a specific procedure along with the parameters it needs to execute. The server-side program then processes these inputs and returns the result back to the client. On the other hand, REST is a resource-oriented architecture, leveraging standard HTTP methods like GET, POST, PUT, DELETE to perform operations. In REST, every single information or service is considered as a "resource".
+
+In the context of game development, both RPC and REST can be used depending on the specific needs of the game and the underlying architecture that supports it. Both of them offer unique characteristics that make them suitable for different aspects or modules inside a game like character control, game state management, real-time networking, etc. While RPC might be more suited for real-time, fast communication, REST can be leveraged for independent, scalable, and stateless nature of its design. 
+
+In sum, RPC and REST terms come up frequently in server-side game development due to their importance in determining how your game will communicate between its different parts, especially in multiplayer environments. It is crucial to make the appropriate choice based on your game's requirements and desired user experience.

@@ -1,0 +1,37 @@
+---
+import GridItem from '../../components/GridItem.astro';
+import SimplePageHeader from '../../components/SimplePageHeader.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getAllQuestionGroups } from '../../lib/question-group';
+
+const questionGroups = await getAllQuestionGroups();
+---
+
+<BaseLayout
+  title='Questions'
+  description={'Step by step guides and paths to learn different tools or technologies'}
+  permalink={'/roadmaps'}
+>
+  <SimplePageHeader
+    title='Questions'
+    description='Quizzes to help you test and improve your knowledge and skill up'
+    showYouTubeAlert={false}
+  />
+
+  <div class='flex bg-gray-100 pb-14 pt-4 sm:pb-16 sm:pt-8'>
+    <div class='container'>
+      <div class='grid grid-cols-1 gap-1 sm:grid-cols-2 sm:gap-3'>
+        {
+          questionGroups.map((questionGroup) => (
+            <GridItem
+              url={`/questions/${questionGroup.id}`}
+              isNew={questionGroup.frontmatter.isNew}
+              title={questionGroup.frontmatter.title}
+              description={`${questionGroup.questions.length} Questions &middot; ${questionGroup.allTopics.length} topics`}
+            />
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</BaseLayout>

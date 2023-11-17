@@ -1,0 +1,145 @@
+svg text tspan {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+code {
+  background: #1e1e3f;
+  color: #9efeff;
+  padding: 3px 5px;
+  font-size: 14px;
+  border-radius: 3px;
+}
+
+svg .clickable-group {
+  cursor: pointer;
+}
+
+svg .clickable-group:hover > [fill='rgb(65,53,214)'] {
+  fill: #232381;
+  stroke: #232381;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,0)'] {
+  fill: #d6d700;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,229,153)'] {
+  fill: #f3c950;
+}
+svg .clickable-group:hover > [stroke='rgb(255,229,153)'] {
+  stroke: #f3c950;
+}
+
+svg .clickable-group:hover > [fill='rgb(153,153,153)'] {
+  fill: #646464;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,255)'] {
+  fill: #d7d7d7;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,255,221)'] {
+  fill: #e5e5be;
+}
+
+svg .clickable-group:hover > [fill='rgb(255,217,102)'] {
+  fill: #d9b443;
+}
+
+svg .done rect {
+  fill: #cbcbcb !important;
+}
+
+svg .done rect[stroke="rgb(255,229,153)"] {
+  stroke: #cbcbcb !important;
+}
+
+svg .done text,
+svg .skipped text {
+  text-decoration: line-through;
+}
+
+svg .learning rect {
+  fill: #dad1fd !important;
+}
+
+svg .skipped rect {
+  fill: #496b69 !important;
+}
+
+svg .learning rect[fill='rgb(51,51,51)'] + text,
+svg .done rect[fill='rgb(51,51,51)'] + text {
+  fill: black !important;
+}
+
+svg .learning text {
+  text-decoration: underline;
+}
+
+svg .clickable-group.done[data-group-id^='check:'] rect {
+  fill: gray !important;
+  stroke: gray !important;
+}
+
+.clickable-group rect {
+  user-select: none;
+}
+
+svg .removed rect {
+  fill: #fdfdfd !important;
+  stroke: #c4c4c4 !important;
+}
+
+svg .removed text {
+  fill: #9c9c9c !important;
+}
+
+svg .removed g,
+svg .removed circle,
+svg .removed path {
+  opacity: 0;
+}
+
+/************************************
+    Aspect ratio implementation
+  *************************************/
+[style*='--aspect-ratio'] > :first-child {
+  width: 100%;
+}
+
+[style*='--aspect-ratio'] > img {
+  height: auto;
+}
+
+@supports (--custom: property) {
+  [style*='--aspect-ratio'] {
+    position: relative;
+  }
+
+  [style*='--aspect-ratio']::before {
+    content: '';
+    display: block;
+    /*noinspection CssUnresolvedCustomProperty*/
+    padding-bottom: calc(100% / (var(--aspect-ratio)));
+  }
+
+  [style*='--aspect-ratio'] > :first-child {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+  }
+}
+
+#customized-roadmap #resource-svg-wrap g:not([class]),
+#customized-roadmap #resource-svg-wrap circle,
+#customized-roadmap #resource-svg-wrap path[stroke='#fff'],
+#customized-roadmap #resource-svg-wrap g[data-group-id$='-note'] {
+  display: none;
+}
+
+/*.clickable-group:hover {*/
+/*  cursor: url(/images/cursors/add.svg) 5 5, move;*/
+/*}*/

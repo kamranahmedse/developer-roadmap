@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .container {
+    @apply mx-auto !max-w-[830px] px-4;
+  }
+
+  .badge {
+    @apply rounded-sm bg-gray-400 px-1.5 py-0.5 text-xs font-medium uppercase text-white
+  }
+
+  /* Chrome, Safari and Opera */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+}
+
+svg {
+  user-select: none;
+}
+
+blockquote p:before {
+  display: none;
+}
+
+.prose ul li > code,
+.prose ol li > code,
+p code,
+a > code,
+strong > code,
+em > code,
+h1 > code,
+h2 > code,
+h3 > code {
+  background: #ebebeb !important;
+  color: currentColor !important;
+  font-size: 14px;
+  font-weight: normal !important;
+}
+
+.prose ul li > code:before,
+p > code:before,
+.prose ul li > code:after,
+p > code:after,
+a > code:after,
+a > code:before {
+  content: '' !important;
+}
+
+.sponsor-footer {
+  text-align: center;
+  font-weight: 600;
+  font-size: 9px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  display: block;
+  background: repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 5px,
+      hsla(0, 0%, 0%, 0.025) 5px,
+      hsla(0, 0%, 0%, 0.025) 10px
+    )
+    hsla(203, 11%, 95%, 0.4);
+}
+
+.striped-loader {
+  background-image: repeating-linear-gradient(
+          -45deg,
+          transparent,
+          transparent 5px,
+          hsla(0, 0%, 0%, 0.025) 5px,
+          hsla(0, 0%, 0%, 0.025) 10px
+  );
+  background-size: 200% 200%;
+  animation: barberpole 15s linear infinite;
+}
+
+@keyframes barberpole {
+  100% {
+    background-position: 100% 100%;
+  }
+}

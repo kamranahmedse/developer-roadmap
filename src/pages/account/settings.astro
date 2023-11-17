@@ -1,0 +1,19 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import UpdatePasswordForm from '../../components/UpdatePassword/UpdatePasswordForm';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
+---
+
+<AccountLayout
+  title='Settings'
+  description=''
+  noIndex={true}
+  initialLoadingMessage={'Loading settings'}
+>
+  <AccountSidebar activePageId='settings' activePageTitle='Settings'>
+    <UpdatePasswordForm client:only="react" />
+    <hr class='my-8' />
+    <DeleteAccount />
+  </AccountSidebar>
+</AccountLayout>

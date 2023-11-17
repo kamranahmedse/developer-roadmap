@@ -1,0 +1,3 @@
+# Docker
+
+"Docker" is an open-source platform that allows developers to automate the deployment, scaling, and management of applications. It uses containerization technologies to wrap up an application with its runtime environment into a container, which can then be run on almost any operating system. Docker containers are lightweight and fast because they do not need the extra load of a hypervisor, but run directly within the host machine's kernel. Additionally, Docker ensures that the application runs seamlessly in any environment by bundling its own software, libraries and system tools. Docker really simplifies the process of managing and deploying services in a distributed environment and breaking down tasks into separate services.

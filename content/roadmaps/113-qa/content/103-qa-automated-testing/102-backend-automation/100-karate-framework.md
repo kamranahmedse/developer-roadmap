@@ -1,1 +1,0 @@
-# Karate framework

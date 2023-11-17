@@ -1,1 +1,0 @@
-# Reactive functional programming

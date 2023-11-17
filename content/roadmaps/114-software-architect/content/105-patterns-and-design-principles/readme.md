@@ -1,1 +1,0 @@
-# Patterns and design principles
