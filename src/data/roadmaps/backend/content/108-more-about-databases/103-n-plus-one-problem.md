@@ -5,3 +5,4 @@ The N+1 query problem happens when your code executes N additional query stateme
 Visit the following resources to learn more:
 
 - [In Detail Explanation of N+1 Problem](https://medium.com/doctolib/understanding-and-fixing-n-1-query-30623109fe89)
+- [N+1 Problem in REST API](https://restfulapi.net/rest-api-n-1-problem/)
