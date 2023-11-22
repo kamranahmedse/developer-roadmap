@@ -6317,7 +6317,7 @@
           "x": "449",
           "y": "1399",
           "properties": {
-            "controlName": "102-qa-automated-testing:frontend-automation:bug-management"
+            "controlName": "102-qa-automated-testing:frontend-automation:bug-magnet"
           },
           "children": {
             "controls": {
