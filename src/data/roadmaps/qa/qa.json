@@ -3373,7 +3373,7 @@
           "x": "983",
           "y": "455",
           "properties": {
-            "controlName": "101-qa-basics:manage-your-testing:test-rail"
+            "controlName": "101-qa-basics:manage-your-testing:testrail"
           },
           "children": {
             "controls": {
@@ -7962,7 +7962,7 @@
           "x": "327",
           "y": "1791",
           "properties": {
-            "controlName": "102-qa-reporting:test-rail"
+            "controlName": "102-qa-reporting:testrail"
           },
           "children": {
             "controls": {
