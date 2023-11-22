@@ -29,6 +29,7 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 
 type TopicDetailProps = {
+  isEmbed?: boolean;
   canSubmitContribution: boolean;
 };
 
@@ -42,7 +43,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
 };
 
 export function TopicDetail(props: TopicDetailProps) {
-  const { canSubmitContribution } = props;
+  const { canSubmitContribution, isEmbed = false } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
   const [contributionUrl, setContributionUrl] = useState('');
@@ -163,9 +164,9 @@ export function TopicDetail(props: TopicDetailProps) {
           );
 
           const links = topicDom.querySelectorAll('a');
-          const contributionUrl =
-            topicDom.querySelector('[data-github-url]')?.dataset?.githubUrl ||
-            '';
+          const urlElem: HTMLElement =
+            topicDom.querySelector('[data-github-url]')!;
+          const contributionUrl = urlElem?.dataset?.githubUrl || '';
 
           setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
@@ -218,14 +219,16 @@ export function TopicDetail(props: TopicDetailProps) {
           <>
             {/* Actions for the topic */}
             <div className="mb-2">
-              <TopicProgressButton
-                topicId={topicId}
-                resourceId={resourceId}
-                resourceType={resourceType}
-                onClose={() => {
-                  setIsActive(false);
-                }}
-              />
+              {!isEmbed && (
+                <TopicProgressButton
+                  topicId={topicId}
+                  resourceId={resourceId}
+                  resourceType={resourceType}
+                  onClose={() => {
+                    setIsActive(false);
+                  }}
+                />
+              )}
 
               <button
                 type="button"
