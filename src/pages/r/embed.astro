@@ -5,6 +5,7 @@ import { SkeletonRoadmapHeader } from '../../components/CustomRoadmap/SkeletonRo
 import Loader from '../../components/Loader.astro';
 import ProgressHelpPopup from '../../components/ProgressHelpPopup.astro';
 import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
+import Icon from "../../components/AstroIcon.astro";
 ---
 
 <SkeletonLayout title='Roadmaps' noIndex={true}>
@@ -19,9 +20,10 @@ import SkeletonLayout from '../../layouts/SkeletonLayout.astro';
     <div class='fixed bottom-5 right-4'>
       <a
         target='_blank'
-        class='rounded-md bg-gray-600 p-2 text-white hover:bg-black'
+        class='rounded-md bg-gray-600 py-2 pr-2 pl-1.5 text-white hover:bg-black flex items-center gap-0.5'
         href='https://roadmap.sh'
       >
+        <Icon icon='logo' class="h-5" />
         roadmap.sh
       </a>
     </div>
