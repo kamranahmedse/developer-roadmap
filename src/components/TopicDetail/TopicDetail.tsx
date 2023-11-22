@@ -178,7 +178,7 @@ export function TopicDetail() {
                 {error}
               </h1>
               <p class="text-md mb-2 md:text-xl">
-                Sorry, we are facing some techinal issue. Come back later.
+                Sorry, we are currently experiencing a technical issue. Please, try again later.
               </p>
             </div>
           </div>
