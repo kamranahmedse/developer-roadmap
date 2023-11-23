@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 - [Official Docs for Getting Started](https://nextjs.org/docs/getting-started)
 - [Mastering Next.js](https://masteringnextjs.com/)
 - [The Next.js Handbook — freeCodeCamp](https://www.freecodecamp.org/news/the-next-js-handbook/)
-- [Next.js for Beginners - freeCodeCamp](https://youtu.be/1WmNXEVia8I)
+- [Next.js for Beginners - freeCodeCamp](https://www.youtube.com/watch?v=KjY94sAKLlw)
