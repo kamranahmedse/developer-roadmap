@@ -2,7 +2,7 @@
 jsonUrl: "/jsons/roadmaps/mathforml.json"
 pdfUrl: "/pdfs/roadmaps/mathforml.pdf"
 order: 17
-briefTitle: "Mathematics for Machine Learning"
+briefTitle: "Math for Machine Learning"
 briefDescription: "Step by step guide to becoming a ml developer in 2023"
 title: "Machine Learning Developer"
 description: "Step by step guide to becoming a modern ml developer in 2023"
