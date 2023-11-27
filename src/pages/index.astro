@@ -3,14 +3,11 @@ import FeaturedItems from '../components/FeaturedItems/FeaturedItems.astro';
 import BaseLayout from '../layouts/BaseLayout.astro';
 import { getRoadmapsByTag } from '../lib/roadmap';
 
-
-
 const roleRoadmaps = await getRoadmapsByTag('role-roadmap');
 
 // Add Swami Vivekananda quote and image
-const swamiImageURL = '../../public/images/Vivekanandha-BW.png';
+const swamiImageURL = 'https://firebasestorage.googleapis.com/v0/b/roadmaps-50aa0.appspot.com/o/Vivekanandha-BW.png?alt=media&token=be78fef5-85b6-4421-9e40-612f96f5fd47';
 ---
-
 
 <BaseLayout
   title='High Performance Roadmaps'
