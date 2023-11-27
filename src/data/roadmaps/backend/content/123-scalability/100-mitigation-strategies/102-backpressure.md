@@ -12,4 +12,4 @@ Backpressure is an important aspect of cloud design, as it helps to ensure that 
 
 Visit the following resources to learn more:
 
-- [Backpressure - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/backpressure/)
+- [Awesome Architecture: Backpressure](https://awesome-architecture.com/back-pressure/)
