@@ -13,14 +13,14 @@ const { isUpcoming = false, isNew = false, text, url } = Astro.props;
 
 <a
   class:list={[
-    'group border border-slate-800 bg-slate-900 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-slate-400 font-regular text-md hover:border-slate-600 hover:text-slate-100',
+    'group border border-slate-800 bg-Zinc-50 p-2.5 sm:p-3.5 block no-underline rounded-lg relative text-[#DADADA] font-regular text-md hover:border-slate-600 hover:text-white',
     {
       'opacity-50': isUpcoming,
     },
   ]}
   href={url}
 >
-  <span class='text-slate-400'>
+  <span class='text-white-400 hover:text-zinc-50'>
     {text}
   </span>
 

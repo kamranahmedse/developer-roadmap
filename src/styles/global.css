@@ -8,6 +8,19 @@
   }
 }
 
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rouge+Script&display=swap');
+
+
+@font-face{
+  font-family: "dalena";
+  src: url("/fonts/dalena.ttf");
+}
+
+
+
 .prose ul li code, p code {
   background: #1e1e3f !important;
   color: #9efeff !important;
