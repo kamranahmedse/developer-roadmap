@@ -5154,7 +5154,7 @@
           "x": "578",
           "y": "2420",
           "properties": {
-            "controlName": "101-enterprise-software:sap-epr-hana-business-objects"
+            "controlName": "101-enterprise-software:sap-erp-hana-business-objects"
           },
           "children": {
             "controls": {
