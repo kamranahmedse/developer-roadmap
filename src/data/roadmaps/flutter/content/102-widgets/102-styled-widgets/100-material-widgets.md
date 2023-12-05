@@ -2,7 +2,7 @@
 
 Material Widgets are a set of Flutter widgets that implement Material Design, Google's visual language for design. They are designed to provide a consistent look and feel on both Android and iOS devices. Some common Material Widgets include:
 
-- RaisedButton
+- ElevatedButton
 - Scaffold
 - AppBar
 - TextField
