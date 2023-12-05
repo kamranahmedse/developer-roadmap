@@ -1,4 +1,12 @@
-import { Check, Copy, Facebook, Linkedin, Share2, Twitter } from 'lucide-react';
+import {
+  Check,
+  Code,
+  Copy,
+  Facebook,
+  Linkedin,
+  Share2,
+  Twitter,
+} from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click.ts';
 import { useCopyText } from '../hooks/use-copy-text.ts';
@@ -6,12 +14,14 @@ import { cn } from '../lib/classname.ts';
 import { TwitterIcon } from './ReactIcons/TwitterIcon.tsx';
 
 type ShareRoadmapButtonProps = {
+  roadmapId?: string;
   description: string;
   pageUrl: string;
+  allowEmbed?: boolean;
 };
 
 export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
-  const { description, pageUrl } = props;
+  const { description, pageUrl, allowEmbed = false, roadmapId } = props;
 
   const { isCopied, copyText } = useCopyText();
 
@@ -28,12 +38,14 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
     setIsDropdownOpen(false);
   });
 
+  const embedHtml = `<iframe src="https://roadmap.sh/r/embed?id=${roadmapId}" width="100%" height="500px" frameBorder="0"\n></iframe>`;
+
   return (
     <div className="relative" ref={containerRef}>
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         className={cn(
-          'inline-flex items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm',
+          'inline-flex h-full items-center justify-center rounded-md bg-yellow-400 px-3 py-1.5 text-xs font-medium hover:bg-yellow-500 sm:text-sm',
           {
             'bg-yellow-500': isDropdownOpen,
             'bg-green-400': isCopied,
@@ -56,7 +68,7 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
       </button>
 
       {isDropdownOpen && (
-        <div className="absolute left-0 z-50 mt-1 w-44 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5">
+        <div className="absolute left-0 z-[999] mt-1 w-48 rounded-md bg-slate-800 text-sm text-white shadow-lg ring-1 ring-black ring-opacity-5">
           <div className="flex flex-col px-1 py-1">
             <button
               onClick={() => {
@@ -70,6 +82,20 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
               </div>
               Copy Link
             </button>
+            {allowEmbed && roadmapId && (
+              <button
+                onClick={() => {
+                  copyText(embedHtml);
+                  setIsDropdownOpen(false);
+                }}
+                className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
+              >
+                <div className="flex w-[20px] items-center justify-center">
+                  <Code size="15px" className="text-slate-400" />
+                </div>
+                Copy Embed Code
+              </button>
+            )}
             <a
               href={twitterUrl}
               target={'_blank'}
