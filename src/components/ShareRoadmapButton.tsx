@@ -1,6 +1,6 @@
 import {
   Check,
-  Code,
+  Code, Code2,
   Copy,
   Facebook,
   Linkedin,
@@ -12,6 +12,7 @@ import { useOutsideClick } from '../hooks/use-outside-click.ts';
 import { useCopyText } from '../hooks/use-copy-text.ts';
 import { cn } from '../lib/classname.ts';
 import { TwitterIcon } from './ReactIcons/TwitterIcon.tsx';
+import { EmbedRoadmapModal } from './CustomRoadmap/EmbedRoadmapModal.tsx';
 
 type ShareRoadmapButtonProps = {
   roadmapId?: string;
@@ -24,6 +25,8 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
   const { description, pageUrl, allowEmbed = false, roadmapId } = props;
 
   const { isCopied, copyText } = useCopyText();
+
+  const [isEmbedModalOpen, setIsEmbedModalOpen] = useState(false);
 
   const containerRef = useRef<HTMLDivElement>(null);
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -42,6 +45,13 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
 
   return (
     <div className="relative" ref={containerRef}>
+      {isEmbedModalOpen && (
+        <EmbedRoadmapModal
+          onClose={() => {
+            setIsEmbedModalOpen(false);
+          }}
+        />
+      )}
       <button
         onClick={() => setIsDropdownOpen(!isDropdownOpen)}
         className={cn(
@@ -85,15 +95,15 @@ export function ShareRoadmapButton(props: ShareRoadmapButtonProps) {
             {allowEmbed && roadmapId && (
               <button
                 onClick={() => {
-                  copyText(embedHtml);
                   setIsDropdownOpen(false);
+                  setIsEmbedModalOpen(true);
                 }}
                 className="flex w-full items-center gap-2 rounded-sm px-2 py-2 text-sm text-slate-100 hover:bg-slate-700"
               >
                 <div className="flex w-[20px] items-center justify-center">
-                  <Code size="15px" className="text-slate-400" />
+                  <Code2 size="15px" className="text-slate-400" />
                 </div>
-                Copy Embed Code
+                Embed Roadmap
               </button>
             )}
             <a
