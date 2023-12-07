@@ -5,3 +5,4 @@ In short, a database transaction is a sequence of multiple operations performed 
 Visit the following resources to learn more:
 
 - [What are Transactions?](https://fauna.com/blog/database-transaction)
+- [Understand Database Transactions](https://dev.to/hlexnc/understanding-database-transactions-a-developers-guide-149a)
