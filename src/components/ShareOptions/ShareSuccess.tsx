@@ -45,6 +45,8 @@ export function ShareSuccess(props: ShareSuccessProps) {
     },
   ];
 
+  const embedHtml = `<iframe src="${baseUrl}/r/embed?id=${roadmapId}" width="100%" height="500px" frameBorder="0"\n></iframe>`;
+
   return (
     <div className="flex grow flex-col justify-center">
       <div className="mt-5 flex grow flex-col items-center justify-center gap-1.5">
@@ -75,6 +77,23 @@ export function ShareSuccess(props: ShareSuccessProps) {
           You can share the above link with anyone who has access
         </p>
       )}
+
+      <div className="mt-2 border-t pt-2">
+        <p className="text-sm text-gray-400">
+          You can also embed this roadmap on your website.
+        </p>
+        <div className="mt-2">
+          <input
+              onClick={(e) => {
+                e.currentTarget.select();
+                copyText(embedHtml);
+              }}
+              readOnly={true}
+              className="w-full resize-none rounded-md border bg-gray-50 p-2 text-sm"
+              value={embedHtml}
+          />
+        </div>
+      </div>
 
       {visibility === 'public' && (
         <>
