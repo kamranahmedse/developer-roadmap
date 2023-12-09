@@ -1,12 +1,4 @@
-import {
-  Check,
-  Code, Code2,
-  Copy,
-  Facebook,
-  Linkedin,
-  Share2,
-  Twitter,
-} from 'lucide-react';
+import { Check, Code2, Copy, Facebook, Linkedin, Share2 } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../hooks/use-outside-click.ts';
 import { useCopyText } from '../hooks/use-copy-text.ts';
