@@ -5,3 +5,4 @@ The N+1 query problem happens when your code executes N additional query stateme
 Visit the following resources to learn more:
 
 - [In Detail Explanation of N+1 Problem](https://medium.com/doctolib/understanding-and-fixing-n-1-query-30623109fe89)
+- [Decoding the N+1 Query Problem](https://dev.to/hlexnc/decoding-the-n1-query-problem-2iil)
