@@ -45,10 +45,7 @@ const videos = await getAllVideos();
       featuredItems={skillRoadmaps
         .filter((roadmapItem) => !roadmapItem.frontmatter.isHidden)
         .map((roadmapItem) => ({
-          text:
-            roadmapItem.frontmatter.briefTitle === 'Go'
-              ? 'Go Roadmap'
-              : roadmapItem.frontmatter.briefTitle,
+          text: roadmapItem.frontmatter.briefTitle,
           url: `/${roadmapItem.id}`,
           isNew: roadmapItem.frontmatter.isNew,
           isUpcoming: roadmapItem.frontmatter.isUpcoming,
