@@ -21,7 +21,7 @@ import type {
   AllowedLinkTypes,
   RoadmapContentDocument,
 } from '../CustomRoadmap/CustomRoadmap';
-import { markdownToHtml } from '../../lib/markdown';
+import { markdownToHtml, sanitizeMarkdown } from '../../lib/markdown';
 import { cn } from '../../lib/classname';
 import { Ban, FileText, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
@@ -173,10 +173,11 @@ export function TopicDetail(props: TopicDetailProps) {
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
-          topicHtml = markdownToHtml(
-            (response as RoadmapContentDocument)?.description || '',
-            false,
+
+          const sanitizedMarkdown = sanitizeMarkdown(
+            (response as RoadmapContentDocument).description || '',
           );
+          topicHtml = markdownToHtml(sanitizedMarkdown, false);
         }
 
         setIsLoading(false);
