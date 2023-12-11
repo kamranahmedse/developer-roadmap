@@ -96,7 +96,7 @@ app.listen(3000, () => {
 });
 ```
 
-The important piece to note here is the `express-session` middleware registration which automatically handles the session initialization, cooking parsing and session data retrieval, and so on. In our example here, we are passing the following configuration options:
+The important piece to note here is the `express-session` middleware registration which automatically handles the session initialization, cookie parsing and session data retrieval, and so on. In our example here, we are passing the following configuration options:
 
 - `secret`: This is used to sign the session ID cookie. Using a secret that cannot be guessed will reduce the ability to hijack a session.
 - `cookie`: Object containing the configuration for session id cookie.
@@ -176,7 +176,7 @@ Next, we have to implement the functionality to process the login form submissio
 ```javascript
 module.exports = function processLogin(req, res) {
   if (req.body.username !== 'admin' || req.body.password !== 'admin') {
-    return res.send('Invalid username or password);
+    return res.send('Invalid username or password');
   }
 
   req.session.userid = req.body.username;
