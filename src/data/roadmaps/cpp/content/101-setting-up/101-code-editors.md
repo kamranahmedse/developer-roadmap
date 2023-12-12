@@ -10,6 +10,6 @@ Code editors are programs specifically designed for editing, managing and writin
 
 These are just a few examples, and there are many other code editors available, including Atom, Notepad++, and Geany. They all have their features and may suit different developers' needs. Finding the right code editor is often a matter of personal preference and workflow.
 
-To work with C++ in your chosen code editor, you often need to install some additional tools and add-ons, such as compilers, linters, and debugger support. Make sure to follow the instructions provided by the editor's documentation to set up C++ correctly.
+To work with C++ in your chosen code editor, you often need to install some additional tools and add-ons, such as compilers, linters, and debugger support. Make sure to follow the instructions provided in the editor's documentation to set up C++ correctly.
 
 - [Using C++ on Linux in VSCode](https://code.visualstudio.com/docs/cpp/config-linux)
