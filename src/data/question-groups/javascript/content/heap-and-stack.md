@@ -1,4 +1,4 @@
-The Head and Stack in JavaScript Engine are two different data structures that store data in different ways.
+The Heap and Stack in JavaScript Engine are two different data structures that store data in different ways.
 
 ## Stack
 
