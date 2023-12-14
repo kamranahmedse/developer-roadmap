@@ -6,3 +6,4 @@ It works with projects using: Babel, TypeScript, Node, React, Angular, Vue and m
 Visit the following resources to learn more:
 
 - [Jest Website](https://jestjs.io/)
+- [JavaScript Testing with Jest – Crash Course](https://www.youtube.com/watch?v=IPiUDhwnZxA)
