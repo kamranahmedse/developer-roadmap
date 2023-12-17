@@ -20,6 +20,7 @@ export class Renderer {
   resourceType: ResourceType | string;
   jsonUrl: string;
   loaderHTML: string | null;
+  selectedTopic: HTMLElement;
 
   containerId: string;
   loaderId: string;
@@ -29,6 +30,7 @@ export class Renderer {
     this.resourceType = '';
     this.jsonUrl = '';
     this.loaderHTML = null;
+    this.selectedTopic = document.createElement('div');
 
     this.containerId = 'resource-svg-wrap';
     this.loaderId = 'resource-loader';
@@ -232,6 +234,9 @@ export class Renderer {
   handleSvgClick(e: any) {
     const targetGroup = e.target?.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
+
+    this.selectedTopic.setAttribute("fill", "rgb(255,255,0)")
+
     if (!groupId) {
       return;
     }
@@ -286,6 +291,10 @@ export class Renderer {
 
     const isCurrentStatusLearning = targetGroup.classList.contains('learning');
     const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
+
+    const rect = targetGroup.firstElementChild;
+    this.selectedTopic = rect;
+    rect.setAttribute("fill", "rgb(255,155,0)")
 
     if (e.shiftKey) {
       e.preventDefault();
