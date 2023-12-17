@@ -15,12 +15,17 @@ import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
 import { replaceChildren } from '../../lib/dom.ts';
 
+type Topic = {
+  element: HTMLElement,
+  isSubGroup: boolean
+}
+
 export class Renderer {
   resourceId: string;
   resourceType: ResourceType | string;
   jsonUrl: string;
   loaderHTML: string | null;
-  selectedTopic: HTMLElement;
+  selectedTopic: Topic
 
   containerId: string;
   loaderId: string;
@@ -30,7 +35,10 @@ export class Renderer {
     this.resourceType = '';
     this.jsonUrl = '';
     this.loaderHTML = null;
-    this.selectedTopic = document.createElement('div');
+    this.selectedTopic = {
+      element: document.createElement('div'),
+      isSubGroup: false
+    }
 
     this.containerId = 'resource-svg-wrap';
     this.loaderId = 'resource-loader';
@@ -235,7 +243,11 @@ export class Renderer {
     const targetGroup = e.target?.closest('g') || {};
     const groupId = targetGroup.dataset ? targetGroup.dataset.groupId : '';
 
-    this.selectedTopic.setAttribute("fill", "rgb(255,255,0)")
+    if(this.selectedTopic.isSubGroup) {
+      this.selectedTopic.element.setAttribute("fill", "rgb(255,229,153)")
+    } else {
+      this.selectedTopic.element.setAttribute("fill", "rgb(255,255,0)")
+    }
 
     if (!groupId) {
       return;
@@ -293,7 +305,8 @@ export class Renderer {
     const isCurrentStatusSkipped = targetGroup.classList.contains('skipped');
 
     const rect = targetGroup.firstElementChild;
-    this.selectedTopic = rect;
+    this.selectedTopic.element = rect;
+    this.selectedTopic.isSubGroup = targetGroup.getAttribute("data-group-id").includes(":") ? true : false;
     rect.setAttribute("fill", "rgb(255,155,0)")
 
     if (e.shiftKey) {
