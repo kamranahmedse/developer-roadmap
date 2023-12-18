@@ -5,4 +5,4 @@ Taking note of nowadays multicore system single threading is very memory efficie
 
 Visit the following resources to learn more:
 
-- [Single Thread vs Child Process vs Worker Threads vs Clutster in Node.js](https://alvinlal.netlify.app/blog/single-thread-vs-child-process-vs-worker-threads-vs-cluster-in-nodejs)
+- [Single Thread vs Child Process vs Worker Threads vs Cluster in Node.js](https://alvinlal.netlify.app/blog/single-thread-vs-child-process-vs-worker-threads-vs-cluster-in-nodejs)
