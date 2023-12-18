@@ -4,7 +4,8 @@ A Data structure is a format to organize, manage and store data in a way that al
 
 Visit the following resources to learn more:
 
-- [ Data structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure)
+- [Data structures](https://www.freecodecamp.org/news/data-structures-in-javascript-with-examples/#what-is-a-data-structure)
+- [Complete Data Structure & Algorithms in JavaScript](https://youtu.be/5mEwh4MfwB4)
 - [Introduction to the Stack Data Structure](https://youtu.be/4F-BnR2XwqU)
 - [Introduction to the Queue Data Structure](https://youtu.be/GRA_3Ppl2ZI)
 - [Intro to Recursion: Anatomy of a Recursive Solution](https://youtu.be/yBWlPte6FhA)
