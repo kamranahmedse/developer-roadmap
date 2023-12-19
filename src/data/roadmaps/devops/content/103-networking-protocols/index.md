@@ -8,6 +8,7 @@ Here are some of the resources to learn about SSH:
 - [What is SSH?](https://www.ssh.com/academy/ssh/protocol)
 - [SFTP using SSH](https://www.goanywhere.com/blog/how-sftp-works)
 - [OpenSSH Full Guide](https://www.youtube.com/watch?v=ys5zh7kexve)
+- [SSH Config File](https://linuxize.com/post/using-the-ssh-config-file/)
 
 Visit the following to learn about SSL/TLS:
 
