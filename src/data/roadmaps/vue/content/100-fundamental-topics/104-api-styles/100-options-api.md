@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 
 - [TypeScript with Options API](https://vuejs.org/guide/typescript/options-api.html)
 - [Options API Documentation](https://vuejs.org/api/#options-api)
-

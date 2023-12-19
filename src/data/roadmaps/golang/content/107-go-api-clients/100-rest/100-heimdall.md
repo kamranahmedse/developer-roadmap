@@ -1,6 +1,5 @@
 # Heimdall
 
-
 Heimdall is an HTTP client that helps your application make a large number of requests, at scale. With Heimdall, you can:
 
 - Use a hystrix-like circuit breaker to control failing requests

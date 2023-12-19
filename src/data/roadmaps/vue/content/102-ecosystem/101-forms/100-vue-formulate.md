@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Official Website: Vue Formulate](https://vueformulate.com/)
 - [wearebraid/vue-formulate](https://github.com/wearebraid/vue-formulate)
-

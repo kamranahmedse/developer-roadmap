@@ -8,9 +8,8 @@ Building an effective design system is not an individual responsibility, you nee
 - **Performance Experts:** who can ensure your system loads quickly on all devices
 - **Content Strategists:** who can help the team nail the voice and tone of the system
 - **Researchers:** who can help you understand customer needs
-- **Product Managers:**  to ensure the system is aligning to customer needs
+- **Product Managers:** to ensure the system is aligning to customer needs
 - **Leaders:** (VPs and directors) to champion and align the vision throughout the company including up to executive leadership
-
 
 Visit the following resources to learn more:
 

@@ -12,7 +12,7 @@ interface User {
 
 const user: User = {
   name: 'John Doe',
-  age: 30
+  age: 30,
 };
 ```
 

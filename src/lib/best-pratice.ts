@@ -1,5 +1,4 @@
 import type { MarkdownFileType } from './file';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
 
 export interface BestPracticeFrontmatter {
   jsonUrl: string;
@@ -15,7 +14,6 @@ export interface BestPracticeFrontmatter {
     width: number;
     height: number;
   };
-  sponsor?: SponsorType;
   seo: {
     title: string;
     description: string;
@@ -46,9 +44,12 @@ function bestPracticePathToId(filePath: string): string {
  * @returns string[] Array of best practices file IDs
  */
 export async function getBestPracticeIds() {
-  const bestPracticeFiles = await import.meta.glob<BestPracticeFileType>('/src/data/best-practices/*/*.md', {
-    eager: true,
-  });
+  const bestPracticeFiles = await import.meta.glob<BestPracticeFileType>(
+    '/src/data/best-practices/*/*.md',
+    {
+      eager: true,
+    }
+  );
 
   return Object.keys(bestPracticeFiles).map(bestPracticePathToId);
 }
@@ -56,13 +57,15 @@ export async function getBestPracticeIds() {
 /**
  * Gets all the best practice files
  *
- * @param tag Tag assigned to best practice
  * @returns Promisified BestPracticeFileType[]
  */
 export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
-  const bestPracticeFilesMap = await import.meta.glob<BestPracticeFileType>('/src/data/best-practices/*/*.md', {
-    eager: true,
-  });
+  const bestPracticeFilesMap = await import.meta.glob<BestPracticeFileType>(
+    '/src/data/best-practices/*/*.md',
+    {
+      eager: true,
+    }
+  );
 
   const bestPracticeFiles = Object.values(bestPracticeFilesMap);
   const bestPracticeItems = bestPracticeFiles.map((bestPracticeFile) => ({
@@ -70,5 +73,7 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
     id: bestPracticePathToId(bestPracticeFile.file),
   }));
 
-  return bestPracticeItems.sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+  return bestPracticeItems.sort(
+    (a, b) => a.frontmatter.order - b.frontmatter.order
+  );
 }

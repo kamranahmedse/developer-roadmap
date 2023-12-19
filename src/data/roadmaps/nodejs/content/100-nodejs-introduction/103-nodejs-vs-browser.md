@@ -4,4 +4,4 @@ Both the browser and Node.js use JavaScript as their programming language. Build
 
 Visit the following resources to learn more:
 
-- [Differences between Node.js and the Browser](https://nodejs.dev/en/learn/differences-between-nodejs-and-the-browser/)
+- [Differences between Node.js and the Browser](https://nodejs.org/en/learn/getting-started/differences-between-nodejs-and-the-browser/)

@@ -7,11 +7,11 @@ Here's an example of how you can use external modules in TypeScript:
 ```typescript
 // myModule.ts
 export function doSomething() {
-    console.log("Doing something...");
+  console.log('Doing something...');
 }
 
 // main.ts
-import { doSomething } from "./myModule";
+import { doSomething } from './myModule';
 doSomething(); // Output: "Doing something..."
 ```
 

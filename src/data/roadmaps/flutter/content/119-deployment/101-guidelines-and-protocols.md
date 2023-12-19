@@ -7,7 +7,7 @@ Guidelines and protocols are important considerations for Flutter developers as 
 - Material Design
 - Apple Human Interface
 - Google Play Developer Policy Center
-- App Store Review 
+- App Store Review
 
 By following these guidelines and protocols, Flutter developers can ensure that their apps are well-designed, user-friendly, and secure, making it easier to attract and retain users.
 

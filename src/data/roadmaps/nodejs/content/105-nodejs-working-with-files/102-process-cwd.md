@@ -5,4 +5,4 @@ The `process.cwd()` method returns the current working directory of the Node.js 
 Visit the following resources to learn more:
 
 - [Official Website](https://nodejs.org/api/process.html#processcwd)
-- [Whats the difference between process.cwd() vs __dirname?](https://stackoverflow.com/questions/9874382/whats-the-difference-between-process-cwd-vs-dirname)
+- [Whats the difference between process.cwd() vs \_\_dirname?](https://stackoverflow.com/questions/9874382/whats-the-difference-between-process-cwd-vs-dirname)

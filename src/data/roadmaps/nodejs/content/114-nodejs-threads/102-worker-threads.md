@@ -6,4 +6,3 @@ With worker threads, we can achieve a much efficient application without creatin
 Visit the following resources to learn more:
 
 - [Worker Threads Docs](https://nodejs.org/api/worker_threads.html#worker-threads)
-

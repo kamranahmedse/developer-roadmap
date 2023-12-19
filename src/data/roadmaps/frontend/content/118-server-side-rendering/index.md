@@ -1,4 +1,4 @@
-# Server-side rendering 
+# Server-side rendering
 
 Server-side rendering refers to the process that the service side completes the HTML structure splicing of the page, sends it to the browser, and then binds the status and events for it to become a fully interactive page.
 

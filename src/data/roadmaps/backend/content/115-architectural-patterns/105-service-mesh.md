@@ -1,13 +1,14 @@
 # Service Mesh
 
-A service mesh is a network of microservices that are connected using a mesh of interconnected, intelligent proxies. It is used to manage and secure communication between microservices, and it provides features such as load balancing, service discovery, and observability.
+A service mesh is an architectural pattern for enhancing communication, security, and management between microservices in a distributed network. It employs a collection of intelligent proxies to manage service-to-service communication, ensuring high availability, efficient load balancing, and robust service discovery. Additionally, a service mesh offers advanced features like observability for monitoring network behavior, and various traffic management capabilities.
 
-In a service mesh, each microservice is typically represented by an instance of a lightweight, transparent proxy called an "envoy." The envoys handle the communication between microservices and provide features such as load balancing, routing, and security.
+In a typical service mesh setup, each microservice is paired with a proxy. This proxy, often deployed using a sidecar pattern, is responsible not only for handling communication to and from its associated microservice but also for implementing various network functionalities. These functionalities include load balancing, intelligent routing, and ensuring secure data transfer.
 
-Service meshes are typically implemented using a sidecar pattern, in which the envoys are deployed alongside the microservices they are responsible for. This allows the service mesh to be decoupled from the microservices and makes it easier to manage and update.
+The sidecar pattern, integral to service meshes, involves deploying the proxy as a sidecar container alongside the main microservice container, especially in Kubernetes environments. This design allows the service mesh to function independently from the microservices themselves, simplifying management and updates.
 
-Service meshes are commonly used in cloud-native architectures and are often managed using a control plane, which is responsible for configuring and managing the envoys. Some popular service mesh implementations include Istio and Linkerd.
+Popular service mesh implementations include Istio and Linkerd, which offer robust solutions tailored to modern, cloud-based application architectures.
 
 Visit the following resources to learn more:
 
 - [What is a Service Mesh?](https://www.nginx.com/blog/what-is-a-service-mesh/)
+- [Microservices pain points and how service mesh can help solve those issues](https://www.youtube.com/watch?v=QiXK0B9FhO0)

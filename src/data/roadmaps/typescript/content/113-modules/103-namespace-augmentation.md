@@ -17,7 +17,7 @@ declare namespace MyModule {
 namespace MyModule {
   export class MyModule {
     public newFunction() {
-      console.log("I am a new function in MyModule!");
+      console.log('I am a new function in MyModule!');
     }
   }
 }

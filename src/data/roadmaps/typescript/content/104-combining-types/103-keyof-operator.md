@@ -9,8 +9,8 @@ interface User {
   location: string;
 }
 
-type UserKeys = keyof User;  // "name" | "age" | "location"
-const key: UserKeys = "name";
+type UserKeys = keyof User; // "name" | "age" | "location"
+const key: UserKeys = 'name';
 ```
 
 In this example, `UserKeys` is a type that represents the union of keys from the `User` interface, which is `"name"` | `"age"` | `"location"`. And a constant named `key` with the type `UserKeys` is declared with the value `"name"`.

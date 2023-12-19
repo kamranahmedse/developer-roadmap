@@ -4,9 +4,10 @@ Semantic element clearly describes its meaning to both the browser and the devel
 
 Visit the following resources to learn more:
 
-- [Semantics - MDN Web Docs Glossary: Definitions of Web-related terms | MDN](https://developer.mozilla.org/en-US/docs/Glossary/Semantics)
+- [Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html)
 - [W3Schools: Semantic HTML](https://www.w3schools.com/html/html5_semantic_elements.asp)
 - [How To Write Semantic HTML](https://hackernoon.com/how-to-write-semantic-html-dkq3ulo)
 - [HTML Best Practices – How to Build a Better HTML-Based Website](https://www.freecodecamp.org/news/html-best-practices/)
 - [Semantic HTML: What It Is and How It Improves Your Site](https://blog.hubspot.com/website/semantic-html)
 - [Semantic Markup](https://html.com/semantic-markup)
+- [Semantic HTML - web.dev](https://web.dev/learn/html/semantic-html/)

@@ -3,6 +3,7 @@
 The Arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and remainder operations.
 
 Arithmetic operators in JavaScript are as follows:
+
 - `+` (Addition)
 - `-` (Subtraction)
 - `*` (Multiplication)

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 - [What is NGRX ? - ngrx.io ](https://ngrx.io/)
 - [Details about NGRX - Medium ](https://ahmedrebai.medium.com/introduction-to-state-management-with-ngrx-and-angular-91f4ff27ec9f)
 - [Practise of NGRX](https://www.youtube.com/watch?v=f97ICOaekNU)
-

@@ -17,4 +17,3 @@ Visit the following links for more information on JPA testing:
 - [Testing JPA Queries with Spring Boot and @DataJpaTest](https://reflectoring.io/spring-boot-data-jpa-test/)
 - [@DataJpaTest example for Spring Data Repository Unit Test](https://www.bezkoder.com/spring-boot-unit-test-jpa-repo-datajpatest/)
 - [Testing in Spring Boot](https://www.baeldung.com/spring-boot-testing)
-

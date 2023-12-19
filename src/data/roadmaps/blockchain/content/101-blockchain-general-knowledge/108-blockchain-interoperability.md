@@ -1,6 +1,6 @@
 # Blockchain interoperability
 
-The concept of “blockchain interoperability” refers to the ability of different blockchain networks to exchange and leverage data between one another and to move unique types of digital assets between the networks’ respective blockchains. 
+The concept of “blockchain interoperability” refers to the ability of different blockchain networks to exchange and leverage data between one another and to move unique types of digital assets between the networks’ respective blockchains.
 
 Visit the following resources to learn more:
 

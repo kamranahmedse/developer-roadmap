@@ -5,4 +5,3 @@ Directives are special attributes with the `v-` prefix. Vue provides a number of
 Visit the following resources to learn more:
 
 - [Directives Documentation](https://vuejs.org/guide/essentials/template-syntax.html#directives)
-

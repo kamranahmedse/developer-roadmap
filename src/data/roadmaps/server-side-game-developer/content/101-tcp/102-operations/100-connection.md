@@ -1,0 +1,3 @@
+# Connection
+
+`Connection` in server-side game development refers to the establishment of a link between the game server and the game client (usually the player's device). This connection can either be persistent or non-persistent, depending on the game’s requirements. Persistent connections remain active as long as the user is logged in, facilitating real-time communication between the server and the client. Non-persistent connections, on the other hand, are established and discontinued as needed. This element is crucial in multiplayer games where the server handles the synchronization of data among multiple clients, enabling players to interact with each other in the same virtual environment.

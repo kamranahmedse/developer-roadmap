@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [System Design - Caching](https://dev.to/karanpratapsingh/system-design-the-complete-course-10fo#caching)
 - [What is Caching | System Design Basics](https://www.youtube.com/watch?v=joifNgoXXFk)
-

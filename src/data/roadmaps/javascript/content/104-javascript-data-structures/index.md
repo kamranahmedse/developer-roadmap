@@ -9,5 +9,5 @@ Visit the following resources to learn more:
 - [Introduction to the Queue Data Structure](https://youtu.be/GRA_3Ppl2ZI)
 - [Intro to Recursion: Anatomy of a Recursive Solution](https://youtu.be/yBWlPte6FhA)
 - [Binary Tree Algorithms for Technical Interviews - Full Course](https://youtu.be/fAAZixBzIAI)
-- [Graph Algorithms for Technical Interviews - Full Course](https://youtu.be/tWVWeAqZ0WU) 
+- [Graph Algorithms for Technical Interviews - Full Course](https://youtu.be/tWVWeAqZ0WU)
 - [Dynamic Programming - Learn to Solve Algorithmic Problems & Coding Challenges](https://youtu.be/oBt53YbR9Kk)

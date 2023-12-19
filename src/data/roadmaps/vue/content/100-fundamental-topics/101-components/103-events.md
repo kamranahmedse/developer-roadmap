@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Listening to Events](https://vuejs.org/guide/essentials/component-basics.html#listening-to-events)
 - [Events in Detail](https://vuejs.org/guide/components/events.html)
-

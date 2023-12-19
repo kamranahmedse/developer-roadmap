@@ -9,7 +9,6 @@ Here's how to use dependency injection in Flutter:
 - Use the provider in your widget tree
 - Access the dependency in a widget
 
-
 Learn more from the following links:
 
 - [Dependency Injection In Flutter](https://medium.com/flutter-community/dependency-injection-in-flutter-f19fb66a0740)

@@ -23,3 +23,4 @@ type User = {
   email: string;
   education: Education;
 };
+```

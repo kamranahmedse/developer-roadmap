@@ -1,0 +1,98 @@
+---
+import { getQuestionGroupsByIds } from '../lib/question-group';
+import { getRoadmapsByIds, RoadmapFrontmatter } from '../lib/roadmap';
+import { Map, Clipboard } from 'lucide-react';
+
+export interface Props {
+  roadmap: RoadmapFrontmatter;
+}
+
+const { roadmap } = Astro.props;
+
+const relatedRoadmaps = roadmap.relatedRoadmaps || [];
+const relatedRoadmapDetails = await getRoadmapsByIds(relatedRoadmaps);
+
+const relatedQuestions = roadmap.relatedQuestions || [];
+const relatedQuestionDetails = await getQuestionGroupsByIds(relatedQuestions);
+---
+
+{
+  relatedQuestionDetails.length > 0 && (
+    <div class='border-t bg-gray-100 pb-3'>
+      <div class='container'>
+        <div class='relative -top-5 flex justify-between'>
+          <span class='text-md flex items-center rounded-md border bg-white px-3 py-1 font-medium'>
+            <Clipboard className='mr-1.5 text-black' size='17px' />
+            Test your Knowledge
+            <span class='ml-2 rounded-md border border-yellow-300 bg-yellow-100 px-1 py-0.5 text-xs uppercase'>
+              New
+            </span>
+          </span>
+          <a
+            href='/roadmaps'
+            class='text-md rounded-md border bg-white px-3 py-1 font-medium hover:bg-gray-50'
+          >
+            <span class='hidden sm:inline'>All Quizzes &rarr;</span>
+            <span class='inline sm:hidden'>More &rarr;</span>
+          </a>
+        </div>
+
+        <div class='flex flex-col gap-1 pb-8'>
+          {relatedQuestionDetails.map((relatedQuestionGroup) => (
+            <a
+              href={`/questions/${relatedQuestionGroup.id}`}
+              class='flex flex-col gap-0.5 rounded-md border bg-white px-3.5 py-2 hover:bg-gray-50 sm:flex-row sm:gap-0'
+            >
+              <span class='inline-block min-w-[150px] font-medium'>
+                {relatedQuestionGroup.title}
+              </span>
+              <span class='text-gray-500'>
+                {relatedQuestionGroup.description}
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}
+
+{
+  relatedRoadmaps.length && (
+    <div class:list={['border-t bg-gray-100', {
+      'mt-8': !relatedQuestionDetails.length
+    }]}>
+      <div class='container'>
+        <div class='relative -top-5 flex justify-between'>
+          <span class='text-md flex items-center rounded-md border bg-white px-3 py-1 font-medium'>
+            <Map className='text-black mr-1.5' size='17px' />
+            Related Roadmaps
+          </span>
+          <a
+            href='/roadmaps'
+            class='text-md rounded-md border bg-white px-3 py-1 font-medium hover:bg-gray-50'
+          >
+            <span class='hidden sm:inline'>All Roadmaps &rarr;</span>
+            <span class='inline sm:hidden'>More &rarr;</span>
+          </a>
+        </div>
+
+        <div class='flex flex-col gap-1 pb-8'>
+          {relatedRoadmapDetails.map((relatedRoadmap) => (
+            <a
+              href={`/${relatedRoadmap.id}`}
+              class='flex flex-col gap-0.5 rounded-md border bg-white px-3.5 py-2 hover:bg-gray-50 sm:flex-row sm:gap-0'
+            >
+              <span class='inline-block min-w-[150px] font-medium'>
+                {relatedRoadmap.frontmatter.briefTitle}
+              </span>
+              <span class='text-gray-500'>
+                {relatedRoadmap.frontmatter.briefDescription}
+              </span>
+            </a>
+          ))}
+        </div>
+      </div>
+    </div>
+  )
+}

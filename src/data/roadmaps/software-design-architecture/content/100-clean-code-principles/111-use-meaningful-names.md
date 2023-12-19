@@ -11,7 +11,6 @@ Here are some ways to use meaningful names in system architecture:
 - Avoid using single letter variable names or generic names, such as "temp" or "x" that do not convey any meaning.
 - Avoid using overly long or complex names that make the code harder to read.
 
-
 Learn more from the following links:
 
 - [How to Write Meaningful Variable Names?](https://workat.tech/machine-coding/tutorial/writing-meaningful-variable-names-clean-code-za4m83tiesy0)

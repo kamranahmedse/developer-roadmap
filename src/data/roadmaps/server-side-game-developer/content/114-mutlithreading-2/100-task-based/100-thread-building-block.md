@@ -1,0 +1,3 @@
+# Thread Building Block (C++)
+
+The **Thread Building Blocks** (TBB) is an open-source C++ library developed by Intel. It is designed to take advantage of multi-core processors by simplifying the process of deploying parallel tasks. Using TBB, you can easily break down your tasks into smaller sub-tasks that can be processed in parallel, improving the speed and efficiency of your game server. TBB encompasses generic parallel algorithms, concurrent containers, a scalable memory allocator, work-stealing task scheduler, and low-level synchronization primitives. However, it's not a library for threading as POSIX or Win32 threads, rather, it's a higher-level, task-based parallelism that abstracts platform details and threading mechanism for performance and scalability.

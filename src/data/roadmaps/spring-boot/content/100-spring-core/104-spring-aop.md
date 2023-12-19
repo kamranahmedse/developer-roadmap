@@ -9,6 +9,3 @@ For more resources, visit the following links:
 - [Spring AOP Tutorial](https://www.simplilearn.com/tutorials/spring-tutorial/spring-aop-aspect-oriented-programming)
 - [AOP with Spring Framework](https://www.tutorialspoint.com/spring/aop_with_spring.htm)
 - [Spring AOP Tutorial](https://howtodoinjava.com/spring-aop-tutorial/)
-
-
-

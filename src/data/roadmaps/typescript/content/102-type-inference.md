@@ -5,7 +5,7 @@ Type inference in TypeScript refers to the process of automatically determining 
 Here's an example of type inference in TypeScript:
 
 ```typescript
-let name = "John Doe";
+let name = 'John Doe';
 ```
 
 In this example, the TypeScript compiler automatically infers that the type of the name variable is string. This means that you can use the name variable just like any other string in your code, and the TypeScript compiler will ensure that you don't perform any invalid operations on it.

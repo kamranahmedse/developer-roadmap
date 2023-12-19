@@ -14,7 +14,7 @@ function error(message: string): never {
 
 // Inferred return type is never
 function fail() {
-  return error("Something failed");
+  return error('Something failed');
 }
 
 // Function returning never must not have a reachable end point
@@ -25,4 +25,4 @@ function infiniteLoop(): never {
 
 Learn more from the following links:
 
-- [Never](https://www.typescriptlang.org/docs/handbook/basic-types.html#never)
+- [Never](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#the-never-type)

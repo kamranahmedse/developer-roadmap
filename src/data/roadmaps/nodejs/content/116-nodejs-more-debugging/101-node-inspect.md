@@ -1,6 +1,6 @@
 # Node Inspect
 
-Node.js provides a built-in DevTools-based debugger to allow debugging Node.js applicatins.
+Node.js provides a built-in DevTools-based debugger to allow debugging Node.js applications.
 
 Visit the following resources to learn more:
 

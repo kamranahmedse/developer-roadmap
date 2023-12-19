@@ -10,8 +10,3 @@ Visit the following resources to learn more:
 - [Heap Sort Algorithm - MIT](https://www.youtube.com/watch?v=odNJmw5TOEE&list=PLFDnELG9dpVxQCxuD-9BSy2E7BWY3t5Sm&t=3291s)
 - [Heap Sort Algorithm](https://www.coursera.org/lecture/data-structures/heap-sort-hSzMO)
 - [Lecture 4 - Heaps and Heap Sort](https://www.youtube.com/watch?v=B7hVxCmfPtM&list=PLUl4u3cNGP61Oq3tWYp6V_F-5jb5L2iHb&index=5)
-
-
-
-
-

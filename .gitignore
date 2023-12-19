@@ -1,3 +1,6 @@
+.idea
+.temp
+
 # build output
 dist/
 .output/
@@ -5,7 +8,7 @@ dist/
 # dependencies
 node_modules/
 
-bin/developer-roadmap
+scripts/developer-roadmap
 
 # logs
 npm-debug.log*
@@ -24,3 +27,7 @@ pnpm-debug.log*
 /playwright-report/
 /playwright/.cache/
 tests-examples
+*.csv
+
+/editor/*
+!/editor/readonly-editor.tsx

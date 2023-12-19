@@ -6,12 +6,12 @@ Here's an example of how you can use ambient modules in TypeScript:
 
 ```typescript
 // myModule.d.ts
-declare module "my-module" {
-    export function doSomething(): void;
+declare module 'my-module' {
+  export function doSomething(): void;
 }
 
 // main.ts
-import * as myModule from "my-module";
+import * as myModule from 'my-module';
 myModule.doSomething();
 ```
 

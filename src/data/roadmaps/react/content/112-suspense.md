@@ -11,4 +11,4 @@ Here is a general overview of how React Suspense works:
 
 Visit the following resources to learn more:
 
-- [React Suspense - Official Docs](https://reactjs.org/docs/react-api.html#suspense)
+- [React Suspense](https://react.dev/reference/react/Suspense)

@@ -1,6 +1,6 @@
 # How JVM Works
 
-The Java Virtual Machine is a program whose purpose is to execute other programs. JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent). JVM is the one that actually calls the main method present in a java code. JVM is a part of JRE(Java Runtime Environment)                                                                                                     
+The Java Virtual Machine is a program whose purpose is to execute other programs. JVMs are available for many hardware and software platforms (i.e. JVM is platform dependent). JVM is the one that actually calls the main method present in a java code. JVM is a part of JRE(Java Runtime Environment)
 
 Visit the following resources to learn more:
 

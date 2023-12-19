@@ -8,7 +8,3 @@ Visit the following resources to learn more:
 - [How to Develop a Design Language](https://xd.adobe.com/ideas/principles/web-design/how-to-develop-design-language/)
 - [What Actually Constitutes Design Language?](https://www.uxpin.com/studio/blog/design-language/)
 - [Visual Design Language: The Building Blocks Of Design](https://www.smashingmagazine.com/2020/03/visual-design-language-building-blocks/)
-
-
-
-

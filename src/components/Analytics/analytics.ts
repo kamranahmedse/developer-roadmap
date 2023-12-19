@@ -1,18 +1,14 @@
-export {};
-
 declare global {
   interface Window {
     gtag: any;
-    fireEvent: (props: GAEventType) => void;
+    fireEvent: (props: {
+      action: string;
+      category: string;
+      label?: string;
+      value?: string;
+    }) => void;
   }
 }
-
-export type GAEventType = {
-  action: string;
-  category: string;
-  label?: string;
-  value?: string;
-};
 
 /**
  * Tracks the event on google analytics
@@ -20,11 +16,15 @@ export type GAEventType = {
  * @param props Event properties
  * @returns void
  */
-window.fireEvent = (props: GAEventType) => {
+window.fireEvent = (props) => {
   const { action, category, label, value } = props;
   if (!window.gtag) {
     console.warn('Missing GTAG - Analytics disabled');
     return;
+  }
+
+  if (import.meta.env.DEV) {
+    console.log('Analytics event fired', props);
   }
 
   window.gtag('event', action, {

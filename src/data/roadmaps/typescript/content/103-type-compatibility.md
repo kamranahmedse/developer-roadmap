@@ -6,8 +6,8 @@ Here's an example of type compatibility in TypeScript:
 
 ```typescript
 interface Point {
-x: number;
-y: number;
+  x: number;
+  y: number;
 }
 
 let p1: Point = { x: 10, y: 20 };

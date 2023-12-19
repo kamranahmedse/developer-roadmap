@@ -6,5 +6,4 @@ Most of the time, new versions come with optimization and security fix. You shou
 
 If your project use NPM packages, [npm-check](https://www.npmjs.com/package/npm-check) is a pretty interesting library to upgrade / update your libraries. [Greenkeeper](https://greenkeeper.io/) can automatically look for your dependencies and suggest an update every time a new version is out.
 
-
 - [Vanilla JavaScript for building powerful web applications](https://plainjs.com/)

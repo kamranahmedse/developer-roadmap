@@ -4,5 +4,5 @@
 
 Visit the following resources to learn more:
 
-- [Using the State Hook](https://reactjs.org/docs/hooks-state.html)
+- [Using the State Hook](https://react.dev/reference/react/useState)
 - [React useState Hook by Example](https://www.robinwieruch.de/react-usestate-hook/)

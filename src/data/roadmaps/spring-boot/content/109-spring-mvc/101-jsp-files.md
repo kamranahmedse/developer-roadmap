@@ -9,4 +9,3 @@ Visit the following links for more resources:
 - [Spring MVC with JSP View](https://www.geeksforgeeks.org/spring-mvc-with-jsp-view/)
 - [Spring Boot With JavaServer Pages (JSP)](https://www.baeldung.com/spring-boot-jsp)
 - [Spring MVC: from JSP and Tiles to Thymeleaf](https://spring.io/blog/2012/10/30/spring-mvc-from-jsp-and-tiles-to-thymeleaf/)
-

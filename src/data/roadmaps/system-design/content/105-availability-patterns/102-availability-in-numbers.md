@@ -6,22 +6,22 @@ Availability is often quantified by uptime (or downtime) as a percentage of time
 
 ```
 Duration           | Acceptable downtime
--------------      | -------------      
-Downtime per year  | 8h 41min 38s       
-Downtime per month | 43m 28s          
-Downtime per week  | 10m 4.8s           
-Downtime per day   | 1m 26s           
+-------------      | -------------
+Downtime per year  | 8h 41min 38s
+Downtime per month | 43m 28s
+Downtime per week  | 10m 4.8s
+Downtime per day   | 1m 26s
 ```
 
 ## 99.99% Availability - Four 9s
 
 ```
 Duration           | Acceptable downtime
--------------      | -------------      
-Downtime per year  | 52min 9.8s        
-Downtime per month | 4m 21s         
-Downtime per week  | 1m 0.5s              
-Downtime per day   | 8.6s               
+-------------      | -------------
+Downtime per year  | 52min 9.8s
+Downtime per month | 4m 21s
+Downtime per week  | 1m 0.5s
+Downtime per day   | 8.6s
 ```
 
 ## Availability in parallel vs in sequence

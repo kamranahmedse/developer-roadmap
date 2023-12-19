@@ -10,7 +10,6 @@ In an ASP.NET application, there are several types of databases that can be used
 
 Each database type has its own set of features and use cases, and the choice of which database to use will depend on the specific requirements of the application.
 
-
 To learn more, visit the following links:
 
 - [ASP.NET Database Tutorial](https://www.guru99.com/insert-update-delete-asp-net.html)

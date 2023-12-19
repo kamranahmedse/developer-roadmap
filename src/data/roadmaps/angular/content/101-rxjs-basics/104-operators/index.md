@@ -1,5 +1,4 @@
-# RxJS Operators 
-
+# RxJS Operators
 
 RxJS is mostly useful for its operators, even though the Observable is the foundation. Operators are the essential pieces that allow complex asynchronous code to be easily composed in a declarative manner.
 
@@ -17,9 +16,9 @@ Pipeable operators are functions, so they could be used like ordinary functions:
 
 ```bash
  obs.pipe(op1(), op2(), op3(), op4());
- ```
+```
 
- ## Creation Operators
+## Creation Operators
 
 **What are creation operators?** Distinct from pipeable operators, creation operators are functions that can be used to create an Observable with some common predefined behavior or by joining other Observables.
 
@@ -35,4 +34,3 @@ Visit the following resources to learn more:
 
 - [List of creation operators](https://rxjs.dev/guide/operators#creation-operators-list)
 - [Full RxJS Operators Documentation](https://rxjs.dev/guide/operators)
-

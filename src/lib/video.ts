@@ -43,9 +43,12 @@ function videoPathToId(filePath: string): string {
  * @returns Promisifed video files
  */
 export async function getAllVideos(): Promise<VideoFileType[]> {
-  const videos = await import.meta.glob<VideoFileType>('/src/data/videos/*.md', {
-    eager: true,
-  });
+  const videos = await import.meta.glob<VideoFileType>(
+    '/src/data/videos/*.md',
+    {
+      eager: true,
+    }
+  );
 
   const videoFiles = Object.values(videos);
   const enrichedVideos = videoFiles.map((videoFile) => ({
