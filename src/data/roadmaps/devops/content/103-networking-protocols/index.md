@@ -7,7 +7,7 @@ Here are some of the resources to learn about SSH:
 - [SSH Intro](https://www.baeldung.com/cs/ssh-intro)
 - [What is SSH?](https://www.ssh.com/academy/ssh/protocol)
 - [SFTP using SSH](https://www.goanywhere.com/blog/how-sftp-works)
-- [OpenSSH Full Guide](https://www.youtube.com/watch?v=ys5zh7kexve)
+- [OpenSSH Full Guide](https://www.youtube.com/watch?v=YS5Zh7KExvE)
 
 Visit the following to learn about SSL/TLS:
 
