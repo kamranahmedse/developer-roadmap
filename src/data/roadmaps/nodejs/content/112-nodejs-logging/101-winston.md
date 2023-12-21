@@ -5,3 +5,4 @@ winston is designed to be a simple and universal logging library with support fo
 Visit the following resources to learn more:
 
 - [winston Website](https://github.com/winstonjs/winston)
+- [pino]([https://github.com/winstonjs/winston](https://getpino.io/#/)https://getpino.io/#/)
