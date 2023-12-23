@@ -63,4 +63,7 @@ int y = --x; // x = 4, y = 4
 int z = x--; // x = 3, z = 4
 ```
 
+C++ Operators. 
+https://www.w3schools.com/cpp/cpp_operators.asp
+
 These are the basic arithmetic operators in C++ that allow you to perform mathematical operations on your variables. Use them in combination with other control structures, such as loops and conditionals, to build more complex programs.
