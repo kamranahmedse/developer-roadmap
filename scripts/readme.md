@@ -6,6 +6,10 @@
 
 Generates a list of all the resources links in any roadmap file.
 
+## `roadmap-list.cjs`
+
+Generates structured markdown output from any roadmap.
+
 ## `compress-jsons.cjs`
 
 Compresses all the JSON files in the `public/jsons` folder

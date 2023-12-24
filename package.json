@@ -14,6 +14,7 @@
     "compress:jsons": "node scripts/compress-jsons.cjs",
     "upgrade": "ncu -u",
     "roadmap-links": "node scripts/roadmap-links.cjs",
+    "roadmap-list": "node scripts/roadmap-list.cjs",
     "roadmap-dirs": "node scripts/roadmap-dirs.cjs",
     "roadmap-content": "node scripts/roadmap-content.cjs",
     "generate-renderer": "sh scripts/generate-renderer.sh",
