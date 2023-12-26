@@ -22,6 +22,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@astrojs/node": "^7.0.2",
     "@astrojs/react": "^3.0.8",
     "@astrojs/sitemap": "^3.0.3",
     "@astrojs/tailwind": "^5.0.4",
@@ -33,6 +34,7 @@
     "astro-compress": "^2.2.3",
     "clsx": "^2.0.0",
     "dracula-prism": "^2.1.13",
+    "express": "^4.18.2",
     "jose": "^5.1.3",
     "js-cookie": "^3.0.5",
     "lucide-react": "^0.300.0",

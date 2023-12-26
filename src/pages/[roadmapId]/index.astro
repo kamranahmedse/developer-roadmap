@@ -15,14 +15,6 @@ import {
 } from '../../lib/jsonld-schema';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
-export async function getStaticPaths() {
-  const roadmapIds = await getRoadmapIds();
-
-  return roadmapIds.map((roadmapId) => ({
-    params: { roadmapId },
-  }));
-}
-
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
 }
