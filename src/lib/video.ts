@@ -64,7 +64,7 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
 }
 
 export async function getVideoById(id: string): Promise<VideoFileType> {
-  const video = await import(`/src/data/videos/${id}.md`);
+  const video = await import(`../data/videos/${id}.md`);
 
   return {
     ...video,

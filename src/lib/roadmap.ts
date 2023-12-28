@@ -133,7 +133,7 @@ export async function getRoadmapsByIds(
 
 export async function getRoadmapFaqsById(roadmapId: string): Promise<string[]> {
   const { faqs } = await import(
-    `/src/data/roadmaps/${roadmapId}/faqs.astro`
+    `../data/roadmaps/${roadmapId}/faqs.astro`
   ).catch(() => ({}));
 
   return faqs || [];
