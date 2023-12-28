@@ -12,31 +12,25 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { type RoadmapFrontmatter } from '../../lib/roadmap';
+
+import {
+  getRoadmapById,
+  type RoadmapFrontmatter,
+  getRoadmapFaqsById,
+} from '../../lib/roadmap';
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
 }
 
 const { roadmapId } = Astro.params as Params;
-let roadmapFile;
-let roadmapFAQs = [];
 
-try {
-  roadmapFile = await import(
-    `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
-  );
-
-  if (!roadmapFile) {
-    return Astro.redirect('/404');
-  }
-
-  const { faqs } = await import(`../../data/roadmaps/${roadmapId}/faqs.astro`);
-  roadmapFAQs = faqs || [];
-} catch (error) {
+const roadmapFile = await getRoadmapById(roadmapId).catch(() => null);
+if (!roadmapFile) {
   return Astro.redirect('/404');
 }
 
+const roadmapFAQs = await getRoadmapFaqsById(roadmapId);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];
