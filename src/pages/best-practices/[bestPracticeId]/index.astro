@@ -10,20 +10,8 @@ import { UserProgressModal } from '../../../components/UserProgress/UserProgress
 import {
   type BestPracticeFileType,
   type BestPracticeFrontmatter,
-  getAllBestPractices,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
-
-export async function getStaticPaths() {
-  const bestPractices = await getAllBestPractices();
-
-  return bestPractices.map((bestPractice: BestPracticeFileType) => ({
-    params: { bestPracticeId: bestPractice.id },
-    props: {
-      bestPractice: bestPractice,
-    },
-  }));
-}
 
 interface Params extends Record<string, string | undefined> {
   bestPracticeId: string;
@@ -34,7 +22,20 @@ interface Props {
 }
 
 const { bestPracticeId } = Astro.params as Params;
-const { bestPractice } = Astro.props as Props;
+
+let bestPractice;
+try {
+  bestPractice = await import(
+    `../../../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`
+  );
+
+  if (!bestPractice) {
+    return Astro.redirect('/404');
+  }
+} catch (error) {
+  return Astro.redirect('/404');
+}
+
 const bestPracticeData = bestPractice.frontmatter as BestPracticeFrontmatter;
 
 let jsonLdSchema = [];
@@ -49,7 +50,7 @@ if (bestPracticeData.schema) {
       datePublished: bestPracticeSchema.datePublished,
       dateModified: bestPracticeSchema.dateModified,
       imageUrl: bestPracticeSchema.imageUrl,
-    })
+    }),
   );
 }
 ---

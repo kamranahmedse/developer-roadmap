@@ -1,7 +1,6 @@
 ---
 import FAQs from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
@@ -13,19 +12,31 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
-import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
+import { type RoadmapFrontmatter } from '../../lib/roadmap';
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
 }
 
 const { roadmapId } = Astro.params as Params;
-const roadmapFile = await import(
-  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
-);
-const { faqs: roadmapFAQs = [] } = await import(
-  `../../data/roadmaps/${roadmapId}/faqs.astro`
-);
+let roadmapFile;
+let roadmapFAQs = [];
+
+try {
+  roadmapFile = await import(
+    `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+  );
+
+  if (!roadmapFile) {
+    return Astro.redirect('/404');
+  }
+
+  const { faqs } = await import(`../../data/roadmaps/${roadmapId}/faqs.astro`);
+  roadmapFAQs = faqs || [];
+} catch (error) {
+  return Astro.redirect('/404');
+}
+
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];

@@ -1,26 +1,19 @@
 ---
-import RoadmapBanner from '../../components/RoadmapBanner.astro';
-import BaseLayout from '../../layouts/BaseLayout.astro';
-import {
-  getRoadmapTopicFiles,
-  type RoadmapTopicFileType,
-} from '../../lib/roadmap-topic';
+import { getRoadmapTopicFiles } from '../../lib/roadmap-topic';
 
 export const partial = true;
 
 const { topicId, roadmapId } = Astro.params;
 if (!topicId) {
-    return new Response();
+  return new Response();
 }
 
 const topicSlug = `/${roadmapId}/${topicId}`;
 const topicPathMapping = await getRoadmapTopicFiles();
 
-console.log(Astro.params);
-
 const topicDetails = topicPathMapping[topicSlug];
 
-const { file, url, roadmap, heading } = topicDetails;
+const { file } = topicDetails;
 
 const fileWithoutBasePath = file.file?.replace(/.+?\/src\/data/, '/src/data');
 const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
