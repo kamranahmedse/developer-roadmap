@@ -4,9 +4,10 @@ A higher-order component (HOC) is an advanced technique in React for reusing com
 
 Concretely, a higher-order component is a function that takes a component and returns a new component.
 
-Higher-order components are not commonly used in modern React code. In order to reuse logic, React hooks are mainly used now.
+Higher-order components are not commonly used in modern React code. To reuse logic, React hooks are mainly used now.
 
 Visit the following resources to learn more:
 
 - [High-Order Components](https://reactjs.org/docs/higher-order-components.html)
 - [How to create a Higher-Order Component](https://www.robinwieruch.de/react-higher-order-components/)
+- [When and how to choose between React Hooks and old HOC props passing?](https://stackoverflow.com/questions/53387613/when-and-how-to-choose-between-react-hooks-and-old-hoc-props-passing)
