@@ -1,7 +1,5 @@
 import { execSync } from 'child_process';
 
-export const prerender = true;
-
 export async function GET() {
   const commitHash = execSync('git rev-parse HEAD').toString().trim();
   const commitDate = execSync('git log -1 --format=%cd').toString().trim();
