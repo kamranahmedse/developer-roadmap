@@ -48,7 +48,7 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
     '/src/data/guides/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const guideFiles = Object.values(guides);
@@ -60,6 +60,15 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
   return enrichedGuides.sort(
     (a, b) =>
       new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
+      new Date(a.frontmatter.date).valueOf(),
   );
+}
+
+export async function getGuideById(id: string): Promise<GuideFileType> {
+  const guide = await import(`/src/data/guides/${id}.md`);
+
+  return {
+    ...guide,
+    id: guidePathToId(guide.file),
+  };
 }

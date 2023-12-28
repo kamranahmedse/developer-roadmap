@@ -12,6 +12,9 @@ const topicSlug = `/${roadmapId}/${topicId}`;
 const topicPathMapping = await getRoadmapTopicFiles();
 
 const topicDetails = topicPathMapping[topicSlug];
+if (!topicDetails) {
+  return Astro.redirect('/404');
+}
 
 const { file } = topicDetails;
 

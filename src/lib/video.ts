@@ -47,7 +47,7 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
     '/src/data/videos/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const videoFiles = Object.values(videos);
@@ -59,6 +59,15 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
   return enrichedVideos.sort(
     (a, b) =>
       new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
+      new Date(a.frontmatter.date).valueOf(),
   );
+}
+
+export async function getVideoById(id: string): Promise<VideoFileType> {
+  const video = await import(`/src/data/videos/${id}.md`);
+
+  return {
+    ...video,
+    id: videoPathToId(video.file),
+  };
 }
