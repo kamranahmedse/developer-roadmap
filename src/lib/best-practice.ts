@@ -82,7 +82,7 @@ export async function getBestPracticeById(
   id: string,
 ): Promise<BestPracticeFileType> {
   const bestPracticeFile = await import(
-    `/src/data/best-practices/${id}/${id}.md`
+    `../data/best-practices/${id}/${id}.md`
   );
 
   return {

@@ -41,7 +41,7 @@ export async function getAllLinkGroups(): Promise<LinkGroupFileType[]> {
 export async function getLinkGroupById(
   groupId: string,
 ): Promise<LinkGroupFileType> {
-  const linkGroup = await import(`/src/data/link-groups/${groupId}.md`);
+  const linkGroup = await import(`../data/link-groups/${groupId}.md`);
 
   return {
     ...linkGroup,

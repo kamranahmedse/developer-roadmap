@@ -65,7 +65,7 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
 }
 
 export async function getGuideById(id: string): Promise<GuideFileType> {
-  const guide = await import(`/src/data/guides/${id}.md`);
+  const guide = await import(`../data/guides/${id}.md`);
 
   return {
     ...guide,
