@@ -10,7 +10,8 @@ import { UserProgressModal } from '../../../components/UserProgress/UserProgress
 import {
   type BestPracticeFileType,
   type BestPracticeFrontmatter,
-} from '../../../lib/best-pratice';
+  getBestPracticeById,
+} from '../../../lib/best-practice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 
 interface Params extends Record<string, string | undefined> {
@@ -22,17 +23,11 @@ interface Props {
 }
 
 const { bestPracticeId } = Astro.params as Params;
+const bestPractice = await getBestPracticeById(bestPracticeId).catch(
+  () => null,
+);
 
-let bestPractice;
-try {
-  bestPractice = await import(
-    `../../../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`
-  );
-
-  if (!bestPractice) {
-    return Astro.redirect('/404');
-  }
-} catch (error) {
+if (!bestPractice) {
   return Astro.redirect('/404');
 }
 

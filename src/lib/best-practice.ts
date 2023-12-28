@@ -48,7 +48,7 @@ export async function getBestPracticeIds() {
     '/src/data/best-practices/*/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   return Object.keys(bestPracticeFiles).map(bestPracticePathToId);
@@ -64,7 +64,7 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
     '/src/data/best-practices/*/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const bestPracticeFiles = Object.values(bestPracticeFilesMap);
@@ -74,6 +74,19 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
   }));
 
   return bestPracticeItems.sort(
-    (a, b) => a.frontmatter.order - b.frontmatter.order
+    (a, b) => a.frontmatter.order - b.frontmatter.order,
   );
+}
+
+export async function getBestPracticeById(
+  id: string,
+): Promise<BestPracticeFileType> {
+  const bestPracticeFile = await import(
+    `/src/data/best-practices/${id}/${id}.md`
+  );
+
+  return {
+    ...bestPracticeFile,
+    id: bestPracticePathToId(bestPracticeFile.file),
+  };
 }
