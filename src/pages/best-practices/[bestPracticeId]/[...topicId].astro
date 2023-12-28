@@ -1,26 +1,16 @@
 ---
 import { getAllBestPracticeTopicFiles } from '../../../lib/best-practice-topic';
-import type { BestPracticeTopicFileType } from '../../../lib/best-practice-topic';
 
-export async function getStaticPaths() {
-  const topicPathMapping = await getAllBestPracticeTopicFiles();
-
-  return Object.keys(topicPathMapping).map((topicSlug) => {
-    const topicDetails = topicPathMapping[topicSlug];
-    const bestPracticeId = topicDetails.bestPracticeId;
-    const topicId = topicSlug.replace(`/${bestPracticeId}/`, '');
-
-    return {
-      params: {
-        topicId,
-        bestPracticeId,
-      },
-      props: topicDetails,
-    };
-  });
+const { topicId, bestPracticeId } = Astro.params;
+if (!topicId) {
+  return new Response();
 }
 
-const { file } = Astro.props as BestPracticeTopicFileType;
+const topicSlug = `/${bestPracticeId}/${topicId}`;
+const topicPathMapping = await getAllBestPracticeTopicFiles();
+
+const topicDetails = topicPathMapping[topicSlug];
+const { file } = topicDetails;
 
 const fileWithoutBasePath = file.file?.replace(/.+?\/src\/data/, '/src/data');
 const gitHubUrl = `https://github.com/kamranahmedse/developer-roadmap/tree/master${fileWithoutBasePath}`;
