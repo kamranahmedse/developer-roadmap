@@ -1,0 +1,16 @@
+---
+import ProgressHelpPopup from '../../components/ProgressHelpPopup.astro';
+import Loader from '../../components/Loader.astro';
+import { CustomRoadmap } from '../../components/CustomRoadmap/CustomRoadmap';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { SkeletonRoadmapHeader } from '../../components/CustomRoadmap/SkeletonRoadmapHeader';
+
+const date = new Date();
+---
+
+<BaseLayout title='Roadmaps'>
+  <ProgressHelpPopup />
+  <div class="mx-auto p-20 max-w-2xl">
+    <h1>{date}</h1>
+  </div>
+</BaseLayout>
