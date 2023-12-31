@@ -5947,7 +5947,7 @@
           "x": "414",
           "y": "2217",
           "properties": {
-            "controlName": "102-monitoring:application-monitoring:app-dynamics"
+            "controlName": "105-application-monitoring:app-dynamics"
           },
           "children": {
             "controls": {
