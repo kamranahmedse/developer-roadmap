@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/full-stack.json'
 pdfUrl: '/pdfs/roadmaps/full-stack.pdf'
 order: 3
 briefTitle: 'Full Stack'
-briefDescription: 'Step by step guide to becoming a full stack developer in 2023'
+briefDescription: 'Step by step guide to becoming a full stack developer in 2024'
 title: 'Full Stack Developer'
-description: 'Step by step guide to becoming a modern full stack developer in 2023'
+description: 'Step by step guide to becoming a modern full stack developer in 2024'
 isNew: false
 hasTopics: true
 dimensions:
@@ -25,9 +25,9 @@ seo:
   title: 'Full Stack Developer Roadmap'
   description: 'Learn to become a modern full stack developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern full stack development.'
   keywords:
-    - 'javascript roadmap 2023'
-    - 'full stack roadmap 2023'
-    - 'full stack developer roadmap 2023'
+    - 'javascript roadmap 2024'
+    - 'full stack roadmap 2024'
+    - 'full stack developer roadmap 2024'
     - 'guide to becoming a developer'
     - 'guide to becoming a full stack developer'
     - 'full stack developer'

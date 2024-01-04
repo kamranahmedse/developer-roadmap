@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/backend.json'
 pdfUrl: '/pdfs/roadmaps/backend.pdf'
 order: 2
 briefTitle: 'Backend'
-briefDescription: 'Step by step guide to becoming a backend developer in 2023'
+briefDescription: 'Step by step guide to becoming a backend developer in 2024'
 title: 'Backend Developer'
-description: 'Step by step guide to becoming a modern backend developer in 2023'
+description: 'Step by step guide to becoming a modern backend developer in 2024'
 hasTopics: true
 isForkable: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
@@ -29,8 +29,8 @@ seo:
   title: 'Backend Developer Roadmap: What is Backend Development?'
   description: 'Learn what backend development is, what backend developers do and how to become one using our community-driven roadmap.'
   keywords:
-    - 'backend roadmap 2023'
-    - 'backend developer roadmap 2023'
+    - 'backend roadmap 2024'
+    - 'backend developer roadmap 2024'
     - 'guide to becoming a developer'
     - 'guide to becoming a backend developer'
     - 'backend roadmap'
