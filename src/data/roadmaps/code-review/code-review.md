@@ -26,7 +26,7 @@ seo:
     - 'code review for beginners'
     - 'code reviews'
     - 'code review best practices'
-    - 'code review roadmap 2023'
+    - 'code review roadmap 2024'
     - 'guide to learning code review'
     - 'code review roadmap'
     - 'code review learning path'

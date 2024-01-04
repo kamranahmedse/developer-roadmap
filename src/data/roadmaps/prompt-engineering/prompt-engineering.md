@@ -22,7 +22,7 @@ seo:
   keywords:
     - 'prompt engineering tutorial'
     - 'step by step prompt engineering'
-    - 'prompt engineering roadmap 2023'
+    - 'prompt engineering roadmap 2024'
     - 'guide to learning prompt engineering'
     - 'prompt engineering roadmap'
     - 'prompt engineering'
