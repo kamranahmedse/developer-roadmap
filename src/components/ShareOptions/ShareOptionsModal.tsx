@@ -1,10 +1,4 @@
-import {
-  type ReactNode,
-  useCallback,
-  useState,
-  useMemo,
-  useEffect,
-} from 'react';
+import { type ReactNode, useCallback, useState, useMemo } from 'react';
 import { Globe2, Loader2, Lock } from 'lucide-react';
 import { type ListFriendsResponse, ShareFriendList } from './ShareFriendList';
 import { TransferToTeamList } from './TransferToTeamList';
@@ -37,6 +31,7 @@ type ShareOptionsModalProps = {
   teamId?: string;
   roadmapId?: string;
   description?: string;
+  roadmapSlug?: string;
 
   onShareSettingsUpdate: OnShareSettingsUpdate;
 };
@@ -44,6 +39,7 @@ type ShareOptionsModalProps = {
 export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const {
     roadmapId,
+    roadmapSlug,
     onClose,
     isDiscoverable: defaultIsDiscoverable = false,
     visibility: defaultVisibility,
@@ -68,10 +64,10 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
   const [visibility, setVisibility] = useState(defaultVisibility);
   const [isDiscoverable, setIsDiscoverable] = useState(defaultIsDiscoverable);
   const [sharedTeamMemberIds, setSharedTeamMemberIds] = useState<string[]>(
-    defaultSharedMemberIds
+    defaultSharedMemberIds,
   );
   const [sharedFriendIds, setSharedFriendIds] = useState<string[]>(
-    defaultSharedFriendIds
+    defaultSharedFriendIds,
   );
   const [selectedTeamId, setSelectedTeamId] = useState<string | null>(null);
 
@@ -120,7 +116,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         sharedFriendIds,
         sharedTeamMemberIds,
         isDiscoverable,
-      }
+      },
     );
 
     if (error) {
@@ -151,7 +147,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
           teamId,
           sharedTeamMemberIds,
           isDiscoverable,
-        }
+        },
       );
 
       if (error) {
@@ -162,7 +158,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
 
       window.location.reload();
     },
-    [roadmapId]
+    [roadmapId],
   );
 
   if (isSettingsUpdated) {
@@ -173,6 +169,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
         bodyClassName="p-4 flex flex-col"
       >
         <ShareSuccess
+          roadmapSlug={roadmapSlug}
           visibility={visibility}
           roadmapId={roadmapId!}
           description={description}
@@ -212,11 +209,11 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             setSharedFriendIds([]);
           } else if (visibility === 'friends') {
             setSharedFriendIds(
-              defaultSharedFriendIds.length > 0 ? defaultSharedFriendIds : []
+              defaultSharedFriendIds.length > 0 ? defaultSharedFriendIds : [],
             );
           } else if (visibility === 'team' && teamId) {
             setSharedTeamMemberIds(
-              defaultSharedMemberIds?.length > 0 ? defaultSharedMemberIds : []
+              defaultSharedMemberIds?.length > 0 ? defaultSharedMemberIds : [],
             );
             setSharedFriendIds([]);
           } else {
@@ -329,7 +326,7 @@ export function ShareOptionsModal(props: ShareOptionsModalProps) {
             }
             onClick={() => {
               handleTransferToTeam(selectedTeamId!, sharedTeamMemberIds).then(
-                () => null
+                () => null,
               );
             }}
           >
@@ -374,7 +371,7 @@ function UpdateAction(props: {
       className={cn(
         'flex min-w-[120px] items-center justify-center gap-1.5 rounded-md border border-gray-900 bg-gray-900 px-4 py-2 text-white hover:bg-gray-800 disabled:cursor-not-allowed disabled:opacity-75',
         disabled && 'border-gray-700 bg-gray-700 text-white hover:bg-gray-700',
-        className
+        className,
       )}
       disabled={disabled}
       onClick={onClick}

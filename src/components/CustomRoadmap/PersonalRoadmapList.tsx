@@ -18,7 +18,7 @@ import { PersonalRoadmapActionDropdown } from './PersonalRoadmapActionDropdown';
 import type { GetRoadmapListResponse } from './RoadmapListPage';
 import { useState, type Dispatch, type SetStateAction } from 'react';
 import { ShareOptionsModal } from '../ShareOptions/ShareOptionsModal';
-import {RoadmapIcon} from "../ReactIcons/RoadmapIcon.tsx";
+import { RoadmapIcon } from '../ReactIcons/RoadmapIcon.tsx';
 
 type PersonalRoadmapListType = {
   roadmaps: GetRoadmapListResponse['personalRoadmaps'];
@@ -37,7 +37,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
 
   async function deleteRoadmap(roadmapId: string) {
     const { response, error } = await httpDelete<RoadmapDocument[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-delete-roadmap/${roadmapId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-delete-roadmap/${roadmapId}`,
     );
 
     if (error || !response) {
@@ -61,6 +61,7 @@ export function PersonalRoadmapList(props: PersonalRoadmapListType) {
 
   const shareSettingsModal = selectedRoadmap && (
     <ShareOptionsModal
+      roadmapSlug={selectedRoadmap?.slug}
       isDiscoverable={selectedRoadmap.isDiscoverable}
       description={selectedRoadmap.description}
       visibility={selectedRoadmap.visibility}
@@ -129,7 +130,7 @@ type CustomRoadmapItemProps = {
   roadmap: GetRoadmapListResponse['personalRoadmaps'][number];
   onRemove: (roadmapId: string) => Promise<void>;
   setSelectedRoadmap: (
-    roadmap: GetRoadmapListResponse['personalRoadmaps'][number] | null
+    roadmap: GetRoadmapListResponse['personalRoadmaps'][number] | null,
   ) => void;
 };
 
@@ -183,9 +184,9 @@ function CustomRoadmapItem(props: CustomRoadmapItemProps) {
           Edit
         </a>
         <a
-          href={`/r?id=${roadmap._id}`}
+          href={`/r/${roadmap?.slug}`}
           className={
-            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs hover:bg-blue-50 focus:outline-none text-blue-600'
+            'ml-2 flex items-center gap-2 rounded-md border border-blue-400 bg-white px-2 py-1.5 text-xs text-blue-600 hover:bg-blue-50 focus:outline-none'
           }
           target={'_blank'}
         >

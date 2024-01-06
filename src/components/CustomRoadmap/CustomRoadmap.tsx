@@ -62,10 +62,11 @@ export function hideRoadmapLoader() {
 
 type CustomRoadmapProps = {
   isEmbed?: boolean;
+  slug?: string;
 };
 
 export function CustomRoadmap(props: CustomRoadmapProps) {
-  const { isEmbed = false } = props;
+  const { isEmbed = false, slug } = props;
 
   const { id, secret } = getUrlParams() as { id: string; secret: string };
 
@@ -76,9 +77,11 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
   async function getRoadmap() {
     setIsLoading(true);
 
-    const roadmapUrl = new URL(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`,
-    );
+    const roadmapUrl = slug
+      ? new URL(
+          `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap-by-slug/${slug}`,
+        )
+      : new URL(`${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`);
 
     if (secret) {
       roadmapUrl.searchParams.set('secret', secret);
@@ -102,12 +105,12 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
   }
 
   async function trackVisit() {
-    if (!isLoggedIn() || isEmbed) {
+    if (!isLoggedIn() || isEmbed || !roadmap) {
       return;
     }
 
     await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
-      resourceId: id,
+      resourceId: roadmap?._id,
       resourceType: 'roadmap',
     });
   }
@@ -116,8 +119,15 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
     getRoadmap().finally(() => {
       hideRoadmapLoader();
     });
-    trackVisit().then();
   }, []);
+
+  useEffect(() => {
+    if (!roadmap) {
+      return;
+    }
+
+    trackVisit().then();
+  }, [roadmap]);
 
   if (isLoading) {
     return null;
