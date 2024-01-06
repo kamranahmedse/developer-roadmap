@@ -172,7 +172,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                       customRoadmap.total) *
                     100
                   }
-                  url={`/r?id=${customRoadmap.resourceId}`}
+                  url={`/r/${customRoadmap?.roadmapSlug}`}
                   allowFavorite={false}
                 />
               );
@@ -187,7 +187,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
         const currentTeam: UserProgressResponse[0]['team'] =
           teamRoadmaps?.[teamName]?.[0]?.team;
         const roadmapsList = teamRoadmaps[teamName].filter(
-          (roadmap) => !!roadmap.resourceTitle
+          (roadmap) => !!roadmap.resourceTitle,
         );
         const canManageTeam = ['admin', 'manager'].includes(currentTeam?.role!);
 
@@ -242,7 +242,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                           customRoadmap.total) *
                         100
                       }
-                      url={`/r?id=${customRoadmap.resourceId}`}
+                      url={`/r/${customRoadmap?.roadmapSlug}`}
                       allowFavorite={false}
                     />
                   );

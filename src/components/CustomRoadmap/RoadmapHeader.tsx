@@ -23,6 +23,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     title,
     description,
     _id: roadmapId,
+    slug: roadmapSlug,
     creator,
     team,
     visibility,
@@ -78,6 +79,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     >
       <ShareSuccess
         visibility="public"
+        roadmapSlug={roadmapSlug}
         roadmapId={roadmapId!}
         description={description}
         onClose={() => setIsSharingWithOthers(false)}
@@ -132,7 +134,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             <ShareRoadmapButton
               roadmapId={roadmapId!}
               description={description!}
-              pageUrl={`https://roadmap.sh/r?id=${roadmapId}`}
+              pageUrl={`https://roadmap.sh/r/${roadmapSlug}`}
               allowEmbed={true}
             />
           </div>
@@ -141,6 +143,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               <>
                 {isSharing && $currentRoadmap && (
                   <ShareOptionsModal
+                    roadmapSlug={$currentRoadmap?.slug}
                     isDiscoverable={$currentRoadmap.isDiscoverable}
                     description={$currentRoadmap?.description}
                     visibility={$currentRoadmap?.visibility}

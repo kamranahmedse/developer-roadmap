@@ -24,6 +24,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
     <>
       {isSharing && $canManageCurrentRoadmap && $currentRoadmap && (
         <ShareOptionsModal
+          roadmapSlug={$currentRoadmap?.slug}
           isDiscoverable={$currentRoadmap.isDiscoverable}
           description={$currentRoadmap?.description}
           visibility={$currentRoadmap?.visibility}
@@ -47,7 +48,7 @@ export function ResourceProgressStats(props: ResourceProgressStatsProps) {
           {
             'rounded-bl-md rounded-br-md': isSecondaryBanner,
             'rounded-md': !isSecondaryBanner,
-          }
+          },
         )}
       >
         <p

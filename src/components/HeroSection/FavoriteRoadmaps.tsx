@@ -16,6 +16,7 @@ export type UserProgressResponse = {
   total: number;
   updatedAt: Date;
   isCustomResource: boolean;
+  roadmapSlug?: string;
   team?: {
     name: string;
     id: string;
@@ -41,7 +42,7 @@ function renderProgress(progressList: UserProgressResponse) {
           resourceType: progress.resourceType,
           isFavorite: progress.isFavorite,
         },
-      })
+      }),
     );
 
     const totalDone = progress.done + progress.skipped;
@@ -89,7 +90,7 @@ export function FavoriteRoadmaps() {
     setIsLoading(true);
 
     const { response: progressList, error } = await httpGet<ProgressResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-hero-roadmaps`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-hero-roadmaps`,
     );
 
     if (error || !progressList) {
@@ -121,7 +122,7 @@ export function FavoriteRoadmaps() {
 
   const hasProgress = progress?.length > 0;
   const customRoadmaps = progress?.filter(
-    (p) => p.isCustomResource && !p.team?.name
+    (p) => p.isCustomResource && !p.team?.name,
   );
   const defaultRoadmaps = progress?.filter((p) => !p.isCustomResource);
   const teamRoadmaps: HeroTeamRoadmaps = progress

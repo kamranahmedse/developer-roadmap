@@ -14,6 +14,7 @@ type ProgressResponse = {
   done: number;
   total: number;
   isCustomResource: boolean;
+  roadmapSlug?: string;
 };
 
 export type ActivityResponse = {
@@ -52,7 +53,7 @@ export function ActivityPage() {
 
   async function loadActivity() {
     const { error, response } = await httpGet<ActivityResponse>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-stats`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-user-stats`,
     );
 
     if (!response || error) {
@@ -107,6 +108,7 @@ export function ActivityPage() {
                 .map((roadmap) => (
                   <ResourceProgress
                     key={roadmap.id}
+                    roadmapSlug={roadmap.roadmapSlug}
                     isCustomResource={roadmap.isCustomResource}
                     doneCount={roadmap.done || 0}
                     learningCount={roadmap.learning || 0}
@@ -134,6 +136,7 @@ export function ActivityPage() {
                 })
                 .map((bestPractice) => (
                   <ResourceProgress
+                    roadmapSlug={bestPractice.roadmapSlug}
                     isCustomResource={bestPractice.isCustomResource}
                     key={bestPractice.id}
                     doneCount={bestPractice.done || 0}
