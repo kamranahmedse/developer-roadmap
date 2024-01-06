@@ -136,7 +136,6 @@ export function ActivityPage() {
                 })
                 .map((bestPractice) => (
                   <ResourceProgress
-                    roadmapSlug={bestPractice.roadmapSlug}
                     isCustomResource={bestPractice.isCustomResource}
                     key={bestPractice.id}
                     doneCount={bestPractice.done || 0}
