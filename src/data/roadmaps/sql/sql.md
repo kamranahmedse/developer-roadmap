@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/sql.json'
 pdfUrl: '/pdfs/roadmaps/sql.pdf'
 order: 8
 briefTitle: 'SQL'
-briefDescription: 'Step by step guide to learning SQL in 2023'
+briefDescription: 'Step by step guide to learning SQL in 2024'
 title: 'SQL Roadmap'
-description: 'Step by step guide to learning SQL in 2023'
+description: 'Step by step guide to learning SQL in 2024'
 isNew: true
 hasTopics: true
 dimensions:
@@ -13,13 +13,13 @@ dimensions:
   height: 2116.16
 schema:
   headline: 'SQL Roadmap'
-  description: 'Comprehensive roadmap to learn SQL from scratch in 2023. From basic syntax to advanced querying, this step-by-step guide will equip you with the skills needed to excel in database management and data analysis.'
+  description: 'Comprehensive roadmap to learn SQL from scratch in 2024. From basic syntax to advanced querying, this step-by-step guide will equip you with the skills needed to excel in database management and data analysis.'
   imageUrl: 'https://roadmap.sh/roadmaps/sql.png'
   datePublished: '2023-07-10'
   dateModified: '2023-07-10'
 seo:
   title: 'SQL Roadmap - roadmap.sh'
-  description: 'Comprehensive roadmap to learn SQL from scratch in 2023. From basic syntax to advanced querying, this step-by-step guide will equip you with the skills needed to excel in database management and data analysis.'
+  description: 'Comprehensive roadmap to learn SQL from scratch in 2024. From basic syntax to advanced querying, this step-by-step guide will equip you with the skills needed to excel in database management and data analysis.'
   ogImageUrl: 'https://roadmap.sh/og-images/sql-roadmap.png'
   keywords:
     - 'sql tutorial'
@@ -27,7 +27,7 @@ seo:
     - 'sql for beginners'
     - 'how to learn sql'
     - 'use sql in production'
-    - 'sql roadmap 2023'
+    - 'sql roadmap 2024'
     - 'guide to learning sql'
     - 'sql roadmap'
     - 'sql learning path'
