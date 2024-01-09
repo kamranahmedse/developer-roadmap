@@ -71,7 +71,7 @@
 - [Idle Until Urgent](https://philipwalton.com/articles/idle-until-urgent/)
 - [Browser painting and considerations for web performance](https://css-tricks.com/browser-painting-and-considerations-for-web-performance/)
 - [The Cost Of JavaScript In 2018](https://medium.com/@addyosmani/the-cost-of-javascript-in-2018-7d8950fbb5d4) ([Video](https://www.youtube.com/watch?v=i5R7giitymk))
-- [Examining Web Worker Performance](https://www.loxodrome.io/post/web-worker-performance/)
+- [Examining Web Worker Performance](https://www.jameslmilner.com/posts/web-worker-performance)
 - [Front-End Performance Checklist](https://github.com/thedaviddias/Front-End-Performance-Checklist)
 - [jankfree](http://jankfree.org/)
 - [What forces layout/reflow?](https://gist.github.com/paulirish/5d52fb081b3570c81e3a)
