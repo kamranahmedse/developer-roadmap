@@ -1400,7 +1400,7 @@
             },
             "p2": {
               "x": 184.65450646720024,
-              "y": 260.0261202608003
+              "y": 290.0261202608003
             }
           }
         },
@@ -4794,7 +4794,7 @@
           "typeID": "TextArea",
           "zOrder": "128",
           "w": "262",
-          "h": "205",
+          "h": "255",
           "measuredW": "200",
           "measuredH": "140",
           "x": "969",
@@ -4824,7 +4824,7 @@
           "x": "985",
           "y": "1231",
           "properties": {
-            "controlName": "107-ecosystem:jest"
+            "controlName": "107-ecosystem:vitest"
           },
           "children": {
             "controls": {
@@ -4853,7 +4853,7 @@
                   "y": "10",
                   "properties": {
                     "size": "17",
-                    "text": "Jest"
+                    "text": "Vitest"
                   }
                 }
               ]
@@ -4871,7 +4871,7 @@
           "x": "986",
           "y": "1280",
           "properties": {
-            "controlName": "108-ecosystem:vue-testing-library"
+            "controlName": "108-ecosystem:jest"
           },
           "children": {
             "controls": {
@@ -4896,6 +4896,53 @@
                   "zOrder": "1",
                   "measuredW": "147",
                   "measuredH": "25",
+                  "x": "98",
+                  "y": "10",
+                  "properties": {
+                    "size": "17",
+                    "text": "Jest"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "6457",
+          "typeID": "__group__",
+          "zOrder": "132",
+          "measuredW": "229",
+          "measuredH": "44",
+          "w": "229",
+          "h": "44",
+          "x": "986",
+          "y": "1329",
+          "properties": {
+            "controlName": "109-ecosystem:vue-testing-library"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "229",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "33",
+                  "measuredH": "25",
                   "x": "41",
                   "y": "10",
                   "properties": {
@@ -4908,17 +4955,17 @@
           }
         },
         {
-          "ID": "6457",
+          "ID": "6458",
           "typeID": "__group__",
-          "zOrder": "132",
-          "measuredW": "228",
+          "zOrder": "133",
+          "measuredW": "229",
           "measuredH": "44",
           "w": "228",
           "h": "44",
-          "x": "989",
-          "y": "1329",
+          "x": "986",
+          "y": "1378",
           "properties": {
-            "controlName": "109-ecosystem:cypress"
+            "controlName": "110-ecosystem:cypress"
           },
           "children": {
             "controls": {
@@ -4955,9 +5002,9 @@
           }
         },
         {
-          "ID": "6458",
+          "ID": "6459",
           "typeID": "__group__",
-          "zOrder": "133",
+          "zOrder": "134",
           "measuredW": "207",
           "measuredH": "44",
           "w": "207",
@@ -5002,41 +5049,41 @@
           }
         },
         {
-          "ID": "6459",
+          "ID": "6460",
           "typeID": "TextArea",
-          "zOrder": "134",
+          "zOrder": "135",
           "w": "262",
           "h": "212",
           "measuredW": "200",
           "measuredH": "140",
           "x": "969",
-          "y": "1432"
+          "y": "1462"
         },
         {
-          "ID": "6460",
+          "ID": "6461",
           "typeID": "Label",
-          "zOrder": "135",
+          "zOrder": "136",
           "measuredW": "51",
           "measuredH": "25",
           "x": "1074",
-          "y": "1447",
+          "y": "1477",
           "properties": {
             "size": "17",
             "text": "Styling"
           }
         },
         {
-          "ID": "6461",
+          "ID": "6462",
           "typeID": "__group__",
-          "zOrder": "136",
+          "zOrder": "137",
           "measuredW": "230",
           "measuredH": "44",
           "w": "230",
           "h": "44",
           "x": "986",
-          "y": "1486",
+          "y": "1516",
           "properties": {
-            "controlName": "110-ecosystem:tailwind-css"
+            "controlName": "111-ecosystem:tailwind-css"
           },
           "children": {
             "controls": {
@@ -5073,17 +5120,17 @@
           }
         },
         {
-          "ID": "6462",
+          "ID": "6463",
           "typeID": "__group__",
-          "zOrder": "137",
+          "zOrder": "138",
           "measuredW": "228",
           "measuredH": "44",
           "w": "228",
           "h": "44",
-          "x": "988",
-          "y": "1535",
+          "x": "986",
+          "y": "1565",
           "properties": {
-            "controlName": "111-ecosystem:vuetify"
+            "controlName": "112-ecosystem:vuetify"
           },
           "children": {
             "controls": {
@@ -5120,17 +5167,17 @@
           }
         },
         {
-          "ID": "6463",
+          "ID": "6464",
           "typeID": "__group__",
-          "zOrder": "138",
+          "zOrder": "139",
           "measuredW": "228",
           "measuredH": "44",
           "w": "228",
           "h": "44",
-          "x": "988",
-          "y": "1583",
+          "x": "986",
+          "y": "1614",
           "properties": {
-            "controlName": "112-ecosystem:element-ui"
+            "controlName": "113-ecosystem:element-ui"
           },
           "children": {
             "controls": {
@@ -5167,9 +5214,9 @@
           }
         },
         {
-          "ID": "6464",
+          "ID": "6465",
           "typeID": "__group__",
-          "zOrder": "139",
+          "zOrder": "140",
           "measuredW": "274",
           "measuredH": "57",
           "w": "274",
@@ -5216,9 +5263,9 @@
           }
         },
         {
-          "ID": "6465",
+          "ID": "6466",
           "typeID": "__group__",
-          "zOrder": "140",
+          "zOrder": "141",
           "measuredW": "300",
           "measuredH": "148",
           "w": "300",
@@ -5387,7 +5434,7 @@
           }
         },
         {
-          "ID": "6466",
+          "ID": "6467",
           "typeID": "__group__",
           "zOrder": "58",
           "measuredW": "350",
