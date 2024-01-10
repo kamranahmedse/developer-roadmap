@@ -27,5 +27,5 @@ To enhance user decision-making experience, consider the following principles:
 
 Understanding human decision making and incorporating these principles into UX design will enable designers to create more intuitive, enjoyable, and efficient user experiences.
 
-- [Types of Cognitive Bias](https://www.youtube.com/watch?v=wewgbir_riw)
+- [Types of Cognitive Bias](https://www.youtube.com/watch?v=wEwGBIr_RIw)
 - [List of Cognitive Biases](https://thedecisionlab.com/biases)
