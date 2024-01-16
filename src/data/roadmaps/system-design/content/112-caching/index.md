@@ -16,3 +16,8 @@ Also, you can have the cache in several places, examples include:
 - Web Server Caching
 - Database Caching
 - Application Caching
+
+
+Have a look at the following resources to learn more:
+
+- [Caching Patterns](https://newsletter.systemdesign.one/p/caching-patterns)
