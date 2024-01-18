@@ -10,4 +10,4 @@ Visit the following resources to learn more:
 - [Codeacademy - Free Course](https://www.codecademy.com/learn/learn-java)
 - [W3 Schools Tutorials](https://www.w3schools.com/java/)
 - [Java Crash Course](https://www.youtube.com/watch?v=eIrMbAQSU34)
-- [Complete Java course](https://www.youtube.com/watch?v=xk4_1vdrzzo)
+- [Complete Java course](https://www.youtube.com/watch?v=xk4_1vDrzzo)
