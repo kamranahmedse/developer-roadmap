@@ -5,5 +5,6 @@ A binary search tree, also called an ordered or sorted binary tree, is a rooted 
 Visit the following resources to learn more:
 
 - [Tree Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=S2W3SXGPVyU)
-- [How to Implement Binary Search Tree in Python](https://www.section.io/engineering-education/implementing-binary-search-tree-using-python/)
+- [WRITING A BINARY SEARCH TREE IN PYTHON WITH EXAMPLES](https://blog.boot.dev/computer-science/binary-search-tree-in-python/)
+- [How to Implement Binary Search Tree in Python](https://web.archive.org/web/20230601181553/https://www.section.io/engineering-education/implementing-binary-search-tree-using-python/)
 - [Problem Set](https://www.geeksforgeeks.org/binary-search-tree-data-structure/?ref=gcse)
