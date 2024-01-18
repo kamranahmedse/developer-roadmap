@@ -207,7 +207,7 @@ Now, if on the other hand, you’re looking to build the frontend and the backen
 
 The answer to this question is always going to be “yes”, whether you’re coming from the frontend and you already have JS experience or if you’re picking it up from scratch.  In fact, according to [StackOverflow’s 2023 survey, JavaScript is the most used language by professionals](https://survey.stackoverflow.co/2023/#most-popular-technologies-language-prof) (with 65.85% of the votes).
 
-![JavaScript Interest](/guides/backend-languages/js-interest.png)
+![JavaScript Interest](/guides/backend-languages/javascript-interest.png)
 
 If you’re coming from the client side, then adopting JS for your backend will let you start working in minutes. You’ll probably spend more time learning the backend-specific concepts than the language itself.
 
