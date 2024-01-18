@@ -2,7 +2,7 @@ import { getAllBestPractices } from '../lib/best-pratice';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
-import {getAllQuestionGroups} from "../lib/question-group";
+import { getAllQuestionGroups } from '../lib/question-group';
 
 export async function GET() {
   const guides = await getAllGuides();
@@ -36,7 +36,9 @@ export async function GET() {
       })),
       ...guides.map((guide) => ({
         id: guide.id,
-        url: `/guides/${guide.id}`,
+        url: guide.frontmatter.excludedBySlug
+          ? guide.frontmatter.excludedBySlug
+          : `/guides/${guide.id}`,
         title: guide.frontmatter.title,
         group: 'Guides',
       })),
@@ -52,6 +54,6 @@ export async function GET() {
       headers: {
         'Content-Type': 'application/json',
       },
-    }
+    },
   );
 }
