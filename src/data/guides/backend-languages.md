@@ -2,9 +2,9 @@
 title: 'The 5 Best Backend Development Languages to Master (2024)'
 description: 'Discover the best backend development languages to master in 2024.'
 author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+  name: 'Fernando Doglio'
+  url: 'https://twitter.com/deleteman123'
+  imageUrl: '/authors/fernando.jpeg'
 excludedBySlug: '/backend/languages'
 seo:
   title: 'The 5 Best Backend Development Languages to Master (2024)'
