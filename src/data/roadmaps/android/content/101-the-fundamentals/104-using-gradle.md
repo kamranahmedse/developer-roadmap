@@ -6,4 +6,5 @@ Visit the following resources to learn more:
 
 - [Introduction to Gradle for Complete Beginners - 25minutes](https://youtu.be/-dtcEMLNmn0?si=NuIP-3wNpUrxfTxA)
 - [Gradle Course for Beginners - 55minutes](https://www.youtube.com/watch?v=R6Z-Sxb837I)
+- [Get going with Gradle - PDF](https://assets.gradlehero.com/get-going-with-gradle/get-going-with-gradle-book.pdf)
 
