@@ -4,7 +4,7 @@ briefTitle: 'React'
 briefDescription: 'Test, rate and improve your React knowledge with these questions.'
 title: 'React Questions'
 description: 'Test, rate and improve your React knowledge with these questions.'
-isNew: true
+isNew: false
 seo:
   title: 'React Questions'
   description: 'Curated list of React questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'

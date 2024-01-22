@@ -6,7 +6,7 @@ briefDescription: 'Step by step guide to becoming an Android Developer in 2024'
 title: 'Android Developer'
 description: 'Step by step guide to becoming an Android developer in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 2197.76

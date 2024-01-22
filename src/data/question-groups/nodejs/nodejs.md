@@ -3,7 +3,7 @@ order: 1
 briefTitle: 'Node.js'
 briefDescription: 'Test, rate and improve your Node.js knowledge with these questions.'
 title: 'Node.js Questions'
-description: 'Curated list of Node.js questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'
+description: 'Test, rate and improve your Node.js knowledge with these questions.'
 isNew: true
 seo:
   title: 'Node.js Questions'
@@ -36,7 +36,7 @@ questions:
       - 'Beginner'
   - question: What is Event Loop in Node.js?
     answer: |
-      The event loop is a single-threaded loop responsible for handling all asynchronous callbacks in Node.js. It continuously checks for events and executes associated callback functions, allowing Node.js to handle asynchronous tasks efficiently. Its non-blocking I/O model ensures that it can process multiple operations simultaneously without waiting for one to complete before moving on to the next, contributing to its scalability and performance.
+      The event loop is a single-threaded loop responsible for handling all asynchronous tasks in Node.js. It continuously checks for events and executes associated callback functions, allowing Node.js to handle asynchronous tasks efficiently. Its non-blocking I/O model ensures that it can process multiple operations simultaneously without waiting for one to complete before moving on to the next, contributing to its scalability and performance. [Watch this video](https://www.youtube.com/watch?v=8aGhZQkoFbQ) to learn more about the topic.
     topics:
       - 'Core'
       - 'Intermediate'
@@ -160,7 +160,7 @@ questions:
   - question: How to take user input from the command line in Node.js?
     answer: input-from-command-line.md
     topics:
-      - 'Core'
+      - 'CLI'
       - 'Beginner'
   - question: How to create a web server in Node.js?
     answer: web-server.md
@@ -172,19 +172,19 @@ questions:
       Streams are objects that allow you to read data from a source or write data to a destination in a continuous manner. They are used to handle large amounts of data efficiently.
     topics:
       - 'Core'
-      - 'Intermediate'
+      - 'Advanced'
   - question: What is difference between `fork` and `spawn` methods of `child_process` module?
     answer: |
       The `fork` method is used when you want to run another JavaScript file in a separate worker. It's like having a friend with a specific task. You can communicate with them via messages and they can send messages back to you. The `spawn` method is used when you want to run a command in a separate process. It's like asking someone to do a specific. You can communicate with them via stdin/stdout/stderr, but it's more like giving orders and getting results.
     topics:
       - 'Core'
-      - 'Intermediate'
+      - 'Advanced'
   - question: What is the `os` module?
     answer: |
       The `os` module provides methods for interacting with the operating system. It can be used to get information about the operating system, such as the hostname, platform, architecture, etc.
     topics:
       - 'Core'
-      - 'Beginner'
+      - 'Intermediate'
   - question: Can you access the DOM in Node.js?
     answer: |
       No, you cannot access the DOM in Node.js because it does not have a DOM. It is a server-side runtime for JavaScript, so it does not have access to the browser's DOM.
@@ -196,8 +196,8 @@ questions:
       Clustering is a technique used to distribute the load across multiple processes. It is used to improve the performance and scalability of Node.js applications.
     topics:
       - 'Core'
-      - 'Intermediate'
-  - question: Why memory leak happens in Node.js?
+      - 'Advanced'
+  - question: How can memory leaks happen in Node.js?
     answer: |
       Memory leaks happen when a program allocates memory but does not release it when it is no longer needed. This can happen due to bugs in the program or due to the way the program is designed. In Node.js, memory leaks can happen due to the use of closures, circular references, and global variables.
     topics:
