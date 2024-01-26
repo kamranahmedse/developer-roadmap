@@ -121,7 +121,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
         {progress.map((resource) => (
           <HeroRoadmap
-            key={resource.resourceId}
+            key={`${resource.resourceType}-${resource.resourceId}`}
             resourceId={resource.resourceId}
             resourceType={resource.resourceType}
             resourceTitle={resource.resourceTitle}
