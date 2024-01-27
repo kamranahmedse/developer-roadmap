@@ -34,5 +34,4 @@ Containers can be vulnerable to attacks, as their images depend on a variety of 
 
 By understanding and applying these key aspects of container security, you'll be well on your way to ensuring that your containerized applications and infrastructure are protected from potential threats.
 
-- Many software developers still has issues in understanding the topic, so here is a video resource which helped me understand this topic when i was starting with DecvOps (Docker in gerenral):
-[Visit the following resources to learn more:](https://youtu.be/JE2PJbbpjsM?si=lb6SvHH7735GIHvu)
+- [Container Security](https://youtu.be/JE2PJbbpjsM?si=lb6SvHH7735GIHvu)
