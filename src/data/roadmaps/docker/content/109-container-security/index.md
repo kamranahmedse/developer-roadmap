@@ -32,6 +32,6 @@ Containers can be vulnerable to attacks, as their images depend on a variety of 
 - **Secure Base Images**: Use minimal and secure base images for container creation, reducing the attack surface and potential vulnerabilities.
 - **Regular Updates**: Keep base images and containers up-to-date with the latest security patches and updates.
 
-By understanding and applying these key aspects of container security, you'll be well on your way to ensuring that your containerized applications and infrastructure are protected from potential threats.
-
 - [Container Security](https://youtu.be/JE2PJbbpjsM?si=lb6SvHH7735GIHvu)
+
+By understanding and applying these key aspects of container security, you'll be well on your way to ensuring that your containerized applications and infrastructure are protected from potential threats.
