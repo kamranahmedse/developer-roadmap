@@ -4,4 +4,5 @@ HATEOAS is an acronym for <b>H</b>ypermedia <b>A</b>s <b>T</b>he <b>E</b>ngine <
 
 Visit the following resources to learn more:
 
-- [Oktane17: Designing Beautiful REST + JSON APIs (3:56 - 5:57)](https://youtu.be/MiOSzpfP1Ww?t=236)
+- [REST API - Understanding HATEOAS](https://www.youtube.com/watch?v=oTJnx_xjpb0)
+- [What is HATEOAS in REST? | Spring MVC, Spring Boot Example | Tech Primers](https://www.youtube.com/watch?v=vvcANMpfr5I)
