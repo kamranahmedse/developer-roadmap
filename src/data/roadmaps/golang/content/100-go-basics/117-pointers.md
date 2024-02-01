@@ -5,7 +5,7 @@ In Go, a pointer is a variable that stores the memory address of another variabl
 
 Visit the following resources to learn more:
 - [Go Pointer](https://www.geeksforgeeks.org/pointers-in-golang/)
-- [Go by Example: Structs](https://www.golang-book.com/books/intro/8)
+- [Go by Example: Pointers](https://www.golang-book.com/books/intro/8)
 - [Go Pointer Explained](https://www.youtube.com/watch?v=-BFJ0dZyxHg)
 - [Go Pointer Explained 2](https://www.youtube.com/watch?v=4B2rwYvuiBo)
 - [Go Pointer: Tour](https://go.dev/tour/moretypes/1)
