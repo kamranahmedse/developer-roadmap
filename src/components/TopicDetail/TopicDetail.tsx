@@ -204,7 +204,7 @@ export function TopicDetail(props: TopicDetailProps) {
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6 2xl:right-1/2 2xl:translate-x-[50%]"
       >
         {isLoading && (
           <div className="flex w-full justify-center">
