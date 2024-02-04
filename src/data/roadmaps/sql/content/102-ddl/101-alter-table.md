@@ -46,7 +46,7 @@ To modify the datatype of a column:
 
 ```sql
 ALTER TABLE tableName
-ALTER COLUMN columnName TYPE newDataType;
+MODIFY COLUMN columnName newDataType;
 ```
 
 ## Add/Drop Constraints
