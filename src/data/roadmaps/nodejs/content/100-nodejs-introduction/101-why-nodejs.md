@@ -5,6 +5,6 @@ Node.js is a cross-platform runtime, perfect for a wide range of use cases. Its 
 Visit the following resources to learn more:
 
 - [Pros of Node.js](https://www.freecodecamp.org/news/what-are-the-advantages-of-node-js/)
-- [Learn Node.js](https://nodejs.dev/en/learn/)
+- [Learn Node.js](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [Why Choose Node.js?](https://medium.com/selleo/why-choose-node-js-b0091ad6c3fc)
 - [5 Reasons to Choose Node.js](https://www.bitovi.com/blog/5-reasons-to-choose-nodejs)

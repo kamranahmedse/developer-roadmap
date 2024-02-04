@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [How To Create a Web Server in Node.js with the HTTP Module](https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module)
 - [Node.js Http Module](https://www.geeksforgeeks.org/node-js-http-module/)
-- [The Node.js Http Module](https://nodejs.dev/en/learn/the-nodejs-http-module/)
+- [The Node.js Http Module](https://nodejs.org/docs/latest/api/http.html)
