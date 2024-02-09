@@ -11,6 +11,8 @@ import { Toaster } from '../components/Toast';
 import { PageSponsor } from '../components/PageSponsor';
 import { siteConfig } from '../lib/config';
 import '../styles/global.css';
+import { PageVisit } from '../components/PageVisit/PageVisit';
+import type { ResourceType } from '../lib/resource-progress';
 
 export interface Props {
   title: string;
@@ -25,6 +27,8 @@ export interface Props {
   initialLoadingMessage?: string;
   permalink?: string;
   jsonLd?: Record<string, unknown>[];
+  resourceId?: string;
+  resourceType?: ResourceType;
 }
 
 const {
@@ -39,6 +43,8 @@ const {
   jsonLd = [],
   redirectUrl = '',
   initialLoadingMessage = '',
+  resourceId,
+  resourceType,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
@@ -55,7 +61,7 @@ const gaPageIdentifier = Astro.url.pathname
   .replace(/\//g, ':');
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
@@ -171,5 +177,10 @@ const gaPageIdentifier = Astro.url.pathname
     <slot name='after-footer' />
 
     <Analytics />
+    <PageVisit
+      resourceId={resourceId}
+      resourceType={resourceType}
+      client:load
+    />
   </body>
 </html>

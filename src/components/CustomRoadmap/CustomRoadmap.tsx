@@ -101,22 +101,10 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
     setIsLoading(false);
   }
 
-  async function trackVisit() {
-    if (!isLoggedIn() || isEmbed) {
-      return;
-    }
-
-    await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
-      resourceId: id,
-      resourceType: 'roadmap',
-    });
-  }
-
   useEffect(() => {
     getRoadmap().finally(() => {
       hideRoadmapLoader();
     });
-    trackVisit().then();
   }, []);
 
   if (isLoading) {
