@@ -1,0 +1,28 @@
+---
+import { UserActivityHeatmap } from '../../../components/Account/UserActivityHeatmap';
+import { UserDetails } from '../../../components/Account/UserDetails';
+import { userApi } from '../../../api/user';
+import AccountLayout from '../../../layouts/AccountLayout.astro';
+
+const { username } = Astro.params;
+if (!username) {
+  return Astro.redirect('/404');
+}
+
+const userClient = userApi(Astro as any);
+const { response: userDetails, error } =
+  await userClient.getUserByUsername(username);
+
+if (error || !userDetails) {
+  return Astro.redirect('/404');
+}
+---
+
+<AccountLayout title={userDetails?.name}>
+  <section class='container mt-5'>
+    <UserDetails userDetails={userDetails!} client:load />
+    <div class='mt-6'>
+      <UserActivityHeatmap activity={userDetails?.activity!} client:load />
+    </div>
+  </section>
+</AccountLayout>

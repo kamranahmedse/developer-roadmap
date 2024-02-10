@@ -28,3 +28,10 @@ export function getRelativeTimeString(date: string): string {
 
   return relativeTime;
 }
+
+export function formatActivityDate(date: string): string {
+  return new Date(date).toLocaleDateString('en-US', {
+    month: 'long',
+    day: 'numeric',
+  });
+}
