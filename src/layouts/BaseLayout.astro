@@ -3,6 +3,7 @@ import Analytics from '../components/Analytics/Analytics.astro';
 import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
 import Authenticator from '../components/Authenticator/Authenticator.astro';
 import { CommandMenu } from '../components/CommandMenu/CommandMenu';
+import { AppChecklist } from '../components/AppChecklist';
 import Footer from '../components/Footer.astro';
 import Navigation from '../components/Navigation/Navigation.astro';
 import OpenSourceBanner from '../components/OpenSourceBanner.astro';
@@ -173,6 +174,8 @@ const gaPageIdentifier = Astro.url.pathname
       gaPageIdentifier={briefTitle || gaPageIdentifier}
       client:load
     />
+
+    <AppChecklist client:idle />
 
     <slot name='after-footer' />
 

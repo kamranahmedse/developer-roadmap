@@ -1,0 +1,414 @@
+---
+import GridItem from '../components/GridItem.astro';
+import SimplePageHeader from '../components/SimplePageHeader.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { RoadmapCard } from '../components/GetStarted/RoadmapCard';
+import { getRoadmapsByTag } from '../lib/roadmap';
+import { RoadmapMultiCard } from '../components/GetStarted/RoadmapMultiCard';
+import { RoleRoadmaps } from '../components/GetStarted/RoleRoadmaps';
+import {
+  Blocks,
+  Code,
+  ExternalLink,
+  Globe2,
+  GraduationCap,
+  MousePointerSquare,
+  ServerCog,
+  ServerCogIcon,
+  ArrowRight,
+  Server,
+  Cloud,
+  Smartphone,
+  Bot,
+  MessageCircleCode,
+  Shield,
+  ShieldHalf,
+  Workflow,
+  Gamepad2,
+  PenSquare,
+  Component,
+  Waypoints,
+  CheckSquare,
+} from 'lucide-react';
+import { SectionBadge } from '../components/GetStarted/SectionBadge';
+import { TipItem } from '../components/GetStarted/TipItem';
+---
+
+<BaseLayout
+  title='Developer Roadmaps'
+  description={'Step by step guides and paths to learn different tools or technologies'}
+  permalink={'/roadmaps'}
+>
+  <div class='bg-gradient-to-b from-gray-200 to-white py-4 sm:py-8 md:py-12'>
+    <div class='container'>
+      <div class='text-left'>
+        <SectionBadge title='Beginner Roadmaps' />
+      </div>
+      <div class='my-3 md:my-5 text-left'>
+        <h2 class='mb-0 sm:mb-1 text-xl sm:text-3xl font-semibold'>
+          Are you an Absolute beginner?
+        </h2>
+        <p class='text-sm sm:text-base text-gray-500'>
+          Here are some beginner friendly roadmaps you should start with.
+        </p>
+      </div>
+
+      <div class='grid sm:grid-cols-2 md:grid-cols-3 gap-3'>
+        <RoadmapCard
+          icon={Globe2}
+          title='Frontend Developer'
+          link='/frontend?r=frontend-beginner'
+          description='Develop the part of web apps that users interact with i.e. things rendered in the browser.'
+        />
+        <RoadmapCard
+          icon={ServerCog}
+          title='Backend Developer'
+          link='/backend?r=backend-beginner'
+          description='Develop the part hidden from the user e.g. things like APIs, databases, search engines etc.'
+        />
+
+        <RoadmapCard
+          icon={Globe2}
+          icon2={ServerCog}
+          title='Full Stack Developer'
+          link='/full-stack'
+          description='Develop both the frontend and backend side of the web apps i.e. the whole development stack.'
+        />
+      </div>
+
+      <p class="my-4 sm:my-7 text-sm sm:text-base">
+        There is also a <a
+          target='_blank'
+          class='font-medium underline underline-offset-2'
+          href='/devops?r=devops-beginner'>beginner DevOps roadmap</a
+        > which requires you to have some backend knowledge and entails a lot of
+        operations work i.e. deploying, scaling, monitoring, and maintaining
+        applications.
+      </p>
+
+      <div class='rounded-xl border bg-white p-3 sm:p-4'>
+        <h2 class='mb-0 sm:mb-1 text-lg sm:text-xl font-semibold'>Tips for Beginners</h2>
+        <p class="text-sm sm:text-base">
+          Learning to code can be overwhelming, here are some tips to help you
+          get started:
+        </p>
+
+        <div class='mt-3 flex flex-col gap-1'>
+          <TipItem
+            title='Avoid Tutorial Hell'
+            description="Don't get stuck in tutorial purgatory. It's easy to get caught up in tutorials and never actually build anything. Tutorials are great for learning, but the best way to learn is by doing. An example of this is to watch a project-based tutorial, code along with the instructor. After finishing the tutorial, try to build the same project from scratch without the tutorial (if you can't, it's okay to go back to the tutorial). Repeat this process until you can build the project without the tutorial. After that, try to add new features to the project or build something similar from scratch."
+            client:load
+          />
+
+          <TipItem
+            title='Consistent study habits'
+            description="Commit to regular, consistent study sessions. It's better to study for 30 minutes every day than to cram for 10 hours once a week."
+            client:load
+          />
+
+          <TipItem
+            title='Set a clear goal'
+            description='Establish a clear, significant goal that motivates you. It could be building a company, an app, a website, or anything that personally resonates with you.'
+            client:load
+          />
+
+          <TipItem
+            title='Embrace the marathon mindset'
+            description="You will feel lost in the beginning. Avoid comparing yourself to others; everyone progresses at their own pace. Understand that challenges are part of the journey, and it's okay to take your time."
+            client:load
+          />
+
+          <TipItem
+            title='Build projects'
+            description="The best way to learn is by doing. Start building projects as soon as possible. It's okay if they're simple at first; the goal is to learn and improve. Build upon code-alongs and tutorials to create your projects and learn through hands-on experience"
+            client:load
+          />
+          <TipItem
+            title='Learn to get unstuck'
+            description="Once you start learning to code, you're going to run into problems that you don't know how to solve. This is normal and part of the process. You don't really learn unless you struggle through it. That said, you won't always be able to move forward without some help. So how do you find that help? First off, forget books. They aren't a great place to start here, because the number and types of errors they can cover is so small. Online is the easiest place to find help. Most devs look for solutions on StackOverflow or just google the error message (if they have one). Other solutions are to find newsgroups or forums dedicated to the language you're using."
+            client:load
+          />
+
+          <TipItem
+            title='Join a community'
+            description="Join a community of learners, such as a local coding group, a Discord server, or a subreddit. It's a great way to get help, share your progress, and learn from others."
+            client:load
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <RoleRoadmaps
+    badge='Self-taught Developer'
+    title='Are you a self-taught developer?'
+    description='How about taking a peek at the Computer Science roadmap aimed at self-taught developers?'
+  >
+    <RoadmapCard
+      icon={GraduationCap}
+      title='Computer Science'
+      link='/computer-science'
+      description='Learn the fundamental concepts of computer science and programming.'
+    />
+    <RoadmapCard
+      icon={Blocks}
+      title='System Design'
+      link='/system-design'
+      description='Learn how to design large scale systems and prepare for system design interviews.'
+    />
+    <RoadmapCard
+      icon={Blocks}
+      title='Software Design and Architecture'
+      link='/software-design-architecture'
+      description='Learn how to design and architect software systems.'
+    />
+  </RoleRoadmaps>
+
+  <RoleRoadmaps
+    badge='Frontend Developer'
+    title='Are you a Frontend Developer?'
+    description='How about skimming through the frontend or JavaScript roadmaps to see if there is anything you missed? TypeScript is all the rage these days, maybe it is time to learn it?'
+  >
+    <RoadmapCard
+      icon={Globe2}
+      title='Frontend'
+      link='/frontend'
+      description='Learn all you need to know to become a frontend developer.'
+    />
+
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'JavaScript', link: '/javascript' },
+        { title: 'TypeScript', link: '/typescript' },
+      ]}
+      description='How about mastering the language of the web: JavaScript? or maybe TypeScript?'
+      secondaryRoadmaps={[
+        {
+          title: 'Frontend Performance',
+          link: '/best-practices/frontend-performance',
+        },
+      ]}
+      secondaryDescription='Or learn how to improve the performance of your web apps?'
+    />
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'React', link: '/react' },
+        { title: 'Vue', link: '/vue' },
+        { title: 'Angular', link: '/angular' },
+      ]}
+      description='Or learn a framewor?'
+      secondaryRoadmaps={[{ title: 'Design Systems', link: '/design-system' }]}
+      secondaryDescription='or learn about design systems?'
+    />
+  </RoleRoadmaps>
+
+  <RoleRoadmaps
+    badge='Backend Developer'
+    title='Are you a Backend Developer?'
+    description='Explore the general backend roadmap or dive into a specific technology like Node.js, Python, Java etc'
+  >
+    <RoadmapCard
+      icon={ServerCog}
+      title='Backend'
+      link='/backend'
+      description='Learn all you need to know to become a backend developer.'
+    />
+
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'Node.js', link: '/nodejs' },
+        { title: 'Rust', link: '/rust' },
+        { title: 'Go', link: '/golang' },
+        { title: 'Python', link: '/python' },
+        { title: 'Java', link: '/java' },
+        { title: 'ASP.NET Core', link: '/aspnet-core' },
+        { title: 'C++', link: '/cpp' },
+      ]}
+      description='Or learn a specific technology?'
+    />
+
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'System Design', link: '/system-design' },
+        {
+          title: 'Design and Architecture',
+          link: '/software-design-architecture',
+        },
+      ]}
+      description='How about improving your System Design skills?'
+      secondaryRoadmaps={[
+        { title: 'SQL', link: '/sql' },
+        { title: 'PostgreSQL', link: '/postgresql-dba' },
+        { title: 'MongoDB', link: '/mongodb' },
+      ]}
+      secondaryDescription='Or perhaps improve your database skills?'
+    />
+  </RoleRoadmaps>
+
+  <RoleRoadmaps
+    badge='DevOps Engineer'
+    title='DevOps or a Wanna-be DevOps Engineer?'
+    description='Explore the general DevOps roadmap or dive into a specific technology like Docker, Kubernetes etc'
+  >
+    <RoadmapCard
+      icon={Server}
+      title='DevOps'
+      link='/devops'
+      description='Learn all you need to know to become a DevOps Engineer.'
+    />
+
+    <RoadmapCard
+      icon={Cloud}
+      title='AWS'
+      link='/AWS'
+      description='Learn all you need to know to become an AWS Engineer.'
+    />
+
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'Docker', link: '/docker' },
+        { title: 'Kubernetes', link: '/kubernetes' },
+      ]}
+      description='or perhaps you want to learn Docker or Kubernetes?'
+      secondaryRoadmaps={[
+        { title: 'Python', link: '/python' },
+        { title: 'Go', link: '/golang' },
+        { title: 'Rust', link: '/rust' },
+      ]}
+      secondaryDescription='Or maybe improve your automation skills?'
+    />
+  </RoleRoadmaps>
+
+  <RoleRoadmaps
+    badge='Mobile Developer'
+    title='Are you a Mobile Developer?'
+    description='How about beefing up your mobile development skills?'
+  >
+    <RoadmapCard
+      icon={Smartphone}
+      title='Android'
+      link='/android'
+      description='Learn all you need to know to become an Android Developer.'
+    />
+
+    <RoadmapMultiCard
+      roadmaps={[
+        { title: 'React Native', link: '/react-native' },
+        { title: 'Flutter', link: '/flutter' },
+      ]}
+      description='Or learn a cross-platform framework?'
+    />
+
+    <RoadmapCard
+      icon={Smartphone}
+      title='iOS'
+      link='/ios'
+      isUpcoming={true}
+      description='We will be adding an iOS roadmap soon.'
+    />
+  </RoleRoadmaps>
+  <RoleRoadmaps
+    badge='AI and Machine Learning'
+    title='Are you an AI or Machine Learning enthusiast?'
+    description='How about diving into the AI or Machine Learning roadmaps?'
+  >
+    <RoadmapCard
+      icon={Bot}
+      title='AI and Data Science'
+      link='/ai-data-scientist'
+      description='Learn all you need to know to become an AI or Data Scientist.'
+    />
+
+    <RoadmapCard
+      icon={MessageCircleCode}
+      title='Prompt Engineering'
+      link='/prompt-engineering'
+      description='Learn how to write better prompts for GPT-3 and other language models.'
+    />
+
+    <RoadmapCard
+      icon={Bot}
+      icon2={ServerCog}
+      title='MLOps'
+      link='/mlops'
+      description='Learn how to deploy and manage machine learning models.'
+      isUpcoming={true}
+    />
+  </RoleRoadmaps>
+  <RoleRoadmaps
+    badge='More Roles'
+    title='Fancy something else?'
+    description='Explore the following roadmaps about UX, Game Development, Software Architect and more'
+  >
+    <div class='flex flex-col justify-center gap-3'>
+      <RoadmapCard
+        icon={ShieldHalf}
+        title='Cyber Security'
+        link='/cyber-security'
+        description='Learn to become a Cyber Security Expert.'
+      />
+      <RoadmapCard
+        icon={Workflow}
+        title='UX Designer'
+        link='/ux-design'
+        description='Learn all you need to know to become a UX Designer.'
+      />
+    </div>
+    <div class='flex flex-col justify-center gap-3'>
+      <RoadmapCard
+        icon={Gamepad2}
+        title='Game Development'
+        link='/game-developer'
+        description='Learn all you need to know to become a Game Developer.'
+      />
+      <RoadmapCard
+        icon={PenSquare}
+        title='Technical Writer'
+        link='/technical-writer'
+        description='Learn all you need to know to become a Technical Writer.'
+      />
+    </div>
+    <div class='flex flex-col justify-center gap-3'>
+      <RoadmapCard
+        icon={PenSquare}
+        title='Blockchain'
+        link='/blockchain'
+        description='Learn all you need to know to become a Technical Writer.'
+      />
+      <RoadmapCard
+        icon={Component}
+        title='Software Architect'
+        link='/software-architect'
+        description='Learn all you need to know to become a Software Architect.'
+      />
+    </div>
+  </RoleRoadmaps>
+
+  <div class='container'>
+    <div class='-mt-5 mb-12 rounded-3xl bg-black p-5'>
+      <h2 class='mb-0.5 sm:mb-1 text-xl sm:text-2xl font-semibold text-white'>There is more!</h2>
+      <p class='text-gray-400 text-sm sm:text-base'>
+        We have a lot more content for you to explore.
+      </p>
+
+      <div class='my-4 sm:my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3'>
+        <a href='/roadmaps' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
+          <Waypoints className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
+           Explore all Roadmaps
+        </a>
+        <a href='/best-practices' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
+          <CheckSquare className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
+          Explore Best Practices
+        </a>
+        <a href='/questions' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
+          <CheckSquare className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
+          Explore Questions
+        </a>
+      </div>
+      <p class="text-gray-400 sm:text-base text-sm">
+        Or visit our <a href="/guides" class="rounded-lg hover:bg-gray-600 transition-colors hover:text-white bg-gray-700 text-gray-300 py-1 px-2">guides</a> and <a href="/videos" class="rounded-lg hover:bg-gray-600 transition-colors hover:text-white bg-gray-700 text-gray-300 py-1 px-2">videos</a> for long-form content.</p>
+    </div>
+  </div>
+
+
+</BaseLayout>
