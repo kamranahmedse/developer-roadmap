@@ -1,6 +1,5 @@
 ---
-import { UserActivityHeatmap } from '../../../components/Account/UserActivityHeatmap';
-import { UserDetails } from '../../../components/Account/UserDetails';
+import { UserPublicAccountPage } from '../../../components/UserPublicAccount/UserPublicAccountPage';
 import { userApi } from '../../../api/user';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
 
@@ -19,10 +18,5 @@ if (error || !userDetails) {
 ---
 
 <AccountLayout title={userDetails?.name}>
-  <section class='container mt-5'>
-    <UserDetails userDetails={userDetails!} client:load />
-    <div class='mt-6'>
-      <UserActivityHeatmap activity={userDetails?.activity!} client:load />
-    </div>
-  </section>
+  <UserPublicAccountPage {...userDetails} client:load />
 </AccountLayout>

@@ -38,6 +38,29 @@ export type UserActivityCount = {
   totalActivityCount: number;
 };
 
+type ProgressResponse = {
+  updatedAt: string;
+  title: string;
+  id: string;
+  learning: number;
+  skipped: number;
+  done: number;
+  total: number;
+  isCustomResource?: boolean;
+  roadmapSlug?: string;
+};
+
+export type UserResourceProgressStats = {
+  done: {
+    total: number;
+  };
+  learning: {
+    total: number;
+    roadmaps: ProgressResponse[];
+    bestPractices: ProgressResponse[];
+  };
+};
+
 export type GetUserByUsernameResponse = Omit<
   UserDocument,
   | 'password'
@@ -45,9 +68,10 @@ export type GetUserByUsernameResponse = Omit<
   | 'resetPasswordCode'
   | 'resetPasswordCodeAt'
   | 'email'
-> & {
-  activity: UserActivityCount;
-};
+> &
+  UserResourceProgressStats & {
+    activity: UserActivityCount;
+  };
 
 export function userApi(context: APIContext) {
   return {

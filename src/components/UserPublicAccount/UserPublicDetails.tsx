@@ -1,11 +1,11 @@
 import { Github, Globe, LinkedinIcon, Twitter } from 'lucide-react';
 import type { GetUserByUsernameResponse } from '../../api/user';
 
-type UserDetailsProps = {
+type UserPublicDetailsProps = {
   userDetails: GetUserByUsernameResponse;
 };
 
-export function UserDetails(props: UserDetailsProps) {
+export function UserPublicDetails(props: UserPublicDetailsProps) {
   const { userDetails } = props;
   const { name, username, links } = userDetails;
 
@@ -20,7 +20,11 @@ export function UserDetails(props: UserDetailsProps) {
 
         <div>
           <h1 className="text-2xl font-bold">{name}</h1>
-          <p className="text-gray-500">@{username}</p>
+          <p className="mt-1 text-sm text-gray-500">
+            I'm a Frontend developer interested in filmmaking, content creation,
+            vlogging, and backend, currently living in Dhaka, Bangladesh. Right
+            now I'm writing html at @roadmapsh. Let's grab a coffee.
+          </p>
         </div>
       </div>
 
