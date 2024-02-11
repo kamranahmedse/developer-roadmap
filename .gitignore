@@ -30,3 +30,4 @@ tests-examples
 *.csv
 
 /editor/*
+!/editor/readonly-editor.tsx
