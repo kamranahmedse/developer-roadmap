@@ -1,8 +1,11 @@
 import {
+  BookOpen,
+  BookOpenText,
   CheckSquare,
   FileQuestion,
   Menu,
   Shirt,
+  Video,
   Waypoints,
 } from 'lucide-react';
 import { useRef, useState } from 'react';
@@ -27,6 +30,19 @@ const links = [
     label: 'Questions',
     description: 'Test and Practice your knowledge',
     Icon: FileQuestion,
+  },
+  {
+    link: '/guides',
+    label: 'Guides',
+    description: 'In-depth articles and tutorials',
+    Icon: BookOpenText,
+  },
+  {
+    link: 'https://youtube.com/@roadmapsh',
+    label: 'Videos',
+    description: 'Animated and interactive content',
+    Icon: Video,
+    isExternal: true,
   },
   {
     link: 'https://cottonbureau.com/people/roadmapsh',
@@ -58,9 +74,9 @@ export function NavigationDropdown() {
       </button>
       <div
         className={cn(
-          'absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          'absolute pointer-events-none left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
           {
-            'translate-y-2.5 opacity-100': isOpen,
+            'pointer-events-auto translate-y-2.5 opacity-100': isOpen,
           },
         )}
       >
