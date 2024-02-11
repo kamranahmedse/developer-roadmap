@@ -4,6 +4,7 @@ import { useKeydown } from '../../hooks/use-keydown';
 import { useLoadTopic } from '../../hooks/use-load-topic';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useToggleTopic } from '../../hooks/use-toggle-topic';
+import { useFreezeScroll } from '../../hooks/use-freeze-scroll.ts';
 import { httpGet } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
 import type { ResourceType } from '../../lib/resource-progress';
@@ -64,6 +65,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [topicId, setTopicId] = useState('');
   const [resourceId, setResourceId] = useState('');
   const [resourceType, setResourceType] = useState<ResourceType>('roadmap');
+  useFreezeScroll(isActive);
 
   // Close the topic detail when user clicks outside the topic detail
   useOutsideClick(topicRef, () => {
@@ -198,6 +200,8 @@ export function TopicDetail(props: TopicDetailProps) {
   }
 
   const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
+
+  console.log("isActiveisActive",isActive);
 
   return (
     <div className={'relative z-50'}>
