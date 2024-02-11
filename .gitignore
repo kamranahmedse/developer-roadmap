@@ -30,5 +30,3 @@ tests-examples
 *.csv
 
 /editor/*
-!/editor/readonly-editor.tsx
-package-lock.json
