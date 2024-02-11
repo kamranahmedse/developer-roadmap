@@ -31,3 +31,4 @@ tests-examples
 
 /editor/*
 !/editor/readonly-editor.tsx
+package-lock.json
