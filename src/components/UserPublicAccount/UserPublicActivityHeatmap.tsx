@@ -26,11 +26,6 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
         startDate={startDate}
         endDate={endDate}
         values={data}
-        onClick={(value) => {
-          console.log('-'.repeat(20));
-          console.log('Clicked on value', value);
-          console.log('-'.repeat(20));
-        }}
         classForValue={(value) => {
           if (!value) {
             return 'fill-gray-100 rounded-md [rx:2px]';
