@@ -13,4 +13,4 @@ Visit the following resources to learn more:
 - [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
 - [W3Schools – Node.js Tutorial](https://www.w3schools.com/nodejs/)
 - [What is NPM?](https://www.w3schools.com/nodejs/nodejs_npm.asp)
-- [Official Documentation](https://nodejs.dev/en/learn/)
+- [Official Documentation](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)

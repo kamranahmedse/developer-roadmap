@@ -9,6 +9,8 @@ export interface GuideFrontmatter {
     imageUrl: string;
   };
   canonicalUrl?: string;
+  // alternate path where this guide has been published
+  excludedBySlug?: string;
   seo: {
     title: string;
     description: string;
@@ -18,7 +20,7 @@ export interface GuideFrontmatter {
   date: string;
   sitemap: {
     priority: number;
-    changefreq: 'daily' | 'weekly' | 'monthly' | 'yealry';
+    changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly';
   };
   tags: string[];
 }
@@ -44,6 +46,7 @@ function guidePathToId(filePath: string): string {
  * @returns Promisifed guide files
  */
 export async function getAllGuides(): Promise<GuideFileType[]> {
+  // @ts-ignore
   const guides = await import.meta.glob<GuideFileType>(
     '/src/data/guides/*.md',
     {
@@ -51,7 +54,7 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
     },
   );
 
-  const guideFiles = Object.values(guides);
+  const guideFiles = Object.values(guides) as GuideFileType[];
   const enrichedGuides = guideFiles.map((guideFile) => ({
     ...guideFile,
     id: guidePathToId(guideFile.file),
@@ -64,11 +67,15 @@ export async function getAllGuides(): Promise<GuideFileType[]> {
   );
 }
 
-export async function getGuideById(id: string): Promise<GuideFileType> {
-  const guide = await import(`../data/guides/${id}.md`);
+/**
+ * Gets the guide by the given id
+ * @param id Guide identifier
+ * @returns Promisified guide file
+ */
+export async function getGuideById(
+  id: string,
+): Promise<GuideFileType | undefined> {
+  const allGuides = await getAllGuides();
 
-  return {
-    ...guide,
-    id: guidePathToId(guide.file),
-  };
+  return allGuides.find((guide) => guide.id === id);
 }

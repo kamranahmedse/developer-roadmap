@@ -6,8 +6,8 @@ It is two things: first and foremost, it is an online repository for the publish
 
 Visit the following resources to learn more:
 
-- [What is npm?](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager/)
-- [An introduction to the npm package manager](https://nodejs.dev/en/learn/an-introduction-to-the-npm-package-manager/)
+- [What is npm?](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager)
+- [An introduction to the npm package manager](https://nodejs.org/en/learn/getting-started/an-introduction-to-the-npm-package-manager)
 - [Official Website](https://www.npmjs.com/)
 - [Official Documentation](https://docs.npmjs.com/)
 - [NPM Crash Course](https://www.youtube.com/watch?v=jHDhaSSKmB0)

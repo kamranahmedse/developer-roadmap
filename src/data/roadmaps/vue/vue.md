@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/vue.json'
 pdfUrl: '/pdfs/roadmaps/vue.pdf'
 order: 4
 briefTitle: 'Vue'
-briefDescription: 'Step by step guide to become a Vue Developer in 2023'
+briefDescription: 'Step by step guide to become a Vue Developer in 2024'
 title: 'Vue Developer'
-description: 'Everything that is there to learn about Vue and the ecosystem in 2023.'
+description: 'Everything that is there to learn about Vue and the ecosystem in 2024.'
 isNew: false
 hasTopics: true
 dimensions:
@@ -13,7 +13,7 @@ dimensions:
   height: 1657.07
 schema:
   headline: 'Vue Developer Roadmap'
-  description: 'Learn to become a Vue Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn to become a Vue Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/vue.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'

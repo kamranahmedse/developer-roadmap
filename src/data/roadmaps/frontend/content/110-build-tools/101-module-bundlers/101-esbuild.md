@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [Esbuild Official Website](https://esbuild.github.io/)
 - [Esbuild Documentation](https://esbuild.github.io/api/)
 - [Why are People Obsessed with esbuild?](https://www.youtube.com/watch?v=9XS_RA6zyyU)
-- [What Is ESBuild?](https://www.youtube.com/watch?v=zy8vu8cbwf0)
+- [What Is ESBuild?](https://www.youtube.com/watch?v=ZY8Vu8cbWF0)

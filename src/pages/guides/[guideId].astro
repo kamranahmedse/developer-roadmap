@@ -2,14 +2,25 @@
 import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getGuideById } from '../../lib/guide';
+import { getAllGuides, type GuideFileType } from '../../lib/guide';
 
-const { guideId } = Astro.params;
-const guide = await getGuideById(guideId).catch(() => null);
-if (!guide) {
-  return Astro.redirect('/404');
+export interface Props {
+  guide: GuideFileType;
 }
 
+export async function getStaticPaths() {
+  const guides = (await getAllGuides()).filter(
+    (guide) => !guide.frontmatter.excludedBySlug,
+  );
+
+  return guides.map((guide) => ({
+    params: { guideId: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guideId } = Astro.params;
+const { guide } = Astro.props;
 const { frontmatter: guideData } = guide;
 ---
 

@@ -1,0 +1,26 @@
+---
+import GuideHeader from '../../components/GuideHeader.astro';
+import MarkdownFile from '../../components/MarkdownFile.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getGuideById } from '../../lib/guide';
+
+const guideId = 'backend-languages';
+const guide = await getGuideById('backend-languages');
+
+const { frontmatter: guideData } = guide;
+---
+
+<BaseLayout
+  title={guideData.seo.title}
+  description={guideData.seo.description}
+  permalink={`/guides/${guideId}`}
+  canonicalUrl={guideData.canonicalUrl}
+>
+  <GuideHeader guide={guide} />
+
+  <div class='mx-auto max-w-[700px] py-5 sm:py-10'>
+    <MarkdownFile>
+      <guide.Content />
+    </MarkdownFile>
+  </div>
+</BaseLayout>
