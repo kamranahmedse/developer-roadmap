@@ -45,12 +45,10 @@ export function UpdatePublicProfileForm() {
   const [profileRoadmaps, setProfileRoadmaps] = useState<RoadmapType[]>([]);
 
   const [isLoading, setIsLoading] = useState(false);
-  const [success, setSuccess] = useState('');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
-    setSuccess('');
 
     const { response, error } = await httpPatch(
       `${import.meta.env.PUBLIC_API_URL}/v1-update-public-profile-config`,
@@ -77,7 +75,7 @@ export function UpdatePublicProfileForm() {
     }
 
     await loadProfileSettings();
-    setSuccess('Profile updated successfully');
+    toast.success('Profile updated successfully');
   };
 
   const loadProfileSettings = async () => {
@@ -406,12 +404,6 @@ export function UpdatePublicProfileForm() {
             />
           </div>
         </>
-      )}
-
-      {success && (
-        <p className="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
-          {success}
-        </p>
       )}
 
       <button
