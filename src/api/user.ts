@@ -1,11 +1,26 @@
 import { type APIContext } from 'astro';
 import { api } from './api.ts';
 
+export const allowedRoadmapVisibility = ['all', 'none', 'selected'] as const;
+export type AllowedRoadmapVisibility =
+  (typeof allowedRoadmapVisibility)[number];
+
+export const allowedCustomRoadmapVisibility = [
+  'all',
+  'none',
+  'selected',
+] as const;
+export type AllowedCustomRoadmapVisibility =
+  (typeof allowedCustomRoadmapVisibility)[number];
+
+export const allowedProfileVisibility = ['public', 'private'] as const;
+export type AllowedProfileVisibility =
+  (typeof allowedProfileVisibility)[number];
+
 export interface UserDocument {
   _id?: string;
   name: string;
   email: string;
-  username: string;
   avatar?: string;
   password: string;
   isEnabled: boolean;
@@ -26,6 +41,15 @@ export interface UserDocument {
     linkedin?: string;
     twitter?: string;
     website?: string;
+  };
+  username?: string;
+  profileVisibility: AllowedProfileVisibility;
+  publicConfig?: {
+    headline: string;
+    roadmaps: string[];
+    customRoadmaps: string[];
+    roadmapVisibility: AllowedRoadmapVisibility;
+    customRoadmapVisibility: AllowedCustomRoadmapVisibility;
   };
   resetPasswordCodeAt: Date;
   verifiedAt: Date;

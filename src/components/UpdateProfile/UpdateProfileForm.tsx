@@ -7,10 +7,6 @@ export function UpdateProfileForm() {
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [email, setEmail] = useState('');
-  const [github, setGithub] = useState('');
-  const [twitter, setTwitter] = useState('');
-  const [linkedin, setLinkedin] = useState('');
-  const [website, setWebsite] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const [error, setError] = useState('');
@@ -26,11 +22,7 @@ export function UpdateProfileForm() {
       `${import.meta.env.PUBLIC_API_URL}/v1-update-profile`,
       {
         name,
-        github: github || undefined,
-        linkedin: linkedin || undefined,
-        twitter: twitter || undefined,
-        website: website || undefined,
-      }
+      },
     );
 
     if (error || !response) {
@@ -49,7 +41,7 @@ export function UpdateProfileForm() {
     setIsLoading(true);
 
     const { error, response } = await httpGet(
-      `${import.meta.env.PUBLIC_API_URL}/v1-me`
+      `${import.meta.env.PUBLIC_API_URL}/v1-me`,
     );
 
     if (error || !response) {
@@ -59,14 +51,10 @@ export function UpdateProfileForm() {
       return;
     }
 
-    const { name, email, links, avatar } = response;
+    const { name, email, avatar } = response;
 
     setName(name);
     setEmail(email);
-    setGithub(links?.github || '');
-    setLinkedin(links?.linkedin || '');
-    setTwitter(links?.twitter || '');
-    setWebsite(links?.website || '');
     setAvatar(avatar || '');
 
     setIsLoading(false);
@@ -132,77 +120,6 @@ export function UpdateProfileForm() {
           />
         </div>
 
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="github"
-            className="text-sm leading-none text-slate-500"
-          >
-            Github
-          </label>
-          <input
-            type="text"
-            name="github"
-            id="github"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://github.com/username"
-            value={github}
-            onInput={(e) => setGithub((e.target as HTMLInputElement).value)}
-          />
-        </div>
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="twitter"
-            className="text-sm leading-none text-slate-500"
-          >
-            Twitter
-          </label>
-          <input
-            type="text"
-            name="twitter"
-            id="twitter"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://twitter.com/username"
-            value={twitter}
-            onInput={(e) => setTwitter((e.target as HTMLInputElement).value)}
-          />
-        </div>
-
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="linkedin"
-            className="text-sm leading-none text-slate-500"
-          >
-            LinkedIn
-          </label>
-          <input
-            type="text"
-            name="linkedin"
-            id="linkedin"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://www.linkedin.com/in/username/"
-            value={linkedin}
-            onInput={(e) => setLinkedin((e.target as HTMLInputElement).value)}
-          />
-        </div>
-
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="website"
-            className="text-sm leading-none text-slate-500"
-          >
-            Website
-          </label>
-          <input
-            type="text"
-            name="website"
-            id="website"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            placeholder="https://example.com"
-            value={website}
-            onInput={(e) => setWebsite((e.target as HTMLInputElement).value)}
-          />
-        </div>
-
         {error && (
           <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
         )}
@@ -218,7 +135,7 @@ export function UpdateProfileForm() {
           disabled={isLoading}
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          {isLoading ? 'Please wait...' : 'Continue'}
+          {isLoading ? 'Please wait...' : 'Update Information'}
         </button>
       </form>
     </div>
