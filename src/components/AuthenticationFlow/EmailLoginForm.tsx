@@ -4,7 +4,14 @@ import { useState } from 'react';
 import { httpPost } from '../../lib/http';
 import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
 
-export function EmailLoginForm() {
+type EmailLoginFormProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
+
+export function EmailLoginForm(props: EmailLoginFormProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [email, setEmail] = useState<string>('');
   const [password, setPassword] = useState<string>('');
   const [error, setError] = useState('');
@@ -14,6 +21,7 @@ export function EmailLoginForm() {
   const handleFormSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setIsDisabled?.(true);
     setError('');
 
     const { response, error } = await httpPost<{ token: string }>(
@@ -45,6 +53,7 @@ export function EmailLoginForm() {
     }
 
     setIsLoading(false);
+    setIsDisabled?.(false);
     setError(error?.message || 'Something went wrong. Please try again later.');
   };
 
@@ -92,7 +101,7 @@ export function EmailLoginForm() {
 
       <button
         type="submit"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
         {isLoading ? 'Please wait...' : 'Continue'}

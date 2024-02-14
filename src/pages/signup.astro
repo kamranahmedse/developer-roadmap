@@ -1,4 +1,5 @@
 ---
+import { AuthenticationForm } from '../components/AuthenticationFlow/AuthenticationForm';
 import Divider from '../components/AuthenticationFlow/Divider.astro';
 import { EmailSignupForm } from '../components/AuthenticationFlow/EmailSignupForm';
 import { GitHubButton } from '../components/AuthenticationFlow/GitHubButton';
@@ -29,15 +30,7 @@ import AccountLayout from '../layouts/AccountLayout.astro';
         </p>
       </div>
 
-      <div class='flex w-full flex-col items-stretch gap-2'>
-        <GitHubButton client:load />
-        <GoogleButton client:load />
-        <LinkedInButton client:load />
-      </div>
-
-      <Divider />
-
-      <EmailSignupForm client:load />
+      <AuthenticationForm client:load />
 
       <div class='mt-6 text-center text-sm text-slate-600'>
         Already have an account? <a
