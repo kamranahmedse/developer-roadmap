@@ -3,8 +3,15 @@ import { GitHubButton } from './GitHubButton';
 import { GoogleButton } from './GoogleButton';
 import { LinkedInButton } from './LinkedInButton';
 import { EmailLoginForm } from './EmailLoginForm';
+import { EmailSignupForm } from './EmailSignupForm';
 
-export function AuthenticationForm() {
+type AuthenticationFormProps = {
+  type?: 'login' | 'signup';
+};
+
+export function AuthenticationForm(props: AuthenticationFormProps) {
+  const { type = 'login' } = props;
+
   const [isDisabled, setIsDisabled] = useState(false);
 
   return (
@@ -21,7 +28,14 @@ export function AuthenticationForm() {
         <div className="h-px w-full bg-slate-200" />
       </div>
 
-      <EmailLoginForm isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
+      {type === 'login' ? (
+        <EmailLoginForm isDisabled={isDisabled} setIsDisabled={setIsDisabled} />
+      ) : (
+        <EmailSignupForm
+          isDisabled={isDisabled}
+          setIsDisabled={setIsDisabled}
+        />
+      )}
     </>
   );
 }
