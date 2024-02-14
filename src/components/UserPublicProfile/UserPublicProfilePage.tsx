@@ -1,22 +1,24 @@
-import type { GetUserByUsernameResponse } from '../../api/user';
+import type { GetPublicProfileResponse } from '../../api/user';
 import { UserActivityHeatmap } from './UserPublicActivityHeatmap';
-import { UserPublicDetails } from './UserPublicDetails';
+import { UserPublicProfileHeader } from './UserPublicProfileHeader';
 import { UserPublicProgressStats } from './UserPublicProgressStats';
+import { UserPublicProgresses } from './UserPublicProgresses';
 
-type UserPublicAccountPageProps = GetUserByUsernameResponse;
+type UserPublicProfilePageProps = GetPublicProfileResponse;
 
-export function UserPublicAccountPage(props: UserPublicAccountPageProps) {
-  const { activity, learning, username } = props;
-
-  const learningRoadmaps = learning?.roadmaps || [];
+export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
+  const { activity, username } = props;
 
   return (
     <section className="container mt-5 pb-10">
-      <UserPublicDetails userDetails={props!} />
-      <div className="mt-6">
+      <UserPublicProfileHeader userDetails={props!} />
+      <div className="mt-10">
         <UserActivityHeatmap activity={activity!} />
       </div>
-
+      <div className="mt-10">
+        <UserPublicProgresses username={username!} roadmaps={props.roadmaps} />
+      </div>
+      {/* 
       {learningRoadmaps.length > 0 && (
         <>
           <h2 className="mt-6 text-xl font-bold">Learning Progress</h2>
@@ -41,12 +43,12 @@ export function UserPublicAccountPage(props: UserPublicAccountPageProps) {
                   resourceType={'roadmap'}
                   updatedAt={roadmap.updatedAt}
                   title={roadmap.title}
-                  username={username}
+                  username={username!}
                 />
               ))}
           </div>
         </>
-      )}
+      )} */}
     </section>
   );
 }

@@ -21,7 +21,6 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
 
   return (
     <>
-      <h2 className="mb-4 text-xl font-bold">Activity</h2>
       <CalendarHeatmap
         startDate={startDate}
         endDate={endDate}

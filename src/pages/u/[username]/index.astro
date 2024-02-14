@@ -1,7 +1,7 @@
 ---
-import { UserPublicAccountPage } from '../../../components/UserPublicAccount/UserPublicAccountPage';
 import { userApi } from '../../../api/user';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
+import { UserPublicProfilePage } from '../../../components/UserPublicProfile/UserPublicProfilePage';
 
 const { username } = Astro.params;
 if (!username) {
@@ -10,7 +10,7 @@ if (!username) {
 
 const userClient = userApi(Astro as any);
 const { response: userDetails, error } =
-  await userClient.getUserByUsername(username);
+  await userClient.getPublicProfile(username);
 
 if (error || !userDetails) {
   return Astro.redirect('/404');
@@ -18,5 +18,5 @@ if (error || !userDetails) {
 ---
 
 <AccountLayout title={userDetails?.name}>
-  <UserPublicAccountPage {...userDetails} client:load />
+  <UserPublicProfilePage {...userDetails} client:load />
 </AccountLayout>

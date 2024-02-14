@@ -28,6 +28,7 @@ export function UpdatePublicProfileForm() {
 
   const toast = useToast();
 
+  const [isAvailableForHire, setIsAvailableForHire] = useState(false);
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
   const [roadmapVisibility, setRoadmapVisibility] =
@@ -53,6 +54,7 @@ export function UpdatePublicProfileForm() {
     const { response, error } = await httpPatch(
       `${import.meta.env.PUBLIC_API_URL}/v1-update-public-profile-config`,
       {
+        isAvailableForHire,
         profileVisibility,
         headline,
         username,
@@ -98,6 +100,7 @@ export function UpdatePublicProfileForm() {
       profileVisibility: defaultProfileVisibility,
       publicConfig,
     } = response;
+
     setUsername(username || '');
     setGithub(links?.github || '');
     setTwitter(links?.twitter || '');
@@ -110,6 +113,7 @@ export function UpdatePublicProfileForm() {
     setCustomRoadmaps(publicConfig?.customRoadmaps || []);
     setRoadmaps(publicConfig?.roadmaps || []);
     setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'none');
+    setIsAvailableForHire(publicConfig?.isAvailableForHire || false);
 
     setIsLoading(false);
   };
@@ -152,7 +156,7 @@ export function UpdatePublicProfileForm() {
         <div className="flex items-center gap-2">
           <h3 className="text-3xl font-bold">Public Profile</h3>
           {profileVisibility === 'public' && username && (
-            <a href={publicProfileUrl} className="shrink-0">
+            <a href={publicProfileUrl} target="_blank" className="shrink-0">
               <ArrowUpRight className="h-6 w-6 stroke-[3]" />
             </a>
           )}
@@ -227,14 +231,20 @@ export function UpdatePublicProfileForm() {
                 text="All Roadmaps"
                 isDisabled={roadmapVisibility === 'all'}
                 isSelected={roadmapVisibility === 'all'}
-                onClick={() => setRoadmapVisibility('all')}
+                onClick={() => {
+                  setRoadmapVisibility('all');
+                  setRoadmaps([]);
+                }}
               />
               <SelectionButton
                 type="button"
                 text="Hide my Activity"
                 isDisabled={roadmapVisibility === 'none'}
                 isSelected={roadmapVisibility === 'none'}
-                onClick={() => setRoadmapVisibility('none')}
+                onClick={() => {
+                  setRoadmapVisibility('none');
+                  setRoadmaps([]);
+                }}
               />
             </div>
 
@@ -282,14 +292,20 @@ export function UpdatePublicProfileForm() {
                 text="All Roadmaps"
                 isDisabled={customRoadmapVisibility === 'all'}
                 isSelected={customRoadmapVisibility === 'all'}
-                onClick={() => setCustomRoadmapVisibility('all')}
+                onClick={() => {
+                  setCustomRoadmapVisibility('all');
+                  setCustomRoadmaps([]);
+                }}
               />
               <SelectionButton
                 type="button"
                 text="Hide my Custom Roadmaps"
                 isDisabled={customRoadmapVisibility === 'none'}
                 isSelected={customRoadmapVisibility === 'none'}
-                onClick={() => setCustomRoadmapVisibility('none')}
+                onClick={() => {
+                  setCustomRoadmapVisibility('none');
+                  setCustomRoadmaps([]);
+                }}
               />
             </div>
 
@@ -402,6 +418,25 @@ export function UpdatePublicProfileForm() {
               value={website}
               onChange={(e) => setWebsite((e.target as HTMLInputElement).value)}
             />
+          </div>
+
+          <div>
+            <div className="flex items-center gap-2">
+              <input
+                type="checkbox"
+                name="isAvailableForHire"
+                id="isAvailableForHire"
+                checked={isAvailableForHire}
+                onChange={(e) => setIsAvailableForHire(e.target.checked)}
+              />
+              <label htmlFor="isAvailableForHire" className="">
+                Available for Hire
+              </label>
+            </div>
+            <p className="mt-1 text-sm text-slate-500">
+              Enable this if you are open to job opportunities, we will show a
+              badge on your profile to indicate that you are available for hire.
+            </p>
           </div>
         </>
       )}

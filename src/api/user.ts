@@ -45,6 +45,7 @@ export interface UserDocument {
   username?: string;
   profileVisibility: AllowedProfileVisibility;
   publicConfig?: {
+    isAvailableForHire: boolean;
     headline: string;
     roadmaps: string[];
     customRoadmaps: string[];
@@ -74,34 +75,23 @@ type ProgressResponse = {
   roadmapSlug?: string;
 };
 
-export type UserResourceProgressStats = {
-  done: {
-    total: number;
-  };
-  learning: {
-    total: number;
-    roadmaps: ProgressResponse[];
-    bestPractices: ProgressResponse[];
-  };
-};
-
-export type GetUserByUsernameResponse = Omit<
+export type GetPublicProfileResponse = Omit<
   UserDocument,
   | 'password'
   | 'verificationCode'
   | 'resetPasswordCode'
   | 'resetPasswordCodeAt'
   | 'email'
-> &
-  UserResourceProgressStats & {
-    activity: UserActivityCount;
-  };
+> & {
+  activity: UserActivityCount;
+  roadmaps: ProgressResponse[];
+};
 
 export function userApi(context: APIContext) {
   return {
-    getUserByUsername: async function (username: string) {
-      return api(context).get<GetUserByUsernameResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-get-user-by-username/${username}`,
+    getPublicProfile: async function (username: string) {
+      return api(context).get<GetPublicProfileResponse>(
+        `${import.meta.env.PUBLIC_API_URL}/v1-get-public-profile/${username}`,
       );
     },
   };
