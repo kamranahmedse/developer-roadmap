@@ -1,11 +1,12 @@
+import { useState } from 'react';
 import { GitHubButton } from './GitHubButton';
 import { GoogleButton } from './GoogleButton';
 import { LinkedInButton } from './LinkedInButton';
 import { EmailLoginForm } from './EmailLoginForm';
-import { useState } from 'react';
 
 export function AuthenticationForm() {
   const [isDisabled, setIsDisabled] = useState(false);
+
   return (
     <>
       <div className="flex w-full flex-col gap-2">
