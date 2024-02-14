@@ -1,0 +1,11 @@
+api.roadmap.localhost {
+  reverse_proxy localhost:8080
+}
+
+roadmap.localhost {
+  reverse_proxy localhost:3000
+}
+
+draw.roadmap.localhost {
+  reverse_proxy localhost:4321
+}
