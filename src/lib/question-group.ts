@@ -81,6 +81,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           if (answerText.endsWith('.md')) {
             const answerFilePath = `/src/data/question-groups/${questionGroupDir}/content/${answerText}`;
             answerText =
+              answerFilesMap[answerFilePath]?.default ||
               answerFilesMap[answerFilePath] ||
               `File missing: ${answerFilePath}`;
 

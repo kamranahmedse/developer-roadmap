@@ -2,15 +2,19 @@
 import MarkdownIt from 'markdown-it';
 
 export function markdownToHtml(markdown: string, isInline = true): string {
-  const md = new MarkdownIt({
-    html: true,
-    linkify: true,
-  });
+  try {
+    const md = new MarkdownIt({
+      html: true,
+      linkify: true,
+    });
 
-  if (isInline) {
-    return md.renderInline(markdown);
-  } else {
-    return md.render(markdown);
+    if (isInline) {
+      return md.renderInline(markdown);
+    } else {
+      return md.render(markdown);
+    }
+  } catch (e) {
+    return markdown;
   }
 }
 
