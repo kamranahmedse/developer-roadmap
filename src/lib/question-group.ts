@@ -62,7 +62,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
     `/src/data/question-groups/*/content/*.md`,
     {
       eager: true,
-      as: 'raw',
+      query: '?raw',
     },
   );
 
