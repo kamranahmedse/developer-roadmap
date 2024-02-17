@@ -1,3 +1,6 @@
 # C#
 
 **CSharp (C#)** is a modern, object-oriented programming language developed and maintained by Microsoft. It's primarily used for developing desktop applications and, more prominently, for Windows applications within the Microsoft.Net framework. However, the language is versatile and has a wide range of uses in web services, websites, enterprise software, and even mobile app development. C# is known for its simplicity, type-safety, and support for component-oriented software development. It's also been adopted by Unity, a widely used game engine, thus making it one of the preferred languages for game development.
+
+<a href = "https://cplusplus.com/doc/tutorial/"> C++ documentation</a> <br>
+<a href = "https://youtu.be/vLnPwxZdW4Y?si=sR8xJfz_ww7si8xB"> C++ for beginners</a> 
