@@ -1,0 +1,13 @@
+---
+export interface Props {
+  value: string;
+  text: string;
+}
+
+const { value, text } = Astro.props;
+---
+
+<div class='flex flex-row sm:flex-col items-center justify-start sm:justify-center gap-2 sm:gap-1'>
+  <p class='text-base w-[50px] sm:w-auto font-bold lowercase sm:text-5xl'>{value}</p>
+  <p class='text-base leading-relaxed text-gray-500 sm:text-base'>{text}</p>
+</div>

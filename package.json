@@ -27,7 +27,7 @@
     "@astrojs/tailwind": "^5.1.0",
     "@fingerprintjs/fingerprintjs": "^4.2.2",
     "@nanostores/react": "^0.7.1",
-    "@types/react": "^18.2.55",
+    "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.0",
     "astro-compress": "^2.2.10",
@@ -35,7 +35,7 @@
     "dracula-prism": "^2.1.16",
     "jose": "^5.2.2",
     "js-cookie": "^3.0.5",
-    "lucide-react": "^0.331.0",
+    "lucide-react": "^0.334.0",
     "nanoid": "^5.0.5",
     "nanostores": "^0.9.5",
     "node-html-parser": "^6.1.12",
@@ -50,7 +50,7 @@
     "slugify": "^1.6.6",
     "tailwind-merge": "^2.2.1",
     "tailwindcss": "^3.4.1",
-    "zustand": "^4.5.0"
+    "zustand": "^4.5.1"
   },
   "devDependencies": {
     "@playwright/test": "^1.41.2",

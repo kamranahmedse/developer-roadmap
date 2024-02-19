@@ -1,40 +1,54 @@
 ---
 import { getFormattedStars } from '../lib/github';
 import Icon from './AstroIcon.astro';
+import { getDiscordInfo } from '../lib/discord';
+import OpenSourceStat from './OpenSourceStat.astro';
 
 const starCount = await getFormattedStars('kamranahmedse/developer-roadmap');
+const discordInfo = await getDiscordInfo();
 ---
 
-<div class='py-6 sm:py-16 border-b border-t text-left sm:text-center bg-white'>
-  <div class='!max-w-[600px] container'>
-    <p class='text-2xl sm:text-5xl font-bold'>Community</p>
-    <p class='text-gray-600 text-sm sm:text-lg leading-relaxed my-2.5 sm:my-5'>
+<div class='border-b border-t bg-white py-6 text-left sm:py-16 sm:text-center'>
+  <div class='container !max-w-[650px]'>
+    <p class='text-2xl font-bold sm:text-5xl'>Join the Community</p>
+    <p class='my-2.5 text-sm leading-relaxed text-gray-600 sm:my-5 sm:text-lg'>
       roadmap.sh is the <a
         href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
         target='_blank'
-        class='font-medium text-gray-600 hover:text-black underline underline-offset-2'
+        class='font-medium text-gray-600 underline underline-offset-2 hover:text-black'
         >6th most starred project on GitHub</a
       > and is visited by hundreds of thousands of developers every month.
     </p>
 
-    <div class='flex justify-start flex-col sm:flex-row sm:justify-center gap-2 sm:gap-3 mb-1.5 sm:mb-0'>
+    <div class='my-5 sm:my-11 gap-2 sm:gap-0 grid grid-cols-1 sm:grid-cols-3 justify-between divide-x-0 sm:divide-x'>
+      <OpenSourceStat text='GitHub Stars' value={starCount} />
+      <OpenSourceStat text='Registered Users' value={'850k'} />
+      <OpenSourceStat
+        text='Discord Members'
+        value={discordInfo.totalFormatted}
+      />
+    </div>
+
+    <div
+      class='mb-1.5 flex flex-col justify-start gap-2 sm:mb-0 sm:flex-row sm:justify-center sm:gap-3'
+    >
       <a
         href='https://github.com/kamranahmedse/developer-roadmap'
         target='_blank'
-        class='inline-flex items-center border border-black py-1.5 px-3 rounded-lg text-sm hover:text-white hover:bg-black bg-white'
+        class='inline-flex items-center rounded-lg border border-black bg-white px-3 py-1.5 text-sm hover:bg-black hover:text-white'
       >
-          <Icon icon='star' class='mr-1 -ml-1 fill-current' />
+        <Icon icon='star' class='-ml-1 mr-1 fill-current' />
 
-          <span class='lowercase'>{starCount}</span>
-          <span class='ml-2 hover:block'>GitHub Stars</span>
+        <span class='lowercase'>{starCount}</span>
+        <span class='ml-2 hover:block'>Star on GitHub</span>
       </a>
 
       <a
-        href="https://discord.gg/cJpEt5Qbwa"
+        href='https://discord.gg/cJpEt5Qbwa'
         target='_blank'
-        class='relative pointer inline-flex items-center border border-black py-1.5 px-3 rounded-lg text-sm hover:text-white hover:bg-black bg-white group'
+        class='pointer group relative inline-flex items-center rounded-lg border border-black bg-white px-3 py-1.5 text-sm hover:bg-black hover:text-white'
       >
-        <Icon icon='discord' class='h-[14px] mr-2 -ml-1 fill-current' />
+        <Icon icon='discord' class='-ml-1 mr-2 h-[14px] fill-current' />
         Join on Discord
       </a>
     </div>
