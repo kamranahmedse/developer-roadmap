@@ -43,7 +43,7 @@ char letter = 'A';
 ```
 
 ## Boolean (bool)
-Booleans represent logical values: `true` or `false`. They usually occupy 1 byte of memory.
+Booleans represent logical values: `true` or `false`. They usually occupy 1 bit of memory.
 
 Example:
 ```cpp
