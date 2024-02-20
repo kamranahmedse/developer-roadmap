@@ -85,6 +85,7 @@ export type GetPublicProfileResponse = Omit<
 > & {
   activity: UserActivityCount;
   roadmaps: ProgressResponse[];
+  isOwnProfile: boolean;
 };
 
 export function userApi(context: APIContext) {

@@ -6,12 +6,12 @@ import { UserPublicProgressStats } from './UserPublicProgressStats';
 type UserPublicProgressesProps = {
   username: string;
   roadmaps: GetPublicProfileResponse['roadmaps'];
+  publicConfig: GetPublicProfileResponse['publicConfig'];
 };
 
 export function UserPublicProgresses(props: UserPublicProgressesProps) {
-  const { roadmaps: roadmapProgresses, username } = props;
-
-  const [activeTab, setActiveTab] = useState<'built-in' | 'custom'>('built-in');
+  const { roadmaps: roadmapProgresses, username, publicConfig } = props;
+  const { roadmapVisibility, customRoadmapVisibility } = publicConfig! || {};
 
   const roadmaps = roadmapProgresses.filter(
     (roadmap) => !roadmap.isCustomResource,
@@ -22,24 +22,11 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
 
   return (
     <div>
-      <div className="flex items-center gap-2">
-        <SelectionButton
-          isSelected={activeTab === 'built-in'}
-          isDisabled={activeTab === 'built-in'}
-          onClick={() => setActiveTab('built-in')}
-          text="Learning Activities"
-        />
-        <SelectionButton
-          isSelected={activeTab === 'custom'}
-          isDisabled={activeTab === 'custom'}
-          onClick={() => setActiveTab('custom')}
-          text="Custom Activities"
-        />
-      </div>
-
-      <ul className="mt-4 grid grid-cols-2 gap-2">
-        {activeTab === 'built-in'
-          ? roadmaps.map((roadmap, counter) => (
+      {roadmapVisibility !== 'none' && (
+        <>
+          <h2 className="text-xs uppercase text-gray-400">My Skills</h2>
+          <ul className="mt-4 grid grid-cols-2 gap-2">
+            {roadmaps.map((roadmap, counter) => (
               <li key={roadmap.id + counter}>
                 <UserPublicProgressStats
                   updatedAt={roadmap.updatedAt}
@@ -55,8 +42,16 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                   username={username!}
                 />
               </li>
-            ))
-          : customRoadmaps.map((roadmap, counter) => (
+            ))}
+          </ul>
+        </>
+      )}
+
+      {customRoadmapVisibility !== 'none' && (
+        <>
+          <h2 className="mt-6 text-xs uppercase text-gray-400">My Roadmaps</h2>
+          <ul className="mt-4 grid grid-cols-2 gap-2">
+            {customRoadmaps.map((roadmap, counter) => (
               <li key={roadmap.id + counter}>
                 <UserPublicProgressStats
                   updatedAt={roadmap.updatedAt}
@@ -73,7 +68,9 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                 />
               </li>
             ))}
-      </ul>
+          </ul>
+        </>
+      )}
     </div>
   );
 }
