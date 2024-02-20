@@ -44,16 +44,16 @@ import { TipItem } from '../components/GetStarted/TipItem';
       <div class='text-left'>
         <SectionBadge title='Beginner Roadmaps' />
       </div>
-      <div class='my-3 md:my-5 text-left'>
-        <h2 class='mb-0 sm:mb-1 text-xl sm:text-3xl font-semibold'>
+      <div class='my-3 text-left md:my-5'>
+        <h2 class='mb-0 text-xl font-semibold sm:mb-1 sm:text-3xl'>
           Are you an Absolute beginner?
         </h2>
-        <p class='text-sm sm:text-base text-gray-500'>
+        <p class='text-sm text-gray-500 sm:text-base'>
           Here are some beginner friendly roadmaps you should start with.
         </p>
       </div>
 
-      <div class='grid sm:grid-cols-2 md:grid-cols-3 gap-3'>
+      <div class='grid gap-3 sm:grid-cols-2 md:grid-cols-3'>
         <RoadmapCard
           icon={Globe2}
           title='Frontend Developer'
@@ -76,19 +76,20 @@ import { TipItem } from '../components/GetStarted/TipItem';
         />
       </div>
 
-      <p class="my-4 sm:my-7 text-sm sm:text-base">
+      <p class='my-4 text-sm sm:my-7 sm:text-base'>
         There is also a <a
           target='_blank'
           class='font-medium underline underline-offset-2'
           href='/devops?r=devops-beginner'>beginner DevOps roadmap</a
         > which requires you to have some backend knowledge and entails a lot of
-        operations work i.e. deploying, scaling, monitoring, and maintaining
-        applications.
+        operations work i.e. deploying, scaling, monitoring, and maintaining applications.
       </p>
 
       <div class='rounded-xl border bg-white p-3 sm:p-4'>
-        <h2 class='mb-0 sm:mb-1 text-lg sm:text-xl font-semibold'>Tips for Beginners</h2>
-        <p class="text-sm sm:text-base">
+        <h2 class='mb-0 text-lg font-semibold sm:mb-1 sm:text-xl'>
+          Tips for Beginners
+        </h2>
+        <p class='text-sm sm:text-base'>
           Learning to code can be overwhelming, here are some tips to help you
           get started:
         </p>
@@ -332,7 +333,6 @@ import { TipItem } from '../components/GetStarted/TipItem';
       title='MLOps'
       link='/mlops'
       description='Learn how to deploy and manage machine learning models.'
-      isUpcoming={true}
     />
   </RoleRoadmaps>
   <RoleRoadmaps
@@ -386,29 +386,49 @@ import { TipItem } from '../components/GetStarted/TipItem';
 
   <div class='container'>
     <div class='-mt-5 mb-12 rounded-3xl bg-black p-5'>
-      <h2 class='mb-0.5 sm:mb-1 text-xl sm:text-2xl font-semibold text-white'>There is more!</h2>
-      <p class='text-gray-400 text-sm sm:text-base'>
+      <h2 class='mb-0.5 text-xl font-semibold text-white sm:mb-1 sm:text-2xl'>
+        There is more!
+      </h2>
+      <p class='text-sm text-gray-400 sm:text-base'>
         We have a lot more content for you to explore.
       </p>
 
-      <div class='my-4 sm:my-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 sm:gap-3'>
-        <a href='/roadmaps' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
-          <Waypoints className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
-           Explore all Roadmaps
+      <div
+        class='my-4 grid grid-cols-1 gap-2 sm:my-5 sm:grid-cols-2 sm:gap-3 md:grid-cols-3'
+      >
+        <a
+          href='/roadmaps'
+          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+        >
+          <Waypoints className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
+          Explore all Roadmaps
         </a>
-        <a href='/best-practices' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
-          <CheckSquare className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
+        <a
+          href='/best-practices'
+          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+        >
+          <CheckSquare className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
           Explore Best Practices
         </a>
-        <a href='/questions' class='text-sm sm:text-base rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-white flex-grow hover:from-gray-700 hover:to-gray-700 transition-all'>
-          <CheckSquare className="h-5 w-5 mb-3 sm:mb-2 text-gray-500" />
+        <a
+          href='/questions'
+          class='flex-grow rounded-lg bg-gradient-to-br from-gray-800 to-gray-700 p-4 text-sm text-white transition-all hover:from-gray-700 hover:to-gray-700 sm:text-base'
+        >
+          <CheckSquare className='mb-3 h-5 w-5 text-gray-500 sm:mb-2' />
           Explore Questions
         </a>
       </div>
-      <p class="text-gray-400 sm:text-base text-sm">
-        Or visit our <a href="/guides" class="rounded-lg hover:bg-gray-600 transition-colors hover:text-white bg-gray-700 text-gray-300 py-1 px-2">guides</a> and <a href="/videos" class="rounded-lg hover:bg-gray-600 transition-colors hover:text-white bg-gray-700 text-gray-300 py-1 px-2">videos</a> for long-form content.</p>
+      <p class='text-sm text-gray-400 sm:text-base'>
+        Or visit our <a
+          href='/guides'
+          class='rounded-lg bg-gray-700 px-2 py-1 text-gray-300 transition-colors hover:bg-gray-600 hover:text-white'
+          >guides</a
+        > and <a
+          href='/videos'
+          class='rounded-lg bg-gray-700 px-2 py-1 text-gray-300 transition-colors hover:bg-gray-600 hover:text-white'
+          >videos</a
+        > for long-form content.
+      </p>
     </div>
   </div>
-
-
 </BaseLayout>

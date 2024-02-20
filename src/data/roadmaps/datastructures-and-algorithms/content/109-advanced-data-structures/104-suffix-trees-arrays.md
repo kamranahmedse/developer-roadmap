@@ -1,0 +1,1 @@
+# Suffix trees arrays

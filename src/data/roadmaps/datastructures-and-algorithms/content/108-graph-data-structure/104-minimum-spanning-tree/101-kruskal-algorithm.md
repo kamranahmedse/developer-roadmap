@@ -1,0 +1,1 @@
+# Kruskal algorithm
