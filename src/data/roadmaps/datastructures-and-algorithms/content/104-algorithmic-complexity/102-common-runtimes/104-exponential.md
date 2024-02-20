@@ -1,1 +1,3 @@
 # Exponential
+
+Exponential time complexity is denoted as `O(2^n)`, where a growth in `n` leads to an exponential growth in the number of steps required to complete a task. It means that the time complexity will double with every additional element in the input set. This is seen in many recursive algorithms, where a problem is divided into two sub-problems of the same type. Examples of such algorithms include the naive recursive approach for the Fibonacci sequence or the Towers of Hanoi problem. Although exponential time complexity solutions are often simpler to implement, they are inefficient for larger input sizes.
