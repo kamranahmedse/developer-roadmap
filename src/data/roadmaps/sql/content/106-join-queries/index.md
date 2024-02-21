@@ -35,6 +35,11 @@ RIGHT JOIN Customers
 ON Orders.CustomerID = Customers.CustomerID;
 ```
 ## FULL (OUTER) JOIN:
+![image](https://github.com/kamranahmedse/developer-roadmap/assets/78022115/c130be67-6db3-41b4-98a2-9376688297df)
+
+![image](https://github.com/kamranahmedse/developer-roadmap/assets/78022115/3a9344aa-44bf-440b-b51c-9c6f6fe6f537)
+![image](https://github.com/kamranahmedse/developer-roadmap/assets/78022115/1e2b32d0-2ed9-4e1f-aa2a-51de307f32e7)
+
 
 Returns all records when there is a match in either left (table1) or right (table2) table records.  Also returns null if there is no match. Example:
 
