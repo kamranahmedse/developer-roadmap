@@ -16,11 +16,13 @@ const discordInfo = await getDiscordInfo();
         href='https://github.com/search?o=desc&q=stars%3A%3E100000&s=stars&type=Repositories'
         target='_blank'
         class='font-medium text-gray-600 underline underline-offset-2 hover:text-black'
-        >6th most starred project on GitHub </a>
-      and is visited by hundreds of thousands of developers every month.
+        >6th most starred project on GitHub</a
+      > and is visited by hundreds of thousands of developers every month.
     </p>
 
-    <div class='my-5 sm:my-11 gap-2 sm:gap-0 grid grid-cols-1 sm:grid-cols-3 justify-between divide-x-0 sm:divide-x'>
+    <div
+      class='my-5 grid grid-cols-1 justify-between gap-2 divide-x-0 sm:my-11 sm:grid-cols-3 sm:gap-0 sm:divide-x'
+    >
       <OpenSourceStat text='GitHub Stars' value={starCount} />
       <OpenSourceStat text='Registered Users' value={'850k'} />
       <OpenSourceStat
