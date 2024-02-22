@@ -153,15 +153,23 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
     <RoadmapCard
       icon={Blocks}
-      title='System Design'
-      link='/system-design'
-      description='Learn how to design large scale systems and prepare for system design interviews.'
+      title='Data Structures'
+      link='/datastructures-and-algorithms'
+      description='Learn all about data structures and algorithms.'
     />
-    <RoadmapCard
-      icon={Blocks}
-      title='Software Design and Architecture'
-      link='/software-design-architecture'
-      description='Learn how to design and architect software systems.'
+
+    <RoadmapMultiCard
+        roadmaps={[
+          { title: 'System Design', link: '/system-design' },
+        ]}
+        description='Learn how to design large scale systems and prepare for system design interviews.'
+        secondaryRoadmaps={[
+          {
+            title: 'Design and Architecture',
+            link: '/software-design-architecture',
+          },
+        ]}
+        secondaryDescription='Or learn how to design and architect software systems.'
     />
   </RoleRoadmaps>
 
