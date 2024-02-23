@@ -3,7 +3,11 @@ import { userApi } from '../../../api/user';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
 import { UserPublicProfilePage } from '../../../components/UserPublicProfile/UserPublicProfilePage';
 
-const { username } = Astro.params;
+interface Params extends Record<string, string | undefined> {
+  username: string;
+}
+
+const { username } = Astro.params as Params;
 if (!username) {
   return Astro.redirect('/404');
 }

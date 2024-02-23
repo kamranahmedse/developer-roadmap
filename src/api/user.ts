@@ -1,5 +1,6 @@
 import { type APIContext } from 'astro';
 import { api } from './api.ts';
+import type { ResourceType } from '../lib/resource-progress.ts';
 
 export const allowedRoadmapVisibility = ['all', 'none', 'selected'] as const;
 export type AllowedRoadmapVisibility =
@@ -88,11 +89,38 @@ export type GetPublicProfileResponse = Omit<
   isOwnProfile: boolean;
 };
 
+export type GetUserProfileRoadmapResponse = {
+  title: string;
+  topicCount: number;
+  roadmapSlug?: string;
+  isCustomResource?: boolean;
+  done: string[];
+  learning: string[];
+  skipped: string[];
+  nodes: any[];
+  edges: any[];
+};
+
 export function userApi(context: APIContext) {
   return {
     getPublicProfile: async function (username: string) {
       return api(context).get<GetPublicProfileResponse>(
         `${import.meta.env.PUBLIC_API_URL}/v1-get-public-profile/${username}`,
+      );
+    },
+    getUserProfileRoadmap: async function (
+      username: string,
+      resourceId: string,
+      resourceType: ResourceType = 'roadmap',
+    ) {
+      return api(context).get<GetUserProfileRoadmapResponse>(
+        `${
+          import.meta.env.PUBLIC_API_URL
+        }/v1-get-user-profile-roadmap/${username}`,
+        {
+          resourceId,
+          resourceType,
+        },
       );
     },
   };

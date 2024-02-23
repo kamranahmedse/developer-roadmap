@@ -1,4 +1,5 @@
 import type { GetPublicProfileResponse } from '../../api/user';
+import { PrivateProfileBanner } from './PrivateProfileBanner';
 import { UserActivityHeatmap } from './UserPublicActivityHeatmap';
 import { UserPublicProfileHeader } from './UserPublicProfileHeader';
 import { UserPublicProgresses } from './UserPublicProgresses';
@@ -10,15 +11,10 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
 
   return (
     <>
-      {isOwnProfile && (
-        <div className="border-b border-yellow-400 bg-yellow-100 p-2 text-center text-sm font-medium">
-          Only you can see this, you can update your profile from{' '}
-          <a href="/account/update-profile" className="underline">
-            here
-          </a>
-          .
-        </div>
-      )}
+      <PrivateProfileBanner
+        isOwnProfile={isOwnProfile}
+        profileVisibility={profileVisibility}
+      />
       <section className="container mt-5 pb-10">
         <UserPublicProfileHeader userDetails={props!} />
         <div className="mt-10">

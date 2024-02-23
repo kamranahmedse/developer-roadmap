@@ -186,7 +186,7 @@ export function UpdatePublicProfileForm() {
       <div className="mt-16 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <h3 className="text-3xl font-bold">Public Profile</h3>
-          {profileVisibility === 'public' && publicProfileUrl && (
+          {publicProfileUrl && (
             <a href={publicProfileUrl} target="_blank" className="shrink-0">
               <ArrowUpRight className="h-6 w-6 stroke-[3]" />
             </a>
@@ -247,7 +247,9 @@ export function UpdatePublicProfileForm() {
               id="username"
               className="w-full px-3 py-2 outline-none placeholder:text-gray-400"
               placeholder="johndoe"
+              spellCheck={false}
               value={username}
+              title="Username must be at least 3 characters long and can only contain letters, numbers, and underscores"
               onChange={(e) =>
                 setUsername((e.target as HTMLInputElement).value)
               }
@@ -266,7 +268,7 @@ export function UpdatePublicProfileForm() {
               isSelected={isAllRoadmapsSelected}
               onClick={() => {
                 setRoadmapVisibility('all');
-                setRoadmaps([...profileRoadmaps.map((r) => r.id)]);
+                setRoadmaps([...publicRoadmaps.map((r) => r.id)]);
               }}
             />
             <SelectionButton
