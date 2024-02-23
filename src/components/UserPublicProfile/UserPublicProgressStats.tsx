@@ -40,7 +40,7 @@ export function UserPublicProgressStats(props: UserPublicProgressStats) {
       <h3 className="flex-1 cursor-pointer truncate text-lg font-medium">
         {title}
       </h3>
-      <div className="relative mt-3 h-1 w-full overflow-hidden rounded-full bg-black/5">
+      <div className="relative mt-5 h-1 w-full overflow-hidden rounded-full bg-black/5">
         <div
           className={`absolute left-0 top-0 h-full bg-black/40`}
           style={{
