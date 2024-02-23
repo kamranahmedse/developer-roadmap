@@ -29,8 +29,6 @@ export function UserProfileRoadmap(props: UserProfileRoadmapProps) {
     profileVisibility,
   } = props;
 
-  console.log('UserProfileRoadmap', props);
-
   const trackProgressRoadmapUrl = isCustomResource
     ? `/r/${resourceId}`
     : `/${resourceId}`;
