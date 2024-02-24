@@ -68,9 +68,7 @@ export function UserProfileRoadmap(props: UserProfileRoadmapProps) {
           </a>
         </div>
 
-        <h2 className="mt-10 text-2xl font-bold sm:mb-2 sm:text-4xl">
-          {title}
-        </h2>
+        <h2 className="mt-10 text-2xl font-bold sm:text-4xl">{title}</h2>
         <p className="mt-2 text-sm text-gray-500 sm:text-lg">
           Skills {name} has mastered on the {title?.toLowerCase()}.
         </p>
