@@ -28,7 +28,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
               No skills added yet.
             </div>
           ) : (
-            <ul className="mt-4 grid grid-cols-2 gap-2">
+            <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
               {roadmaps.map((roadmap, counter) => (
                 <li key={roadmap.id + counter}>
                   <UserPublicProgressStats
@@ -59,7 +59,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
               No roadmaps added yet.
             </div>
           ) : (
-            <ul className="mt-4 grid grid-cols-2 gap-2">
+            <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
               {customRoadmaps.map((roadmap, counter) => (
                 <li key={roadmap.id + counter}>
                   <UserPublicProgressStats
