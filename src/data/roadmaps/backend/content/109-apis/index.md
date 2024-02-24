@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [What is an API?](https://aws.amazon.com/what-is/api/)
 - [What is an API?](https://www.youtube.com/watch?v=s7wmiS2mSXY)
+- [What is an API from wiki?](https://en.wikipedia.org/wiki/API)
