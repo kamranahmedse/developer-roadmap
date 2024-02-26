@@ -7,3 +7,7 @@ One common example of client-side caching is web browsers caching frequently acc
 Another example of client-side caching is application-level caching. Some applications, such as mobile apps, can cache data on the client's device to improve performance and reduce the amount of data that needs to be transferred over the network.
 
 Client side caching has some advantages like reducing server load, faster page load times, and reducing network traffic. However, it also has some drawbacks like the potential for stale data if the client-side cache is not properly managed, or consuming memory or disk space on the client's device.
+
+Learn more from the following links:
+
+- [HTTP Caching](https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching)
