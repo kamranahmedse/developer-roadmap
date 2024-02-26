@@ -7,4 +7,5 @@ It sets up your development environment so that you can use the latest JavaScrip
 Visit the following resources to learn more:
 
 - [Official Docs](https://react.dev/learn/start-a-new-react-project)
+- [30 days of react](https://github.com/Asabeneh/30-Days-Of-React/blob/master/images/30_days_of_react.jp)
 - [Advanced: Custom Setup with Webpack](https://www.robinwieruch.de/minimal-react-webpack-babel-setup/)
