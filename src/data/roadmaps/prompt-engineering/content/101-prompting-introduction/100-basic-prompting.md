@@ -25,4 +25,4 @@ Or if you want to generate a new text, you could simply write the prompt with th
 Write me an introductory guide about Prompt Engineering.
 ```
 
-However, using plain text as prompts i.e. without using any best pratices you may not be able to fully utilise the power of LLMs. That's where "Prompt Engineering" or knowing the best practices for writing better prompts and getting the most out of LLMs comes in.
+However, using plain text as prompts i.e. without using any best practices you may not be able to fully utilise the power of LLMs. That's where "Prompt Engineering" or knowing the best practices for writing better prompts and getting the most out of LLMs comes in.
