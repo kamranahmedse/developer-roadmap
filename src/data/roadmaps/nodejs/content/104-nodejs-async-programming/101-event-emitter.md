@@ -1,4 +1,4 @@
-# Event Emitter
+a# Event Emitter
 
 In Node.js, an event can be described simply as a string with a corresponding callback. An event can be "emitted" (or, in other words, the corresponding callback be called) multiple times or you can choose to only listen for the first time it is emitted.
 
