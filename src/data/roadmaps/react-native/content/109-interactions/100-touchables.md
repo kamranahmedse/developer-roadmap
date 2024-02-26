@@ -59,7 +59,7 @@ In React Native, `Touchable` components are used to handle user interactions lik
    </TouchableNativeFeedback>
    ```
 
-- `TouchableHighlight`: The view will slightly change scale when pressed.
+- `TouchableScale`: The view will slightly change scale when pressed.
 
    ```jsx
    import { TouchableScale } from 'react-native-touchable-scale';
