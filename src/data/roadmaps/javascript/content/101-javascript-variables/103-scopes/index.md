@@ -4,7 +4,7 @@ In JavaScript, scope refers to the visibility of a variable or how it can be use
 
 The three types of Scope are Global Scope, Function Scope, and Block Scope. Before ES6 (2015), JavaScript had only Global Scope and Function Scope with the `var` keyword. ES6 introduced `let` and `const` which allow Block Scope in JavaScript.
 
-Global Scope: Variables declared outside any function or curly braces '{}' have Global Scope, and can be accessed from anywhere within the same Javascript code. `var`, `let` and `const` all provide this Scope.
+Global Scope: Variables declared outside any function or curly braces '{}' have Global Scope, and can be accessed from anywhere within the same Javascript code. While `var` can create global variables, `let` and `const` are typically used for block scope. However, they can also create global variables if declared in the global context."
 
 Function Scope: Variables declared within a function can only be used within that same function. Outside that function, they are undefined. `var`, `let` and `const` all provide this Scope.
 
