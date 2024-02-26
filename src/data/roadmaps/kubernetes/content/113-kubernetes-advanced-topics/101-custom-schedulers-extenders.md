@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Custom Scheduler Kubernetes | Multiple Schedulers Kubernetes](https://www.youtube.com/watch?v=NiB7sjXmiZc)
 - [Create a custom Kubernetes scheduler](https://developer.ibm.com/articles/creating-a-custom-kube-scheduler/)
+- [How Kubernetes Is Transforming into a Universal Scheduler](https://thenewstack.io/how-kubernetes-is-transforming-into-a-universal-scheduler/)
