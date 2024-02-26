@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [System Logs](https://kubernetes.io/docs/concepts/cluster-administration/system-logs/)
 - [Kubernetes: Log collection explained](https://www.youtube.com/watch?v=6kmHvXdAzIM)
+- [Logging for Kubernetes: What to Log and How to Log It](https://thenewstack.io/logging-for-kubernetes-what-to-log-and-how-to-log-it/)
