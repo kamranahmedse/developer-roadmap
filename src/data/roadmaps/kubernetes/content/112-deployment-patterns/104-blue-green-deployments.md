@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Create a Kubernetes Blue Green Deployment](https://developer.harness.io/docs/continuous-delivery/cd-execution/kubernetes-executions/create-a-kubernetes-blue-green-deployment/)
 - [Kubernetes - Blue/Green Deployments](https://www.youtube.com/watch?v=jxhpTGQ484Y)
+- [Primer: Blue-Green Deployments and Canary Releases](https://thenewstack.io/primer-blue-green-deployments-and-canary-releases/)
+- [Tutorial: Blue/Green Deployments with Kubernetes and Istio](https://thenewstack.io/tutorial-blue-green-deployments-with-kubernetes-and-istio/)
