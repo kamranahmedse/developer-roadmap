@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [What is a Cryptocurrency Wallet?](https://www.investopedia.com/terms/b/bitcoin-wallet.asp)
 - [What is a Crypto Wallet? A Beginner’s Guide](https://crypto.com/university/crypto-wallets)
+- [What Are Crypto Wallets Explained (Video)](https://www.youtube.com/watch?v=ywIaGnBEQX8)
