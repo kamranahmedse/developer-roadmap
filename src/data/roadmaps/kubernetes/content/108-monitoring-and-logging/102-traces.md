@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Traces For Kubernetes System Components](https://kubernetes.io/docs/concepts/cluster-administration/system-traces/)
 - [Introduction to Tracing](https://www.youtube.com/watch?v=idDu_jXqf4E)
+- [Kubernetes Probes (and Why They Matter for Autoscaling)](https://thenewstack.io/kubernetes-probes-and-why-they-matter-for-autoscaling/)
