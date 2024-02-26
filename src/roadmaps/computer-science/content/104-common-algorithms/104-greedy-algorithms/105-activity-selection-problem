@@ -1,0 +1,7 @@
+# Activity Selection Problem
+
+The activity selection algorithm is a greedy algorithm that selects a maximum-size set of mutually compatible activities from a given set of activities. It is based on the principle of choosing the activity that finishes first, and recursively selecting the next compatible activity until no more compatible activities are available. This algorithm has a time complexity of O(nlogn) and is commonly used in scheduling and resource allocation problems.
+
+Visit the following resources to learn more:
+
+- [Activity Selection Problem - GeeksforGeeks](https://www.geeksforgeeks.org/activity-selection-problem-greedy-algo-1/)
