@@ -5,3 +5,4 @@ The parameter is the name given to the variable declared inside the definition o
 Visit the following resources to learn more:
 
 - [Function Parameters](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions#function_parameters)
+- [Function Parameters](https://www.w3schools.com/js/js_function_parameters.asp)
