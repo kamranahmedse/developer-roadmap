@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Creating a cluster with kubeadm](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/)
 - [KUBERNETES | Install Kubernetes Cluster](https://www.youtube.com/watch?v=Ro2qeYeisZQ)
+- [Kubernetes Distribution or Vanilla Kubernetes?](https://thenewstack.io/kubernetes-distribution-or-vanilla-kubernetes/)
