@@ -31,3 +31,20 @@ export function getUser() {
 
   return decodeToken(token);
 }
+
+export function setAuthToken(token: string) {
+  Cookies.set(TOKEN_COOKIE_NAME, token, {
+    path: '/',
+    expires: 30,
+    sameSite: 'lax',
+    secure: true,
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}
+
+export function removeAuthToken() {
+  Cookies.remove(TOKEN_COOKIE_NAME, {
+    path: '/',
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}

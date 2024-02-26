@@ -1,7 +1,7 @@
 import { type FormEvent, useEffect, useState } from 'react';
 import { httpPost } from '../../lib/http';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 
 export function ResetPasswordForm() {
   const [code, setCode] = useState('');
@@ -37,7 +37,7 @@ export function ResetPasswordForm() {
         newPassword: password,
         confirmPassword: passwordConfirm,
         code,
-      }
+      },
     );
 
     if (error?.message) {
@@ -53,11 +53,7 @@ export function ResetPasswordForm() {
     }
 
     const token = response.token;
-    Cookies.set(TOKEN_COOKIE_NAME, token, {
-      path: '/',
-      expires: 30,
-      domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-    });
+    setAuthToken(response.token);
     window.location.href = '/';
   };
 
