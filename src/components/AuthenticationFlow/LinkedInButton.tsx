@@ -5,12 +5,17 @@ import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { LinkedInIcon } from '../ReactIcons/LinkedInIcon.tsx';
 
-type LinkedInButtonProps = {};
+type LinkedInButtonProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
 
 const LINKEDIN_REDIRECT_AT = 'linkedInRedirectAt';
 const LINKEDIN_LAST_PAGE = 'linkedInLastPage';
 
 export function LinkedInButton(props: LinkedInButtonProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -25,6 +30,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
     }
 
     setIsLoading(true);
+    setIsDisabled?.(true);
     httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-callback${
         window.location.search
@@ -34,6 +40,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         if (!response?.token) {
           setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
+          setIsDisabled?.(false);
 
           return;
         }
@@ -72,11 +79,13 @@ export function LinkedInButton(props: LinkedInButtonProps) {
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
         setIsLoading(false);
+        setIsDisabled?.(false);
       });
   }, []);
 
   const handleClick = () => {
     setIsLoading(true);
+    setIsDisabled?.(true);
     httpGet<{ loginUrl: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-linkedin-login`,
     )
@@ -84,6 +93,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
         if (!response?.loginUrl) {
           setError(error?.message || 'Something went wrong.');
           setIsLoading(false);
+          setIsDisabled?.(false);
 
           return;
         }
@@ -106,6 +116,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
         setIsLoading(false);
+        setIsDisabled?.(false);
       });
   };
 
@@ -113,7 +124,7 @@ export function LinkedInButton(props: LinkedInButtonProps) {
     <>
       <button
         className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         onClick={handleClick}
       >
         {isLoading ? (
