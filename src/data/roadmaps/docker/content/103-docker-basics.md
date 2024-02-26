@@ -26,3 +26,42 @@ Below are some essential Docker commands you'll use frequently:
 - `docker container stop <container>`: Stop a running container.
 - `docker container rm <container>`: Remove a stopped container.
 - `docker image rm <image>`: Remove an image from your local machine.
+## Docker Naming convention
+Docker naming conventions are useful for maintaining consistency and clarity when working with containers. Here are some common naming conventions for Docker containers, images, and other related entities:
+
+Images:
+
+- Use lowercase letters.
+- Use hyphens to separate words.
+- Include a version tag.
+Example: myapp-image:latest
+
+Containers:
+
+- Use a meaningful name related to the service or application.
+- Avoid using generic names like "container1" or "web".
+- Include a unique identifier (e.g., a random string or an index) if running multiple instances of the same image.
+Example: web-app-instance1
+
+Services:
+
+- Similar to container names, use a meaningful name.
+- Include a unique identifier if running multiple instances.
+Example: web-app-service
+
+Volumes:
+
+- Reflect the purpose of the volume.
+- Use lowercase letters and hyphens.
+Example: data-volume
+
+Networks:
+
+- Use a descriptive name related to the network's purpose.
+- Example: backend-network
+  
+Compose files:
+
+- Use a name related to the project or application.
+- Include a version number if needed.
+Example: myapp-compose.yml
