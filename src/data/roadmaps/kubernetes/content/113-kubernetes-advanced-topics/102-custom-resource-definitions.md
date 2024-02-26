@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Custom Resources - Documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
 - [Custom Resource Definition (CRD) Explained with Demo](https://www.youtube.com/watch?v=u1X5Rf7fWwM)
+- [Kubernetes CRDs: What They Are and Why They Are Useful](https://thenewstack.io/kubernetes-crds-what-they-are-and-why-they-are-useful/)
