@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Initializing your control-plane node - Documentation](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/create-cluster-kubeadm/#initializing-your-control-plane-node)
 - [Tutorial - Install Control Plane Components](https://www.youtube.com/watch?v=IUwuyZ5ReF0)
+- [How Many Nodes for Your Kubernetes Control Plane?](https://thenewstack.io/how-many-nodes-for-your-kubernetes-control-plane/)
