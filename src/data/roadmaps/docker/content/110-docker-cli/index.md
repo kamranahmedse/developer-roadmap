@@ -13,8 +13,8 @@ To get started with Docker CLI, you need to have Docker installed on your machin
 Here are some essential Docker CLI commands to familiarize yourself with:
 
 - `docker run`: Create and start a container from a Docker image
-- `docker container`: List running containers
-- `docker image`: List all available images on your system
+- `docker container ls`: List running containers
+- `docker image ls`: List all available images on your system
 - `docker pull`: Pull an image from Docker Hub or another registry
 - `docker push`: Push an image to Docker Hub or another registry
 - `docker build`: Build an image from a Dockerfile
