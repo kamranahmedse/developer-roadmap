@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Autoscaling in Kubernetes](https://kubernetes.io/blog/2016/07/autoscaling-in-kubernetes/)
 - [Kubernetes cluster autoscaling for beginners](https://www.youtube.com/watch?v=jM36M39MA3I)
+- [Getting Started with Kubernetes Autoscaling](https://thenewstack.io/getting-started-with-kubernetes-autoscaling/)
+- [K8s Resource Management: An Autoscaling Cheat Sheet](https://thenewstack.io/k8s-resource-management-an-autoscaling-cheat-sheet/)
