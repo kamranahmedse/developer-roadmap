@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [Kubernetes Scheduler](https://kubernetes.io/docs/concepts/scheduling-eviction/kube-scheduler/)
 - [Scheduling Framework](https://kubernetes.io/docs/concepts/scheduling-eviction/scheduling-framework/)
+- [A Deep Dive into Kubernetes Scheduling](https://thenewstack.io/a-deep-dive-into-kubernetes-scheduling/)
