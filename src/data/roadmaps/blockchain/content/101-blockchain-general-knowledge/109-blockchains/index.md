@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Types of Blockchains: PoW, PoS, and Private](https://www.gemini.com/cryptopedia/blockchain-types-pow-pos-private)
 - [Types of Blockchain](https://www.geeksforgeeks.org/types-of-blockchain/)
+- [Types Of Blockchain Explained (Video)](https://www.youtube.com/watch?v=rdstZa79Dp4)
