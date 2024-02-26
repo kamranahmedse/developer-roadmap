@@ -13,3 +13,4 @@ Visit the following resources to learn more:
 - [HTML Full Course for Beginners | Complete All-in-One Tutorial ](https://youtu.be/mJgBOIoGihA)
 - [HTML Full Course - Build a Website Tutorial](https://www.youtube.com/watch?v=pQN-pnXPaVg)
 - [HTML Tutorial for Beginners: HTML Crash Course](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+- [You don't need JavaScript for that](https://www.htmhell.dev/adventcalendar/2023/2/)
