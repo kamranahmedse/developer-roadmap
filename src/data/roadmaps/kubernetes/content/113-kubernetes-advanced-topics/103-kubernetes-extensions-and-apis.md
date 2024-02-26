@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Extensions - Documentation](https://kubernetes.io/docs/concepts/extend-kubernetes/#extensions)
 - [The Kubernetes API - Documentation](https://kubernetes.io/docs/concepts/overview/kubernetes-api/)
+- [Living with Kubernetes: API Lifecycles and You](https://thenewstack.io/living-with-kubernetes-api-lifecycles-and-you/)
