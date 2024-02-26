@@ -22,6 +22,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@astrojs/node": "^8.2.1",
     "@astrojs/react": "^3.0.10",
     "@astrojs/sitemap": "^3.0.5",
     "@astrojs/tailwind": "^5.1.0",
@@ -32,6 +33,7 @@
     "astro": "^4.4.0",
     "astro-compress": "^2.2.10",
     "clsx": "^2.1.0",
+    "dayjs": "^1.11.10",
     "dracula-prism": "^2.1.16",
     "jose": "^5.2.2",
     "js-cookie": "^3.0.5",
@@ -45,6 +47,7 @@
     "react-calendar-heatmap": "^1.9.0",
     "react-confetti": "^6.1.0",
     "react-dom": "^18.2.0",
+    "react-tooltip": "^5.26.3",
     "reactflow": "^11.10.4",
     "rehype-external-links": "^3.0.0",
     "roadmap-renderer": "^1.0.6",
