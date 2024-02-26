@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Rolling Back a Deployment - Docs](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/#rolling-back-a-deployment)
 - [Kubernetes Rolling Update | Rollback Deployment](https://www.youtube.com/watch?v=xRifmrap7S8)
+- [How to Simplify Kubernetes Updates and Reduce Risk](https://thenewstack.io/how-to-simplify-kubernetes-updates-and-reduce-risk/)
