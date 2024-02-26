@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Custom Controllers](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/#custom-controllers)
 - [Extending Kubernetes with Custom Controllers](https://www.youtube.com/results?search_query=Custom+controllers+in+k8s)
+- [Solving Kubernetes Configuration Woes with a Custom Controller](https://thenewstack.io/solving-kubernetes-configuration-woes-with-a-custom-controller/)
+- [Writing Custom Kubernetes Controllers: Beware of State Drift](https://thenewstack.io/writing-custom-kubernetes-controllers-beware-of-state-drift/)
