@@ -6,3 +6,4 @@ Learn more from the following links:
 
 - [Container Storage Interface (CSI) for Kubernetes](https://kubernetes.io/blog/2019/01/15/container-storage-interface-ga/)
 - [CSI in Kubernetes](https://www.youtube.com/watch?v=brXPQ1Qwjl4)
+- [How the Container Storage Interface (CSI) Boosts Cloud Native DevOps](https://thenewstack.io/how-the-container-storage-interface-csi-boosts-cloud-native-devops/)
