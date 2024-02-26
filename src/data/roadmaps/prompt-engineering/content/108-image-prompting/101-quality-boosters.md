@@ -1,1 +1,3 @@
 # Quality Boosters
+
+Quality boosters are the terms you add to a prompt to increase the aesthetic qualities and the level of detail in an image. For example _"beautiful", "award-winning", highly detailed"_ and "rendered in octane". Quality modifiers can be applied in the form of extra fluff added to the prompt. By adding verbosity to your prompt, you increase the details and overall quality of the output image at the expense of the subject becoming less controllable. In this example prompt _"photo of a lady in a flower field"_ could be improved with the following modifiers: _"cinematic, vibrant, 8k, ISO between 100 and 200, photorealistic and extremely detailed"_. You can include the camera settings in the prompt if you have a Photography background. 
