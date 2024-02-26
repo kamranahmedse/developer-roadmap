@@ -6,3 +6,4 @@ Learn more from the following link:
 
 - [Run Application - Documentation](https://kubernetes.io/docs/tasks/run-application/)
 - [Kubernetes Tutorial | Run & Deploy Spring Boot Application](https://www.youtube.com/watch?v=7o7e8OAAWyg)
+- [How Kubernetes Is Becoming the Universal Control Plane for Distributed Applications](https://thenewstack.io/how-kubernetes-is-becoming-the-universal-control-plane-for-distributed-applications/)
