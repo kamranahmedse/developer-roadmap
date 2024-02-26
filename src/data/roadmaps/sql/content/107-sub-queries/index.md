@@ -40,11 +40,11 @@ WHERE  column_name OPERATOR
    WHERE (roll_id, age)=(SELECT MIN(roll_id),MIN(age) FROM student);
    ```
 
-3. **Column subquery**: It returns single column value which is more than one row and one column. 
+3. **Column subquery**: It returns single column value with multiple rows and one column. 
 
    ```sql
    SELECT name, age FROM student 
-   WHERE name=(SELECT name FROM student);
+   WHERE name in (SELECT name FROM student);
    ```
 
 4. **Table subquery**: It returns more than one row and more than one column.
