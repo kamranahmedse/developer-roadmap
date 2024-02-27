@@ -6,7 +6,7 @@ excludedBySlug: '/backend/languages'
 seo:
   title: 'The 5 Best Backend Development Languages to Master (2024)'
   description: 'Discover the best backend development languages to learn right now for career development, with practical tips from an experienced developer.'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-01-18
 sitemap:

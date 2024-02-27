@@ -4,17 +4,17 @@ import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
 
-const guideId = 'backend-languages';
-const guide = await getGuideById('backend-languages');
+const guideId = 'backend-developer-skills';
+const guide = await getGuideById(guideId);
 
 const { frontmatter: guideData } = guide;
 ---
 
 <BaseLayout
-  title={guideData.seo.title}
-  description={guideData.seo.description}
-  permalink={`/backend/${guideId}`}
-  canonicalUrl={guideData.canonicalUrl}
+title={guideData.seo.title}
+description={guideData.seo.description}
+permalink={`/backend/${guideId}`}
+canonicalUrl={guideData.canonicalUrl}
 >
   <GuideHeader guide={guide} />
 
