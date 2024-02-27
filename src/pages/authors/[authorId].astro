@@ -2,9 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
 import { getGuidesByAuthor } from '../../lib/guide';
-import { getAllVideos } from '../../lib/video';
+import {getAllVideos, getVideosByAuthor} from '../../lib/video';
 import GuideListItem from '../../components/GuideListItem.astro';
 import { getAuthorById, getAuthorIds } from '../../lib/author';
+import VideoListItem from "../../components/VideoListItem.astro";
 
 interface Params extends Record<string, string | undefined> {}
 
@@ -18,10 +19,13 @@ export async function getStaticPaths() {
 
 const { authorId } = Astro.params;
 
+console.log(authorId);
+
 const author = await getAuthorById(authorId);
 
+console.log(author);
 const guides = await getGuidesByAuthor(authorId);
-const videos = await getAllVideos();
+const videos = await getVideosByAuthor(authorId);
 ---
 
 <BaseLayout
@@ -35,7 +39,7 @@ const videos = await getAllVideos();
   <div class='container pt-4 pb-0 md:pb-16 md:pt-8'>
     <div class=''>
       <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
-        <div>
+        <div class="flex-grow">
           <h1 class='text-2xl md:text-3xl font-bold'>{author.frontmatter.name}</h1>
           <div
             class='mt-1 mb-4 md:mt-4 md:mb-6 flex flex-col gap-3 text-gray-800 [&>p>a]:font-semibold [&>p>a]:underline leading-normal'
@@ -105,6 +109,7 @@ const videos = await getAllVideos();
       class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
     >
       {guides.map((guide) => <GuideListItem guide={guide} />)}
+      {videos.map((video) => <VideoListItem video={video} />)}
     </div>
   </div>
 </BaseLayout>

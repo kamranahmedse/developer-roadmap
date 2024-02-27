@@ -1,10 +1,7 @@
 ---
 title: 'Building a BitTorrent Client'
 description: 'Learn everything you need to know about BitTorrent by writing a client in Go'
-author:
-  name: 'Jesse Li'
-  url: 'https://twitter.com/__jesse_li'
-  imageUrl: '/authors/jesse.png'
+authorId: 'jesse-li'
 seo:
   title: 'Building a BitTorrent Client - roadmap.sh'
   description: 'Learn everything you need to know about BitTorrent by writing a client in Go'

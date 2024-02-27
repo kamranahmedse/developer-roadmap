@@ -4,10 +4,7 @@ description: 'Learn everything you need to know about the hash table data struct
 duration: '8 minutes'
 isNew: false
 date: 2022-02-21
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'
