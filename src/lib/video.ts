@@ -1,4 +1,5 @@
 import type { MarkdownFileType } from './file';
+import type {AuthorFileType} from "./author.ts";
 
 export interface VideoFrontmatter {
   title: string;
@@ -17,13 +18,14 @@ export interface VideoFrontmatter {
   date: string;
   sitemap: {
     priority: number;
-    changefreq: 'daily' | 'weekly' | 'monthly' | 'yealry';
+    changefreq: 'daily' | 'weekly' | 'monthly' | 'yearly';
   };
   tags: string[];
 }
 
 export type VideoFileType = MarkdownFileType<VideoFrontmatter> & {
   id: string;
+  author: AuthorFileType;
 };
 
 /**
@@ -43,12 +45,9 @@ function videoPathToId(filePath: string): string {
  * @returns Promisifed video files
  */
 export async function getAllVideos(): Promise<VideoFileType[]> {
-  const videos = await import.meta.glob<VideoFileType>(
-    '/src/data/videos/*.md',
-    {
-      eager: true,
-    }
-  );
+  const videos = import.meta.glob<VideoFileType>('/src/data/videos/*.md', {
+    eager: true,
+  });
 
   const videoFiles = Object.values(videos);
   const enrichedVideos = videoFiles.map((videoFile) => ({
@@ -59,6 +58,6 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
   return enrichedVideos.sort(
     (a, b) =>
       new Date(b.frontmatter.date).valueOf() -
-      new Date(a.frontmatter.date).valueOf()
+      new Date(a.frontmatter.date).valueOf(),
   );
 }

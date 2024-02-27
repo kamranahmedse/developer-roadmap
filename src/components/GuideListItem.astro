@@ -1,5 +1,5 @@
 ---
-import type { GuideFileType } from "../lib/guide";
+import type { GuideFileType } from '../lib/guide';
 
 export interface Props {
   guide: GuideFileType;
@@ -11,30 +11,34 @@ const { frontmatter, id } = guide;
 
 <a
   class:list={[
-    "block no-underline py-2 group text-md items-center text-gray-600 hover:text-blue-600 flex justify-between border-b",
+    'text-md group block flex items-center justify-between border-b py-2 text-gray-600 no-underline hover:text-blue-600',
   ]}
-  href={frontmatter.excludedBySlug ? frontmatter.excludedBySlug : `/guides/${id}`}
+  href={frontmatter.excludedBySlug
+    ? frontmatter.excludedBySlug
+    : `/guides/${id}`}
 >
-  <span class="group-hover:translate-x-2 transition-transform">
+  <span
+    class='text-sm transition-transform group-hover:translate-x-2 md:text-base'
+  >
     {frontmatter.title}
 
     {
       frontmatter.isNew && (
-        <span class="bg-green-300 text-green-900 text-xs font-medium px-1.5 py-0.5 rounded-sm uppercase ml-1.5">
+        <span class='ml-1.5 rounded-sm bg-green-300 px-1.5 py-0.5 text-xs font-medium uppercase text-green-900'>
           New
-          <span class="hidden sm:inline">
+          <span class='hidden sm:inline'>
             &middot;
-            {new Date(frontmatter.date).toLocaleString("default", {
-              month: "long",
+            {new Date(frontmatter.date).toLocaleString('default', {
+              month: 'long',
             })}
           </span>
         </span>
       )
     }
   </span>
-  <span class="capitalize text-gray-500 text-xs hidden sm:block">
+  <span class='hidden text-xs capitalize text-gray-500 sm:block'>
     {frontmatter.type}
   </span>
 
-  <span class="text-gray-400 text-xs block sm:hidden"> &raquo;</span>
+  <span class='block text-xs text-gray-400 sm:hidden'> &raquo;</span>
 </a>

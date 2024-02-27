@@ -1,4 +1,3 @@
-/// <reference types="astro/client" />
 import 'astro/client';
 
 interface ImportMetaEnv {

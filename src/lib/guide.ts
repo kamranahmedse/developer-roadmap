@@ -1,13 +1,10 @@
 import type { MarkdownFileType } from './file';
+import { type AuthorFileType, getAllAuthors } from './author.ts';
 
 export interface GuideFrontmatter {
   title: string;
   description: string;
-  author: {
-    name: string;
-    url: string;
-    imageUrl: string;
-  };
+  authorId: string;
   canonicalUrl?: string;
   // alternate path where this guide has been published
   excludedBySlug?: string;
@@ -27,6 +24,7 @@ export interface GuideFrontmatter {
 
 export type GuideFileType = MarkdownFileType<GuideFrontmatter> & {
   id: string;
+  author: AuthorFileType;
 };
 
 /**
@@ -41,23 +39,33 @@ function guidePathToId(filePath: string): string {
   return fileName.replace('.md', '');
 }
 
+export async function getGuidesByAuthor(
+  authorId: string,
+): Promise<GuideFileType[]> {
+  const allGuides = await getAllGuides();
+
+  return allGuides.filter((guide) => guide.author?.id === authorId);
+}
+
 /**
  * Gets all the guides sorted by the publishing date
  * @returns Promisifed guide files
  */
 export async function getAllGuides(): Promise<GuideFileType[]> {
   // @ts-ignore
-  const guides = await import.meta.glob<GuideFileType>(
-    '/src/data/guides/*.md',
-    {
-      eager: true,
-    },
-  );
+  const guides = import.meta.glob<GuideFileType>('/src/data/guides/*.md', {
+    eager: true,
+  });
+
+  const allAuthors = await getAllAuthors();
 
   const guideFiles = Object.values(guides) as GuideFileType[];
-  const enrichedGuides = guideFiles.map((guideFile) => ({
+  const enrichedGuides: GuideFileType[] = guideFiles.map((guideFile) => ({
     ...guideFile,
     id: guidePathToId(guideFile.file),
+    author: allAuthors.find(
+      (author) => author.id === guideFile.frontmatter.authorId,
+    )!,
   }));
 
   return enrichedGuides.sort(

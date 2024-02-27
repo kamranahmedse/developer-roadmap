@@ -1,10 +1,7 @@
 ---
 title: 'Introduction to LLMs'
 description: 'What are LLMs, how does ChatGPT and other LLMs work?'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Introduction to LLMs - roadmap.sh'
   description: 'What are LLMs, how does ChatGPT and other LLMs work?'

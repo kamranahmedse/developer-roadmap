@@ -1,10 +1,7 @@
 ---
 title: "Guide to Let's Encrypt SSL Setup"
 description: "Learn how to protect your website using Let's Encrypt SSL Certificates."
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: "Guide to Let's Encrypt SSL Setup - roadmap.sh"
   description: "Learn how to protect your website using Let's Encrypt SSL Certificates."

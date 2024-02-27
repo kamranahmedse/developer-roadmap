@@ -1,0 +1,110 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import AstroIcon from '../../components/AstroIcon.astro';
+import { getGuidesByAuthor } from '../../lib/guide';
+import { getAllVideos } from '../../lib/video';
+import GuideListItem from '../../components/GuideListItem.astro';
+import { getAuthorById, getAuthorIds } from '../../lib/author';
+
+interface Params extends Record<string, string | undefined> {}
+
+export async function getStaticPaths() {
+  const authorIds = await getAuthorIds();
+
+  return authorIds.map((authorId) => ({
+    params: { authorId },
+  }));
+}
+
+const { authorId } = Astro.params;
+
+const author = await getAuthorById(authorId);
+
+const guides = await getGuidesByAuthor(authorId);
+const videos = await getAllVideos();
+---
+
+<BaseLayout
+  permalink={`/author/${author.id}`}
+  title={`${author.frontmatter.name} - Author at roadmap.sh`}
+  briefTitle={author.frontmatter.name}
+  ogImageUrl={`https://roadmap.sh/${author.frontmatter.imageUrl}`}
+  description={`${author.frontmatter.name} has written ${guides.length} articles on roadmap.sh on a variety of topics.`}
+  noIndex={false}
+>
+  <div class='container pt-4 pb-0 md:pb-16 md:pt-8'>
+    <div class=''>
+      <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
+        <div>
+          <h1 class='text-2xl md:text-3xl font-bold'>{author.frontmatter.name}</h1>
+          <div
+            class='mt-1 mb-4 md:mt-4 md:mb-6 flex flex-col gap-3 text-gray-800 [&>p>a]:font-semibold [&>p>a]:underline leading-normal'
+          >
+            <author.Content />
+          </div>
+
+          <div class='flex items-center justify-between'>
+            <div class='flex items-center gap-1.5'>
+              {
+                author.frontmatter.social?.github && (
+                  <a
+                    href={author.frontmatter.social.github}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='github' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                author.frontmatter.social.twitter && (
+                  <a
+                    href={author.frontmatter.social.twitter}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='twitter' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                author.frontmatter.social.linkedin && (
+                  <a
+                    href={author.frontmatter.social.linkedin}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='linkedin-2' class='h-[20px]' />
+                  </a>
+                )
+              }
+              {
+                author.frontmatter.social.website && (
+                  <a
+                    href={author.frontmatter.social.website}
+                    target='_blank'
+                    class='text-gray-500 transition-colors hover:text-gray-800'
+                  >
+                    <AstroIcon icon='globe' class='h-[20px]' />
+                  </a>
+                )
+              }
+            </div>
+          </div>
+        </div>
+        <div class='hidden flex-shrink-0 flex-col md:flex'>
+          <img
+            alt="Kamran Ahmed's profile picture"
+            class='block h-[175px] w-[175px] rounded-full bg-gray-100'
+            src={author.frontmatter.imageUrl}
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class='rounded-t-xl bg-gradient-to-b from-gray-100 to-white px-3 py-2 md:px-6 md:py-3 [&>*:last-child]:border-b-0'
+    >
+      {guides.map((guide) => <GuideListItem guide={guide} />)}
+    </div>
+  </div>
+</BaseLayout>
