@@ -2,9 +2,11 @@ import { useRef, useState, type FormEvent } from 'react';
 import './GenerateRoadmap.css';
 import { httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { generateRoadmapFromJSON } from '../../../editor/utils/roadmap-generator';
+import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
+import { readAIRoadmapStream } from '../../helper/read-stream';
+import { removeAuthToken } from '../../lib/jwt';
 
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
@@ -18,24 +20,47 @@ export function GenerateRoadmap() {
     e.preventDefault();
     setIsLoading(true);
 
-    const { response, error } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-generate-roadmap`,
+    const response = await fetch(
+      `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
       {
-        title: roadmapName,
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        credentials: 'include',
+        body: JSON.stringify({ title: roadmapName }),
       },
     );
 
-    if (error || !response) {
+    if (!response.ok) {
+      const data = await response.json();
+
+      toast.error(data?.message || 'Something went wrong');
       setIsLoading(false);
-      toast.error(error?.message || 'Something went wrong');
+
+      // Logout user if token is invalid
+      if (data.status === 401) {
+        removeAuthToken();
+        window.location.reload();
+      }
+    }
+
+    const reader = response.body?.getReader();
+
+    if (!reader) {
+      setIsLoading(false);
+      toast.error('Something went wrong');
       return;
     }
 
-    const { nodes, edges } = generateRoadmapFromJSON(response as any);
-    const svg = await renderFlowJSON({ nodes, edges });
-    if (roadmapContainerRef?.current) {
-      replaceChildren(roadmapContainerRef?.current, svg);
-    }
+    await readAIRoadmapStream(reader, async (result) => {
+      const { nodes, edges } = generateAIRoadmapFromText(result);
+      const svg = await renderFlowJSON({ nodes, edges });
+      if (roadmapContainerRef?.current) {
+        replaceChildren(roadmapContainerRef?.current, svg);
+      }
+    });
+
     setIsLoading(false);
   };
 
