@@ -5,3 +5,5 @@ The N+1 query problem happens when your code executes N additional query stateme
 Visit the following resources to learn more:
 
 - [In Detail Explanation of N+1 Problem](https://medium.com/doctolib/understanding-and-fixing-n-1-query-30623109fe89)
+- [How to Avoid the N+1 Query Problem in GraphQL and REST APIs](https://www.freecodecamp.org/news/n-plus-one-query-problem/)
+
