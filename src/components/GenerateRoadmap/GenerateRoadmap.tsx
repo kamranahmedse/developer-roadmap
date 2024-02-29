@@ -1,4 +1,4 @@
-import { useRef, useState, type FormEvent } from 'react';
+import { useEffect, useRef, useState, type FormEvent } from 'react';
 import fp from '@fingerprintjs/fingerprintjs';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
@@ -11,18 +11,25 @@ import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { Download, PenSquare, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
-import { httpPost } from '../../lib/http.ts';
+import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
+import { getUrlParams, setUrlParams } from '../../lib/browser.ts';
+
+const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
+  const { id: roadmapId } = getUrlParams() as { id: string };
   const toast = useToast();
 
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
   const [roadmapTopic, setRoadmapTopic] = useState('');
   const [generatedRoadmap, setGeneratedRoadmap] = useState('');
+
+  const [roadmapLimit, setRoadmapLimit] = useState(0);
+  const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -71,6 +78,15 @@ export function GenerateRoadmap() {
 
     await readAIRoadmapStream(reader, {
       onStream: async (result) => {
+        if (result.includes('@ROADMAPID')) {
+          // @ROADMAPID: is a special token that we use to identify the roadmap
+          // @ROADMAPID:1234@ is the format, we will remove the token and the id
+          // and replace it with a empty string
+          const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
+          setUrlParams({ id: roadmapId });
+          result = result.replace(ROADMAP_ID_REGEX, '');
+        }
+
         const { nodes, edges } = generateAIRoadmapFromText(result);
         const svg = await renderFlowJSON({ nodes, edges });
         if (roadmapContainerRef?.current) {
@@ -78,7 +94,9 @@ export function GenerateRoadmap() {
         }
       },
       onStreamEnd: async (result) => {
+        result = result.replace(ROADMAP_ID_REGEX, '');
         setGeneratedRoadmap(result);
+        loadAIRoadmapLimit().finally(() => {});
       },
     });
 
@@ -159,15 +177,82 @@ export function GenerateRoadmap() {
     }
   };
 
+  const loadAIRoadmapLimit = async () => {
+    pageProgressMessage.set('Loading Roadmap Limit');
+
+    const { response, error } = await httpGet<{
+      limit: number;
+      used: number;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap-limit`);
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      return;
+    }
+
+    const { limit, used } = response;
+    setRoadmapLimit(limit);
+    setRoadmapLimitUsed(used);
+
+    pageProgressMessage.set('');
+  };
+
+  const loadAIRoadmap = async (roadmapId: string) => {
+    setIsLoading(true);
+    pageProgressMessage.set('Loading Roadmap');
+
+    const { response, error } = await httpGet<{
+      topic: string;
+      data: string;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap/${roadmapId}`);
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      setIsLoading(false);
+      return;
+    }
+
+    const { topic, data } = response;
+
+    const { nodes, edges } = generateAIRoadmapFromText(data);
+    const svg = await renderFlowJSON({ nodes, edges });
+    if (roadmapContainerRef?.current) {
+      replaceChildren(roadmapContainerRef?.current, svg);
+    }
+
+    setRoadmapTopic(topic);
+    setGeneratedRoadmap(data);
+  };
+
+  useEffect(() => {
+    loadAIRoadmapLimit().finally(() => {});
+  }, []);
+
+  useEffect(() => {
+    if (!roadmapId) {
+      return;
+    }
+
+    setHasSubmitted(true);
+    loadAIRoadmap(roadmapId).then(() => {
+      setIsLoading(false);
+      pageProgressMessage.set('');
+    });
+  }, [roadmapId]);
+
   if (!hasSubmitted) {
     return (
       <RoadmapSearch
         roadmapTopic={roadmapTopic}
         setRoadmapTopic={setRoadmapTopic}
         handleSubmit={handleSubmit}
+        limit={roadmapLimit}
+        limitUsed={roadmapLimitUsed}
       />
     );
   }
+
+  const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
 
   return (
     <section className="flex flex-grow flex-col bg-gray-100">
@@ -182,7 +267,7 @@ export function GenerateRoadmap() {
           <div className="flex max-w-[600px] flex-grow flex-col items-center">
             <div className="mt-2 flex w-full items-center justify-between text-sm">
               <span className="text-gray-800">
-                0 of 5 roadmaps generated{' '}
+                {roadmapLimitUsed} of {roadmapLimit} roadmaps generated{' '}
                 <button className="font-medium text-black underline underline-offset-2">
                   Login to increase your limit
                 </button>
@@ -219,10 +304,12 @@ export function GenerateRoadmap() {
                   <Download size={15} />
                   Download
                 </button>
-                <ShareRoadmapButton
-                  description={'c'}
-                  pageUrl={'https://roadmap.sh'}
-                />
+                {roadmapId && (
+                  <ShareRoadmapButton
+                    description={`Check out ${roadmapTopic} roadmap I generated on roadmap.sh`}
+                    pageUrl={pageUrl}
+                  />
+                )}
               </div>
               <button
                 className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors transition-opacity duration-300 hover:bg-gray-300 sm:text-sm"
