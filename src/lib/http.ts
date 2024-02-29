@@ -36,7 +36,7 @@ export async function httpCall<
   options?: HttpOptionsType,
 ): Promise<ApiReturn<ResponseType, ErrorType>> {
   try {
-    const fingerprintPromise = await fp.load({ monitoring: false });
+    const fingerprintPromise = await fp.load();
     const fingerprint = await fingerprintPromise.get();
 
     const response = await fetch(url, {
