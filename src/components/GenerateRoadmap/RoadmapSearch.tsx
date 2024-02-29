@@ -5,10 +5,18 @@ type RoadmapSearchProps = {
   roadmapTopic: string;
   setRoadmapTopic: (topic: string) => void;
   handleSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  limit: number;
+  limitUsed: number;
 };
 
 export function RoadmapSearch(props: RoadmapSearchProps) {
-  const { roadmapTopic, setRoadmapTopic, handleSubmit } = props;
+  const {
+    roadmapTopic,
+    setRoadmapTopic,
+    handleSubmit,
+    limit = 0,
+    limitUsed = 0,
+  } = props;
 
   return (
     <div className="flex flex-grow flex-col items-center justify-center py-6">
@@ -39,7 +47,10 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
       </form>
       <div className="mb-36">
         <p className="text-gray-500">
-          You have generated <span className="text-gray-800">0 of 5</span>{' '}
+          You have generated{' '}
+          <span className="text-gray-800">
+            {limitUsed} of ${limit}
+          </span>{' '}
           roadmaps today.{' '}
           <button className="font-semibold text-black underline underline-offset-2">
             Log in to increase your limit
