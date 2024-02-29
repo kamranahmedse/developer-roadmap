@@ -2,7 +2,13 @@ const NEW_LINE = '\n'.charCodeAt(0);
 
 export async function readAIRoadmapStream(
   reader: ReadableStreamDefaultReader<Uint8Array>,
-  renderRoadmap: (roadmap: string) => void,
+  {
+    onStream,
+    onStreamEnd,
+  }: {
+    onStream?: (roadmap: string) => void;
+    onStreamEnd?: (roadmap: string) => void;
+  },
 ) {
   const decoder = new TextDecoder('utf-8');
   let result = '';
@@ -21,7 +27,7 @@ export async function readAIRoadmapStream(
       for (let i = 0; i < value.length; i++) {
         if (value[i] === NEW_LINE) {
           result += decoder.decode(value.slice(start, i + 1));
-          renderRoadmap(result);
+          onStream?.(result);
           start = i + 1;
         }
       }
@@ -31,6 +37,7 @@ export async function readAIRoadmapStream(
     }
   }
 
-  renderRoadmap(result);
+  onStream?.(result);
+  onStreamEnd?.(result);
   reader.releaseLock();
 }
