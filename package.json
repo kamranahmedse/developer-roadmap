@@ -32,6 +32,7 @@
     "astro": "^4.4.0",
     "astro-compress": "^2.2.10",
     "clsx": "^2.1.0",
+    "dom-to-image": "^2.6.0",
     "dracula-prism": "^2.1.16",
     "jose": "^5.2.2",
     "js-cookie": "^3.0.5",
@@ -57,6 +58,7 @@
   "devDependencies": {
     "@playwright/test": "^1.41.2",
     "@tailwindcss/typography": "^0.5.10",
+    "@types/dom-to-image": "^2.6.7",
     "@types/js-cookie": "^3.0.6",
     "@types/prismjs": "^1.26.3",
     "csv-parser": "^3.0.0",
