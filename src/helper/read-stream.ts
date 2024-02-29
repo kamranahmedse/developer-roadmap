@@ -31,6 +31,6 @@ export async function readAIRoadmapStream(
     }
   }
 
-  reader.releaseLock();
   renderRoadmap(result);
+  reader.releaseLock();
 }
