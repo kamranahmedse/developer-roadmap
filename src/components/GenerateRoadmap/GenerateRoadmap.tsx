@@ -11,6 +11,8 @@ import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { Download, PenSquare, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
+import { httpPost } from '../../lib/http.ts';
+import { pageProgressMessage } from '../../stores/page.ts';
 
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
@@ -20,6 +22,8 @@ export function GenerateRoadmap() {
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
   const [roadmapTopic, setRoadmapTopic] = useState('');
+  const [nodes, setNodes] = useState<any[]>([]);
+  const [edges, setEdges] = useState<any[]>([]);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -66,15 +70,56 @@ export function GenerateRoadmap() {
       return;
     }
 
-    await readAIRoadmapStream(reader, async (result) => {
-      const { nodes, edges } = generateAIRoadmapFromText(result);
-      const svg = await renderFlowJSON({ nodes, edges });
-      if (roadmapContainerRef?.current) {
-        replaceChildren(roadmapContainerRef?.current, svg);
-      }
+    await readAIRoadmapStream(reader, {
+      onStream: async (result) => {
+        const { nodes, edges } = generateAIRoadmapFromText(result);
+        const svg = await renderFlowJSON({ nodes, edges });
+        if (roadmapContainerRef?.current) {
+          replaceChildren(roadmapContainerRef?.current, svg);
+        }
+      },
+      onStreamEnd: async (result) => {
+        const { nodes, edges } = generateAIRoadmapFromText(result);
+        setNodes(
+          nodes.map((node) => ({
+            ...node,
+
+            // To reset the width and height of the node
+            // so that it can be calculated based on the content in the editor
+            width: undefined,
+            height: undefined,
+            style: {
+              ...node.style,
+              width: undefined,
+              height: undefined,
+            },
+          })),
+        );
+        setEdges(edges);
+      },
     });
 
     setIsLoading(false);
+  };
+
+  const editGeneratedRoadmap = async () => {
+    pageProgressMessage.set('Redirecting to Editor');
+
+    const { response, error } = await httpPost<{
+      roadmapId: string;
+    }>(`${import.meta.env.PUBLIC_API_URL}/v1-edit-ai-generated-roadmap`, {
+      title: roadmapTopic,
+      nodes,
+      edges,
+    });
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      setIsLoading(false);
+      return;
+    }
+
+    window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response.roadmapId}`;
   };
 
   if (!hasSubmitted) {
@@ -139,7 +184,11 @@ export function GenerateRoadmap() {
                   pageUrl={'https://roadmap.sh'}
                 />
               </div>
-              <button className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors transition-opacity duration-300 hover:bg-gray-300 sm:text-sm">
+              <button
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors transition-opacity duration-300 hover:bg-gray-300 sm:text-sm"
+                onClick={editGeneratedRoadmap}
+                disabled={isLoading}
+              >
                 <PenSquare size={15} />
                 Edit in Editor
               </button>
