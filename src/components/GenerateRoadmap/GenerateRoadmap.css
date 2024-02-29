@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'balsamiq';
+  src: url('/fonts/balsamiq.woff2');
+}
+
 svg text tspan {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

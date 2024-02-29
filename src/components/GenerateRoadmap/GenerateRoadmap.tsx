@@ -22,8 +22,7 @@ export function GenerateRoadmap() {
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
   const [roadmapTopic, setRoadmapTopic] = useState('');
-  const [nodes, setNodes] = useState<any[]>([]);
-  const [edges, setEdges] = useState<any[]>([]);
+  const [generatedRoadmap, setGeneratedRoadmap] = useState('');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -79,23 +78,7 @@ export function GenerateRoadmap() {
         }
       },
       onStreamEnd: async (result) => {
-        const { nodes, edges } = generateAIRoadmapFromText(result);
-        setNodes(
-          nodes.map((node) => ({
-            ...node,
-
-            // To reset the width and height of the node
-            // so that it can be calculated based on the content in the editor
-            width: undefined,
-            height: undefined,
-            style: {
-              ...node.style,
-              width: undefined,
-              height: undefined,
-            },
-          })),
-        );
-        setEdges(edges);
+        setGeneratedRoadmap(result);
       },
     });
 
@@ -105,11 +88,25 @@ export function GenerateRoadmap() {
   const editGeneratedRoadmap = async () => {
     pageProgressMessage.set('Redirecting to Editor');
 
+    const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmap);
+
     const { response, error } = await httpPost<{
       roadmapId: string;
     }>(`${import.meta.env.PUBLIC_API_URL}/v1-edit-ai-generated-roadmap`, {
       title: roadmapTopic,
-      nodes,
+      nodes: nodes.map((node) => ({
+        ...node,
+
+        // To reset the width and height of the node
+        // so that it can be calculated based on the content in the editor
+        width: undefined,
+        height: undefined,
+        style: {
+          ...node.style,
+          width: undefined,
+          height: undefined,
+        },
+      })),
       edges,
     });
 
@@ -120,6 +117,46 @@ export function GenerateRoadmap() {
     }
 
     window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response.roadmapId}`;
+  };
+
+  const downloadGeneratedRoadmap = async () => {
+    pageProgressMessage.set('Downloading Roadmap');
+
+    const node = document.getElementById('roadmap-container');
+    if (!node) {
+      toast.error('Something went wrong');
+      return;
+    }
+
+    // Append a watermark to the bottom right of the image
+    const watermark = document.createElement('div');
+    watermark.className = 'flex justify-end absolute bottom-4 right-4 gap-2';
+    watermark.innerHTML = `
+      <span
+        class='rounded-md bg-black py-2 px-2 text-white'
+      >
+        roadmap.sh
+      </span>
+    `;
+    node.insertAdjacentElement('afterbegin', watermark);
+
+    try {
+      const domtoimage = (await import('dom-to-image')).default;
+      const dataUrl = await domtoimage.toJpeg(node, {
+        bgcolor: 'white',
+        quality: 1,
+      });
+      node?.removeChild(watermark);
+      const link = document.createElement('a');
+      link.download = `${roadmapTopic}-roadmap.jpg`;
+      link.href = dataUrl;
+      link.click();
+
+      pageProgressMessage.set('');
+    } catch (error) {
+      console.error(error);
+      toast.error('Something went wrong');
+    }
   };
 
   if (!hasSubmitted) {
@@ -175,7 +212,10 @@ export function GenerateRoadmap() {
             </form>
             <div className="flex w-full items-center justify-between gap-2">
               <div className="flex items-center justify-between gap-2">
-                <button className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm">
+                <button
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm"
+                  onClick={downloadGeneratedRoadmap}
+                >
                   <Download size={15} />
                   Download
                 </button>
@@ -198,7 +238,8 @@ export function GenerateRoadmap() {
       </div>
       <div
         ref={roadmapContainerRef}
-        className="px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px] "
+        id="roadmap-container"
+        className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
       />
     </section>
   );
