@@ -7,18 +7,24 @@ import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
 import { removeAuthToken } from '../../lib/jwt';
+import { RoadmapSearch } from './RoadmapSearch.tsx';
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import { Download, PenSquare, Wand } from 'lucide-react';
+import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
   const toast = useToast();
 
+  const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [roadmapName, setRoadmapName] = useState('');
+  const [roadmapTopic, setRoadmapTopic] = useState('');
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
+    setHasSubmitted(true);
 
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
@@ -28,7 +34,7 @@ export function GenerateRoadmap() {
           'Content-Type': 'application/json',
         },
         credentials: 'include',
-        body: JSON.stringify({ title: roadmapName }),
+        body: JSON.stringify({ title: roadmapTopic }),
       },
     );
 
@@ -64,42 +70,77 @@ export function GenerateRoadmap() {
     setIsLoading(false);
   };
 
-  return (
-    <section className="container grid grid-cols-[280px,1fr]">
-      <form
-        className="h-full space-y-4 border-r px-4 py-10"
-        onSubmit={handleSubmit}
-      >
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="roadmap-name"
-            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-          >
-            Roadmap Title
-          </label>
-          <input
-            type="text"
-            name="roadmap-name"
-            id="roadmap-name"
-            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            required
-            placeholder="Frontend"
-            value={roadmapName}
-            onInput={(e) =>
-              setRoadmapName((e.target as HTMLInputElement).value)
-            }
-          />
-        </div>
-        <button
-          type="submit"
-          disabled={isLoading}
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-        >
-          {isLoading ? 'Please wait...' : 'Generate'}
-        </button>
-      </form>
+  if (!hasSubmitted) {
+    return (
+      <RoadmapSearch
+        roadmapTopic={roadmapTopic}
+        setRoadmapTopic={setRoadmapTopic}
+        handleSubmit={handleSubmit}
+      />
+    );
+  }
 
-      <div ref={roadmapContainerRef} className="px-4 py-10" />
+  return (
+    <section className="flex flex-grow flex-col bg-gray-100">
+      <div className="flex items-center justify-center border-b bg-white py-6">
+        {isLoading && (
+          <span className="flex items-center gap-2 rounded-full bg-black px-3 py-1 text-white">
+            <Spinner isDualRing={false} innerFill={'white'} />
+            Generating roadmap ..
+          </span>
+        )}
+        {!isLoading && (
+          <div className="flex max-w-[600px] flex-grow flex-col items-center">
+            <div className="mt-2 flex w-full items-center justify-between text-sm">
+              <span className="text-gray-800">
+                0 of 5 roadmaps generated <button className='underline underline-offset-2 font-medium text-black'>Login to increase your limit</button>
+              </span>
+            </div>
+            <form
+              onSubmit={handleSubmit}
+              className="my-3 flex w-full flex-row items-center justify-center gap-2"
+            >
+              <input
+                type="text"
+                autoFocus
+                placeholder="e.g. Ansible"
+                className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
+                value={roadmapTopic}
+                onInput={(e) =>
+                  setRoadmapTopic((e.target as HTMLInputElement).value)
+                }
+              />
+              <button
+                type={'submit'}
+                className="flex flex-shrink-0 items-center gap-2 rounded-md border border-black bg-black px-4 py-2 text-white"
+              >
+                <Wand size={20} />
+                Generate
+              </button>
+            </form>
+            <div className="flex w-full items-center justify-between gap-2">
+              <div className="flex items-center justify-between gap-2">
+                <button className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm">
+                  <Download size={15} />
+                  Download
+                </button>
+                <ShareRoadmapButton
+                  description={'c'}
+                  pageUrl={'https://roadmap.sh'}
+                />
+              </div>
+              <button className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors transition-opacity duration-300 hover:bg-gray-300 sm:text-sm">
+                <PenSquare size={15} />
+                Edit in Editor
+              </button>
+            </div>
+          </div>
+        )}
+      </div>
+      <div
+        ref={roadmapContainerRef}
+        className="px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px] "
+      />
     </section>
   );
 }
