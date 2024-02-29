@@ -1,6 +1,6 @@
 import { useRef, useState, type FormEvent } from 'react';
+import fp from '@fingerprintjs/fingerprintjs';
 import './GenerateRoadmap.css';
-import { httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
@@ -26,15 +26,22 @@ export function GenerateRoadmap() {
     setIsLoading(true);
     setHasSubmitted(true);
 
+    const fingerprintPromise = await fp.load({
+      debug: import.meta.env.DEV,
+    });
+
+    const fingerprint = await fingerprintPromise.get();
+
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
       {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
+          fp: fingerprint.visitorId,
         },
         credentials: 'include',
-        body: JSON.stringify({ title: roadmapTopic }),
+        body: JSON.stringify({ topic: roadmapTopic }),
       },
     );
 
@@ -93,7 +100,10 @@ export function GenerateRoadmap() {
           <div className="flex max-w-[600px] flex-grow flex-col items-center">
             <div className="mt-2 flex w-full items-center justify-between text-sm">
               <span className="text-gray-800">
-                0 of 5 roadmaps generated <button className='underline underline-offset-2 font-medium text-black'>Login to increase your limit</button>
+                0 of 5 roadmaps generated{' '}
+                <button className="font-medium text-black underline underline-offset-2">
+                  Login to increase your limit
+                </button>
               </span>
             </div>
             <form
