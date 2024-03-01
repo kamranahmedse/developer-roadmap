@@ -36,6 +36,18 @@ export function GenerateRoadmap() {
     setIsLoading(true);
     setHasSubmitted(true);
 
+    if (!roadmapTopic) {
+      toast.error('Please enter a topic');
+      setIsLoading(false);
+      return;
+    }
+
+    if (roadmapLimitUsed >= roadmapLimit) {
+      toast.error('You have reached your limit of generating roadmaps');
+      setIsLoading(false);
+      return;
+    }
+
     const fingerprintPromise = await fp.load({
       debug: import.meta.env.DEV,
     });
