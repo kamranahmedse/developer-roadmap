@@ -1,5 +1,7 @@
 import { Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
+import { isLoggedIn } from '../../lib/jwt';
+import { showLoginPopup } from '../../lib/popup';
 
 type RoadmapSearchProps = {
   roadmapTopic: string;
@@ -49,12 +51,20 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         <p className="text-gray-500">
           You have generated{' '}
           <span className="text-gray-800">
-            {limitUsed} of ${limit}
+            {limitUsed} of {limit}
           </span>{' '}
-          roadmaps today.{' '}
-          <button className="font-semibold text-black underline underline-offset-2">
-            Log in to increase your limit
-          </button>
+          roadmaps today.
+          {!isLoggedIn && (
+            <>
+              {' '}
+              <button
+                className="font-semibold text-black underline underline-offset-2"
+                onClick={showLoginPopup}
+              >
+                Log in to increase your limit
+              </button>
+            </>
+          )}
         </p>
       </div>
     </div>

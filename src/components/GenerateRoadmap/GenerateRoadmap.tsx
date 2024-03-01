@@ -1,19 +1,24 @@
 import { useEffect, useRef, useState, type FormEvent } from 'react';
-import fp from '@fingerprintjs/fingerprintjs';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
-import { removeAuthToken } from '../../lib/jwt';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { Download, PenSquare, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
-import { getUrlParams, setUrlParams } from '../../lib/browser.ts';
+import {
+  deleteUrlParam,
+  getUrlParams,
+  setUrlParams,
+} from '../../lib/browser.ts';
+import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
+import { showLoginPopup } from '../../lib/popup.ts';
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
@@ -30,6 +35,14 @@ export function GenerateRoadmap() {
 
   const [roadmapLimit, setRoadmapLimit] = useState(0);
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
+
+  const renderRoadmap = async (roadmap: string) => {
+    const { nodes, edges } = generateAIRoadmapFromText(roadmap);
+    const svg = await renderFlowJSON({ nodes, edges });
+    if (roadmapContainerRef?.current) {
+      replaceChildren(roadmapContainerRef?.current, svg);
+    }
+  };
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -48,11 +61,7 @@ export function GenerateRoadmap() {
       return;
     }
 
-    const fingerprintPromise = await fp.load({
-      debug: import.meta.env.DEV,
-    });
-
-    const fingerprint = await fingerprintPromise.get();
+    deleteUrlParam('id');
 
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
@@ -60,7 +69,6 @@ export function GenerateRoadmap() {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          fp: fingerprint.visitorId,
         },
         credentials: 'include',
         body: JSON.stringify({ topic: roadmapTopic }),
@@ -99,11 +107,7 @@ export function GenerateRoadmap() {
           result = result.replace(ROADMAP_ID_REGEX, '');
         }
 
-        const { nodes, edges } = generateAIRoadmapFromText(result);
-        const svg = await renderFlowJSON({ nodes, edges });
-        if (roadmapContainerRef?.current) {
-          replaceChildren(roadmapContainerRef?.current, svg);
-        }
+        await renderRoadmap(result);
       },
       onStreamEnd: async (result) => {
         result = result.replace(ROADMAP_ID_REGEX, '');
@@ -116,6 +120,11 @@ export function GenerateRoadmap() {
   };
 
   const editGeneratedRoadmap = async () => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
     pageProgressMessage.set('Redirecting to Editor');
 
     const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmap);
@@ -158,30 +167,8 @@ export function GenerateRoadmap() {
       return;
     }
 
-    // Append a watermark to the bottom right of the image
-    const watermark = document.createElement('div');
-    watermark.className = 'flex justify-end absolute bottom-4 right-4 gap-2';
-    watermark.innerHTML = `
-      <span
-        class='rounded-md bg-black py-2 px-2 text-white'
-      >
-        roadmap.sh
-      </span>
-    `;
-    node.insertAdjacentElement('afterbegin', watermark);
-
     try {
-      const domtoimage = (await import('dom-to-image')).default;
-      const dataUrl = await domtoimage.toJpeg(node, {
-        bgcolor: 'white',
-        quality: 1,
-      });
-      node?.removeChild(watermark);
-      const link = document.createElement('a');
-      link.download = `${roadmapTopic}-roadmap.jpg`;
-      link.href = dataUrl;
-      link.click();
-
+      await downloadGeneratedRoadmapImage(roadmapTopic, node);
       pageProgressMessage.set('');
     } catch (error) {
       console.error(error);
@@ -210,7 +197,6 @@ export function GenerateRoadmap() {
   };
 
   const loadAIRoadmap = async (roadmapId: string) => {
-    setIsLoading(true);
     pageProgressMessage.set('Loading Roadmap');
 
     const { response, error } = await httpGet<{
@@ -225,12 +211,7 @@ export function GenerateRoadmap() {
     }
 
     const { topic, data } = response;
-
-    const { nodes, edges } = generateAIRoadmapFromText(data);
-    const svg = await renderFlowJSON({ nodes, edges });
-    if (roadmapContainerRef?.current) {
-      replaceChildren(roadmapContainerRef?.current, svg);
-    }
+    await renderRoadmap(data);
 
     setRoadmapTopic(topic);
     setGeneratedRoadmap(data);
@@ -246,8 +227,7 @@ export function GenerateRoadmap() {
     }
 
     setHasSubmitted(true);
-    loadAIRoadmap(roadmapId).then(() => {
-      setIsLoading(false);
+    loadAIRoadmap(roadmapId).finally(() => {
       pageProgressMessage.set('');
     });
   }, [roadmapId]);
@@ -279,10 +259,18 @@ export function GenerateRoadmap() {
           <div className="flex max-w-[600px] flex-grow flex-col items-center">
             <div className="mt-2 flex w-full items-center justify-between text-sm">
               <span className="text-gray-800">
-                {roadmapLimitUsed} of {roadmapLimit} roadmaps generated{' '}
-                <button className="font-medium text-black underline underline-offset-2">
-                  Login to increase your limit
-                </button>
+                {roadmapLimitUsed} of {roadmapLimit} roadmaps generated
+                {!isLoggedIn() && (
+                  <>
+                    {' '}
+                    <button
+                      className="font-medium text-black underline underline-offset-2"
+                      onClick={showLoginPopup}
+                    >
+                      Login to increase your limit
+                    </button>
+                  </>
+                )}
               </span>
             </div>
             <form
