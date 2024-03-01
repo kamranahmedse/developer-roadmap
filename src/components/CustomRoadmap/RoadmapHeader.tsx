@@ -12,6 +12,7 @@ import { Lock, Shapes } from 'lucide-react';
 import { Modal } from '../Modal';
 import { ShareSuccess } from '../ShareOptions/ShareSuccess';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
+import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -89,6 +90,8 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
+        {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
+
         {creator?.name && (
           <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
             <img

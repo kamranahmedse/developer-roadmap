@@ -1,5 +1,4 @@
 import {
-  BookOpen,
   BookOpenText,
   CheckSquare,
   FileQuestion,

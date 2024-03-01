@@ -1,4 +1,4 @@
-import 'astro/client';
+/// <reference types="astro/client" />
 
 interface ImportMetaEnv {
   GITHUB_SHA: string;
