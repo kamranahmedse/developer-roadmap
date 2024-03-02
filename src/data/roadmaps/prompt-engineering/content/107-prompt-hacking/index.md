@@ -1,3 +1,3 @@
 # Prompt Hacking
 
-- [Prompt Hacking](https://learnprompting.org/docs/category/-prompt-hacking)
+- [Prompt Hacking](https://learnprompting.org/docs/prompt_hacking/intro)
