@@ -32,7 +32,7 @@ The **Presentation layer** is responsible for translating or converting the data
 
 The **Application layer** is the interface between the user and the communication system. It is responsible for providing networking services for various applications, like email, web browsing, or file sharing.
 
-Each of these layers interacts with the adjacent layers to pass data packets back and forth. Understanding the OCI model is crucial for addressing potential security threats and vulnerabilities that can occur at each layer. By implementing strong network security measures at each layer, you can minimize the risk of cyber attacks and keep your data safe.
+Each of these layers interacts with the adjacent layers to pass data packets back and forth. Understanding the OSI model is crucial for addressing potential security threats and vulnerabilities that can occur at each layer. By implementing strong network security measures at each layer, you can minimize the risk of cyber attacks and keep your data safe.
 
 In the next section, we will discuss network protocols and how they play an essential role in network communication and security.
 
