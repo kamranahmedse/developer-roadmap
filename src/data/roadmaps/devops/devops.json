@@ -6267,7 +6267,7 @@
           "x": "1070",
           "y": "2408",
           "properties": {
-            "controlName": "100-artifcats:artifactory"
+            "controlName": "100-artifacts:artifactory"
           },
           "children": {
             "controls": {
@@ -6346,7 +6346,7 @@
           "x": "1202",
           "y": "2408",
           "properties": {
-            "controlName": "101-artifcats:nexus"
+            "controlName": "101-artifacts:nexus"
           },
           "children": {
             "controls": {
@@ -6425,7 +6425,7 @@
           "x": "1081",
           "y": "2460",
           "properties": {
-            "controlName": "102-artifcats:cloud-smith"
+            "controlName": "102-artifacts:cloud-smith"
           },
           "children": {
             "controls": {
@@ -13035,7 +13035,7 @@
           "x": "1080",
           "y": "2534",
           "properties": {
-            "controlName": "118-artifcats"
+            "controlName": "118-artifacts"
           },
           "children": {
             "controls": {
