@@ -8,7 +8,7 @@ import { readAIRoadmapStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Download, PenSquare, Wand } from 'lucide-react';
+import { Ban, Download, PenSquare, StopCircleIcon, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -19,6 +19,8 @@ import {
 } from '../../lib/browser.ts';
 import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
+import { cn } from '../../lib/classname.ts';
+import { StopIcon } from '../ReactIcons/StopIcon.tsx';
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
@@ -46,14 +48,12 @@ export function GenerateRoadmap() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    setIsLoading(true);
-    setHasSubmitted(true);
-
     if (!roadmapTopic) {
-      toast.error('Please enter a topic');
-      setIsLoading(false);
       return;
     }
+
+    setIsLoading(true);
+    setHasSubmitted(true);
 
     if (roadmapLimitUsed >= roadmapLimit) {
       toast.error('You have reached your limit of generating roadmaps');
@@ -241,6 +241,7 @@ export function GenerateRoadmap() {
   }
 
   const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
+  const canGenerateMore = roadmapLimitUsed < roadmapLimit;
 
   return (
     <section className="flex flex-grow flex-col bg-gray-100">
@@ -255,7 +256,18 @@ export function GenerateRoadmap() {
           <div className="flex max-w-[600px] flex-grow flex-col items-center">
             <div className="mt-2 flex w-full items-center justify-between text-sm">
               <span className="text-gray-800">
-                {roadmapLimitUsed} of {roadmapLimit} roadmaps generated
+                <span
+                  className={cn(
+                    'inline-block w-[55px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
+                    {
+                      'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                        !roadmapLimit,
+                    },
+                  )}
+                >
+                  {roadmapLimitUsed} of {roadmapLimit}
+                </span>{' '}
+                roadmaps generated
                 {!isLoggedIn() && (
                   <>
                     {' '}
@@ -285,10 +297,31 @@ export function GenerateRoadmap() {
               />
               <button
                 type={'submit'}
-                className="flex flex-shrink-0 items-center gap-2 rounded-md border border-black bg-black px-4 py-2 text-white"
+                className={cn(
+                  'ml-2 flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                  {
+                    'cursor-not-allowed opacity-50':
+                      !roadmapLimit ||
+                      !roadmapTopic ||
+                      roadmapLimitUsed >= roadmapLimit,
+                  },
+                )}
               >
-                <Wand size={20} />
-                Generate
+                {roadmapLimit > 0 && canGenerateMore && (
+                  <>
+                    <Wand size={20} />
+                    Generate
+                  </>
+                )}
+
+                {roadmapLimit === 0 && <span>Please wait..</span>}
+
+                {roadmapLimit > 0 && !canGenerateMore && (
+                  <span className="flex items-center text-sm">
+                    <Ban size={15} className="mr-2" />
+                    Limit reached
+                  </span>
+                )}
               </button>
             </form>
             <div className="flex w-full items-center justify-between gap-2">

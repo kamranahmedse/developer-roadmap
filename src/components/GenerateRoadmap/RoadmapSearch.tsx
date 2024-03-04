@@ -21,6 +21,8 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     limitUsed = 0,
   } = props;
 
+  const canGenerateMore = limitUsed < limit;
+
   return (
     <div className="flex flex-grow flex-col items-center justify-center py-6">
       <div className="flex flex-col gap-2 text-center">
@@ -43,9 +45,29 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           value={roadmapTopic}
           onInput={(e) => setRoadmapTopic((e.target as HTMLInputElement).value)}
         />
-        <button className="ml-2 flex flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white">
-          <Wand size={20} />
-          Generate
+        <button
+          className={cn(
+            'ml-2 flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+            {
+              'cursor-not-allowed opacity-50':
+                !limit || !roadmapTopic || limitUsed >= limit,
+            },
+          )}
+        >
+          {limit > 0 && canGenerateMore && (
+            <>
+              <Wand size={20} />
+              Generate
+            </>
+          )}
+
+          {limit === 0 && (
+            <>
+              <span>Please wait..</span>
+            </>
+          )}
+
+          {limit > 0 && !canGenerateMore && <span>Limit reached</span>}
         </button>
       </form>
       <div className="mb-36">
@@ -53,9 +75,10 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           You have generated{' '}
           <span
             className={cn(
-              'inline-block border w-[50px] text-sm rounded-md text-center tabular-nums text-gray-800',
+              'inline-block w-[55px] rounded-md border text-center text-sm tabular-nums text-gray-800 px-0.5',
               {
-                'bg-zinc-300 text-zinc-300 border-zinc-300 animate-pulse': !limit,
+                'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                  !limit,
               },
             )}
           >
