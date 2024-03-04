@@ -2,6 +2,7 @@ import { Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
+import { cn } from '../../lib/classname.ts';
 
 type RoadmapSearchProps = {
   roadmapTopic: string;
@@ -50,7 +51,14 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
       <div className="mb-36">
         <p className="text-gray-500">
           You have generated{' '}
-          <span className="text-gray-800">
+          <span
+            className={cn(
+              'inline-block border w-[50px] text-sm rounded-md text-center tabular-nums text-gray-800',
+              {
+                'bg-zinc-300 text-zinc-300 border-zinc-300 animate-pulse': !limit,
+              },
+            )}
+          >
             {limitUsed} of {limit}
           </span>{' '}
           roadmaps today.

@@ -177,8 +177,6 @@ export function GenerateRoadmap() {
   };
 
   const loadAIRoadmapLimit = async () => {
-    pageProgressMessage.set('Loading Roadmap Limit');
-
     const { response, error } = await httpGet<{
       limit: number;
       used: number;
@@ -192,8 +190,6 @@ export function GenerateRoadmap() {
     const { limit, used } = response;
     setRoadmapLimit(limit);
     setRoadmapLimitUsed(used);
-
-    pageProgressMessage.set('');
   };
 
   const loadAIRoadmap = async (roadmapId: string) => {
