@@ -1,4 +1,4 @@
-import { Wand } from 'lucide-react';
+import { Ban, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -53,7 +53,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         />
         <button
           className={cn(
-            'ml-2 flex min-w-[131px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+            'ml-2 flex min-w-[143px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
             {
               'cursor-not-allowed opacity-50':
                 !limit || !roadmapTopic || limitUsed >= limit,
@@ -73,7 +73,12 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </>
           )}
 
-          {limit > 0 && !canGenerateMore && <span>Limit reached</span>}
+          {limit > 0 && !canGenerateMore && (
+            <span className="flex items-center text-sm">
+              <Ban size={15} className="mr-2" />
+              Limit reached
+            </span>
+          )}
         </button>
       </form>
       <div className="mb-36">

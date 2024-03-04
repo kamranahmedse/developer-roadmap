@@ -258,7 +258,7 @@ export function GenerateRoadmap() {
               <span className="text-gray-800">
                 <span
                   className={cn(
-                    'inline-block w-[55px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
+                    'inline-block w-[65px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
                     {
                       'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                         !roadmapLimit,
