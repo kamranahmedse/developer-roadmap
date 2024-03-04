@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState, type FormEvent } from 'react';
+import { type FormEvent, useEffect, useRef, useState } from 'react';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
@@ -8,7 +8,7 @@ import { readAIRoadmapStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Ban, Download, PenSquare, StopCircleIcon, Wand } from 'lucide-react';
+import { Ban, Download, PenSquare, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -20,7 +20,6 @@ import {
 import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
-import { StopIcon } from '../ReactIcons/StopIcon.tsx';
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
@@ -245,7 +244,7 @@ export function GenerateRoadmap() {
 
   return (
     <section className="flex flex-grow flex-col bg-gray-100">
-      <div className="flex items-center justify-center border-b bg-white py-6">
+      <div className="flex items-center justify-center border-b bg-white py-3 sm:py-6">
         {isLoading && (
           <span className="flex items-center gap-2 rounded-full bg-black px-3 py-1 text-white">
             <Spinner isDualRing={false} innerFill={'white'} />
@@ -253,7 +252,7 @@ export function GenerateRoadmap() {
           </span>
         )}
         {!isLoading && (
-          <div className="flex max-w-[600px] flex-grow flex-col items-center">
+          <div className="flex max-w-[600px] flex-grow flex-col items-center px-5">
             <div className="mt-2 flex w-full items-center justify-between text-sm">
               <span className="text-gray-800">
                 <span
@@ -283,7 +282,7 @@ export function GenerateRoadmap() {
             </div>
             <form
               onSubmit={handleSubmit}
-              className="my-3 flex w-full flex-row items-center justify-center gap-2"
+              className="my-3 flex w-full flex-col sm:flex-row sm:items-center sm:justify-center gap-2"
             >
               <input
                 type="text"
@@ -298,7 +297,7 @@ export function GenerateRoadmap() {
               <button
                 type={'submit'}
                 className={cn(
-                  'ml-2 flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                  'flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white justify-center',
                   {
                     'cursor-not-allowed opacity-50':
                       !roadmapLimit ||
@@ -331,7 +330,7 @@ export function GenerateRoadmap() {
                   onClick={downloadGeneratedRoadmap}
                 >
                   <Download size={15} />
-                  Download
+                  <span className="hidden sm:inline">Download</span>
                 </button>
                 {roadmapId && (
                   <ShareRoadmapButton
