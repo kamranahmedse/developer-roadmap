@@ -308,7 +308,7 @@ export function GenerateRoadmap() {
                 )}
               </div>
               <button
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors transition-opacity duration-300 hover:bg-gray-300 sm:text-sm"
+                className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                 onClick={editGeneratedRoadmap}
                 disabled={isLoading}
               >
