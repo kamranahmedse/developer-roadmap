@@ -34,7 +34,13 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         </p>
       </div>
       <form
-        onSubmit={handleSubmit}
+        onSubmit={(e) => {
+          if (limit > 0 && canGenerateMore) {
+            handleSubmit(e);
+          } else {
+            e.preventDefault();
+          }
+        }}
         className="my-6 flex w-full max-w-[600px] flex-row"
       >
         <input
@@ -47,7 +53,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         />
         <button
           className={cn(
-            'ml-2 flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+            'ml-2 flex min-w-[131px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white',
             {
               'cursor-not-allowed opacity-50':
                 !limit || !roadmapTopic || limitUsed >= limit,
@@ -75,7 +81,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           You have generated{' '}
           <span
             className={cn(
-              'inline-block w-[55px] rounded-md border text-center text-sm tabular-nums text-gray-800 px-0.5',
+              'inline-block w-[55px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
               {
                 'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                   !limit,
