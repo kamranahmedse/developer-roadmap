@@ -12,3 +12,5 @@ TypeScript provides several utility types that can be used to manipulate and tra
 Learn more from the following links:
 
 - [TypeScript - Utility Types](https://www.typescriptlang.org/docs/handbook/utility-types.html)
+- [TypeScript Utility Types Guide](https://camchenry.com/blog/typescript-utility-types)
+- [TypeScript Utility Types: Key Concepts And Best Practices](https://marketsplash.com/tutorials/typescript/typescript-utility-types/)
