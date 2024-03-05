@@ -7,13 +7,17 @@ type UserPublicProfileHeaderProps = {
 
 export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
   const { userDetails } = props;
-  const { name, username, links, publicConfig } = userDetails;
+  const { name, links, publicConfig, avatar } = userDetails;
   const { headline, isAvailableForHire } = publicConfig!;
 
   return (
     <div className="flex items-center gap-8">
       <img
-        src="https://dodrc8eu8m09s.cloudfront.net/avatars/64ab82e214678473bb5d5ac2_1688961762495"
+        src={
+          avatar
+            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+            : '/images/default-avatar.png'
+        }
         alt={name}
         className="h-32 w-32 rounded-full"
       />
