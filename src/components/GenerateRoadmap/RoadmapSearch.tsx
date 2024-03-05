@@ -52,7 +52,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         <input
           autoFocus
           type="text"
-          placeholder="e.g. Ansible"
+          placeholder="e.g. Try searching for Ansible or DevOps"
           className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
           value={roadmapTopic}
           onInput={(e) => setRoadmapTopic((e.target as HTMLInputElement).value)}
@@ -60,11 +60,9 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         <button
           className={cn(
             'flex min-w-[143px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
-            {
-              'cursor-not-allowed opacity-50':
-                !limit || !roadmapTopic || limitUsed >= limit,
-            },
+            'disabled:cursor-not-allowed disabled:opacity-50',
           )}
+          disabled={!limit || !roadmapTopic || limitUsed >= limit}
         >
           {limit > 0 && canGenerateMore && (
             <>

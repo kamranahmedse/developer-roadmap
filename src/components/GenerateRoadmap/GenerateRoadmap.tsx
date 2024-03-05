@@ -23,6 +23,12 @@ import { cn } from '../../lib/classname.ts';
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
+type GetAIRoadmapResponse = {
+  id: string;
+  topic: string;
+  data: string;
+};
+
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -33,6 +39,8 @@ export function GenerateRoadmap() {
   const [isLoading, setIsLoading] = useState(false);
   const [roadmapTopic, setRoadmapTopic] = useState('');
   const [generatedRoadmap, setGeneratedRoadmap] = useState('');
+  const [currentRoadmap, setCurrentRoadmap] =
+    useState<GetAIRoadmapResponse | null>(null);
 
   const [roadmapLimit, setRoadmapLimit] = useState(0);
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
@@ -48,6 +56,10 @@ export function GenerateRoadmap() {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!roadmapTopic) {
+      return;
+    }
+
+    if (roadmapTopic === currentRoadmap?.topic) {
       return;
     }
 
@@ -104,6 +116,11 @@ export function GenerateRoadmap() {
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
           setUrlParams({ id: roadmapId });
           result = result.replace(ROADMAP_ID_REGEX, '');
+          setCurrentRoadmap({
+            id: roadmapId,
+            topic: roadmapTopic,
+            data: result,
+          });
         }
 
         await renderRoadmap(result);
@@ -150,11 +167,17 @@ export function GenerateRoadmap() {
 
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
+      pageProgressMessage.set('');
       setIsLoading(false);
       return;
     }
 
-    window.location.href = `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response.roadmapId}`;
+    setIsLoading(false);
+    pageProgressMessage.set('');
+    window.open(
+      `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response.roadmapId}`,
+      '_blank',
+    );
   };
 
   const downloadGeneratedRoadmap = async () => {
@@ -208,6 +231,11 @@ export function GenerateRoadmap() {
     const { topic, data } = response;
     await renderRoadmap(data);
 
+    setCurrentRoadmap({
+      id: roadmapId,
+      topic,
+      data,
+    });
     setRoadmapTopic(topic);
     setGeneratedRoadmap(data);
   };
@@ -217,7 +245,7 @@ export function GenerateRoadmap() {
   }, []);
 
   useEffect(() => {
-    if (!roadmapId) {
+    if (!roadmapId || roadmapId === currentRoadmap?.id) {
       return;
     }
 
@@ -225,7 +253,7 @@ export function GenerateRoadmap() {
     loadAIRoadmap(roadmapId).finally(() => {
       pageProgressMessage.set('');
     });
-  }, [roadmapId]);
+  }, [roadmapId, currentRoadmap]);
 
   if (!hasSubmitted) {
     return (
@@ -282,12 +310,12 @@ export function GenerateRoadmap() {
             </div>
             <form
               onSubmit={handleSubmit}
-              className="my-3 flex w-full flex-col sm:flex-row sm:items-center sm:justify-center gap-2"
+              className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
             >
               <input
                 type="text"
                 autoFocus
-                placeholder="e.g. Ansible"
+                placeholder="e.g. Try searching for Ansible or DevOps"
                 className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
                 value={roadmapTopic}
                 onInput={(e) =>
@@ -297,14 +325,15 @@ export function GenerateRoadmap() {
               <button
                 type={'submit'}
                 className={cn(
-                  'flex min-w-[127px] flex-shrink-0 items-center gap-2 rounded-md bg-black px-4 py-2 text-white justify-center',
-                  {
-                    'cursor-not-allowed opacity-50':
-                      !roadmapLimit ||
-                      !roadmapTopic ||
-                      roadmapLimitUsed >= roadmapLimit,
-                  },
+                  'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                  'disabled:cursor-not-allowed disabled:opacity-50',
                 )}
+                disabled={
+                  !roadmapLimit ||
+                  !roadmapTopic ||
+                  roadmapLimitUsed >= roadmapLimit ||
+                  roadmapTopic === currentRoadmap?.topic
+                }
               >
                 {roadmapLimit > 0 && canGenerateMore && (
                   <>
@@ -354,7 +383,7 @@ export function GenerateRoadmap() {
       <div
         ref={roadmapContainerRef}
         id="roadmap-container"
-        className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
+        className="pointer-events-none relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
       />
     </section>
   );
