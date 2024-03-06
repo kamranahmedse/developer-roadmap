@@ -73,6 +73,7 @@ export function GenerateRoadmap() {
     }
 
     deleteUrlParam('id');
+    setCurrentRoadmap(null);
 
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
