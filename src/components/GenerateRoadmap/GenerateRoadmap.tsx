@@ -281,12 +281,21 @@ export function GenerateRoadmap() {
     setGeneratedRoadmapContent(data);
   };
 
-  const handleSvgClick = useCallback(
+  const handleNodeClick = useCallback(
     (e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) => {
+      if (isLoading) {
+        return;
+      }
+
       const target = e.target as SVGElement;
       const { nodeId, nodeType, targetGroup, nodeTitle, parentTitle } =
         getNodeDetails(target) || {};
-      if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
+      if (
+        !nodeId ||
+        !nodeType ||
+        !allowedClickableNodeTypes.includes(nodeType) ||
+        !nodeTitle
+      )
         return;
 
       if (nodeType === 'button' || nodeType === 'link-item') {
@@ -307,7 +316,7 @@ export function GenerateRoadmap() {
         ...(nodeType === 'subtopic' && { parentTitle }),
       });
     },
-    [],
+    [isLoading],
   );
 
   useEffect(() => {
@@ -465,7 +474,7 @@ export function GenerateRoadmap() {
         <div
           ref={roadmapContainerRef}
           id="roadmap-container"
-          onClick={handleSvgClick}
+          onClick={handleNodeClick}
           className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
         />
       </section>

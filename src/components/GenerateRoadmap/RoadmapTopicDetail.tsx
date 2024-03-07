@@ -28,6 +28,12 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
     setIsLoading(true);
     setError('');
 
+    if (!roadmapId || !nodeTitle) {
+      setIsLoading(false);
+      setError('Invalid roadmap id or node title');
+      return;
+    }
+
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-genereate-ai-roadmap-content/${roadmapId}`,
       {
