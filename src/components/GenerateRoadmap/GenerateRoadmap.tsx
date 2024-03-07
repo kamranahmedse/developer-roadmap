@@ -1,4 +1,11 @@
-import { type FormEvent, useEffect, useRef, useState } from 'react';
+import {
+  type FormEvent,
+  useEffect,
+  useRef,
+  useState,
+  useCallback,
+  type MouseEvent,
+} from 'react';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
 import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generator';
@@ -20,8 +27,38 @@ import {
 import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
+import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
+
+export type RoadmapNodeDetails = {
+  nodeId: string;
+  nodeType: string;
+  targetGroup?: SVGElement;
+  nodeTitle?: string;
+  parentTitle?: string;
+};
+
+export function getNodeDetails(
+  svgElement: SVGElement,
+): RoadmapNodeDetails | null {
+  const targetGroup = (svgElement?.closest('g') as SVGElement) || {};
+
+  const nodeId = targetGroup?.dataset?.nodeId;
+  const nodeType = targetGroup?.dataset?.type;
+  const nodeTitle = targetGroup?.dataset?.title;
+  const parentTitle = targetGroup?.dataset?.parentTitle;
+  if (!nodeId || !nodeType) return null;
+
+  return { nodeId, nodeType, targetGroup, nodeTitle, parentTitle };
+}
+
+export const allowedClickableNodeTypes = [
+  'topic',
+  'subtopic',
+  'button',
+  'link-item',
+];
 
 type GetAIRoadmapResponse = {
   id: string;
@@ -38,9 +75,12 @@ export function GenerateRoadmap() {
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
   const [roadmapTopic, setRoadmapTopic] = useState('');
-  const [generatedRoadmap, setGeneratedRoadmap] = useState('');
+  const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
+  const [selectedTopic, setSelectedTopic] = useState<RoadmapNodeDetails | null>(
+    null,
+  );
 
   const [roadmapLimit, setRoadmapLimit] = useState(0);
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
@@ -128,7 +168,7 @@ export function GenerateRoadmap() {
       },
       onStreamEnd: async (result) => {
         result = result.replace(ROADMAP_ID_REGEX, '');
-        setGeneratedRoadmap(result);
+        setGeneratedRoadmapContent(result);
         loadAIRoadmapLimit().finally(() => {});
       },
     });
@@ -136,7 +176,7 @@ export function GenerateRoadmap() {
     setIsLoading(false);
   };
 
-  const editGeneratedRoadmap = async () => {
+  const editGeneratedRoadmapContent = async () => {
     if (!isLoggedIn()) {
       showLoginPopup();
       return;
@@ -144,7 +184,7 @@ export function GenerateRoadmap() {
 
     pageProgressMessage.set('Redirecting to Editor');
 
-    const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmap);
+    const { nodes, edges } = generateAIRoadmapFromText(generatedRoadmapContent);
 
     const { response, error } = await httpPost<{
       roadmapId: string;
@@ -181,7 +221,7 @@ export function GenerateRoadmap() {
     );
   };
 
-  const downloadGeneratedRoadmap = async () => {
+  const downloadGeneratedRoadmapContent = async () => {
     pageProgressMessage.set('Downloading Roadmap');
 
     const node = document.getElementById('roadmap-container');
@@ -238,8 +278,37 @@ export function GenerateRoadmap() {
       data,
     });
     setRoadmapTopic(topic);
-    setGeneratedRoadmap(data);
+    setGeneratedRoadmapContent(data);
   };
+
+  const handleSvgClick = useCallback(
+    (e: MouseEvent<HTMLDivElement, globalThis.MouseEvent>) => {
+      const target = e.target as SVGElement;
+      const { nodeId, nodeType, targetGroup, nodeTitle, parentTitle } =
+        getNodeDetails(target) || {};
+      if (!nodeId || !nodeType || !allowedClickableNodeTypes.includes(nodeType))
+        return;
+
+      if (nodeType === 'button' || nodeType === 'link-item') {
+        const link = targetGroup?.dataset?.link || '';
+        const isExternalLink = link.startsWith('http');
+        if (isExternalLink) {
+          window.open(link, '_blank');
+        } else {
+          window.location.href = link;
+        }
+        return;
+      }
+
+      setSelectedTopic({
+        nodeId,
+        nodeType,
+        nodeTitle,
+        ...(nodeType === 'subtopic' && { parentTitle }),
+      });
+    },
+    [],
+  );
 
   useEffect(() => {
     loadAIRoadmapLimit().finally(() => {});
@@ -272,120 +341,134 @@ export function GenerateRoadmap() {
   const canGenerateMore = roadmapLimitUsed < roadmapLimit;
 
   return (
-    <section className="flex flex-grow flex-col bg-gray-100">
-      <div className="flex items-center justify-center border-b bg-white py-3 sm:py-6">
-        {isLoading && (
-          <span className="flex items-center gap-2 rounded-full bg-black px-3 py-1 text-white">
-            <Spinner isDualRing={false} innerFill={'white'} />
-            Generating roadmap ..
-          </span>
-        )}
-        {!isLoading && (
-          <div className="flex max-w-[600px] flex-grow flex-col items-center px-5">
-            <div className="mt-2 flex w-full items-center justify-between text-sm">
-              <span className="text-gray-800">
-                <span
-                  className={cn(
-                    'inline-block w-[65px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
-                    {
-                      'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
-                        !roadmapLimit,
-                    },
+    <>
+      {selectedTopic && currentRoadmap && !isLoading && (
+        <RoadmapTopicDetail
+          nodeId={selectedTopic.nodeId}
+          nodeType={selectedTopic.nodeType}
+          nodeTitle={selectedTopic.nodeTitle}
+          parentTitle={selectedTopic.parentTitle}
+          onClose={() => setSelectedTopic(null)}
+          roadmapId={currentRoadmap?.id || ''}
+        />
+      )}
+
+      <section className="flex flex-grow flex-col bg-gray-100">
+        <div className="flex items-center justify-center border-b bg-white py-3 sm:py-6">
+          {isLoading && (
+            <span className="flex items-center gap-2 rounded-full bg-black px-3 py-1 text-white">
+              <Spinner isDualRing={false} innerFill={'white'} />
+              Generating roadmap ..
+            </span>
+          )}
+          {!isLoading && (
+            <div className="flex max-w-[600px] flex-grow flex-col items-center px-5">
+              <div className="mt-2 flex w-full items-center justify-between text-sm">
+                <span className="text-gray-800">
+                  <span
+                    className={cn(
+                      'inline-block w-[65px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
+                      {
+                        'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                          !roadmapLimit,
+                      },
+                    )}
+                  >
+                    {roadmapLimitUsed} of {roadmapLimit}
+                  </span>{' '}
+                  roadmaps generated
+                  {!isLoggedIn() && (
+                    <>
+                      {' '}
+                      <button
+                        className="font-medium text-black underline underline-offset-2"
+                        onClick={showLoginPopup}
+                      >
+                        Login to increase your limit
+                      </button>
+                    </>
                   )}
-                >
-                  {roadmapLimitUsed} of {roadmapLimit}
-                </span>{' '}
-                roadmaps generated
-                {!isLoggedIn() && (
-                  <>
-                    {' '}
-                    <button
-                      className="font-medium text-black underline underline-offset-2"
-                      onClick={showLoginPopup}
-                    >
-                      Login to increase your limit
-                    </button>
-                  </>
-                )}
-              </span>
-            </div>
-            <form
-              onSubmit={handleSubmit}
-              className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
-            >
-              <input
-                type="text"
-                autoFocus
-                placeholder="e.g. Try searching for Ansible or DevOps"
-                className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
-                value={roadmapTopic}
-                onInput={(e) =>
-                  setRoadmapTopic((e.target as HTMLInputElement).value)
-                }
-              />
-              <button
-                type={'submit'}
-                className={cn(
-                  'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
-                  'disabled:cursor-not-allowed disabled:opacity-50',
-                )}
-                disabled={
-                  !roadmapLimit ||
-                  !roadmapTopic ||
-                  roadmapLimitUsed >= roadmapLimit ||
-                  roadmapTopic === currentRoadmap?.topic
-                }
-              >
-                {roadmapLimit > 0 && canGenerateMore && (
-                  <>
-                    <Wand size={20} />
-                    Generate
-                  </>
-                )}
-
-                {roadmapLimit === 0 && <span>Please wait..</span>}
-
-                {roadmapLimit > 0 && !canGenerateMore && (
-                  <span className="flex items-center text-sm">
-                    <Ban size={15} className="mr-2" />
-                    Limit reached
-                  </span>
-                )}
-              </button>
-            </form>
-            <div className="flex w-full items-center justify-between gap-2">
-              <div className="flex items-center justify-between gap-2">
-                <button
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm"
-                  onClick={downloadGeneratedRoadmap}
-                >
-                  <Download size={15} />
-                  <span className="hidden sm:inline">Download</span>
-                </button>
-                {roadmapId && (
-                  <ShareRoadmapButton
-                    description={`Check out ${roadmapTopic} roadmap I generated on roadmap.sh`}
-                    pageUrl={pageUrl}
-                  />
-                )}
+                </span>
               </div>
-              <button
-                className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
-                onClick={editGeneratedRoadmap}
-                disabled={isLoading}
+              <form
+                onSubmit={handleSubmit}
+                className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
               >
-                <PenSquare size={15} />
-                Edit in Editor
-              </button>
+                <input
+                  type="text"
+                  autoFocus
+                  placeholder="e.g. Try searching for Ansible or DevOps"
+                  className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
+                  value={roadmapTopic}
+                  onInput={(e) =>
+                    setRoadmapTopic((e.target as HTMLInputElement).value)
+                  }
+                />
+                <button
+                  type={'submit'}
+                  className={cn(
+                    'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+                    'disabled:cursor-not-allowed disabled:opacity-50',
+                  )}
+                  disabled={
+                    !roadmapLimit ||
+                    !roadmapTopic ||
+                    roadmapLimitUsed >= roadmapLimit ||
+                    roadmapTopic === currentRoadmap?.topic
+                  }
+                >
+                  {roadmapLimit > 0 && canGenerateMore && (
+                    <>
+                      <Wand size={20} />
+                      Generate
+                    </>
+                  )}
+
+                  {roadmapLimit === 0 && <span>Please wait..</span>}
+
+                  {roadmapLimit > 0 && !canGenerateMore && (
+                    <span className="flex items-center text-sm">
+                      <Ban size={15} className="mr-2" />
+                      Limit reached
+                    </span>
+                  )}
+                </button>
+              </form>
+              <div className="flex w-full items-center justify-between gap-2">
+                <div className="flex items-center justify-between gap-2">
+                  <button
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-yellow-400 py-1.5 pl-2.5 pr-3 text-xs font-medium transition-opacity duration-300 hover:bg-yellow-500 sm:text-sm"
+                    onClick={downloadGeneratedRoadmapContent}
+                  >
+                    <Download size={15} />
+                    <span className="hidden sm:inline">Download</span>
+                  </button>
+                  {roadmapId && (
+                    <ShareRoadmapButton
+                      description={`Check out ${roadmapTopic} roadmap I generated on roadmap.sh`}
+                      pageUrl={pageUrl}
+                    />
+                  )}
+                </div>
+                <button
+                  className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                  onClick={editGeneratedRoadmapContent}
+                  disabled={isLoading}
+                >
+                  <PenSquare size={15} />
+                  Edit in Editor
+                </button>
+              </div>
             </div>
-          </div>
-        )}
-      </div>
-      <div
-        ref={roadmapContainerRef}
-        id="roadmap-container"
-        className="pointer-events-none relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
-      />
-    </section>
+          )}
+        </div>
+        <div
+          ref={roadmapContainerRef}
+          id="roadmap-container"
+          onClick={handleSvgClick}
+          className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
+        />
+      </section>
+    </>
   );
 }
