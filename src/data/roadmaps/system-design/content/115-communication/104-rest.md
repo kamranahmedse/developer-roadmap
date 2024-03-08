@@ -13,5 +13,5 @@ REST is focused on exposing data. It minimizes the coupling between client/serve
 
 To learn more, visit the following links:
 
-- [What Is REST?](https://github.com/donnemartin/system-design-primer#REST)
+- [What Is REST?](https://github.com/donnemartin/system-design-primer#representational-state-transfer-rest)
 - [What are the drawbacks of using RESTful APIs?](https://www.quora.com/What-are-the-drawbacks-of-using-RESTful-APIs)
