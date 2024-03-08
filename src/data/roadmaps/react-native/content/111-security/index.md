@@ -82,3 +82,6 @@ npm audit
 ```
 
 Following these best practices will help you create more secure React Native applications, protecting your application's data and your users' information.
+
+## Useful links :
+React Native official [Documentaion](https://reactnative.dev/docs/security) on security.
