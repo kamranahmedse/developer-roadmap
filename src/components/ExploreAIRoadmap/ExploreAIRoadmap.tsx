@@ -132,28 +132,33 @@ export function ExploreAIRoadmap() {
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
             <ul className="grid grid-cols-3 gap-2">
-              {roadmaps.map((roadmap) => (
-                <li key={roadmap._id} className="rounded-md border">
-                  <h2
-                    className="truncate px-2.5 py-2.5 text-xl font-medium leading-none tracking-wide"
-                    title={roadmap.topic}
-                  >
-                    {roadmap.topic}
-                  </h2>
-                  <div className="flex items-center justify-between gap-2 border-t px-2.5 py-2">
-                    <span className="flex items-center gap-1.5 text-sm text-gray-600">
-                      <Eye size={15} className="inline-block" />
-                      <span>{roadmap?.viewCount || 0} views</span>
-                    </span>
-                    <span className="flex items-center gap-1.5 text-sm text-gray-600">
-                      <CalendarCheck size={15} className="inline-block" />
-                      <span>
-                        {getRelativeTimeString(String(roadmap?.createdAt))}
-                      </span>
-                    </span>
-                  </div>
-                </li>
-              ))}
+              {roadmaps.map((roadmap) => {
+                const roadmapLink = `/ai?id=${roadmap._id}`;
+                return (
+                  <li key={roadmap._id}>
+                    <a href={roadmapLink} className="block rounded-md border">
+                      <h2
+                        className="truncate px-2.5 py-2.5 text-xl font-medium leading-none tracking-wide"
+                        title={roadmap.topic}
+                      >
+                        {roadmap.topic}
+                      </h2>
+                      <div className="flex items-center justify-between gap-2 border-t px-2.5 py-2">
+                        <span className="flex items-center gap-1.5 text-sm text-gray-600">
+                          <Eye size={15} className="inline-block" />
+                          <span>{roadmap?.viewCount || 0} views</span>
+                        </span>
+                        <span className="flex items-center gap-1.5 text-sm text-gray-600">
+                          <CalendarCheck size={15} className="inline-block" />
+                          <span>
+                            {getRelativeTimeString(String(roadmap?.createdAt))}
+                          </span>
+                        </span>
+                      </div>
+                    </a>
+                  </li>
+                );
+              })}
               {hasMorePages && (
                 <li>
                   <button
