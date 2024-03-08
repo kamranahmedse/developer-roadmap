@@ -12,7 +12,7 @@ import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generat
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
+import { isLoggedIn, removeAuthToken, visitAIRoadmap } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import { Ban, Download, PenSquare, Wand } from 'lucide-react';
@@ -176,7 +176,7 @@ export function GenerateRoadmap() {
     setIsLoading(false);
   };
 
-  const editGeneratedRoadmapContent = async () => {
+  const addToCustomRoadmap = async () => {
     if (!isLoggedIn()) {
       showLoginPopup();
       return;
@@ -188,23 +188,26 @@ export function GenerateRoadmap() {
 
     const { response, error } = await httpPost<{
       roadmapId: string;
-    }>(`${import.meta.env.PUBLIC_API_URL}/v1-edit-ai-generated-roadmap`, {
-      title: roadmapTopic,
-      nodes: nodes.map((node) => ({
-        ...node,
+    }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-edit-ai-generated-roadmap/${currentRoadmap?.id}`,
+      {
+        title: roadmapTopic,
+        nodes: nodes.map((node) => ({
+          ...node,
 
-        // To reset the width and height of the node
-        // so that it can be calculated based on the content in the editor
-        width: undefined,
-        height: undefined,
-        style: {
-          ...node.style,
+          // To reset the width and height of the node
+          // so that it can be calculated based on the content in the editor
           width: undefined,
           height: undefined,
-        },
-      })),
-      edges,
-    });
+          style: {
+            ...node.style,
+            width: undefined,
+            height: undefined,
+          },
+        })),
+        edges,
+      },
+    );
 
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
@@ -215,10 +218,7 @@ export function GenerateRoadmap() {
 
     setIsLoading(false);
     pageProgressMessage.set('');
-    window.open(
-      `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${response.roadmapId}`,
-      '_blank',
-    );
+    return response.roadmapId;
   };
 
   const downloadGeneratedRoadmapContent = async () => {
@@ -279,6 +279,7 @@ export function GenerateRoadmap() {
     });
     setRoadmapTopic(topic);
     setGeneratedRoadmapContent(data);
+    visitAIRoadmap(roadmapId);
   };
 
   const handleNodeClick = useCallback(
@@ -372,7 +373,10 @@ export function GenerateRoadmap() {
           )}
           {!isLoading && (
             <div className="flex max-w-[600px] flex-grow flex-col items-center px-5">
-              <div className="mt-2 flex w-full items-center justify-between text-sm">
+              <h1 className="relative self-start text-2xl font-bold sm:text-3xl">
+                AI Roadmap Generator
+              </h1>
+              <div className="mt-6 flex w-full items-center justify-between text-sm">
                 <span className="text-gray-800">
                   <span
                     className={cn(
@@ -459,14 +463,39 @@ export function GenerateRoadmap() {
                     />
                   )}
                 </div>
-                <button
-                  className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
-                  onClick={editGeneratedRoadmapContent}
-                  disabled={isLoading}
-                >
-                  <PenSquare size={15} />
-                  Edit in Editor
-                </button>
+
+                <div className="flex items-center justify-between gap-2">
+                  <button
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                    onClick={async () => {
+                      const roadmapId = await addToCustomRoadmap();
+                      if (roadmapId) {
+                        window.location.href = `/r?id=${roadmapId}`;
+                      }
+                    }}
+                    disabled={isLoading}
+                  >
+                    <PenSquare size={15} />
+                    Track your progress
+                  </button>
+
+                  <button
+                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                    onClick={async () => {
+                      const roadmapId = await addToCustomRoadmap();
+                      if (roadmapId) {
+                        window.open(
+                          `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${roadmapId}`,
+                          '_blank',
+                        );
+                      }
+                    }}
+                    disabled={isLoading}
+                  >
+                    <PenSquare size={15} />
+                    Edit in Editor
+                  </button>
+                </div>
               </div>
             </div>
           )}
