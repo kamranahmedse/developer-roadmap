@@ -1,4 +1,4 @@
-import {Ban, CircleFadingPlus, Telescope, Wand} from 'lucide-react';
+import { Ban, CircleFadingPlus, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -52,7 +52,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         <input
           autoFocus
           type="text"
-          placeholder="e.g. Try searching for 'Ansible' or 'DevSecOps'"
+          placeholder="Enter a topic to generate a roadmap for"
           className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
           value={roadmapTopic}
           onInput={(e) => setRoadmapTopic((e.target as HTMLInputElement).value)}

@@ -15,7 +15,7 @@ import { readAIRoadmapStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken, visitAIRoadmap } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Ban, Download, PenSquare, Wand } from 'lucide-react';
+import {Ban, Download, PenSquare, Save, Wand} from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -376,7 +376,7 @@ export function GenerateRoadmap() {
               <h1 className="relative self-start text-2xl font-bold sm:text-3xl">
                 AI Roadmap Generator
               </h1>
-              <div className="mt-4 sm:mt-6 flex flex-col gap-2 sm:gap-0 sm:flex-row w-full items-start sm:items-center justify-between text-sm">
+              <div className="mt-4 flex w-full flex-col items-start justify-between gap-2 text-sm sm:mt-6 sm:flex-row sm:items-center sm:gap-0">
                 <span>
                   <span
                     className={cn(
@@ -393,10 +393,10 @@ export function GenerateRoadmap() {
                 </span>
                 {!isLoggedIn() && (
                   <button
-                    className="rounded-xl border border-current px-1.5 py-0.5 text-sm font-medium text-blue-500"
+                    className="rounded-xl border border-current px-1.5 py-0.5 text-sm font-medium text-blue-500 text-left sm:text-center"
                     onClick={showLoginPopup}
                   >
-                    Generate more by signing up (free, takes 2sec) or logging in
+                    Generate more by <span className='font-semibold'>signing up (free, takes 2s)</span> or <span className='font-semibold'>logging in</span>
                   </button>
                 )}
               </div>
@@ -451,7 +451,6 @@ export function GenerateRoadmap() {
                     onClick={downloadGeneratedRoadmapContent}
                   >
                     <Download size={15} />
-                    <span className="hidden sm:inline">Download</span>
                   </button>
                   {roadmapId && (
                     <ShareRoadmapButton
@@ -472,12 +471,13 @@ export function GenerateRoadmap() {
                     }}
                     disabled={isLoading}
                   >
-                    <PenSquare size={15} />
-                    Track your progress
+                    <Save size={15} />
+                    <span className='hidden sm:inline'>Track your Progress on this Roadmap</span>
+                    <span className='inline sm:hidden'>Track Progress</span>
                   </button>
 
                   <button
-                    className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                    className="hidden sm:inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
                       const roadmapId = await saveAIRoadmap();
                       if (roadmapId) {
