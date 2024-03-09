@@ -1,4 +1,4 @@
-import { Ban, Wand } from 'lucide-react';
+import { Ban, CircleFadingPlus, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -52,7 +52,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         <input
           autoFocus
           type="text"
-          placeholder="e.g. Try searching for Ansible or DevOps"
+          placeholder="e.g. Try searching for 'Ansible' or 'DevSecOps'"
           className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
           value={roadmapTopic}
           onInput={(e) => setRoadmapTopic((e.target as HTMLInputElement).value)}
@@ -85,13 +85,12 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           )}
         </button>
       </form>
-      <div className="mb-36">
+      <div className="mb-36 flex flex-col items-center gap-4">
         <p className="text-gray-500">
-          <span className="inline sm:hidden">Generated </span>
-          <span className="hidden sm:inline">You have generated </span>
+          You have generated{' '}
           <span
             className={cn(
-              'inline-block w-[65px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
+              'inline-block min-w-[50px] rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
               {
                 'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                   !limit,
@@ -101,16 +100,19 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             {limitUsed} of {limit}
           </span>{' '}
           roadmaps.
-          {!isLoggedIn && (
-            <>
-              {' '}
-              <button
-                className="font-semibold text-black underline underline-offset-2"
-                onClick={showLoginPopup}
-              >
-                Log in to increase your limit
-              </button>
-            </>
+        </p>
+        <p className="flex h-[25px] items-center text-sm">
+          {limit > 0 && !isLoggedIn() && (
+            <button
+              onClick={showLoginPopup}
+              className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+            >
+              Generate more by{' '}
+              <span className="font-semibold">
+                signing up (free and takes 2 seconds)
+              </span>{' '}
+              or <span className="font-semibold">logging in</span>
+            </button>
           )}
         </p>
       </div>
