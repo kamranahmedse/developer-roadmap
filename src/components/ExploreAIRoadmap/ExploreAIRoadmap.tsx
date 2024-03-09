@@ -40,7 +40,7 @@ export function ExploreAIRoadmap() {
   const loadAIRoadamps = useCallback(
     async (currPage: number) => {
       const { response, error } = await httpGet<ExploreRoadmapsResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-explore-roadmaps`,
+        `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
         {
           currPage,
         },
