@@ -372,15 +372,15 @@ export function GenerateRoadmap() {
             </span>
           )}
           {!isLoading && (
-            <div className="flex max-w-[600px] flex-grow flex-col items-center px-5">
+            <div className="flex max-w-[700px] flex-grow flex-col items-center px-5">
               <h1 className="relative self-start text-2xl font-bold sm:text-3xl">
                 AI Roadmap Generator
               </h1>
-              <div className="mt-6 flex w-full items-center justify-between text-sm">
-                <span className="text-gray-800">
+              <div className="mt-4 sm:mt-6 flex flex-col gap-2 sm:gap-0 sm:flex-row w-full items-start sm:items-center justify-between text-sm">
+                <span>
                   <span
                     className={cn(
-                      'inline-block w-[65px] rounded-md border px-0.5 text-center text-sm tabular-nums text-gray-800',
+                      'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
                       {
                         'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
                           !roadmapLimit,
@@ -389,19 +389,16 @@ export function GenerateRoadmap() {
                   >
                     {roadmapLimitUsed} of {roadmapLimit}
                   </span>{' '}
-                  roadmaps generated
-                  {!isLoggedIn() && (
-                    <>
-                      {' '}
-                      <button
-                        className="font-medium text-black underline underline-offset-2"
-                        onClick={showLoginPopup}
-                      >
-                        Login to increase your limit
-                      </button>
-                    </>
-                  )}
+                  roadmaps generated.
                 </span>
+                {!isLoggedIn() && (
+                  <button
+                    className="rounded-xl border border-current px-1.5 py-0.5 text-sm font-medium text-blue-500"
+                    onClick={showLoginPopup}
+                  >
+                    Generate more by signing up (free, takes 2sec) or logging in
+                  </button>
+                )}
               </div>
               <form
                 onSubmit={handleSubmit}
