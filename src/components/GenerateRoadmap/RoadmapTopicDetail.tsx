@@ -6,16 +6,29 @@ import { markdownToHtml } from '../../lib/markdown';
 import { Ban, FileText, X } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
-import { removeAuthToken } from '../../lib/jwt';
+import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAIRoadmapContentStream } from '../../helper/read-stream';
+import { cn } from '../../lib/classname';
+import { showLoginPopup } from '../../lib/popup';
 
 type RoadmapTopicDetailProps = RoadmapNodeDetails & {
   onClose?: () => void;
   roadmapId: string;
+  topicLimitUsed: number;
+  topicLimit: number;
+  onTopicContentGenerateComplete?: () => void;
 };
 
 export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
-  const { onClose, roadmapId, nodeTitle, parentTitle } = props;
+  const {
+    onClose,
+    roadmapId,
+    nodeTitle,
+    parentTitle,
+    topicLimit,
+    topicLimitUsed,
+    onTopicContentGenerateComplete,
+  } = props;
 
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
@@ -27,6 +40,12 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const generateAiRoadmapTopicContent = async () => {
     setIsLoading(true);
     setError('');
+
+    if (topicLimitUsed >= topicLimit) {
+      setError('You have reached the limit of topics');
+      setIsLoading(false);
+      return;
+    }
 
     if (!roadmapId || !nodeTitle) {
       setIsLoading(false);
@@ -76,6 +95,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         setTopicHtml(markdownToHtml(result, false));
       },
     });
+    onTopicContentGenerateComplete?.();
   };
 
   // Close the topic detail when user clicks outside the topic detail
@@ -109,8 +129,35 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         tabIndex={0}
         className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
+        <div className="flex flex-col items-start gap-2">
+          <span>
+            <span
+              className={cn(
+                'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                {
+                  'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                    !topicLimit,
+                },
+              )}
+            >
+              {topicLimitUsed} of {topicLimit}
+            </span>{' '}
+            topic content generated.
+          </span>
+          {!isLoggedIn() && (
+            <button
+              className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+              onClick={showLoginPopup}
+            >
+              Generate more by{' '}
+              <span className="font-semibold">signing up (free, takes 2s)</span>{' '}
+              or <span className="font-semibold">logging in</span>
+            </button>
+          )}
+        </div>
+
         {isLoading && (
-          <div className="flex w-full justify-center">
+          <div className="mt-6 flex w-full justify-center">
             <Spinner
               outerFill="#d1d5db"
               className="h-6 w-6 sm:h-12 sm:w-12"

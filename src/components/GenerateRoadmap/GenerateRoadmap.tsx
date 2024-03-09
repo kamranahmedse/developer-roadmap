@@ -15,7 +15,7 @@ import { readAIRoadmapStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken, visitAIRoadmap } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import {Ban, Download, PenSquare, Save, Wand} from 'lucide-react';
+import { Ban, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -28,6 +28,13 @@ import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
+
+export type GetAIRoadmapLimitResponse = {
+  used: number;
+  limit: number;
+  topicUsed: number;
+  topicLimit: number;
+};
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
@@ -84,6 +91,8 @@ export function GenerateRoadmap() {
 
   const [roadmapLimit, setRoadmapLimit] = useState(0);
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
+  const [roadmapTopicLimit, setRoadmapTopicLimit] = useState(0);
+  const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -240,19 +249,20 @@ export function GenerateRoadmap() {
   };
 
   const loadAIRoadmapLimit = async () => {
-    const { response, error } = await httpGet<{
-      limit: number;
-      used: number;
-    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap-limit`);
+    const { response, error } = await httpGet<GetAIRoadmapLimitResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap-limit`,
+    );
 
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
       return;
     }
 
-    const { limit, used } = response;
+    const { limit, used, topicLimit, topicUsed } = response;
     setRoadmapLimit(limit);
     setRoadmapLimitUsed(used);
+    setRoadmapTopicLimit(topicLimit);
+    setRoadmapTopicLimitUsed(topicUsed);
   };
 
   const loadAIRoadmap = async (roadmapId: string) => {
@@ -360,6 +370,11 @@ export function GenerateRoadmap() {
           parentTitle={selectedTopic.parentTitle}
           onClose={() => setSelectedTopic(null)}
           roadmapId={currentRoadmap?.id || ''}
+          topicLimit={roadmapTopicLimit}
+          topicLimitUsed={roadmapTopicLimitUsed}
+          onTopicContentGenerateComplete={async () => {
+            await loadAIRoadmapLimit();
+          }}
         />
       )}
 
@@ -393,10 +408,14 @@ export function GenerateRoadmap() {
                 </span>
                 {!isLoggedIn() && (
                   <button
-                    className="rounded-xl border border-current px-1.5 py-0.5 text-sm font-medium text-blue-500 text-left sm:text-center"
+                    className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
                     onClick={showLoginPopup}
                   >
-                    Generate more by <span className='font-semibold'>signing up (free, takes 2s)</span> or <span className='font-semibold'>logging in</span>
+                    Generate more by{' '}
+                    <span className="font-semibold">
+                      signing up (free, takes 2s)
+                    </span>{' '}
+                    or <span className="font-semibold">logging in</span>
                   </button>
                 )}
               </div>
@@ -472,12 +491,14 @@ export function GenerateRoadmap() {
                     disabled={isLoading}
                   >
                     <Save size={15} />
-                    <span className='hidden sm:inline'>Track your Progress on this Roadmap</span>
-                    <span className='inline sm:hidden'>Track Progress</span>
+                    <span className="hidden sm:inline">
+                      Track your Progress on this Roadmap
+                    </span>
+                    <span className="inline sm:hidden">Track Progress</span>
                   </button>
 
                   <button
-                    className="hidden sm:inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
+                    className="hidden items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:inline-flex sm:text-sm"
                     onClick={async () => {
                       const roadmapId = await saveAIRoadmap();
                       if (roadmapId) {
