@@ -1,4 +1,4 @@
-import { Ban, CircleFadingPlus, Wand } from 'lucide-react';
+import {Ban, CircleFadingPlus, Telescope, Wand} from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -101,7 +101,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </span>{' '}
           roadmaps.
         </p>
-        <p className="flex h-[25px] items-center text-sm">
+        <p className="flex min-h-[26px] items-center text-sm">
           {limit > 0 && !isLoggedIn() && (
             <button
               onClick={showLoginPopup}
