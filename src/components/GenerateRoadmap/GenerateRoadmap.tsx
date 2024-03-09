@@ -176,7 +176,7 @@ export function GenerateRoadmap() {
     setIsLoading(false);
   };
 
-  const addToCustomRoadmap = async () => {
+  const saveAIRoadmap = async () => {
     if (!isLoggedIn()) {
       showLoginPopup();
       return;
@@ -189,7 +189,7 @@ export function GenerateRoadmap() {
     const { response, error } = await httpPost<{
       roadmapId: string;
     }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-edit-ai-generated-roadmap/${currentRoadmap?.id}`,
+      `${import.meta.env.PUBLIC_API_URL}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
         title: roadmapTopic,
         nodes: nodes.map((node) => ({
@@ -468,7 +468,7 @@ export function GenerateRoadmap() {
                   <button
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
-                      const roadmapId = await addToCustomRoadmap();
+                      const roadmapId = await saveAIRoadmap();
                       if (roadmapId) {
                         window.location.href = `/r?id=${roadmapId}`;
                       }
@@ -482,7 +482,7 @@ export function GenerateRoadmap() {
                   <button
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
-                      const roadmapId = await addToCustomRoadmap();
+                      const roadmapId = await saveAIRoadmap();
                       if (roadmapId) {
                         window.open(
                           `${import.meta.env.PUBLIC_EDITOR_APP_URL}/${roadmapId}`,
