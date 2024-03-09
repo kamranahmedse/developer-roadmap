@@ -1,3 +1,4 @@
 # Array
 
-An **Array** is a linear data structure that holds elements of the same type, which means we can store only a specific type of elements in the array. It uses contiguous memory space to store elements. In an array, we can directly access any element based on its index which makes it an efficient data structure. Arrays have two types: one-dimensional and multi-dimensional. In a one-dimensional array, data is stored in a linear form while a multi-dimensional array can store data in the form of a matrix or in 3-D format.
+An **Array** is a linear data structure that holds elements of the same type, which means we can store only a specific type of elements in the array. It uses contiguous memory space to store elements. In an array, we can directly access any element based on its index which makes it an efficient data structure. Arrays have two types: one-dimensional and multi-dimensional. In a one-dimensional array, data is stored in a linear form while a multi-dimensional array can store data in the form of a matrix or in 3-D format. 
+You can read more on array : https://www.geeksforgeeks.org/complete-guide-to-arrays-data-structure/?ref=ghm
