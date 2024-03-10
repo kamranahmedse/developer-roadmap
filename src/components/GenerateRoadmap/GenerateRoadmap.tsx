@@ -384,7 +384,10 @@ export function GenerateRoadmap() {
           nodeType={selectedNode.nodeType}
           nodeTitle={selectedNode.nodeTitle}
           parentTitle={selectedNode.parentTitle}
-          onClose={() => setSelectedNode(null)}
+          onClose={() => {
+            setSelectedNode(null);
+            loadAIRoadmapLimit().finally(() => {});
+          }}
           roadmapId={currentRoadmap?.id || ''}
           topicLimit={roadmapTopicLimit}
           topicLimitUsed={roadmapTopicLimitUsed}
