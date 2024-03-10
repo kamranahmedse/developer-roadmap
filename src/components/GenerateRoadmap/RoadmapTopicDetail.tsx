@@ -54,7 +54,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
     }
 
     const response = await fetch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-genereate-ai-roadmap-content/${roadmapId}`,
+      `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap-content/${roadmapId}`,
       {
         method: 'POST',
         headers: {

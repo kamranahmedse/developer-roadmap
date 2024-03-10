@@ -15,15 +15,7 @@ import { readAIRoadmapStream } from '../../helper/read-stream';
 import { isLoggedIn, removeAuthToken, visitAIRoadmap } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import {
-  BadgeCheck,
-  Ban,
-  Download,
-  PenSquare,
-  Save,
-  Telescope,
-  Wand,
-} from 'lucide-react';
+import { Ban, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -36,6 +28,7 @@ import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
+import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -77,7 +70,8 @@ export const allowedClickableNodeTypes = [
 
 type GetAIRoadmapResponse = {
   id: string;
-  topic: string;
+  term: string;
+  title: string;
   data: string;
 };
 
@@ -89,7 +83,7 @@ export function GenerateRoadmap() {
 
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
-  const [roadmapTopic, setRoadmapTopic] = useState('');
+  const [roadmapTerm, setRoadmapTerm] = useState('');
   const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
@@ -110,7 +104,7 @@ export function GenerateRoadmap() {
     }
   };
 
-  const loadTopic = async (topic: string) => {
+  const loadTermRoadmap = async (term: string) => {
     setIsLoading(true);
     setHasSubmitted(true);
 
@@ -131,7 +125,7 @@ export function GenerateRoadmap() {
           'Content-Type': 'application/json',
         },
         credentials: 'include',
-        body: JSON.stringify({ topic: topic }),
+        body: JSON.stringify({ term }),
       },
     );
 
@@ -167,7 +161,8 @@ export function GenerateRoadmap() {
           result = result.replace(ROADMAP_ID_REGEX, '');
           setCurrentRoadmap({
             id: roadmapId,
-            topic: roadmapTopic,
+            term: roadmapTerm,
+            title: term,
             data: result,
           });
         }
@@ -186,15 +181,15 @@ export function GenerateRoadmap() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!roadmapTopic) {
+    if (!roadmapTerm) {
       return;
     }
 
-    if (roadmapTopic === currentRoadmap?.topic) {
+    if (roadmapTerm === currentRoadmap?.topic) {
       return;
     }
 
-    loadTopic(roadmapTopic);
+    loadTermRoadmap(roadmapTerm).finally(() => null);
   };
 
   const saveAIRoadmap = async () => {
@@ -212,7 +207,7 @@ export function GenerateRoadmap() {
     }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
-        title: roadmapTopic,
+        title: roadmapTerm,
         nodes: nodes.map((node) => ({
           ...node,
 
@@ -252,7 +247,7 @@ export function GenerateRoadmap() {
     }
 
     try {
-      await downloadGeneratedRoadmapImage(roadmapTopic, node);
+      await downloadGeneratedRoadmapImage(roadmapTerm, node);
       pageProgressMessage.set('');
     } catch (error) {
       console.error(error);
@@ -291,15 +286,17 @@ export function GenerateRoadmap() {
       return;
     }
 
-    const { topic, data } = response;
+    const { term, title, data } = response;
     await renderRoadmap(data);
 
     setCurrentRoadmap({
       id: roadmapId,
-      topic,
+      title: title,
+      term: term,
       data,
     });
-    setRoadmapTopic(topic);
+
+    setRoadmapTerm(title);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
@@ -360,14 +357,14 @@ export function GenerateRoadmap() {
   if (!hasSubmitted) {
     return (
       <RoadmapSearch
-        roadmapTopic={roadmapTopic}
-        setRoadmapTopic={setRoadmapTopic}
+        roadmapTerm={roadmapTerm}
+        setRoadmapTerm={setRoadmapTerm}
         handleSubmit={handleSubmit}
         limit={roadmapLimit}
         limitUsed={roadmapLimitUsed}
-        onLoadTopic={(topic: string) => {
-          setRoadmapTopic(topic);
-          loadTopic(topic).finally(() => {});
+        onLoadTerm={(term: string) => {
+          setRoadmapTerm(term);
+          loadTermRoadmap(term).finally(() => {});
         }}
       />
     );
@@ -406,37 +403,8 @@ export function GenerateRoadmap() {
             </span>
           )}
           {!isLoading && (
-            <div className="flex max-w-[750px] flex-grow flex-col items-center px-5">
-              <div className="mb-3 w-full rounded-md bg-yellow-100 px-3 py-2 text-yellow-800">
-                <h2 className="flex items-center text-base font-semibold text-yellow-800 sm:text-lg">
-                  AI Generated Roadmap{' '}
-                  <span className="ml-1.5 rounded-md border border-yellow-500 bg-yellow-200 px-1.5 text-xs uppercase tracking-wide text-yellow-800">
-                    Beta
-                  </span>
-                </h2>
-                <p className="mb-2 mt-1">
-                  This is an AI generated roadmap and is not verified by{' '}
-                  <span className={'font-semibold'}>roadmap.sh</span>. We are
-                  currently in beta and working hard to improve the quality of
-                  the generated roadmaps.
-                </p>
-                <p className="mb-1.5 mt-2 flex gap-2 text-sm">
-                  <a
-                    href="/ai/explore"
-                    className="flex items-center gap-1.5 rounded-md border border-yellow-600 px-2 py-1 text-yellow-700 transition-colors hover:bg-yellow-300 hover:text-yellow-800"
-                  >
-                    <Telescope size={15} />
-                    Explore other AI Roadmaps
-                  </a>
-                  <a
-                    href="/roadmaps"
-                    className="flex items-center gap-1.5 rounded-md border border-yellow-600 bg-yellow-200 px-2 py-1 text-yellow-800 transition-colors hover:bg-yellow-300"
-                  >
-                    <BadgeCheck size={15} />
-                    Visit Official Roadmaps
-                  </a>
-                </p>
-              </div>
+            <div className="container flex flex-grow flex-col items-center">
+              <AIRoadmapAlert />
               <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
                 <span>
                   <span
@@ -474,9 +442,9 @@ export function GenerateRoadmap() {
                   autoFocus
                   placeholder="e.g. Try searching for Ansible or DevOps"
                   className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
-                  value={roadmapTopic}
+                  value={roadmapTerm}
                   onInput={(e) =>
-                    setRoadmapTopic((e.target as HTMLInputElement).value)
+                    setRoadmapTerm((e.target as HTMLInputElement).value)
                   }
                 />
                 <button
@@ -487,9 +455,9 @@ export function GenerateRoadmap() {
                   )}
                   disabled={
                     !roadmapLimit ||
-                    !roadmapTopic ||
+                    !roadmapTerm ||
                     roadmapLimitUsed >= roadmapLimit ||
-                    roadmapTopic === currentRoadmap?.topic
+                    roadmapTerm === currentRoadmap?.term
                   }
                 >
                   {roadmapLimit > 0 && canGenerateMore && (
@@ -520,7 +488,7 @@ export function GenerateRoadmap() {
                   </button>
                   {roadmapId && (
                     <ShareRoadmapButton
-                      description={`Check out ${roadmapTopic} roadmap I generated on roadmap.sh`}
+                      description={`Check out ${roadmapTerm} roadmap I generated on roadmap.sh`}
                       pageUrl={pageUrl}
                     />
                   )}

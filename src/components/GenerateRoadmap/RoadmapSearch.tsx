@@ -11,27 +11,27 @@ import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
 
 type RoadmapSearchProps = {
-  roadmapTopic: string;
-  setRoadmapTopic: (topic: string) => void;
+  roadmapTerm: string;
+  setRoadmapTerm: (topic: string) => void;
   handleSubmit: (e: FormEvent<HTMLFormElement>) => void;
-  onLoadTopic: (topic: string) => void;
+  onLoadTerm: (topic: string) => void;
   limit: number;
   limitUsed: number;
 };
 
 export function RoadmapSearch(props: RoadmapSearchProps) {
   const {
-    roadmapTopic,
-    setRoadmapTopic,
+    roadmapTerm,
+    setRoadmapTerm,
     handleSubmit,
     limit = 0,
     limitUsed = 0,
-    onLoadTopic,
+    onLoadTerm,
   } = props;
 
   const canGenerateMore = limitUsed < limit;
 
-  const randomTopics = ['Linux', 'Prometheus', 'gRPC'];
+  const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
   return (
     <div className="flex flex-grow flex-col items-center justify-center px-4 py-6 sm:px-6">
@@ -65,9 +65,9 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             type="text"
             placeholder="Enter a topic to generate a roadmap for"
             className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
-            value={roadmapTopic}
+            value={roadmapTerm}
             onInput={(e) =>
-              setRoadmapTopic((e.target as HTMLInputElement).value)
+              setRoadmapTerm((e.target as HTMLInputElement).value)
             }
           />
           <button
@@ -75,7 +75,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
               'flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
               'disabled:cursor-not-allowed disabled:opacity-50',
             )}
-            disabled={!limit || !roadmapTopic || limitUsed >= limit}
+            disabled={!limit || !roadmapTerm || limitUsed >= limit}
           >
             {(!limit || canGenerateMore) && (
               <>
@@ -93,17 +93,17 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </button>
         </form>
         <div className="flex flex-row items-center justify-center gap-2">
-          {randomTopics.map((topic) => (
+          {randomTerms.map((term) => (
             <button
-              key={topic}
+              key={term}
               disabled={!limit || !canGenerateMore}
               type="button"
               onClick={() => {
-                onLoadTopic(topic);
+                onLoadTerm(term);
               }}
               className="flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-sm transition-colors hover:border-black hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
-              {topic} <ArrowUpRight size={17} />
+              {term} <ArrowUpRight size={17} />
             </button>
           ))}
           <a
