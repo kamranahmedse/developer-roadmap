@@ -60,7 +60,7 @@ function roadmapPathToId(filePath: string): string {
  * @returns string[] Array of roadmap IDs
  */
 export async function getRoadmapIds() {
-  const roadmapFiles = await import.meta.glob<RoadmapFileType>(
+  const roadmapFiles = import.meta.glob<RoadmapFileType>(
     '/src/data/roadmaps/*/*.md',
     {
       eager: true,
@@ -79,14 +79,14 @@ export async function getRoadmapIds() {
 export async function getRoadmapsByTag(
   tag: string,
 ): Promise<RoadmapFileType[]> {
-  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>(
+  const roadmapFilesMap = import.meta.glob<RoadmapFileType>(
     '/src/data/roadmaps/*/*.md',
     {
       eager: true,
     },
   );
 
-  const roadmapFiles = Object.values(roadmapFilesMap);
+  const roadmapFiles: RoadmapFileType[] = Object.values(roadmapFilesMap);
   const filteredRoadmaps = roadmapFiles
     .filter((roadmapFile) => roadmapFile.frontmatter.tags.includes(tag))
     .map((roadmapFile) => ({
@@ -100,12 +100,10 @@ export async function getRoadmapsByTag(
 }
 
 export async function getRoadmapById(id: string): Promise<RoadmapFileType> {
-  const roadmapFilesMap = await import.meta.glob<RoadmapFileType>(
-    '/src/data/roadmaps/*/*.md',
-    {
+  const roadmapFilesMap: Record<string, RoadmapFileType> =
+    import.meta.glob<RoadmapFileType>('/src/data/roadmaps/*/*.md', {
       eager: true,
-    },
-  );
+    });
 
   const roadmapFile = Object.values(roadmapFilesMap).find((roadmapFile) => {
     return roadmapPathToId(roadmapFile.file) === id;

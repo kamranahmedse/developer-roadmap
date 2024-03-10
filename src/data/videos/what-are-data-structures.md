@@ -4,10 +4,7 @@ description: 'Learn about the different data structures in this illustrated seri
 duration: '1 minute'
 isNew: false
 date: 2021-12-12
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'
