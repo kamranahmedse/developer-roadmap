@@ -1,10 +1,10 @@
 import {
   type FormEvent,
+  type MouseEvent,
+  useCallback,
   useEffect,
   useRef,
   useState,
-  useCallback,
-  type MouseEvent,
 } from 'react';
 import './GenerateRoadmap.css';
 import { useToast } from '../../hooks/use-toast';
@@ -19,7 +19,6 @@ import {
   BadgeCheck,
   Ban,
   Download,
-  PencilRuler,
   PenSquare,
   Save,
   Telescope,
@@ -37,6 +36,13 @@ import { downloadGeneratedRoadmapImage } from '../../helper/download-image.ts';
 import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
+
+export type GetAIRoadmapLimitResponse = {
+  used: number;
+  limit: number;
+  topicUsed: number;
+  topicLimit: number;
+};
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
 
@@ -93,6 +99,8 @@ export function GenerateRoadmap() {
 
   const [roadmapLimit, setRoadmapLimit] = useState(0);
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
+  const [roadmapTopicLimit, setRoadmapTopicLimit] = useState(0);
+  const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -249,19 +257,20 @@ export function GenerateRoadmap() {
   };
 
   const loadAIRoadmapLimit = async () => {
-    const { response, error } = await httpGet<{
-      limit: number;
-      used: number;
-    }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap-limit`);
+    const { response, error } = await httpGet<GetAIRoadmapLimitResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap-limit`,
+    );
 
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
       return;
     }
 
-    const { limit, used } = response;
+    const { limit, used, topicLimit, topicUsed } = response;
     setRoadmapLimit(limit);
     setRoadmapLimitUsed(used);
+    setRoadmapTopicLimit(topicLimit);
+    setRoadmapTopicLimitUsed(topicUsed);
   };
 
   const loadAIRoadmap = async (roadmapId: string) => {
@@ -369,6 +378,11 @@ export function GenerateRoadmap() {
           parentTitle={selectedTopic.parentTitle}
           onClose={() => setSelectedTopic(null)}
           roadmapId={currentRoadmap?.id || ''}
+          topicLimit={roadmapTopicLimit}
+          topicLimitUsed={roadmapTopicLimitUsed}
+          onTopicContentGenerateComplete={async () => {
+            await loadAIRoadmapLimit();
+          }}
         />
       )}
 
@@ -389,23 +403,23 @@ export function GenerateRoadmap() {
                     Beta
                   </span>
                 </h2>
-                <p className="mt-1 mb-2">
+                <p className="mb-2 mt-1">
                   This is an AI generated roadmap and is not verified by{' '}
                   <span className={'font-semibold'}>roadmap.sh</span>. We are
                   currently in beta and working hard to improve the quality of
                   the generated roadmaps.
                 </p>
-                <p className="mt-2 mb-1.5 text-sm flex gap-2">
+                <p className="mb-1.5 mt-2 flex gap-2 text-sm">
                   <a
                     href="/ai/explore"
-                    className="rounded-md text-yellow-700 border border-yellow-600 hover:bg-yellow-300 hover:text-yellow-800 px-2 py-1 flex items-center gap-1.5 transition-colors"
+                    className="flex items-center gap-1.5 rounded-md border border-yellow-600 px-2 py-1 text-yellow-700 transition-colors hover:bg-yellow-300 hover:text-yellow-800"
                   >
                     <Telescope size={15} />
                     Explore other AI Roadmaps
                   </a>
                   <a
                     href="/roadmaps"
-                    className="rounded-md border border-yellow-600 hover:bg-yellow-300 text-yellow-800 bg-yellow-200 px-2 py-1 flex items-center gap-1.5 transition-colors"
+                    className="flex items-center gap-1.5 rounded-md border border-yellow-600 bg-yellow-200 px-2 py-1 text-yellow-800 transition-colors hover:bg-yellow-300"
                   >
                     <BadgeCheck size={15} />
                     Visit Official Roadmaps

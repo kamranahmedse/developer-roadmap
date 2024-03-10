@@ -57,7 +57,7 @@ export function visitAIRoadmap(roadmapId: string) {
 
   Cookies.set(`crv-${roadmapId}`, '1', {
     path: '/',
-    expires: 30,
+    expires: 1 / 24, // 1 hour
     sameSite: 'lax',
     secure: !import.meta.env.DEV,
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
