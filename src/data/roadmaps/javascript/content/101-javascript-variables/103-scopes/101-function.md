@@ -1,6 +1,6 @@
 # Function Scope
 
-When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function.
+When a variable is declared inside a function, it is only accessible within that function and cannot be used outside that function. This scope applies to variables declared using the let, const, and var keywords.
 
 Visit the following resources to learn more:
 
