@@ -1,4 +1,10 @@
-import { Ban, CircleFadingPlus, Telescope, Wand } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Ban,
+  CircleFadingPlus,
+  Telescope,
+  Wand,
+} from 'lucide-react';
 import type { FormEvent } from 'react';
 import { isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
@@ -23,6 +29,8 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
   const canGenerateMore = limitUsed < limit;
 
+  const randomTopics = ['Linux', 'Prometheus', 'gRPC'];
+
   return (
     <div className="flex flex-grow flex-col items-center justify-center px-4 py-6 sm:px-6">
       <div className="flex flex-col gap-0 text-center sm:gap-2">
@@ -39,53 +47,72 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </span>
         </p>
       </div>
-      <form
-        onSubmit={(e) => {
-          if (limit > 0 && canGenerateMore) {
-            handleSubmit(e);
-          } else {
-            e.preventDefault();
-          }
-        }}
-        className="my-3 flex w-full max-w-[600px] flex-col gap-2 sm:my-5 sm:flex-row"
-      >
-        <input
-          autoFocus
-          type="text"
-          placeholder="Enter a topic to generate a roadmap for"
-          className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
-          value={roadmapTopic}
-          onInput={(e) => setRoadmapTopic((e.target as HTMLInputElement).value)}
-        />
-        <button
-          className={cn(
-            'flex min-w-[143px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
-            'disabled:cursor-not-allowed disabled:opacity-50',
-          )}
-          disabled={!limit || !roadmapTopic || limitUsed >= limit}
+      <div className="my-3 flex w-full max-w-[600px] flex-col items-center gap-3 sm:my-5">
+        <form
+          onSubmit={(e) => {
+            if (limit > 0 && canGenerateMore) {
+              handleSubmit(e);
+            } else {
+              e.preventDefault();
+            }
+          }}
+          className="flex w-full flex-col gap-2 sm:flex-row"
         >
-          {limit > 0 && canGenerateMore && (
-            <>
-              <Wand size={20} />
-              Generate
-            </>
-          )}
+          <input
+            autoFocus
+            type="text"
+            placeholder="Enter a topic to generate a roadmap for"
+            className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
+            value={roadmapTopic}
+            onInput={(e) =>
+              setRoadmapTopic((e.target as HTMLInputElement).value)
+            }
+          />
+          <button
+            className={cn(
+              'flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
+              'disabled:cursor-not-allowed disabled:opacity-50',
+            )}
+            disabled={!limit || !roadmapTopic || limitUsed >= limit}
+          >
+            {(!limit || canGenerateMore) && (
+              <>
+                <Wand size={20} />
+                Generate
+              </>
+            )}
 
-          {limit === 0 && (
-            <>
-              <span>Please wait..</span>
-            </>
-          )}
-
-          {limit > 0 && !canGenerateMore && (
-            <span className="flex items-center text-base sm:text-sm">
-              <Ban size={15} className="mr-2" />
-              Limit reached
-            </span>
-          )}
-        </button>
-      </form>
-      <div className="mb-36 flex flex-col items-center gap-4">
+            {limit > 0 && !canGenerateMore && (
+              <span className="flex items-center text-base">
+                <Ban size={15} className="mr-2" />
+                Limit reached
+              </span>
+            )}
+          </button>
+        </form>
+        <div className="flex flex-row items-center justify-center gap-2">
+          {randomTopics.map((topic) => (
+            <button
+              key={topic}
+              disabled={!limit || !canGenerateMore}
+              type="button"
+              onClick={() => {
+                setRoadmapTopic(topic);
+              }}
+              className="flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-sm transition-colors hover:border-black hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
+            >
+              {topic} <ArrowUpRight size={17} />
+            </button>
+          ))}
+          <a
+            href="/ai/explore"
+            className="flex items-center gap-1.5 rounded-full border border-black bg-gray-700 px-2 py-0.5 text-sm text-white transition-colors hover:border-black hover:bg-black"
+          >
+            Explore AI Roadmaps <Telescope size={17} />
+          </a>
+        </div>
+      </div>
+      <div className="mt-12 flex flex-col items-center gap-4">
         <p className="text-gray-500">
           You have generated{' '}
           <span
