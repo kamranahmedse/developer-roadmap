@@ -93,7 +93,7 @@ export function GenerateRoadmap() {
   const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
-  const [selectedTopic, setSelectedTopic] = useState<RoadmapNodeDetails | null>(
+  const [selectedNode, setSelectedNode] = useState<RoadmapNodeDetails | null>(
     null,
   );
 
@@ -110,16 +110,7 @@ export function GenerateRoadmap() {
     }
   };
 
-  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    if (!roadmapTopic) {
-      return;
-    }
-
-    if (roadmapTopic === currentRoadmap?.topic) {
-      return;
-    }
-
+  const loadTopic = async (topic: string) => {
     setIsLoading(true);
     setHasSubmitted(true);
 
@@ -140,7 +131,7 @@ export function GenerateRoadmap() {
           'Content-Type': 'application/json',
         },
         credentials: 'include',
-        body: JSON.stringify({ topic: roadmapTopic }),
+        body: JSON.stringify({ topic: topic }),
       },
     );
 
@@ -191,6 +182,19 @@ export function GenerateRoadmap() {
     });
 
     setIsLoading(false);
+  };
+
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    if (!roadmapTopic) {
+      return;
+    }
+
+    if (roadmapTopic === currentRoadmap?.topic) {
+      return;
+    }
+
+    loadTopic(roadmapTopic);
   };
 
   const saveAIRoadmap = async () => {
@@ -328,7 +332,7 @@ export function GenerateRoadmap() {
         return;
       }
 
-      setSelectedTopic({
+      setSelectedNode({
         nodeId,
         nodeType,
         nodeTitle,
@@ -361,6 +365,10 @@ export function GenerateRoadmap() {
         handleSubmit={handleSubmit}
         limit={roadmapLimit}
         limitUsed={roadmapLimitUsed}
+        onLoadTopic={(topic: string) => {
+          setRoadmapTopic(topic);
+          loadTopic(topic);
+        }}
       />
     );
   }
@@ -370,13 +378,13 @@ export function GenerateRoadmap() {
 
   return (
     <>
-      {selectedTopic && currentRoadmap && !isLoading && (
+      {selectedNode && currentRoadmap && !isLoading && (
         <RoadmapTopicDetail
-          nodeId={selectedTopic.nodeId}
-          nodeType={selectedTopic.nodeType}
-          nodeTitle={selectedTopic.nodeTitle}
-          parentTitle={selectedTopic.parentTitle}
-          onClose={() => setSelectedTopic(null)}
+          nodeId={selectedNode.nodeId}
+          nodeType={selectedNode.nodeType}
+          nodeTitle={selectedNode.nodeTitle}
+          parentTitle={selectedNode.parentTitle}
+          onClose={() => setSelectedNode(null)}
           roadmapId={currentRoadmap?.id || ''}
           topicLimit={roadmapTopicLimit}
           topicLimitUsed={roadmapTopicLimitUsed}

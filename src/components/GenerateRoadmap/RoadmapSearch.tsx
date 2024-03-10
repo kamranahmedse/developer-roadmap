@@ -14,6 +14,7 @@ type RoadmapSearchProps = {
   roadmapTopic: string;
   setRoadmapTopic: (topic: string) => void;
   handleSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  onLoadTopic: (topic: string) => void;
   limit: number;
   limitUsed: number;
 };
@@ -25,6 +26,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     handleSubmit,
     limit = 0,
     limitUsed = 0,
+    onLoadTopic,
   } = props;
 
   const canGenerateMore = limitUsed < limit;
@@ -97,7 +99,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
               disabled={!limit || !canGenerateMore}
               type="button"
               onClick={() => {
-                setRoadmapTopic(topic);
+                onLoadTopic(topic);
               }}
               className="flex items-center gap-1.5 rounded-full border px-2 py-0.5 text-sm transition-colors hover:border-black hover:bg-gray-100 disabled:cursor-not-allowed disabled:opacity-50"
             >
