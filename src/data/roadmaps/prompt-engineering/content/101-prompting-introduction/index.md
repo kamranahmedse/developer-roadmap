@@ -3,7 +3,7 @@
 Prompting is the process of giving a model a "prompt" or instruction for the task that you want it to perform. For example, if you have some English text that you may want to translate to French, you could give the following prompt:
 
 ```
-Translate the text delimited by triple quotes from English to french: 
+Translate the text delimited by triple quotes from English to French: 
 
 """Hello, how are you?"""
 ```
