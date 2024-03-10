@@ -40,12 +40,12 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const generateAiRoadmapTopicContent = async () => {
     setIsLoading(true);
     setError('');
-
-    if (topicLimitUsed >= topicLimit) {
-      setError('You have reached the limit of topics');
-      setIsLoading(false);
-      return;
-    }
+    //
+    // if (topicLimitUsed >= topicLimit) {
+    //   setError('Maximum limit reached');
+    //   setIsLoading(false);
+    //   return;
+    // }
 
     if (!roadmapId || !nodeTitle) {
       setIsLoading(false);
@@ -129,7 +129,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         tabIndex={0}
         className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
-        <div className="flex flex-col items-start gap-2">
+        <div className="flex flex-col sm:flex-row items-start gap-2">
           <span>
             <span
               className={cn(
@@ -142,7 +142,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
             >
               {topicLimitUsed} of {topicLimit}
             </span>{' '}
-            topic content generated.
+            topics generated
           </span>
           {!isLoggedIn() && (
             <button
@@ -150,8 +150,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               onClick={showLoginPopup}
             >
               Generate more by{' '}
-              <span className="font-semibold">signing up (free, takes 2s)</span>{' '}
-              or <span className="font-semibold">logging in</span>
+                <span className="font-semibold">logging in</span>
             </button>
           )}
         </div>

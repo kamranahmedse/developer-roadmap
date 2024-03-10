@@ -367,7 +367,7 @@ export function GenerateRoadmap() {
         limitUsed={roadmapLimitUsed}
         onLoadTopic={(topic: string) => {
           setRoadmapTopic(topic);
-          loadTopic(topic);
+          loadTopic(topic).finally(() => {});
         }}
       />
     );
