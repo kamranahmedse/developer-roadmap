@@ -130,7 +130,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
         </div>
       </div>
       <div className="mt-12 flex flex-col items-center gap-4">
-        <p className="text-gray-500">
+        <p className="text-gray-500 text-center">
           You have generated{' '}
           <span
             className={cn(
@@ -145,7 +145,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           </span>{' '}
           roadmaps.
         </p>
-        <p className="flex min-h-[26px] items-center text-sm">
+        <p className="flex min-h-[46px] sm:min-h-[26px] items-center text-sm">
           {limit > 0 && !isLoggedIn() && (
             <button
               onClick={showLoginPopup}
@@ -159,7 +159,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             </button>
           )}
         </p>
-        <p className="-mt-[45px] flex min-h-[26px] items-center text-sm">
+        <p className="-mt-[75px] sm:-mt-[45px] flex min-h-[46px] sm:min-h-[26px] items-center text-sm">
           {limit > 0 && isLoggedIn() && !openAPIKey && (
             <button
               onClick={() => setIsConfiguring(true)}
