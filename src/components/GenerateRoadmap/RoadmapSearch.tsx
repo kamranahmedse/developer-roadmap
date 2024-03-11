@@ -2,18 +2,22 @@ import {
   ArrowUpRight,
   Ban,
   CircleFadingPlus,
+  Cog,
   Telescope,
   Wand,
 } from 'lucide-react';
 import type { FormEvent } from 'react';
-import { isLoggedIn } from '../../lib/jwt';
+import { getOpenAPIKey, isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
+import { useState } from 'react';
+import { OpenAISettings } from './OpenAISettings.tsx';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
   setRoadmapTerm: (topic: string) => void;
   handleSubmit: (e: FormEvent<HTMLFormElement>) => void;
+  loadAIRoadmapLimit: () => void;
   onLoadTerm: (topic: string) => void;
   limit: number;
   limitUsed: number;
@@ -27,14 +31,25 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
     limit = 0,
     limitUsed = 0,
     onLoadTerm,
+    loadAIRoadmapLimit,
   } = props;
 
   const canGenerateMore = limitUsed < limit;
+  const [isConfiguring, setIsConfiguring] = useState(false);
+  const openAPIKey = getOpenAPIKey();
 
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
   return (
     <div className="flex flex-grow flex-col items-center justify-center px-4 py-6 sm:px-6">
+      {isConfiguring && (
+        <OpenAISettings
+          onClose={() => {
+            setIsConfiguring(false);
+            loadAIRoadmapLimit();
+          }}
+        />
+      )}
       <div className="flex flex-col gap-0 text-center sm:gap-2">
         <h1 className="relative text-2xl font-medium sm:text-3xl">
           <span className="hidden sm:inline">Generate roadmaps with AI</span>
@@ -141,6 +156,29 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
                 signing up (free and takes 2 seconds)
               </span>{' '}
               or <span className="font-semibold">logging in</span>
+            </button>
+          )}
+        </p>
+        <p className="-mt-[45px] flex min-h-[26px] items-center text-sm">
+          {limit > 0 && isLoggedIn() && !openAPIKey && (
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+            >
+              By-pass all limits by{' '}
+              <span className="font-semibold">
+                adding your own OpenAI API key
+              </span>
+            </button>
+          )}
+
+          {limit > 0 && isLoggedIn() && openAPIKey && (
+            <button
+              onClick={() => setIsConfiguring(true)}
+              className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+            >
+              <Cog size={15} />
+              Configure OpenAI API key
             </button>
           )}
         </p>

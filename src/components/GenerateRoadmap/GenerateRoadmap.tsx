@@ -362,6 +362,7 @@ export function GenerateRoadmap() {
         handleSubmit={handleSubmit}
         limit={roadmapLimit}
         limitUsed={roadmapLimitUsed}
+        loadAIRoadmapLimit={loadAIRoadmapLimit}
         onLoadTerm={(term: string) => {
           setRoadmapTerm(term);
           loadTermRoadmap(term).finally(() => {});
