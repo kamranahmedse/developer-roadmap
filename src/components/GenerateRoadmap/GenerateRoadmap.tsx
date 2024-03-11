@@ -459,7 +459,7 @@ export function GenerateRoadmap() {
                 {isLoggedInUser && !openAPIKey && (
                   <button
                     onClick={() => setIsConfiguring(true)}
-                    className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                    className="text-left rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
                   >
                     By-pass all limits by{' '}
                     <span className="font-semibold">

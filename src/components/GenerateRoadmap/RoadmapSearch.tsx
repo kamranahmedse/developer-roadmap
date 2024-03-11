@@ -107,7 +107,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             )}
           </button>
         </form>
-        <div className="flex flex-row items-center justify-center gap-2">
+        <div className="flex flex-row items-center justify-center gap-2 flex-wrap">
           {randomTerms.map((term) => (
             <button
               key={term}

@@ -76,7 +76,7 @@ export function ExploreAIRoadmap() {
       </div>
 
       {isLoading ? (
-        <ul className="grid grid-cols-3 gap-2">
+        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {new Array(21).fill(0).map((_, index) => (
             <li
               key={index}
@@ -90,7 +90,7 @@ export function ExploreAIRoadmap() {
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
             <>
-              <ul className="grid grid-cols-3 gap-2">
+              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-3">
                 {roadmaps.map((roadmap) => {
                   const roadmapLink = `/ai?id=${roadmap._id}`;
                   return (
@@ -98,6 +98,7 @@ export function ExploreAIRoadmap() {
                       key={roadmap._id}
                       href={roadmapLink}
                       className="flex flex-col rounded-md border transition-colors hover:bg-gray-100"
+                      target={'_blank'}
                     >
                       <h2 className="flex-grow px-2.5 py-2.5 text-base font-medium leading-tight">
                         {roadmap.title}
@@ -119,7 +120,7 @@ export function ExploreAIRoadmap() {
                 })}
               </ul>
               {hasMorePages && (
-                <div className='my-5 flex items-center justify-center'>
+                <div className="my-5 flex items-center justify-center">
                   <button
                     onClick={() => {
                       setIsLoadingMore(true);
@@ -127,7 +128,7 @@ export function ExploreAIRoadmap() {
                         setIsLoadingMore(false);
                       });
                     }}
-                    className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm font-medium text-white bg-black transition-colors rounded-full shadow-xl focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                    className="inline-flex items-center gap-1.5 rounded-full bg-black px-3 py-1.5 text-sm font-medium text-white shadow-xl transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
                     disabled={isLoadingMore}
                   >
                     {isLoadingMore ? (

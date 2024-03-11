@@ -33,7 +33,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
   return (
     <Modal onClose={onClose}>
-      <div className="overflow-hidden rounded-lg bg-white p-6 shadow-xl">
+      <div className="p-5">
         <h2 className="text-xl font-medium text-gray-800">OpenAI Settings</h2>
         <div className="mt-4">
           <p className="text-gray-700">
