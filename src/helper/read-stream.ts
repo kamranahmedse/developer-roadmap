@@ -41,3 +41,33 @@ export async function readAIRoadmapStream(
   onStreamEnd?.(result);
   reader.releaseLock();
 }
+
+export async function readAIRoadmapContentStream(
+  reader: ReadableStreamDefaultReader<Uint8Array>,
+  {
+    onStream,
+    onStreamEnd,
+  }: {
+    onStream?: (roadmap: string) => void;
+    onStreamEnd?: (roadmap: string) => void;
+  },
+) {
+  const decoder = new TextDecoder('utf-8');
+  let result = '';
+
+  while (true) {
+    const { value, done } = await reader.read();
+    if (done) {
+      break;
+    }
+
+    if (value) {
+      result += decoder.decode(value);
+      onStream?.(result);
+    }
+  }
+
+  onStream?.(result);
+  onStreamEnd?.(result);
+  reader.releaseLock();
+}

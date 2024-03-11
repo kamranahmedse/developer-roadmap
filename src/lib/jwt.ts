@@ -48,3 +48,39 @@ export function removeAuthToken() {
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
 }
+
+export function visitAIRoadmap(roadmapId: string) {
+  const isAlreadyVisited = Number(Cookies.get(`crv-${roadmapId}`) || 0) === 1;
+  if (isAlreadyVisited) {
+    return;
+  }
+
+  Cookies.set(`crv-${roadmapId}`, '1', {
+    path: '/',
+    expires: 1 / 24, // 1 hour
+    sameSite: 'lax',
+    secure: !import.meta.env.DEV,
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}
+
+export function deleteOpenAIKey() {
+  Cookies.remove('oak', {
+    path: '/',
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}
+
+export function saveOpenAIKey(apiKey: string) {
+  Cookies.set('oak', apiKey, {
+    path: '/',
+    expires: 365,
+    sameSite: 'lax',
+    secure: true,
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}
+
+export function getOpenAIKey() {
+  return Cookies.get('oak');
+}
