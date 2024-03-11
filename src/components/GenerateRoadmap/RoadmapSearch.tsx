@@ -7,7 +7,7 @@ import {
   Wand,
 } from 'lucide-react';
 import type { FormEvent } from 'react';
-import { getOpenAPIKey, isLoggedIn } from '../../lib/jwt';
+import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
 import { useState } from 'react';
@@ -36,7 +36,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const openAPIKey = getOpenAPIKey();
+  const openAPIKey = getOpenAIKey();
 
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
@@ -178,7 +178,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
               className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
             >
               <Cog size={15} />
-              Configure OpenAI API key
+              Configure OpenAI key
             </button>
           )}
         </p>

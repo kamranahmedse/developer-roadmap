@@ -64,14 +64,14 @@ export function visitAIRoadmap(roadmapId: string) {
   });
 }
 
-export function deleteOpenAPIKey() {
+export function deleteOpenAIKey() {
   Cookies.remove('oak', {
     path: '/',
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
 }
 
-export function saveOpenAPIKey(apiKey: string) {
+export function saveOpenAIKey(apiKey: string) {
   Cookies.set('oak', apiKey, {
     path: '/',
     expires: 365,
@@ -81,6 +81,6 @@ export function saveOpenAPIKey(apiKey: string) {
   });
 }
 
-export function getOpenAPIKey() {
+export function getOpenAIKey() {
   return Cookies.get('oak');
 }

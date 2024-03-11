@@ -1,9 +1,9 @@
 import { Modal } from '../Modal.tsx';
 import { useEffect, useState } from 'react';
 import {
-  deleteOpenAPIKey,
-  getOpenAPIKey,
-  saveOpenAPIKey,
+  deleteOpenAIKey,
+  getOpenAIKey,
+  saveOpenAIKey,
 } from '../../lib/jwt.ts';
 import { cn } from '../../lib/classname.ts';
 import { CloseIcon } from '../ReactIcons/CloseIcon.tsx';
@@ -26,7 +26,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
   const toast = useToast();
 
   useEffect(() => {
-    const apiKey = getOpenAPIKey();
+    const apiKey = getOpenAIKey();
     setOpenaiApiKey(apiKey || '');
     setDefaultOpenAIKey(apiKey || '');
   }, []);
@@ -59,7 +59,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
               const normalizedKey = openaiApiKey.trim();
               if (!normalizedKey) {
-                deleteOpenAPIKey();
+                deleteOpenAIKey();
                 toast.success('OpenAI API key removed');
                 onClose();
                 return;
@@ -85,7 +85,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
               }
 
               // Save the API key to cookies
-              saveOpenAPIKey(normalizedKey);
+              saveOpenAIKey(normalizedKey);
               toast.success('OpenAI API key saved');
               onClose();
             }}
@@ -151,7 +151,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
               <button
                 type="button"
                 onClick={() => {
-                  deleteOpenAPIKey();
+                  deleteOpenAIKey();
                   onClose();
                   toast.success('OpenAI API key removed');
                 }}

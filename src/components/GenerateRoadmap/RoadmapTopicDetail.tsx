@@ -3,13 +3,14 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import { Ban, FileText, X } from 'lucide-react';
+import { Ban, Cog, FileText, X } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
-import { isLoggedIn, removeAuthToken } from '../../lib/jwt';
+import { getOpenAIKey, isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAIRoadmapContentStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { showLoginPopup } from '../../lib/popup';
+import { OpenAISettings } from './OpenAISettings.tsx';
 
 type RoadmapTopicDetailProps = RoadmapNodeDetails & {
   onClose?: () => void;
@@ -17,6 +18,7 @@ type RoadmapTopicDetailProps = RoadmapNodeDetails & {
   topicLimitUsed: number;
   topicLimit: number;
   onTopicContentGenerateComplete?: () => void;
+  onConfigureOpenAI?: () => void;
 };
 
 export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
@@ -28,6 +30,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
     topicLimit,
     topicLimitUsed,
     onTopicContentGenerateComplete,
+    onConfigureOpenAI,
   } = props;
 
   const [isLoading, setIsLoading] = useState(false);
@@ -121,6 +124,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   }, []);
 
   const hasContent = topicHtml?.length > 0;
+  const openAIKey = getOpenAIKey();
 
   return (
     <div className={'relative z-50'}>
@@ -129,7 +133,7 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         tabIndex={0}
         className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
-        <div className="flex flex-col sm:flex-row items-start gap-2">
+        <div className="flex flex-col items-start gap-2 sm:flex-row">
           <span>
             <span
               className={cn(
@@ -149,8 +153,25 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
               onClick={showLoginPopup}
             >
-              Generate more by{' '}
-                <span className="font-semibold">logging in</span>
+              Generate more by <span className="font-semibold">logging in</span>
+            </button>
+          )}
+          {isLoggedIn() && !openAIKey && (
+            <button
+              className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+              onClick={onConfigureOpenAI}
+            >
+              By-pass all limits by{' '}
+              <span className="font-semibold">adding your own OpenAI Key</span>
+            </button>
+          )}
+          {isLoggedIn() && openAIKey && (
+            <button
+              className="flex items-center gap-1 rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+              onClick={onConfigureOpenAI}
+            >
+              <Cog className="-mt-0.5 inline-block h-4 w-4" />
+              Configure OpenAI Key
             </button>
           )}
         </div>

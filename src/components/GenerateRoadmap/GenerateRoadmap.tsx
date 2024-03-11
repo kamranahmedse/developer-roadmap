@@ -13,7 +13,7 @@ import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
 import {
-  getOpenAPIKey,
+  getOpenAIKey,
   isLoggedIn,
   removeAuthToken,
   visitAIRoadmap,
@@ -103,7 +103,7 @@ export function GenerateRoadmap() {
   const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
   const [isConfiguring, setIsConfiguring] = useState(false);
 
-  const openAPIKey = getOpenAPIKey();
+  const openAPIKey = getOpenAIKey();
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -401,6 +401,10 @@ export function GenerateRoadmap() {
           nodeType={selectedNode.nodeType}
           nodeTitle={selectedNode.nodeTitle}
           parentTitle={selectedNode.parentTitle}
+          onConfigureOpenAI={() => {
+            setSelectedNode(null);
+            setIsConfiguring(true);
+          }}
           onClose={() => {
             setSelectedNode(null);
             loadAIRoadmapLimit().finally(() => {});
@@ -470,7 +474,7 @@ export function GenerateRoadmap() {
                     className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
                   >
                     <Cog size={15} />
-                    Configure OpenAI API key
+                    Configure OpenAI key
                   </button>
                 )}
               </div>
