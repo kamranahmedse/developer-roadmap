@@ -484,7 +484,6 @@ export function GenerateRoadmap() {
               >
                 <input
                   type="text"
-                  autoFocus
                   placeholder="e.g. Try searching for Ansible or DevOps"
                   className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
                   value={roadmapTerm}
