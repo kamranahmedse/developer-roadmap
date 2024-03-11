@@ -16,6 +16,8 @@ type OpenAISettingsProps = {
 export function OpenAISettings(props: OpenAISettingsProps) {
   const { onClose } = props;
 
+  const [defaultOpenAIKey, setDefaultOpenAIKey] = useState('');
+
   const [hasError, setHasError] = useState(false);
   const [openaiApiKey, setOpenaiApiKey] = useState('');
   const toast = useToast();
@@ -23,6 +25,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
   useEffect(() => {
     const apiKey = getOpenAPIKey();
     setOpenaiApiKey(apiKey || '');
+    setDefaultOpenAIKey(apiKey || '');
   }, []);
 
   return (
@@ -112,6 +115,19 @@ export function OpenAISettings(props: OpenAISettingsProps) {
             >
               Save
             </button>
+            {defaultOpenAIKey && (
+              <button
+                type="button"
+                onClick={() => {
+                  deleteOpenAPIKey();
+                  onClose();
+                  toast.success('OpenAI API key removed');
+                }}
+                className="mt-1 w-full rounded-md bg-red-500 px-4 py-2 text-white transition-colors hover:bg-black hover:bg-red-700"
+              >
+                Reset to Default Key
+              </button>
+            )}
           </form>
         </div>
       </div>

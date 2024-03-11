@@ -12,10 +12,15 @@ import { generateAIRoadmapFromText } from '../../../editor/utils/roadmap-generat
 import { renderFlowJSON } from '../../../editor/renderer/renderer';
 import { replaceChildren } from '../../lib/dom';
 import { readAIRoadmapStream } from '../../helper/read-stream';
-import { isLoggedIn, removeAuthToken, visitAIRoadmap } from '../../lib/jwt';
+import {
+  getOpenAPIKey,
+  isLoggedIn,
+  removeAuthToken,
+  visitAIRoadmap,
+} from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
-import { Ban, Download, PenSquare, Save, Wand } from 'lucide-react';
+import { Ban, Cog, Download, PenSquare, Save, Wand } from 'lucide-react';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
 import { httpGet, httpPost } from '../../lib/http.ts';
 import { pageProgressMessage } from '../../stores/page.ts';
@@ -29,6 +34,7 @@ import { showLoginPopup } from '../../lib/popup.ts';
 import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
+import { OpenAISettings } from './OpenAISettings.tsx';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -95,6 +101,9 @@ export function GenerateRoadmap() {
   const [roadmapLimitUsed, setRoadmapLimitUsed] = useState(0);
   const [roadmapTopicLimit, setRoadmapTopicLimit] = useState(0);
   const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
+  const [isConfiguring, setIsConfiguring] = useState(false);
+
+  const openAPIKey = getOpenAPIKey();
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -373,9 +382,19 @@ export function GenerateRoadmap() {
 
   const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
   const canGenerateMore = roadmapLimitUsed < roadmapLimit;
+  const isLoggedInUser = isLoggedIn();
 
   return (
     <>
+      {isConfiguring && (
+        <OpenAISettings
+          onClose={() => {
+            setIsConfiguring(false);
+            loadAIRoadmapLimit().finally(() => null);
+          }}
+        />
+      )}
+
       {selectedNode && currentRoadmap && !isLoading && (
         <RoadmapTopicDetail
           nodeId={selectedNode.nodeId}
@@ -421,7 +440,7 @@ export function GenerateRoadmap() {
                   </span>{' '}
                   roadmaps generated.
                 </span>
-                {!isLoggedIn() && (
+                {!isLoggedInUser && (
                   <button
                     className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
                     onClick={showLoginPopup}
@@ -431,6 +450,27 @@ export function GenerateRoadmap() {
                       signing up (free, takes 2s)
                     </span>{' '}
                     or <span className="font-semibold">logging in</span>
+                  </button>
+                )}
+                {isLoggedInUser && !openAPIKey && (
+                  <button
+                    onClick={() => setIsConfiguring(true)}
+                    className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                  >
+                    By-pass all limits by{' '}
+                    <span className="font-semibold">
+                      adding your own OpenAI API key
+                    </span>
+                  </button>
+                )}
+
+                {isLoggedInUser && openAPIKey && (
+                  <button
+                    onClick={() => setIsConfiguring(true)}
+                    className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                  >
+                    <Cog size={15} />
+                    Configure OpenAI API key
                   </button>
                 )}
               </div>
