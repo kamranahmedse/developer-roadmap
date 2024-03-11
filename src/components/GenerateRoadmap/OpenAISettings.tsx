@@ -8,6 +8,7 @@ import {
 import { cn } from '../../lib/classname.ts';
 import { CloseIcon } from '../ReactIcons/CloseIcon.tsx';
 import { useToast } from '../../hooks/use-toast.ts';
+import { httpPost } from '../../lib/http.ts';
 
 type OpenAISettingsProps = {
   onClose: () => void;
@@ -20,6 +21,8 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
   const [hasError, setHasError] = useState(false);
   const [openaiApiKey, setOpenaiApiKey] = useState('');
+  const [isLoading, setIsLoading] = useState(false);
+
   const toast = useToast();
 
   useEffect(() => {
@@ -50,7 +53,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
           <form
             className="mt-4"
-            onSubmit={(e) => {
+            onSubmit={async (e) => {
               e.preventDefault();
               setHasError(false);
 
@@ -64,6 +67,20 @@ export function OpenAISettings(props: OpenAISettingsProps) {
 
               if (!normalizedKey.startsWith('sk-')) {
                 setHasError(true);
+                return;
+              }
+
+              setIsLoading(true);
+              const { response, error } = await httpPost(
+                `${import.meta.env.PUBLIC_API_URL}/v1-validate-openai-key`,
+                {
+                  key: normalizedKey,
+                },
+              );
+
+              if (error) {
+                setHasError(true);
+                setIsLoading(false);
                 return;
               }
 
@@ -110,11 +127,26 @@ export function OpenAISettings(props: OpenAISettingsProps) {
               </p>
             )}
             <button
+              disabled={isLoading}
               type="submit"
-              className="mt-2 w-full rounded-md bg-gray-700 px-4 py-2 text-white transition-colors hover:bg-black"
+              className={
+                'mt-2 w-full rounded-md bg-gray-700 px-4 py-2 text-white transition-colors hover:bg-black disabled:cursor-not-allowed disabled:opacity-50'
+              }
             >
-              Save
+              {!isLoading && 'Save'}
+              {isLoading && 'Validating ..'}
             </button>
+            {!defaultOpenAIKey && (
+              <button
+                type="button"
+                onClick={() => {
+                  onClose();
+                }}
+                className="mt-1 w-full rounded-md bg-red-500 px-4 py-2 text-white transition-colors hover:bg-black hover:bg-red-700"
+              >
+                Cancel
+              </button>
+            )}
             {defaultOpenAIKey && (
               <button
                 type="button"
