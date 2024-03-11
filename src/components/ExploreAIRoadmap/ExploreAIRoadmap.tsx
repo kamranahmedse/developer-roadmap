@@ -90,7 +90,7 @@ export function ExploreAIRoadmap() {
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
             <>
-              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-3">
+              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
                 {roadmaps.map((roadmap) => {
                   const roadmapLink = `/ai?id=${roadmap._id}`;
                   return (
