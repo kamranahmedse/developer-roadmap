@@ -194,7 +194,7 @@ export function GenerateRoadmap() {
       return;
     }
 
-    if (roadmapTerm === currentRoadmap?.topic) {
+    if (roadmapTerm === currentRoadmap?.term) {
       return;
     }
 
@@ -285,7 +285,8 @@ export function GenerateRoadmap() {
     pageProgressMessage.set('Loading Roadmap');
 
     const { response, error } = await httpGet<{
-      topic: string;
+      term: string;
+      title: string;
       data: string;
     }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap/${roadmapId}`);
 
@@ -459,7 +460,7 @@ export function GenerateRoadmap() {
                 {isLoggedInUser && !openAPIKey && (
                   <button
                     onClick={() => setIsConfiguring(true)}
-                    className="text-left rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                    className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
                   >
                     By-pass all limits by{' '}
                     <span className="font-semibold">
