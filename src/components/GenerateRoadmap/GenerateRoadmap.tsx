@@ -35,6 +35,7 @@ import { cn } from '../../lib/classname.ts';
 import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
 import { OpenAISettings } from './OpenAISettings.tsx';
+import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -104,6 +105,7 @@ export function GenerateRoadmap() {
   const [isConfiguring, setIsConfiguring] = useState(false);
 
   const openAPIKey = getOpenAIKey();
+  const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -372,6 +374,7 @@ export function GenerateRoadmap() {
         limit={roadmapLimit}
         limitUsed={roadmapLimitUsed}
         loadAIRoadmapLimit={loadAIRoadmapLimit}
+        isKeyOnly={isKeyOnly}
         onLoadTerm={(term: string) => {
           setRoadmapTerm(term);
           loadTermRoadmap(term).finally(() => {});
@@ -427,63 +430,93 @@ export function GenerateRoadmap() {
             </span>
           )}
           {!isLoading && (
-            <div className="container flex flex-grow flex-col items-center">
+            <div className="container flex flex-grow flex-col items-start">
               <AIRoadmapAlert />
-              <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
-                <span>
-                  <span
-                    className={cn(
-                      'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
-                      {
-                        'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
-                          !roadmapLimit,
-                      },
-                    )}
-                  >
-                    {roadmapLimitUsed} of {roadmapLimit}
-                  </span>{' '}
-                  roadmaps generated.
-                </span>
-                {!isLoggedInUser && (
-                  <button
-                    className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-                    onClick={showLoginPopup}
-                  >
-                    Generate more by{' '}
-                    <span className="font-semibold">
-                      signing up (free, takes 2s)
+              {isKeyOnly && (
+                <div className="flex flex-row gap-4">
+                  {!openAPIKey && (
+                    <p className={'text-left text-red-500'}>
+                      We have hit the limit for AI roadmap generation. Please
+                      try again tomorrow or{' '}
+                      <button
+                        onClick={() => setIsConfiguring(true)}
+                        className="font-semibold text-purple-600 underline underline-offset-2"
+                      >
+                        add your own OpenAI API key
+                      </button>
+                    </p>
+                  )}
+                  {openAPIKey && (
+                    <p className={'text-left text-gray-500'}>
+                      You have added your own OpenAI API key.{' '}
+                      <button
+                        onClick={() => setIsConfiguring(true)}
+                        className="font-semibold text-purple-600 underline underline-offset-2"
+                      >
+                        Configure it here if you want.
+                      </button>
+                    </p>
+                  )}
+                </div>
+              )}
+              {!isKeyOnly && (
+                <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
+                  <span>
+                    <span
+                      className={cn(
+                        'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                        {
+                          'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                            !roadmapLimit,
+                        },
+                      )}
+                    >
+                      {roadmapLimitUsed} of {roadmapLimit}
                     </span>{' '}
-                    or <span className="font-semibold">logging in</span>
-                  </button>
-                )}
-                {isLoggedInUser && !openAPIKey && (
-                  <button
-                    onClick={() => setIsConfiguring(true)}
-                    className="text-left rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                  >
-                    By-pass all limits by{' '}
-                    <span className="font-semibold">
-                      adding your own OpenAI API key
-                    </span>
-                  </button>
-                )}
+                    roadmaps generated.
+                  </span>
+                  {!isLoggedInUser && (
+                    <button
+                      className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+                      onClick={showLoginPopup}
+                    >
+                      Generate more by{' '}
+                      <span className="font-semibold">
+                        signing up (free, takes 2s)
+                      </span>{' '}
+                      or <span className="font-semibold">logging in</span>
+                    </button>
+                  )}
+                  {isLoggedInUser && !openAPIKey && (
+                    <button
+                      onClick={() => setIsConfiguring(true)}
+                      className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                    >
+                      By-pass all limits by{' '}
+                      <span className="font-semibold">
+                        adding your own OpenAI API key
+                      </span>
+                    </button>
+                  )}
 
-                {isLoggedInUser && openAPIKey && (
-                  <button
-                    onClick={() => setIsConfiguring(true)}
-                    className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                  >
-                    <Cog size={15} />
-                    Configure OpenAI key
-                  </button>
-                )}
-              </div>
+                  {isLoggedInUser && openAPIKey && (
+                    <button
+                      onClick={() => setIsConfiguring(true)}
+                      className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                    >
+                      <Cog size={15} />
+                      Configure OpenAI key
+                    </button>
+                  )}
+                </div>
+              )}
               <form
                 onSubmit={handleSubmit}
                 className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
               >
                 <input
                   type="text"
+                  autoFocus
                   placeholder="e.g. Try searching for Ansible or DevOps"
                   className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
                   value={roadmapTerm}
@@ -501,7 +534,8 @@ export function GenerateRoadmap() {
                     !roadmapLimit ||
                     !roadmapTerm ||
                     roadmapLimitUsed >= roadmapLimit ||
-                    roadmapTerm === currentRoadmap?.term
+                    roadmapTerm === currentRoadmap?.term ||
+                    (isKeyOnly && !openAPIKey)
                   }
                 >
                   {roadmapLimit > 0 && canGenerateMore && (
@@ -514,7 +548,7 @@ export function GenerateRoadmap() {
                   {roadmapLimit === 0 && <span>Please wait..</span>}
 
                   {roadmapLimit > 0 && !canGenerateMore && (
-                    <span className="flex items-center text-sm">
+                    <span className="flex items-center">
                       <Ban size={15} className="mr-2" />
                       Limit reached
                     </span>

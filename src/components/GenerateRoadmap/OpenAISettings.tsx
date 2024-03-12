@@ -1,10 +1,6 @@
 import { Modal } from '../Modal.tsx';
 import { useEffect, useState } from 'react';
-import {
-  deleteOpenAIKey,
-  getOpenAIKey,
-  saveOpenAIKey,
-} from '../../lib/jwt.ts';
+import { deleteOpenAIKey, getOpenAIKey, saveOpenAIKey } from '../../lib/jwt.ts';
 import { cn } from '../../lib/classname.ts';
 import { CloseIcon } from '../ReactIcons/CloseIcon.tsx';
 import { useToast } from '../../hooks/use-toast.ts';
@@ -121,6 +117,10 @@ export function OpenAISettings(props: OpenAISettingsProps) {
                 </button>
               )}
             </div>
+            <p className={'mb-2 mt-1 text-xs text-gray-500'}>
+              We do not store your API key on our servers.
+            </p>
+
             {hasError && (
               <p className="mt-2 text-sm text-red-500">
                 Please enter a valid OpenAI API key
