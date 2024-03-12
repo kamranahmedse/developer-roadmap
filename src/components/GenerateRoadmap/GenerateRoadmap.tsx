@@ -106,6 +106,7 @@ export function GenerateRoadmap() {
 
   const openAPIKey = getOpenAIKey();
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
+  const isAuthenticatedUser = isLoggedIn();
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -249,6 +250,11 @@ export function GenerateRoadmap() {
   };
 
   const downloadGeneratedRoadmapContent = async () => {
+    if (!isLoggedIn()) {
+      showLoginPopup();
+      return;
+    }
+
     pageProgressMessage.set('Downloading Roadmap');
 
     const node = document.getElementById('roadmap-container');
@@ -432,7 +438,7 @@ export function GenerateRoadmap() {
           {!isLoading && (
             <div className="container flex flex-grow flex-col items-start">
               <AIRoadmapAlert />
-              {isKeyOnly && (
+              {isKeyOnly && isAuthenticatedUser && (
                 <div className="flex flex-row gap-4">
                   {!openAPIKey && (
                     <p className={'text-left text-red-500'}>
@@ -459,7 +465,7 @@ export function GenerateRoadmap() {
                   )}
                 </div>
               )}
-              {!isKeyOnly && (
+              {!isKeyOnly && isAuthenticatedUser && (
                 <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
                   <span>
                     <span
@@ -475,19 +481,7 @@ export function GenerateRoadmap() {
                     </span>{' '}
                     roadmaps generated.
                   </span>
-                  {!isLoggedInUser && (
-                    <button
-                      className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-                      onClick={showLoginPopup}
-                    >
-                      Generate more by{' '}
-                      <span className="font-semibold">
-                        signing up (free, takes 2s)
-                      </span>{' '}
-                      or <span className="font-semibold">logging in</span>
-                    </button>
-                  )}
-                  {isLoggedInUser && !openAPIKey && (
+                  {!openAPIKey && (
                     <button
                       onClick={() => setIsConfiguring(true)}
                       className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
@@ -499,7 +493,7 @@ export function GenerateRoadmap() {
                     </button>
                   )}
 
-                  {isLoggedInUser && openAPIKey && (
+                  {openAPIKey && (
                     <button
                       onClick={() => setIsConfiguring(true)}
                       className="flex flex-row items-center gap-1 rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
@@ -509,6 +503,14 @@ export function GenerateRoadmap() {
                     </button>
                   )}
                 </div>
+              )}
+              {!isAuthenticatedUser && (
+                <button
+                  className="rounded-xl border border-current px-2.5 py-0.5 text-left text-sm font-medium text-blue-500 transition-colors hover:bg-blue-500 hover:text-white sm:text-center"
+                  onClick={showLoginPopup}
+                >
+                  Login to generate your own roadmaps
+                </button>
               )}
               <form
                 onSubmit={handleSubmit}
@@ -530,28 +532,46 @@ export function GenerateRoadmap() {
                     'flex min-w-[127px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white',
                     'disabled:cursor-not-allowed disabled:opacity-50',
                   )}
+                  onClick={(e) => {
+                    if (!isAuthenticatedUser) {
+                      e.preventDefault();
+                      showLoginPopup();
+                    }
+                  }}
                   disabled={
-                    !roadmapLimit ||
-                    !roadmapTerm ||
-                    roadmapLimitUsed >= roadmapLimit ||
-                    roadmapTerm === currentRoadmap?.term ||
-                    (isKeyOnly && !openAPIKey)
+                    isAuthenticatedUser &&
+                    (!roadmapLimit ||
+                      !roadmapTerm ||
+                      roadmapLimitUsed >= roadmapLimit ||
+                      roadmapTerm === currentRoadmap?.term ||
+                      (isKeyOnly && !openAPIKey))
                   }
                 >
-                  {roadmapLimit > 0 && canGenerateMore && (
+                  {!isAuthenticatedUser && (
                     <>
                       <Wand size={20} />
                       Generate
                     </>
                   )}
 
-                  {roadmapLimit === 0 && <span>Please wait..</span>}
+                  {isAuthenticatedUser && (
+                    <>
+                      {roadmapLimit > 0 && canGenerateMore && (
+                        <>
+                          <Wand size={20} />
+                          Generate
+                        </>
+                      )}
 
-                  {roadmapLimit > 0 && !canGenerateMore && (
-                    <span className="flex items-center">
-                      <Ban size={15} className="mr-2" />
-                      Limit reached
-                    </span>
+                      {roadmapLimit === 0 && <span>Please wait..</span>}
+
+                      {roadmapLimit > 0 && !canGenerateMore && (
+                        <span className="flex items-center">
+                          <Ban size={15} className="mr-2" />
+                          Limit reached
+                        </span>
+                      )}
+                    </>
                   )}
                 </button>
               </form>
