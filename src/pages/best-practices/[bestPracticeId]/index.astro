@@ -13,6 +13,7 @@ import {
   getAllBestPractices,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../../lib/open-graph';
 
 export async function getStaticPaths() {
   const bestPractices = await getAllBestPractices();
@@ -53,13 +54,11 @@ if (bestPracticeData.schema) {
   );
 }
 
-const ogImageUrl = `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(
-  {
-    type: 'roadmap',
-    title: bestPracticeData.title,
-    description: bestPracticeData.description,
-  },
-)}`;
+const ogImageUrl = getOpenGraphImageUrl({
+  type: 'roadmap',
+  title: bestPracticeData.title,
+  description: bestPracticeData.description,
+});
 ---
 
 <BaseLayout

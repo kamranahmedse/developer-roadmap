@@ -13,6 +13,7 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
 export async function getStaticPaths() {
@@ -56,13 +57,11 @@ if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
 
-const ogImageUrl =
-  roadmapData?.seo?.ogImageUrl ||
-  `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams({
-    type: 'roadmap',
-    title: roadmapData.title,
-    description: roadmapData.description,
-  })}`;
+const ogImageUrl = getOpenGraphImageUrl({
+  type: 'roadmap',
+  title: roadmapData.title,
+  description: roadmapData.description,
+});
 ---
 
 <BaseLayout

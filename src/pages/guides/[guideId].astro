@@ -3,6 +3,7 @@ import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides, type GuideFileType } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 export interface Props {
   guide: GuideFileType;
@@ -23,15 +24,13 @@ const { guideId } = Astro.params;
 const { guide } = Astro.props;
 const { frontmatter: guideData, author } = guide;
 
-const ogImageUrl = `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(
-  {
-    type: 'guide',
-    title: guideData.title,
-    description: guideData.description,
-    authorName: author.frontmatter?.name,
-    authorAvatar: author.frontmatter?.imageUrl || '',
-  },
-)}`;
+const ogImageUrl = getOpenGraphImageUrl({
+  type: 'guide',
+  title: guideData.title,
+  description: guideData.description,
+  authorName: author.frontmatter?.name,
+  authorAvatar: author.frontmatter?.imageUrl || '',
+});
 ---
 
 <BaseLayout
