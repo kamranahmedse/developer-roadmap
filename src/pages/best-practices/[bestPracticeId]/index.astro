@@ -52,12 +52,21 @@ if (bestPracticeData.schema) {
     }),
   );
 }
+
+const ogImageUrl = `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(
+  {
+    type: 'roadmap',
+    title: bestPracticeData.title,
+    description: bestPracticeData.description,
+  },
+)}`;
 ---
 
 <BaseLayout
   permalink={`/best-practices/${bestPracticeId}`}
   title={bestPracticeData?.seo?.title}
   briefTitle={bestPracticeData?.briefTitle}
+  ogImageUrl={ogImageUrl}
   description={bestPracticeData.seo.description}
   keywords={bestPracticeData.seo.keywords}
   noIndex={bestPracticeData.isUpcoming}

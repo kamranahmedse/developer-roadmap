@@ -55,14 +55,21 @@ if (roadmapData.schema) {
 if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
+
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams({
+    type: 'roadmap',
+    title: roadmapData.title,
+    description: roadmapData.description,
+  })}`;
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
-  ogImageUrl={roadmapData?.seo?.ogImageUrl ||
-    'https://roadmap.sh/images/og-img.png'}
+  ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}

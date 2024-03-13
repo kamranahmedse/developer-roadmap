@@ -21,7 +21,17 @@ export async function getStaticPaths() {
 
 const { guideId } = Astro.params;
 const { guide } = Astro.props;
-const { frontmatter: guideData } = guide;
+const { frontmatter: guideData, author } = guide;
+
+const ogImageUrl = `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(
+  {
+    type: 'guide',
+    title: guideData.title,
+    description: guideData.description,
+    authorName: author.frontmatter?.name,
+    authorAvatar: author.frontmatter?.imageUrl || '',
+  },
+)}`;
 ---
 
 <BaseLayout
@@ -29,6 +39,7 @@ const { frontmatter: guideData } = guide;
   description={guideData.seo.description}
   permalink={`/guides/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide} />
 

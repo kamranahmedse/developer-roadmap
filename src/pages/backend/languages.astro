@@ -7,7 +7,17 @@ import { getGuideById } from '../../lib/guide';
 const guideId = 'backend-languages';
 const guide = await getGuideById('backend-languages');
 
-const { frontmatter: guideData } = guide;
+const { frontmatter: guideData, author } = guide!;
+
+const ogImageUrl = `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(
+  {
+    type: 'guide',
+    title: guideData.title,
+    description: guideData.description,
+    authorName: author.frontmatter?.name,
+    authorAvatar: author.frontmatter?.imageUrl || '',
+  },
+)}`;
 ---
 
 <BaseLayout
@@ -15,8 +25,9 @@ const { frontmatter: guideData } = guide;
   description={guideData.seo.description}
   permalink={`/backend/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
 >
-  <GuideHeader guide={guide} />
+  <GuideHeader guide={guide!} />
 
   <div class='mx-auto max-w-[700px] py-5 sm:py-10'>
     <MarkdownFile>
