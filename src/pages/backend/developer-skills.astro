@@ -8,14 +8,11 @@ import { getOpenGraphImageUrl } from '../../lib/open-graph';
 const guideId = 'backend-developer-skills';
 const guide = await getGuideById(guideId);
 
-const { frontmatter: guideData, author } = guide!;
+const { frontmatter: guideData } = guide!;
 
 const ogImageUrl = getOpenGraphImageUrl({
-  type: 'guide',
-  title: guideData.title,
-  description: guideData.description,
-  authorName: author.frontmatter?.name,
-  authorAvatar: author.frontmatter?.imageUrl || '',
+  type: 'guides',
+  guideId,
 });
 ---
 
