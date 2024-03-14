@@ -44,4 +44,30 @@ Runtime configuration options allow you to customize the behavior and resources 
   docker run --hostname=my-container --dns=8.8.8.8 your-image
   ```
 
+  
+### Cgroup
+- Cgroups are a Linux kernel feature that enables the allocation and management of system resources among processes.
+- Docker leverages cgroups to provide resource isolation and limitation for containers.
+- Docker automatically creates and manages cgroups for containers based on the resource constraints specified during container creation.
+- You can view the cgroup information for a running Docker container using the `docker inspect` command.
+  
+  ```bash
+  docker inspect --format '{{.HostConfig.CgroupParent}}' <container_id>
+  ```
+
+### Cgroup V2
+- Cgroup v2 is the next version of cgroups and brings improvements and changes to the original cgroups implementation.
+- It introduces a unified hierarchy that simplifies the management of resources and provides a more consistent interface.
+- To enable Cgroup v2 in Docker, you can use the `systemd.unified_cgroup_hierarchy` kernel parameter. Ensure it's set to 1 in your system.
+- Start Docker with the unified cgroup hierarchy:
+  
+  ```bash
+  dockerd --exec-opt native.cgroupdriver=systemd
+  ```
+- View the cgroup information with cgroup v2 enabled:
+  
+  ```bash
+  docker inspect --format '{{.HostConfig.CgroupNamespace}}' <container_id>
+  ```
+  
 Including these runtime configuration options will allow you to effectively manage your containers' resources, security, and networking needs. For a full list of available runtime configuration options, refer to Docker's [official documentation](https://docs.docker.com/engine/reference/run/).
