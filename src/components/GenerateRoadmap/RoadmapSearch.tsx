@@ -12,6 +12,8 @@ import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
 import { useState } from 'react';
 import { OpenAISettings } from './OpenAISettings.tsx';
+import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
+import { setUrlParams } from '../../lib/browser.ts';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -78,15 +80,15 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           }}
           className="flex w-full flex-col gap-2 sm:flex-row"
         >
-          <input
-            autoFocus
-            type="text"
-            placeholder="Enter a topic to generate a roadmap for"
-            className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
+          <AITermSuggestionInput
+            autoFocus={true}
             value={roadmapTerm}
-            onInput={(e) =>
-              setRoadmapTerm((e.target as HTMLInputElement).value)
-            }
+            onValueChange={(value) => setRoadmapTerm(value)}
+            placeholder="Enter a topic to generate a roadmap for"
+            wrapperClassName="w-full"
+            onSelect={(roadmapId) => {
+              setUrlParams({ id: roadmapId });
+            }}
           />
           <button
             className={cn(
