@@ -10,6 +10,7 @@ import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
+import { Loader2 } from 'lucide-react';
 
 type GetTopAIRoadmapTermResponse = {
   _id: string;
@@ -24,7 +25,10 @@ type AITermSuggestionInputProps = {
   inputClassName?: string;
   wrapperClassName?: string;
   placeholder?: string;
-} & Omit<InputHTMLAttributes<HTMLInputElement>, 'onSelect' | 'onChange'>;
+} & Omit<
+  InputHTMLAttributes<HTMLInputElement>,
+  'onSelect' | 'onChange' | 'className'
+>;
 
 export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
   const {
@@ -47,6 +51,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const [isActive, setIsActive] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const [searchResults, setSearchResults] =
     useState<GetTopAIRoadmapTermResponse>([]);
   const [searchedText, setSearchedText] = useState(defaultValue);
@@ -87,9 +92,11 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     }
 
     setIsActive(true);
+    setIsLoading(true);
     loadTopAIRoadmapTerm().then((results) => {
       setSearchResults(results?.slice(0, 5) || []);
       setActiveCounter(0);
+      setIsLoading(false);
     });
   }, [debouncedSearchValue]);
 
@@ -103,9 +110,9 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         {...inputProps}
         ref={searchInputRef}
         type="text"
-        value={searchedText}
+        value={defaultValue}
         className={cn(
-          'w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none',
+          'w-full rounded-md border border-gray-400 px-3 py-2.5 pr-8 transition-colors focus:border-black focus:outline-none',
           inputClassName,
         )}
         placeholder={placeholder}
@@ -146,7 +153,13 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         }}
       />
 
-      {isActive && searchResults.length > 0 && (
+      {isLoading && (
+        <div className="absolute right-2 top-0 flex h-full items-center">
+          <Loader2 className="h-5 w-5 animate-spin stroke-[2.5]" />
+        </div>
+      )}
+
+      {isActive && searchResults.length > 0 && searchedText.length > 0 && (
         <div
           className="absolute top-full z-50 mt-1 w-full rounded-md border bg-white px-2 py-2 shadow"
           ref={dropdownRef}

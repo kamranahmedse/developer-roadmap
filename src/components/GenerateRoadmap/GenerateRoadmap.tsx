@@ -36,6 +36,7 @@ import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
+import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -197,7 +198,7 @@ export function GenerateRoadmap() {
       return;
     }
 
-    if (roadmapTerm === currentRoadmap?.topic) {
+    if (roadmapTerm === currentRoadmap?.term) {
       return;
     }
 
@@ -293,7 +294,8 @@ export function GenerateRoadmap() {
     pageProgressMessage.set('Loading Roadmap');
 
     const { response, error } = await httpGet<{
-      topic: string;
+      term: string;
+      title: string;
       data: string;
     }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap/${roadmapId}`);
 
@@ -516,15 +518,15 @@ export function GenerateRoadmap() {
                 onSubmit={handleSubmit}
                 className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
               >
-                <input
-                  type="text"
-                  autoFocus
-                  placeholder="e.g. Try searching for Ansible or DevOps"
-                  className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
+                <AITermSuggestionInput
+                  autoFocus={true}
                   value={roadmapTerm}
-                  onInput={(e) =>
-                    setRoadmapTerm((e.target as HTMLInputElement).value)
-                  }
+                  onValueChange={(value) => setRoadmapTerm(value)}
+                  placeholder="e.g. Try searching for Ansible or DevOps"
+                  wrapperClassName="grow"
+                  onSelect={(id) => {
+                    setUrlParams({ id });
+                  }}
                 />
                 <button
                   type={'submit'}
