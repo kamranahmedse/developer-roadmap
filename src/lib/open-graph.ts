@@ -2,7 +2,6 @@ type RoadmapOpenGraphQuery = {
   type: 'roadmaps' | 'guides' | 'best-practices';
   variant?: 'default' | 'image';
   resourceId?: string;
-  guideId?: string;
 };
 
 export function getOpenGraphImageUrl(params: RoadmapOpenGraphQuery) {
