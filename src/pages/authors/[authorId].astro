@@ -2,10 +2,10 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
 import { getGuidesByAuthor } from '../../lib/guide';
-import {getAllVideos, getVideosByAuthor} from '../../lib/video';
+import { getAllVideos, getVideosByAuthor } from '../../lib/video';
 import GuideListItem from '../../components/GuideListItem.astro';
 import { getAuthorById, getAuthorIds } from '../../lib/author';
-import VideoListItem from "../../components/VideoListItem.astro";
+import VideoListItem from '../../components/VideoListItem.astro';
 
 interface Params extends Record<string, string | undefined> {}
 
@@ -19,11 +19,9 @@ export async function getStaticPaths() {
 
 const { authorId } = Astro.params;
 
-console.log(authorId);
-
 const author = await getAuthorById(authorId);
+const authorFrontmatter = author.frontmatter;
 
-console.log(author);
 const guides = await getGuidesByAuthor(authorId);
 const videos = await getVideosByAuthor(authorId);
 ---
@@ -35,14 +33,37 @@ const videos = await getVideosByAuthor(authorId);
   ogImageUrl={`https://roadmap.sh/${author.frontmatter.imageUrl}`}
   description={`${author.frontmatter.name} has written ${guides.length} articles on roadmap.sh on a variety of topics.`}
   noIndex={false}
+  jsonLd={[
+    {
+      '@context': 'https://schema.org/',
+      '@type': 'Person',
+      name: authorFrontmatter.name,
+      url: `https://roadmap.sh/authors/${authorId}`,
+      image: authorFrontmatter.imageUrl.startsWith('http')
+        ? authorFrontmatter.imageUrl
+        : `https://roadmap.sh${authorFrontmatter.imageUrl}`,
+      sameAs: authorFrontmatter.social
+        ? Object.values(authorFrontmatter.social)
+        : [],
+      ...(authorFrontmatter.employment && {
+        jobTitle: authorFrontmatter.employment?.title,
+        worksFor: {
+          '@type': 'Organization',
+          name: authorFrontmatter.employment.company,
+        },
+      }),
+    },
+  ]}
 >
-  <div class='container pt-4 pb-0 md:pb-16 md:pt-8'>
+  <div class='container pb-0 pt-4 md:pb-16 md:pt-8'>
     <div class=''>
       <div class='mb-5 flex items-center gap-8 rounded-3xl py-0 md:py-8'>
-        <div class="flex-grow">
-          <h1 class='text-2xl md:text-3xl font-bold'>{author.frontmatter.name}</h1>
+        <div class='flex-grow'>
+          <h1 class='text-2xl font-bold md:text-3xl'>
+            {authorFrontmatter.name}
+          </h1>
           <div
-            class='mt-1 mb-4 md:mt-4 md:mb-6 flex flex-col gap-3 text-gray-800 [&>p>a]:font-semibold [&>p>a]:underline leading-normal'
+            class='mb-4 mt-1 flex flex-col gap-3 leading-normal text-gray-800 md:mb-6 md:mt-4 [&>p>a]:font-semibold [&>p>a]:underline'
           >
             <author.Content />
           </div>
@@ -50,9 +71,9 @@ const videos = await getVideosByAuthor(authorId);
           <div class='flex items-center justify-between'>
             <div class='flex items-center gap-1.5'>
               {
-                author.frontmatter.social?.github && (
+                authorFrontmatter.social?.github && (
                   <a
-                    href={author.frontmatter.social.github}
+                    href={authorFrontmatter.social.github}
                     target='_blank'
                     class='text-gray-500 transition-colors hover:text-gray-800'
                   >
@@ -61,9 +82,9 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                author.frontmatter.social.twitter && (
+                authorFrontmatter.social.twitter && (
                   <a
-                    href={author.frontmatter.social.twitter}
+                    href={authorFrontmatter.social.twitter}
                     target='_blank'
                     class='text-gray-500 transition-colors hover:text-gray-800'
                   >
@@ -72,9 +93,9 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                author.frontmatter.social.linkedin && (
+                authorFrontmatter.social.linkedin && (
                   <a
-                    href={author.frontmatter.social.linkedin}
+                    href={authorFrontmatter.social.linkedin}
                     target='_blank'
                     class='text-gray-500 transition-colors hover:text-gray-800'
                   >
@@ -83,9 +104,9 @@ const videos = await getVideosByAuthor(authorId);
                 )
               }
               {
-                author.frontmatter.social.website && (
+                authorFrontmatter.social.website && (
                   <a
-                    href={author.frontmatter.social.website}
+                    href={authorFrontmatter.social.website}
                     target='_blank'
                     class='text-gray-500 transition-colors hover:text-gray-800'
                   >
@@ -100,7 +121,7 @@ const videos = await getVideosByAuthor(authorId);
           <img
             alt="Kamran Ahmed's profile picture"
             class='block h-[175px] w-[175px] rounded-full bg-gray-100'
-            src={author.frontmatter.imageUrl}
+            src={authorFrontmatter.imageUrl}
           />
         </div>
       </div>

@@ -3,6 +3,10 @@ import type { MarkdownFileType } from './file';
 export interface AuthorFrontmatter {
   name: string;
   imageUrl: string;
+  employment?: {
+    title: string;
+    company: string;
+  };
   social: {
     twitter: string;
     github: string;
