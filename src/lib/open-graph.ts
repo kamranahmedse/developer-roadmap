@@ -1,9 +1,8 @@
 type RoadmapOpenGraphQuery = {
-  type: 'roadmaps' | 'guides' | 'best-practices';
-  variant?: 'default' | 'image';
-  resourceId?: string;
+  group: 'roadmaps' | 'guides' | 'best-practices';
+  resourceId: string;
 };
 
 export function getOpenGraphImageUrl(params: RoadmapOpenGraphQuery) {
-  return `${import.meta.env.PUBLIC_API_URL}/v1-open-graph?${new URLSearchParams(params)}`;
+  return `${import.meta.env.DEV ? 'http://localhost:3000' : 'https://roadmap.sh'}/og-images/${params.group}/${params.resourceId}.png`;
 }

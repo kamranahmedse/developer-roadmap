@@ -11,7 +11,7 @@ const guide = await getGuideById('backend-languages');
 const { frontmatter: guideData } = guide!;
 
 const ogImageUrl = getOpenGraphImageUrl({
-  type: 'guides',
+  group: 'guides',
   resourceId: guideId,
 });
 ---

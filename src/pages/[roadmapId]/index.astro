@@ -57,11 +57,12 @@ if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
 }
 
-const ogImageUrl = getOpenGraphImageUrl({
-  type: 'roadmaps',
-  resourceId: roadmapId,
-  variant: 'image',
-});
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmaps',
+    resourceId: roadmapId,
+  });
 ---
 
 <BaseLayout
