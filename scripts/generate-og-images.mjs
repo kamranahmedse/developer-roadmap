@@ -184,7 +184,16 @@ async function generateResourceOpenGraph() {
 
   for (const resource of resources) {
     if (!resource.image) {
-      const template = getRoadmapDefaultTemplate(resource);
+      let template = getRoadmapDefaultTemplate(resource);
+      if (
+        hasSpecialCharacters(resource.title) ||
+        hasSpecialCharacters(resource.description)
+      ) {
+        // For some reason special characters are not being rendered properly
+        // https://github.com/natemoo-re/satori-html/issues/20
+        // So we need to unescape the html
+        template = JSON.parse(unescapeHtml(JSON.stringify(template)));
+      }
       await generateOpenGraph(
         template,
         resource.type,
@@ -193,19 +202,29 @@ async function generateResourceOpenGraph() {
       );
     } else {
       const image = await fs.readFile(resource.image);
-
       const dimensions = imageSize(image);
 
       const widthRatio = 1200 / dimensions.width;
       let width = dimensions.width * widthRatio * 0.85;
       let height = dimensions.height * widthRatio * 0.85;
 
-      const template = getRoadmapImageTemplate({
+      let template = getRoadmapImageTemplate({
         ...resource,
         image: `data:image/${dimensions.type};base64,${image.toString('base64')}`,
         width,
         height,
       });
+
+      if (
+        hasSpecialCharacters(resource.title) ||
+        hasSpecialCharacters(resource.description)
+      ) {
+        // For some reason special characters are not being rendered properly
+        // https://github.com/natemoo-re/satori-html/issues/20
+        // So we need to unescape the html
+        template = JSON.parse(unescapeHtml(JSON.stringify(template)));
+      }
+
       await generateOpenGraph(template, resource.type, resource.id + '.png');
     }
   }
@@ -236,6 +255,15 @@ async function generateGuideOpenGraph() {
         ? image
         : `data:image/${authorImageExtention};base64,${authorAvatar.toString('base64')}`,
     });
+    if (
+      hasSpecialCharacters(guide.title) ||
+      hasSpecialCharacters(guide.description)
+    ) {
+      // For some reason special characters are not being rendered properly
+      // https://github.com/natemoo-re/satori-html/issues/20
+      // So we need to unescape the html
+      template = JSON.parse(unescapeHtml(JSON.stringify(template)));
+    }
     await generateOpenGraph(template, 'guides', guide.id + '.png');
   }
 }
@@ -451,7 +479,9 @@ function getRoadmapImageTemplate({ title, description, image, height, width }) {
 
     <div tw="flex flex-col px-[90px] pt-[90px]">
       <div tw="flex flex-col pb-0">
-        <div tw="text-[70px] leading-[70px] tracking-tight">${title}</div>
+        <div tw="text-[70px] leading-[70px] tracking-tight">
+          ${title?.replace('&', `{"&"}`)}
+        </div>
         <div
           tw="mt-[16px] text-[30px] leading-[36px] tracking-tight opacity-80"
         >
@@ -508,4 +538,17 @@ function getGuideTemplate({ title, description, authorName, authorAvatar }) {
       </div>
     </div>
   </div> `;
+}
+
+function unescapeHtml(html) {
+  return html
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'");
+}
+
+function hasSpecialCharacters(str) {
+  return /[&<>"]/.test(str);
 }
