@@ -3,6 +3,7 @@ import { httpPatch } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import { cn } from '../../lib/classname';
+import { ArrowUpRight, X } from 'lucide-react';
 
 type UpdateEmailFormProps = {
   authProvider: string;
@@ -110,9 +111,27 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
       <div className="block">
         <h2 className="text-xl font-bold sm:text-2xl">Update Email</h2>
         <p className="mt-2 text-gray-400">
-          You're using a social login provider. To update your email, please
-          update your password first.
+          You're using a social login provider. Set your password first.
         </p>
+
+        <div className="mt-8 flex w-full flex-col">
+          <label
+            htmlFor="current-email"
+            className="text-sm leading-none text-slate-500"
+          >
+            Current Email
+          </label>
+          <input
+            type="email"
+            name="current-email"
+            id="current-email"
+            autoComplete="current-email"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            required
+            disabled
+            value={currentEmail}
+          />
+        </div>
       </div>
     );
   }
@@ -146,12 +165,42 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
           />
         </div>
         <div className="flex w-full flex-col">
-          <label
-            htmlFor="new-email"
-            className="text-sm leading-none text-slate-500"
-          >
-            New Email
-          </label>
+          <div className="flex items-center justify-between gap-2">
+            <label
+              htmlFor="new-email"
+              className="text-sm leading-none text-slate-500"
+            >
+              New Email
+            </label>
+
+            {isSubmitted && (
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  onClick={handleCancelEmailVerification}
+                  disabled={isLoading}
+                  className="flex items-center gap-1 text-sm leading-none text-gray-500 transition-colors hover:text-black"
+                >
+                  Cancel
+                </button>
+                <span aria-hidden={true} className="text-sm leading-none">
+                  &middot;
+                </span>
+                <button
+                  type="button"
+                  onClick={handleResendVerificationCode}
+                  disabled={isLoading || isResendDone}
+                  className="flex items-center gap-1 text-sm leading-none text-gray-500 transition-colors hover:text-black"
+                >
+                  <span className="hidden sm:block">
+                    Resend Verification Code
+                  </span>
+                  <span className="sm:hidden">Resend</span>
+                  <ArrowUpRight className="h-3.5 w-3.5" />
+                </button>
+              </div>
+            )}
+          </div>
           <input
             type="email"
             name="new-email"
@@ -171,38 +220,11 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
           disabled={
             isLoading || !newEmail || !newEmail.includes('@') || isSubmitted
           }
-          className={cn(
-            'inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400',
-            isSubmitted && 'hidden',
-          )}
+          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
           {isLoading ? 'Please wait...' : 'Send Verification Code'}
         </button>
       </form>
-      {isSubmitted && (
-        <div className="mt-4 space-y-4">
-          <p className="text-gray-400">
-            A verification code has been sent to your email. Please check your
-            inbox and verify your new email.
-          </p>
-          <div className="grid grid-cols-2 gap-2">
-            <button
-              onClick={handleCancelEmailVerification}
-              disabled={isLoading}
-              className="inline-flex items-center justify-center rounded-lg border-2 border-black p-2 py-3 text-sm font-medium outline-none transition-colors hover:bg-black hover:text-white focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-            >
-              {isLoading ? 'Please wait...' : 'Cancel'}
-            </button>
-            <button
-              onClick={handleResendVerificationCode}
-              disabled={isLoading || isResendDone}
-              className="inline-flex items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none hover:opacity-90 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-            >
-              {isLoading ? 'Please wait...' : 'Resend Verification Code'}
-            </button>
-          </div>
-        </div>
-      )}
     </>
   );
 }
