@@ -1,0 +1,10 @@
+---
+import AccountLayout from '../layouts/AccountLayout.astro';
+import { TriggerVerifyEmail } from '../components/AuthenticationFlow/TriggerVerifyEmail';
+---
+
+<AccountLayout title='Verify email' noIndex={true}>
+  <div class='container py-16'>
+    <TriggerVerifyEmail client:load />
+  </div>
+</AccountLayout>
