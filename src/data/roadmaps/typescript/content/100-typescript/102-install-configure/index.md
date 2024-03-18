@@ -35,7 +35,7 @@ npm install --save-dev typescript
 tsc
 ```
 
-Note: You can also compile individual TypeScript files by specifying the file name after the tsc command.For example:
+Note: You can also compile individual TypeScript files by specifying the file name after the tsc command. For example:
 
 ```bash
 tsc index.ts

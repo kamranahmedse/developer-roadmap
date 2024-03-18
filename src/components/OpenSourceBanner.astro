@@ -20,37 +20,15 @@ const discordInfo = await getDiscordInfo();
       > and is visited by hundreds of thousands of developers every month.
     </p>
 
-    <div class='my-5 sm:my-11 gap-2 sm:gap-0 grid grid-cols-1 sm:grid-cols-3 justify-between divide-x-0 sm:divide-x'>
+    <div
+      class='mt-5 grid grid-cols-1 justify-between gap-2 divide-x-0 sm:my-11 sm:grid-cols-3 sm:gap-0 sm:divide-x'
+    >
       <OpenSourceStat text='GitHub Stars' value={starCount} />
       <OpenSourceStat text='Registered Users' value={'850k'} />
       <OpenSourceStat
         text='Discord Members'
         value={discordInfo.totalFormatted}
       />
-    </div>
-
-    <div
-      class='mb-1.5 flex flex-col justify-start gap-2 sm:mb-0 sm:flex-row sm:justify-center sm:gap-3'
-    >
-      <a
-        href='https://github.com/kamranahmedse/developer-roadmap'
-        target='_blank'
-        class='inline-flex items-center rounded-lg border border-black bg-white px-3 py-1.5 text-sm hover:bg-black hover:text-white'
-      >
-        <Icon icon='star' class='-ml-1 mr-1 fill-current' />
-
-        <span class='lowercase'>{starCount}</span>
-        <span class='ml-2 hover:block'>Star on GitHub</span>
-      </a>
-
-      <a
-        href='https://discord.gg/cJpEt5Qbwa'
-        target='_blank'
-        class='pointer group relative inline-flex items-center rounded-lg border border-black bg-white px-3 py-1.5 text-sm hover:bg-black hover:text-white'
-      >
-        <Icon icon='discord' class='-ml-1 mr-2 h-[14px] fill-current' />
-        Join on Discord
-      </a>
     </div>
   </div>
 </div>

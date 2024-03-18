@@ -1,10 +1,7 @@
 ---
 title: 'Character Encodings'
 description: 'Covers the basics of character encodings and explains ASCII vs Unicode'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Character Encodings - roadmap.sh'
   description: 'Covers the basics of character encodings and explains ASCII vs Unicode'

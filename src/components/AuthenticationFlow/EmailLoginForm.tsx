@@ -2,7 +2,7 @@ import Cookies from 'js-cookie';
 import type { FormEvent } from 'react';
 import { useState } from 'react';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 
 type EmailLoginFormProps = {
   isDisabled?: boolean;
@@ -34,11 +34,7 @@ export function EmailLoginForm(props: EmailLoginFormProps) {
 
     // Log the user in and reload the page
     if (response?.token) {
-      Cookies.set(TOKEN_COOKIE_NAME, response.token, {
-        path: '/',
-        expires: 30,
-        domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-      });
+      setAuthToken(response.token);
       window.location.reload();
 
       return;

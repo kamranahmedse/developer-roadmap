@@ -33,7 +33,7 @@ WHERE  column_name OPERATOR
    WHERE roll_id = (SELECT roll_id FROM student WHERE name='John');
    ```
 
-2. **Row subquery**: It returns single row of two or more values. 
+2. **Row subquery**: It returns a single row or multiple rows of two or more values. 
 
    ```sql
    SELECT * FROM student 

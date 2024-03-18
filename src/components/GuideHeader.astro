@@ -6,28 +6,32 @@ export interface Props {
 }
 
 const { guide } = Astro.props;
-const { frontmatter } = guide;
-const { author } = frontmatter;
+const { frontmatter, author } = guide;
 ---
 
-<div class='bg-white border-b py-5 sm:py-12'>
+<div class='border-b bg-white py-5 sm:py-12'>
   <div class='container text-left sm:text-center'>
     <p
-      class='text-gray-400 hidden sm:flex items-center justify-start sm:justify-center'
+      class='hidden items-center justify-start text-gray-400 sm:flex sm:justify-center'
     >
-      <a
-        href={author.url}
-        target='_blank'
-        class='font-medium hover:text-gray-600 inline-flex items-center hover:underline'
-      >
-        <img
-          alt={author.name}
-          src={author.imageUrl}
-          class='w-5 h-5 inline mr-2 rounded-full'
-        />
-        {author.name}
-      </a>
-      <span class='mx-1.5'>&middot;</span>
+      {
+        author?.frontmatter && (
+          <>
+            <a
+              href={`/authors/${author.id}`}
+              class='inline-flex items-center font-medium hover:text-gray-600 hover:underline'
+            >
+              <img
+                alt={author.frontmatter.name}
+                src={author.frontmatter.imageUrl}
+                class='mr-2 inline h-5 w-5 rounded-full'
+              />
+              {author.frontmatter.name}
+            </a>
+            <span class='mx-1.5'>&middot;</span>
+          </>
+        )
+      }
       <span class='capitalize'>{frontmatter.type} Guide</span>
       <span class='mx-1.5'>&middot;</span>
       <a
@@ -36,10 +40,10 @@ const { author } = frontmatter;
         target='_blank'>Improve this Guide</a
       >
     </p>
-    <h1 class='text-2xl sm:text-5xl my-0 sm:my-3.5 font-bold'>
+    <h1 class='my-0 text-2xl font-bold sm:my-3.5 sm:text-5xl'>
       {frontmatter.title}
     </h1>
-    <p class='hidden sm:block text-gray-400 text-xl'>
+    <p class='hidden text-xl text-gray-400 sm:block'>
       {frontmatter.description}
     </p>
   </div>

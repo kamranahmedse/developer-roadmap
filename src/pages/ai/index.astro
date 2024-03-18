@@ -1,0 +1,10 @@
+---
+import LoginPopup from '../../components/AuthenticationFlow/LoginPopup.astro';
+import { GenerateRoadmap } from '../../components/GenerateRoadmap/GenerateRoadmap';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout title='Roadmap AI'>
+  <GenerateRoadmap client:load />
+  <LoginPopup />
+</AccountLayout>
