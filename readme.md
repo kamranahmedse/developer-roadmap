@@ -101,15 +101,15 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 Clone the repository, install the dependencies and start the application
 
 ```bash
-1. git clone git@github.com:kamranahmedse/developer-roadmap.git
-2. npm install
-3. npm run dev
+1 -> git clone git@github.com:kamranahmedse/developer-roadmap.git
+2 -> npm install
+3 -> npm run dev
 ```
 
 Note: use the `depth` parameter to reduce the clone size and speed up the clone.
 
 ```sh
-1. git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
+1 -> git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
 ```
 
 ## Contribution:
