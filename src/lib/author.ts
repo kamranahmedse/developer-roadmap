@@ -38,7 +38,6 @@ export async function getAuthorIds() {
     },
   );
 
-  console.log(Object.keys(authorFiles));
   return Object.keys(authorFiles).map(authorPathToId);
 }
 

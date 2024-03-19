@@ -3,18 +3,25 @@ import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 const guideId = 'backend-developer-skills';
 const guide = await getGuideById(guideId);
 
-const { frontmatter: guideData } = guide;
+const { frontmatter: guideData } = guide!;
+
+const ogImageUrl = getOpenGraphImageUrl({
+  group: 'guides',
+  resourceId: guideId,
+});
 ---
 
 <BaseLayout
-title={guideData.seo.title}
-description={guideData.seo.description}
-permalink={`/backend/${guideId}`}
-canonicalUrl={guideData.canonicalUrl}
+  title={guideData.seo.title}
+  description={guideData.seo.description}
+  permalink={`/backend/${guideId}`}
+  canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide} />
 

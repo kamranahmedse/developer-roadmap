@@ -3,11 +3,17 @@ import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 const guideId = 'backend-languages';
 const guide = await getGuideById('backend-languages');
 
-const { frontmatter: guideData } = guide;
+const { frontmatter: guideData } = guide!;
+
+const ogImageUrl = getOpenGraphImageUrl({
+  group: 'guides',
+  resourceId: guideId,
+});
 ---
 
 <BaseLayout
@@ -15,8 +21,9 @@ const { frontmatter: guideData } = guide;
   description={guideData.seo.description}
   permalink={`/backend/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
 >
-  <GuideHeader guide={guide} />
+  <GuideHeader guide={guide!} />
 
   <div class='mx-auto max-w-[700px] py-5 sm:py-10'>
     <MarkdownFile>
