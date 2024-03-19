@@ -145,7 +145,10 @@ const gaPageIdentifier = Astro.url.pathname
     <slot name='after-header' />
     {
       jsonLd.length > 0 && (
-        <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />
+        <script
+          type='application/ld+json'
+          set:html={JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)}
+        />
       )
     }
   </head>
