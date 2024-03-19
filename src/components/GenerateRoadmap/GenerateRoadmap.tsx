@@ -168,10 +168,13 @@ export function GenerateRoadmap() {
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
           setUrlParams({ id: roadmapId });
           result = result.replace(ROADMAP_ID_REGEX, '');
+          const roadmapTitle =
+            result.trim().split('\n')[0]?.replace('#', '')?.trim() || term;
+          setRoadmapTerm(roadmapTitle);
           setCurrentRoadmap({
             id: roadmapId,
             term: roadmapTerm,
-            title: term,
+            title: roadmapTitle,
             data: result,
           });
         }

@@ -253,7 +253,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             >
               {limitUsed} of {limit}
             </span>{' '}
-            roadmaps.
+            roadmaps today.
           </p>
           {isAuthenticatedUser && (
             <p className="flex items-center text-sm">
