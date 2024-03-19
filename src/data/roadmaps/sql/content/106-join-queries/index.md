@@ -55,4 +55,15 @@ WHERE A.CustomerID <> B.CustomerID
 AND A.City = B.City;
 ```
 
+## NATURAL JOIN:
+
+The natural join is akin to an inner join, automatically linking two columns based on identical names.
+Note: Columns should have same data type in both tables
+
+```sql
+SELECT *
+FROM Customers
+NATURAL JOIN Orders;
+```
+
 **Note**: JOINS can be used with SELECT, UPDATE, and DELETE statements.
