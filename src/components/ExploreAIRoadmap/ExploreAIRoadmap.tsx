@@ -1,11 +1,11 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { httpGet } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
 import { Eye, Loader2, RefreshCcw } from 'lucide-react';
 import { AIRoadmapAlert } from '../GenerateRoadmap/AIRoadmapAlert.tsx';
 import { ExploreAISearch } from './ExploreAISearch.tsx';
-import { flushSync } from 'react-dom';
+import { formatCommaNumber } from '../../lib/number.ts';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -29,49 +29,37 @@ export function ExploreAIRoadmap() {
   const toast = useToast();
 
   const [isLoading, setIsLoading] = useState(true);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const [roadmaps, setRoadmaps] = useState<AIRoadmapDocument[]>([]);
-  const [currPage, setCurrPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
+  const [roadmapsResponse, setRoadmapsResponse] =
+    useState<ExploreRoadmapsResponse | null>(null);
 
-  const loadAIRoadmaps = useCallback(
-    async (
-      currPage: number,
-      term: string = '',
-      sort: string = '',
-      shouldMerge: boolean = true,
-    ) => {
-      const { response, error } = await httpGet<ExploreRoadmapsResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
-        {
-          currPage,
-          ...(term && { term }),
-          ...(sort && { sort }),
-        },
-      );
+  const loadAIRoadmaps = async (
+    currPage: number,
+    term: string = '',
+    sort: string = '',
+  ) => {
+    const { response, error } = await httpGet<ExploreRoadmapsResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
+      {
+        currPage,
+        ...(term && { term }),
+        ...(sort && { sort }),
+      },
+    );
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      return;
+    }
 
-      if (error || !response) {
-        toast.error(error?.message || 'Something went wrong');
-        return;
-      }
+    setRoadmapsResponse(response);
+  };
 
-      let newRoadmaps = response.data;
-      if (shouldMerge) {
-        newRoadmaps = [...roadmaps, ...response.data];
-        if (
-          JSON.stringify(roadmaps) === JSON.stringify(response.data) ||
-          JSON.stringify(roadmaps) === JSON.stringify(newRoadmaps)
-        ) {
-          return;
-        }
-      }
+  const currPage = roadmapsResponse?.currPage || 1;
+  const totalPages = roadmapsResponse?.totalPages || 1;
+  const totalCount = roadmapsResponse?.totalCount || 0;
 
-      setRoadmaps(newRoadmaps);
-      setCurrPage(response.currPage);
-      setTotalPages(response.totalPages);
-    },
-    [currPage, roadmaps],
-  );
+  const perPage = roadmapsResponse?.perPage || 0;
+  const hasNextPage = currPage < totalPages;
+  const hasPrevPage = currPage > 1;
 
   useEffect(() => {
     loadAIRoadmaps(currPage).finally(() => {
@@ -79,7 +67,51 @@ export function ExploreAIRoadmap() {
     });
   }, []);
 
-  const hasMorePages = currPage < totalPages;
+  const roadmaps = roadmapsResponse?.data || [];
+
+  const paginationBar = (
+    <div className="mb-4 flex items-center justify-between">
+      <div className="flex items-center gap-2">
+        {hasPrevPage && (
+          <button
+            className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
+            onClick={() => {
+              loadAIRoadmaps(currPage - 1).finally(() => {
+                setIsLoading(false);
+              });
+            }}
+            disabled={isLoading}
+          >
+            &larr;
+          </button>
+        )}
+        {hasNextPage && (
+          <button
+            className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
+            onClick={() => {
+              loadAIRoadmaps(currPage + 1).finally(() => {
+                setIsLoading(false);
+              });
+            }}
+            disabled={isLoading}
+          >
+            &rarr;
+          </button>
+        )}
+
+        <p className="text-sm">
+          Showing {formatCommaNumber((currPage - 1) * perPage)} to{' '}
+          {formatCommaNumber((currPage - 1) * perPage + roadmaps.length)} of{' '}
+          {formatCommaNumber(totalCount)} entries
+        </p>
+      </div>
+      <div className="flex items-center text-sm">
+        <p>
+          Page {formatCommaNumber(currPage)} of {formatCommaNumber(totalPages)}
+        </p>
+      </div>
+    </div>
+  );
 
   return (
     <section className="container mx-auto py-3 sm:py-6">
@@ -90,12 +122,9 @@ export function ExploreAIRoadmap() {
       <ExploreAISearch
         onSubmit={(term, sort) => {
           setIsLoading(true);
-          setRoadmaps([]);
-          loadAIRoadmaps(1, term, sort, false).finally(() => {
-            setIsLoading(false);
-          });
         }}
       />
+      {paginationBar}
 
       {isLoading ? (
         <ul className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
@@ -112,7 +141,7 @@ export function ExploreAIRoadmap() {
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
             <>
-              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+              <ul className="mb-4 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
                 {roadmaps.map((roadmap) => {
                   const roadmapLink = `/ai?id=${roadmap._id}`;
                   return (
@@ -141,27 +170,7 @@ export function ExploreAIRoadmap() {
                   );
                 })}
               </ul>
-              {hasMorePages && (
-                <div className="my-5 flex items-center justify-center">
-                  <button
-                    onClick={() => {
-                      setIsLoadingMore(true);
-                      loadAIRoadmaps(currPage + 1).finally(() => {
-                        setIsLoadingMore(false);
-                      });
-                    }}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-black px-3 py-1.5 text-sm font-medium text-white shadow-xl transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    disabled={isLoadingMore}
-                  >
-                    {isLoadingMore ? (
-                      <Loader2 className="h-4 w-4 animate-spin stroke-[2.5]" />
-                    ) : (
-                      <RefreshCcw className="h-4 w-4 stroke-[2.5]" />
-                    )}
-                    Load More
-                  </button>
-                </div>
-              )}
+              {paginationBar}
             </>
           )}
         </div>
