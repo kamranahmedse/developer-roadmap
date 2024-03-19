@@ -11,6 +11,7 @@ import { useDebounceValue } from '../../hooks/use-debounce';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { Loader2 } from 'lucide-react';
+import {Spinner} from "../ReactIcons/Spinner.tsx";
 
 type GetTopAIRoadmapTermResponse = {
   _id: string;
@@ -154,8 +155,8 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
       />
 
       {isLoading && (
-        <div className="absolute right-2 top-0 flex h-full items-center">
-          <Loader2 className="h-5 w-5 animate-spin stroke-[2.5]" />
+        <div className="absolute right-3 top-0 flex h-full items-center">
+          <Spinner isDualRing={false} className="h-5 w-5 animate-spin stroke-[2.5]" />
         </div>
       )}
 
