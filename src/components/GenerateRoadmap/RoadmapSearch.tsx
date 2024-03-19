@@ -1,12 +1,11 @@
 import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
-import { useEffect, useState } from 'react';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
-import { setUrlParams } from '../../lib/browser.ts';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -35,11 +34,12 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
   const [isConfiguring, setIsConfiguring] = useState(false);
   const [openAPIKey, setOpenAPIKey] = useState('');
   const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
+  const [isLoadingResults, setIsLoadingResults] = useState(false);
 
   useEffect(() => {
     setOpenAPIKey(getOpenAIKey() || '');
     setIsAuthenticatedUser(isLoggedIn());
-  }, [getOpenAIKey(), isLoggedIn()]);
+  }, []);
 
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
@@ -84,8 +84,8 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             onValueChange={(value) => setRoadmapTerm(value)}
             placeholder="Enter a topic to generate a roadmap for"
             wrapperClassName="w-full"
-            onSelect={(roadmapId) => {
-              setUrlParams({ id: roadmapId });
+            onSelect={(roadmapId, roadmapTitle) => {
+              onLoadTerm(roadmapTitle);
             }}
           />
           <button
@@ -100,33 +100,44 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
               }
             }}
             disabled={
-              isAuthenticatedUser &&
-              (!limit ||
-                !roadmapTerm ||
-                limitUsed >= limit ||
-                (isKeyOnly && !openAPIKey))
+              isLoadingResults ||
+              (isAuthenticatedUser &&
+                (!limit ||
+                  !roadmapTerm ||
+                  limitUsed >= limit ||
+                  (isKeyOnly && !openAPIKey)))
             }
           >
-            {!isAuthenticatedUser && (
+            {isLoadingResults && (
               <>
-                <Wand size={20} />
-                Generate
+                <span>Please wait..</span>
               </>
             )}
-            {isAuthenticatedUser && (
+
+            {!isLoadingResults && (
               <>
-                {(!limit || canGenerateMore) && (
+                {!isAuthenticatedUser && (
                   <>
                     <Wand size={20} />
                     Generate
                   </>
                 )}
+                {isAuthenticatedUser && (
+                  <>
+                    {(!limit || canGenerateMore) && (
+                      <>
+                        <Wand size={20} />
+                        Generate
+                      </>
+                    )}
 
-                {limit > 0 && !canGenerateMore && (
-                  <span className="flex items-center text-base">
-                    <Ban size={15} className="mr-2" />
-                    Limit reached
-                  </span>
+                    {limit > 0 && !canGenerateMore && (
+                      <span className="flex items-center text-base">
+                        <Ban size={15} className="mr-2" />
+                        Limit reached
+                      </span>
+                    )}
+                  </>
                 )}
               </>
             )}

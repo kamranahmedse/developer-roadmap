@@ -37,6 +37,7 @@ import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
+import { useParams } from '../../hooks/use-params.ts';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -91,6 +92,7 @@ export function GenerateRoadmap() {
 
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingResults, setIsLoadingResults] = useState(false);
   const [roadmapTerm, setRoadmapTerm] = useState('');
   const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
@@ -194,7 +196,7 @@ export function GenerateRoadmap() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!roadmapTerm) {
+    if (!roadmapTerm || isLoadingResults) {
       return;
     }
 
@@ -481,7 +483,7 @@ export function GenerateRoadmap() {
                     >
                       {roadmapLimitUsed} of {roadmapLimit}
                     </span>{' '}
-                    roadmaps generated.
+                    roadmaps generated today.
                   </span>
                   {!openAPIKey && (
                     <button
@@ -523,8 +525,8 @@ export function GenerateRoadmap() {
                   onValueChange={(value) => setRoadmapTerm(value)}
                   placeholder="e.g. Try searching for Ansible or DevOps"
                   wrapperClassName="grow"
-                  onSelect={(id) => {
-                    setUrlParams({ id });
+                  onSelect={(id, title) => {
+                    loadTermRoadmap(title).finally(() => null);
                   }}
                 />
                 <button
@@ -540,37 +542,47 @@ export function GenerateRoadmap() {
                     }
                   }}
                   disabled={
-                    isAuthenticatedUser &&
-                    (!roadmapLimit ||
-                      !roadmapTerm ||
-                      roadmapLimitUsed >= roadmapLimit ||
-                      roadmapTerm === currentRoadmap?.term ||
-                      (isKeyOnly && !openAPIKey))
+                    isLoadingResults ||
+                    (isAuthenticatedUser &&
+                      (!roadmapLimit ||
+                        !roadmapTerm ||
+                        roadmapLimitUsed >= roadmapLimit ||
+                        roadmapTerm === currentRoadmap?.term ||
+                        (isKeyOnly && !openAPIKey)))
                   }
                 >
-                  {!isAuthenticatedUser && (
+                  {isLoadingResults && (
                     <>
-                      <Wand size={20} />
-                      Generate
+                      <span>Please wait..</span>
                     </>
                   )}
-
-                  {isAuthenticatedUser && (
+                  {!isLoadingResults && (
                     <>
-                      {roadmapLimit > 0 && canGenerateMore && (
+                      {!isAuthenticatedUser && (
                         <>
                           <Wand size={20} />
                           Generate
                         </>
                       )}
 
-                      {roadmapLimit === 0 && <span>Please wait..</span>}
+                      {isAuthenticatedUser && (
+                        <>
+                          {roadmapLimit > 0 && canGenerateMore && (
+                            <>
+                              <Wand size={20} />
+                              Generate
+                            </>
+                          )}
 
-                      {roadmapLimit > 0 && !canGenerateMore && (
-                        <span className="flex items-center">
-                          <Ban size={15} className="mr-2" />
-                          Limit reached
-                        </span>
+                          {roadmapLimit === 0 && <span>Please wait..</span>}
+
+                          {roadmapLimit > 0 && !canGenerateMore && (
+                            <span className="flex items-center">
+                              <Ban size={15} className="mr-2" />
+                              Limit reached
+                            </span>
+                          )}
+                        </>
                       )}
                     </>
                   )}

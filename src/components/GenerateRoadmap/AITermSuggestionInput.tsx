@@ -1,16 +1,15 @@
 import {
+  type InputHTMLAttributes,
   useEffect,
   useMemo,
   useRef,
   useState,
-  type InputHTMLAttributes,
 } from 'react';
 import { cn } from '../../lib/classname';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useDebounceValue } from '../../hooks/use-debounce';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
-import { Loader2 } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 import type { PageType } from '../CommandMenu/CommandMenu.tsx';
 
@@ -24,7 +23,7 @@ type GetTopAIRoadmapTermResponse = {
 type AITermSuggestionInputProps = {
   value: string;
   onValueChange: (value: string) => void;
-  onSelect?: (roadmapId: string) => void;
+  onSelect?: (roadmapId: string, roadmapTitle: string) => void;
   inputClassName?: string;
   wrapperClassName?: string;
   placeholder?: string;
@@ -62,7 +61,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     useState<GetTopAIRoadmapTermResponse>([]);
   const [searchedText, setSearchedText] = useState(defaultValue);
   const [activeCounter, setActiveCounter] = useState(0);
-  const debouncedSearchValue = useDebounceValue(searchedText, 500);
+  const debouncedSearchValue = useDebounceValue(searchedText, 300);
 
   const loadTopAIRoadmapTerm = async () => {
     const trimmedValue = debouncedSearchValue.trim();
@@ -133,18 +132,23 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
 
     setIsActive(true);
     setIsLoading(true);
-    loadTopAIRoadmapTerm().then((results) => {
-      const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
-      const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
-        return roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1;
-      });
+    loadTopAIRoadmapTerm()
+      .then((results) => {
+        const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
+        const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
+          return (
+            roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1
+          );
+        });
 
-      setSearchResults(
-        [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
-      );
-      setActiveCounter(0);
-      setIsLoading(false);
-    });
+        setSearchResults(
+          [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
+        );
+        setActiveCounter(0);
+      })
+      .finally(() => {
+        setIsLoading(false);
+      });
   }, [debouncedSearchValue]);
 
   useEffect(() => {
@@ -157,6 +161,8 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
   useOutsideClick(dropdownRef, () => {
     setIsActive(false);
   });
+
+  const isFinishedTyping = debouncedSearchValue === searchedText;
 
   return (
     <div className={cn('relative', wrapperClassName)}>
@@ -196,19 +202,21 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
             setSearchedText('');
             setIsActive(false);
           } else if (e.key === 'Enter') {
-            if (searchResults.length > 0) {
-              e.preventDefault();
-              const activeData = searchResults[activeCounter];
-              if (activeData) {
-                if (activeData.isOfficial) {
-                  window.location.href = `/${activeData._id}`;
-                  return;
-                }
+            if (!searchResults.length || !isFinishedTyping) {
+              return;
+            }
 
-                onValueChange(activeData.term);
-                onSelect?.(activeData._id);
-                setIsActive(false);
+            e.preventDefault();
+            const activeData = searchResults[activeCounter];
+            if (activeData) {
+              if (activeData.isOfficial) {
+                window.open(`/${activeData._id}`, '_blank')?.focus();
+                return;
               }
+
+              onValueChange(activeData.term);
+              onSelect?.(activeData._id, activeData.title);
+              setIsActive(false);
             }
           }
         }}
@@ -223,51 +231,54 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         </div>
       )}
 
-      {isActive && searchResults.length > 0 && searchedText.length > 0 && (
-        <div
-          className="absolute top-full z-50 mt-1 w-full rounded-md border bg-white px-2 py-2 shadow"
-          ref={dropdownRef}
-        >
-          <div className="flex flex-col">
-            {searchResults.map((result, counter) => {
-              return (
-                <button
-                  key={result?._id}
-                  type="button"
-                  className={cn(
-                    'flex w-full items-center rounded p-2 text-sm',
-                    counter === activeCounter ? 'bg-gray-100' : '',
-                  )}
-                  onMouseOver={() => setActiveCounter(counter)}
-                  onClick={() => {
-                    if (result.isOfficial) {
-                      window.location.href = `/${result._id}`;
-                      return;
-                    }
-
-                    onValueChange(result?.term);
-                    onSelect?.(result._id);
-                    setSearchedText('');
-                    setIsActive(false);
-                  }}
-                >
-                  <span
+      {isActive &&
+        isFinishedTyping &&
+        searchResults.length > 0 &&
+        searchedText.length > 0 && (
+          <div
+            className="absolute top-full z-50 mt-1 w-full rounded-md border bg-white p-1 shadow"
+            ref={dropdownRef}
+          >
+            <div className="flex flex-col">
+              {searchResults.map((result, counter) => {
+                return (
+                  <button
+                    key={result?._id}
+                    type="button"
                     className={cn(
-                      'mr-2 rounded-full p-1 px-1.5 text-xs leading-none',
-                      result.isOfficial
-                        ? 'bg-green-500 text-green-50'
-                        : 'bg-blue-400 text-blue-50',
+                      'flex w-full items-center rounded p-2 text-sm',
+                      counter === activeCounter ? 'bg-gray-100' : '',
                     )}
+                    onMouseOver={() => setActiveCounter(counter)}
+                    onClick={() => {
+                      if (result.isOfficial) {
+                        window.location.href = `/${result._id}`;
+                        return;
+                      }
+
+                      onValueChange(result?.term);
+                      onSelect?.(result._id, result.title);
+                      setSearchedText('');
+                      setIsActive(false);
+                    }}
                   >
-                    {result.isOfficial ? 'Official' : 'Generated'}
-                  </span>
-                  {result?.title || result?.term}
-                </button>
-              );
-            })}
+                    <span
+                      className={cn(
+                        'mr-2 rounded-full p-1 px-1.5 text-xs leading-none',
+                        result.isOfficial
+                          ? 'bg-green-500 text-green-50'
+                          : 'bg-blue-400 text-blue-50',
+                      )}
+                    >
+                      {result.isOfficial ? 'Official' : 'AI Generated'}
+                    </span>
+                    {result?.title || result?.term}
+                  </button>
+                );
+              })}
+            </div>
           </div>
-        </div>
-      )}
+        )}
     </div>
   );
 }
