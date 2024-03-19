@@ -123,12 +123,6 @@ export function GenerateRoadmap() {
     setIsLoading(true);
     setHasSubmitted(true);
 
-    if (roadmapLimitUsed >= roadmapLimit) {
-      toast.error('You have reached your limit of generating roadmaps');
-      setIsLoading(false);
-      return;
-    }
-
     deleteUrlParam('id');
     setCurrentRoadmap(null);
 
