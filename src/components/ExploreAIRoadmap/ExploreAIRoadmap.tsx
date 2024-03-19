@@ -4,6 +4,8 @@ import { httpGet } from '../../lib/http';
 import { getRelativeTimeString } from '../../lib/date';
 import { Eye, Loader2, RefreshCcw } from 'lucide-react';
 import { AIRoadmapAlert } from '../GenerateRoadmap/AIRoadmapAlert.tsx';
+import { ExploreAISearch } from './ExploreAISearch.tsx';
+import { flushSync } from 'react-dom';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -33,11 +35,18 @@ export function ExploreAIRoadmap() {
   const [totalPages, setTotalPages] = useState(1);
 
   const loadAIRoadmaps = useCallback(
-    async (currPage: number) => {
+    async (
+      currPage: number,
+      term: string = '',
+      sort: string = '',
+      shouldMerge: boolean = true,
+    ) => {
       const { response, error } = await httpGet<ExploreRoadmapsResponse>(
         `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
         {
           currPage,
+          ...(term && { term }),
+          ...(sort && { sort }),
         },
       );
 
@@ -46,12 +55,15 @@ export function ExploreAIRoadmap() {
         return;
       }
 
-      const newRoadmaps = [...roadmaps, ...response.data];
-      if (
-        JSON.stringify(roadmaps) === JSON.stringify(response.data) ||
-        JSON.stringify(roadmaps) === JSON.stringify(newRoadmaps)
-      ) {
-        return;
+      let newRoadmaps = response.data;
+      if (shouldMerge) {
+        newRoadmaps = [...roadmaps, ...response.data];
+        if (
+          JSON.stringify(roadmaps) === JSON.stringify(response.data) ||
+          JSON.stringify(roadmaps) === JSON.stringify(newRoadmaps)
+        ) {
+          return;
+        }
       }
 
       setRoadmaps(newRoadmaps);
@@ -75,8 +87,18 @@ export function ExploreAIRoadmap() {
         <AIRoadmapAlert isListing />
       </div>
 
+      <ExploreAISearch
+        onSubmit={(term, sort) => {
+          setIsLoading(true);
+          setRoadmaps([]);
+          loadAIRoadmaps(1, term, sort, false).finally(() => {
+            setIsLoading(false);
+          });
+        }}
+      />
+
       {isLoading ? (
-        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {new Array(21).fill(0).map((_, index) => (
             <li
               key={index}
@@ -85,7 +107,7 @@ export function ExploreAIRoadmap() {
           ))}
         </ul>
       ) : (
-        <div>
+        <div className="mt-6">
           {roadmaps?.length === 0 ? (
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
