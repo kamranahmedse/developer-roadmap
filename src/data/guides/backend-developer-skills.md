@@ -6,7 +6,7 @@ excludedBySlug: '/backend/developer-skills'
 seo:
   title: '8 In-Demand Backend Developer Skills to Master'
   description: 'Learn what the essential backend developer skills are that you should learn and master to advance in your career.'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-02-27
 sitemap:
