@@ -519,7 +519,6 @@ export function GenerateRoadmap() {
                 className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
               >
                 <AITermSuggestionInput
-                  autoFocus={true}
                   value={roadmapTerm}
                   onValueChange={(value) => setRoadmapTerm(value)}
                   placeholder="e.g. Try searching for Ansible or DevOps"

@@ -11,12 +11,14 @@ import { useDebounceValue } from '../../hooks/use-debounce';
 import { httpGet } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { Loader2 } from 'lucide-react';
-import {Spinner} from "../ReactIcons/Spinner.tsx";
+import { Spinner } from '../ReactIcons/Spinner.tsx';
+import type { PageType } from '../CommandMenu/CommandMenu.tsx';
 
 type GetTopAIRoadmapTermResponse = {
   _id: string;
   term: string;
   title: string;
+  isOfficial: boolean;
 }[];
 
 type AITermSuggestionInputProps = {
@@ -46,10 +48,13 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     () => new Map<string, GetTopAIRoadmapTermResponse>(),
     [],
   );
+  const [officialRoadmaps, setOfficialRoadmaps] =
+    useState<GetTopAIRoadmapTermResponse>([]);
 
   const toast = useToast();
   const searchInputRef = useRef<HTMLInputElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
+  const isFirstRender = useRef(true);
 
   const [isActive, setIsActive] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -60,19 +65,20 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
   const debouncedSearchValue = useDebounceValue(searchedText, 500);
 
   const loadTopAIRoadmapTerm = async () => {
-    if (debouncedSearchValue.length === 0) {
+    const trimmedValue = debouncedSearchValue.trim();
+    if (trimmedValue.length === 0) {
       return [];
     }
 
-    if (termCache.has(debouncedSearchValue)) {
-      const cachedData = termCache.get(debouncedSearchValue);
+    if (termCache.has(trimmedValue)) {
+      const cachedData = termCache.get(trimmedValue);
       return cachedData || [];
     }
 
     const { response, error } = await httpGet<GetTopAIRoadmapTermResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-top-ai-roadmap-term`,
       {
-        term: debouncedSearchValue,
+        term: trimmedValue,
       },
     );
 
@@ -82,12 +88,45 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
       return [];
     }
 
-    termCache.set(debouncedSearchValue, response);
+    termCache.set(trimmedValue, response);
     return response;
   };
 
+  const loadOfficialRoadmaps = async () => {
+    if (officialRoadmaps.length > 0) {
+      return officialRoadmaps;
+    }
+
+    const { error, response } = await httpGet<PageType[]>(`/pages.json`);
+
+    if (error) {
+      toast.error(error.message || 'Something went wrong');
+      return;
+    }
+
+    if (!response) {
+      return [];
+    }
+
+    const allRoadmaps = response
+      .filter((page) => page.group === 'Roadmaps')
+      .sort((a, b) => {
+        if (a.title === 'Android') return 1;
+        return a.title.localeCompare(b.title);
+      })
+      .map((page) => ({
+        _id: page.id,
+        term: page.title,
+        title: page.title,
+        isOfficial: true,
+      }));
+
+    setOfficialRoadmaps(allRoadmaps);
+    return allRoadmaps;
+  };
+
   useEffect(() => {
-    if (debouncedSearchValue.length === 0) {
+    if (debouncedSearchValue.length === 0 || isFirstRender.current) {
       setSearchResults([]);
       return;
     }
@@ -95,11 +134,25 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
     setIsActive(true);
     setIsLoading(true);
     loadTopAIRoadmapTerm().then((results) => {
-      setSearchResults(results?.slice(0, 5) || []);
+      const normalizedSearchText = debouncedSearchValue.trim().toLowerCase();
+      const matchingOfficialRoadmaps = officialRoadmaps.filter((roadmap) => {
+        return roadmap.title.toLowerCase().indexOf(normalizedSearchText) !== -1;
+      });
+
+      setSearchResults(
+        [...matchingOfficialRoadmaps, ...results]?.slice(0, 5) || [],
+      );
       setActiveCounter(0);
       setIsLoading(false);
     });
   }, [debouncedSearchValue]);
+
+  useEffect(() => {
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      loadOfficialRoadmaps().finally(() => {});
+    }
+  }, []);
 
   useOutsideClick(dropdownRef, () => {
     setIsActive(false);
@@ -118,8 +171,8 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
         )}
         placeholder={placeholder}
         autoComplete="off"
-        onInput={(e) => {
-          const value = (e.target as HTMLInputElement).value.trim();
+        onChange={(e) => {
+          const value = (e.target as HTMLInputElement).value;
           setSearchedText(value);
           onValueChange(value);
         }}
@@ -143,12 +196,19 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
             setSearchedText('');
             setIsActive(false);
           } else if (e.key === 'Enter') {
-            e.preventDefault();
-            const activeData = searchResults[activeCounter];
-            if (activeData) {
-              onValueChange(activeData.term);
-              onSelect?.(activeData._id);
-              setIsActive(false);
+            if (searchResults.length > 0) {
+              e.preventDefault();
+              const activeData = searchResults[activeCounter];
+              if (activeData) {
+                if (activeData.isOfficial) {
+                  window.location.href = `/${activeData._id}`;
+                  return;
+                }
+
+                onValueChange(activeData.term);
+                onSelect?.(activeData._id);
+                setIsActive(false);
+              }
             }
           }
         }}
@@ -156,7 +216,10 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
 
       {isLoading && (
         <div className="absolute right-3 top-0 flex h-full items-center">
-          <Spinner isDualRing={false} className="h-5 w-5 animate-spin stroke-[2.5]" />
+          <Spinner
+            isDualRing={false}
+            className="h-5 w-5 animate-spin stroke-[2.5]"
+          />
         </div>
       )}
 
@@ -177,12 +240,27 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
                   )}
                   onMouseOver={() => setActiveCounter(counter)}
                   onClick={() => {
+                    if (result.isOfficial) {
+                      window.location.href = `/${result._id}`;
+                      return;
+                    }
+
                     onValueChange(result?.term);
                     onSelect?.(result._id);
                     setSearchedText('');
                     setIsActive(false);
                   }}
                 >
+                  <span
+                    className={cn(
+                      'mr-2 rounded-full p-1 px-1.5 text-xs leading-none',
+                      result.isOfficial
+                        ? 'bg-green-500 text-green-50'
+                        : 'bg-blue-400 text-blue-50',
+                    )}
+                  >
+                    {result.isOfficial ? 'Official' : 'Generated'}
+                  </span>
                   {result?.title || result?.term}
                 </button>
               );

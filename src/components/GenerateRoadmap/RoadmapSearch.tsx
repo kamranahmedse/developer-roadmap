@@ -1,16 +1,9 @@
-import {
-  ArrowUpRight,
-  Ban,
-  CircleFadingPlus,
-  Cog,
-  Telescope,
-  Wand,
-} from 'lucide-react';
+import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
 import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { setUrlParams } from '../../lib/browser.ts';
@@ -40,8 +33,13 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const openAPIKey = getOpenAIKey();
-  const isAuthenticatedUser = isLoggedIn();
+  const [openAPIKey, setOpenAPIKey] = useState('');
+  const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
+
+  useEffect(() => {
+    setOpenAPIKey(getOpenAIKey() || '');
+    setIsAuthenticatedUser(isLoggedIn());
+  }, [getOpenAIKey(), isLoggedIn()]);
 
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
