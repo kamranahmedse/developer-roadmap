@@ -86,7 +86,7 @@ There are also interactive best practices:
 
 ![](https://i.imgur.com/waxVImv.png)
 
-## Share with the community
+## Share with the community:
 
 Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the value it provides. It really does help!
 
@@ -96,7 +96,7 @@ Please consider sharing a post about [roadmap.sh](https://roadmap.sh) and the va
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-facebook-1976D2?logo=facebook)](https://www.facebook.com/sharer/sharer.php?u=https://roadmap.sh)
 [![GitHub Repo stars](https://img.shields.io/badge/share%20on-linkedin-3949AB?logo=linkedin)](https://www.linkedin.com/shareArticle?url=https://roadmap.sh&title=Interactive%20roadmaps,%20guides%20and%20other%20educational%20content%20for%20Developers)
 
-## Development
+## Development:
 
 Clone the repository, install the dependencies and start the application
 
@@ -112,7 +112,7 @@ Note: use the `depth` parameter to reduce the clone size and speed up the clone.
 1. git clone --depth=1 https://github.com/kamranahmedse/developer-roadmap.git
 ```
 
-## Contribution
+## Contribution:
 
 > Have a look at [contribution docs](./contributing.md) for how to update any of the roadmaps
 
