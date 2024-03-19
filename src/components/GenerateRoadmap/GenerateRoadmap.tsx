@@ -314,7 +314,7 @@ export function GenerateRoadmap() {
       data,
     });
 
-    setRoadmapTerm(title);
+    setRoadmapTerm(term);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
@@ -439,44 +439,60 @@ export function GenerateRoadmap() {
           {!isLoading && (
             <div className="container flex flex-grow flex-col items-start">
               <AIRoadmapAlert />
-              <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
-                <span>
-                  <span
-                    className={cn(
-                      'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
-                      {
-                        'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
-                          !roadmapLimit,
-                      },
-                    )}
-                  >
-                    {roadmapLimitUsed} of {roadmapLimit}
-                  </span>{' '}
-                  roadmaps generated.
-                </span>
-                {!isLoggedInUser && (
-                  <button
-                    className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-                    onClick={showLoginPopup}
-                  >
-                    Generate more by{' '}
-                    <span className="font-semibold">
-                      signing up (free, takes 2s)
+              {isKeyOnly && isAuthenticatedUser && (
+                <div className="flex flex-row gap-4">
+                  {!openAPIKey && (
+                    <p className={'text-left text-red-500'}>
+                      We have hit the limit for AI roadmap generation. Please
+                      try again tomorrow or{' '}
+                      <button
+                        onClick={() => setIsConfiguring(true)}
+                        className="font-semibold text-purple-600 underline underline-offset-2"
+                      >
+                        add your own OpenAI API key
+                      </button>
+                    </p>
+                  )}
+                  {openAPIKey && (
+                    <p className={'text-left text-gray-500'}>
+                      You have added your own OpenAI API key.{' '}
+                      <button
+                        onClick={() => setIsConfiguring(true)}
+                        className="font-semibold text-purple-600 underline underline-offset-2"
+                      >
+                        Configure it here if you want.
+                      </button>
+                    </p>
+                  )}
+                </div>
+              )}
+              {!isKeyOnly && isAuthenticatedUser && (
+                <div className="mt-2 flex w-full flex-col items-start justify-between gap-2 text-sm sm:flex-row sm:items-center sm:gap-0">
+                  <span>
+                    <span
+                      className={cn(
+                        'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                        {
+                          'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                            !roadmapLimit,
+                        },
+                      )}
+                    >
+                      {roadmapLimitUsed} of {roadmapLimit}
                     </span>{' '}
-                    or <span className="font-semibold">logging in</span>
-                  </button>
-                )}
-                {isLoggedInUser && !openAPIKey && (
-                  <button
-                    onClick={() => setIsConfiguring(true)}
-                    className="text-left rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
-                  >
-                    By-pass all limits by{' '}
-                    <span className="font-semibold">
-                      adding your own OpenAI API key
-                    </span>
-                  </button>
-                )}
+                    roadmaps generated.
+                  </span>
+                  {!openAPIKey && (
+                    <button
+                      onClick={() => setIsConfiguring(true)}
+                      className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
+                    >
+                      By-pass all limits by{' '}
+                      <span className="font-semibold">
+                        adding your own OpenAI API key
+                      </span>
+                    </button>
+                  )}
 
                   {openAPIKey && (
                     <button
