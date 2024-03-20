@@ -57,8 +57,11 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
         )}
       </div>
       {total > 0 && (
-        <p className="flex-shrink-0 text-sm text-gray-500">
-          {total} results found
+        <p className="flex-shrink-0 text-sm text-gray-500 hidden sm:block">
+          {Intl.NumberFormat('en-US', {
+            notation: 'compact',
+          }).format(total)}{' '}
+          results found
         </p>
       )}
     </div>
