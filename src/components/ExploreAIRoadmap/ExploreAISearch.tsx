@@ -8,7 +8,7 @@ type ExploreAISearchProps = {
 
 export function ExploreAISearch(props: ExploreAISearchProps) {
   const { onSubmit, value: defaultValue } = props;
-
+  
   const [search, setSearch] = useState(defaultValue);
 
   return (
@@ -31,17 +31,11 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
           name="search"
           type="search"
           placeholder="Search AI Roadmaps"
-          className="h-10 w-full rounded-md border border-gray-200 px-3 py-2 pl-9 transition-colors focus:border-black focus:outline-none"
+          className="w-full rounded-md border border-gray-200 px-3 py-2 pl-9 text-sm transition-colors focus:border-black focus:outline-none"
           value={search}
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <button
-        type="submit"
-        className="flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white disabled:cursor-not-allowed disabled:opacity-50"
-      >
-        Apply
-      </button>
     </form>
   );
 }

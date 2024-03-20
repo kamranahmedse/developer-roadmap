@@ -36,9 +36,9 @@ export function ExploreAISorting(props: ExploreAISortingProps) {
   });
 
   return (
-    <div className="relative" ref={dropdownRef}>
+    <div className="relative flex" ref={dropdownRef}>
       <button
-        className="flex items-center gap-2 rounded-md border px-2 py-1 text-sm"
+        className="py-15 flex items-center gap-2 rounded-md border px-2 text-sm"
         onClick={() => setIsOpen(!isOpen)}
       >
         <span>{selectedValue?.label}</span>

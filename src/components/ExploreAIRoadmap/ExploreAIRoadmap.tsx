@@ -8,6 +8,7 @@ import { ExploreAISearch } from './ExploreAISearch.tsx';
 import { formatCommaNumber } from '../../lib/number.ts';
 import { ExploreAISorting, type SortByValues } from './ExploreAISorting.tsx';
 import { getUrlParams, setUrlParams } from '../../lib/browser.ts';
+import { Pagination } from '../Pagination/Pagination.tsx';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -39,6 +40,7 @@ export function ExploreAIRoadmap() {
     s: SortByValues;
     p: string;
   };
+
   const [isLoading, setIsLoading] = useState(true);
   const [roadmapsResponse, setRoadmapsResponse] =
     useState<ExploreRoadmapsResponse | null>(null);
@@ -64,6 +66,7 @@ export function ExploreAIRoadmap() {
         ...(sortBy && { sortBy }),
       },
     );
+
     if (error || !response) {
       toast.error(error?.message || 'Something went wrong');
       return;
@@ -84,45 +87,23 @@ export function ExploreAIRoadmap() {
 
   const roadmaps = roadmapsResponse?.data || [];
 
-  const paginationBar = (
-    <div className="my-4 flex items-center justify-between">
-      <div className="flex items-center gap-2">
-        {hasPrevPage && (
-          <button
-            className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
-            onClick={() => {
-              setUrlParams({ p: String(currPage - 1) });
-              loadAIRoadmaps(currPage - 1, searchTerm, sortBy).finally(() => {
-                setIsLoading(false);
-              });
-            }}
-            disabled={isLoading}
-          >
-            &larr;
-          </button>
-        )}
-        {hasNextPage && (
-          <button
-            className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
-            onClick={() => {
-              setUrlParams({ p: String(currPage + 1) });
-              loadAIRoadmaps(currPage + 1, searchTerm, sortBy).finally(() => {
-                setIsLoading(false);
-              });
-            }}
-            disabled={isLoading}
-          >
-            &rarr;
-          </button>
-        )}
+  return (
+    <section className="container mx-auto py-3 sm:py-6">
+      <AIRoadmapAlert isListing />
 
-        <p className="text-sm">
-          Showing {formatCommaNumber((currPage - 1) * perPage)} to{' '}
-          {formatCommaNumber((currPage - 1) * perPage + roadmaps.length)} of{' '}
-          {formatCommaNumber(totalCount)} entries
-        </p>
-      </div>
-      <div className="flex items-center gap-2 text-sm">
+      <div className="flex items-stretch justify-between">
+        <ExploreAISearch
+          key={searchTerm}
+          value={searchTerm}
+          onSubmit={(term) => {
+            setIsLoading(true);
+            setUrlParams({ q: term, p: '1' });
+            loadAIRoadmaps(1, term, sortBy as SortByValues).finally(() => {
+              setIsLoading(false);
+            });
+          }}
+        />
+
         <ExploreAISorting
           sortBy={sortBy}
           onSortChange={(sortBy) => {
@@ -133,35 +114,10 @@ export function ExploreAIRoadmap() {
             });
           }}
         />
-        <p>
-          Page {formatCommaNumber(currPage)} of {formatCommaNumber(totalPages)}
-        </p>
       </div>
-    </div>
-  );
-
-  return (
-    <section className="container mx-auto py-3 sm:py-6">
-      <div className="mb-6">
-        <AIRoadmapAlert isListing />
-      </div>
-
-      <ExploreAISearch
-        key={searchTerm}
-        value={searchTerm}
-        onSubmit={(term) => {
-          setIsLoading(true);
-          setUrlParams({ q: term, p: '1' });
-          loadAIRoadmaps(1, term, sortBy as SortByValues).finally(() => {
-            setIsLoading(false);
-          });
-        }}
-      />
-
-      {paginationBar}
 
       {isLoading ? (
-        <ul className="mt-6 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
           {new Array(21).fill(0).map((_, index) => (
             <li
               key={index}
@@ -170,7 +126,7 @@ export function ExploreAIRoadmap() {
           ))}
         </ul>
       ) : (
-        <div className="mt-6">
+        <div>
           {roadmaps?.length === 0 ? (
             <div className="text-center text-gray-800">No roadmaps found</div>
           ) : (
@@ -204,7 +160,25 @@ export function ExploreAIRoadmap() {
                   );
                 })}
               </ul>
-              {paginationBar}
+
+              <Pagination
+                currPage={currPage}
+                totalPages={totalPages}
+                perPage={perPage}
+                isDisabled={isLoading}
+                totalCount={totalCount}
+                onPageChange={(page) => {
+                  setIsLoading(true);
+                  setUrlParams({ p: String(page) });
+                  loadAIRoadmaps(
+                    page,
+                    searchTerm,
+                    sortBy as SortByValues,
+                  ).finally(() => {
+                    setIsLoading(false);
+                  });
+                }}
+              />
             </>
           )}
         </div>
