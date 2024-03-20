@@ -49,10 +49,13 @@ export function Pagination(props: PaginationProps) {
         </button>
         {variant === 'default' && (
           <>
-            {pages.map((page) => {
+            {pages.map((page, counter) => {
               if (page === 'more') {
                 return (
-                  <span>
+                  <span
+                    key={`page-${page}-${counter}`}
+                    className="hidden sm:block"
+                  >
                     <MoreHorizontal className="text-gray-400" size={14} />
                   </span>
                 );
@@ -60,17 +63,17 @@ export function Pagination(props: PaginationProps) {
 
               return (
                 <button
+                  key={`page-${page}`}
                   disabled={isDisabled}
                   onClick={() => {
                     onPageChange(page as number);
                   }}
                   className={cn(
-                    'rounded-md border px-2 py-1 hover:bg-gray-100',
+                    'hidden rounded-md border px-2 py-1 hover:bg-gray-100 sm:block',
                     {
                       'border-black text-black': currPage === page,
                     },
                   )}
-                  key={page}
                 >
                   {page}
                 </button>
@@ -88,7 +91,7 @@ export function Pagination(props: PaginationProps) {
           &rarr;
         </button>
       </div>
-      <span className="ml-2 text-sm font-normal text-gray-500">
+      <span className="ml-2 hidden text-sm font-normal text-gray-500 sm:block">
         Showing {formatCommaNumber((currPage - 1) * perPage)} to{' '}
         {formatCommaNumber((currPage - 1) * perPage + perPage)} of{' '}
         {formatCommaNumber(totalCount)} entries
