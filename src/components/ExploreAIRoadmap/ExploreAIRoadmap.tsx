@@ -12,7 +12,7 @@ import { Pagination } from '../Pagination/Pagination.tsx';
 import { LoadingRoadmaps } from './LoadingRoadmaps.tsx';
 import { EmptyRoadmaps } from './EmptyRoadmaps.tsx';
 import { AIRoadmapsList } from './AIRoadmapsList.tsx';
-import {ExploreAISearch} from "./ExploreAISearch.tsx";
+import { ExploreAISearch } from './ExploreAISearch.tsx';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -153,6 +153,7 @@ export function ExploreAIRoadmap() {
 
       <div className="my-3.5 flex items-stretch justify-between gap-2.5">
         <ExploreAISearch
+          total={roadmapsResponse?.totalCount || 0}
           isLoading={isLoading}
           value={pageState.searchTerm}
           onSubmit={(term: string) => {
