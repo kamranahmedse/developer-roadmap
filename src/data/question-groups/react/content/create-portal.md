@@ -1,4 +1,4 @@
-`createPortal` is a method on the `ReactDOM` object. It is used to render a React element into another DOM element outside of the parent component. This is useful for cases like modals, popups, or tooltips where you want the component to break out of its container.
+`createPortal` is a method on the `ReactDOM` object. It is used to render a React element into another DOM element outside of the parent component. This is useful for cases like modals, popups, or tooltips where you want the component to break out of its container. It's also beneficial when the component uses CSS transforms with fixed-position descendant elements, preventing potential layout issues.
 
 ```js
 ReactDOM.createPortal(child, container);
