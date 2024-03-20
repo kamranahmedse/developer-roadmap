@@ -2,21 +2,21 @@ import { Search } from 'lucide-react';
 import { useState } from 'react';
 
 type ExploreAISearchProps = {
-  onSubmit?: (search: string, sort: string) => void;
+  value: string;
+  onSubmit?: (search: string) => void;
 };
 
 export function ExploreAISearch(props: ExploreAISearchProps) {
-  const { onSubmit } = props;
+  const { onSubmit, value: defaultValue } = props;
 
-  const [search, setSearch] = useState('');
-  const [sort, setSort] = useState('createdAt');
+  const [search, setSearch] = useState(defaultValue);
 
   return (
     <form
       className="flex items-center gap-2"
       onSubmit={(e) => {
         e.preventDefault();
-        onSubmit?.(search, sort);
+        onSubmit?.(search);
       }}
     >
       <div className="relative w-full">
@@ -36,14 +36,6 @@ export function ExploreAISearch(props: ExploreAISearchProps) {
           onChange={(e) => setSearch(e.target.value)}
         />
       </div>
-      <select
-        className="h-10 rounded-md border border-gray-200 px-2.5 py-2 transition-colors focus:border-black focus:outline-none"
-        value={sort}
-        onChange={(e) => setSort(e.target.value)}
-      >
-        <option value="createdAt">Sort by Date</option>
-        <option value="viewCount">Sort by Views</option>
-      </select>
       <button
         type="submit"
         className="flex min-w-[154px] flex-shrink-0 items-center justify-center gap-2 rounded-md bg-black px-4 py-2 text-white disabled:cursor-not-allowed disabled:opacity-50"

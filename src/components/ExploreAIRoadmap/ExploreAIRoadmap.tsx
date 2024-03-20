@@ -6,6 +6,8 @@ import { Eye, Loader2, RefreshCcw } from 'lucide-react';
 import { AIRoadmapAlert } from '../GenerateRoadmap/AIRoadmapAlert.tsx';
 import { ExploreAISearch } from './ExploreAISearch.tsx';
 import { formatCommaNumber } from '../../lib/number.ts';
+import { ExploreAISorting, type SortByValues } from './ExploreAISorting.tsx';
+import { getUrlParams, setUrlParams } from '../../lib/browser.ts';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -28,21 +30,38 @@ type ExploreRoadmapsResponse = {
 export function ExploreAIRoadmap() {
   const toast = useToast();
 
+  const {
+    q: searchTerm,
+    s: sortBy = 'createdAt',
+    p: defaultCurrPage = 1,
+  } = getUrlParams() as {
+    q: string;
+    s: SortByValues;
+    p: string;
+  };
   const [isLoading, setIsLoading] = useState(true);
   const [roadmapsResponse, setRoadmapsResponse] =
     useState<ExploreRoadmapsResponse | null>(null);
 
+  const currPage = roadmapsResponse?.currPage || +defaultCurrPage || 1;
+  const totalPages = roadmapsResponse?.totalPages || 1;
+  const totalCount = roadmapsResponse?.totalCount || 0;
+
+  const perPage = roadmapsResponse?.perPage || 0;
+  const hasNextPage = currPage < totalPages;
+  const hasPrevPage = currPage > 1;
+
   const loadAIRoadmaps = async (
-    currPage: number,
-    term: string = '',
-    sort: string = '',
+    currPage: number = 1,
+    searchTerm: string = '',
+    sortBy: SortByValues = 'createdAt',
   ) => {
     const { response, error } = await httpGet<ExploreRoadmapsResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
       {
         currPage,
-        ...(term && { term }),
-        ...(sort && { sort }),
+        ...(searchTerm && { term: searchTerm }),
+        ...(sortBy && { sortBy }),
       },
     );
     if (error || !response) {
@@ -53,16 +72,12 @@ export function ExploreAIRoadmap() {
     setRoadmapsResponse(response);
   };
 
-  const currPage = roadmapsResponse?.currPage || 1;
-  const totalPages = roadmapsResponse?.totalPages || 1;
-  const totalCount = roadmapsResponse?.totalCount || 0;
-
-  const perPage = roadmapsResponse?.perPage || 0;
-  const hasNextPage = currPage < totalPages;
-  const hasPrevPage = currPage > 1;
-
   useEffect(() => {
-    loadAIRoadmaps(currPage).finally(() => {
+    loadAIRoadmaps(
+      +defaultCurrPage,
+      searchTerm,
+      sortBy as SortByValues,
+    ).finally(() => {
       setIsLoading(false);
     });
   }, []);
@@ -70,13 +85,14 @@ export function ExploreAIRoadmap() {
   const roadmaps = roadmapsResponse?.data || [];
 
   const paginationBar = (
-    <div className="mb-4 flex items-center justify-between">
+    <div className="my-4 flex items-center justify-between">
       <div className="flex items-center gap-2">
         {hasPrevPage && (
           <button
             className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
             onClick={() => {
-              loadAIRoadmaps(currPage - 1).finally(() => {
+              setUrlParams({ p: String(currPage - 1) });
+              loadAIRoadmaps(currPage - 1, searchTerm, sortBy).finally(() => {
                 setIsLoading(false);
               });
             }}
@@ -89,7 +105,8 @@ export function ExploreAIRoadmap() {
           <button
             className="flex h-6 w-6 items-center justify-center rounded-md border disabled:cursor-not-allowed disabled:opacity-65"
             onClick={() => {
-              loadAIRoadmaps(currPage + 1).finally(() => {
+              setUrlParams({ p: String(currPage + 1) });
+              loadAIRoadmaps(currPage + 1, searchTerm, sortBy).finally(() => {
                 setIsLoading(false);
               });
             }}
@@ -105,7 +122,17 @@ export function ExploreAIRoadmap() {
           {formatCommaNumber(totalCount)} entries
         </p>
       </div>
-      <div className="flex items-center text-sm">
+      <div className="flex items-center gap-2 text-sm">
+        <ExploreAISorting
+          sortBy={sortBy}
+          onSortChange={(sortBy) => {
+            setIsLoading(true);
+            setUrlParams({ s: sortBy, p: '1' });
+            loadAIRoadmaps(1, searchTerm, sortBy).finally(() => {
+              setIsLoading(false);
+            });
+          }}
+        />
         <p>
           Page {formatCommaNumber(currPage)} of {formatCommaNumber(totalPages)}
         </p>
@@ -120,10 +147,17 @@ export function ExploreAIRoadmap() {
       </div>
 
       <ExploreAISearch
-        onSubmit={(term, sort) => {
+        key={searchTerm}
+        value={searchTerm}
+        onSubmit={(term) => {
           setIsLoading(true);
+          setUrlParams({ q: term, p: '1' });
+          loadAIRoadmaps(1, term, sortBy as SortByValues).finally(() => {
+            setIsLoading(false);
+          });
         }}
       />
+
       {paginationBar}
 
       {isLoading ? (
