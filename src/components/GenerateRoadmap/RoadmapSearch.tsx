@@ -1,17 +1,11 @@
-import {
-  ArrowUpRight,
-  Ban,
-  CircleFadingPlus,
-  Cog,
-  Telescope,
-  Wand,
-} from 'lucide-react';
+import { ArrowUpRight, Ban, Cog, Telescope, Wand } from 'lucide-react';
 import type { FormEvent } from 'react';
+import { useEffect, useState } from 'react';
 import { getOpenAIKey, isLoggedIn } from '../../lib/jwt';
 import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
-import { useState } from 'react';
 import { OpenAISettings } from './OpenAISettings.tsx';
+import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -38,8 +32,14 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
 
   const canGenerateMore = limitUsed < limit;
   const [isConfiguring, setIsConfiguring] = useState(false);
-  const openAPIKey = getOpenAIKey();
-  const isAuthenticatedUser = isLoggedIn();
+  const [openAPIKey, setOpenAPIKey] = useState('');
+  const [isAuthenticatedUser, setIsAuthenticatedUser] = useState(false);
+  const [isLoadingResults, setIsLoadingResults] = useState(false);
+
+  useEffect(() => {
+    setOpenAPIKey(getOpenAIKey() || '');
+    setIsAuthenticatedUser(isLoggedIn());
+  }, []);
 
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
@@ -78,15 +78,15 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           }}
           className="flex w-full flex-col gap-2 sm:flex-row"
         >
-          <input
-            autoFocus
-            type="text"
-            placeholder="Enter a topic to generate a roadmap for"
-            className="w-full rounded-md border border-gray-400 px-3 py-2.5 transition-colors focus:border-black focus:outline-none"
+          <AITermSuggestionInput
+            autoFocus={true}
             value={roadmapTerm}
-            onInput={(e) =>
-              setRoadmapTerm((e.target as HTMLInputElement).value)
-            }
+            onValueChange={(value) => setRoadmapTerm(value)}
+            placeholder="Enter a topic to generate a roadmap for"
+            wrapperClassName="w-full"
+            onSelect={(roadmapId, roadmapTitle) => {
+              onLoadTerm(roadmapTitle);
+            }}
           />
           <button
             className={cn(
@@ -100,33 +100,44 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
               }
             }}
             disabled={
-              isAuthenticatedUser &&
-              (!limit ||
-                !roadmapTerm ||
-                limitUsed >= limit ||
-                (isKeyOnly && !openAPIKey))
+              isLoadingResults ||
+              (isAuthenticatedUser &&
+                (!limit ||
+                  !roadmapTerm ||
+                  limitUsed >= limit ||
+                  (isKeyOnly && !openAPIKey)))
             }
           >
-            {!isAuthenticatedUser && (
+            {isLoadingResults && (
               <>
-                <Wand size={20} />
-                Generate
+                <span>Please wait..</span>
               </>
             )}
-            {isAuthenticatedUser && (
+
+            {!isLoadingResults && (
               <>
-                {(!limit || canGenerateMore) && (
+                {!isAuthenticatedUser && (
                   <>
                     <Wand size={20} />
                     Generate
                   </>
                 )}
+                {isAuthenticatedUser && (
+                  <>
+                    {(!limit || canGenerateMore) && (
+                      <>
+                        <Wand size={20} />
+                        Generate
+                      </>
+                    )}
 
-                {limit > 0 && !canGenerateMore && (
-                  <span className="flex items-center text-base">
-                    <Ban size={15} className="mr-2" />
-                    Limit reached
-                  </span>
+                    {limit > 0 && !canGenerateMore && (
+                      <span className="flex items-center text-base">
+                        <Ban size={15} className="mr-2" />
+                        Limit reached
+                      </span>
+                    )}
+                  </>
                 )}
               </>
             )}
@@ -242,7 +253,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
             >
               {limitUsed} of {limit}
             </span>{' '}
-            roadmaps.
+            roadmaps today.
           </p>
           {isAuthenticatedUser && (
             <p className="flex items-center text-sm">
