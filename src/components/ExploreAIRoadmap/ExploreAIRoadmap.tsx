@@ -2,7 +2,6 @@ import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { httpGet } from '../../lib/http';
 import { AIRoadmapAlert } from '../GenerateRoadmap/AIRoadmapAlert.tsx';
-import { ExploreAISearch } from './ExploreAISearch.tsx';
 import { ExploreAISorting, type SortByValues } from './ExploreAISorting.tsx';
 import {
   deleteUrlParam,
@@ -13,7 +12,7 @@ import { Pagination } from '../Pagination/Pagination.tsx';
 import { LoadingRoadmaps } from './LoadingRoadmaps.tsx';
 import { EmptyRoadmaps } from './EmptyRoadmaps.tsx';
 import { AIRoadmapsList } from './AIRoadmapsList.tsx';
-import { currentRoadmap } from '../../stores/roadmap.ts';
+import {ExploreAISearch} from "./ExploreAISearch.tsx";
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -156,7 +155,7 @@ export function ExploreAIRoadmap() {
         <ExploreAISearch
           isLoading={isLoading}
           value={pageState.searchTerm}
-          onSubmit={(term) => {
+          onSubmit={(term: string) => {
             setPageState({
               ...pageState,
               searchTerm: term,
