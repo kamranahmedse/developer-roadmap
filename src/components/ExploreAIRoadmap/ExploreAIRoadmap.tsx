@@ -1,9 +1,19 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useToast } from '../../hooks/use-toast';
 import { httpGet } from '../../lib/http';
-import { getRelativeTimeString } from '../../lib/date';
-import { Eye, Loader2, RefreshCcw } from 'lucide-react';
 import { AIRoadmapAlert } from '../GenerateRoadmap/AIRoadmapAlert.tsx';
+import { ExploreAISearch } from './ExploreAISearch.tsx';
+import { ExploreAISorting, type SortByValues } from './ExploreAISorting.tsx';
+import {
+  deleteUrlParam,
+  getUrlParams,
+  setUrlParams,
+} from '../../lib/browser.ts';
+import { Pagination } from '../Pagination/Pagination.tsx';
+import { LoadingRoadmaps } from './LoadingRoadmaps.tsx';
+import { EmptyRoadmaps } from './EmptyRoadmaps.tsx';
+import { AIRoadmapsList } from './AIRoadmapsList.tsx';
+import { currentRoadmap } from '../../stores/roadmap.ts';
 
 export interface AIRoadmapDocument {
   _id?: string;
@@ -23,127 +33,153 @@ type ExploreRoadmapsResponse = {
   perPage: number;
 };
 
+type QueryParams = {
+  q?: string;
+  s?: SortByValues;
+  p?: string;
+};
+
+type PageState = {
+  searchTerm: string;
+  sortBy: SortByValues;
+  currentPage: number;
+};
+
 export function ExploreAIRoadmap() {
   const toast = useToast();
 
-  const [isLoading, setIsLoading] = useState(true);
-  const [isLoadingMore, setIsLoadingMore] = useState(false);
-  const [roadmaps, setRoadmaps] = useState<AIRoadmapDocument[]>([]);
-  const [currPage, setCurrPage] = useState(1);
-  const [totalPages, setTotalPages] = useState(1);
-
-  const loadAIRoadmaps = useCallback(
-    async (currPage: number) => {
-      const { response, error } = await httpGet<ExploreRoadmapsResponse>(
-        `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
-        {
-          currPage,
-        },
-      );
-
-      if (error || !response) {
-        toast.error(error?.message || 'Something went wrong');
-        return;
-      }
-
-      const newRoadmaps = [...roadmaps, ...response.data];
-      if (
-        JSON.stringify(roadmaps) === JSON.stringify(response.data) ||
-        JSON.stringify(roadmaps) === JSON.stringify(newRoadmaps)
-      ) {
-        return;
-      }
-
-      setRoadmaps(newRoadmaps);
-      setCurrPage(response.currPage);
-      setTotalPages(response.totalPages);
-    },
-    [currPage, roadmaps],
-  );
+  const [pageState, setPageState] = useState<PageState>({
+    searchTerm: '',
+    sortBy: 'createdAt',
+    currentPage: 0,
+  });
 
   useEffect(() => {
-    loadAIRoadmaps(currPage).finally(() => {
-      setIsLoading(false);
+    const queryParams = getUrlParams() as QueryParams;
+
+    setPageState({
+      searchTerm: queryParams.q || '',
+      sortBy: queryParams.s || 'createdAt',
+      currentPage: +(queryParams.p || '1'),
     });
   }, []);
 
-  const hasMorePages = currPage < totalPages;
+  useEffect(() => {
+    setIsLoading(true);
+    if (!pageState.currentPage) {
+      return;
+    }
+
+    // only set the URL params if the user modified anything
+    if (
+      pageState.currentPage !== 1 ||
+      pageState.searchTerm !== '' ||
+      pageState.sortBy !== 'createdAt'
+    ) {
+      setUrlParams({
+        q: pageState.searchTerm,
+        s: pageState.sortBy,
+        p: String(pageState.currentPage),
+      });
+    } else {
+      deleteUrlParam('q');
+      deleteUrlParam('s');
+      deleteUrlParam('p');
+    }
+
+    loadAIRoadmaps(
+      pageState.currentPage,
+      pageState.searchTerm,
+      pageState.sortBy,
+    ).finally(() => {
+      setIsLoading(false);
+    });
+  }, [pageState]);
+
+  const [isLoading, setIsLoading] = useState(true);
+  const [roadmapsResponse, setRoadmapsResponse] =
+    useState<ExploreRoadmapsResponse | null>(null);
+
+  const loadAIRoadmaps = async (
+    currPage: number = 1,
+    searchTerm: string = '',
+    sortBy: SortByValues = 'createdAt',
+  ) => {
+    const { response, error } = await httpGet<ExploreRoadmapsResponse>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-list-ai-roadmaps`,
+      {
+        currPage,
+        ...(searchTerm && { term: searchTerm }),
+        ...(sortBy && { sortBy }),
+      },
+    );
+
+    if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
+      return;
+    }
+
+    setRoadmapsResponse(response);
+  };
+
+  const roadmaps = roadmapsResponse?.data || [];
+
+  const loadingIndicator = isLoading && <LoadingRoadmaps />;
+  const emptyRoadmaps = !isLoading && roadmaps.length === 0 && (
+    <EmptyRoadmaps />
+  );
+
+  const roadmapsList = !isLoading && roadmaps.length > 0 && (
+    <>
+      <AIRoadmapsList response={roadmapsResponse} />
+      <Pagination
+        currPage={roadmapsResponse?.currPage || 1}
+        totalPages={roadmapsResponse?.totalPages || 1}
+        perPage={roadmapsResponse?.perPage || 0}
+        isDisabled={isLoading}
+        totalCount={roadmapsResponse?.totalCount || 0}
+        onPageChange={(page) => {
+          setPageState({
+            ...pageState,
+            currentPage: page,
+          });
+        }}
+      />
+    </>
+  );
 
   return (
     <section className="container mx-auto py-3 sm:py-6">
-      <div className="mb-6">
-        <AIRoadmapAlert isListing />
+      <AIRoadmapAlert isListing />
+
+      <div className="my-3.5 flex items-stretch justify-between gap-2.5">
+        <ExploreAISearch
+          isLoading={isLoading}
+          value={pageState.searchTerm}
+          onSubmit={(term) => {
+            setPageState({
+              ...pageState,
+              searchTerm: term,
+              currentPage: 1,
+            });
+          }}
+        />
+
+        <ExploreAISorting
+          sortBy={pageState.sortBy}
+          onSortChange={(sortBy) => {
+            setPageState({
+              ...pageState,
+              sortBy,
+              currentPage: 1,
+            });
+          }}
+        />
       </div>
 
-      {isLoading ? (
-        <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-          {new Array(21).fill(0).map((_, index) => (
-            <li
-              key={index}
-              className="h-[75px] animate-pulse rounded-md border bg-gray-100"
-            ></li>
-          ))}
-        </ul>
-      ) : (
-        <div>
-          {roadmaps?.length === 0 ? (
-            <div className="text-center text-gray-800">No roadmaps found</div>
-          ) : (
-            <>
-              <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-                {roadmaps.map((roadmap) => {
-                  const roadmapLink = `/ai?id=${roadmap._id}`;
-                  return (
-                    <a
-                      key={roadmap._id}
-                      href={roadmapLink}
-                      className="flex flex-col rounded-md border transition-colors hover:bg-gray-100"
-                      target={'_blank'}
-                    >
-                      <h2 className="flex-grow px-2.5 py-2.5 text-base font-medium leading-tight">
-                        {roadmap.title}
-                      </h2>
-                      <div className="flex items-center justify-between gap-2 px-2.5 py-2">
-                        <span className="flex items-center gap-1.5 text-xs text-gray-400">
-                          <Eye size={15} className="inline-block" />
-                          {Intl.NumberFormat('en-US', {
-                            notation: 'compact',
-                          }).format(roadmap.viewCount)}{' '}
-                          views
-                        </span>
-                        <span className="flex items-center gap-1.5 text-xs text-gray-400">
-                          {getRelativeTimeString(String(roadmap?.createdAt))}
-                        </span>
-                      </div>
-                    </a>
-                  );
-                })}
-              </ul>
-              {hasMorePages && (
-                <div className="my-5 flex items-center justify-center">
-                  <button
-                    onClick={() => {
-                      setIsLoadingMore(true);
-                      loadAIRoadmaps(currPage + 1).finally(() => {
-                        setIsLoadingMore(false);
-                      });
-                    }}
-                    className="inline-flex items-center gap-1.5 rounded-full bg-black px-3 py-1.5 text-sm font-medium text-white shadow-xl transition-colors focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                    disabled={isLoadingMore}
-                  >
-                    {isLoadingMore ? (
-                      <Loader2 className="h-4 w-4 animate-spin stroke-[2.5]" />
-                    ) : (
-                      <RefreshCcw className="h-4 w-4 stroke-[2.5]" />
-                    )}
-                    Load More
-                  </button>
-                </div>
-              )}
-            </>
-          )}
-        </div>
-      )}
+      {loadingIndicator}
+      {emptyRoadmaps}
+      {roadmapsList}
     </section>
   );
 }

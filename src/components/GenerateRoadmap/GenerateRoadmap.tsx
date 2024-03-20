@@ -314,7 +314,7 @@ export function GenerateRoadmap() {
       data,
     });
 
-    setRoadmapTerm(title);
+    setRoadmapTerm(term);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
