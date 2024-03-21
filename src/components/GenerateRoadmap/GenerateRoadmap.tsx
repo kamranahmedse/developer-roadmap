@@ -38,6 +38,7 @@ import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { useParams } from '../../hooks/use-params.ts';
+import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -642,11 +643,48 @@ export function GenerateRoadmap() {
           )}
         </div>
         <div
-          ref={roadmapContainerRef}
-          id="roadmap-container"
-          onClick={handleNodeClick}
-          className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
-        />
+          className={cn({
+            'relative mb-20 max-h-[800px] min-h-[800px] sm:max-h-[1000px] md:min-h-[1000px]  lg:max-h-[1200px] lg:min-h-[1200px] overflow-hidden':
+              !isAuthenticatedUser,
+          })}
+        >
+          <div
+            ref={roadmapContainerRef}
+            id="roadmap-container"
+            onClick={handleNodeClick}
+            className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
+          />
+          {!isAuthenticatedUser && (
+            <div className="absolute bottom-0 left-0 right-0">
+              <div className="h-80 w-full bg-gradient-to-t from-gray-100 to-transparent" />
+              <div className="bg-gray-100">
+                <div className="mx-auto px-5 max-w-[600px] flex-col items-center justify-center bg-gray-100 pt-px">
+                  <div className="mt-8 text-center">
+                    <h2 className="mb-0.5 sm:mb-3 text-xl sm:text-2xl font-medium">
+                      Sign up to View the full roadmap
+                    </h2>
+                    <p className="mb-6 text-sm sm:text-base text-gray-600 text-balance">
+                      You must be logged in to view the complete roadmap
+                    </p>
+                  </div>
+                  <div className="mx-auto max-w-[350px]">
+                    <AuthenticationForm type="signup" />
+
+                    <div className="mt-6 text-center text-sm text-slate-600">
+                      Already have an account?{' '}
+                      <a
+                        href="/login"
+                        className="font-medium text-blue-700 hover:text-blue-600"
+                      >
+                        Login
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </section>
     </>
   );
