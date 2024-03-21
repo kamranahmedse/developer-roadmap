@@ -28,8 +28,12 @@ export function IncreaseRoadmapLimit(props: IncreaseRoadmapLimitProps) {
   return (
     <Modal
       onClose={onClose}
-      wrapperClassName="max-w-lg"
-      bodyClassName={cn(!activeTab && 'overflow-hidden')}
+      overlayClassName={cn(
+        'overscroll-contain',
+        activeTab === 'payment' && 'block',
+      )}
+      wrapperClassName="max-w-lg mx-auto"
+      bodyClassName={cn('h-auto pt-px', !activeTab && 'overflow-hidden')}
     >
       {!activeTab && (
         <PickLimitOption activeTab={activeTab} setActiveTab={setActiveTab} />
