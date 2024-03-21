@@ -9872,53 +9872,6 @@
           }
         },
         {
-          "ID": "5992",
-          "typeID": "__group__",
-          "zOrder": "242",
-          "measuredW": "140",
-          "measuredH": "47",
-          "w": "140",
-          "h": "47",
-          "x": "536",
-          "y": "2705",
-          "properties": {
-            "controlName": "108-databases:transactions"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "140",
-                  "h": "47",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "26",
-                  "x": "15",
-                  "y": "11",
-                  "properties": {
-                    "size": "18",
-                    "text": "Transactions"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "5993",
           "typeID": "__group__",
           "zOrder": "243",
