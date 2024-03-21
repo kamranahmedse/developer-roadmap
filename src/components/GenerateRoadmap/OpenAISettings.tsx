@@ -5,13 +5,15 @@ import { cn } from '../../lib/classname.ts';
 import { CloseIcon } from '../ReactIcons/CloseIcon.tsx';
 import { useToast } from '../../hooks/use-toast.ts';
 import { httpPost } from '../../lib/http.ts';
+import { ChevronLeft } from 'lucide-react';
 
 type OpenAISettingsProps = {
   onClose: () => void;
+  onBack: () => void;
 };
 
 export function OpenAISettings(props: OpenAISettingsProps) {
-  const { onClose } = props;
+  const { onClose, onBack } = props;
 
   const [defaultOpenAIKey, setDefaultOpenAIKey] = useState('');
 
@@ -28,12 +30,21 @@ export function OpenAISettings(props: OpenAISettingsProps) {
   }, []);
 
   return (
-    <div>
-      <p className="text-gray-700">
+    <div className="p-4">
+      <button
+        onClick={onBack}
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none hover:opacity-70 focus:outline-none"
+      >
+        <ChevronLeft size={16} />
+        Back
+      </button>
+
+      <h2 className="text-xl font-medium text-gray-800">OpenAI Settings</h2>
+      <p className="mt-2 text-sm text-gray-700">
         AI Roadmap generator uses OpenAI's GPT-4 model to generate roadmaps.
       </p>
 
-      <p className="mt-2">
+      <p className="mt-4">
         <a
           className="font-semibold underline underline-offset-2"
           href={'https://platform.openai.com/signup'}
