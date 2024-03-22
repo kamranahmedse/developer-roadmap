@@ -7,7 +7,13 @@ import { UserPublicProgresses } from './UserPublicProgresses';
 type UserPublicProfilePageProps = GetPublicProfileResponse;
 
 export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
-  const { activity, username, isOwnProfile, profileVisibility } = props;
+  const {
+    activity,
+    username,
+    isOwnProfile,
+    profileVisibility,
+    _id: userId,
+  } = props;
 
   return (
     <>
@@ -23,6 +29,7 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
         <div className="mt-10">
           <UserPublicProgresses
             username={username!}
+            userId={userId!}
             roadmaps={props.roadmaps}
             publicConfig={props.publicConfig}
           />

@@ -27,20 +27,20 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
         values={data}
         classForValue={(value) => {
           if (!value) {
-            return 'fill-gray-100 rounded-md [rx:2px]';
+            return 'fill-gray-100 rounded-md [rx:2px] focus:outline-none';
           }
 
           const { count } = value;
           if (count >= 20) {
-            return 'fill-gray-800 rounded-md [rx:2px]';
+            return 'fill-gray-800 rounded-md [rx:2px] focus:outline-none';
           } else if (count >= 10) {
-            return 'fill-gray-600 rounded-md [rx:2px]';
+            return 'fill-gray-600 rounded-md [rx:2px] focus:outline-none';
           } else if (count >= 5) {
-            return 'fill-gray-500 rounded-md [rx:2px]';
+            return 'fill-gray-500 rounded-md [rx:2px] focus:outline-none';
           } else if (count >= 3) {
-            return 'fill-gray-300 rounded-md [rx:2px]';
+            return 'fill-gray-300 rounded-md [rx:2px] focus:outline-none';
           } else {
-            return 'fill-gray-200 rounded-md [rx:2px]';
+            return 'fill-gray-200 rounded-md [rx:2px] focus:outline-none';
           }
         }}
         tooltipDataAttrs={(value: any) => {

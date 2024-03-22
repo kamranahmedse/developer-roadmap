@@ -2,13 +2,19 @@ import type { GetPublicProfileResponse } from '../../api/user';
 import { UserPublicProgressStats } from './UserPublicProgressStats';
 
 type UserPublicProgressesProps = {
+  userId: string;
   username: string;
   roadmaps: GetPublicProfileResponse['roadmaps'];
   publicConfig: GetPublicProfileResponse['publicConfig'];
 };
 
 export function UserPublicProgresses(props: UserPublicProgressesProps) {
-  const { roadmaps: roadmapProgresses = [], username, publicConfig } = props;
+  const {
+    roadmaps: roadmapProgresses = [],
+    username,
+    publicConfig,
+    userId,
+  } = props;
   const { roadmapVisibility, customRoadmapVisibility } = publicConfig! || {};
 
   const roadmaps = roadmapProgresses.filter(
@@ -43,6 +49,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                     roadmapSlug={roadmap.roadmapSlug}
                     isCustomResource={false}
                     username={username!}
+                    userId={userId}
                   />
                 </li>
               ))}
@@ -74,6 +81,7 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                     roadmapSlug={roadmap.roadmapSlug}
                     username={username!}
                     isCustomResource={true}
+                    userId={userId}
                   />
                 </li>
               ))}

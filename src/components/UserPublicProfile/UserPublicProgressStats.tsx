@@ -14,6 +14,7 @@ type UserPublicProgressStats = {
   isCustomResource?: boolean;
   roadmapSlug?: string;
   username: string;
+  userId: string;
 };
 
 export function UserPublicProgressStats(props: UserPublicProgressStats) {
@@ -28,10 +29,13 @@ export function UserPublicProgressStats(props: UserPublicProgressStats) {
     roadmapSlug,
     isCustomResource = false,
     username,
+    userId,
   } = props;
 
   // Currently we only support roadmap not (best-practices)
-  const url = `/u/${username}/${isCustomResource ? roadmapSlug : resourceId}`;
+  const url = isCustomResource
+    ? `/r/${roadmapSlug}`
+    : `/${resourceId}?s=${userId}`;
   const totalMarked = doneCount + skippedCount;
   const progressPercentage = getPercentage(totalMarked, totalCount);
 
