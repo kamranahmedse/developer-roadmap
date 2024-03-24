@@ -30,6 +30,7 @@ Consider the following `Customers` table:
 | 4  | Chaitali | 25 | Mumbai | 6500.0 |
 | 5  | Hardik | 27 | Bhopal  | 8500.0 |
 | 6  | Komal | 22 | MP       | 4500.0 |
+|7   | Mausham | 18 | Bihar  | 5000.0 |
 
 **Example 1 - Ascending Order:**
 
