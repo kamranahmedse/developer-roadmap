@@ -3,6 +3,7 @@ import GuideHeader from '../../components/GuideHeader.astro';
 import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides, type GuideFileType } from '../../lib/guide';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 export interface Props {
   guide: GuideFileType;
@@ -21,7 +22,12 @@ export async function getStaticPaths() {
 
 const { guideId } = Astro.params;
 const { guide } = Astro.props;
-const { frontmatter: guideData } = guide;
+const { frontmatter: guideData, author } = guide;
+
+const ogImageUrl = getOpenGraphImageUrl({
+  group: 'guides',
+  resourceId: guideId,
+});
 ---
 
 <BaseLayout
@@ -29,6 +35,7 @@ const { frontmatter: guideData } = guide;
   description={guideData.seo.description}
   permalink={`/guides/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
+  ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide} />
 

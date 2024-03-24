@@ -48,7 +48,7 @@ export async function getBestPracticeIds() {
     '/src/data/best-practices/*/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   return Object.keys(bestPracticeFiles).map(bestPracticePathToId);
@@ -64,7 +64,7 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
     '/src/data/best-practices/*/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const bestPracticeFiles = Object.values(bestPracticeFilesMap);
@@ -74,6 +74,38 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
   }));
 
   return bestPracticeItems.sort(
-    (a, b) => a.frontmatter.order - b.frontmatter.order
+    (a, b) => a.frontmatter.order - b.frontmatter.order,
   );
+}
+
+/**
+ * Gets the best practice file by ID
+ *
+ * @param id - Best practice file ID
+ * @returns BestPracticeFileType
+ */
+
+export async function getBestPracticeById(
+  id: string,
+): Promise<BestPracticeFileType | null> {
+  const bestPracticeFilesMap = import.meta.glob<BestPracticeFileType>(
+    '/src/data/best-practices/*/*.md',
+    {
+      eager: true,
+    },
+  );
+
+  const bestPracticeFiles = Object.values(bestPracticeFilesMap);
+  const bestPracticeFile = bestPracticeFiles.find(
+    (bestPracticeFile) => bestPracticePathToId(bestPracticeFile.file) === id,
+  );
+
+  if (!bestPracticeFile) {
+    throw new Error(`Best practice with ID ${id} not found`);
+  }
+
+  return {
+    ...bestPracticeFile,
+    id: bestPracticePathToId(bestPracticeFile.file),
+  };
 }

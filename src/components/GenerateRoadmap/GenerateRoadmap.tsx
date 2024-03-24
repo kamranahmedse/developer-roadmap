@@ -36,6 +36,9 @@ import { RoadmapTopicDetail } from './RoadmapTopicDetail.tsx';
 import { AIRoadmapAlert } from './AIRoadmapAlert.tsx';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
+import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
+import { useParams } from '../../hooks/use-params.ts';
+import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
 
 export type GetAIRoadmapLimitResponse = {
   used: number;
@@ -90,6 +93,7 @@ export function GenerateRoadmap() {
 
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
   const [isLoading, setIsLoading] = useState(false);
+  const [isLoadingResults, setIsLoadingResults] = useState(false);
   const [roadmapTerm, setRoadmapTerm] = useState('');
   const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
@@ -119,12 +123,6 @@ export function GenerateRoadmap() {
   const loadTermRoadmap = async (term: string) => {
     setIsLoading(true);
     setHasSubmitted(true);
-
-    if (roadmapLimitUsed >= roadmapLimit) {
-      toast.error('You have reached your limit of generating roadmaps');
-      setIsLoading(false);
-      return;
-    }
 
     deleteUrlParam('id');
     setCurrentRoadmap(null);
@@ -171,10 +169,13 @@ export function GenerateRoadmap() {
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
           setUrlParams({ id: roadmapId });
           result = result.replace(ROADMAP_ID_REGEX, '');
+          const roadmapTitle =
+            result.trim().split('\n')[0]?.replace('#', '')?.trim() || term;
+          setRoadmapTerm(roadmapTitle);
           setCurrentRoadmap({
             id: roadmapId,
             term: roadmapTerm,
-            title: term,
+            title: roadmapTitle,
             data: result,
           });
         }
@@ -193,11 +194,11 @@ export function GenerateRoadmap() {
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!roadmapTerm) {
+    if (!roadmapTerm || isLoadingResults) {
       return;
     }
 
-    if (roadmapTerm === currentRoadmap?.topic) {
+    if (roadmapTerm === currentRoadmap?.term) {
       return;
     }
 
@@ -293,7 +294,8 @@ export function GenerateRoadmap() {
     pageProgressMessage.set('Loading Roadmap');
 
     const { response, error } = await httpGet<{
-      topic: string;
+      term: string;
+      title: string;
       data: string;
     }>(`${import.meta.env.PUBLIC_API_URL}/v1-get-ai-roadmap/${roadmapId}`);
 
@@ -313,7 +315,7 @@ export function GenerateRoadmap() {
       data,
     });
 
-    setRoadmapTerm(title);
+    setRoadmapTerm(term);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
@@ -479,7 +481,7 @@ export function GenerateRoadmap() {
                     >
                       {roadmapLimitUsed} of {roadmapLimit}
                     </span>{' '}
-                    roadmaps generated.
+                    roadmaps generated today.
                   </span>
                   {!openAPIKey && (
                     <button
@@ -516,15 +518,14 @@ export function GenerateRoadmap() {
                 onSubmit={handleSubmit}
                 className="my-3 flex w-full flex-col gap-2 sm:flex-row sm:items-center sm:justify-center"
               >
-                <input
-                  type="text"
-                  autoFocus
-                  placeholder="e.g. Try searching for Ansible or DevOps"
-                  className="flex-grow rounded-md border border-gray-400 px-3 py-2 transition-colors focus:border-black focus:outline-none"
+                <AITermSuggestionInput
                   value={roadmapTerm}
-                  onInput={(e) =>
-                    setRoadmapTerm((e.target as HTMLInputElement).value)
-                  }
+                  onValueChange={(value) => setRoadmapTerm(value)}
+                  placeholder="e.g. Try searching for Ansible or DevOps"
+                  wrapperClassName="grow"
+                  onSelect={(id, title) => {
+                    loadTermRoadmap(title).finally(() => null);
+                  }}
                 />
                 <button
                   type={'submit'}
@@ -539,37 +540,47 @@ export function GenerateRoadmap() {
                     }
                   }}
                   disabled={
-                    isAuthenticatedUser &&
-                    (!roadmapLimit ||
-                      !roadmapTerm ||
-                      roadmapLimitUsed >= roadmapLimit ||
-                      roadmapTerm === currentRoadmap?.term ||
-                      (isKeyOnly && !openAPIKey))
+                    isLoadingResults ||
+                    (isAuthenticatedUser &&
+                      (!roadmapLimit ||
+                        !roadmapTerm ||
+                        roadmapLimitUsed >= roadmapLimit ||
+                        roadmapTerm === currentRoadmap?.term ||
+                        (isKeyOnly && !openAPIKey)))
                   }
                 >
-                  {!isAuthenticatedUser && (
+                  {isLoadingResults && (
                     <>
-                      <Wand size={20} />
-                      Generate
+                      <span>Please wait..</span>
                     </>
                   )}
-
-                  {isAuthenticatedUser && (
+                  {!isLoadingResults && (
                     <>
-                      {roadmapLimit > 0 && canGenerateMore && (
+                      {!isAuthenticatedUser && (
                         <>
                           <Wand size={20} />
                           Generate
                         </>
                       )}
 
-                      {roadmapLimit === 0 && <span>Please wait..</span>}
+                      {isAuthenticatedUser && (
+                        <>
+                          {roadmapLimit > 0 && canGenerateMore && (
+                            <>
+                              <Wand size={20} />
+                              Generate
+                            </>
+                          )}
 
-                      {roadmapLimit > 0 && !canGenerateMore && (
-                        <span className="flex items-center">
-                          <Ban size={15} className="mr-2" />
-                          Limit reached
-                        </span>
+                          {roadmapLimit === 0 && <span>Please wait..</span>}
+
+                          {roadmapLimit > 0 && !canGenerateMore && (
+                            <span className="flex items-center">
+                              <Ban size={15} className="mr-2" />
+                              Limit reached
+                            </span>
+                          )}
+                        </>
                       )}
                     </>
                   )}
@@ -632,11 +643,48 @@ export function GenerateRoadmap() {
           )}
         </div>
         <div
-          ref={roadmapContainerRef}
-          id="roadmap-container"
-          onClick={handleNodeClick}
-          className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
-        />
+          className={cn({
+            'relative mb-20 max-h-[800px] min-h-[800px] sm:max-h-[1000px] md:min-h-[1000px]  lg:max-h-[1200px] lg:min-h-[1200px] overflow-hidden':
+              !isAuthenticatedUser,
+          })}
+        >
+          <div
+            ref={roadmapContainerRef}
+            id="roadmap-container"
+            onClick={handleNodeClick}
+            className="relative px-4 py-5 [&>svg]:mx-auto [&>svg]:max-w-[1300px]"
+          />
+          {!isAuthenticatedUser && (
+            <div className="absolute bottom-0 left-0 right-0">
+              <div className="h-80 w-full bg-gradient-to-t from-gray-100 to-transparent" />
+              <div className="bg-gray-100">
+                <div className="mx-auto px-5 max-w-[600px] flex-col items-center justify-center bg-gray-100 pt-px">
+                  <div className="mt-8 text-center">
+                    <h2 className="mb-0.5 sm:mb-3 text-xl sm:text-2xl font-medium">
+                      Sign up to View the full roadmap
+                    </h2>
+                    <p className="mb-6 text-sm sm:text-base text-gray-600 text-balance">
+                      You must be logged in to view the complete roadmap
+                    </p>
+                  </div>
+                  <div className="mx-auto max-w-[350px]">
+                    <AuthenticationForm type="signup" />
+
+                    <div className="mt-6 text-center text-sm text-slate-600">
+                      Already have an account?{' '}
+                      <a
+                        href="/login"
+                        className="font-medium text-blue-700 hover:text-blue-600"
+                      >
+                        Login
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
       </section>
     </>
   );

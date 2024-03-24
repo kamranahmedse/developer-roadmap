@@ -13,6 +13,7 @@ import {
   getAllBestPractices,
 } from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../../lib/open-graph';
 
 export async function getStaticPaths() {
   const bestPractices = await getAllBestPractices();
@@ -52,12 +53,18 @@ if (bestPracticeData.schema) {
     }),
   );
 }
+
+const ogImageUrl = getOpenGraphImageUrl({
+  group: 'best-practices',
+  resourceId: bestPracticeId,
+});
 ---
 
 <BaseLayout
   permalink={`/best-practices/${bestPracticeId}`}
   title={bestPracticeData?.seo?.title}
   briefTitle={bestPracticeData?.briefTitle}
+  ogImageUrl={ogImageUrl}
   description={bestPracticeData.seo.description}
   keywords={bestPracticeData.seo.keywords}
   noIndex={bestPracticeData.isUpcoming}
