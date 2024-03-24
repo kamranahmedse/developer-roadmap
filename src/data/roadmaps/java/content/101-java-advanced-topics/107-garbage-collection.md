@@ -8,3 +8,4 @@ Visit the following resources to learn more:
 - [Garbage Collection in Java](https://www.geeksforgeeks.org/garbage-collection-java/)
 - [Java Garbage Collection](https://www.javatpoint.com/Garbage-Collection)
 - [Garbage Collection in Java - Geekific](https://www.youtube.com/watch?v=xxoacv5xm9s)
+- [Java Garbage Collection in Tamil](https://www.youtube.com/watch?v=jD-w7o9lLvI&ab_channel=Payilagam)
