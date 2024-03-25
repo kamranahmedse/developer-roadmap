@@ -1,1 +1,0 @@
-# Perf testing

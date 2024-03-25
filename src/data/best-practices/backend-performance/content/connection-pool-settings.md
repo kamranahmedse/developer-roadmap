@@ -1,1 +1,0 @@
-# Connection pool settings
