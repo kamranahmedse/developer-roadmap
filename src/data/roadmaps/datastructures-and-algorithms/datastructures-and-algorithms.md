@@ -7,7 +7,7 @@ briefDescription: 'Step by step guide to learn Data Structures and Algorithms in
 title: 'Data Structures & Algorithms Roadmap'
 description: 'Step by step guide to learn Data Structures and Algorithms in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 1814.72
