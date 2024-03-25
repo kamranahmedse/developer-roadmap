@@ -1,0 +1,4527 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "1585",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "1",
+          "h": "81",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "814",
+          "y": "2405",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 81.09090909090901
+            }
+          }
+        },
+        {
+          "ID": "1589",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "225",
+          "y": "769",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1590",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "w": "591",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "222",
+          "y": "413",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999449522687746,
+              "y": 0.0003335799224988862
+            },
+            "p2": {
+              "x": 590.6951281847257,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1591",
+          "typeID": "Canvas",
+          "zOrder": "7",
+          "w": "189",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "360",
+          "y": "389",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1592",
+          "typeID": "__group__",
+          "zOrder": "8",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "512",
+          "properties": {
+            "controlName": "check:caching-strategies"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1593",
+          "typeID": "__group__",
+          "zOrder": "9",
+          "measuredW": "508",
+          "measuredH": "58",
+          "w": "508",
+          "h": "58",
+          "x": "264",
+          "y": "512",
+          "properties": {
+            "controlName": "caching-strategies"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "508",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use cache aside, write-through, or read-through caching"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "442",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "patterns based on your application requirements."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1594",
+          "typeID": "Label",
+          "zOrder": "10",
+          "measuredW": "323",
+          "measuredH": "40",
+          "x": "671",
+          "y": "226",
+          "properties": {
+            "size": "32",
+            "text": "Backend Performance"
+          }
+        },
+        {
+          "ID": "1595",
+          "typeID": "Canvas",
+          "zOrder": "11",
+          "w": "361",
+          "h": "150",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1059",
+          "y": "158"
+        },
+        {
+          "ID": "1596",
+          "typeID": "Label",
+          "zOrder": "12",
+          "measuredW": "332",
+          "measuredH": "26",
+          "x": "1075",
+          "y": "176",
+          "properties": {
+            "text": "Find the detailed version of this checklist",
+            "size": "18"
+          }
+        },
+        {
+          "ID": "1597",
+          "typeID": "Label",
+          "zOrder": "13",
+          "measuredW": "318",
+          "measuredH": "26",
+          "x": "1075",
+          "y": "204",
+          "properties": {
+            "size": "18",
+            "text": "With details on how to implement these"
+          }
+        },
+        {
+          "ID": "1598",
+          "typeID": "__group__",
+          "zOrder": "14",
+          "measuredW": "329",
+          "measuredH": "51",
+          "w": "329",
+          "h": "51",
+          "x": "1075",
+          "y": "240",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "329",
+                  "h": "51",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "4273622",
+                    "borderColor": "4273622"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "172",
+                  "measuredH": "28",
+                  "x": "79",
+                  "y": "12",
+                  "properties": {
+                    "color": "16777215",
+                    "size": "20",
+                    "text": "https://roadmap.sh"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1599",
+          "typeID": "Canvas",
+          "zOrder": "15",
+          "w": "373",
+          "h": "169",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "226",
+          "y": "148"
+        },
+        {
+          "ID": "1600",
+          "typeID": "__group__",
+          "zOrder": "16",
+          "measuredW": "189",
+          "measuredH": "27",
+          "w": "189",
+          "h": "27",
+          "x": "256",
+          "y": "222",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/backend"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "156",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "Backend Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1601",
+          "typeID": "__group__",
+          "zOrder": "17",
+          "measuredW": "238",
+          "measuredH": "27",
+          "w": "238",
+          "h": "27",
+          "x": "256",
+          "y": "258",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/system-design"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "205",
+                  "measuredH": "26",
+                  "x": "33",
+                  "y": "0",
+                  "properties": {
+                    "size": "18",
+                    "text": "System Design Roadmap"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "24",
+                  "measuredH": "24",
+                  "w": "24",
+                  "h": "24",
+                  "x": "0",
+                  "y": "3",
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Icon",
+                          "zOrder": "0",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "16777215",
+                            "icon": {
+                              "ID": "circle",
+                              "size": "small"
+                            }
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Icon",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10066329",
+                            "icon": {
+                              "ID": "check-circle",
+                              "size": "small"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1602",
+          "typeID": "Label",
+          "zOrder": "18",
+          "measuredW": "209",
+          "measuredH": "32",
+          "x": "256",
+          "y": "172",
+          "properties": {
+            "size": "24",
+            "text": "Related Roadmaps"
+          }
+        },
+        {
+          "ID": "1603",
+          "typeID": "Arrow",
+          "zOrder": "19",
+          "w": "1",
+          "h": "76",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "812",
+          "y": "134",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 76.17275043077757
+            },
+            "stroke": "dotted",
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1682",
+          "typeID": "Label",
+          "zOrder": "20",
+          "measuredW": "75",
+          "measuredH": "28",
+          "x": "417",
+          "y": "400",
+          "properties": {
+            "size": "20",
+            "text": "Caching"
+          }
+        },
+        {
+          "ID": "1683",
+          "typeID": "Arrow",
+          "zOrder": "21",
+          "w": "1",
+          "h": "2056",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "814",
+          "y": "287",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": 0,
+              "y": -0.48484848484849863
+            },
+            "p1": {
+              "x": 0.4999999999999998,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 2055.448967650736
+            }
+          }
+        },
+        {
+          "ID": "1701",
+          "typeID": "TextArea",
+          "zOrder": "22",
+          "w": "471",
+          "h": "118",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "578",
+          "y": "2319"
+        },
+        {
+          "ID": "1702",
+          "typeID": "Label",
+          "zOrder": "23",
+          "measuredW": "366",
+          "measuredH": "25",
+          "x": "631",
+          "y": "2338",
+          "properties": {
+            "size": "17",
+            "text": "Continue Learning with following relevant tracks"
+          }
+        },
+        {
+          "ID": "1703",
+          "typeID": "__group__",
+          "zOrder": "24",
+          "measuredW": "235",
+          "measuredH": "44",
+          "w": "235",
+          "h": "44",
+          "x": "801",
+          "y": "2375",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/backend"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "235",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "194",
+                  "measuredH": "25",
+                  "x": "21",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "System Design Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1704",
+          "typeID": "__group__",
+          "zOrder": "25",
+          "measuredW": "198",
+          "measuredH": "44",
+          "w": "198",
+          "h": "44",
+          "x": "593",
+          "y": "2375",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/frontend"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "198",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "147",
+                  "measuredH": "25",
+                  "x": "25",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "Backend Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1705",
+          "typeID": "__group__",
+          "zOrder": "26",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "661",
+          "properties": {
+            "controlName": "check:cache-invalidation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1707",
+          "typeID": "Canvas",
+          "zOrder": "28",
+          "w": "189",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "362",
+          "y": "745",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1708",
+          "typeID": "Label",
+          "zOrder": "29",
+          "measuredW": "98",
+          "measuredH": "28",
+          "x": "408",
+          "y": "756",
+          "properties": {
+            "size": "20",
+            "text": "Databases"
+          }
+        },
+        {
+          "ID": "1709",
+          "typeID": "__group__",
+          "zOrder": "30",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "822",
+          "properties": {
+            "controlName": "check:connection-pooling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1710",
+          "typeID": "__group__",
+          "zOrder": "31",
+          "measuredW": "503",
+          "measuredH": "28",
+          "w": "503",
+          "h": "28",
+          "x": "262",
+          "y": "823",
+          "properties": {
+            "controlName": "connection-pooling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "503",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use connection pooling to reduce connection overhead"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1711",
+          "typeID": "__group__",
+          "zOrder": "32",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1124",
+          "properties": {
+            "controlName": "check:pagination-large-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1712",
+          "typeID": "__group__",
+          "zOrder": "33",
+          "measuredW": "437",
+          "measuredH": "28",
+          "w": "437",
+          "h": "28",
+          "x": "262",
+          "y": "1125",
+          "properties": {
+            "controlName": "pagination-large-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "437",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement efficient pagination for large datasets"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1713",
+          "typeID": "__group__",
+          "zOrder": "34",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "969",
+          "properties": {
+            "controlName": "check:db-indexes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1714",
+          "typeID": "__group__",
+          "zOrder": "35",
+          "measuredW": "303",
+          "measuredH": "28",
+          "w": "303",
+          "h": "28",
+          "x": "262",
+          "y": "970",
+          "properties": {
+            "controlName": "db-indexes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "303",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Create efficient database indexes"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1715",
+          "typeID": "__group__",
+          "zOrder": "36",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1164",
+          "properties": {
+            "controlName": "check:select-star"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1716",
+          "typeID": "__group__",
+          "zOrder": "37",
+          "measuredW": "511",
+          "measuredH": "28",
+          "w": "511",
+          "h": "28",
+          "x": "262",
+          "y": "1165",
+          "properties": {
+            "controlName": "select-star"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "511",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Avoid SELECT * queries and fetch only required columns"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1718",
+          "typeID": "Canvas",
+          "zOrder": "38",
+          "w": "189",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "362",
+          "y": "1642",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1719",
+          "typeID": "Label",
+          "zOrder": "39",
+          "measuredW": "73",
+          "measuredH": "28",
+          "x": "420",
+          "y": "1653",
+          "properties": {
+            "size": "20",
+            "text": "Security"
+          }
+        },
+        {
+          "ID": "1720",
+          "typeID": "__group__",
+          "zOrder": "40",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1720",
+          "properties": {
+            "controlName": "check:up-to-date"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1721",
+          "typeID": "__group__",
+          "zOrder": "41",
+          "measuredW": "323",
+          "measuredH": "28",
+          "w": "323",
+          "h": "28",
+          "x": "264",
+          "y": "1721",
+          "properties": {
+            "controlName": "up-to-date"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "323",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Keep your dependencies up to date"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1722",
+          "typeID": "__group__",
+          "zOrder": "42",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1832",
+          "properties": {
+            "controlName": "check:request-throttling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1723",
+          "typeID": "__group__",
+          "zOrder": "43",
+          "measuredW": "407",
+          "measuredH": "28",
+          "w": "407",
+          "h": "28",
+          "x": "264",
+          "y": "1833",
+          "properties": {
+            "controlName": "request-throttling"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "407",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement request throttling and rate limiting"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1730",
+          "typeID": "__group__",
+          "zOrder": "44",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "471",
+          "properties": {
+            "controlName": "check:reasonable-payload"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1731",
+          "typeID": "__group__",
+          "zOrder": "45",
+          "measuredW": "347",
+          "measuredH": "28",
+          "w": "347",
+          "h": "28",
+          "x": "899",
+          "y": "472",
+          "properties": {
+            "controlName": "reasonable-payload"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "347",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Enforce reasonable payload size limits"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1732",
+          "typeID": "__group__",
+          "zOrder": "46",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "512",
+          "properties": {
+            "controlName": "check:enable-compression"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1733",
+          "typeID": "__group__",
+          "zOrder": "47",
+          "measuredW": "314",
+          "measuredH": "28",
+          "w": "314",
+          "h": "28",
+          "x": "899",
+          "y": "513",
+          "properties": {
+            "controlName": "enable-compression"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "314",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Enable compression for responses"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1734",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "225",
+          "y": "1667",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1736",
+          "typeID": "__group__",
+          "zOrder": "48",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1273",
+          "properties": {
+            "controlName": "check:join-operations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1737",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "494",
+          "measuredH": "28",
+          "w": "494",
+          "h": "28",
+          "x": "262",
+          "y": "1274",
+          "properties": {
+            "controlName": "join-operations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "494",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Optimize JOIN operations and avoid unnecessary joins"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1738",
+          "typeID": "__group__",
+          "zOrder": "50",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "588",
+          "properties": {
+            "controlName": "check:caching-locations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1741",
+          "typeID": "Canvas",
+          "zOrder": "53",
+          "w": "281",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "965",
+          "y": "389",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1742",
+          "typeID": "Label",
+          "zOrder": "54",
+          "measuredW": "214",
+          "measuredH": "28",
+          "x": "999",
+          "y": "400",
+          "properties": {
+            "size": "20",
+            "text": "Optimize API Response"
+          }
+        },
+        {
+          "ID": "1743",
+          "typeID": "Arrow",
+          "zOrder": "52",
+          "w": "591",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "818",
+          "y": "413",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4999449522687746,
+              "y": 0.0003335799224988862
+            },
+            "p2": {
+              "x": 590.6951281847257,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1744",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "555",
+          "properties": {
+            "controlName": "check:implement-pagination"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1745",
+          "typeID": "__group__",
+          "zOrder": "56",
+          "measuredW": "437",
+          "measuredH": "28",
+          "w": "437",
+          "h": "28",
+          "x": "899",
+          "y": "556",
+          "properties": {
+            "controlName": "implement-pagination"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "437",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement efficient pagination for large datasets"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1746",
+          "typeID": "Canvas",
+          "zOrder": "57",
+          "w": "300",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "956",
+          "y": "689",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1747",
+          "typeID": "Label",
+          "zOrder": "58",
+          "measuredW": "125",
+          "measuredH": "28",
+          "x": "1043",
+          "y": "701",
+          "properties": {
+            "size": "20",
+            "text": "Asynchronism"
+          }
+        },
+        {
+          "ID": "1748",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "818",
+          "y": "717",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1751",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "767",
+          "properties": {
+            "controlName": "check:offload-heavy"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1752",
+          "typeID": "__group__",
+          "zOrder": "60",
+          "measuredW": "449",
+          "measuredH": "28",
+          "w": "449",
+          "h": "28",
+          "x": "899",
+          "y": "768",
+          "properties": {
+            "controlName": "offload-heavy"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "449",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Offload heavy tasks to background jobs or queues"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1753",
+          "typeID": "__group__",
+          "zOrder": "61",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "807",
+          "properties": {
+            "controlName": "check:message-brokers"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1754",
+          "typeID": "__group__",
+          "zOrder": "62",
+          "measuredW": "448",
+          "measuredH": "59",
+          "w": "448",
+          "h": "59",
+          "x": "899",
+          "y": "808",
+          "properties": {
+            "controlName": "message-brokers"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "448",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Utilize message brokers for async communication"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "163",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "between services."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1755",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "598",
+          "properties": {
+            "controlName": "check:unnecessary-computation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1756",
+          "typeID": "__group__",
+          "zOrder": "64",
+          "measuredW": "426",
+          "measuredH": "60",
+          "w": "426",
+          "h": "60",
+          "x": "899",
+          "y": "599",
+          "properties": {
+            "controlName": "unnecessary-computation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "426",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Minimise unnecessary processing or expensive"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "241",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "32",
+                  "properties": {
+                    "size": "20",
+                    "text": "computation on the server."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1757",
+          "typeID": "Arrow",
+          "zOrder": "65",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "817",
+          "y": "919",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1758",
+          "typeID": "Canvas",
+          "zOrder": "66",
+          "w": "300",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "956",
+          "y": "891",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1759",
+          "typeID": "Label",
+          "zOrder": "67",
+          "measuredW": "231",
+          "measuredH": "28",
+          "x": "990",
+          "y": "903",
+          "properties": {
+            "size": "20",
+            "text": "Load Balancing & Scaling"
+          }
+        },
+        {
+          "ID": "1760",
+          "typeID": "__group__",
+          "zOrder": "68",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "965",
+          "properties": {
+            "controlName": "check:scaling-strategies"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1761",
+          "typeID": "__group__",
+          "zOrder": "69",
+          "measuredW": "497",
+          "measuredH": "28",
+          "w": "497",
+          "h": "28",
+          "x": "899",
+          "y": "966",
+          "properties": {
+            "controlName": "scaling-strategies"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "497",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use Horizontal or Vertical scaling whatever appropriate"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1762",
+          "typeID": "__group__",
+          "zOrder": "70",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1004",
+          "properties": {
+            "controlName": "check:load-balancing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1763",
+          "typeID": "__group__",
+          "zOrder": "71",
+          "measuredW": "479",
+          "measuredH": "28",
+          "w": "479",
+          "h": "28",
+          "x": "899",
+          "y": "1005",
+          "properties": {
+            "controlName": "load-balancing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "479",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use load balancing to distribute traffic across servers"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1764",
+          "typeID": "Canvas",
+          "zOrder": "72",
+          "w": "300",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "956",
+          "y": "1059",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1765",
+          "typeID": "Label",
+          "zOrder": "73",
+          "measuredW": "168",
+          "measuredH": "28",
+          "x": "1022",
+          "y": "1071",
+          "properties": {
+            "size": "20",
+            "text": "Code Optimization"
+          }
+        },
+        {
+          "ID": "1766",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "817",
+          "y": "1085",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1767",
+          "typeID": "__group__",
+          "zOrder": "74",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1176",
+          "properties": {
+            "controlName": "check:profile-code"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1768",
+          "typeID": "__group__",
+          "zOrder": "75",
+          "measuredW": "474",
+          "measuredH": "28",
+          "w": "474",
+          "h": "28",
+          "x": "899",
+          "y": "1177",
+          "properties": {
+            "controlName": "profile-code"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "474",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Profile your code to identify performance bottlenecks"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1769",
+          "typeID": "__group__",
+          "zOrder": "76",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1215",
+          "properties": {
+            "controlName": "check:optimize-algorithms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1770",
+          "typeID": "__group__",
+          "zOrder": "77",
+          "measuredW": "410",
+          "measuredH": "28",
+          "w": "410",
+          "h": "28",
+          "x": "899",
+          "y": "1216",
+          "properties": {
+            "controlName": "optimize-algorithms"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "410",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Optimize algorithms and data structures used"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1771",
+          "typeID": "__group__",
+          "zOrder": "78",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1252",
+          "properties": {
+            "controlName": "check:critical-paths"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1773",
+          "typeID": "__group__",
+          "zOrder": "80",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1313",
+          "properties": {
+            "controlName": "check:cleanup-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1774",
+          "typeID": "__group__",
+          "zOrder": "81",
+          "measuredW": "491",
+          "measuredH": "96",
+          "w": "491",
+          "h": "96",
+          "x": "262",
+          "y": "1314",
+          "properties": {
+            "controlName": "cleanup-data"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "491",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Regularly clean up unused data and perform database"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "438",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "34",
+                  "properties": {
+                    "size": "20",
+                    "text": "maintenance tasks like vacuuming, indexing, and"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "170",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "68",
+                  "properties": {
+                    "size": "20",
+                    "text": "optimizing queries."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1775",
+          "typeID": "__group__",
+          "zOrder": "82",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1423",
+          "properties": {
+            "controlName": "check:slow-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1776",
+          "typeID": "__group__",
+          "zOrder": "83",
+          "measuredW": "463",
+          "measuredH": "28",
+          "w": "463",
+          "h": "28",
+          "x": "262",
+          "y": "1424",
+          "properties": {
+            "controlName": "slow-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "463",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Enable slow-query logging and keep an eye on that."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1777",
+          "typeID": "Arrow",
+          "zOrder": "84",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "814",
+          "y": "1976",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1778",
+          "typeID": "Canvas",
+          "zOrder": "85",
+          "w": "300",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "956",
+          "y": "1951",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1779",
+          "typeID": "Label",
+          "zOrder": "86",
+          "measuredW": "75",
+          "measuredH": "28",
+          "x": "1068",
+          "y": "1962",
+          "properties": {
+            "size": "20",
+            "text": "Network"
+          }
+        },
+        {
+          "ID": "1780",
+          "typeID": "__group__",
+          "zOrder": "87",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "855",
+          "y": "2023",
+          "properties": {
+            "controlName": "check:network-latency"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1781",
+          "typeID": "__group__",
+          "zOrder": "88",
+          "measuredW": "447",
+          "measuredH": "59",
+          "w": "447",
+          "h": "59",
+          "x": "900",
+          "y": "2025",
+          "properties": {
+            "controlName": "network-latency"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "447",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Minimize network latency by hosting your backend"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "174",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "close to your users."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1782",
+          "typeID": "__group__",
+          "zOrder": "89",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "855",
+          "y": "2141",
+          "properties": {
+            "controlName": "check:cdns"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1783",
+          "typeID": "__group__",
+          "zOrder": "90",
+          "measuredW": "471",
+          "measuredH": "28",
+          "w": "471",
+          "h": "28",
+          "x": "900",
+          "y": "2143",
+          "properties": {
+            "controlName": "cdns"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "471",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use CDNs for static and frequently accessed assets"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1784",
+          "typeID": "__group__",
+          "zOrder": "91",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1873",
+          "properties": {
+            "controlName": "check:regular-audits"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1785",
+          "typeID": "__group__",
+          "zOrder": "92",
+          "measuredW": "412",
+          "measuredH": "28",
+          "w": "412",
+          "h": "28",
+          "x": "264",
+          "y": "1874",
+          "properties": {
+            "controlName": "regular-audits"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "412",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Regularly audit and update security measures"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1786",
+          "typeID": "__group__",
+          "zOrder": "93",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1760",
+          "properties": {
+            "controlName": "check:authentication-authorization"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1789",
+          "typeID": "__group__",
+          "zOrder": "51",
+          "measuredW": "520",
+          "measuredH": "58",
+          "w": "520",
+          "h": "58",
+          "x": "264",
+          "y": "588",
+          "properties": {
+            "controlName": "caching-locations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "__group__",
+                  "zOrder": "0",
+                  "measuredW": "488",
+                  "measuredH": "28",
+                  "w": "488",
+                  "h": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "488",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "Implement caching at various levels such as database"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "520",
+                  "measuredH": "28",
+                  "w": "520",
+                  "h": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "520",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "query results, HTML fragments, or even full-page caching."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1790",
+          "typeID": "Canvas",
+          "zOrder": "95",
+          "w": "300",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "956",
+          "y": "1640",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1791",
+          "typeID": "Label",
+          "zOrder": "96",
+          "measuredW": "215",
+          "measuredH": "28",
+          "x": "998",
+          "y": "1652",
+          "properties": {
+            "size": "20",
+            "text": "Monitoring and Logging"
+          }
+        },
+        {
+          "ID": "1792",
+          "typeID": "__group__",
+          "zOrder": "97",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "852",
+          "y": "1727",
+          "properties": {
+            "controlName": "check:monitoring-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1793",
+          "typeID": "__group__",
+          "zOrder": "98",
+          "measuredW": "482",
+          "measuredH": "59",
+          "w": "482",
+          "h": "59",
+          "x": "898",
+          "y": "1728",
+          "properties": {
+            "controlName": "monitoring-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "453",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement comprehensive monitoring and logging"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "482",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "to track performance metrics and troubleshoot issues"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1794",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "817",
+          "y": "1666",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1795",
+          "typeID": "__group__",
+          "zOrder": "99",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "852",
+          "y": "1800",
+          "properties": {
+            "controlName": "check:prometheus-graphana"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1796",
+          "typeID": "__group__",
+          "zOrder": "100",
+          "measuredW": "421",
+          "measuredH": "28",
+          "w": "421",
+          "h": "28",
+          "x": "898",
+          "y": "1801",
+          "properties": {
+            "controlName": "prometheus-graphana"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "421",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use tools like Prometheus, Grafana, ELK stack."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1797",
+          "typeID": "__group__",
+          "zOrder": "101",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1466",
+          "properties": {
+            "controlName": "check:replication"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1798",
+          "typeID": "__group__",
+          "zOrder": "102",
+          "measuredW": "428",
+          "measuredH": "60",
+          "w": "428",
+          "h": "60",
+          "x": "262",
+          "y": "1466",
+          "properties": {
+            "controlName": "replication"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "428",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Set up database replication for redundancy and"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "256",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "32",
+                  "properties": {
+                    "size": "20",
+                    "text": "improved read performance."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1799",
+          "typeID": "__group__",
+          "zOrder": "103",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1536",
+          "properties": {
+            "controlName": "check:use-db-sharding"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1800",
+          "typeID": "__group__",
+          "zOrder": "104",
+          "measuredW": "436",
+          "measuredH": "28",
+          "w": "436",
+          "h": "28",
+          "x": "262",
+          "y": "1537",
+          "properties": {
+            "controlName": "use-db-sharding"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "436",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use DB sharding for data distribution if required."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1801",
+          "typeID": "__group__",
+          "zOrder": "105",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1323",
+          "properties": {
+            "controlName": "check:compiled-languages"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1802",
+          "typeID": "__group__",
+          "zOrder": "106",
+          "measuredW": "492",
+          "measuredH": "59",
+          "w": "492",
+          "h": "59",
+          "x": "899",
+          "y": "1323",
+          "properties": {
+            "controlName": "compiled-languages"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "492",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Consider using compiled languages like Go or Rust for"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "388",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "performance-critical parts of your backend."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1803",
+          "typeID": "__group__",
+          "zOrder": "107",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1397",
+          "properties": {
+            "controlName": "check:architectural-styles"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1804",
+          "typeID": "__group__",
+          "zOrder": "108",
+          "measuredW": "474",
+          "measuredH": "59",
+          "w": "474",
+          "h": "59",
+          "x": "899",
+          "y": "1398",
+          "properties": {
+            "controlName": "architectural-styles"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "392",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Look into different architectural styles (SOA,"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "474",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "Micro services) and decompose services if required."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1807",
+          "typeID": "__group__",
+          "zOrder": "109",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1012",
+          "properties": {
+            "controlName": "check:orm-queries"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1808",
+          "typeID": "__group__",
+          "zOrder": "110",
+          "measuredW": "396",
+          "measuredH": "28",
+          "w": "396",
+          "h": "28",
+          "x": "262",
+          "y": "1013",
+          "properties": {
+            "controlName": "orm-queries"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "396",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Keep an eye on and fine-tune ORM queries."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1809",
+          "typeID": "__group__",
+          "zOrder": "111",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1053",
+          "properties": {
+            "controlName": "check:lazy-eager"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1810",
+          "typeID": "__group__",
+          "zOrder": "112",
+          "measuredW": "458",
+          "measuredH": "59",
+          "w": "458",
+          "h": "59",
+          "x": "262",
+          "y": "1054",
+          "properties": {
+            "controlName": "lazy-eager"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "458",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Utilize features such as lazy loading, eager loading,"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "428",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "and batch processing to optimize data retrieval."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1812",
+          "typeID": "__group__",
+          "zOrder": "113",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1577",
+          "properties": {
+            "controlName": "check:profiling-tools"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1813",
+          "typeID": "__group__",
+          "zOrder": "114",
+          "measuredW": "391",
+          "measuredH": "28",
+          "w": "391",
+          "h": "28",
+          "x": "262",
+          "y": "1578",
+          "properties": {
+            "controlName": "profiling-tools"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "391",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use profiling tools offered by your database."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1814",
+          "typeID": "__group__",
+          "zOrder": "115",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "853",
+          "y": "1473",
+          "properties": {
+            "controlName": "check:connection-timeouts"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1815",
+          "typeID": "__group__",
+          "zOrder": "116",
+          "measuredW": "470",
+          "measuredH": "60",
+          "w": "470",
+          "h": "60",
+          "x": "899",
+          "y": "1474",
+          "properties": {
+            "controlName": "connection-timeouts"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "470",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Set appropriate connection timeouts and implement"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "455",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "32",
+                  "properties": {
+                    "size": "20",
+                    "text": "efficient retry mechanism to handle network issues"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1816",
+          "typeID": "__group__",
+          "zOrder": "117",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "854",
+          "y": "1553",
+          "properties": {
+            "controlName": "check:similar-requests"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1817",
+          "typeID": "__group__",
+          "zOrder": "118",
+          "measuredW": "483",
+          "measuredH": "59",
+          "w": "483",
+          "h": "59",
+          "x": "900",
+          "y": "1554",
+          "properties": {
+            "controlName": "similar-requests"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "483",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Batch similar requests together to minimize overhead"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "342",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "and reduce the number of round trips."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1818",
+          "typeID": "__group__",
+          "zOrder": "119",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "852",
+          "y": "1846",
+          "properties": {
+            "controlName": "check:async-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1819",
+          "typeID": "__group__",
+          "zOrder": "120",
+          "measuredW": "467",
+          "measuredH": "59",
+          "w": "467",
+          "h": "59",
+          "x": "898",
+          "y": "1846",
+          "properties": {
+            "controlName": "async-logging"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "467",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use asynchronous logging mechanisms to minimise"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "196",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "size": "20",
+                    "text": "the logging overhead."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1820",
+          "typeID": "__group__",
+          "zOrder": "121",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "467",
+          "properties": {
+            "controlName": "check:utilize-caching"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1821",
+          "typeID": "__group__",
+          "zOrder": "122",
+          "measuredW": "504",
+          "measuredH": "28",
+          "w": "504",
+          "h": "28",
+          "x": "264",
+          "y": "468",
+          "properties": {
+            "controlName": "utilize-caching"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "504",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Utilize caching mechanisms (HTTP, Server/Client, CDN)"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1824",
+          "typeID": "__group__",
+          "zOrder": "123",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "854",
+          "y": "1136",
+          "properties": {
+            "controlName": "check:streaming-large"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1825",
+          "typeID": "__group__",
+          "zOrder": "124",
+          "measuredW": "454",
+          "measuredH": "28",
+          "w": "454",
+          "h": "28",
+          "x": "900",
+          "y": "1137",
+          "properties": {
+            "controlName": "streaming-large"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "454",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement streaming of large requests/responses"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1826",
+          "typeID": "__group__",
+          "zOrder": "125",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "855",
+          "y": "2094",
+          "properties": {
+            "controlName": "check:keep-alive"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1827",
+          "typeID": "__group__",
+          "zOrder": "126",
+          "measuredW": "500",
+          "measuredH": "28",
+          "w": "500",
+          "h": "28",
+          "x": "900",
+          "y": "2096",
+          "properties": {
+            "controlName": "keep-alive"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "500",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Utilize HTTP keep-alive to reduce connection overhead"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1828",
+          "typeID": "__group__",
+          "zOrder": "127",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "864",
+          "properties": {
+            "controlName": "check:connection-pool-settings"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1829",
+          "typeID": "__group__",
+          "zOrder": "128",
+          "measuredW": "517",
+          "measuredH": "89",
+          "w": "517",
+          "h": "89",
+          "x": "261",
+          "y": "865",
+          "properties": {
+            "controlName": "connection-pool-settings"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "516",
+                  "measuredH": "28",
+                  "x": "1",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Fine-tune connection pool settings (e.g. max connections"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "457",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "idle timeout, connection reuse params) to optimize"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "498",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "61",
+                  "properties": {
+                    "size": "20",
+                    "text": "resource utilization and prevent connection exhaustion."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1830",
+          "typeID": "__group__",
+          "zOrder": "129",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "1204",
+          "properties": {
+            "controlName": "check:denormalize"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1831",
+          "typeID": "__group__",
+          "zOrder": "130",
+          "measuredW": "528",
+          "measuredH": "58",
+          "w": "528",
+          "h": "58",
+          "x": "262",
+          "y": "1205",
+          "properties": {
+            "controlName": "denormalize"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "528",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Consider denormalizing database schema for ready-heavy"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "356",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "workloads and reduce JOIN operations."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1832",
+          "typeID": "__group__",
+          "zOrder": "131",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "855",
+          "y": "2181",
+          "properties": {
+            "controlName": "check:prefetch-preload"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1833",
+          "typeID": "__group__",
+          "zOrder": "132",
+          "measuredW": "483",
+          "measuredH": "63",
+          "w": "483",
+          "h": "63",
+          "x": "900",
+          "y": "2183",
+          "properties": {
+            "controlName": "prefetch-preload"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "482",
+                  "measuredH": "28",
+                  "x": "1",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Prefetch or preload resources, data, or dependencies"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "480",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "35",
+                  "properties": {
+                    "size": "20",
+                    "text": "required for subsequent requests to minimise latency"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1834",
+          "typeID": "Arrow",
+          "zOrder": "133",
+          "w": "587",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "225",
+          "y": "1976",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "4273622",
+            "p0": {
+              "x": -0.2686368305519409,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.5001077701859015,
+              "y": 0.00033913823433391014
+            },
+            "p2": {
+              "x": 587.2092515685516,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1835",
+          "typeID": "Canvas",
+          "zOrder": "134",
+          "w": "234",
+          "h": "50",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "340",
+          "y": "1951",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1836",
+          "typeID": "Label",
+          "zOrder": "135",
+          "measuredW": "187",
+          "measuredH": "28",
+          "x": "363",
+          "y": "1962",
+          "properties": {
+            "size": "20",
+            "text": "Performance Testing"
+          }
+        },
+        {
+          "ID": "1837",
+          "typeID": "__group__",
+          "zOrder": "136",
+          "measuredW": "30",
+          "measuredH": "30",
+          "w": "30",
+          "h": "30",
+          "x": "218",
+          "y": "2033",
+          "properties": {
+            "controlName": "check:perf-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "30",
+                  "h": "30",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0"
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1838",
+          "typeID": "__group__",
+          "zOrder": "137",
+          "measuredW": "510",
+          "measuredH": "89",
+          "w": "510",
+          "h": "89",
+          "x": "264",
+          "y": "2033",
+          "properties": {
+            "controlName": "perf-testing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "508",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Conduct regular performance testing and benchmarking"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "510",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "to identify performance regressions, track improvements,"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "390",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "61",
+                  "properties": {
+                    "size": "20",
+                    "text": "and fine-tune optimization efforts over time."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1841",
+          "typeID": "Arrow",
+          "zOrder": "138",
+          "w": "1",
+          "h": "76",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "201",
+          "y": "376",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.49999999999999994,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 76.17275043077757
+            },
+            "stroke": "dotted",
+            "color": "16777215"
+          }
+        },
+        {
+          "ID": "1842",
+          "typeID": "__group__",
+          "zOrder": "27",
+          "measuredW": "505",
+          "measuredH": "58",
+          "w": "505",
+          "h": "58",
+          "x": "264",
+          "y": "661",
+          "properties": {
+            "controlName": "cache-invalidation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "__group__",
+                  "zOrder": "0",
+                  "measuredW": "505",
+                  "measuredH": "28",
+                  "w": "505",
+                  "h": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "505",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "Use proper cache-invalidation strategies to ensure data"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "409",
+                  "measuredH": "28",
+                  "w": "409",
+                  "h": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "409",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "consistency and prevent stale content issues."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1844",
+          "typeID": "__group__",
+          "zOrder": "94",
+          "measuredW": "483",
+          "measuredH": "59",
+          "w": "483",
+          "h": "59",
+          "x": "263",
+          "y": "1761",
+          "properties": {
+            "controlName": "authentication-authorization"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "__group__",
+                  "zOrder": "0",
+                  "measuredW": "482",
+                  "measuredH": "28",
+                  "w": "482",
+                  "h": "28",
+                  "x": "1",
+                  "y": "0",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "482",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "Implement proper authentication and authorization to"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "266",
+                  "measuredH": "28",
+                  "w": "266",
+                  "h": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "266",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "prevent unauthorized access."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1845",
+          "typeID": "__group__",
+          "zOrder": "79",
+          "measuredW": "427",
+          "measuredH": "59",
+          "w": "427",
+          "h": "59",
+          "x": "899",
+          "y": "1253",
+          "properties": {
+            "controlName": "critical-paths"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "__group__",
+                  "zOrder": "0",
+                  "measuredW": "427",
+                  "measuredH": "28",
+                  "w": "427",
+                  "h": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "427",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "Identify and optimize critical paths or frequently"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "411",
+                  "measuredH": "28",
+                  "w": "411",
+                  "h": "28",
+                  "x": "0",
+                  "y": "31",
+                  "properties": {
+                    "controlName": "minimize-iframe-count"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "411",
+                          "measuredH": "28",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "20",
+                            "text": "accessed endpoints for overall system health."
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 1 copy",
+      "order": 1000009.1336392317,
+      "parentID": null,
+      "notes": ""
+    },
+    "branchID": "Master",
+    "resourceID": "E62F7257-0C11-4024-8C48-67BDED6B975E",
+    "mockupH": "2352",
+    "mockupW": "1219",
+    "measuredW": "1420",
+    "measuredH": "2486",
+    "version": "1.0"
+  },
+  "groupOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "dependencies": [],
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
+}
