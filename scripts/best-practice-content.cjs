@@ -2,7 +2,10 @@ const fs = require('fs');
 const path = require('path');
 
 const OPEN_AI_API_KEY = process.env.OPEN_AI_API_KEY;
-const ALL_BEST_PRACTICES_DIR = path.join(__dirname, '../src/data/best-practices');
+const ALL_BEST_PRACTICES_DIR = path.join(
+  __dirname,
+  '../src/data/best-practices',
+);
 
 const bestPracticeId = process.argv[2];
 const bestPracticeTitle = bestPracticeId.replace(/-/g, ' ');
@@ -19,7 +22,11 @@ if (!allowedBestPracticeIds.includes(bestPracticeId)) {
   process.exit(1);
 }
 
-const BEST_PRACTICE_CONTENT_DIR = path.join(ALL_BEST_PRACTICES_DIR, bestPracticeId, 'content');
+const BEST_PRACTICE_CONTENT_DIR = path.join(
+  ALL_BEST_PRACTICES_DIR,
+  bestPracticeId,
+  'content',
+);
 const OpenAI = require('openai');
 
 const openai = new OpenAI({
@@ -37,10 +44,10 @@ function getFilesInFolder(folderPath, fileList = {}) {
       getFilesInFolder(filePath, fileList);
     } else if (stats.isFile()) {
       const fileUrl = filePath
-          .replace(BEST_PRACTICE_CONTENT_DIR, '') // Remove the content folder
-          .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
-          .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
-          .replace(/\.md$/, ''); // Remove `.md` from the end of file
+        .replace(BEST_PRACTICE_CONTENT_DIR, '') // Remove the content folder
+        .replace(/\/\d+-/g, '/') // Remove ordering info `/101-ecosystem`
+        .replace(/\/index\.md$/, '') // Make the `/index.md` to become the parent folder only
+        .replace(/\.md$/, ''); // Remove `.md` from the end of file
 
       fileList[fileUrl] = filePath;
     }
@@ -50,37 +57,46 @@ function getFilesInFolder(folderPath, fileList = {}) {
 }
 
 function writeTopicContent(topicTitle) {
-  let prompt = `I am reading a guide that has best practices about "${bestPracticeTitle}". I want to know more about "${topicTitle}". Write me a brief introductory paragraph about this and some tips on how I make sure of this? Behave as if you are the author of the guide.`;
+  let prompt = `I will give you a topic and you need to write a brief paragraph with examples (if possible) about why it is important for the "${bestPracticeTitle}". Just reply to the question without adding any other information about the prompt and use simple language. Also do not start your sentences with "XYZ is important because..". Your format should be as follows:
+
+# (Put a heading for the topic)
+
+(Write a brief paragraph about why it is important for the "${bestPracticeTitle})
+ 
+First topic is: ${topicTitle}`;
 
   console.log(`Generating '${topicTitle}'...`);
 
   return new Promise((resolve, reject) => {
     openai.chat.completions
-        .create({
-          model: 'gpt-4',
-          messages: [
-            {
-              role: 'user',
-              content: prompt,
-            },
-          ],
-        })
-        .then((response) => {
-          const article = response.choices[0].message.content;
+      .create({
+        model: 'gpt-4',
+        messages: [
+          {
+            role: 'user',
+            content: prompt,
+          },
+        ],
+      })
+      .then((response) => {
+        const article = response.choices[0].message.content;
 
-          resolve(article);
-        })
-        .catch((err) => {
-          reject(err);
-        });
+        resolve(article);
+      })
+      .catch((err) => {
+        reject(err);
+      });
   });
 }
 
 async function writeFileForGroup(group, topicUrlToPathMapping) {
   const topicId = group?.properties?.controlName;
-  const topicTitle = group?.children?.controls?.control?.find(
-      (control) => control?.typeID === 'Label',
-  )?.properties?.text;
+  const topicTitle = group?.children?.controls?.control
+    ?.filter((control) => control?.typeID === 'Label')
+    .map((control) => control?.properties?.text)
+    .join(' ')
+    .toLowerCase();
+
   const currTopicUrl = `/${topicId}`;
   if (currTopicUrl.startsWith('/check:')) {
     return;
@@ -110,8 +126,13 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
     return;
   }
 
-  const topicContent = await writeTopicContent(currTopicUrl);
-  newFileContent += `\n\n${topicContent}`;
+  if (!topicTitle) {
+    console.log(`Skipping ${topicId}. No title.`);
+    return;
+  }
+
+  const topicContent = await writeTopicContent(topicTitle);
+  newFileContent = `${topicContent}`;
 
   console.log(`Writing ${topicId}..`);
   fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
@@ -126,13 +147,13 @@ async function run() {
   const topicUrlToPathMapping = getFilesInFolder(BEST_PRACTICE_CONTENT_DIR);
 
   const bestPracticeJson = require(
-      path.join(ALL_BEST_PRACTICES_DIR, `${bestPracticeId}/${bestPracticeId}`),
+    path.join(ALL_BEST_PRACTICES_DIR, `${bestPracticeId}/${bestPracticeId}`),
   );
 
   const groups = bestPracticeJson?.mockup?.controls?.control?.filter(
-      (control) =>
-          control.typeID === '__group__' &&
-          !control.properties?.controlName?.startsWith('ext_link'),
+    (control) =>
+      control.typeID === '__group__' &&
+      !control.properties?.controlName?.startsWith('ext_link'),
   );
 
   if (!OPEN_AI_API_KEY) {
@@ -151,10 +172,10 @@ async function run() {
 }
 
 run()
-    .then(() => {
-      console.log('Done');
-    })
-    .catch((err) => {
-      console.error(err);
-      process.exit(1);
-    });
+  .then(() => {
+    console.log('Done');
+  })
+  .catch((err) => {
+    console.error(err);
+    process.exit(1);
+  });

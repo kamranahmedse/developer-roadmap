@@ -2619,92 +2619,6 @@
           }
         },
         {
-          "ID": "1789",
-          "typeID": "__group__",
-          "zOrder": "51",
-          "measuredW": "520",
-          "measuredH": "58",
-          "w": "520",
-          "h": "58",
-          "x": "264",
-          "y": "588",
-          "properties": {
-            "controlName": "caching-locations"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "__group__",
-                  "zOrder": "0",
-                  "measuredW": "488",
-                  "measuredH": "28",
-                  "w": "488",
-                  "h": "28",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "488",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "Implement caching at various levels such as database"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "__group__",
-                  "zOrder": "1",
-                  "measuredW": "520",
-                  "measuredH": "28",
-                  "w": "520",
-                  "h": "28",
-                  "x": "0",
-                  "y": "30",
-                  "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "520",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "query results, HTML fragments, or even full-page caching."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "1790",
           "typeID": "Canvas",
           "zOrder": "95",
@@ -3856,65 +3770,6 @@
           }
         },
         {
-          "ID": "1829",
-          "typeID": "__group__",
-          "zOrder": "128",
-          "measuredW": "517",
-          "measuredH": "89",
-          "w": "517",
-          "h": "89",
-          "x": "261",
-          "y": "865",
-          "properties": {
-            "controlName": "connection-pool-settings"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Label",
-                  "zOrder": "0",
-                  "measuredW": "516",
-                  "measuredH": "28",
-                  "x": "1",
-                  "y": "0",
-                  "properties": {
-                    "size": "20",
-                    "text": "Fine-tune connection pool settings (e.g. max connections"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "457",
-                  "measuredH": "28",
-                  "x": "0",
-                  "y": "30",
-                  "properties": {
-                    "size": "20",
-                    "text": "idle timeout, connection reuse params) to optimize"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "498",
-                  "measuredH": "28",
-                  "x": "0",
-                  "y": "61",
-                  "properties": {
-                    "size": "20",
-                    "text": "resource utilization and prevent connection exhaustion."
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
           "ID": "1830",
           "typeID": "__group__",
           "zOrder": "129",
@@ -4245,93 +4100,7 @@
           }
         },
         {
-          "ID": "1842",
-          "typeID": "__group__",
-          "zOrder": "27",
-          "measuredW": "505",
-          "measuredH": "58",
-          "w": "505",
-          "h": "58",
-          "x": "264",
-          "y": "661",
-          "properties": {
-            "controlName": "cache-invalidation"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "__group__",
-                  "zOrder": "0",
-                  "measuredW": "505",
-                  "measuredH": "28",
-                  "w": "505",
-                  "h": "28",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "505",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "Use proper cache-invalidation strategies to ensure data"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "__group__",
-                  "zOrder": "1",
-                  "measuredW": "409",
-                  "measuredH": "28",
-                  "w": "409",
-                  "h": "28",
-                  "x": "0",
-                  "y": "30",
-                  "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "409",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "consistency and prevent stale content issues."
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "1844",
+          "ID": "1852",
           "typeID": "__group__",
           "zOrder": "94",
           "measuredW": "483",
@@ -4348,68 +4117,28 @@
               "control": [
                 {
                   "ID": "0",
-                  "typeID": "__group__",
+                  "typeID": "Label",
                   "zOrder": "0",
                   "measuredW": "482",
                   "measuredH": "28",
-                  "w": "482",
-                  "h": "28",
                   "x": "1",
                   "y": "0",
                   "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "482",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "Implement proper authentication and authorization to"
-                          }
-                        }
-                      ]
-                    }
+                    "size": "20",
+                    "text": "Implement proper authentication and authorization to"
                   }
                 },
                 {
                   "ID": "1",
-                  "typeID": "__group__",
+                  "typeID": "Label",
                   "zOrder": "1",
                   "measuredW": "266",
                   "measuredH": "28",
-                  "w": "266",
-                  "h": "28",
                   "x": "0",
                   "y": "31",
                   "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "266",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "prevent unauthorized access."
-                          }
-                        }
-                      ]
-                    }
+                    "size": "20",
+                    "text": "prevent unauthorized access."
                   }
                 }
               ]
@@ -4417,7 +4146,158 @@
           }
         },
         {
-          "ID": "1845",
+          "ID": "1857",
+          "typeID": "__group__",
+          "zOrder": "27",
+          "measuredW": "505",
+          "measuredH": "58",
+          "w": "505",
+          "h": "58",
+          "x": "264",
+          "y": "661",
+          "properties": {
+            "controlName": "cache-invalidation"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "505",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Use proper cache-invalidation strategies to ensure data"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "409",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "consistency and prevent stale content issues."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1864",
+          "typeID": "__group__",
+          "zOrder": "51",
+          "measuredW": "520",
+          "measuredH": "58",
+          "w": "520",
+          "h": "58",
+          "x": "264",
+          "y": "588",
+          "properties": {
+            "controlName": "caching-locations"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "488",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Implement caching at various levels such as database"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "520",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "query results, HTML fragments, or even full-page caching."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1868",
+          "typeID": "__group__",
+          "zOrder": "128",
+          "measuredW": "517",
+          "measuredH": "89",
+          "w": "517",
+          "h": "89",
+          "x": "261",
+          "y": "865",
+          "properties": {
+            "controlName": "connection-pool-settings"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Label",
+                  "zOrder": "0",
+                  "measuredW": "516",
+                  "measuredH": "28",
+                  "x": "1",
+                  "y": "0",
+                  "properties": {
+                    "size": "20",
+                    "text": "Fine-tune connection pool settings (e.g. max connections"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "457",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "30",
+                  "properties": {
+                    "size": "20",
+                    "text": "idle timeout, connection reuse params) to optimize"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "498",
+                  "measuredH": "28",
+                  "x": "0",
+                  "y": "61",
+                  "properties": {
+                    "size": "20",
+                    "text": "resource utilization and prevent connection exhaustion."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1875",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "427",
@@ -4434,68 +4314,28 @@
               "control": [
                 {
                   "ID": "0",
-                  "typeID": "__group__",
+                  "typeID": "Label",
                   "zOrder": "0",
                   "measuredW": "427",
                   "measuredH": "28",
-                  "w": "427",
-                  "h": "28",
                   "x": "0",
                   "y": "0",
                   "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "427",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "Identify and optimize critical paths or frequently"
-                          }
-                        }
-                      ]
-                    }
+                    "size": "20",
+                    "text": "Identify and optimize critical paths or frequently"
                   }
                 },
                 {
                   "ID": "1",
-                  "typeID": "__group__",
+                  "typeID": "Label",
                   "zOrder": "1",
                   "measuredW": "411",
                   "measuredH": "28",
-                  "w": "411",
-                  "h": "28",
                   "x": "0",
                   "y": "31",
                   "properties": {
-                    "controlName": "minimize-iframe-count"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "411",
-                          "measuredH": "28",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "20",
-                            "text": "accessed endpoints for overall system health."
-                          }
-                        }
-                      ]
-                    }
+                    "size": "20",
+                    "text": "accessed endpoints for overall system health."
                   }
                 }
               ]
