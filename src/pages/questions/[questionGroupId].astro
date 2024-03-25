@@ -6,13 +6,12 @@ import Footer from '../../components/Footer.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
 import { QuestionsList } from '../../components/Questions/QuestionsList';
 
-import {
-  getAllQuestionGroups,
-  getQuestionGroupById,
-} from '../../lib/question-group';
+import { getQuestionGroupById } from '../../lib/question-group';
 
 const { questionGroupId } = Astro.params;
-const questionGroup = await getQuestionGroupById(questionGroupId);
+const questionGroup = await getQuestionGroupById(questionGroupId!).catch(
+  () => null,
+);
 if (!questionGroup) {
   return Astro.redirect('/404');
 }
@@ -40,7 +39,7 @@ const { frontmatter } = questionGroup;
             >
               &larr;
             </span>
-             Back to all Questions
+            Back to all Questions
           </a>
         </div>
         <h1 class='mb-1 text-2xl font-bold sm:mb-5 sm:text-5xl'>

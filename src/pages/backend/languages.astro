@@ -5,7 +5,10 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
 
 const guideId = 'backend-languages';
-const guide = await getGuideById('backend-languages');
+const guide = await getGuideById(guideId).catch(() => null);
+if (!guide) {
+  return Astro.redirect('/404');
+}
 
 const { frontmatter: guideData } = guide;
 ---
