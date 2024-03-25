@@ -10,7 +10,7 @@ title: 'Backend Performance Best Practices'
 description: 'Detailed list of best practices to improve your backend performance'
 dimensions:
   width: 968
-  height: 1860.38
+  height: 1789.23
 schema:
   headline: 'Backend Performance Best Practices'
   description: 'Detailed list of best practices to improve the backend performance of your website. Each best practice carries further details and how to implement that best practice.'
