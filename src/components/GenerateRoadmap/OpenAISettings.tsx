@@ -33,22 +33,24 @@ export function OpenAISettings(props: OpenAISettingsProps) {
     <div className="p-4">
       <button
         onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none hover:opacity-70 focus:outline-none"
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
       >
         <ChevronLeft size={16} />
-        Back
+        Back to options
       </button>
 
       <h2 className="text-xl font-semibold text-gray-800">OpenAI Settings</h2>
-      <p className="mt-2 text-gray-800 text-sm leading-normal">
+      <p className="mt-2 text-sm leading-normal text-gray-500">
+        Add your OpenAI API key below to bypass the roadmap generation limits.
+        You can use your existing key or{' '}
         <a
-          className="underline underline-offset-2"
+          className="underline underline-offset-2 hover:text-gray-900"
           href={'https://platform.openai.com/signup'}
           target="_blank"
         >
-          Use your existing OpenAI API key or create a new one
-        </a>{' '}
-        to bypass the roadmap generation limits.
+          create a new one here
+        </a>
+        .
       </p>
 
       <form
@@ -146,7 +148,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
             onClick={() => {
               onClose();
             }}
-            className="mt-1 w-full rounded-md bg-red-500 px-4 py-2 text-white transition-colors hover:bg-black hover:bg-red-700"
+            className="mt-1 w-full rounded-md border border-red-500 px-4 py-2 text-sm text-red-600 transition-colors hover:bg-red-700 hover:text-white"
           >
             Cancel
           </button>
@@ -159,7 +161,7 @@ export function OpenAISettings(props: OpenAISettingsProps) {
               onClose();
               toast.success('OpenAI API key removed');
             }}
-            className="mt-1 w-full rounded-md border border-red-500 px-4 py-2 transition-colors text-red-600 hover:bg-red-700 hover:text-white"
+            className="mt-1 w-full rounded-md border border-red-500 px-4 py-2 text-sm text-red-600 transition-colors hover:bg-red-700 hover:text-white"
           >
             Remove API Key
           </button>

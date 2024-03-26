@@ -3,6 +3,7 @@ import { useAuth } from '../../hooks/use-auth';
 import { useCopyText } from '../../hooks/use-copy-text';
 import { useToast } from '../../hooks/use-toast';
 import { useRef } from 'react';
+import { cn } from '../../lib/classname.ts';
 
 type ReferYourFriendProps = {
   onBack: () => void;
@@ -31,36 +32,50 @@ export function ReferYourFriend(props: ReferYourFriendProps) {
     <div className="p-4">
       <button
         onClick={onBack}
-        className="mb-5 flex items-center gap-1.5 text-sm leading-none hover:opacity-70 focus:outline-none"
+        className="mb-5 flex items-center gap-1.5 text-sm leading-none opacity-40 transition-opacity hover:opacity-100 focus:outline-none"
       >
         <ChevronLeft size={16} />
-        Back
+        Back to options
       </button>
 
-      <h2 className="text-xl font-medium text-gray-800">Refer your Friends</h2>
-      <p className="mt-2 text-sm text-gray-700">
-        Share the limit code below. When someone signs up with the link below
-        you will get extra roadmaps.
+      <h2 className="text-xl font-semibold text-gray-800">
+        Refer your Friends
+      </h2>
+      <p className="mt-2 text-sm text-gray-500">
+        Share the URL below with your friends. When they sign up with your link,
+        you will get extra roadmap generation credits.
       </p>
 
-      <label className="mt-4 flex items-stretch overflow-hidden rounded-md border bg-gray-50">
+      <label className="mt-4 flex flex-col gap-2">
         <input
           ref={inputRef}
-          className="w-full bg-transparent p-2 px-2.5 text-gray-700 focus:outline-none"
+          className="w-full rounded-md border bg-gray-100 p-2 px-2.5 text-gray-700 focus:outline-none"
           value={referralLink}
           readOnly={true}
           onClick={handleCopy}
         />
 
         <button
-          className="h-10 border-l p-2 px-2.5"
+          className={cn(
+            'flex h-10 items-center justify-center gap-1.5 rounded-md p-2 px-2.5 text-sm',
+            {
+              'bg-green-500 text-black transition-colors': isCopied,
+              'bg-black text-white rounded-md': !isCopied,
+            },
+          )}
           onClick={handleCopy}
           disabled={isCopied}
         >
           {isCopied ? (
-            <Check className="h-4 w-4 text-green-600" />
+            <>
+              <Check className="h-4 w-4" />
+              Copied to Clipboard
+            </>
           ) : (
-            <Clipboard className="h-4 w-4" />
+            <>
+              <Clipboard className="h-4 w-4" />
+              Copy URL
+            </>
           )}
         </button>
       </label>
