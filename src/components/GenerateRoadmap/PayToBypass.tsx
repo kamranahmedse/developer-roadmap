@@ -83,7 +83,7 @@ export function PayToBypass(props: PayToBypassProps) {
             htmlFor={amountId}
             className="mb-2 block text-sm font-semibold"
           >
-            How much are you willing to pay for this?
+            How much are you willing to pay for this? *
           </label>
           <input
             id={amountId}
@@ -99,7 +99,7 @@ export function PayToBypass(props: PayToBypassProps) {
             htmlFor={roadmapCountId}
             className="mb-2 block text-sm font-semibold"
           >
-            How many roadmaps you will be generating (daily, or monthly)?
+            How many roadmaps you will be generating (daily, or monthly)? *
           </label>
           <textarea
             id={roadmapCountId}
@@ -111,7 +111,7 @@ export function PayToBypass(props: PayToBypassProps) {
         </div>
         <div>
           <label htmlFor={usageId} className="mb-2 block text-sm font-semibold">
-            How will you be using this?
+            How will you be using this feature? *
           </label>
           <textarea
             id={usageId}
@@ -126,7 +126,7 @@ export function PayToBypass(props: PayToBypassProps) {
             htmlFor={feedbackId}
             className="mb-2 block text-sm font-semibold"
           >
-            Do you have any feedback?
+            Do you have any feedback for us to improve this feature?
           </label>
           <textarea
             id={feedbackId}
