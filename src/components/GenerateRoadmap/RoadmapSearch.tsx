@@ -49,6 +49,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
       {isConfiguring && (
         <IncreaseRoadmapLimit
           onClose={() => {
+            setOpenAPIKey(getOpenAIKey()!);
             setIsConfiguring(false);
             loadAIRoadmapLimit();
           }}

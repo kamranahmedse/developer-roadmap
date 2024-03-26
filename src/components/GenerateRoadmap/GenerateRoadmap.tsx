@@ -113,7 +113,7 @@ export function GenerateRoadmap() {
   const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
   const [isConfiguring, setIsConfiguring] = useState(false);
 
-  const openAPIKey = getOpenAIKey();
+  const [openAPIKey, setOpenAPIKey] = useState<string | undefined>(getOpenAIKey());
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
   const isAuthenticatedUser = isLoggedIn();
 
@@ -415,6 +415,7 @@ export function GenerateRoadmap() {
       {isConfiguring && (
         <IncreaseRoadmapLimit
           onClose={() => {
+            setOpenAPIKey(getOpenAIKey());
             setIsConfiguring(false);
             loadAIRoadmapLimit().finally(() => null);
           }}

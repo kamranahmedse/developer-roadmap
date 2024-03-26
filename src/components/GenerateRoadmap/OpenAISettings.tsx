@@ -39,20 +39,16 @@ export function OpenAISettings(props: OpenAISettingsProps) {
         Back
       </button>
 
-      <h2 className="text-xl font-medium text-gray-800">OpenAI Settings</h2>
-      <p className="mt-2 text-sm text-gray-700">
-        AI Roadmap generator uses OpenAI's GPT-4 model to generate roadmaps.
-      </p>
-
-      <p className="mt-4">
+      <h2 className="text-xl font-semibold text-gray-800">OpenAI Settings</h2>
+      <p className="mt-2 text-gray-800 text-sm leading-normal">
         <a
-          className="font-semibold underline underline-offset-2"
+          className="underline underline-offset-2"
           href={'https://platform.openai.com/signup'}
           target="_blank"
         >
-          Create an account on OpenAI
+          Use your existing OpenAI API key or create a new one
         </a>{' '}
-        and enter your API key below to enable the AI Roadmap generator
+        to bypass the roadmap generation limits.
       </p>
 
       <form
@@ -163,9 +159,9 @@ export function OpenAISettings(props: OpenAISettingsProps) {
               onClose();
               toast.success('OpenAI API key removed');
             }}
-            className="mt-1 w-full rounded-md bg-red-500 px-4 py-2 text-white transition-colors hover:bg-black hover:bg-red-700"
+            className="mt-1 w-full rounded-md border border-red-500 px-4 py-2 transition-colors text-red-600 hover:bg-red-700 hover:text-white"
           >
-            Reset to Default Key
+            Remove API Key
           </button>
         )}
       </form>

@@ -9,13 +9,13 @@ export function PayToBypass(props: PayToBypassProps) {
   const { onBack } = props;
   const user = useAuth();
 
-  const userId = 'entry.1413457780';
-  const nameId = 'entry.1392563224';
-  const emailId = 'entry.751378648';
-  const amountId = 'entry.1455362994';
-  const roadmapCountId = 'entry.2037612514';
-  const usageId = 'entry.1297704217';
-  const feedbackId = 'entry.475175421';
+  const userId = 'entry.1665642993';
+  const nameId = 'entry.527005328';
+  const emailId = 'entry.982906376';
+  const amountId = 'entry.1826002937';
+  const roadmapCountId = 'entry.1161404075';
+  const usageId = 'entry.535914744';
+  const feedbackId = 'entry.1024388959';
 
   return (
     <div className="p-4">
@@ -35,7 +35,8 @@ export function PayToBypass(props: PayToBypassProps) {
 
       <form
         className="mt-4 flex flex-col gap-3"
-        action="https://docs.google.com/forms/d/e/1FAIpQLSePb4E2R0Z44STATnCD7j5E7EShHoEZPcVbiQREXplFlWwtng/formResponse"
+        action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeec1oboTc9vCWHxmoKsC5NIbACpQEk7erp8wBKJMz-nzC7LQ/formResponse"
+        target="_blank"
       >
         <div className="sr-only" aria-hidden="true">
           <label htmlFor={userId} className="sr-only">

@@ -41,7 +41,9 @@ export function IncreaseRoadmapLimit(props: IncreaseRoadmapLimitProps) {
 
       {activeTab === 'api-key' && (
         <OpenAISettings
-          onClose={() => setActiveTab(null)}
+          onClose={() => {
+            onClose();
+          }}
           onBack={() => setActiveTab(null)}
         />
       )}
