@@ -29,7 +29,7 @@ export default defineConfig({
               'mailto:',
               'https://github.com/kamranahmedse',
               'https://thenewstack.io',
-              'https://cs.fyi',
+              'https://kamranahmed.info',
               'https://roadmap.sh',
             ];
             if (whiteListedStarts.some((start) => href.startsWith(start))) {

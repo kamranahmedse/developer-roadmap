@@ -5,7 +5,7 @@ const CONTENT_DIR = path.join(__dirname, '../content');
 // Directory containing the best-practices
 const BEST_PRACTICE_CONTENT_DIR = path.join(
   __dirname,
-  '../src/data/best-practices'
+  '../src/data/best-practices',
 );
 const bestPracticeId = process.argv[2];
 
@@ -33,18 +33,18 @@ if (!bestPracticeDirName) {
 
 const bestPracticeDirPath = path.join(
   BEST_PRACTICE_CONTENT_DIR,
-  bestPracticeDirName
+  bestPracticeDirName,
 );
 const bestPracticeContentDirPath = path.join(
   BEST_PRACTICE_CONTENT_DIR,
   bestPracticeDirName,
-  'content'
+  'content',
 );
 
 // If best practice content already exists do not proceed as it would override the files
 if (fs.existsSync(bestPracticeContentDirPath)) {
   console.error(
-    `Best Practice content already exists @ ${bestPracticeContentDirPath}`
+    `Best Practice content already exists @ ${bestPracticeContentDirPath}`,
   );
   process.exit(1);
 }
@@ -88,10 +88,12 @@ function prepareDirTree(control, dirTree) {
   return { dirTree };
 }
 
-const bestPractice = require(path.join(
-  __dirname,
-  `../public/jsons/best-practices/${bestPracticeId}`
-));
+const bestPractice = require(
+  path.join(
+    __dirname,
+    `../src/data/best-practices/${bestPracticeId}/${bestPracticeId}`,
+  ),
+);
 const controls = bestPractice.mockup.controls.control;
 
 // Prepare the dir tree that we will be creating
