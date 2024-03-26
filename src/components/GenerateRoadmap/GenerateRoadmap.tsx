@@ -16,6 +16,7 @@ import {
   getOpenAIKey,
   isLoggedIn,
   removeAuthToken,
+  setAIReferralCode,
   visitAIRoadmap,
 } from '../../lib/jwt';
 import { RoadmapSearch } from './RoadmapSearch.tsx';
@@ -38,6 +39,7 @@ import { OpenAISettings } from './OpenAISettings.tsx';
 import { IS_KEY_ONLY_ROADMAP_GENERATION } from '../../lib/ai.ts';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
 import { useParams } from '../../hooks/use-params.ts';
+import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 import { AuthenticationForm } from '../AuthenticationFlow/AuthenticationForm.tsx';
 
 export type GetAIRoadmapLimitResponse = {
@@ -88,7 +90,10 @@ type GetAIRoadmapResponse = {
 export function GenerateRoadmap() {
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
-  const { id: roadmapId } = getUrlParams() as { id: string };
+  const { id: roadmapId, rc: referralCode } = getUrlParams() as {
+    id: string;
+    rc?: string;
+  };
   const toast = useToast();
 
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
@@ -108,7 +113,7 @@ export function GenerateRoadmap() {
   const [roadmapTopicLimitUsed, setRoadmapTopicLimitUsed] = useState(0);
   const [isConfiguring, setIsConfiguring] = useState(false);
 
-  const openAPIKey = getOpenAIKey();
+  const [openAPIKey, setOpenAPIKey] = useState<string | undefined>(getOpenAIKey());
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
   const isAuthenticatedUser = isLoggedIn();
 
@@ -363,6 +368,17 @@ export function GenerateRoadmap() {
   }, []);
 
   useEffect(() => {
+    if (!referralCode || isLoggedIn()) {
+      deleteUrlParam('rc');
+      return;
+    }
+
+    setAIReferralCode(referralCode);
+    deleteUrlParam('rc');
+    showLoginPopup();
+  }, []);
+
+  useEffect(() => {
     if (!roadmapId || roadmapId === currentRoadmap?.id) {
       return;
     }
@@ -393,13 +409,13 @@ export function GenerateRoadmap() {
 
   const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
   const canGenerateMore = roadmapLimitUsed < roadmapLimit;
-  const isLoggedInUser = isLoggedIn();
 
   return (
     <>
       {isConfiguring && (
-        <OpenAISettings
+        <IncreaseRoadmapLimit
           onClose={() => {
+            setOpenAPIKey(getOpenAIKey());
             setIsConfiguring(false);
             loadAIRoadmapLimit().finally(() => null);
           }}
@@ -488,10 +504,8 @@ export function GenerateRoadmap() {
                       onClick={() => setIsConfiguring(true)}
                       className="rounded-xl border border-current px-2 py-0.5 text-left text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
                     >
-                      By-pass all limits by{' '}
-                      <span className="font-semibold">
-                        adding your own OpenAI API key
-                      </span>
+                      Need to generate more?{' '}
+                      <span className="font-semibold">Click here.</span>
                     </button>
                   )}
 

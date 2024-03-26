@@ -161,8 +161,8 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
               onClick={onConfigureOpenAI}
             >
-              By-pass all limits by{' '}
-              <span className="font-semibold">adding your own OpenAI Key</span>
+              Need to generate more?{' '}
+              <span className="font-semibold">Click here.</span>
             </button>
           )}
           {isLoggedIn() && openAIKey && (
