@@ -6,7 +6,7 @@ import { ReferYourFriend } from './ReferYourFriend';
 import { OpenAISettings } from './OpenAISettings';
 import { PayToBypass } from './PayToBypass';
 import { PickLimitOption } from './PickLimitOption';
-import {getOpenAIKey} from "../../lib/jwt.ts";
+import { getOpenAIKey } from '../../lib/jwt.ts';
 
 export type IncreaseTab = 'api-key' | 'refer-friends' | 'payment';
 
@@ -26,7 +26,9 @@ export function IncreaseRoadmapLimit(props: IncreaseRoadmapLimitProps) {
   const { onClose } = props;
 
   const openAPIKey = getOpenAIKey();
-  const [activeTab, setActiveTab] = useState<IncreaseTab | null>(openAPIKey ? 'api-key' : null);
+  const [activeTab, setActiveTab] = useState<IncreaseTab | null>(
+    openAPIKey ? 'api-key' : null,
+  );
 
   return (
     <Modal
@@ -54,7 +56,12 @@ export function IncreaseRoadmapLimit(props: IncreaseRoadmapLimitProps) {
         <ReferYourFriend onBack={() => setActiveTab(null)} />
       )}
       {activeTab === 'payment' && (
-        <PayToBypass onBack={() => setActiveTab(null)} />
+        <PayToBypass
+          onBack={() => setActiveTab(null)}
+          onClose={() => {
+            onClose();
+          }}
+        />
       )}
     </Modal>
   );
