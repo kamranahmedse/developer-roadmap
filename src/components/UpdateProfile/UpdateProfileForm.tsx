@@ -30,7 +30,7 @@ export function UpdateProfileForm() {
         linkedin: linkedin || undefined,
         twitter: twitter || undefined,
         website: website || undefined,
-      }
+      },
     );
 
     if (error || !response) {
@@ -45,11 +45,10 @@ export function UpdateProfileForm() {
   };
 
   const loadProfile = async () => {
-    // Set the loading state
     setIsLoading(true);
 
     const { error, response } = await httpGet(
-      `${import.meta.env.PUBLIC_API_URL}/v1-me`
+      `${import.meta.env.PUBLIC_API_URL}/v1-me`,
     );
 
     if (error || !response) {

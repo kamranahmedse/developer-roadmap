@@ -1,26 +1,28 @@
-import { type FormEvent, useEffect, useState } from 'react';
-import { httpGet, httpPost } from '../../lib/http';
-import { pageProgressMessage } from '../../stores/page';
+import { type FormEvent, useState } from 'react';
+import { httpPost } from '../../lib/http';
+import { useToast } from '../../hooks/use-toast';
 
-export default function UpdatePasswordForm() {
-  const [authProvider, setAuthProvider] = useState('');
+type UpdatePasswordFormProps = {
+  authProvider: string;
+};
+
+export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
+  const { authProvider } = props;
+
+  const toast = useToast();
+
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
   const [newPasswordConfirmation, setNewPasswordConfirmation] = useState('');
 
-  const [error, setError] = useState('');
-  const [success, setSuccess] = useState('');
-
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setIsLoading(true);
-    setError('');
-    setSuccess('');
 
     if (newPassword !== newPasswordConfirmation) {
-      setError('Passwords do not match');
+      toast.error('Passwords do not match');
       setIsLoading(false);
 
       return;
@@ -32,49 +34,25 @@ export default function UpdatePasswordForm() {
         oldPassword: authProvider === 'email' ? currentPassword : 'social-auth',
         password: newPassword,
         confirmPassword: newPasswordConfirmation,
-      }
-    );
-
-    if (error) {
-      setError(error.message || 'Something went wrong');
-      setIsLoading(false);
-
-      return;
-    }
-
-    setError('');
-    setCurrentPassword('');
-    setNewPassword('');
-    setNewPasswordConfirmation('');
-    setSuccess('Password updated successfully');
-    setIsLoading(false);
-  };
-
-  const loadProfile = async () => {
-    setIsLoading(true);
-
-    const { error, response } = await httpGet(
-      `${import.meta.env.PUBLIC_API_URL}/v1-me`
+      },
     );
 
     if (error || !response) {
+      toast.error(error?.message || 'Something went wrong');
       setIsLoading(false);
-      setError(error?.message || 'Something went wrong');
 
       return;
     }
 
-    const { authProvider } = response;
-    setAuthProvider(authProvider);
-
+    setCurrentPassword('');
+    setNewPassword('');
+    setNewPasswordConfirmation('');
+    toast.success('Password updated successfully');
     setIsLoading(false);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   };
-
-  useEffect(() => {
-    loadProfile().finally(() => {
-      pageProgressMessage.set('');
-    });
-  }, []);
 
   return (
     <form onSubmit={handleSubmit}>
@@ -98,7 +76,7 @@ export default function UpdatePasswordForm() {
               type="password"
               name="current-password"
               id="current-password"
-              autoComplete={"current-password"}
+              autoComplete={'current-password'}
               className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-100"
               required
               minLength={6}
@@ -122,7 +100,7 @@ export default function UpdatePasswordForm() {
             type="password"
             name="new-password"
             id="new-password"
-            autoComplete={"new-password"}
+            autoComplete={'new-password'}
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             required
             minLength={6}
@@ -145,7 +123,7 @@ export default function UpdatePasswordForm() {
             name="new-password-confirmation"
             id="new-password-confirmation"
             className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
-            autoComplete={"new-password"}
+            autoComplete={'new-password'}
             required
             minLength={6}
             placeholder="Confirm New Password"
@@ -156,19 +134,11 @@ export default function UpdatePasswordForm() {
           />
         </div>
 
-        {error && (
-          <p className="mt-2 rounded-lg bg-red-100 p-2 text-red-700">{error}</p>
-        )}
-
-        {success && (
-          <p className="mt-2 rounded-lg bg-green-100 p-2 text-green-700">
-            {success}
-          </p>
-        )}
-
         <button
           type="submit"
-          disabled={isLoading}
+          disabled={
+            isLoading || !newPassword || newPassword !== newPasswordConfirmation
+          }
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
           {isLoading ? 'Please wait...' : 'Update Password'}
