@@ -105,13 +105,13 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
     setIsLoading(false);
   };
 
-  const isEmailProvider = authProvider === 'email';
-  if (!isEmailProvider) {
+  if (authProvider && authProvider !== 'email') {
     return (
       <div className="block">
         <h2 className="text-xl font-bold sm:text-2xl">Update Email</h2>
         <p className="mt-2 text-gray-400">
-          You have used {authProvider} when signing up. Please set your password first.
+          You have used {authProvider} when signing up. Please set your password
+          first.
         </p>
 
         <div className="mt-4 flex w-full flex-col">
@@ -132,8 +132,8 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             value={currentEmail}
           />
         </div>
-        <p className="border border-red-600 text-red-600 py-1 px-2 rounded-lg mt-3">
-            Please set your password first to update your email.
+        <p className="mt-3 rounded-lg border border-red-600 px-2 py-1 text-red-600">
+          Please set your password first to update your email.
         </p>
       </div>
     );
@@ -167,7 +167,11 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             value={currentEmail}
           />
         </div>
-        <div className="flex w-full flex-col">
+        <div
+          className={cn('flex w-full flex-col', {
+            'rounded-lg border border-green-500 p-3': isSubmitted,
+          })}
+        >
           <div className="flex items-center justify-between gap-2">
             <label
               htmlFor="new-email"
@@ -180,26 +184,14 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
               <div className="flex items-center gap-2">
                 <button
                   type="button"
-                  onClick={handleCancelEmailVerification}
-                  disabled={isLoading}
-                  className="flex items-center gap-1 text-sm leading-none text-gray-500 transition-colors hover:text-black"
-                >
-                  Cancel
-                </button>
-                <span aria-hidden={true} className="text-sm leading-none">
-                  &middot;
-                </span>
-                <button
-                  type="button"
                   onClick={handleResendVerificationCode}
                   disabled={isLoading || isResendDone}
-                  className="flex items-center gap-1 text-sm leading-none text-gray-500 transition-colors hover:text-black"
+                  className="flex items-center gap-1 text-sm font-medium leading-none text-green-600 transition-colors hover:text-green-700"
                 >
                   <span className="hidden sm:block">
-                    Resend Verification Code
+                    Resend Verification Link
                   </span>
-                  <span className="sm:hidden">Resend</span>
-                  <ArrowUpRight className="h-3.5 w-3.5" />
+                  <span className="sm:hidden">Resend Code</span>
                 </button>
               </div>
             )}
@@ -216,17 +208,37 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             onChange={(e) => setNewEmail(e.target.value)}
             disabled={isSubmitted}
           />
+          {!isSubmitted && (
+            <button
+              type="submit"
+              disabled={
+                isLoading || !newEmail || !newEmail.includes('@') || isSubmitted
+              }
+              className="mt-3 inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
+            >
+              {isLoading ? 'Please wait...' : 'Send Verification Link'}
+            </button>
+          )}
+          {isSubmitted && (
+            <>
+              <button
+                type="button"
+                onClick={handleCancelEmailVerification}
+                disabled={isLoading}
+                className="font-regular mt-4 w-full rounded-lg border border-red-600 py-2 text-sm text-red-600 outline-none transition-colors hover:bg-red-500 hover:text-white focus:ring-2 focus:ring-red-500 focus:ring-offset-1"
+              >
+                Cancel Update
+              </button>
+              <div className="mt-3 flex items-center gap-2 rounded-lg bg-green-100 p-4">
+                <span className="text-sm text-green-800">
+                  A verification link has been sent to your{' '}
+                  <span>new email address</span>. Please follow the instructions
+                  in email to verify and update your email.
+                </span>
+              </div>
+            </>
+          )}
         </div>
-
-        <button
-          type="submit"
-          disabled={
-            isLoading || !newEmail || !newEmail.includes('@') || isSubmitted
-          }
-          className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
-        >
-          {isLoading ? 'Please wait...' : 'Send Verification Code'}
-        </button>
       </form>
     </>
   );
