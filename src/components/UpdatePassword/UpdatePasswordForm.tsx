@@ -49,6 +49,9 @@ export default function UpdatePasswordForm(props: UpdatePasswordFormProps) {
     setNewPasswordConfirmation('');
     toast.success('Password updated successfully');
     setIsLoading(false);
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
   };
 
   return (

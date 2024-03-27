@@ -111,10 +111,10 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
       <div className="block">
         <h2 className="text-xl font-bold sm:text-2xl">Update Email</h2>
         <p className="mt-2 text-gray-400">
-          You're using a social login provider. Set your password first.
+          You have used {authProvider} when signing up. Please set your password first.
         </p>
 
-        <div className="mt-8 flex w-full flex-col">
+        <div className="mt-4 flex w-full flex-col">
           <label
             htmlFor="current-email"
             className="text-sm leading-none text-slate-500"
@@ -132,6 +132,9 @@ export function UpdateEmailForm(props: UpdateEmailFormProps) {
             value={currentEmail}
           />
         </div>
+        <p className="border border-red-600 text-red-600 py-1 px-2 rounded-lg mt-3">
+            Please set your password first to update your email.
+        </p>
       </div>
     );
   }
