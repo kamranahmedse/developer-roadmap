@@ -3,7 +3,7 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import { Ban, Cog, FileText, X } from 'lucide-react';
+import {Ban, Cog, Contact, FileText, User, UserRound, X} from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
 import { getOpenAIKey, isLoggedIn, removeAuthToken } from '../../lib/jwt';
@@ -43,12 +43,10 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
   const generateAiRoadmapTopicContent = async () => {
     setIsLoading(true);
     setError('');
-    //
-    // if (topicLimitUsed >= topicLimit) {
-    //   setError('Maximum limit reached');
-    //   setIsLoading(false);
-    //   return;
-    // }
+
+    if (!isLoggedIn()) {
+      return;
+    }
 
     if (!roadmapId || !nodeTitle) {
       setIsLoading(false);
@@ -133,50 +131,44 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         tabIndex={0}
         className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
-        <div className="flex flex-col items-start gap-2 sm:flex-row">
-          <span>
-            <span
-              className={cn(
-                'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
-                {
-                  'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
-                    !topicLimit,
-                },
-              )}
-            >
-              {topicLimitUsed} of {topicLimit}
-            </span>{' '}
-            topics generated
-          </span>
-          {!isLoggedIn() && (
-            <button
-              className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-              onClick={showLoginPopup}
-            >
-              Generate more by <span className="font-semibold">logging in</span>
-            </button>
-          )}
-          {isLoggedIn() && !openAIKey && (
-            <button
-              className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-              onClick={onConfigureOpenAI}
-            >
-              Need to generate more?{' '}
-              <span className="font-semibold">Click here.</span>
-            </button>
-          )}
-          {isLoggedIn() && openAIKey && (
-            <button
-              className="flex items-center gap-1 rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
-              onClick={onConfigureOpenAI}
-            >
-              <Cog className="-mt-0.5 inline-block h-4 w-4" />
-              Configure OpenAI Key
-            </button>
-          )}
-        </div>
+        {isLoggedIn() && (
+          <div className="flex flex-col items-start gap-2 sm:flex-row">
+            <span>
+              <span
+                className={cn(
+                  'mr-0.5 inline-block rounded-xl border px-1.5 text-center text-sm tabular-nums text-gray-800',
+                  {
+                    'animate-pulse border-zinc-300 bg-zinc-300 text-zinc-300':
+                      !topicLimit,
+                  },
+                )}
+              >
+                {topicLimitUsed} of {topicLimit}
+              </span>{' '}
+              topics generated
+            </span>
+            {!openAIKey && (
+              <button
+                className="rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+                onClick={onConfigureOpenAI}
+              >
+                Need to generate more?{' '}
+                <span className="font-semibold">Click here.</span>
+              </button>
+            )}
+            {openAIKey && (
+              <button
+                className="flex items-center gap-1 rounded-xl border border-current px-1.5 py-0.5 text-left text-sm font-medium text-blue-500 sm:text-center"
+                onClick={onConfigureOpenAI}
+              >
+                <Cog className="-mt-0.5 inline-block h-4 w-4" />
+                Configure OpenAI Key
+              </button>
+            )}
+          </div>
+        )}
 
-        {isLoading && (
+        {isLoggedIn() && isLoading && (
           <div className="mt-6 flex w-full justify-center">
             <Spinner
               outerFill="#d1d5db"
@@ -184,6 +176,22 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
               innerFill="#2563eb"
             />
           </div>
+        )}
+
+        {!isLoggedIn() && (
+                <div className="flex h-full flex-col items-center justify-center">
+                    <Contact className="h-14 w-14 text-gray-200 mb-3.5" />
+                      <h2 className='font-medium text-xl'>You must be logged in</h2>
+                    <p className="text-base text-gray-400">
+                      Sign up or login to generate topic content.
+                    </p>
+                    <button
+                    className="mt-3.5 text-base font-medium text-white bg-black px-3 py-2 rounded-md w-full max-w-[300px]"
+                    onClick={showLoginPopup}
+                    >
+                    Sign up / Login
+                    </button>
+                </div>
         )}
 
         {!isLoading && !error && (
