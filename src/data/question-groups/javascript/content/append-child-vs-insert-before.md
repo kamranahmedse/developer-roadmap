@@ -10,7 +10,7 @@ const roadmapWrapper = document.querySelector('.roadmap-wrapper');
 const roadmap = document.createElement('div');
 roadmap.id = 'javascript-roadmap';
 
-roadmapWrapper.appendChild(roadmapTitle);
+roadmapWrapper.appendChild(roadmap);
 ```
 
 In the example above, the `roadmap` element is added as the last child of the `roadmapWrapper` element.
