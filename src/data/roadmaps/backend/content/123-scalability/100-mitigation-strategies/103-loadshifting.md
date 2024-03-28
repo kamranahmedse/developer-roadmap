@@ -12,4 +12,4 @@ Load shifting is an important aspect of cloud design, as it helps to ensure that
 
 Visit the following resources to learn more:
 
-- [Load Shifting - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/load-shifting/)
+- [Load Shifting]([https://aws.amazon.com/architecture/well-architected/serverless/patterns/load-shifting/](https://www.exro.com/industry-insights/load-shifting#:~:text=Load%20shifting%20is%20an%20electricity%20load%20management%20technique%20in%20which,but%20total%20consumption%20remains%20constant.))
