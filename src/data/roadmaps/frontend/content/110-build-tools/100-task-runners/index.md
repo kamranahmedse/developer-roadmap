@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [npm script](https://docs.npmjs.com/cli/v8/using-npm/scripts)
 - [yarn script](https://classic.yarnpkg.com/lang/en/docs/cli/run/#toc-yarn-run-script)
+- [bun script](https://bun.sh/docs/cli/run#run-a-package-json-script)
