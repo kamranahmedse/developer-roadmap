@@ -7,3 +7,4 @@ Visit the following resources to learn more:
 
 - [Database design basics](https://support.microsoft.com/en-us/office/database-design-basics-eb2159cf-1e30-401a-8084-bd4f9c9ca1f5)
 - [Database Design Course](https://www.youtube.com/watch?v=ztHopE5Wnpc)
+- [Database Desing For Mere Mortal(book)](https://www.oreilly.com/library/view/database-design-for/9780133122282/)
