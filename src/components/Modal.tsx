@@ -6,12 +6,19 @@ import { cn } from '../lib/classname';
 type ModalProps = {
   onClose: () => void;
   children: ReactNode;
+  overlayClassName?: string;
   bodyClassName?: string;
   wrapperClassName?: string;
 };
 
 export function Modal(props: ModalProps) {
-  const { onClose, children, bodyClassName, wrapperClassName } = props;
+  const {
+    onClose,
+    children,
+    bodyClassName,
+    wrapperClassName,
+    overlayClassName,
+  } = props;
 
   const popupBodyEl = useRef<HTMLDivElement>(null);
 
@@ -24,18 +31,23 @@ export function Modal(props: ModalProps) {
   });
 
   return (
-    <div className="popup fixed left-0 right-0 top-0 z-[99] flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50">
+    <div
+      className={cn(
+        'popup fixed left-0 right-0 top-0 z-[99] flex h-full items-center justify-center overflow-y-auto overflow-x-hidden bg-black/50',
+        overlayClassName,
+      )}
+    >
       <div
         className={cn(
           'relative h-full w-full max-w-md p-4 md:h-auto',
-          wrapperClassName
+          wrapperClassName,
         )}
       >
         <div
           ref={popupBodyEl}
           className={cn(
             'popup-body relative h-full rounded-lg bg-white shadow',
-            bodyClassName
+            bodyClassName,
           )}
         >
           {children}

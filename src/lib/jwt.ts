@@ -40,6 +40,7 @@ export function setAuthToken(token: string) {
     secure: true,
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
+  removeAIReferralCode();
 }
 
 export function removeAuthToken() {
@@ -83,4 +84,28 @@ export function saveOpenAIKey(apiKey: string) {
 
 export function getOpenAIKey() {
   return Cookies.get('oak');
+}
+
+const AI_REFERRAL_COOKIE_NAME = 'referral_code';
+
+export function setAIReferralCode(code: string) {
+  const alreadyExist = Cookies.get(AI_REFERRAL_COOKIE_NAME);
+  if (alreadyExist) {
+    return;
+  }
+
+  Cookies.set(AI_REFERRAL_COOKIE_NAME, code, {
+    path: '/',
+    expires: 365,
+    sameSite: 'lax',
+    secure: true,
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}
+
+export function removeAIReferralCode() {
+  Cookies.remove(AI_REFERRAL_COOKIE_NAME, {
+    path: '/',
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
 }

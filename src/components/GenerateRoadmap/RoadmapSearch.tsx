@@ -6,6 +6,7 @@ import { showLoginPopup } from '../../lib/popup';
 import { cn } from '../../lib/classname.ts';
 import { OpenAISettings } from './OpenAISettings.tsx';
 import { AITermSuggestionInput } from './AITermSuggestionInput.tsx';
+import { IncreaseRoadmapLimit } from './IncreaseRoadmapLimit.tsx';
 
 type RoadmapSearchProps = {
   roadmapTerm: string;
@@ -46,8 +47,9 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
   return (
     <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6">
       {isConfiguring && (
-        <OpenAISettings
+        <IncreaseRoadmapLimit
           onClose={() => {
+            setOpenAPIKey(getOpenAIKey()!);
             setIsConfiguring(false);
             loadAIRoadmapLimit();
           }}
@@ -262,10 +264,8 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
                   onClick={() => setIsConfiguring(true)}
                   className="rounded-xl border border-current px-2 py-0.5 text-sm text-blue-500 transition-colors hover:bg-blue-400 hover:text-white"
                 >
-                  By-pass all limits by{' '}
-                  <span className="font-semibold">
-                    adding your own OpenAI API key
-                  </span>
+                  Need to generate more?{' '}
+                  <span className="font-semibold">Click here.</span>
                 </button>
               )}
 

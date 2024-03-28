@@ -1,0 +1,3 @@
+# Optimization of Algorithms and Data Structures Used 
+
+Efficient use and optimization of algorithms and data structures significantly contribute to improving backend performance in web applications. For instance, a well-optimized sorting algorithm can enhance data processing speed while providing quick access to information. In contrast, an inefficient algorithm can increase server load leading to slowdowns and higher response times. Similarly, using appropriate data structures reduces memory usage and enhances data management. A classic example is using hash tables for efficient search operations instead of an array, reducing the time complexity from O(n) to O(1). Therefore, optimizing algorithms and data structures is essential for competent backend performance.

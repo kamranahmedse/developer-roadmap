@@ -41,7 +41,7 @@
     "image-size": "^1.1.1",
     "jose": "^5.2.2",
     "js-cookie": "^3.0.5",
-    "lucide-react": "^0.334.0",
+    "lucide-react": "^0.358.0",
     "nanoid": "^5.0.5",
     "nanostores": "^0.9.5",
     "node-html-parser": "^6.1.12",
