@@ -365,54 +365,58 @@ const groups: GroupType[] = [
   },
 ];
 
+const roleRoadmaps = groups.flatMap((group) =>
+  group.roadmaps.filter((roadmap) => roadmap.type === 'role'),
+);
+const skillRoadmaps = groups.flatMap((group) =>
+  group.roadmaps.filter((roadmap) => roadmap.type === 'skill'),
+);
+
+const allGroups = [
+  {
+    group: 'Role Based Roadmaps',
+    roadmaps: roleRoadmaps,
+  },
+  {
+    group: 'Skill Based Roadmaps',
+    roadmaps: skillRoadmaps,
+  },
+];
+
 export function RoadmapsPage() {
   const [activeGroup, setActiveGroup] = useState<AllowGroupNames>('');
-  const [visibleGroups, setVisibleGroups] = useState<GroupType[]>([]);
+  const [visibleGroups, setVisibleGroups] = useState<GroupType[]>(allGroups);
 
   useEffect(() => {
     if (!activeGroup) {
-      const roleRoadmaps = groups.flatMap((group) =>
-        group.roadmaps.filter((roadmap) => roadmap.type === 'role'),
-      );
-      const skillRoadmaps = groups.flatMap((group) =>
-        group.roadmaps.filter((roadmap) => roadmap.type === 'skill'),
-      );
-
-      setVisibleGroups([
-        {
-          group: 'Role Based Roadmaps',
-          roadmaps: roleRoadmaps,
-        },
-        {
-          group: 'Skill Based Roadmaps',
-          roadmaps: skillRoadmaps,
-        },
-      ]);
-    } else {
-      const group = groups.find((group) => group.group === activeGroup);
-
-      if (group) {
-        // other groups that have a roadmap that is in the same group
-        const otherGroups = groups.filter((g) => {
-          return (
-            g.group !== group.group &&
-            g.roadmaps.some((roadmap) => {
-              return roadmap.otherGroups?.includes(group.group);
-            })
-          );
-        });
-
-        setVisibleGroups([
-          group,
-          ...otherGroups.map((g) => ({
-            ...g,
-            roadmaps: g.roadmaps.filter((roadmap) =>
-              roadmap.otherGroups?.includes(group.group),
-            ),
-          })),
-        ]);
-      }
+      setVisibleGroups(allGroups);
+      return;
     }
+
+    const group = groups.find((group) => group.group === activeGroup);
+    if (!group) {
+      return;
+    }
+
+    // other groups that have a roadmap that is in the same group
+    const otherGroups = groups.filter((g) => {
+      return (
+        g.group !== group.group &&
+        g.roadmaps.some((roadmap) => {
+          return roadmap.otherGroups?.includes(group.group);
+        })
+      );
+    });
+
+    setVisibleGroups([
+      group,
+      ...otherGroups.map((g) => ({
+        ...g,
+        roadmaps: g.roadmaps.filter((roadmap) =>
+          roadmap.otherGroups?.includes(group.group),
+        ),
+      })),
+    ]);
   }, [activeGroup]);
 
   return (
