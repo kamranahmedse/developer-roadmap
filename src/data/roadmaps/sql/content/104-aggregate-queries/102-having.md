@@ -48,4 +48,4 @@ As a result, the query returns:
 | John     |   6000      |
 | Mary     |   6000      |
 
-In this case, the `HAVING` clause filters out all Customers with a total `Amount` less than $3000. Only John and Mary have the total sum of `Amount` more than or equal to $3000. Thus, only these records satisfy the `HAVING` clause and are included in the result.
+In this case, the `HAVING` clause filters out all Customers with a total `Amount` less than or equal to $3000. Only John and Mary have the total sum of `Amount` more than $3000. Thus, only these records satisfy the `HAVING` clause and are included in the result.
