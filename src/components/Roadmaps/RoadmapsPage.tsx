@@ -37,21 +37,19 @@ const groups: GroupType[] = [
         title: 'Frontend Beginner',
         link: '/frontend?r=frontend-beginner',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Backend Beginner',
         link: '/backend?r=backend-beginner',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'DevOps Beginner',
         link: '/devops?r=devops-beginner',
         type: 'role',
-      },
-      {
-        title: 'Full-Stack Developer',
-        link: '/full-stack',
-        type: 'role',
+        otherGroups: ['Web Development'],
       },
     ],
   },
@@ -71,15 +69,10 @@ const groups: GroupType[] = [
         otherGroups: ['Web Development'],
       },
       {
-        title: 'DevOps',
-        link: '/devops',
-        type: 'role',
-      },
-      {
         title: 'Full Stack',
         link: '/full-stack',
         type: 'role',
-        otherGroups: ['Web Development'],
+        otherGroups: ['Web Development', 'Absolute Beginners'],
       },
       {
         title: 'QA',
@@ -124,35 +117,6 @@ const groups: GroupType[] = [
       {
         title: 'ASP.NET Core',
         link: '/aspnet-core',
-        type: 'skill',
-        otherGroups: ['Web Development'],
-      },
-    ],
-  },
-  {
-    group: 'DevOps',
-    roadmaps: [
-      {
-        title: 'DevOps',
-        link: '/devops',
-        type: 'role',
-        otherGroups: ['Web Development'],
-      },
-      {
-        title: 'Docker',
-        link: '/docker',
-        type: 'skill',
-        otherGroups: ['Web Development'],
-      },
-      {
-        title: 'Kubernetes',
-        link: '/kubernetes',
-        type: 'skill',
-        otherGroups: ['Web Development'],
-      },
-      {
-        title: 'AWS',
-        link: '/aws',
         type: 'skill',
         otherGroups: ['Web Development'],
       },
@@ -213,6 +177,35 @@ const groups: GroupType[] = [
         link: '/sql',
         type: 'skill',
         otherGroups: ['Web Development', 'Databases', 'DevOps'],
+      },
+    ],
+  },
+  {
+    group: 'DevOps',
+    roadmaps: [
+      {
+        title: 'DevOps',
+        link: '/devops',
+        type: 'role',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Docker',
+        link: '/docker',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Kubernetes',
+        link: '/kubernetes',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'AWS',
+        link: '/aws',
+        type: 'skill',
+        otherGroups: ['Web Development'],
       },
     ],
   },
@@ -439,6 +432,7 @@ export function RoadmapsPage() {
               </button>
               {groups.map((group) => (
                 <button
+                  key={group.group}
                   className={cn(
                     'border-b bg-gradient-to-l py-1.5 pr-3 text-right text-sm text-gray-500 hover:from-white hover:text-gray-900',
                     {
@@ -457,7 +451,7 @@ export function RoadmapsPage() {
         </div>
         <div className="flex flex-grow flex-col gap-6 pb-20 pt-8">
           {visibleGroups.map((group) => (
-            <div>
+            <div key={`${group.group}-${group.roadmaps.length}`}>
               <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
                 {group.group}
               </h2>
@@ -465,6 +459,7 @@ export function RoadmapsPage() {
               <div className="grid grid-cols-3 gap-1.5">
                 {group.roadmaps.map((roadmap) => (
                   <a
+                    key={roadmap.link}
                     className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
                     href={roadmap.link}
                   >
