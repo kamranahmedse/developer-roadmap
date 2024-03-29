@@ -1,5 +1,8 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { cn } from '../../lib/classname.ts';
+import { Filter, X } from 'lucide-react';
+import { CategoryFilterButton } from './CategoryFilterButton.tsx';
+import { useOutsideClick } from '../../hooks/use-outside-click.ts';
 
 const groupNames = [
   'Absolute Beginners',
@@ -387,6 +390,14 @@ export function RoadmapsPage() {
   const [activeGroup, setActiveGroup] = useState<AllowGroupNames>('');
   const [visibleGroups, setVisibleGroups] = useState<GroupType[]>(allGroups);
 
+  const [isFilterOpen, setIsFilterOpen] = useState(false);
+
+  useEffect(() => {
+    if (!isFilterOpen) {
+      document?.getElementById('filter-button')?.focus();
+    }
+  }, [isFilterOpen]);
+
   useEffect(() => {
     if (!activeGroup) {
       setVisibleGroups(allGroups);
@@ -421,46 +432,65 @@ export function RoadmapsPage() {
 
   return (
     <div className="border-t bg-gray-100">
-      <div className="container flex flex-row gap-4">
-        <div className="w-[180px] border-r bg-gradient-to-l from-gray-100 pt-6">
-          <div className="sticky top-10 pb-20">
+      <button
+        onClick={() => {
+          setIsFilterOpen(!isFilterOpen);
+        }}
+        id="filter-button"
+        className={cn(
+          '-mt-1 flex w-full items-center justify-center bg-gray-300 py-2 text-sm text-black focus:shadow-none focus:outline-0 sm:hidden',
+          {
+            'mb-3': !isFilterOpen,
+          },
+        )}
+      >
+        {!isFilterOpen && <Filter size={13} className="mr-1" />}
+        {isFilterOpen && <X size={13} className="mr-1" />}
+        Categories
+      </button>
+      <div className="container relative flex flex-col gap-4 sm:flex-row">
+        <div
+          className={cn(
+            'hidden w-full flex-col from-gray-100 sm:w-[180px] sm:border-r sm:bg-gradient-to-l sm:pt-6',
+            {
+              'hidden sm:flex': !isFilterOpen,
+              'z-50 flex': isFilterOpen,
+            },
+          )}
+        >
+          <div className="absolute top-0 -mx-4 w-full bg-white pb-0 shadow-xl sm:sticky sm:top-10 sm:mx-0 sm:bg-transparent sm:pb-20 sm:shadow-none">
             <div className="grid grid-cols-1">
-              <button
-                onClick={() => setActiveGroup('')}
-                className={cn('border-b py-1.5 pr-3 text-right text-sm', {
-                  'font-bold text-gray-900': activeGroup === '',
-                })}
-              >
-                {' '}
-                All Roadmaps
-              </button>
+              <CategoryFilterButton
+                onClick={() => {
+                  setActiveGroup('');
+                  setIsFilterOpen(false);
+                }}
+                category={'All Roadmaps'}
+                selected={activeGroup === ''}
+              />
+
               {groups.map((group) => (
-                <button
+                <CategoryFilterButton
                   key={group.group}
-                  className={cn(
-                    'border-b bg-gradient-to-l py-1.5 pr-3 text-right text-sm text-gray-500 hover:from-white hover:text-gray-900',
-                    {
-                      'from-white font-semibold text-gray-900':
-                        activeGroup === group.group,
-                    },
-                  )}
-                  type="button"
-                  onClick={() => setActiveGroup(group.group)}
-                >
-                  {group.group}
-                </button>
+                  onClick={() => {
+                    setActiveGroup(group.group);
+                    setIsFilterOpen(false);
+                  }}
+                  category={group.group}
+                  selected={activeGroup === group.group}
+                />
               ))}
             </div>
           </div>
         </div>
-        <div className="flex flex-grow flex-col gap-6 pb-20 pt-8">
+        <div className="flex flex-grow flex-col gap-6 pb-20 pt-2 sm:pt-8">
           {visibleGroups.map((group) => (
             <div key={`${group.group}-${group.roadmaps.length}`}>
               <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
                 {group.group}
               </h2>
 
-              <div className="grid grid-cols-3 gap-1.5">
+              <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
                 {group.roadmaps.map((roadmap) => (
                   <a
                     key={roadmap.link}
