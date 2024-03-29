@@ -394,7 +394,7 @@ export function RoadmapsPage() {
 
   useEffect(() => {
     if (!isFilterOpen) {
-      document?.getElementById('filter-button')?.focus();
+      document?.getElementById('filter-button')?.bringIntoView();
     }
   }, [isFilterOpen]);
 
