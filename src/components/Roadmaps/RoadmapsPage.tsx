@@ -25,6 +25,7 @@ type GroupType = {
     title: string;
     link: string;
     type: 'role' | 'skill';
+    otherGroups?: AllowGroupNames[];
   }[];
 };
 
@@ -49,7 +50,7 @@ const groups: GroupType[] = [
       },
       {
         title: 'Full-Stack Developer',
-        link: '/fullstack',
+        link: '/full-stack',
         type: 'role',
       },
     ],
@@ -61,11 +62,13 @@ const groups: GroupType[] = [
         title: 'Frontend',
         link: '/frontend',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Backend',
         link: '/backend',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'DevOps',
@@ -76,6 +79,7 @@ const groups: GroupType[] = [
         title: 'Full Stack',
         link: '/full-stack',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'QA',
@@ -86,81 +90,7 @@ const groups: GroupType[] = [
         title: 'GraphQL',
         link: '/graphql',
         type: 'skill',
-      },
-    ],
-  },
-  {
-    group: 'DevOps',
-    roadmaps: [
-      {
-        title: 'DevOps',
-        link: '/devops',
-        type: 'role',
-      },
-      {
-        title: 'Docker',
-        link: '/docker',
-        type: 'skill',
-      },
-      {
-        title: 'Kubernetes',
-        link: '/kubernetes',
-        type: 'skill',
-      },
-      {
-        title: 'AWS',
-        link: '/aws',
-        type: 'skill',
-      },
-    ],
-  },
-  {
-    group: 'Languages / Platforms',
-    roadmaps: [
-      {
-        title: 'JavaScript',
-        link: '/javascript',
-        type: 'skill',
-      },
-      {
-        title: 'TypeScript',
-        link: '/typescript',
-        type: 'skill',
-      },
-      {
-        title: 'Node.js',
-        link: '/nodejs',
-        type: 'skill',
-      },
-      {
-        title: 'C++',
-        link: '/cpp',
-        type: 'skill',
-      },
-      {
-        title: 'Go',
-        link: '/golang',
-        type: 'skill',
-      },
-      {
-        title: 'Rust',
-        link: '/rust',
-        type: 'skill',
-      },
-      {
-        title: 'Python',
-        link: '/python',
-        type: 'skill',
-      },
-      {
-        title: 'Java',
-        link: '/java',
-        type: 'skill',
-      },
-      {
-        title: 'SQL',
-        link: '/sql',
-        type: 'skill',
+        otherGroups: ['Web Development'],
       },
     ],
   },
@@ -171,32 +101,129 @@ const groups: GroupType[] = [
         title: 'React',
         link: '/react',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Vue',
         link: '/vue',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Angular',
         link: '/angular',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Spring Boot',
         link: '/spring-boot',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'ASP.NET Core',
         link: '/aspnet-core',
         type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+    ],
+  },
+  {
+    group: 'DevOps',
+    roadmaps: [
+      {
+        title: 'DevOps',
+        link: '/devops',
+        type: 'role',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Docker',
+        link: '/docker',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'Kubernetes',
+        link: '/kubernetes',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'AWS',
+        link: '/aws',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+    ],
+  },
+  {
+    group: 'Languages / Platforms',
+    roadmaps: [
+      {
+        title: 'JavaScript',
+        link: '/javascript',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps', 'Mobile Development'],
+      },
+      {
+        title: 'TypeScript',
+        link: '/typescript',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Mobile Development'],
+      },
+      {
+        title: 'Node.js',
+        link: '/nodejs',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
+        title: 'C++',
+        link: '/cpp',
+        type: 'skill',
+      },
+      {
+        title: 'Go',
+        link: '/golang',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
+        title: 'Rust',
+        link: '/rust',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
+        title: 'Python',
+        link: '/python',
+        type: 'skill',
+        otherGroups: ['Web Development', 'DevOps'],
+      },
+      {
+        title: 'Java',
+        link: '/java',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
+      {
+        title: 'SQL',
+        link: '/sql',
+        type: 'skill',
+        otherGroups: ['Web Development', 'Databases', 'DevOps'],
       },
     ],
   },
   {
     group: 'Mobile Development',
     roadmaps: [
+      {
+        title: 'Android',
+        link: '/android',
+        type: 'role',
+      },
       {
         title: 'React Native',
         link: '/react-native',
@@ -205,11 +232,6 @@ const groups: GroupType[] = [
       {
         title: 'Flutter',
         link: '/flutter',
-        type: 'role',
-      },
-      {
-        title: 'Android',
-        link: '/android',
         type: 'role',
       },
     ],
@@ -221,11 +243,13 @@ const groups: GroupType[] = [
         title: 'PostgreSQL',
         link: '/postgresql-dba',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'MongoDB',
         link: '/mongodb',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
     ],
   },
@@ -236,31 +260,37 @@ const groups: GroupType[] = [
         title: 'Computer Science',
         link: '/computer-science',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Data Structures',
         link: '/data-structures-and-algorithms',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'System Design',
         link: '/system-design',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Design and Architecture',
         link: '/software-design-architecture',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Software Architect',
         link: '/software-architect',
         type: 'role',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Code Review',
         link: '/code-review',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
       {
         title: 'Technical Writer',
@@ -316,6 +346,7 @@ const groups: GroupType[] = [
         title: 'Design System',
         link: '/design-system',
         type: 'skill',
+        otherGroups: ['Web Development'],
       },
     ],
   },
@@ -368,7 +399,25 @@ export function RoadmapsPage() {
       const group = groups.find((group) => group.group === activeGroup);
 
       if (group) {
-        setVisibleGroups([group]);
+        // other groups that have a roadmap that is in the same group
+        const otherGroups = groups.filter((g) => {
+          return (
+            g.group !== group.group &&
+            g.roadmaps.some((roadmap) => {
+              return roadmap.otherGroups?.includes(group.group);
+            })
+          );
+        });
+
+        setVisibleGroups([
+          group,
+          ...otherGroups.map((g) => ({
+            ...g,
+            roadmaps: g.roadmaps.filter((roadmap) =>
+              roadmap.otherGroups?.includes(group.group),
+            ),
+          })),
+        ]);
       }
     }
   }, [activeGroup]);
