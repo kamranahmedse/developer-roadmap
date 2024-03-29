@@ -35,5 +35,5 @@ sitemap:
 tags:
   - 'roadmap'
   - 'main-sitemap'
-  - 'role-roadmap'
+  - 'skill-roadmap'
 ---
