@@ -393,12 +393,6 @@ export function RoadmapsPage() {
   const [isFilterOpen, setIsFilterOpen] = useState(false);
 
   useEffect(() => {
-    if (!isFilterOpen) {
-      document?.getElementById('filter-button')?.bringIntoView();
-    }
-  }, [isFilterOpen]);
-
-  useEffect(() => {
     if (!activeGroup) {
       setVisibleGroups(allGroups);
       return;
@@ -475,6 +469,7 @@ export function RoadmapsPage() {
                   onClick={() => {
                     setActiveGroup(group.group);
                     setIsFilterOpen(false);
+                    document?.getElementById('filter-button')?.scrollIntoView();
                   }}
                   category={group.group}
                   selected={activeGroup === group.group}
