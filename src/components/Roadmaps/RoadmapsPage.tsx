@@ -260,7 +260,7 @@ const groups: GroupType[] = [
       },
       {
         title: 'Data Structures',
-        link: '/data-structures-and-algorithms',
+        link: '/datastructures-and-algorithms',
         type: 'skill',
         otherGroups: ['Web Development'],
       },
