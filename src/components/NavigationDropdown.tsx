@@ -71,33 +71,34 @@ export function NavigationDropdown() {
       >
         <Menu className="h-5 w-5" />
       </button>
-      {isOpen && (
-        <div
-          className={cn(
-            'pointer-events-auto absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] translate-y-2.5 rounded-lg bg-slate-800 py-2 opacity-100 shadow-xl transition-all duration-100',
-          )}
-        >
-          {links.map((link) => (
-            <a
-              href={link.link}
-              target={link.isExternal ? '_blank' : undefined}
-              rel={link.isExternal ? 'noopener noreferrer' : undefined}
-              key={link.link}
-              className="group flex items-center gap-3 px-4 py-2.5 text-gray-400 transition-colors hover:bg-slate-700"
-            >
-              <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-slate-600 transition-colors group-hover:bg-slate-500 group-hover:text-slate-100">
-                <link.Icon className="inline-block h-5 w-5" />
+      <div
+        className={cn(
+          'absolute pointer-events-none left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          {
+            'pointer-events-auto translate-y-2.5 opacity-100': isOpen,
+          },
+        )}
+      >
+        {links.map((link) => (
+          <a
+            href={link.link}
+            target={link.isExternal ? '_blank' : undefined}
+            rel={link.isExternal ? 'noopener noreferrer' : undefined}
+            key={link.link}
+            className="group flex items-center gap-3 px-4 py-2.5 text-gray-400 transition-colors hover:bg-slate-700"
+          >
+            <span className="flex h-[40px] w-[40px] items-center justify-center rounded-full bg-slate-600 transition-colors group-hover:bg-slate-500 group-hover:text-slate-100">
+              <link.Icon className="inline-block h-5 w-5" />
+            </span>
+            <span className="flex flex-col">
+              <span className="font-medium text-slate-300 transition-colors group-hover:text-slate-100">
+                {link.label}
               </span>
-              <span className="flex flex-col">
-                <span className="font-medium text-slate-300 transition-colors group-hover:text-slate-100">
-                  {link.label}
-                </span>
-                <span className="text-sm">{link.description}</span>
-              </span>
-            </a>
-          ))}
-        </div>
-      )}
+              <span className="text-sm">{link.description}</span>
+            </span>
+          </a>
+        ))}
+      </div>
     </div>
   );
 }
