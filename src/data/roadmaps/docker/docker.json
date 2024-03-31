@@ -4186,7 +4186,7 @@
                   "x": "23",
                   "y": "52",
                   "properties": {
-                    "controlName": "ext_link:roadmap.sh/best-practices"
+                    "controlName": "ext_link:roadmap.sh/devops"
                   },
                   "children": {
                     "controls": {
