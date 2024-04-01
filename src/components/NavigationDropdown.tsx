@@ -1,12 +1,4 @@
-import {
-  BookOpenText,
-  CheckSquare,
-  FileQuestion,
-  Menu,
-  Shirt,
-  Video,
-  Waypoints,
-} from 'lucide-react';
+import { BookOpenText, CheckSquare, FileQuestion, Menu, Shirt, Video, Waypoints, } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { cn } from '../lib/classname.ts';
 import { useOutsideClick } from '../hooks/use-outside-click.ts';
@@ -68,15 +60,17 @@ export function NavigationDropdown() {
         })}
         onClick={() => setIsOpen(true)}
         onMouseOver={() => setIsOpen(true)}
+        onMouseLeave={() => setIsOpen(false)}
       >
         <Menu className="h-5 w-5" />
       </button>
       <div
         className={cn(
-          'absolute pointer-events-none left-0 top-full z-[999] mt-2 w-48 min-w-[320px] -translate-y-1 rounded-lg bg-slate-800 py-2 opacity-0 shadow-xl transition-all duration-100',
+          'absolute left-0 top-full z-[999] mt-2 w-48 min-w-[320px] rounded-lg bg-slate-800 py-2 shadow-xl transition-all duration-300',
           {
             'pointer-events-auto translate-y-2.5 opacity-100': isOpen,
-          },
+            'pointer-events-none -translate-y-1 opacity-0': !isOpen,
+          }
         )}
       >
         {links.map((link) => (
