@@ -87,3 +87,27 @@ export async function getGuideById(
 
   return allGuides.find((guide) => guide.id === id);
 }
+
+type HeadingType = ReturnType<MarkdownFileType['getHeadings']>[number];
+export type HeadingGroupType = HeadingType & { children: HeadingType[] };
+
+export function getGuideTableOfContent(headings: HeadingType[]) {
+  const tableOfContents: HeadingGroupType[] = [];
+  let currentGroup: HeadingGroupType | null = null;
+
+  headings
+    .filter((heading) => heading.depth !== 1)
+    .forEach((heading) => {
+      if (heading.depth === 2) {
+        currentGroup = {
+          ...heading,
+          children: [],
+        };
+        tableOfContents.push(currentGroup);
+      } else if (currentGroup) {
+        currentGroup.children.push(heading);
+      }
+    });
+
+  return tableOfContents;
+}
