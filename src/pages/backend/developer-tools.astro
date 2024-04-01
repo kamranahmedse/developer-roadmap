@@ -1,17 +1,14 @@
 ---
+import GuideContent from '../../components/Guide/GuideContent.astro';
 import GuideHeader from '../../components/GuideHeader.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
-import { TableOfContent } from '../../components/TableOfContent/TableOfContent';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getGuideById, getGuideTableOfContent } from '../../lib/guide';
+import { getGuideById } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 const guideId = 'backend-developer-tools';
 const guide = await getGuideById(guideId);
 
 const { frontmatter: guideData } = guide!;
-
-const tableOfContent = getGuideTableOfContent(guide?.getHeadings() || []);
 
 const ogImageUrl = getOpenGraphImageUrl({
   group: 'guides',
@@ -27,17 +24,5 @@ const ogImageUrl = getOpenGraphImageUrl({
   ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide!} />
-
-  <div class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
-    <div class='py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:py-10'>
-      <TableOfContent toc={tableOfContent} client:load />
-    </div>
-    <div
-      class='col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] border-r py-5 max-lg:border-none sm:py-10'
-    >
-      <MarkdownFile>
-        <guide.Content />
-      </MarkdownFile>
-    </div>
-  </div>
+  <GuideContent guide={guide!} />
 </BaseLayout>

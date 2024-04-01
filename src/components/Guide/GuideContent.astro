@@ -1,0 +1,25 @@
+---
+import { getGuideTableOfContent, type GuideFileType } from '../../lib/guide';
+import MarkdownFile from '../MarkdownFile.astro';
+import { TableOfContent } from '../TableOfContent/TableOfContent';
+
+interface Props {
+  guide: GuideFileType;
+}
+
+const { guide } = Astro.props;
+const tableOfContent = getGuideTableOfContent(guide.getHeadings());
+---
+
+<div class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
+  <div class='py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:py-10'>
+    <TableOfContent toc={tableOfContent} client:load />
+  </div>
+  <div
+    class='col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] border-r py-5 max-lg:border-none sm:py-10'
+  >
+    <MarkdownFile>
+      <guide.Content />
+    </MarkdownFile>
+  </div>
+</div>
