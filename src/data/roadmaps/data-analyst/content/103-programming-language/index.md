@@ -1,1 +1,3 @@
-# Programming language
+# Programming Language for Data Analysts
+
+As a data analyst, programming languages are crucial tools in your line of work. They not only help in collection and cleanup of data, but also assist in analyzing it to generate insightful reports and predictions. These languages can be employed to create algorithms for complex computations, model data, and visualizations amongst other tasks. Familiarity and proficiency in several programming languages can give data analysts a significant competitive edge, enhancing their ability to draw useful business insights from raw data. Examples of commonly used programming languages in data analysis include SQL, Python, R, Java and SAS.

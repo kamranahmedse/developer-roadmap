@@ -1,1 +1,3 @@
-# Machine learning basics
+# Machine Learning Basics for Data Analysts
+
+Data analysts are becoming increasingly involved in the realm of machine learning. This emerging technology harnesses algorithms, statistical models, and other tools to teach machines to perform tasks that would normally require human intelligence. This includes activities such as making predictions based on data, recognizing patterns, and making decisions. Understanding the basics of machine learning is therefore not only beneficial, but essential, to modern data analysts who wish to stay competitive in their field.

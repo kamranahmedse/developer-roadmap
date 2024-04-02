@@ -1,1 +1,3 @@
-# Upper lower proper
+# Upper, Lower, Proper Functions
+
+In the field of data analysis, the Upper, Lower, and Proper functions serve as fundamental tools for manipulating and transforming text data. A data analyst often works with a vast array of datasets, where the text data may not always adhere to a consistent format. To tackle such issues, the Upper, Lower, and Proper functions are used. 'Upper' converts all the text to uppercase, while 'Lower' does the opposite, transforming all text to lowercase. The 'Proper' function is used to capitalize the first letter of each word, making it proper case. These functions are indispensable when it comes to cleaning and preparing data, a major part of a data analyst's role.

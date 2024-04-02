@@ -1,1 +1,3 @@
-# Reinforcement
+# Reinforcement 
+
+Reinforcement learning is a key topic within the broader realm of machine learning. Data analysts and other professionals dealing with data often utilize reinforcement learning techniques. In simple, it can be considered as a type of algorithm that uses trial and error to come up with solutions to problems. Notably, these algorithms learn the ideal behaviour within a specific context, with the intention of maximizing performance. As a data analyst, understanding reinforcement learning provides a crucial expertise, especially when dealing with complex data structures and making strategic decisions based on that data.

@@ -1,1 +1,3 @@
-# Data processing frameworks
+# Data Processing Frameworks 
+
+The role of Data Analyst encompasses understanding, interpreting and making sense of vast amounts of information. In the realm of Big Data, this can be an increasingly challenging task due to the sheer volume, variety and velocity of information being produced. This is where Data Processing Frameworks come into play. Data Processing Frameworks are essential tools for any data analyst working with Big Data. They not only simplify the process of handling large data sets but also ensure reliable, scalable and distributed computing, specifically tailored for extensive analysis. Examples of these frameworks include Apache Hadoop, Apache Spark amongst others. Learning to leverage these frameworks, enables data analysts to process, analyze and uncover insights from Big Data in a timely and efficient manner.
