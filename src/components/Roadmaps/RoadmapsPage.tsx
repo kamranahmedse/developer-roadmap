@@ -304,6 +304,11 @@ const groups: GroupType[] = [
         type: 'role',
       },
       {
+        title: 'Data Analyst',
+        link: '/data-analyst',
+        type: 'role',
+      },
+      {
         title: 'MLOps',
         link: '/mlops',
         type: 'role',
