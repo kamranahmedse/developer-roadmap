@@ -15,10 +15,10 @@ const tableOfContent = showTableOfContent
   : [];
 ---
 
-<div class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
+<article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
   <div
     class:list={[
-      'py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:py-10',
+      'py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1',
       showTableOfContent ? '' : 'hidden',
     ]}
   >
@@ -34,4 +34,4 @@ const tableOfContent = showTableOfContent
       <guide.Content />
     </MarkdownFile>
   </div>
-</div>
+</article>

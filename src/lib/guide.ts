@@ -1,5 +1,6 @@
 import type { MarkdownFileType } from './file';
 import { type AuthorFileType, getAllAuthors } from './author.ts';
+import { removeNumberFromString } from './number.ts';
 
 export interface GuideFrontmatter {
   title: string;
@@ -101,11 +102,15 @@ export function getGuideTableOfContent(headings: HeadingType[]) {
       if (heading.depth === 2) {
         currentGroup = {
           ...heading,
+          text: removeNumberFromString(heading.text),
           children: [],
         };
         tableOfContents.push(currentGroup);
       } else if (currentGroup) {
-        currentGroup.children.push(heading);
+        currentGroup.children.push({
+          ...heading,
+          text: removeNumberFromString(heading.text),
+        });
       }
     });
 
