@@ -1,0 +1,1 @@
+# Bar charts
