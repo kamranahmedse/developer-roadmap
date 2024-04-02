@@ -8,15 +8,27 @@ interface Props {
 }
 
 const { guide } = Astro.props;
-const tableOfContent = getGuideTableOfContent(guide.getHeadings());
+const allHeadings = guide.getHeadings();
+const showTableOfContent = allHeadings.length > 0;
+const tableOfContent = showTableOfContent
+  ? getGuideTableOfContent(allHeadings)
+  : [];
 ---
 
 <div class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
-  <div class='py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:py-10'>
+  <div
+    class:list={[
+      'py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1 lg:py-10',
+      showTableOfContent ? '' : 'hidden',
+    ]}
+  >
     <TableOfContent toc={tableOfContent} client:load />
   </div>
   <div
-    class='col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] border-r py-5 max-lg:border-none sm:py-10'
+    class:list={[
+      'col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] py-5 sm:py-10',
+      showTableOfContent ? 'border-r max-lg:border-none' : '',
+    ]}
   >
     <MarkdownFile>
       <guide.Content />
