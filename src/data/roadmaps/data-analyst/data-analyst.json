@@ -1,0 +1,6125 @@
+{
+  "mockup": {
+    "controls": {
+      "control": [
+        {
+          "ID": "612",
+          "typeID": "Label",
+          "zOrder": "41",
+          "measuredW": "181",
+          "measuredH": "40",
+          "x": "671",
+          "y": "324",
+          "properties": {
+            "size": "32",
+            "text": "Data Analyst"
+          }
+        },
+        {
+          "ID": "613",
+          "typeID": "__group__",
+          "zOrder": "42",
+          "measuredW": "373",
+          "measuredH": "151",
+          "w": "373",
+          "h": "151",
+          "x": "979",
+          "y": "216",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "373",
+                  "h": "151",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "333",
+                  "measuredH": "26",
+                  "x": "18",
+                  "y": "19",
+                  "properties": {
+                    "text": "Find the detailed version of this roadmap",
+                    "size": "18"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "2",
+                  "measuredW": "339",
+                  "measuredH": "47",
+                  "w": "339",
+                  "h": "47",
+                  "x": "18",
+                  "y": "88",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "339",
+                          "h": "47",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "155",
+                          "measuredH": "26",
+                          "x": "92",
+                          "y": "11",
+                          "properties": {
+                            "color": "16777215",
+                            "text": "https://roadmap.sh",
+                            "size": "18"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "5",
+                  "typeID": "Label",
+                  "zOrder": "3",
+                  "measuredW": "337",
+                  "measuredH": "26",
+                  "x": "18",
+                  "y": "48",
+                  "properties": {
+                    "size": "18",
+                    "text": "Along with resources and more roadmaps"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "614",
+          "typeID": "Arrow",
+          "zOrder": "43",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "755",
+          "y": "233",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "615",
+          "typeID": "Arrow",
+          "zOrder": "44",
+          "w": "1",
+          "h": "146",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "755",
+          "y": "385",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497267,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 146
+            }
+          }
+        },
+        {
+          "ID": "638",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "355",
+          "measuredH": "189",
+          "w": "355",
+          "h": "189",
+          "x": "171",
+          "y": "205",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "355",
+                  "h": "189",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "__group__",
+                  "zOrder": "1",
+                  "measuredW": "287",
+                  "measuredH": "27",
+                  "w": "287",
+                  "h": "27",
+                  "x": "24",
+                  "y": "69",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh/ai-data-scientist"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "254",
+                          "measuredH": "26",
+                          "x": "33",
+                          "y": "0",
+                          "properties": {
+                            "size": "18",
+                            "text": "AI and Data Scientist Roadmap"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "__group__",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "w": "24",
+                          "h": "24",
+                          "x": "0",
+                          "y": "3",
+                          "children": {
+                            "controls": {
+                              "control": [
+                                {
+                                  "ID": "0",
+                                  "typeID": "Icon",
+                                  "zOrder": "0",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "16777215",
+                                    "icon": {
+                                      "ID": "circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ID": "1",
+                                  "typeID": "Icon",
+                                  "zOrder": "1",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "10066329",
+                                    "icon": {
+                                      "ID": "check-circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "__group__",
+                  "zOrder": "2",
+                  "measuredW": "153",
+                  "measuredH": "27",
+                  "w": "153",
+                  "h": "27",
+                  "x": "24",
+                  "y": "105",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh/sql"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "120",
+                          "measuredH": "26",
+                          "x": "33",
+                          "y": "0",
+                          "properties": {
+                            "size": "18",
+                            "text": "SQL Roadmap"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "__group__",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "w": "24",
+                          "h": "24",
+                          "x": "0",
+                          "y": "3",
+                          "children": {
+                            "controls": {
+                              "control": [
+                                {
+                                  "ID": "0",
+                                  "typeID": "Icon",
+                                  "zOrder": "0",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "16777215",
+                                    "icon": {
+                                      "ID": "circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ID": "1",
+                                  "typeID": "Icon",
+                                  "zOrder": "1",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "10066329",
+                                    "icon": {
+                                      "ID": "check-circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "3",
+                  "measuredW": "209",
+                  "measuredH": "32",
+                  "x": "24",
+                  "y": "23",
+                  "properties": {
+                    "size": "24",
+                    "text": "Related Roadmaps"
+                  }
+                },
+                {
+                  "ID": "4",
+                  "typeID": "__group__",
+                  "zOrder": "4",
+                  "measuredW": "215",
+                  "measuredH": "27",
+                  "w": "215",
+                  "h": "27",
+                  "x": "24",
+                  "y": "139",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh/postgresql-dba"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "182",
+                          "measuredH": "26",
+                          "x": "33",
+                          "y": "0",
+                          "properties": {
+                            "size": "18",
+                            "text": "PostgreSQL Roadmap"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "__group__",
+                          "zOrder": "1",
+                          "measuredW": "24",
+                          "measuredH": "24",
+                          "w": "24",
+                          "h": "24",
+                          "x": "0",
+                          "y": "3",
+                          "children": {
+                            "controls": {
+                              "control": [
+                                {
+                                  "ID": "0",
+                                  "typeID": "Icon",
+                                  "zOrder": "0",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "16777215",
+                                    "icon": {
+                                      "ID": "circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                },
+                                {
+                                  "ID": "1",
+                                  "typeID": "Icon",
+                                  "zOrder": "1",
+                                  "measuredW": "24",
+                                  "measuredH": "24",
+                                  "x": "0",
+                                  "y": "0",
+                                  "properties": {
+                                    "color": "10066329",
+                                    "icon": {
+                                      "ID": "check-circle",
+                                      "size": "small"
+                                    }
+                                  }
+                                }
+                              ]
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1289",
+          "typeID": "TextArea",
+          "zOrder": "45",
+          "w": "238",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "635",
+          "y": "507",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1290",
+          "typeID": "Label",
+          "zOrder": "46",
+          "measuredW": "93",
+          "measuredH": "25",
+          "x": "705",
+          "y": "520",
+          "properties": {
+            "size": "17",
+            "text": "Introduction"
+          }
+        },
+        {
+          "ID": "1297",
+          "typeID": "TextArea",
+          "zOrder": "47",
+          "w": "289",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "449",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1298",
+          "typeID": "Label",
+          "zOrder": "48",
+          "measuredW": "179",
+          "measuredH": "25",
+          "x": "281",
+          "y": "462",
+          "properties": {
+            "size": "17",
+            "text": "What is Data Analytics?"
+          }
+        },
+        {
+          "ID": "1299",
+          "typeID": "TextArea",
+          "zOrder": "50",
+          "w": "289",
+          "h": "236",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "505"
+        },
+        {
+          "ID": "1300",
+          "typeID": "Label",
+          "zOrder": "51",
+          "measuredW": "178",
+          "measuredH": "25",
+          "x": "294",
+          "y": "519",
+          "properties": {
+            "size": "17",
+            "text": "Types of Data Analytics"
+          }
+        },
+        {
+          "ID": "1301",
+          "typeID": "TextArea",
+          "zOrder": "52",
+          "w": "288",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "553",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1302",
+          "typeID": "Label",
+          "zOrder": "53",
+          "measuredW": "159",
+          "measuredH": "25",
+          "x": "302",
+          "y": "566",
+          "properties": {
+            "size": "17",
+            "text": "Descriptive Analytics"
+          }
+        },
+        {
+          "ID": "1303",
+          "typeID": "TextArea",
+          "zOrder": "54",
+          "w": "288",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "600",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1304",
+          "typeID": "Label",
+          "zOrder": "55",
+          "measuredW": "155",
+          "measuredH": "25",
+          "x": "304",
+          "y": "613",
+          "properties": {
+            "size": "17",
+            "text": "Diagnostic Analytics"
+          }
+        },
+        {
+          "ID": "1305",
+          "typeID": "TextArea",
+          "zOrder": "56",
+          "w": "288",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "646",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1306",
+          "typeID": "Label",
+          "zOrder": "57",
+          "measuredW": "149",
+          "measuredH": "25",
+          "x": "307",
+          "y": "659",
+          "properties": {
+            "size": "17",
+            "text": "Predictive Analytics"
+          }
+        },
+        {
+          "ID": "1307",
+          "typeID": "TextArea",
+          "zOrder": "58",
+          "w": "288",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "238",
+          "y": "693",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1308",
+          "typeID": "Label",
+          "zOrder": "59",
+          "measuredW": "163",
+          "measuredH": "25",
+          "x": "300",
+          "y": "706",
+          "properties": {
+            "size": "17",
+            "text": "Prescriptive Analytics"
+          }
+        },
+        {
+          "ID": "1309",
+          "typeID": "TextArea",
+          "zOrder": "60",
+          "w": "237",
+          "h": "236",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "635",
+          "y": "611"
+        },
+        {
+          "ID": "1310",
+          "typeID": "Label",
+          "zOrder": "61",
+          "measuredW": "172",
+          "measuredH": "25",
+          "x": "667",
+          "y": "625",
+          "properties": {
+            "size": "17",
+            "text": "Key Concepts for Data"
+          }
+        },
+        {
+          "ID": "1311",
+          "typeID": "TextArea",
+          "zOrder": "62",
+          "w": "119",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "635",
+          "y": "659",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1312",
+          "typeID": "Label",
+          "zOrder": "63",
+          "measuredW": "77",
+          "measuredH": "25",
+          "x": "656",
+          "y": "672",
+          "properties": {
+            "size": "17",
+            "text": "Collection"
+          }
+        },
+        {
+          "ID": "1319",
+          "typeID": "TextArea",
+          "zOrder": "64",
+          "w": "122",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "749",
+          "y": "659",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1320",
+          "typeID": "Label",
+          "zOrder": "65",
+          "measuredW": "65",
+          "measuredH": "25",
+          "x": "777",
+          "y": "672",
+          "properties": {
+            "size": "17",
+            "text": "Cleanup"
+          }
+        },
+        {
+          "ID": "1321",
+          "typeID": "TextArea",
+          "zOrder": "66",
+          "w": "119",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "635",
+          "y": "706",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1322",
+          "typeID": "Label",
+          "zOrder": "67",
+          "measuredW": "87",
+          "measuredH": "25",
+          "x": "651",
+          "y": "719",
+          "properties": {
+            "size": "17",
+            "text": "Exploration"
+          }
+        },
+        {
+          "ID": "1323",
+          "typeID": "TextArea",
+          "zOrder": "68",
+          "w": "122",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "749",
+          "y": "706",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1324",
+          "typeID": "Label",
+          "zOrder": "69",
+          "measuredW": "96",
+          "measuredH": "25",
+          "x": "762",
+          "y": "719",
+          "properties": {
+            "size": "17",
+            "text": "Visualization"
+          }
+        },
+        {
+          "ID": "1325",
+          "typeID": "TextArea",
+          "zOrder": "70",
+          "w": "237",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "634",
+          "y": "753",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1326",
+          "typeID": "Label",
+          "zOrder": "71",
+          "measuredW": "141",
+          "measuredH": "25",
+          "x": "682",
+          "y": "766",
+          "properties": {
+            "size": "17",
+            "text": "Statistical Analysis"
+          }
+        },
+        {
+          "ID": "1327",
+          "typeID": "TextArea",
+          "zOrder": "72",
+          "w": "237",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "634",
+          "y": "799",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1328",
+          "typeID": "Label",
+          "zOrder": "73",
+          "measuredW": "140",
+          "measuredH": "25",
+          "x": "683",
+          "y": "812",
+          "properties": {
+            "size": "17",
+            "text": "Machine Learning"
+          }
+        },
+        {
+          "ID": "1329",
+          "typeID": "Arrow",
+          "zOrder": "40",
+          "w": "143",
+          "h": "52",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "517",
+          "y": "471",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.5
+            },
+            "p1": {
+              "x": 0.4418865805727119,
+              "y": -0.11903425042111172
+            },
+            "p2": {
+              "x": 143,
+              "y": 51.5
+            }
+          }
+        },
+        {
+          "ID": "1330",
+          "typeID": "Arrow",
+          "zOrder": "39",
+          "w": "135",
+          "h": "3",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "515",
+          "y": "531",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.5
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.0000840383214745914
+            },
+            "p2": {
+              "x": 135,
+              "y": 2.1591837857379232
+            }
+          }
+        },
+        {
+          "ID": "1332",
+          "typeID": "Arrow",
+          "zOrder": "38",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "753",
+          "y": "553",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1333",
+          "typeID": "Arrow",
+          "zOrder": "37",
+          "w": "126",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "858",
+          "y": "531",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 125.90373196641156,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1334",
+          "typeID": "Label",
+          "zOrder": "74",
+          "measuredW": "253",
+          "measuredH": "28",
+          "x": "1001",
+          "y": "516",
+          "properties": {
+            "text": "Building a strong foundation",
+            "size": "20"
+          }
+        },
+        {
+          "ID": "1335",
+          "typeID": "Arrow",
+          "zOrder": "75",
+          "w": "56",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1273",
+          "y": "531",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 55.66147664889786,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549722,
+              "y": -0.0000840383214745916
+            },
+            "p2": {
+              "x": 0.05493884535781035,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1337",
+          "typeID": "Arrow",
+          "zOrder": "76",
+          "w": "1",
+          "h": "513",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1328",
+          "y": "532",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 513.1453459260172
+            }
+          }
+        },
+        {
+          "ID": "1339",
+          "typeID": "TextArea",
+          "zOrder": "77",
+          "w": "153",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1203",
+          "y": "1026",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1340",
+          "typeID": "Label",
+          "zOrder": "78",
+          "measuredW": "42",
+          "measuredH": "25",
+          "x": "1259",
+          "y": "1039",
+          "properties": {
+            "size": "17",
+            "text": "Excel"
+          }
+        },
+        {
+          "ID": "1341",
+          "typeID": "TextArea",
+          "zOrder": "79",
+          "w": "255",
+          "h": "377",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1023",
+          "y": "612"
+        },
+        {
+          "ID": "1342",
+          "typeID": "Label",
+          "zOrder": "80",
+          "measuredW": "172",
+          "measuredH": "25",
+          "x": "1065",
+          "y": "952",
+          "properties": {
+            "size": "17",
+            "text": "Learn Basic Functions"
+          }
+        },
+        {
+          "ID": "1343",
+          "typeID": "TextArea",
+          "zOrder": "81",
+          "w": "124",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1024",
+          "y": "612",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1344",
+          "typeID": "Label",
+          "zOrder": "82",
+          "measuredW": "34",
+          "measuredH": "25",
+          "x": "1069",
+          "y": "625",
+          "properties": {
+            "size": "17",
+            "text": "Sum"
+          }
+        },
+        {
+          "ID": "1345",
+          "typeID": "TextArea",
+          "zOrder": "83",
+          "w": "133",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1145",
+          "y": "612",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1346",
+          "typeID": "Label",
+          "zOrder": "84",
+          "measuredW": "85",
+          "measuredH": "25",
+          "x": "1167",
+          "y": "625",
+          "properties": {
+            "size": "17",
+            "text": "MIN / MAX"
+          }
+        },
+        {
+          "ID": "1347",
+          "typeID": "TextArea",
+          "zOrder": "85",
+          "w": "124",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1024",
+          "y": "658",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1348",
+          "typeID": "Label",
+          "zOrder": "86",
+          "measuredW": "77",
+          "measuredH": "25",
+          "x": "1047",
+          "y": "671",
+          "properties": {
+            "size": "17",
+            "text": "AVERAGE"
+          }
+        },
+        {
+          "ID": "1349",
+          "typeID": "TextArea",
+          "zOrder": "87",
+          "w": "133",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1145",
+          "y": "658",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1350",
+          "typeID": "Label",
+          "zOrder": "88",
+          "measuredW": "61",
+          "measuredH": "25",
+          "x": "1179",
+          "y": "671",
+          "properties": {
+            "size": "17",
+            "text": "COUNT"
+          }
+        },
+        {
+          "ID": "1351",
+          "typeID": "TextArea",
+          "zOrder": "89",
+          "w": "124",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1024",
+          "y": "705",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1352",
+          "typeID": "Label",
+          "zOrder": "90",
+          "measuredW": "69",
+          "measuredH": "25",
+          "x": "1051",
+          "y": "718",
+          "properties": {
+            "size": "17",
+            "text": "CONCAT"
+          }
+        },
+        {
+          "ID": "1353",
+          "typeID": "TextArea",
+          "zOrder": "91",
+          "w": "133",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1145",
+          "y": "705",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1354",
+          "typeID": "Label",
+          "zOrder": "92",
+          "measuredW": "43",
+          "measuredH": "25",
+          "x": "1188",
+          "y": "718",
+          "properties": {
+            "size": "17",
+            "text": "TRIM"
+          }
+        },
+        {
+          "ID": "1355",
+          "typeID": "TextArea",
+          "zOrder": "93",
+          "w": "254",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1024",
+          "y": "752",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1356",
+          "typeID": "Label",
+          "zOrder": "94",
+          "measuredW": "222",
+          "measuredH": "25",
+          "x": "1039",
+          "y": "765",
+          "properties": {
+            "size": "17",
+            "text": "UPPER / LOWER / PROPER"
+          }
+        },
+        {
+          "ID": "1357",
+          "typeID": "TextArea",
+          "zOrder": "95",
+          "w": "254",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1024",
+          "y": "799",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1358",
+          "typeID": "Label",
+          "zOrder": "96",
+          "measuredW": "198",
+          "measuredH": "25",
+          "x": "1045",
+          "y": "812",
+          "properties": {
+            "size": "17",
+            "text": "REPLACE / SUBSTITUTE"
+          }
+        },
+        {
+          "ID": "1359",
+          "typeID": "TextArea",
+          "zOrder": "97",
+          "w": "255",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1023",
+          "y": "845",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1360",
+          "typeID": "Label",
+          "zOrder": "98",
+          "measuredW": "179",
+          "measuredH": "25",
+          "x": "1045",
+          "y": "858",
+          "properties": {
+            "size": "17",
+            "text": "VLOOKUP / HLOOKUP"
+          }
+        },
+        {
+          "ID": "1361",
+          "typeID": "TextArea",
+          "zOrder": "99",
+          "w": "125",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1023",
+          "y": "892",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1362",
+          "typeID": "Label",
+          "zOrder": "100",
+          "measuredW": "16",
+          "measuredH": "25",
+          "x": "1078",
+          "y": "905",
+          "properties": {
+            "size": "17",
+            "text": "IF"
+          }
+        },
+        {
+          "ID": "1363",
+          "typeID": "TextArea",
+          "zOrder": "101",
+          "w": "133",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1145",
+          "y": "892",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1364",
+          "typeID": "Label",
+          "zOrder": "102",
+          "measuredW": "70",
+          "measuredH": "25",
+          "x": "1177",
+          "y": "905",
+          "properties": {
+            "size": "17",
+            "text": "DATEDIF"
+          }
+        },
+        {
+          "ID": "1365",
+          "typeID": "Arrow",
+          "zOrder": "36",
+          "w": "1",
+          "h": "80",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1240",
+          "y": "961",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 79.51506179303396
+            }
+          }
+        },
+        {
+          "ID": "1366",
+          "typeID": "TextArea",
+          "zOrder": "103",
+          "w": "153",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1203",
+          "y": "1105",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1367",
+          "typeID": "Label",
+          "zOrder": "104",
+          "measuredW": "91",
+          "measuredH": "25",
+          "x": "1234",
+          "y": "1118",
+          "properties": {
+            "size": "17",
+            "text": "Pivot Tables"
+          }
+        },
+        {
+          "ID": "1368",
+          "typeID": "TextArea",
+          "zOrder": "105",
+          "w": "103",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1106",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1369",
+          "typeID": "Label",
+          "zOrder": "106",
+          "measuredW": "67",
+          "measuredH": "25",
+          "x": "1110",
+          "y": "1119",
+          "properties": {
+            "size": "17",
+            "text": "Charting"
+          }
+        },
+        {
+          "ID": "1370",
+          "typeID": "Arrow",
+          "zOrder": "33",
+          "w": "529",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "685",
+          "y": "1052",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 528.9037319664117,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549723,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0.0075379026253585835,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1371",
+          "typeID": "TextArea",
+          "zOrder": "107",
+          "w": "210",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "836",
+          "y": "1026",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1372",
+          "typeID": "Label",
+          "zOrder": "108",
+          "measuredW": "34",
+          "measuredH": "25",
+          "x": "924",
+          "y": "1039",
+          "properties": {
+            "size": "17",
+            "text": "SQL"
+          }
+        },
+        {
+          "ID": "1373",
+          "typeID": "Label",
+          "zOrder": "109",
+          "measuredW": "211",
+          "measuredH": "28",
+          "x": "835",
+          "y": "1089",
+          "properties": {
+            "size": "20",
+            "text": "Visit the {color:purple}SQL Roadmap{color}"
+          }
+        },
+        {
+          "ID": "1375",
+          "typeID": "TextArea",
+          "zOrder": "110",
+          "w": "295",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "372",
+          "y": "972",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1376",
+          "typeID": "Label",
+          "zOrder": "111",
+          "measuredW": "251",
+          "measuredH": "25",
+          "x": "395",
+          "y": "984",
+          "properties": {
+            "size": "17",
+            "text": "1. Pick a Programming Language"
+          }
+        },
+        {
+          "ID": "1379",
+          "typeID": "TextArea",
+          "zOrder": "112",
+          "w": "91",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "373",
+          "y": "892",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1380",
+          "typeID": "Label",
+          "zOrder": "113",
+          "measuredW": "53",
+          "measuredH": "25",
+          "x": "391",
+          "y": "904",
+          "properties": {
+            "size": "17",
+            "text": "Python"
+          }
+        },
+        {
+          "ID": "1381",
+          "typeID": "Arrow",
+          "zOrder": "35",
+          "w": "1",
+          "h": "80",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1240",
+          "y": "1051",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 79.51506179303396
+            }
+          }
+        },
+        {
+          "ID": "1382",
+          "typeID": "Arrow",
+          "zOrder": "34",
+          "w": "61",
+          "h": "57",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1153",
+          "y": "1061",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.4958937007040731,
+              "y": 56.23532543473789
+            },
+            "p1": {
+              "x": 0.4750593824228036,
+              "y": 0.22327790973871714
+            },
+            "p2": {
+              "x": 61.064522891522756,
+              "y": -0.2953951433596558
+            }
+          }
+        },
+        {
+          "ID": "1383",
+          "typeID": "TextArea",
+          "zOrder": "114",
+          "w": "81",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "473",
+          "y": "892",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1384",
+          "typeID": "Label",
+          "zOrder": "115",
+          "w": "15",
+          "measuredW": "13",
+          "measuredH": "25",
+          "x": "504",
+          "y": "904",
+          "properties": {
+            "size": "17",
+            "text": "R"
+          }
+        },
+        {
+          "ID": "1386",
+          "typeID": "TextArea",
+          "zOrder": "116",
+          "w": "296",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "372",
+          "y": "1027",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1387",
+          "typeID": "Label",
+          "zOrder": "117",
+          "measuredW": "230",
+          "measuredH": "25",
+          "x": "395",
+          "y": "1040",
+          "properties": {
+            "size": "17",
+            "text": "2. Data Manipulation Libraries"
+          }
+        },
+        {
+          "ID": "1390",
+          "typeID": "TextArea",
+          "zOrder": "118",
+          "w": "152",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "174",
+          "y": "998",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1391",
+          "typeID": "Label",
+          "zOrder": "119",
+          "measuredW": "127",
+          "measuredH": "25",
+          "x": "186",
+          "y": "1011",
+          "properties": {
+            "size": "17",
+            "text": "Pandas (Python)"
+          }
+        },
+        {
+          "ID": "1392",
+          "typeID": "TextArea",
+          "zOrder": "120",
+          "w": "150",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "175",
+          "y": "1052",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1393",
+          "typeID": "Label",
+          "zOrder": "121",
+          "measuredW": "69",
+          "measuredH": "25",
+          "x": "215",
+          "y": "1065",
+          "properties": {
+            "size": "17",
+            "text": "Dplyr (R)"
+          }
+        },
+        {
+          "ID": "1398",
+          "typeID": "TextArea",
+          "zOrder": "122",
+          "w": "295",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "372",
+          "y": "1081",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1399",
+          "typeID": "Label",
+          "zOrder": "123",
+          "measuredW": "228",
+          "measuredH": "25",
+          "x": "395",
+          "y": "1094",
+          "properties": {
+            "size": "17",
+            "text": "3. Data Visualisation Libraries"
+          }
+        },
+        {
+          "ID": "1400",
+          "typeID": "TextArea",
+          "zOrder": "124",
+          "w": "104",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "372",
+          "y": "1151",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1401",
+          "typeID": "Label",
+          "zOrder": "125",
+          "measuredW": "76",
+          "measuredH": "25",
+          "x": "386",
+          "y": "1164",
+          "properties": {
+            "size": "17",
+            "text": "Matplotlib"
+          }
+        },
+        {
+          "ID": "1402",
+          "typeID": "TextArea",
+          "zOrder": "126",
+          "w": "87",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "483",
+          "y": "1152",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1403",
+          "typeID": "Label",
+          "zOrder": "127",
+          "measuredW": "58",
+          "measuredH": "25",
+          "x": "498",
+          "y": "1165",
+          "properties": {
+            "size": "17",
+            "text": "ggplot2"
+          }
+        },
+        {
+          "ID": "1421",
+          "typeID": "Arrow",
+          "zOrder": "32",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "512",
+          "y": "916",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1422",
+          "typeID": "Arrow",
+          "zOrder": "31",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "424",
+          "y": "917",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1427",
+          "typeID": "Arrow",
+          "zOrder": "30",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "423",
+          "y": "1098",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1428",
+          "typeID": "Arrow",
+          "zOrder": "29",
+          "w": "1",
+          "h": "74",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "526",
+          "y": "1098",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 74.15918378573792
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1430",
+          "typeID": "Arrow",
+          "zOrder": "28",
+          "w": "70",
+          "h": "28",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "321",
+          "y": "1020",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 70.07784783471021,
+              "y": 28.59368712846549
+            },
+            "p1": {
+              "x": 0.5955016065690818,
+              "y": 0.14102106390574817
+            },
+            "p2": {
+              "x": 0.4401520728250716,
+              "y": 0.1701378379000289
+            }
+          }
+        },
+        {
+          "ID": "1431",
+          "typeID": "Arrow",
+          "zOrder": "27",
+          "w": "66",
+          "h": "16",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "313",
+          "y": "1060",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 66.70842811848411,
+              "y": 4.226639238276448
+            },
+            "p1": {
+              "x": 0.5123616496037375,
+              "y": -0.1339212068141815
+            },
+            "p2": {
+              "x": 0.4413022358245371,
+              "y": 16
+            }
+          }
+        },
+        {
+          "ID": "1432",
+          "typeID": "Arrow",
+          "zOrder": "128",
+          "w": "1",
+          "h": "184",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "682",
+          "y": "960",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497395,
+              "y": -0.00006668258117005643
+            },
+            "p2": {
+              "x": 0,
+              "y": 184
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1433",
+          "typeID": "Arrow",
+          "zOrder": "129",
+          "w": "1",
+          "h": "184",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "686",
+          "y": "959",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497395,
+              "y": -0.00006668258117005643
+            },
+            "p2": {
+              "x": 0,
+              "y": 184
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1434",
+          "typeID": "Label",
+          "zOrder": "130",
+          "measuredW": "220",
+          "measuredH": "28",
+          "x": "584",
+          "y": "921",
+          "properties": {
+            "size": "20",
+            "text": "Gain Programming Skills"
+          }
+        },
+        {
+          "ID": "1435",
+          "typeID": "Arrow",
+          "zOrder": "131",
+          "w": "99",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "586",
+          "y": "958",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 99.00753790262536,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1436",
+          "typeID": "Arrow",
+          "zOrder": "132",
+          "w": "99",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "586",
+          "y": "1145",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 99.00753790262536,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "1437",
+          "typeID": "Arrow",
+          "zOrder": "133",
+          "w": "1",
+          "h": "97",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "587",
+          "y": "1146",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 96.89400304511378
+            }
+          }
+        },
+        {
+          "ID": "1438",
+          "typeID": "Label",
+          "zOrder": "134",
+          "measuredW": "222",
+          "measuredH": "28",
+          "x": "551",
+          "y": "1261",
+          "properties": {
+            "size": "20",
+            "text": "Mastering Data handling"
+          }
+        },
+        {
+          "ID": "1440",
+          "typeID": "Arrow",
+          "zOrder": "135",
+          "w": "366",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "789",
+          "y": "1277",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 365.6128819501314,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549718,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1442",
+          "typeID": "TextArea",
+          "zOrder": "136",
+          "w": "178",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "1251",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1443",
+          "typeID": "Label",
+          "zOrder": "137",
+          "measuredW": "118",
+          "measuredH": "25",
+          "x": "883",
+          "y": "1263",
+          "properties": {
+            "size": "17",
+            "text": "Data Collection"
+          }
+        },
+        {
+          "ID": "1444",
+          "typeID": "TextArea",
+          "zOrder": "138",
+          "w": "275",
+          "h": "150",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "798",
+          "y": "1329"
+        },
+        {
+          "ID": "1445",
+          "typeID": "Label",
+          "zOrder": "139",
+          "measuredW": "170",
+          "measuredH": "25",
+          "x": "851",
+          "y": "1344",
+          "properties": {
+            "size": "17",
+            "text": "from different Sources"
+          }
+        },
+        {
+          "ID": "1446",
+          "typeID": "TextArea",
+          "zOrder": "140",
+          "w": "127",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "798",
+          "y": "1382",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1447",
+          "typeID": "Label",
+          "zOrder": "141",
+          "measuredW": "83",
+          "measuredH": "25",
+          "x": "822",
+          "y": "1395",
+          "properties": {
+            "size": "17",
+            "text": "Databases"
+          }
+        },
+        {
+          "ID": "1448",
+          "typeID": "TextArea",
+          "zOrder": "142",
+          "w": "150",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "922",
+          "y": "1383",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1449",
+          "typeID": "Label",
+          "zOrder": "143",
+          "measuredW": "74",
+          "measuredH": "25",
+          "x": "960",
+          "y": "1396",
+          "properties": {
+            "size": "17",
+            "text": "CSV Files"
+          }
+        },
+        {
+          "ID": "1450",
+          "typeID": "TextArea",
+          "zOrder": "144",
+          "w": "127",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "798",
+          "y": "1429",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1451",
+          "typeID": "Label",
+          "zOrder": "145",
+          "measuredW": "35",
+          "measuredH": "25",
+          "x": "844",
+          "y": "1442",
+          "properties": {
+            "size": "17",
+            "text": "APIs"
+          }
+        },
+        {
+          "ID": "1452",
+          "typeID": "TextArea",
+          "zOrder": "146",
+          "w": "151",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "922",
+          "y": "1430",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1453",
+          "typeID": "Label",
+          "zOrder": "147",
+          "measuredW": "107",
+          "measuredH": "25",
+          "x": "944",
+          "y": "1443",
+          "properties": {
+            "size": "17",
+            "text": "Web Scraping"
+          }
+        },
+        {
+          "ID": "1454",
+          "typeID": "Label",
+          "zOrder": "148",
+          "measuredW": "276",
+          "measuredH": "25",
+          "x": "797",
+          "y": "1492",
+          "properties": {
+            "size": "17",
+            "text": "Practice Data Collection using Each"
+          }
+        },
+        {
+          "ID": "1455",
+          "typeID": "Arrow",
+          "zOrder": "26",
+          "w": "1",
+          "h": "80",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "934",
+          "y": "1278",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 79.51506179303396
+            }
+          }
+        },
+        {
+          "ID": "1456",
+          "typeID": "TextArea",
+          "zOrder": "149",
+          "w": "276",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1251",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1457",
+          "typeID": "Label",
+          "zOrder": "150",
+          "measuredW": "110",
+          "measuredH": "25",
+          "x": "1171",
+          "y": "1263",
+          "properties": {
+            "size": "17",
+            "text": "Data Cleaning"
+          }
+        },
+        {
+          "ID": "1458",
+          "typeID": "TextArea",
+          "zOrder": "151",
+          "w": "212",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1384",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1459",
+          "typeID": "Label",
+          "zOrder": "152",
+          "measuredW": "174",
+          "measuredH": "25",
+          "x": "1111",
+          "y": "1397",
+          "properties": {
+            "size": "17",
+            "text": "Handling Missing Data"
+          }
+        },
+        {
+          "ID": "1460",
+          "typeID": "TextArea",
+          "zOrder": "153",
+          "w": "212",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1431",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1461",
+          "typeID": "Label",
+          "zOrder": "154",
+          "measuredW": "164",
+          "measuredH": "25",
+          "x": "1116",
+          "y": "1444",
+          "properties": {
+            "size": "17",
+            "text": "Removing Duplicates"
+          }
+        },
+        {
+          "ID": "1462",
+          "typeID": "TextArea",
+          "zOrder": "155",
+          "w": "212",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1478",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1463",
+          "typeID": "Label",
+          "zOrder": "156",
+          "measuredW": "122",
+          "measuredH": "25",
+          "x": "1137",
+          "y": "1491",
+          "properties": {
+            "size": "17",
+            "text": "Finding Outliers"
+          }
+        },
+        {
+          "ID": "1464",
+          "typeID": "TextArea",
+          "zOrder": "157",
+          "w": "212",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1525",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1465",
+          "typeID": "Label",
+          "zOrder": "158",
+          "measuredW": "156",
+          "measuredH": "25",
+          "x": "1120",
+          "y": "1538",
+          "properties": {
+            "size": "17",
+            "text": "Data Transformation"
+          }
+        },
+        {
+          "ID": "1466",
+          "typeID": "TextArea",
+          "zOrder": "24",
+          "w": "212",
+          "h": "241",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1092",
+          "y": "1334"
+        },
+        {
+          "ID": "1467",
+          "typeID": "Label",
+          "zOrder": "25",
+          "measuredW": "153",
+          "measuredH": "25",
+          "x": "1115",
+          "y": "1349",
+          "properties": {
+            "size": "17",
+            "text": "different techniques"
+          }
+        },
+        {
+          "ID": "1468",
+          "typeID": "Arrow",
+          "zOrder": "23",
+          "w": "1",
+          "h": "80",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1183",
+          "y": "1288",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497256,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 79.51506179303396
+            }
+          }
+        },
+        {
+          "ID": "1469",
+          "typeID": "TextArea",
+          "zOrder": "159",
+          "w": "106",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1094",
+          "y": "1619",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1470",
+          "typeID": "Label",
+          "zOrder": "160",
+          "measuredW": "58",
+          "measuredH": "25",
+          "x": "1118",
+          "y": "1632",
+          "properties": {
+            "size": "17",
+            "text": "Pandas"
+          }
+        },
+        {
+          "ID": "1471",
+          "typeID": "TextArea",
+          "zOrder": "161",
+          "w": "96",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1211",
+          "y": "1620",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1472",
+          "typeID": "Label",
+          "zOrder": "162",
+          "measuredW": "40",
+          "measuredH": "25",
+          "x": "1239",
+          "y": "1633",
+          "properties": {
+            "size": "17",
+            "text": "Dplyr"
+          }
+        },
+        {
+          "ID": "1473",
+          "typeID": "Label",
+          "zOrder": "163",
+          "measuredW": "175",
+          "measuredH": "25",
+          "x": "1117",
+          "y": "1587",
+          "properties": {
+            "size": "17",
+            "text": "using different libraries"
+          }
+        },
+        {
+          "ID": "1474",
+          "typeID": "Arrow",
+          "zOrder": "22",
+          "w": "1",
+          "h": "444",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1341",
+          "y": "1288",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 443.9127867071479
+            }
+          }
+        },
+        {
+          "ID": "1475",
+          "typeID": "Arrow",
+          "zOrder": "164",
+          "w": "308",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1034",
+          "y": "1732",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 307.6128819501314,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549717,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1476",
+          "typeID": "Label",
+          "zOrder": "165",
+          "measuredW": "230",
+          "measuredH": "28",
+          "x": "639",
+          "y": "1569",
+          "properties": {
+            "size": "20",
+            "text": "Data Analysis Techniques"
+          }
+        },
+        {
+          "ID": "1477",
+          "typeID": "Arrow",
+          "zOrder": "166",
+          "w": "1",
+          "h": "147",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1034",
+          "y": "1583",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.029677358783033014,
+              "y": 147.15168676237067
+            },
+            "p1": {
+              "x": 0.44386240125497145,
+              "y": -0.0000840383214745916
+            },
+            "p2": {
+              "x": 0.029677358782919327,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1478",
+          "typeID": "Arrow",
+          "zOrder": "167",
+          "w": "151",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "883",
+          "y": "1582",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 150.6128819501314,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497173,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1479",
+          "typeID": "TextArea",
+          "zOrder": "168",
+          "w": "259",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "228",
+          "y": "1557",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1480",
+          "typeID": "Label",
+          "zOrder": "169",
+          "measuredW": "153",
+          "measuredH": "25",
+          "x": "281",
+          "y": "1569",
+          "properties": {
+            "size": "17",
+            "text": "Descriptive Analysis"
+          }
+        },
+        {
+          "ID": "1493",
+          "typeID": "TextArea",
+          "zOrder": "170",
+          "w": "74",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "187",
+          "y": "1333",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1494",
+          "typeID": "Label",
+          "zOrder": "171",
+          "measuredW": "44",
+          "measuredH": "25",
+          "x": "204",
+          "y": "1346",
+          "properties": {
+            "size": "17",
+            "text": "Mean"
+          }
+        },
+        {
+          "ID": "1495",
+          "typeID": "TextArea",
+          "zOrder": "172",
+          "w": "74",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "187",
+          "y": "1379",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1496",
+          "typeID": "Label",
+          "zOrder": "173",
+          "measuredW": "45",
+          "measuredH": "25",
+          "x": "203",
+          "y": "1392",
+          "properties": {
+            "size": "17",
+            "text": "Mode"
+          }
+        },
+        {
+          "ID": "1497",
+          "typeID": "TextArea",
+          "zOrder": "174",
+          "w": "88",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "258",
+          "y": "1333",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1498",
+          "typeID": "Label",
+          "zOrder": "175",
+          "measuredW": "58",
+          "measuredH": "25",
+          "x": "273",
+          "y": "1346",
+          "properties": {
+            "size": "17",
+            "text": "Median"
+          }
+        },
+        {
+          "ID": "1499",
+          "typeID": "TextArea",
+          "zOrder": "176",
+          "w": "88",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "257",
+          "y": "1380",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1500",
+          "typeID": "Label",
+          "zOrder": "177",
+          "measuredW": "64",
+          "measuredH": "25",
+          "x": "269",
+          "y": "1393",
+          "properties": {
+            "size": "17",
+            "text": "Average"
+          }
+        },
+        {
+          "ID": "1501",
+          "typeID": "TextArea",
+          "zOrder": "20",
+          "w": "158",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "187",
+          "y": "1427"
+        },
+        {
+          "ID": "1502",
+          "typeID": "Label",
+          "zOrder": "21",
+          "measuredW": "127",
+          "measuredH": "24",
+          "x": "202",
+          "y": "1440",
+          "properties": {
+            "size": "16",
+            "text": "Central Tendency"
+          }
+        },
+        {
+          "ID": "1503",
+          "typeID": "TextArea",
+          "zOrder": "178",
+          "w": "171",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "360",
+          "y": "1426"
+        },
+        {
+          "ID": "1504",
+          "typeID": "Label",
+          "zOrder": "179",
+          "measuredW": "83",
+          "measuredH": "25",
+          "x": "404",
+          "y": "1438",
+          "properties": {
+            "size": "17",
+            "text": "Dispersion"
+          }
+        },
+        {
+          "ID": "1505",
+          "typeID": "TextArea",
+          "zOrder": "180",
+          "w": "85",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "360",
+          "y": "1332",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1506",
+          "typeID": "Label",
+          "zOrder": "181",
+          "measuredW": "52",
+          "measuredH": "25",
+          "x": "377",
+          "y": "1345",
+          "properties": {
+            "size": "17",
+            "text": "Range"
+          }
+        },
+        {
+          "ID": "1509",
+          "typeID": "TextArea",
+          "zOrder": "182",
+          "w": "91",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "440",
+          "y": "1332",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1510",
+          "typeID": "Label",
+          "zOrder": "183",
+          "measuredW": "68",
+          "measuredH": "25",
+          "x": "452",
+          "y": "1345",
+          "properties": {
+            "size": "17",
+            "text": "Variance"
+          }
+        },
+        {
+          "ID": "1511",
+          "typeID": "TextArea",
+          "zOrder": "184",
+          "w": "171",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "360",
+          "y": "1379",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1512",
+          "typeID": "Label",
+          "zOrder": "185",
+          "measuredW": "147",
+          "measuredH": "25",
+          "x": "372",
+          "y": "1392",
+          "properties": {
+            "size": "17",
+            "text": "Standard Deviation"
+          }
+        },
+        {
+          "ID": "1513",
+          "typeID": "TextArea",
+          "zOrder": "186",
+          "w": "215",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "538",
+          "y": "1426"
+        },
+        {
+          "ID": "1514",
+          "typeID": "Label",
+          "zOrder": "187",
+          "measuredW": "142",
+          "measuredH": "25",
+          "x": "575",
+          "y": "1438",
+          "properties": {
+            "size": "17",
+            "text": "Distribution Shape"
+          }
+        },
+        {
+          "ID": "1519",
+          "typeID": "TextArea",
+          "zOrder": "188",
+          "w": "127",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "538",
+          "y": "1380",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1520",
+          "typeID": "Label",
+          "zOrder": "189",
+          "measuredW": "77",
+          "measuredH": "25",
+          "x": "563",
+          "y": "1392",
+          "properties": {
+            "size": "17",
+            "text": "Skewness"
+          }
+        },
+        {
+          "ID": "1521",
+          "typeID": "TextArea",
+          "zOrder": "190",
+          "w": "215",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "187",
+          "y": "1650",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1522",
+          "typeID": "Label",
+          "zOrder": "191",
+          "measuredW": "183",
+          "measuredH": "25",
+          "x": "203",
+          "y": "1662",
+          "properties": {
+            "size": "17",
+            "text": "Visualising Distributions"
+          }
+        },
+        {
+          "ID": "1528",
+          "typeID": "Label",
+          "zOrder": "192",
+          "measuredW": "108",
+          "measuredH": "25",
+          "x": "450",
+          "y": "1877",
+          "properties": {
+            "size": "17",
+            "text": "Charting Data"
+          }
+        },
+        {
+          "ID": "1529",
+          "typeID": "TextArea",
+          "zOrder": "193",
+          "w": "125",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "449",
+          "y": "1908",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1530",
+          "typeID": "Label",
+          "zOrder": "194",
+          "measuredW": "84",
+          "measuredH": "25",
+          "x": "470",
+          "y": "1921",
+          "properties": {
+            "size": "17",
+            "text": "Bar Charts"
+          }
+        },
+        {
+          "ID": "1531",
+          "typeID": "TextArea",
+          "zOrder": "195",
+          "w": "113",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "571",
+          "y": "1908",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1532",
+          "typeID": "Label",
+          "zOrder": "196",
+          "measuredW": "88",
+          "measuredH": "25",
+          "x": "584",
+          "y": "1921",
+          "properties": {
+            "size": "17",
+            "text": "Histograms"
+          }
+        },
+        {
+          "ID": "1533",
+          "typeID": "TextArea",
+          "zOrder": "197",
+          "w": "125",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "449",
+          "y": "1954",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1534",
+          "typeID": "Label",
+          "zOrder": "198",
+          "measuredW": "81",
+          "measuredH": "25",
+          "x": "471",
+          "y": "1967",
+          "properties": {
+            "size": "17",
+            "text": "Line Chart"
+          }
+        },
+        {
+          "ID": "1535",
+          "typeID": "TextArea",
+          "zOrder": "199",
+          "w": "114",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "571",
+          "y": "1955",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1536",
+          "typeID": "Label",
+          "zOrder": "200",
+          "measuredW": "62",
+          "measuredH": "25",
+          "x": "597",
+          "y": "1968",
+          "properties": {
+            "size": "17",
+            "text": "Stacked"
+          }
+        },
+        {
+          "ID": "1537",
+          "typeID": "TextArea",
+          "zOrder": "201",
+          "w": "125",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "449",
+          "y": "2001",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1538",
+          "typeID": "Label",
+          "zOrder": "202",
+          "measuredW": "90",
+          "measuredH": "25",
+          "x": "467",
+          "y": "2014",
+          "properties": {
+            "size": "17",
+            "text": "Scatter Plot"
+          }
+        },
+        {
+          "ID": "1539",
+          "typeID": "TextArea",
+          "zOrder": "203",
+          "w": "127",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "449",
+          "y": "2048",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1540",
+          "typeID": "Label",
+          "zOrder": "204",
+          "measuredW": "100",
+          "measuredH": "25",
+          "x": "462",
+          "y": "2061",
+          "properties": {
+            "size": "17",
+            "text": "Funnel Chart"
+          }
+        },
+        {
+          "ID": "1541",
+          "typeID": "TextArea",
+          "zOrder": "205",
+          "w": "114",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "571",
+          "y": "2002",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1542",
+          "typeID": "Label",
+          "zOrder": "206",
+          "measuredW": "71",
+          "measuredH": "25",
+          "x": "592",
+          "y": "2015",
+          "properties": {
+            "size": "17",
+            "text": "Heatmap"
+          }
+        },
+        {
+          "ID": "1543",
+          "typeID": "TextArea",
+          "zOrder": "207",
+          "w": "114",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "571",
+          "y": "2048",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1544",
+          "typeID": "Label",
+          "zOrder": "208",
+          "measuredW": "72",
+          "measuredH": "25",
+          "x": "592",
+          "y": "2061",
+          "properties": {
+            "size": "17",
+            "text": "Pie Chart"
+          }
+        },
+        {
+          "ID": "1545",
+          "typeID": "TextArea",
+          "zOrder": "209",
+          "w": "93",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "660",
+          "y": "1380",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1546",
+          "typeID": "Label",
+          "zOrder": "210",
+          "measuredW": "62",
+          "measuredH": "25",
+          "x": "676",
+          "y": "1392",
+          "properties": {
+            "size": "17",
+            "text": "Kurtosis"
+          }
+        },
+        {
+          "ID": "1547",
+          "typeID": "Label",
+          "zOrder": "211",
+          "measuredW": "160",
+          "measuredH": "25",
+          "x": "186",
+          "y": "1490",
+          "properties": {
+            "size": "17",
+            "text": "Generating Statistics"
+          }
+        },
+        {
+          "ID": "1548",
+          "typeID": "Arrow",
+          "zOrder": "19",
+          "w": "230",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "392",
+          "y": "1582",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 229.6128819501314,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497156,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1549",
+          "typeID": "Arrow",
+          "zOrder": "18",
+          "w": "1",
+          "h": "133",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "265",
+          "y": "1522",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549726,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 133
+            }
+          }
+        },
+        {
+          "ID": "1550",
+          "typeID": "Arrow",
+          "zOrder": "212",
+          "w": "387",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "360",
+          "y": "1502",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "2848996",
+            "p0": {
+              "x": 387,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549725,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            },
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1551",
+          "typeID": "Arrow",
+          "zOrder": "17",
+          "w": "1",
+          "h": "207",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "440",
+          "y": "1597",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549729,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 206.5
+            }
+          }
+        },
+        {
+          "ID": "1552",
+          "typeID": "TextArea",
+          "zOrder": "213",
+          "w": "259",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "228",
+          "y": "1774",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1553",
+          "typeID": "Label",
+          "zOrder": "214",
+          "measuredW": "137",
+          "measuredH": "25",
+          "x": "289",
+          "y": "1786",
+          "properties": {
+            "size": "17",
+            "text": "Data Visualization"
+          }
+        },
+        {
+          "ID": "1555",
+          "typeID": "Label",
+          "zOrder": "215",
+          "measuredW": "40",
+          "measuredH": "25",
+          "x": "230",
+          "y": "1878",
+          "properties": {
+            "size": "17",
+            "text": "Tools"
+          }
+        },
+        {
+          "ID": "1556",
+          "typeID": "TextArea",
+          "zOrder": "216",
+          "w": "98",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "186",
+          "y": "1909",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1557",
+          "typeID": "Label",
+          "zOrder": "217",
+          "measuredW": "61",
+          "measuredH": "25",
+          "x": "204",
+          "y": "1922",
+          "properties": {
+            "size": "17",
+            "text": "Tableau"
+          }
+        },
+        {
+          "ID": "1558",
+          "typeID": "TextArea",
+          "zOrder": "218",
+          "w": "98",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "186",
+          "y": "1955",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1559",
+          "typeID": "Label",
+          "zOrder": "219",
+          "measuredW": "64",
+          "measuredH": "25",
+          "x": "204",
+          "y": "1968",
+          "properties": {
+            "size": "17",
+            "text": "PowerBI"
+          }
+        },
+        {
+          "ID": "1561",
+          "typeID": "Label",
+          "zOrder": "220",
+          "measuredW": "125",
+          "measuredH": "25",
+          "x": "304",
+          "y": "1878",
+          "properties": {
+            "size": "17",
+            "text": "Python Libraries"
+          }
+        },
+        {
+          "ID": "1562",
+          "typeID": "TextArea",
+          "zOrder": "221",
+          "w": "153",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "290",
+          "y": "1910",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1563",
+          "typeID": "Label",
+          "zOrder": "222",
+          "measuredW": "76",
+          "measuredH": "25",
+          "x": "329",
+          "y": "1923",
+          "properties": {
+            "size": "17",
+            "text": "Matplotlib"
+          }
+        },
+        {
+          "ID": "1564",
+          "typeID": "TextArea",
+          "zOrder": "223",
+          "w": "153",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "290",
+          "y": "1956",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1565",
+          "typeID": "Label",
+          "zOrder": "224",
+          "measuredW": "65",
+          "measuredH": "25",
+          "x": "334",
+          "y": "1969",
+          "properties": {
+            "size": "17",
+            "text": "Seaborn"
+          }
+        },
+        {
+          "ID": "1566",
+          "typeID": "TextArea",
+          "zOrder": "225",
+          "w": "153",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "290",
+          "y": "2004",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1567",
+          "typeID": "Label",
+          "zOrder": "226",
+          "measuredW": "58",
+          "measuredH": "25",
+          "x": "338",
+          "y": "2017",
+          "properties": {
+            "size": "17",
+            "text": "ggplot2"
+          }
+        },
+        {
+          "ID": "1568",
+          "typeID": "Arrow",
+          "zOrder": "16",
+          "w": "1",
+          "h": "58",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "255",
+          "y": "1805",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 58
+            }
+          }
+        },
+        {
+          "ID": "1569",
+          "typeID": "Arrow",
+          "zOrder": "15",
+          "w": "1",
+          "h": "58",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "366",
+          "y": "1815",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 58
+            }
+          }
+        },
+        {
+          "ID": "1570",
+          "typeID": "Arrow",
+          "zOrder": "14",
+          "w": "1",
+          "h": "58",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "468",
+          "y": "1811",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549727,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 58
+            }
+          }
+        },
+        {
+          "ID": "1571",
+          "typeID": "Arrow",
+          "zOrder": "13",
+          "w": "318",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "459",
+          "y": "1798",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 317.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497156,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1572",
+          "typeID": "TextArea",
+          "zOrder": "227",
+          "w": "259",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "721",
+          "y": "1770",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1573",
+          "typeID": "Label",
+          "zOrder": "228",
+          "measuredW": "141",
+          "measuredH": "25",
+          "x": "781",
+          "y": "1782",
+          "properties": {
+            "size": "17",
+            "text": "Statistical Analysis"
+          }
+        },
+        {
+          "ID": "1574",
+          "typeID": "TextArea",
+          "zOrder": "229",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "751",
+          "y": "1909",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1575",
+          "typeID": "Label",
+          "zOrder": "230",
+          "measuredW": "145",
+          "measuredH": "25",
+          "x": "776",
+          "y": "1922",
+          "properties": {
+            "size": "17",
+            "text": "Hypothesis Testing"
+          }
+        },
+        {
+          "ID": "1576",
+          "typeID": "TextArea",
+          "zOrder": "231",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "751",
+          "y": "1955",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1577",
+          "typeID": "Label",
+          "zOrder": "232",
+          "measuredW": "152",
+          "measuredH": "25",
+          "x": "773",
+          "y": "1968",
+          "properties": {
+            "size": "17",
+            "text": "Correlation Analysis"
+          }
+        },
+        {
+          "ID": "1578",
+          "typeID": "TextArea",
+          "zOrder": "233",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "751",
+          "y": "2002",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1579",
+          "typeID": "Label",
+          "zOrder": "234",
+          "measuredW": "88",
+          "measuredH": "25",
+          "x": "805",
+          "y": "2015",
+          "properties": {
+            "size": "17",
+            "text": "Regression"
+          }
+        },
+        {
+          "ID": "1580",
+          "typeID": "Arrow",
+          "zOrder": "12",
+          "w": "1",
+          "h": "66",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "848",
+          "y": "1805",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497284,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 66
+            }
+          }
+        },
+        {
+          "ID": "1581",
+          "typeID": "Label",
+          "zOrder": "235",
+          "measuredW": "202",
+          "measuredH": "25",
+          "x": "750",
+          "y": "1880",
+          "properties": {
+            "size": "17",
+            "text": "Learn different techniques"
+          }
+        },
+        {
+          "ID": "1582",
+          "typeID": "Label",
+          "zOrder": "236",
+          "measuredW": "263",
+          "measuredH": "25",
+          "x": "721",
+          "y": "1701",
+          "properties": {
+            "size": "17",
+            "text": "Learn to analyze relationships and"
+          }
+        },
+        {
+          "ID": "1583",
+          "typeID": "Label",
+          "zOrder": "237",
+          "measuredW": "212",
+          "measuredH": "25",
+          "x": "721",
+          "y": "1728",
+          "properties": {
+            "size": "17",
+            "text": "make data-driven decisions"
+          }
+        },
+        {
+          "ID": "1584",
+          "typeID": "Arrow",
+          "zOrder": "11",
+          "w": "142",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "959",
+          "y": "1795",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 141.96370477209098,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549715,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1585",
+          "typeID": "Label",
+          "zOrder": "238",
+          "measuredW": "153",
+          "measuredH": "28",
+          "x": "1123",
+          "y": "1779",
+          "properties": {
+            "size": "20",
+            "text": "Advanced Topics"
+          }
+        },
+        {
+          "ID": "1586",
+          "typeID": "Arrow",
+          "zOrder": "239",
+          "w": "47",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1292",
+          "y": "1792",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 46.52104304164391,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497134,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1587",
+          "typeID": "Arrow",
+          "zOrder": "240",
+          "w": "1",
+          "h": "621",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1340",
+          "y": "1792",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "10027263",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497295,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 620.9555019156123
+            }
+          }
+        },
+        {
+          "ID": "1588",
+          "typeID": "TextArea",
+          "zOrder": "241",
+          "w": "259",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1111",
+          "y": "2128",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1589",
+          "typeID": "Label",
+          "zOrder": "242",
+          "measuredW": "195",
+          "measuredH": "25",
+          "x": "1141",
+          "y": "2140",
+          "properties": {
+            "size": "17",
+            "text": "Machine Learning Basics"
+          }
+        },
+        {
+          "ID": "1590",
+          "typeID": "TextArea",
+          "zOrder": "243",
+          "w": "222",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1049",
+          "y": "2001",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1591",
+          "typeID": "Label",
+          "zOrder": "244",
+          "measuredW": "159",
+          "measuredH": "25",
+          "x": "1080",
+          "y": "2014",
+          "properties": {
+            "size": "17",
+            "text": "Supervised Learning"
+          }
+        },
+        {
+          "ID": "1592",
+          "typeID": "TextArea",
+          "zOrder": "245",
+          "w": "222",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1049",
+          "y": "1949",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1593",
+          "typeID": "Label",
+          "zOrder": "246",
+          "measuredW": "180",
+          "measuredH": "25",
+          "x": "1070",
+          "y": "1962",
+          "properties": {
+            "size": "17",
+            "text": "Unsupervised Learning"
+          }
+        },
+        {
+          "ID": "1594",
+          "typeID": "TextArea",
+          "zOrder": "247",
+          "w": "222",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1049",
+          "y": "1897",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1595",
+          "typeID": "Label",
+          "zOrder": "248",
+          "measuredW": "187",
+          "measuredH": "25",
+          "x": "1066",
+          "y": "1910",
+          "properties": {
+            "size": "17",
+            "text": "Reinforcement Learning"
+          }
+        },
+        {
+          "ID": "1596",
+          "typeID": "Label",
+          "zOrder": "249",
+          "measuredW": "208",
+          "measuredH": "25",
+          "x": "1059",
+          "y": "2059",
+          "properties": {
+            "size": "17",
+            "text": "Types of Machine Learning"
+          }
+        },
+        {
+          "ID": "1597",
+          "typeID": "Arrow",
+          "zOrder": "10",
+          "w": "1",
+          "h": "117",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1176",
+          "y": "2092",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549729,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 116.55972101871248
+            }
+          }
+        },
+        {
+          "ID": "1598",
+          "typeID": "Label",
+          "zOrder": "250",
+          "measuredW": "173",
+          "measuredH": "25",
+          "x": "764",
+          "y": "2140",
+          "properties": {
+            "size": "17",
+            "text": "Popular ML Algorithms"
+          }
+        },
+        {
+          "ID": "1599",
+          "typeID": "TextArea",
+          "zOrder": "251",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "753",
+          "y": "2172",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1600",
+          "typeID": "Label",
+          "zOrder": "252",
+          "measuredW": "115",
+          "measuredH": "25",
+          "x": "797",
+          "y": "2185",
+          "properties": {
+            "size": "17",
+            "text": "Decision Trees"
+          }
+        },
+        {
+          "ID": "1601",
+          "typeID": "TextArea",
+          "zOrder": "253",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "753",
+          "y": "2333",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1602",
+          "typeID": "Label",
+          "zOrder": "254",
+          "measuredW": "152",
+          "measuredH": "25",
+          "x": "777",
+          "y": "2346",
+          "properties": {
+            "size": "17",
+            "text": "Logistic Regression"
+          }
+        },
+        {
+          "ID": "1603",
+          "typeID": "TextArea",
+          "zOrder": "255",
+          "w": "195",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "753",
+          "y": "2280",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1604",
+          "typeID": "Label",
+          "zOrder": "256",
+          "measuredW": "153",
+          "measuredH": "25",
+          "x": "777",
+          "y": "2293",
+          "properties": {
+            "size": "17",
+            "text": "K-Means Clustering"
+          }
+        },
+        {
+          "ID": "1605",
+          "typeID": "TextArea",
+          "zOrder": "257",
+          "w": "122",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "753",
+          "y": "2226",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1606",
+          "typeID": "Label",
+          "zOrder": "258",
+          "measuredW": "95",
+          "measuredH": "25",
+          "x": "766",
+          "y": "2239",
+          "properties": {
+            "size": "17",
+            "text": "Naive Bayes"
+          }
+        },
+        {
+          "ID": "1607",
+          "typeID": "TextArea",
+          "zOrder": "259",
+          "w": "69",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "879",
+          "y": "2226",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1608",
+          "typeID": "Label",
+          "zOrder": "260",
+          "measuredW": "37",
+          "measuredH": "25",
+          "x": "895",
+          "y": "2239",
+          "properties": {
+            "size": "17",
+            "text": "KNN"
+          }
+        },
+        {
+          "ID": "1609",
+          "typeID": "TextArea",
+          "zOrder": "261",
+          "w": "256",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "1035",
+          "y": "2203",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1610",
+          "typeID": "Label",
+          "zOrder": "262",
+          "measuredW": "226",
+          "measuredH": "25",
+          "x": "1050",
+          "y": "2216",
+          "properties": {
+            "size": "17",
+            "text": "Model Evaluation Techniques"
+          }
+        },
+        {
+          "ID": "1611",
+          "typeID": "Arrow",
+          "zOrder": "9",
+          "w": "196",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "955",
+          "y": "2153",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.05285233241625065,
+              "y": -0.44027898128751985
+            },
+            "p1": {
+              "x": 0.44386240125497295,
+              "y": -0.00008403832147459168
+            },
+            "p2": {
+              "x": 196,
+              "y": -0.44027898128751985
+            }
+          }
+        },
+        {
+          "ID": "1612",
+          "typeID": "Arrow",
+          "zOrder": "263",
+          "w": "685",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "652",
+          "y": "2413",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 684.963704772091,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497134,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1613",
+          "typeID": "TextArea",
+          "zOrder": "264",
+          "w": "233",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "479",
+          "y": "2383",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1614",
+          "typeID": "Label",
+          "zOrder": "265",
+          "measuredW": "173",
+          "measuredH": "25",
+          "x": "509",
+          "y": "2395",
+          "properties": {
+            "size": "17",
+            "text": "Big Data Technologies"
+          }
+        },
+        {
+          "ID": "1615",
+          "typeID": "TextArea",
+          "zOrder": "266",
+          "w": "260",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "405",
+          "y": "2286",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1616",
+          "typeID": "Label",
+          "zOrder": "267",
+          "measuredW": "145",
+          "measuredH": "25",
+          "x": "462",
+          "y": "2299",
+          "properties": {
+            "size": "17",
+            "text": "Big Data Concepts"
+          }
+        },
+        {
+          "ID": "1618",
+          "typeID": "TextArea",
+          "zOrder": "268",
+          "w": "260",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "405",
+          "y": "2222"
+        },
+        {
+          "ID": "1619",
+          "typeID": "Label",
+          "zOrder": "269",
+          "measuredW": "225",
+          "measuredH": "25",
+          "x": "422",
+          "y": "2235",
+          "properties": {
+            "size": "17",
+            "text": "Data Processing Frameworks"
+          }
+        },
+        {
+          "ID": "1620",
+          "typeID": "TextArea",
+          "zOrder": "270",
+          "w": "127",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "406",
+          "y": "2177",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1621",
+          "typeID": "Label",
+          "zOrder": "271",
+          "measuredW": "61",
+          "measuredH": "25",
+          "x": "439",
+          "y": "2190",
+          "properties": {
+            "size": "17",
+            "text": "Hadoop"
+          }
+        },
+        {
+          "ID": "1622",
+          "typeID": "TextArea",
+          "zOrder": "272",
+          "w": "134",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "530",
+          "y": "2177",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1623",
+          "typeID": "Label",
+          "zOrder": "273",
+          "measuredW": "45",
+          "measuredH": "25",
+          "x": "580",
+          "y": "2190",
+          "properties": {
+            "size": "17",
+            "text": "Spark"
+          }
+        },
+        {
+          "ID": "1624",
+          "typeID": "TextArea",
+          "zOrder": "274",
+          "w": "226",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "408",
+          "y": "2462",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1625",
+          "typeID": "Label",
+          "zOrder": "275",
+          "measuredW": "176",
+          "measuredH": "25",
+          "x": "433",
+          "y": "2475",
+          "properties": {
+            "size": "17",
+            "text": "Data Storage Solutions"
+          }
+        },
+        {
+          "ID": "1626",
+          "typeID": "TextArea",
+          "zOrder": "276",
+          "w": "254",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "184",
+          "y": "2383"
+        },
+        {
+          "ID": "1627",
+          "typeID": "Label",
+          "zOrder": "277",
+          "measuredW": "220",
+          "measuredH": "25",
+          "x": "201",
+          "y": "2396",
+          "properties": {
+            "size": "17",
+            "text": "Data Processing Techniques"
+          }
+        },
+        {
+          "ID": "1628",
+          "typeID": "Arrow",
+          "zOrder": "8",
+          "w": "1",
+          "h": "235",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "534",
+          "y": "2249",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.04347272732775309
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 235.10211591512325
+            }
+          }
+        },
+        {
+          "ID": "1629",
+          "typeID": "Arrow",
+          "zOrder": "7",
+          "w": "230",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "361",
+          "y": "2408",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.1303889300434662,
+              "y": 0.10211591512324958
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": 230,
+              "y": 0.10211591512324958
+            }
+          }
+        },
+        {
+          "ID": "1630",
+          "typeID": "Arrow",
+          "zOrder": "6",
+          "w": "1",
+          "h": "61",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "238",
+          "y": "2341",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.3969868974495512
+            },
+            "p1": {
+              "x": 0.4438624012549729,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 61.10211591512325
+            }
+          }
+        },
+        {
+          "ID": "1631",
+          "typeID": "TextArea",
+          "zOrder": "278",
+          "w": "115",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "242",
+          "y": "2250",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1632",
+          "typeID": "Label",
+          "zOrder": "279",
+          "measuredW": "95",
+          "measuredH": "25",
+          "x": "252",
+          "y": "2263",
+          "properties": {
+            "size": "17",
+            "text": "MapReduce"
+          }
+        },
+        {
+          "ID": "1633",
+          "typeID": "TextArea",
+          "zOrder": "280",
+          "w": "177",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "181",
+          "y": "2302",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1634",
+          "typeID": "Label",
+          "zOrder": "281",
+          "measuredW": "147",
+          "measuredH": "25",
+          "x": "195",
+          "y": "2315",
+          "properties": {
+            "size": "17",
+            "text": "Parallel Processing"
+          }
+        },
+        {
+          "ID": "1635",
+          "typeID": "TextArea",
+          "zOrder": "282",
+          "w": "57",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "181",
+          "y": "2249",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1636",
+          "typeID": "Label",
+          "zOrder": "283",
+          "measuredW": "31",
+          "measuredH": "25",
+          "x": "194",
+          "y": "2262",
+          "properties": {
+            "size": "17",
+            "text": "MPI"
+          }
+        },
+        {
+          "ID": "1637",
+          "typeID": "Arrow",
+          "zOrder": "5",
+          "w": "1",
+          "h": "171",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "672",
+          "y": "2421",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0.029677358782919327,
+              "y": 171.17099790893508
+            },
+            "p1": {
+              "x": 0.4438624012549712,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0.029677358782919327,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1638",
+          "typeID": "TextArea",
+          "zOrder": "284",
+          "w": "241",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "466",
+          "y": "2574",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "1639",
+          "typeID": "Label",
+          "zOrder": "285",
+          "measuredW": "197",
+          "measuredH": "25",
+          "x": "488",
+          "y": "2586",
+          "properties": {
+            "size": "17",
+            "text": "Deep Learning (Optional)"
+          }
+        },
+        {
+          "ID": "1640",
+          "typeID": "Label",
+          "zOrder": "286",
+          "measuredW": "130",
+          "measuredH": "25",
+          "x": "205",
+          "y": "2588",
+          "properties": {
+            "size": "17",
+            "text": "Learn the Basics"
+          }
+        },
+        {
+          "ID": "1641",
+          "typeID": "TextArea",
+          "zOrder": "287",
+          "w": "177",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "185",
+          "y": "2530",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1642",
+          "typeID": "Label",
+          "zOrder": "288",
+          "measuredW": "134",
+          "measuredH": "25",
+          "x": "207",
+          "y": "2543",
+          "properties": {
+            "size": "17",
+            "text": "Neutral Networks"
+          }
+        },
+        {
+          "ID": "1643",
+          "typeID": "TextArea",
+          "zOrder": "289",
+          "w": "84",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "185",
+          "y": "2476",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1644",
+          "typeID": "Label",
+          "zOrder": "290",
+          "measuredW": "47",
+          "measuredH": "25",
+          "x": "203",
+          "y": "2489",
+          "properties": {
+            "size": "17",
+            "text": "CNNs"
+          }
+        },
+        {
+          "ID": "1645",
+          "typeID": "TextArea",
+          "zOrder": "291",
+          "w": "87",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "274",
+          "y": "2476",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1646",
+          "typeID": "Label",
+          "zOrder": "292",
+          "measuredW": "47",
+          "measuredH": "25",
+          "x": "294",
+          "y": "2489",
+          "properties": {
+            "size": "17",
+            "text": "RNNs"
+          }
+        },
+        {
+          "ID": "1647",
+          "typeID": "Arrow",
+          "zOrder": "4",
+          "w": "149",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "355",
+          "y": "2599",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.1303889300434662,
+              "y": 1.1021159151232496
+            },
+            "p1": {
+              "x": 0.4438624012549728,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 149.16646837220503,
+              "y": 0.36481196418662876
+            }
+          }
+        },
+        {
+          "ID": "1648",
+          "typeID": "Label",
+          "zOrder": "293",
+          "measuredW": "94",
+          "measuredH": "25",
+          "x": "271",
+          "y": "2652",
+          "properties": {
+            "size": "17",
+            "text": "Frameworks"
+          }
+        },
+        {
+          "ID": "1649",
+          "typeID": "Arrow",
+          "zOrder": "3",
+          "w": "121",
+          "h": "32",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "359",
+          "y": "2610",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.09121825796768235,
+              "y": 32.52769629569548
+            },
+            "p1": {
+              "x": 0.3456883509833585,
+              "y": 0.10703479576399379
+            },
+            "p2": {
+              "x": 121.18708818803356,
+              "y": 0.15553304706372728
+            }
+          }
+        },
+        {
+          "ID": "1650",
+          "typeID": "TextArea",
+          "zOrder": "294",
+          "w": "128",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "235",
+          "y": "2681",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1651",
+          "typeID": "Label",
+          "zOrder": "295",
+          "measuredW": "88",
+          "measuredH": "25",
+          "x": "255",
+          "y": "2694",
+          "properties": {
+            "size": "17",
+            "text": "TensorFlow"
+          }
+        },
+        {
+          "ID": "1652",
+          "typeID": "TextArea",
+          "zOrder": "296",
+          "w": "128",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "235",
+          "y": "2735",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1653",
+          "typeID": "Label",
+          "zOrder": "297",
+          "measuredW": "61",
+          "measuredH": "25",
+          "x": "268",
+          "y": "2748",
+          "properties": {
+            "size": "17",
+            "text": "PyTorch"
+          }
+        },
+        {
+          "ID": "1654",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "1",
+          "h": "50",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "590",
+          "y": "2598",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0,
+              "y": -0.04347272732775309
+            },
+            "p1": {
+              "x": 0.4438624012549729,
+              "y": -0.00008403832147459165
+            },
+            "p2": {
+              "x": 0,
+              "y": 50.11944836936391
+            }
+          }
+        },
+        {
+          "ID": "1656",
+          "typeID": "Label",
+          "zOrder": "298",
+          "measuredW": "191",
+          "measuredH": "25",
+          "x": "503",
+          "y": "2653",
+          "properties": {
+            "size": "17",
+            "text": "Practice Training Models"
+          }
+        },
+        {
+          "ID": "1657",
+          "typeID": "TextArea",
+          "zOrder": "299",
+          "w": "256",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "471",
+          "y": "2682",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1658",
+          "typeID": "Label",
+          "zOrder": "300",
+          "measuredW": "147",
+          "measuredH": "25",
+          "x": "525",
+          "y": "2695",
+          "properties": {
+            "size": "17",
+            "text": "Image Recognition"
+          }
+        },
+        {
+          "ID": "1659",
+          "typeID": "TextArea",
+          "zOrder": "301",
+          "w": "256",
+          "h": "50",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "471",
+          "y": "2735",
+          "properties": {
+            "color": "16770457"
+          }
+        },
+        {
+          "ID": "1660",
+          "typeID": "Label",
+          "zOrder": "302",
+          "measuredW": "229",
+          "measuredH": "25",
+          "x": "484",
+          "y": "2748",
+          "properties": {
+            "size": "17",
+            "text": "Natural Language Processing"
+          }
+        },
+        {
+          "ID": "1661",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "149",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "682",
+          "y": "2600",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 148.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549713,
+              "y": -0.00008403832147459164
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1666",
+          "typeID": "Label",
+          "zOrder": "303",
+          "measuredW": "177",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2532",
+          "properties": {
+            "size": "17",
+            "text": "Predicting sales trends"
+          }
+        },
+        {
+          "ID": "1670",
+          "typeID": "Arrow",
+          "zOrder": "304",
+          "w": "332",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "834",
+          "y": "2481",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 331.43436899668745,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549713,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1671",
+          "typeID": "Arrow",
+          "zOrder": "305",
+          "w": "1",
+          "h": "516",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "835",
+          "y": "2482",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 516
+            },
+            "p1": {
+              "x": 0.443862401254973,
+              "y": -0.00007729088990482165
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1672",
+          "typeID": "Arrow",
+          "zOrder": "306",
+          "w": "1",
+          "h": "516",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "832",
+          "y": "2481",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 0,
+              "y": 516
+            },
+            "p1": {
+              "x": 0.443862401254973,
+              "y": -0.00007729088990482165
+            },
+            "p2": {
+              "x": 0,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1673",
+          "typeID": "Label",
+          "zOrder": "307",
+          "measuredW": "326",
+          "measuredH": "25",
+          "x": "827",
+          "y": "2450",
+          "properties": {
+            "size": "17",
+            "text": "Practice / Build Projects / Networking Tips"
+          }
+        },
+        {
+          "ID": "1675",
+          "typeID": "Label",
+          "zOrder": "308",
+          "measuredW": "187",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2557",
+          "properties": {
+            "size": "17",
+            "text": "Customer Segmentation"
+          }
+        },
+        {
+          "ID": "1677",
+          "typeID": "TextArea",
+          "zOrder": "309",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2538",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1678",
+          "typeID": "TextArea",
+          "zOrder": "310",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2563",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1680",
+          "typeID": "Label",
+          "zOrder": "311",
+          "measuredW": "397",
+          "measuredH": "25",
+          "x": "851",
+          "y": "2500",
+          "properties": {
+            "size": "17",
+            "text": "Build a portfolio of projects. Some example projects:"
+          }
+        },
+        {
+          "ID": "1681",
+          "typeID": "Arrow",
+          "zOrder": "312",
+          "w": "259",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "834",
+          "y": "2599",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 258.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497134,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1682",
+          "typeID": "Label",
+          "zOrder": "313",
+          "measuredW": "161",
+          "measuredH": "25",
+          "x": "851",
+          "y": "2612",
+          "properties": {
+            "size": "17",
+            "text": "Kaggle Competitions"
+          }
+        },
+        {
+          "ID": "1683",
+          "typeID": "Label",
+          "zOrder": "314",
+          "measuredW": "409",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2643",
+          "properties": {
+            "size": "17",
+            "text": "Participate in competitions and learn from community"
+          }
+        },
+        {
+          "ID": "1684",
+          "typeID": "TextArea",
+          "zOrder": "315",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2650",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1685",
+          "typeID": "Label",
+          "zOrder": "316",
+          "measuredW": "497",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2670",
+          "properties": {
+            "size": "17",
+            "text": "Collaborate, explore different approaches, and improve your skills"
+          }
+        },
+        {
+          "ID": "1686",
+          "typeID": "TextArea",
+          "zOrder": "317",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2677",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1687",
+          "typeID": "Arrow",
+          "zOrder": "318",
+          "w": "259",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "834",
+          "y": "2717",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 258.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497134,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1688",
+          "typeID": "Label",
+          "zOrder": "319",
+          "measuredW": "259",
+          "measuredH": "25",
+          "x": "851",
+          "y": "2732",
+          "properties": {
+            "size": "17",
+            "text": "Online Courses and Certifications"
+          }
+        },
+        {
+          "ID": "1689",
+          "typeID": "Label",
+          "zOrder": "320",
+          "measuredW": "418",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2765",
+          "properties": {
+            "size": "17",
+            "text": "Enroll in online courses or pursue certifications to gain"
+          }
+        },
+        {
+          "ID": "1690",
+          "typeID": "TextArea",
+          "zOrder": "321",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2772",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1691",
+          "typeID": "Label",
+          "zOrder": "322",
+          "measuredW": "242",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2788",
+          "properties": {
+            "size": "17",
+            "text": "learning and validate your skills."
+          }
+        },
+        {
+          "ID": "1692",
+          "typeID": "Label",
+          "zOrder": "323",
+          "measuredW": "439",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2817",
+          "properties": {
+            "size": "17",
+            "text": "Platforms like Coursera, edX, Udemy, and DataCamp offer"
+          }
+        },
+        {
+          "ID": "1693",
+          "typeID": "TextArea",
+          "zOrder": "324",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2824",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1695",
+          "typeID": "Label",
+          "zOrder": "325",
+          "measuredW": "336",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2843",
+          "properties": {
+            "size": "17",
+            "text": "courses in data analytics and related topics."
+          }
+        },
+        {
+          "ID": "1696",
+          "typeID": "Arrow",
+          "zOrder": "326",
+          "w": "259",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "834",
+          "y": "2889",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 258.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.44386240125497134,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1697",
+          "typeID": "Label",
+          "zOrder": "327",
+          "measuredW": "199",
+          "measuredH": "25",
+          "x": "851",
+          "y": "2906",
+          "properties": {
+            "size": "17",
+            "text": "Stay updated and network"
+          }
+        },
+        {
+          "ID": "1698",
+          "typeID": "Label",
+          "zOrder": "328",
+          "measuredW": "491",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2940",
+          "properties": {
+            "size": "17",
+            "text": "Stay updated with the latest trends, tools, and techniques in data"
+          }
+        },
+        {
+          "ID": "1699",
+          "typeID": "TextArea",
+          "zOrder": "329",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "2947",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1701",
+          "typeID": "Label",
+          "zOrder": "330",
+          "measuredW": "453",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2994",
+          "properties": {
+            "size": "17",
+            "text": "Explore advanced topics (AI ethics, data governance, cloud"
+          }
+        },
+        {
+          "ID": "1702",
+          "typeID": "TextArea",
+          "zOrder": "331",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "3001",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1703",
+          "typeID": "Label",
+          "zOrder": "332",
+          "measuredW": "309",
+          "measuredH": "25",
+          "x": "874",
+          "y": "3020",
+          "properties": {
+            "size": "17",
+            "text": " computing) to enhance your knowledge."
+          }
+        },
+        {
+          "ID": "1704",
+          "typeID": "Label",
+          "zOrder": "333",
+          "measuredW": "437",
+          "measuredH": "25",
+          "x": "874",
+          "y": "2965",
+          "properties": {
+            "size": "17",
+            "text": "analytics through blogs, forums, and industry publications."
+          }
+        },
+        {
+          "ID": "1705",
+          "typeID": "Label",
+          "zOrder": "334",
+          "measuredW": "464",
+          "measuredH": "25",
+          "x": "874",
+          "y": "3053",
+          "properties": {
+            "size": "17",
+            "text": "Connect with professionals in the data analytics field through"
+          }
+        },
+        {
+          "ID": "1706",
+          "typeID": "TextArea",
+          "zOrder": "335",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "3060",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1707",
+          "typeID": "Label",
+          "zOrder": "336",
+          "measuredW": "472",
+          "measuredH": "25",
+          "x": "874",
+          "y": "3107",
+          "properties": {
+            "size": "17",
+            "text": "Seek mentorship, attend webinars, and engage in discussions"
+          }
+        },
+        {
+          "ID": "1708",
+          "typeID": "TextArea",
+          "zOrder": "337",
+          "w": "10",
+          "h": "10",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "853",
+          "y": "3114",
+          "properties": {
+            "color": "13421772",
+            "borderColor": "13421772"
+          }
+        },
+        {
+          "ID": "1709",
+          "typeID": "Label",
+          "zOrder": "338",
+          "measuredW": "376",
+          "measuredH": "25",
+          "x": "874",
+          "y": "3133",
+          "properties": {
+            "size": "17",
+            "text": "to expand your network and career opportunities."
+          }
+        },
+        {
+          "ID": "1710",
+          "typeID": "Label",
+          "zOrder": "339",
+          "measuredW": "459",
+          "measuredH": "25",
+          "x": "874",
+          "y": "3078",
+          "properties": {
+            "size": "17",
+            "text": "LinkedIn, networking events, and data science communities."
+          }
+        },
+        {
+          "ID": "1711",
+          "typeID": "Arrow",
+          "zOrder": "340",
+          "w": "310",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "518",
+          "y": "2890",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": 309.5,
+              "y": 0
+            },
+            "p1": {
+              "x": 0.4438624012549713,
+              "y": -0.00008403832147459163
+            },
+            "p2": {
+              "x": -0.02916933480548778,
+              "y": 0
+            }
+          }
+        },
+        {
+          "ID": "1712",
+          "typeID": "Arrow",
+          "zOrder": "341",
+          "w": "2",
+          "h": "89",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "495",
+          "y": "3088",
+          "properties": {
+            "color": "2848996",
+            "curvature": "0",
+            "leftArrow": "false",
+            "p0": {
+              "x": 1,
+              "y": 88
+            },
+            "p1": {
+              "x": 0.4072427393330943,
+              "y": 0.00953746862674794
+            },
+            "p2": {
+              "x": 1,
+              "y": 0
+            },
+            "rightArrow": "false",
+            "stroke": "dotted"
+          }
+        },
+        {
+          "ID": "1713",
+          "typeID": "TextArea",
+          "zOrder": "342",
+          "w": "350",
+          "h": "118",
+          "measuredW": "200",
+          "measuredH": "140",
+          "x": "316",
+          "y": "3001"
+        },
+        {
+          "ID": "1714",
+          "typeID": "Label",
+          "zOrder": "343",
+          "measuredW": "299",
+          "measuredH": "25",
+          "x": "338",
+          "y": "3020",
+          "properties": {
+            "size": "17",
+            "text": "Continue Learning with following tracks"
+          }
+        },
+        {
+          "ID": "1716",
+          "typeID": "__group__",
+          "zOrder": "344",
+          "measuredW": "311",
+          "measuredH": "44",
+          "w": "311",
+          "h": "44",
+          "x": "337",
+          "y": "3056",
+          "properties": {
+            "controlName": "ext_link:roadmap.sh/ai-data-scientist"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "311",
+                  "h": "44",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "240",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "9",
+                  "properties": {
+                    "size": "17",
+                    "text": "AI and Data Scientist Roadmap"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "1717",
+          "typeID": "Arrow",
+          "zOrder": "345",
+          "w": "240",
+          "h": "2",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "376",
+          "y": "3206",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "16777215",
+            "p0": {
+              "x": 0,
+              "y": 2.0909090909090082
+            },
+            "p1": {
+              "x": 0.4072427393330942,
+              "y": 0.00953746862674794
+            },
+            "p2": {
+              "x": 240.29238284114695,
+              "y": 2.0909090909090082
+            }
+          }
+        },
+        {
+          "ID": "1718",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "1",
+          "h": "144",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "518",
+          "y": "2890",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "p0": {
+              "x": -0.22466327566792188,
+              "y": 144.0786301580174
+            },
+            "p1": {
+              "x": 0.4438624012549712,
+              "y": -0.00008403832147459138
+            },
+            "p2": {
+              "x": -0.22466327566792188,
+              "y": 0
+            }
+          }
+        }
+      ]
+    },
+    "attributes": {
+      "name": "New Wireframe 1",
+      "order": 1000000,
+      "parentID": null,
+      "notes": ""
+    },
+    "branchID": "Master",
+    "resourceID": "1C20FF29-764D-4639-A4FE-13A9869FED74",
+    "mockupH": "3003",
+    "mockupW": "1200",
+    "measuredW": "1371",
+    "measuredH": "3208",
+    "version": "1.0"
+  },
+  "groupOffset": {
+    "x": 0,
+    "y": 0
+  },
+  "dependencies": [],
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
+}
