@@ -1,6 +1,5 @@
 import type { MarkdownFileType } from './file';
 import { type AuthorFileType, getAllAuthors } from './author.ts';
-import { removeNumberFromString } from './number.ts';
 
 export interface GuideFrontmatter {
   title: string;
@@ -92,6 +91,8 @@ export async function getGuideById(
 type HeadingType = ReturnType<MarkdownFileType['getHeadings']>[number];
 export type HeadingGroupType = HeadingType & { children: HeadingType[] };
 
+const NUMBERED_LIST_REGEX = /^\d+\.\s+?/;
+
 export function getGuideTableOfContent(headings: HeadingType[]) {
   const tableOfContents: HeadingGroupType[] = [];
   let currentGroup: HeadingGroupType | null = null;
@@ -102,14 +103,14 @@ export function getGuideTableOfContent(headings: HeadingType[]) {
       if (heading.depth === 2) {
         currentGroup = {
           ...heading,
-          text: removeNumberFromString(heading.text),
+          text: heading.text.replace(NUMBERED_LIST_REGEX, ''),
           children: [],
         };
         tableOfContents.push(currentGroup);
       } else if (currentGroup) {
         currentGroup.children.push({
           ...heading,
-          text: removeNumberFromString(heading.text),
+          text: heading.text.replace(NUMBERED_LIST_REGEX, ''),
         });
       }
     });
