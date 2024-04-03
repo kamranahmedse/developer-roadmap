@@ -68,3 +68,4 @@ Input devices, such as a mouse, keyboard, or scanner, are used to interact with 
 By understanding these essential computer hardware components, you can enhance your knowledge of how a computer functions and improve your IT troubleshooting and maintenance skills. Happy computing!
 
 - [What does what in your computer? Computer parts Explained](https://youtu.be/ExxFxD4OSZ0)
+- [Computer Hardware Basics by CISCO ](https://skillsforall.com/launch?id=10349eca-196c-4047-9c86-6dc1da4601f6&tab=curriculum&view=3677cbe6-844c-50bd-9f29-260822aaa887)
