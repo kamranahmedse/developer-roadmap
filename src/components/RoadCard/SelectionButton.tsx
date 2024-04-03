@@ -20,6 +20,7 @@ export function SelectionButton(props: SelectionButtonProps) {
         !isDisabled ? 'cursor-pointer' : 'cursor-not-allowed opacity-40',
         className,
       )}
+      disabled={isDisabled}
       onClick={onClick}
     >
       {text}
