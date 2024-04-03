@@ -1,6 +1,6 @@
 ---
+import GuideContent from '../../components/Guide/GuideContent.astro';
 import GuideHeader from '../../components/GuideHeader.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getGuideById } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
@@ -24,10 +24,5 @@ const ogImageUrl = getOpenGraphImageUrl({
   ogImageUrl={ogImageUrl}
 >
   <GuideHeader guide={guide!} />
-
-  <div class='mx-auto max-w-[700px] py-5 sm:py-10'>
-    <MarkdownFile>
-      <guide.Content />
-    </MarkdownFile>
-  </div>
+  <GuideContent guide={guide!} />
 </BaseLayout>

@@ -87,3 +87,33 @@ export async function getGuideById(
 
   return allGuides.find((guide) => guide.id === id);
 }
+
+type HeadingType = ReturnType<MarkdownFileType['getHeadings']>[number];
+export type HeadingGroupType = HeadingType & { children: HeadingType[] };
+
+const NUMBERED_LIST_REGEX = /^\d+\.\s+?/;
+
+export function getGuideTableOfContent(headings: HeadingType[]) {
+  const tableOfContents: HeadingGroupType[] = [];
+  let currentGroup: HeadingGroupType | null = null;
+
+  headings
+    .filter((heading) => heading.depth !== 1)
+    .forEach((heading) => {
+      if (heading.depth === 2) {
+        currentGroup = {
+          ...heading,
+          text: heading.text.replace(NUMBERED_LIST_REGEX, ''),
+          children: [],
+        };
+        tableOfContents.push(currentGroup);
+      } else if (currentGroup && heading.depth === 3) {
+        currentGroup.children.push({
+          ...heading,
+          text: heading.text.replace(NUMBERED_LIST_REGEX, ''),
+        });
+      }
+    });
+
+  return tableOfContents;
+}
