@@ -39,6 +39,7 @@ Here is the list of available roadmaps with more being actively worked upon.
 - [Computer Science Roadmap](https://roadmap.sh/computer-science)
 - [Data Structures and Algorithms Roadmap](https://roadmap.sh/datastructures-and-algorithms)
 - [AI and Data Scientist Roadmap](https://roadmap.sh/ai-data-scientist)
+- [Data Analyst Roadmap](https://roadmap.sh/data-analyst)
 - [MLOps Roadmap](https://roadmap.sh/mlops)
 - [QA Roadmap](https://roadmap.sh/qa)
 - [Python Roadmap](https://roadmap.sh/python)

@@ -48,6 +48,11 @@ function getFilesInFolder(folderPath, fileList = {}) {
   return fileList;
 }
 
+/**
+ * Write the topic content for the given topic
+ * @param currTopicUrl
+ * @returns {Promise<string>}
+ */
 function writeTopicContent(currTopicUrl) {
   const [parentTopic, childTopic] = currTopicUrl
     .replace(/^\d+-/g, '/')
@@ -59,9 +64,18 @@ function writeTopicContent(currTopicUrl) {
 
   const roadmapTitle = roadmapId.replace(/-/g, ' ');
 
-  let prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${childTopic}". Write me a brief paragraph for that. Your output should be strictly markdown. Do not include anything other than the description in your output. I already know the benefits of each so do not add benefits in the output.`;
+  let prompt = `I will give you a topic and you need to write a brief introduction for that with regards to "${roadmapTitle}". Your format should be as follows and be in strictly markdown format:
+
+# (Put a heading for the topic)
+
+(Write me a brief introduction for the topic with regards to "${roadmapTitle}")
+
+`;
+
   if (!childTopic) {
-    prompt = `I am reading a guide about "${roadmapTitle}". I am on the topic "${parentTopic}". I want to know more about "${parentTopic}". Write me a brief paragraph for that. Your output should be strictly markdown. Do not include anything other than the description in your output. I already know the benefits of each so do not add benefits in the output.`;
+    prompt += `First topic is: ${parentTopic}`;
+  } else {
+    prompt += `First topic is: ${childTopic} under ${parentTopic}`;
   }
 
   console.log(`Generating '${childTopic || parentTopic}'...`);
@@ -123,10 +137,9 @@ async function writeFileForGroup(group, topicUrlToPathMapping) {
   }
 
   const topicContent = await writeTopicContent(currTopicUrl);
-  newFileContent += `\n\n${topicContent}`;
 
   console.log(`Writing ${topicId}..`);
-  fs.writeFileSync(contentFilePath, newFileContent, 'utf8');
+  fs.writeFileSync(contentFilePath, topicContent, 'utf8');
 
   // console.log(currentFileContent);
   // console.log(currTopicUrl);
