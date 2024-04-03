@@ -47,6 +47,7 @@ export interface UserDocument {
   profileVisibility: AllowedProfileVisibility;
   publicConfig?: {
     isAvailableForHire: boolean;
+    isEmailVisible: boolean;
     headline: string;
     roadmaps: string[];
     customRoadmaps: string[];
@@ -78,11 +79,7 @@ type ProgressResponse = {
 
 export type GetPublicProfileResponse = Omit<
   UserDocument,
-  | 'password'
-  | 'verificationCode'
-  | 'resetPasswordCode'
-  | 'resetPasswordCodeAt'
-  | 'email'
+  'password' | 'verificationCode' | 'resetPasswordCode' | 'resetPasswordCodeAt'
 > & {
   activity: UserActivityCount;
   roadmaps: ProgressResponse[];

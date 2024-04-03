@@ -30,6 +30,7 @@ export function UpdatePublicProfileForm() {
 
   const [publicProfileUrl, setPublicProfileUrl] = useState('');
   const [isAvailableForHire, setIsAvailableForHire] = useState(false);
+  const [isEmailVisible, setIsEmailVisible] = useState(true);
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
   const [roadmapVisibility, setRoadmapVisibility] =
@@ -56,6 +57,7 @@ export function UpdatePublicProfileForm() {
       `${import.meta.env.PUBLIC_API_URL}/v1-update-public-profile-config`,
       {
         isAvailableForHire,
+        isEmailVisible,
         profileVisibility,
         headline,
         username,
@@ -116,6 +118,7 @@ export function UpdatePublicProfileForm() {
     setRoadmaps(publicConfig?.roadmaps || []);
     setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'none');
     setIsAvailableForHire(publicConfig?.isAvailableForHire || false);
+    setIsEmailVisible(publicConfig?.isEmailVisible ?? true);
 
     setIsLoading(false);
   };
@@ -450,6 +453,19 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div>
+          <div className="flex items-center gap-2">
+            <input
+              type="checkbox"
+              name="isEmailVisible"
+              id="isEmailVisible"
+              checked={isEmailVisible}
+              onChange={(e) => setIsEmailVisible(e.target.checked)}
+            />
+            <label htmlFor="isEmailVisible" className="">
+              Show my Email
+            </label>
+          </div>
+
           <div className="flex items-center gap-2">
             <input
               type="checkbox"

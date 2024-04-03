@@ -1,4 +1,4 @@
-import { Github, Globe, LinkedinIcon, Twitter } from 'lucide-react';
+import { Github, Globe, LinkedinIcon, Mail, Twitter } from 'lucide-react';
 import type { GetPublicProfileResponse } from '../../api/user';
 
 type UserPublicProfileHeaderProps = {
@@ -7,8 +7,9 @@ type UserPublicProfileHeaderProps = {
 
 export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
   const { userDetails } = props;
-  const { name, links, publicConfig, avatar } = userDetails;
-  const { headline, isAvailableForHire } = publicConfig!;
+
+  const { name, links, publicConfig, avatar, email } = userDetails;
+  const { headline, isAvailableForHire, isEmailVisible } = publicConfig!;
 
   return (
     <div className="flex items-center gap-8">
@@ -37,6 +38,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
           )}
           {links?.twitter && <UserLink href={links?.twitter} icon={Twitter} />}
           {links?.website && <UserLink href={links?.website} icon={Globe} />}
+          {isEmailVisible && <UserLink href={`mailto:${email}`} icon={Mail} />}
         </div>
       </div>
     </div>
