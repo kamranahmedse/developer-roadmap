@@ -107,7 +107,7 @@ export function getGuideTableOfContent(headings: HeadingType[]) {
           children: [],
         };
         tableOfContents.push(currentGroup);
-      } else if (currentGroup) {
+      } else if (currentGroup && heading.depth === 3) {
         currentGroup.children.push({
           ...heading,
           text: heading.text.replace(NUMBERED_LIST_REGEX, ''),

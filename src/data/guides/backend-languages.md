@@ -299,7 +299,7 @@ Let’s take a look at some pros and cons for the last programming language on o
 
 - Go’s ecosystem is quite young when compared to the other alternatives here, so the maturity of the tools available might not be the same as, for example, Java or JavaScript tooling.
 
-### Choosing the Ideal Backend Language
+## Choosing the Ideal Backend Language
 
 So, are these the best backend programming languages out there? Is there an absolute “best” backend programming language?
 
@@ -326,13 +326,13 @@ A handy tool when trying to evaluate a language like that is [roadmap.sh](https:
 
 There you’ll find community-maintained roadmaps for many career paths within software development. In particular, for this article, the [backend roadmap](https://roadmap.sh/backend) is a great place to start, because while picking a backend language is important, you’ll see there that it’s not just about the language. In fact, there is a lot of tech around the language that is also required (I’m referring to databases, git, understanding how client-server communication works, and a big “etc).
 
-### Jumpstarting Your Backend Development Journey
+## Jumpstarting Your Backend Development Journey
 
 To get started with your backend development journey, it's crucial to have a roadmap that guides you through the learning process and equips you with the skills to build robust and scalable backend systems.
 
 Lucky for you, if you’re reading this, that means you’ve found the most complete and comprehensive roadmap online: [roadmap.sh](https://roadmap.sh), the current [backend roadmap](https://roadmap.sh/backend) is filled with details of everything you should and could (optionally) learn in your journey to becoming a backend developer.
 
-### Guided Learning: From Online Courses to Bootcamps
+## Guided Learning: From Online Courses to Bootcamps
 
 Online courses and bootcamps serve as invaluable companions on your learning expedition. Platforms like Udemy, Coursera, and freeCodeCamp offer comprehensive backend development courses.
 
@@ -340,13 +340,13 @@ These resources not only cover programming languages like Python, Java, or JavaS
 
 Whatever choice you go for, make sure you’re not following trends or just copying the learning methods of others. Learning is a very personal experience and what works for others might not work for you, and vice versa. So make sure to do the proper research and figure out what option works best for you.
 
-### Building Community Connections for Learning Support
+## Building Community Connections for Learning Support
 
 Joining developer communities (there are several on Twitter for example), forums like Stack Overflow, or participating in social media groups dedicated to backend development creates a network of support.
 
 Engaging with experienced developers, sharing challenges, and seeking advice fosters a collaborative learning environment. Attend local meetups or virtual events if you can to connect with professionals in the field, gaining insights and building relationships that can prove invaluable throughout your journey.
 
-### Think about you and your project
+## Think about you and your project
 
 There are many ways to go about picking the ideal backend language for you. If there is anything you should take home with you after reading this article, it is that most languages are equivalent in the sense that you’ll be able to do pretty much everything with any of them.
 
@@ -359,7 +359,7 @@ The questions you should also be asking yourself are:
 
 In the end, personal preference and actual project requirements (if you have any) are very important, because both will influence how much you enjoy (or don’t enjoy) the learning process.
 
-### Crafting a Portfolio to Display Your Backend Skills:
+## Crafting a Portfolio to Display Your Backend Skills:
 
 As you accumulate skills and knowledge, showcase your journey through a well-crafted portfolio. Include projects that highlight your backend skills, demonstrating your ability to - design databases, implement server-side logic, and integrate with client side technologies. Whether it's a dynamic web application, a RESTful API, or a data-driven project, your portfolio becomes a tangible representation of your backend development capabilities for potential employers or collaborators.
 
@@ -367,7 +367,7 @@ When it comes to deciding where to publish this portfolio, you have some options
 
 In the end, the important thing is that you should be sharing your experience somewhere, especially when you don’t have working experience in the field.
 
-### Conclusion
+## Conclusion
 
 In the end, there are many backend programming languages to choose from, and what language you go for, is up to you and your particular context/needs. All I can do is guide you to the door, but you have to cross it yourself. Some interesting options are:
 

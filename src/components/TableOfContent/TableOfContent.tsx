@@ -16,14 +16,25 @@ export function TableOfContent(props: TableOfContentProps) {
     return null;
   }
 
+  const totalRows = toc.flatMap((heading) => {
+    return [heading, ...heading.children];
+  }).length;
+
   return (
-    <div className="sticky top-0 min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:px-0 sm:pt-10">
-      <h4 className="text-lg font-medium max-lg:hidden">Table of Content</h4>
+    <div
+      className={cn(
+        'relative min-w-[250px] px-5 pt-0 max-lg:min-w-full max-lg:max-w-full max-lg:border-none max-lg:px-0 lg:pt-10',
+        {
+          'top-0 lg:sticky': totalRows <= 20,
+        },
+      )}
+    >
+      <h4 className="text-lg font-medium max-lg:hidden">In this article</h4>
       <button
         className="flex w-full items-center justify-between gap-2 bg-gray-300 px-3 py-2 text-sm font-medium lg:hidden"
         onClick={() => setIsOpen(!isOpen)}
       >
-        Table of Content
+        Table of Contents
         <ChevronDown
           size={16}
           className={cn(
