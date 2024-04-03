@@ -246,7 +246,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
                     key={result?._id}
                     type="button"
                     className={cn(
-                      'flex w-full items-center rounded p-2 text-sm',
+                      'flex w-full items-start rounded p-2 text-left text-sm',
                       counter === activeCounter ? 'bg-gray-100' : '',
                     )}
                     onMouseOver={() => setActiveCounter(counter)}
@@ -264,7 +264,7 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
                   >
                     <span
                       className={cn(
-                        'mr-2 rounded-full p-1 px-1.5 text-xs leading-none',
+                        'mr-2 whitespace-nowrap rounded-full p-1 px-1.5 text-xs leading-none',
                         result.isOfficial
                           ? 'bg-green-500 text-green-50'
                           : 'bg-blue-400 text-blue-50',
