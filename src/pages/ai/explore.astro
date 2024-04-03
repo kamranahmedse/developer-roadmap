@@ -1,9 +1,8 @@
 ---
-import LoginPopup from '../../components/AuthenticationFlow/LoginPopup.astro';
 import { ExploreAIRoadmap } from '../../components/ExploreAIRoadmap/ExploreAIRoadmap';
-import AccountLayout from '../../layouts/AccountLayout.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
 ---
 
-<AccountLayout title='Explore AI Generated Roadmaps'>
+<BaseLayout title='Explore AI Generated Roadmaps'>
   <ExploreAIRoadmap client:load />
-</AccountLayout>
+</BaseLayout>
