@@ -45,7 +45,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
   const randomTerms = ['OAuth', 'APIs', 'UX Design', 'gRPC'];
 
   return (
-    <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6">
+    <div className="flex flex-grow flex-col items-center px-4 py-6 sm:px-6 md:my-24 lg:my-32">
       {isConfiguring && (
         <IncreaseRoadmapLimit
           onClose={() => {
@@ -55,7 +55,7 @@ export function RoadmapSearch(props: RoadmapSearchProps) {
           }}
         />
       )}
-      <div className="flex flex-col gap-0 text-center sm:gap-2 md:mt-24 lg:mt-32">
+      <div className="flex flex-col gap-0 text-center sm:gap-2">
         <h1 className="relative text-2xl font-medium sm:text-3xl">
           <span className="hidden sm:inline">Generate roadmaps with AI</span>
           <span className="inline sm:hidden">AI Roadmap Generator</span>
