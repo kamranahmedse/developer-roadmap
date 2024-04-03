@@ -40,7 +40,11 @@ export function UserPublicProgressStats(props: UserPublicProgressStats) {
   const progressPercentage = getPercentage(totalMarked, totalCount);
 
   return (
-    <a href={url} className="group block rounded-md border p-2.5">
+    <a
+      href={url}
+      target="_blank"
+      className="group block rounded-md border p-2.5"
+    >
       <h3 className="flex-1 cursor-pointer truncate text-lg font-medium">
         {title}
       </h3>

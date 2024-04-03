@@ -51,7 +51,7 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
           const formattedDate = formatActivityDate(value.date);
           return {
             'data-tooltip-id': 'user-activity-tip',
-            'data-tooltip-content': `${value.count} activities on ${formattedDate}`,
+            'data-tooltip-content': `${value.count} Progress Update on ${formattedDate}`,
           };
         }}
       />
