@@ -46,7 +46,7 @@ export function TableOfContent(props: TableOfContentProps) {
 
       <ol
         className={cn(
-          'mt-2 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full space-y-0.5 max-lg:bg-white max-lg:shadow',
+          'mt-0.5 max-lg:absolute max-lg:top-full max-lg:mt-0 max-lg:w-full space-y-0 max-lg:bg-white max-lg:shadow',
           !isOpen && 'hidden lg:block',
           isOpen && 'block',
         )}
@@ -68,7 +68,7 @@ export function TableOfContent(props: TableOfContentProps) {
             </a>
 
             {heading.children.length > 0 && (
-              <ol className="my-0 ml-4 mt-1 max-lg:ml-0 max-lg:mt-0 max-lg:list-none space-y-0.5">
+              <ol className="my-0 ml-4 mt-1 max-lg:ml-0 max-lg:mt-0 max-lg:list-none space-y-0">
                 {heading.children.map((children) => {
                   return (
                     <li key={children.slug}>
