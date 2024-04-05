@@ -1,0 +1,61 @@
+---
+import { getGuideTableOfContent, type GuideFileType } from '../../lib/guide';
+import MarkdownFile from '../MarkdownFile.astro';
+import { TableOfContent } from '../TableOfContent/TableOfContent';
+
+interface Props {
+  guide: GuideFileType;
+}
+
+const { guide } = Astro.props;
+
+const allHeadings = guide.getHeadings();
+const tableOfContent = getGuideTableOfContent(allHeadings);
+
+const showTableOfContent = tableOfContent.length > 0;
+const { frontmatter: guideFrontmatter, author } = guide;
+---
+
+<article class='lg:grid lg:max-w-full lg:grid-cols-[1fr_minmax(0,700px)_1fr]'>
+  {
+    showTableOfContent && (
+      <div class='bg-gradient-to-r from-gray-50 py-0 lg:col-start-3 lg:col-end-4 lg:row-start-1'>
+        <TableOfContent toc={tableOfContent} client:load />
+      </div>
+    )
+  }
+
+  <div
+    class:list={['col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] py-5 sm:py-10', {
+      'lg:border-r': showTableOfContent
+    }]}
+  >
+    <MarkdownFile>
+      <h1 class='text-balance text-4xl mb-3 font-bold'>{guideFrontmatter.title}</h1>
+      <p
+        class='flex items-center justify-start text-sm text-gray-400 my-0'
+      >
+        <a
+          href={`/authors/${author.id}`}
+          class='inline-flex items-center font-medium hover:text-gray-600 hover:underline underline-offset-2'
+        >
+          <img
+            alt={author.frontmatter.name}
+            src={author.frontmatter.imageUrl}
+            class='mb-0 mr-2 inline h-5 w-5 rounded-full'
+          />
+          {author.frontmatter.name}
+        </a>
+        <span class='mx-2 hidden sm:inline'>&middot;</span>
+        <a
+          class='hover:text-gray-600 underline-offset-2 hidden sm:inline'
+          href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/guides/${guide.id}.md`}
+          target='_blank'
+        >
+          Improve this Guide
+        </a>
+      </p>
+      <guide.Content />
+    </MarkdownFile>
+  </div>
+</article>

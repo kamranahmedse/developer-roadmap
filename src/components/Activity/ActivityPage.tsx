@@ -80,6 +80,25 @@ export function ActivityPage() {
     return null;
   }
 
+  const learningRoadmapsToShow = learningRoadmaps
+    .sort((a, b) => {
+      const updatedAtA = new Date(a.updatedAt);
+      const updatedAtB = new Date(b.updatedAt);
+
+      return updatedAtB.getTime() - updatedAtA.getTime();
+    })
+    .filter((roadmap) => roadmap.learning > 0 || roadmap.done > 0);
+
+  const learningBestPracticesToShow = learningBestPractices
+    .sort((a, b) => {
+      const updatedAtA = new Date(a.updatedAt);
+      const updatedAtB = new Date(b.updatedAt);
+
+      return updatedAtB.getTime() - updatedAtA.getTime();
+    })
+    .filter((bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0);
+
+
   return (
     <>
       <ActivityCounters
@@ -89,10 +108,10 @@ export function ActivityPage() {
       />
 
       <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
-        {learningRoadmaps.length === 0 &&
-          learningBestPractices.length === 0 && <EmptyActivity />}
+        {learningRoadmapsToShow.length === 0 &&
+          learningBestPracticesToShow.length === 0 && <EmptyActivity />}
 
-        {(learningRoadmaps.length > 0 || learningBestPractices.length > 0) && (
+        {(learningRoadmapsToShow.length > 0 || learningBestPracticesToShow.length > 0) && (
           <>
             <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
@@ -105,27 +124,38 @@ export function ActivityPage() {
 
                   return updatedAtB.getTime() - updatedAtA.getTime();
                 })
-                .map((roadmap) => (
-                  <ResourceProgress
-                    key={roadmap.id}
-                    roadmapSlug={roadmap.roadmapSlug}
-                    isCustomResource={roadmap.isCustomResource}
-                    doneCount={roadmap.done || 0}
-                    learningCount={roadmap.learning || 0}
-                    totalCount={roadmap.total || 0}
-                    skippedCount={roadmap.skipped || 0}
-                    resourceId={roadmap.id}
-                    resourceType={'roadmap'}
-                    updatedAt={roadmap.updatedAt}
-                    title={roadmap.title}
-                    onCleared={() => {
-                      pageProgressMessage.set('Updating activity');
-                      loadActivity().finally(() => {
-                        pageProgressMessage.set('');
-                      });
-                    }}
-                  />
-                ))}
+                .filter((roadmap) => roadmap.learning > 0 || roadmap.done > 0)
+                .map((roadmap) => {
+                  const learningCount = roadmap.learning || 0;
+                  const doneCount = roadmap.done || 0;
+                  const totalCount = roadmap.total || 0;
+                  const skippedCount = roadmap.skipped || 0;
+
+                  return (
+                    <ResourceProgress
+                      key={roadmap.id}
+                      isCustomResource={roadmap.isCustomResource}
+                      doneCount={
+                        doneCount > totalCount ? totalCount : doneCount
+                      }
+                      learningCount={
+                        learningCount > totalCount ? totalCount : learningCount
+                      }
+                      totalCount={totalCount}
+                      skippedCount={skippedCount}
+                      resourceId={roadmap.id}
+                      resourceType={'roadmap'}
+                      updatedAt={roadmap.updatedAt}
+                      title={roadmap.title}
+                      onCleared={() => {
+                        pageProgressMessage.set('Updating activity');
+                        loadActivity().finally(() => {
+                          pageProgressMessage.set('');
+                        });
+                      }}
+                    />
+                  );
+                })}
 
               {learningBestPractices
                 .sort((a, b) => {
@@ -134,6 +164,10 @@ export function ActivityPage() {
 
                   return updatedAtB.getTime() - updatedAtA.getTime();
                 })
+                .filter(
+                  (bestPractice) =>
+                    bestPractice.learning > 0 || bestPractice.done > 0,
+                )
                 .map((bestPractice) => (
                   <ResourceProgress
                     isCustomResource={bestPractice.isCustomResource}

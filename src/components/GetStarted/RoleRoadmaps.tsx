@@ -18,7 +18,7 @@ export function RoleRoadmaps(props: RoleRoadmapsProps) {
           <SectionBadge title={badge} />
         </div>
         <div className="my-4 sm:my-7 text-left">
-          <h2 className="mb-1 text-xl sm:text-3xl font-semibold">{title}</h2>
+          <h2 className="mb-1 text-balance text-xl sm:text-3xl font-semibold">{title}</h2>
           <p className="text-sm sm:text-base text-gray-500">{description}</p>
 
           <div className="mt-4 sm:mt-7 grid sm:grid-cols-2 md:grid-cols-3 gap-3">{children}</div>

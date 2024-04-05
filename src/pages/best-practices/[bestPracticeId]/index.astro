@@ -13,6 +13,7 @@ import {
   getBestPracticeById,
 } from '../../../lib/best-practice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../../lib/open-graph';
 
 interface Params extends Record<string, string | undefined> {
   bestPracticeId: string;
@@ -48,12 +49,18 @@ if (bestPracticeData.schema) {
     }),
   );
 }
+
+const ogImageUrl = getOpenGraphImageUrl({
+  group: 'best-practices',
+  resourceId: bestPracticeId,
+});
 ---
 
 <BaseLayout
   permalink={`/best-practices/${bestPracticeId}`}
   title={bestPracticeData?.seo?.title}
   briefTitle={bestPracticeData?.briefTitle}
+  ogImageUrl={ogImageUrl}
   description={bestPracticeData.seo.description}
   keywords={bestPracticeData.seo.keywords}
   noIndex={bestPracticeData.isUpcoming}

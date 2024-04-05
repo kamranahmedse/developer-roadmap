@@ -1,5 +1,5 @@
+/// <reference path="../.astro/types.d.ts" />
 /// <reference types="astro/client" />
-import 'astro/client';
 
 interface ImportMetaEnv {
   GITHUB_SHA: string;

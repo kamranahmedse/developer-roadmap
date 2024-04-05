@@ -12,6 +12,7 @@ import {
   generateArticleSchema,
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
+import { getOpenGraphImageUrl } from '../../lib/open-graph';
 
 import {
   getRoadmapById,
@@ -52,14 +53,20 @@ if (roadmapData.schema) {
 if (roadmapFAQs.length) {
   jsonLdSchema.push(generateFAQSchema(roadmapFAQs as unknown as FAQType[]));
 }
+
+const ogImageUrl =
+  roadmapData?.seo?.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'roadmaps',
+    resourceId: roadmapId,
+  });
 ---
 
 <BaseLayout
   permalink={`/${roadmapId}`}
   title={roadmapData?.seo?.title}
   briefTitle={roadmapData.briefTitle}
-  ogImageUrl={roadmapData?.seo?.ogImageUrl ||
-    'https://roadmap.sh/images/og-img.png'}
+  ogImageUrl={ogImageUrl}
   description={roadmapData.seo.description}
   keywords={roadmapData.seo.keywords}
   noIndex={roadmapData.isUpcoming}

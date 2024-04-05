@@ -1,10 +1,7 @@
 ---
 title: 'Brief History of JavaScript'
 description: 'How JavaScript was introduced and evolved over the years'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Brief History of JavaScript - roadmap.sh'
   description: 'How JavaScript was introduced and evolved over the years'

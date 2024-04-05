@@ -37,7 +37,6 @@ export function UpdateProfileForm() {
   };
 
   const loadProfile = async () => {
-    // Set the loading state
     setIsLoading(true);
 
     const { error, response } = await httpGet(

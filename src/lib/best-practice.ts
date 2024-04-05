@@ -78,12 +78,31 @@ export async function getAllBestPractices(): Promise<BestPracticeFileType[]> {
   );
 }
 
+/**
+ * Gets the best practice file by ID
+ *
+ * @param id - Best practice file ID
+ * @returns BestPracticeFileType
+ */
+
 export async function getBestPracticeById(
   id: string,
-): Promise<BestPracticeFileType> {
-  const bestPracticeFile = await import(
-    `../data/best-practices/${id}/${id}.md`
+): Promise<BestPracticeFileType | null> {
+  const bestPracticeFilesMap = import.meta.glob<BestPracticeFileType>(
+    '/src/data/best-practices/*/*.md',
+    {
+      eager: true,
+    },
   );
+
+  const bestPracticeFiles = Object.values(bestPracticeFilesMap);
+  const bestPracticeFile = bestPracticeFiles.find(
+    (bestPracticeFile) => bestPracticePathToId(bestPracticeFile.file) === id,
+  );
+
+  if (!bestPracticeFile) {
+    throw new Error(`Best practice with ID ${id} not found`);
+  }
 
   return {
     ...bestPracticeFile,

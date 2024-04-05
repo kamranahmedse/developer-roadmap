@@ -1,11 +1,8 @@
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 
 export function logout() {
-  Cookies.remove(TOKEN_COOKIE_NAME, {
-    path: '/',
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
+  removeAuthToken();
 
   // Reloading will automatically redirect the user if required
   window.location.reload();

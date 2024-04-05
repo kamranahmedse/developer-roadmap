@@ -14,6 +14,7 @@ import type {
 import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
 import { replaceChildren } from '../../lib/dom.ts';
+import {setUrlParams} from "../../lib/browser.ts";
 
 export class Renderer {
   resourceId: string;
@@ -141,19 +142,8 @@ export class Renderer {
 
     const newJsonFileSlug = newJsonUrl.split('/').pop()?.replace('.json', '');
 
-    // Update the URL and attach the new roadmap type
-    if (window?.history?.pushState) {
-      const url = new URL(window.location.href);
-      const type = this.resourceType[0]; // r for roadmap, b for best-practices
-
-      url.searchParams.delete(type);
-
-      if (newJsonFileSlug !== this.resourceId) {
-        url.searchParams.set(type, newJsonFileSlug!);
-      }
-
-      window.history.pushState(null, '', url.toString());
-    }
+    const type = this.resourceType[0]; // r for roadmap, b for best-practices
+    setUrlParams({ [type]: newJsonFileSlug! })
 
     this.jsonToSvg(newJsonUrl)?.then(() => {});
   }

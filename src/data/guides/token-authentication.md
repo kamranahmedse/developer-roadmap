@@ -1,10 +1,7 @@
 ---
 title: 'Token Based Authentication'
 description: 'Understand what is token based authentication and how it is implemented'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Token Based Authentication - roadmap.sh'
   description: 'Understand what is token based authentication and how it is implemented'

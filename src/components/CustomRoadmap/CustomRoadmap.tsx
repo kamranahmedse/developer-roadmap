@@ -1,17 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
-import {
-  type AppError,
-  type FetchError,
-  httpGet,
-  httpPost,
-} from '../../lib/http';
+import { type AppError, type FetchError, httpGet } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
 import { RestrictedPage } from './RestrictedPage';
-import { isLoggedIn } from '../../lib/jwt';
 import { FlowRoadmapRenderer } from './FlowRoadmapRenderer';
 
 export const allowedLinkTypes = [

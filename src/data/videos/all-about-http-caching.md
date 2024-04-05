@@ -4,10 +4,7 @@ description: 'Learn what is HTTP caching, places for caching and different cachi
 duration: '13 minutes'
 isNew: false
 date: 2020-10-04
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

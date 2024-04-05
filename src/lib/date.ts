@@ -26,6 +26,10 @@ export function getRelativeTimeString(date: string): string {
     relativeTime = rtf.format(-diffInDays, 'day');
   }
 
+  if (relativeTime === 'this minute') {
+    return 'just now';
+  }
+
   return relativeTime;
 }
 
