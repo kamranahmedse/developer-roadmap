@@ -2,24 +2,23 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
 import { getGuidesByAuthor } from '../../lib/guide';
-import { getAllVideos, getVideosByAuthor } from '../../lib/video';
+import { getVideosByAuthor } from '../../lib/video';
 import GuideListItem from '../../components/GuideListItem.astro';
-import { getAuthorById, getAuthorIds } from '../../lib/author';
+import { getAuthorById } from '../../lib/author';
 import VideoListItem from '../../components/VideoListItem.astro';
 
 interface Params extends Record<string, string | undefined> {}
 
-export async function getStaticPaths() {
-  const authorIds = await getAuthorIds();
-
-  return authorIds.map((authorId) => ({
-    params: { authorId },
-  }));
+const { authorId } = Astro.params;
+if (!authorId) {
+  return Astro.redirect('/404');
 }
 
-const { authorId } = Astro.params;
-
 const author = await getAuthorById(authorId);
+if (!author) {
+  return Astro.redirect('/404');
+}
+
 const authorFrontmatter = author.frontmatter;
 
 const guides = await getGuidesByAuthor(authorId);

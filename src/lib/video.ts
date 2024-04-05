@@ -1,8 +1,8 @@
 import type { MarkdownFileType } from './file';
 import type { AuthorFileType } from './author.ts';
 import { getAllAuthors } from './author.ts';
-import type {GuideFileType} from "./guide.ts";
-import {getAllGuides} from "./guide.ts";
+import type { GuideFileType } from './guide.ts';
+import { getAllGuides } from './guide.ts';
 
 export interface VideoFrontmatter {
   title: string;
@@ -40,7 +40,7 @@ function videoPathToId(filePath: string): string {
 }
 
 export async function getVideosByAuthor(
-    authorId: string,
+  authorId: string,
 ): Promise<VideoFileType[]> {
   const allVideos = await getAllVideos();
 
@@ -75,10 +75,20 @@ export async function getAllVideos(): Promise<VideoFileType[]> {
 }
 
 export async function getVideoById(id: string): Promise<VideoFileType> {
-  const video = await import(`../data/videos/${id}.md`);
+  const videoFilesMap: Record<string, VideoFileType> =
+    import.meta.glob<VideoFileType>('../data/videos/*.md', {
+      eager: true,
+    });
+
+  const videoFile = Object.values(videoFilesMap).find((videoFile) => {
+    return videoPathToId(videoFile.file) === id;
+  });
+  if (!videoFile) {
+    throw new Error(`Video with ID ${id} not found`);
+  }
 
   return {
-    ...video,
-    id: videoPathToId(video.file),
+    ...videoFile,
+    id: videoPathToId(videoFile.file),
   };
 }
