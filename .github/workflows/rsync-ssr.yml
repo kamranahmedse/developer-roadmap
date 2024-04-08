@@ -13,9 +13,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 20
-      - uses: pnpm/action-setup@v2.2.4
+      - uses: pnpm/action-setup@v3.0.0
         with:
-          version: 7.13.4
+          version: 8.15.6
 
       # --------------------
       # Setup configuration
