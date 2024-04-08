@@ -35,6 +35,7 @@ jobs:
           pnpm install
       - name: Generate build
         run: |
+          npm run generate-renderer
           npm run build
 
       # --------------------
