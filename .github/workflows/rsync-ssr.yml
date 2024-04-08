@@ -35,6 +35,7 @@ jobs:
           pnpm install
       - name: Generate build
         run: |
+          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/web-draw.git .temp/web-draw --depth 1
           npm run generate-renderer
           npm run build
 
