@@ -1,0 +1,57 @@
+name: Deploy to EC2
+on:
+  workflow_dispatch: # allow manual run
+  push:
+    branches:
+      - feat/ssr
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 20
+      - uses: pnpm/action-setup@v2.2.4
+        with:
+          version: 7.13.4
+
+      # --------------------
+      # Setup configuration
+      # --------------------
+      - name: Prepare configuration files
+        run: |
+          git clone https://${{ secrets.GH_PAT }}@github.com/roadmapsh/infra-config.git configuration --depth 1
+      - name: Copy configuration files
+        run: |
+          cp configuration/dist/github/developer-roadmap.env .env
+
+      # --------------------
+      # Prepare the build
+      # --------------------
+      - name: Install dependencies
+        run: |
+          pnpm install
+      - name: Generate build
+        run: |
+          npm run build
+
+      # --------------------
+      # Deploy to EC2
+      # --------------------
+      - uses: webfactory/ssh-agent@v0.7.0
+        with:
+          ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
+      - name: Deploy app to EC2
+        run: |
+          rsync -avz --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/v2.roadmap.sh/
+      - name: Restart PM2
+        uses: appleboy/ssh-action@master
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USERNAME }}
+          key: ${{ secrets.EC2_PRIVATE_KEY }}
+          script: |
+            cd /var/www/v2.roadmap.sh
+            sudo pm2 restart web-roadmap
