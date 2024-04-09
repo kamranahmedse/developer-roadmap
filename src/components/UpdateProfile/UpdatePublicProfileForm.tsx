@@ -8,16 +8,10 @@ import type {
   UserDocument,
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
-import {
-  ArrowUpRight,
-  Check,
-  Eye,
-  EyeOff,
-  Globe,
-  LockIcon,
-} from 'lucide-react';
+import { ArrowUpRight, Eye, EyeOff } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
+import { VisibilityDropdown } from './VisibilityDropdown.tsx';
 
 type RoadmapType = {
   id: string;
@@ -187,52 +181,35 @@ export function UpdatePublicProfileForm() {
   );
   const publicRoadmaps = profileRoadmaps.filter((r) => !r.isCustomResource);
 
-  const isAllCustomRoadmapsSelected =
-    customRoadmaps.length === publicCustomRoadmaps.length ||
-    customRoadmapVisibility === 'all';
-  const isAllRoadmapsSelected =
-    roadmaps.length === publicRoadmaps.length || roadmapVisibility === 'all';
-
   return (
-    <>
+    <div className="-mx-10 mt-10 border-t px-10 pt-10">
       {isCreatingRoadmap && (
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
-      <div className="mt-10 flex items-center justify-between gap-2">
-        <div className="flex items-center gap-2">
-          <h3 className="text-2xl font-bold">Public Profile</h3>
-          {publicProfileUrl && (
-            <a
-              href={publicProfileUrl}
-              target="_blank"
-              className="flex shrink-0 flex-row items-center gap-1 rounded-md border border-black py-0.5 pl-1 pr-1.5 text-xs transition-colors hover:bg-black hover:text-white"
-            >
-              <ArrowUpRight className="h-3 w-3 stroke-[3]" />
-              Visit Profile
-            </a>
-          )}
+        <div className="flex gap-2 flex-col sm:flex-row justify-between mb-1">
+          <div className="flex gap-2 flex-grow flex-col sm:flex-row items-start">
+            <h3 className="mr-1 text-xl sm:text-3xl font-bold">Personal Profile</h3>
+            {publicProfileUrl && (
+              <a
+                href={publicProfileUrl}
+                target="_blank"
+                className="flex h-[30px] shrink-0 flex-row items-center gap-1 rounded-lg border border-black pl-1.5 pr-2.5 text-sm transition-colors hover:bg-black hover:text-white"
+              >
+                <ArrowUpRight className="h-3 w-3 stroke-[3]" />
+                Visit
+              </a>
+            )}
+          </div>
+          <VisibilityDropdown
+            visibility={profileVisibility}
+            setVisibility={setProfileVisibility}
+          />
         </div>
+      <p className="text-gray-400 text-sm sm:text-base mt-2 sm:mt-0 hidden sm:block">
+        Set up your public profile to showcase your learning progress.
+      </p>
 
-        <div className="flex items-center gap-2">
-          <SelectionButton
-            type="button"
-            text="Public"
-            icon={Globe}
-            isDisabled={profileVisibility === 'public'}
-            isSelected={profileVisibility === 'public'}
-            onClick={() => updateProfileVisibility('public')}
-          />
-          <SelectionButton
-            type="button"
-            text="Private"
-            icon={LockIcon}
-            isDisabled={profileVisibility === 'private'}
-            isSelected={profileVisibility === 'private'}
-            onClick={() => updateProfileVisibility('private')}
-          />
-        </div>
-      </div>
       <form className="mt-6 space-y-4 pb-10" onSubmit={handleSubmit}>
         <div className="flex w-full flex-col">
           <label
@@ -285,7 +262,7 @@ export function UpdatePublicProfileForm() {
           <h3 className="text-sm font-medium">
             Which roadmap progresses do you want to show on your profile?
           </h3>
-          <div className="mt-3 flex items-center gap-2">
+          <div className="mt-3 flex items-center flex-wrap gap-2">
             <SelectionButton
               type="button"
               text="All Progress"
@@ -355,7 +332,7 @@ export function UpdatePublicProfileForm() {
           <h3 className="text-sm font-medium">
             Pick your custom roadmaps to show on your profile
           </h3>
-          <div className="mt-3 flex items-center gap-2">
+          <div className="mt-3 flex items-center gap-2 flex-wrap">
             <SelectionButton
               type="button"
               text="All Roadmaps"
@@ -538,6 +515,6 @@ export function UpdatePublicProfileForm() {
           {isLoading ? 'Please wait...' : 'Update Public Profile'}
         </button>
       </form>
-    </>
+    </div>
   );
 }

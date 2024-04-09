@@ -2,11 +2,13 @@ import { type FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import UploadProfilePicture from './UploadProfilePicture';
+import {ArrowDown, ChevronDown} from "lucide-react";
 
 export function UpdateProfileForm() {
   const [name, setName] = useState('');
   const [avatar, setAvatar] = useState('');
   const [email, setEmail] = useState('');
+  const [username, setUsername] = useState('');
   const [isLoading, setIsLoading] = useState(false);
 
   const [error, setError] = useState('');
@@ -50,10 +52,11 @@ export function UpdateProfileForm() {
       return;
     }
 
-    const { name, email, avatar } = response;
+    const { name, email, avatar, username } = response;
 
     setName(name);
     setEmail(email);
+    setUsername(username);
     setAvatar(avatar || '');
 
     setIsLoading(false);
@@ -69,7 +72,7 @@ export function UpdateProfileForm() {
   return (
     <div>
       <div className="mb-8 hidden md:block">
-        <h2 className="text-2xl font-bold sm:text-3xl">Profile</h2>
+        <h2 className="text-2xl font-bold sm:text-3xl">Basic Information</h2>
         <p className="mt-0.5 text-gray-400">
           Update and set up your public profile below.
         </p>
