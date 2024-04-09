@@ -8,8 +8,9 @@ import type {
   UserDocument,
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
-import { ArrowUpRight } from 'lucide-react';
+import { ArrowUpRight, Globe, LockIcon } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
+import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
 type RoadmapType = {
   id: string;
@@ -28,6 +29,7 @@ export function UpdatePublicProfileForm() {
 
   const toast = useToast();
 
+  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
   const [publicProfileUrl, setPublicProfileUrl] = useState('');
   const [isAvailableForHire, setIsAvailableForHire] = useState(false);
   const [isEmailVisible, setIsEmailVisible] = useState(true);
@@ -186,6 +188,10 @@ export function UpdatePublicProfileForm() {
 
   return (
     <>
+      {isCreatingRoadmap && (
+        <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
+      )}
+
       <div className="mt-10 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
           <h3 className="text-2xl font-bold">Public Profile</h3>
@@ -200,6 +206,7 @@ export function UpdatePublicProfileForm() {
           <SelectionButton
             type="button"
             text="Public"
+            icon={Globe}
             isDisabled={profileVisibility === 'public'}
             isSelected={profileVisibility === 'public'}
             onClick={() => updateProfileVisibility('public')}
@@ -207,6 +214,7 @@ export function UpdatePublicProfileForm() {
           <SelectionButton
             type="button"
             text="Private"
+            icon={LockIcon}
             isDisabled={profileVisibility === 'private'}
             isSelected={profileVisibility === 'private'}
             onClick={() => updateProfileVisibility('private')}
@@ -262,7 +270,9 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div className="rounded-md border p-4">
-          <h3 className="text-sm font-medium">Show my Learning Activity</h3>
+          <h3 className="text-sm font-medium">
+            Pick the roadmaps to show your progress
+          </h3>
           <div className="mt-3 flex items-center gap-2">
             <SelectionButton
               type="button"
@@ -276,7 +286,7 @@ export function UpdatePublicProfileForm() {
             />
             <SelectionButton
               type="button"
-              text="Hide my Activity"
+              text="Hide my Progress"
               isDisabled={false}
               isSelected={roadmapVisibility === 'none'}
               onClick={() => {
@@ -286,7 +296,9 @@ export function UpdatePublicProfileForm() {
             />
           </div>
 
-          <h3 className="mt-4 text-sm font-medium">Only Following Roadmaps</h3>
+          <h3 className="mt-4 text-sm font-medium">
+            Only show the selected roadmaps
+          </h3>
           {publicRoadmaps.length > 0 ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
               {publicRoadmaps.map((r) => (
@@ -326,7 +338,9 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div className="rounded-md border p-4">
-          <h3 className="text-sm font-medium">Show my Custom Roadmaps</h3>
+          <h3 className="text-sm font-medium">
+            Pick the custom roadmaps to show on your profile
+          </h3>
           <div className="mt-3 flex items-center gap-2">
             <SelectionButton
               type="button"
@@ -350,7 +364,9 @@ export function UpdatePublicProfileForm() {
             />
           </div>
 
-          <h3 className="mt-4 text-sm font-medium">Only Following Roadmaps</h3>
+          <h3 className="mt-4 text-sm font-medium">
+            Only show the following selected custom roadmaps
+          </h3>
           {publicCustomRoadmaps.length > 0 ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
               {publicCustomRoadmaps.map((r) => (
@@ -377,11 +393,18 @@ export function UpdatePublicProfileForm() {
               ))}
             </div>
           ) : (
-            <p className="mt-2 rounded-lg bg-yellow-100 p-2 text-yellow-700">
-              You have not created any custom roadmaps yet.{' '}
-              <a href="/roadmaps" className="text-black underline">
-                Create a custom roadmap
-              </a>
+            <p className="mt-2 rounded-lg bg-yellow-100 p-2 text-sm text-yellow-700">
+              You do not have any custom roadmaps.{' '}
+              <button
+                type={'button'}
+                className="font-medium underline underline-offset-2 hover:text-yellow-800"
+                onClick={() => {
+                  setIsCreatingRoadmap(true);
+                }}
+              >
+                Create one now
+              </button>
+              .
             </p>
           )}
         </div>
@@ -471,7 +494,7 @@ export function UpdatePublicProfileForm() {
             </label>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex select-none items-center gap-2">
             <input
               type="checkbox"
               name="isAvailableForHire"
@@ -483,10 +506,12 @@ export function UpdatePublicProfileForm() {
               Available for Hire
             </label>
           </div>
-          <p className="mt-1 text-sm text-slate-500">
-            Enable this if you are open to job opportunities, we will show a
-            badge on your profile to indicate that you are available for hire.
-          </p>
+          {isAvailableForHire && (
+            <p className="mt-1 text-sm text-slate-500">
+              Make sure to keep your progress updated for
+              potential employers.
+            </p>
+          )}
         </div>
 
         <button

@@ -58,35 +58,29 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
         </>
       )}
 
-      {customRoadmapVisibility !== 'none' && (
+      {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (
         <>
           <h2 className="mt-6 text-xs uppercase text-gray-400">My Roadmaps</h2>
-          {customRoadmaps?.length === 0 ? (
-            <div className="mt-4 text-sm text-gray-500">
-              No roadmaps added yet.
-            </div>
-          ) : (
-            <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
-              {customRoadmaps.map((roadmap, counter) => (
-                <li key={roadmap.id + counter}>
-                  <UserPublicProgressStats
-                    updatedAt={roadmap.updatedAt}
-                    title={roadmap.title}
-                    totalCount={roadmap.total}
-                    doneCount={roadmap.done}
-                    learningCount={roadmap.learning}
-                    skippedCount={roadmap.skipped}
-                    resourceId={roadmap.id}
-                    resourceType="roadmap"
-                    roadmapSlug={roadmap.roadmapSlug}
-                    username={username!}
-                    isCustomResource={true}
-                    userId={userId}
-                  />
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
+            {customRoadmaps.map((roadmap, counter) => (
+              <li key={roadmap.id + counter}>
+                <UserPublicProgressStats
+                  updatedAt={roadmap.updatedAt}
+                  title={roadmap.title}
+                  totalCount={roadmap.total}
+                  doneCount={roadmap.done}
+                  learningCount={roadmap.learning}
+                  skippedCount={roadmap.skipped}
+                  resourceId={roadmap.id}
+                  resourceType="roadmap"
+                  roadmapSlug={roadmap.roadmapSlug}
+                  username={username!}
+                  isCustomResource={true}
+                  userId={userId}
+                />
+              </li>
+            ))}
+          </ul>
         </>
       )}
     </div>

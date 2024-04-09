@@ -101,12 +101,17 @@ export function UpdateProfileForm() {
           />
         </div>
         <div className="flex w-full flex-col">
-          <label
-            htmlFor="email"
-            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
-          >
-            Email
-          </label>
+          <div className="flex items-center justify-between">
+            <label
+              htmlFor="email"
+              className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+            >
+              Email
+            </label>
+            <a href='/account/settings' className="text-purple-700 text-xs underline hover:text-purple-800">
+              Visit settings page to change email
+            </a>
+          </div>
           <input
             type="email"
             name="email"
