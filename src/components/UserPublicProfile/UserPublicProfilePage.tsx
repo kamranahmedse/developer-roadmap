@@ -13,10 +13,11 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
     isOwnProfile,
     profileVisibility,
     _id: userId,
+    createdAt,
   } = props;
 
   return (
-    <div className="bg-gray-200/40">
+    <div className="bg-gray-200/40 min-h-full flex-grow pt-10 pb-36">
       <div className="container flex flex-col gap-8">
         <PrivateProfileBanner
           isOwnProfile={isOwnProfile}
@@ -25,7 +26,7 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
 
         <UserPublicProfileHeader userDetails={props!} />
 
-        <UserActivityHeatmap activity={activity!} />
+        <UserActivityHeatmap joinedAt={createdAt} activity={activity!} />
         <UserPublicProgresses
           username={username!}
           userId={userId!}

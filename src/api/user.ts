@@ -54,10 +54,10 @@ export interface UserDocument {
     roadmapVisibility: AllowedRoadmapVisibility;
     customRoadmapVisibility: AllowedCustomRoadmapVisibility;
   };
-  resetPasswordCodeAt: Date;
-  verifiedAt: Date;
-  createdAt: Date;
-  updatedAt: Date;
+  resetPasswordCodeAt: string;
+  verifiedAt: string;
+  createdAt: string;
+  updatedAt: string;
 }
 
 export type UserActivityCount = {

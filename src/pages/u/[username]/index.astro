@@ -3,6 +3,8 @@ import { FrownIcon } from 'lucide-react';
 import { userApi } from '../../../api/user';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
 import { UserPublicProfilePage } from '../../../components/UserPublicProfile/UserPublicProfilePage';
+import OpenSourceBanner from '../../../components/OpenSourceBanner.astro';
+import Footer from '../../../components/Footer.astro';
 
 interface Params extends Record<string, string | undefined> {
   username: string;
@@ -40,11 +42,18 @@ if (error || !userDetails) {
             height='120'
           />
         </picture>
-        <h2 class='my-2 sm:my-3 text-2xl sm:text-4xl font-bold'>Problem loading user!</h2>
+        <h2 class='my-2 text-2xl font-bold sm:my-3 sm:text-4xl'>
+          Problem loading user!
+        </h2>
         <p class='text-lg'>
-          <span class='bg-red-600 text-white py-1 rounded-md px-2'>{errorMessage}</span>
+          <span class='rounded-md bg-red-600 px-2 py-1 text-white'>
+            {errorMessage}
+          </span>
         </p>
       </div>
     )
   }
+
+  <OpenSourceBanner />
+  <Footer />
 </AccountLayout>

@@ -1,5 +1,6 @@
 import type { GetPublicProfileResponse } from '../../api/user';
 import { UserPublicProgressStats } from './UserPublicProgressStats';
+import { getPercentage } from '../../helper/number.ts';
 
 type UserPublicProgressesProps = {
   userId: string;
@@ -42,52 +43,70 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
   return (
     <div>
       {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (
-        <div className='mb-5'>
+        <div className="mb-5">
           <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
             Roadmaps made by me
           </h2>
-          <div className="grid grid-cols-3">
-            {customRoadmaps.map((roadmap, counter) => (
-              <a
-                target="_blank"
-                href={`/r/${roadmap.roadmapSlug}`}
-                key={roadmap.id + counter}
-                className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
-              >
-                {roadmap.title}
-              </a>
-            ))}
+          <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
+            {customRoadmaps.map((roadmap, counter) => {
+              const doneCount = roadmap.done;
+              const skippedCount = roadmap.skipped;
+              const totalCount = roadmap.total;
+
+              const totalMarked = doneCount + skippedCount;
+              const progressPercentage = getPercentage(totalMarked, totalCount);
+
+              return (
+                <a
+                  target="_blank"
+                  href={`/r/${roadmap.roadmapSlug}`}
+                  key={roadmap.id + counter}
+                  className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+                >
+                  {roadmap.title}
+                </a>
+              );
+            })}
           </div>
         </div>
       )}
 
-      <div>
-        {roadmapVisibility !== 'none' && (
-          <>
-            <h2 className="text-xs uppercase text-gray-400">My Skills</h2>
-            <ul className="">
-              {roadmaps.map((roadmap, counter) => (
-                <li key={roadmap.id + counter} className="bg-white">
-                  <UserPublicProgressStats
-                    updatedAt={roadmap.updatedAt}
-                    title={roadmap.title}
-                    totalCount={roadmap.total}
-                    doneCount={roadmap.done}
-                    learningCount={roadmap.learning}
-                    skippedCount={roadmap.skipped}
-                    resourceId={roadmap.id}
-                    resourceType="roadmap"
-                    roadmapSlug={roadmap.roadmapSlug}
-                    isCustomResource={false}
-                    username={username!}
-                    userId={userId}
-                  />
-                </li>
-              ))}
-            </ul>
-          </>
-        )}
-      </div>
+      {roadmapVisibility !== 'none' && roadmaps.length > 0 && (
+        <>
+          <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+            Skills I have mastered
+          </h2>
+          <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2 md:grid-cols-3">
+            {roadmaps.map((roadmap, counter) => {
+              const percentageDone = getPercentage(
+                roadmap.done + roadmap.skipped,
+                roadmap.total,
+              );
+
+              return (
+                <a
+                  target="_blank"
+                  key={roadmap.id + counter}
+                  href={`/${roadmap.id}?s=${userId}`}
+                  className="relative group border-gray-300 flex items-center justify-between rounded-md border bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400 overflow-hidden"
+                >
+                  <span className="flex-grow truncate">{roadmap.title}</span>
+                  <span className="text-xs text-gray-400">
+                    {parseInt(percentageDone, 10)}%
+                  </span>
+
+                  <span
+                    className="absolute transition-colors left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 group-hover:bg-black/10"
+                    style={{
+                      width: `${percentageDone}%`,
+                    }}
+                  ></span>
+                </a>
+              );
+            })}
+          </div>
+        </>
+      )}
     </div>
   );
 }

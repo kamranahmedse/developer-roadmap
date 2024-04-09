@@ -2,12 +2,13 @@ import CalendarHeatmap from 'react-calendar-heatmap';
 import { Tooltip as ReactTooltip } from 'react-tooltip';
 import 'react-calendar-heatmap/dist/styles.css';
 import 'react-tooltip/dist/react-tooltip.css';
-import { formatActivityDate } from '../../lib/date';
+import { formatActivityDate, formatMonthDate } from '../../lib/date';
 import type { UserActivityCount } from '../../api/user';
 import dayjs from 'dayjs';
 
 type UserActivityHeatmapProps = {
   activity: UserActivityCount;
+  joinedAt: string;
 };
 
 const legends = [
@@ -37,7 +38,9 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
             Progress updates over the past year
           </p>
         </div>
-        <span className="text-sm text-gray-400">Member since: June 2021</span>
+        <span className="text-sm text-gray-400">
+          Member since: {formatMonthDate(props.joinedAt)}
+        </span>
       </div>
       <CalendarHeatmap
         startDate={startDate}
