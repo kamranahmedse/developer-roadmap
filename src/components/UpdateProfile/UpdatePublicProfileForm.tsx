@@ -203,8 +203,13 @@ export function UpdatePublicProfileForm() {
         <div className="flex items-center gap-2">
           <h3 className="text-2xl font-bold">Public Profile</h3>
           {publicProfileUrl && (
-            <a href={publicProfileUrl} target="_blank" className="shrink-0">
-              <ArrowUpRight className="h-6 w-6 stroke-[3]" />
+            <a
+              href={publicProfileUrl}
+              target="_blank"
+              className="flex shrink-0 flex-row items-center gap-1 rounded-md border border-black py-0.5 pl-1 pr-1.5 text-xs transition-colors hover:bg-black hover:text-white"
+            >
+              <ArrowUpRight className="h-3 w-3 stroke-[3]" />
+              Visit Profile
             </a>
           )}
         </div>
@@ -491,8 +496,8 @@ export function UpdatePublicProfileForm() {
           />
         </div>
 
-        <div>
-          <div className="flex items-center gap-2">
+        <div className="flex flex-col gap-2">
+          <div className="flex select-none items-center gap-2 rounded-md border px-2 hover:bg-gray-100">
             <input
               type="checkbox"
               name="isEmailVisible"
@@ -500,12 +505,15 @@ export function UpdatePublicProfileForm() {
               checked={isEmailVisible}
               onChange={(e) => setIsEmailVisible(e.target.checked)}
             />
-            <label htmlFor="isEmailVisible" className="">
-              Show my Email
+            <label
+              htmlFor="isEmailVisible"
+              className="flex-grow cursor-pointer py-1.5"
+            >
+              Make my email public
             </label>
           </div>
 
-          <div className="flex select-none items-center gap-2">
+          <div className="flex select-none items-center gap-2 rounded-md border px-2 hover:bg-gray-100">
             <input
               type="checkbox"
               name="isAvailableForHire"
@@ -513,15 +521,13 @@ export function UpdatePublicProfileForm() {
               checked={isAvailableForHire}
               onChange={(e) => setIsAvailableForHire(e.target.checked)}
             />
-            <label htmlFor="isAvailableForHire" className="">
+            <label
+              htmlFor="isAvailableForHire"
+              className="flex-grow cursor-pointer py-1.5"
+            >
               Available for Hire
             </label>
           </div>
-          {isAvailableForHire && (
-            <p className="mt-1 text-sm text-slate-500">
-              Make sure to keep your progress updated for potential employers.
-            </p>
-          )}
         </div>
 
         <button
