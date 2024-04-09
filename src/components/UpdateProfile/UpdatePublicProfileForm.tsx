@@ -34,9 +34,9 @@ export function UpdatePublicProfileForm() {
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
   const [roadmapVisibility, setRoadmapVisibility] =
-    useState<AllowedRoadmapVisibility>('none');
+    useState<AllowedRoadmapVisibility>('all');
   const [customRoadmapVisibility, setCustomRoadmapVisibility] =
-    useState<AllowedCustomRoadmapVisibility>('none');
+    useState<AllowedCustomRoadmapVisibility>('all');
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [customRoadmaps, setCustomRoadmaps] = useState<string[]>([]);
 
@@ -104,7 +104,7 @@ export function UpdatePublicProfileForm() {
       publicConfig,
     } = response;
 
-    setPublicProfileUrl(`/u/${username}`);
+    setPublicProfileUrl(username ? `/u/${username}` : '');
     setUsername(username || '');
     setGithub(links?.github || '');
     setTwitter(links?.twitter || '');
@@ -186,9 +186,9 @@ export function UpdatePublicProfileForm() {
 
   return (
     <>
-      <div className="mt-16 flex items-center justify-between gap-2">
+      <div className="mt-10 flex items-center justify-between gap-2">
         <div className="flex items-center gap-2">
-          <h3 className="text-3xl font-bold">Public Profile</h3>
+          <h3 className="text-2xl font-bold">Public Profile</h3>
           {publicProfileUrl && (
             <a href={publicProfileUrl} target="_blank" className="shrink-0">
               <ArrowUpRight className="h-6 w-6 stroke-[3]" />
@@ -267,17 +267,17 @@ export function UpdatePublicProfileForm() {
             <SelectionButton
               type="button"
               text="All Roadmaps"
-              isDisabled={isAllRoadmapsSelected}
-              isSelected={isAllRoadmapsSelected}
+              isDisabled={false}
+              isSelected={roadmapVisibility === 'all'}
               onClick={() => {
                 setRoadmapVisibility('all');
-                setRoadmaps([...publicRoadmaps.map((r) => r.id)]);
+                setRoadmaps([]);
               }}
             />
             <SelectionButton
               type="button"
               text="Hide my Activity"
-              isDisabled={roadmapVisibility === 'none'}
+              isDisabled={false}
               isSelected={roadmapVisibility === 'none'}
               onClick={() => {
                 setRoadmapVisibility('none');
@@ -311,11 +311,16 @@ export function UpdatePublicProfileForm() {
               ))}
             </div>
           ) : (
-            <p className="mt-2 rounded-lg bg-yellow-100 p-2 text-yellow-700">
-              You are not following any roadmaps yet.{' '}
-              <a href="/roadmaps" className="text-black underline">
-                Start following roadmaps
-              </a>
+            <p className="mt-2 rounded-lg bg-yellow-100 p-2 text-sm text-yellow-700">
+              Update{' '}
+              <a
+                target="_blank"
+                className="font-medium underline underline-offset-2 hover:text-yellow-800"
+                href="/roadmaps"
+              >
+                your progress on roadmaps
+              </a>{' '}
+              to show your learning activity.
             </p>
           )}
         </div>
@@ -326,17 +331,17 @@ export function UpdatePublicProfileForm() {
             <SelectionButton
               type="button"
               text="All Roadmaps"
-              isDisabled={isAllCustomRoadmapsSelected}
-              isSelected={isAllCustomRoadmapsSelected}
+              isDisabled={false}
+              isSelected={customRoadmapVisibility === 'all'}
               onClick={() => {
                 setCustomRoadmapVisibility('all');
-                setCustomRoadmaps([...publicCustomRoadmaps.map((r) => r.id)]);
+                setCustomRoadmaps([]);
               }}
             />
             <SelectionButton
               type="button"
               text="Hide my Custom Roadmaps"
-              isDisabled={customRoadmapVisibility === 'none'}
+              isDisabled={false}
               isSelected={customRoadmapVisibility === 'none'}
               onClick={() => {
                 setCustomRoadmapVisibility('none');
