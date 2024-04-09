@@ -1,4 +1,5 @@
 ---
+import { FrownIcon } from 'lucide-react';
 import { userApi } from '../../../api/user';
 import AccountLayout from '../../../layouts/AccountLayout.astro';
 import { UserPublicProfilePage } from '../../../components/UserPublicProfile/UserPublicProfilePage';
@@ -16,11 +17,34 @@ const userClient = userApi(Astro as any);
 const { response: userDetails, error } =
   await userClient.getPublicProfile(username);
 
+let errorMessage = '';
 if (error || !userDetails) {
-  return Astro.redirect('/404');
+  errorMessage = error?.message || 'User not found';
 }
 ---
 
-<AccountLayout title={userDetails?.name}>
-  <UserPublicProfilePage {...userDetails} client:load />
+<AccountLayout title={userDetails?.name} errorMessage={errorMessage}>
+  {!errorMessage && <UserPublicProfilePage {...userDetails} client:load />}
+  {
+    errorMessage && (
+      <div class='container my-24 flex flex-col'>
+        <picture>
+          <source
+            srcset='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp'
+            type='image/webp'
+          />
+          <img
+            src='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif'
+            alt='😞'
+            width='120'
+            height='120'
+          />
+        </picture>
+        <h2 class='my-2 sm:my-3 text-2xl sm:text-4xl font-bold'>Problem loading user!</h2>
+        <p class='text-lg'>
+          <span class='bg-red-600 text-white py-1 rounded-md px-2'>{errorMessage}</span>
+        </p>
+      </div>
+    )
+  }
 </AccountLayout>
