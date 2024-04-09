@@ -8,7 +8,14 @@ import type {
   UserDocument,
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
-import { ArrowUpRight, Globe, LockIcon } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Check,
+  Eye,
+  EyeOff,
+  Globe,
+  LockIcon,
+} from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 
@@ -271,12 +278,13 @@ export function UpdatePublicProfileForm() {
 
         <div className="rounded-md border p-4">
           <h3 className="text-sm font-medium">
-            Pick the roadmaps to show your progress
+            Which roadmap progresses do you want to show on your profile?
           </h3>
           <div className="mt-3 flex items-center gap-2">
             <SelectionButton
               type="button"
-              text="All Roadmaps"
+              text="All Progress"
+              icon={Eye}
               isDisabled={false}
               isSelected={roadmapVisibility === 'all'}
               onClick={() => {
@@ -286,6 +294,7 @@ export function UpdatePublicProfileForm() {
             />
             <SelectionButton
               type="button"
+              icon={EyeOff}
               text="Hide my Progress"
               isDisabled={false}
               isSelected={roadmapVisibility === 'none'}
@@ -296,8 +305,8 @@ export function UpdatePublicProfileForm() {
             />
           </div>
 
-          <h3 className="mt-4 text-sm font-medium">
-            Only show the selected roadmaps
+          <h3 className="mt-4 text-sm text-gray-400">
+            Or select the roadmaps you want to show
           </h3>
           {publicRoadmaps.length > 0 ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -339,12 +348,13 @@ export function UpdatePublicProfileForm() {
 
         <div className="rounded-md border p-4">
           <h3 className="text-sm font-medium">
-            Pick the custom roadmaps to show on your profile
+            Pick your custom roadmaps to show on your profile
           </h3>
           <div className="mt-3 flex items-center gap-2">
             <SelectionButton
               type="button"
               text="All Roadmaps"
+              icon={Eye}
               isDisabled={false}
               isSelected={customRoadmapVisibility === 'all'}
               onClick={() => {
@@ -355,6 +365,7 @@ export function UpdatePublicProfileForm() {
             <SelectionButton
               type="button"
               text="Hide my Custom Roadmaps"
+              icon={EyeOff}
               isDisabled={false}
               isSelected={customRoadmapVisibility === 'none'}
               onClick={() => {
@@ -364,8 +375,8 @@ export function UpdatePublicProfileForm() {
             />
           </div>
 
-          <h3 className="mt-4 text-sm font-medium">
-            Only show the following selected custom roadmaps
+          <h3 className="mt-4 text-sm text-gray-400">
+            Or select the custom roadmaps you want to show
           </h3>
           {publicCustomRoadmaps.length > 0 ? (
             <div className="mt-3 flex flex-wrap items-center gap-2">
@@ -508,8 +519,7 @@ export function UpdatePublicProfileForm() {
           </div>
           {isAvailableForHire && (
             <p className="mt-1 text-sm text-slate-500">
-              Make sure to keep your progress updated for
-              potential employers.
+              Make sure to keep your progress updated for potential employers.
             </p>
           )}
         </div>
