@@ -9,6 +9,15 @@ import dayjs from 'dayjs';
 type UserActivityHeatmapProps = {
   activity: UserActivityCount;
 };
+
+const legends = [
+  { count: '1-2', color: 'bg-gray-200' },
+  { count: '3-4', color: 'bg-gray-300' },
+  { count: '5-9', color: 'bg-gray-500' },
+  { count: '10-19', color: 'bg-gray-600' },
+  { count: '20+', color: 'bg-gray-800' },
+];
+
 export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
   const { activity } = props;
   const data = Object.entries(activity.activityCount).map(([date, count]) => ({
@@ -20,7 +29,16 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
   const endDate = dayjs().toDate();
 
   return (
-    <>
+    <div className="rounded-lg border bg-white p-4">
+      <div className="-mx-4 mb-8 flex justify-between border-b px-4 pb-3">
+        <div className="">
+          <h2 className="mb-0.5 font-semibold">Activity</h2>
+          <p className="text-sm text-gray-500">
+            Progress updates over the past year
+          </p>
+        </div>
+        <span className="text-sm text-gray-400">Member since: June 2021</span>
+      </div>
       <CalendarHeatmap
         startDate={startDate}
         endDate={endDate}
@@ -51,7 +69,7 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
           const formattedDate = formatActivityDate(value.date);
           return {
             'data-tooltip-id': 'user-activity-tip',
-            'data-tooltip-content': `${value.count} Progress Update on ${formattedDate}`,
+            'data-tooltip-content': `${value.count} Updates - ${formattedDate}`,
           };
         }}
       />
@@ -60,6 +78,30 @@ export function UserActivityHeatmap(props: UserActivityHeatmapProps) {
         id="user-activity-tip"
         className="!rounded-lg !bg-gray-900 !p-1 !px-2 !text-sm"
       />
-    </>
+
+      <div className="mt-4 flex items-center justify-between">
+        <span className="text-sm text-gray-400">
+          Number of topics marked as learning, or completed by day
+        </span>
+        <div className="flex items-center">
+          <span className="mr-2 text-xs text-gray-500">Less</span>
+          {legends.map((legend) => (
+            <div
+              key={legend.count}
+              className="flex items-center"
+              data-tooltip-id="user-activity-tip"
+              data-tooltip-content={`${legend.count} Updates`}
+            >
+              <div className={`h-3 w-3 ${legend.color} mr-1 rounded-sm`}></div>
+            </div>
+          ))}
+          <span className="ml-2 text-xs text-gray-500">More</span>
+          <ReactTooltip
+            id="user-activity-tip"
+            className="!rounded-lg !bg-gray-900 !p-1 !px-2 !text-sm"
+          />
+        </div>
+      </div>
+    </div>
   );
 }

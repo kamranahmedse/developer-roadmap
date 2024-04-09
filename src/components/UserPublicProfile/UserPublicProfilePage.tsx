@@ -16,25 +16,23 @@ export function UserPublicProfilePage(props: UserPublicProfilePageProps) {
   } = props;
 
   return (
-    <>
-      <PrivateProfileBanner
-        isOwnProfile={isOwnProfile}
-        profileVisibility={profileVisibility}
-      />
-      <section className="container mt-5 pb-10">
+    <div className="bg-gray-200/40">
+      <div className="container flex flex-col gap-8">
+        <PrivateProfileBanner
+          isOwnProfile={isOwnProfile}
+          profileVisibility={profileVisibility}
+        />
+
         <UserPublicProfileHeader userDetails={props!} />
-        <div className="mt-10">
-          <UserActivityHeatmap activity={activity!} />
-        </div>
-        <div className="mt-10">
-          <UserPublicProgresses
-            username={username!}
-            userId={userId!}
-            roadmaps={props.roadmaps}
-            publicConfig={props.publicConfig}
-          />
-        </div>
-      </section>
-    </>
+
+        <UserActivityHeatmap activity={activity!} />
+        <UserPublicProgresses
+          username={username!}
+          userId={userId!}
+          roadmaps={props.roadmaps}
+          publicConfig={props.publicConfig}
+        />
+      </div>
+    </div>
   );
 }

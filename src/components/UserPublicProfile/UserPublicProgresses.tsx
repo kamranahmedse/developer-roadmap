@@ -24,19 +24,50 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
     (roadmap) => roadmap.isCustomResource,
   );
 
+  // <UserPublicProgressStats
+  //                     updatedAt={roadmap.updatedAt}
+  //                     title={roadmap.title}
+  //                     totalCount={roadmap.total}
+  //                     doneCount={roadmap.done}
+  //                     learningCount={roadmap.learning}
+  //                     skippedCount={roadmap.skipped}
+  //                     resourceId={roadmap.id}
+  //                     resourceType="roadmap"
+  //                     roadmapSlug={roadmap.roadmapSlug}
+  //                     username={username!}
+  //                     isCustomResource={true}
+  //                     userId={userId}
+  //                   />
+
   return (
     <div>
-      {roadmapVisibility !== 'none' && (
-        <>
-          <h2 className="text-xs uppercase text-gray-400">My Skills</h2>
-          {roadmaps?.length === 0 ? (
-            <div className="mt-4 text-sm text-gray-500">
-              No skills added yet.
-            </div>
-          ) : (
-            <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
+      {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (
+        <div className='mb-5'>
+          <h2 className="mb-2 text-xs uppercase tracking-wide text-gray-400">
+            Roadmaps made by me
+          </h2>
+          <div className="grid grid-cols-3">
+            {customRoadmaps.map((roadmap, counter) => (
+              <a
+                target="_blank"
+                href={`/r/${roadmap.roadmapSlug}`}
+                key={roadmap.id + counter}
+                className="rounded-md border bg-white px-3 py-2 text-left text-sm shadow-sm transition-all hover:border-gray-300 hover:bg-gray-50"
+              >
+                {roadmap.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
+
+      <div>
+        {roadmapVisibility !== 'none' && (
+          <>
+            <h2 className="text-xs uppercase text-gray-400">My Skills</h2>
+            <ul className="">
               {roadmaps.map((roadmap, counter) => (
-                <li key={roadmap.id + counter}>
+                <li key={roadmap.id + counter} className="bg-white">
                   <UserPublicProgressStats
                     updatedAt={roadmap.updatedAt}
                     title={roadmap.title}
@@ -54,35 +85,9 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
                 </li>
               ))}
             </ul>
-          )}
-        </>
-      )}
-
-      {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (
-        <>
-          <h2 className="mt-6 text-xs uppercase text-gray-400">My Roadmaps</h2>
-          <ul className="mt-4 grid grid-cols-2 gap-2 max-md:grid-cols-1">
-            {customRoadmaps.map((roadmap, counter) => (
-              <li key={roadmap.id + counter}>
-                <UserPublicProgressStats
-                  updatedAt={roadmap.updatedAt}
-                  title={roadmap.title}
-                  totalCount={roadmap.total}
-                  doneCount={roadmap.done}
-                  learningCount={roadmap.learning}
-                  skippedCount={roadmap.skipped}
-                  resourceId={roadmap.id}
-                  resourceType="roadmap"
-                  roadmapSlug={roadmap.roadmapSlug}
-                  username={username!}
-                  isCustomResource={true}
-                  userId={userId}
-                />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+          </>
+        )}
+      </div>
     </div>
   );
 }

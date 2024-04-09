@@ -12,7 +12,7 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
   const { headline, isAvailableForHire, isEmailVisible } = publicConfig!;
 
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center gap-6 container bg-white border p-8 rounded-xl">
       <img
         src={
           avatar
@@ -25,12 +25,12 @@ export function UserPublicProfileHeader(props: UserPublicProfileHeaderProps) {
 
       <div>
         {isAvailableForHire && (
-          <span className="mb-1 inline-block rounded-md bg-green-100 px-2 py-1 text-xs font-medium text-green-700">
+          <span className="mb-1 inline-block rounded-md bg-green-100 px-2 py-1 text-sm text-green-700">
             Available for hire
           </span>
         )}
-        <h1 className="text-2xl font-bold">{name}</h1>
-        <p className="mt-1 text-sm text-gray-500">{headline}</p>
+        <h1 className="text-3xl font-bold">{name}</h1>
+        <p className="mt-1 text-base text-gray-500">{headline}</p>
         <div className="mt-3 flex items-center gap-2">
           {links?.github && <UserLink href={links?.github} icon={Github} />}
           {links?.linkedin && (
