@@ -1,0 +1,115 @@
+import { getRelativeTimeString } from '../../lib/date';
+import type { ResourceType } from '../../lib/resource-progress';
+
+export const allowedActivityActionType = [
+  'in_progress',
+  'done',
+  'answered',
+] as const;
+export type AllowedActivityActionType =
+  (typeof allowedActivityActionType)[number];
+
+export type UserStreamActivity = {
+  _id?: string;
+  resourceType: ResourceType | 'question';
+  resourceId: string;
+  resourceTitle: string;
+  resourceSlug?: string;
+  isCustomResource?: boolean;
+  actionType: AllowedActivityActionType;
+  topicIds?: string[];
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+type ActivityStreamProps = {
+  activities: UserStreamActivity[];
+};
+
+export function ActivityStream(props: ActivityStreamProps) {
+  let { activities } = props;
+  activities = activities.sort((a, b) => {
+    return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
+  });
+
+  return (
+    <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
+      <h2 className="mb-3 text-xs uppercase text-gray-400">Activities</h2>
+
+      <ul className="space-y-1.5">
+        {activities.map((activity) => {
+          const {
+            _id,
+            resourceType,
+            resourceId,
+            resourceTitle,
+            actionType,
+            updatedAt,
+            topicIds,
+            isCustomResource,
+          } = activity;
+
+          const resourceUrl =
+            resourceType === 'question'
+              ? `/questions/${resourceId}`
+              : resourceType === 'best-practice'
+                ? `/best-practices/${resourceId}`
+                : isCustomResource && resourceType === 'roadmap'
+                  ? `/r?id=${resourceId}`
+                  : `/${resourceId}`;
+
+          const resourceLinkComponent = (
+            <a
+              className="font-medium text-black underline hover:cursor-pointer hover:no-underline"
+              target="_blank"
+              href={resourceUrl}
+            >
+              {resourceTitle}
+            </a>
+          );
+
+          const topicCount = topicIds?.length || 1;
+          const itemCount = (
+            <span className="font-medium text-black">
+              {topicCount}&nbsp;
+              {actionType === 'answered'
+                ? topicCount > 1
+                  ? 'questions'
+                  : 'question'
+                : topicCount > 1
+                  ? 'items'
+                  : 'item'}
+            </span>
+          );
+
+          const timeAgo = (
+            <span className="text-gray-400">
+              ({getRelativeTimeString(new Date(updatedAt).toISOString())})
+            </span>
+          );
+
+          return (
+            <li key={_id} className="rounded-md border p-2 text-gray-600">
+              {actionType === 'in_progress' && (
+                <>
+                  Marked {itemCount} in progress in {resourceLinkComponent}{' '}
+                  {timeAgo}
+                </>
+              )}
+              {actionType === 'done' && (
+                <>
+                  Completed {itemCount} in {resourceLinkComponent} {timeAgo}
+                </>
+              )}
+              {actionType === 'answered' && (
+                <>
+                  Answered {itemCount} for {resourceLinkComponent} {timeAgo}
+                </>
+              )}
+            </li>
+          );
+        })}
+      </ul>
+    </div>
+  );
+}

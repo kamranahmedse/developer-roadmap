@@ -4,6 +4,7 @@ import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
+import { ActivityStream, type UserStreamActivity } from './ActivityStream';
 
 type ProgressResponse = {
   updatedAt: string;
@@ -44,6 +45,7 @@ export type ActivityResponse = {
       resourceTitle?: string;
     };
   }[];
+  activities: UserStreamActivity[];
 };
 
 export function ActivityPage() {
@@ -95,8 +97,9 @@ export function ActivityPage() {
 
       return updatedAtB.getTime() - updatedAtA.getTime();
     })
-    .filter((bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0);
-
+    .filter(
+      (bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0,
+    );
 
   return (
     <>
@@ -106,11 +109,14 @@ export function ActivityPage() {
         streak={activity?.streak || { count: 0 }}
       />
 
+      <ActivityStream activities={activity?.activities || []} />
+
       <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
         {learningRoadmapsToShow.length === 0 &&
           learningBestPracticesToShow.length === 0 && <EmptyActivity />}
 
-        {(learningRoadmapsToShow.length > 0 || learningBestPracticesToShow.length > 0) && (
+        {(learningRoadmapsToShow.length > 0 ||
+          learningBestPracticesToShow.length > 0) && (
           <>
             <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
