@@ -369,7 +369,7 @@ export function UpdatePublicProfileForm() {
             />
             <SelectionButton
               type="button"
-              text="Hide my Custom Roadmaps"
+              text="Hide my Roadmaps"
               icon={EyeOff}
               isDisabled={false}
               isSelected={customRoadmapVisibility === 'none'}
