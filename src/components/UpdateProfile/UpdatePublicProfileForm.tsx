@@ -12,6 +12,7 @@ import { ArrowUpRight, Eye, EyeOff } from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 import { VisibilityDropdown } from './VisibilityDropdown.tsx';
+import { ProfileUsername } from './ProfileUsername.tsx';
 
 type RoadmapType = {
   id: string;
@@ -42,6 +43,8 @@ export function UpdatePublicProfileForm() {
     useState<AllowedCustomRoadmapVisibility>('all');
   const [roadmaps, setRoadmaps] = useState<string[]>([]);
   const [customRoadmaps, setCustomRoadmaps] = useState<string[]>([]);
+
+  const [currentUsername, setCurrentUsername] = useState('');
 
   const [github, setGithub] = useState('');
   const [twitter, setTwitter] = useState('');
@@ -109,6 +112,7 @@ export function UpdatePublicProfileForm() {
 
     setPublicProfileUrl(username ? `/u/${username}` : '');
     setUsername(username || '');
+    setCurrentUsername(username || '');
     setGithub(links?.github || '');
     setTwitter(links?.twitter || '');
     setLinkedin(links?.linkedin || '');
@@ -187,26 +191,28 @@ export function UpdatePublicProfileForm() {
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
-        <div className="flex gap-2 flex-col sm:flex-row justify-between mb-1">
-          <div className="flex gap-2 flex-grow flex-col sm:flex-row items-start">
-            <h3 className="mr-1 text-xl sm:text-3xl font-bold">Personal Profile</h3>
-            {publicProfileUrl && (
-              <a
-                href={publicProfileUrl}
-                target="_blank"
-                className="flex h-[30px] shrink-0 flex-row items-center gap-1 rounded-lg border border-black pl-1.5 pr-2.5 text-sm transition-colors hover:bg-black hover:text-white"
-              >
-                <ArrowUpRight className="h-3 w-3 stroke-[3]" />
-                Visit
-              </a>
-            )}
-          </div>
-          <VisibilityDropdown
-            visibility={profileVisibility}
-            setVisibility={setProfileVisibility}
-          />
+      <div className="mb-1 flex flex-col justify-between gap-2 sm:flex-row">
+        <div className="flex flex-grow flex-col items-start gap-2 sm:flex-row">
+          <h3 className="mr-1 text-xl font-bold sm:text-3xl">
+            Personal Profile
+          </h3>
+          {publicProfileUrl && (
+            <a
+              href={publicProfileUrl}
+              target="_blank"
+              className="flex h-[30px] shrink-0 flex-row items-center gap-1 rounded-lg border border-black pl-1.5 pr-2.5 text-sm transition-colors hover:bg-black hover:text-white"
+            >
+              <ArrowUpRight className="h-3 w-3 stroke-[3]" />
+              Visit
+            </a>
+          )}
         </div>
-      <p className="text-gray-400 text-sm sm:text-base mt-2 sm:mt-0 hidden sm:block">
+        <VisibilityDropdown
+          visibility={profileVisibility}
+          setVisibility={setProfileVisibility}
+        />
+      </div>
+      <p className="mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
         Set up your public profile to showcase your learning progress.
       </p>
 
@@ -229,40 +235,19 @@ export function UpdatePublicProfileForm() {
             required={profileVisibility === 'public'}
           />
         </div>
-        <div className="flex w-full flex-col">
-          <label
-            htmlFor="username"
-            className="text-sm leading-none text-slate-500"
-          >
-            Username
-          </label>
-          <div className="mt-2 flex items-center overflow-hidden rounded-lg border border-gray-300">
-            <span className="border-r border-gray-300 bg-gray-100 p-2">
-              roadmap.sh/u/
-            </span>
 
-            <input
-              type="text"
-              name="username"
-              id="username"
-              className="w-full px-3 py-2 outline-none placeholder:text-gray-400"
-              placeholder="johndoe"
-              spellCheck={false}
-              value={username}
-              title="Username must be at least 3 characters long and can only contain letters, numbers, and underscores"
-              onChange={(e) =>
-                setUsername((e.target as HTMLInputElement).value)
-              }
-              required={profileVisibility === 'public'}
-            />
-          </div>
-        </div>
+        <ProfileUsername
+          username={username}
+          setUsername={setUsername}
+          profileVisibility={profileVisibility}
+          currentUsername={currentUsername}
+        />
 
         <div className="rounded-md border p-4">
           <h3 className="text-sm font-medium">
             Which roadmap progresses do you want to show on your profile?
           </h3>
-          <div className="mt-3 flex items-center flex-wrap gap-2">
+          <div className="mt-3 flex flex-wrap items-center gap-2">
             <SelectionButton
               type="button"
               text="All Progress"
@@ -332,7 +317,7 @@ export function UpdatePublicProfileForm() {
           <h3 className="text-sm font-medium">
             Pick your custom roadmaps to show on your profile
           </h3>
-          <div className="mt-3 flex items-center gap-2 flex-wrap">
+          <div className="mt-3 flex flex-wrap items-center gap-2">
             <SelectionButton
               type="button"
               text="All Roadmaps"
