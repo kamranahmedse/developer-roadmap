@@ -26,14 +26,11 @@ export const GET: APIRoute = async function ({ params, url, request, props }) {
       : fullRoadmapId;
 
   const fileName =
-    roadmapId === fullRoadmapId
-      ? `${roadmapId}.json`
-      : `${fullRoadmapId}.json`;
+    roadmapId === fullRoadmapId ? `${roadmapId}.json` : `${fullRoadmapId}.json`;
 
-  console.log(fileName);
   try {
     const roadmapJson = await import(
-      `../../data/roadmaps/${roadmapId}/${fileName}`
+      /* @vite-ignore */ `../../data/roadmaps/${roadmapId}/${fileName}`
     );
 
     return new Response(JSON.stringify(roadmapJson), {
