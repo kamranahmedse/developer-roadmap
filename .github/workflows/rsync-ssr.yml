@@ -47,7 +47,7 @@ jobs:
           ssh-private-key: ${{ secrets.EC2_PRIVATE_KEY }}
       - name: Deploy app to EC2
         run: |
-          rsync -apvz --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/v2.roadmap.sh/
+          rsync -apvz --delete --no-times --exclude "configuration" -e "ssh -o StrictHostKeyChecking=no" -p ./ ${{ secrets.EC2_USERNAME }}@${{ secrets.EC2_HOST }}:/var/www/v2.roadmap.sh/
       - name: Restart PM2
         uses: appleboy/ssh-action@master
         with:
