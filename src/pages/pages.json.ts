@@ -1,4 +1,4 @@
-import { getAllBestPractices } from '../lib/best-pratice';
+import { getAllBestPractices } from '../lib/best-practice';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';

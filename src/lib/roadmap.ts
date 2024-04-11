@@ -128,3 +128,11 @@ export async function getRoadmapsByIds(
 
   return Promise.all(ids.map((id) => getRoadmapById(id)));
 }
+
+export async function getRoadmapFaqsById(roadmapId: string): Promise<string[]> {
+  const { faqs } = await import(
+    `../data/roadmaps/${roadmapId}/faqs.astro`
+  ).catch(() => ({}));
+
+  return faqs || [];
+}

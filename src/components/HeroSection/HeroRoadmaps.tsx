@@ -172,7 +172,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                       customRoadmap.total) *
                     100
                   }
-                  url={`/r?id=${customRoadmap.resourceId}`}
+                  url={`/r/${customRoadmap?.roadmapSlug}`}
                   allowFavorite={false}
                 />
               );
@@ -242,7 +242,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                           customRoadmap.total) *
                         100
                       }
-                      url={`/r?id=${customRoadmap.resourceId}`}
+                      url={`/r/${customRoadmap?.roadmapSlug}`}
                       allowFavorite={false}
                     />
                   );

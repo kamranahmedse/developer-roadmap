@@ -1,7 +1,6 @@
 ---
-import FAQs from '../../components/FAQs/FAQs.astro';
+import FAQs, { type FAQType } from '../../components/FAQs/FAQs.astro';
 import FrameRenderer from '../../components/FrameRenderer/FrameRenderer.astro';
-import MarkdownFile from '../../components/MarkdownFile.astro';
 import RelatedRoadmaps from '../../components/RelatedRoadmaps.astro';
 import RoadmapHeader from '../../components/RoadmapHeader.astro';
 import ShareIcons from '../../components/ShareIcons/ShareIcons.astro';
@@ -54,7 +53,7 @@ if (roadmapData.schema) {
 }
 
 if (roadmapFAQs.length) {
-  jsonLdSchema.push(generateFAQSchema(roadmapFAQs));
+  jsonLdSchema.push(generateFAQSchema(roadmapFAQs as unknown as FAQType[]));
 }
 
 const ogImageUrl =
@@ -125,7 +124,7 @@ const ogImageUrl =
       client:only='react'
     />
 
-    <FAQs faqs={roadmapFAQs} />
+    <FAQs faqs={roadmapFAQs as unknown as FAQType[]} />
 
     <RelatedRoadmaps roadmap={roadmapData} />
   </div>

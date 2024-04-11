@@ -20,7 +20,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
           className="group flex items-center gap-2 rounded py-2 pl-3 pr-2 text-sm font-medium text-slate-100 hover:bg-slate-700"
         >
           <User2 className="h-4 w-4 stroke-[2.5px] text-slate-400 group-hover:text-white" />
-          Profile
+          Account
         </a>
       </li>
       <li className="px-1">

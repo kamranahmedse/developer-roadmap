@@ -17,6 +17,7 @@ type ResourceProgressType = {
   onCleared?: () => void;
   showClearButton?: boolean;
   isCustomResource: boolean;
+  roadmapSlug?: string;
 };
 
 export function ResourceProgress(props: ResourceProgressType) {
@@ -37,6 +38,7 @@ export function ResourceProgress(props: ResourceProgressType) {
     doneCount,
     skippedCount,
     onCleared,
+    roadmapSlug,
   } = props;
 
   async function clearProgress() {
@@ -46,7 +48,7 @@ export function ResourceProgress(props: ResourceProgressType) {
       {
         resourceId,
         resourceType,
-      }
+      },
     );
 
     if (error || !response) {
@@ -72,7 +74,7 @@ export function ResourceProgress(props: ResourceProgressType) {
       : `/best-practices/${resourceId}`;
 
   if (isCustomResource) {
-    url = `/r?id=${resourceId}`;
+    url = `/r/${roadmapSlug}`;
   }
 
   const totalMarked = doneCount + skippedCount;

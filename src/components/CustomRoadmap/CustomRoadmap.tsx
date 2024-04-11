@@ -56,10 +56,11 @@ export function hideRoadmapLoader() {
 
 type CustomRoadmapProps = {
   isEmbed?: boolean;
+  slug?: string;
 };
 
 export function CustomRoadmap(props: CustomRoadmapProps) {
-  const { isEmbed = false } = props;
+  const { isEmbed = false, slug } = props;
 
   const { id, secret } = getUrlParams() as { id: string; secret: string };
 
@@ -70,9 +71,11 @@ export function CustomRoadmap(props: CustomRoadmapProps) {
   async function getRoadmap() {
     setIsLoading(true);
 
-    const roadmapUrl = new URL(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`,
-    );
+    const roadmapUrl = slug
+      ? new URL(
+          `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap-by-slug/${slug}`,
+        )
+      : new URL(`${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`);
 
     if (secret) {
       roadmapUrl.searchParams.set('secret', secret);

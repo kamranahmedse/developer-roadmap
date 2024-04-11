@@ -7,13 +7,13 @@ import { TopicDetail } from '../../../components/TopicDetail/TopicDetail';
 import UpcomingForm from '../../../components/UpcomingForm.astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { UserProgressModal } from '../../../components/UserProgress/UserProgressModal';
-import {
-  type BestPracticeFileType,
-  type BestPracticeFrontmatter,
-  getAllBestPractices,
-} from '../../../lib/best-pratice';
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../../lib/open-graph';
+import {
+  BestPracticeFileType,
+  BestPracticeFrontmatter,
+  getAllBestPractices,
+} from '../../../lib/best-practice';
 
 export async function getStaticPaths() {
   const bestPractices = await getAllBestPractices();

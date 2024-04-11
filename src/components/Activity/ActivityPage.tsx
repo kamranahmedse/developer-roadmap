@@ -14,6 +14,7 @@ type ProgressResponse = {
   done: number;
   total: number;
   isCustomResource: boolean;
+  roadmapSlug?: string;
 };
 
 export type ActivityResponse = {

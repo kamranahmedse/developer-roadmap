@@ -1,0 +1,61 @@
+---
+import { FrownIcon } from 'lucide-react';
+import { userApi } from '../../api/user';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { UserPublicProfilePage } from '../../components/UserPublicProfile/UserPublicProfilePage';
+import OpenSourceBanner from '../../components/OpenSourceBanner.astro';
+import Footer from '../../components/Footer.astro';
+
+export const prerender = false;
+
+interface Params extends Record<string, string | undefined> {
+  username: string;
+}
+
+const { username } = Astro.params as Params;
+if (!username) {
+  return Astro.redirect('/404');
+}
+
+const userClient = userApi(Astro as any);
+const { response: userDetails, error } =
+  await userClient.getPublicProfile(username);
+
+let errorMessage = '';
+if (error || !userDetails) {
+  errorMessage = error?.message || 'User not found';
+}
+---
+
+<AccountLayout title={userDetails?.name} errorMessage={errorMessage}>
+  {!errorMessage && <UserPublicProfilePage {...userDetails} client:load />}
+  {
+    errorMessage && (
+      <div class='container my-24 flex flex-col'>
+        <picture>
+          <source
+            srcset='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.webp'
+            type='image/webp'
+          />
+          <img
+            src='https://fonts.gstatic.com/s/e/notoemoji/latest/1f61e/512.gif'
+            alt='😞'
+            width='120'
+            height='120'
+          />
+        </picture>
+        <h2 class='my-2 text-2xl font-bold sm:my-3 sm:text-4xl'>
+          Problem loading user!
+        </h2>
+        <p class='text-lg'>
+          <span class='rounded-md bg-red-600 px-2 py-1 text-white'>
+            {errorMessage}
+          </span>
+        </p>
+      </div>
+    )
+  }
+
+  <OpenSourceBanner />
+  <Footer />
+</AccountLayout>
