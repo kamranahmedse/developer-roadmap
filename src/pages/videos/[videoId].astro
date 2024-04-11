@@ -1,14 +1,23 @@
 ---
 import VideoHeader from '../../components/VideoHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getVideoById } from '../../lib/video';
+import { getAllVideos, VideoFileType } from '../../lib/video';
+
+export interface Props {
+  video: VideoFileType;
+}
+
+export async function getStaticPaths() {
+  const videos = await getAllVideos();
+
+  return videos.map((video) => ({
+    params: { videoId: video.id },
+    props: { video },
+  }));
+}
 
 const { videoId } = Astro.params;
-
-const video = await getVideoById(videoId).catch(() => null);
-if (!video) {
-  return Astro.redirect('/404');
-}
+const { video } = Astro.props;
 ---
 
 <BaseLayout

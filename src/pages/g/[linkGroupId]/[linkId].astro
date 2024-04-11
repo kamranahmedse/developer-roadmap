@@ -1,13 +1,30 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import SkeletonLayout from '../../../layouts/SkeletonLayout.astro';
-import { getLinkGroupById } from '../../../lib/link-group';
+import { getAllLinkGroups } from '../../../lib/link-group';
+
+export async function getStaticPaths() {
+  const linkGroups = await getAllLinkGroups();
+
+  return linkGroups.flatMap((linkGroup) => {
+    const linkGroupLinks = linkGroup.frontmatter;
+
+    return Object.keys(linkGroupLinks).map((slug) => {
+      return {
+        params: {
+          linkGroupId: linkGroup.id,
+          linkId: slug,
+        },
+        props: {
+          linkGroup,
+        },
+      };
+    });
+  });
+}
 
 const { linkId } = Astro.params;
-const linkGroup = await getLinkGroupById(linkId!).catch(() => null);
-if (!linkGroup) {
-  return Astro.redirect('/404');
-}
+const { linkGroup } = Astro.props;
 
 const fullUrl = linkGroup.frontmatter[linkId!];
 ---

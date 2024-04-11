@@ -41,18 +41,11 @@ export default defineConfig({
       ],
     ],
   },
-  // @FIXME:
-  // This should be "hybrid" but there is a bug in the current version of Astro
-  // that adds trailing slashes to the URLs when using "hybrid" mode.
-  // ----------------------------------------------
-  // https://github.com/withastro/astro/issues/7808
-  // ----------------------------------------------
-  // For now, we are using "server" mode and then using cloudfront to cache the
-  // pages and serve them as static.
-  output: 'server',
+  output: 'hybrid',
   adapter: node({
     mode: 'standalone',
   }),
+  trailingSlash: 'never',
   integrations: [
     tailwind({
       config: {

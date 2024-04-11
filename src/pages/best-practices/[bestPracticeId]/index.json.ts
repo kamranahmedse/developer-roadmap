@@ -1,33 +1,33 @@
 import type { APIRoute } from 'astro';
 
+export async function getStaticPaths() {
+  const bestPracticeJsons = await import.meta.glob(
+    '/src/data/best-practices/**/*.json',
+    {
+      eager: true,
+    },
+  );
+
+  return Object.keys(bestPracticeJsons).map((filePath) => {
+    const bestPracticeId = filePath.split('/').pop()?.replace('.json', '');
+    const bestPracticeJson = bestPracticeJsons[filePath] as Record<string, any>;
+
+    return {
+      params: {
+        bestPracticeId,
+      },
+      props: {
+        bestPracticeJson: bestPracticeJson?.default,
+      },
+    };
+  });
+}
+
 export const GET: APIRoute = async function ({ params, request, props }) {
-  const { bestPracticeId } = params;
-
-  try {
-    const roadmapJson = await import(
-      `../../../data/best-practices/${bestPracticeId}/${bestPracticeId}.json`
-    );
-
-    return new Response(JSON.stringify(roadmapJson), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  } catch (error) {
-    return new Response(
-      JSON.stringify({
-        data: null,
-        error: {
-          message: 'Best Practices not found',
-        },
-      }),
-      {
-        status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      },
-    );
-  }
+  return new Response(JSON.stringify(props.bestPracticeJson), {
+    status: 200,
+    headers: {
+      'content-type': 'application/json',
+    },
+  });
 };

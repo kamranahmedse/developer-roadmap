@@ -6,16 +6,26 @@ import Footer from '../../components/Footer.astro';
 import AstroIcon from '../../components/AstroIcon.astro';
 import { QuestionsList } from '../../components/Questions/QuestionsList';
 
-import { getQuestionGroupById } from '../../lib/question-group';
+import {
+  getAllQuestionGroups,
+  type QuestionGroupType,
+} from '../../lib/question-group';
 
-const { questionGroupId } = Astro.params;
-const questionGroup = await getQuestionGroupById(questionGroupId!).catch(
-  () => null,
-);
-if (!questionGroup) {
-  return Astro.redirect('/404');
+export interface Props {
+  questionGroup: QuestionGroupType;
+}
+export async function getStaticPaths() {
+  const questionGroups = await getAllQuestionGroups();
+
+  return questionGroups.map((questionGroup) => {
+    return {
+      params: { questionGroupId: questionGroup.id },
+      props: { questionGroup },
+    };
+  });
 }
 
+const { questionGroup } = Astro.props;
 const { frontmatter } = questionGroup;
 ---
 

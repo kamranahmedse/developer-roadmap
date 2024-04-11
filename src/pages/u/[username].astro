@@ -1,10 +1,12 @@
 ---
 import { FrownIcon } from 'lucide-react';
-import { userApi } from '../../../api/user';
-import AccountLayout from '../../../layouts/AccountLayout.astro';
-import { UserPublicProfilePage } from '../../../components/UserPublicProfile/UserPublicProfilePage';
-import OpenSourceBanner from '../../../components/OpenSourceBanner.astro';
-import Footer from '../../../components/Footer.astro';
+import { userApi } from '../../api/user';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { UserPublicProfilePage } from '../../components/UserPublicProfile/UserPublicProfilePage';
+import OpenSourceBanner from '../../components/OpenSourceBanner.astro';
+import Footer from '../../components/Footer.astro';
+
+export const prerender = false;
 
 interface Params extends Record<string, string | undefined> {
   username: string;

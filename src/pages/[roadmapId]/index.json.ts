@@ -1,59 +1,30 @@
 import type { APIRoute } from 'astro';
 
-export const GET: APIRoute = async function ({ params, url, request, props }) {
-  const { roadmapId: fullRoadmapId } = params;
-  if (!fullRoadmapId) {
-    return new Response(
-      JSON.stringify({
-        data: null,
-        error: {
-          message: 'Roadmap not found',
-        },
-      }),
-      {
-        status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-        },
+export async function getStaticPaths() {
+  const roadmapJsons = import.meta.glob('/src/data/roadmaps/**/*.json', {
+    eager: true,
+  });
+
+  return Object.keys(roadmapJsons).map((filePath) => {
+    const roadmapId = filePath.split('/').pop()?.replace('.json', '');
+    const roadmapJson = roadmapJsons[filePath] as Record<string, any>;
+
+    return {
+      params: {
+        roadmapId,
       },
-    );
-  }
-
-  // to account for `roadmap/roadmap-beginner.json` files
-  const roadmapId =
-    fullRoadmapId?.indexOf('-beginner') !== -1
-      ? fullRoadmapId.replace('-beginner', '')
-      : fullRoadmapId;
-
-  const fileName =
-    roadmapId === fullRoadmapId ? `${roadmapId}.json` : `${fullRoadmapId}.json`;
-
-  try {
-    const roadmapJson = await import(
-      /* @vite-ignore */ `../../data/roadmaps/${roadmapId}/${fileName}`
-    );
-
-    return new Response(JSON.stringify(roadmapJson), {
-      status: 200,
-      headers: {
-        'Content-Type': 'application/json',
+      props: {
+        roadmapJson: roadmapJson?.default,
       },
-    });
-  } catch (error) {
-    return new Response(
-      JSON.stringify({
-        data: null,
-        error: {
-          message: 'Roadmap not found',
-          detail: (error as any).message,
-        },
-      }),
-      {
-        status: 500,
-        headers: {
-          'Content-Type': 'application/json',
-        },
-      },
-    );
-  }
+    };
+  });
+}
+
+export const GET: APIRoute = async function ({ params, request, props }) {
+  return new Response(JSON.stringify(props.roadmapJson), {
+    status: 200,
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
 };

@@ -13,25 +13,27 @@ import {
   generateFAQSchema,
 } from '../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { type RoadmapFrontmatter, getRoadmapIds } from '../../lib/roadmap';
 
-import {
-  getRoadmapById,
-  type RoadmapFrontmatter,
-  getRoadmapFaqsById,
-} from '../../lib/roadmap';
+export async function getStaticPaths() {
+  const roadmapIds = await getRoadmapIds();
+
+  return roadmapIds.map((roadmapId) => ({
+    params: { roadmapId },
+  }));
+}
 
 interface Params extends Record<string, string | undefined> {
   roadmapId: string;
 }
 
 const { roadmapId } = Astro.params as Params;
-
-const roadmapFile = await getRoadmapById(roadmapId).catch(() => null);
-if (!roadmapFile) {
-  return Astro.redirect('/404');
-}
-
-const roadmapFAQs = await getRoadmapFaqsById(roadmapId);
+const roadmapFile = await import(
+  `../../data/roadmaps/${roadmapId}/${roadmapId}.md`
+);
+const { faqs: roadmapFAQs = [] } = await import(
+  `../../data/roadmaps/${roadmapId}/faqs.astro`
+);
 const roadmapData = roadmapFile.frontmatter as RoadmapFrontmatter;
 
 let jsonLdSchema = [];

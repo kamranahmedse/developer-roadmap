@@ -1,20 +1,25 @@
 import type { APIRoute } from 'astro';
-import { getAuthorById } from '../../lib/author';
+import { getAuthorById, getAuthorIds } from '../../lib/author';
+
+export async function getStaticPaths() {
+  const authorIds = await getAuthorIds();
+
+  return await Promise.all(
+    authorIds.map(async (authorId) => {
+      const authorDetails = await getAuthorById(authorId);
+
+      return {
+        params: { authorId },
+        props: {
+          authorDetails: authorDetails?.frontmatter || {},
+        },
+      };
+    }),
+  );
+}
 
 export const GET: APIRoute = async function ({ params, request, props }) {
-  const { authorId } = params as { authorId: string };
-
-  const authorDetails = await getAuthorById(authorId);
-  if (!authorDetails) {
-    return new Response(JSON.stringify({ error: 'Not found' }), {
-      status: 404,
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  }
-
-  return new Response(JSON.stringify(authorDetails?.frontmatter), {
+  return new Response(JSON.stringify(props.authorDetails), {
     status: 200,
     headers: {
       'Content-Type': 'application/json',
