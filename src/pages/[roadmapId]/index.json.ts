@@ -45,6 +45,7 @@ export const GET: APIRoute = async function ({ params, url, request, props }) {
         data: null,
         error: {
           message: 'Roadmap not found',
+          detail: (error as any).message,
         },
       }),
       {
