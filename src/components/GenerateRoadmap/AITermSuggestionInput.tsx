@@ -69,6 +69,10 @@ export function AITermSuggestionInput(props: AITermSuggestionInputProps) {
       return [];
     }
 
+    if (trimmedValue.length < 3) {
+      return [];
+    }
+
     if (termCache.has(trimmedValue)) {
       const cachedData = termCache.get(trimmedValue);
       return cachedData || [];
