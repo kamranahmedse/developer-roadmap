@@ -3,6 +3,7 @@ import { httpGet, httpPatch, httpPost } from '../lib/http';
 import { sponsorHidden } from '../stores/page';
 import { useStore } from '@nanostores/react';
 import { X } from 'lucide-react';
+import { setViewSponsorCookie } from '../lib/jwt';
 
 export type PageSponsorType = {
   company: string;
@@ -75,14 +76,16 @@ export function PageSponsor(props: PageSponsorProps) {
 
   const clickSponsor = async (sponsorId: string) => {
     const { response, error } = await httpPatch<{ status: 'ok' }>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-click-sponsor/${sponsorId}`,
+      `${import.meta.env.PUBLIC_API_URL}/v1-view-sponsor/${sponsorId}`,
       {},
     );
 
-    if (error) {
+    if (error || !response) {
       console.error(error);
       return;
     }
+
+    setViewSponsorCookie(sponsorId);
   };
 
   useEffect(() => {
