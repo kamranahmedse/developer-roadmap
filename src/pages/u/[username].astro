@@ -5,6 +5,7 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
 import { UserPublicProfilePage } from '../../components/UserPublicProfile/UserPublicProfilePage';
 import OpenSourceBanner from '../../components/OpenSourceBanner.astro';
 import Footer from '../../components/Footer.astro';
+import BaseLayout from "../../layouts/BaseLayout.astro";
 
 export const prerender = false;
 
@@ -27,7 +28,7 @@ if (error || !userDetails) {
 }
 ---
 
-<AccountLayout title={userDetails?.name} errorMessage={errorMessage}>
+<BaseLayout title={`${userDetails?.name} - Skill Profile at roadmap.sh`}>
   {!errorMessage && <UserPublicProfilePage {...userDetails} client:load />}
   {
     errorMessage && (
@@ -55,7 +56,4 @@ if (error || !userDetails) {
       </div>
     )
   }
-
-  <OpenSourceBanner />
-  <Footer />
-</AccountLayout>
+</BaseLayout>
