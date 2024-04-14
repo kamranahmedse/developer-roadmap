@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Collections in Java](https://www.javatpoint.com/collections-in-java)
 - [Java - Collections Framework](https://www.tutorialspoint.com/java/java_collections.htm)
+- [Collection roadmap](https://draw.roadmap.sh/661c37e3ca9c84a979fd615a)
