@@ -119,7 +119,7 @@ export function setViewSponsorCookie(sponsorId: string) {
 
   Cookies.set(key, '1', {
     path: '/',
-    expires: 365,
+    expires: 1,
     sameSite: 'lax',
     secure: true,
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
