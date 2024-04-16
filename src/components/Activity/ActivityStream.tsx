@@ -33,6 +33,7 @@ export function ActivityStream(props: ActivityStreamProps) {
 
   const [showAll, setShowAll] = useState(false);
   const sortedActivities = activities
+    .filter((activity) => activity?.topicIds && activity.topicIds.length > 0)
     .sort((a, b) => {
       return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
     })
@@ -75,7 +76,7 @@ export function ActivityStream(props: ActivityStreamProps) {
               </a>
             );
 
-            const topicCount = topicIds?.length || 1;
+            const topicCount = topicIds?.length || 0;
             const itemCount = (
               <span className="font-medium text-black">
                 {topicCount}&nbsp;
