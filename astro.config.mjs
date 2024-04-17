@@ -1,10 +1,10 @@
 // https://astro.build/config
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import node from '@astrojs/node';
 import compress from 'astro-compress';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
-import { fileURLToPath } from 'node:url';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 
 import react from '@astrojs/react';
@@ -41,9 +41,11 @@ export default defineConfig({
       ],
     ],
   },
-  build: {
-    format: 'file',
-  },
+  output: 'hybrid',
+  adapter: node({
+    mode: 'standalone',
+  }),
+  trailingSlash: 'never',
   integrations: [
     tailwind({
       config: {

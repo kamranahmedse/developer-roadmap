@@ -6,7 +6,7 @@ This temporary or short-lived storage is called the "ephemeral container file sy
 
 ### Ephemeral FS and Data Persistence
 
-As any data stored within the container's ephemeral FS is lost when the container is stopped or removed, it poses a challenge to data persistence in applications. This is especially problematic for applications like databases, which require data to be persisted across multiple container life cycles.
+As any data stored within the container's ephemeral FS is lost when the container is stopped and removed, it poses a challenge to data persistence in applications. This is especially problematic for applications like databases, which require data to be persisted across multiple container life cycles.
 
 To overcome these challenges, Docker provides several methods for data persistence, such as:
 

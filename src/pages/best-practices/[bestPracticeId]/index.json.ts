@@ -5,7 +5,7 @@ export async function getStaticPaths() {
     '/src/data/best-practices/**/*.json',
     {
       eager: true,
-    }
+    },
   );
 
   return Object.keys(bestPracticeJsons).map((filePath) => {

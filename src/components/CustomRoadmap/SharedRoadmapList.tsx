@@ -91,7 +91,7 @@ export function SharedRoadmapList(props: SharedRoadmapListProps) {
                         className="relative flex w-full border-t"
                       >
                         <a
-                          href={`/r?id=${roadmap._id}`}
+                          href={`/r/=${roadmap?.slug}`}
                           className="group inline-grid w-full grid-cols-[auto,16px] items-center justify-between gap-2 px-3 py-2 text-sm text-gray-600 transition-colors hover:bg-gray-100 hover:text-black"
                           target={'_blank'}
                         >
