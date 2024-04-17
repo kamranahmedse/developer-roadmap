@@ -40,7 +40,7 @@ export function ActivityStream(props: ActivityStreamProps) {
     .slice(0, showAll ? activities.length : 5);
 
   return (
-    <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
+    <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
       <h2 className="mb-3 text-xs uppercase text-gray-400">Activities</h2>
 
       {activities.length > 0 ? (
@@ -97,7 +97,10 @@ export function ActivityStream(props: ActivityStreamProps) {
             );
 
             return (
-              <li key={_id} className="rounded-md border p-2 text-gray-600">
+              <li
+                key={_id}
+                className="rounded-md border p-2 text-sm text-gray-600"
+              >
                 {actionType === 'in_progress' && (
                   <>
                     Marked {itemCount} in progress in {resourceLinkComponent}{' '}

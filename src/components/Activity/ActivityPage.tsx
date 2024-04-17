@@ -110,9 +110,7 @@ export function ActivityPage() {
         streak={activity?.streak || { count: 0 }}
       />
 
-      <ActivityStream activities={activity?.activities || []} />
-
-      <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+      <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
         {learningRoadmapsToShow.length === 0 &&
           learningBestPracticesToShow.length === 0 && <EmptyActivity />}
 
@@ -122,7 +120,7 @@ export function ActivityPage() {
             <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
               {learningRoadmaps
                 .sort((a, b) => {
                   const updatedAtA = new Date(a.updatedAt);
@@ -198,6 +196,8 @@ export function ActivityPage() {
           </>
         )}
       </div>
+
+      <ActivityStream activities={activity?.activities || []} />
     </>
   );
 }
