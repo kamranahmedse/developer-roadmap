@@ -87,16 +87,21 @@ type GetAIRoadmapResponse = {
   data: string;
 };
 
-export function GenerateRoadmap() {
+type GenerateRoadmapProps = {
+  roadmapId?: string;
+};
+
+export function GenerateRoadmap(props: GenerateRoadmapProps) {
+  const { roadmapId } = props;
+
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
-  const { id: roadmapId, rc: referralCode } = getUrlParams() as {
-    id: string;
+  const { rc: referralCode } = getUrlParams() as {
     rc?: string;
   };
   const toast = useToast();
 
-  const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
+  const [hasSubmitted, setHasSubmitted] = useState<boolean>(Boolean(roadmapId));
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
   const [roadmapTerm, setRoadmapTerm] = useState('');
