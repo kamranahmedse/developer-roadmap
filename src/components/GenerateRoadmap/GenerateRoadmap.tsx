@@ -50,6 +50,7 @@ export type GetAIRoadmapLimitResponse = {
 };
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
+const ROADMAP_SLUG_REGEX = new RegExp(/@ROADMAPSLUG:([\w-]+)@/);
 
 export type RoadmapNodeDetails = {
   nodeId: string;
@@ -89,11 +90,11 @@ type GetAIRoadmapResponse = {
 
 type GenerateRoadmapProps = {
   roadmapId?: string;
-  t?: string;
+  slug?: string;
 };
 
 export function GenerateRoadmap(props: GenerateRoadmapProps) {
-  const { roadmapId, t: term = '' } = props;
+  const { roadmapId: defaultRoadmapId, slug: defaultRoadmapSlug } = props;
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -102,13 +103,19 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
   };
   const toast = useToast();
 
+  const [roadmapId, setRoadmapId] = useState<string | undefined>(
+    defaultRoadmapId,
+  );
+  const [roadmapSlug, setRoadmapSlug] = useState<string | undefined>(
+    defaultRoadmapSlug,
+  );
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(Boolean(roadmapId));
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
-  const [roadmapTerm, setRoadmapTerm] = useState(term);
-  const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
+  const [roadmapTerm, setRoadmapTerm] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
+  const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [selectedNode, setSelectedNode] = useState<RoadmapNodeDetails | null>(
     null,
   );
@@ -140,6 +147,8 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     deleteUrlParam('id');
     setCurrentRoadmap(null);
 
+    const origin = window.location.origin;
+    window.history.pushState(null, '', `${origin}/ai`);
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
       {
@@ -175,13 +184,21 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     await readAIRoadmapStream(reader, {
       onStream: async (result) => {
-        if (result.includes('@ROADMAPID')) {
+        if (result.includes('@ROADMAPID') || result.includes('@ROADMAPSLUG')) {
           // @ROADMAPID: is a special token that we use to identify the roadmap
           // @ROADMAPID:1234@ is the format, we will remove the token and the id
           // and replace it with a empty string
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
-          setUrlParams({ id: roadmapId });
-          result = result.replace(ROADMAP_ID_REGEX, '');
+          const roadmapSlug = result.match(ROADMAP_SLUG_REGEX)?.[1] || '';
+
+          window.history.pushState(null, '', `${origin}/ai/${roadmapSlug}`);
+          result = result
+            .replace(ROADMAP_ID_REGEX, '')
+            .replace(ROADMAP_SLUG_REGEX, '');
+
+          setRoadmapId(roadmapId);
+          setRoadmapSlug(roadmapSlug);
+
           const roadmapTitle =
             result.trim().split('\n')[0]?.replace('#', '')?.trim() || term;
           setRoadmapTerm(roadmapTitle);
@@ -196,7 +213,10 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         await renderRoadmap(result);
       },
       onStreamEnd: async (result) => {
-        result = result.replace(ROADMAP_ID_REGEX, '');
+        result = result
+          .replace(ROADMAP_ID_REGEX, '')
+          .replace(ROADMAP_SLUG_REGEX, '');
+
         setGeneratedRoadmapContent(result);
         loadAIRoadmapLimit().finally(() => {});
       },
@@ -391,7 +411,6 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
       return;
     }
 
-    setHasSubmitted(true);
     loadAIRoadmap(roadmapId).finally(() => {
       pageProgressMessage.set('');
     });
@@ -415,7 +434,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     );
   }
 
-  const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
+  const pageUrl = `https://roadmap.sh/ai/${roadmapSlug}`;
   const canGenerateMore = roadmapLimitUsed < roadmapLimit;
 
   return (
@@ -530,7 +549,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
               )}
               {!isAuthenticatedUser && (
                 <button
-                  className="rounded-xl border border-current px-2.5 py-0.5 text-left text-sm font-medium text-blue-500 transition-colors hover:bg-blue-500 hover:text-white sm:text-center"
+                  className="mt-2 rounded-xl border border-current px-2.5 py-0.5 text-left text-sm font-medium text-blue-500 transition-colors hover:bg-blue-500 hover:text-white sm:text-center"
                   onClick={showLoginPopup}
                 >
                   Login to generate your own roadmaps
