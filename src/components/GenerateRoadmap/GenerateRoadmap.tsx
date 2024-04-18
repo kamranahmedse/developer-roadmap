@@ -89,10 +89,11 @@ type GetAIRoadmapResponse = {
 
 type GenerateRoadmapProps = {
   roadmapId?: string;
+  t?: string;
 };
 
 export function GenerateRoadmap(props: GenerateRoadmapProps) {
-  const { roadmapId } = props;
+  const { roadmapId, t: term = '' } = props;
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -104,7 +105,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
   const [hasSubmitted, setHasSubmitted] = useState<boolean>(Boolean(roadmapId));
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
-  const [roadmapTerm, setRoadmapTerm] = useState('');
+  const [roadmapTerm, setRoadmapTerm] = useState(term);
   const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
@@ -406,7 +407,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
         limitUsed={roadmapLimitUsed}
         loadAIRoadmapLimit={loadAIRoadmapLimit}
         isKeyOnly={isKeyOnly}
-        onLoadTerm={(term: string) => {
+        onLoadTerm={(term) => {
           setRoadmapTerm(term);
           loadTermRoadmap(term).finally(() => {});
         }}
