@@ -1,4 +1,4 @@
-import { MoreHorizontal, X } from 'lucide-react';
+import { MoreVertical, X } from 'lucide-react';
 import { useRef, useState } from 'react';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { useKeydown } from '../../hooks/use-keydown';
@@ -74,7 +74,7 @@ export function ResourceProgressActions(props: ResourceProgressActionsType) {
         className="h-full text-gray-400 hover:text-gray-700"
         onClick={() => setIsOpen(!isOpen)}
       >
-        <MoreHorizontal size={16} />
+        <MoreVertical size={16} />
       </button>
 
       {isOpen && (

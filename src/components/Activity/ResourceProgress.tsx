@@ -52,7 +52,7 @@ export function ResourceProgress(props: ResourceProgressType) {
       <a
         target="_blank"
         href={url}
-        className="group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 pr-8 text-left text-sm transition-all hover:border-gray-400"
+        className="group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 pr-7 text-left text-sm transition-all hover:border-gray-400"
       >
         <span className="flex-grow truncate">{title}</span>
         <span className="text-xs text-gray-400">
