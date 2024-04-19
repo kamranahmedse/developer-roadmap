@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { AllowedProfileVisibility } from '../../api/user';
 import { httpGet, httpPost } from '../../lib/http';
 import { useToast } from '../../hooks/use-toast';
 import { CheckIcon, Loader2, X, XCircle } from 'lucide-react';
+import { useDebounceValue } from '../../hooks/use-debounce.ts';
 
 type ProfileUsernameProps = {
   username: string;
@@ -17,6 +18,11 @@ export function ProfileUsername(props: ProfileUsernameProps) {
   const toast = useToast();
   const [isLoading, setIsLoading] = useState(false);
   const [isUnique, setIsUnique] = useState<boolean | null>(null);
+  const debouncedUsername = useDebounceValue(username, 500);
+
+  useEffect(() => {
+    checkIsUnique(debouncedUsername).then();
+  }, [debouncedUsername]);
 
   const checkIsUnique = async (username: string) => {
     if (isLoading || username.length < 3) {
@@ -66,7 +72,22 @@ export function ProfileUsername(props: ProfileUsernameProps) {
             spellCheck={false}
             value={username}
             title="Username must be at least 3 characters long and can only contain letters, numbers, and underscores"
-            onChange={(e) => setUsername((e.target as HTMLInputElement).value)}
+            onKeyDown={(e) => {
+              // only allow letters, numbers
+              const keyCode = e.key;
+              const validKey = /^[a-zA-Z0-9]*$/.test(keyCode);
+              if (
+                !validKey &&
+                !['Backspace', 'Delete', 'ArrowLeft', 'ArrowRight'].includes(
+                  keyCode,
+                )
+              ) {
+                e.preventDefault();
+              }
+            }}
+            onChange={(e) => {
+              setUsername((e.target as HTMLInputElement).value.toLowerCase());
+            }}
             onBlur={(e) => checkIsUnique((e.target as HTMLInputElement).value)}
             required={profileVisibility === 'public'}
           />
