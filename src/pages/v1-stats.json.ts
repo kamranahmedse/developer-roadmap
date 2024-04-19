@@ -1,6 +1,6 @@
 import { execSync } from 'child_process';
 
-export const prerender = false;
+export const prerender = true;
 
 export async function GET() {
   const commitHash = execSync('git rev-parse HEAD').toString().trim();

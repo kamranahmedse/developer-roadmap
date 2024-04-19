@@ -27,7 +27,7 @@ type GetProfileSettingsResponse = Pick<
 
 export function UpdatePublicProfileForm() {
   const [profileVisibility, setProfileVisibility] =
-    useState<AllowedProfileVisibility>('private');
+    useState<AllowedProfileVisibility>('public');
 
   const toast = useToast();
 
@@ -117,7 +117,7 @@ export function UpdatePublicProfileForm() {
     setTwitter(links?.twitter || '');
     setLinkedin(links?.linkedin || '');
     setWebsite(links?.website || '');
-    setProfileVisibility(defaultProfileVisibility || 'private');
+    setProfileVisibility(defaultProfileVisibility || 'public');
     setHeadline(publicConfig?.headline || '');
     setRoadmapVisibility(publicConfig?.roadmapVisibility || 'none');
     setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'none');
