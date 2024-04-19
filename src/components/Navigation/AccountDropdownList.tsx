@@ -38,7 +38,7 @@ export function AccountDropdownList(props: AccountDropdownListProps) {
         >
           <span className="flex items-center gap-2">
             <SquareUserRound className="h-4 w-4 stroke-[2.5px] text-slate-400 group-hover:text-white" />
-            Profile
+            My Profile
           </span>
           <span className="rounded-sm bg-yellow-300 px-1 text-xs uppercase tracking-wide text-black">
             New
