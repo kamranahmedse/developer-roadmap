@@ -26,5 +26,9 @@ const title = roadmap?.title || 'Roadmap AI';
 ---
 
 <BaseLayout title={title}>
-  <GenerateRoadmap roadmapId={roadmap?.id} client:load />
+  <GenerateRoadmap
+    roadmapId={roadmap?.id}
+    isAuthenticatedUser={roadmap?.isAuthenticatedUser}
+    client:load
+  />
 </BaseLayout>

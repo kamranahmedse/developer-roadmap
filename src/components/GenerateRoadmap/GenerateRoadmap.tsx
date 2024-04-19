@@ -91,10 +91,15 @@ type GetAIRoadmapResponse = {
 type GenerateRoadmapProps = {
   roadmapId?: string;
   slug?: string;
+  isAuthenticatedUser?: boolean;
 };
 
 export function GenerateRoadmap(props: GenerateRoadmapProps) {
-  const { roadmapId: defaultRoadmapId, slug: defaultRoadmapSlug } = props;
+  const {
+    roadmapId: defaultRoadmapId,
+    slug: defaultRoadmapSlug,
+    isAuthenticatedUser = isLoggedIn(),
+  } = props;
 
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
@@ -130,7 +135,6 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     getOpenAIKey(),
   );
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
-  const isAuthenticatedUser = isLoggedIn();
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);

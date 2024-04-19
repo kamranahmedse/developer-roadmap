@@ -6,6 +6,7 @@ export type GetAIRoadmapBySlugResponse = {
   term: string;
   title: string;
   data: string;
+  isAuthenticatedUser: boolean;
 };
 
 export function aiRoadmapApi(context: APIContext) {
