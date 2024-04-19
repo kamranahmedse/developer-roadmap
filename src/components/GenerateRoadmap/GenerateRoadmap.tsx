@@ -148,7 +148,6 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
     setCurrentRoadmap(null);
 
     const origin = window.location.origin;
-    window.history.pushState(null, '', `${origin}/ai`);
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
       {
@@ -191,7 +190,17 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
           const roadmapSlug = result.match(ROADMAP_SLUG_REGEX)?.[1] || '';
 
-          window.history.pushState(null, '', `${origin}/ai/${roadmapSlug}`);
+          if (roadmapSlug) {
+            window.history.pushState(
+              {
+                roadmapId,
+                roadmapSlug,
+              },
+              '',
+              `${origin}/ai/${roadmapSlug}`,
+            );
+          }
+
           result = result
             .replace(ROADMAP_ID_REGEX, '')
             .replace(ROADMAP_SLUG_REGEX, '');
@@ -348,7 +357,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
       data,
     });
 
-    setRoadmapTerm(term);
+    setRoadmapTerm(title || term);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
@@ -415,6 +424,30 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
       pageProgressMessage.set('');
     });
   }, [roadmapId, currentRoadmap]);
+
+  useEffect(() => {
+    const handlePopState = (e: PopStateEvent) => {
+      const { roadmapId, roadmapSlug } = e.state || {};
+      if (!roadmapId || !roadmapSlug) {
+        window.location.reload();
+        return;
+      }
+
+      setIsLoading(true);
+      setHasSubmitted(true);
+      setRoadmapId(roadmapId);
+      setRoadmapSlug(roadmapSlug);
+      loadAIRoadmap(roadmapId).finally(() => {
+        setIsLoading(false);
+        pageProgressMessage.set('');
+      });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
 
   if (!hasSubmitted) {
     return (
