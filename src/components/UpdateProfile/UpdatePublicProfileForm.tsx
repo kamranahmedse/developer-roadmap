@@ -218,7 +218,7 @@ export function UpdatePublicProfileForm() {
               >
                 {!isCopied && <Copy className="h-3 w-3 stroke-[2.5]" />}
                 {isCopied && <Check className="h-3 w-3 stroke-[2.5]" />}
-                {!isCopied ? 'Copy' : 'Copied!'}
+                {!isCopied ? 'Copy URL' : 'Copied!'}
               </button>
             </>
           )}
