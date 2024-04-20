@@ -8,12 +8,20 @@ import type {
   UserDocument,
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
-import { ArrowUpRight, Eye, EyeOff } from 'lucide-react';
+import {
+  ArrowUpRight,
+  CheckCircle,
+  Eye,
+  EyeOff,
+  FileBadge,
+  Trophy,
+} from 'lucide-react';
 import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 import { VisibilityDropdown } from './VisibilityDropdown.tsx';
 import { ProfileUsername } from './ProfileUsername.tsx';
 import UploadProfilePicture from './UploadProfilePicture.tsx';
+import { SkillProfileAlert } from './SkillProfileAlert.tsx';
 
 type RoadmapType = {
   id: string;
@@ -202,11 +210,11 @@ export function UpdatePublicProfileForm() {
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
+      <SkillProfileAlert />
+
       <div className="mb-8 flex flex-col justify-between gap-2 sm:mb-1 sm:flex-row">
         <div className="flex flex-grow flex-row items-center gap-2 sm:items-center">
-          <h3 className="mr-1 text-xl font-bold sm:text-3xl">
-            Personal Profile
-          </h3>
+          <h3 className="mr-1 text-xl font-bold sm:text-3xl">Skill Profile</h3>
           {publicProfileUrl && (
             <a
               href={publicProfileUrl}
@@ -224,7 +232,7 @@ export function UpdatePublicProfileForm() {
         />
       </div>
       <p className="mb-8 mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
-        Set up your profile to showcase your skills.
+        Create your skill profile to showcase your skills.
       </p>
 
       <UploadProfilePicture
@@ -283,21 +291,21 @@ export function UpdatePublicProfileForm() {
             value={email}
           />
           <div className="flex items-center justify-end gap-2 rounded-md text-xs text-gray-400">
-          <div className="flex select-none items-center justify-end gap-2 rounded-md text-xs text-gray-400">
-            <input
-              type="checkbox"
-              name="isEmailVisible"
-              id="isEmailVisible"
-              checked={isEmailVisible}
-              onChange={(e) => setIsEmailVisible(e.target.checked)}
-            />
-            <label
-              htmlFor="isEmailVisible"
-              className="flex-grow cursor-pointer py-1.5"
-            >
-              Show my email on profile
-            </label>
-          </div>
+            <div className="flex select-none items-center justify-end gap-2 rounded-md text-xs text-gray-400">
+              <input
+                type="checkbox"
+                name="isEmailVisible"
+                id="isEmailVisible"
+                checked={isEmailVisible}
+                onChange={(e) => setIsEmailVisible(e.target.checked)}
+              />
+              <label
+                htmlFor="isEmailVisible"
+                className="flex-grow cursor-pointer py-1.5"
+              >
+                Show my email on profile
+              </label>
+            </div>
           </div>
         </div>
 
