@@ -13,6 +13,7 @@ import { useToast } from '../../hooks/use-toast';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 import { VisibilityDropdown } from './VisibilityDropdown.tsx';
 import { ProfileUsername } from './ProfileUsername.tsx';
+import UploadProfilePicture from './UploadProfilePicture.tsx';
 
 type RoadmapType = {
   id: string;
@@ -37,6 +38,7 @@ export function UpdatePublicProfileForm() {
   const [isEmailVisible, setIsEmailVisible] = useState(true);
   const [headline, setHeadline] = useState('');
   const [username, setUsername] = useState('');
+  const [email, setEmail] = useState('');
   const [roadmapVisibility, setRoadmapVisibility] =
     useState<AllowedRoadmapVisibility>('all');
   const [customRoadmapVisibility, setCustomRoadmapVisibility] =
@@ -45,7 +47,9 @@ export function UpdatePublicProfileForm() {
   const [customRoadmaps, setCustomRoadmaps] = useState<string[]>([]);
 
   const [currentUsername, setCurrentUsername] = useState('');
+  const [name, setName] = useState('');
 
+  const [avatar, setAvatar] = useState('');
   const [github, setGithub] = useState('');
   const [twitter, setTwitter] = useState('');
   const [linkedin, setLinkedin] = useState('');
@@ -75,6 +79,8 @@ export function UpdatePublicProfileForm() {
         twitter,
         linkedin,
         website,
+        name,
+        email,
       },
     );
 
@@ -104,26 +110,31 @@ export function UpdatePublicProfileForm() {
     }
 
     const {
+      name,
+      email,
       links,
       username,
       profileVisibility: defaultProfileVisibility,
       publicConfig,
+      avatar,
     } = response;
 
+    setAvatar(avatar || '');
     setPublicProfileUrl(username ? `/u/${username}` : '');
     setUsername(username || '');
     setCurrentUsername(username || '');
+    setName(name || '');
+    setEmail(email || '');
     setGithub(links?.github || '');
     setTwitter(links?.twitter || '');
     setLinkedin(links?.linkedin || '');
     setWebsite(links?.website || '');
     setProfileVisibility(defaultProfileVisibility || 'public');
     setHeadline(publicConfig?.headline || '');
-    setRoadmapVisibility(publicConfig?.roadmapVisibility || 'none');
-    setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'none');
+    setRoadmapVisibility(publicConfig?.roadmapVisibility || 'all');
+    setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'all');
     setCustomRoadmaps(publicConfig?.customRoadmaps || []);
     setRoadmaps(publicConfig?.roadmaps || []);
-    setCustomRoadmapVisibility(publicConfig?.customRoadmapVisibility || 'none');
     setIsAvailableForHire(publicConfig?.isAvailableForHire || false);
     setIsEmailVisible(publicConfig?.isEmailVisible ?? true);
 
@@ -186,13 +197,13 @@ export function UpdatePublicProfileForm() {
   const publicRoadmaps = profileRoadmaps.filter((r) => !r.isCustomResource);
 
   return (
-    <div className="-mx-10 mt-10 border-t px-10 pt-10">
+    <div>
       {isCreatingRoadmap && (
         <CreateRoadmapModal onClose={() => setIsCreatingRoadmap(false)} />
       )}
 
-      <div className="mb-1 flex flex-col justify-between gap-2 sm:flex-row">
-        <div className="flex flex-grow flex-col items-start gap-2 sm:flex-row">
+      <div className="mb-8 flex flex-col justify-between gap-2 sm:mb-1 sm:flex-row">
+        <div className="flex flex-grow flex-row items-center gap-2 sm:items-center">
           <h3 className="mr-1 text-xl font-bold sm:text-3xl">
             Personal Profile
           </h3>
@@ -200,7 +211,7 @@ export function UpdatePublicProfileForm() {
             <a
               href={publicProfileUrl}
               target="_blank"
-              className="flex h-[30px] shrink-0 flex-row items-center gap-1 rounded-lg border border-black pl-1.5 pr-2.5 text-sm transition-colors hover:bg-black hover:text-white"
+              className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
             >
               <ArrowUpRight className="h-3 w-3 stroke-[3]" />
               Visit
@@ -212,11 +223,84 @@ export function UpdatePublicProfileForm() {
           setVisibility={setProfileVisibility}
         />
       </div>
-      <p className="mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
+      <p className="mb-8 mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
         Set up your public profile to showcase your learning progress.
       </p>
 
+      <UploadProfilePicture
+        type="avatar"
+        label="Profile picture"
+        avatarUrl={
+          avatar
+            ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${avatar}`
+            : '/images/default-avatar.png'
+        }
+      />
+
       <form className="mt-6 space-y-4 pb-10" onSubmit={handleSubmit}>
+        <div className="flex w-full flex-col">
+          <label
+            htmlFor="name"
+            className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+          >
+            Name
+          </label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            className="mt-2 block w-full appearance-none rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            required
+            placeholder="John Doe"
+            value={name}
+            onInput={(e) => setName((e.target as HTMLInputElement).value)}
+          />
+        </div>
+
+        <div className="flex w-full flex-col">
+          <div className="flex items-center justify-between">
+            <label
+              htmlFor="email"
+              className='text-sm leading-none text-slate-500 after:text-red-400 after:content-["*"]'
+            >
+              Email
+            </label>
+            <a
+              href="/account/settings"
+              className="text-xs text-purple-700 underline hover:text-purple-800"
+            >
+              Visit settings page to change email
+            </a>
+          </div>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            required
+            disabled
+            placeholder="john@example.com"
+            value={email}
+          />
+          <div className="flex items-center justify-end gap-2 rounded-md text-xs text-gray-400">
+          <div className="flex select-none items-center justify-end gap-2 rounded-md text-xs text-gray-400">
+            <input
+              type="checkbox"
+              name="isEmailVisible"
+              id="isEmailVisible"
+              checked={isEmailVisible}
+              onChange={(e) => setIsEmailVisible(e.target.checked)}
+            />
+            <label
+              htmlFor="isEmailVisible"
+              className="flex-grow cursor-pointer py-1.5"
+            >
+              Show my email on profile
+            </label>
+          </div>
+          </div>
+        </div>
+
         <div className="flex w-full flex-col">
           <label
             htmlFor="headline"
@@ -459,22 +543,6 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="flex select-none items-center gap-2 rounded-md border px-2 hover:bg-gray-100">
-            <input
-              type="checkbox"
-              name="isEmailVisible"
-              id="isEmailVisible"
-              checked={isEmailVisible}
-              onChange={(e) => setIsEmailVisible(e.target.checked)}
-            />
-            <label
-              htmlFor="isEmailVisible"
-              className="flex-grow cursor-pointer py-1.5"
-            >
-              Make my email public
-            </label>
-          </div>
-
           <div className="flex select-none items-center gap-2 rounded-md border px-2 hover:bg-gray-100">
             <input
               type="checkbox"

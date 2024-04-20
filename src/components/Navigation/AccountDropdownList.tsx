@@ -18,7 +18,6 @@ type AccountDropdownListProps = {
 
 export function AccountDropdownList(props: AccountDropdownListProps) {
   const { setIsTeamsOpen, onCreateRoadmap } = props;
-  const [isCreatingRoadmap, setIsCreatingRoadmap] = useState(false);
 
   return (
     <ul>

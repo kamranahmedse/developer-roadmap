@@ -2,7 +2,6 @@ import { type FormEvent, useEffect, useState } from 'react';
 import { httpGet, httpPost } from '../../lib/http';
 import { pageProgressMessage } from '../../stores/page';
 import UploadProfilePicture from './UploadProfilePicture';
-import {ArrowDown, ChevronDown} from "lucide-react";
 
 export function UpdateProfileForm() {
   const [name, setName] = useState('');
@@ -113,7 +112,10 @@ export function UpdateProfileForm() {
             >
               Email
             </label>
-            <a href='/account/settings' className="text-purple-700 text-xs underline hover:text-purple-800">
+            <a
+              href="/account/settings"
+              className="text-xs text-purple-700 underline hover:text-purple-800"
+            >
               Visit settings page to change email
             </a>
           </div>
