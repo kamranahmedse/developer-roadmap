@@ -9,8 +9,9 @@ import type {
 } from '../../api/user';
 import { SelectionButton } from '../RoadCard/SelectionButton';
 import {
-  ArrowUpRight,
+  ArrowUpRight, Check,
   CheckCircle,
+  Copy,
   Eye,
   EyeOff,
   FileBadge,
@@ -22,6 +23,8 @@ import { VisibilityDropdown } from './VisibilityDropdown.tsx';
 import { ProfileUsername } from './ProfileUsername.tsx';
 import UploadProfilePicture from './UploadProfilePicture.tsx';
 import { SkillProfileAlert } from './SkillProfileAlert.tsx';
+import { useCopyText } from '../../hooks/use-copy-text.ts';
+import { cn } from '../../lib/classname.ts';
 
 type RoadmapType = {
   id: string;
@@ -66,6 +69,8 @@ export function UpdatePublicProfileForm() {
   const [profileRoadmaps, setProfileRoadmaps] = useState<RoadmapType[]>([]);
 
   const [isLoading, setIsLoading] = useState(false);
+
+  const { isCopied, copyText } = useCopyText();
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -167,31 +172,6 @@ export function UpdatePublicProfileForm() {
     setIsLoading(false);
   };
 
-  const updateProfileVisibility = async (
-    visibility: AllowedProfileVisibility,
-  ) => {
-    pageProgressMessage.set('Updating profile visibility');
-    setIsLoading(true);
-
-    const { error } = await httpPatch(
-      `${import.meta.env.PUBLIC_API_URL}/v1-update-public-profile-visibility`,
-      {
-        profileVisibility: visibility,
-      },
-    );
-
-    if (error) {
-      setIsLoading(false);
-      toast.error(error.message || 'Something went wrong');
-
-      return;
-    }
-
-    setProfileVisibility(visibility);
-    setIsLoading(false);
-    pageProgressMessage.set('');
-  };
-
   // Make a request to the backend to fill in the form with the current values
   useEffect(() => {
     Promise.all([loadProfileSettings(), loadProfileRoadmaps()]).finally(() => {
@@ -216,14 +196,31 @@ export function UpdatePublicProfileForm() {
         <div className="flex flex-grow flex-row items-center gap-2 sm:items-center">
           <h3 className="mr-1 text-xl font-bold sm:text-3xl">Skill Profile</h3>
           {publicProfileUrl && (
-            <a
-              href={publicProfileUrl}
-              target="_blank"
-              className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
-            >
-              <ArrowUpRight className="h-3 w-3 stroke-[3]" />
-              Visit
-            </a>
+            <>
+              <a
+                href={publicProfileUrl}
+                target="_blank"
+                className="flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white"
+              >
+                <ArrowUpRight className="h-3 w-3 stroke-[3]" />
+                Visit
+              </a>
+              <button
+                onClick={() => {
+                  copyText(`${window.location.origin}${publicProfileUrl}`);
+                }}
+                className={cn(
+                  'flex shrink-0 flex-row items-center gap-1 rounded-lg border border-black py-0.5 pl-1.5 pr-2.5 text-xs uppercase transition-colors hover:bg-black hover:text-white',
+                  {
+                    'bg-black text-white': isCopied,
+                  },
+                )}
+              >
+                {!isCopied && <Copy className="h-3 w-3 stroke-[2.5]" />}
+                {isCopied && <Check className="h-3 w-3 stroke-[2.5]" />}
+                {!isCopied ? 'Copy' : 'Copied!'}
+              </button>
+            </>
           )}
         </div>
         <VisibilityDropdown
