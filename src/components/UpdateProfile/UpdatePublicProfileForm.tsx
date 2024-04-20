@@ -224,7 +224,7 @@ export function UpdatePublicProfileForm() {
         />
       </div>
       <p className="mb-8 mt-2 hidden text-sm text-gray-400 sm:mt-0 sm:block sm:text-base">
-        Set up your public profile to showcase your learning progress.
+        Set up your profile to showcase your skills.
       </p>
 
       <UploadProfilePicture
@@ -543,7 +543,7 @@ export function UpdatePublicProfileForm() {
         </div>
 
         <div className="flex flex-col gap-2">
-          <div className="flex select-none items-center gap-2 rounded-md border px-2 hover:bg-gray-100">
+          <div className="flex select-none items-center gap-2 rounded-md border px-3 hover:bg-gray-100">
             <input
               type="checkbox"
               name="isAvailableForHire"
@@ -565,7 +565,7 @@ export function UpdatePublicProfileForm() {
           disabled={isLoading}
           className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
         >
-          {isLoading ? 'Please wait...' : 'Update Public Profile'}
+          {isLoading ? 'Please wait..' : 'Save Profile'}
         </button>
       </form>
     </div>
