@@ -1,7 +1,8 @@
-import { useState } from 'react';
+import { useMemo, useState } from 'react';
 import { getRelativeTimeString } from '../../lib/date';
 import type { ResourceType } from '../../lib/resource-progress';
 import { EmptyStream } from './EmptyStream';
+import { ActivityTopicDetails } from './ActivityTopicDetails';
 
 export const allowedActivityActionType = [
   'in_progress',
@@ -32,6 +33,11 @@ export function ActivityStream(props: ActivityStreamProps) {
   const { activities } = props;
 
   const [showAll, setShowAll] = useState(false);
+  const topicTitlesCache = useMemo(
+    () => new Map<string, Record<string, string>>(),
+    [],
+  );
+
   const sortedActivities = activities
     .filter((activity) => activity?.topicIds && activity.topicIds.length > 0)
     .sort((a, b) => {
@@ -78,16 +84,16 @@ export function ActivityStream(props: ActivityStreamProps) {
 
             const topicCount = topicIds?.length || 0;
             const itemCount = (
-              <span className="font-medium text-black">
-                {topicCount}&nbsp;
-                {actionType === 'answered'
-                  ? topicCount > 1
-                    ? 'questions'
-                    : 'question'
-                  : topicCount > 1
-                    ? 'items'
-                    : 'item'}
-              </span>
+              <ActivityTopicDetails
+                activityId={_id!}
+                resourceId={resourceId}
+                resourceType={resourceType}
+                isCustomResource={isCustomResource}
+                topicIds={topicIds || []}
+                topicTitlesCache={topicTitlesCache}
+                topicCount={topicCount}
+                actionType={actionType}
+              />
             );
 
             const timeAgo = (
