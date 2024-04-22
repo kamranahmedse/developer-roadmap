@@ -22,76 +22,11 @@ Web development is typically divided into two main categories: [backend developm
 
 Two of the key components when it comes to backend development are the programming language that you are going to code in and the database. In this article, we will be looking into a subset of programming languages that could be used for backend development. We will be discussing the pros and cons of each and the community to help you pick the best programming language for backend development.
 
-Without further ado, let’s get started!
-
-## What are backend languages?
-
-When it comes to web development, there is a very clear distinction between frontend and backend technologies.
-
-While the frontend ecosystem is quite limited to JavaScript (and other JavaScript-based languages, like TypeScript) due to Browser compatibility, the backend (A.K.A server-side) is a very different scenario.
-
-![Backend Languages](/guides/backend-languages/back-vs-front.png)
-
-Please note that neither of those lists is extensive, as they’re both constantly growing.
-
-You can think of a backend language as one that “runs on the server side”. That said, by that definition, any language is a backend language because even JavaScript nowadays can be used on the backend as well (thanks to Node, Bun, and Deno).
-
-However, we can go one step further and say:
-
-> “A backend language is a server side programming language that has the tools and frameworks required to build web backends”
-
-That will narrow down the list a little bit. But essentially, we can think of backend languages as anything that fits the following list:
-
-- Is able to listen for incoming HTTP/S connections.
-- Can access databases.
-- Can send HTTP/S requests.
-- Can access the filesystem.
-- Has a rich ecosystem of tools and frameworks to build web applications.
-
-With those features and a rich ecosystem of libraries and frameworks, a language can definitely be considered “backend-ready”.
-
-## Why learn a backend programming language?
-
-If you’re already a backend developer, then the main reason would be to become a more versatile developer. The more languages you know, the better code you’ll write. Either because you’ve learned different ways of solving the same problem, or simply because you’ll be able to contribute to more projects.
-
-If, on the other hand, you’re just getting started, the main reason would be that you’re entering an industry that’s always looking for people.
-
-## Is the market in demand for backend developers?
-
-One thing to keep in mind right now is that the software development market is always in demand for devs. For example, the [U.S. Bureau of Labor Statistics gives our industry a 25% growth rate](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) (demand-wise) from 2022 to 2023, whereas the mean for other industries is 3%.
-
-According to [JetBrains, during 2022, 75% of developers were involved with web development](https://www.jetbrains.com/lp/devecosystem-2022/) in one fashion or another, so whether you’re backend devs or frontend devs, there is always someone looking for you.
-
-That said, we also have to consider that this industry is becoming a global industry. While some countries might still be fighting that process back, most developers can directly access the global market and work for any company in the world.
-
-That is a great opportunity for a backend developer who lives in an area where there isn’t a big IT industry; however, it also means competing with every other developer in the world. That might cause the illusion that the IT industry is in recession or that there are no job opportunities for developers.
-
-There are always opportunities; it’s just that you're now after the same job that many others from around the world are after as well.
-
-That said, backend devs are always in high demand because they’re the bread and butter of any web application. They’re always required to create the underlying platform that will power most systems, so the key to standing out here is to stay up-to-date with the industry’s trends and technologies.
-
-Don’t get me wrong. You can’t possibly be expected to keep up with every single programming language that is released or with all the new frameworks that are created every month. However, keeping an eye on the industry and understanding what survives long enough to become a new industry standard is important. You have to keep updating yourself and learning new technologies/skills constantly; that way, you’ll stay relevant.
-
-## Is learning a backend language good for your career?
-
-Whether you’re a frontend developer looking to become full-stack (someone who can code both the backend and the frontend of an application), or if you’re new to the industry and you’re thinking if this might be the best place for you, the answer is “yes”.
-
-Backend developers are always in demand, so adding a new tool to your already existing toolbelt (if you’re already a dev) will only make you more flexible in the eyes of your employer.
-
-But remember, a language is just a language until you give it context. If you’re wondering whether or not one of the backend languages in this article might be for you, the answer will always be “yes”. However, understand that if backend development is new to you, you will also need to pick up other skills and backend technologies around the language, such as:
-
-- Understanding HTTP.
-- Learning Structured Query Language (SQL) to query your databases.
-- Understanding how APIs work.
-- What server side rendering means and how to take advantage of it.
-- What web servers are and how to use them/build them.
-
-Otherwise, you’ll understand the language, but you won’t know how to use it for the role of backend development.
+Diving straight in, I'll cover the top 5 backend programming languages that you should to learn if you’re looking to broaden your horizons in the server-side world.
 
 ## Top 5 Backend Languages to Learn for Web Development
 
-With that introduction out of the way, let’s see the top 5 backend programming languages that you might want to learn if you’re looking to broaden your horizons in the server-side world.
-The languages we’ll cover are:
+The best backend languages to learn in 2024 are:
 
 - Python
 - Java
@@ -325,6 +260,70 @@ A handy tool when trying to evaluate a language like that is [roadmap.sh](https:
 <p align="center" style="font-size: 14px; margin-top: -10px; text-align: center">Small section of the full backend roadmap available on <a href="https://roadmap.sh/backend">roadmap.sh</a></p>
 
 There you’ll find community-maintained roadmaps for many career paths within software development. In particular, for this article, the [backend roadmap](https://roadmap.sh/backend) is a great place to start, because while picking a backend language is important, you’ll see there that it’s not just about the language. In fact, there is a lot of tech around the language that is also required (I’m referring to databases, git, understanding how client-server communication works, and a big “etc).
+
+## What are backend languages?
+
+When it comes to web development, there is a very clear distinction between frontend and backend technologies.
+
+While the frontend ecosystem is quite limited to JavaScript (and other JavaScript-based languages, like TypeScript) due to Browser compatibility, the backend (A.K.A server-side) is a very different scenario.
+
+![Backend Languages](/guides/backend-languages/back-vs-front.png)
+
+Please note that neither of those lists is extensive, as they’re both constantly growing.
+
+You can think of a backend language as one that “runs on the server side”. That said, by that definition, any language is a backend language because even JavaScript nowadays can be used on the backend as well (thanks to Node, Bun, and Deno).
+
+However, we can go one step further and say:
+
+> “A backend language is a server side programming language that has the tools and frameworks required to build web backends”
+
+That will narrow down the list a little bit. But essentially, we can think of backend languages as anything that fits the following list:
+
+- Is able to listen for incoming HTTP/S connections.
+- Can access databases.
+- Can send HTTP/S requests.
+- Can access the filesystem.
+- Has a rich ecosystem of tools and frameworks to build web applications.
+
+With those features and a rich ecosystem of libraries and frameworks, a language can definitely be considered “backend-ready”.
+
+## Why learn a backend programming language?
+
+If you’re already a backend developer, then the main reason would be to become a more versatile developer. The more languages you know, the better code you’ll write. Either because you’ve learned different ways of solving the same problem, or simply because you’ll be able to contribute to more projects.
+
+If, on the other hand, you’re just getting started, the main reason would be that you’re entering an industry that’s always looking for people.
+
+## Is the market in demand for backend developers?
+
+One thing to keep in mind right now is that the software development market is always in demand for devs. For example, the [U.S. Bureau of Labor Statistics gives our industry a 25% growth rate](https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm) (demand-wise) from 2022 to 2023, whereas the mean for other industries is 3%.
+
+According to [JetBrains, during 2022, 75% of developers were involved with web development](https://www.jetbrains.com/lp/devecosystem-2022/) in one fashion or another, so whether you’re backend devs or frontend devs, there is always someone looking for you.
+
+That said, we also have to consider that this industry is becoming a global industry. While some countries might still be fighting that process back, most developers can directly access the global market and work for any company in the world.
+
+That is a great opportunity for a backend developer who lives in an area where there isn’t a big IT industry; however, it also means competing with every other developer in the world. That might cause the illusion that the IT industry is in recession or that there are no job opportunities for developers.
+
+There are always opportunities; it’s just that you're now after the same job that many others from around the world are after as well.
+
+That said, backend devs are always in high demand because they’re the bread and butter of any web application. They’re always required to create the underlying platform that will power most systems, so the key to standing out here is to stay up-to-date with the industry’s trends and technologies.
+
+Don’t get me wrong. You can’t possibly be expected to keep up with every single programming language that is released or with all the new frameworks that are created every month. However, keeping an eye on the industry and understanding what survives long enough to become a new industry standard is important. You have to keep updating yourself and learning new technologies/skills constantly; that way, you’ll stay relevant.
+
+## Is learning a backend language good for your career?
+
+Whether you’re a frontend developer looking to become full-stack (someone who can code both the backend and the frontend of an application), or if you’re new to the industry and you’re thinking if this might be the best place for you, the answer is “yes”.
+
+Backend developers are always in demand, so adding a new tool to your already existing toolbelt (if you’re already a dev) will only make you more flexible in the eyes of your employer.
+
+But remember, a language is just a language until you give it context. If you’re wondering whether or not one of the backend languages in this article might be for you, the answer will always be “yes”. However, understand that if backend development is new to you, you will also need to pick up other skills and backend technologies around the language, such as:
+
+- Understanding HTTP.
+- Learning Structured Query Language (SQL) to query your databases.
+- Understanding how APIs work.
+- What server side rendering means and how to take advantage of it.
+- What web servers are and how to use them/build them.
+
+Otherwise, you’ll understand the language, but you won’t know how to use it for the role of backend development.
 
 ## Jumpstarting Your Backend Development Journey
 
