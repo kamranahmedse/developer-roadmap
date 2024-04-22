@@ -1,7 +1,7 @@
 import { useRef, useState } from 'react';
 import type { ResourceType } from '../../lib/resource-progress';
 import type { AllowedActivityActionType } from './ActivityStream';
-import { httpGet } from '../../lib/http';
+import { httpPost } from '../../lib/http';
 import { cn } from '../../lib/classname';
 import { Spinner } from '../ReactIcons/Spinner';
 import { useKeydown } from '../../hooks/use-keydown';
@@ -50,13 +50,13 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
     setIsLoading(true);
     setError(null);
 
-    const { response, error } = await httpGet(
+    const { response, error } = await httpPost(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-activity-topic-titles`,
       {
         resourceId,
         resourceType,
         isCustomResource,
-        topicIds: topicIds.join(','),
+        topicIds,
       },
     );
 
@@ -99,6 +99,7 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
           shouldShowDetails && 'cursor-pointer underline hover:no-underline',
         )}
         onClick={handleClick}
+        disabled={!shouldShowDetails}
       >
         {topicCount}&nbsp;
         {actionType === 'answered'
