@@ -1,9 +1,11 @@
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 import type { ResourceType } from '../../lib/resource-progress';
 import type { AllowedActivityActionType } from './ActivityStream';
 import { httpGet } from '../../lib/http';
 import { cn } from '../../lib/classname';
 import { Spinner } from '../ReactIcons/Spinner';
+import { useKeydown } from '../../hooks/use-keydown';
+import { useOutsideClick } from '../../hooks/use-outside-click';
 
 type ActivityTopicDetailsProps = {
   activityId: string;
@@ -23,10 +25,12 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
     resourceType,
     isCustomResource,
     topicTitlesCache,
-    topicIds,
+    topicIds = [],
     topicCount,
     actionType,
   } = props;
+
+  const activityPopoverRef = useRef<HTMLDivElement | null>(null);
 
   const [showDetails, setShowDetails] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -47,8 +51,13 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
     setError(null);
 
     const { response, error } = await httpGet(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-activity-topic-titles/${activityId}`,
-      {},
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-activity-topic-titles`,
+      {
+        resourceId,
+        resourceType,
+        isCustomResource,
+        topicIds: topicIds.join(','),
+      },
     );
 
     if (error || !response) {
@@ -64,7 +73,7 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
 
   const shouldShowDetails = topicCount > 0 && resourceType !== 'question';
 
-  const handleMouseEnter = () => {
+  const handleClick = () => {
     if (!shouldShowDetails) {
       return;
     }
@@ -72,22 +81,25 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
     setShowDetails(true);
     loadTopicTitles().finally(() => null);
   };
-  const handleMouseLeave = () => {
+
+  const handleClose = () => {
     setShowDetails(false);
     setIsLoading(false);
     setError(null);
   };
 
+  useKeydown('Escape', handleClose);
+  useOutsideClick(activityPopoverRef, handleClose);
+
   return (
-    <div
-      className={cn(
-        'relative inline',
-        shouldShowDetails && 'cursor-pointer underline hover:no-underline',
-      )}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <span className="font-medium text-black">
+    <div className="relative inline">
+      <button
+        className={cn(
+          'font-medium text-black',
+          shouldShowDetails && 'cursor-pointer underline hover:no-underline',
+        )}
+        onClick={handleClick}
+      >
         {topicCount}&nbsp;
         {actionType === 'answered'
           ? topicCount > 1
@@ -96,7 +108,7 @@ export function ActivityTopicDetails(props: ActivityTopicDetailsProps) {
           : topicCount > 1
             ? 'items'
             : 'item'}
-      </span>
+      </button>
 
       {showDetails && shouldShowDetails && (
         <div className="absolute bottom-full left-0 z-10 w-64 rounded border border-gray-200 bg-white shadow-md">
