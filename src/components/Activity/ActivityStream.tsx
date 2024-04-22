@@ -154,7 +154,7 @@ export function ActivityStream(props: ActivityStreamProps) {
             Show less
           </> : <>
             <ChevronsDown size={14} />
-            Show all
+            Show more
           </>}
         </button>
       )}
