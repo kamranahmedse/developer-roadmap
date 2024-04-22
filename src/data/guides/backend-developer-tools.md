@@ -25,12 +25,12 @@ In this article, we’ll cover 25 backend development tools that are crucial in 
 
 The categories we’ll tackle are:
 
-- IDEs and Editors
-- Database Tools
+- IDEs and editors
+- Database tools
 - Collaboration
 - Hosting Services
-- API-Related Tools
-- Productivity
+- API-Related tools
+- Productivity tools
 
 So let’s get started!
 
