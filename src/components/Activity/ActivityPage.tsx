@@ -102,6 +102,10 @@ export function ActivityPage() {
       (bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0,
     );
 
+  const hasProgress =
+    learningRoadmapsToShow.length !== 0 ||
+    learningBestPracticesToShow.length !== 0;
+
   return (
     <>
       <ActivityCounters
@@ -197,7 +201,9 @@ export function ActivityPage() {
         )}
       </div>
 
-      <ActivityStream activities={activity?.activities || []} />
+      {hasProgress && (
+        <ActivityStream activities={activity?.activities || []} />
+      )}
     </>
   );
 }

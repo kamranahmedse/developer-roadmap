@@ -3,6 +3,7 @@ import { getRelativeTimeString } from '../../lib/date';
 import type { ResourceType } from '../../lib/resource-progress';
 import { EmptyStream } from './EmptyStream';
 import { ActivityTopicsModal } from './ActivityTopicsModal.tsx';
+import {Book, BookOpen, ChevronsDown, ChevronsDownUp, ChevronsUp, ChevronsUpDown} from 'lucide-react';
 
 export const allowedActivityActionType = [
   'in_progress',
@@ -45,7 +46,9 @@ export function ActivityStream(props: ActivityStreamProps) {
 
   return (
     <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
-      <h2 className="mb-3 text-xs uppercase text-gray-400">Learning Activity</h2>
+      <h2 className="mb-3 text-xs uppercase text-gray-400">
+        Learning Activity
+      </h2>
 
       {selectedActivity && (
         <ActivityTopicsModal
@@ -61,7 +64,7 @@ export function ActivityStream(props: ActivityStreamProps) {
       )}
 
       {activities.length > 0 ? (
-        <ul className="space-y-1.5">
+        <ul className="divide-y divide-gray-100">
           {sortedActivities.map((activity) => {
             const {
               _id,
@@ -80,12 +83,12 @@ export function ActivityStream(props: ActivityStreamProps) {
                 : resourceType === 'best-practice'
                   ? `/best-practices/${resourceId}`
                   : isCustomResource && resourceType === 'roadmap'
-                    ? `/r?id=${resourceId}`
+                    ? `/r/${resourceId}`
                     : `/${resourceId}`;
 
             const resourceLinkComponent = (
               <a
-                className="font-medium text-black underline hover:cursor-pointer hover:no-underline"
+                className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
                 target="_blank"
                 href={resourceUrl}
               >
@@ -102,38 +105,35 @@ export function ActivityStream(props: ActivityStreamProps) {
             );
 
             return (
-              <li
-                key={_id}
-                className="rounded-md border p-2 text-sm text-gray-600"
-              >
+              <li key={_id} className="py-2 text-sm text-gray-600">
                 {actionType === 'in_progress' && (
                   <>
-                    Marked{' '}
+                    Started{' '}
                     <button
-                      className="font-medium underline underline-offset-2"
+                      className="font-medium underline underline-offset-2 hover:text-black"
                       onClick={() => setSelectedActivity(activity)}
                     >
-                      {topicCount} topic(s)
+                      {topicCount} topic{topicCount > 1 ? 's' : ''}
                     </button>{' '}
-                    in progress in {resourceLinkComponent} {timeAgo}
+                    in {resourceLinkComponent} {timeAgo}
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
                     Completed{' '}
                     <button
-                      className="font-medium underline underline-offset-2"
+                      className="font-medium underline underline-offset-2 hover:text-black"
                       onClick={() => setSelectedActivity(activity)}
                     >
-                      {topicCount} topic(s)
+                      {topicCount} topic{topicCount > 1 ? 's' : ''}
                     </button>{' '}
                     in {resourceLinkComponent} {timeAgo}
                   </>
                 )}
                 {actionType === 'answered' && (
                   <>
-                    Answered {topicCount} question(s) in {resourceLinkComponent}{' '}
-                    {timeAgo}
+                    Answered {topicCount} question{topicCount > 1 ? 's' : ''} in{' '}
+                    {resourceLinkComponent} {timeAgo}
                   </>
                 )}
               </li>
@@ -145,14 +145,18 @@ export function ActivityStream(props: ActivityStreamProps) {
       )}
 
       {activities.length > 10 && (
-        <div className="mt-2 text-center">
-          <button
-            className="text-sm text-gray-400 hover:text-gray-600"
-            onClick={() => setShowAll(!showAll)}
-          >
-            {showAll ? '- Show less' : '+ Show all'}
-          </button>
-        </div>
+        <button
+          className="mt-3 gap-2 flex items-center rounded-md border border-black pl-1.5 pr-2 py-1 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+          onClick={() => setShowAll(!showAll)}
+        >
+          {showAll ? <>
+            <ChevronsUp size={14} />
+            Show less
+          </> : <>
+            <ChevronsDown size={14} />
+            Show all
+          </>}
+        </button>
       )}
     </div>
   );

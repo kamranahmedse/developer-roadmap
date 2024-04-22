@@ -1,21 +1,10 @@
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import type { ResourceType } from '../../lib/resource-progress';
 import type { AllowedActivityActionType } from './ActivityStream';
 import { httpPost } from '../../lib/http';
-import { cn } from '../../lib/classname';
-import { Spinner } from '../ReactIcons/Spinner';
-import { useKeydown } from '../../hooks/use-keydown';
-import { useOutsideClick } from '../../hooks/use-outside-click';
 import { Modal } from '../Modal.tsx';
 import { ModalLoader } from '../UserProgress/ModalLoader.tsx';
-import {
-  ArrowUpRight,
-  BookOpen,
-  Check,
-  CheckCircle,
-  CheckCircle2,
-  ExternalLink,
-} from 'lucide-react';
+import { ArrowUpRight, BookOpen, Check } from 'lucide-react';
 
 type ActivityTopicDetailsProps = {
   activityId: string;
