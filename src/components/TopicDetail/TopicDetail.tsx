@@ -27,8 +27,13 @@ import { Ban, FileText, X } from 'lucide-react';
 import { getUrlParams } from '../../lib/browser';
 import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
+import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
+import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
 
 type TopicDetailProps = {
+  resourceTitle?: string;
+  resourceType?: ResourceType;
+
   isEmbed?: boolean;
   canSubmitContribution: boolean;
 };
@@ -43,7 +48,7 @@ const linkTypes: Record<AllowedLinkTypes, string> = {
 };
 
 export function TopicDetail(props: TopicDetailProps) {
-  const { canSubmitContribution, isEmbed = false } = props;
+  const { canSubmitContribution, isEmbed = false, resourceTitle } = props;
 
   const [hasEnoughLinks, setHasEnoughLinks] = useState(false);
   const [contributionUrl, setContributionUrl] = useState('');
@@ -53,6 +58,7 @@ export function TopicDetail(props: TopicDetailProps) {
   const [error, setError] = useState('');
   const [topicHtml, setTopicHtml] = useState('');
   const [topicTitle, setTopicTitle] = useState('');
+  const [topicHtmlTitle, setTopicHtmlTitle] = useState('');
   const [links, setLinks] = useState<RoadmapContentDocument['links']>([]);
   const toast = useToast();
 
@@ -168,8 +174,11 @@ export function TopicDetail(props: TopicDetailProps) {
             topicDom.querySelector('[data-github-url]')!;
           const contributionUrl = urlElem?.dataset?.githubUrl || '';
 
+          const titleElem: HTMLElement = topicDom.querySelector('h1')!;
+
           setContributionUrl(contributionUrl);
           setHasEnoughLinks(links.length >= 3);
+          setTopicHtmlTitle(titleElem?.textContent || '');
         } else {
           setLinks((response as RoadmapContentDocument)?.links || []);
           setTopicTitle((response as RoadmapContentDocument)?.title || '');
@@ -198,6 +207,8 @@ export function TopicDetail(props: TopicDetailProps) {
   }
 
   const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
+  const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitle?.toLowerCase()}`;
+  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitle?.toLowerCase()}`;
 
   return (
     <div className={'relative z-50'}>
@@ -286,6 +297,33 @@ export function TopicDetail(props: TopicDetailProps) {
                   );
                 })}
               </ul>
+            )}
+
+            {canSubmitContribution && (
+              <div>
+                <p className='text-base text-gray-700'>
+                  Use the pre-filled search queries below to find learning
+                  resources:
+                </p>
+                <div className="mt-3 flex gap-2">
+                  <a
+                    href={googleSearchUrl}
+                    target="_blank"
+                    className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-sm hover:border-gray-700 hover:bg-gray-100"
+                  >
+                    <GoogleIcon className={'h-4 w-4'} />
+                    Google
+                  </a>
+                  <a
+                    href={youtubeSearchUrl}
+                    target="_blank"
+                    className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-sm hover:border-gray-700 hover:bg-gray-100"
+                  >
+                    <YouTubeIcon className={'h-4 w-4 text-red-500'} />
+                    YouTube
+                  </a>
+                </div>
+              </div>
             )}
 
             {/* Contribution */}

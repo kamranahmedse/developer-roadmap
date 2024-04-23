@@ -106,7 +106,12 @@ const ogImageUrl =
             description={roadmapData.briefDescription}
             pageUrl={`https://roadmap.sh/${roadmapId}`}
           />
-          <TopicDetail client:idle canSubmitContribution={true} />
+          <TopicDetail
+            resourceTitle={roadmapData.title}
+            resourceType='roadmap'
+            client:idle
+            canSubmitContribution={true}
+          />
 
           <FrameRenderer
             resourceType={'roadmap'}
