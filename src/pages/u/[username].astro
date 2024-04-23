@@ -1,11 +1,7 @@
 ---
-import { FrownIcon } from 'lucide-react';
 import { userApi } from '../../api/user';
-import AccountLayout from '../../layouts/AccountLayout.astro';
 import { UserPublicProfilePage } from '../../components/UserPublicProfile/UserPublicProfilePage';
-import OpenSourceBanner from '../../components/OpenSourceBanner.astro';
-import Footer from '../../components/Footer.astro';
-import BaseLayout from "../../layouts/BaseLayout.astro";
+import BaseLayout from '../../layouts/BaseLayout.astro';
 
 export const prerender = false;
 
@@ -26,10 +22,17 @@ let errorMessage = '';
 if (error || !userDetails) {
   errorMessage = error?.message || 'User not found';
 }
+
+const origin = Astro.url.origin;
+const ogImage = `${origin}/og/user-${username}`;
 ---
 
-<BaseLayout title={`${userDetails?.name} - Skill Profile at roadmap.sh`}>
-  {!errorMessage && <UserPublicProfilePage {...userDetails} client:load />}
+<BaseLayout
+  title={`${userDetails?.name || 'Unknown'} - Skill Profile at roadmap.sh`}
+  description='Check out my skill profile at roadmap.sh'
+  ogImageUrl={ogImage}
+>
+  {!errorMessage && <UserPublicProfilePage {...userDetails!} client:load />}
   {
     errorMessage && (
       <div class='container my-24 flex flex-col'>
