@@ -302,8 +302,7 @@ export function TopicDetail(props: TopicDetailProps) {
             {canSubmitContribution && (
               <div>
                 <p className='text-base text-gray-700'>
-                  Use the pre-filled search queries below to find learning
-                  resources:
+                  Use the search links below to find more resources on this topic.
                 </p>
                 <div className="mt-3 flex gap-2">
                   <a
