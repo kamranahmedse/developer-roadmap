@@ -23,7 +23,8 @@ if (error || !userDetails) {
   errorMessage = error?.message || 'User not found';
 }
 
-const ogImage = `${import.meta.env.PUBLIC_API_URL}/v1-profile-open-graph/${username}`;
+const origin = Astro.url.origin;
+const ogImage = `${origin}/og/user-${username}`;
 ---
 
 <BaseLayout
