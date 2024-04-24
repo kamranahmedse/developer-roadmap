@@ -1,4 +1,5 @@
 import type { APIRoute } from 'astro';
+import { getDefaultOpenGraphImageBuffer } from '../../lib/open-graph';
 
 export const prerender = false;
 
@@ -10,26 +11,22 @@ export const GET: APIRoute<any, Params> = async (context) => {
   const { slug } = context.params;
 
   if (!slug.startsWith('user-')) {
-    return new Response(
-      JSON.stringify({
-        error: 'Invalid slug',
-      }),
-      {
-        status: 400,
+    const buffer = await getDefaultOpenGraphImageBuffer();
+    return new Response(buffer, {
+      headers: {
+        'Content-Type': 'image/png',
       },
-    );
+    });
   }
 
   const username = slug.replace('user-', '');
   if (!username) {
-    return new Response(
-      JSON.stringify({
-        error: 'Invalid username',
-      }),
-      {
-        status: 400,
+    const buffer = await getDefaultOpenGraphImageBuffer();
+    return new Response(buffer, {
+      headers: {
+        'Content-Type': 'image/png',
       },
-    );
+    });
   }
 
   const response = await fetch(
