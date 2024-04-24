@@ -207,8 +207,9 @@ export function TopicDetail(props: TopicDetailProps) {
   }
 
   const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
-  const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitle?.toLowerCase()}`;
-  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitle?.toLowerCase()}`;
+  const resourceTitleForSearch = resourceTitle?.toLowerCase()?.replace(/\s+?roadmap/ig, '');
+  const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
+  const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitleForSearch}`;
 
   return (
     <div className={'relative z-50'}>
