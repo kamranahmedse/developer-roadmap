@@ -119,6 +119,11 @@ const COMPRESS_CONFIG = {
 
     const newSize = imageBuffer.length / KB_IN_BYTES;
     const diff = prevSize - newSize;
+    if (diff <= 0) {
+      console.log(`📦 Skipped ${relativeImagePath}`);
+      continue;
+    }
+
     const diffPercent = ((diff / prevSize) * 100).toFixed(2);
     console.log(
       `📦 Reduced ${prevSize.toFixed(2)}KB → ${newSize.toFixed(2)}KB (${diff.toFixed(2)}KB, ${diffPercent}%) for ${relativeImagePath}`,
