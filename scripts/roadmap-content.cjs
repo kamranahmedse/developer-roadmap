@@ -66,9 +66,11 @@ function writeTopicContent(currTopicUrl) {
 
   let prompt = `I will give you a topic and you need to write a brief introduction for that with regards to "${roadmapTitle}". Your format should be as follows and be in strictly markdown format:
 
-# (Put a heading for the topic)
+# (Put a heading for the topic without adding parent "Subtopic in Topic" or "Topic in Roadmap" etc.)
 
 (Write me a brief introduction for the topic with regards to "${roadmapTitle}")
+
+(add any code snippets ONLY if necessary and makes sense)
 
 `;
 
