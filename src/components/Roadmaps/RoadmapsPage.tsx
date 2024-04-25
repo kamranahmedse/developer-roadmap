@@ -210,6 +210,12 @@ const groups: GroupType[] = [
         type: 'skill',
         otherGroups: ['Web Development'],
       },
+      {
+        title: 'Linux',
+        link: '/linux',
+        type: 'skill',
+        otherGroups: ['Web Development'],
+      },
     ],
   },
   {
