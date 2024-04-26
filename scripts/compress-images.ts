@@ -21,7 +21,7 @@ const allowedFileExtensions = [
 type AllowedFileExtension = (typeof allowedFileExtensions)[number];
 
 const publicDir = path.join(__dirname, '../public');
-const cacheFile = path.join(__dirname, '.cache/images.json');
+const cacheFile = path.join(__dirname, '/compressed-images.json');
 
 const KB_IN_BYTES = 1024;
 const COMPRESS_CONFIG = {
@@ -64,13 +64,14 @@ const COMPRESS_CONFIG = {
     cache = JSON.parse(cacheFileContent);
   }
 
-  const images = await getImages(publicDir);
+  const images = await recursiveGetImages(publicDir);
   for (const image of images) {
     const extname = path.extname(image).toLowerCase() as AllowedFileExtension;
     if (
       !allowedFileExtensions.includes(extname) ||
       image.includes('node_modules') ||
-      image.includes('.cache') ||
+      image.includes('.astro') ||
+      image.includes('.vscode') ||
       image.includes('.git')
     ) {
       continue;
@@ -139,13 +140,13 @@ const COMPRESS_CONFIG = {
   await fs.writeFile(cacheFile, JSON.stringify(cache, null, 2), 'utf8');
 })();
 
-async function getImages(dir: string): Promise<string[]> {
-  const dirents = await fs.readdir(dir, { withFileTypes: true });
+async function recursiveGetImages(dir: string): Promise<string[]> {
+  const subdirs = await fs.readdir(dir, { withFileTypes: true });
 
   const files = await Promise.all(
-    dirents.map((dirent) => {
+    subdirs.map((dirent) => {
       const res = path.resolve(dir, dirent.name);
-      return dirent.isDirectory() ? getImages(res) : res;
+      return dirent.isDirectory() ? recursiveGetImages(res) : res;
     }),
   );
 

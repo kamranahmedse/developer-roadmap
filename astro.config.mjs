@@ -2,7 +2,6 @@
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
 import node from '@astrojs/node';
-import compress from 'astro-compress';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
@@ -55,11 +54,6 @@ export default defineConfig({
     sitemap({
       filter: shouldIndexPage,
       serialize: serializeSitemap,
-    }),
-    compress({
-      HTML: false,
-      CSS: false,
-      JavaScript: false,
     }),
     react(),
   ],
