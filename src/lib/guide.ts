@@ -14,6 +14,7 @@ export interface GuideFrontmatter {
   };
   isNew: boolean;
   type: 'visual' | 'textual';
+  ogImageUrl?: string;
   date: string;
   sitemap: {
     priority: number;
