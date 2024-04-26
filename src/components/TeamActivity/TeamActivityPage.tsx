@@ -6,6 +6,8 @@ import type { ResourceType } from '../../lib/resource-progress';
 import type { AllowedActivityActionType } from '../Activity/ActivityStream';
 import { pageProgressMessage } from '../../stores/page';
 import { getRelativeTimeString } from '../../lib/date';
+import { TeamActivityItem } from './TeamActivityItem';
+import { TeamActivityTopicsModal } from './TeamActivityTopicsModal';
 
 export type TeamStreamActivity = {
   _id?: string;
@@ -43,7 +45,10 @@ export function TeamActivityPage() {
   const { t: teamId } = getUrlParams();
 
   const toast = useToast();
+
   const [isLoading, setIsLoading] = useState(true);
+  const [selectedActivity, setSelectedActivity] =
+    useState<TeamStreamActivity | null>(null);
   const [teamActivities, setTeamActivities] = useState<GetTeamActivityResponse>(
     {
       users: [],
@@ -73,36 +78,6 @@ export function TeamActivityPage() {
       setIsLoading(false);
     });
   }, [teamId]);
-
-  const resourceLink = (activity: TeamStreamActivity) => {
-    const { resourceId, resourceTitle, resourceType, isCustomResource } =
-      activity;
-
-    const resourceUrl =
-      resourceType === 'question'
-        ? `/questions/${resourceId}`
-        : resourceType === 'best-practice'
-          ? `/best-practices/${resourceId}`
-          : isCustomResource && resourceType === 'roadmap'
-            ? `/r/${resourceId}`
-            : `/${resourceId}`;
-
-    return (
-      <a
-        className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
-        target="_blank"
-        href={resourceUrl}
-      >
-        {resourceTitle}
-      </a>
-    );
-  };
-
-  const timeAgo = (date: string | Date) => (
-    <span className="ml-1 text-xs text-gray-400">
-      {getRelativeTimeString(new Date(date).toISOString())}
-    </span>
-  );
 
   const { users, activities } = teamActivities;
   const usersWithActivities = useMemo(
@@ -134,11 +109,6 @@ export function TeamActivityPage() {
     [users, activities],
   );
 
-  console.log('-'.repeat(20));
-  console.log('Team Activities: ', teamActivities);
-  console.log('Users with Activities: ', usersWithActivities);
-  console.log('-'.repeat(20));
-
   if (!teamId) {
     window.location.href = '/';
     return;
@@ -149,101 +119,29 @@ export function TeamActivityPage() {
   }
 
   return (
-    <ul className="flex flex-col gap-3">
-      {usersWithActivities.map((user) => {
-        const { activities } = user;
+    <>
+      {selectedActivity && (
+        <TeamActivityTopicsModal
+          activity={selectedActivity}
+          onClose={() => setSelectedActivity(null)}
+        />
+      )}
 
-        const username = (
-          <span className="font-medium">{user?.name || 'Unknown'}</span>
-        );
+      <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+        Activities
+      </h3>
 
-        if (activities.length === 1) {
-          const activity = activities[0];
-          const { actionType, topicIds } = activity;
-          const topicCount = topicIds?.length || 0;
-
+      <ul className="mt-2 flex flex-col gap-3">
+        {usersWithActivities.map((user) => {
           return (
-            <li key={user._id}>
-              {actionType === 'in_progress' && (
-                <>
-                  {username} started{' '}
-                  <button className="font-medium underline underline-offset-2 hover:text-black">
-                    {topicCount} topic{topicCount > 1 ? 's' : ''}
-                  </button>{' '}
-                  in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
-                </>
-              )}
-              {actionType === 'done' && (
-                <>
-                  {username} completed{' '}
-                  <button className="font-medium underline underline-offset-2 hover:text-black">
-                    {topicCount} topic{topicCount > 1 ? 's' : ''}
-                  </button>{' '}
-                  in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
-                </>
-              )}
-              {actionType === 'answered' && (
-                <>
-                  {username} answered {topicCount} question
-                  {topicCount > 1 ? 's' : ''} in {resourceLink(activity)}{' '}
-                  {timeAgo(activity.updatedAt)}
-                </>
-              )}
-            </li>
+            <TeamActivityItem
+              key={user._id}
+              user={user}
+              onTopicClick={setSelectedActivity}
+            />
           );
-        }
-
-        const uniqueResourcesCount = new Set(
-          activities.map((activity) => activity.resourceId),
-        ).size;
-
-        return (
-          <li key={user._id}>
-            <p>
-              {username} has {activities.length} activities in{' '}
-              {uniqueResourcesCount} resources
-            </p>
-            <ul className="mt-2 flex flex-col gap-2 pl-5">
-              {activities.map((activity) => {
-                const { actionType, topicIds } = activity;
-                const topicCount = topicIds?.length || 0;
-
-                return (
-                  <li key={activity._id} className="text-sm text-gray-600">
-                    {actionType === 'in_progress' && (
-                      <>
-                        Started{' '}
-                        <button className="font-medium underline underline-offset-2 hover:text-black">
-                          {topicCount} topic{topicCount > 1 ? 's' : ''}
-                        </button>{' '}
-                        in {resourceLink(activity)}{' '}
-                        {timeAgo(activity.updatedAt)}
-                      </>
-                    )}
-                    {actionType === 'done' && (
-                      <>
-                        Completed{' '}
-                        <button className="font-medium underline underline-offset-2 hover:text-black">
-                          {topicCount} topic{topicCount > 1 ? 's' : ''}
-                        </button>{' '}
-                        in {resourceLink(activity)}{' '}
-                        {timeAgo(activity.updatedAt)}
-                      </>
-                    )}
-                    {actionType === 'answered' && (
-                      <>
-                        Answered {topicCount} question
-                        {topicCount > 1 ? 's' : ''} in {resourceLink(activity)}{' '}
-                        {timeAgo(activity.updatedAt)}
-                      </>
-                    )}
-                  </li>
-                );
-              })}
-            </ul>
-          </li>
-        );
-      })}
-    </ul>
+        })}
+      </ul>
+    </>
   );
 }
