@@ -112,7 +112,6 @@
   "public/og-images/guides/what-is-internet.png",
   "public/og-images/guides/what-is-sli-slo-sla.png",
   "public/og-images/guides/why-build-it-and-they-will-come-wont-work-anymore.png",
-  "public/og-images/roadmaps/ai-data-scientist.png",
   "public/og-images/roadmaps/android.png",
   "public/og-images/roadmaps/angular.png",
   "public/og-images/roadmaps/aspnet-core.png",
@@ -192,5 +191,9 @@
   "public/roadmaps/technical-writer.png",
   "public/roadmaps/typescript.png",
   "public/roadmaps/ux-design.png",
-  "public/roadmaps/vue.png"
+  "public/roadmaps/vue.png",
+  "public/og-images/roadmaps/ai-data-scientist.png",
+  "public/og-images/roadmaps/linux.png",
+  "public/roadmaps/ai-data-scientist.png",
+  "public/roadmaps/linux.png"
 ]
