@@ -11,7 +11,6 @@
     "format": "prettier --write .",
     "astro": "astro",
     "deploy": "NODE_DEBUG=gh-pages gh-pages -d dist -t",
-    "compress:jsons": "node scripts/compress-jsons.cjs",
     "upgrade": "ncu -u",
     "roadmap-links": "node scripts/roadmap-links.cjs",
     "roadmap-dirs": "node scripts/roadmap-dirs.cjs",
@@ -20,6 +19,7 @@
     "best-practice-dirs": "node scripts/best-practice-dirs.cjs",
     "best-practice-content": "node scripts/best-practice-content.cjs",
     "generate:og": "node ./scripts/generate-og-images.mjs",
+    "compress:images": "tsx ./scripts/compress-images.ts",
     "test:e2e": "playwright test"
   },
   "dependencies": {
@@ -33,7 +33,6 @@
     "@types/react": "^18.2.56",
     "@types/react-dom": "^18.2.19",
     "astro": "^4.4.0",
-    "astro-compress": "^2.2.10",
     "clsx": "^2.1.0",
     "dayjs": "^1.11.10",
     "dom-to-image": "^2.6.0",
@@ -81,6 +80,7 @@
     "openai": "^4.28.0",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0",
-    "prettier-plugin-tailwindcss": "^0.5.11"
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tsx": "^4.7.2"
   }
 }
