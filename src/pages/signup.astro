@@ -1,6 +1,7 @@
 ---
 import { AuthenticationForm } from '../components/AuthenticationFlow/AuthenticationForm';
 import AccountLayout from '../layouts/AccountLayout.astro';
+import {AccountTerms} from "../components/AccountTerms";
 ---
 
 <AccountLayout
@@ -27,12 +28,14 @@ import AccountLayout from '../layouts/AccountLayout.astro';
 
       <AuthenticationForm type='signup' client:load />
 
-      <div class='mt-6 text-center text-sm text-slate-600'>
+      <div class='mt-3 w-full rounded-md border py-2 text-center text-sm text-slate-600'>
         Already have an account? <a
           href='/login'
           class='font-medium text-blue-700 hover:text-blue-600'>Login</a
         >
       </div>
+
+      <AccountTerms />
     </div>
   </div>
 </AccountLayout>
