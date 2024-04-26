@@ -9,7 +9,7 @@ import { SubmitFeedbackPopup } from './Feedback/SubmitFeedbackPopup';
 import { ChevronDownIcon } from './ReactIcons/ChevronDownIcon.tsx';
 import { GroupIcon } from './ReactIcons/GroupIcon.tsx';
 import { TeamProgressIcon } from './ReactIcons/TeamProgressIcon.tsx';
-import { MapIcon, MessageCircle } from 'lucide-react';
+import { BarChart2, MapIcon, MessageCircle } from 'lucide-react';
 import { CogIcon } from './ReactIcons/CogIcon.tsx';
 
 type TeamSidebarProps = {
@@ -30,6 +30,12 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
       href: `/team/progress?t=${teamId}`,
       id: 'progress',
       icon: TeamProgressIcon,
+    },
+    {
+      title: 'Activity',
+      href: `/team/activity?t=${teamId}`,
+      id: 'activity',
+      icon: BarChart2,
     },
     {
       title: 'Roadmaps',
