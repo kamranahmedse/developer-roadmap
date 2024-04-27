@@ -263,6 +263,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     const { response, error } = await httpPost<{
       roadmapId: string;
+      roadmapSlug: string;
     }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-save-ai-roadmap/${currentRoadmap?.id}`,
       {
@@ -293,7 +294,7 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
 
     setIsLoading(false);
     pageProgressMessage.set('');
-    return response.roadmapId;
+    return response.roadmapSlug;
   };
 
   const downloadGeneratedRoadmapContent = async () => {
@@ -685,9 +686,9 @@ export function GenerateRoadmap(props: GenerateRoadmapProps) {
                   <button
                     className="inline-flex items-center justify-center gap-2 rounded-md bg-gray-200 py-1.5 pl-2.5 pr-3 text-xs font-medium text-black transition-colors duration-300 hover:bg-gray-300 sm:text-sm"
                     onClick={async () => {
-                      const roadmapId = await saveAIRoadmap();
-                      if (roadmapId) {
-                        window.location.href = `/r?id=${roadmapId}`;
+                      const roadmapSlug = await saveAIRoadmap();
+                      if (roadmapSlug) {
+                        window.location.href = `/r/${roadmapSlug}`;
                       }
                     }}
                     disabled={isLoading}
