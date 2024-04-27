@@ -21,8 +21,13 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const [showAll, setShowAll] = useState(false);
 
   const resourceLink = (activity: TeamStreamActivity) => {
-    const { resourceId, resourceTitle, resourceType, isCustomResource } =
-      activity;
+    const {
+      resourceId,
+      resourceTitle,
+      resourceType,
+      isCustomResource,
+      resourceSlug,
+    } = activity;
 
     const resourceUrl =
       resourceType === 'question'
@@ -30,7 +35,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         : resourceType === 'best-practice'
           ? `/best-practices/${resourceId}`
           : isCustomResource && resourceType === 'roadmap'
-            ? `/r/${resourceId}`
+            ? `/r/${resourceSlug}`
             : `/${resourceId}`;
 
     return (

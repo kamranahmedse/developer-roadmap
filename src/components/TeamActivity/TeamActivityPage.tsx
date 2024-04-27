@@ -5,9 +5,10 @@ import { httpGet } from '../../lib/http';
 import type { ResourceType } from '../../lib/resource-progress';
 import type { AllowedActivityActionType } from '../Activity/ActivityStream';
 import { pageProgressMessage } from '../../stores/page';
-import { getRelativeTimeString } from '../../lib/date';
 import { TeamActivityItem } from './TeamActivityItem';
 import { TeamActivityTopicsModal } from './TeamActivityTopicsModal';
+import { TeamEmptyStream } from './TeamEmptyStream';
+import { Pagination } from '../Pagination/Pagination';
 
 export type TeamStreamActivity = {
   _id?: string;
@@ -32,13 +33,19 @@ export interface TeamActivityStreamDocument {
 }
 
 type GetTeamActivityResponse = {
-  users: {
-    _id: string;
-    name: string;
-    avatar?: string;
-    username?: string;
-  }[];
-  activities: TeamActivityStreamDocument[];
+  data: {
+    users: {
+      _id: string;
+      name: string;
+      avatar?: string;
+      username?: string;
+    }[];
+    activities: TeamActivityStreamDocument[];
+  };
+  totalCount: number;
+  totalPages: number;
+  currPage: number;
+  perPage: number;
 };
 
 export function TeamActivityPage() {
@@ -51,14 +58,24 @@ export function TeamActivityPage() {
     useState<TeamStreamActivity | null>(null);
   const [teamActivities, setTeamActivities] = useState<GetTeamActivityResponse>(
     {
-      users: [],
-      activities: [],
+      data: {
+        users: [],
+        activities: [],
+      },
+      totalCount: 0,
+      totalPages: 0,
+      currPage: 1,
+      perPage: 21,
     },
   );
+  const [currPage, setCurrPage] = useState(1);
 
-  const getTeamProgress = async () => {
+  const getTeamProgress = async (currPage: number = 1) => {
     const { response, error } = await httpGet<GetTeamActivityResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-activity/${teamId}`,
+      {
+        currPage,
+      },
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to get team activity');
@@ -66,6 +83,7 @@ export function TeamActivityPage() {
     }
 
     setTeamActivities(response);
+    setCurrPage(response.currPage);
   };
 
   useEffect(() => {
@@ -79,7 +97,7 @@ export function TeamActivityPage() {
     });
   }, [teamId]);
 
-  const { users, activities } = teamActivities;
+  const { users, activities } = teamActivities?.data;
   const usersWithActivities = useMemo(
     () =>
       users
@@ -127,21 +145,40 @@ export function TeamActivityPage() {
         />
       )}
 
-      <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
-        Activities
-      </h3>
+      {usersWithActivities.length > 0 ? (
+        <>
+          <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+            Activities
+          </h3>
+          <ul className="mb-4 mt-2 flex flex-col gap-3">
+            {usersWithActivities.map((user) => {
+              return (
+                <TeamActivityItem
+                  key={user._id}
+                  user={user}
+                  onTopicClick={setSelectedActivity}
+                />
+              );
+            })}
+          </ul>
 
-      <ul className="mt-2 flex flex-col gap-3">
-        {usersWithActivities.map((user) => {
-          return (
-            <TeamActivityItem
-              key={user._id}
-              user={user}
-              onTopicClick={setSelectedActivity}
-            />
-          );
-        })}
-      </ul>
+          <Pagination
+            currPage={currPage}
+            totalPages={teamActivities.totalPages}
+            totalCount={teamActivities.totalCount}
+            perPage={teamActivities.perPage}
+            onPageChange={(page) => {
+              setCurrPage(page);
+              pageProgressMessage.set('Loading...');
+              getTeamProgress(page).finally(() => {
+                pageProgressMessage.set('');
+              });
+            }}
+          />
+        </>
+      ) : (
+        <TeamEmptyStream teamId={teamId} />
+      )}
     </>
   );
 }
