@@ -3,14 +3,13 @@ import { useEffect, useMemo, useRef, useState } from 'react';
 import { useKeydown } from '../../hooks/use-keydown';
 import { useOutsideClick } from '../../hooks/use-outside-click';
 import { markdownToHtml } from '../../lib/markdown';
-import {Ban, Cog, Contact, FileText, User, UserRound, X} from 'lucide-react';
+import { Ban, Cog, Contact, FileText, User, UserRound, X } from 'lucide-react';
 import { Spinner } from '../ReactIcons/Spinner';
 import type { RoadmapNodeDetails } from './GenerateRoadmap';
 import { getOpenAIKey, isLoggedIn, removeAuthToken } from '../../lib/jwt';
 import { readAIRoadmapContentStream } from '../../helper/read-stream';
 import { cn } from '../../lib/classname';
 import { showLoginPopup } from '../../lib/popup';
-import { OpenAISettings } from './OpenAISettings.tsx';
 
 type RoadmapTopicDetailProps = RoadmapNodeDetails & {
   onClose?: () => void;
@@ -179,19 +178,19 @@ export function RoadmapTopicDetail(props: RoadmapTopicDetailProps) {
         )}
 
         {!isLoggedIn() && (
-                <div className="flex h-full flex-col items-center justify-center">
-                    <Contact className="h-14 w-14 text-gray-200 mb-3.5" />
-                      <h2 className='font-medium text-xl'>You must be logged in</h2>
-                    <p className="text-base text-gray-400">
-                      Sign up or login to generate topic content.
-                    </p>
-                    <button
-                    className="mt-3.5 text-base font-medium text-white bg-black px-3 py-2 rounded-md w-full max-w-[300px]"
-                    onClick={showLoginPopup}
-                    >
-                    Sign up / Login
-                    </button>
-                </div>
+          <div className="flex h-full flex-col items-center justify-center">
+            <Contact className="mb-3.5 h-14 w-14 text-gray-200" />
+            <h2 className="text-xl font-medium">You must be logged in</h2>
+            <p className="text-base text-gray-400">
+              Sign up or login to generate topic content.
+            </p>
+            <button
+              className="mt-3.5 w-full max-w-[300px] rounded-md bg-black px-3 py-2 text-base font-medium text-white"
+              onClick={showLoginPopup}
+            >
+              Sign up / Login
+            </button>
+          </div>
         )}
 
         {!isLoading && !error && (

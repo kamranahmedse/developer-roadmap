@@ -50,6 +50,7 @@ export type GetAIRoadmapLimitResponse = {
 };
 
 const ROADMAP_ID_REGEX = new RegExp('@ROADMAPID:(\\w+)@');
+const ROADMAP_SLUG_REGEX = new RegExp(/@ROADMAPSLUG:([\w-]+)@/);
 
 export type RoadmapNodeDetails = {
   nodeId: string;
@@ -87,22 +88,39 @@ type GetAIRoadmapResponse = {
   data: string;
 };
 
-export function GenerateRoadmap() {
+type GenerateRoadmapProps = {
+  roadmapId?: string;
+  slug?: string;
+  isAuthenticatedUser?: boolean;
+};
+
+export function GenerateRoadmap(props: GenerateRoadmapProps) {
+  const {
+    roadmapId: defaultRoadmapId,
+    slug: defaultRoadmapSlug,
+    isAuthenticatedUser = isLoggedIn(),
+  } = props;
+
   const roadmapContainerRef = useRef<HTMLDivElement>(null);
 
-  const { id: roadmapId, rc: referralCode } = getUrlParams() as {
-    id: string;
+  const { rc: referralCode } = getUrlParams() as {
     rc?: string;
   };
   const toast = useToast();
 
-  const [hasSubmitted, setHasSubmitted] = useState<boolean>(false);
+  const [roadmapId, setRoadmapId] = useState<string | undefined>(
+    defaultRoadmapId,
+  );
+  const [roadmapSlug, setRoadmapSlug] = useState<string | undefined>(
+    defaultRoadmapSlug,
+  );
+  const [hasSubmitted, setHasSubmitted] = useState<boolean>(Boolean(roadmapId));
   const [isLoading, setIsLoading] = useState(false);
   const [isLoadingResults, setIsLoadingResults] = useState(false);
   const [roadmapTerm, setRoadmapTerm] = useState('');
-  const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [currentRoadmap, setCurrentRoadmap] =
     useState<GetAIRoadmapResponse | null>(null);
+  const [generatedRoadmapContent, setGeneratedRoadmapContent] = useState('');
   const [selectedNode, setSelectedNode] = useState<RoadmapNodeDetails | null>(
     null,
   );
@@ -117,7 +135,6 @@ export function GenerateRoadmap() {
     getOpenAIKey(),
   );
   const isKeyOnly = IS_KEY_ONLY_ROADMAP_GENERATION;
-  const isAuthenticatedUser = isLoggedIn();
 
   const renderRoadmap = async (roadmap: string) => {
     const { nodes, edges } = generateAIRoadmapFromText(roadmap);
@@ -134,6 +151,7 @@ export function GenerateRoadmap() {
     deleteUrlParam('id');
     setCurrentRoadmap(null);
 
+    const origin = window.location.origin;
     const response = await fetch(
       `${import.meta.env.PUBLIC_API_URL}/v1-generate-ai-roadmap`,
       {
@@ -169,13 +187,31 @@ export function GenerateRoadmap() {
 
     await readAIRoadmapStream(reader, {
       onStream: async (result) => {
-        if (result.includes('@ROADMAPID')) {
+        if (result.includes('@ROADMAPID') || result.includes('@ROADMAPSLUG')) {
           // @ROADMAPID: is a special token that we use to identify the roadmap
           // @ROADMAPID:1234@ is the format, we will remove the token and the id
           // and replace it with a empty string
           const roadmapId = result.match(ROADMAP_ID_REGEX)?.[1] || '';
-          setUrlParams({ id: roadmapId });
-          result = result.replace(ROADMAP_ID_REGEX, '');
+          const roadmapSlug = result.match(ROADMAP_SLUG_REGEX)?.[1] || '';
+
+          if (roadmapSlug) {
+            window.history.pushState(
+              {
+                roadmapId,
+                roadmapSlug,
+              },
+              '',
+              `${origin}/ai/${roadmapSlug}`,
+            );
+          }
+
+          result = result
+            .replace(ROADMAP_ID_REGEX, '')
+            .replace(ROADMAP_SLUG_REGEX, '');
+
+          setRoadmapId(roadmapId);
+          setRoadmapSlug(roadmapSlug);
+
           const roadmapTitle =
             result.trim().split('\n')[0]?.replace('#', '')?.trim() || term;
           setRoadmapTerm(roadmapTitle);
@@ -190,7 +226,10 @@ export function GenerateRoadmap() {
         await renderRoadmap(result);
       },
       onStreamEnd: async (result) => {
-        result = result.replace(ROADMAP_ID_REGEX, '');
+        result = result
+          .replace(ROADMAP_ID_REGEX, '')
+          .replace(ROADMAP_SLUG_REGEX, '');
+
         setGeneratedRoadmapContent(result);
         loadAIRoadmapLimit().finally(() => {});
       },
@@ -322,7 +361,7 @@ export function GenerateRoadmap() {
       data,
     });
 
-    setRoadmapTerm(term);
+    setRoadmapTerm(title || term);
     setGeneratedRoadmapContent(data);
     visitAIRoadmap(roadmapId);
   };
@@ -385,11 +424,34 @@ export function GenerateRoadmap() {
       return;
     }
 
-    setHasSubmitted(true);
     loadAIRoadmap(roadmapId).finally(() => {
       pageProgressMessage.set('');
     });
   }, [roadmapId, currentRoadmap]);
+
+  useEffect(() => {
+    const handlePopState = (e: PopStateEvent) => {
+      const { roadmapId, roadmapSlug } = e.state || {};
+      if (!roadmapId || !roadmapSlug) {
+        window.location.reload();
+        return;
+      }
+
+      setIsLoading(true);
+      setHasSubmitted(true);
+      setRoadmapId(roadmapId);
+      setRoadmapSlug(roadmapSlug);
+      loadAIRoadmap(roadmapId).finally(() => {
+        setIsLoading(false);
+        pageProgressMessage.set('');
+      });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => {
+      window.removeEventListener('popstate', handlePopState);
+    };
+  }, []);
 
   if (!hasSubmitted) {
     return (
@@ -401,7 +463,7 @@ export function GenerateRoadmap() {
         limitUsed={roadmapLimitUsed}
         loadAIRoadmapLimit={loadAIRoadmapLimit}
         isKeyOnly={isKeyOnly}
-        onLoadTerm={(term: string) => {
+        onLoadTerm={(term) => {
           setRoadmapTerm(term);
           loadTermRoadmap(term).finally(() => {});
         }}
@@ -409,7 +471,7 @@ export function GenerateRoadmap() {
     );
   }
 
-  const pageUrl = `https://roadmap.sh/ai?id=${roadmapId}`;
+  const pageUrl = `https://roadmap.sh/ai/${roadmapSlug}`;
   const canGenerateMore = roadmapLimitUsed < roadmapLimit;
 
   return (
@@ -524,7 +586,7 @@ export function GenerateRoadmap() {
               )}
               {!isAuthenticatedUser && (
                 <button
-                  className="rounded-xl border border-current px-2.5 py-0.5 text-left text-sm font-medium text-blue-500 transition-colors hover:bg-blue-500 hover:text-white sm:text-center"
+                  className="mt-2 rounded-xl border border-current px-2.5 py-0.5 text-left text-sm font-medium text-blue-500 transition-colors hover:bg-blue-500 hover:text-white sm:text-center"
                   onClick={showLoginPopup}
                 >
                   Login to generate your own roadmaps
