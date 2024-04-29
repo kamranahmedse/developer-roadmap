@@ -364,8 +364,17 @@ export function TopicDetail(props: TopicDetailProps) {
                 </a>
 
                 <a
-                  href={'https://thenewstack.io'}
+                  href={
+                    'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic'
+                  }
                   className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
+                  onClick={() => {
+                    window.fireEvent({
+                      category: 'PartnerClick',
+                      action: 'TNS Redirect',
+                      label: 'Roadmap Topic / TNS Link',
+                    });
+                  }}
                 >
                   <span className="badge mr-1.5">Partner</span>
                   Visit{' '}
