@@ -6,40 +6,40 @@ settings:
 
 dependencies:
   '@astrojs/node':
-    specifier: ^8.2.1
+    specifier: ^8.2.5
     version: 8.2.5(astro@4.7.0)
   '@astrojs/react':
-    specifier: ^3.0.10
+    specifier: ^3.3.1
     version: 3.3.1(@types/react-dom@18.3.0)(@types/react@18.3.1)(react-dom@18.3.1)(react@18.3.1)(vite@5.2.10)
   '@astrojs/sitemap':
-    specifier: ^3.0.5
+    specifier: ^3.1.4
     version: 3.1.4
   '@astrojs/tailwind':
     specifier: ^5.1.0
     version: 5.1.0(astro@4.7.0)(tailwindcss@3.4.3)
   '@fingerprintjs/fingerprintjs':
-    specifier: ^4.2.2
+    specifier: ^4.3.0
     version: 4.3.0
   '@nanostores/react':
-    specifier: ^0.7.1
-    version: 0.7.2(nanostores@0.9.5)(react@18.3.1)
+    specifier: ^0.7.2
+    version: 0.7.2(nanostores@0.10.3)(react@18.3.1)
   '@resvg/resvg-js':
-    specifier: ^2.6.0
+    specifier: ^2.6.2
     version: 2.6.2
   '@types/react':
-    specifier: ^18.2.56
+    specifier: ^18.3.1
     version: 18.3.1
   '@types/react-dom':
-    specifier: ^18.2.19
+    specifier: ^18.3.0
     version: 18.3.0
   astro:
-    specifier: ^4.4.0
+    specifier: ^4.7.0
     version: 4.7.0
   clsx:
-    specifier: ^2.1.0
+    specifier: ^2.1.1
     version: 2.1.1
   dayjs:
-    specifier: ^1.11.10
+    specifier: ^1.11.11
     version: 1.11.11
   dom-to-image:
     specifier: ^2.6.0
@@ -57,31 +57,31 @@ dependencies:
     specifier: ^1.1.1
     version: 1.1.1
   jose:
-    specifier: ^5.2.2
+    specifier: ^5.2.4
     version: 5.2.4
   js-cookie:
     specifier: ^3.0.5
     version: 3.0.5
   lucide-react:
-    specifier: ^0.358.0
-    version: 0.358.0(react@18.3.1)
+    specifier: ^0.376.0
+    version: 0.376.0(react@18.3.1)
   nanoid:
-    specifier: ^5.0.5
+    specifier: ^5.0.7
     version: 5.0.7
   nanostores:
-    specifier: ^0.9.5
-    version: 0.9.5
+    specifier: ^0.10.3
+    version: 0.10.3
   node-html-parser:
-    specifier: ^6.1.12
+    specifier: ^6.1.13
     version: 6.1.13
   npm-check-updates:
-    specifier: ^16.14.15
+    specifier: ^16.14.20
     version: 16.14.20
   prismjs:
     specifier: ^1.29.0
     version: 1.29.0
   react:
-    specifier: ^18.2.0
+    specifier: ^18.3.1
     version: 18.3.1
   react-calendar-heatmap:
     specifier: ^1.9.0
@@ -90,13 +90,13 @@ dependencies:
     specifier: ^6.1.0
     version: 6.1.0(react@18.3.1)
   react-dom:
-    specifier: ^18.2.0
+    specifier: ^18.3.1
     version: 18.3.1(react@18.3.1)
   react-tooltip:
-    specifier: ^5.26.3
+    specifier: ^5.26.4
     version: 5.26.4(react-dom@18.3.1)(react@18.3.1)
   reactflow:
-    specifier: ^11.10.4
+    specifier: ^11.11.2
     version: 11.11.2(@types/react@18.3.1)(react-dom@18.3.1)(react@18.3.1)
   rehype-external-links:
     specifier: ^3.0.0
@@ -114,30 +114,30 @@ dependencies:
     specifier: ^0.3.2
     version: 0.3.2
   sharp:
-    specifier: ^0.33.2
+    specifier: ^0.33.3
     version: 0.33.3
   slugify:
     specifier: ^1.6.6
     version: 1.6.6
   tailwind-merge:
-    specifier: ^2.2.1
+    specifier: ^2.3.0
     version: 2.3.0
   tailwindcss:
-    specifier: ^3.4.1
+    specifier: ^3.4.3
     version: 3.4.3
   unified:
     specifier: ^11.0.4
     version: 11.0.4
   zustand:
-    specifier: ^4.5.1
+    specifier: ^4.5.2
     version: 4.5.2(@types/react@18.3.1)(react@18.3.1)
 
 devDependencies:
   '@playwright/test':
-    specifier: ^1.41.2
+    specifier: ^1.43.1
     version: 1.43.1
   '@tailwindcss/typography':
-    specifier: ^0.5.10
+    specifier: ^0.5.13
     version: 0.5.13(tailwindcss@3.4.3)
   '@types/dom-to-image':
     specifier: ^2.6.7
@@ -161,10 +161,10 @@ devDependencies:
     specifier: ^4.1.0
     version: 4.1.0
   markdown-it:
-    specifier: ^14.0.0
+    specifier: ^14.1.0
     version: 14.1.0
   openai:
-    specifier: ^4.28.0
+    specifier: ^4.38.5
     version: 4.38.5
   prettier:
     specifier: ^3.2.5
@@ -173,10 +173,10 @@ devDependencies:
     specifier: ^0.13.0
     version: 0.13.0
   prettier-plugin-tailwindcss:
-    specifier: ^0.5.11
+    specifier: ^0.5.14
     version: 0.5.14(prettier-plugin-astro@0.13.0)(prettier@3.2.5)
   tsx:
-    specifier: ^4.7.2
+    specifier: ^4.7.3
     version: 4.7.3
 
 packages:
@@ -1242,14 +1242,14 @@ packages:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  /@nanostores/react@0.7.2(nanostores@0.9.5)(react@18.3.1):
+  /@nanostores/react@0.7.2(nanostores@0.10.3)(react@18.3.1):
     resolution: {integrity: sha512-e3OhHJFv3NMSFYDgREdlAQqkyBTHJM91s31kOZ4OvZwJKdFk5BLk0MLbh51EOGUz9QGX2aCHfy1RvweSi7fgwA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     peerDependencies:
       nanostores: ^0.9.0 || ^0.10.0
       react: '>=18.0.0'
     dependencies:
-      nanostores: 0.9.5
+      nanostores: 0.10.3
       react: 18.3.1
     dev: false
 
@@ -2106,7 +2106,6 @@ packages:
     resolution: {integrity: sha512-ArgCD39YpyyrtFKIqMDvjz79jto5fcI/SVUs2HwB+f0dAzq68yqOdyaSivLiLugSziTpNXLQrVb7RZFmdZzbhA==}
     dependencies:
       undici-types: 5.26.5
-    dev: true
 
   /@types/prismjs@1.26.3:
     resolution: {integrity: sha512-A0D0aTXvjlqJ5ZILMz3rNfDBOx9hHxLZYv2by47Sm/pqW35zzjusrZTryatjN/Rf8Us2gZrJD+KeHbUSTux1Cw==}
@@ -2136,7 +2135,7 @@ packages:
   /@types/sax@1.2.7:
     resolution: {integrity: sha512-rO73L89PJxeYM3s3pPPjiPgVVcymqU490g0YO5n5By0k2Erzj6tay/4lr1CHAAU4JyOWd1rpQ8bCf6cZfHU96A==}
     dependencies:
-      '@types/node': 17.0.45
+      '@types/node': 18.19.31
     dev: false
 
   /@types/semver-utils@1.1.3:
@@ -4283,8 +4282,8 @@ packages:
     engines: {node: '>=12'}
     dev: false
 
-  /lucide-react@0.358.0(react@18.3.1):
-    resolution: {integrity: sha512-rBSptRjZTMBm24zsFhR6pK/NgbT18JegZGKcH4+1H3+UigMSRpeoWLtR/fAwMYwYnlJOZB+y8WpeHne9D6X6Kg==}
+  /lucide-react@0.376.0(react@18.3.1):
+    resolution: {integrity: sha512-g91IX3ERD6yUR1TL2dsL4BkcGygpZz/EsqjAeL/kcRQV0EApIOr/9eBfKhYOVyQIcGGuotFGjF3xKLHMEz+b7g==}
     peerDependencies:
       react: ^16.5.1 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -4963,9 +4962,9 @@ packages:
     hasBin: true
     dev: false
 
-  /nanostores@0.9.5:
-    resolution: {integrity: sha512-Z+p+g8E7yzaWwOe5gEUB2Ox0rCEeXWYIZWmYvw/ajNYX8DlXdMvMDj8DWfM/subqPAcsf8l8Td4iAwO1DeIIRQ==}
-    engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
+  /nanostores@0.10.3:
+    resolution: {integrity: sha512-Nii8O1XqmawqSCf9o2aWqVxhKRN01+iue9/VEd1TiJCr9VT5XxgPFbF1Edl1XN6pwJcZRsl8Ki+z01yb/T/C2g==}
+    engines: {node: ^18.0.0 || >=20.0.0}
     dev: false
 
   /negotiator@0.6.3:
@@ -6712,7 +6711,6 @@ packages:
 
   /undici-types@5.26.5:
     resolution: {integrity: sha512-JlCMO+ehdEIKqlFxk6IfVoAUVmgz7cU7zD/h9XZ0qzeosSHmUJVOzSQvvYSYWXkFXC+IfLKSIffhv0sVZup6pA==}
-    dev: true
 
   /unherit@3.0.1:
     resolution: {integrity: sha512-akOOQ/Yln8a2sgcLj4U0Jmx0R5jpIg2IUyRrWOzmEbjBtGzBdHtSeFKgoEcoH4KYIG/Pb8GQ/BwtYm0GCq1Sqg==}
