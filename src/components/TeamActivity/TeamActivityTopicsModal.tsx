@@ -99,7 +99,7 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
             />
           </a>
         </span>
-        <ul className="flex flex-col gap-1">
+        <ul className="flex max-h-[50vh] flex-col gap-1 overflow-y-auto max-md:max-h-full">
           {topicIds.map((topicId) => {
             const topicTitle = topicTitles[topicId] || 'Unknown Topic';
 
