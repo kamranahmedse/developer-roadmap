@@ -24,7 +24,7 @@ if (error || !userDetails) {
 }
 
 const origin = Astro.url.origin;
-const ogImage = `${origin}/og/user-${username}`;
+const ogImage = `${origin}/og/user/${username}`;
 ---
 
 <BaseLayout
