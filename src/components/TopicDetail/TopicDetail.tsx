@@ -29,6 +29,7 @@ import { Spinner } from '../ReactIcons/Spinner';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import { GoogleIcon } from '../ReactIcons/GoogleIcon.tsx';
 import { YouTubeIcon } from '../ReactIcons/YouTubeIcon.tsx';
+import { resourceTitleFromId } from '../../lib/roadmap.ts';
 
 type TopicDetailProps = {
   resourceTitle?: string;
@@ -207,7 +208,9 @@ export function TopicDetail(props: TopicDetailProps) {
   }
 
   const hasContent = topicHtml?.length > 0 || links?.length > 0 || topicTitle;
-  const resourceTitleForSearch = resourceTitle?.toLowerCase()?.replace(/\s+?roadmap/ig, '');
+  const resourceTitleForSearch = resourceTitle
+    ?.toLowerCase()
+    ?.replace(/\s+?roadmap/gi, '');
   const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
   const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitleForSearch}`;
 
@@ -216,7 +219,7 @@ export function TopicDetail(props: TopicDetailProps) {
       <div
         ref={topicRef}
         tabIndex={0}
-        className="fixed right-0 top-0 z-40 h-screen w-full overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
+        className="fixed right-0 top-0 z-40 flex h-screen w-full flex-col overflow-y-auto bg-white p-4 focus:outline-0 sm:max-w-[600px] sm:p-6"
       >
         {isLoading && (
           <div className="flex w-full justify-center">
@@ -230,140 +233,171 @@ export function TopicDetail(props: TopicDetailProps) {
 
         {!isContributing && !isLoading && !error && (
           <>
-            {/* Actions for the topic */}
-            <div className="mb-2">
-              {!isEmbed && (
-                <TopicProgressButton
-                  topicId={topicId}
-                  resourceId={resourceId}
-                  resourceType={resourceType}
-                  onClose={() => {
+            <div className="flex-1">
+              {/* Actions for the topic */}
+              <div className="mb-2">
+                {!isEmbed && (
+                  <TopicProgressButton
+                    topicId={topicId}
+                    resourceId={resourceId}
+                    resourceType={resourceType}
+                    onClose={() => {
+                      setIsActive(false);
+                    }}
+                  />
+                )}
+
+                <button
+                  type="button"
+                  id="close-topic"
+                  className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+                  onClick={() => {
                     setIsActive(false);
                   }}
-                />
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              </div>
+
+              {/* Topic Content */}
+              {hasContent ? (
+                <div className="prose prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h1:text-balance prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
+                  {topicTitle && <h1>{topicTitle}</h1>}
+                  <div
+                    id="topic-content"
+                    dangerouslySetInnerHTML={{ __html: topicHtml }}
+                  />
+                </div>
+              ) : (
+                <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
+                  <FileText className="h-16 w-16 text-gray-300" />
+                  <p className="mt-2 text-lg font-medium text-gray-500">
+                    Empty Content
+                  </p>
+                </div>
               )}
 
-              <button
-                type="button"
-                id="close-topic"
-                className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
-                onClick={() => {
-                  setIsActive(false);
-                }}
-              >
-                <X className="h-5 w-5" />
-              </button>
-            </div>
-
-            {/* Topic Content */}
-            {hasContent ? (
-              <div className="prose prose-h1:text-balance prose-quoteless prose-h1:mb-2.5 prose-h1:mt-7 prose-h2:mb-3 prose-h2:mt-0 prose-h3:mb-[5px] prose-h3:mt-[10px] prose-p:mb-2 prose-p:mt-0 prose-blockquote:font-normal prose-blockquote:not-italic prose-blockquote:text-gray-700 prose-li:m-0 prose-li:mb-0.5">
-                {topicTitle && <h1>{topicTitle}</h1>}
-                <div
-                  id="topic-content"
-                  dangerouslySetInnerHTML={{ __html: topicHtml }}
-                />
-              </div>
-            ) : (
-              <div className="flex h-[calc(100%-38px)] flex-col items-center justify-center">
-                <FileText className="h-16 w-16 text-gray-300" />
-                <p className="mt-2 text-lg font-medium text-gray-500">
-                  Empty Content
-                </p>
-              </div>
-            )}
-
-            {links.length > 0 && (
-              <ul className="mt-6 space-y-1">
-                {links.map((link) => {
-                  return (
-                    <li>
-                      <a
-                        href={link.url}
-                        target="_blank"
-                        className="font-medium underline"
-                      >
-                        <span
-                          className={cn(
-                            'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
-                            linkTypes[link.type],
-                          )}
+              {links.length > 0 && (
+                <ul className="mt-6 space-y-1">
+                  {links.map((link) => {
+                    return (
+                      <li>
+                        <a
+                          href={link.url}
+                          target="_blank"
+                          className="font-medium underline"
                         >
-                          {link.type.charAt(0).toUpperCase() +
-                            link.type.slice(1)}
-                        </span>
-                        {link.title}
-                      </a>
-                    </li>
-                  );
-                })}
-              </ul>
-            )}
+                          <span
+                            className={cn(
+                              'mr-2 inline-block rounded px-1.5 py-1 text-xs uppercase no-underline',
+                              linkTypes[link.type],
+                            )}
+                          >
+                            {link.type.charAt(0).toUpperCase() +
+                              link.type.slice(1)}
+                          </span>
+                          {link.title}
+                        </a>
+                      </li>
+                    );
+                  })}
+                </ul>
+              )}
 
-            {/* Contribution */}
-            {canSubmitContribution && !hasEnoughLinks && contributionUrl && (
-                <div className="mt-8 mb-12 flex-1 border-t text-gray-400 text-sm">
-                  <div className='mt-3 mb-4'>
-                    <p className=''>
-                      Can't find what you're looking for? Try these pre-filled search queries:
+              {/* Contribution */}
+              {canSubmitContribution && !hasEnoughLinks && contributionUrl && (
+                <div className="mb-12 mt-3 border-t text-sm text-gray-400">
+                  <div className="mb-4 mt-3">
+                    <p className="">
+                      Can't find what you're looking for? Try these pre-filled
+                      search queries:
                     </p>
                     <div className="mt-3 flex gap-2  text-gray-700">
                       <a
-                          href={googleSearchUrl}
-                          target="_blank"
-                          className="text-xs flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 hover:border-gray-700 hover:bg-gray-100"
+                        href={googleSearchUrl}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
                       >
-                        <GoogleIcon className={'h-4 w-4'}/>
+                        <GoogleIcon className={'h-4 w-4'} />
                         Google
                       </a>
                       <a
-                          href={youtubeSearchUrl}
-                          target="_blank"
-                          className="text-xs flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 hover:border-gray-700 hover:bg-gray-100"
+                        href={youtubeSearchUrl}
+                        target="_blank"
+                        className="flex items-center gap-2 rounded-md border border-gray-300 px-3 py-1.5 pl-2 text-xs hover:border-gray-700 hover:bg-gray-100"
                       >
-                        <YouTubeIcon className={'h-4 w-4 text-red-500'}/>
+                        <YouTubeIcon className={'h-4 w-4 text-red-500'} />
                         YouTube
                       </a>
                     </div>
                   </div>
 
                   <p className="mb-2 mt-2 leading-relaxed">
-                    Help us improve this introduction and submit a link to a good
-                    article, podcast, video, or any other self-vetted resource that helped you
-                    understand this topic better.
+                    Help us improve this introduction and submit a link to a
+                    good article, podcast, video, or any other self-vetted
+                    resource that helped you understand this topic better.
                   </p>
                   <a
-                      href={contributionUrl}
-                      target={'_blank'}
-                      className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
+                    href={contributionUrl}
+                    target={'_blank'}
+                    className="flex w-full items-center justify-center rounded-md bg-gray-800 p-2 text-sm text-white transition-colors hover:bg-black hover:text-white disabled:bg-green-200 disabled:text-black"
                   >
-                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white"/>
+                    <GitHubIcon className="mr-2 inline-block h-4 w-4 text-white" />
                     Edit this Content
                   </a>
                 </div>
+              )}
+            </div>
+            {resourceId === 'devops' && (
+              <div className="mt-4">
+                <a
+                  href={'https://thenewstack.io'}
+                  target="_blank"
+                  className="hidden rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:block"
+                >
+                  <span className="badge mr-1.5">Partner</span>
+                  Get the latest {resourceTitleFromId(resourceId)} news from our
+                  sister site{' '}
+                  <span className="font-medium underline underline-offset-1">
+                    TheNewStack.io
+                  </span>
+                </a>
+
+                <a
+                  href={'https://thenewstack.io'}
+                  className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
+                >
+                  <span className="badge mr-1.5">Partner</span>
+                  Visit{' '}
+                  <span className="font-medium underline underline-offset-1">
+                    TheNewStack.io
+                  </span>{' '}
+                  for {resourceTitleFromId(resourceId)} news
+                </a>
+              </div>
             )}
           </>
         )}
 
         {/* Error */}
         {!isContributing && !isLoading && error && (
-            <>
-              <button
-                  type="button"
-                  id="close-topic"
-                  className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
-                  onClick={() => {
-                    setIsActive(false);
-                    setIsContributing(false);
-                  }}
-              >
-                <X className="h-5 w-5"/>
-              </button>
-              <div className="flex h-full flex-col items-center justify-center">
-                <Ban className="h-16 w-16 text-red-500"/>
-                <p className="mt-2 text-lg font-medium text-red-500">{error}</p>
-              </div>
-            </>
+          <>
+            <button
+              type="button"
+              id="close-topic"
+              className="absolute right-2.5 top-2.5 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm text-gray-400 hover:bg-gray-200 hover:text-gray-900"
+              onClick={() => {
+                setIsActive(false);
+                setIsContributing(false);
+              }}
+            >
+              <X className="h-5 w-5" />
+            </button>
+            <div className="flex h-full flex-col items-center justify-center">
+              <Ban className="h-16 w-16 text-red-500" />
+              <p className="mt-2 text-lg font-medium text-red-500">{error}</p>
+            </div>
+          </>
         )}
       </div>
       <div className="fixed inset-0 z-30 bg-gray-900 bg-opacity-50 dark:bg-opacity-80"></div>
