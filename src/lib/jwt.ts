@@ -109,3 +109,19 @@ export function removeAIReferralCode() {
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
 }
+
+export function setViewSponsorCookie(sponsorId: string) {
+  const key = `vsc-${sponsorId}`;
+  const alreadyExist = Cookies.get(key);
+  if (alreadyExist) {
+    return;
+  }
+
+  Cookies.set(key, '1', {
+    path: '/',
+    expires: 1,
+    sameSite: 'lax',
+    secure: true,
+    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
+  });
+}

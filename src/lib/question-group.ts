@@ -118,6 +118,12 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
 }
 
+export async function getQuestionGroupById(id: string) {
+  const questionGroups = await getAllQuestionGroups();
+
+  return questionGroups.find((group) => group.id === id);
+}
+
 export async function getQuestionGroupsByIds(
   ids: string[],
 ): Promise<{ id: string; title: string; description: string }[]> {

@@ -6,3 +6,4 @@ Visit the following resources to learn more:
 
 - [Gorm](https://gorm.io/docs/index.html)
 - [Gorm Package](https://pkg.go.dev/gorm.io/gorm)
+- [GORM And MYSQL](https://youtu.be/1E_YycpCsXw?si=_XeaElLMMChaEZw3)

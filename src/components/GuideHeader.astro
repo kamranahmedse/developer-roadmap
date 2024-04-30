@@ -1,5 +1,6 @@
 ---
 import type { GuideFileType } from '../lib/guide';
+import { replaceVariables } from '../lib/markdown';
 
 export interface Props {
   guide: GuideFileType;
@@ -42,11 +43,11 @@ return undefined;
         target='_blank'>Improve this Guide</a
       >
     </p>
-    <h1 class='my-0 text-2xl font-bold sm:my-3.5 sm:text-5xl text-balance'>
-      {frontmatter.title}
+    <h1 class='my-0 text-balance text-2xl font-bold sm:my-3.5 sm:text-5xl'>
+      {replaceVariables(frontmatter.title)}
     </h1>
     <p class='hidden text-xl text-gray-400 sm:block'>
-      {frontmatter.description}
+      {replaceVariables(frontmatter.description)}
     </p>
   </div>
 </div>

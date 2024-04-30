@@ -22,6 +22,7 @@ export type UserProgress = {
   total: number;
   updatedAt: string;
   isCustomResource?: boolean;
+  roadmapSlug?: string;
 };
 
 export type TeamMember = {
@@ -39,6 +40,7 @@ export type GroupByRoadmap = {
   resourceTitle: string;
   resourceType: string;
   isCustomResource?: boolean;
+  roadmapSlug?: string;
   members: {
     member: TeamMember;
     progress: UserProgress | undefined;
@@ -71,7 +73,7 @@ export function TeamProgressPage() {
 
   async function getTeamProgress() {
     const { response, error } = await httpGet<TeamMember[]>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-progress/${teamId}`,
     );
     if (error || !response) {
       toast.error(error?.message || 'Failed to get team progress');
@@ -87,7 +89,7 @@ export function TeamProgressPage() {
           return 1;
         }
         return 0;
-      })
+      }),
     );
   }
 
@@ -116,7 +118,7 @@ export function TeamProgressPage() {
     const members: GroupByRoadmap['members'] = [];
     for (const member of teamMembers) {
       const progress = member.progress.find(
-        (progress) => progress.resourceId === roadmap
+        (progress) => progress.resourceId === roadmap,
       );
       if (!progress) {
         continue;
@@ -139,6 +141,7 @@ export function TeamProgressPage() {
       resourceId: roadmap,
       resourceTitle: members?.[0].progress?.resourceTitle || '',
       resourceType: 'roadmap',
+      roadmapSlug: members?.[0].progress?.roadmapSlug,
       members,
       isCustomResource,
     });
@@ -174,7 +177,7 @@ export function TeamProgressPage() {
             setShowMemberProgress({
               resourceId: showMemberProgress.resourceId,
               member: teamMembers.find(
-                (member) => member.email === user?.email
+                (member) => member.email === user?.email,
               )!,
               isCustomResource: showMemberProgress.isCustomResource,
             });

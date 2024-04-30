@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import { httpGet } from '../lib/http';
+import { httpGet, httpPatch, httpPost } from '../lib/http';
 import { sponsorHidden } from '../stores/page';
 import { useStore } from '@nanostores/react';
 import { X } from 'lucide-react';
+import { setViewSponsorCookie } from '../lib/jwt';
 
 export type PageSponsorType = {
   company: string;
@@ -15,6 +16,7 @@ export type PageSponsorType = {
 };
 
 type V1GetSponsorResponse = {
+  id?: string;
   href?: string;
   sponsor?: PageSponsorType;
 };
@@ -26,6 +28,8 @@ type PageSponsorProps = {
 export function PageSponsor(props: PageSponsorProps) {
   const { gaPageIdentifier } = props;
   const $isSponsorHidden = useStore(sponsorHidden);
+
+  const [sponsorId, setSponsorId] = useState<string | null>(null);
   const [sponsor, setSponsor] = useState<PageSponsorType>();
 
   const loadSponsor = async () => {
@@ -59,6 +63,7 @@ export function PageSponsor(props: PageSponsorProps) {
     }
 
     setSponsor(response.sponsor);
+    setSponsorId(response?.id || null);
 
     window.fireEvent({
       category: 'SponsorImpression',
@@ -67,6 +72,20 @@ export function PageSponsor(props: PageSponsorProps) {
         response.sponsor.gaLabel ||
         `${gaPageIdentifier} / ${response.sponsor?.company} Link`,
     });
+  };
+
+  const clickSponsor = async (sponsorId: string) => {
+    const { response, error } = await httpPatch<{ status: 'ok' }>(
+      `${import.meta.env.PUBLIC_API_URL}/v1-view-sponsor/${sponsorId}`,
+      {},
+    );
+
+    if (error || !response) {
+      console.error(error);
+      return;
+    }
+
+    setViewSponsorCookie(sponsorId);
   };
 
   useEffect(() => {
@@ -85,12 +104,13 @@ export function PageSponsor(props: PageSponsorProps) {
       target="_blank"
       rel="noopener sponsored nofollow"
       className="fixed bottom-[15px] right-[15px] z-50 flex max-w-[350px] bg-white shadow-lg outline-0 outline-transparent"
-      onClick={() => {
+      onClick={async () => {
         window.fireEvent({
           category: 'SponsorClick',
           action: `${company} Redirect`,
           label: gaLabel || `${gaPageIdentifier} / ${company} Link`,
         });
+        await clickSponsor(sponsorId || '');
       }}
     >
       <span

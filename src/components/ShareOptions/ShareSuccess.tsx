@@ -4,6 +4,7 @@ import { cn } from '../../lib/classname';
 import type { AllowedRoadmapVisibility } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 
 type ShareSuccessProps = {
+  roadmapSlug?: string;
   roadmapId: string;
   onClose: () => void;
   visibility: AllowedRoadmapVisibility;
@@ -13,6 +14,7 @@ type ShareSuccessProps = {
 
 export function ShareSuccess(props: ShareSuccessProps) {
   const {
+    roadmapSlug,
     roadmapId,
     onClose,
     description,
@@ -23,7 +25,9 @@ export function ShareSuccess(props: ShareSuccessProps) {
   const baseUrl = import.meta.env.DEV
     ? 'http://localhost:3000'
     : 'https://roadmap.sh';
-  const shareLink = `${baseUrl}/r?id=${roadmapId}`;
+  const shareLink = roadmapSlug
+    ? `${baseUrl}/r/${roadmapSlug}`
+    : `${baseUrl}/r?id=${roadmapId}`;
 
   const { copyText, isCopied } = useCopyText();
 
@@ -84,13 +88,13 @@ export function ShareSuccess(props: ShareSuccessProps) {
         </p>
         <div className="mt-2">
           <input
-              onClick={(e) => {
-                e.currentTarget.select();
-                copyText(embedHtml);
-              }}
-              readOnly={true}
-              className="w-full resize-none rounded-md border bg-gray-50 p-2 text-sm"
-              value={embedHtml}
+            onClick={(e) => {
+              e.currentTarget.select();
+              copyText(embedHtml);
+            }}
+            readOnly={true}
+            className="w-full resize-none rounded-md border bg-gray-50 p-2 text-sm"
+            value={embedHtml}
           />
         </div>
       </div>
@@ -127,7 +131,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
         <button
           className={cn(
             'flex w-full items-center justify-center gap-1.5 rounded bg-black px-4 py-2.5 text-sm font-medium text-white hover:opacity-80',
-            isCopied && 'bg-green-300 text-green-800'
+            isCopied && 'bg-green-300 text-green-800',
           )}
           disabled={isCopied}
           onClick={() => {
@@ -139,7 +143,7 @@ export function ShareSuccess(props: ShareSuccessProps) {
         </button>
         <button
           className={cn(
-            'flex w-full items-center justify-center gap-1.5 rounded border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100'
+            'flex w-full items-center justify-center gap-1.5 rounded border border-black px-4 py-2 text-sm font-medium hover:bg-gray-100',
           )}
           onClick={onClose}
         >

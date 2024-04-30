@@ -47,7 +47,7 @@ export function NotificationPage() {
     }
 
     if (status === 'accept') {
-      window.location.href = `/team/progress?t=${response.teamId}`;
+      window.location.href = `/team/activity?t=${response.teamId}`;
     } else {
       window.dispatchEvent(
         new CustomEvent('refresh-notification', {
