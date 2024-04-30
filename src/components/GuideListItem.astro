@@ -1,5 +1,6 @@
 ---
 import type { GuideFileType } from '../lib/guide';
+import { replaceVariables } from '../lib/markdown';
 
 export interface Props {
   guide: GuideFileType;
@@ -20,7 +21,7 @@ const { frontmatter, id } = guide;
   <span
     class='text-sm transition-transform group-hover:translate-x-2 md:text-base'
   >
-    {frontmatter.title}
+    {replaceVariables(frontmatter.title)}
 
     {
       frontmatter.isNew && (

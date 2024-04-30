@@ -4,6 +4,7 @@ import GuideHeader from '../../components/GuideHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { getAllGuides, type GuideFileType } from '../../lib/guide';
 import { getOpenGraphImageUrl } from '../../lib/open-graph';
+import { replaceVariables } from '../../lib/markdown';
 
 export interface Props {
   guide: GuideFileType;
@@ -33,8 +34,8 @@ const ogImageUrl =
 ---
 
 <BaseLayout
-  title={guideData.seo.title}
-  description={guideData.seo.description}
+  title={replaceVariables(guideData.seo.title)}
+  description={replaceVariables(guideData.seo.description)}
   permalink={`/guides/${guideId}`}
   canonicalUrl={guideData.canonicalUrl}
   ogImageUrl={ogImageUrl}

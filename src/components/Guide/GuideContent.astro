@@ -2,6 +2,7 @@
 import { getGuideTableOfContent, type GuideFileType } from '../../lib/guide';
 import MarkdownFile from '../MarkdownFile.astro';
 import { TableOfContent } from '../TableOfContent/TableOfContent';
+import { replaceVariables } from '../../lib/markdown';
 
 interface Props {
   guide: GuideFileType;
@@ -26,18 +27,21 @@ const { frontmatter: guideFrontmatter, author } = guide;
   }
 
   <div
-    class:list={['col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] py-5 sm:py-10', {
-      'lg:border-r': showTableOfContent
-    }]}
+    class:list={[
+      'col-start-2 col-end-3 row-start-1 mx-auto max-w-[700px] py-5 sm:py-10',
+      {
+        'lg:border-r': showTableOfContent,
+      },
+    ]}
   >
     <MarkdownFile>
-      <h1 class='text-balance text-4xl mb-3 font-bold'>{guideFrontmatter.title}</h1>
-      <p
-        class='flex items-center justify-start text-sm text-gray-400 my-0'
-      >
+      <h1 class='mb-3 text-balance text-4xl font-bold'>
+        {replaceVariables(guideFrontmatter.title)}
+      </h1>
+      <p class='my-0 flex items-center justify-start text-sm text-gray-400'>
         <a
           href={`/authors/${author.id}`}
-          class='inline-flex items-center font-medium hover:text-gray-600 hover:underline underline-offset-2'
+          class='inline-flex items-center font-medium underline-offset-2 hover:text-gray-600 hover:underline'
         >
           <img
             alt={author.frontmatter.name}
@@ -48,7 +52,7 @@ const { frontmatter: guideFrontmatter, author } = guide;
         </a>
         <span class='mx-2 hidden sm:inline'>&middot;</span>
         <a
-          class='hover:text-gray-600 underline-offset-2 hidden sm:inline'
+          class='hidden underline-offset-2 hover:text-gray-600 sm:inline'
           href={`https://github.com/kamranahmedse/developer-roadmap/tree/master/src/data/guides/${guide.id}.md`}
           target='_blank'
         >

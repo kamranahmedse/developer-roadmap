@@ -1,10 +1,10 @@
 ---
-title: '25 Essential Backend Development Tools for 2024'
+title: '25 Essential Backend Development Tools for @currentYear@'
 description: 'Elevate your development process with these 25 essential backend developer tools.'
 authorId: fernando
 excludedBySlug: '/backend/developer-tools'
 seo:
-  title: '25 Essential Backend Development Tools for 2024'
+  title: '25 Essential Backend Development Tools for @currentYear@'
   description: 'Elevate your coding with backend developer tools that bring efficiency, scalability, and innovation to your projects. Improve your development process today!'
 isNew: true
 type: 'textual'
