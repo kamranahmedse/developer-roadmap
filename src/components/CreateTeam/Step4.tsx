@@ -15,7 +15,7 @@ export function Step4({ team }: Step4Props) {
           Your team has been created. Happy learning!
         </p>
         <a
-          href={`/team/progress?t=${team._id}`}
+          href={`/team/activity?t=${team._id}`}
           className="mt-4 rounded-md bg-black px-5 py-1.5 text-sm text-white"
         >
           View Team

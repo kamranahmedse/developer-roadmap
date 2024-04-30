@@ -75,7 +75,7 @@ export function RespondInviteForm() {
       window.location.href = '/';
       return;
     }
-    window.location.href = `/team/progress?t=${response.teamId}`;
+    window.location.href = `/team/activity?t=${response.teamId}`;
   }
 
   if (isLoadingInvite) {

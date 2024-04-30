@@ -26,16 +26,16 @@ export function TeamSidebar({ activePageId, children }: TeamSidebarProps) {
 
   const sidebarLinks = [
     {
-      title: 'Progress',
-      href: `/team/progress?t=${teamId}`,
-      id: 'progress',
-      icon: TeamProgressIcon,
-    },
-    {
       title: 'Activity',
       href: `/team/activity?t=${teamId}`,
       id: 'activity',
       icon: BarChart2,
+    },
+    {
+      title: 'Progress',
+      href: `/team/progress?t=${teamId}`,
+      id: 'progress',
+      icon: TeamProgressIcon,
     },
     {
       title: 'Roadmaps',
