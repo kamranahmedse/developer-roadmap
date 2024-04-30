@@ -152,7 +152,7 @@ export function TeamActivityPage() {
 
       {usersWithActivities.length > 0 ? (
         <>
-          <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400 mb-4">
+          <h3 className="mb-4 flex w-full items-center justify-between text-xs uppercase text-gray-400">
             Team Activity
           </h3>
           <ul className="mb-4 mt-2 flex flex-col gap-3">

@@ -1,20 +1,19 @@
 import { wireframeJSONToSVG } from 'roadmap-renderer';
-import { httpPost } from '../../lib/http';
 import { isLoggedIn } from '../../lib/jwt';
+import type {
+  ResourceProgressType,
+  ResourceType,
+} from '../../lib/resource-progress';
 import {
   refreshProgressCounters,
   renderResourceProgress,
   renderTopicProgress,
   updateResourceProgress,
 } from '../../lib/resource-progress';
-import type {
-  ResourceProgressType,
-  ResourceType,
-} from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { showLoginPopup } from '../../lib/popup';
 import { replaceChildren } from '../../lib/dom.ts';
-import {setUrlParams} from "../../lib/browser.ts";
+import { setUrlParams } from '../../lib/browser.ts';
 
 export class Renderer {
   resourceId: string;
@@ -94,7 +93,6 @@ export class Renderer {
       })
       .then((svg) => {
         replaceChildren(this.containerEl!, svg);
-        // this.containerEl?.replaceChildren(svg);
       })
       .then(() => {
         return renderResourceProgress(
@@ -143,7 +141,7 @@ export class Renderer {
     const newJsonFileSlug = newJsonUrl.split('/').pop()?.replace('.json', '');
 
     const type = this.resourceType[0]; // r for roadmap, b for best-practices
-    setUrlParams({ [type]: newJsonFileSlug! })
+    setUrlParams({ [type]: newJsonFileSlug! });
 
     this.jsonToSvg(newJsonUrl)?.then(() => {});
   }

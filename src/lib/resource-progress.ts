@@ -309,11 +309,11 @@ export async function renderResourceProgress(
 }
 
 function getMatchingElements(
-  quries: string[],
+  queries: string[],
   parentElement: Document | SVGElement | HTMLDivElement = document,
 ): Element[] {
   const matchingElements: Element[] = [];
-  quries.forEach((query) => {
+  queries.forEach((query) => {
     parentElement.querySelectorAll(query).forEach((element) => {
       matchingElements.push(element);
     });
