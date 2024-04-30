@@ -54,9 +54,19 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
       {getRelativeTimeString(new Date(date).toISOString())}
     </span>
   );
+  const userAvatar = user.avatar
+    ? `${import.meta.env.PUBLIC_AVATAR_BASE_URL}/${user.avatar}`
+    : '/images/default-avatar.png';
 
   const username = (
-    <span className="font-medium">{user?.name || 'Unknown'}</span>
+    <>
+      <img
+        className="mr-1 inline-block h-5 w-5 rounded-full"
+        src={userAvatar}
+        alt={user.name}
+      />
+      <span className="font-medium">{user?.name || 'Unknown'}</span>{' '}
+    </>
   );
 
   if (activities.length === 1) {
@@ -65,7 +75,10 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     const topicCount = topicIds?.length || 0;
 
     return (
-      <li key={user._id} className="rounded-md border p-2">
+      <li
+        key={user._id}
+        className="flex items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
+      >
         {actionType === 'in_progress' && (
           <>
             {username} started{' '}
@@ -78,6 +91,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
             in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
           </>
         )}
+
         {actionType === 'done' && (
           <>
             {username} completed{' '}
@@ -108,13 +122,13 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const activityLimit = showAll ? activities.length : 5;
 
   return (
-    <li key={user._id} className="rounded-md border">
-      <h3 className="border-b p-2">
-        {username} has {activities.length} activities in {uniqueResourcesCount}{' '}
+    <li key={user._id} className="rounded-md border overflow-hidden">
+      <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
+        {username} has {activities.length} updates in {uniqueResourcesCount}{' '}
         resources
       </h3>
-      <div className="p-2">
-        <ul className="flex flex-col gap-2">
+      <div className="py-3">
+        <ul className="flex flex-col gap-2 ml-[36px]">
           {activities.slice(0, activityLimit).map((activity) => {
             const { actionType, topicIds } = activity;
             const topicCount = topicIds?.length || 0;

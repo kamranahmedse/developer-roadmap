@@ -106,13 +106,12 @@ export function TeamActivityPage() {
       );
     });
 
-    console.log(validActivities);
-
     return users
       .map((user) => {
         const userActivities = validActivities
           .filter((activity) => activity.userId === user._id)
           .flatMap((activity) => activity.activity)
+          .filter((activity) => (activity?.topicIds?.length || 0) > 0)
           .sort((a, b) => {
             return (
               new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
@@ -153,7 +152,7 @@ export function TeamActivityPage() {
 
       {usersWithActivities.length > 0 ? (
         <>
-          <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400">
+          <h3 className="flex w-full items-center justify-between text-xs uppercase text-gray-400 mb-4">
             Team Activity
           </h3>
           <ul className="mb-4 mt-2 flex flex-col gap-3">
