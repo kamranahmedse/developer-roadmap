@@ -32,13 +32,13 @@ npm install --save-dev typescript
 - Compile your TypeScript code using the following command:
 
 ```bash
-tsc
+npx tsc
 ```
 
-Note: You can also compile individual TypeScript files by specifying the file name after the tsc command. For example:
+Note: You can also compile individual TypeScript files by specifying the file path after the tsc command. For example:
 
 ```bash
-tsc index.ts
+npx tsc ./src/index.ts
 ```
 
 And you're all set! You can now start writing TypeScript code in your project.

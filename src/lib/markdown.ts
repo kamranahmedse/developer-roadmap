@@ -1,6 +1,21 @@
 // @ts-ignore
 import MarkdownIt from 'markdown-it';
 
+// replaces @variableName@ with the value of the variable
+export function replaceVariables(
+  markdown: string,
+  variables: Record<string, string> = {},
+): string {
+  const allVariables: Record<string, string> = {
+    ...variables,
+    currentYear: new Date().getFullYear().toString(),
+  };
+
+  return markdown.replace(/@([^@]+)@/g, (match, p1) => {
+    return allVariables[p1] || match;
+  });
+}
+
 export function markdownToHtml(markdown: string, isInline = true): string {
   try {
     const md = new MarkdownIt({

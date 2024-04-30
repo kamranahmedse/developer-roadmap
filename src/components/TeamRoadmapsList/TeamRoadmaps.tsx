@@ -566,7 +566,7 @@ export function TeamRoadmaps() {
                     )}
 
                     <a
-                      href={`/${resourceConfig.resourceId}`}
+                      href={`/${resourceConfig.resourceId}?t=${teamId}`}
                       className={
                         'ml-2 flex items-center gap-2 rounded-md border border-gray-300 bg-white px-2 py-1.5 text-xs hover:bg-gray-50 focus:outline-none'
                       }
