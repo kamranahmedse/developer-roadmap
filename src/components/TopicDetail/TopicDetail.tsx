@@ -214,6 +214,9 @@ export function TopicDetail(props: TopicDetailProps) {
   const googleSearchUrl = `https://www.google.com/search?q=${topicHtmlTitle?.toLowerCase()} guide for ${resourceTitleForSearch}`;
   const youtubeSearchUrl = `https://www.youtube.com/results?search_query=${topicHtmlTitle?.toLowerCase()} for ${resourceTitleForSearch}`;
 
+  const tnsLink =
+    'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic';
+
   return (
     <div className={'relative z-50'}>
       <div
@@ -351,7 +354,7 @@ export function TopicDetail(props: TopicDetailProps) {
             {resourceId === 'devops' && (
               <div className="mt-4">
                 <a
-                  href={'https://thenewstack.io'}
+                  href={tnsLink}
                   target="_blank"
                   className="hidden rounded-md border bg-gray-200 px-2 py-2 text-sm hover:bg-gray-300 sm:block"
                 >
@@ -364,9 +367,7 @@ export function TopicDetail(props: TopicDetailProps) {
                 </a>
 
                 <a
-                  href={
-                    'https://thenewstack.io/devops/?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Topic'
-                  }
+                  href={tnsLink}
                   className="hidden rounded-md border bg-gray-200 px-2 py-1.5 text-sm hover:bg-gray-300 min-[390px]:block sm:hidden"
                   onClick={() => {
                     window.fireEvent({
