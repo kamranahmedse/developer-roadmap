@@ -98,34 +98,40 @@ export function TeamActivityPage() {
   }, [teamId]);
 
   const { users, activities } = teamActivities?.data;
-  const usersWithActivities = useMemo(
-    () =>
-      users
-        .map((user) => {
-          const userActivities = activities
-            .filter((activity) => activity.userId === user._id)
-            .flatMap((activity) => activity.activity)
-            .sort((a, b) => {
-              return (
-                new Date(b.updatedAt).getTime() -
-                new Date(a.updatedAt).getTime()
-              );
-            });
+  const usersWithActivities = useMemo(() => {
+    const validActivities = activities.filter((activity) => {
+      return (
+        activity.activity.length > 0 &&
+        activity.activity.some((t) => (t?.topicIds?.length || 0) > 0)
+      );
+    });
 
-          return {
-            ...user,
-            activities: userActivities,
-          };
-        })
-        .filter((user) => user.activities.length > 0)
-        .sort((a, b) => {
-          return (
-            new Date(b.activities[0].updatedAt).getTime() -
-            new Date(a.activities[0].updatedAt).getTime()
-          );
-        }),
-    [users, activities],
-  );
+    console.log(validActivities);
+
+    return users
+      .map((user) => {
+        const userActivities = validActivities
+          .filter((activity) => activity.userId === user._id)
+          .flatMap((activity) => activity.activity)
+          .sort((a, b) => {
+            return (
+              new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime()
+            );
+          });
+
+        return {
+          ...user,
+          activities: userActivities,
+        };
+      })
+      .filter((user) => user.activities.length > 0)
+      .sort((a, b) => {
+        return (
+          new Date(b.activities[0].updatedAt).getTime() -
+          new Date(a.activities[0].updatedAt).getTime()
+        );
+      });
+  }, [users, activities]);
 
   if (!teamId) {
     window.location.href = '/';
