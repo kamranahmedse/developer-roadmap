@@ -7,7 +7,7 @@ import AccountLayout from '../../layouts/AccountLayout.astro';
 <AccountLayout
   title='Team Activities'
   noIndex={true}
-  initialLoadingMessage='Loading Activity'
+  initialLoadingMessage='Loading activity'
 >
   <TeamSidebar activePageId='activity' client:load>
     <TeamActivityPage client:only='react' />

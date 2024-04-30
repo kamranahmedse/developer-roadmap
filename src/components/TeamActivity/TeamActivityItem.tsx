@@ -77,7 +77,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex items-center flex-wrap gap-1 rounded-md border px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
@@ -128,7 +128,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         resources
       </h3>
       <div className="py-3">
-        <ul className="flex flex-col gap-2 ml-[36px]">
+        <ul className="flex flex-col gap-2 ml-2 sm:ml-[36px]">
           {activities.slice(0, activityLimit).map((activity) => {
             const { actionType, topicIds } = activity;
             const topicCount = topicIds?.length || 0;
