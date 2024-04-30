@@ -19,6 +19,7 @@ export interface AIRoadmapDocument {
   term: string;
   title: string;
   data: string;
+  slug: string;
   viewCount: number;
   createdAt: Date;
   updatedAt: Date;

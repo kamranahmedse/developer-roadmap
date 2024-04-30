@@ -98,7 +98,12 @@ const ogImageUrl = getOpenGraphImageUrl({
             pageUrl={`https://roadmap.sh/best-practices/${bestPracticeId}`}
           />
 
-          <TopicDetail client:idle canSubmitContribution={true} />
+          <TopicDetail
+            resourceTitle={bestPracticeData.title}
+            resourceType='best-practice'
+            client:idle
+            canSubmitContribution={true}
+          />
 
           <FrameRenderer
             resourceType={'best-practice'}

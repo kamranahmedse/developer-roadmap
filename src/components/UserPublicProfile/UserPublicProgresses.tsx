@@ -25,21 +25,6 @@ export function UserPublicProgresses(props: UserPublicProgressesProps) {
     (roadmap) => roadmap.isCustomResource,
   );
 
-  // <UserPublicProgressStats
-  //                     updatedAt={roadmap.updatedAt}
-  //                     title={roadmap.title}
-  //                     totalCount={roadmap.total}
-  //                     doneCount={roadmap.done}
-  //                     learningCount={roadmap.learning}
-  //                     skippedCount={roadmap.skipped}
-  //                     resourceId={roadmap.id}
-  //                     resourceType="roadmap"
-  //                     roadmapSlug={roadmap.roadmapSlug}
-  //                     username={username!}
-  //                     isCustomResource={true}
-  //                     userId={userId}
-  //                   />
-
   return (
     <div>
       {customRoadmapVisibility !== 'none' && customRoadmaps?.length > 0 && (

@@ -24,10 +24,12 @@ const { guideId } = Astro.params;
 const { guide } = Astro.props;
 const { frontmatter: guideData, author } = guide;
 
-const ogImageUrl = getOpenGraphImageUrl({
-  group: 'guides',
-  resourceId: guideId,
-});
+const ogImageUrl =
+  guideData.ogImageUrl ||
+  getOpenGraphImageUrl({
+    group: 'guides',
+    resourceId: guideId,
+  });
 ---
 
 <BaseLayout

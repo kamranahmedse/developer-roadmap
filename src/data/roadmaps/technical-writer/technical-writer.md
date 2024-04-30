@@ -6,7 +6,7 @@ briefDescription: 'Roadmap for anyone looking for a career in technical writing'
 title: 'Technical Writer'
 description: 'Roadmap for anyone looking for a career in technical writing'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 1958.71

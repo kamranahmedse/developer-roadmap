@@ -4,6 +4,7 @@ import { ActivityCounters } from './ActivityCounters';
 import { ResourceProgress } from './ResourceProgress';
 import { pageProgressMessage } from '../../stores/page';
 import { EmptyActivity } from './EmptyActivity';
+import { ActivityStream, type UserStreamActivity } from './ActivityStream';
 
 type ProgressResponse = {
   updatedAt: string;
@@ -45,6 +46,7 @@ export type ActivityResponse = {
       resourceTitle?: string;
     };
   }[];
+  activities: UserStreamActivity[];
 };
 
 export function ActivityPage() {
@@ -96,8 +98,13 @@ export function ActivityPage() {
 
       return updatedAtB.getTime() - updatedAtA.getTime();
     })
-    .filter((bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0);
+    .filter(
+      (bestPractice) => bestPractice.learning > 0 || bestPractice.done > 0,
+    );
 
+  const hasProgress =
+    learningRoadmapsToShow.length !== 0 ||
+    learningBestPracticesToShow.length !== 0;
 
   return (
     <>
@@ -107,16 +114,17 @@ export function ActivityPage() {
         streak={activity?.streak || { count: 0 }}
       />
 
-      <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+      <div className="mx-0 px-0 py-5 pb-0 md:-mx-10 md:px-8 md:py-8 md:pb-0">
         {learningRoadmapsToShow.length === 0 &&
           learningBestPracticesToShow.length === 0 && <EmptyActivity />}
 
-        {(learningRoadmapsToShow.length > 0 || learningBestPracticesToShow.length > 0) && (
+        {(learningRoadmapsToShow.length > 0 ||
+          learningBestPracticesToShow.length > 0) && (
           <>
             <h2 className="mb-3 text-xs uppercase text-gray-400">
               Continue Following
             </h2>
-            <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-1 gap-1.5 sm:grid-cols-2">
               {learningRoadmaps
                 .sort((a, b) => {
                   const updatedAtA = new Date(a.updatedAt);
@@ -192,6 +200,10 @@ export function ActivityPage() {
           </>
         )}
       </div>
+
+      {hasProgress && (
+        <ActivityStream activities={activity?.activities || []} />
+      )}
     </>
   );
 }

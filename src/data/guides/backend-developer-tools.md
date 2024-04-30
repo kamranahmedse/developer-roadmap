@@ -382,7 +382,7 @@ If you find yourself spending hours on the terminal, consider installing this co
 
 Now, you suddenly have access to hundreds of [community-created extensions](https://www.raycast.com/store) that allow you to directly interact with chatGPT from the app launcher,  use GitHub, interact with VSCode directly, and more.
 
-![Raycast](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849400409.png)
+![Raycast](https://assets.roadmap.sh/guest/raycast-app-launcher-w5rg3.png)
 
 While it is only available for macOS users, Raycast has become a must-have application for backend developers on this platform. In the end, the faster you can reach for your tools, the more productive you become. And a properly configured Raycast can make your web development process feel like a breeze.
 

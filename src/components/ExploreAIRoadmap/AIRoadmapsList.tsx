@@ -26,7 +26,8 @@ export function AIRoadmapsList(props: AIRoadmapsListProps) {
   return (
     <ul className="mb-4 grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
       {roadmaps.map((roadmap) => {
-        const roadmapLink = `/ai?id=${roadmap._id}`;
+        const roadmapLink = `/ai/${roadmap.slug}`;
+
         return (
           <a
             key={roadmap._id}

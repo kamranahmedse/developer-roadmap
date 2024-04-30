@@ -1,6 +1,6 @@
 # Memory Management
 
-In Java, memory management is the process of allocation and de-allocation of objects, called Memory management.
+In Java, memory management is the process of allocation and de-allocation of objects.
 
 Visit the following resources to learn more:
 

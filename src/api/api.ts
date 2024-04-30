@@ -1,4 +1,3 @@
-import Cookies from 'js-cookie';
 import { TOKEN_COOKIE_NAME } from '../lib/jwt.ts';
 import type { APIContext } from 'astro';
 

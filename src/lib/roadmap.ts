@@ -1,5 +1,16 @@
 import type { MarkdownFileType } from './file';
 
+export function resourceTitleFromId(id: string): string {
+  if (id === 'devops') {
+    return 'DevOps';
+  }
+
+  return id
+    .split('-')
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ');
+}
+
 export interface RoadmapFrontmatter {
   pdfUrl: string;
   order: number;
