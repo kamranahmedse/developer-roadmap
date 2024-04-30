@@ -125,7 +125,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     <li key={user._id} className="rounded-md border overflow-hidden">
       <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
         {username} has {activities.length} updates in {uniqueResourcesCount}{' '}
-        resources
+        resource(s)
       </h3>
       <div className="py-3">
         <ul className="flex flex-col gap-2 ml-2 sm:ml-[36px]">
