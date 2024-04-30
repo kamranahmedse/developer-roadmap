@@ -3,15 +3,15 @@
     "controls": {
       "control": [
         {
-          "ID": "2380",
+          "ID": "3372",
           "typeID": "Arrow",
           "zOrder": "0",
           "w": "1",
           "h": "101",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1254",
-          "y": "846",
+          "x": "1264",
+          "y": "856",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -33,15 +33,15 @@
           }
         },
         {
-          "ID": "2381",
+          "ID": "3373",
           "typeID": "Arrow",
           "zOrder": "1",
           "w": "136",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1071",
-          "y": "3249",
+          "x": "1081",
+          "y": "3259",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -63,15 +63,15 @@
           }
         },
         {
-          "ID": "2382",
+          "ID": "3374",
           "typeID": "__group__",
           "zOrder": "2",
           "measuredW": "214",
           "measuredH": "46",
           "w": "214",
           "h": "46",
-          "x": "671",
-          "y": "3258",
+          "x": "681",
+          "y": "3268",
           "properties": {
             "controlName": "102-scalability:migration-strategies"
           },
@@ -110,15 +110,15 @@
           }
         },
         {
-          "ID": "2383",
+          "ID": "3375",
           "typeID": "__group__",
           "zOrder": "3",
           "measuredW": "211",
           "measuredH": "196",
           "w": "211",
           "h": "196",
-          "x": "671",
-          "y": "3298",
+          "x": "681",
+          "y": "3308",
           "properties": {
             "controlName": "101-scalability:instrumentation-monitoring-telemetry"
           },
@@ -235,15 +235,15 @@
           }
         },
         {
-          "ID": "2384",
+          "ID": "3376",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "1",
           "h": "744",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1301",
-          "y": "2957",
+          "x": "1311",
+          "y": "2967",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -264,15 +264,15 @@
           }
         },
         {
-          "ID": "2385",
+          "ID": "3377",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "276",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1264",
-          "y": "2948",
+          "x": "1274",
+          "y": "2958",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -294,15 +294,15 @@
           }
         },
         {
-          "ID": "2386",
+          "ID": "3378",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "1",
           "h": "95",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1051",
-          "y": "2946",
+          "x": "1061",
+          "y": "2956",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -324,15 +324,15 @@
           }
         },
         {
-          "ID": "2387",
+          "ID": "3379",
           "typeID": "Arrow",
           "zOrder": "7",
           "w": "487",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "837",
-          "y": "2949",
+          "x": "847",
+          "y": "2959",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -353,15 +353,15 @@
           }
         },
         {
-          "ID": "2388",
+          "ID": "3380",
           "typeID": "Arrow",
           "zOrder": "8",
           "w": "1",
           "h": "141",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "745",
-          "y": "2813",
+          "x": "755",
+          "y": "2823",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -382,15 +382,15 @@
           }
         },
         {
-          "ID": "2389",
+          "ID": "3381",
           "typeID": "__group__",
           "zOrder": "9",
           "measuredW": "200",
           "measuredH": "50",
           "w": "200",
           "h": "50",
-          "x": "674",
-          "y": "2927",
+          "x": "684",
+          "y": "2937",
           "properties": {
             "controlName": "120-real-time-data"
           },
@@ -425,15 +425,15 @@
           }
         },
         {
-          "ID": "2390",
+          "ID": "3382",
           "typeID": "Arrow",
           "zOrder": "10",
           "w": "1",
           "h": "91",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "747",
-          "y": "2729",
+          "x": "757",
+          "y": "2739",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -455,15 +455,15 @@
           }
         },
         {
-          "ID": "2391",
+          "ID": "3383",
           "typeID": "Arrow",
           "zOrder": "11",
           "w": "623",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "849",
-          "y": "2811",
+          "x": "859",
+          "y": "2821",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -484,15 +484,15 @@
           }
         },
         {
-          "ID": "2392",
+          "ID": "3384",
           "typeID": "Arrow",
           "zOrder": "12",
           "w": "1",
           "h": "260",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1567",
-          "y": "2502",
+          "x": "1577",
+          "y": "2512",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -513,15 +513,15 @@
           }
         },
         {
-          "ID": "2393",
+          "ID": "3385",
           "typeID": "Arrow",
           "zOrder": "13",
           "w": "1",
           "h": "61",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1751",
-          "y": "2608",
+          "x": "1761",
+          "y": "2618",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -543,15 +543,15 @@
           }
         },
         {
-          "ID": "2394",
+          "ID": "3386",
           "typeID": "Arrow",
           "zOrder": "14",
           "w": "1",
           "h": "68",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1379",
-          "y": "2491",
+          "x": "1389",
+          "y": "2501",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -573,15 +573,15 @@
           }
         },
         {
-          "ID": "2395",
+          "ID": "3387",
           "typeID": "Arrow",
           "zOrder": "15",
           "w": "413",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1160",
-          "y": "2489",
+          "x": "1170",
+          "y": "2499",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -602,15 +602,15 @@
           }
         },
         {
-          "ID": "2396",
+          "ID": "3388",
           "typeID": "Arrow",
           "zOrder": "16",
           "w": "1",
           "h": "95",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1086",
-          "y": "2494",
+          "x": "1096",
+          "y": "2504",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -632,15 +632,15 @@
           }
         },
         {
-          "ID": "2397",
+          "ID": "3389",
           "typeID": "Arrow",
           "zOrder": "17",
           "w": "1",
           "h": "141",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1086",
-          "y": "2351",
+          "x": "1096",
+          "y": "2361",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -661,15 +661,15 @@
           }
         },
         {
-          "ID": "2398",
+          "ID": "3390",
           "typeID": "Arrow",
           "zOrder": "18",
           "w": "283",
           "h": "70",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1286",
-          "y": "2337",
+          "x": "1296",
+          "y": "2347",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -691,15 +691,15 @@
           }
         },
         {
-          "ID": "2399",
+          "ID": "3391",
           "typeID": "Arrow",
           "zOrder": "19",
           "w": "280",
           "h": "32",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1291",
-          "y": "2330",
+          "x": "1301",
+          "y": "2340",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -721,15 +721,15 @@
           }
         },
         {
-          "ID": "2400",
+          "ID": "3392",
           "typeID": "Arrow",
           "zOrder": "20",
           "w": "272",
           "h": "35",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1299",
-          "y": "2269",
+          "x": "1309",
+          "y": "2279",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -751,15 +751,15 @@
           }
         },
         {
-          "ID": "2401",
+          "ID": "3393",
           "typeID": "Arrow",
           "zOrder": "21",
           "w": "280",
           "h": "72",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1287",
-          "y": "2223",
+          "x": "1297",
+          "y": "2233",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -781,15 +781,15 @@
           }
         },
         {
-          "ID": "2402",
+          "ID": "3394",
           "typeID": "Arrow",
           "zOrder": "22",
           "w": "320",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1295",
-          "y": "2316",
+          "x": "1305",
+          "y": "2326",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -811,15 +811,15 @@
           }
         },
         {
-          "ID": "2403",
+          "ID": "3395",
           "typeID": "__group__",
           "zOrder": "23",
           "measuredW": "324",
           "measuredH": "50",
           "w": "324",
           "h": "50",
-          "x": "1005",
-          "y": "2312",
+          "x": "1015",
+          "y": "2322",
           "properties": {
             "controlName": "114-design-and-development-principles"
           },
@@ -858,15 +858,15 @@
           }
         },
         {
-          "ID": "2404",
+          "ID": "3396",
           "typeID": "Arrow",
           "zOrder": "24",
           "w": "219",
           "h": "145",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "868",
-          "y": "2155",
+          "x": "878",
+          "y": "2165",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -887,15 +887,15 @@
           }
         },
         {
-          "ID": "2405",
+          "ID": "3397",
           "typeID": "Arrow",
           "zOrder": "25",
           "w": "1",
           "h": "91",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "768",
-          "y": "2148",
+          "x": "778",
+          "y": "2158",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -917,15 +917,15 @@
           }
         },
         {
-          "ID": "2406",
+          "ID": "3398",
           "typeID": "Arrow",
           "zOrder": "26",
           "w": "1",
           "h": "118",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "768",
-          "y": "2031",
+          "x": "778",
+          "y": "2041",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -946,15 +946,15 @@
           }
         },
         {
-          "ID": "2407",
+          "ID": "3399",
           "typeID": "Arrow",
           "zOrder": "27",
           "w": "1",
           "h": "91",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "769",
-          "y": "1939",
+          "x": "779",
+          "y": "1949",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -976,15 +976,15 @@
           }
         },
         {
-          "ID": "2408",
+          "ID": "3400",
           "typeID": "Arrow",
           "zOrder": "28",
           "w": "469",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "837",
-          "y": "2033",
+          "x": "847",
+          "y": "2043",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1005,15 +1005,15 @@
           }
         },
         {
-          "ID": "2409",
+          "ID": "3401",
           "typeID": "Arrow",
           "zOrder": "29",
           "w": "1",
           "h": "75",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "2039",
+          "x": "1401",
+          "y": "2049",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1035,15 +1035,15 @@
           }
         },
         {
-          "ID": "2410",
+          "ID": "3402",
           "typeID": "Arrow",
           "zOrder": "30",
           "w": "223",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "1798",
+          "x": "1401",
+          "y": "1808",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1064,15 +1064,15 @@
           }
         },
         {
-          "ID": "2411",
+          "ID": "3403",
           "typeID": "Arrow",
           "zOrder": "31",
           "w": "1",
           "h": "206",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1688",
-          "y": "1690",
+          "x": "1698",
+          "y": "1700",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1094,15 +1094,15 @@
           }
         },
         {
-          "ID": "2412",
+          "ID": "3404",
           "typeID": "Arrow",
           "zOrder": "32",
           "w": "223",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "1780",
+          "x": "1401",
+          "y": "1790",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1123,15 +1123,15 @@
           }
         },
         {
-          "ID": "2413",
+          "ID": "3405",
           "typeID": "Arrow",
           "zOrder": "33",
           "w": "1",
           "h": "211",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "1566",
+          "x": "1401",
+          "y": "1576",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1152,15 +1152,15 @@
           }
         },
         {
-          "ID": "2414",
+          "ID": "3406",
           "typeID": "Arrow",
           "zOrder": "34",
           "w": "1",
           "h": "93",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "1486",
+          "x": "1401",
+          "y": "1496",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1182,15 +1182,15 @@
           }
         },
         {
-          "ID": "2415",
+          "ID": "3407",
           "typeID": "Arrow",
           "zOrder": "35",
           "w": "267",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1137",
-          "y": "1579",
+          "x": "1147",
+          "y": "1589",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1211,15 +1211,15 @@
           }
         },
         {
-          "ID": "2416",
+          "ID": "3408",
           "typeID": "Arrow",
           "zOrder": "36",
           "w": "1",
           "h": "108",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1120",
-          "y": "1464",
+          "x": "1130",
+          "y": "1474",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1241,15 +1241,15 @@
           }
         },
         {
-          "ID": "2417",
+          "ID": "3409",
           "typeID": "Arrow",
           "zOrder": "37",
           "w": "1",
           "h": "129",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1058",
-          "y": "1587",
+          "x": "1068",
+          "y": "1597",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1271,15 +1271,15 @@
           }
         },
         {
-          "ID": "2418",
+          "ID": "3410",
           "typeID": "Arrow",
           "zOrder": "38",
           "w": "214",
           "h": "180",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "816",
-          "y": "1586",
+          "x": "826",
+          "y": "1596",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1301,15 +1301,15 @@
           }
         },
         {
-          "ID": "2419",
+          "ID": "3411",
           "typeID": "Arrow",
           "zOrder": "39",
           "w": "183",
           "h": "125",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "811",
-          "y": "1594",
+          "x": "821",
+          "y": "1604",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1331,15 +1331,15 @@
           }
         },
         {
-          "ID": "2420",
+          "ID": "3412",
           "typeID": "Arrow",
           "zOrder": "40",
           "w": "186",
           "h": "82",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "808",
-          "y": "1591",
+          "x": "818",
+          "y": "1601",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1361,14 +1361,14 @@
           }
         },
         {
-          "ID": "2421",
+          "ID": "3413",
           "typeID": "Arrow",
           "zOrder": "41",
           "h": "40",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "817",
-          "y": "1591",
+          "x": "827",
+          "y": "1601",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1390,15 +1390,15 @@
           }
         },
         {
-          "ID": "2422",
+          "ID": "3414",
           "typeID": "Arrow",
           "zOrder": "42",
           "w": "176",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "804",
-          "y": "1577",
+          "x": "814",
+          "y": "1587",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1420,15 +1420,15 @@
           }
         },
         {
-          "ID": "2423",
+          "ID": "3415",
           "typeID": "Arrow",
           "zOrder": "43",
           "w": "1",
           "h": "239",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1059",
-          "y": "1336",
+          "x": "1069",
+          "y": "1346",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1449,15 +1449,15 @@
           }
         },
         {
-          "ID": "2424",
+          "ID": "3416",
           "typeID": "Arrow",
           "zOrder": "44",
           "w": "236",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1135",
-          "y": "1323",
+          "x": "1145",
+          "y": "1333",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1478,15 +1478,15 @@
           }
         },
         {
-          "ID": "2425",
+          "ID": "3417",
           "typeID": "Arrow",
           "zOrder": "45",
           "w": "166",
           "h": "168",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "859",
-          "y": "1342",
+          "x": "869",
+          "y": "1352",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1508,15 +1508,15 @@
           }
         },
         {
-          "ID": "2426",
+          "ID": "3418",
           "typeID": "Arrow",
           "zOrder": "46",
           "w": "151",
           "h": "125",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "862",
-          "y": "1340",
+          "x": "872",
+          "y": "1350",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1538,15 +1538,15 @@
           }
         },
         {
-          "ID": "2427",
+          "ID": "3419",
           "typeID": "Arrow",
           "zOrder": "47",
           "w": "115",
           "h": "81",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "863",
-          "y": "1344",
+          "x": "873",
+          "y": "1354",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1568,15 +1568,15 @@
           }
         },
         {
-          "ID": "2428",
+          "ID": "3420",
           "typeID": "Arrow",
           "zOrder": "48",
           "w": "97",
           "h": "40",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "859",
-          "y": "1335",
+          "x": "869",
+          "y": "1345",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1598,15 +1598,15 @@
           }
         },
         {
-          "ID": "2429",
+          "ID": "3421",
           "typeID": "Arrow",
           "zOrder": "49",
           "w": "107",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "846",
-          "y": "1321",
+          "x": "856",
+          "y": "1331",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1628,15 +1628,15 @@
           }
         },
         {
-          "ID": "2430",
+          "ID": "3422",
           "typeID": "Arrow",
           "zOrder": "50",
           "w": "140",
           "h": "251",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1202",
-          "y": "1058",
+          "x": "1212",
+          "y": "1068",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -1658,15 +1658,15 @@
           }
         },
         {
-          "ID": "2431",
+          "ID": "3423",
           "typeID": "Arrow",
           "zOrder": "51",
           "w": "1",
           "h": "99",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "909",
-          "y": "954",
+          "x": "919",
+          "y": "964",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -1688,15 +1688,15 @@
           }
         },
         {
-          "ID": "2432",
+          "ID": "3424",
           "typeID": "Arrow",
           "zOrder": "52",
           "w": "257",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "909",
-          "y": "952",
+          "x": "919",
+          "y": "962",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1717,15 +1717,15 @@
           }
         },
         {
-          "ID": "2433",
+          "ID": "3425",
           "typeID": "Arrow",
           "zOrder": "53",
           "w": "189",
           "h": "129",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1329",
-          "y": "971",
+          "x": "1339",
+          "y": "981",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1747,15 +1747,15 @@
           }
         },
         {
-          "ID": "2434",
+          "ID": "3426",
           "typeID": "Arrow",
           "zOrder": "54",
           "w": "173",
           "h": "89",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1344",
-          "y": "965",
+          "x": "1354",
+          "y": "975",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1777,15 +1777,15 @@
           }
         },
         {
-          "ID": "2435",
+          "ID": "3427",
           "typeID": "Arrow",
           "zOrder": "55",
           "w": "60",
           "h": "30",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1444",
-          "y": "1445",
+          "x": "1454",
+          "y": "1455",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1807,15 +1807,15 @@
           }
         },
         {
-          "ID": "2436",
+          "ID": "3428",
           "typeID": "Arrow",
           "zOrder": "56",
           "w": "61",
           "h": "24",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1448",
-          "y": "1409",
+          "x": "1458",
+          "y": "1419",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1837,15 +1837,15 @@
           }
         },
         {
-          "ID": "2437",
+          "ID": "3429",
           "typeID": "Arrow",
           "zOrder": "57",
           "w": "1",
           "h": "76",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1751",
-          "y": "2482",
+          "x": "1761",
+          "y": "2492",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -1867,15 +1867,15 @@
           }
         },
         {
-          "ID": "2438",
+          "ID": "3430",
           "typeID": "Arrow",
           "zOrder": "58",
           "w": "1",
           "h": "83",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1328",
-          "y": "1054",
+          "x": "1338",
+          "y": "1064",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -1897,15 +1897,15 @@
           }
         },
         {
-          "ID": "2439",
+          "ID": "3431",
           "typeID": "Arrow",
           "zOrder": "59",
           "w": "189",
           "h": "26",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1336",
-          "y": "948",
+          "x": "1346",
+          "y": "958",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1927,15 +1927,15 @@
           }
         },
         {
-          "ID": "2440",
+          "ID": "3432",
           "typeID": "Arrow",
           "zOrder": "60",
           "w": "166",
           "h": "56",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1351",
-          "y": "872",
+          "x": "1361",
+          "y": "882",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1957,15 +1957,15 @@
           }
         },
         {
-          "ID": "2441",
+          "ID": "3433",
           "typeID": "Arrow",
           "zOrder": "61",
           "w": "167",
           "h": "21",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1349",
-          "y": "918",
+          "x": "1359",
+          "y": "928",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -1987,15 +1987,15 @@
           }
         },
         {
-          "ID": "2442",
+          "ID": "3434",
           "typeID": "Arrow",
           "zOrder": "62",
           "w": "174",
           "h": "99",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1519",
-          "y": "1206",
+          "x": "1529",
+          "y": "1216",
           "properties": {
             "curvature": "0",
             "rightArrow": "false",
@@ -2017,15 +2017,15 @@
           }
         },
         {
-          "ID": "2443",
+          "ID": "3435",
           "typeID": "Arrow",
           "zOrder": "63",
           "w": "177",
           "h": "54",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1516",
-          "y": "1263",
+          "x": "1526",
+          "y": "1273",
           "properties": {
             "curvature": "0",
             "rightArrow": "false",
@@ -2047,15 +2047,15 @@
           }
         },
         {
-          "ID": "2444",
+          "ID": "3436",
           "typeID": "Arrow",
           "zOrder": "64",
           "w": "189",
           "h": "5",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1520",
-          "y": "1323",
+          "x": "1530",
+          "y": "1333",
           "properties": {
             "curvature": "0",
             "rightArrow": "false",
@@ -2077,15 +2077,15 @@
           }
         },
         {
-          "ID": "2445",
+          "ID": "3437",
           "typeID": "Arrow",
           "zOrder": "65",
           "w": "236",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "923",
-          "y": "1047",
+          "x": "933",
+          "y": "1057",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -2106,15 +2106,15 @@
           }
         },
         {
-          "ID": "2446",
+          "ID": "3438",
           "typeID": "Arrow",
           "zOrder": "66",
           "w": "1",
           "h": "90",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "910",
-          "y": "1052",
+          "x": "920",
+          "y": "1062",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -2136,15 +2136,15 @@
           }
         },
         {
-          "ID": "2447",
+          "ID": "3439",
           "typeID": "Arrow",
           "zOrder": "67",
           "w": "1",
           "h": "172",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "746",
-          "y": "969",
+          "x": "756",
+          "y": "979",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -2166,15 +2166,15 @@
           }
         },
         {
-          "ID": "2448",
+          "ID": "3440",
           "typeID": "Arrow",
           "zOrder": "68",
           "w": "1",
           "h": "113",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1299",
-          "y": "3757",
+          "x": "1309",
+          "y": "3767",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -2196,15 +2196,15 @@
           }
         },
         {
-          "ID": "2449",
+          "ID": "3441",
           "typeID": "__group__",
           "zOrder": "69",
           "measuredW": "200",
           "measuredH": "50",
           "w": "200",
           "h": "50",
-          "x": "1005",
-          "y": "2463",
+          "x": "1015",
+          "y": "2473",
           "properties": {
             "controlName": "115-architectural-patterns"
           },
@@ -2242,15 +2242,15 @@
           }
         },
         {
-          "ID": "2450",
+          "ID": "3442",
           "typeID": "__group__",
           "zOrder": "70",
           "measuredW": "209",
           "measuredH": "40",
           "w": "209",
           "h": "40",
-          "x": "1005",
-          "y": "2546",
+          "x": "1015",
+          "y": "2556",
           "properties": {
             "controlName": "100-architectural-patterns:monolithic-apps"
           },
@@ -2322,15 +2322,15 @@
           }
         },
         {
-          "ID": "2451",
+          "ID": "3443",
           "typeID": "__group__",
           "zOrder": "71",
           "measuredW": "209",
           "measuredH": "37",
           "w": "209",
           "h": "37",
-          "x": "1005",
-          "y": "2588",
+          "x": "1015",
+          "y": "2598",
           "properties": {
             "controlName": "101-architectural-patterns:microservices"
           },
@@ -2402,15 +2402,15 @@
           }
         },
         {
-          "ID": "2452",
+          "ID": "3444",
           "typeID": "__group__",
           "zOrder": "72",
           "measuredW": "209",
           "measuredH": "37",
           "w": "209",
           "h": "37",
-          "x": "1005",
-          "y": "2628",
+          "x": "1015",
+          "y": "2638",
           "properties": {
             "controlName": "102-architectural-patterns:soa"
           },
@@ -2482,15 +2482,15 @@
           }
         },
         {
-          "ID": "2453",
+          "ID": "3445",
           "typeID": "__group__",
           "zOrder": "73",
           "measuredW": "182",
           "measuredH": "50",
           "w": "182",
           "h": "50",
-          "x": "1284",
-          "y": "2463",
+          "x": "1294",
+          "y": "2473",
           "properties": {
             "controlName": "117-message-brokers"
           },
@@ -2530,15 +2530,15 @@
           }
         },
         {
-          "ID": "2454",
+          "ID": "3446",
           "typeID": "__group__",
           "zOrder": "74",
           "measuredW": "305",
           "measuredH": "50",
           "w": "305",
           "h": "50",
-          "x": "1516",
-          "y": "2465",
+          "x": "1526",
+          "y": "2475",
           "properties": {
             "controlName": "118-containerization"
           },
@@ -2577,15 +2577,15 @@
           }
         },
         {
-          "ID": "2455",
+          "ID": "3447",
           "typeID": "__group__",
           "zOrder": "75",
           "measuredW": "197",
           "measuredH": "50",
           "w": "197",
           "h": "50",
-          "x": "678",
-          "y": "2786",
+          "x": "688",
+          "y": "2796",
           "properties": {
             "controlName": "122-web-servers"
           },
@@ -2624,15 +2624,15 @@
           }
         },
         {
-          "ID": "2456",
+          "ID": "3448",
           "typeID": "__group__",
           "zOrder": "76",
           "measuredW": "153",
           "measuredH": "40",
           "w": "153",
           "h": "40",
-          "x": "671",
-          "y": "2572",
+          "x": "681",
+          "y": "2582",
           "properties": {
             "controlName": "100-web-servers:nginx"
           },
@@ -2704,15 +2704,15 @@
           }
         },
         {
-          "ID": "2457",
+          "ID": "3449",
           "typeID": "__group__",
           "zOrder": "77",
           "measuredW": "153",
           "measuredH": "40",
           "w": "153",
           "h": "40",
-          "x": "671",
-          "y": "2617",
+          "x": "681",
+          "y": "2627",
           "properties": {
             "controlName": "101-web-servers:apache"
           },
@@ -2800,15 +2800,15 @@
           }
         },
         {
-          "ID": "2458",
+          "ID": "3450",
           "typeID": "__group__",
           "zOrder": "78",
           "measuredW": "153",
           "measuredH": "40",
           "w": "153",
           "h": "40",
-          "x": "671",
-          "y": "2663",
+          "x": "681",
+          "y": "2673",
           "properties": {
             "controlName": "102-web-servers:caddy"
           },
@@ -2896,15 +2896,15 @@
           }
         },
         {
-          "ID": "2459",
+          "ID": "3451",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "152",
           "measuredH": "40",
           "w": "152",
           "h": "40",
-          "x": "671",
-          "y": "2708",
+          "x": "681",
+          "y": "2718",
           "properties": {
             "controlName": "103-web-servers:ms-iis"
           },
@@ -2992,15 +2992,15 @@
           }
         },
         {
-          "ID": "2460",
+          "ID": "3452",
           "typeID": "__group__",
           "zOrder": "80",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "1671",
-          "y": "2588",
+          "x": "1681",
+          "y": "2598",
           "properties": {
             "controlName": "ext_link:roadmap.sh/docker"
           },
@@ -3042,15 +3042,15 @@
           }
         },
         {
-          "ID": "2461",
+          "ID": "3453",
           "typeID": "__group__",
           "zOrder": "81",
           "measuredW": "154",
           "measuredH": "40",
           "w": "154",
           "h": "40",
-          "x": "1672",
-          "y": "2544",
+          "x": "1682",
+          "y": "2554",
           "properties": {
             "controlName": "102-containerization:lxc"
           },
@@ -3124,15 +3124,15 @@
           }
         },
         {
-          "ID": "2462",
+          "ID": "3454",
           "typeID": "__group__",
           "zOrder": "82",
           "measuredW": "141",
           "measuredH": "50",
           "w": "141",
           "h": "50",
-          "x": "976",
-          "y": "2927",
+          "x": "986",
+          "y": "2937",
           "properties": {
             "controlName": "ext_link:roadmap.sh/graphql"
           },
@@ -3173,15 +3173,15 @@
           }
         },
         {
-          "ID": "2463",
+          "ID": "3455",
           "typeID": "__group__",
           "zOrder": "83",
           "measuredW": "155",
           "measuredH": "40",
           "w": "155",
           "h": "40",
-          "x": "975",
-          "y": "3025",
+          "x": "985",
+          "y": "3035",
           "properties": {
             "controlName": "100-graphql:apollo"
           },
@@ -3253,15 +3253,15 @@
           }
         },
         {
-          "ID": "2464",
+          "ID": "3456",
           "typeID": "__group__",
           "zOrder": "84",
           "measuredW": "153",
           "measuredH": "40",
           "w": "153",
           "h": "40",
-          "x": "975",
-          "y": "3069",
+          "x": "985",
+          "y": "3079",
           "properties": {
             "controlName": "101-graphql:relay-modern"
           },
@@ -3349,15 +3349,15 @@
           }
         },
         {
-          "ID": "2465",
+          "ID": "3457",
           "typeID": "__group__",
           "zOrder": "85",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1692",
+          "x": "985",
+          "y": "1702",
           "properties": {
             "controlName": "104-apis:authentication:jwt"
           },
@@ -3428,15 +3428,15 @@
           }
         },
         {
-          "ID": "2466",
+          "ID": "3458",
           "typeID": "__group__",
           "zOrder": "86",
           "measuredW": "130",
           "measuredH": "50",
           "w": "130",
           "h": "50",
-          "x": "1332",
-          "y": "1552",
+          "x": "1342",
+          "y": "1562",
           "properties": {
             "controlName": "110-caching"
           },
@@ -3475,15 +3475,15 @@
           }
         },
         {
-          "ID": "2467",
+          "ID": "3459",
           "typeID": "__group__",
           "zOrder": "87",
           "measuredW": "154",
           "measuredH": "40",
           "w": "154",
           "h": "40",
-          "x": "1502",
-          "y": "1400",
+          "x": "1512",
+          "y": "1410",
           "properties": {
             "controlName": "100-caching:server-side:redis"
           },
@@ -3555,15 +3555,15 @@
           }
         },
         {
-          "ID": "2468",
+          "ID": "3460",
           "typeID": "__group__",
           "zOrder": "88",
           "measuredW": "155",
           "measuredH": "40",
           "w": "155",
           "h": "40",
-          "x": "1502",
-          "y": "1445",
+          "x": "1512",
+          "y": "1455",
           "properties": {
             "controlName": "101-caching:server-side:memcached"
           },
@@ -3651,15 +3651,15 @@
           }
         },
         {
-          "ID": "2469",
+          "ID": "3461",
           "typeID": "__group__",
           "zOrder": "89",
           "measuredW": "129",
           "measuredH": "40",
           "w": "129",
           "h": "40",
-          "x": "1332",
-          "y": "1421",
+          "x": "1342",
+          "y": "1431",
           "properties": {
             "controlName": "101-caching:server-side"
           },
@@ -3699,15 +3699,15 @@
           }
         },
         {
-          "ID": "2470",
+          "ID": "3462",
           "typeID": "__group__",
           "zOrder": "90",
           "measuredW": "140",
           "measuredH": "40",
           "w": "140",
           "h": "40",
-          "x": "1333",
-          "y": "1464",
+          "x": "1343",
+          "y": "1474",
           "properties": {
             "controlName": "102-caching:client-side"
           },
@@ -3779,15 +3779,15 @@
           }
         },
         {
-          "ID": "2471",
+          "ID": "3463",
           "typeID": "__group__",
           "zOrder": "91",
           "measuredW": "139",
           "measuredH": "37",
           "w": "139",
           "h": "37",
-          "x": "1332",
-          "y": "1381",
+          "x": "1342",
+          "y": "1391",
           "properties": {
             "controlName": "100-caching:cdn"
           },
@@ -3859,15 +3859,15 @@
           }
         },
         {
-          "ID": "2472",
+          "ID": "3464",
           "typeID": "__group__",
           "zOrder": "92",
           "measuredW": "229",
           "measuredH": "50",
           "w": "229",
           "h": "50",
-          "x": "941",
-          "y": "1301",
+          "x": "951",
+          "y": "1311",
           "properties": {
             "controlName": "106-relational-databases"
           },
@@ -3906,15 +3906,15 @@
           }
         },
         {
-          "ID": "2473",
+          "ID": "3465",
           "typeID": "__group__",
           "zOrder": "93",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "668",
-          "y": "1305",
+          "x": "678",
+          "y": "1315",
           "properties": {
             "controlName": "100-relational-databases:postgresql"
           },
@@ -4002,15 +4002,15 @@
           }
         },
         {
-          "ID": "2474",
+          "ID": "3466",
           "typeID": "__group__",
           "zOrder": "94",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "668",
-          "y": "1350",
+          "x": "678",
+          "y": "1360",
           "properties": {
             "controlName": "101-relational-databases:mysql"
           },
@@ -4098,15 +4098,15 @@
           }
         },
         {
-          "ID": "2475",
+          "ID": "3467",
           "typeID": "__group__",
           "zOrder": "95",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "668",
-          "y": "1395",
+          "x": "678",
+          "y": "1405",
           "properties": {
             "controlName": "102-relational-databases:mariadb"
           },
@@ -4193,15 +4193,15 @@
           }
         },
         {
-          "ID": "2476",
+          "ID": "3468",
           "typeID": "__group__",
           "zOrder": "96",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "668",
-          "y": "1440",
+          "x": "678",
+          "y": "1450",
           "properties": {
             "controlName": "103-relational-databases:mssql"
           },
@@ -4289,15 +4289,15 @@
           }
         },
         {
-          "ID": "2477",
+          "ID": "3469",
           "typeID": "__group__",
           "zOrder": "97",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "668",
-          "y": "1486",
+          "x": "678",
+          "y": "1496",
           "properties": {
             "controlName": "104-relational-databases:oracle"
           },
@@ -4385,15 +4385,15 @@
           }
         },
         {
-          "ID": "2478",
+          "ID": "3470",
           "typeID": "__group__",
           "zOrder": "98",
           "measuredW": "214",
           "measuredH": "50",
           "w": "214",
           "h": "50",
-          "x": "1188",
-          "y": "2924",
+          "x": "1198",
+          "y": "2934",
           "properties": {
             "controlName": "107-nosql-databases"
           },
@@ -4432,15 +4432,15 @@
           }
         },
         {
-          "ID": "2479",
+          "ID": "3471",
           "typeID": "__group__",
           "zOrder": "99",
           "measuredW": "213",
           "measuredH": "40",
           "w": "213",
           "h": "40",
-          "x": "674",
-          "y": "2262",
+          "x": "684",
+          "y": "2272",
           "properties": {
             "controlName": "101-more-about-databases:acid"
           },
@@ -4512,15 +4512,15 @@
           }
         },
         {
-          "ID": "2480",
+          "ID": "3472",
           "typeID": "__group__",
           "zOrder": "100",
           "measuredW": "211",
           "measuredH": "50",
           "w": "211",
           "h": "50",
-          "x": "679",
-          "y": "2130",
+          "x": "689",
+          "y": "2140",
           "properties": {
             "controlName": "108-more-about-databases"
           },
@@ -4559,15 +4559,15 @@
           }
         },
         {
-          "ID": "2481",
+          "ID": "3473",
           "typeID": "__group__",
           "zOrder": "101",
           "measuredW": "213",
           "measuredH": "40",
           "w": "213",
           "h": "40",
-          "x": "674",
-          "y": "2306",
+          "x": "684",
+          "y": "2316",
           "properties": {
             "controlName": "102-more-about-databases:transactions"
           },
@@ -4639,15 +4639,15 @@
           }
         },
         {
-          "ID": "2482",
+          "ID": "3474",
           "typeID": "__group__",
           "zOrder": "102",
           "measuredW": "213",
           "measuredH": "40",
           "w": "213",
           "h": "40",
-          "x": "674",
-          "y": "2350",
+          "x": "684",
+          "y": "2360",
           "properties": {
             "controlName": "103-more-about-databases:n-plus-one-problem"
           },
@@ -4718,15 +4718,15 @@
           }
         },
         {
-          "ID": "2483",
+          "ID": "3475",
           "typeID": "__group__",
           "zOrder": "103",
           "measuredW": "215",
           "measuredH": "40",
           "w": "215",
           "h": "40",
-          "x": "672",
-          "y": "2394",
+          "x": "682",
+          "y": "2404",
           "properties": {
             "controlName": "104-more-about-databases:database-normalization"
           },
@@ -4797,15 +4797,15 @@
           }
         },
         {
-          "ID": "2484",
+          "ID": "3476",
           "typeID": "__group__",
           "zOrder": "104",
           "measuredW": "218",
           "measuredH": "40",
           "w": "218",
           "h": "40",
-          "x": "670",
-          "y": "1810",
+          "x": "680",
+          "y": "1820",
           "properties": {
             "controlName": "100-scaling-databases:database-indexes"
           },
@@ -4876,15 +4876,15 @@
           }
         },
         {
-          "ID": "2485",
+          "ID": "3477",
           "typeID": "__group__",
           "zOrder": "105",
           "measuredW": "212",
           "measuredH": "50",
           "w": "212",
           "h": "50",
-          "x": "945",
-          "y": "1554",
+          "x": "955",
+          "y": "1564",
           "properties": {
             "controlName": "109-apis"
           },
@@ -4923,15 +4923,15 @@
           }
         },
         {
-          "ID": "2486",
+          "ID": "3478",
           "typeID": "__group__",
           "zOrder": "106",
           "measuredW": "157",
           "measuredH": "40",
           "w": "157",
           "h": "40",
-          "x": "668",
-          "y": "1562",
+          "x": "678",
+          "y": "1572",
           "properties": {
             "controlName": "100-apis:rest"
           },
@@ -5003,15 +5003,15 @@
           }
         },
         {
-          "ID": "2487",
+          "ID": "3479",
           "typeID": "__group__",
           "zOrder": "107",
           "measuredW": "157",
           "measuredH": "40",
           "w": "157",
           "h": "40",
-          "x": "668",
-          "y": "1607",
+          "x": "678",
+          "y": "1617",
           "properties": {
             "controlName": "101-apis:json-apis"
           },
@@ -5083,15 +5083,15 @@
           }
         },
         {
-          "ID": "2488",
+          "ID": "3480",
           "typeID": "__group__",
           "zOrder": "108",
           "measuredW": "155",
           "measuredH": "40",
           "w": "155",
           "h": "40",
-          "x": "670",
-          "y": "1652",
+          "x": "680",
+          "y": "1662",
           "properties": {
             "controlName": "102-apis:soap"
           },
@@ -5163,15 +5163,15 @@
           }
         },
         {
-          "ID": "2489",
+          "ID": "3481",
           "typeID": "__group__",
           "zOrder": "109",
           "measuredW": "201",
           "measuredH": "40",
           "w": "201",
           "h": "40",
-          "x": "1082",
-          "y": "1412",
+          "x": "1092",
+          "y": "1422",
           "properties": {
             "controlName": "104-apis:hateoas"
           },
@@ -5243,15 +5243,15 @@
           }
         },
         {
-          "ID": "2490",
+          "ID": "3482",
           "typeID": "__group__",
           "zOrder": "110",
           "measuredW": "201",
           "measuredH": "40",
           "w": "201",
           "h": "40",
-          "x": "1082",
-          "y": "1448",
+          "x": "1092",
+          "y": "1458",
           "properties": {
             "controlName": "105-apis:open-api-spec"
           },
@@ -5322,15 +5322,15 @@
           }
         },
         {
-          "ID": "2491",
+          "ID": "3483",
           "typeID": "__group__",
           "zOrder": "111",
           "measuredW": "170",
           "measuredH": "50",
           "w": "170",
           "h": "50",
-          "x": "985",
-          "y": "1645",
+          "x": "995",
+          "y": "1655",
           "properties": {
             "controlName": "106-apis:authentication"
           },
@@ -5367,15 +5367,15 @@
           }
         },
         {
-          "ID": "2492",
+          "ID": "3484",
           "typeID": "__group__",
           "zOrder": "112",
           "measuredW": "240",
           "measuredH": "54",
           "w": "240",
           "h": "54",
-          "x": "1581",
-          "y": "1762",
+          "x": "1591",
+          "y": "1772",
           "properties": {
             "controlName": "111-web-security-knowledge"
           },
@@ -5414,26 +5414,26 @@
           }
         },
         {
-          "ID": "2493",
+          "ID": "3485",
           "typeID": "TextArea",
           "zOrder": "113",
           "w": "270",
           "h": "192",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "1552",
-          "y": "1526"
+          "x": "1562",
+          "y": "1536"
         },
         {
-          "ID": "2494",
+          "ID": "3486",
           "typeID": "__group__",
           "zOrder": "114",
           "measuredW": "239",
           "measuredH": "40",
           "w": "239",
           "h": "40",
-          "x": "1567",
-          "y": "1541",
+          "x": "1577",
+          "y": "1551",
           "properties": {
             "controlName": "100-web-security-knowledge:md5"
           },
@@ -5473,15 +5473,15 @@
           }
         },
         {
-          "ID": "2495",
+          "ID": "3487",
           "typeID": "__group__",
           "zOrder": "115",
           "measuredW": "237",
           "measuredH": "40",
           "w": "237",
           "h": "40",
-          "x": "1568",
-          "y": "1586",
+          "x": "1578",
+          "y": "1596",
           "properties": {
             "controlName": "101-web-security-knowledge:sha-family"
           },
@@ -5521,15 +5521,15 @@
           }
         },
         {
-          "ID": "2496",
+          "ID": "3488",
           "typeID": "__group__",
           "zOrder": "116",
           "measuredW": "119",
           "measuredH": "40",
           "w": "119",
           "h": "40",
-          "x": "1569",
-          "y": "1632",
+          "x": "1579",
+          "y": "1642",
           "properties": {
             "controlName": "104-web-security-knowledge:scrypt"
           },
@@ -5569,15 +5569,15 @@
           }
         },
         {
-          "ID": "2497",
+          "ID": "3489",
           "typeID": "__group__",
           "zOrder": "117",
           "measuredW": "111",
           "measuredH": "40",
           "w": "111",
           "h": "40",
-          "x": "1695",
-          "y": "1632",
+          "x": "1705",
+          "y": "1642",
           "properties": {
             "controlName": "102-web-security-knowledge:bcrypt"
           },
@@ -5617,42 +5617,42 @@
           }
         },
         {
-          "ID": "2498",
+          "ID": "3490",
           "typeID": "Label",
           "zOrder": "118",
           "w": "155",
           "measuredW": "149",
           "measuredH": "25",
-          "x": "1609",
-          "y": "1680",
+          "x": "1619",
+          "y": "1690",
           "properties": {
             "size": "17",
             "text": "Hashing Algorithms"
           }
         },
         {
-          "ID": "2499",
+          "ID": "3491",
           "typeID": "Label",
           "zOrder": "119",
           "measuredW": "128",
           "measuredH": "40",
-          "x": "1200",
-          "y": "789",
+          "x": "1210",
+          "y": "799",
           "properties": {
             "size": "32",
             "text": "Backend"
           }
         },
         {
-          "ID": "2500",
+          "ID": "3492",
           "typeID": "Arrow",
           "zOrder": "120",
           "w": "1",
           "h": "75",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1251",
-          "y": "702",
+          "x": "1261",
+          "y": "712",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -5675,15 +5675,15 @@
           }
         },
         {
-          "ID": "2501",
+          "ID": "3493",
           "typeID": "__group__",
           "zOrder": "121",
           "measuredW": "350",
           "measuredH": "141",
           "w": "350",
           "h": "141",
-          "x": "1477",
-          "y": "672",
+          "x": "1487",
+          "y": "682",
           "children": {
             "controls": {
               "control": [
@@ -5835,15 +5835,15 @@
           }
         },
         {
-          "ID": "2502",
+          "ID": "3494",
           "typeID": "__group__",
           "zOrder": "122",
           "measuredW": "408",
           "measuredH": "162",
           "w": "408",
           "h": "162",
-          "x": "665",
-          "y": "662",
+          "x": "675",
+          "y": "672",
           "children": {
             "controls": {
               "control": [
@@ -6044,15 +6044,15 @@
           }
         },
         {
-          "ID": "2503",
+          "ID": "3495",
           "typeID": "__group__",
           "zOrder": "123",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "668",
-          "y": "950",
+          "x": "678",
+          "y": "960",
           "properties": {
             "controlName": "100-learn-a-language:go"
           },
@@ -6140,15 +6140,15 @@
           }
         },
         {
-          "ID": "2504",
+          "ID": "3496",
           "typeID": "__group__",
           "zOrder": "124",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "668",
-          "y": "1108",
+          "x": "678",
+          "y": "1118",
           "properties": {
             "controlName": "102-learn-a-language:java"
           },
@@ -6236,15 +6236,15 @@
           }
         },
         {
-          "ID": "2505",
+          "ID": "3497",
           "typeID": "__group__",
           "zOrder": "125",
           "measuredW": "145",
           "measuredH": "40",
           "w": "145",
           "h": "40",
-          "x": "668",
-          "y": "907",
+          "x": "678",
+          "y": "917",
           "properties": {
             "controlName": "101-learn-a-language:rust"
           },
@@ -6332,15 +6332,15 @@
           }
         },
         {
-          "ID": "2506",
+          "ID": "3498",
           "typeID": "__group__",
           "zOrder": "126",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "668",
-          "y": "1152",
+          "x": "678",
+          "y": "1162",
           "properties": {
             "controlName": "103-learn-a-language:csharp"
           },
@@ -6428,15 +6428,15 @@
           }
         },
         {
-          "ID": "2507",
+          "ID": "3499",
           "typeID": "__group__",
           "zOrder": "127",
           "measuredW": "302",
           "measuredH": "50",
           "w": "302",
           "h": "50",
-          "x": "679",
-          "y": "1026",
+          "x": "689",
+          "y": "1036",
           "properties": {
             "controlName": "103-learn-a-language"
           },
@@ -6475,15 +6475,15 @@
           }
         },
         {
-          "ID": "2508",
+          "ID": "3500",
           "typeID": "__group__",
           "zOrder": "128",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "668",
-          "y": "1196",
+          "x": "678",
+          "y": "1206",
           "properties": {
             "controlName": "103-learn-a-language:php"
           },
@@ -6571,15 +6571,15 @@
           }
         },
         {
-          "ID": "2509",
+          "ID": "3501",
           "typeID": "__group__",
           "zOrder": "129",
           "measuredW": "146",
           "measuredH": "40",
           "w": "146",
           "h": "40",
-          "x": "846",
-          "y": "1110",
+          "x": "856",
+          "y": "1120",
           "properties": {
             "controlName": "105-learn-a-language:javascript"
           },
@@ -6651,15 +6651,15 @@
           }
         },
         {
-          "ID": "2510",
+          "ID": "3502",
           "typeID": "__group__",
           "zOrder": "130",
           "measuredW": "146",
           "measuredH": "40",
           "w": "146",
           "h": "40",
-          "x": "846",
-          "y": "1153",
+          "x": "856",
+          "y": "1163",
           "properties": {
             "controlName": "106-learn-a-language:python"
           },
@@ -6747,15 +6747,15 @@
           }
         },
         {
-          "ID": "2511",
+          "ID": "3503",
           "typeID": "__group__",
           "zOrder": "131",
           "measuredW": "146",
           "measuredH": "40",
           "w": "146",
           "h": "40",
-          "x": "846",
-          "y": "1196",
+          "x": "856",
+          "y": "1206",
           "properties": {
             "controlName": "107-learn-a-language:ruby"
           },
@@ -6843,15 +6843,15 @@
           }
         },
         {
-          "ID": "2512",
+          "ID": "3504",
           "typeID": "Arrow",
           "zOrder": "132",
           "w": "175",
           "h": "48",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1342",
-          "y": "960",
+          "x": "1352",
+          "y": "970",
           "properties": {
             "color": "2848996",
             "curvature": "0",
@@ -6873,15 +6873,15 @@
           }
         },
         {
-          "ID": "2513",
+          "ID": "3505",
           "typeID": "__group__",
           "zOrder": "133",
           "measuredW": "227",
           "measuredH": "50",
           "w": "227",
           "h": "50",
-          "x": "1140",
-          "y": "927",
+          "x": "1150",
+          "y": "937",
           "properties": {
             "controlName": "100-internet"
           },
@@ -6920,15 +6920,15 @@
           }
         },
         {
-          "ID": "2514",
+          "ID": "3506",
           "typeID": "__group__",
           "zOrder": "134",
           "measuredW": "310",
           "measuredH": "44",
           "w": "310",
           "h": "44",
-          "x": "1510",
-          "y": "855",
+          "x": "1520",
+          "y": "865",
           "properties": {
             "controlName": "100-internet:how-does-the-internet-work"
           },
@@ -7000,15 +7000,15 @@
           }
         },
         {
-          "ID": "2515",
+          "ID": "3507",
           "typeID": "__group__",
           "zOrder": "135",
           "measuredW": "310",
           "measuredH": "40",
           "w": "310",
           "h": "40",
-          "x": "1510",
-          "y": "902",
+          "x": "1520",
+          "y": "912",
           "properties": {
             "controlName": "101-internet:what-is-http"
           },
@@ -7080,15 +7080,15 @@
           }
         },
         {
-          "ID": "2516",
+          "ID": "3508",
           "typeID": "__group__",
           "zOrder": "136",
           "measuredW": "310",
           "measuredH": "40",
           "w": "310",
           "h": "40",
-          "x": "1510",
-          "y": "946",
+          "x": "1520",
+          "y": "956",
           "properties": {
             "controlName": "102-internet:browsers-and-how-they-work"
           },
@@ -7160,15 +7160,15 @@
           }
         },
         {
-          "ID": "2517",
+          "ID": "3509",
           "typeID": "__group__",
           "zOrder": "137",
           "measuredW": "311",
           "measuredH": "40",
           "w": "311",
           "h": "40",
-          "x": "1511",
-          "y": "990",
+          "x": "1521",
+          "y": "1000",
           "properties": {
             "controlName": "103-internet:dns-and-how-it-works"
           },
@@ -7240,15 +7240,15 @@
           }
         },
         {
-          "ID": "2518",
+          "ID": "3510",
           "typeID": "__group__",
           "zOrder": "138",
           "measuredW": "312",
           "measuredH": "40",
           "w": "312",
           "h": "40",
-          "x": "1510",
-          "y": "1034",
+          "x": "1520",
+          "y": "1044",
           "properties": {
             "controlName": "104-internet:what-is-domain-name"
           },
@@ -7320,15 +7320,15 @@
           }
         },
         {
-          "ID": "2519",
+          "ID": "3511",
           "typeID": "__group__",
           "zOrder": "139",
           "measuredW": "313",
           "measuredH": "40",
           "w": "313",
           "h": "40",
-          "x": "1511",
-          "y": "1078",
+          "x": "1521",
+          "y": "1088",
           "properties": {
             "controlName": "105-internet:what-is-hosting"
           },
@@ -7400,15 +7400,15 @@
           }
         },
         {
-          "ID": "2520",
+          "ID": "3512",
           "typeID": "__group__",
           "zOrder": "140",
           "measuredW": "82",
           "measuredH": "50",
           "w": "82",
           "h": "50",
-          "x": "1293",
-          "y": "1102",
+          "x": "1303",
+          "y": "1112",
           "properties": {
             "controlName": "100-version-control-systems:git"
           },
@@ -7479,15 +7479,15 @@
           }
         },
         {
-          "ID": "2521",
+          "ID": "3513",
           "typeID": "__group__",
           "zOrder": "141",
           "measuredW": "138",
           "measuredH": "49",
           "w": "138",
           "h": "49",
-          "x": "1684",
-          "y": "1184",
+          "x": "1694",
+          "y": "1194",
           "properties": {
             "controlName": "100-repo-hosting-services:github"
           },
@@ -7558,15 +7558,15 @@
           }
         },
         {
-          "ID": "2522",
+          "ID": "3514",
           "typeID": "__group__",
           "zOrder": "142",
           "measuredW": "227",
           "measuredH": "50",
           "w": "227",
           "h": "50",
-          "x": "1333",
-          "y": "1292",
+          "x": "1343",
+          "y": "1302",
           "properties": {
             "controlName": "105-repo-hosting-services"
           },
@@ -7605,15 +7605,15 @@
           }
         },
         {
-          "ID": "2523",
+          "ID": "3515",
           "typeID": "__group__",
           "zOrder": "143",
           "measuredW": "226",
           "measuredH": "50",
           "w": "226",
           "h": "50",
-          "x": "1139",
-          "y": "1023",
+          "x": "1149",
+          "y": "1033",
           "properties": {
             "controlName": "104-version-control-systems"
           },
@@ -7652,15 +7652,15 @@
           }
         },
         {
-          "ID": "2524",
+          "ID": "3516",
           "typeID": "__group__",
           "zOrder": "144",
           "measuredW": "140",
           "measuredH": "49",
           "w": "140",
           "h": "49",
-          "x": "1684",
-          "y": "1291",
+          "x": "1694",
+          "y": "1301",
           "properties": {
             "controlName": "102-repo-hosting-services:bitbucket"
           },
@@ -7748,15 +7748,15 @@
           }
         },
         {
-          "ID": "2525",
+          "ID": "3517",
           "typeID": "__group__",
           "zOrder": "145",
           "measuredW": "140",
           "measuredH": "49",
           "w": "140",
           "h": "49",
-          "x": "1684",
-          "y": "1237",
+          "x": "1694",
+          "y": "1247",
           "properties": {
             "controlName": "101-repo-hosting-services:gitlab"
           },
@@ -7845,15 +7845,15 @@
           }
         },
         {
-          "ID": "2526",
+          "ID": "3518",
           "typeID": "__group__",
           "zOrder": "146",
           "measuredW": "212",
           "measuredH": "40",
           "w": "212",
           "h": "40",
-          "x": "674",
-          "y": "2218",
+          "x": "684",
+          "y": "2228",
           "properties": {
             "controlName": "100-more-about-databases:orms"
           },
@@ -7925,15 +7925,15 @@
           }
         },
         {
-          "ID": "2527",
+          "ID": "3519",
           "typeID": "__group__",
           "zOrder": "147",
           "measuredW": "169",
           "measuredH": "50",
           "w": "169",
           "h": "50",
-          "x": "984",
-          "y": "2008",
+          "x": "994",
+          "y": "2018",
           "properties": {
             "controlName": "113-ci-cd"
           },
@@ -7973,15 +7973,15 @@
           }
         },
         {
-          "ID": "2528",
+          "ID": "3520",
           "typeID": "__group__",
           "zOrder": "148",
           "measuredW": "271",
           "measuredH": "40",
           "w": "271",
           "h": "40",
-          "x": "1561",
-          "y": "2208",
+          "x": "1571",
+          "y": "2218",
           "properties": {
             "controlName": "100-design-and-development-principles:gof-design-patterns"
           },
@@ -8053,15 +8053,15 @@
           }
         },
         {
-          "ID": "2529",
+          "ID": "3521",
           "typeID": "__group__",
           "zOrder": "149",
           "measuredW": "271",
           "measuredH": "40",
           "w": "271",
           "h": "40",
-          "x": "1561",
-          "y": "2252",
+          "x": "1571",
+          "y": "2262",
           "properties": {
             "controlName": "101-design-and-development-principles:domain-driven-design"
           },
@@ -8133,15 +8133,15 @@
           }
         },
         {
-          "ID": "2530",
+          "ID": "3522",
           "typeID": "__group__",
           "zOrder": "150",
           "measuredW": "271",
           "measuredH": "40",
           "w": "271",
           "h": "40",
-          "x": "1561",
-          "y": "2296",
+          "x": "1571",
+          "y": "2306",
           "properties": {
             "controlName": "102-design-and-development-principles:test-driven-development"
           },
@@ -8213,15 +8213,15 @@
           }
         },
         {
-          "ID": "2531",
+          "ID": "3523",
           "typeID": "__group__",
           "zOrder": "151",
           "measuredW": "210",
           "measuredH": "37",
           "w": "210",
           "h": "37",
-          "x": "1005",
-          "y": "2668",
+          "x": "1015",
+          "y": "2678",
           "properties": {
             "controlName": "104-architectural-patterns:serverless"
           },
@@ -8293,15 +8293,15 @@
           }
         },
         {
-          "ID": "2532",
+          "ID": "3524",
           "typeID": "__group__",
           "zOrder": "152",
           "measuredW": "155",
           "measuredH": "40",
           "w": "155",
           "h": "40",
-          "x": "670",
-          "y": "1697",
+          "x": "680",
+          "y": "1707",
           "properties": {
             "controlName": "103-apis:grpc"
           },
@@ -8374,15 +8374,15 @@
           }
         },
         {
-          "ID": "2533",
+          "ID": "3525",
           "typeID": "__group__",
           "zOrder": "153",
           "measuredW": "323",
           "measuredH": "50",
           "w": "323",
           "h": "50",
-          "x": "1005",
-          "y": "2264",
+          "x": "1015",
+          "y": "2274",
           "properties": {
             "controlName": "ext_link:roadmap.sh/software-design-architecture"
           },
@@ -8424,15 +8424,15 @@
           }
         },
         {
-          "ID": "2534",
+          "ID": "3526",
           "typeID": "__group__",
           "zOrder": "154",
           "measuredW": "174",
           "measuredH": "154",
           "w": "174",
           "h": "154",
-          "x": "1475",
-          "y": "2923",
+          "x": "1485",
+          "y": "2933",
           "properties": {
             "controlName": "100-nosql-databases:document-databases"
           },
@@ -8636,15 +8636,15 @@
           }
         },
         {
-          "ID": "2535",
+          "ID": "3527",
           "typeID": "__group__",
           "zOrder": "155",
           "measuredW": "168",
           "measuredH": "154",
           "w": "168",
           "h": "154",
-          "x": "1646",
-          "y": "2923",
+          "x": "1656",
+          "y": "2933",
           "properties": {
             "controlName": "102-nosql-databases:timeseries-databases"
           },
@@ -8848,15 +8848,15 @@
           }
         },
         {
-          "ID": "2536",
+          "ID": "3528",
           "typeID": "__group__",
           "zOrder": "156",
           "measuredW": "174",
           "measuredH": "154",
           "w": "174",
           "h": "154",
-          "x": "1475",
-          "y": "3072",
+          "x": "1485",
+          "y": "3082",
           "properties": {
             "controlName": "103-nosql-databases:realtime-databases"
           },
@@ -9060,15 +9060,15 @@
           }
         },
         {
-          "ID": "2537",
+          "ID": "3529",
           "typeID": "__group__",
           "zOrder": "157",
           "measuredW": "168",
           "measuredH": "154",
           "w": "168",
           "h": "154",
-          "x": "1646",
-          "y": "3072",
+          "x": "1656",
+          "y": "3082",
           "properties": {
             "controlName": "101-nosql-databases:column-databases"
           },
@@ -9272,15 +9272,15 @@
           }
         },
         {
-          "ID": "2538",
+          "ID": "3530",
           "typeID": "__group__",
           "zOrder": "158",
           "measuredW": "174",
           "measuredH": "154",
           "w": "174",
           "h": "154",
-          "x": "1475",
-          "y": "3222",
+          "x": "1485",
+          "y": "3232",
           "properties": {
             "controlName": "104-nosql-databases:key-value-databases"
           },
@@ -9484,15 +9484,15 @@
           }
         },
         {
-          "ID": "2539",
+          "ID": "3531",
           "typeID": "__group__",
           "zOrder": "159",
           "measuredW": "24",
           "measuredH": "24",
           "w": "24",
           "h": "24",
-          "x": "1802",
-          "y": "3036",
+          "x": "1812",
+          "y": "3046",
           "children": {
             "controls": {
               "control": [
@@ -9533,15 +9533,15 @@
           }
         },
         {
-          "ID": "2540",
+          "ID": "3532",
           "typeID": "__group__",
           "zOrder": "160",
           "measuredW": "24",
           "measuredH": "24",
           "w": "24",
           "h": "24",
-          "x": "1802",
-          "y": "3185",
+          "x": "1812",
+          "y": "3195",
           "children": {
             "controls": {
               "control": [
@@ -9582,15 +9582,15 @@
           }
         },
         {
-          "ID": "2541",
+          "ID": "3533",
           "typeID": "__group__",
           "zOrder": "161",
           "measuredW": "24",
           "measuredH": "24",
           "w": "24",
           "h": "24",
-          "x": "1466",
-          "y": "3185",
+          "x": "1476",
+          "y": "3195",
           "children": {
             "controls": {
               "control": [
@@ -9631,15 +9631,15 @@
           }
         },
         {
-          "ID": "2542",
+          "ID": "3534",
           "typeID": "__group__",
           "zOrder": "162",
           "measuredW": "24",
           "measuredH": "24",
           "w": "24",
           "h": "24",
-          "x": "1490",
-          "y": "2910",
+          "x": "1500",
+          "y": "2920",
           "children": {
             "controls": {
               "control": [
@@ -9680,15 +9680,15 @@
           }
         },
         {
-          "ID": "2543",
+          "ID": "3535",
           "typeID": "__group__",
           "zOrder": "163",
           "measuredW": "24",
           "measuredH": "24",
           "w": "24",
           "h": "24",
-          "x": "1466",
-          "y": "2910",
+          "x": "1476",
+          "y": "2920",
           "children": {
             "controls": {
               "control": [
@@ -9729,15 +9729,15 @@
           }
         },
         {
-          "ID": "2544",
+          "ID": "3536",
           "typeID": "__group__",
           "zOrder": "164",
           "measuredW": "211",
           "measuredH": "50",
           "w": "211",
           "h": "50",
-          "x": "679",
-          "y": "2008",
+          "x": "689",
+          "y": "2018",
           "properties": {
             "controlName": "109-scaling-databases"
           },
@@ -9776,15 +9776,15 @@
           }
         },
         {
-          "ID": "2545",
+          "ID": "3537",
           "typeID": "__group__",
           "zOrder": "165",
           "measuredW": "153",
           "measuredH": "40",
           "w": "153",
           "h": "40",
-          "x": "672",
-          "y": "1742",
+          "x": "682",
+          "y": "1752",
           "properties": {
             "controlName": "106-apis:graphql"
           },
@@ -9856,15 +9856,15 @@
           }
         },
         {
-          "ID": "2546",
+          "ID": "3538",
           "typeID": "__group__",
           "zOrder": "166",
           "measuredW": "144",
           "measuredH": "40",
           "w": "144",
           "h": "40",
-          "x": "1673",
-          "y": "2653",
+          "x": "1683",
+          "y": "2663",
           "properties": {
             "controlName": "ext_link:roadmap.sh/kubernetes"
           },
@@ -9905,15 +9905,15 @@
           }
         },
         {
-          "ID": "2547",
+          "ID": "3539",
           "typeID": "__group__",
           "zOrder": "167",
           "measuredW": "169",
           "measuredH": "102",
           "w": "169",
           "h": "102",
-          "x": "1646",
-          "y": "3222",
+          "x": "1656",
+          "y": "3232",
           "properties": {
             "controlName": "120-graph-databases"
           },
@@ -10041,26 +10041,26 @@
           }
         },
         {
-          "ID": "2548",
+          "ID": "3540",
           "typeID": "TextArea",
           "zOrder": "168",
           "w": "271",
           "h": "224",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "1551",
-          "y": "1874"
+          "x": "1561",
+          "y": "1884"
         },
         {
-          "ID": "2549",
+          "ID": "3541",
           "typeID": "__group__",
           "zOrder": "169",
           "measuredW": "86",
           "measuredH": "42",
           "w": "86",
           "h": "42",
-          "x": "1567",
-          "y": "1938",
+          "x": "1577",
+          "y": "1948",
           "properties": {
             "controlName": "106-web-security-knowledge:cors"
           },
@@ -10099,15 +10099,15 @@
           }
         },
         {
-          "ID": "2550",
+          "ID": "3542",
           "typeID": "__group__",
           "zOrder": "170",
           "measuredW": "90",
           "measuredH": "43",
           "w": "90",
           "h": "43",
-          "x": "1565",
-          "y": "1888",
+          "x": "1575",
+          "y": "1898",
           "properties": {
             "controlName": "105-web-security-knowledge:https"
           },
@@ -10146,15 +10146,15 @@
           }
         },
         {
-          "ID": "2551",
+          "ID": "3543",
           "typeID": "__group__",
           "zOrder": "171",
           "measuredW": "87",
           "measuredH": "44",
           "w": "87",
           "h": "44",
-          "x": "1568",
-          "y": "1988",
+          "x": "1578",
+          "y": "1998",
           "properties": {
             "controlName": "105-web-security-knowledge:content-security-policy"
           },
@@ -10193,15 +10193,15 @@
           }
         },
         {
-          "ID": "2552",
+          "ID": "3544",
           "typeID": "__group__",
           "zOrder": "172",
           "measuredW": "147",
           "measuredH": "43",
           "w": "147",
           "h": "43",
-          "x": "1660",
-          "y": "1888",
+          "x": "1670",
+          "y": "1898",
           "properties": {
             "controlName": "108-web-security-knowledge:owasp"
           },
@@ -10240,15 +10240,15 @@
           }
         },
         {
-          "ID": "2553",
+          "ID": "3545",
           "typeID": "__group__",
           "zOrder": "173",
           "measuredW": "149",
           "measuredH": "43",
           "w": "149",
           "h": "43",
-          "x": "1659",
-          "y": "1938",
+          "x": "1669",
+          "y": "1948",
           "properties": {
             "controlName": "107-web-security-knowledge:ssl-tls"
           },
@@ -10287,15 +10287,15 @@
           }
         },
         {
-          "ID": "2554",
+          "ID": "3546",
           "typeID": "__group__",
           "zOrder": "174",
           "measuredW": "271",
           "measuredH": "40",
           "w": "271",
           "h": "40",
-          "x": "1561",
-          "y": "2340",
+          "x": "1571",
+          "y": "2350",
           "properties": {
             "controlName": "103-design-and-development-principles:cqrs"
           },
@@ -10366,15 +10366,15 @@
           }
         },
         {
-          "ID": "2555",
+          "ID": "3547",
           "typeID": "__group__",
           "zOrder": "175",
           "measuredW": "270",
           "measuredH": "40",
           "w": "270",
           "h": "40",
-          "x": "1561",
-          "y": "2384",
+          "x": "1571",
+          "y": "2394",
           "properties": {
             "controlName": "104-design-and-development-principles:event-sourcing"
           },
@@ -10445,15 +10445,15 @@
           }
         },
         {
-          "ID": "2556",
+          "ID": "3548",
           "typeID": "__group__",
           "zOrder": "176",
           "measuredW": "211",
           "measuredH": "37",
           "w": "211",
           "h": "37",
-          "x": "1006",
-          "y": "2708",
+          "x": "1016",
+          "y": "2718",
           "properties": {
             "controlName": "105-architectural-patterns:service-mesh"
           },
@@ -10524,15 +10524,15 @@
           }
         },
         {
-          "ID": "2557",
+          "ID": "3549",
           "typeID": "__group__",
           "zOrder": "177",
           "measuredW": "211",
           "measuredH": "37",
           "w": "211",
           "h": "37",
-          "x": "1006",
-          "y": "2748",
+          "x": "1016",
+          "y": "2758",
           "properties": {
             "controlName": "106-architectural-patterns:twelve-factor-apps"
           },
@@ -10603,15 +10603,15 @@
           }
         },
         {
-          "ID": "2558",
+          "ID": "3550",
           "typeID": "__group__",
           "zOrder": "178",
           "measuredW": "198",
           "measuredH": "159",
           "w": "198",
           "h": "159",
-          "x": "1424",
-          "y": "2674",
+          "x": "1434",
+          "y": "2684",
           "properties": {
             "controlName": "116-search-engines"
           },
@@ -10648,15 +10648,15 @@
           }
         },
         {
-          "ID": "2559",
+          "ID": "3551",
           "typeID": "__group__",
           "zOrder": "179",
           "measuredW": "167",
           "measuredH": "40",
           "w": "167",
           "h": "40",
-          "x": "1439",
-          "y": "2691",
+          "x": "1449",
+          "y": "2701",
           "properties": {
             "controlName": "100-search-engines:elasticsearch"
           },
@@ -10728,15 +10728,15 @@
           }
         },
         {
-          "ID": "2560",
+          "ID": "3552",
           "typeID": "__group__",
           "zOrder": "180",
           "measuredW": "167",
           "measuredH": "40",
           "w": "167",
           "h": "40",
-          "x": "1439",
-          "y": "2737",
+          "x": "1449",
+          "y": "2747",
           "properties": {
             "controlName": "101-search-engines:solr"
           },
@@ -10808,15 +10808,15 @@
           }
         },
         {
-          "ID": "2561",
+          "ID": "3553",
           "typeID": "__group__",
           "zOrder": "181",
           "measuredW": "191",
           "measuredH": "40",
           "w": "191",
           "h": "40",
-          "x": "1275",
-          "y": "2540",
+          "x": "1285",
+          "y": "2550",
           "properties": {
             "controlName": "100-message-brokers:rabbitmq"
           },
@@ -10887,15 +10887,15 @@
           }
         },
         {
-          "ID": "2562",
+          "ID": "3554",
           "typeID": "__group__",
           "zOrder": "182",
           "measuredW": "192",
           "measuredH": "40",
           "w": "192",
           "h": "40",
-          "x": "1275",
-          "y": "2584",
+          "x": "1285",
+          "y": "2594",
           "properties": {
             "controlName": "101-message-brokers:kafka"
           },
@@ -10966,15 +10966,15 @@
           }
         },
         {
-          "ID": "2563",
+          "ID": "3555",
           "typeID": "__group__",
           "zOrder": "183",
           "measuredW": "201",
           "measuredH": "50",
           "w": "201",
           "h": "50",
-          "x": "674",
-          "y": "2973",
+          "x": "684",
+          "y": "2983",
           "properties": {
             "controlName": "122-server-sent-events"
           },
@@ -11013,15 +11013,15 @@
           }
         },
         {
-          "ID": "2564",
+          "ID": "3556",
           "typeID": "__group__",
           "zOrder": "184",
           "measuredW": "213",
           "measuredH": "50",
           "w": "213",
           "h": "50",
-          "x": "1188",
-          "y": "3224",
+          "x": "1198",
+          "y": "3234",
           "properties": {
             "controlName": "123-scalability"
           },
@@ -11060,15 +11060,15 @@
           }
         },
         {
-          "ID": "2565",
+          "ID": "3557",
           "typeID": "__group__",
           "zOrder": "185",
           "measuredW": "232",
           "measuredH": "282",
           "w": "232",
           "h": "282",
-          "x": "880",
-          "y": "3212",
+          "x": "890",
+          "y": "3222",
           "properties": {
             "controlName": "100-scalability:mitigation-strategies"
           },
@@ -11136,15 +11136,15 @@
           }
         },
         {
-          "ID": "2566",
+          "ID": "3558",
           "typeID": "__group__",
           "zOrder": "186",
           "measuredW": "197",
           "measuredH": "40",
           "w": "197",
           "h": "40",
-          "x": "892",
-          "y": "3231",
+          "x": "902",
+          "y": "3241",
           "properties": {
             "controlName": "100-scalability:mitigation-strategies:graceful-degradation"
           },
@@ -11183,15 +11183,15 @@
           }
         },
         {
-          "ID": "2567",
+          "ID": "3559",
           "typeID": "__group__",
           "zOrder": "187",
           "measuredW": "197",
           "measuredH": "40",
           "w": "197",
           "h": "40",
-          "x": "892",
-          "y": "3275",
+          "x": "902",
+          "y": "3285",
           "properties": {
             "controlName": "101-scalability:mitigation-strategies:throttling"
           },
@@ -11230,15 +11230,15 @@
           }
         },
         {
-          "ID": "2568",
+          "ID": "3560",
           "typeID": "__group__",
           "zOrder": "188",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "892",
-          "y": "3319",
+          "x": "902",
+          "y": "3329",
           "properties": {
             "controlName": "102-scalability:mitigation-strategies:backpressure"
           },
@@ -11277,15 +11277,15 @@
           }
         },
         {
-          "ID": "2569",
+          "ID": "3561",
           "typeID": "__group__",
           "zOrder": "189",
           "measuredW": "199",
           "measuredH": "40",
           "w": "199",
           "h": "40",
-          "x": "892",
-          "y": "3363",
+          "x": "902",
+          "y": "3373",
           "properties": {
             "controlName": "103-scalability:mitigation-strategies:loadshifting"
           },
@@ -11324,15 +11324,15 @@
           }
         },
         {
-          "ID": "2570",
+          "ID": "3562",
           "typeID": "__group__",
           "zOrder": "190",
           "measuredW": "197",
           "measuredH": "40",
           "w": "197",
           "h": "40",
-          "x": "892",
-          "y": "3407",
+          "x": "902",
+          "y": "3417",
           "properties": {
             "controlName": "104-scalability:mitigation-strategies:circuit-breaker"
           },
@@ -11371,15 +11371,15 @@
           }
         },
         {
-          "ID": "2571",
+          "ID": "3563",
           "typeID": "__group__",
           "zOrder": "191",
           "measuredW": "215",
           "measuredH": "40",
           "w": "215",
           "h": "40",
-          "x": "672",
-          "y": "2438",
+          "x": "682",
+          "y": "2448",
           "properties": {
             "controlName": "105-more-about-databases:failure-modes"
           },
@@ -11450,15 +11450,15 @@
           }
         },
         {
-          "ID": "2572",
+          "ID": "3564",
           "typeID": "__group__",
           "zOrder": "192",
           "measuredW": "215",
           "measuredH": "40",
           "w": "215",
           "h": "40",
-          "x": "672",
-          "y": "2482",
+          "x": "682",
+          "y": "2492",
           "properties": {
             "controlName": "106-more-about-databases:profiling-performance"
           },
@@ -11529,39 +11529,39 @@
           }
         },
         {
-          "ID": "2573",
+          "ID": "3565",
           "typeID": "TextArea",
           "zOrder": "193",
           "w": "337",
           "h": "124",
           "measuredW": "200",
           "measuredH": "140",
-          "x": "1133",
-          "y": "3683"
+          "x": "1143",
+          "y": "3693"
         },
         {
-          "ID": "2574",
+          "ID": "3566",
           "typeID": "Label",
           "zOrder": "194",
           "measuredW": "285",
           "measuredH": "25",
-          "x": "1154",
-          "y": "3703",
+          "x": "1164",
+          "y": "3713",
           "properties": {
             "size": "17",
             "text": "Have a look at the DevOps Roadmap"
           }
         },
         {
-          "ID": "2575",
+          "ID": "3567",
           "typeID": "__group__",
           "zOrder": "195",
           "measuredW": "292",
           "measuredH": "44",
           "w": "292",
           "h": "44",
-          "x": "1154",
-          "y": "3738",
+          "x": "1164",
+          "y": "3748",
           "properties": {
             "controlName": "ext_link:roadmap.sh/devops"
           },
@@ -11600,15 +11600,15 @@
           }
         },
         {
-          "ID": "2576",
+          "ID": "3568",
           "typeID": "__group__",
           "zOrder": "196",
           "measuredW": "148",
           "measuredH": "44",
           "w": "148",
           "h": "44",
-          "x": "1661",
-          "y": "1987",
+          "x": "1671",
+          "y": "1997",
           "properties": {
             "controlName": "106-web-security-knowledge:server-security"
           },
@@ -11647,15 +11647,15 @@
           }
         },
         {
-          "ID": "2577",
+          "ID": "3569",
           "typeID": "__group__",
           "zOrder": "197",
           "measuredW": "242",
           "measuredH": "47",
           "w": "242",
           "h": "47",
-          "x": "1568",
-          "y": "2039",
+          "x": "1578",
+          "y": "2049",
           "properties": {
             "controlName": "ext_link:roadmap.sh/best-practices/api-security"
           },
@@ -11696,15 +11696,15 @@
           }
         },
         {
-          "ID": "2578",
+          "ID": "3570",
           "typeID": "__group__",
           "zOrder": "198",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1729",
+          "x": "985",
+          "y": "1739",
           "properties": {
             "controlName": "102-apis:authentication:basic-authentication"
           },
@@ -11775,15 +11775,15 @@
           }
         },
         {
-          "ID": "2579",
+          "ID": "3571",
           "typeID": "__group__",
           "zOrder": "199",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1766",
+          "x": "985",
+          "y": "1776",
           "properties": {
             "controlName": "103-apis:authentication:token-authentication"
           },
@@ -11854,15 +11854,15 @@
           }
         },
         {
-          "ID": "2580",
+          "ID": "3572",
           "typeID": "__group__",
           "zOrder": "200",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1803",
+          "x": "985",
+          "y": "1813",
           "properties": {
             "controlName": "101-apis:authentication:oauth"
           },
@@ -11933,15 +11933,15 @@
           }
         },
         {
-          "ID": "2581",
+          "ID": "3573",
           "typeID": "__group__",
           "zOrder": "201",
           "measuredW": "178",
           "measuredH": "40",
           "w": "178",
           "h": "40",
-          "x": "976",
-          "y": "1840",
+          "x": "986",
+          "y": "1850",
           "properties": {
             "controlName": "100-apis:authentication:cookie-based"
           },
@@ -12012,15 +12012,15 @@
           }
         },
         {
-          "ID": "2582",
+          "ID": "3574",
           "typeID": "__group__",
           "zOrder": "202",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1877",
+          "x": "985",
+          "y": "1887",
           "properties": {
             "controlName": "105-apis:authentication:openid"
           },
@@ -12091,15 +12091,15 @@
           }
         },
         {
-          "ID": "2583",
+          "ID": "3575",
           "typeID": "__group__",
           "zOrder": "203",
           "measuredW": "179",
           "measuredH": "40",
           "w": "179",
           "h": "40",
-          "x": "975",
-          "y": "1913",
+          "x": "985",
+          "y": "1923",
           "properties": {
             "controlName": "105-apis:authentication:saml"
           },
@@ -12170,15 +12170,15 @@
           }
         },
         {
-          "ID": "2584",
+          "ID": "3576",
           "typeID": "Arrow",
           "zOrder": "204",
           "w": "1",
           "h": "211",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1391",
-          "y": "1801",
+          "x": "1401",
+          "y": "1811",
           "properties": {
             "color": "2848996",
             "direction": "bottom",
@@ -12199,15 +12199,15 @@
           }
         },
         {
-          "ID": "2585",
+          "ID": "3577",
           "typeID": "__group__",
           "zOrder": "205",
           "measuredW": "195",
           "measuredH": "50",
           "w": "195",
           "h": "50",
-          "x": "1293",
-          "y": "2008",
+          "x": "1303",
+          "y": "2018",
           "properties": {
             "controlName": "112-testing"
           },
@@ -12246,15 +12246,15 @@
           }
         },
         {
-          "ID": "2586",
+          "ID": "3578",
           "typeID": "__group__",
           "zOrder": "206",
           "measuredW": "223",
           "measuredH": "40",
           "w": "223",
           "h": "40",
-          "x": "1278",
-          "y": "2093",
+          "x": "1288",
+          "y": "2103",
           "properties": {
             "controlName": "100-testing:integration-testing"
           },
@@ -12326,15 +12326,15 @@
           }
         },
         {
-          "ID": "2587",
+          "ID": "3579",
           "typeID": "__group__",
           "zOrder": "207",
           "measuredW": "224",
           "measuredH": "37",
           "w": "224",
           "h": "37",
-          "x": "1276",
-          "y": "2136",
+          "x": "1286",
+          "y": "2146",
           "properties": {
             "controlName": "101-testing:unit-testing"
           },
@@ -12406,15 +12406,15 @@
           }
         },
         {
-          "ID": "2588",
+          "ID": "3580",
           "typeID": "__group__",
           "zOrder": "208",
           "measuredW": "225",
           "measuredH": "37",
           "w": "225",
           "h": "37",
-          "x": "1276",
-          "y": "2175",
+          "x": "1286",
+          "y": "2185",
           "properties": {
             "controlName": "102-testing:functional-testing"
           },
@@ -12486,15 +12486,15 @@
           }
         },
         {
-          "ID": "2589",
+          "ID": "3581",
           "typeID": "__group__",
           "zOrder": "209",
           "measuredW": "218",
           "measuredH": "40",
           "w": "218",
           "h": "40",
-          "x": "670",
-          "y": "1852",
+          "x": "680",
+          "y": "1862",
           "properties": {
             "controlName": "101-scaling-databases:data-replication"
           },
@@ -12566,15 +12566,15 @@
           }
         },
         {
-          "ID": "2590",
+          "ID": "3582",
           "typeID": "__group__",
           "zOrder": "210",
           "measuredW": "215",
           "measuredH": "40",
           "w": "215",
           "h": "40",
-          "x": "672",
-          "y": "1895",
+          "x": "682",
+          "y": "1905",
           "properties": {
             "controlName": "102-scaling-databases:sharding-strategies"
           },
@@ -12646,15 +12646,15 @@
           }
         },
         {
-          "ID": "2591",
+          "ID": "3583",
           "typeID": "__group__",
           "zOrder": "211",
           "measuredW": "216",
           "measuredH": "40",
           "w": "216",
           "h": "40",
-          "x": "672",
-          "y": "1938",
+          "x": "682",
+          "y": "1948",
           "properties": {
             "controlName": "103-scaling-databases:cap-theorem"
           },
@@ -12726,15 +12726,15 @@
           }
         },
         {
-          "ID": "2592",
+          "ID": "3584",
           "typeID": "__group__",
           "zOrder": "212",
           "measuredW": "200",
           "measuredH": "50",
           "w": "200",
           "h": "50",
-          "x": "674",
-          "y": "3019",
+          "x": "684",
+          "y": "3029",
           "properties": {
             "controlName": "121-web-sockets"
           },
@@ -12772,15 +12772,15 @@
           }
         },
         {
-          "ID": "2593",
+          "ID": "3585",
           "typeID": "__group__",
           "zOrder": "213",
           "measuredW": "200",
           "measuredH": "50",
           "w": "200",
           "h": "50",
-          "x": "674",
-          "y": "3065",
+          "x": "684",
+          "y": "3075",
           "properties": {
             "controlName": "123-long-polling"
           },
@@ -12818,15 +12818,15 @@
           }
         },
         {
-          "ID": "2594",
+          "ID": "3586",
           "typeID": "__group__",
           "zOrder": "214",
           "measuredW": "200",
           "measuredH": "50",
           "w": "200",
           "h": "50",
-          "x": "674",
-          "y": "3111",
+          "x": "684",
+          "y": "3121",
           "properties": {
             "controlName": "124-short-polling"
           },
@@ -12864,15 +12864,15 @@
           }
         },
         {
-          "ID": "2595",
+          "ID": "3587",
           "typeID": "__group__",
           "zOrder": "215",
           "measuredW": "212",
           "measuredH": "41",
           "w": "212",
           "h": "41",
-          "x": "671",
-          "y": "3220",
+          "x": "681",
+          "y": "3230",
           "properties": {
             "controlName": "103-scalability:horizontal-vertical-scaling"
           },
@@ -12911,15 +12911,15 @@
           }
         },
         {
-          "ID": "2596",
+          "ID": "3588",
           "typeID": "__group__",
           "zOrder": "216",
           "measuredW": "432",
           "measuredH": "124",
           "w": "432",
           "h": "124",
-          "x": "670",
-          "y": "3491",
+          "x": "680",
+          "y": "3501",
           "properties": {
             "controlName": "104-scalability:observability"
           },
@@ -12984,15 +12984,15 @@
           }
         },
         {
-          "ID": "2597",
+          "ID": "3589",
           "typeID": "__group__",
           "zOrder": "217",
           "measuredW": "239",
           "measuredH": "50",
           "w": "239",
           "h": "50",
-          "x": "1184",
-          "y": "3447",
+          "x": "1194",
+          "y": "3457",
           "properties": {
             "controlName": "ext_link:roadmap.sh/devops?r=devops-beginner"
           },
@@ -13033,15 +13033,15 @@
           }
         },
         {
-          "ID": "2598",
+          "ID": "3590",
           "typeID": "Arrow",
           "zOrder": "218",
           "w": "3",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1848",
-          "y": "829",
+          "x": "1858",
+          "y": "839",
           "properties": {
             "direction": "bottom",
             "leftArrow": "false",
@@ -13062,15 +13062,15 @@
           }
         },
         {
-          "ID": "2599",
+          "ID": "3591",
           "typeID": "Arrow",
           "zOrder": "219",
           "w": "3",
           "h": "3",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "648",
-          "y": "882",
+          "x": "658",
+          "y": "892",
           "properties": {
             "direction": "bottom",
             "leftArrow": "false",
@@ -13091,15 +13091,15 @@
           }
         },
         {
-          "ID": "2600",
+          "ID": "3592",
           "typeID": "Arrow",
           "zOrder": "220",
           "w": "3",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1369",
-          "y": "643",
+          "x": "1379",
+          "y": "653",
           "properties": {
             "direction": "bottom",
             "leftArrow": "false",
@@ -13120,48 +13120,65 @@
           }
         },
         {
-          "ID": "2601",
+          "ID": "3594",
           "typeID": "__group__",
           "zOrder": "221",
           "measuredW": "410",
           "measuredH": "47",
           "w": "410",
           "h": "47",
-          "x": "665",
-          "y": "831",
-          "properties": {
-            "controlName": "json:backend-beginner.json"
-          },
+          "x": "675",
+          "y": "841",
           "children": {
             "controls": {
               "control": [
                 {
                   "ID": "0",
-                  "typeID": "Canvas",
+                  "typeID": "__group__",
                   "zOrder": "0",
+                  "measuredW": "410",
+                  "measuredH": "47",
                   "w": "410",
                   "h": "47",
-                  "measuredW": "100",
-                  "measuredH": "70",
                   "x": "0",
                   "y": "0",
                   "properties": {
-                    "color": "3355443",
-                    "borderColor": "3355443"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "210",
-                  "measuredH": "26",
-                  "x": "100",
-                  "y": "11",
-                  "properties": {
-                    "color": "16777215",
-                    "size": "18",
-                    "text": "Visit the Beginner Version"
+                    "controlName": "json:backend-beginner.json"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "410",
+                          "h": "47",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "3355443",
+                            "borderColor": "3355443"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "210",
+                          "measuredH": "26",
+                          "x": "100",
+                          "y": "11",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "18",
+                            "text": "Visit the Beginner Version"
+                          }
+                        }
+                      ]
+                    }
                   }
                 }
               ]
@@ -13180,8 +13197,8 @@
     "resourceID": "DAF9FB64-BA77-40D4-BCEF-EEE21C480971",
     "mockupH": "3227",
     "mockupW": "1203",
-    "measuredW": "1851",
-    "measuredH": "3870",
+    "measuredW": "1861",
+    "measuredH": "3880",
     "version": "1.0"
   },
   "groupOffset": {

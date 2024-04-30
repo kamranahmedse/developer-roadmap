@@ -1,0 +1,15 @@
+---
+import { TeamSidebar } from '../../components/TeamSidebar';
+import { TeamActivityPage } from '../../components/TeamActivity/TeamActivityPage';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Team Activities'
+  noIndex={true}
+  initialLoadingMessage='Loading activity'
+>
+  <TeamSidebar activePageId='activity' client:load>
+    <TeamActivityPage client:only='react' />
+  </TeamSidebar>
+</AccountLayout>

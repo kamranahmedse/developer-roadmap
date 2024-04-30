@@ -1,32 +1,24 @@
 import { useEffect, useState } from 'react';
-import type { ResourceType } from '../../lib/resource-progress';
-import type { AllowedActivityActionType } from './ActivityStream';
 import { httpPost } from '../../lib/http';
 import { Modal } from '../Modal.tsx';
 import { ModalLoader } from '../UserProgress/ModalLoader.tsx';
 import { ArrowUpRight, BookOpen, Check } from 'lucide-react';
+import type { TeamStreamActivity } from './TeamActivityPage.tsx';
 
-type ActivityTopicDetailsProps = {
-  activityId: string;
-  resourceId: string;
-  resourceType: ResourceType | 'question';
-  isCustomResource?: boolean;
-  topicIds: string[];
-  topicCount: number;
-  actionType: AllowedActivityActionType;
+type TeamActivityTopicsModalProps = {
+  activity: TeamStreamActivity;
   onClose: () => void;
 };
 
-export function ActivityTopicsModal(props: ActivityTopicDetailsProps) {
+export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
+  const { activity, onClose } = props;
   const {
     resourceId,
     resourceType,
     isCustomResource,
     topicIds = [],
-    topicCount,
     actionType,
-    onClose,
-  } = props;
+  } = activity;
 
   const [isLoading, setIsLoading] = useState(true);
   const [topicTitles, setTopicTitles] = useState<Record<string, string>>({});

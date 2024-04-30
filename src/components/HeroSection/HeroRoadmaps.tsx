@@ -201,7 +201,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                     Team{' '}
                     <a
                       className="mx-1 font-medium underline underline-offset-2 transition-colors hover:text-gray-300"
-                      href={`/team/progress?t=${currentTeam?.id}`}
+                      href={`/team/activity?t=${currentTeam?.id}`}
                     >
                       {teamName}
                     </a>
