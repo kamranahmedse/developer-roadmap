@@ -25,12 +25,12 @@ In this article, we’ll cover 25 backend development tools that are crucial in 
 
 The categories we’ll tackle are:
 
-- IDEs and Editors
-- Database Tools
+- IDEs and editors
+- Database tools
 - Collaboration
 - Hosting Services
-- API-Related Tools
-- Productivity
+- API-Related tools
+- Productivity tools
 
 So let’s get started!
 
@@ -46,7 +46,7 @@ Let’s see some examples that are great for a web development project.
 
 The [Jetbrains family](https://www.jetbrains.com/) of IDEs targets multiple programming languages, including JavaScript, .NET, JAVA (and the Java Virtual Machine), Python, PHP, and more (mostly great options for web development).
 
-![Jetbrains](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849700950.png)
+![Jetbrains code editor](https://assets.roadmap.sh/guest/jetbrains-code-editor-z7z1t.png)
 
 The benefit of using these IDEs, in comparison with others, is that given how they’re language/technology specific, they have tools designed for those programming languages and specifically for this list to help in your backend development tasks, such as:
 
@@ -60,7 +60,7 @@ The only minor issue with these IDEs, especially when compared to the rest of th
 
 [VSCode](https://code.visualstudio.com/) is definitely one of the most popular alternatives these days for all types of web developers, but definitely for backend developers. This IDE’s strongest selling point is that it’s incredibly extensible through plugins. And the community using it is so big and varied that there are plugins for literally anything you need.
 
-![VSCode](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849510314.png)
+![VSCode code editor](https://assets.roadmap.sh/guest/vscode-code-editor-8pznw.png)
 
 The other major benefit of VSCode over JetBrains products is that it gives developers a fully working IDE for FREE. While some of the extensions don’t provide exactly the same developer experience as a JetBrains IDE, the proper combination of extensions can provide a very close alternative through VSCode.
 
@@ -68,7 +68,7 @@ The other major benefit of VSCode over JetBrains products is that it gives devel
 
 [Zed](https://zed.dev/) is a different type of code editor, and because of that, it might just be the right one for you.
 
-![Zed](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849771500.png)
+![Zed code editor](https://assets.roadmap.sh/guest/zed-code-editor-7ovxz.png)
 
 Zed, like VSCode, is an all-purpose code editor, letting you code in whatever language you want (whether you’re doing web development or not). The main reasons why you’d pick Zed over others are:
 
@@ -84,7 +84,7 @@ Before VSCode, [Sublime Text](https://www.sublimetext.com/) was probably one of 
 
 Just like VSCode, Sublime supports extensibility through plugins, and the rich ecosystem of plugins makes it quite a versatile editor. As a note, this code editor also supports GPU rendering of the UI, like Zed does, so if performance is important to you, then you’ll want to keep reading.
 
-![Sublime](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849579321.png)
+![Sublime code editor](https://assets.roadmap.sh/guest/sublime-text-code-editor-ngtnf.png)
 
 With a refreshed UI (if you’ve used Sublime Text in the past, you’ll be happily surprised!) and better internal tooling, the latest version of this editor (version 4) is trying to regain the portion of the market that VSCode took from it at the time.
 
@@ -94,7 +94,7 @@ With a refreshed UI (if you’ve used Sublime Text in the past, you’ll be happ
 
 This is such an iconic text editor that all the previously mentioned IDE have what is called a “vim mode,” which allows you to use them as if you were using VIM (with the visual and input modes).
 
-![Vim](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849488670.png)
+![Vim code editor](https://assets.roadmap.sh/guest/vim-code-editor-ohiyc.png)
 
 Vim lets you write code without having to move your fingers away from the home row (the row where you “rest” your fingers, the one with the F and G keys). That means you can navigate documents, write code, move through projects, and more, all with minimum hand movement.
 
@@ -114,7 +114,7 @@ Let’s take a look at some great database tools you can use as a backend develo
 
 This tool lets you access all SQL databases from within the same user interface, it provides great help while browsing the data stored in the database, and it also has features that help you write better SQL queries.
 
-![DataGrip](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849834698.png)
+![DataGrip database explorer](https://assets.roadmap.sh/guest/datagrip-database-explorer-l8987.png)
 
 While the pricing of these tools might be a bit steep (especially if you go with the IDE as well), it’s definitely a solid option if you’re looking for feature-rich and stable software development tools.
 
@@ -124,7 +124,7 @@ While the pricing of these tools might be a bit steep (especially if you go with
 
 In general, the Navicat alternatives are quite lightweight and powerful to use. They might not be as feature-rich as Datagrip, but they let you easily browse and query the data you need.
 
-![Navicat](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849810856.png)
+![Navicat database explorer](https://assets.roadmap.sh/guest/navicat-database-explorer-r1unn.png)
 
 The free trial for Navicat only lasts 14 days, and then you’ll have to pay a monthly fee. That said, for non-commercial use, the license is quite low, which makes it accessible to almost all developers.
 
@@ -144,7 +144,7 @@ The Navicat series of apps are great backend tools to have at your disposal, if 
 - Tableplus only supports SQL-based databases.
 - The pricing model is simpler, by only charging a one-time license without you having to commit to a monthly subscription.
 
-![TablePlus](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849788403.png)
+![TablePlus database manager](https://assets.roadmap.sh/guest/tableplus-database-manager-06d09.png)
 
 Some of the most relevant features of Tableplus are:
 
@@ -161,7 +161,7 @@ This is a solid backend tool alternative to any of the previous options and with
 
 For a full list of supported databases on the free version, check out their [about page](https://dbeaver.io/about/).
 
-![DBeaver Demo](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849342173.png)
+![DBeaver database manager](https://assets.roadmap.sh/guest/dbeaver-database-manager-fvlrd.png)
 
 Some of the major features of DBeaver are:
 
@@ -183,7 +183,7 @@ While these might not be considered “backend tools” per se, they definitely 
 
 Setting up a new project and a team takes minutes in Trello, and through the plugin system, you can get extra features such as date reminders, calendar integrations, and more.
 
-![Trello](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849443769.png)
+![Trello board](https://assets.roadmap.sh/guest/trello-board-o0i4i.png)
 
 The simple UI and intuitive UX make Trello one of the best options out there for collaborative tools as long as the needs of the team are met with simple column-based layouts and minimal information.
 
@@ -193,7 +193,7 @@ The simple UI and intuitive UX make Trello one of the best options out there for
 
 Their limited free plan lasts forever, so if you have a small team and limited requirements, this might just be the perfect tool for you. Also, if you actually need to pay, Monday’s plans are accessible, especially when compared to other alternatives.
 
-![Monday](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849749004.png)
+![Monday project management tool](https://assets.roadmap.sh/guest/monday-project-management-tool-xws17.png)
 
 Monday’s fully customizable UI lets you build the collaborative environment you need. This is a huge advantage over others who've been around for longer and have a fixed UI that you have to adapt to.
 
@@ -201,7 +201,7 @@ Monday’s fully customizable UI lets you build the collaborative environment yo
 
 [Basecamp](https://basecamp.com/) is a mix between Trello, Monday, and Notion in the sense that it tries to provide developers with the best and most relevant tools from those worlds, leaving out the ones that just create “noise.”
 
-![Basecamp](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849933042.png)
+![Basecamp project management tool](https://assets.roadmap.sh/guest/basecamp-project-management-tool-2pusd.png)
 
 Basecamp’s philosophy is to keep things simple and only focus on the features that truly add to collaboration:
 
@@ -218,7 +218,7 @@ The only “downside” to basecamp, if you will, is that there is no “forever
 
 They have a free plan that, while feature-limited, it’s perfect for understanding the basic way of using Wrike and how useful it can be to you in your current project.
 
-![Wrike](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849645662.png)
+![Wrike project management tool](https://assets.roadmap.sh/guest/wrike-project-management-tool-5g3kl.png)
 
 Their innovative use of AI allows you to create content faster, analyze project and task descriptions, and create subtasks based on it.
 
@@ -242,7 +242,7 @@ Let’s take a look at some of the most common alternatives!
 - A great uptime (99.95%)
 - With more than 200 ready-made templates for you to get going.
 
-![Railway](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849461849.png)
+![Railway hosting](https://assets.roadmap.sh/guest/railway-hosting-j8me8.png)
 
 Railway has no free plan, but their basic one is very accessible. Careful though, they also charge per resource utilization. Lucky for you, they have a [very handy consumption calculator](https://railway.app/pricing) to avoid surprises at the end of the month!
 
@@ -252,7 +252,7 @@ Railway has no free plan, but their basic one is very accessible. Careful though
 
 The list of supported programming languages is not huge, but the most common ones are definitely covered: Node.js, Ruby, JAVA, PHP, Python, Go, Scala, and even Clojure.
 
-![Heroku](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849852086.png)
+![Heroku hosting](https://assets.roadmap.sh/guest/heroku-hosting-2u6bz.png)
 
 Another great selling point for Heroku is that on top of their infrastructure, they also offer a managed Postgre database as a service and a Redis one. In both situations, you’ll have to pay for the services as you use them, so keep that in mind. 
 
@@ -262,7 +262,7 @@ As opposed to platforms such as Heroku, [Digital Ocean](https://www.digitalocean
 
 This is by no means something bad, some teams do prefer to have that freedom over other platforms like Railway and Heroku, where everything’s already managed.
 
-![Digital Ocean](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849911479.png)
+![Digital Ocean hosting](https://assets.roadmap.sh/guest/digital-ocean-hosting-i7a9c.png)
 
 Large-scale applications will usually require to have custom infrastructure that managed services can hardly provide. This is where IaaS providers come in.
 
@@ -274,7 +274,7 @@ On top of their basic offering, they do offer managed databases such as MongoDB,
 
 Their only “managed” offer is for web hosting though, so if you’re looking to host your website or app and you don’t want to have to deal with server maintenance and configuration, then this is a good option for you.
 
-![Hetzner](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849893225.png)
+![Hetzner hosting](https://assets.roadmap.sh/guest/hetzner-hosting-oupq8.jpg)
 
 Other than that, their offering is quite standard, although their pricing model might not be. While they do have the standard pricing tiers like the rest of them, they also give you the option to “bid” for used hardware that is no longer needed. 
 
@@ -284,7 +284,7 @@ If you’re building a NextJS application and you’re looking for a quick way t
 
 Their platform allows you to link your GitHub account to their systems and deploy your entire application with a single push to the repo.
 
-![Vercel](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849618859.png)
+![Vercel hosting](https://assets.roadmap.sh/guest/vercel-hosting-9jvk9.png)
 
 And since they’re experts on NextJS, your app will “just work.”
 
@@ -298,7 +298,7 @@ You can think of [Render](https://render.com/) as if Vercel and Heroku had a lov
 
 You’re not tied to a single technology; instead, you have all the major runtimes available out of the box. Much higher HTTP timeouts (up to 100 minutes, which is incredible compared to the standard 10 or 30 seconds most providers give you) and tons of other security and quality-of-life improvements.
 
-![Render](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849533040.png)
+![Render hosting](https://assets.roadmap.sh/guest/render-hosting-w4urq.png)
 
 Render also offers managed MySQL and managed Redis instances for you to use, even in their free tier. In the end, unless you’ve been using Heroku for a while and you’re happy with their DX, it might be a good idea to check out Render instead.
 
@@ -308,7 +308,7 @@ Render also offers managed MySQL and managed Redis instances for you to use, eve
 
 However, they do not seem to offer quality-of-life integrations to make your deployment workflow simple and intuitive.
 
-![OVHCloud](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849730064.png)
+![OVHCloud hosting](https://assets.roadmap.sh/guest/ovhcloud-hosting-ncfch.png)
 
 Now, given how they centralize all related services from domain name registration all the way up to analytics, identity management,  file storage (CDN), and even one-click install CMS (content management systems, such as WordPress), etc, it might just be a good option for you. That is if you have the expertise in your team to deal with all these options.
 
@@ -324,7 +324,7 @@ Some developers would argue that one of the hardest parts of creating an API is 
 
 That’s where [Swagger](https://swagger.io/) comes into play.
 
-![Swagger](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849662815.png)
+![Swagger API tool](https://assets.roadmap.sh/guest/swagger-api-tool-vngxu.png)
 
 This tool allows you to create interactive documentation that provides developers with all they need to understand how to use your endpoints, and at the same time, it also gives them the option to test them directly from the generated UI.
 
@@ -334,7 +334,7 @@ This tool allows you to create interactive documentation that provides developer
 
 With Postman, you can organize all your company’s APIs, share them with the associated dev teams, and let them use and interact with them without having to write a single line of code.
 
-![Postman](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849422682.png)
+![Postman documentation tool](https://assets.roadmap.sh/guest/postman-documentation-tool-cl81q.png)
 
 While Swagger is more of a development tool that every backend developer should know about, Postman is the tool that every development team should use to share & control internal API access and documentation.
 
@@ -346,7 +346,7 @@ Finally, the last category is about productivity. While some of the products and
 
 If you’re a macOS user, then [iTerm](https://iterm2.com/) is definitely one of the “must haves” you need to look into. As a backend developer, you’ll spend a lot of your day in the terminal.
 
-![iTerm](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849558918.png)
+![iTerm terminal developer tool](https://assets.roadmap.sh/guest/iterm-terminal-developer-tool-zze25.png)
 
 iTerm will take that experience to the next level by bringing in features such as:
 
@@ -367,7 +367,7 @@ The combination of these two gives your terminal superpowers. [Zsh](https://zsh.
 - Spelling corrections
 - And more.
 
-![Oh my Zsh](https://assets.roadmap.sh/guest/6529303b545cb53d4aa730ca_1710849870732.png)
+![Oh my Zsh shell](https://assets.roadmap.sh/guest/zsh-shell-ui-6s163.png)
 
 As mentioned above, after you have your ZSH installed and set up, you should look into installing oh-my-zsh, which helps with configuring all the customization options you have on this shell:
 
@@ -382,7 +382,7 @@ If you find yourself spending hours on the terminal, consider installing this co
 
 Now, you suddenly have access to hundreds of [community-created extensions](https://www.raycast.com/store) that allow you to directly interact with chatGPT from the app launcher,  use GitHub, interact with VSCode directly, and more.
 
-![Raycast](https://assets.roadmap.sh/guest/raycast-app-launcher-w5rg3.png)
+![Raycast app launcher](https://assets.roadmap.sh/guest/raycast-app-launcher-w5rg3.png)
 
 While it is only available for macOS users, Raycast has become a must-have application for backend developers on this platform. In the end, the faster you can reach for your tools, the more productive you become. And a properly configured Raycast can make your web development process feel like a breeze.
 
