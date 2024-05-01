@@ -161,6 +161,7 @@ export function TeamActivityPage() {
                 <TeamActivityItem
                   key={user._id}
                   user={user}
+                  teamId={teamId}
                   onTopicClick={setSelectedActivity}
                 />
               );

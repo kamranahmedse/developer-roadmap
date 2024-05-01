@@ -5,6 +5,7 @@ import { ChevronsDown, ChevronsUp } from 'lucide-react';
 
 type TeamActivityItemProps = {
   onTopicClick?: (activity: TeamStreamActivity) => void;
+  teamId: string;
   user: {
     activities: TeamStreamActivity[];
     _id: string;
@@ -15,7 +16,7 @@ type TeamActivityItemProps = {
 };
 
 export function TeamActivityItem(props: TeamActivityItemProps) {
-  const { user, onTopicClick } = props;
+  const { user, onTopicClick, teamId } = props;
   const { activities } = user;
 
   const [showAll, setShowAll] = useState(false);
@@ -42,7 +43,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
       <a
         className="font-medium underline transition-colors hover:cursor-pointer hover:text-black"
         target="_blank"
-        href={resourceUrl}
+        href={`${resourceUrl}?t=${teamId}`}
       >
         {resourceTitle}
       </a>
@@ -51,7 +52,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
 
   const timeAgo = (date: string | Date) => (
     <span className="ml-1 text-xs text-gray-400">
-      {getRelativeTimeString(new Date(date).toISOString())}
+      {getRelativeTimeString(new Date(date).toISOString(), true)}
     </span>
   );
   const userAvatar = user.avatar
@@ -77,7 +78,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex items-center flex-wrap gap-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
@@ -122,13 +123,13 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const activityLimit = showAll ? activities.length : 5;
 
   return (
-    <li key={user._id} className="rounded-md border overflow-hidden">
+    <li key={user._id} className="overflow-hidden rounded-md border">
       <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
         {username} has {activities.length} updates in {uniqueResourcesCount}{' '}
         resource(s)
       </h3>
       <div className="py-3">
-        <ul className="flex flex-col gap-2 ml-2 sm:ml-[36px]">
+        <ul className="ml-2 flex flex-col gap-2 sm:ml-[36px]">
           {activities.slice(0, activityLimit).map((activity) => {
             const { actionType, topicIds } = activity;
             const topicCount = topicIds?.length || 0;
@@ -173,7 +174,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
 
         {activities.length > 5 && (
           <button
-            className="mt-3 flex items-center gap-2 rounded-md border border-gray-300 p-1 text-xs uppercase tracking-wide text-gray-600 transition-colors hover:border-black hover:bg-black hover:text-white"
+            className="ml-2 mt-3 flex items-center gap-2 rounded-md border border-gray-300 p-1 text-xs uppercase tracking-wide text-gray-600 transition-colors hover:border-black hover:bg-black hover:text-white sm:ml-[36px]"
             onClick={() => setShowAll(!showAll)}
           >
             {showAll ? (
