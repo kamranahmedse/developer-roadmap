@@ -1,26 +1,16 @@
 import type { APIRoute } from 'astro';
-import { getDefaultOpenGraphImageBuffer } from '../../lib/open-graph';
+import { getDefaultOpenGraphImageBuffer } from '../../../lib/open-graph';
 
 export const prerender = false;
 
 type Params = {
-  slug: string;
+  username: string;
 };
 
 export const GET: APIRoute<any, Params> = async (context) => {
-  const { slug } = context.params;
+  const { username } = context.params;
 
-  if (!slug.startsWith('user-')) {
-    const buffer = await getDefaultOpenGraphImageBuffer();
-    return new Response(buffer, {
-      headers: {
-        'Content-Type': 'image/png',
-      },
-    });
-  }
-
-  const username = slug.replace('user-', '');
-  if (!username) {
+  if (!username || !/^[a-zA-Z0-9]*?[a-zA-Z]+?[a-zA-Z0-9]*?$/.test(username)) {
     const buffer = await getDefaultOpenGraphImageBuffer();
     return new Response(buffer, {
       headers: {

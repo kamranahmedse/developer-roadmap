@@ -10,8 +10,8 @@ import { UserProgressModal } from '../../../components/UserProgress/UserProgress
 import { generateArticleSchema } from '../../../lib/jsonld-schema';
 import { getOpenGraphImageUrl } from '../../../lib/open-graph';
 import {
-  BestPracticeFileType,
-  BestPracticeFrontmatter,
+  type BestPracticeFileType,
+  type BestPracticeFrontmatter,
   getAllBestPractices,
 } from '../../../lib/best-practice';
 
@@ -55,7 +55,7 @@ if (bestPracticeData.schema) {
 }
 
 const ogImageUrl = getOpenGraphImageUrl({
-  group: 'best-practices',
+  group: 'best-practice',
   resourceId: bestPracticeId,
 });
 ---
