@@ -6,7 +6,7 @@ excludedBySlug: '/backend/developer-tools'
 seo:
   title: '25 Essential Backend Development Tools for @currentYear@'
   description: 'Elevate your coding with backend developer tools that bring efficiency, scalability, and innovation to your projects. Improve your development process today!'
-isNew: true
+isNew: false
 type: 'textual'
 date: 2024-03-19
 sitemap:
