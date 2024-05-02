@@ -46,7 +46,10 @@ export function Step1(props: Step1Props) {
   const [linkedInUrl, setLinkedInUrl] = useState(team?.links?.linkedIn || '');
   const [gitHubUrl, setGitHubUrl] = useState(team?.links?.github || '');
   const [teamSize, setTeamSize] = useState<ValidTeamSize>(
-    team?.teamSize || ('' as any)
+    team?.teamSize || ('' as any),
+  );
+  const [personalProgressOnly, setPersonalProgressOnly] = useState(
+    team?.personalProgressOnly ?? true,
   );
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
@@ -74,7 +77,8 @@ export function Step1(props: Step1Props) {
           }),
           roadmapIds: [],
           bestPracticeIds: [],
-        }
+          personalProgressOnly,
+        },
       ));
 
       if (error || !response?._id) {
@@ -96,7 +100,8 @@ export function Step1(props: Step1Props) {
             teamSize,
             linkedInUrl: linkedInUrl || undefined,
           }),
-        }
+          personalProgressOnly,
+        },
       ));
 
       if (error || (response as any)?.status !== 'ok') {
@@ -116,6 +121,7 @@ export function Step1(props: Step1Props) {
         },
         type: selectedTeamType,
         teamSize: teamSize!,
+        personalProgressOnly,
       });
     }
   };
@@ -168,7 +174,10 @@ export function Step1(props: Step1Props) {
 
       {selectedTeamType === 'company' && (
         <div className="mt-4 flex w-full flex-col">
-          <label htmlFor="website" className="text-sm leading-none text-slate-500">
+          <label
+            htmlFor="website"
+            className="text-sm leading-none text-slate-500"
+          >
             Company LinkedIn URL
           </label>
           <input
@@ -187,7 +196,10 @@ export function Step1(props: Step1Props) {
       )}
 
       <div className="mt-4 flex w-full flex-col">
-        <label htmlFor="website" className="text-sm leading-none text-slate-500">
+        <label
+          htmlFor="website"
+          className="text-sm leading-none text-slate-500"
+        >
           GitHub Organization URL
         </label>
         <input
@@ -221,14 +233,38 @@ export function Step1(props: Step1Props) {
               setTeamSize((e.target as HTMLSelectElement).value as any)
             }
           >
-            <option value="">
-              Select team size
-            </option>
+            <option value="">Select team size</option>
             {validTeamSizes.map((size) => (
-              <option key={size} value={size}>{size} people</option>
+              <option key={size} value={size}>
+                {size} people
+              </option>
             ))}
           </select>
         </div>
+      )}
+
+      <div className="mt-4 flex h-[42px] w-full items-center rounded-lg border border-gray-300 px-3 py-2 shadow-sm">
+        <label
+          htmlFor="personal-progress-only"
+          className="flex items-center gap-2 text-sm leading-none text-slate-500"
+        >
+          <input
+            type="checkbox"
+            name="personal-progress-only"
+            id="personal-progress-only"
+            checked={personalProgressOnly}
+            onChange={(e) =>
+              setPersonalProgressOnly((e.target as HTMLInputElement).checked)
+            }
+          />
+          <span>Members can only see their personal progress</span>
+        </label>
+      </div>
+
+      {personalProgressOnly && (
+        <p className="mt-2 rounded-lg border border-orange-300 bg-orange-50 p-2 text-sm text-orange-700">
+          Only admins and managers will be able to see the progress of members
+        </p>
       )}
 
       {error && (

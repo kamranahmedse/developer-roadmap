@@ -9,7 +9,7 @@ import { pageProgressMessage } from '../../stores/page';
 import type { TeamResourceConfig } from './RoadmapSelector';
 import { Step3 } from './Step3';
 import { Step4 } from './Step4';
-import {useToast} from "../../hooks/use-toast";
+import { useToast } from '../../hooks/use-toast';
 
 export interface TeamDocument {
   _id?: string;
@@ -22,6 +22,7 @@ export interface TeamDocument {
     linkedIn?: string;
   };
   type: ValidTeamType;
+  personalProgressOnly?: boolean;
   canMemberSendInvite: boolean;
   teamSize?: ValidTeamSize;
   createdAt: Date;
@@ -40,10 +41,10 @@ export function CreateTeamForm() {
 
   async function loadTeam(
     teamIdToFetch: string,
-    requiredStepIndex: number | string
+    requiredStepIndex: number | string,
   ) {
     const { response, error } = await httpGet<TeamDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamIdToFetch}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamIdToFetch}`,
     );
 
     if (error || !response) {
@@ -70,7 +71,7 @@ export function CreateTeamForm() {
 
   async function loadTeamResourceConfig(teamId: string) {
     const { error, response } = await httpGet<TeamResourceConfig>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team-resource-config/${teamId}`,
     );
     if (error || !Array.isArray(response)) {
       console.error(error);
@@ -96,7 +97,7 @@ export function CreateTeamForm() {
   }, [teamId, queryStepIndex]);
 
   const [selectedTeamType, setSelectedTeamType] = useState<ValidTeamType>(
-    team?.type || 'company'
+    team?.type || 'company',
   );
 
   const [completedSteps, setCompletedSteps] = useState([0]);
@@ -191,13 +192,17 @@ export function CreateTeamForm() {
 
   return (
     <div className={'mx-auto max-w-[700px] py-1 md:py-6'}>
-      <div className={'mb-3 md:mb-8 pb-3 md:pb-0 border-b md:border-b-0 flex flex-col items-start md:items-center'}>
-        <h1 className={'text-xl md:text-4xl font-bold'}>Create Team</h1>
-        <p className={'mt-1 md:mt-2 text-sm md:text-base text-gray-500'}>
+      <div
+        className={
+          'mb-3 flex flex-col items-start border-b pb-3 md:mb-8 md:items-center md:border-b-0 md:pb-0'
+        }
+      >
+        <h1 className={'text-xl font-bold md:text-4xl'}>Create Team</h1>
+        <p className={'mt-1 text-sm text-gray-500 md:mt-2 md:text-base'}>
           Complete the steps below to create your team
         </p>
       </div>
-      <div className="mb-8 mt-8 hidden sm:flex w-full">
+      <div className="mb-8 mt-8 hidden w-full sm:flex">
         <Stepper
           activeIndex={stepIndex}
           completeSteps={completedSteps}
