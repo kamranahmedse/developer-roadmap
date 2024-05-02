@@ -48,9 +48,6 @@ export function Step1(props: Step1Props) {
   const [teamSize, setTeamSize] = useState<ValidTeamSize>(
     team?.teamSize || ('' as any),
   );
-  const [personalProgressOnly, setPersonalProgressOnly] = useState(
-    team?.personalProgressOnly ?? true,
-  );
 
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -77,7 +74,6 @@ export function Step1(props: Step1Props) {
           }),
           roadmapIds: [],
           bestPracticeIds: [],
-          personalProgressOnly,
         },
       ));
 
@@ -100,7 +96,6 @@ export function Step1(props: Step1Props) {
             teamSize,
             linkedInUrl: linkedInUrl || undefined,
           }),
-          personalProgressOnly,
         },
       ));
 
@@ -121,7 +116,6 @@ export function Step1(props: Step1Props) {
         },
         type: selectedTeamType,
         teamSize: teamSize!,
-        personalProgressOnly,
       });
     }
   };
@@ -241,30 +235,6 @@ export function Step1(props: Step1Props) {
             ))}
           </select>
         </div>
-      )}
-
-      <div className="mt-4 flex h-[42px] w-full items-center rounded-lg border border-gray-300 px-3 py-2 shadow-sm">
-        <label
-          htmlFor="personal-progress-only"
-          className="flex items-center gap-2 text-sm leading-none text-slate-500"
-        >
-          <input
-            type="checkbox"
-            name="personal-progress-only"
-            id="personal-progress-only"
-            checked={personalProgressOnly}
-            onChange={(e) =>
-              setPersonalProgressOnly((e.target as HTMLInputElement).checked)
-            }
-          />
-          <span>Members can only see their personal progress</span>
-        </label>
-      </div>
-
-      {personalProgressOnly && (
-        <p className="mt-2 rounded-lg border border-orange-300 bg-orange-50 p-2 text-sm text-orange-700">
-          Only admins and managers will be able to see the progress of members
-        </p>
       )}
 
       {error && (

@@ -24,7 +24,7 @@ export function UpdateTeamForm() {
   const [gitHub, setGitHub] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
-  const [personalProgressOnly, setPersonalProgressOnly] = useState(true);
+  const [personalProgressOnly, setPersonalProgressOnly] = useState(false);
   const validTeamSizes = [
     '0-1',
     '2-10',
@@ -92,7 +92,7 @@ export function UpdateTeamForm() {
     setLinkedIn(response?.links?.linkedIn || '');
     setGitHub(response?.links?.github || '');
     setTeamType(response.type);
-    setPersonalProgressOnly(response.personalProgressOnly ?? true);
+    setPersonalProgressOnly(response.personalProgressOnly ?? false);
     if (response.teamSize) {
       setTeamSize(response.teamSize);
     }
