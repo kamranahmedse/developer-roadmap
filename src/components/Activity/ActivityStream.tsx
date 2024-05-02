@@ -3,7 +3,8 @@ import { getRelativeTimeString } from '../../lib/date';
 import type { ResourceType } from '../../lib/resource-progress';
 import { EmptyStream } from './EmptyStream';
 import { ActivityTopicsModal } from './ActivityTopicsModal.tsx';
-import {Book, BookOpen, ChevronsDown, ChevronsDownUp, ChevronsUp, ChevronsUpDown} from 'lucide-react';
+import { ChevronsDown, ChevronsUp } from 'lucide-react';
+import { ActivityTopicTitles } from './ActivityTopicTitles.tsx';
 
 export const allowedActivityActionType = [
   'in_progress',
@@ -21,7 +22,7 @@ export type UserStreamActivity = {
   resourceSlug?: string;
   isCustomResource?: boolean;
   actionType: AllowedActivityActionType;
-  topicIds?: string[];
+  topicTitles?: string[];
   createdAt: Date;
   updatedAt: Date;
 };
@@ -38,7 +39,9 @@ export function ActivityStream(props: ActivityStreamProps) {
     useState<UserStreamActivity | null>(null);
 
   const sortedActivities = activities
-    .filter((activity) => activity?.topicIds && activity.topicIds.length > 0)
+    .filter(
+      (activity) => activity?.topicTitles && activity.topicTitles.length > 0,
+    )
     .sort((a, b) => {
       return new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime();
     })
@@ -57,8 +60,8 @@ export function ActivityStream(props: ActivityStreamProps) {
           resourceId={selectedActivity.resourceId}
           resourceType={selectedActivity.resourceType}
           isCustomResource={selectedActivity.isCustomResource}
-          topicIds={selectedActivity.topicIds || []}
-          topicCount={selectedActivity.topicIds?.length || 0}
+          topicTitles={selectedActivity.topicTitles || []}
+          topicCount={selectedActivity.topicTitles?.length || 0}
           actionType={selectedActivity.actionType}
         />
       )}
@@ -73,7 +76,7 @@ export function ActivityStream(props: ActivityStreamProps) {
               resourceTitle,
               actionType,
               updatedAt,
-              topicIds,
+              topicTitles,
               isCustomResource,
             } = activity;
 
@@ -96,7 +99,7 @@ export function ActivityStream(props: ActivityStreamProps) {
               </a>
             );
 
-            const topicCount = topicIds?.length || 0;
+            const topicCount = topicTitles?.length || 0;
 
             const timeAgo = (
               <span className="ml-1 text-xs text-gray-400">
@@ -109,24 +112,20 @@ export function ActivityStream(props: ActivityStreamProps) {
                 {actionType === 'in_progress' && (
                   <>
                     Started{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => setSelectedActivity(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
+                    <ActivityTopicTitles
+                      topicTitles={topicTitles || []}
+                      onSelectActivity={() => setSelectedActivity(activity)}
+                    />{' '}
                     in {resourceLinkComponent} {timeAgo}
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
                     Completed{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => setSelectedActivity(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
+                    <ActivityTopicTitles
+                      topicTitles={topicTitles || []}
+                      onSelectActivity={() => setSelectedActivity(activity)}
+                    />{' '}
                     in {resourceLinkComponent} {timeAgo}
                   </>
                 )}
@@ -146,16 +145,20 @@ export function ActivityStream(props: ActivityStreamProps) {
 
       {activities.length > 10 && (
         <button
-          className="mt-3 gap-2 flex items-center rounded-md border border-black pl-1.5 pr-2 py-1 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
+          className="mt-3 flex items-center gap-2 rounded-md border border-black py-1 pl-1.5 pr-2 text-xs uppercase tracking-wide text-black transition-colors hover:border-black hover:bg-black hover:text-white"
           onClick={() => setShowAll(!showAll)}
         >
-          {showAll ? <>
-            <ChevronsUp size={14} />
-            Show less
-          </> : <>
-            <ChevronsDown size={14} />
-            Show more
-          </>}
+          {showAll ? (
+            <>
+              <ChevronsUp size={14} />
+              Show less
+            </>
+          ) : (
+            <>
+              <ChevronsDown size={14} />
+              Show more
+            </>
+          )}
         </button>
       )}
     </div>

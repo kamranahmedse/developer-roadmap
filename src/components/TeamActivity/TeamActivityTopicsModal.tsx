@@ -16,53 +16,9 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
     resourceId,
     resourceType,
     isCustomResource,
-    topicIds = [],
+    topicTitles = [],
     actionType,
   } = activity;
-
-  const [isLoading, setIsLoading] = useState(true);
-  const [topicTitles, setTopicTitles] = useState<Record<string, string>>({});
-  const [error, setError] = useState<string | null>(null);
-
-  const loadTopicTitles = async () => {
-    setIsLoading(true);
-    setError(null);
-
-    const { response, error } = await httpPost(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-topic-titles`,
-      {
-        resourceId,
-        resourceType,
-        isCustomResource,
-        topicIds,
-      },
-    );
-
-    if (error || !response) {
-      setError(error?.message || 'Failed to load topic titles');
-      setIsLoading(false);
-      return;
-    }
-
-    setTopicTitles(response);
-    setIsLoading(false);
-  };
-
-  useEffect(() => {
-    loadTopicTitles().finally(() => {
-      setIsLoading(false);
-    });
-  }, []);
-
-  if (isLoading || error) {
-    return (
-      <ModalLoader
-        error={error!}
-        text={'Loading topics..'}
-        isLoading={isLoading}
-      />
-    );
-  }
 
   let pageUrl = '';
   if (resourceType === 'roadmap') {
@@ -77,8 +33,6 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
     <Modal
       onClose={() => {
         onClose();
-        setError(null);
-        setIsLoading(false);
       }}
     >
       <div className={`popup-body relative rounded-lg bg-white p-4 shadow`}>
@@ -100,9 +54,7 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
           </a>
         </span>
         <ul className="flex max-h-[50vh] flex-col gap-1 overflow-y-auto max-md:max-h-full">
-          {topicIds.map((topicId) => {
-            const topicTitle = topicTitles[topicId] || 'Unknown Topic';
-
+          {topicTitles.map((topicTitle) => {
             const ActivityIcon =
               actionType === 'done'
                 ? Check
@@ -111,7 +63,7 @@ export function TeamActivityTopicsModal(props: TeamActivityTopicsModalProps) {
                   : Check;
 
             return (
-              <li key={topicId} className="flex items-start gap-2">
+              <li key={topicTitle} className="flex items-start gap-2">
                 <ActivityIcon
                   strokeWidth={3}
                   className="relative top-[4px] text-green-500"
