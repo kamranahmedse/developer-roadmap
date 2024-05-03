@@ -12,13 +12,13 @@ export function ActivityTopicTitles(props: ActivityTopicTitlesProps) {
     <>
       {firstThreeTopics.map((topicTitle, index) => {
         return (
-          <span>
+          <span className="font-medium">
             <>
-              {topicTitles.length > 3 && index === 2
-                ? `${topicTitle}, `
-                : index === 2
-                  ? `and ${topicTitle}`
-                  : `${topicTitle}, `}
+              {index > 0 && ', '}
+              {index === firstThreeTopics.length - 1 &&
+                firstThreeTopics.length > 1 &&
+                'and '}
+              {topicTitle}
             </>
           </span>
         );
@@ -26,7 +26,7 @@ export function ActivityTopicTitles(props: ActivityTopicTitlesProps) {
 
       {remainingTopics?.length > 0 && (
         <>
-          and
+          &nbsp;and&nbsp;
           <button
             className="font-medium underline underline-offset-2 hover:text-black"
             onClick={onSelectActivity}
