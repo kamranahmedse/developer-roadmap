@@ -39,6 +39,7 @@ type GetTeamActivityResponse = {
       name: string;
       avatar?: string;
       username?: string;
+      memberId?: string;
     }[];
     activities: TeamActivityStreamDocument[];
   };
