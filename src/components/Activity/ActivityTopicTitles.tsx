@@ -12,7 +12,7 @@ export function ActivityTopicTitles(props: ActivityTopicTitlesProps) {
     <>
       {firstThreeTopics.map((topicTitle, index) => {
         return (
-          <span className="font-medium">
+          <span className="font-medium" key={`topic-${topicTitle}-${index}`}>
             <>
               {index > 0 && ', '}
               {index === firstThreeTopics.length - 1 &&

@@ -9,10 +9,12 @@ import type { TeamActivityStreamDocument } from '../TeamActivity/TeamActivityPag
 import { ResourceProgress } from '../Activity/ResourceProgress';
 import { ActivityStream } from '../Activity/ActivityStream';
 import { MemberRoleBadge } from '../TeamMembers/RoleBadge';
+import { TeamMemberEmptyPage } from './TeamMemberEmptyPage';
 
 type GetTeamMemberProgressesResponse = TeamMemberDocument & {
   name: string;
   avatar: string;
+  email: string;
   progresses: UserProgress[];
 };
 
@@ -87,14 +89,17 @@ export function TeamMemberDetailsPage() {
           <img
             src={avatarUrl}
             alt={memberProgress?.name}
-            className="h-20 w-20 rounded-full"
+            className="h-24 w-24 rounded-full"
           />
           <div>
-            <h1 className="text-2xl font-medium">{memberProgress?.name}</h1>
             <MemberRoleBadge
               className="sm:inline-flex"
               role={memberProgress?.role!}
             />
+            <h1 className="mt-1 text-2xl font-medium">
+              {memberProgress?.name}
+            </h1>
+            <p className="text-sm text-gray-500">{memberProgress?.email}</p>
           </div>
         </div>
       </div>
@@ -134,7 +139,9 @@ export function TeamMemberDetailsPage() {
             })}
           </div>
         </>
-      ) : null}
+      ) : (
+        <TeamMemberEmptyPage teamId={teamId} />
+      )}
 
       {memberActivity?.data && memberActivity?.data?.length > 0 ? (
         <ActivityStream

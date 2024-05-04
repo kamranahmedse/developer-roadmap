@@ -64,7 +64,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   const username = (
     <a
       href={`/team/member?t=${teamId}&m=${user?.memberId}`}
-      className="inline-flex items-center"
+      className="inline-flex items-center underline underline-offset-2 hover:no-underline"
     >
       <img
         className="mr-1 inline-block h-5 w-5 rounded-full"
