@@ -162,7 +162,12 @@ export function TeamMemberDetailsPage() {
             totalPages={memberActivity?.totalPages || 1}
             totalCount={memberActivity?.totalCount || 0}
             perPage={memberActivity?.perPage || 10}
-            onPageChange={(page) => loadMemberActivity(page)}
+            onPageChange={(page) => {
+              pageProgressMessage.set('Loading Activity');
+              loadMemberActivity(page).finally(() => {
+                pageProgressMessage.set('');
+              });
+            }}
           />
         </>
       ) : null}
