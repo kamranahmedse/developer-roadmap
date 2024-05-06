@@ -6,7 +6,7 @@ excludedBySlug: '/java/developer-skills'
 seo:
   title: 'Must-Have Java Full-stack Developer Skills in @currentYear@'
   description: 'Master the essential skills every Java full stack developer needs. Boost your career with our expert tips!'
-  ogImageUrl: 'https://assets.roadmap.sh/guest/java-full-stack-developer-skills-yctex.png'
+  ogImageUrl: 'https://assets.roadmap.sh/guest/java-full-stack-developer-skills-sjzbd.png'
 isNew: true
 type: 'textual'
 date: 2024-05-01
