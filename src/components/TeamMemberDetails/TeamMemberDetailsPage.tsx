@@ -10,6 +10,7 @@ import { ResourceProgress } from '../Activity/ResourceProgress';
 import { ActivityStream } from '../Activity/ActivityStream';
 import { MemberRoleBadge } from '../TeamMembers/RoleBadge';
 import { TeamMemberEmptyPage } from './TeamMemberEmptyPage';
+import { Pagination } from '../Pagination/Pagination';
 
 type GetTeamMemberProgressesResponse = TeamMemberDocument & {
   name: string;
@@ -35,6 +36,7 @@ export function TeamMemberDetailsPage() {
     useState<GetTeamMemberProgressesResponse | null>(null);
   const [memberActivity, setMemberActivity] =
     useState<GetTeamMemberActivityResponse | null>(null);
+  const [currPage, setCurrPage] = useState(1);
 
   const loadMemberProgress = async () => {
     const { response, error } = await httpGet<GetTeamMemberProgressesResponse>(
@@ -49,9 +51,12 @@ export function TeamMemberDetailsPage() {
     setMemberProgress(response);
   };
 
-  const loadMemberActivity = async () => {
+  const loadMemberActivity = async (currPage: number = 1) => {
     const { response, error } = await httpGet<GetTeamMemberActivityResponse>(
       `${import.meta.env.PUBLIC_API_URL}/v1-get-team-member-activity/${teamId}/${memberId}`,
+      {
+        currPage,
+      },
     );
     if (error || !response) {
       pageProgressMessage.set('');
@@ -60,6 +65,7 @@ export function TeamMemberDetailsPage() {
     }
 
     setMemberActivity(response);
+    setCurrPage(response?.currPage || 1);
   };
 
   useEffect(() => {
@@ -144,12 +150,21 @@ export function TeamMemberDetailsPage() {
       )}
 
       {memberActivity?.data && memberActivity?.data?.length > 0 ? (
-        <ActivityStream
-          className="mt-8 p-0 md:m-0 md:mt-8 md:p-0"
-          activities={
-            memberActivity?.data?.flatMap((act) => act.activity) || []
-          }
-        />
+        <>
+          <ActivityStream
+            className="mt-8 p-0 md:m-0 md:mb-4 md:mt-8 md:p-0"
+            activities={
+              memberActivity?.data?.flatMap((act) => act.activity) || []
+            }
+          />
+          <Pagination
+            currPage={currPage}
+            totalPages={memberActivity?.totalPages || 1}
+            totalCount={memberActivity?.totalCount || 0}
+            perPage={memberActivity?.perPage || 10}
+            onPageChange={(page) => loadMemberActivity(page)}
+          />
+        </>
       ) : null}
     </>
   );
