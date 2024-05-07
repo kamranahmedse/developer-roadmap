@@ -67,7 +67,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         src={userAvatar}
         alt={user.name}
       />
-      <span className="font-medium">{user?.name || 'Unknown'}</span>{' '}
+      <span className="font-medium">{user?.name || 'Unknown'}</span>
     </>
   );
 
@@ -79,33 +79,35 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center gap-y-1 rounded-md border px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
-            {username} started{' '}
+            {username}&nbsp;started&nbsp;
             <ActivityTopicTitles
               topicTitles={topicTitles || []}
               onSelectActivity={() => onTopicClick?.(activity)}
-            />{' '}
-            in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
+            />
+            &nbsp;in&nbsp;{resourceLink(activity)}&nbsp;
+            {timeAgo(activity.updatedAt)}
           </>
         )}
 
         {actionType === 'done' && (
           <>
-            {username} completed{' '}
+            {username}&nbsp;completed&nbsp;
             <ActivityTopicTitles
               topicTitles={topicTitles || []}
               onSelectActivity={() => onTopicClick?.(activity)}
-            />{' '}
-            in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
+            />
+            &nbsp;in&nbsp;{resourceLink(activity)}&nbsp;
+            {timeAgo(activity.updatedAt)}
           </>
         )}
         {actionType === 'answered' && (
           <>
-            {username} answered {topicCount} question
-            {topicCount > 1 ? 's' : ''} in {resourceLink(activity)}{' '}
+            {username}&nbsp;answered {topicCount} question
+            {topicCount > 1 ? 's' : ''} in&nbsp;{resourceLink(activity)}&nbsp;
             {timeAgo(activity.updatedAt)}
           </>
         )}
