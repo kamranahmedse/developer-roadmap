@@ -15,3 +15,4 @@ Visit the following resources to learn more:
 - [Codecademy - Learn Python 2](https://www.codecademy.com/learn/learn-python)
 - [An Introduction to Python for Non-Programmers](https://thenewstack.io/an-introduction-to-python-for-non-programmers/)
 - [Getting Started with Python and InfluxDB](https://thenewstack.io/getting-started-with-python-and-influxdb/)
+- [Learn Python | Boot.dev](https://boot.dev/learn/learn-python)
