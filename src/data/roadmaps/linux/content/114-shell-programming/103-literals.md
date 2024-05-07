@@ -6,7 +6,7 @@ String Literals: They can be defined by enclosing the text between either single
 
 Numeric Literals: They represent a sequence of digits. For example, 25, 100, or 1234.
 
-Boolean Literals: In most of the Linux shell scripts, 0 represents true, and 1 represents false.
+Boolean Literals: In most of the Linux shell scripts, 1 represents true, and 0 represents false.
 
 Be mindful of the type of literal you're using as it can significantly influence your scripting, your code's readability, and its overall functionality. 
 
