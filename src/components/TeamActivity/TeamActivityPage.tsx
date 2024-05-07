@@ -18,7 +18,7 @@ export type TeamStreamActivity = {
   resourceSlug?: string;
   isCustomResource?: boolean;
   actionType: AllowedActivityActionType;
-  topicIds?: string[];
+  topicTitles?: string[];
   createdAt: Date;
   updatedAt: Date;
 };
@@ -102,7 +102,7 @@ export function TeamActivityPage() {
     return activities?.filter((activity) => {
       return (
         activity.activity.length > 0 &&
-        activity.activity.some((t) => (t?.topicIds?.length || 0) > 0)
+        activity.activity.some((t) => (t?.topicTitles?.length || 0) > 0)
       );
     });
   }, [activities]);
@@ -137,7 +137,7 @@ export function TeamActivityPage() {
           const userActivities = uniqueActivities
             .filter((activity) => activity.userId === user._id)
             .flatMap((activity) => activity.activity)
-            .filter((activity) => (activity?.topicIds?.length || 0) > 0)
+            .filter((activity) => (activity?.topicTitles?.length || 0) > 0)
             .sort((a, b) => {
               return (
                 new Date(b.updatedAt).getTime() -

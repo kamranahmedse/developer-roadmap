@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { getRelativeTimeString } from '../../lib/date';
 import type { TeamStreamActivity } from './TeamActivityPage';
 import { ChevronsDown, ChevronsUp } from 'lucide-react';
+import { ActivityTopicTitles } from '../Activity/ActivityTopicTitles';
 
 type TeamActivityItemProps = {
   onTopicClick?: (activity: TeamStreamActivity) => void;
@@ -72,8 +73,8 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
 
   if (activities.length === 1) {
     const activity = activities[0];
-    const { actionType, topicIds } = activity;
-    const topicCount = topicIds?.length || 0;
+    const { actionType, topicTitles } = activity;
+    const topicCount = topicTitles?.length || 0;
 
     return (
       <li
@@ -83,12 +84,10 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         {actionType === 'in_progress' && (
           <>
             {username} started{' '}
-            <button
-              className="font-medium underline underline-offset-2 hover:text-black"
-              onClick={() => onTopicClick?.(activity)}
-            >
-              {topicCount} topic{topicCount > 1 ? 's' : ''}
-            </button>{' '}
+            <ActivityTopicTitles
+              topicTitles={topicTitles || []}
+              onSelectActivity={() => onTopicClick?.(activity)}
+            />{' '}
             in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
           </>
         )}
@@ -96,12 +95,10 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         {actionType === 'done' && (
           <>
             {username} completed{' '}
-            <button
-              className="font-medium underline underline-offset-2 hover:text-black"
-              onClick={() => onTopicClick?.(activity)}
-            >
-              {topicCount} topic{topicCount > 1 ? 's' : ''}
-            </button>{' '}
+            <ActivityTopicTitles
+              topicTitles={topicTitles || []}
+              onSelectActivity={() => onTopicClick?.(activity)}
+            />{' '}
             in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
           </>
         )}
@@ -131,32 +128,28 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
       <div className="py-3">
         <ul className="ml-2 flex flex-col gap-2 sm:ml-[36px]">
           {activities.slice(0, activityLimit).map((activity) => {
-            const { actionType, topicIds } = activity;
-            const topicCount = topicIds?.length || 0;
+            const { actionType, topicTitles } = activity;
+            const topicCount = topicTitles?.length || 0;
 
             return (
               <li key={activity._id} className="text-sm text-gray-600">
                 {actionType === 'in_progress' && (
                   <>
                     Started{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => onTopicClick?.(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
+                    <ActivityTopicTitles
+                      topicTitles={topicTitles || []}
+                      onSelectActivity={() => onTopicClick?.(activity)}
+                    />{' '}
                     in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
                     Completed{' '}
-                    <button
-                      className="font-medium underline underline-offset-2 hover:text-black"
-                      onClick={() => onTopicClick?.(activity)}
-                    >
-                      {topicCount} topic{topicCount > 1 ? 's' : ''}
-                    </button>{' '}
+                    <ActivityTopicTitles
+                      topicTitles={topicTitles || []}
+                      onSelectActivity={() => onTopicClick?.(activity)}
+                    />{' '}
                     in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
                   </>
                 )}
