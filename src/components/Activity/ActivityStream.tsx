@@ -111,28 +111,35 @@ export function ActivityStream(props: ActivityStreamProps) {
               <li key={_id} className="py-2 text-sm text-gray-600">
                 {actionType === 'in_progress' && (
                   <>
-                    Started{' '}
-                    <ActivityTopicTitles
-                      topicTitles={topicTitles || []}
-                      onSelectActivity={() => setSelectedActivity(activity)}
-                    />{' '}
-                    in {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Started&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
-                    Completed{' '}
-                    <ActivityTopicTitles
-                      topicTitles={topicTitles || []}
-                      onSelectActivity={() => setSelectedActivity(activity)}
-                    />{' '}
-                    in {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Completed&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'answered' && (
                   <>
-                    Answered {topicCount} question{topicCount > 1 ? 's' : ''} in{' '}
-                    {resourceLinkComponent} {timeAgo}
+                    <p className="mb-1">
+                      Answered&nbsp;{topicCount}&nbsp;question
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLinkComponent}&nbsp;
+                      {timeAgo}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
               </li>

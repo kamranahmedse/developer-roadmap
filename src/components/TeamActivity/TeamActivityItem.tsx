@@ -3,6 +3,7 @@ import { getRelativeTimeString } from '../../lib/date';
 import type { TeamStreamActivity } from './TeamActivityPage';
 import { ChevronsDown, ChevronsUp } from 'lucide-react';
 import { ActivityTopicTitles } from '../Activity/ActivityTopicTitles';
+import { cn } from '../../lib/classname';
 
 type TeamActivityItemProps = {
   onTopicClick?: (activity: TeamStreamActivity) => void;
@@ -79,36 +80,49 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center gap-y-1 rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center rounded-md border px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
-            {username}&nbsp;started&nbsp;
+            <p className="mb-1">
+              {username}&nbsp;started&nbsp;
+              {topicCount}&nbsp;topic{topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+              {resourceLink(activity)}&nbsp;
+              {timeAgo(activity.updatedAt)}
+            </p>
             <ActivityTopicTitles
+              className="pl-5"
               topicTitles={topicTitles || []}
-              onSelectActivity={() => onTopicClick?.(activity)}
             />
-            &nbsp;in&nbsp;{resourceLink(activity)}&nbsp;
-            {timeAgo(activity.updatedAt)}
           </>
         )}
-
         {actionType === 'done' && (
           <>
-            {username}&nbsp;completed&nbsp;
+            <p className="mb-1">
+              {username}&nbsp;completed&nbsp;
+              {topicCount}&nbsp;topic{topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+              {resourceLink(activity)}&nbsp;
+              {timeAgo(activity.updatedAt)}
+            </p>
             <ActivityTopicTitles
+              className="pl-5"
               topicTitles={topicTitles || []}
-              onSelectActivity={() => onTopicClick?.(activity)}
             />
-            &nbsp;in&nbsp;{resourceLink(activity)}&nbsp;
-            {timeAgo(activity.updatedAt)}
           </>
         )}
         {actionType === 'answered' && (
           <>
-            {username}&nbsp;answered {topicCount} question
-            {topicCount > 1 ? 's' : ''} in&nbsp;{resourceLink(activity)}&nbsp;
-            {timeAgo(activity.updatedAt)}
+            <p className="mb-1">
+              {username}&nbsp;answered&nbsp;
+              {topicCount}&nbsp;question{topicCount > 1 ? 's' : ''}
+              &nbsp;in&nbsp;
+              {resourceLink(activity)}&nbsp;
+              {timeAgo(activity.updatedAt)}
+            </p>
+            <ActivityTopicTitles
+              className="pl-5"
+              topicTitles={topicTitles || []}
+            />
           </>
         )}
       </li>
@@ -128,38 +142,51 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         resource(s)
       </h3>
       <div className="py-3">
-        <ul className="ml-2 flex flex-col gap-2 sm:ml-[36px]">
-          {activities.slice(0, activityLimit).map((activity) => {
+        <ul className="ml-2 flex flex-col divide-y pr-2 sm:ml-[36px]">
+          {activities.slice(0, activityLimit).map((activity, counter) => {
             const { actionType, topicTitles } = activity;
             const topicCount = topicTitles?.length || 0;
 
             return (
-              <li key={activity._id} className="text-sm text-gray-600">
+              <li
+                key={activity._id}
+                className={cn(
+                  'text-sm text-gray-600',
+                  counter === 0 ? 'pb-2.5' : 'py-2.5',
+                  counter === activities.length - 1 ? 'pb-0' : '',
+                )}
+              >
                 {actionType === 'in_progress' && (
                   <>
-                    Started{' '}
-                    <ActivityTopicTitles
-                      topicTitles={topicTitles || []}
-                      onSelectActivity={() => onTopicClick?.(activity)}
-                    />{' '}
-                    in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
+                    <p className="mb-1">
+                      Started&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLink(activity)}&nbsp;
+                      {timeAgo(activity.updatedAt)}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'done' && (
                   <>
-                    Completed{' '}
-                    <ActivityTopicTitles
-                      topicTitles={topicTitles || []}
-                      onSelectActivity={() => onTopicClick?.(activity)}
-                    />{' '}
-                    in {resourceLink(activity)} {timeAgo(activity.updatedAt)}
+                    <p className="mb-1">
+                      Completed&nbsp;{topicCount}&nbsp;topic
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLink(activity)}&nbsp;
+                      {timeAgo(activity.updatedAt)}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
                 {actionType === 'answered' && (
                   <>
-                    Answered {topicCount} question
-                    {topicCount > 1 ? 's' : ''} in {resourceLink(activity)}{' '}
-                    {timeAgo(activity.updatedAt)}
+                    <p className="mb-1">
+                      Answered&nbsp;{topicCount}&nbsp;question
+                      {topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
+                      {resourceLink(activity)}&nbsp;
+                      {timeAgo(activity.updatedAt)}
+                    </p>
+                    <ActivityTopicTitles topicTitles={topicTitles || []} />
                   </>
                 )}
               </li>
