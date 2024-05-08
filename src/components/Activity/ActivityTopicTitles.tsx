@@ -26,16 +26,16 @@ export function ActivityTopicTitles(props: ActivityTopicTitlesProps) {
       )}
     >
       {filteredTopicTitles.map((topicTitle, index) => (
-        <span key={index} className="rounded-md bg-gray-200 px-1">
+        <span key={index} className="rounded-md bg-gray-200 px-1.5">
           {topicTitle}
         </span>
       ))}
-      {shouldShowButton && (
+      {shouldShowButton && !showAll && (
         <button
           onClick={() => setShowAll(!showAll)}
-          className="text-gray-600 underline underline-offset-2 hover:text-black"
+          className="bg-white border border-black text-black rounded-md px-1.5 hover:bg-black text-xs h-[20px] hover:text-white"
         >
-          {showAll ? '- Show less' : `+${topicTitles.length - 3} more`}
+          {showAll ? '- Show less' : `+${topicTitles.length - 3}`}
         </button>
       )}
     </div>
