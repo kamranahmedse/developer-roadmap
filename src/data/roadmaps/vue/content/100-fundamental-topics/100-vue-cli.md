@@ -1,5 +1,7 @@
 # Vue CLI
 
+> ⚠️ **\[Warning]** Vue CLI is now in maintenance mode. For new projects, please use [create-vue](<https://github.com/vuejs/create-vue>) to scaffold [Vite](<https://vitejs.dev/>)-based projects.
+
 Vue CLI is a full system for rapid Vue.js development, providing:
 
 - Interactive project scaffolding via `@vue/cli`.
