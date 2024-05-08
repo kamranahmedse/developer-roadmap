@@ -10,17 +10,56 @@ import {
 import { logout } from './navigation';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal.tsx';
 import { useState } from 'react';
+import { cn } from '../../lib/classname.ts';
 
 type AccountDropdownListProps = {
   onCreateRoadmap: () => void;
   setIsTeamsOpen: (isOpen: boolean) => void;
+  onOnboardingClick: () => void;
+  isConfigLoading: boolean;
+  shouldShowOnboardingStatus?: boolean;
+  onboardingConfigCount: number;
+  doneConfigCount: number;
 };
 
 export function AccountDropdownList(props: AccountDropdownListProps) {
-  const { setIsTeamsOpen, onCreateRoadmap } = props;
+  const {
+    setIsTeamsOpen,
+    onCreateRoadmap,
+    onOnboardingClick,
+    isConfigLoading = true,
+    shouldShowOnboardingStatus = false,
+    onboardingConfigCount,
+    doneConfigCount,
+  } = props;
 
   return (
     <ul>
+      {shouldShowOnboardingStatus && (
+        <li className="px-1">
+          <button
+            className={cn(
+              'flex h-9 w-full items-center rounded border py-1 pl-3 pr-2 text-sm font-medium text-slate-100 hover:opacity-80',
+              isConfigLoading
+                ? 'striped-loader border-slate-700'
+                : 'border-slate-600 bg-slate-700',
+            )}
+            onClick={onOnboardingClick}
+            disabled={isConfigLoading}
+          >
+            {isConfigLoading ? (
+              ''
+            ) : (
+              <>
+                <span>Onboarding</span>
+                <span className="ml-auto flex items-center gap-1.5 text-xs">
+                  {doneConfigCount}&nbsp;/&nbsp;{onboardingConfigCount}
+                </span>
+              </>
+            )}
+          </button>
+        </li>
+      )}
       <li className="px-1">
         <a
           href="/account"

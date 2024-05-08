@@ -18,6 +18,9 @@ export const allowedProfileVisibility = ['public', 'private'] as const;
 export type AllowedProfileVisibility =
   (typeof allowedProfileVisibility)[number];
 
+export const allowedOnboardingStatus = ['done', 'pending', 'ignored'] as const;
+export type AllowedOnboardingStatus = (typeof allowedOnboardingStatus)[number];
+
 export interface UserDocument {
   _id?: string;
   name: string;
@@ -56,6 +59,18 @@ export interface UserDocument {
   };
   resetPasswordCodeAt: string;
   verifiedAt: string;
+
+  // Onboarding fields
+  onboardingStatus?: AllowedOnboardingStatus;
+  onboarding?: {
+    updateProgress: AllowedOnboardingStatus;
+    publishProfile: AllowedOnboardingStatus;
+    customRoadmap: AllowedOnboardingStatus;
+    addFriends: AllowedOnboardingStatus;
+    roadCard: AllowedOnboardingStatus;
+    inviteTeam: AllowedOnboardingStatus;
+  };
+
   createdAt: string;
   updatedAt: string;
 }

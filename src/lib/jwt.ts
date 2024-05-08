@@ -1,5 +1,6 @@
 import * as jose from 'jose';
 import Cookies from 'js-cookie';
+import type { AllowedOnboardingStatus } from '../api/user';
 
 export const TOKEN_COOKIE_NAME = '__roadmapsh_jt__';
 
@@ -8,6 +9,7 @@ export type TokenPayload = {
   email: string;
   name: string;
   avatar: string;
+  onboardingStatus?: AllowedOnboardingStatus;
 };
 
 export function decodeToken(token: string): TokenPayload {
