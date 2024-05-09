@@ -127,19 +127,3 @@ export function setViewSponsorCookie(sponsorId: string) {
     domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
   });
 }
-
-export function setRoadCardCompleteCookie() {
-  const key = `vrc`;
-  const alreadyExist = Cookies.get(key);
-  if (alreadyExist) {
-    return;
-  }
-
-  Cookies.set(key, '1', {
-    path: '/',
-    expires: 1,
-    sameSite: 'lax',
-    secure: true,
-    domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-  });
-}

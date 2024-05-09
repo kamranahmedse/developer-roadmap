@@ -67,13 +67,26 @@ export function AccountDropdown() {
     });
   }, [showDropdown]);
 
+  useEffect(() => {
+    const loadConfig = () => {
+      loadOnboardingConfig().finally(() => {
+        setIsConfigLoading(false);
+      });
+    };
+
+    window.addEventListener('visibilitychange', loadConfig);
+    return () => {
+      window.removeEventListener('visibilitychange', loadConfig);
+    };
+  }, []);
+
   if (!isLoggedIn()) {
     return null;
   }
 
   const onboardingDoneCount = Object.values(
     onboardingConfig?.onboarding || {},
-  ).filter((status) => status === 'done').length;
+  ).filter((status) => status !== 'pending').length;
   const onboardingCount = Object.keys(
     onboardingConfig?.onboarding || {},
   ).length;
@@ -85,6 +98,9 @@ export function AccountDropdown() {
           onboardingConfig={onboardingConfig}
           onClose={() => {
             setIsOnboardingModalOpen(false);
+          }}
+          onIgnoreTask={(taskId, status) => {
+            loadOnboardingConfig().finally(() => {});
           }}
         />
       )}

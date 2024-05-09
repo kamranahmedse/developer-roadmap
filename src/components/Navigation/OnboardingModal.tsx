@@ -1,7 +1,7 @@
 import { ArrowUpRight, Check } from 'lucide-react';
 import { Modal } from '../Modal';
 import { cn } from '../../lib/classname';
-import { useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import type { AllowedOnboardingStatus } from '../../api/user';
 import { pageProgressMessage } from '../../stores/page';
 import { httpPatch } from '../../lib/http';
@@ -20,58 +20,63 @@ type Task = {
 type OnboardingModalProps = {
   onClose: () => void;
   onboardingConfig: OnboardingConfig;
+  onIgnoreTask?: (taskId: string, status: AllowedOnboardingStatus) => void;
 };
 
 export function OnboardingModal(props: OnboardingModalProps) {
-  const { onboardingConfig, onClose } = props;
+  const { onboardingConfig, onClose, onIgnoreTask } = props;
 
   const toast = useToast();
   const [selectedTask, setSelectedTask] = useState<Task | null>(null);
 
-  const [tasks, setTasks] = useState<Task[]>([
-    {
-      id: 'updateProgress',
-      title: 'Update your Progress',
-      description: 'Mark your progress on the roadmap',
-      status: onboardingConfig?.onboarding?.updateProgress || 'pending',
-      url: '/roadmaps',
-    },
-    {
-      id: 'publishProfile',
-      title: 'Publish your Profile',
-      description: 'Public profile to showcase your skills on roadmaps',
-      status: onboardingConfig?.onboarding?.publishProfile || 'pending',
-      url: '/account/update-profile',
-    },
-    {
-      id: 'customRoadmap',
-      title: 'Create a Custom Roadmap',
-      description: 'Create your own roadmap to share with others',
-      status: onboardingConfig?.onboarding?.customRoadmap || 'pending',
-      url: 'https://draw.roadmap.sh',
-    },
-    {
-      id: 'addFriends',
-      title: 'Add your Friends',
-      description: 'Invite friends to join you on roadmaps',
-      status: onboardingConfig?.onboarding?.addFriends || 'pending',
-      url: '/account/friends',
-    },
-    {
-      id: 'roadCard',
-      title: 'Create your Roadmap Card',
-      description: 'Share your roadmap card with others',
-      status: onboardingConfig?.onboarding?.roadCard || 'pending',
-      url: '/account/road-card',
-    },
-    {
-      id: 'inviteTeam',
-      title: 'Invite your Team',
-      description: 'Invite your team to collaborate on roadmaps',
-      status: onboardingConfig?.onboarding?.inviteTeam || 'pending',
-      url: '/team',
-    },
-  ]);
+  const tasks = useMemo(() => {
+    return [
+      {
+        id: 'updateProgress',
+        title: 'Update your Progress',
+        description: 'Mark your progress on the roadmap',
+        status: onboardingConfig?.onboarding?.updateProgress || 'pending',
+        url: '/roadmaps',
+      },
+      {
+        id: 'publishProfile',
+        title: 'Publish your Profile',
+        description: 'Public profile to showcase your skills on roadmaps',
+        status: onboardingConfig?.onboarding?.publishProfile || 'pending',
+        url: '/account/update-profile',
+      },
+      {
+        id: 'customRoadmap',
+        title: 'Create a Custom Roadmap',
+        description: 'Create your own roadmap to share with others',
+        status: onboardingConfig?.onboarding?.customRoadmap || 'pending',
+        url: import.meta.env.DEV
+          ? 'http://localhost:4321'
+          : 'https://draw.roadmap.sh',
+      },
+      {
+        id: 'addFriends',
+        title: 'Add your Friends',
+        description: 'Invite friends to join you on roadmaps',
+        status: onboardingConfig?.onboarding?.addFriends || 'pending',
+        url: '/account/friends',
+      },
+      {
+        id: 'roadCard',
+        title: 'Create your Roadmap Card',
+        description: 'Share your roadmap card with others',
+        status: onboardingConfig?.onboarding?.roadCard || 'pending',
+        url: '/account/road-card',
+      },
+      {
+        id: 'inviteTeam',
+        title: 'Invite your Team',
+        description: 'Invite your team to collaborate on roadmaps',
+        status: onboardingConfig?.onboarding?.inviteTeam || 'pending',
+        url: '/team',
+      },
+    ];
+  }, [onboardingConfig]);
 
   const ignoreOnboardingTask = async (
     taskId: string,
@@ -92,16 +97,11 @@ export function OnboardingModal(props: OnboardingModalProps) {
     }
 
     toast.success('Task ignored successfully');
-    setTasks((prevTasks) =>
-      prevTasks.map((task) =>
-        task.id === taskId ? { ...task, status } : task,
-      ),
-    );
+    onIgnoreTask?.(taskId, status);
     setSelectedTask(null);
   };
 
   const ignoreForever = async () => {
-    pageProgressMessage.set('Ignoring Onboarding');
     const { response, error } = await httpPatch<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-ignore-onboarding-forever`,
       {},
@@ -115,6 +115,18 @@ export function OnboardingModal(props: OnboardingModalProps) {
     setAuthToken(response.token);
     window.location.reload();
   };
+
+  const isAllTasksDone = tasks.every(
+    (task) => task.status === 'done' || task.status === 'ignored',
+  );
+  useEffect(() => {
+    if (!isAllTasksDone) {
+      return;
+    }
+
+    pageProgressMessage.set('Finishing Onboarding');
+    ignoreForever().finally(() => {});
+  }, [isAllTasksDone]);
 
   return (
     <Modal onClose={onClose} bodyClassName="text-black p-3">
@@ -224,7 +236,10 @@ export function OnboardingModal(props: OnboardingModalProps) {
       <div className="mt-6">
         <button
           className="text-sm text-gray-600 underline underline-offset-2 hover:text-black hover:no-underline"
-          onClick={ignoreForever}
+          onClick={() => {
+            pageProgressMessage.set('Ignoring Onboarding');
+            ignoreForever().finally();
+          }}
         >
           Ignore forever
         </button>
