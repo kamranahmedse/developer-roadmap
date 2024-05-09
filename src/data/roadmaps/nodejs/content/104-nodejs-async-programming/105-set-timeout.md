@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 - [W3Schools – JavaScript - setTimeOut](https://www.w3schools.com/jsref/met_win_settimeout.asp)
 - [setInterval and setTimeout: timing events](https://www.youtube.com/watch?v=kOcFZV3c75I)
-- [setTimeout EXPLAINED in 5 minutes!](https://www.youtube.com/watch?v=z9lJb4D3nJY)
+- [Learn JavaScript setTimeout() in 6 minutes!](https://www.youtube.com/watch?v=shWr5DNVeCI)
