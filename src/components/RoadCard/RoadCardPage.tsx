@@ -9,6 +9,7 @@ import { SelectionButton } from './SelectionButton';
 import { StepCounter } from './StepCounter';
 import { Editor } from './Editor';
 import { CopyIcon } from 'lucide-react';
+import { setRoadCardCompleteCookie } from '../../lib/jwt';
 
 type StepLabelProps = {
   label: string;
@@ -136,6 +137,8 @@ export function RoadCardPage() {
                   url: badgeUrl.toString(),
                   name: 'road-card',
                   scale: 4,
+                }).finally(() => {
+                  setRoadCardCompleteCookie();
                 })
               }
             >
@@ -144,7 +147,10 @@ export function RoadCardPage() {
             <button
               disabled={isCopied}
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
-              onClick={() => copyText(badgeUrl.toString())}
+              onClick={() => {
+                copyText(badgeUrl.toString());
+                setRoadCardCompleteCookie();
+              }}
             >
               <CopyIcon size={16} className="mr-1 inline-block h-4 w-4" />
 
@@ -156,11 +162,13 @@ export function RoadCardPage() {
             <Editor
               title={'HTML'}
               text={`<a href="https://roadmap.sh"><img src="${badgeUrl}" alt="roadmap.sh"/></a>`.trim()}
+              onCopy={() => setRoadCardCompleteCookie()}
             />
 
             <Editor
               title={'Markdown'}
               text={`[![roadmap.sh](${badgeUrl})](https://roadmap.sh)`.trim()}
+              onCopy={() => setRoadCardCompleteCookie()}
             />
           </div>
 

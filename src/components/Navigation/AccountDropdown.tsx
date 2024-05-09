@@ -73,7 +73,7 @@ export function AccountDropdown() {
 
   const onboardingDoneCount = Object.values(
     onboardingConfig?.onboarding || {},
-  ).filter((status) => status !== 'pending').length;
+  ).filter((status) => status === 'done').length;
   const onboardingCount = Object.keys(
     onboardingConfig?.onboarding || {},
   ).length;

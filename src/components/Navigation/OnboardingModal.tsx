@@ -1,4 +1,4 @@
-import { Check } from 'lucide-react';
+import { ArrowUpRight, Check } from 'lucide-react';
 import { Modal } from '../Modal';
 import { cn } from '../../lib/classname';
 import { useState } from 'react';
@@ -14,6 +14,7 @@ type Task = {
   title: string;
   description: string;
   status: AllowedOnboardingStatus;
+  url: string;
 };
 
 type OnboardingModalProps = {
@@ -33,36 +34,42 @@ export function OnboardingModal(props: OnboardingModalProps) {
       title: 'Update your Progress',
       description: 'Mark your progress on the roadmap',
       status: onboardingConfig?.onboarding?.updateProgress || 'pending',
+      url: '/roadmaps',
     },
     {
       id: 'publishProfile',
       title: 'Publish your Profile',
       description: 'Public profile to showcase your skills on roadmaps',
       status: onboardingConfig?.onboarding?.publishProfile || 'pending',
+      url: '/account/update-profile',
     },
     {
       id: 'customRoadmap',
       title: 'Create a Custom Roadmap',
       description: 'Create your own roadmap to share with others',
       status: onboardingConfig?.onboarding?.customRoadmap || 'pending',
+      url: 'https://draw.roadmap.sh',
     },
     {
       id: 'addFriends',
       title: 'Add your Friends',
       description: 'Invite friends to join you on roadmaps',
       status: onboardingConfig?.onboarding?.addFriends || 'pending',
+      url: '/account/friends',
     },
     {
       id: 'roadCard',
       title: 'Create your Roadmap Card',
       description: 'Share your roadmap card with others',
       status: onboardingConfig?.onboarding?.roadCard || 'pending',
+      url: '/account/road-card',
     },
     {
       id: 'inviteTeam',
       title: 'Invite your Team',
       description: 'Invite your team to collaborate on roadmaps',
       status: onboardingConfig?.onboarding?.inviteTeam || 'pending',
+      url: '/team',
     },
   ]);
 
@@ -153,8 +160,17 @@ export function OnboardingModal(props: OnboardingModalProps) {
                   )}
                 </button>
                 <div className="group-data-[status=ignored]/task:text-gray-400">
-                  <h3 className="text-sm font-medium group-data-[status=done]/task:line-through">
+                  <h3 className="flex items-center text-sm font-medium group-data-[status=done]/task:line-through">
                     {task.title}
+
+                    <a
+                      href={task.url}
+                      target="_blank"
+                      className="ml-1 inline-block text-gray-400 hover:text-black"
+                      aria-label="Open task in new tab"
+                    >
+                      <ArrowUpRight className="inline-block h-4 w-4 stroke-[3px]" />
+                    </a>
                   </h3>
                   <p className="text-xs text-gray-500 group-data-[status=ignored]/task:text-gray-400">
                     {task.description}
@@ -190,7 +206,8 @@ export function OnboardingModal(props: OnboardingModalProps) {
                   <p className="mt-2.5 text-xs">
                     Follow this{' '}
                     <a
-                      href="#"
+                      href={task.url}
+                      target="_blank"
                       className="text-blue-600 underline underline-offset-1 hover:no-underline"
                     >
                       link

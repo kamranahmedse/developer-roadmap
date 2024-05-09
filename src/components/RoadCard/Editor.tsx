@@ -4,10 +4,11 @@ import { CopyIcon } from 'lucide-react';
 type EditorProps = {
   title: string;
   text: string;
+  onCopy?: () => void;
 };
 
 export function Editor(props: EditorProps) {
-  const { text, title } = props;
+  const { text, title, onCopy } = props;
 
   const { isCopied, copyText } = useCopyText();
 
@@ -17,7 +18,13 @@ export function Editor(props: EditorProps) {
         <span className="text-xs uppercase leading-none text-gray-400">
           {title}
         </span>
-        <button className="flex items-center" onClick={() => copyText(text)}>
+        <button
+          className="flex items-center"
+          onClick={() => {
+            copyText(text);
+            onCopy?.();
+          }}
+        >
           {isCopied && (
             <span className="mr-1 text-xs leading-none text-gray-700">
               Copied!&nbsp;
@@ -33,6 +40,7 @@ export function Editor(props: EditorProps) {
         onClick={(e: any) => {
           e.target.select();
           copyText(e.target.value);
+          onCopy?.();
         }}
         value={text}
       />
