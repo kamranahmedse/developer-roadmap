@@ -1,3 +1,3 @@
-# Onwnership System
+# Ownership System
 
 In Rust, the concept of `Ownership` is a key feature that governs how memory management works. Each value in Rust has its own designated owner and there can be only one owner for a value at a time. When the owner goes out of scope, the value would be automatically dropped. The three main facets of ownership include ownership rules, `borrowing` and `slices`. Ownership rules play a key role in system performance and prevention of issues like null or dangling references. `Borrowing` is a mechanism where we allow something to reference a value without taking ownership. Finally, `slices` are a data type that does not have ownership and helps in making a reference to a portion of a collection.
