@@ -14,6 +14,7 @@ type TeamActivityItemProps = {
     name: string;
     avatar?: string | undefined;
     username?: string | undefined;
+    memberId?: string;
   };
 };
 
@@ -62,14 +63,17 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     : '/images/default-avatar.png';
 
   const username = (
-    <>
+    <a
+      href={`/team/member?t=${teamId}&m=${user?.memberId}`}
+      className="inline-flex items-center underline underline-offset-2 hover:no-underline"
+    >
       <img
         className="mr-1 inline-block h-5 w-5 rounded-full"
         src={userAvatar}
         alt={user.name}
       />
-      <span className="font-medium">{user?.name || 'Unknown'}</span>
-    </>
+      <span className="font-medium">{user?.name || 'Unknown'}</span>&nbsp;
+    </a>
   );
 
   if (activities.length === 1) {
@@ -137,9 +141,9 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
 
   return (
     <li key={user._id} className="overflow-hidden rounded-md border">
-      <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
-        {username} has {activities.length} updates in {uniqueResourcesCount}{' '}
-        resource(s)
+      <h3 className="flex flex-wrap items-center bg-gray-100 px-2 py-2.5 text-sm">
+        {username} has {activities.length} updates in {uniqueResourcesCount}
+        &nbsp;resource(s)
       </h3>
       <div className="py-3">
         <ul className="ml-2 flex flex-col divide-y pr-2 sm:ml-[36px]">

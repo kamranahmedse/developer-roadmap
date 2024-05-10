@@ -1,0 +1,15 @@
+---
+import { TeamSidebar } from '../../components/TeamSidebar';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { TeamMemberDetailsPage } from '../../components/TeamMemberDetails/TeamMemberDetailsPage';
+---
+
+<AccountLayout
+  title='Team Members'
+  noIndex={true}
+  initialLoadingMessage='Loading member'
+>
+  <TeamSidebar activePageId='members' client:load>
+    <TeamMemberDetailsPage client:only='react' />
+  </TeamSidebar>
+</AccountLayout>
