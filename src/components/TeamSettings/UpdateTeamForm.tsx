@@ -24,6 +24,7 @@ export function UpdateTeamForm() {
   const [gitHub, setGitHub] = useState('');
   const [teamType, setTeamType] = useState('');
   const [teamSize, setTeamSize] = useState('');
+  const [personalProgressOnly, setPersonalProgressOnly] = useState(false);
   const validTeamSizes = [
     '0-1',
     '2-10',
@@ -55,11 +56,12 @@ export function UpdateTeamForm() {
         website,
         type: teamType,
         gitHubUrl: gitHub || undefined,
+        personalProgressOnly,
         ...(teamType === 'company' && {
           teamSize,
           linkedInUrl: linkedIn || undefined,
         }),
-      }
+      },
     );
 
     if (error) {
@@ -77,7 +79,7 @@ export function UpdateTeamForm() {
 
   async function loadTeam() {
     const { response, error } = await httpGet<TeamDocument>(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`
+      `${import.meta.env.PUBLIC_API_URL}/v1-get-team/${teamId}`,
     );
     if (error || !response) {
       console.log(error);
@@ -90,6 +92,7 @@ export function UpdateTeamForm() {
     setLinkedIn(response?.links?.linkedIn || '');
     setGitHub(response?.links?.github || '');
     setTeamType(response.type);
+    setPersonalProgressOnly(response.personalProgressOnly ?? false);
     if (response.teamSize) {
       setTeamSize(response.teamSize);
     }
@@ -205,16 +208,14 @@ export function UpdateTeamForm() {
           <select
             name="type"
             id="type"
-            className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+            className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
             disabled={isDisabled}
             value={teamType || ''}
             onChange={(e) =>
               setTeamType((e.target as HTMLSelectElement).value as any)
             }
           >
-            <option value="">
-              Select type
-            </option>
+            <option value="">Select type</option>
             <option value="company">Company</option>
             <option value="study_group">Study Group</option>
           </select>
@@ -231,7 +232,7 @@ export function UpdateTeamForm() {
             <select
               name="team-size"
               id="team-size"
-              className="mt-2 block w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
+              className="mt-2 block h-[42px] w-full rounded-lg border border-gray-300 px-3 py-2 shadow-sm outline-none placeholder:text-gray-400 focus:ring-2 focus:ring-black focus:ring-offset-1"
               required={teamType === 'company'}
               disabled={isDisabled}
               value={teamSize}
@@ -247,6 +248,31 @@ export function UpdateTeamForm() {
               ))}
             </select>
           </div>
+        )}
+
+        <div className="mt-4 flex h-[42px] w-full items-center rounded-lg border border-gray-300 px-3 py-2 shadow-sm">
+          <label
+            htmlFor="personal-progress-only"
+            className="flex items-center gap-2 text-sm leading-none text-slate-500"
+          >
+            <input
+              type="checkbox"
+              name="personal-progress-only"
+              id="personal-progress-only"
+              disabled={isDisabled}
+              checked={personalProgressOnly}
+              onChange={(e) =>
+                setPersonalProgressOnly((e.target as HTMLInputElement).checked)
+              }
+            />
+            <span>Members can only see their personal progress</span>
+          </label>
+        </div>
+
+        {personalProgressOnly && (
+          <p className="mt-2 rounded-lg border border-orange-300 bg-orange-50 p-2 text-sm text-orange-700">
+            Only admins and managers will be able to see the progress of members
+          </p>
         )}
 
         <div className="mt-4 flex w-full flex-col">

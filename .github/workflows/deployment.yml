@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - master
+    paths:
+      - 'src/**'
+      - 'public/**'
+      - 'editor/**'
 jobs:
   deploy:
     runs-on: ubuntu-latest
