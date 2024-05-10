@@ -12,7 +12,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const issue = context.payload.issue;
-            const roadmapUrl = issue.body.match(/https?:\/\/roadmap.sh/[^ ]+/);
+            const roadmapUrl = issue.body.match(/https?:\/\/roadmap.sh\/[^ ]+/);
 
             // if the issue is labeled as a topic-change, add the roadmap slug as a label
             if (issue.labels.some(label => label.name === 'topic-change')) {
