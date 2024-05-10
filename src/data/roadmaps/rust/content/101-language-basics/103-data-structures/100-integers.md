@@ -7,7 +7,6 @@ In Rust, integers are a primitive data type that hold whole number values, both 
 
 Each denotation is followed by a number which represents the number of bits they occupy in memory. The available integer types are:
 
-
 |Type|Minimum|Maximum|
 |---|---|---|
 |i8|-(2^7)|(2^7)-1|
