@@ -8,11 +8,14 @@ The [Open Container Initiative (OCI)](https://opencontainers.org/) is a Linux Fo
 
 ### OCI Specifications
 
-OCI has two main specifications:
+OCI has three main specifications:
 
 - **Runtime Specification (runtime-spec):** It defines the specification for executing a container via an isolation technology, like a container engine. The container runtime built by Docker, called 'containerd', has guided the development of the OCI runtime-spec.
 
 - **Image Specification (image-spec):** It defines the container image format, which describes the contents of a container and can be run by a compliant runtime. Docker's initial image format has led to the creation of the OCI image-spec.
+
+- **Distribution Specification (distribution-spec):** It defines defines an API protocol to facilitate and standardize the distribution of content. Docker's existing registry API served as a starting point and heavily influenced the design of the OCI Distro Spec. 
+
 
 ### Compatibility between Docker and OCI
 
