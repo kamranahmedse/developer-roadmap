@@ -11,10 +11,10 @@ export interface GuideFrontmatter {
   seo: {
     title: string;
     description: string;
+    ogImageUrl?: string;
   };
   isNew: boolean;
   type: 'visual' | 'textual';
-  ogImageUrl?: string;
   date: string;
   sitemap: {
     priority: number;

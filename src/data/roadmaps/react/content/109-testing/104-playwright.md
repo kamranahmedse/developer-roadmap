@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [Official Website: Playwright](https://playwright.dev/)
 - [Get started with end-to-end testing: Playwright](https://www.youtube.com/playlist?list=PLQ6Buerc008ed-F9OksF7ek37wR3y916p)
-- [Playwright Tutorial](https://www.browserstack.com/guide/playwright-tutorial)
+- [Playwright Tutorial: Learn Basics and Setup](https://www.browserstack.com/guide/playwright-tutorial)

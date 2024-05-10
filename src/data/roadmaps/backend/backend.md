@@ -15,7 +15,7 @@ question:
     Backend web development is the part of web development that deals with the server-side of a web application. This includes creating and managing the server-side logic, connecting the application to a database, creating server-side APIs, handling user authentication and authorization, and processing and responding to user requests. It often involves the use of [backend development languages](https://roadmap.sh/backend/languages) such as Python, Java, Ruby, PHP, JavaScript (Node.js), and .NET languages.
 
     ## What does a Backend Developer do?
-    A backend developer is responsible for the development of server-side components of a web application i.e. working with databases, handling requests, creating server-side APIs that can be consumed by frontend developers to retrieve and manipulate data, ensuring the scalability of the systems i.e. making sure that the backend can handle a high volume of traffic and is performant, integrating external services like payment gateways, message queues, cloud services, etc.
+    A backend developer focuses on creating and maintaining the server-side components of web applications. They are primarily tasked with developing server-side APIs, handling database operations, and ensuring that the backend can manage high traffic volumes efficiently. Key responsibilities include integrating external services such as payment gateways and cloud services, and enhancing the performance and scalability of systems. This role is crucial for processing and securing data, serving as the backbone that supports frontend developers in delivering a seamless user experience.
 dimensions:
   width: 968
   height: 2583.2
