@@ -7,7 +7,7 @@ briefDescription: 'Step by step guide to becoming a Rust developer in 2024'
 title: 'Rust Developer'
 description: 'Step by step guide to becoming a Rust developer in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 2220.4

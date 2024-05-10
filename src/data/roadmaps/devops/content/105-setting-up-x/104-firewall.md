@@ -7,6 +7,5 @@ Visit the following resources to learn more:
 - [What is Firewall?](https://www.checkpoint.com/cyber-hub/network-security/what-is-firewall/)
 - [Types of Firewall](https://www.cisco.com/c/en_in/products/security/firewalls/what-is-a-firewall.html)
 - [ Introduction of Firewall in Computer Network](https://www.geeksforgeeks.org/introduction-of-firewall-in-computer-network/)
-- [ What is Firewall in Computer Network?](https://www.geeksforgeeks.org/introduction-of-firewall-in-computer-network/)
 - [Why do we need Firewalls?](https://www.tutorialspoint.com/what-is-a-firewall-and-why-do-you-need-one)
 - [ Firewalls and Network Security - SimpliLearn](https://www.youtube.com/watch?v=9GZlVOafYTg)

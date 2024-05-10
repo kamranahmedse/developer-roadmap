@@ -4,8 +4,12 @@ import { ActivityPage } from '../../components/Activity/ActivityPage';
 import AccountLayout from '../../layouts/AccountLayout.astro';
 ---
 
-<AccountLayout title='Update Profile' noIndex={true} initialLoadingMessage={'Loading activity'}>
+<AccountLayout
+  title='Activity'
+  noIndex={true}
+  initialLoadingMessage={'Loading activity'}
+>
   <AccountSidebar activePageId='activity' activePageTitle='Activity'>
-    <ActivityPage client:only="react" />
+    <ActivityPage client:only='react' />
   </AccountSidebar>
 </AccountLayout>

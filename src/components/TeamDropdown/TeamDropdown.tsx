@@ -162,7 +162,7 @@ export function TeamDropdown() {
                 if (team.status === 'invited') {
                   pageLink = `/respond-invite?i=${team.memberId}`;
                 } else if (team.status === 'joined') {
-                  pageLink = `/team/progress?t=${team._id}`;
+                  pageLink = `/team/activity?t=${team._id}`;
                 }
 
                 return (

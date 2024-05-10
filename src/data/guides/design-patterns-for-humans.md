@@ -1,10 +1,7 @@
 ---
 title: 'Design Patterns for Humans'
 description: 'A language agnostic, ultra-simplified explanation to design patterns'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Design Patterns for Humans - roadmap.sh'
   description: 'A language agnostic, ultra-simplified explanation to design patterns'

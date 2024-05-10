@@ -1,14 +1,11 @@
 ---
 import Popup from '../Popup/Popup.astro';
-import { EmailLoginForm } from './EmailLoginForm';
-import Divider from './Divider.astro';
-import { GitHubButton } from './GitHubButton';
-import { GoogleButton } from './GoogleButton';
-import { LinkedInButton } from './LinkedInButton';
+import { AccountTerms } from '../AccountTerms';
+import { AuthenticationForm } from './AuthenticationForm';
 ---
 
 <Popup id='login-popup' title='' subtitle=''>
-  <div class='text-center'>
+  <div class='mb-7 text-center'>
     <p class='mb-3 text-2xl font-semibold leading-5 text-slate-900'>
       Login to your account
     </p>
@@ -16,19 +13,18 @@ import { LinkedInButton } from './LinkedInButton';
       You must be logged in to perform this action.
     </p>
   </div>
-
-  <div class='mt-7 flex flex-col gap-2'>
-    <GitHubButton client:load />
-    <GoogleButton client:load />
-    <LinkedInButton client:load />
-  </div>
-
-  <Divider />
-
-  <EmailLoginForm client:load />
-
-  <div class='mt-6 text-center text-sm text-slate-600'>
+  <AuthenticationForm client:load />
+  <div
+    class='mt-3 w-full rounded-md border py-2 text-center text-sm text-slate-600'
+  >
     Don't have an account?{' '}
-    <a href='/signup' class='font-medium text-[#4285f4]'>Sign up</a>
+    <a
+      href='/signup'
+      class='font-medium text-blue-700 hover:text-blue-600 hover:underline'
+    >
+      Sign up
+    </a>
   </div>
+
+  <AccountTerms />
 </Popup>

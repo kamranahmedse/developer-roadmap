@@ -6,7 +6,7 @@ briefDescription: 'Roadmap to becoming a Game Developer in 2024'
 title: 'Game Developer'
 description: 'Roadmap to becoming a Game Developer in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 2104.59
