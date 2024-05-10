@@ -21,13 +21,15 @@ services:
     image: nginx:latest
     ports:
       - "80:80"
+    depends_on:
+      - db
   db:
     image: mysql:latest
     environment:
       MYSQL_ROOT_PASSWORD: mysecretpassword
 ```
 
-In this example, we have specified two services: a web server (`web`) running the latest version of the nginx image, and a database server (`db`) running MySQL. The web server exposes its port 80 to the host machine, and the database server has an environment variable set for the root password.
+In this example, we have specified two services: a web server (`web`) running the latest version of the nginx image, and a database server (`db`) running MySQL. The web server exposes its port 80 to the host machine and depends on the launch of the database (`db`). The database server has an environment variable set for the root password.
 
 ## Running Docker Compose:
 
