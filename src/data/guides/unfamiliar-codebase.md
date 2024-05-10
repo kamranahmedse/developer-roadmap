@@ -1,10 +1,7 @@
 ---
 title: 'Unfamiliar Codebase'
 description: 'Tips on getting familiar with an unfamiliar codebase'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Unfamiliar Codebase - roadmap.sh'
   description: 'Tips on getting familiar with an unfamiliar codebase'

@@ -10,7 +10,7 @@ Given below is the list of common algorithmic runtimes. The runtimes are listed 
 - O(n^3) - Cubic
 - O(2^n) - Exponential
 - O(n!) - Factorial
-- O(n^n) - Polynomial
+- O(n^k) - Polynomial
 
 Visit the following resources to learn more:
 

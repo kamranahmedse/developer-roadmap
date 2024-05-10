@@ -1,7 +1,14 @@
 import { type FormEvent, useState } from 'react';
 import { httpPost } from '../../lib/http';
 
-export function EmailSignupForm() {
+type EmailSignupFormProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
+
+export function EmailSignupForm(props: EmailSignupFormProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [name, setName] = useState('');
@@ -13,6 +20,7 @@ export function EmailSignupForm() {
     e.preventDefault();
 
     setIsLoading(true);
+    setIsDisabled?.(true);
     setError('');
 
     const { response, error } = await httpPost<{ status: 'ok' }>(
@@ -21,20 +29,21 @@ export function EmailSignupForm() {
         email,
         password,
         name,
-      }
+      },
     );
 
     if (error || response?.status !== 'ok') {
       setIsLoading(false);
+      setIsDisabled?.(false);
       setError(
-        error?.message || 'Something went wrong. Please try again later.'
+        error?.message || 'Something went wrong. Please try again later.',
       );
 
       return;
     }
 
     window.location.href = `/verification-pending?email=${encodeURIComponent(
-      email
+      email,
     )}`;
   };
 
@@ -90,7 +99,7 @@ export function EmailSignupForm() {
 
       <button
         type="submit"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         className="inline-flex w-full items-center justify-center rounded-lg bg-black p-2 py-3 text-sm font-medium text-white outline-none focus:ring-2 focus:ring-black focus:ring-offset-1 disabled:bg-gray-400"
       >
         {isLoading ? 'Please wait...' : 'Continue to Verify Email'}

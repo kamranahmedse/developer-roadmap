@@ -1,31 +1,33 @@
+import {AlertTriangle, Barcode, BookOpenIcon, PieChart, Shrub, SquareIcon, UserRoundPlus} from "lucide-react";
+
 const toolsList = [
   {
-    imageUrl: '/images/team-promo/growth-plans.png',
+    icon: Shrub,
     title: 'Growth plans',
     description: 'Prepare shared or individual growth plans for members.',
   },
   {
-    imageUrl: '/images/team-promo/progress-tracking.png',
+    icon: Barcode,
     title: 'Progress tracking',
     description: 'Track and compare the progress of team members.',
   },
   {
-    imageUrl: '/images/team-promo/onboarding.png',
+    icon: UserRoundPlus,
     title: 'Onboarding',
     description: 'Prepare onboarding plans for new team members.',
   },
   {
-    imageUrl: '/images/team-promo/team-insights.png',
+    icon: PieChart,
     title: 'Team insights',
     description: 'Get insights about your team skills, progress and more.',
   },
   {
-    imageUrl: '/images/team-promo/skill-gap.png',
+    icon: AlertTriangle,
     title: 'Skill gap analysis',
     description: 'Understand the skills of your team and identify gaps.',
   },
   {
-    imageUrl: '/images/team-promo/documentation.png',
+    icon: BookOpenIcon,
     title: 'Documentation',
     description: 'Create and share visual team documentation.',
   },
@@ -44,11 +46,9 @@ export function TeamTools() {
           {toolsList.map((tool) => {
             return (
               <div className="rounded-md sm:rounded-xl border p-2 sm:p-5 text-left sm:text-center md:text-left">
-                <img
-                  alt={tool.title}
-                  src={tool.imageUrl}
-                  className="mb-5 h-48 hidden sm:block mx-auto md:mx-0"
-                />
+                <div className='mb-5 flex h-9 w-9 items-center justify-center rounded-full bg-gray-900 text-white'>
+                  {tool.icon ? <tool.icon size={23} /> : <SquareIcon size={24} /> }
+                </div>
                 <h3 className="mb-0.5 sm:mb-2 text-lg sm:text-2xl font-bold">{tool.title}</h3>
                 <p className='text-sm sm:text-base'>{tool.description}</p>
               </div>

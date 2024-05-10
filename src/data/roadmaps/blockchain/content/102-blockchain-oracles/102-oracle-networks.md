@@ -6,4 +6,4 @@ Visit the following resources to learn more:
 
 - [Decentralized Oracle Networks](https://medium.com/coinmonks/decentralized-oracle-networks-9fead28f5fe5)
 - [A Beginner’s Guide To The Evolution Of Decentralized Oracle Networks](https://chainlinktoday.com/a-beginners-guide-to-the-evolution-of-decentralized-oracle-networks/)
-- [Understanding Oracle Networks](https://coinmetro.com/blog/understanding-oracle-networks/)
+- [Understanding Blockchain Oracle](https://chain.link/education/blockchain-oracles)

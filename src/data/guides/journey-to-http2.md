@@ -1,10 +1,7 @@
 ---
 title: 'Journey to HTTP/2'
 description: 'The evolution of HTTP. How it all started and where we stand today'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Journey to HTTP/2 - roadmap.sh'
   description: 'The evolution of HTTP. How it all started and where we stand today'

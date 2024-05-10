@@ -1,10 +1,9 @@
 // https://astro.build/config
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
-import compress from 'astro-compress';
+import node from '@astrojs/node';
 import { defineConfig } from 'astro/config';
 import rehypeExternalLinks from 'rehype-external-links';
-import { fileURLToPath } from 'node:url';
 import { serializeSitemap, shouldIndexPage } from './sitemap.mjs';
 
 import react from '@astrojs/react';
@@ -29,7 +28,7 @@ export default defineConfig({
               'mailto:',
               'https://github.com/kamranahmedse',
               'https://thenewstack.io',
-              'https://cs.fyi',
+              'https://kamranahmed.info',
               'https://roadmap.sh',
             ];
             if (whiteListedStarts.some((start) => href.startsWith(start))) {
@@ -41,9 +40,11 @@ export default defineConfig({
       ],
     ],
   },
-  build: {
-    format: 'file',
-  },
+  output: 'hybrid',
+  adapter: node({
+    mode: 'standalone',
+  }),
+  trailingSlash: 'never',
   integrations: [
     tailwind({
       config: {
@@ -53,11 +54,6 @@ export default defineConfig({
     sitemap({
       filter: shouldIndexPage,
       serialize: serializeSitemap,
-    }),
-    compress({
-      HTML: false,
-      CSS: false,
-      JavaScript: false,
     }),
     react(),
   ],

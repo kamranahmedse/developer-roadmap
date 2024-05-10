@@ -1,8 +1,8 @@
 ---
 import AccountSidebar from '../../components/AccountSidebar.astro';
-import UpdatePasswordForm from '../../components/UpdatePassword/UpdatePasswordForm';
 import AccountLayout from '../../layouts/AccountLayout.astro';
 import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
+import { ProfileSettingsPage } from '../../components/ProfileSettings/ProfileSettingsPage';
 ---
 
 <AccountLayout
@@ -12,7 +12,7 @@ import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
   initialLoadingMessage={'Loading settings'}
 >
   <AccountSidebar activePageId='settings' activePageTitle='Settings'>
-    <UpdatePasswordForm client:only="react" />
+    <ProfileSettingsPage client:load />
     <hr class='my-8' />
     <DeleteAccount />
   </AccountSidebar>

@@ -1,16 +1,21 @@
 import { useEffect, useState } from 'react';
 import { GitHubIcon } from '../ReactIcons/GitHubIcon.tsx';
 import Cookies from 'js-cookie';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { httpGet } from '../../lib/http';
 import { Spinner } from '../ReactIcons/Spinner.tsx';
 
-type GitHubButtonProps = {};
+type GitHubButtonProps = {
+  isDisabled?: boolean;
+  setIsDisabled?: (isDisabled: boolean) => void;
+};
 
 const GITHUB_REDIRECT_AT = 'githubRedirectAt';
 const GITHUB_LAST_PAGE = 'githubLastPage';
 
 export function GitHubButton(props: GitHubButtonProps) {
+  const { isDisabled, setIsDisabled } = props;
+
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
 
@@ -25,6 +30,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     }
 
     setIsLoading(true);
+    setIsDisabled?.(true);
     httpGet<{ token: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-callback${
         window.location.search
@@ -35,6 +41,7 @@ export function GitHubButton(props: GitHubButtonProps) {
           const errMessage = error?.message || 'Something went wrong.';
           setError(errMessage);
           setIsLoading(false);
+          setIsDisabled?.(false);
 
           return;
         }
@@ -63,21 +70,19 @@ export function GitHubButton(props: GitHubButtonProps) {
 
         localStorage.removeItem(GITHUB_REDIRECT_AT);
         localStorage.removeItem(GITHUB_LAST_PAGE);
-        Cookies.set(TOKEN_COOKIE_NAME, response.token, {
-          path: '/',
-          expires: 30,
-          domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-        });
+        setAuthToken(response.token);
         window.location.href = redirectUrl;
       })
       .catch((err) => {
         setError('Something went wrong. Please try again later.');
         setIsLoading(false);
+        setIsDisabled?.(false);
       });
   }, []);
 
   const handleClick = async () => {
     setIsLoading(true);
+    setIsDisabled?.(true);
 
     const { response, error } = await httpGet<{ loginUrl: string }>(
       `${import.meta.env.PUBLIC_API_URL}/v1-github-login`,
@@ -89,13 +94,14 @@ export function GitHubButton(props: GitHubButtonProps) {
       );
 
       setIsLoading(false);
+      setIsDisabled?.(false);
       return;
     }
 
     // For non authentication pages, we want to redirect back to the page
     // the user was on before they clicked the social login button
     if (!['/login', '/signup'].includes(window.location.pathname)) {
-      const pagePath = ['/respond-invite', '/befriend'].includes(
+      const pagePath = ['/respond-invite', '/befriend', '/r', '/ai'].includes(
         window.location.pathname,
       )
         ? window.location.pathname + window.location.search
@@ -112,7 +118,7 @@ export function GitHubButton(props: GitHubButtonProps) {
     <>
       <button
         className="inline-flex h-10 w-full items-center justify-center gap-2 rounded border border-slate-300 bg-white p-2 text-sm font-medium text-black outline-none focus:ring-2 focus:ring-[#333] focus:ring-offset-1 disabled:cursor-not-allowed disabled:opacity-60"
-        disabled={isLoading}
+        disabled={isLoading || isDisabled}
         onClick={handleClick}
       >
         {isLoading ? (

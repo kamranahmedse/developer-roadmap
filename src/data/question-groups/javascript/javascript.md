@@ -4,7 +4,7 @@ briefTitle: 'JavaScript'
 briefDescription: 'Test, rate and improve your JavaScript knowledge with these questions.'
 title: 'JavaScript Questions'
 description: 'Test, rate and improve your JavaScript knowledge with these questions.'
-isNew: true
+isNew: false
 seo:
   title: 'JavaScript Questions'
   description: 'Curated list of JavaScript questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'

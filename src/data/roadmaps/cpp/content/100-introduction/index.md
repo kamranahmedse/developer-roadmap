@@ -49,6 +49,7 @@ C++ has several basic data types for representing integer, floating-point, and c
 - `float`: single-precision floating-point values
 - `double`: double-precision floating-point values
 - `char`: single characters
+- `bool`: boolean values
 
 Variables must be declared with a data type before they can be used:
 
@@ -57,6 +58,7 @@ int x;
 float y;
 double z;
 char c;
+bool b;
 ```
 
 ## Control Structures

@@ -30,20 +30,6 @@ db.users.deleteMany({ country: 'Australia' });
 
 This command will delete all `users` documents with a `country` field equal to `"Australia"`.
 
-## db.collection.remove()
-
-The `remove()` method can be used to delete documents in a more flexible way, as it takes both a filter and a `justOne` option. If `justOne` is set to true, only the first document (by natural order) that matches the filter will be removed. Otherwise, if `justOne` is set to false, all documents matching the filter will be deleted.
-
-Syntax: `db.collection.remove(FILTER, JUST_ONE)`
-
-Example:
-
-```javascript
-db.users.remove({ age: { $lt: 18 } }, true);
-```
-
-This command would delete a single user document with an `age` field value less than 18.
-
 ## db.collection.drop()
 
 In cases where you want to remove an entire collection, including the documents and the metadata, you can use the `drop()` method. This command does not require a filter, as it removes everything in the specified collection.
