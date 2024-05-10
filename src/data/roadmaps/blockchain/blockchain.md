@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/blockchain.json'
 pdfUrl: '/pdfs/roadmaps/blockchain.pdf'
 order: 6
 briefTitle: 'Blockchain'
-briefDescription: 'Step by step guide to becoming a blockchain developer in 2023'
+briefDescription: 'Step by step guide to becoming a blockchain developer in 2024'
 title: 'Blockchain Developer'
-description: 'Step by step guide to becoming a blockchain developer in 2023.'
+description: 'Step by step guide to becoming a blockchain developer in 2024.'
 isNew: false
 hasTopics: true
 dimensions:
@@ -13,7 +13,7 @@ dimensions:
   height: 2173.87
 schema:
   headline: 'Blockchain Developer Roadmap'
-  description: 'Learn how to become a Blockchain Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to become a Blockchain Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/blockchain.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'
@@ -21,11 +21,11 @@ seo:
   title: 'Blockchain Developer Roadmap: Learn to become a blockchain developer'
   description: 'Learn to become a blockchain developer using this roadmap. Community driven, articles, resources, guides, interview questions, quizzes for modern backend development.'
   keywords:
-    - 'blockchain roadmap 2023'
+    - 'blockchain roadmap 2024'
     - 'web3 developer roadmap'
-    - 'web3 developer roadmap 2023'
+    - 'web3 developer roadmap 2024'
     - 'web3 roadmap'
-    - 'blockchain developer roadmap 2023'
+    - 'blockchain developer roadmap 2024'
     - 'guide to becoming a blockchain developer'
     - 'guide to becoming a blockchain developer'
     - 'blockchain roadmap'

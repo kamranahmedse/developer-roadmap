@@ -12,7 +12,10 @@ export function SkeletonRoadmapHeader() {
         </div>
 
         <div className="flex justify-between gap-2 sm:gap-0">
-          <div className="h-7 w-[35.04px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-32" />
+          <div className='flex gap-1 sm:gap-2'>
+            <div className="h-7 w-[35.04px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-32" />
+            <div className="h-7 w-[35.04px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-[85px]" />
+          </div>
           <div className="flex items-center gap-2">
             <div className="h-7 w-[60.52px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-[139.71px]" />
             <div className="h-7 w-[71.48px] animate-pulse rounded-md bg-gray-300 sm:h-8 sm:w-[100.34px]" />

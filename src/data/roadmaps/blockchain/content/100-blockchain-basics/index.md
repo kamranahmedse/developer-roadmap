@@ -4,7 +4,7 @@ A blockchain is a decentralized, distributed, and oftentimes public, digital led
 
 Visit the following resources to learn more:
 
-- [Introduction to Blockchain](https://www.blockchain.education/blockchain101/blockchain)
+- [Introduction to Blockchain](https://chain.link/education-hub/blockchain)
 - [Blockchain Explained](https://www.investopedia.com/terms/b/blockchain.asp)
 - [How does a blockchain work?](https://youtu.be/SSo_EIwHSd4)
 - [What Is a Blockchain? | Blockchain Basics for Developers](https://youtu.be/4ff9esY_4aU)

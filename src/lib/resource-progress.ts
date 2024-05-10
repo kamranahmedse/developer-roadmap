@@ -96,7 +96,7 @@ export async function getResourceProgress(
 
   const userId = getUser()?.id;
   const progressKey = `${resourceType}-${resourceId}-${userId}-progress`;
-  const isFavoriteKey = `${resourceType}-${resourceId}-${userId}-favorite`;
+  const isFavoriteKey = `${resourceType}-${resourceId}-favorite`;
 
   const rawIsFavorite = localStorage.getItem(isFavoriteKey);
   const isFavorite = JSON.parse(rawIsFavorite || '0') === 1;
@@ -112,11 +112,11 @@ export async function getResourceProgress(
     return loadFreshProgress(resourceType, resourceId);
   } else {
     setResourceProgress(
-        resourceType,
-        resourceId,
-        progress?.done || [],
-        progress?.learning || [],
-        progress?.skipped || [],
+      resourceType,
+      resourceId,
+      progress?.done || [],
+      progress?.learning || [],
+      progress?.skipped || [],
     );
   }
 
@@ -229,6 +229,8 @@ export function topicSelectorAll(
       `[data-group-id="check:${topicId}"]`, // Matching "check:XXXX" box of the topic
       `[data-node-id="${topicId}"]`, // Matching custom roadmap nodes
       `[data-id="${topicId}"]`, // Matching custom roadmap nodes
+      `[data-checklist-checkbox][data-checklist-id="${topicId}"]`, // Matching checklist checkboxes
+      `[data-checklist-label][data-checklist-id="${topicId}"]`, // Matching checklist labels
     ],
     parentElement,
   ).forEach((element) => {
@@ -307,11 +309,11 @@ export async function renderResourceProgress(
 }
 
 function getMatchingElements(
-  quries: string[],
+  queries: string[],
   parentElement: Document | SVGElement | HTMLDivElement = document,
 ): Element[] {
   const matchingElements: Element[] = [];
-  quries.forEach((query) => {
+  queries.forEach((query) => {
     parentElement.querySelectorAll(query).forEach((element) => {
       matchingElements.push(element);
     });

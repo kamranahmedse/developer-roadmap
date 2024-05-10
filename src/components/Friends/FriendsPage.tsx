@@ -10,7 +10,7 @@ import { FriendProgressItem } from './FriendProgressItem';
 import { UserProgressModal } from '../UserProgress/UserProgressModal';
 import { InviteFriendPopup } from './InviteFriendPopup';
 import { UserCustomProgressModal } from '../UserProgress/UserCustomProgressModal';
-import {UserIcon} from "lucide-react";
+import { UserIcon } from 'lucide-react';
 
 type FriendResourceProgress = {
   updatedAt: string;

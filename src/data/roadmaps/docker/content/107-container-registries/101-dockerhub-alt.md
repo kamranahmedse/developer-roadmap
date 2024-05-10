@@ -6,9 +6,9 @@ In this section, we will discuss some popular alternatives to DockerHub. These a
 
 [Quay.io](https://quay.io/) by Red Hat is a popular alternative to DockerHub that offers both free and paid plans. It provides an advanced security feature called "Container Security Scanning," which checks for vulnerabilities in the images stored in your repository. Quay.io also provides features like automated builds, fine-grained user access control, and Git repository integration.
 
-### Google Container Registry (GCR)
+### Artifact Registry
 
-[Google Container Registry (GCR)](https://cloud.google.com/container-registry) is a container registry service by Google Cloud Platform. It provides a highly-scalable and secure infrastructure to store, manage, and deploy Docker images. GCR offers integration with other Google Cloud services, such as Cloud Build for automated builds, Container Registry vulnerability scanning, and IAM roles for user access control.
+[Artifact Registry](https://cloud.google.com/artifact-registry) is a container registry service provided by Google Cloud Platform (GCP). It offers a fully managed, private Docker container registry that integrates with other GCP services like Cloud Build, Cloud Run, and Kubernetes Engine. Artifact Registry provides features like vulnerability scanning, access control, and artifact versioning.
 
 ### Amazon Elastic Container Registry (ECR)
 

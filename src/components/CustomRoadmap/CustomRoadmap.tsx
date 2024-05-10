@@ -1,17 +1,11 @@
 import { useEffect, useState } from 'react';
 import { getUrlParams } from '../../lib/browser';
-import {
-  type AppError,
-  type FetchError,
-  httpGet,
-  httpPost,
-} from '../../lib/http';
+import { type AppError, type FetchError, httpGet } from '../../lib/http';
 import { RoadmapHeader } from './RoadmapHeader';
 import { TopicDetail } from '../TopicDetail/TopicDetail';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import { currentRoadmap } from '../../stores/roadmap';
 import { RestrictedPage } from './RestrictedPage';
-import { isLoggedIn } from '../../lib/jwt';
 import { FlowRoadmapRenderer } from './FlowRoadmapRenderer';
 
 export const allowedLinkTypes = [
@@ -53,14 +47,21 @@ export type GetRoadmapResponse = RoadmapDocument & {
 
 export function hideRoadmapLoader() {
   const loaderEl = document.querySelector(
-    '[data-roadmap-loader]'
+    '[data-roadmap-loader]',
   ) as HTMLElement;
   if (loaderEl) {
     loaderEl.remove();
   }
 }
 
-export function CustomRoadmap() {
+type CustomRoadmapProps = {
+  isEmbed?: boolean;
+  slug?: string;
+};
+
+export function CustomRoadmap(props: CustomRoadmapProps) {
+  const { isEmbed = false, slug } = props;
+
   const { id, secret } = getUrlParams() as { id: string; secret: string };
 
   const [isLoading, setIsLoading] = useState(true);
@@ -70,15 +71,18 @@ export function CustomRoadmap() {
   async function getRoadmap() {
     setIsLoading(true);
 
-    const roadmapUrl = new URL(
-      `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`
-    );
+    const roadmapUrl = slug
+      ? new URL(
+          `${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap-by-slug/${slug}`,
+        )
+      : new URL(`${import.meta.env.PUBLIC_API_URL}/v1-get-roadmap/${id}`);
+
     if (secret) {
       roadmapUrl.searchParams.set('secret', secret);
     }
 
     const { response, error } = await httpGet<GetRoadmapResponse>(
-      roadmapUrl.toString()
+      roadmapUrl.toString(),
     );
 
     if (error || !response) {
@@ -94,19 +98,10 @@ export function CustomRoadmap() {
     setIsLoading(false);
   }
 
-  async function trackVisit() {
-    if (!isLoggedIn()) return;
-    await httpPost(`${import.meta.env.PUBLIC_API_URL}/v1-visit`, {
-      resourceId: id,
-      resourceType: 'roadmap',
-    });
-  }
-
   useEffect(() => {
     getRoadmap().finally(() => {
       hideRoadmapLoader();
     });
-    trackVisit().then();
   }, []);
 
   if (isLoading) {
@@ -119,9 +114,14 @@ export function CustomRoadmap() {
 
   return (
     <>
-      <RoadmapHeader />
-      <FlowRoadmapRenderer roadmap={roadmap!} />
-      <TopicDetail canSubmitContribution={false} />
+      {!isEmbed && <RoadmapHeader />}
+      <FlowRoadmapRenderer isEmbed={isEmbed} roadmap={roadmap!} />
+      <TopicDetail
+        resourceTitle={roadmap!.title}
+        resourceType="roadmap"
+        isEmbed={isEmbed}
+        canSubmitContribution={false}
+      />
     </>
   );
 }

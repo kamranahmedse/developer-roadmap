@@ -6,6 +6,6 @@ Visit the following resources to learn more:
 
 - [Official Website](https://nodejs.org/en/about/)
 - [Node.JS Introduction](https://www.w3schools.com/nodejs/nodejs_intro.asp)
-- [Official Website](https://nodejs.dev/en/learn/)
+- [Official Website](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
 - [What is Node.js?](https://www.youtube.com/watch?v=uVwtVBpw7RQ)
 - [How Node.js Works?](https://www.youtube.com/watch?v=jOupHNvDIq8)

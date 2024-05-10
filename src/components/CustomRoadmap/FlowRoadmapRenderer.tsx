@@ -1,26 +1,27 @@
 import { ReadonlyEditor } from '../../../editor/readonly-editor';
 import type { RoadmapDocument } from './CreateRoadmap/CreateRoadmapModal';
 import {
-  renderResourceProgress,
-  updateResourceProgress,
-  type ResourceProgressType,
-  renderTopicProgress,
   refreshProgressCounters,
+  renderResourceProgress,
+  renderTopicProgress,
+  type ResourceProgressType,
+  updateResourceProgress,
 } from '../../lib/resource-progress';
 import { pageProgressMessage } from '../../stores/page';
 import { useToast } from '../../hooks/use-toast';
 import type { Node } from 'reactflow';
-import { useCallback, type MouseEvent, useMemo, useState, useRef } from 'react';
+import { type MouseEvent, useCallback, useRef, useState } from 'react';
 import { EmptyRoadmap } from './EmptyRoadmap';
 import { cn } from '../../lib/classname';
 import { totalRoadmapNodes } from '../../stores/roadmap.ts';
 
 type FlowRoadmapRendererProps = {
+  isEmbed?: boolean;
   roadmap: RoadmapDocument;
 };
 
 export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
-  const { roadmap } = props;
+  const { roadmap, isEmbed = false } = props;
   const roadmapId = String(roadmap._id!);
 
   const [hideRenderer, setHideRenderer] = useState(false);
@@ -32,6 +33,10 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
     topicId: string,
     newStatus: ResourceProgressType,
   ) {
+    if (isEmbed) {
+      return;
+    }
+
     pageProgressMessage.set('Updating progress');
     updateResourceProgress(
       {
@@ -120,6 +125,32 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
     }
   }, []);
 
+  const handleChecklistCheckboxClick = useCallback(
+    (e: MouseEvent, checklistId: string) => {
+      const target = e?.currentTarget as HTMLDivElement;
+      if (!target) {
+        return;
+      }
+
+      const isCurrentStatusDone = target?.classList.contains('done');
+      updateTopicStatus(checklistId, isCurrentStatusDone ? 'pending' : 'done');
+    },
+    [],
+  );
+
+  const handleChecklistLabelClick = useCallback(
+    (e: MouseEvent, checklistId: string) => {
+      const target = e?.currentTarget as HTMLDivElement;
+      if (!target) {
+        return;
+      }
+
+      const isCurrentStatusDone = target?.classList.contains('done');
+      updateTopicStatus(checklistId, isCurrentStatusDone ? 'pending' : 'done');
+    },
+    [],
+  );
+
   return (
     <>
       {hideRenderer && (
@@ -157,6 +188,8 @@ export function FlowRoadmapRenderer(props: FlowRoadmapRendererProps) {
         onTopicAltClick={handleTopicAltClick}
         onButtonNodeClick={handleLinkClick}
         onLinkClick={handleLinkClick}
+        onChecklistCheckboxClick={handleChecklistCheckboxClick}
+        onChecklistLableClick={handleChecklistLabelClick}
         fontFamily="Balsamiq Sans"
         fontURL="/fonts/balsamiq.woff2"
       />

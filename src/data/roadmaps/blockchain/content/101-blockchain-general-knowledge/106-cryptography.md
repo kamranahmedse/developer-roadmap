@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [What is Cryptography](https://www.synopsys.com/glossary/what-is-cryptography.html)
 - [Asymmetric Encryption - Simply explained](https://youtu.be/AQDCe585Lnc)
 - [What is Cryptography?](https://www.youtube.com/watch?v=6_Cxj5WKpIw)
-- [Learn Cryptography](https://www.youtube.com/watch?v=trHox1bN5es)

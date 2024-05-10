@@ -1,10 +1,7 @@
 ---
 title: 'What is CI and CD?'
 description: 'Learn the basics of CI/CD and how to implement that with GitHub Actions.'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'What is CI and CD? - roadmap.sh'
   description: 'Learn the basics of CI/CD and how to implement that with GitHub Actions.'

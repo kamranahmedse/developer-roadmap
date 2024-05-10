@@ -2,9 +2,9 @@
 pdfUrl: '/pdfs/roadmaps/server-side-game-developer.pdf'
 order: 17
 briefTitle: 'Server Side Game Developer'
-briefDescription: 'Roadmap to becoming a Server Side Game Developer in 2023'
+briefDescription: 'Roadmap to becoming a Server Side Game Developer in 2024'
 title: 'Server Side Game Developer'
-description: 'Roadmap to becoming a Server Side Game Developer in 2023'
+description: 'Roadmap to becoming a Server Side Game Developer in 2024'
 hasTopics: true
 isNew: true
 isHidden: true
@@ -21,8 +21,8 @@ seo:
   title: 'Server Side Game Developer Roadmap'
   description: 'Learn what Server Side Game Development is, what server side game developers do and how to become one using our community-driven roadmap.'
   keywords:
-    - 'server side game developer roadmap 2023'
-    - 'server side game developer roadmap 2023'
+    - 'server side game developer roadmap 2024'
+    - 'server side game developer roadmap 2024'
     - 'guide to becoming a server side game developer'
     - 'guide to becoming a server side game developer'
     - 'server side game developer roadmap'
