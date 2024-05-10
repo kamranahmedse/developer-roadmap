@@ -27,6 +27,7 @@ export interface RoadmapDocument {
   _id?: string;
   title: string;
   description?: string;
+  slug?: string;
   creatorId: string;
   teamId?: string;
   isDiscoverable: boolean;
@@ -145,7 +146,7 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="title"
               id="title"
               required
-              className="block text-black w-full rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm"
+              className="block w-full rounded-md border border-gray-300 px-2.5 py-2 text-black outline-none focus:border-black sm:text-sm"
               placeholder="Enter Title"
               value={title}
               onChange={(e) => setTitle(e.target.value)}
@@ -165,8 +166,8 @@ export function CreateRoadmapModal(props: CreateRoadmapModalProps) {
               name="description"
               required
               className={cn(
-                'block text-black h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 outline-none focus:border-black sm:text-sm',
-                isInvalidDescription && 'border-red-300 bg-red-100'
+                'block h-24 w-full resize-none rounded-md border border-gray-300 px-2.5 py-2 text-black outline-none focus:border-black sm:text-sm',
+                isInvalidDescription && 'border-red-300 bg-red-100',
               )}
               placeholder="Enter Description"
               value={description}

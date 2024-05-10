@@ -1,0 +1,3 @@
+# Enforcing Reasonable Payload Size Limits
+
+Backend performance in web applications largely depends on how quickly servers are able to process, store, and retrieve data. When large data payloads are transferred, it places a heavy strain on network resources and the server itself; potentially resulting in sluggish response times and poor application performance. Hence, enforcing reasonable payload size limits is vital to maintain optimum performance. For example, a web application dealing with large image files can implement limits to ensure that users don't upload images beyond a certain size. This not only helps to keep server and bandwidth costs manageable, but also ensures that the application runs smoothly for all users.

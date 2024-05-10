@@ -4,7 +4,7 @@ briefTitle: 'React'
 briefDescription: 'Test, rate and improve your React knowledge with these questions.'
 title: 'React Questions'
 description: 'Test, rate and improve your React knowledge with these questions.'
-isNew: true
+isNew: false
 seo:
   title: 'React Questions'
   description: 'Curated list of React questions to test, rate and improve your knowledge. Questions are based on real world experience and knowledge.'
@@ -210,7 +210,7 @@ questions:
       - 'Intermediate'
   - question: What are Server Components in React?
     answer: |
-      Server Components in allow developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
+      Server Components allow developers to write components that render on the server instead of the client. Unlike traditional components, Server Components do not have a client-side runtime, meaning they result in a smaller bundle size and faster loads. They can seamlessly integrate with client components and can fetch data directly from the backend without the need for an API layer. This enables developers to build rich, interactive apps with less client-side code, improving performance and developer experience.
     topics:
       - 'SSR'
       - 'Intermediate'

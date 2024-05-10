@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [Java Garbage Collection](https://stackify.com/what-is-java-garbage-collection/)
 - [Garbage Collection in Java](https://www.geeksforgeeks.org/garbage-collection-java/)
 - [Java Garbage Collection](https://www.javatpoint.com/Garbage-Collection)
-- [Garbage Collection in Java - Geekific](https://www.youtube.com/watch?v=xxoacv5xm9s)
+- [Garbage Collection in Java - Geekific](https://www.youtube.com/watch?v=XXOaCV5xm9s)

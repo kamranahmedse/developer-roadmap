@@ -34,3 +34,35 @@ export async function downloadImage({
     alert('Error downloading image');
   }
 }
+
+export async function downloadGeneratedRoadmapImage(
+  name: string,
+  node: HTMLElement,
+) {
+  // Append a watermark to the bottom right of the image
+  const watermark = document.createElement('div');
+  watermark.className = 'flex justify-end absolute top-4 right-4 gap-2';
+  watermark.innerHTML = `
+    <span
+      class='rounded-md bg-black py-2 px-2 text-white'
+    >
+      roadmap.sh
+    </span>
+  `;
+  node.insertAdjacentElement('afterbegin', watermark);
+
+  const domtoimage = (await import('dom-to-image')).default;
+  if (!domtoimage) {
+    throw new Error('Unable to download image');
+  }
+
+  const dataUrl = await domtoimage.toJpeg(node, {
+    bgcolor: 'white',
+    quality: 1,
+  });
+  node?.removeChild(watermark);
+  const link = document.createElement('a');
+  link.download = `${name}-roadmap.jpg`;
+  link.href = dataUrl;
+  link.click();
+}

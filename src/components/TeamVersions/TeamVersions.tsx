@@ -107,20 +107,29 @@ export function TeamVersions(props: TeamVersionsProps) {
 
   useEffect(() => {
     clearResourceProgress();
+
+    // teams have customizations. Assigning #customized-roadmap to roadmapSvgWrap
+    // makes those customizations visible and removes extra boxes
+    const roadmapSvgWrap: HTMLElement =
+      document.getElementById('resource-svg-wrap')?.parentElement ||
+      document.createElement('div');
+
     if (!selectedTeamVersion) {
       deleteUrlParam('t');
       renderResourceProgress(resourceType, resourceId).then();
-      return;
-    }
 
-    setUrlParams({ t: selectedTeamVersion.team._id! });
+      roadmapSvgWrap.id = '';
+    } else {
+      setUrlParams({ t: selectedTeamVersion.team._id! });
 
-    renderResourceProgress(resourceType, resourceId).then(() => {
-      selectedTeamVersion.config?.removed?.forEach((topic) => {
-        renderTopicProgress(topic, 'removed');
+      renderResourceProgress(resourceType, resourceId).then(() => {
+        selectedTeamVersion.config?.removed?.forEach((topic) => {
+          renderTopicProgress(topic, 'removed');
+        });
+        refreshProgressCounters();
+        roadmapSvgWrap.id = 'customized-roadmap';
       });
-      refreshProgressCounters();
-    });
+    }
   }, [selectedTeamVersion]);
 
   if (isPreparing) {

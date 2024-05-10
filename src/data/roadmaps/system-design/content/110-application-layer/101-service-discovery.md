@@ -5,4 +5,4 @@ Systems such as [Consul](https://www.consul.io/docs/index.html), [Etcd](https://
 Visit the following links to learn more:
 
 - [What is Service-oriented architecture?](https://en.wikipedia.org/wiki/Service-oriented_architecture)
-- [Intro to Service Discovery](https://github.com/donnemartin/system-design-primer#Service%20Discovery)
+- [Intro to Service Discovery](https://github.com/donnemartin/system-design-primer#Service-Discovery)

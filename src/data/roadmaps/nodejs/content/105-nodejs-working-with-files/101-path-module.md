@@ -5,5 +5,5 @@ The `path` module provides utilities for working with file and directory paths. 
 Visit the following resources to learn more:
 
 - [Official Website](https://nodejs.org/api/path.html)
-- [Official Website](https://nodejs.dev/en/learn/nodejs-file-paths/)
+- [Official Website](https://nodejs.org/en/learn/manipulating-files/nodejs-file-paths)
 - [Path Module in Node.js](https://youtu.be/j95Lwxvi9JY)

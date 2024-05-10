@@ -1,10 +1,7 @@
 ---
 title: 'Random Numbers: Are they?'
 description: 'Learn how they are generated and why they may not be truly random.'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Random Numbers: Are they? - roadmap.sh'
   description: 'Learn how they are generated and why they may not be truly random.'

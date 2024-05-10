@@ -15,5 +15,5 @@ JavaScript blocks the normal parsing of the HTML document, so when the parser re
 - Add `async` (if the script doesn't rely on other scripts) or `defer` (if the script relies upon or is relied upon by an async script) as an attribute to your script tag.
 - If you have small scripts, maybe use inline script place above async scripts.
 
-- [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/BlockingJS)
+- [Remove Render-Blocking JavaScript](https://developers.google.com/speed/docs/insights/v5/get-started)
 - [Defer loading JavaScript](https://varvy.com/pagespeed/defer-loading-javascript.html)

@@ -57,7 +57,9 @@ export function MemberProgressModal(props: ProgressMapProps) {
   const [isLoading, setIsLoading] = useState(true);
   const toast = useToast();
 
-  let resourceJsonUrl = 'https://roadmap.sh';
+  let resourceJsonUrl = import.meta.env.DEV
+    ? 'http://localhost:3000'
+    : 'https://roadmap.sh';
   if (resourceType === 'roadmap') {
     resourceJsonUrl += `/${resourceId}.json`;
   } else {

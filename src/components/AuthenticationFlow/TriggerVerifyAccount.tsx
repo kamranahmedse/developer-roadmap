@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import Cookies from 'js-cookie';
 import { httpPost } from '../../lib/http';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, setAuthToken } from '../../lib/jwt';
 import { Spinner } from '../ReactIcons/Spinner';
 import { ErrorIcon2 } from '../ReactIcons/ErrorIcon2';
 
@@ -26,11 +26,7 @@ export function TriggerVerifyAccount() {
           return;
         }
 
-        Cookies.set(TOKEN_COOKIE_NAME, response.token, {
-          path: '/',
-          expires: 30,
-          domain: import.meta.env.DEV ? 'localhost' : '.roadmap.sh',
-        });
+        setAuthToken(response.token);
         window.location.href = '/';
       })
       .catch((err) => {

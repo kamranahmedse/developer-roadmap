@@ -6,7 +6,7 @@ Below is a list of popular container registries available today:
 
 - **Docker Hub**: Docker Hub is the default registry for public Docker images and serves as a platform for sharing and distributing images among developers.
 
-- **Google Container Registry (GCR)**: GCR is a managed, secure, and highly available registry provided by Google Cloud Platform, ideal for hosting private container images.
+- **Artifact Registry**: Artifact Registry is a managed container registry provided by Google Cloud Platform (GCP), offering private storage and distribution of container images.
 
 - **Amazon Elastic Container Registry (ECR)**: Amazon ECR is a fully-managed Docker container registry provided by Amazon Web Services, offering high scalability and performance for storing, managing, and deploying container images.
 

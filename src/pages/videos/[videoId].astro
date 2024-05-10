@@ -1,7 +1,7 @@
 ---
 import VideoHeader from '../../components/VideoHeader.astro';
 import BaseLayout from '../../layouts/BaseLayout.astro';
-import { getAllVideos,VideoFileType } from '../../lib/video';
+import { getAllVideos, VideoFileType } from '../../lib/video';
 
 export interface Props {
   video: VideoFileType;
@@ -29,7 +29,7 @@ const { video } = Astro.props;
 
   <div class='bg-gray-50 py-5 sm:py-10'>
     <div
-      class='container prose prose-code:bg-transparent prose-h2:text-3xl prose-h2:mt-4 prose-h2:mb-2 prose-h3:mt-2 prose-img:mt-1'
+      class='container prose prose-h2:mb-2 prose-h2:mt-4 prose-h2:text-3xl prose-h3:mt-2 prose-code:bg-transparent prose-img:mt-1'
     >
       <video.Content />
     </div>

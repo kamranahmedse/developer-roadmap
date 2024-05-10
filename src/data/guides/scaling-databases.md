@@ -1,10 +1,7 @@
 ---
 title: 'Scaling Databases'
 description: 'Learn the ups and downs of different database scaling strategies'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Scaling Databases - roadmap.sh'
   description: 'Learn the ups and downs of different database scaling strategies'
