@@ -4,10 +4,7 @@ description: 'Learn how to write asynchronous JavaScript using Async/Await'
 duration: '15 minutes'
 isNew: false
 date: 2021-11-14
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

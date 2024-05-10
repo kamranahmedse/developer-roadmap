@@ -4,10 +4,7 @@ description: 'Learn the basics of load balancers, types and different algorithms
 duration: '9 minutes'
 isNew: false
 date: 2020-09-18
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

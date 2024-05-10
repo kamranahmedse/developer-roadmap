@@ -21,7 +21,7 @@ function ActivityCounter(props: ActivityCounterType) {
   const { text, count } = props;
 
   return (
-    <div className="relative flex flex-1 flex-row-reverse sm:flex-col px-0 sm:px-4 py-2 sm:py-4 text-center sm:pt-10 items-center gap-2 sm:gap-0 justify-end">
+    <div className="relative flex flex-1 flex-row-reverse sm:flex-col px-0 sm:px-4 py-2 sm:py-4 text-center sm:pt-[1.62rem] items-center gap-2 sm:gap-0 justify-end">
       <h2 className="text-base sm:text-5xl font-bold">
         {count}
       </h2>

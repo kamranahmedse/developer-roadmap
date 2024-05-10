@@ -38,11 +38,11 @@ const { frontmatter } = questionGroup;
 >
   <div class='flex bg-gray-50 pb-14 pt-4 sm:pb-16 sm:pt-8'>
     <div class='container !max-w-[740px]'>
-      <div class='mb-3 sm:mb-5 mt-2 text-left sm:text-center sm:mt-8'>
+      <div class='mb-3 mt-2 text-left sm:mb-5 sm:mt-8 sm:text-center'>
         <div class='mb-2 md:mb-6'>
           <a
             href='/questions'
-            class='group rounded-md text-sm font-medium text-gray-400 hover:text-gray-800 transition-colors duration-200'
+            class='group rounded-md text-sm font-medium text-gray-400 transition-colors duration-200 hover:text-gray-800'
           >
             <span
               class='inline-block transform transition-transform group-hover:translate-x-[-2px]'
@@ -55,7 +55,7 @@ const { frontmatter } = questionGroup;
         <h1 class='mb-1 text-2xl font-bold sm:mb-5 sm:text-5xl'>
           {frontmatter.title}
         </h1>
-        <p class='hidden sm:block text-xl text-gray-500'>
+        <p class='hidden text-xl text-gray-500 sm:block'>
           {frontmatter.description}
         </p>
       </div>

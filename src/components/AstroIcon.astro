@@ -11,15 +11,16 @@ async function getSVG(name: string) {
   const filepath = `/src/icons/${name}.svg`;
 
   const files = import.meta.glob<string>('/src/icons/**/*.svg', {
+    query: '?raw',
     eager: true,
-    as: 'raw',
   });
+
 
   if (!(filepath in files)) {
     throw new Error(`${filepath} not found`);
   }
 
-  const root = parse(files[filepath]);
+  const root = parse(files[filepath].default as string);
 
   const svg = root.querySelector('svg');
 
@@ -35,4 +36,4 @@ const { attributes: baseAttributes, innerHTML } = await getSVG(icon);
 const svgAttributes = { ...baseAttributes, ...attributes };
 ---
 
-<svg {...svgAttributes} set:html={innerHTML}></svg>
+<svg {...svgAttributes} set:html={innerHTML} />

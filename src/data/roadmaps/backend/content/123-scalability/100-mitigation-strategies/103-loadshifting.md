@@ -9,7 +9,3 @@ There are several ways to implement load shifting in a cloud environment:
 - Auto-scaling: This involves automatically adjusting the number of resources that are available to a system based on the workload, allowing the system to scale up or down as needed.
 
 Load shifting is an important aspect of cloud design, as it helps to ensure that resources are used efficiently and that the system remains stable and available. It is often used in conjunction with other design patterns, such as throttling and backpressure, to provide a scalable and resilient cloud environment.
-
-Visit the following resources to learn more:
-
-- [Load Shifting - AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/serverless/patterns/load-shifting/)

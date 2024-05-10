@@ -10,3 +10,4 @@ Visit the following resources to learn more:
 
 - [High-Order Components](https://reactjs.org/docs/higher-order-components.html)
 - [How to create a Higher-Order Component](https://www.robinwieruch.de/react-higher-order-components/)
+- [Learn React Higher Order Component (HOC) in 10 Minutes](https://youtu.be/J5P0q7EROfw?si=-8s5h1b0mZSGVgLt)

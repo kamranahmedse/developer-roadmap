@@ -3,16 +3,16 @@ jsonUrl: '/jsons/roadmaps/angular.json'
 pdfUrl: '/pdfs/roadmaps/angular.pdf'
 order: 3
 briefTitle: 'Angular'
-briefDescription: 'Step by step guide to become a Angular Developer in 2023'
+briefDescription: 'Step by step guide to become a Angular Developer in 2024'
 title: 'Angular Developer'
-description: 'Everything that is there to learn about Angular and the ecosystem in 2023.'
+description: 'Everything that is there to learn about Angular and the ecosystem in 2024.'
 hasTopics: true
 dimensions:
   width: 968
   height: 2277.8
 schema:
   headline: 'Angular Developer Roadmap'
-  description: 'Learn how to become a Angular Developer with this interactive step by step guide in 2023. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
+  description: 'Learn how to become a Angular Developer with this interactive step by step guide in 2024. We also have resources and short descriptions attached to the roadmap items so you can get everything you want to learn in one place.'
   imageUrl: 'https://roadmap.sh/roadmaps/angular.png'
   datePublished: '2023-01-05'
   dateModified: '2023-01-20'

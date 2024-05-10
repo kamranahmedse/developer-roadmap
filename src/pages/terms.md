@@ -8,7 +8,7 @@ noIndex: true
 
 PLEASE NOTE THAT YOUR USE OF AND ACCESS TO OUR SERVICES (DEFINED BELOW) ARE SUBJECT TO THE FOLLOWING TERMS; IF YOU DO NOT AGREE TO ALL OF THE FOLLOWING, YOU MAY NOT USE OR ACCESS THE SERVICES IN ANY MANNER.
 
-Welcome to roadmap.sh. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services and applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at kamranahmed.se@gmail.com.
+Welcome to roadmap.sh. Please read on to learn the rules and restrictions that govern your use of our website(s), products, services and applications (the “Services”). If you have any questions, comments, or concerns regarding these terms or the Services, please contact us at info@roadmap.sh.
 
 These Terms of Use (the “Terms”) are a binding contract between you and roadmap.sh (“roadmap.sh,” “we”, and “us”). You must agree to and accept all of the Terms, or you don’t have the right to use the Services. Your using the Services in any way means that you agree to all of these Terms, and these Terms will remain in effect while you use the Services. These Terms include the provisions in this document, as well as those in the Privacy Policy and Copyright Dispute Policy.
 
@@ -24,7 +24,7 @@ Except for changes by us as described here, no other amendment or modification o
 
 You can view the current roadmap.sh [Privacy Policy here](/privacy).
 
-The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under 13. We do not knowingly collect or solicit personally identifiable information from children under 13. If you are a child under 13, please do not attempt to register for the Services or send any personal information about yourself to us. If we learn we have collected personal information from a child under 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal information, please contact us at kamranahmed.se@gmail.com.
+The Children’s Online Privacy Protection Act (“COPPA”) requires that online service providers obtain parental consent before they knowingly collect personally identifiable information online from children who are under 13. We do not knowingly collect or solicit personally identifiable information from children under 13. If you are a child under 13, please do not attempt to register for the Services or send any personal information about yourself to us. If we learn we have collected personal information from a child under 13, we will delete that information as quickly as possible. If you believe that a child under 13 may have provided us personal information, please contact us at info@roadmap.sh.
 
 ## What are the basics of using roadmap.sh?
 
@@ -96,7 +96,7 @@ The roadmap.sh Services are currently free, but we reserve the right to charge f
 
 ## What if I want to stop using roadmap.sh?
 
-You’re free to do that at any time, by contacting us at kamranahmed.se@gmail.com; please refer to our Privacy Policy, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services. roadmap.sh is also free to terminate (or suspend access to) your use of the Services or your account, for any reason in our discretion, including your breach of these Terms. roadmap.sh has the sole right to decide whether you are in violation of any of the restrictions set forth in these Terms.
+You’re free to do that at any time, by contacting us at info@roadmap.sh; please refer to our Privacy Policy, as well as the licenses above, to understand how we treat information you provide to us after you have stopped using our Services. roadmap.sh is also free to terminate (or suspend access to) your use of the Services or your account, for any reason in our discretion, including your breach of these Terms. roadmap.sh has the sole right to decide whether you are in violation of any of the restrictions set forth in these Terms.
 
 Account termination may result in destruction of any Content associated with your account, so keep that in mind before you decide to terminate your account. We will try to provide advance notice to you prior to our terminating your account so that you are able to retrieve any important User Submissions you may have stored in your account (to the extent allowed by law and these Terms), but we may not do so if we determine it would be impractical, illegal, not in the interest of someone’s safety or security, or otherwise harmful to the rights or property of roadmap.sh.
 

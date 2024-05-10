@@ -1,10 +1,7 @@
 ---
 title: 'Async and Defer Script Loading'
 description: 'Learn how to avoid render blocking JavaScript using async and defer scripts.'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Async and Defer Script Loading - roadmap.sh'
   description: 'Learn how to avoid render blocking JavaScript using async and defer scripts.'

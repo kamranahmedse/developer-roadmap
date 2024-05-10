@@ -7,7 +7,7 @@ import { MapIcon, Users2 } from 'lucide-react';
 import { CreateRoadmapButton } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapButton';
 import { CreateRoadmapModal } from '../CustomRoadmap/CreateRoadmap/CreateRoadmapModal';
 import { type ReactNode, useState } from 'react';
-import { TeamAnnouncement } from '../TeamAnnouncement';
+import { AIAnnouncement } from '../AIAnnouncement.tsx';
 
 type ProgressRoadmapProps = {
   url: string;
@@ -97,7 +97,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
   return (
     <div className="relative pb-12 pt-4 sm:pt-7">
       <p className="mb-7 mt-2 text-sm">
-        <TeamAnnouncement />
+        <AIAnnouncement />
       </p>
       {isCreatingRoadmap && (
         <CreateRoadmapModal
@@ -121,7 +121,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
       <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 md:grid-cols-3">
         {progress.map((resource) => (
           <HeroRoadmap
-            key={resource.resourceId}
+            key={`${resource.resourceType}-${resource.resourceId}`}
             resourceId={resource.resourceId}
             resourceType={resource.resourceType}
             resourceTitle={resource.resourceTitle}
@@ -172,7 +172,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                       customRoadmap.total) *
                     100
                   }
-                  url={`/r?id=${customRoadmap.resourceId}`}
+                  url={`/r/${customRoadmap?.roadmapSlug}`}
                   allowFavorite={false}
                 />
               );
@@ -187,7 +187,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
         const currentTeam: UserProgressResponse[0]['team'] =
           teamRoadmaps?.[teamName]?.[0]?.team;
         const roadmapsList = teamRoadmaps[teamName].filter(
-          (roadmap) => !!roadmap.resourceTitle
+          (roadmap) => !!roadmap.resourceTitle,
         );
         const canManageTeam = ['admin', 'manager'].includes(currentTeam?.role!);
 
@@ -201,7 +201,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                     Team{' '}
                     <a
                       className="mx-1 font-medium underline underline-offset-2 transition-colors hover:text-gray-300"
-                      href={`/team/progress?t=${currentTeam?.id}`}
+                      href={`/team/activity?t=${currentTeam?.id}`}
                     >
                       {teamName}
                     </a>
@@ -242,7 +242,7 @@ export function HeroRoadmaps(props: ProgressListProps) {
                           customRoadmap.total) *
                         100
                       }
-                      url={`/r?id=${customRoadmap.resourceId}`}
+                      url={`/r/${customRoadmap?.roadmapSlug}`}
                       allowFavorite={false}
                     />
                   );
