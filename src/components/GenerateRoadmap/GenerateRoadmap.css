@@ -1,0 +1,58 @@
+@font-face {
+  font-family: 'balsamiq';
+  src: url('/fonts/balsamiq.woff2');
+}
+
+svg text tspan {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeSpeed;
+}
+
+svg > g[data-type='topic'],
+svg > g[data-type='subtopic'],
+svg > g > g[data-type='link-item'],
+svg > g[data-type='button'] {
+  cursor: pointer;
+}
+
+svg > g[data-type='topic']:hover > rect {
+  fill: #d6d700;
+}
+
+svg > g[data-type='subtopic']:hover > rect {
+  fill: #f3c950;
+}
+svg > g[data-type='button']:hover {
+  opacity: 0.8;
+}
+
+svg .done rect {
+  fill: #cbcbcb !important;
+}
+
+svg .done text,
+svg .skipped text {
+  text-decoration: line-through;
+}
+
+svg > g[data-type='topic'].learning > rect + text,
+svg > g[data-type='topic'].done > rect + text {
+  fill: black;
+}
+
+svg > g[data-type='subtipic'].done > rect + text,
+svg > g[data-type='subtipic'].learning > rect + text {
+  fill: #cbcbcb;
+}
+
+svg .learning rect {
+  fill: #dad1fd !important;
+}
+svg .learning text {
+  text-decoration: underline;
+}
+
+svg .skipped rect {
+  fill: #496b69 !important;
+}

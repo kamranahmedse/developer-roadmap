@@ -62,7 +62,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
     `/src/data/question-groups/*/content/*.md`,
     {
       eager: true,
-      as: 'raw',
+      query: '?raw',
     },
   );
 
@@ -81,6 +81,7 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
           if (answerText.endsWith('.md')) {
             const answerFilePath = `/src/data/question-groups/${questionGroupDir}/content/${answerText}`;
             answerText =
+              answerFilesMap[answerFilePath]?.default ||
               answerFilesMap[answerFilePath] ||
               `File missing: ${answerFilePath}`;
 
@@ -115,6 +116,12 @@ export async function getAllQuestionGroups(): Promise<QuestionGroupType[]> {
       };
     })
     .sort((a, b) => a.frontmatter.order - b.frontmatter.order);
+}
+
+export async function getQuestionGroupById(id: string) {
+  const questionGroups = await getAllQuestionGroups();
+
+  return questionGroups.find((group) => group.id === id);
 }
 
 export async function getQuestionGroupsByIds(

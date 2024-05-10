@@ -82,7 +82,7 @@ export function CreateVersion(props: CreateVersionProps) {
     return (
       <div className={'flex items-center'}>
         <a
-          href={`/r?id=${userVersion._id}`}
+          href={`/r/${userVersion?.slug}`}
           className="flex items-center rounded-md border border-blue-400 bg-gray-50 px-2.5 py-1 text-xs font-medium text-blue-600 hover:bg-blue-100 disabled:cursor-not-allowed disabled:bg-gray-100 disabled:hover:bg-gray-100 max-sm:hidden sm:text-sm"
         >
           <Map size="15px" className="mr-1.5" />

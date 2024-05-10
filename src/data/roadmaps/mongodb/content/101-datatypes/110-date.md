@@ -70,4 +70,4 @@ db.events.aggregate([
 
 This query groups events by the day and year, providing a count of events for each day.
 
-- [MongoDB Documentation Date](https://www.mongodb.com/docs/manual/reference/method/date/)
+- [MongoDB Documentation Date](https://www.mongodb.com/docs/manual/reference/method/Date/)

@@ -1,10 +1,7 @@
 ---
 title: 'Session Based Authentication'
 description: 'Understand what is session based authentication and how it is implemented'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Session Based Authentication - roadmap.sh'
   description: 'Understand what is session based authentication and how it is implemented'

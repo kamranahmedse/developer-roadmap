@@ -10,7 +10,6 @@ Optimized images load faster in your browser and consume less data.
 - Use a tool and specify a level compression under 85.
 
 - [Image Optimization](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/image-optimization)
-- [Essential Image Optimization](https://images.guide/)
 - [TinyJPG – Compress JPEG images intelligently](https://tinyjpg.com/)
 - [Kraken.io - Online Image Optimizer](https://kraken.io/web-interface)
 - [Compressor.io](https://compressor.io/compress)

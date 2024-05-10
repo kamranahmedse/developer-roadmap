@@ -1,10 +1,7 @@
 ---
 title: 'Levels of Seniority'
 description: 'How to Step Up as a Junior, Mid Level or a Senior Developer?'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Levels of Seniority - roadmap.sh'
   description: 'How to Step Up as a Junior, Mid Level or a Senior Developer?'

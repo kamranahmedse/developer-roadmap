@@ -11,7 +11,7 @@ const { heading, videos } = Astro.props;
 ---
 
 <div class='container'>
-  <h1 class='text-2xl sm:text-3xl font-bold block'>{heading}</h1>
+  <h2 class='text-2xl sm:text-3xl font-bold block'>{heading}</h2>
 
   <div class='mt-3 sm:my-5'>
     {videos.map((video) => <VideoListItem video={video} />)}

@@ -4,10 +4,7 @@ description: 'Learn what is DOM, Shadow DOM and Virtual DOM and how they work.'
 duration: '6 minutes'
 isNew: false
 date: 2020-07-20
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

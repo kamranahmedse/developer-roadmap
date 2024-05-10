@@ -1,0 +1,3 @@
+# Data Pipelines
+
+Data pipelines refer to a set of processes that involve moving data from one system to another, for purposes such as data integration, data migration, data transformation, or data synchronization. These processes can involve a variety of data sources and destinations, and may often require data to be cleaned, enriched, or otherwise transformed along the way. It's a key concept in data engineering to ensure that data is appropriately processed from its source to the location where it will be used, typically a data warehouse, data mart, or a data lake. As such, data pipelines play a crucial part in building an effective and efficient data analytics setup, enabling the flow of data to be processed for insights.

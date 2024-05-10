@@ -16,14 +16,14 @@ class String {
 
     String(const String& other);
     
-    void swap(String& other) {
+    friend void swap(String& first, String& second) {
         using std::swap; // for arguments-dependent lookup (ADL)
-        swap(size_, other.size_);
-        swap(buffer_, other.buffer_);
+        swap(first.size_, second.size_);
+        swap(first.buffer_, second.buffer_);
     }
 
     String& operator=(String other) {
-        swap(other);
+        swap(*this, other);
         return *this;
     }
 };

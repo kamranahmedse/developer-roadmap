@@ -41,7 +41,7 @@
 - [GPU accelerated JavaScript](https://gpu.rocks/#/)
 - [Introducing Partytown 🎉: Run Third-Party Scripts From a Web Worker](https://dev.to/adamdbradley/introducing-partytown-run-third-party-scripts-from-a-web-worker-2cnp)
 - [Astro: Astro is a fresh but familiar approach to building websites. Astro combines decades of proven performance best practices with the DX improvements of the component-oriented era. Use your favorite JavaScript framework and automatically ship the bare-minimum amount of JavaScript—by default.](https://docs.astro.build/getting-started/)
-- [Minimising Layout and Layout thrashing for 60 FPS](https://www.charistheo.io/blog/2021/09/dom-reflow-and-layout-thrashing/)
+- [Minimising Layout and Layout thrashing for 60 FPS](https://www.harrytheo.com/blog/2021/09/dom-reflow-and-layout-thrashing/)
 - [Does shadow DOM improve style performance?](https://nolanlawson.com/2021/08/15/does-shadow-dom-improve-style-performance/)
 - [Debugging memory leaks - HTTP 203](https://www.youtube.com/watch?v=YDU_3WdfkxA)
 - [Explore JavaScript Dependencies With Lighthouse Treemap](https://sia.codes/posts/lighthouse-treemap/)

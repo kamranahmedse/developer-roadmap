@@ -29,11 +29,22 @@ export async function getAllLinkGroups(): Promise<LinkGroupFileType[]> {
     '/src/data/link-groups/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   return Object.values(linkGroups).map((linkGroupFile) => ({
     ...linkGroupFile,
     id: linkGroupPathToId(linkGroupFile.file),
   }));
+}
+
+export async function getLinkGroupById(
+  groupId: string,
+): Promise<LinkGroupFileType> {
+  const linkGroup = await import(`../data/link-groups/${groupId}.md`);
+
+  return {
+    ...linkGroup,
+    id: linkGroupPathToId(linkGroup.file),
+  };
 }

@@ -8137,7 +8137,7 @@
           "x": "426",
           "y": "1521",
           "properties": {
-            "controlName": "103-smart-contract-frameworks:dapp-tools"
+            "controlName": "103-smart-contract-frameworks:foundry"
           },
           "children": {
             "controls": {

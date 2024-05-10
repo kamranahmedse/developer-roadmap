@@ -6,7 +6,7 @@ briefTitle: 'C++'
 briefDescription: 'Step by step guide to becoming a C++ Developer in 2024'
 title: 'C++ Developer Roadmap'
 description: 'Step by step guide to becoming a C++ developer in 2024'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 1000
@@ -52,5 +52,5 @@ sitemap:
 tags:
   - 'roadmap'
   - 'main-sitemap'
-  - 'role-roadmap'
+  - 'skill-roadmap'
 ---

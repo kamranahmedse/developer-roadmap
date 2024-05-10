@@ -1,10 +1,7 @@
 ---
 title: 'How does the internet work?'
 description: 'Learn the basics of internet and everything involved with this short video series'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'How does the internet work? - roadmap.sh'
   description: 'Learn the basics of internet and everything involved with this short video series'

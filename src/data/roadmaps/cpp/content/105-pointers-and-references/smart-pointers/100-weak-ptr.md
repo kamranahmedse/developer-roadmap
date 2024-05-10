@@ -2,7 +2,7 @@
 
 A `weak_ptr` is a type of smart pointer in C++ that adds a level of indirection and safety to a raw pointer. It is mainly used to break reference cycles in cases where two objects have shared pointers to each other, or when you need a non-owning reference to an object that is managed by a `shared_ptr`.
 
-A `weak_ptr` doesn't increase the reference count of the object it points to, which is a crucial distinction between `weak_ptr` and `shared_ptr`. This ensures that the object will be deleted once the last `shared_ptr` that owns it goes out of scope, even if there are `weak_ptr`s still referencing it.
+A `weak_ptr` does not increase the *ownership* reference count of the object it points to, which is a key difference between `weak_ptr` and `shared_ptr`. The control block associated with the object maintains two counts: one for the number of `shared_ptr`s (ownership count) and another for the number of `weak_ptr`s (weak count). The existence of `weak_ptr`s does not prevent the object from being deleted; the object is destroyed once the last `shared_ptr` that owns it is destroyed or reset, even if `weak_ptr`s are still referencing the object. However, the control block itself is not deallocated until both the ownership count reaches zero and the weak count also reaches zero, allowing `weak_ptr`s to safely detect whether the object has already been deleted.
 
 To use a `weak_ptr`, you must convert it to a `shared_ptr` using the `lock()` function, which tries to create a new `shared_ptr` that shares ownership of the object. If successful, the object's reference count is increased and you can use the returned `shared_ptr` to safely access the object.
 

@@ -1,8 +1,8 @@
-import { getAllBestPractices } from '../lib/best-pratice';
+import { getAllBestPractices } from '../lib/best-practice';
 import { getAllGuides } from '../lib/guide';
 import { getRoadmapsByTag } from '../lib/roadmap';
 import { getAllVideos } from '../lib/video';
-import {getAllQuestionGroups} from "../lib/question-group";
+import { getAllQuestionGroups } from '../lib/question-group';
 
 export async function GET() {
   const guides = await getAllGuides();
@@ -17,6 +17,7 @@ export async function GET() {
         id: roadmap.id,
         url: `/${roadmap.id}`,
         title: roadmap.frontmatter.briefTitle,
+        description: roadmap.frontmatter.briefDescription,
         group: 'Roadmaps',
         metadata: {
           tags: roadmap.frontmatter.tags,
@@ -26,6 +27,7 @@ export async function GET() {
         id: bestPractice.id,
         url: `/best-practices/${bestPractice.id}`,
         title: bestPractice.frontmatter.briefTitle,
+        description: bestPractice.frontmatter.briefDescription,
         group: 'Best Practices',
       })),
       ...questionGroups.map((questionGroup) => ({
@@ -36,14 +38,18 @@ export async function GET() {
       })),
       ...guides.map((guide) => ({
         id: guide.id,
-        url: `/guides/${guide.id}`,
+        url: guide.frontmatter.excludedBySlug
+          ? guide.frontmatter.excludedBySlug
+          : `/guides/${guide.id}`,
         title: guide.frontmatter.title,
+        description: guide.frontmatter.description,
+        authorId: guide.frontmatter.authorId,
         group: 'Guides',
       })),
-      ...videos.map((guide) => ({
-        id: guide.id,
-        url: `/videos/${guide.id}`,
-        title: guide.frontmatter.title,
+      ...videos.map((video) => ({
+        id: video.id,
+        url: `/videos/${video.id}`,
+        title: video.frontmatter.title,
         group: 'Videos',
       })),
     ]),
@@ -52,6 +58,6 @@ export async function GET() {
       headers: {
         'Content-Type': 'application/json',
       },
-    }
+    },
   );
 }

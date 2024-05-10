@@ -11,7 +11,7 @@ type GroupRoadmapItemProps = {
 
 export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
   const { onShowResourceProgress } = props;
-  const { members, resourceTitle, resourceId, isCustomResource } =
+  const { members, resourceTitle, resourceId, isCustomResource, roadmapSlug } =
     props.roadmap;
 
   const { t: teamId } = getUrlParams();
@@ -19,7 +19,7 @@ export function GroupRoadmapItem(props: GroupRoadmapItemProps) {
 
   const [showAll, setShowAll] = useState(false);
   const roadmapLink = isCustomResource
-    ? `/r?id=${resourceId}`
+    ? `/r/${roadmapSlug}`
     : `/${resourceId}?t=${teamId}`;
 
   return (

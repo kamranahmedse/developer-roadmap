@@ -1,6 +1,6 @@
 import Cookies from 'js-cookie';
 import { type ChangeEvent, type FormEvent, useEffect, useRef, useState } from 'react';
-import { TOKEN_COOKIE_NAME } from '../../lib/jwt';
+import { TOKEN_COOKIE_NAME, removeAuthToken } from '../../lib/jwt';
 
 interface PreviewFile extends File {
   preview: string;
@@ -128,7 +128,7 @@ export default function UploadProfilePicture(props: UploadProfilePictureProps) {
 
     // Logout user if token is invalid
     if (data.status === 401) {
-      Cookies.remove(TOKEN_COOKIE_NAME);
+      removeAuthToken();
       window.location.reload();
     }
   };
