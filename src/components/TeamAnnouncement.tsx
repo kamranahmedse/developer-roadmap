@@ -10,7 +10,7 @@ export function TeamAnnouncement(props: TeamAnnouncementProps) {
         New
       </span>{' '}
       <span className={'hidden sm:inline'}>Announcing roadmaps for teams. <span className='font-semibold'>Learn more!</span></span>
-      <span className={'inline sm:hidden'}>Announcing roadmaps for teams!</span>
+      <span className={'inline text-sm sm:hidden'}>Roadmaps for teams!</span>
     </a>
   );
 }

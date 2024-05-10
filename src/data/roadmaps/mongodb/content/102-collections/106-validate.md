@@ -26,10 +26,10 @@ Validate a collection named "products":
 db.runCommand({ validate: 'products' });
 ```
 
-Validate the collection and perform a background and full check:
+Validate the collection and perform a full check:
 
 ```javascript
-db.runCommand({ validate: 'products', background: true, full: true });
+db.runCommand({ validate: 'products', full: true });
 ```
 
 ## Output

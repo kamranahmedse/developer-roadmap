@@ -1,10 +1,7 @@
 ---
 title: 'Basics of Authentication'
 description: 'Learn the basics of Authentication and Authorization'
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 seo:
   title: 'Basics of Authentication - roadmap.sh'
   description: 'Learn the basics of Authentication and Authorization'

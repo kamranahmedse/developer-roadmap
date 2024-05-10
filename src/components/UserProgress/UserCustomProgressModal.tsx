@@ -8,7 +8,7 @@ import { deleteUrlParam, getUrlParams } from '../../lib/browser';
 import { useAuth } from '../../hooks/use-auth';
 import type { GetRoadmapResponse } from '../CustomRoadmap/CustomRoadmap';
 import { ReadonlyEditor } from '../../../editor/readonly-editor';
-import { ProgressLoadingError } from './ProgressLoadingError';
+import { ModalLoader } from './ModalLoader.tsx';
 import { UserProgressModalHeader } from './UserProgressModalHeader';
 import { X } from 'lucide-react';
 
@@ -144,7 +144,13 @@ export function UserCustomProgressModal(props: ProgressMapProps) {
   }
 
   if (isLoading || error) {
-    return <ProgressLoadingError isLoading={isLoading} error={error || ''} />;
+    return (
+      <ModalLoader
+        text={'Loading user progress..'}
+        isLoading={isLoading}
+        error={error || ''}
+      />
+    );
   }
 
   return (

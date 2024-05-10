@@ -1,6 +1,6 @@
 # Enum
 
-Enums is not a type-level extension of JavaScript. It allow a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
+Enums is not a type-level extension of JavaScript. It allows a developer to define a set of named constants. Using enums can make it easier to document intent, or create a set of distinct cases. TypeScript provides both numeric and string-based enums.
 
 Here is an example of a numeric enum in TypeScript:
 

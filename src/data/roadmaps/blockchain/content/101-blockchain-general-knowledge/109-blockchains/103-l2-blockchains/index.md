@@ -8,4 +8,4 @@ Visit the following resources to learn more:
 
 - [Layer-1 and Layer-2 Blockchain Scaling Solutions](https://www.gemini.com/cryptopedia/blockchain-layer-2-network-layer-1-network)
 - [Layer 2 - Binance Academy](https://academy.binance.com/en/glossary/layer-2)
-- [Develop a ZK-powered Layer 2 with the Polgyon CDK open-source framework](https://wiki.polygon.technology/docs/cdk/)
+- [Develop a ZK-powered Layer 2 with the Polygon CDK open-source framework](https://wiki.polygon.technology/docs/cdk/)

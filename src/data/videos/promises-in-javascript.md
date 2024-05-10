@@ -4,10 +4,7 @@ description: 'Learn how to write asynchronous code in JavaScript using promises.
 duration: '8 minutes'
 isNew: false
 date: 2020-07-20
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'
