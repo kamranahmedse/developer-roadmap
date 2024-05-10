@@ -16,3 +16,4 @@ Visit the following resources to learn more:
 
 - [Dart Control Flow Statements](https://www.w3adda.com/dart-tutorial/dart-control-flow-statements)
 - [Branches in Dart](https://dart.dev/language/branches)
+- [Loops in Dart](https://dart.dev/language/loops)
