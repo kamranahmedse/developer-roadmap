@@ -222,7 +222,7 @@ I set a timeout so that I don't waste too much time on peers that aren't going t
 
 ### Complete the handshake
 
-We've just set up a connection with a peer, but we want do a handshake to validate our assumptions that the peer
+We've just set up a connection with a peer, but we want to do a handshake to validate our assumptions that the peer
 
 - can communicate using the BitTorrent protocol
 - is able to understand and respond to our messages
