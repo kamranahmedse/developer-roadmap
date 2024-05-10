@@ -277,8 +277,9 @@ import { TipItem } from '../components/GetStarted/TipItem';
       roadmaps={[
         { title: 'Docker', link: '/docker' },
         { title: 'Kubernetes', link: '/kubernetes' },
+        { title: 'Linux', link: '/linux' },
       ]}
-      description='or perhaps you want to learn Docker or Kubernetes?'
+      description='or perhaps you want to learn Docker, Kubernetes or Linux?'
       secondaryRoadmaps={[
         { title: 'Python', link: '/python' },
         { title: 'Go', link: '/golang' },
@@ -329,10 +330,17 @@ import { TipItem } from '../components/GetStarted/TipItem';
     />
 
     <RoadmapCard
+      icon={Bot}
+      title='Data Analyst'
+      link='/data-analyst'
+      description='Learn all you need to know to become a Data Analyst.'
+    />
+
+    <RoadmapCard
       icon={MessageCircleCode}
       title='Prompt Engineering'
       link='/prompt-engineering'
-      description='Learn how to write better prompts for GPT-3 and other language models.'
+      description='Learn how to write better prompts for GPT-* and other language models.'
     />
 
     <RoadmapCard

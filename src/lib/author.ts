@@ -3,6 +3,10 @@ import type { MarkdownFileType } from './file';
 export interface AuthorFrontmatter {
   name: string;
   imageUrl: string;
+  employment?: {
+    title: string;
+    company: string;
+  };
   social: {
     twitter: string;
     github: string;
@@ -34,7 +38,6 @@ export async function getAuthorIds() {
     },
   );
 
-  console.log(Object.keys(authorFiles));
   return Object.keys(authorFiles).map(authorPathToId);
 }
 

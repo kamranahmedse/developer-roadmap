@@ -1,6 +1,6 @@
-name: "✍️ ​ ​Suggest Changes"
+name: "✍️ ​ ​Missing or Deprecated Roadmap Topics"
 description: Help us improve the roadmaps by suggesting changes
-labels: [suggestion]
+labels: [topic-change]
 assignees: []
 body:
   - type: markdown

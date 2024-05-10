@@ -14,6 +14,7 @@ import { useToast } from '../../hooks/use-toast';
 
 export type TeamResourceConfig = {
   isCustomResource: boolean;
+  roadmapSlug?: string;
   title: string;
   description?: string;
   visibility?: AllowedRoadmapVisibility;
@@ -80,7 +81,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
       {
         resourceId: roadmapId,
         resourceType: 'roadmap',
-      }
+      },
     );
 
     if (error || !response) {
@@ -114,7 +115,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
         resourceId: roadmapId,
         resourceType: 'roadmap',
         removed: [],
-      }
+      },
     );
 
     if (error || !response) {
@@ -312,7 +313,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                               `${
                                 import.meta.env.PUBLIC_EDITOR_APP_URL
                               }/${resourceId}`,
-                              '_blank'
+                              '_blank',
                             );
                             return;
                           }
@@ -335,7 +336,7 @@ export function RoadmapSelector(props: RoadmapSelectorProps) {
                   )}
                 </div>
               );
-            }
+            },
           )}
         </div>
       )}

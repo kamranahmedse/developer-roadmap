@@ -6,7 +6,7 @@ briefTitle: 'AWS'
 briefDescription: 'Step by step guide to learning AWS in 2024'
 title: 'AWS Roadmap'
 description: 'Step by step guide to learning AWS in 2024'
-isNew: true
+isNew: false
 hasTopics: true
 dimensions:
   width: 968

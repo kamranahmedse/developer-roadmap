@@ -15,3 +15,4 @@ Visit the following resources to learn more:
 - [JavaScript Crash Course for Beginners](https://youtu.be/hdI2bqOjy3c)
 - [Node.js Crash Course](https://www.youtube.com/watch?v=fBNz5xF-Kx4)
 - [Node.js Tutorial for Beginners](https://www.youtube.com/watch?v=TlB_eWDSMt4)
+- [Official JavaScript Documentation](https://www.javascript.com/)

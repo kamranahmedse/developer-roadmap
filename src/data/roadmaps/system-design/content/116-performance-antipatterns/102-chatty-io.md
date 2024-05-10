@@ -1,4 +1,4 @@
-# Chat I/O
+# Chatty I/O
 
 The cumulative effect of a large number of I/O requests can have a significant impact on performance and responsiveness.
 

@@ -1,5 +1,6 @@
 ---
 import Popup from '../Popup/Popup.astro';
+import { AccountTerms } from '../AccountTerms';
 import { AuthenticationForm } from './AuthenticationForm';
 ---
 
@@ -13,8 +14,17 @@ import { AuthenticationForm } from './AuthenticationForm';
     </p>
   </div>
   <AuthenticationForm client:load />
-  <div class='mt-6 text-center text-sm text-slate-600'>
+  <div
+    class='mt-3 w-full rounded-md border py-2 text-center text-sm text-slate-600'
+  >
     Don't have an account?{' '}
-    <a href='/signup' class='font-medium text-[#4285f4]'> Sign up</a>
+    <a
+      href='/signup'
+      class='font-medium text-blue-700 hover:text-blue-600 hover:underline'
+    >
+      Sign up
+    </a>
   </div>
+
+  <AccountTerms />
 </Popup>

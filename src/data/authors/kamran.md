@@ -1,6 +1,9 @@
 ---
 name: 'Kamran Ahmed'
 imageUrl: '/authors/kamran.jpeg'
+employment:
+  title: 'Founder'
+  company: 'roadmap.sh'
 social:
   linkedin: 'https://www.linkedin.com/in/kamrify'
   twitter: 'https://twitter.com/kamrify'

@@ -7,7 +7,7 @@ briefDescription: 'Step by step guide to learn MLOps in 2024'
 title: 'MLOps Roadmap'
 description: 'Step by step guide to learn MLOps in 2024'
 hasTopics: true
-isNew: true
+isNew: false
 dimensions:
   width: 968
   height: 1256.63
