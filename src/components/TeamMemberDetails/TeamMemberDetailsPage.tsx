@@ -90,27 +90,17 @@ export function TeamMemberDetailsPage() {
 
   return (
     <>
-      <div>
-        <div className="flex items-center gap-4">
-          <img
-            src={avatarUrl}
-            alt={memberProgress?.name}
-            className="h-24 w-24 rounded-full"
-          />
-          <div>
-            <MemberRoleBadge
-              className="sm:inline-flex"
-              role={memberProgress?.role!}
-            />
-            <h1 className="mt-1 text-2xl font-medium">
-              {memberProgress?.name}
-            </h1>
-            <p className="text-sm text-gray-500">{memberProgress?.email}</p>
-          </div>
+      <div className="flex items-center gap-3 mb-8">
+        <img
+          src={avatarUrl}
+          alt={memberProgress?.name}
+          className="h-14 w-14 rounded-full"
+        />
+        <div>
+          <h1 className="mt-1 text-2xl font-medium">{memberProgress?.name}</h1>
+          <p className="text-sm text-gray-500">{memberProgress?.email}</p>
         </div>
       </div>
-
-      <hr className="my-8 border-gray-200" />
 
       {memberProgress?.progresses && memberProgress?.progresses?.length > 0 ? (
         <>
