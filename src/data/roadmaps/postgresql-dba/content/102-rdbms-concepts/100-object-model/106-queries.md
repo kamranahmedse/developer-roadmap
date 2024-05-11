@@ -44,7 +44,7 @@ SELECT COUNT(*) AS user_count, AVG(age) AS average_age FROM users;
 
 ### Joins
 
-When you want to retrieve related data from multiple tables, you can use a `JOIN` in the query. There are various types of joins available, such as `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, and `FULL OUTER JOIN`.
+When you want to retrieve related data from multiple tables, you can use a `JOIN` in the query. There are various types of joins available, such as `INNER JOIN`, `LEFT JOIN`, `RIGHT JOIN`, `FULL OUTER JOIN` and `CROSS JOIN`.
 
 Syntax for a simple `INNER JOIN`:
 
