@@ -65,10 +65,11 @@ To drop constraints:
 ALTER TABLE tableName
 DROP CONSTRAINT constraintName;
 ```
+
 To drop PRIMARY KEY:
+
 ```sql
 ALTER TABLE table_name
 DROP PRIMARY KEY;
-```
 
 In conclusion, `ALTER TABLE` in SQL lets you alter the structure of an existing table. This is a powerful command that lets you dynamically add, modify, and delete columns as well as the constraints placed on them. It ensures you are more flexible in dealing with changing data storage requirements.
