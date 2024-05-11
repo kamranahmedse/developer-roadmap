@@ -3,15 +3,15 @@
     "controls": {
       "control": [
         {
-          "ID": "3294",
+          "ID": "3600",
           "typeID": "Arrow",
-          "zOrder": "0",
+          "zOrder": "3",
           "w": "226",
           "h": "145",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1158",
-          "y": "1884",
+          "x": "1168",
+          "y": "1894",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -33,15 +33,15 @@
           }
         },
         {
-          "ID": "3295",
+          "ID": "3601",
           "typeID": "Arrow",
-          "zOrder": "1",
+          "zOrder": "4",
           "w": "226",
           "h": "95",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1160",
-          "y": "1882",
+          "x": "1170",
+          "y": "1892",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -63,15 +63,15 @@
           }
         },
         {
-          "ID": "3296",
+          "ID": "3602",
           "typeID": "Arrow",
-          "zOrder": "2",
+          "zOrder": "5",
           "w": "213",
           "h": "44",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1174",
-          "y": "1876",
+          "x": "1184",
+          "y": "1886",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -93,15 +93,15 @@
           }
         },
         {
-          "ID": "3297",
+          "ID": "3603",
           "typeID": "Arrow",
-          "zOrder": "3",
+          "zOrder": "6",
           "w": "219",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1177",
-          "y": "1864",
+          "x": "1187",
+          "y": "1874",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -123,15 +123,15 @@
           }
         },
         {
-          "ID": "3298",
+          "ID": "3604",
           "typeID": "Arrow",
-          "zOrder": "4",
+          "zOrder": "7",
           "w": "201",
           "h": "46",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1186",
-          "y": "1806",
+          "x": "1196",
+          "y": "1816",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -153,15 +153,15 @@
           }
         },
         {
-          "ID": "3299",
+          "ID": "3605",
           "typeID": "Arrow",
-          "zOrder": "5",
+          "zOrder": "8",
           "w": "216",
           "h": "90",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1169",
-          "y": "1756",
+          "x": "1179",
+          "y": "1766",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -183,15 +183,15 @@
           }
         },
         {
-          "ID": "3300",
+          "ID": "3606",
           "typeID": "Arrow",
-          "zOrder": "6",
+          "zOrder": "9",
           "w": "1",
           "h": "517",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1053",
-          "y": "1591",
+          "x": "1063",
+          "y": "1601",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -212,15 +212,15 @@
           }
         },
         {
-          "ID": "3301",
+          "ID": "3607",
           "typeID": "Arrow",
-          "zOrder": "7",
+          "zOrder": "10",
           "w": "235",
           "h": "148",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1154",
-          "y": "1698",
+          "x": "1164",
+          "y": "1708",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -242,15 +242,15 @@
           }
         },
         {
-          "ID": "3302",
+          "ID": "3608",
           "typeID": "Arrow",
-          "zOrder": "8",
+          "zOrder": "11",
           "w": "1",
           "h": "218",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1393",
-          "y": "1362",
+          "x": "1403",
+          "y": "1372",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -271,15 +271,15 @@
           }
         },
         {
-          "ID": "3303",
+          "ID": "3609",
           "typeID": "Arrow",
-          "zOrder": "9",
-          "w": "92",
-          "h": "51",
+          "zOrder": "12",
+          "w": "63",
+          "h": "105",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "831",
-          "y": "1600",
+          "x": "871",
+          "y": "1610",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -288,29 +288,29 @@
             "stroke": "dotted",
             "color": "10027263",
             "p0": {
-              "x": 92.37564854400023,
+              "x": 62.37564854400023,
               "y": -0.1653379887995925
             },
             "p1": {
-              "x": 0.5433258631800256,
-              "y": -0.1351620229829188
+              "x": 0.5477800857142193,
+              "y": -0.20118082073468316
             },
             "p2": {
-              "x": 0.038083689600171056,
-              "y": 50.68723396000041
+              "x": 3.099225975514628,
+              "y": 104.93313727827694
             }
           }
         },
         {
-          "ID": "3304",
+          "ID": "3610",
           "typeID": "Arrow",
-          "zOrder": "10",
+          "zOrder": "13",
           "w": "110",
           "h": "4",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "817",
-          "y": "1590",
+          "x": "827",
+          "y": "1600",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -333,15 +333,15 @@
           }
         },
         {
-          "ID": "3305",
+          "ID": "3611",
           "typeID": "Arrow",
-          "zOrder": "11",
+          "zOrder": "14",
           "w": "95",
           "h": "48",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "827",
-          "y": "1528",
+          "x": "837",
+          "y": "1538",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -364,15 +364,15 @@
           }
         },
         {
-          "ID": "3306",
+          "ID": "3612",
           "typeID": "Arrow",
-          "zOrder": "12",
+          "zOrder": "15",
           "w": "330",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1136",
-          "y": "1589",
+          "x": "1146",
+          "y": "1599",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -393,15 +393,15 @@
           }
         },
         {
-          "ID": "3307",
+          "ID": "3613",
           "typeID": "Arrow",
-          "zOrder": "13",
+          "zOrder": "16",
           "w": "211",
           "h": "1",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1104",
-          "y": "1352",
+          "x": "1114",
+          "y": "1362",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -422,15 +422,15 @@
           }
         },
         {
-          "ID": "3308",
+          "ID": "3614",
           "typeID": "Arrow",
-          "zOrder": "14",
+          "zOrder": "17",
           "w": "86",
           "h": "48",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "828",
-          "y": "1355",
+          "x": "838",
+          "y": "1365",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -453,15 +453,15 @@
           }
         },
         {
-          "ID": "3309",
+          "ID": "3615",
           "typeID": "Arrow",
-          "zOrder": "15",
+          "zOrder": "18",
           "w": "110",
           "h": "4",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "817",
-          "y": "1339",
+          "x": "827",
+          "y": "1349",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -484,15 +484,15 @@
           }
         },
         {
-          "ID": "3310",
+          "ID": "3616",
           "typeID": "Arrow",
-          "zOrder": "16",
+          "zOrder": "19",
           "w": "202",
           "h": "207",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1097",
-          "y": "1131",
+          "x": "1107",
+          "y": "1141",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -513,15 +513,15 @@
           }
         },
         {
-          "ID": "3311",
+          "ID": "3617",
           "typeID": "Arrow",
-          "zOrder": "17",
+          "zOrder": "20",
           "w": "129",
           "h": "28",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1414",
-          "y": "1129",
+          "x": "1424",
+          "y": "1139",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -544,15 +544,15 @@
           }
         },
         {
-          "ID": "3312",
+          "ID": "3618",
           "typeID": "Arrow",
-          "zOrder": "18",
+          "zOrder": "21",
           "w": "129",
           "h": "24",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1412",
-          "y": "1092",
+          "x": "1422",
+          "y": "1102",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -575,15 +575,15 @@
           }
         },
         {
-          "ID": "3313",
+          "ID": "3619",
           "typeID": "__group__",
-          "zOrder": "19",
+          "zOrder": "22",
           "measuredW": "163",
           "measuredH": "49",
           "w": "163",
           "h": "49",
-          "x": "1533",
-          "y": "1070",
+          "x": "1543",
+          "y": "1080",
           "properties": {
             "controlName": "100-version-control-systems:git"
           },
@@ -622,15 +622,15 @@
           }
         },
         {
-          "ID": "3314",
+          "ID": "3620",
           "typeID": "__group__",
-          "zOrder": "20",
+          "zOrder": "23",
           "measuredW": "163",
           "measuredH": "49",
           "w": "163",
           "h": "49",
-          "x": "1533",
-          "y": "1124",
+          "x": "1543",
+          "y": "1134",
           "properties": {
             "controlName": "101-version-control-systems:github"
           },
@@ -669,28 +669,28 @@
           }
         },
         {
-          "ID": "3315",
+          "ID": "3621",
           "typeID": "Label",
-          "zOrder": "21",
+          "zOrder": "24",
           "measuredW": "161",
           "measuredH": "32",
-          "x": "972",
-          "y": "2122",
+          "x": "982",
+          "y": "2132",
           "properties": {
             "text": "Keep Learning",
             "size": "24"
           }
         },
         {
-          "ID": "3316",
+          "ID": "3622",
           "typeID": "Arrow",
-          "zOrder": "22",
+          "zOrder": "25",
           "w": "1",
           "h": "63",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1052",
-          "y": "2165",
+          "x": "1062",
+          "y": "2175",
           "properties": {
             "curvature": "-1",
             "direction": "bottom",
@@ -713,15 +713,15 @@
           }
         },
         {
-          "ID": "3317",
+          "ID": "3623",
           "typeID": "Arrow",
-          "zOrder": "23",
+          "zOrder": "26",
           "w": "129",
           "h": "28",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1418",
-          "y": "1361",
+          "x": "1428",
+          "y": "1371",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -744,15 +744,15 @@
           }
         },
         {
-          "ID": "3318",
+          "ID": "3624",
           "typeID": "Arrow",
-          "zOrder": "24",
+          "zOrder": "27",
           "w": "129",
           "h": "24",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1416",
-          "y": "1324",
+          "x": "1426",
+          "y": "1334",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -775,15 +775,15 @@
           }
         },
         {
-          "ID": "3319",
+          "ID": "3625",
           "typeID": "Arrow",
-          "zOrder": "25",
+          "zOrder": "28",
           "w": "1",
           "h": "278",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1301",
-          "y": "846",
+          "x": "1311",
+          "y": "856",
           "properties": {
             "curvature": "0",
             "leftArrow": "false",
@@ -804,15 +804,15 @@
           }
         },
         {
-          "ID": "3320",
+          "ID": "3626",
           "typeID": "Arrow",
-          "zOrder": "26",
+          "zOrder": "29",
           "w": "129",
           "h": "28",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1414",
-          "y": "976",
+          "x": "1424",
+          "y": "986",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -835,15 +835,15 @@
           }
         },
         {
-          "ID": "3321",
+          "ID": "3627",
           "typeID": "Arrow",
-          "zOrder": "27",
+          "zOrder": "30",
           "w": "129",
           "h": "24",
           "measuredW": "150",
           "measuredH": "100",
-          "x": "1412",
-          "y": "939",
+          "x": "1422",
+          "y": "949",
           "properties": {
             "color": "2848996",
             "curvature": "-1",
@@ -866,1696 +866,15 @@
           }
         },
         {
-          "ID": "3323",
+          "ID": "3628",
           "typeID": "__group__",
-          "zOrder": "29",
-          "measuredW": "473",
-          "measuredH": "127",
-          "w": "473",
-          "h": "127",
-          "x": "600",
-          "y": "802",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "473",
-                  "h": "127",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "382",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "22",
-                  "properties": {
-                    "size": "18",
-                    "text": "This roadmap is meant for beginners. If you are"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "425",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "51",
-                  "properties": {
-                    "size": "18",
-                    "text": "transitioning from DataScience/DevOps background"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "Label",
-                  "zOrder": "3",
-                  "measuredW": "215",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "80",
-                  "properties": {
-                    "size": "18",
-                    "text": "you might skip some parts."
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3324",
-          "typeID": "Label",
-          "zOrder": "30",
-          "measuredW": "104",
-          "measuredH": "40",
-          "x": "1250",
-          "y": "789",
-          "properties": {
-            "size": "32",
-            "text": "MLOps"
-          }
-        },
-        {
-          "ID": "3325",
-          "typeID": "Arrow",
           "zOrder": "31",
-          "w": "1",
-          "h": "75",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1301",
-          "y": "702",
-          "properties": {
-            "curvature": "-1",
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "p0": {
-              "x": 0.43268541466795796,
-              "y": -0.4292144763719534
-            },
-            "p1": {
-              "x": 0.4673783006670677,
-              "y": -0.0036060514395746665
-            },
-            "p2": {
-              "x": 0.08850738176079176,
-              "y": 74.41806720423438
-            },
-            "color": "10027263"
-          }
-        },
-        {
-          "ID": "3326",
-          "typeID": "__group__",
-          "zOrder": "32",
-          "measuredW": "350",
-          "measuredH": "141",
-          "w": "350",
-          "h": "141",
-          "x": "1473",
-          "y": "670",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "350",
-                  "h": "141",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "314",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "17",
-                  "properties": {
-                    "size": "17",
-                    "text": "Find the detailed version of this roadmap"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "319",
-                  "measuredH": "25",
-                  "x": "14",
-                  "y": "45",
-                  "properties": {
-                    "size": "17",
-                    "text": "along with resources and other roadmaps"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "320",
-                  "measuredH": "45",
-                  "w": "320",
-                  "h": "45",
-                  "x": "15",
-                  "y": "81",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "320",
-                          "h": "45",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "borderColor": "4273622",
-                            "color": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "105",
-                          "measuredH": "28",
-                          "x": "141",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "roadmap.sh"
-                          }
-                        },
-                        {
-                          "ID": "2",
-                          "typeID": "Label",
-                          "zOrder": "2",
-                          "measuredW": "45",
-                          "measuredH": "28",
-                          "x": "66",
-                          "y": "8",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https"
-                          }
-                        },
-                        {
-                          "ID": "3",
-                          "typeID": "Label",
-                          "zOrder": "3",
-                          "measuredW": "5",
-                          "measuredH": "28",
-                          "x": "113",
-                          "y": "8",
-                          "properties": {
-                            "bold": "true",
-                            "color": "16777215",
-                            "size": "20",
-                            "text": ":"
-                          }
-                        },
-                        {
-                          "ID": "4",
-                          "typeID": "Label",
-                          "zOrder": "4",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "120",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        },
-                        {
-                          "ID": "5",
-                          "typeID": "Label",
-                          "zOrder": "5",
-                          "measuredW": "10",
-                          "measuredH": "28",
-                          "x": "128",
-                          "y": "9",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "/"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3327",
-          "typeID": "__group__",
-          "zOrder": "33",
-          "measuredW": "295",
-          "measuredH": "50",
-          "w": "295",
-          "h": "50",
-          "x": "1152",
-          "y": "944",
-          "properties": {
-            "controlName": "100-programming-fundamentals"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "295",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "217",
-                  "measuredH": "25",
-                  "x": "39",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Programming Fundamentals"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3328",
-          "typeID": "Arrow",
-          "zOrder": "34",
-          "w": "3",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1848",
-          "y": "829",
-          "properties": {
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "16777215",
-            "p0": {
-              "x": 0.14652915468354877,
-              "y": 0.452028801972574
-            },
-            "p1": {
-              "x": 0.47345427259831346,
-              "y": -0.00011162392477928299
-            },
-            "p2": {
-              "x": 2.7298768229543384,
-              "y": 0.452028801972574
-            }
-          }
-        },
-        {
-          "ID": "3329",
-          "typeID": "Arrow",
-          "zOrder": "35",
-          "w": "3",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1369",
-          "y": "637",
-          "properties": {
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "16777215",
-            "p0": {
-              "x": 0.14652915468354877,
-              "y": 0.452028801972574
-            },
-            "p1": {
-              "x": 0.47345427259831346,
-              "y": -0.00011162392477928299
-            },
-            "p2": {
-              "x": 2.7298768229543384,
-              "y": 0.452028801972574
-            }
-          }
-        },
-        {
-          "ID": "3330",
-          "typeID": "__group__",
-          "zOrder": "36",
-          "measuredW": "163",
-          "measuredH": "49",
-          "w": "163",
-          "h": "49",
-          "x": "1533",
-          "y": "917",
-          "properties": {
-            "controlName": "100-programming-fundamentals:python"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "163",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "53",
-                  "measuredH": "25",
-                  "x": "55",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Python"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3331",
-          "typeID": "__group__",
-          "zOrder": "37",
-          "measuredW": "163",
-          "measuredH": "49",
-          "w": "163",
-          "h": "49",
-          "x": "1533",
-          "y": "971",
-          "properties": {
-            "controlName": "101-programming-fundamentals:bash"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "163",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "40",
-                  "measuredH": "25",
-                  "x": "62",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Bash"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3332",
-          "typeID": "__group__",
-          "zOrder": "38",
-          "measuredW": "172",
-          "measuredH": "50",
-          "w": "172",
-          "h": "50",
-          "x": "1286",
-          "y": "1328",
-          "properties": {
-            "controlName": "103-containerization"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "172",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "126",
-                  "measuredH": "25",
-                  "x": "23",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Containerization"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3333",
-          "typeID": "__group__",
-          "zOrder": "39",
-          "measuredW": "164",
-          "measuredH": "49",
-          "w": "164",
-          "h": "49",
-          "x": "1535",
-          "y": "1299",
-          "properties": {
-            "controlName": "100-containerization:docker"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "164",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "56",
-                  "measuredH": "25",
-                  "x": "54",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Docker"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3334",
-          "typeID": "__group__",
-          "zOrder": "40",
-          "measuredW": "164",
-          "measuredH": "49",
-          "w": "164",
-          "h": "49",
-          "x": "1535",
-          "y": "1353",
-          "properties": {
-            "controlName": "101-containerization:kubernetes"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "164",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "90",
-                  "measuredH": "25",
-                  "x": "37",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Kubernetes"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3335",
-          "typeID": "__group__",
-          "zOrder": "41",
-          "measuredW": "305",
-          "measuredH": "50",
-          "w": "305",
-          "h": "50",
-          "x": "905",
-          "y": "1730",
-          "properties": {
-            "controlName": "106-mlops-principles"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "305",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "136",
-                  "measuredH": "25",
-                  "x": "85",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "MLOps Principles"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3336",
-          "typeID": "__group__",
-          "zOrder": "42",
-          "measuredW": "299",
-          "measuredH": "50",
-          "w": "299",
-          "h": "50",
-          "x": "904",
-          "y": "1840",
-          "properties": {
-            "controlName": "107-mlops-components"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "299",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "158",
-                  "measuredH": "25",
-                  "x": "71",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "MLOps Components"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3337",
-          "typeID": "__group__",
-          "zOrder": "43",
-          "measuredW": "357",
-          "measuredH": "49",
-          "w": "357",
-          "h": "49",
-          "x": "1377",
-          "y": "1679",
-          "properties": {
-            "controlName": "100-mlops-components:version-control"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "357",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "118",
-                  "measuredH": "25",
-                  "x": "120",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Version Control"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3338",
-          "typeID": "__group__",
-          "zOrder": "44",
-          "measuredW": "357",
-          "measuredH": "49",
-          "w": "357",
-          "h": "49",
-          "x": "1377",
-          "y": "1733",
-          "properties": {
-            "controlName": "101-mlops-components:ci-cd"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "357",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "59",
-                  "measuredH": "25",
-                  "x": "149",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "CI / CD"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3339",
-          "typeID": "__group__",
-          "zOrder": "45",
-          "measuredW": "358",
-          "measuredH": "49",
-          "w": "358",
-          "h": "49",
-          "x": "1377",
-          "y": "1787",
-          "properties": {
-            "controlName": "102-mlops-components:orchestration"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "358",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "105",
-                  "measuredH": "25",
-                  "x": "126",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Orchestration"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3340",
-          "typeID": "__group__",
-          "zOrder": "46",
-          "measuredW": "358",
-          "measuredH": "49",
-          "w": "358",
-          "h": "49",
-          "x": "1377",
-          "y": "1841",
-          "properties": {
-            "controlName": "103-mlops-components:experiment-tracking"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "358",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "313",
-                  "measuredH": "25",
-                  "x": "22",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Experiment Tracking and Model Registry"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3341",
-          "typeID": "__group__",
-          "zOrder": "47",
-          "measuredW": "358",
-          "measuredH": "49",
-          "w": "358",
-          "h": "49",
-          "x": "1377",
-          "y": "1895",
-          "properties": {
-            "controlName": "104-mlops-components:data-lineage"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "358",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "256",
-                  "measuredH": "25",
-                  "x": "51",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Data Lineage and Feature Stores"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3342",
-          "typeID": "__group__",
-          "zOrder": "48",
-          "measuredW": "358",
-          "measuredH": "49",
-          "w": "358",
-          "h": "49",
-          "x": "1377",
-          "y": "1949",
-          "properties": {
-            "controlName": "105-mlops-components:model-training"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "358",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "210",
-                  "measuredH": "25",
-                  "x": "74",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Model Training and Serving"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3343",
-          "typeID": "__group__",
-          "zOrder": "49",
-          "measuredW": "358",
-          "measuredH": "49",
-          "w": "358",
-          "h": "49",
-          "x": "1377",
-          "y": "2004",
-          "properties": {
-            "controlName": "106-mlops-components:monitoring"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "358",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "220",
-                  "measuredH": "25",
-                  "x": "69",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Monitoring and Observability"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3344",
-          "typeID": "__group__",
-          "zOrder": "50",
-          "measuredW": "473",
-          "measuredH": "147",
-          "w": "473",
-          "h": "147",
-          "x": "600",
-          "y": "660",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "473",
-                  "h": "147",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "238",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "65",
-                  "properties": {
-                    "size": "18",
-                    "text": "This roadmap was created by"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "37",
-                  "measuredH": "26",
-                  "x": "21",
-                  "y": "97",
-                  "properties": {
-                    "size": "18",
-                    "text": "from"
-                  }
-                },
-                {
-                  "ID": "6",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "151",
-                  "measuredH": "26",
-                  "w": "151",
-                  "h": "26",
-                  "x": "265",
-                  "y": "65",
-                  "properties": {
-                    "controlName": "ext_link:bit.ly/maria-mlops"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "151",
-                          "measuredH": "26",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "size": "18",
-                            "color": "10027263",
-                            "text": "Maria Vechtomova"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "8",
-                  "typeID": "__group__",
-                  "zOrder": "4",
-                  "measuredW": "148",
-                  "measuredH": "26",
-                  "w": "148",
-                  "h": "26",
-                  "x": "65",
-                  "y": "97",
-                  "properties": {
-                    "controlName": "ext_link:bit.ly/marvelousmlops-mlops"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Label",
-                          "zOrder": "0",
-                          "measuredW": "148",
-                          "measuredH": "26",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "10027263",
-                            "size": "18",
-                            "text": "Marvelous MLOps"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                },
-                {
-                  "ID": "9",
-                  "typeID": "Label",
-                  "zOrder": "5",
-                  "measuredW": "166",
-                  "measuredH": "26",
-                  "x": "220",
-                  "y": "97",
-                  "properties": {
-                    "size": "18",
-                    "text": ". Do check them out!"
-                  }
-                },
-                {
-                  "ID": "10",
-                  "typeID": "Label",
-                  "zOrder": "6",
-                  "measuredW": "163",
-                  "measuredH": "32",
-                  "x": "21",
-                  "y": "23",
-                  "properties": {
-                    "size": "24",
-                    "text": "Special thanks!"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3349",
-          "typeID": "__group__",
-          "zOrder": "51",
-          "measuredW": "299",
-          "measuredH": "50",
-          "w": "299",
-          "h": "50",
-          "x": "1296",
-          "y": "1564",
-          "properties": {
-            "controlName": "104-ml-fundamentals"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "299",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "253",
-                  "measuredH": "25",
-                  "x": "23",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Machine Learning Fundamentals"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3350",
-          "typeID": "__group__",
-          "zOrder": "52",
-          "measuredW": "299",
-          "measuredH": "50",
-          "w": "299",
-          "h": "50",
-          "x": "908",
-          "y": "1997",
-          "properties": {
-            "controlName": "108-infra-as-code"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "299",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "174",
-                  "measuredH": "25",
-                  "x": "63",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Infrastructure as Code"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3355",
-          "typeID": "__group__",
-          "zOrder": "54",
-          "measuredW": "295",
-          "measuredH": "49",
-          "w": "295",
-          "h": "49",
-          "x": "1152",
-          "y": "1098",
-          "properties": {
-            "controlName": "101-version-control-systems"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "295",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "186",
-                  "measuredH": "25",
-                  "x": "55",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Version Control Systems"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3356",
-          "typeID": "__group__",
-          "zOrder": "55",
-          "measuredW": "205",
-          "measuredH": "50",
-          "w": "205",
-          "h": "50",
-          "x": "905",
-          "y": "1318",
-          "properties": {
-            "controlName": "102-cloud-computing"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "205",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "133",
-                  "measuredH": "25",
-                  "x": "36",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Cloud Computing"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3357",
-          "typeID": "__group__",
-          "zOrder": "56",
-          "measuredW": "237",
-          "measuredH": "49",
-          "w": "237",
-          "h": "49",
-          "x": "600",
-          "y": "1318",
-          "properties": {
-            "controlName": "100-cloud-computing:aws-azure-gcp"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "237",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "149",
-                  "measuredH": "25",
-                  "x": "44",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "AWS / Azure / GCP"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3358",
-          "typeID": "__group__",
-          "zOrder": "57",
-          "measuredW": "237",
-          "measuredH": "49",
-          "w": "237",
-          "h": "49",
-          "x": "600",
-          "y": "1373",
-          "properties": {
-            "controlName": "101-cloud-computing:cloud-native-ml-services"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "237",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "197",
-                  "measuredH": "25",
-                  "x": "20",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Cloud-native ML Services"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3359",
-          "typeID": "__group__",
-          "zOrder": "58",
-          "measuredW": "305",
-          "measuredH": "50",
-          "w": "305",
-          "h": "50",
-          "x": "905",
-          "y": "1565",
-          "properties": {
-            "controlName": "105-data-eng-fundamentals"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "305",
-                  "h": "50",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16776960"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "249",
-                  "measuredH": "25",
-                  "x": "28",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Data Engineering Fundamentals"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3360",
-          "typeID": "__group__",
-          "zOrder": "59",
-          "measuredW": "237",
-          "measuredH": "49",
-          "w": "237",
-          "h": "49",
-          "x": "600",
-          "y": "1514",
-          "properties": {
-            "controlName": "100-data-eng-fundamentals:data-pipelines"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "237",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "112",
-                  "measuredH": "25",
-                  "x": "63",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Data Pipelines"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3361",
-          "typeID": "__group__",
-          "zOrder": "60",
-          "measuredW": "237",
-          "measuredH": "49",
-          "w": "237",
-          "h": "49",
-          "x": "600",
-          "y": "1569",
-          "properties": {
-            "controlName": "101-data-eng-fundamentals:data-lakes-warehouses"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "237",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "197",
-                  "measuredH": "25",
-                  "x": "20",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Data lakes & Warehouses"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3362",
-          "typeID": "__group__",
-          "zOrder": "61",
-          "measuredW": "237",
-          "measuredH": "49",
-          "w": "237",
-          "h": "49",
-          "x": "600",
-          "y": "1623",
-          "properties": {
-            "controlName": "102-data-eng-fundamentals:spark-airflow-kafka"
-          },
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "TextArea",
-                  "zOrder": "0",
-                  "w": "237",
-                  "h": "49",
-                  "measuredW": "200",
-                  "measuredH": "140",
-                  "x": "0",
-                  "y": "0",
-                  "properties": {
-                    "color": "16770457"
-                  }
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "171",
-                  "measuredH": "25",
-                  "x": "33",
-                  "y": "12",
-                  "properties": {
-                    "size": "17",
-                    "text": "Spark / Airflow / Kafka"
-                  }
-                }
-              ]
-            }
-          }
-        },
-        {
-          "ID": "3363",
-          "typeID": "Arrow",
-          "zOrder": "62",
-          "w": "3",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1061",
-          "y": "2263",
-          "properties": {
-            "direction": "bottom",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "16777215",
-            "p0": {
-              "x": 0.14652915468354877,
-              "y": 0.452028801972574
-            },
-            "p1": {
-              "x": 0.47345427259831346,
-              "y": -0.00011162392477928299
-            },
-            "p2": {
-              "x": 2.7298768229543384,
-              "y": 0.452028801972574
-            }
-          }
-        },
-        {
-          "ID": "3370",
-          "typeID": "__group__",
-          "zOrder": "28",
           "measuredW": "473",
           "measuredH": "175",
           "w": "473",
           "h": "175",
-          "x": "600",
-          "y": "922",
+          "x": "610",
+          "y": "932",
           "children": {
             "controls": {
               "control": [
@@ -2834,15 +1153,1291 @@
           }
         },
         {
-          "ID": "3371",
+          "ID": "3629",
+          "typeID": "__group__",
+          "zOrder": "32",
+          "measuredW": "473",
+          "measuredH": "127",
+          "w": "473",
+          "h": "127",
+          "x": "610",
+          "y": "812",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "473",
+                  "h": "127",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "382",
+                  "measuredH": "26",
+                  "x": "21",
+                  "y": "22",
+                  "properties": {
+                    "size": "18",
+                    "text": "This roadmap is meant for beginners. If you are"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "425",
+                  "measuredH": "26",
+                  "x": "21",
+                  "y": "51",
+                  "properties": {
+                    "size": "18",
+                    "text": "transitioning from DataScience/DevOps background"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "Label",
+                  "zOrder": "3",
+                  "measuredW": "215",
+                  "measuredH": "26",
+                  "x": "21",
+                  "y": "80",
+                  "properties": {
+                    "size": "18",
+                    "text": "you might skip some parts."
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3630",
+          "typeID": "Label",
+          "zOrder": "33",
+          "measuredW": "104",
+          "measuredH": "40",
+          "x": "1260",
+          "y": "799",
+          "properties": {
+            "size": "32",
+            "text": "MLOps"
+          }
+        },
+        {
+          "ID": "3631",
+          "typeID": "Arrow",
+          "zOrder": "34",
+          "w": "1",
+          "h": "75",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1311",
+          "y": "712",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 0.43268541466795796,
+              "y": -0.4292144763719534
+            },
+            "p1": {
+              "x": 0.4673783006670677,
+              "y": -0.0036060514395746665
+            },
+            "p2": {
+              "x": 0.08850738176079176,
+              "y": 74.41806720423438
+            },
+            "color": "10027263"
+          }
+        },
+        {
+          "ID": "3632",
+          "typeID": "__group__",
+          "zOrder": "35",
+          "measuredW": "350",
+          "measuredH": "141",
+          "w": "350",
+          "h": "141",
+          "x": "1483",
+          "y": "680",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "350",
+                  "h": "141",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "314",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "17",
+                  "properties": {
+                    "size": "17",
+                    "text": "Find the detailed version of this roadmap"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "319",
+                  "measuredH": "25",
+                  "x": "14",
+                  "y": "45",
+                  "properties": {
+                    "size": "17",
+                    "text": "along with resources and other roadmaps"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "320",
+                  "measuredH": "45",
+                  "w": "320",
+                  "h": "45",
+                  "x": "15",
+                  "y": "81",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "320",
+                          "h": "45",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "borderColor": "4273622",
+                            "color": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "105",
+                          "measuredH": "28",
+                          "x": "141",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "roadmap.sh"
+                          }
+                        },
+                        {
+                          "ID": "2",
+                          "typeID": "Label",
+                          "zOrder": "2",
+                          "measuredW": "45",
+                          "measuredH": "28",
+                          "x": "66",
+                          "y": "8",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https"
+                          }
+                        },
+                        {
+                          "ID": "3",
+                          "typeID": "Label",
+                          "zOrder": "3",
+                          "measuredW": "5",
+                          "measuredH": "28",
+                          "x": "113",
+                          "y": "8",
+                          "properties": {
+                            "bold": "true",
+                            "color": "16777215",
+                            "size": "20",
+                            "text": ":"
+                          }
+                        },
+                        {
+                          "ID": "4",
+                          "typeID": "Label",
+                          "zOrder": "4",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "120",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        },
+                        {
+                          "ID": "5",
+                          "typeID": "Label",
+                          "zOrder": "5",
+                          "measuredW": "10",
+                          "measuredH": "28",
+                          "x": "128",
+                          "y": "9",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "/"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3633",
+          "typeID": "__group__",
+          "zOrder": "36",
+          "measuredW": "295",
+          "measuredH": "50",
+          "w": "295",
+          "h": "50",
+          "x": "1162",
+          "y": "954",
+          "properties": {
+            "controlName": "100-programming-fundamentals"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "295",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "217",
+                  "measuredH": "25",
+                  "x": "39",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Programming Fundamentals"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3634",
+          "typeID": "Arrow",
+          "zOrder": "37",
+          "w": "3",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1858",
+          "y": "839",
+          "properties": {
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "16777215",
+            "p0": {
+              "x": 0.14652915468354877,
+              "y": 0.452028801972574
+            },
+            "p1": {
+              "x": 0.47345427259831346,
+              "y": -0.00011162392477928299
+            },
+            "p2": {
+              "x": 2.7298768229543384,
+              "y": 0.452028801972574
+            }
+          }
+        },
+        {
+          "ID": "3635",
+          "typeID": "Arrow",
+          "zOrder": "38",
+          "w": "3",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1379",
+          "y": "647",
+          "properties": {
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "16777215",
+            "p0": {
+              "x": 0.14652915468354877,
+              "y": 0.452028801972574
+            },
+            "p1": {
+              "x": 0.47345427259831346,
+              "y": -0.00011162392477928299
+            },
+            "p2": {
+              "x": 2.7298768229543384,
+              "y": 0.452028801972574
+            }
+          }
+        },
+        {
+          "ID": "3636",
+          "typeID": "__group__",
+          "zOrder": "39",
+          "measuredW": "163",
+          "measuredH": "49",
+          "w": "163",
+          "h": "49",
+          "x": "1543",
+          "y": "877",
+          "properties": {
+            "controlName": "100-programming-fundamentals:python"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "163",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "53",
+                  "measuredH": "25",
+                  "x": "55",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Python"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3637",
+          "typeID": "__group__",
+          "zOrder": "40",
+          "measuredW": "163",
+          "measuredH": "49",
+          "w": "163",
+          "h": "49",
+          "x": "1543",
+          "y": "931",
+          "properties": {
+            "controlName": "101-programming-fundamentals:go"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "163",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "23",
+                  "measuredH": "25",
+                  "x": "70",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Go"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3638",
+          "typeID": "__group__",
+          "zOrder": "41",
+          "measuredW": "172",
+          "measuredH": "50",
+          "w": "172",
+          "h": "50",
+          "x": "1296",
+          "y": "1338",
+          "properties": {
+            "controlName": "103-containerization"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "172",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "126",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Containerization"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3639",
+          "typeID": "__group__",
+          "zOrder": "42",
+          "measuredW": "164",
+          "measuredH": "49",
+          "w": "164",
+          "h": "49",
+          "x": "1545",
+          "y": "1309",
+          "properties": {
+            "controlName": "100-containerization:docker"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "164",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "56",
+                  "measuredH": "25",
+                  "x": "54",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Docker"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3640",
+          "typeID": "__group__",
+          "zOrder": "43",
+          "measuredW": "164",
+          "measuredH": "49",
+          "w": "164",
+          "h": "49",
+          "x": "1545",
+          "y": "1363",
+          "properties": {
+            "controlName": "101-containerization:kubernetes"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "164",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "90",
+                  "measuredH": "25",
+                  "x": "37",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Kubernetes"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3641",
+          "typeID": "__group__",
+          "zOrder": "44",
+          "measuredW": "305",
+          "measuredH": "50",
+          "w": "305",
+          "h": "50",
+          "x": "915",
+          "y": "1740",
+          "properties": {
+            "controlName": "106-mlops-principles"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "136",
+                  "measuredH": "25",
+                  "x": "85",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "MLOps Principles"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3642",
+          "typeID": "__group__",
+          "zOrder": "45",
+          "measuredW": "299",
+          "measuredH": "50",
+          "w": "299",
+          "h": "50",
+          "x": "914",
+          "y": "1850",
+          "properties": {
+            "controlName": "107-mlops-components"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "299",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "158",
+                  "measuredH": "25",
+                  "x": "71",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "MLOps Components"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3643",
+          "typeID": "__group__",
+          "zOrder": "46",
+          "measuredW": "357",
+          "measuredH": "49",
+          "w": "357",
+          "h": "49",
+          "x": "1387",
+          "y": "1689",
+          "properties": {
+            "controlName": "100-mlops-components:version-control"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "357",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "118",
+                  "measuredH": "25",
+                  "x": "120",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Version Control"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3644",
+          "typeID": "__group__",
+          "zOrder": "47",
+          "measuredW": "357",
+          "measuredH": "49",
+          "w": "357",
+          "h": "49",
+          "x": "1387",
+          "y": "1743",
+          "properties": {
+            "controlName": "101-mlops-components:ci-cd"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "357",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "59",
+                  "measuredH": "25",
+                  "x": "149",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "CI / CD"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3645",
+          "typeID": "__group__",
+          "zOrder": "48",
+          "measuredW": "358",
+          "measuredH": "49",
+          "w": "358",
+          "h": "49",
+          "x": "1387",
+          "y": "1797",
+          "properties": {
+            "controlName": "102-mlops-components:orchestration"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "358",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "105",
+                  "measuredH": "25",
+                  "x": "126",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Orchestration"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3646",
+          "typeID": "__group__",
+          "zOrder": "49",
+          "measuredW": "358",
+          "measuredH": "49",
+          "w": "358",
+          "h": "49",
+          "x": "1387",
+          "y": "1851",
+          "properties": {
+            "controlName": "103-mlops-components:experiment-tracking"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "358",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "313",
+                  "measuredH": "25",
+                  "x": "22",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Experiment Tracking and Model Registry"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3647",
+          "typeID": "__group__",
+          "zOrder": "50",
+          "measuredW": "358",
+          "measuredH": "49",
+          "w": "358",
+          "h": "49",
+          "x": "1387",
+          "y": "1905",
+          "properties": {
+            "controlName": "104-mlops-components:data-lineage"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "358",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "256",
+                  "measuredH": "25",
+                  "x": "51",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Data Lineage and Feature Stores"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3648",
+          "typeID": "__group__",
+          "zOrder": "51",
+          "measuredW": "358",
+          "measuredH": "49",
+          "w": "358",
+          "h": "49",
+          "x": "1387",
+          "y": "1959",
+          "properties": {
+            "controlName": "105-mlops-components:model-training"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "358",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "210",
+                  "measuredH": "25",
+                  "x": "74",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Model Training and Serving"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3649",
+          "typeID": "__group__",
+          "zOrder": "52",
+          "measuredW": "358",
+          "measuredH": "49",
+          "w": "358",
+          "h": "49",
+          "x": "1387",
+          "y": "2014",
+          "properties": {
+            "controlName": "106-mlops-components:monitoring"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "358",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "220",
+                  "measuredH": "25",
+                  "x": "69",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Monitoring and Observability"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3650",
           "typeID": "__group__",
           "zOrder": "53",
+          "measuredW": "473",
+          "measuredH": "147",
+          "w": "473",
+          "h": "147",
+          "x": "610",
+          "y": "670",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "473",
+                  "h": "147",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "238",
+                  "measuredH": "26",
+                  "x": "21",
+                  "y": "65",
+                  "properties": {
+                    "size": "18",
+                    "text": "This roadmap was created by"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "37",
+                  "measuredH": "26",
+                  "x": "21",
+                  "y": "97",
+                  "properties": {
+                    "size": "18",
+                    "text": "from"
+                  }
+                },
+                {
+                  "ID": "6",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "151",
+                  "measuredH": "26",
+                  "w": "151",
+                  "h": "26",
+                  "x": "265",
+                  "y": "65",
+                  "properties": {
+                    "controlName": "ext_link:bit.ly/maria-mlops"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "151",
+                          "measuredH": "26",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "size": "18",
+                            "color": "10027263",
+                            "text": "Maria Vechtomova"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "8",
+                  "typeID": "__group__",
+                  "zOrder": "4",
+                  "measuredW": "148",
+                  "measuredH": "26",
+                  "w": "148",
+                  "h": "26",
+                  "x": "65",
+                  "y": "97",
+                  "properties": {
+                    "controlName": "ext_link:bit.ly/marvelousmlops-mlops"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Label",
+                          "zOrder": "0",
+                          "measuredW": "148",
+                          "measuredH": "26",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "10027263",
+                            "size": "18",
+                            "text": "Marvelous MLOps"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                },
+                {
+                  "ID": "9",
+                  "typeID": "Label",
+                  "zOrder": "5",
+                  "measuredW": "166",
+                  "measuredH": "26",
+                  "x": "220",
+                  "y": "97",
+                  "properties": {
+                    "size": "18",
+                    "text": ". Do check them out!"
+                  }
+                },
+                {
+                  "ID": "10",
+                  "typeID": "Label",
+                  "zOrder": "6",
+                  "measuredW": "163",
+                  "measuredH": "32",
+                  "x": "21",
+                  "y": "23",
+                  "properties": {
+                    "size": "24",
+                    "text": "Special thanks!"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3651",
+          "typeID": "__group__",
+          "zOrder": "54",
+          "measuredW": "299",
+          "measuredH": "50",
+          "w": "299",
+          "h": "50",
+          "x": "1306",
+          "y": "1574",
+          "properties": {
+            "controlName": "104-ml-fundamentals"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "299",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "253",
+                  "measuredH": "25",
+                  "x": "23",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Machine Learning Fundamentals"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3652",
+          "typeID": "__group__",
+          "zOrder": "55",
+          "measuredW": "299",
+          "measuredH": "50",
+          "w": "299",
+          "h": "50",
+          "x": "918",
+          "y": "2007",
+          "properties": {
+            "controlName": "108-infra-as-code"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "299",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "174",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Infrastructure as Code"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3653",
+          "typeID": "__group__",
+          "zOrder": "56",
           "measuredW": "461",
           "measuredH": "127",
           "w": "461",
           "h": "127",
-          "x": "600",
-          "y": "1138",
+          "x": "610",
+          "y": "1148",
           "children": {
             "controls": {
               "control": [
@@ -2901,21 +2496,754 @@
               ]
             }
           }
+        },
+        {
+          "ID": "3654",
+          "typeID": "__group__",
+          "zOrder": "57",
+          "measuredW": "295",
+          "measuredH": "49",
+          "w": "295",
+          "h": "49",
+          "x": "1162",
+          "y": "1108",
+          "properties": {
+            "controlName": "101-version-control-systems"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "295",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "186",
+                  "measuredH": "25",
+                  "x": "55",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Version Control Systems"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3655",
+          "typeID": "__group__",
+          "zOrder": "58",
+          "measuredW": "205",
+          "measuredH": "50",
+          "w": "205",
+          "h": "50",
+          "x": "915",
+          "y": "1328",
+          "properties": {
+            "controlName": "102-cloud-computing"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "205",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "133",
+                  "measuredH": "25",
+                  "x": "36",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Cloud Computing"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3656",
+          "typeID": "__group__",
+          "zOrder": "59",
+          "measuredW": "237",
+          "measuredH": "49",
+          "w": "237",
+          "h": "49",
+          "x": "610",
+          "y": "1328",
+          "properties": {
+            "controlName": "100-cloud-computing:aws-azure-gcp"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "237",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "149",
+                  "measuredH": "25",
+                  "x": "44",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "AWS / Azure / GCP"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3657",
+          "typeID": "__group__",
+          "zOrder": "60",
+          "measuredW": "237",
+          "measuredH": "49",
+          "w": "237",
+          "h": "49",
+          "x": "610",
+          "y": "1383",
+          "properties": {
+            "controlName": "101-cloud-computing:cloud-native-ml-services"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "237",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "197",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Cloud-native ML Services"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3658",
+          "typeID": "__group__",
+          "zOrder": "61",
+          "measuredW": "305",
+          "measuredH": "50",
+          "w": "305",
+          "h": "50",
+          "x": "915",
+          "y": "1575",
+          "properties": {
+            "controlName": "105-data-eng-fundamentals"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "305",
+                  "h": "50",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16776960"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "249",
+                  "measuredH": "25",
+                  "x": "28",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Data Engineering Fundamentals"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3659",
+          "typeID": "__group__",
+          "zOrder": "62",
+          "measuredW": "237",
+          "measuredH": "49",
+          "w": "237",
+          "h": "49",
+          "x": "610",
+          "y": "1524",
+          "properties": {
+            "controlName": "100-data-eng-fundamentals:data-pipelines"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "237",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "112",
+                  "measuredH": "25",
+                  "x": "63",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Data Pipelines"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3660",
+          "typeID": "__group__",
+          "zOrder": "63",
+          "measuredW": "237",
+          "measuredH": "49",
+          "w": "237",
+          "h": "49",
+          "x": "610",
+          "y": "1579",
+          "properties": {
+            "controlName": "101-data-eng-fundamentals:data-lakes-warehouses"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "237",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "197",
+                  "measuredH": "25",
+                  "x": "20",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Data lakes & Warehouses"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3661",
+          "typeID": "__group__",
+          "zOrder": "64",
+          "measuredW": "116",
+          "measuredH": "49",
+          "w": "116",
+          "h": "49",
+          "x": "773",
+          "y": "1694",
+          "properties": {
+            "controlName": "102-data-eng-fundamentals:spark"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "116",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "45",
+                  "measuredH": "25",
+                  "x": "35",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Spark"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3662",
+          "typeID": "Arrow",
+          "zOrder": "65",
+          "w": "3",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1071",
+          "y": "2273",
+          "properties": {
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "16777215",
+            "p0": {
+              "x": 0.14652915468354877,
+              "y": 0.452028801972574
+            },
+            "p1": {
+              "x": 0.47345427259831346,
+              "y": -0.00011162392477928299
+            },
+            "p2": {
+              "x": 2.7298768229543384,
+              "y": 0.452028801972574
+            }
+          }
+        },
+        {
+          "ID": "3665",
+          "typeID": "__group__",
+          "zOrder": "66",
+          "measuredW": "163",
+          "measuredH": "49",
+          "w": "163",
+          "h": "49",
+          "x": "1543",
+          "y": "985",
+          "properties": {
+            "controlName": "101-programming-fundamentals:bash"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "163",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "40",
+                  "measuredH": "25",
+                  "x": "62",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Bash"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3666",
+          "typeID": "Arrow",
+          "zOrder": "2",
+          "w": "107",
+          "h": "60",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1450",
+          "y": "902",
+          "properties": {
+            "color": "2848996",
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "p0": {
+              "x": 106.95319991843417,
+              "y": 0.21734292549183465
+            },
+            "p1": {
+              "x": 0.48232779097387135,
+              "y": 0.06750593824228049
+            },
+            "p2": {
+              "x": -0.4816074511304578,
+              "y": 59.863034899371996
+            }
+          }
+        },
+        {
+          "ID": "3667",
+          "typeID": "__group__",
+          "zOrder": "67",
+          "measuredW": "111",
+          "measuredH": "49",
+          "w": "111",
+          "h": "49",
+          "x": "610",
+          "y": "1454",
+          "properties": {
+            "controlName": "100-data-eng-fundamentals:data-pipelines:airflow"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "111",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "50",
+                  "measuredH": "25",
+                  "x": "31",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Airflow"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3668",
+          "typeID": "Arrow",
+          "zOrder": "1",
+          "w": "1",
+          "h": "62",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "670",
+          "y": "1483",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 0.08850738176079176,
+              "y": 62.03857705484643
+            },
+            "p1": {
+              "x": 0.4673783006670681,
+              "y": -0.0036060514395746643
+            },
+            "p2": {
+              "x": 0.08850738176079176,
+              "y": 0.4180672042343758
+            }
+          }
+        },
+        {
+          "ID": "3669",
+          "typeID": "__group__",
+          "zOrder": "68",
+          "measuredW": "117",
+          "measuredH": "49",
+          "w": "117",
+          "h": "49",
+          "x": "772",
+          "y": "1746",
+          "properties": {
+            "controlName": "103-data-eng-fundamentals:kafka"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "117",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "44",
+                  "measuredH": "25",
+                  "x": "37",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Kafka"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3670",
+          "typeID": "__group__",
+          "zOrder": "69",
+          "measuredW": "116",
+          "measuredH": "49",
+          "w": "116",
+          "h": "49",
+          "x": "773",
+          "y": "1798",
+          "properties": {
+            "controlName": "104-data-eng-fundamentals:flink"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "116",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "36",
+                  "measuredH": "25",
+                  "x": "40",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Flink"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3673",
+          "typeID": "__group__",
+          "zOrder": "70",
+          "measuredW": "237",
+          "measuredH": "49",
+          "w": "237",
+          "h": "49",
+          "x": "610",
+          "y": "1633",
+          "properties": {
+            "controlName": "103-data-eng-fundamentals:data-ingestion-architecture"
+          },
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "TextArea",
+                  "zOrder": "0",
+                  "w": "237",
+                  "h": "49",
+                  "measuredW": "200",
+                  "measuredH": "140",
+                  "x": "0",
+                  "y": "0",
+                  "properties": {
+                    "color": "16770457"
+                  }
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "211",
+                  "measuredH": "25",
+                  "x": "13",
+                  "y": "12",
+                  "properties": {
+                    "size": "17",
+                    "text": "Data Ingestion Architecture"
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "3674",
+          "typeID": "Arrow",
+          "zOrder": "0",
+          "w": "92",
+          "h": "54",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "836",
+          "y": "1610",
+          "properties": {
+            "curvature": "-1",
+            "direction": "bottom",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "10027263",
+            "p0": {
+              "x": 91.8899475740078,
+              "y": 0.1827846917374245
+            },
+            "p1": {
+              "x": 0.47294727744165954,
+              "y": -0.11979256698357832
+            },
+            "p2": {
+              "x": -0.12049726552004358,
+              "y": 53.973506290230716
+            }
+          }
         }
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1 copy 6",
-      "order": 1000022.7193818908,
+      "name": "New Wireframe 1 copy 8",
+      "order": 1000000.6428282561,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "DAF9FB64-BA77-40D4-BCEF-EEE21C480971",
+    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
     "mockupH": "1627",
     "mockupW": "1251",
-    "measuredW": "1851",
-    "measuredH": "2264",
+    "measuredW": "1861",
+    "measuredH": "2274",
     "version": "1.0"
   },
   "groupOffset": {
