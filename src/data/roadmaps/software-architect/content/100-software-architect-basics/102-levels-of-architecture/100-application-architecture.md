@@ -7,7 +7,8 @@ Examples:
 ### Monolithic Architecture:
 
 A single, self-contained application where all components are tightly integrated into a single codebase.
-Example: Traditional Content Management Systems (CMS) where the frontend, backend, and database are part of a single application.
+
+**Example**: Traditional Content Management Systems (CMS) where the frontend, backend, and database are part of a single application.
 
 ### Microservices Architecture:
 
