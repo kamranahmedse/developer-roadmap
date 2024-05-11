@@ -34,7 +34,7 @@ export function RoadCardPage() {
   }
 
   const badgeUrl = new URL(
-    `${import.meta.env.PUBLIC_API_URL}/v1-badge/${version}/${user?.id}`,
+    `${import.meta.env.PUBLIC_APP_URL}/card/${version}/${user?.id}`,
   );
 
   badgeUrl.searchParams.set('variant', variant);
@@ -146,7 +146,7 @@ export function RoadCardPage() {
               className="flex cursor-pointer items-center justify-center rounded border border-gray-300 p-1.5 px-2 text-sm font-medium disabled:bg-blue-50"
               onClick={() => copyText(badgeUrl.toString())}
             >
-              <CopyIcon size={16} className="inline-block h-4 w-4 mr-1" />
+              <CopyIcon size={16} className="mr-1 inline-block h-4 w-4" />
 
               {isCopied ? 'Copied!' : 'Copy Link'}
             </button>

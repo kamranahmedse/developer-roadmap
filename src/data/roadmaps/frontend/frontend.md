@@ -3,9 +3,9 @@ jsonUrl: '/jsons/roadmaps/frontend.json'
 pdfUrl: '/pdfs/roadmaps/frontend.pdf'
 order: 1
 briefTitle: 'Frontend'
-briefDescription: 'Step by step guide to becoming a frontend developer in 2023'
+briefDescription: 'Step by step guide to becoming a frontend developer in 2024'
 title: 'Frontend Developer'
-description: 'Step by step guide to becoming a modern frontend developer in 2023'
+description: 'Step by step guide to becoming a modern frontend developer in 2024'
 hasTopics: true
 isForkable: true
 tnsBannerLink: 'https://thenewstack.io?utm_source=roadmap.sh&utm_medium=Referral&utm_campaign=Alert'
@@ -29,9 +29,9 @@ seo:
   title: 'Frontend Developer Roadmap: What is Frontend Development?'
   description: 'Learn what Frontend Development is, what frontend developers do and how to become a modern frontend developer using our community-driven roadmap.'
   keywords:
-    - 'javascript roadmap 2023'
-    - 'frontend roadmap 2023'
-    - 'frontend developer roadmap 2023'
+    - 'javascript roadmap 2024'
+    - 'frontend roadmap 2024'
+    - 'frontend developer roadmap 2024'
     - 'guide to becoming a developer'
     - 'guide to becoming a frontend developer'
     - 'frontend developer'

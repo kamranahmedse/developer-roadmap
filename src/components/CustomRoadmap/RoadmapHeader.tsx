@@ -12,6 +12,7 @@ import { Lock, Shapes } from 'lucide-react';
 import { Modal } from '../Modal';
 import { ShareSuccess } from '../ShareOptions/ShareSuccess';
 import { ShareRoadmapButton } from '../ShareRoadmapButton.tsx';
+import { CustomRoadmapAlert } from './CustomRoadmapAlert.tsx';
 
 type RoadmapHeaderProps = {};
 
@@ -23,6 +24,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     title,
     description,
     _id: roadmapId,
+    slug: roadmapSlug,
     creator,
     team,
     visibility,
@@ -78,6 +80,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
     >
       <ShareSuccess
         visibility="public"
+        roadmapSlug={roadmapSlug}
         roadmapId={roadmapId!}
         description={description}
         onClose={() => setIsSharingWithOthers(false)}
@@ -89,6 +92,8 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
   return (
     <div className="border-b">
       <div className="container relative py-5 sm:py-12">
+        {!$canManageCurrentRoadmap && <CustomRoadmapAlert />}
+
         {creator?.name && (
           <div className="-mb-1 flex items-center gap-1.5 text-sm text-gray-500">
             <img
@@ -132,7 +137,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
             <ShareRoadmapButton
               roadmapId={roadmapId!}
               description={description!}
-              pageUrl={`https://roadmap.sh/r?id=${roadmapId}`}
+              pageUrl={`https://roadmap.sh/r/${roadmapSlug}`}
               allowEmbed={true}
             />
           </div>
@@ -141,6 +146,7 @@ export function RoadmapHeader(props: RoadmapHeaderProps) {
               <>
                 {isSharing && $currentRoadmap && (
                   <ShareOptionsModal
+                    roadmapSlug={$currentRoadmap?.slug}
                     isDiscoverable={$currentRoadmap.isDiscoverable}
                     description={$currentRoadmap?.description}
                     visibility={$currentRoadmap?.visibility}

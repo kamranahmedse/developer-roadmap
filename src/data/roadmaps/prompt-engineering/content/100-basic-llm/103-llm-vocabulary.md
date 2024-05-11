@@ -18,7 +18,7 @@ When working with LLMs, you will come across a lot of new terms. This section wi
 
 - **Label Distribution** — The label distribution is the probability distribution over the label space. For example, if you have a text that says "I love you", then the label distribution could be [0.8, 0.1, 0.1]. This means that the model thinks there is an 80% chance that the text is positive, a 10% chance that it is negative, and a 10% chance that it is neutral.
 
-- **Sentiment Analysis** — Sentiment analysis is the process of determining the emotional tone behind a series of words, used to gain an understanding of the the attitudes, opinions and emotions expressed within an online mention. Sentiment analysis is also known as opinion mining, deriving the opinion or attitude of a speaker.
+- **Sentiment Analysis** — Sentiment analysis is the process of determining the emotional tone behind a series of words, used to gain an understanding of the attitudes, opinions and emotions expressed within an online mention. Sentiment analysis is also known as opinion mining, deriving the opinion or attitude of a speaker.
 
 - **Verbalizer** — In the classification setting, verbalizers are mappings from labels to words in a language model's vocabulary. For example, consider performing sentiment classification with the following prompt:
   ```

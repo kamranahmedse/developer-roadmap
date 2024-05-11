@@ -27,7 +27,7 @@ The first line of the program `#include <iostream>` is a [preprocessor directive
 
 ## `main()` Function
 
-In C++, the `main()` function serves as the entry point of your program. The operating system runs your program by calling this `main()` function. It should be defined only once in your program and must return an integer.
+In C++, the `main()` function serves as the entry point of your program. The operating system runs your program by calling this `main()` function. It should be defined only once in your program and must return an integer. The keyword `int` is the return type of this function which is an integer. Unlike C in C++ it is mandatory to have `int` as the return type for the `main` function.
 
 ```cpp
 int main() {
@@ -42,7 +42,7 @@ To output text to the console, we use the `std::cout` object and the insertion o
 ```cpp
 std::cout << "Hello, World!" << std::endl;
 ```
-
+- `std`: This is the namespace where C++ standard library entities (classes and functions) reside. It stands for "standard" and is an abbreviation for the Standard Template Library (STL).
 - `std::cout`: The standard "character output" stream that writes to the console
 - `"Hello, World!"`: The string literal to print
 - `std::endl`: The "end line" manipulator that inserts a newline character and flushes the output buffer

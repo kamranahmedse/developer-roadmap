@@ -1,10 +1,7 @@
 ---
 title: 'Proxy Servers'
 description: 'How do proxy servers work and what are forward and reverse proxies?'
-author:
-  name: 'Ebrahim Bharmal'
-  url: 'https://twitter.com/BharmalEbrahim'
-  imageUrl: '/authors/ebrahimbharmal007.png'
+authorId: 'ebrahim-bharmal'
 seo:
   title: 'Proxy Servers - roadmap.sh'
   description: 'How do proxy servers work and what are forward and reverse proxies?'

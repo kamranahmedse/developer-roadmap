@@ -4,10 +4,7 @@ description: 'Learn what is dependency injection and how to write better code wi
 duration: '3 minutes'
 isNew: false
 date: 2020-07-04
-author:
-  name: 'Kamran Ahmed'
-  url: 'https://twitter.com/kamrify'
-  imageUrl: '/authors/kamranahmedse.jpeg'
+authorId: 'kamran'
 sitemap:
   priority: 0.7
   changefreq: 'weekly'

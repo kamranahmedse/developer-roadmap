@@ -56,5 +56,3 @@ ROLLBACK TRANSACTION TO savepoint_name;
 This statement rolls back a transaction to the named savepoint without terminating the transaction. 
 
 Please note, savepoint names are not case sensitive and must obey the syntax rules of the server.
-
-If you found this information useful and want to learn more about topics like transactions, SQL commands, normalisation and more, consider subscribing to our mailing list. You’ll receive regular updates and exclusive content to help you become a better SQL developer. Please contact me if you have any further queries.

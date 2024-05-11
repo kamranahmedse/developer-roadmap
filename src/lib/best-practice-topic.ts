@@ -1,5 +1,5 @@
 import type { MarkdownFileType } from './file';
-import type { BestPracticeFrontmatter } from './best-pratice';
+import type { BestPracticeFrontmatter } from './best-practice';
 
 // Generates URL from the topic file path e.g.
 // -> /src/data/best-practices/frontend-performance/content/100-use-https-everywhere
@@ -34,7 +34,7 @@ export async function getAllBestPracticeTopicFiles(): Promise<
     '/src/data/best-practices/*/content/**/*.md',
     {
       eager: true,
-    }
+    },
   );
 
   const mapping: Record<string, BestPracticeTopicFileType> = {};
