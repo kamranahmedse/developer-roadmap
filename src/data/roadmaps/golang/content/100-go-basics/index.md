@@ -5,4 +5,4 @@ Learn the common concepts of Go like variables, loops, conditional statements, f
 Visit the following resources to learn more:
 
 - [Official Go Tutorial](https://go.dev/doc/tutorial/)
-- [Go Tutorial](https://www.w3schools.com/go/index.php)
+- [W3 Schools Go Tutorial](https://www.w3schools.com/go/index.php)
