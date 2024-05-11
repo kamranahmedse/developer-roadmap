@@ -3,7 +3,7 @@
     "controls": {
       "control": [
         {
-          "ID": "3085",
+          "ID": "2236",
           "typeID": "Arrow",
           "zOrder": "0",
           "w": "118",
@@ -33,7 +33,7 @@
           }
         },
         {
-          "ID": "3086",
+          "ID": "2237",
           "typeID": "Arrow",
           "zOrder": "1",
           "w": "1",
@@ -63,7 +63,7 @@
           }
         },
         {
-          "ID": "3087",
+          "ID": "2238",
           "typeID": "Arrow",
           "zOrder": "2",
           "w": "94",
@@ -93,7 +93,7 @@
           }
         },
         {
-          "ID": "3088",
+          "ID": "2239",
           "typeID": "Arrow",
           "zOrder": "3",
           "w": "94",
@@ -123,7 +123,7 @@
           }
         },
         {
-          "ID": "3089",
+          "ID": "2240",
           "typeID": "Arrow",
           "zOrder": "4",
           "w": "1",
@@ -153,7 +153,7 @@
           }
         },
         {
-          "ID": "3090",
+          "ID": "2241",
           "typeID": "Arrow",
           "zOrder": "5",
           "w": "1",
@@ -183,7 +183,7 @@
           }
         },
         {
-          "ID": "3091",
+          "ID": "2242",
           "typeID": "Arrow",
           "zOrder": "6",
           "w": "1",
@@ -213,7 +213,7 @@
           }
         },
         {
-          "ID": "3092",
+          "ID": "2243",
           "typeID": "Arrow",
           "zOrder": "7",
           "w": "879",
@@ -242,7 +242,7 @@
           }
         },
         {
-          "ID": "3093",
+          "ID": "2244",
           "typeID": "Arrow",
           "zOrder": "8",
           "w": "1",
@@ -271,7 +271,7 @@
           }
         },
         {
-          "ID": "3094",
+          "ID": "2245",
           "typeID": "Arrow",
           "zOrder": "9",
           "w": "93",
@@ -300,7 +300,7 @@
           }
         },
         {
-          "ID": "3095",
+          "ID": "2246",
           "typeID": "Arrow",
           "zOrder": "10",
           "w": "229",
@@ -330,7 +330,7 @@
           }
         },
         {
-          "ID": "3096",
+          "ID": "2247",
           "typeID": "Arrow",
           "zOrder": "11",
           "w": "119",
@@ -360,7 +360,7 @@
           }
         },
         {
-          "ID": "3097",
+          "ID": "2248",
           "typeID": "Arrow",
           "zOrder": "12",
           "w": "1",
@@ -389,7 +389,7 @@
           }
         },
         {
-          "ID": "3098",
+          "ID": "2249",
           "typeID": "Arrow",
           "zOrder": "13",
           "w": "1",
@@ -419,7 +419,7 @@
           }
         },
         {
-          "ID": "3099",
+          "ID": "2250",
           "typeID": "Arrow",
           "zOrder": "14",
           "w": "1",
@@ -449,7 +449,7 @@
           }
         },
         {
-          "ID": "3100",
+          "ID": "2251",
           "typeID": "Arrow",
           "zOrder": "15",
           "w": "1",
@@ -479,7 +479,7 @@
           }
         },
         {
-          "ID": "3101",
+          "ID": "2252",
           "typeID": "Arrow",
           "zOrder": "16",
           "w": "1",
@@ -508,7 +508,7 @@
           }
         },
         {
-          "ID": "3102",
+          "ID": "2253",
           "typeID": "Arrow",
           "zOrder": "17",
           "w": "877",
@@ -537,7 +537,7 @@
           }
         },
         {
-          "ID": "3103",
+          "ID": "2254",
           "typeID": "__group__",
           "zOrder": "18",
           "measuredW": "99",
@@ -584,7 +584,7 @@
           }
         },
         {
-          "ID": "3104",
+          "ID": "2255",
           "typeID": "__group__",
           "zOrder": "19",
           "measuredW": "146",
@@ -631,7 +631,7 @@
           }
         },
         {
-          "ID": "3105",
+          "ID": "2256",
           "typeID": "__group__",
           "zOrder": "20",
           "measuredW": "115",
@@ -678,7 +678,7 @@
           }
         },
         {
-          "ID": "3106",
+          "ID": "2257",
           "typeID": "Label",
           "zOrder": "21",
           "measuredW": "148",
@@ -691,7 +691,110 @@
           }
         },
         {
-          "ID": "3111",
+          "ID": "2258",
+          "typeID": "__group__",
+          "zOrder": "22",
+          "measuredW": "361",
+          "measuredH": "150",
+          "w": "361",
+          "h": "150",
+          "x": "1007",
+          "y": "254",
+          "children": {
+            "controls": {
+              "control": [
+                {
+                  "ID": "0",
+                  "typeID": "Canvas",
+                  "zOrder": "0",
+                  "w": "361",
+                  "h": "150",
+                  "measuredW": "100",
+                  "measuredH": "70",
+                  "x": "0",
+                  "y": "0"
+                },
+                {
+                  "ID": "1",
+                  "typeID": "Label",
+                  "zOrder": "1",
+                  "measuredW": "332",
+                  "measuredH": "26",
+                  "x": "16",
+                  "y": "18",
+                  "properties": {
+                    "size": "18",
+                    "text": "Find the detailed version of this checklist"
+                  }
+                },
+                {
+                  "ID": "2",
+                  "typeID": "Label",
+                  "zOrder": "2",
+                  "measuredW": "318",
+                  "measuredH": "26",
+                  "x": "16",
+                  "y": "46",
+                  "properties": {
+                    "size": "18",
+                    "text": "With details on how to implement these"
+                  }
+                },
+                {
+                  "ID": "3",
+                  "typeID": "__group__",
+                  "zOrder": "3",
+                  "measuredW": "329",
+                  "measuredH": "51",
+                  "w": "329",
+                  "h": "51",
+                  "x": "16",
+                  "y": "82",
+                  "properties": {
+                    "controlName": "ext_link:roadmap.sh"
+                  },
+                  "children": {
+                    "controls": {
+                      "control": [
+                        {
+                          "ID": "0",
+                          "typeID": "Canvas",
+                          "zOrder": "0",
+                          "w": "329",
+                          "h": "51",
+                          "measuredW": "100",
+                          "measuredH": "70",
+                          "x": "0",
+                          "y": "0",
+                          "properties": {
+                            "color": "4273622",
+                            "borderColor": "4273622"
+                          }
+                        },
+                        {
+                          "ID": "1",
+                          "typeID": "Label",
+                          "zOrder": "1",
+                          "measuredW": "172",
+                          "measuredH": "28",
+                          "x": "79",
+                          "y": "12",
+                          "properties": {
+                            "color": "16777215",
+                            "size": "20",
+                            "text": "https://roadmap.sh"
+                          }
+                        }
+                      ]
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        },
+        {
+          "ID": "2259",
           "typeID": "Arrow",
           "zOrder": "23",
           "w": "1",
@@ -721,7 +824,7 @@
           }
         },
         {
-          "ID": "3112",
+          "ID": "2260",
           "typeID": "__group__",
           "zOrder": "24",
           "measuredW": "302",
@@ -769,7 +872,7 @@
           }
         },
         {
-          "ID": "3113",
+          "ID": "2261",
           "typeID": "Arrow",
           "zOrder": "25",
           "w": "881",
@@ -798,7 +901,7 @@
           }
         },
         {
-          "ID": "3114",
+          "ID": "2262",
           "typeID": "__group__",
           "zOrder": "26",
           "measuredW": "307",
@@ -846,7 +949,7 @@
           }
         },
         {
-          "ID": "3115",
+          "ID": "2263",
           "typeID": "Arrow",
           "zOrder": "27",
           "w": "1",
@@ -875,7 +978,7 @@
           }
         },
         {
-          "ID": "3116",
+          "ID": "2264",
           "typeID": "__group__",
           "zOrder": "28",
           "measuredW": "99",
@@ -922,7 +1025,7 @@
           }
         },
         {
-          "ID": "3117",
+          "ID": "2265",
           "typeID": "Arrow",
           "zOrder": "29",
           "w": "226",
@@ -952,7 +1055,7 @@
           }
         },
         {
-          "ID": "3118",
+          "ID": "2266",
           "typeID": "__group__",
           "zOrder": "30",
           "measuredW": "307",
@@ -1000,7 +1103,7 @@
           }
         },
         {
-          "ID": "3119",
+          "ID": "2267",
           "typeID": "Arrow",
           "zOrder": "31",
           "w": "880",
@@ -1029,7 +1132,7 @@
           }
         },
         {
-          "ID": "3120",
+          "ID": "2268",
           "typeID": "__group__",
           "zOrder": "32",
           "measuredW": "80",
@@ -1076,7 +1179,7 @@
           }
         },
         {
-          "ID": "3121",
+          "ID": "2269",
           "typeID": "__group__",
           "zOrder": "33",
           "measuredW": "101",
@@ -1123,7 +1226,7 @@
           }
         },
         {
-          "ID": "3122",
+          "ID": "2270",
           "typeID": "__group__",
           "zOrder": "34",
           "measuredW": "302",
@@ -1171,7 +1274,7 @@
           }
         },
         {
-          "ID": "3123",
+          "ID": "2271",
           "typeID": "Canvas",
           "zOrder": "35",
           "w": "271",
@@ -1185,7 +1288,7 @@
           }
         },
         {
-          "ID": "3124",
+          "ID": "2272",
           "typeID": "__group__",
           "zOrder": "36",
           "measuredW": "286",
@@ -1233,7 +1336,7 @@
           }
         },
         {
-          "ID": "3125",
+          "ID": "2273",
           "typeID": "Label",
           "zOrder": "37",
           "measuredW": "220",
@@ -1246,14 +1349,14 @@
           }
         },
         {
-          "ID": "3126",
+          "ID": "2274",
           "typeID": "__group__",
           "zOrder": "38",
           "measuredW": "120",
           "measuredH": "50",
           "w": "120",
           "h": "50",
-          "x": "534",
+          "x": "529",
           "y": "948",
           "properties": {
             "controlName": "111-react"
@@ -1293,14 +1396,14 @@
           }
         },
         {
-          "ID": "3127",
+          "ID": "2275",
           "typeID": "__group__",
           "zOrder": "39",
-          "measuredW": "120",
+          "measuredW": "129",
           "measuredH": "50",
-          "w": "120",
+          "w": "129",
           "h": "50",
-          "x": "662",
+          "x": "657",
           "y": "948",
           "properties": {
             "controlName": "110-tailwind"
@@ -1312,7 +1415,7 @@
                   "ID": "0",
                   "typeID": "TextArea",
                   "zOrder": "0",
-                  "w": "120",
+                  "w": "129",
                   "h": "50",
                   "measuredW": "200",
                   "measuredH": "140",
@@ -1326,9 +1429,9 @@
                   "ID": "1",
                   "typeID": "Label",
                   "zOrder": "1",
-                  "measuredW": "61",
+                  "measuredW": "94",
                   "measuredH": "25",
-                  "x": "29",
+                  "x": "18",
                   "y": "12",
                   "properties": {
                     "size": "17",
@@ -1340,7 +1443,7 @@
           }
         },
         {
-          "ID": "3128",
+          "ID": "2276",
           "typeID": "Label",
           "zOrder": "40",
           "measuredW": "237",
@@ -1353,7 +1456,7 @@
           }
         },
         {
-          "ID": "3129",
+          "ID": "2277",
           "typeID": "__group__",
           "zOrder": "41",
           "measuredW": "120",
@@ -1400,7 +1503,7 @@
           }
         },
         {
-          "ID": "3130",
+          "ID": "2278",
           "typeID": "Canvas",
           "zOrder": "42",
           "w": "271",
@@ -1414,7 +1517,7 @@
           }
         },
         {
-          "ID": "3131",
+          "ID": "2279",
           "typeID": "Label",
           "zOrder": "43",
           "measuredW": "229",
@@ -1427,7 +1530,7 @@
           }
         },
         {
-          "ID": "3132",
+          "ID": "2280",
           "typeID": "__group__",
           "zOrder": "44",
           "measuredW": "429",
@@ -1483,7 +1586,7 @@
           }
         },
         {
-          "ID": "3133",
+          "ID": "2281",
           "typeID": "Arrow",
           "zOrder": "45",
           "w": "1",
@@ -1512,7 +1615,7 @@
           }
         },
         {
-          "ID": "3134",
+          "ID": "2282",
           "typeID": "Arrow",
           "zOrder": "46",
           "w": "229",
@@ -1542,7 +1645,7 @@
           }
         },
         {
-          "ID": "3135",
+          "ID": "2283",
           "typeID": "__group__",
           "zOrder": "47",
           "measuredW": "280",
@@ -1590,7 +1693,7 @@
           }
         },
         {
-          "ID": "3136",
+          "ID": "2284",
           "typeID": "__group__",
           "zOrder": "48",
           "measuredW": "135",
@@ -1637,7 +1740,7 @@
           }
         },
         {
-          "ID": "3137",
+          "ID": "2285",
           "typeID": "Arrow",
           "zOrder": "49",
           "w": "229",
@@ -1667,7 +1770,7 @@
           }
         },
         {
-          "ID": "3138",
+          "ID": "2286",
           "typeID": "__group__",
           "zOrder": "50",
           "measuredW": "276",
@@ -1715,7 +1818,7 @@
           }
         },
         {
-          "ID": "3139",
+          "ID": "2287",
           "typeID": "Arrow",
           "zOrder": "51",
           "w": "881",
@@ -1744,7 +1847,7 @@
           }
         },
         {
-          "ID": "3140",
+          "ID": "2288",
           "typeID": "Arrow",
           "zOrder": "52",
           "w": "1",
@@ -1773,7 +1876,7 @@
           }
         },
         {
-          "ID": "3141",
+          "ID": "2289",
           "typeID": "Label",
           "zOrder": "53",
           "measuredW": "170",
@@ -1786,7 +1889,7 @@
           }
         },
         {
-          "ID": "3142",
+          "ID": "2290",
           "typeID": "Arrow",
           "zOrder": "54",
           "w": "1",
@@ -1815,7 +1918,7 @@
           }
         },
         {
-          "ID": "3143",
+          "ID": "2291",
           "typeID": "Arrow",
           "zOrder": "55",
           "w": "1",
@@ -1844,7 +1947,7 @@
           }
         },
         {
-          "ID": "3144",
+          "ID": "2292",
           "typeID": "Arrow",
           "zOrder": "56",
           "w": "1",
@@ -1873,7 +1976,7 @@
           }
         },
         {
-          "ID": "3145",
+          "ID": "2293",
           "typeID": "__group__",
           "zOrder": "57",
           "measuredW": "145",
@@ -1920,7 +2023,7 @@
           }
         },
         {
-          "ID": "3146",
+          "ID": "2294",
           "typeID": "__group__",
           "zOrder": "58",
           "measuredW": "111",
@@ -1967,7 +2070,7 @@
           }
         },
         {
-          "ID": "3147",
+          "ID": "2295",
           "typeID": "__group__",
           "zOrder": "59",
           "measuredW": "277",
@@ -2015,7 +2118,7 @@
           }
         },
         {
-          "ID": "3148",
+          "ID": "2296",
           "typeID": "Arrow",
           "zOrder": "60",
           "w": "1",
@@ -2044,7 +2147,7 @@
           }
         },
         {
-          "ID": "3149",
+          "ID": "2297",
           "typeID": "__group__",
           "zOrder": "61",
           "measuredW": "89",
@@ -2091,7 +2194,7 @@
           }
         },
         {
-          "ID": "3150",
+          "ID": "2298",
           "typeID": "Arrow",
           "zOrder": "62",
           "w": "1",
@@ -2120,7 +2223,7 @@
           }
         },
         {
-          "ID": "3151",
+          "ID": "2299",
           "typeID": "Arrow",
           "zOrder": "63",
           "w": "194",
@@ -2149,7 +2252,7 @@
           }
         },
         {
-          "ID": "3152",
+          "ID": "2300",
           "typeID": "Canvas",
           "zOrder": "64",
           "w": "271",
@@ -2163,7 +2266,7 @@
           }
         },
         {
-          "ID": "3153",
+          "ID": "2301",
           "typeID": "Label",
           "zOrder": "65",
           "measuredW": "230",
@@ -2176,7 +2279,7 @@
           }
         },
         {
-          "ID": "3154",
+          "ID": "2302",
           "typeID": "Label",
           "zOrder": "66",
           "measuredW": "170",
@@ -2189,7 +2292,7 @@
           }
         },
         {
-          "ID": "3155",
+          "ID": "2303",
           "typeID": "Arrow",
           "zOrder": "67",
           "w": "315",
@@ -2218,7 +2321,7 @@
           }
         },
         {
-          "ID": "3156",
+          "ID": "2304",
           "typeID": "Arrow",
           "zOrder": "68",
           "w": "74",
@@ -2247,7 +2350,7 @@
           }
         },
         {
-          "ID": "3157",
+          "ID": "2305",
           "typeID": "Arrow",
           "zOrder": "69",
           "w": "74",
@@ -2276,7 +2379,7 @@
           }
         },
         {
-          "ID": "3158",
+          "ID": "2306",
           "typeID": "Label",
           "zOrder": "70",
           "measuredW": "246",
@@ -2289,7 +2392,7 @@
           }
         },
         {
-          "ID": "3159",
+          "ID": "2307",
           "typeID": "__group__",
           "zOrder": "71",
           "measuredW": "145",
@@ -2336,7 +2439,7 @@
           }
         },
         {
-          "ID": "3160",
+          "ID": "2308",
           "typeID": "__group__",
           "zOrder": "72",
           "measuredW": "198",
@@ -2383,7 +2486,7 @@
           }
         },
         {
-          "ID": "3161",
+          "ID": "2309",
           "typeID": "__group__",
           "zOrder": "73",
           "measuredW": "64",
@@ -2430,7 +2533,7 @@
           }
         },
         {
-          "ID": "3162",
+          "ID": "2310",
           "typeID": "__group__",
           "zOrder": "74",
           "measuredW": "61",
@@ -2477,7 +2580,7 @@
           }
         },
         {
-          "ID": "3163",
+          "ID": "2311",
           "typeID": "__group__",
           "zOrder": "75",
           "measuredW": "107",
@@ -2524,7 +2627,7 @@
           }
         },
         {
-          "ID": "3164",
+          "ID": "2312",
           "typeID": "__group__",
           "zOrder": "76",
           "measuredW": "85",
@@ -2571,7 +2674,7 @@
           }
         },
         {
-          "ID": "3165",
+          "ID": "2313",
           "typeID": "__group__",
           "zOrder": "77",
           "measuredW": "62",
@@ -2618,7 +2721,7 @@
           }
         },
         {
-          "ID": "3166",
+          "ID": "2314",
           "typeID": "Arrow",
           "zOrder": "78",
           "w": "1",
@@ -2647,7 +2750,7 @@
           }
         },
         {
-          "ID": "3167",
+          "ID": "2315",
           "typeID": "__group__",
           "zOrder": "79",
           "measuredW": "223",
@@ -2695,7 +2798,7 @@
           }
         },
         {
-          "ID": "3168",
+          "ID": "2316",
           "typeID": "__group__",
           "zOrder": "80",
           "measuredW": "87",
@@ -2742,7 +2845,7 @@
           }
         },
         {
-          "ID": "3169",
+          "ID": "2317",
           "typeID": "__group__",
           "zOrder": "81",
           "measuredW": "251",
@@ -2790,7 +2893,7 @@
           }
         },
         {
-          "ID": "3170",
+          "ID": "2318",
           "typeID": "Arrow",
           "zOrder": "82",
           "w": "881",
@@ -2819,7 +2922,7 @@
           }
         },
         {
-          "ID": "3171",
+          "ID": "2319",
           "typeID": "__group__",
           "zOrder": "83",
           "measuredW": "157",
@@ -2866,7 +2969,7 @@
           }
         },
         {
-          "ID": "3172",
+          "ID": "2320",
           "typeID": "__group__",
           "zOrder": "84",
           "measuredW": "256",
@@ -2914,7 +3017,7 @@
           }
         },
         {
-          "ID": "3173",
+          "ID": "2321",
           "typeID": "__group__",
           "zOrder": "85",
           "measuredW": "102",
@@ -2961,7 +3064,7 @@
           }
         },
         {
-          "ID": "3174",
+          "ID": "2322",
           "typeID": "Arrow",
           "zOrder": "86",
           "w": "1",
@@ -2991,7 +3094,7 @@
           }
         },
         {
-          "ID": "3175",
+          "ID": "2323",
           "typeID": "__group__",
           "zOrder": "87",
           "measuredW": "245",
@@ -3039,7 +3142,7 @@
           }
         },
         {
-          "ID": "3176",
+          "ID": "2324",
           "typeID": "Arrow",
           "zOrder": "88",
           "w": "1",
@@ -3068,7 +3171,7 @@
           }
         },
         {
-          "ID": "3177",
+          "ID": "2325",
           "typeID": "__group__",
           "zOrder": "89",
           "measuredW": "109",
@@ -3115,7 +3218,7 @@
           }
         },
         {
-          "ID": "3178",
+          "ID": "2326",
           "typeID": "TextArea",
           "zOrder": "90",
           "w": "370",
@@ -3126,7 +3229,7 @@
           "y": "1595"
         },
         {
-          "ID": "3179",
+          "ID": "2327",
           "typeID": "Label",
           "zOrder": "91",
           "measuredW": "311",
@@ -3140,7 +3243,7 @@
           }
         },
         {
-          "ID": "3180",
+          "ID": "2328",
           "typeID": "Label",
           "zOrder": "92",
           "measuredW": "296",
@@ -3154,7 +3257,7 @@
           }
         },
         {
-          "ID": "3181",
+          "ID": "2329",
           "typeID": "Label",
           "zOrder": "93",
           "measuredW": "302",
@@ -3168,7 +3271,7 @@
           }
         },
         {
-          "ID": "3182",
+          "ID": "2330",
           "typeID": "Label",
           "zOrder": "94",
           "measuredW": "320",
@@ -3182,7 +3285,7 @@
           }
         },
         {
-          "ID": "3183",
+          "ID": "2331",
           "typeID": "__group__",
           "zOrder": "95",
           "measuredW": "265",
@@ -3230,7 +3333,7 @@
           }
         },
         {
-          "ID": "3184",
+          "ID": "2332",
           "typeID": "Arrow",
           "zOrder": "96",
           "w": "504",
@@ -3259,7 +3362,7 @@
           }
         },
         {
-          "ID": "3185",
+          "ID": "2333",
           "typeID": "Arrow",
           "zOrder": "97",
           "w": "1",
@@ -3288,7 +3391,7 @@
           }
         },
         {
-          "ID": "3186",
+          "ID": "2334",
           "typeID": "TextArea",
           "zOrder": "98",
           "w": "635",
@@ -3299,7 +3402,7 @@
           "y": "2486"
         },
         {
-          "ID": "3187",
+          "ID": "2335",
           "typeID": "Label",
           "zOrder": "99",
           "measuredW": "366",
@@ -3312,7 +3415,7 @@
           }
         },
         {
-          "ID": "3188",
+          "ID": "2336",
           "typeID": "__group__",
           "zOrder": "100",
           "measuredW": "198",
@@ -3359,7 +3462,7 @@
           }
         },
         {
-          "ID": "3189",
+          "ID": "2337",
           "typeID": "__group__",
           "zOrder": "101",
           "measuredW": "198",
@@ -3406,7 +3509,7 @@
           }
         },
         {
-          "ID": "3190",
+          "ID": "2338",
           "typeID": "__group__",
           "zOrder": "102",
           "measuredW": "198",
@@ -3453,233 +3556,7 @@
           }
         },
         {
-          "ID": "3201",
-          "typeID": "Canvas",
-          "zOrder": "104",
-          "w": "363",
-          "h": "136",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1007",
-          "y": "420"
-        },
-        {
-          "ID": "3202",
-          "typeID": "Canvas",
-          "zOrder": "105",
-          "w": "26",
-          "h": "26",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1023",
-          "y": "436",
-          "properties": {
-            "color": "3355443"
-          }
-        },
-        {
-          "ID": "3203",
-          "typeID": "Label",
-          "zOrder": "106",
-          "measuredW": "249",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "436",
-          "properties": {
-            "size": "18",
-            "text": "Project Ideas and Suggestions"
-          }
-        },
-        {
-          "ID": "3204",
-          "typeID": "Canvas",
-          "zOrder": "107",
-          "w": "26",
-          "h": "26",
-          "measuredW": "100",
-          "measuredH": "70",
-          "x": "1023",
-          "y": "471",
-          "properties": {
-            "color": "16776960"
-          }
-        },
-        {
-          "ID": "3205",
-          "typeID": "Label",
-          "zOrder": "108",
-          "measuredW": "150",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "471",
-          "properties": {
-            "size": "18",
-            "text": "Key topics to learn"
-          }
-        },
-        {
-          "ID": "3206",
-          "typeID": "Arrow",
-          "zOrder": "109",
-          "w": "1",
-          "h": "20",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1034",
-          "y": "512",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 0,
-              "y": 0.07526588698897285
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 19.753913175934713
-            }
-          }
-        },
-        {
-          "ID": "3207",
-          "typeID": "Label",
-          "zOrder": "110",
-          "measuredW": "153",
-          "measuredH": "26",
-          "x": "1061",
-          "y": "509",
-          "properties": {
-            "size": "18",
-            "text": "Change of Domain"
-          }
-        },
-        {
-          "ID": "3208",
-          "typeID": "Arrow",
-          "zOrder": "111",
-          "w": "1",
-          "h": "20",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1037",
-          "y": "512",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "color": "3355443",
-            "p0": {
-              "x": 0,
-              "y": 0.07526588698897285
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 0,
-              "y": 19.753913175934713
-            }
-          }
-        },
-        {
-          "ID": "3209",
-          "typeID": "Arrow",
-          "zOrder": "112",
-          "w": "271",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "1203",
-          "y": "613",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": -0.4638780906282136,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 270.18342568627713,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "3210",
-          "typeID": "Arrow",
-          "zOrder": "113",
-          "w": "228",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "278",
-          "y": "747",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": 0.49770846294279636,
-              "y": 0.12070867681256914
-            },
-            "p1": {
-              "x": 0.4999999999999998,
-              "y": 0
-            },
-            "p2": {
-              "x": 228.53175987254372,
-              "y": 0.12070867681256914
-            }
-          }
-        },
-        {
-          "ID": "3211",
-          "typeID": "Arrow",
-          "zOrder": "114",
-          "w": "60",
-          "h": "1",
-          "measuredW": "150",
-          "measuredH": "100",
-          "x": "929",
-          "y": "2724",
-          "properties": {
-            "curvature": "0",
-            "leftArrow": "false",
-            "rightArrow": "false",
-            "stroke": "dotted",
-            "color": "16777215",
-            "p0": {
-              "x": 0,
-              "y": 0.12070867681268282
-            },
-            "p1": {
-              "x": 0.49999999999999967,
-              "y": 0
-            },
-            "p2": {
-              "x": 60,
-              "y": 0.12070867681268282
-            }
-          }
-        },
-        {
-          "ID": "3212",
+          "ID": "2339",
           "typeID": "__group__",
           "zOrder": "103",
           "measuredW": "381",
@@ -3926,118 +3803,241 @@
           }
         },
         {
-          "ID": "3213",
-          "typeID": "__group__",
-          "zOrder": "22",
-          "measuredW": "361",
-          "measuredH": "150",
-          "w": "361",
-          "h": "150",
+          "ID": "2340",
+          "typeID": "Canvas",
+          "zOrder": "104",
+          "w": "363",
+          "h": "136",
+          "measuredW": "100",
+          "measuredH": "70",
           "x": "1007",
-          "y": "254",
-          "children": {
-            "controls": {
-              "control": [
-                {
-                  "ID": "0",
-                  "typeID": "Canvas",
-                  "zOrder": "0",
-                  "w": "361",
-                  "h": "150",
-                  "measuredW": "100",
-                  "measuredH": "70",
-                  "x": "0",
-                  "y": "0"
-                },
-                {
-                  "ID": "1",
-                  "typeID": "Label",
-                  "zOrder": "1",
-                  "measuredW": "332",
-                  "measuredH": "26",
-                  "x": "16",
-                  "y": "18",
-                  "properties": {
-                    "size": "18",
-                    "text": "Find the detailed version of this checklist"
-                  }
-                },
-                {
-                  "ID": "2",
-                  "typeID": "Label",
-                  "zOrder": "2",
-                  "measuredW": "318",
-                  "measuredH": "26",
-                  "x": "16",
-                  "y": "46",
-                  "properties": {
-                    "size": "18",
-                    "text": "With details on how to implement these"
-                  }
-                },
-                {
-                  "ID": "3",
-                  "typeID": "__group__",
-                  "zOrder": "3",
-                  "measuredW": "329",
-                  "measuredH": "51",
-                  "w": "329",
-                  "h": "51",
-                  "x": "16",
-                  "y": "82",
-                  "properties": {
-                    "controlName": "ext_link:roadmap.sh"
-                  },
-                  "children": {
-                    "controls": {
-                      "control": [
-                        {
-                          "ID": "0",
-                          "typeID": "Canvas",
-                          "zOrder": "0",
-                          "w": "329",
-                          "h": "51",
-                          "measuredW": "100",
-                          "measuredH": "70",
-                          "x": "0",
-                          "y": "0",
-                          "properties": {
-                            "color": "4273622",
-                            "borderColor": "4273622"
-                          }
-                        },
-                        {
-                          "ID": "1",
-                          "typeID": "Label",
-                          "zOrder": "1",
-                          "measuredW": "172",
-                          "measuredH": "28",
-                          "x": "79",
-                          "y": "12",
-                          "properties": {
-                            "color": "16777215",
-                            "size": "20",
-                            "text": "https://roadmap.sh"
-                          }
-                        }
-                      ]
-                    }
-                  }
-                }
-              ]
+          "y": "420"
+        },
+        {
+          "ID": "2341",
+          "typeID": "Canvas",
+          "zOrder": "105",
+          "w": "26",
+          "h": "26",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1023",
+          "y": "436",
+          "properties": {
+            "color": "3355443"
+          }
+        },
+        {
+          "ID": "2342",
+          "typeID": "Label",
+          "zOrder": "106",
+          "measuredW": "249",
+          "measuredH": "26",
+          "x": "1061",
+          "y": "436",
+          "properties": {
+            "size": "18",
+            "text": "Project Ideas and Suggestions"
+          }
+        },
+        {
+          "ID": "2343",
+          "typeID": "Canvas",
+          "zOrder": "107",
+          "w": "26",
+          "h": "26",
+          "measuredW": "100",
+          "measuredH": "70",
+          "x": "1023",
+          "y": "471",
+          "properties": {
+            "color": "16776960"
+          }
+        },
+        {
+          "ID": "2344",
+          "typeID": "Label",
+          "zOrder": "108",
+          "measuredW": "150",
+          "measuredH": "26",
+          "x": "1061",
+          "y": "471",
+          "properties": {
+            "size": "18",
+            "text": "Key topics to learn"
+          }
+        },
+        {
+          "ID": "2345",
+          "typeID": "Arrow",
+          "zOrder": "109",
+          "w": "1",
+          "h": "20",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1034",
+          "y": "512",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3355443",
+            "p0": {
+              "x": 0,
+              "y": 0.07526588698897285
+            },
+            "p1": {
+              "x": 0.4999999999999998,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 19.753913175934713
+            }
+          }
+        },
+        {
+          "ID": "2346",
+          "typeID": "Label",
+          "zOrder": "110",
+          "measuredW": "153",
+          "measuredH": "26",
+          "x": "1061",
+          "y": "509",
+          "properties": {
+            "size": "18",
+            "text": "Change of Domain"
+          }
+        },
+        {
+          "ID": "2347",
+          "typeID": "Arrow",
+          "zOrder": "111",
+          "w": "1",
+          "h": "20",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1037",
+          "y": "512",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "color": "3355443",
+            "p0": {
+              "x": 0,
+              "y": 0.07526588698897285
+            },
+            "p1": {
+              "x": 0.4999999999999998,
+              "y": 0
+            },
+            "p2": {
+              "x": 0,
+              "y": 19.753913175934713
+            }
+          }
+        },
+        {
+          "ID": "2348",
+          "typeID": "Arrow",
+          "zOrder": "112",
+          "w": "271",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "1203",
+          "y": "613",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "16777215",
+            "p0": {
+              "x": -0.4638780906282136,
+              "y": 0.12070867681256914
+            },
+            "p1": {
+              "x": 0.49999999999999967,
+              "y": 0
+            },
+            "p2": {
+              "x": 270.18342568627713,
+              "y": 0.12070867681256914
+            }
+          }
+        },
+        {
+          "ID": "2349",
+          "typeID": "Arrow",
+          "zOrder": "113",
+          "w": "228",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "278",
+          "y": "747",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "16777215",
+            "p0": {
+              "x": 0.49770846294279636,
+              "y": 0.12070867681256914
+            },
+            "p1": {
+              "x": 0.4999999999999998,
+              "y": 0
+            },
+            "p2": {
+              "x": 228.53175987254372,
+              "y": 0.12070867681256914
+            }
+          }
+        },
+        {
+          "ID": "2350",
+          "typeID": "Arrow",
+          "zOrder": "114",
+          "w": "60",
+          "h": "1",
+          "measuredW": "150",
+          "measuredH": "100",
+          "x": "929",
+          "y": "2724",
+          "properties": {
+            "curvature": "0",
+            "leftArrow": "false",
+            "rightArrow": "false",
+            "stroke": "dotted",
+            "color": "16777215",
+            "p0": {
+              "x": 0,
+              "y": 0.12070867681268282
+            },
+            "p1": {
+              "x": 0.49999999999999967,
+              "y": 0
+            },
+            "p2": {
+              "x": 60,
+              "y": 0.12070867681268282
             }
           }
         }
       ]
     },
     "attributes": {
-      "name": "New Wireframe 1 copy",
-      "order": 1000010.2336643032,
+      "name": "New Wireframe 1 copy 8",
+      "order": 1000000.6428282561,
       "parentID": null,
       "notes": ""
     },
     "branchID": "Master",
-    "resourceID": "D5E1AC09-3023-4145-A52A-4D904363A065",
+    "resourceID": "960B5EDB-5533-4531-9B7D-06B4366EBEAE",
     "mockupH": "2510",
     "mockupW": "1196",
     "measuredW": "1474",
@@ -4049,5 +4049,5 @@
     "y": 0
   },
   "dependencies": [],
-  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/New%20Project%201.bmpr"
+  "projectID": "file:///Users/kamrify/Desktop/New%20Roadmaps/Android%20Roadmap.bmpr"
 }
