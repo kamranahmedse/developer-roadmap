@@ -35,9 +35,11 @@ Data Definition Language (DDL) is a subset of SQL. Its primary function is to cr
 5. `RENAME`: This is used to rename an object in the database.
 
     ```sql
+    -- To rename a table
     ALTER TABLE table_name
     RENAME TO new_table_name;
-  -- To rename a column
+    
+    -- To rename a column
     ALTER TABLE table_name
     RENAME COLUMN old_column_name TO new_column_name;
     ```
