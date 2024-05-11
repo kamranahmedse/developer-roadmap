@@ -43,7 +43,6 @@ Data Definition Language (DDL) is a subset of SQL. Its primary function is to cr
     RENAME COLUMN old_column_name TO new_column_name;
     ```
 
-
 Remember: In DDL operations, `COMMIT` and `ROLLBACK` statement cannot be performed because the MySQL engine automatically commits the changes.
 
 Remember to replace `table_name`, `column_name`, `datatype(size)`, `old_table_name`, and `new_table_name` in the examples above with your actual table names, column names, data types and sizes, and the old or new table names you want to specify.
