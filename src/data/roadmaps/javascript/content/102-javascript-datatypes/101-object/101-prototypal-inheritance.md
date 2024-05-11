@@ -6,5 +6,4 @@ Visit the following resources to learn more:
 
 - [JavaScript MDN Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain)
 - [GeeksForGeeks – JavaScript Tutorial](https://www.geeksforgeeks.org/prototypal-inheritance-using-__proto__-in-javascript/)
-- [The Modern JavaScript Tutorial](https://javascript.info/prototype-inheritance)
 - [Prototype Inheritance](https://javascript.info/prototype-inheritance)

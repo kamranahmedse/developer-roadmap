@@ -59,7 +59,12 @@ export function TeamMemberItem(props: TeamMemberProps) {
           </div>
           <div className="flex items-center">
             <h3 className="inline-grid grid-cols-[auto_auto_auto] items-center font-medium">
-              <span className="truncate">{member.name}</span>
+              <a
+                href={`/team/member?t=${member.teamId}&m=${member._id}`}
+                className="truncate"
+              >
+                {member.name}
+              </a>
               {showNoProgressBadge && (
                 <span className="ml-2 rounded-full bg-red-400 px-2 py-0.5 text-xs font-normal text-white">
                   No Progress

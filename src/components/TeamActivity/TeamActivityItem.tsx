@@ -14,6 +14,7 @@ type TeamActivityItemProps = {
     name: string;
     avatar?: string | undefined;
     username?: string | undefined;
+    memberId?: string;
   };
 };
 
@@ -62,14 +63,17 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     : '/images/default-avatar.png';
 
   const username = (
-    <>
+    <a
+      href={`/team/member?t=${teamId}&m=${user?.memberId}`}
+      className="inline-flex items-center gap-1.5 underline underline-offset-2 hover:underline"
+    >
       <img
-        className="mr-1 inline-block h-5 w-5 rounded-full"
+        className="inline-block h-5 w-5 rounded-full"
         src={userAvatar}
         alt={user.name}
       />
       <span className="font-medium">{user?.name || 'Unknown'}</span>
-    </>
+    </a>
   );
 
   if (activities.length === 1) {
@@ -80,11 +84,11 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
     return (
       <li
         key={user._id}
-        className="flex flex-wrap items-center rounded-md border px-2 py-2.5 text-sm"
+        className="flex flex-wrap items-center gap-1 rounded-md border px-2 py-2.5 text-sm"
       >
         {actionType === 'in_progress' && (
           <>
-            <p className="mb-1">
+            <p className="mb-1 flex w-full flex-wrap items-center">
               {username}&nbsp;started&nbsp;
               {topicCount}&nbsp;topic{topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
               {resourceLink(activity)}&nbsp;
@@ -98,7 +102,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         )}
         {actionType === 'done' && (
           <>
-            <p className="mb-1">
+            <p className="mb-1 flex w-full flex-wrap items-center">
               {username}&nbsp;completed&nbsp;
               {topicCount}&nbsp;topic{topicCount > 1 ? 's' : ''}&nbsp;in&nbsp;
               {resourceLink(activity)}&nbsp;
@@ -112,7 +116,7 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
         )}
         {actionType === 'answered' && (
           <>
-            <p className="mb-1">
+            <p className="mb-1 flex w-full flex-wrap items-center">
               {username}&nbsp;answered&nbsp;
               {topicCount}&nbsp;question{topicCount > 1 ? 's' : ''}
               &nbsp;in&nbsp;
@@ -138,8 +142,8 @@ export function TeamActivityItem(props: TeamActivityItemProps) {
   return (
     <li key={user._id} className="overflow-hidden rounded-md border">
       <h3 className="flex flex-wrap items-center gap-1 bg-gray-100 px-2 py-2.5 text-sm">
-        {username} has {activities.length} updates in {uniqueResourcesCount}{' '}
-        resource(s)
+        {username} has {activities.length} updates in {uniqueResourcesCount}
+        &nbsp;resource(s)
       </h3>
       <div className="py-3">
         <ul className="ml-2 flex flex-col divide-y pr-2 sm:ml-[36px]">

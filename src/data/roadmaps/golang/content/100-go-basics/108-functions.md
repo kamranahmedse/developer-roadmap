@@ -11,3 +11,4 @@ Visit the following resources to learn more:
 
 - [Go by Example: Functions](https://gobyexample.com/functions)
 - [Functions in go](https://www.golangprograms.com/go-language/functions.html)
+- [Effective Go: Functions](https://go.dev/doc/effective_go#functions)

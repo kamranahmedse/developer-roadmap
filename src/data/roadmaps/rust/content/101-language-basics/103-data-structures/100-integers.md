@@ -36,3 +36,7 @@ There're also the `isize` and  the `usize` integer types. The sizes of these pri
 - [Rust Data Types (With Examples)](https://www.programiz.com/rust/data-types#integer-type)
 
 - [Machine-dependent Integer Types](https://doc.rust-lang.org/reference/types/numeric.html#machine-dependent-integer-types)
+
+Learn more from the following links:
+
+- [Integer Types](https://rust-book.cs.brown.edu/ch03-02-data-types.html#integer-types)

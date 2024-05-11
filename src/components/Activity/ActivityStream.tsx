@@ -1,10 +1,11 @@
-import { useMemo, useState } from 'react';
+import { useState } from 'react';
 import { getRelativeTimeString } from '../../lib/date';
 import type { ResourceType } from '../../lib/resource-progress';
 import { EmptyStream } from './EmptyStream';
 import { ActivityTopicsModal } from './ActivityTopicsModal.tsx';
 import { ChevronsDown, ChevronsUp } from 'lucide-react';
 import { ActivityTopicTitles } from './ActivityTopicTitles.tsx';
+import { cn } from '../../lib/classname.ts';
 
 export const allowedActivityActionType = [
   'in_progress',
@@ -29,10 +30,11 @@ export type UserStreamActivity = {
 
 type ActivityStreamProps = {
   activities: UserStreamActivity[];
+  className?: string;
 };
 
 export function ActivityStream(props: ActivityStreamProps) {
-  const { activities } = props;
+  const { activities, className } = props;
 
   const [showAll, setShowAll] = useState(false);
   const [selectedActivity, setSelectedActivity] =
@@ -48,7 +50,7 @@ export function ActivityStream(props: ActivityStreamProps) {
     .slice(0, showAll ? activities.length : 10);
 
   return (
-    <div className="mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8">
+    <div className={cn('mx-0 px-0 py-5 md:-mx-10 md:px-8 md:py-8', className)}>
       <h2 className="mb-3 text-xs uppercase text-gray-400">
         Learning Activity
       </h2>
@@ -78,6 +80,7 @@ export function ActivityStream(props: ActivityStreamProps) {
               updatedAt,
               topicTitles,
               isCustomResource,
+              resourceSlug,
             } = activity;
 
             const resourceUrl =
@@ -86,7 +89,7 @@ export function ActivityStream(props: ActivityStreamProps) {
                 : resourceType === 'best-practice'
                   ? `/best-practices/${resourceId}`
                   : isCustomResource && resourceType === 'roadmap'
-                    ? `/r/${resourceId}`
+                    ? `/r/${resourceSlug}`
                     : `/${resourceId}`;
 
             const resourceLinkComponent = (
