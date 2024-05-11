@@ -8,5 +8,3 @@ Visit the following resources to learn more:
 - [Python for Beginners - Learn Python in 1 Hour](https://www.youtube.com/watch?v=kqtD5dpn9C8)
 - [Python Basics](https://www.tutorialspoint.com/python/python_basic_syntax.htm)
 - [Learn X in Y Minutes / Python](https://learnxinyminutes.com/docs/python/)
-
-

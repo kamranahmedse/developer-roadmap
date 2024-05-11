@@ -9,6 +9,3 @@ For more resources, visit the following links:
 - [Spring Cloud Sleuth](https://spring.io/projects/spring-cloud-sleuth)
 - [Spring Cloud Sleuth in a Monolith Application](https://www.baeldung.com/spring-cloud-sleuth-single-application)
 - [Spring Cloud Tutorial](https://www.javainuse.com/spring/cloud-sleuth)
-
-
-

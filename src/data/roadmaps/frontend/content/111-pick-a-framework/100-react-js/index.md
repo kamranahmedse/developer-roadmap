@@ -5,9 +5,8 @@ React is the most popular front-end JavaScript library for building user interfa
 Visit the following resources to learn more:
 
 - [Visit Dedicated React Roadmap](/react)
-- [React Website](https://reactjs.org/)
-- [Official Getting Started](https://reactjs.org/tutorial/tutorial.html)
-- [Beta React Docs](https://beta.reactjs.org/)
+- [React Website](https://react.dev)
+- [Official Getting Started](https://react.dev/learn/tutorial-tic-tac-toe)
 - [The Beginners Guide to React](https://egghead.io/courses/the-beginner-s-guide-to-react)
 - [React JS Course for Beginners](https://www.youtube.com/watch?v=nTeuhbP7wdE)
 - [React Course - Beginners Tutorial for React JavaScript Library [2022]](https://www.youtube.com/watch?v=bMknfKXIFA8)

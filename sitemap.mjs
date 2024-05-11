@@ -27,8 +27,13 @@ export async function serializeSitemap(item) {
     'https://roadmap.sh/best-practices',
     'https://roadmap.sh/guides',
     'https://roadmap.sh/videos',
-    ...(await getRoadmapIds()).flatMap((id) => [`https://roadmap.sh/${id}`, `https://roadmap.sh/${id}/topics`]),
-    ...(await getBestPracticesIds()).map((id) => `https://roadmap.sh/best-practices/${id}`),
+    ...(await getRoadmapIds()).flatMap((id) => [
+      `https://roadmap.sh/${id}`,
+      `https://roadmap.sh/${id}/topics`,
+    ]),
+    ...(await getBestPracticesIds()).map(
+      (id) => `https://roadmap.sh/best-practices/${id}`
+    ),
   ];
 
   // Roadmaps and other high priority pages
@@ -44,7 +49,10 @@ export async function serializeSitemap(item) {
   }
 
   // Guide and video pages
-  if (item.url.startsWith('https://roadmap.sh/guides') || item.url.startsWith('https://roadmap.sh/videos')) {
+  if (
+    item.url.startsWith('https://roadmap.sh/guides') ||
+    item.url.startsWith('https://roadmap.sh/videos')
+  ) {
     return {
       ...item,
       // @ts-ignore

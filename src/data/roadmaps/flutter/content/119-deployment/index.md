@@ -8,7 +8,7 @@ Deployment in Flutter refers to the process of releasing a Flutter app to end-us
 - Releasing to app stores
 - Updating the app
 
-In general, deploying a Flutter app involves a combination of technical skills and experience, as well as knowledge of the relevant app stores and their policies and requirements. 
+In general, deploying a Flutter app involves a combination of technical skills and experience, as well as knowledge of the relevant app stores and their policies and requirements.
 
 Learn more from the following links:
 

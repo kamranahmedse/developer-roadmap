@@ -1,0 +1,15 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import { RoadmapListPage } from '../../components/CustomRoadmap/RoadmapListPage';
+---
+
+<AccountLayout
+  title='Roadmaps'
+  noIndex={true}
+  initialLoadingMessage='Loading roadmaps'
+>
+  <AccountSidebar activePageId='roadmaps' activePageTitle='Roadmaps'>
+    <RoadmapListPage client:only='react' />
+  </AccountSidebar>
+</AccountLayout>

@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Jest Website](https://jestjs.io)
 - [Jest Documentation](https://jestjs.io/docs/getting-started)
-

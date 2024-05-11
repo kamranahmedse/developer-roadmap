@@ -7,6 +7,3 @@ Visit the following resources to learn more:
 - [Stack Data Structure | Illustrated Data Structures](https://www.youtube.com/watch?v=I5lq6sCuABE)
 - [Stack in 3 minutes](https://www.youtube.com/watch?v=KcT3aVgrrpU)
 - [Stack Data Structure](https://www.coursera.org/lecture/data-structures/stacks-UdKzQ)
-
-
-

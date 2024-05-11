@@ -1,0 +1,3 @@
+# pthread
+
+`Pthread` or POSIX threads is a standard-based thread programming library for multi-threading development. It provides several functions and methods to efficiently manage multiple threads in a program enhancing concurrency and parallelism. The library enables thread creation, thread joining and cancellation, thread-specific data, and synchronization including mutex locks, read/write locks, and condition variables. Notably, Pthread is an API for C/C++ programming language providing cross-platform support for Linux, Unix, and Windows systems. It's a fundamental tool for server-side game developers to create highly responsive and concurrent applications.

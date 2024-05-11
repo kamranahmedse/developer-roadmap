@@ -8,11 +8,11 @@ interface Todo {
 }
 
 const todo: Readonly<Todo> = {
-  title: "Delete inactive users",
+  title: 'Delete inactive users',
 };
 
 // Cannot assign to 'title' because it is a read-only property.
-todo.title = "Hello";
+todo.title = 'Hello';
 ```
 
 Learn more from the following links:

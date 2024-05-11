@@ -10,10 +10,9 @@ function add(a: any, b: any): any {
   return a + b;
 }
 
-console.log(add(1, 2));    // 3
-console.log(add("Hello", " World"));    // "Hello World"
+console.log(add(1, 2)); // 3
+console.log(add('Hello', ' World')); // "Hello World"
 ```
-
 
 Learn more from the following links:
 

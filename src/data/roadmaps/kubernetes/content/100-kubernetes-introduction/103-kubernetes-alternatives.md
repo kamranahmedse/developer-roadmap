@@ -12,3 +12,5 @@ Learn more from the following links:
 
 - [Kubernetes vs. Docker Swarm – A Comparison](https://www.freecodecamp.org/news/kubernetes-vs-docker-swarm-what-is-the-difference/)
 - [Compare Apache Mesos vs. Kubernetes](https://www.techtarget.com/searchitoperations/tip/Compare-container-orchestrators-Apache-Mesos-vs-Kubernetes)
+- [Docker Swarm, a User-Friendly Alternative to Kubernetes](https://thenewstack.io/docker-swarm-a-user-friendly-alternative-to-kubernetes/)
+- [Can You Live without Kubernetes?](https://thenewstack.io/can-you-live-without-kubernetes/)

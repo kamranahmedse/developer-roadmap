@@ -1,6 +1,6 @@
 # Node as a Service (NaaS)
 
-Running your own blockchain node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead. 
+Running your own blockchain node can be challenging, especially when getting started or while scaling fast. There are a number of services that run optimized node infrastructures for you, so you can focus on developing your application or product instead.
 
 Visit the following resources to learn more:
 

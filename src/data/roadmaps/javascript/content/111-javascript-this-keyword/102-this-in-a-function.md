@@ -2,7 +2,7 @@
 
 The keyword `this` when used in a function refers to the global object.
 
-*Note: in a browser window the global object is the `window` object.*
+_Note: in a browser window the global object is the `window` object._
 
 Visit the following resources to learn more:
 

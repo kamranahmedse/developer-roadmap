@@ -1,5 +1,5 @@
 import type { MarkdownFileType } from './file';
-import type { BestPracticeFrontmatter } from './best-pratice';
+import type { BestPracticeFrontmatter } from './best-practice';
 
 // Generates URL from the topic file path e.g.
 // -> /src/data/best-practices/frontend-performance/content/100-use-https-everywhere
@@ -27,10 +27,15 @@ export interface BestPracticeTopicFileType {
  * Gets all the topic files available for all the best practices
  * @returns Hashmap containing the topic slug and the topic file content
  */
-export async function getAllBestPracticeTopicFiles(): Promise<Record<string, BestPracticeTopicFileType>> {
-  const contentFiles = await import.meta.glob<string>('/src/data/best-practices/*/content/**/*.md', {
-    eager: true,
-  });
+export async function getAllBestPracticeTopicFiles(): Promise<
+  Record<string, BestPracticeTopicFileType>
+> {
+  const contentFiles = await import.meta.glob<string>(
+    '/src/data/best-practices/*/content/**/*.md',
+    {
+      eager: true,
+    },
+  );
 
   const mapping: Record<string, BestPracticeTopicFileType> = {};
 
@@ -39,33 +44,23 @@ export async function getAllBestPracticeTopicFiles(): Promise<Record<string, Bes
     const fileHeadings = fileContent.getHeadings();
     const firstHeading = fileHeadings[0];
 
-    const [, bestPracticeId] = filePath.match(/^\/src\/data\/best-practices\/(.+)?\/content\/(.+)?$/) || [];
+    const [, bestPracticeId] =
+      filePath.match(/^\/src\/data\/best-practices\/(.+)?\/content\/(.+)?$/) ||
+      [];
     const topicUrl = generateTopicUrl(filePath);
 
-    const currentBestPractice = await import(`../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`);
+    const currentBestPractice = await import(
+      `../data/best-practices/${bestPracticeId}/${bestPracticeId}.md`
+    );
 
     mapping[topicUrl] = {
       url: topicUrl,
       heading: firstHeading?.text,
       file: fileContent,
-      bestPractice: currentBestPractice.frontmatter,
+      bestPractice: currentBestPractice?.frontmatter,
       bestPracticeId: bestPracticeId,
     };
   }
 
   return mapping;
-}
-
-/**
- * Gets the the topics for a given best practice
- *
- * @param bestPracticeId BestPractice id for which you want the topics
- *
- * @returns Promise<TopicFileType[]>
- */
-export async function getTopicsByBestPracticeId(bestPracticeId: string): Promise<BestPracticeTopicFileType[]> {
-  const topicFileMapping = await getAllBestPracticeTopicFiles();
-  const allTopics = Object.values(topicFileMapping);
-
-  return allTopics.filter((topic) => topic.bestPracticeId === bestPracticeId);
 }

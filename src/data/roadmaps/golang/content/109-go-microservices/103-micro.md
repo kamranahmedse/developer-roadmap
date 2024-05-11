@@ -4,5 +4,5 @@ It is an API first development platform. It leverages the microservices architec
 
 Visit the following resources to learn more:
 
-- [Offical Website](https://micro.dev/)
+- [Official Website](https://micro.dev/)
 - [Micro Github](https://github.com/micro/micro)

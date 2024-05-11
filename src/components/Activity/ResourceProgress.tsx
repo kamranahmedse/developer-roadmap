@@ -1,0 +1,93 @@
+import { getUser } from '../../lib/jwt';
+import { getPercentage } from '../../helper/number';
+import { ResourceProgressActions } from './ResourceProgressActions';
+import { cn } from '../../lib/classname';
+
+type ResourceProgressType = {
+  resourceType: 'roadmap' | 'best-practice';
+  resourceId: string;
+  title: string;
+  updatedAt: string;
+  totalCount: number;
+  doneCount: number;
+  learningCount: number;
+  skippedCount: number;
+  onCleared?: () => void;
+  showClearButton?: boolean;
+  isCustomResource: boolean;
+  roadmapSlug?: string;
+  showActions?: boolean;
+};
+
+export function ResourceProgress(props: ResourceProgressType) {
+  const {
+    showClearButton = true,
+    isCustomResource,
+    showActions = true,
+  } = props;
+
+  const userId = getUser()?.id;
+
+  const {
+    updatedAt,
+    resourceType,
+    resourceId,
+    title,
+    totalCount,
+    learningCount,
+    doneCount,
+    skippedCount,
+    onCleared,
+    roadmapSlug,
+  } = props;
+
+  let url =
+    resourceType === 'roadmap'
+      ? `/${resourceId}`
+      : `/best-practices/${resourceId}`;
+
+  if (isCustomResource) {
+    url = `/r/${roadmapSlug}`;
+  }
+
+  const totalMarked = doneCount + skippedCount;
+  const progressPercentage = getPercentage(totalMarked, totalCount);
+
+  return (
+    <div className="relative">
+      <a
+        target="_blank"
+        href={url}
+        className={cn(
+          'group relative flex items-center justify-between overflow-hidden rounded-md border border-gray-300 bg-white px-3 py-2 text-left text-sm transition-all hover:border-gray-400',
+          showActions ? 'pr-7' : '',
+        )}
+      >
+        <span className="flex-grow truncate">{title}</span>
+        <span className="text-xs text-gray-400">
+          {parseInt(progressPercentage, 10)}%
+        </span>
+
+        <span
+          className="absolute left-0 top-0 block h-full cursor-pointer rounded-tl-md bg-black/5 transition-colors group-hover:bg-black/10"
+          style={{
+            width: `${progressPercentage}%`,
+          }}
+        ></span>
+      </a>
+
+      {showActions && (
+        <div className="absolute right-2 top-0 flex h-full items-center">
+          <ResourceProgressActions
+            userId={userId!}
+            resourceType={resourceType}
+            resourceId={resourceId}
+            isCustomResource={isCustomResource}
+            onCleared={onCleared}
+            showClearButton={showClearButton}
+          />
+        </div>
+      )}
+    </div>
+  );
+}

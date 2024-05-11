@@ -5,7 +5,11 @@ Decorators are a feature of TypeScript that allow you to modify the behavior of 
 Here's an example of how you might use a decorator in TypeScript:
 
 ```typescript
-function log(target: Object, propertyKey: string | symbol, descriptor: PropertyDescriptor) {
+function log(
+  target: Object,
+  propertyKey: string | symbol,
+  descriptor: PropertyDescriptor
+) {
   const originalMethod = descriptor.value;
 
   descriptor.value = function (...args: any[]) {

@@ -3,7 +3,7 @@
 Extract constructs a type by extracting from Type all union members that are assignable to Union.
 
 ```typescript
-type T0 = Extract<"a" | "b" | "c", "a" | "f">;
+type T0 = Extract<'a' | 'b' | 'c', 'a' | 'f'>;
 //    ^ = type T0 = "a"
 ```
 

@@ -4,4 +4,4 @@ Portals provide a first-class way to render children into a DOM node that exists
 
 Visit the following resources to learn more:
 
-- [Portals in React](https://reactjs.org/docs/portals.html)
+- [Portals in React](https://react.dev/reference/react-dom/createPortal)

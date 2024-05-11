@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Why you need Kubernetes and what it can do](https://kubernetes.io/docs/concepts/overview/#why-you-need-kubernetes-and-what-can-it-do)
 - [Why should you use Kubernetes?](https://www.predicagroup.com/blog/why-kubernetes-2022/)
+- [Primer: How Kubernetes Came to Be, What It Is, and Why You Should Care](https://thenewstack.io/primer-how-kubernetes-came-to-be-what-it-is-and-why-you-should-care/)

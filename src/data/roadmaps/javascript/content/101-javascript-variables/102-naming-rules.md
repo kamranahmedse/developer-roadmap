@@ -1,6 +1,6 @@
 # Naming Rules
 
-A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables; read about these rules through the links below. 
+A variable name should accurately identify your variable. When you create good variable names, your JavaScript code becomes easier to understand and easier to work with. Properly naming variables is really important. JavaScript also has some rules when it comes to naming variables; read about these rules through the links below.
 
 Visit the following resources to learn more:
 

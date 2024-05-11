@@ -6,4 +6,3 @@ Visit the following resources to learn more:
 
 - [Components Basics](https://vuejs.org/guide/essentials/component-basics.html)
 - [Components in Depth](https://vuejs.org/guide/components/registration.html)
-

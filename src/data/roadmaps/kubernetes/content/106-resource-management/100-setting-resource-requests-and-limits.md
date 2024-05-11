@@ -6,3 +6,5 @@ Learn more from the following resources:
 
 - [Requests and limits - Documentation](https://kubernetes.io/docs/concepts/configuration/manage-resources-containers/#requests-and-limits)
 - [Motivation for default memory limits and requests](https://kubernetes.io/docs/tasks/administer-cluster/manage-resources/memory-default-namespace/#motivation-for-default-memory-limits-and-requests)
+- [Understanding Kubernetes Resource Types](https://thenewstack.io/understanding-kubernetes-resource-types/)
+- [Kubernetes Requests and Limits Demystified ](https://thenewstack.io/kubernetes-requests-and-limits-demystified/)

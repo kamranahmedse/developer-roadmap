@@ -8,4 +8,3 @@ Visit the following resources to learn more:
 - [BEM Official Website](https://en.bem.info)
 - [OOCSS Official Website](http://oocss.org/)
 - [SMACSS Official Website](http://smacss.com/)
-

@@ -11,7 +11,6 @@ Here are some ways to keep tests independent in system architecture:
 - Use test-driven development (TDD), which involves writing tests before writing the application code. This ensures that the tests are independent and that the code is written with testability in mind.
 - Avoid global state and shared mutable state as it may cause unexpected results.
 
-
 Learn more from the following links:
 
 - [Keeping Tests Valuable](https://www.checklyhq.com/learn/headless/valuable-tests/)

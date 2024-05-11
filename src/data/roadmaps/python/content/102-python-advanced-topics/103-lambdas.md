@@ -4,6 +4,6 @@ Python Lambda Functions are anonymous function means that the function is withou
 
 Visit the following resources to learn more:
 
-- [Python Lambda Functions](https://www.geeksforgeeks.org/python-lambda-anonymous-functions-filter-map-reduce/)
 - [Lambdas in Python](https://www.w3schools.com/python/python_lambda.asp)
-
+- [How to use Lambda functions](https://realpython.com/python-lambda/)
+- [Python Lambda Functions](https://www.youtube.com/watch?v=KR22jigJLok)

@@ -1,0 +1,3 @@
+# API
+
+API (Application Programming Interface) is a set of rules and protocols implemented for building and integrating software applications. APIs enable two different software applications to communicate and work together. They work as a bridge connecting two software systems, enabling them to exchange information and execute functions. In the context of server-side game development and socket programming, APIs may be used to handle connection establishment, data transmission, and other necessary network communication operations. APIs can be customized or built based on standard protocols such as HTTP for web services, or TCP/UDP for lower-level socket communications.

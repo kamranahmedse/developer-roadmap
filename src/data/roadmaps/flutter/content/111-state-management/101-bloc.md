@@ -8,3 +8,4 @@ Learn more from the following links:
 - [BLoC in Flutter](https://docs.flutter.dev/development/data-and-backend/state-mgmt/options#bloc--rx)
 - [Flutter bloc for beginners](https://medium.com/flutter-community/flutter-bloc-for-beginners-839e22adb9f5)
 - [Flutter Bloc - Tutorial](https://www.youtube.com/watch?v=Ep6R7U9wa0U)
+- [BLoC Pattern: A Comprehensive Tutorial](https://www.youtube.com/watch?v=Qe47b8r5epc&ab_channel=MaxonFlutter)

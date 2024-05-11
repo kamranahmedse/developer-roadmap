@@ -1,0 +1,15 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import { ActivityPage } from '../../components/Activity/ActivityPage';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+---
+
+<AccountLayout
+  title='Activity'
+  noIndex={true}
+  initialLoadingMessage={'Loading activity'}
+>
+  <AccountSidebar activePageId='activity' activePageTitle='Activity'>
+    <ActivityPage client:only='react' />
+  </AccountSidebar>
+</AccountLayout>

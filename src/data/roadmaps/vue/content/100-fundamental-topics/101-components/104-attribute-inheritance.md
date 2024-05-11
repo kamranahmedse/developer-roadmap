@@ -5,4 +5,3 @@ Attribute inheritance aka "fallthrough attributes" is a feature of Vue.js that a
 Visit the following resources to learn more:
 
 - [Fallthrough Attributes](https://vuejs.org/guide/components/attrs.html)
-

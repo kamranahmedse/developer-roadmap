@@ -4,7 +4,6 @@ CouchDB is an open-source, NoSQL document database designed for the web. It uses
 
 In an ASP.NET application, CouchDB can be used as a data store to persist and retrieve application data. There are several libraries available for integrating CouchDB with an ASP.NET application, such as Couchbase, which provides a .NET client for CouchDB that can be used to interact with the CouchDB server from within an ASP.NET application.
 
-
 Visit the following resources to learn more:
 
 - [CouchDB in ASP.NET Core Application](https://www.c-sharpcorner.com/article/crud-operation-to-couchdb-via-rest-api-in-asp-net-core-application/)

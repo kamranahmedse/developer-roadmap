@@ -7,4 +7,4 @@ Visit the following resources to learn more:
 - [throttleTime](https://rxjs.dev/api/operators/throttleTime)
 - [sampleTime](https://rxjs.dev/api/operators/sampleTime)
 - [auditTime](https://rxjs.dev/api/operators/auditTime)
-- [Blogs and tutorials on RxJS](https://blog.angular-university.io/rxjs-better-performance-with-the-rxjs-audittime-operator/)
+- [Blogs and tutorials on RxJS](https://blog.angular-university.io/functional-reactive-programming-for-angular-2-developers-rxjs-and-observables/)

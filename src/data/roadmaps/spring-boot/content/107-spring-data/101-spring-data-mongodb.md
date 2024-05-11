@@ -9,4 +9,3 @@ For more resources on spring data mongodb, visit the following links:
 - [Spring Data MongoDB](https://spring.io/projects/spring-data-mongodb)
 - [Introduction to Spring Data MongoDB](https://www.baeldung.com/spring-data-mongodb-tutorial)
 - [Spring Boot Integration with MongoDB Tutorial](https://www.mongodb.com/compatibility/spring-boot)
-

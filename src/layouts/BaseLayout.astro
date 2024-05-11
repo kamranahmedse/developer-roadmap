@@ -1,47 +1,67 @@
 ---
-import '../styles/global.css';
-import Navigation from '../components/Navigation.astro';
-import OpenSourceBanner from '../components/OpenSourceBanner.astro';
-import Footer from '../components/Footer.astro';
-import type { SponsorType } from '../components/Sponsor/Sponsor.astro';
-import Sponsor from '../components/Sponsor/Sponsor.astro';
-import YouTubeBanner from '../components/YouTubeBanner.astro';
-import { siteConfig } from '../lib/config';
 import Analytics from '../components/Analytics/Analytics.astro';
+import LoginPopup from '../components/AuthenticationFlow/LoginPopup.astro';
+import Authenticator from '../components/Authenticator/Authenticator.astro';
+import { CommandMenu } from '../components/CommandMenu/CommandMenu';
+import Footer from '../components/Footer.astro';
+import Navigation from '../components/Navigation/Navigation.astro';
+import OpenSourceBanner from '../components/OpenSourceBanner.astro';
+import { PageProgress } from '../components/PageProgress';
+import { Toaster } from '../components/Toast';
+import { PageSponsor } from '../components/PageSponsor';
+import { siteConfig } from '../lib/config';
+import '../styles/global.css';
+import { PageVisit } from '../components/PageVisit/PageVisit';
+import type { ResourceType } from '../lib/resource-progress';
 
 export interface Props {
   title: string;
+  ogImageUrl?: string;
+  // This isn't used anywhere except for the sponsor event labels
+  briefTitle?: string;
   redirectUrl?: string;
   description?: string;
   keywords?: string[];
   noIndex?: boolean;
   canonicalUrl?: string;
+  initialLoadingMessage?: string;
   permalink?: string;
-  sponsor?: SponsorType;
   jsonLd?: Record<string, unknown>[];
+  resourceId?: string;
+  resourceType?: ResourceType;
 }
 
 const {
   title = siteConfig.title,
+  briefTitle,
   description = siteConfig.description,
+  ogImageUrl = 'https://roadmap.sh/images/og-img.png',
   keywords = siteConfig.keywords,
   noIndex = false,
   permalink = '',
   canonicalUrl: givenCanonical = '',
-  sponsor,
   jsonLd = [],
   redirectUrl = '',
+  initialLoadingMessage = '',
+  resourceId,
+  resourceType,
 } = Astro.props;
 
 // Remove trailing slashes to consider the page as canonical
 const currentPageAbsoluteUrl = `https://roadmap.sh${permalink}`;
-
 const canonicalUrl = givenCanonical || currentPageAbsoluteUrl;
+const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${
+  import.meta.env.GITHUB_SHA
+}`;
 
-const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${import.meta.env.GITHUB_SHA}`;
+// e.g. frontend:react or best-practices:frontend-performance
+const gaPageIdentifier = Astro.url.pathname
+  .replace(/^\//, '')
+  .replace(/\/$/, '')
+  .replace(/\//g, ':');
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang='en'>
   <head>
     <meta charset='UTF-8' />
@@ -51,7 +71,11 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta name='description' content={description} />
     <meta name='author' content='Kamran Ahmed' />
     <meta name='keywords' content={keywords.join(', ')} />
-    {redirectUrl && <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />}
+    {
+      redirectUrl && (
+        <meta http-equiv='refresh' content={`1;url=${redirectUrl}`} />
+      )
+    }
     {noIndex && <meta name='robots' content='noindex' />}
     <meta
       name='viewport'
@@ -60,11 +84,14 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <meta http-equiv='Content-Language' content='en' />
 
     <meta name='twitter:card' content='summary_large_image' />
-    <meta name='twitter:creator' content='@kamranahmedse' />
+    <meta name='twitter:creator' content='@kamrify' />
 
     <meta property='og:image:width' content='1200' />
     <meta property='og:image:height' content='630' />
-    <meta property='og:image' content='https://roadmap.sh/images/og-img.png' />
+    <meta
+      property='og:image'
+      content={ogImageUrl || 'https://roadmap.sh/images/og-img.png'}
+    />
     <meta property='og:image:alt' content='roadmap.sh' />
     <meta property='og:site_name' content='roadmap.sh' />
     <meta property='og:title' content={title} />
@@ -76,27 +103,57 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
 
     <meta name='mobile-web-app-capable' content='yes' />
     <meta name='apple-mobile-web-app-capable' content='yes' />
-    <meta name='apple-mobile-web-app-status-bar-style' content='black-translucent' />
+    <meta
+      name='apple-mobile-web-app-status-bar-style'
+      content='black-translucent'
+    />
     <meta name='apple-mobile-web-app-title' content='roadmap.sh' />
     <meta name='application-name' content='roadmap.sh' />
 
-    <link rel='apple-touch-icon' sizes='180x180' href='/manifest/apple-touch-icon.png' />
+    <link
+      rel='apple-touch-icon'
+      sizes='180x180'
+      href='/manifest/apple-touch-icon.png'
+    />
     <meta name='msapplication-TileColor' content='#101010' />
     <meta name='theme-color' content='#848a9a' />
 
     <link rel='manifest' href='/manifest/manifest.json' />
-    <link rel='icon' type='image/png' sizes='32x32' href='/manifest/icon32.png' />
-    <link rel='icon' type='image/png' sizes='16x16' href='/manifest/icon16.png' />
-    <link rel='shortcut icon' href='/manifest/favicon.ico' type='image/x-icon' />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='32x32'
+      href='/manifest/icon32.png'
+    />
+    <link
+      rel='icon'
+      type='image/png'
+      sizes='16x16'
+      href='/manifest/icon16.png'
+    />
+    <link
+      rel='shortcut icon'
+      href='/manifest/favicon.ico'
+      type='image/x-icon'
+    />
 
     <link rel='icon' href='/manifest/favicon.ico' type='image/x-icon' />
 
+    <link rel='preconnect' href='https://www.google-analytics.com/' />
+    <link rel='preconnect' href='https://api.roadmap.sh/' />
+
     <slot name='after-header' />
-    {jsonLd.length > 0 && <script type='application/ld+json' set:html={JSON.stringify(jsonLd)} />}
+    {
+      jsonLd.length > 0 && (
+        <script
+          type='application/ld+json'
+          set:html={JSON.stringify(jsonLd.length === 1 ? jsonLd[0] : jsonLd)}
+        />
+      )
+    }
   </head>
-  <body>
+  <body class='flex min-h-screen flex-col'>
     <slot name='page-header'>
-      <YouTubeBanner />
       <Navigation />
     </slot>
 
@@ -105,9 +162,28 @@ const commitUrl = `https://github.com/kamranahmedse/developer-roadmap/commit/${i
     <slot name='page-footer'>
       <OpenSourceBanner />
       <Footer />
-      {sponsor && <Sponsor sponsor={sponsor} />}
-      <slot name='after-footer' />
-      <Analytics />
     </slot>
+
+    <Authenticator />
+    <slot name='login-popup'>
+      <LoginPopup />
+    </slot>
+
+    <Toaster client:only='react' />
+    <CommandMenu client:idle />
+    <PageProgress initialMessage={initialLoadingMessage} client:idle />
+    <PageSponsor
+      gaPageIdentifier={briefTitle || gaPageIdentifier}
+      client:load
+    />
+
+    <slot name='after-footer' />
+
+    <Analytics />
+    <PageVisit
+      resourceId={resourceId}
+      resourceType={resourceType}
+      client:load
+    />
   </body>
 </html>

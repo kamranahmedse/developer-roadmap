@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Cluster Networking - Documentation](https://kubernetes.io/docs/concepts/cluster-administration/networking/)
 - [Job with Pod-to-Pod Communication](https://kubernetes.io/docs/tasks/job/job-with-pod-to-pod-communication/)
+- [How Kubernetes Provides Networking and Storage to Applications](https://thenewstack.io/how-kubernetes-provides-networking-and-storage-to-applications/)

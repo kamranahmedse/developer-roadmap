@@ -9,4 +9,3 @@ For more information, visit the following links:
 - [Hibernate Transaction Management Example](https://www.javatpoint.com/hibernate-transaction-management-example)
 - [Hibernate Transaction Management](https://www.javaguides.net/2018/12/hibernate-transaction-management-tutorial.html)
 - [Hibernate Transaction](https://www.w3schools.blog/hibernate-transaction-management)
-

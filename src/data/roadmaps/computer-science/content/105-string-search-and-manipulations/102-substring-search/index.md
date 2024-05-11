@@ -9,4 +9,3 @@ Visit the following resources to learn more:
 - [Check if a string is substring of another](https://www.geeksforgeeks.org/check-string-substring-another/)
 - [Anagram Substring Search (Or Search for all permutations)](https://www.geeksforgeeks.org/anagram-substring-search-search-permutations/)
 - [Substring Search - Exercises](https://algs4.cs.princeton.edu/53substring/)
-

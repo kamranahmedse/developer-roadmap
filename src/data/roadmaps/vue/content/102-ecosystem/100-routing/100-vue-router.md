@@ -5,4 +5,3 @@ Vue Router is the official router for Vue.js which allows creating static/dynami
 Visit the following resources to learn more:
 
 - [Vue Router](https://router.vuejs.org/)
-

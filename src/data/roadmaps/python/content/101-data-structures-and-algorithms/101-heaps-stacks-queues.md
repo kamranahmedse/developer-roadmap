@@ -16,4 +16,3 @@ Visit the following resources to learn more:
 - [Queue in Python](https://www.geeksforgeeks.org/queue-in-python/)
 - [Python Stacks, Queues, and Priority Queues in Practice](https://realpython.com/queue-in-python/)
 - [Heap Implementation in Python](https://www.educative.io/answers/heap-implementation-in-python)
-

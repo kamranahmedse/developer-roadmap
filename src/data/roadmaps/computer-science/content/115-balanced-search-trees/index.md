@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [Self-balancing binary search tree - Wikipedia](https://en.wikipedia.org/wiki/Self-balancing_binary_search_tree)
 - [Balanced Search Trees Operations and Applications 11 min](https://www.youtube.com/watch?v=IbNZ-x1I2IM)
 - [Balanced binary search tree rotations](https://www.youtube.com/watch?v=q4fnJZr8ztY)
-

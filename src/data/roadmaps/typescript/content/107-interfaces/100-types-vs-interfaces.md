@@ -11,8 +11,8 @@ type Person = {
 };
 
 const person: Person = {
-  name: "John Doe",
-  age: 30
+  name: 'John Doe',
+  age: 30,
 };
 ```
 
@@ -25,8 +25,8 @@ interface Person {
 }
 
 const person: Person = {
-  name: "John Doe",
-  age: 30
+  name: 'John Doe',
+  age: 30,
 };
 ```
 

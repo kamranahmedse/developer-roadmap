@@ -6,7 +6,7 @@ const defaultStarCount = 224000;
 let starCount: number | undefined = undefined;
 
 export async function countStars(
-  repo = 'kamranahmedse/developer-roadmap'
+  repo = 'kamranahmedse/developer-roadmap',
 ): Promise<number> {
   if (starCount) {
     return starCount;
@@ -26,7 +26,7 @@ export async function countStars(
 }
 
 export async function getFormattedStars(
-  repo = 'kamranahmedse/developer-roadmap'
+  repo = 'kamranahmedse/developer-roadmap',
 ): Promise<string> {
   const stars = import.meta.env.DEV ? defaultStarCount : await countStars(repo);
 

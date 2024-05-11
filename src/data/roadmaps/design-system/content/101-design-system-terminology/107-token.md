@@ -5,4 +5,3 @@ Design system tokens are the style values of UI elements such as color, typograp
 Visit the following resources to learn more:
 
 - [What Are Design Tokens?](https://xd.adobe.com/ideas/principles/design-systems/what-are-design-tokens/)
-

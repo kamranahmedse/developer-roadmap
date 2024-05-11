@@ -5,7 +5,7 @@ Template literal types in TypeScript are a way to manipulate string values as ty
 For example, the following is a template literal type that concatenates two strings:
 
 ```typescript
-type Name = `Mr. ` + string;
+type Name = `Mr. ${string}`;
 
 let name: Name = `Mr. Smith`;  // ok
 let name: Name = `Mrs. Smith`;  // error

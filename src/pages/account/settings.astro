@@ -1,0 +1,19 @@
+---
+import AccountSidebar from '../../components/AccountSidebar.astro';
+import AccountLayout from '../../layouts/AccountLayout.astro';
+import DeleteAccount from '../../components/DeleteAccount/DeleteAccount.astro';
+import { ProfileSettingsPage } from '../../components/ProfileSettings/ProfileSettingsPage';
+---
+
+<AccountLayout
+  title='Settings'
+  description=''
+  noIndex={true}
+  initialLoadingMessage={'Loading settings'}
+>
+  <AccountSidebar activePageId='settings' activePageTitle='Settings'>
+    <ProfileSettingsPage client:load />
+    <hr class='my-8' />
+    <DeleteAccount />
+  </AccountSidebar>
+</AccountLayout>

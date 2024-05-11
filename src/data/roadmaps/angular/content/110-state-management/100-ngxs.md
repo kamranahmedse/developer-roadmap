@@ -7,4 +7,3 @@ Visit the following resources to learn more:
 - [What is NGXS ? - Ngxs.io ](https://www.ngxs.io/)
 - [Details about NGXS - Medium ](https://medium.com/@knoldus/introduction-to-ngxs-state-management-pattern-library-for-angular-ec76f681ceba)
 - [Practise of NGXS](https://www.youtube.com/watch?v=SGj11j4hxmg)
-

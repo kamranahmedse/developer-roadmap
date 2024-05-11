@@ -6,3 +6,4 @@ Learn more from the following resources:
 
 - [Jobs Documentation](https://kubernetes.io/docs/concepts/workloads/controllers/job/)
 - [Tutorial | Jobs in Kubernetes](https://www.youtube.com/watch?v=j1EnBbxSz64)
+- [How Kubernetes Is Transforming into a Universal Scheduler](https://thenewstack.io/how-kubernetes-is-transforming-into-a-universal-scheduler/)

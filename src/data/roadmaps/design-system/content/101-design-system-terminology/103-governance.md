@@ -8,7 +8,3 @@ Visit the following resources to learn more:
 - [Design System Governance – Scale Your Design](https://www.uxpin.com/studio/blog/design-system-governance/)
 - [Governance by design: Building successful design systems](https://rangle.io/blog/governance-by-design-building-successful-design-systems/)
 - [Team Models for Scaling a Design System](https://medium.com/eightshapes-llc/team-models-for-scaling-a-design-system-2cf9d03be6a0)
-
-
-
-
