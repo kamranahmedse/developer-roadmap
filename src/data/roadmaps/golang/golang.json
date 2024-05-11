@@ -5115,9 +5115,9 @@
                     "ID": "3232",
                     "typeID": "__group__",
                     "zOrder": "121",
-                    "measuredW": "282",
+                    "measuredW": "142",
                     "measuredH": "42",
-                    "w": "282",
+                    "w": "142",
                     "h": "42",
                     "x": "725",
                     "y": "969",
@@ -5131,7 +5131,7 @@
                                     "ID": "0",
                                     "typeID": "Canvas",
                                     "zOrder": "0",
-                                    "w": "282",
+                                    "w": "142",
                                     "h": "42",
                                     "measuredW": "100",
                                     "measuredH": "70",
@@ -5147,7 +5147,7 @@
                                     "zOrder": "1",
                                     "measuredW": "66",
                                     "measuredH": "24",
-                                    "x": "108",
+                                    "x": "38",
                                     "y": "9",
                                     "properties": {
                                         "size": "16",
@@ -5185,6 +5185,53 @@
                         "p2": {
                             "x": 0,
                             "y": -0.5
+                        }
+                    }
+                },
+                {
+                    "ID": "3234",
+                    "typeID": "__group__",
+                    "zOrder": "122",
+                    "measuredW": "133",
+                    "measuredH": "42",
+                    "w": "133",
+                    "h": "42",
+                    "x": "873",
+                    "y": "969",
+                    "properties": {
+                        "controlName": "112-go-advanced:pointers"
+                    },
+                    "children": {
+                        "controls": {
+                            "control": [
+                                {
+                                    "ID": "0",
+                                    "typeID": "Canvas",
+                                    "zOrder": "0",
+                                    "w": "133",
+                                    "h": "42",
+                                    "measuredW": "100",
+                                    "measuredH": "70",
+                                    "x": "0",
+                                    "y": "0",
+                                    "properties": {
+                                        "color": "16770457"
+                                    }
+                                },
+                                {
+                                    "ID": "1",
+                                    "typeID": "Label",
+                                    "zOrder": "1",
+                                    "measuredW": "60",
+                                    "measuredH": "24",
+                                    "x": "37",
+                                    "y": "9",
+                                    "properties": {
+                                        "size": "16",
+                                        "text": "Pointers"
+                                    }
+                                }
+                            ]
                         }
                     }
                 }
