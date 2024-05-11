@@ -7,4 +7,4 @@ Each directory serves a specific purpose. For instance, `/bin` holds binary exec
 No code snippet is necessary as understanding directory hierarchy is a conceptual knowledge and doesn't involve code execution.
 
 Visit the following resources to learn more:
- * [Overview of File System Hierarchy Standard (FHS)](https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr).
+ - [Overview of File System Hierarchy Standard (FHS)](https://access.redhat.com/documentation/ru-ru/red_hat_enterprise_linux/4/html/reference_guide/s1-filesystem-fhs#s3-filesystem-usr).
