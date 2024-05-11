@@ -17,6 +17,7 @@ import { ClipboardIcon } from '../ReactIcons/ClipboardIcon.tsx';
 import { GuideIcon } from '../ReactIcons/GuideIcon.tsx';
 import { HomeIcon } from '../ReactIcons/HomeIcon.tsx';
 import { VideoIcon } from '../ReactIcons/VideoIcon.tsx';
+import { cn } from '../../lib/classname.ts';
 
 export type PageType = {
   id: string;
@@ -190,7 +191,7 @@ export function CommandMenu() {
 
   return (
     <div className="fixed left-0 right-0 top-0 z-50 flex h-full justify-center overflow-y-auto overflow-x-hidden bg-black/50">
-      <div className="relative top-0 h-full w-full max-w-lg p-2 sm:top-20 md:h-auto">
+      <div className="relative top-0 h-full w-full max-w-lg p-2 sm:mt-20 md:h-auto">
         <div className="relative rounded-lg bg-white shadow" ref={modalRef}>
           <input
             ref={inputRef}
@@ -245,9 +246,10 @@ export function CommandMenu() {
                       <div className="border-b border-gray-100"></div>
                     )}
                     <a
-                      className={`flex w-full items-center rounded p-2 text-sm ${
-                        counter === activeCounter ? 'bg-gray-100' : ''
-                      }`}
+                      className={cn(
+                        'flex w-full items-center rounded p-2 text-sm',
+                        counter === activeCounter ? 'bg-gray-100' : '',
+                      )}
                       onMouseOver={() => setActiveCounter(counter)}
                       href={page.url}
                     >
