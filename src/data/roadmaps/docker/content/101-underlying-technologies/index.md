@@ -4,7 +4,7 @@ Understanding the core technologies that power Docker will provide you with a de
 
 ## Linux Containers (LXC)
 
-Linux Containers (LXC) serve as the foundation for Docker. LXC is a lightweight virtualization solution that allows multiple isolated Linux systems to run on a single host without the need for a full-fledged hypervisor. LXC effectively isolates applications and their dependencies in a secure and optimized manner.
+Linux Containers (LXC) enables running multiple independent Linux systems on a single computer. Acting as isolated spaces, LXC containers share host resources like memory and processing power, without needing their own full operating system copy, ensuring lightweight and fast startup. Portable across compatible Linux systems, they find utility in diverse tasks such as running separate applications, testing software, or deploying cloud services. With user-friendly management tools available, LXC simplifies container creation, monitoring, and management.
 
 ## Control Groups (cgroups)
 
